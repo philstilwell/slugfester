@@ -1,0 +1,908 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.2-route-execution-preparation-manifest",
+  "protocolId": "assessment-production-score-stability-v2.2.2-fresh-validation-route-section-plan-successor",
+  "status": "frozen-ten-v2.2.2-route-contexts-prepared-not-authorized",
+  "frozenAt": "2026-08-11T23:09:51.000Z",
+  "checkpointCommit": "37a48833245c8c103f9594410fcaaa832f01f05a",
+  "developmentValidationOnly": true,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "failedGateDisposition": {
+    "v221PlanningGatePreservedFailed": true,
+    "v221ValidPartialPlansReusableForSuccessorAcceptance": false,
+    "v221Debate75Retried": false,
+    "v221TimeoutExtended": false,
+    "v221ExecutionReclassified": false,
+    "v22DiscoveryGatePreservedFailed": true,
+    "v213ScoreGatePreservedFailed": true,
+    "proposedV22ScorePolicyPromoted": false,
+    "retriesPerformed": 0,
+    "timeoutExtensionsPerformed": 0,
+    "semanticCorrectionsPerformed": 0
+  },
+  "proposedPolicy": {
+    "version": "v2.2-proposal",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "promoted": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "contexts": 10,
+    "expectedParallelWallMinutes": [
+      5,
+      15
+    ],
+    "expectedAggregateModelMinutes": [
+      8,
+      22
+    ],
+    "expectedAggregateComputeHours": [
+      0.13,
+      0.37
+    ],
+    "absoluteStageTimeoutMinutes": 60,
+    "estimateBasis": "The failed combined-plan gate used 11.47 wall minutes and 18.42 aggregate model minutes, with nine valid contexts and one ten-minute timeout. Route-only writable output is narrower but completion is not guaranteed. ChatGPT-subscription execution has no direct incremental API charge."
+  },
+  "executionEnvironment": {
+    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "codexCliVersion": "codex-cli 0.147.0-alpha.6.5",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "isolatedTemporaryCodexHomes": true
+  },
+  "preparation": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/preparation-manifest.json",
+  "preparationSha256": "99445bebb317ed6a9f5a9edc281f15f2d592b9b95c8ccdf30270a9a1639f3783",
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "stage": "inventory-routes",
+      "debateNumber": "17",
+      "debateId": "collins-oconnor-god-existence-2024",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-17.json",
+      "packetSha256": "57d3a8b52e35fbb4152b5108c1d5dda3176bcfb08da7cb8f629bd48cbea57a05",
+      "packetBytes": 3119,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-17.json",
+          "sha256": "074968ed518d10d4c969e9147109c2a08dd9f2ff90c2c7afda6c9c709908b9ff",
+          "bytes": 3538
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-17.json",
+          "sha256": "1a2d186a2318307144479a38b309808ba89f4093319295029922cb79f90d71f4",
+          "bytes": 27286
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-17.schema.json",
+          "sha256": "5a1cde387f2861f440f2f053819b7d317bb394eb1415d774e882dc7ea7cab422",
+          "bytes": 4471
+        }
+      ],
+      "copiedInputBytes": 47258,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-17.schema.json",
+      "strictOutputSchemaSha256": "5a1cde387f2861f440f2f053819b7d317bb394eb1415d774e882dc7ea7cab422",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-17.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 1,
+      "stage": "inventory-routes",
+      "debateNumber": "39",
+      "debateId": "lambert-jones-christian-faith-skepticism-2021",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-heavy",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-39.json",
+      "packetSha256": "db526d1d0f5c9856c4d8f7ad32c3f279d4b062be5cb06e96e75af33a0563c28f",
+      "packetBytes": 3130,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-39.json",
+          "sha256": "ae74d344148e71982792882108039ecbb8f4a8cfdf6e1b36809085e17489d073",
+          "bytes": 3605
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-39.json",
+          "sha256": "42d220d0d6169977d5c010217004fe603b74b5a119e56577680fe558df033ec0",
+          "bytes": 36729
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-39.schema.json",
+          "sha256": "b4655aa148dcf3facaa4608f14de7b524028bc9d82b562c7f228e2b3df438f6e",
+          "bytes": 4482
+        }
+      ],
+      "copiedInputBytes": 56779,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-39.schema.json",
+      "strictOutputSchemaSha256": "b4655aa148dcf3facaa4608f14de7b524028bc9d82b562c7f228e2b3df438f6e",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-39.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 2,
+      "stage": "inventory-routes",
+      "debateNumber": "121",
+      "debateId": "dawkins-lennox-science-buried-god-2017",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-121.json",
+      "packetSha256": "9e85897cd107c06363418d353013b48fedf1a5718bd8de3494f40badf957850f",
+      "packetBytes": 3128,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-121.json",
+          "sha256": "bc7554c1f35ef3d2ed1771912d62940b6959ded6e20e0eb3e5edf7051a713a8e",
+          "bytes": 3539
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-121.json",
+          "sha256": "425e3850059cda59afae1277069f53f3745ac313e5eb5b910d6b8f37b0d92ccd",
+          "bytes": 17402
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-121.schema.json",
+          "sha256": "76af296e04f672978e0dce1f4b2ea3930c9d66c8ad9b40cac6b7f06bf6499c31",
+          "bytes": 4476
+        }
+      ],
+      "copiedInputBytes": 37380,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-121.schema.json",
+      "strictOutputSchemaSha256": "76af296e04f672978e0dce1f4b2ea3930c9d66c8ad9b40cac6b7f06bf6499c31",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-121.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 3,
+      "stage": "inventory-routes",
+      "debateNumber": "21",
+      "debateId": "hitchens-wolpe-great-god-debate-2010",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-21.json",
+      "packetSha256": "a12eb5fbbb9fe4209bb8d3ef303bdfa3d0977e8c98e85a431a93fd9e1318559e",
+      "packetBytes": 3121,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-21.json",
+          "sha256": "2e6fb67b8e0d3578da08b0d14aead9dc1284554afd0abd5d53fffbefc15b6941",
+          "bytes": 3548
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-21.json",
+          "sha256": "026aca6258973d032055fa473d7eb0d1215bf50bfd9d60d1d431074927cfba62",
+          "bytes": 23452
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-21.schema.json",
+          "sha256": "6e4ce83ba4cee3d34bca93fd069b5d613d802f02a8249d0f608e10fecc8de4d1",
+          "bytes": 4473
+        }
+      ],
+      "copiedInputBytes": 43436,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-21.schema.json",
+      "strictOutputSchemaSha256": "6e4ce83ba4cee3d34bca93fd069b5d613d802f02a8249d0f608e10fecc8de4d1",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-21.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 4,
+      "stage": "inventory-routes",
+      "debateNumber": "75",
+      "debateId": "rasmussen-clifton-contingency-argument-2019",
+      "family": "general-theism-religion",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-75.json",
+      "packetSha256": "546193ad19265e2f647353ec646cd53ebfa59bd6a8b1a1e1c0da0c304410a910",
+      "packetBytes": 3128,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-75.json",
+          "sha256": "a6df43f16ba4ee797ed5742ccc6a5c3277c84fd0913160a0ff390dc97ef0644b",
+          "bytes": 3550
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-75.json",
+          "sha256": "90a5598344198eaf840a07ae4c180d6a0c194b111136052241a13d46e15bbdac",
+          "bytes": 22130
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-75.schema.json",
+          "sha256": "bf95f5f478be87e6c9e50ef47f59c2ea37023c9f5526c2d2908a7dfadd6e9dbb",
+          "bytes": 4480
+        }
+      ],
+      "copiedInputBytes": 42123,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-75.schema.json",
+      "strictOutputSchemaSha256": "bf95f5f478be87e6c9e50ef47f59c2ea37023c9f5526c2d2908a7dfadd6e9dbb",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-75.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 5,
+      "stage": "inventory-routes",
+      "debateNumber": "168",
+      "debateId": "craig-krauss-evidence-god-2012",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-168.json",
+      "packetSha256": "b863c3fb7073f8d3b45c9e0e8631dc54add1ae4024912c797fd54c99cdad3798",
+      "packetBytes": 3120,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-168.json",
+          "sha256": "cd5b81a3df2b4e4a195eb6bdbeb948a1a841f3fdef142d2f5a0d16d8595e1fdb",
+          "bytes": 3515
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-168.json",
+          "sha256": "99560233da96a0dc8e6b42a29d191f0dddb35b4038426c573df53d3ab4e1394e",
+          "bytes": 27284
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-168.schema.json",
+          "sha256": "ba5ad07947baa19440fe31acc44c37ae81d38b7ea3947df38c5f93f07c01c357",
+          "bytes": 4468
+        }
+      ],
+      "copiedInputBytes": 47230,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-168.schema.json",
+      "strictOutputSchemaSha256": "ba5ad07947baa19440fe31acc44c37ae81d38b7ea3947df38c5f93f07c01c357",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-168.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 6,
+      "stage": "inventory-routes",
+      "debateNumber": "177",
+      "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-177.json",
+      "packetSha256": "97b074e40e27273b88bf3e742f381701ceeae4ac0d356b482e3f442b76ed8747",
+      "packetBytes": 3134,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-177.json",
+          "sha256": "2cfd6c84ca96f6a51e6a4590f0e7b2f63e06611c42bee96411fce9a15425be7c",
+          "bytes": 3571
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-177.json",
+          "sha256": "941be78e7aa59d7ade25bb01a116fd4511308f1e286985cfa71ca20807fe084f",
+          "bytes": 26597
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-177.schema.json",
+          "sha256": "077b8aa2c86422fd0616497ae901dcd9f676af42307c58785100c7df0bc99ded",
+          "bytes": 4482
+        }
+      ],
+      "copiedInputBytes": 46613,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-177.schema.json",
+      "strictOutputSchemaSha256": "077b8aa2c86422fd0616497ae901dcd9f676af42307c58785100c7df0bc99ded",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-177.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 7,
+      "stage": "inventory-routes",
+      "debateNumber": "56",
+      "debateId": "huemer-lutz-morality-real-2026",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-56.json",
+      "packetSha256": "a82bcbff0b9a7b9929a5968a8d63ae7442d7be1772e8241ecc896ee1ef2e78f3",
+      "packetBytes": 3115,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-56.json",
+          "sha256": "c9e51b65ff361ffc7cfc8204b5ba004cfeb9b9c5eb6b9520f4fb0d58bddc5d93",
+          "bytes": 3516
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-56.json",
+          "sha256": "c35c23e61982fcb4d0ad344617e32616904e9b6442cd0e997e29c568576466cf",
+          "bytes": 22479
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-56.schema.json",
+          "sha256": "810634a5523b7aa5f085e70381a914a7b905f50968100de698087e367a627672",
+          "bytes": 4467
+        }
+      ],
+      "copiedInputBytes": 42425,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-56.schema.json",
+      "strictOutputSchemaSha256": "810634a5523b7aa5f085e70381a914a7b905f50968100de698087e367a627672",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-56.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 8,
+      "stage": "inventory-routes",
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-heavy",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-49.json",
+      "packetSha256": "570ddf72281f0bac04139a5099cc2ba39f29f6c221330e64c64dc40da4806681",
+      "packetBytes": 3127,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-49.json",
+          "sha256": "52b963c5340c78ea5b5d5d81a9f06981a73e651ce8002f3f6f36b088b4ea7251",
+          "bytes": 3534
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-49.json",
+          "sha256": "af1254528e340b3e5620722a0fff8837f114683725a5a67f7691c5da34648117",
+          "bytes": 39836
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-49.schema.json",
+          "sha256": "8fc9c5b85432a409964c44dc047781e009ff9af16323b049f4528ba2de65ffb7",
+          "bytes": 4479
+        }
+      ],
+      "copiedInputBytes": 59812,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-49.schema.json",
+      "strictOutputSchemaSha256": "8fc9c5b85432a409964c44dc047781e009ff9af16323b049f4528ba2de65ffb7",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-49.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 9,
+      "stage": "inventory-routes",
+      "debateNumber": "132",
+      "debateId": "mclatchie-carrier-paul-celestial-jesus-2018",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-132.json",
+      "packetSha256": "2d3ba0959e593c4512065075426656b7c44a6ce743ddb21b7b5154b134a89a79",
+      "packetBytes": 3133,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-132.json",
+          "sha256": "08d0cb63ab8d7e83f9812be69747f49fd0362ef3c26003786201106258084032",
+          "bytes": 3567
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-132.json",
+          "sha256": "7b21616bb46b7cb1f53fbecb8516f80cebd91f80a7771e6bb205828a39cf09fd",
+          "bytes": 20554
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+          "bytes": 6051
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "route-section-plan-guide",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md",
+          "sha256": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+          "bytes": 2480
+        },
+        {
+          "role": "strict-route-output-schema",
+          "path": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-132.schema.json",
+          "sha256": "e065e639ca5f4b2905d456d7373f51e1e5a8038bb2f0279cbce0fb523b34f7ba",
+          "bytes": 4481
+        }
+      ],
+      "copiedInputBytes": 40565,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes"
+      ],
+      "strictOutputSchema": "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-132.schema.json",
+      "strictOutputSchemaSha256": "e065e639ca5f4b2905d456d7373f51e1e5a8038bb2f0279cbce0fb523b34f7ba",
+      "output": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-132.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    }
+  ],
+  "executionPolicy": {
+    "stage": "inventory-routes",
+    "contexts": 10,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "timeoutExtensionsMaximum": 0,
+    "absoluteStageTimeoutMs": 3600000,
+    "copiedInputBytesMaximum": 115000,
+    "observedMaximumCopiedInputBytes": 59812,
+    "maximumParallelContexts": 2,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "rampOneServesAsOperationalCanary": true,
+    "eachRampPhaseMustPassBeforeExpansion": true,
+    "abortBeforeStartingAdditionalContextOnAnyFailure": true,
+    "allowAlreadyRunningIndependentContextToFinish": true,
+    "allTenRoutesMustPassBeforeSectionPacketPreparation": true,
+    "deterministicInputOrder": true,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "directIncrementalCostUsdMaximum": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "separateActivationRequired": true
+  },
+  "acceptancePolicy": {
+    "exactContextCountRequired": 10,
+    "everyContextMustCompleteOnItsSingleAttempt": true,
+    "everyOutputMustValidateAgainstFrozenStrictSchema": true,
+    "everyOutputMustPassDeterministicSemanticValidationAfterComposition": true,
+    "writableDomainsLimitedToRoutes": true,
+    "partialRouteGateAcceptance": false,
+    "automaticSemanticCorrection": false,
+    "exactSectionPacketPreparationDeferredUntilAllRoutesAccepted": true,
+    "scoresDerived": false
+  },
+  "stopRules": {
+    "executionPreparationHashMismatchBlocks": true,
+    "activationHashMismatchBlocks": true,
+    "invalidRouteOutputBlocksEntireGate": true,
+    "routeTimeoutBlocksEntireGate": true,
+    "routeContextFailureBlocksEntireGate": true,
+    "sectionPacketFreezeBeforeTenAcceptedRoutesBlocks": true,
+    "retryBlocks": true,
+    "timeoutExtensionBlocks": true
+  },
+  "totals": {
+    "debates": 10,
+    "routeContextsPrepared": 10,
+    "routeContextsAuthorized": 0,
+    "routeContextsExecuted": 0,
+    "acceptedRoutes": 0,
+    "exactSectionPacketsFrozen": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "audioCalls": 0,
+    "transcriptionCalls": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionActivationPreparation": true,
+    "routeModelContexts": false,
+    "deterministicRouteValidation": false,
+    "routeAnalysis": false,
+    "exactSectionPacketPreparation": false,
+    "sectionModelExecution": false,
+    "exactSidePacketPreparation": false,
+    "sideSelectorModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "semanticCorrection": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "activation": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/route-execution-activation.json",
+    "execution": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/route-model-execution.json",
+    "analysis": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/route-analysis.json",
+    "routes": [
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-17.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-39.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-121.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-21.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-75.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-168.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-177.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-56.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-49.json",
+      "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-132.json"
+    ],
+    "laterSectionPacketPreparation": "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/section-packet-preparation-manifest.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-17.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-39.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-121.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-21.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-75.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-168.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-177.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-56.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-49.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/routes/debate-132.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/route-execution-activation.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/route-model-execution.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/route-analysis.json",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/section-packet-preparation-manifest.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production-workflow.md": "64a66f21d38aec102256ffc4965a25b47d85341fe7e1610974df9f6e3a864bef",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/chronology-fallback-inventory-guide.md": "1a36f05772bdb0c4ea15466f5f9e8098e9724ff871ffde6990c1927e5d87cbc3",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/plan-model-execution.json": "cea69781ef9a48586401ea3b9ee8f61dbc62a73f4b6ef50a0a95799b3aa4f3d8",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/preparation-manifest.json": "915d8d6d017e15906306ac7b1df9c1a628165cb83e6dce66f85b3701c9600122",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-121.schema.json": "046eed00fd62032da75da4e3cc6331618cc0eb9e5f2d0a7fc0f1212ab7cc12a7",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-132.schema.json": "a6a89539ab0853fbd1602b97b80792baaad22d1e99b64919f8eef0ef9d6a874f",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-168.schema.json": "3c5a75fdf448c2123e757bc99bac65e1367e62f25a2b49f565e7c19ac4e6f33d",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-17.schema.json": "182aae8319372fb3061fbb5a9d5dc6c60ac248039af2f06def07112bdb887b56",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-177.schema.json": "8495f63431b8eadf094a524ab9e6fec735e700902ad4c76c620cf4d138457bc9",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-21.schema.json": "cea4294c6577985a12433584b496f371c3c7e13931343c541758201b60dd9d82",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-39.schema.json": "0124975d6a6413573a1ec71b32111a1abb034cf387358acfcac422e6ebfc4c63",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-49.schema.json": "b449994c21b5a1c07c8227f3c5814411bbd11280c99c1b84512057ff8bfdaf2b",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-56.schema.json": "d100aa8d2af6d075f6f9ca347544530c212d62c0c00f5a4667fccd73d0e299c3",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/compiler/debate-75.schema.json": "207b75bc2f6ea08b16dd441232c6b57b879975be32954aa723efbc56644cc231",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-121.schema.json": "8f7c337e5fb06ad949a462073031d128dcf7766c2bc520ba0fc66d4318746641",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-132.schema.json": "8b6d70d439cda6aff1ded939cf1554e610907d80eb0736941e761f2750cabf4e",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-168.schema.json": "58b80d2841e2d8591922614d1fcca1e41cf72e7c84406241411fad3724334d5b",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-17.schema.json": "f788631f79d9ed63d411684a2e9c453a36d641ac10498b86cce4472c9985b62b",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-177.schema.json": "094da3152b0b2a7c7dfa7c38f67d179a11ffa664c64afb9743084ebc412188f8",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-21.schema.json": "b07275d4b3394186f3d44dbd57989389bb8509fcc9ed93f89c7c583f25c2fc24",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-39.schema.json": "dd847c002cb6293f80510f9b71e74ac9f51a0988bad23fc958e592e84c0314ac",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-49.schema.json": "cb5e0c7100993888fe7196599857b450efc38e6261e62c2575bf18cbb360524e",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-56.schema.json": "b4dbddb6b19df6bf6ddfc99fe9c6f32f44b248aec535d0ae2ff5a3dde53c185c",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/schemas/plans/debate-75.schema.json": "d4b98ff27a3a1f03f4aa0581410d9f8c8dc10fe5ac33992549639cd7c2cffd2c",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-121.json": "bc7554c1f35ef3d2ed1771912d62940b6959ded6e20e0eb3e5edf7051a713a8e",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-132.json": "08d0cb63ab8d7e83f9812be69747f49fd0362ef3c26003786201106258084032",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-168.json": "cd5b81a3df2b4e4a195eb6bdbeb948a1a841f3fdef142d2f5a0d16d8595e1fdb",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-17.json": "074968ed518d10d4c969e9147109c2a08dd9f2ff90c2c7afda6c9c709908b9ff",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-177.json": "2cfd6c84ca96f6a51e6a4590f0e7b2f63e06611c42bee96411fce9a15425be7c",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-21.json": "2e6fb67b8e0d3578da08b0d14aead9dc1284554afd0abd5d53fffbefc15b6941",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-39.json": "ae74d344148e71982792882108039ecbb8f4a8cfdf6e1b36809085e17489d073",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-49.json": "52b963c5340c78ea5b5d5d81a9f06981a73e651ce8002f3f6f36b088b4ea7251",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-56.json": "c9e51b65ff361ffc7cfc8204b5ba004cfeb9b9c5eb6b9520f4fb0d58bddc5d93",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/source-packets/debate-75.json": "a6df43f16ba4ee797ed5742ccc6a5c3277c84fd0913160a0ff390dc97ef0644b",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-121.json": "425e3850059cda59afae1277069f53f3745ac313e5eb5b910d6b8f37b0d92ccd",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-132.json": "7b21616bb46b7cb1f53fbecb8516f80cebd91f80a7771e6bb205828a39cf09fd",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-168.json": "99560233da96a0dc8e6b42a29d191f0dddb35b4038426c573df53d3ab4e1394e",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-17.json": "1a2d186a2318307144479a38b309808ba89f4093319295029922cb79f90d71f4",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-177.json": "941be78e7aa59d7ade25bb01a116fd4511308f1e286985cfa71ca20807fe084f",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-21.json": "026aca6258973d032055fa473d7eb0d1215bf50bfd9d60d1d431074927cfba62",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-39.json": "42d220d0d6169977d5c010217004fe603b74b5a119e56577680fe558df033ec0",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-49.json": "af1254528e340b3e5620722a0fff8837f114683725a5a67f7691c5da34648117",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-56.json": "c35c23e61982fcb4d0ad344617e32616904e9b6442cd0e997e29c568576466cf",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/census/debate-75.json": "90a5598344198eaf840a07ae4c180d6a0c194b111136052241a13d46e15bbdac",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-121.json": "5aaa28f68bea15c946f2b1f255624a54243e0e83136ad7d9eb21d3a229cfaa5a",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-132.json": "c0670f720a8cc306642665cdc6eeecf0f2c05e142085f2efb40a113020ecbd00",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-168.json": "06b9c39b90bb03333773af512e5804df18a280ec3852fe3fa1bcadfba37989be",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-17.json": "74440c356d685fe8575c30d7ea38ae6cf8818b3e6abc09bb188d4acf2f012ff2",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-177.json": "769c1dded14ef0bba961e2991299e85650b65c02521c8215923091b7ebf2552b",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-21.json": "d845687f712e80a156b80007fa13b10f3f76ab444e229e44dc89ea7b432b5348",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-39.json": "9569ff45ff539ab832a03a29a113be368b487ed58270f766b6a1d172cae68c13",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-49.json": "8fcbcaf89c0f8465114c3404a2807f31f8c8a3f8a5e80100df6e2cdee3fddb58",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-56.json": "cd6908fb498faa606174d745124aa144eaefcf1ef5213c6d8d91f3be2ea200f4",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/transports/full/debate-75.json": "26d8ad048e4bb34308070263d5d234215fad6698c315e51592facd0eba4e0cdc",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/development-analysis.json": "8716950a644417833644d19e3867f52695df9ac31cdc1ca21e833ce64bb51ea5",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/route-section-plan-guide.md": "82237f0cc9658a0ae98f4a90d0109cfa58ee1140f6b80bb04216cb207597f316",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-121.schema.json": "76af296e04f672978e0dce1f4b2ea3930c9d66c8ad9b40cac6b7f06bf6499c31",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-132.schema.json": "e065e639ca5f4b2905d456d7373f51e1e5a8038bb2f0279cbce0fb523b34f7ba",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-168.schema.json": "ba5ad07947baa19440fe31acc44c37ae81d38b7ea3947df38c5f93f07c01c357",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-17.schema.json": "5a1cde387f2861f440f2f053819b7d317bb394eb1415d774e882dc7ea7cab422",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-177.schema.json": "077b8aa2c86422fd0616497ae901dcd9f676af42307c58785100c7df0bc99ded",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-21.schema.json": "6e4ce83ba4cee3d34bca93fd069b5d613d802f02a8249d0f608e10fecc8de4d1",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-39.schema.json": "b4655aa148dcf3facaa4608f14de7b524028bc9d82b562c7f228e2b3df438f6e",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-49.schema.json": "8fc9c5b85432a409964c44dc047781e009ff9af16323b049f4528ba2de65ffb7",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-56.schema.json": "810634a5523b7aa5f085e70381a914a7b905f50968100de698087e367a627672",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/routes/debate-75.schema.json": "bf95f5f478be87e6c9e50ef47f59c2ea37023c9f5526c2d2908a7dfadd6e9dbb",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-121.schema.json": "ea12c99060dfc639971ba962b0e13564f99f1b2c533181658d9644160fca08a3",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-132.schema.json": "b27cfe315b24bd51c1a736ff48cdc9d22196cc6f650fc9ba413032b2aec3c029",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-168.schema.json": "76256147a86f70f97f5bd70ec36fe26a329af591f54be4723c3e67de522867c6",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-17.schema.json": "bffb0fd963843aff5b5ea4e70831a2d0e52ae3ce5049d675f647d487f27656cb",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-177.schema.json": "c1f83bbe3d5ab8ab495d49e57c789f09e3bd050d86db54046834fa82d119fd61",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-21.schema.json": "2b52a40f38e1c8dd479371a732966a9e5c02af1a181b062a9305ac651c9590fe",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-39.schema.json": "0f440fc181a3fa2f4db93a0f4be543ef92c5227f39f4d7ed430ec409beea9d12",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-49.schema.json": "9bcda0412b831c468ed5f059cbe02ce685d76ccf6e9c0739f8d0ca7e8b110ac3",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-56.schema.json": "8939c04db031b36805743c0d000919b9910cf8b040f0757e63b3183d50d3b2d5",
+    "docs/assessment-production/score-stability-v2.2.2-route-section-plan-successor-development/schemas/sections/debate-75.schema.json": "893105fcee96a09e2d9560c8db6c35018c2322288ed1de2b40d3ad72e90abd9d",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-121.json": "9e85897cd107c06363418d353013b48fedf1a5718bd8de3494f40badf957850f",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-132.json": "2d3ba0959e593c4512065075426656b7c44a6ce743ddb21b7b5154b134a89a79",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-168.json": "b863c3fb7073f8d3b45c9e0e8631dc54add1ae4024912c797fd54c99cdad3798",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-17.json": "57d3a8b52e35fbb4152b5108c1d5dda3176bcfb08da7cb8f629bd48cbea57a05",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-177.json": "97b074e40e27273b88bf3e742f381701ceeae4ac0d356b482e3f442b76ed8747",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-21.json": "a12eb5fbbb9fe4209bb8d3ef303bdfa3d0977e8c98e85a431a93fd9e1318559e",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-39.json": "db526d1d0f5c9856c4d8f7ad32c3f279d4b062be5cb06e96e75af33a0563c28f",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-49.json": "570ddf72281f0bac04139a5099cc2ba39f29f6c221330e64c64dc40da4806681",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-56.json": "a82bcbff0b9a7b9929a5968a8d63ae7442d7be1772e8241ecc896ee1ef2e78f3",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/packets/routes/debate-75.json": "546193ad19265e2f647353ec646cd53ebfa59bd6a8b1a1e1c0da0c304410a910",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/preparation-manifest.json": "99445bebb317ed6a9f5a9edc281f15f2d592b9b95c8ccdf30270a9a1639f3783",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "scripts/lib/assessment-production-score-stability-v2.2.2-route-section-plan.mjs": "8bf4ee0b4ecbddd7e55bea175cab57e6fc14ca55a37d1f3ee17147b6ffd85716",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-score-stability-v2.2.2-route-section-plan-successor.mjs": "e518f90c2d3ab19d4be76f39621074d5589ccc4c2821e5f7492af9c555230d5d",
+    "scripts/preregister-assessment-production-score-stability-v2.2.2-inventory-routes.mjs": "215ecc3c1052049392cd42c7f7deee076a07b29e02ebd7a49049fbf8ad4b173c",
+    "scripts/test-assessment-production-score-stability-v2.2.2-inventory-route-manifest.mjs": "c48b38c41c18444c7ab5ec04e54c9ffac8c4ffebfad64a517d04da9d447c6452",
+    "scripts/test-assessment-production-score-stability-v2.2.2-route-section-plan-successor-preparation.mjs": "d1fd7caa93be3a2ff3a81d08aeba30cc81e71815c752c6135451448c302c69fc"
+  },
+  "nextAuthorizedAction": "prepare-separate-v2.2.2-route-execution-activation-only"
+}
