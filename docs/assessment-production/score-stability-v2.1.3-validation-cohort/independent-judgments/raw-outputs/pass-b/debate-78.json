@@ -1,0 +1,1724 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "78",
+  "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-resurrection-and-catholic-continuity",
+      "side": "pro",
+      "description": "Establish historical credibility for bodily resurrection and Catholic continuity through early Pauline testimony, substantively stable textual transmission, external identification of early Christian belief, and persistence of apostolic church structures and doctrines.",
+      "successCriteria": "The route succeeds if Paul warrants a bodily-resurrection reading, transmission and hostile-witness evidence reliably identify early Christian belief, and institutional and doctrinal continuities connect the first-century church with later Catholic and related apostolic communions.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-historical-credibility",
+        "tier": "motion",
+        "description": "Connect the Pauline, transmission, hostile-witness, and church-structure evidence to the historical credibility of bodily resurrection and Catholic continuity."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-pauline-bodily-resurrection",
+          "tier": "central",
+          "description": "Establish that the early undisputed Pauline letters attest a real bodily resurrection and a risen-Christ appearance rather than merely an immaterial vision."
+        },
+        {
+          "bridgeId": "pro-early-belief-transmission",
+          "tier": "central",
+          "description": "Establish that manuscript stability and external testimony preserve and independently identify an early, historically rooted Christian belief tradition."
+        },
+        {
+          "bridgeId": "pro-apostolic-institutional-continuity",
+          "tier": "central",
+          "description": "Trace first-century leadership offices and essential doctrines through the pre-Nicene period and later apostolic communions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-regional-doctrinal-convergence",
+          "tier": "subsidiary",
+          "description": "Show that Roman, Eastern Orthodox, and Syriac differences coexist with substantial agreement on essential doctrines, councils, and apostolic orders."
+        },
+        {
+          "bridgeId": "pro-reform-versus-rupture",
+          "tier": "subsidiary",
+          "description": "Distinguish reforms that retained inherited Catholic doctrine from later movements that discarded it when characterizing historical continuity."
+        }
+      ]
+    },
+    {
+      "routeId": "con-historical-underdetermination",
+      "side": "con",
+      "description": "Deny that the cited materials establish bodily resurrection or a uniquely Catholic lineage by emphasizing visionary and secondhand alternatives for Paul, uncertainty in transmission and preservation, early Christian diversity, and context-dependent religious branching.",
+      "successCriteria": "The route succeeds if Pauline reports remain compatible with visionary or inherited interpretations, surviving sources cannot securely overcome transmission and selection uncertainty, or early diversity and later branching prevent identification of one continuous Catholic institution.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-warrant",
+        "tier": "motion",
+        "description": "Show that the combined evidence named in the motion remains insufficient to make bodily resurrection and Catholic continuity historically credible."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-pauline-underdetermination",
+          "tier": "central",
+          "description": "Show that Paul's experience and witness traditions do not establish a bodily encounter or independently prove an earlier resurrection event."
+        },
+        {
+          "bridgeId": "con-transmission-selection-uncertainty",
+          "tier": "central",
+          "description": "Show that copying gaps, oral and written transmission, authorial selection, and selective survival limit the evidential force of Christian and hostile sources."
+        },
+        {
+          "bridgeId": "con-diversity-against-single-lineage",
+          "tier": "central",
+          "description": "Show that competing early groups, divergent regional churches, and conciliar formation complicate identification of a uniquely continuous Catholic orthodoxy."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-prevalence-limitation",
+          "tier": "subsidiary",
+          "description": "Require the continuity case to distinguish the existence of a small pre-Constantinian group from widespread or uniquely authoritative orthodoxy."
+        },
+        {
+          "bridgeId": "con-branching-and-reform-context",
+          "tier": "subsidiary",
+          "description": "Use earlier reform movements and shared Christian scripture and history to test claims that later divisions constitute categorical religious rupture."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "pauline-resurrection-evidence",
+      "title": "Pauline evidence and bodily resurrection",
+      "weightPercent": 25,
+      "rationale": "The earliest Pauline material is central to whether the resurrection claim concerns a tangible risen body and whether Paul's reported experience and inherited witness list provide independent historical support."
+    },
+    {
+      "sectionId": "textual-and-gospel-transmission",
+      "title": "Textual stability and Gospel transmission",
+      "weightPercent": 18,
+      "rationale": "Historical use of Christian writings depends on distinguishing substantive manuscript stability from uncertainty about earlier sources, interpolations, transmission across decades, and authorial selection."
+    },
+    {
+      "sectionId": "hostile-witnesses-and-preservation",
+      "title": "Hostile witnesses and preservation effects",
+      "weightPercent": 15,
+      "rationale": "External descriptions may help identify early Christian beliefs, but their force depends on whether surviving hostile materials independently represent the period or reflect selective preservation."
+    },
+    {
+      "sectionId": "early-orthodoxy-and-church-structure",
+      "title": "Early orthodoxy and institutional continuity",
+      "weightPercent": 22,
+      "rationale": "The Catholic-continuity burden turns on whether first-century leadership structures persist through the pre-Nicene era despite a small population, competing groups, councils, and uncertainty about early development."
+    },
+    {
+      "sectionId": "apostolic-communions-and-religious-branching",
+      "title": "Apostolic communions, reform, and religious branching",
+      "weightPercent": 20,
+      "rationale": "Comparisons among Catholic, Orthodox, Syriac, and Protestant traditions test whether shared doctrine, councils, orders, scripture, and history demonstrate continuity or instead support multiple context-dependent Christian branches."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-paul-early-bodily-resurrection",
+      "sectionId": "pauline-resurrection-evidence",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "constructive",
+      "proposition": "Paul's early undisputed letters attest that he believed Christ underwent bodily resurrection and that Paul experienced an appearance of the risen Christ.",
+      "sourceSpan": {
+        "startEvent": 16,
+        "endEvent": 37
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly identifies himself as Catholic and advances the affirmative historical case associated with William Albrecht.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-pauline-bodily-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive move with no earlier opposing locked target; it directly presents the affirmative Pauline premise.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it clearly states the principal Pauline claim but supplies only a compressed textual bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is recoverable and expressly limited to early, undisputed Pauline letters and Paul's belief."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker acknowledges that details are not fully developed, although the cited excerpt only briefly warrants the bodily reading."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The inference from early Pauline language to bodily resurrection is intelligible but leaves the key interpretive bridge compressed."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The early Pauline corpus is identified, but no specific passage or sustained comparison with a visionary reading is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central Pauline bodily-resurrection bridge and reaches its indispensable interpretive premise."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The selected span advances its own historical reading without materially developing a live opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes the early, non-deutero-Pauline corpus and concedes limited detail while asserting bodily belief.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-paul-vision-not-bodily-encounter",
+      "sectionId": "pauline-resurrection-evidence",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Paul's early letters do not establish a bodily encounter because his experience may have been visionary and cannot by itself prove an alleged resurrection years earlier.",
+      "sourceSpan": {
+        "startEvent": 39,
+        "endEvent": 58
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker rejects the affirmative reading of Paul and articulates the skeptical historical position associated with Graham Oppy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-pauline-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-paul-early-bodily-resurrection"
+        ],
+        "components": [
+          {
+            "componentId": "con-paul-vision-not-bodily-encounter-component-01",
+            "targetMoveId": "pro-paul-early-bodily-resurrection",
+            "text": "Whether Paul's early letters establish a bodily risen-Christ encounter.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-paul-vision-not-bodily-encounter-component-02",
+            "targetMoveId": "pro-paul-early-bodily-resurrection",
+            "text": "Whether Paul's experience proves a resurrection occurring years earlier.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies a bodily meeting and separately argues that visionary content cannot prove the earlier alleged event.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It expressly contacts both the bodily-encounter inference and the claimed evidential implication of Paul's experience."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between a bodily meeting, a possible vision, and proof of an earlier event remains clear throughout."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The visionary account is presented as an underdetermining possibility rather than as a demonstrated historical explanation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul believed in a bodily resurrection even if his own appearance experience was visionary.",
+        "decisiveQualification": "Belief in bodily resurrection does not establish that Paul's encounter involved two bodies or independently prove the event."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction between experiential content and proof of an earlier event is valid, with only a bounded account of vision evidence omitted."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The argument identifies the letters' alleged limitation but does not quote or analyze representative Pauline language in the span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central Pauline-underdetermination bridge by attacking bodily encounter and independent proof."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply preserves the distinction between Paul's belief and what his reported experience can historically establish."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly denies a meeting of two bodies and distinguishes visionary content from proof of an earlier event.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-paul-spiritual-body-tangible",
+      "sectionId": "pauline-resurrection-evidence",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "The contrast between mortal and spiritual bodies in 1 Corinthians 15 is best understood as describing a tangible, real, physical resurrected body rather than an immaterial body.",
+      "sourceSpan": {
+        "startEvent": 96,
+        "endEvent": 125
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker describes his own Greek study, identifies himself as Catholic, and defends Albrecht's affirmative Pauline interpretation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-pauline-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-paul-vision-not-bodily-encounter"
+        ],
+        "components": [
+          {
+            "componentId": "pro-paul-spiritual-body-tangible-component-01",
+            "targetMoveId": "con-paul-vision-not-bodily-encounter",
+            "text": "Whether Paul's language supports a tangible body rather than an immaterial appearance.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-paul-spiritual-body-tangible-component-02",
+            "targetMoveId": "con-paul-vision-not-bodily-encounter",
+            "text": "Whether Paul's personal experience independently proves the earlier resurrection event.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The appeal to 1 Corinthians 15 contacts the bodily-versus-immaterial component but does not answer the independent-proof component.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "This is a partial answer that reaches the decisive bodily-language issue while leaving the separate proof objection unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposition is clear, but tangible, real, physical, and spiritual are asserted as aligned without defining their relation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Saying there is no other way to read the passage substantially exceeds the excerpt's undeveloped interpretive support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul's spiritual body may denote a transformed or immaterial mode rather than an ordinary physical body.",
+        "decisiveQualification": "Naming an alternative interpreter does not answer that interpretation's textual reasons or the transformation qualification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The proposed reading is coherent, but the inference from mortal/spiritual contrast to tangible physicality lacks a material semantic bridge."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "First Corinthians 15 is specifically identified, yet the excerpt provides no quoted language or defended lexical and contextual warrant."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central Pauline-underdetermination bridge on the bodily character of resurrection."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The alternative is recognized, but it is not developed or answered beyond the speaker's contrary assertion."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts mortal and spiritual bodies, calls the latter tangible and physical, and acknowledges an immaterial alternative.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-paul-secondhand-witness-tradition",
+      "sectionId": "pauline-resurrection-evidence",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Paul's witness list is secondhand, and inherited resurrection reports may also have shaped how he interpreted his own visionary experience.",
+      "sourceSpan": {
+        "startEvent": 173,
+        "endEvent": 194
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker advances Oppy's skeptical account of transmission, witnesses, and the possible psychological interpretation of Paul's experience.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-pauline-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-paul-early-bodily-resurrection",
+          "pro-paul-spiritual-body-tangible"
+        ],
+        "components": [
+          {
+            "componentId": "con-paul-secondhand-witness-tradition-component-01",
+            "targetMoveId": "pro-paul-early-bodily-resurrection",
+            "text": "Whether Paul's witness material supplies independent firsthand support for resurrection.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-paul-secondhand-witness-tradition-component-02",
+            "targetMoveId": "pro-paul-spiritual-body-tangible",
+            "text": "Whether 1 Corinthians 15 describes a tangible physical resurrected body.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-paul-secondhand-witness-tradition-component-03",
+            "targetMoveId": "pro-paul-early-bodily-resurrection",
+            "text": "Whether inherited reports shaped Paul's interpretation of his own experience.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The excerpt directly establishes that the listed witnesses are reported to Paul secondhand, but does not develop the shaping claim or answer tangibility.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "It is a partial answer contacting the decisive independence issue while leaving other components of the locked proposition unsupported."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The secondhand-witness proposition is clear, but the claimed influence on Paul's self-interpretation is not recoverable from this excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Secondhand status is adequately matched to the excerpt, while the broader psychological-shaping proposition lacks express support here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul may reliably transmit testimony from people he knew even when he did not personally observe every appearance.",
+        "decisiveQualification": "Secondhand status limits independence but does not by itself establish unreliability or fabrication."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from Paul's reliance on reports to their secondhand status is sound, though further consequences require additional premises."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The witness list and the five hundred are specifically identified, but transmission reliability and psychological influence remain undeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central Pauline-underdetermination bridge by limiting the independence of the witness tradition."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply accurately presses the firsthand limitation without claiming that secondhand testimony is automatically false."
+        }
+      },
+      "evidenceBasis": "The excerpt notes that other people told Paul about the five hundred and other witnesses and calls this secondhand material.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-copying-without-earlier-witnesses",
+      "sectionId": "textual-and-gospel-transmission",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Known interpolations and the absence of earlier textual witnesses leave unresolved how reliably underlying sources were copied into surviving Christian texts.",
+      "sourceSpan": {
+        "startEvent": 313,
+        "endEvent": 325
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The skeptical speaker emphasizes textual interpolation and evidential uncertainty in the manner consistently associated with Graham Oppy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-transmission-selection-uncertainty"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-paul-spiritual-body-tangible",
+          "pro-paul-early-bodily-resurrection"
+        ],
+        "components": [
+          {
+            "componentId": "con-copying-without-earlier-witnesses-component-01",
+            "targetMoveId": "pro-paul-spiritual-body-tangible",
+            "text": "Whether Paul's spiritual-body language supports a tangible resurrected body.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-copying-without-earlier-witnesses-component-02",
+            "targetMoveId": "pro-paul-early-bodily-resurrection",
+            "text": "Whether early Pauline letters attest bodily resurrection and a risen-Christ appearance.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The copying-gap argument bears on textual reliability generally but does not contact either earlier Pauline interpretive demand available as a legal target.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "It is relevant contrary material within the broader historical issue, but it is a nonanswer to the selected earlier Pauline claims."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes detectable interpolation where versions exist from uncertainty where earlier witnesses do not exist."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "It poses an unresolved reliability question rather than claiming that undetected interpolation certainly occurred."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Surviving texts may still have been copied reliably despite the absence of earlier extant witnesses.",
+        "decisiveQualification": "Absence of earlier witnesses creates uncertainty but is not positive evidence of alteration."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction between detectable variants and unverifiable earlier copying is coherent and avoids inferring actual corruption."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Known interpolation and missing earlier versions are concrete considerations, though no representative manuscript case is developed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central transmission-selection uncertainty bridge despite not answering its legal Pauline target."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The argument remains appropriately epistemic and does not convert missing comparison evidence into proof of corruption."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts known interpolations identified through versions with cases lacking early versions and asks about copying reliability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-nt-substantive-textual-stability",
+      "sectionId": "textual-and-gospel-transmission",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "Unlike the acknowledged interpolation in Josephus, the extensive New Testament and Septuagint manuscript traditions generally do not exhibit comparable meaning-breaking textual alterations.",
+      "sourceSpan": {
+        "startEvent": 331,
+        "endEvent": 358
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker concedes the Josephus interpolation but defends New Testament manuscript stability from Albrecht's affirmative perspective.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-transmission-selection-uncertainty"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-copying-without-earlier-witnesses",
+          "con-paul-secondhand-witness-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-nt-substantive-textual-stability-component-01",
+            "targetMoveId": "con-copying-without-earlier-witnesses",
+            "text": "Whether surviving Christian texts show meaning-breaking alteration comparable to acknowledged interpolation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-nt-substantive-textual-stability-component-02",
+            "targetMoveId": "con-copying-without-earlier-witnesses",
+            "text": "How copying reliability can be assessed where earlier textual witnesses are absent.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-nt-substantive-textual-stability-component-03",
+            "targetMoveId": "con-paul-secondhand-witness-tradition",
+            "text": "Whether Paul's witness list is secondhand and independently probative.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the alteration concern through manuscript abundance and substantive stability, but it does not resolve the no-earlier-witness verification gap.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It partially answers the decisive textual-alteration concern while leaving the opponent's specific epistemic gap intact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The general claim is recoverable, but meaning-breaking and by-and-large stability lack a defined threshold and representative scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The Josephus research limitation is candidly acknowledged, but manuscript quantity alone only partly warrants broad substantive stability."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Extant manuscript agreement may establish later stability without resolving alteration before the earliest surviving witnesses.",
+        "decisiveQualification": "A large manuscript tradition does not by itself bridge the pre-witness interval highlighted by the objection."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The inference from many largely stable manuscripts to substantive stability is plausible, but it does not answer the earlier-witness gap."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The New Testament and Septuagint traditions are named, yet no representative variant data or independence analysis is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central transmission-selection uncertainty bridge by asserting substantive manuscript stability."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The response fairly concedes an interpolation example but materially omits the strongest temporal qualification to manuscript agreement."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes a Josephus interpolation, invokes numerous New Testament and Septuagint manuscripts, and denies typical text-breaking change.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-gospel-transmission-and-selection-gap",
+      "sectionId": "textual-and-gospel-transmission",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "The decades between the alleged events and the Gospels leave substantial uncertainty about the identity and content of intervening sources and the authors' selection from them.",
+      "sourceSpan": {
+        "startEvent": 359,
+        "endEvent": 390
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker presses the skeptical dating and source-selection challenge characteristic of Graham Oppy's position throughout the exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-transmission-selection-uncertainty"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-nt-substantive-textual-stability",
+          "pro-paul-early-bodily-resurrection",
+          "pro-paul-spiritual-body-tangible"
+        ],
+        "components": [
+          {
+            "componentId": "con-gospel-transmission-and-selection-gap-component-01",
+            "targetMoveId": "pro-nt-substantive-textual-stability",
+            "text": "Whether extensive manuscript traditions generally preserve substantive textual meaning.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-gospel-transmission-and-selection-gap-component-02",
+            "targetMoveId": "pro-paul-early-bodily-resurrection",
+            "text": "Whether early Pauline letters attest bodily resurrection.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-gospel-transmission-and-selection-gap-component-03",
+            "targetMoveId": "pro-paul-spiritual-body-tangible",
+            "text": "Whether spiritual-body language denotes a tangible body.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The decades-long Gospel source gap is important contrary material, but it does not answer the claim about stability within extant manuscript traditions.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "This is a relevant nonanswer: it introduces an earlier transmission problem without contacting the selected manuscript-stability inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The temporal interval, unknown sources, unknown contents, and authorial selection problem are stated with stable scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move asserts uncertainty rather than corruption and appropriately identifies what is not known about the intervening sources."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A Gospel author could act as a conscientious historian using sources despite a two-generation interval.",
+        "decisiveQualification": "Historical intent does not independently establish the identity, content, or reliability of unavailable sources."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The inference from unavailable intervening sources to limited verification is explicit, consistent, and properly modest."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The approximate two-generation interval and specific unknowns provide support, with only comparative transmission evidence omitted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central transmission-selection uncertainty bridge through temporal, source, and selection gaps."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The response expressly grants the historian characterization while preserving the decisive source-verification limitation."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies roughly two generations between events and writing and specifies unknown source identity, content, and selection.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-hostile-witness-identification",
+      "sectionId": "hostile-witnesses-and-preservation",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "Early Pauline material and hostile pagan descriptions identify a historically rooted Christian group whose beliefs about the crucified and worshiped Christ correspond to scriptural rather than Gnostic markers.",
+      "sourceSpan": {
+        "startEvent": 461,
+        "endEvent": 522
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly invokes Catholic reliance on Paul, church fathers, and enemies of the faith in Albrecht's affirmative case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-early-belief-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-gospel-transmission-and-selection-gap",
+          "con-paul-secondhand-witness-tradition",
+          "con-copying-without-earlier-witnesses"
+        ],
+        "components": [
+          {
+            "componentId": "pro-hostile-witness-identification-component-01",
+            "targetMoveId": "con-gospel-transmission-and-selection-gap",
+            "text": "Whether unknown intervening Gospel sources and authorial selection limit reliability.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-hostile-witness-identification-component-02",
+            "targetMoveId": "con-paul-secondhand-witness-tradition",
+            "text": "Whether Paul's inherited witness list lacks firsthand independence.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-hostile-witness-identification-component-03",
+            "targetMoveId": "con-copying-without-earlier-witnesses",
+            "text": "Whether copying reliability is unresolved before extant textual witnesses.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Hostile-source identification adds relevant external evidence but does not resolve unknown Gospel sources, copying gaps, or Paul's secondhand witness list.",
+        "responsivenessWithinClass": {
+          "value": 62,
+          "rationale": "The move is relevant contrary material concerning early belief, but it is not an answer to the selected transmission demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The identification claim is clear, but hostile, Gnostic markers, and correspondence with Scripture are not defined or delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "External identification is plausible, but the excerpt does not warrant the stronger independence, representativeness, or anti-Gnostic implications."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Pagan descriptions may identify some Christian beliefs without independently establishing their origin, prevalence, or textual correspondence.",
+        "decisiveQualification": "External description of a group is not equivalent to independent confirmation of the group's historical claims or representativeness."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Hostile descriptions can identify beliefs, but the move compresses the bridge from shared markers to historically rooted orthodox tradition."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Crucifixion and worship markers are mentioned, yet no hostile author, date, quotation, independence analysis, or sampling defense is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central early-belief transmission bridge by offering external identification of Christian belief."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move treats belief identification as stronger historical corroboration without handling the decisive independence and prevalence qualifications."
+        }
+      },
+      "evidenceBasis": "The excerpt says pagan opponents describe worship of the crucified Christ and claims these markers correspond with Scripture rather than Gnosticism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-preconciliar-competing-christian-groups",
+      "sectionId": "early-orthodoxy-and-church-structure",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "The first centuries contained many competing Christian groups, so identifying one properly orthodox lineage before councils fixed orthodoxy is historically unwarranted.",
+      "sourceSpan": {
+        "startEvent": 527,
+        "endEvent": 539
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker expressly qualifies his expertise while giving Oppy's skeptical account of early diversity and conciliar definition.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-diversity-against-single-lineage"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-hostile-witness-identification",
+          "pro-nt-substantive-textual-stability"
+        ],
+        "components": [
+          {
+            "componentId": "con-preconciliar-competing-christian-groups-component-01",
+            "targetMoveId": "pro-hostile-witness-identification",
+            "text": "Whether external descriptions identify a uniquely orthodox early Christian group.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-preconciliar-competing-christian-groups-component-02",
+            "targetMoveId": "pro-hostile-witness-identification",
+            "text": "Whether the identified beliefs were widespread before conciliar settlement.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-preconciliar-competing-christian-groups-component-03",
+            "targetMoveId": "pro-nt-substantive-textual-stability",
+            "text": "Whether surviving manuscript traditions are substantively stable.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges unique identification and preconciliar prevalence by pointing to multiple groups and later conciliar definition.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It expressly contacts the identification and prevalence implications, although its claim that no orthodoxy existed is too categorical."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposition is clear, but competing groups, orthodox, and the relevant council are insufficiently specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The existence of competition supports uncertainty, but saying nothing was orthodox until councils fixed it exceeds the evidence stated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A recognizable proto-orthodox lineage may have existed before councils despite competition and unsettled boundaries.",
+        "decisiveQualification": "Competition and later formal definition do not by themselves prove the absence of earlier identifiable continuity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 65,
+          "rationale": "Diversity complicates unique lineage, but the inference from competition to no prior orthodoxy presents an unsupported categorical step."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The general existence of competing groups is asserted without examples, prevalence evidence, or analysis of preconciliar boundaries."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central diversity-against-single-lineage bridge and challenges hostile-source identification."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The response materially weakens the continuity alternative by treating conciliar formalization as the creation of all orthodoxy."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes numerous competing groups in the first centuries and attributes the fixing of orthodoxy to councils.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-hostile-source-selection-effect",
+      "sectionId": "hostile-witnesses-and-preservation",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Surviving hostile writings may reflect selective Christian preservation of texts useful for portraying a preferred view as early and widespread orthodoxy.",
+      "sourceSpan": {
+        "startEvent": 826,
+        "endEvent": 863
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker clarifies that his objection concerns survival and preservation rather than tampering, matching Oppy's preceding skeptical argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-transmission-selection-uncertainty"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-hostile-witness-identification",
+          "pro-nt-substantive-textual-stability"
+        ],
+        "components": [
+          {
+            "componentId": "con-hostile-source-selection-effect-component-01",
+            "targetMoveId": "pro-hostile-witness-identification",
+            "text": "Whether surviving pagan writings independently show early or widespread orthodoxy.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-hostile-source-selection-effect-component-02",
+            "targetMoveId": "pro-hostile-witness-identification",
+            "text": "Whether Christian preservation could select hostile sources favorable to a preferred history.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-hostile-source-selection-effect-component-03",
+            "targetMoveId": "pro-nt-substantive-textual-stability",
+            "text": "Whether manuscript copying is substantively stable.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly challenges the representativeness and independence of the cited hostile evidence through a possible preservation-selection effect.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It directly contacts the inference from surviving hostile texts, though it advances the selection mechanism only as a hypothesis."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposed selection effect is identifiable and explicitly limited to a hypothesis about surviving pagan writings."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker repeatedly labels the proposal possible and hypothetical, matching the limited support available in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Surviving hostile writings may genuinely be independent evidence even if Christians later preserved them.",
+        "decisiveQualification": "Possible selective preservation reduces representativeness only if a relevant preservation mechanism or omitted-source pattern is supported."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "A preservation-selection effect could undermine representativeness, but the mechanism and its expected evidential consequences remain compressed."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "No example of selective preservation or missing hostile material is supplied, so the fact-dependent hypothesis remains speculative."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central transmission-selection uncertainty bridge by challenging the survival pattern of hostile sources."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move does not declare the evidence worthless and properly confines the objection to a live selection hypothesis."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly proposes a selection effect affecting pagan writings offered as evidence of widespread preconciliar orthodoxy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-preconstantinian-prevalence-limitation",
+      "sectionId": "early-orthodoxy-and-church-structure",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "Christianity was relatively small and not widespread before Constantine, in part because it had not yet been legalized.",
+      "sourceSpan": {
+        "startEvent": 862,
+        "endEvent": 874
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows Oppy's question and is delivered in Albrecht's first-person account of his historical position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-prevalence-limitation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-hostile-source-selection-effect",
+          "con-preconciliar-competing-christian-groups"
+        ],
+        "components": [
+          {
+            "componentId": "pro-preconstantinian-prevalence-limitation-component-01",
+            "targetMoveId": "con-hostile-source-selection-effect",
+            "text": "Whether the affirmative case requires orthodoxy to have been widespread before councils.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-preconstantinian-prevalence-limitation-component-02",
+            "targetMoveId": "con-hostile-source-selection-effect",
+            "text": "Whether selective Christian preservation distorted the surviving hostile evidence.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-preconstantinian-prevalence-limitation-component-03",
+            "targetMoveId": "con-preconciliar-competing-christian-groups",
+            "text": "Whether multiple groups prevent identification of a continuous institution.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply concedes limited prevalence and explains it partly through illegality, but it does not answer the proposed preservation-selection mechanism.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "It partially answers the prevalence demand by rejecting widespread status while leaving the source-selection objection untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Relatively small, not widespread, pre-Constantinian, and not legalized provide a recoverable and bounded claim."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limited-prevalence concession is calibrated, but the causal role assigned to illegality is asserted without supporting comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A small group may still lack unique authority or continuity, and preservation could still be selective.",
+        "decisiveQualification": "Conceding low prevalence answers only spread, not representativeness, authority, or selective survival."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Small size is compatible with illegality and with continuity, but the causal explanation is not fully developed."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Pre-Constantinian illegality is invoked as a concrete reason, though no periodization or prevalence evidence is provided."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly attacks the subsidiary prevalence-limitation bridge by conceding and contextualizing limited spread."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "The response accurately narrows its concession and does not claim that small size alone establishes institutional continuity."
+        }
+      },
+      "evidenceBasis": "The excerpt denies widespread pre-Constantinian Christianity, describes it as relatively small, and cites its lack of legal status.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-first-century-hierarchical-continuity",
+      "sectionId": "early-orthodoxy-and-church-structure",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "constructive",
+      "proposition": "A hierarchy of church leaders attested in the first-century New Testament persisted through the pre-Nicene period despite internal conflict, supporting identification of a continuous Catholic institution.",
+      "sourceSpan": {
+        "startEvent": 875,
+        "endEvent": 911
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Albrecht explicitly frames the passage as his proposed argument and develops it before inviting Oppy's assessment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-apostolic-institutional-continuity"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no response target and supplies the affirmative institutional-continuity sequence from first-century offices to Nicaea.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "Within constructive moves, it presents a clear continuity chain while compressing the evidence for persistence and Catholic identity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The sequence is clear, but hierarchy, persistence throughout history, and clearly Catholic identity require sharper criteria."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Internal conflict is acknowledged, but the excerpt's asserted continuity and Catholic identification exceed its listed-office evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Similar leadership titles may persist while institutional powers, succession, and doctrines materially develop.",
+        "decisiveQualification": "Continuity of labels is not sufficient by itself to establish continuity of one Catholic institution."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "Persistent offices can support continuity, but the move leaves a material bridge from recurring structure to identical Catholic institution."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Bishops, priests, and deacons are named, but no first-century passages or pre-Nicene succession evidence are developed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central apostolic institutional-continuity bridge across the specified historical interval."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The move acknowledges conflict but does not address the strongest development-versus-identity qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt names bishops, priests, and deacons, places them in the first century, and asserts persistence to Nicaea despite conflict.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-uncertain-single-catholic-lineage",
+      "sectionId": "early-orthodoxy-and-church-structure",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Christianity's initial status as a Jewish sect and the existence of divergent ancient churches such as Syrian Christianity prevent confident identification of a single Catholic institutional lineage.",
+      "sourceSpan": {
+        "startEvent": 912,
+        "endEvent": 933
+      },
+      "attributionConfidence": "medium",
+      "attributionBasis": "The passage directly answers Albrecht's invitation for an assessment and shifts into Oppy's cautious, knowledge-qualified historical response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-diversity-against-single-lineage"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-first-century-hierarchical-continuity",
+          "pro-preconstantinian-prevalence-limitation"
+        ],
+        "components": [
+          {
+            "componentId": "con-uncertain-single-catholic-lineage-component-01",
+            "targetMoveId": "pro-first-century-hierarchical-continuity",
+            "text": "Whether early leadership structure identifies one continuous Catholic institution.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-uncertain-single-catholic-lineage-component-02",
+            "targetMoveId": "pro-first-century-hierarchical-continuity",
+            "text": "Whether divergent ancient churches undermine a uniquely Catholic lineage.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-uncertain-single-catholic-lineage-component-03",
+            "targetMoveId": "pro-preconstantinian-prevalence-limitation",
+            "text": "Whether small pre-Constantinian prevalence can coexist with continuity.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply challenges unique institutional identification through initial Jewish-sect status and the existence of distinct ancient Syrian churches.",
+        "responsivenessWithinClass": {
+          "value": 79,
+          "rationale": "It contacts the lineage-identification demand but remains fragmentary and does not directly analyze the claimed office sequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The skeptical direction is recoverable, but the excerpt is interrupted and does not specify which Syrian church or decisive divergence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The response is cautious and knowledge-qualified, using the examples to complicate rather than conclusively disprove continuity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Jewish origins and regional churches may be stages or branches within a continuous apostolic institution.",
+        "decisiveQualification": "Diversity complicates unique identification only when the relevant institutional or doctrinal divergence is specified."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The examples can complicate a single-lineage inference, but the connecting institutional argument remains materially incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Jewish-sect origins and Syrian Christianity are named without dates, structures, doctrines, or a developed lineage comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central diversity-against-single-lineage bridge by challenging unique Catholic identification."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The reply remains cautious but does not fully engage the possibility of development within continuity."
+        }
+      },
+      "evidenceBasis": "The excerpt describes early Christians as a Jewish sect and introduces ancient Syrian churches as complicating examples.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "pro-syriac-roman-doctrinal-convergence",
+      "sectionId": "apostolic-communions-and-religious-branching",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "Syriac and Roman churches substantially agree in Christology, Trinitarian theology, and Marian belief despite differences in terminology.",
+      "sourceSpan": {
+        "startEvent": 934,
+        "endEvent": 963
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Albrecht answers the Syriac-church example with detailed confessional comparisons and concludes with a claim about unified orthodoxy.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-regional-doctrinal-convergence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-uncertain-single-catholic-lineage",
+          "con-preconciliar-competing-christian-groups"
+        ],
+        "components": [
+          {
+            "componentId": "pro-syriac-roman-doctrinal-convergence-component-01",
+            "targetMoveId": "con-uncertain-single-catholic-lineage",
+            "text": "Whether Syrian Christianity represents a decisive divergence from Roman Catholic continuity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-syriac-roman-doctrinal-convergence-component-02",
+            "targetMoveId": "con-uncertain-single-catholic-lineage",
+            "text": "Whether doctrinal convergence establishes one institutional lineage.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-syriac-roman-doctrinal-convergence-component-03",
+            "targetMoveId": "con-preconciliar-competing-christian-groups",
+            "text": "Whether preconciliar competition prevents early orthodoxy.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the Syrian-divergence example through claimed doctrinal agreement but does not establish institutional identity or answer preconciliar diversity.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It partially answers the decisive regional-divergence example while leaving the stronger single-lineage demand unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The doctrinal fields and language qualification are stated, but Syriac churches and virtually the same are overly broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Terminological differences are acknowledged, yet broad claims of sameness exceed the single joint-declaration reference."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Modern joint declarations may show partial convergence without erasing historical, ecclesial, or sacramental differences.",
+        "decisiveQualification": "Agreement in selected doctrines does not alone demonstrate identical institutional lineage or complete doctrinal equivalence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "Doctrinal convergence answers one divergence indicator, but it does not entail continuous institutional identity."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Joint Christological declarations and specified doctrinal areas are concrete support, though no documents or counter-differences are examined."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary regional-doctrinal-convergence bridge through the Syriac and Roman comparison."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The response addresses doctrinal similarity but materially compresses historical and institutional qualifications."
+        }
+      },
+      "evidenceBasis": "The excerpt cites different terminology, joint Christological declarations, and agreement concerning Trinity, Mary, and Christ.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-apostolic-communions-shared-inheritance",
+      "sectionId": "apostolic-communions-and-religious-branching",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "constructive",
+      "proposition": "Catholic, Eastern Orthodox, and Syriac churches retain common essential doctrines and councils, making their divisions narrower than their differences from evangelical Protestantism.",
+      "sourceSpan": {
+        "startEvent": 970,
+        "endEvent": 997
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Albrecht compares the named communions through characteristic Catholic doctrinal categories and then asks Oppy to acknowledge the comparison.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-regional-doctrinal-convergence"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no earlier response target and advances regional doctrinal convergence through shared councils and essential inheritance.",
+        "responsivenessWithinClass": {
+          "value": 80,
+          "rationale": "Within constructive moves, it gives a recognizable comparative claim but uses a rhetorical Protestant contrast instead of a developed criterion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Incomplete uniformity is expressly conceded, but apostolic churches, essentials, and another planet remain imprecise comparative terms."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The shared-inheritance proposition is moderately supported, while the categorical evangelical contrast is rhetorically stronger than the evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Protestant traditions also share Scripture and history, while apostolic communions retain substantial differences.",
+        "decisiveQualification": "Greater similarity among some communions does not by itself establish exclusive continuity or categorical religious distance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Shared councils and doctrines support relative similarity, but the categorical comparative conclusion lacks an explicit metric."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Councils and commonality are mentioned, yet representative doctrines and comparative Protestant evidence are not developed."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "The move directly supports the subsidiary regional-convergence bridge through common councils and inherited doctrines."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The move concedes incomplete uniformity but caricatures evangelical distance and omits shared Protestant inheritance."
+        }
+      },
+      "evidenceBasis": "The excerpt cites shared councils, substantial commonality among apostolic churches, incomplete uniformity, and a sharp evangelical contrast.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-reformation-had-reform-precursors",
+      "sectionId": "apostolic-communions-and-religious-branching",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Numerous movements before the Reformation already sought to correct clerical corruption and other defects within the church, placing Luther within a longer reform tradition.",
+      "sourceSpan": {
+        "startEvent": 1029,
+        "endEvent": 1038
+      },
+      "attributionConfidence": "medium",
+      "attributionBasis": "The passage introduces historical precursors as a counterpoint, with Albrecht's acknowledgments interspersed during Oppy's brief intervention.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-branching-and-reform-context"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-apostolic-communions-shared-inheritance",
+          "pro-first-century-hierarchical-continuity",
+          "pro-syriac-roman-doctrinal-convergence"
+        ],
+        "components": [
+          {
+            "componentId": "con-reformation-had-reform-precursors-component-01",
+            "targetMoveId": "pro-apostolic-communions-shared-inheritance",
+            "text": "Whether apostolic communions share essentials more closely than evangelical Protestants.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-reformation-had-reform-precursors-component-02",
+            "targetMoveId": "pro-first-century-hierarchical-continuity",
+            "text": "Whether a continuous hierarchical institution persisted to later Catholicism.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-reformation-had-reform-precursors-component-03",
+            "targetMoveId": "pro-syriac-roman-doctrinal-convergence",
+            "text": "Whether Syriac and Roman churches substantially converge doctrinally.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Reform precursors bear on later rupture classifications but do not contact the earlier comparative doctrine or institutional-continuity claims.",
+        "responsivenessWithinClass": {
+          "value": 56,
+          "rationale": "This is relevant contrary material within the branching issue, but it is a nonanswer to the available earlier opposing moves."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The precursor point is recoverable, but the named Milanese example is unclear and Luther's placement is not stated in the excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The existence of multiple reform efforts is plausible, but plenty and the longer-tradition implication receive little support."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Earlier internal reform efforts can contextualize the Reformation, though the bridge to Luther's doctrinal rupture is undeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "An eleventh-century Milanese example and clerical corruption are mentioned, but the broader claim lacks representative documentation."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary branching-and-reform-context bridge by locating reform before Luther."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The brief, interrupted span adds a historical precursor rather than engaging a sufficiently developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt cites eleventh-century Milan and multiple movements concerned with clerical corruption and other church reforms.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-contextual-christian-branching",
+      "sectionId": "apostolic-communions-and-religious-branching",
+      "side": "con",
+      "speaker": "Graham Oppy",
+      "moveKind": "reply",
+      "proposition": "Religious individuation is context-dependent, and Protestant denominations remain branches of Christianity because they share scripture and history despite major internal differences.",
+      "sourceSpan": {
+        "startEvent": 1259,
+        "endEvent": 1312
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Oppy answers Albrecht's classification question by developing a comparative taxonomy spanning Christianity, Judaism, Islam, and Eastern religions.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-branching-and-reform-context"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-apostolic-communions-shared-inheritance",
+          "pro-syriac-roman-doctrinal-convergence"
+        ],
+        "components": [
+          {
+            "componentId": "con-contextual-christian-branching-component-01",
+            "targetMoveId": "pro-apostolic-communions-shared-inheritance",
+            "text": "Whether large differences from evangelicals place Protestants outside the relevant Christian continuity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-contextual-christian-branching-component-02",
+            "targetMoveId": "pro-apostolic-communions-shared-inheritance",
+            "text": "Whether shared Scripture and history support treating Protestants as Christian branches.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-contextual-christian-branching-component-03",
+            "targetMoveId": "pro-syriac-roman-doctrinal-convergence",
+            "text": "Whether Syriac and Roman doctrinal convergence proves one institutional lineage.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly answers the categorical evangelical contrast by offering a contextual taxonomy grounded in shared Scripture and history.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It expressly contacts the comparative classification demand and supplies the reasons for retaining Protestant branches within Christianity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contextual classification claim and its shared-scripture and shared-history criteria are clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents a reasoned taxonomy with both differences and similarities, without claiming a uniquely necessary classification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Catholic, Orthodox, and Syriac communions may share more doctrine and structure with one another than with Protestants.",
+        "decisiveQualification": "Relative doctrinal distance does not eliminate the shared scripture and history supporting a broader Christian classification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The taxonomy coherently uses shared Scripture and history to explain common classification despite major internal differences."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The shared criteria are specific and relevant, though the cross-religious taxonomy is asserted rather than systematically defended."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary branching-and-reform-context bridge by testing categorical rupture through shared inheritance."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply acknowledges significant differences while directly preserving the strongest basis for the broader classification."
+        }
+      },
+      "evidenceBasis": "The excerpt acknowledges differences and similarities, classifies Christianity as a world religion, and cites shared Scripture and history.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move-level ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion is established beyond the locked pro route and rated moves.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence is identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing any proposed residual would not change burden completion independently of the scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move-level ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion is established beyond the locked con route and rated moves.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence is identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing any proposed residual would not change burden completion independently of the scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

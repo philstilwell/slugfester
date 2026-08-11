@@ -1,0 +1,1832 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "92",
+  "debateId": "craig-malpass-universe-begin-exist-2020",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-kalam-finite-past-route",
+      "side": "pro",
+      "description": "Establish that a beginningless temporal sequence is excluded either because concrete actual infinities are metaphysically impossible or because a temporal series cannot be formed by successive addition, while answering challenges based on temporal symmetry, tense, quantifier scope, and paradox reformulations.",
+      "successCriteria": "The route succeeds if at least one independent philosophical argument supplies adequate grounds for a finite past and its indispensable premises remain applicable to temporal reality after the principal infinity, symmetry, and traversal objections are addressed.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-finite-past-support",
+        "tier": "motion",
+        "description": "Connect a defensible prohibition on a beginningless temporal sequence to adequate philosophical support for the claim that the universe began to exist."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-concrete-actual-infinity",
+          "tier": "central",
+          "description": "Establish that the properties illustrated by concrete actual-infinity cases warrant excluding an actually infinite collection of past events."
+        },
+        {
+          "bridgeId": "pro-central-temporal-asymmetry",
+          "tier": "central",
+          "description": "Supply a principled difference between an instantiated beginningless past and an endless future that preserves the finite-past inference."
+        },
+        {
+          "bridgeId": "pro-central-successive-addition",
+          "tier": "central",
+          "description": "Establish that temporal accumulation cannot produce or traverse an actual infinite merely because every particular finite member is reachable."
+        },
+        {
+          "bridgeId": "pro-central-paradox-or-causal-finitism",
+          "tier": "central",
+          "description": "Show that reverse-counting, Grim Reaper, Hilbert-style, or causal-finitist reasoning independently excludes a beginningless temporal or causal sequence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-modal-and-quantifier-distinctions",
+          "tier": "subsidiary",
+          "description": "Clarify the modal, tense, and distributive-versus-collective distinctions required by the central infinity arguments."
+        },
+        {
+          "bridgeId": "pro-subsidiary-endpoint-explanation",
+          "tier": "subsidiary",
+          "description": "Explain why a beginningless process terminating at one finite point requires a non-arbitrary account of that endpoint."
+        }
+      ]
+    },
+    {
+      "routeId": "con-adequacy-critique-route",
+      "side": "con",
+      "description": "Withhold adequacy from the finite-past case by showing that counterintuitive infinite-set behavior does not establish impossibility, that past-future asymmetry is unsupported, and that successive-addition arguments conflate completion with memberwise coverage or rely on unresolved explanatory assumptions.",
+      "successCriteria": "The route succeeds if the principal actual-infinity and successive-addition arguments each retain an indispensable unsupported inference, equivocation, or symmetry problem, without requiring an independent demonstration that the universe is beginningless.",
+      "motionBridge": {
+        "bridgeId": "con-motion-undercut-adequacy",
+        "tier": "motion",
+        "description": "Show that the offered infinity arguments do not adequately establish a beginning of the universe, while bearing no burden to prove a beginningless universe."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-absurdity-versus-impossibility",
+          "tier": "central",
+          "description": "Require a justified inference from unusual Cantorian consequences to metaphysical impossibility rather than treating counterintuitiveness as sufficient."
+        },
+        {
+          "bridgeId": "con-central-past-future-parity",
+          "tier": "central",
+          "description": "Show that the treatment of a beginningless past and endless future requires an independently defensible temporal symmetry breaker."
+        },
+        {
+          "bridgeId": "con-central-memberwise-coverage",
+          "tier": "central",
+          "description": "Distinguish every member being reached from a completed terminal act and require proof that the disputed every-to-all inference fails in the relevant case."
+        },
+        {
+          "bridgeId": "con-central-countdown-and-paradox-premises",
+          "tier": "central",
+          "description": "Challenge the sufficiency, endpoint-explanation, accumulation, or possibility premises used by reverse-counting and paradox-based finite-past arguments."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-tense-discipline",
+          "tier": "subsidiary",
+          "description": "Keep simple-future, future-perfect, past, and present-existence claims aligned when testing purported temporal asymmetries."
+        },
+        {
+          "bridgeId": "con-subsidiary-skeptical-burden",
+          "tier": "subsidiary",
+          "description": "Maintain the distinction between undermining the offered support for a beginning and affirmatively establishing a beginningless past."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "actual-infinity-modal-force",
+      "title": "Actual Infinity: From Cantorian Consequences to Metaphysical Impossibility",
+      "weightPercent": 22,
+      "rationale": "This issue tests the principal premise of the actual-infinity argument: whether Hilbert-style and related consequences justify excluding concrete actual infinities, or merely display familiar features of infinite collections."
+    },
+    {
+      "sectionId": "temporal-parity-and-tense",
+      "title": "Past–Future Parity, Temporal Becoming, and Tense",
+      "weightPercent": 21,
+      "rationale": "The finite-past inference depends on whether elapsed past events and unrealized future events differ in a way that blocks temporal mirroring without equivocating among present, future, and future-perfect claims."
+    },
+    {
+      "sectionId": "successive-addition-and-quantifier-scope",
+      "title": "Successive Addition, Endless Counting, and Quantifier Scope",
+      "weightPercent": 27,
+      "rationale": "This section contains the main clash over whether temporal succession can encompass every member of an infinite series, and whether memberwise reachability entails a collectively completed actual infinite."
+    },
+    {
+      "sectionId": "beginningless-countdowns-and-explanation",
+      "title": "Beginningless Countdowns, Completion, and Endpoint Explanation",
+      "weightPercent": 17,
+      "rationale": "Reverse-counting cases test whether infinitely much prior activity is sufficient for completion and whether a modest explanatory principle can exclude an otherwise arbitrary finishing point."
+    },
+    {
+      "sectionId": "paradox-reformulations-and-causal-finitism",
+      "title": "Grim Reapers, Hilbert Reformulations, and Causal Finitism",
+      "weightPercent": 13,
+      "rationale": "Alternative paradox and causal formulations matter because they may provide an independent finite-past route, but their force depends on possibility, accumulation, temporal-mirroring, and causal-structure premises."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-actual-infinity-syllogism",
+      "sectionId": "actual-infinity-modal-force",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "A beginningless temporal series cannot exist because it would constitute an actually infinite collection, and actually infinite collections cannot exist in concrete reality.",
+      "sourceSpan": {
+        "startEvent": 174,
+        "endEvent": 182
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Craig the floor, and this passage occurs continuously within Craig's opening presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-finite-past-support"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive statement of the principal actual-infinity syllogism and therefore has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it clearly states the premises and conclusion, though it does not yet defend the crucial premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The syllogistic proposition, its concrete-reality scope, and its crucial premise are readily recoverable and consistently expressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conclusion is asserted as necessary, while this span identifies but does not yet establish the controversial impossibility premise."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The inference is valid if both premises hold, but the indispensable impossibility premise is only announced in this span."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The formal statement is clear, but the controversial claim that concrete actual infinities cannot exist awaits supporting argument."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly supplies the central actual-infinity bridge, though the motion-level adequacy connection still depends on premise defense."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents its own constructive syllogism rather than interpreting a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly enumerates the two premises and conclusion and identifies the first premise as the crucial disputed claim.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-hilbert-hotel-modal-case",
+      "sectionId": "actual-infinity-modal-force",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Hilbert's Hotel displays consequences that Craig regards as sufficiently absurd to warrant judging any actually infinite collection of concrete things metaphysically impossible.",
+      "sourceSpan": {
+        "startEvent": 183,
+        "endEvent": 270
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening turn remains Craig's, with the moderator addressing Alex only after Craig reaches his conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-finite-past-support"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the principal illustration intended to defend the actual-infinity impossibility premise.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it gives a concrete modal illustration but compresses the bridge from unusual consequences to impossibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The hotel illustration and claimed metaphysical conclusion are recoverable, with the generalization beyond hotels left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The passage moves from dramatic counterintuitive behavior to metaphysical impossibility without stating a sufficient impossibility-making feature."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The hotel consequences are consistent with Cantorian arithmetic, so an additional bridge is required to infer metaphysical impossibility."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "A vivid representative example is supplied, but no contradiction or defended criterion converts its strangeness into impossibility."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "The move directly addresses the indispensable concrete-actual-infinity bridge with the debate's principal illustrative case."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No opposing interpretation is directly assessed; the move develops Craig's preferred illustrative case."
+        }
+      },
+      "evidenceBasis": "The excerpt describes a fully occupied infinite hotel accepting additional guests and expressly generalizes from that result to metaphysical impossibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-absurdity-not-impossibility",
+      "sectionId": "actual-infinity-modal-force",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Strange consequences of infinite collections do not establish their metaphysical impossibility unless a contradiction or another reliable impossibility-making feature is demonstrated.",
+      "sourceSpan": {
+        "startEvent": 354,
+        "endEvent": 454
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains Alex's invited response, and the moderator explicitly pauses him afterward to request Craig's thoughts.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-paradox-or-causal-finitism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-hilbert-hotel-modal-case",
+          "pro-actual-infinity-syllogism"
+        ],
+        "components": [
+          {
+            "componentId": "con-absurdity-not-impossibility-component-01",
+            "targetMoveId": "pro-hilbert-hotel-modal-case",
+            "text": "Show why Hilbert's unusual consequences constitute metaphysical impossibility rather than merely counterintuitive infinite-set behavior.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-absurdity-not-impossibility-component-02",
+            "targetMoveId": "pro-actual-infinity-syllogism",
+            "text": "Defend the syllogism's crucial premise that concrete actual infinities cannot exist.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Malpass identifies the missing inference from intuitive strangeness to contradiction or another impossibility-making feature and states that the modal conclusion remains unestablished without it.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "This explicitly diagnoses the decisive warrant gap in the hotel case and applies the consequence to the syllogism's crucial premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The criticism distinguishes intuition, contradiction, and metaphysical impossibility and expressly conditions its conclusion on further argument."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Malpass cautiously says a contradiction may exist but correctly withholds the impossibility inference until it is actually drawn out."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The hotel consequences might reveal a non-contradictory but still metaphysically impossible feature.",
+        "decisiveQualification": "Craig must identify and defend that feature rather than rely only on counterintuitiveness."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The distinction between counterintuitiveness and impossibility is valid and directly exposes the missing premise in the offered inference."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "The warrant is principally conceptual and well defended, though it does not independently catalogue every possible impossibility criterion."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly contacts the central burden requiring justification from Cantorian consequences to metaphysical impossibility."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The response allows a stronger modal route while accurately locating the additional warrant that route would require."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly questions whether any contradiction follows and says the purported absurdity must be drawn out before impossibility is established.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-elapsed-past-unrealized-future",
+      "sectionId": "temporal-parity-and-tense",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "On a tensed theory, a beginningless past would contain infinitely many events already instantiated in reality, while an endless future contains only finitely many realized events at every stage.",
+      "sourceSpan": {
+        "startEvent": 461,
+        "endEvent": 513
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator requests Craig's response immediately before this passage, and Craig directly addresses the Aristotelian position attributed to Alex.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-concrete-actual-infinity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-absurdity-not-impossibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-elapsed-past-unrealized-future-component-01",
+            "targetMoveId": "con-absurdity-not-impossibility",
+            "text": "Provide a contradiction or reliable impossibility-making feature connecting strange infinite consequences to metaphysical impossibility.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move offers a temporal asymmetry concerning instantiated past and unrealized future events, but it does not answer the preceding demand for an impossibility-making feature in Hilbert-style cases.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "It is relevant to the broader actual-infinity dispute but does not contact the decisive contradiction-or-warrant demand selected from the prior reply."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The past-future distinction is clearly limited to a tensed theory and consistently uses realization and instantiation terminology."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The tensed-theory qualification is clear, but past instantiation alone does not establish that the totality is a concrete actual infinite."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The temporal contrast is intelligible, but a material bridge remains between each past event's having occurred and a concrete infinite totality."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The tensed account supplies a relevant conceptual basis, while the ontological status of the completed past collection remains underdefended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central temporal-asymmetry bridge needed to distinguish a beginningless past from an endless future."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This move develops a distinct temporal argument rather than substantially interpreting the preceding modal criticism."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts infinitely many elapsed prior hours at every past point with forward temporal becoming on a tensed theory.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-temporal-mirroring-parity",
+      "sectionId": "temporal-parity-and-tense",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "If infinitely many past events make a beginningless past impossible, temporal mirroring threatens an endless future as well, so the asymmetric treatment requires a principled symmetry breaker.",
+      "sourceSpan": {
+        "startEvent": 680,
+        "endEvent": 749
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex identifies Craig's beliefs, presents the angel example in the first person, repeats it after a connection interruption, and then hands the discussion to Bill.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-paradox-or-causal-finitism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-elapsed-past-unrealized-future",
+          "pro-hilbert-hotel-modal-case"
+        ],
+        "components": [
+          {
+            "componentId": "con-temporal-mirroring-parity-component-01",
+            "targetMoveId": "pro-elapsed-past-unrealized-future",
+            "text": "Supply a principled difference explaining why the alleged actual-infinity problem applies to the past but not an endless future.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-temporal-mirroring-parity-component-02",
+            "targetMoveId": "pro-hilbert-hotel-modal-case",
+            "text": "Apply the concrete-infinity prohibition consistently to temporally mirrored collections.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The mirroring example expressly argues that merely changing whether the same praises are past or future does not change their number and states the symmetry-threatening consequence for an endless future.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly exposes the unresolved parity problem and clearly states that a symmetry breaker is required."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional objection and its target are clear, and its force is explicitly tied to accepting the concrete-actual-infinity prohibition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The necessity is conditional on Craig's prohibition and the absence of a principled temporal difference, matching the argument supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Temporal becoming may make past events instantiated while future events remain merely potential.",
+        "decisiveQualification": "That ontological distinction must explain why mirrored event cardinality has different modal consequences."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The conditional parity challenge is coherent and forces an independently defended asymmetry, though mirroring alone does not prove exact ontological identity."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The mirrored-praises case is apt conceptual support, with one bounded gap concerning whether tense changes ontological rather than perspectival facts."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It squarely attacks the central past-future-parity bridge and the consistency of the finite-past inference."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The objection recognizes the need for reconciliation but does not yet fully analyze every metaphysical account of temporal becoming."
+        }
+      },
+      "evidenceBasis": "The excerpt says temporal perspective does not change how many praises occur and derives the threatened consequence that an endless future must also be rejected.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-past-instantiation-distinction",
+      "sectionId": "temporal-parity-and-tense",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Past events can constitute an actual infinite despite no longer existing because they have been instantiated in reality, whereas future events have never been instantiated on a tensed theory.",
+      "sourceSpan": {
+        "startEvent": 989,
+        "endEvent": 1029
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response directly follows a question to Craig and uses his established terminology about instantiation, temporal becoming, and tensed time.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-concrete-actual-infinity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-temporal-mirroring-parity",
+          "con-absurdity-not-impossibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-past-instantiation-distinction-component-01",
+            "targetMoveId": "con-temporal-mirroring-parity",
+            "text": "Identify a principled ontological asymmetry between a beginningless past and an endless future.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-past-instantiation-distinction-component-02",
+            "targetMoveId": "con-absurdity-not-impossibility",
+            "text": "Establish why the instantiated past would be metaphysically impossible rather than merely unusual.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig directly distinguishes events that have been instantiated from future events that have never been instantiated, contacting the parity demand, but he does not establish why past instantiation forms an impossible infinite totality.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "This is a partial answer: it directly supplies the requested symmetry breaker but leaves its decisive modal sufficiency underdefended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Instantiation is defined by contrast with unreal future events, and the claim is expressly restricted to a tensed theory."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The past-future ontological distinction is clearly asserted, but its sufficiency to constitute a concrete actual infinite remains implicit."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The mirroring objection treats past and future cardinality as symmetric despite their differing tensed status.",
+        "decisiveQualification": "Cardinality parity need not entail parity in real-world instantiation on a tensed theory."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The distinction is internally coherent on presentist or tensed assumptions, with a bounded missing bridge from prior instantiation to a concrete collection."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The tensed-theory account supports the distinction, but the excerpt does not independently defend that theory or the collective inference."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central temporal-asymmetry burden with Craig's principal instantiation distinction."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "Craig addresses the strongest parity formulation with a relevant ontological qualification, though he does not finish its modal defense."
+        }
+      },
+      "evidenceBasis": "The excerpt states that past events have been instantiated or exited from their causes while future events are unreal and uninstantiated on a tensed theory.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-presentism-tense-discipline",
+      "sectionId": "temporal-parity-and-tense",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Presentism does not by itself break past-future symmetry, and moving between simple-future and future-perfect claims obscures whether an endless future is only potentially infinite.",
+      "sourceSpan": {
+        "startEvent": 1042,
+        "endEvent": 1143
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Malpass explicitly identifies himself as disagreeing with Craig and gives an extended first-person analysis using tense logic and his marble illustration.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-endpoint-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-past-instantiation-distinction",
+          "pro-elapsed-past-unrealized-future"
+        ],
+        "components": [
+          {
+            "componentId": "con-presentism-tense-discipline-component-01",
+            "targetMoveId": "pro-past-instantiation-distinction",
+            "text": "Show that past instantiation, unlike future realization, supplies a genuine symmetry breaker rather than a shift between tense formulations.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-presentism-tense-discipline-component-02",
+            "targetMoveId": "pro-elapsed-past-unrealized-future",
+            "text": "Keep simple-future and future-perfect claims distinct when characterizing an endless future.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Malpass identifies a tense shift as the source of the apparent asymmetry and states that, once simple-future and future-perfect claims are separated, presentism alone does not resolve the parity objection.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "The response expressly diagnoses the alleged equivocation and gives its defeating consequence for the proposed symmetry breaker."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully separates presentism, simple future, and future perfect, making both its diagnosis and limited conclusion explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Malpass presents the tense diagnosis as his analysis rather than certainty and acknowledges Craig's disagreement."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig may intend an ontological instantiation distinction rather than merely a grammatical tense shift.",
+        "decisiveQualification": "That ontology must still explain why simple-future coverage is harmless while analogous past coverage is impossible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The tense distinction is coherent and directly undermines an inference from finite future-perfect stages to failure of simple-future coverage."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The marble illustration and explicit tense analysis give strong conceptual support, with a bounded dependence on disputed tense semantics."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It is exceptionally strong within the subsidiary tense-discipline tier, while its implications also bear on the central parity dispute."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The response preserves the strongest ontological reading but insists that it answer the precise coverage question."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly accuses the argument of switching from future tense to future perfect and says correct tense discipline removes the proposed symmetry breaker.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-successive-addition-finite-past",
+      "sectionId": "successive-addition-and-quantifier-scope",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Even if actual infinite collections are possible, the temporal past cannot be actually infinite because no actual infinite can be formed through the successive addition by which events accumulate.",
+      "sourceSpan": {
+        "startEvent": 1213,
+        "endEvent": 1304
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator expressly invites Craig to present his second philosophical argument, which Craig then states formally and illustrates at length.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-concrete-actual-infinity"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move states the independent successive-addition route and associates it with a Grim Reaper contradiction.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it presents a clear independent route, although the generalization from the paradox to all temporal accumulation is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conclusion is recoverable, but formation, traversal, and paradoxical causal accumulation are not fully distinguished in the excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A universal prohibition on successive formation is asserted from a particular paradox without an explicit applicability condition."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "The stated route is intelligible, but the bridge from a Grim Reaper contradiction to every beginningless successively ordered past remains material."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "A concrete contradiction-style case is supplied, yet the warrant that all temporal accumulation shares its causal structure is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the indispensable central successive-addition bridge and presents it as an independent finite-past route."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents an independent constructive argument and does not materially interpret an opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt connects successive formation of an actual infinite to the Grim Reaper outcome that the victim neither survives nor can be killed by any reaper.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-every-to-all-scope-distinction",
+      "sectionId": "successive-addition-and-quantifier-scope",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "An endless counter's ability to count every particular natural number does not entail completion of all natural numbers, because the inference improperly shifts quantifier or modal scope.",
+      "sourceSpan": {
+        "startEvent": 1466,
+        "endEvent": 1535
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig addresses Malpass by name, labels the inference a modal-operator fallacy, and develops the criticism through explicit every-versus-all distinctions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-temporal-asymmetry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-presentism-tense-discipline",
+          "con-temporal-mirroring-parity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-every-to-all-scope-distinction-component-01",
+            "targetMoveId": "con-presentism-tense-discipline",
+            "text": "Explain why simple-future reachability of each number does not entail collective completion of all numbers.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-every-to-all-scope-distinction-component-02",
+            "targetMoveId": "con-temporal-mirroring-parity",
+            "text": "Explain why endless future succession differs from an actually infinite completed past.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig directly invokes the every-versus-all and modal-scope distinction, thereby contacting the simple-future coverage issue and relating it to the past-future completion asymmetry.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "The decisive component is contacted, but the excerpt largely labels the inference invalid and acknowledges that further explanation is needed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The every-versus-all distinction is recoverable, but modal and quantifier scopes are not formally displayed, leaving one material ambiguity."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The inference is declared invalid without a complete scope reconstruction establishing that the relevant reading commits the alleged fallacy."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The endless-counting claim may be distributive: for every natural number, the counter will count it.",
+        "decisiveQualification": "That memberwise claim does not by itself assert a time at which the completed totality has been counted."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The scope distinction is legitimate, but its application to the precise simple-future proposition retains a material unshown formal bridge."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The conceptual distinction is relevant, while the selected span itself concedes the need for more explanation of why this inference fails."
+        },
+        "relevanceBurden": {
+          "value": 85,
+          "rationale": "It is near the top of the subsidiary modal-and-quantifier tier because it directly supplies the needed scope distinction."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The response captures the strongest distributive reading and supplies the key collective qualification, though formal exposition is abbreviated."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts designating every past event with denoting all past events and identifies the disputed inference as involving modal scope.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-every-to-all-case-specificity",
+      "sectionId": "successive-addition-and-quantifier-scope",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "The fact that some every-to-all inferences fail does not establish failure in endless counting, where counting each natural number may support the distributive claim that all natural numbers are counted.",
+      "sourceSpan": {
+        "startEvent": 1536,
+        "endEvent": 1630
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Malpass resumes in first person, reconstructs Craig's objection with alternative examples, and repeatedly asks why that pattern fails in his actual counting case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-modal-and-quantifier-distinctions"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-every-to-all-scope-distinction",
+          "pro-successive-addition-finite-past"
+        ],
+        "components": [
+          {
+            "componentId": "con-every-to-all-case-specificity-component-01",
+            "targetMoveId": "pro-every-to-all-scope-distinction",
+            "text": "Demonstrate that the alleged every-to-all fallacy actually occurs in the endless-counting case rather than merely in other examples.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-every-to-all-case-specificity-component-02",
+            "targetMoveId": "pro-successive-addition-finite-past",
+            "text": "Challenge the inference from successive counting to impossibility of memberwise infinite coverage.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Malpass directly grants that some every-to-all inferences fail but argues through contrasting examples that the endless-counting proposition may instead support a legitimate distributive universal.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "The move directly answers the scope objection at its case-specific point and requests the missing discriminating reason."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes generic invalid patterns from the particular distributive claim about each natural number."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The repeated 'feels to me' formulation appropriately presents a supported challenge rather than claiming a decisive proof."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig's objection may target collective completion rather than the distributive claim that each number will be counted.",
+        "decisiveQualification": "The debated proposition must be fixed before the generic every-to-all warning decides the case."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The case-specificity objection is sound: examples of invalid every-to-all reasoning do not alone classify this inference as invalid."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Contrasting examples and direct application provide strong conceptual support, with a bounded gap because no full formal semantics is supplied."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "It directly contacts the central memberwise-coverage bridge and the decisive application of the scope objection."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "Malpass fairly preserves the valid collective distinction while showing why it may not defeat his actual distributive claim."
+        }
+      },
+      "evidenceBasis": "The excerpt applies the claim to arbitrary examples such as ten and one million and contrasts the counting case with clearly invalid universal inferences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-simple-future-coverage",
+      "sectionId": "successive-addition-and-quantifier-scope",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "That only finitely many numbers will have been counted at every stage does not settle the distinct simple-future claim that every natural number will eventually be counted.",
+      "sourceSpan": {
+        "startEvent": 1656,
+        "endEvent": 1719
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Malpass explicitly says the disagreement returns to tense and provides a sustained first-person distinction between simple-future and future-perfect formulations.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-modal-and-quantifier-distinctions"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-every-to-all-scope-distinction",
+          "pro-successive-addition-finite-past"
+        ],
+        "components": [
+          {
+            "componentId": "con-simple-future-coverage-component-01",
+            "targetMoveId": "pro-every-to-all-scope-distinction",
+            "text": "Show why finite future-perfect totals at each stage defeat the simple-future claim that every number will be counted.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-simple-future-coverage-component-02",
+            "targetMoveId": "pro-successive-addition-finite-past",
+            "text": "Distinguish terminal completion from eventual memberwise coverage in successive addition.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Malpass explicitly diagnoses the argument as shifting from the simple-future claim to future-perfect stage totals and states that finite stage totals do not settle eventual coverage of each number.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "The response expressly identifies the tense-level inference being challenged and states the consequence for the successive-addition argument."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Simple future and future perfect are expressly separated, and the memberwise conclusion is consistently limited to eventual coverage."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker acknowledges that Craig rejects the analysis and advances it with appropriately qualified argumentative confidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig may be denying a completed state rather than denying that each number will eventually be counted.",
+        "decisiveQualification": "That denial is compatible with the simple-future distributive proposition Malpass is defending."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The distinction between every stage having a finite past tally and every member eventually being reached is logically exact."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "The tense analysis supplies strong conceptual warrant, though its full force depends on accepting the intended simple-future semantics."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "It directly bears on the central memberwise-coverage burden and the validity of the successive-addition inference."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The response accurately distinguishes the strongest collective reading and explains why it does not answer the memberwise claim."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts how many numbers Cameron will have counted at any stage with the distinct claim about what Cameron will count.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-beginningless-countdown-completion",
+      "sectionId": "beginningless-countdowns-and-explanation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "A beginningless countdown is incoherent because at every past point the counter has already had infinitely much time and should already be finished, contrary to the hypothesis that counting continued.",
+      "sourceSpan": {
+        "startEvent": 1861,
+        "endEvent": 1917
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly reconstructs his own published dialectical argument in response to Malpass's request for clarification.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-temporal-asymmetry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-simple-future-coverage",
+          "con-every-to-all-case-specificity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-beginningless-countdown-completion-component-01",
+            "targetMoveId": "con-simple-future-coverage",
+            "text": "Explain why infinitely much prior activity entails completion rather than merely memberwise coverage.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-beginningless-countdown-completion-component-02",
+            "targetMoveId": "con-every-to-all-case-specificity",
+            "text": "Apply the completion objection specifically to a beginningless countdown.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig applies the argument to a beginningless countdown and claims that at every prior point infinitely much time has already elapsed, so continued counting contradicts the completion expectation.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "The decisive completion issue is contacted, but the asserted 'should already be finished' bridge is the very sufficiency claim needing defense."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The contradiction is recoverable, but the conditions under which infinitely much elapsed time suffices for completion are not specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move treats infinite prior duration as sufficient for completion without defending rate, ordering, or endpoint conditions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A beginningless counter can have infinitely many prior counting acts while retaining a finite remainder now.",
+        "decisiveQualification": "Infinite prior duration alone must be shown sufficient, not merely necessary, for reaching zero."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "The purported contradiction depends on an unsupported conditional that infinitely much prior time guarantees completion at every past point."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The countdown supplies an intuitive case, but no independent warrant establishes the crucial sufficiency condition."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central countdown-and-paradox bridge with the route's principal reverse-counting argument."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The argument states the opposing hypothesis but omits its strongest necessary-versus-sufficient qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt says the counter should have finished at every past point because an infinite amount of time had already elapsed, producing the alleged contradiction.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-infinite-counting-not-sufficient",
+      "sectionId": "beginningless-countdowns-and-explanation",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Infinitely many past counting moments are necessary but not sufficient for a countdown to finish now, because a beginningless counter could presently have any finite remainder.",
+      "sourceSpan": {
+        "startEvent": 1918,
+        "endEvent": 1963
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Malpass begins an explicit response, distinguishes necessary from sufficient conditions, and applies it to the countdown example.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-modal-and-quantifier-distinctions"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-beginningless-countdown-completion",
+          "pro-every-to-all-scope-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "con-infinite-counting-not-sufficient-component-01",
+            "targetMoveId": "pro-beginningless-countdown-completion",
+            "text": "Justify the inference from infinitely many prior counting acts to finishing at the present or any specified point.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-infinite-counting-not-sufficient-component-02",
+            "targetMoveId": "pro-every-to-all-scope-distinction",
+            "text": "Preserve the distinction between memberwise activity and terminal completion.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Malpass explicitly distinguishes necessary from sufficient conditions, supplies a finite-remainder countermodel, and thereby identifies why infinite prior counting does not entail finishing now.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "The response directly identifies the invalid sufficiency inference and supplies a concrete defeating alternative."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Necessary and sufficient conditions, the present endpoint, and the finite-remainder counterexample are all clearly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The counterexample decisively establishes that infinite prior counting alone is not sufficient to determine the current numeral."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig may assume a fixed countdown ordering that uniquely determines the endpoint.",
+        "decisiveQualification": "That ordering and its endpoint must be added; they do not follow from infinite prior activity alone."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The necessary-versus-sufficient distinction and finite-remainder countermodel directly defeat the stated inference."
+        },
+        "evidenceWarrant": {
+          "value": 91,
+          "rationale": "The conceptual counterexample is specific and sufficient for the limited undercut, with no fact-dependent premise left unsupported."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "It directly contacts the central countdown premise and undermines the claimed completion contradiction."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply preserves the stronger ordered-countdown possibility while isolating the omitted premise needed to make it work."
+        }
+      },
+      "evidenceBasis": "The excerpt says infinite past counting is necessary but not sufficient for counting zero now and gives seventeen remaining as an explicit alternative.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-local-endpoint-explanation",
+      "sectionId": "beginningless-countdowns-and-explanation",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "A modest demand for explanation can be met by local facts about a counter's recent state and rate, even when those facts do not explain the entire beginningless history.",
+      "sourceSpan": {
+        "startEvent": 1984,
+        "endEvent": 2053
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Malpass discusses Craig's appeal to Oppy's partial-explanation principle and supplies his own countdown application in a continuous turn.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-modal-and-quantifier-distinctions"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-beginningless-countdown-completion",
+          "pro-every-to-all-scope-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "con-local-endpoint-explanation-component-01",
+            "targetMoveId": "pro-beginningless-countdown-completion",
+            "text": "Answer the claim that no explanation can select the present rather than another endpoint for a beginningless countdown.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-local-endpoint-explanation-component-02",
+            "targetMoveId": "pro-every-to-all-scope-distinction",
+            "text": "Distinguish local endpoint explanation from explanation of the entire infinite history.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Malpass invokes a modest partial-explanation principle and argues that recent state and rate can explain finishing now without explaining the whole beginningless history.",
+        "responsivenessWithinClass": {
+          "value": 80,
+          "rationale": "The endpoint demand is contacted with a relevant local-explanation proposal, though the selected evidence only partially develops its application."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The local-versus-total explanation distinction is clear, but the exact modest PSR criterion remains only partially specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move cautiously offers one way to understand partial explanation and appropriately avoids claiming a complete explanatory theory."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig's modest PSR may require an explanation of why this endpoint is selected within the full beginningless ordering.",
+        "decisiveQualification": "A local state-and-rate explanation must be shown inadequate under that specific modest principle."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Local facts can coherently explain an endpoint without explaining the entire history, though adequacy depends on the PSR's precise demand."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The modal-collapse motivation and partial-explanation distinction are relevant, but the local countdown application is not fully documented here."
+        },
+        "relevanceBurden": {
+          "value": 71,
+          "rationale": "It directly attacks the central countdown-and-paradox explanatory premise, even though the endpoint issue also has a subsidiary counterpart."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response fairly recognizes the modest-PSR version but leaves some detail about its exact satisfaction compressed."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts overly strong explanation principles with partial explanation and applies that approach to the beginningless-countdown dispute.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-countdown-endpoint-psr",
+      "sectionId": "beginningless-countdowns-and-explanation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "A beginningless counter's finishing at one particular time rather than another violates a modest principle of sufficient reason because no adequate explanation selects that endpoint.",
+      "sourceSpan": {
+        "startEvent": 2054,
+        "endEvent": 2076
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig refers to his published formulation and repeatedly states that the countdown scenario violates that defensible principle.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-successive-addition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-local-endpoint-explanation",
+          "con-infinite-counting-not-sufficient"
+        ],
+        "components": [
+          {
+            "componentId": "pro-countdown-endpoint-psr-component-01",
+            "targetMoveId": "con-local-endpoint-explanation",
+            "text": "Show why the proposed local explanation fails the specific modest principle of sufficient reason being invoked.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-countdown-endpoint-psr-component-02",
+            "targetMoveId": "con-infinite-counting-not-sufficient",
+            "text": "Explain why finishing at this endpoint rather than retaining another finite remainder is non-arbitrary.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig asserts that Oppy's modest principle is defensible and violated by the endpoint scenario, contacting both the local-explanation and arbitrariness issues, but the selected span does not state the principle or show the violation.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "This partial answer reaches the decisive issue but mainly refers to an article and asserts the result without reconstructing the required warrant."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The asserted PSR violation is recoverable, but the operative principle and standard for adequate endpoint explanation are not stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling the principle plausible is calibrated, but claiming the case violates it lacks the displayed premise needed for assessment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Recent state and counting rate may locally explain why the counter finishes now.",
+        "decisiveQualification": "Craig must show that the modest PSR demands more than that local causal explanation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 65,
+          "rationale": "The conclusion could follow from a suitable PSR, but the omitted formulation leaves a substantial unassessable bridge."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "Reliance on a referenced article and assertion of violation supplies little source-visible defense of the crucial explanatory standard."
+        },
+        "relevanceBurden": {
+          "value": 85,
+          "rationale": "It directly supplies the subsidiary endpoint-explanation bridge and is near the top of that relevance tier."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The response acknowledges that an explanation is proposed but does not engage its strongest local form or state the decisive PSR requirement."
+        }
+      },
+      "evidenceBasis": "The excerpt calls the referenced PSR modest and defensible and states that the finishing scenario violates it without laying out the principle.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-grim-reaper-temporal-mirror",
+      "sectionId": "paradox-reformulations-and-causal-finitism",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "Grim Reaper reasoning may involve an accumulation problem and may be temporally mirrored, threatening to imply an end of the future by reasoning used to infer a beginning of time.",
+      "sourceSpan": {
+        "startEvent": 2301,
+        "endEvent": 2340
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Malpass is directly addressed by the question and answers in the first person about his paper and ongoing mirroring analysis.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-modal-and-quantifier-distinctions"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-countdown-endpoint-psr",
+          "pro-beginningless-countdown-completion"
+        ],
+        "components": [
+          {
+            "componentId": "con-grim-reaper-temporal-mirror-component-01",
+            "targetMoveId": "pro-countdown-endpoint-psr",
+            "text": "Test whether paradox-based finite-past reasoning can be temporally mirrored to yield an analogous finite-future conclusion.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-grim-reaper-temporal-mirror-component-02",
+            "targetMoveId": "pro-beginningless-countdown-completion",
+            "text": "Challenge the accumulation assumptions shared by countdown and Grim Reaper cases.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Malpass expressly presents temporal mirroring of the Grim Reaper argument and notes an accumulation concern, thereby contacting the need for an asymmetry in paradox-based reasoning.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "The response clearly contacts the parity demand but largely reports the mirrored argument rather than fully deriving or defending it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The mirrored consequence is clear, but the accumulation problem and exact mirrored premises are only partially developed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move cautiously says the argument may be mirrored and appropriately refrains from claiming a demonstrated impossibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Grim Reaper setup may contain a causal directionality that blocks temporal mirroring.",
+        "decisiveQualification": "That directional premise must be independently defended rather than assumed from the desired temporal conclusion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The parity challenge is coherent, though the selected span does not reconstruct enough premises to prove that the mirror is exact."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Reference to an existing mirrored formulation and accumulation issue is relevant but compressed and not independently demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 71,
+          "rationale": "It directly attacks the central paradox-premises bridge by challenging both accumulation and temporal asymmetry."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move leaves room for an asymmetry while correctly demanding an account of what blocks the mirror."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies the Grim Reaper argument as temporally mirrorable and states that its mirror would imply that the future must end.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "pro-causal-finitism-asymmetry",
+      "sectionId": "paradox-reformulations-and-causal-finitism",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Causal finitism excludes a beginningless causal past by denying that an event can result from infinitely many causes, while still permitting an endless forward causal series.",
+      "sourceSpan": {
+        "startEvent": 2341,
+        "endEvent": 2374
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig introduces Pruss's work, states its governing causal principle, and explicitly contrasts its implications for past and future series.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-temporal-asymmetry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-grim-reaper-temporal-mirror",
+          "con-temporal-mirroring-parity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-causal-finitism-asymmetry-component-01",
+            "targetMoveId": "con-grim-reaper-temporal-mirror",
+            "text": "Provide a principled causal asymmetry that excludes a beginningless causal past without also excluding an endless causal future.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-causal-finitism-asymmetry-component-02",
+            "targetMoveId": "con-temporal-mirroring-parity",
+            "text": "Answer the broader demand for an independently defensible past-future symmetry breaker.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig supplies causal finitism as the requested asymmetry: an event may not result from infinitely many causes, whereas an endless forward sequence need not produce any effect from infinitely many causes.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "The move directly states the decisive asymmetric principle and its different consequences for backward and forward causal series."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The causal principle and the distinction between an infinite causal ancestry and endless forward succession are clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conditional implications are clear, but the truth and applicability of causal finitism itself are asserted rather than defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Temporal mirroring may transfer any finite-past paradox to an analogous finite-future paradox.",
+        "decisiveQualification": "Causal ancestry converges on an effect, while endless forward causation need not converge on an effect with infinitely many causes."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "Given causal finitism, the asymmetric implication follows cleanly, with the main remaining issue being defense of the principle."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The structural distinction is specific, but no independent argument is supplied for causal finitism or its application to all past events."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central paradox-or-causal-finitism bridge and answers the temporal-mirroring challenge."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The response accurately addresses the strongest mirror with a principled structural difference rather than a merely verbal tense distinction."
+        }
+      },
+      "evidenceBasis": "The excerpt states that no event can be the effect of infinitely many causes and contrasts a beginningless causal past with an endless forward series.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-hilbert-hotel-entailment-denial",
+      "sectionId": "paradox-reformulations-and-causal-finitism",
+      "side": "con",
+      "speaker": "Alex Malpass",
+      "moveKind": "reply",
+      "proposition": "A backward-infinite sequence does not entail the possibility of a Hilbert's Hotel when the creation of rooms is restricted to finitely many at any one time.",
+      "sourceSpan": {
+        "startEvent": 2522,
+        "endEvent": 2579
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Alex, and the response ends by inviting Bill to object to the cited paper's treatment.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-paradox-or-causal-finitism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-causal-finitism-asymmetry",
+          "pro-hilbert-hotel-modal-case"
+        ],
+        "components": [
+          {
+            "componentId": "con-hilbert-hotel-entailment-denial-component-01",
+            "targetMoveId": "pro-causal-finitism-asymmetry",
+            "text": "Show that a backward-infinite sequence entails a concrete Hilbert-style infinite collection rather than only finitely many creations at each time.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-hilbert-hotel-entailment-denial-component-02",
+            "targetMoveId": "pro-hilbert-hotel-modal-case",
+            "text": "Challenge the transfer from Hilbert's Hotel to every backward-infinite temporal sequence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Malpass identifies the entailment gap and proposes a restriction under which only finitely many rooms are created at any time, so a backward-infinite creator does not thereby produce a simultaneously infinite hotel.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The reply directly diagnoses the disputed transfer and gives a concrete model in which the alleged entailment fails."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The backward-infinite sequence, finite-at-a-time restriction, and denied Hilbert-Hotel entailment are all distinctly expressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Under the stated finite-at-a-time restriction, the denial of entailment follows without requiring a stronger claim that such a history is actual."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Divine omnipotence plus a backward-infinite duration might be thought sufficient to realize infinitely many rooms.",
+        "decisiveQualification": "Omnipotence need not include performing an infinite simultaneous act if only finite creation occurs at every time."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The countermodel validly shows that backward infinitude alone does not entail a simultaneously instantiated Hilbert's Hotel."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "The finite-at-a-time restriction is a clear conceptual countermodel, though its broader metaphysical plausibility is not extensively defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central concrete-infinity and paradox bridge by denying a key Hilbert-style entailment."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The move takes the modal argument seriously and supplies the precise restriction that blocks its strongest entailment claim."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that omnipotence may be restricted to creating finitely many rooms at any time and therefore denies the infinite-hotel entailment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-alternative-infinity-reformulations",
+      "sectionId": "paradox-reformulations-and-causal-finitism",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Alternative formulations of the infinity argument offered by Hedrick, Loke, and Pruss are presented as avoiding the past-future symmetry objection directed at Craig's preferred formulation.",
+      "sourceSpan": {
+        "startEvent": 2582,
+        "endEvent": 2597
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex explicitly invites Bill to respond, and the ensuing first-person statement identifies Craig's own defended symmetry-breaking approach.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-temporal-asymmetry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-hilbert-hotel-entailment-denial",
+          "con-grim-reaper-temporal-mirror",
+          "con-temporal-mirroring-parity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-alternative-infinity-reformulations-component-01",
+            "targetMoveId": "con-hilbert-hotel-entailment-denial",
+            "text": "Explain how a specific reformulation avoids the finite-at-a-time restriction and establishes the disputed infinite-hotel or finite-past consequence.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-alternative-infinity-reformulations-component-02",
+            "targetMoveId": "con-grim-reaper-temporal-mirror",
+            "text": "Identify a specific reformulation and show why temporal mirroring does not apply to it.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-alternative-infinity-reformulations-component-03",
+            "targetMoveId": "con-temporal-mirroring-parity",
+            "text": "Answer the demand for a principled past-future asymmetry within a developed argument.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig names several alternative formulations and says they avoid symmetry breaking, but he neither states their premises nor explains how any one answers the immediately preceding entailment denial or mirroring objection.",
+        "responsivenessWithinClass": {
+          "value": 47,
+          "rationale": "The material is relevant to the disputed route but remains a relevant nonanswer because no decisive component of the cited objections is substantively contacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "stable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The existence claim is recoverable, but the unspecified formulations' scopes, premises, and claimed conclusions cannot be evaluated from the span."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The assertion that the alternatives escape the objection is unsupported because their operative reasoning is not presented."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 55,
+          "rationale": "No internal contradiction appears, but the inference cannot be assessed because the alternative arguments and their symmetry-avoiding premises are absent."
+        },
+        "evidenceWarrant": {
+          "value": 45,
+          "rationale": "The move relies on named authorities and an asserted result without representative exposition or a defended applicability warrant."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move centrally concerns alternative paradox or causal-finitist routes, but its burden contact is weakened by lack of developed content."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "Naming external alternatives without reconstructing them does not provide enough material to test their treatment of competing interpretations."
+        }
+      },
+      "evidenceBasis": "The excerpt names Hedrick, Loke, and Pruss and asserts that their formulations avoid symmetry breaking without presenting those formulations.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, importance judgments, and burden-relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion beyond the locked pro route and bridge criteria was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, importance judgments, and burden-relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion beyond the locked con route and bridge criteria was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

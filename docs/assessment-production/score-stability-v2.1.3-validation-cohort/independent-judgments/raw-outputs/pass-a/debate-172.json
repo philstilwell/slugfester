@@ -1,0 +1,1687 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "172",
+  "debateId": "hitchens-mcgrath-religious-belief-2007",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-credible-constructive-route",
+      "side": "pro",
+      "description": "Establish Christian belief as an intellectually responsible interpretation of reality and as a morally constructive tradition whose central resources support meaning, transformation, forgiveness, and resistance to dehumanizing violence.",
+      "successCriteria": "The route succeeds if it supplies a defensible account of religious inference under evidential uncertainty, explains how Christianity contributes meaning and moral orientation, and distinguishes its governing norms from pathological or extremist uses of religion.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-credible-and-constructive",
+        "tier": "motion",
+        "description": "Show that Christian belief can remain intellectually credible in the modern world while its governing commitments can make a constructive moral contribution."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-epistemic-viability",
+          "tier": "central",
+          "description": "Explain why scientific accounts do not exhaust questions of existence, meaning, and value, and why religious belief may function as a challengeable inference rather than privileged certainty."
+        },
+        {
+          "bridgeId": "pro-central-moral-resources",
+          "tier": "central",
+          "description": "Identify Christian resources for transformation, forgiveness, human dignity, and restraint of violence that connect the tradition's central claims to constructive conduct."
+        },
+        {
+          "bridgeId": "pro-central-harm-causation",
+          "tier": "central",
+          "description": "Show why coercion and violence should not be attributed uniquely or necessarily to religion, while providing a principled basis for criticizing religious abuses."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-doctrinal-interpretation",
+          "tier": "subsidiary",
+          "description": "Give morally coherent interpretations of resurrection, redemption, and scriptural development sufficient to answer objections grounded in sacrifice, punishment, or violent texts."
+        },
+        {
+          "bridgeId": "pro-subsidiary-motivational-symmetry",
+          "tier": "subsidiary",
+          "description": "Establish that psychological desire cannot by itself determine whether religious or nonreligious belief is true."
+        }
+      ]
+    },
+    {
+      "routeId": "con-unsupported-coercive-route",
+      "side": "con",
+      "description": "Establish that specific religious claims lack adequate evidential support, that morality and solidarity do not require supernatural authority, and that central doctrines and authoritative texts create distinctive mechanisms of submission, coercion, and harm.",
+      "successCriteria": "The route succeeds if it undermines the evidential warrant for revealed religion, provides a viable secular basis for ethical life, and connects religious authority or doctrine to harms that cannot be dismissed solely as accidental fringe distortions.",
+      "motionBridge": {
+        "bridgeId": "con-motion-unsupported-and-coercive",
+        "tier": "motion",
+        "description": "Show that modern religious belief is evidentially unsupported and that its authoritative structures or doctrines produce morally significant risks of coercion and harm."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-evidential-deficit",
+          "tier": "central",
+          "description": "Use scientific history, cosmology, and epistemic limits to challenge human-centered creation and detailed claims about divine intentions, revelation, miracles, or salvation."
+        },
+        {
+          "bridgeId": "con-central-secular-morality",
+          "tier": "central",
+          "description": "Ground moral discrimination, reciprocity, and solidarity in human capacities and social development without dependence on divine commands or supernatural premises."
+        },
+        {
+          "bridgeId": "con-central-authority-and-harm",
+          "tier": "central",
+          "description": "Connect scriptural or divine authority to compelled belief, violent commands, punishment, and conduct that independent moral judgment would otherwise reject."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-doctrinal-coercion",
+          "tier": "subsidiary",
+          "description": "Test whether redemption, sacrifice, original sin, and hell can be reconciled with personal responsibility and genuinely voluntary acceptance."
+        },
+        {
+          "bridgeId": "con-subsidiary-secular-comparison",
+          "tier": "subsidiary",
+          "description": "Answer comparisons with secular totalitarianism by distinguishing the con burden from any claim that nonreligious ideologies are incapable of violence."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "epistemic-credibility-and-science",
+      "title": "Scientific Explanation, Religious Inference, and Epistemic Credibility",
+      "weightPercent": 25,
+      "rationale": "This issue bears directly on whether modern cosmology, evolution, and scientific explanation displace religious claims or leave room for a public, fallible religious interpretation of existence, meaning, and value."
+    },
+    {
+      "sectionId": "moral-foundations-and-human-solidarity",
+      "title": "Moral Foundations, Obligation, and Human Solidarity",
+      "weightPercent": 20,
+      "rationale": "The motion's constructive-morality dimension requires comparison between transcendent accounts of obligation and secular accounts grounded in moral discrimination, reciprocity, evolved sociality, and solidarity."
+    },
+    {
+      "sectionId": "religious-authority-violence-and-restraint",
+      "title": "Religious Authority, Violence, and Moral Restraint",
+      "weightPercent": 24,
+      "rationale": "This section tests whether violence is intrinsic to authoritative religious commitments or better explained by extremist capture, and whether Christian interpretive and ethical resources can constrain coercion and dehumanization."
+    },
+    {
+      "sectionId": "redemption-sacrifice-and-freedom",
+      "title": "Redemption, Sacrifice, Punishment, and Freedom",
+      "weightPercent": 17,
+      "rationale": "Christianity's moral credibility substantially depends on whether sacrifice and salvation can be understood as freely accepted transformation or instead entail transferred responsibility, threatened punishment, and coercive submission."
+    },
+    {
+      "sectionId": "consolation-meaning-and-human-flourishing",
+      "title": "Consolation, Meaning, and Human Flourishing",
+      "weightPercent": 14,
+      "rationale": "The debate also turns on whether religion's promises of consolation and meaning compromise truth-seeking or can coexist with intellectual responsibility while contributing to well-being, hope, and constructive personal orientation."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-vicarious-redemption-responsibility",
+      "sectionId": "redemption-sacrifice-and-freedom",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Vicarious redemption by human sacrifice is immoral because another person's punishment cannot erase the responsible actor's wrongdoing or transfer personal responsibility.",
+      "sourceSpan": {
+        "startEvent": 233,
+        "endEvent": 290
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous first-person argument remains within Christopher Hitchens's formally introduced opening presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-doctrinal-coercion"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive move, so it has no earlier opposing target; it directly develops the personal-responsibility objection to vicarious punishment.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it states a clear objection and illustrates the nontransferability of responsibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The responsibility and punishment claim is recoverable and stable, though its application to every redemption model is only implicitly bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical immorality claim outruns the excerpt's treatment of voluntary substitution and nonpunitive interpretations."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Redemption may be restorative or voluntary rather than a literal transfer of guilt.",
+        "decisiveQualification": "The selected argument addresses punishment substitution more directly than every available atonement model."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from nontransferable responsibility to criticism of punitive substitution is strong, with one scope bridge left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The debt-and-responsibility analogy supports the moral intuition, but competing accounts of redemption are not examined."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It occupies the upper subsidiary tier because it directly tests responsibility within redemption doctrine."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "It forcefully tests punitive substitution but does not fully accommodate restorative or participatory interpretations."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly calls vicarious redemption by human sacrifice immoral and develops an analogy involving another person's debt.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-celestial-totalitarianism",
+      "sectionId": "religious-authority-violence-and-restraint",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Monotheism is coercive because people are placed without consent under a celestial ruler said to monitor thought and threaten punishment, including punishment after death.",
+      "sourceSpan": {
+        "startEvent": 291,
+        "endEvent": 332
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Speaker continuity and the moderator's prior introduction identify the ongoing address as Christopher Hitchens's.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-authority-and-harm"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no earlier opposing target; it supplies a direct coercion argument based on surveillance, nonconsent, and thought punishment.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within constructive moves, it offers an explicit mechanism connecting divine authority to coercive control."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The surveillance-and-punishment thesis is clear, but 'totalitarian' shifts from political analogy toward a broad description of monotheism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt treats the totalitarian analogy as broadly characteristic without comparing nonpunitive or less interventionist monotheisms."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Divine omniscience and judgment may be understood as just governance rather than coercive political surveillance.",
+        "decisiveQualification": "Nonconsent and punishment remain relevant, but the political analogy requires an account of legitimate divine authority."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The analogy is intelligible but needs a substantial bridge from omniscient judgment to illegitimate totalitarian rule."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The argument cites recognizable doctrinal claims, but it does not establish their representativeness or compare rival theological interpretations."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It ranks high within the central tier because it directly connects divine authority, surveillance, and punishment."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move identifies genuine coercive features but largely assumes that celestial authority is relevantly equivalent to dictatorship."
+        }
+      },
+      "evidenceBasis": "The excerpt describes birth under an unchosen celestial dictatorship that watches people and can convict them of thought crime.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-consolation-wishful-thinking",
+      "sectionId": "consolation-meaning-and-human-flourishing",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Religious consolation compromises intellectual responsibility when comfort is treated as a reason to accept claims whose stories or history may not be true.",
+      "sourceSpan": {
+        "startEvent": 333,
+        "endEvent": 360
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted monologue, first-person framing, and debate sequence clearly attribute this argument to Christopher Hitchens.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-motivational-symmetry"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no earlier opposing target; it argues that consolation cannot substitute for historical truth or moral soundness.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it clearly separates psychological comfort from evidential and moral justification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The core genetic-fallacy warning is clear, though the move sometimes slides from some consoling defenses to religion generally."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The criticism fits cases where comfort is offered as evidence, but not every religious appeal to meaning or consolation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Consolation may be a consequence of a belief rather than the believer's evidence for its truth.",
+        "decisiveQualification": "The objection succeeds only where comfort is actually treated as a justificatory reason."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The inference that desirability does not establish truth is sound, with a material scope condition left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The excerpt supplies examples of consoling claims but does not show how representative this reasoning is among believers."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It is near the top of the subsidiary tier because it directly attacks desire as a truth-determining basis."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move recognizes a real epistemic defect but speaks too broadly about consoling religious belief."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts possibly dubious stories and history with consolation, then labels the resulting reasoning directly wishful.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-innate-moral-discrimination",
+      "sectionId": "moral-foundations-and-human-solidarity",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Human beings possess moral discrimination and an ordinary sense of fairness and decency, so prohibitions on murder, theft, adultery, and perjury do not originate in divine commands.",
+      "sourceSpan": {
+        "startEvent": 364,
+        "endEvent": 405
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained opening speech remains attributable to Christopher Hitchens through explicit first-person references and speaker continuity.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-secular-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no earlier opposing target; it advances a secular-morality bridge through ordinary fairness and precommand moral knowledge.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it gives a clear counterexample to the claim that elementary prohibitions originate in revelation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The claim about ordinary moral discrimination is clear, but 'innate' and the broader origin thesis need empirical qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The Sinai illustration supports preexisting norms but does not alone establish a fully innate or sufficient moral faculty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Divine-command accounts can hold that people knew moral law before Sinai through conscience or natural law.",
+        "decisiveQualification": "The example rebuts historical origination at Sinai more clearly than every theological grounding claim."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The counterexample is cogent against command origination, though it does not fully derive moral sufficiency from prior recognition."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Common moral recognition and the Sinai example provide support, but innateness and universality remain asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It is high within the central tier because it directly grounds moral discrimination independently of revealed commands."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move effectively challenges a crude command-origin view but does not address natural-law versions of theism."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes children's fairness and the implausibility that murder, theft, adultery, and perjury became wrong only at Sinai.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolutionary-history-against-revelation",
+      "sectionId": "epistemic-credibility-and-science",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Christian revelation is implausible in light of humanity's long history of suffering because it portrays divine intervention as delayed until a localized human sacrifice whose message spread slowly.",
+      "sourceSpan": {
+        "startEvent": 407,
+        "endEvent": 518
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-established speaking turn continues without interruption and contains Hitchens's characteristic first-person argumentative framing.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-evidential-deficit"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move has no earlier opposing target; it challenges revelation through delay, localization, suffering, and slow dissemination.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it supplies a specific historical-probability challenge to the asserted revelatory plan."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The historical challenge and its target are recoverable, with the assumed expectations of divine communication left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The facts create a substantial plausibility problem, but they do not by themselves make revelation impossible."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A revelation may work through contingent history without aiming at immediate universal dissemination.",
+        "decisiveQualification": "That alternative still owes an explanation of delay and unequal access under a benevolent universal plan."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The improbability inference is coherent, with one implicit premise about what a benevolent revealer would probably do."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Delay and geographic localization are concrete support, but the theological expectation driving the inference is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It ranks at the top of the central tier because it directly challenges revelation using human history and dissemination."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move presses the strongest unresolved distribution problem, though it does not disprove every providential rationale."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes primitive Palestine, human sacrifice, and a message spreading so slowly that large populations remained unreached.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-wellbeing-and-pathology-distinction",
+      "sectionId": "consolation-meaning-and-human-flourishing",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "Empirical research associates religious commitment with well-being, while acknowledged pathological forms of religion should not be treated as representative of religious commitment generally.",
+      "sourceSpan": {
+        "startEvent": 662,
+        "endEvent": 725
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alister McGrath has been formally introduced and explicitly addresses claims made by Hitchens in the preceding presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-resources"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-consolation-wishful-thinking"
+        ],
+        "components": [
+          {
+            "componentId": "pro-wellbeing-and-pathology-distinction-component-01",
+            "targetMoveId": "con-consolation-wishful-thinking",
+            "text": "Whether consolation is being used as evidence for the truth of religious claims.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-wellbeing-and-pathology-distinction-component-02",
+            "targetMoveId": "con-consolation-wishful-thinking",
+            "text": "Whether religion may nevertheless have beneficial consequences for human well-being.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The correlation and pathology distinction address religion's consequences, but they do not answer the decisive objection that comfort cannot establish truth.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "Within relevant nonanswers, it supplies substantial contrary material on well-being while leaving the primary epistemic demand uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The correlation claim is carefully qualified, though 'religious commitment' and 'well-being' remain broad research categories."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker explicitly limits correlation, denies that it proves God, and concedes pathological religious forms."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religion may correlate with well-being because of community, selection effects, or measurement choices rather than religious truth.",
+        "decisiveQualification": "The speaker claims correlation and nonrepresentativeness, not causation or theological truth."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction between positive average association and pathological subtypes is coherent and explicitly bounded."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "An overwhelming empirical literature is invoked, but representative studies, controls, and rival causal explanations are not supplied."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It sits in the lower central range because it supplies a constructive Christian resource but only indirectly addresses the motion."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move preserves the empirical claim's limited scope and explicitly disclaims the strongest unwarranted inference."
+        }
+      },
+      "evidenceBasis": "The excerpt reports a positive empirical correlation with well-being, expressly disclaims proof of God, and concedes pathological forms.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-christian-nonviolence-and-self-criticism",
+      "sectionId": "religious-authority-violence-and-restraint",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "Jesus's normative example of nonviolence and forgiveness gives Christianity an internal basis for condemning religious violence, interrupting retaliation, and criticizing Christian misconduct.",
+      "sourceSpan": {
+        "startEvent": 795,
+        "endEvent": 871
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This continuous passage remains in Alister McGrath's presentation and explicitly speaks from his stated perspective as a Christian theologian.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-authority-and-harm"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-celestial-totalitarianism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-christian-nonviolence-and-self-criticism-component-01",
+            "targetMoveId": "con-celestial-totalitarianism",
+            "text": "Whether Christianity's governing authority necessarily produces coercion and punitive domination.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The appeal to Jesus's normative nonviolence and forgiveness directly supplies an internal Christian constraint on retaliatory and coercive conduct.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within full answers, it contacts the coercion inference through a contrary governing norm, though it does not resolve divine surveillance."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move expressly limits itself to Christianity and identifies nonviolence, forgiveness, and self-criticism as the relevant resources."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "It claims an internal capacity for criticism rather than universal Christian compliance, matching the evidence offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian authorities and texts may still authorize coercion despite Jesus-centered resources for restraint.",
+        "decisiveQualification": "An internal counter-resource defeats necessity but does not erase contrary texts, institutions, or historical conduct."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "A normative exemplar of forgiveness coherently establishes an internal basis for condemning violence and interrupting retaliation."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The Jesus-centered example is specific and probative, though its authority across Christian practice is not comparatively documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It ranks at the top of the central tier because it directly attacks the claimed connection between Christian authority and harm."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly establishes a nonviolent governing resource while stopping short of claiming that all Christian violence is external."
+        }
+      },
+      "evidenceBasis": "The excerpt presents Jesus as normatively commanding forgiveness, breaking retaliation, and enabling Christianity to criticize its own misconduct.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-science-underdetermines-god-question",
+      "sectionId": "epistemic-credibility-and-science",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "Science cannot adjudicate the existence of God because nature admits atheist, agnostic, and Christian interpretations, while Christian faith can remain an intellectually productive framework for interpreting it.",
+      "sourceSpan": {
+        "startEvent": 872,
+        "endEvent": 917
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "McGrath identifies Hitchens by name, invokes his own scientific training, and continues the uninterrupted pro-side address.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-evidential-deficit"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolutionary-history-against-revelation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-science-underdetermines-god-question-component-01",
+            "targetMoveId": "con-evolutionary-history-against-revelation",
+            "text": "Whether scientific and historical evidence adjudicates against Christian belief or leaves interpretive underdetermination.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-science-underdetermines-god-question-component-02",
+            "targetMoveId": "con-evolutionary-history-against-revelation",
+            "text": "Whether the specific delay and localization of revelation are improbable under Christianity.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move answers the general evidential-displacement inference but does not address the specific distribution and delay challenge to revelation.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within partial answers, it contacts the broader decisive epistemic premise while leaving the historical revelation component unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Methodological underdetermination is clear, but 'cannot adjudicate' risks covering evidence-based probability judgments as well as strict proof."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Science may not logically force a worldview, yet scientific evidence can still alter comparative plausibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Science may underdetermine God deductively while strongly disfavoring particular revealed or interventionist claims.",
+        "decisiveQualification": "The move establishes logical openness more readily than equal evidential support among the interpretations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The underdetermination point is valid, but the bridge from multiple possible readings to intellectual productivity is underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The three interpretations are named, but no comparative criteria or evidence for the Christian interpretation are provided."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It is high within the central tier because it directly attacks the claimed scientific evidential deficit."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "It fairly denies compulsory inference but compresses the opponent's probabilistic and specifically Christian challenge."
+        }
+      },
+      "evidenceBasis": "The excerpt states that scientific methods do not force atheist, agnostic, or Christian interpretation and adds a personal intellectual benefit.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-transcendent-basis-for-morality",
+      "sectionId": "moral-foundations-and-human-solidarity",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "A secular Enlightenment or evolutionary account must explain how rational morality and durable moral obligation can be sustained without some metaphysical foundation.",
+      "sourceSpan": {
+        "startEvent": 919,
+        "endEvent": 980
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "McGrath repeatedly addresses Hitchens's criticisms and book while developing the pro-side challenge in a continuous speaking turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-secular-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-innate-moral-discrimination"
+        ],
+        "components": [
+          {
+            "componentId": "pro-transcendent-basis-for-morality-component-01",
+            "targetMoveId": "con-innate-moral-discrimination",
+            "text": "Whether recognition of ordinary moral norms is sufficient to sustain rational obligation without metaphysical grounding.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-transcendent-basis-for-morality-component-02",
+            "targetMoveId": "con-innate-moral-discrimination",
+            "text": "Whether basic moral discrimination predates or operates independently of divine commands.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move challenges the sufficiency and durability of secular morality but concedes moral recognition and does not rebut its independence from commands.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "Within partial answers, it contacts the grounding component but leaves the opponent's origin and ordinary-capacity claim intact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The challenge is recoverable, but 'metaphysical basis,' 'sustain,' and 'unattainable' are insufficiently specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker frames the point as a challenge and explicitly credits the opponent's moral commitment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Secular moral realism, constructivism, reciprocity, or flourishing may provide obligation without a divine foundation.",
+        "decisiveQualification": "The move asks for an account but does not compare or defeat these available secular foundations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The demand for grounding is legitimate, but the inference that secular morality is unattainable remains substantially unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The excerpt poses the metaphysical challenge without evidence that evolutionary or Enlightenment accounts cannot sustain obligation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It ranks high within the central tier because it directly attacks the sufficiency of secular moral grounding."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "It treats the opponent as genuinely moral, though it compresses the range of secular grounding theories."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes Hitchens's moral seriousness but questions whether morality can be sustained without a metaphysical basis.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-foundational-authority-and-apostasy",
+      "sectionId": "religious-authority-violence-and-restraint",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Religion should be judged partly by foundational texts and canonical authorities whose commands, including commands to kill apostates, can override ordinary moral judgment.",
+      "sourceSpan": {
+        "startEvent": 1058,
+        "endEvent": 1090
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens announces that he is answering McGrath's points in order and speaks in his characteristic first-person con-side rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-authority-and-harm"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-christian-nonviolence-and-self-criticism"
+        ],
+        "components": [
+          {
+            "componentId": "con-foundational-authority-and-apostasy-component-01",
+            "targetMoveId": "pro-christian-nonviolence-and-self-criticism",
+            "text": "Whether benign governing norms make violent or coercive religious authorities merely fringe distortions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-foundational-authority-and-apostasy-component-02",
+            "targetMoveId": "pro-christian-nonviolence-and-self-criticism",
+            "text": "Whether Christianity itself contains a genuine internal capacity for criticizing violence.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Foundational texts and canonical commands directly contest the fringe-pathology defense, but the move does not negate Christianity's internal critical resources.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "Within partial answers, it contacts the representativeness and authority component while leaving the internal-resource claim intact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The canonical-authority criterion is clear, though an Islamic apostasy example only indirectly bears on Christianity and religion generally."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A canonical violent command is probative against a pure-fringe account, but its practical authority and cross-religious scope need qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A tradition may possess canonical violent material while its governing interpretive norms reject literal enforcement.",
+        "decisiveQualification": "Canonical status remains relevant, but actual authority depends on interpretive hierarchy and institutional practice."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Judging a tradition partly by authoritative sources is coherent, though canonical presence does not automatically establish governing force."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The Hadith apostasy example is specific, but representativeness, interpretation, and implementation are not documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It is at the top of the central tier because it directly links religious authority to violent commands."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move identifies stronger-than-fringe evidence but understates the importance of interpretive constraints within traditions."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects restriction to extremists and instead invokes foundational documents, canonical authority, and an apostasy command.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-divine-liberation-and-hope",
+      "sectionId": "redemption-sacrifice-and-freedom",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "The New Testament presents God as a liberator whose action transforms the human situation, brings hope, frees people from fear of death, and motivates constructive conduct.",
+      "sourceSpan": {
+        "startEvent": 1375,
+        "endEvent": 1412
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "McGrath explicitly names Hitchens's celestial-dictator characterization and answers it from his own Christian interpretation of the New Testament.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-resources"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-celestial-totalitarianism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-divine-liberation-and-hope-component-01",
+            "targetMoveId": "con-celestial-totalitarianism",
+            "text": "Whether unchosen divine surveillance, thought judgment, and threatened punishment constitute coercive rule.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-divine-liberation-and-hope-component-02",
+            "targetMoveId": "con-celestial-totalitarianism",
+            "text": "Whether the New Testament can portray divine authority as liberating rather than merely dominating.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The liberation narrative is relevant contrary material, but it does not answer the decisive nonconsent, surveillance, or punishment mechanisms.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "Within relevant nonanswers, it presents a developed contrary characterization while leaving the primary coercion demand uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Hope and liberation are clear themes, but transformation and constructive conduct remain broad and only partly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The language is interpretive and qualified, appropriately presenting a reading of the New Testament rather than a demonstrated social effect."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A tradition may offer hope and liberation while also retaining coercive doctrines or institutions.",
+        "decisiveQualification": "Positive resources rebut a wholly negative characterization but do not dissolve the specified coercion mechanisms."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The thematic inference from liberation and hope to constructive potential is coherent but leaves the conduct bridge compressed."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "New Testament themes are asserted and paraphrased, without representative textual support or evidence of resulting conduct."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It occupies the middle central range because it directly supplies Christian resources for transformation and hope."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move supplies a genuine alternative interpretation but does not directly confront the strongest coexistence objection."
+        }
+      },
+      "evidenceBasis": "The excerpt characterizes the New Testament as an outburst of liberation that transforms the human situation and reduces fear of death.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-motivational-suspicion-is-symmetric",
+      "sectionId": "consolation-meaning-and-human-flourishing",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "Wishful desire neither establishes nor falsifies a belief, and motivational suspicion applies symmetrically because atheism may also express a wish for freedom from divine limits and accountability.",
+      "sourceSpan": {
+        "startEvent": 1413,
+        "endEvent": 1493
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "McGrath explicitly introduces Hitchens's wishful-thinking challenge and presents two responses in a continuous pro-side rebuttal.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-motivational-symmetry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-consolation-wishful-thinking"
+        ],
+        "components": [
+          {
+            "componentId": "pro-motivational-suspicion-is-symmetric-component-01",
+            "targetMoveId": "con-consolation-wishful-thinking",
+            "text": "Whether desiring a consoling belief is evidence that the belief is false or intellectually irresponsible.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-motivational-suspicion-is-symmetric-component-02",
+            "targetMoveId": "con-consolation-wishful-thinking",
+            "text": "Whether atheistic belief may also be influenced by psychologically attractive desires.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The water analogy explicitly identifies the invalid inference from desire to falsity, and symmetry exposes the limited force of motivational suspicion.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within diagnostic defeats, it explicitly identifies and answers the decisive inference, then applies the diagnosis symmetrically."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully claims that desire neither establishes nor negates reality, without treating symmetry as positive evidence for religion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The logical point that desire alone does not determine truth is categorical and appropriately warranted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The opponent may be criticizing comfort used as evidence, not inferring falsity merely from desire.",
+        "decisiveQualification": "The diagnosis defeats a genetic inference but not the narrower demand for independent evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The analogy cleanly demonstrates that a desire's presence does not entail the desired proposition's falsity."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The conceptual example strongly warrants the logical point, though the asserted atheist motive is not independently supported."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It is at the top of the subsidiary tier because it directly establishes motivational symmetry's required inference."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly exposes motivational overreach while leaving the opponent's independent-evidence concern available."
+        }
+      },
+      "evidenceBasis": "The excerpt uses desire for remaining water to show that desire does not negate reality, then raises symmetrical suspicion about atheism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cross-as-free-transformative-offer",
+      "sectionId": "redemption-sacrifice-and-freedom",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "Christ's death offers human beings a possibility of purification, restored relationship with God, and personal transformation that individuals remain free to accept.",
+      "sourceSpan": {
+        "startEvent": 1706,
+        "endEvent": 1761
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly directs the question to Professor McGrath, whose uninterrupted answer follows.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-doctrinal-coercion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-vicarious-redemption-responsibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cross-as-free-transformative-offer-component-01",
+            "targetMoveId": "con-vicarious-redemption-responsibility",
+            "text": "Whether Christ's death must be understood as transferring guilt through punitive human sacrifice.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cross-as-free-transformative-offer-component-02",
+            "targetMoveId": "con-vicarious-redemption-responsibility",
+            "text": "Whether accepting the offered transformation remains genuinely voluntary.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The multiple-model and transformative-offer account directly resists a solely punitive reading and states that acceptance remains personally free.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within full answers, it contacts both interpretation and voluntariness, though the mechanism of purification remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The alternative model and freedom claim are clear, but purification and restored relationship lack a precise explanatory mechanism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents transformative potential and multiple models rather than insisting that one compressed analogy proves the doctrine."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even a freely offered benefit may depend on an unjust death or transferred punishment.",
+        "decisiveQualification": "Multiple models answer the necessity of penal transfer but do not fully explain why Christ's death produces purification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The alternative avoids necessary guilt transfer, but the bridge from Christ's death to purification and restoration remains material."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The excerpt names sacrificial and other models but supplies little textual or causal support for transformative efficacy."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It is at the top of the subsidiary tier because it directly attacks the doctrinal-coercion objection."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The move engages the punitive interpretation fairly and replaces it with a live alternative, albeit incompletely explained."
+        }
+      },
+      "evidenceBasis": "The excerpt presents several atonement models and describes Christ's death as making purity and transformation possible rather than mechanically transferring guilt.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-salvation-under-threat",
+      "sectionId": "redemption-sacrifice-and-freedom",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Christian salvation is not genuinely voluntary when refusal of an unwanted sacrificial offer is accompanied by threatened hell, institutional imposition, and exclusivist claims about access to salvation.",
+      "sourceSpan": {
+        "startEvent": 1763,
+        "endEvent": 1803
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly turns to Hitchens, who immediately challenges McGrath's repeated description of the offer as unimposed.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-doctrinal-coercion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cross-as-free-transformative-offer"
+        ],
+        "components": [
+          {
+            "componentId": "con-salvation-under-threat-component-01",
+            "targetMoveId": "pro-cross-as-free-transformative-offer",
+            "text": "Whether acceptance of salvation remains genuinely voluntary when refusal carries threatened punishment.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-salvation-under-threat-component-02",
+            "targetMoveId": "pro-cross-as-free-transformative-offer",
+            "text": "Whether institutional preaching and exclusivist authority materially impose the offer.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move explicitly challenges voluntariness by invoking hell, coercive social transmission, and exclusive institutional claims to salvation.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within full answers, it directly contacts the decisive freedom claim and supplies several mechanisms of pressure."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The coercion thesis is clear, though historical institutional imposition and doctrinal threat are sometimes treated as one phenomenon."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Hell-conditioned refusal strongly pressures voluntariness, but the categorical conclusion needs distinctions among doctrines and institutions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A warning about freely chosen consequences may differ from coercive threat, and some Christians reject eternal hell.",
+        "decisiveQualification": "The stated institutional and exclusivist practices still burden voluntariness where those doctrines are authoritative."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from severe threatened consequences to impaired voluntariness is strong, with doctrinal scope left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Hell preaching and an exclusivist papal claim are concrete examples, but historical breadth and representativeness are asserted."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It ranks at the top of the subsidiary tier because it directly tests genuinely voluntary acceptance."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move presses the strongest coercion concern but generalizes beyond the specific doctrines and institutions identified."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects voluntariness by citing hell, coercive preaching to children, social poisoning, and exclusive salvation claims.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolved-solidarity-and-reciprocity",
+      "sectionId": "moral-foundations-and-human-solidarity",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Human solidarity, reciprocity, and evolved social dispositions can sustain ethical conduct without souls, celestial permission, or other supernatural assumptions.",
+      "sourceSpan": {
+        "startEvent": 1922,
+        "endEvent": 2000
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question addresses Hitchens, and the answer uses his first-person examples and explicitly naturalistic framework.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-secular-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-transcendent-basis-for-morality"
+        ],
+        "components": [
+          {
+            "componentId": "con-evolved-solidarity-and-reciprocity-component-01",
+            "targetMoveId": "pro-transcendent-basis-for-morality",
+            "text": "Whether ethical conduct and durable reciprocity require a supernatural or metaphysical foundation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-evolved-solidarity-and-reciprocity-component-02",
+            "targetMoveId": "pro-transcendent-basis-for-morality",
+            "text": "Whether evolutionary social dispositions explain normative obligation rather than merely cooperative behavior.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reciprocity and solidarity examples answer practical sustainability without supernatural premises, but they do not fully derive moral obligation.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the sustainability demand while leaving the is-to-ought grounding component unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The modest claim that solidarity gets ethics a long way is clear and avoids asserting a complete evolutionary moral theory."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The qualified practical claim matches the reciprocity example and evolutionary plausibility offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolution may explain cooperative dispositions without establishing objective duty or reasons to act when reciprocity fails.",
+        "decisiveQualification": "The move supports motivation and social durability more clearly than ultimate normative grounding."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Reciprocal dependence coherently explains substantial solidarity, though the transition to complete ethical normativity is not made."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The blood-donation example and evolutionary survival rationale are probative but remain anecdotal and compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It is high within the central tier because it directly supplies a secular account of solidarity and reciprocity."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "It answers an important practical version of the challenge while leaving the strongest metaethical version open."
+        }
+      },
+      "evidenceBasis": "The excerpt uses blood donation and future reciprocal need to ground solidarity, then links cooperative dispositions to evolutionary survival.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-science-and-meaning-levels",
+      "sectionId": "epistemic-credibility-and-science",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "Scientific explanation of material relationships does not exhaust questions of meaning and value, allowing religious interpretation to offer a distinct level of engagement with the same reality.",
+      "sourceSpan": {
+        "startEvent": 2001,
+        "endEvent": 2047
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "McGrath explicitly takes the discussion forward and presents a sustained distinction between scientific and transcendent explanation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-epistemic-viability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolutionary-history-against-revelation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-science-and-meaning-levels-component-01",
+            "targetMoveId": "con-evolutionary-history-against-revelation",
+            "text": "Whether complete material explanation exhausts legitimate questions of existence, meaning, and value.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-science-and-meaning-levels-component-02",
+            "targetMoveId": "con-evolutionary-history-against-revelation",
+            "text": "Whether Christianity's particular historical revelation is probable or adequately evidenced.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The levels distinction answers explanatory exhaustion but does not establish the truth or probability of the specifically Christian revelation challenged.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "Within partial answers, it contacts the broader epistemic premise but leaves the decisive historical-evidence component unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The explanatory-level distinction is recoverable, though 'meaning,' 'perspective,' and 'engagement' remain broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move claims room for additional meaning rather than presenting that room as proof of religious truth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Science need not exhaust meaning for a particular religious interpretation still to lack evidential warrant.",
+        "decisiveQualification": "Distinct questions establish conceptual space, not the correctness of Christian answers within that space."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The distinction between material relations and questions of meaning is coherent, with one bounded bridge to religious interpretation."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The conceptual distinction is plausible, but no warrant selects religious meaning over secular alternatives."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It ranks at the top of the central tier because it directly supplies the nonexhaustion bridge required by the pro route."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly limits itself to nonexhaustion, although its rhetoric gestures toward a stronger science-religion harmony."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes scientific explanation from added levels of meaning while treating science and religion as perspectives on one reality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-christological-reading-of-violent-texts",
+      "sectionId": "religious-authority-violence-and-restraint",
+      "side": "pro",
+      "speaker": "Alister McGrath",
+      "moveKind": "reply",
+      "proposition": "Christ and progressive revelation give Christians grounds to challenge straightforward interpretations of Old Testament passages that appear to authorize killing.",
+      "sourceSpan": {
+        "startEvent": 2058,
+        "endEvent": 2100
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the Old Testament violence question to McGrath, who answers explicitly as a Christian reader.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-authority-and-harm"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-foundational-authority-and-apostasy"
+        ],
+        "components": [
+          {
+            "componentId": "pro-christological-reading-of-violent-texts-component-01",
+            "targetMoveId": "con-foundational-authority-and-apostasy",
+            "text": "Whether violent foundational texts must retain straightforward governing authority over believers' conduct.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-christological-reading-of-violent-texts-component-02",
+            "targetMoveId": "con-foundational-authority-and-apostasy",
+            "text": "Whether progressive revelation supplies a principled rather than ad hoc interpretive hierarchy.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Christological interpretation directly contests straightforward violent readings, but the move only asserts the progressive hierarchy rather than defending its criterion.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within partial answers, it contacts the governing-interpretation premise but leaves the principled-selection challenge unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly identifies Christ as the interpretive lens and progressive revelation as the proposed account of development."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents this as a Christian interpretive approach that permits challenge, not as an uncontested textual result."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Progressive revelation may selectively neutralize morally troubling texts without an independent interpretive rule.",
+        "decisiveQualification": "A Christ-centered canon can be principled, but the excerpt does not show how conflicts are consistently adjudicated."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Later revelation can coherently govern earlier texts, but the warrant for that hierarchy and its application remains material."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The interpretive method is asserted without representative passages, historical comparison, or a defended rule for resolving conflicts."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It is high within the central tier because it directly attacks the claim that violent texts straightforwardly govern conduct."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move squarely recognizes violent passages and offers a live hierarchy, though its selection rule is underexplained."
+        }
+      },
+      "evidenceBasis": "The excerpt proposes reading the Old Testament through Christ and progressive revelation to challenge natural violent interpretations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-cosmology-anthropocentrism-and-knowledge",
+      "sectionId": "epistemic-credibility-and-science",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Cosmic scale, extinction, evolutionary contingency, and natural regularity make human-centered creation improbable, while detailed claims about divine intentions, miracles, resurrection, and salvation exceed available knowledge.",
+      "sourceSpan": {
+        "startEvent": 2290,
+        "endEvent": 2390
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Hitchens by name, and his extended answer culminates in an explicit statement of his side's case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-evidential-deficit"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-science-and-meaning-levels",
+          "pro-science-underdetermines-god-question"
+        ],
+        "components": [
+          {
+            "componentId": "con-cosmology-anthropocentrism-and-knowledge-component-01",
+            "targetMoveId": "pro-science-and-meaning-levels",
+            "text": "Whether religious interpretation is merely an additional meaning level or makes detailed unsupported factual claims.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-cosmology-anthropocentrism-and-knowledge-component-02",
+            "targetMoveId": "pro-science-underdetermines-god-question",
+            "text": "Whether evidential underdetermination licenses detailed claims about divine intention, miracles, resurrection, and salvation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-cosmology-anthropocentrism-and-knowledge-component-03",
+            "targetMoveId": "pro-science-and-meaning-levels",
+            "text": "Whether cosmic scale and evolutionary contingency specifically make human-centered creation improbable.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly distinguishes generic interpretive openness from detailed knowledge claims and supports the challenge with cosmological and evolutionary considerations.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly contacts both epistemic permission and the stronger claims said to exceed available knowledge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move distinguishes probability objections to anthropocentrism from an epistemic-limit objection to detailed theological knowledge."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Cosmic and evolutionary evidence supports skepticism, but saying such claims cannot conceivably be known is stronger than the excerpt warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious knowledge may arise from revelation rather than inference from cosmic scale or scientific regularity.",
+        "decisiveQualification": "That alternative must independently authenticate revelation before it can support detailed claims about divine intention."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The inference to reduced anthropocentric probability is coherent, while the categorical knowledge-limit conclusion is somewhat stronger."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Cosmic scale, extinction, contingency, and regularity provide cumulative support, but the selected passage compresses their verification and comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It ranks at the ceiling of the central tier because it directly advances the evidential-deficit bridge across several scientific considerations."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move targets the missing warrant for revelation, although ridicule partially substitutes for examining its strongest authentication case."
+        }
+      },
+      "evidenceBasis": "The selected move combines cosmic scale and evolutionary contingency with an explicit challenge to claimed knowledge of resurrection and salvation.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No independent unscored completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence survives the exclusion rule.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance",
+          "importance values"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No independent unscored completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence survives the exclusion rule.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance",
+          "importance values"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
