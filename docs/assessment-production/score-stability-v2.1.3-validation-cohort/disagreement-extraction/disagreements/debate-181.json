@@ -1,0 +1,2792 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-deterministic-disagreements",
+  "protocolId": "assessment-production-score-stability-v2.1.3-decomposed-consensus",
+  "debateNumber": "181",
+  "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+  "moveDisputes": [
+    {
+      "moveId": "pro-shared-historical-core",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 74,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-source-partisanship-and-corroboration-gap",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 17,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-source-partisanship-and-corroboration-gap-component-01",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the asserted historical core rests on sources reliable enough to warrant treating its elements as historical facts.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-source-partisanship-and-corroboration-gap-component-02",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the several listed facts enjoy comparably broad scholarly acceptance rather than merely being asserted together.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-source-partisanship-and-corroboration-gap-component-01",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the asserted historical core rests on sources sufficient to warrant treating its components as established.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-source-partisanship-and-corroboration-gap-component-02",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether broad acceptance can substitute for source independence and eyewitness connection.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 86
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 77
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 61
+            },
+            "candidate2": {
+              "value": 83
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-early-pauline-appearance-tradition",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-source-partisanship-and-corroboration-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-early-pauline-appearance-tradition-component-01",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether the surviving testimony lacks sufficiently early, eyewitness-linked material to warrant the appearance reports.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-early-pauline-appearance-tradition-component-02",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether Christian partisanship independently limits the reliability of the Pauline tradition.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-early-pauline-appearance-tradition-component-03",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether independent non-Christian Jerusalem corroboration is absent.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-source-partisanship-and-corroboration-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-early-pauline-appearance-tradition-component-01",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether the record lacks sufficiently early testimony connected to identifiable eyewitnesses.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-early-pauline-appearance-tradition-component-02",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether Christian partisanship and Gospel authorship exhaust the available historical source basis.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-early-pauline-appearance-tradition-component-03",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether independent non-Christian or Jerusalem corroboration is available.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 87
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 81,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 82
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-grief-visions-and-conversion-experiences",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 14,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-early-pauline-appearance-tradition",
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-grief-visions-and-conversion-experiences-component-01",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether reported appearance experiences require an external risen body rather than psychologically generated experiences.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-grief-visions-and-conversion-experiences-component-02",
+                  "targetMoveId": "pro-early-pauline-appearance-tradition",
+                  "text": "Whether the early Pauline tradition establishes bodily observation rather than merely an interpreted religious experience.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-grief-visions-and-conversion-experiences-component-03",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether transformation of the disciples and conversions of James and Paul favor resurrection over psychological explanations.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-early-pauline-appearance-tradition",
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-grief-visions-and-conversion-experiences-component-01",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether reported appearance experiences require observation of a risen physical body.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-grief-visions-and-conversion-experiences-component-02",
+                  "targetMoveId": "pro-early-pauline-appearance-tradition",
+                  "text": "Whether Paul's early appearance testimony establishes a bodily encounter rather than a conversion experience.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-grief-visions-and-conversion-experiences-component-03",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the disciples' transformation requires resurrection as its cause.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 65,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 66
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-grief-hallucination-scope",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-grief-visions-and-conversion-experiences",
+                "con-source-partisanship-and-corroboration-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-grief-hallucination-scope-component-01",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether grief hallucinations can explain the reported range of witnesses, settings, group appearances, and subsequent transformation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-grief-hallucination-scope-component-02",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether a separate conversion experience adequately explains Paul's report.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-grief-hallucination-scope-component-03",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether source partisanship and limited independent corroboration constrain the underlying reports.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-grief-visions-and-conversion-experiences",
+                "con-source-partisanship-and-corroboration-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-grief-hallucination-scope-component-01",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether grief visions and conversion experiences explain the reported range and consequences of the appearances.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-grief-hallucination-scope-component-02",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether the underlying reports are sufficiently reliable and independent to establish that range.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-grief-hallucination-scope-component-03",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether hallucinations account for lasting transformation and the empty tomb.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 88
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-sparse-record-underdetermines-physical-event",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-early-pauline-appearance-tradition",
+                "pro-grief-hallucination-scope",
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-sparse-record-underdetermines-physical-event-component-01",
+                  "targetMoveId": "pro-early-pauline-appearance-tradition",
+                  "text": "Whether early Christian testimony is sufficient to support confident conclusions about what physically occurred.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-sparse-record-underdetermines-physical-event-component-02",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the asserted historical core can be accepted confidently against a broad background of missing evidence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-sparse-record-underdetermines-physical-event-component-03",
+                  "targetMoveId": "pro-grief-hallucination-scope",
+                  "text": "Whether the cumulative objections to hallucination overcome the underlying source limitations.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-early-pauline-appearance-tradition",
+                "pro-grief-hallucination-scope",
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-sparse-record-underdetermines-physical-event-component-01",
+                  "targetMoveId": "pro-early-pauline-appearance-tradition",
+                  "text": "Whether early Christian appearance testimony supplies enough evidence for confident conclusions about what physically occurred.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-sparse-record-underdetermines-physical-event-component-02",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the accepted fact list can support a confident reconstruction despite extensive missing evidence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-sparse-record-underdetermines-physical-event-component-03",
+                  "targetMoveId": "pro-grief-hallucination-scope",
+                  "text": "Whether the reported diversity and transformation defeat nonphysical alternatives.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 86
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 99,
+          "candidate2": 100,
+          "roundedMeanAfterAdjudication": 100
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-thomas-touch-not-reported",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-early-pauline-appearance-tradition",
+                "pro-grief-hallucination-scope",
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-thomas-touch-not-reported-component-01",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the reported appearances included clearly attested physical contact with a risen body.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-thomas-touch-not-reported-component-02",
+                  "targetMoveId": "pro-early-pauline-appearance-tradition",
+                  "text": "Whether early Pauline appearance testimony establishes tangible bodily interaction.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-thomas-touch-not-reported-component-03",
+                  "targetMoveId": "pro-grief-hallucination-scope",
+                  "text": "Whether varied appearance reports collectively establish physical rather than visionary experiences.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-early-pauline-appearance-tradition",
+                "pro-grief-hallucination-scope",
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-thomas-touch-not-reported-component-01",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the reported appearances include adequately evidenced physical contact with a risen body.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-thomas-touch-not-reported-component-02",
+                  "targetMoveId": "pro-early-pauline-appearance-tradition",
+                  "text": "Whether early Pauline testimony independently reports Thomas touching Jesus.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-thomas-touch-not-reported-component-03",
+                  "targetMoveId": "pro-grief-hallucination-scope",
+                  "text": "Whether the Thomas narrative defeats a nonphysical interpretation of appearance experiences.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-touch-and-physical-encounter-texts",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-grief-visions-and-conversion-experiences",
+                "con-sparse-record-underdetermines-physical-event",
+                "con-thomas-touch-not-reported"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-touch-and-physical-encounter-texts-component-01",
+                  "targetMoveId": "con-thomas-touch-not-reported",
+                  "text": "Whether Gospel and Johannine texts report physical interaction even if Thomas's completed touch is not expressly narrated.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-touch-and-physical-encounter-texts-component-02",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether sparse and partisan sources justify treating the physical-interaction narratives as historical events.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-touch-and-physical-encounter-texts-component-03",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether reported touching, eating, and close observation are compatible with a purely visionary account.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-grief-visions-and-conversion-experiences",
+                "con-source-partisanship-and-corroboration-gap",
+                "con-sparse-record-underdetermines-physical-event",
+                "con-thomas-touch-not-reported"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-touch-and-physical-encounter-texts-component-01",
+                  "targetMoveId": "con-thomas-touch-not-reported",
+                  "text": "Whether the textual record contains physical-contact evidence beyond an uncompleted invitation to Thomas.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-touch-and-physical-encounter-texts-component-02",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether the reports include concrete publicly observable bodily characteristics.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-touch-and-physical-encounter-texts-component-03",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether touching, eating, and denial of being a spirit exclude vision-only interpretations.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-touch-and-physical-encounter-texts-component-04",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether these Gospel and Johannine sources are independent and historically reliable.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 86
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-paul-bodily-transformation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-grief-visions-and-conversion-experiences",
+                "con-sparse-record-underdetermines-physical-event",
+                "con-thomas-touch-not-reported"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-paul-bodily-transformation-component-01",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether Paul's own terminology supplies evidence for a bodily rather than merely nonphysical resurrection conception.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-paul-bodily-transformation-component-02",
+                  "targetMoveId": "con-thomas-touch-not-reported",
+                  "text": "Whether the Thomas narrative expressly records completed physical contact.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-paul-bodily-transformation-component-03",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether Paul's experience is better understood as conversion psychology rather than encounter with a risen body.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-grief-visions-and-conversion-experiences",
+                "con-source-partisanship-and-corroboration-gap",
+                "con-sparse-record-underdetermines-physical-event",
+                "con-thomas-touch-not-reported"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-paul-bodily-transformation-component-01",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether Paul's own language supplies a sufficiently specific bodily interpretation of resurrection.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-paul-bodily-transformation-component-02",
+                  "targetMoveId": "con-thomas-touch-not-reported",
+                  "text": "Whether physical resurrection depends solely on the Thomas touch narrative.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-paul-bodily-transformation-component-03",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether Paul's experience should be interpreted only as a disembodied conversion phenomenon.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-paul-bodily-transformation-component-04",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether Pauline testimony has adequate external corroboration.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 80,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 77,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-spiritual-body-conceptual-objection",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-paul-bodily-transformation",
+                "pro-touch-and-physical-encounter-texts"
+              ],
+              "components": [
+                {
+                  "componentId": "con-spiritual-body-conceptual-objection-component-01",
+                  "targetMoveId": "pro-paul-bodily-transformation",
+                  "text": "Whether calling the resurrection body spiritual coherently identifies a genuinely bodily and physical mode of existence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-spiritual-body-conceptual-objection-component-02",
+                  "targetMoveId": "pro-touch-and-physical-encounter-texts",
+                  "text": "Whether touching, eating, and observation texts independently support a physical encounter.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-paul-bodily-transformation",
+                "pro-shared-historical-core",
+                "pro-touch-and-physical-encounter-texts"
+              ],
+              "components": [
+                {
+                  "componentId": "con-spiritual-body-conceptual-objection-component-01",
+                  "targetMoveId": "pro-paul-bodily-transformation",
+                  "text": "Whether the expression spiritual body coherently establishes the characteristics required for a physical resurrection body.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-spiritual-body-conceptual-objection-component-02",
+                  "targetMoveId": "pro-touch-and-physical-encounter-texts",
+                  "text": "Whether the Gospel touching and eating reports independently specify physical characteristics.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-spiritual-body-conceptual-objection-component-03",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether reported appearances establish an identifiable bodily entity.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-physical-texts"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-bodily-appearances"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 55
+            },
+            "candidate2": {
+              "value": 61
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 62,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 63
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 57,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 58
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-miracle-judgment-depends-on-priors",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-paul-bodily-transformation",
+                "pro-shared-historical-core",
+                "pro-touch-and-physical-encounter-texts"
+              ],
+              "components": [
+                {
+                  "componentId": "con-miracle-judgment-depends-on-priors-component-01",
+                  "targetMoveId": "pro-paul-bodily-transformation",
+                  "text": "Whether bodily-resurrection evidence can rationally compel the same conclusion independently of antecedent worldview commitments.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-judgment-depends-on-priors-component-02",
+                  "targetMoveId": "pro-touch-and-physical-encounter-texts",
+                  "text": "Whether extraordinary physical-encounter reports overcome a skeptic's expectation of mistake.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-judgment-depends-on-priors-component-03",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the historical core alone warrants a miracle conclusion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-paul-bodily-transformation",
+                "pro-shared-historical-core",
+                "pro-touch-and-physical-encounter-texts"
+              ],
+              "components": [
+                {
+                  "componentId": "con-miracle-judgment-depends-on-priors-component-01",
+                  "targetMoveId": "pro-paul-bodily-transformation",
+                  "text": "Whether evidence interpreted as bodily resurrection can rationally establish a miracle independently of prior beliefs.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-judgment-depends-on-priors-component-02",
+                  "targetMoveId": "pro-touch-and-physical-encounter-texts",
+                  "text": "Whether extraordinary physical-encounter reports overcome a skeptic's prior expectation of error.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-judgment-depends-on-priors-component-03",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the historical fact list alone determines the resurrection conclusion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "high"
+          },
+          "candidate2": {
+            "assessmentConfidence": "medium"
+          }
+        },
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 73
+            },
+            "candidate2": {
+              "value": 80
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 91
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-death-by-crucifixion",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-miracle-judgment-depends-on-priors",
+                "con-source-partisanship-and-corroboration-gap",
+                "con-sparse-record-underdetermines-physical-event"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-death-by-crucifixion-component-01",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether Jesus' death has sufficiently varied support beyond partisan Christian narrative sources.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-death-by-crucifixion-component-02",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether the sparse ancient record permits confident conclusions at least about death by crucifixion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-death-by-crucifixion-component-03",
+                  "targetMoveId": "con-miracle-judgment-depends-on-priors",
+                  "text": "Whether establishing death materially changes the prior probability of miraculous resurrection.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-grief-visions-and-conversion-experiences",
+                "con-miracle-judgment-depends-on-priors",
+                "con-source-partisanship-and-corroboration-gap",
+                "con-sparse-record-underdetermines-physical-event"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-death-by-crucifixion-component-01",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether the sparse record nonetheless supports the narrower conclusion that Jesus actually died by crucifixion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-death-by-crucifixion-component-02",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether non-Christian and multidisciplinary evidence corroborates the death claim.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-death-by-crucifixion-component-03",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether survival rather than postmortem experience remains a viable explanation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-death-by-crucifixion-component-04",
+                  "targetMoveId": "con-miracle-judgment-depends-on-priors",
+                  "text": "Whether establishing death independently establishes the later miracle conclusion.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 87,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 82,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-empty-tomb-cumulative-support",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-miracle-judgment-depends-on-priors",
+                "con-source-partisanship-and-corroboration-gap",
+                "con-sparse-record-underdetermines-physical-event"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-empty-tomb-cumulative-support-component-01",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether the empty tomb has multiple early or otherwise probative grounds beyond unsupported Christian assertion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-empty-tomb-cumulative-support-component-02",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether the available record permits a confident conclusion that the burial place was empty.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-empty-tomb-cumulative-support-component-03",
+                  "targetMoveId": "con-miracle-judgment-depends-on-priors",
+                  "text": "Whether an empty tomb itself warrants identifying a miracle.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-miracle-judgment-depends-on-priors",
+                "con-source-partisanship-and-corroboration-gap",
+                "con-sparse-record-underdetermines-physical-event",
+                "con-thomas-touch-not-reported"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-empty-tomb-cumulative-support-component-01",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether the available ancient record supplies cumulative grounds for accepting an empty burial place.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-empty-tomb-cumulative-support-component-02",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether multiple and hostile sources provide meaningful corroboration of the empty tomb.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-empty-tomb-cumulative-support-component-03",
+                  "targetMoveId": "con-thomas-touch-not-reported",
+                  "text": "Whether an empty tomb independently establishes bodily contact or appearance.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-empty-tomb-cumulative-support-component-04",
+                  "targetMoveId": "con-miracle-judgment-depends-on-priors",
+                  "text": "Whether the empty tomb alone warrants a miracle conclusion.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 74,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-empty-tomb-removal-underdetermination",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-death-by-crucifixion",
+                "pro-empty-tomb-cumulative-support",
+                "pro-shared-historical-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-empty-tomb-removal-underdetermination-component-01",
+                  "targetMoveId": "pro-empty-tomb-cumulative-support",
+                  "text": "Whether establishing an empty tomb uniquely supports resurrection rather than unresolved removal scenarios.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-empty-tomb-removal-underdetermination-component-02",
+                  "targetMoveId": "pro-death-by-crucifixion",
+                  "text": "Whether Jesus actually died before the body disappeared.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-empty-tomb-removal-underdetermination-component-03",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the empty tomb itself is historically established by sufficiently independent witnesses.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-death-by-crucifixion",
+                "pro-empty-tomb-cumulative-support",
+                "pro-shared-historical-core",
+                "pro-touch-and-physical-encounter-texts"
+              ],
+              "components": [
+                {
+                  "componentId": "con-empty-tomb-removal-underdetermination-component-01",
+                  "targetMoveId": "pro-empty-tomb-cumulative-support",
+                  "text": "Whether an accepted empty tomb uniquely or confidently identifies what happened to Jesus's body.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-empty-tomb-removal-underdetermination-component-02",
+                  "targetMoveId": "pro-death-by-crucifixion",
+                  "text": "Whether actual death excludes later removal of the body.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-empty-tomb-removal-underdetermination-component-03",
+                  "targetMoveId": "pro-touch-and-physical-encounter-texts",
+                  "text": "Whether appearance reports independently eliminate unknown removal scenarios.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-empty-tomb-removal-underdetermination-component-04",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the historical core permits a complete reconstruction of the burial aftermath.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 80
+            },
+            "candidate2": {
+              "value": 88
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 75
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 84
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-combined-alternatives-scope",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-empty-tomb-removal-underdetermination",
+                "con-grief-visions-and-conversion-experiences",
+                "con-source-partisanship-and-corroboration-gap",
+                "con-sparse-record-underdetermines-physical-event"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-01",
+                  "targetMoveId": "con-empty-tomb-removal-underdetermination",
+                  "text": "Whether an unspecified removal possibility provides a coherent explanation when combined with the reported appearances and transformations.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-02",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether separate hallucination or conversion explanations adequately cover both disciples and Paul.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-03",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether source scarcity prevents comparative assessment of the combined alternatives.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-04",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether the underlying appearance and transformation reports are independently reliable.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-empty-tomb-removal-underdetermination",
+                "con-grief-visions-and-conversion-experiences",
+                "con-miracle-judgment-depends-on-priors",
+                "con-source-partisanship-and-corroboration-gap",
+                "con-sparse-record-underdetermines-physical-event",
+                "con-spiritual-body-conceptual-objection"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-01",
+                  "targetMoveId": "con-empty-tomb-removal-underdetermination",
+                  "text": "Whether combining unknown body removal with distinct psychological accounts yields an adequate explanation of all asserted evidence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-02",
+                  "targetMoveId": "con-grief-visions-and-conversion-experiences",
+                  "text": "Whether separate accounts for Paul and the disciples jointly explain the appearance reports.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-03",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether historical ignorance itself supplies a positive rival explanation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-04",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether the asserted evidence set is independently reliable.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-05",
+                  "targetMoveId": "con-spiritual-body-conceptual-objection",
+                  "text": "Whether Pauline spiritual-body language coherently establishes physicality.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-combined-alternatives-scope-component-06",
+                  "targetMoveId": "con-miracle-judgment-depends-on-priors",
+                  "text": "Whether resurrection has adequate antecedent probability.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 77
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 69,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 71
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-theistic-background-prior",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-empty-tomb-removal-underdetermination",
+                "con-miracle-judgment-depends-on-priors",
+                "con-sparse-record-underdetermines-physical-event"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-theistic-background-prior-component-01",
+                  "targetMoveId": "con-miracle-judgment-depends-on-priors",
+                  "text": "Whether there are independent background considerations capable of raising resurrection's antecedent probability.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-theistic-background-prior-component-02",
+                  "targetMoveId": "con-empty-tomb-removal-underdetermination",
+                  "text": "Whether background theism resolves the historical uncertainty concerning body removal.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-theistic-background-prior-component-03",
+                  "targetMoveId": "con-sparse-record-underdetermines-physical-event",
+                  "text": "Whether background evidence repairs the sparse historical record.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-empty-tomb-removal-underdetermination",
+                "con-miracle-judgment-depends-on-priors",
+                "con-source-partisanship-and-corroboration-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-theistic-background-prior-component-01",
+                  "targetMoveId": "con-miracle-judgment-depends-on-priors",
+                  "text": "Whether there are relevant background considerations capable of raising resurrection's antecedent probability.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-theistic-background-prior-component-02",
+                  "targetMoveId": "con-empty-tomb-removal-underdetermination",
+                  "text": "Whether a raised theistic prior uniquely defeats body-removal possibilities.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-theistic-background-prior-component-03",
+                  "targetMoveId": "con-source-partisanship-and-corroboration-gap",
+                  "text": "Whether background theism repairs limitations in the historical sources.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 90
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-miracle-requires-justified-theistic-background",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-combined-alternatives-scope",
+                "pro-empty-tomb-cumulative-support",
+                "pro-theistic-background-prior"
+              ],
+              "components": [
+                {
+                  "componentId": "con-miracle-requires-justified-theistic-background-component-01",
+                  "targetMoveId": "pro-theistic-background-prior",
+                  "text": "Whether proposed theistic background considerations are justified sufficiently to identify an extraordinary event as divine miracle.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-requires-justified-theistic-background-component-02",
+                  "targetMoveId": "pro-combined-alternatives-scope",
+                  "text": "Whether comparative failure of natural alternatives independently identifies supernatural agency and intention.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-requires-justified-theistic-background-component-03",
+                  "targetMoveId": "pro-empty-tomb-cumulative-support",
+                  "text": "Whether historical evidence for an empty tomb alone identifies a miraculous cause.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-combined-alternatives-scope",
+                "pro-empty-tomb-cumulative-support",
+                "pro-shared-historical-core",
+                "pro-theistic-background-prior",
+                "pro-touch-and-physical-encounter-texts"
+              ],
+              "components": [
+                {
+                  "componentId": "con-miracle-requires-justified-theistic-background-component-01",
+                  "targetMoveId": "pro-theistic-background-prior",
+                  "text": "Whether merely identifying theistic background evidence categories supplies justified priors for a resurrection miracle.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-requires-justified-theistic-background-component-02",
+                  "targetMoveId": "pro-combined-alternatives-scope",
+                  "text": "Whether comparative historical scope alone identifies divine supernatural agency and intention.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-requires-justified-theistic-background-component-03",
+                  "targetMoveId": "pro-touch-and-physical-encounter-texts",
+                  "text": "Whether an extraordinary physical report alone identifies a miracle.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-requires-justified-theistic-background-component-04",
+                  "targetMoveId": "pro-empty-tomb-cumulative-support",
+                  "text": "Whether an empty tomb alone identifies divine action.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-miracle-requires-justified-theistic-background-component-05",
+                  "targetMoveId": "pro-shared-historical-core",
+                  "text": "Whether the historical core establishes the required supernatural background.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 84
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 91
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 87,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 88
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-shared-historical-core",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-shared-historical-core",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 74,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-shared-historical-core",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-early-pauline-appearance-tradition",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-early-pauline-appearance-tradition",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 81,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-grief-visions-and-conversion-experiences",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "con-grief-visions-and-conversion-experiences",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 65,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 66
+    },
+    {
+      "moveId": "pro-grief-hallucination-scope",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-grief-hallucination-scope",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "con-sparse-record-underdetermines-physical-event",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-sparse-record-underdetermines-physical-event",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "con-sparse-record-underdetermines-physical-event",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 99,
+      "candidate2": 100,
+      "roundedMeanAfterAdjudication": 100
+    },
+    {
+      "moveId": "con-thomas-touch-not-reported",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-thomas-touch-not-reported",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-touch-and-physical-encounter-texts",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-paul-bodily-transformation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 80,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-paul-bodily-transformation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 77,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-spiritual-body-conceptual-objection",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 62,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 63
+    },
+    {
+      "moveId": "con-spiritual-body-conceptual-objection",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 57,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 58
+    },
+    {
+      "moveId": "con-miracle-judgment-depends-on-priors",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-death-by-crucifixion",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 87,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-death-by-crucifixion",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 82,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-empty-tomb-cumulative-support",
+      "fieldKey": "representationalCharity",
+      "candidate1": 74,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-combined-alternatives-scope",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-combined-alternatives-scope",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 69,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "pro-theistic-background-prior",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-miracle-requires-justified-theistic-background",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 90,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "con-miracle-requires-justified-theistic-background",
+      "fieldKey": "representationalCharity",
+      "candidate1": 87,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "pro-cumulative-theistic-worldview",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 64,
+      "candidate2": 62,
+      "roundedMeanAfterAdjudication": 63
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance findings",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance findings",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [
+    "pro-paul-bodily-transformation",
+    "con-miracle-judgment-depends-on-priors"
+  ],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "181",
+      "moves": 18,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 18,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenV213IndependentJudgmentPairCompared": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false
+  },
+  "scoreDerivationAuthorized": false
+}

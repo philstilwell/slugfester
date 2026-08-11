@@ -1,0 +1,278 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-disagreement-extraction",
+  "protocolId": "assessment-production-score-stability-v2.1.3-decomposed-consensus",
+  "status": "v2.1.3-deterministic-disagreements-extracted-audio-source-preparation-authorized",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "developmentValidationOnly": true,
+  "sourceJudgmentAnalysis": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/analysis.json",
+  "sourceJudgmentConfiguration": {
+    "model": "gpt-5.6-sol",
+    "modelLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/execution-preparation-manifest.json": "8d005dd52172e6004992cfdfc5cff4c3e8c3f191a0696b11474b764a81cafbe9",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/execution-activation.json": "05f3cb42b4269b1203e8a61010769065e33a0393f7198ecc95bcaeb3d473d94f",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/analysis.json": "0e4f4ca145e39af6dfce03521bd69796eb978509fa2603c2d8ea1f2523ca8ac5",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-142.json": "818521867749db475176de1b70937be0cfb493a4495f78931a84a8429b565ad1",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-142.json": "9bcf2e92172a54a247b6a1779d7397ada249372ed615798cad5d796db265e7a1",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-142.json": "78479107af73e8bf8e04e97738fda3418b3b7184a6583febe00b67dbf98a6c1b",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-181.json": "90a3022dc523c731529e7758f4170799ac8820d4a56482d557c6f18349c4bfba",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-181.json": "c933a92731a3730700ae264ac973cf1badcad88045eefa1d96ba4a32517e4616",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-181.json": "0633ec60395c05bd3efc59ce39d51bc25e68f0e54a892b69da581d31415088f6",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-92.json": "2dc50d169222a1dc8e27fda7660446426512322f5dd9e7391bf6d0707a3e2dab",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-92.json": "3d35a4abff0ba32e25d9f60b44cafce74308726dc79a22c7816c13591c5f45a7",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-92.json": "9df88a543597f5804e061330200e65b953083d3d11b5fcebd163d6bc94f3bed8",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-172.json": "0b22237cfec69fdfea77f9997082ff6cbbd4015f04d97dd6c5b7f04ff367b8f6",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-172.json": "c743004a69568e9ea8fcf49638b2b02fc85cc3397332d83ed0b4a58b156e2527",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-172.json": "dcb5c5babfa1fa1d7dfb90ca84a38febc5023c37ff1ba842818463b891b1293a",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-78.json": "85716a09d374abdf46d8405382b43527b2278cdc62171312b4943ee8c5450ce7",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-78.json": "1a478bbef3cbc031201c7250972be2c535d36a07a9f9a1955ef681bfdd12b810",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-78.json": "7fe53e5c34c073c58ddc408b515290a97ead6005fec173e74793909881f7f9d9",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-20.json": "b9fcf308ee012a27de05469d9b8b8ea5011edc22263cc0db2e5ac7e389fcb15e",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-20.json": "98a4430f767ce2b4aedb2c09dcb3a937f0c04ce931aea7efd50ad55366162293",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-20.json": "4bc3e1a65bfdcf8d060e842a7a27b5faec716b01934bcbd615e788b6c40ef544",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-108.json": "42ff44d75e14cc9a0d544950a1ab5e340ee53cd819561b4006d48acd996e83a6",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-108.json": "4656bc2211de7a4d313f59cdae9fa3fe5cac0ec68369eed37339f9d8757f8832",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-108.json": "f54926f7581e9f7a2a889137e0855445f08e647b7aa9e9f87de17fbbdf1593fd",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-29.json": "bc4698e089b74a46a810f5dd03f8d38f201b6187783bf8c0f39c0ad7e44116ef",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-29.json": "2949b9ce98dd64109258bae6de760dfc8022a43701919b1db4f34c2dc144c53d",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-29.json": "d78edda38bf1ac3f9b63ae8f30cbd84d1efead21eb02834d4493d7b016cf93fa",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-119.json": "8ca84abd4f630ec16ffe8f2fdc5bbc8c7b124b0aa3623b52e19d8daee9ec694e",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-119.json": "0e0cd0cdb16d01dc1c20c94115c2e317cef8dd018ebff62b1e8165b10c1d3c63",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-119.json": "b92271dc302c50f5e49c6e78af56f6181b90eb82d993e71fd921d92b206025e8",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-a/debate-28.json": "cf1a7c790173cc4c9679990cf5a9be9b31ec6649a194e25202a4ffbfd48a5717",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/independent-judgments/raw-outputs/pass-b/debate-28.json": "2866425aa7f074c8fa67b66002ae49c7969bcb2ba5c8f104c06884487277f80e",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/inventory-chronology-fallback/locked-inventories/debate-28.json": "989d6a2465f976444db92d5909e6319db6b1a50407827c62fbc7da24d6c5f9fa"
+  },
+  "debates": [
+    {
+      "debateNumber": "142",
+      "debateId": "comfort-dillahunty-gospel-atonement-2020",
+      "moveCount": 20,
+      "disputedMoves": 20,
+      "nondisputedScalarMerges": 43,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-142.json"
+    },
+    {
+      "debateNumber": "181",
+      "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+      "moveCount": 18,
+      "disputedMoves": 17,
+      "nondisputedScalarMerges": 29,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [
+        "pro-paul-bodily-transformation",
+        "con-miracle-judgment-depends-on-priors"
+      ],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-181.json"
+    },
+    {
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "moveCount": 19,
+      "disputedMoves": 19,
+      "nondisputedScalarMerges": 32,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [
+        "con-grim-reaper-temporal-mirror"
+      ],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-92.json"
+    },
+    {
+      "debateNumber": "172",
+      "debateId": "hitchens-mcgrath-religious-belief-2007",
+      "moveCount": 18,
+      "disputedMoves": 18,
+      "nondisputedScalarMerges": 40,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-172.json"
+    },
+    {
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "moveCount": 17,
+      "disputedMoves": 15,
+      "nondisputedScalarMerges": 34,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [
+        "con-uncertain-single-catholic-lineage",
+        "con-reformation-had-reform-precursors"
+      ],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-78.json"
+    },
+    {
+      "debateNumber": "20",
+      "debateId": "hitchens-hitchens-iraq-god-2008",
+      "moveCount": 20,
+      "disputedMoves": 19,
+      "nondisputedScalarMerges": 49,
+      "burdenAdjustmentDisputes": 0,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-20.json"
+    },
+    {
+      "debateNumber": "108",
+      "debateId": "ward-ruse-mind-consciousness-god-2013",
+      "moveCount": 16,
+      "disputedMoves": 14,
+      "nondisputedScalarMerges": 34,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-108.json"
+    },
+    {
+      "debateNumber": "29",
+      "debateId": "turek-silverman-reality-theism-atheism-2013",
+      "moveCount": 20,
+      "disputedMoves": 18,
+      "nondisputedScalarMerges": 39,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-29.json"
+    },
+    {
+      "debateNumber": "119",
+      "debateId": "jones-oconnor-hell-2023",
+      "moveCount": 20,
+      "disputedMoves": 19,
+      "nondisputedScalarMerges": 40,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-119.json"
+    },
+    {
+      "debateNumber": "28",
+      "debateId": "turek-shermer-reality-theism-atheism-2018",
+      "moveCount": 21,
+      "disputedMoves": 17,
+      "nondisputedScalarMerges": 56,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/disagreements/debate-28.json"
+    }
+  ],
+  "fieldCounts": {
+    "importancePair": 21,
+    "attributionPair": 0,
+    "responsePair": 149,
+    "charityPair": 15,
+    "assessmentConfidencePair": 1,
+    "logicalCoherence": 30,
+    "evidenceWarrant": 31,
+    "relevanceBurden": 46,
+    "representationalCharity": 49,
+    "precisionClarity": 90,
+    "epistemicCalibration": 93
+  },
+  "triggerCounts": {
+    "importanceMismatch": 21,
+    "responseStructureMismatch": 148,
+    "materialWithinClassResponsiveness": 56,
+    "burdenContactMismatch": 46,
+    "precisionFindingsMismatch": 90,
+    "calibrationFindingsMismatch": 93,
+    "attributionConfidenceMismatch": 0,
+    "charityTestedMismatch": 15,
+    "assessmentConfidenceMismatch": 1,
+    "assessmentBelowHighAudioRequired": 5,
+    "attributionAudioRequired": 2
+  },
+  "adjudicationWorkload": {
+    "disputedMoves": 176,
+    "totalMoves": 189,
+    "disputedMoveRate": 0.9312,
+    "candidateSelections": 543,
+    "burdenAdjustmentDisputes": 18,
+    "oneAdjudicationContextPerDebateSufficient": true
+  },
+  "audioWorkload": {
+    "moves": 5,
+    "debates": [
+      "181",
+      "92",
+      "78"
+    ],
+    "queue": [
+      {
+        "debateNumber": "181",
+        "moveId": "con-miracle-judgment-depends-on-priors",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "181",
+        "moveId": "pro-paul-bodily-transformation",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "92",
+        "moveId": "con-grim-reaper-temporal-mirror",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "78",
+        "moveId": "con-reformation-had-reform-precursors",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "78",
+        "moveId": "con-uncertain-single-catholic-lineage",
+        "requiredBeforeAdjudication": true
+      }
+    ],
+    "independentGateQueueReproducedExactly": true,
+    "allEitherPassBelowHighAssessmentMovesIncluded": true,
+    "allRepositoryBelowHighAttributionMovesIncluded": true,
+    "workItemsPrepared": false,
+    "sourceAudioPrepared": false,
+    "audioAccessed": false,
+    "verificationCompleted": false,
+    "modelOrApiCallsMade": 0
+  },
+  "scoreBlindness": {
+    "diagnosticMoveScoresComputed": 0,
+    "weightedMoveScoresComputed": 0,
+    "sectionScoresComputed": 0,
+    "sideScoresComputed": 0,
+    "debateScoresComputed": 0,
+    "scoreBasedTriggers": 0
+  },
+  "proposedPolicy": {
+    "version": "v2.1-proposal",
+    "everyIntegerRoundedTieAccepted": true,
+    "promoted": false
+  },
+  "totals": {
+    "modelContexts": 0,
+    "audioCalls": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticRepairs": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "audioSourcePreparation": true,
+    "paidTranscription": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-five-v2.1.3-local-audio-source-work-items-model-free-only"
+}
