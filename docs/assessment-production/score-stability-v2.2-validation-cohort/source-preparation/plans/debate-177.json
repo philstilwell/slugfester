@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3027,
+  "ledgerBytes": 178295,
+  "ledgerSha256": "63107643927433be51bfe4570e109f7d22897bfe7c0a23b6de28acbb0fd65c90",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52169,
+      "contextSha256": "f935a3e0ae05c8e3880cd2c2d33360011a94ad704f9bebf93be17731462f8413"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53095,
+      "contextSha256": "61c1292a539cd2406c180afd2f63de9de6600ca3a3f70d3a64ef82ac53ac85ec"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53518,
+      "contextSha256": "b0905cd7c1e1532a853ee38efd285fdf1ae21e42f512e5fa77f03bcdafb4ce7e"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3026,
+      "coreEvents": 527,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3026,
+      "contextEvents": 567,
+      "contextBytes": 33745,
+      "contextSha256": "0db6cb76590dfeb6a494154eafb55586c57836a4187be995e88a4115fac21fd5"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3026,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "177",
+  "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

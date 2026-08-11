@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3301,
+  "ledgerBytes": 192177,
+  "ledgerSha256": "da6ca6173ef7b704f9c9308c1df24ea2686618c180a5e4bf7653269a9f9d4f9f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50615,
+      "contextSha256": "d2b9439342ecaf87e452c3e5f1d678faf351af5d8ead205e49b1840cd8c5074b"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53005,
+      "contextSha256": "a7d569dd913edcb4a62bfa1079200fd694ca50916b22933ae58b04dbadfa4379"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52774,
+      "contextSha256": "f1393fe5ac1e28c64a8bc1b0e194e7bc27c7c1e7f6bd2b3023051a4294ffa7f2"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3300,
+      "coreEvents": 801,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3300,
+      "contextEvents": 841,
+      "contextBytes": 49814,
+      "contextSha256": "3a8c1598b2f39467fbb6ddb6092a889cb72a3ffd2a3a6da04f4a675b4237cf89"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3300,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "168",
+  "debateId": "craig-krauss-evidence-god-2012",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

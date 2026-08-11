@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2-validation-score-blind-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.2-fresh-validation-source-preparation",
+  "debateNumber": "56",
+  "debateId": "huemer-lutz-morality-real-2026",
+  "motion": "Are there objective moral facts, and can moral knowledge be justified by appearances rather than only by best-explanation evidence?",
+  "sides": {
+    "pro": {
+      "label": "Moral realism",
+      "speakers": [
+        "Michael Huemer"
+      ]
+    },
+    "con": {
+      "label": "Moral error theory",
+      "speakers": [
+        "Matt Lutz"
+      ]
+    }
+  },
+  "durationSeconds": 6144,
+  "eventCount": 2531,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/-w2auo-Y5Wg/transcript.txt",
+    "transcriptSha256": "eda32a7b9194d6d745b7341bac6470c6bab5b699ee3e7bce7a3f672d10b74d06",
+    "eventsPath": ".assessment-cache/captions/-w2auo-Y5Wg/events.json",
+    "eventsSha256": "b25fb0b0e44bd5c136d1adfecd377b8da81bc7f7c2476c14ef9202ac49aae74e",
+    "localManifestPath": ".assessment-cache/captions/-w2auo-Y5Wg/manifest.json",
+    "localManifestSha256": "f6ffcbe648c6c2cbc0a0cc16b5a0e5b04fe98bcc27ec45d7ecf5cae7f6167741"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.2-fresh-validation/debate-56.jsonl",
+    "sourceLedgerSha256": "3b970d68c55f045b8cf20fa1712f293faa84e9b3cb40acc12206da4df3b9c1bc",
+    "sourceLedgerBytes": 146492,
+    "sourceLedgerEventCount": 2531,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.2-validation-cohort/source-preparation/plans/debate-56.json",
+    "partitionPlanSha256": "45164428c87b6938bf17ea0b6ad8007811bc7fd8f674556f42b592d2c0234ff2",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "developmentValidationOnly": true,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

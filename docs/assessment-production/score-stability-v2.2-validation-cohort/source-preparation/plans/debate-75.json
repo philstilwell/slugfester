@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2048,
+  "ledgerBytes": 120164,
+  "ledgerSha256": "7b82488eb7adec9d682991b14cb6a47039efbd3f4a90bfe0464eeb04cc2de731",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52010,
+      "contextSha256": "110759ab66dc212ecbd2098d52bcbfd4b9e02a01be1c43ec11768cd0dbb90cc8"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53213,
+      "contextSha256": "a3211686b87c6cb628e36cf1a7afd45b66b4276223f96e25f280a0b46c3e7bee"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2047,
+      "coreEvents": 368,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2047,
+      "contextEvents": 408,
+      "contextBytes": 24354,
+      "contextSha256": "773fc57f718b12f92cfdd91ab73aeda84db8f76f7716e38e22a1084bbae2f8a9"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2047,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "75",
+  "debateId": "rasmussen-clifton-contingency-argument-2019",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

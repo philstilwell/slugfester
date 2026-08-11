@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2371,
+  "ledgerBytes": 140016,
+  "ledgerSha256": "e2612fdd8e5754fec85fcc674388286bb2f28ec238177486461306d781e9c657",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52208,
+      "contextSha256": "5ef7cabbedb423654a29c8545da8230147cf55c772967866eb29aad4aa29b37e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53651,
+      "contextSha256": "c3ae027fd5a2317a20b0964809f4c7bb75cc4350fa76734c434d0ee6a68fb2ba"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2370,
+      "coreEvents": 691,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2370,
+      "contextEvents": 731,
+      "contextBytes": 43632,
+      "contextSha256": "c899e469e887649f670963f3424638dc278ab790436245b0f77687ee079bb5a0"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2370,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "132",
+  "debateId": "mclatchie-carrier-paul-celestial-jesus-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

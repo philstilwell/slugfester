@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2376,
+  "ledgerBytes": 139002,
+  "ledgerSha256": "5958330ef3a7fd42d2cf80dbf0a9f34395eb64f2e9332776f3954a9bbe2c2013",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51384,
+      "contextSha256": "4abc602072622f4d9100cc7849c7826b83be074e8c5494823d7d549466e9e28b"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53276,
+      "contextSha256": "8412d0261df5aa0a706a0a69c7486da55cb849d7b415ab43d7d99dcca922d4bf"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2375,
+      "coreEvents": 696,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2375,
+      "contextEvents": 736,
+      "contextBytes": 43830,
+      "contextSha256": "112ece9e3baa63e83ae0b710f40bf7370e63bda705ddda5d4c0266ec4d2eb014"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2375,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "21",
+  "debateId": "hitchens-wolpe-great-god-debate-2010",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

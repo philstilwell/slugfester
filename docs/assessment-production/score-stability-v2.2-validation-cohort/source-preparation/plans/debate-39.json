@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4103,
+  "ledgerBytes": 229279,
+  "ledgerSha256": "e2534bad811c1b704efb7d26bfe632505fe04fc65c341992f0a4e034ea0b4218",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49096,
+      "contextSha256": "719838eccbe325b7602718a31f4e1e252ff7b86155261392c500f4de72223c5d"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50508,
+      "contextSha256": "86d350fa735c12eda5a4dda273d283e3ab3082a64d312da817c338b8689d5a78"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50721,
+      "contextSha256": "074336c686f78b9ade7950157574531bf3f32bca3287e293812ec49980668c06"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 50799,
+      "contextSha256": "ffc4f9c456624b250e377b189f7eba3aba1158be85393a8ffe93c0b8115e72ad"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4102,
+      "coreEvents": 783,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4102,
+      "contextEvents": 823,
+      "contextBytes": 45964,
+      "contextSha256": "06408b1aad8cea450d608b633ace5e9e5509e4457ed3a30b158b24ed72dcdf6a"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4102,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "39",
+  "debateId": "lambert-jones-christian-faith-skepticism-2021",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
