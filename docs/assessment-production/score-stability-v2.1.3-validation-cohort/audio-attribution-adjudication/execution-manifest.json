@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-audio-attribution-adjudication-execution-manifest",
+  "protocolId": "assessment-production-score-stability-v2.1.3-audio-attribution-adjudication",
+  "status": "frozen-one-v2.1.3-audio-attribution-context-authorized",
+  "frozenAt": "2026-08-11T19:27:10Z",
+  "checkpointCommit": "c1ed19a4255ada5a84421f84ed955042bfe3584a",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "context": {
+    "debateNumber": "78",
+    "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+    "disputedMoves": [
+      "con-uncertain-single-catholic-lineage"
+    ],
+    "workflow": "docs/assessment-production-score-stability-v2.1.3-audio-attribution-adjudication-workflow.md",
+    "manual": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/manual.md",
+    "schema": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/schema.json",
+    "packet": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/packet.json",
+    "rawDiarizedTranscripts": [
+      "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/transcripts/con-uncertain-single-catholic-lineage.transcript.json"
+    ],
+    "diagnosis": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-verification/failure-diagnosis.json",
+    "output": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/output.json",
+    "copiedInputBytes": 25584
+  },
+  "isolation": {
+    "freshTemporaryCodexHome": true,
+    "freshSourceDirectory": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "perInvocationTimeoutMs": 900000,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "meteredApiCostUsdMaximum": 0,
+    "paidTranscriptionCalls": 0,
+    "stderrTailRecordedOnFailure": true
+  },
+  "authorization": {
+    "modelExecution": true,
+    "deterministicValidation": true,
+    "deterministicAnalysis": true,
+    "retry": false,
+    "paidTranscription": false,
+    "disputeAdjudicationPacketPreparation": false,
+    "disputeAdjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "output": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/output.json",
+    "execution": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/model-execution.json",
+    "analysis": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/analysis.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/output.json",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/model-execution.json",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production-score-stability-v2.1.3-audio-attribution-adjudication-workflow.md": "bfa906007db118ed3338f1256edb86fbee0af895b01b8215ecace5bf1569d7a1",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/manual.md": "bdac5c8cedd3660353a31083b77c6f5ff22dda7560459a789bad0e140ee85a8e",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/schema.json": "f33b6ece806e007ee27671c7594df76575eda92016f11088e413b0662d0a58c7",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/packet.json": "fda35d12fa113ebcc483ab4e7bb4b94530677162d9b44c108ef26e528850df6c",
+    "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/transcripts/con-uncertain-single-catholic-lineage.transcript.json": "a8a8da5739196f8ff29c6106e1924eb613cff58093dfa7b580fac21c5a845c80",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-verification/failure-diagnosis.json": "86fb5c72fd9fdedef11ca69643a1b4f7c29619cfaa737a986b732f06f25545ce",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/preparation-manifest.json": "caea90fc534a4bffdd5b290d02dc5c973641f4b929899414d85f959cbc46a1b3",
+    "scripts/lib/assessment-production-score-stability-v2.1.3-audio-attribution-adjudication.mjs": "30bd6a2a9ec604cfa3adc57aec84015e12a5a19b85f2a1a83bffb215d6da89f1",
+    "scripts/build-assessment-production-score-stability-v2.1.3-audio-attribution-adjudication.mjs": "d5ab34e4014e9a15aae4a5dd30589e21d1aa3b87dfad6fafdcb0c6d85ea07037",
+    "scripts/test-assessment-production-score-stability-v2.1.3-audio-attribution-adjudication.mjs": "10d10f8ec9770b62b9877e60efb4f807910606271e469677b1f3b726d14459c2",
+    "scripts/preregister-assessment-production-score-stability-v2.1.3-audio-attribution-adjudication.mjs": "c48a95f489146ca3c984dedcc63da2c4267e9760404a3762729ee71ef629bda0",
+    "scripts/run-assessment-production-score-stability-v2.1.3-audio-attribution-adjudication.mjs": "9472893db36a7e3f8a839b46cf0006bfca83950c02e8d528000dcabcb2ececed",
+    "scripts/validate-assessment-production-score-stability-v2.1.3-audio-attribution-adjudication.mjs": "e57c61032a4b142527454155bfbee5f69e996c64cf6556c111cf25ea3ace2d83",
+    "scripts/analyze-assessment-production-score-stability-v2.1.3-audio-attribution-adjudication.mjs": "f13a9703592d172dee616e41cb0e575586dcdc7638e8bf2d578ec6cad6386fe2",
+    "scripts/test-assessment-production-score-stability-v2.1.3-audio-attribution-gate.mjs": "692ff673d3d494426e605591c77e9d53907b03ba4817f8b8fc91587ee4eb70d3"
+  },
+  "nextAuthorizedAction": "execute-one-v2.1.3-score-blind-audio-attribution-adjudication-context"
+}
