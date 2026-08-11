@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-audio-attribution-adjudication-analysis",
+  "protocolId": "assessment-production-score-stability-v2.1.3-audio-attribution-adjudication",
+  "status": "v2.1.3-audio-attribution-adjudication-passed",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "preservedDeterministicGate": {
+    "status": "v2.1.3-audio-verification-unresolved",
+    "verified": 4,
+    "unresolved": 1,
+    "erasedOrReclassified": false
+  },
+  "adjudication": {
+    "validation": {
+      "status": "passed",
+      "debateNumber": "78",
+      "adjudications": [
+        {
+          "moveId": "con-uncertain-single-catholic-lineage",
+          "status": "verified",
+          "citedSegments": 6,
+          "expectedSpeakerSegmentsCited": 6
+        }
+      ],
+      "verified": 1,
+      "unresolved": 0,
+      "calculatedFields": 0
+    },
+    "decisions": [
+      {
+        "moveId": "con-uncertain-single-catholic-lineage",
+        "expectedSpeaker": "Graham Oppy",
+        "status": "verified",
+        "authoringSpeaker": "Graham Oppy",
+        "corePropositionAuthoredByExpectedSpeaker": true,
+        "mixedSpeakerSpan": true,
+        "evidenceSegmentIndexes": [
+          2,
+          7,
+          8,
+          18,
+          19,
+          22
+        ],
+        "confidence": "high",
+        "rationale": "Oppy's diarized segments supply the expressed uncertainty and both central historical premises: Christianity's early Jewish-sect status and the existence of Syrian Christian churches differing from Rome. Interjections from Albrecht make the span mixed-speaker but do not author the core proposition."
+      }
+    ]
+  },
+  "combinedAudioResult": {
+    "requiredMoves": 5,
+    "deterministicallyVerified": 4,
+    "adjudicatedVerified": 1,
+    "unresolved": 0,
+    "verificationRate": 1
+  },
+  "costs": {
+    "originalPaidDiarizationEstimatedExposureUsd": 0.0442,
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalTranscriptionCostUsd": 0,
+    "modelComputeAuthentication": "ChatGPT subscription",
+    "meteredModelApiCostUsd": 0
+  },
+  "scoreBlindness": {
+    "ratingsAccessed": false,
+    "scoresAccessed": false,
+    "legacyAssessmentsAccessed": false,
+    "otherDebatesAccessed": false,
+    "publicationProseAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "authorization": {
+    "disputeAdjudicationPacketPreparation": true,
+    "disputeAdjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-v2.1.3-dispute-only-adjudication-packets"
+}
