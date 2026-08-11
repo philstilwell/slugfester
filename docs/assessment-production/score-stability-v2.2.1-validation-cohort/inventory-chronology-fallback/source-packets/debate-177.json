@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.1-chronology-fallback-inventory-source-packet",
+  "protocolId": "assessment-production-score-stability-v2.2.1-fresh-validation-chronology-fallback-inventory",
+  "debateNumber": "177",
+  "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+  "motion": "Can textual criticism recover the wording of the original New Testament with enough confidence for the text to be trusted?",
+  "sides": {
+    "pro": {
+      "label": "The text is substantially recoverable",
+      "speakers": [
+        "Daniel B. Wallace"
+      ]
+    },
+    "con": {
+      "label": "Autographic certainty is unavailable",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 7857,
+  "eventCount": 3027,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/WRHjZCKRIu4/transcript.txt",
+    "transcriptSha256": "72f9074ca0e9393e177b1a78504e1f75e5dd87aaf1eed9e59614aa5450ea5db4",
+    "eventsPath": ".assessment-cache/captions/WRHjZCKRIu4/events.json",
+    "eventsSha256": "b46241372230333a45dcf8d51d3ce333cdf50a50184705773007a44eccc31d90",
+    "localManifestPath": ".assessment-cache/captions/WRHjZCKRIu4/manifest.json",
+    "localManifestSha256": "1720198ea7bb347bf3286ac118a7b8d73e3771bd4ac326085f6393acd445f96c"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/assessment-production-score-stability-v2.2-fresh-validation/debate-177.jsonl",
+    "sourceLedgerSha256": "63107643927433be51bfe4570e109f7d22897bfe7c0a23b6de28acbb0fd65c90",
+    "sourceLedgerBytes": 178295,
+    "sourceLedgerEventCount": 3027,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/score-stability-v2.2-validation-cohort/source-preparation/plans/debate-177.json",
+    "partitionPlanSha256": "f2c3775db0e774413e200624b33b823b448eb08afbc2ef9d441517773d99c5bf",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "developmentValidationOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedV212SelectorOutputsUnavailable": true,
+    "failedV22DiscoveryExecutionMetadataUnavailable": true,
+    "v221MechanicalRecoveryMetadataUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
