@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-audio-attribution-adjudication-preparation",
+  "protocolId": "assessment-production-score-stability-v2.1.3-audio-attribution-adjudication",
+  "status": "prepared-one-v2.1.3-disputed-audio-attribution",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "AIOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0
+  },
+  "inputs": {
+    "workflow": "docs/assessment-production-score-stability-v2.1.3-audio-attribution-adjudication-workflow.md",
+    "manual": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/manual.md",
+    "schema": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/schema.json",
+    "packet": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/packet.json",
+    "rawDiarizedTranscripts": [
+      "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/transcripts/con-uncertain-single-catholic-lineage.transcript.json"
+    ],
+    "diagnosis": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-verification/failure-diagnosis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-verification/failure-diagnosis.json": "86fb5c72fd9fdedef11ca69643a1b4f7c29619cfaa737a986b732f06f25545ce",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/transcripts/con-uncertain-single-catholic-lineage.transcript.json": "a8a8da5739196f8ff29c6106e1924eb613cff58093dfa7b580fac21c5a845c80"
+  },
+  "output": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/output.json",
+  "moves": [
+    {
+      "moveId": "con-uncertain-single-catholic-lineage",
+      "expectedSpeaker": "Graham Oppy",
+      "transcriptSha256": "a8a8da5739196f8ff29c6106e1924eb613cff58093dfa7b580fac21c5a845c80",
+      "segments": 28
+    }
+  ],
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/execution-manifest.json",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/model-execution.json",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/output.json",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-attribution-adjudication/analysis.json"
+  ],
+  "authorization": {
+    "executionManifestPreparation": true,
+    "modelExecution": false,
+    "deterministicValidation": true,
+    "paidTranscription": false,
+    "retry": false,
+    "disputeAdjudicationPacketPreparation": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "freeze-one-v2.1.3-audio-attribution-adjudication-execution-manifest"
+}
