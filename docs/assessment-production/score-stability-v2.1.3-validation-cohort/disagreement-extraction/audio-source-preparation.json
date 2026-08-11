@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-audio-source-preparation",
+  "protocolId": "assessment-production-score-stability-v2.1.3-decomposed-consensus",
+  "status": "prepared-five-v2.1.3-local-audio-clips",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "inputHashes": {
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/audio-work-item-preparation.json": "e9f73b0df69d100893e799269fb88ef6d88df31c89ed4547a8686bda0074b14f",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/audio-work-items.json": "91d9602a5313612077d288cc3f0f62de23302087625b8c6f35da2b1c66130676"
+  },
+  "workItemSourceHashesReplayed": 67,
+  "acquisitionPolicy": {
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "acquisitionFormat": "bestaudio/best",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.03.17"
+  },
+  "sources": [
+    {
+      "debateNumber": "181",
+      "videoId": "Ksa8uGe21rw",
+      "acquisitionMode": "downloaded-public-source",
+      "acquisitionAttempts": 1,
+      "sourceAudio": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/audio/source.mp3",
+      "sourceAudioSha256": "4dd89c1c4017383c817add29c4aef25cde2e1d883e1d33c6ab03a8e4c5577823",
+      "durationSeconds": 5434.5375,
+      "normalizedChannels": 1,
+      "normalizedSampleRateHz": 16000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "92",
+      "videoId": "uWo9qU2dhpQ",
+      "acquisitionMode": "downloaded-public-source",
+      "acquisitionAttempts": 1,
+      "sourceAudio": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-92/audio/source.mp3",
+      "sourceAudioSha256": "0314355e00e3b0e922b9d2a701f768f642621703b59f2a24a86d12677a9e6ec2",
+      "durationSeconds": 7508.474188,
+      "normalizedChannels": 1,
+      "normalizedSampleRateHz": 16000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "78",
+      "videoId": "YzvidaGO3m4",
+      "acquisitionMode": "downloaded-public-source",
+      "acquisitionAttempts": 1,
+      "sourceAudio": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/audio/source.mp3",
+      "sourceAudioSha256": "6a5fd4a0e32f14fd1eca0b7c83938f35755ed12ff110a716b862572a4bec3149",
+      "durationSeconds": 3760.819938,
+      "normalizedChannels": 1,
+      "normalizedSampleRateHz": 16000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "181",
+      "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+      "sourceVideoId": "Ksa8uGe21rw",
+      "moveId": "pro-paul-bodily-transformation",
+      "expectedSpeaker": "Gary Habermas",
+      "proposition": "Paul's terminology and stated beliefs in First Corinthians 15 and Philippians 3 indicate bodily transformation and physical resurrection rather than a disembodied spirit.",
+      "verificationExcerpt": "eyewitness data except Paul and so it's important to know what Paul thinks he saw on the way to Damascus now I had said before that in 1 Corinthians 15 he could have chosen the word Numa he doesn't he does say spiritual he's got an adjective there but he says Som body Philippians chapter 3 it's a short chapter 21 verses but Paul says three things in one chapter that indicates that he's talking about a physical Resurrection",
+      "sourceSpan": {
+        "startEvent": 849,
+        "endEvent": 899
+      },
+      "clipWindow": {
+        "startMs": 2086899,
+        "endMs": 2214380,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/clips/pro-paul-bodily-transformation.mp3",
+      "clipSha256": "a78db5b7ead7f07a0924b0784ef546c6ae1d4295787df067cec5b44fced2c56d",
+      "plannedDurationSeconds": 127.481,
+      "durationSeconds": 127.481,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "181",
+      "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+      "sourceVideoId": "Ksa8uGe21rw",
+      "moveId": "con-miracle-judgment-depends-on-priors",
+      "expectedSpeaker": "Antony Flew",
+      "proposition": "What it is rational to conclude from an alleged miracle depends on prior beliefs, so the same report may rationally support resurrection for a believer while leaving a skeptic rationally suspecting error.",
+      "verificationExcerpt": "are here confronted with something of which we have no um other experience because uh I find perhaps here has to raise the in considering um any alleged miracal uh what it is rational for you to do depends on what your PRI belief were uh for a person like myself confronted with an apparently Miracle the rational thing is to think uh that there must be some mistake here though I",
+      "sourceSpan": {
+        "startEvent": 1064,
+        "endEvent": 1094
+      },
+      "clipWindow": {
+        "startMs": 2609740,
+        "endMs": 2711780,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-181/clips/con-miracle-judgment-depends-on-priors.mp3",
+      "clipSha256": "c6cf32f4414add508b6d61562ff670c986acd3604c520d06f272a7cfc34bac14",
+      "plannedDurationSeconds": 102.04,
+      "durationSeconds": 102.04,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "92",
+      "debateId": "craig-malpass-universe-begin-exist-2020",
+      "sourceVideoId": "uWo9qU2dhpQ",
+      "moveId": "con-grim-reaper-temporal-mirror",
+      "expectedSpeaker": "Alex Malpass",
+      "proposition": "Grim Reaper reasoning may involve an accumulation problem and may be temporally mirrored, threatening to imply an end of the future by reasoning used to infer a beginning of time.",
+      "verificationExcerpt": "you can temporarily mirror arguments that show that the universe had a beginning and grim wreaker argument is one of the more interesting ones to do that with so Cohen has this nice argument cloud mirroring a bunch of arguments for the beginning of time and he has a version of mirroring the Grim Reaper argument to show that it must also imply that the future has an end and I've",
+      "sourceSpan": {
+        "startEvent": 2301,
+        "endEvent": 2340
+      },
+      "clipWindow": {
+        "startMs": 5917010,
+        "endMs": 6028900,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-92/clips/con-grim-reaper-temporal-mirror.mp3",
+      "clipSha256": "744ba80883248ba5fde671a0f55ff2f4a6b8f7d8cbbaf497e18cfb55770193be",
+      "plannedDurationSeconds": 111.89,
+      "durationSeconds": 111.890938,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "sourceVideoId": "YzvidaGO3m4",
+      "moveId": "con-uncertain-single-catholic-lineage",
+      "expectedSpeaker": "Graham Oppy",
+      "proposition": "Christianity's initial status as a Jewish sect and the existence of divergent ancient churches such as Syrian Christianity prevent confident identification of a single Catholic institutional lineage.",
+      "verificationExcerpt": "early stage um the Christians are still just a Jewish sect they're still Jews they um from the point of view of the Romans right from the point of view of the Romans until a little bit later of course they would um yeah yeah I mean obviously after Constantine things look very different but you don't have to go that far down before I lost this sure but there are but there are sort of interesting Christian churches like the Syrian",
+      "sourceSpan": {
+        "startEvent": 912,
+        "endEvent": 933
+      },
+      "clipWindow": {
+        "startMs": 2494520,
+        "endMs": 2560720,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/clips/con-uncertain-single-catholic-lineage.mp3",
+      "clipSha256": "0ada3cbde1ade05e207764a04a5a9de030089fd46c9bbb599a148d344c39a28d",
+      "plannedDurationSeconds": 66.2,
+      "durationSeconds": 66.2,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "sourceVideoId": "YzvidaGO3m4",
+      "moveId": "con-reformation-had-reform-precursors",
+      "expectedSpeaker": "Graham Oppy",
+      "proposition": "Numerous movements before the Reformation already sought to correct clerical corruption and other defects within the church, placing Luther within a longer reform tradition.",
+      "verificationExcerpt": "so so there were plenty of precursors to the Reformation sure um yeah well patarain's in Milan in the 11th century there's a whole lot oh yeah sure sure there's a whole lot of whose interest was in reforming the church because yeah yeah especially they're worried about clerical corruption but there's a bunch of other things so I",
+      "sourceSpan": {
+        "startEvent": 1029,
+        "endEvent": 1038
+      },
+      "clipWindow": {
+        "startMs": 2773000,
+        "endMs": 2807260,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/clips/con-reformation-had-reform-precursors.mp3",
+      "clipSha256": "0fcfa376d09209c1d390af745fda9277f140d7718768dd68556e7426a6886c88",
+      "plannedDurationSeconds": 34.26,
+      "durationSeconds": 34.26,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 3,
+    "sourceDownloads": 3,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 3,
+    "clips": 5,
+    "clipMinutes": 7.3645,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0
+  },
+  "proposedPolicy": {
+    "version": "v2.1-proposal",
+    "everyIntegerRoundedTieAccepted": true,
+    "promoted": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-v2.1.3-audio-verification-manifest-and-cost-estimate-only"
+}
