@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-single-score-pass-manifest",
+  "protocolId": "assessment-production-score-stability-v2.1.3-adjudicated-consensus",
+  "status": "frozen-v2.1.3-single-deterministic-score-pass",
+  "frozenAt": "2026-08-11T20:40:32.342Z",
+  "checkpointCommit": "15753f6e4855d0991e64a37ba567d10ab1113f72",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "AIOnly": true,
+  "inputs": {
+    "finalLedger": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/final-ledger/final-ledger.json",
+    "finalLedgerAnalysis": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/final-ledger/analysis.json",
+    "productionReference": "src/data/debates.js",
+    "debates": 10,
+    "finalSides": 20
+  },
+  "scoringPolicy": {
+    "proposal": "docs/assessment-production/score-stability-policy-v2.1-proposal.md",
+    "passes": 1,
+    "repositoryDerivedOnly": true,
+    "modelScoringAllowed": false,
+    "scoresDerivedAfterAdjudicationOnly": true,
+    "initialPassScoresDerivedInSamePostAdjudicationPassForStabilityOnly": true,
+    "formulaChangesAllowed": false,
+    "postResultTuningAllowed": false,
+    "automaticRerunAllowed": false
+  },
+  "acceptanceRule": {
+    "prospective": true,
+    "productionScoresDiagnosticOnly": true,
+    "agreedInitialProOrConMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialOppositeSideReversalAllowed": false,
+    "agreedInitialTieMustRemainTie": true,
+    "unroundedDirectionDiagnosticOnly": true,
+    "meanAbsoluteDistanceToInitialPassesMaximum": 4,
+    "maximumAbsoluteDistanceToEitherInitialPassMaximum": 8,
+    "maximumOutsideInitialRangeMaximum": 3
+  },
+  "artifacts": {
+    "calculatedScores": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/score-pass/calculated-scores.json",
+    "analysis": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/score-pass/analysis.json"
+  },
+  "authorization": {
+    "scoreDerivation": true,
+    "scorePassesMaximum": 1,
+    "scoreAnalysis": false,
+    "scoreRerun": false,
+    "readinessDecision": false,
+    "policyPromotion": false,
+    "publicationPacketPreparation": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/final-ledger/final-ledger.json": "d839939b6436d9dd8d03ca0e11136bfced5b17998fd0d1d6b70bbdebcad2ec1b",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/final-ledger/analysis.json": "41c931cc7a64e4a8a0f717620f01b6a683b8445d7ef3902bf2201344de5568a4",
+    "src/data/debates.js": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "docs/assessment-production/score-stability-policy-v2.1-proposal.md": "9c9d27f96c7e30d7183ed63505e6be723d1bc23473900b3a9d3dd17876083bfe",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/assessment-production-workflow.md": "64a66f21d38aec102256ffc4965a25b47d85341fe7e1610974df9f6e3a864bef",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/lib/assessment-production-score-stability-policy-v2.mjs": "3097a05a8f6bbb23819d6ce76141c63f0183bb01fe403f866379604eabe21efc",
+    "scripts/lib/assessment-production-score-stability-policy-v2.1.mjs": "0c6212bd261c4e1ef38ef473826660957e8427bc8143b840cbc231d3129451ac",
+    "scripts/lib/assessment-production-score-stability-v2.1.3-final-ledger.mjs": "cdeea3fc8c1618889d842048aa1dc45fe013efee6df943aa5250c26442b73036",
+    "scripts/lib/assessment-production-score-stability-v2.1.3-score-gate.mjs": "fadf84c2c0ce100507187d5e29d746a93864b7c1ea004d872eb7da259aae410b",
+    "scripts/test-assessment-production-score-stability-policy-v2.1.mjs": "b7aa9c62e0898eed7e9e2758c1a21588f5d1b384b6b0f08e6ecf0671bfc959d6",
+    "scripts/test-assessment-production-score-stability-v2.1.3-score-gate.mjs": "17fd7e4e92e3a4017e94f38b9af07b88bd6d1b57372bdddf193e7becedfc6628",
+    "scripts/preregister-assessment-production-score-stability-v2.1.3-score-pass.mjs": "893a2ad2f944132cb19f143fd1b431d487e9139ed1728c27ab76f3cab308d0d7",
+    "scripts/derive-assessment-production-score-stability-v2.1.3-scores.mjs": "e66ea08a4dfecb4bb6777ded541cbf219d37b90af60bf5bd721b3232f8073e6e",
+    "scripts/validate-assessment-production-score-stability-v2.1.3-scores.mjs": "8ed0b8f9135b5f1d9d897e6b879fb2b8fc10edbf25a07c68b0f8acdee78a8874",
+    "scripts/analyze-assessment-production-score-stability-v2.1.3-scores.mjs": "37ab585a1ebc7a08792192b9300e5d29dbccac456fa76a963ab6ac01f0267158"
+  }
+}
