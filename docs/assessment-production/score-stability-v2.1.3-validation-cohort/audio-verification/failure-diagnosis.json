@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.3-audio-verification-failure-diagnosis",
+  "protocolId": "assessment-production-score-stability-v2.1.3-audio-verification-failure-diagnosis",
+  "status": "mixed-speaker-locked-excerpt-contamination-confirmed-audio-attribution-packet-preparation-authorized",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "preservedDeterministicGate": {
+    "path": "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-verification/analysis.json",
+    "status": "v2.1.3-audio-verification-unresolved",
+    "verified": 4,
+    "unresolved": 1,
+    "erasedOrReclassified": false
+  },
+  "unresolvedMove": {
+    "debateNumber": "78",
+    "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+    "moveId": "con-uncertain-single-catholic-lineage",
+    "expectedSpeaker": "Graham Oppy",
+    "proposition": "Christianity's initial status as a Jewish sect and the existence of divergent ancient churches such as Syrian Christianity prevent confident identification of a single Catholic institutional lineage.",
+    "sourceSpan": {
+      "startEvent": 912,
+      "endEvent": 933
+    },
+    "verificationExcerpt": "early stage um the Christians are still just a Jewish sect they're still Jews they um from the point of view of the Romans right from the point of view of the Romans until a little bit later of course they would um yeah yeah I mean obviously after Constantine things look very different but you don't have to go that far down before I lost this sure but there are but there are sort of interesting Christian churches like the Syrian",
+    "transcriptPath": "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/transcripts/con-uncertain-single-catholic-lineage.transcript.json",
+    "transcriptSha256": "a8a8da5739196f8ff29c6106e1924eb613cff58093dfa7b580fac21c5a845c80",
+    "diarizedSegmentCount": 28,
+    "namedSpeakers": [
+      "William Albrecht",
+      "Graham Oppy"
+    ],
+    "deterministicEvidence": {
+      "status": "unresolved",
+      "expectedSpeaker": "Graham Oppy",
+      "fullClipExcerptRecall": 0.9146341463414634,
+      "expectedSpeakerExcerptRecall": 0.7073170731707317,
+      "highestOtherSpeaker": "William Albrecht",
+      "highestOtherSpeakerExcerptRecall": 0.3780487804878049,
+      "expectedSpeakerRecallMargin": 0.3292682926829268,
+      "expectedSpeakerDurationSeconds": 47.6,
+      "checks": {
+        "fullClipExcerptRecovered": true,
+        "expectedSpeakerExcerptRecovered": false,
+        "expectedSpeakerRecallDistinct": true,
+        "expectedSpeakerDurationSufficient": true
+      },
+      "speakerEvidence": [
+        {
+          "speaker": "Graham Oppy",
+          "segmentCount": 15,
+          "durationSeconds": 47.6,
+          "wordCount": 110,
+          "excerptRecall": 0.7073170731707317
+        },
+        {
+          "speaker": "William Albrecht",
+          "segmentCount": 13,
+          "durationSeconds": 12.65,
+          "wordCount": 46,
+          "excerptRecall": 0.3780487804878049
+        }
+      ]
+    }
+  },
+  "diagnosis": {
+    "requestCompleted": true,
+    "rawTranscriptAvailable": true,
+    "fullClipExcerptRecovered": true,
+    "expectedSpeakerExcerptRecovered": false,
+    "expectedSpeakerRecallDistinct": true,
+    "expectedSpeakerDurationSufficient": true,
+    "failureClass": "mixed-speaker-locked-excerpt-contamination",
+    "lockedExcerptTokenCount": 82,
+    "fullClipMatchedTokens": 75,
+    "expectedSpeakerMatchedTokens": 58,
+    "expectedSpeakerRecallDeficitTokens": 17,
+    "embeddedOtherSpeakerTokens": 17,
+    "embeddedOtherSpeakerSegments": [
+      {
+        "speaker": "William Albrecht",
+        "start": 33.248000000000005,
+        "end": 36.148,
+        "text": "Right, from the point of view of the Romans. Until a little bit later,",
+        "tokenCount": 14,
+        "lockedExcerptRecall": 1
+      },
+      {
+        "speaker": "William Albrecht",
+        "start": 36.748000000000005,
+        "end": 38.148,
+        "text": "they would, yeah,",
+        "tokenCount": 3,
+        "lockedExcerptRecall": 1
+      }
+    ],
+    "thresholdRelaxationApplied": false,
+    "speakerRelabelingApplied": false,
+    "manualAttributionOverrideApplied": false,
+    "paidTranscriptionRetryApplied": false
+  },
+  "futureModelBoundary": {
+    "model": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "disputedAudioAttributionFieldsOnly": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-verification/analysis.json": "fd645794873faa215acb6cbcaf21a3d0d72f32348c7dd6f31bd2728fa5b1e03d",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/audio-verification/audio-verification.json": "91e0b9971b167c7c8d36655dc9369db77ac0c1abb7b0807c150daa1c701ef1d1",
+    "docs/assessment-production/score-stability-v2.1.3-validation-cohort/disagreement-extraction/audio-work-items.json": "91d9602a5313612077d288cc3f0f62de23302087625b8c6f35da2b1c66130676",
+    "output/transcribe/assessment-production-score-stability-v2.1.3-audio-verification/debate-78/transcripts/con-uncertain-single-catholic-lineage.transcript.json": "a8a8da5739196f8ff29c6106e1924eb613cff58093dfa7b580fac21c5a845c80"
+  },
+  "costs": {
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalTranscriptionCostUsd": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "audioAttributionAdjudicationPacketPreparation": true,
+    "audioAttributionAdjudicationModelExecution": false,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "disputeAdjudicationPacketPreparation": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-one-v2.1.3-score-blind-audio-attribution-adjudication-packet"
+}
