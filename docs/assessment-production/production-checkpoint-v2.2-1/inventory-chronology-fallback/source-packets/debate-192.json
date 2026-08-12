@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-chronology-fallback-inventory-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "debateNumber": "192",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "motion": "Has science come meaningfully close to explaining how life first arose from nonliving chemistry?",
+  "sides": {
+    "pro": {
+      "label": "Science is nowhere close",
+      "speakers": [
+        "James Tour"
+      ]
+    },
+    "con": {
+      "label": "Limited clues justify agnosticism",
+      "speakers": [
+        "S. Joshua Swamidass"
+      ]
+    }
+  },
+  "durationSeconds": 3575,
+  "eventCount": 1613,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/yJgr38h_3H0/transcript.txt",
+    "transcriptSha256": "122f85b698196a7e20ec97623066c0592dac5388b35b8a9a211ae206640026af",
+    "eventsPath": ".assessment-cache/captions/yJgr38h_3H0/events.json",
+    "eventsSha256": "2ba4a23d505273b6069dc549d44836734c99609b753267eb2c3408bf17a31f5c",
+    "localManifestPath": ".assessment-cache/captions/yJgr38h_3H0/manifest.json",
+    "localManifestSha256": "a32e9a5798025a0c09fb5fb22404063ad6475b2afc625319df6a6f818faff2a3"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-192.jsonl",
+    "sourceLedgerSha256": "cf7157c12546561509e396cec77f66a1e8470f25a9a3faed52020db4fa0304ef",
+    "sourceLedgerBytes": 91610,
+    "sourceLedgerEventCount": 1613,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-192.json",
+    "partitionPlanSha256": "6094b5a8dfcb42aee676cd56f8f63e6eae8c91aa0473dd8de3965676d71ae70e",
+    "partitionChunks": 2,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

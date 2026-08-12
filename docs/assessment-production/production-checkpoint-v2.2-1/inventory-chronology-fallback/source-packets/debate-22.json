@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-chronology-fallback-inventory-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "debateNumber": "22",
+  "debateId": "turek-hitchens-god-existence-2008",
+  "motion": "Does God exist, and do cosmology, design, morality, consciousness, and Christian claims outweigh the anti-theist critique of religion?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "Frank Turek"
+      ]
+    },
+    "con": {
+      "label": "Anti-theism",
+      "speakers": [
+        "Christopher Hitchens"
+      ]
+    }
+  },
+  "durationSeconds": 7911,
+  "eventCount": 3231,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/S7WBEJJlYWU/transcript.txt",
+    "transcriptSha256": "797d1a1a18256a1aa239aa5b9d3ca74107526faffbac0da309a75c0ec23d1363",
+    "eventsPath": ".assessment-cache/captions/S7WBEJJlYWU/events.json",
+    "eventsSha256": "61bde06a6b923a766435600b3fa23be6499c63efc7eb4314059b0c18e27afb24",
+    "localManifestPath": ".assessment-cache/captions/S7WBEJJlYWU/manifest.json",
+    "localManifestSha256": "150dc32dc8e4b971d0d2381784ae20bc1792b4f9247d24738a3a17d93895ef49"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-22.jsonl",
+    "sourceLedgerSha256": "6a0690586fec0716902fd96394ebcda07dcb1bfb14510a0cec117f104562cf41",
+    "sourceLedgerBytes": 186442,
+    "sourceLedgerEventCount": 3231,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-22.json",
+    "partitionPlanSha256": "97f11455d8138b4f6193cc460707a39762c44baf8bb4af2de675db30582fb7c4",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

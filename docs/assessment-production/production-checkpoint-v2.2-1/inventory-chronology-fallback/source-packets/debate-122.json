@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-chronology-fallback-inventory-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "debateNumber": "122",
+  "debateId": "horn-oconnor-god-existence-2020",
+  "motion": "Does God exist, and do contingency, sufficient reason, moral realism, evil, animal suffering, and quantum randomness support or undermine theism?",
+  "sides": {
+    "pro": {
+      "label": "Classical theism",
+      "speakers": [
+        "Trent Horn"
+      ]
+    },
+    "con": {
+      "label": "Agnostic skepticism",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 7573,
+  "eventCount": 3797,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/5PF1JgXOKDQ/transcript.txt",
+    "transcriptSha256": "6b1be218542091ff043355eaca9f804b2a07de19c6551e05f81e628e735931bc",
+    "eventsPath": ".assessment-cache/captions/5PF1JgXOKDQ/events.json",
+    "eventsSha256": "ec3f23d55f529d1a12c9c4b5807ccb4de698ca674493a63e0c1cf4457c5cfeb2",
+    "localManifestPath": ".assessment-cache/captions/5PF1JgXOKDQ/manifest.json",
+    "localManifestSha256": "47388dce45e890f1cb1aa5f8a515c5369ad665381fbf98532a727c4fc2385443"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-122.jsonl",
+    "sourceLedgerSha256": "9366621f5cdf8b1ba95a9da7b4d7e48fbe326468753372cd162e2568dc9159aa",
+    "sourceLedgerBytes": 222129,
+    "sourceLedgerEventCount": 3797,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-122.json",
+    "partitionPlanSha256": "a6391bc147ee2375b10459ea7242b84754c2ac98d3ed586e12f90a84d9029c91",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

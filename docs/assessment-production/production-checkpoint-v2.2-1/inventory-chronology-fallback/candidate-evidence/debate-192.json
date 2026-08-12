@@ -1,0 +1,598 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-candidate-evidence-bundle",
+  "protocolId": "assessment-production-score-stability-v2.1.2-candidate-evidence-transport",
+  "debateNumber": "192",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "completeSourceDiscovery": {
+    "chunks": 2,
+    "everyEventOwnedExactlyOnce": true,
+    "everyCoreReportedComplete": true,
+    "silentDeduplicationPerformed": false,
+    "localTargetIdsModelAuthored": false,
+    "selectedTargetTopologyDeferredToPrimaryA": true,
+    "repositoryDerivedLexicalTokenCounts": true,
+    "modelAuthoredLexicalTokenCounts": false,
+    "modelAuthoredBoundedEndEvents": true,
+    "startDependentLockedLookaheadCapacityStructurallyBounded": true,
+    "minimumLexicalTokens": 12,
+    "boundaryContinuationRule": "a move beginning in lookbehind remains owned by the predecessor chunk",
+    "everyCandidateRetained": true,
+    "semanticCandidateDownselectionPerformed": false
+  },
+  "candidateCount": 20,
+  "evidencePolicy": {
+    "excerptsPerCandidate": 1,
+    "minimumTokens": 12,
+    "maximumTokens": 90,
+    "maximumCharacters": 450,
+    "sourceExact": true,
+    "renderingAnchors": [
+      "proposition",
+      "loadBearingReason",
+      "contextSummary"
+    ],
+    "finalSelectedMoveEvidenceRerenderedAfterPrimary": true
+  },
+  "candidates": [
+    {
+      "qualifiedCandidateId": "chunk-001:c001",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Scientists commonly accept an unsupported simplified narrative of chemical evolution despite lacking an evidential basis for it.",
+      "sourceSpan": {
+        "startEvent": 117,
+        "endEvent": 135
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator’s question is followed by Tour’s sustained first-person answer, with the next speaker entering only after the window.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This establishes Tour’s central distinction between genuine scientific knowledge and a widely repeated origin-of-life narrative that he considers unsupported.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Swamidass’s suggestion that knowledgeable scientists already agree that the origin of the first life is unknown."
+      },
+      "contextSummary": "After Swamidass asks whether informed scientists already admit ignorance, Tour argues that most instead inherit a simple chemical-origin account from a small research community.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "small number of scientists and and they believe the narrative that there were some basic molecules like formaldahhide, like carbon dioxide, like like cyanide in a pool and lightning strikes and molecules formed and those then formed a cell and those then formed living creatures. that came out of the pond. That's the narrative. And that's actually what most scientists believe. And so uh uh and and and if you ask them, give me a basis",
+        "characterCount": 436,
+        "tokenCount": 76,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c002",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "A natural origin of life cannot responsibly be called possible without chemically accounting for the production and assembly of all required molecular classes.",
+      "sourceSpan": {
+        "startEvent": 165,
+        "endEvent": 177
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour directly answers the preceding clarification and maintains the floor throughout this compact chemistry-focused response.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The move states the core pro-side standard: bare logical possibility is inadequate when the necessary chemistry and assembly pathways do not work or remain unspecified.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The moderator’s characterization of Tour’s objection as excessive confidence in a narrative that might merely be possible."
+      },
+      "contextSummary": "Tour intensifies his objection from public overconfidence to chemical feasibility, emphasizing that several molecular classes must be produced and assembled before possibility has substance.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "If you look at the chemistry, it is so improbable. I mean, just the chemistry just doesn't work. You got to make all the four classes of molecules and then you got to assemble them all and none of that works. So, it's not just, oh, well, it's possible, but we don't know for sure. If you're going to say it's possible, you got to put some substance around the possibility. Put some",
+        "characterCount": 381,
+        "tokenCount": 73,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c003",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "An extremely small nonzero probability multiplied across an unimaginably large universe leaves the natural origin probability scientifically indeterminate.",
+      "sourceSpan": {
+        "startEvent": 178,
+        "endEvent": 212
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass frames the probabilistic question, acknowledges brief answers from Tour, and resumes the same numerical argument through its conclusion.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This supplies the con side’s principal reason for evidential agnosticism: neither the tiny event probability nor the enormous number of opportunities is quantifiable.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Tour’s claim that the relevant chemistry is so improbable that natural origin scenarios lack substantive plausibility."
+      },
+      "contextSummary": "Swamidass obtains agreement that the probability is nonzero and that the universe is vastly larger than observed, then argues their product cannot presently be evaluated.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "small part of the universe. All the second part. Yeah. So let me get to that. So then, so then you'd also agree that the universe is unimaginably large, much larger than what we observe. Yes. So then that's like an unimaginably large number, the size of the unobservable universe, not just the observable one, multiplied times an unimaginably tiny number. That's undefined. You don't know what the probability",
+        "characterCount": 409,
+        "tokenCount": 69,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c004",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Appealing to a nonzero probability and a vast universe is scientifically empty unless a scenario specifies the molecules, their formation, their assembly, and cell formation.",
+      "sourceSpan": {
+        "startEvent": 213,
+        "endEvent": 239
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour takes the floor with a direct rebuttal to Swamidass and develops a continuous sequence of required chemical questions before yielding.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The rebuttal directly challenges the con side’s probabilistic agnosticism by insisting that possibility claims require a chemically specified causal pathway.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Swamidass’s argument that a tiny nonzero probability across an unimaginably large universe produces an undefined overall probability."
+      },
+      "contextSummary": "Tour compares the probabilistic appeal to arbitrary unobserved possibilities and redirects the discussion toward concrete molecular production, assembly, and cellular organization.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "the molecules you're going to have to have for life? How are those molecules going to be made? How are they going to have to assemble? How does that then form a cell? And we are absolutely clueless on this. And you say, well, it's non zero. I agree. Okay. Yes, it's non zero. And the universe is extra big. And then you can throw at me that there's an infinite number of universes",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c005",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Scientists should openly acknowledge that the origin of life is unexplained rather than presenting speculative accounts as established knowledge.",
+      "sourceSpan": {
+        "startEvent": 256,
+        "endEvent": 267
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour resumes immediately after Swamidass agrees and delivers a sustained statement about scientific candor, public claims, and interpretation of the data.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This connects the technical dispute to Tour’s broader central charge that institutional overstatement propagates false confidence across the academy and public.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Swamidass’s concession that he too does not know how life formed and his attempt to retain probabilistic agnosticism."
+      },
+      "contextSummary": "Following Swamidass’s admission of ignorance, Tour argues that the crucial failure is scientists’ reluctance to state that ignorance publicly while continuing to promote confident narratives.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "No scientists want to go out there and say it. That's the problem. We are clueless on this. That's the problem. And they go out there pontificating as if they know that's the problem. And then they corrupt a whole generation after generation after generation. So that now even the professors in the academy have bought into this because they look at the data. When you look at the",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c006",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "constructive",
+      "proposedProposition": "Life as known requires four chemically difficult molecular classes whose correct production and integration into even a cell remain unexplained.",
+      "sourceSpan": {
+        "startEvent": 310,
+        "endEvent": 409
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour explicitly answers the moderator, identifies the required molecular classes, and continues the technical explanation around a brief clarifying question.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This is the pro side’s most developed chemical case, moving from precursor synthesis through stereochemistry, sequencing, membranes, interactions, and cellular organization.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Asked to contextualize why science is not close, Tour describes nucleic acids, lipids, amino acids, and carbohydrates, then argues that assembling them into a functional cell exceeds present capabilities.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "life as we know it, you've got to have four classes of molecules. We have no idea how to make those four classes of molecules Earth from those from the from the raw elements. We have no idea. even if you could make them. Can you list those four molecules? Yeah. So, so you you've got to have your nucleic acids, which are going to be your DNA and your RNA. You've got to have your lipids",
+        "characterCount": 387,
+        "tokenCount": 77,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c007",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Origin-of-life research has yielded limited clues even though those clues remain nowhere near a complete explanation.",
+      "sourceSpan": {
+        "startEvent": 463,
+        "endEvent": 468
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass speaks in a distinct uninterrupted turn and uses a single distance analogy to qualify the preceding claim of total cluelessness.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The distinction between having no complete account and possessing some limited clues is central to the con side’s qualified agnosticism and directly frames the motion.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Tour’s repeated characterization of scientists as wholly clueless about how life first formed."
+      },
+      "contextSummary": "After Tour presses him to accept total ignorance, Swamidass distinguishes incomplete progress from no progress, describing a small advance that remains far from the goal.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "We have some clues. I would say it's kind of like we're trying to bridge across the Grand Canyon, and it's not like we haven't ventured out a little bit past the cliff. We're nowhere near crossing it. But",
+        "characterCount": 204,
+        "tokenCount": 39,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c008",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Scientific advances reveal ever greater cellular complexity, so the explanatory target for origin-of-life research is receding rather than drawing closer.",
+      "sourceSpan": {
+        "startEvent": 469,
+        "endEvent": 483
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour directly takes up Swamidass’s distance analogy and develops it continuously by contrasting earlier expectations with expanding knowledge of cells.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This directly answers the motion’s temporal notion of meaningful progress by arguing that discovery has enlarged the unexplained target faster than proposed solutions advance.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Swamidass’s claim that researchers have ventured slightly toward an explanation despite remaining far from completing it."
+      },
+      "contextSummary": "Tour reverses Swamidass’s canyon analogy, arguing that early optimism rested on ignorance of cellular complexity and that newer findings continually expand what must be explained.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "the cell. That's the problem. In 1952, 1953 with Miller Yuri, we thought we were close because we didn't understand the complexity of a cell. Now, every year we understand more because of guys like you who tell us how complex this thing is and we go, \"Oh, wow. The goalpost moved further away. Your Grand Canyon has split further apart.\" So, this tells us we're not getting closer",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c009",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Long timescales hinder rather than rescue prebiotic synthesis because organic products decompose unless rapidly purified, stabilized, and advanced to subsequent reactions.",
+      "sourceSpan": {
+        "startEvent": 565,
+        "endEvent": 601
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour answers the moderator’s explicit prompt about time and gives a continuous organic-chemistry explanation through the end of his turn.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move rebuts a major generic resource invoked for natural origin scenarios by explaining why additional time can destroy intermediates instead of accumulating progress.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The common response to origin-of-life difficulties that immense geological time makes otherwise unlikely chemical developments plausible."
+      },
+      "contextSummary": "Tour explains that synthesized organic molecules are normally isolated and cooled because exposure promotes decomposition and side reactions, making delayed multistep accumulation chemically problematic.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "for organic synthesis, time is your enemy. As soon as you make a molecule, you isolate it, you purify it from everything else, and you stick it in a freezer to stabilize it. If you leave your organic molecules out on the bench, even for a week, you see decomposition. Oxygen, if you say, well, the early Earth didn't have oxygen. It was heavy in nitrogen. You want to have ammonia",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c010",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "The scientifically warranted position is humble agnosticism because neither natural chemical emergence nor divine intervention has been demonstrated or excluded.",
+      "sourceSpan": {
+        "startEvent": 730,
+        "endEvent": 770
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass is explicitly invited to state his position and then delivers a sustained summary of his agreements and epistemic conclusion.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This is the con side’s clearest affirmative position on the motion, separating compatibility with faith from the limited evidential reach of current science.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Tour’s demand that Swamidass clearly state his position and his repeated insistence that scientific ignorance should be confessed."
+      },
+      "contextSummary": "Swamidass says either a natural pathway or direct divine action would fit his faith, while science lacks an accurate demonstrated account and should communicate its ideas with humility.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "bunch of stuff. I agree with him, too. Like, I don't actually think we can give an accurate account of how it happened. And even if we could, we have not yet demonstrated that's how it happened. So I think that any account of the scient science of this really needs to come with that certain level of like a humility scientifically of well these are our ideas and this is you know",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-01",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "A nonzero overall probability does not overcome the many individually unfavorable chemical synthesis and assembly steps required for life.",
+      "sourceSpan": {
+        "startEvent": 899,
+        "endEvent": 917
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly follows Swamidass's probability argument and explicitly addresses him from Tour's chemistry-centered position.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This challenges the probabilistic basis for agnosticism by insisting that every required chemical step must be evaluated rather than collapsed into one abstract chance.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Swamidass's claim that an unquantified tiny probability multiplied by vast opportunities warrants scientific agnosticism."
+      },
+      "contextSummary": "After Swamidass describes life's origin as a possible statistical or thermodynamic miracle, Tour argues that synthesis and assembly require repeated unfavorable steps and concrete chemistry.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "miracle because for every step in the synthesis and the assembly, it's a small number that so but and you have and you have to do it over and over again and everything is fighting against you. So in other words, we're clueless and if you you can you know mathematics can take you anywhere. You can just say it's a small number, big number. So it's but it's non zero. So I buy it. No, you got to do the chemistry",
+        "characterCount": 411,
+        "tokenCount": 82,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "discoveryMoveKindAdvisory": "constructive",
+      "proposedProposition": "Independent extraterrestrial life would severely undermine the agnostic probability argument by showing that life arose more than once.",
+      "sourceSpan": {
+        "startEvent": 926,
+        "endEvent": 937
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass introduces the claim as a condition under which his own mathematical argument would fail and develops it in one uninterrupted turn.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The proposed falsifier clarifies what empirical observation would materially shift the probability assessment away from evidential agnosticism.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Swamidass identifies independently originated exoplanetary life, sufficiently isolated from terrestrial seeding, as evidence that would show repeated origins within a defined space.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "about where my argument would really fail. If we discovered life on other planets that were not in our solar system, if we discovered life on an exoplanet that was far enough away that could have been couldn't have been seated from here, I think that would severely undermine my argument because it would show that life has arisen more than once in a in a in a fairly defined space",
+        "characterCount": 381,
+        "tokenCount": 71,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-03",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Finding life elsewhere would not explain how first life formed, and even two origins would leave the underlying chemical problem unresolved.",
+      "sourceSpan": {
+        "startEvent": 939,
+        "endEvent": 965
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's question is followed by Tour's first-person answer, including his characteristic distinction between creation beliefs and chemical explanation.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This directly contests the proposed evidential force of multiple origins by separating recurrence from a mechanistic account of origin-of-life chemistry.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Swamidass's position that independently arisen exoplanetary life would severely undermine his probability-based agnosticism."
+      },
+      "contextSummary": "Tour says the size of the universe and possible extraterrestrial creation do not reduce the difficulty of explaining first life, while allowing that a natural explanation may exist.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "formed. That doesn't change the hardness of the question because a lot of people say that the life we see here on earth was seated by some other place. But all we're talking about is the origin of first life. Now you want to say it was seed it it originated twice. If you want to say it was originate twice that doesn't that doesn't any easier for me. Doesn't make it any easier. And there may be a naturalistic explanation",
+        "characterCount": 423,
+        "tokenCount": 81,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-04",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "A universe teeming with independently arisen life would imply that life is naturally easy to make, but present observations show the opposite pattern.",
+      "sourceSpan": {
+        "startEvent": 966,
+        "endEvent": 985
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass addresses Jim by name and develops a conditional inference about abundant life, divine intervention, and current astronomical observations.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move connects observable prevalence of life to the ease of abiogenesis while acknowledging that transfer between worlds must first be excluded.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Tour's claim that discovering additional origins would not make the chemical problem of first life any easier."
+      },
+      "contextSummary": "Swamidass argues that widespread independent life would predict an accessible natural mechanism, whereas the apparently lifeless universe currently supplies no such signal.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "saw a world that was plentiful, I'm sorry, a universe that was that was teameming with life, not just on the Earth, but like on Titan and in Mars and in every exoplanet we look to. That would mean that that if God was not directly intervening to create life, that it's very easy to make life. And we should really expect to figure out how. What do we see? We see just the opposite",
+        "characterCount": 380,
+        "tokenCount": 75,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-05",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Origin-of-life research may indicate a direction without nearing a solution, while an extraordinarily rare one-time origin could remain beyond scientific interrogation.",
+      "sourceSpan": {
+        "startEvent": 1171,
+        "endEvent": 1213
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour explicitly hands the audience question to Joshua, whose sustained answer uses first-person statements about progress, probability, and scientific reach.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This articulates the con side's core middle position: limited directional clues can coexist with deep uncertainty and possible limits on what science can recover.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The audience analogy suggesting that origin-of-life science may show real progress despite an unknown distance from a final answer."
+      },
+      "contextSummary": "Swamidass grants only slight progress, then argues that a unique statistical event in an immense universe might be non-process-driven, unrepeatable, and scientifically inaccessible.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "life arise one time in the universe. And so it doesn't have to happen one time. Once it happens one time, that cell can replicate and fill the entire earth. I mean, with God's guidance or not. So it it it's it's you know because of that fact you only have to do it one time. It's a it could be an extremely extraordinarily rare event. If that's the case it may be beyond the ability of human science",
+        "characterCount": 399,
+        "tokenCount": 79,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-06",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Origin-of-life targets are moving farther away, and repeated multistep laboratory syntheses are not advancing toward a plausible prebiotic pathway.",
+      "sourceSpan": {
+        "startEvent": 1215,
+        "endEvent": 1253
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites an addition after Swamidass's answer, and Tour responds in his own voice with chemistry-specific criticism and recommendations.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This supplies Tour's central empirical case that apparent research activity is not meaningful approach toward explaining life's origin and requires radically new methods.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The suggestion that origin-of-life research resembles gravitation research by making real progress despite remaining far from completion."
+      },
+      "contextSummary": "Tour contrasts origin-of-life work with progress on gravitation, says new findings make the target more remote, and criticizes staged laboratory syntheses as unproductive.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "if we were to find out that we were nowhere close in understanding gravitation, the the little that we think we learned turns out to be turns out not to work or or the target that we're going after turns out much further away based on the little bit that we've learned, then it becomes harder. And that's what's happening with origin of life every year. the targets moving further",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-07",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Long periods of confusion can precede rapid scientific progress after a conceptual breakthrough, so origin-of-life research could undergo a similar shift.",
+      "sourceSpan": {
+        "startEvent": 1254,
+        "endEvent": 1281
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass addresses Jim directly and develops a comparison between changes in gravitational understanding and a possible origin-of-life breakthrough.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The analogy rebuts an inference from current stagnation to continued remoteness by emphasizing the historically discontinuous character of scientific progress.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Tour's argument that origin-of-life targets keep receding and current laboratory approaches are not producing meaningful progress."
+      },
+      "contextSummary": "Swamidass partly concedes Tour's diagnosis but notes that gravity advanced through insight and paradigm shifts, leaving open an analogous breakthrough for life's origin.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "at Say it again, Cameron, I said might be right on this one. But if you look at the progress on gravity um we kind of struggled with data for long periods of time and uh then there would be actually very rapid progress as there was actually deep insight and real paradigm shifts and understanding and right now we're actually getting a ton of new information through uh LIGO and a",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-08",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "The probability of natural abiogenesis is greater than zero because chemical reactions have finite nonzero probabilities and chemistry is sufficient in principle.",
+      "sourceSpan": {
+        "startEvent": 1295,
+        "endEvent": 1309
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator poses the question and Swamidass answers directly, referring to Tour's agreement and explaining the thermodynamic basis of his conclusion.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This establishes a key premise of the agnostic probability argument even while allowing that the actual probability could be extraordinarily small.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The audience challenge asking how natural life's probability can be known to exceed zero without an exact definition of life."
+      },
+      "contextSummary": "Swamidass grounds a strictly nonzero probability in thermodynamics and chemical reactions, while emphasizing that the resulting chance might contain an enormous number of zeros.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "greater than zero and I think why Jim Tor agrees is because of how thermodynamics works. It's um there's like a finite nonzero probability of any chemical reaction happening. And I don't I think all you need is chemical reactions for life to arise. And so, um, I mean, it could be like, you know, a one, like it could be 0.00 with like a thousand zeros after it, 1%. Or it might even",
+        "characterCount": 383,
+        "tokenCount": 75,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "Abiogenesis requires many separately improbable components and assembly steps, not merely one occurrence of a fully formed cell.",
+      "sourceSpan": {
+        "startEvent": 1310,
+        "endEvent": 1324
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour immediately answers Swamidass's probability explanation, and the subsequent direct exchange names Jim before Tour distinguishes one origin from many steps.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The distinction directly attacks treating abiogenesis as one probabilistic event and returns the assessment to the cumulative burdens of actual chemistry.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Swamidass's argument that thermodynamics makes natural abiogenesis nonzero and that the originating event need occur only once."
+      },
+      "contextSummary": "Tour agrees the value never reaches literal zero but argues that a cell does not appear in one step; its parts must first form and then assemble.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "steps over and over and over again which makes that number smaller and smaller and smaller. It doesn't go to zero. No Jim, we only needed to happen one time. No, no, no. Because you are taking the formation of a cell one time. I am saying that there a cell does not spontaneously form from a bunch of molecules. There are pieces that you have to make and those pieces have to come",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    },
+    {
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-10",
+      "side": "pro",
+      "speaker": "James Tour",
+      "discoveryMoveKindAdvisory": "reply",
+      "proposedProposition": "A recently dead cell does not spontaneously revive despite retaining nearly all its organization, showing that living systems remain mechanistically mysterious.",
+      "sourceSpan": {
+        "startEvent": 1325,
+        "endEvent": 1340
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour addresses Joshua by name and extends his preceding chemistry argument with the dead-cell example in a continuous first-person turn.",
+      "loadBearingLevel": "subsidiary",
+      "loadBearingReason": "The example supports the broader claim that arranging molecular components is not yet an adequate explanation of the transition from nonlife to life.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Swamidass's claim that chemical reactions alone are sufficient in principle for life to arise with nonzero probability."
+      },
+      "contextSummary": "After stressing multistep assembly, Tour argues that even an intact cell that has just died does not restart, illustrating unresolved features of living organization.",
+      "candidateConfidence": "high",
+      "candidateEvidence": {
+        "excerpt": "just don't start living again. The there there's there's something mysterious about life itself. So just putting the molecules in the right place in the right order doesn't immediately tell me that that thing's going to start living. I mean there's there's there's so much that that there that we don't know about that remains mysterious to us even in the life of a simple cell. Oh",
+        "characterCount": 381,
+        "tokenCount": 67,
+        "sourceExact": true,
+        "wholeWordBoundaries": true
+      }
+    }
+  ]
+}

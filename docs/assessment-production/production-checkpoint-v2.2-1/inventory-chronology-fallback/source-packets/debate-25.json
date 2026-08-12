@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-chronology-fallback-inventory-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "debateNumber": "25",
+  "debateId": "hitchens-ramadan-islam-peace-2010",
+  "motion": "Is Islam a religion of peace, or do its claims, institutions, and enforcement patterns make that description untenable?",
+  "sides": {
+    "pro": {
+      "label": "Islam-not-peace critique",
+      "speakers": [
+        "Christopher Hitchens"
+      ]
+    },
+    "con": {
+      "label": "Reformist Islam",
+      "speakers": [
+        "Tariq Ramadan"
+      ]
+    }
+  },
+  "durationSeconds": 5481,
+  "eventCount": 2152,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/mMraxhd9Z9Q/transcript.txt",
+    "transcriptSha256": "9154b58636f0c7dbdf6f24d30156dcb05cef82bc732fb99d94dc9ec9d37dfea7",
+    "eventsPath": ".assessment-cache/captions/mMraxhd9Z9Q/events.json",
+    "eventsSha256": "721d0c43f69005e7233233408d9dc02a05128af94bb680da002eda41c1553415",
+    "localManifestPath": ".assessment-cache/captions/mMraxhd9Z9Q/manifest.json",
+    "localManifestSha256": "b736761c238b09f19942fca7538da7d247f119a7a38463802909e63a6bd4318b"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-25.jsonl",
+    "sourceLedgerSha256": "2ae3d1b6b80b6dea2f35cfb9584bd96b21731df1b889e53193126750b8e3db91",
+    "sourceLedgerBytes": 122547,
+    "sourceLedgerEventCount": 2152,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-25.json",
+    "partitionPlanSha256": "f3dedea208917e948e207194dcfbd7a9fb122ba5b3e831cdc62ac1263fb33101",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-chronology-fallback-inventory-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "debateNumber": "167",
+  "debateId": "craig-shook-existence-god-2008",
+  "motion": "Does the available philosophical, scientific, moral, historical, and experiential evidence support God's existence?",
+  "sides": {
+    "pro": {
+      "label": "Theistic supernaturalism",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Philosophical naturalism",
+      "speakers": [
+        "John Shook"
+      ]
+    }
+  },
+  "durationSeconds": 8291,
+  "eventCount": 1886,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/L3FOgiASYY0/transcript.txt",
+    "transcriptSha256": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+    "eventsPath": ".assessment-cache/captions/L3FOgiASYY0/events.json",
+    "eventsSha256": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+    "localManifestPath": ".assessment-cache/captions/L3FOgiASYY0/manifest.json",
+    "localManifestSha256": "c53451a13f2b21b44010dfbbe0e4834667ac4c765a00a2c3e694fe4f0079c73c"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-167.jsonl",
+    "sourceLedgerSha256": "93640a59efa81fe2ebfda027a151f6d73d202b2f97d44803094e39fc3ab7c3a7",
+    "sourceLedgerBytes": 162632,
+    "sourceLedgerEventCount": 1886,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [
+      "speaker"
+    ],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-167.json",
+    "partitionPlanSha256": "9191d34c4c6a402c1cb783ef39670f5ddc5005fab620da0b22229ee5e56e5426",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
