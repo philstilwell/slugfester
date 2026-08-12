@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-score-stability-v2-2-3-audio-attribution-adjudication",
+  "title": "Slugfester score-stability v2.2.3 isolated audio-attribution adjudication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "reviewerRole",
+    "assessmentModel",
+    "productionCanary",
+    "stagingOnly",
+    "developmentValidationOnly",
+    "isolation",
+    "adjudications",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-score-stability-v2.2.3-audio-attribution-adjudication-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-score-stability-v2.2.3-audio-attribution-adjudication"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "17"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "collins-oconnor-god-existence-2024"
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "isolated-audio-attribution-adjudicator"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "productionCanary": {
+      "type": "boolean",
+      "const": false
+    },
+    "stagingOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "developmentValidationOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "isolation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ratingsUnavailable",
+        "scoresUnavailable",
+        "legacyUnavailable",
+        "otherDebatesUnavailable",
+        "publicationProseUnavailable",
+        "contaminationDetected"
+      ],
+      "properties": {
+        "ratingsUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "scoresUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherDebatesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "publicationProseUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "contaminationDetected": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
+    "adjudications": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "moveId",
+          "expectedSpeaker",
+          "status",
+          "authoringSpeaker",
+          "corePropositionAuthoredByExpectedSpeaker",
+          "mixedSpeakerSpan",
+          "evidenceSegmentIndexes",
+          "confidence",
+          "rationale"
+        ],
+        "properties": {
+          "moveId": {
+            "type": "string",
+            "const": "pro-cumulative-moral-christian-case"
+          },
+          "expectedSpeaker": {
+            "type": "string",
+            "const": "Francis Collins"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "verified",
+              "unresolved"
+            ]
+          },
+          "authoringSpeaker": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "corePropositionAuthoredByExpectedSpeaker": {
+            "type": "boolean"
+          },
+          "mixedSpeakerSpan": {
+            "type": "boolean"
+          },
+          "evidenceSegmentIndexes": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 6,
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 1200
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allDisputedMovesReviewed",
+        "rawAudioDerivedSegmentsNotAltered",
+        "calculatedScoreFieldsEmitted",
+        "thresholdRelaxationUsed",
+        "speakerRelabelingUsed",
+        "manualOverrideUsed"
+      ],
+      "properties": {
+        "allDisputedMovesReviewed": {
+          "type": "boolean",
+          "const": true
+        },
+        "rawAudioDerivedSegmentsNotAltered": {
+          "type": "boolean",
+          "const": true
+        },
+        "calculatedScoreFieldsEmitted": {
+          "type": "boolean",
+          "const": false
+        },
+        "thresholdRelaxationUsed": {
+          "type": "boolean",
+          "const": false
+        },
+        "speakerRelabelingUsed": {
+          "type": "boolean",
+          "const": false
+        },
+        "manualOverrideUsed": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    }
+  }
+}

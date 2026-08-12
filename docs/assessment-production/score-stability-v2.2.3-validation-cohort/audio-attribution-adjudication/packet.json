@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-audio-attribution-adjudication-packet",
+  "protocolId": "assessment-production-score-stability-v2.2.3-audio-attribution-adjudication",
+  "debateNumber": "17",
+  "debateId": "collins-oconnor-god-existence-2024",
+  "motion": "Do fine-tuning, morality, resurrection, revelation, and beauty make Christian theism more plausible than O'Connor's skeptical agnosticism?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "Francis Collins"
+      ]
+    },
+    "con": {
+      "label": "Skeptical agnosticism",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "moves": [
+    {
+      "moveId": "pro-cumulative-moral-christian-case",
+      "expectedSpeaker": "Francis Collins",
+      "proposition": "Cosmic order, objective moral orientation, Jesus's teaching, and the resurrection cumulatively support Christian faith while recognition of human epistemic limits undercuts confident atheistic certainty.",
+      "sourceSpan": {
+        "startEvent": 2085,
+        "endEvent": 2213
+      },
+      "deterministicFailure": {
+        "status": "unresolved",
+        "expectedSpeaker": "Francis Collins",
+        "fullClipExcerptRecall": 0.9583333333333334,
+        "expectedSpeakerExcerptRecall": 0.7777777777777778,
+        "highestOtherSpeaker": "Alex O'Connor",
+        "highestOtherSpeakerExcerptRecall": 0.4861111111111111,
+        "expectedSpeakerRecallMargin": 0.2916666666666667,
+        "expectedSpeakerDurationSeconds": 294.9,
+        "checks": {
+          "fullClipExcerptRecovered": true,
+          "expectedSpeakerExcerptRecovered": false,
+          "expectedSpeakerRecallDistinct": true,
+          "expectedSpeakerDurationSufficient": true
+        },
+        "speakerEvidence": [
+          {
+            "speaker": "Francis Collins",
+            "segmentCount": 61,
+            "durationSeconds": 294.9,
+            "wordCount": 858,
+            "excerptRecall": 0.7777777777777778
+          },
+          {
+            "speaker": "Alex O'Connor",
+            "segmentCount": 16,
+            "durationSeconds": 20.3,
+            "wordCount": 66,
+            "excerptRecall": 0.4861111111111111
+          }
+        ]
+      },
+      "diagnosedFailureClass": "mixed-speaker-locked-excerpt-contamination",
+      "embeddedOtherSpeakerSegments": [
+        {
+          "speaker": "Alex O'Connor",
+          "start": 46.827999999999996,
+          "end": 47.178,
+          "text": "Yeah.",
+          "matchedDeficitTokens": [
+            "yeah"
+          ]
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "start": 47.278,
+          "end": 48.628,
+          "text": "And I think anybody who says that is.",
+          "matchedDeficitTokens": [
+            "anybody",
+            "says"
+          ]
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "start": 49.716,
+          "end": 58.466,
+          "text": "is firstly mistaken about their epistemic capabilities and secondly probably not thinking of the right kind of card right i think that's probably the case so",
+          "matchedDeficitTokens": [
+            "firstly",
+            "mistaken",
+            "epistemic",
+            "capabilities",
+            "secondly",
+            "probably",
+            "thinking",
+            "right",
+            "right",
+            "probably"
+          ]
+        }
+      ],
+      "diarizedTranscriptPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/transcripts/pro-cumulative-moral-christian-case.transcript.json",
+      "diarizedTranscriptSha256": "27ed1ca38aca12d33ef583fc16f94e356f5d434f2b9a7f3ef20a361b873ecc72",
+      "diarizedTranscriptDurationSeconds": 342.92,
+      "diarizedSegmentCount": 77
+    }
+  ],
+  "evidenceBoundary": {
+    "rawAudioDerivedDiarizedTranscriptRequired": true,
+    "knownSpeakerReferencesAlreadyApplied": true,
+    "preservedFailedDeterministicGateVisible": true,
+    "lockedPropositionAndSpanVisible": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "decisionRule": {
+    "decideOnlyExpectedSpeakerAuthorshipOfCoreProposition": true,
+    "mixedSpeakerSpanMayStillVerify": true,
+    "verifiedRequiresHighConfidence": true,
+    "verifiedRequiresExpectedSpeakerSegmentEvidence": true,
+    "unresolvedBlocksDownstream": true,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualOverrideAuthorized": false
+  },
+  "outputIdentity": {
+    "schemaVersion": "1.0-score-stability-v2.2.3-audio-attribution-adjudication-output",
+    "protocolId": "assessment-production-score-stability-v2.2.3-audio-attribution-adjudication"
+  }
+}
