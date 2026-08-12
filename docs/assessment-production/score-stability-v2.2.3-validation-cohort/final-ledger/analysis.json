@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-final-ledger-analysis",
+  "protocolId": "assessment-production-score-stability-v2.2.3-adjudicated-consensus",
+  "status": "v2.2.3-deterministic-final-ledger-gate-passed",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "AIOnly": true,
+  "validation": {
+    "status": "passed",
+    "debates": 10,
+    "disputedMoves": 185,
+    "candidateSelections": 490,
+    "roundedMeanMerges": 434,
+    "dependencyMeanMergesSuppressed": 0,
+    "audioVerifiedMoves": 4,
+    "calculatedScores": 0,
+    "scoreDerivationAuthorized": true
+  },
+  "integrity": {
+    "bothPassesRevalidatedAgainstFullLocalTranscriptChain": true,
+    "disagreementsReplayedExactly": true,
+    "candidateAnonymizationAndProvenanceReplayedExactly": true,
+    "adjudicationSelectionsReplayedExactly": true,
+    "finalRawJudgmentsRevalidatedAgainstFullSourceChain": true,
+    "localTranscriptFilesHashLocked": true,
+    "audioVerificationAndRawDiarizedTranscriptHashesLockedWhereRequired": true,
+    "combinedAudioAttributionResolutionReplayed": true,
+    "modelScoresPresent": false,
+    "repositoryScoresPresent": false
+  },
+  "totals": {
+    "debates": 10,
+    "disputedMoves": 185,
+    "candidateSelections": 490,
+    "roundedMeanPopulation": 434,
+    "dependencyMeanMergesSuppressed": 0,
+    "audioVerifiedMoves": 4,
+    "modelContexts": 0,
+    "retries": 0,
+    "calculatedScores": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0
+  },
+  "authorization": {
+    "scoreDerivation": true,
+    "scorePassesMaximum": 1,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "single-deterministic-v2.2.3-score-pass"
+}
