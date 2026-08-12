@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0-assessment-production-source-repair-record",
+  "status": "debate-167-empty-derived-event-repair-passed",
+  "repairedAt": "2026-08-12T02:46:47.394Z",
+  "checkpointCommit": "f4cceab510bffb2f79fc8e6a816d4a475d98a31a",
+  "debateNumber": "167",
+  "debateId": "craig-shook-existence-god-2008",
+  "videoId": "L3FOgiASYY0",
+  "repair": {
+    "attempts": 1,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directCostUsd": 0,
+    "removedNormalizedEventIndex": 993,
+    "removedTranscriptLineNumber": 994,
+    "removedDerivedEvent": {
+      "startMs": 4237634,
+      "durationMs": 100,
+      "speaker": "A",
+      "text": ""
+    },
+    "semanticContentRemoved": false,
+    "everyOtherEventValueAndOrderPreserved": true,
+    "everyOtherTranscriptLineValueAndOrderPreserved": true
+  },
+  "sourceChainBefore": {
+    "transcript": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/transcript.txt",
+      "sha256": "2fc2c64b885556902ad6121f46be088f517ffd5ac0928d951dca0669b5846355",
+      "lines": 1887
+    },
+    "events": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/events.json",
+      "sha256": "c6fc6347fc71f7c1605b9184b995465703bfdf5797ce11d3f67558abd32fb355",
+      "count": 1887
+    },
+    "manifest": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/manifest.json",
+      "sha256": "83e855781ce6080f16f8aa2bc8d6cc112ca57c1507457fdc9bfba4edcd8e3ddc"
+    }
+  },
+  "sourceChainAfter": {
+    "transcript": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/transcript.txt",
+      "sha256": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+      "lines": 1886
+    },
+    "events": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/events.json",
+      "sha256": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+      "count": 1886
+    },
+    "manifest": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/manifest.json",
+      "sha256": "c53451a13f2b21b44010dfbbe0e4834667ac4c765a00a2c3e694fe4f0079c73c"
+    },
+    "extractionMethod": "OpenAI Audio API diarized transcription of locally saved, speech-optimized audio chunks"
+  },
+  "preservedSources": {
+    "rawDiarizedChunks": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/openai-diarized-chunks.json",
+      "sha256": "0deefd70a2b282d0202acc5ec3e9c87a4a523acb6a5f47ebf92e0026bbcbfc6a",
+      "mutated": false
+    },
+    "frozenProductionManifest": {
+      "path": "docs/assessment-production/manifest-v1.json",
+      "sha256": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+      "mutated": false
+    },
+    "rawEmptySegment": {
+      "chunkIndex": 3,
+      "segmentIndex": 175,
+      "fileName": "chunk-003.json",
+      "chunkSha256": "ab77ee662eea56aaa526eacf21f5d63b005f85093c79ce27f782fe36e7e15c0d",
+      "id": "seg_175",
+      "start": 637.634,
+      "end": 637.734,
+      "speaker": "A",
+      "text": ""
+    }
+  },
+  "validation": {
+    "exactProjectedHashesPassed": true,
+    "canonicalEventValidationPassed": true,
+    "transcriptLineCountEqualsEventCount": true,
+    "localManifestHashChainPassed": true,
+    "rawDiarizedChunksHashUnchanged": true,
+    "frozenProductionManifestHashUnchanged": true,
+    "repairReconstructibleFromRawSource": true
+  },
+  "toolingHashes": {
+    "docs/assessment-production/production-checkpoint-v2.2-1/source-repair-plan.json": "4c948036358ed261afa2c5ffafced047e95128ce725494f521f49486df5b0429",
+    "scripts/repair-assessment-production-checkpoint-v2.2-debate-167-source.mjs": "cf9bc74926c218971677ff0ec671270af53f66db10d6156ce845569a1393c6f8",
+    "scripts/validate-assessment-production-checkpoint-v2.2-debate-167-source-repair.mjs": "9d242ccb15cde43d074f59712792695975f6ceea851a7ff33b18bc1f04a84d01"
+  },
+  "authorization": {
+    "selectionRecoveryPreparation": true,
+    "replacementSelection": false,
+    "sourcePacketPreparation": false,
+    "modelExecution": false,
+    "paidTranscription": false,
+    "scoreDerivation": false,
+    "publicationPacketPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-same-ranking-production-checkpoint-v2.2-selection-recovery-model-free-only"
+}
