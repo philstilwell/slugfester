@@ -1,0 +1,1764 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "177",
+  "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-substantial-recovery-route",
+      "side": "pro",
+      "description": "Establish that textual criticism can responsibly recover the New Testament's wording in its essential substance by combining the surviving witness tradition, methods for comparing its readings, and a probabilistic standard appropriate to ancient historical evidence.",
+      "successCriteria": "Show that branching and abundant attestation preserves access to earlier readings, that most variation does not materially obstruct reconstruction, and that remaining local uncertainty is compatible with enough confidence to trust the recovered text without claiming absolute certainty.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-warranted-textual-confidence",
+        "tier": "motion",
+        "description": "Connect substantial recovery in essential respects, under a moderate historical-probability standard, to warranted trust in the New Testament text despite unresolved local readings."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-preserved-comparative-evidence",
+          "tier": "central",
+          "description": "Establish that manuscripts, early versions, patristic citations, and branching lines of transmission preserve sufficient comparative evidence to reconstruct readings rather than merely document cumulative corruption."
+        },
+        {
+          "bridgeId": "pro-central-variant-significance-and-viability",
+          "tier": "central",
+          "description": "Distinguish the raw number of variants from the smaller burden-relevant class of meaningful and viable alternatives, while accounting for genuinely disputed passages."
+        },
+        {
+          "bridgeId": "pro-central-autograph-access-through-extant-readings",
+          "tier": "central",
+          "description": "Establish that the authors' wording is ordinarily represented among surviving readings and that critical comparison can identify it with substantial, though not exceptionless, confidence."
+        },
+        {
+          "bridgeId": "pro-central-probabilistic-standard",
+          "tier": "central",
+          "description": "Justify a standard of responsible historical probability rather than certainty and show that the cumulative textual evidence meets that standard for substantial recovery."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-doctrinal-and-practical-stability",
+          "tier": "subsidiary",
+          "description": "Explain how the limited effect of viable variants on essential claims supports practical textual trust without treating doctrinal stability as proof of every original reading."
+        },
+        {
+          "bridgeId": "pro-subsidiary-scholarly-use-consistency",
+          "tier": "subsidiary",
+          "description": "Show that ordinary authorship, redactional, and textual scholarship coherently depends on sufficiently stable wording and therefore supplies a practical check on sweeping unrecoverability claims."
+        }
+      ]
+    },
+    {
+      "routeId": "con-insufficient-autographic-warrant-route",
+      "side": "con",
+      "description": "Establish that reconstruction of the earliest text represented by surviving witnesses does not by itself warrant confidence that this text is the authors' wording, because the decisive early transmission period is undocumented and may contain consequential alterations no extant comparison can reveal.",
+      "successCriteria": "Show that evidence drawn from surviving witnesses cannot resolve the accuracy of their lost ancestors, that some consequential readings remain disputed or unknowable, and that comparative abundance or broad continuity therefore falls short of the affirmative burden to justify textual trust.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-trust-warrant",
+        "tier": "motion",
+        "description": "Connect unresolved uncertainty about pre-survival transmission and consequential original readings to the failure of the available evidence to warrant enough confidence for textual trust."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-lost-early-transmission",
+          "tier": "central",
+          "description": "Establish that the gap between composition and the earliest useful witnesses leaves the competence, exemplars, and alterations of the earliest copyists beyond direct comparison."
+        },
+        {
+          "bridgeId": "con-central-initial-versus-original-text",
+          "tier": "central",
+          "description": "Maintain the distinction between reconstructing the common ancestor of surviving witnesses and establishing that this reconstructed initial text is identical with an author's wording."
+        },
+        {
+          "bridgeId": "con-central-limits-of-extant-variant-measures",
+          "tier": "central",
+          "description": "Show that counts and proportions derived from surviving variants cannot measure consequential omissions or alterations that arose before the ancestry represented by extant witnesses."
+        },
+        {
+          "bridgeId": "con-central-residual-consequential-uncertainty",
+          "tier": "central",
+          "description": "Establish that intentional changes, substantial variants, and permanently disputed readings matter historically and textually even when they do not overturn an essential doctrine."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-abundance-does-not-prove-autograph",
+          "tier": "subsidiary",
+          "description": "Distinguish the comparative ease supplied by numerous manuscripts from proof that their reconstructable ancestry preserves the autograph rather than an already altered text."
+        },
+        {
+          "bridgeId": "con-subsidiary-required-early-controls",
+          "tier": "subsidiary",
+          "description": "Identify the missing early, independent, closely dated controls that would connect surviving textual agreement to the authors' wording with stronger evidential warrant."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "early-transmission-and-witnesses",
+      "title": "Early Transmission and the Surviving Witness Base",
+      "weightPercent": 25,
+      "rationale": "This issue tests whether the lost early copying period is adequately controlled by the abundance, age, independence, and branching character of manuscripts, versions, and patristic witnesses."
+    },
+    {
+      "sectionId": "variant-scale-and-significance",
+      "title": "Scale, Viability, and Significance of Textual Variants",
+      "weightPercent": 20,
+      "rationale": "This issue distinguishes raw variant totals and ordinary copying errors from meaningful, viable, intentional, or otherwise consequential differences relevant to substantial recovery."
+    },
+    {
+      "sectionId": "initial-text-and-autographic-recovery",
+      "title": "Initial Text, Extant Readings, and the Autographs",
+      "weightPercent": 25,
+      "rationale": "This issue addresses whether reconstructing readings represented in the surviving tradition warrants identifying the resulting initial text with the authors' wording."
+    },
+    {
+      "sectionId": "confidence-standard-and-burden",
+      "title": "Evidentiary Standard, Probability, and Burden of Trust",
+      "weightPercent": 20,
+      "rationale": "This issue determines what degree of historical probability the motion requires and whether indirect evidence and residual uncertainty satisfy or defeat that burden."
+    },
+    {
+      "sectionId": "practical-and-scholarly-consequences",
+      "title": "Doctrinal, Historical, and Scholarly Consequences",
+      "weightPercent": 10,
+      "rationale": "This issue examines how doctrinal stability, historically important differences, and scholarly reliance on stable wording bear on practical textual trust without substituting for autographic proof."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-lost-early-copying-gap",
+      "sectionId": "early-transmission-and-witnesses",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The centuries and unknown copying stages between the New Testament originals and the earliest useful surviving witnesses leave changes introduced during early transmission unknowable.",
+      "sourceSpan": {
+        "startEvent": 312,
+        "endEvent": 437
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Ehrman's uninterrupted opening statement after his explicit introduction by the moderator.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-lost-early-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move directly establishes the missing early-transmission evidence on which the con route centrally depends.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it states the central evidentiary gap directly and ties the gap to unknowability."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The gap and evidentiary limitation are recoverable, though “unknowable” can range from direct unknowability to broader historical inference."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Absence of earlier copies strongly supports lack of direct knowledge, but categorical unknowability slightly exceeds that evidence."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The inference from missing direct witnesses to an evidentiary gap is strong, with one implicit limit on indirect inference."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The stated dating and missing intervening stages provide concrete support, though no alternative indirect controls are assessed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It reaches the con route’s indispensable lost-early-transmission bridge at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally develops its own evidentiary objection rather than interpreting a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies the first complete copy as roughly three centuries later and emphasizes unknown intervening copying stages.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-late-witness-abundance",
+      "sectionId": "early-transmission-and-witnesses",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The abundance of New Testament manuscripts does not control the earliest transmission because most witnesses are medieval and depend upon earlier exemplars that no longer survive.",
+      "sourceSpan": {
+        "startEvent": 438,
+        "endEvent": 513
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous first-person delivery and the moderator's preceding identification establish Ehrman as the speaker throughout this passage.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-abundance-does-not-prove-autograph"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies a material supporting distinction between numerous surviving witnesses and control of their lost ancestry.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it clearly advances the abundance-versus-ancestry distinction, though the excerpt documents age more than dependence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The contrast between abundance and early control is clear, but the scope of “most” and exemplar dependence is compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move makes a bounded evidentiary point and expressly acknowledges dating difficulty rather than claiming exact chronology."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The abundance-versus-early-control distinction is valid, with a bounded implicit bridge concerning genealogical dependence."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The P45 dating example supports the late-witness point, while the broader medieval-distribution claim is compressed."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary bridge that abundance alone does not prove access to the autograph."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No sufficiently developed opposing interpretation is assessed within this constructive span."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies P45 around 220, mentions only a much smaller earlier fragment, and notes the difficulty of dating manuscripts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-consequential-residual-variants",
+      "sectionId": "variant-scale-and-significance",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Although most textual variants are insignificant, intentional and consequential differences affect prominent passages and disputed wording concerning theology, narrative, and the portrayal of Jesus.",
+      "sourceSpan": {
+        "startEvent": 699,
+        "endEvent": 878
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The examples are delivered continuously by Ehrman during the opening argument following his explicit introduction as the first speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-residual-consequential-uncertainty"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes the con route’s central claim that a residual class of variants remains historically and textually consequential.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it supplies concrete prominent examples and distinguishes them from the conceded mass of trivial variants."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move explicitly concedes that most variants are insignificant while limiting its claim to consequential examples."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The claim that some prominent passages are consequential is matched to concrete examples and a clear limited scope."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The inference that a conceded minority can still matter is explicit, consistent, and supported by relevant examples."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Named examples involving Luke and the adultery story provide specific support, though representativeness is not fully defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central residual-consequential-uncertainty bridge with concrete disputed material."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The concession about most variants avoids overstatement, but no developed opposing alternative requires a charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes Luke 22’s atonement-related wording and the woman-taken-in-adultery passage as prominent consequential cases.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-detectable-corruption-presupposes-earlier-reading",
+      "sectionId": "initial-text-and-autographic-recovery",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Identifying scribal corruption presupposes that the earlier wording can be distinguished among manuscript readings, and scholarship on textual tampering routinely assumes that the autographic wording remains available there.",
+      "sourceSpan": {
+        "startEvent": 1059,
+        "endEvent": 1081
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker remains Wallace, and he explicitly invokes Ehrman's scholarly work as support for this inference.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-autograph-access-through-extant-readings"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-lost-early-copying-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-detectable-corruption-presupposes-earlier-reading-component-01",
+            "targetMoveId": "con-lost-early-copying-gap",
+            "text": "Whether missing early witnesses leave changes introduced before surviving comparisons unknowable.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move shows that later comparative scholarship can identify many altered readings, but it does not establish that changes predating the surviving ancestry are detectable.",
+        "responsivenessWithinClass": {
+          "value": 66,
+          "rationale": "It is strong issue-bearing contrary material but leaves the decisive pre-survival evidentiary-gap component uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The inference is clear, but “autographic wording” and “can be found” slide between local scholarly assumptions and general recovery."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Detecting particular corruptions does not by itself warrant the generalized conclusion that autographic readings remain available throughout."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ehrman can identify later corruption while remaining uncertain about alterations before surviving textual branching.",
+        "decisiveQualification": "Local detection does not resolve undetectable pre-survival changes or establish universal autograph availability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 66,
+          "rationale": "The local presupposition is sound, but its extension to general autographic availability contains a substantial scope leap."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The cited scholarly practice supports local recoverability, not the broader conclusion about the entire autographic text."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central autograph-access bridge despite the unresolved scope qualification."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move presses a real tension but omits the decisive distinction between detectable later corruption and inaccessible earlier alteration."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that locating scribal tampering requires identifying the prior reading and says Ehrman’s book assumes autographic wording is available.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-abundant-diverse-witness-base",
+      "sectionId": "early-transmission-and-witnesses",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "The large variant count arises from an exceptionally abundant witness base, while manuscripts, ancient translations, and roughly one million patristic quotations provide extensive comparative evidence for reconstruction.",
+      "sourceSpan": {
+        "startEvent": 1139,
+        "endEvent": 1244
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace develops this numerical and evidentiary argument continuously in his formally structured opening case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-preserved-comparative-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-late-witness-abundance",
+          "con-lost-early-copying-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-abundant-diverse-witness-base-component-01",
+            "targetMoveId": "con-late-witness-abundance",
+            "text": "Whether numerous manuscripts fail to provide comparative control because the earliest ancestry is lost.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-abundant-diverse-witness-base-component-02",
+            "targetMoveId": "con-lost-early-copying-gap",
+            "text": "Whether versions and patristic quotations mitigate the evidentiary gap in early transmission.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the scarcity objection by adding versions and patristic quotations as comparative witnesses, although it does not establish their independence or reach into the earliest gap.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "This is a partial answer contacting abundance and added witness classes while leaving early independence and ancestry unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The witness categories are clear, but “sufficient alone for reconstruction” lacks an explicit scope and independence qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The numerical abundance is supported, but reconstruction from patristic quotations alone is asserted without selection or independence analysis."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Many witnesses can improve comparison without independently controlling an already altered common ancestry.",
+        "decisiveQualification": "Abundance and quotation volume do not themselves establish early independence or autographic accuracy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "More diverse evidence plausibly improves reconstruction, but the bridge from volume to early control remains material and implicit."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Specific witness categories and a quotation estimate are supplied, while independence and representativeness remain unverified."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the indispensable comparative-evidence bridge at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move fairly addresses scarcity but omits the strongest qualification concerning dependence and the timing of common ancestry."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies approximately one million patristic quotations and claims they could reconstruct the text even without manuscripts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-most-variants-substantively-trivial",
+      "sectionId": "variant-scale-and-significance",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "More than ninety-nine percent of textual variants make virtually no substantive difference because they chiefly involve spelling, flexible Greek word order, articles, and other forms that translate identically.",
+      "sourceSpan": {
+        "startEvent": 1437,
+        "endEvent": 1506
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace introduces a new structured section on the nature of variants and supplies linguistic examples from Greek.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-variant-significance-and-viability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-consequential-residual-variants"
+        ],
+        "components": [
+          {
+            "componentId": "pro-most-variants-substantively-trivial-component-01",
+            "targetMoveId": "con-consequential-residual-variants",
+            "text": "Whether textual variation generally obstructs substantial recovery rather than containing mostly trivial differences.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-most-variants-substantively-trivial-component-02",
+            "targetMoveId": "con-consequential-residual-variants",
+            "text": "Whether the consequential minority includes prominent and interpretation-affecting passages.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the scale component by explaining common trivial variants, but it does not answer the opponent’s distinct claim about consequential residual cases.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "It is a partial answer contacting the broad numerical component while leaving the decisive residual-significance component untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The examples make “virtually no difference” intelligible, though the basis and denominator for more than ninety-nine percent are compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Examples support prevalence of trivial variation, but the precise percentage is not independently warranted in the span."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Most variants may be trivial while a small consequential subset remains important to the motion.",
+        "decisiveQualification": "Numerical predominance does not determine the importance or recoverability of the residual disputed readings."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The examples coherently show why raw variant counts overstate substantive difference, subject to a bounded denominator gap."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Concrete spelling and word-order examples support the category, but the exact percentage lacks a shown derivation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central bridge separating raw variant totals from burden-relevant variation."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The move accurately explains trivial variants but does not incorporate the opponent’s decisive residual-minority qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt states that more than ninety-nine percent make virtually no difference and illustrates this with the movable nu.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-meaningful-viable-subset-limited",
+      "sectionId": "variant-scale-and-significance",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Fewer than one percent of textual variants are both meaningful and viable, although hundreds of disputed passages remain and some affect interpretation to a degree.",
+      "sourceSpan": {
+        "startEvent": 1507,
+        "endEvent": 1582
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace explicitly identifies the smallest variant category, illustrates it, and then states its qualified significance.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-variant-significance-and-viability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-consequential-residual-variants"
+        ],
+        "components": [
+          {
+            "componentId": "pro-meaningful-viable-subset-limited-component-01",
+            "targetMoveId": "con-consequential-residual-variants",
+            "text": "Whether the meaningful and viable subset is limited enough to permit substantial reconstruction.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-meaningful-viable-subset-limited-component-02",
+            "targetMoveId": "con-consequential-residual-variants",
+            "text": "Whether hundreds of disputed passages can affect interpretation to some degree.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly quantifies the relevant subset and expressly concedes hundreds of unresolved, interpretation-affecting passages, thereby contacting both scale and residual significance.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts both decisive components and avoids presenting textual criticism as a completed mopping-up exercise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The meaningful-and-viable category, numerical limit, and qualification about hundreds of disputed passages are expressly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move balances a limited quantitative claim with explicit acknowledgment of unresolved passages and interpretive effects."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A small percentage can remain consequential despite being numerically limited.",
+        "decisiveQualification": "Hundreds of passages remain disputed and some interpretations depend on their resolution."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinction between numerical rarity and remaining interpretive consequence is explicit, consistent, and well qualified."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The classification and concession are specific, but the less-than-one-percent estimate is not derived within the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and comprehensively advances the central variant-significance-and-viability bridge."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move squarely preserves the strongest qualification rather than treating the residual category as negligible or resolved."
+        }
+      },
+      "evidenceBasis": "The excerpt states that less than one percent are meaningful and viable while conceding hundreds of disputed, interpretation-dependent passages.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-essential-beliefs-unaffected",
+      "sectionId": "practical-and-scholarly-consequences",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Essential Christian beliefs do not depend on textually suspect passages and are not overturned by viable textual variants, even though particular passages may remain disputed.",
+      "sourceSpan": {
+        "startEvent": 1583,
+        "endEvent": 1599
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace introduces the theological-dependence question and attributes the supporting concession directly to Ehrman's published response.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-doctrinal-and-practical-stability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-consequential-residual-variants"
+        ],
+        "components": [
+          {
+            "componentId": "pro-essential-beliefs-unaffected-component-01",
+            "targetMoveId": "con-consequential-residual-variants",
+            "text": "Whether consequential textual variants undermine essential Christian beliefs and practical textual trust.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-essential-beliefs-unaffected-component-02",
+            "targetMoveId": "con-consequential-residual-variants",
+            "text": "Whether variants remain historically or interpretively significant apart from doctrinal effects.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move answers the doctrinal consequence component through an attributed concession, but it does not answer historical and textual significance beyond doctrine.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It is a partial answer that contacts the practical-doctrinal component while leaving broader significance unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is expressly limited to essential beliefs rather than every doctrine, passage, or historical conclusion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited doctrinal claim matches the attributed concession and does not assert that every disputed passage is insignificant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Variants can matter historically and textually even if essential beliefs remain unaffected.",
+        "decisiveQualification": "Doctrinal stability is only one dimension of significance and does not prove every original reading."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The inference to doctrinal stability is coherent and carefully scoped, though it cannot independently prove textual recovery."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The move supplies a direct attributed concession, while broader support for all essential beliefs is not surveyed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary doctrinal-and-practical-stability bridge within that tier."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The move accurately states the doctrinal concession but does not carry forward the strongest broader-significance qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes Ehrman’s published response that essential Christian beliefs are not affected by textual variants.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-original-reading-ordinarily-extant",
+      "sectionId": "initial-text-and-autographic-recovery",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "The standard critical Greek text lists tens of thousands of variants but only a small set of places where scholars have proposed that no Greek manuscript preserves the original wording, indicating that the autographic reading ordinarily survives among extant alternatives.",
+      "sourceSpan": {
+        "startEvent": 1701,
+        "endEvent": 1731
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted argument continues Wallace's identified presentation and uses his affirmative position on textual recoverability.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-autograph-access-through-extant-readings"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-lost-early-copying-gap",
+          "con-late-witness-abundance"
+        ],
+        "components": [
+          {
+            "componentId": "pro-original-reading-ordinarily-extant-component-01",
+            "targetMoveId": "con-lost-early-copying-gap",
+            "text": "Whether alterations before the ancestry represented by surviving witnesses could leave no extant trace.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-original-reading-ordinarily-extant-component-02",
+            "targetMoveId": "con-late-witness-abundance",
+            "text": "Whether the surviving alternatives ordinarily include the autographic reading.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The small number of conjectural-emendation proposals bears on extant availability, but it cannot measure readings lost before all surviving branches and thus misses the decisive gap.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It offers relevant evidence and contacts a secondary extant-availability component, not the decisive pre-survival-loss demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The numerical comparison is clear, but scholarly proposals of missing readings are treated as a proxy for actual autograph survival."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The rarity of proposed conjectures supports ordinary extant availability but cannot exclude undetected common-ancestor alteration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Undetected pre-branching alteration would not appear among known places where scholars propose conjectural readings.",
+        "decisiveQualification": "Counts of recognized conjectures cannot directly measure wholly lost or unsuspected autographic readings."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The inference is plausible as an ordinary-practice indicator, but the proxy-to-autograph bridge remains materially incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "A concrete figure and reference work are supplied, while detection limits and scholarly-selection effects remain unaddressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central claim that original readings are ordinarily represented among extant alternatives."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "The move supplies a useful empirical proxy but does not address the strongest limitation on what that proxy can reveal."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts tens of thousands of listed variants with 116 places where scholars proposed that no Greek manuscript preserves the original.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-scholarship-presupposes-stable-wording",
+      "sectionId": "practical-and-scholarly-consequences",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Detailed New Testament scholarship, including vocabulary-based authorship analysis, routinely presupposes dependable knowledge of the wording across nearly every passage relevant to its conclusions.",
+      "sourceSpan": {
+        "startEvent": 1732,
+        "endEvent": 1768
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace explicitly discusses Ehrman and Ehrman's publications from the standpoint of the affirmative debater's ongoing presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-scholarly-use-consistency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-lost-early-copying-gap",
+          "con-consequential-residual-variants"
+        ],
+        "components": [
+          {
+            "componentId": "pro-scholarship-presupposes-stable-wording-component-01",
+            "targetMoveId": "con-lost-early-copying-gap",
+            "text": "Whether missing early witnesses prevent warranted identification of the autographic wording.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-scholarship-presupposes-stable-wording-component-02",
+            "targetMoveId": "con-consequential-residual-variants",
+            "text": "Whether ordinary scholarship practically depends on sufficiently stable wording in most passages.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Scholarly practice supports practical stability across many passages, but such practice can coexist with uncertainty about lost early readings and does not answer that decisive demand.",
+        "responsivenessWithinClass": {
+          "value": 65,
+          "rationale": "The move is relevant and contacts practical scholarly reliance, while leaving the primary early-transmission objection uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "“Presupposes knowledge” shifts between workable textual stability and knowledge of the autographs, and the affected scope is compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Successful scholarship supports usable stability but does not necessarily establish autographic knowledge at every premise it employs."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Scholarship may proceed on provisional critical texts while acknowledging uncertainty about some original readings.",
+        "decisiveQualification": "Practical scholarly use demonstrates sufficient local stability, not certain identity with the autographs."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The practical-consistency argument is suggestive, but it equivocates between stable working texts and autographic knowledge."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Examples of scholarly practice support reliance on wording, though they do not establish the stronger epistemic conclusion."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It reaches the scholarly-use-consistency subsidiary bridge strongly, despite its overextended inference."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The move identifies a practical tension but materially compresses the provisional and probabilistic character of scholarly textual assumptions."
+        }
+      },
+      "evidenceBasis": "The excerpt says most scholars regard autographic wording as recovered in most places and cites Ehrman’s detailed books as practical evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-extant-percentage-limit",
+      "sectionId": "variant-scale-and-significance",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "A small proportion of meaningful and viable variants among surviving manuscripts cannot measure significant omissions, editions, or alterations introduced before the earliest extant witnesses.",
+      "sourceSpan": {
+        "startEvent": 1856,
+        "endEvent": 1870
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Ehrman's announced response and directly challenges a numerical claim attributed to Wallace's preceding presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-limits-of-extant-variant-measures"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-meaningful-viable-subset-limited",
+          "pro-most-variants-substantively-trivial"
+        ],
+        "components": [
+          {
+            "componentId": "con-extant-percentage-limit-component-01",
+            "targetMoveId": "pro-meaningful-viable-subset-limited",
+            "text": "Whether percentages calculated from extant variants measure alterations introduced before the surviving manuscript tradition.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-extant-percentage-limit-component-02",
+            "targetMoveId": "pro-most-variants-substantively-trivial",
+            "text": "Whether the asserted ninety-nine-percent triviality addresses significant variants created before surviving witnesses.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses the denominator failure: an extant-variant percentage cannot include lost pre-survival omissions or editions, so it cannot answer the stated early-transmission question.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It explicitly identifies why both percentage claims fail to measure the challenged category and states the evidentiary consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly limits its objection to what extant percentages cannot measure rather than denying their validity within the extant corpus."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The denominator limitation follows directly: absent pre-survival variants cannot be counted in a proportion of surviving variants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The one-percent estimate may accurately characterize the variants actually represented in surviving witnesses.",
+        "decisiveQualification": "Accuracy within the extant corpus does not measure omissions or alterations absent from that corpus."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The denominator critique is explicit, internally consistent, and directly defeats the inference beyond extant evidence."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The warrant is principally logical and well defended, though the actual occurrence rate of lost editions remains unquantified."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central bridge concerning limits of extant-variant measures."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The reply grants the estimate hypothetically and targets only its inability to answer the stronger pre-survival question."
+        }
+      },
+      "evidenceBasis": "The excerpt grants the one-percent figure for argument’s sake, then distinguishes variants, editions, and omissions before surviving manuscripts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-significance-beyond-doctrine",
+      "sectionId": "practical-and-scholarly-consequences",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "A textual difference or loss can be historically and textually important even if it alters no essential Christian doctrine, so doctrinal stability is not a sufficient measure of significance.",
+      "sourceSpan": {
+        "startEvent": 1871,
+        "endEvent": 1895
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman's response explicitly grants the theological point attributed to Wallace and then supplies his own counterexample and criterion of significance.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-doctrinal-and-practical-stability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-essential-beliefs-unaffected"
+        ],
+        "components": [
+          {
+            "componentId": "con-significance-beyond-doctrine-component-01",
+            "targetMoveId": "pro-essential-beliefs-unaffected",
+            "text": "Whether absence of effects on essential beliefs is sufficient to establish textual insignificance or trust.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the doctrinal criterion as insufficient and gives a counterexample showing that loss can be highly significant without changing any essential doctrine.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It directly defeats the inference from doctrinal stability to general insignificance through a clear counterexample."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully distinguishes doctrinal effect from historical and textual significance without denying the doctrinal concession."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The counterexample is sufficient to establish that doctrinal effect is not a necessary condition of textual significance."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Doctrinal stability can still support practical religious trust even if it does not exhaust textual significance.",
+        "decisiveQualification": "The pro claim remains relevant to practical trust but cannot serve as a complete measure of historical significance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The counterexample cleanly establishes that unchanged doctrine does not entail historical or textual insignificance."
+        },
+        "evidenceWarrant": {
+          "value": 90,
+          "rationale": "The hypothetical loss of entire canonical books is a specific and decisive counterexample to the proposed criterion."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It attacks the doctrinal-and-practical-stability subsidiary bridge at the very top of that tier."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply fairly concedes the doctrinal point and limits its criticism to the overbroad significance inference, with only the practical role compressed."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that losing Mark, Philippians, or 1 Peter would change no doctrine yet would remain hugely significant.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-required-accurate-ancestry-warrant",
+      "sectionId": "confidence-standard-and-burden",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Confidence in the New Testament text requires evidence that the earliest surviving copies descend from accurate predecessors rather than from significantly altered exemplars.",
+      "sourceSpan": {
+        "startEvent": 1896,
+        "endEvent": 1921
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman closes his response by directly requesting that Wallace answer a repeated question about the ancestry of the earliest copies.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-probabilistic-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-abundant-diverse-witness-base",
+          "pro-most-variants-substantively-trivial"
+        ],
+        "components": [
+          {
+            "componentId": "con-required-accurate-ancestry-warrant-component-01",
+            "targetMoveId": "pro-abundant-diverse-witness-base",
+            "text": "Whether extensive surviving evidence establishes that the earliest extant copies descend from accurate predecessors.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-required-accurate-ancestry-warrant-component-02",
+            "targetMoveId": "pro-most-variants-substantively-trivial",
+            "text": "Whether extant triviality rates warrant claims about significant variants before surviving manuscripts.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges both the ancestry warrant and extrapolation from surviving variants, though it states the required evidence mainly as questions rather than supplying a rival probability.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the decisive inferential requirements behind abundance and extant-percentage claims."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The demanded warrant—accurate copies of accurate predecessors—is explicit, as is its connection to textual trust."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The interrogative force appropriately identifies an evidentiary burden without asserting that significant early corruption actually occurred."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Indirect evidence may warrant confidence without a complete chain of directly observed accurate exemplars.",
+        "decisiveQualification": "The reply must distinguish reasonable probabilistic ancestry from impossible direct proof of every copying stage."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The request for an ancestry warrant follows coherently, though it risks implying a stronger evidentiary standard than probability requires."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The missing-chain problem is concrete, but the move offers no comparative assessment of available indirect evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central probabilistic-standard bridge by specifying the missing ancestry warrant."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The challenge is fair and central, though its repeated “how do we know” formulation leaves the permissible indirect-evidence standard somewhat compressed."
+        }
+      },
+      "evidenceBasis": "The excerpt asks how the earliest copies can be known to preserve accurate predecessors and links that unanswered question to trust.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cumulative-early-transmission-evidence",
+      "sectionId": "early-transmission-and-witnesses",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Early circulation, repeated copying, the use of Mark by Matthew and Luke, independent ancient versions, and patristic witnesses cumulatively make a sparse and wholly uncontrolled initial transmission improbable.",
+      "sourceSpan": {
+        "startEvent": 1927,
+        "endEvent": 1976
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the moderator names Wallace, the speaker addresses Ehrman's scenario and advances the affirmative side's explicitly probabilistic answer.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-lost-early-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-lost-early-copying-gap",
+          "con-required-accurate-ancestry-warrant",
+          "con-late-witness-abundance"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cumulative-early-transmission-evidence-component-01",
+            "targetMoveId": "con-lost-early-copying-gap",
+            "text": "Whether the lost early copying period was wholly sparse and uncontrolled despite indirect evidence of circulation and copying.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cumulative-early-transmission-evidence-component-02",
+            "targetMoveId": "con-required-accurate-ancestry-warrant",
+            "text": "Whether early use, multiple copying, versions, and patristic evidence make accurate ancestry probable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cumulative-early-transmission-evidence-component-03",
+            "targetMoveId": "con-late-witness-abundance",
+            "text": "Whether diverse nonmanuscript witnesses materially supplement the surviving manuscript base.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the gap through cumulative indirect evidence and argues against a sparse-transmission scenario, but it does not establish the independence or accuracy of every cited line.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It answers the decisive demand probabilistically with several evidence classes, leaving bounded independence and accuracy gaps."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The cumulative thesis is clear, though “multiple times” and the independence of evidence classes remain partly unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move uses appropriately probabilistic language and does not claim direct proof, with only an implicit caveat about dependence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Repeated copying and early use can coexist with a significantly altered common exemplar.",
+        "decisiveQualification": "Cumulative circulation evidence reduces sparse-transmission plausibility without proving autographic accuracy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The cumulative inference is coherent, with one bounded bridge from circulation and diversity to transmission reliability."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Mark’s use by Matthew and Luke and additional witness classes provide specifics, but independence is not fully defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central lost-early-transmission bridge by providing indirect early controls."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly answers with probability rather than certainty, though it does not fully address the common-exemplar qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt cites Matthew and Luke’s use of Mark, repeated copying, ancient versions, and patristic witnesses as cumulative evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-indirect-evidence-supports-essential-recovery",
+      "sectionId": "confidence-standard-and-burden",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Although hard proof about the earliest copies is unavailable, substantial indirect evidence makes it probable that the extant text preserves in all essential respects what the New Testament authors wrote.",
+      "sourceSpan": {
+        "startEvent": 2222,
+        "endEvent": 2232
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator returns the floor to Wallace, who addresses Ehrman and states the affirmative conclusion in the first-person debate exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-warranted-textual-confidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-required-accurate-ancestry-warrant",
+          "con-lost-early-copying-gap",
+          "con-extant-percentage-limit"
+        ],
+        "components": [
+          {
+            "componentId": "pro-indirect-evidence-supports-essential-recovery-component-01",
+            "targetMoveId": "con-required-accurate-ancestry-warrant",
+            "text": "Whether the absence of hard evidence prevents any warranted probability of accurate early textual ancestry.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-indirect-evidence-supports-essential-recovery-component-02",
+            "targetMoveId": "con-lost-early-copying-gap",
+            "text": "Whether indirect evidence can support essential recovery despite the acknowledged early evidentiary gap.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-indirect-evidence-supports-essential-recovery-component-03",
+            "targetMoveId": "con-extant-percentage-limit",
+            "text": "Whether evidence outside extant variant percentages can support the recovery conclusion.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly concedes the absence of hard evidence and substitutes a probabilistic cumulative warrant, but the selected span asserts rather than details the soft evidence supporting its conclusion.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It directly contacts the demanded standard and gap, while compressing the evidentiary chain behind the asserted probability."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The essential-respects scope and lack of hard proof are explicit, though “soft evidence” is not specified within the span."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The probabilistic force is appropriate, but “in all probability” is somewhat stronger than the undocumented soft-evidence warrant shown here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Absent direct early controls, indirect evidence may remain insufficient to establish accurate autographic ancestry.",
+        "decisiveQualification": "The pro conclusion must identify why the cumulative indirect evidence favors essential recovery over early common corruption."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "A probabilistic conclusion from indirect evidence is valid in form, though the evidentiary bridge is materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The span concedes missing hard evidence and asserts abundant soft evidence without detailing or comparing that evidence."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supplies the motion-level connection from probabilistic essential recovery to warranted textual trust."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move squarely acknowledges the evidentiary limitation but compresses the decisive comparison between rival transmission hypotheses."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes the lack of hard evidence, invokes substantial soft evidence, and concludes that essential authorial wording is probably preserved.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-initial-original-distinction",
+      "sectionId": "initial-text-and-autographic-recovery",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Textual criticism may reconstruct the ancestral text from which surviving witnesses descend without thereby establishing that this initial text is identical with the author's original wording.",
+      "sourceSpan": {
+        "startEvent": 2431,
+        "endEvent": 2462
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "An audience question is followed by Ehrman's direct disagreement with Wallace and his description of current textual-critical terminology and aims.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-initial-versus-original-text"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-original-reading-ordinarily-extant",
+          "pro-detectable-corruption-presupposes-earlier-reading",
+          "pro-indirect-evidence-supports-essential-recovery"
+        ],
+        "components": [
+          {
+            "componentId": "con-initial-original-distinction-component-01",
+            "targetMoveId": "pro-original-reading-ordinarily-extant",
+            "text": "Whether reconstructing the ancestor of surviving witnesses establishes identity with the author’s original wording.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-initial-original-distinction-component-02",
+            "targetMoveId": "pro-detectable-corruption-presupposes-earlier-reading",
+            "text": "Whether identifying tampering within surviving comparisons establishes access to the autograph itself.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-initial-original-distinction-component-03",
+            "targetMoveId": "pro-indirect-evidence-supports-essential-recovery",
+            "text": "Whether the recovered initial text and the autographic text can be treated as equivalent without an added warrant.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses an equivocation between the reconstructable source of surviving witnesses and the authorial original, stating the consequence that the former does not establish the latter.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It identifies the decisive category distinction and applies it to multiple earlier autograph-recovery inferences."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The terms initial ancestral text and original authorial wording are sharply distinguished and the claim is carefully limited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move establishes a necessary inferential distinction without asserting that the initial and original texts must differ."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The initial text may be identical to the authorial original as a matter of strong historical probability.",
+        "decisiveQualification": "Possible or probable identity still requires evidence beyond the definition of the reconstructable initial text."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 96,
+          "rationale": "The distinction is explicit and decisive, blocking an otherwise invalid inference without overclaiming actual divergence."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The stated terminology of major research centers supports the distinction, though institutional practice is only briefly documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and comprehensively supports the central initial-versus-original-text bridge."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The move preserves possible identity while correctly denying that reconstruction alone logically establishes that identity."
+        }
+      },
+      "evidenceBasis": "The excerpt says major research centers reconstruct the text from which surviving witnesses descend rather than simply calling it the original text.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-trust-burden-unmet",
+      "sectionId": "confidence-standard-and-burden",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Because the advocate of textual trust bears the burden of proof, uncertainty about the competence of the earliest copyists and the quality of their exemplars prevents that trust from being warranted.",
+      "sourceSpan": {
+        "startEvent": 2730,
+        "endEvent": 2767
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous portion of Ehrman's introduced closing statement, framed through his bridge-and-train burden-of-proof analogy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-insufficient-trust-warrant"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-indirect-evidence-supports-essential-recovery",
+          "pro-cumulative-early-transmission-evidence",
+          "pro-original-reading-ordinarily-extant"
+        ],
+        "components": [
+          {
+            "componentId": "con-trust-burden-unmet-component-01",
+            "targetMoveId": "pro-indirect-evidence-supports-essential-recovery",
+            "text": "Whether unspecified indirect evidence satisfies the affirmative burden to warrant textual trust.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-trust-burden-unmet-component-02",
+            "targetMoveId": "pro-cumulative-early-transmission-evidence",
+            "text": "Whether the cited circulation evidence establishes competent early copyists and high-quality exemplars.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-trust-burden-unmet-component-03",
+            "targetMoveId": "pro-original-reading-ordinarily-extant",
+            "text": "Whether present textual recoverability establishes the quality of lost ancestral exemplars.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contests burden completion by identifying two missing warrants—early copyist competence and exemplar quality—although its bridge analogy may imply a demanding safety standard.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts the affirmative conclusion and names the precise evidentiary links claimed to remain unsupported."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The missing warrants are clear, but the degree of confidence required by “trust” is left partly dependent on the bridge analogy."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The questions appropriately identify uncertainty, though the analogy risks importing a stronger precautionary threshold than historical trust requires."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Historical trust may be warranted probabilistically without proving each early copyist’s competence or exemplar quality.",
+        "decisiveQualification": "The affirmative still must show that available indirect evidence makes reliable ancestry more probable than serious early corruption."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The burden argument coherently identifies missing links, with a bounded ambiguity about the required level of proof."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The absence of direct evidence is concrete, while the move does not compare the cumulative indirect evidence already offered."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the con motion bridge by arguing that the affirmative trust warrant remains incomplete."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "The move identifies a legitimate burden gap but only implicitly distinguishes reasonable probabilistic warrant from direct proof."
+        }
+      },
+      "evidenceBasis": "The excerpt assigns the burden to the advocate of trust and asks about early copyist skill and the quality of lost exemplars.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-moderate-historical-probability-standard",
+      "sectionId": "confidence-standard-and-burden",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Because absolute certainty is unavailable for ancient historical questions, responsible textual trust should rest on moderate historical probability rather than a skeptical standard that would erase knowledge of the ancient world.",
+      "sourceSpan": {
+        "startEvent": 2817,
+        "endEvent": 2842
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Wallace the concluding turn, and Wallace explicitly answers Bart's train illustration before stating his probabilistic standard.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-probabilistic-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-trust-burden-unmet",
+          "con-required-accurate-ancestry-warrant",
+          "con-initial-original-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "pro-moderate-historical-probability-standard-component-01",
+            "targetMoveId": "con-trust-burden-unmet",
+            "text": "What evidentiary standard the affirmative must satisfy before historical textual trust is warranted.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-moderate-historical-probability-standard-component-02",
+            "targetMoveId": "con-required-accurate-ancestry-warrant",
+            "text": "Whether responsible confidence requires hard proof of accurate copying at every lost stage.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-moderate-historical-probability-standard-component-03",
+            "targetMoveId": "con-initial-original-distinction",
+            "text": "Whether probabilistic identity can be warranted despite the conceptual initial-original distinction.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies replacing an apparent certainty-like burden with ordinary historical probability, preserving the legitimate demand for evidence while rejecting an unattainable absolute standard.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly states and justifies the replacement standard, though the span does not show that the evidence actually meets it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast between absolute certainty and historical probability is explicit and confined to ancient historical inquiry."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claimed standard fits the acknowledged limitations of historical evidence and expressly disclaims absolute knowledge."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The con side can demand adequate probability without demanding absolute certainty.",
+        "decisiveQualification": "Adopting probability does not itself establish that the affirmative evidence crosses the required threshold."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The reframe from certainty to probability is well justified, with one remaining bridge concerning the threshold’s satisfaction."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The general historical-method point is strong, though the selected span supplies no detailed evidence that this case meets the standard."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable central probabilistic-standard bridge at the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move fairly preserves an evidentiary burden but somewhat associates the opposing challenge with radical skepticism."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects absolute certainty for historical questions and explicitly proposes a moderate standard of probability.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact judgments"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden bridge beyond effects already captured."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact judgments"
+        ],
+        "counterfactual": "Removing the proposed residual would not change any burden bridge beyond effects already captured."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

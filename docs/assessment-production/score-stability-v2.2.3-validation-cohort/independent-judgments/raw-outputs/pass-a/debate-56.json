@@ -1,0 +1,1748 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "56",
+  "debateId": "huemer-lutz-morality-real-2026",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-moral-realism-appearances",
+      "side": "pro",
+      "description": "Establish that objective evaluative relations can be known through defeasible intellectual appearances, without requiring moral facts to figure in the best explanation of observations, and that practical reasoning cannot be fully grounded in antecedent desires or self-conception.",
+      "successCriteria": "The route succeeds if moral appearances have prima facie justificatory force, the explanation-only restriction on evidence is not required, and objective evaluative facts are needed to account for at least some practical reasons or evident moral relations such as the badness of suffering.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-objective-facts-and-appearance-knowledge",
+        "tier": "motion",
+        "description": "Connect justified, undefeated moral appearances to knowledge of objective moral facts without making best-explanation evidence the exclusive path to justification."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-defeasible-appearance-justification",
+          "tier": "central",
+          "description": "Establish a defeasible entitlement to accept how matters intellectually appear unless a relevant defeater is supplied."
+        },
+        {
+          "bridgeId": "pro-central-explanationism-not-exclusive",
+          "tier": "central",
+          "description": "Show that explanatory inference depends on prior representational or rational entitlements and therefore cannot be the sole source of justified belief."
+        },
+        {
+          "bridgeId": "pro-central-evaluative-facts-in-practical-reason",
+          "tier": "central",
+          "description": "Show that desire strength, idealized desire, or self-conception cannot fully determine rational priority without independent evaluative facts."
+        },
+        {
+          "bridgeId": "pro-central-apriori-objective-moral-relation",
+          "tier": "central",
+          "description": "Connect a priori access to objective natures or relations with the proposition that suffering is bad."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-synthetic-apriori-cases",
+          "tier": "subsidiary",
+          "description": "Use nonmoral necessary relations to support a model of a priori knowledge that is not exhausted by linguistic synonymy or conceptual stipulation."
+        },
+        {
+          "bridgeId": "pro-subsidiary-moral-belief-and-motivation",
+          "tier": "subsidiary",
+          "description": "Account for cases in which evaluative judgment shapes emotion, desire, or conduct rather than merely projecting antecedent attitudes."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-error-theory-explanationism",
+      "side": "con",
+      "description": "Establish that objective morality would require desire-independent categorical reasons that do not fit practical deliberation, while moral appearances receive naturalistic explanations that do not require moral truths and therefore cannot justify moral knowledge.",
+      "successCriteria": "The route succeeds if practical reasons must connect to an agent's values or deliberative perspective, objective morality requires reasons lacking that connection, and experiences support beliefs only through explanatory or causal relations that leave moral facts evidentially unnecessary.",
+      "motionBridge": {
+        "bridgeId": "con-motion-no-objective-facts-or-moral-knowledge",
+        "tier": "motion",
+        "description": "Connect the absence of categorical moral reasons and the explanatory redundancy of moral facts to error theory and denial of justified moral knowledge."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-internal-practical-reasons",
+          "tier": "central",
+          "description": "Establish that practical reasons must derive normative purchase from an agent's desires, values, or deliberative perspective rather than from wholly external demands."
+        },
+        {
+          "bridgeId": "con-central-categorical-morality-error",
+          "tier": "central",
+          "description": "Show that objective morality requires desire-independent categorical reasons and that such reasons are not supplied by an internal account of practical rationality."
+        },
+        {
+          "bridgeId": "con-central-explanationist-evidence",
+          "tier": "central",
+          "description": "Require beliefs to gain evidential support through causal or best-explanation relations to experience rather than from the apparent propositional content alone."
+        },
+        {
+          "bridgeId": "con-central-naturalistic-moral-appearance-account",
+          "tier": "central",
+          "description": "Provide an explanation of moral appearances through psychological, emotional, social, or predictive processes that does not posit objective moral facts."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-self-centrality",
+          "tier": "subsidiary",
+          "description": "Distinguish an agent's deliberatively central commitments from momentarily forceful or alien desires so that internal reasons need not track motivational intensity."
+        },
+        {
+          "bridgeId": "con-subsidiary-conceptual-learning-and-apriori-seeming",
+          "tier": "subsidiary",
+          "description": "Explain conceptual and a priori seemings through predictive refinement or relations among concepts without treating their apparent contents as foundational evidence."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "objective-moral-facts-and-categorical-reasons",
+      "title": "Objective Moral Facts and Categorical Reasons",
+      "weightPercent": 25,
+      "rationale": "Covers the motion-level dispute over whether morality requires desire-independent categorical reasons and whether the nature of practical rationality supports or excludes objective moral facts."
+    },
+    {
+      "sectionId": "appearances-explanation-and-moral-knowledge",
+      "title": "Appearances, Explanation, and Moral Knowledge",
+      "weightPercent": 30,
+      "rationale": "Covers the central epistemological clash over whether undefeated appearances provide prima facie justification or whether evidential support must instead arise through causal or best-explanation relations."
+    },
+    {
+      "sectionId": "desire-self-conception-and-practical-reason",
+      "title": "Desire, Self-Conception, and Practical Reason",
+      "weightPercent": 20,
+      "rationale": "Covers competing accounts of rational priority involving desire strength, idealized desire, deliberative identity, alienation, and the proposed need for independent evaluative standards."
+    },
+    {
+      "sectionId": "moral-judgment-emotion-and-motivation",
+      "title": "Moral Judgment, Emotion, and Motivation",
+      "weightPercent": 10,
+      "rationale": "Covers whether moral judgments project antecedent attitudes or can independently organize emotion, desire, and conduct, including the implications of abandoning belief in moral facts."
+    },
+    {
+      "sectionId": "apriori-knowledge-concepts-and-objective-relations",
+      "title": "A Priori Knowledge, Concepts, and Objective Relations",
+      "weightPercent": 15,
+      "rationale": "Covers whether mathematical, conceptual, and modal seemings are explained by conceptual learning or disclose objective natures and relations, including the proposed extension to suffering and badness."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-categorical-reasons-error-theory",
+      "sectionId": "objective-moral-facts-and-categorical-reasons",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "constructive",
+      "proposition": "Objective moral facts would require desire-independent categorical reasons, but practical reasons derive their rationalizing force from desires, so the required moral facts do not exist.",
+      "sourceSpan": {
+        "startEvent": 99,
+        "endEvent": 195
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains within Lutz's uninterrupted opening statement, with stable first-person advocacy of the con position throughout.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-no-objective-facts-or-moral-knowledge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move states the con route's motion-level metaphysical and practical-reason case and therefore has no earlier target.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it directly and clearly supplies the principal con route."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The categorical-reason thesis and desire-based premise are recoverable, with a bounded implicit account of practical reasons."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical requirement is asserted strongly, while the exclusivity of desire-based rationalization remains compressed."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective morality may concern objective value without requiring every reason to be wholly desire-independent.",
+        "decisiveQualification": "The argument expressly treats categorical reason-giving force as the feature required by objective moral facts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The inference is usable, but the bridge from desire-based rationalization to the nonexistence of objective moral facts remains material."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The excerpt articulates the theoretical premise but supplies little independent defense or comparison with rival accounts."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the con motion bridge by linking categorical reasons to error theory."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "It targets a serious categorical conception but does not fully establish that this is the only realist conception."
+        }
+      },
+      "evidenceBasis": "The excerpt defines categorical normativity as reason-giving force independent of anyone's desires.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-explanationism-moral-knowledge",
+      "sectionId": "appearances-explanation-and-moral-knowledge",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "constructive",
+      "proposition": "Experiences support beliefs when the beliefs' truth helps best explain those experiences; because moral truths are unnecessary to explain moral experience, moral evidence and knowledge are unavailable.",
+      "sourceSpan": {
+        "startEvent": 196,
+        "endEvent": 270
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is still part of Lutz's formally introduced opening and uses a continuous first-person explanation of his epistemology.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-no-objective-facts-or-moral-knowledge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the con route's motion-level epistemic case and therefore has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within constructive moves, it squarely states the con route's decisive epistemic requirement."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The best-explanation criterion is clear, but its asserted application to epistemology generally lacks stated scope limits."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A universal explanationist condition is asserted without defending exclusivity or acknowledging apparent counterexamples."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The conclusion follows only if best explanation is necessary for all evidential support, a substantial unsupported conditional."
+        },
+        "evidenceWarrant": {
+          "value": 59,
+          "rationale": "The coffee-cup analogy and general assertion do not establish the universal epistemic restriction or moral application."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances denial of moral knowledge at the con motion level."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The excerpt presents the speaker's positive epistemology without engaging a developed rival interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt generalizes from perceptual experience to the claim that truth supports belief by best explaining experience.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-clear-moral-judgments-over-error-theory",
+      "sectionId": "objective-moral-facts-and-categorical-reasons",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Clear judgments that suffering is bad and torturing babies for fun is wrong are initially more plausible than the desire-based premise used to support moral error theory.",
+      "sourceSpan": {
+        "startEvent": 274,
+        "endEvent": 371
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly transfers the opening statement to Huemer, and this window is his uninterrupted first-person response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-no-objective-facts-or-moral-knowledge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-categorical-reasons-error-theory"
+        ],
+        "components": [
+          {
+            "componentId": "pro-clear-moral-judgments-over-error-theory-component-01",
+            "targetMoveId": "con-categorical-reasons-error-theory",
+            "text": "Whether the desire-based premise warrants rejecting clear judgments that suffering is bad and torture is wrong.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly compares the plausibility of the con premise with clear moral judgments, contacting the premise without independently refuting it.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the decisive premise but offers mainly a comparative-plausibility answer, making the response materially partial."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The selected moral judgments, comparative standard, and limited initial-plausibility claim are all expressly bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move asserts comparative initial plausibility rather than claiming that the judgments conclusively defeat error theory."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The desire-based premise may gain support from a broader account despite being less initially obvious.",
+        "decisiveQualification": "The reply claims only that the clear moral judgments have greater initial plausibility."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The comparative-plausibility inference is coherent, though it does not specify a complete rule for resolving theory conflict."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Concrete judgments support the comparison, but the weighting of intuitions against theoretical premises is only briefly defended."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly attacks the con motion bridge by resisting the premise used to reach error theory."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "It fairly frames the premise as an argument needing support and confines its objection to comparative starting credibility."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts suffering and torture judgments with the less obvious premise that reasons must derive from desires.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-defeasible-appearance-justification",
+      "sectionId": "appearances-explanation-and-moral-knowledge",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "If something appears to be the case, that appearance provides rational justification for accepting it unless specific reasons for doubt supply a defeater.",
+      "sourceSpan": {
+        "startEvent": 372,
+        "endEvent": 410
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage continues Huemer's uninterrupted opening and explicitly presents his own appearance-based epistemological position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-objective-facts-and-appearance-knowledge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-explanationism-moral-knowledge"
+        ],
+        "components": [
+          {
+            "componentId": "pro-defeasible-appearance-justification-component-01",
+            "targetMoveId": "con-explanationism-moral-knowledge",
+            "text": "Whether appearances can justify belief without the belief's truth being required as the best explanation of experience.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies a competing prima facie justification rule that directly denies explanationism's exclusive condition, though it does not yet answer all explanatory objections.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the decisive exclusivity demand but leaves the con theory's supporting rationale substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The rule, its defeasible status, and the role of specific reasons for doubt are stated with clear qualifications."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The entitlement is explicitly defeasible and conditional on the absence of specific reasons for doubt."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The principle is internally coherent and expressly defeasible, with only its foundational defense left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The move clearly states the epistemic rule, but this span provides limited argument for accepting that rule."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supports the pro motion bridge connecting undefeated appearances to justification."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This span primarily states a positive principle rather than evaluating a developed alternative account."
+        }
+      },
+      "evidenceBasis": "The excerpt states that seeming supplies rational acceptance unless specific reasons for doubt function as defeaters.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-preference-reversal-needs-evaluation",
+      "sectionId": "desire-self-conception-and-practical-reason",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "The partying-student and sirens cases show that future desires sometimes should and sometimes should not govern present choice, a difference explained by evaluative facts rather than desires alone.",
+      "sourceSpan": {
+        "startEvent": 411,
+        "endEvent": 526
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer remains the sole speaker during his opening, explicitly reconstructing and challenging Lutz's account of practical reasons.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-evaluative-facts-in-practical-reason"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-categorical-reasons-error-theory"
+        ],
+        "components": [
+          {
+            "componentId": "pro-preference-reversal-needs-evaluation-component-01",
+            "targetMoveId": "con-categorical-reasons-error-theory",
+            "text": "Whether desires alone explain which present or future preference should rationally govern choice.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The paired cases directly pressure desire-based rationalization by holding preference conflict fixed while varying apparent rational priority.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "The reply contacts a decisive practical-reason premise, but the inference to objective evaluative facts remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move distinguishes rational from moral 'should' and confines the claim to the contrast between paired cases."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Evaluative facts are offered as an account of the contrast rather than asserted as the uniquely proven explanation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An internalist can distinguish desires by endorsement, temporal information, or deliberative centrality rather than objective value.",
+        "decisiveQualification": "The paired cases still require a non-strength-based rule for deciding which preference governs."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The contrast undermines simple desire-strength rules, but objective evaluation is not shown to be the only available explanation."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The paired thought experiments are pertinent, though their representativeness and exclusion of rival internalist accounts are limited."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro bridge concerning evaluative facts in practical reason."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly identifies pressure on simple desire accounts, although it does not eliminate sophisticated internalist rankings."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts future-preference cases and invokes the badness of sailing to the sirens to explain their difference.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-value-consistency-requires-truth",
+      "sectionId": "objective-moral-facts-and-categorical-reasons",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Consistency matters for value judgments only if they can be true or false, because unlike inconsistent beliefs, inconsistent desires need not misrepresent reality.",
+      "sourceSpan": {
+        "startEvent": 565,
+        "endEvent": 606
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening remains Huemer's, and he explicitly identifies this passage as his third concluding consideration.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-categorical-morality-error"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-categorical-reasons-error-theory"
+        ],
+        "components": [
+          {
+            "componentId": "pro-value-consistency-requires-truth-component-01",
+            "targetMoveId": "con-categorical-reasons-error-theory",
+            "text": "Whether an error theorist can retain a rational requirement that evaluative attitudes be mutually consistent.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move challenges a consequence of error theory by contrasting truth-apt beliefs with desires, but it does not directly disprove desire-based reasons.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It contacts an important implication of the target while leaving the target's central desire-based premise mostly intact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The belief-desire contrast is clear, but 'no reason' is broad and implicitly limited to truth-based consistency reasons."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim overlooks possible coherence, planning, or instrumental reasons for consistent desires unless read narrowly."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Consistency among desires may matter instrumentally or constitutively even when desires are not truth-apt.",
+        "decisiveQualification": "The stated comparison specifically grounds belief consistency in avoiding guaranteed falsity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The inference works for truth-based consistency but overreaches from that point to the absence of any reason for coherence."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The belief-desire contrast is relevant, but alternative practical grounds for consistency receive no serious comparison."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally attacks a supporting implication of the con categorical-morality bridge."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The reply underplays non-truth-based reasons for coherence, a live alternative that materially limits its conclusion."
+        }
+      },
+      "evidenceBasis": "The excerpt argues inconsistent beliefs must include falsity whereas inconsistent desires need not misrepresent reality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-self-centrality-not-proportionalism",
+      "sectionId": "desire-self-conception-and-practical-reason",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Cases involving overpowering desires undermine proportionalism rather than desire-based reasons, because a reason's normative weight can depend on the desire's centrality to the agent's self-conception.",
+      "sourceSpan": {
+        "startEvent": 735,
+        "endEvent": 888
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is Lutz's continuous answer to Huemer's student and sirens examples, with explicit references to Huemer's preceding objections.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-self-centrality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-preference-reversal-needs-evaluation"
+        ],
+        "components": [
+          {
+            "componentId": "con-self-centrality-not-proportionalism-component-01",
+            "targetMoveId": "pro-preference-reversal-needs-evaluation",
+            "text": "Whether overpowering-desire cases defeat desire-based reasons or only a proportional desire-strength theory.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies replacing motivational strength with deliberative centrality, preserving the issue of rational priority while answering the paired-case objection.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "The reframe explicitly diagnoses proportionalism as the narrower target and supplies an alternative internal ranking rule."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction from proportionalism is clear, though centrality to self-conception is not fully analyzed in this span."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents self-centrality as a proposed alternative and openly signals that the account is more complex."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The examples may challenge desire-based reasons generally because self-conception itself can be normatively defective.",
+        "decisiveQualification": "The immediate examples directly refute only a rule tying normative weight to motivational efficacy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Rejecting proportionalism preserves internalism coherently, though the normative relevance of self-centrality retains an implicit bridge."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The distinction directly fits the cases, but the positive self-centrality criterion receives limited independent support."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary con bridge distinguishing central commitments from forceful desires."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply accurately narrows the objection while leaving open the deeper challenge to self-conception as a standard."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects proportionalism and proposes centrality to the agent's conception of self as the relevant dimension.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-self-conception-does-not-set-priority",
+      "sectionId": "desire-self-conception-and-practical-reason",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Centrality to self-conception does not determine rational priority in ordinary weakness-of-will cases, where judgment that one option is better explains what the agent should choose.",
+      "sourceSpan": {
+        "startEvent": 927,
+        "endEvent": 979
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained realist-side turn follows Huemer's announced response and develops his own marshmallow-test and irrational-self-conception objections.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-evaluative-facts-in-practical-reason"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-self-centrality-not-proportionalism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-self-conception-does-not-set-priority-component-01",
+            "targetMoveId": "con-self-centrality-not-proportionalism",
+            "text": "Whether centrality to self-conception determines normative priority in ordinary weakness-of-will cases.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contests the proposed ranking rule with ordinary cases in which an evaluative judgment appears to explain rational priority.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive self-centrality criterion, although the selected span does not fully answer refined endorsement accounts."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is limited to familiar weakness-of-will cases and clearly distinguishes judgment from self-conception."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The cases are presented as making the evaluative explanation look preferable, not as a conclusive universal refutation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A self-conception account may include reflective judgments about what kind of agent one aims to be.",
+        "decisiveQualification": "The described cases do not appear to require that richer identity structure to explain choosing the better option."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The counterexample structure is coherent, but moving from explanatory simplicity to independent evaluative facts remains partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The ordinary examples are pertinent but cannot alone exclude richer accounts of deliberative identity."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central pro issue by disputing whether self-conception can determine rational priority."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The reply addresses the criterion fairly but gives limited attention to a reflective, non-occurrent conception of identity."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes marshmallow and partying-student judgments in which one option is simply regarded as better.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-internal-reasons-alienation",
+      "sectionId": "desire-self-conception-and-practical-reason",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Practical reasons must connect with an agent's goals, values, desires, or deliberative perspective, since wholly disconnected demands would be alienating and lack practical purchase.",
+      "sourceSpan": {
+        "startEvent": 1287,
+        "endEvent": 1359
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn answers a request for theoretical explanation and develops the internal-reasons and alienation rationale associated with Lutz's stated position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-internal-practical-reasons"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-self-conception-does-not-set-priority",
+          "pro-preference-reversal-needs-evaluation"
+        ],
+        "components": [
+          {
+            "componentId": "con-internal-reasons-alienation-component-01",
+            "targetMoveId": "pro-self-conception-does-not-set-priority",
+            "text": "Why practical reasons require some connection to the agent rather than wholly external evaluative priority.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-internal-reasons-alienation-component-02",
+            "targetMoveId": "pro-preference-reversal-needs-evaluation",
+            "text": "Whether practical reasons can retain internal normative purchase without tracking motivational strength.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The alienation argument supplies the requested internalist rationale and distinguishes connection to deliberative perspective from mere desire intensity.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It answers the central explanatory demand, though it concedes that no exact analysis of the connection is supplied."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The connection requirement is clear, but 'purchase' and 'alienation' remain suggestive rather than fully analyzed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker expressly frames the claim as hard to understand and acknowledges lacking an exact analysis."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "External reasons can guide agents through recognition even when they do not derive from antecedent goals or values.",
+        "decisiveQualification": "The move challenges how a demand wholly disconnected from the deliberative perspective could function as a practical reason."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Alienation motivates a connection condition, but difficulty understanding external purchase does not by itself establish internalism."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The phenomenological rationale is relevant but largely asserted and lacks comparison with externalist accounts of recognition."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable con bridge requiring practical reasons to connect to the agent."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "It engages the externalist difficulty fairly, while leaving recognition-based normative purchase insufficiently explored."
+        }
+      },
+      "evidenceBasis": "The excerpt ties practical purchase to goals, values, and desires and labels wholly disconnected reasons alienating.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-moral-belief-organizes-desire",
+      "sectionId": "moral-judgment-emotion-and-motivation",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Abandoning belief in moral facts would make ordinary conduct more selfish because judgments about rightness, loyalty, and value help generate and organize practical desires.",
+      "sourceSpan": {
+        "startEvent": 1360,
+        "endEvent": 1411
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker contrasts Lutz's error-theoretic outlook with his own hypothetical loss of moral belief and describes realist-motivated conduct in the first person.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-moral-belief-and-motivation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-internal-reasons-alienation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-moral-belief-organizes-desire-component-01",
+            "targetMoveId": "con-internal-reasons-alienation",
+            "text": "Whether moral judgment can help constitute practical motivation rather than merely reflect antecedent desires.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply uses the speaker's projected conduct after losing moral belief to contest the assumption that motivating values are wholly antecedent.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "It contacts the motivational direction issue but only indirectly addresses the target's broader internal-reasons rationale."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is framed as a personal counterfactual about ordinary conduct rather than a universal psychological law."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move cautiously uses a first-person hypothetical and does not claim that moral belief always controls motivation."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The counterfactual coherently supports belief-to-desire influence, though introspective prediction cannot establish the general causal claim."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The concrete loyalty example is relevant but primarily anecdotal and lacks independent psychological support."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary pro bridge concerning moral belief and motivation."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move offers a first-person motivational counterexample without developing a distinct rival interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt says judgments of bad behavior and disloyalty explain why certain tempting actions are not wanted.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-moral-belief-projects-values",
+      "sectionId": "moral-judgment-emotion-and-motivation",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Moral beliefs commonly project antecedent values and emotions onto the world, so abandoning belief in objective morality need not remove the attitudes that motivate conduct.",
+      "sourceSpan": {
+        "startEvent": 1415,
+        "endEvent": 1505
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn begins by qualifying Huemer's practical-consequences claim and then presents the standard error-theoretic projective-illusion explanation in Lutz's voice.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-moral-belief-and-motivation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-moral-belief-organizes-desire"
+        ],
+        "components": [
+          {
+            "componentId": "con-moral-belief-projects-values-component-01",
+            "targetMoveId": "pro-moral-belief-organizes-desire",
+            "text": "Whether abandoning objective moral belief would remove the underlying attitudes that motivate ordinary conduct.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly proposes the reverse causal interpretation: moral beliefs project independently retained values and emotions onto the world.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive motivational claim, though its support is mostly general psychological characterization."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The projective thesis is clear, but claims about what commonly motivates people have only loosely specified scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker recognizes exceptions, but the broader population-level psychological generalization remains lightly supported."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some evaluative judgments may genuinely generate or reorganize desires rather than project prior attitudes.",
+        "decisiveQualification": "The reply allows unusual duty-driven agents while claiming they are not psychologically typical."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Projection would explain motivational continuity coherently, though the inference from atypical duty to the general mechanism is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The psychological and demographic claims rely substantially on assertion without representative evidence in the span."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly attacks the subsidiary pro bridge about moral belief independently organizing motivation."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "It acknowledges the strongest counterexample but supports the typicality claim only impressionistically."
+        }
+      },
+      "evidenceBasis": "The excerpt argues pure duty without supporting value or desire is unusual and overrepresented among moral philosophers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evaluative-judgment-guides-action",
+      "sectionId": "moral-judgment-emotion-and-motivation",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Evaluative judgment can guide action independently of emotional appeal, as when someone chooses the most cost-effective charity despite finding another charity more emotionally attractive.",
+      "sourceSpan": {
+        "startEvent": 1506,
+        "endEvent": 1570
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker offers two explicit counterpoints using effective altruism and moral indignation, positions consistent with Huemer's preceding realist argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-moral-belief-and-motivation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-moral-belief-projects-values"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evaluative-judgment-guides-action-component-01",
+            "targetMoveId": "con-moral-belief-projects-values",
+            "text": "Whether apparently moral motivation merely projects antecedent emotion rather than following evaluative judgment.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The cost-effective-charity example directly supplies a case where judgment and emotional attraction diverge and action follows judgment.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It explicitly contacts the proposed projective mechanism with a well-focused counterexample, though generalization remains limited."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is existential and the relevant contrast between emotional appeal, judgment, and action is clearly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "A single example appropriately supports the modest claim that evaluative judgment can sometimes guide action independently."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A stable higher-order passion for effectiveness could underlie the apparently dispassionate judgment.",
+        "decisiveQualification": "The immediate emotional attraction favors another charity while the articulated cost-effectiveness judgment controls action."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The divergence between emotional appeal and chosen action validly supports the limited possibility claim."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The example is specific and pertinent, but it remains self-report and does not establish a broad psychological pattern."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary pro bridge about evaluative judgment shaping conduct."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "The example pressures simple emotional projection but does not exclude every dispositional or higher-order passion account."
+        }
+      },
+      "evidenceBasis": "The excerpt describes choosing the most cost-effective charity even when a different charity is more emotionally appealing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-emotion-precedes-moral-judgment",
+      "sectionId": "moral-judgment-emotion-and-motivation",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Psychological evidence indicates that emotions generally drive moral judgments, while apparently dispassionate moral deliberation still depends on stable commitments or cold passions.",
+      "sourceSpan": {
+        "startEvent": 1571,
+        "endEvent": 1619
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly answers Huemer's psychological examples, cites the social-intuitionist model, and identifies the speaker's own error-theoretic life as largely unchanged.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-moral-belief-and-motivation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evaluative-judgment-guides-action",
+          "pro-moral-belief-organizes-desire"
+        ],
+        "components": [
+          {
+            "componentId": "con-emotion-precedes-moral-judgment-component-01",
+            "targetMoveId": "pro-evaluative-judgment-guides-action",
+            "text": "Whether psychological causation generally runs from evaluative judgment to emotion and action or primarily in reverse.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-emotion-precedes-moral-judgment-component-02",
+            "targetMoveId": "pro-moral-belief-organizes-desire",
+            "text": "Whether moral beliefs ordinarily generate the desires and attitudes that motivate conduct.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly invokes psychological research for emotion-first causation and uses stable commitments to reinterpret dispassionate examples.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts both causal claims and supplies a recognizable empirical model, though the evidence is summarized rather than demonstrated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is appropriately qualified as causation running primarily, rather than invariably, from emotion to judgment."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The probabilistic wording fits the thesis, but the cited research program is not detailed enough to settle competing causal models."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Judgment may sometimes guide action when immediate emotion points elsewhere, as in effective altruism.",
+        "decisiveQualification": "The reply can classify stable commitments or cold passions as motivational antecedents without requiring matching immediate affect."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The empirical model and cold-passion qualification coherently answer the examples, with one bounded causal bridge left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "A named psychological model supports the claim, but no study details, scope conditions, or rival evidence are supplied."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly attacks the subsidiary pro bridge concerning judgment-led motivation."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "It fairly accommodates the counterexample, though the cold-passion explanation is asserted more than independently established."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes the social-intuitionist model as evidence that emotions primarily drive moral judgments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-causal-role-of-perceptual-experience",
+      "sectionId": "appearances-explanation-and-moral-knowledge",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Ordinary perceptual experiences justify beliefs through background causal models linking those experiences to worldly objects, not through experience intrinsically carrying the proposition believed.",
+      "sourceSpan": {
+        "startEvent": 1831,
+        "endEvent": 1929
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly addresses Matt, and the ensuing first-person answer contrasts Matt's account with Mike's stated view.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-explanationist-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-defeasible-appearance-justification"
+        ],
+        "components": [
+          {
+            "componentId": "con-causal-role-of-perceptual-experience-component-01",
+            "targetMoveId": "pro-defeasible-appearance-justification",
+            "text": "Whether perceptual experience justifies through apparent propositional content or through a background causal model.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies intrinsic content-based justification and explains ordinary perception through causal background beliefs about objects and experiences.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It explicitly contacts the central justificatory mechanism and offers a developed alternative, though regress concerns remain."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The perceptual case, causal background condition, and contrast with propositional-content justification are sharply stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The account plausibly explains perceptual support but is asserted as what provides justification without addressing foundational regress."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Experience may justify both through representational content and through causal background information.",
+        "decisiveQualification": "The reply specifically claims the causal structure, not intrinsic propositional content alone, supplies the justification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The causal model explains ordinary perceptual support coherently, though the justification of its background beliefs remains unresolved."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The coffee-cup mechanism is specific and representative, but broader exclusivity and regress questions are not independently defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con bridge requiring causal or explanatory evidential relations."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "It addresses a strong content-first view but presents causal and content-based roles as more exclusive than the span establishes."
+        }
+      },
+      "evidenceBasis": "The excerpt says coffee-cup experience justifies through a general causal belief linking such experiences to cups.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-explanationism-presupposes-appearances",
+      "sectionId": "appearances-explanation-and-moral-knowledge",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Explanationism presupposes an initial entitlement to accept appearances because concepts, causal background beliefs, and judgments about the best explanation cannot otherwise get started.",
+      "sourceSpan": {
+        "startEvent": 1930,
+        "endEvent": 2007
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn follows Lutz's extended answer, uses Huemer's characteristic defense of experiential content, and directly develops the pro position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-explanationism-not-exclusive"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-role-of-perceptual-experience",
+          "con-explanationism-moral-knowledge"
+        ],
+        "components": [
+          {
+            "componentId": "pro-explanationism-presupposes-appearances-component-01",
+            "targetMoveId": "con-causal-role-of-perceptual-experience",
+            "text": "Whether causal background beliefs can justify experience without an antecedent entitlement to accept appearances.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-explanationism-presupposes-appearances-component-02",
+            "targetMoveId": "con-explanationism-moral-knowledge",
+            "text": "Whether best-explanation judgments can serve as the exclusive foundation of justified belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies a regress in causal background beliefs and best-explanation judgments, with the defeating consequence that explanationism cannot be epistemically exclusive.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly targets the decisive foundation of both explanationist moves and states why their exclusive demand cannot get started."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The regress challenge and its limited conclusion against explanationism as the sole source are both clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Given the exclusivity target, the demand for justified starting beliefs is proportionate and does not deny explanatory inference altogether."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A coherentist or reliabilist explanationist may avoid requiring foundational appearance-based entitlement.",
+        "decisiveQualification": "The stated con account appeals to accepted causal background beliefs and judgments of explanatory superiority whose warrant still requires an account."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The regress directly undermines explanatory exclusivity, with only the assumption that some initial entitlement must be appearance-based left bounded."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The argument closely tracks the con mechanism and identifies its presuppositions, though rival coherentist solutions receive limited comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro bridge that explanationism cannot be the exclusive source of justification."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The regress is fairly pressed against the stated account, although non-foundational explanationist alternatives remain possible."
+        }
+      },
+      "evidenceBasis": "The excerpt asks where causal concepts and background beliefs originate and argues that explanatory judgment begins from accepted seemings.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mathematical-seeming-concept-application",
+      "sectionId": "apriori-knowledge-concepts-and-objective-relations",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Mathematical confidence is evidence that a thinker is correctly applying interrelated concepts, rather than an intellectual appearance whose content directly supplies evidence for the mathematical proposition.",
+      "sourceSpan": {
+        "startEvent": 2200,
+        "endEvent": 2249
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Matt how explanationism handles mathematics, and the answer explicitly contrasts Lutz's conceptual account with propositional intellectual seeming.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-conceptual-learning-and-apriori-seeming"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-explanationism-presupposes-appearances"
+        ],
+        "components": [
+          {
+            "componentId": "con-mathematical-seeming-concept-application-component-01",
+            "targetMoveId": "pro-explanationism-presupposes-appearances",
+            "text": "Whether mathematical intellectual confidence supplies propositional evidence or indicates correct application of related concepts.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply applies a conceptual-learning account to a priori seeming, offering an alternative source of mathematical confidence but not resolving the general regress.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts a relevant apparent counterexample to explanationism, while only partially answering the target's foundational demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The mathematical domain, confidence state, and proposed concept-application interpretation are all clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Repeated 'I think' framing appropriately presents the conceptual account as a proposed interpretation rather than a demonstrated result."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mathematical seeming may present the truth of a proposition directly rather than merely monitor concept application.",
+        "decisiveQualification": "The reply interprets confidence as evidence about relations among learned concepts, not as intrinsic propositional warrant."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The conceptual interpretation is coherent, but the move does not fully bridge correct concept use to warranted mathematical truth."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The account is largely asserted and lacks examples or evidence distinguishing it from propositional-seeming alternatives."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary con bridge explaining a priori seeming through conceptual relations."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "It states a fair competing interpretation but offers limited grounds for preferring it over direct intellectual appearance."
+        }
+      },
+      "evidenceBasis": "The excerpt interprets mathematical confidence as indicating correct concept application and relations among concepts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-synthetic-apriori-color-incompatibility",
+      "sectionId": "apriori-knowledge-concepts-and-objective-relations",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "The necessary incompatibility of being wholly red and wholly blue is synthetic a priori because replacing its terms with synonyms does not reduce it to a logical truth.",
+      "sourceSpan": {
+        "startEvent": 2251,
+        "endEvent": 2289
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer answers Lutz's declared empiricism by presenting the red-blue case and related metaphysical examples as challenges for an analytic-only account.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-synthetic-apriori-cases"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-mathematical-seeming-concept-application"
+        ],
+        "components": [
+          {
+            "componentId": "pro-synthetic-apriori-color-incompatibility-component-01",
+            "targetMoveId": "con-mathematical-seeming-concept-application",
+            "text": "Whether all apparent a priori knowledge is exhausted by analytic or conceptual truth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The red-blue case directly challenges the conceptual account with an allegedly necessary but nonanalytic truth, though the nonanalyticity test needs fuller defense.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive conceptual-exhaustion claim with a focused counterexample, but its criterion remains contestable."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The incompatibility claim is clear, but the operative boundary between analytic and synthetic is only briefly introduced."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker repeatedly says the case appears synthetic a priori and begins rather than assumes an account of analyticity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Phenomenal color concepts may encode mutual exclusion even without synonym substitution reducing the statement to formal logic.",
+        "decisiveQualification": "The reply uses a narrower synonym-and-logic criterion for analyticity that the conceptualist may reasonably reject."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The example pressures narrow analyticity, but the inference to synthetic status depends on a disputed criterion."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The intuitive modal example is specific, though the synonym test alone does not exclude broader conceptual necessity."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary pro bridge concerning synthetic a priori cases."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The counterexample is serious, but its framing does not yet handle the strongest broad conceptual account."
+        }
+      },
+      "evidenceBasis": "The excerpt presents complete red-blue incompatibility as necessary and asks whether it can satisfy a synonym-based analytic test.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-color-incompatibility-broadly-analytic",
+      "sectionId": "apriori-knowledge-concepts-and-objective-relations",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "The impossibility of something being wholly red and wholly blue is analytic in a broad sense because mastery of the phenomenal color concepts reveals their inconsistency.",
+      "sourceSpan": {
+        "startEvent": 2290,
+        "endEvent": 2341
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lutz explicitly rejects the Fregean criterion Huemer invoked and develops his own concept-based treatment of the red-blue example.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-synthetic-apriori-cases"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-synthetic-apriori-color-incompatibility"
+        ],
+        "components": [
+          {
+            "componentId": "con-color-incompatibility-broadly-analytic-component-01",
+            "targetMoveId": "pro-synthetic-apriori-color-incompatibility",
+            "text": "Whether failure of synonym substitution establishes that complete red-blue incompatibility is synthetic rather than broadly analytic.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly rejects the narrow analytic criterion and explains the incompatibility through mastery of phenomenal concepts, defeating the stated inference to syntheticity if successful.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly diagnoses the criterion dispute and offers the relevant broad-analytic alternative, albeit tentatively."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The broad conceptual proposal is recoverable, but 'analytic in a broad sense' lacks a fully specified criterion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker candidly says the account is not fully worked out and advances it only as an obvious possible response."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Understanding phenomenal qualities may disclose objective natures rather than merely relations encoded in concepts.",
+        "decisiveQualification": "The immediate syntheticity inference fails unless broad conceptual mastery is first excluded."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The broad-analytic reply blocks the narrow inference coherently, but its positive account remains underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Concept mastery is a plausible explanation, yet the speaker expressly lacks a worked-out treatment and offers no discriminating support."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly attacks the subsidiary pro bridge based on synthetic a priori color incompatibility."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly identifies the live alternative and preserves its tentative status instead of claiming decisive proof."
+        }
+      },
+      "evidenceBasis": "The excerpt tentatively explains red-blue impossibility through phenomenal concept mastery while admitting limited development.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-objective-natures-ground-moral-apriori",
+      "sectionId": "apriori-knowledge-concepts-and-objective-relations",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "A priori knowledge comes from understanding objective natures rather than merely words or concepts, allowing understanding of suffering and badness to reveal that suffering is bad.",
+      "sourceSpan": {
+        "startEvent": 2410,
+        "endEvent": 2472
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer explicitly revisits Matt's red-blue explanation, contrasts positivist conceptualism with his own object-directed rationalism, and applies it to morality.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-apriori-objective-moral-relation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-color-incompatibility-broadly-analytic",
+          "con-mathematical-seeming-concept-application"
+        ],
+        "components": [
+          {
+            "componentId": "pro-objective-natures-ground-moral-apriori-component-01",
+            "targetMoveId": "con-color-incompatibility-broadly-analytic",
+            "text": "Whether red-blue incompatibility is known through concept mastery or understanding the objective natures of the qualities.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-objective-natures-ground-moral-apriori-component-02",
+            "targetMoveId": "con-mathematical-seeming-concept-application",
+            "text": "Whether a priori knowledge generally concerns only concepts rather than objective abstract natures and relations.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contrasts conceptualism with object-directed rational understanding and extends that account to the relation between suffering and badness.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts both conceptualist claims and supplies a unified alternative, though the moral extension is asserted compactly."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The object-directed thesis is clear, but 'nature' and the transition from qualities to moral relations remain only partly analyzed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The color account is plausibly stated, but its extension to suffering's badness needs a further anti-error bridge."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Apparent access to objective natures may instead reflect mastery of interrelated phenomenal and evaluative concepts.",
+        "decisiveQualification": "The reply argues that understanding concerns the qualities or abstract objects themselves, not merely words or concepts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The unified rationalist account is coherent, but the bridge from color natures to objective moral badness remains material."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The color analogy provides some support, yet the moral application lacks a defended warrant excluding conceptual projection."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pro bridge connecting a priori access to the objective badness of suffering."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "It states the deepest competing interpretation fairly, but does not independently discriminate object access from conceptual competence."
+        }
+      },
+      "evidenceBasis": "The excerpt locates a priori knowledge in understanding abstract objects' natures rather than meanings or concepts alone.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual eligibility requirements for the pro side.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence exists beyond the move judgments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contacts"
+        ],
+        "counterfactual": "Removing the proposed residual would not change burden completion independently."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual eligibility requirements for the con side.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence exists beyond the move judgments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contacts"
+        ],
+        "counterfactual": "Removing the proposed residual would not change burden completion independently."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
