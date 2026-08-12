@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-audio-verification-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-decomposed-consensus",
+  "status": "passed-both-production-checkpoint-v2.2-confidence-moves-audio-verified",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "passed": true,
+    "requiredMoves": 2,
+    "verified": 2,
+    "unresolved": 0,
+    "deterministicThresholdsApplied": true,
+    "measuredReferenceDurationContractApplied": true,
+    "knownSpeakerNamesApplied": true,
+    "locallySavedTranscripts": true
+  },
+  "costs": {
+    "paidDiarizationCallsAttempted": 2,
+    "paidDiarizationCallsCompleted": 2,
+    "retries": 0,
+    "estimatedProcessingExposureUsd": 0.0369,
+    "maximumAuthorizedCostUsd": 0.1,
+    "ChatGPTSubscriptionApplicable": false,
+    "meteredJudgmentModelApiCostUsd": 0
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "unchanged": true
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": true,
+    "audioFailureDiagnosis": false,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-production-checkpoint-v2.2-dispute-only-adjudication-packets"
+}

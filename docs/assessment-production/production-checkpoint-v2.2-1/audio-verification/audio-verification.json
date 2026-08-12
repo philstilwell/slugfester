@@ -1,0 +1,291 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-audio-verification-audit",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-decomposed-consensus",
+  "status": "passed-both-production-checkpoint-v2.2-confidence-moves-audio-verified",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "debates": [
+    {
+      "debateNumber": "25",
+      "debateId": "hitchens-ramadan-islam-peace-2010",
+      "moves": [
+        {
+          "debateNumber": "25",
+          "debateId": "hitchens-ramadan-islam-peace-2010",
+          "moveId": "con-internal-reform-resources",
+          "expectedSpeaker": "Tariq Ramadan",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Tariq Ramadan",
+          "clip": {
+            "path": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/clips/con-internal-reform-resources.mp3",
+            "sha256": "d77729003aa138aba59b261a7c5668a764c5b819fdf5755ac1838251890ac854",
+            "durationSeconds": 117.52
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/transcripts/con-internal-reform-resources.transcript.json",
+            "sha256": "d12a8555068a8fed0036d0d6178f32400d5093033eef0637b2758f1df29ac8ca",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Tariq Ramadan",
+            "fullClipExcerptRecall": 0.958904109589041,
+            "expectedSpeakerExcerptRecall": 0.958904109589041,
+            "highestOtherSpeaker": "B",
+            "highestOtherSpeakerExcerptRecall": 0.0821917808219178,
+            "expectedSpeakerRecallMargin": 0.8767123287671232,
+            "expectedSpeakerDurationSeconds": 102.85,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Tariq Ramadan",
+                "segmentCount": 10,
+                "durationSeconds": 102.85,
+                "wordCount": 291,
+                "excerptRecall": 0.958904109589041
+              },
+              {
+                "speaker": "B",
+                "segmentCount": 1,
+                "durationSeconds": 3.95,
+                "wordCount": 16,
+                "excerptRecall": 0.0821917808219178
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 0.65,
+                "wordCount": 4,
+                "excerptRecall": 0.0273972602739726
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "104",
+      "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+      "moves": [
+        {
+          "debateNumber": "104",
+          "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+          "moveId": "con-selection-for-reliable-investigation",
+          "expectedSpeaker": "Alex O'Connor",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Alex O'Connor",
+          "clip": {
+            "path": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/clips/con-selection-for-reliable-investigation.mp3",
+            "sha256": "9bc39458bddf311fb1bd3125e5bc6689479e08ccb703ccba4f3b3abff0f0ecb3",
+            "durationSeconds": 251.941
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/transcripts/con-selection-for-reliable-investigation.transcript.json",
+            "sha256": "be41fa5014153482c81a395f24141dfa3e5d0e814b049b78a1ba68c08a41bc6c",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Alex O'Connor",
+            "fullClipExcerptRecall": 0.9384615384615385,
+            "expectedSpeakerExcerptRecall": 0.8153846153846154,
+            "highestOtherSpeaker": "D",
+            "highestOtherSpeakerExcerptRecall": 0.6,
+            "expectedSpeakerRecallMargin": 0.2153846153846154,
+            "expectedSpeakerDurationSeconds": 209.2,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Alex O'Connor",
+                "segmentCount": 45,
+                "durationSeconds": 209.2,
+                "wordCount": 752,
+                "excerptRecall": 0.8153846153846154
+              },
+              {
+                "speaker": "D",
+                "segmentCount": 24,
+                "durationSeconds": 30.55,
+                "wordCount": 127,
+                "excerptRecall": 0.6
+              },
+              {
+                "speaker": "Max Baker-Hytch",
+                "segmentCount": 9,
+                "durationSeconds": 4.75,
+                "wordCount": 22,
+                "excerptRecall": 0.046153846153846156
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 5,
+                "durationSeconds": 1.7,
+                "wordCount": 17,
+                "excerptRecall": 0.03076923076923077
+              },
+              {
+                "speaker": "B",
+                "segmentCount": 1,
+                "durationSeconds": 0.2,
+                "wordCount": 1,
+                "excerptRecall": 0
+              },
+              {
+                "speaker": "C",
+                "segmentCount": 1,
+                "durationSeconds": 0.1,
+                "wordCount": 1,
+                "excerptRecall": 0
+              },
+              {
+                "speaker": "E",
+                "segmentCount": 1,
+                "durationSeconds": 0.1,
+                "wordCount": 2,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "acceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "25",
+        "speaker": "Christopher Hitchens",
+        "selectedMoveId": "pro-cartoon-rushdie-coercion",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1389,
+          "endEvent": 1498
+        },
+        "selectedMoveDurationSeconds": 261.52,
+        "startSeconds": 3713.96,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/references/christopher-hitchens.mp3",
+        "sha256": "506c1330c82cebda4e155011bf4a4d7bd2a941a29674f4be4e1f17e4bd030879"
+      },
+      {
+        "debateNumber": "25",
+        "speaker": "Tariq Ramadan",
+        "selectedMoveId": "con-mainstream-condemnation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1052,
+          "endEvent": 1205
+        },
+        "selectedMoveDurationSeconds": 385.08,
+        "startSeconds": 2900.22,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/references/tariq-ramadan.mp3",
+        "sha256": "ec07024d4810b07c0aa17cf854d5479c3f70e7c81d97115934722beb10385648"
+      },
+      {
+        "debateNumber": "104",
+        "speaker": "Max Baker-Hytch",
+        "selectedMoveId": "pro-comparative-probabilistic-framework",
+        "selectedMoveSourceSpan": {
+          "startEvent": 467,
+          "endEvent": 568
+        },
+        "selectedMoveDurationSeconds": 270.99,
+        "startSeconds": 1213.215,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/references/max-baker-hytch.mp3",
+        "sha256": "d2a3cbb210de9e7b24327c61e4c48cbb0bd9820a3f12e15e6883837aed940c78"
+      },
+      {
+        "debateNumber": "104",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-selection-for-reliable-investigation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1168,
+          "endEvent": 1278
+        },
+        "selectedMoveDurationSeconds": 246.941,
+        "startSeconds": 2869.189,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/references/alex-o-connor.mp3",
+        "sha256": "084241833703f360bc1bbb0f2400a191cd29e53d81a1ec2a7755802827eb624e"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 2,
+    "verified": 2,
+    "unresolved": 0,
+    "paidDiarizationCallsAttempted": 2,
+    "paidDiarizationCallsCompleted": 2,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 6.1577,
+    "estimatedProcessingExposureUsd": 0.0369,
+    "maximumAuthorizedCostUsd": 0.1,
+    "meteredJudgmentModelApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": true,
+    "audioFailureDiagnosis": false,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
