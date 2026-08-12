@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "4.2.21.16.2-score-blind-side-partitioned-selection-map-proposal",
+  "protocolId": "v4.2.21.16.2-side-partitioned-selection-map-contract",
+  "debateNumber": "129",
+  "debateId": "plantinga-law-eaan-rational-belief-2010",
+  "reviewerRole": "score-blind-inventory-curator",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-eaan-defeater-route",
+      "side": "pro",
+      "description": "Establish that naturalism combined with evolution makes the reliability of human cognitive faculties low or inscrutable, that recognizing this condition defeats trust in those faculties, and that the defeater extends to the beliefs supporting naturalism and evolution themselves.",
+      "successCriteria": "The route succeeds if the reliability premise is supported through the separation of adaptive behavior from true content, awareness of low or inscrutable reliability is shown to generate a faculty-wide defeater, and that defeater is shown to include belief in naturalism and evolution.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-faculty-trust-defeater",
+        "tier": "motion",
+        "description": "Connect the reliability concern to a defeater for trusting the cognitive faculties of a believer who accepts naturalism and evolution."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-selection-content-gap",
+          "tier": "central",
+          "description": "Show that selection for adaptive neurology and behavior does not by itself select for true belief content."
+        },
+        {
+          "bridgeId": "pro-central-low-reliability",
+          "tier": "central",
+          "description": "Derive low or inscrutable overall cognitive reliability from the alleged independence of adaptive success and belief truth."
+        },
+        {
+          "bridgeId": "pro-central-defeater-spread",
+          "tier": "central",
+          "description": "Explain why recognizing low or inscrutable reliability defeats confidence in faculty-produced beliefs, including the naturalistic evolutionary outlook."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-content-determination",
+          "tier": "subsidiary",
+          "description": "Distinguish the determination or supervenience of content from correspondence between that content and adaptive action."
+        },
+        {
+          "bridgeId": "pro-subsidiary-theistic-contrast",
+          "tier": "subsidiary",
+          "description": "Explain why the proposed reliability defeater is specific to naturalism rather than evolution alone, including the claimed theistic basis for expecting reliable faculties."
+        }
+      ]
+    },
+    {
+      "routeId": "con-reliability-defense-route",
+      "side": "con",
+      "description": "Resist the alleged defeater by explaining how conceptual and causal relations among belief, neurology, behavior, and environment permit unguided evolution to favor truth-conducive cognition, while challenging the claimed special skeptical disadvantage of naturalism.",
+      "successCriteria": "The route succeeds if adaptive selection is shown capable of favoring generally true beliefs, the inference to low or inscrutable reliability is thereby blocked, or the resulting skeptical problem is shown not to establish a distinctive defeater for naturalistic believers.",
+      "motionBridge": {
+        "bridgeId": "con-motion-no-required-defeater",
+        "tier": "motion",
+        "description": "Show that naturalism and evolution do not require their believers to acquire the alleged defeater for trusting their cognitive faculties."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-truth-fitness-link",
+          "tier": "central",
+          "description": "Explain how accurate beliefs about relevant environmental conditions can systematically support fitness-enhancing behavior."
+        },
+        {
+          "bridgeId": "con-central-content-constraints",
+          "tier": "central",
+          "description": "Show that causal, conceptual, and behavioral constraints prevent belief content from being freely detached from adaptive action."
+        },
+        {
+          "bridgeId": "con-central-skeptical-parity",
+          "tier": "central",
+          "description": "Test whether the proposed skeptical structure uniquely burdens naturalism by considering an analogous undercutting problem for theism."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-worldview-scope",
+          "tier": "subsidiary",
+          "description": "Clarify that atheism does not entail naturalism and therefore does not define the full population reached by the argument."
+        },
+        {
+          "bridgeId": "con-subsidiary-fallibilist-reliability",
+          "tier": "subsidiary",
+          "description": "Distinguish generally truth-conducive evolved cognition from any requirement that every evolved belief be true."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "selection-truth-connection",
+      "title": "Adaptive Selection and Truth-Conducive Cognition",
+      "weightPercent": 25,
+      "rationale": "The principal clash concerns whether fitness-enhancing behavior supplies an evolutionary route to generally accurate representation or remains indifferent to belief truth."
+    },
+    {
+      "sectionId": "mental-content-and-behavior",
+      "title": "Mental Content, Neurology, and Behavioral Constraints",
+      "weightPercent": 20,
+      "rationale": "The reliability premise depends on whether content can vary independently of adaptive neural output or is constrained by its causal and conceptual role in behavior."
+    },
+    {
+      "sectionId": "reliability-probability",
+      "title": "Probability of Reliable Cognitive Faculties",
+      "weightPercent": 20,
+      "rationale": "The debate requires an account of how claims about individual belief truth aggregate into a judgment that evolved cognitive faculties are reliable, unreliable, or inscrutable."
+    },
+    {
+      "sectionId": "defeater-and-self-reference",
+      "title": "Defeater Generation and Epistemic Self-Reference",
+      "weightPercent": 20,
+      "rationale": "Even if reliability is doubtful, the motion turns on whether awareness of that doubt defeats faculty trust and extends to the naturalistic evolutionary beliefs that produced it."
+    },
+    {
+      "sectionId": "worldview-scope-and-symmetry",
+      "title": "Worldview Scope and Theistic Symmetry",
+      "weightPercent": 15,
+      "rationale": "The scope and distinctiveness of the argument depend on how naturalism differs from atheism and whether a parallel faculty-undermining problem arises for the proposed theistic alternative."
+    }
+  ],
+  "candidateSelectionsBySide": {
+    "pro": {
+      "chunk-001:c001": null,
+      "chunk-001:c002": {
+        "sectionId": "reliability-probability",
+        "moveId": "pro-low-reliability-premise",
+        "moveKind": "constructive",
+        "proposition": "If naturalism and evolution are both true, the probability that human cognitive faculties are reliable is low."
+      },
+      "chunk-001:c003": {
+        "sectionId": "defeater-and-self-reference",
+        "moveId": "pro-faculty-wide-defeater",
+        "moveKind": "constructive",
+        "proposition": "Recognizing that naturalism and evolution make reliable cognitive faculties improbable defeats trust in those faculties and consequently undercuts every belief they produce, including naturalism and evolution."
+      },
+      "chunk-001:c004": {
+        "sectionId": "selection-truth-connection",
+        "moveId": "pro-selection-targets-adaptive-neurology",
+        "moveKind": "constructive",
+        "proposition": "Under materialist naturalism, evolution selects adaptive neurology and behavior rather than true belief content, leaving the truth of associated beliefs approximately a matter of chance."
+      },
+      "chunk-001:c005": {
+        "sectionId": "worldview-scope-and-symmetry",
+        "moveId": "pro-theistic-reliability-expectation",
+        "moveKind": "constructive",
+        "proposition": "Theism provides reason to expect generally reliable cognitive faculties because humans are created in God's image with capacities for knowledge, while naturalism supplies no comparable expectation."
+      },
+      "chunk-001:c006": {
+        "sectionId": "defeater-and-self-reference",
+        "moveId": "pro-rational-acceptance-distinction",
+        "moveKind": "constructive",
+        "proposition": "The evolutionary argument does not claim that naturalism and evolution are false or improbable; it claims that their conjunction cannot be rationally accepted."
+      },
+      "chunk-002:c002-01": {
+        "sectionId": "selection-truth-connection",
+        "moveId": "pro-adaptive-behavior-content-gap",
+        "moveKind": "reply",
+        "proposition": "Natural selection can favor neurological processes that produce adaptive behavior without favoring the truth of the belief content determined alongside those processes."
+      },
+      "chunk-002:c002-03": null,
+      "chunk-002:c002-05": {
+        "sectionId": "mental-content-and-behavior",
+        "moveId": "pro-supervenience-correspondence-distinction",
+        "moveKind": "reply",
+        "proposition": "Even if a neural structure determines one particular belief content by supervenience, that determination does not show that the content corresponds to the adaptive action the structure produces."
+      },
+      "chunk-002:c002-06": {
+        "sectionId": "reliability-probability",
+        "moveId": "pro-even-odds-compound-unreliability",
+        "moveKind": "reply",
+        "proposition": "If adaptive success is indifferent between true and false belief content, roughly even truth odds for each belief make a substantially reliable overall belief set extremely improbable."
+      },
+      "chunk-002:c002-08": null,
+      "chunk-002:c002-10": null,
+      "chunk-003:chunk-003-candidate-01": {
+        "sectionId": "worldview-scope-and-symmetry",
+        "moveId": "pro-evil-total-evidence-answer",
+        "moveKind": "reply",
+        "proposition": "Although suffering may count against Christian theism, it is only one consideration within a larger evidential picture and therefore does not amount to a faculty-delivered conclusion that God does not exist."
+      },
+      "chunk-003:chunk-003-candidate-02": null,
+      "chunk-003:chunk-003-candidate-05": {
+        "sectionId": "mental-content-and-behavior",
+        "moveId": "pro-no-warranted-neurology-truth-link",
+        "moveKind": "reply",
+        "proposition": "No adequate grounds have been supplied for assuming that neurology selected for adaptive behavior would also determine true belief content under materialism, naturalism, and evolution."
+      },
+      "chunk-003:chunk-003-candidate-06": null
+    },
+    "con": {
+      "chunk-001:c007": {
+        "sectionId": "selection-truth-connection",
+        "moveId": "con-selection-adaptive-true-belief",
+        "moveKind": "reply",
+        "proposition": "Natural selection can favor true-belief-producing mechanisms because organisms pursuing necessities such as water survive when their beliefs about those necessities' locations are accurate and fail when they are false."
+      },
+      "chunk-002:c002-02": {
+        "sectionId": "mental-content-and-behavior",
+        "moveId": "con-content-conceptual-constraints",
+        "moveKind": "reply",
+        "proposition": "Belief content cannot be assigned arbitrarily to neural structures because conceptual constraints connect a belief's content with the behavioral role of its associated neural state, making behavior-matching true content the plausible attribution."
+      },
+      "chunk-002:c002-04": {
+        "sectionId": "mental-content-and-behavior",
+        "moveId": "con-content-causal-association",
+        "moveKind": "reply",
+        "proposition": "The evolutionary truth-fitness connection does not require beliefs to be identical with neural structures, because beliefs' association with neural states and their causal effects on behavior constrain attributable content enough for selection to favor truth."
+      },
+      "chunk-002:c002-07": {
+        "sectionId": "worldview-scope-and-symmetry",
+        "moveId": "con-scope-atheism-not-naturalism",
+        "moveKind": "reply",
+        "proposition": "Atheism does not entail naturalism, since rejecting gods is compatible with accepting mathematical objects, nonnatural properties, aspects of conscious experience, or other realities beyond a wholly physical ontology."
+      },
+      "chunk-002:c002-09": {
+        "sectionId": "worldview-scope-and-symmetry",
+        "moveId": "con-theistic-skeptical-parity",
+        "moveKind": "reply",
+        "proposition": "Theism plus evolution can face a parallel skeptical problem when apparently reliable faculties reveal suffering that counts against the God supposed to guarantee those faculties, leaving theism in a skeptical position similar to naturalism."
+      },
+      "chunk-003:chunk-003-candidate-03": {
+        "sectionId": "reliability-probability",
+        "moveId": "con-reliability-evolution-favors-truth",
+        "moveKind": "reply",
+        "proposition": "The EAAN's reliability challenge is not insurmountable because a naturalist can explain why unguided evolution would tend to favor true beliefs, thereby resisting the inference that evolved cognitive faculties are probably unreliable or inscrutable."
+      },
+      "chunk-003:chunk-003-candidate-04": {
+        "sectionId": "defeater-and-self-reference",
+        "moveId": "con-defeater-theistic-undercutting",
+        "moveKind": "reply",
+        "proposition": "Even if naturalism results in global skepticism, theism gains no comparative epistemic advantage when faculties supposedly supplied by God yield strong grounds against that God and thereby undercut trust in the faculties themselves."
+      }
+    }
+  },
+  "audit": {
+    "completeCandidateEvidenceBundleReviewed": true,
+    "everySelectedCandidateUsedOnce": true,
+    "ratingsUnavailable": true,
+    "responseTopologyUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true
+  }
+}

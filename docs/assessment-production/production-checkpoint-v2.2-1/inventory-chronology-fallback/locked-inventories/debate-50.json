@@ -1,0 +1,713 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "50",
+  "debateId": "knechtle-dillahunty-christianity-true-2023",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "route-pro-christian-warrant",
+      "side": "pro",
+      "description": "Establish sufficient warrant for Christianity by defending appropriate historical and relational modes of inquiry, the credibility of the Gospel portrayal of Jesus, the resurrection inference, and Christianity's account of moral meaning and human value.",
+      "successCriteria": "The route succeeds if the cumulative case gives adequate reason to trust the central Christian claims, especially Jesus's identity and resurrection, while showing that documentary, scientific, moral, and rival-religion objections do not defeat that warrant.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-sufficient-warrant",
+        "tier": "motion",
+        "description": "Connect the defended evidence for Jesus and the resurrection, together with Christianity's explanatory claims, to sufficient warrant for Christian faith."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-method",
+          "tier": "central",
+          "description": "Justify using historical, documentary, and relational reasoning without treating scientific repeatability as the sole avenue to truth."
+        },
+        {
+          "bridgeId": "bridge-pro-central-gospels",
+          "tier": "central",
+          "description": "Establish that the Gospel sources preserve a sufficiently coherent and historically credible portrayal of Jesus."
+        },
+        {
+          "bridgeId": "bridge-pro-central-resurrection",
+          "tier": "central",
+          "description": "Show that the reported death, empty tomb, appearances, and witness transformation are better explained by resurrection than by relevant alternatives."
+        },
+        {
+          "bridgeId": "bridge-pro-central-moral-account",
+          "tier": "central",
+          "description": "Explain objective morality, human value, suffering, and human wrongdoing within a coherent Christian account."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-rival-tests",
+          "tier": "subsidiary",
+          "description": "Identify criteria intended to distinguish Christian claims from incompatible religious claims rather than validating them symmetrically."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-interpretation",
+          "tier": "subsidiary",
+          "description": "Distinguish Christianity's normative commitments from disputed interpretations, divine accommodation, and human misuse of scripture."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-insufficient-warrant",
+      "side": "con",
+      "description": "Show that Christianity has not met its burden because its verification methods do not reliably distinguish truth from fiction or rival religions, its sources do not establish their supernatural claims, and its accounts of morality and human value face viable secular alternatives and textual objections.",
+      "successCriteria": "The route succeeds if the proffered methods and evidence remain insufficient to establish the Gospel and resurrection claims, especially when tested against ordinary evidential standards, alternative explanations, internal disputes, and the distinction between transmission and truth.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-withhold-warrant",
+        "tier": "motion",
+        "description": "Connect the unresolved evidential and explanatory deficits to withholding affirmation that Christianity is true or sufficiently warranted."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-method",
+          "tier": "central",
+          "description": "Require truth-testing criteria that discriminate Christianity from incompatible religions, fiction, and unsupported supernatural explanations."
+        },
+        {
+          "bridgeId": "bridge-con-central-documents",
+          "tier": "central",
+          "description": "Separate textual preservation, consistency, and accurate background details from evidence that the Gospel claims correspond to reality."
+        },
+        {
+          "bridgeId": "bridge-con-central-resurrection",
+          "tier": "central",
+          "description": "Show that resurrection testimony and proposed historical facts do not justify a supernatural bodily-resurrection inference."
+        },
+        {
+          "bridgeId": "bridge-con-central-moral-adequacy",
+          "tier": "central",
+          "description": "Test claims about divine moral grounding and equal human value against secular accounts and morally difficult biblical provisions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-burden",
+          "tier": "subsidiary",
+          "description": "Maintain that identifying defects in an affirmative method does not require supplying a method that verifies supernatural claims."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-physical-claims",
+          "tier": "subsidiary",
+          "description": "Apply empirical scrutiny to asserted physical events even when those events are presented through historical or religious narratives."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-truth-method-and-burdens",
+      "title": "Truth-Testing Methods and Evidential Burdens",
+      "weightPercent": 20,
+      "rationale": "This issue governs what would count as sufficient warrant, whether Christianity can be distinguished from rival claims, and whether criticism of an offered method incurs a separate positive burden."
+    },
+    {
+      "sectionId": "section-gospel-reliability",
+      "title": "Gospel Preservation, Coherence, and Historical Reliability",
+      "weightPercent": 20,
+      "rationale": "The Gospel documents are the principal route to claims about Jesus, so the distinction between textual transmission, literary and archaeological indicators, narrative coherence, and factual truth is central."
+    },
+    {
+      "sectionId": "section-resurrection",
+      "title": "Resurrection Evidence and Alternative Explanations",
+      "weightPercent": 30,
+      "rationale": "The resurrection is presented as Christianity's decisive truth condition, making the death, burial, empty tomb, appearances, witnesses, narrative disagreements, and natural or supernatural explanations the largest issue."
+    },
+    {
+      "sectionId": "section-morality-value-and-meaning",
+      "title": "Objective Morality, Human Value, and Meaning",
+      "weightPercent": 15,
+      "rationale": "The motion expressly concerns moral meaning and human value, requiring comparison of the proposed divine grounding with secular sources of meaning and moral regard."
+    },
+    {
+      "sectionId": "section-scripture-evil-and-human-conduct",
+      "title": "Scriptural Morality, Creation, Evil, and Human Freedom",
+      "weightPercent": 15,
+      "rationale": "Claims about creation, gender, slavery, suffering, interpretation, accommodation, and free will test whether Christianity's texts and moral framework remain coherent with its account of divine goodness."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-human-value-divine-image",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "section-morality-value-and-meaning",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "constructive",
+      "proposition": "Human beings possess value because they are created in God's image, loved by God, and offered eternal life through Christ.",
+      "sourceSpan": {
+        "startEvent": 39,
+        "endEvent": 50
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains part of Cliffe's uninterrupted opening statement and is framed through his own expressly Christian explanation of human worth.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "mine is convinced that human beings are valuable. But why is the question? And Jesus Christ points out that we all are valuable because we're all created in the image and likeness of God for a purpose. We're all loved by God. And God considers us so valuable that he wants to give us eternal life. And that's exactly what Jesus Christ said is the way to eternal life. It's through",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 14,
+        "endToken": 84,
+        "weightedOverlap": 42,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 10,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-objective-morality-prior-mind",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "section-morality-value-and-meaning",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "constructive",
+      "proposition": "Objective good and evil require a mind prior to human minds that creates and defines moral value.",
+      "sourceSpan": {
+        "startEvent": 52,
+        "endEvent": 64
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening statement and Cliffe's repeated first-person framing clearly attribute this moral argument to him.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "due to the exercise of my conscience and due to the exercise of my atheist conscience is my atheist friends consciences that good is real and evil is real and the only way they can be real is if there is some type of mind prior to the human mind that creates and defines the values of good and evil. So Jesus Christ answers that basic human reality in a powerful way and then I go",
+        "characterCount": 380,
+        "tokenCount": 76,
+        "startToken": 25,
+        "endToken": 100,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-plural-forms-of-evidence",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "section-truth-method-and-burdens",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "constructive",
+      "proposition": "The resurrection claim should be evaluated through historical and relational evidence, together with logic and reason, rather than through scientific evidence alone.",
+      "sourceSpan": {
+        "startEvent": 77,
+        "endEvent": 111
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Cliffe presents this sustained evidential argument during his uninterrupted opening, with no speaker ambiguity in the delivered rows.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "the United States. Scientific evidence tells us nothing about whether Matt's wife really loves him or whether my life wife really loves me. There are different types of evidence. There's scientific evidence, but there's also historical evidence and there's also relational evidence. And you and I as thinking human beings must be open to philosophy and logic and reason. You and I",
+        "characterCount": 380,
+        "tokenCount": 62,
+        "startToken": 67,
+        "endToken": 128,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-discriminating-truth-test",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "section-truth-method-and-burdens",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "A method cannot establish Christianity as true if its consistent application equally verifies mutually incompatible religions.",
+      "sourceSpan": {
+        "startEvent": 197,
+        "endEvent": 225
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Matt the floor for his opening, and this methodological argument proceeds continuously in Matt's first-person presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "need to or any debate topic we should probably define terms. And I think I think I heard Cliff say truth is that which comports with reality in some version or another. So I think we're on the same page with regard to whether or not something should count as true. It's just seems to be how are we going to define the key elements of Christianity and how are we going to to verify that those things are actually true and if the criteria",
+        "characterCount": 436,
+        "tokenCount": 85,
+        "startToken": 22,
+        "endToken": 106,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-empirical-resurrection-deficit",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "section-resurrection",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Without empirical support for the claimed physical event, a resurrection cannot responsibly be affirmed, and ignorance of a natural explanation does not demonstrate a supernatural one.",
+      "sourceSpan": {
+        "startEvent": 267,
+        "endEvent": 336
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt develops this extended epistemic argument without interruption during his opening statement, making the speaker attribution unambiguous.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "demonstrate anything supernatural? As far as I can tell, we don't. There are plenty of claims that something is supernatural. And when you drill down, what you're getting is I I've experienced something or it has been reported to me that something occurred for which I am not aware of a natural explanation. Therefore, the explanation or the most plausible explanation is one that",
+        "characterCount": 380,
+        "tokenCount": 64,
+        "startToken": 261,
+        "endToken": 324,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-cumulative-history",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-003",
+      "sectionId": "section-resurrection",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "reply",
+      "proposition": "Jesus's reported death, known burial, postmortem appearances, transformed witnesses, and later conversions constitute a cumulative historical case for his resurrection.",
+      "sourceSpan": {
+        "startEvent": 997,
+        "endEvent": 1026
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Knechtle begins by expressly identifying the evidence for the resurrection and then gives a continuous catalogue of supporting claims.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "evidence for the resurrection is he really died. And a Roman soldier took a spear and jammed in the side. And an issue of watery serum flowed out separated from the side of Christ. We read in the gospel of John he was dead. They took his body off the cross. They anointed it with perfume, wrapped it in burial cloth and laid it in the tomb. Not a secret hideout tomb, a very well-known",
+        "characterCount": 385,
+        "tokenCount": 76,
+        "startToken": 2,
+        "endToken": 77,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-preservation-not-truth",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-005",
+      "sectionId": "section-gospel-reliability",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Even nearly perfect reconstruction and preservation of an original Gospel text would not establish that the claims written in that text correspond to reality.",
+      "sourceSpan": {
+        "startEvent": 1120,
+        "endEvent": 1135
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty explicitly discusses the absence of originals, comparison among surviving copies, reconstruction uncertainty, and the separate question of truth.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "they have more texts to compare to try to get back to determine what our oldest and best manuscripts are in comparison to what could have or likely was the original. But we don't know. But in any case, even if we were to assume that the version we have is almost identical or close enough to what it originally said, that in no way demonstrates the truth of those original claims",
+        "characterCount": 379,
+        "tokenCount": 72,
+        "startToken": 41,
+        "endToken": 112,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-gospels-cumulative-reliability",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-006",
+      "sectionId": "section-gospel-reliability",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "reply",
+      "proposition": "Literary form, manuscript preservation, archaeological corroboration, and internal consistency jointly support treating the Gospels as historically reliable.",
+      "sourceSpan": {
+        "startEvent": 1233,
+        "endEvent": 1270
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Knechtle explicitly enumerates four tests he applies to historical books and then applies each test to the New Testament Gospels.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "of the authors? No, there are no contradictions in the gospels. There's a tremendous internal harmony and consistency. That does not mean the Bible's a word of God. It doesn't mean anything other than these gospels of Matthew, Mark, Luke, and John are historically reliable. Simply read them as history and ask yourself, does the historical evidence point to Christ being credible",
+        "characterCount": 380,
+        "tokenCount": 62,
+        "startToken": 166,
+        "endToken": 227,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-four-tests-fiction-compatible",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-007",
+      "sectionId": "section-gospel-reliability",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Literary style, manuscript preservation, accurate place-names, and internal consistency cannot establish Gospel truth because fictional narratives can satisfy all four criteria.",
+      "sourceSpan": {
+        "startEvent": 1271,
+        "endEvent": 1426
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty systematically follows Knechtle's four stated criteria, tests each criterion, and concludes that the methodology is incapable of establishing truth.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "could support place names and the story is still not true. It's possible that the manuscripts could accurately reflect what the author said and the author is still not true. It is possible that the literary style could be misunderstood story-wise or accurate and the story is still not true. So the four criteria that you gave for determining the accuracy of a historical text are",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 930,
+        "endToken": 996,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-no-replacement-method-burden",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-008",
+      "sectionId": "section-truth-method-and-burdens",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Once an offered truth-testing method is shown defective, the critic need not supply a replacement or a method that confirms supernatural claims.",
+      "sourceSpan": {
+        "startEvent": 1450,
+        "endEvent": 1465
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty resumes after the moderator's intervention and directly explains why rebutting Knechtle's method creates no obligation to replace it.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "supernatural. Neither does anybody else. You presented your case for why you find these texts reliable. I exposed where the problem is. You don't then get to say, \"Well, have you got a better one?\" Because that suggests that you're willing to stick with a flawed methodology until somebody comes along with a better one. It's not my job or anybody else's job to fix the foundation of your beliefs",
+        "characterCount": 396,
+        "tokenCount": 70,
+        "startToken": 31,
+        "endToken": 100,
+        "weightedOverlap": 10,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-empty-tomb-appearances-insufficient",
+      "qualifiedCandidateId": "chunk-003:c003-01",
+      "sectionId": "section-resurrection",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "An empty tomb and reported appearances would not alone justify resurrection because late transmitted accounts can acquire embellished details without any conspiracy.",
+      "sourceSpan": {
+        "startEvent": 1789,
+        "endEvent": 1846
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the question to Matt, and the uninterrupted first-person answer continues until the next audience question begins.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "And so if in fact there were an empty tomb um that we knew is where Jesus had been buried and there were people who saw him after he was buried um I I would I would kind of need to to to hear what the specific accounts were. Um because the accounts if they were if they match up with what is in the gospels. Um, it sounds like a fanciful story written much after to explain events",
+        "characterCount": 380,
+        "tokenCount": 79,
+        "startToken": 90,
+        "endToken": 168,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-evidential-skepticism",
+      "qualifiedCandidateId": "chunk-003:c003-03",
+      "sectionId": "section-truth-method-and-burdens",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "reply",
+      "proposition": "Christian faith calls for evidence-seeking skepticism rather than blind credulity, while inquiry should examine competing accounts of meaning, ethics, and value.",
+      "sourceSpan": {
+        "startEvent": 2049,
+        "endEvent": 2076
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator expressly gives Cliffe the response, after which a continuous answer defines cynicism and skepticism until Matt begins his rebuttal.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Christ calls us to be skeptics. He does not call us to a blind faith. He calls us to a skeptical faith, but a faith that is not cynical and is overly committed to hypers skepticism. So, let's be skeptics. Let's ask hard questions. Let's study the evidence, but let's not be cynics. And a cynic also is someone who will just shred what you believe and then they won't tell you what",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 87,
+        "endToken": 159,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-secular-human-meaning",
+      "qualifiedCandidateId": "chunk-003:c003-05",
+      "sectionId": "section-morality-value-and-meaning",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Human beings can have reasons to regard people as meaningful and valuable without belief in God, while textual fidelity does not establish Christianity's truth.",
+      "sourceSpan": {
+        "startEvent": 2108,
+        "endEvent": 2156
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience prompt names Matt, and the ensuing extended answer explicitly discusses Cliffe's four points before ending at the moderator's transition.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "intent of the authors. Um but that's all irrelevant to whether to the subject of this debate which is is Christianity true? I mean at the beginning Cliff said it was all about meaning. We didn't really get to talk about that because the truth is that to whatever extent each of us thinks humans have meaning and value. I have my reasons and Cliff has his. Cliff's convinced that his reasons because we're made in the image of God",
+        "characterCount": 429,
+        "tokenCount": 80,
+        "startToken": 189,
+        "endToken": 268,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-compatible-gospel-perspectives",
+      "qualifiedCandidateId": "chunk-003:c003-07",
+      "sectionId": "section-gospel-reliability",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "reply",
+      "proposition": "Differing Gospel reports are not contradictory when they offer compatible but incomplete perspectives rather than mutually exclusive assertions.",
+      "sourceSpan": {
+        "startEvent": 2208,
+        "endEvent": 2223
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the alleged infancy contradiction is presented, Cliffe answers continuously with a two-witness collision analogy before Matt adds agreement.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "there's a collision. If you go to the police department and say, \"Officer, I saw the two cars coming down the street. I heard a screech of brakes and there was a collision.\" And I say, \"Officer, I saw the two cars coming down the street. I heard a woman scream and there was a collision.\" We are not contradicting each other. We are offering two equally valid perspectives on what",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 38,
+        "endToken": 108,
+        "weightedOverlap": 8,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-biblical-gender-inequality",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-03",
+      "sectionId": "section-scripture-evil-and-human-conduct",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Appeals to creation or divorce do not resolve biblical rules that treat men and women unequally in marriage, remarriage, inheritance, and valuation.",
+      "sourceSpan": {
+        "startEvent": 2694,
+        "endEvent": 2709
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly turns back to Knechtle's Matthew 19 answer and advances Dillahunty's previously stated critique of biblical inequality.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "at all about equality or the reason for equality. The rules for divorce from the Bible are different for men than they are for women and what what can happen afterwards, whether or not they're allowed to remarry and under what conditions are different. and to ignore all of the other areas where women and men are absolutely viewed as different with regard to their value. To just",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 27,
+        "endToken": 94,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-accommodation-and-creation-ideal",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-04",
+      "sectionId": "section-scripture-evil-and-human-conduct",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "reply",
+      "proposition": "Divorce, slavery, polygamy, and sexism reflect accommodation to human hardness rather than God's ideal of equal human value presented before the fall.",
+      "sourceSpan": {
+        "startEvent": 2718,
+        "endEvent": 2731
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Knechtle explicitly corrects the characterization of his prior argument and then restates his Genesis-and-fall distinction in a continuous turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "said was in Matthew 19, Jesus uses the phrase, \"This was permitted due to the hardness of your hearts.\" Which should show you that divorce is never God's best. Slavery is never God's best. Polygamy is never God's best. And sexism is never God's best. Because when you go back to prefall, Genesis 1 and 2, before the fall in Genesis 3, women and men are equal in value. But because",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 3,
+        "endToken": 73,
+        "weightedOverlap": 46,
+        "matchedAnchorTokens": 13,
+        "propositionOverlap": 10,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-free-will-human-evil",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-06",
+      "sectionId": "section-scripture-evil-and-human-conduct",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "reply",
+      "proposition": "God's creation of meaningful human freedom permits people to corrupt the good creation, so human atrocities are attributable to human misuse of freedom.",
+      "sourceSpan": {
+        "startEvent": 2785,
+        "endEvent": 2793
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator returns the audience's intervention question to Knechtle, who answers directly using his characteristic free-will defense.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "God has created us with a free will. God cannot do anything. He can't make square circles. He can't make 2 plus two equal 5. But he's all powerful over creation. And God created us with a free will, which means we can pervert his good creation. And we have done a incredibly effective job of perverting God's good creation",
+        "characterCount": 322,
+        "tokenCount": 60,
+        "startToken": 0,
+        "endToken": 59,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-exodus-regulates-slavery",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-08",
+      "sectionId": "section-scripture-evil-and-human-conduct",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Exodus prohibits kidnapping rather than slaveholding and, in the same chapter, regulates ownership, unequal release, and violent treatment of slaves.",
+      "sourceSpan": {
+        "startEvent": 2893,
+        "endEvent": 2909
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn immediately answers Knechtle's citation of Exodus 21:16 and uses the detailed textual critique consistently advanced by Dillahunty earlier.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "the exact same chapter that you're reading from goes through and legislates everything about slavery. How to how to have a different set of rules for Jewish slaves, how to trick people into remaining slaves, how that when the men go free, the women don't go free. More equality. the a prohibition against man stealing is not in any way a pro prohibition against slavery especially",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 12,
+        "endToken": 77,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-stolen-body-alternative",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-09",
+      "sectionId": "section-resurrection",
+      "side": "pro",
+      "speaker": "Cliffe Knechtle",
+      "moveKind": "reply",
+      "proposition": "The stolen-body hypothesis is implausible because the doubting disciples lacked a credible motive and Jesus's enemies could have produced the body to halt resurrection claims.",
+      "sourceSpan": {
+        "startEvent": 2942,
+        "endEvent": 2953
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question explicitly requests Knechtle's evidence, and the ensuing two-pronged historical argument is delivered as one uninterrupted answer.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "no condition to steal it. They were not true believers. They were not blind believers. They were Christ doubters, Christ deniers, Christ betrayers. So, it's obviously not the disciples who stole it. If the enemies of Christ stole it, then certainly they could have produced it when this resurrection myth occurred. No, nobody stole it. The evidence is he was dead and he rose from",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 8,
+        "endToken": 72,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

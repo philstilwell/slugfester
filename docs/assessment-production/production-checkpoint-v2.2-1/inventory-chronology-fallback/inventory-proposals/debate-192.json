@@ -1,0 +1,246 @@
+{
+  "schemaVersion": "4.2.21.16.2-score-blind-side-partitioned-selection-map-proposal",
+  "protocolId": "v4.2.21.16.2-side-partitioned-selection-map-contract",
+  "debateNumber": "192",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "reviewerRole": "score-blind-inventory-curator",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-chemical-remoteness",
+      "side": "pro",
+      "description": "Establish that meaningful proximity requires a chemically specified and experimentally credible account of producing, preserving, organizing, and integrating the components of first life, and that current work has not met that burden.",
+      "successCriteria": "The route succeeds if the unresolved requirements for molecular synthesis, stereochemistry, sequencing, assembly, and cellular organization outweigh appeals to abstract possibility, large opportunity spaces, elapsed time, or limited directional clues.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-remoteness",
+        "tier": "motion",
+        "description": "Show that current science lacks a sufficiently complete and credible chemical pathway to count as meaningfully close to explaining first life."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-required-chemistry",
+          "tier": "central",
+          "description": "Specify the multiple molecular classes and integrated organizational steps that an origin account must explain."
+        },
+        {
+          "bridgeId": "bridge-pro-possibility-versus-pathway",
+          "tier": "central",
+          "description": "Require probability and possibility claims to engage the cumulative chemistry of production, preservation, and assembly."
+        },
+        {
+          "bridgeId": "bridge-pro-progress-versus-target",
+          "tier": "central",
+          "description": "Determine whether experimental advances approach the explanatory target or whether growing knowledge of complexity makes that target more remote."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-time-and-decomposition",
+          "tier": "subsidiary",
+          "description": "Account for whether long timescales preserve useful intermediates or instead amplify decomposition and side reactions."
+        },
+        {
+          "bridgeId": "bridge-pro-life-organization",
+          "tier": "subsidiary",
+          "description": "Use unresolved features of cellular organization to clarify why possessing molecular components may not explain the transition to life."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-evidential-agnosticism",
+      "side": "con",
+      "description": "Establish that incomplete mechanistic understanding can coexist with limited scientific clues and a defensible agnostic position when the probability, opportunity space, recurrence, and recoverability of natural abiogenesis remain unresolved.",
+      "successCriteria": "The route succeeds if current evidence supplies some burden-relevant direction while leaving neither natural emergence nor alternatives demonstrated or excluded, so present remoteness does not warrant treating the scientific search as devoid of explanatory contact.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-limited-clues",
+        "tier": "motion",
+        "description": "Show that limited empirical or theoretical clues provide meaningful explanatory contact while still requiring agnosticism about a complete origin account."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-probability-opportunities",
+          "tier": "central",
+          "description": "Relate a finite natural-origin probability to the universe's unknown number of opportunities without claiming that either quantity is presently measurable."
+        },
+        {
+          "bridgeId": "bridge-con-clues-versus-completion",
+          "tier": "central",
+          "description": "Distinguish possessing limited directional clues from possessing a complete, demonstrated mechanism."
+        },
+        {
+          "bridgeId": "bridge-con-empirical-discriminators",
+          "tier": "central",
+          "description": "Identify observations, including demonstrably independent origins, that could materially change the assessment of natural abiogenesis."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-discontinuous-progress",
+          "tier": "subsidiary",
+          "description": "Allow for conceptual breakthroughs that could change the pace of progress despite prolonged present confusion."
+        },
+        {
+          "bridgeId": "bridge-con-scientific-recoverability",
+          "tier": "subsidiary",
+          "description": "Consider whether an extraordinarily rare and unrepeatable origin could remain partly inaccessible to scientific reconstruction."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-chemical-requirements",
+      "title": "Chemical Production, Preservation, and Cellular Assembly",
+      "weightPercent": 27,
+      "rationale": "This issue defines the principal explanatory burden by asking what molecular classes, reaction sequences, stability conditions, and organizational steps must be accounted for before first life has a credible chemical pathway."
+    },
+    {
+      "sectionId": "section-probability-and-opportunity",
+      "title": "Nonzero Probability and Cosmic Opportunity",
+      "weightPercent": 20,
+      "rationale": "This issue tests whether finite reaction probabilities and an immense opportunity space support agnosticism or remain too abstract without accounting for the many required synthesis and assembly steps."
+    },
+    {
+      "sectionId": "section-progress-and-distance",
+      "title": "Limited Clues and Distance from an Explanation",
+      "weightPercent": 23,
+      "rationale": "This issue addresses the motion's meaningfully-close standard by distinguishing partial directional knowledge from a complete account and by asking whether the explanatory target is approaching or receding."
+    },
+    {
+      "sectionId": "section-empirical-tests",
+      "title": "Independent Origins as an Empirical Test",
+      "weightPercent": 14,
+      "rationale": "This issue examines whether independently arisen extraterrestrial life would reveal that abiogenesis is naturally accessible, and whether recurrence alone would illuminate the underlying mechanism."
+    },
+    {
+      "sectionId": "section-time-breakthroughs-and-recoverability",
+      "title": "Timescales, Breakthroughs, and Scientific Recoverability",
+      "weightPercent": 16,
+      "rationale": "This issue brings together whether time aids or degrades prebiotic chemistry, whether progress may arrive discontinuously, and whether a singular rare event could be reconstructed by science at all."
+    }
+  ],
+  "candidateSelectionsBySide": {
+    "pro": {
+      "chunk-001:c001": null,
+      "chunk-001:c002": {
+        "sectionId": "section-chemical-requirements",
+        "moveId": "pro-chemical-feasibility-standard",
+        "moveKind": "constructive",
+        "proposition": "A natural origin of life cannot responsibly be called possible without chemically accounting for the production and assembly of all required molecular classes."
+      },
+      "chunk-001:c004": {
+        "sectionId": "section-probability-and-opportunity",
+        "moveId": "pro-probability-needs-pathway",
+        "moveKind": "reply",
+        "proposition": "Appealing to a nonzero probability and a vast universe is scientifically empty unless a scenario specifies the required molecules, their formation, their assembly, and cell formation."
+      },
+      "chunk-001:c005": null,
+      "chunk-001:c006": {
+        "sectionId": "section-chemical-requirements",
+        "moveId": "pro-four-classes-and-integration",
+        "moveKind": "constructive",
+        "proposition": "Life as known requires nucleic acids, lipids, amino acids, and carbohydrates, while their chemically correct production, sequencing, interactions, and integration into a cell remain unexplained."
+      },
+      "chunk-001:c008": {
+        "sectionId": "section-progress-and-distance",
+        "moveId": "pro-receding-explanatory-target",
+        "moveKind": "reply",
+        "proposition": "Scientific advances reveal ever greater cellular complexity, so the explanatory target for origin-of-life research is receding rather than drawing closer."
+      },
+      "chunk-001:c009": {
+        "sectionId": "section-time-breakthroughs-and-recoverability",
+        "moveId": "pro-time-promotes-decomposition",
+        "moveKind": "reply",
+        "proposition": "Long timescales hinder rather than rescue prebiotic synthesis because organic products decompose unless rapidly purified, stabilized, and advanced through subsequent reactions."
+      },
+      "chunk-002:chunk-002-candidate-01": {
+        "sectionId": "section-probability-and-opportunity",
+        "moveId": "pro-cumulative-unfavorable-steps",
+        "moveKind": "reply",
+        "proposition": "A nonzero overall probability does not overcome the many individually unfavorable chemical synthesis and assembly steps required for life."
+      },
+      "chunk-002:chunk-002-candidate-03": {
+        "sectionId": "section-empirical-tests",
+        "moveId": "pro-recurrence-without-mechanism",
+        "moveKind": "reply",
+        "proposition": "Finding independently arisen life elsewhere would establish recurrence but would not explain how first life formed or resolve the underlying chemical mechanism."
+      },
+      "chunk-002:chunk-002-candidate-06": {
+        "sectionId": "section-progress-and-distance",
+        "moveId": "pro-laboratory-work-not-pathway",
+        "moveKind": "reply",
+        "proposition": "Origin-of-life targets are moving farther away, and repeated multistep laboratory syntheses are not advancing toward a plausible prebiotic pathway."
+      },
+      "chunk-002:chunk-002-candidate-09": null,
+      "chunk-002:chunk-002-candidate-10": null
+    },
+    "con": {
+      "chunk-001:c003": {
+        "sectionId": "section-probability-and-opportunity",
+        "moveId": "con-probability-times-opportunity",
+        "moveKind": "reply",
+        "proposition": "An extremely small nonzero probability combined with the universe's unimaginably large and unknown number of opportunities leaves the probability of a natural origin scientifically indeterminate."
+      },
+      "chunk-001:c007": {
+        "sectionId": "section-progress-and-distance",
+        "moveId": "con-limited-clues-not-completion",
+        "moveKind": "reply",
+        "proposition": "Origin-of-life research possesses some limited directional clues while remaining nowhere near a complete explanation of life's origin."
+      },
+      "chunk-001:c010": {
+        "sectionId": "section-progress-and-distance",
+        "moveId": "con-humble-scientific-agnosticism",
+        "moveKind": "reply",
+        "proposition": "Scientific humility is warranted because no accurate origin account has been demonstrated, while both natural emergence and direct divine action remain compatible with the speaker's position."
+      },
+      "chunk-002:chunk-002-candidate-02": {
+        "sectionId": "section-empirical-tests",
+        "moveId": "con-independent-origin-falsifier",
+        "moveKind": "constructive",
+        "proposition": "Discovering life on a sufficiently distant exoplanet to exclude seeding from Earth would severely undermine the agnostic probability argument by demonstrating more than one origin."
+      },
+      "chunk-002:chunk-002-candidate-04": {
+        "sectionId": "section-empirical-tests",
+        "moveId": "con-prevalence-signals-accessibility",
+        "moveKind": "reply",
+        "proposition": "A universe teeming with independently arisen life would indicate that life is naturally easy to make, whereas present observations do not display that pattern."
+      },
+      "chunk-002:chunk-002-candidate-05": {
+        "sectionId": "section-time-breakthroughs-and-recoverability",
+        "moveId": "con-rare-origin-scientific-inaccessibility",
+        "moveKind": "reply",
+        "proposition": "Because life need arise only once before replication fills a world, its origin could be an extraordinarily rare singular event beyond the ability of human science to reconstruct."
+      },
+      "chunk-002:chunk-002-candidate-07": {
+        "sectionId": "section-time-breakthroughs-and-recoverability",
+        "moveId": "con-discontinuous-breakthrough-progress",
+        "moveKind": "reply",
+        "proposition": "Long periods of scientific confusion can be followed by rapid progress after deep insight or a paradigm shift, leaving open an analogous breakthrough in origin-of-life research."
+      },
+      "chunk-002:chunk-002-candidate-08": {
+        "sectionId": "section-chemical-requirements",
+        "moveId": "con-chemical-nonzero-possibility",
+        "moveKind": "reply",
+        "proposition": "Natural abiogenesis has a probability greater than zero because chemical reactions have finite nonzero probabilities and chemical reactions are sufficient in principle for life to arise."
+      }
+    }
+  },
+  "audit": {
+    "completeCandidateEvidenceBundleReviewed": true,
+    "everySelectedCandidateUsedOnce": true,
+    "ratingsUnavailable": true,
+    "responseTopologyUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true
+  }
+}

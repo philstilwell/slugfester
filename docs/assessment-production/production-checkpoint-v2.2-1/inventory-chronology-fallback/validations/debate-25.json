@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": true,
+  "stagingOnly": true,
+  "debateNumber": "25",
+  "inventoryPlanCanonicalSha256": "70606c2dff78bfcfa898648efb2e7e1b67ebe9cda712d1c437746e082fa71c04",
+  "sideSelectionSha256": {
+    "pro": "789f6f0cc89ffb654639c6d8664c151e9f9bd45cbd39364322a6d54cf7667b3a",
+    "con": "682a53b03998f027a7df9dffc57cffa563c427e32a268ba80fb3143d7c01af95"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c002",
+      "side": "pro",
+      "moveId": "pro-authenticity-arbiter-schism",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The source independently identifies disputed authority and intrareligious schism as obstacles to treating one peaceful interpretation as dispositive, even without a retained opposing move.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": true,
+  "stagingOnly": true,
+  "debateNumber": "129",
+  "inventoryPlanCanonicalSha256": "599101f2ce32ecbb8eb7536aa86320bf90a94b92b6dd72787785e5599ef8a1cb",
+  "sideSelectionSha256": {
+    "pro": "33be8e6172b346ef22e7214f785d5b6e38b93ad4ab65bc41b5f6f516f2eca157",
+    "con": "5133da11ac0fa2db86878f3713714084bae04cdaa8ac4eeb0a8e4fb290a5dead"
+  },
+  "sections": 5,
+  "moves": 17,
+  "proMoves": 10,
+  "conMoves": 7,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c005",
+      "side": "pro",
+      "moveId": "pro-theistic-reliability-expectation",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Even without an earlier retained opposing move, the stated contrast independently explains why Plantinga expects faculty reliability on theism but not on naturalism.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c006",
+      "side": "pro",
+      "moveId": "pro-rational-acceptance-distinction",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The distinction between falsity and rational acceptability independently clarifies the precise epistemic conclusion Plantinga draws from the alleged self-defeat.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 2,
+  "nominatedCandidates": 17,
+  "retainedCandidates": 17,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

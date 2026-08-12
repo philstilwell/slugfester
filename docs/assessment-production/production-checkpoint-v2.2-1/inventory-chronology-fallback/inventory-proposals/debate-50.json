@@ -1,0 +1,291 @@
+{
+  "schemaVersion": "4.2.21.16.2-score-blind-side-partitioned-selection-map-proposal",
+  "protocolId": "v4.2.21.16.2-side-partitioned-selection-map-contract",
+  "debateNumber": "50",
+  "debateId": "knechtle-dillahunty-christianity-true-2023",
+  "reviewerRole": "score-blind-inventory-curator",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-christian-warrant",
+      "side": "pro",
+      "description": "Establish sufficient warrant for Christianity by defending appropriate historical and relational modes of inquiry, the credibility of the Gospel portrayal of Jesus, the resurrection inference, and Christianity's account of moral meaning and human value.",
+      "successCriteria": "The route succeeds if the cumulative case gives adequate reason to trust the central Christian claims, especially Jesus's identity and resurrection, while showing that documentary, scientific, moral, and rival-religion objections do not defeat that warrant.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-sufficient-warrant",
+        "tier": "motion",
+        "description": "Connect the defended evidence for Jesus and the resurrection, together with Christianity's explanatory claims, to sufficient warrant for Christian faith."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-method",
+          "tier": "central",
+          "description": "Justify using historical, documentary, and relational reasoning without treating scientific repeatability as the sole avenue to truth."
+        },
+        {
+          "bridgeId": "bridge-pro-central-gospels",
+          "tier": "central",
+          "description": "Establish that the Gospel sources preserve a sufficiently coherent and historically credible portrayal of Jesus."
+        },
+        {
+          "bridgeId": "bridge-pro-central-resurrection",
+          "tier": "central",
+          "description": "Show that the reported death, empty tomb, appearances, and witness transformation are better explained by resurrection than by relevant alternatives."
+        },
+        {
+          "bridgeId": "bridge-pro-central-moral-account",
+          "tier": "central",
+          "description": "Explain objective morality, human value, suffering, and human wrongdoing within a coherent Christian account."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-rival-tests",
+          "tier": "subsidiary",
+          "description": "Identify criteria intended to distinguish Christian claims from incompatible religious claims rather than validating them symmetrically."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-interpretation",
+          "tier": "subsidiary",
+          "description": "Distinguish Christianity's normative commitments from disputed interpretations, divine accommodation, and human misuse of scripture."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-insufficient-warrant",
+      "side": "con",
+      "description": "Show that Christianity has not met its burden because its verification methods do not reliably distinguish truth from fiction or rival religions, its sources do not establish their supernatural claims, and its accounts of morality and human value face viable secular alternatives and textual objections.",
+      "successCriteria": "The route succeeds if the proffered methods and evidence remain insufficient to establish the Gospel and resurrection claims, especially when tested against ordinary evidential standards, alternative explanations, internal disputes, and the distinction between transmission and truth.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-withhold-warrant",
+        "tier": "motion",
+        "description": "Connect the unresolved evidential and explanatory deficits to withholding affirmation that Christianity is true or sufficiently warranted."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-method",
+          "tier": "central",
+          "description": "Require truth-testing criteria that discriminate Christianity from incompatible religions, fiction, and unsupported supernatural explanations."
+        },
+        {
+          "bridgeId": "bridge-con-central-documents",
+          "tier": "central",
+          "description": "Separate textual preservation, consistency, and accurate background details from evidence that the Gospel claims correspond to reality."
+        },
+        {
+          "bridgeId": "bridge-con-central-resurrection",
+          "tier": "central",
+          "description": "Show that resurrection testimony and proposed historical facts do not justify a supernatural bodily-resurrection inference."
+        },
+        {
+          "bridgeId": "bridge-con-central-moral-adequacy",
+          "tier": "central",
+          "description": "Test claims about divine moral grounding and equal human value against secular accounts and morally difficult biblical provisions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-burden",
+          "tier": "subsidiary",
+          "description": "Maintain that identifying defects in an affirmative method does not require supplying a method that verifies supernatural claims."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-physical-claims",
+          "tier": "subsidiary",
+          "description": "Apply empirical scrutiny to asserted physical events even when those events are presented through historical or religious narratives."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-truth-method-and-burdens",
+      "title": "Truth-Testing Methods and Evidential Burdens",
+      "weightPercent": 20,
+      "rationale": "This issue governs what would count as sufficient warrant, whether Christianity can be distinguished from rival claims, and whether criticism of an offered method incurs a separate positive burden."
+    },
+    {
+      "sectionId": "section-gospel-reliability",
+      "title": "Gospel Preservation, Coherence, and Historical Reliability",
+      "weightPercent": 20,
+      "rationale": "The Gospel documents are the principal route to claims about Jesus, so the distinction between textual transmission, literary and archaeological indicators, narrative coherence, and factual truth is central."
+    },
+    {
+      "sectionId": "section-resurrection",
+      "title": "Resurrection Evidence and Alternative Explanations",
+      "weightPercent": 30,
+      "rationale": "The resurrection is presented as Christianity's decisive truth condition, making the death, burial, empty tomb, appearances, witnesses, narrative disagreements, and natural or supernatural explanations the largest issue."
+    },
+    {
+      "sectionId": "section-morality-value-and-meaning",
+      "title": "Objective Morality, Human Value, and Meaning",
+      "weightPercent": 15,
+      "rationale": "The motion expressly concerns moral meaning and human value, requiring comparison of the proposed divine grounding with secular sources of meaning and moral regard."
+    },
+    {
+      "sectionId": "section-scripture-evil-and-human-conduct",
+      "title": "Scriptural Morality, Creation, Evil, and Human Freedom",
+      "weightPercent": 15,
+      "rationale": "Claims about creation, gender, slavery, suffering, interpretation, accommodation, and free will test whether Christianity's texts and moral framework remain coherent with its account of divine goodness."
+    }
+  ],
+  "candidateSelectionsBySide": {
+    "pro": {
+      "chunk-001:c001": null,
+      "chunk-001:c002": {
+        "sectionId": "section-morality-value-and-meaning",
+        "moveId": "pro-human-value-divine-image",
+        "moveKind": "constructive",
+        "proposition": "Human beings possess value because they are created in God's image, loved by God, and offered eternal life through Christ."
+      },
+      "chunk-001:c003": {
+        "sectionId": "section-morality-value-and-meaning",
+        "moveId": "pro-objective-morality-prior-mind",
+        "moveKind": "constructive",
+        "proposition": "Objective good and evil require a mind prior to human minds that creates and defines moral value."
+      },
+      "chunk-001:c004": {
+        "sectionId": "section-truth-method-and-burdens",
+        "moveId": "pro-plural-forms-of-evidence",
+        "moveKind": "constructive",
+        "proposition": "The resurrection claim should be evaluated through historical and relational evidence, together with logic and reason, rather than through scientific evidence alone."
+      },
+      "chunk-001:c010": null,
+      "chunk-002:chunk-002-candidate-002": null,
+      "chunk-002:chunk-002-candidate-003": {
+        "sectionId": "section-resurrection",
+        "moveId": "pro-resurrection-cumulative-history",
+        "moveKind": "reply",
+        "proposition": "Jesus's reported death, known burial, postmortem appearances, transformed witnesses, and later conversions constitute a cumulative historical case for his resurrection."
+      },
+      "chunk-002:chunk-002-candidate-006": {
+        "sectionId": "section-gospel-reliability",
+        "moveId": "pro-gospels-cumulative-reliability",
+        "moveKind": "reply",
+        "proposition": "Literary form, manuscript preservation, archaeological corroboration, and internal consistency jointly support treating the Gospels as historically reliable."
+      },
+      "chunk-002:chunk-002-candidate-009": null,
+      "chunk-003:c003-02": null,
+      "chunk-003:c003-03": {
+        "sectionId": "section-truth-method-and-burdens",
+        "moveId": "pro-evidential-skepticism",
+        "moveKind": "reply",
+        "proposition": "Christian faith calls for evidence-seeking skepticism rather than blind credulity, while inquiry should examine competing accounts of meaning, ethics, and value."
+      },
+      "chunk-003:c003-06": null,
+      "chunk-003:c003-07": {
+        "sectionId": "section-gospel-reliability",
+        "moveId": "pro-compatible-gospel-perspectives",
+        "moveKind": "reply",
+        "proposition": "Differing Gospel reports are not contradictory when they offer compatible but incomplete perspectives rather than mutually exclusive assertions."
+      },
+      "chunk-003:c003-08": null,
+      "chunk-004:chunk-004-candidate-02": null,
+      "chunk-004:chunk-004-candidate-04": {
+        "sectionId": "section-scripture-evil-and-human-conduct",
+        "moveId": "pro-accommodation-and-creation-ideal",
+        "moveKind": "reply",
+        "proposition": "Divorce, slavery, polygamy, and sexism reflect accommodation to human hardness rather than God's ideal of equal human value presented before the fall."
+      },
+      "chunk-004:chunk-004-candidate-05": null,
+      "chunk-004:chunk-004-candidate-06": {
+        "sectionId": "section-scripture-evil-and-human-conduct",
+        "moveId": "pro-free-will-human-evil",
+        "moveKind": "reply",
+        "proposition": "God's creation of meaningful human freedom permits people to corrupt the good creation, so human atrocities are attributable to human misuse of freedom."
+      },
+      "chunk-004:chunk-004-candidate-07": null,
+      "chunk-004:chunk-004-candidate-09": {
+        "sectionId": "section-resurrection",
+        "moveId": "pro-stolen-body-alternative",
+        "moveKind": "reply",
+        "proposition": "The stolen-body hypothesis is implausible because the doubting disciples lacked a credible motive and Jesus's enemies could have produced the body to halt resurrection claims."
+      },
+      "chunk-004:chunk-004-candidate-10": null
+    },
+    "con": {
+      "chunk-001:c005": {
+        "sectionId": "section-truth-method-and-burdens",
+        "moveId": "con-discriminating-truth-test",
+        "moveKind": "reply",
+        "proposition": "A method cannot establish Christianity as true if its consistent application equally verifies mutually incompatible religions."
+      },
+      "chunk-001:c006": null,
+      "chunk-001:c007": {
+        "sectionId": "section-resurrection",
+        "moveId": "con-empirical-resurrection-deficit",
+        "moveKind": "reply",
+        "proposition": "Without empirical support for the claimed physical event, a resurrection cannot responsibly be affirmed, and ignorance of a natural explanation does not demonstrate a supernatural one."
+      },
+      "chunk-001:c008": null,
+      "chunk-001:c009": null,
+      "chunk-002:chunk-002-candidate-001": null,
+      "chunk-002:chunk-002-candidate-004": null,
+      "chunk-002:chunk-002-candidate-005": {
+        "sectionId": "section-gospel-reliability",
+        "moveId": "con-preservation-not-truth",
+        "moveKind": "reply",
+        "proposition": "Even nearly perfect reconstruction and preservation of an original Gospel text would not establish that the claims written in that text correspond to reality."
+      },
+      "chunk-002:chunk-002-candidate-007": {
+        "sectionId": "section-gospel-reliability",
+        "moveId": "con-four-tests-fiction-compatible",
+        "moveKind": "reply",
+        "proposition": "Literary style, manuscript preservation, accurate place-names, and internal consistency cannot establish Gospel truth because fictional narratives can satisfy all four criteria."
+      },
+      "chunk-002:chunk-002-candidate-008": {
+        "sectionId": "section-truth-method-and-burdens",
+        "moveId": "con-no-replacement-method-burden",
+        "moveKind": "reply",
+        "proposition": "Once an offered truth-testing method is shown defective, the critic need not supply a replacement or a method that confirms supernatural claims."
+      },
+      "chunk-002:chunk-002-candidate-010": null,
+      "chunk-003:c003-01": {
+        "sectionId": "section-resurrection",
+        "moveId": "con-empty-tomb-appearances-insufficient",
+        "moveKind": "reply",
+        "proposition": "An empty tomb and reported appearances would not alone justify resurrection because late transmitted accounts can acquire embellished details without any conspiracy."
+      },
+      "chunk-003:c003-04": null,
+      "chunk-003:c003-05": {
+        "sectionId": "section-morality-value-and-meaning",
+        "moveId": "con-secular-human-meaning",
+        "moveKind": "reply",
+        "proposition": "Human beings can have reasons to regard people as meaningful and valuable without belief in God, while textual fidelity does not establish Christianity's truth."
+      },
+      "chunk-003:c003-09": null,
+      "chunk-003:c003-10": null,
+      "chunk-004:chunk-004-candidate-01": null,
+      "chunk-004:chunk-004-candidate-03": {
+        "sectionId": "section-scripture-evil-and-human-conduct",
+        "moveId": "con-biblical-gender-inequality",
+        "moveKind": "reply",
+        "proposition": "Appeals to creation or divorce do not resolve biblical rules that treat men and women unequally in marriage, remarriage, inheritance, and valuation."
+      },
+      "chunk-004:chunk-004-candidate-08": {
+        "sectionId": "section-scripture-evil-and-human-conduct",
+        "moveId": "con-exodus-regulates-slavery",
+        "moveKind": "reply",
+        "proposition": "Exodus prohibits kidnapping rather than slaveholding and, in the same chapter, regulates ownership, unequal release, and violent treatment of slaves."
+      }
+    }
+  },
+  "audit": {
+    "completeCandidateEvidenceBundleReviewed": true,
+    "everySelectedCandidateUsedOnce": true,
+    "ratingsUnavailable": true,
+    "responseTopologyUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true
+  }
+}

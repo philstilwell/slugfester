@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": true,
+  "stagingOnly": true,
+  "debateNumber": "10",
+  "inventoryPlanCanonicalSha256": "0b3b8fee359dae62a9e40f7c68b78e7a84a3d69ce6882b96b11980bc0c56bd26",
+  "sideSelectionSha256": {
+    "pro": "eb9e964ad0fe07a29914826c234e4bdebb2e22e2add99b69547af4c4b339267a",
+    "con": "ef678961912c09a4c3df585f5cdf5c6246597f6c57685c5a489fa9ed04c8aaf7"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-04",
+      "side": "pro",
+      "moveId": "pro-wellbeing-definition-circularity",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Even without an earlier retained opposing move, the passage supplies a self-contained objection that definitional identity cannot establish objective normativity.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-06",
+      "side": "pro",
+      "moveId": "pro-free-will-responsibility-objection",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The passage can independently advance an agency-based grounding objection by arguing that obligation presupposes the ability and control required for responsibility.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 2,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

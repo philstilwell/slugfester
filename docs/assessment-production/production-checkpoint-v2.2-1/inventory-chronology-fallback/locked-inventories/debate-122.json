@@ -1,0 +1,683 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "122",
+  "debateId": "horn-oconnor-god-existence-2020",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-cumulative-classical-theism",
+      "side": "pro",
+      "description": "Establish classical theism through convergent arguments from contingent existence, change and causal finitude, then identify the necessary ground as personal, knowledgeable, powerful, and good while defending this conclusion against objections from quantum randomness, freedom, and suffering.",
+      "successCriteria": "The route succeeds if contingent and changing reality requires a necessary explanatory cause, the cause has attributes sufficient for the motion-level identification with God, moral facts reinforce divine goodness, and evil and quantum indeterminacy do not defeat those inferences.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-divine-identification",
+        "tier": "motion",
+        "description": "Connect the necessary explanatory cause and its derived personal, cognitive, powerful, and good attributes to the conclusion that God exists."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-necessary-ground",
+          "tier": "central",
+          "description": "Show that contingent reality, change, and any finite causal history require an uncaused, purely actual, necessarily existing explanatory ground."
+        },
+        {
+          "bridgeId": "pro-central-divine-attributes",
+          "tier": "central",
+          "description": "Derive timelessness, immateriality, power, personality, and knowledge from the nature and explanatory role of the first cause."
+        },
+        {
+          "bridgeId": "pro-central-moral-ground",
+          "tier": "central",
+          "description": "Show that objective moral facts, human worth, and responsibility require or support a perfectly good divine foundation."
+        },
+        {
+          "bridgeId": "pro-central-defeater-response",
+          "tier": "central",
+          "description": "Show that suffering can be permitted for greater goods or prevention of greater evils and therefore does not contradict or outweigh the case for God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-limited-psr",
+          "tier": "subsidiary",
+          "description": "Defend an existence-focused principle of sufficient reason that remains applicable even if particular quantum outcomes are probabilistic."
+        },
+        {
+          "bridgeId": "pro-subsidiary-agency-and-intentionality",
+          "tier": "subsidiary",
+          "description": "Defend agent causation and irreducible intentionality as support for free responsibility and personal explanation."
+        }
+      ]
+    },
+    {
+      "routeId": "con-agnostic-undercutting-case",
+      "side": "con",
+      "description": "Withhold theistic belief by challenging the premises and divine identification of the affirmative causal case, disputing its moral and free-will commitments, and presenting apparently gratuitous animal suffering as evidence that fits a loving, perfectly good God less well than a non-theistic world.",
+      "successCriteria": "The route succeeds if sufficient reason and the first-cause inferences remain unsupported or internally costly, moral considerations do not establish God, and the quantity or character of suffering supplies an unresolved evidential reason against the proposed divine attributes.",
+      "motionBridge": {
+        "bridgeId": "con-motion-theism-not-established",
+        "tier": "motion",
+        "description": "Connect the underdetermination of the affirmative arguments and the evidence from apparently gratuitous suffering to agnostic nonacceptance of theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-psr-challenge",
+          "tier": "central",
+          "description": "Show that sufficient reason risks assuming an ultimate terminus, conflicts with quantum indeterminacy, or permits an unexplained cosmic event when narrowed."
+        },
+        {
+          "bridgeId": "con-central-divine-identification-gap",
+          "tier": "central",
+          "description": "Show that causal or explanatory reasoning does not adequately establish a personal divine agent rather than another ultimate foundation."
+        },
+        {
+          "bridgeId": "con-central-moral-freedom-challenge",
+          "tier": "central",
+          "description": "Challenge objective ought-claims, divine moral grounding, and the compatibility of sufficient explanation with libertarian responsibility."
+        },
+        {
+          "bridgeId": "con-central-gratuitous-suffering",
+          "tier": "central",
+          "description": "Show that apparently unnecessary animal suffering and the possibility of less evil are improbable under a loving and perfectly good creator."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-heaven-dilemma",
+          "tier": "subsidiary",
+          "description": "Use freedom without earthly suffering in heaven to test whether grave evil is necessary for free agency, virtue, or perfected relationship."
+        },
+        {
+          "bridgeId": "con-subsidiary-epistemic-standard",
+          "tier": "subsidiary",
+          "description": "Require independent truth-directed support beyond internal coherence and resist appeals to inaccessible divine reasons that presuppose the disputed deity."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "contingency-causation",
+      "title": "Contingency, Change, and the Necessary Ground",
+      "weightPercent": 24,
+      "rationale": "This issue contains the foundational affirmative inferences from contingent existence, actualization, and causal finitude, together with the objection that sufficient explanation assumes rather than establishes an ultimate terminus."
+    },
+    {
+      "sectionId": "psr-quantum-randomness",
+      "title": "Sufficient Reason and Quantum Randomness",
+      "weightPercent": 18,
+      "rationale": "This issue tests whether quantum indeterminacy defeats the explanatory principle, whether probabilistic causes remain sufficient, and whether narrowing the principle preserves or undercuts the inference from the universe to a necessary being."
+    },
+    {
+      "sectionId": "divine-attributes-personal-explanation",
+      "title": "Divine Attributes and Personal Explanation",
+      "weightPercent": 16,
+      "rationale": "This issue governs the indispensable transition from a generic cause or necessary foundation to a timeless, immaterial, powerful, knowledgeable, and personal being recognizable as God."
+    },
+    {
+      "sectionId": "morality-freedom-responsibility",
+      "title": "Morality, Freedom, and Responsibility",
+      "weightPercent": 17,
+      "rationale": "This issue addresses whether objective value, human worth, obligation, and responsibility support divine grounding, as well as whether metaethical skepticism or explanatory determinism blocks that route."
+    },
+    {
+      "sectionId": "evil-animal-suffering",
+      "title": "Evil, Animal Suffering, and Greater-Good Defenses",
+      "weightPercent": 25,
+      "rationale": "This issue contains the principal affirmative evidence against a loving and perfectly good God and the principal theistic replies involving greater goods, regular natural order, worthwhile existence, human epistemic limits, and heavenly freedom."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-contingent-reality-external-explanation",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "contingency-causation",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Contingent things cannot receive their ultimate explanation from another contingent thing or from the whole collection of contingent things, so contingent reality requires an explanation beyond the universe.",
+      "sourceSpan": {
+        "startEvent": 153,
+        "endEvent": 204
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Trent the opening statement, and Trent presents this numbered argument continuously in the first person.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "to ask that question if a blowtorrch were hitting his scalp and his hair remained unburned. Both cases presuppose that things which exist must have reasons for why they exist and they don't exist for no reason at all. But the explanation for the contingent things we observe cannot be another contingent thing. So it must be something beyond the universe or the entire collection",
+        "characterCount": 379,
+        "tokenCount": 65,
+        "startToken": 260,
+        "endToken": 324,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-change-requires-pure-actualizer",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "contingency-causation",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Because derivative actualizers cannot explain the actuality of the entire series, change requires a first actualizer that is pure actuality and is not itself actualized.",
+      "sourceSpan": {
+        "startEvent": 227,
+        "endEvent": 256
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening statement and explicit transition to the property of change firmly identify Trent as the source.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "actualizers only change because something else actualized their potential for change. Could an infinite series explain this kind of change? No. Just as an infinitely long train of box cars would sit motionless without a locomotive, an infinite number of things that must be actualized by something else would be changeless unless there was a cause of the series that is just pure actuality",
+        "characterCount": 389,
+        "tokenCount": 64,
+        "startToken": 82,
+        "endToken": 145,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-first-cause-metaphysical-attributes",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "divine-attributes-personal-explanation",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "A purely actual first cause must be changeless, timeless, immaterial, unlimited in power, and necessarily existent rather than a changing material constituent of the universe.",
+      "sourceSpan": {
+        "startEvent": 330,
+        "endEvent": 388
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Trent proceeds through numbered questions three through seven, explicitly deriving each attribute of the previously inferred cause.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "of the universe is changeless, it follows that it must be timeless as well. Number five, is this cause material? No, for two reasons. First, we know the cause is changeless and matter is always changing, at least on the atomic and subatomic levels. Second, if the cause is timeless, then it must also be spaceless or immaterial because to be in space is to be in time. Even if the",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 93,
+        "endToken": 163,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-personal-all-knowing-cause",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "sectionId": "divine-attributes-personal-explanation",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "The universe's cause is personal and all-knowing because abstract entities lack causal efficacy, creation from nothing calls for agent explanation, and necessary truths require a necessarily existing mind.",
+      "sourceSpan": {
+        "startEvent": 389,
+        "endEvent": 446
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Trent labels this his eighth question and enumerates five considerations for a personal cause in one continuous presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "abstract objects like numbers, mathematical truths, and propositions. But these entities only exist in the mind. And so, if these objects have necessary existence, then they must reside in a necessarily existing mind that is explanatorily prior to them. Moreover, if this mind has no potentiality, then its knowledge of these truths could not be limited, and so it must be all knowing. Four, many atheists say they believe in God",
+        "characterCount": 429,
+        "tokenCount": 71,
+        "startToken": 233,
+        "endToken": 303,
+        "weightedOverlap": 42,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-moral-realism-divine-source",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "morality-freedom-responsibility",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Objective moral facts support God's existence because discovered moral truths require an objective foundation, and the first cause is supremely good as their divine source.",
+      "sourceSpan": {
+        "startEvent": 447,
+        "endEvent": 523
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Trent introduces the moral dimension as his final numbered question and explicitly states and defends a moral-realism syllogism.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "cause is also morally good because it is the source of objective morality or what I call moral facts. Alex said in his debate with Frank Turk that if objective morality or moral facts existed, then this would be a compelling argument for God. So, we can make an argument like this. If moral realism is true, then God exists. Moral realism is true, therefore God exists. Moral realism is the view that human beings discover moral truths",
+        "characterCount": 435,
+        "tokenCount": 78,
+        "startToken": 185,
+        "endToken": 262,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-animal-suffering-evidential-case",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "evil-animal-suffering",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Apparently gratuitous animal suffering is more expected under naturalism and seriously undermines belief in a loving and just God.",
+      "sourceSpan": {
+        "startEvent": 623,
+        "endEvent": 807
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the opening statement to Alex, who expressly identifies animal suffering as his affirmative case and develops it continuously.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "in those ignoble torture chambers we call factory farms, but consider a deer whose leg is trapped under a fallen branch and starving to death in in not just fear and agony, but also confusion. Is this a part of the suffering that's necessary to obtain whatever God has morally sufficient reason to desire? Could that deer have not have died 5 minutes earlier? Could its hunger not",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 792,
+        "endToken": 859,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-heaven-free-will-counterexample",
+      "qualifiedCandidateId": "chunk-001:c010",
+      "sectionId": "evil-animal-suffering",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "If heaven contains free will without suffering, it provides a counterexample to the claim that genuine freedom requires permitting grave suffering.",
+      "sourceSpan": {
+        "startEvent": 808,
+        "endEvent": 860
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex explicitly turns to the standard free-will defense, poses his heaven objection to Trent, and completes it in the delivered lookahead.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Is there free will in heaven? I would assume so. Unless you think heaven is some kind of moral matrix in which we all robotically tend towards the good without freedom. But a second question, do people in heaven have free reign to inflict suffering in the same way they do on earth? I would assume not, unless you want to suggest that it's logically possible for someone to commit",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 174,
+        "endToken": 243,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-psr-free-will-tension",
+      "qualifiedCandidateId": "chunk-002:c002-01",
+      "sectionId": "morality-freedom-responsibility",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Requiring a sufficient explanation for every particular thought produces a deterministic explanatory chain that threatens libertarian freedom and moral responsibility.",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 952
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening-statement turn and direct first-person framing identify Alex O'Connor as the speaker.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "if the principle of sufficient reason is true, then it would apply to every thought that exists in the human mind. Anytime you think something, there is an explanation not just for why you thought something, but why you had that particular thought and not another one. But okay, maybe the explanation is internal. Maybe me having thought X is explained by the fact that I wanted to",
+        "characterCount": 381,
+        "tokenCount": 68,
+        "startToken": 283,
+        "endToken": 350,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-quantum-randomness-psr-challenge",
+      "qualifiedCandidateId": "chunk-002:c002-02",
+      "sectionId": "psr-quantum-randomness",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Genuinely random quantum outcomes conflict with an unrestricted principle of sufficient reason, while explanation-preserving nonlocal interpretations carry scientific and causal costs.",
+      "sourceSpan": {
+        "startEvent": 953,
+        "endEvent": 1021
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The argument remains within Alex O'Connor's uninterrupted opening statement and closes when the moderator announces rebuttals.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "principle of sufficient reason entails that there's no such thing as a random event. Okay, a random event by definition occurs without an explanation for why it occurred in the way that it did. And so if there is randomness in the universe, then it's false that everything which occurs has a fully sufficient explanation for its existence in the way that it exists. Uh famously, quantum",
+        "characterCount": 386,
+        "tokenCount": 67,
+        "startToken": 105,
+        "endToken": 171,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-probabilistic-quantum-causes",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "psr-quantum-randomness",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Quantum randomness does not refute sufficient reason because quantum events can have probabilistic causes, exhibit experimentally usable regularity, and admit interpretations with deterministic hidden causes.",
+      "sourceSpan": {
+        "startEvent": 1050,
+        "endEvent": 1067
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Trent Horn the rebuttal turn, which continues without any speaker transition across this window.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "of sufficient reason, randomness doesn't violate the principle of sufficient reason. Uh quantum events have probabilistic causes rather than determinant ones. For example, if quantum mechanics did not act in accord with the principle of sufficient reason, then scientists scientists could never perform experiments with regularity to make the very conclusions that Alex brought up",
+        "characterCount": 380,
+        "tokenCount": 55,
+        "startToken": 6,
+        "endToken": 60,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-agent-causation-responsibility",
+      "qualifiedCandidateId": "chunk-002:c002-05",
+      "sectionId": "morality-freedom-responsibility",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Human persons can originate rational choices, and the reality of moral responsibility supports free will even if its mechanism is not yet completely explained.",
+      "sourceSpan": {
+        "startEvent": 1117,
+        "endEvent": 1147
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous rebuttal turn, first-person commitments, and explicit reference to Alex's challenge clearly attribute the move to Trent Horn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "human beings can't be their own cause for their events by making a rational choice and that if God exists, he can be capable of allowing them to be able to do that. But here's the thing. Even if we can't fully explain how free will works, we know it does work. In the same way an atheist can say consciousness emerges from matter, even if he can't say how at this moment. And plus, my argument from moral responsibility",
+        "characterCount": 419,
+        "tokenCount": 80,
+        "startToken": 97,
+        "endToken": 176,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-natural-evil-greater-goods",
+      "qualifiedCandidateId": "chunk-002:c002-06",
+      "sectionId": "evil-animal-suffering",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "God may permit pain, death, and other privations within a finite physical order when they enable greater goods or prevent greater evils, so natural suffering need not be gratuitous.",
+      "sourceSpan": {
+        "startEvent": 1148,
+        "endEvent": 1187
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This argument is delivered during Trent Horn's uninterrupted rebuttal and uses explicit Christian and theistic framing in the first person.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "going on to evil. Uh Christians do not claim natural evils like tsunamis are good things. Rather, we would say the pain and death that they inflict are privations of goodness. But since God is infinite in power and knowledge, he can allow these privations to exist in order to create greater goods or prevent greater evils. I what could those reasons be? Well, any finite physical",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 0,
+        "endToken": 66,
+        "weightedOverlap": 50,
+        "matchedAnchorTokens": 13,
+        "propositionOverlap": 12,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-animal-life-worth-suffering",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "evil-animal-suffering",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Animal life can remain worth having despite substantial pain, so permitting animals to continue existing need not be incompatible with divine goodness merely because their lives include suffering.",
+      "sourceSpan": {
+        "startEvent": 1190,
+        "endEvent": 1220
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's time notice is followed by Trent Horn continuing his rebuttal and directly addressing Alex's animal-suffering argument.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "only nonhuman animal life left on the earth and I said to him Alex here's an anti-atter device that will instantly destroy the earth instantly the animals just flap out of exist phase out of existence uh should we do that or should we let these animals continue existing. If you say that they should continue existing even though there will be a lot of pain and suffering for those",
+        "characterCount": 381,
+        "tokenCount": 71,
+        "startToken": 91,
+        "endToken": 161,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-statistics-particular-outcome-gap",
+      "qualifiedCandidateId": "chunk-002:c002-08",
+      "sectionId": "psr-quantum-randomness",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "A statistical distribution does not explain each particular quantum outcome, while interpretations preserving sufficient reason sacrifice locality and threaten ordinary causation.",
+      "sourceSpan": {
+        "startEvent": 1248,
+        "endEvent": 1315
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Alex O'Connor's first rebuttal immediately before this uninterrupted response to Trent Horn's quantum claims.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "hidden variable may maybe that's maybe that's the problem as you say there are multiple interpretations of quantum mechanics but the point that I would have raised or was trying to raise before I ran out of time was that the interpretations of quantum mechanics in which you're allowed to keep the principle of sufficient reason mean you have to give up uh you have to give up locality",
+        "characterCount": 385,
+        "tokenCount": 69,
+        "startToken": 178,
+        "endToken": 246,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-existence-focused-limited-psr",
+      "qualifiedCandidateId": "chunk-002:c002-09",
+      "sectionId": "psr-quantum-randomness",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "A limited principle requiring reasons for why things exist, rather than determining explanations for every event, survives quantum indeterminacy and still supports the inference from contingent reality to a necessary being.",
+      "sourceSpan": {
+        "startEvent": 1481,
+        "endEvent": 1512
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator starts Trent Horn's second rebuttal, and the continuous first-person defense explicitly identifies the principle he previously advanced.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "a merit of the debrogley bomb version to bring this non-locality out so explicitly that it can't be ignored. So he actually praised this interpretation of quantum mechanics. But as I said, if you have a limited version of PSR where I'm talking about the reason a thing exists rather than a particular event takes place, then my argument from contingency to a necessary being still",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 148,
+        "endToken": 214,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-moral-ought-not-truth-apt",
+      "qualifiedCandidateId": "chunk-003:c003-05",
+      "sectionId": "morality-freedom-responsibility",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Objective moral ought-claims lack truth value even if God exists because prescriptions function as commands rather than descriptive propositions.",
+      "sourceSpan": {
+        "startEvent": 2142,
+        "endEvent": 2178
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn answers Trent's moral-realism question in the first person, and subsequent questions identify the respondent's view as non-cognitivist or emotivist.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "claims can be objectively true. Um, and I think I would hold that that would be the case even if God existed. So, I'm not sure I can accept that claim. And I can explain why if you'd like. Okay. So, you believe moral realism is simply an impossible state of affairs? Depending on exactly what you mean by moral realism. For instance, I think that a claim like you ought not murder doesn't have truth value",
+        "characterCount": 405,
+        "tokenCount": 77,
+        "startToken": 25,
+        "endToken": 101,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-psr-terminus-question-begging",
+      "qualifiedCandidateId": "chunk-003:c003-10",
+      "sectionId": "contingency-causation",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "The principle of sufficient reason risks begging the question when a sufficient explanatory chain is assumed in advance to terminate in an ultimate brute foundation.",
+      "sourceSpan": {
+        "startEvent": 2405,
+        "endEvent": 2484
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex begins a new cross-examination topic, develops an analogy with instrumental actualization, and explicitly identifies his resulting objection to the principle.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "reason, that is a reason that's all-encompassing and and explains everything, that to me would imply that you would need to have all of the instrumental um e explanations and the base root explanation, be it whatever brute fact you think it goes back to, which to me makes it seem like the the argument for the principle of sufficient reason is begging the question because to say",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 423,
+        "endToken": 491,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-personal-scientific-explanation-gap",
+      "qualifiedCandidateId": "chunk-004:c004-01",
+      "sectionId": "divine-attributes-personal-explanation",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Personal explanations involving intentions are not fundamentally distinct from scientific explanations when the relevant wants and mental activity may themselves be scientifically explicable.",
+      "sourceSpan": {
+        "startEvent": 2507,
+        "endEvent": 2526
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly challenges Trent's preceding distinction and uses first-person examples characteristic of Alex's stated naturalistic position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "a false one. You make a distinction between scientific and personal explanations like boiling the kettle. say why do you boil the kettle? Well, there's the explanation involving chemistry and the the explanation involving um what I want. But me wanting a particular type of drink or something is also scientifically explicable, right? By like like that that is all I don't see why",
+        "characterCount": 380,
+        "tokenCount": 64,
+        "startToken": 22,
+        "endToken": 85,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
