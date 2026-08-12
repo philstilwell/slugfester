@@ -1,0 +1,1616 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "129",
+  "debateId": "plantinga-law-eaan-rational-belief-2010",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-eaan-defeater-route",
+      "side": "pro",
+      "description": "Establish that naturalism combined with evolution makes the reliability of human cognitive faculties low or inscrutable, that recognizing this condition defeats trust in those faculties, and that the defeater extends to the beliefs supporting naturalism and evolution themselves.",
+      "successCriteria": "The route succeeds if the reliability premise is supported through the separation of adaptive behavior from true content, awareness of low or inscrutable reliability is shown to generate a faculty-wide defeater, and that defeater is shown to include belief in naturalism and evolution.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-faculty-trust-defeater",
+        "tier": "motion",
+        "description": "Connect the reliability concern to a defeater for trusting the cognitive faculties of a believer who accepts naturalism and evolution."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-selection-content-gap",
+          "tier": "central",
+          "description": "Show that selection for adaptive neurology and behavior does not by itself select for true belief content."
+        },
+        {
+          "bridgeId": "pro-central-low-reliability",
+          "tier": "central",
+          "description": "Derive low or inscrutable overall cognitive reliability from the alleged independence of adaptive success and belief truth."
+        },
+        {
+          "bridgeId": "pro-central-defeater-spread",
+          "tier": "central",
+          "description": "Explain why recognizing low or inscrutable reliability defeats confidence in faculty-produced beliefs, including the naturalistic evolutionary outlook."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-content-determination",
+          "tier": "subsidiary",
+          "description": "Distinguish the determination or supervenience of content from correspondence between that content and adaptive action."
+        },
+        {
+          "bridgeId": "pro-subsidiary-theistic-contrast",
+          "tier": "subsidiary",
+          "description": "Explain why the proposed reliability defeater is specific to naturalism rather than evolution alone, including the claimed theistic basis for expecting reliable faculties."
+        }
+      ]
+    },
+    {
+      "routeId": "con-reliability-defense-route",
+      "side": "con",
+      "description": "Resist the alleged defeater by explaining how conceptual and causal relations among belief, neurology, behavior, and environment permit unguided evolution to favor truth-conducive cognition, while challenging the claimed special skeptical disadvantage of naturalism.",
+      "successCriteria": "The route succeeds if adaptive selection is shown capable of favoring generally true beliefs, the inference to low or inscrutable reliability is thereby blocked, or the resulting skeptical problem is shown not to establish a distinctive defeater for naturalistic believers.",
+      "motionBridge": {
+        "bridgeId": "con-motion-no-required-defeater",
+        "tier": "motion",
+        "description": "Show that naturalism and evolution do not require their believers to acquire the alleged defeater for trusting their cognitive faculties."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-truth-fitness-link",
+          "tier": "central",
+          "description": "Explain how accurate beliefs about relevant environmental conditions can systematically support fitness-enhancing behavior."
+        },
+        {
+          "bridgeId": "con-central-content-constraints",
+          "tier": "central",
+          "description": "Show that causal, conceptual, and behavioral constraints prevent belief content from being freely detached from adaptive action."
+        },
+        {
+          "bridgeId": "con-central-skeptical-parity",
+          "tier": "central",
+          "description": "Test whether the proposed skeptical structure uniquely burdens naturalism by considering an analogous undercutting problem for theism."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-worldview-scope",
+          "tier": "subsidiary",
+          "description": "Clarify that atheism does not entail naturalism and therefore does not define the full population reached by the argument."
+        },
+        {
+          "bridgeId": "con-subsidiary-fallibilist-reliability",
+          "tier": "subsidiary",
+          "description": "Distinguish generally truth-conducive evolved cognition from any requirement that every evolved belief be true."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "selection-truth-connection",
+      "title": "Adaptive Selection and Truth-Conducive Cognition",
+      "weightPercent": 25,
+      "rationale": "The principal clash concerns whether fitness-enhancing behavior supplies an evolutionary route to generally accurate representation or remains indifferent to belief truth."
+    },
+    {
+      "sectionId": "mental-content-and-behavior",
+      "title": "Mental Content, Neurology, and Behavioral Constraints",
+      "weightPercent": 20,
+      "rationale": "The reliability premise depends on whether content can vary independently of adaptive neural output or is constrained by its causal and conceptual role in behavior."
+    },
+    {
+      "sectionId": "reliability-probability",
+      "title": "Probability of Reliable Cognitive Faculties",
+      "weightPercent": 20,
+      "rationale": "The debate requires an account of how claims about individual belief truth aggregate into a judgment that evolved cognitive faculties are reliable, unreliable, or inscrutable."
+    },
+    {
+      "sectionId": "defeater-and-self-reference",
+      "title": "Defeater Generation and Epistemic Self-Reference",
+      "weightPercent": 20,
+      "rationale": "Even if reliability is doubtful, the motion turns on whether awareness of that doubt defeats faculty trust and extends to the naturalistic evolutionary beliefs that produced it."
+    },
+    {
+      "sectionId": "worldview-scope-and-symmetry",
+      "title": "Worldview Scope and Theistic Symmetry",
+      "weightPercent": 15,
+      "rationale": "The scope and distinctiveness of the argument depend on how naturalism differs from atheism and whether a parallel faculty-undermining problem arises for the proposed theistic alternative."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-low-reliability-premise",
+      "sectionId": "reliability-probability",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "constructive",
+      "proposition": "If naturalism and evolution are both true, the probability that human cognitive faculties are reliable is low.",
+      "sourceSpan": {
+        "startEvent": 482,
+        "endEvent": 495
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Plantinga explicitly announces the beginning of his argument and labels this probability claim as its first premise.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-low-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move states the indispensable low-reliability premise but does not yet supply its supporting selection-to-content argument.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within constructive moves, it clearly states a central premise, though its warrant is deferred to later moves."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional probability claim is recoverable, but the operative threshold for cognitive-faculty reliability remains undefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Plantinga flags the formulation as approximate, yet the categorical low-probability conclusion lacks support in this span."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The conditional premise is internally coherent, but neither reliability nor the probability basis is developed in this move."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The excerpt asserts the central probability judgment without representative evidence, a probability model, or an alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly states the central low-reliability bridge and sits at the top of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move announces Plantinga's own premise and does not interpret a meaningful opposing alternative."
+        }
+      },
+      "evidenceBasis": "Plantinga expressly identifies as his first premise that naturalism plus evolution makes reliable faculties improbable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-faculty-wide-defeater",
+      "sectionId": "defeater-and-self-reference",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "constructive",
+      "proposition": "Recognizing that naturalism and evolution make reliable cognitive faculties improbable defeats trust in those faculties and consequently undercuts every belief they produce, including naturalism and evolution.",
+      "sourceSpan": {
+        "startEvent": 496,
+        "endEvent": 536
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same uninterrupted Plantinga turn enumerates the defeater premises and explicitly draws the self-defeat conclusion from them.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-faculty-trust-defeater"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the motion-level link from recognized faculty unreliability to a defeater spreading to all faculty-produced beliefs.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it explicitly states the defeater propagation and self-referential consequence required by the motion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The inference is fully recoverable, though the epistemic conditions under which doubt becomes a defeater remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The propagation claim is presented as necessary, while possible defeat-defeaters or compartmentalized trust are not addressed."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Given a genuine faculty-wide defeater, extension to beliefs produced by those faculties is coherent, with one implicit epistemic bridge."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The warrant is conceptual and clearly stated, but it does not examine alternatives concerning local reliability or defeat-defeaters."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move expressly completes the motion bridge from reliability doubt to a defeater for naturalism and evolution."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move develops Plantinga's positive inference rather than characterizing a live opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt says a defeater for faculty reliability defeats every faculty-produced belief, expressly including naturalism and evolution.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-selection-targets-adaptive-neurology",
+      "sectionId": "selection-truth-connection",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "constructive",
+      "proposition": "Under materialist naturalism, evolution selects adaptive neurology and behavior rather than true belief content, leaving the truth of associated beliefs approximately a matter of chance.",
+      "sourceSpan": {
+        "startEvent": 564,
+        "endEvent": 648
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host's prompt ends and Plantinga resumes in the first person, expressly identifying this thought experiment as his reason for the first premise.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-selection-content-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the principal selection-content separation intended to support the low-reliability premise.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it directly develops the route's indispensable claim about selection targeting behavior rather than truth."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The selection target is clear, but the move slides from selection's direct target to broad indifference toward truth."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Direct selection for adaptive behavior is plausible, but approximate chance truth does not follow without excluding indirect truth tracking."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "True representation may be indirectly selected because it reliably produces adaptive behavior across variable circumstances.",
+        "decisiveQualification": "Selection need not target semantic truth directly in order to favor mechanisms whose contents are generally accurate."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The inference from selection for behavior to chance-level belief truth leaves a substantial indirect-selection bridge unaddressed."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The move offers a mechanism-level intuition but no comparative account showing false-content systems are equally adaptive overall."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central selection-content gap and is maximally relevant within that central tier."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move stresses the direct selection target but does not adequately confront the strongest indirect-selection alternative."
+        }
+      },
+      "evidenceBasis": "Plantinga says evolution is interested in adaptive bodily behavior, not true belief, and uses that contrast to motivate premise one.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-theistic-reliability-expectation",
+      "sectionId": "worldview-scope-and-symmetry",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "constructive",
+      "proposition": "Theism provides reason to expect generally reliable cognitive faculties because humans are created in God's image with capacities for knowledge, while naturalism supplies no comparable expectation.",
+      "sourceSpan": {
+        "startEvent": 664,
+        "endEvent": 679
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Plantinga answers the host's proposed God-as-guarantor interpretation and contrasts expectations under theism with those under naturalism.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-theistic-contrast"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive contrast supplies a theistic reason for expecting knowledge-capable faculties and denies an equivalent naturalistic expectation.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it clearly advances the subsidiary worldview contrast but compresses the divine-intention warrant."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparative expectation is clear and qualified to faculties being reliable for the most part."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Theism can generate the stated expectation, but the move assumes that image-bearing and divine purposes favor broad reliability."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The expectation follows coherently given the implicit premise that an image-creating God intends human beings to acquire knowledge."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The theological premise is stated but not independently defended, and competing theistic explanations of cognitive error are unexamined."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary theistic-contrast bridge and ranks strongly within that limited tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This is a positive worldview contrast rather than an explicit treatment of a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "Plantinga links creation in God's image with knowledge of world, self, and God, then contrasts naturalism's lack of that expectation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-rational-acceptance-distinction",
+      "sectionId": "defeater-and-self-reference",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "constructive",
+      "proposition": "The evolutionary argument does not claim that naturalism and evolution are false or improbable; it claims that their conjunction cannot be rationally accepted.",
+      "sourceSpan": {
+        "startEvent": 818,
+        "endEvent": 834
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Plantinga directly corrects Law's proposed formulation of the conclusion and explains the distinction between falsity and rational acceptability.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-faculty-trust-defeater"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive clarification accurately fixes the argument's conclusion as epistemic self-defeat rather than falsity or antecedent improbability.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it explicitly clarifies the precise motion-level consequence and prevents a major conclusion-level equivocation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The distinction between proposition truth and rational acceptability is explicit, stable, and fully recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move makes a conceptual distinction rather than an uncertain empirical claim, and its force matches the supplied example."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The conceptual distinction is explicit and consistent, and the example establishes that truth and rational acceptability can diverge."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "A clear counterexample supports the distinction, though the move alone does not establish that naturalism actually falls into that category."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "The clarification directly specifies the motion-level defeater conclusion rather than merely addressing adjacent worldview truth."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span corrects a formulation but does not elaborate a sufficiently developed alternative requiring a charity test."
+        }
+      },
+      "evidenceBasis": "Plantinga explicitly rejects falsity as the conclusion and illustrates how a proposition could be true yet not rationally acceptable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-selection-adaptive-true-belief",
+      "sectionId": "selection-truth-connection",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "moveKind": "reply",
+      "proposition": "Natural selection can favor true-belief-producing mechanisms because organisms pursuing necessities such as water survive when their beliefs about those necessities' locations are accurate and fail when they are false.",
+      "sourceSpan": {
+        "startEvent": 854,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Law explicitly focuses on Plantinga's first premise and introduces an intuitive evolutionary explanation using needs, desires, and directional beliefs.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-truth-fitness-link"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-selection-targets-adaptive-neurology",
+          "pro-low-reliability-premise"
+        ],
+        "components": [
+          {
+            "componentId": "con-selection-adaptive-true-belief-component-01",
+            "targetMoveId": "pro-selection-targets-adaptive-neurology",
+            "text": "Whether adaptive selection can indirectly favor generally true belief-producing mechanisms.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-selection-adaptive-true-belief-component-02",
+            "targetMoveId": "pro-low-reliability-premise",
+            "text": "Whether the proposed evolutionary mechanism undermines the stated low-reliability probability premise.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Law directly answers the alleged truth-behavior independence with a water-seeking mechanism in which accurate location beliefs promote survival.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, the move explicitly contacts the decisive selection-to-truth inference with a concrete countermechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The mechanism is clear, though its extension from ecologically relevant beliefs to overall faculty reliability remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Law offers the account as a suggestion and illustrative mechanism, appropriately limiting its asserted force."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Adaptive behavior might arise from desire-belief combinations containing false beliefs despite successful action.",
+        "decisiveQualification": "Law's example establishes a selection route favoring accuracy, not that every adaptive behavior requires a true belief."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The need-desire-location-belief mechanism coherently explains why accuracy can systematically contribute to adaptive action."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The water example supplies a concrete mechanism, but generalization to diverse beliefs and alternative adaptive configurations is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central truth-fitness bridge and attacks the opposing selection-content gap."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move acknowledges that desires alone are insufficient and fairly advances a general tendency rather than infallibility."
+        }
+      },
+      "evidenceBasis": "Law's example connects needs and desires with accurate beliefs about resource locations, survival-enhancing action, and selection for truth-producing mechanisms.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-adaptive-behavior-content-gap",
+      "sectionId": "selection-truth-connection",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "reply",
+      "proposition": "Natural selection can favor neurological processes that produce adaptive behavior without favoring the truth of the belief content determined alongside those processes.",
+      "sourceSpan": {
+        "startEvent": 913,
+        "endEvent": 984
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly hands the objection to Alvin, whose uninterrupted frog example and conclusion occupy this window.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-truth-fitness-link"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-selection-adaptive-true-belief"
+        ],
+        "components": [
+          {
+            "componentId": "pro-adaptive-behavior-content-gap-component-01",
+            "targetMoveId": "con-selection-adaptive-true-belief",
+            "text": "Whether Law's resource-seeking example shows that selection favors true belief rather than adaptive neurology alone.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Plantinga directly counters that the selected neural process need only send adaptive motor signals, regardless of the truth of associated content.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it explicitly contacts the decisive inference from successful action to selection for true content."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The neurology-content distinction is clear, but the range of materialist content theories covered is only implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move establishes logical separability more readily than evolutionary indifference or equal likelihood across contents."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Law needs only a robust correlation between accurate representation and flexible adaptive behavior, not identity of truth with neural selection.",
+        "decisiveQualification": "Showing that false contents are conceivable does not show they are equally viable under causal and conceptual constraints."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Adaptive neurology can be distinguished from content truth, but the inference from separability to selection's indifference remains underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The frog-style mechanism illustrates compatibility with false content but does not compare prevalence, stability, or general adaptive performance."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central truth-fitness link with the route's key behavior-content objection."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The reply contacts Law's example but weakens its indirect-selection claim into a claim that selection directly inspects semantic truth."
+        }
+      },
+      "evidenceBasis": "Plantinga argues that correct efferent signals and muscle contractions suffice for adaptive behavior even if associated belief content is false.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-content-conceptual-constraints",
+      "sectionId": "mental-content-and-behavior",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "moveKind": "reply",
+      "proposition": "Belief content cannot be assigned arbitrarily to neural structures because conceptual constraints connect a belief's content with the behavioral role of its associated neural state, making behavior-matching true content the plausible attribution.",
+      "sourceSpan": {
+        "startEvent": 994,
+        "endEvent": 1035
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Stephen announces a worry about Plantinga's account and develops it continuously until Alvin begins his answer.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-content-constraints"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-adaptive-behavior-content-gap",
+          "pro-selection-targets-adaptive-neurology"
+        ],
+        "components": [
+          {
+            "componentId": "con-content-conceptual-constraints-component-01",
+            "targetMoveId": "pro-adaptive-behavior-content-gap",
+            "text": "Whether belief content can vary freely while the same neural state continues producing adaptive behavior.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-content-conceptual-constraints-component-02",
+            "targetMoveId": "pro-selection-targets-adaptive-neurology",
+            "text": "Whether selection for neural and behavioral roles leaves associated semantic content arbitrary.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Law identifies the failure in arbitrary content reassignment: conceptual constraints connect attributable belief content to the neural state's behavioral role.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within diagnostic defeats, it expressly identifies the unrestricted-content premise and states why that premise fails."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The diagnostic point is clear, although the nature and strength of the invoked conceptual constraints are not fully specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Law marks the conclusion as plausible rather than demonstrated, but gives limited detail about the governing content constraints."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A materialist may accept supervenience while denying that adaptive behavioral output guarantees external-world truth.",
+        "decisiveQualification": "Conceptual constraints limit arbitrary attribution but do not alone prove that the constrained content is true."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The objection coherently blocks unrestricted content permutation, with one bounded gap concerning why role-constrained content must be accurate."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Behavioral-role considerations support the constraint, but no developed theory of content or difficult counterexample is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central content-constraints bridge and diagnoses the pro route's key permissive-content assumption."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "Law fairly targets free reassignment, while leaving the decisive truth-versus-role qualification somewhat compressed."
+        }
+      },
+      "evidenceBasis": "Law says one cannot plug any belief into any neural structure because conceptual constraints connect content attribution with behavioral effects.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-content-causal-association",
+      "sectionId": "mental-content-and-behavior",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "moveKind": "reply",
+      "proposition": "The evolutionary truth-fitness connection does not require beliefs to be identical with neural structures, because beliefs' association with neural states and their causal effects on behavior constrain attributable content enough for selection to favor truth.",
+      "sourceSpan": {
+        "startEvent": 1071,
+        "endEvent": 1100
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Law explicitly clarifies his previous proposal and develops the conceptual-constraint inference until Plantinga begins his response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-content-constraints"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-adaptive-behavior-content-gap",
+          "pro-selection-targets-adaptive-neurology"
+        ],
+        "components": [
+          {
+            "componentId": "con-content-causal-association-component-01",
+            "targetMoveId": "pro-adaptive-behavior-content-gap",
+            "text": "Whether nonidentity between beliefs and neural structures preserves unrestricted content variation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-content-causal-association-component-02",
+            "targetMoveId": "pro-selection-targets-adaptive-neurology",
+            "text": "Whether causal association and behavioral effects constrain the content accompanying selected neurology.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Law directly extends his answer beyond identity theories, arguing that causal association and behavioral effects constrain belief attribution.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within full answers, it expressly contacts the nonidentity escape but gives a compressed account of the relevant causal constraints."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The proposition is recoverable, but 'association' and 'causal connection or whatever it is' leave the mechanism partly unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is plausibly framed, yet the unspecified association cannot by itself bear the full truth-favoring conclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Beliefs may be causally associated with neural states while their semantic truth remains irrelevant to the state's adaptive output.",
+        "decisiveQualification": "Causal-role constraints narrow possible contents but require an additional external-world accuracy link."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The extension from identity to causal association is coherent, with a material but bounded bridge from constrained attribution to truth."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The behavioral-effect rationale supplies support, but the causal relation and its truth-conducive character remain substantially schematic."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central content-constraints bridge by addressing a materialist account not based on strict identity."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly addresses nonidentity, though it compresses the strongest distinction between content determination and truth."
+        }
+      },
+      "evidenceBasis": "Law argues that even mere causal association with neural structures prevents arbitrary belief insertion because content relates to behavioral effects.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-supervenience-correspondence-distinction",
+      "sectionId": "mental-content-and-behavior",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "reply",
+      "proposition": "Even if a neural structure determines one particular belief content by supervenience, that determination does not show that the content corresponds to the adaptive action the structure produces.",
+      "sourceSpan": {
+        "startEvent": 1101,
+        "endEvent": 1136
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Plantinga concedes part of Law's constraint argument and then states the remaining gap before Law takes the next turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-content-determination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-content-conceptual-constraints",
+          "con-content-causal-association"
+        ],
+        "components": [
+          {
+            "componentId": "pro-supervenience-correspondence-distinction-component-01",
+            "targetMoveId": "con-content-conceptual-constraints",
+            "text": "Whether determination of content by neural properties establishes correspondence between that content and adaptive action.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-supervenience-correspondence-distinction-component-02",
+            "targetMoveId": "con-content-causal-association",
+            "text": "Whether causal association and constrained attribution suffice to show that selected content is true.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Plantinga identifies a precise inferential gap: supervenient determination of a particular content does not establish that it corresponds to the action produced.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it explicitly isolates the distinction and states the consequence for Law's truth inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The distinction between content determination and correspondence is explicit, stable, and fully recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The negative claim is appropriately limited: determination alone does not logically establish correspondence or truth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Law's constraints may include causal relations to environmental conditions, not merely intraneural supervenience.",
+        "decisiveQualification": "Plantinga's distinction defeats supervenience alone but does not exclude richer externalist content constraints."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The inference-blocking distinction is valid and explicit: determination of content does not entail correspondence with adaptive output."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The conceptual distinction strongly supports the limited conclusion, though it does not compare externalist theories of content."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly completes the subsidiary content-determination bridge and ranks at the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response accurately handles the stated supervenience route while leaving a stronger causal-externalist version open."
+        }
+      },
+      "evidenceBasis": "Plantinga grants possible supervenience of content on neurology but denies that this shows correspondence between content and adaptive action.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-even-odds-compound-unreliability",
+      "sectionId": "reliability-probability",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "reply",
+      "proposition": "If adaptive success is indifferent between true and false belief content, roughly even truth odds for each belief make a substantially reliable overall belief set extremely improbable.",
+      "sourceSpan": {
+        "startEvent": 1231,
+        "endEvent": 1266
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host asks Alvin to clarify the probability claim, and Alvin's uninterrupted answer corrects the framing and supplies the aggregate calculation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-low-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-selection-adaptive-true-belief",
+          "con-content-conceptual-constraints",
+          "con-content-causal-association"
+        ],
+        "components": [
+          {
+            "componentId": "pro-even-odds-compound-unreliability-component-01",
+            "targetMoveId": "con-selection-adaptive-true-belief",
+            "text": "Whether adaptive success makes true content more likely than false content for individual beliefs.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-even-odds-compound-unreliability-component-02",
+            "targetMoveId": "con-content-conceptual-constraints",
+            "text": "Whether conceptual constraints defeat the proposed roughly even truth odds.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-even-odds-compound-unreliability-component-03",
+            "targetMoveId": "con-content-causal-association",
+            "text": "Whether causal association defeats the proposed roughly even truth odds.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Plantinga answers Law's reliability tendency by asserting content-level indifference and then compounds roughly even individual odds across many beliefs.",
+        "responsivenessWithinClass": {
+          "value": 71,
+          "rationale": "Within partial answers, it contacts the decisive probability implication but does not answer the intervening constraint-based objections."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The compounding argument is recoverable, but independence, belief individuation, and the relevant reliability threshold remain unstated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The extremely-low aggregate conclusion assumes roughly even, sufficiently independent truth odds without defending either assumption."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Belief errors may be correlated, domain-specific, and constrained, while reliability means a high tendency rather than universal truth.",
+        "decisiveQualification": "Simple multiplication requires an independence model and a specified faculty-reliability threshold."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 61,
+          "rationale": "The compound conclusion follows only under material independence and threshold assumptions that are not supplied in the move."
+        },
+        "evidenceWarrant": {
+          "value": 54,
+          "rationale": "Neither even odds nor independence is evidenced, and the causal and conceptual constraint alternatives remain unanswered."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central low-reliability bridge by attempting the required aggregation from beliefs to faculties."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The move treats individual beliefs like even independent trials and omits the strongest qualification to the compound inference."
+        }
+      },
+      "evidenceBasis": "Plantinga denies that evolution favors false beliefs but claims adaptive indifference yields roughly even individual truth odds and compound unreliability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scope-atheism-not-naturalism",
+      "sectionId": "worldview-scope-and-symmetry",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "moveKind": "reply",
+      "proposition": "Atheism does not entail naturalism, since rejecting gods is compatible with accepting mathematical objects, nonnatural properties, aspects of conscious experience, or other realities beyond a wholly physical ontology.",
+      "sourceSpan": {
+        "startEvent": 1292,
+        "endEvent": 1344
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Stephen responds in the first person to the host's attempted equation of atheism with naturalism and gives multiple counterexamples.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-worldview-scope"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-theistic-reliability-expectation"
+        ],
+        "components": [
+          {
+            "componentId": "con-scope-atheism-not-naturalism-component-01",
+            "targetMoveId": "pro-theistic-reliability-expectation",
+            "text": "Whether theism uniquely supplies an expectation of generally reliable faculties absent under naturalism.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The atheism-naturalism distinction is correct and issue-bearing for audience scope, but it does not answer Plantinga's comparison between naturalism and theism.",
+        "responsivenessWithinClass": {
+          "value": 57,
+          "rationale": "Within relevant nonanswers, it offers useful worldview-scope material without contacting the decisive reliability-expectation claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction is explicit and supported with clear examples of atheistic but nonnaturalist commitments."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The conceptual non-entailment claim matches the examples and does not exceed what they establish."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The examples coherently establish that denial of gods does not entail an exclusively physical or natural ontology."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "Mathematical objects, nonnatural properties, and consciousness provide representative conceptual counterexamples to the alleged entailment."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly completes the subsidiary worldview-scope bridge, though that bridge is peripheral to the motion's naturalist target."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally distinguishes two positions rather than interpreting Plantinga's argument in a potentially weaker form."
+        }
+      },
+      "evidenceBasis": "Law distinguishes atheism from naturalism by listing abstract objects, nonnatural properties, and consciousness as possible non-theistic commitments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-theistic-skeptical-parity",
+      "sectionId": "worldview-scope-and-symmetry",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "moveKind": "reply",
+      "proposition": "Theism plus evolution can face a parallel skeptical problem when apparently reliable faculties reveal suffering that counts against the God supposed to guarantee those faculties, leaving theism in a skeptical position similar to naturalism.",
+      "sourceSpan": {
+        "startEvent": 1483,
+        "endEvent": 1541
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host invites Stephen's final point, and Stephen explicitly contrasts the two parts of the argument before presenting the parallel theistic case.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-skeptical-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-theistic-reliability-expectation",
+          "pro-faculty-wide-defeater"
+        ],
+        "components": [
+          {
+            "componentId": "con-theistic-skeptical-parity-component-01",
+            "targetMoveId": "pro-theistic-reliability-expectation",
+            "text": "Whether theism enjoys a distinctive reliability advantage once faculty-delivered evidence against God is considered.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-theistic-skeptical-parity-component-02",
+            "targetMoveId": "pro-faculty-wide-defeater",
+            "text": "Whether a structurally similar undercutting defeater can arise for theism.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Law directly challenges the claimed theistic advantage by constructing a parallel undercutting loop from suffering to God and then to faculty trust.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly contacts both the comparative expectation and the proposed symmetry-breaking consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The parity structure is clear, but the scope shifts from evidential grounds against God to faculties revealing God's nonexistence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Law cautiously presents a possible parity, though describing suffering as faculty-revealed nonexistence compresses contested evidential steps."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theism may predict fallible faculties and permit suffering without making God's existence the warrant for every particular judgment.",
+        "decisiveQualification": "Parity requires that the suffering evidence actually undercut the specific divine basis for general faculty reliability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The undercutting structure is intelligible, but it moves too quickly from suffering evidence to denial of the reliability-guaranteeing God."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The move identifies suffering but does not defend the evidential strength needed to create the claimed symmetric skeptical loop."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central skeptical-parity bridge and tests the EAAN's claimed comparative advantage."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The analogy is serious but omits a decisive qualification concerning fallibility and the degree of evidential defeat."
+        }
+      },
+      "evidenceBasis": "Law argues that faculties disclose suffering against a reliable-faculty-giving God, generating an analogous undercutting skeptical predicament.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evil-total-evidence-answer",
+      "sectionId": "worldview-scope-and-symmetry",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "reply",
+      "proposition": "Although suffering may count against Christian theism, it is only one consideration within a larger evidential picture and therefore does not amount to a faculty-delivered conclusion that God does not exist.",
+      "sourceSpan": {
+        "startEvent": 1680,
+        "endEvent": 1714
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly addressed Alvin before the answer, and the uninterrupted response uses Plantinga’s first-person assessment of theistic evidence.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-skeptical-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-theistic-skeptical-parity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evil-total-evidence-answer-component-01",
+            "targetMoveId": "con-theistic-skeptical-parity",
+            "text": "Whether suffering amounts to faculty-delivered grounds that defeat belief in the reliability-guaranteeing God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Plantinga expressly diagnoses the parity argument's evidential overreach: suffering is one consideration in a larger case, not a faculty-revealed conclusion.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within diagnostic defeats, it identifies the overstated evidential premise and explains why the skeptical consequence does not yet follow."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The limited total-evidence claim is clear, stable, and carefully distinguished from denying any evidential force to suffering."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Plantinga concedes that suffering may count against Christian theism while denying that it settles the total evidential picture."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Law needs strong undercutting grounds against the reliability-guaranteeing God, not a deductive revelation that no God exists.",
+        "decisiveQualification": "Plantinga still correctly notes that the strength of those grounds must be assessed against total evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The total-evidence correction validly blocks the inference from one adverse consideration to a settled atheistic conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The evidential principle is well supported conceptually, though the favorable considerations composing the larger picture are not developed here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central skeptical-parity bridge by contesting the premise needed for the alleged theistic undercutting loop."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The response preserves suffering's evidential relevance and fairly isolates the unestablished leap to a decisive faculty-delivered conclusion."
+        }
+      },
+      "evidenceBasis": "Plantinga concedes suffering may count against Christian theism but insists it is only one strand within a larger evidential picture.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-reliability-evolution-favors-truth",
+      "sectionId": "reliability-probability",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "moveKind": "reply",
+      "proposition": "The EAAN's reliability challenge is not insurmountable because a naturalist can explain why unguided evolution would tend to favor true beliefs, thereby resisting the inference that evolved cognitive faculties are probably unreliable or inscrutable.",
+      "sourceSpan": {
+        "startEvent": 1748,
+        "endEvent": 1791
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly turns to Stephen, who then restates the EAAN’s intended defeater structure before giving his naturalistic response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-low-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-even-odds-compound-unreliability",
+          "pro-low-reliability-premise",
+          "pro-adaptive-behavior-content-gap"
+        ],
+        "components": [
+          {
+            "componentId": "con-reliability-evolution-favors-truth-component-01",
+            "targetMoveId": "pro-even-odds-compound-unreliability",
+            "text": "Whether evolution leaves individual truth odds even and therefore makes aggregate faculty reliability extremely improbable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-reliability-evolution-favors-truth-component-02",
+            "targetMoveId": "pro-low-reliability-premise",
+            "text": "Whether naturalism and evolution make reliable faculties improbable or inscrutable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-reliability-evolution-favors-truth-component-03",
+            "targetMoveId": "pro-adaptive-behavior-content-gap",
+            "text": "Whether adaptive selection can favor truth despite selection operating through behavior.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Law directly rejects the low-reliability inference by invoking his earlier sketched mechanism through which unguided evolution tends to favor truth.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within full answers, it contacts the decisive inference, though this concluding span largely references rather than restates the mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conclusion is recoverable and cautiously scoped as a tendency and a surmountable challenge rather than a proof of infallibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Law expressly frames the case as reasons for thinking the challenge is not insurmountable, matching the limited support recalled."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro argument permits adaptive neural output accompanied by false content and therefore denies a necessary truth-fitness link.",
+        "decisiveQualification": "Law needs only a systematic evolutionary tendency toward truth, not a necessary link or universal accuracy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "If the earlier truth-fitness mechanism works, it coherently blocks the asserted even odds and resulting low-reliability inference."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The span relies heavily on previously sketched reasons and supplies no further comparison with false but adaptive content systems."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central low-reliability bridge and connects that attack to the evolutionary truth-fitness mechanism."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The move fairly treats the EAAN as a serious challenge while maintaining the appropriately weaker rebuttal burden of a truth-favoring tendency."
+        }
+      },
+      "evidenceBasis": "Law summarizes that a naturalist can explain why unguided evolution tends to favor true beliefs, making the EAAN challenge surmountable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-defeater-theistic-undercutting",
+      "sectionId": "defeater-and-self-reference",
+      "side": "con",
+      "speaker": "Stephen Law",
+      "moveKind": "reply",
+      "proposition": "Even if naturalism results in global skepticism, theism gains no comparative epistemic advantage when faculties supposedly supplied by God yield strong grounds against that God and thereby undercut trust in the faculties themselves.",
+      "sourceSpan": {
+        "startEvent": 1792,
+        "endEvent": 1818
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Law explicitly introduces this as his other point and develops the first-person naturalist comparison through the end of his summary.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-skeptical-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-theistic-reliability-expectation",
+          "pro-faculty-wide-defeater",
+          "pro-evil-total-evidence-answer"
+        ],
+        "components": [
+          {
+            "componentId": "con-defeater-theistic-undercutting-component-01",
+            "targetMoveId": "pro-theistic-reliability-expectation",
+            "text": "Whether theism has a comparative epistemic advantage because God supplies reliable cognitive faculties.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-defeater-theistic-undercutting-component-02",
+            "targetMoveId": "pro-faculty-wide-defeater",
+            "text": "Whether the global skeptical consequence uniquely disadvantages naturalism.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-defeater-theistic-undercutting-component-03",
+            "targetMoveId": "pro-evil-total-evidence-answer",
+            "text": "Whether total-evidence qualification defeats the claimed theistic undercutting problem.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Law directly reasserts comparative skeptical parity, but does not answer Plantinga's immediately preceding total-evidence objection to the crucial anti-theistic premise.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "Within partial answers, it contacts the comparative and defeater components but leaves the decisive total-evidence reply unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The comparative claim is clear, but 'very good grounds' is unspecific and its relationship to total evidence remains unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The possibility framing is cautious, but the move presumes strong anti-theistic grounds without responding to their disputed evidential sufficiency."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Suffering may be counterevidence within a broader theistic case without defeating belief in the God grounding general reliability.",
+        "decisiveQualification": "The skeptical loop requires net defeating evidence against God, not merely some apparently strong adverse evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The conditional undercutting loop is coherent, but the asserted grounds against God remain an unsupported indispensable link."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The move references apparently strong grounds but supplies no total-evidence comparison after Plantinga directly contested that premise."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central skeptical-parity bridge, notwithstanding its incomplete response to the latest objection."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move repeats the parity structure while omitting Plantinga's decisive total-evidence qualification."
+        }
+      },
+      "evidenceBasis": "Law argues that even global naturalistic skepticism gives theism no advantage if supposedly reliable faculties produce strong grounds against God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-no-warranted-neurology-truth-link",
+      "sectionId": "mental-content-and-behavior",
+      "side": "pro",
+      "speaker": "Alvin Plantinga",
+      "moveKind": "reply",
+      "proposition": "No adequate grounds have been supplied for assuming that neurology selected for adaptive behavior would also determine true belief content under materialism, naturalism, and evolution.",
+      "sourceSpan": {
+        "startEvent": 1858,
+        "endEvent": 1883
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator requests Alvin’s summation, and Plantinga explicitly identifies Stephen’s response before challenging its underlying inference.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-content-constraints"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-reliability-evolution-favors-truth",
+          "con-content-conceptual-constraints",
+          "con-content-causal-association"
+        ],
+        "components": [
+          {
+            "componentId": "pro-no-warranted-neurology-truth-link-component-01",
+            "targetMoveId": "con-reliability-evolution-favors-truth",
+            "text": "Whether Law supplied adequate grounds that selected adaptive neurology would tend to determine true content.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-no-warranted-neurology-truth-link-component-02",
+            "targetMoveId": "con-content-conceptual-constraints",
+            "text": "Whether conceptual constraints justify a truth link rather than merely restricting content attribution.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-no-warranted-neurology-truth-link-component-03",
+            "targetMoveId": "con-content-causal-association",
+            "text": "Whether causal and behavioral association adequately grounds true content.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Plantinga directly challenges the missing warrant behind Law's truth tendency and warns against importing actual-world self-conceptions into the counterfactual antecedent.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within full answers, it explicitly contacts the decisive warrant question, though it mainly demands support rather than supplying a rival model."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The negative burden claim is fully recoverable and explicitly limited to the materialist-naturalist-evolutionary supposition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Plantinga says he does not see sufficient grounds, a cautious force appropriate to the identified explanatory gap."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Law's truth link rests on environmental success and behavioral-role constraints, not merely ordinary self-understanding.",
+        "decisiveQualification": "Those considerations provide some grounds even if they do not conclusively establish broad reliability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "It coherently distinguishes actual-world intuitions from what follows under the disputed counterfactual materialist assumptions."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The identified gap is real, but the move does not fully engage Law's strongest environmental and content-constraint mechanisms."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central content-constraints bridge and the concluding evolutionary truth-fitness claim."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "Plantinga accurately presses the missing bridge but somewhat understates the concrete resource-seeking and constraint-based grounds Law supplied."
+        }
+      },
+      "evidenceBasis": "Plantinga says no adequate grounds were given for assuming adaptive neurology produces true content and rejects importing ordinary self-conceptions.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion is established beyond the evaluated pro bridges.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence qualifies for a residual adjustment.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion is established beyond the evaluated con bridges.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence qualifies for a residual adjustment.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

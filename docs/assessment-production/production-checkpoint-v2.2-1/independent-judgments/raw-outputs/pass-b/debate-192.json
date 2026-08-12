@@ -1,0 +1,1803 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "192",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-chemical-remoteness",
+      "side": "pro",
+      "description": "Establish that meaningful proximity requires a chemically specified and experimentally credible account of producing, preserving, organizing, and integrating the components of first life, and that current work has not met that burden.",
+      "successCriteria": "The route succeeds if the unresolved requirements for molecular synthesis, stereochemistry, sequencing, assembly, and cellular organization outweigh appeals to abstract possibility, large opportunity spaces, elapsed time, or limited directional clues.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-remoteness",
+        "tier": "motion",
+        "description": "Show that current science lacks a sufficiently complete and credible chemical pathway to count as meaningfully close to explaining first life."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-required-chemistry",
+          "tier": "central",
+          "description": "Specify the multiple molecular classes and integrated organizational steps that an origin account must explain."
+        },
+        {
+          "bridgeId": "bridge-pro-possibility-versus-pathway",
+          "tier": "central",
+          "description": "Require probability and possibility claims to engage the cumulative chemistry of production, preservation, and assembly."
+        },
+        {
+          "bridgeId": "bridge-pro-progress-versus-target",
+          "tier": "central",
+          "description": "Determine whether experimental advances approach the explanatory target or whether growing knowledge of complexity makes that target more remote."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-time-and-decomposition",
+          "tier": "subsidiary",
+          "description": "Account for whether long timescales preserve useful intermediates or instead amplify decomposition and side reactions."
+        },
+        {
+          "bridgeId": "bridge-pro-life-organization",
+          "tier": "subsidiary",
+          "description": "Use unresolved features of cellular organization to clarify why possessing molecular components may not explain the transition to life."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-evidential-agnosticism",
+      "side": "con",
+      "description": "Establish that incomplete mechanistic understanding can coexist with limited scientific clues and a defensible agnostic position when the probability, opportunity space, recurrence, and recoverability of natural abiogenesis remain unresolved.",
+      "successCriteria": "The route succeeds if current evidence supplies some burden-relevant direction while leaving neither natural emergence nor alternatives demonstrated or excluded, so present remoteness does not warrant treating the scientific search as devoid of explanatory contact.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-limited-clues",
+        "tier": "motion",
+        "description": "Show that limited empirical or theoretical clues provide meaningful explanatory contact while still requiring agnosticism about a complete origin account."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-probability-opportunities",
+          "tier": "central",
+          "description": "Relate a finite natural-origin probability to the universe's unknown number of opportunities without claiming that either quantity is presently measurable."
+        },
+        {
+          "bridgeId": "bridge-con-clues-versus-completion",
+          "tier": "central",
+          "description": "Distinguish possessing limited directional clues from possessing a complete, demonstrated mechanism."
+        },
+        {
+          "bridgeId": "bridge-con-empirical-discriminators",
+          "tier": "central",
+          "description": "Identify observations, including demonstrably independent origins, that could materially change the assessment of natural abiogenesis."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-discontinuous-progress",
+          "tier": "subsidiary",
+          "description": "Allow for conceptual breakthroughs that could change the pace of progress despite prolonged present confusion."
+        },
+        {
+          "bridgeId": "bridge-con-scientific-recoverability",
+          "tier": "subsidiary",
+          "description": "Consider whether an extraordinarily rare and unrepeatable origin could remain partly inaccessible to scientific reconstruction."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-chemical-requirements",
+      "title": "Chemical Production, Preservation, and Cellular Assembly",
+      "weightPercent": 27,
+      "rationale": "This issue defines the principal explanatory burden by asking what molecular classes, reaction sequences, stability conditions, and organizational steps must be accounted for before first life has a credible chemical pathway."
+    },
+    {
+      "sectionId": "section-probability-and-opportunity",
+      "title": "Nonzero Probability and Cosmic Opportunity",
+      "weightPercent": 20,
+      "rationale": "This issue tests whether finite reaction probabilities and an immense opportunity space support agnosticism or remain too abstract without accounting for the many required synthesis and assembly steps."
+    },
+    {
+      "sectionId": "section-progress-and-distance",
+      "title": "Limited Clues and Distance from an Explanation",
+      "weightPercent": 23,
+      "rationale": "This issue addresses the motion's meaningfully-close standard by distinguishing partial directional knowledge from a complete account and by asking whether the explanatory target is approaching or receding."
+    },
+    {
+      "sectionId": "section-empirical-tests",
+      "title": "Independent Origins as an Empirical Test",
+      "weightPercent": 14,
+      "rationale": "This issue examines whether independently arisen extraterrestrial life would reveal that abiogenesis is naturally accessible, and whether recurrence alone would illuminate the underlying mechanism."
+    },
+    {
+      "sectionId": "section-time-breakthroughs-and-recoverability",
+      "title": "Timescales, Breakthroughs, and Scientific Recoverability",
+      "weightPercent": 16,
+      "rationale": "This issue brings together whether time aids or degrades prebiotic chemistry, whether progress may arrive discontinuously, and whether a singular rare event could be reconstructed by science at all."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-chemical-feasibility-standard",
+      "sectionId": "section-chemical-requirements",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "constructive",
+      "proposition": "A natural origin of life cannot responsibly be called possible without chemically accounting for the production and assembly of all required molecular classes.",
+      "sourceSpan": {
+        "startEvent": 165,
+        "endEvent": 177
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour directly answers the preceding clarification and maintains the floor throughout this compact chemistry-focused response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-possibility-versus-pathway"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes a central feasibility standard and therefore has no earlier opposing locked move to answer.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it clearly states the decisive chemical-accounting requirement."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The required accounting standard is recoverable, but “all required” and “possible” are broader than the excerpt precisely defines."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The listed difficulties support demanding substance, but not the categorical claim that possibility itself requires a complete account."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Possibility can be responsibly asserted from partial chemical feasibility without a complete pathway.",
+        "decisiveQualification": "Partial feasibility still must address whether production and assembly constraints can jointly be satisfied."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The inference is intelligible but equivocates between responsible evidential support and bare physical possibility."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Four classes and assembly are named, while the categorical claim that none of the chemistry works is asserted rather than demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central possibility-versus-pathway bridge by stating its core inferential demand."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move presses a legitimate joint-feasibility concern but collapses incomplete explanation into inability to assert possibility."
+        }
+      },
+      "evidenceBasis": "The excerpt names four molecular classes, assembly, alleged chemical failure, and a demand to substantiate possibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-probability-times-opportunity",
+      "sectionId": "section-probability-and-opportunity",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "moveKind": "reply",
+      "proposition": "An extremely small nonzero probability combined with the universe's unimaginably large and unknown number of opportunities leaves the probability of a natural origin scientifically indeterminate.",
+      "sourceSpan": {
+        "startEvent": 178,
+        "endEvent": 212
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass frames the probabilistic question, acknowledges brief answers from Tour, and resumes the same numerical argument through its conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-probability-opportunities"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-chemical-feasibility-standard"
+        ],
+        "components": [
+          {
+            "componentId": "con-probability-times-opportunity-component-01",
+            "targetMoveId": "pro-chemical-feasibility-standard",
+            "text": "Account for production and assembly of every required molecular class before calling natural origin possible.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move offers relevant probability-and-opportunity reasoning but does not engage the earlier demand for a chemically specified production and assembly account.",
+        "responsivenessWithinClass": {
+          "value": 55,
+          "rationale": "It is a relevant nonanswer near the upper part of that class because it bears directly on possibility but bypasses the chemical demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition consistently concerns two unknown magnitudes and explicitly concludes only that their product is indeterminate."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move expressly emphasizes that neither the tiny probability nor the vast opportunity count is known."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Unknown factors do leave their overall probabilistic implication undetermined, with only a bounded ambiguity about the relevant opportunity space."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The size-and-probability framework is soundly motivated, but the unobservable-universe opportunity count and independence assumptions remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central probability-opportunities bridge while carefully withholding a measurable result."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move does not materially characterize a competing account; it advances its own uncertainty argument."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly multiplies an unimaginably tiny probability by an unimaginably large unknown universe and calls the result undefined.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-probability-needs-pathway",
+      "sectionId": "section-probability-and-opportunity",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Appealing to a nonzero probability and a vast universe is scientifically empty unless a scenario specifies the required molecules, their formation, their assembly, and cell formation.",
+      "sourceSpan": {
+        "startEvent": 213,
+        "endEvent": 239
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour takes the floor with a direct rebuttal to Swamidass and develops a continuous sequence of required chemical questions before yielding.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-probability-opportunities"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-probability-times-opportunity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-probability-needs-pathway-component-01",
+            "targetMoveId": "con-probability-times-opportunity",
+            "text": "Unknown tiny probability multiplied by unknown vast opportunities leaves natural-origin probability indeterminate.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Tour directly challenges the usefulness of the abstract product by requiring specification of molecules, formation, assembly, and cell formation.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts the probability inference and identifies the missing chemical information on which its usefulness depends."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The pathway demand is clear, though “scientifically empty” implicitly means empty as an explanatory account rather than literally meaningless."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Detailed chemistry is necessary for a pathway explanation, but not necessarily for every defensible statement of nonzero possibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The probability argument establishes indeterminacy rather than supplying a chemical mechanism.",
+        "decisiveQualification": "Indeterminacy alone does not show progress toward producing and assembling a first cell."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The missing-pathway objection follows well against explanatory claims, with a bounded overreach when applied to bare probability indeterminacy."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The required molecular questions are concrete, but the conclusion of absolute cluelessness is not independently documented in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central probability-opportunities bridge by identifying its absent chemical pathway warrant."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly accepts nonzero probability and vast opportunity while identifying what those concessions do not explain."
+        }
+      },
+      "evidenceBasis": "The excerpt accepts nonzero probability and a large universe, then lists molecules, formation, assembly, and cell formation as unanswered requirements.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-four-classes-and-integration",
+      "sectionId": "section-chemical-requirements",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "constructive",
+      "proposition": "Life as known requires nucleic acids, lipids, amino acids, and carbohydrates, while their chemically correct production, sequencing, interactions, and integration into a cell remain unexplained.",
+      "sourceSpan": {
+        "startEvent": 310,
+        "endEvent": 409
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour explicitly answers the moderator, identifies the required molecular classes, and continues the technical explanation around a brief clarifying question.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-required-chemistry"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move specifies the molecular and organizational requirements and has no earlier opposing locked target to answer.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "Within constructive moves, it supplies unusually concrete and organized burden detail."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The four classes and their roles are clear, though the scope shifts from life as known to requirements for earliest life without express qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The molecular inventory is well framed for extant life, but its necessity in fully developed form for first life is only implicit."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inventory coherently supports an integration burden, with one material bridge from modern cellular components to minimal first life."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Specific molecular classes and functions provide concrete support, though the claim that their correct integration remains wholly unexplained is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It nearly maximizes central-tier relevance by directly specifying the required-chemistry bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally develops its own chemical inventory rather than interpreting a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies nucleic acids, lipids, amino acids, carbohydrates, and their distinct cellular roles.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-limited-clues-not-completion",
+      "sectionId": "section-progress-and-distance",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "moveKind": "reply",
+      "proposition": "Origin-of-life research possesses some limited directional clues while remaining nowhere near a complete explanation of life's origin.",
+      "sourceSpan": {
+        "startEvent": 463,
+        "endEvent": 468
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass speaks in a distinct uninterrupted turn and uses a single distance analogy to qualify the preceding claim of total cluelessness.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-clues-versus-completion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-four-classes-and-integration",
+          "pro-chemical-feasibility-standard",
+          "pro-probability-needs-pathway"
+        ],
+        "components": [
+          {
+            "componentId": "con-limited-clues-not-completion-component-01",
+            "targetMoveId": "pro-four-classes-and-integration",
+            "text": "The chemically correct production, sequencing, interaction, and cellular integration of four molecular classes remain unexplained.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-limited-clues-not-completion-component-02",
+            "targetMoveId": "pro-chemical-feasibility-standard",
+            "text": "A responsible possibility claim requires substantive chemical accounting rather than an unsupported assertion.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-limited-clues-not-completion-component-03",
+            "targetMoveId": "pro-probability-needs-pathway",
+            "text": "Probability language does not substitute for specifying molecules, formation, assembly, and cell formation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The canyon analogy concedes the central incompleteness identified by the molecular inventory while asserting limited progress, but it does not supply or defend the clues.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "This is a partial answer: it contacts the decisive incompleteness claim but leaves the feasibility and pathway demands unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between some clues and no completed bridge is clear, although the content of “clues” is unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest force of “some clues” is explicitly bounded by the concession that research is nowhere near completion."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Possessing limited directional evidence is fully compatible with remaining far from a complete explanation."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The analogy cleanly frames the distinction, but no actual scientific clue is identified or supported in this selected span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central clues-versus-completion distinction with an express concession of incompleteness."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move concedes rather than distorts the strongest opposing point about major incompleteness."
+        }
+      },
+      "evidenceBasis": "The entire excerpt is a Grand Canyon analogy distinguishing slight progress beyond the cliff from anything near a completed crossing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-receding-explanatory-target",
+      "sectionId": "section-progress-and-distance",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Scientific advances reveal ever greater cellular complexity, so the explanatory target for origin-of-life research is receding rather than drawing closer.",
+      "sourceSpan": {
+        "startEvent": 469,
+        "endEvent": 483
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour directly takes up Swamidass’s distance analogy and develops it continuously by contrasting earlier expectations with expanding knowledge of cells.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-progress-versus-target"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-limited-clues-not-completion",
+          "con-probability-times-opportunity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-receding-explanatory-target-component-01",
+            "targetMoveId": "con-limited-clues-not-completion",
+            "text": "Research has ventured somewhat beyond total ignorance while remaining nowhere near a complete explanation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-receding-explanatory-target-component-02",
+            "targetMoveId": "con-probability-times-opportunity",
+            "text": "Unknown probability and opportunity magnitudes leave the natural-origin probability scientifically indeterminate.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Tour directly adopts the canyon analogy and argues that increased knowledge enlarges the recognized explanatory gap rather than shortening it.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the progress metaphor and states a contrary inference about the direction of the target."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The receding-target thesis is clear, but “every year” generalizes across the field without an express evidential scope condition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Growing appreciation of complexity supports a larger recognized burden, but does not alone show that scientific explanatory progress is negative."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "New knowledge can reveal greater complexity while also providing genuine directional clues and tools.",
+        "decisiveQualification": "Recognizing additional requirements can increase the estimated remaining distance even when local knowledge improves."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The inference from newly discovered complexity to a larger remaining gap is plausible but does not by itself establish net movement away."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The Miller-Urey historical contrast and cellular complexity are relevant examples, but the field-wide annual trend is asserted broadly."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central progress-versus-target bridge by arguing that the explanatory target is receding."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The reply captures the enlarged target but underplays the possibility that discovery simultaneously constitutes progress."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts early optimism after Miller-Urey with expanding cellular complexity and explicitly extends the opponent's canyon analogy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-time-promotes-decomposition",
+      "sectionId": "section-time-breakthroughs-and-recoverability",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Long timescales hinder rather than rescue prebiotic synthesis because organic products decompose unless rapidly purified, stabilized, and advanced through subsequent reactions.",
+      "sourceSpan": {
+        "startEvent": 565,
+        "endEvent": 601
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour answers the moderator’s explicit prompt about time and gives a continuous organic-chemistry explanation through the end of his turn.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-time-and-decomposition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-limited-clues-not-completion",
+          "con-probability-times-opportunity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-time-promotes-decomposition-component-01",
+            "targetMoveId": "con-limited-clues-not-completion",
+            "text": "Limited clues constitute some progress even though a complete origin explanation remains distant.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-time-promotes-decomposition-component-02",
+            "targetMoveId": "con-probability-times-opportunity",
+            "text": "A tiny nonzero probability may combine with vast unknown opportunities to leave the result indeterminate.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The decomposition discussion supplies important contrary chemistry about elapsed time, but it does not directly answer either earlier move's decisive inference.",
+        "responsivenessWithinClass": {
+          "value": 54,
+          "rationale": "It is a relevant nonanswer with concrete issue-bearing material but no decisive component contact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The degradation mechanism is clear, but bench conditions are generalized to prebiotic environments without specifying stabilizing contexts or reaction networks."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Decomposition is a real competing process, yet “time is your enemy” is broader than the bench example alone establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Long timescales create more reaction opportunities and may permit selection or environmental cycling.",
+        "decisiveQualification": "Longer duration also destroys intermediates unless environments preserve or continually replenish them."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The inference from degradation and competing reactions to a time-dependent obstacle is coherent, subject to environmental scope conditions."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Bench decomposition and purification practice are specific evidence, but their representativeness for diverse prebiotic settings is not defended."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the time-and-decomposition subsidiary bridge with concrete chemical considerations."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move identifies the decisive stability qualification but does not compare plausible natural concentration or protection mechanisms."
+        }
+      },
+      "evidenceBasis": "The excerpt describes immediate isolation, purification, freezing, week-scale bench decomposition, and additional atmospheric reaction concerns.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-humble-scientific-agnosticism",
+      "sectionId": "section-progress-and-distance",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "moveKind": "reply",
+      "proposition": "Scientific humility is warranted because no accurate origin account has been demonstrated, while both natural emergence and direct divine action remain compatible with the speaker's position.",
+      "sourceSpan": {
+        "startEvent": 730,
+        "endEvent": 770
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass is explicitly invited to state his position and then delivers a sustained summary of his agreements and epistemic conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-con-motion-limited-clues"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-receding-explanatory-target",
+          "pro-chemical-feasibility-standard",
+          "pro-probability-needs-pathway",
+          "pro-four-classes-and-integration",
+          "pro-time-promotes-decomposition"
+        ],
+        "components": [
+          {
+            "componentId": "con-humble-scientific-agnosticism-component-01",
+            "targetMoveId": "pro-receding-explanatory-target",
+            "text": "Increasing knowledge of cellular complexity makes the explanatory target recede rather than approach.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-humble-scientific-agnosticism-component-02",
+            "targetMoveId": "pro-chemical-feasibility-standard",
+            "text": "Natural origin should not be called possible without substantive chemical production and assembly accounting.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-humble-scientific-agnosticism-component-03",
+            "targetMoveId": "pro-probability-needs-pathway",
+            "text": "Nonzero probability and cosmic scale are empty without a specified chemical pathway to a cell.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-humble-scientific-agnosticism-component-04",
+            "targetMoveId": "pro-four-classes-and-integration",
+            "text": "The production and integration of all major molecular classes remain unexplained.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-humble-scientific-agnosticism-component-05",
+            "targetMoveId": "pro-time-promotes-decomposition",
+            "text": "Long timescales worsen prebiotic chemistry through decomposition and side reactions.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move answers the debate-wide distance claim by conceding that no accurate demonstrated account exists and reframing the warranted conclusion as scientific agnosticism.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It partially answers by conceding incompleteness and resisting a stronger conclusion, while leaving the detailed chemical objections untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The epistemic position is recoverable and carefully distinguishes an accurate account, demonstration, and compatibility with broader possibilities."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The demand for humility matches the express concessions that no accurate account or historical demonstration is presently available."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "Agnosticism follows coherently from the stated inability to provide or demonstrate an accurate historical account."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The conclusion is well matched to explicit shared uncertainty, though compatibility with divine action adds no scientific evidence."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supports the con motion bridge by combining limited scientific contact with explicit agnosticism about completion."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move emphasizes agreement and epistemic limits rather than weakening an opposing scientific position."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly states that no accurate account can be given, no proposed account has been demonstrated, and humility is required.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cumulative-unfavorable-steps",
+      "sectionId": "section-probability-and-opportunity",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "A nonzero overall probability does not overcome the many individually unfavorable chemical synthesis and assembly steps required for life.",
+      "sourceSpan": {
+        "startEvent": 899,
+        "endEvent": 917
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly follows Swamidass's probability argument and explicitly addresses him from Tour's chemistry-centered position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-probability-opportunities"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-probability-times-opportunity",
+          "con-limited-clues-not-completion",
+          "con-humble-scientific-agnosticism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cumulative-unfavorable-steps-component-01",
+            "targetMoveId": "con-probability-times-opportunity",
+            "text": "An unknown tiny probability multiplied by unknown vast opportunities leaves overall natural-origin probability indeterminate.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cumulative-unfavorable-steps-component-02",
+            "targetMoveId": "con-limited-clues-not-completion",
+            "text": "Origin research has limited directional clues although it remains far from a complete explanation.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-cumulative-unfavorable-steps-component-03",
+            "targetMoveId": "con-humble-scientific-agnosticism",
+            "text": "Current ignorance warrants humility rather than a confident conclusion about natural origin or alternatives.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly challenges the small-number-times-big-number abstraction by insisting that repeated unfavorable chemical steps must be jointly addressed.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It contacts the decisive probability inference explicitly and supplies the missing cumulative-step objection."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The cumulative objection is recoverable, but “everything is fighting against you” leaves the unfavorable-step class technically unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move correctly accepts nonzero probability yet overstates universal adversity without quantifying dependence, selection, or environmental assistance."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A tiny per-opportunity probability and vast opportunities can leave the total probability unknown without specifying every step.",
+        "decisiveQualification": "The per-opportunity value cannot be responsibly estimated while cumulative chemical dependencies and failures are omitted."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Repeated unfavorable requirements are relevant to overall probability, although simple multiplication may fail when steps are dependent or selectively retained."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The cumulative structure is clearly identified, but individual step probabilities and the assertion that all conditions oppose success are unsupported."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly attacks the central probability-opportunities bridge at its chemical-input requirement."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The response accepts the opponent's narrow mathematical possibility while fairly identifying its missing chemical inputs."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes many repeated synthesis and assembly steps, accepts nonzero probability, and rejects reliance on abstract small and large numbers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-independent-origin-falsifier",
+      "sectionId": "section-empirical-tests",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "moveKind": "constructive",
+      "proposition": "Discovering life on a sufficiently distant exoplanet to exclude seeding from Earth would severely undermine the agnostic probability argument by demonstrating more than one origin.",
+      "sourceSpan": {
+        "startEvent": 926,
+        "endEvent": 937
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass introduces the claim as a condition under which his own mathematical argument would fail and develops it in one uninterrupted turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-empirical-discriminators"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move introduces an empirical discriminator and therefore has no earlier opposing locked target to answer.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it clearly states the observation, independence condition, and consequence for its own argument."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition specifies an exoplanet, exclusion of seeding, multiple origins, and the bounded consequence of undermining the probability argument."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conditional force is appropriately limited to severe undermining rather than claiming that recurrence would reveal the mechanism."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "A demonstrably independent second origin would materially update accessibility, with a bounded remaining base-rate inference."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The evidential condition is specific and testable, though one additional origin would not alone quantify natural-origin probability precisely."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central empirical-discriminators bridge with a concrete potential observation."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This is a self-falsification condition rather than an interpretation of an opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies distant exoplanet life, exclusion of Earth seeding, and multiple origins as the condition under which the speaker's argument would fail.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-recurrence-without-mechanism",
+      "sectionId": "section-empirical-tests",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Finding independently arisen life elsewhere would establish recurrence but would not explain how first life formed or resolve the underlying chemical mechanism.",
+      "sourceSpan": {
+        "startEvent": 939,
+        "endEvent": 965
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's question is followed by Tour's first-person answer, including his characteristic distinction between creation beliefs and chemical explanation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-empirical-discriminators"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-independent-origin-falsifier",
+          "con-probability-times-opportunity",
+          "con-limited-clues-not-completion",
+          "con-humble-scientific-agnosticism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-recurrence-without-mechanism-component-01",
+            "targetMoveId": "con-independent-origin-falsifier",
+            "text": "A demonstrably independent exoplanet origin would severely undermine agnosticism by showing that life arose more than once.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-recurrence-without-mechanism-component-02",
+            "targetMoveId": "con-probability-times-opportunity",
+            "text": "Unknown probability and vast opportunity counts leave natural-origin probability indeterminate.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-recurrence-without-mechanism-component-03",
+            "targetMoveId": "con-limited-clues-not-completion",
+            "text": "Limited clues can exist despite remaining nowhere near a complete explanation.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-recurrence-without-mechanism-component-04",
+            "targetMoveId": "con-humble-scientific-agnosticism",
+            "text": "The absence of an accurate demonstrated account warrants scientific humility and agnosticism.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Tour directly concedes that another origin would establish recurrence but explains that recurrence would not answer how first life formed chemically.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It explicitly contacts the proposed discriminator, grants its observation, and states the precise explanatory limitation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between frequency evidence and mechanistic explanation remains stable and is expressly qualified to the origin-of-first-life question."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest conclusion that recurrence alone does not supply mechanism follows directly and allows that a naturalistic explanation may exist."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Independent recurrence would materially increase confidence that abiogenesis is naturally accessible.",
+        "decisiveQualification": "Greater confidence in accessibility still would not identify the chemical pathway by which either origin occurred."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The distinction between evidence of repeated occurrence and explanation of causal mechanism is explicit, valid, and complete."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "The inference is principally conceptual and well supported, with only a bounded omission concerning how recurrence could guide later mechanistic study."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central empirical-discriminator bridge's capacity to resolve the chemical explanatory burden."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply grants the strongest evidential update and isolates the remaining mechanistic question without caricature."
+        }
+      },
+      "evidenceBasis": "The excerpt repeatedly concedes a second origin while insisting that it does not make the first-origin mechanism easier or explained.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-prevalence-signals-accessibility",
+      "sectionId": "section-empirical-tests",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "moveKind": "reply",
+      "proposition": "A universe teeming with independently arisen life would indicate that life is naturally easy to make, whereas present observations do not display that pattern.",
+      "sourceSpan": {
+        "startEvent": 966,
+        "endEvent": 985
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass addresses Jim by name and develops a conditional inference about abundant life, divine intervention, and current astronomical observations.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-empirical-discriminators"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-recurrence-without-mechanism",
+          "pro-chemical-feasibility-standard",
+          "pro-probability-needs-pathway",
+          "pro-four-classes-and-integration",
+          "pro-receding-explanatory-target",
+          "pro-time-promotes-decomposition",
+          "pro-cumulative-unfavorable-steps"
+        ],
+        "components": [
+          {
+            "componentId": "con-prevalence-signals-accessibility-component-01",
+            "targetMoveId": "pro-recurrence-without-mechanism",
+            "text": "Independent recurrence would show multiple origins but would not explain the chemical mechanism of first life.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-prevalence-signals-accessibility-component-02",
+            "targetMoveId": "pro-chemical-feasibility-standard",
+            "text": "Natural origin cannot responsibly be called possible without accounting for all required chemistry.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-prevalence-signals-accessibility-component-03",
+            "targetMoveId": "pro-probability-needs-pathway",
+            "text": "A probability claim is empty without a specified pathway through molecules, assembly, and cell formation.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-prevalence-signals-accessibility-component-04",
+            "targetMoveId": "pro-four-classes-and-integration",
+            "text": "Production and integration of the four major molecular classes remain unexplained.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-prevalence-signals-accessibility-component-05",
+            "targetMoveId": "pro-receding-explanatory-target",
+            "text": "Increasing cellular knowledge makes the explanatory target recede rather than approach.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-prevalence-signals-accessibility-component-06",
+            "targetMoveId": "pro-time-promotes-decomposition",
+            "text": "Elapsed time worsens organic synthesis through decomposition and competing reactions.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-prevalence-signals-accessibility-component-07",
+            "targetMoveId": "pro-cumulative-unfavorable-steps",
+            "text": "Many repeated unfavorable steps prevent abstract nonzero probability from carrying explanatory weight.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move accepts that prevalence is not mechanism but answers the implication by arguing that widespread independent life would strongly indicate natural accessibility.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly contacts the recurrence distinction and explains the evidential consequence that remains even without mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional comparison is clear, though “very easy” is qualitative and depends on the express no-intervention assumption."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Abundant independent instances would strongly update accessibility, but “very easy” also depends on detection, habitability, and independence assumptions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Recurrence supplies frequency evidence but no chemical mechanism.",
+        "decisiveQualification": "The claim concerns accessibility and expected discoverability, not direct identification of the mechanism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Conditional on genuine independence and no direct intervention, widespread prevalence supports easier natural accessibility, subject to sampling assumptions."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The hypothetical contrast is probative, but current observations, detection limits, and the prevalence-to-ease relationship are not developed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly strengthens the central empirical-discriminator bridge by explaining why prevalence would matter."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The response preserves the opponent's mechanism distinction while clearly stating the separate probabilistic inference from prevalence."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts a universe teeming with life across nearby bodies and exoplanets with present observations and conditions the inference on no direct intervention.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-rare-origin-scientific-inaccessibility",
+      "sectionId": "section-time-breakthroughs-and-recoverability",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "moveKind": "reply",
+      "proposition": "Because life need arise only once before replication fills a world, its origin could be an extraordinarily rare singular event beyond the ability of human science to reconstruct.",
+      "sourceSpan": {
+        "startEvent": 1171,
+        "endEvent": 1213
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour explicitly hands the audience question to Joshua, whose sustained answer uses first-person statements about progress, probability, and scientific reach.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-scientific-recoverability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-recurrence-without-mechanism",
+          "pro-chemical-feasibility-standard",
+          "pro-probability-needs-pathway",
+          "pro-four-classes-and-integration",
+          "pro-receding-explanatory-target",
+          "pro-time-promotes-decomposition",
+          "pro-cumulative-unfavorable-steps"
+        ],
+        "components": [
+          {
+            "componentId": "con-rare-origin-scientific-inaccessibility-component-01",
+            "targetMoveId": "pro-recurrence-without-mechanism",
+            "text": "Even multiple independent origins would not disclose how first life formed or resolve its underlying chemistry.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rare-origin-scientific-inaccessibility-component-02",
+            "targetMoveId": "pro-chemical-feasibility-standard",
+            "text": "Possibility requires accounting for the production and assembly of all required molecular classes.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rare-origin-scientific-inaccessibility-component-03",
+            "targetMoveId": "pro-probability-needs-pathway",
+            "text": "Nonzero probability lacks explanatory value without a molecule-to-cell pathway.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rare-origin-scientific-inaccessibility-component-04",
+            "targetMoveId": "pro-four-classes-and-integration",
+            "text": "Correct production, sequencing, interaction, and integration of molecular classes remain unexplained.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rare-origin-scientific-inaccessibility-component-05",
+            "targetMoveId": "pro-receding-explanatory-target",
+            "text": "Growing knowledge of cellular complexity makes the explanatory target recede.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rare-origin-scientific-inaccessibility-component-06",
+            "targetMoveId": "pro-time-promotes-decomposition",
+            "text": "Long timescales hinder synthesis because intermediates decompose without protection and advancement.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rare-origin-scientific-inaccessibility-component-07",
+            "targetMoveId": "pro-cumulative-unfavorable-steps",
+            "text": "Cumulative unfavorable chemical steps undermine abstract appeals to nonzero probability.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move extends the mechanism limitation by explaining why a single self-amplifying event could be both naturally possible and scientifically unrecoverable.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It partially contacts the mechanism concern through recoverability, while leaving the opponent's chemistry-specific objections unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is consistently conditional: one event could suffice, could be extraordinarily rare, and may exceed scientific reconstruction."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Repeated modal qualifications accurately match the speculative but coherent rare-event inference."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Replication explains why one rare origin could fill a world, though rarity alone does not establish permanent scientific inaccessibility."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Replication supports the one-event premise, but extraordinary rarity and inability to reconstruct are expressly speculative and not evidenced further."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the scientific-recoverability subsidiary bridge by connecting singularity, rarity, and reconstruction limits."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move develops a conditional limitation on science rather than materially representing an opposing view."
+        }
+      },
+      "evidenceBasis": "The excerpt states that one originating cell can replicate across Earth and conditionally infers extreme rarity and possible scientific inaccessibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-laboratory-work-not-pathway",
+      "sectionId": "section-progress-and-distance",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Origin-of-life targets are moving farther away, and repeated multistep laboratory syntheses are not advancing toward a plausible prebiotic pathway.",
+      "sourceSpan": {
+        "startEvent": 1215,
+        "endEvent": 1253
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites an addition after Swamidass's answer, and Tour responds in his own voice with chemistry-specific criticism and recommendations.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-progress-versus-target"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rare-origin-scientific-inaccessibility",
+          "con-probability-times-opportunity",
+          "con-limited-clues-not-completion",
+          "con-humble-scientific-agnosticism",
+          "con-independent-origin-falsifier",
+          "con-prevalence-signals-accessibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-laboratory-work-not-pathway-component-01",
+            "targetMoveId": "con-rare-origin-scientific-inaccessibility",
+            "text": "A singular extraordinarily rare origin may lie beyond human science's ability to reconstruct.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-laboratory-work-not-pathway-component-02",
+            "targetMoveId": "con-probability-times-opportunity",
+            "text": "Unknown probability and unknown opportunities make overall natural-origin probability indeterminate.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-laboratory-work-not-pathway-component-03",
+            "targetMoveId": "con-limited-clues-not-completion",
+            "text": "Some directional clues exist despite a very distant complete explanation.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-laboratory-work-not-pathway-component-04",
+            "targetMoveId": "con-humble-scientific-agnosticism",
+            "text": "Scientific humility is warranted because no accurate origin account has been demonstrated.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-laboratory-work-not-pathway-component-05",
+            "targetMoveId": "con-independent-origin-falsifier",
+            "text": "A demonstrably independent exoplanet origin would severely undermine the agnostic probability argument.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-laboratory-work-not-pathway-component-06",
+            "targetMoveId": "con-prevalence-signals-accessibility",
+            "text": "Widespread independent life would indicate that natural origins are comparatively accessible.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies substantial contrary material about laboratory relevance and a receding target, but does not answer the rare-event recoverability inference selected immediately before it.",
+        "responsivenessWithinClass": {
+          "value": 57,
+          "rationale": "It is a strong relevant nonanswer because it bears on scientific progress while missing the decisive rarity-and-recoverability component."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The laboratory-pathway distinction is recoverable, but the annual field-wide receding-target claim lacks a clear scope condition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Laboratory syntheses may omit prebiotic continuity, but the selected evidence does not warrant the broad conclusion that the target moves farther away every year."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Multistep laboratory work can reveal local feasibility even when it does not yet provide a continuous prebiotic pathway.",
+        "decisiveQualification": "Local synthetic success does not itself demonstrate environmental continuity, preservation, or cellular integration."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The pathway objection is coherent, but the leap from limited applicability to a field-wide receding target remains materially underbridged."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The move references repeated multistep synthesis practice, yet the excerpt gives little representative detail establishing lack of progress across the field."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central progress-versus-target bridge by distinguishing laboratory production from a plausible pathway."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move identifies the decisive pathway qualification but understates the evidential value of partial laboratory advances."
+        }
+      },
+      "evidenceBasis": "The excerpt compares origin research with failed apparent gravitational progress and asserts that its target grows more distant despite laboratory activity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-discontinuous-breakthrough-progress",
+      "sectionId": "section-time-breakthroughs-and-recoverability",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "moveKind": "reply",
+      "proposition": "Long periods of scientific confusion can be followed by rapid progress after deep insight or a paradigm shift, leaving open an analogous breakthrough in origin-of-life research.",
+      "sourceSpan": {
+        "startEvent": 1254,
+        "endEvent": 1281
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Swamidass addresses Jim directly and develops a comparison between changes in gravitational understanding and a possible origin-of-life breakthrough.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-discontinuous-progress"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-laboratory-work-not-pathway",
+          "pro-receding-explanatory-target",
+          "pro-chemical-feasibility-standard",
+          "pro-probability-needs-pathway",
+          "pro-four-classes-and-integration",
+          "pro-time-promotes-decomposition",
+          "pro-cumulative-unfavorable-steps",
+          "pro-recurrence-without-mechanism"
+        ],
+        "components": [
+          {
+            "componentId": "con-discontinuous-breakthrough-progress-component-01",
+            "targetMoveId": "pro-laboratory-work-not-pathway",
+            "text": "Repeated laboratory syntheses do not approach a plausible pathway and the origin-of-life target keeps receding.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-discontinuous-breakthrough-progress-component-02",
+            "targetMoveId": "pro-receding-explanatory-target",
+            "text": "Scientific discovery reveals greater cellular complexity and therefore enlarges the explanatory gap.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-discontinuous-breakthrough-progress-component-03",
+            "targetMoveId": "pro-chemical-feasibility-standard",
+            "text": "Natural-origin possibility requires a substantive account of all required production and assembly chemistry.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-discontinuous-breakthrough-progress-component-04",
+            "targetMoveId": "pro-probability-needs-pathway",
+            "text": "Probability language is scientifically empty absent a specified molecule-to-cell pathway.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-discontinuous-breakthrough-progress-component-05",
+            "targetMoveId": "pro-four-classes-and-integration",
+            "text": "Four molecular classes and their correct integration remain unexplained.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-discontinuous-breakthrough-progress-component-06",
+            "targetMoveId": "pro-time-promotes-decomposition",
+            "text": "Long timescales amplify decomposition and side reactions rather than aiding synthesis.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-discontinuous-breakthrough-progress-component-07",
+            "targetMoveId": "pro-cumulative-unfavorable-steps",
+            "text": "Many unfavorable steps defeat abstract appeals to nonzero probability and opportunity.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-discontinuous-breakthrough-progress-component-08",
+            "targetMoveId": "pro-recurrence-without-mechanism",
+            "text": "Independent recurrence would not reveal the chemical mechanism of first life.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The gravity analogy directly resists extrapolating present confusion or apparent distance into continued slow progress by identifying discontinuous scientific change.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It partially answers the progress inference but does not address the laboratory-pathway evidence or chemical basis of the opposing move."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move consistently advances only an analogy-supported possibility of rapid progress after a paradigm shift."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker expressly allows that the opponent might be right and presents breakthrough progress only as an open possibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Origin research may genuinely be moving away because laboratory work fails to model plausible prebiotic pathways.",
+        "decisiveQualification": "Past scientific discontinuities show only that present stagnation does not necessitate continued stagnation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Historical discontinuity defeats a necessity claim about future pace, though gravity is only analogical support for origin research."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Gravity supplies a recognizable example of discontinuous progress, but its comparability to origin chemistry is not defended."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the discontinuous-progress subsidiary bridge with a historical analogy and bounded conclusion."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply preserves the opponent's current-status concern and limits its counterclaim to future epistemic openness."
+        }
+      },
+      "evidenceBasis": "The excerpt describes long periods of gravitational confusion followed by rapid progress from deep insights and paradigm shifts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-chemical-nonzero-possibility",
+      "sectionId": "section-chemical-requirements",
+      "side": "con",
+      "speaker": "S. Joshua Swamidass",
+      "moveKind": "reply",
+      "proposition": "Natural abiogenesis has a probability greater than zero because chemical reactions have finite nonzero probabilities and chemical reactions are sufficient in principle for life to arise.",
+      "sourceSpan": {
+        "startEvent": 1295,
+        "endEvent": 1309
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator poses the question and Swamidass answers directly, referring to Tour's agreement and explaining the thermodynamic basis of his conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-pro-possibility-versus-pathway"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-chemical-feasibility-standard",
+          "pro-probability-needs-pathway",
+          "pro-cumulative-unfavorable-steps",
+          "pro-four-classes-and-integration",
+          "pro-receding-explanatory-target",
+          "pro-time-promotes-decomposition",
+          "pro-recurrence-without-mechanism",
+          "pro-laboratory-work-not-pathway"
+        ],
+        "components": [
+          {
+            "componentId": "con-chemical-nonzero-possibility-component-01",
+            "targetMoveId": "pro-chemical-feasibility-standard",
+            "text": "Natural origin cannot responsibly be called possible without accounting for production and assembly of every required molecular class.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-chemical-nonzero-possibility-component-02",
+            "targetMoveId": "pro-probability-needs-pathway",
+            "text": "Nonzero probability and a vast universe are empty without a specified chemical pathway to a cell.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-chemical-nonzero-possibility-component-03",
+            "targetMoveId": "pro-cumulative-unfavorable-steps",
+            "text": "Many repeated unfavorable steps prevent nonzero probability from carrying explanatory weight.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-chemical-nonzero-possibility-component-04",
+            "targetMoveId": "pro-four-classes-and-integration",
+            "text": "Correct production, sequencing, interaction, and integration of the four molecular classes remain unexplained.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-chemical-nonzero-possibility-component-05",
+            "targetMoveId": "pro-receding-explanatory-target",
+            "text": "Expanding knowledge of complexity makes the explanatory target move farther away.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-chemical-nonzero-possibility-component-06",
+            "targetMoveId": "pro-time-promotes-decomposition",
+            "text": "Time worsens synthesis because products decompose without rapid purification and stabilization.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-chemical-nonzero-possibility-component-07",
+            "targetMoveId": "pro-recurrence-without-mechanism",
+            "text": "Recurrence would not explain the chemical mechanism by which first life formed.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-chemical-nonzero-possibility-component-08",
+            "targetMoveId": "pro-laboratory-work-not-pathway",
+            "text": "Laboratory syntheses do not establish a plausible continuous prebiotic pathway.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly answers the feasibility standard and pathway objections by grounding a bare nonzero possibility in finite reaction probabilities, but it does not establish an integrated pathway.",
+        "responsivenessWithinClass": {
+          "value": 71,
+          "rationale": "It is a partial answer that contacts the decisive possibility demand while leaving the required joint chemistry and pathway largely unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The bare nonzero claim is clear, but “any chemical reaction” and “all you need” blur individual reactions with an organized multistep life-producing process."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Acknowledging an extremely tiny magnitude does not cure the unsupported inference that every required integrated sequence has positive realizable probability."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Individual reactions may be nonzero while the required integrated sequence is unavailable under any common environment or ordering.",
+        "decisiveQualification": "A nonzero joint pathway requires compatible conditions, preservation, sequencing, and assembly, not merely finite probabilities for isolated reactions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 58,
+          "rationale": "The inference commits a composition gap from finite probabilities of individual reactions to a nonzero probability for the entire organized pathway."
+        },
+        "evidenceWarrant": {
+          "value": 56,
+          "rationale": "Thermodynamics is invoked generally, but no support is supplied for compatible conditions or a positive-probability integrated route to life."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central possibility-versus-pathway bridge, albeit with a materially incomplete warrant."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The response recognizes the opponent's probability concern but omits its strongest joint-feasibility qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt grounds nonzero abiogenesis probability in finite reaction probabilities and asserts that chemical reactions suffice, while admitting the value could be minute.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence survives exclusion from the move ratings, response records, relevance findings, and fixed burden structure.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion remains beyond the locked pro bridges.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response components",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any proposed residual would not change pro burden completion independently of already scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence survives exclusion from the move ratings, response records, relevance findings, and fixed burden structure.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion remains beyond the locked con bridges.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response components",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any proposed residual would not change con burden completion independently of already scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

@@ -1,0 +1,2005 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "167",
+  "debateId": "craig-shook-existence-god-2008",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-cumulative-theistic-support",
+      "side": "pro",
+      "description": "Establish that multiple independent features of reality—including cosmic origins, life-permitting conditions, moral objectivity, the historical case concerning Jesus, and immediate experience—provide convergent support for a transcendent personal God.",
+      "successCriteria": "The route succeeds if at least one major inference, or the cumulative interaction of several inferences, supplies a warranted bridge from the available evidence to supernatural personal agency while relevant naturalistic alternatives and epistemic objections are addressed.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-evidence-to-god",
+        "tier": "motion",
+        "description": "Connect the cumulative philosophical, scientific, moral, historical, and experiential evidence to the conclusion that God's existence is supported."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-cosmic-causation-design",
+          "tier": "central",
+          "description": "Show that the universe's beginning or life-permitting structure warrants an inference to transcendent personal causation or design."
+        },
+        {
+          "bridgeId": "pro-central-moral-grounding",
+          "tier": "central",
+          "description": "Show that objective moral values and duties are real and require a foundation beyond naturalistic processes or collective human practice."
+        },
+        {
+          "bridgeId": "pro-central-historical-divine-action",
+          "tier": "central",
+          "description": "Show that the historical claims concerning Jesus are sufficiently grounded and are best accounted for by divine action."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-epistemic-form",
+          "tier": "subsidiary",
+          "description": "Specify the deductive, explanatory, or cumulative form of the theistic inferences and the burden applicable to their premises."
+        },
+        {
+          "bridgeId": "pro-subsidiary-experiential-warrant",
+          "tier": "subsidiary",
+          "description": "Establish when immediate moral or religious experience may provide warranted belief absent a sufficient defeater."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-naturalistic-evidential-restraint",
+      "side": "con",
+      "description": "Establish philosophical naturalism as the warranted position by affirming the known natural world and showing that the proposed cosmological, design, moral, historical, and experiential bridges to supernatural reality lack sufficient justification.",
+      "successCriteria": "The route succeeds if the available evidence does not warrant any proposed bridge from nature to God and continued natural explanation or withholding supernatural belief remains justified without requiring proof that every supernatural possibility is impossible.",
+      "motionBridge": {
+        "bridgeId": "con-motion-no-warranted-supernatural-bridge",
+        "tier": "motion",
+        "description": "Show that the available evidence does not provide a sufficiently justified bridge from known nature to God's existence."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-naturalistic-epistemology",
+          "tier": "central",
+          "description": "Defend evidential restraint toward untestable supernatural claims while explaining why belief in known nature may be retained."
+        },
+        {
+          "bridgeId": "con-central-natural-alternatives",
+          "tier": "central",
+          "description": "Preserve live natural explanations or relevant uncertainty for cosmic origins and life-permitting conditions."
+        },
+        {
+          "bridgeId": "con-central-human-morality",
+          "tier": "central",
+          "description": "Explain how objective but nonabsolute morality can arise through human experience, comparison, deliberation, and social practice."
+        },
+        {
+          "bridgeId": "con-central-historical-experiential-underdetermination",
+          "tier": "central",
+          "description": "Show that historical testimony, miracle reports, and conflicting religious experiences do not uniquely establish supernatural causation."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-burden-posture",
+          "tier": "subsidiary",
+          "description": "Clarify why withholding supernatural belief can be compatible with either atheistic or agnostic terminology."
+        },
+        {
+          "bridgeId": "con-subsidiary-theological-flexibility",
+          "tier": "subsidiary",
+          "description": "Determine whether adaptable theological explanations discriminate among favorable, unfavorable, and religiously conflicting observations."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-epistemic-burdens-and-naturalism",
+      "title": "Epistemic Burdens, Inference Form, and Naturalism",
+      "weightPercent": 18,
+      "rationale": "This issue governs what counts as an evidential bridge beyond nature, whether theistic arguments are deductive or explanatory, and whether failed supernatural inferences warrant naturalism, atheism, agnosticism, or suspended judgment."
+    },
+    {
+      "sectionId": "section-cosmic-beginning-and-transcendent-cause",
+      "title": "Cosmic Beginning and Transcendent Causation",
+      "weightPercent": 17,
+      "rationale": "The universe's temporal or causal origin supplies a direct proposed route beyond physical reality, while questions about infinity, timeless personhood, and further natural reality test whether that route reaches God."
+    },
+    {
+      "sectionId": "section-fine-tuning-and-design",
+      "title": "Fine-Tuning, Alternative Life, and Design",
+      "weightPercent": 17,
+      "rationale": "The evidential significance of life-permitting constants depends on necessity, chance, probability spaces, possible forms of life, broader cosmic populations, and whether design provides a discriminating explanation."
+    },
+    {
+      "sectionId": "section-objective-morality-and-grounding",
+      "title": "Objective Morality, Knowledge, and Grounding",
+      "weightPercent": 19,
+      "rationale": "Moral experience and objective obligation form a principal proposed inference to God, while distinctions among ontology, knowledge, absoluteness, intersubjective practice, evolution, and moral progress define the central clash."
+    },
+    {
+      "sectionId": "section-resurrection-history-and-miracles",
+      "title": "Resurrection, Historical Sources, and Miracle Claims",
+      "weightPercent": 17,
+      "rationale": "The specifically Christian route turns on the historical use of New Testament materials, corroboration standards, natural alternatives, testimony, and whether resurrection or miracle claims warrant an inference to divine action."
+    },
+    {
+      "sectionId": "section-religious-experience-and-disagreement",
+      "title": "Religious Experience and Conflicting Revelations",
+      "weightPercent": 12,
+      "rationale": "Immediate experience is offered as direct warrant for God, while incompatible religious reports and the need for a method of corroboration bear on whether such experience identifies supernatural truth."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-cosmic-beginning-transcendent-personal-cause",
+      "sectionId": "section-cosmic-beginning-and-transcendent-cause",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Because whatever begins to exist has a cause and the universe began to exist, the universe has an uncaused, timeless, spaceless, immaterial, powerful, and personal cause.",
+      "sourceSpan": {
+        "startEvent": 43,
+        "endEvent": 113
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Craig, and this uninterrupted opening argument remains in his first-person presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-causation-design"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive presentation of the central cosmological bridge.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Clearly develops its own major inference within the constructive class."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The syllogism is recoverable, but the transition from a cause to the full personal-cause profile compresses several modal and agency qualifications."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The causal conclusion is argued directly, while the stronger personal and timeless attributes exceed what the displayed premises alone establish."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A beginning might have an impersonal or further-natural cause rather than a personal transcendent agent.",
+        "decisiveQualification": "The argument must justify the move from a cause of spacetime to personal agency."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The basic causal syllogism is valid, but the attribute and personhood derivations retain material implicit bridges."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The excerpt states the premises and conclusion clearly but does not display the full defense of the beginning premise or rival causal possibilities."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports an indispensable cosmic-causation bridge."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The source anticipates the need for personal causation but the selected evidence leaves that decisive bridge compressed."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly gives both premises, the causal conclusion, and the claimed timeless, spaceless, immaterial, powerful, personal cause.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-fine-tuning-design-inference",
+      "sectionId": "section-fine-tuning-and-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe's life-permitting constants and quantities are not adequately explained by physical necessity or chance and therefore support an inference to design.",
+      "sourceSpan": {
+        "startEvent": 114,
+        "endEvent": 162
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This numbered argument occurs continuously within Craig's identified opening speech and uses his explicit argumentative framing.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-causation-design"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive presentation of the central design inference from life-permitting constants.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Presents a clear explanandum and an explicit explanatory partition."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The design inference is clear, but 'chance,' the probability space, and the scope of possible life remain underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The narrow life-permitting example supports evidential concern, but the exhaustive three-option framing and design conclusion need further qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unknown physical constraints, selection effects, or broader cosmological possibilities may weaken the design inference.",
+        "decisiveQualification": "The argument must compare design with live chance and necessity models using a defensible probability space."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The inference is intelligible but depends on a compressed exhaustive trilemma and an unstated likelihood comparison."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "A specific sensitivity claim is offered, while the probability measure and serious rival comparison remain materially compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central design bridge."
+        },
+        "representationalCharity": {
+          "value": 71,
+          "rationale": "Necessity and chance are named, but their strongest forms are not developed in the excerpt."
+        }
+      },
+      "evidenceBasis": "The excerpt supplies a quantitative sensitivity example and identifies necessity, chance, and design as the proposed explanations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-objective-morality-divine-ground",
+      "sectionId": "section-objective-morality-and-grounding",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values and duties exist, naturalism supplies no adequate ground for normative obligation, and God plausibly provides their foundation.",
+      "sourceSpan": {
+        "startEvent": 163,
+        "endEvent": 208
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The numbered moral argument is delivered in the uninterrupted opening address explicitly assigned to William Lane Craig.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive statement of the central moral-grounding inference.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Clearly identifies naturalism's alleged grounding deficit and the proposed divine ground."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conclusion is recoverable, but objective value, normative obligation, relativism, and grounding are not fully distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The word 'plausibly' moderates the divine-ground claim, but categorical statements about naturalism and permission overreach the displayed support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalistic moral realism or nonabsolute human-centered objectivity could reject relativism without invoking God.",
+        "decisiveQualification": "The argument must show why all naturalistic accounts fail, not merely criticize individual or social relativism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The grounding question is legitimate, but the move risks a false choice between divine grounding and relativism."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "It relies mainly on assertion and characterization of naturalistic relativism without representative comparison to stronger rivals."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly advances the indispensable moral-grounding bridge."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The source focuses on relativism and does not fairly resolve stronger naturalistic realist alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt calls naturalism unable to ground normative action and presents God as the plausible objective ground.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-best-explanation",
+      "sectionId": "section-resurrection-history-and-miracles",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Jesus's empty tomb, postmortem appearances, and the disciples' resurrection belief are best explained by God's raising Jesus from the dead, which entails that God exists.",
+      "sourceSpan": {
+        "startEvent": 209,
+        "endEvent": 272
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This fourth numbered case remains within Craig's moderator-identified opening speech and is voiced as his historical inference.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-historical-divine-action"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive historical and explanatory case for divine action.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "States the alleged facts, explanatory hypothesis, and the entailment to God."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The inference is clear, but 'established facts' and 'best explanation' carry source and comparison qualifications not explicit here."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling the facts established and resurrection the best explanation requires documentation, independence analysis, priors, and rival comparison absent from the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Legend, grief experiences, mistaken reports, body removal, or mixed natural processes could account for parts of the tradition.",
+        "decisiveQualification": "A best-explanation claim must compare these alternatives and establish the independence and reliability of its data."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The explanatory form is coherent, but the inference to a supernatural cause depends on substantial unstated comparative premises."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The three alleged facts are asserted as established without displayed source analysis or serious alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supplies the central historical-divine-action inference."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The move announces the comparison but the selected support does not seriously develop the rivals."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies the empty tomb, appearances, and disciples' belief, then declares divine resurrection their best explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-immediate-experience-of-god",
+      "sectionId": "section-religious-experience-and-disagreement",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "A person can rationally know that God exists through immediate experience of God as an encountered reality rather than merely an adopted idea.",
+      "sourceSpan": {
+        "startEvent": 273,
+        "endEvent": 286
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The fifth numbered argument is part of Craig's continuous opening speech and is explicitly presented from his theistic position.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-experiential-warrant"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive experiential-warrant claim presented as an additional route.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "States the experiential route clearly but gives little defeater analysis."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "'Experience,' 'inner voice,' and immediate knowledge are not given stable reliability or identification conditions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The modal claim that one can know through experience is restrained, but the passage omits the conditions separating veridical experience from error."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An experience may be psychologically genuine while misidentifying its source as God.",
+        "decisiveQualification": "The route needs defeater and discrimination conditions for conflicting or natural explanations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "Immediate experiential warrant is a coherent position, but the reliability and identification bridge is materially unstated."
+        },
+        "evidenceWarrant": {
+          "value": 57,
+          "rationale": "The support is largely testimonial and exhortative, with no corroboration or defeater analysis."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Directly supports the subsidiary experiential-warrant bridge."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move affirms experience as an avenue to truth but does not address source-identification objections."
+        }
+      },
+      "evidenceBasis": "The excerpt describes God as an experienced reality and says the inner voice can make God immediately known.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-naturalism-evidential-restraint",
+      "sectionId": "section-epistemic-burdens-and-naturalism",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "constructive",
+      "proposition": "Naturalism is more reasonable because established natural knowledge warrants confidence while untestable supernatural bridges lack evidential support.",
+      "sourceSpan": {
+        "startEvent": 343,
+        "endEvent": 448
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Shook immediately before this uninterrupted opening presentation, which repeatedly identifies the atheist's position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-naturalistic-epistemology"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive presentation of naturalistic evidential restraint.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Explicitly distinguishes proof from comparative reasonableness and states the evidential basis."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparative proposition and its limits are explicit, though the boundary between established nature and untestable supernaturalism remains broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker expressly denies proof and offers naturalism only as the more reasonable conservative hypothesis."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A supernatural hypothesis could receive indirect support even if it is not directly testable.",
+        "decisiveQualification": "Evidential restraint must assess proposed indirect bridges rather than exclude them merely by category."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The inference from established natural knowledge and weak supernatural evidence to comparative restraint is coherent with one bounded inductive bridge."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "It cites expanding scientific knowledge and limited supernatural support, though the comparison remains general."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central naturalistic-epistemology bridge."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move allows comparative reasoning but only briefly indicates why supernatural bridges lack support."
+        }
+      },
+      "evidenceBasis": "The excerpt disclaims proof beyond known nature and grounds comparative confidence in expanding scientific knowledge and limited supernatural evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-timeless-personhood-and-natural-alternatives",
+      "sectionId": "section-cosmic-beginning-and-transcendent-cause",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "reply",
+      "proposition": "The cosmological inference does not establish God because timeless personhood is problematic and further natural cosmological reality remains a live alternative.",
+      "sourceSpan": {
+        "startEvent": 449,
+        "endEvent": 529
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage occurs continuously in Shook's identified opening speech and repeatedly addresses Craig's cosmological claims by name.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-causation-design"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cosmic-beginning-transcendent-personal-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-timeless-personhood-and-natural-alternatives-component-01",
+            "targetMoveId": "pro-cosmic-beginning-transcendent-personal-cause",
+            "text": "The inference must justify how a timeless, unchanging cause can be personal and initiate a temporal universe.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-timeless-personhood-and-natural-alternatives-component-02",
+            "targetMoveId": "pro-cosmic-beginning-transcendent-personal-cause",
+            "text": "The argument must exclude further natural cosmological reality as the cause or context of the universe.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It attacks both the coherence of timeless personal agency and the claimed exclusion of further natural reality, stating that these gaps prevent the inference from establishing God.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Explicitly targets decisive personal-cause and natural-alternative components."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two objections and their consequence for the cosmological inference are clear."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "It preserves natural reality as a live alternative rather than claiming to prove a complete cosmology."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A timeless personal agent may possess an eternal intention with a temporal effect.",
+        "decisiveQualification": "That model still needs an account of agency and the onset of a temporal effect without prior change."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The objections directly expose material missing bridges without claiming that every timeless-agent model is formally contradictory."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The conceptual critique is well specified, while the further-natural alternative is preserved rather than independently evidenced."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the central cosmic-causation bridge."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The objection reaches the strongest agency model, though it does not fully analyze eternal-intention responses."
+        }
+      },
+      "evidenceBasis": "The excerpt links timelessness to absence of change and challenges how Craig's personal God could act before temporal nature.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-hostile-universe-theological-flexibility",
+      "sectionId": "section-fine-tuning-and-design",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "reply",
+      "proposition": "Fine-tuning does not discriminate in favor of design when the universe is hostile to life and theology can accommodate either favorable or unfavorable natural conditions.",
+      "sourceSpan": {
+        "startEvent": 531,
+        "endEvent": 546
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This compact argument remains in Shook's uninterrupted opening speech and directly contrasts naturalist observations with theological responses.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-theological-flexibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-fine-tuning-design-inference"
+        ],
+        "components": [
+          {
+            "componentId": "con-hostile-universe-theological-flexibility-component-01",
+            "targetMoveId": "pro-fine-tuning-design-inference",
+            "text": "Design must discriminate better than alternatives across both life-friendly and hostile features of the universe.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-hostile-universe-theological-flexibility-component-02",
+            "targetMoveId": "pro-fine-tuning-design-inference",
+            "text": "The design case must address possible life under different laws rather than assume only familiar life.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It argues that flexible theological accommodation weakens the observation's discriminating value.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Contacts the decisive explanatory-discrimination issue but does not fully assess design likelihoods."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "'Hostile,' 'immune from evidence,' and theological flexibility are clear enough but somewhat generalized."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The flexibility critique has force, but saying God is immune from all evidence overstates what the displayed examples establish."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A design hypothesis may predict narrow life-permitting constants despite extensive lifeless regions.",
+        "decisiveQualification": "The critique must distinguish ad hoc accommodation from independently motivated design predictions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The underdetermination critique is coherent, though universal evidential immunity is too broad."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The hostile-universe observation is relevant, but the theological comparison is illustrative rather than systematically supported."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Expressly supports the subsidiary theological-flexibility bridge."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "It identifies accommodation but does not fully engage narrower predictive design models."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts alternative-life and hostile-universe observations with adaptable theological replies.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-objective-not-absolute-morality",
+      "sectionId": "section-objective-morality-and-grounding",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "reply",
+      "proposition": "Human-relative morality can be objective without being absolute, so defining objective values as already independent of humanity begs the grounding question.",
+      "sourceSpan": {
+        "startEvent": 554,
+        "endEvent": 576
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker is still Shook in his uninterrupted opening statement and explicitly frames the passage as a response to Craig's moral argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-morality-divine-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-objective-not-absolute-morality-component-01",
+            "targetMoveId": "pro-objective-morality-divine-ground",
+            "text": "The pro argument must justify why objectivity requires complete independence from human ends rather than merely defining it so.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-objective-not-absolute-morality-component-02",
+            "targetMoveId": "pro-objective-morality-divine-ground",
+            "text": "It must exclude objective but nonabsolute human-relative moral standards.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It identifies alleged question-begging in the definition and states the defeating consequence: the divine-ground conclusion has not been earned.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Explicitly attacks the central definition and grounding inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objective-versus-absolute distinction and question-begging objection are plainly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The conclusion is appropriately limited to failure of the presented definition to establish transcendence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Robust moral objectivity may by definition concern truth independent of any individual's or society's attitudes.",
+        "decisiveQualification": "Even then, independence from attitudes does not itself establish divine ontology."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction directly diagnoses a potential equivocation between objective and absolute or transcendent."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "As a conceptual rebuttal it is well grounded in Craig's stated definition, though it does not yet supply a full positive moral theory."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the indispensable moral-grounding bridge."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The response preserves the grounding issue while exposing that the definition alone cannot settle it."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes the independence definition and argues that it builds transcendence into the premise.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-naturalism-burden-challenge",
+      "sectionId": "section-epistemic-burdens-and-naturalism",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Naturalism's categorical claim that physical reality is all that exists is unsupported if its advocate concedes that reason, science, and experience cannot establish that no supernatural reality exists.",
+      "sourceSpan": {
+        "startEvent": 591,
+        "endEvent": 639
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator returns the floor to Craig, whose rebuttal explicitly recalls his opening contentions and directly addresses Shook's speech.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-burden-posture"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-naturalism-evidential-restraint"
+        ],
+        "components": [
+          {
+            "componentId": "pro-naturalism-burden-challenge-component-01",
+            "targetMoveId": "con-naturalism-evidential-restraint",
+            "text": "Naturalism's burden posture must distinguish withholding supernatural belief from the categorical claim that only physical reality exists.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It directly challenges an alleged shift between modest evidential restraint and categorical metaphysical naturalism.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Contacts the burden distinction but partially misreads the opponent's explicit comparative, non-proof formulation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The challenge is clear, but it treats naturalism uniformly as a categorical exclusivity thesis despite the opponent's qualified posture."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "It converts inability to prove naturalism into acceptance by faith and a self-defeat claim, which does not follow from comparative evidential support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalism may be held provisionally as the best-supported worldview without claiming proof that no supernatural reality is possible.",
+        "decisiveQualification": "Failure of proof does not entail faith or internal inconsistency."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 57,
+          "rationale": "The move equivocates between proof, justified comparative belief, and faith."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "It accurately notes the concession of non-proof but does not warrant its stronger characterization of the opponent's position."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Directly reaches the subsidiary burden-posture bridge."
+        },
+        "representationalCharity": {
+          "value": 55,
+          "rationale": "The reply materially weakens the explicitly qualified opposing position."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes the inability to prove that nothing supernatural exists and labels naturalism faith-based and self-inconsistent.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-nature-without-supernatural-bridge",
+      "sectionId": "section-epistemic-burdens-and-naturalism",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "constructive",
+      "proposition": "Naturalism reasonably affirms that nature exists while rejecting supernatural hypotheses for which no evidential bridge has been established.",
+      "sourceSpan": {
+        "startEvent": 777,
+        "endEvent": 789
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Shook's rebuttal immediately before the core, and the uninterrupted first-person rebuttal continues through this window.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-no-warranted-supernatural-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive restatement of the con route-completion condition.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Clearly states nature's existence and the asserted absence of a reasonable supernatural bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The two-part position is clear, but 'reasonable bridge' lacks an explicit evidential threshold."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The posture is evidential, but the excerpt asserts that no supernatural hypothesis is reasonable without comparing every proposed bridge here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Cosmological, moral, historical, or experiential evidence might constitute an indirect bridge.",
+        "decisiveQualification": "The no-bridge conclusion must defeat the actual offered inferences rather than rest on a general crossing metaphor."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The restraint principle is coherent, with a material but bounded need to define bridge adequacy."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Nature's existence is uncontroversial, but the global no-reasonable-bridge premise is asserted more than demonstrated in this excerpt."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "Directly states the con motion bridge and its completion criterion."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The criterion is legitimate but only summarized in this move."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly offers the two claims that nature exists and no supernatural bridge is reasonable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-unknown-life-probability-space",
+      "sectionId": "section-fine-tuning-and-design",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "reply",
+      "proposition": "Fine-tuning does not establish design because other forms of life may flourish under different physical conditions and the relevant space of possibilities remains unknown.",
+      "sourceSpan": {
+        "startEvent": 821,
+        "endEvent": 851
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous rebuttal remains within Shook's assigned turn, with explicit transitions identifying fine-tuning as his next subject.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-causation-design"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-fine-tuning-design-inference",
+          "pro-naturalism-burden-challenge"
+        ],
+        "components": [
+          {
+            "componentId": "con-unknown-life-probability-space-component-01",
+            "targetMoveId": "pro-fine-tuning-design-inference",
+            "text": "The design inference must justify its probability space and its assumptions about what forms of life are possible.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-unknown-life-probability-space-component-02",
+            "targetMoveId": "pro-fine-tuning-design-inference",
+            "text": "A designer's alleged preference for life like us requires additional independent support.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-unknown-life-probability-space-component-03",
+            "targetMoveId": "pro-naturalism-burden-challenge",
+            "text": "Naturalistic restraint may rely on acknowledged ignorance rather than a categorical contrary cosmology.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It directly preserves uncertainty about possible life and identifies an extra theological preference assumption.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Explicitly contacts the decisive probability-space and life-scope demands."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The epistemic claim is expressly limited by 'for all we know' and acknowledged ignorance."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "It claims only that alternatives remain possible and the relevant possibility space is unknown."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Fine-tuning may concern any complex self-replicating embodied life, not merely organisms like us.",
+        "decisiveQualification": "Even that broader target needs a defensible measure over constants and possible life."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "Unknown possibility space validly undercuts a confident probabilistic comparison without pretending to prove alternative life."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The epistemic limitation is well framed, though no positive model of alternative life is supplied or required for the modest conclusion."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the central design inference."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response reaches the underlying probability-space problem rather than relying only on carbon chauvinism."
+        }
+      },
+      "evidenceBasis": "The excerpt says different life may flourish under different properties, acknowledges ignorance, and notes the extra designer-preference premise.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-collective-human-moral-objectivity",
+      "sectionId": "section-objective-morality-and-grounding",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "reply",
+      "proposition": "Objective morality can be sustained through collective moral, legal, and democratic practices without obedience to a supernatural lawgiver.",
+      "sourceSpan": {
+        "startEvent": 852,
+        "endEvent": 907
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shook explicitly transitions to morality and develops the position continuously until announcing his move to the Bible.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-human-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-morality-divine-ground",
+          "pro-naturalism-burden-challenge"
+        ],
+        "components": [
+          {
+            "componentId": "con-collective-human-moral-objectivity-component-01",
+            "targetMoveId": "pro-objective-morality-divine-ground",
+            "text": "The challenge is to explain how human practices can sustain objective moral standards without supernatural command.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-collective-human-moral-objectivity-component-02",
+            "targetMoveId": "pro-naturalism-burden-challenge",
+            "text": "Naturalism must offer a positive account rather than rely only on denial of supernatural grounding.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It supplies a positive human-centered account through collective wisdom, welfare, liberation, law, and revision.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Contacts the positive-account demand but leaves the step from collective improvement to stance-independent objectivity underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The practical account is clear, but 'objective' and the authority of welfare and liberation remain underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The practices plausibly sustain shared standards, but the move does not fully establish philosophical objectivity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Collective agreement and welfare improvement may yield intersubjective norms without objective moral truth.",
+        "decisiveQualification": "The account must explain why its standards are more than revisable consensus."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The positive social-practice account is coherent but leaves a material bridge from collective wisdom to objectivity."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Historical moral and legal improvement is invoked plausibly, though without specific representative examples or a defended normative foundation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central human-morality bridge."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The source gives substantive criteria but does not finish the metaethical bridge."
+        }
+      },
+      "evidenceBasis": "The excerpt appeals to collective civilizational wisdom, welfare, liberation, law, retention, and improvement without supernatural obedience.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-resurrection-corroboration-and-alternatives",
+      "sectionId": "section-resurrection-history-and-miracles",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "reply",
+      "proposition": "The resurrection case lacks adequate independent historical corroboration and permits ordinary natural alternatives to the empty-tomb narrative.",
+      "sourceSpan": {
+        "startEvent": 909,
+        "endEvent": 940
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shook marks a transition to the Bible and maintains the floor through the completed historical critique before changing subjects.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-historical-divine-action"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-best-explanation",
+          "pro-naturalism-burden-challenge"
+        ],
+        "components": [
+          {
+            "componentId": "con-resurrection-corroboration-and-alternatives-component-01",
+            "targetMoveId": "pro-resurrection-best-explanation",
+            "text": "The alleged facts require sufficiently independent historical corroboration before supporting a supernatural best explanation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-resurrection-corroboration-and-alternatives-component-02",
+            "targetMoveId": "pro-resurrection-best-explanation",
+            "text": "Ordinary natural explanations for the empty-tomb tradition must be compared with resurrection.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-resurrection-corroboration-and-alternatives-component-03",
+            "targetMoveId": "pro-naturalism-burden-challenge",
+            "text": "Naturalistic restraint can be supported by underdetermination rather than proof of one complete alternative.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It attacks source independence and raises natural underdetermination, though the excerpt only begins to specify alternatives.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Contacts both corroboration and alternatives, but the natural explanation remains incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The corroboration objection is clear, while the characterization of all intra-biblical support as circular is too broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The lack-of-corroboration point is calibrated, but calling use of different biblical sources logically circular needs source-dependence analysis."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Multiple New Testament traditions may provide partly independent historical attestation even without non-Christian confirmation.",
+        "decisiveQualification": "Independence must be analyzed rather than assumed either from canonical inclusion or from source multiplicity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Lack of independent corroboration and live alternatives weaken a best-explanation claim, but the circularity charge is insufficiently discriminating."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "It identifies the absence of named external sources but does not substantiate the dependence of every relevant internal tradition or finish its alternative."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the central historical-divine-action bridge."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The reply raises a decisive concern but overcompresses the source relationship."
+        }
+      },
+      "evidenceBasis": "The excerpt alleges intra-biblical circularity, notes no contemporary non-Christian corroboration, and begins proposing a natural empty-tomb explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-moral-ontology-not-knowledge",
+      "sectionId": "section-objective-morality-and-grounding",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "God is invoked to ground the objective existence of moral values, not to explain human knowledge of particular moral truths, because evolutionary products alone provide no objective standard.",
+      "sourceSpan": {
+        "startEvent": 1224,
+        "endEvent": 1239
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Shook's question ends immediately before this window, and Craig gives a sustained first-person answer until Shook begins a new question.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-objective-not-absolute-morality",
+          "con-collective-human-moral-objectivity",
+          "con-naturalism-evidential-restraint"
+        ],
+        "components": [
+          {
+            "componentId": "pro-moral-ontology-not-knowledge-component-01",
+            "targetMoveId": "con-objective-not-absolute-morality",
+            "text": "The reply must distinguish the ontology of objective value from human knowledge or acquisition of moral beliefs.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-moral-ontology-not-knowledge-component-02",
+            "targetMoveId": "con-collective-human-moral-objectivity",
+            "text": "It must explain why evolutionary and collective processes do not themselves supply an objective ontological standard.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-moral-ontology-not-knowledge-component-03",
+            "targetMoveId": "con-naturalism-evidential-restraint",
+            "text": "It must supply a positive supernatural grounding bridge rather than rely on epistemic gaps.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It clearly draws the ontology/knowledge distinction and attacks evolutionary reduction, but it does not independently establish that a transcendent personal ground exists.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Contacts the decisive distinction and one rival component while leaving the positive-grounding bridge incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The ontology/epistemology distinction is precise, but 'ephemeral,' 'non-objective,' and 'transcendent anchor' compress the metaphysical argument."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "'It seems to me' moderates the claim, but the move from evolutionary origin to nonobjectivity remains insufficiently warranted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolution may explain moral cognition while objective moral truths, natural or nonnatural, remain independent of that genealogy.",
+        "decisiveQualification": "A causal genealogy of belief does not by itself settle moral ontology."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The central distinction is sound, but the evolutionary-debunking and transcendent-ground steps retain material bridges."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Universal moral codes are mentioned, yet the need for a transcendent ground is asserted rather than comparatively demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central moral-grounding bridge."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The reply correctly separates knowledge and ontology but then leans on a genealogical inference that does not exclude realist alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes instinctive moral knowledge from ontological foundation and argues that an evolutionary byproduct lacks an objective anchor.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-new-testament-historical-criteria",
+      "sectionId": "section-resurrection-history-and-miracles",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "New Testament documents may be assessed as historical sources without mandatory external corroboration by applying criteria such as multiple attestation, embarrassment, and dissimilarity.",
+      "sourceSpan": {
+        "startEvent": 1248,
+        "endEvent": 1261
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig directly answers Shook's request for corroboration, and the answer remains his uninterrupted contribution until Shook responds.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-historical-divine-action"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-resurrection-corroboration-and-alternatives",
+          "con-objective-not-absolute-morality"
+        ],
+        "components": [
+          {
+            "componentId": "pro-new-testament-historical-criteria-component-01",
+            "targetMoveId": "con-resurrection-corroboration-and-alternatives",
+            "text": "Historical reliability should be assessed through source-critical criteria, not a categorical requirement of external corroboration.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-new-testament-historical-criteria-component-02",
+            "targetMoveId": "con-resurrection-corroboration-and-alternatives",
+            "text": "The reply must address the independence and reliability of the specific resurrection traditions.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-new-testament-historical-criteria-component-03",
+            "targetMoveId": "con-objective-not-absolute-morality",
+            "text": "No decisive component of the moral objection is addressed.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "It justifies replacing mandatory outside corroboration with ordinary historical criteria, but does not show their application to the particular resurrection claims.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "The reframe is legitimate and explicit, while the specific reliability demand remains partly unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The methodological proposition and named criteria are clear, but 'very good reason to trust' is broader than the displayed application supports."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The criteria are relevant, but no actual application, source-independence analysis, or result is supplied in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "External corroboration is not always mandatory, but extraordinary and disputed claims may reasonably require stronger independent support.",
+        "decisiveQualification": "Internal criteria must be applied rigorously and do not automatically establish a miracle."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The methodological reframe is coherent and historically usable, with a bounded missing application step."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "It names recognized criteria but asserts historians' favorable result without representative analysis of the documents."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central historical-evidence bridge."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The response fairly rejects a universal external-source rule but overstates what the named criteria have yet shown."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects mandatory external corroboration and names multiple attestation, embarrassment, and dissimilarity as alternative tests.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-beginning-falsifies-naturalism",
+      "sectionId": "section-cosmic-beginning-and-transcendent-cause",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Philosophical and contemporary cosmological support for an absolute beginning, combined with the causal premise, deductively implies a transcendent cause beyond the universe and conflicts with naturalism.",
+      "sourceSpan": {
+        "startEvent": 1297,
+        "endEvent": 1304
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly numbers and summarizes his closing arguments during a moderator-assigned uninterrupted closing statement.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-natural-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-timeless-personhood-and-natural-alternatives",
+          "con-naturalism-evidential-restraint",
+          "con-nature-without-supernatural-bridge"
+        ],
+        "components": [
+          {
+            "componentId": "pro-beginning-falsifies-naturalism-component-01",
+            "targetMoveId": "con-timeless-personhood-and-natural-alternatives",
+            "text": "The reply must establish an absolute cosmic beginning strongly enough to exclude further past natural reality.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-beginning-falsifies-naturalism-component-02",
+            "targetMoveId": "con-timeless-personhood-and-natural-alternatives",
+            "text": "It must answer the coherence objection to timeless personal agency.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-beginning-falsifies-naturalism-component-03",
+            "targetMoveId": "con-naturalism-evidential-restraint",
+            "text": "It must show why a beginning warrants a transcendent cause rather than merely epistemic restraint.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-beginning-falsifies-naturalism-component-04",
+            "targetMoveId": "con-nature-without-supernatural-bridge",
+            "text": "It must supply a causal bridge beyond nature.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It directly appeals to cosmology and the causal premise for a transcendent cause, but does not answer the timeless-personhood objection and overstates the theorem's reach.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Contacts the beginning and causal-bridge components but leaves a decisive agency component unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "'Absolute beginning,' 'any universe in expansion,' 'transcendent cause,' and 'falsifies naturalism' shift across physical-model and metaphysical scopes."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The theorem attribution and causal conclusion are stated as deductively decisive without the model conditions or distinction between past incompleteness and absolute nonbeing."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Past-incompleteness results may indicate a boundary of an expanding spacetime model without proving that all natural reality began absolutely.",
+        "decisiveQualification": "The conclusion needs a bridge from the theorem's conditions to metaphysical creation and personal transcendence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 65,
+          "rationale": "The causal syllogism is recognizable, but the jump from cosmological theorem to absolute beginning and falsification of naturalism is materially underqualified."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Named authorities and a theorem are cited, yet the theorem's scope and the claimed metaphysical consequence are not defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the central natural-alternatives bridge."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The reply does not preserve the strongest natural-boundary interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt cites Hawking, Vilenkin, Borde, and Guth, claims an absolute beginning, and infers a transcendent cause that falsifies naturalism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-fine-tuning-excludes-alternative-life",
+      "sectionId": "section-fine-tuning-and-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Changing the relevant constants would preclude matter, chemistry, and complex self-replicating organisms rather than merely produce different life, so fine-tuning still calls for explanation and supports intelligent design.",
+      "sourceSpan": {
+        "startEvent": 1305,
+        "endEvent": 1321
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig marks this as the second argument in his uninterrupted closing statement and completes it before turning to morality.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-natural-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-unknown-life-probability-space",
+          "con-hostile-universe-theological-flexibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-fine-tuning-excludes-alternative-life-component-01",
+            "targetMoveId": "con-unknown-life-probability-space",
+            "text": "The reply must show that the relevant changes prevent any complex self-replicating life, not merely life like us.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-fine-tuning-excludes-alternative-life-component-02",
+            "targetMoveId": "con-hostile-universe-theological-flexibility",
+            "text": "It must show why design remains discriminating despite theological flexibility and a largely lifeless universe.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-fine-tuning-excludes-alternative-life-component-03",
+            "targetMoveId": "con-unknown-life-probability-space",
+            "text": "It must still justify the probability comparison and design inference after narrowing the life target.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It directly answers the alternative-life component by invoking matter, chemistry, and complexity, but leaves probability and design-discrimination components unresolved.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Contacts the decisive alternative-life component while omitting two major explanatory components."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The broadened target of complex self-replicating organisms is clear, but the range of constant changes and modal scope are not specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The matter-and-chemistry point answers one objection, but 'only bias' and the immediate inference to intelligent design exceed the displayed warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even if most parameter changes preclude complexity, unknown measures, correlations, or broader cosmologies may affect the design comparison.",
+        "decisiveQualification": "Showing fragility is not by itself a probability measure or a likelihood comparison favoring design."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The response rebuts a narrow alternative-life objection but does not logically complete the inference from fragility to design."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "It offers relevant physical claims about matter and chemistry, though without representative ranges or comparative probabilities."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly attacks the central natural-alternatives bridge."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The reply fairly broadens life beyond humanity but does not engage the strongest probabilistic alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt claims that absent fine-tuning matter, chemistry, and complex self-replication would be impossible, then infers intelligent design.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-miracle-testimony-corroboration",
+      "sectionId": "section-resurrection-history-and-miracles",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "reply",
+      "proposition": "Miracle testimony does not establish supernatural causation when corroboration is lacking and alleged wonders remain open to natural explanation.",
+      "sourceSpan": {
+        "startEvent": 1576,
+        "endEvent": 1599
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the miracles question to Shook, and the sustained answer expressly describes the naturalist's method and conclusion.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-historical-experiential-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-best-explanation",
+          "pro-new-testament-historical-criteria",
+          "pro-fine-tuning-excludes-alternative-life"
+        ],
+        "components": [
+          {
+            "componentId": "con-miracle-testimony-corroboration-component-01",
+            "targetMoveId": "pro-resurrection-best-explanation",
+            "text": "A supernatural best-explanation claim must address rival miracle testimony and natural explanations evenhandedly.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-miracle-testimony-corroboration-component-02",
+            "targetMoveId": "pro-new-testament-historical-criteria",
+            "text": "The reply must explain why the stated historical criteria do not sufficiently corroborate the specific miracle claim.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-miracle-testimony-corroboration-component-03",
+            "targetMoveId": "pro-fine-tuning-excludes-alternative-life",
+            "text": "No decisive fine-tuning component is addressed.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It directly raises symmetry across religions and the availability of natural explanation, but does not specifically analyze the New Testament criteria.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "Contacts a decisive rival-testimony component while leaving the specific historical-method reply unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The symmetry objection is clear, while 'all alleged events' and 'simplest explanation' cover a broad heterogeneous class."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Rival reports undermine selective acceptance, but naturalism is declared the simplest explanation without event-specific comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A theist may distinguish miracle reports by historical quality rather than accept every religion's claims symmetrically.",
+        "decisiveQualification": "The critique must compare the actual evidential quality of the reports, not merely note religious diversity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The symmetry and underdetermination points are coherent, but the global simplicity conclusion is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The existence of rival miracle claims is relevant, while no representative cases or corroboration comparison are supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Directly supports the central historical-experiential underdetermination bridge."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "It identifies a real consistency demand but labels hypocrisy before completing the evidential comparison."
+        }
+      },
+      "evidenceBasis": "The excerpt cites rival religions' miracle claims, alleges asymmetric treatment, and asserts an evenhanded natural account.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-deductive-inference-form",
+      "sectionId": "section-epistemic-burdens-and-naturalism",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Craig's principal theistic arguments are deductive: when their premises are more plausible than their denials, their conclusions follow logically rather than depending solely on explanatory comparison.",
+      "sourceSpan": {
+        "startEvent": 1637,
+        "endEvent": 1651
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is the second, explicitly signposted part of Craig's uninterrupted answer to the audience member's challenge about explanatory value.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-epistemic-form"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-naturalism-evidential-restraint",
+          "con-nature-without-supernatural-bridge",
+          "con-miracle-testimony-corroboration"
+        ],
+        "components": [
+          {
+            "componentId": "pro-deductive-inference-form-component-01",
+            "targetMoveId": "con-naturalism-evidential-restraint",
+            "text": "The opposing critique must assess whether the deductive arguments' premises are more plausible than their denials rather than demand only explanatory comparison.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-deductive-inference-form-component-02",
+            "targetMoveId": "con-nature-without-supernatural-bridge",
+            "text": "A deductive argument can constitute a supernatural bridge if its premises are adequately warranted.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-deductive-inference-form-component-03",
+            "targetMoveId": "con-miracle-testimony-corroboration",
+            "text": "The resurrection argument's inductive and historical warrant is not repaired merely by describing other arguments as deductive.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "It correctly diagnoses that deductive arguments are evaluated through premise support and validity, but overgeneralizes across arguments and does not itself defend the premises.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Explicitly contacts the inference-form demand and states the defeating consequence for a category mistake."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The deductive standard is clear, but 'principal arguments' and 'all that matters' obscure differences between deductive and inductive moves."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Validity does make conclusions unavoidable conditional on premises, but knowledge also depends on adequately warranted premises and the debate includes nondeductive arguments."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even a deductively valid argument may have little explanatory or evidential value when its premises are not independently warranted.",
+        "decisiveQualification": "The response must preserve premise warrant as essential rather than treat bare greater plausibility as automatically knowledge-producing."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The conditional point about deductive validity is correct, with a bounded overgeneralization about the argument set."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The move clarifies form but supplies no new support for the contested premises."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Directly supports the subsidiary epistemic-form bridge."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "It states the premise test but compresses the evidential work needed to satisfy it."
+        }
+      },
+      "evidenceBasis": "The excerpt says that if premises are more plausible than their denials the conclusion is logically unavoidable and distinguishes deduction from best-explanation reasoning.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-conflicting-religious-experiences",
+      "sectionId": "section-religious-experience-and-disagreement",
+      "side": "con",
+      "speaker": "John Shook",
+      "moveKind": "reply",
+      "proposition": "Conflicting religious experiences cannot reliably establish supernatural truth because incompatible claimants cannot all be correct and no sound selection method is supplied.",
+      "sourceSpan": {
+        "startEvent": 1806,
+        "endEvent": 1816
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question explicitly concerns Shook's treatment of religious experience, and his answer announces reasons before developing the inconsistency objection.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-experiential-warrant"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-immediate-experience-of-god",
+          "pro-deductive-inference-form",
+          "pro-resurrection-best-explanation"
+        ],
+        "components": [
+          {
+            "componentId": "con-conflicting-religious-experiences-component-01",
+            "targetMoveId": "pro-immediate-experience-of-god",
+            "text": "Immediate religious experience must include a method for discriminating among incompatible claimed revelations.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-conflicting-religious-experiences-component-02",
+            "targetMoveId": "pro-deductive-inference-form",
+            "text": "No decisive component concerning deductive validity is addressed.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-conflicting-religious-experiences-component-03",
+            "targetMoveId": "pro-resurrection-best-explanation",
+            "text": "The diversity of religious claims bears generally on supernatural identification but does not directly assess the resurrection evidence.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "It directly invokes incompatible experiences and the rational demand for consistency, undermining unqualified experiential identification.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Explicitly contacts the decisive defeater for immediate experiential warrant."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The inconsistency objection is clear, but the excerpt does not distinguish contradictory propositional contents from potentially compatible generic experiences."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move appropriately argues unreliability or underdetermination rather than that every experience must be false."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Different experiences might contain a common veridical core while cultural interpretation produces divergent doctrines.",
+        "decisiveQualification": "The experiencer still needs a reliable method for selecting the true source and content among incompatible interpretations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Conflicting identifications coherently function as a defeater for unqualified immediate knowledge, though not as proof that all experiences are false."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Religious diversity is a relevant and representative consideration, but the excerpt supplies no detailed cases or selection-method analysis."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Directly attacks the subsidiary experiential-warrant bridge."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The consistency demand remains decisive even under the strongest common-core interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes profound inconsistency among claimants to different gods and invokes consistency as a rational requirement.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "None beyond the individually assessed arguments and replies.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "None beyond the individually assessed arguments and replies.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

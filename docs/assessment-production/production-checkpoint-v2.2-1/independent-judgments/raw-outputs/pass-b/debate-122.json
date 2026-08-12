@@ -1,0 +1,1642 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "122",
+  "debateId": "horn-oconnor-god-existence-2020",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-cumulative-classical-theism",
+      "side": "pro",
+      "description": "Establish classical theism through convergent arguments from contingent existence, change and causal finitude, then identify the necessary ground as personal, knowledgeable, powerful, and good while defending this conclusion against objections from quantum randomness, freedom, and suffering.",
+      "successCriteria": "The route succeeds if contingent and changing reality requires a necessary explanatory cause, the cause has attributes sufficient for the motion-level identification with God, moral facts reinforce divine goodness, and evil and quantum indeterminacy do not defeat those inferences.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-divine-identification",
+        "tier": "motion",
+        "description": "Connect the necessary explanatory cause and its derived personal, cognitive, powerful, and good attributes to the conclusion that God exists."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-necessary-ground",
+          "tier": "central",
+          "description": "Show that contingent reality, change, and any finite causal history require an uncaused, purely actual, necessarily existing explanatory ground."
+        },
+        {
+          "bridgeId": "pro-central-divine-attributes",
+          "tier": "central",
+          "description": "Derive timelessness, immateriality, power, personality, and knowledge from the nature and explanatory role of the first cause."
+        },
+        {
+          "bridgeId": "pro-central-moral-ground",
+          "tier": "central",
+          "description": "Show that objective moral facts, human worth, and responsibility require or support a perfectly good divine foundation."
+        },
+        {
+          "bridgeId": "pro-central-defeater-response",
+          "tier": "central",
+          "description": "Show that suffering can be permitted for greater goods or prevention of greater evils and therefore does not contradict or outweigh the case for God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-limited-psr",
+          "tier": "subsidiary",
+          "description": "Defend an existence-focused principle of sufficient reason that remains applicable even if particular quantum outcomes are probabilistic."
+        },
+        {
+          "bridgeId": "pro-subsidiary-agency-and-intentionality",
+          "tier": "subsidiary",
+          "description": "Defend agent causation and irreducible intentionality as support for free responsibility and personal explanation."
+        }
+      ]
+    },
+    {
+      "routeId": "con-agnostic-undercutting-case",
+      "side": "con",
+      "description": "Withhold theistic belief by challenging the premises and divine identification of the affirmative causal case, disputing its moral and free-will commitments, and presenting apparently gratuitous animal suffering as evidence that fits a loving, perfectly good God less well than a non-theistic world.",
+      "successCriteria": "The route succeeds if sufficient reason and the first-cause inferences remain unsupported or internally costly, moral considerations do not establish God, and the quantity or character of suffering supplies an unresolved evidential reason against the proposed divine attributes.",
+      "motionBridge": {
+        "bridgeId": "con-motion-theism-not-established",
+        "tier": "motion",
+        "description": "Connect the underdetermination of the affirmative arguments and the evidence from apparently gratuitous suffering to agnostic nonacceptance of theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-psr-challenge",
+          "tier": "central",
+          "description": "Show that sufficient reason risks assuming an ultimate terminus, conflicts with quantum indeterminacy, or permits an unexplained cosmic event when narrowed."
+        },
+        {
+          "bridgeId": "con-central-divine-identification-gap",
+          "tier": "central",
+          "description": "Show that causal or explanatory reasoning does not adequately establish a personal divine agent rather than another ultimate foundation."
+        },
+        {
+          "bridgeId": "con-central-moral-freedom-challenge",
+          "tier": "central",
+          "description": "Challenge objective ought-claims, divine moral grounding, and the compatibility of sufficient explanation with libertarian responsibility."
+        },
+        {
+          "bridgeId": "con-central-gratuitous-suffering",
+          "tier": "central",
+          "description": "Show that apparently unnecessary animal suffering and the possibility of less evil are improbable under a loving and perfectly good creator."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-heaven-dilemma",
+          "tier": "subsidiary",
+          "description": "Use freedom without earthly suffering in heaven to test whether grave evil is necessary for free agency, virtue, or perfected relationship."
+        },
+        {
+          "bridgeId": "con-subsidiary-epistemic-standard",
+          "tier": "subsidiary",
+          "description": "Require independent truth-directed support beyond internal coherence and resist appeals to inaccessible divine reasons that presuppose the disputed deity."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "contingency-causation",
+      "title": "Contingency, Change, and the Necessary Ground",
+      "weightPercent": 24,
+      "rationale": "This issue contains the foundational affirmative inferences from contingent existence, actualization, and causal finitude, together with the objection that sufficient explanation assumes rather than establishes an ultimate terminus."
+    },
+    {
+      "sectionId": "psr-quantum-randomness",
+      "title": "Sufficient Reason and Quantum Randomness",
+      "weightPercent": 18,
+      "rationale": "This issue tests whether quantum indeterminacy defeats the explanatory principle, whether probabilistic causes remain sufficient, and whether narrowing the principle preserves or undercuts the inference from the universe to a necessary being."
+    },
+    {
+      "sectionId": "divine-attributes-personal-explanation",
+      "title": "Divine Attributes and Personal Explanation",
+      "weightPercent": 16,
+      "rationale": "This issue governs the indispensable transition from a generic cause or necessary foundation to a timeless, immaterial, powerful, knowledgeable, and personal being recognizable as God."
+    },
+    {
+      "sectionId": "morality-freedom-responsibility",
+      "title": "Morality, Freedom, and Responsibility",
+      "weightPercent": 17,
+      "rationale": "This issue addresses whether objective value, human worth, obligation, and responsibility support divine grounding, as well as whether metaethical skepticism or explanatory determinism blocks that route."
+    },
+    {
+      "sectionId": "evil-animal-suffering",
+      "title": "Evil, Animal Suffering, and Greater-Good Defenses",
+      "weightPercent": 25,
+      "rationale": "This issue contains the principal affirmative evidence against a loving and perfectly good God and the principal theistic replies involving greater goods, regular natural order, worthwhile existence, human epistemic limits, and heavenly freedom."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-contingent-reality-external-explanation",
+      "sectionId": "contingency-causation",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Contingent things cannot receive their ultimate explanation from another contingent thing or from the whole collection of contingent things, so contingent reality requires an explanation beyond the universe.",
+      "sourceSpan": {
+        "startEvent": 153,
+        "endEvent": 204
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Trent the opening statement, and Trent presents this numbered argument continuously in the first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-necessary-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive move establishing the route's necessary-ground premise, so no earlier opposing move requires an answer.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "As a constructive argument, it directly develops its assigned explanatory claim with a clear inferential sequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conclusion and contingent-versus-necessary contrast are recoverable, though the scope of the explanatory principle remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move asserts necessity while compressing the defense of why a totality of contingent things cannot explain itself."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The inference is intelligible, but the rejection of a contingent totality as its own ultimate explanation needs a fuller bridge."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The examples motivate explanatory expectation, but support for universal application and rival comparison remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the indispensable central bridge from contingent reality to an external necessary ground."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed rival account is treated closely enough in this selected span to support a meaningful charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes ordinary explanatory expectations and expressly denies that another contingent thing or the collection supplies the ultimate explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-change-requires-pure-actualizer",
+      "sectionId": "contingency-causation",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Because derivative actualizers cannot explain the actuality of the entire series, change requires a first actualizer that is pure actuality and is not itself actualized.",
+      "sourceSpan": {
+        "startEvent": 227,
+        "endEvent": 256
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening statement and explicit transition to the property of change firmly identify Trent as the source.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-necessary-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies a second necessary-ground route from derivative actualization and does not answer an earlier opposing move.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "It coherently develops the assigned change argument and states the proposed terminus of derivative actualization."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Pure actuality and derivative actualization remain stable, but the relevant type and scope of causal series are not expressly delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical conclusion outruns the train analogy unless the essentially ordered character of the series is expressly defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An infinite derivative series might possess actuality without a first member.",
+        "decisiveQualification": "The analogy must establish dependence of the whole series, not merely temporal succession."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The argument is coherent if the series is essentially ordered, but that decisive scope condition remains materially implicit."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The locomotive analogy illustrates the claim but does not independently establish the metaphysical dependence principle it requires."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central bridge requiring an unactualized and purely actual explanatory ground."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move denies an infinite series but relies on the locomotive analogy without fully addressing the strongest dependence-based alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts derivative actualizers with a locomotive-dependent train and concludes that the series requires a cause that is pure actuality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-first-cause-metaphysical-attributes",
+      "sectionId": "divine-attributes-personal-explanation",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "A purely actual first cause must be changeless, timeless, immaterial, unlimited in power, and necessarily existent rather than a changing material constituent of the universe.",
+      "sourceSpan": {
+        "startEvent": 330,
+        "endEvent": 388
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Trent proceeds through numbered questions three through seven, explicitly deriving each attribute of the previously inferred cause.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-attributes"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move derives metaphysical attributes from the proposed first cause and has no earlier opposing demand to answer.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It directly develops the assigned attribute bridge through several explicit property-by-property inferences."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The attributed properties are clear, though claims about all matter changing and space necessarily involving time require qualifications."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Several modal derivations are asserted categorically despite compressed defenses of their scope and conceptual necessity."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The derivations form a consistent chain, but some transitions from changelessness to timelessness and immateriality remain underargued."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The stated reasons are relevant, yet broad empirical and metaphysical premises receive little defense or alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supplies multiple indispensable attributes required by the central divine-identification bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span presents affirmative derivations without sustained engagement with a distinct rival account of first-cause attributes."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly reasons from changelessness to timelessness and from timelessness and change-related claims to spacelessness or immateriality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-personal-all-knowing-cause",
+      "sectionId": "divine-attributes-personal-explanation",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "The universe's cause is personal and all-knowing because abstract entities lack causal efficacy, creation from nothing calls for agent explanation, and necessary truths require a necessarily existing mind.",
+      "sourceSpan": {
+        "startEvent": 389,
+        "endEvent": 446
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Trent labels this his eighth question and enumerates five considerations for a personal cause in one continuous presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-divine-identification"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move attempts the motion-level identification of the cause as personal and cognitive, without an earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It squarely develops the assigned personal-cause inference, though several independent considerations are compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The conclusion is recoverable, but mind, abstract existence, causal efficacy, and explanatory priority shift across distinct arguments."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The necessity of a personal all-knowing mind is stronger than the compressed premises about agency and abstract truths warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Necessary truths may exist independently of minds or without requiring a necessarily existing divine knower.",
+        "decisiveQualification": "Their necessity alone does not establish that they reside in a causally prior mind."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The argument combines several relevant considerations, but its necessary-truth-to-necessary-mind bridge is substantially unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "Claims about abstract objects, agent explanation, and unlimited knowledge are largely asserted without serious rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "The move directly attempts the motion-level bridge from a generic necessary cause to a personal, all-knowing God."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move asserts that such entities exist only in minds but does not adequately engage the strongest mind-independent alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt says necessary abstract entities exist in a necessarily existing mind and infers unlimited knowledge from the mind's lack of potentiality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-moral-realism-divine-source",
+      "sectionId": "morality-freedom-responsibility",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Objective moral facts support God's existence because discovered moral truths require an objective foundation, and the first cause is supremely good as their divine source.",
+      "sourceSpan": {
+        "startEvent": 447,
+        "endEvent": 523
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Trent introduces the moral dimension as his final numbered question and explicitly states and defends a moral-realism syllogism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move offers moral realism as an additional divine-grounding argument and does not answer an earlier locked opposition.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It clearly states its syllogism and relevant moral-foundation claim, although its central conditional is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Moral realism is defined clearly, but the scope of moral facts and the required kind of objective foundation remain underqualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical conditional from moral realism to God is substantially stronger than the supplied grounding discussion establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective moral facts could be brute, natural, nonnatural, or otherwise independent of a divine source.",
+        "decisiveQualification": "Showing that morality is discovered does not by itself exclude nond divine objective foundations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "The syllogistic form is valid, but the indispensable conditional equating moral realism with divine grounding is insufficiently defended."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The move offers definition and assertion but little representative support for excluding competing foundations of objective value."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central route bridge connecting objective moral facts to a perfectly good divine foundation."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "The move states divine grounding but does not seriously compare the principal realist alternatives to that grounding account."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly states that if moral realism is true God exists, defines realism as discovered moral truth, and identifies God as its source.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-animal-suffering-evidential-case",
+      "sectionId": "evil-animal-suffering",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "Apparently gratuitous animal suffering is more expected under naturalism and seriously undermines belief in a loving and just God.",
+      "sourceSpan": {
+        "startEvent": 623,
+        "endEvent": 807
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the opening statement to Alex, who expressly identifies animal suffering as his affirmative case and develops it continuously.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-theism-not-established"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is the con side's principal constructive evidential case and therefore has no earlier opposing locked move requiring response analysis.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "The move develops a concrete probabilistic challenge that directly advances its side's motion-level route."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The argument consistently concerns apparently gratuitous animal suffering and frames its conclusion evidentially rather than deductively."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The case uses comparative expectation and pointed questions rather than claiming a strict contradiction or certain gratuitousness."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A perfectly good God may have morally sufficient reasons for permitting animal suffering.",
+        "decisiveQualification": "The reasons must account for the intensity, duration, and apparently avoidable marginal suffering described."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The comparative evidential inference is clear and avoids treating unexplained suffering as a deductive disproof of God."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Concrete cases support the evidential burden, though comparative likelihood and representativeness remain only partly developed."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move directly connects apparently gratuitous suffering to motion-level agnostic nonacceptance of a loving and just God."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move expressly grants the possibility of sufficient reasons and targets whether they plausibly require the particular excess suffering."
+        }
+      },
+      "evidenceBasis": "The excerpt gives a specific trapped-deer case and asks whether five additional minutes of hunger and agony are necessary for any sufficient divine reason.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-heaven-free-will-counterexample",
+      "sectionId": "evil-animal-suffering",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "If heaven contains free will without suffering, it provides a counterexample to the claim that genuine freedom requires permitting grave suffering.",
+      "sourceSpan": {
+        "startEvent": 808,
+        "endEvent": 860
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex explicitly turns to the standard free-will defense, poses his heaven objection to Trent, and completes it in the delivered lookahead.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-heaven-dilemma"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-moral-realism-divine-source"
+        ],
+        "components": [
+          {
+            "componentId": "con-heaven-free-will-counterexample-component-01",
+            "targetMoveId": "pro-moral-realism-divine-source",
+            "text": "Whether the theistic moral framework can justify grave suffering through morally significant freedom.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts a freedom-related implication of the earlier divine-goodness case, but the earlier move did not itself present a developed free-will defense of suffering.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It contacts a secondary implication rather than a decisive premise actually developed in the selected earlier move."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The heaven counterexample is clear, with only an implicit assumption that heavenly and earthly freedom are relevantly comparable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The argument is framed conditionally and interrogatively, appropriately reflecting dependence on assumptions about heavenly freedom."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Heavenly freedom may differ from earthly freedom because character is perfected through prior freely chosen development.",
+        "decisiveQualification": "That distinction requires explaining why earthly grave suffering is necessary for the relevant development."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Given its conditional assumptions, heaven is a coherent counterexample to the unrestricted claim that freedom requires grave suffering."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The conceptual counterexample is apt, though its force depends on theological premises about freedom and wrongdoing in heaven."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "The move strongly supports the subsidiary heaven dilemma but does not independently complete the central suffering case."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The dilemma allows differing accounts of heaven but preserves the central demand for a relevant freedom-based distinction."
+        }
+      },
+      "evidenceBasis": "The excerpt asks whether heaven has free will while denying comparable freedom to inflict suffering, setting out the intended counterexample directly.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-psr-free-will-tension",
+      "sectionId": "morality-freedom-responsibility",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Requiring a sufficient explanation for every particular thought produces a deterministic explanatory chain that threatens libertarian freedom and moral responsibility.",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 952
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening-statement turn and direct first-person framing identify Alex O'Connor as the speaker.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-moral-freedom-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-contingent-reality-external-explanation",
+          "pro-moral-realism-divine-source"
+        ],
+        "components": [
+          {
+            "componentId": "con-psr-free-will-tension-component-01",
+            "targetMoveId": "pro-contingent-reality-external-explanation",
+            "text": "Whether the asserted explanatory principle applies only to existence or also to every particular event and thought.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-psr-free-will-tension-component-02",
+            "targetMoveId": "pro-moral-realism-divine-source",
+            "text": "Whether moral responsibility remains available if every particular choice has a fully sufficient determining explanation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The move diagnoses a scope consequence for unrestricted sufficient reason and states that deterministic explanation of each thought threatens the responsibility invoked by the moral route.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It explicitly identifies the scope premise, traces its consequence, and connects that consequence to freedom and responsibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The target is expressly an unrestricted principle applying to every particular thought, and the libertarian consequence is clearly identified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The tension is well framed, though sufficient explanation is treated as tending toward determination without fully excluding nondetermining explanations."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A sufficient explanation of a choice might include nondetermining agent reasons rather than antecedent determining conditions.",
+        "decisiveQualification": "The account must explain why this is sufficient for the particular choice rather than another possible choice."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The internal tension is forceful, but the inference from sufficient explanation to deterministic explanation needs one further bridge."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The thought experiment and regress support the challenge, although alternative models of agent explanation are not fully compared."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con bridge challenging compatibility between sufficient reason and libertarian responsibility."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The move considers internal desires and reasons, then presses the regress and particularity problem rather than merely assuming determinism."
+        }
+      },
+      "evidenceBasis": "The excerpt applies sufficient reason to why a person had one particular thought rather than another and explores whether internal wants can end the chain.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-quantum-randomness-psr-challenge",
+      "sectionId": "psr-quantum-randomness",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Genuinely random quantum outcomes conflict with an unrestricted principle of sufficient reason, while explanation-preserving nonlocal interpretations carry scientific and causal costs.",
+      "sourceSpan": {
+        "startEvent": 953,
+        "endEvent": 1021
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The argument remains within Alex O'Connor's uninterrupted opening statement and closes when the moderator announces rebuttals.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-psr-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-contingent-reality-external-explanation"
+        ],
+        "components": [
+          {
+            "componentId": "con-quantum-randomness-psr-challenge-component-01",
+            "targetMoveId": "pro-contingent-reality-external-explanation",
+            "text": "Whether the explanatory principle permits genuinely random events lacking an explanation of their particular outcomes.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The move identifies a direct conflict between unrestricted sufficient reason and genuine quantum randomness, while noting costs borne by explanation-preserving interpretations.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It squarely identifies the disputed scope of sufficient reason and states the scientific consequence if randomness is genuine."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Randomness is expressly defined in relation to particular outcomes, and the challenge is limited to an unrestricted explanatory principle."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move conditions its conclusion on genuine randomness and acknowledges interpretation-dependent alternatives and their costs."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Quantum events may have probabilistic causes or deterministic hidden-variable explanations consistent with sufficient reason.",
+        "decisiveQualification": "A distribution or cause must still explain why this particular outcome occurred, or the principle must be narrowed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The conditional incompatibility between genuine unexplained randomness and unrestricted sufficient reason is clearly and consistently drawn."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Quantum theory is relevant support, but interpretation choice and the meaning of explanation require further technical defense."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con bridge challenging sufficient reason through quantum indeterminacy."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The argument recognizes explanation-preserving interpretations and focuses on the particular-outcome and locality costs they face."
+        }
+      },
+      "evidenceBasis": "The excerpt defines a random event as lacking an explanation of its particular occurrence and applies that definition to quantum mechanics.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-probabilistic-quantum-causes",
+      "sectionId": "psr-quantum-randomness",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Quantum randomness does not refute sufficient reason because quantum events can have probabilistic causes, exhibit experimentally usable regularity, and admit interpretations with deterministic hidden causes.",
+      "sourceSpan": {
+        "startEvent": 1050,
+        "endEvent": 1067
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Trent Horn the rebuttal turn, which continues without any speaker transition across this window.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-psr-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-quantum-randomness-psr-challenge"
+        ],
+        "components": [
+          {
+            "componentId": "pro-probabilistic-quantum-causes-component-01",
+            "targetMoveId": "con-quantum-randomness-psr-challenge",
+            "text": "Whether genuinely probabilistic quantum events can still possess causes or sufficient explanatory conditions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-probabilistic-quantum-causes-component-02",
+            "targetMoveId": "con-quantum-randomness-psr-challenge",
+            "text": "Whether deterministic interpretations remain available despite their scientific and causal costs.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly asserts probabilistic causes and experimental regularity, and it invokes deterministic interpretations, but it does not fully answer the particular-outcome demand.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts the decisive causal issue but leaves the distinction between explaining a distribution and a particular outcome unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Cause, regularity, and sufficient reason are treated as closely equivalent without clearly distinguishing event existence from outcome selection."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical claim that randomness does not violate sufficient reason exceeds what probabilistic regularity alone establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A probabilistic law explains frequencies while leaving each realized outcome without a sufficient contrastive explanation.",
+        "decisiveQualification": "Experimental regularity does not itself explain why one permitted outcome occurred rather than another."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "Probabilistic causation is coherent, but the inference from regular experimental distributions to sufficient explanation is incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Scientific regularity and interpretive plurality are relevant, though neither is developed enough to defeat the contrastive challenge."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The reply directly attacks the central con quantum challenge to sufficient reason."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The reply acknowledges probabilistic causation but substantially compresses the opponent's strongest particular-outcome distinction."
+        }
+      },
+      "evidenceBasis": "The excerpt asserts probabilistic causes, appeals to repeatable experimental regularity, and elsewhere in the span invokes deterministic hidden-cause interpretations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-agent-causation-responsibility",
+      "sectionId": "morality-freedom-responsibility",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Human persons can originate rational choices, and the reality of moral responsibility supports free will even if its mechanism is not yet completely explained.",
+      "sourceSpan": {
+        "startEvent": 1117,
+        "endEvent": 1147
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The continuous rebuttal turn, first-person commitments, and explicit reference to Alex's challenge clearly attribute the move to Trent Horn.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-moral-freedom-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-psr-free-will-tension"
+        ],
+        "components": [
+          {
+            "componentId": "pro-agent-causation-responsibility-component-01",
+            "targetMoveId": "con-psr-free-will-tension",
+            "text": "Whether persons can originate rational choices without those choices being determined by an explanatory regress.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-agent-causation-responsibility-component-02",
+            "targetMoveId": "con-psr-free-will-tension",
+            "text": "Whether moral responsibility supplies independent reason to accept libertarian freedom.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply asserts agent origination and appeals to experienced responsibility, but it does not explain how the particular choice satisfies sufficient reason without determination.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It contacts the decisive agency issue but leaves the opponent's explanatory particularity and regress challenge substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes confidence in free agency from a complete mechanism and openly acknowledges the explanatory limitation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Acknowledging an incomplete mechanism is appropriate, but claiming that free will is known to work remains stronger than the supplied analogy warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The experience of responsibility may be compatible with deterministic or compatibilist agency.",
+        "decisiveQualification": "An appeal to responsibility must independently exclude those rival accounts rather than presuppose libertarian freedom."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 66,
+          "rationale": "Agent causation is a coherent possibility, but responsibility is used to support freedom without resolving possible circularity."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The principal support is assertion, introspective confidence, and analogy rather than a defended account distinguishing rival agency models."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central con freedom challenge while also supporting the subsidiary agency bridge."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The reply recognizes the explanatory objection but answers mainly by asserting agency and analogizing to unexplained consciousness."
+        }
+      },
+      "evidenceBasis": "The excerpt states that persons cause choices rationally, concedes incomplete explanation, compares this to emergence claims, and invokes moral responsibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-natural-evil-greater-goods",
+      "sectionId": "evil-animal-suffering",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "God may permit pain, death, and other privations within a finite physical order when they enable greater goods or prevent greater evils, so natural suffering need not be gratuitous.",
+      "sourceSpan": {
+        "startEvent": 1148,
+        "endEvent": 1187
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This argument is delivered during Trent Horn's uninterrupted rebuttal and uses explicit Christian and theistic framing in the first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-gratuitous-suffering"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-animal-suffering-evidential-case"
+        ],
+        "components": [
+          {
+            "componentId": "pro-natural-evil-greater-goods-component-01",
+            "targetMoveId": "con-animal-suffering-evidential-case",
+            "text": "Whether apparently gratuitous natural and animal suffering may serve greater goods or prevent greater evils.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-natural-evil-greater-goods-component-02",
+            "targetMoveId": "con-animal-suffering-evidential-case",
+            "text": "Whether a regular finite physical order can justify the amount and distribution of suffering observed.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly offers greater-good and natural-order reasons, but largely establishes possible compatibility rather than the comparative probability demanded by the evidential case.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the decisive sufficient-reason demand while leaving the quantity, distribution, and marginal excess of suffering underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move consistently advances a permissive greater-good claim and appropriately phrases the proposed divine reasons as possibilities."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Its modal force fits the support offered, although that limited force cannot by itself answer a comparative evidential argument."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The challenge concerns apparently excessive marginal suffering, not whether any pain can accompany valuable natural regularity.",
+        "decisiveQualification": "A defense must connect the amount and distribution of suffering to the proposed goods."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The compatibility defense is coherent, but the inference from possible greater goods to adequate evidential defeat remains incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "General greater-good considerations are plausible but are not specifically connected to representative cases of prolonged animal agony."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The reply directly attacks the central con gratuitous-suffering bridge and supports the pro defeater-response bridge."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply addresses natural order and greater goods but only partly handles the opponent's stronger excess-suffering formulation."
+        }
+      },
+      "evidenceBasis": "The excerpt characterizes pain and death as privations and says an omnipotent, knowledgeable God can permit them for greater goods or lesser evils.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-animal-life-worth-suffering",
+      "sectionId": "evil-animal-suffering",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Animal life can remain worth having despite substantial pain, so permitting animals to continue existing need not be incompatible with divine goodness merely because their lives include suffering.",
+      "sourceSpan": {
+        "startEvent": 1190,
+        "endEvent": 1220
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's time notice is followed by Trent Horn continuing his rebuttal and directly addressing Alex's animal-suffering argument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-gratuitous-suffering"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-animal-suffering-evidential-case"
+        ],
+        "components": [
+          {
+            "componentId": "pro-animal-life-worth-suffering-component-01",
+            "targetMoveId": "con-animal-suffering-evidential-case",
+            "text": "Whether animal lives containing extensive suffering can nevertheless be goods worth creating and sustaining.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-animal-life-worth-suffering-component-02",
+            "targetMoveId": "con-animal-suffering-evidential-case",
+            "text": "Whether worthwhile total lives justify each apparently avoidable episode or increment of suffering.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the value-of-existence component through its extinction choice, but it does not answer why particular avoidable suffering is permitted within worthwhile lives.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "It supplies a relevant partial answer to overall animal-life value while leaving the decisive marginal-suffering demand uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is clearly limited to compatibility between worthwhile animal existence and the presence of substantial suffering."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move supports only the modest proposition that suffering does not automatically make animal existence worthless."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Animal life may be worthwhile while particular episodes of severe suffering remain gratuitous and evidentially surprising.",
+        "decisiveQualification": "A choice against extinction does not justify every avoidable harm within the lives preserved."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The anti-extinction inference supports worthwhile existence, but it does not entail that all included suffering is justified."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The thought experiment effectively tests total value but provides limited support regarding actual welfare or particular suffering."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move directly attacks a central suffering inference, though only through one partial component concerning life's overall worth."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The thought experiment fairly raises total-life value but does not preserve the opponent's decisive marginal-harm distinction."
+        }
+      },
+      "evidenceBasis": "The excerpt asks whether all remaining animal life should be instantly destroyed or allowed to continue despite substantial future pain and suffering.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-statistics-particular-outcome-gap",
+      "sectionId": "psr-quantum-randomness",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "A statistical distribution does not explain each particular quantum outcome, while interpretations preserving sufficient reason sacrifice locality and threaten ordinary causation.",
+      "sourceSpan": {
+        "startEvent": 1248,
+        "endEvent": 1315
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Alex O'Connor's first rebuttal immediately before this uninterrupted response to Trent Horn's quantum claims.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-psr-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-probabilistic-quantum-causes"
+        ],
+        "components": [
+          {
+            "componentId": "con-statistics-particular-outcome-gap-component-01",
+            "targetMoveId": "pro-probabilistic-quantum-causes",
+            "text": "Whether probabilistic regularity supplies a sufficient explanation for each particular realized quantum outcome.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-statistics-particular-outcome-gap-component-02",
+            "targetMoveId": "pro-probabilistic-quantum-causes",
+            "text": "Whether deterministic interpretations preserve explanation only by accepting nonlocality and causal costs.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explicitly distinguishes statistical prediction from contrastive explanation and identifies nonlocality as the cost of interpretations invoked to preserve sufficient reason.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly identifies the missing inferential bridge in the prior reply and states the consequence for its claimed refutation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between distribution-level regularity and explanation of a particular outcome is precise and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move acknowledges multiple interpretations and conditions its objection on the explanatory and locality costs they incur."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A probabilistic cause might sufficiently explain an event even without determining its particular outcome.",
+        "decisiveQualification": "That weaker standard must be distinguished from a fully sufficient contrastive explanation of why this outcome occurred."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The distribution-versus-outcome distinction directly exposes the prior reply's missing bridge without overextending the conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The interpretive point is relevant and specific, though the scientific costs of nonlocality and causation remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con PSR challenge by rebutting the principal probabilistic-cause response."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The reply grants probabilistic structure while precisely preserving the strongest particular-outcome demand."
+        }
+      },
+      "evidenceBasis": "The span distinguishes statistical explanation from a particular outcome and notes that PSR-preserving interpretations require relinquishing locality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-existence-focused-limited-psr",
+      "sectionId": "psr-quantum-randomness",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "A limited principle requiring reasons for why things exist, rather than determining explanations for every event, survives quantum indeterminacy and still supports the inference from contingent reality to a necessary being.",
+      "sourceSpan": {
+        "startEvent": 1481,
+        "endEvent": 1512
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator starts Trent Horn's second rebuttal, and the continuous first-person defense explicitly identifies the principle he previously advanced.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-necessary-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-statistics-particular-outcome-gap",
+          "con-quantum-randomness-psr-challenge"
+        ],
+        "components": [
+          {
+            "componentId": "pro-existence-focused-limited-psr-component-01",
+            "targetMoveId": "con-statistics-particular-outcome-gap",
+            "text": "Whether sufficient reason must explain each particular event rather than the existence of contingent things.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-existence-focused-limited-psr-component-02",
+            "targetMoveId": "con-quantum-randomness-psr-challenge",
+            "text": "Whether genuine event-level quantum indeterminacy defeats the contingency argument's existence-focused premise.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies narrowing the principle to reasons for existence and explains that this replacement demand preserves the contingency inference despite event-level indeterminacy.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It expressly distinguishes the two explanatory demands and states why the narrower one preserves the legitimate cosmological issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The existence-versus-event distinction is explicit, stable, and directly specifies the intended limited scope of sufficient reason."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The narrower principle survives the particular-outcome objection, though its continued support for a necessary being needs renewed defense."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Narrowing sufficient reason may permit the universe's contingent existence to be analogous to an unexplained quantum occurrence.",
+        "decisiveQualification": "The move must justify why existence requires explanation when particular events do not."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The reframe is internally coherent, but the existence/event asymmetry remains a material premise rather than an established conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The scope distinction avoids direct contradiction with quantum randomness but receives limited independent support for its selectivity."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Although it supports a subsidiary limited-PSR bridge, it also directly restores the central necessary-ground inference."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The reply clearly narrows its claim but does not fully answer the strongest parity objection generated by that narrowing."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly limits PSR to why a thing exists rather than why a particular event occurs and reconnects that principle to a necessary being.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-moral-ought-not-truth-apt",
+      "sectionId": "morality-freedom-responsibility",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Objective moral ought-claims lack truth value even if God exists because prescriptions function as commands rather than descriptive propositions.",
+      "sourceSpan": {
+        "startEvent": 2142,
+        "endEvent": 2178
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn answers Trent's moral-realism question in the first person, and subsequent questions identify the respondent's view as non-cognitivist or emotivist.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-moral-realism-divine-source"
+        ],
+        "components": [
+          {
+            "componentId": "con-moral-ought-not-truth-apt-component-01",
+            "targetMoveId": "pro-moral-realism-divine-source",
+            "text": "Whether objective ought-claims are truth-apt moral facts capable of requiring a divine foundation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply attacks the truth-aptness premise itself and states that even God's existence would not convert prescriptions or commands into descriptive truths.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly challenges a decisive premise of the moral argument and states the defeating consequence for divine grounding."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly limits its noncognitivist claim to ought-statements and notes that the result depends on the meaning of moral realism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker qualifies the position by definition and explains it as a view rather than asserting an unargued certainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Moral ought-statements may express propositions about reasons, duties, or relations and therefore possess truth values.",
+        "decisiveQualification": "Treating prescriptions as command-like does not alone exclude a propositional analysis of their normative content."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The noncognitivist objection coherently undercuts the premise, though the command-to-non-truth-apt inference needs fuller semantic defense."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The argument supplies a conceptual account but little linguistic or metaethical support against competing cognitivist analyses."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central pro moral-ground bridge by disputing the truth-aptness of its alleged facts."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The response addresses truth-aptness directly but gives only a compressed command analogy against cognitivist alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt says that 'you ought not murder' lacks truth value, qualifies the position by the definition of realism, and applies it even if God exists.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-psr-terminus-question-begging",
+      "sectionId": "contingency-causation",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "constructive",
+      "proposition": "The principle of sufficient reason risks begging the question when a sufficient explanatory chain is assumed in advance to terminate in an ultimate brute foundation.",
+      "sourceSpan": {
+        "startEvent": 2405,
+        "endEvent": 2484
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex begins a new cross-examination topic, develops an analogy with instrumental actualization, and explicitly identifies his resulting objection to the principle.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-psr-challenge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This late constructive objection independently advances the con PSR bridge by alleging that the required ultimate terminus is assumed in defining a sufficient explanation.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "As a constructive move, it squarely develops an assigned central objection, though the charge needs sharper formalization."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The question-begging concern is recoverable, but sufficient explanation, all-encompassing reason, and brute foundation are not fully distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move says the argument risks or seems question-begging, appropriately matching its exploratory support and acknowledged uncertainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "PSR may imply a necessary terminus through independent modal reasoning rather than assume a brute foundation in advance.",
+        "decisiveQualification": "The proponent must show that termination follows from the principle rather than from a stipulated definition of sufficiency."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The objection identifies a possible circularity but does not fully separate assuming a terminus from deriving one under independent premises."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The instrumental-explanation analogy is relevant, while the precise form of the alleged circularity remains incompletely demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con bridge challenging sufficient reason's assumed ultimate terminus."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The move frames the concern conditionally and targets the derivation, though it partly blurs necessary explanation with brute termination."
+        }
+      },
+      "evidenceBasis": "The excerpt says an all-encompassing sufficient reason appears to require the root explanation in advance and therefore makes the PSR argument seem question-begging.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-personal-scientific-explanation-gap",
+      "sectionId": "divine-attributes-personal-explanation",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Personal explanations involving intentions are not fundamentally distinct from scientific explanations when the relevant wants and mental activity may themselves be scientifically explicable.",
+      "sourceSpan": {
+        "startEvent": 2507,
+        "endEvent": 2526
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly challenges Trent's preceding distinction and uses first-person examples characteristic of Alex's stated naturalistic position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-divine-identification-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-personal-all-knowing-cause",
+          "pro-agent-causation-responsibility"
+        ],
+        "components": [
+          {
+            "componentId": "con-personal-scientific-explanation-gap-component-01",
+            "targetMoveId": "pro-personal-all-knowing-cause",
+            "text": "Whether personal explanations involving intentions are fundamentally distinct from scientific or causal explanations.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-personal-scientific-explanation-gap-component-02",
+            "targetMoveId": "pro-agent-causation-responsibility",
+            "text": "Whether wants and rational choices provide an irreducible form of agent explanation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the allegedly false dichotomy and states that scientifically explicable wants would prevent personal explanation from establishing a fundamentally distinct explanatory category.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It directly attacks the personal-versus-scientific distinction and explains the consequence for inferring a personal ultimate cause."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection clearly concerns reducibility or scientific explicability of wants, rather than denying that intentional descriptions exist."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents the reducibility challenge as a question and does not claim to have conclusively reduced all mentality."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Personal explanations can be irreducible or explanatorily distinct even if mental states also have scientific causes.",
+        "decisiveQualification": "Scientific explicability does not by itself show eliminability or equivalence of explanatory levels."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The challenge coherently defeats an exclusive dichotomy, though reducibility does not follow merely from possible scientific explanation."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The kettle example is apt but supplies limited support for the broader claim that intentional explanation is not fundamental."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central con divine-identification gap by challenging the inference to irreducible personal agency."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The reply fairly identifies overlap but does not fully engage the strongest nonexclusive account of distinct explanatory levels."
+        }
+      },
+      "evidenceBasis": "The excerpt uses the kettle example to argue that wanting a drink may itself be scientifically explicable and questions the asserted explanatory divide.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, relevance judgments, importance values, and locked section structure.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the alleged residual would not independently change burden completion."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, relevance judgments, importance values, and locked section structure.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the alleged residual would not independently change burden completion."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
