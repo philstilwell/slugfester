@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-source-repair-plan",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-selection",
+  "status": "prepared-exact-debate-167-empty-derived-event-repair",
+  "preparedAt": "2026-08-12T02:45:01.963Z",
+  "checkpointCommit": "1521a7f4053f1d566a659b8c75936e137f83b7f3",
+  "developmentValidationOnly": false,
+  "productionCanary": true,
+  "stagingOnly": true,
+  "target": {
+    "debateNumber": "167",
+    "debateId": "craig-shook-existence-god-2008",
+    "videoId": "L3FOgiASYY0",
+    "normalizedEventIndex": 993,
+    "transcriptLineNumber": 994,
+    "removedDerivedEvent": {
+      "startMs": 4237634,
+      "durationMs": 100,
+      "speaker": "A",
+      "text": ""
+    },
+    "correspondingRawSegment": {
+      "chunkIndex": 3,
+      "segmentIndex": 175,
+      "fileName": "chunk-003.json",
+      "chunkSha256": "ab77ee662eea56aaa526eacf21f5d63b005f85093c79ce27f782fe36e7e15c0d",
+      "id": "seg_175",
+      "start": 637.634,
+      "end": 637.734,
+      "speaker": "A",
+      "text": ""
+    }
+  },
+  "diagnosis": {
+    "sourceFilesAndRecordedHashesMatchedBeforeCanonicalValidation": true,
+    "rawTranscriptionContainsOneContentlessSegment": true,
+    "normalizationPreservedThatSegmentAsOneContentlessEvent": true,
+    "transcriptRendererPreservedItAsOneContentlessSpeakerLine": true,
+    "otherEmptyNormalizedEvents": 0,
+    "otherStructuralEventDefects": 0,
+    "semanticContentLostByRemoval": false,
+    "replacementDebateRequired": false
+  },
+  "repair": {
+    "attemptsMaximum": 1,
+    "modelFree": true,
+    "paidServiceCalls": 0,
+    "rawDiarizedChunksMutationAllowed": false,
+    "frozenProductionManifestMutationAllowed": false,
+    "removeOnlyNormalizedEventIndex": 993,
+    "removeOnlyTranscriptLineNumber": 994,
+    "preserveEveryOtherEventByteValueAndOrder": true,
+    "preserveEveryOtherTranscriptLineValueAndOrder": true,
+    "updateLocalManifestFieldsOnly": [
+      "normalizedEventsSha256",
+      "transcriptSha256",
+      "eventCount"
+    ],
+    "preserveLocalManifestRawTranscriptSha256": true,
+    "writeCommittedSourceChainOverlay": "docs/assessment-production/source-repairs/debate-167-empty-event-normalization.json",
+    "originalFailureArtifactMutationAllowed": false,
+    "replacementSelectionAllowed": false
+  },
+  "projected": {
+    "events": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/events.json",
+      "beforeSha256": "c6fc6347fc71f7c1605b9184b995465703bfdf5797ce11d3f67558abd32fb355",
+      "afterSha256": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+      "beforeCount": 1887,
+      "afterCount": 1886
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/transcript.txt",
+      "beforeSha256": "2fc2c64b885556902ad6121f46be088f517ffd5ac0928d951dca0669b5846355",
+      "afterSha256": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+      "beforeLineCount": 1887,
+      "afterLineCount": 1886
+    },
+    "localManifest": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/manifest.json",
+      "beforeSha256": "83e855781ce6080f16f8aa2bc8d6cc112ca57c1507457fdc9bfba4edcd8e3ddc",
+      "afterSha256": "c53451a13f2b21b44010dfbbe0e4834667ac4c765a00a2c3e694fe4f0079c73c",
+      "rawTranscriptSha256": "0deefd70a2b282d0202acc5ec3e9c87a4a523acb6a5f47ebf92e0026bbcbfc6a"
+    },
+    "rawDiarizedChunks": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/openai-diarized-chunks.json",
+      "beforeAndAfterSha256": "0deefd70a2b282d0202acc5ec3e9c87a4a523acb6a5f47ebf92e0026bbcbfc6a"
+    },
+    "productionManifest": {
+      "path": "docs/assessment-production/manifest-v1.json",
+      "beforeAndAfterSha256": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec"
+    }
+  },
+  "requiredPostRepairValidation": {
+    "exactProjectedHashes": true,
+    "canonicalEventValidation": true,
+    "transcriptLineCountEqualsEventCount": true,
+    "localManifestHashChainMatches": true,
+    "rawDiarizedChunksHashUnchanged": true,
+    "frozenProductionManifestHashUnchanged": true,
+    "committedSourceChainOverlayRequired": true,
+    "sameTenDebateDeterministicRankingRequired": true,
+    "noReplacementDebate": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/production-checkpoint-v2.2-1/selection-failure.json": "51cb1564a8bbc0a36323c64661007132db522ae4a90d0122c3e69311514e54c8",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    ".assessment-cache/captions/L3FOgiASYY0/events.json": "c6fc6347fc71f7c1605b9184b995465703bfdf5797ce11d3f67558abd32fb355",
+    ".assessment-cache/captions/L3FOgiASYY0/transcript.txt": "2fc2c64b885556902ad6121f46be088f517ffd5ac0928d951dca0669b5846355",
+    ".assessment-cache/captions/L3FOgiASYY0/manifest.json": "83e855781ce6080f16f8aa2bc8d6cc112ca57c1507457fdc9bfba4edcd8e3ddc",
+    ".assessment-cache/captions/L3FOgiASYY0/openai-diarized-chunks.json": "0deefd70a2b282d0202acc5ec3e9c87a4a523acb6a5f47ebf92e0026bbcbfc6a",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/prepare-assessment-production-checkpoint-v2.2-source-repair.mjs": "330e964007bedbd5fc0c1c6a5d4659abd0d9fbf884393db5804a30c949573fad"
+  },
+  "authorization": {
+    "sourceRepairExecution": true,
+    "sourceRepairAttemptsMaximum": 1,
+    "committedSourceChainOverlay": true,
+    "selectionRecoveryPreparation": false,
+    "replacementSelection": false,
+    "sourcePacketPreparation": false,
+    "modelExecution": false,
+    "paidTranscription": false,
+    "scoreDerivation": false,
+    "publicationPacketPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "execute-exact-debate-167-source-repair-once-model-free-only",
+  "futureArtifacts": {
+    "repairScript": "scripts/repair-assessment-production-checkpoint-v2.2-debate-167-source.mjs",
+    "repairRecord": "docs/assessment-production/source-repairs/debate-167-empty-event-normalization.json"
+  }
+}
