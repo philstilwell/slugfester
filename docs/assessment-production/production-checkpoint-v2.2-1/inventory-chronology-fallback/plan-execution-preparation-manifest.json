@@ -1,0 +1,894 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-candidate-census-plan-execution-preparation-manifest",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-chronology-fallback-inventory",
+  "status": "frozen-ten-production-checkpoint-v2.2-candidate-census-plan-contexts-prepared-not-authorized",
+  "frozenAt": "2026-08-12T12:45:07.000Z",
+  "checkpointCommit": "98c8b9039e58a56a14898c72d981717f6da1bc99",
+  "productionCanary": true,
+  "developmentValidationOnly": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "gateDisposition": {
+    "failedProductionCanaryV1PreservedFailed": true,
+    "failedProductionCanaryV1OutputsUsedAsModelInput": false,
+    "priorValidationCohortsReclassified": false,
+    "priorValidationCohortOutputsUsedAsModelInput": false,
+    "checkpointDiscoveryPassed": true,
+    "checkpointDiscoveryRetried": false,
+    "checkpointDiscoveryCandidatesChangedDuringTransport": false
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "contexts": 10,
+    "expectedParallelWallMinutes": [
+      5,
+      15
+    ],
+    "expectedAggregateModelMinutes": [
+      9,
+      25
+    ],
+    "expectedAggregateComputeHours": [
+      0.15,
+      0.42
+    ],
+    "absoluteStageTimeoutMinutes": 60,
+    "estimateBasis": "The prior validated ten-context candidate-census planner completed within this range at concurrency two. These production checkpoint inputs use the same frozen contract and are no larger than 53,118 copied bytes. ChatGPT-subscription execution has no direct incremental API charge."
+  },
+  "executionEnvironment": {
+    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "codexCliVersion": "codex-cli 0.147.0-alpha.6.5",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "isolatedTemporaryCodexHomes": true
+  },
+  "preparation": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/preparation-manifest.json",
+  "preparationSha256": "bdf7b753fe26e0d14d6a3308d32c9078f1ef7156bfb13fd802370a010954d52b",
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "stage": "candidate-census-plan",
+      "debateNumber": "50",
+      "debateId": "knechtle-dillahunty-christianity-true-2023",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-heavy",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-50.json",
+      "packetSha256": "1acfbb97446b54804eec0d23055123cefa6c812dcaea3ec270fd9081028b639f",
+      "packetBytes": 2676,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-50.json",
+          "sha256": "7b5a7b8758a980edd19f16e58be90f0f97209113a59f144ec371feca4239532d",
+          "bytes": 3457
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-50.json",
+          "sha256": "682ca811663e23b868579e73d53bf6ac7759c38d2f08c74b8496f38718c809e7",
+          "bytes": 29750
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-50.schema.json",
+          "sha256": "4ecf382c57db1329e634627d9876d2a58836d7dca9272b62b36ba29943ad2a7f",
+          "bytes": 4854
+        }
+      ],
+      "copiedInputBytes": 47391,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-50.schema.json",
+      "strictOutputSchemaSha256": "4ecf382c57db1329e634627d9876d2a58836d7dca9272b62b36ba29943ad2a7f",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-50.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 1,
+      "stage": "candidate-census-plan",
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "family": "science-origins",
+      "sourceComplexityBand": "direct-sized",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-192.json",
+      "packetSha256": "1fb520d93d9522eefc30e706cbc77cbd1bab53f09aafb05a8711798b10d8921f",
+      "packetBytes": 2680,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-192.json",
+          "sha256": "d6d1d557cfec53db89484beb90ce4f63e6e39d2cf2898d037634880f59dc98bf",
+          "bytes": 3435
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-192.json",
+          "sha256": "b5bd9faf1571e3eeddb37d4fdc2f8b011823aaf3286936a2091f20dcfa1768a9",
+          "bytes": 15500
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-192.schema.json",
+          "sha256": "038d14a9e2697522183b0fd3d2bd57eb998a1308171d203b4dd555218b9f3d9c",
+          "bytes": 4854
+        }
+      ],
+      "copiedInputBytes": 33119,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-192.schema.json",
+      "strictOutputSchemaSha256": "038d14a9e2697522183b0fd3d2bd57eb998a1308171d203b4dd555218b9f3d9c",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-192.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 2,
+      "stage": "candidate-census-plan",
+      "debateNumber": "129",
+      "debateId": "plantinga-law-eaan-rational-belief-2010",
+      "family": "science-origins",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-129.json",
+      "packetSha256": "3124503df23b3cb8f8f89fac4695b246f63fa9ee8c86244f119e935570fc461d",
+      "packetBytes": 2678,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-129.json",
+          "sha256": "fe88d5c19416c787fc2a55daec526bfd99919497a9da67054a3aacb1ffe386fa",
+          "bytes": 3482
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-129.json",
+          "sha256": "73730417f96d49066ef423650115668a363eef0b8264790a3951bb666c4935ec",
+          "bytes": 17988
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-129.schema.json",
+          "sha256": "1e82721a000881450f6d3b123150c35c4ef8b940f81697d6f23a1282f0f18323",
+          "bytes": 4852
+        }
+      ],
+      "copiedInputBytes": 35652,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-129.schema.json",
+      "strictOutputSchemaSha256": "1e82721a000881450f6d3b123150c35c4ef8b940f81697d6f23a1282f0f18323",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-129.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 3,
+      "stage": "candidate-census-plan",
+      "debateNumber": "40",
+      "debateId": "enoch-bush-objective-moral-truths-2026",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-40.json",
+      "packetSha256": "091d7a85fce84db56f9a3a43bee6e3078aac9814dfc3ac63c08defd3ec631469",
+      "packetBytes": 2672,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-40.json",
+          "sha256": "29156e4be5cf3133a51d10d88f579dd3d7bc927321fd655cb139d576c412879e",
+          "bytes": 3475
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-40.json",
+          "sha256": "182f759610a177e7056892f60ce2cf28f6d04ca7ff9fb0551ab873e697df8619",
+          "bytes": 27161
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-40.schema.json",
+          "sha256": "20c753f8f40eb834970916c0f359a206cfe8a18b7d13158e8b006bd9b5677b26",
+          "bytes": 4850
+        }
+      ],
+      "copiedInputBytes": 44816,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-40.schema.json",
+      "strictOutputSchemaSha256": "20c753f8f40eb834970916c0f359a206cfe8a18b7d13158e8b006bd9b5677b26",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-40.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 4,
+      "stage": "candidate-census-plan",
+      "debateNumber": "25",
+      "debateId": "hitchens-ramadan-islam-peace-2010",
+      "family": "general-theism-religion",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-25.json",
+      "packetSha256": "0701ac518a18d6c5b0776d6bfc6fee9d25180753bb291b954eedba1a305b717c",
+      "packetBytes": 2667,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-25.json",
+          "sha256": "538a091cdbf22369720c43f0208bb88dfed72a46aded8f2068979d70cdfaa89a",
+          "bytes": 3434
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-25.json",
+          "sha256": "1a3f252fa86cca044c868e585e1b06dd483755303ee54864e474b413c8b53ae3",
+          "bytes": 22316
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-25.schema.json",
+          "sha256": "ef7a1e6b16fc92d6817b945898c30e561ad1217bf86f9013fe9dd399b687fa7e",
+          "bytes": 4845
+        }
+      ],
+      "copiedInputBytes": 39925,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-25.schema.json",
+      "strictOutputSchemaSha256": "ef7a1e6b16fc92d6817b945898c30e561ad1217bf86f9013fe9dd399b687fa7e",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-25.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 5,
+      "stage": "candidate-census-plan",
+      "debateNumber": "104",
+      "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+      "family": "mind-agency",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-104.json",
+      "packetSha256": "6a74b16ceca77d4cc40fcfa4db67a7d386ccb9afb545bb2e71cefa7caa970dc9",
+      "packetBytes": 2684,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-104.json",
+          "sha256": "9930a4c0a5d45677c7c590aede9e66b84ea9a81817019b44d239bba74102eee2",
+          "bytes": 3445
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-104.json",
+          "sha256": "3082dcc4ad8ecb3ba06da6d1f0a71dd2d38a8f9a53333fd5d08c5278b3ac839e",
+          "bytes": 20781
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-104.schema.json",
+          "sha256": "3dd962c06ff359e7113b8f2b016fb716af505db82b1c51790e4889e834fbc550",
+          "bytes": 4858
+        }
+      ],
+      "copiedInputBytes": 38414,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-104.schema.json",
+      "strictOutputSchemaSha256": "3dd962c06ff359e7113b8f2b016fb716af505db82b1c51790e4889e834fbc550",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-104.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 6,
+      "stage": "candidate-census-plan",
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-22.json",
+      "packetSha256": "d62dce8d8d626d1c9a6786df7079beeed55416f06a46890fe8eb71fd2eeb33ce",
+      "packetBytes": 2667,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-22.json",
+          "sha256": "d25488bb9e7b36750fbaae734711ec81161543338abe31bdf6014db0b09780cc",
+          "bytes": 3435
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-22.json",
+          "sha256": "5bf5ba14e92a080dac2c0c9a2a55e96c18756f45002970e8e8ffa6b2958862de",
+          "bytes": 28989
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-22.schema.json",
+          "sha256": "acb08e6fc5c54b0c33a12af035015eb85dd79e98514ce1dfe28cbdeb90e800b6",
+          "bytes": 4845
+        }
+      ],
+      "copiedInputBytes": 46599,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-22.schema.json",
+      "strictOutputSchemaSha256": "acb08e6fc5c54b0c33a12af035015eb85dd79e98514ce1dfe28cbdeb90e800b6",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-22.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 7,
+      "stage": "candidate-census-plan",
+      "debateNumber": "10",
+      "debateId": "craig-harris-moral-foundations-2011",
+      "family": "morality-ethics",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-10.json",
+      "packetSha256": "93840107d3991bd0e2a5a3227bf224e8916ea0b16f48f724f12c9ead3cd65fb6",
+      "packetBytes": 2669,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-10.json",
+          "sha256": "89be45eec4da1236b4557d96d927dccdd888886737f9193b81659baea6fdeb3a",
+          "bytes": 3385
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-10.json",
+          "sha256": "2758bf804358906f669aa17034a5aa1b77f57781c94e7e6c3073c4a341b0e554",
+          "bytes": 27441
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-10.schema.json",
+          "sha256": "dbb3205f6a048248fe9e53b3bb00955e92fdea358061b2a3154418a45d57aee4",
+          "bytes": 4847
+        }
+      ],
+      "copiedInputBytes": 45003,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-10.schema.json",
+      "strictOutputSchemaSha256": "dbb3205f6a048248fe9e53b3bb00955e92fdea358061b2a3154418a45d57aee4",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-10.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 8,
+      "stage": "candidate-census-plan",
+      "debateNumber": "167",
+      "debateId": "craig-shook-existence-god-2008",
+      "family": "resurrection-history",
+      "sourceComplexityBand": "partition-medium",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-167.json",
+      "packetSha256": "6883030bceb6562ab9273f373deccd3cd623536f96dbafcff13e8d7d5145d325",
+      "packetBytes": 2669,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-167.json",
+          "sha256": "f7663974fd0417cb6625f11982fa069220b03123a4353fee787c9d6c4cb08e89",
+          "bytes": 3455
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-167.json",
+          "sha256": "f80ff54360b362911cb568a6a664a0799068f5585214683ee381b98ce967b61a",
+          "bytes": 21143
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-167.schema.json",
+          "sha256": "6af5f697571b422240f4c3821b9823240d23a211316e951f493f0608ac0d92f0",
+          "bytes": 4843
+        }
+      ],
+      "copiedInputBytes": 38771,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-167.schema.json",
+      "strictOutputSchemaSha256": "6af5f697571b422240f4c3821b9823240d23a211316e951f493f0608ac0d92f0",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-167.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    },
+    {
+      "contextIndex": 9,
+      "stage": "candidate-census-plan",
+      "debateNumber": "122",
+      "debateId": "horn-oconnor-god-existence-2020",
+      "family": "evil-hiddenness",
+      "sourceComplexityBand": "partition-heavy",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-122.json",
+      "packetSha256": "fe3e40dccdb766186174ac72ef4367de9d97359b0188fb482fecc20da43266d7",
+      "packetBytes": 2670,
+      "copiedInputs": [
+        {
+          "role": "inventory-source-packet",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-122.json",
+          "sha256": "1a2c7934661d36cad116f6a0fec15ea70747d049bc4ce63ec4b2f20b10b17d31",
+          "bytes": 3447
+        },
+        {
+          "role": "complete-candidate-census",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-122.json",
+          "sha256": "faadf11fe67a9854deab185f3811bcdb85d03ca9dd068c5e1e6b426fc234ad38",
+          "bytes": 35497
+        },
+        {
+          "role": "chronology-fallback-inventory-guide",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md",
+          "sha256": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+          "bytes": 5898
+        },
+        {
+          "role": "inventory-manual",
+          "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+          "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+          "bytes": 3432
+        },
+        {
+          "role": "strict-output-schema",
+          "path": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-122.schema.json",
+          "sha256": "d84fde0a9ab10acd350cc839b626b6e27fc31e9594afc0deec3433cda672c7ca",
+          "bytes": 4844
+        }
+      ],
+      "copiedInputBytes": 53118,
+      "maximumCopiedInputBytes": 115000,
+      "writableDomains": [
+        "routes",
+        "sections"
+      ],
+      "strictOutputSchema": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-122.schema.json",
+      "strictOutputSchemaSha256": "d84fde0a9ab10acd350cc839b626b6e27fc31e9594afc0deec3433cda672c7ca",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-122.json",
+      "attemptsMaximum": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "modelExecutionAuthorized": false
+    }
+  ],
+  "isolation": {
+    "freshTemporaryCodexHomePerContext": true,
+    "freshSourceDirectoryPerContext": true,
+    "oneDebatePerContext": true,
+    "onlyFivePacketDeclaredInputsCopied": true,
+    "candidateEvidenceExcerptsUnavailable": true,
+    "candidateSelectionUnavailable": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "otherContextsUnavailable": true,
+    "otherOutputsUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsScoresWinnersUnavailable": true,
+    "tagsAndPublicationProseUnavailable": true
+  },
+  "executionPolicy": {
+    "stage": "candidate-census-plan",
+    "contexts": 10,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutMsPerContext": 600000,
+    "timeoutExtensionsMaximum": 0,
+    "absoluteStageTimeoutMs": 3600000,
+    "copiedInputBytesMaximum": 115000,
+    "observedMaximumCopiedInputBytes": 53118,
+    "maximumParallelContexts": 2,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "rampOneServesAsOperationalCanary": true,
+    "eachRampPhaseMustPassBeforeExpansion": true,
+    "abortBeforeStartingAdditionalContextOnAnyFailure": true,
+    "allowAlreadyRunningIndependentContextToFinish": true,
+    "allTenPlansMustPassBeforeSidePacketPreparation": true,
+    "deterministicInputOrder": true,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "directIncrementalCostUsdMaximum": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "separateActivationRequired": true
+  },
+  "acceptancePolicy": {
+    "exactContextCountRequired": 10,
+    "everyContextMustCompleteOnItsSingleAttempt": true,
+    "everyOutputMustValidateAgainstFrozenStrictSchema": true,
+    "everyOutputMustPassDeterministicSemanticValidation": true,
+    "writableDomainsLimitedToRoutesAndSections": true,
+    "immutablePlanCanonicalHashRequired": true,
+    "partialPlanGateAcceptance": false,
+    "automaticSemanticCorrection": false,
+    "exactSidePacketPreparationDeferredUntilAllPlansAccepted": true,
+    "scoresDerived": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "speakerCountAmbiguityBlocks": true,
+    "multiSpeakerFormatBlocks": true,
+    "invalidModelOutputBlocks": true,
+    "isolationFailureBlocks": true,
+    "missingSectionSideCoverageBlocks": true,
+    "belowHighConfidenceRequiresAudioVerification": true,
+    "unresolvedAudioBlocks": true,
+    "unresolvedDisputeBlocks": true,
+    "invalidFinalLedgerBlocks": true,
+    "modelAuthoredScoreBlocks": true,
+    "scorePolicyFailureBlocks": true,
+    "postResultPolicyChangeBlocks": true,
+    "publicationPreparationBeforeReadinessBlocks": true,
+    "productionMutationBlocks": true,
+    "remainingProductionBatchesBlock": true,
+    "preparationHashMismatchBlocks": true,
+    "invalidPlannerOutputBlocksEntireInventoryGate": true,
+    "sidePacketFreezeBeforeAcceptedPlanBlocks": true,
+    "exactSideSchemaHashMismatchBlocks": true,
+    "prototypeSchemaExecutionBlocks": true,
+    "crossSideEvidenceContaminationBlocks": true,
+    "retryBlocks": true,
+    "timeoutExtensionBlocks": true,
+    "sidePacketPreparationHashMismatchBlocks": true,
+    "acceptedPlanHashMismatchBlocks": true,
+    "sideModelExecutionBeforeSeparateActivationBlocks": true,
+    "sideExecutionPreparationHashMismatchBlocks": true,
+    "activationHashMismatchBlocks": true,
+    "invalidSelectorOutputBlocksEntireInventoryGate": true,
+    "selectorTimeoutBlocksEntireInventoryGate": true,
+    "selectorContextFailureBlocksEntireInventoryGate": true,
+    "inventoryCompilationBeforeTwentyAcceptedSelectorsBlocks": true,
+    "missingConstructiveFallbackBlocks": true,
+    "nonconstructiveFallbackBlocks": true,
+    "unresolvedOrphanReplyBlocksEntireInventoryGate": true,
+    "independentJudgmentPacketOrSchemaHashMismatchBlocks": true,
+    "independentJudgmentPairIdentityMismatchBlocks": true,
+    "independentJudgmentExecutionBeforeSeparateActivationBlocks": true,
+    "independentJudgmentExecutionPreparationHashMismatchBlocks": true,
+    "otherPassOrDebateVisibilityBlocks": true,
+    "legacyAssessmentOrScoreVisibilityBlocks": true,
+    "judgmentTimeoutBlocksAtFrozenRampBoundary": true,
+    "invalidJudgmentOutputBlocksAtFrozenRampBoundary": true,
+    "judgmentAudioAccessBlocks": true,
+    "disagreementExtractionBeforeAcceptedExecutionAnalysisBlocks": true,
+    "executionPreparationHashMismatchBlocks": true,
+    "planTimeoutBlocksEntireInventoryGate": true,
+    "planContextFailureBlocksEntireInventoryGate": true,
+    "sidePacketFreezeBeforeTenAcceptedPlansBlocks": true
+  },
+  "totals": {
+    "debates": 10,
+    "planContextsPrepared": 10,
+    "planContextsAuthorized": 0,
+    "planContextsExecuted": 0,
+    "acceptedPlans": 0,
+    "exactSidePacketsFrozen": 0,
+    "audioCalls": 0,
+    "transcriptionCalls": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionActivationPreparation": true,
+    "planModelContexts": false,
+    "deterministicPlanValidation": false,
+    "planAnalysis": false,
+    "exactSidePacketPreparation": false,
+    "sideSelectorModelExecution": false,
+    "inventoryModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "semanticCorrection": false,
+    "independentJudgmentPacketPreparation": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationPreparation": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "activation": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plan-execution-activation.json",
+    "execution": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plan-model-execution.json",
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plan-analysis.json",
+    "plans": [
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-50.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-192.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-129.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-40.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-25.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-104.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-22.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-10.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-167.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-122.json"
+    ],
+    "laterSidePacketPreparation": "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/side-packet-preparation-manifest.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-50.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-192.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-129.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-40.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-25.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-104.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-22.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-10.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-167.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plans/debate-122.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plan-execution-activation.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plan-model-execution.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/plan-analysis.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/side-packet-preparation-manifest.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/production-checkpoint-v2.2-1/discovery/analysis.json": "a62d2b16c5e70f0b9e4b27673f14fc3dfdb563f6e4287d91eb2bc71b5a62f3b6",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/chronology-fallback-inventory-guide.md": "7a0d7d7f86b492da403247d7c0414642ef15046638f5827cd4680218a3dc8358",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-10.json": "93840107d3991bd0e2a5a3227bf224e8916ea0b16f48f724f12c9ead3cd65fb6",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-104.json": "6a74b16ceca77d4cc40fcfa4db67a7d386ccb9afb545bb2e71cefa7caa970dc9",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-122.json": "fe3e40dccdb766186174ac72ef4367de9d97359b0188fb482fecc20da43266d7",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-129.json": "3124503df23b3cb8f8f89fac4695b246f63fa9ee8c86244f119e935570fc461d",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-167.json": "6883030bceb6562ab9273f373deccd3cd623536f96dbafcff13e8d7d5145d325",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-192.json": "1fb520d93d9522eefc30e706cbc77cbd1bab53f09aafb05a8711798b10d8921f",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-22.json": "d62dce8d8d626d1c9a6786df7079beeed55416f06a46890fe8eb71fd2eeb33ce",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-25.json": "0701ac518a18d6c5b0776d6bfc6fee9d25180753bb291b954eedba1a305b717c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-40.json": "091d7a85fce84db56f9a3a43bee6e3078aac9814dfc3ac63c08defd3ec631469",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/packets/plans/debate-50.json": "1acfbb97446b54804eec0d23055123cefa6c812dcaea3ec270fd9081028b639f",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/preparation-manifest.json": "bdf7b753fe26e0d14d6a3308d32c9078f1ef7156bfb13fd802370a010954d52b",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-10.schema.json": "dbb3205f6a048248fe9e53b3bb00955e92fdea358061b2a3154418a45d57aee4",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-104.schema.json": "3dd962c06ff359e7113b8f2b016fb716af505db82b1c51790e4889e834fbc550",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-122.schema.json": "d84fde0a9ab10acd350cc839b626b6e27fc31e9594afc0deec3433cda672c7ca",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-129.schema.json": "1e82721a000881450f6d3b123150c35c4ef8b940f81697d6f23a1282f0f18323",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-167.schema.json": "6af5f697571b422240f4c3821b9823240d23a211316e951f493f0608ac0d92f0",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-192.schema.json": "038d14a9e2697522183b0fd3d2bd57eb998a1308171d203b4dd555218b9f3d9c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-22.schema.json": "acb08e6fc5c54b0c33a12af035015eb85dd79e98514ce1dfe28cbdeb90e800b6",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-25.schema.json": "ef7a1e6b16fc92d6817b945898c30e561ad1217bf86f9013fe9dd399b687fa7e",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-40.schema.json": "20c753f8f40eb834970916c0f359a206cfe8a18b7d13158e8b006bd9b5677b26",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/schemas/plans/debate-50.schema.json": "4ecf382c57db1329e634627d9876d2a58836d7dca9272b62b36ba29943ad2a7f",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-10.json": "89be45eec4da1236b4557d96d927dccdd888886737f9193b81659baea6fdeb3a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-104.json": "9930a4c0a5d45677c7c590aede9e66b84ea9a81817019b44d239bba74102eee2",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-122.json": "1a2c7934661d36cad116f6a0fec15ea70747d049bc4ce63ec4b2f20b10b17d31",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-129.json": "fe88d5c19416c787fc2a55daec526bfd99919497a9da67054a3aacb1ffe386fa",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-167.json": "f7663974fd0417cb6625f11982fa069220b03123a4353fee787c9d6c4cb08e89",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-192.json": "d6d1d557cfec53db89484beb90ce4f63e6e39d2cf2898d037634880f59dc98bf",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-22.json": "d25488bb9e7b36750fbaae734711ec81161543338abe31bdf6014db0b09780cc",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-25.json": "538a091cdbf22369720c43f0208bb88dfed72a46aded8f2068979d70cdfaa89a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-40.json": "29156e4be5cf3133a51d10d88f579dd3d7bc927321fd655cb139d576c412879e",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/source-packets/debate-50.json": "7b5a7b8758a980edd19f16e58be90f0f97209113a59f144ec371feca4239532d",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-10.json": "2758bf804358906f669aa17034a5aa1b77f57781c94e7e6c3073c4a341b0e554",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-104.json": "3082dcc4ad8ecb3ba06da6d1f0a71dd2d38a8f9a53333fd5d08c5278b3ac839e",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-122.json": "faadf11fe67a9854deab185f3811bcdb85d03ca9dd068c5e1e6b426fc234ad38",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-129.json": "73730417f96d49066ef423650115668a363eef0b8264790a3951bb666c4935ec",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-167.json": "f80ff54360b362911cb568a6a664a0799068f5585214683ee381b98ce967b61a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-192.json": "b5bd9faf1571e3eeddb37d4fdc2f8b011823aaf3286936a2091f20dcfa1768a9",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-22.json": "5bf5ba14e92a080dac2c0c9a2a55e96c18756f45002970e8e8ffa6b2958862de",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-25.json": "1a3f252fa86cca044c868e585e1b06dd483755303ee54864e474b413c8b53ae3",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-40.json": "182f759610a177e7056892f60ce2cf28f6d04ca7ff9fb0551ab873e697df8619",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/transports/census/debate-50.json": "682ca811663e23b868579e73d53bf6ac7759c38d2f08c74b8496f38718c809e7",
+    "docs/assessment-production/production-checkpoint-v2.2-1/master-manifest.json": "7e0fd494099f677316f51670924e88e0bf3feaf6a4383562a85e6f8af87723a4",
+    "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/preparation-manifest.json": "77f4dbbf8c9eb6b8bb34d305064cfa50d49715a05383f55700256627d47e36ed",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "docs/assessment-production/score-stability-v2.1.3-chronology-fallback-development/development-analysis.json": "88e0b83a23adaccc951d2bba2c1340b53f42554f0e8d697ea870e87129cf79a3",
+    "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-candidate-sharded.mjs": "184e2662ca8ca4f9a37177cd8a01abfadaff07b20068207e5b3b75a1e8c89515",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-decomposed-plan-selection.mjs": "cc2ed8ab1a27e693ba5546a5ee8761641671f810db458dd7db06cfe1265fb011",
+    "scripts/lib/assessment-production-score-stability-v2-inventory-side-partitioned-selection-map.mjs": "ad8bfc76a154f11e217b75d63e23718e1d7135f638bf13a697e56c4813ff65fa",
+    "scripts/lib/assessment-production-score-stability-v2.1.2-discovery.mjs": "30e6a244bff31432a5a1b03457e2d56e66300737d084177be1b03c9ea9502f70",
+    "scripts/lib/assessment-production-score-stability-v2.1.2-inventory-chronology-fallback.mjs": "70ade006fb41676fa83a74a47b48234af11a9f8f0f5f56d399a202a3726e2e85",
+    "scripts/lib/assessment-production-score-stability-v2.1.2-inventory-preparation.mjs": "f9e0e91b6daad7303ffc7b5204cc99fcab91b83bb9654a88838c12b19d897d91",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/lib/v4220-source-span-rendering.mjs": "edfe8b1f3bd6e69794c5be116406f2fa52082fbb31529da77093f47f498feaf6",
+    "scripts/lib/v422115-candidate-evidence-transport.mjs": "2164e0a970247bb6031c61561c349431dd32c5768f24f6b337ee614105733b91",
+    "scripts/lib/v422116-decomposed-consensus.mjs": "6dc78d69dbc7a13c9ffdfed33d5e84067a32af1d69f7cf05480f0205689a6d7c",
+    "scripts/lib/v4221162-inventory-transport.mjs": "a8856378f33e611ffa6354985e0f9b5fadb1df4c4aa00dc711c373221789e14b",
+    "scripts/prepare-assessment-production-checkpoint-v2.2-inventory-chronology-fallback.mjs": "32738bef681f0fa5051e02777003276de67d58e2d7b0948c92bbe2213cb1ae33",
+    "scripts/preregister-assessment-production-checkpoint-v2.2-inventory-candidate-census-plans.mjs": "f00b0ffcb2a5279111f2a623802456e178a323dad35302f6a781a47ae4ff43e7",
+    "scripts/test-assessment-production-checkpoint-v2.2-inventory-candidate-census-plan-manifest.mjs": "d71698a533ff79bb9081afe6c9645ba2c1aa641a19b205733feec1efb8e44d3e",
+    "scripts/test-assessment-production-checkpoint-v2.2-inventory-chronology-fallback-preparation.mjs": "54fac80af6276a249fd201b077eda43fec4b98fd797ade5bc966bd5478a62014"
+  },
+  "nextAuthorizedAction": "prepare-separate-production-checkpoint-v2.2-candidate-census-plan-execution-activation-only"
+}
