@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-audio-source-preparation",
+  "protocolId": "assessment-production-score-stability-v2.2.3-decomposed-consensus",
+  "status": "prepared-four-v2.2.3-local-audio-clips",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "checkpointCommit": "381d0e5e2a2a54813ab3ea9e4c111c887a1d324b",
+  "inputHashes": {
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/disagreement-extraction/audio-work-item-preparation.json": "5e7e0859476341820b1c5a9178590514877405c812320583c9b83e6e42b54243",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/disagreement-extraction/audio-work-items.json": "8a8596c6bf67170af4f41a274ed9263a087e9fb840d453441dc5450a959b74b9"
+  },
+  "workItemSourceHashesReplayed": 66,
+  "acquisitionPolicy": {
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "acquisitionFormat": "bestaudio/best",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.03.17"
+  },
+  "toolSourceHashes": {
+    "scripts/prepare-assessment-production-score-stability-v2.2.3-audio-sources.mjs": "93c5569722f0a7876e7b03a3f306ee23c4fe8124fc0092dbd3945dbc11fafdce",
+    "scripts/test-assessment-production-score-stability-v2.2.3-audio-sources.mjs": "b96640a7959ee64374dd833463ba5db8de2d656f02e3d903d6570288c5916f94"
+  },
+  "sources": [
+    {
+      "debateNumber": "17",
+      "videoId": "fXBGvNc2mvU",
+      "acquisitionMode": "downloaded-public-source",
+      "acquisitionAttempts": 1,
+      "sourceAudio": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/audio/source.mp3",
+      "sourceAudioSha256": "ca53528d3740a17cadbc1b879cec7d29ccf9859151cbc955a2e413cdd6234a44",
+      "durationSeconds": 6426.354688,
+      "normalizedChannels": 1,
+      "normalizedSampleRateHz": 16000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "75",
+      "videoId": "WgiWkE1lhII",
+      "acquisitionMode": "downloaded-public-source",
+      "acquisitionAttempts": 1,
+      "sourceAudio": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/audio/source.mp3",
+      "sourceAudioSha256": "ac83c88d95be920198fcda2ac6a117ba3dcbca8f61f392fe7afd37fcd8396a12",
+      "durationSeconds": 5045.672938,
+      "normalizedChannels": 1,
+      "normalizedSampleRateHz": 16000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "17",
+      "debateId": "collins-oconnor-god-existence-2024",
+      "sourceVideoId": "fXBGvNc2mvU",
+      "moveId": "pro-gospel-priors-testimony",
+      "expectedSpeaker": "Francis Collins",
+      "proposition": "Historical judgments about unique Gospel testimony are influenced by prior commitments, so occurrence in only one Gospel does not by itself make the testimony incredible.",
+      "verificationExcerpt": "at this with priors that we should probably talk about approach the gospel you're approaching as a skeptic and so when you find evidence of something that doesn't quite measure up with the cleanest possible explanation you intend to ascribe value to that as something aha there you see there's a reason for me to be skeptical about tting Thomas because it only appears once oras I",
+      "sourceSpan": {
+        "startEvent": 1801,
+        "endEvent": 1819
+      },
+      "clipWindow": {
+        "startMs": 4067380,
+        "endMs": 4117779,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/clips/pro-gospel-priors-testimony.mp3",
+      "clipSha256": "77b0f7703b7ba07fc0c184651764db2c1f6eb4ff04c8e097df96a522476bf1bc",
+      "plannedDurationSeconds": 50.399,
+      "durationSeconds": 50.399,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "17",
+      "debateId": "collins-oconnor-god-existence-2024",
+      "sourceVideoId": "fXBGvNc2mvU",
+      "moveId": "pro-cumulative-moral-christian-case",
+      "expectedSpeaker": "Francis Collins",
+      "proposition": "Cosmic order, objective moral orientation, Jesus's teaching, and the resurrection cumulatively support Christian faith while recognition of human epistemic limits undercuts confident atheistic certainty.",
+      "verificationExcerpt": "the knowledge of God's existence is outside your circle seems plausible on the scale how could you then say I know there is no gu and should it yeah and I think anybody who says that is is is firstly mistaken about their epistemic capabilities and secondly probably not thinking of the right kind of God right I think that's probably the case right an easy way to kind of get away",
+      "sourceSpan": {
+        "startEvent": 2085,
+        "endEvent": 2213
+      },
+      "clipWindow": {
+        "startMs": 4667380,
+        "endMs": 5010300,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/clips/pro-cumulative-moral-christian-case.mp3",
+      "clipSha256": "c70e0bd10af82f8d159a2abd6f42569aa0178541423c715c3f2c9067a57948f3",
+      "plannedDurationSeconds": 342.92,
+      "durationSeconds": 342.92,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "75",
+      "debateId": "rasmussen-clifton-contingency-argument-2019",
+      "sourceVideoId": "WgiWkE1lhII",
+      "moveId": "pro-weaker-senses-of-necessity",
+      "expectedSpeaker": "Josh Rasmussen",
+      "proposition": "Necessity admits stronger and weaker senses, so a foundational reality may be automatically actual without possessing the strongest form of logical or epistemic certainty.",
+      "verificationExcerpt": "approaching it because it looks like we can have overlap if we turn the dial to week the actual necessity we can agree there right it's you strong a kind of epistemic certainty that's too strong right and so now the question is okay if there's a kind of foundational layer of reality what what is its nature and and I was using this term of being automatically actual I don't know",
+      "sourceSpan": {
+        "startEvent": 463,
+        "endEvent": 550
+      },
+      "clipWindow": {
+        "startMs": 1060370,
+        "endMs": 1291770,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/clips/pro-weaker-senses-of-necessity.mp3",
+      "clipSha256": "4d02c147d31b160a2ca5637f8fe14d0bb4414858dbf1558d528f35e5502d2a14",
+      "plannedDurationSeconds": 231.4,
+      "durationSeconds": 231.4,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "75",
+      "debateId": "rasmussen-clifton-contingency-argument-2019",
+      "sourceVideoId": "WgiWkE1lhII",
+      "moveId": "pro-immaterial-concrete-foundation",
+      "expectedSpeaker": "Josh Rasmussen",
+      "proposition": "Concrete reality need not be material: an immaterial conceptual mind with causal powers supplies a coherent model of a concrete foundation related to necessary abstract structure.",
+      "verificationExcerpt": "necessity you have to be more conceptual more conceptual like logic which is kind of exactly what I'm thinking of when I think of God is sort of a supreme conceptual reality well you wouldn't but you definitely don't see God as abstract uh not merely right but I would see abstract as built into the fabric of this supreme mind which is it material right yeah sure but cut but God is causally I mean the difference between as causal powers",
+      "sourceSpan": {
+        "startEvent": 1905,
+        "endEvent": 1937
+      },
+      "clipWindow": {
+        "startMs": 4670320,
+        "endMs": 4765290,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/clips/pro-immaterial-concrete-foundation.mp3",
+      "clipSha256": "dbdbf2c5192a62fd7ca8e3f1f3f127c7ba8f0a391f29b744c1ec7cf16131b1b5",
+      "plannedDurationSeconds": 94.97,
+      "durationSeconds": 94.970938,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 2,
+    "sourceDownloads": 2,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 2,
+    "clips": 4,
+    "clipMinutes": 11.9948,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0
+  },
+  "proposedPolicy": {
+    "version": "v2.2-proposal",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "promoted": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-v2.2.3-audio-verification-manifest-and-cost-estimate-only"
+}
