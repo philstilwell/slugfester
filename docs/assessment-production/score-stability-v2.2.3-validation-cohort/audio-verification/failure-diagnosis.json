@@ -1,0 +1,233 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-audio-verification-failure-diagnosis",
+  "protocolId": "assessment-production-score-stability-v2.2.3-audio-verification-failure-diagnosis",
+  "status": "mixed-speaker-locked-excerpt-contamination-confirmed-audio-attribution-packet-preparation-authorized",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "preservedDeterministicGate": {
+    "path": "docs/assessment-production/score-stability-v2.2.3-validation-cohort/audio-verification/analysis.json",
+    "status": "v2.2.3-audio-verification-unresolved",
+    "verified": 3,
+    "unresolved": 1,
+    "erasedOrReclassified": false
+  },
+  "unresolvedMove": {
+    "debateNumber": "17",
+    "debateId": "collins-oconnor-god-existence-2024",
+    "moveId": "pro-cumulative-moral-christian-case",
+    "expectedSpeaker": "Francis Collins",
+    "proposition": "Cosmic order, objective moral orientation, Jesus's teaching, and the resurrection cumulatively support Christian faith while recognition of human epistemic limits undercuts confident atheistic certainty.",
+    "sourceSpan": {
+      "startEvent": 2085,
+      "endEvent": 2213
+    },
+    "verificationExcerpt": "the knowledge of God's existence is outside your circle seems plausible on the scale how could you then say I know there is no gu and should it yeah and I think anybody who says that is is is firstly mistaken about their epistemic capabilities and secondly probably not thinking of the right kind of God right I think that's probably the case right an easy way to kind of get away",
+    "transcriptPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/transcripts/pro-cumulative-moral-christian-case.transcript.json",
+    "transcriptSha256": "27ed1ca38aca12d33ef583fc16f94e356f5d434f2b9a7f3ef20a361b873ecc72",
+    "diarizedSegmentCount": 77,
+    "namedSpeakers": [
+      "Alex O'Connor",
+      "Francis Collins"
+    ],
+    "deterministicEvidence": {
+      "status": "unresolved",
+      "expectedSpeaker": "Francis Collins",
+      "fullClipExcerptRecall": 0.9583333333333334,
+      "expectedSpeakerExcerptRecall": 0.7777777777777778,
+      "highestOtherSpeaker": "Alex O'Connor",
+      "highestOtherSpeakerExcerptRecall": 0.4861111111111111,
+      "expectedSpeakerRecallMargin": 0.2916666666666667,
+      "expectedSpeakerDurationSeconds": 294.9,
+      "checks": {
+        "fullClipExcerptRecovered": true,
+        "expectedSpeakerExcerptRecovered": false,
+        "expectedSpeakerRecallDistinct": true,
+        "expectedSpeakerDurationSufficient": true
+      },
+      "speakerEvidence": [
+        {
+          "speaker": "Francis Collins",
+          "segmentCount": 61,
+          "durationSeconds": 294.9,
+          "wordCount": 858,
+          "excerptRecall": 0.7777777777777778
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "segmentCount": 16,
+          "durationSeconds": 20.3,
+          "wordCount": 66,
+          "excerptRecall": 0.4861111111111111
+        }
+      ]
+    }
+  },
+  "diagnosis": {
+    "requestCompleted": true,
+    "rawTranscriptAvailable": true,
+    "fullClipExcerptRecovered": true,
+    "expectedSpeakerExcerptRecovered": false,
+    "expectedSpeakerRecallDistinct": true,
+    "expectedSpeakerDurationSufficient": true,
+    "failureClass": "mixed-speaker-locked-excerpt-contamination",
+    "lockedExcerptTokenCount": 72,
+    "fullClipMatchedTokens": 69,
+    "expectedSpeakerMatchedTokens": 56,
+    "expectedSpeakerRecallDeficitTokens": 13,
+    "embeddedOtherSpeakerTokens": 13,
+    "otherSpeakerCoveredDeficitTokens": 13,
+    "deficitTokenCoverage": [
+      {
+        "token": "yeah",
+        "deficitCount": 1,
+        "otherSpeakerCount": 3,
+        "coveredCount": 1
+      },
+      {
+        "token": "anybody",
+        "deficitCount": 1,
+        "otherSpeakerCount": 1,
+        "coveredCount": 1
+      },
+      {
+        "token": "says",
+        "deficitCount": 1,
+        "otherSpeakerCount": 1,
+        "coveredCount": 1
+      },
+      {
+        "token": "firstly",
+        "deficitCount": 1,
+        "otherSpeakerCount": 1,
+        "coveredCount": 1
+      },
+      {
+        "token": "mistaken",
+        "deficitCount": 1,
+        "otherSpeakerCount": 1,
+        "coveredCount": 1
+      },
+      {
+        "token": "epistemic",
+        "deficitCount": 1,
+        "otherSpeakerCount": 1,
+        "coveredCount": 1
+      },
+      {
+        "token": "capabilities",
+        "deficitCount": 1,
+        "otherSpeakerCount": 1,
+        "coveredCount": 1
+      },
+      {
+        "token": "secondly",
+        "deficitCount": 1,
+        "otherSpeakerCount": 1,
+        "coveredCount": 1
+      },
+      {
+        "token": "probably",
+        "deficitCount": 2,
+        "otherSpeakerCount": 3,
+        "coveredCount": 2
+      },
+      {
+        "token": "thinking",
+        "deficitCount": 1,
+        "otherSpeakerCount": 2,
+        "coveredCount": 1
+      },
+      {
+        "token": "right",
+        "deficitCount": 2,
+        "otherSpeakerCount": 2,
+        "coveredCount": 2
+      }
+    ],
+    "embeddedOtherSpeakerSegments": [
+      {
+        "speaker": "Alex O'Connor",
+        "start": 46.827999999999996,
+        "end": 47.178,
+        "text": "Yeah.",
+        "matchedDeficitTokens": [
+          "yeah"
+        ]
+      },
+      {
+        "speaker": "Alex O'Connor",
+        "start": 47.278,
+        "end": 48.628,
+        "text": "And I think anybody who says that is.",
+        "matchedDeficitTokens": [
+          "anybody",
+          "says"
+        ]
+      },
+      {
+        "speaker": "Alex O'Connor",
+        "start": 49.716,
+        "end": 58.466,
+        "text": "is firstly mistaken about their epistemic capabilities and secondly probably not thinking of the right kind of card right i think that's probably the case so",
+        "matchedDeficitTokens": [
+          "firstly",
+          "mistaken",
+          "epistemic",
+          "capabilities",
+          "secondly",
+          "probably",
+          "thinking",
+          "right",
+          "right",
+          "probably"
+        ]
+      }
+    ],
+    "thresholdRelaxationApplied": false,
+    "speakerRelabelingApplied": false,
+    "manualAttributionOverrideApplied": false,
+    "paidTranscriptionRetryApplied": false
+  },
+  "futureModelBoundary": {
+    "model": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "disputedAudioAttributionFieldsOnly": true,
+    "ratingsUnavailable": true,
+    "scoresUnavailable": true,
+    "legacyUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "publicationProseUnavailable": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/audio-verification/analysis.json": "653717cc0091646c479de6cd689f143d2340c44a76dfdd72563b570fe894b901",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/audio-verification/audio-verification.json": "83d58de56dcf03fda41be1f36c14919e6bc60040d428bbdbb65eed8e214679fd",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/disagreement-extraction/audio-work-items.json": "8a8596c6bf67170af4f41a274ed9263a087e9fb840d453441dc5450a959b74b9",
+    "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/transcripts/pro-cumulative-moral-christian-case.transcript.json": "27ed1ca38aca12d33ef583fc16f94e356f5d434f2b9a7f3ef20a361b873ecc72",
+    "scripts/diagnose-assessment-production-score-stability-v2.2.3-audio-failure.mjs": "b52308f2584726f651b0efd1c980909a3de818a3a002fa1c252fe52c7d7a1e74",
+    "scripts/test-assessment-production-score-stability-v2.2.3-audio-failure-diagnosis.mjs": "001a083fb5ac9a91caf71ba06404d1f0c8cda113e9a5a39d1baa5e58b884f303",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7"
+  },
+  "costs": {
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalTranscriptionCostUsd": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "audioAttributionAdjudicationPacketPreparation": true,
+    "audioAttributionAdjudicationModelExecution": false,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "disputeAdjudicationPacketPreparation": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-one-v2.2.3-score-blind-audio-attribution-adjudication-packet"
+}
