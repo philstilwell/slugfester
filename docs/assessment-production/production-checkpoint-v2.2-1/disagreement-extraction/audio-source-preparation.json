@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-audio-source-preparation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-decomposed-consensus",
+  "status": "prepared-two-production-checkpoint-v2.2-local-audio-clips",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "inputHashes": {
+    "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/audio-work-item-preparation.json": "357feacb16f13f11ee6646ba06c2e408cea40a30f0792c3a7e56b817c8461fbb",
+    "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/audio-work-items.json": "a628b436ab54f780e29af2309bcd12813e0dc9754b3878d1b3367c93e113f96d"
+  },
+  "workItemSourceHashesReplayed": 66,
+  "acquisitionPolicy": {
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "acquisitionFormat": "bestaudio/best",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.03.17"
+  },
+  "sources": [
+    {
+      "debateNumber": "25",
+      "videoId": "mMraxhd9Z9Q",
+      "acquisitionMode": "downloaded-public-source",
+      "acquisitionAttempts": 1,
+      "sourceAudio": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/audio/source.mp3",
+      "sourceAudioSha256": "d8ada88258eeb01fd9c15b27c49cbba35991b5f6ae46395e1e5dd42081127a8f",
+      "durationSeconds": 5481.186375,
+      "normalizedChannels": 1,
+      "normalizedSampleRateHz": 16000,
+      "normalizedBitrateKbps": 48
+    },
+    {
+      "debateNumber": "104",
+      "videoId": "kI5j2b7ZtXw",
+      "acquisitionMode": "downloaded-public-source",
+      "acquisitionAttempts": 1,
+      "sourceAudio": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/audio/source.mp3",
+      "sourceAudioSha256": "0f1b27194646b271d352a32103cfd151412c942215a65cc383edbc388189e7fc",
+      "durationSeconds": 4590.561813,
+      "normalizedChannels": 1,
+      "normalizedSampleRateHz": 16000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "25",
+      "debateId": "hitchens-ramadan-islam-peace-2010",
+      "sourceVideoId": "mMraxhd9Z9Q",
+      "moveId": "con-internal-reform-resources",
+      "expectedSpeaker": "Tariq Ramadan",
+      "proposition": "Islam's interpretive, jurisprudential, ethical, philosophical, and rationalist inheritance supplies internal resources for diverse contemporary visions and reform.",
+      "verificationExcerpt": "do you know that they C who came with the rationality and doubt read himself read the thesis of Abu hamali who was talking about doubt and doubt as a sense of getting certitude and and knowledge neglected not known and I think that the Islamic tradition is full of that we have to reconcile ourself with our past in order to come with a diversity of New Visions for for the future",
+      "sourceSpan": {
+        "startEvent": 1835,
+        "endEvent": 1875
+      },
+      "clipWindow": {
+        "startMs": 4666980,
+        "endMs": 4784500,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/clips/con-internal-reform-resources.mp3",
+      "clipSha256": "d77729003aa138aba59b261a7c5668a764c5b819fdf5755ac1838251890ac854",
+      "plannedDurationSeconds": 117.52,
+      "durationSeconds": 117.52,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "104",
+      "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+      "sourceVideoId": "kI5j2b7ZtXw",
+      "moveId": "con-selection-for-reliable-investigation",
+      "expectedSpeaker": "Alex O'Connor",
+      "proposition": "Natural selection can favor investigative and classificatory capacities that track real environmental dangers and benefits reliably enough to support rational inference.",
+      "verificationExcerpt": "although natural selection is selecting for survival the most kind of consistent way to ensure the survival of a conscious Asian is its ability to realistically understand the world around sounds like you're saying it's perfectly consistent that our ability to reason would be would confirm yeah yeah he's happy perfectly happy too is it true that we have to be clear to make sure",
+      "sourceSpan": {
+        "startEvent": 1168,
+        "endEvent": 1278
+      },
+      "clipWindow": {
+        "startMs": 2747219,
+        "endMs": 2999160,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/clips/con-selection-for-reliable-investigation.mp3",
+      "clipSha256": "9bc39458bddf311fb1bd3125e5bc6689479e08ccb703ccba4f3b3abff0f0ecb3",
+      "plannedDurationSeconds": 251.941,
+      "durationSeconds": 251.941,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 2,
+    "sourceDownloads": 2,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 2,
+    "clips": 2,
+    "clipMinutes": 6.1577,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0
+  },
+  "gateDisposition": {
+    "failedProductionCanaryV1PreservedFailed": true,
+    "failedProductionCanaryV1OutputsUsedAsModelInput": false,
+    "priorValidationCohortsReclassified": false,
+    "priorValidationCohortOutputsUsedAsModelInput": false,
+    "checkpointDiscoveryPassed": true,
+    "checkpointDiscoveryRetried": false,
+    "checkpointDiscoveryCandidatesChangedDuringTransport": false
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-production-checkpoint-v2.2-audio-verification-manifest-and-cost-estimate-only"
+}
