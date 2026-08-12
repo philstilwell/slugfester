@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-repair-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-repair-1",
+  "status": "debate-50-bounded-repair-and-complete-publication-validation-passed",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "repairContextPassed": true,
+    "completeDebateValidationPassed": true,
+    "correctedFields": [
+      {
+        "field": "moveProse.pro-gospels-cumulative-reliability.critique",
+        "words": 117,
+        "characters": 1056,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-no-replacement-method-burden.critique",
+        "words": 119,
+        "characters": 954,
+        "sentences": 4
+      }
+    ],
+    "movesValidated": 19,
+    "critiquesValidated": 19,
+    "exactSourceQuotesValidated": 2,
+    "overallCommentarySidesValidated": 2,
+    "aiExtensionSidesValidated": 2,
+    "immutableFieldsChanged": 0,
+    "attempts": 1,
+    "retries": 0,
+    "furtherCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "originalFailedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/outputs/debate-50.json",
+    "originalFailedOutputPreserved": true,
+    "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-output.json",
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merged/debate-50.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merge-audit.json"
+  },
+  "totals": {
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "nineContextResumptionPlanPreparation": true,
+    "nineContextModelExecution": false,
+    "retry": false,
+    "furtherCorrectionModelExecution": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-and-freeze-separate-nine-context-publication-resumption-plan"
+}
