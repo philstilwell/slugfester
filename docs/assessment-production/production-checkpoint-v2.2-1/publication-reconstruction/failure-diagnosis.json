@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-failure-diagnosis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-reconstruction",
+  "status": "diagnosed-operational-publication-context-two-critique-word-overruns",
+  "developmentValidationOnly": false,
+  "productionCanary": true,
+  "stagingOnly": true,
+  "failedContext": {
+    "contextIndex": 0,
+    "debateNumber": "50",
+    "debateId": "knechtle-dillahunty-christianity-true-2023",
+    "elapsedMinutes": 5.51,
+    "model": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "correctionContextCount": 0,
+    "transportPassed": true,
+    "outputSha256": "8e12c59664858c82bc200e82629296f7fccf71d541c1fad019f6dfd0ea3d9077"
+  },
+  "rampDisposition": {
+    "stoppedBeforeExpansion": true,
+    "contextsAttempted": 1,
+    "contextsUnattempted": 9,
+    "unattemptedDebates": [
+      "192",
+      "129",
+      "40",
+      "25",
+      "104",
+      "22",
+      "10",
+      "167",
+      "122"
+    ],
+    "retries": 0,
+    "correctionContexts": 0
+  },
+  "failureBoundary": {
+    "failedFields": [
+      {
+        "path": "moveProse.pro-gospels-cumulative-reliability.critique",
+        "words": 131,
+        "characters": 1065,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 1
+      },
+      {
+        "path": "moveProse.con-no-replacement-method-burden.critique",
+        "words": 133,
+        "characters": 1007,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 3
+      }
+    ],
+    "failedFieldCount": 2,
+    "excessWordsTotal": 4,
+    "critiquesPassingUnchanged": 17,
+    "critiquesWithCharacterFailure": 0,
+    "critiquesWithSentenceLabelOrPunctuationFailure": 0,
+    "originalValidationMessage": "pro-gospels-cumulative-reliability: critique outside 105–130 words"
+  },
+  "diagnosticReplay": {
+    "persistedCorrectedOutput": false,
+    "originalOutputModified": false,
+    "purpose": "prove-all-other-output-fields-pass-after-bounded-in-memory-removal-of-four-excess-words",
+    "hypotheticalWritableFields": [
+      "moveProse.pro-gospels-cumulative-reliability.critique",
+      "moveProse.con-no-replacement-method-burden.critique"
+    ],
+    "hypotheticalWordsRemoved": 4,
+    "result": {
+      "status": "passed",
+      "debateNumber": "50",
+      "moves": 19,
+      "critiques": 19,
+      "minimumCritiqueCharacters": 937,
+      "tags": 3,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 3,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "preservedControls": {
+    "participantJudgmentWasScoreBlind": true,
+    "scoresRecalculated": false,
+    "scoresChanged": false,
+    "modelAuthoredScores": 0,
+    "retries": 0,
+    "correctionModelContexts": 0,
+    "meteredApiCostUsd": 0,
+    "productionMutation": false
+  },
+  "prospectiveRecoveryOnly": {
+    "currentlyAuthorized": false,
+    "repairPacketMaximumWritableFields": 2,
+    "proposedRepairPackets": 1,
+    "proposedWritableFields": [
+      "moveProse.pro-gospels-cumulative-reliability.critique",
+      "moveProse.con-no-replacement-method-burden.critique"
+    ],
+    "proposedModel": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription"
+    },
+    "proposedAttemptsMaximum": 1,
+    "proposedRetriesMaximum": 0,
+    "requiredAfterRepair": [
+      "revalidate-the-complete-debate-50-publication-output",
+      "freeze-a-separate-nine-context-resumption-manifest-only-if-debate-50-passes",
+      "retain-production-mutation-and-publication-finalization-stop-rules"
+    ]
+  },
+  "authorization": {
+    "repairPacketPreparation": false,
+    "repairModelExecution": false,
+    "publicationGateResumption": false,
+    "retry": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "activation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/execution-activation.json",
+      "sha256": "4784a739292f4cbe658a322346e5dae02a77232749629a2e8d7a29306b452e9c"
+    },
+    "execution": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/model-execution.json",
+      "sha256": "a53fe10fb2a63e88944fddab1a2b86119e77889a9ecffd836c959ad139ba4a86"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/analysis.json",
+      "sha256": "43efa9143fae22e72c1932faf2db213b85598c166397f0f2297104c2a90d8ff6"
+    },
+    "failedOutput": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/outputs/debate-50.json",
+      "sha256": "8e12c59664858c82bc200e82629296f7fccf71d541c1fad019f6dfd0ea3d9077"
+    },
+    "packet": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-50.json",
+      "sha256": "a2964276f2a66bee6cc99f71c6c2885e9aa4c7d44bb6b71616e7cca883d451c4"
+    },
+    "validation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/validations/debate-50.json",
+      "sha256": "948e22a0a208727fc923b48a62a739987158ce73a33b1fa698c2ed331eaffe80"
+    },
+    "provenance": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/provenance/debate-50.json",
+      "sha256": "6ef00a2ce3426781619d4bc73a98b2495e13b3538975ff796bc145709b8ff187"
+    }
+  },
+  "nextRequiredAction": "user-decision-on-prospective-one-packet-two-field-repair-and-nine-context-resumption-plan"
+}

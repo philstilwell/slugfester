@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-model-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-reconstruction",
+  "status": "production-checkpoint-v2.2-publication-gate-complete-with-failure",
+  "gateStartedAt": "2026-08-12T22:41:07.005Z",
+  "gateCompletedAt": "2026-08-12T22:46:37.418Z",
+  "contextsPlanned": 10,
+  "contextsAttempted": 1,
+  "contextsUnattempted": 9,
+  "unattemptedContextIndexes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "validContexts": 0,
+  "invalidContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "correctionContexts": 0,
+  "timeoutExtensions": 0,
+  "maximumObservedConcurrency": 1,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 330412,
+  "aggregateModelElapsedMs": 330396,
+  "meanElapsedMs": 330396,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    },
+    {
+      "phase": "steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "50",
+      "debateId": "knechtle-dillahunty-christianity-true-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "correctionContextCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-12T22:41:07.006Z",
+      "completedAt": "2026-08-12T22:46:37.402Z",
+      "elapsedMs": 330396,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "ownDebateScoresImmutable": true,
+      "copiedInputBytes": 210521,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "4f2a90858aa1af27368bcdb3dd2ccee3fd1d84553fac809043d82b48746d636d",
+      "stderrSha256": "5662f022dd6fdae67fc9244eb7c81dfe8230e847a595365701c6507a6a9aabc8",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "outputWritten": true,
+      "outputSha256": "8e12c59664858c82bc200e82629296f7fccf71d541c1fad019f6dfd0ea3d9077",
+      "validationWritten": true,
+      "validationSha256": "948e22a0a208727fc923b48a62a739987158ce73a33b1fa698c2ed331eaffe80",
+      "provenanceWritten": true,
+      "provenanceSha256": "6ef00a2ce3426781619d4bc73a98b2495e13b3538975ff796bc145709b8ff187",
+      "validationSummary": null,
+      "validationMessage": "Error: pro-gospels-cumulative-reliability: critique outside 105–130 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateCheckpointV22PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs:99:5)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-checkpoint-v2.2-publication.mjs:239:29)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-checkpoint-v2.2-publication.mjs:353:22)\n    at async Promise.all (index 0)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-checkpoint-v2.2-publication.mjs:356:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-checkpoint-v2.2-publication.mjs:378:24"
+    }
+  ],
+  "participantJudgmentWasScoreBlind": true,
+  "ownDebateScoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "correctionModelExecution": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
