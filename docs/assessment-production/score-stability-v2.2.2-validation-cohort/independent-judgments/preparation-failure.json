@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.2-independent-judgment-preparation-failure",
+  "status": "v2.2.2-independent-judgment-packet-preparation-failed-transport-ceiling",
+  "failedAt": "2026-08-12T00:06:18.000Z",
+  "checkpointCommit": "64e270f42c48ef660dbf62bd117cd63ab64734f6",
+  "developmentValidationOnly": true,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true
+  },
+  "attempt": {
+    "debates": 10,
+    "contextsPlanned": 20,
+    "contextsWithinCeiling": 18,
+    "contextsOverCeiling": 2,
+    "packetsFrozen": 0,
+    "schemasFrozen": 0,
+    "modelContextsExecuted": 0,
+    "scoresDerived": 0,
+    "provenCopiedInputCeilingBytes": 115000,
+    "maximumObservedCopiedInputBytes": 127306,
+    "meanObservedCopiedInputBytes": 110806
+  },
+  "overflows": [
+    {
+      "debateNumber": "39",
+      "reviewerPass": "A",
+      "copiedInputBytes": 127306,
+      "overflowBytes": 12306,
+      "components": {
+        "manualBytes": 7941,
+        "sourcePacketBytes": 3356,
+        "judgmentPacketBytes": 55241,
+        "schemaBytes": 60768
+      }
+    },
+    {
+      "debateNumber": "39",
+      "reviewerPass": "B",
+      "copiedInputBytes": 127306,
+      "overflowBytes": 12306,
+      "components": {
+        "manualBytes": 7941,
+        "sourcePacketBytes": 3356,
+        "judgmentPacketBytes": 55241,
+        "schemaBytes": 60768
+      }
+    }
+  ],
+  "disposition": {
+    "failedPreparationPreserved": true,
+    "partialPacketFreezeAccepted": false,
+    "transportCeilingRaised": false,
+    "timeoutExtended": false,
+    "retryPerformed": false,
+    "semanticCorrectionPerformed": false,
+    "independentJudgmentModelExecutionAuthorized": false,
+    "productionMutationAuthorized": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/inventory-analysis.json": "470b31350832277d1a88718b11e2257e96c1e649072e0cd7671fc03d38f721ee",
+    "scripts/prepare-assessment-production-score-stability-v2.2.2-independent-judgments.mjs": "dec2d1c2cb364cd648c6491382ee88d8dc6cefa568ffa17d4f703027451f8337",
+    "scripts/test-assessment-production-score-stability-v2.2.2-independent-judgment-preparation.mjs": "bad99b83c5808ba6f0a6e4dc9d539809a95fe210b278ce5b39388a9dee378f36"
+  },
+  "nextAuthorizedAction": "develop-v2.2.3-semantics-preserving-compact-judgment-schema-model-free-only"
+}
