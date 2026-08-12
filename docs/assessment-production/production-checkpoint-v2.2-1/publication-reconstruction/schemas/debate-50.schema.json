@@ -1,0 +1,2572 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-production-checkpoint-v2.2-publication-50",
+  "title": "Slugfester production checkpoint v2.2 publication Debate 50",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "productionCanary",
+    "stagingOnly",
+    "completedAt",
+    "summary",
+    "representativeQuotes",
+    "moveProse",
+    "overallCommentary",
+    "aiExtension",
+    "displayContract",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-production-checkpoint-v2.2-publication-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-checkpoint-v2.2-1-publication-reconstruction"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "50"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "knechtle-dillahunty-christianity-true-2023"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "productionCanary": {
+      "type": "boolean",
+      "const": true
+    },
+    "stagingOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 40
+    },
+    "representativeQuotes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "pro-human-value-divine-image",
+                "pro-objective-morality-prior-mind",
+                "pro-plural-forms-of-evidence",
+                "pro-resurrection-cumulative-history",
+                "pro-gospels-cumulative-reliability",
+                "pro-evidential-skepticism",
+                "pro-compatible-gospel-perspectives",
+                "pro-accommodation-and-creation-ideal",
+                "pro-free-will-human-evil",
+                "pro-stolen-body-alternative"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "con-discriminating-truth-test",
+                "con-empirical-resurrection-deficit",
+                "con-preservation-not-truth",
+                "con-four-tests-fiction-compatible",
+                "con-no-replacement-method-burden",
+                "con-empty-tomb-appearances-insufficient",
+                "con-secular-human-meaning",
+                "con-biblical-gender-inequality",
+                "con-exodus-regulates-slavery"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        }
+      }
+    },
+    "moveProse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-human-value-divine-image",
+        "pro-objective-morality-prior-mind",
+        "pro-plural-forms-of-evidence",
+        "con-discriminating-truth-test",
+        "con-empirical-resurrection-deficit",
+        "pro-resurrection-cumulative-history",
+        "con-preservation-not-truth",
+        "pro-gospels-cumulative-reliability",
+        "con-four-tests-fiction-compatible",
+        "con-no-replacement-method-burden",
+        "con-empty-tomb-appearances-insufficient",
+        "pro-evidential-skepticism",
+        "con-secular-human-meaning",
+        "pro-compatible-gospel-perspectives",
+        "con-biblical-gender-inequality",
+        "pro-accommodation-and-creation-ideal",
+        "pro-free-will-human-evil",
+        "con-exodus-regulates-slavery",
+        "pro-stolen-body-alternative"
+      ],
+      "properties": {
+        "pro-human-value-divine-image": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-objective-morality-prior-mind": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-plural-forms-of-evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-discriminating-truth-test": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-empirical-resurrection-deficit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-resurrection-cumulative-history": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-preservation-not-truth": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-gospels-cumulative-reliability": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-four-tests-fiction-compatible": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-no-replacement-method-burden": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-empty-tomb-appearances-insufficient": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-evidential-skepticism": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-secular-human-meaning": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-compatible-gospel-perspectives": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-biblical-gender-inequality": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-accommodation-and-creation-ideal": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-free-will-human-evil": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-exodus-regulates-slavery": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-stolen-body-alternative": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "overallCommentary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strengths",
+            "blunders"
+          ],
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 30
+              }
+            },
+            "blunders": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 50
+                  },
+                  "tags": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "type",
+                        "slug",
+                        "context"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "fallacy",
+                            "bias"
+                          ]
+                        },
+                        "slug": {
+                          "type": "string",
+                          "enum": [
+                            "appeal-to-authority",
+                            "argument-from-ignorance",
+                            "begging-the-question",
+                            "equivocation",
+                            "red-herring",
+                            "special-pleading",
+                            "ambiguity-effect",
+                            "authority-bias",
+                            "base-rate-neglect",
+                            "belief-bias",
+                            "confirmation-bias",
+                            "scope-neglect",
+                            "subjective-validation"
+                          ]
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strengths",
+            "blunders"
+          ],
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 30
+              }
+            },
+            "blunders": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 50
+                  },
+                  "tags": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "type",
+                        "slug",
+                        "context"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "fallacy",
+                            "bias"
+                          ]
+                        },
+                        "slug": {
+                          "type": "string",
+                          "enum": [
+                            "appeal-to-authority",
+                            "argument-from-ignorance",
+                            "begging-the-question",
+                            "equivocation",
+                            "red-herring",
+                            "special-pleading",
+                            "ambiguity-effect",
+                            "authority-bias",
+                            "base-rate-neglect",
+                            "belief-bias",
+                            "confirmation-bias",
+                            "scope-neglect",
+                            "subjective-validation"
+                          ]
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "aiExtension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "aiGenerated",
+        "disclaimer",
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "aiGenerated": {
+          "type": "boolean",
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string",
+          "const": "This section is an AI-generated contribution, not transcript content. Its wording is not attributable to either participant and it does not affect any participant score."
+        },
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-human-value-divine-image",
+                          "pro-objective-morality-prior-mind",
+                          "pro-plural-forms-of-evidence",
+                          "con-discriminating-truth-test",
+                          "con-empirical-resurrection-deficit",
+                          "pro-resurrection-cumulative-history",
+                          "con-preservation-not-truth",
+                          "pro-gospels-cumulative-reliability",
+                          "con-four-tests-fiction-compatible",
+                          "con-no-replacement-method-burden",
+                          "con-empty-tomb-appearances-insufficient",
+                          "pro-evidential-skepticism",
+                          "con-secular-human-meaning",
+                          "pro-compatible-gospel-perspectives",
+                          "con-biblical-gender-inequality",
+                          "pro-accommodation-and-creation-ideal",
+                          "pro-free-will-human-evil",
+                          "con-exodus-regulates-slavery",
+                          "pro-stolen-body-alternative"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-human-value-divine-image",
+                            "pro-objective-morality-prior-mind",
+                            "pro-plural-forms-of-evidence",
+                            "con-discriminating-truth-test",
+                            "con-empirical-resurrection-deficit",
+                            "pro-resurrection-cumulative-history",
+                            "con-preservation-not-truth",
+                            "pro-gospels-cumulative-reliability",
+                            "con-four-tests-fiction-compatible",
+                            "con-no-replacement-method-burden",
+                            "con-empty-tomb-appearances-insufficient",
+                            "pro-evidential-skepticism",
+                            "con-secular-human-meaning",
+                            "pro-compatible-gospel-perspectives",
+                            "con-biblical-gender-inequality",
+                            "pro-accommodation-and-creation-ideal",
+                            "pro-free-will-human-evil",
+                            "con-exodus-regulates-slavery",
+                            "pro-stolen-body-alternative"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-human-value-divine-image",
+                          "pro-objective-morality-prior-mind",
+                          "pro-plural-forms-of-evidence",
+                          "con-discriminating-truth-test",
+                          "con-empirical-resurrection-deficit",
+                          "pro-resurrection-cumulative-history",
+                          "con-preservation-not-truth",
+                          "pro-gospels-cumulative-reliability",
+                          "con-four-tests-fiction-compatible",
+                          "con-no-replacement-method-burden",
+                          "con-empty-tomb-appearances-insufficient",
+                          "pro-evidential-skepticism",
+                          "con-secular-human-meaning",
+                          "pro-compatible-gospel-perspectives",
+                          "con-biblical-gender-inequality",
+                          "pro-accommodation-and-creation-ideal",
+                          "pro-free-will-human-evil",
+                          "con-exodus-regulates-slavery",
+                          "pro-stolen-body-alternative"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 280
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-human-value-divine-image",
+                            "pro-objective-morality-prior-mind",
+                            "pro-plural-forms-of-evidence",
+                            "con-discriminating-truth-test",
+                            "con-empirical-resurrection-deficit",
+                            "pro-resurrection-cumulative-history",
+                            "con-preservation-not-truth",
+                            "pro-gospels-cumulative-reliability",
+                            "con-four-tests-fiction-compatible",
+                            "con-no-replacement-method-burden",
+                            "con-empty-tomb-appearances-insufficient",
+                            "pro-evidential-skepticism",
+                            "con-secular-human-meaning",
+                            "pro-compatible-gospel-perspectives",
+                            "con-biblical-gender-inequality",
+                            "pro-accommodation-and-creation-ideal",
+                            "pro-free-will-human-evil",
+                            "con-exodus-regulates-slavery",
+                            "pro-stolen-body-alternative"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-human-value-divine-image",
+                          "pro-objective-morality-prior-mind",
+                          "pro-plural-forms-of-evidence",
+                          "con-discriminating-truth-test",
+                          "con-empirical-resurrection-deficit",
+                          "pro-resurrection-cumulative-history",
+                          "con-preservation-not-truth",
+                          "pro-gospels-cumulative-reliability",
+                          "con-four-tests-fiction-compatible",
+                          "con-no-replacement-method-burden",
+                          "con-empty-tomb-appearances-insufficient",
+                          "pro-evidential-skepticism",
+                          "con-secular-human-meaning",
+                          "pro-compatible-gospel-perspectives",
+                          "con-biblical-gender-inequality",
+                          "pro-accommodation-and-creation-ideal",
+                          "pro-free-will-human-evil",
+                          "con-exodus-regulates-slavery",
+                          "pro-stolen-body-alternative"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-human-value-divine-image",
+                            "pro-objective-morality-prior-mind",
+                            "pro-plural-forms-of-evidence",
+                            "con-discriminating-truth-test",
+                            "con-empirical-resurrection-deficit",
+                            "pro-resurrection-cumulative-history",
+                            "con-preservation-not-truth",
+                            "pro-gospels-cumulative-reliability",
+                            "con-four-tests-fiction-compatible",
+                            "con-no-replacement-method-burden",
+                            "con-empty-tomb-appearances-insufficient",
+                            "pro-evidential-skepticism",
+                            "con-secular-human-meaning",
+                            "pro-compatible-gospel-perspectives",
+                            "con-biblical-gender-inequality",
+                            "pro-accommodation-and-creation-ideal",
+                            "pro-free-will-human-evil",
+                            "con-exodus-regulates-slavery",
+                            "pro-stolen-body-alternative"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-human-value-divine-image",
+                          "pro-objective-morality-prior-mind",
+                          "pro-plural-forms-of-evidence",
+                          "con-discriminating-truth-test",
+                          "con-empirical-resurrection-deficit",
+                          "pro-resurrection-cumulative-history",
+                          "con-preservation-not-truth",
+                          "pro-gospels-cumulative-reliability",
+                          "con-four-tests-fiction-compatible",
+                          "con-no-replacement-method-burden",
+                          "con-empty-tomb-appearances-insufficient",
+                          "pro-evidential-skepticism",
+                          "con-secular-human-meaning",
+                          "pro-compatible-gospel-perspectives",
+                          "con-biblical-gender-inequality",
+                          "pro-accommodation-and-creation-ideal",
+                          "pro-free-will-human-evil",
+                          "con-exodus-regulates-slavery",
+                          "pro-stolen-body-alternative"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 280
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-human-value-divine-image",
+                            "pro-objective-morality-prior-mind",
+                            "pro-plural-forms-of-evidence",
+                            "con-discriminating-truth-test",
+                            "con-empirical-resurrection-deficit",
+                            "pro-resurrection-cumulative-history",
+                            "con-preservation-not-truth",
+                            "pro-gospels-cumulative-reliability",
+                            "con-four-tests-fiction-compatible",
+                            "con-no-replacement-method-burden",
+                            "con-empty-tomb-appearances-insufficient",
+                            "pro-evidential-skepticism",
+                            "con-secular-human-meaning",
+                            "pro-compatible-gospel-perspectives",
+                            "con-biblical-gender-inequality",
+                            "pro-accommodation-and-creation-ideal",
+                            "pro-free-will-human-evil",
+                            "con-exodus-regulates-slavery",
+                            "pro-stolen-body-alternative"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "displayContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sectionTitle",
+        "placement",
+        "defaultCollapsed",
+        "visualVariant",
+        "byline",
+        "prohibitedLanguageScanPassed"
+      ],
+      "properties": {
+        "sectionTitle": {
+          "type": "string",
+          "const": "AI Extension"
+        },
+        "placement": {
+          "type": "string",
+          "const": "immediately-after-overall-commentary"
+        },
+        "defaultCollapsed": {
+          "type": "boolean",
+          "const": true
+        },
+        "visualVariant": {
+          "type": "string",
+          "const": "ai-distinct"
+        },
+        "byline": {
+          "type": "string",
+          "const": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2."
+        },
+        "prohibitedLanguageScanPassed": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lockedScoresUnchanged",
+        "everyMoveAuthoredOnce",
+        "legacyAssessmentUnavailable",
+        "otherDebatesUnavailable",
+        "aiMaterialExcludedFromScores",
+        "sourceOnlyQuoteSelection"
+      ],
+      "properties": {
+        "lockedScoresUnchanged": {
+          "type": "boolean",
+          "const": true
+        },
+        "everyMoveAuthoredOnce": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyAssessmentUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherDebatesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "aiMaterialExcludedFromScores": {
+          "type": "boolean",
+          "const": true
+        },
+        "sourceOnlyQuoteSelection": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  }
+}

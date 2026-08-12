@@ -1,0 +1,2392 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-production-checkpoint-v2.2-publication-129",
+  "title": "Slugfester production checkpoint v2.2 publication Debate 129",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "productionCanary",
+    "stagingOnly",
+    "completedAt",
+    "summary",
+    "representativeQuotes",
+    "moveProse",
+    "overallCommentary",
+    "aiExtension",
+    "displayContract",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-production-checkpoint-v2.2-publication-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-checkpoint-v2.2-1-publication-reconstruction"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "129"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "plantinga-law-eaan-rational-belief-2010"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "productionCanary": {
+      "type": "boolean",
+      "const": true
+    },
+    "stagingOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 40
+    },
+    "representativeQuotes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "pro-low-reliability-premise",
+                "pro-faculty-wide-defeater",
+                "pro-selection-targets-adaptive-neurology",
+                "pro-theistic-reliability-expectation",
+                "pro-rational-acceptance-distinction",
+                "pro-adaptive-behavior-content-gap",
+                "pro-supervenience-correspondence-distinction",
+                "pro-even-odds-compound-unreliability",
+                "pro-evil-total-evidence-answer",
+                "pro-no-warranted-neurology-truth-link"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "con-selection-adaptive-true-belief",
+                "con-content-conceptual-constraints",
+                "con-content-causal-association",
+                "con-scope-atheism-not-naturalism",
+                "con-theistic-skeptical-parity",
+                "con-reliability-evolution-favors-truth",
+                "con-defeater-theistic-undercutting"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        }
+      }
+    },
+    "moveProse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-low-reliability-premise",
+        "pro-faculty-wide-defeater",
+        "pro-selection-targets-adaptive-neurology",
+        "pro-theistic-reliability-expectation",
+        "pro-rational-acceptance-distinction",
+        "con-selection-adaptive-true-belief",
+        "pro-adaptive-behavior-content-gap",
+        "con-content-conceptual-constraints",
+        "con-content-causal-association",
+        "pro-supervenience-correspondence-distinction",
+        "pro-even-odds-compound-unreliability",
+        "con-scope-atheism-not-naturalism",
+        "con-theistic-skeptical-parity",
+        "pro-evil-total-evidence-answer",
+        "con-reliability-evolution-favors-truth",
+        "con-defeater-theistic-undercutting",
+        "pro-no-warranted-neurology-truth-link"
+      ],
+      "properties": {
+        "pro-low-reliability-premise": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-faculty-wide-defeater": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-selection-targets-adaptive-neurology": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-theistic-reliability-expectation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-rational-acceptance-distinction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-selection-adaptive-true-belief": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-adaptive-behavior-content-gap": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-content-conceptual-constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-content-causal-association": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-supervenience-correspondence-distinction": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-even-odds-compound-unreliability": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-scope-atheism-not-naturalism": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-theistic-skeptical-parity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-evil-total-evidence-answer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-reliability-evolution-favors-truth": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-defeater-theistic-undercutting": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-no-warranted-neurology-truth-link": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "overallCommentary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strengths",
+            "blunders"
+          ],
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 30
+              }
+            },
+            "blunders": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 50
+                  },
+                  "tags": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "type",
+                        "slug",
+                        "context"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "fallacy",
+                            "bias"
+                          ]
+                        },
+                        "slug": {
+                          "type": "string",
+                          "enum": [
+                            "appeal-to-authority",
+                            "argument-from-ignorance",
+                            "begging-the-question",
+                            "equivocation",
+                            "red-herring",
+                            "special-pleading",
+                            "ambiguity-effect",
+                            "authority-bias",
+                            "base-rate-neglect",
+                            "belief-bias",
+                            "confirmation-bias",
+                            "scope-neglect",
+                            "subjective-validation"
+                          ]
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strengths",
+            "blunders"
+          ],
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 30
+              }
+            },
+            "blunders": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 50
+                  },
+                  "tags": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "type",
+                        "slug",
+                        "context"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "fallacy",
+                            "bias"
+                          ]
+                        },
+                        "slug": {
+                          "type": "string",
+                          "enum": [
+                            "appeal-to-authority",
+                            "argument-from-ignorance",
+                            "begging-the-question",
+                            "equivocation",
+                            "red-herring",
+                            "special-pleading",
+                            "ambiguity-effect",
+                            "authority-bias",
+                            "base-rate-neglect",
+                            "belief-bias",
+                            "confirmation-bias",
+                            "scope-neglect",
+                            "subjective-validation"
+                          ]
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "aiExtension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "aiGenerated",
+        "disclaimer",
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "aiGenerated": {
+          "type": "boolean",
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string",
+          "const": "This section is an AI-generated contribution, not transcript content. Its wording is not attributable to either participant and it does not affect any participant score."
+        },
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-low-reliability-premise",
+                          "pro-faculty-wide-defeater",
+                          "pro-selection-targets-adaptive-neurology",
+                          "pro-theistic-reliability-expectation",
+                          "pro-rational-acceptance-distinction",
+                          "con-selection-adaptive-true-belief",
+                          "pro-adaptive-behavior-content-gap",
+                          "con-content-conceptual-constraints",
+                          "con-content-causal-association",
+                          "pro-supervenience-correspondence-distinction",
+                          "pro-even-odds-compound-unreliability",
+                          "con-scope-atheism-not-naturalism",
+                          "con-theistic-skeptical-parity",
+                          "pro-evil-total-evidence-answer",
+                          "con-reliability-evolution-favors-truth",
+                          "con-defeater-theistic-undercutting",
+                          "pro-no-warranted-neurology-truth-link"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-low-reliability-premise",
+                            "pro-faculty-wide-defeater",
+                            "pro-selection-targets-adaptive-neurology",
+                            "pro-theistic-reliability-expectation",
+                            "pro-rational-acceptance-distinction",
+                            "con-selection-adaptive-true-belief",
+                            "pro-adaptive-behavior-content-gap",
+                            "con-content-conceptual-constraints",
+                            "con-content-causal-association",
+                            "pro-supervenience-correspondence-distinction",
+                            "pro-even-odds-compound-unreliability",
+                            "con-scope-atheism-not-naturalism",
+                            "con-theistic-skeptical-parity",
+                            "pro-evil-total-evidence-answer",
+                            "con-reliability-evolution-favors-truth",
+                            "con-defeater-theistic-undercutting",
+                            "pro-no-warranted-neurology-truth-link"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-low-reliability-premise",
+                          "pro-faculty-wide-defeater",
+                          "pro-selection-targets-adaptive-neurology",
+                          "pro-theistic-reliability-expectation",
+                          "pro-rational-acceptance-distinction",
+                          "con-selection-adaptive-true-belief",
+                          "pro-adaptive-behavior-content-gap",
+                          "con-content-conceptual-constraints",
+                          "con-content-causal-association",
+                          "pro-supervenience-correspondence-distinction",
+                          "pro-even-odds-compound-unreliability",
+                          "con-scope-atheism-not-naturalism",
+                          "con-theistic-skeptical-parity",
+                          "pro-evil-total-evidence-answer",
+                          "con-reliability-evolution-favors-truth",
+                          "con-defeater-theistic-undercutting",
+                          "pro-no-warranted-neurology-truth-link"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 280
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-low-reliability-premise",
+                            "pro-faculty-wide-defeater",
+                            "pro-selection-targets-adaptive-neurology",
+                            "pro-theistic-reliability-expectation",
+                            "pro-rational-acceptance-distinction",
+                            "con-selection-adaptive-true-belief",
+                            "pro-adaptive-behavior-content-gap",
+                            "con-content-conceptual-constraints",
+                            "con-content-causal-association",
+                            "pro-supervenience-correspondence-distinction",
+                            "pro-even-odds-compound-unreliability",
+                            "con-scope-atheism-not-naturalism",
+                            "con-theistic-skeptical-parity",
+                            "pro-evil-total-evidence-answer",
+                            "con-reliability-evolution-favors-truth",
+                            "con-defeater-theistic-undercutting",
+                            "pro-no-warranted-neurology-truth-link"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-low-reliability-premise",
+                          "pro-faculty-wide-defeater",
+                          "pro-selection-targets-adaptive-neurology",
+                          "pro-theistic-reliability-expectation",
+                          "pro-rational-acceptance-distinction",
+                          "con-selection-adaptive-true-belief",
+                          "pro-adaptive-behavior-content-gap",
+                          "con-content-conceptual-constraints",
+                          "con-content-causal-association",
+                          "pro-supervenience-correspondence-distinction",
+                          "pro-even-odds-compound-unreliability",
+                          "con-scope-atheism-not-naturalism",
+                          "con-theistic-skeptical-parity",
+                          "pro-evil-total-evidence-answer",
+                          "con-reliability-evolution-favors-truth",
+                          "con-defeater-theistic-undercutting",
+                          "pro-no-warranted-neurology-truth-link"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-low-reliability-premise",
+                            "pro-faculty-wide-defeater",
+                            "pro-selection-targets-adaptive-neurology",
+                            "pro-theistic-reliability-expectation",
+                            "pro-rational-acceptance-distinction",
+                            "con-selection-adaptive-true-belief",
+                            "pro-adaptive-behavior-content-gap",
+                            "con-content-conceptual-constraints",
+                            "con-content-causal-association",
+                            "pro-supervenience-correspondence-distinction",
+                            "pro-even-odds-compound-unreliability",
+                            "con-scope-atheism-not-naturalism",
+                            "con-theistic-skeptical-parity",
+                            "pro-evil-total-evidence-answer",
+                            "con-reliability-evolution-favors-truth",
+                            "con-defeater-theistic-undercutting",
+                            "pro-no-warranted-neurology-truth-link"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-low-reliability-premise",
+                          "pro-faculty-wide-defeater",
+                          "pro-selection-targets-adaptive-neurology",
+                          "pro-theistic-reliability-expectation",
+                          "pro-rational-acceptance-distinction",
+                          "con-selection-adaptive-true-belief",
+                          "pro-adaptive-behavior-content-gap",
+                          "con-content-conceptual-constraints",
+                          "con-content-causal-association",
+                          "pro-supervenience-correspondence-distinction",
+                          "pro-even-odds-compound-unreliability",
+                          "con-scope-atheism-not-naturalism",
+                          "con-theistic-skeptical-parity",
+                          "pro-evil-total-evidence-answer",
+                          "con-reliability-evolution-favors-truth",
+                          "con-defeater-theistic-undercutting",
+                          "pro-no-warranted-neurology-truth-link"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 280
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-low-reliability-premise",
+                            "pro-faculty-wide-defeater",
+                            "pro-selection-targets-adaptive-neurology",
+                            "pro-theistic-reliability-expectation",
+                            "pro-rational-acceptance-distinction",
+                            "con-selection-adaptive-true-belief",
+                            "pro-adaptive-behavior-content-gap",
+                            "con-content-conceptual-constraints",
+                            "con-content-causal-association",
+                            "pro-supervenience-correspondence-distinction",
+                            "pro-even-odds-compound-unreliability",
+                            "con-scope-atheism-not-naturalism",
+                            "con-theistic-skeptical-parity",
+                            "pro-evil-total-evidence-answer",
+                            "con-reliability-evolution-favors-truth",
+                            "con-defeater-theistic-undercutting",
+                            "pro-no-warranted-neurology-truth-link"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "displayContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sectionTitle",
+        "placement",
+        "defaultCollapsed",
+        "visualVariant",
+        "byline",
+        "prohibitedLanguageScanPassed"
+      ],
+      "properties": {
+        "sectionTitle": {
+          "type": "string",
+          "const": "AI Extension"
+        },
+        "placement": {
+          "type": "string",
+          "const": "immediately-after-overall-commentary"
+        },
+        "defaultCollapsed": {
+          "type": "boolean",
+          "const": true
+        },
+        "visualVariant": {
+          "type": "string",
+          "const": "ai-distinct"
+        },
+        "byline": {
+          "type": "string",
+          "const": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2."
+        },
+        "prohibitedLanguageScanPassed": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lockedScoresUnchanged",
+        "everyMoveAuthoredOnce",
+        "legacyAssessmentUnavailable",
+        "otherDebatesUnavailable",
+        "aiMaterialExcludedFromScores",
+        "sourceOnlyQuoteSelection"
+      ],
+      "properties": {
+        "lockedScoresUnchanged": {
+          "type": "boolean",
+          "const": true
+        },
+        "everyMoveAuthoredOnce": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyAssessmentUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherDebatesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "aiMaterialExcludedFromScores": {
+          "type": "boolean",
+          "const": true
+        },
+        "sourceOnlyQuoteSelection": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  }
+}
