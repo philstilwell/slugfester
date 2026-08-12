@@ -1,0 +1,683 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "177",
+  "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-substantial-recovery-route",
+      "side": "pro",
+      "description": "Establish that textual criticism can responsibly recover the New Testament's wording in its essential substance by combining the surviving witness tradition, methods for comparing its readings, and a probabilistic standard appropriate to ancient historical evidence.",
+      "successCriteria": "Show that branching and abundant attestation preserves access to earlier readings, that most variation does not materially obstruct reconstruction, and that remaining local uncertainty is compatible with enough confidence to trust the recovered text without claiming absolute certainty.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-warranted-textual-confidence",
+        "tier": "motion",
+        "description": "Connect substantial recovery in essential respects, under a moderate historical-probability standard, to warranted trust in the New Testament text despite unresolved local readings."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-preserved-comparative-evidence",
+          "tier": "central",
+          "description": "Establish that manuscripts, early versions, patristic citations, and branching lines of transmission preserve sufficient comparative evidence to reconstruct readings rather than merely document cumulative corruption."
+        },
+        {
+          "bridgeId": "pro-central-variant-significance-and-viability",
+          "tier": "central",
+          "description": "Distinguish the raw number of variants from the smaller burden-relevant class of meaningful and viable alternatives, while accounting for genuinely disputed passages."
+        },
+        {
+          "bridgeId": "pro-central-autograph-access-through-extant-readings",
+          "tier": "central",
+          "description": "Establish that the authors' wording is ordinarily represented among surviving readings and that critical comparison can identify it with substantial, though not exceptionless, confidence."
+        },
+        {
+          "bridgeId": "pro-central-probabilistic-standard",
+          "tier": "central",
+          "description": "Justify a standard of responsible historical probability rather than certainty and show that the cumulative textual evidence meets that standard for substantial recovery."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-doctrinal-and-practical-stability",
+          "tier": "subsidiary",
+          "description": "Explain how the limited effect of viable variants on essential claims supports practical textual trust without treating doctrinal stability as proof of every original reading."
+        },
+        {
+          "bridgeId": "pro-subsidiary-scholarly-use-consistency",
+          "tier": "subsidiary",
+          "description": "Show that ordinary authorship, redactional, and textual scholarship coherently depends on sufficiently stable wording and therefore supplies a practical check on sweeping unrecoverability claims."
+        }
+      ]
+    },
+    {
+      "routeId": "con-insufficient-autographic-warrant-route",
+      "side": "con",
+      "description": "Establish that reconstruction of the earliest text represented by surviving witnesses does not by itself warrant confidence that this text is the authors' wording, because the decisive early transmission period is undocumented and may contain consequential alterations no extant comparison can reveal.",
+      "successCriteria": "Show that evidence drawn from surviving witnesses cannot resolve the accuracy of their lost ancestors, that some consequential readings remain disputed or unknowable, and that comparative abundance or broad continuity therefore falls short of the affirmative burden to justify textual trust.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-trust-warrant",
+        "tier": "motion",
+        "description": "Connect unresolved uncertainty about pre-survival transmission and consequential original readings to the failure of the available evidence to warrant enough confidence for textual trust."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-lost-early-transmission",
+          "tier": "central",
+          "description": "Establish that the gap between composition and the earliest useful witnesses leaves the competence, exemplars, and alterations of the earliest copyists beyond direct comparison."
+        },
+        {
+          "bridgeId": "con-central-initial-versus-original-text",
+          "tier": "central",
+          "description": "Maintain the distinction between reconstructing the common ancestor of surviving witnesses and establishing that this reconstructed initial text is identical with an author's wording."
+        },
+        {
+          "bridgeId": "con-central-limits-of-extant-variant-measures",
+          "tier": "central",
+          "description": "Show that counts and proportions derived from surviving variants cannot measure consequential omissions or alterations that arose before the ancestry represented by extant witnesses."
+        },
+        {
+          "bridgeId": "con-central-residual-consequential-uncertainty",
+          "tier": "central",
+          "description": "Establish that intentional changes, substantial variants, and permanently disputed readings matter historically and textually even when they do not overturn an essential doctrine."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-abundance-does-not-prove-autograph",
+          "tier": "subsidiary",
+          "description": "Distinguish the comparative ease supplied by numerous manuscripts from proof that their reconstructable ancestry preserves the autograph rather than an already altered text."
+        },
+        {
+          "bridgeId": "con-subsidiary-required-early-controls",
+          "tier": "subsidiary",
+          "description": "Identify the missing early, independent, closely dated controls that would connect surviving textual agreement to the authors' wording with stronger evidential warrant."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "early-transmission-and-witnesses",
+      "title": "Early Transmission and the Surviving Witness Base",
+      "weightPercent": 25,
+      "rationale": "This issue tests whether the lost early copying period is adequately controlled by the abundance, age, independence, and branching character of manuscripts, versions, and patristic witnesses."
+    },
+    {
+      "sectionId": "variant-scale-and-significance",
+      "title": "Scale, Viability, and Significance of Textual Variants",
+      "weightPercent": 20,
+      "rationale": "This issue distinguishes raw variant totals and ordinary copying errors from meaningful, viable, intentional, or otherwise consequential differences relevant to substantial recovery."
+    },
+    {
+      "sectionId": "initial-text-and-autographic-recovery",
+      "title": "Initial Text, Extant Readings, and the Autographs",
+      "weightPercent": 25,
+      "rationale": "This issue addresses whether reconstructing readings represented in the surviving tradition warrants identifying the resulting initial text with the authors' wording."
+    },
+    {
+      "sectionId": "confidence-standard-and-burden",
+      "title": "Evidentiary Standard, Probability, and Burden of Trust",
+      "weightPercent": 20,
+      "rationale": "This issue determines what degree of historical probability the motion requires and whether indirect evidence and residual uncertainty satisfy or defeat that burden."
+    },
+    {
+      "sectionId": "practical-and-scholarly-consequences",
+      "title": "Doctrinal, Historical, and Scholarly Consequences",
+      "weightPercent": 10,
+      "rationale": "This issue examines how doctrinal stability, historically important differences, and scholarly reliance on stable wording bear on practical textual trust without substituting for autographic proof."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-lost-early-copying-gap",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "early-transmission-and-witnesses",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The centuries and unknown copying stages between the New Testament originals and the earliest useful surviving witnesses leave changes introduced during early transmission unknowable.",
+      "sourceSpan": {
+        "startEvent": 312,
+        "endEvent": 437
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Ehrman's uninterrupted opening statement after his explicit introduction by the moderator.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "no way to know because we don't have earlier copies these are the earliest the first complete copy 300 years after how many intervening stages of copying was we don't we simply don't know we can't know because we don't have we don't have the manuscripts to tell us this again is not simply true for the gospel mark it's true for all of the books of the New Testament it seems like",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 567,
+        "endToken": 639,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-late-witness-abundance",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "early-transmission-and-witnesses",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "The abundance of New Testament manuscripts does not control the earliest transmission because most witnesses are medieval and depend upon earlier exemplars that no longer survive.",
+      "sourceSpan": {
+        "startEvent": 438,
+        "endEvent": 513
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Continuous first-person delivery and the moderator's preceding identification establish Ehrman as the speaker throughout this passage.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "the copies that we want which are the copies from the early centuries what can we say about the ages of these copies well the oldest copy of Mark is p45 which we looked at from the Year 220 we have a fragment of a piece of the New Testament from almost a hundred years earlier maybe a hundred years it's hard to date these things look the way they date manuscripts is on the basis",
+        "characterCount": 380,
+        "tokenCount": 76,
+        "startToken": 107,
+        "endToken": 182,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-consequential-residual-variants",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "variant-scale-and-significance",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Although most textual variants are insignificant, intentional and consequential differences affect prominent passages and disputed wording concerning theology, narrative, and the portrayal of Jesus.",
+      "sourceSpan": {
+        "startEvent": 699,
+        "endEvent": 878
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The examples are delivered continuously by Ehrman during the opening argument following his explicit introduction as the first speaker.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "matters what Matthew says really Luke doesn't have a doctrine of atonement depending on which manuscripts you trust for chapter 22 the favorite story of many Bible readers of Jesus is the story Jesus and the woman taken in adultery Jesus is teaching in the temple y'all know the story it's in all the Jesus movies this story is so good you can't leave it out of a Jesus movie when Mel Gibson made The Passion of the Christ even",
+        "characterCount": 427,
+        "tokenCount": 80,
+        "startToken": 928,
+        "endToken": 1007,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-detectable-corruption-presupposes-earlier-reading",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "initial-text-and-autographic-recovery",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Identifying scribal corruption presupposes that the earlier wording can be distinguished among manuscript readings, and scholarship on textual tampering routinely assumes that the autographic wording remains available there.",
+      "sourceSpan": {
+        "startEvent": 1059,
+        "endEvent": 1081
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker remains Wallace, and he explicitly invokes Ehrman's scholarly work as support for this inference.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "scholarly tome the Orthodox corruption of Scripture in order for him to locate scribal tampering with the text he has to know what text has been tampered with and nowhere in the book does he say the original is gone or we don't have a clue where the autographs say just the opposite virtually every one of the 300 pages in this book assumes that the autographic wording can be found among",
+        "characterCount": 388,
+        "tokenCount": 72,
+        "startToken": 66,
+        "endToken": 137,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-abundant-diverse-witness-base",
+      "qualifiedCandidateId": "chunk-002:c002-04",
+      "sectionId": "early-transmission-and-witnesses",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "The large variant count arises from an exceptionally abundant witness base, while manuscripts, ancient translations, and roughly one million patristic quotations provide extensive comparative evidence for reconstruction.",
+      "sourceSpan": {
+        "startEvent": 1139,
+        "endEvent": 1244
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace develops this numerical and evidentiary argument continuously in his formally structured opening case.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "manuscripts we would still not be left without a witness and that's because church fathers wrote commentaries on the New Testament and they did not have the gift of brevity to date approximately 1 million quotations of the New Testament by the fathers have been recorded if all other sources for our knowledge of the text of the New Testament were destroyed the patristic quotations would be sufficient alone for reconstruction",
+        "characterCount": 427,
+        "tokenCount": 71,
+        "startToken": 612,
+        "endToken": 682,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-most-variants-substantively-trivial",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "variant-scale-and-significance",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "More than ninety-nine percent of textual variants make virtually no substantive difference because they chiefly involve spelling, flexible Greek word order, articles, and other forms that translate identically.",
+      "sourceSpan": {
+        "startEvent": 1437,
+        "endEvent": 1506
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace introduces a new structured section on the nature of variants and supplies linguistic examples from Greek.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "kinds of variants are there in the manuscripts well more than 99% make virtually no difference at all for example the most common variant involves spelling and this is sorry about that spend a little time to teach to you today [Applause] the absolutely most common textual variant is what's called a movable new that's n at the end of a word when the next word starts with a vowel",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 13,
+        "endToken": 82,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-meaningful-viable-subset-limited",
+      "qualifiedCandidateId": "chunk-002:c002-08",
+      "sectionId": "variant-scale-and-significance",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Fewer than one percent of textual variants are both meaningful and viable, although hundreds of disputed passages remain and some affect interpretation to a degree.",
+      "sourceSpan": {
+        "startEvent": 1507,
+        "endEvent": 1582
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace explicitly identifies the smallest variant category, illustrates it, and then states its qualified significance.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "comparison less than one percent of the differences are both meaningful and viable there are still hundreds of texts that are in dispute I don't want to give the impression that textual criticism is merely a mopping up job nowadays that all but a handful of problems have been resolved that's not the case there are hundreds of passages whose interpretation depends to some degree",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 430,
+        "endToken": 494,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-essential-beliefs-unaffected",
+      "qualifiedCandidateId": "chunk-002:c002-09",
+      "sectionId": "practical-and-scholarly-consequences",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Essential Christian beliefs do not depend on textually suspect passages and are not overturned by viable textual variants, even though particular passages may remain disputed.",
+      "sourceSpan": {
+        "startEvent": 1583,
+        "endEvent": 1599
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace introduces the theological-dependence question and attributes the supporting concession directly to Ehrman's published response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "theological beliefs depend on textually suspect passages in the appendix to misquoting Jesus there is a Q&A section the most telling question asked of Bart is this why do you believe that the these core tenets of Christian orthodoxy to be in jeopardy based on the scribal errors you discovered in the biblical manuscripts now Bart's response may surprise you essential Christian beliefs are not affected by textual variants",
+        "characterCount": 423,
+        "tokenCount": 70,
+        "startToken": 9,
+        "endToken": 78,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-original-reading-ordinarily-extant",
+      "qualifiedCandidateId": "chunk-003:c003-01",
+      "sectionId": "initial-text-and-autographic-recovery",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "The standard critical Greek text lists tens of thousands of variants but only a small set of places where scholars have proposed that no Greek manuscript preserves the original wording, indicating that the autographic reading ordinarily survives among extant alternatives.",
+      "sourceSpan": {
+        "startEvent": 1701,
+        "endEvent": 1731
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted argument continues Wallace's identified presentation and uses his affirmative position on textual recoverability.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "standard Greek New Testament in use today is known as the nestle all on text it not only produces what the editors believe is the wording of the original New Testament but also lists tens of thousands of variants here's a picture of the text they list a hundred and sixteen places where scholars over the centuries have thought that none of the Greek manuscripts have the original wording if the manuscripts were so corrupt from very",
+        "characterCount": 433,
+        "tokenCount": 77,
+        "startToken": 0,
+        "endToken": 76,
+        "weightedOverlap": 46,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 11,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-scholarship-presupposes-stable-wording",
+      "qualifiedCandidateId": "chunk-003:c003-02",
+      "sectionId": "practical-and-scholarly-consequences",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Detailed New Testament scholarship, including vocabulary-based authorship analysis, routinely presupposes dependable knowledge of the wording across nearly every passage relevant to its conclusions.",
+      "sourceSpan": {
+        "startEvent": 1732,
+        "endEvent": 1768
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Wallace explicitly discusses Ehrman and Ehrman's publications from the standpoint of the affirmative debater's ongoing presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "we can save and more the vast majority of New Testament scholars believe that the wording of the autographs is not only recoverable but that we have recovered it in most places total skepticism is uncalled for and Exhibit A our Bartz many books on the New Testament in these books he presupposes knowledge of the wording of the autographs here are just some of the titles that you",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 1,
+        "endToken": 69,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-extant-percentage-limit",
+      "qualifiedCandidateId": "chunk-003:c003-04",
+      "sectionId": "variant-scale-and-significance",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "A small proportion of meaningful and viable variants among surviving manuscripts cannot measure significant omissions, editions, or alterations introduced before the earliest extant witnesses.",
+      "sourceSpan": {
+        "startEvent": 1856,
+        "endEvent": 1870
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Ehrman's announced response and directly challenges a numerical claim attributed to Wallace's preceding presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "meaningful and viable i I don't know if that's true it might be 1% suppose it is 1% my question does not pertain to the 1% my question pertains to the textual variants that were introduced into the manuscript tradition before our surviving manuscripts how many editions were there before our manuscripts how many omissions were there before our manuscripts and he tells us that we",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 16,
+        "endToken": 81,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-significance-beyond-doctrine",
+      "qualifiedCandidateId": "chunk-003:c003-05",
+      "sectionId": "practical-and-scholarly-consequences",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "A textual difference or loss can be historically and textually important even if it alters no essential Christian doctrine, so doctrinal stability is not a sufficient measure of significance.",
+      "sourceSpan": {
+        "startEvent": 1871,
+        "endEvent": 1895
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman's response explicitly grants the theological point attributed to Wallace and then supplies his own counterexample and criterion of significance.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "was no longer to be found the Gospel of Mark Paul's letter to the Philippians or the book of first Peter which doctrines of the Christian faith would be affected by the loss of those three books not a single doctrine would it be significant yes it'd be significant it'd be hugely significant significance does not ride on whether essential beliefs are affected Dan closed his talk",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 100,
+        "endToken": 166,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-required-accurate-ancestry-warrant",
+      "qualifiedCandidateId": "chunk-003:c003-06",
+      "sectionId": "confidence-standard-and-burden",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Confidence in the New Testament text requires evidence that the earliest surviving copies descend from accurate predecessors rather than from significantly altered exemplars.",
+      "sourceSpan": {
+        "startEvent": 1896,
+        "endEvent": 1921
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Ehrman closes his response by directly requesting that Wallace answer a repeated question about the ancestry of the earliest copies.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "predecessors how do we know that our earliest copies were preserving accurate copies of accurate copies how do we know that Dan also says that 99% of our surviving variant readings are insignificant and so my question is how many significant variants were created before our surviving manuscripts and how do you know if you don't know then how can you say that we can trust the text of the New Testament",
+        "characterCount": 403,
+        "tokenCount": 72,
+        "startToken": 99,
+        "endToken": 170,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cumulative-early-transmission-evidence",
+      "qualifiedCandidateId": "chunk-003:c003-07",
+      "sectionId": "early-transmission-and-witnesses",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Early circulation, repeated copying, the use of Mark by Matthew and Luke, independent ancient versions, and patristic witnesses cumulatively make a sparse and wholly uncontrolled initial transmission improbable.",
+      "sourceSpan": {
+        "startEvent": 1927,
+        "endEvent": 1976
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the moderator names Wallace, the speaker addresses Ehrman's scenario and advances the affirmative side's explicitly probabilistic answer.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "copies of his letters we see that Matthew and Luke both used mark and consequently it must have been copied a couple of times at least just for them to use it it's rather doubtful to suppose that these books most of them probably even some of them were not copied multiple times from the original manuscript itself in your book misquoting Jesus you said that first thessalonians may",
+        "characterCount": 382,
+        "tokenCount": 69,
+        "startToken": 84,
+        "endToken": 152,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-indirect-evidence-supports-essential-recovery",
+      "qualifiedCandidateId": "chunk-003:c003-08",
+      "sectionId": "confidence-standard-and-burden",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Although hard proof about the earliest copies is unavailable, substantial indirect evidence makes it probable that the extant text preserves in all essential respects what the New Testament authors wrote.",
+      "sourceSpan": {
+        "startEvent": 2222,
+        "endEvent": 2232
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator returns the floor to Wallace, who addresses Ehrman and states the affirmative conclusion in the first-person debate exchange.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "I raised with you but that seems to be the way we're doing this tonight we don't have hard evidence that you're asking for that's what we both agree on we do not have the hard evidence but we have a great deal of soft evidence that an all probability leads to the conviction that what we have in our hands is in all essential respects what the New Testament writers actually wrote",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 6,
+        "endToken": 78,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-initial-original-distinction",
+      "qualifiedCandidateId": "chunk-003:c003-09",
+      "sectionId": "initial-text-and-autographic-recovery",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Textual criticism may reconstruct the ancestral text from which surviving witnesses descend without thereby establishing that this initial text is identical with the author's original wording.",
+      "sourceSpan": {
+        "startEvent": 2431,
+        "endEvent": 2462
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "An audience question is followed by Ehrman's direct disagreement with Wallace and his description of current textual-critical terminology and aims.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "major centers of textual research in Europe one is in Muenster Germany one is in Birmingham England and both of them have gotten away from talking about the original text so what they tend to talk about instead is geez how do you translate it down housecalls text exit exit text it's what they tried it what we try to reconstruct is the text from which the surviving witnesses descend",
+        "characterCount": 384,
+        "tokenCount": 70,
+        "startToken": 111,
+        "endToken": 180,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-trust-burden-unmet",
+      "qualifiedCandidateId": "chunk-004:c004-08",
+      "sectionId": "confidence-standard-and-burden",
+      "side": "con",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Because the advocate of textual trust bears the burden of proof, uncertainty about the competence of the earliest copyists and the quality of their exemplars prevents that trust from being warranted.",
+      "sourceSpan": {
+        "startEvent": 2730,
+        "endEvent": 2767
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous portion of Ehrman's introduced closing statement, framed through his bridge-and-train burden-of-proof analogy.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "train onto the bridge until he's convinced that he can trust the wait in issues of trust it's the person who says that you can trust who bears the burden of proof how can we know that the earliest copyist in the first 200 years of copying the New Testament were skilled and careful or good at all how do we know that our earliest manuscripts are based on high-quality exemplars in",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 122,
+        "endToken": 194,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-moderate-historical-probability-standard",
+      "qualifiedCandidateId": "chunk-004:c004-09",
+      "sectionId": "confidence-standard-and-burden",
+      "side": "pro",
+      "speaker": "Daniel B. Wallace",
+      "moveKind": "reply",
+      "proposition": "Because absolute certainty is unavailable for ancient historical questions, responsible textual trust should rest on moderate historical probability rather than a skeptical standard that would erase knowledge of the ancient world.",
+      "sourceSpan": {
+        "startEvent": 2817,
+        "endEvent": 2842
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Wallace the concluding turn, and Wallace explicitly answers Bart's train illustration before stating his probabilistic standard.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "world I think a radical position moves to the left or to the right and either way you get creamed only a moderate position is going to say we don't absolutely know we definitely don't absolutely know we're dealing with historical issues here there's no such thing as absolute certainty about these kinds of things at least not on a historical level but what there is is probability",
+        "characterCount": 381,
+        "tokenCount": 68,
+        "startToken": 108,
+        "endToken": 175,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

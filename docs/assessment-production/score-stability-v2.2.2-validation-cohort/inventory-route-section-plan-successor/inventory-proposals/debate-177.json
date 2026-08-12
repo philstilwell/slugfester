@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "4.2.21.16.2-score-blind-side-partitioned-selection-map-proposal",
+  "protocolId": "v4.2.21.16.2-side-partitioned-selection-map-contract",
+  "debateNumber": "177",
+  "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+  "reviewerRole": "score-blind-inventory-curator",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-substantial-recovery-route",
+      "side": "pro",
+      "description": "Establish that textual criticism can responsibly recover the New Testament's wording in its essential substance by combining the surviving witness tradition, methods for comparing its readings, and a probabilistic standard appropriate to ancient historical evidence.",
+      "successCriteria": "Show that branching and abundant attestation preserves access to earlier readings, that most variation does not materially obstruct reconstruction, and that remaining local uncertainty is compatible with enough confidence to trust the recovered text without claiming absolute certainty.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-warranted-textual-confidence",
+        "tier": "motion",
+        "description": "Connect substantial recovery in essential respects, under a moderate historical-probability standard, to warranted trust in the New Testament text despite unresolved local readings."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-preserved-comparative-evidence",
+          "tier": "central",
+          "description": "Establish that manuscripts, early versions, patristic citations, and branching lines of transmission preserve sufficient comparative evidence to reconstruct readings rather than merely document cumulative corruption."
+        },
+        {
+          "bridgeId": "pro-central-variant-significance-and-viability",
+          "tier": "central",
+          "description": "Distinguish the raw number of variants from the smaller burden-relevant class of meaningful and viable alternatives, while accounting for genuinely disputed passages."
+        },
+        {
+          "bridgeId": "pro-central-autograph-access-through-extant-readings",
+          "tier": "central",
+          "description": "Establish that the authors' wording is ordinarily represented among surviving readings and that critical comparison can identify it with substantial, though not exceptionless, confidence."
+        },
+        {
+          "bridgeId": "pro-central-probabilistic-standard",
+          "tier": "central",
+          "description": "Justify a standard of responsible historical probability rather than certainty and show that the cumulative textual evidence meets that standard for substantial recovery."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-doctrinal-and-practical-stability",
+          "tier": "subsidiary",
+          "description": "Explain how the limited effect of viable variants on essential claims supports practical textual trust without treating doctrinal stability as proof of every original reading."
+        },
+        {
+          "bridgeId": "pro-subsidiary-scholarly-use-consistency",
+          "tier": "subsidiary",
+          "description": "Show that ordinary authorship, redactional, and textual scholarship coherently depends on sufficiently stable wording and therefore supplies a practical check on sweeping unrecoverability claims."
+        }
+      ]
+    },
+    {
+      "routeId": "con-insufficient-autographic-warrant-route",
+      "side": "con",
+      "description": "Establish that reconstruction of the earliest text represented by surviving witnesses does not by itself warrant confidence that this text is the authors' wording, because the decisive early transmission period is undocumented and may contain consequential alterations no extant comparison can reveal.",
+      "successCriteria": "Show that evidence drawn from surviving witnesses cannot resolve the accuracy of their lost ancestors, that some consequential readings remain disputed or unknowable, and that comparative abundance or broad continuity therefore falls short of the affirmative burden to justify textual trust.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-trust-warrant",
+        "tier": "motion",
+        "description": "Connect unresolved uncertainty about pre-survival transmission and consequential original readings to the failure of the available evidence to warrant enough confidence for textual trust."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-lost-early-transmission",
+          "tier": "central",
+          "description": "Establish that the gap between composition and the earliest useful witnesses leaves the competence, exemplars, and alterations of the earliest copyists beyond direct comparison."
+        },
+        {
+          "bridgeId": "con-central-initial-versus-original-text",
+          "tier": "central",
+          "description": "Maintain the distinction between reconstructing the common ancestor of surviving witnesses and establishing that this reconstructed initial text is identical with an author's wording."
+        },
+        {
+          "bridgeId": "con-central-limits-of-extant-variant-measures",
+          "tier": "central",
+          "description": "Show that counts and proportions derived from surviving variants cannot measure consequential omissions or alterations that arose before the ancestry represented by extant witnesses."
+        },
+        {
+          "bridgeId": "con-central-residual-consequential-uncertainty",
+          "tier": "central",
+          "description": "Establish that intentional changes, substantial variants, and permanently disputed readings matter historically and textually even when they do not overturn an essential doctrine."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-abundance-does-not-prove-autograph",
+          "tier": "subsidiary",
+          "description": "Distinguish the comparative ease supplied by numerous manuscripts from proof that their reconstructable ancestry preserves the autograph rather than an already altered text."
+        },
+        {
+          "bridgeId": "con-subsidiary-required-early-controls",
+          "tier": "subsidiary",
+          "description": "Identify the missing early, independent, closely dated controls that would connect surviving textual agreement to the authors' wording with stronger evidential warrant."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "early-transmission-and-witnesses",
+      "title": "Early Transmission and the Surviving Witness Base",
+      "weightPercent": 25,
+      "rationale": "This issue tests whether the lost early copying period is adequately controlled by the abundance, age, independence, and branching character of manuscripts, versions, and patristic witnesses."
+    },
+    {
+      "sectionId": "variant-scale-and-significance",
+      "title": "Scale, Viability, and Significance of Textual Variants",
+      "weightPercent": 20,
+      "rationale": "This issue distinguishes raw variant totals and ordinary copying errors from meaningful, viable, intentional, or otherwise consequential differences relevant to substantial recovery."
+    },
+    {
+      "sectionId": "initial-text-and-autographic-recovery",
+      "title": "Initial Text, Extant Readings, and the Autographs",
+      "weightPercent": 25,
+      "rationale": "This issue addresses whether reconstructing readings represented in the surviving tradition warrants identifying the resulting initial text with the authors' wording."
+    },
+    {
+      "sectionId": "confidence-standard-and-burden",
+      "title": "Evidentiary Standard, Probability, and Burden of Trust",
+      "weightPercent": 20,
+      "rationale": "This issue determines what degree of historical probability the motion requires and whether indirect evidence and residual uncertainty satisfy or defeat that burden."
+    },
+    {
+      "sectionId": "practical-and-scholarly-consequences",
+      "title": "Doctrinal, Historical, and Scholarly Consequences",
+      "weightPercent": 10,
+      "rationale": "This issue examines how doctrinal stability, historically important differences, and scholarly reliance on stable wording bear on practical textual trust without substituting for autographic proof."
+    }
+  ],
+  "candidateSelectionsBySide": {
+    "pro": {
+      "chunk-002:c002-02": null,
+      "chunk-002:c002-03": {
+        "sectionId": "initial-text-and-autographic-recovery",
+        "moveId": "pro-detectable-corruption-presupposes-earlier-reading",
+        "moveKind": "reply",
+        "proposition": "Identifying scribal corruption presupposes that the earlier wording can be distinguished among manuscript readings, and scholarship on textual tampering routinely assumes that the autographic wording remains available there."
+      },
+      "chunk-002:c002-04": {
+        "sectionId": "early-transmission-and-witnesses",
+        "moveId": "pro-abundant-diverse-witness-base",
+        "moveKind": "reply",
+        "proposition": "The large variant count arises from an exceptionally abundant witness base, while manuscripts, ancient translations, and roughly one million patristic quotations provide extensive comparative evidence for reconstruction."
+      },
+      "chunk-002:c002-05": null,
+      "chunk-002:c002-06": null,
+      "chunk-002:c002-07": {
+        "sectionId": "variant-scale-and-significance",
+        "moveId": "pro-most-variants-substantively-trivial",
+        "moveKind": "reply",
+        "proposition": "More than ninety-nine percent of textual variants make virtually no substantive difference because they chiefly involve spelling, flexible Greek word order, articles, and other forms that translate identically."
+      },
+      "chunk-002:c002-08": {
+        "sectionId": "variant-scale-and-significance",
+        "moveId": "pro-meaningful-viable-subset-limited",
+        "moveKind": "reply",
+        "proposition": "Fewer than one percent of textual variants are both meaningful and viable, although hundreds of disputed passages remain and some affect interpretation to a degree."
+      },
+      "chunk-002:c002-09": {
+        "sectionId": "practical-and-scholarly-consequences",
+        "moveId": "pro-essential-beliefs-unaffected",
+        "moveKind": "reply",
+        "proposition": "Essential Christian beliefs do not depend on textually suspect passages and are not overturned by viable textual variants, even though particular passages may remain disputed."
+      },
+      "chunk-002:c002-10": null,
+      "chunk-003:c003-01": {
+        "sectionId": "initial-text-and-autographic-recovery",
+        "moveId": "pro-original-reading-ordinarily-extant",
+        "moveKind": "reply",
+        "proposition": "The standard critical Greek text lists tens of thousands of variants but only a small set of places where scholars have proposed that no Greek manuscript preserves the original wording, indicating that the autographic reading ordinarily survives among extant alternatives."
+      },
+      "chunk-003:c003-02": {
+        "sectionId": "practical-and-scholarly-consequences",
+        "moveId": "pro-scholarship-presupposes-stable-wording",
+        "moveKind": "reply",
+        "proposition": "Detailed New Testament scholarship, including vocabulary-based authorship analysis, routinely presupposes dependable knowledge of the wording across nearly every passage relevant to its conclusions."
+      },
+      "chunk-003:c003-07": {
+        "sectionId": "early-transmission-and-witnesses",
+        "moveId": "pro-cumulative-early-transmission-evidence",
+        "moveKind": "reply",
+        "proposition": "Early circulation, repeated copying, the use of Mark by Matthew and Luke, independent ancient versions, and patristic witnesses cumulatively make a sparse and wholly uncontrolled initial transmission improbable."
+      },
+      "chunk-003:c003-08": {
+        "sectionId": "confidence-standard-and-burden",
+        "moveId": "pro-indirect-evidence-supports-essential-recovery",
+        "moveKind": "reply",
+        "proposition": "Although hard proof about the earliest copies is unavailable, substantial indirect evidence makes it probable that the extant text preserves in all essential respects what the New Testament authors wrote."
+      },
+      "chunk-003:c003-10": null,
+      "chunk-004:c004-02": null,
+      "chunk-004:c004-04": null,
+      "chunk-004:c004-09": {
+        "sectionId": "confidence-standard-and-burden",
+        "moveId": "pro-moderate-historical-probability-standard",
+        "moveKind": "reply",
+        "proposition": "Because absolute certainty is unavailable for ancient historical questions, responsible textual trust should rest on moderate historical probability rather than a skeptical standard that would erase knowledge of the ancient world."
+      },
+      "chunk-004:c004-10": null
+    },
+    "con": {
+      "chunk-001:c001": null,
+      "chunk-001:c002": {
+        "sectionId": "early-transmission-and-witnesses",
+        "moveId": "con-lost-early-copying-gap",
+        "moveKind": "constructive",
+        "proposition": "The centuries and unknown copying stages between the New Testament originals and the earliest useful surviving witnesses leave changes introduced during early transmission unknowable."
+      },
+      "chunk-001:c003": {
+        "sectionId": "early-transmission-and-witnesses",
+        "moveId": "con-late-witness-abundance",
+        "moveKind": "constructive",
+        "proposition": "The abundance of New Testament manuscripts does not control the earliest transmission because most witnesses are medieval and depend upon earlier exemplars that no longer survive."
+      },
+      "chunk-001:c004": null,
+      "chunk-001:c005": null,
+      "chunk-001:c006": null,
+      "chunk-001:c008": null,
+      "chunk-001:c007": {
+        "sectionId": "variant-scale-and-significance",
+        "moveId": "con-consequential-residual-variants",
+        "moveKind": "constructive",
+        "proposition": "Although most textual variants are insignificant, intentional and consequential differences affect prominent passages and disputed wording concerning theology, narrative, and the portrayal of Jesus."
+      },
+      "chunk-002:c002-01": null,
+      "chunk-003:c003-03": null,
+      "chunk-003:c003-04": {
+        "sectionId": "variant-scale-and-significance",
+        "moveId": "con-extant-percentage-limit",
+        "moveKind": "reply",
+        "proposition": "A small proportion of meaningful and viable variants among surviving manuscripts cannot measure significant omissions, editions, or alterations introduced before the earliest extant witnesses."
+      },
+      "chunk-003:c003-05": {
+        "sectionId": "practical-and-scholarly-consequences",
+        "moveId": "con-significance-beyond-doctrine",
+        "moveKind": "reply",
+        "proposition": "A textual difference or loss can be historically and textually important even if it alters no essential Christian doctrine, so doctrinal stability is not a sufficient measure of significance."
+      },
+      "chunk-003:c003-06": {
+        "sectionId": "confidence-standard-and-burden",
+        "moveId": "con-required-accurate-ancestry-warrant",
+        "moveKind": "reply",
+        "proposition": "Confidence in the New Testament text requires evidence that the earliest surviving copies descend from accurate predecessors rather than from significantly altered exemplars."
+      },
+      "chunk-003:c003-09": {
+        "sectionId": "initial-text-and-autographic-recovery",
+        "moveId": "con-initial-original-distinction",
+        "moveKind": "reply",
+        "proposition": "Textual criticism may reconstruct the ancestral text from which surviving witnesses descend without thereby establishing that this initial text is identical with the author's original wording."
+      },
+      "chunk-004:c004-01": null,
+      "chunk-004:c004-03": null,
+      "chunk-004:c004-05": null,
+      "chunk-004:c004-06": null,
+      "chunk-004:c004-07": null,
+      "chunk-004:c004-08": {
+        "sectionId": "confidence-standard-and-burden",
+        "moveId": "con-trust-burden-unmet",
+        "moveKind": "reply",
+        "proposition": "Because the advocate of textual trust bears the burden of proof, uncertainty about the competence of the earliest copyists and the quality of their exemplars prevents that trust from being warranted."
+      }
+    }
+  },
+  "audit": {
+    "completeCandidateEvidenceBundleReviewed": true,
+    "everySelectedCandidateUsedOnce": true,
+    "ratingsUnavailable": true,
+    "responseTopologyUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true
+  }
+}
