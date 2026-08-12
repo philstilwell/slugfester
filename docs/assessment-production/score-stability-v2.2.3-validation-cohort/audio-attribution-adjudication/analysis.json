@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-audio-attribution-adjudication-analysis",
+  "protocolId": "assessment-production-score-stability-v2.2.3-audio-attribution-adjudication",
+  "status": "v2.2.3-audio-attribution-adjudication-passed",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "developmentValidationOnly": true,
+  "preservedDeterministicGate": {
+    "status": "v2.2.3-audio-verification-unresolved",
+    "verified": 3,
+    "unresolved": 1,
+    "erasedOrReclassified": false
+  },
+  "adjudication": {
+    "validation": {
+      "status": "passed",
+      "debateNumber": "17",
+      "adjudications": [
+        {
+          "moveId": "pro-cumulative-moral-christian-case",
+          "status": "verified",
+          "citedSegments": 6,
+          "expectedSpeakerSegmentsCited": 6
+        }
+      ],
+      "verified": 1,
+      "unresolved": 0,
+      "calculatedFields": 0
+    },
+    "decisions": [
+      {
+        "moveId": "pro-cumulative-moral-christian-case",
+        "expectedSpeaker": "Francis Collins",
+        "status": "verified",
+        "authoringSpeaker": "Francis Collins",
+        "corePropositionAuthoredByExpectedSpeaker": true,
+        "mixedSpeakerSpan": true,
+        "evidenceSegmentIndexes": [
+          7,
+          22,
+          43,
+          60,
+          61,
+          69
+        ],
+        "confidence": "high",
+        "rationale": "The diarized evidence attributes to Francis Collins the epistemic-limits challenge to confident denial, the inference from cosmic structure, the moral-source argument, the significance of Jesus's teaching, and the case for the resurrection. These expected-speaker segments jointly express the locked cumulative proposition despite brief contributions from Alex O'Connor within the mixed-speaker span."
+      }
+    ]
+  },
+  "combinedAudioResult": {
+    "requiredMoves": 4,
+    "deterministicallyVerified": 3,
+    "adjudicatedVerified": 1,
+    "unresolved": 0,
+    "verificationRate": 1
+  },
+  "costs": {
+    "originalPaidDiarizationEstimatedExposureUsd": 0.072,
+    "additionalPaidTranscriptionCalls": 0,
+    "additionalTranscriptionCostUsd": 0,
+    "modelComputeAuthentication": "ChatGPT subscription",
+    "meteredModelApiCostUsd": 0
+  },
+  "scoreBlindness": {
+    "ratingsAccessed": false,
+    "scoresAccessed": false,
+    "legacyAssessmentsAccessed": false,
+    "otherDebatesAccessed": false,
+    "publicationProseAccessed": false,
+    "scoreArtifactCreated": false
+  },
+  "authorization": {
+    "disputeAdjudicationPacketPreparation": true,
+    "disputeAdjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-v2.2.3-dispute-only-adjudication-packets"
+}
