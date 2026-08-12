@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-disagreement-extraction",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-decomposed-consensus",
+  "status": "production-checkpoint-v2.2-deterministic-disagreements-extracted-audio-source-preparation-authorized",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "developmentValidationOnly": false,
+  "sourceJudgmentAnalysis": "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/analysis.json",
+  "sourceJudgmentConfiguration": {
+    "model": "gpt-5.6-sol",
+    "modelLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/execution-preparation-manifest.json": "845afa8e539944e6a6e94393d022a0232ef107b4a2eb4fd3e69a1b4df355866b",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/execution-activation.json": "3c825ff56a7e4d8433e86b5a4abb1995c9a494b7a458be7c741e0bd2e5468640",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/analysis.json": "553b0fd8b42c6ab044bd45103c4456a73e7e77b666ae847cd152734e36203946",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "scripts/lib/assessment-production-checkpoint-v2.2-disagreement.mjs": "03152189b819245dac543d3c648eb9a86a050d36f9c148abf8ffdc42d9b5ca90",
+    "scripts/extract-assessment-production-checkpoint-v2.2-disagreements.mjs": "6b39ae38c95278d07e7a5f5a5104c7d7e287f92224709192baf57146315dbd46",
+    "scripts/test-assessment-production-checkpoint-v2.2-disagreements.mjs": "a3badb3894c8889b2ec5873601035687ca37f4e6958ce5e1f0d2dbae881d1654",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-50.json": "069477f920d5fb584615218e3cea01cf7bc255c2e6eb52b67e904714d683c738",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-50.json": "2df619511c19f68abad84850d517325b697a9161fb3e30053029013ebd4e8fe2",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-50.json": "793bcd99c63560e1d92149c8e00b59f05d757222f2aed85f4c788cc9925eac59",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-192.json": "5506aa53807d0d2dfda7ab9db8fcdbeb9b51f67f573a73d8b9d59e53fa3127c1",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-192.json": "d44f28d0330901475e668b264dd4e4332fb8fc366a58f0fc89d2bd506a4eb4bb",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-192.json": "87e92fed4953e17bdf7a22179b0d4b5698624f2bd770699db31c849a56b0cda3",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-129.json": "df96b83974998cd9b8f5a0f8ec2945c3cfedff9c302bf70981f0029f500d0138",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-129.json": "857329bcc226e7bb12049f4f684ebd19a46406afbfa1fe6164327a8b8adea91e",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-129.json": "cb17c7aedc70ea793e27b3728b5bd50cff867a3a1e3c92642b70c400fe10566d",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-40.json": "247e84cf948fa1046ac9a9a71d6deaa8cd52557998b574775f822fbbe2e3cf2f",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-40.json": "57a45c4c3cea5183b9e7ad1c021f3a83e333a922c93e9cc0e7c5febba6d5457c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-40.json": "d8566900a9f77b736ab98ea6ed2a233e145c3b593519a8dc21824f70d803d263",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-25.json": "2646506b106a639c3915cbed289f47568706a4cbb16db5c560b40640ed378fc6",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-25.json": "21a790a7a48cdc98e6f7c91b3fe6fb2da9621e30dcf7e74bed3d37c0bdab89a5",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-25.json": "857a9fe5a458941dc29b465d0f9516b352c852cd3cee6a4668de6b702505fa1b",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-104.json": "b412e06a9a874bd2dd432fe6305b41d9596cf060766b9f8d820abd6743bfa38b",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-104.json": "5a8684331955cdb4e98fbc244ebe14cf5a93f23f4c9e626f37829bff9d1bd0ac",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-104.json": "fd69a12d70e69021c73ef81660c3511356c625dc7f5c7ed2aed1fef0ae60d9ab",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-22.json": "ea098eed13eca5907e6f9b73de4628550d3c407cd2d70fc330dec57f3f53dcae",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-22.json": "74f0f50cc0f87b8c78fce82441b4313085dd7849d098d9ed5dccc269fbf97ad0",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-22.json": "d6c83746da722a315f3c1dc1183cf8e45d7207a9aee0f92902fd3391c903d403",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-10.json": "4a83bb568f900fa4a3a230c63c2faec2c292fd3adef91c87135c8c785dadf0e3",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-10.json": "828863113a6cd68114dfee0db444412799462d2f45032dd9f05e703cf161269c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-10.json": "a14307d8403fe38f8bf52ac50574875f167d17ab546bdc5189b0faf45bea22ad",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-167.json": "09862a8dd0766de2bd33ccc76e049d195cd3db927602cda19394b5622ac83bf2",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-167.json": "b2f3b14a6eb3e5aa3fd66c0f768e4313bb01807623a60c9233f89b93eff09ca7",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-167.json": "b64cd3eabaa81b4d621ff1652745294400988825aa865e3b51123c65ca3b789e",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-a/debate-122.json": "1f34fd437673f74240ddd74b7170aaa33cced981fe0f1e246e7fce7b8849d7a2",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/raw-outputs/pass-b/debate-122.json": "7cd7f547563e88a034fbbd863ed84a487b775d2df22ecbfa4715a611d57e959a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/inventory-chronology-fallback/locked-inventories/debate-122.json": "0c6b50c17804ac08625b59613ad9fd3110d23cf959d70e60f3144c244d7ed347"
+  },
+  "debates": [
+    {
+      "debateNumber": "50",
+      "debateId": "knechtle-dillahunty-christianity-true-2023",
+      "moveCount": 19,
+      "disputedMoves": 17,
+      "nondisputedScalarMerges": 46,
+      "burdenAdjustmentDisputes": 0,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-50.json"
+    },
+    {
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "moveCount": 16,
+      "disputedMoves": 16,
+      "nondisputedScalarMerges": 28,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-192.json"
+    },
+    {
+      "debateNumber": "129",
+      "debateId": "plantinga-law-eaan-rational-belief-2010",
+      "moveCount": 17,
+      "disputedMoves": 16,
+      "nondisputedScalarMerges": 33,
+      "burdenAdjustmentDisputes": 0,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-129.json"
+    },
+    {
+      "debateNumber": "40",
+      "debateId": "enoch-bush-objective-moral-truths-2026",
+      "moveCount": 20,
+      "disputedMoves": 19,
+      "nondisputedScalarMerges": 52,
+      "burdenAdjustmentDisputes": 0,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-40.json"
+    },
+    {
+      "debateNumber": "25",
+      "debateId": "hitchens-ramadan-islam-peace-2010",
+      "moveCount": 20,
+      "disputedMoves": 20,
+      "nondisputedScalarMerges": 45,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [
+        "con-internal-reform-resources"
+      ],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-25.json"
+    },
+    {
+      "debateNumber": "104",
+      "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+      "moveCount": 18,
+      "disputedMoves": 16,
+      "nondisputedScalarMerges": 40,
+      "burdenAdjustmentDisputes": 0,
+      "audioVerificationMoves": [
+        "con-selection-for-reliable-investigation"
+      ],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-104.json"
+    },
+    {
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "moveCount": 19,
+      "disputedMoves": 17,
+      "nondisputedScalarMerges": 41,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-22.json"
+    },
+    {
+      "debateNumber": "10",
+      "debateId": "craig-harris-moral-foundations-2011",
+      "moveCount": 20,
+      "disputedMoves": 18,
+      "nondisputedScalarMerges": 41,
+      "burdenAdjustmentDisputes": 0,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-10.json"
+    },
+    {
+      "debateNumber": "167",
+      "debateId": "craig-shook-existence-god-2008",
+      "moveCount": 21,
+      "disputedMoves": 21,
+      "nondisputedScalarMerges": 43,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-167.json"
+    },
+    {
+      "debateNumber": "122",
+      "debateId": "horn-oconnor-god-existence-2020",
+      "moveCount": 18,
+      "disputedMoves": 18,
+      "nondisputedScalarMerges": 34,
+      "burdenAdjustmentDisputes": 2,
+      "audioVerificationMoves": [],
+      "disagreementPath": "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/disagreements/debate-122.json"
+    }
+  ],
+  "fieldCounts": {
+    "importancePair": 32,
+    "attributionPair": 0,
+    "responsePair": 136,
+    "charityPair": 17,
+    "assessmentConfidencePair": 2,
+    "logicalCoherence": 26,
+    "evidenceWarrant": 27,
+    "relevanceBurden": 22,
+    "representationalCharity": 60,
+    "precisionClarity": 82,
+    "epistemicCalibration": 93
+  },
+  "triggerCounts": {
+    "importanceMismatch": 32,
+    "responseStructureMismatch": 129,
+    "materialWithinClassResponsiveness": 61,
+    "burdenContactMismatch": 22,
+    "precisionFindingsMismatch": 82,
+    "calibrationFindingsMismatch": 93,
+    "attributionConfidenceMismatch": 0,
+    "charityTestedMismatch": 17,
+    "assessmentConfidenceMismatch": 2,
+    "assessmentBelowHighAudioRequired": 2,
+    "attributionAudioRequired": 0
+  },
+  "adjudicationWorkload": {
+    "disputedMoves": 178,
+    "totalMoves": 188,
+    "disputedMoveRate": 0.9468,
+    "candidateSelections": 507,
+    "burdenAdjustmentDisputes": 10,
+    "oneAdjudicationContextPerDebateSufficient": true
+  },
+  "audioWorkload": {
+    "moves": 2,
+    "debates": [
+      "25",
+      "104"
+    ],
+    "queue": [
+      {
+        "debateNumber": "25",
+        "moveId": "con-internal-reform-resources",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "104",
+        "moveId": "con-selection-for-reliable-investigation",
+        "requiredBeforeAdjudication": true
+      }
+    ],
+    "independentGateQueueReproducedExactly": true,
+    "allEitherPassBelowHighAssessmentMovesIncluded": true,
+    "allRepositoryBelowHighAttributionMovesIncluded": true,
+    "workItemsPrepared": false,
+    "sourceAudioPrepared": false,
+    "audioAccessed": false,
+    "verificationCompleted": false,
+    "modelOrApiCallsMade": 0
+  },
+  "scoreBlindness": {
+    "diagnosticMoveScoresComputed": 0,
+    "weightedMoveScoresComputed": 0,
+    "sectionScoresComputed": 0,
+    "sideScoresComputed": 0,
+    "debateScoresComputed": 0,
+    "scoreBasedTriggers": 0
+  },
+  "gateDisposition": {
+    "failedProductionCanaryV1PreservedFailed": true,
+    "failedProductionCanaryV1OutputsUsedAsModelInput": false,
+    "priorValidationCohortsReclassified": false,
+    "priorValidationCohortOutputsUsedAsModelInput": false,
+    "checkpointDiscoveryPassed": true,
+    "checkpointDiscoveryRetried": false,
+    "checkpointDiscoveryCandidatesChangedDuringTransport": false
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "totals": {
+    "modelContexts": 0,
+    "audioCalls": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticRepairs": 0,
+    "scoresDerived": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "audioSourcePreparation": true,
+    "paidTranscription": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-two-production-checkpoint-v2.2-local-audio-source-work-items-model-free-only"
+}
