@@ -24,6 +24,18 @@ Use 5.6 Sol with low reasoning effort through the user's ChatGPT subscription fo
 7. Assemble and validate the final ledger. No unresolved dispute or required audio check may remain.
 8. Derive all move, section, and overall scores once, in repository code, after adjudication. Never ask the model to author totals and never hand-adjust a calculated score.
 
+## Active score-stability rule
+
+For new production checkpoints frozen after the v2.2 promotion record, use the exact active policy and score control named in `docs/assessment-production/score-stability-policy-v2.2-promotion.json`.
+
+- Keep every score within 0–100. Across the checkpoint, require mean absolute final-score distance from the two independent passes at most four points, maximum distance from either pass at most eight points, and maximum excursion outside the two-pass range at most three points.
+- When both independent passes favor `pro`, the final integer-rounded result may be `pro` or `tie`, but not `con`. When both favor `con`, the final result may be `con` or `tie`, but not `pro`.
+- Two initial integer-rounded ties establish no winning-side direction; neither do initially opposed winners. In those cases, the unchanged numerical limits remain the stability control.
+- Treat unrounded direction as diagnostic only. Never alter rounding, force a winner, tune a threshold after results, or rerun a score pass automatically.
+- Every future frozen production score manifest must hash-lock the active v2.2 policy, active evaluator, and active test before its single repository score pass.
+
+Promotion does not reclassify the failed v1 canary or any failed validation cohort. Publication preparation and production mutation still require their own later authorization.
+
 ## Publication reconstruction
 
 After scores lock, run one isolated publication context per debate. It receives the locked source packet, final judgments, calculated score bands, reference catalog, and display contract; it cannot change identity, structure, move selection, or scores.
@@ -45,4 +57,3 @@ For every debate, replay source hashes, the full semantic validator, the one-pas
 Run the campaign in stage batches using the frozen manifest and tested concurrency: discovery 4; inventory 2; judgments 2; audio 2; adjudication 2; publication 2. Begin with a ten-debate production checkpoint. Stop on a source failure, isolation failure, unresolved audio/dispute, invalid ledger, model-authored score, non-exact quote, failed repair, rendering regression, or projected schedule above the approved bound.
 
 Production records and rankings may change only after each debate independently passes every gate. Commit and push completed validated batches with their ledgers, source provenance, execution manifests, and audit summaries.
-
