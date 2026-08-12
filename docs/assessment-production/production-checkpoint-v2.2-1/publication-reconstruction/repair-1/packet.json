@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-repair-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-repair-1",
+  "debateNumber": "50",
+  "debateId": "knechtle-dillahunty-christianity-true-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/outputs/debate-50.json",
+  "publicationPacket": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-50.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-gospels-cumulative-reliability.critique",
+      "moveProse.con-no-replacement-method-burden.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-gospels-cumulative-reliability.critique",
+      "moveId": "pro-gospels-cumulative-reliability",
+      "originalCritique": "Strongest feature: The argument offers several independent-looking indicators instead of resting Gospel reliability on manuscript quantity alone, and it appropriately notes that historical credibility need not entail verbal inspiration. Principal limitation: Historically reliable shifts between background accuracy, narrative consistency, and truth of central supernatural events, while the categorical denial of contradictions exceeds the evidence developed in the cited passage. Live burden: The affirmative must define the conclusion's scope, assess specific disputed reports, establish genuine independence among indicators, and explain why the proposed tests discriminate accurate testimony from carefully situated fiction or sincere legendary development. Locked score: The mixed band reflects strong central relevance and a useful cumulative architecture but also materially overstated calibration, limited warrant, unstable scope, incomplete contact with the discrimination challenge, and insufficient engagement with the strongest skeptical qualification.",
+      "originalWords": 131,
+      "originalCharacters": 1065,
+      "lockedMove": {
+        "moveId": "pro-gospels-cumulative-reliability",
+        "sectionId": "section-gospel-reliability",
+        "side": "pro",
+        "speaker": "Cliffe Knechtle",
+        "moveKind": "reply",
+        "proposition": "Literary form, manuscript preservation, archaeological corroboration, and internal consistency jointly support treating the Gospels as historically reliable.",
+        "importance": 3,
+        "finalScore": 71,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "45:41",
+        "sourceSpan": {
+          "startEvent": 1233,
+          "endEvent": 1270,
+          "startMs": 2741920,
+          "endMs": 2837040
+        },
+        "sourceExcerpt": "confusion on the part of the authors? No, there are no contradictions in the gospels. There's a tremendous internal harmony and consistency. That does not mean the Bible's a word of God. It doesn't mean anything other than these gospels of Matthew, Mark, Luke, and John are historically reliable. Simply read them as history and ask yourself, does the historical evidence point to",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 63,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-gospels"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-preservation-not-truth",
+            "con-discriminating-truth-test"
+          ],
+          "components": [
+            {
+              "componentId": "pro-gospels-cumulative-reliability-component-01",
+              "targetMoveId": "con-preservation-not-truth",
+              "text": "What considerations beyond manuscript preservation support correspondence or historical reliability.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-gospels-cumulative-reliability-component-02",
+              "targetMoveId": "con-discriminating-truth-test",
+              "text": "Whether the proposed tests discriminate truthful history from incompatible or fictional narratives.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "Literary form, archaeology, and internal consistency add considerations beyond preservation, but the move does not establish that these tests discriminate truth from convincing fiction.",
+          "responsivenessWithinClass": {
+            "value": 74,
+            "rationale": "It contacts the primary preservation-versus-truth demand but leaves the decisive discrimination challenge unresolved."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It contacts the primary preservation-versus-truth demand but leaves the decisive discrimination challenge unresolved."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The four tests are clear, but historically reliable shifts between background accuracy, consistency, and broader factual truth."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical denial of contradictions and reliability conclusion exceed the limited evidence shown in the excerpt."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A narrative can be preserved, internally coherent, and accurate about places while its central events remain untrue.",
+          "decisiveQualification": "The criteria need an additional warrant connecting those indicators to the truth of the specific supernatural claims."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central pro-Gospels bridge with an expressly cumulative reliability case."
+          },
+          "representationalCharity": {
+            "value": 61,
+            "rationale": "The move adds cumulative indicators but omits the strongest fiction-compatible qualification affecting their probative force."
+          }
+        },
+        "evidenceBasis": "Knechtle enumerates literary genre, manuscript preservation, archaeology, and internal harmony as four historical tests.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-no-replacement-method-burden.critique",
+      "moveId": "con-no-replacement-method-burden",
+      "originalCritique": "Strongest feature: The move correctly allocates the local burden: showing that an advocate's method is defective does not logically require the critic to produce a superior method or a complete competing worldview. Principal limitation: Although no replacement is necessary for refutation, offering constructive standards could clarify whether the skepticism is principled and consistently applied rather than merely resistant to difficult historical evidence. Live burden: The skeptical side should articulate proportionate acceptance criteria and demonstrate that the affirmative method fails them, while preserving the distinction between helpful constructive engagement and a mandatory burden of proof. Locked score: The very strong band reflects exceptional logical coherence, direct diagnosis, explicit scope, charitable treatment of the opposing request, and near-complete responsiveness, tempered only because the move supports a subsidiary burden rather than the motion's central evidential merits.",
+      "originalWords": 133,
+      "originalCharacters": 1007,
+      "lockedMove": {
+        "moveId": "con-no-replacement-method-burden",
+        "sectionId": "section-truth-method-and-burdens",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Once an offered truth-testing method is shown defective, the critic need not supply a replacement or a method that confirms supernatural claims.",
+        "importance": 2,
+        "finalScore": 91,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "53:46",
+        "sourceSpan": {
+          "startEvent": 1450,
+          "endEvent": 1465,
+          "startMs": 3226880,
+          "endMs": 3261079
+        },
+        "sourceExcerpt": "supernatural. Neither does anybody else. You presented your case for why you find these texts reliable. I exposed where the problem is. You don't then get to say, \"Well, have you got a better one?\" Because that suggests that you're willing to stick with a flawed methodology until somebody comes along with a better one. It's not my job or anybody else's job to fix the foundation",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-burden"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-gospels-cumulative-reliability"
+          ],
+          "components": [
+            {
+              "componentId": "con-no-replacement-method-burden-component-01",
+              "targetMoveId": "pro-gospels-cumulative-reliability",
+              "text": "Whether exposing a defect in the offered reliability method obligates the critic to provide a superior method.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "It identifies the burden error and explains that a flawed method is not warranted merely because its critic supplies no replacement.",
+          "responsivenessWithinClass": {
+            "value": 95,
+            "rationale": "The move expressly addresses the replacement demand, diagnoses its burden defect, and gives the consequence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The move expressly addresses the replacement demand, diagnoses its burden defect, and gives the consequence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The procedural claim is clear and limited to criticism of an advocate's offered truth-testing method."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The allocation of burden is stated categorically but appropriately for the limited task of exposing insufficiency."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A critic's alternative method could help show that the dispute is constructive rather than merely skeptical.",
+          "decisiveQualification": "Usefulness of an alternative does not make supplying one necessary to demonstrate a defect in the offered method."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 95,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary con burden bridge and sits at the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says exposing the offered methodology's problem does not create a duty to fix or replace the advocate's foundation.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

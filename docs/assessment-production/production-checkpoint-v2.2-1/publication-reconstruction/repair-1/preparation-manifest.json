@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-repair-preparation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-repair-1",
+  "status": "one-isolated-two-field-debate-50-publication-repair-prepared-and-frozen",
+  "preparedAt": "2026-08-12T23:34:12.450Z",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "inputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/manual.md",
+    "diagnosis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/failure-diagnosis.json",
+    "failedExecution": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/model-execution.json",
+    "failedAnalysis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/analysis.json",
+    "immutableBaseOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/outputs/debate-50.json",
+    "publicationPacket": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-50.json"
+  },
+  "context": {
+    "contextIndex": 0,
+    "debateNumber": "50",
+    "debateId": "knechtle-dillahunty-christianity-true-2023",
+    "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/packet.json",
+    "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/schema.json",
+    "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-output.json",
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merged/debate-50.json",
+    "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-validation.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/provenance.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merge-audit.json",
+    "writableFields": [
+      "moveProse.pro-gospels-cumulative-reliability.critique",
+      "moveProse.con-no-replacement-method-burden.critique"
+    ],
+    "copiedInputBytes": 15962
+  },
+  "policy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "furtherCorrectionContextsMaximum": 0,
+    "timeoutMsPerContext": 480000,
+    "maximumMinutesPerContext": 8,
+    "maximumParallelContexts": 1,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "modelAuthoredScores": 0
+  },
+  "totals": {
+    "modelContexts": 1,
+    "writableFields": 2,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0
+  },
+  "authorization": {
+    "executionActivationPreparation": true,
+    "repairModelExecution": false,
+    "deterministicMergeAndFullValidation": false,
+    "publicationGateResumption": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
