@@ -1,0 +1,381 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-audio-verification-audit",
+  "protocolId": "assessment-production-score-stability-v2.2.3-audio-verification",
+  "status": "v2.2.3-audio-verification-unresolved",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "debates": [
+    {
+      "debateNumber": "17",
+      "debateId": "collins-oconnor-god-existence-2024",
+      "moves": [
+        {
+          "debateNumber": "17",
+          "debateId": "collins-oconnor-god-existence-2024",
+          "moveId": "pro-gospel-priors-testimony",
+          "expectedSpeaker": "Francis Collins",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Francis Collins",
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/clips/pro-gospel-priors-testimony.mp3",
+            "sha256": "77b0f7703b7ba07fc0c184651764db2c1f6eb4ff04c8e097df96a522476bf1bc",
+            "durationSeconds": 50.399
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/transcripts/pro-gospel-priors-testimony.transcript.json",
+            "sha256": "e585d99d163b44298a548ba3dc55eb21e574f1f303bfe1efeacd0a7e5f0ac0e8",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Francis Collins",
+            "fullClipExcerptRecall": 0.9402985074626866,
+            "expectedSpeakerExcerptRecall": 0.9402985074626866,
+            "highestOtherSpeaker": "Alex O'Connor",
+            "highestOtherSpeakerExcerptRecall": 0.16417910447761194,
+            "expectedSpeakerRecallMargin": 0.7761194029850746,
+            "expectedSpeakerDurationSeconds": 40.5,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Francis Collins",
+                "segmentCount": 9,
+                "durationSeconds": 40.5,
+                "wordCount": 128,
+                "excerptRecall": 0.9402985074626866
+              },
+              {
+                "speaker": "Alex O'Connor",
+                "segmentCount": 6,
+                "durationSeconds": 8.85,
+                "wordCount": 37,
+                "excerptRecall": 0.16417910447761194
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "17",
+          "debateId": "collins-oconnor-god-existence-2024",
+          "moveId": "pro-cumulative-moral-christian-case",
+          "expectedSpeaker": "Francis Collins",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/clips/pro-cumulative-moral-christian-case.mp3",
+            "sha256": "c70e0bd10af82f8d159a2abd6f42569aa0178541423c715c3f2c9067a57948f3",
+            "durationSeconds": 342.92
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/transcripts/pro-cumulative-moral-christian-case.transcript.json",
+            "sha256": "27ed1ca38aca12d33ef583fc16f94e356f5d434f2b9a7f3ef20a361b873ecc72",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Francis Collins",
+            "fullClipExcerptRecall": 0.9583333333333334,
+            "expectedSpeakerExcerptRecall": 0.7777777777777778,
+            "highestOtherSpeaker": "Alex O'Connor",
+            "highestOtherSpeakerExcerptRecall": 0.4861111111111111,
+            "expectedSpeakerRecallMargin": 0.2916666666666667,
+            "expectedSpeakerDurationSeconds": 294.9,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Francis Collins",
+                "segmentCount": 61,
+                "durationSeconds": 294.9,
+                "wordCount": 858,
+                "excerptRecall": 0.7777777777777778
+              },
+              {
+                "speaker": "Alex O'Connor",
+                "segmentCount": 16,
+                "durationSeconds": 20.3,
+                "wordCount": 66,
+                "excerptRecall": 0.4861111111111111
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "75",
+      "debateId": "rasmussen-clifton-contingency-argument-2019",
+      "moves": [
+        {
+          "debateNumber": "75",
+          "debateId": "rasmussen-clifton-contingency-argument-2019",
+          "moveId": "pro-weaker-senses-of-necessity",
+          "expectedSpeaker": "Josh Rasmussen",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Josh Rasmussen",
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/clips/pro-weaker-senses-of-necessity.mp3",
+            "sha256": "4d02c147d31b160a2ca5637f8fe14d0bb4414858dbf1558d528f35e5502d2a14",
+            "durationSeconds": 231.4
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/transcripts/pro-weaker-senses-of-necessity.transcript.json",
+            "sha256": "2004819312e11093ed97776e9489b83637d5b9637be97faa16dc240e5af1837c",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Josh Rasmussen",
+            "fullClipExcerptRecall": 0.9722222222222222,
+            "expectedSpeakerExcerptRecall": 0.9444444444444444,
+            "highestOtherSpeaker": "Scott Clifton",
+            "highestOtherSpeakerExcerptRecall": 0.4166666666666667,
+            "expectedSpeakerRecallMargin": 0.5277777777777777,
+            "expectedSpeakerDurationSeconds": 152.25,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Josh Rasmussen",
+                "segmentCount": 44,
+                "durationSeconds": 152.25,
+                "wordCount": 478,
+                "excerptRecall": 0.9444444444444444
+              },
+              {
+                "speaker": "Scott Clifton",
+                "segmentCount": 26,
+                "durationSeconds": 56.3,
+                "wordCount": 143,
+                "excerptRecall": 0.4166666666666667
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 3,
+                "durationSeconds": 4.95,
+                "wordCount": 16,
+                "excerptRecall": 0.125
+              },
+              {
+                "speaker": "B",
+                "segmentCount": 2,
+                "durationSeconds": 4.05,
+                "wordCount": 19,
+                "excerptRecall": 0.08333333333333333
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "75",
+          "debateId": "rasmussen-clifton-contingency-argument-2019",
+          "moveId": "pro-immaterial-concrete-foundation",
+          "expectedSpeaker": "Josh Rasmussen",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Josh Rasmussen",
+          "clip": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/clips/pro-immaterial-concrete-foundation.mp3",
+            "sha256": "dbdbf2c5192a62fd7ca8e3f1f3f127c7ba8f0a391f29b744c1ec7cf16131b1b5",
+            "durationSeconds": 94.970938
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/transcripts/pro-immaterial-concrete-foundation.transcript.json",
+            "sha256": "e565b1baccd03a89426bede8d7e9860458738546eb23f6a1b405932a59a64bd3",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Josh Rasmussen",
+            "fullClipExcerptRecall": 0.9390243902439024,
+            "expectedSpeakerExcerptRecall": 0.8170731707317073,
+            "highestOtherSpeaker": "Scott Clifton",
+            "highestOtherSpeakerExcerptRecall": 0.35365853658536583,
+            "expectedSpeakerRecallMargin": 0.46341463414634143,
+            "expectedSpeakerDurationSeconds": 68.1,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Josh Rasmussen",
+                "segmentCount": 28,
+                "durationSeconds": 68.1,
+                "wordCount": 220,
+                "excerptRecall": 0.8170731707317073
+              },
+              {
+                "speaker": "Scott Clifton",
+                "segmentCount": 14,
+                "durationSeconds": 19.9,
+                "wordCount": 49,
+                "excerptRecall": 0.35365853658536583
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "acceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "17",
+        "speaker": "Francis Collins",
+        "selectedMoveId": "pro-cumulative-moral-christian-case",
+        "selectedMoveSourceSpan": {
+          "startEvent": 2085,
+          "endEvent": 2213
+        },
+        "selectedMoveDurationSeconds": 337.92,
+        "startSeconds": 4834.84,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/references/francis-collins.mp3",
+        "sha256": "22755e7ff37b721cc72d26135eb12ca510a2f37835af62f492665100a71489bd"
+      },
+      {
+        "debateNumber": "17",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-symmetric-mystery-avoidable-suffering",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1319,
+          "endEvent": 1444
+        },
+        "selectedMoveDurationSeconds": 259.679,
+        "startSeconds": 3100.519,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-17/references/alex-o-connor.mp3",
+        "sha256": "804bb33a1597d0497172bf439b3b42f4f9cdefd87c9d8f7b9b1793d697fb1e1d"
+      },
+      {
+        "debateNumber": "75",
+        "speaker": "Josh Rasmussen",
+        "selectedMoveId": "pro-hidden-contradiction-conceivability-limit",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1508,
+          "endEvent": 1619
+        },
+        "selectedMoveDurationSeconds": 269.591,
+        "startSeconds": 3822.635,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/references/josh-rasmussen.mp3",
+        "sha256": "e75fbfd57cfd3c718afed41036eaf4a15c0fac3a286741d86696b208cf3afc11"
+      },
+      {
+        "debateNumber": "75",
+        "speaker": "Scott Clifton",
+        "selectedMoveId": "con-local-explanation-ultimate-reality-gap",
+        "selectedMoveSourceSpan": {
+          "startEvent": 397,
+          "endEvent": 462
+        },
+        "selectedMoveDurationSeconds": 173.31,
+        "startSeconds": 974.825,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-score-stability-v2.2.3-audio-verification/debate-75/references/scott-clifton.mp3",
+        "sha256": "38658a0ffcf5438b0afdc9baf8b978f0b405bcc08cec9f81138e88cf34c33632"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 4,
+    "verified": 3,
+    "unresolved": 1,
+    "paidDiarizationCallsAttempted": 4,
+    "paidDiarizationCallsCompleted": 4,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 11.9948,
+    "estimatedProcessingExposureUsd": 0.072,
+    "maximumAuthorizedCostUsd": 0.1,
+    "meteredJudgmentModelApiCostUsd": 0,
+    "scoresDerived": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": false,
+    "audioFailureDiagnosis": true,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}
