@@ -1,0 +1,296 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-resumption-failure-diagnosis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-resumption-1",
+  "status": "diagnosed-resumption-operational-context-seven-critique-word-overruns",
+  "developmentValidationOnly": false,
+  "productionCanary": true,
+  "stagingOnly": true,
+  "failedContext": {
+    "contextIndex": 0,
+    "originalContextIndex": 1,
+    "debateNumber": "192",
+    "debateId": "tour-swamidass-origin-life-chemistry-2020",
+    "elapsedMinutes": 6.06,
+    "model": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "correctionContextCount": 0,
+    "transportPassed": true,
+    "outputSha256": "21c79031428b7114e19ad6ea8c09aafa2699742973295b15336a37cb46a763f0"
+  },
+  "rampDisposition": {
+    "stoppedBeforeExpansion": true,
+    "contextsAttempted": 1,
+    "contextsUnattempted": 8,
+    "unattemptedDebates": [
+      "129",
+      "40",
+      "25",
+      "104",
+      "22",
+      "10",
+      "167",
+      "122"
+    ],
+    "retries": 0,
+    "correctionContexts": 0
+  },
+  "failureBoundary": {
+    "failedFields": [
+      {
+        "path": "moveProse.pro-probability-needs-pathway.critique",
+        "words": 133,
+        "characters": 1072,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 3
+      },
+      {
+        "path": "moveProse.pro-receding-explanatory-target.critique",
+        "words": 132,
+        "characters": 1072,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 2
+      },
+      {
+        "path": "moveProse.pro-cumulative-unfavorable-steps.critique",
+        "words": 132,
+        "characters": 1118,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 2
+      },
+      {
+        "path": "moveProse.con-independent-origin-falsifier.critique",
+        "words": 131,
+        "characters": 1066,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 1
+      },
+      {
+        "path": "moveProse.pro-recurrence-without-mechanism.critique",
+        "words": 131,
+        "characters": 1041,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 1
+      },
+      {
+        "path": "moveProse.pro-laboratory-work-not-pathway.critique",
+        "words": 132,
+        "characters": 1123,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 2
+      },
+      {
+        "path": "moveProse.con-chemical-nonzero-possibility.critique",
+        "words": 131,
+        "characters": 1089,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 1
+      }
+    ],
+    "failedFieldCount": 7,
+    "excessWordsTotal": 12,
+    "critiquesPassingUnchanged": 9,
+    "critiquesWithCharacterFailure": 0,
+    "critiquesWithSentenceLabelOrPunctuationFailure": 0,
+    "originalValidationMessage": "pro-probability-needs-pathway: critique outside 105–130 words"
+  },
+  "diagnosticReplay": {
+    "persistedCorrectedOutput": false,
+    "originalOutputModified": false,
+    "purpose": "prove-all-other-output-fields-pass-after-bounded-in-memory-removal-of-twelve-excess-words",
+    "hypotheticalWritableFields": [
+      "moveProse.pro-probability-needs-pathway.critique",
+      "moveProse.pro-receding-explanatory-target.critique",
+      "moveProse.pro-cumulative-unfavorable-steps.critique",
+      "moveProse.con-independent-origin-falsifier.critique",
+      "moveProse.pro-recurrence-without-mechanism.critique",
+      "moveProse.pro-laboratory-work-not-pathway.critique",
+      "moveProse.con-chemical-nonzero-possibility.critique"
+    ],
+    "hypotheticalWordsRemoved": 12,
+    "result": {
+      "status": "passed",
+      "debateNumber": "192",
+      "moves": 16,
+      "critiques": 16,
+      "minimumCritiqueCharacters": 1029,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 16,
+      "introducedItems": 6,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "preservedControls": {
+    "participantJudgmentWasScoreBlind": true,
+    "scoresRecalculated": false,
+    "scoresChanged": false,
+    "modelAuthoredScores": 0,
+    "retries": 0,
+    "correctionModelContexts": 0,
+    "meteredApiCostUsd": 0,
+    "productionMutation": false
+  },
+  "prospectiveRecoveryOnly": {
+    "currentlyAuthorized": false,
+    "repairPacketMaximumWritableFields": 2,
+    "proposedRepairPackets": [
+      {
+        "packetIndex": 0,
+        "writableFields": [
+          "moveProse.pro-probability-needs-pathway.critique",
+          "moveProse.pro-receding-explanatory-target.critique"
+        ],
+        "writableFieldCount": 2,
+        "attemptsMaximum": 1,
+        "retriesMaximum": 0
+      },
+      {
+        "packetIndex": 1,
+        "writableFields": [
+          "moveProse.pro-cumulative-unfavorable-steps.critique",
+          "moveProse.con-independent-origin-falsifier.critique"
+        ],
+        "writableFieldCount": 2,
+        "attemptsMaximum": 1,
+        "retriesMaximum": 0
+      },
+      {
+        "packetIndex": 2,
+        "writableFields": [
+          "moveProse.pro-recurrence-without-mechanism.critique",
+          "moveProse.pro-laboratory-work-not-pathway.critique"
+        ],
+        "writableFieldCount": 2,
+        "attemptsMaximum": 1,
+        "retriesMaximum": 0
+      },
+      {
+        "packetIndex": 3,
+        "writableFields": [
+          "moveProse.con-chemical-nonzero-possibility.critique"
+        ],
+        "writableFieldCount": 1,
+        "attemptsMaximum": 1,
+        "retriesMaximum": 0
+      }
+    ],
+    "proposedModel": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription"
+    },
+    "proposedAttemptsMaximumPerPacket": 1,
+    "proposedRetriesMaximum": 0,
+    "requiredAfterRepair": [
+      "revalidate-the-complete-debate-192-publication-output",
+      "freeze-a-separate-eight-context-resumption-manifest-only-if-debate-192-passes",
+      "retain-production-mutation-and-publication-finalization-stop-rules"
+    ]
+  },
+  "authorization": {
+    "repairPacketPreparation": false,
+    "repairModelExecution": false,
+    "eightContextResumption": false,
+    "retry": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "activation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/execution-activation.json",
+      "sha256": "5ae090dcc7c8950d4144b5c798f8da4dae3d8f675294507c6bca7214dfae39f0"
+    },
+    "execution": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/model-execution.json",
+      "sha256": "312ca00c27360dfdd814c7c44d9fd718df645ecb8178b0d5f7db4a64fc419543"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/analysis.json",
+      "sha256": "eed225005786bb3e1cc3319af07774117e43967e30692835dc910a8eab3c24fa"
+    },
+    "output": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/outputs/debate-192.json",
+      "sha256": "21c79031428b7114e19ad6ea8c09aafa2699742973295b15336a37cb46a763f0"
+    },
+    "packet": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-192.json",
+      "sha256": "720a7db3f05a256df331447d2bc6105d7d454de579b51aaa35c8a872f2c0abb4"
+    },
+    "validation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/validations/debate-192.json",
+      "sha256": "302d7ef3dbbd1a1942b96cf182fb7f96fb681779ca6e67165d0239bebfe337f9"
+    },
+    "provenance": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/provenance/debate-192.json",
+      "sha256": "aada75e8c04518314775f75d430ffcd3545e7a8be74035512433363520be8fd7"
+    }
+  },
+  "nextRequiredAction": "user-decision-on-prospective-four-packet-seven-field-debate-192-repair-and-eight-context-resumption-plan"
+}
