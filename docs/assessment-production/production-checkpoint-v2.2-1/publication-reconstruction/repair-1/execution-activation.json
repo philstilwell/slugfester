@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-repair-execution-activation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-repair-1",
+  "status": "frozen-one-isolated-two-field-debate-50-publication-repair-authorized",
+  "frozenAt": "2026-08-12T23:34:35.000Z",
+  "checkpointCommit": "c8646e1c2a49be7a638091f45f93a9248f04cd9d",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "modelInputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/manual.md",
+    "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/packet.json",
+    "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/schema.json"
+  },
+  "context": {
+    "contextIndex": 0,
+    "debateNumber": "50",
+    "debateId": "knechtle-dillahunty-christianity-true-2023",
+    "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/packet.json",
+    "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/schema.json",
+    "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-output.json",
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merged/debate-50.json",
+    "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-validation.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/provenance.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merge-audit.json",
+    "writableFields": [
+      "moveProse.pro-gospels-cumulative-reliability.critique",
+      "moveProse.con-no-replacement-method-burden.critique"
+    ],
+    "copiedInputBytes": 15962
+  },
+  "executionPolicy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "furtherCorrectionContextsMaximum": 0,
+    "timeoutMsPerContext": 480000,
+    "maximumMinutesPerContext": 8,
+    "maximumParallelContexts": 1,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "modelAuthoredScores": 0,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "CODEX_API_KEY"
+    ]
+  },
+  "isolation": {
+    "oneDebatePerContext": true,
+    "onlyTwoDiagnosedCritiquesWritable": true,
+    "acceptedFieldsUnavailableAsOutputFields": true,
+    "scoresUnavailableAsOutputFields": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "participantJudgmentWasScoreBlind": true,
+    "retries": 0,
+    "furtherCorrectionContexts": 0
+  },
+  "executionEnvironment": {
+    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "codexCliVersion": "codex-cli 0.147.0-alpha.6.5",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "isolatedTemporaryCodexHome": true,
+    "isolatedTemporaryWorkingDirectory": true
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "expectedWallMinutes": [
+      3,
+      8
+    ]
+  },
+  "authorization": {
+    "repairModelContext": true,
+    "deterministicRepairValidation": true,
+    "deterministicMergeAndCompleteDebateValidationIfRepairPasses": true,
+    "retry": false,
+    "furtherCorrectionModelExecution": false,
+    "publicationGateResumption": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "execution": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/model-execution.json",
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/analysis.json",
+    "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-output.json",
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merged/debate-50.json",
+    "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-validation.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/provenance.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merge-audit.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-output.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merged/debate-50.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/repair-validation.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/provenance.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merge-audit.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/model-execution.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/analysis.json"
+  ],
+  "sourceHashes": {
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/analysis.json": "43efa9143fae22e72c1932faf2db213b85598c166397f0f2297104c2a90d8ff6",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/failure-diagnosis.json": "ad4bb616f72c90bacae66c25353907cea003dcdfa65cbc798032eb5826a84b35",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/model-execution.json": "a53fe10fb2a63e88944fddab1a2b86119e77889a9ecffd836c959ad139ba4a86",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/outputs/debate-50.json": "8e12c59664858c82bc200e82629296f7fccf71d541c1fad019f6dfd0ea3d9077",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-50.json": "a2964276f2a66bee6cc99f71c6c2885e9aa4c7d44bb6b71616e7cca883d451c4",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/manual.md": "857392f767569efa1c8907136c09fe6a21a4912cd38c140f794e14a62f6a0a9a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/packet.json": "bdfa2226a8ffac911b5619cfdff567546e5a7e8c19a926005b5bed934933cdf7",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/preparation-manifest.json": "cf3fcf682439c9e8b20dd0abb69ba9dd5d5c96746b9c0cb123ec6c07d1b51d2a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/schema.json": "bea1d7cb1a3335cd0c5ea0f007d0e3c5b853742b0af8fdfff5b532cdc6b91521",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "scripts/analyze-assessment-production-checkpoint-v2.2-publication-repair.mjs": "9b9ba5937b9b9759f35f188ea5a1d4b41c1142a2e36867a3771f25dcb9ebaf63",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication-repair.mjs": "38cb5a1b4f118c50b2a9a6b872f03b6d4e576f719a19bf76363ebe2a0621d840",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs": "e300714ea30b3056864ada9fb1e03be429465c8fd26aeb4c1fb49055a6d908ff",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication.mjs": "f06bb1af92c9b79f78277657f42fda7f4f70c555dcc2eec1f12b170902ac24fd",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-checkpoint-v2.2-publication-repair.mjs": "3efc68552bf08339f8ab88d67749833f7ef044514f6471acf222ff7da1ab018a",
+    "scripts/preregister-assessment-production-checkpoint-v2.2-publication-repair.mjs": "6d300aeeb722ad543e4a84368a68e6c7fa76aa86f23b7ffec06adf1a2ba44297",
+    "scripts/run-assessment-production-checkpoint-v2.2-publication-repair.mjs": "0328046ad460a45d0091c6efada51f513908df26648e259df0f770666a9fe41a",
+    "scripts/test-assessment-production-checkpoint-v2.2-publication-repair.mjs": "f2307f4cc2c8dcc3f619ef864857d56851d922773a6a08bc9ccc62c642aa4bea"
+  }
+}
