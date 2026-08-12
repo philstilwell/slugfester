@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-production-readiness-decision",
+  "status": "v2.2-policy-ready-for-promotion-with-nonmaterial-score-manifest-reference-defect-disclosed",
+  "policy": {
+    "version": "v2.2",
+    "proposal": "docs/assessment-production/score-stability-policy-v2.2-proposal.md",
+    "sha256": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+    "readyForPromotion": true,
+    "promotedByThisDecision": false
+  },
+  "decision": {
+    "validationPassed": true,
+    "policyReadyForPromotion": true,
+    "productionCampaignReady": false,
+    "publicationPreparationReady": false,
+    "rationale": "The fresh disjoint cohort satisfied the prospectively frozen v2.2 rule, every unchanged numerical threshold, the required model/authentication/isolation controls, and the single-score-pass boundary. The later score manifest named v2.1, but the v2.2 policy was frozen before model execution, its evaluator remained unchanged, no agreed-initial-tie case occurred, and the disclosed conformance audit proves that the mistake changed neither scores nor acceptance."
+  },
+  "requirements": {
+    "freshDisjointTenDebateDyadicCohort": true,
+    "policyFrozenBeforeModelExecution": true,
+    "model56SolLowViaChatGPTSubscription": true,
+    "scoreBlindUntilRepositoryScoring": true,
+    "isolationAndStopRulesPreserved": true,
+    "predecessorFailuresPreservedNotReclassified": true,
+    "noModelRetriesOrSemanticCorrections": true,
+    "audioExceptionResolvedThroughAuthorizedIsolatedRoute": true,
+    "finalLedgerLockedBeforeScoring": true,
+    "exactlyOneDeterministicRepositoryScorePass": true,
+    "exactProspectiveV22RulePassed": true,
+    "noThresholdTuningOrAutomaticRerun": true,
+    "explicitReadinessDecisionRecorded": true
+  },
+  "evidenceSummary": {
+    "debates": 10,
+    "lockedInventoryMoves": 197,
+    "independentJudgmentContexts": 20,
+    "disputedMoves": 185,
+    "disputeAdjudicationContexts": 10,
+    "audioDiarizationCalls": 4,
+    "audioAttributionAdjudicationContexts": 1,
+    "estimatedAudioProcessingExposureUsd": 0.072,
+    "scorePasses": 1,
+    "numericStability": {
+      "meanAbsoluteDistanceToInitialPasses": 1.07,
+      "meanAbsoluteDistanceMaximum": 4,
+      "maximumAbsoluteDistanceToEitherInitialPass": 5,
+      "maximumAbsoluteDistanceMaximum": 8,
+      "maximumOutsideInitialRange": 1,
+      "maximumOutsideInitialRangeMaximum": 3
+    },
+    "v22WinnerStability": {
+      "agreedWinningSideDebates": 8,
+      "agreedWinningSidesPreserved": 8,
+      "agreedInitialTieDebates": 0,
+      "publishedOppositeSideReversals": []
+    }
+  },
+  "disclosedDefect": {
+    "kind": "score-pass-manifest-referenced-v2.1-instead-of-selection-frozen-v2.2",
+    "materialToScores": false,
+    "materialToAcceptanceOutcome": false,
+    "originalArtifactsPreserved": true,
+    "mustBeCorrectedBeforePublicationPreparation": true
+  },
+  "requiredBeforePublicationPreparation": [
+    "Promote the hash-locked v2.2 proposal as the active production score-stability rule in a separate committed decision.",
+    "Replace the future production score-control manifest and gate reference with v2.2 and test the agreed-initial-tie behavior before freezing publication work.",
+    "Freeze a separate publication-preparation authorization; this readiness decision does not execute publication models or mutate production."
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/score-stability-policy-v2.2-proposal.md": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+    "docs/assessment-production/score-stability-v2.2-validation-cohort/selection.json": "670dbd6fc146153ab80a3ec6f18ab59d700dcfc5cf5119844d700814669d6d4e",
+    "docs/assessment-production/score-stability-v2.2-validation-cohort/discovery/model-execution.json": "5bd26730df669d24d16e94bd1fb06f7104191670c6e5d19751e8e3ab5dfe63b0",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/discovery-mechanical-recovery/analysis.json": "c825104353e4bd9cd801b9323f9892075199baeefa26c526d0c970adde5ddf1c",
+    "docs/assessment-production/score-stability-v2.2.1-validation-cohort/inventory-chronology-fallback/plan-model-execution.json": "cea69781ef9a48586401ea3b9ee8f61dbc62a73f4b6ef50a0a95799b3aa4f3d8",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/inventory-analysis.json": "470b31350832277d1a88718b11e2257e96c1e649072e0cd7671fc03d38f721ee",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/route-model-execution.json": "25285496dc9b0603a68745e1540e0fe9aa2b41d343452b6b94e4c0b3faf7e410",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/section-model-execution.json": "4b4f036cb21976eaefc950ea2c1789710d9a9f61d147bc7b66de7ce29bc3965a",
+    "docs/assessment-production/score-stability-v2.2.2-validation-cohort/inventory-route-section-plan-successor/side-model-execution.json": "95dbe36b002d0540c43c01349be42bfaa3ef34e3fe0ed0317f77b3aa49ecb96a",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/independent-judgments/execution-activation.json": "c204ee38efed4df277ce510574d47bc4c607446732932978915453e09b80b894",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/independent-judgments/model-execution.json": "568e6a3451b5a248dabfbb803d6fdb8eac0f849aa3d860a34d791c3cf31bdf69",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/independent-judgments/analysis.json": "a71be7533d20a664fc200a5c056f009c68949cb5941e4316fe722a608ef98eee",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/audio-verification/model-execution.json": "f721c0b59058cefa9713447c9888acd3f64ed1885ad13412eb6b9c1eba4c1e79",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/audio-verification/failure-diagnosis.json": "970be2ac44ce74dde18be71533055c192f58a5cc8f759d4c50e42b8bcfa059b0",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/audio-attribution-adjudication/model-execution.json": "971a8b8253a469c341c589f90c988a2599a8fb4bcc55dd8850b8b1435a380f39",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/audio-attribution-adjudication/analysis.json": "3b2c93dd7276cfed0befbc2fdab935478d5f9bf40c24a4e8fe53e734cffc174d",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/dispute-only-adjudication/model-execution.json": "4cb5f23e12009bd747ecdeffaca560723069512a629ee81d71dcbd1a5a06fb04",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/dispute-only-adjudication/analysis.json": "3ccf11eb7dcf7d211a8a848f3f123811bf83ed130d599021e07e4c13cdb046cf",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/final-ledger/analysis.json": "2815ca133763164562fb7776011cf149aa013c57320446c53b9ed2300b5b32e7",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/score-pass/score-pass-manifest.json": "92620b5c5eb534f06de80008b157f4ea684b71f26b36008a2f65c71a3c53ca1c",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/score-pass/calculated-scores.json": "2094bb779a4b5deadeb7e8f8bdcf0d027a50e886ff77b5c93fc829474ae476eb",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/score-pass/analysis.json": "f062346ba85b0fb94552ac7568aad95c539bc5942a4bcc0dd9fcdcc1780f6074",
+    "docs/assessment-production/score-stability-v2.2.3-validation-cohort/score-pass/policy-conformance-analysis.json": "f1b2f65b1a8b474d35b7d7026c6711484a69ee52927dd353759768078124900e"
+  },
+  "authorization": {
+    "policyPromotion": true,
+    "productionScoreControlCorrectionPreparation": true,
+    "scoreRerun": false,
+    "judgmentRerun": false,
+    "adjudicationRerun": false,
+    "publicationPacketPreparation": false,
+    "publicationModelExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "promote-v2.2-policy-and-prepare-corrected-production-score-control-model-free-only"
+}
