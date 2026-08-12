@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2152,
+  "ledgerBytes": 122547,
+  "ledgerSha256": "2ae3d1b6b80b6dea2f35cfb9584bd96b21731df1b889e53193126750b8e3db91",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50183,
+      "contextSha256": "e1926f9db51b0c4e8a83eee82072627b2079d6cd4cf150d24324437bcbd38da0"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51931,
+      "contextSha256": "9e6c377c571435bc972fde8ee2e352ee02f9c034b2550f88c72ef0cf3a87b34d"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2151,
+      "coreEvents": 472,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2151,
+      "contextEvents": 512,
+      "contextBytes": 29759,
+      "contextSha256": "c18d23b62f4e5e749b1e1b7e78bd01e58120f52a915621a7ce850a76495c3236"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2151,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "25",
+  "debateId": "hitchens-ramadan-islam-peace-2010",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

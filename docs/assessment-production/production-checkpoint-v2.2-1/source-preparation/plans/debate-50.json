@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4147,
+  "ledgerBytes": 238844,
+  "ledgerSha256": "e60be4b4cef094aa18dd7f5f04f366969e153912d71b37d1e1bd38846c86743c",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50511,
+      "contextSha256": "cb5dfceeb05ea8b5ef3fdf2479f623a7125ad6f92350753e772b2ee49e122c98"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50931,
+      "contextSha256": "0aa848f58161ac913cf7b4019c8a8543299efaf43fea26e489db1bb14b7fdb95"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51807,
+      "contextSha256": "95adbb68ddd1b7c9584b1c0bc8e5f5322b0181430308b6006a4d4f725502b7da"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52503,
+      "contextSha256": "d5f4a01f407fbf2d3491e5460a8a288bbe9631126f6e52780d61b52b06691181"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4146,
+      "coreEvents": 827,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4146,
+      "contextEvents": 867,
+      "contextBytes": 51228,
+      "contextSha256": "b25d15cc95b77963edc6a61a3a4b45c1dccd7a0146608552cf7267c7ee5ca0ad"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4146,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "50",
+  "debateId": "knechtle-dillahunty-christianity-true-2023",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

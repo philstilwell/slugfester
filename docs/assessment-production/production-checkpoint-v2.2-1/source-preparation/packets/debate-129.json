@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-score-blind-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-source-preparation",
+  "debateNumber": "129",
+  "debateId": "plantinga-law-eaan-rational-belief-2010",
+  "motion": "Is the evolutionary argument against naturalism successful at showing that naturalism plus evolution gives its believers a defeater for trusting their cognitive faculties?",
+  "sides": {
+    "pro": {
+      "label": "EAAN defense",
+      "speakers": [
+        "Alvin Plantinga"
+      ]
+    },
+    "con": {
+      "label": "Reliability challenge",
+      "speakers": [
+        "Stephen Law"
+      ]
+    }
+  },
+  "durationSeconds": 4140,
+  "eventCount": 1967,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/vAJHkRkWCm0/transcript.txt",
+    "transcriptSha256": "7187052aba2de7eded77bcd036ba715925dc5a3b51c84a88ca352536d8b4f3a0",
+    "eventsPath": ".assessment-cache/captions/vAJHkRkWCm0/events.json",
+    "eventsSha256": "927ae9acabe815a9955b5f504692d9f575b9757f2901f26d1095c31a09efdc4a",
+    "localManifestPath": ".assessment-cache/captions/vAJHkRkWCm0/manifest.json",
+    "localManifestSha256": "c10cfbafb21cb30fcbee599902446522b1a49be66b56ea9e13c8c21f2811b32d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-129.jsonl",
+    "sourceLedgerSha256": "856a976a5129c17790cb37b5db8c91d8c5a70f9a8135d7f95e462e424acfe167",
+    "sourceLedgerBytes": 104178,
+    "sourceLedgerEventCount": 1967,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-129.json",
+    "partitionPlanSha256": "512d24ea22f7c2bbf0549a117f5558692763be1b8148ff2294eb9e73fe3735bc",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

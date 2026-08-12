@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2725,
+  "ledgerBytes": 154702,
+  "ledgerSha256": "6f8c77f456073ff8024a7bafd0adcee31c1c0661b5659cd0b3a8dd7f4c5bee72",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49693,
+      "contextSha256": "013db378166fe7244e64c4c2139599a86ca001e3002447fb17cdc0475e1d470c"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51437,
+      "contextSha256": "174eda8ca7ae44fa4f80c35f86baac59a30bb99ce7a5dc958cb605636a5f1a7b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52193,
+      "contextSha256": "779bca3d291eecba8ebc8bd460bb7a5c222fc729d6b55a1c76369f0baa2e1a7d"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2724,
+      "coreEvents": 225,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2724,
+      "contextEvents": 265,
+      "contextBytes": 15002,
+      "contextSha256": "fee5cb6c238264d18edb7f61a6300efc5a1072a6ad84f5158db8c162377a2620"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2724,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "40",
+  "debateId": "enoch-bush-objective-moral-truths-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

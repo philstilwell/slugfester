@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2970,
+  "ledgerBytes": 170629,
+  "ledgerSha256": "3885fa5cc78014e8f8c283ea0bacb9a26ddeb60f281b1a588ead1c96e40a21d6",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50872,
+      "contextSha256": "3b49d957ecd04db1f170fd1be1243f1ed7098389dc8348dcfa6b1bc48ba196dd"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51805,
+      "contextSha256": "56b85ef1dea7ae88fdfb17d9b8843bfbd4c04cd8818638a794cf7847ecaa08d3"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52385,
+      "contextSha256": "b2b67c26b51c93f5fecb52151c1db6259cb5e419bd261073ec6932b5615f98a6"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2969,
+      "coreEvents": 470,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2969,
+      "contextEvents": 510,
+      "contextBytes": 29460,
+      "contextSha256": "8d040f60d3ac0a02b3eff3a9ef52c614d5b6ca0bc57605ede0f9f9dbc1db4304"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2969,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "10",
+  "debateId": "craig-harris-moral-foundations-2011",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

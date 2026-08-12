@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-score-blind-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-source-preparation",
+  "debateNumber": "10",
+  "debateId": "craig-harris-moral-foundations-2011",
+  "motion": "Are the foundations of moral values and duties natural or supernatural?",
+  "sides": {
+    "pro": {
+      "label": "Supernatural foundation",
+      "speakers": [
+        "William Lane Craig"
+      ]
+    },
+    "con": {
+      "label": "Natural foundation",
+      "speakers": [
+        "Sam Harris"
+      ]
+    }
+  },
+  "durationSeconds": 7615,
+  "eventCount": 2970,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/yqaHXKLRKzg/transcript.txt",
+    "transcriptSha256": "770e077e18b2b63b21049c2a6a4937e0de68d44b00c8ba2a161793aec858baee",
+    "eventsPath": ".assessment-cache/captions/yqaHXKLRKzg/events.json",
+    "eventsSha256": "19723fd5c8f05dd24e291dbc3948a85f1e7a2ce2c0d9b3be27092618afa8f92f",
+    "localManifestPath": ".assessment-cache/captions/yqaHXKLRKzg/manifest.json",
+    "localManifestSha256": "61ae24dd90732a04c0d19c123c1edac1f5f133adb146b6c495c5fa2f69cb023c"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-10.jsonl",
+    "sourceLedgerSha256": "3885fa5cc78014e8f8c283ea0bacb9a26ddeb60f281b1a588ead1c96e40a21d6",
+    "sourceLedgerBytes": 170629,
+    "sourceLedgerEventCount": 2970,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-10.json",
+    "partitionPlanSha256": "806102c7e16375a4e197a5ac5ee7d20c7cef1a813fbee2a56f2bd00851d503fa",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

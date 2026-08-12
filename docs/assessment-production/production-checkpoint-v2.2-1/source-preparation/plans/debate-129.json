@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1967,
+  "ledgerBytes": 104178,
+  "ledgerSha256": "856a976a5129c17790cb37b5db8c91d8c5a70f9a8135d7f95e462e424acfe167",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47428,
+      "contextSha256": "d02f9c4f83944ed5ef5eba2ac35030dbc86300f3a69440186cbf2c82f74e44f0"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 47541,
+      "contextSha256": "3bea75eafeaf5ecef0bdc7d84c15edcfad474da3bb7b4f57539f255a6ff7d23e"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1966,
+      "coreEvents": 287,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1966,
+      "contextEvents": 327,
+      "contextBytes": 17423,
+      "contextSha256": "2a9fe32637c6b1100b2777751bdc496d92493d8c2ef4309b1cf4a64df64fc592"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1966,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "129",
+  "debateId": "plantinga-law-eaan-rational-belief-2010",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-score-blind-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-source-preparation",
+  "debateNumber": "40",
+  "debateId": "enoch-bush-objective-moral-truths-2026",
+  "motion": "Are there objective moral truths, and does moral realism or global normative anti-realism better explain ordinary moral judgment, deliberation, language, and disagreement?",
+  "sides": {
+    "pro": {
+      "label": "Moral realist",
+      "speakers": [
+        "David Enoch"
+      ]
+    },
+    "con": {
+      "label": "Normative anti-realist",
+      "speakers": [
+        "Lance Bush"
+      ]
+    }
+  },
+  "durationSeconds": 5377,
+  "eventCount": 2725,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/UWZuHxO4WcA/transcript.txt",
+    "transcriptSha256": "a6db7b0ca58006c793bf1207c55a907c9a66e0692b3bd14d5b4a849f3be90aa0",
+    "eventsPath": ".assessment-cache/captions/UWZuHxO4WcA/events.json",
+    "eventsSha256": "0e606343276099958b28d48c0bf68c1a2795a8db7f13df75a601e94d6802f06e",
+    "localManifestPath": ".assessment-cache/captions/UWZuHxO4WcA/manifest.json",
+    "localManifestSha256": "c851d71831db77bd5cdb9e2d73bc31a7c76bf383fa1c7bf70ee125fce7b7be53"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-40.jsonl",
+    "sourceLedgerSha256": "6f8c77f456073ff8024a7bafd0adcee31c1c0661b5659cd0b3a8dd7f4c5bee72",
+    "sourceLedgerBytes": 154702,
+    "sourceLedgerEventCount": 2725,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-40.json",
+    "partitionPlanSha256": "09d9f490619cb98a7437b4740b9c7e939db98b506f5547c9406cb71502a6bf5b",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1886,
+  "ledgerBytes": 162632,
+  "ledgerSha256": "93640a59efa81fe2ebfda027a151f6d73d202b2f97d44803094e39fc3ab7c3a7",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 773,
+      "coreEvents": 774,
+      "contextStartEvent": 0,
+      "contextEndEvent": 813,
+      "contextEvents": 814,
+      "contextBytes": 69947,
+      "contextSha256": "e1f3db89ad430d548078e75c6939c02042181a480642fb11b0686ab7aafb938f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 774,
+      "coreEndEvent": 1533,
+      "coreEvents": 760,
+      "contextStartEvent": 734,
+      "contextEndEvent": 1573,
+      "contextEvents": 840,
+      "contextBytes": 69998,
+      "contextSha256": "e41096735a2bf673e51e797382fe2f800ce1f75ef4cf6e6dfc3d1757b66957b3"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1534,
+      "coreEndEvent": 1885,
+      "coreEvents": 352,
+      "contextStartEvent": 1494,
+      "contextEndEvent": 1885,
+      "contextEvents": 392,
+      "contextBytes": 37696,
+      "contextSha256": "f51d12bb727b84449d49c93f9474d76c2546eaeeeddbba3af2d5895e179324ac"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1885,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "167",
+  "debateId": "craig-shook-existence-god-2008",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

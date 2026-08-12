@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-score-blind-source-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-source-preparation",
+  "debateNumber": "50",
+  "debateId": "knechtle-dillahunty-christianity-true-2023",
+  "motion": "Is Christianity true, and do the Gospels, resurrection claims, moral meaning, and human value give sufficient warrant for Christian faith?",
+  "sides": {
+    "pro": {
+      "label": "Christianity is true",
+      "speakers": [
+        "Cliffe Knechtle"
+      ]
+    },
+    "con": {
+      "label": "Skeptical atheism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 9437,
+  "eventCount": 4147,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/aAg3H1LU1Yw/transcript.txt",
+    "transcriptSha256": "72bb0246fe0a6cd33f330d606073b9db0705466c459378bef9e652f4d0caa6f5",
+    "eventsPath": ".assessment-cache/captions/aAg3H1LU1Yw/events.json",
+    "eventsSha256": "68599e16207e5422bae7b7119e76d6b73de25ab96971d0a74d9ef4e40b24a643",
+    "localManifestPath": ".assessment-cache/captions/aAg3H1LU1Yw/manifest.json",
+    "localManifestSha256": "5dcadf8a46f30d0b052f4e232e94f7c0b5ed2a30c875513a9474125496600ebb"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/production-checkpoint-v2.2-1/debate-50.jsonl",
+    "sourceLedgerSha256": "e60be4b4cef094aa18dd7f5f04f366969e153912d71b37d1e1bd38846c86743c",
+    "sourceLedgerBytes": 238844,
+    "sourceLedgerEventCount": 4147,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/production-checkpoint-v2.2-1/source-preparation/plans/debate-50.json",
+    "partitionPlanSha256": "699e7d26195a82e784a28f4227e5c162e382db50e96b1918ea349f48ae240bab",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "productionCanary": true,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

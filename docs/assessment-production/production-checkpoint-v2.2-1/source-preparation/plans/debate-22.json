@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3231,
+  "ledgerBytes": 186442,
+  "ledgerSha256": "6a0690586fec0716902fd96394ebcda07dcb1bfb14510a0cec117f104562cf41",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51141,
+      "contextSha256": "508f93dda98cc74a4b6d56b804224436fcc3df0b86ea8dc06bcce782bb7e1411"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52295,
+      "contextSha256": "98489f707b6efb7e1bc4551bd0573685357823d64b4154acb4635d8e4b978605"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52703,
+      "contextSha256": "60934448140d11880f2bd5b1a5dfb83ca5fb00a1ea898e43070a2ebc96341bf2"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3230,
+      "coreEvents": 731,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3230,
+      "contextEvents": 771,
+      "contextBytes": 44294,
+      "contextSha256": "a974d6f0069c950ae20c0dc7327b4cd14d7e91c8e6cfae1fa8ff110f79e67f59"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3230,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "22",
+  "debateId": "turek-hitchens-god-existence-2008",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

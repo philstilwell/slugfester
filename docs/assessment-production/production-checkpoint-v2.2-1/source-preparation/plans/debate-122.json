@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3797,
+  "ledgerBytes": 222129,
+  "ledgerSha256": "9366621f5cdf8b1ba95a9da7b4d7e48fbe326468753372cd162e2568dc9159aa",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51842,
+      "contextSha256": "4c012c7093bc652c34760aaa5d923308cc498b0c8325c0de2708252672d5731a"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53683,
+      "contextSha256": "4f0b4001c87addc6a0ff0e728a3c01e0360394f21e3f9a737cb02fc430ab1d4d"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52417,
+      "contextSha256": "1a51fbefc084271ea767f26727cd7e347518e7d34137140f5d6fd4b9f59bedb5"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52566,
+      "contextSha256": "3f6ac1a257eed20cfb66dbf01840e420aab841ab5f896a083c78ee35d8dca431"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3796,
+      "coreEvents": 477,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3796,
+      "contextEvents": 517,
+      "contextBytes": 30411,
+      "contextSha256": "bd16ae67750c5241999b0c7d108beb6011119b9c849aca53e6b9a8216438ee62"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3796,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "122",
+  "debateId": "horn-oconnor-god-existence-2020",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
