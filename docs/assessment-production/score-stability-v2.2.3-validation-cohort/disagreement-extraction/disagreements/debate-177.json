@@ -1,0 +1,2504 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-deterministic-disagreements",
+  "protocolId": "assessment-production-score-stability-v2.2.3-decomposed-consensus",
+  "debateNumber": "177",
+  "debateId": "ehrman-wallace-trust-text-new-testament-2011",
+  "moveDisputes": [
+    {
+      "moveId": "con-lost-early-copying-gap",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 81,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 94,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-detectable-corruption-presupposes-earlier-reading",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-lost-early-copying-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-detectable-corruption-presupposes-earlier-reading-component-01",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "Whether missing early witnesses leave changes introduced before surviving comparisons unknowable.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 66
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-lost-early-copying-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-detectable-corruption-presupposes-earlier-reading-component-01",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "The decisive demand is whether absent early copies make the authors' wording inaccessible rather than merely less directly evidenced.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 66,
+          "candidate2": 67,
+          "roundedMeanAfterAdjudication": 67
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 62,
+          "candidate2": 58,
+          "roundedMeanAfterAdjudication": 60
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-abundant-diverse-witness-base",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-late-witness-abundance",
+                "con-lost-early-copying-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-abundant-diverse-witness-base-component-01",
+                  "targetMoveId": "con-late-witness-abundance",
+                  "text": "Whether numerous manuscripts fail to provide comparative control because the earliest ancestry is lost.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-abundant-diverse-witness-base-component-02",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "Whether versions and patristic quotations mitigate the evidentiary gap in early transmission.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-late-witness-abundance",
+                "con-lost-early-copying-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-abundant-diverse-witness-base-component-01",
+                  "targetMoveId": "con-late-witness-abundance",
+                  "text": "The decisive demand is whether surviving witnesses provide sufficiently broad comparative evidence despite the lateness of most manuscripts.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-abundant-diverse-witness-base-component-02",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "A further demand concerns whether nonmanuscript witnesses materially constrain otherwise undocumented early transmission.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 80
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 68,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 67
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-most-variants-substantively-trivial",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-consequential-residual-variants"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-most-variants-substantively-trivial-component-01",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "Whether textual variation generally obstructs substantial recovery rather than containing mostly trivial differences.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-most-variants-substantively-trivial-component-02",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "Whether the consequential minority includes prominent and interpretation-affecting passages.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-consequential-residual-variants"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-most-variants-substantively-trivial-component-01",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "The decisive demand is to characterize the significance of variation without allowing a small consequential class to be obscured by raw totals.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 62
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 66,
+          "candidate2": 62,
+          "roundedMeanAfterAdjudication": 64
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-meaningful-viable-subset-limited",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-consequential-residual-variants"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-meaningful-viable-subset-limited-component-01",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "Whether the meaningful and viable subset is limited enough to permit substantial reconstruction.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-meaningful-viable-subset-limited-component-02",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "Whether hundreds of disputed passages can affect interpretation to some degree.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-consequential-residual-variants"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-meaningful-viable-subset-limited-component-01",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "The decisive demand is to acknowledge and delimit variants that are both viable and capable of affecting interpretation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-essential-beliefs-unaffected",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-consequential-residual-variants"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-essential-beliefs-unaffected-component-01",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "Whether consequential textual variants undermine essential Christian beliefs and practical textual trust.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-essential-beliefs-unaffected-component-02",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "Whether variants remain historically or interpretively significant apart from doctrinal effects.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-consequential-residual-variants"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-essential-beliefs-unaffected-component-01",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "The contacted component is whether disputed variants overturn essential Christian beliefs rather than whether they matter in every historical respect.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 66
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 67,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-original-reading-ordinarily-extant",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-late-witness-abundance",
+                "con-lost-early-copying-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-original-reading-ordinarily-extant-component-01",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "Whether alterations before the ancestry represented by surviving witnesses could leave no extant trace.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-original-reading-ordinarily-extant-component-02",
+                  "targetMoveId": "con-late-witness-abundance",
+                  "text": "Whether the surviving alternatives ordinarily include the autographic reading.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-late-witness-abundance",
+                "con-lost-early-copying-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-original-reading-ordinarily-extant-component-01",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "The decisive demand is whether lost early transmission plausibly removed the authors' wording from all surviving alternatives.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-original-reading-ordinarily-extant-component-02",
+                  "targetMoveId": "con-late-witness-abundance",
+                  "text": "A related demand is whether the surviving tradition retains original readings despite the lateness of most witnesses.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 63,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 64
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-scholarship-presupposes-stable-wording",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-consequential-residual-variants",
+                "con-lost-early-copying-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scholarship-presupposes-stable-wording-component-01",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "Whether missing early witnesses prevent warranted identification of the autographic wording.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-scholarship-presupposes-stable-wording-component-02",
+                  "targetMoveId": "con-consequential-residual-variants",
+                  "text": "Whether ordinary scholarship practically depends on sufficiently stable wording in most passages.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 65
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-lost-early-copying-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-scholarship-presupposes-stable-wording-component-01",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "The contacted demand is whether sweeping textual unknowability coheres with detailed scholarship that relies on stable wording.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 69,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 61,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 63
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-extant-percentage-limit",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-meaningful-viable-subset-limited",
+                "pro-most-variants-substantively-trivial"
+              ],
+              "components": [
+                {
+                  "componentId": "con-extant-percentage-limit-component-01",
+                  "targetMoveId": "pro-meaningful-viable-subset-limited",
+                  "text": "Whether percentages calculated from extant variants measure alterations introduced before the surviving manuscript tradition.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-extant-percentage-limit-component-02",
+                  "targetMoveId": "pro-most-variants-substantively-trivial",
+                  "text": "Whether the asserted ninety-nine-percent triviality addresses significant variants created before surviving witnesses.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-meaningful-viable-subset-limited",
+                "pro-most-variants-substantively-trivial"
+              ],
+              "components": [
+                {
+                  "componentId": "con-extant-percentage-limit-component-01",
+                  "targetMoveId": "pro-meaningful-viable-subset-limited",
+                  "text": "The decisive demand is whether percentages calculated from extant variants can measure alterations predating the surviving manuscript ancestry.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-extant-percentage-limit-component-02",
+                  "targetMoveId": "pro-most-variants-substantively-trivial",
+                  "text": "The raw insignificance percentage also depends on the extant observed variant set.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 83,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 94,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-significance-beyond-doctrine",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-essential-beliefs-unaffected"
+              ],
+              "components": [
+                {
+                  "componentId": "con-significance-beyond-doctrine-component-01",
+                  "targetMoveId": "pro-essential-beliefs-unaffected",
+                  "text": "Whether absence of effects on essential beliefs is sufficient to establish textual insignificance or trust.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "pro-essential-beliefs-unaffected"
+              ],
+              "components": [
+                {
+                  "componentId": "con-significance-beyond-doctrine-component-01",
+                  "targetMoveId": "pro-essential-beliefs-unaffected",
+                  "text": "The decisive demand is whether preservation of essential doctrines is the proper criterion for assessing textual and historical significance.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "pro-subsidiary-doctrinal-and-practical-stability"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-residual-consequential-uncertainty"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 94,
+          "candidate2": 95,
+          "roundedMeanAfterAdjudication": 95
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 90,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 91
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 93,
+          "roundedMeanAfterAdjudication": 91
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-required-accurate-ancestry-warrant",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-abundant-diverse-witness-base",
+                "pro-most-variants-substantively-trivial"
+              ],
+              "components": [
+                {
+                  "componentId": "con-required-accurate-ancestry-warrant-component-01",
+                  "targetMoveId": "pro-abundant-diverse-witness-base",
+                  "text": "Whether extensive surviving evidence establishes that the earliest extant copies descend from accurate predecessors.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-required-accurate-ancestry-warrant-component-02",
+                  "targetMoveId": "pro-most-variants-substantively-trivial",
+                  "text": "Whether extant triviality rates warrant claims about significant variants before surviving manuscripts.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-abundant-diverse-witness-base",
+                "pro-most-variants-substantively-trivial",
+                "pro-original-reading-ordinarily-extant"
+              ],
+              "components": [
+                {
+                  "componentId": "con-required-accurate-ancestry-warrant-component-01",
+                  "targetMoveId": "pro-original-reading-ordinarily-extant",
+                  "text": "The decisive demand is whether claims of ordinary extance establish that surviving readings descend through sufficiently accurate predecessors.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-required-accurate-ancestry-warrant-component-02",
+                  "targetMoveId": "pro-most-variants-substantively-trivial",
+                  "text": "A further demand is whether observed insignificant variants constrain significant changes before extant witnesses.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-required-accurate-ancestry-warrant-component-03",
+                  "targetMoveId": "pro-abundant-diverse-witness-base",
+                  "text": "The abundance claim must connect surviving witnesses to accurate early ancestry.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-probabilistic-standard"
+              }
+            },
+            "candidate2": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "con-motion-insufficient-trust-warrant"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 79,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-cumulative-early-transmission-evidence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-late-witness-abundance",
+                "con-lost-early-copying-gap",
+                "con-required-accurate-ancestry-warrant"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-cumulative-early-transmission-evidence-component-01",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "Whether the lost early copying period was wholly sparse and uncontrolled despite indirect evidence of circulation and copying.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-cumulative-early-transmission-evidence-component-02",
+                  "targetMoveId": "con-required-accurate-ancestry-warrant",
+                  "text": "Whether early use, multiple copying, versions, and patristic evidence make accurate ancestry probable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-cumulative-early-transmission-evidence-component-03",
+                  "targetMoveId": "con-late-witness-abundance",
+                  "text": "Whether diverse nonmanuscript witnesses materially supplement the surviving manuscript base.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-late-witness-abundance",
+                "con-lost-early-copying-gap",
+                "con-required-accurate-ancestry-warrant"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-cumulative-early-transmission-evidence-component-01",
+                  "targetMoveId": "con-required-accurate-ancestry-warrant",
+                  "text": "The decisive demand is whether any indirect evidence connects surviving witnesses to repeated and distributed early copying.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-cumulative-early-transmission-evidence-component-02",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "The missing direct copies leave a demand for evidence that the early period was not wholly sparse or linear.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-cumulative-early-transmission-evidence-component-03",
+                  "targetMoveId": "con-late-witness-abundance",
+                  "text": "The reply invokes early copying and multiple witness forms rather than relying only on medieval numerical abundance.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 82,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 80
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-indirect-evidence-supports-essential-recovery",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-extant-percentage-limit",
+                "con-lost-early-copying-gap",
+                "con-required-accurate-ancestry-warrant"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-indirect-evidence-supports-essential-recovery-component-01",
+                  "targetMoveId": "con-required-accurate-ancestry-warrant",
+                  "text": "Whether the absence of hard evidence prevents any warranted probability of accurate early textual ancestry.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-indirect-evidence-supports-essential-recovery-component-02",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "Whether indirect evidence can support essential recovery despite the acknowledged early evidentiary gap.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-indirect-evidence-supports-essential-recovery-component-03",
+                  "targetMoveId": "con-extant-percentage-limit",
+                  "text": "Whether evidence outside extant variant percentages can support the recovery conclusion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-extant-percentage-limit",
+                "con-lost-early-copying-gap",
+                "con-required-accurate-ancestry-warrant"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-indirect-evidence-supports-essential-recovery-component-01",
+                  "targetMoveId": "con-required-accurate-ancestry-warrant",
+                  "text": "The decisive demand is whether the absence of hard early controls precludes a probabilistic warrant based on cumulative indirect evidence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-indirect-evidence-supports-essential-recovery-component-02",
+                  "targetMoveId": "con-lost-early-copying-gap",
+                  "text": "The reply must acknowledge the direct evidentiary gap while explaining why it is not dispositive.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-indirect-evidence-supports-essential-recovery-component-03",
+                  "targetMoveId": "con-extant-percentage-limit",
+                  "text": "A related demand is whether evidence beyond observed extant percentages supports the conclusion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 72
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 80,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-initial-original-distinction",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-detectable-corruption-presupposes-earlier-reading",
+                "pro-indirect-evidence-supports-essential-recovery",
+                "pro-original-reading-ordinarily-extant"
+              ],
+              "components": [
+                {
+                  "componentId": "con-initial-original-distinction-component-01",
+                  "targetMoveId": "pro-original-reading-ordinarily-extant",
+                  "text": "Whether reconstructing the ancestor of surviving witnesses establishes identity with the author’s original wording.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-initial-original-distinction-component-02",
+                  "targetMoveId": "pro-detectable-corruption-presupposes-earlier-reading",
+                  "text": "Whether identifying tampering within surviving comparisons establishes access to the autograph itself.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-initial-original-distinction-component-03",
+                  "targetMoveId": "pro-indirect-evidence-supports-essential-recovery",
+                  "text": "Whether the recovered initial text and the autographic text can be treated as equivalent without an added warrant.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-detectable-corruption-presupposes-earlier-reading",
+                "pro-indirect-evidence-supports-essential-recovery",
+                "pro-original-reading-ordinarily-extant"
+              ],
+              "components": [
+                {
+                  "componentId": "con-initial-original-distinction-component-01",
+                  "targetMoveId": "pro-original-reading-ordinarily-extant",
+                  "text": "The decisive demand is whether reconstructing the ancestor of surviving witnesses establishes identity with the author's original wording.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-initial-original-distinction-component-02",
+                  "targetMoveId": "pro-detectable-corruption-presupposes-earlier-reading",
+                  "text": "Detecting alteration relative to an earlier reading does not by itself identify that reading as autographic.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-initial-original-distinction-component-03",
+                  "targetMoveId": "pro-indirect-evidence-supports-essential-recovery",
+                  "text": "Essential recovery still requires a bridge from reconstructed initial text to authorial wording.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 84,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 94,
+          "candidate2": 95,
+          "roundedMeanAfterAdjudication": 95
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-trust-burden-unmet",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-cumulative-early-transmission-evidence",
+                "pro-indirect-evidence-supports-essential-recovery",
+                "pro-original-reading-ordinarily-extant"
+              ],
+              "components": [
+                {
+                  "componentId": "con-trust-burden-unmet-component-01",
+                  "targetMoveId": "pro-indirect-evidence-supports-essential-recovery",
+                  "text": "Whether unspecified indirect evidence satisfies the affirmative burden to warrant textual trust.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trust-burden-unmet-component-02",
+                  "targetMoveId": "pro-cumulative-early-transmission-evidence",
+                  "text": "Whether the cited circulation evidence establishes competent early copyists and high-quality exemplars.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trust-burden-unmet-component-03",
+                  "targetMoveId": "pro-original-reading-ordinarily-extant",
+                  "text": "Whether present textual recoverability establishes the quality of lost ancestral exemplars.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-cumulative-early-transmission-evidence",
+                "pro-indirect-evidence-supports-essential-recovery",
+                "pro-original-reading-ordinarily-extant"
+              ],
+              "components": [
+                {
+                  "componentId": "con-trust-burden-unmet-component-01",
+                  "targetMoveId": "pro-indirect-evidence-supports-essential-recovery",
+                  "text": "The decisive demand is whether unspecified indirect evidence satisfies the advocate's burden to warrant textual trust.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trust-burden-unmet-component-02",
+                  "targetMoveId": "pro-cumulative-early-transmission-evidence",
+                  "text": "The competence of early copyists and quality of exemplars remain necessary considerations in evaluating the cumulative case.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trust-burden-unmet-component-03",
+                  "targetMoveId": "pro-original-reading-ordinarily-extant",
+                  "text": "Ordinary extance claims must rest on a warranted connection to reliable early ancestry.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 81
+            },
+            "candidate2": {
+              "value": 75
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 77,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-moderate-historical-probability-standard",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-initial-original-distinction",
+                "con-required-accurate-ancestry-warrant",
+                "con-trust-burden-unmet"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-moderate-historical-probability-standard-component-01",
+                  "targetMoveId": "con-trust-burden-unmet",
+                  "text": "What evidentiary standard the affirmative must satisfy before historical textual trust is warranted.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-moderate-historical-probability-standard-component-02",
+                  "targetMoveId": "con-required-accurate-ancestry-warrant",
+                  "text": "Whether responsible confidence requires hard proof of accurate copying at every lost stage.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-moderate-historical-probability-standard-component-03",
+                  "targetMoveId": "con-initial-original-distinction",
+                  "text": "Whether probabilistic identity can be warranted despite the conceptual initial-original distinction.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-initial-original-distinction",
+                "con-required-accurate-ancestry-warrant",
+                "con-trust-burden-unmet"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-moderate-historical-probability-standard-component-01",
+                  "targetMoveId": "con-trust-burden-unmet",
+                  "text": "The decisive demand is what evidentiary standard the advocate must satisfy before historical textual trust is warranted.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-moderate-historical-probability-standard-component-02",
+                  "targetMoveId": "con-required-accurate-ancestry-warrant",
+                  "text": "The ancestry warrant should be probabilistic rather than a demand for absolute historical certainty.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-moderate-historical-probability-standard-component-03",
+                  "targetMoveId": "con-initial-original-distinction",
+                  "text": "The initial-original distinction remains relevant but need not impose certainty as the threshold for responsible trust.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-probabilistic-standard"
+              }
+            },
+            "candidate2": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "pro-motion-warranted-textual-confidence"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 89,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 80,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 81
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 84
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "con-lost-early-copying-gap",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 81,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-lost-early-copying-gap",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 94,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "con-late-witness-abundance",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-late-witness-abundance",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-consequential-residual-variants",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "con-consequential-residual-variants",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 84,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-consequential-residual-variants",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 89,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "pro-detectable-corruption-presupposes-earlier-reading",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 66,
+      "candidate2": 67,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "pro-detectable-corruption-presupposes-earlier-reading",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-detectable-corruption-presupposes-earlier-reading",
+      "fieldKey": "representationalCharity",
+      "candidate1": 62,
+      "candidate2": 58,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "pro-abundant-diverse-witness-base",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-abundant-diverse-witness-base",
+      "fieldKey": "representationalCharity",
+      "candidate1": 68,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "pro-most-variants-substantively-trivial",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-most-variants-substantively-trivial",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "pro-most-variants-substantively-trivial",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-most-variants-substantively-trivial",
+      "fieldKey": "representationalCharity",
+      "candidate1": 66,
+      "candidate2": 62,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "pro-meaningful-viable-subset-limited",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-meaningful-viable-subset-limited",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "pro-essential-beliefs-unaffected",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-essential-beliefs-unaffected",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-essential-beliefs-unaffected",
+      "fieldKey": "representationalCharity",
+      "candidate1": 67,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-original-reading-ordinarily-extant",
+      "fieldKey": "representationalCharity",
+      "candidate1": 63,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "pro-scholarship-presupposes-stable-wording",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 69,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "pro-scholarship-presupposes-stable-wording",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-scholarship-presupposes-stable-wording",
+      "fieldKey": "representationalCharity",
+      "candidate1": 61,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 63
+    },
+    {
+      "moveId": "con-extant-percentage-limit",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 83,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-extant-percentage-limit",
+      "fieldKey": "representationalCharity",
+      "candidate1": 94,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-significance-beyond-doctrine",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 94,
+      "candidate2": 95,
+      "roundedMeanAfterAdjudication": 95
+    },
+    {
+      "moveId": "con-significance-beyond-doctrine",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 90,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "con-significance-beyond-doctrine",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 93,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "con-required-accurate-ancestry-warrant",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "con-required-accurate-ancestry-warrant",
+      "fieldKey": "representationalCharity",
+      "candidate1": 79,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "pro-cumulative-early-transmission-evidence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-cumulative-early-transmission-evidence",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "pro-cumulative-early-transmission-evidence",
+      "fieldKey": "representationalCharity",
+      "candidate1": 82,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-indirect-evidence-supports-essential-recovery",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 80,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "con-initial-original-distinction",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 84,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-initial-original-distinction",
+      "fieldKey": "representationalCharity",
+      "candidate1": 94,
+      "candidate2": 95,
+      "roundedMeanAfterAdjudication": 95
+    },
+    {
+      "moveId": "con-trust-burden-unmet",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-trust-burden-unmet",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 77,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-moderate-historical-probability-standard",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 89,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-moderate-historical-probability-standard",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 80,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "pro-moderate-historical-probability-standard",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 84
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact judgments",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact judgments",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "177",
+      "moves": 18,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 18,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenV223IndependentJudgmentPairCompared": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false
+  },
+  "scoreDerivationAuthorized": false
+}

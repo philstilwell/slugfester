@@ -1,0 +1,2842 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.2.3-deterministic-disagreements",
+  "protocolId": "assessment-production-score-stability-v2.2.3-decomposed-consensus",
+  "debateNumber": "75",
+  "debateId": "rasmussen-clifton-contingency-argument-2019",
+  "moveDisputes": [
+    {
+      "moveId": "pro-noncircular-foundation-core",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 74,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 71,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 86,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 88
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-local-explanation-ultimate-reality-gap",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-noncircular-foundation-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-local-explanation-ultimate-reality-gap-component-01",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "The explanatory demand governing contingent members also governs material reality as a whole.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-local-explanation-ultimate-reality-gap-component-02",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "A noncircular explanation beyond contingent reality is preferable to an ultimate brute fact.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-noncircular-foundation-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-local-explanation-ultimate-reality-gap-component-01",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "Challenges extending ordinary explanatory expectations to total material reality.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 84
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 67,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-weaker-senses-of-necessity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 33,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-local-explanation-ultimate-reality-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-weaker-senses-of-necessity-component-01",
+                  "targetMoveId": "con-local-explanation-ultimate-reality-gap",
+                  "text": "Ordinary explanatory intuitions may fail when extended to material reality as a whole.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 51
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "justified-reframe",
+              "decisiveTargetIds": [
+                "con-local-explanation-ultimate-reality-gap"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-weaker-senses-of-necessity-component-01",
+                  "targetMoveId": "con-local-explanation-ultimate-reality-gap",
+                  "text": "Reframes the issue from maximal certainty to weaker automatic actuality.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": true
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "medium"
+          },
+          "candidate2": {
+            "assessmentConfidence": "high"
+          }
+        },
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 70
+            },
+            "candidate2": {
+              "value": 81
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 76
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-automatic-actuality-stopping-point"
+              }
+            },
+            "candidate2": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-contingency-independence-distinction"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "partial",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-temporal-boundary-causal-limit",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-noncircular-foundation-core",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-temporal-boundary-causal-limit-component-01",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "A foundational layer can be classified as automatically actual under a weaker sense of necessity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-temporal-boundary-causal-limit-component-02",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "The explanatory demand on contingent things reaches the universe even at its first temporal boundary.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-noncircular-foundation-core",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-temporal-boundary-causal-limit-component-01",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "Challenges applying causal-explanatory intuitions at time's first boundary.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-temporal-boundary-causal-limit-component-02",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "Allows contingency while denying that a temporal beginning requires an external cause.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-explanatory-practice-over-bruteness",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 14,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-local-explanation-ultimate-reality-gap",
+                "con-temporal-boundary-causal-limit"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-explanatory-practice-over-bruteness-component-01",
+                  "targetMoveId": "con-temporal-boundary-causal-limit",
+                  "text": "Explanatory reasoning grounded in experienced reality lacks warrant at the ultimate temporal boundary.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-explanatory-practice-over-bruteness-component-02",
+                  "targetMoveId": "con-local-explanation-ultimate-reality-gap",
+                  "text": "Ordinary explanatory practice need not extend to total material reality.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-local-explanation-ultimate-reality-gap",
+                "con-temporal-boundary-causal-limit"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-explanatory-practice-over-bruteness-component-01",
+                  "targetMoveId": "con-temporal-boundary-causal-limit",
+                  "text": "Defends continuity between ordinary or scientific reasoning and ultimate inquiry.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-explanatory-practice-over-bruteness-component-02",
+                  "targetMoveId": "con-local-explanation-ultimate-reality-gap",
+                  "text": "Opposes abandoning explanatory inquiry at the level of total reality.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-necessity-presupposes-existence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-explanatory-practice-over-bruteness",
+                "pro-noncircular-foundation-core",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-necessity-presupposes-existence-component-01",
+                  "targetMoveId": "pro-explanatory-practice-over-bruteness",
+                  "text": "An available necessary explanation should satisfy explanatory inquiry better than brute reality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-necessity-presupposes-existence-component-02",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "Automatic actuality supplies an explanatory foundation rather than a modal redescription.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-necessity-presupposes-existence-component-03",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "A weaker sense of necessity provides explanatory value once attributed to a foundation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-explanatory-practice-over-bruteness",
+                "pro-noncircular-foundation-core",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-necessity-presupposes-existence-component-01",
+                  "targetMoveId": "pro-explanatory-practice-over-bruteness",
+                  "text": "Diagnoses necessity as a conditional label rather than an existence explanation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-necessity-presupposes-existence-component-02",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "Challenges automatic actuality as an explanatory terminus rather than mere redescription.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-necessity-presupposes-existence-component-03",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "Argues that weakening necessity does not explain why the foundation exists.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 87
+            },
+            "candidate2": {
+              "value": 77
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 74
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 89
+            },
+            "candidate2": {
+              "value": 68
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-automatic-actuality-demand-distinction",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-necessity-presupposes-existence",
+                "con-temporal-boundary-causal-limit"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-automatic-actuality-demand-distinction-component-01",
+                  "targetMoveId": "con-necessity-presupposes-existence",
+                  "text": "Necessary existence does not explain why the proposed foundation is actual.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-automatic-actuality-demand-distinction-component-02",
+                  "targetMoveId": "con-temporal-boundary-causal-limit",
+                  "text": "A brute contingent universe may stand without the ordinary further-explanation demand.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-local-explanation-ultimate-reality-gap",
+                "con-necessity-presupposes-existence",
+                "con-temporal-boundary-causal-limit"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-automatic-actuality-demand-distinction-component-01",
+                  "targetMoveId": "con-necessity-presupposes-existence",
+                  "text": "Distinguishes contrastive explanatory demand from continued curiosity about actuality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-automatic-actuality-demand-distinction-component-02",
+                  "targetMoveId": "con-temporal-boundary-causal-limit",
+                  "text": "Offers a non-temporal modal basis for why explanation is especially demanded.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-automatic-actuality-demand-distinction-component-03",
+                  "targetMoveId": "con-local-explanation-ultimate-reality-gap",
+                  "text": "Grounds inquiry in could-have-failed actuality rather than merely local causal intuition.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 80,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 81
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-supremacy-necessity-circularity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-automatic-actuality-demand-distinction"
+              ],
+              "components": [
+                {
+                  "componentId": "con-supremacy-necessity-circularity-component-01",
+                  "targetMoveId": "pro-automatic-actuality-demand-distinction",
+                  "text": "A supreme nature may explain or predict why the foundation is robustly automatically actual.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-automatic-actuality-demand-distinction"
+              ],
+              "components": [
+                {
+                  "componentId": "con-supremacy-necessity-circularity-component-01",
+                  "targetMoveId": "pro-automatic-actuality-demand-distinction",
+                  "text": "Diagnoses a backward explanation between divine supremacy and necessary existence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 83,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 90,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-necessity-stops-regress",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 20,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-necessity-presupposes-existence",
+                "con-supremacy-necessity-circularity"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-necessity-stops-regress-component-01",
+                  "targetMoveId": "con-supremacy-necessity-circularity",
+                  "text": "Supremacy cannot explain necessity if necessity partly constitutes supremacy.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-necessity-stops-regress-component-02",
+                  "targetMoveId": "con-necessity-presupposes-existence",
+                  "text": "Necessary existence leaves the foundation's actuality unexplained.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 66
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-necessity-presupposes-existence",
+                "con-supremacy-necessity-circularity"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-necessity-stops-regress-component-01",
+                  "targetMoveId": "con-necessity-presupposes-existence",
+                  "text": "Answers that no further explanation is required once necessary actuality is reached.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-necessity-stops-regress-component-02",
+                  "targetMoveId": "con-supremacy-necessity-circularity",
+                  "text": "Abandons reliance on supremacy by locating termination directly in inability not to exist.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": false,
+            "representationalCharity": 75
+          },
+          "candidate2": {
+            "tested": true,
+            "representationalCharity": 86
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-automatic-actuality-stopping-point"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-necessity-explanatory-deficit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-contingent-plurality-principle",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "not-needed"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 89,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 91
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-brute-contingency-comparison",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-local-explanation-ultimate-reality-gap",
+                "con-necessity-presupposes-existence",
+                "con-temporal-boundary-causal-limit"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-brute-contingency-comparison-component-01",
+                  "targetMoveId": "con-necessity-presupposes-existence",
+                  "text": "Necessary existence is no more explanatory than brute existence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-brute-contingency-comparison-component-02",
+                  "targetMoveId": "con-temporal-boundary-causal-limit",
+                  "text": "The universe may remain brute at the ultimate boundary.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-brute-contingency-comparison-component-03",
+                  "targetMoveId": "con-local-explanation-ultimate-reality-gap",
+                  "text": "Total material reality may be brute despite ordinary explanatory practice.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-local-explanation-ultimate-reality-gap",
+                "con-necessity-presupposes-existence",
+                "con-supremacy-necessity-circularity",
+                "con-temporal-boundary-causal-limit"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-brute-contingency-comparison-component-01",
+                  "targetMoveId": "con-necessity-presupposes-existence",
+                  "text": "Compares the residual demands generated by brute contingency and brute necessity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-brute-contingency-comparison-component-02",
+                  "targetMoveId": "con-temporal-boundary-causal-limit",
+                  "text": "Argues that modal contingency remains explanation-demanding even at an ultimate boundary.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-brute-contingency-comparison-component-03",
+                  "targetMoveId": "con-local-explanation-ultimate-reality-gap",
+                  "text": "Rejects parity between brute total reality and automatic actuality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-brute-contingency-comparison-component-04",
+                  "targetMoveId": "con-supremacy-necessity-circularity",
+                  "text": "Sets divine supremacy aside and bases the comparison on modality.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-automatic-actuality-stopping-point"
+              }
+            },
+            "candidate2": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "con-motion-unpersuasive-necessary-transition"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-contingency-independence-distinction",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-brute-contingency-comparison",
+                "pro-noncircular-foundation-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-contingency-independence-distinction-component-01",
+                  "targetMoveId": "pro-brute-contingency-comparison",
+                  "text": "Modal contingency makes an ultimate entity explanatorily dependent in a way necessity does not.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-contingency-independence-distinction-component-02",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "A noncontingent foundation follows from explanatory independence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-brute-contingency-comparison",
+                "pro-noncircular-foundation-core",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-contingency-independence-distinction-component-01",
+                  "targetMoveId": "pro-brute-contingency-comparison",
+                  "text": "Diagnoses a conflation of modal contingency with causal dependence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-contingency-independence-distinction-component-02",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "Challenges the inference from foundational independence to existence in every world.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-contingency-independence-distinction-component-03",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "Clarifies that weak modal nonnecessity need not imply dependence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-logical-rules-not-ontology",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-noncircular-foundation-core",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-logical-rules-not-ontology-component-01",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "Logical necessity supplies an intelligible model for the necessary structure of foundational reality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-logical-rules-not-ontology-component-02",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "A concrete automatically actual foundation is supported by the character of necessary reality.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-brute-contingency-comparison",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-logical-rules-not-ontology-component-01",
+                  "targetMoveId": "pro-brute-contingency-comparison",
+                  "text": "Challenges any move from logical necessity to ontological grounding.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-logical-rules-not-ontology-component-02",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "Distinguishes inferential rules from a necessary concrete reality.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 84
+            },
+            "candidate2": {
+              "value": 72
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 74,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-abstract-concrete-unification",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-contingency-independence-distinction",
+                "con-logical-rules-not-ontology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-abstract-concrete-unification-component-01",
+                  "targetMoveId": "con-logical-rules-not-ontology",
+                  "text": "Logical content may be only a feature of language and statements rather than mind-independent reality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-abstract-concrete-unification-component-02",
+                  "targetMoveId": "con-contingency-independence-distinction",
+                  "text": "Independence can be separated from necessary existence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-contingency-independence-distinction",
+                "con-logical-rules-not-ontology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-abstract-concrete-unification-component-01",
+                  "targetMoveId": "con-logical-rules-not-ontology",
+                  "text": "Answers by distinguishing mind-independent content from its representations.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-abstract-concrete-unification-component-02",
+                  "targetMoveId": "con-contingency-independence-distinction",
+                  "text": "Proposes a unified necessary nature rather than inferring dependence from modality.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-concrete-necessity-coherence"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-abstract-concrete-necessity-gap"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 89
+            },
+            "candidate2": {
+              "value": 83
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 82
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-abstract-concrete-truthmaker-asymmetry",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-abstract-concrete-unification",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-abstract-concrete-truthmaker-asymmetry-component-01",
+                  "targetMoveId": "pro-abstract-concrete-unification",
+                  "text": "A concrete necessary foundation can inherit or include the necessity of an abstract landscape.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-abstract-concrete-truthmaker-asymmetry-component-02",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "A weaker necessity avoids the demand for an evident contradiction in divine nonexistence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-abstract-concrete-unification",
+                "pro-weaker-senses-of-necessity"
+              ],
+              "components": [
+                {
+                  "componentId": "con-abstract-concrete-truthmaker-asymmetry-component-01",
+                  "targetMoveId": "pro-abstract-concrete-unification",
+                  "text": "Identifies the missing analogue between abstract and concrete necessity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-abstract-concrete-truthmaker-asymmetry-component-02",
+                  "targetMoveId": "pro-weaker-senses-of-necessity",
+                  "text": "Notes that even weaker necessity needs an intelligible basis for concrete application.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-hidden-contradiction-conceivability-limit",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 12,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-abstract-concrete-truthmaker-asymmetry",
+                "con-contingency-independence-distinction"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hidden-contradiction-conceivability-limit-component-01",
+                  "targetMoveId": "con-abstract-concrete-truthmaker-asymmetry",
+                  "text": "The apparent coherence of divine nonexistence supports its metaphysical possibility.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-hidden-contradiction-conceivability-limit-component-02",
+                  "targetMoveId": "con-contingency-independence-distinction",
+                  "text": "Possible-world nonexistence can be separated from dependence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-abstract-concrete-truthmaker-asymmetry",
+                "con-contingency-independence-distinction",
+                "con-logical-rules-not-ontology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hidden-contradiction-conceivability-limit-component-01",
+                  "targetMoveId": "con-abstract-concrete-truthmaker-asymmetry",
+                  "text": "Challenges the inference from apparent noncontradiction to genuine possibility.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-hidden-contradiction-conceivability-limit-component-02",
+                  "targetMoveId": "con-contingency-independence-distinction",
+                  "text": "Questions whether conceivable nonexistence establishes modal contingency.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-hidden-contradiction-conceivability-limit-component-03",
+                  "targetMoveId": "con-logical-rules-not-ontology",
+                  "text": "Uses inferentially extended contradiction rather than bare linguistic appearance.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 87,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-foundation-does-not-entail-necessity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-contingent-plurality-principle",
+                "pro-hidden-contradiction-conceivability-limit",
+                "pro-noncircular-foundation-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-foundation-does-not-entail-necessity-component-01",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "A foundation outside the contingent plurality must therefore be noncontingent or necessary.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-foundation-does-not-entail-necessity-component-02",
+                  "targetMoveId": "pro-contingent-plurality-principle",
+                  "text": "An explanation not among the contingent things explained must itself be noncontingent.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-foundation-does-not-entail-necessity-component-03",
+                  "targetMoveId": "pro-hidden-contradiction-conceivability-limit",
+                  "text": "Conceivability limitations supply positive warrant for necessary existence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-contingent-plurality-principle",
+                "pro-hidden-contradiction-conceivability-limit",
+                "pro-noncircular-foundation-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-foundation-does-not-entail-necessity-component-01",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "Identifies the unsupported leap from foundational status to necessity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-foundation-does-not-entail-necessity-component-02",
+                  "targetMoveId": "pro-contingent-plurality-principle",
+                  "text": "Accepts explanatory bottoming out without granting existence in every possible world.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-foundation-does-not-entail-necessity-component-03",
+                  "targetMoveId": "pro-hidden-contradiction-conceivability-limit",
+                  "text": "Distinguishes mere conceivability from the still-missing positive necessity inference.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 92,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 92
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-bruteness-parity-universe-god",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-automatic-actuality-demand-distinction",
+                "pro-brute-contingency-comparison",
+                "pro-necessity-stops-regress"
+              ],
+              "components": [
+                {
+                  "componentId": "con-bruteness-parity-universe-god-component-01",
+                  "targetMoveId": "pro-brute-contingency-comparison",
+                  "text": "Brute necessity is explanatorily superior to brute contingency because only contingency calls for explanation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-bruteness-parity-universe-god-component-02",
+                  "targetMoveId": "pro-automatic-actuality-demand-distinction",
+                  "text": "Automatic actuality answers the relevant why-question about the foundation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-bruteness-parity-universe-god-component-03",
+                  "targetMoveId": "pro-necessity-stops-regress",
+                  "text": "Necessary existence supplies a uniquely legitimate stopping point.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-automatic-actuality-demand-distinction",
+                "pro-brute-contingency-comparison",
+                "pro-necessity-stops-regress",
+                "pro-noncircular-foundation-core"
+              ],
+              "components": [
+                {
+                  "componentId": "con-bruteness-parity-universe-god-component-01",
+                  "targetMoveId": "pro-brute-contingency-comparison",
+                  "text": "Challenges the claimed explanatory advantage of brute necessity over brute contingency.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-bruteness-parity-universe-god-component-02",
+                  "targetMoveId": "pro-necessity-stops-regress",
+                  "text": "Argues that stopping at God supplies no explanation unavailable to the universe.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-bruteness-parity-universe-god-component-03",
+                  "targetMoveId": "pro-automatic-actuality-demand-distinction",
+                  "text": "Rejects necessary existence as helping explain why God exists.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-bruteness-parity-universe-god-component-04",
+                  "targetMoveId": "pro-noncircular-foundation-core",
+                  "text": "Preserves a brute-universe alternative to the proposed necessary foundation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-necessity-explanatory-deficit"
+              }
+            },
+            "candidate2": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "con-motion-unpersuasive-necessary-transition"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-immaterial-concrete-foundation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-abstract-concrete-truthmaker-asymmetry",
+                "con-bruteness-parity-universe-god",
+                "con-logical-rules-not-ontology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-immaterial-concrete-foundation-component-01",
+                  "targetMoveId": "con-bruteness-parity-universe-god",
+                  "text": "Necessary existence offers no explanatory advantage over a brute universe.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-immaterial-concrete-foundation-component-02",
+                  "targetMoveId": "con-abstract-concrete-truthmaker-asymmetry",
+                  "text": "No coherent model connects abstract necessity to a concrete foundation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-immaterial-concrete-foundation-component-03",
+                  "targetMoveId": "con-logical-rules-not-ontology",
+                  "text": "Logical structure cannot ground concrete causal reality.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-abstract-concrete-truthmaker-asymmetry",
+                "con-bruteness-parity-universe-god",
+                "con-foundation-does-not-entail-necessity",
+                "con-logical-rules-not-ontology"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-immaterial-concrete-foundation-component-01",
+                  "targetMoveId": "con-abstract-concrete-truthmaker-asymmetry",
+                  "text": "Offers an immaterial conceptual mind as a coherent concrete model.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-immaterial-concrete-foundation-component-02",
+                  "targetMoveId": "con-logical-rules-not-ontology",
+                  "text": "Locates abstract structure within the nature of a causally powerful mind.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-immaterial-concrete-foundation-component-03",
+                  "targetMoveId": "con-foundation-does-not-entail-necessity",
+                  "text": "Shows coherence of immaterial concreteness but not necessary existence.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-immaterial-concrete-foundation-component-04",
+                  "targetMoveId": "con-bruteness-parity-universe-god",
+                  "text": "Distinguishes God from material reality through conceptuality and causal powers.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-concrete-necessity-coherence"
+              }
+            },
+            "candidate2": {
+              "value": 68,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "con-subsidiary-immateriality-insufficient"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 84
+            },
+            "candidate2": {
+              "value": 78
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 75,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-noncircular-foundation-core",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 74,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-noncircular-foundation-core",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 71,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-noncircular-foundation-core",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 86,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "con-local-explanation-ultimate-reality-gap",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-local-explanation-ultimate-reality-gap",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 67,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "con-temporal-boundary-causal-limit",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-temporal-boundary-causal-limit",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-explanatory-practice-over-bruteness",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-explanatory-practice-over-bruteness",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-explanatory-practice-over-bruteness",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-explanatory-practice-over-bruteness",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-automatic-actuality-demand-distinction",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-automatic-actuality-demand-distinction",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 80,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "pro-automatic-actuality-demand-distinction",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-supremacy-necessity-circularity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-supremacy-necessity-circularity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 83,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-supremacy-necessity-circularity",
+      "fieldKey": "representationalCharity",
+      "candidate1": 90,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "pro-necessity-stops-regress",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-necessity-stops-regress",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "pro-contingent-plurality-principle",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-contingent-plurality-principle",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-contingent-plurality-principle",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 89,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "pro-brute-contingency-comparison",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-contingency-independence-distinction",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-logical-rules-not-ontology",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-logical-rules-not-ontology",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 74,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "pro-abstract-concrete-unification",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-abstract-concrete-truthmaker-asymmetry",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 90,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-hidden-contradiction-conceivability-limit",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 87,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-hidden-contradiction-conceivability-limit",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "con-foundation-does-not-entail-necessity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 92,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-foundation-does-not-entail-necessity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-bruteness-parity-universe-god",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 90,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "con-bruteness-parity-universe-god",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-bruteness-parity-universe-god",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-immaterial-concrete-foundation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 75,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 76
+    }
+  ],
+  "burdenAdjustmentDisputes": [],
+  "audioVerificationMoveIds": [
+    "pro-weaker-senses-of-necessity",
+    "pro-immaterial-concrete-foundation"
+  ],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "75",
+      "moves": 19,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 19,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenV223IndependentJudgmentPairCompared": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false
+  },
+  "scoreDerivationAuthorized": false
+}
