@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-audio-verification-execution-preparation-manifest",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-decomposed-consensus",
+  "status": "prepared-two-production-checkpoint-v2.2-paid-known-speaker-diarizations-pending-explicit-user-approval",
+  "preparedAt": "2026-08-12T16:59:05.526Z",
+  "approvedAt": null,
+  "checkpointCommit": "03e722a5886b3934becefc9d099c84a4bde95f5d",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "AIOnly": true,
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "25",
+      "debateId": "hitchens-ramadan-islam-peace-2010",
+      "moveId": "con-internal-reform-resources",
+      "expectedSpeaker": "Tariq Ramadan",
+      "proposition": "Islam's interpretive, jurisprudential, ethical, philosophical, and rationalist inheritance supplies internal resources for diverse contemporary visions and reform.",
+      "verificationExcerpt": "do you know that they C who came with the rationality and doubt read himself read the thesis of Abu hamali who was talking about doubt and doubt as a sense of getting certitude and and knowledge neglected not known and I think that the Islamic tradition is full of that we have to reconcile ourself with our past in order to come with a diversity of New Visions for for the future",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/clips/con-internal-reform-resources.mp3",
+      "clipSha256": "d77729003aa138aba59b261a7c5668a764c5b819fdf5755ac1838251890ac854",
+      "durationSeconds": 117.52,
+      "transcriptPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/transcripts/con-internal-reform-resources.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Christopher Hitchens",
+          "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/references/christopher-hitchens.mp3",
+          "sha256": "506c1330c82cebda4e155011bf4a4d7bd2a941a29674f4be4e1f17e4bd030879",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Tariq Ramadan",
+          "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/references/tariq-ramadan.mp3",
+          "sha256": "ec07024d4810b07c0aa17cf854d5479c3f70e7c81d97115934722beb10385648",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "104",
+      "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+      "moveId": "con-selection-for-reliable-investigation",
+      "expectedSpeaker": "Alex O'Connor",
+      "proposition": "Natural selection can favor investigative and classificatory capacities that track real environmental dangers and benefits reliably enough to support rational inference.",
+      "verificationExcerpt": "although natural selection is selecting for survival the most kind of consistent way to ensure the survival of a conscious Asian is its ability to realistically understand the world around sounds like you're saying it's perfectly consistent that our ability to reason would be would confirm yeah yeah he's happy perfectly happy too is it true that we have to be clear to make sure",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/clips/con-selection-for-reliable-investigation.mp3",
+      "clipSha256": "9bc39458bddf311fb1bd3125e5bc6689479e08ccb703ccba4f3b3abff0f0ecb3",
+      "durationSeconds": 251.941,
+      "transcriptPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/transcripts/con-selection-for-reliable-investigation.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Max Baker-Hytch",
+          "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/references/max-baker-hytch.mp3",
+          "sha256": "d2a3cbb210de9e7b24327c61e4c48cbb0bd9820a3f12e15e6883837aed940c78",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/references/alex-o-connor.mp3",
+          "sha256": "084241833703f360bc1bbb0f2400a191cd29e53d81a1ec2a7755802827eb624e",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "acceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "25",
+        "speaker": "Christopher Hitchens",
+        "selectedMoveId": "pro-cartoon-rushdie-coercion",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1389,
+          "endEvent": 1498
+        },
+        "selectedMoveDurationSeconds": 261.52,
+        "startSeconds": 3713.96,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/references/christopher-hitchens.mp3",
+        "sha256": "506c1330c82cebda4e155011bf4a4d7bd2a941a29674f4be4e1f17e4bd030879"
+      },
+      {
+        "debateNumber": "25",
+        "speaker": "Tariq Ramadan",
+        "selectedMoveId": "con-mainstream-condemnation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1052,
+          "endEvent": 1205
+        },
+        "selectedMoveDurationSeconds": 385.08,
+        "startSeconds": 2900.22,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/references/tariq-ramadan.mp3",
+        "sha256": "ec07024d4810b07c0aa17cf854d5479c3f70e7c81d97115934722beb10385648"
+      },
+      {
+        "debateNumber": "104",
+        "speaker": "Max Baker-Hytch",
+        "selectedMoveId": "pro-comparative-probabilistic-framework",
+        "selectedMoveSourceSpan": {
+          "startEvent": 467,
+          "endEvent": 568
+        },
+        "selectedMoveDurationSeconds": 270.99,
+        "startSeconds": 1213.215,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/references/max-baker-hytch.mp3",
+        "sha256": "d2a3cbb210de9e7b24327c61e4c48cbb0bd9820a3f12e15e6883837aed940c78"
+      },
+      {
+        "debateNumber": "104",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-selection-for-reliable-investigation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1168,
+          "endEvent": 1278
+        },
+        "selectedMoveDurationSeconds": 246.941,
+        "startSeconds": 2869.189,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/references/alex-o-connor.mp3",
+        "sha256": "084241833703f360bc1bbb0f2400a191cd29e53d81a1ec2a7755802827eb624e"
+      }
+    ]
+  },
+  "costEstimate": {
+    "planningPricePerMinuteUsd": 0.006,
+    "planningRateBasis": "promoted-production-canary",
+    "clipMinutes": 6.1577,
+    "expectedCostUsd": 0.0369,
+    "maximumAuthorizedCostUsd": 0.1,
+    "officialPricingCheckedAt": "2026-08-12",
+    "officialPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "actualTokenBilledCostMayVary": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true,
+    "explicitUserApprovalRequired": true,
+    "explicitUserApprovalRecorded": false
+  },
+  "executionPolicy": {
+    "callsMaximum": 2,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "chunkingStrategy": "auto",
+    "responseFormat": "diarized_json",
+    "knownSpeakerReferencesPerCall": 2,
+    "transcriptsSavedLocally": true
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "unchanged": true
+  },
+  "authorization": {
+    "paidTranscriptionActivation": true,
+    "paidTranscriptionExecution": false,
+    "deterministicAudioAnalysis": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "missingApiKeyBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "deterministicUnresolvedBlocksAdjudication": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualAttributionOverrideAuthorized": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/execution-manifest.json",
+    "execution": "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/model-execution.json",
+    "audit": "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/analysis.json",
+    "transcripts": [
+      "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/transcripts/con-internal-reform-resources.transcript.json",
+      "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/transcripts/con-selection-for-reliable-investigation.transcript.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/execution-manifest.json",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/transcripts/con-internal-reform-resources.transcript.json",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/transcripts/con-selection-for-reliable-investigation.transcript.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/model-execution.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/audio-verification.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/audio-verification/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/audio-source-preparation.json": "ba4f2885a398d0b7affaa6849f11104c5b578ab5e246e9199fec013d4d97cff0",
+    "docs/assessment-production/production-checkpoint-v2.2-1/disagreement-extraction/audio-work-items.json": "a628b436ab54f780e29af2309bcd12813e0dc9754b3878d1b3367c93e113f96d",
+    "docs/assessment-production/production-checkpoint-v2.2-1/independent-judgments/execution-preparation-manifest.json": "845afa8e539944e6a6e94393d022a0232ef107b4a2eb4fd3e69a1b4df355866b",
+    "docs/assessment-production-checkpoint-v2.2-audio-verification-workflow.md": "7fbd714108cb3ba63f629742fa3de6b65c57f247a1b082a7fa5e566135b5906e",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-checkpoint-v2.2-audio-verification.mjs": "9eb542d845d9f404fb8eb3a48a8dea0194e999408e0cd758a6c94fca9c6dfe6b",
+    "scripts/activate-assessment-production-checkpoint-v2.2-audio-verification.mjs": "26bbd5e5152fcc9252ec6258858c4a757e515793a7482966f1cd5109e26ecd50",
+    "scripts/run-assessment-production-checkpoint-v2.2-audio-verification.mjs": "e7efef66370a58810f38c0a2459a4fa848e57fecd4cc077e4a6601537e398e20",
+    "scripts/analyze-assessment-production-checkpoint-v2.2-audio-verification.mjs": "9d44e0a4f74f9c3cd9cf2f3f644a8fe4cb0afcc1d925f75efac9bcf220ed6b5e",
+    "scripts/test-assessment-production-checkpoint-v2.2-audio-verification.mjs": "021ca6949f6ad820289c3eb4720872a1fcb6d363e9a151a91e7cf650f25cb642",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/audio/source.mp3": "d8ada88258eeb01fd9c15b27c49cbba35991b5f6ae46395e1e5dd42081127a8f",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/audio/source.mp3": "0f1b27194646b271d352a32103cfd151412c942215a65cc383edbc388189e7fc",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/clips/con-internal-reform-resources.mp3": "d77729003aa138aba59b261a7c5668a764c5b819fdf5755ac1838251890ac854",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/clips/con-selection-for-reliable-investigation.mp3": "9bc39458bddf311fb1bd3125e5bc6689479e08ccb703ccba4f3b3abff0f0ecb3",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/references/christopher-hitchens.mp3": "506c1330c82cebda4e155011bf4a4d7bd2a941a29674f4be4e1f17e4bd030879",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-25/references/tariq-ramadan.mp3": "ec07024d4810b07c0aa17cf854d5479c3f70e7c81d97115934722beb10385648",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/references/max-baker-hytch.mp3": "d2a3cbb210de9e7b24327c61e4c48cbb0bd9820a3f12e15e6883837aed940c78",
+    "output/transcribe/assessment-production-checkpoint-v2.2-1-audio-verification/debate-104/references/alex-o-connor.mp3": "084241833703f360bc1bbb0f2400a191cd29e53d81a1ec2a7755802827eb624e"
+  },
+  "nextAuthorizedAction": "record-explicit-user-approval-and-freeze-production-checkpoint-v2.2-paid-audio-verification-activation"
+}
