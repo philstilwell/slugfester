@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-verification-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification",
+  "status": "ten-debate-rendering-verification-failed-closed-before-first-viewport-result",
+  "startedAt": "2026-08-13T14:00:10.000Z",
+  "completedAt": "2026-08-13T14:03:38.000Z",
+  "elapsedMs": 208000,
+  "productionCanary": true,
+  "stagingOnly": true,
+  "attemptedDebateNumber": "50",
+  "attemptedViewport": "desktop",
+  "expectedDebates": 10,
+  "expectedViewportResults": 20,
+  "expectedScreenshots": 40,
+  "finalizedDebateResults": 0,
+  "finalizedViewportResults": 0,
+  "preservedScreenshots": 0,
+  "modelContexts": 0,
+  "retriesOfFinalizedViewportResults": 0,
+  "scorePasses": 0,
+  "directCostUsd": 0,
+  "failure": {
+    "stage": "debate-50-desktop-browser-control",
+    "category": "browser-control-contract-incompatibility",
+    "message": "The browser control interface could not complete the frozen interaction sequence reliably, so no viewport result was finalized.",
+    "incidents": [
+      {
+        "id": "unsupported-network-idle-wait",
+        "description": "The browser documentation exposed a network-idle load state, but the active browser interface rejected that state before the first result was recorded.",
+        "pageResultRecorded": false,
+        "evidenceRecorded": false
+      },
+      {
+        "id": "unsupported-browser-version-command",
+        "description": "Raw page diagnostics were available, but the browser rejected Browser.getVersion; Runtime.evaluate could read the Chromium 151 user agent as a supported alternative.",
+        "pageResultRecorded": false,
+        "evidenceRecorded": false
+      },
+      {
+        "id": "post-reload-accordion-locator-timeout",
+        "description": "After collapsed and open captures, the browser timed out locating details.ai-extension-accordion following reload, before the keyboard checks and evidence record could complete.",
+        "pageResultRecorded": false,
+        "evidenceRecorded": false
+      },
+      {
+        "id": "localhost-service-worker-request-404",
+        "description": "The local browser requested /service-worker.js although the repository contains no service-worker registration or file; the Python staging server returned 404. The frozen gate allows zero failed requests, so this observation must be resolved or explicitly classified before a new activation.",
+        "pageResultRecorded": false,
+        "failedRequestsObservedAtLeast": 1
+      }
+    ]
+  },
+  "cleanup": {
+    "browserTabsClosed": true,
+    "viewportOverrideReset": true,
+    "localServerStopped": true,
+    "partialEvidenceRemoved": true,
+    "removedArtifacts": [
+      {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/evidence/debate-50/desktop-collapsed.png",
+        "sha256": "f3763e0ee6b03b8054b4a61de33633e0f77c4c878d70893c0debf92489e5f2fe",
+        "bytes": 123258,
+        "reason": "Incomplete gate evidence; the corresponding viewport result never finalized."
+      },
+      {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/evidence/debate-50/desktop-open.png",
+        "sha256": "34925b1788b1a572febfddb9e06de4562a7aba23a5c7deadae83654199767eac",
+        "bytes": 142586,
+        "reason": "Incomplete gate evidence; the corresponding viewport result never finalized."
+      }
+    ]
+  },
+  "renderingVerificationPassed": false,
+  "renderingRepairPerformed": false,
+  "validatorMigrationPerformed": false,
+  "productionLedgerPublicationPerformed": false,
+  "productionMutationPerformed": false
+}

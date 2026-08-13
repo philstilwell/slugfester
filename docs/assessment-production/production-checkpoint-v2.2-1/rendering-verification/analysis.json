@@ -1,0 +1,74 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-verification-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification",
+  "status": "rendering-verification-failed-closed-on-browser-control-process",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "sourceAndPacketReplayPassedBeforeExecution": true,
+    "publicationFinalizationReplayPassedBeforeExecution": true,
+    "activeV22ScoreControlPassedBeforeExecution": true,
+    "productionDebatesValidatedBeforeExecution": 195,
+    "seoFilesValidatedBeforeExecution": 380,
+    "debatesPassed": 0,
+    "expectedDebates": 10,
+    "viewportResultsPassed": 0,
+    "expectedViewportResults": 20,
+    "screenshotsPreserved": 0,
+    "expectedScreenshots": 40,
+    "browserControlContractPassed": false,
+    "renderingContentRegressionEstablished": false,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "directCostUsd": 0
+  },
+  "decision": {
+    "failedClosed": true,
+    "partialPassPromotionPermitted": false,
+    "retryPerformedAfterFailureDecision": false,
+    "renderingGatePassed": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "diagnosis": {
+    "plainEnglish": "The scorecard itself was not shown to be defective. The failure occurred because the active browser-control interface did not reliably support the frozen load, version, and post-reload interaction sequence, and it generated a localhost service-worker request that violated the zero-failed-request rule.",
+    "requiredRemedy": [
+      "Prepare and test a browser-control runner on a synthetic local page before freezing a replacement execution plan.",
+      "Use the supported normal-load signal followed by an explicit wait for the AI Extension accordion before each interaction.",
+      "Record the Chromium version through Runtime.evaluate of navigator.userAgent rather than Browser.getVersion.",
+      "Determine whether /service-worker.js is browser-generated stale-origin traffic; isolate the staging origin or define a source-grounded handling rule without weakening genuine failed-request detection.",
+      "Freeze fresh evidence paths and a new immutable activation; do not reuse or relabel this failed execution."
+    ],
+    "estimatedRemedyPlanPreparationMinutes": [
+      10,
+      15
+    ],
+    "estimatedReplacementExecutionMinutes": [
+      10,
+      25
+    ],
+    "estimatedDirectCostUsd": 0
+  },
+  "compatibilityBoundary": {
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "existingProductionMutationBlockers": [
+      "optional-overall-reference-links",
+      "checkpoint-ledger-schema-adapter"
+    ]
+  },
+  "authorization": {
+    "renderingVerificationRemedyPlanPreparation": false,
+    "replacementRenderingVerificationActivation": false,
+    "browserControl": false,
+    "screenshotCapture": false,
+    "renderingRepair": false,
+    "compatibilityRemedyPlanPreparation": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-remedy-plan-preparation"
+}
