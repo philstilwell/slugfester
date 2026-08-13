@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-ten-debate-production-mutation-preparation-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation",
+  "status": "ten-debate-production-mutation-plan-freeze-passed",
+  "productionCanary": true,
+  "planningOnly": true,
+  "preparation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/preparation-manifest.json",
+    "bytes": 16952,
+    "sha256": "65468126a7960752dd8327987bedcb576b2223a9168c18f7b7b87a9b435c2fd0"
+  },
+  "mutationPacket": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/mutation-packet.json",
+    "bytes": 33708,
+    "sha256": "d91da8004d921b6c5dd4a0cd720a8d8a28fd007c29a4dd6390ef67245640ed18"
+  },
+  "checks": {
+    "repositoryBaselineAcceptancePassed": true,
+    "compatibilityAcceptancePassed": true,
+    "publicationFinalizationPassed": true,
+    "priorRenderingVerificationPassed": true,
+    "finalCandidatesHashLocked": 10,
+    "stagedLedgersHashLockedAndReplayed": 10,
+    "targetProductionLedgersAbsent": 10,
+    "sourceProjectionEvaluated": true,
+    "projectedCandidatesDeepEqual": 10,
+    "unchangedProductionDebateObjectsByteLocked": 185,
+    "currentSeoOutputsMatchedGenerator": 380,
+    "exactChangedSeoOutputsProjected": 12,
+    "productionFilesChanged": 0,
+    "productionMutationPerformed": false
+  },
+  "projectedProduction": {
+    "sourceSha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+    "ledgers": 10,
+    "generatedSeoOutputsChanged": 12,
+    "exactPaths": 23
+  },
+  "totals": {
+    "debates": 10,
+    "sourceDebateObjectsReplaced": 10,
+    "sourceDebateObjectsUnchanged": 185,
+    "productionLedgersAdded": 10,
+    "sections": 51,
+    "moves": 188,
+    "overallScores": 20,
+    "integerRoundedTies": 2,
+    "generatedSeoOutputsChecked": 380,
+    "generatedSeoOutputsChanged": 12,
+    "generatedSeoOutputsUnchanged": 368,
+    "exactProductionPathsPlanned": 23,
+    "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "meteredApiCostUsd": 0,
+    "productionMutations": 0
+  },
+  "authorization": {
+    "productionMutationPlanPreparation": true,
+    "productionMutationExecutionActivation": true,
+    "productionMutationExecution": false,
+    "productionLedgerPublication": false,
+    "productionDebatesChange": false,
+    "generatedSeoPublication": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "separateExecutionActivationRequired": true,
+    "exactBaselineHashMismatchStops": true,
+    "candidateOrStagedLedgerHashMismatchStops": true,
+    "existingProductionLedgerStops": true,
+    "projectionHashMismatchStops": true,
+    "generatedOutputSetMismatchStops": true,
+    "unexpectedWriteStops": true,
+    "validationFailureTriggersBoundedRollback": true,
+    "judgmentExecutionForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseRewriteForbidden": true,
+    "syntheticReferenceForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "user-decision-on-ten-debate-production-mutation-execution-activation"
+}

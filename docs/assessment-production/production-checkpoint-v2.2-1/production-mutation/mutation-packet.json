@@ -1,0 +1,907 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-ten-debate-production-mutation-plan-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation",
+  "status": "ten-debate-production-mutation-plan-packet-frozen",
+  "frozenAt": "2026-08-13T23:04:08Z",
+  "productionCanary": true,
+  "planningOnly": true,
+  "baseline": {
+    "gitCommit": "c89f502a8a18af80cae4348bb08f562f348d6213",
+    "branch": "main",
+    "repositoryAcceptancePassed": true,
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "bytes": 4267605,
+      "sha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6"
+    },
+    "productionLedgerTargetsAbsent": 10,
+    "generatedSeoOutputsCurrentAndExact": 380
+  },
+  "transformation": {
+    "debateOrder": [
+      "50",
+      "192",
+      "129",
+      "40",
+      "25",
+      "104",
+      "22",
+      "10",
+      "167",
+      "122"
+    ],
+    "productionDebates": {
+      "method": "Replace only each frozen top-level debate object span with the corresponding final candidate serialized by JSON.stringify(candidate, null, 2), adding two spaces after every newline so array indentation remains exact; preserve every byte outside those ten spans.",
+      "proof": {
+        "beforeBytes": 4267605,
+        "beforeSha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+        "projectedAfterBytes": 4463512,
+        "projectedAfterSha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+        "debateObjects": 195,
+        "replacedDebateObjects": 10,
+        "unchangedDebateObjects": 185,
+        "unchangedDebateObjectBytes": 4053723,
+        "unchangedDebateObjectSha256": "154a29f6e213ad8fcd574ce035812e7c7816d1ba991bac18dcb3e34adfc71152",
+        "outsideTargetSpanBytes": 4054801,
+        "outsideTargetSpanSha256": "b53b31254b708c2114d73927cbbf44ab293313d206c1bc57cd2157bc3f085e36",
+        "outsideTargetSpansPreservedByExactSlicing": true
+      }
+    },
+    "productionLedgers": {
+      "method": "Copy each frozen staged checkpoint adapter byte-for-byte to its absent production ledger path.",
+      "exactCopies": 10
+    },
+    "generatedSeo": {
+      "method": "Project the repository SEO generator in memory with the exact prospective debate array, require the current generator to match all existing outputs, then write only the twelve outputs whose bytes differ.",
+      "generator": "scripts/generate-seo-pages.mjs",
+      "generatedOutputs": 380,
+      "changedOutputs": [
+        {
+          "path": "debate/craig-harris-moral-foundations-2011/index.html",
+          "beforeBytes": 6812,
+          "beforeSha256": "21a925a51578e14ba3e36384828260d4f3256dd6496006efc7734220a3081d13",
+          "projectedAfterBytes": 6909,
+          "projectedAfterSha256": "4bb916063a8db67a6b2c9a1a30782507a924bfccecb568cad1b5f5964db75ef1"
+        },
+        {
+          "path": "debate/craig-shook-existence-god-2008/index.html",
+          "beforeBytes": 6989,
+          "beforeSha256": "15c3b726e924ab82ff408a792c4156e6cc46cc104fd91622ba564f69aedae13e",
+          "projectedAfterBytes": 7033,
+          "projectedAfterSha256": "779915d26acac5b71faeed00fe6f0b89dc3901cf368794c73af3ed4f3c1e3925"
+        },
+        {
+          "path": "debate/enoch-bush-objective-moral-truths-2026/index.html",
+          "beforeBytes": 7075,
+          "beforeSha256": "54630e222098cd6e59f5f11192f159bce9d87b3a0417a65518acdc26e72353ed",
+          "projectedAfterBytes": 7098,
+          "projectedAfterSha256": "906064d681237e86c6b24e01e0cf2991ccee171c7f5811f1f5de258ad358e4ba"
+        },
+        {
+          "path": "debate/hitchens-ramadan-islam-peace-2010/index.html",
+          "beforeBytes": 7090,
+          "beforeSha256": "72e506839af70c1b9bd2ba0ab74399091d15495fea65bac08616d1465b29937d",
+          "projectedAfterBytes": 7088,
+          "projectedAfterSha256": "56ea8914fa8a1f01614288d0b22826a95999d3360f6be1d53dd0f45118ddf0a1"
+        },
+        {
+          "path": "debate/horn-oconnor-god-existence-2020/index.html",
+          "beforeBytes": 6943,
+          "beforeSha256": "72bdf8d9ebbd761febb5a91559dc45b5a257d9fc14cd6004358af5f162091a42",
+          "projectedAfterBytes": 6958,
+          "projectedAfterSha256": "51c4e35745aca783e83f1c1252519a17853861c93f15d0ed3da6b38399441442"
+        },
+        {
+          "path": "debate/knechtle-dillahunty-christianity-true-2023/index.html",
+          "beforeBytes": 7117,
+          "beforeSha256": "d135145c7b0f2dca8de5dc7e714413d5024897f8a6d573a43e13727be9bf8103",
+          "projectedAfterBytes": 7152,
+          "projectedAfterSha256": "f4eb08c4c2a48c4cc97b293b3cb705c3bfa617cad7fbc34f0ea8fe681b3bd9d8"
+        },
+        {
+          "path": "debate/oconnor-baker-hytch-argument-from-reason-2020/index.html",
+          "beforeBytes": 7203,
+          "beforeSha256": "d69049fbdc31bfbce8e44e8ed78ab76acdf46d3a4211ef203ff6eeaade1a35f4",
+          "projectedAfterBytes": 7150,
+          "projectedAfterSha256": "019c449aa70325fa1f9bebedc9eb994d8366517c45b6a9ec61b5084f591c0ace"
+        },
+        {
+          "path": "debate/plantinga-law-eaan-rational-belief-2010/index.html",
+          "beforeBytes": 7135,
+          "beforeSha256": "ab08da418bc99bf1b16b12544acc583708db8ec847d59f9e68319f9f5b1087e8",
+          "projectedAfterBytes": 7076,
+          "projectedAfterSha256": "b7420ee7ed9b8c2ac584e5dd658ff8810d226f9b4f2307257644214f6cbea510"
+        },
+        {
+          "path": "debate/tour-swamidass-origin-life-chemistry-2020/index.html",
+          "beforeBytes": 7191,
+          "beforeSha256": "a3d581b233bce8ee8dd42474a6761a76d4517357ba4f330dcd774655bb6e3020",
+          "projectedAfterBytes": 7138,
+          "projectedAfterSha256": "47ef8b2ca302e093665fa830e2fa0782431db78a1ff666be9d4c03d819f93455"
+        },
+        {
+          "path": "debate/turek-hitchens-god-existence-2008/index.html",
+          "beforeBytes": 6970,
+          "beforeSha256": "2c01e3d3a12e304fd29059922ff331e2271a5346b3bbeb0f17dfb4a2cdc4bd1c",
+          "projectedAfterBytes": 6994,
+          "projectedAfterSha256": "2c1311e17321b20ebb2b2bbb2bed47429aa7bdad87e2eaa05009411a8d876793"
+        },
+        {
+          "path": "sitemap.xml",
+          "beforeBytes": 47971,
+          "beforeSha256": "036a4f03f36c56cbee803d0da473a8cc93e5c7c7b58b501f79f92b7b5e67be77",
+          "projectedAfterBytes": 47971,
+          "projectedAfterSha256": "1a3be01954e02595e5d4c74dfd1ce5ee074fdc9e191b9bc7c49afad9bf0814e6"
+        },
+        {
+          "path": "src/data/debate-summaries.js",
+          "beforeBytes": 283965,
+          "beforeSha256": "cadec51f02f72f4b7957a9f6b87255268814ef90c933a615178514af4cc42875",
+          "projectedAfterBytes": 284613,
+          "projectedAfterSha256": "e23f28317ad737449ec706983aaee5aed1731d2a4de6baa6f7ea493f49f4f73f"
+        }
+      ],
+      "unchangedOutputs": 368,
+      "unchangedOutputsManifestSha256": "f139a2e9d6869a2ccec6899564280441b963d53b9ed69f3e0e79a23244a322c1"
+    }
+  },
+  "debates": [
+    {
+      "debateNumber": "50",
+      "debateId": "knechtle-dillahunty-christianity-true-2023",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-50.json",
+        "bytes": 42656,
+        "sha256": "5a604356c824d46eda717956df1a8417909febdd16b48e02c33b6a8f25f34c9e"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/knechtle-dillahunty-christianity-true-2023.json",
+        "bytes": 108970,
+        "sha256": "17cc8e78b875c4df851b2fc5eb5285f0950955800cb0691eb744116d2cd14afe"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/knechtle-dillahunty-christianity-true-2023.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "50",
+        "debateId": "knechtle-dillahunty-christianity-true-2023",
+        "sourceObjectIndex": 49,
+        "sourceSpan": {
+          "start": 1077541,
+          "endExclusive": 1102377
+        },
+        "beforeObjectBytes": 24836,
+        "beforeObjectSha256": "718b6ca9a2f47ea5de5871e7f343642d347fc56290398076f009ec57bd069468",
+        "replacementBytes": 43475,
+        "replacementSha256": "3231d281a4c85bed383e74890766bdc466e63c9fc2c44aecaafd78377e9b6535",
+        "changedTopLevelFields": [
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentModel",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-06-01",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 68,
+          "con": 85
+        },
+        "proposedScore": {
+          "pro": 73,
+          "con": 90
+        },
+        "sections": 5,
+        "moves": 19
+      }
+    },
+    {
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-192.json",
+        "bytes": 36064,
+        "sha256": "f40abc5f63f7b7dd99e028a0fe7dc4ec538ba164aabe4ba681aace036d829703"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/tour-swamidass-origin-life-chemistry-2020.json",
+        "bytes": 100503,
+        "sha256": "8ecf47690a057ca7c1a3acf657f1f6bae55e31ead4071841e6fc4c04af08e4fc"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/tour-swamidass-origin-life-chemistry-2020.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "192",
+        "debateId": "tour-swamidass-origin-life-chemistry-2020",
+        "sourceObjectIndex": 191,
+        "sourceSpan": {
+          "start": 4188873,
+          "endExclusive": 4208436
+        },
+        "beforeObjectBytes": 19571,
+        "beforeObjectSha256": "e8beac0642ef6330d2ffac843b3cc1dd4a51500349973db96ae7d70e0134d57c",
+        "replacementBytes": 36767,
+        "replacementSha256": "7b22aed48b75041e427f832c3c3de339c2cf3be6a4b4f08a9f4e02da73dae6de",
+        "changedTopLevelFields": [
+          "assessmentModel",
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-08-01",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 87,
+          "con": 91
+        },
+        "proposedScore": {
+          "pro": 80,
+          "con": 78
+        },
+        "sections": 5,
+        "moves": 16
+      }
+    },
+    {
+      "debateNumber": "129",
+      "debateId": "plantinga-law-eaan-rational-belief-2010",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-129.json",
+        "bytes": 37305,
+        "sha256": "bcf12a5e54e4dcfe4beb576d695bd1ac3cdffbc09beea070996c901792a2c05a"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/plantinga-law-eaan-rational-belief-2010.json",
+        "bytes": 100525,
+        "sha256": "bfe325a35ae1592e702cd8e49ed621662a4116ebb72ed01a63491f9b9254902f"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/plantinga-law-eaan-rational-belief-2010.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "129",
+        "debateId": "plantinga-law-eaan-rational-belief-2010",
+        "sourceObjectIndex": 128,
+        "sourceSpan": {
+          "start": 2915646,
+          "endExclusive": 2937103
+        },
+        "beforeObjectBytes": 21457,
+        "beforeObjectSha256": "7259aadc04a3aa8118ffe0b3ff2a9bde2464fc91f38d2938773aef20e52f8cf7",
+        "replacementBytes": 38012,
+        "replacementSha256": "83b743c43eaeb3aa381692979ba0e5da637fff7059fa2f592204cfefc150076b",
+        "changedTopLevelFields": [
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentModel",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-07-30",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 77,
+          "con": 82
+        },
+        "proposedScore": {
+          "pro": 81,
+          "con": 81
+        },
+        "sections": 5,
+        "moves": 17
+      }
+    },
+    {
+      "debateNumber": "40",
+      "debateId": "enoch-bush-objective-moral-truths-2026",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-40.json",
+        "bytes": 41179,
+        "sha256": "81b62b16cd835d7032ee9562c3d936d641a9953ef2dc1bb3138678f522ac594e"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/enoch-bush-objective-moral-truths-2026.json",
+        "bytes": 113917,
+        "sha256": "1053187ec4a95a9c50780e2720e27b1d898d2cf8aa5e0951a78ef0b78afb907e"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/enoch-bush-objective-moral-truths-2026.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "40",
+        "debateId": "enoch-bush-objective-moral-truths-2026",
+        "sourceObjectIndex": 39,
+        "sourceSpan": {
+          "start": 857687,
+          "endExclusive": 878756
+        },
+        "beforeObjectBytes": 21069,
+        "beforeObjectSha256": "b0397ce3c24a0885d3a9688d7c6ffb339aaeb3caa5bbb05f539bc65534575733",
+        "replacementBytes": 41956,
+        "replacementSha256": "734093a2a8566eef2cb4e8a37a551166761a292be714b58ffcb2ddf06e57ad57",
+        "changedTopLevelFields": [
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentModel",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-05-31",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 81,
+          "con": 83
+        },
+        "proposedScore": {
+          "pro": 85,
+          "con": 84
+        },
+        "sections": 5,
+        "moves": 20
+      }
+    },
+    {
+      "debateNumber": "25",
+      "debateId": "hitchens-ramadan-islam-peace-2010",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-25.json",
+        "bytes": 42792,
+        "sha256": "70402bc93d3a00c78d0f82cf820e3c33605b8c6193828a8067b4575c4bd95a8f"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/hitchens-ramadan-islam-peace-2010.json",
+        "bytes": 123847,
+        "sha256": "74ad6bc16b19c778818af2f28bb1a2cc6ebdc5604265bdd9078ecaf05bc54511"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/hitchens-ramadan-islam-peace-2010.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "25",
+        "debateId": "hitchens-ramadan-islam-peace-2010",
+        "sourceObjectIndex": 24,
+        "sourceSpan": {
+          "start": 533687,
+          "endExclusive": 554174
+        },
+        "beforeObjectBytes": 20487,
+        "beforeObjectSha256": "c361fcf405fa43a4ac84929b238cc1e4f3c7f25288e0cbec2b541ffe24366989",
+        "replacementBytes": 43621,
+        "replacementSha256": "e32431235eae8f263c55f65ccf4a867967a2a394f6253fe62850f1e6b1724beb",
+        "changedTopLevelFields": [
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentModel",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-05-30",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 85,
+          "con": 82
+        },
+        "proposedScore": {
+          "pro": 80,
+          "con": 82
+        },
+        "sections": 5,
+        "moves": 20
+      }
+    },
+    {
+      "debateNumber": "104",
+      "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-104.json",
+        "bytes": 39398,
+        "sha256": "28736c65204336324b7720926e3780b38aabbd31cb4dd059188ddd40d6fd350d"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json",
+        "bytes": 107106,
+        "sha256": "eb8f19682600f86f2686b20ed6fa30dffaf3245484c11473a5b0a673a62a2aaf"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "104",
+        "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+        "sourceObjectIndex": 103,
+        "sourceSpan": {
+          "start": 2290266,
+          "endExclusive": 2310720
+        },
+        "beforeObjectBytes": 20454,
+        "beforeObjectSha256": "2b2a0b66d367a0a3a7e4a6ae141efabd07b5aa48e652738370ed98d0ecd91e5f",
+        "replacementBytes": 40149,
+        "replacementSha256": "fa5f02353877f63134d6e7c7ea0e202ea6c040041fe8ccdf558296f7f70cdd71",
+        "changedTopLevelFields": [
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentModel",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-07-18",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 81,
+          "con": 80
+        },
+        "proposedScore": {
+          "pro": 84,
+          "con": 82
+        },
+        "sections": 5,
+        "moves": 18
+      }
+    },
+    {
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-22.json",
+        "bytes": 40990,
+        "sha256": "84fcc81e6a59deb6e40368ec57c4e1f2c5742599f075acf15dc265ac9453ff63"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/turek-hitchens-god-existence-2008.json",
+        "bytes": 116216,
+        "sha256": "41bbf2134444a6c80eba0f79315f479eb577ae8d9e6eab791bb0918b3b122343"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/turek-hitchens-god-existence-2008.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "22",
+        "debateId": "turek-hitchens-god-existence-2008",
+        "sourceObjectIndex": 21,
+        "sourceSpan": {
+          "start": 471940,
+          "endExclusive": 494499
+        },
+        "beforeObjectBytes": 22559,
+        "beforeObjectSha256": "130fbbcb27ebab797bf3079471222c9ab18b4ece293d1c682f145565762a5690",
+        "replacementBytes": 41769,
+        "replacementSha256": "5b35de0777913facce0e1e26ec3d3a05585b13ca3a4ded13e3007ad5672f710c",
+        "changedTopLevelFields": [
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentModel",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-05-30",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 78,
+          "con": 84
+        },
+        "proposedScore": {
+          "pro": 74,
+          "con": 81
+        },
+        "sections": 5,
+        "moves": 19
+      }
+    },
+    {
+      "debateNumber": "10",
+      "debateId": "craig-harris-moral-foundations-2011",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-10.json",
+        "bytes": 40493,
+        "sha256": "919849cd2f8ebaf4da12aab3f2b70997792fd8ce267358b86fad5c5b309cdae3"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/craig-harris-moral-foundations-2011.json",
+        "bytes": 114972,
+        "sha256": "7c24813c56e312e9a8597b338e0fd6f35f7908ebef1d264a2824c769f015d5ad"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/craig-harris-moral-foundations-2011.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "10",
+        "debateId": "craig-harris-moral-foundations-2011",
+        "sourceObjectIndex": 9,
+        "sourceSpan": {
+          "start": 230646,
+          "endExclusive": 252147
+        },
+        "beforeObjectBytes": 21501,
+        "beforeObjectSha256": "5cdda2ef66b42c6702c2a032a81296e9068368b6b7e8132037b1d35c013305fd",
+        "replacementBytes": 41270,
+        "replacementSha256": "420ffccb30be3cb9c1422afba29e86bfee9149bec632624bb7f24588602ba789",
+        "changedTopLevelFields": [
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentModel",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-05-28",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 75,
+          "con": 80
+        },
+        "proposedScore": {
+          "pro": 79,
+          "con": 79
+        },
+        "sections": 5,
+        "moves": 20
+      }
+    },
+    {
+      "debateNumber": "167",
+      "debateId": "craig-shook-existence-god-2008",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-167.json",
+        "bytes": 41410,
+        "sha256": "deb376e35d058a755bf9e1a774d33e4ce774ef5084d4d553a987f2e42b23b337"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/craig-shook-existence-god-2008.json",
+        "bytes": 122994,
+        "sha256": "08b98cb619d5d60ab9070c968f57e5d9384fe0e6fc22f135cf2dddfcee3a40c3"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/craig-shook-existence-god-2008.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "167",
+        "debateId": "craig-shook-existence-god-2008",
+        "sourceObjectIndex": 166,
+        "sourceSpan": {
+          "start": 3689430,
+          "endExclusive": 3706722
+        },
+        "beforeObjectBytes": 17300,
+        "beforeObjectSha256": "8803ca0b6d917aeabf75a8a29f5c50c2b3477eb2deceaf476b3d3124199759f2",
+        "replacementBytes": 42253,
+        "replacementSha256": "856608e69a872923b789aa1c6fbf041412f8b46e1dff46f4dc69c74bc4205f28",
+        "changedTopLevelFields": [
+          "assessmentModel",
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-08-01",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 84,
+          "con": 75
+        },
+        "proposedScore": {
+          "pro": 76,
+          "con": 83
+        },
+        "sections": 6,
+        "moves": 21
+      }
+    },
+    {
+      "debateNumber": "122",
+      "debateId": "horn-oconnor-god-existence-2020",
+      "candidate": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-122.json",
+        "bytes": 38686,
+        "sha256": "344872a58d3d32e1f308cc0fd19b2e59d04d6471d9e55e5637f1a16eda533e78"
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/horn-oconnor-god-existence-2020.json",
+        "bytes": 102969,
+        "sha256": "46c71692c95df62c6fa603fd371b237d6ae9e3a6ceae2e1c1474b0b4d6088a05"
+      },
+      "productionLedger": {
+        "path": "docs/assessment-ledgers/horn-oconnor-god-existence-2020.json",
+        "baselineExists": false,
+        "exactCopyFromStagedLedgerRequired": true
+      },
+      "scoreReplayPassed": true,
+      "productionDebateProjection": {
+        "debateNumber": "122",
+        "debateId": "horn-oconnor-god-existence-2020",
+        "sourceObjectIndex": 121,
+        "sourceSpan": {
+          "start": 2750206,
+          "endExclusive": 2773776
+        },
+        "beforeObjectBytes": 23570,
+        "beforeObjectSha256": "facb1cbaa3186b9e6c47bcc20b8dd35b5443d1d8a71247222e1ae433736d1212",
+        "replacementBytes": 39439,
+        "replacementSha256": "b248252aa8278c160cab2272a535b13864a456c061376e7c35da2540aa0eb6cf",
+        "changedTopLevelFields": [
+          "date",
+          "summary",
+          "sourceNote",
+          "scoringNote",
+          "quotes",
+          "score",
+          "sections",
+          "overall",
+          "assessmentModel",
+          "assessmentRubric",
+          "logicalExtension"
+        ],
+        "immutableIdentityAndDisplayFieldsVerified": [
+          "id",
+          "number",
+          "title",
+          "label",
+          "duration",
+          "youtubeUrl",
+          "motion",
+          "sides",
+          "topicCategory"
+        ],
+        "currentDate": "2026-07-29",
+        "proposedDate": "2026-08-12",
+        "currentScore": {
+          "pro": 80,
+          "con": 84
+        },
+        "proposedScore": {
+          "pro": 77,
+          "con": 83
+        },
+        "sections": 5,
+        "moves": 18
+      }
+    }
+  ],
+  "exactProductionPaths": [
+    "src/data/debates.js",
+    "docs/assessment-ledgers/knechtle-dillahunty-christianity-true-2023.json",
+    "docs/assessment-ledgers/tour-swamidass-origin-life-chemistry-2020.json",
+    "docs/assessment-ledgers/plantinga-law-eaan-rational-belief-2010.json",
+    "docs/assessment-ledgers/enoch-bush-objective-moral-truths-2026.json",
+    "docs/assessment-ledgers/hitchens-ramadan-islam-peace-2010.json",
+    "docs/assessment-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json",
+    "docs/assessment-ledgers/turek-hitchens-god-existence-2008.json",
+    "docs/assessment-ledgers/craig-harris-moral-foundations-2011.json",
+    "docs/assessment-ledgers/craig-shook-existence-god-2008.json",
+    "docs/assessment-ledgers/horn-oconnor-god-existence-2020.json",
+    "debate/craig-harris-moral-foundations-2011/index.html",
+    "debate/craig-shook-existence-god-2008/index.html",
+    "debate/enoch-bush-objective-moral-truths-2026/index.html",
+    "debate/hitchens-ramadan-islam-peace-2010/index.html",
+    "debate/horn-oconnor-god-existence-2020/index.html",
+    "debate/knechtle-dillahunty-christianity-true-2023/index.html",
+    "debate/oconnor-baker-hytch-argument-from-reason-2020/index.html",
+    "debate/plantinga-law-eaan-rational-belief-2010/index.html",
+    "debate/tour-swamidass-origin-life-chemistry-2020/index.html",
+    "debate/turek-hitchens-god-existence-2008/index.html",
+    "sitemap.xml",
+    "src/data/debate-summaries.js"
+  ],
+  "validationPlan": {
+    "preflight": [
+      "verify every frozen source hash and exact baseline output hash",
+      "verify all ten production ledger targets remain absent",
+      "replay all ten staged adapters and all 188 move scores",
+      "recompute the exact production-source and SEO projections",
+      "run npm run check before any production write"
+    ],
+    "postWrite": [
+      "verify src/data/debates.js has the exact projected SHA-256 hash",
+      "verify all ten published objects are deeply equal to their frozen final candidates",
+      "verify the other 185 debate objects remain byte-equivalent",
+      "verify all ten production ledgers are byte-identical to their staged adapters",
+      "verify exactly twelve generated SEO outputs changed and 368 remained byte-identical",
+      "run node scripts/validate-debates.mjs",
+      "run node scripts/generate-seo-pages.mjs --check",
+      "run node scripts/validate-corpus-transcripts.mjs",
+      "run npm run check"
+    ],
+    "renderingEvidenceReuse": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/analysis.json",
+      "reason": "The previously passed 20-viewport verification rendered these exact final candidates; post-write deep equality proves production uses the same objects."
+    }
+  },
+  "rollbackBoundary": {
+    "beforeCommit": "If any write or validation fails, restore only the thirteen existing changed paths from their exact frozen baseline bytes and remove only the ten newly created production ledgers; then rerun npm run check.",
+    "existingPathsRestored": 13,
+    "newlyCreatedPathsRemoved": 10,
+    "unrelatedPathsMayBeTouched": false,
+    "commitAllowedOnlyAfterAllChecksPass": true,
+    "pushAllowedOnlyAfterCommitSucceeds": true,
+    "pushFailureHandling": "Keep the verified local commit intact, report that remote publication did not occur, and do not begin another batch."
+  },
+  "authorization": {
+    "productionMutationPlanPreparation": true,
+    "productionMutationExecutionActivation": false,
+    "productionMutationExecution": false,
+    "productionLedgerPublication": false,
+    "productionDebatesChange": false,
+    "generatedSeoPublication": false,
+    "remainingProductionBatches": false
+  }
+}
