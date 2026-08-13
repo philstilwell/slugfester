@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-ten-debate-production-mutation-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation",
+  "status": "ten-debate-production-mutation-failed-closed-and-rolled-back",
+  "recordedAt": "2026-08-13T23:13:47Z",
+  "executionCommit": "1f6bacdb958b2c7a856faa84973ca9c6ef3d050a",
+  "branch": "main",
+  "productionCanary": true,
+  "attempt": 1,
+  "retries": 0,
+  "elapsedSeconds": 6.38,
+  "userAuthorization": {
+    "instruction": "Proceed at your own discretion.",
+    "scopeInterpretation": "Authorize the single atomic ten-debate production mutation under the frozen activation and stop rules.",
+    "directIncrementalCostEstimateUsd": 0,
+    "singleProductionMutationAttemptAuthorized": true,
+    "retryAuthorized": false,
+    "remainingProductionBatchesAuthorized": false
+  },
+  "locks": {
+    "activation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/execution-activation.json",
+      "sha256": "b583df77e001a7a8bddf44d12a5a79bd2cb3d2d461cd8e3626447638d2e3478c"
+    },
+    "mutationPacket": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/mutation-packet.json",
+      "sha256": "d91da8004d921b6c5dd4a0cd720a8d8a28fd007c29a4dd6390ef67245640ed18"
+    },
+    "preparationManifest": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/preparation-manifest.json",
+      "sha256": "65468126a7960752dd8327987bedcb576b2223a9168c18f7b7b87a9b435c2fd0"
+    },
+    "preparationAnalysisBeforeExecution": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/analysis.json",
+      "sha256": "119344452fe619c126b10936aa258a3d13d3d6269f005f25bf314ad8148268a3"
+    }
+  },
+  "preservedControls": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "scoresChangedOutsideFrozenCandidates": 0,
+    "proseChangedOutsideFrozenCandidates": 0,
+    "meteredApiCostUsd": 0
+  },
+  "preflight": {
+    "completeRepositoryCheck": "passed",
+    "activationHashExact": true,
+    "activationCommitAncestor": true,
+    "branchMain": true,
+    "worktreeClean": true,
+    "frozenSourceHashesPassed": 50,
+    "stagedLedgersReplayed": 10,
+    "sectionsReplayed": 51,
+    "movesReplayed": 188,
+    "productionLedgerTargetsAbsent": 10,
+    "productionSourceProjectionExact": true,
+    "currentSeoOutputsExact": 380,
+    "seoChangedOutputProjectionExact": 12
+  },
+  "attemptResult": {
+    "productionWritesPerformedBeforeValidationFailure": 23,
+    "sourceDebateObjectsReplaced": 10,
+    "productionLedgersTemporarilyAdded": 10,
+    "generatedSeoOutputsTemporarilyChanged": 12,
+    "contentChecksCompletedBeforeFailure": {
+      "productionSourceProjectedHashExact": true,
+      "finalCandidatesDeepEqualProduction": 10,
+      "otherDebateObjectsByteEquivalent": 185,
+      "productionLedgersByteIdenticalAndReplayed": 10,
+      "generatedSeoOutputsExact": 380,
+      "generatedSeoOutputsChanged": 12,
+      "generatedSeoOutputsUnchanged": 368
+    },
+    "failedCheck": "working-tree-exact-path-boundary-parser",
+    "externalPostWriteValidatorsStarted": false,
+    "productionAcceptancePassed": false
+  },
+  "failure": {
+    "category": "deterministic-validation-harness-path-normalization-error",
+    "plainEnglish": "The content mutation itself matched every frozen source, ledger, candidate, and generated-output check reached before the failure. The final changed-path boundary check then removed Git's leading status-space from the first line before parsing it, so it read one valid path as ebate/... instead of debate/... and failed closed.",
+    "technicalCause": "The harness called trim() on the complete `git status --porcelain=v1` output and then applied slice(3) to each line. trim() removed the first line's leading worktree-status space; slice(3) consequently removed the first character `d` from the first pathname.",
+    "observedFirstPath": "ebate/craig-harris-moral-foundations-2011/index.html",
+    "expectedFirstPath": "debate/craig-harris-moral-foundations-2011/index.html",
+    "sourceMismatch": false,
+    "candidateMismatch": false,
+    "ledgerMismatch": false,
+    "scoreMismatch": false,
+    "seoMismatch": false,
+    "unexpectedProductionPathActuallyDetected": false
+  },
+  "rollback": {
+    "required": true,
+    "performed": true,
+    "existingProductionPathsRestored": 13,
+    "newProductionLedgersRemoved": 10,
+    "unrelatedPathsTouched": 0,
+    "productionSourceBaselineSha256Restored": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "allFrozenSourceHashesRestored": 50,
+    "productionLedgerTargetsAbsentAfterRollback": 10,
+    "completeRepositoryCheckAfterRollback": "passed",
+    "worktreeCleanAfterRollbackBeforeAuditWrites": true,
+    "productionMutationRemains": false
+  },
+  "requiredRemedy": {
+    "name": "nul-delimited-git-status-path-boundary-parser",
+    "description": "Prepare and freeze a replacement execution plan that changes only the validation harness: read `git status --porcelain=v1 -z`, preserve the two status bytes exactly, and parse NUL-delimited paths without trimming whitespace.",
+    "mandatoryRegression": "The first changed entry must be a worktree-only modification whose porcelain record begins with a space; the parser must return the complete pathname including its first character.",
+    "mutationPayloadMayChange": false,
+    "candidateOrLedgerMayChange": false,
+    "scoreOrProseMayChange": false,
+    "newExecutionActivationRequired": true,
+    "automaticRetryAllowed": false
+  },
+  "authorization": {
+    "failureRecorded": true,
+    "parserRemedyPlanPreparation": false,
+    "replacementExecutionActivation": false,
+    "productionMutationRetry": false,
+    "productionLedgerPublication": false,
+    "productionDebatesChange": false,
+    "generatedSeoPublication": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "noRetryUnderCurrentActivation": true,
+    "separateParserRemedyPlanRequired": true,
+    "replacementActivationRequired": true,
+    "mutationPayloadMustRemainExact": true,
+    "judgmentExecutionForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseRewriteForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "user-decision-on-production-mutation-status-parser-remedy-plan-preparation"
+}
