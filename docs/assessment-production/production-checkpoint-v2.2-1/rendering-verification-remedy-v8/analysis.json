@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v8-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v8",
+  "status": "eighth-replacement-rendering-verification-failed-closed-on-first-viewport-keyboard-measured-load-observation-timeout",
+  "recordedAt": "2026-08-13T19:47:06Z",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "execution": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v8/execution.json"
+  },
+  "decision": {
+    "failedClosed": true,
+    "retryPerformed": false,
+    "timeoutExtended": false,
+    "partialStatePromotionPermitted": false,
+    "priorInMemoryScreenshotReusePermitted": false,
+    "renderingGatePassed": false,
+    "candidateRenderingDefectEstablished": false,
+    "candidateHttpFailureEstablished": false,
+    "browserControllerLoadObservationFailureEstablished": true,
+    "automaticControllerRepairPermitted": false,
+    "renderingRepairPermitted": false,
+    "validatorMigrationPermitted": false,
+    "productionLedgerPublicationPermitted": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "gate": {
+    "activationSourceHashReplayPassedBeforeExecution": true,
+    "packetHashReplayPassedBeforeExecution": true,
+    "expectedDebates": 10,
+    "attemptedDebates": 1,
+    "passingDebateEvidenceSets": 0,
+    "gatePromotedDebates": 0,
+    "expectedViewportResults": 20,
+    "attemptedViewportResults": 1,
+    "passingViewportEvidenceResults": 0,
+    "gatePromotedViewportResults": 0,
+    "failedViewportResults": 1,
+    "unattemptedViewportResults": 19,
+    "expectedScreenshots": 40,
+    "pointerScreenshotCapturesCompletedInMemory": 2,
+    "persistedScreenshots": 0,
+    "persistedViewportResults": 0,
+    "browserEvidenceCaptureContractPassed": false,
+    "candidateRenderingDefectEstablished": false,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "directCostUsd": 0
+  },
+  "diagnosis": {
+    "observed": "Debate 50 desktop completed the full in-app pointer phase in memory, including collapsed and open JPEG capture. The Chrome keyboard phase completed its diagnostic bootstrap, and the local server returned the measured candidate document plus all ten requested assets with HTTP 200 responses. Browser control nevertheless stopped while waiting for the measured page's load completion, before readiness or keyboard interaction. Because the runner persists only a fully passing viewport, it wrote no evidence directory or screenshot.",
+    "classification": "chrome-extension-keyboard-measured-page-load-observation-timeout-after-successful-local-http-delivery",
+    "established": [
+      "The activation, all 214 frozen source hashes, and all 10 packet hashes passed before browser execution.",
+      "The frozen explicit order began with Debate 50 desktop and no later viewport was attempted.",
+      "The in-app pointer phase reached direct readiness, content and layout inspection, collapsed capture, native pointer opening, open capture, and runtime collection in memory.",
+      "The local server observed 24 requests and returned HTTP 200 for all of them, including both pointer pages, both keyboard pages, and the measured candidate assets.",
+      "The Chrome keyboard measured page did not report controller-level load completion, so readiness, Enter, Space, runtime collection, and evidence assembly did not occur.",
+      "No retry, timeout extension, transport substitution, repair, validator change, score pass, model call, or production mutation was performed.",
+      "Both browser viewport overrides were reset, all run-owned tabs were closed, and the local server stopped with port 4196 closed."
+    ],
+    "notEstablished": [
+      "No candidate rendering or content defect was established.",
+      "No candidate HTTP failure was established; all observed local responses were HTTP 200.",
+      "No complete viewport passed because the keyboard phase did not finish and the runner never assembled its 38 Boolean checks.",
+      "No screenshot validity, screenshot hash, browser-major-version match, or runtime-count conclusion may be promoted from the in-memory partial phase.",
+      "No conclusion is permitted for Debate 50 mobile or any later debate because they were not attempted."
+    ]
+  },
+  "cleanup": {
+    "browserTabsRemaining": 0,
+    "inAppViewportOverrideReset": true,
+    "chromeViewportOverrideReset": true,
+    "localServerStopped": true,
+    "localServerPortClosed": true,
+    "evidenceRootAbsent": true,
+    "failedViewportEvidenceAbsent": true,
+    "persistedAuditEvidenceViewportResults": 0,
+    "persistedAuditEvidenceScreenshots": 0
+  },
+  "preservedControls": {
+    "judgmentModel": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "chatgpt-subscription",
+    "scoreBlindness": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentExecutionPerformed": false,
+    "scoresReadOrChanged": false
+  },
+  "authorization": {
+    "retry": false,
+    "timeoutExtension": false,
+    "alternativeNavigationMethod": false,
+    "automaticPartialEvidenceReuse": false,
+    "renderingRepair": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-remedy-v9-plan-preparation"
+}
