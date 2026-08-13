@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-192-publication-repair-execution-activation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-192-publication-repair-1",
+  "status": "frozen-four-isolated-seven-field-debate-192-publication-repair-contexts-authorized",
+  "frozenAt": "2026-08-13T01:36:13.000Z",
+  "checkpointCommit": "d55b1590ffd2aaaf91a6226a606a4bd712084d5e",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "modelInputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/manual.md"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/packets/packet-0.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/schemas/packet-0.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-0.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/validations/packet-0.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/provenance/packet-0.json",
+      "writableFields": [
+        "moveProse.pro-probability-needs-pathway.critique",
+        "moveProse.pro-receding-explanatory-target.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 16019
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/packets/packet-1.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/schemas/packet-1.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-1.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/validations/packet-1.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/provenance/packet-1.json",
+      "writableFields": [
+        "moveProse.pro-cumulative-unfavorable-steps.critique",
+        "moveProse.con-independent-origin-falsifier.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 16193
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/packets/packet-2.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/schemas/packet-2.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-2.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/validations/packet-2.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/provenance/packet-2.json",
+      "writableFields": [
+        "moveProse.pro-recurrence-without-mechanism.critique",
+        "moveProse.pro-laboratory-work-not-pathway.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 17382
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/packets/packet-3.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/schemas/packet-3.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-3.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/validations/packet-3.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/provenance/packet-3.json",
+      "writableFields": [
+        "moveProse.con-chemical-nonzero-possibility.critique"
+      ],
+      "correctedFieldCount": 1,
+      "copiedInputBytes": 10895
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 4,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "furtherCorrectionContextsMaximum": 0,
+    "timeoutMsPerContext": 480000,
+    "absoluteGateTimeoutMs": 1920000,
+    "maximumParallelContexts": 2,
+    "rampPhases": [
+      {
+        "phase": "repair-operational-one",
+        "maximumParallelContexts": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": "repair-ramp-two",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          1,
+          2
+        ],
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": "repair-final-one",
+        "maximumParallelContexts": 1,
+        "contextIndexes": [
+          3
+        ],
+        "expansionRequiresAllValid": false
+      }
+    ],
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "modelAuthoredScores": 0,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ]
+  },
+  "isolation": {
+    "oneRepairPacketPerContext": true,
+    "maximumWritableFieldsPerContext": 2,
+    "onlyDiagnosedCritiquesWritable": true,
+    "acceptedFieldsUnavailableAsOutputFields": true,
+    "scoresUnavailableAsOutputFields": true,
+    "otherDebatesUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "participantJudgmentWasScoreBlind": true,
+    "retries": 0,
+    "furtherCorrectionContexts": 0
+  },
+  "executionEnvironment": {
+    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "codexCliVersion": "codex-cli 0.147.0-alpha.6.5",
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "isolatedTemporaryCodexHomes": true,
+    "isolatedTemporaryWorkingDirectories": true
+  },
+  "costEstimate": {
+    "authentication": "ChatGPT subscription",
+    "meteredApiCostUsdMaximum": 0,
+    "transcriptionCostUsdMaximum": 0,
+    "expectedWallMinutes": [
+      4,
+      16
+    ],
+    "maximumWallMinutes": 32
+  },
+  "authorization": {
+    "repairModelContexts": true,
+    "deterministicRepairValidation": true,
+    "deterministicMergeAndCompleteDebateValidationIfAllRepairsPass": true,
+    "retry": false,
+    "furtherCorrectionModelExecution": false,
+    "eightContextResumption": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "execution": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/model-execution.json",
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/analysis.json",
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/merged/debate-192.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/merge-audit.json"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-0.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/validations/packet-0.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/provenance/packet-0.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-1.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/validations/packet-1.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/provenance/packet-1.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-2.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/validations/packet-2.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/provenance/packet-2.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-3.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/validations/packet-3.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/provenance/packet-3.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/merged/debate-192.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/complete-debate-validation.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/merge-audit.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/model-execution.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/analysis.json"
+  ],
+  "sourceHashes": {
+    "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md": "9de47eb463a400c6435d5347427e86e7499305a04178fdb1b4346c980e654728",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-192.json": "720a7db3f05a256df331447d2bc6105d7d454de579b51aaa35c8a872f2c0abb4",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/analysis.json": "eed225005786bb3e1cc3319af07774117e43967e30692835dc910a8eab3c24fa",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/failure-diagnosis.json": "1a65ca454a45e3da3f995fa325895bd54c5d6500b3f0fb86eadec08d182be252",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/model-execution.json": "312ca00c27360dfdd814c7c44d9fd718df645ecb8178b0d5f7db4a64fc419543",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/outputs/debate-192.json": "21c79031428b7114e19ad6ea8c09aafa2699742973295b15336a37cb46a763f0",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/manual.md": "1fc8a3225522e0f8f6aff50e54b8b8fa72b964c06be43f7bdac33ed83ff89966",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/packets/packet-0.json": "9ec65475c1b4afb70e5bf838584970a6a4bf3ab12c884cba0d8e390e97067a4e",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/packets/packet-1.json": "7aa48aafad67eb8617809b0dd2c1b4e3b57c2b63caa704dd03ec59240e732c3a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/packets/packet-2.json": "7ac4c99ed8c72fae2aeb1d395e140ddc43c9c8c028fc53ae68e48231b2554460",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/packets/packet-3.json": "430a96b4224bc89c8033147073af9aab3bbf685789ae8e62fdc6e5d67df59211",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/preparation-manifest.json": "bc757b904cdd8e5e834632f4d655f0efc7edb205b3ce9085456a0942ef5ddb9a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/schemas/packet-0.schema.json": "06911fa04fb4a6eef911b2d75aba9d7671bc27ed70312b0c64b4b116433ee6f5",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/schemas/packet-1.schema.json": "904cfc7aa18411bd061a6b75bcbc4502084c38cf8ffdf2a8dc1564591b698315",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/schemas/packet-2.schema.json": "38f749de7abe13937dd195a9bc0a9337408a12d584098dda2eb20b77dc2996eb",
+    "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/schemas/packet-3.schema.json": "4205da4513d7657ea1ea6ac71ab3b5f610964a86ebe4cc4d675461a9ec05b4dd",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "scripts/analyze-assessment-production-checkpoint-v2.2-debate-192-repair.mjs": "658eb87205140297edea79d43414f4f9dc974c846f4db5f4a2b70f7f4dcb0a86",
+    "scripts/lib/assessment-production-checkpoint-v2.2-debate-192-repair.mjs": "a3b3f63428d84345c88e976e905af97a7eaa99e174177c2b726d4161552230c9",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication-resumption.mjs": "721e60ae753210aa0bb25982bd91ab94e96ee0fc34ea0dfd59179a8aa10c83ea",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs": "e300714ea30b3056864ada9fb1e03be429465c8fd26aeb4c1fb49055a6d908ff",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication.mjs": "f06bb1af92c9b79f78277657f42fda7f4f70c555dcc2eec1f12b170902ac24fd",
+    "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-checkpoint-v2.2-debate-192-repair.mjs": "bb0849f13301d301a2ccd9dad46b2162da02b51045072a0863dc96c491fe517f",
+    "scripts/preregister-assessment-production-checkpoint-v2.2-debate-192-repair.mjs": "a7d860f83360ba7c20651ca9e9cc98e8e5208496434874cf9ff57d167e231ccf",
+    "scripts/run-assessment-production-checkpoint-v2.2-debate-192-repair.mjs": "7d26b508ab6b3dc9fc7bc65c21c098866cf07ecf46666d76939538aba6d86caa",
+    "scripts/test-assessment-production-checkpoint-v2.2-debate-192-repair.mjs": "051d1e011221e49ddfe352cc907e2600454a7963222cb0020053d7b268d6be4e"
+  }
+}
