@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-resumption-2-model-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-resumption-2",
+  "status": "production-checkpoint-v2.2-publication-resumption-2-complete-with-failure",
+  "gateStartedAt": "2026-08-13T01:44:42.042Z",
+  "gateCompletedAt": "2026-08-13T01:48:34.745Z",
+  "contextsPlanned": 8,
+  "contextsAttempted": 1,
+  "contextsUnattempted": 7,
+  "unattemptedContextIndexes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "validContexts": 0,
+  "invalidContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "correctionContexts": 0,
+  "timeoutExtensions": 0,
+  "maximumObservedConcurrency": 1,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 232702,
+  "aggregateModelElapsedMs": 232686,
+  "meanElapsedMs": 232686,
+  "rampPhases": [
+    {
+      "phase": "resumption-2-operational-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "resumption-2-ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    },
+    {
+      "phase": "resumption-2-steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "originalContextIndex": 2,
+      "debateNumber": "129",
+      "debateId": "plantinga-law-eaan-rational-belief-2010",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "correctionContextCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-13T01:44:42.043Z",
+      "completedAt": "2026-08-13T01:48:34.729Z",
+      "elapsedMs": 232686,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "ownDebateScoresImmutable": true,
+      "copiedInputBytes": 197334,
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "e515c3dd6ca1dd4a1a2f133aa7f573d68ba5a452952cb4b3658420014dcbdd41",
+      "stderrSha256": "a2b2b78880f83aa22933a8dfd9526b14ad1058e35ba8a7e2090ddf087c141599",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "outputWritten": true,
+      "outputSha256": "93bedb399401ccab54a990fd4b90de916ba276c03f2c6429d3243403b58456fb",
+      "validationWritten": true,
+      "validationSha256": "7a5b4dc5fd0f9ebd900b0753de6cab74383f3b902c5f181d7b602277a9ca4f23",
+      "provenanceWritten": true,
+      "provenanceSha256": "413cd9f8d93e84f334cbeb7964fa611273307397715cba766aba8d4763e2dbbb",
+      "validationSummary": null,
+      "validationMessage": "Error: pro-rational-acceptance-distinction: critique outside 105–130 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateCheckpointV22PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs:99:5)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-checkpoint-v2.2-publication-resumption-2.mjs:63:33)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-checkpoint-v2.2-publication-resumption-2.mjs:76:161)\n    at async Promise.all (index 0)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-checkpoint-v2.2-publication-resumption-2.mjs:76:218)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-checkpoint-v2.2-publication-resumption-2.mjs:80:24"
+    }
+  ],
+  "participantJudgmentWasScoreBlind": true,
+  "ownDebateScoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "correctionModelExecution": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}

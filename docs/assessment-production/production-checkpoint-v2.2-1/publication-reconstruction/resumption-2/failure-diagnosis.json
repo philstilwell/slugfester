@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-resumption-2-failure-diagnosis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-resumption-2",
+  "status": "diagnosed-resumption-2-operational-context-two-critique-word-overruns",
+  "developmentValidationOnly": false,
+  "productionCanary": true,
+  "stagingOnly": true,
+  "failedContext": {
+    "contextIndex": 0,
+    "originalContextIndex": 2,
+    "debateNumber": "129",
+    "debateId": "plantinga-law-eaan-rational-belief-2010",
+    "elapsedMinutes": 3.88,
+    "model": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "correctionContextCount": 0,
+    "transportPassed": true,
+    "outputSha256": "93bedb399401ccab54a990fd4b90de916ba276c03f2c6429d3243403b58456fb"
+  },
+  "rampDisposition": {
+    "stoppedBeforeExpansion": true,
+    "contextsAttempted": 1,
+    "contextsUnattempted": 7,
+    "unattemptedDebates": [
+      "40",
+      "25",
+      "104",
+      "22",
+      "10",
+      "167",
+      "122"
+    ],
+    "retries": 0,
+    "correctionContexts": 0
+  },
+  "failureBoundary": {
+    "failedFields": [
+      {
+        "path": "moveProse.pro-rational-acceptance-distinction.critique",
+        "words": 135,
+        "characters": 1064,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 5
+      },
+      {
+        "path": "moveProse.con-content-conceptual-constraints.critique",
+        "words": 132,
+        "characters": 1022,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 2
+      }
+    ],
+    "failedFieldCount": 2,
+    "excessWordsTotal": 7,
+    "critiquesPassingUnchanged": 15,
+    "critiquesWithCharacterFailure": 0,
+    "critiquesWithSentenceLabelOrPunctuationFailure": 0,
+    "originalValidationMessage": "pro-rational-acceptance-distinction: critique outside 105–130 words"
+  },
+  "diagnosticReplay": {
+    "persistedCorrectedOutput": false,
+    "originalOutputModified": false,
+    "purpose": "prove-all-other-output-fields-pass-after-bounded-in-memory-removal-of-seven-excess-words",
+    "hypotheticalWritableFields": [
+      "moveProse.pro-rational-acceptance-distinction.critique",
+      "moveProse.con-content-conceptual-constraints.critique"
+    ],
+    "hypotheticalWordsRemoved": 7,
+    "result": {
+      "status": "passed",
+      "debateNumber": "129",
+      "moves": 17,
+      "critiques": 17,
+      "minimumCritiqueCharacters": 972,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 3,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "preservedControls": {
+    "participantJudgmentWasScoreBlind": true,
+    "scoresRecalculated": false,
+    "scoresChanged": false,
+    "modelAuthoredScores": 0,
+    "retries": 0,
+    "correctionModelContexts": 0,
+    "meteredApiCostUsd": 0,
+    "productionMutation": false
+  },
+  "prospectiveRecoveryOnly": {
+    "currentlyAuthorized": false,
+    "repairPacketMaximumWritableFields": 2,
+    "proposedRepairPackets": 1,
+    "proposedWritableFields": [
+      "moveProse.pro-rational-acceptance-distinction.critique",
+      "moveProse.con-content-conceptual-constraints.critique"
+    ],
+    "proposedModel": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription"
+    },
+    "proposedAttemptsMaximum": 1,
+    "proposedRetriesMaximum": 0,
+    "requiredAfterRepair": [
+      "revalidate-the-complete-debate-129-publication-output",
+      "freeze-a-separate-seven-context-resumption-manifest-only-if-debate-129-passes",
+      "retain-production-mutation-and-publication-finalization-stop-rules"
+    ]
+  },
+  "authorization": {
+    "repairPacketPreparation": false,
+    "repairModelExecution": false,
+    "sevenContextResumption": false,
+    "retry": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "artifacts": {
+    "activation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/execution-activation.json",
+      "sha256": "e74ba8c7567eaa7eb3cffb0779f7b83a0421d664bf5ab75bb3687ded835ee6ac"
+    },
+    "execution": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/model-execution.json",
+      "sha256": "0dba350ecdcaaec580a012d11a7b09773c8b8693770c828be1478ae721a75510"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/analysis.json",
+      "sha256": "90ea5e61b05689241d7c0b0cad5297dda5437553a67d74c1b33246426fa3f8e8"
+    },
+    "output": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/outputs/debate-129.json",
+      "sha256": "93bedb399401ccab54a990fd4b90de916ba276c03f2c6429d3243403b58456fb"
+    },
+    "packet": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-129.json",
+      "sha256": "daaf86f516e07becb98ce93279ab2488de5ae190fd35c050f64dfd21408f9a26"
+    },
+    "validation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/validations/debate-129.json",
+      "sha256": "7a5b4dc5fd0f9ebd900b0753de6cab74383f3b902c5f181d7b602277a9ca4f23"
+    },
+    "provenance": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/provenance/debate-129.json",
+      "sha256": "413cd9f8d93e84f334cbeb7964fa611273307397715cba766aba8d4763e2dbbb"
+    }
+  },
+  "nextRequiredAction": "user-decision-on-prospective-one-packet-two-field-debate-129-repair-and-seven-context-resumption-plan"
+}
