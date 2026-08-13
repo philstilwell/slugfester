@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v2-controller-diagnosis",
+  "status": "chrome-controller-retained-with-frozen-css-viewport-calibration-and-clean-load-phases",
+  "recordedAt": "2026-08-13T15:35:00.000Z",
+  "developmentDiagnosticOnly": true,
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "screenshotsCaptured": 0,
+  "selectedController": {
+    "name": "Google Chrome via ChatGPT browser extension",
+    "reason": "It continued to provide trusted native pointer, Enter, and Space transitions. Synthetic calibration established fixed controller inputs that produced the exact required CSS viewport dimensions.",
+    "nativeKeyboardStateTransitionsPassed": true,
+    "exactDesktopCssViewportPassed": true,
+    "exactMobileCssViewportPassed": true,
+    "runtimeFailures": 0
+  },
+  "failedRemedyV1Contract": {
+    "requestedDesktopControllerInput": { "width": 1440, "height": 1000 },
+    "observedCssViewport": { "width": 1800, "height": 1250 },
+    "rootCause": "The controller input represented outer-window pixels while the runner treated it as the page's CSS viewport.",
+    "contentOrStylesheetRegressionEstablished": false
+  },
+  "remedyV2Contract": {
+    "adaptiveCalibrationDuringExecution": false,
+    "exactObservedCssViewportRequired": true,
+    "pointerAndKeyboardUseSeparateFreshTabs": true,
+    "reloadUsed": false,
+    "collapsedStatesSerializedSeparately": true,
+    "layoutWidthsComparedToObservedInnerWidth": true,
+    "failureStopsWithoutRetryOrEvidencePersistence": true
+  },
+  "productionMutationPerformed": false
+}

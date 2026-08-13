@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v2-viewport-calibration",
+  "status": "exact-css-viewport-controller-inputs-established-synthetically",
+  "recordedAt": "2026-08-13T15:35:00.000Z",
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "screenshotsCaptured": 0,
+  "controller": "Google Chrome via ChatGPT browser extension",
+  "browserUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+  "fixtureUrl": "http://127.0.0.1:4189/docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/synthetic/preflight.html",
+  "diagnosis": "The Chrome controller input maps to outer-window pixels. In this browser session the page used a devicePixelRatio of approximately 0.8, so the uncalibrated 1440 input yielded an observed window.innerWidth of 1800. Frozen smaller controller inputs yielded the exact required CSS viewports.",
+  "measurements": {
+    "desktopUncalibrated": {
+      "targetCssViewport": { "width": 1440, "height": 1000 },
+      "controllerInput": { "width": 1440, "height": 1000 },
+      "observed": {
+        "innerWidth": 1800,
+        "innerHeight": 1250,
+        "outerWidth": 1440,
+        "outerHeight": 1000,
+        "devicePixelRatio": 0.800000011920929,
+        "visualViewportWidth": 1800,
+        "visualViewportHeight": 1250,
+        "documentScrollWidth": 1800
+      },
+      "exactTargetMatch": false
+    },
+    "mobileUncalibrated": {
+      "targetCssViewport": { "width": 390, "height": 844 },
+      "controllerInput": { "width": 390, "height": 844 },
+      "observed": {
+        "innerWidth": 487,
+        "innerHeight": 1055,
+        "outerWidth": 390,
+        "outerHeight": 844,
+        "devicePixelRatio": 0.800000011920929,
+        "visualViewportWidth": 487.5,
+        "visualViewportHeight": 1055,
+        "documentScrollWidth": 487
+      },
+      "exactTargetMatch": false
+    },
+    "desktopCalibrated": {
+      "targetCssViewport": { "width": 1440, "height": 1000 },
+      "controllerInput": { "width": 1152, "height": 800 },
+      "observed": {
+        "innerWidth": 1440,
+        "innerHeight": 1000,
+        "outerWidth": 1152,
+        "outerHeight": 800,
+        "devicePixelRatio": 0.800000011920929,
+        "visualViewportWidth": 1440,
+        "visualViewportHeight": 1000,
+        "documentScrollWidth": 1440
+      },
+      "exactTargetMatch": true
+    },
+    "mobileCalibrated": {
+      "targetCssViewport": { "width": 390, "height": 844 },
+      "controllerInput": { "width": 312, "height": 675 },
+      "observed": {
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "outerWidth": 312,
+        "outerHeight": 675,
+        "devicePixelRatio": 0.800000011920929,
+        "visualViewportWidth": 390,
+        "visualViewportHeight": 843.75,
+        "documentScrollWidth": 390
+      },
+      "exactTargetMatch": true
+    }
+  },
+  "frozenExecutionRule": "Use the recorded controller inputs without adaptive recalibration. Fail closed before preserving a viewport result if any measured pointer, open, or keyboard window.innerWidth/window.innerHeight differs from the target CSS viewport.",
+  "productionMutationPerformed": false
+}
