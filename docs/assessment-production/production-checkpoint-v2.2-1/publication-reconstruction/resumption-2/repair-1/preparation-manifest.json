@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-129-publication-repair-preparation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-129-publication-repair-1",
+  "status": "one-isolated-two-field-debate-129-publication-repair-packet-prepared-and-frozen",
+  "preparedAt": "2026-08-13T03:00:20.248Z",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "inputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/manual.md",
+    "diagnosis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/failure-diagnosis.json",
+    "failedExecution": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/model-execution.json",
+    "failedAnalysis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/analysis.json",
+    "immutableBaseOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/outputs/debate-129.json",
+    "publicationPacket": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-129.json"
+  },
+  "context": {
+    "contextIndex": 0,
+    "debateNumber": "129",
+    "debateId": "plantinga-law-eaan-rational-belief-2010",
+    "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/packet.json",
+    "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/schema.json",
+    "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/repair-output.json",
+    "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/repair-validation.json",
+    "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/provenance.json",
+    "writableFields": [
+      "moveProse.pro-rational-acceptance-distinction.critique",
+      "moveProse.con-content-conceptual-constraints.critique"
+    ],
+    "copiedInputBytes": 15589
+  },
+  "policy": {
+    "contexts": 1,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "furtherCorrectionContextsMaximum": 0,
+    "timeoutMsPerContext": 480000,
+    "maximumParallelContexts": 1,
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "modelAuthoredScores": 0
+  },
+  "artifacts": {
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/merged/debate-129.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/merge-audit.json"
+  },
+  "totals": {
+    "modelContexts": 1,
+    "repairPackets": 1,
+    "writableFields": 2,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0
+  },
+  "authorization": {
+    "executionActivationPreparation": true,
+    "repairModelExecution": false,
+    "deterministicMergeAndFullValidation": false,
+    "sevenContextResumption": false,
+    "retry": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-production-checkpoint-v2.2-debate-129-publication-repair-1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-production-checkpoint-v2.2-debate-129-publication-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-checkpoint-v2.2-1-debate-129-publication-repair-1"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "129"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "plantinga-law-eaan-rational-belief-2010"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-rational-acceptance-distinction",
+        "con-content-conceptual-constraints"
+      ],
+      "properties": {
+        "pro-rational-acceptance-distinction": {
+          "type": "string",
+          "minLength": 880
+        },
+        "con-content-conceptual-constraints": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}
