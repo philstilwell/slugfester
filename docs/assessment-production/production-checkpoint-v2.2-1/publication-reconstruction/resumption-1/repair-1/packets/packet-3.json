@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-192-publication-repair-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-192-publication-repair-1",
+  "packetIndex": 3,
+  "debateNumber": "192",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/outputs/debate-192.json",
+  "publicationPacket": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-192.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-chemical-nonzero-possibility.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-chemical-nonzero-possibility.critique",
+      "moveId": "con-chemical-nonzero-possibility",
+      "originalCritique": "Strongest feature: Swamidass confronts the modal question directly and acknowledges that the proposed probability might be extraordinarily small, avoiding any unsupported inference that natural abiogenesis is frequent, expected, or experimentally reconstructed. Principal limitation: Finite nonzero probabilities for individual chemical reactions do not establish a nonzero accessible probability for an organized, path-dependent sequence producing life, especially when compatibility, boundary conditions, dependencies, assembly, preservation, and pathway continuity remain unshown. Live burden: Swamidass must demonstrate that at least one coherent life-producing sequence belongs to the physically accessible event space rather than assuming that component reaction possibility composes into whole-system possibility. Locked score: The supplied band reflects central relevance and partial modal contact but is constrained by a major composition gap, radically overstated warrant, unstable terminology, missing qualification, and nonresponsiveness to four decisive chemical requirements.",
+      "originalWords": 131,
+      "originalCharacters": 1089,
+      "lockedMove": {
+        "moveId": "con-chemical-nonzero-possibility",
+        "sectionId": "section-chemical-requirements",
+        "side": "con",
+        "speaker": "S. Joshua Swamidass",
+        "moveKind": "reply",
+        "proposition": "Natural abiogenesis has a probability greater than zero because chemical reactions have finite nonzero probabilities and chemical reactions are sufficient in principle for life to arise.",
+        "importance": 3,
+        "finalScore": 64,
+        "scoreBand": "weak 50–64",
+        "displayTime": "46:48",
+        "sourceSpan": {
+          "startEvent": 1295,
+          "endEvent": 1309,
+          "startMs": 2808000,
+          "endMs": 2852680
+        },
+        "sourceExcerpt": "think the reason why we know it's greater than zero and I think why Jim Tor agrees is because of how thermodynamics works. It's um there's like a finite nonzero probability of any chemical reaction happening. And I don't I think all you need is chemical reactions for life to arise. And so, um, I mean, it could be like, you know, a one, like it could be 0.00 with like a thousand",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-pro-possibility-versus-pathway"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-chemical-feasibility-standard",
+            "pro-probability-needs-pathway",
+            "pro-four-classes-and-integration",
+            "pro-cumulative-unfavorable-steps",
+            "pro-laboratory-work-not-pathway"
+          ],
+          "components": [
+            {
+              "componentId": "con-chemical-nonzero-possibility-component-01",
+              "targetMoveId": "pro-chemical-feasibility-standard",
+              "text": "Natural possibility requires enough chemical substance to exceed a bare modal assertion.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-chemical-nonzero-possibility-component-02",
+              "targetMoveId": "pro-probability-needs-pathway",
+              "text": "A nonzero probability claim must specify molecule formation, assembly, and cell formation.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-chemical-nonzero-possibility-component-03",
+              "targetMoveId": "pro-four-classes-and-integration",
+              "text": "The argument must account for all required molecular classes and their integration.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-chemical-nonzero-possibility-component-04",
+              "targetMoveId": "pro-cumulative-unfavorable-steps",
+              "text": "Finite reaction probabilities must address cumulative unfavorable multistep chemistry.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-chemical-nonzero-possibility-component-05",
+              "targetMoveId": "pro-laboratory-work-not-pathway",
+              "text": "In-principle chemistry must connect to a plausible prebiotic pathway rather than laboratory possibility alone.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts the modal feasibility standard through finite reaction probability, but it does not answer any pathway, integration, cumulative-step, or environmental demand.",
+          "responsivenessWithinClass": {
+            "value": 71,
+            "rationale": "It is a partial answer contacting the primary modal component while leaving four decisive chemical components unaddressed."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "It is a partial answer contacting the primary modal component while leaving four decisive chemical components unaddressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The nonzero conclusion is clear, but “any chemical reaction” and “all you need” blur individual-reaction feasibility with an entire organized sequence."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "radically-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Uncertainty about magnitude is acknowledged, but certainty of nonzero abiogenesis does not follow merely from finite probabilities for individual reactions."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A complete origin sequence may be physically constrained, path-dependent, or unavailable despite nonzero probabilities for component reactions.",
+          "decisiveQualification": "Chemical sufficiency in principle still requires showing that a coherent life-producing sequence belongs to the accessible event space."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 58,
+            "rationale": "The inference commits a composition gap from finite probabilities of individual reactions to a nonzero probability for the entire organized pathway."
+          },
+          "evidenceWarrant": {
+            "value": 50,
+            "rationale": "Thermodynamics is invoked generally, but no accessible sequence, boundary conditions, dependencies, or assembly mechanism supports the conclusion."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central possibility-versus-pathway bridge, though only at the modal level."
+          },
+          "representationalCharity": {
+            "value": 61,
+            "rationale": "The response recognizes the opponent's probability concern but omits its strongest joint-feasibility qualification."
+          }
+        },
+        "evidenceBasis": "Swamidass grounds nonzero abiogenesis in finite nonzero reaction probabilities and the premise that chemical reactions are sufficient in principle for life.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

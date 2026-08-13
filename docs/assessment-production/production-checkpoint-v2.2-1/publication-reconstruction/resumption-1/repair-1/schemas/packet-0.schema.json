@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-production-checkpoint-v2.2-debate-192-publication-repair-0",
+  "title": "Slugfester production checkpoint v2.2 Debate 192 bounded publication repair packet 0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-production-checkpoint-v2.2-debate-192-publication-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-checkpoint-v2.2-1-debate-192-publication-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 0
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "192"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "tour-swamidass-origin-life-chemistry-2020"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-probability-needs-pathway",
+        "pro-receding-explanatory-target"
+      ],
+      "properties": {
+        "pro-probability-needs-pathway": {
+          "type": "string",
+          "minLength": 880
+        },
+        "pro-receding-explanatory-target": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}

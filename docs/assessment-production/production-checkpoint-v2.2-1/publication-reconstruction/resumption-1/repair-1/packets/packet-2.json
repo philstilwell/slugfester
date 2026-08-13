@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-192-publication-repair-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-192-publication-repair-1",
+  "packetIndex": 2,
+  "debateNumber": "192",
+  "debateId": "tour-swamidass-origin-life-chemistry-2020",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/outputs/debate-192.json",
+  "publicationPacket": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-192.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-recurrence-without-mechanism.critique",
+      "moveProse.pro-laboratory-work-not-pathway.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-recurrence-without-mechanism.critique",
+      "moveId": "pro-recurrence-without-mechanism",
+      "originalCritique": "Strongest feature: Tour makes a precise and charitable distinction between evidence that origin occurred independently more than once and an explanation of how any first life formed, conceding recurrence while preserving the mechanistic burden. Principal limitation: The reply can sound as though recurrence leaves the problem no easier, although independent repetition would materially constrain extreme-rarity hypotheses and strengthen the inference that some natural environments make origin accessible. Live burden: Tour must explicitly incorporate that probabilistic update while maintaining that frequency evidence cannot identify molecular precursors, reaction ordering, environmental conditions, organization, or causal pathway continuity. Locked score: The supplied band is warranted by outstanding coherence, responsiveness, representational charity, calibration, and central burden contact, with only the limited need to articulate more fully how recurrence evidence changes accessibility judgments before mechanism becomes known.",
+      "originalWords": 131,
+      "originalCharacters": 1041,
+      "lockedMove": {
+        "moveId": "pro-recurrence-without-mechanism",
+        "sectionId": "section-empirical-tests",
+        "side": "pro",
+        "speaker": "James Tour",
+        "moveKind": "reply",
+        "proposition": "Finding independently arisen life elsewhere would establish recurrence but would not explain how first life formed or resolve the underlying chemical mechanism.",
+        "importance": 3,
+        "finalScore": 93,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "33:15",
+        "sourceSpan": {
+          "startEvent": 939,
+          "endEvent": 965,
+          "startMs": 1995919,
+          "endMs": 2059359
+        },
+        "sourceExcerpt": "how that life formed. That doesn't change the hardness of the question because a lot of people say that the life we see here on earth was seated by some other place. But all we're talking about is the origin of first life. Now you want to say it was seed it it originated twice. If you want to say it was originate twice that doesn't that doesn't any easier for me. Doesn't make it",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-empirical-discriminators"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-independent-origin-falsifier"
+          ],
+          "components": [
+            {
+              "componentId": "pro-recurrence-without-mechanism-component-01",
+              "targetMoveId": "con-independent-origin-falsifier",
+              "text": "A demonstrably independent second origin would materially update natural accessibility.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-recurrence-without-mechanism-component-02",
+              "targetMoveId": "con-independent-origin-falsifier",
+              "text": "Recurrence would explain the chemical mechanism by which first life formed.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply diagnoses a limit: recurrence can update frequency but does not answer the how-question or reduce the chemical explanatory burden.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "It expressly identifies the inference’s limitation and states the defeating consequence for mechanistic explanation."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It expressly identifies the inference’s limitation and states the defeating consequence for mechanistic explanation."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between evidence of recurrence and explanation of mechanism is clear and appropriately limited."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The reply concedes a possible naturalistic explanation while correctly limiting what recurrence alone would establish."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Independent recurrence would strongly update the probability that abiogenesis is naturally accessible.",
+          "decisiveQualification": "That update would not itself identify the chemical pathway or explain first life’s formation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central empirical-discriminator bridge’s reach while conceding its recurrence evidence."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Tour explicitly says a second origin would not make the formation question easier and distinguishes recurrence from explaining first life’s origin.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-laboratory-work-not-pathway.critique",
+      "moveId": "pro-laboratory-work-not-pathway",
+      "originalCritique": "Strongest feature: Tour applies an important pathway-continuity test to laboratory progress, distinguishing controlled multistep synthesis from evidence that compatible reactions could proceed through plausible prebiotic conditions toward integrated living organization. Principal limitation: The field-wide claim that targets continually recede is materially overstated, because controlled experiments can establish causal capacities, remove bottlenecks, constrain environments, and contribute genuine partial progress without reproducing the complete historical pathway. Live burden: Tour must grade laboratory findings by the specific uncertainties they resolve and then separately examine whether their reagents, interventions, purification, sequencing, and conditions can be joined environmentally. Locked score: The supplied band recognizes strong central relevance, useful ecological scrutiny, explicit allowance for future success, and meaningful contact with progress claims, while reflecting weaker warrant, unstable scope, incomplete prevalence contact, and insufficient credit for bounded experimental evidence.",
+      "originalWords": 132,
+      "originalCharacters": 1123,
+      "lockedMove": {
+        "moveId": "pro-laboratory-work-not-pathway",
+        "sectionId": "section-progress-and-distance",
+        "side": "pro",
+        "speaker": "James Tour",
+        "moveKind": "reply",
+        "proposition": "Origin-of-life targets are moving farther away, and repeated multistep laboratory syntheses are not advancing toward a plausible prebiotic pathway.",
+        "importance": 3,
+        "finalScore": 74,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "43:45",
+        "sourceSpan": {
+          "startEvent": 1215,
+          "endEvent": 1253,
+          "startMs": 2625920,
+          "endMs": 2720720
+        },
+        "sourceExcerpt": "that's what's happening with origin of life every year. the targets moving further away. That doesn't mean that we cannot never that we might not ever get there. We we might. We might. I could never say that we'd never get there. And so so uh I'm just saying that where we are now, we are really clueless on this thing. And I would like people, if it's the same Paul Rimmer that I",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-progress-versus-target"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-rare-origin-scientific-inaccessibility",
+            "con-limited-clues-not-completion",
+            "con-humble-scientific-agnosticism",
+            "con-prevalence-signals-accessibility"
+          ],
+          "components": [
+            {
+              "componentId": "pro-laboratory-work-not-pathway-component-01",
+              "targetMoveId": "con-rare-origin-scientific-inaccessibility",
+              "text": "Present difficulty may reflect a singular unrecoverable event rather than negative research progress.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-laboratory-work-not-pathway-component-02",
+              "targetMoveId": "con-limited-clues-not-completion",
+              "text": "Existing laboratory clues must constitute progress toward a plausible prebiotic pathway.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-laboratory-work-not-pathway-component-03",
+              "targetMoveId": "con-humble-scientific-agnosticism",
+              "text": "Scientific humility should not obscure evidence that the target is receding.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-laboratory-work-not-pathway-component-04",
+              "targetMoveId": "con-prevalence-signals-accessibility",
+              "text": "Accessibility evidence from recurrence would still not establish a laboratory pathway.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contests benign interpretations of present difficulty by claiming that growing targets and multistep laboratory syntheses do not approach prebiotic conditions.",
+          "responsivenessWithinClass": {
+            "value": 75,
+            "rationale": "It contacts the decisive progress and recoverability issue but leaves the prevalence-based discriminator unanswered."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It contacts the decisive progress and recoverability issue but leaves the prevalence-based discriminator unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The laboratory-pathway distinction is recoverable, but the annual field-wide receding-target claim lacks a clear scope condition."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Multistep laboratory work may poorly model prebiotic pathways, but the excerpt overgeneralizes this criticism into uniformly negative field-wide progress."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Laboratory syntheses can supply partial mechanisms and constraints even when no complete prebiotic pathway exists.",
+          "decisiveQualification": "Partial laboratory success is not automatically evidence of an environmentally continuous origin pathway."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central progress-versus-target bridge by evaluating laboratory advances against the target."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The move identifies the decisive pathway qualification but understates the evidential value of partial laboratory advances."
+          }
+        },
+        "evidenceBasis": "Tour compares origin research with failed or receding scientific targets and argues that repeated multistep syntheses do not constitute pathway progress.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
