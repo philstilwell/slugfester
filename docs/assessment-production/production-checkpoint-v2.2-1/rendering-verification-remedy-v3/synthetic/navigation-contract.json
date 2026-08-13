@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v3-navigation-contract",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v3",
+  "status": "activation-derived-navigation-contract-frozen",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "token": {
+    "algorithm": "sha256-utf8-canonical-json",
+    "canonicalObjectKeysInOrder": [
+      "activationCommit",
+      "authorizedAt",
+      "preparationSha256",
+      "protocolId"
+    ],
+    "computedDuringActivation": true,
+    "storedInActivation": true,
+    "passedToRunner": true,
+    "pattern": "^[a-f0-9]{64}$",
+    "selfHashing": false,
+    "syntheticPreflightSample": "61b2916c1fafcb94fb8b1b684c9f92bb7f8df0f6ce6ca29fe13b047a3ad022d7"
+  },
+  "queryKeys": {
+    "token": "renderingExecution",
+    "viewport": "renderingViewport",
+    "phase": "renderingPhase",
+    "stage": "renderingStage"
+  },
+  "phaseUrlsPerViewport": [
+    "pointer-bootstrap",
+    "pointer-candidate",
+    "keyboard-bootstrap",
+    "keyboard-candidate"
+  ],
+  "requirements": {
+    "allFourUrlsUniqueWithinViewport": true,
+    "allUrlsUniqueAcrossViewports": true,
+    "pointerAndKeyboardUseSeparateFreshTabs": true,
+    "reloadPermitted": false,
+    "adaptiveNavigationRegenerationPermitted": false,
+    "retryPermitted": false,
+    "priorMeasuredCandidateUrlReusePermitted": false
+  },
+  "canaryCandidateLoaded": false,
+  "screenshotsCaptured": 0,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "productionMutationPerformed": false
+}

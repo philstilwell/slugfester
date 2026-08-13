@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v3-observer-diagnosis",
+  "status": "remedy-v2-combined-geometry-observer-rejected",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "screenshotsCaptured": 0,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "failedRemedyV2Observer": {
+    "description": "The remedy-v2 combined closed-state check treated a child content element's client rectangles as authoritative. Chromium reports a client rectangle and computed display:block for that child even while its parent native details element is closed.",
+    "detailsOpen": false,
+    "openAttributePresent": false,
+    "contentClientRectCount": 1,
+    "contentComputedDisplay": "block",
+    "conclusion": "Child geometry is not a valid closed-state gate for native details in this controller."
+  },
+  "remedyV3Observer": {
+    "stateAuthority": "native-details-open-property",
+    "openAttributeUse": "required-corroboration",
+    "contentVisibilityGate": "element-from-point-hit-test-after-summary-scroll",
+    "contentClientRectsUse": "diagnostic-only-never-gating",
+    "closedState": {
+      "detailsOpen": false,
+      "openAttributePresent": false,
+      "contentOrDescendantHit": false
+    },
+    "openState": {
+      "detailsOpen": true,
+      "openAttributePresent": true,
+      "contentOrDescendantHit": true
+    }
+  },
+  "viewports": {
+    "desktop": {
+      "targetCssViewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "closedContentClientRectCount": 1,
+      "closedContentComputedDisplay": "block",
+      "closedContentOrDescendantHit": false,
+      "openContentOrDescendantHit": true
+    },
+    "mobile": {
+      "targetCssViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "closedContentClientRectCount": 1,
+      "closedContentComputedDisplay": "block",
+      "closedContentOrDescendantHit": false,
+      "openContentOrDescendantHit": true
+    }
+  },
+  "runtimeCounts": {
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "pageErrors": 0,
+    "failedRequests": 0
+  },
+  "renderingContentRegressionEstablished": false,
+  "productionMutationPerformed": false
+}
