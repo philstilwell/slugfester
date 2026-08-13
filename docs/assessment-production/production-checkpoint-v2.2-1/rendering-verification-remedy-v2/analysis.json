@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v2-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v2",
+  "status": "second-replacement-rendering-verification-failed-closed-on-pointer-fresh-load-state-contract",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "activationSourceHashReplayPassedBeforeExecution": true,
+    "publicationFinalizationReplayPassedBeforeExecution": true,
+    "activeV22ScoreControlPassedBeforeExecution": true,
+    "debatesPassed": 0,
+    "expectedDebates": 10,
+    "viewportResultsPassed": 0,
+    "expectedViewportResults": 20,
+    "screenshotsPreserved": 0,
+    "expectedScreenshots": 40,
+    "unattemptedViewportResults": 19,
+    "exactViewportContractPassed": true,
+    "horizontalOverflowAbsent": true,
+    "pointerFreshLoadCollapsedContractPassed": false,
+    "keyboardFreshLoadCollapsedContractPassed": true,
+    "renderingContentRegressionEstablished": false,
+    "runtimeFailures": 0,
+    "failedRequests": 0,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "directCostUsd": 0
+  },
+  "decision": {
+    "failedClosed": true,
+    "partialPassPromotionPermitted": false,
+    "retryPerformed": false,
+    "renderingGatePassed": false,
+    "renderingRepairPermitted": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "diagnosis": {
+    "plainEnglish": "Debate 50 rendered at the exact 1440 by 1000 CSS-pixel viewport with no overflow, runtime failures, request failures, source changes, or production changes. All display, pointer-open, and keyboard checks passed except the pointer phase's combined fresh-load collapsed check. The keyboard phase loaded collapsed, and the source creates details without an open attribute. Because the failed check did not record the raw open property and content visibility separately, this run does not establish whether the page, browser state restoration, or the combined observer caused the mismatch.",
+    "sourceGroundedFacts": [
+      "src/app.js emits details class=ai-extension-accordion without an open attribute.",
+      "The pointer-phase combined collapsed check was false before the runner clicked the accordion summary.",
+      "The independent keyboard-phase fresh-load collapsed check was true.",
+      "All three observed viewport phases were exactly 1440 by 1000 CSS pixels.",
+      "Document and maximum element widths were 1440 pixels in every observed phase.",
+      "No runtime or request failure was recorded."
+    ],
+    "requiredRemedy": [
+      "Prepare a remedy-v3 plan that serializes the raw details.open value and accordion-content visibility as separate fields before any interaction in both pointer and keyboard phases.",
+      "Freeze unique activation-derived navigation URLs for every phase so prior browser document state cannot share a measured URL with a replacement execution.",
+      "Prove the fresh-tab and fresh-navigation contract synthetically with the exact combined observer before any candidate is loaded.",
+      "Retain the now-passing frozen viewport conversion, exact observed viewport checks, observed-width overflow comparisons, and separate pointer/keyboard tabs.",
+      "Use new evidence paths and a new immutable activation; do not retry, relabel, or reuse this failed execution."
+    ],
+    "estimatedRemedyV3PlanPreparationMinutes": [
+      10,
+      20
+    ],
+    "estimatedReplacementExecutionMinutes": [
+      10,
+      25
+    ],
+    "estimatedDirectCostUsd": 0
+  },
+  "compatibilityBoundary": {
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "existingProductionMutationBlockers": [
+      "optional-overall-reference-links",
+      "checkpoint-ledger-schema-adapter"
+    ]
+  },
+  "authorization": {
+    "renderingVerificationRemedyV3PlanPreparation": false,
+    "replacementRenderingVerificationActivation": false,
+    "browserControl": false,
+    "screenshotCapture": false,
+    "renderingRepair": false,
+    "compatibilityRemedyPlanPreparation": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-remedy-v3-plan-preparation"
+}

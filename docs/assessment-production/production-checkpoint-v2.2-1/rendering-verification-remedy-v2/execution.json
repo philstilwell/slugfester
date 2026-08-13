@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v2-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v2",
+  "status": "second-replacement-rendering-verification-failed-closed-on-first-viewport",
+  "startedAt": "2026-08-13T15:46:32.835Z",
+  "completedAt": "2026-08-13T15:48:00.000Z",
+  "elapsedMs": 87165,
+  "checkpointCommit": "ee7fbc6f525de71e35445d5d575d5ec7bbd8616c",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "activation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v2/execution-activation.json",
+    "sha256": "033059eb01fe45b61b33f7cc081b05337e40c946047fe626e9dbca05f6473b97"
+  },
+  "attempted": {
+    "debateNumber": "50",
+    "debateId": "knechtle-dillahunty-christianity-true-2023",
+    "viewport": "desktop",
+    "targetCssViewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "controllerInput": {
+      "width": 1152,
+      "height": 800
+    },
+    "packet": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v2/packets/debate-50.json",
+    "packetSha256": "61b38c5e6c03524c25136da69a78a554d4a913005223737a01c89068abb3388c",
+    "viewportStartedAt": "2026-08-13T15:46:40.874Z",
+    "viewportRecordedAt": "2026-08-13T15:46:48.894Z"
+  },
+  "expectedDebates": 10,
+  "expectedViewportResults": 20,
+  "expectedScreenshots": 40,
+  "finalizedDebateResults": 0,
+  "finalizedViewportResults": 0,
+  "transientScreenshotsCaptured": 2,
+  "preservedScreenshots": 0,
+  "unattemptedViewportResults": 19,
+  "diagnosticBootstrapNavigations": 2,
+  "measuredCandidatePageLoads": 2,
+  "modelContexts": 0,
+  "retries": 0,
+  "scorePasses": 0,
+  "directCostUsd": 0,
+  "observedResult": {
+    "status": "failed-rendering-viewport",
+    "checks": {
+      "publicationStagingRoute": true,
+      "noindex": true,
+      "stagingBanner": true,
+      "exactByline": true,
+      "overallImmediatelyPrecedesAiExtension": true,
+      "aiExtensionHeading": true,
+      "nativeDetails": true,
+      "pointerFreshLoadCollapsed": false,
+      "pointerOpen": true,
+      "keyboardFreshLoadCollapsed": true,
+      "keyboardEnterOpen": true,
+      "keyboardSpaceClose": true,
+      "aiDisclosureVisibleWhenOpen": true,
+      "twoStrengthenedFinalArguments": true,
+      "newArgumentsForBothSides": true,
+      "distinctFromOverallCommentary": true,
+      "prohibitedUnassailableAbsent": true,
+      "pointerActualViewportMatchesRequested": true,
+      "openActualViewportMatchesRequested": true,
+      "keyboardActualViewportMatchesRequested": true,
+      "horizontalOverflowAbsent": true
+    },
+    "accordionStates": {
+      "pointerFreshLoadCollapsed": false,
+      "pointerOpen": true,
+      "keyboardFreshLoadCollapsed": true,
+      "keyboardEnterOpen": true,
+      "keyboardSpaceClose": true
+    },
+    "runtimeCounts": {
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "pageErrors": 0,
+      "failedRequests": 0
+    },
+    "metrics": {
+      "pointerFreshLoad": {
+        "actualInnerWidth": 1440,
+        "actualInnerHeight": 1000,
+        "outerWidth": 1152,
+        "outerHeight": 800,
+        "devicePixelRatio": 0.800000011920929,
+        "visualViewportWidth": 1440,
+        "visualViewportHeight": 1000,
+        "documentScrollWidth": 1440,
+        "maximumElementRight": 1440
+      },
+      "pointerOpen": {
+        "actualInnerWidth": 1440,
+        "actualInnerHeight": 1000,
+        "outerWidth": 1152,
+        "outerHeight": 800,
+        "devicePixelRatio": 0.800000011920929,
+        "visualViewportWidth": 1440,
+        "visualViewportHeight": 1000,
+        "documentScrollWidth": 1440,
+        "maximumElementRight": 1440
+      },
+      "keyboardFreshLoad": {
+        "actualInnerWidth": 1440,
+        "actualInnerHeight": 1000,
+        "outerWidth": 1152,
+        "outerHeight": 800,
+        "devicePixelRatio": 0.800000011920929,
+        "visualViewportWidth": 1440,
+        "visualViewportHeight": 1000,
+        "documentScrollWidth": 1440,
+        "maximumElementRight": 1440
+      }
+    },
+    "mutations": {
+      "candidateChanged": false,
+      "productionDataChanged": false,
+      "applicationCodeChanged": false,
+      "stylesheetChanged": false
+    }
+  },
+  "failure": {
+    "stage": "debate-50-desktop-remedy-v2-rendering",
+    "category": "pointer-fresh-load-collapsed-contract-failure",
+    "message": "The first remedy-v2 viewport failed its pointer-phase fresh-load collapsed check. The remaining nineteen viewports were not attempted.",
+    "incidents": [
+      {
+        "id": "pointer-phase-fresh-load-collapsed-check-false",
+        "description": "The combined pointer-phase check requiring details.open to be false and the accordion content to have no client rectangles was false. The separate keyboard-phase fresh load was collapsed, and the source emits the native details element without an open attribute.",
+        "sourceDetailsOpenAttributePresent": false,
+        "keyboardFreshLoadCollapsed": true,
+        "rawDetailsOpenAndContentVisibilitySerializedSeparately": false,
+        "renderingContentRegressionEstablished": false
+      }
+    ]
+  },
+  "cleanup": {
+    "browserTabsClosed": true,
+    "viewportOverrideReset": true,
+    "localServerStopped": true,
+    "failedViewportEvidencePersisted": false,
+    "transientScreenshotsPersisted": false,
+    "evidenceRootCreated": false
+  },
+  "renderingVerificationPassed": false,
+  "renderingContentRegressionEstablished": false,
+  "renderingRepairPerformed": false,
+  "validatorMigrationPerformed": false,
+  "productionLedgerPublicationPerformed": false,
+  "productionMutationPerformed": false
+}
