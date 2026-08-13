@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v1-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v1",
+  "status": "replacement-rendering-verification-failed-closed-on-browser-control-contract",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "preparationReplayPassedBeforeExecution": true,
+    "activationSourceHashReplayPassedBeforeExecution": true,
+    "publicationFinalizationReplayPassedBeforeExecution": true,
+    "activeV22ScoreControlPassedBeforeExecution": true,
+    "debatesPassed": 0,
+    "expectedDebates": 10,
+    "viewportResultsPassed": 0,
+    "expectedViewportResults": 20,
+    "screenshotsPreserved": 0,
+    "expectedScreenshots": 40,
+    "unattemptedViewportResults": 19,
+    "browserControlContractPassed": false,
+    "renderingContentRegressionEstablished": false,
+    "runtimeFailures": 0,
+    "failedRequests": 0,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "directCostUsd": 0
+  },
+  "decision": {
+    "failedClosed": true,
+    "partialPassPromotionPermitted": false,
+    "retryPerformed": false,
+    "renderingGatePassed": false,
+    "renderingRepairPermitted": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "diagnosis": {
+    "plainEnglish": "Debate 50's displayed content, native pointer and keyboard behavior, byline, AI disclosure, and runtime checks passed. The replacement stopped because the browser reported an 1800-pixel page against the requested 1440-pixel viewport and because the runner's combined initial/reload collapsed-state check was false. These observations do not yet prove a scorecard or stylesheet defect.",
+    "requiredRemedy": [
+      "Prepare a second synthetic preflight that asserts the observed window.innerWidth exactly matches each requested desktop and mobile viewport before any candidate is loaded.",
+      "Serialize initial-load and post-pointer-reload collapsed states as separate fields so a failure identifies the exact phase without retrying.",
+      "Define a source-grounded clean-load keyboard sequence that prevents browser session-state restoration from being confused with the default-collapsed publication contract.",
+      "Compare document and element widths to the observed viewport width while retaining the separate requirement that the observed viewport equal the frozen requested width.",
+      "Freeze new evidence paths and a new immutable activation; do not reuse, relabel, or retry this failed execution."
+    ],
+    "estimatedRemedyV2PlanPreparationMinutes": [
+      10,
+      20
+    ],
+    "estimatedReplacementExecutionMinutes": [
+      10,
+      25
+    ],
+    "estimatedDirectCostUsd": 0
+  },
+  "compatibilityBoundary": {
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "existingProductionMutationBlockers": [
+      "optional-overall-reference-links",
+      "checkpoint-ledger-schema-adapter"
+    ]
+  },
+  "authorization": {
+    "renderingVerificationRemedyV2PlanPreparation": false,
+    "replacementRenderingVerificationActivation": false,
+    "browserControl": false,
+    "screenshotCapture": false,
+    "renderingRepair": false,
+    "compatibilityRemedyPlanPreparation": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-remedy-v2-plan-preparation"
+}

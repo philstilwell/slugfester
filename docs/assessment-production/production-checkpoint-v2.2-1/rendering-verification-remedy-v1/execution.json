@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v1-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v1",
+  "status": "replacement-rendering-verification-failed-closed-on-first-viewport",
+  "startedAt": "2026-08-13T14:35:49.138Z",
+  "completedAt": "2026-08-13T14:36:20.134Z",
+  "elapsedMs": 30996,
+  "checkpointCommit": "2d37618b17d9c4a780088a2289e68ec2409b955f",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "activation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/execution-activation.json",
+    "sha256": "458d833d1147532bf0f42eccb180c29823aca32cd4c21ce6a4bc33823cf4588b"
+  },
+  "attempted": {
+    "debateNumber": "50",
+    "debateId": "knechtle-dillahunty-christianity-true-2023",
+    "viewport": "desktop",
+    "requestedViewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "packet": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/packets/debate-50.json",
+    "packetSha256": "0158923ee780ac75bc3d35f776a4c2b8ccae6e93763cea8ae411f6b8a71163f0"
+  },
+  "expectedDebates": 10,
+  "expectedViewportResults": 20,
+  "expectedScreenshots": 40,
+  "finalizedDebateResults": 0,
+  "finalizedViewportResults": 0,
+  "preservedScreenshots": 0,
+  "unattemptedViewportResults": 19,
+  "modelContexts": 0,
+  "retries": 0,
+  "scorePasses": 0,
+  "directCostUsd": 0,
+  "observedResult": {
+    "status": "failed-rendering-viewport",
+    "checks": {
+      "publicationStagingRoute": true,
+      "noindex": true,
+      "stagingBanner": true,
+      "exactByline": true,
+      "overallImmediatelyPrecedesAiExtension": true,
+      "aiExtensionHeading": true,
+      "nativeDetails": true,
+      "defaultCollapsed": false,
+      "pointerOpen": true,
+      "keyboardEnterOpen": true,
+      "keyboardSpaceClose": true,
+      "aiDisclosureVisibleWhenOpen": true,
+      "twoStrengthenedFinalArguments": true,
+      "newArgumentsForBothSides": true,
+      "distinctFromOverallCommentary": true,
+      "prohibitedUnassailableAbsent": true,
+      "horizontalOverflowAbsent": false
+    },
+    "runtimeCounts": {
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "pageErrors": 0,
+      "failedRequests": 0
+    },
+    "metrics": {
+      "documentScrollWidth": 1800,
+      "openDocumentScrollWidth": 1800,
+      "maximumElementRight": 1800,
+      "openMaximumElementRight": 1800
+    },
+    "mutations": {
+      "candidateChanged": false,
+      "productionDataChanged": false,
+      "applicationCodeChanged": false,
+      "stylesheetChanged": false
+    }
+  },
+  "failure": {
+    "stage": "debate-50-desktop-replacement-rendering",
+    "category": "browser-control-viewport-and-reload-contract-failure",
+    "message": "The first replacement viewport failed the default-collapsed and horizontal-overflow checks. The remaining nineteen viewports were not attempted.",
+    "incidents": [
+      {
+        "id": "requested-desktop-width-did-not-match-observed-page-width",
+        "description": "The frozen viewport was 1440 pixels wide, but the closed and open page metrics were both 1800 pixels wide. The result does not establish content overflow because the runner did not serialize window.innerWidth separately and the observed width may reflect an unapplied Chrome viewport override.",
+        "requestedWidth": 1440,
+        "observedDocumentScrollWidth": 1800,
+        "observedMaximumElementRight": 1800,
+        "renderingContentRegressionEstablished": false
+      },
+      {
+        "id": "combined-default-collapsed-check-failed",
+        "description": "The combined default-collapsed check was false. The source emits a native details element without an open attribute, but the runner combined initial-load and post-pointer-reload state and did not serialize those two component results separately, so the failed phase cannot be assigned without a prohibited retry.",
+        "renderingContentRegressionEstablished": false
+      }
+    ]
+  },
+  "cleanup": {
+    "browserTabsClosed": true,
+    "viewportOverrideReset": true,
+    "localServerStopped": true,
+    "failedViewportEvidencePersisted": false,
+    "partialEvidenceRemoved": false,
+    "evidenceRootCreated": false
+  },
+  "renderingVerificationPassed": false,
+  "renderingContentRegressionEstablished": false,
+  "renderingRepairPerformed": false,
+  "validatorMigrationPerformed": false,
+  "productionLedgerPublicationPerformed": false,
+  "productionMutationPerformed": false
+}
