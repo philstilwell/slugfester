@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v6-signature-extraction-contract",
+  "status": "contract-derived-jpeg-signature-extraction-frozen",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "failedRemedyV5": {
+    "runner": "scripts/lib/assessment-production-checkpoint-v2.2-rendering-browser-runner-v5.mjs:292",
+    "extraction": "bytes.subarray(0, 8).toString(\"hex\")",
+    "recordedBytes": 8,
+    "recordedHexCharacters": 16,
+    "frozenContractBytes": 12,
+    "frozenContractHexCharacters": 24,
+    "result": "both-JPEG-signature-checks-deterministically-false"
+  },
+  "remedyV6": {
+    "runner": "scripts/lib/assessment-production-checkpoint-v2.2-rendering-browser-runner-v6.mjs",
+    "exportedExtractor": "extractCheckpointV22RenderingRemedyV6SignatureHex",
+    "extraction": "bytes.subarray(0, contract.signatureBytes).toString(\"hex\")",
+    "signatureBytes": 12,
+    "signatureHexCharacters": 24,
+    "exactSignatureHex": "ffd8ffe000104a4649460001",
+    "byteAndHexLengthsCrossValidated": true,
+    "undersizedImageFailsClosed": true,
+    "contractLengthMismatchFailsClosed": true,
+    "runnerRecordsInspectedByteCount": true
+  },
+  "deterministicTest": {
+    "path": "scripts/test-assessment-production-checkpoint-v2.2-rendering-verification-remedy-v6-signature-contract.mjs",
+    "status": "passed",
+    "eightByteConfigurationRejected": true,
+    "elevenByteImageRejected": true,
+    "twelveByteExtractionMatched": true
+  },
+  "canaryCandidateLoaded": false,
+  "screenshotsPreservedInRepository": 0,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "productionMutationPerformed": false
+}

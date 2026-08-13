@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="data:,">
+    <title>Rendering remedy v6 synthetic transport preflight</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        color: #172231;
+        background:
+          radial-gradient(circle at 15% 10%, #ffba67 0 12%, transparent 35%),
+          radial-gradient(circle at 85% 20%, #73d2c6 0 13%, transparent 36%),
+          linear-gradient(135deg, #f6efe5, #d8e9f0 52%, #f3d8dc);
+        font-family: Georgia, serif;
+      }
+      main { width: min(1160px, calc(100% - 28px)); margin: 0 auto; padding: 28px 0 80px; }
+      header, .card, details {
+        border: 3px solid #172231;
+        box-shadow: 8px 8px 0 rgb(23 34 49 / 22%);
+      }
+      header { padding: 28px; background: #fff9e8; }
+      h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 64px); }
+      .marker { display: inline-block; padding: 7px 12px; color: white; background: #bf3f5b; font-weight: 700; }
+      #stress-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 24px 0; }
+      .card { min-height: 155px; padding: 18px; background: linear-gradient(145deg, #fff, var(--tone)); }
+      .card:nth-child(4n+1) { --tone: #ffd98e; }
+      .card:nth-child(4n+2) { --tone: #a6e3d8; }
+      .card:nth-child(4n+3) { --tone: #f6b7c4; }
+      .card:nth-child(4n) { --tone: #a9c7ef; }
+      details { background: #772b65; color: white; margin-top: 26px; }
+      summary { padding: 22px; cursor: pointer; font-size: 26px; font-weight: 700; background: #451c55; }
+      .ai-extension-accordion-content { padding: 24px; background: #dff8d8; color: #142218; }
+      .bars { display: grid; gap: 9px; }
+      .bars span { height: 22px; background: linear-gradient(90deg, #ff8d5a, #5a84d6); border: 2px solid #172231; }
+      @media (max-width: 650px) {
+        main { width: calc(100% - 18px); padding-top: 12px; }
+        #stress-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+        .card { min-height: 120px; padding: 12px; }
+        header { padding: 18px; }
+        summary { font-size: 21px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main data-synthetic-only="true">
+      <header>
+        <span class="marker">SYNTHETIC ONLY</span>
+        <h1>Direct JPEG transport stress fixture</h1>
+        <p>This page contains no debate candidate, score, participant judgment, or production data.</p>
+      </header>
+      <section id="stress-grid" aria-label="Synthetic rendering stress grid"></section>
+      <details class="ai-extension-accordion">
+        <summary>AI Extension synthetic interaction target</summary>
+        <div class="ai-extension-accordion-content">
+          <h2>Visible open-state marker</h2>
+          <p>The collapsed and open captures must be distinct, nonblank, correctly sized direct JPEG images.</p>
+          <div class="bars">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </details>
+    </main>
+    <script>
+      const grid = document.querySelector("#stress-grid");
+      for (let index = 1; index <= 72; index += 1) {
+        const card = document.createElement("article");
+        card.className = "card";
+        card.innerHTML = `<h2>Synthetic card ${index}</h2><p>Layered color, border, text, and shadow workload ${index}; no candidate content is present.</p>`;
+        grid.append(card);
+      }
+    </script>
+  </body>
+</html>

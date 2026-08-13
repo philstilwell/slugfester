@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v6-screenshot-transport-diagnosis",
+  "status": "contract-derived-12-byte-jpeg-signature-extraction-selected-after-v5-harness-mismatch",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "failedRemedyV5Harness": {
+    "candidate": "Debate 50 desktop",
+    "candidateRenderingDefectEstablished": false,
+    "completedScreenshots": 2,
+    "nonblankDimensionMatchedDifferentHashScreenshots": 2,
+    "inheritedChecksPassed": 31,
+    "additionalImageChecksPassed": 5,
+    "failedChecks": [
+      "collapsedScreenshotJpeg",
+      "openScreenshotJpeg"
+    ],
+    "runnerRecordedSignatureBytes": 8,
+    "contractRequiredSignatureBytes": 12,
+    "classification": "frozen-harness-signature-length-mismatch"
+  },
+  "remedyV6Harness": {
+    "method": "CDP Page.captureScreenshot",
+    "parameters": {
+      "format": "jpeg",
+      "quality": 85,
+      "fromSurface": true,
+      "captureBeyondViewport": false
+    },
+    "signatureExtractionMethod": "contract-derived-byte-count",
+    "signatureBytes": 12,
+    "signatureHexCharacters": 24,
+    "exactSignatureHex": "ffd8ffe000104a4649460001",
+    "declaredFormatMustMatchAnalyzer": true,
+    "recordedSignatureBytesMustMatchContract": true,
+    "pixelDimensionsMustEqualControllerInput": true,
+    "pixelDimensionsMustEqualRoundedCssViewportTimesDevicePixelRatio": true,
+    "minimumByteLength": 10000,
+    "minimumUniqueColors": 16,
+    "minimumEntropy": 0.02,
+    "collapsedAndOpenHashesMustDiffer": true,
+    "candidatePersistenceBeforeAllGatesPass": false
+  },
+  "finalSyntheticCaptureMilliseconds": {
+    "desktopCollapsed": 43.79,
+    "desktopOpen": 41.23,
+    "mobileCollapsed": 174.93,
+    "mobileOpen": 45.6,
+    "maximum": 174.93
+  },
+  "developmentIncidentsExcludedFromFrozenPreflight": [
+    {
+      "incident": "combined-two-viewport-browser-call-exceeded-control-window",
+      "resolution": "leftover-synthetic-tab-closed-viewport-reset-and-final-preflight-run-one-viewport-per-call",
+      "candidateLoaded": false,
+      "candidateScreenshotPersisted": false
+    },
+    {
+      "incident": "final-desktop-pointer-bootstrap-and-measured-fixture-loads-used-http-cache-validation",
+      "observedStatuses": [304, 304],
+      "resolution": "accepted-as-successful-synthetic-cache-validation-with-zero-runtime-failures; activation-tokenized-candidate-urls-remain-fresh",
+      "candidateLoaded": false
+    }
+  ],
+  "screenshotsPreservedInRepository": 0,
+  "productionMutationPerformed": false
+}
