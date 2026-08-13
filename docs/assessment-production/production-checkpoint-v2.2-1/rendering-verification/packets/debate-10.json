@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-verification-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification",
+  "status": "frozen-rendering-verification-packet",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "debateNumber": "10",
+  "debateId": "craig-harris-moral-foundations-2011",
+  "candidate": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-10.json",
+    "sha256": "919849cd2f8ebaf4da12aab3f2b70997792fd8ce267358b86fad5c5b309cdae3",
+    "score": {
+      "pro": 79,
+      "con": 79
+    },
+    "sections": 5,
+    "moves": 20,
+    "aiExtensionSides": 2,
+    "strengthenedFinalArguments": 2,
+    "newArguments": {
+      "pro": 2,
+      "con": 2
+    }
+  },
+  "provenance": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-10.json",
+    "sha256": "1f8b30bf6147af7e4dca3ad476578a69cae05d70912b31b41330e3a80f7d8a49",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true
+  },
+  "preview": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/previews/index.html",
+    "sha256": "f9bc96f11dafde3439ae75601cf7a5371c86fdfbd6671862f25110da259cea20",
+    "url": "http://127.0.0.1:4174/docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/previews/index.html?debate=10",
+    "localOnly": true,
+    "noindex": true
+  },
+  "expectedDisplay": {
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "stagingBannerPrefix": "Publication staging preview:",
+    "overallHeading": "Overall commentary",
+    "aiExtensionHeading": "AI Extension",
+    "disclosurePrefix": "This section is an AI-generated contribution",
+    "nativeElement": "details",
+    "defaultCollapsed": true,
+    "prohibitedText": [
+      "unassailable"
+    ]
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "evidence": {
+        "result": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/evidence/debate-10/desktop.json",
+        "collapsedScreenshot": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/evidence/debate-10/desktop-collapsed.png",
+        "openScreenshot": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/evidence/debate-10/desktop-open.png"
+      }
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "evidence": {
+        "result": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/evidence/debate-10/mobile.json",
+        "collapsedScreenshot": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/evidence/debate-10/mobile-collapsed.png",
+        "openScreenshot": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/evidence/debate-10/mobile-open.png"
+      }
+    }
+  },
+  "requiredBooleanChecks": [
+    "publicationStagingRoute",
+    "noindex",
+    "stagingBanner",
+    "exactByline",
+    "overallImmediatelyPrecedesAiExtension",
+    "aiExtensionHeading",
+    "nativeDetails",
+    "defaultCollapsed",
+    "pointerOpen",
+    "keyboardEnterOpen",
+    "keyboardSpaceClose",
+    "aiDisclosureVisibleWhenOpen",
+    "twoStrengthenedFinalArguments",
+    "newArgumentsForBothSides",
+    "distinctFromOverallCommentary",
+    "prohibitedUnassailableAbsent",
+    "horizontalOverflowAbsent"
+  ],
+  "zeroCountChecks": [
+    "consoleErrors",
+    "consoleWarnings",
+    "pageErrors",
+    "failedRequests"
+  ],
+  "interactionOrder": [
+    "load-and-record-collapsed-state",
+    "capture-collapsed-screenshot",
+    "open-native-details-by-pointer",
+    "record-open-state-and-capture-open-screenshot",
+    "reload-and-confirm-default-collapsed",
+    "focus-summary-and-open-with-enter",
+    "close-with-space"
+  ],
+  "mutationBoundary": {
+    "candidateWritable": false,
+    "participantScoresWritable": false,
+    "displayCopyWritable": false,
+    "applicationCodeWritable": false,
+    "stylesheetWritable": false,
+    "productionDataWritable": false,
+    "rankingDataWritable": false,
+    "productionLedgersWritable": false,
+    "compatibilityRemediesWritable": false
+  }
+}
