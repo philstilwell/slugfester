@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-status-parser-remedy-contract",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-status-parser-remedy",
+  "status": "production-mutation-status-parser-remedy-contract-frozen",
+  "productionCanary": true,
+  "planningOnly": true,
+  "failureBoundary": {
+    "failedExecutionPath": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/execution.json",
+    "failedExecutionSha256": "92986e456813a5174c17129b64ac562ebd9982b9dc58b39504ec7559910a0b39",
+    "failedCheck": "working-tree-exact-path-boundary-parser",
+    "contentMutationMismatch": false,
+    "rootCause": "The failed harness trimmed the complete line-delimited porcelain output before slicing fixed status columns, which removed the first record's leading worktree-status space and then the first pathname character.",
+    "remedyBoundary": "Replace only the changed-path parser and its invocation; retain the exact frozen production mutation payload and all other acceptance and rollback controls."
+  },
+  "invocation": {
+    "program": "git",
+    "arguments": [
+      "status",
+      "--porcelain=v1",
+      "-z"
+    ],
+    "nodeOptions": {
+      "cwd": "repository root",
+      "encoding": null
+    },
+    "requiredReturnType": "Buffer",
+    "whitespaceTrimmingAllowed": false,
+    "lineSplittingAllowed": false
+  },
+  "parser": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/status-parser.mjs",
+    "bytes": 2137,
+    "sha256": "76f2dcaaac7a489619879f69c9569b2d350fcf8c7f958a6d8f436d39bda97689",
+    "entryFunction": "parseGitStatusPorcelainV1Z",
+    "pathFunction": "exactChangedPaths",
+    "recordContract": "Read two status bytes, require one literal separator space, then preserve every pathname byte through the next NUL byte.",
+    "renameCopyContract": "Consume the additional NUL-delimited original pathname for rename or copy records so record boundaries remain exact; the production mutation acceptance gate still rejects rename and copy status codes.",
+    "invalidUtf8Behavior": "fail closed",
+    "unterminatedRecordBehavior": "fail closed",
+    "emptyPathBehavior": "fail closed"
+  },
+  "regressionTest": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/test-status-parser.mjs",
+    "bytes": 3874,
+    "sha256": "0ec213d360869d80dfa828e6fc5ad14bf2c950b03bc95acddd39a67fb1fb82c8",
+    "command": "node docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/test-status-parser.mjs",
+    "requiredCases": [
+      "byte fixture begins with worktree-only status bytes 0x20 0x4d",
+      "first fixture pathname remains debate/craig-harris-moral-foundations-2011/index.html",
+      "real temporary Git repository emits a first worktree-only modification record",
+      "real Git first raw byte remains 32 and the complete first pathname is preserved",
+      "untracked production-ledger-shaped pathname is preserved",
+      "rename record consumes its second NUL-delimited pathname",
+      "unterminated record fails closed",
+      "string input is rejected so implicit normalization cannot occur"
+    ],
+    "latestResult": {
+      "status": "passed",
+      "fixtureRecords": 2,
+      "actualGitRecords": 2,
+      "actualFirstStatus": " M",
+      "actualFirstRawByte": 32,
+      "actualFirstPath": "debate/craig-harris-moral-foundations-2011/index.html",
+      "completeFirstPathPreserved": true,
+      "whitespaceTrimmingPerformed": false,
+      "meteredApiCostUsd": 0
+    }
+  },
+  "productionPathAcceptance": {
+    "expectedPathCount": 23,
+    "expectedPathSetSha256": "e4122d0e773383c57bd8f248ab91bfa2e0bdb21bb3a392861a50767d35a98e67",
+    "expectedStatuses": {
+      " M": 13,
+      "??": 10
+    },
+    "duplicatesAllowed": false,
+    "renamesAllowed": false,
+    "copiesAllowed": false,
+    "stagedChangesAllowed": false,
+    "comparison": "Compare the sorted complete parsed pathname set with the sorted exact 23-path set from the frozen prior activation. Do not compare raw record order and do not normalize, trim, resolve, or case-fold pathnames."
+  },
+  "integrationGates": {
+    "preWrite": {
+      "parsedEntriesRequired": 0,
+      "unrelatedChangesAllowed": false
+    },
+    "postWriteBeforeExternalValidators": {
+      "parsedEntriesRequired": 23,
+      "worktreeOnlyModificationsRequired": 13,
+      "untrackedFilesRequired": 10,
+      "exactPathSetRequired": true
+    },
+    "postRollbackOnAnyFailure": {
+      "parsedEntriesRequiredBeforeAuditWrites": 0,
+      "completeRepositoryCheckRequired": true
+    }
+  },
+  "immutableMutationLocks": {
+    "mutationPacketPath": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/mutation-packet.json",
+    "mutationPacketSha256": "d91da8004d921b6c5dd4a0cd720a8d8a28fd007c29a4dd6390ef67245640ed18",
+    "productionSourceBaselineSha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "productionSourceProjectedSha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+    "candidatesMayChange": false,
+    "ledgersMayChange": false,
+    "scoresMayChange": false,
+    "proseMayChange": false,
+    "generatedSeoProjectionMayChange": false,
+    "productionPathSetMayChange": false
+  },
+  "authorization": {
+    "parserRemedyPlanPreparation": true,
+    "replacementExecutionActivation": false,
+    "productionMutationRetry": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "separateReplacementActivationRequired": true,
+    "separateRetryAuthorizationRequiredAfterActivation": true,
+    "automaticRetryForbidden": true,
+    "parserOrTestHashMismatchBlocks": true,
+    "priorMutationPayloadHashMismatchBlocks": true,
+    "priorBaselineHashMismatchBlocks": true,
+    "unexpectedStatusCodeBlocks": true,
+    "unexpectedOrIncompletePathBlocks": true,
+    "judgmentExecutionForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseRewriteForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  }
+}

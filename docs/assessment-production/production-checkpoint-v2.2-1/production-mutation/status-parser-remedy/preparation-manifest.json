@@ -1,0 +1,239 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-status-parser-remedy-preparation-manifest",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-status-parser-remedy",
+  "status": "production-mutation-status-parser-remedy-plan-prepared-and-frozen",
+  "frozenAt": "2026-08-13T23:22:20Z",
+  "checkpointCommit": "cef81749333bd1684717289fc3fb6364dff3b9b6",
+  "branch": "main",
+  "productionCanary": true,
+  "planningOnly": true,
+  "userAuthorization": {
+    "instruction": "Proceed at your own discretion.",
+    "scopeInterpretation": "Authorize the next recorded gate after the failed-closed mutation: prepare and freeze the status-parser remedy plan and regression evidence only.",
+    "directIncrementalCostEstimateUsd": 0,
+    "parserRemedyPlanPreparationAuthorized": true,
+    "replacementExecutionActivationAuthorized": false,
+    "productionMutationRetryAuthorized": false,
+    "remainingProductionBatchesAuthorized": false
+  },
+  "scope": {
+    "changedComponent": "working-tree exact-path validation harness",
+    "changedProductionContent": false,
+    "description": "Freeze a byte-exact NUL-delimited Git status parser and its regression tests while preserving the original ten-debate mutation payload, production baseline, projections, validation gates, and rollback boundary.",
+    "exactProductionPaths": [
+      "src/data/debates.js",
+      "docs/assessment-ledgers/knechtle-dillahunty-christianity-true-2023.json",
+      "docs/assessment-ledgers/tour-swamidass-origin-life-chemistry-2020.json",
+      "docs/assessment-ledgers/plantinga-law-eaan-rational-belief-2010.json",
+      "docs/assessment-ledgers/enoch-bush-objective-moral-truths-2026.json",
+      "docs/assessment-ledgers/hitchens-ramadan-islam-peace-2010.json",
+      "docs/assessment-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json",
+      "docs/assessment-ledgers/turek-hitchens-god-existence-2008.json",
+      "docs/assessment-ledgers/craig-harris-moral-foundations-2011.json",
+      "docs/assessment-ledgers/craig-shook-existence-god-2008.json",
+      "docs/assessment-ledgers/horn-oconnor-god-existence-2020.json",
+      "debate/craig-harris-moral-foundations-2011/index.html",
+      "debate/craig-shook-existence-god-2008/index.html",
+      "debate/enoch-bush-objective-moral-truths-2026/index.html",
+      "debate/hitchens-ramadan-islam-peace-2010/index.html",
+      "debate/horn-oconnor-god-existence-2020/index.html",
+      "debate/knechtle-dillahunty-christianity-true-2023/index.html",
+      "debate/oconnor-baker-hytch-argument-from-reason-2020/index.html",
+      "debate/plantinga-law-eaan-rational-belief-2010/index.html",
+      "debate/tour-swamidass-origin-life-chemistry-2020/index.html",
+      "debate/turek-hitchens-god-existence-2008/index.html",
+      "sitemap.xml",
+      "src/data/debate-summaries.js"
+    ],
+    "exactProductionPathCount": 23,
+    "exactProductionPathsSha256": "e4122d0e773383c57bd8f248ab91bfa2e0bdb21bb3a392861a50767d35a98e67"
+  },
+  "invariants": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlindnessOfCompletedIndependentJudgmentsPreserved": true,
+    "integerRoundedTiesAllowed": true,
+    "oneCompletedScorePassOnly": true,
+    "judgmentExecutionAllowed": false,
+    "scoreRerunAllowed": false,
+    "scoreChangeAllowed": false,
+    "proseRewriteAllowed": false,
+    "candidateChangeAllowed": false,
+    "ledgerChangeAllowed": false,
+    "generatedSeoProjectionChangeAllowed": false,
+    "productionPathSetChangeAllowed": false,
+    "remainingProductionBatchesAllowed": false
+  },
+  "priorFailureLocks": {
+    "execution": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/execution.json",
+      "bytes": 6650,
+      "sha256": "92986e456813a5174c17129b64ac562ebd9982b9dc58b39504ec7559910a0b39",
+      "status": "ten-debate-production-mutation-failed-closed-and-rolled-back"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/analysis.json",
+      "bytes": 4244,
+      "sha256": "8cace79b3da85035e68812fcd788c05ec7caa8b4d5212a3510d8e8b67fb48be6",
+      "status": "ten-debate-production-mutation-failed-closed-rolled-back-awaiting-parser-remedy-plan-decision"
+    },
+    "spentActivation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/execution-activation.json",
+      "bytes": 11288,
+      "sha256": "b583df77e001a7a8bddf44d12a5a79bd2cb3d2d461cd8e3626447638d2e3478c",
+      "reusable": false
+    }
+  },
+  "immutableMutationLocks": {
+    "mutationPacket": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/mutation-packet.json",
+      "bytes": 33708,
+      "sha256": "d91da8004d921b6c5dd4a0cd720a8d8a28fd007c29a4dd6390ef67245640ed18"
+    },
+    "originalPreparationManifest": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/preparation-manifest.json",
+      "bytes": 16952,
+      "sha256": "65468126a7960752dd8327987bedcb576b2223a9168c18f7b7b87a9b435c2fd0"
+    },
+    "productionSourceBaseline": {
+      "path": "src/data/debates.js",
+      "sha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6"
+    },
+    "productionSourceProjectedAfter": {
+      "bytes": 4463512,
+      "sha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561"
+    },
+    "generatedSeoChangedOutputsSha256": "4668176bc515bb0ceefe4c307acb7d3b96be09a1640c5b0187837cdbb77f6d07",
+    "generatedSeoUnchangedOutputsManifestSha256": "f139a2e9d6869a2ccec6899564280441b963d53b9ed69f3e0e79a23244a322c1"
+  },
+  "remedyArtifacts": {
+    "parserContract": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/parser-contract.json",
+      "bytes": 6197,
+      "sha256": "02a4f65cebeb5c598067ba601bb5f3b62bb710ade4185a74452ac55dac7b1d92",
+      "status": "production-mutation-status-parser-remedy-contract-frozen"
+    },
+    "parser": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/status-parser.mjs",
+      "bytes": 2137,
+      "sha256": "76f2dcaaac7a489619879f69c9569b2d350fcf8c7f958a6d8f436d39bda97689"
+    },
+    "regressionTest": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/test-status-parser.mjs",
+      "bytes": 3874,
+      "sha256": "0ec213d360869d80dfa828e6fc5ad14bf2c950b03bc95acddd39a67fb1fb82c8"
+    },
+    "preparation": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/preparation-manifest.json",
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/analysis.json",
+    "futureActivation": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/execution-activation.json",
+    "futureExecution": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/execution.json"
+  },
+  "preparationChecks": {
+    "priorFrozenSourceHashesReplayed": 50,
+    "priorFrozenSourceHashFailures": 0,
+    "productionLedgerTargetsAbsent": 10,
+    "productionSourceBaselineHashPassed": true,
+    "mutationPacketHashPassed": true,
+    "exactProductionPathSetHashPassed": true,
+    "parserSyntaxPassed": true,
+    "regressionTestPassed": true,
+    "actualGitFirstRawByte": 32,
+    "actualGitFirstStatus": " M",
+    "actualGitFirstPathPreserved": "debate/craig-harris-moral-foundations-2011/index.html",
+    "fixtureSetupCorrectionsBeforeFreeze": 1,
+    "fixtureSetupCorrection": "The first temporary repository left the whole docs directory untracked, so Git correctly summarized it as docs/. A tracked placeholder was added to make the fixture match the real repository's existing docs/assessment-ledgers directory; the parser's required first-path case had already passed.",
+    "productionFilesChanged": 0,
+    "productionMutationPerformed": false
+  },
+  "replacementExecutionPlan": [
+    {
+      "stage": 1,
+      "name": "separate-status-parser-remedy-execution-activation",
+      "separateAuthorizationRequired": true,
+      "allowedWrites": [
+        "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/execution-activation.json"
+      ],
+      "requiredActions": [
+        "hash-lock this remedy plan, parser contract, parser source, and regression test",
+        "rerun the frozen regression test",
+        "replay all fifty original frozen source hashes",
+        "verify the ten production ledger targets remain absent",
+        "verify the original mutation packet, source baseline, source projection, generated SEO projection, and exact 23-path set remain unchanged",
+        "freeze one new attempt with zero retries and the original bounded rollback"
+      ],
+      "productionMutation": false
+    },
+    {
+      "stage": 2,
+      "name": "single-atomic-ten-debate-production-mutation-retry-with-frozen-parser",
+      "separateAuthorizationRequiredAfterActivation": true,
+      "allowedProductionWrites": 23,
+      "allowedAuditWrites": [
+        "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/execution.json",
+        "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/analysis.json"
+      ],
+      "parserInvocation": "git status --porcelain=v1 -z returned as a Buffer",
+      "parserPath": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/status-parser.mjs",
+      "expectedPostWriteStatusCounts": {
+        " M": 13,
+        "??": 10
+      },
+      "attemptsMaximum": 1,
+      "retriesMaximum": 0,
+      "automaticRetry": false,
+      "productionMutation": true
+    }
+  ],
+  "rollbackBoundary": {
+    "existingProductionPathsRestoredOnFailure": 13,
+    "newProductionLedgersRemovedOnFailure": 10,
+    "unrelatedPathsMayBeTouched": false,
+    "postRollbackParsedEntriesRequiredBeforeAuditWrites": 0,
+    "postRollbackRepositoryCheckRequired": true,
+    "failedMutationCommitForbidden": true,
+    "failedMutationPushForbidden": true
+  },
+  "totals": {
+    "debates": 10,
+    "sections": 51,
+    "moves": 188,
+    "overallScores": 20,
+    "integerRoundedTies": 2,
+    "productionPathsFrozen": 23,
+    "parserSourceFilesFrozen": 1,
+    "parserRegressionFilesFrozen": 1,
+    "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "productionMutations": 0,
+    "productionMutationRetries": 0,
+    "meteredApiCostUsd": 0
+  },
+  "authorization": {
+    "parserRemedyPlanPreparation": true,
+    "replacementExecutionActivation": false,
+    "productionMutationRetry": false,
+    "productionLedgerPublication": false,
+    "productionDebatesChange": false,
+    "generatedSeoPublication": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "separateReplacementExecutionActivationRequired": true,
+    "separateRetryAuthorizationRequiredAfterActivation": true,
+    "spentActivationReuseForbidden": true,
+    "automaticRetryForbidden": true,
+    "remedyArtifactHashMismatchStops": true,
+    "originalPayloadHashMismatchStops": true,
+    "productionBaselineMismatchStops": true,
+    "productionLedgerTargetPresenceStops": true,
+    "parserRegressionFailureStops": true,
+    "unexpectedStatusOrPathStops": true,
+    "judgmentExecutionForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseRewriteForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "user-decision-on-production-mutation-status-parser-remedy-execution-activation"
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-status-parser-remedy-preparation-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-status-parser-remedy",
+  "status": "production-mutation-status-parser-remedy-plan-freeze-passed",
+  "productionCanary": true,
+  "planningOnly": true,
+  "preparation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/preparation-manifest.json",
+    "bytes": 11822,
+    "sha256": "c5ae7f8f07459b8ee48794bffae399db4c6b0c462418350c00b2cad3f5ab1df0",
+    "status": "production-mutation-status-parser-remedy-plan-prepared-and-frozen"
+  },
+  "remedy": {
+    "plainEnglish": "The replacement parser reads Git's byte-delimited status output directly. It preserves the leading worktree-status space and every byte of the following pathname, so the first valid path can no longer lose its first character through whitespace trimming.",
+    "parserContract": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/parser-contract.json",
+      "bytes": 6197,
+      "sha256": "02a4f65cebeb5c598067ba601bb5f3b62bb710ade4185a74452ac55dac7b1d92"
+    },
+    "parser": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/status-parser.mjs",
+      "bytes": 2137,
+      "sha256": "76f2dcaaac7a489619879f69c9569b2d350fcf8c7f958a6d8f436d39bda97689"
+    },
+    "regressionTest": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/test-status-parser.mjs",
+      "bytes": 3874,
+      "sha256": "0ec213d360869d80dfa828e6fc5ad14bf2c950b03bc95acddd39a67fb1fb82c8"
+    }
+  },
+  "checks": {
+    "priorFailureAuditHashesPassed": 3,
+    "originalMutationPlanHashesPassed": 2,
+    "priorFrozenSourceHashesPassed": 50,
+    "priorFrozenSourceHashFailures": 0,
+    "productionLedgerTargetsAbsent": 10,
+    "productionSourceBaselineHashPassed": true,
+    "productionPathSetHashPassed": true,
+    "parserContractJsonPassed": true,
+    "parserSyntaxPassed": true,
+    "regressionTestSyntaxPassed": true,
+    "byteFixturePassed": true,
+    "realTemporaryGitRepositoryPassed": true,
+    "actualGitFirstStatus": " M",
+    "actualGitFirstRawByte": 32,
+    "actualGitCompleteFirstPathPreserved": true,
+    "renameBoundaryFixturePassed": true,
+    "unterminatedRecordFailedClosed": true,
+    "stringInputFailedClosed": true,
+    "fixtureSetupCorrectionsBeforeFreeze": 1,
+    "productionFilesChanged": 0,
+    "productionMutationPerformed": false,
+    "replacementActivationCreated": false,
+    "productionRetryPerformed": false
+  },
+  "fixtureCorrection": {
+    "category": "temporary-test-repository-layout",
+    "parserFailure": false,
+    "productionImpact": false,
+    "plainEnglish": "The first temporary repository left the whole docs directory untracked, so Git summarized it as docs/ instead of listing the intended file. Adding a tracked placeholder made the test repository match the real project. The critical leading-space and complete-first-path assertions were unaffected, and the corrected full test passed."
+  },
+  "immutablePayload": {
+    "mutationPacketSha256": "d91da8004d921b6c5dd4a0cd720a8d8a28fd007c29a4dd6390ef67245640ed18",
+    "exactProductionPathsSha256": "e4122d0e773383c57bd8f248ab91bfa2e0bdb21bb3a392861a50767d35a98e67",
+    "productionSourceBaselineSha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "productionSourceProjectedSha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+    "candidateChanges": 0,
+    "ledgerChanges": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "generatedSeoProjectionChanges": 0
+  },
+  "preservedControls": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "meteredApiCostUsd": 0,
+    "remainingProductionBatchesStarted": false
+  },
+  "decision": {
+    "parserRemedyPlanPassed": true,
+    "parserRemedyPlanFrozen": true,
+    "spentActivationReusable": false,
+    "replacementExecutionActivationRequired": true,
+    "replacementExecutionActivationAuthorized": false,
+    "productionMutationRetryAuthorized": false,
+    "automaticRetryAllowed": false,
+    "productionMutationRemains": false
+  },
+  "authorization": {
+    "parserRemedyPlanPreparation": true,
+    "replacementExecutionActivation": false,
+    "productionMutationRetry": false,
+    "productionLedgerPublication": false,
+    "productionDebatesChange": false,
+    "generatedSeoPublication": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "separateReplacementExecutionActivationRequired": true,
+    "separateRetryAuthorizationRequiredAfterActivation": true,
+    "spentActivationReuseForbidden": true,
+    "automaticRetryForbidden": true,
+    "remedyArtifactHashMismatchBlocks": true,
+    "originalPayloadHashMismatchBlocks": true,
+    "productionBaselineMismatchBlocks": true,
+    "parserRegressionFailureBlocks": true,
+    "unexpectedStatusOrPathBlocks": true,
+    "judgmentExecutionForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseRewriteForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "user-decision-on-production-mutation-status-parser-remedy-execution-activation"
+}
