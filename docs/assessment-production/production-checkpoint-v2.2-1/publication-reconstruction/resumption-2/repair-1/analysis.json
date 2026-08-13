@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-129-publication-repair-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-129-publication-repair-1",
+  "status": "debate-129-bounded-repair-and-complete-publication-validation-passed",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "repairContextPassed": true,
+    "completeDebateValidationPassed": true,
+    "correctedFields": [
+      {
+        "field": "moveProse.pro-rational-acceptance-distinction.critique",
+        "words": 116,
+        "characters": 953,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.con-content-conceptual-constraints.critique",
+        "words": 117,
+        "characters": 929,
+        "sentences": 4
+      }
+    ],
+    "movesValidated": 17,
+    "critiquesValidated": 17,
+    "exactSourceQuotesValidated": 2,
+    "overallCommentarySidesValidated": 2,
+    "aiExtensionSidesValidated": 2,
+    "immutableFieldsChanged": 0,
+    "attempts": 1,
+    "retries": 0,
+    "furtherCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "originalFailedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/outputs/debate-129.json",
+    "originalFailedOutputPreserved": true,
+    "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/repair-output.json",
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/merged/debate-129.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/merge-audit.json"
+  },
+  "totals": {
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "sevenContextResumptionPlanPreparation": true,
+    "sevenContextModelExecution": false,
+    "retry": false,
+    "furtherCorrectionModelExecution": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-and-freeze-separate-seven-context-publication-resumption-plan"
+}
