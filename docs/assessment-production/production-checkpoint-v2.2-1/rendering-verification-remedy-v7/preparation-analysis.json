@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v7-preparation-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v7",
+  "status": "seventh-replacement-rendering-verification-plan-not-frozen-after-synthetic-browser-control-deadline",
+  "recordedAt": "2026-08-13T19:14:17.000Z",
+  "checkpointCommit": "02194e8f76b5030f397b072c388da5dc1461f07e",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "scope": {
+    "authorized": "prepare-and-freeze-a-navigation-only-remedy-v7-plan-after-remedy-v6-failed-closed",
+    "performed": "synthetic-fixture-only-navigation-prototyping-and-stress-testing",
+    "productionCandidatePagesLoaded": 0,
+    "productionDebatesAttempted": 0,
+    "judgmentModelsExecuted": 0,
+    "scorePassesExecuted": 0,
+    "directCostUsd": 0
+  },
+  "priorFailure": {
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v6/analysis.json",
+    "analysisSha256": "8e5d5d35546c3874fa1933cf7c9bd624aab97cac17b4b3db4db34535d8be78fe",
+    "execution": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v6/execution.json",
+    "executionSha256": "fe1fa905fe7ee1b6d6950357255b2ab87ad7bdf0a4dae42f4b069a6979a6aa7b",
+    "classification": "browser-controller-navigation-command-deadline-after-eighteen-valid-viewport-results",
+    "candidateRenderingDefectEstablished": false
+  },
+  "syntheticFixture": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v6/synthetic/preflight.html",
+    "sha256": "0cb2a2ddaab0fe5cc12217fef34bf295a93fdea0cb3483347a1acda7d22c717f",
+    "localOrigin": "http://127.0.0.1:4195",
+    "productionContentPresent": false,
+    "navigationToken": "69eb2aefb7f44fb0f12ce63834f02ddb1d2529a517381d93523f83d87a36f2cd",
+    "transientScreenshotFilesPersisted": 0
+  },
+  "prototypeSources": [
+    {
+      "path": "scripts/lib/assessment-production-checkpoint-v2.2-rendering-navigation-session-v7.mjs",
+      "sha256": "4d96864429e65e1f522153f4653f150d5547d14071f30aaaaf8ed5549b2d42e0",
+      "status": "experimental-not-frozen-not-authorized-for-production-candidates"
+    },
+    {
+      "path": "scripts/lib/assessment-production-checkpoint-v2.2-rendering-browser-runner-v7.mjs",
+      "sha256": "855e4ed2048594448d9b1649aa98787e2970b22ccd3ffcd78739290a69973009",
+      "status": "experimental-not-frozen-not-authorized-for-production-candidates"
+    },
+    {
+      "path": "scripts/lib/assessment-production-checkpoint-v2.2-rendering-synthetic-preflight-v7.mjs",
+      "sha256": "799c2aee5810b023fa21e9af921b4294efe0717ce959bb6fd53beedc1b04af3a",
+      "status": "experimental-not-frozen-not-authorized-for-production-candidates"
+    }
+  ],
+  "developmentChronology": [
+    {
+      "sequence": 1,
+      "design": "direct-create-tab-at-http-url",
+      "result": "rejected",
+      "observation": "The tab remained at about:blank and raw Chrome DevTools Protocol access was refused because the tab was not in an HTTP context.",
+      "candidatePagesLoaded": 0
+    },
+    {
+      "sequence": 2,
+      "design": "one-supported-page-navigate-followed-by-runtime-location-assign",
+      "result": "transport-proof-passed",
+      "observation": "A synthetic HTTP document loaded through one supported navigation, then a second exact synthetic URL loaded through location.assign and exact-URL readiness polling.",
+      "candidatePagesLoaded": 0
+    },
+    {
+      "sequence": 3,
+      "design": "two-persistent-phase-tabs",
+      "result": "rejected",
+      "observation": "The keyboard tab did not inherit the controlled viewport exactly, so pointer and keyboard could not satisfy the same frozen viewport contract.",
+      "candidatePagesLoaded": 0
+    },
+    {
+      "sequence": 4,
+      "design": "one-persistent-serial-tab-with-fresh-tokenized-pointer-and-keyboard-documents",
+      "result": "single-desktop-viewport-passed",
+      "observation": "All synthetic checks passed with one Page.navigate and three location.assign document changes.",
+      "candidatePagesLoaded": 0
+    },
+    {
+      "sequence": 5,
+      "design": "persistent-serial-tab-with-load-event-observation",
+      "result": "stress-rejected",
+      "completedViewportCycles": 13,
+      "failedViewportCycle": 14,
+      "observation": "The synthetic page had loaded, but the Page.loadEventFired observer missed the event and reached its fixed deadline.",
+      "sameDesignRetryPerformed": false,
+      "candidatePagesLoaded": 0
+    },
+    {
+      "sequence": 6,
+      "design": "persistent-serial-tab-with-exact-url-and-ready-state-polling",
+      "result": "stress-rejected",
+      "completedViewportCycles": 16,
+      "failedViewportCycle": 17,
+      "observation": "The controller timed out after 3000 milliseconds while sending the redundant Runtime.enable command before navigation.",
+      "sameDesignRetryPerformed": false,
+      "timeoutExtended": false,
+      "candidatePagesLoaded": 0
+    },
+    {
+      "sequence": 7,
+      "design": "persistent-serial-tab-with-memoized-idempotent-domain-enables",
+      "result": "terminal-stress-rejected",
+      "completedViewportCycles": 1,
+      "failedViewportCycle": 2,
+      "completedCycle": {
+        "viewport": "desktop",
+        "requiredBooleanChecksPassed": 16,
+        "pageNavigateCalls": 1,
+        "runtimeLocationAssignCalls": 3,
+        "actualDomainEnableCalls": 4,
+        "memoizedDomainEnableCalls": 4,
+        "freshTokenizedDocuments": 4
+      },
+      "failure": {
+        "viewport": "mobile",
+        "lastObservedDocumentStage": "pointer-measured",
+        "browserControlCallDeadlineMs": 30000,
+        "exactInternalCommandSerialized": false,
+        "message": "The browser-control call exceeded its fixed 30000-millisecond ceiling and reset the control session before a complete viewport result was returned."
+      },
+      "sameDesignRetryPerformed": false,
+      "timeoutExtended": false,
+      "candidatePagesLoaded": 0
+    }
+  ],
+  "decision": {
+    "failedClosed": true,
+    "v7PlanFrozen": false,
+    "v7PacketsCreated": 0,
+    "v7ActivationCreated": false,
+    "v7ExecutionAuthorized": false,
+    "sameDesignRetryPerformed": false,
+    "timeoutExtended": false,
+    "productionCandidateRenderingAttempted": false,
+    "candidateRenderingDefectEstablished": false,
+    "partialStatePromotionPermitted": false,
+    "priorPassingEvidenceAutomaticReusePermitted": false,
+    "renderingRepairPermitted": false,
+    "validatorMigrationPermitted": false,
+    "productionLedgerPublicationPermitted": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "preservedControls": {
+    "judgmentModel": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "chatgpt-subscription",
+    "scoreBlindness": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentExecutionPerformed": false,
+    "scoresReadOrChanged": false,
+    "existingStopRulesPreserved": true
+  },
+  "cleanup": {
+    "browserTabsBeforeFinalization": 1,
+    "browserTabsFinalizedWithoutKeep": true,
+    "viewportOverrideReset": true,
+    "localServerStopped": true,
+    "localServerPort": 4195,
+    "localServerPortClosed": true,
+    "dialogsLeftOpen": false,
+    "temporaryBrowserTabsLeftOpen": false
+  },
+  "absentFrozenOutputs": [
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v7/preparation-manifest.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v7/execution-activation.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v7/execution.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v7/rendering-audit.json",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v7/packets",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v7/evidence"
+  ],
+  "authorization": {
+    "retry": false,
+    "timeoutExtension": false,
+    "productionCandidateNavigation": false,
+    "renderingRepair": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-remedy-v8-plan-preparation"
+}
