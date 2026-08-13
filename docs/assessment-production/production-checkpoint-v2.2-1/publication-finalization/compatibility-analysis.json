@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-finalization-compatibility-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-finalization",
+  "status": "production-mutation-compatibility-blockers-recorded",
+  "analyzedAt": "2026-08-13T13:38:19.000Z",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "findings": [
+    {
+      "id": "optional-overall-reference-links",
+      "description": "The active publication contract permits no fallacy or bias tag when none materially applies, but the current site validator requires every Overall Commentary blunder to contain at least one reference link.",
+      "evidence": {
+        "debates": 10,
+        "overallBlunders": 56,
+        "emptyReferenceLinks": 53,
+        "taggedReferenceLinks": 3,
+        "byDebate": [
+          {
+            "debateNumber": "50",
+            "overallBlunders": 7,
+            "emptyReferenceLinks": 6,
+            "taggedReferenceLinks": 1
+          },
+          {
+            "debateNumber": "192",
+            "overallBlunders": 4,
+            "emptyReferenceLinks": 4,
+            "taggedReferenceLinks": 0
+          },
+          {
+            "debateNumber": "129",
+            "overallBlunders": 2,
+            "emptyReferenceLinks": 2,
+            "taggedReferenceLinks": 0
+          },
+          {
+            "debateNumber": "40",
+            "overallBlunders": 5,
+            "emptyReferenceLinks": 5,
+            "taggedReferenceLinks": 0
+          },
+          {
+            "debateNumber": "25",
+            "overallBlunders": 7,
+            "emptyReferenceLinks": 5,
+            "taggedReferenceLinks": 2
+          },
+          {
+            "debateNumber": "104",
+            "overallBlunders": 5,
+            "emptyReferenceLinks": 5,
+            "taggedReferenceLinks": 0
+          },
+          {
+            "debateNumber": "22",
+            "overallBlunders": 7,
+            "emptyReferenceLinks": 7,
+            "taggedReferenceLinks": 0
+          },
+          {
+            "debateNumber": "10",
+            "overallBlunders": 5,
+            "emptyReferenceLinks": 5,
+            "taggedReferenceLinks": 0
+          },
+          {
+            "debateNumber": "167",
+            "overallBlunders": 8,
+            "emptyReferenceLinks": 8,
+            "taggedReferenceLinks": 0
+          },
+          {
+            "debateNumber": "122",
+            "overallBlunders": 6,
+            "emptyReferenceLinks": 6,
+            "taggedReferenceLinks": 0
+          }
+        ],
+        "currentValidator": "scripts/validate-debates.mjs:317",
+        "activeContract": "docs/assessment-production-workflow.md:47"
+      },
+      "blocksFinalizationStaging": false,
+      "blocksRenderingVerification": false,
+      "blocksProductionMutation": true,
+      "requiredRemedy": "A separately authorized production-mutation plan must allow zero reference links while retaining full validation for any supplied link; it must not synthesize or force tags."
+    },
+    {
+      "id": "checkpoint-ledger-schema-adapter",
+      "description": "The current site validator routes the displayed Rubric v2 label to the legacy calculateV2Ledger shape, while this canary uses the promoted adjudicated-consensus raw ledger and v2.2 score-stability controls.",
+      "evidence": {
+        "debates": 10,
+        "displayedRubric": "Slugfester Reassessment Rubric v2",
+        "checkpointFinalLedger": "docs/assessment-production/production-checkpoint-v2.2-1/final-ledger/final-ledger.json",
+        "checkpointScores": "docs/assessment-production/production-checkpoint-v2.2-1/score-pass/calculated-scores.json",
+        "currentValidator": "scripts/validate-debates.mjs:101-137",
+        "currentCalculator": "scripts/lib/reassessment-scoring.mjs:82"
+      },
+      "blocksFinalizationStaging": false,
+      "blocksRenderingVerification": false,
+      "blocksProductionMutation": true,
+      "requiredRemedy": "A separately authorized production-mutation plan must define and test a checkpoint-specific per-debate ledger adapter and validator without relabeling the model, rubric, or score protocol."
+    }
+  ],
+  "authorization": {
+    "compatibilityRemedyPlanPreparation": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

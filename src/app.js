@@ -2212,15 +2212,19 @@ function renderDebate(id) {
   renderDebateObject(debate);
 }
 
-function renderDebateObject(debate, { calibrationPreview = false } = {}) {
+function renderDebateObject(
+  debate,
+  { calibrationPreview = false, publicationStagingPreview = false } = {}
+) {
+  const preview = calibrationPreview || publicationStagingPreview;
   const seo = debateSeo(debate);
-  setSeo(calibrationPreview
+  setSeo(preview
     ? {
         ...seo,
         canonicalPath: null,
         jsonLd: null,
         robots: "noindex,nofollow",
-        title: `[Calibration preview] ${seo.title}`
+        title: `${calibrationPreview ? "[Calibration preview]" : "[Publication staging preview]"} ${seo.title}`
       }
     : seo);
 
@@ -2230,11 +2234,12 @@ function renderDebateObject(debate, { calibrationPreview = false } = {}) {
   ]);
 
   app.innerHTML = renderShell(`
-    <main class="debate-page"${calibrationPreview ? ' data-calibration-preview="true"' : ""}>
+    <main class="debate-page"${calibrationPreview ? ' data-calibration-preview="true"' : publicationStagingPreview ? ' data-publication-staging-preview="true"' : ""}>
       <section class="debate-hero">
         <div>
           <a class="back-link" href="/">Back to debates</a>
           ${calibrationPreview ? '<p class="source-note calibration-preview-note"><strong>Calibration preview:</strong> recovered diagnostic output only. This scorecard is excluded from production data and rankings.</p>' : ""}
+          ${publicationStagingPreview ? '<p class="source-note calibration-preview-note"><strong>Publication staging preview:</strong> validated canary candidate only. This scorecard remains excluded from production data and rankings pending rendering and mutation authorization.</p>' : ""}
           <p class="eyebrow">${escapeHtml(debateNumberLabel(debate))} · ${escapeHtml(debate.label)} · Last rendered: ${escapeHtml(debate.date)}</p>
           <h1>${escapeHtml(debate.title)}</h1>
           <p class="motion large">${escapeHtml(debate.motion)}</p>
@@ -2272,6 +2277,10 @@ function renderDebateObject(debate, { calibrationPreview = false } = {}) {
 
 export function renderCalibrationDebate(debate) {
   renderDebateObject(debate, { calibrationPreview: true });
+}
+
+export function renderPublicationStagingDebate(debate) {
+  renderDebateObject(debate, { publicationStagingPreview: true });
 }
 
 function renderSideHeading(side, tone) {
