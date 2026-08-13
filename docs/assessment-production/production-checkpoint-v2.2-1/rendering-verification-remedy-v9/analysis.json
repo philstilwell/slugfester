@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v9-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v9",
+  "status": "ninth-replacement-rendering-verification-passed",
+  "recordedAt": "2026-08-13T20:46:01.391Z",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "execution": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/execution.json"
+  },
+  "decision": {
+    "failedClosed": false,
+    "renderingGatePassed": true,
+    "tenDebatesPassed": true,
+    "desktopAndMobilePassed": true,
+    "pointerAndKeyboardPassed": true,
+    "imageContractPassed": true,
+    "runtimeGatePassed": true,
+    "sourceMutationDetected": false,
+    "retryPerformed": false,
+    "timeoutExtended": false,
+    "renderingRepairPerformed": false,
+    "validatorMigrationPerformed": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "gate": {
+    "activationSourceHashReplayPassedBeforeExecution": true,
+    "packetHashReplayPassedBeforeExecution": true,
+    "debatesPassed": 10,
+    "viewportResultsPassed": 20,
+    "screenshotsPassed": 40,
+    "requiredBooleanChecksPassed": 760,
+    "runtimeFailures": 0,
+    "horizontalOverflowFailures": 0,
+    "invalidJpegScreenshots": 0,
+    "blankScreenshots": 0,
+    "dimensionMismatches": 0,
+    "identicalCollapsedOpenPairs": 0,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "directCostUsd": 0
+  },
+  "diagnosis": {
+    "observed": "All ten frozen publication candidates passed desktop and mobile rendering. Every viewport passed the complete 38-check contract, native pointer opening, native Enter opening, native Space closing, exact viewport measurements, JPEG signature and nonblank analysis, distinct collapsed/open screenshots, horizontal-overflow checks, and zero-tolerance runtime diagnostics.",
+    "remedyOutcome": "The fresh Chrome keyboard tab used Page.navigate once for its diagnostic bootstrap and Runtime.evaluate location.assign for the measured candidate. All twenty exact-URL and complete-ready-state observations finished within the unchanged 15000-millisecond deadline; the remedy-v8 controller load-observation failure did not recur.",
+    "established": [
+      "The activation, all 229 frozen source hashes, and all 10 packet hashes passed before browser execution.",
+      "The frozen explicit order completed without retry, timeout extension, transport substitution, or prior-evidence reuse.",
+      "All 20 viewport evidence records and all 40 JPEG screenshots passed the independent evidence validator.",
+      "Both Chromium surfaces reported Chrome major version 151.",
+      "No console error, console warning, page error, failed request, horizontal overflow, score change, display-field change, or frozen source mutation was detected.",
+      "All run-owned tabs closed, both viewport overrides reset, and the localhost server stopped with port 4197 closed."
+    ],
+    "notEstablished": [
+      "The rendering pass does not itself authorize compatibility changes, production ledger publication, production mutation, or remaining production batches.",
+      "No judgment model or score pass ran during rendering verification."
+    ]
+  },
+  "compatibilityBoundary": {
+    "renderingVerificationBlocked": false,
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "blockers": [
+      "optional-overall-reference-links",
+      "checkpoint-ledger-schema-adapter"
+    ]
+  },
+  "cleanup": {
+    "browserTabsRemaining": 0,
+    "inAppViewportOverrideReset": true,
+    "chromeViewportOverrideReset": true,
+    "localServerStopped": true,
+    "localServerPortClosed": true,
+    "persistedAuditEvidenceViewportResults": 20,
+    "persistedAuditEvidenceScreenshots": 40
+  },
+  "preservedControls": {
+    "judgmentModel": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlindness": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentExecutionPerformed": false,
+    "scoresReadOrChanged": false
+  },
+  "authorization": {
+    "compatibilityRemedyPlanPreparation": true,
+    "compatibilityRemedyExecution": false,
+    "renderingRepair": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-compatibility-remedy-plan-preparation"
+}

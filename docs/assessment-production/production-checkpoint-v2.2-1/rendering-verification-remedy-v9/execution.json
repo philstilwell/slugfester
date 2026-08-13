@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v9-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v9",
+  "status": "ninth-replacement-rendering-verification-passed",
+  "startedAt": "2026-08-13T20:38:47.416Z",
+  "finishedAt": "2026-08-13T20:46:01.391Z",
+  "wallElapsedMs": 433975,
+  "totalViewportElapsedMs": 275822.45,
+  "checkpointCommit": "5241010974657b2e1eb61872afd3c5e71be26c61",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "activation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/execution-activation.json",
+    "sha256": "2570a71330bc98218a292a1068fddf82c0038676f23e99e8742f30c16a1e7826"
+  },
+  "preparation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/preparation-manifest.json",
+    "sha256": "cc211465326d47b3778359d9b2aac06cb30157949a449dfee7cc9d781ca6e60d"
+  },
+  "navigationToken": "168f06d42a58f50ac4f13dcc5be613c399877d59ab07ff2e5289fd15907f21e2",
+  "sourceAndPacketGate": {
+    "activationStatusValidated": true,
+    "activationTokenRecomputed": true,
+    "preparationHashReplayed": true,
+    "sourceHashesReplayed": 229,
+    "sourceHashFailures": 0,
+    "packetsReplayed": 10,
+    "packetHashFailures": 0,
+    "futureExecutionOutputsAbsentBeforeRun": true,
+    "evidenceRootAbsentBeforeRun": true,
+    "repositoryCleanBeforeRun": true
+  },
+  "gate": {
+    "expectedDebates": 10,
+    "attemptedDebates": 10,
+    "passingDebates": 10,
+    "expectedViewportResults": 20,
+    "attemptedViewportResults": 20,
+    "passingViewportResults": 20,
+    "failedViewportResults": 0,
+    "unattemptedViewportResults": 0,
+    "requiredBooleanChecks": 760,
+    "requiredBooleanChecksPassed": 760,
+    "browserDocumentLoads": 80,
+    "diagnosticBootstrapLoads": 40,
+    "measuredCandidateLoads": 40,
+    "screenshots": 40,
+    "validJpegScreenshots": 40,
+    "nonblankScreenshots": 40,
+    "dimensionMatchedScreenshots": 40,
+    "collapsedOpenPairsWithDifferentHashes": 20,
+    "pointerInteractionTests": 20,
+    "keyboardEnterTests": 20,
+    "keyboardSpaceTests": 20,
+    "rawAccordionStateObservations": 100,
+    "exactViewportPhaseChecks": 60,
+    "keyboardInitialPageNavigateCalls": 20,
+    "keyboardRuntimeLocationAssignCalls": 20,
+    "runtimeCounts": {
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "pageErrors": 0,
+      "failedRequests": 0
+    }
+  },
+  "browser": {
+    "controller": "split-Chromium-fresh-keyboard-location-assign-transport",
+    "pointerSurface": "Codex In-app Chromium browser",
+    "keyboardSurface": "Google Chrome via ChatGPT browser extension",
+    "pointerUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "keyboardUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "sameChromeMajorVersion": true,
+    "keyboardNavigation": {
+      "initialPageNavigateMilliseconds": {
+        "minimum": 34.28,
+        "maximum": 311.04,
+        "mean": 73.85
+      },
+      "runtimeLocationAssignMilliseconds": {
+        "minimum": 117.6,
+        "maximum": 809.2,
+        "mean": 209.53,
+        "frozenDeadline": 15000
+      },
+      "freshKeyboardTabsOpened": 20,
+      "freshKeyboardTabsClosed": 20,
+      "retryPerformed": false,
+      "timeoutExtended": false,
+      "adaptiveNavigationRegenerationPerformed": false
+    }
+  },
+  "evidenceValidation": {
+    "validator": "scripts/validate-assessment-production-checkpoint-v2.2-rendering-verification-remedy-v9-evidence.mjs",
+    "status": "ten-debate-remedy-v9-rendering-evidence-passed",
+    "viewportResults": 20,
+    "screenshots": 40,
+    "runtimeFailures": 0,
+    "failedRequests": 0
+  },
+  "executionDiscipline": {
+    "viewportRetries": 0,
+    "candidateNavigationRetries": 0,
+    "timeoutExtensions": 0,
+    "alternativeNavigationMethods": 0,
+    "partialPassPromotion": false,
+    "priorEvidenceReuse": false,
+    "modelContexts": 0,
+    "scorePasses": 0,
+    "directCostUsd": 0
+  },
+  "cleanup": {
+    "runOwnedBrowserTabsClosed": true,
+    "browserTabsRemaining": 0,
+    "inAppViewportOverrideReset": true,
+    "chromeViewportOverrideReset": true,
+    "localServerStopped": true,
+    "localServerPortClosed": true,
+    "failedViewportEvidencePersisted": false,
+    "invalidScreenshotEvidencePersisted": false
+  },
+  "renderingVerificationPassed": true,
+  "renderingRepairPerformed": false,
+  "validatorMigrationPerformed": false,
+  "productionLedgerPublicationPerformed": false,
+  "productionMutationPerformed": false,
+  "authorization": {
+    "retry": false,
+    "timeoutExtension": false,
+    "alternativeNavigationMethod": false,
+    "renderingRepair": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": null
+}
