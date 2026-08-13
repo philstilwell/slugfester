@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-deterministic-publication-compilation-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-deterministic-publication-compilation",
+  "status": "ten-debate-deterministic-publication-compilation-passed",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "sourceHashesPassed": true,
+    "explicitOrderPassed": true,
+    "compiledRecordsPassed": 10,
+    "expectedCompiledRecords": 10,
+    "moves": 188,
+    "scoresRecalculated": false,
+    "scoresChanged": false,
+    "modelContexts": 0,
+    "modelAuthoredScores": 0,
+    "directCostUsd": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "preparation": "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/preparation-manifest.json",
+    "identitySnapshot": "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/production-identity-snapshot.json",
+    "activation": "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/execution-activation.json",
+    "execution": "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/execution.json",
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/analysis.json",
+    "compilationAudit": "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compilation-audit.json",
+    "compiledOutputs": [
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-50.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-192.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-129.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-40.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-25.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-104.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-22.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-10.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-167.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/deterministic-publication-compilation/compiled/debate-122.json"
+    ]
+  },
+  "authorization": {
+    "publicationFinalizationPlanPreparation": true,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-publication-finalization-plan-preparation"
+}
