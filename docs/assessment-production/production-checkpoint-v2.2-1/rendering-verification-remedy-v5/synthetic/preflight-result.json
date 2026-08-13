@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v5-synthetic-preflight",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v5",
+  "status": "passed-direct-jpeg-capture-readiness-runtime-and-native-interaction-preflight",
+  "recordedAt": "2026-08-13T17:45:28.000Z",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "screenshotsCapturedTransiently": 4,
+  "screenshotsPreservedInRepository": 0,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "browser": {
+    "name": "Google Chrome via ChatGPT browser extension",
+    "family": "Chromium",
+    "userAgentVersion": "Chrome/151.0.0.0"
+  },
+  "fixture": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v5/synthetic/preflight.html",
+    "baseUrl": "http://127.0.0.1:4193/docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v5/synthetic/preflight.html",
+    "navigationToken": "6c6870cd9fe0c419059ee10af816474548368735ff4ef69f19ebf92f054a8a53",
+    "syntheticStressCards": 72,
+    "reloads": 0,
+    "separatePointerAndKeyboardTabs": true,
+    "httpBootstrapBeforeRawDiagnostics": true
+  },
+  "methods": {
+    "readiness": "CDP Runtime.evaluate after frozen HTTP bootstrap and measured load",
+    "pointer": "CDP Input.dispatchMouseEvent",
+    "keyboard": "locator.press after direct CDP readiness and focus",
+    "screenshot": "CDP Page.captureScreenshot",
+    "screenshotParameters": {
+      "format": "jpeg",
+      "quality": 85,
+      "fromSurface": true,
+      "captureBeyondViewport": false
+    }
+  },
+  "viewports": {
+    "desktop": {
+      "targetCssViewport": { "width": 1440, "height": 1000 },
+      "controllerInput": { "width": 1152, "height": 800 },
+      "devicePixelRatio": 0.800000011920929,
+      "collapsed": {
+        "captureMilliseconds": 39.16,
+        "bytes": 147000,
+        "sha256": "144e9633f0509bef4ea3f8e866985568d67e3ea2268180584c77d4441be6c0ac",
+        "format": "JPEG",
+        "signatureHex": "ffd8ffe000104a4649460001",
+        "pixelWidth": 1152,
+        "pixelHeight": 800,
+        "uniqueColors": 46219,
+        "meanNormalized": 0.80313,
+        "entropy": 0.798842
+      },
+      "open": {
+        "captureMilliseconds": 49.01,
+        "bytes": 148548,
+        "sha256": "665dada16af15609613d60b80625bc83c29584dd37b6f4a0f67bd700e0122ef0",
+        "format": "JPEG",
+        "signatureHex": "ffd8ffe000104a4649460001",
+        "pixelWidth": 1152,
+        "pixelHeight": 800,
+        "uniqueColors": 47936,
+        "meanNormalized": 0.805826,
+        "entropy": 0.796598
+      },
+      "checks": {
+        "pointerReady": true,
+        "pointerFreshClosed": true,
+        "pointerOpened": true,
+        "pointerViewportExact": true,
+        "collapsedJpegSignature": true,
+        "openJpegSignature": true,
+        "collapsedOpenHashesDiffer": true,
+        "collapsedNonblank": true,
+        "openNonblank": true,
+        "screenshotDimensionsReconciled": true,
+        "keyboardReady": true,
+        "keyboardFreshClosed": true,
+        "keyboardEnterOpened": true,
+        "keyboardSpaceClosed": true,
+        "keyboardViewportExact": true
+      },
+      "runtimeCounts": {
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "pageErrors": 0,
+        "failedRequests": 0
+      }
+    },
+    "mobile": {
+      "targetCssViewport": { "width": 390, "height": 844 },
+      "controllerInput": { "width": 312, "height": 675 },
+      "devicePixelRatio": 0.800000011920929,
+      "collapsed": {
+        "captureMilliseconds": 34.04,
+        "bytes": 52787,
+        "sha256": "f129427cbcadcab64162eca48d29d8820920a11c509840456208dfd1f3607f61",
+        "format": "JPEG",
+        "signatureHex": "ffd8ffe000104a4649460001",
+        "pixelWidth": 312,
+        "pixelHeight": 675,
+        "uniqueColors": 28289,
+        "meanNormalized": 0.74809,
+        "entropy": 0.834771
+      },
+      "open": {
+        "captureMilliseconds": 27.69,
+        "bytes": 54807,
+        "sha256": "7d152b58b657f1355b017f9dc7d6ddf6025de4bb7b021b4ecff6d60b666b5231",
+        "format": "JPEG",
+        "signatureHex": "ffd8ffe000104a4649460001",
+        "pixelWidth": 312,
+        "pixelHeight": 675,
+        "uniqueColors": 29766,
+        "meanNormalized": 0.749228,
+        "entropy": 0.844299
+      },
+      "checks": {
+        "pointerReady": true,
+        "pointerFreshClosed": true,
+        "pointerOpened": true,
+        "pointerViewportExact": true,
+        "collapsedJpegSignature": true,
+        "openJpegSignature": true,
+        "collapsedOpenHashesDiffer": true,
+        "collapsedNonblank": true,
+        "openNonblank": true,
+        "screenshotDimensionsReconciled": true,
+        "keyboardReady": true,
+        "keyboardFreshClosed": true,
+        "keyboardEnterOpened": true,
+        "keyboardSpaceClosed": true,
+        "keyboardViewportExact": true
+      },
+      "runtimeCounts": {
+        "consoleErrors": 0,
+        "consoleWarnings": 0,
+        "pageErrors": 0,
+        "failedRequests": 0
+      }
+    }
+  },
+  "runtimeCounts": {
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "pageErrors": 0,
+    "failedRequests": 0
+  },
+  "productionMutationPerformed": false
+}

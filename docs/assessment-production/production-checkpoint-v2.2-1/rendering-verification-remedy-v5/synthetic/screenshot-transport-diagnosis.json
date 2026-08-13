@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v5-screenshot-transport-diagnosis",
+  "status": "direct-cdp-jpeg-quality-85-selected-after-candidate-png-command-deadline",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "failedRemedyV4Transport": {
+    "method": "CDP Page.captureScreenshot",
+    "format": "png",
+    "attemptedCandidate": "Debate 50 desktop",
+    "candidateHttpStatus": 200,
+    "directReadinessCompleted": true,
+    "result": "controller-command-deadline-before-screenshot-bytes-returned",
+    "deadlineMilliseconds": 3000,
+    "screenshotBytesReturned": false,
+    "renderingContentRegressionEstablished": false
+  },
+  "remedyV5Transport": {
+    "method": "CDP Page.captureScreenshot",
+    "parameters": {
+      "format": "jpeg",
+      "quality": 85,
+      "fromSurface": true,
+      "captureBeyondViewport": false
+    },
+    "exactSignatureHex": "ffd8ffe000104a4649460001",
+    "declaredFormatMustMatchBytes": true,
+    "pixelDimensionsMustEqualControllerInput": true,
+    "pixelDimensionsMustEqualRoundedCssViewportTimesDevicePixelRatio": true,
+    "minimumByteLength": 10000,
+    "minimumUniqueColors": 16,
+    "minimumEntropy": 0.02,
+    "collapsedAndOpenHashesMustDiffer": true,
+    "candidatePersistenceBeforeAllGatesPass": false
+  },
+  "finalSyntheticCaptureMilliseconds": {
+    "desktopCollapsed": 39.16,
+    "desktopOpen": 49.01,
+    "mobileCollapsed": 34.04,
+    "mobileOpen": 27.69,
+    "maximum": 49.01
+  },
+  "developmentIncidentsExcludedFromFrozenPreflight": [
+    {
+      "incident": "favicon-request-returned-404",
+      "resolution": "embedded-empty-data-favicon-added-before-final-preflight",
+      "candidateLoaded": false
+    },
+    {
+      "incident": "raw-diagnostics-requested-on-blank-new-tab",
+      "resolution": "final-preflight-used-authorized-http-bootstrap-before-diagnostic-attachment",
+      "pageMeasured": false,
+      "screenshotCaptured": false,
+      "candidateLoaded": false
+    }
+  ],
+  "screenshotsPreservedInRepository": 0,
+  "productionMutationPerformed": false
+}
