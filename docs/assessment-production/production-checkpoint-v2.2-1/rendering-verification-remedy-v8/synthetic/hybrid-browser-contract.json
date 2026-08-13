@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v8-hybrid-browser-contract",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v8",
+  "status": "split-chromium-rendering-and-keyboard-transport-selected",
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "productionDataPresent": false,
+  "diagnosis": {
+    "remedyV6Failure": "The Chrome-extension Page.navigate command reached its fixed controller deadline only after 18 complete passing viewports.",
+    "remedyV7Failure": "A single persistent Chrome-extension control channel remained unable to complete the 20-viewport synthetic rehearsal without a control-call deadline.",
+    "inAppOnlyRejection": "The in-app Chromium browser passed pointer, layout, JPEG, and runtime checks but its supported keyboard transport did not toggle the native details element.",
+    "selectedBoundary": "Move pointer, layout, content, runtime, and JPEG work to the in-app Chromium browser; retain the Chrome extension only for the supported native keyboard check."
+  },
+  "surfaces": {
+    "pointerAndScreenshots": {
+      "name": "Codex In-app Chromium browser",
+      "freshTabPerViewport": true,
+      "responsibilities": [
+        "content-and-disclosure-checks",
+        "exact-css-viewport-checks",
+        "horizontal-overflow-checks",
+        "pointer-open-and-native-state-checks",
+        "collapsed-and-open-direct-cdp-jpeg-capture",
+        "zero-tolerance-runtime-diagnostics"
+      ]
+    },
+    "keyboard": {
+      "name": "Google Chrome via ChatGPT browser extension",
+      "freshTabPerViewport": true,
+      "responsibilities": [
+        "native-summary-focus",
+        "supported-enter-open",
+        "supported-space-close",
+        "native-state-and-hit-test-observation",
+        "exact-css-viewport-check",
+        "zero-tolerance-runtime-diagnostics"
+      ]
+    }
+  },
+  "viewports": {
+    "desktop": {
+      "targetCssViewport": { "width": 1440, "height": 1000 },
+      "pointerControllerInput": { "width": 1440, "height": 1000 },
+      "keyboardControllerInput": { "width": 1152, "height": 800 },
+      "expectedDevicePixelRatio": 2,
+      "expectedScreenshotPixels": { "width": 2880, "height": 2000 }
+    },
+    "mobile": {
+      "targetCssViewport": { "width": 390, "height": 844 },
+      "pointerControllerInput": { "width": 390, "height": 844 },
+      "keyboardControllerInput": { "width": 312, "height": 675 },
+      "expectedDevicePixelRatio": 2,
+      "expectedScreenshotPixels": { "width": 780, "height": 1688 }
+    }
+  },
+  "requirements": {
+    "bothSurfacesMustReportSameChromeMajorVersion": true,
+    "freshPointerAndKeyboardTabsPerViewport": true,
+    "fourUniqueActivationTokenizedDocumentsPerViewport": true,
+    "httpBootstrapBeforeRawDiagnostics": true,
+    "nativeDetailsOpenPropertyIsStateAuthority": true,
+    "pointerControllerInputEqualsRequestedCssViewport": true,
+    "keyboardControllerInputUsesFrozenExtensionCalibration": true,
+    "screenshotPixelsEqualRoundedCssViewportTimesDevicePixelRatio": true,
+    "pointerControllerInputNeedNotEqualPhysicalScreenshotPixels": true,
+    "allContentLayoutImageAndKeyboardChecksMustPassBeforeEvidenceWrite": true,
+    "priorPassingEvidenceReusePermitted": false,
+    "retryPermitted": false,
+    "timeoutExtensionPermitted": false,
+    "adaptiveViewportCalibrationPermitted": false,
+    "adaptiveTransportSwitchPermitted": false
+  },
+  "preservedControls": {
+    "judgmentModel": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlindness": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentExecutionPerformed": false,
+    "scoresReadOrChanged": false
+  },
+  "screenshotsPreservedInRepository": 0,
+  "productionMutationPerformed": false
+}

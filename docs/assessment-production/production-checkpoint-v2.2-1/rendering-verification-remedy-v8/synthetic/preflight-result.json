@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v8-synthetic-preflight",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v8",
+  "status": "passed-twenty-viewport-split-chromium-synthetic-rehearsal",
+  "recordedAt": "2026-08-13T19:39:00.000Z",
+  "checkpointCommit": "cb0c2f44bf4a7bf21bd9862aa66d485d255a05ca",
+  "syntheticOnly": true,
+  "fixture": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v6/synthetic/preflight.html",
+    "localPort": 4196,
+    "productionContentPresent": false
+  },
+  "navigationToken": "586a500a07786a9bfdc127bfd9c6e4e85dbb7de5da9ea6c5a95d70ba404aec92",
+  "browser": {
+    "pointerSurface": "Codex In-app Chromium browser",
+    "keyboardSurface": "Google Chrome via ChatGPT browser extension",
+    "sharedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "sameChromeMajorVersion": true
+  },
+  "gate": {
+    "viewportResults": 20,
+    "desktopViewportResults": 10,
+    "mobileViewportResults": 10,
+    "passingViewportResults": 20,
+    "requiredBooleanChecksPerViewport": 16,
+    "requiredBooleanChecksPassed": 320,
+    "screenshots": 40,
+    "validJpegSignatures": 40,
+    "exactSignatureHex": "ffd8ffe000104a4649460001",
+    "collapsedOpenPairsWithDifferentHashes": 20,
+    "uniqueSyntheticScreenshotHashes": 4,
+    "pointerNavigations": 40,
+    "keyboardNavigations": 40,
+    "pointerTabsClosed": 20,
+    "keyboardTabsClosed": 20,
+    "runtimeCounts": {
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "pageErrors": 0,
+      "failedRequests": 0
+    },
+    "allChecksPassed": true
+  },
+  "captures": {
+    "captureMillisecondsMinimum": 18.82,
+    "captureMillisecondsMaximum": 54.97,
+    "captureMillisecondsMean": 40.3,
+    "desktop": {
+      "devicePixelRatio": 2,
+      "pixelWidth": 2880,
+      "pixelHeight": 2000,
+      "collapsedByteLength": 525922,
+      "openByteLength": 540835,
+      "collapsedSha256": "2fc18da94df4f47e66b6f6fd4aa2abac019067a12ef347a3e5a3cf4bcf9dad41",
+      "openSha256": "1b54a9caf12af79777e747d36be72093d799319cd3a341a01697b58a46e8e47e"
+    },
+    "mobile": {
+      "devicePixelRatio": 2,
+      "pixelWidth": 780,
+      "pixelHeight": 1688,
+      "collapsedByteLength": 190523,
+      "openByteLength": 200914,
+      "collapsedSha256": "051b571242bb170314ed0afaeaa9d364303b68356269ca1a106943110a8d88d7",
+      "openSha256": "6e412823153e0f249da5df8a80c2a8e6239e511e0f583a347b0693837fecd332"
+    }
+  },
+  "developmentIncidentsExcludedFromPassingRehearsal": [
+    {
+      "design": "in-app-two-tab-v6-compatibility-run",
+      "result": "rejected-before-hybrid-rehearsal",
+      "reason": "The separate keyboard tab did not retain the requested viewport and the old physical-pixel equality rule did not fit the in-app browser's device-pixel-ratio-2 screenshots."
+    },
+    {
+      "design": "in-app-single-tab-v7-compatibility-run",
+      "result": "rejected-before-hybrid-rehearsal",
+      "reason": "Viewport isolation passed, but the in-app supported locator keyboard press did not toggle native details."
+    },
+    {
+      "design": "in-app-supported-cua-keypress-proof",
+      "result": "rejected-before-hybrid-rehearsal",
+      "reason": "The focused native summary did not toggle with the supported in-app keyboard action."
+    }
+  ],
+  "executionDiscipline": {
+    "oneViewportPerBrowserControlCall": true,
+    "retryPerformed": false,
+    "timeoutExtended": false,
+    "adaptiveCalibrationPerformed": false,
+    "adaptiveTransportSwitchDuringPassingRehearsal": false,
+    "candidatePagesLoaded": 0,
+    "modelContexts": 0,
+    "scorePasses": 0,
+    "directCostUsd": 0
+  },
+  "screenshotsPreservedInRepository": 0,
+  "productionMutationPerformed": false
+}
