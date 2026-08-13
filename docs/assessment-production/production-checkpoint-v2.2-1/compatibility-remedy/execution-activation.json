@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-compatibility-remedy-execution-activation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-compatibility-remedy",
+  "status": "compatibility-remedy-execution-authorized-and-frozen",
+  "authorizedAt": "2026-08-13T22:16:39Z",
+  "activationCommit": "d28cbdd433db0522ea37f153b8ce0592c0190c6c",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "preparation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/preparation-manifest.json",
+    "sha256": "911f98f483059504c65c22a7d205735b7eb4afcc7d9165384c5395840792faea"
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/analysis.json",
+    "sha256": "6495b9856815cdc56774b111795d20ce24a1a6c5c1a6f698b677be3bc8406add"
+  },
+  "explicitOrder": [
+    "50",
+    "192",
+    "129",
+    "40",
+    "25",
+    "104",
+    "22",
+    "10",
+    "167",
+    "122"
+  ],
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "modelExecutionPlanned": false,
+    "scoreDerivationPlanned": false,
+    "scoreRerunPlanned": false
+  },
+  "executionContract": {
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "modelContexts": 0,
+    "meteredApiCostUsdMaximum": 0,
+    "findings": [
+      "optional-overall-reference-links",
+      "checkpoint-ledger-schema-adapter"
+    ],
+    "allowedActions": [
+      "remove only the minimum-one-item requirement from Overall Commentary blunder links arrays while retaining every supplied-link validation",
+      "route the active debate validator to the checkpoint adapter only when the saved ledger has schemaVersion 1.0-production-checkpoint-v2.2-site-ledger-adapter",
+      "materialize ten exact staged adapters from the frozen proposedAdapterExactOutput packet fields",
+      "run all frozen positive, negative, legacy-regression, repository, and deterministic-replay checks",
+      "record execution evidence and analysis"
+    ],
+    "allowedWrites": [
+      "scripts/validate-debates.mjs",
+      "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/**",
+      "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/execution.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/analysis.json"
+    ],
+    "forbiddenWrites": [
+      "scripts/lib/assessment-production-checkpoint-v2.2-compatibility-remedy.mjs",
+      "scripts/lib/reassessment-scoring.mjs",
+      "scripts/lib/v4-lean-production.mjs",
+      "src/data/debates.js",
+      "src/data/references.js",
+      "docs/assessment-ledgers/**",
+      ".assessment-cache/**"
+    ],
+    "productionMutationPerformed": false
+  },
+  "optionalLinkContract": {
+    "emptyArrayAllowed": true,
+    "nonArrayAllowed": false,
+    "suppliedLinkObjectValidationRetained": true,
+    "suppliedLabelAndUrlValidationRetained": true,
+    "logFallOrCogBiasHostRequired": true,
+    "localReferenceDefinitionRequired": true,
+    "syntheticReferencesAllowed": false,
+    "expectedEmptyArrays": 53,
+    "expectedSuppliedLinks": 3
+  },
+  "adapterContract": {
+    "schemaVersion": "1.0-production-checkpoint-v2.2-site-ledger-adapter",
+    "displayedModel": "5.6 Sol",
+    "displayedRubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-checkpoint-v2.2-1-single-deterministic-score-pass",
+    "expectedAdapters": 10,
+    "expectedSections": 51,
+    "expectedMoves": 188,
+    "expectedOverallScores": 20,
+    "repositoryDerivedScoreReplayRequired": true,
+    "publishedLedgerMoveIdMatchRequired": true,
+    "sourceLockMatchRequired": true,
+    "exactAdapterHashMatchRequired": true,
+    "legacyV2AndV21RoutesUnchanged": true
+  },
+  "packetHashes": [
+    {
+      "debateNumber": "50",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-50.json",
+      "sha256": "f1cb33801fdd60f778535eb3d90033f43bc002f0498e0bedd784751ee5674af2",
+      "proposedAdapterSha256": "17cc8e78b875c4df851b2fc5eb5285f0950955800cb0691eb744116d2cd14afe"
+    },
+    {
+      "debateNumber": "192",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-192.json",
+      "sha256": "164469d2a63b1c6f00a03caf797374d1f6610554cf21354344825e85b28fe0a7",
+      "proposedAdapterSha256": "8ecf47690a057ca7c1a3acf657f1f6bae55e31ead4071841e6fc4c04af08e4fc"
+    },
+    {
+      "debateNumber": "129",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-129.json",
+      "sha256": "a36811821c3d3a52b364a7ac3df183fb0853e32b58f08e501d580e84c62cc62a",
+      "proposedAdapterSha256": "bfe325a35ae1592e702cd8e49ed621662a4116ebb72ed01a63491f9b9254902f"
+    },
+    {
+      "debateNumber": "40",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-40.json",
+      "sha256": "119d413ed0e1d39e7e7943b8a3d1f6b1ce00d171ec850227d88edf63dacf8643",
+      "proposedAdapterSha256": "1053187ec4a95a9c50780e2720e27b1d898d2cf8aa5e0951a78ef0b78afb907e"
+    },
+    {
+      "debateNumber": "25",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-25.json",
+      "sha256": "c12d601d4ca56b35b9990ec93ad60017724fabe68ca4c0eb79effe1de8ef7a22",
+      "proposedAdapterSha256": "74ad6bc16b19c778818af2f28bb1a2cc6ebdc5604265bdd9078ecaf05bc54511"
+    },
+    {
+      "debateNumber": "104",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-104.json",
+      "sha256": "352da4cb4222fc904758e28780cd9a8b961bd61a471c390229edb423144d9fb1",
+      "proposedAdapterSha256": "eb8f19682600f86f2686b20ed6fa30dffaf3245484c11473a5b0a673a62a2aaf"
+    },
+    {
+      "debateNumber": "22",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-22.json",
+      "sha256": "a7444849f3572d572319e0f740ec156ffad37e14bd98a0bac976366fbfd75edf",
+      "proposedAdapterSha256": "41bbf2134444a6c80eba0f79315f479eb577ae8d9e6eab791bb0918b3b122343"
+    },
+    {
+      "debateNumber": "10",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-10.json",
+      "sha256": "06ce4047e7672000515b23d0a75edf16f276d803e4ffc63fad689151e5269cd6",
+      "proposedAdapterSha256": "7c24813c56e312e9a8597b338e0fd6f35f7908ebef1d264a2824c769f015d5ad"
+    },
+    {
+      "debateNumber": "167",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-167.json",
+      "sha256": "fa9b2e14e4c6ecbb8f9cead4edf7b06a63a54f244ac1a7349c6676e496d072d1",
+      "proposedAdapterSha256": "08b98cb619d5d60ab9070c968f57e5d9384fe0e6fc22f135cf2dddfcee3a40c3"
+    },
+    {
+      "debateNumber": "122",
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-122.json",
+      "sha256": "c0ecd548ac562855e605da366404f3cd815f2305712fcbde580506bf80e1197b",
+      "proposedAdapterSha256": "46c71692c95df62c6fa603fd371b237d6ae9e3a6ceae2e1c1474b0b4d6088a05"
+    }
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/preparation-manifest.json": "911f98f483059504c65c22a7d205735b7eb4afcc7d9165384c5395840792faea",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/analysis.json": "6495b9856815cdc56774b111795d20ce24a1a6c5c1a6f698b677be3bc8406add",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-50.json": "f1cb33801fdd60f778535eb3d90033f43bc002f0498e0bedd784751ee5674af2",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-192.json": "164469d2a63b1c6f00a03caf797374d1f6610554cf21354344825e85b28fe0a7",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-129.json": "a36811821c3d3a52b364a7ac3df183fb0853e32b58f08e501d580e84c62cc62a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-40.json": "119d413ed0e1d39e7e7943b8a3d1f6b1ce00d171ec850227d88edf63dacf8643",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-25.json": "c12d601d4ca56b35b9990ec93ad60017724fabe68ca4c0eb79effe1de8ef7a22",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-104.json": "352da4cb4222fc904758e28780cd9a8b961bd61a471c390229edb423144d9fb1",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-22.json": "a7444849f3572d572319e0f740ec156ffad37e14bd98a0bac976366fbfd75edf",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-10.json": "06ce4047e7672000515b23d0a75edf16f276d803e4ffc63fad689151e5269cd6",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-167.json": "fa9b2e14e4c6ecbb8f9cead4edf7b06a63a54f244ac1a7349c6676e496d072d1",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/debate-122.json": "c0ecd548ac562855e605da366404f3cd815f2305712fcbde580506bf80e1197b",
+    "scripts/lib/assessment-production-checkpoint-v2.2-compatibility-remedy.mjs": "871a21a8bb7cf72e694797297f871acf6a26832f9b7c9ab5ef9afff6b5db117c",
+    "scripts/prepare-assessment-production-checkpoint-v2.2-compatibility-remedy.mjs": "fc07bf1d80b9f811cccff6c5b9cd0c94699c6e9bbfab7e012c87073534c6f49b",
+    "scripts/test-assessment-production-checkpoint-v2.2-compatibility-remedy-preparation.mjs": "a4f1aa5d5294a174e14d282acc334e3ebc0e5b4a2dfbee63e7e2a4d12ac7bca4",
+    "scripts/validate-debates.mjs": "bb8d4be4dc3f86ecbca1778dd8b8db11afb500d1b63323c81afd1109c56fc34a",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "src/data/debates.js": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "src/data/references.js": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+    "docs/assessment-ledgers/craig-oconnor-god-debate-2026.json": "cb0f23d5d13737c1284cb9e5cb612372ce8875c56c545c5b444b57177027ff5d",
+    "docs/calibration/v2.1/corpus-transcript-audit.json": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f"
+  },
+  "preflight": {
+    "preparationDeterministicReplayPassed": true,
+    "packetAndAdapterPreparationTestsPassed": true,
+    "activeValidatorUnchangedAtActivation": true,
+    "productionDebatesUnchangedAtActivation": true,
+    "liveCanaryLedgersAbsentAtActivation": true,
+    "stagedAdapterDirectoryAbsentAtActivation": true,
+    "executionRecordAbsentAtActivation": true,
+    "productionMutationPerformed": false
+  },
+  "knownRepositoryBaseline": {
+    "command": "npm run check",
+    "statusAtActivation": "failed-before-compatibility-execution",
+    "failure": "Debate 167 local transcript and events hashes differ from the older corpus-transcript audit entry",
+    "repairedLocalSourceChainValidatedElsewhere": "docs/assessment-production/source-repairs/debate-167-empty-event-normalization.json",
+    "compatibilityScopeCausedFailure": false,
+    "waiverAuthorized": false,
+    "executionAcceptanceRule": "The compatibility execution may record this pre-existing failure, but the complete compatibility gate cannot pass unless npm run check passes or a separately authorized plan resolves the baseline without weakening source validation."
+  },
+  "authorization": {
+    "executionActivation": true,
+    "compatibilityRemedyExecution": true,
+    "optionalLinkMinimumChange": true,
+    "validatorMigration": true,
+    "stagingLedgerWrite": true,
+    "modelExecution": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "packetHashMismatchBlocks": true,
+    "adapterHashMismatchBlocks": true,
+    "unexpectedWriteBlocks": true,
+    "testFailureBlocks": true,
+    "suppliedReferenceValidationWeakeningForbidden": true,
+    "syntheticReferenceForbidden": true,
+    "legacyLedgerBehaviorChangeForbidden": true,
+    "rubricRelabelingForbidden": true,
+    "modelRelabelingForbidden": true,
+    "scoreProtocolRelabelingForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseChangeForbidden": true,
+    "scoreRerunForbidden": true,
+    "productionLedgerPublicationForbidden": true,
+    "productionMutationForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "single-compatibility-remedy-execution-under-frozen-stop-rules"
+}
