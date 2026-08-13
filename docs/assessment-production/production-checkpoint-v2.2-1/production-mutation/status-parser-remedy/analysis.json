@@ -1,74 +1,95 @@
 {
-  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-status-parser-remedy-preparation-analysis",
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-status-parser-remedy-execution-analysis",
   "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-status-parser-remedy",
-  "status": "production-mutation-status-parser-remedy-plan-freeze-passed",
+  "status": "production-mutation-replacement-attempt-failed-closed-rolled-back-awaiting-dependent-pilot-analysis-plan-decision",
   "productionCanary": true,
-  "planningOnly": true,
-  "preparation": {
-    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/preparation-manifest.json",
-    "bytes": 11822,
-    "sha256": "c5ae7f8f07459b8ee48794bffae399db4c6b0c462418350c00b2cad3f5ab1df0",
-    "status": "production-mutation-status-parser-remedy-plan-prepared-and-frozen"
+  "execution": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/execution.json",
+    "bytes": 9994,
+    "sha256": "d61da65d341d3766633371e54fbc3a992f7dc9b921502e270b8c15f6f3f9e761",
+    "status": "production-mutation-replacement-attempt-failed-closed-derived-pilot-analysis-staleness-rolled-back"
   },
-  "remedy": {
-    "plainEnglish": "The replacement parser reads Git's byte-delimited status output directly. It preserves the leading worktree-status space and every byte of the following pathname, so the first valid path can no longer lose its first character through whitespace trimming.",
-    "parserContract": {
-      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/parser-contract.json",
-      "bytes": 6197,
-      "sha256": "02a4f65cebeb5c598067ba601bb5f3b62bb710ade4185a74452ac55dac7b1d92"
-    },
-    "parser": {
-      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/status-parser.mjs",
-      "bytes": 2137,
-      "sha256": "76f2dcaaac7a489619879f69c9569b2d350fcf8c7f958a6d8f436d39bda97689"
-    },
-    "regressionTest": {
-      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/test-status-parser.mjs",
-      "bytes": 3874,
-      "sha256": "0ec213d360869d80dfa828e6fc5ad14bf2c950b03bc95acddd39a67fb1fb82c8"
-    }
+  "decision": {
+    "productionAcceptancePassed": false,
+    "parserRemedyPassed": true,
+    "failedClosed": true,
+    "rollbackRequired": true,
+    "rollbackPassed": true,
+    "retryPerformed": false,
+    "retryAllowedUnderCurrentActivation": false,
+    "productionMutationRemains": false,
+    "dependentPilotAnalysisPlanRequired": true
+  },
+  "failure": {
+    "category": "deterministic-dependent-output-inventory-omission",
+    "contentMutationMismatch": false,
+    "parserMismatch": false,
+    "plainEnglish": "The corrected parser and all direct production checks passed. The complete repository check then detected two legacy pilot-analysis reports whose comparison statistics depend on Debate 104's live first exchange. Those reports were not among the 23 activated paths, so the process stopped and restored the complete baseline.",
+    "technicalCause": "scripts/analyze-v2.1-pilot.mjs imports src/data/debates.js. The frozen Debate 104 candidate changes its first exchange from pro 78/con 80 to pro 77/con 82, which deterministically changes pilot-analysis.json and pilot-analysis.md.",
+    "failedCheck": "complete-repository-check-derived-v2.1-pilot-analysis-freshness",
+    "error": "Stale pilot analysis: docs/calibration/v2.1/pilot-analysis.json, docs/calibration/v2.1/pilot-analysis.md"
   },
   "checks": {
-    "priorFailureAuditHashesPassed": 3,
-    "originalMutationPlanHashesPassed": 2,
-    "priorFrozenSourceHashesPassed": 50,
-    "priorFrozenSourceHashFailures": 0,
-    "productionLedgerTargetsAbsent": 10,
-    "productionSourceBaselineHashPassed": true,
-    "productionPathSetHashPassed": true,
-    "parserContractJsonPassed": true,
-    "parserSyntaxPassed": true,
-    "regressionTestSyntaxPassed": true,
-    "byteFixturePassed": true,
-    "realTemporaryGitRepositoryPassed": true,
-    "actualGitFirstStatus": " M",
-    "actualGitFirstRawByte": 32,
-    "actualGitCompleteFirstPathPreserved": true,
-    "renameBoundaryFixturePassed": true,
-    "unterminatedRecordFailedClosed": true,
-    "stringInputFailedClosed": true,
-    "fixtureSetupCorrectionsBeforeFreeze": 1,
-    "productionFilesChanged": 0,
-    "productionMutationPerformed": false,
-    "replacementActivationCreated": false,
-    "productionRetryPerformed": false
+    "preWriteRepositoryCheckPassed": true,
+    "activationHashPassed": true,
+    "remedyPlanArtifactHashesPassed": 5,
+    "parserRegressionPassed": true,
+    "frozenSourceHashesPassed": 50,
+    "stagedLedgersReplayed": 10,
+    "preWriteMovesReplayed": 188,
+    "productionLedgerTargetsAbsentBeforeWrite": 10,
+    "sourceProjectionPassed": true,
+    "seoProjectionPassed": true,
+    "postWriteSourceHashPassedBeforeFailure": true,
+    "postWriteCandidatesPassedBeforeFailure": 10,
+    "postWriteUnchangedDebateObjectsPassedBeforeFailure": 185,
+    "postWriteLedgerCopiesAndReplaysPassedBeforeFailure": 10,
+    "postWriteLedgerMovesReplayedBeforeFailure": 188,
+    "postWriteSeoOutputsPassedBeforeFailure": 380,
+    "changedPathParserPassed": true,
+    "changedPathParserEntries": 23,
+    "changedPathParserWorktreeOnlyModifications": 13,
+    "changedPathParserUntrackedLedgers": 10,
+    "exactCompleteProductionPathSetPassed": true,
+    "currentDebateValidatorPassed": true,
+    "seoValidatorPassed": true,
+    "corpusTranscriptValidatorPassed": true,
+    "completeRepositoryCheckPassed": false,
+    "rollbackExistingPathsRestored": 13,
+    "rollbackNewLedgersRemoved": 10,
+    "postRollbackRepositoryCheckPassed": true,
+    "unexpectedProductionChangesRemaining": 0
   },
-  "fixtureCorrection": {
-    "category": "temporary-test-repository-layout",
-    "parserFailure": false,
-    "productionImpact": false,
-    "plainEnglish": "The first temporary repository left the whole docs directory untracked, so Git summarized it as docs/ instead of listing the intended file. Adding a tracked placeholder made the test repository match the real project. The critical leading-space and complete-first-path assertions were unaffected, and the corrected full test passed."
-  },
-  "immutablePayload": {
-    "mutationPacketSha256": "d91da8004d921b6c5dd4a0cd720a8d8a28fd007c29a4dd6390ef67245640ed18",
-    "exactProductionPathsSha256": "e4122d0e773383c57bd8f248ab91bfa2e0bdb21bb3a392861a50767d35a98e67",
-    "productionSourceBaselineSha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
-    "productionSourceProjectedSha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+  "dependentOutputProjection": {
+    "readOnly": true,
+    "changedOutputs": 2,
+    "paths": [
+      "docs/calibration/v2.1/pilot-analysis.json",
+      "docs/calibration/v2.1/pilot-analysis.md"
+    ],
+    "projectedJsonSha256": "c90f5a64c2cda77eb9fa05a935dc9205f629213a5487dac27a741ae84fa640a5",
+    "projectedMarkdownSha256": "f9e08eb45bb3c9acb6cd70bafabd3db0be801cd4caadf6daff0ecbcf19c391c2",
+    "jsonValueChanges": 6,
+    "participantScoreChanges": 0,
     "candidateChanges": 0,
     "ledgerChanges": 0,
-    "scoreChanges": 0,
-    "proseChanges": 0,
-    "generatedSeoProjectionChanges": 0
+    "publicationProseChanges": 0
+  },
+  "totals": {
+    "overallAttempts": 2,
+    "replacementActivationAttempts": 1,
+    "retriesWithinReplacementActivation": 0,
+    "debates": 10,
+    "sections": 51,
+    "moves": 188,
+    "overallScores": 20,
+    "integerRoundedTies": 2,
+    "temporaryProductionWrites": 23,
+    "productionWritesRemainingAfterRollback": 0,
+    "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "meteredApiCostUsd": 0,
+    "productionMutationsCompleted": 0
   },
   "preservedControls": {
     "assessmentModel": "5.6 Sol",
@@ -76,23 +97,33 @@
     "authentication": "ChatGPT subscription",
     "participantJudgmentWasScoreBlind": true,
     "roundedIntegerScoreTiesPermitted": true,
-    "judgmentModelContexts": 0,
-    "scorePassesRerun": 0,
-    "meteredApiCostUsd": 0,
+    "judgmentExecutionPerformed": false,
+    "scoreRerunPerformed": false,
+    "scoreOrProsePayloadChanged": false,
     "remainingProductionBatchesStarted": false
   },
-  "decision": {
-    "parserRemedyPlanPassed": true,
-    "parserRemedyPlanFrozen": true,
-    "spentActivationReusable": false,
-    "replacementExecutionActivationRequired": true,
-    "replacementExecutionActivationAuthorized": false,
-    "productionMutationRetryAuthorized": false,
-    "automaticRetryAllowed": false,
-    "productionMutationRemains": false
+  "requiredRemedy": {
+    "name": "deterministic-pilot-analysis-dependent-output-expansion",
+    "priorExactPathCount": 23,
+    "requiredExactPathCount": 25,
+    "additionalPaths": [
+      "docs/calibration/v2.1/pilot-analysis.json",
+      "docs/calibration/v2.1/pilot-analysis.md"
+    ],
+    "expectedStatuses": {
+      " M": 15,
+      "??": 10
+    },
+    "mutationPacketMayChange": false,
+    "candidateOrLedgerMayChange": false,
+    "scoreOrProseMayChange": false,
+    "seoProjectionMayChange": false,
+    "pilotAnalysisMayChangeOnlyToProjectedHashes": true,
+    "newExecutionActivationRequired": true,
+    "automaticRetryAllowed": false
   },
   "authorization": {
-    "parserRemedyPlanPreparation": true,
+    "dependentOutputExpansionPlanPreparation": false,
     "replacementExecutionActivation": false,
     "productionMutationRetry": false,
     "productionLedgerPublication": false,
@@ -101,20 +132,16 @@
     "remainingProductionBatches": false
   },
   "stopRules": {
-    "separateReplacementExecutionActivationRequired": true,
-    "separateRetryAuthorizationRequiredAfterActivation": true,
-    "spentActivationReuseForbidden": true,
-    "automaticRetryForbidden": true,
-    "remedyArtifactHashMismatchBlocks": true,
-    "originalPayloadHashMismatchBlocks": true,
-    "productionBaselineMismatchBlocks": true,
-    "parserRegressionFailureBlocks": true,
-    "unexpectedStatusOrPathBlocks": true,
+    "noRetryUnderCurrentActivation": true,
+    "separateDependentOutputExpansionPlanRequired": true,
+    "replacementActivationRequired": true,
+    "mutationPacketMustRemainExact": true,
+    "candidateAndLedgerPayloadMustRemainExact": true,
     "judgmentExecutionForbidden": true,
     "scoreRerunForbidden": true,
     "scoreChangeForbidden": true,
     "proseRewriteForbidden": true,
     "remainingProductionBatchesForbidden": true
   },
-  "nextAuthorizedAction": "user-decision-on-production-mutation-status-parser-remedy-execution-activation"
+  "nextAuthorizedAction": "user-decision-on-production-mutation-dependent-pilot-analysis-plan-preparation"
 }

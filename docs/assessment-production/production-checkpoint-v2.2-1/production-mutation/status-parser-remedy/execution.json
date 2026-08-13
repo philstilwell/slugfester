@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-status-parser-remedy-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-status-parser-remedy",
+  "status": "production-mutation-replacement-attempt-failed-closed-derived-pilot-analysis-staleness-rolled-back",
+  "recordedAt": "2026-08-13T23:33:29Z",
+  "executionCommit": "4c491f36a3ea8a350bc1eb5f58a816b68533c3e0",
+  "branch": "main",
+  "productionCanary": true,
+  "overallAttemptOrdinal": 2,
+  "replacementActivationAttempt": 1,
+  "retriesWithinReplacementActivation": 0,
+  "elapsedSeconds": 17.21,
+  "userAuthorization": {
+    "instruction": "Proceed at your own discretion.",
+    "scopeInterpretation": "Authorize the single atomic ten-debate production mutation replacement attempt under the frozen status-parser-remedy activation and all existing stop rules.",
+    "directIncrementalCostEstimateUsd": 0,
+    "singleReplacementAttemptAuthorized": true,
+    "automaticRetryAuthorized": false,
+    "remainingProductionBatchesAuthorized": false
+  },
+  "locks": {
+    "activation": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/execution-activation.json",
+      "sha256": "f07a7160c6afb1f5e80fea500fcc12eeb30341ad4a837dcf92397e7cdb35876f"
+    },
+    "mutationPacket": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/mutation-packet.json",
+      "sha256": "d91da8004d921b6c5dd4a0cd720a8d8a28fd007c29a4dd6390ef67245640ed18"
+    },
+    "parserContract": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/parser-contract.json",
+      "sha256": "02a4f65cebeb5c598067ba601bb5f3b62bb710ade4185a74452ac55dac7b1d92"
+    },
+    "parser": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/status-parser.mjs",
+      "sha256": "76f2dcaaac7a489619879f69c9569b2d350fcf8c7f958a6d8f436d39bda97689"
+    },
+    "regressionTest": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/test-status-parser.mjs",
+      "sha256": "0ec213d360869d80dfa828e6fc5ad14bf2c950b03bc95acddd39a67fb1fb82c8"
+    }
+  },
+  "preservedControls": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "scoresChangedOutsideFrozenCandidates": 0,
+    "proseChangedOutsideFrozenCandidates": 0,
+    "meteredApiCostUsd": 0
+  },
+  "preflight": {
+    "activationHashExact": true,
+    "activationCommitAncestor": true,
+    "branchMain": true,
+    "worktreeClean": true,
+    "remedyPlanArtifactHashesPassed": 5,
+    "parserRegressionPassed": true,
+    "originalFrozenSourceHashesPassed": 50,
+    "productionLedgerTargetsAbsent": 10,
+    "stagedLedgersReplayed": 10,
+    "movesReplayed": 188,
+    "productionSourceProjectionExact": true,
+    "currentSeoOutputsExact": 380,
+    "seoChangedOutputProjectionExact": 12,
+    "completeRepositoryCheck": "passed"
+  },
+  "attemptResult": {
+    "productionWritesPerformedBeforeValidationFailure": 23,
+    "sourceDebateObjectsReplaced": 10,
+    "productionLedgersTemporarilyAdded": 10,
+    "generatedSeoOutputsTemporarilyChanged": 12,
+    "contentChecksCompletedBeforeFailure": {
+      "productionSourceProjectedHashExact": true,
+      "finalCandidatesDeepEqualProduction": 10,
+      "otherDebateObjectsByteEquivalent": 185,
+      "productionLedgersByteIdenticalAndReplayed": 10,
+      "productionLedgerMovesReplayed": 188,
+      "generatedSeoOutputsExact": 380,
+      "generatedSeoOutputsChanged": 12,
+      "generatedSeoOutputsUnchanged": 368,
+      "frozenStatusParserEntries": 23,
+      "frozenStatusParserWorktreeOnlyModifications": 13,
+      "frozenStatusParserUntrackedLedgers": 10,
+      "exactCompleteProductionPathSet": true,
+      "gitDiffWhitespaceCheck": "passed",
+      "currentDebateValidator": "passed",
+      "seoValidator": "passed",
+      "corpusTranscriptValidator": "passed"
+    },
+    "failedCheck": "complete-repository-check-derived-v2.1-pilot-analysis-freshness",
+    "completeRepositoryCheckPassed": false,
+    "productionAcceptancePassed": false
+  },
+  "failure": {
+    "category": "deterministic-dependent-output-inventory-omission",
+    "plainEnglish": "The corrected path parser and every frozen debate, ledger, score, and generated-page check passed. The final complete repository check then showed that two legacy pilot-analysis reports derive comparison figures from the live production debate objects. Publishing Debate 104's frozen production object would therefore make those reports stale. Because the two reports were outside the activated 23-path boundary, the attempt stopped and restored the complete production baseline.",
+    "technicalCause": "scripts/analyze-v2.1-pilot.mjs imports src/data/debates.js and uses each calibration debate's first production exchange as a legacy benchmark. The frozen Debate 104 replacement changes that first exchange from pro 78/con 80 to pro 77/con 82, so `npm run check` reports stale docs/calibration/v2.1/pilot-analysis.json and docs/calibration/v2.1/pilot-analysis.md.",
+    "error": "Stale pilot analysis: docs/calibration/v2.1/pilot-analysis.json, docs/calibration/v2.1/pilot-analysis.md",
+    "parserRemedyFailed": false,
+    "sourceMismatch": false,
+    "candidateMismatch": false,
+    "ledgerMismatch": false,
+    "scoreMismatch": false,
+    "seoMismatch": false,
+    "unexpectedProductionPathActuallyWritten": false,
+    "missingDependentPaths": [
+      "docs/calibration/v2.1/pilot-analysis.json",
+      "docs/calibration/v2.1/pilot-analysis.md"
+    ]
+  },
+  "readOnlyDependencyProjection": {
+    "performedAfterRollback": true,
+    "productionMutationPerformed": false,
+    "outputs": [
+      {
+        "path": "docs/calibration/v2.1/pilot-analysis.json",
+        "beforeBytes": 11590,
+        "beforeSha256": "424d13c6de36934164bc54e22401478d3c1920e91e94ef5739b268681be336b2",
+        "projectedAfterBytes": 11592,
+        "projectedAfterSha256": "c90f5a64c2cda77eb9fa05a935dc9205f629213a5487dac27a741ae84fa640a5"
+      },
+      {
+        "path": "docs/calibration/v2.1/pilot-analysis.md",
+        "beforeBytes": 5389,
+        "beforeSha256": "732b9dfe3ebdfb657c2a5599d9c11095f472687c58a690e0591a1c5448dc17b8",
+        "projectedAfterBytes": 5391,
+        "projectedAfterSha256": "f9e08eb45bb3c9acb6cd70bafabd3db0be801cd4caadf6daff0ecbcf19c391c2"
+      }
+    ],
+    "jsonDifferences": [
+      {
+        "path": "legacyBenchmarkComparison.meanChange",
+        "before": -4.5,
+        "after": -4.55
+      },
+      {
+        "path": "legacyBenchmarkComparison.meanAbsoluteChange",
+        "before": 4.9,
+        "after": 4.75
+      },
+      {
+        "path": "debates.7.moves.pro.legacyBenchmarkMove",
+        "before": 78,
+        "after": 77
+      },
+      {
+        "path": "debates.7.moves.pro.changeFromLegacyBenchmarkMove",
+        "before": -5,
+        "after": -4
+      },
+      {
+        "path": "debates.7.moves.con.legacyBenchmarkMove",
+        "before": 80,
+        "after": 82
+      },
+      {
+        "path": "debates.7.moves.con.changeFromLegacyBenchmarkMove",
+        "before": 2,
+        "after": 0
+      }
+    ],
+    "participantScoresChangedByProjection": 0,
+    "frozenCandidatesChangedByProjection": 0,
+    "ledgersChangedByProjection": 0,
+    "publicationProseChangedByProjection": 0
+  },
+  "rollback": {
+    "required": true,
+    "performed": true,
+    "existingProductionPathsRestored": 13,
+    "newProductionLedgersRemoved": 10,
+    "unrelatedPathsTouched": 0,
+    "productionSourceBaselineSha256Restored": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "productionLedgerTargetsAbsentAfterRollback": 10,
+    "worktreeEntriesAfterRollbackBeforeAuditWrites": 0,
+    "completeRepositoryCheckAfterRollback": "passed",
+    "productionMutationRemains": false
+  },
+  "requiredRemedy": {
+    "name": "deterministic-pilot-analysis-dependent-output-expansion",
+    "description": "Prepare and freeze a replacement dependency plan that adds only the two projected pilot-analysis outputs to the prior 23-path mutation boundary, hash-locks their exact projected bytes, and requires the complete repository check to pass with all 25 paths present before commit.",
+    "priorExactPathCount": 23,
+    "requiredExactPathCount": 25,
+    "requiredExactPathSetSha256IfAppendedInRecordedOrder": "5c9301b12d394488fdee83a36321f9d41357fb5fcfbaa9c947e58619454c41d6",
+    "expectedStatusesAfterExpandedWrite": {
+      " M": 15,
+      "??": 10
+    },
+    "mutationPacketMayChange": false,
+    "candidateOrLedgerMayChange": false,
+    "scoreOrProseMayChange": false,
+    "seoProjectionMayChange": false,
+    "pilotAnalysisMayChangeOnlyToExactProjectedBytes": true,
+    "newExecutionActivationRequired": true,
+    "automaticRetryAllowed": false
+  },
+  "authorization": {
+    "failureRecorded": true,
+    "dependentOutputExpansionPlanPreparation": false,
+    "replacementExecutionActivation": false,
+    "productionMutationRetry": false,
+    "productionLedgerPublication": false,
+    "productionDebatesChange": false,
+    "generatedSeoPublication": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "noRetryUnderCurrentActivation": true,
+    "separateDependentOutputExpansionPlanRequired": true,
+    "replacementActivationRequired": true,
+    "mutationPacketMustRemainExact": true,
+    "candidateAndLedgerPayloadMustRemainExact": true,
+    "judgmentExecutionForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseRewriteForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "user-decision-on-production-mutation-dependent-pilot-analysis-plan-preparation"
+}
