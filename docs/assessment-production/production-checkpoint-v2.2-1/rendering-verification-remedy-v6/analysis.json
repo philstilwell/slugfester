@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v6-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v6",
+  "status": "sixth-replacement-rendering-verification-failed-closed-after-eighteen-passing-viewports-on-debate-122-desktop-page-navigate-deadline",
+  "recordedAt": "2026-08-13T18:35:03.000Z",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "execution": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v6/execution.json"
+  },
+  "decision": {
+    "failedClosed": true,
+    "retryPerformed": false,
+    "timeoutExtended": false,
+    "partialStatePromotionPermitted": false,
+    "priorPassingEvidenceAutomaticReusePermitted": false,
+    "renderingGatePassed": false,
+    "candidateRenderingDefectEstablished": false,
+    "browserControllerNavigationFailureEstablished": true,
+    "automaticControllerRepairPermitted": false,
+    "renderingRepairPermitted": false,
+    "validatorMigrationPermitted": false,
+    "productionLedgerPublicationPermitted": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "gate": {
+    "activationSourceHashReplayPassedBeforeExecution": true,
+    "packetHashReplayPassedBeforeExecution": true,
+    "expectedDebates": 10,
+    "attemptedDebates": 10,
+    "passingDebateEvidenceSets": 9,
+    "gatePromotedDebates": 0,
+    "expectedViewportResults": 20,
+    "attemptedViewportResults": 19,
+    "passingViewportEvidenceResults": 18,
+    "gatePromotedViewportResults": 0,
+    "failedViewportResults": 1,
+    "unattemptedViewportResults": 1,
+    "expectedScreenshots": 40,
+    "screenshotRequests": 36,
+    "completedScreenshots": 36,
+    "frozenSignatureValidScreenshots": 36,
+    "validScreenshotsPreservedForAudit": 36,
+    "passingRequiredBooleanChecks": 684,
+    "rawAccordionStateObservations": 90,
+    "exactViewportPhaseChecksPassed": 54,
+    "runtimeCounts": {
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "pageErrors": 0,
+      "failedRequests": 0
+    },
+    "browserEvidenceCaptureContractPassed": false,
+    "candidateRenderingDefectEstablished": false,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "directCostUsd": 0
+  },
+  "diagnosis": {
+    "observed": "Nine complete debates passed both frozen viewports in order. Their 18 result files and 36 JPEG screenshots passed all 684 required Boolean checks, exact 12-byte JPEG signature checks, nonblank and dimension checks, pointer and keyboard checks, runtime checks, and source-mutation checks. Debate 122 desktop then stopped at its first pointer-phase diagnostic-bootstrap Page.navigate command before any HTTP response, candidate load, readiness check, interaction, screenshot, or failed-viewport evidence.",
+    "classification": "browser-controller-navigation-command-deadline-after-eighteen-valid-viewport-results",
+    "established": [
+      "The activation, all 198 frozen source hashes, and all 10 packet hashes passed before navigation.",
+      "The first nine debates produced 18 independently valid viewport evidence records and 36 hash-valid JPEG screenshots.",
+      "Every preserved screenshot recorded the contract-derived 12-byte signature ffd8ffe000104a4649460001.",
+      "All preserved viewport runtime counts were zero and all candidate, production-data, application-code, and stylesheet mutation checks were false.",
+      "The Debate 122 desktop interruption occurred before its diagnostic bootstrap returned an HTTP response and before its candidate page was loaded.",
+      "No retry, timeout extension, navigation substitution, repair, validator change, score pass, model call, or production mutation was performed.",
+      "The browser tabs were closed, viewport override reset, and local server stopped with port 4194 closed."
+    ],
+    "notEstablished": [
+      "No rendering or content defect was established for Debate 122.",
+      "No page-load conclusion was established for Debate 122 because the controller command timed out before an HTTP response was observed.",
+      "No complete ten-debate rendering gate pass was established.",
+      "The 18 passing viewport records are audit evidence only and cannot be promoted or reused automatically under the frozen rules.",
+      "No conclusion from Debate 122 mobile is permitted because it was not attempted."
+    ]
+  },
+  "cleanup": {
+    "browserTabsRemaining": 0,
+    "viewportOverrideReset": true,
+    "localServerStopped": true,
+    "localServerPortClosed": true,
+    "failedViewportEvidenceAbsent": true,
+    "validAuditEvidenceViewportResults": 18,
+    "validAuditEvidenceScreenshots": 36,
+    "debate122EvidenceDirectoryAbsent": true
+  },
+  "authorization": {
+    "retry": false,
+    "timeoutExtension": false,
+    "alternativeNavigationMethod": false,
+    "automaticPassingEvidenceReuse": false,
+    "renderingRepair": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-remedy-v7-plan-preparation"
+}
