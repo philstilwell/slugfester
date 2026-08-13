@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-167-corpus-audit-baseline-remedy-preparation-manifest",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-167-corpus-audit-alignment",
+  "status": "debate-167-corpus-audit-baseline-remedy-plan-prepared-and-frozen",
+  "frozenAt": "2026-08-13T22:30:34Z",
+  "productionCanary": true,
+  "planningOnly": true,
+  "scope": {
+    "debateNumber": "167",
+    "debateId": "craig-shook-existence-god-2008",
+    "target": "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "exactFieldSubstitutions": [
+      "eventCount",
+      "transcriptSha256",
+      "normalizedEventsSha256"
+    ],
+    "dependentCorpusTotalsPresent": [],
+    "dependentCorpusTotalsChanged": [],
+    "description": "Freeze a byte-bounded plan to align only Debate 167's corpus-audit source fields with its already validated empty-derived-event repair."
+  },
+  "invariants": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "chatGptSubscriptionAuthenticationPreserved": true,
+    "scoreBlindnessPreserved": true,
+    "integerRoundedTiesAllowed": true,
+    "judgmentExecutionAllowed": false,
+    "scoreRerunAllowed": false,
+    "scoreChangeAllowed": false,
+    "proseRewriteAllowed": false,
+    "sourceValidationWeakeningAllowed": false,
+    "productionLedgerPublicationAllowed": false,
+    "productionMutationAllowed": false
+  },
+  "frozenPlan": {
+    "alignmentPacket": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/alignment-packet.json",
+      "sha256": "d74bc5b87af93fd9824d37355378b253d85f82729e3498edb1c59e7924892c1f"
+    },
+    "targetBefore": {
+      "bytes": 182544,
+      "sha256": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f"
+    },
+    "targetProjectedAfter": {
+      "bytes": 182544,
+      "sha256": "7b572eedba90a6e635252f459f84a7c2080273f7fe7f61dd0bedca179e5ae8b0"
+    },
+    "otherEntriesProof": {
+      "count": 194,
+      "prefixBytes": 155417,
+      "prefixSha256": "468bdd8c129f4c6c86fb41fede15714413313e1ee830ad15b2da3e444ec54f51",
+      "suffixBytes": 26104,
+      "suffixSha256": "fb14fd8823b5951be7c2f84f350cdad407b69b165335ab6e13aff72e96cd2436",
+      "byteEquivalenceRequired": true
+    }
+  },
+  "frozenSources": {
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/execution.json": "4ec18f679490a994d0c2612496266690517c3eb1b127b80234e71bf8b0e74b57",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/analysis.json": "209b8f64c0724af08118a04617d30f36054fb5a30ce58ffc8fd933e64b6ea31c",
+    "docs/assessment-production/source-repairs/debate-167-empty-event-normalization.json": "7c1b0c98159a2968b39346605b942b31861c67668b4cbecd97b06fd67fb54898",
+    "docs/calibration/v2.1/corpus-transcript-audit.json": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f",
+    ".assessment-cache/captions/L3FOgiASYY0/transcript.txt": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+    ".assessment-cache/captions/L3FOgiASYY0/events.json": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+    ".assessment-cache/captions/L3FOgiASYY0/manifest.json": "c53451a13f2b21b44010dfbbe0e4834667ac4c765a00a2c3e694fe4f0079c73c",
+    "scripts/validate-assessment-production-checkpoint-v2.2-debate-167-source-repair.mjs": "9d242ccb15cde43d074f59712792695975f6ceea851a7ff33b18bc1f04a84d01",
+    "scripts/validate-corpus-transcripts.mjs": "650277b4d8c33d373b491230dc3ae29517906dd0d362c5039e49171c04caf8e8",
+    "scripts/validate-debates.mjs": "41271127a567353f3591fe2e8b6315c9b592c85bcaad5ec36842d42f1da98556",
+    "package.json": "4cd0ac3ad9a45cf15783efae3bf407b00fff1b407550d837335f0f5d1b015379"
+  },
+  "stagedExecutionPlan": [
+    {
+      "stage": 1,
+      "name": "separate-execution-activation",
+      "allowedWrites": [
+        "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution-activation.json"
+      ],
+      "baselineRemedyExecution": false,
+      "corpusAuditMutation": false
+    },
+    {
+      "stage": 2,
+      "name": "exact-corpus-audit-alignment",
+      "separateAuthorizationRequired": true,
+      "allowedWrites": [
+        "docs/calibration/v2.1/corpus-transcript-audit.json",
+        "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution.json",
+        "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/analysis.json"
+      ],
+      "actions": [
+        "verify the exact before-file hash",
+        "perform each of the three frozen substitutions exactly once without parsing and reserializing the whole file",
+        "verify the exact projected after-file hash and unchanged prefix and suffix hashes",
+        "prove the other 194 corpus-audit entries byte-equivalent",
+        "rerun the Debate 167 repair validator, corpus transcript validator, current debate validator, and complete repository check",
+        "verify the ten staged compatibility adapters retain their exact hashes and deterministic score replays"
+      ],
+      "forbiddenWrites": [
+        "docs/assessment-ledgers/**",
+        "src/data/debates.js",
+        "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/**"
+      ],
+      "productionMutation": false
+    }
+  ],
+  "mandatoryExecutionTests": {
+    "targetBeforeHashExact": true,
+    "threeOneTimeSubstitutionsExact": true,
+    "projectedAfterHashExact": true,
+    "unchangedPrefixAndSuffixHashesExact": true,
+    "other194EntriesByteEquivalent": true,
+    "repairValidator": "node scripts/validate-assessment-production-checkpoint-v2.2-debate-167-source-repair.mjs",
+    "corpusTranscriptValidator": "node scripts/validate-corpus-transcripts.mjs",
+    "currentDebateValidator": "node scripts/validate-debates.mjs",
+    "completeRepositoryCheck": "npm run check",
+    "stagedAdapterHashesAndDeterministicScoreReplaysUnchanged": true
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/preparation-manifest.json",
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/analysis.json",
+    "futureActivation": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution-activation.json",
+    "futureExecution": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution.json"
+  },
+  "authorization": {
+    "baselineRemedyPlanPreparation": true,
+    "baselineRemedyExecution": false,
+    "corpusAuditMutation": false,
+    "compatibilityRetry": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "separateExecutionActivationRequired": true,
+    "exactBeforeHashMismatchStops": true,
+    "replacementCountMismatchStops": true,
+    "projectedAfterHashMismatchStops": true,
+    "otherEntryByteDifferenceStops": true,
+    "sourceValidationFailureStops": true,
+    "stagedAdapterDifferenceStops": true,
+    "repositoryCheckFailureStops": true,
+    "automaticCompatibilityRetryForbidden": true,
+    "productionLedgerPublicationForbidden": true,
+    "productionMutationForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "user-decision-on-debate-167-corpus-audit-baseline-remedy-execution-activation"
+}
