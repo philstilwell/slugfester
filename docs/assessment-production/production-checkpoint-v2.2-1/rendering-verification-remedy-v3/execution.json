@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v3-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v3",
+  "status": "third-replacement-rendering-verification-failed-closed-on-browser-evidence-capture-and-controller-deadline",
+  "startedAt": "2026-08-13T17:06:00.529Z",
+  "completedAt": "2026-08-13T17:12:04.000Z",
+  "elapsedMs": 363471,
+  "checkpointCommit": "ef6d8bf81fc2861863e79c72c364ee5d57da2a9a",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "activation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v3/execution-activation.json",
+    "sha256": "99b7d5ee671d912b769a9ab608a79199b4fa6fe14b3c43b19ed6b74a2f9fbb38"
+  },
+  "navigationToken": "e004862b951b6f3b92dd34b446298d3335f5bb9aef417233ad292a7bbbf806bd",
+  "expectedDebates": 10,
+  "expectedViewportResults": 20,
+  "expectedScreenshots": 40,
+  "transientDomCompleteDebates": 6,
+  "transientDomPassingViewportResults": 13,
+  "finalizedDebateResults": 0,
+  "finalizedViewportResults": 0,
+  "failedViewportResults": 1,
+  "unattemptedViewportResults": 6,
+  "transientScreenshotsCaptured": 26,
+  "preservedScreenshots": 0,
+  "diagnosticBootstrapNavigations": 27,
+  "measuredCandidatePageLoads": 27,
+  "totalBrowserPageNavigations": 54,
+  "modelContexts": 0,
+  "viewportRetries": 0,
+  "candidateNavigationRetries": 0,
+  "controllerConnectionRecoveriesBeforeFirstNavigation": 1,
+  "scorePasses": 0,
+  "directCostUsd": 0,
+  "transientDomResults": {
+    "fullyObservedDebates": [
+      "50",
+      "192",
+      "129",
+      "40",
+      "25",
+      "104"
+    ],
+    "partiallyObservedDebates": [
+      "22"
+    ],
+    "viewports": [
+      { "debateNumber": "50", "viewport": "desktop" },
+      { "debateNumber": "50", "viewport": "mobile" },
+      { "debateNumber": "192", "viewport": "desktop" },
+      { "debateNumber": "192", "viewport": "mobile" },
+      { "debateNumber": "129", "viewport": "desktop" },
+      { "debateNumber": "129", "viewport": "mobile" },
+      { "debateNumber": "40", "viewport": "desktop" },
+      { "debateNumber": "40", "viewport": "mobile" },
+      { "debateNumber": "25", "viewport": "desktop" },
+      { "debateNumber": "25", "viewport": "mobile" },
+      { "debateNumber": "104", "viewport": "desktop" },
+      { "debateNumber": "104", "viewport": "mobile" },
+      { "debateNumber": "22", "viewport": "desktop" }
+    ],
+    "requiredBooleanChecksPerViewport": 31,
+    "requiredBooleanChecksPassed": 403,
+    "rawAccordionStateObservations": 65,
+    "exactViewportPhaseChecksPassed": 39,
+    "runtimeCounts": {
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "pageErrors": 0,
+      "failedRequests": 0
+    },
+    "allMutationChecksFalse": true,
+    "finalizedAsRenderingEvidence": false
+  },
+  "attemptedFailure": {
+    "debateNumber": "22",
+    "debateId": "turek-hitchens-god-existence-2008",
+    "viewport": "mobile",
+    "targetCssViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "controllerInput": {
+      "width": 312,
+      "height": 675
+    },
+    "packet": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v3/packets/debate-22.json",
+    "packetSha256": "5cc1cb9bac025e018c6f2fbc62dfcd51b83c4f4d0a4dd7071e5a91e57ef7f06d",
+    "phase": "pointer",
+    "stage": "wait-for-ai-extension-summary-after-measured-page-load",
+    "diagnosticBootstrapNavigationCompleted": true,
+    "measuredCandidateHttpStatus": 200,
+    "screenshotCaptured": false,
+    "runtimeCollectionCompleted": false,
+    "error": "Timed out after 3000ms evaluating selector details.ai-extension-accordion > summary: CDP operation exceeded its deadline before command dispatch"
+  },
+  "screenshotCaptureAudit": {
+    "status": "all-transient-screenshots-rejected-as-blank-browser-captures",
+    "requestedFilenameExtension": "png",
+    "actualFileFormat": "JPEG",
+    "desktop": {
+      "filesInspected": 14,
+      "uniqueSha256Values": 1,
+      "sha256": "3693571d2253171e711592973eaa3ee778f8386b8f47207a706af7ce9c1f59a4",
+      "pixelDimensions": {
+        "width": 1800,
+        "height": 1250
+      },
+      "colors": 1,
+      "meanNormalized": 1,
+      "entropy": 0,
+      "collapsedAndOpenIdentical": true
+    },
+    "mobile": {
+      "filesInspected": 12,
+      "uniqueSha256Values": 1,
+      "sha256": "2a228e50c24fc339e720fb623515b1cb1eb66c88fa94c453be99f358fafbd7dc",
+      "pixelDimensions": {
+        "width": 488,
+        "height": 1054
+      },
+      "colors": 1,
+      "meanNormalized": 1,
+      "entropy": 0,
+      "collapsedAndOpenIdentical": true
+    },
+    "visualInspection": "Both inspected desktop and mobile samples were entirely white.",
+    "validRenderingScreenshots": 0
+  },
+  "failure": {
+    "category": "browser-evidence-capture-and-controller-deadline-failure",
+    "message": "The execution stopped at Debate 22 mobile after the measured page returned HTTP 200 but Chrome could not dispatch the accordion-summary selector operation before its deadline. Audit then established that all twenty-six earlier screenshots were blank one-color JPEG captures saved with PNG filenames, so no earlier viewport had complete valid rendering evidence.",
+    "incidents": [
+      {
+        "id": "all-transient-screenshots-were-blank",
+        "description": "Every desktop screenshot had one common hash and every mobile screenshot had another. Image inspection established one color, normalized mean 1, zero entropy, and identical collapsed/open captures. The bytes were JPEG despite PNG filenames.",
+        "renderingContentRegressionEstablished": false
+      },
+      {
+        "id": "debate-22-mobile-summary-selector-controller-deadline",
+        "description": "The activation-tokenized measured candidate page returned HTTP 200, but the Chrome controller reported that its selector evaluation exceeded the command-dispatch deadline before the runner could observe the accordion. No retry was performed.",
+        "renderingContentRegressionEstablished": false
+      }
+    ]
+  },
+  "cleanup": {
+    "browserTabsClosed": true,
+    "browserTabsRemaining": 0,
+    "viewportOverrideReset": true,
+    "localServerStopped": true,
+    "failedViewportEvidencePersisted": false,
+    "invalidScreenshotEvidenceRemoved": true,
+    "evidenceRootRemoved": true
+  },
+  "renderingVerificationPassed": false,
+  "renderingContentRegressionEstablished": false,
+  "renderingRepairPerformed": false,
+  "validatorMigrationPerformed": false,
+  "productionLedgerPublicationPerformed": false,
+  "productionMutationPerformed": false
+}

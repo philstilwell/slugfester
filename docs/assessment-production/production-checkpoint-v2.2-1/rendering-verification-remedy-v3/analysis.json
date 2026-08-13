@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v3-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v3",
+  "status": "third-replacement-rendering-verification-failed-closed-on-browser-evidence-capture-and-controller-deadline",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "preparationReplayPassedBeforeExecution": true,
+    "activationSourceHashReplayPassedBeforeExecution": true,
+    "publicationFinalizationReplayPassedBeforeExecution": true,
+    "activeV22ScoreControlPassedBeforeExecution": true,
+    "expectedDebates": 10,
+    "transientDomCompleteDebates": 6,
+    "finalizedDebatesPassed": 0,
+    "expectedViewportResults": 20,
+    "transientDomViewportResultsPassed": 13,
+    "finalizedViewportResultsPassed": 0,
+    "failedViewportResults": 1,
+    "unattemptedViewportResults": 6,
+    "transientScreenshotsCaptured": 26,
+    "validScreenshotsPreserved": 0,
+    "expectedScreenshots": 40,
+    "rawAccordionStateObservationsPassed": 65,
+    "requiredBooleanChecksPassed": 403,
+    "exactViewportPhaseChecksPassed": 39,
+    "completedViewportRuntimeFailures": 0,
+    "completedViewportFailedRequests": 0,
+    "failedViewportRuntimeState": "not-collected-after-controller-deadline",
+    "browserEvidenceCaptureContractPassed": false,
+    "renderingContentRegressionEstablished": false,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "directCostUsd": 0
+  },
+  "decision": {
+    "failedClosed": true,
+    "partialDomPassPromotionPermitted": false,
+    "retryPerformed": false,
+    "renderingGatePassed": false,
+    "renderingRepairPermitted": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "diagnosis": {
+    "plainEnglish": "The page-state checks worked for thirteen viewports, including exact desktop/mobile dimensions, native accordion state, pointer and keyboard behavior, overflow, and clean runtime counts. Those observations cannot complete the rendering gate because Chrome returned entirely white screenshots for every collapsed and open capture. The run then stopped at Debate 22 mobile when the browser controller could not dispatch the accordion-summary lookup before its deadline, even though the local candidate page returned HTTP 200. Neither incident establishes a scorecard, application, or stylesheet defect.",
+    "sourceGroundedFacts": [
+      "Thirteen viewports completed all thirty-one DOM and interaction checks before the stop.",
+      "All thirty-nine exact viewport phase checks passed for those thirteen viewports.",
+      "All sixty-five raw accordion state observations matched the native details.open, open-attribute, and hit-test contract.",
+      "The completed viewports recorded zero console errors, warnings, page errors, and failed requests.",
+      "All fourteen desktop captures were byte-identical pure-white JPEGs at 1800 by 1250 pixels.",
+      "All twelve mobile captures were byte-identical pure-white JPEGs at 488 by 1054 pixels.",
+      "Collapsed and open screenshot hashes were identical in every completed viewport.",
+      "The Debate 22 mobile measured candidate request returned HTTP 200 before the controller deadline.",
+      "No candidate, production data, application code, stylesheet, score, or display field changed."
+    ],
+    "requiredRemedy": [
+      "Prepare a remedy-v4 plan that first proves screenshot transport synthetically, including expected image signature, declared format, nonzero visual entropy, visible fixture content, and distinct collapsed/open captures.",
+      "Require screenshot pixel dimensions to be reconciled explicitly with the frozen CSS viewport and reported device-pixel ratio rather than accepting a hash alone.",
+      "Add a frozen screenshot-content validity gate before any candidate screenshot may be finalized.",
+      "Replace the fragile accordion-summary wait with a synthetically proven controller operation whose dispatch deadline is explicit and whose failure is recorded before any screenshot write.",
+      "Use a new immutable activation, new navigation token, and new evidence paths. Do not retry, relabel, or reuse the invalid remedy-v3 screenshot artifacts."
+    ],
+    "estimatedRemedyV4PlanPreparationMinutes": [
+      10,
+      20
+    ],
+    "estimatedReplacementExecutionMinutes": [
+      10,
+      25
+    ],
+    "estimatedDirectCostUsd": 0
+  },
+  "compatibilityBoundary": {
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "existingProductionMutationBlockers": [
+      "optional-overall-reference-links",
+      "checkpoint-ledger-schema-adapter"
+    ]
+  },
+  "authorization": {
+    "renderingVerificationRemedyV4PlanPreparation": false,
+    "replacementRenderingVerificationActivation": false,
+    "browserControl": false,
+    "screenshotCapture": false,
+    "modelExecution": false,
+    "renderingRepair": false,
+    "compatibilityRemedyPlanPreparation": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-remedy-v4-plan-preparation"
+}
