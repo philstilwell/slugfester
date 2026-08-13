@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Rendering runner synthetic preflight</title>
+    <link rel="icon" href="data:,">
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 24px; color: #17302d; font: 16px/1.5 system-ui, sans-serif; }
+      main { width: min(100%, 780px); margin: 0 auto; }
+      section { padding: 20px; border: 1px solid #c5d1cf; border-radius: 12px; }
+      .overall { margin-bottom: 16px; background: #f7faf9; }
+      .logical-extension { background: #f2effb; border-color: #9186bc; }
+      summary { cursor: pointer; font-weight: 800; }
+      .ai-extension-accordion-content { margin-top: 16px; padding: 16px; background: #fff; }
+    </style>
+  </head>
+  <body>
+    <main data-synthetic-rendering-preflight="true">
+      <section class="overall" aria-labelledby="overall-heading">
+        <h1 id="overall-heading">Overall commentary</h1>
+        <p>Synthetic content for browser-control validation only.</p>
+      </section>
+      <section class="logical-extension" aria-labelledby="ai-extension-heading">
+        <h2 id="ai-extension-heading">AI Extension</h2>
+        <details class="ai-extension-accordion">
+          <summary>Explore the synthetic AI-generated arguments</summary>
+          <div class="ai-extension-accordion-content">
+            <p class="logical-extension-intro">This section is an AI-generated contribution used only to test the local browser runner.</p>
+          </div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>

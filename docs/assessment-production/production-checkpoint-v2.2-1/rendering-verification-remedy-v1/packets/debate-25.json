@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v1-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v1",
+  "status": "frozen-replacement-rendering-verification-packet",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "debateNumber": "25",
+  "debateId": "hitchens-ramadan-islam-peace-2010",
+  "candidate": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-25.json",
+    "sha256": "70402bc93d3a00c78d0f82cf820e3c33605b8c6193828a8067b4575c4bd95a8f",
+    "score": {
+      "pro": 80,
+      "con": 82
+    },
+    "sections": 5,
+    "moves": 20,
+    "aiExtensionSides": 2,
+    "strengthenedFinalArguments": 2,
+    "newArguments": {
+      "pro": 2,
+      "con": 2
+    }
+  },
+  "provenance": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-25.json",
+    "sha256": "0edeafe798ef6ad575fd7e7bd0d4ed910b9b533e412bfd24aed1daed684fd4ad",
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true
+  },
+  "preview": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/previews/index.html",
+    "sha256": "f9bc96f11dafde3439ae75601cf7a5371c86fdfbd6671862f25110da259cea20",
+    "url": "http://127.0.0.1:4187/docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/previews/index.html?debate=25",
+    "localOnly": true,
+    "noindex": true
+  },
+  "expectedDisplay": {
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "stagingBannerPrefix": "Publication staging preview:",
+    "overallHeading": "Overall commentary",
+    "aiExtensionHeading": "AI Extension",
+    "disclosurePrefix": "This section is an AI-generated contribution",
+    "nativeElement": "details",
+    "defaultCollapsed": true,
+    "prohibitedText": [
+      "unassailable"
+    ]
+  },
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "evidence": {
+        "result": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/evidence/debate-25/desktop.json",
+        "collapsedScreenshot": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/evidence/debate-25/desktop-collapsed.png",
+        "openScreenshot": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/evidence/debate-25/desktop-open.png"
+      }
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "evidence": {
+        "result": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/evidence/debate-25/mobile.json",
+        "collapsedScreenshot": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/evidence/debate-25/mobile-collapsed.png",
+        "openScreenshot": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v1/evidence/debate-25/mobile-open.png"
+      }
+    }
+  },
+  "requiredBooleanChecks": [
+    "publicationStagingRoute",
+    "noindex",
+    "stagingBanner",
+    "exactByline",
+    "overallImmediatelyPrecedesAiExtension",
+    "aiExtensionHeading",
+    "nativeDetails",
+    "defaultCollapsed",
+    "pointerOpen",
+    "keyboardEnterOpen",
+    "keyboardSpaceClose",
+    "aiDisclosureVisibleWhenOpen",
+    "twoStrengthenedFinalArguments",
+    "newArgumentsForBothSides",
+    "distinctFromOverallCommentary",
+    "prohibitedUnassailableAbsent",
+    "horizontalOverflowAbsent"
+  ],
+  "zeroCountChecks": [
+    "consoleErrors",
+    "consoleWarnings",
+    "pageErrors",
+    "failedRequests"
+  ],
+  "interactionOrder": [
+    "navigate-and-wait-for-normal-load",
+    "wait-for-accordion-attached-and-assert-visible",
+    "record-default-collapsed-state",
+    "capture-collapsed-screenshot",
+    "open-native-details-by-pointer",
+    "record-open-state-and-capture-open-screenshot",
+    "reload-and-wait-for-normal-load",
+    "wait-for-accordion-attached-and-assert-visible-after-reload",
+    "confirm-default-collapsed-after-reload",
+    "focus-summary-and-open-with-enter",
+    "close-with-space",
+    "settle-and-read-zero-tolerance-runtime-diagnostics"
+  ],
+  "mutationBoundary": {
+    "candidateWritable": false,
+    "participantScoresWritable": false,
+    "displayCopyWritable": false,
+    "applicationCodeWritable": false,
+    "stylesheetWritable": false,
+    "productionDataWritable": false,
+    "rankingDataWritable": false,
+    "productionLedgersWritable": false,
+    "compatibilityRemediesWritable": false
+  },
+  "supersedes": {
+    "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification",
+    "packet": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/packets/debate-25.json",
+    "packetSha256": "56ba109de41043ef15f2bd29913e47cdc1e2a5ebd61a8ca476c9f1c13ba1fc5a",
+    "failedExecution": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/execution.json",
+    "failedAnalysis": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification/analysis.json",
+    "priorEvidenceReusePermitted": false
+  },
+  "runnerPolicy": {
+    "controller": "Google Chrome via ChatGPT browser extension",
+    "browserFamily": "Chromium",
+    "loadSignal": "load",
+    "elementWait": "attached-plus-positive-client-rects",
+    "chromiumVersionMethod": "Runtime.evaluate:navigator.userAgent",
+    "pointerMethod": "locator.click",
+    "keyboardMethod": "locator.press",
+    "keyboardStateTransitionsRequired": true,
+    "diagnostics": [
+      "Runtime.exceptionThrown",
+      "Log.entryAdded",
+      "Network.loadingFailed",
+      "Network.responseReceived-status-greater-than-or-equal-to-400"
+    ],
+    "diagnosticSettleMilliseconds": 3000,
+    "failedRequestIgnoreList": [],
+    "failedViewportEvidencePersistence": "none",
+    "freshLocalhostOrigin": true
+  }
+}

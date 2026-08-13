@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-controller-selection-diagnosis",
+  "status": "in-app-controller-rejected-chrome-controller-selected",
+  "recordedAt": "2026-08-13T14:21:00.000Z",
+  "developmentDiagnosticOnly": true,
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "screenshotsCaptured": 0,
+  "rejectedController": {
+    "name": "Codex In-app Browser",
+    "reason": "The controller emitted Playwright and CUA keyboard events with isTrusted=false, so Chromium did not apply the native summary/details Enter and Space default actions.",
+    "normalLoadSupported": true,
+    "attachedWaitWithVisibilityAssertionSupported": true,
+    "nativeKeyboardStateTransitionsPassed": false,
+    "runtimeFailuresObservedInFinalSyntheticAttempt": 0
+  },
+  "selectedController": {
+    "name": "Google Chrome via ChatGPT browser extension",
+    "reason": "The controller produced the required native Enter-open and Space-close state transitions on the same synthetic fixture while all runtime counts remained zero.",
+    "nativeKeyboardStateTransitionsPassed": true,
+    "runtimeFailures": 0,
+    "serviceWorkerRequestObserved": false
+  },
+  "stopRuleEffect": "The in-app controller was rejected rather than treating unchanged keyboard state as a pass; no canary rendering was attempted.",
+  "productionMutationPerformed": false
+}
