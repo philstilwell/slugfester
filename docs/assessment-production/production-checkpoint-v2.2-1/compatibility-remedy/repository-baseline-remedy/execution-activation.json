@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-167-corpus-audit-baseline-remedy-execution-activation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-167-corpus-audit-alignment",
+  "status": "debate-167-corpus-audit-baseline-remedy-execution-authorized-and-frozen",
+  "activatedAt": "2026-08-13T22:37:24Z",
+  "checkpointCommit": "5991250444292e88d081194c86da06667d843583",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "Proceed at your own discretion.",
+    "scopeInterpretation": "Authorize the next recorded gate: freeze one exact model-free Debate 167 corpus-audit alignment execution under the prepared stop rules.",
+    "directIncrementalCostEstimateUsd": 0,
+    "baselineRemedyExecutionAuthorized": true,
+    "compatibilityRetryAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "productionMutationAuthorized": false,
+    "remainingProductionBatchesAuthorized": false
+  },
+  "planLocks": {
+    "alignmentPacket": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/alignment-packet.json",
+      "sha256": "d74bc5b87af93fd9824d37355378b253d85f82729e3498edb1c59e7924892c1f",
+      "status": "debate-167-corpus-audit-alignment-packet-prepared-and-frozen"
+    },
+    "preparationManifest": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/preparation-manifest.json",
+      "sha256": "75294fb52f53dd60daa816afebea6ab7a6fc3f1763ab15b1438e6a280c87439a",
+      "status": "debate-167-corpus-audit-baseline-remedy-plan-prepared-and-frozen"
+    },
+    "preparationAnalysis": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/analysis.json",
+      "sha256": "bea31043171bdec7918217fe81e3d2cbc077703c75b076e808e46b848031f1fa",
+      "status": "debate-167-corpus-audit-baseline-remedy-plan-preparation-passed"
+    }
+  },
+  "modelBoundary": {
+    "preservedAssessmentModel": "5.6 Sol",
+    "preservedReasoningEffort": "low",
+    "preservedAuthentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "modelContexts": 0,
+    "judgmentExecution": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "executionContract": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "exactFieldSubstitutions": 3,
+    "wholeFileParseAndReserializeAllowed": false,
+    "allowedActions": [
+      "verify every activation source hash before writing",
+      "replace Debate 167 eventCount from 1887 to 1886 exactly once",
+      "replace Debate 167 transcriptSha256 with the validated repaired transcript hash exactly once",
+      "replace Debate 167 normalizedEventsSha256 with the validated repaired events hash exactly once",
+      "write one execution record and replace the planning analysis with one execution analysis",
+      "run the frozen source, corpus, debate, scoring, compatibility-replay, and complete repository checks"
+    ],
+    "allowedWrites": [
+      "docs/calibration/v2.1/corpus-transcript-audit.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/analysis.json"
+    ],
+    "forbiddenWrites": [
+      "docs/assessment-ledgers/**",
+      "src/data/debates.js",
+      "src/data/references.js",
+      "scripts/**",
+      ".assessment-cache/**",
+      "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/**",
+      "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/packets/**",
+      "docs/assessment-production/production-checkpoint-v2.2-1/final-ledger/**",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/**"
+    ],
+    "productionMutationPerformedAtActivation": false
+  },
+  "targetContract": {
+    "path": "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "beforeBytes": 182544,
+    "beforeSha256": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f",
+    "projectedAfterBytes": 182544,
+    "projectedAfterSha256": "7b572eedba90a6e635252f459f84a7c2080273f7fe7f61dd0bedca179e5ae8b0",
+    "replacements": [
+      {
+        "field": "eventCount",
+        "before": 1887,
+        "after": 1886,
+        "requiredOccurrences": 1
+      },
+      {
+        "field": "transcriptSha256",
+        "before": "2fc2c64b885556902ad6121f46be088f517ffd5ac0928d951dca0669b5846355",
+        "after": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+        "requiredOccurrences": 1
+      },
+      {
+        "field": "normalizedEventsSha256",
+        "before": "c6fc6347fc71f7c1605b9184b995465703bfdf5797ce11d3f67558abd32fb355",
+        "after": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+        "requiredOccurrences": 1
+      }
+    ],
+    "unchangedByteProof": {
+      "otherEntries": 194,
+      "prefixBytes": 155417,
+      "prefixSha256": "468bdd8c129f4c6c86fb41fede15714413313e1ee830ad15b2da3e444ec54f51",
+      "suffixBytes": 26104,
+      "suffixSha256": "fb14fd8823b5951be7c2f84f350cdad407b69b165335ab6e13aff72e96cd2436",
+      "otherEntriesMustRemainByteEquivalent": true
+    },
+    "dependentCorpusTotalsPresent": [],
+    "dependentCorpusTotalsChanged": []
+  },
+  "compatibilityPreservation": {
+    "execution": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/execution.json",
+      "sha256": "4ec18f679490a994d0c2612496266690517c3eb1b127b80234e71bf8b0e74b57",
+      "status": "compatibility-remedy-executed-repository-baseline-blocked"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/analysis.json",
+      "sha256": "209b8f64c0724af08118a04617d30f36054fb5a30ce58ffc8fd933e64b6ea31c",
+      "status": "compatibility-remedy-passed-repository-acceptance-blocked"
+    },
+    "expectedAdapters": 10,
+    "expectedSections": 51,
+    "expectedMoves": 188,
+    "expectedOverallScores": 20,
+    "stagedLedgers": [
+      {
+        "debateNumber": "50",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/knechtle-dillahunty-christianity-true-2023.json",
+        "sha256": "17cc8e78b875c4df851b2fc5eb5285f0950955800cb0691eb744116d2cd14afe"
+      },
+      {
+        "debateNumber": "192",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/tour-swamidass-origin-life-chemistry-2020.json",
+        "sha256": "8ecf47690a057ca7c1a3acf657f1f6bae55e31ead4071841e6fc4c04af08e4fc"
+      },
+      {
+        "debateNumber": "129",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/plantinga-law-eaan-rational-belief-2010.json",
+        "sha256": "bfe325a35ae1592e702cd8e49ed621662a4116ebb72ed01a63491f9b9254902f"
+      },
+      {
+        "debateNumber": "40",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/enoch-bush-objective-moral-truths-2026.json",
+        "sha256": "1053187ec4a95a9c50780e2720e27b1d898d2cf8aa5e0951a78ef0b78afb907e"
+      },
+      {
+        "debateNumber": "25",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/hitchens-ramadan-islam-peace-2010.json",
+        "sha256": "74ad6bc16b19c778818af2f28bb1a2cc6ebdc5604265bdd9078ecaf05bc54511"
+      },
+      {
+        "debateNumber": "104",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json",
+        "sha256": "eb8f19682600f86f2686b20ed6fa30dffaf3245484c11473a5b0a673a62a2aaf"
+      },
+      {
+        "debateNumber": "22",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/turek-hitchens-god-existence-2008.json",
+        "sha256": "41bbf2134444a6c80eba0f79315f479eb577ae8d9e6eab791bb0918b3b122343"
+      },
+      {
+        "debateNumber": "10",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/craig-harris-moral-foundations-2011.json",
+        "sha256": "7c24813c56e312e9a8597b338e0fd6f35f7908ebef1d264a2824c769f015d5ad"
+      },
+      {
+        "debateNumber": "167",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/craig-shook-existence-god-2008.json",
+        "sha256": "08b98cb619d5d60ab9070c968f57e5d9384fe0e6fc22f135cf2dddfcee3a40c3"
+      },
+      {
+        "debateNumber": "122",
+        "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/horn-oconnor-god-existence-2020.json",
+        "sha256": "46c71692c95df62c6fa603fd371b237d6ae9e3a6ceae2e1c1474b0b4d6088a05"
+      }
+    ],
+    "deterministicAdapterReplayRequired": true,
+    "compatibilityRetryAllowed": false
+  },
+  "mandatoryExecutionTests": {
+    "activationSourceHashesExact": true,
+    "targetBeforeHashExact": true,
+    "threeOneTimeSubstitutionsExact": true,
+    "targetProjectedAfterHashExact": true,
+    "unchangedPrefixAndSuffixHashesExact": true,
+    "other194EntriesByteEquivalent": true,
+    "repairValidator": "node scripts/validate-assessment-production-checkpoint-v2.2-debate-167-source-repair.mjs",
+    "corpusTranscriptValidator": "node scripts/validate-corpus-transcripts.mjs",
+    "currentDebateValidator": "node scripts/validate-debates.mjs",
+    "legacyScoringRegression": "node scripts/test-reassessment-scoring.mjs",
+    "completeRepositoryCheck": "npm run check",
+    "allCommandsMustPass": true,
+    "stagedAdapterHashesAndDeterministicScoreReplaysMustRemainExact": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/alignment-packet.json": "d74bc5b87af93fd9824d37355378b253d85f82729e3498edb1c59e7924892c1f",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/preparation-manifest.json": "75294fb52f53dd60daa816afebea6ab7a6fc3f1763ab15b1438e6a280c87439a",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/analysis.json": "bea31043171bdec7918217fe81e3d2cbc077703c75b076e808e46b848031f1fa",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/execution.json": "4ec18f679490a994d0c2612496266690517c3eb1b127b80234e71bf8b0e74b57",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/analysis.json": "209b8f64c0724af08118a04617d30f36054fb5a30ce58ffc8fd933e64b6ea31c",
+    "docs/assessment-production/source-repairs/debate-167-empty-event-normalization.json": "7c1b0c98159a2968b39346605b942b31861c67668b4cbecd97b06fd67fb54898",
+    "docs/calibration/v2.1/corpus-transcript-audit.json": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f",
+    ".assessment-cache/captions/L3FOgiASYY0/transcript.txt": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+    ".assessment-cache/captions/L3FOgiASYY0/events.json": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+    ".assessment-cache/captions/L3FOgiASYY0/manifest.json": "c53451a13f2b21b44010dfbbe0e4834667ac4c765a00a2c3e694fe4f0079c73c",
+    "scripts/validate-assessment-production-checkpoint-v2.2-debate-167-source-repair.mjs": "9d242ccb15cde43d074f59712792695975f6ceea851a7ff33b18bc1f04a84d01",
+    "scripts/validate-corpus-transcripts.mjs": "650277b4d8c33d373b491230dc3ae29517906dd0d362c5039e49171c04caf8e8",
+    "scripts/validate-debates.mjs": "41271127a567353f3591fe2e8b6315c9b592c85bcaad5ec36842d42f1da98556",
+    "scripts/lib/assessment-production-checkpoint-v2.2-compatibility-remedy.mjs": "871a21a8bb7cf72e694797297f871acf6a26832f9b7c9ab5ef9afff6b5db117c",
+    "scripts/lib/reassessment-scoring.mjs": "21734003747461cc9ff4efb2aca00e95cc1d1d9a1fe75448bf0350ab941ae60d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/test-reassessment-scoring.mjs": "aa319e3ac2a8d101c62b3f3aaa161bc67bcacd057e5b82f5dbfc1640ff7fff78",
+    "package.json": "4cd0ac3ad9a45cf15783efae3bf407b00fff1b407550d837335f0f5d1b015379",
+    "src/data/debates.js": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6",
+    "src/data/references.js": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/knechtle-dillahunty-christianity-true-2023.json": "17cc8e78b875c4df851b2fc5eb5285f0950955800cb0691eb744116d2cd14afe",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/tour-swamidass-origin-life-chemistry-2020.json": "8ecf47690a057ca7c1a3acf657f1f6bae55e31ead4071841e6fc4c04af08e4fc",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/plantinga-law-eaan-rational-belief-2010.json": "bfe325a35ae1592e702cd8e49ed621662a4116ebb72ed01a63491f9b9254902f",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/enoch-bush-objective-moral-truths-2026.json": "1053187ec4a95a9c50780e2720e27b1d898d2cf8aa5e0951a78ef0b78afb907e",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/hitchens-ramadan-islam-peace-2010.json": "74ad6bc16b19c778818af2f28bb1a2cc6ebdc5604265bdd9078ecaf05bc54511",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json": "eb8f19682600f86f2686b20ed6fa30dffaf3245484c11473a5b0a673a62a2aaf",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/turek-hitchens-god-existence-2008.json": "41bbf2134444a6c80eba0f79315f479eb577ae8d9e6eab791bb0918b3b122343",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/craig-harris-moral-foundations-2011.json": "7c24813c56e312e9a8597b338e0fd6f35f7908ebef1d264a2824c769f015d5ad",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/craig-shook-existence-god-2008.json": "08b98cb619d5d60ab9070c968f57e5d9384fe0e6fc22f135cf2dddfcee3a40c3",
+    "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/horn-oconnor-god-existence-2020.json": "46c71692c95df62c6fa603fd371b237d6ae9e3a6ceae2e1c1474b0b4d6088a05"
+  },
+  "preflight": {
+    "sourceHashesPassed": 30,
+    "targetBeforeHashPassed": true,
+    "inMemoryProjectedAfterHashPassed": true,
+    "other194EntriesByteEquivalentInProjection": true,
+    "repairValidatorPassed": true,
+    "currentDebateValidatorPassed": true,
+    "currentCorpusValidatorExpectedFailureConfirmed": true,
+    "currentCorpusValidatorFailureLimitedToDebate167StaleTranscriptAndEventsHashes": true,
+    "executionRecordAbsentAtActivation": true,
+    "corpusAuditUnchangedAtActivation": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "executionActivation": true,
+    "baselineRemedyExecution": true,
+    "exactDebate167CorpusAuditAlignment": true,
+    "compatibilityDeterministicRevalidation": true,
+    "compatibilityRetry": false,
+    "judgmentModelExecution": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "activationSourceHashMismatchBlocks": true,
+    "targetBeforeHashMismatchBlocks": true,
+    "replacementCountMismatchBlocks": true,
+    "projectedAfterHashMismatchBlocks": true,
+    "prefixOrSuffixHashMismatchBlocks": true,
+    "otherCorpusEntryDifferenceBlocks": true,
+    "sourceValidationFailureBlocks": true,
+    "stagedAdapterHashOrReplayDifferenceBlocks": true,
+    "repositoryCheckFailureBlocks": true,
+    "unexpectedWriteBlocks": true,
+    "automaticRetryForbidden": true,
+    "sourceValidationWeakeningForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseChangeForbidden": true,
+    "productionLedgerPublicationForbidden": true,
+    "productionMutationForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "single-debate-167-corpus-audit-baseline-remedy-execution-under-frozen-stop-rules"
+}
