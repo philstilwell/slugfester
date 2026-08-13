@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v4-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v4",
+  "status": "fourth-replacement-rendering-verification-failed-closed-on-first-viewport-cdp-screenshot-deadline",
+  "recordedAt": "2026-08-13T17:37:55.148Z",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "execution": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v4/execution.json"
+  },
+  "decision": {
+    "failedClosed": true,
+    "retryPerformed": false,
+    "timeoutExtended": false,
+    "partialStatePromotionPermitted": false,
+    "renderingGatePassed": false,
+    "renderingRepairPermitted": false,
+    "validatorMigrationPermitted": false,
+    "productionLedgerPublicationPermitted": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "gate": {
+    "activationSourceHashReplayPassedBeforeExecution": true,
+    "packetHashReplayPassedBeforeExecution": true,
+    "expectedDebates": 10,
+    "attemptedDebates": 1,
+    "finalizedDebatesPassed": 0,
+    "expectedViewportResults": 20,
+    "attemptedViewportResults": 1,
+    "finalizedViewportResultsPassed": 0,
+    "failedViewportResults": 1,
+    "unattemptedViewportResults": 19,
+    "expectedScreenshots": 40,
+    "screenshotRequests": 1,
+    "completedScreenshots": 0,
+    "validScreenshotsPreserved": 0,
+    "finalizedRequiredBooleanChecksPassed": 0,
+    "runtimeState": "not-collected-after-cdp-screenshot-command-deadline",
+    "browserEvidenceCaptureContractPassed": false,
+    "renderingContentRegressionEstablished": false,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "directCostUsd": 0
+  },
+  "diagnosis": {
+    "observed": "The synthetic v4 preflight had previously completed the same direct PNG command at both frozen viewports. During the first candidate execution, the diagnostic bootstrap and Debate 50 staging page returned HTTP 200 and the runner reached its first direct collapsed PNG request, but the browser controller did not complete that command within 3000 milliseconds.",
+    "established": [
+      "The frozen activation, all 142 source hashes, and all 10 packet hashes passed before navigation.",
+      "The first candidate page loaded and passed direct readiness far enough for the runner to request its collapsed screenshot.",
+      "No screenshot bytes, viewport evidence, score change, repair, validator change, or production mutation were produced.",
+      "The no-retry and no-timeout-extension stop rules were honored."
+    ],
+    "notEstablished": [
+      "No candidate rendering defect was established.",
+      "No PNG signature, nonblank-content, pixel-dimension, or collapsed/open-pair conclusion can be drawn because no screenshot bytes returned.",
+      "No runtime-error conclusion can be drawn because runtime collection occurs after the pointer phase and was not reached."
+    ]
+  },
+  "cleanup": {
+    "browserTabsRemaining": 0,
+    "viewportOverrideReset": true,
+    "localServerStopped": true,
+    "localServerPortClosed": true,
+    "evidenceRootAbsent": true
+  },
+  "authorization": {
+    "retry": false,
+    "timeoutExtension": false,
+    "alternativeCaptureMethod": false,
+    "renderingRepair": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-remedy-v5-plan-preparation"
+}
