@@ -1,0 +1,329 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-192-publication-repair-model-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-192-publication-repair-1",
+  "status": "four-debate-192-publication-repair-contexts-passed",
+  "gateStartedAt": "2026-08-13T01:36:39.966Z",
+  "gateCompletedAt": "2026-08-13T01:39:25.313Z",
+  "contextsPlanned": 4,
+  "contextsAttempted": 4,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 4,
+  "invalidContexts": 0,
+  "attempts": 4,
+  "retries": 0,
+  "furtherCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "wallElapsedMs": 165345,
+  "aggregateModelElapsedMs": 226059,
+  "meanElapsedMs": 56514.75,
+  "rampPhases": [
+    {
+      "phase": "repair-operational-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRepairFailed": false
+    },
+    {
+      "phase": "repair-ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRepairFailed": false
+    },
+    {
+      "phase": "repair-final-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        3
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3
+      ],
+      "validContextIndexes": [
+        3
+      ],
+      "passed": true,
+      "skippedBecausePriorRepairFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T01:36:39.968Z",
+      "completedAt": "2026-08-13T01:37:39.671Z",
+      "elapsedMs": 59703,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-probability-needs-pathway.critique",
+        "moveProse.pro-receding-explanatory-target.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "7bfd6373737393668034a4cf804be4c5ab583e145c3a08fec771ecf23fc7ef60",
+      "stderrSha256": "2735d0fc3c6ddb85ef2d87c0d25eb917f19eaad7d2203249c73bb7b287e1b23a",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "3deab6121c7fe2e0f870b0ac972b6909a5b6a91846372462408bcbb3244a1f8b",
+      "validationWritten": true,
+      "validationSha256": "0bf4937199c923b7305e540d35019beaa6183b1a3bec1bab9f2ad6ce52b8f866",
+      "provenanceWritten": true,
+      "provenanceSha256": "50872249cef7ea8a5e610e052b4768c403c2e162594ef6b31903c807084d0226",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "192",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-probability-needs-pathway.critique",
+            "words": 117,
+            "characters": 995,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-receding-explanatory-target.critique",
+            "words": 117,
+            "characters": 974,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T01:37:39.685Z",
+      "completedAt": "2026-08-13T01:38:40.428Z",
+      "elapsedMs": 60743,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-cumulative-unfavorable-steps.critique",
+        "moveProse.con-independent-origin-falsifier.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "65a2edc64d7d476bdf39e3fa348ddd632282ba51b1bb4348bb14480d0e47f21b",
+      "stderrSha256": "a607e4cecdc5b099a761234b5a66462b67dd230ebc322b903ef2a41de54cf554",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "4e9a31379a101b965074ff2d180e4324d9f1445d5c24619b3e116a85a0abf256",
+      "validationWritten": true,
+      "validationSha256": "3b40eb7f3cb1a6a07418dd6874a3a2010b5c2b8cbba116c68444e990697f5971",
+      "provenanceWritten": true,
+      "provenanceSha256": "86ac4c7df2cd0b4e7d0290e6d35957730066fdbdc38965a6e58e55c397d29083",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "192",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-cumulative-unfavorable-steps.critique",
+            "words": 116,
+            "characters": 1000,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-independent-origin-falsifier.critique",
+            "words": 118,
+            "characters": 948,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T01:37:39.685Z",
+      "completedAt": "2026-08-13T01:38:54.753Z",
+      "elapsedMs": 75068,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-recurrence-without-mechanism.critique",
+        "moveProse.pro-laboratory-work-not-pathway.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "f45ecc0fc3af584f9cf403cfbbe5f96925e31c6bac411becf993d0e017124ddb",
+      "stderrSha256": "bb77173e91a0a45aa9d1a48867a6093259f76f7cea7262f49c19eebae61f2028",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "1456ad0261db244647125ab38a7735666715a9053770179094b645a06af779b8",
+      "validationWritten": true,
+      "validationSha256": "fad87e3bbab5c94309c5f09bdc2f0858400328fde7129b1001845dcce1942bf5",
+      "provenanceWritten": true,
+      "provenanceSha256": "76b467578dda463255aa56aeef9fa20f7fb39ce42eefd9f2ac0609649eaa4a2a",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "192",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-recurrence-without-mechanism.critique",
+            "words": 117,
+            "characters": 960,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-laboratory-work-not-pathway.critique",
+            "words": 118,
+            "characters": 991,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "192",
+      "debateId": "tour-swamidass-origin-life-chemistry-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T01:38:54.761Z",
+      "completedAt": "2026-08-13T01:39:25.306Z",
+      "elapsedMs": 30545,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-chemical-nonzero-possibility.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "b60901efc7150ac01e924399ab0fa7e08c95d46c2e02ce7ee5b8459360ed9a86",
+      "stderrSha256": "a677b8a20198434a08e667f33713afce6aa656f43be6a06af8d6e2842c7eee84",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "9e308b89a05f1dfdb2738602434b605f7ae9580add37b6ea3d1d60240a0b5fbc",
+      "validationWritten": true,
+      "validationSha256": "fee83bf3b95eeb677fcfa92183a764742db2c89335ef618d9661264534a89ff2",
+      "provenanceWritten": true,
+      "provenanceSha256": "c242ea75eb66244e01d9ae9161e63ce56583ee7993adb78387bdcdb277a7d7ae",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "192",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-chemical-nonzero-possibility.critique",
+            "words": 117,
+            "characters": 1007,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "furtherCorrectionModelExecution": false,
+    "eightContextResumption": false,
+    "productionMutation": false
+  }
+}

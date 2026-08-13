@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-192-publication-repair-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-192-publication-repair-1",
+  "status": "debate-192-four-packet-repair-and-complete-publication-validation-passed",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "status": "completed-valid",
+      "accepted": true,
+      "elapsedMinutes": 1,
+      "correctedFields": [
+        {
+          "field": "moveProse.pro-probability-needs-pathway.critique",
+          "words": 117,
+          "characters": 995,
+          "sentences": 4
+        },
+        {
+          "field": "moveProse.pro-receding-explanatory-target.critique",
+          "words": 117,
+          "characters": 974,
+          "sentences": 4
+        }
+      ],
+      "validationReplayed": true,
+      "replayMessage": null,
+      "modelAuthoredScores": 0
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "status": "completed-valid",
+      "accepted": true,
+      "elapsedMinutes": 1.01,
+      "correctedFields": [
+        {
+          "field": "moveProse.pro-cumulative-unfavorable-steps.critique",
+          "words": 116,
+          "characters": 1000,
+          "sentences": 4
+        },
+        {
+          "field": "moveProse.con-independent-origin-falsifier.critique",
+          "words": 118,
+          "characters": 948,
+          "sentences": 4
+        }
+      ],
+      "validationReplayed": true,
+      "replayMessage": null,
+      "modelAuthoredScores": 0
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "status": "completed-valid",
+      "accepted": true,
+      "elapsedMinutes": 1.25,
+      "correctedFields": [
+        {
+          "field": "moveProse.pro-recurrence-without-mechanism.critique",
+          "words": 117,
+          "characters": 960,
+          "sentences": 4
+        },
+        {
+          "field": "moveProse.pro-laboratory-work-not-pathway.critique",
+          "words": 118,
+          "characters": 991,
+          "sentences": 4
+        }
+      ],
+      "validationReplayed": true,
+      "replayMessage": null,
+      "modelAuthoredScores": 0
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "status": "completed-valid",
+      "accepted": true,
+      "elapsedMinutes": 0.51,
+      "correctedFields": [
+        {
+          "field": "moveProse.con-chemical-nonzero-possibility.critique",
+          "words": 117,
+          "characters": 1007,
+          "sentences": 4
+        }
+      ],
+      "validationReplayed": true,
+      "replayMessage": null,
+      "modelAuthoredScores": 0
+    }
+  ],
+  "gate": {
+    "repairSemanticPass": true,
+    "completeDebateValidationPassed": true,
+    "timingPass": true,
+    "validRepairContexts": 4,
+    "requiredRepairContexts": 4,
+    "correctedFields": 7,
+    "requiredCorrectedFields": 7,
+    "movesValidated": 16,
+    "critiquesValidated": 16,
+    "exactSourceQuotesValidated": 2,
+    "overallCommentarySidesValidated": 2,
+    "aiExtensionSidesValidated": 2,
+    "immutableFieldsChanged": 0,
+    "wallElapsedMinutes": 2.76,
+    "retries": 0,
+    "furtherCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "originalFailedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/outputs/debate-192.json",
+    "originalFailedOutputPreserved": true,
+    "repairOutputs": [
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-0.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-1.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-2.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/repair-outputs/packet-3.json"
+    ],
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/merged/debate-192.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/merge-audit.json"
+  },
+  "totals": {
+    "modelContexts": 4,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "eightContextResumptionPlanPreparation": true,
+    "eightContextModelExecution": false,
+    "retry": false,
+    "furtherCorrectionModelExecution": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "prepare-and-freeze-separate-eight-context-publication-resumption-plan"
+}
