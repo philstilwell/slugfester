@@ -1,0 +1,525 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-22-publication-repair-model-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-22-publication-repair-1",
+  "status": "seven-debate-22-publication-repair-contexts-passed",
+  "gateStartedAt": "2026-08-13T03:45:23.683Z",
+  "gateCompletedAt": "2026-08-13T03:49:44.158Z",
+  "contextsPlanned": 7,
+  "contextsAttempted": 7,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 7,
+  "invalidContexts": 0,
+  "attempts": 7,
+  "retries": 0,
+  "furtherCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "wallElapsedMs": 260474,
+  "aggregateModelElapsedMs": 436355,
+  "meanElapsedMs": 62336.42857142857,
+  "rampPhases": [
+    {
+      "phase": "repair-operational-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRepairFailed": false
+    },
+    {
+      "phase": "repair-ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRepairFailed": false
+    },
+    {
+      "phase": "repair-steady-four",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "validContextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "passed": true,
+      "skippedBecausePriorRepairFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T03:45:23.684Z",
+      "completedAt": "2026-08-13T03:46:25.566Z",
+      "elapsedMs": 61882,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-cosmic-planetary-fine-tuning.critique",
+        "moveProse.pro-dna-specified-information-design.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "353d951bfbb585f04aeb812ee1203c3e595bdd8abb1b06c346b571b00b15ed9a",
+      "stderrSha256": "601be283a2cac2d8a36f9685cb69e255b5a99523a56f8de18eec9c181766e788",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "827faa754d140f47635b48334c73ba5b874d3900182d275dce2aaf5ef9adda3d",
+      "validationWritten": true,
+      "validationSha256": "e6529a7dbe7f43c24ce257ba23a8d4c9028c7a16533e9b6858474ae8a695e1b0",
+      "provenanceWritten": true,
+      "provenanceSha256": "47032199050e7f5b21bde29f96336715a20ef5a03d6f678406a35b1cd9af7b27",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "22",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-cosmic-planetary-fine-tuning.critique",
+            "words": 117,
+            "characters": 1059,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-dna-specified-information-design.critique",
+            "words": 117,
+            "characters": 969,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T03:46:25.578Z",
+      "completedAt": "2026-08-13T03:47:45.643Z",
+      "elapsedMs": 80065,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-reason-mathematics-freedom.critique",
+        "moveProse.con-autonomy-against-divine-permission.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "853a60f8fbf5acf124627eca6550a7aefdbe349f27711c68cf4032d758c0fac0",
+      "stderrSha256": "615f98d8f68a8c60b33ca5a2c38cb9dab2f5f27d6a52c88cbc49a84bc0977090",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "9276bd6ff65ffc86b89f4fadca074ff76effef65dd9ed62fa930a586fe08f259",
+      "validationWritten": true,
+      "validationSha256": "86f153f28ac144cd1a00a848abb8757dd96cf4176f565f603f23f421454253fc",
+      "provenanceWritten": true,
+      "provenanceSha256": "137f53686a6cab58b483f32c896c3e5e9caf7f9e3a9d6da775fd7aacbfd0f6bf",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "22",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-reason-mathematics-freedom.critique",
+            "words": 117,
+            "characters": 996,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-autonomy-against-divine-permission.critique",
+            "words": 117,
+            "characters": 969,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T03:46:25.578Z",
+      "completedAt": "2026-08-13T03:47:45.026Z",
+      "elapsedMs": 79449,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-divine-tyranny-against-moral-autonomy.critique",
+        "moveProse.con-theistic-claimant-burden.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "3e58994f6c8be4e2913a359c6820df2abe1c7a461c9915947c61e159bf0edae9",
+      "stderrSha256": "ec68993ca95c455cfccd937241031891fb56950f6baf77b6bdd3688fa2736304",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "c644081fa04b1c0bd62e72c404407724748e786236c3761aa54662ee61afe48d",
+      "validationWritten": true,
+      "validationSha256": "80f790f784a72d5a43c4ee50ef3f8520d596d0c55b401d47fb16afd3e1b4bda6",
+      "provenanceWritten": true,
+      "provenanceSha256": "cb3526a551df0a7019e7cd6f319bac427b27562be146535cd781139fe43ce81f",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "22",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-divine-tyranny-against-moral-autonomy.critique",
+            "words": 117,
+            "characters": 952,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-theistic-claimant-burden.critique",
+            "words": 118,
+            "characters": 906,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T03:47:45.655Z",
+      "completedAt": "2026-08-13T03:48:44.955Z",
+      "elapsedMs": 59300,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-designer-christianity-gap.critique",
+        "moveProse.con-secular-morality-and-religious-crime.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "e9424e768577cab4d5217d0e5b16cd7d52c58297ae43e290f1b5fc668b7a20b7",
+      "stderrSha256": "dc961b7ecaf2124e1c929bb85e1e677e975752d1360057de9f409aa8282ca895",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "504463b116a27de76b8f32c4c3a448c46245b18c01e25b2e300f2f25ba94e63f",
+      "validationWritten": true,
+      "validationSha256": "436fbea7a309498df9c426bbc265d617ec10549cbddf270a5293ba006b6c7028",
+      "provenanceWritten": true,
+      "provenanceSha256": "043e7cd6c3bd4648f3626a5cdc9be8f24ae9ce3df27685fc8f9779f7514b5e56",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "22",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-designer-christianity-gap.critique",
+            "words": 117,
+            "characters": 957,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-secular-morality-and-religious-crime.critique",
+            "words": 114,
+            "characters": 974,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 4,
+      "packetIndex": 4,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T03:47:45.655Z",
+      "completedAt": "2026-08-13T03:48:38.662Z",
+      "elapsedMs": 53007,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-wrongdoing-generic-theism-distinction.critique",
+        "moveProse.con-evolution-parsimony-against-designer.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "19a20ed9376780ea233c1321b31a41c2baa012d4b1e443d2bf81237b2fd5dd07",
+      "stderrSha256": "52e8f7b5d67583a0449127126f5e3be1be40ea21b38a987ed73c31189dbe35d4",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "4123cd5401d11877361e9d092735e1856797d6db28f44263c3fe9859e7d1bcd1",
+      "validationWritten": true,
+      "validationSha256": "60e751fbab412e02ba3e8e2b0708dde5ccbad3ef85a8df098a6215823b0a1f36",
+      "provenanceWritten": true,
+      "provenanceSha256": "8008266217457f773f3a4f5461317c7f8cdf434e13cd52484a6f578cd8527ca3",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "22",
+        "packetIndex": 4,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-wrongdoing-generic-theism-distinction.critique",
+            "words": 116,
+            "characters": 972,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-evolution-parsimony-against-designer.critique",
+            "words": 117,
+            "characters": 972,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 5,
+      "packetIndex": 5,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T03:48:38.673Z",
+      "completedAt": "2026-08-13T03:49:44.150Z",
+      "elapsedMs": 65477,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-dna-design-underdetermination.critique",
+        "moveProse.pro-resurrection-christian-evidence-bridge.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "6be6d747dd6d5777c4600ec0cc08e6ee9ca081ad3512624ff287dd76bc1d4602",
+      "stderrSha256": "ac5f175e91c27f7f0530781b79edbef13f846ab5907872fb5177071a53128785",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "6d4ebd653d377a1dc4540daa47cef94cc324f657f230e5dd02159e9403936a8d",
+      "validationWritten": true,
+      "validationSha256": "a82cb1d2c793a6aa511935a499ef9c0cb2a2a4892b7f811988ee0ff6872be673",
+      "provenanceWritten": true,
+      "provenanceSha256": "f1b56f50e777b723b14e536760e4c3b3b3885b27350b1d0eb4ca86157db383fb",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "22",
+        "packetIndex": 5,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-dna-design-underdetermination.critique",
+            "words": 115,
+            "characters": 1022,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-resurrection-christian-evidence-bridge.critique",
+            "words": 120,
+            "characters": 1026,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 6,
+      "packetIndex": 6,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "furtherCorrectionContextCount": 0,
+      "startedAt": "2026-08-13T03:48:44.966Z",
+      "completedAt": "2026-08-13T03:49:22.141Z",
+      "elapsedMs": 37175,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-secular-sacrifice-without-reward.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "b523d9cf302c255b7be0f0109335b033cadf70c73e50c6d8bc9946f9d8055b32",
+      "stderrSha256": "0a1a1f367dc9ac9380a57cfef955dabb20c8432d0b245d4e0e2075b014e58258",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "b9997657866f484bbd44e02c2dab5b71d435d8157dab6b546474caf44eb3f0e2",
+      "validationWritten": true,
+      "validationSha256": "def3a5d6a455452b79cceb6bdc363afcd8851ebfc0202dc929d249c21b3e6ad0",
+      "provenanceWritten": true,
+      "provenanceSha256": "bff0647106d32641c7d22b5bc664fcfd181ae1e41aa75fc75ad45550276207f5",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "22",
+        "packetIndex": 6,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-secular-sacrifice-without-reward.critique",
+            "words": 118,
+            "characters": 1018,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicCompleteCohortValidationIfAllRepairsPass": true,
+    "retry": false,
+    "furtherCorrectionModelExecution": false,
+    "deterministicCompilation": false,
+    "productionMutation": false
+  }
+}
