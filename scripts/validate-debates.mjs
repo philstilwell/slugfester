@@ -7,6 +7,12 @@ import {
   V2_RUBRIC,
   V21_RUBRIC
 } from "./lib/reassessment-scoring.mjs";
+import {
+  CHECKPOINT_V22_COMPATIBILITY_REMEDY_ROOT,
+  CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION,
+  sha256,
+  validateCheckpointV22SiteLedgerAdapter
+} from "./lib/assessment-production-checkpoint-v2.2-compatibility-remedy.mjs";
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -98,6 +104,23 @@ function requireArray(object, key, path, options = {}) {
   return value;
 }
 
+function usesCheckpointLedgerAdapter(debate) {
+  if (!debate?.id) return false;
+  const ledgerUrl = new URL(
+    `../docs/assessment-ledgers/${encodeURIComponent(debate.id)}.json`,
+    import.meta.url
+  );
+  if (!existsSync(ledgerUrl)) return false;
+  try {
+    return (
+      JSON.parse(readFileSync(ledgerUrl, "utf8")).schemaVersion ===
+      CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION
+    );
+  } catch {
+    return false;
+  }
+}
+
 function validateReassessmentLedger(debate, path) {
   const isV21 = debate.assessmentRubric === V21_RUBRIC;
   const ledgerUrl = new URL(
@@ -111,8 +134,10 @@ function validateReassessmentLedger(debate, path) {
   }
 
   let ledger;
+  let ledgerText;
   try {
-    ledger = JSON.parse(readFileSync(ledgerUrl, "utf8"));
+    ledgerText = readFileSync(ledgerUrl, "utf8");
+    ledger = JSON.parse(ledgerText);
   } catch (error) {
     addError([...path, "assessmentRubric"], `ledger is not valid JSON: ${error.message}`);
     return;
@@ -130,6 +155,52 @@ function validateReassessmentLedger(debate, path) {
   }
   if (isV21 && ledger.calibrationOnly !== false) {
     addError([...path, "assessmentRubric"], "published v2.1 ledgers must set calibrationOnly to false");
+  }
+
+  if (ledger.schemaVersion === CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION) {
+    try {
+      const packetUrl = new URL(
+        `../${CHECKPOINT_V22_COMPATIBILITY_REMEDY_ROOT}/packets/debate-${encodeURIComponent(debate.number)}.json`,
+        import.meta.url
+      );
+      const activationUrl = new URL(
+        `../${CHECKPOINT_V22_COMPATIBILITY_REMEDY_ROOT}/execution-activation.json`,
+        import.meta.url
+      );
+      const packetText = readFileSync(packetUrl, "utf8");
+      const packet = JSON.parse(packetText);
+      const activation = JSON.parse(readFileSync(activationUrl, "utf8"));
+      const packetLock = activation.packetHashes?.find(
+        (item) => item.debateNumber === debate.number
+      );
+      if (
+        activation.status !==
+          "compatibility-remedy-execution-authorized-and-frozen" ||
+        !activation.authorization?.compatibilityRemedyExecution ||
+        !packetLock ||
+        packetLock.path !==
+          `${CHECKPOINT_V22_COMPATIBILITY_REMEDY_ROOT}/packets/debate-${debate.number}.json` ||
+        sha256(packetText) !== packetLock.sha256 ||
+        packet.proposedAdapterSha256 !== packetLock.proposedAdapterSha256 ||
+        sha256(ledgerText) !== packetLock.proposedAdapterSha256
+      ) {
+        throw new Error("checkpoint adapter or packet hash differs from its frozen activation");
+      }
+      validateCheckpointV22SiteLedgerAdapter({
+        adapter: ledger,
+        candidate: debate,
+        expectedSourceLocks: packet.sourceLocks
+      });
+      if (!debate.logicalExtension) {
+        throw new Error("checkpoint production assessments require an AI Extension");
+      }
+    } catch (error) {
+      addError(
+        [...path, "assessmentRubric"],
+        `checkpoint ledger validation failed: ${error.message}`
+      );
+    }
+    return;
   }
 
   let calculated;
@@ -314,7 +385,7 @@ function validateOverall(overall, path) {
     }
 
     requireString(blunder, "text", blunderPath, { minWords: 8 });
-    requireArray(blunder, "links", blunderPath, { minLength: 1 }).forEach((link, linkIndex) => {
+    requireArray(blunder, "links", blunderPath).forEach((link, linkIndex) => {
       const linkPath = [...blunderPath, "links", String(linkIndex)];
       if (!isPlainObject(link)) {
         addError(linkPath, "must be an object");
@@ -404,6 +475,7 @@ function validateDebate(debate, index) {
   });
   const debateNumber = Number.parseInt(debate.number, 10);
   const hasReassessmentRubric = debate.assessmentRubric !== undefined;
+  const hasCheckpointLedgerAdapter = usesCheckpointLedgerAdapter(debate);
   if (hasReassessmentRubric) {
     const rubric = requireString(debate, "assessmentRubric", path);
     requireString(debate, "assessmentModel", path);
@@ -496,9 +568,17 @@ function validateDebate(debate, index) {
             return;
           }
 
-          if (debate.assessmentRubric === V21_RUBRIC) {
+          if (
+            debate.assessmentRubric === V21_RUBRIC ||
+            hasCheckpointLedgerAdapter
+          ) {
             if (!exchange.pro && !exchange.con) {
-              addError(exchangePath, "must contain at least one v2.1 argument move");
+              addError(
+                exchangePath,
+                hasCheckpointLedgerAdapter
+                  ? "must contain at least one checkpoint argument move"
+                  : "must contain at least one v2.1 argument move"
+              );
             }
             if (exchange.pro) {
               validateArgument(exchange.pro, [...exchangePath, "pro"], {

@@ -1,80 +1,96 @@
 {
-  "schemaVersion": "1.0-production-checkpoint-v2.2-compatibility-remedy-preparation-analysis",
+  "schemaVersion": "1.0-production-checkpoint-v2.2-compatibility-remedy-execution-analysis",
   "protocolId": "assessment-production-checkpoint-v2.2-1-compatibility-remedy",
-  "status": "compatibility-remedy-plan-freeze-passed",
+  "status": "compatibility-remedy-passed-repository-acceptance-blocked",
   "productionCanary": true,
-  "planningOnly": true,
-  "preparation": {
-    "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/preparation-manifest.json",
-    "sha256": "911f98f483059504c65c22a7d205735b7eb4afcc7d9165384c5395840792faea"
+  "stagingOnly": true,
+  "execution": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/execution.json",
+    "status": "compatibility-remedy-executed-repository-baseline-blocked"
   },
   "findings": [
     {
       "id": "optional-overall-reference-links",
-      "remedyDefined": true,
-      "executed": false
+      "remedyPassed": true,
+      "productionMutationUnblockedByFinding": true
     },
     {
       "id": "checkpoint-ledger-schema-adapter",
-      "remedyDefined": true,
-      "executed": false
+      "remedyPassed": true,
+      "productionMutationUnblockedByFinding": true
+    },
+    {
+      "id": "debate-167-corpus-transcript-audit-stale-source-hashes",
+      "newlyDiscovered": false,
+      "recordedAtActivation": true,
+      "compatibilityScopeCaused": false,
+      "repositoryAcceptanceBlocked": true
     }
   ],
   "checks": {
-    "finalLedgerReplayPassed": true,
+    "activationSourceHashesPassed": 22,
     "repositoryScoreReplaysPassed": 10,
     "candidateCompatibilityChecksPassed": 10,
-    "exactAdapterOutputsFrozen": 10,
-    "activeValidatorChanged": false,
-    "stagingLedgersWritten": 0,
+    "exactAdapterOutputsWritten": 10,
+    "emptyReferenceLinksAccepted": 53,
+    "suppliedReferenceLinksValidated": 3,
+    "oneSidedDisplayRowsAccepted": 14,
+    "negativeControlsPassed": 11,
+    "legacyScoringRegressionPassed": true,
+    "currentProductionValidatorPassed": true,
+    "repositoryCheckPassed": false,
     "productionLedgersWritten": 0,
     "productionDebatesChanged": false,
     "productionMutationPerformed": false
   },
+  "blockingBaseline": {
+    "id": "debate-167-corpus-transcript-audit-stale-source-hashes",
+    "plainEnglish": "The committed corpus audit still names Debate 167's source files from before the already validated removal of one empty event. The repaired local files and checkpoint hashes agree with each other, but the broad repository check compares them with the older audit entry and stops.",
+    "auditPath": "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "validatedRepairRecord": "docs/assessment-production/source-repairs/debate-167-empty-event-normalization.json",
+    "requiredRemedy": "Prepare and freeze a separate deterministic audit-alignment plan. It may update only the Debate 167 corpus-audit source fields and any mechanically dependent corpus totals, must prove the other 194 entries unchanged, and must rerun the complete repository check without weakening source validation.",
+    "automaticCorrectionAuthorized": false,
+    "waiverAuthorized": false
+  },
   "totals": {
     "debates": 10,
-    "planPackets": 10,
+    "stagedLedgers": 10,
+    "stagedLedgerBytes": 1112019,
     "sections": 51,
     "moves": 188,
-    "overallBlunders": 56,
+    "overallScores": 20,
     "emptyReferenceLinks": 53,
     "suppliedReferenceLinks": 3,
-    "proposedAdapterBytes": 1112019,
-    "repositoryScoreReplays": 10,
+    "oneSidedDisplayRows": 14,
     "modelContexts": 0,
     "modelAuthoredScores": 0,
     "scoreChanges": 0,
     "proseChanges": 0,
     "syntheticReferences": 0,
+    "retries": 0,
     "meteredApiCostUsd": 0,
-    "productionMutations": 0
+    "productionLedgerPublications": 0,
+    "productionMutations": 0,
+    "compatibilityFindingsPassed": 2,
+    "repositoryAcceptancePassed": false
   },
   "authorization": {
-    "compatibilityRemedyPlanPreparation": true,
-    "compatibilityRemedyExecutionActivation": true,
-    "compatibilityRemedyExecution": false,
-    "validatorMigration": false,
-    "stagingLedgerWrite": false,
+    "repositoryBaselineRemedyPlanPreparation": true,
+    "repositoryBaselineRemedyExecution": false,
+    "compatibilityRemedyRetry": false,
     "productionLedgerPublication": false,
     "productionMutation": false,
     "remainingProductionBatches": false
   },
   "stopRules": {
-    "separateExecutionActivationRequired": true,
-    "sourceHashMismatchBlocks": true,
-    "adapterHashMismatchBlocks": true,
-    "unexpectedWriteBlocks": true,
-    "testFailureBlocks": true,
-    "suppliedReferenceValidationWeakeningForbidden": true,
-    "syntheticReferenceForbidden": true,
-    "rubricRelabelingForbidden": true,
-    "modelRelabelingForbidden": true,
-    "scoreProtocolRelabelingForbidden": true,
-    "scoreChangeForbidden": true,
-    "proseChangeForbidden": true,
-    "scoreRerunForbidden": true,
+    "separateBaselineRemedyPlanRequired": true,
+    "onlyDebate167AuditAlignmentMayBePlanned": true,
+    "otherCorpusAuditEntriesMustRemainByteEquivalent": true,
+    "sourceValidationWeakeningForbidden": true,
+    "automaticRetryForbidden": true,
+    "productionLedgerPublicationForbidden": true,
     "productionMutationForbidden": true,
     "remainingProductionBatchesForbidden": true
   },
-  "nextAuthorizedAction": "user-decision-on-compatibility-remedy-execution-activation"
+  "nextAuthorizedAction": "user-decision-on-debate-167-corpus-audit-baseline-remedy-plan-preparation"
 }
