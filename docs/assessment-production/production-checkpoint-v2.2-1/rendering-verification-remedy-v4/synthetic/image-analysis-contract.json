@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v4-image-analysis-contract",
+  "status": "screenshot-content-validity-contract-frozen",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "analyzer": {
+    "label": "ImageMagick",
+    "version": "7.1.2-13 Q16-HDRI aarch64",
+    "executable": "/opt/homebrew/bin/magick",
+    "sha256": "3d794ccdf588ebd32a0a48a33b56cd753616341947e52907b5f31c61f47beb78",
+    "operation": "identify"
+  },
+  "perScreenshotRequirements": {
+    "fileFormat": "PNG",
+    "signatureHex": "89504e470d0a1a0a",
+    "minimumByteLength": 10000,
+    "minimumUniqueColors": 16,
+    "minimumEntropy": 0.02,
+    "widthMustEqualControllerInput": true,
+    "heightMustEqualControllerInput": true,
+    "dimensionsMustEqualRoundedCssViewportTimesDevicePixelRatio": true
+  },
+  "perViewportPairRequirements": {
+    "collapsedAndOpenSha256MustDiffer": true,
+    "bothScreenshotsMustPassBeforeEvidenceWrite": true
+  },
+  "failurePolicy": {
+    "missingAnalyzerFailsClosed": true,
+    "analyzerHashMismatchFailsClosed": true,
+    "temporaryCaptureFilesRemoved": true,
+    "invalidCandidateCapturePersistencePermitted": false,
+    "retryPermitted": false,
+    "thresholdAdaptationPermitted": false
+  },
+  "canaryCandidateLoaded": false,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "productionMutationPerformed": false
+}

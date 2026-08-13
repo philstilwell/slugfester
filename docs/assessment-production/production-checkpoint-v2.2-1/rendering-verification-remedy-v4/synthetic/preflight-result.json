@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v4-synthetic-preflight",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v4",
+  "status": "passed-direct-png-capture-readiness-and-native-interaction-preflight",
+  "recordedAt": "2026-08-13T17:19:19.000Z",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "screenshotsCapturedTransiently": 4,
+  "screenshotsPreservedInRepository": 0,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "browser": {
+    "name": "Google Chrome via ChatGPT browser extension",
+    "family": "Chromium",
+    "userAgentVersion": "Chrome/151.0.0.0"
+  },
+  "fixture": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v4/synthetic/preflight.html",
+    "baseUrl": "http://127.0.0.1:4192/docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v4/synthetic/preflight.html",
+    "navigationToken": "27f2a27c0f5f7975c0fb1e4d9fb9c6e7bd38b9a8a1a7316d6a5f92100bff074d",
+    "reloads": 0,
+    "separatePointerAndKeyboardTabs": true
+  },
+  "methods": {
+    "readiness": "CDP Runtime.evaluate after load",
+    "pointer": "CDP Input.dispatchMouseEvent",
+    "keyboard": "locator.press after direct CDP readiness and focus",
+    "screenshot": "CDP Page.captureScreenshot",
+    "screenshotParameters": {
+      "format": "png",
+      "fromSurface": true,
+      "captureBeyondViewport": false
+    }
+  },
+  "viewports": {
+    "desktop": {
+      "targetCssViewport": { "width": 1440, "height": 1000 },
+      "controllerInput": { "width": 1152, "height": 800 },
+      "devicePixelRatio": 0.800000011920929,
+      "collapsed": {
+        "bytes": 59961,
+        "sha256": "732d90cb9d8c009440685624ecc55976855aa16852d52fcb599020b3e3c1c029",
+        "format": "PNG",
+        "signatureHex": "89504e470d0a1a0a",
+        "pixelWidth": 1152,
+        "pixelHeight": 800,
+        "uniqueColors": 1196,
+        "meanNormalized": 0.524906,
+        "entropy": 0.519489
+      },
+      "open": {
+        "bytes": 70982,
+        "sha256": "a26fda890d6a062582608f6e30db30783abac01119563399b14e66ca98f4a422",
+        "format": "PNG",
+        "signatureHex": "89504e470d0a1a0a",
+        "pixelWidth": 1152,
+        "pixelHeight": 800,
+        "uniqueColors": 1387,
+        "meanNormalized": 0.530035,
+        "entropy": 0.536581
+      },
+      "checks": {
+        "pointerReady": true,
+        "pointerFreshClosed": true,
+        "pointerOpened": true,
+        "pointerViewportExact": true,
+        "collapsedPngSignature": true,
+        "openPngSignature": true,
+        "collapsedOpenHashesDiffer": true,
+        "collapsedNonblank": true,
+        "openNonblank": true,
+        "screenshotDimensionsReconciled": true,
+        "keyboardReady": true,
+        "keyboardFreshClosed": true,
+        "keyboardEnterOpened": true,
+        "keyboardSpaceClosed": true,
+        "keyboardViewportExact": true
+      }
+    },
+    "mobile": {
+      "targetCssViewport": { "width": 390, "height": 844 },
+      "controllerInput": { "width": 312, "height": 675 },
+      "devicePixelRatio": 0.800000011920929,
+      "collapsed": {
+        "bytes": 41369,
+        "sha256": "897023c8a11c6d747ceba2ce1bb35e2309759ca6886d4d1cf230e4a06a9a2c41",
+        "format": "PNG",
+        "signatureHex": "89504e470d0a1a0a",
+        "pixelWidth": 312,
+        "pixelHeight": 675,
+        "uniqueColors": 1335,
+        "meanNormalized": 0.697301,
+        "entropy": 0.55721
+      },
+      "open": {
+        "bytes": 41600,
+        "sha256": "f8cfab0f1f653fd1eb4b496f8991e3b5c4e53608a068871ded4d58a702fa6136",
+        "format": "PNG",
+        "signatureHex": "89504e470d0a1a0a",
+        "pixelWidth": 312,
+        "pixelHeight": 675,
+        "uniqueColors": 1138,
+        "meanNormalized": 0.712237,
+        "entropy": 0.520319
+      },
+      "checks": {
+        "pointerReady": true,
+        "pointerFreshClosed": true,
+        "pointerOpened": true,
+        "pointerViewportExact": true,
+        "collapsedPngSignature": true,
+        "openPngSignature": true,
+        "collapsedOpenHashesDiffer": true,
+        "collapsedNonblank": true,
+        "openNonblank": true,
+        "screenshotDimensionsReconciled": true,
+        "keyboardReady": true,
+        "keyboardFreshClosed": true,
+        "keyboardEnterOpened": true,
+        "keyboardSpaceClosed": true,
+        "keyboardViewportExact": true
+      }
+    }
+  },
+  "productionMutationPerformed": false
+}

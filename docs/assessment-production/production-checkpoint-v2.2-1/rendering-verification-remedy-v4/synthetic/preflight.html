@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Rendering remedy v4 screenshot preflight</title>
+    <link rel="icon" href="data:,">
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 24px;
+        color: #082f49;
+        background: linear-gradient(135deg, #0f766e 0 25%, #1d4ed8 25% 50%, #7e22ce 50% 75%, #be123c 75%);
+        font: 16px/1.5 system-ui, sans-serif;
+      }
+      main {
+        width: min(100%, 780px);
+        margin: 0 auto;
+        padding: 20px;
+        background: #f8fafc;
+        border: 8px solid #facc15;
+        border-radius: 18px;
+        box-shadow: 0 20px 60px rgb(0 0 0 / 35%);
+      }
+      section { padding: 20px; border: 3px solid #0f766e; border-radius: 12px; }
+      .overall { margin-bottom: 16px; background: #ccfbf1; }
+      .logical-extension { background: #ede9fe; border-color: #7e22ce; }
+      summary { cursor: pointer; padding: 12px; color: #fff; background: #7e22ce; font-weight: 800; }
+      .ai-extension-accordion-content { margin-top: 16px; padding: 18px; color: #fff; background: #be123c; border: 6px solid #22c55e; }
+      .capture-marker { display: grid; grid-template-columns: repeat(4, 1fr); height: 44px; margin-bottom: 16px; }
+      .capture-marker span:nth-child(1) { background: #ef4444; }
+      .capture-marker span:nth-child(2) { background: #facc15; }
+      .capture-marker span:nth-child(3) { background: #22c55e; }
+      .capture-marker span:nth-child(4) { background: #2563eb; }
+    </style>
+  </head>
+  <body>
+    <main data-synthetic-rendering-preflight="remedy-v4">
+      <div class="capture-marker" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <section class="overall" aria-labelledby="overall-heading">
+        <h1 id="overall-heading">Remedy v4 screenshot transport</h1>
+        <p>This colored fixture must produce a nonblank PNG before any candidate page can be opened.</p>
+      </section>
+      <section class="logical-extension" aria-labelledby="ai-extension-heading">
+        <h2 id="ai-extension-heading">AI Extension</h2>
+        <details class="ai-extension-accordion">
+          <summary>Open the synthetic screenshot difference marker</summary>
+          <div class="ai-extension-accordion-content">
+            <p class="logical-extension-intro">This red and green panel must appear only in the open screenshot and make its bytes differ from the collapsed capture.</p>
+          </div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>

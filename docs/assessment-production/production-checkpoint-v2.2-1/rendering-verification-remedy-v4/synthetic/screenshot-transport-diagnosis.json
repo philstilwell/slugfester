@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v4-screenshot-transport-diagnosis",
+  "status": "direct-cdp-png-transport-selected-after-high-level-blank-capture-failure",
+  "productionCanary": true,
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "modelContexts": 0,
+  "directCostUsd": 0,
+  "failedRemedyV3Transport": {
+    "method": "tab.screenshot",
+    "requestedFilenameExtension": "png",
+    "actualFormat": "JPEG",
+    "desktop": {
+      "captures": 14,
+      "uniqueHashes": 1,
+      "colors": 1,
+      "entropy": 0,
+      "collapsedAndOpenIdentical": true
+    },
+    "mobile": {
+      "captures": 12,
+      "uniqueHashes": 1,
+      "colors": 1,
+      "entropy": 0,
+      "collapsedAndOpenIdentical": true
+    }
+  },
+  "remedyV4Transport": {
+    "method": "CDP Page.captureScreenshot",
+    "parameters": {
+      "format": "png",
+      "fromSurface": true,
+      "captureBeyondViewport": false
+    },
+    "pngSignatureHex": "89504e470d0a1a0a",
+    "declaredFormatMustMatchBytes": true,
+    "pixelDimensionsMustEqualControllerInput": true,
+    "pixelDimensionsMustEqualRoundedCssViewportTimesDevicePixelRatio": true,
+    "minimumByteLength": 10000,
+    "minimumUniqueColors": 16,
+    "minimumEntropy": 0.02,
+    "collapsedAndOpenHashesMustDiffer": true,
+    "candidatePersistenceBeforeAllGatesPass": false
+  },
+  "controllerMethod": {
+    "readiness": "single-CDP-Runtime.evaluate-after-frozen-post-load-settle",
+    "pointer": "CDP-Input.dispatchMouseEvent-at-serialized-summary-center",
+    "keyboard": "supported-locator-press-after-direct-CDP-readiness-and-focus",
+    "removed": "separate-locator-waitFor-and-locator-evaluate-readiness-chain",
+    "unsupportedAndNotSelected": "raw-CDP-keyboard-injection"
+  },
+  "screenshotsPreservedInRepository": 0,
+  "productionMutationPerformed": false
+}
