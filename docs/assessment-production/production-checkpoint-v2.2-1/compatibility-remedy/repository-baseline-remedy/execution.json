@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-167-corpus-audit-baseline-remedy-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-167-corpus-audit-alignment",
+  "status": "debate-167-corpus-audit-baseline-remedy-executed-repository-acceptance-passed",
+  "startedAt": "2026-08-13T22:43:45Z",
+  "completedAt": "2026-08-13T22:45:32Z",
+  "elapsedSeconds": 107,
+  "executionCommit": "f6c4c646d823a86d70d71512897abf9f0863441a",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "attempt": 1,
+  "retries": 0,
+  "activation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution-activation.json",
+    "sha256": "d63255511b783d14c361d365c2e94e7078700f804f380f2f23c56fa63e2e3620",
+    "status": "debate-167-corpus-audit-baseline-remedy-execution-authorized-and-frozen"
+  },
+  "target": {
+    "path": "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "beforeBytes": 182544,
+    "beforeSha256": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f",
+    "afterBytes": 182544,
+    "afterSha256": "7b572eedba90a6e635252f459f84a7c2080273f7fe7f61dd0bedca179e5ae8b0",
+    "projectedAfterSha256Matched": true,
+    "wholeFileParseAndReserializePerformed": false
+  },
+  "changes": {
+    "debateNumber": "167",
+    "debateId": "craig-shook-existence-god-2008",
+    "fields": [
+      {
+        "field": "eventCount",
+        "before": 1887,
+        "after": 1886,
+        "replacementOccurrences": 1
+      },
+      {
+        "field": "transcriptSha256",
+        "before": "2fc2c64b885556902ad6121f46be088f517ffd5ac0928d951dca0669b5846355",
+        "after": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+        "replacementOccurrences": 1
+      },
+      {
+        "field": "normalizedEventsSha256",
+        "before": "c6fc6347fc71f7c1605b9184b995465703bfdf5797ce11d3f67558abd32fb355",
+        "after": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+        "replacementOccurrences": 1
+      }
+    ],
+    "dependentCorpusTotalsChanged": 0,
+    "wordCountChanged": false,
+    "semanticContentChanged": false
+  },
+  "unchangedByteProof": {
+    "prefixBytes": 155417,
+    "prefixSha256Before": "468bdd8c129f4c6c86fb41fede15714413313e1ee830ad15b2da3e444ec54f51",
+    "prefixSha256After": "468bdd8c129f4c6c86fb41fede15714413313e1ee830ad15b2da3e444ec54f51",
+    "suffixBytes": 26104,
+    "suffixSha256Before": "fb14fd8823b5951be7c2f84f350cdad407b69b165335ab6e13aff72e96cd2436",
+    "suffixSha256After": "fb14fd8823b5951be7c2f84f350cdad407b69b165335ab6e13aff72e96cd2436",
+    "otherCorpusAuditEntries": 194,
+    "otherCorpusAuditEntriesByteBoundedAndDeepEquivalent": true,
+    "changedCorpusAuditEntries": 1
+  },
+  "sourceValidation": {
+    "repairRecord": {
+      "path": "docs/assessment-production/source-repairs/debate-167-empty-event-normalization.json",
+      "sha256": "7c1b0c98159a2968b39346605b942b31861c67668b4cbecd97b06fd67fb54898",
+      "status": "debate-167-empty-derived-event-repair-passed"
+    },
+    "transcript": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/transcript.txt",
+      "sha256": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+      "lines": 1886
+    },
+    "events": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/events.json",
+      "sha256": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+      "events": 1886,
+      "emptyEvents": 0
+    },
+    "manifest": {
+      "path": ".assessment-cache/captions/L3FOgiASYY0/manifest.json",
+      "sha256": "c53451a13f2b21b44010dfbbe0e4834667ac4c765a00a2c3e694fe4f0079c73c"
+    },
+    "corpus": {
+      "debates": 195,
+      "available": 195,
+      "unavailable": 0,
+      "acquisitionRate": 1,
+      "localHashesChecked": 195
+    }
+  },
+  "compatibilityRevalidation": {
+    "originalCompatibilityExecutionRetried": false,
+    "stagedAdapters": 10,
+    "sections": 51,
+    "moves": 188,
+    "overallScores": 20,
+    "adapterHashesExact": true,
+    "candidateSourceLocksExact": true,
+    "repositoryScoreReplaysPassed": 10,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "productionLedgerWrites": 0
+  },
+  "tests": {
+    "activationSourceHashes": {
+      "status": "passed",
+      "files": 30
+    },
+    "targetByteReplay": {
+      "status": "passed",
+      "exactAfterHash": true,
+      "unchangedPrefix": true,
+      "unchangedSuffix": true,
+      "otherEntriesEquivalent": 194
+    },
+    "repairValidator": {
+      "command": "node scripts/validate-assessment-production-checkpoint-v2.2-debate-167-source-repair.mjs",
+      "status": "passed"
+    },
+    "corpusTranscriptValidator": {
+      "command": "node scripts/validate-corpus-transcripts.mjs",
+      "status": "passed",
+      "localHashesChecked": 195
+    },
+    "currentDebateValidator": {
+      "command": "node scripts/validate-debates.mjs",
+      "status": "passed",
+      "debates": 195
+    },
+    "legacyScoringRegression": {
+      "command": "node scripts/test-reassessment-scoring.mjs",
+      "status": "passed"
+    },
+    "stagedAdapterDeterministicReplay": {
+      "status": "passed",
+      "adapters": 10,
+      "sections": 51,
+      "moves": 188,
+      "overallScores": 20
+    },
+    "repositoryCheck": {
+      "command": "npm run check",
+      "status": "passed"
+    }
+  },
+  "unchangedControls": {
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "sha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6"
+    },
+    "productionReferences": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+    },
+    "activeDebateValidator": {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "41271127a567353f3591fe2e8b6315c9b592c85bcaad5ec36842d42f1da98556"
+    },
+    "compatibilityExecution": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/execution.json",
+      "sha256": "4ec18f679490a994d0c2612496266690517c3eb1b127b80234e71bf8b0e74b57"
+    },
+    "compatibilityAnalysis": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/analysis.json",
+      "sha256": "209b8f64c0724af08118a04617d30f36054fb5a30ce58ffc8fd933e64b6ea31c"
+    }
+  },
+  "totals": {
+    "corpusAuditEntries": 195,
+    "corpusAuditEntriesChanged": 1,
+    "corpusAuditFieldsChanged": 3,
+    "dependentTotalsChanged": 0,
+    "modelContexts": 0,
+    "judgmentExecutions": 0,
+    "scoresDerived": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "compatibilityRetries": 0,
+    "meteredApiCostUsd": 0,
+    "productionLedgerPublications": 0,
+    "productionMutations": 0,
+    "repositoryAcceptancePassed": true
+  },
+  "authorization": {
+    "compatibilityAcceptanceRestored": true,
+    "productionMutationPlanPreparation": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-ten-debate-production-mutation-plan-preparation"
+}

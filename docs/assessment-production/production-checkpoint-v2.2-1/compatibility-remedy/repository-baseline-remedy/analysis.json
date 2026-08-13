@@ -1,103 +1,96 @@
 {
-  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-167-corpus-audit-baseline-remedy-plan-analysis",
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-167-corpus-audit-baseline-remedy-execution-analysis",
   "protocolId": "assessment-production-checkpoint-v2.2-1-debate-167-corpus-audit-alignment",
-  "status": "debate-167-corpus-audit-baseline-remedy-plan-preparation-passed",
+  "status": "debate-167-corpus-audit-baseline-remedy-passed-compatibility-acceptance-restored",
   "productionCanary": true,
-  "planningOnly": true,
-  "trigger": {
-    "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/analysis.json",
-    "sha256": "209b8f64c0724af08118a04617d30f36054fb5a30ce58ffc8fd933e64b6ea31c",
-    "status": "compatibility-remedy-passed-repository-acceptance-blocked",
-    "blockingBaseline": "debate-167-corpus-transcript-audit-stale-source-hashes"
+  "stagingOnly": true,
+  "execution": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution.json",
+    "sha256": "02c7ef65eebc49883dc97316af546f9399e9cf8cfaed51531dcad83c20868e06",
+    "status": "debate-167-corpus-audit-baseline-remedy-executed-repository-acceptance-passed"
   },
-  "planArtifacts": {
-    "alignmentPacket": {
-      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/alignment-packet.json",
-      "sha256": "d74bc5b87af93fd9824d37355378b253d85f82729e3498edb1c59e7924892c1f",
-      "status": "debate-167-corpus-audit-alignment-packet-prepared-and-frozen"
-    },
-    "preparationManifest": {
-      "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/preparation-manifest.json",
-      "sha256": "75294fb52f53dd60daa816afebea6ab7a6fc3f1763ab15b1438e6a280c87439a",
-      "status": "debate-167-corpus-audit-baseline-remedy-plan-prepared-and-frozen"
-    }
+  "resolution": {
+    "blockingBaseline": "debate-167-corpus-transcript-audit-stale-source-hashes",
+    "resolved": true,
+    "plainEnglish": "The corpus audit now records the already validated Debate 167 source chain after removal of one empty derived event. The source files, checkpoint manifest, and audit agree, and the complete repository check passes.",
+    "auditPath": "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "beforeSha256": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f",
+    "afterSha256": "7b572eedba90a6e635252f459f84a7c2080273f7fe7f61dd0bedca179e5ae8b0",
+    "semanticContentChanged": false,
+    "sourceValidationWeakened": false
   },
-  "findings": [
-    {
-      "id": "debate-167-corpus-transcript-audit-stale-source-hashes",
-      "confirmed": true,
-      "plainEnglish": "The audit entry records Debate 167 before one already validated empty derived event was removed. The repaired transcript, events, and manifest form a consistent local source chain."
-    },
-    {
-      "id": "exact-three-field-alignment-sufficient",
-      "confirmed": true,
-      "fields": [
-        "eventCount",
-        "transcriptSha256",
-        "normalizedEventsSha256"
-      ],
-      "dependentCorpusTotals": 0
-    },
-    {
-      "id": "other-194-entries-byte-bounded",
-      "confirmed": true,
-      "prefixBytes": 155417,
-      "suffixBytes": 26104,
-      "plannedTargetBytesUnchanged": true
-    }
-  ],
   "checks": {
+    "activationSourceHashesPassed": 30,
+    "exactAuthorizedFieldSubstitutions": 3,
+    "targetProjectedAfterHashPassed": true,
+    "unchangedPrefixAndSuffixHashesPassed": true,
+    "otherCorpusAuditEntriesByteBoundedAndDeepEquivalent": 194,
     "repairValidatorPassed": true,
-    "repairedTranscriptLines": 1886,
-    "repairedEvents": 1886,
-    "repairedEmptyEvents": 0,
-    "rawSourcePreserved": true,
-    "frozenProductionManifestPreserved": true,
-    "currentCorpusTranscriptValidatorPassed": false,
-    "currentCorpusTranscriptValidatorFailureExpected": true,
-    "currentCorpusTranscriptValidatorFailureLimitedTo": [
-      "Debate 167 transcript hash mismatch",
-      "Debate 167 normalized events hash mismatch"
-    ],
-    "corpusAuditBeforeHashPreserved": true,
-    "corpusAuditBeforeSha256": "1884c2764b3e716d74d500da662d1828ec711dda43d5e71b1ae781b8ac2ff31f",
-    "inMemoryProjectedAfterSha256": "7b572eedba90a6e635252f459f84a7c2080273f7fe7f61dd0bedca179e5ae8b0",
-    "projectedAfterHashDeterministicallyReproduced": true,
-    "otherCorpusAuditEntriesByteEquivalentInProjection": 194,
-    "corpusAuditWrites": 0,
+    "corpusTranscriptValidatorPassed": true,
+    "corpusLocalHashesChecked": 195,
+    "currentProductionValidatorPassed": true,
+    "currentProductionDebatesValidated": 195,
+    "legacyScoringRegressionPassed": true,
+    "stagedAdapterHashesPassed": 10,
+    "repositoryScoreReplaysPassed": 10,
+    "stagedAdapterMovesReplayed": 188,
+    "stagedAdapterOverallScoresReplayed": 20,
+    "repositoryCheckPassed": true,
+    "unexpectedWrites": 0
+  },
+  "compatibilityGate": {
+    "optionalOverallReferenceLinksRemedyPassed": true,
+    "checkpointLedgerSchemaAdapterRemedyPassed": true,
+    "repositoryBaselineRemedyPassed": true,
+    "compatibilityExecutionRetried": false,
+    "repositoryAcceptancePassed": true,
+    "productionMutationReadyForSeparatePlanningDecision": true
+  },
+  "preservedControls": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
     "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "scoresChanged": 0,
+    "proseChanged": 0,
+    "productionLedgersWritten": 0,
+    "productionDebatesChanged": false,
+    "productionMutationPerformed": false
+  },
+  "totals": {
+    "corpusAuditEntries": 195,
+    "corpusAuditEntriesChanged": 1,
+    "corpusAuditFieldsChanged": 3,
+    "dependentCorpusTotalsChanged": 0,
+    "modelContexts": 0,
+    "judgmentExecutions": 0,
+    "scoresDerived": 0,
     "scoreChanges": 0,
     "proseChanges": 0,
+    "compatibilityRetries": 0,
+    "meteredApiCostUsd": 0,
     "productionLedgerPublications": 0,
     "productionMutations": 0,
-    "meteredApiCostUsd": 0
-  },
-  "executionBoundary": {
-    "futureActivation": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution-activation.json",
-    "futureExecution": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/repository-baseline-remedy/execution.json",
-    "activationExists": false,
-    "executionExists": false,
-    "auditMutationPerformed": false
+    "repositoryAcceptancePassed": true
   },
   "authorization": {
-    "baselineRemedyPlanPreparation": true,
-    "baselineRemedyExecutionActivation": false,
-    "baselineRemedyExecution": false,
-    "corpusAuditMutation": false,
-    "compatibilityRetry": false,
+    "productionMutationPlanPreparation": false,
     "productionLedgerPublication": false,
     "productionMutation": false,
     "remainingProductionBatches": false
   },
   "stopRules": {
-    "separateExecutionActivationRequired": true,
-    "onlyExactDebate167AuditAlignmentMayBeActivated": true,
-    "other194EntriesMustRemainByteEquivalent": true,
-    "sourceValidationWeakeningForbidden": true,
-    "automaticCompatibilityRetryForbidden": true,
+    "separateProductionMutationPlanRequired": true,
     "productionLedgerPublicationForbidden": true,
     "productionMutationForbidden": true,
-    "remainingProductionBatchesForbidden": true
+    "remainingProductionBatchesForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseChangeForbidden": true,
+    "sourceValidationWeakeningForbidden": true
   },
-  "nextAuthorizedAction": "user-decision-on-debate-167-corpus-audit-baseline-remedy-execution-activation"
+  "nextAuthorizedAction": "user-decision-on-ten-debate-production-mutation-plan-preparation"
 }
