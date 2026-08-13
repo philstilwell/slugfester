@@ -1,0 +1,433 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-22-publication-repair-preparation",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-22-publication-repair-1",
+  "status": "seven-isolated-thirteen-field-debate-22-publication-repair-packets-prepared-and-frozen",
+  "preparedAt": "2026-08-13T03:44:23.346Z",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "inputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "rubric": "docs/reassessment-rubric-v2.1.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/manual.md",
+    "diagnosis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/failure-diagnosis.json",
+    "failedExecution": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/model-execution.json",
+    "failedAnalysis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/analysis.json",
+    "immutableBaseOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-22.json",
+    "publicationPacket": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-22.json"
+  },
+  "acceptedCohortOutputs": {
+    "10": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-10.json",
+    "25": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-25.json",
+    "40": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-40.json",
+    "50": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merged/debate-50.json",
+    "104": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-104.json",
+    "122": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-122.json",
+    "129": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/merged/debate-129.json",
+    "167": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-167.json",
+    "192": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/merged/debate-192.json"
+  },
+  "cohortPackets": {
+    "10": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-10.json",
+    "22": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-22.json",
+    "25": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-25.json",
+    "40": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-40.json",
+    "50": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-50.json",
+    "104": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-104.json",
+    "122": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-122.json",
+    "129": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-129.json",
+    "167": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-167.json",
+    "192": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-192.json"
+  },
+  "acceptedCohortReplay": [
+    {
+      "debateNumber": "10",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-10.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-10.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "10",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 903,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "25",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-25.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-25.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "25",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 934,
+        "tags": 3,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 5,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "40",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-40.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-40.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "40",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 930,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "50",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/repair-1/merged/debate-50.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-50.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "50",
+        "moves": 19,
+        "critiques": 19,
+        "minimumCritiqueCharacters": 937,
+        "tags": 3,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "104",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-104.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-104.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "104",
+        "moves": 18,
+        "critiques": 18,
+        "minimumCritiqueCharacters": 940,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "122",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-122.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-122.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "122",
+        "moves": 18,
+        "critiques": 18,
+        "minimumCritiqueCharacters": 886,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "129",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-2/repair-1/merged/debate-129.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-129.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "129",
+        "moves": 17,
+        "critiques": 17,
+        "minimumCritiqueCharacters": 929,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "167",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-167.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-167.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "167",
+        "moves": 21,
+        "critiques": 21,
+        "minimumCritiqueCharacters": 880,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 3,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "debateNumber": "192",
+      "output": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-1/repair-1/merged/debate-192.json",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-192.json",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "192",
+        "moves": 16,
+        "critiques": 16,
+        "minimumCritiqueCharacters": 948,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 6,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    }
+  ],
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/packets/packet-0.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/schemas/packet-0.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/repair-outputs/packet-0.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/validations/packet-0.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/provenance/packet-0.json",
+      "writableFields": [
+        "moveProse.pro-cosmic-planetary-fine-tuning.critique",
+        "moveProse.pro-dna-specified-information-design.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 15286
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/packets/packet-1.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/schemas/packet-1.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/repair-outputs/packet-1.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/validations/packet-1.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/provenance/packet-1.json",
+      "writableFields": [
+        "moveProse.pro-reason-mathematics-freedom.critique",
+        "moveProse.con-autonomy-against-divine-permission.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 15955
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/packets/packet-2.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/schemas/packet-2.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/repair-outputs/packet-2.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/validations/packet-2.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/provenance/packet-2.json",
+      "writableFields": [
+        "moveProse.con-divine-tyranny-against-moral-autonomy.critique",
+        "moveProse.con-theistic-claimant-burden.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 17243
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/packets/packet-3.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/schemas/packet-3.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/repair-outputs/packet-3.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/validations/packet-3.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/provenance/packet-3.json",
+      "writableFields": [
+        "moveProse.con-designer-christianity-gap.critique",
+        "moveProse.con-secular-morality-and-religious-crime.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 17621
+    },
+    {
+      "contextIndex": 4,
+      "packetIndex": 4,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/packets/packet-4.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/schemas/packet-4.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/repair-outputs/packet-4.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/validations/packet-4.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/provenance/packet-4.json",
+      "writableFields": [
+        "moveProse.pro-wrongdoing-generic-theism-distinction.critique",
+        "moveProse.con-evolution-parsimony-against-designer.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 17656
+    },
+    {
+      "contextIndex": 5,
+      "packetIndex": 5,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/packets/packet-5.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/schemas/packet-5.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/repair-outputs/packet-5.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/validations/packet-5.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/provenance/packet-5.json",
+      "writableFields": [
+        "moveProse.con-dna-design-underdetermination.critique",
+        "moveProse.pro-resurrection-christian-evidence-bridge.critique"
+      ],
+      "correctedFieldCount": 2,
+      "copiedInputBytes": 17161
+    },
+    {
+      "contextIndex": 6,
+      "packetIndex": 6,
+      "debateNumber": "22",
+      "debateId": "turek-hitchens-god-existence-2008",
+      "packet": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/packets/packet-6.json",
+      "schema": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/schemas/packet-6.schema.json",
+      "repairOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/repair-outputs/packet-6.json",
+      "validation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/validations/packet-6.json",
+      "provenance": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/provenance/packet-6.json",
+      "writableFields": [
+        "moveProse.con-secular-sacrifice-without-reward.critique"
+      ],
+      "correctedFieldCount": 1,
+      "copiedInputBytes": 10260
+    }
+  ],
+  "policy": {
+    "contexts": 7,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "furtherCorrectionContextsMaximum": 0,
+    "timeoutMsPerContext": 480000,
+    "absoluteGateTimeoutMs": 3360000,
+    "maximumParallelContexts": 2,
+    "rampPhases": [
+      {
+        "phase": "repair-operational-one",
+        "maximumParallelContexts": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": "repair-ramp-two",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          1,
+          2
+        ],
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": "repair-steady-four",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "expansionRequiresAllValid": false
+      }
+    ],
+    "authentication": "ChatGPT subscription",
+    "APIKeysRemoved": true,
+    "modelAuthoredScores": 0
+  },
+  "totals": {
+    "modelContexts": 7,
+    "repairPackets": 7,
+    "writableFields": 13,
+    "acceptedCohortDebatesBeforeRepair": 9,
+    "acceptedCohortMovesBeforeRepair": 169,
+    "expectedCompleteCohortDebates": 10,
+    "expectedCompleteCohortMoves": 188,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsdThisStage": 0
+  },
+  "artifacts": {
+    "mergedOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/merged/debate-22.json",
+    "completeValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/merge-audit.json",
+    "completeCohortValidation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/repair-1/complete-cohort-validation.json"
+  },
+  "authorization": {
+    "executionActivationPreparation": true,
+    "repairModelExecution": false,
+    "deterministicMergeAndFullValidation": false,
+    "deterministicCompleteCohortValidation": false,
+    "retry": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  }
+}

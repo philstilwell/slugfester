@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-22-publication-repair-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-22-publication-repair-1",
+  "packetIndex": 6,
+  "debateNumber": "22",
+  "debateId": "turek-hitchens-god-existence-2008",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-22.json",
+  "publicationPacket": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-22.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-secular-sacrifice-without-reward.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-secular-sacrifice-without-reward.critique",
+      "moveId": "con-secular-sacrifice-without-reward",
+      "originalCritique": "Strongest feature: The reply grounds secular virtue in concrete, cross-cultural examples of dangerous self-sacrifice and compellingly challenges the idea that divine permission, anticipated reward, or threatened punishment is necessary for courageous conduct. Principal limitation: It answers motivation and behavior rather than the preceding demand for an objective normative standard, while treating supernatural reward as necessarily corrupting overlooks believers who act from love, duty, solidarity, or noninstrumental commitment. Live burden: The secular case must connect admirable conduct to an account of objective rightness, and the religious alternative must distinguish ontological grounding from motivational sanction while explaining when promised consequences do or do not distort virtue. Locked score: The strong band reflects persuasive evidence, considerable relevance, and clear moral force, moderated by partial responsiveness, an overgeneralized account of religious motivation, and the unresolved grounding-conduct distinction.",
+      "originalWords": 133,
+      "originalCharacters": 1049,
+      "lockedMove": {
+        "moveId": "con-secular-sacrifice-without-reward",
+        "sectionId": "section-morality-grounding-conduct",
+        "side": "con",
+        "speaker": "Christopher Hitchens",
+        "moveKind": "reply",
+        "proposition": "People exhibit courage and self-sacrifice without divine sanction, whereas grounding virtue in supernatural reward or punishment would degrade heroism and undermine genuine morality.",
+        "importance": 3,
+        "finalScore": 79,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "106:45",
+        "sourceSpan": {
+          "startEvent": 2649,
+          "endEvent": 2690,
+          "startMs": 6405360,
+          "endMs": 6521800
+        },
+        "sourceExcerpt": "people who go do bomb disposal work and sit defusing huge device they know any minute does happen it's always happened it's common to every known Human Society it's it's a part of every heroic Narrative of every known Society there's ever been those who do it are honored they are sung as we say uh in the times when there was no literate no literal record um and it doesn't require divine sanction or permission",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 412
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-secular-morality"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-empathy-normativity-distinction",
+            "pro-objective-morality-divine-ground",
+            "pro-reason-mathematics-freedom"
+          ],
+          "components": [
+            {
+              "componentId": "con-secular-sacrifice-without-reward-component-01",
+              "targetMoveId": "pro-empathy-normativity-distinction",
+              "text": "Whether secular empathy and sacrifice establish an objective standard rather than merely describe conduct.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-secular-sacrifice-without-reward-component-02",
+              "targetMoveId": "pro-objective-morality-divine-ground",
+              "text": "Whether moral conduct is possible without divine sanction or belief.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-secular-sacrifice-without-reward-component-03",
+              "targetMoveId": "pro-reason-mathematics-freedom",
+              "text": "Whether materialism permits responsible and genuinely heroic human action.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The examples answer the conduct and motivation questions but do not address the immediately preceding demand for an objective standard grounding why sacrifice is right.",
+          "responsivenessWithinClass": {
+            "value": 68,
+            "rationale": "Within partial answers, it strongly contacts secondary conduct and motivation components while leaving the decisive normativity component uncontacted."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "Within partial answers, it strongly contacts secondary conduct and motivation components while leaving the decisive normativity component uncontacted."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The claims about observed sacrifice and corrupting reward motives are clear, though the latter assumes a particular reward-centered theology."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Cross-cultural sacrifice strongly supports the conduct claim, but the assertion that supernatural reward necessarily degrades every heroic act needs qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A believer may act from love or duty rather than anticipated reward, while divine grounding remains distinct from motivational sanction.",
+          "decisiveQualification": "Appeals to reward and punishment can still corrupt motives when they become the reason for apparently virtuous action."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central secular-morality bridge through evidence of sacrifice without divine sanction and a challenge to reward motives."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The move persuasively attacks reward-centered motivation but does not accommodate noninstrumental religious virtue or the grounding-conduct distinction."
+          }
+        },
+        "evidenceBasis": "The excerpt points to dangerous bomb-disposal work and cross-cultural heroic traditions as sacrifice occurring without divine sanction or permission.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-production-checkpoint-v2.2-debate-22-publication-repair-4",
+  "title": "Slugfester production checkpoint v2.2 Debate 22 bounded publication repair packet 4",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-production-checkpoint-v2.2-debate-22-publication-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-checkpoint-v2.2-1-debate-22-publication-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 4
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "22"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "turek-hitchens-god-existence-2008"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-wrongdoing-generic-theism-distinction",
+        "con-evolution-parsimony-against-designer"
+      ],
+      "properties": {
+        "pro-wrongdoing-generic-theism-distinction": {
+          "type": "string",
+          "minLength": 880
+        },
+        "con-evolution-parsimony-against-designer": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}

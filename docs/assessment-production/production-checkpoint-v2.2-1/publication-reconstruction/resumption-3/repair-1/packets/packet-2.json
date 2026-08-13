@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-debate-22-publication-repair-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-debate-22-publication-repair-1",
+  "packetIndex": 2,
+  "debateNumber": "22",
+  "debateId": "turek-hitchens-god-existence-2008",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/resumption-3/outputs/debate-22.json",
+  "publicationPacket": "docs/assessment-production/production-checkpoint-v2.2-1/publication-reconstruction/packets/debate-22.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-divine-tyranny-against-moral-autonomy.critique",
+      "moveProse.con-theistic-claimant-burden.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-divine-tyranny-against-moral-autonomy.critique",
+      "moveId": "con-divine-tyranny-against-moral-autonomy",
+      "originalCritique": "Strongest feature: The move forcefully identifies how unalterable authority backed by ultimate punishment can place meaningful dissent, intellectual independence, and morally responsible choice under severe pressure. Principal limitation: Its description of religious belief as humanity's oldest enemy generalizes across importantly different theologies, assumes that supremacy necessarily constitutes tyranny, and supplies rhetoric more readily than criteria distinguishing legitimate authority from domination. Live burden: The argument must show how particular doctrines constrain autonomous deliberation, address the possibility of perfectly good authority, and explain whether freely accepted obligations or noncoercive relationships with a creator would escape the objection. Locked score: The mixed band captures a substantial and directly relevant challenge to punitive religious authority while recognizing incomplete engagement with moral grounding, imprecise doctrinal scope, limited qualification, and historical or species-wide claims exceeding the evidence presented.",
+      "originalWords": 132,
+      "originalCharacters": 1081,
+      "lockedMove": {
+        "moveId": "con-divine-tyranny-against-moral-autonomy",
+        "sectionId": "section-mind-reason-freedom",
+        "side": "con",
+        "speaker": "Christopher Hitchens",
+        "moveKind": "reply",
+        "proposition": "Belief in supreme and unalterable divine tyranny is hostile to intellectual freedom and moral autonomy, particularly when enforced through fear of eternal punishment.",
+        "importance": 3,
+        "finalScore": 70,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "32:28",
+        "sourceSpan": {
+          "startEvent": 817,
+          "endEvent": 853,
+          "startMs": 1948559,
+          "endMs": 2046200
+        },
+        "sourceExcerpt": "I want to show is that it can if it does exist nonetheless be abolished like many other mind-forged manical and man-made tyrannies that confront us and in fact that this belief in a supreme and unalterable tyranny is the oldest enemy of our species the oldest enemy of our intellectual freedom and our moral autonomy and must be met and must be challenged and must be overthrown I",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-religious-authority"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-objective-morality-divine-ground",
+            "pro-reason-mathematics-freedom"
+          ],
+          "components": [
+            {
+              "componentId": "con-divine-tyranny-against-moral-autonomy-component-01",
+              "targetMoveId": "pro-objective-morality-divine-ground",
+              "text": "The earlier move's decisive demand is whether objective moral obligation requires grounding in God's nature and a moral lawgiver.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-divine-tyranny-against-moral-autonomy-component-02",
+              "targetMoveId": "pro-reason-mathematics-freedom",
+              "text": "The earlier move also claims that genuine human freedom is difficult to ground on materialism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly contests the autonomy consequences of divine authority and punishment, but it does not address whether objective moral facts require a divine ground.",
+          "responsivenessWithinClass": {
+            "value": 65,
+            "rationale": "Within partial answers, it contacts the freedom component but not the more central moral-grounding inference it purports to oppose."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "Within partial answers, it contacts the freedom component but not the more central moral-grounding inference it purports to oppose."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The tyranny objection is recoverable, but supreme religious authority, hell, and all theism are generalized without careful doctrinal scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Punitive and unalterable authority can threaten autonomy, but calling such belief the species' oldest enemy exceeds the supplied argument."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Perfect divine authority could be morally legitimate rather than tyrannical and could ground rather than erase responsible freedom.",
+          "decisiveQualification": "Legitimacy still requires explaining coercive punishment and whether meaningful dissent remains possible."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "The connection between unalterable punitive authority and diminished autonomy is plausible, but the universal conclusion needs additional premises."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central religious-authority bridge through explicit claims about punishment, tyranny, and moral autonomy."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (58 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt characterizes supreme unalterable authority as tyranny and explicitly calls it an enemy of intellectual freedom and moral autonomy.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-theistic-claimant-burden.critique",
+      "moveId": "con-theistic-claimant-burden",
+      "originalCritique": "Strongest feature: The reply precisely separates withholding belief from claiming certain nonexistence, prevents an illegitimate reversal of evidential responsibility, and establishes a clear standard requiring each theistic inference to survive argument and evidence. Principal limitation: Its sweeping suggestion that no argument for God has withstood rebuttal extends beyond what this exchange independently demonstrates and could obscure the need to evaluate the cumulative case component by component. Live burden: The skeptical position must continue testing the offered causal, design, moral, and historical bridges rather than treating burden allocation as a substitute for rebuttal, while proponents must justify specificity as well as generic possibility. Locked score: The very strong band reflects exceptional precision, direct burden contact, proportionate uncertainty, and diagnostic effectiveness, with only a limited overstatement concerning the universal historical failure of theistic argument.",
+      "originalWords": 132,
+      "originalCharacters": 1012,
+      "lockedMove": {
+        "moveId": "con-theistic-claimant-burden",
+        "sectionId": "section-cosmology-causal-burden",
+        "side": "con",
+        "speaker": "Christopher Hitchens",
+        "moveKind": "reply",
+        "proposition": "Atheism need not assert certainty that no deity could exist; the claimant must supply an argument that survives evidence and must justify selecting a particular god.",
+        "importance": 3,
+        "finalScore": 86,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "36:21",
+        "sourceSpan": {
+          "startEvent": 916,
+          "endEvent": 983,
+          "startMs": 2181160,
+          "endMs": 2356800
+        },
+        "sourceExcerpt": "exist no it's a very common misunderstanding about my fraternity sorority I'll just take a moment to clear it up the atheist says no persuasive argument for the existence of God has ever been Advanced or adduced without convincing rebuttal that no argument in favor stands or has been found to stand the test of argument and evidence we cannot say that we know that the could be no such entity",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 393
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-burden-naturalism"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-cosmic-beginning-personal-cause",
+            "pro-cosmic-planetary-fine-tuning",
+            "pro-dna-specified-information-design"
+          ],
+          "components": [
+            {
+              "componentId": "con-theistic-claimant-burden-component-01",
+              "targetMoveId": "pro-cosmic-beginning-personal-cause",
+              "text": "Whether a cosmic beginning warrants the asserted supernatural personal cause.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-theistic-claimant-burden-component-02",
+              "targetMoveId": "pro-cosmic-planetary-fine-tuning",
+              "text": "Whether design evidence establishes a creator rather than merely proposing one.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-theistic-claimant-burden-component-03",
+              "targetMoveId": "pro-dna-specified-information-design",
+              "text": "Whether biological information warrants an intelligent divine source.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move identifies the defect as failure of the claimant's arguments to survive evidence and states that skepticism need not prove impossibility, defeating burden reversal.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the burden error and states the consequence for the offered existence arguments."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the burden error and states the consequence for the offered existence arguments."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between lacking a persuasive argument and claiming certainty of nonexistence is stated clearly and with express qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The burden principle and uncertainty qualification fit well, though saying no pro-God argument has survived rebuttal is broader than demonstrated here."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A cumulative theistic case may be evidentially persuasive without deductively proving that no rival deity or explanation is possible.",
+          "decisiveQualification": "The claimant must still defend each inferential bridge and explain why the selected conception is supported."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The burden distinction is well reasoned, but the sweeping historical assertion that every argument has been rebutted is not documented."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central naturalistic-burden bridge and attacks the key inferences from unexplained features to a deity."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says atheists need not know no entity could exist; it requires theistic arguments to withstand argument and evidence.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
