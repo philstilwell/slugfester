@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v9-fresh-keyboard-navigation-contract",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v9",
+  "status": "fresh-keyboard-tab-location-assign-transport-selected",
+  "syntheticOnly": true,
+  "canaryCandidateLoaded": false,
+  "productionDataPresent": false,
+  "diagnosis": {
+    "remedyV8Failure": "The first production viewport completed its in-app pointer phase in memory and the local server returned the Chrome keyboard measured document and all requested assets with HTTP 200, but the Chrome extension controller did not report completion of its second Page.navigate load observation within the frozen 15000-millisecond deadline.",
+    "rawCdpKeyboardRejection": "The in-app browser rejected raw CDP Input.dispatchKeyEvent and directed callers to its supported keyboard interfaces.",
+    "supportedInAppKeyboardRejection": "The supported in-app Tab, Enter, and Space actions did not focus or toggle the synthetic native details summary.",
+    "selectedBoundary": "Retain the proven split Chromium surfaces and a fresh Chrome keyboard tab per viewport. Use Page.navigate exactly once for the diagnostic bootstrap, then use Runtime.evaluate location.assign for the measured document and poll for the exact URL plus document.readyState complete inside the unchanged 15000-millisecond deadline."
+  },
+  "surfaces": {
+    "pointerAndScreenshots": {
+      "name": "Codex In-app Chromium browser",
+      "freshTabPerViewport": true,
+      "responsibilities": [
+        "content-and-disclosure-checks",
+        "exact-css-viewport-checks",
+        "horizontal-overflow-checks",
+        "pointer-open-and-native-state-checks",
+        "collapsed-and-open-direct-cdp-jpeg-capture",
+        "zero-tolerance-runtime-diagnostics"
+      ]
+    },
+    "keyboard": {
+      "name": "Google Chrome via ChatGPT browser extension",
+      "freshTabPerViewport": true,
+      "bootstrapNavigationMethod": "Page.navigate-once-per-fresh-keyboard-tab",
+      "measuredNavigationMethod": "Runtime.evaluate-location.assign-with-exact-url-readyState-poll",
+      "responsibilities": [
+        "native-summary-focus",
+        "supported-enter-open",
+        "supported-space-close",
+        "native-state-and-hit-test-observation",
+        "exact-css-viewport-check",
+        "zero-tolerance-runtime-diagnostics"
+      ]
+    }
+  },
+  "viewports": {
+    "desktop": {
+      "targetCssViewport": { "width": 1440, "height": 1000 },
+      "pointerControllerInput": { "width": 1440, "height": 1000 },
+      "keyboardControllerInput": { "width": 1152, "height": 800 },
+      "expectedDevicePixelRatio": 2,
+      "expectedScreenshotPixels": { "width": 2880, "height": 2000 }
+    },
+    "mobile": {
+      "targetCssViewport": { "width": 390, "height": 844 },
+      "pointerControllerInput": { "width": 390, "height": 844 },
+      "keyboardControllerInput": { "width": 312, "height": 675 },
+      "expectedDevicePixelRatio": 2,
+      "expectedScreenshotPixels": { "width": 780, "height": 1688 }
+    }
+  },
+  "navigation": {
+    "keyboardDocumentsPerFreshTab": 2,
+    "initialPageNavigateCallsPerViewport": 1,
+    "runtimeLocationAssignCallsPerViewport": 1,
+    "exactLoadedUrlRequired": true,
+    "requiredReadyState": "complete",
+    "pollMilliseconds": 50,
+    "deadlineMilliseconds": 15000,
+    "secondControllerLoadSignalRequired": false,
+    "reloadPermitted": false,
+    "retryPermitted": false,
+    "timeoutExtensionPermitted": false,
+    "adaptiveNavigationRegenerationPermitted": false,
+    "adaptiveTransportSwitchPermitted": false
+  },
+  "requirements": {
+    "bothSurfacesMustReportSameChromeMajorVersion": true,
+    "freshPointerAndKeyboardTabsPerViewport": true,
+    "httpBootstrapBeforeRawDiagnostics": true,
+    "nativeDetailsOpenPropertyIsStateAuthority": true,
+    "pointerControllerInputEqualsRequestedCssViewport": true,
+    "keyboardControllerInputUsesFrozenExtensionCalibration": true,
+    "screenshotPixelsEqualRoundedCssViewportTimesDevicePixelRatio": true,
+    "allContentLayoutImageNavigationAndKeyboardChecksMustPassBeforeEvidenceWrite": true,
+    "priorPassingEvidenceReusePermitted": false,
+    "failedViewportArtifactsMustBeRemoved": true
+  },
+  "preservedControls": {
+    "judgmentModel": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlindness": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentExecutionPerformed": false,
+    "scoresReadOrChanged": false
+  },
+  "screenshotsPreservedInRepository": 0,
+  "productionMutationPerformed": false
+}

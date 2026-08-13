@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-rendering-remedy-v9-synthetic-preflight",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-rendering-verification-remedy-v9",
+  "status": "passed-twenty-viewport-fresh-keyboard-location-assign-synthetic-rehearsal",
+  "recordedAt": "2026-08-13T20:27:00Z",
+  "checkpointCommit": "e1b07429b45af2774991947b420734ec28e7cce9",
+  "syntheticOnly": true,
+  "fixture": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v6/synthetic/preflight.html",
+    "localPort": 4197,
+    "productionContentPresent": false
+  },
+  "navigationToken": "9f116621dc4b71f18f7cd67090f08a834190ce84a8d320f8df155013a7b7f3dd",
+  "browser": {
+    "pointerSurface": "Codex In-app Chromium browser",
+    "keyboardSurface": "Google Chrome via ChatGPT browser extension",
+    "pointerUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "keyboardUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+    "sameChromeMajorVersion": true
+  },
+  "gate": {
+    "viewportResults": 20,
+    "desktopViewportResults": 10,
+    "mobileViewportResults": 10,
+    "passingViewportResults": 20,
+    "requiredBooleanChecksPerViewport": 16,
+    "requiredBooleanChecksPassed": 320,
+    "screenshots": 40,
+    "validJpegSignatures": 40,
+    "exactSignatureHex": "ffd8ffe000104a4649460001",
+    "collapsedOpenPairsWithDifferentHashes": 20,
+    "uniqueSyntheticScreenshotHashes": 4,
+    "pointerTabsClosed": 20,
+    "keyboardTabsClosed": 20,
+    "initialPageNavigateCalls": 20,
+    "runtimeLocationAssignCalls": 20,
+    "runtimeCounts": {
+      "consoleErrors": 0,
+      "consoleWarnings": 0,
+      "pageErrors": 0,
+      "failedRequests": 0
+    },
+    "allChecksPassed": true
+  },
+  "navigationTimingsMilliseconds": {
+    "initialPageNavigate": {
+      "minimum": 30.69,
+      "maximum": 2140.41,
+      "mean": 323.03
+    },
+    "runtimeLocationAssignExactUrlReadyState": {
+      "minimum": 59.5,
+      "maximum": 445.22,
+      "mean": 125.95,
+      "frozenDeadline": 15000
+    }
+  },
+  "captures": {
+    "desktop": {
+      "devicePixelRatio": 2,
+      "pixelWidth": 2880,
+      "pixelHeight": 2000,
+      "collapsedSha256": "2fc18da94df4f47e66b6f6fd4aa2abac019067a12ef347a3e5a3cf4bcf9dad41",
+      "openSha256": "1b54a9caf12af79777e747d36be72093d799319cd3a341a01697b58a46e8e47e"
+    },
+    "mobile": {
+      "devicePixelRatio": 2,
+      "pixelWidth": 780,
+      "pixelHeight": 1688,
+      "collapsedSha256": "051b571242bb170314ed0afaeaa9d364303b68356269ca1a106943110a8d88d7",
+      "openSha256": "6e412823153e0f249da5df8a80c2a8e6239e511e0f583a347b0693837fecd332"
+    }
+  },
+  "developmentIncidentsExcludedFromPassingRehearsal": [
+    {
+      "design": "in-app-raw-cdp-keyboard-dispatch",
+      "result": "rejected-before-passing-rehearsal",
+      "reason": "The browser-control surface does not support raw CDP Input.dispatchKeyEvent and requires a supported keyboard interface."
+    },
+    {
+      "design": "in-app-supported-tab-enter-space",
+      "result": "rejected-before-passing-rehearsal",
+      "reason": "The supported in-app keyboard actions did not focus or toggle the synthetic native details summary."
+    },
+    {
+      "design": "fresh-chrome-tab-with-single-bootstrap-page-navigate-and-runtime-location-assign",
+      "result": "selected-and-formally-rehearsed",
+      "reason": "Twenty isolated viewport runs completed the exact URL and ready-state observation plus all pointer, image, keyboard, viewport, and runtime checks without a retry or timeout extension."
+    }
+  ],
+  "executionDiscipline": {
+    "oneViewportPerBrowserControlCall": true,
+    "freshKeyboardTabPerViewport": true,
+    "retryPerformed": false,
+    "timeoutExtended": false,
+    "adaptiveCalibrationPerformed": false,
+    "adaptiveTransportSwitchDuringPassingRehearsal": false,
+    "candidatePagesLoaded": 0,
+    "modelContexts": 0,
+    "scorePasses": 0,
+    "directCostUsd": 0
+  },
+  "cleanup": {
+    "runOwnedTabsClosed": true,
+    "viewportOverridesReset": true,
+    "localServerStopped": true,
+    "localServerPortClosed": true
+  },
+  "screenshotsPreservedInRepository": 0,
+  "productionMutationPerformed": false
+}
