@@ -1,0 +1,2136 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-compatibility-remedy-plan-packet",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-compatibility-remedy",
+  "status": "frozen-compatibility-remedy-plan-packet",
+  "productionCanary": true,
+  "planningOnly": true,
+  "debateNumber": "10",
+  "debateId": "craig-harris-moral-foundations-2011",
+  "sources": {
+    "candidate": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-10.json",
+    "finalLedger": "docs/assessment-production/production-checkpoint-v2.2-1/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/production-checkpoint-v2.2-1/score-pass/calculated-scores.json",
+    "events": ".assessment-cache/captions/yqaHXKLRKzg/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "25516243e0ecc0d961a792b07fdd705472aea2fd0b7d254f4baf740a1481143c",
+    "calculatedScoresSha256": "89820c984c205ef938438477c806f31b6596860db6af4243754a9775f2107a79",
+    "finalCandidateSha256": "919849cd2f8ebaf4da12aab3f2b70997792fd8ce267358b86fad5c5b309cdae3",
+    "eventsPath": ".assessment-cache/captions/yqaHXKLRKzg/events.json",
+    "eventsSha256": "19723fd5c8f05dd24e291dbc3948a85f1e7a2ce2c0d9b3be27092618afa8f92f",
+    "finalJudgmentSha256": "eb701b80c5d443bdbc9d17265d36ba5420f311e997890b59dc97064b415ad702"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/output-bundle/staged-ledgers/craig-harris-moral-foundations-2011.json",
+    "productionLedger": "docs/assessment-ledgers/craig-harris-moral-foundations-2011.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-production-checkpoint-v2.2-site-ledger-adapter",
+    "protocolId": "assessment-production-checkpoint-v2.2-1-compatibility-remedy",
+    "status": "frozen-production-checkpoint-v2.2-site-ledger-adapter",
+    "productionCanary": true,
+    "debateNumber": "10",
+    "debateId": "craig-harris-moral-foundations-2011",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-checkpoint-v2.2-1-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "25516243e0ecc0d961a792b07fdd705472aea2fd0b7d254f4baf740a1481143c",
+      "calculatedScoresSha256": "89820c984c205ef938438477c806f31b6596860db6af4243754a9775f2107a79",
+      "finalCandidateSha256": "919849cd2f8ebaf4da12aab3f2b70997792fd8ce267358b86fad5c5b309cdae3",
+      "eventsPath": ".assessment-cache/captions/yqaHXKLRKzg/events.json",
+      "eventsSha256": "19723fd5c8f05dd24e291dbc3948a85f1e7a2ce2c0d9b3be27092618afa8f92f",
+      "finalJudgmentSha256": "eb701b80c5d443bdbc9d17265d36ba5420f311e997890b59dc97064b415ad702"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "10",
+      "debateId": "craig-harris-moral-foundations-2011",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-supernatural-grounding-route",
+          "side": "pro",
+          "description": "Establish that objective moral values require a transcendent standard of goodness and that objective duties require authoritative imperatives, then show that a necessarily good divine nature and commands grounded in that nature provide those foundations while naturalism does not.",
+          "successCriteria": "The route succeeds if it connects objective value to God's necessarily good nature, objective duty to competent divine authority, and the inadequacy of evolutionary, cultural, preference-based, or well-being facts to supply equivalent objective and binding foundations.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-supernatural-foundation",
+            "tier": "motion",
+            "description": "Show that objective moral values and duties have a supernatural rather than wholly natural ontological foundation."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-divine-nature-values",
+              "tier": "central",
+              "description": "Explain how God's necessarily good nature constitutes a nonarbitrary standard of objective moral value."
+            },
+            {
+              "bridgeId": "pro-central-divine-commands-duties",
+              "tier": "central",
+              "description": "Explain how commands issued by competent divine authority and constrained by divine goodness constitute objective moral duties."
+            },
+            {
+              "bridgeId": "pro-central-naturalism-grounding-deficit",
+              "tier": "central",
+              "description": "Show why natural facts about evolution, consciousness, preference, suffering, or flourishing do not alone establish objective moral value or binding obligation."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-ontology-epistemology",
+              "tier": "subsidiary",
+              "description": "Distinguish the existence and ground of moral facts from moral language, moral knowledge, and disagreement about their application."
+            },
+            {
+              "bridgeId": "pro-subsidiary-agency-responsibility",
+              "tier": "subsidiary",
+              "description": "Account for the agency and responsibility presupposed by objective duties and address whether naturalistic determinism can sustain them."
+            }
+          ]
+        },
+        {
+          "routeId": "con-natural-grounding-route",
+          "side": "con",
+          "description": "Establish that value arises through conscious experience, that facts about suffering and flourishing permit objective comparison and correction, and that rational scientific inquiry can investigate those facts, while showing that divine nature, commands, or revelation are unnecessary or unsuitable foundations.",
+          "successCriteria": "The route succeeds if it derives an objective natural standard from conscious well-being, explains how inquiry can distinguish better and worse states independently of current opinion, and shows that supernatural authority neither supplies a necessary standard nor resolves arbitrariness and harmful-command objections.",
+          "motionBridge": {
+            "bridgeId": "con-motion-natural-foundation",
+            "tier": "motion",
+            "description": "Show that objective moral values and duties can be founded in natural facts about conscious creatures without supernatural authority."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-consciousness-value",
+              "tier": "central",
+              "description": "Establish conscious experience as the domain in which suffering, flourishing, and morally relevant value can exist."
+            },
+            {
+              "bridgeId": "con-central-objective-wellbeing",
+              "tier": "central",
+              "description": "Explain how movement away from extreme misery toward flourishing supports objective comparisons and allows preferences, practices, and judgments to be mistaken."
+            },
+            {
+              "bridgeId": "con-central-rational-inquiry",
+              "tier": "central",
+              "description": "Show how objective reasoning and scientific inquiry can investigate natural facts governing conscious well-being despite foundational axioms and first-person experience."
+            },
+            {
+              "bridgeId": "con-central-supernatural-critique",
+              "tier": "central",
+              "description": "Show why defining divine nature as good or grounding duties in commands does not independently establish goodness and can conflict with judgments about suffering and harm."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-definition-boundaries",
+              "tier": "subsidiary",
+              "description": "Defend well-being as a usable objective standard despite incomplete definitions, plural forms of flourishing, and difficult boundary cases."
+            },
+            {
+              "bridgeId": "con-subsidiary-revelation-reliability",
+              "tier": "subsidiary",
+              "description": "Address whether competing revelations, inherited traditions, and disputed purported commands provide reliable access to moral truth."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "foundations-of-objective-value",
+          "title": "The Ontological Ground of Objective Moral Value",
+          "weightPercent": 25,
+          "rationale": "This issue tests the primary competing foundations: necessarily good divine nature on the supernatural route and conscious experience, suffering, and flourishing on the natural route."
+        },
+        {
+          "sectionId": "wellbeing-objectivity-and-inquiry",
+          "title": "Well-Being, Moral Objectivity, and Scientific Inquiry",
+          "weightPercent": 20,
+          "rationale": "This issue covers whether natural facts permit objective comparisons, correction of preferences and cultures, and rational investigation despite axioms, subjective experience, or imprecise boundaries."
+        },
+        {
+          "sectionId": "ground-of-moral-duty",
+          "title": "From Facts to Objective Duties and Responsibility",
+          "weightPercent": 22,
+          "rationale": "This issue addresses how either route moves from descriptions or values to binding obligations, including authority, the fact-value distinction, agency, ability, and responsibility."
+        },
+        {
+          "sectionId": "divine-goodness-and-command",
+          "title": "Divine Goodness, Command, and Nonarbitrariness",
+          "weightPercent": 20,
+          "rationale": "This issue examines whether divine nature constrains commands nonarbitrarily and whether commands involving apparent harm can be assessed by a standard independent of their asserted source."
+        },
+        {
+          "sectionId": "moral-knowledge-and-revelation",
+          "title": "Moral Ontology, Knowledge, Disagreement, and Revelation",
+          "weightPercent": 13,
+          "rationale": "This issue distinguishes moral reality from access to it and tests the significance of disagreement, competing religious traditions, inherited belief, and shared inquiry for each foundational route."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-objective-morality-foundation-thesis",
+          "sectionId": "foundations-of-objective-value",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Objective moral values and duties are independent of human opinion and require a sound foundation that theism supplies but atheism does not.",
+          "sourceSpan": {
+            "startEvent": 197,
+            "endEvent": 260,
+            "excerpt": "then we have a sound foundation for objective moral values and duties. And second, if God does not exist, then we do not have a sound foundation for objective moral values and duties. Now, notice that these are conditional claims. I shall not be arguing tonight that God exists. Maybe Dr. Harris is right, that atheism is true. that wouldn't affect the truth of my two contentions"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly introduces Craig, and the uninterrupted opening address begins immediately after the timing cue.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-supernatural-foundation"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move states the two conditional contentions that organize the supernatural-foundation route; it has no earlier opposing target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The two conditional claims are recoverable, and Craig expressly limits the speech by declining to argue that God exists."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The conditional framing is explicit, but the necessity of the foundation is announced before the required grounding argument is supplied."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The conditional structure is consistent and intelligible, though this thesis alone does not establish either conditional."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The excerpt supplies a clear argumentative program but no independent support at this stage for the exclusive foundation claim."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It expressly frames the supernatural-foundation motion and states the exact route-completion claim."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move announces Craig's own conditional case and does not materially interpret a live opposing alternative."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "Within constructive moves, it clearly establishes the principal burden and the conditional scope of the case."
+            }
+          },
+          "evidenceBasis": "Craig states that theism supplies a sound objective foundation and atheism does not, expressly identifying both assertions as conditional.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-divine-nature-and-command-account",
+          "sectionId": "divine-goodness-and-command",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "God's necessarily holy and loving nature grounds objective moral values, while divine commands consistent with that nature constitute objective moral duties.",
+          "sourceSpan": {
+            "startEvent": 261,
+            "endEvent": 317,
+            "excerpt": "values exist wholly independent of human beings. Second, theism provides a sound foundation for objective moral duties. On a theistic view, objective moral duties are constituted by God's commands. God's moral nature is expressed in relation to us in the form of divine commandments which constitute our moral duties or obligations. Far from being arbitrary, God's commandments must be consistent with his holy and loving"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage remains within Craig's explicitly announced opening speech and develops his labeled first contention in a continuous first-person presentation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-divine-nature-values"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is a constructive account with no earlier opposing locked move available as a response target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The nature-versus-command division is explicit, and commands are expressly qualified as consistent with holiness and love."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The account is stated categorically, while the excerpt asserts rather than fully defends why divine nature constitutes objective value."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable divine-nature bridge and also materially advances the divine-command bridge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The passage presents Craig's positive account without developing or characterizing a live competing interpretation."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (89 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Craig grounds values in God's nature and duties in commands, adding that commands must accord with a holy and loving nature.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-evolutionary-morality-grounding-deficit",
+          "sectionId": "foundations-of-objective-value",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "On atheistic naturalism, evolved human moral beliefs and concern for human welfare are adaptive products without an objective basis that privileges them over other biological dispositions.",
+          "sourceSpan": {
+            "startEvent": 318,
+            "endEvent": 422,
+            "excerpt": "moral values. If God does not exist, then what basis remains for the existence of objective moral values? In particular, why think that human beings would have objective moral worth? On the atheistic view, human beings are just accidental byproducts of nature which have evolved relatively recently on an infinite decimal speck of dust called the planet Earth and which are doomed"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig expressly turns to his second contention, and the same uninterrupted opening speech continues through the naturalistic and evolutionary argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-naturalism-grounding-deficit"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move advances the naturalism-grounding deficit and has no earlier opposing locked target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The naturalistic challenge is recoverable, but movement between atheism, naturalism, evolutionary origin, and objective worth is only implicitly bounded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical grounding deficit exceeds the support supplied by evolutionary origin and cosmic transience without excluding rival naturalist accounts."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Naturalism may treat evolved cognition as access to stance-independent welfare facts rather than as their ontological creator.",
+            "decisiveQualification": "An evolutionary genealogy of belief does not by itself show that every natural candidate for objective value is illusory."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 66,
+              "rationale": "The inference from accidental evolutionary origin and finitude to absence of objective worth leaves a substantial unsupported bridge."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The argument directly supports the central claim that naturalistic evolutionary facts cannot ground objective moral value."
+            },
+            "representationalCharity": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (58 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 85,
+              "rationale": "Within constructive moves, it squarely raises the missing objective-status bridge for evolved moral dispositions."
+            }
+          },
+          "evidenceBasis": "Craig describes humans as evolved accidental byproducts and asks what objective basis could privilege their worth or moral dispositions.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-wellbeing-definition-circularity",
+          "sectionId": "wellbeing-objectivity-and-inquiry",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Defining moral goodness as conscious-creature well-being makes the claim that maximizing well-being is good tautological and does not explain why well-being is objectively morally valuable.",
+          "sourceSpan": {
+            "startEvent": 423,
+            "endEvent": 469,
+            "excerpt": "Harris propose to solve the value problem? The trick he proposes is simply to redefine what he means by good and evil in nonmoral terms. He says we should define good as that which supports the well-being of conscious creatures. So he says questions about values are really questions about the well-being of conscious creatures. And therefore he concludes it makes no sense to ask whether maximizing"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig names Harris and his proposed solution directly while continuing the same clearly attributed opening address without a speaker transition.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-objective-wellbeing"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Although described as a criticism of Harris, chronology makes it an opening constructive move with no earlier opposing locked target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The circularity objection is clear, though it implicitly assumes Harris offers an identity definition rather than a substantive reduction."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Calling the maneuver a mere trick overstates what follows unless the competing reductive interpretation is first excluded."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Harris may be proposing a substantive naturalistic identity or domain thesis rather than a merely verbal redefinition of good.",
+            "decisiveQualification": "Even on that reading, he still owes a bridge from conscious well-being to specifically moral goodness."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central objective-well-being bridge by challenging the proposed identification of well-being with moral goodness."
+            },
+            "representationalCharity": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "Within constructive moves, it isolates a direct definitional objection to the natural well-being route."
+            }
+          },
+          "evidenceBasis": "Craig quotes the proposal to define good by conscious-creature well-being and argues that the resulting maximization claim becomes tautological.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-facts-authority-and-objective-duty",
+          "sectionId": "ground-of-moral-duty",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "Natural science describes facts but cannot generate objective obligations, which require authoritative moral imperatives rather than evolutionary advantage, taboo, or social conditioning.",
+          "sourceSpan": {
+            "startEvent": 470,
+            "endEvent": 529,
+            "excerpt": "natural science tells us only what is, not what ought to be the case. As philosopher Jerry Foder has written, science is about facts, not norms. It might tell us how we are, but it wouldn't tell us what is wrong with how we are. In particular, it cannot tell us that we have a moral obligation to take actions which are conducive to human flourishing. So if there is no God, what foundation remains for objective"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig introduces a distinct second question about duties and sustains the argument in the same uninterrupted opening speech.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-divine-commands-duties"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is an opening constructive account, and no earlier opposing locked move exists for response-component analysis."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The fact-versus-obligation contrast is clear, but claims about science, naturalism, and animals are stated with overly broad scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move categorically excludes natural obligation without defending why authoritative imperatives are necessary or uniquely divine."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A naturalist may ground duties in objective reasons arising from welfare, agency, or relations rather than in commands.",
+            "decisiveQualification": "Descriptive science alone does not yield obligations unless some normative bridge or reason-conferring principle is defended."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "The fact-norm distinction is coherent, but the conclusion that obligation requires commanding authority is a substantial unsupported conditional."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The move relies mainly on assertion about science, animals, and authority without comparing plausible natural accounts of obligation."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable divine-command account of duties while attacking the competing natural-duty route."
+            },
+            "representationalCharity": {
+              "value": 65,
+              "rationale": "The fact-norm gap is fairly identified, but the move largely omits non-command naturalist theories of normative reasons."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Craig says science reports how matters are, not what ought to be, and proposes authoritative commands as the missing basis of obligation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-free-will-responsibility-objection",
+          "sectionId": "ground-of-moral-duty",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "constructive",
+          "proposition": "If human actions are causally determined without relevant freedom or control, the responsibility presupposed by objective moral duty is unavailable.",
+          "sourceSpan": {
+            "startEvent": 530,
+            "endEvent": 563,
+            "excerpt": "actions are causally determined and that there is no free will. Dr. Harris rejects not only libertarian accounts of free will, but also compatibilistic accounts of freedom. But if there is no free will, then no one is morally responsible for anything. In the end, Dr. Harris admits this though it's tucked away in the end notes of his volume. Moral responsibility he says and I quote is a social construct not an objective"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The same speaker labels this as a second problem and explicitly attributes the determinist position and its implications to Harris.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-agency-responsibility"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Despite addressing Harris's published position, this opening move has no earlier opposing locked move eligible as a formal target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The conditional is recoverable, but free will shifts from relevant control to an unqualified category without explaining alternatives."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The assertion that no free will entails no responsibility is categorical despite the absence of a defended responsibility criterion."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Responsibility may be compatibilist, reasons-responsive, or revisionary even if libertarian freedom is absent.",
+            "decisiveQualification": "The cited Harris position reportedly rejects compatibilism, but that does not independently establish Craig's general incompatibilist inference."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary agency-and-responsibility bridge rather than the motion or a central grounding bridge."
+            },
+            "representationalCharity": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (80 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Craig attributes causal determinism and rejection of libertarian and compatibilist freedom to Harris, then denies resulting objective responsibility.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-consciousness-condition-for-value",
+          "sectionId": "foundations-of-objective-value",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "constructive",
+          "proposition": "Conscious experience is a necessary condition for value because changes in the universe can matter only if they can affect a conscious system.",
+          "sourceSpan": {
+            "startEvent": 798,
+            "endEvent": 814,
+            "excerpt": "This is not an arbitrary starting point. Imagine a universe devoid of the possibility of consciousness. Imagine a universe entirely constituted of rocks. Okay? There's clearly no happiness or suffering in this universe. There's no good or evil. Value judgments don't apply for for changes in the universe to matter. They have to matter at least potentially to some conscious system"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Harris explicitly announces his reduction of value to conscious-creature well-being and then develops the consciousness component in his own continuous speech.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-consciousness-value"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is Harris's constructive case and therefore has no response-component target among earlier opposing locked moves."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The claim is explicitly limited to a necessary condition: changes must at least potentially matter to a conscious system."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The necessary-condition force fits the thought experiment and does not itself assert that consciousness is sufficient for morality."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The contrast coherently supports the narrower claim that value requires possible significance for conscious experience."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The thought experiment strongly supports the intuition, though it does not compare nonexperiential theories of value in detail."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly establishes the central consciousness-value bridge on the natural route."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move develops Harris's positive necessary-condition claim without interpreting a substantive opposing alternative."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Harris contrasts a universe containing only rocks with one containing conscious systems and limits mattering to effects on consciousness.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-worst-misery-objective-standard",
+          "sectionId": "foundations-of-objective-value",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "constructive",
+          "proposition": "The worst possible misery for every conscious creature is bad, supplying a minimal objective standard from which better states and factual mistakes about moral progress follow.",
+          "sourceSpan": {
+            "startEvent": 815,
+            "endEvent": 863,
+            "excerpt": "about well-being? Well, the well-being of conscious creatures and and the link between that and morality may seem open to doubt, but it shouldn't. Here's the only assumption you have to make. Imagine a universe in which every conscious creature suffers as much as it possibly as much as it possibly can for as long as it can. I call this the worst possible misery for everyone. Okay? The worst possible misery for everyone is bad"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Harris explicitly turns from consciousness to well-being and carries the worst-misery thought experiment through the final delivered row of this argumentative move.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-objective-wellbeing"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move has no earlier opposing locked target requiring response-component classification."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposition is recoverable as a minimal starting point concerning universal maximal misery, not a complete moral theory."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The badness of universal maximal misery is strongly supported, but broader claims about moral progress require additional comparative principles."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable central bridge from misery and flourishing to objective welfare comparisons."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move advances a positive thought experiment without materially construing an opponent's alternative position."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Harris asks the audience to imagine maximum suffering for every conscious creature and treats its badness as the minimal assumption.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-natural-science-of-wellbeing",
+          "sectionId": "wellbeing-objectivity-and-inquiry",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "constructive",
+          "proposition": "Because moral questions concern conscious experience, minds are natural phenomena, and natural facts govern well-being, moral truth can be investigated scientifically.",
+          "sourceSpan": {
+            "startEvent": 864,
+            "endEvent": 893,
+            "excerpt": "argument for moral truth in the context of science. Questions of right and wrong and good and evil depend upon minds. Okay? They depend upon the possibility of experience. Minds are natural phenomena. They depend upon the laws of nature in some way. Okay? morality and human values therefore can be understood through science because in talking about these things we are talking about all of the facts that influence the well-being of conscious"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted first-person presentation occurs within Harris's speech and develops his characteristic moral-landscape account.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-rational-inquiry"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is a constructive scientific-inquiry argument, so it has no earlier opposing response components to classify."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The route is recoverable, though 'science' ranges between empirical investigation and rational inquiry more generally."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Natural dependence supports scientific relevance, but does not alone establish that science can settle every normative component."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central rational-inquiry bridge governing investigation of natural facts about conscious well-being."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The passage states Harris's positive naturalistic inference without substantially interpreting an opponent's alternative."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Harris argues that moral questions depend on experience, minds are natural, and natural facts influence conscious-creature well-being.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-objectively-defective-values",
+          "sectionId": "ground-of-moral-duty",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Conduct and preferences can be objectively mistaken when they reliably frustrate creaturely well-being, independently of whether individuals or cultures presently endorse them.",
+          "sourceSpan": {
+            "startEvent": 894,
+            "endEvent": 963,
+            "excerpt": "well-being of little girls? This is the kind of email I get, incidentally. Now, moral skeptics of this kind and and Dr. Craig has essentially endorsed this position in a way without God think that the only way to judge one person's values to be wrong are with respect to another person's values and all such judgments have to be on a par. This is not true. There are many ways for my values to be objectively"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The continuous remarks remain in Harris's speech, with explicit first-person examples and a direct reference to Craig's contrary position.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-naturalism-grounding-deficit"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-evolutionary-morality-grounding-deficit",
+              "pro-facts-authority-and-objective-duty"
+            ],
+            "components": [
+              {
+                "componentId": "con-objectively-defective-values-component-01",
+                "targetMoveId": "pro-evolutionary-morality-grounding-deficit",
+                "text": "Explain why evolved or culturally endorsed preferences can nevertheless be objectively mistaken rather than merely different.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-objectively-defective-values-component-02",
+                "targetMoveId": "pro-facts-authority-and-objective-duty",
+                "text": "Explain how objective error about conduct yields genuinely binding obligation rather than only an evaluative comparison.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly answers the relativizing challenge by tying error to reliable frustration of well-being, but it does not fully answer the separate authority-to-duty demand."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The objective-error claim is clear, with an implicit assumption that relevant well-being effects are sufficiently identifiable and comparable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The examples support some objectively defective preferences, but the categorical conclusion needs a fuller defense of well-being's authority."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Craig's objection may allow objective welfare facts while denying that they are identical to moral value or binding duty.",
+            "decisiveQualification": "Showing that preferences frustrate welfare answers relativism only if welfare is independently established as morally authoritative."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central naturalism-grounding-deficit bridge by proposing an objective natural error standard."
+            },
+            "representationalCharity": {
+              "value": 66,
+              "rationale": "Harris rebuts simple preference relativism but does not fully confront the stronger ontological and authority-based version of Craig's demand."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "Within partial answers, it contacts the decisive objective-error component while leaving the binding-obligation component unresolved."
+            }
+          },
+          "evidenceBasis": "Harris rejects parity among all preferences and uses practices affecting girls' well-being to illustrate objectively mistaken values.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-science-presupposes-epistemic-values",
+          "sectionId": "wellbeing-objectivity-and-inquiry",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "constructive",
+          "proposition": "Science itself depends on values such as evidence, logical consistency, understanding, and intellectual honesty, so a categorical fact-value divide cannot exclude morality from rational inquiry.",
+          "sourceSpan": {
+            "startEvent": 1005,
+            "endEvent": 1063,
+            "excerpt": "cannot speak of facts without resorting to values. I mean consider the simplest statement of scientific fact. Water is two parts hydrogen and one part oxygen. This seems as valuefree an utterance as human beings ever make. But what do we do when someone doubts the truth of this proposition? Okay. All we can do is appeal to scientific values, the value of understanding the world, the value of evidence, the value of logical consistency"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted conclusion of Harris's speech presents a first-person scientific example before the applause and moderator transition.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-rational-inquiry"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive analogy has no formal reply target despite bearing on Craig's earlier fact-norm criticism."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The analogy is clear, but value encompasses epistemic norms and moral value without fully distinguishing their normative roles."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Science plausibly presupposes epistemic standards, but that point is insufficient by itself to dissolve the moral fact-value distinction."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A defender of the fact-value distinction can accept epistemic norms while denying that empirical facts entail moral obligations.",
+            "decisiveQualification": "The analogy shows that inquiry is value-laden, not that epistemic and moral normativity share the same ground or content."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The chemistry example concretely illustrates epistemic standards, while the claimed consequence for morality remains only indirectly supported."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The move fairly exposes value commitments in science but does not address the strongest distinction between epistemic and moral norms."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Harris uses disagreement about water's composition to show science relies on evidence, consistency, understanding, and intellectual standards.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-moral-semantics-ontology-distinction",
+          "sectionId": "moral-knowledge-and-revelation",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "The meaning and use of moral language must be distinguished from moral ontology: values are grounded in God's character and duties in divine commands, not in definitions of moral words.",
+          "sourceSpan": {
+            "startEvent": 1069,
+            "endEvent": 1142,
+            "excerpt": "by God. Rather my concern is moral ontology. What is the ground or the foundation of moral values and duties? To give an illustration, think of light. Light is a certain visible range of the electromagnetic spectrum. But obviously that isn't the meaning of the word light. People knew how to use the word light long before they discovered its physical nature. And I might also add"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Craig immediately before this first-person rebuttal, which explicitly restates his two contentions and addresses Harris by name.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-ontology-epistemology"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-natural-science-of-wellbeing",
+              "con-objectively-defective-values"
+            ],
+            "components": [
+              {
+                "componentId": "pro-moral-semantics-ontology-distinction-component-01",
+                "targetMoveId": "con-natural-science-of-wellbeing",
+                "text": "Natural minds and welfare-governing facts allegedly make moral truth amenable to scientific investigation.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-moral-semantics-ontology-distinction-component-02",
+                "targetMoveId": "con-objectively-defective-values",
+                "text": "Values may be objectively mistaken when they reliably frustrate well-being.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig usefully distinguishes word meaning from ontological grounding and restates his own account, but he does not answer the inference from natural minds to scientific inquiry or Harris's welfare-based error criterion."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "The semantic-versus-ontological distinction and the separate grounds of values and duties are clearly and stably stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The distinction is sound, but dismissing the opposing material as irrelevant exceeds what the excerpt's restatement establishes."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Harris's well-being thesis can be an ontological naturalist proposal rather than merely a definition of moral vocabulary.",
+            "decisiveQualification": "Even as ontology, the proposal still requires a defended identity or grounding relation between welfare and moral goodness."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The distinction is internally coherent and cleanly separates semantic questions from Craig's two proposed ontological grounds."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The conceptual distinction is supported by exposition, but divine grounding is asserted and the rival naturalist reading is not examined."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary ontology-epistemology bridge rather than completing a central or motion-level bridge."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "Craig preserves the legitimate grounding demand but too readily treats Harris's positive naturalist account as merely semantic."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "This is relevant contrary material but not an answer to the decisive natural-inquiry or objective-error components."
+            }
+          },
+          "evidenceBasis": "Craig distinguishes definitions from ontology, then restates that God's character grounds values and commands ground duties.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-wellbeing-goodness-modal-distinction",
+          "sectionId": "wellbeing-objectivity-and-inquiry",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Because good and evil persons could share well-being in a possible world, well-being and moral goodness are not identical and natural facts about flourishing alone cannot ground moral value.",
+          "sourceSpan": {
+            "startEvent": 1208,
+            "endEvent": 1266,
+            "excerpt": "about the mental states of others. They enjoy inflicting uh pain on other people. But that implies that there's a possible world which we can conceive in which the continuum of human well-being is not a moral landscape. the peaks of well-being could be occupied by evil people. But that entails that in the actual world, the continuum of well-being and the moral landscape are not identical either. For identity"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Craig attributes the relevant admissions to Harris's book and develops the modal identity argument continuously in his rebuttal.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-objective-wellbeing"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-worst-misery-objective-standard",
+              "con-natural-science-of-wellbeing"
+            ],
+            "components": [
+              {
+                "componentId": "pro-wellbeing-goodness-modal-distinction-component-01",
+                "targetMoveId": "con-worst-misery-objective-standard",
+                "text": "Show that the continuum of conscious well-being is identical with, or sufficient to ground, the full domain of moral goodness.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-wellbeing-goodness-modal-distinction-component-02",
+                "targetMoveId": "con-natural-science-of-wellbeing",
+                "text": "Show that scientifically investigable facts about flourishing exhaust the facts relevant to moral value.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig expressly argues that a possible divergence between well-being and moral goodness defeats identity and therefore blocks the inference from natural flourishing facts to moral value."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The argument clearly concerns identity rather than mere correlation and explicitly invokes a possible divergence as its test."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "A genuine possible divergence defeats strict identity, though it would not defeat every grounding, dependence, or constitutive account."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Well-being may ground or constitute moral goodness without being strictly identical to every point on a welfare continuum.",
+            "decisiveQualification": "The modal argument directly defeats identity only if Harris's case requires that strong identity rather than a looser grounding relation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central objective-well-being bridge by challenging the identity needed to convert welfare into moral goodness."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (73 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within diagnostic defeats, it explicitly identifies the identity premise, offers a modal counterexample, and states the grounding consequence."
+            }
+          },
+          "evidenceBasis": "Craig invokes a possible divergence between the well-being continuum and the moral landscape to reject their strict identity.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-divine-goodness-definitional-asymmetry",
+          "sectionId": "divine-goodness-and-command",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Defining God as intrinsically good does not independently ground goodness, while beginning moral science from the badness of universal maximal misery is an axiomatic move comparable to those used in other sciences.",
+          "sourceSpan": {
+            "startEvent": 1790,
+            "endEvent": 1825,
+            "excerpt": "other foot as well. There there is there is no reason that I can see why there couldn't be an evil god or several. Okay, he but his god is intrinsically good. Goodness is grounded in his very nature. That is a a a definitional move that he has made. Now I have presented a positive case for grounding an objective morality in the context of science. And thinking about moral truth"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Harris, and the ensuing uninterrupted first-person response directly addresses Craig by name.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-divine-nature-values"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-divine-nature-and-command-account",
+              "pro-wellbeing-definition-circularity"
+            ],
+            "components": [
+              {
+                "componentId": "con-divine-goodness-definitional-asymmetry-component-01",
+                "targetMoveId": "pro-divine-nature-and-command-account",
+                "text": "God's necessarily good nature allegedly supplies a nonarbitrary ontological standard of moral value.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-divine-goodness-definitional-asymmetry-component-02",
+                "targetMoveId": "pro-wellbeing-definition-circularity",
+                "text": "A well-being axiom allegedly constitutes an illicit definitional maneuver rather than a substantive moral foundation.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Harris directly applies Craig's definitional criticism to intrinsic divine goodness and contrasts that move with the explicit axiom of universal maximal misery, contacting both demands without fully proving the asymmetry."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The comparison between intrinsic divine goodness and an axiomatic misery premise is clear and appropriately limited to grounding."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Harris qualifies the evil-god point as what he can see and presents the definitional symmetry as a challenge rather than a proof."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Craig may offer essential goodness as a metaphysical entailment of maximal greatness, not as an arbitrary verbal definition.",
+            "decisiveQualification": "That entailment still needs an account of why maximal greatness includes recognizable moral goodness rather than merely stipulating it."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The symmetry challenge is coherent, though the claimed superiority of the misery axiom requires a further noncircular justification."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The excerpt accurately identifies the definitional form and offers an extreme experiential axiom, but provides limited comparative defense."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central divine-nature-values bridge and supports the supernatural-critique bridge."
+            },
+            "representationalCharity": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "The reply contacts both decisive components but only partially explains why the welfare axiom is epistemically superior."
+            }
+          },
+          "evidenceBasis": "Harris argues that intrinsic divine goodness is itself a definitional move and compares it with his maximal-misery starting axiom.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-essential-divine-goodness",
+          "sectionId": "divine-goodness-and-command",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "God's essential goodness follows from the concept of a maximally great and worship-worthy being rather than from an arbitrary stipulative definition.",
+          "sourceSpan": {
+            "startEvent": 1973,
+            "endEvent": 2003,
+            "excerpt": "So once you understand the concept of God, you can see that asking well why is God good? is sort of like asking why are all bachelors unmarried. Uh it's the very concept of the greatest conceivable being a being worthy of worship that entails the essential goodness of God. And I think it's evident that if God exists then we do have objective moral values and duties. Secondly, I"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator begins the closing speeches, and Craig's first-person closing explicitly summarizes and defends his initial contention.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-divine-nature-values"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-divine-goodness-definitional-asymmetry"
+            ],
+            "components": [
+              {
+                "componentId": "pro-essential-divine-goodness-component-01",
+                "targetMoveId": "con-divine-goodness-definitional-asymmetry",
+                "text": "Defining God as intrinsically good allegedly fails to supply an independent, nonarbitrary ground of goodness.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig directly answers that goodness is entailed by maximal greatness and worship-worthiness rather than arbitrarily appended, but does not independently defend why those concepts entail moral goodness."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The conceptual-entailment reply is recoverable, though maximal greatness and worship-worthiness carry an implicit moral qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Craig states conceptual entailment confidently, but the bachelor analogy does not itself establish the contested content of God."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The critic can accept the stipulated concept while asking whether it explains goodness rather than builds goodness into the label.",
+            "decisiveQualification": "Conceptual entailment blocks arbitrariness only if maximal greatness and worship-worthiness independently and noncircularly include moral goodness."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central divine-nature-values bridge against the definitional-arbitrariness objection."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "The decisive stipulation objection is explicitly contacted, with one important explanatory bridge left compressed."
+            }
+          },
+          "evidenceBasis": "Craig compares God's essential goodness to conceptual truths and grounds it in maximal greatness and worship-worthiness.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-competing-revelation-symmetry",
+          "sectionId": "moral-knowledge-and-revelation",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Because materially similar apologetic reasoning supports incompatible religions, accidental birthplace and inherited doctrine make sectarian revelation an unreliable basis for moral knowledge and eternal consequences.",
+          "sourceSpan": {
+            "startEvent": 2092,
+            "endEvent": 2154,
+            "excerpt": "about the nature of moral reality and how to live within it. But what if what if Muslims are right? What if Islam is true? Okay, how should we view God in moral terms? How would we view God in moral terms? Or I should say Allah? Okay, we we have been born in the wrong place to the wrong parents, given the wrong culture, given the wrong theology. Okay, needless to say, Dr. Craig is doomed. He's been thoroughly confused by Christianity"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator assigns the closing to Harris, whose first-person argument contrasts Craig and Christianity with Islam.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-revelation-reliability"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "pro-essential-divine-goodness",
+              "pro-objective-morality-foundation-thesis",
+              "pro-moral-semantics-ontology-distinction"
+            ],
+            "components": [
+              {
+                "componentId": "con-competing-revelation-symmetry-component-01",
+                "targetMoveId": "pro-essential-divine-goodness",
+                "text": "Show that the conceptual argument for essential divine goodness fails or is equally available to an incompatible deity.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-competing-revelation-symmetry-component-02",
+                "targetMoveId": "pro-objective-morality-foundation-thesis",
+                "text": "Distinguish the truth of a supernatural ontological foundation from reliable epistemic access through a particular revelation.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-competing-revelation-symmetry-component-03",
+                "targetMoveId": "pro-moral-semantics-ontology-distinction",
+                "text": "Address the explicit distinction between moral ontology and epistemic disagreement.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The competing-religion symmetry is significant contrary material about revelation reliability, but it does not contact the decisive ontological or conceptual premises of the cited pro moves."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The revelation-symmetry challenge is clear, though the claim that the apologetic logic is exactly the same is broadly scoped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Material similarity is plausible, but exact equivalence and unreliability require closer comparison of evidence and doctrines."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Competing religions may share formal apologetic patterns while differing materially in historical evidence, doctrine, and moral content.",
+            "decisiveQualification": "Shared form and birthplace dependence still create an access problem unless discriminating evidence is independently supplied."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 74,
+              "rationale": "Competing incompatible claims support an underdetermination concern, but similarity alone does not prove equal credibility or falsity."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary revelation-reliability bridge rather than a central ontological foundation bridge."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The symmetry objection retains force, but the claim of exact sameness omits potentially decisive evidential differences."
+            },
+            "responsiveness": {
+              "value": 57,
+              "rationale": "Within relevant nonanswers, it strongly bears on sectarian access while leaving the earlier supernatural-grounding inferences unanswered."
+            }
+          },
+          "evidenceBasis": "Harris argues that similar apologetic reasoning can defend Christianity and Islam and highlights birthplace-dependent inherited belief.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-honest-inquiry-over-sectarian-revelation",
+          "sectionId": "moral-knowledge-and-revelation",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Moral and spiritual truth should be pursued through present honest inquiry into the conditions of human flourishing rather than through competing sectarian claims about an invisible God.",
+          "sourceSpan": {
+            "startEvent": 2155,
+            "endEvent": 2209,
+            "excerpt": "truly flourish? That is the challenge we face. Sectarian moral denominations, okay? A world shattered, balkcanized by competing claims about an invisible God is not the way to do it. Apart from the fact that there's no evidence in the first place that should be compelling to us to adopt that view, the only tool we need is honest inquiry. And I would suggest to you that if faith"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage is the uninterrupted conclusion of Harris's closing and states his alternative to sectarian moral authority.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-revelation-reliability"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "pro-essential-divine-goodness",
+              "pro-moral-semantics-ontology-distinction"
+            ],
+            "components": [
+              {
+                "componentId": "con-honest-inquiry-over-sectarian-revelation-component-01",
+                "targetMoveId": "pro-essential-divine-goodness",
+                "text": "A maximally great, worship-worthy God's essential goodness allegedly grounds objective values.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-honest-inquiry-over-sectarian-revelation-component-02",
+                "targetMoveId": "pro-moral-semantics-ontology-distinction",
+                "text": "Moral ontology should be separated from language, knowledge, and disputed access.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Harris proposes honest inquiry into flourishing as an epistemic alternative to sectarianism, but he does not answer the ontological claim about essential divine goodness or Craig's ontology-access distinction."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The methodological proposal is clear, though 'the only tool we need' gives honest inquiry a broader and less specified scope than defended."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Honest inquiry is plainly important, but its exclusive sufficiency and the asserted lack of compelling supernatural evidence are not established here."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Sectarian traditions may incorporate evidence, reasoning, moral experience, and internal methods of correction rather than replacing inquiry wholesale.",
+            "decisiveQualification": "Competing unverifiable authority claims still require shared discriminating standards to justify public moral knowledge."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 71,
+              "rationale": "Harris preserves the public-inquiry challenge but overstates the alternative as exclusive and does not engage a complementary-method account."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "The move is issue-bearing and relevant to access, yet the decisive selected ontological components remain uncontacted."
+            }
+          },
+          "evidenceBasis": "Harris contrasts competing invisible-God claims with present inquiry into the conditions under which human beings flourish.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-harm-versus-authority-rules",
+          "sectionId": "ground-of-moral-duty",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Grounding morality solely in competent authority collapses the distinction between genuine harms and conventional rules, whereas moral understanding independently tracks effects on well-being.",
+          "sourceSpan": {
+            "startEvent": 2829,
+            "endEvent": 2882,
+            "excerpt": "well-being of of people and things that merely issue from a competent authority. So if you ask children sitting in a classroom, is it okay to drink a soda in class if the teacher gives you permission? Most of them will say yes. If you if you ask them, \"Is it okay to punch your neighbor in the face?\" If the teacher gives you permission, ch they immediately recognize the distinction between a moral infraction and and uh uh a mere conventional"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Harris explicitly asks to add a point, identifies Craig's authority-based account, and develops his previously introduced psychopathy argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-divine-commands-duties"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-facts-authority-and-objective-duty",
+              "pro-divine-nature-and-command-account",
+              "pro-essential-divine-goodness"
+            ],
+            "components": [
+              {
+                "componentId": "con-harm-versus-authority-rules-component-01",
+                "targetMoveId": "pro-facts-authority-and-objective-duty",
+                "text": "Explain why competent authority is insufficient to constitute moral duty when an authorized act still inflicts recognizable harm.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-harm-versus-authority-rules-component-02",
+                "targetMoveId": "pro-divine-nature-and-command-account",
+                "text": "Address the qualification that divine commands are necessarily constrained by a holy and loving nature.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-harm-versus-authority-rules-component-03",
+                "targetMoveId": "pro-essential-divine-goodness",
+                "text": "Show why an essentially good authority could nevertheless issue a genuinely harmful command.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The classroom comparison directly attacks authority as sufficient for morality, but ordinary teacher permission does not answer Craig's qualified appeal to uniquely competent and necessarily good divine authority."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The conventional-versus-moral distinction is clear, but the proposition broadens Craig's qualified divine account into morality grounded solely in generic authority."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The example defeats bare authority, but it does not by itself defeat authority constrained by an independently characterized necessarily good nature."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Craig's authority is divine and constrained by perfect goodness, not equivalent to a teacher's unconstrained classroom permission.",
+            "decisiveQualification": "The example refutes bare authority but not necessarily commands whose authority and content are independently fixed by essential goodness."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central divine-commands-duties bridge by challenging authority as the constitutive source of moral obligation."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "Harris fairly tests authority alone but materially weakens the complete divine-command account by omitting its goodness constraint."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "Within partial answers, it contacts the authority-sufficiency component but leaves the decisive divine-goodness qualification unresolved."
+            }
+          },
+          "evidenceBasis": "Harris contrasts teacher permission to drink soda with permission to punch someone, arguing that children recognize harm independently of authority.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-evil-command-independent-judgment",
+          "sectionId": "divine-goodness-and-command",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "A deity that genuinely commanded sacrifice or comparable violence would thereby be evil, because the morality of the command can be judged independently of its purported divine source.",
+          "sourceSpan": {
+            "startEvent": 2887,
+            "endEvent": 2889,
+            "excerpt": "If God did he would be evil. I mean, so I can get behind that God. If God is issuing that command, he's an evil"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The statement is Harris's immediate first-person rejoinder to Craig's direct address and continues Harris's independent moral-evaluation argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-divine-commands-duties"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-divine-nature-and-command-account",
+              "pro-essential-divine-goodness",
+              "pro-facts-authority-and-objective-duty"
+            ],
+            "components": [
+              {
+                "componentId": "con-evil-command-independent-judgment-component-01",
+                "targetMoveId": "pro-divine-nature-and-command-account",
+                "text": "Explain whether a purported divine command can be morally condemned independently of its asserted authoritative source.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-evil-command-independent-judgment-component-02",
+                "targetMoveId": "pro-essential-divine-goodness",
+                "text": "Address the claim that the genuine greatest conceivable God is essentially good and therefore cannot issue an evil command.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-evil-command-independent-judgment-component-03",
+                "targetMoveId": "pro-facts-authority-and-objective-duty",
+                "text": "Explain what natural or independent foundation gives the condemning judgment objective authority.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The rejoinder explicitly states that a genuinely violent divine command would make the commander evil, but it does not answer the impossibility qualification or ground the independent standard."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "Despite its brevity, the conditional judgment is recoverable; the relevant kind and circumstances of sacrifice or violence remain implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The confidence fits the stated extreme case, though the moral criterion and disputed context are not defended in the excerpt."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A necessarily good God could not genuinely issue an evil command, so an apparent command would instead be misidentified or misunderstood.",
+            "decisiveQualification": "That response risks insulating the theory unless apparent commands can be assessed by independently accessible moral criteria."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The conditional independent-judgment claim is coherent, but it presupposes rather than argues for the standard used to classify the command."
+            },
+            "evidenceWarrant": {
+              "value": 55,
+              "rationale": "The extremely brief rejoinder supplies no evidence, warrant development, or comparison with the essential-goodness response."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central command bridge by asserting that source authority cannot convert an evil act into a moral duty."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "Within partial answers, it directly contacts independent moral assessment while leaving two decisive grounding and necessity components unresolved."
+            }
+          },
+          "evidenceBasis": "Harris responds that if God genuinely issued the disputed violent command, that fact would make God evil.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-epistemic-ontological-disagreement-distinction",
+          "sectionId": "moral-knowledge-and-revelation",
+          "side": "pro",
+          "speaker": "William Lane Craig",
+          "moveKind": "reply",
+          "proposition": "Disagreement about applied morality concerns epistemic access rather than moral ontology, while objective values and duties require a transcendent ground beyond organisms, culture, and opinion.",
+          "sourceSpan": {
+            "startEvent": 2925,
+            "endEvent": 2955,
+            "excerpt": "applied ethics. What I'm offering to him is a sound foundation for the moral values and duties that we both hold dear and recognize. So any disagreement about the perception of moral values is an epistemological question, not an ontological question. My my argument is that on atheism, human beings are just animals. They're electrochemical machines. They don't even have free will. And therefore, there is no objective"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The final audience question is expressly directed to Craig, and the answer restates his first-speech distinction and supernatural foundation argument.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-ontology-epistemology"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-competing-revelation-symmetry",
+              "con-honest-inquiry-over-sectarian-revelation",
+              "con-evil-command-independent-judgment"
+            ],
+            "components": [
+              {
+                "componentId": "pro-epistemic-ontological-disagreement-distinction-component-01",
+                "targetMoveId": "con-competing-revelation-symmetry",
+                "text": "Explain why disagreement and unreliable sectarian access do not by themselves defeat the existence or supernatural ground of objective moral facts.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-epistemic-ontological-disagreement-distinction-component-02",
+                "targetMoveId": "con-honest-inquiry-over-sectarian-revelation",
+                "text": "Address whether shared honest inquiry is epistemically preferable to competing revelation claims.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-epistemic-ontological-disagreement-distinction-component-03",
+                "targetMoveId": "con-evil-command-independent-judgment",
+                "text": "Explain how applied moral judgment relates to the asserted divine ontological foundation.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Craig directly separates disagreement about perception and application from ontology, answering the inference from disagreement to nongrounding, but he does not answer the comparative reliability of inquiry and revelation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The epistemic-ontological distinction is clear, but the added claim that atheistic humans are merely machines compresses several disputed implications."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Disagreement plainly does not entail nonexistence, but the further conclusion that objective value therefore requires transcendence is not established by that distinction."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The revelation objection may target reliable access and public justification rather than purport to disprove moral ontology directly.",
+            "decisiveQualification": "Even so, epistemic disagreement does not by itself show that objective moral facts or a supernatural ground do not exist."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly and strongly supports the subsidiary ontology-epistemology bridge, but does not itself complete the motion route."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "Craig accurately isolates the ontological non sequitur while leaving the strongest independent epistemic objection available."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "Within partial answers, it contacts the decisive ontology-versus-disagreement component while leaving the methodological reliability component unresolved."
+            }
+          },
+          "evidenceBasis": "Craig says disagreement about perceiving applied values is epistemological, whereas his proposal concerns their ontological foundation.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured pro bridge-completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "Any cumulative pro consequence duplicates assessed grounding, duty, or epistemology moves.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not change any burden's completion beyond effects already assessed."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured con bridge-completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "Any cumulative con consequence duplicates assessed well-being, inquiry, harm, or revelation moves.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not change any burden's completion beyond effects already assessed."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "foundations-of-objective-value",
+          "title": "The Ontological Ground of Objective Moral Value",
+          "weightPercent": 25,
+          "sides": {
+            "pro": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "pro-objective-morality-foundation-thesis",
+                  "importance": 3,
+                  "score": 85
+                },
+                {
+                  "moveId": "pro-evolutionary-morality-grounding-deficit",
+                  "importance": 3,
+                  "score": 72
+                }
+              ]
+            },
+            "con": {
+              "score": 87,
+              "moves": [
+                {
+                  "moveId": "con-consciousness-condition-for-value",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-worst-misery-objective-standard",
+                  "importance": 3,
+                  "score": 85
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "wellbeing-objectivity-and-inquiry",
+          "title": "Well-Being, Moral Objectivity, and Scientific Inquiry",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 83,
+              "moves": [
+                {
+                  "moveId": "pro-wellbeing-definition-circularity",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "pro-wellbeing-goodness-modal-distinction",
+                  "importance": 3,
+                  "score": 85
+                }
+              ]
+            },
+            "con": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "con-natural-science-of-wellbeing",
+                  "importance": 3,
+                  "score": 80
+                },
+                {
+                  "moveId": "con-science-presupposes-epistemic-values",
+                  "importance": 2,
+                  "score": 78
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "ground-of-moral-duty",
+          "title": "From Facts to Objective Duties and Responsibility",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 73,
+              "moves": [
+                {
+                  "moveId": "pro-facts-authority-and-objective-duty",
+                  "importance": 3,
+                  "score": 74
+                },
+                {
+                  "moveId": "pro-free-will-responsibility-objection",
+                  "importance": 2,
+                  "score": 71
+                }
+              ]
+            },
+            "con": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "con-objectively-defective-values",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "con-harm-versus-authority-rules",
+                  "importance": 3,
+                  "score": 76
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "divine-goodness-and-command",
+          "title": "Divine Goodness, Command, and Nonarbitrariness",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 83,
+              "moves": [
+                {
+                  "moveId": "pro-divine-nature-and-command-account",
+                  "importance": 3,
+                  "score": 84
+                },
+                {
+                  "moveId": "pro-essential-divine-goodness",
+                  "importance": 3,
+                  "score": 82
+                }
+              ]
+            },
+            "con": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "con-divine-goodness-definitional-asymmetry",
+                  "importance": 3,
+                  "score": 84
+                },
+                {
+                  "moveId": "con-evil-command-independent-judgment",
+                  "importance": 3,
+                  "score": 73
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "moral-knowledge-and-revelation",
+          "title": "Moral Ontology, Knowledge, Disagreement, and Revelation",
+          "weightPercent": 13,
+          "sides": {
+            "pro": {
+              "score": 74,
+              "moves": [
+                {
+                  "moveId": "pro-moral-semantics-ontology-distinction",
+                  "importance": 2,
+                  "score": 73
+                },
+                {
+                  "moveId": "pro-epistemic-ontological-disagreement-distinction",
+                  "importance": 2,
+                  "score": 75
+                }
+              ]
+            },
+            "con": {
+              "score": 67,
+              "moves": [
+                {
+                  "moveId": "con-competing-revelation-symmetry",
+                  "importance": 2,
+                  "score": 68
+                },
+                {
+                  "moveId": "con-honest-inquiry-over-sectarian-revelation",
+                  "importance": 2,
+                  "score": 66
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 78.63,
+          "burdenCompletionAdjustment": 0,
+          "score": 79
+        },
+        "con": {
+          "weightedSectionMean": 79,
+          "burdenCompletionAdjustment": 0,
+          "score": 79
+        }
+      },
+      "winner": "tie",
+      "winningMargin": 0
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 20,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "syntheticReferences": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 114972,
+  "proposedAdapterSha256": "7c24813c56e312e9a8597b338e0fd6f35f7908ebef1d264a2824c769f015d5ad",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "10",
+    "sections": 5,
+    "moves": 20,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-checkpoint-v2.2-1-single-deterministic-score-pass",
+    "adapterSha256": "7c24813c56e312e9a8597b338e0fd6f35f7908ebef1d264a2824c769f015d5ad",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityRemedyExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-compatibility-remedy-preparation-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-compatibility-remedy",
+  "status": "compatibility-remedy-plan-freeze-passed",
+  "productionCanary": true,
+  "planningOnly": true,
+  "preparation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/compatibility-remedy/preparation-manifest.json",
+    "sha256": "911f98f483059504c65c22a7d205735b7eb4afcc7d9165384c5395840792faea"
+  },
+  "findings": [
+    {
+      "id": "optional-overall-reference-links",
+      "remedyDefined": true,
+      "executed": false
+    },
+    {
+      "id": "checkpoint-ledger-schema-adapter",
+      "remedyDefined": true,
+      "executed": false
+    }
+  ],
+  "checks": {
+    "finalLedgerReplayPassed": true,
+    "repositoryScoreReplaysPassed": 10,
+    "candidateCompatibilityChecksPassed": 10,
+    "exactAdapterOutputsFrozen": 10,
+    "activeValidatorChanged": false,
+    "stagingLedgersWritten": 0,
+    "productionLedgersWritten": 0,
+    "productionDebatesChanged": false,
+    "productionMutationPerformed": false
+  },
+  "totals": {
+    "debates": 10,
+    "planPackets": 10,
+    "sections": 51,
+    "moves": 188,
+    "overallBlunders": 56,
+    "emptyReferenceLinks": 53,
+    "suppliedReferenceLinks": 3,
+    "proposedAdapterBytes": 1112019,
+    "repositoryScoreReplays": 10,
+    "modelContexts": 0,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "syntheticReferences": 0,
+    "meteredApiCostUsd": 0,
+    "productionMutations": 0
+  },
+  "authorization": {
+    "compatibilityRemedyPlanPreparation": true,
+    "compatibilityRemedyExecutionActivation": true,
+    "compatibilityRemedyExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "separateExecutionActivationRequired": true,
+    "sourceHashMismatchBlocks": true,
+    "adapterHashMismatchBlocks": true,
+    "unexpectedWriteBlocks": true,
+    "testFailureBlocks": true,
+    "suppliedReferenceValidationWeakeningForbidden": true,
+    "syntheticReferenceForbidden": true,
+    "rubricRelabelingForbidden": true,
+    "modelRelabelingForbidden": true,
+    "scoreProtocolRelabelingForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseChangeForbidden": true,
+    "scoreRerunForbidden": true,
+    "productionMutationForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "user-decision-on-compatibility-remedy-execution-activation"
+}
