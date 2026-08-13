@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-publication-finalization-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-publication-finalization",
+  "status": "ten-debate-publication-finalization-passed",
+  "productionCanary": true,
+  "stagingOnly": true,
+  "gate": {
+    "sourceHashesPassed": true,
+    "explicitOrderPassed": true,
+    "finalCandidatesPassed": 10,
+    "expectedFinalCandidates": 10,
+    "moves": 188,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "modelAuthoredScores": 0,
+    "directCostUsd": 0
+  },
+  "compatibilityBoundary": {
+    "stagingFinalizationPermitted": true,
+    "renderingVerificationPermittedAfterFinalizationPasses": true,
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "blockers": [
+      "optional-overall-reference-links",
+      "checkpoint-ledger-schema-adapter"
+    ]
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "preparation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/preparation-manifest.json",
+    "compatibilityAnalysis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/compatibility-analysis.json",
+    "activation": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/execution-activation.json",
+    "execution": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/execution.json",
+    "analysis": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/analysis.json",
+    "outputBundle": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle",
+    "finalizationAudit": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/finalization-audit.json",
+    "finalCandidates": [
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-50.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-192.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-129.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-40.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-25.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-104.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-22.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-10.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-167.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/final-candidates/debate-122.json"
+    ],
+    "provenance": [
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-50.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-192.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-129.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-40.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-25.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-104.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-22.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-10.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-167.json",
+      "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/provenance/debate-122.json"
+    ],
+    "preview": "docs/assessment-production/production-checkpoint-v2.2-1/publication-finalization/output-bundle/previews/index.html"
+  },
+  "authorization": {
+    "renderingVerificationPlanPreparation": true,
+    "renderingVerification": false,
+    "compatibilityRemedyPlanPreparation": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "nextAuthorizedAction": "user-decision-on-rendering-verification-plan-preparation"
+}
