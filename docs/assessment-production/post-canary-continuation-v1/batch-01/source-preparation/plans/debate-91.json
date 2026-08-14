@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2666,
+  "ledgerBytes": 153959,
+  "ledgerSha256": "2c6a7ef4340501c71db4629f2519b65878ab32fb3830428b2360f68210ef8b78",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51030,
+      "contextSha256": "df13f4cfc4cfa803c5306e43ba7c186c6d4817b0141b29aec31c424a95516432"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52438,
+      "contextSha256": "7bdfa0f21bbecbad2d6a8d1d43b5567ca8d441e45610053da692101e285290ad"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52350,
+      "contextSha256": "8a5c7d100f65e7e90917ae628691296a13c470f303e5a78f7dbbbd298218b04f"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2665,
+      "coreEvents": 166,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2665,
+      "contextEvents": 206,
+      "contextBytes": 12067,
+      "contextSha256": "c6452981744908eb165ceacdee88e027f0c956a4e4a4b386307f5acb8577a879"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2665,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "91",
+  "debateId": "cutter-oppy-mind-brain-harmony-god-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

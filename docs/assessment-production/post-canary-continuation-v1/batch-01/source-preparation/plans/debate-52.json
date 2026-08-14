@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3770,
+  "ledgerBytes": 217384,
+  "ledgerSha256": "66d7cb3267ff896b1c77525f29947bf4d5597492044dbccb9cc0b5305118fff4",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51898,
+      "contextSha256": "33bad4827c64937adcda05969f9214d5aef443e06d9d24cde835dcd5605b3790"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51208,
+      "contextSha256": "d3f5b529af94f2f5b62815d9b100acaef5a6cdc4c202117ca362b00f9a1f1ca7"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51351,
+      "contextSha256": "dfffbddcfa64e110d469e57ef3e39529e8c8089c777c93324bfe3343e72aa2d9"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52713,
+      "contextSha256": "c3014a8c45df480a6f7e4e126803fd2fc60e76c68f6ef44193b0cbeb79969789"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3769,
+      "coreEvents": 450,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3769,
+      "contextEvents": 490,
+      "contextBytes": 28723,
+      "contextSha256": "f5c47d4c0c357201d7fd8710a26ce67228a87b571cadc99d7025da297d5a7d50"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3769,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "52",
+  "debateId": "horn-dillahunty-resurrection-reasonable-2021",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

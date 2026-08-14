@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2602,
+  "ledgerBytes": 153317,
+  "ledgerSha256": "3d6a6c871f78d798fd4c93d7763a4302d50124d2ded7d16c49aa34e3e2358cea",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52145,
+      "contextSha256": "bd512a17fcec0b9bd448f7ac4fc2b8e9bc143b8b0fdb5d4b03f88aa6beae625d"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53436,
+      "contextSha256": "3bb147e06038302a69c058b9b38ba3959dc839d13ae37a6eee2963b56bd6d30a"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53590,
+      "contextSha256": "1fe9bedd1227dff9724974251c045a9cff1825376e80553c0ea5ab9de12ebed9"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2601,
+      "coreEvents": 102,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2601,
+      "contextEvents": 142,
+      "contextBytes": 8316,
+      "contextSha256": "f94694b58081e5efaec1134ea3ff9d4ff4a39f7b3a8896f029b80dfa10c25122"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2601,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "72",
+  "debateId": "dyer-malpass-tag-argument-2019",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

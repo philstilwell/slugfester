@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-source-preparation",
+  "debateNumber": "91",
+  "debateId": "cutter-oppy-mind-brain-harmony-god-2025",
+  "motion": "Does psychophysical harmony, the apparent fit between conscious states and physical or functional states, provide evidence for God over naturalism?",
+  "sides": {
+    "pro": {
+      "label": "Harmony theism",
+      "speakers": [
+        "Brian Cutter"
+      ]
+    },
+    "con": {
+      "label": "Identity naturalism",
+      "speakers": [
+        "Graham Oppy"
+      ]
+    }
+  },
+  "durationSeconds": 6671,
+  "eventCount": 2666,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/dmTLjiGWgpE/transcript.txt",
+    "transcriptSha256": "d949da4d5ef249c511f05b67d8bd03ae170d65edccc22c2d0ece8605b03a34c7",
+    "eventsPath": ".assessment-cache/captions/dmTLjiGWgpE/events.json",
+    "eventsSha256": "7462321020aec881023b6e893e6ed863a9040b84ee4b559a8909fe51e29790c3",
+    "localManifestPath": ".assessment-cache/captions/dmTLjiGWgpE/manifest.json",
+    "localManifestSha256": "f0925522eaba2c6cfda0cd65e767b2ce07e6ff60fa98f8a899f0db9d0074fc5a"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-01/debate-91.jsonl",
+    "sourceLedgerSha256": "2c6a7ef4340501c71db4629f2519b65878ab32fb3830428b2360f68210ef8b78",
+    "sourceLedgerBytes": 153959,
+    "sourceLedgerEventCount": 2666,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/source-preparation/plans/debate-91.json",
+    "partitionPlanSha256": "04dbc16bf10867b3e39786d605ee5251cbe0c6996365b063b7fd91a43341706c",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

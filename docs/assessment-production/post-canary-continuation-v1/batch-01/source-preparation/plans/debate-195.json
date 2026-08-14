@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1420,
+  "ledgerBytes": 79168,
+  "ledgerSha256": "533cb778a2852ba58a3f0c15eb525d7bb44213b703650c02b6ea1e3f225f6976",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49357,
+      "contextSha256": "ef667ad0af0f643845e7c685fbbef2c08d73e7dd6870906bcd18a51efebbd2da"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1419,
+      "coreEvents": 560,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1419,
+      "contextEvents": 600,
+      "contextBytes": 34332,
+      "contextSha256": "787111bb6feee601f9725361a75f859bb7e4b3f619f5aa8c95bf3aaaec9c83b2"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1419,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "195",
+  "debateId": "russell-copleston-existence-of-god-1948",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

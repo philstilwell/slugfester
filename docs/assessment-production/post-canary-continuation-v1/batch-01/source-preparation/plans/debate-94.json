@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1196,
+  "ledgerBytes": 67231,
+  "ledgerSha256": "22ef15c2baaf01c8071fc4302a2f9aa23ef7a445c39f96c6ef414b21cabb5477",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50853,
+      "contextSha256": "c413fdb523a41c2737b61982deb044c3ef44caa721d1fef451fc14873c12fee5"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1195,
+      "coreEvents": 336,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1195,
+      "contextEvents": 376,
+      "contextBytes": 20902,
+      "contextSha256": "91eb9f2eb21da41f9da6b75297c9f5cdce0950771a23cc8e0a1736f99f206c00"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1195,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "94",
+  "debateId": "swinburne-huemer-theism-coherent-2026",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

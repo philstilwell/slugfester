@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 926,
+  "ledgerBytes": 71903,
+  "ledgerSha256": "74fe7fa644cfb35ea223e14eddf9b6af99c2fbfecf5f73314a5372e089d046b4",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 69831,
+      "contextSha256": "bdf99244bec67547a3c6c2817616354517c2cdf075d91ee70c9855c7b74dafa9"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 925,
+      "coreEvents": 66,
+      "contextStartEvent": 820,
+      "contextEndEvent": 925,
+      "contextEvents": 106,
+      "contextBytes": 7786,
+      "contextSha256": "4e900238d0d7acdb48060550a1fe4d23524f4fdd511c88bdd37d6310935795c1"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 925,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "13",
+  "debateId": "knechtle-oconnor-christian-morality-2025",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2274,
+  "ledgerBytes": 114167,
+  "ledgerSha256": "f0f969e62c525410753a35ce91e9ea86e067e72078fc25993292baf6b00893bc",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 45593,
+      "contextSha256": "e52e9ceb916c16a838d97595867652aab49a0da2378c8c32bda01f4aaf35d844"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 44586,
+      "contextSha256": "ff0e5b4477d66306f2a9b8cc6eb5149c8e7669eacc4243f4ceeae938fc1e5328"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2273,
+      "coreEvents": 594,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2273,
+      "contextEvents": 634,
+      "contextBytes": 31766,
+      "contextSha256": "32f19621ca2ffc020d96bcef44df356c370dab59586980ce41e372b5a3983cdd"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2273,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "175",
+  "debateId": "oppy-pearce-is-there-a-god-2022",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
