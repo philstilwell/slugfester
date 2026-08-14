@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-two-debate-source-normalization-repair-analysis",
+  "protocolId": "assessment-production-post-canary-source-normalization-repair-v1",
+  "status": "two-debate-zero-duration-source-repair-plan-analysis-passed-awaiting-activation-decision",
+  "analyzedAt": "2026-08-14T01:54:13Z",
+  "repairPlan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/source-normalization-repair/repair-plan.json",
+    "bytes": 13819,
+    "sha256": "060591e3bf187e494f043e93b259d263d5881ca49e32fb0eaf0cbd1a534d00e2",
+    "status": "two-debate-zero-duration-derived-event-repair-plan-frozen-awaiting-execution-activation-decision"
+  },
+  "finding": "Debates 88 and 127 each contain exactly one nonempty raw caption paragraph with no duration attribute. The acquisition parser deterministically converted the absent duration to zero, producing the only structurally invalid event in each source chain. In both debates, the row's complete word sequence is duplicated within the two neighboring rows on each side.",
+  "remedy": "Remove only the two zero-duration derived events and their corresponding transcript lines, update only four derived local-manifest fields per debate, preserve both raw caption files and the frozen production manifest, and require one separately activated atomic attempt with rollback on any mismatch.",
+  "decision": {
+    "diagnosisPassed": true,
+    "exactProjectionPassed": true,
+    "uniqueSemanticContentLossProjected": false,
+    "sourceRepairPlanFrozen": true,
+    "sourceRepairExecutionAuthorized": false,
+    "batchSelectionAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "productionMutationAuthorized": false
+  },
+  "modelBoundary": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlindnessPreserved": true,
+    "modelContexts": 0,
+    "scorePasses": 0,
+    "publicationContexts": 0,
+    "meteredApiCostUsd": 0
+  },
+  "nextAuthorizedAction": "user-decision-on-two-debate-source-normalization-repair-execution-activation-preparation"
+}

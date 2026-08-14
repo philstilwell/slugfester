@@ -1,0 +1,302 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-two-debate-source-normalization-repair-plan",
+  "protocolId": "assessment-production-post-canary-source-normalization-repair-v1",
+  "status": "two-debate-zero-duration-derived-event-repair-plan-frozen-awaiting-execution-activation-decision",
+  "preparedAt": "2026-08-14T01:54:13Z",
+  "checkpointCommit": "eefacf59f7e735c7b2c1dce25c508effa9572957",
+  "planningOnly": true,
+  "userAuthorization": {
+    "instruction": "Proceed with the next task at your discretion.",
+    "scopeInterpretation": "Prepare and freeze only the bounded model-free repair plan identified by the committed continuation audit; do not mutate the ignored source chain, create repair records, select a batch, execute models, derive scores, reconstruct publication prose, or mutate production.",
+    "directIncrementalCostEstimateUsd": 0
+  },
+  "targets": [
+    {
+      "debateNumber": "88",
+      "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+      "videoId": "FUPOouj5jNg",
+      "diagnosis": {
+        "sourceFilesAndRecordedHashesMatchedBeforeCanonicalValidation": true,
+        "zeroDurationDerivedEvents": 1,
+        "otherStructuralEventDefects": 0,
+        "normalizedEventIndex": 807,
+        "transcriptLineNumber": 808,
+        "removedDerivedEvent": {
+          "startMs": 1564960,
+          "durationMs": 0,
+          "text": "story short story short story short"
+        },
+        "removedTranscriptLine": "[26:04] story short story short story short",
+        "rawCaptionParagraph": {
+          "byteOffset": 210636,
+          "attributes": {
+            "t": "1564960",
+            "w": "1"
+          },
+          "raw": "<p t=\"1564960\" w=\"1\"><s ac=\"0\">story short story short story short</s></p>",
+          "durationAttributePresent": false
+        },
+        "rawNonemptyParagraphsMissingDuration": 1,
+        "neighboringDuplicateEvidence": {
+          "radiusEventsEachSide": 2,
+          "exactSubstringPresent": true,
+          "lexicalRecall": 1,
+          "orderedTokenCoverage": 1,
+          "uniqueSemanticContentRemoved": false
+        }
+      },
+      "repair": {
+        "removeOnlyNormalizedEventIndex": 807,
+        "removeOnlyTranscriptLineNumber": 808,
+        "preserveEveryOtherEventValueAndOrder": true,
+        "preserveEveryOtherTranscriptLineValueAndOrder": true,
+        "updateLocalManifestFieldsOnly": [
+          "normalizedEventsSha256",
+          "transcriptSha256",
+          "eventCount",
+          "wordCount"
+        ],
+        "rawCaptionMutationAllowed": false,
+        "frozenProductionManifestMutationAllowed": false
+      },
+      "projected": {
+        "events": {
+          "path": ".assessment-cache/captions/FUPOouj5jNg/events.json",
+          "beforeBytes": 295877,
+          "beforeSha256": "ff485c97996037ea9d003d987d9745f6e743af6939100d9152ace86945d0238b",
+          "beforeCount": 2751,
+          "afterBytes": 295773,
+          "afterSha256": "998bad52a6fe00822673555b15ed2eef3a46bdcbfa9378a384b2febf5f5a8d3f",
+          "afterCount": 2750
+        },
+        "transcript": {
+          "path": ".assessment-cache/captions/FUPOouj5jNg/transcript.txt",
+          "beforeBytes": 124966,
+          "beforeSha256": "2d9dc130c0bf75a7ea23f692804b45c1c7ec32e388b3fb29694c9aad55dd68d7",
+          "beforeLineCount": 2751,
+          "afterBytes": 124922,
+          "afterSha256": "a5be58d0749c2b8a88f113c19c59c66879e936e8ce7b25aa63aac9f5767e4e99",
+          "afterLineCount": 2750
+        },
+        "localManifest": {
+          "path": ".assessment-cache/captions/FUPOouj5jNg/manifest.json",
+          "beforeBytes": 1021,
+          "beforeSha256": "72d5db7fe0eefc55b672698c0d718eaa988805ce7418860f0e4f2805671b4f84",
+          "afterBytes": 1021,
+          "afterSha256": "d304251f5a38c91862a4e58560388e7223aaa0cd9cc121b4d629d30c34760bd0",
+          "beforeEventCount": 2751,
+          "afterEventCount": 2750,
+          "beforeWordCount": 21503,
+          "afterWordCount": 21496
+        },
+        "rawCaption": {
+          "path": ".assessment-cache/captions/FUPOouj5jNg/captions.srv3.xml",
+          "beforeAndAfterBytes": 709749,
+          "beforeAndAfterSha256": "0cd3b4e60f63cafeda10a1fa4c7b2762e78a2df5a5eb7050520d83a5158e0076"
+        }
+      }
+    },
+    {
+      "debateNumber": "127",
+      "debateId": "slick-clifton-objective-morality-god-2014",
+      "videoId": "uJeKS705aXs",
+      "diagnosis": {
+        "sourceFilesAndRecordedHashesMatchedBeforeCanonicalValidation": true,
+        "zeroDurationDerivedEvents": 1,
+        "otherStructuralEventDefects": 0,
+        "normalizedEventIndex": 2017,
+        "transcriptLineNumber": 2018,
+        "removedDerivedEvent": {
+          "startMs": 4645360,
+          "durationMs": 0,
+          "text": "answer ask answer ask answer ask answer"
+        },
+        "removedTranscriptLine": "[1:17:25] answer ask answer ask answer ask answer",
+        "rawCaptionParagraph": {
+          "byteOffset": 537840,
+          "attributes": {
+            "t": "4645360",
+            "w": "1"
+          },
+          "raw": "<p t=\"4645360\" w=\"1\"><s ac=\"0\">answer ask answer ask answer ask answer</s></p>",
+          "durationAttributePresent": false
+        },
+        "rawNonemptyParagraphsMissingDuration": 1,
+        "neighboringDuplicateEvidence": {
+          "radiusEventsEachSide": 2,
+          "exactSubstringPresent": true,
+          "lexicalRecall": 1,
+          "orderedTokenCoverage": 1,
+          "uniqueSemanticContentRemoved": false
+        }
+      },
+      "repair": {
+        "removeOnlyNormalizedEventIndex": 2017,
+        "removeOnlyTranscriptLineNumber": 2018,
+        "preserveEveryOtherEventValueAndOrder": true,
+        "preserveEveryOtherTranscriptLineValueAndOrder": true,
+        "updateLocalManifestFieldsOnly": [
+          "normalizedEventsSha256",
+          "transcriptSha256",
+          "eventCount",
+          "wordCount"
+        ],
+        "rawCaptionMutationAllowed": false,
+        "frozenProductionManifestMutationAllowed": false
+      },
+      "projected": {
+        "events": {
+          "path": ".assessment-cache/captions/uJeKS705aXs/events.json",
+          "beforeBytes": 307077,
+          "beforeSha256": "a713e5afaafdb3d0377fa3cf150e764eb26dfd0ecf7df76839d80f1f36b4706d",
+          "beforeCount": 2836,
+          "afterBytes": 306969,
+          "afterSha256": "306e4aff21ab145306620fee69627346315c2424dfbd407a61073636052466c8",
+          "afterCount": 2835
+        },
+        "transcript": {
+          "path": ".assessment-cache/captions/uJeKS705aXs/transcript.txt",
+          "beforeBytes": 131366,
+          "beforeSha256": "3c6fc4b8df96ec5d56d7521c2896fcfec35b3b3fdcf35fc90cad8a5256b8ab9e",
+          "beforeLineCount": 2836,
+          "afterBytes": 131316,
+          "afterSha256": "cc36cf5a24922e2f24e360f2e5d27e24b104c182f13a45feaa122f3cbc32faa5",
+          "afterLineCount": 2835
+        },
+        "localManifest": {
+          "path": ".assessment-cache/captions/uJeKS705aXs/manifest.json",
+          "beforeBytes": 966,
+          "beforeSha256": "f2554084f686e34cda105fbb22e5afab91286019a4db68ec8181e26aa9eb5d1e",
+          "afterBytes": 966,
+          "afterSha256": "f967bc9295efae637419c45f2853e02b81097a33f71af8c28eba7f56ea823f15",
+          "beforeEventCount": 2836,
+          "afterEventCount": 2835,
+          "beforeWordCount": 23014,
+          "afterWordCount": 23006
+        },
+        "rawCaption": {
+          "path": ".assessment-cache/captions/uJeKS705aXs/captions.srv3.xml",
+          "beforeAndAfterBytes": 755345,
+          "beforeAndAfterSha256": "1e71a389b0cafeeeefdb4c740f57c1f8dabd684d09e2d706a61a09c0d13d0215"
+        }
+      }
+    }
+  ],
+  "atomicExecutionContract": {
+    "targets": 2,
+    "attemptsMaximumAfterSeparateActivation": 1,
+    "automaticRetryAllowed": false,
+    "allOrNothing": true,
+    "exactMutableIgnoredPaths": [
+      ".assessment-cache/captions/FUPOouj5jNg/events.json",
+      ".assessment-cache/captions/FUPOouj5jNg/transcript.txt",
+      ".assessment-cache/captions/FUPOouj5jNg/manifest.json",
+      ".assessment-cache/captions/uJeKS705aXs/events.json",
+      ".assessment-cache/captions/uJeKS705aXs/transcript.txt",
+      ".assessment-cache/captions/uJeKS705aXs/manifest.json"
+    ],
+    "exactMutableIgnoredPathCount": 6,
+    "rawCaptionPathsMutable": false,
+    "committedRepairRecordsRequiredAfterSuccessfulExecution": 2,
+    "repairRecordsMayBeWrittenOnlyAfterAllSixProjectedHashesAndAllValidatorsPass": true,
+    "rollbackBothTargetsOnAnyMismatch": true,
+    "originalProductionManifestMutable": false,
+    "globalAcquisitionParserMutable": false
+  },
+  "requiredPostRepairValidation": {
+    "exactProjectedHashes": true,
+    "canonicalEventValidationBothDebates": true,
+    "transcriptLineCountEqualsEventCountBothDebates": true,
+    "localManifestHashChainBothDebates": true,
+    "localManifestWordCountBothDebates": true,
+    "everyNonTargetEventAndTranscriptLinePreserved": true,
+    "rawCaptionHashesUnchanged": true,
+    "frozenProductionManifestHashUnchanged": true,
+    "continuationArtifactsUnchanged": true,
+    "completeCorpusTranscriptValidator": "node scripts/validate-corpus-transcripts.mjs",
+    "completeRepositoryCheck": "npm run check"
+  },
+  "modelBoundary": {
+    "preservedAssessmentModel": "5.6 Sol",
+    "preservedReasoningEffort": "low",
+    "preservedAuthentication": "ChatGPT subscription",
+    "participantJudgmentMustRemainScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "modelContexts": 0,
+    "judgmentExecution": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "stopRules": {
+    "executionBeforeSeparateCommittedActivationBlocks": true,
+    "anyFrozenSourceHashMismatchBlocks": true,
+    "anyAdditionalInvalidEventBlocks": true,
+    "anyUniqueSemanticContentLossBlocks": true,
+    "anyProjectedHashMismatchBlocks": true,
+    "anyRawCaptionMutationBlocks": true,
+    "anyProductionManifestMutationBlocks": true,
+    "anyNonTargetRowMutationBlocks": true,
+    "anyGlobalParserMutationBlocks": true,
+    "anyValidatorFailureRequiresAtomicRollback": true,
+    "automaticRetryBlocks": true,
+    "batchSelectionBlocks": true,
+    "modelExecutionBlocks": true,
+    "scoreDerivationBlocks": true,
+    "publicationReconstructionBlocks": true,
+    "productionMutationBlocks": true,
+    "remainingProductionBatchExecutionBlocks": true,
+    "paidServiceUseBlocks": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/preparation-manifest.json": "824970b06949066b7e0200b1403c0120f03eaa395acd38efd961a29dfee52d60",
+    "docs/assessment-production/post-canary-continuation-v1/analysis.json": "2e4b185fefa55a9afd60439817cf1278f8ce4dd439630d51c3cf3174f7ed8889",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "scripts/lib/v418-source-integrity.mjs": "ff0593a316fcd06f1662b0f9c9864bdd4c2a867a718638a79cac8b9f27eac205",
+    "scripts/acquire-youtube-captions.mjs": "d01c3f905526ffb694296891fb9eb738ed1bfe1877c1e08090f5f536a641cfcb",
+    "scripts/prepare-assessment-production-post-canary-source-normalization-repair-v1.mjs": "35649be79c3c21f2ff5fc73a69ad9038309f016d031e370ba977e49255a405c0",
+    "scripts/test-assessment-production-post-canary-source-normalization-repair-v1.mjs": "960d33a54b693be7fa51b00d9313eee2e05cd67c71c4bd0756a072e461eb4d3c",
+    ".assessment-cache/captions/FUPOouj5jNg/captions.srv3.xml": "0cd3b4e60f63cafeda10a1fa4c7b2762e78a2df5a5eb7050520d83a5158e0076",
+    ".assessment-cache/captions/FUPOouj5jNg/events.json": "ff485c97996037ea9d003d987d9745f6e743af6939100d9152ace86945d0238b",
+    ".assessment-cache/captions/FUPOouj5jNg/transcript.txt": "2d9dc130c0bf75a7ea23f692804b45c1c7ec32e388b3fb29694c9aad55dd68d7",
+    ".assessment-cache/captions/FUPOouj5jNg/manifest.json": "72d5db7fe0eefc55b672698c0d718eaa988805ce7418860f0e4f2805671b4f84",
+    ".assessment-cache/captions/uJeKS705aXs/captions.srv3.xml": "1e71a389b0cafeeeefdb4c740f57c1f8dabd684d09e2d706a61a09c0d13d0215",
+    ".assessment-cache/captions/uJeKS705aXs/events.json": "a713e5afaafdb3d0377fa3cf150e764eb26dfd0ecf7df76839d80f1f36b4706d",
+    ".assessment-cache/captions/uJeKS705aXs/transcript.txt": "3c6fc4b8df96ec5d56d7521c2896fcfec35b3b3fdcf35fc90cad8a5256b8ab9e",
+    ".assessment-cache/captions/uJeKS705aXs/manifest.json": "f2554084f686e34cda105fbb22e5afab91286019a4db68ec8181e26aa9eb5d1e"
+  },
+  "totals": {
+    "targetDebates": 2,
+    "zeroDurationEvents": 2,
+    "otherStructuralEventDefects": 0,
+    "uniqueSemanticContentRowsRemoved": 0,
+    "projectedIgnoredPathMutations": 6,
+    "executedIgnoredPathMutations": 0,
+    "batchesSelected": 0,
+    "modelContexts": 0,
+    "scorePasses": 0,
+    "publicationContexts": 0,
+    "productionMutations": 0,
+    "paidServiceCalls": 0,
+    "meteredApiCostUsd": 0
+  },
+  "authorization": {
+    "repairExecutionActivationPreparation": false,
+    "repairExecution": false,
+    "sourceMutation": false,
+    "repairRecordWrite": false,
+    "continuationSelectionPolicyPreparation": false,
+    "batchSelection": false,
+    "modelExecution": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "remainingProductionBatches": false
+  },
+  "futureArtifacts": {
+    "executionActivation": "docs/assessment-production/post-canary-continuation-v1/source-normalization-repair/execution-activation.json",
+    "executionAudit": "docs/assessment-production/post-canary-continuation-v1/source-normalization-repair/execution.json"
+  },
+  "nextAuthorizedAction": "user-decision-on-two-debate-source-normalization-repair-execution-activation-preparation"
+}
