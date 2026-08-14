@@ -1,0 +1,263 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-dependent-pilot-analysis-remedy",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-dependent-pilot-analysis-remedy",
+  "status": "production-mutation-dependent-pilot-analysis-remedy-packet-frozen",
+  "preparedAt": "2026-08-14T00:11:20Z",
+  "checkpointCommit": "e93480cf3c80c3d83826374fa7d40dec8c2f863c",
+  "branch": "main",
+  "productionCanary": true,
+  "planningOnly": true,
+  "authorization": {
+    "instruction": "Proceed at your own discretion.",
+    "scopeInterpretation": "Authorize preparation and freezing of the deterministic dependent-output expansion plan, including an isolated full-repository preview, without authorizing another production mutation attempt.",
+    "directIncrementalCostEstimateUsd": 0,
+    "planPreparationAuthorized": true,
+    "isolatedPreviewAuthorized": true,
+    "replacementExecutionActivationAuthorized": false,
+    "productionMutationRetryAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "productionDebatesChangeAuthorized": false,
+    "generatedSeoPublicationAuthorized": false,
+    "dependentPilotAnalysisPublicationAuthorized": false,
+    "remainingProductionBatchesAuthorized": false
+  },
+  "cause": {
+    "category": "deterministic-dependent-output-inventory-omission",
+    "plainEnglish": "The production candidate for Debate 104 changes the first published exchange used by the legacy v2.1 calibration comparison. The two generated pilot-analysis reports must therefore be regenerated in the same atomic production change.",
+    "generator": {
+      "path": "scripts/analyze-v2.1-pilot.mjs",
+      "bytes": 14336,
+      "sha256": "29160d4604db901f08a17cc008690d4fe7ef63d1583cae5a0c0cbcc7c1d7991b",
+      "writeCommand": "node scripts/analyze-v2.1-pilot.mjs",
+      "checkCommand": "node scripts/analyze-v2.1-pilot.mjs --check"
+    },
+    "productionDependency": {
+      "debateNumber": "104",
+      "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+      "source": "the first production exchange imported from src/data/debates.js",
+      "priorBenchmark": {
+        "pro": 78,
+        "con": 80
+      },
+      "projectedBenchmark": {
+        "pro": 77,
+        "con": 82
+      }
+    }
+  },
+  "immutablePriorLocks": {
+    "mutationPacket": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/mutation-packet.json",
+      "bytes": 33708,
+      "sha256": "d91da8004d921b6c5dd4a0cd720a8d8a28fd007c29a4dd6390ef67245640ed18"
+    },
+    "originalPreparationManifest": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/preparation-manifest.json",
+      "bytes": 16952,
+      "sha256": "65468126a7960752dd8327987bedcb576b2223a9168c18f7b7b87a9b435c2fd0"
+    },
+    "failedReplacementExecution": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/execution.json",
+      "bytes": 9994,
+      "sha256": "d61da65d341d3766633371e54fbc3a992f7dc9b921502e270b8c15f6f3f9e761"
+    },
+    "failedReplacementAnalysis": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/analysis.json",
+      "bytes": 6262,
+      "sha256": "f4203f34eb4109c32716e3d1e3537e27925ae450a21d41f7c012dc1f7348e542"
+    },
+    "correctedStatusParser": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/status-parser.mjs",
+      "bytes": 2137,
+      "sha256": "76f2dcaaac7a489619879f69c9569b2d350fcf8c7f958a6d8f436d39bda97689"
+    },
+    "correctedStatusParserRegression": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/test-status-parser.mjs",
+      "bytes": 3874,
+      "sha256": "0ec213d360869d80dfa828e6fc5ad14bf2c950b03bc95acddd39a67fb1fb82c8"
+    },
+    "productionSourceBaseline": {
+      "path": "src/data/debates.js",
+      "bytes": 4267605,
+      "sha256": "e0004963bc145d1f6a9e1c17a49e0fb848c23cccb4a6c03d6587cc24b8442bf6"
+    },
+    "productionSourceProjectedAfter": {
+      "bytes": 4463512,
+      "sha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561"
+    },
+    "generatedSeo": {
+      "totalOutputs": 380,
+      "changedOutputs": 12,
+      "changedOutputsSha256": "4668176bc515bb0ceefe4c307acb7d3b96be09a1640c5b0187837cdbb77f6d07",
+      "unchangedOutputs": 368,
+      "unchangedOutputsManifestSha256": "f139a2e9d6869a2ccec6899564280441b963d53b9ed69f3e0e79a23244a322c1"
+    },
+    "candidateObjectsMayChange": false,
+    "assessmentLedgersMayChange": false,
+    "participantScoresMayChange": false,
+    "publicationAssessmentProseMayChange": false,
+    "generatedSeoProjectionMayChange": false
+  },
+  "dependentOutputs": [
+    {
+      "path": "docs/calibration/v2.1/pilot-analysis.json",
+      "format": "json",
+      "beforeBytes": 11590,
+      "beforeSha256": "424d13c6de36934164bc54e22401478d3c1920e91e94ef5739b268681be336b2",
+      "projectedAfterBytes": 11592,
+      "projectedAfterSha256": "c90f5a64c2cda77eb9fa05a935dc9205f629213a5487dac27a741ae84fa640a5",
+      "expectedGitStatus": " M"
+    },
+    {
+      "path": "docs/calibration/v2.1/pilot-analysis.md",
+      "format": "markdown",
+      "beforeBytes": 5389,
+      "beforeSha256": "732b9dfe3ebdfb657c2a5599d9c11095f472687c58a690e0591a1c5448dc17b8",
+      "projectedAfterBytes": 5391,
+      "projectedAfterSha256": "f9e08eb45bb3c9acb6cd70bafabd3db0be801cd4caadf6daff0ecbcf19c391c2",
+      "expectedGitStatus": " M"
+    }
+  ],
+  "exactJsonValueChanges": [
+    {
+      "pointer": "/legacyBenchmarkComparison/meanChange",
+      "before": -4.5,
+      "after": -4.55
+    },
+    {
+      "pointer": "/legacyBenchmarkComparison/meanAbsoluteChange",
+      "before": 4.9,
+      "after": 4.75
+    },
+    {
+      "pointer": "/debates/7/moves/pro/legacyBenchmarkMove",
+      "debateNumber": "104",
+      "before": 78,
+      "after": 77
+    },
+    {
+      "pointer": "/debates/7/moves/pro/changeFromLegacyBenchmarkMove",
+      "debateNumber": "104",
+      "before": -5,
+      "after": -4
+    },
+    {
+      "pointer": "/debates/7/moves/con/legacyBenchmarkMove",
+      "debateNumber": "104",
+      "before": 80,
+      "after": 82
+    },
+    {
+      "pointer": "/debates/7/moves/con/changeFromLegacyBenchmarkMove",
+      "debateNumber": "104",
+      "before": 2,
+      "after": 0
+    }
+  ],
+  "expandedExactProductionPaths": [
+    "src/data/debates.js",
+    "docs/assessment-ledgers/knechtle-dillahunty-christianity-true-2023.json",
+    "docs/assessment-ledgers/tour-swamidass-origin-life-chemistry-2020.json",
+    "docs/assessment-ledgers/plantinga-law-eaan-rational-belief-2010.json",
+    "docs/assessment-ledgers/enoch-bush-objective-moral-truths-2026.json",
+    "docs/assessment-ledgers/hitchens-ramadan-islam-peace-2010.json",
+    "docs/assessment-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json",
+    "docs/assessment-ledgers/turek-hitchens-god-existence-2008.json",
+    "docs/assessment-ledgers/craig-harris-moral-foundations-2011.json",
+    "docs/assessment-ledgers/craig-shook-existence-god-2008.json",
+    "docs/assessment-ledgers/horn-oconnor-god-existence-2020.json",
+    "debate/craig-harris-moral-foundations-2011/index.html",
+    "debate/craig-shook-existence-god-2008/index.html",
+    "debate/enoch-bush-objective-moral-truths-2026/index.html",
+    "debate/hitchens-ramadan-islam-peace-2010/index.html",
+    "debate/horn-oconnor-god-existence-2020/index.html",
+    "debate/knechtle-dillahunty-christianity-true-2023/index.html",
+    "debate/oconnor-baker-hytch-argument-from-reason-2020/index.html",
+    "debate/plantinga-law-eaan-rational-belief-2010/index.html",
+    "debate/tour-swamidass-origin-life-chemistry-2020/index.html",
+    "debate/turek-hitchens-god-existence-2008/index.html",
+    "sitemap.xml",
+    "src/data/debate-summaries.js",
+    "docs/calibration/v2.1/pilot-analysis.json",
+    "docs/calibration/v2.1/pilot-analysis.md"
+  ],
+  "expandedExactProductionPathCount": 25,
+  "expandedExactProductionPathsSha256": "5c9301b12d394488fdee83a36321f9d41357fb5fcfbaa9c947e58619454c41d6",
+  "expectedPostwriteStatuses": {
+    " M": 15,
+    "??": 10
+  },
+  "plannedExecutionOrderAfterSeparateActivation": [
+    "Verify the committed replacement activation, this packet, the isolated preview, all prior immutable locks, all fifty original source hashes, and a clean main worktree.",
+    "Replay the corrected status-parser regression, all ten staged ledgers, and all 188 move scores.",
+    "Recompute the exact production-source projection, all 380 SEO outputs, and both pilot-analysis outputs without writing.",
+    "Run npm run check before any production write.",
+    "Perform the original 23 bounded writes exactly as frozen.",
+    "Run node scripts/analyze-v2.1-pilot.mjs and require that only the two added dependent outputs materialize at their frozen hashes.",
+    "Parse the complete NUL-delimited Git status through the frozen corrected parser and require exactly these 25 paths, with fifteen tracked modifications and ten untracked ledgers.",
+    "Replay all direct content, candidate, unchanged-object, ledger, score, SEO, pilot-analysis, corpus, and complete-repository acceptance checks.",
+    "On any mismatch, restore the fifteen pre-existing paths, remove only the ten newly created ledgers, verify a clean baseline, record the failure, and stop without retrying.",
+    "Commit and push the bounded production mutation only if every acceptance check passes."
+  ],
+  "mandatoryPostwriteAcceptance": {
+    "productionSourceProjectedHashExact": true,
+    "tenFinalCandidatesDeepEqualProduction": true,
+    "other185DebateObjectsByteEquivalent": true,
+    "tenProductionLedgersByteIdenticalToStagedAdapters": true,
+    "tenProductionLedgersReplay188MoveScores": true,
+    "twelveGeneratedSeoOutputsProjectedHashesExact": true,
+    "other368GeneratedSeoOutputsByteEquivalent": true,
+    "twoDependentPilotOutputsProjectedHashesExact": true,
+    "pilotJsonHasExactlySixExpectedValueChanges": true,
+    "correctedStatusParserExact25PathBoundary": true,
+    "currentDebateValidator": "node scripts/validate-debates.mjs",
+    "seoValidator": "node scripts/generate-seo-pages.mjs --check",
+    "pilotAnalysisValidator": "node scripts/analyze-v2.1-pilot.mjs --check",
+    "corpusTranscriptValidator": "node scripts/validate-corpus-transcripts.mjs",
+    "completeRepositoryCheck": "npm run check",
+    "allCommandsMustPass": true
+  },
+  "rollbackBoundary": {
+    "restoreTrackedPaths": 15,
+    "removeNewLedgerPaths": 10,
+    "pathsOutsideExpandedExactProductionPathsMayBeChanged": false,
+    "unrelatedUserChangesMayBeRestoredOrRemoved": false,
+    "rollbackMustBeVerifiedByFrozenStatusParser": true,
+    "completeRepositoryCheckAfterRollbackRequired": true
+  },
+  "modelBoundary": {
+    "preservedAssessmentModel": "5.6 Sol",
+    "preservedReasoningEffort": "low",
+    "preservedAuthentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "integerRoundedTieDebates": [
+      "129",
+      "10"
+    ],
+    "modelContexts": 0,
+    "judgmentExecution": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "scoreChange": false,
+    "publicationAssessmentProseRewrite": false,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "stopRules": {
+    "executionMayNotStartFromThisPacket": true,
+    "replacementExecutionActivationRequired": true,
+    "separateProductionMutationRetryAuthorizationRequiredAfterActivation": true,
+    "automaticRetryAllowed": false,
+    "replacementAttemptsMaximumUnderFutureActivation": 1,
+    "retriesWithinFutureActivationMaximum": 0,
+    "mutationPacketMustRemainExact": true,
+    "candidateAndLedgerPayloadMustRemainExact": true,
+    "dependentOutputsMayChangeOnlyToFrozenHashes": true,
+    "judgmentExecutionForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "publicationAssessmentProseRewriteForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "freeze-dependent-pilot-analysis-remedy-preparation-manifest-and-analysis"
+}

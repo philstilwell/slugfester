@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-dependent-pilot-analysis-isolated-preview",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-dependent-pilot-analysis-remedy",
+  "status": "production-mutation-dependent-pilot-analysis-isolated-preview-passed",
+  "previewedAt": "2026-08-14T00:11:20Z",
+  "previewCommit": "e93480cf3c80c3d83826374fa7d40dec8c2f863c",
+  "branchContext": "detached temporary worktree from main checkpoint",
+  "productionCanary": true,
+  "temporaryOnly": true,
+  "productionWorktreeTouched": false,
+  "meteredApiCostUsd": 0,
+  "previewHarness": {
+    "temporaryWorktreesCreated": 3,
+    "temporaryWorktreesRemoved": 3,
+    "temporaryWorktreesRemaining": 0,
+    "productionWorktreeCleanAfterPreview": true,
+    "localEvidenceAccess": {
+      "assessmentCache": "ignored temporary directory containing links to the existing local evidence entries",
+      "outputTranscribe": "ignored temporary directory containing links to the existing local transcription-evidence entries",
+      "purpose": "allow repository validators to read the same ignored evidence available in the production worktree",
+      "writesToEvidenceTargets": 0,
+      "reportedByGitStatus": false
+    },
+    "harnessCorrections": [
+      {
+        "attempt": 1,
+        "result": "preview-environment-incomplete",
+        "reason": "The detached copy did not contain the ignored output/transcribe evidence directory, so validate-v22-gate-sources.mjs could not open one required reference WAV file.",
+        "productionOrPlanDefect": false,
+        "cleanupPassed": true
+      },
+      {
+        "attempt": 2,
+        "result": "content-and-repository-checks-passed-boundary-check-inconclusive",
+        "reason": "Whole-directory symlinks supplied the evidence, but Git correctly reported the symlinks themselves as two extra untracked entries because directory-only ignore rules do not match symlinks.",
+        "productionOrPlanDefect": false,
+        "completeRepositoryCheckPassed": true,
+        "cleanupPassed": true
+      },
+      {
+        "attempt": 3,
+        "result": "passed",
+        "reason": "Ignored temporary directories containing evidence-entry links supplied the validators without appearing in Git status.",
+        "productionOrPlanDefect": false,
+        "cleanupPassed": true
+      }
+    ]
+  },
+  "projectedMutation": {
+    "exactPathCount": 25,
+    "exactPathsSha256": "5c9301b12d394488fdee83a36321f9d41357fb5fcfbaa9c947e58619454c41d6",
+    "gitStatusCounts": {
+      " M": 15,
+      "??": 10
+    },
+    "correctedStatusParserPassed": true,
+    "unexpectedPaths": 0,
+    "productionSourceProjectedSha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+    "generatedSeoOutputsPassed": 380,
+    "changedGeneratedSeoOutputs": 12,
+    "unchangedGeneratedSeoOutputs": 368,
+    "dependentPilotOutputsPassed": 2
+  },
+  "dependentOutputs": [
+    {
+      "path": "docs/calibration/v2.1/pilot-analysis.json",
+      "beforeBytes": 11590,
+      "beforeSha256": "424d13c6de36934164bc54e22401478d3c1920e91e94ef5739b268681be336b2",
+      "projectedAfterBytes": 11592,
+      "projectedAfterSha256": "c90f5a64c2cda77eb9fa05a935dc9205f629213a5487dac27a741ae84fa640a5"
+    },
+    {
+      "path": "docs/calibration/v2.1/pilot-analysis.md",
+      "beforeBytes": 5389,
+      "beforeSha256": "732b9dfe3ebdfb657c2a5599d9c11095f472687c58a690e0591a1c5448dc17b8",
+      "projectedAfterBytes": 5391,
+      "projectedAfterSha256": "f9e08eb45bb3c9acb6cd70bafabd3db0be801cd4caadf6daff0ecbcf19c391c2"
+    }
+  ],
+  "projectedCalibrationValues": {
+    "debateNumber": "104",
+    "debateId": "oconnor-baker-hytch-argument-from-reason-2020",
+    "proLegacyBenchmarkMove": 77,
+    "conLegacyBenchmarkMove": 82,
+    "proChangeFromLegacyBenchmarkMove": -4,
+    "conChangeFromLegacyBenchmarkMove": 0,
+    "meanChange": -4.55,
+    "meanAbsoluteChange": 4.75
+  },
+  "acceptance": {
+    "completeRepositoryCheckBeforeProductionPreview": "passed-in-production-worktree",
+    "completeRepositoryCheckAfterAll25ProjectedWrites": "passed-in-isolated-worktree",
+    "completeRepositoryCheckOutputBytes": 13550,
+    "pilotAnalysisFreshnessCheck": "passed",
+    "currentDebateValidator": "passed",
+    "calibrationValidator": "passed",
+    "corpusTranscriptValidator": "passed",
+    "generatedSeoValidator": "passed",
+    "allRepositoryValidators": "passed"
+  },
+  "preservedControls": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "candidateChanges": 0,
+    "ledgerPayloadChanges": 0,
+    "participantScoreChanges": 0,
+    "publicationAssessmentProseChanges": 0,
+    "realProductionMutations": 0
+  },
+  "decision": {
+    "isolatedPreviewPassed": true,
+    "expanded25PathBoundarySufficientForCurrentFullRepositoryCheck": true,
+    "productionMutationAuthorizedByPreview": false,
+    "newExecutionActivationRequired": true,
+    "automaticRetryAllowed": false
+  }
+}

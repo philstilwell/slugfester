@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-dependent-pilot-analysis-remedy-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-dependent-pilot-analysis-remedy",
+  "status": "production-mutation-dependent-pilot-analysis-remedy-plan-freeze-passed-awaiting-execution-activation-decision",
+  "productionCanary": true,
+  "planningOnly": true,
+  "artifacts": {
+    "dependencyPacket": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/dependent-pilot-analysis-remedy/dependency-packet.json",
+      "bytes": 12223,
+      "sha256": "33375bf6ed80236815490ef01ed1197b11eefeb8757c8af36e6709a948915535",
+      "status": "production-mutation-dependent-pilot-analysis-remedy-packet-frozen"
+    },
+    "isolatedPreview": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/dependent-pilot-analysis-remedy/isolated-preview.json",
+      "bytes": 5143,
+      "sha256": "88d4d2e1f0bf46c45e8d302a18d917d001ceaf96ab8683fb682d288cc16709cd",
+      "status": "production-mutation-dependent-pilot-analysis-isolated-preview-passed"
+    },
+    "preparationManifest": {
+      "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/dependent-pilot-analysis-remedy/preparation-manifest.json",
+      "bytes": 10172,
+      "sha256": "8241271819f8284d86eddf2b054be401e2f8d2c17c695b0ec2a9b8b63e29591f",
+      "status": "production-mutation-dependent-pilot-analysis-remedy-plan-prepared-and-frozen"
+    }
+  },
+  "decision": {
+    "planPreparationPassed": true,
+    "isolatedPreviewPassed": true,
+    "expanded25PathBoundarySufficientForCurrentFullRepositoryCheck": true,
+    "dependentOutputCauseResolvedInPlan": true,
+    "parserRemedyStillPassed": true,
+    "productionAcceptancePassed": false,
+    "reasonProductionAcceptanceNotPassed": "No real production mutation was authorized or executed during this planning gate.",
+    "productionMutationRemains": false,
+    "newExecutionActivationRequired": true,
+    "separateRetryAuthorizationRequiredAfterActivation": true,
+    "automaticRetryAllowed": false
+  },
+  "remedy": {
+    "name": "deterministic-pilot-analysis-dependent-output-expansion",
+    "priorExactPathCount": 23,
+    "additionalPathCount": 2,
+    "expandedExactPathCount": 25,
+    "expandedExactPathsSha256": "5c9301b12d394488fdee83a36321f9d41357fb5fcfbaa9c947e58619454c41d6",
+    "additionalPaths": [
+      "docs/calibration/v2.1/pilot-analysis.json",
+      "docs/calibration/v2.1/pilot-analysis.md"
+    ],
+    "expectedStatuses": {
+      " M": 15,
+      "??": 10
+    },
+    "dependentOutputGenerator": "node scripts/analyze-v2.1-pilot.mjs",
+    "dependentOutputValidator": "node scripts/analyze-v2.1-pilot.mjs --check",
+    "jsonValueChanges": 6,
+    "participantScoreChanges": 0,
+    "candidateChanges": 0,
+    "ledgerPayloadChanges": 0,
+    "publicationAssessmentProseChanges": 0
+  },
+  "isolatedPreview": {
+    "checkpointCommit": "e93480cf3c80c3d83826374fa7d40dec8c2f863c",
+    "temporaryWorktreesCreated": 3,
+    "temporaryWorktreesRemoved": 3,
+    "temporaryWorktreesRemaining": 0,
+    "harnessSetupCorrections": 2,
+    "harnessSetupCorrectionsWereProductionDefects": false,
+    "realProductionWorktreeTouched": false,
+    "exact25PathBoundaryPassed": true,
+    "expectedStatusCountsPassed": true,
+    "sourceProjectionPassed": true,
+    "seoProjectionPassed": true,
+    "dependentOutputProjectionPassed": true,
+    "completeRepositoryCheckPassed": true,
+    "unexpectedPaths": 0,
+    "meteredApiCostUsd": 0
+  },
+  "dependentOutputProjection": {
+    "json": {
+      "path": "docs/calibration/v2.1/pilot-analysis.json",
+      "beforeSha256": "424d13c6de36934164bc54e22401478d3c1920e91e94ef5739b268681be336b2",
+      "projectedAfterSha256": "c90f5a64c2cda77eb9fa05a935dc9205f629213a5487dac27a741ae84fa640a5"
+    },
+    "markdown": {
+      "path": "docs/calibration/v2.1/pilot-analysis.md",
+      "beforeSha256": "732b9dfe3ebdfb657c2a5599d9c11095f472687c58a690e0591a1c5448dc17b8",
+      "projectedAfterSha256": "f9e08eb45bb3c9acb6cd70bafabd3db0be801cd4caadf6daff0ecbcf19c391c2"
+    },
+    "debate104": {
+      "priorLegacyBenchmark": {
+        "pro": 78,
+        "con": 80
+      },
+      "projectedLegacyBenchmark": {
+        "pro": 77,
+        "con": 82
+      },
+      "projectedChangeFromLegacyBenchmark": {
+        "pro": -4,
+        "con": 0
+      }
+    },
+    "projectedAggregateComparison": {
+      "meanChange": -4.55,
+      "meanAbsoluteChange": 4.75
+    }
+  },
+  "checks": {
+    "mainBranchPassed": true,
+    "localHeadMatchedRemoteMainBeforePreparation": true,
+    "productionWorktreeCleanBeforePreparation": true,
+    "completeRepositoryCheckBeforePreparationPassed": true,
+    "productionSourceBaselineHashPassed": true,
+    "tenProductionLedgerTargetsAbsent": true,
+    "failedReplacementRollbackRemainsExact": true,
+    "mutationPacketHashPassed": true,
+    "parserArtifactsHashPassed": 4,
+    "dependentGeneratorHashPassed": true,
+    "dependentOutputBaselineHashesPassed": 2,
+    "expandedPathListHashPassed": true,
+    "isolatedPreviewRepositoryCheckPassed": true,
+    "isolatedPreviewChangedPathParserPassed": true,
+    "isolatedPreviewExactPathSetPassed": true,
+    "isolatedPreviewCleanupPassed": true,
+    "realProductionWrites": 0
+  },
+  "totals": {
+    "overallProductionMutationAttemptsBeforeThisPlan": 2,
+    "productionMutationAttemptsDuringThisPlan": 0,
+    "productionMutationRetriesDuringThisPlan": 0,
+    "debates": 10,
+    "sections": 51,
+    "moves": 188,
+    "overallScores": 20,
+    "integerRoundedTies": 2,
+    "expandedProductionPaths": 25,
+    "judgmentModelContexts": 0,
+    "scorePassesRerun": 0,
+    "meteredApiCostUsd": 0,
+    "productionMutationsCompleted": 0
+  },
+  "preservedControls": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "integerRoundedTieDebates": [
+      "129",
+      "10"
+    ],
+    "judgmentExecutionPerformed": false,
+    "scoreRerunPerformed": false,
+    "scoreOrPublicationAssessmentProsePayloadChanged": false,
+    "remainingProductionBatchesStarted": false
+  },
+  "authorization": {
+    "dependentOutputExpansionPlanPreparation": true,
+    "isolatedPreview": true,
+    "replacementExecutionActivation": false,
+    "productionMutationRetry": false,
+    "productionLedgerPublication": false,
+    "productionDebatesChange": false,
+    "generatedSeoPublication": false,
+    "dependentPilotAnalysisPublication": false,
+    "remainingProductionBatches": false
+  },
+  "stopRules": {
+    "executionMayNotStartFromThesePlanningArtifacts": true,
+    "replacementExecutionActivationRequired": true,
+    "separateProductionMutationRetryAuthorizationRequiredAfterActivation": true,
+    "automaticRetryAllowed": false,
+    "futureActivationMayAuthorizeAtMostOneAttempt": true,
+    "futureActivationMayAuthorizeZeroAutomaticRetries": true,
+    "mutationPacketMustRemainExact": true,
+    "candidateAndLedgerPayloadMustRemainExact": true,
+    "dependentOutputsMayChangeOnlyToFrozenHashes": true,
+    "judgmentExecutionForbidden": true,
+    "scoreRerunForbidden": true,
+    "scoreChangeForbidden": true,
+    "publicationAssessmentProseRewriteForbidden": true,
+    "remainingProductionBatchesForbidden": true
+  },
+  "nextAuthorizedAction": "user-decision-on-production-mutation-dependent-pilot-analysis-remedy-execution-activation"
+}
