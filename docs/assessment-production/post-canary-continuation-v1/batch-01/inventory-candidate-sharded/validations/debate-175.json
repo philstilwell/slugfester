@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-01-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "175",
+  "inventoryPlanCanonicalSha256": "cea34e385bc2353edd363c4e3bf2cf0255897593e04777a07ee9a76ace5725fc",
+  "sideSelectionSha256": {
+    "pro": "d5c34f17fce137717a91c333f0620c13171301a39656c8f67ff8e135c4284dbe",
+    "con": "57c74e5958b013ff37a2bf125234e0dc147a78b7e121c5dc4856b385ec70ce27"
+  },
+  "sections": 5,
+  "moves": 18,
+  "proMoves": 9,
+  "conMoves": 9,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-03",
+      "side": "con",
+      "moveId": "con-comparative-reasonable-judgment",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Even without the moderator's earlier suggestion, the proposition independently specifies the epistemic standard for comparing complete worldviews.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 18,
+  "retainedCandidates": 18,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

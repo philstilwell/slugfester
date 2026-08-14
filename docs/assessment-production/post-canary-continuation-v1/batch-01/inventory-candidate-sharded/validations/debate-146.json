@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-01-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "146",
+  "inventoryPlanCanonicalSha256": "54852fe275a9881bc40a797b2a19320dd95f05394d43b497754f52cb8dd12d0b",
+  "sideSelectionSha256": {
+    "pro": "0b3cd920ff91cc11388eece3283cd1aec897698960b5d5d2bbf2651bcac17915",
+    "con": "522985581db510031795a718bdb7fafd6aa89d7a9e40867272875385241f6e07"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-001",
+      "side": "con",
+      "moveId": "con-fwc-compatible-responsibility",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Independently of the published criticism being answered, the source states Dennett's affirmative distinction between responsibility-grounding freedom and dispensable libertarian freedom.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-003",
+      "side": "con",
+      "moveId": "con-fwc-naturalistic-revision",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The comparison with naturalizing consciousness supplies a standalone method for retaining free will's real content while rejecting its allegedly magical interpretation.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 2,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

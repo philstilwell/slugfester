@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-01-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "52",
+  "inventoryPlanCanonicalSha256": "da58624bf300fd317622c2504a61624b075a0caeafbfce8b91a1ed59cba29da0",
+  "sideSelectionSha256": {
+    "pro": "1824fd3f6f1c361973d0e738b9d5a27febc2f102eae7edbf5519df41affd9d0e",
+    "con": "407795d0c7395a873e0ea0a569cc2acdace60798a8e43f01a3f88e93b7639003"
+  },
+  "sections": 6,
+  "moves": 23,
+  "proMoves": 11,
+  "conMoves": 12,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c003",
+      "side": "pro",
+      "moveId": "pro-testimony-and-early-experiences",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Even without an earlier retained objection, Horn's comparison to ordinary historical evidence and appeal to early sources independently supplies a testimonial foundation.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c004",
+      "side": "pro",
+      "moveId": "pro-ordinary-alternatives-comparison",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Horn independently compares resurrection with specified ordinary alternatives and argues from reported features of the evidence to resurrection as the better explanation.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 2,
+  "nominatedCandidates": 23,
+  "retainedCandidates": 23,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}
