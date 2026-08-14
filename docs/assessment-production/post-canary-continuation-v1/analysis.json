@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-continuation-analysis",
+  "protocolId": "assessment-production-post-canary-continuation-v1",
+  "status": "post-canary-continuation-analysis-passed-with-two-source-normalization-blockers",
+  "analyzedAt": "2026-08-14T01:27:49Z",
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/preparation-manifest.json",
+    "bytes": 16395,
+    "sha256": "824970b06949066b7e0200b1403c0120f03eaa395acd38efd961a29dfee52d60",
+    "status": "post-canary-continuation-plan-frozen-source-normalization-blockers-found"
+  },
+  "finding": "The passed ten-debate canary leaves a fully reconciled corpus of 10 published canary debates, 5 accepted calibration debates awaiting a separate promotion path, 16 excluded multi-speaker debates, and 164 pending dyadic reassessments. All 585 effective source files are present and hash-exact after honoring the approved Debate 167 overlay, but Debates 88 and 127 contain malformed event durations and fail canonical normalization.",
+  "campaignPolicyFinding": "The original fresh/disjoint held-out selector would admit only 39 of the 164 pending dyadic debates and strand 125. It must not be reused as the complete-campaign policy; a new frozen continuation selection policy is required after the two source blockers receive an explicit disposition.",
+  "decision": {
+    "canaryPassed": true,
+    "corpusDispositionReconciled": true,
+    "effectiveSourceHashesPassed": true,
+    "canonicalSourceGatePassed": false,
+    "batchSelectionPassed": false,
+    "batchSelectionAttempted": false,
+    "productionContinuationExecutionAuthorized": false,
+    "recommendedNextGate": "prepare a bounded, model-free source normalization repair plan for Debates 88 and 127"
+  },
+  "modelBoundary": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlindnessRequired": true,
+    "modelContexts": 0,
+    "scorePasses": 0,
+    "publicationContexts": 0,
+    "meteredApiCostUsd": 0
+  },
+  "nextAuthorizedAction": "user-decision-on-two-debate-source-normalization-repair-plan-preparation"
+}
