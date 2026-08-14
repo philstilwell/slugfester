@@ -445,11 +445,11 @@ export const debateSummaries = [
     "number": "10",
     "title": "William Lane Craig vs Sam Harris: The God Debate II",
     "label": "Moral foundations",
-    "date": "2026-05-28",
+    "date": "2026-08-12",
     "duration": "2 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yqaHXKLRKzg",
     "motion": "Are the foundations of moral values and duties natural or supernatural?",
-    "summary": "Craig argues God grounds objective morality; Harris argues conscious well-being supplies a natural moral landscape.",
+    "summary": "Craig defended divine nature and commands as morality's foundation; Harris grounded value in conscious well-being, producing evenly matched strengths and unresolved explanatory burdens.",
     "sides": {
       "pro": {
         "name": "Supernatural foundation",
@@ -463,27 +463,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 80
+      "pro": 79,
+      "con": 79
     },
     "sections": [
       {
-        "title": "Moral ontology and duties"
+        "title": "The Ontological Ground of Objective Moral Value"
       },
       {
-        "title": "Naturalism and species"
+        "title": "Well-Being, Moral Objectivity, and Scientific Inquiry"
       },
       {
-        "title": "Science and moral knowledge"
+        "title": "From Facts to Objective Duties and Responsibility"
       },
       {
-        "title": "Semantics and identity"
+        "title": "Divine Goodness, Command, and Nonarbitrariness"
       },
       {
-        "title": "Religion and evil"
-      },
-      {
-        "title": "Axioms and authority"
+        "title": "Moral Ontology, Knowledge, Disagreement, and Revelation"
       }
     ]
   },
@@ -1011,11 +1008,11 @@ export const debateSummaries = [
     "number": "22",
     "title": "Frank Turek vs Christopher Hitchens: Does God Exist?",
     "label": "Cosmology, design, and anti-theism",
-    "date": "2026-05-30",
+    "date": "2026-08-12",
     "duration": "2 hr 12 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=S7WBEJJlYWU",
     "motion": "Does God exist, and do cosmology, design, morality, consciousness, and Christian claims outweigh the anti-theist critique of religion?",
-    "summary": "Turek builds a cumulative case from cosmology, design, morality, and reason; Hitchens attacks religion as projection, moral tyranny, and unsupported theism.",
+    "summary": "Turek advances cumulative theistic explanations, while Hitchens more consistently enforces evidential burdens, challenges Christian specificity, and defends secular moral autonomy.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -1030,30 +1027,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 84
+      "pro": 74,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Cumulative burden"
+        "title": "Cosmic Origins, Causation, and the Explanatory Burden"
       },
       {
-        "title": "Cosmology and tuning"
+        "title": "Fine-Tuning, Biological Information, and Providential Design"
       },
       {
-        "title": "DNA and design"
+        "title": "Objective Moral Grounding, Conscience, and Secular Virtue"
       },
       {
-        "title": "Morality and conscience"
+        "title": "Consciousness, Reason, Mathematics, and Human Freedom"
       },
       {
-        "title": "Religious harm relevance"
-      },
-      {
-        "title": "Christianity and miracles"
-      },
-      {
-        "title": "Final burden"
+        "title": "Christian Claims, Divine Authority, and the Anti-Theist Critique"
       }
     ]
   },
@@ -1156,11 +1147,11 @@ export const debateSummaries = [
     "number": "25",
     "title": "Christopher Hitchens vs Tariq Ramadan: Is Islam a Religion of Peace?",
     "label": "Islam as peace or power",
-    "date": "2026-05-30",
+    "date": "2026-08-12",
     "duration": "1 hr 31 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=mMraxhd9Z9Q",
     "motion": "Is Islam a religion of peace, or do its claims, institutions, and enforcement patterns make that description untenable?",
-    "summary": "Hitchens argues Islam's total claims and coercive defenses make peace impossible; Ramadan argues the question essentializes a diverse tradition whose resources can move people toward peace.",
+    "summary": "Hitchens foregrounds coercive institutions and secular equality; Ramadan answers through interpretive plurality, peace-oriented ethics, political causation, internal reform, and constitutional citizenship.",
     "sides": {
       "pro": {
         "name": "Islam-not-peace critique",
@@ -1174,27 +1165,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 85,
+      "pro": 80,
       "con": 82
     },
     "sections": [
       {
-        "title": "Framing the motion"
+        "title": "Meaning of Peace and the Religion-Level Burden"
       },
       {
-        "title": "Text and interpretation"
+        "title": "Revelation, Religious Authority, and Interpretive Plurality"
       },
       {
-        "title": "Jihad and history"
+        "title": "Violence, Resistance, and Coercive Enforcement"
       },
       {
-        "title": "Blasphemy pressure"
+        "title": "Reform, Sharia, Secularism, and Equal Citizenship"
       },
       {
-        "title": "Authority and condemnation"
-      },
-      {
-        "title": "Secular law and citizenship"
+        "title": "Causation, Representativeness, and Comparative Standards"
       }
     ]
   },
@@ -1866,11 +1854,11 @@ export const debateSummaries = [
     "number": "40",
     "title": "David Enoch vs Lance Bush: Are There Objective Moral Truths?",
     "label": "Moral realism and anti-realism",
-    "date": "2026-05-31",
+    "date": "2026-08-12",
     "duration": "1 hr 30 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=UWZuHxO4WcA",
     "motion": "Are there objective moral truths, and does moral realism or global normative anti-realism better explain ordinary moral judgment, deliberation, language, and disagreement?",
-    "summary": "Enoch defends robust normative realism as the best way to save moral phenomena; Bush argues that anti-realist quietism and empirical psychology dissolve the need for realist facts.",
+    "summary": "Enoch defends mind-independent normativity through justified appearances and comparative explanation; Bush contests realist priority through neutral language, causal genealogy, pragmatism, and parsimony.",
     "sides": {
       "pro": {
         "name": "Moral realist",
@@ -1884,27 +1872,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 81,
-      "con": 83
+      "pro": 85,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Opening frameworks"
+        "title": "Scope, Explananda, and Comparative Burdens"
       },
       {
-        "title": "Default status and question-begging"
+        "title": "Normative Appearances and Epistemic Priority"
       },
       {
-        "title": "Starting points and skepticism"
+        "title": "Moral Judgment, Language, and Deliberation"
       },
       {
-        "title": "Folk psychology and ordinary language"
+        "title": "Empirical Genealogy, Variation, and Debunking"
       },
       {
-        "title": "Numbers and causal debunking"
-      },
-      {
-        "title": "Costs, quietism, and meaning"
+        "title": "Explanatory Necessity, Parsimony, and Quietism"
       }
     ]
   },
@@ -2347,11 +2332,11 @@ export const debateSummaries = [
     "number": "50",
     "title": "Cliffe Knechtle vs Matt Dillahunty: Is Christianity True?",
     "label": "Christianity, resurrection, and evidence",
-    "date": "2026-06-01",
+    "date": "2026-08-12",
     "duration": "2 hr 37 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=aAg3H1LU1Yw",
     "motion": "Is Christianity true, and do the Gospels, resurrection claims, moral meaning, and human value give sufficient warrant for Christian faith?",
-    "summary": "Knechtle argues Jesus best explains human value, morality, meaning, and resurrection evidence; Dillahunty challenges the method for verifying supernatural and specifically Christian claims.",
+    "summary": "Knechtle offered cumulative historical, moral, and relational warrant for Christianity; Dillahunty consistently pressed whether those methods distinguish supernatural truth from preservation, fiction, and alternatives.",
     "sides": {
       "pro": {
         "name": "Christianity is true",
@@ -2365,30 +2350,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 68,
-      "con": 85
+      "pro": 73,
+      "con": 90
     },
     "sections": [
       {
-        "title": "Opening standards and meaning"
+        "title": "Truth-Testing Methods and Evidential Burdens"
       },
       {
-        "title": "Historical evidence categories"
+        "title": "Gospel Preservation, Coherence, and Historical Reliability"
       },
       {
-        "title": "Witnesses and authorship"
+        "title": "Resurrection Evidence and Alternative Explanations"
       },
       {
-        "title": "Manuscripts and method"
+        "title": "Objective Morality, Human Value, and Meaning"
       },
       {
-        "title": "Genesis interpretation"
-      },
-      {
-        "title": "Skepticism and method"
-      },
-      {
-        "title": "Moral texts and divine silence"
+        "title": "Scriptural Morality, Creation, Evil, and Human Freedom"
       }
     ]
   },
@@ -4915,11 +4894,11 @@ export const debateSummaries = [
     "number": "104",
     "title": "Alex O'Connor vs Max Baker-Hytch: The Argument for God From Reason",
     "label": "Reason, intentionality, and naturalism",
-    "date": "2026-07-18",
+    "date": "2026-08-12",
     "duration": "1 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=kI5j2b7ZtXw",
     "motion": "Does rationality undermine naturalism and make a theistic or otherwise non-naturalist account of mind more probable?",
-    "summary": "Baker-Hytch argues that reason, intentionality, mental causation, and consciousness fit better if mentality is fundamental; O'Connor argues naturalism remains plausible through evolution, emergence, and burden discipline.",
+    "summary": "Baker-Hytch argues rationality and consciousness favor fundamental mentality, while O'Connor defends evolutionary, physical realization and challenges the proposed comparative advantage.",
     "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
@@ -4934,27 +4913,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 81,
-      "con": 80
+      "pro": 84,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Lewis And Determinism"
+        "title": "Intentionality and Physical Realization"
       },
       {
-        "title": "Naturalism And Probability"
+        "title": "Inference, Deduction, and Content-Sensitive Causation"
       },
       {
-        "title": "Intentionality And Evolution"
+        "title": "Evolution and the Reliability of Reason"
       },
       {
-        "title": "Deduction And Derived Meaning"
+        "title": "Consciousness, Emergence, and Causal Role"
       },
       {
-        "title": "Circularity And Survival"
-      },
-      {
-        "title": "Consciousness And Theism"
+        "title": "Comparative Likelihood and Explanatory Scope"
       }
     ]
   },
@@ -5788,11 +5764,11 @@ export const debateSummaries = [
     "number": "122",
     "title": "Trent Horn vs Alex O'Connor: Does God Exist?",
     "label": "God, contingency, and evil",
-    "date": "2026-07-29",
+    "date": "2026-08-12",
     "duration": "2 hr 06 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=5PF1JgXOKDQ",
     "motion": "Does God exist, and do contingency, sufficient reason, moral realism, evil, animal suffering, and quantum randomness support or undermine theism?",
-    "summary": "Horn argues that sufficient reason, contingency, act-potency, moral realism, and free will point to a necessary divine cause; O'Connor argues that animal suffering, quantum indeterminacy, and moral anti-realism undercut the case.",
+    "summary": "Horn develops a cumulative classical-theist case, while O'Connor's quantum, metaethical, personal-explanation, and animal-suffering challenges expose consequential gaps in its foundations and identification.",
     "sides": {
       "pro": {
         "name": "Classical theism",
@@ -5806,30 +5782,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 84
+      "pro": 77,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Contingency Case"
+        "title": "Contingency, Change, and the Necessary Ground"
       },
       {
-        "title": "Animal Suffering"
+        "title": "Sufficient Reason and Quantum Randomness"
       },
       {
-        "title": "PSR And Quantum"
+        "title": "Divine Attributes and Personal Explanation"
       },
       {
-        "title": "Free Will And Heaven"
+        "title": "Morality, Freedom, and Responsibility"
       },
       {
-        "title": "Moral Realism"
-      },
-      {
-        "title": "Cross-Exam Pressure"
-      },
-      {
-        "title": "Final Burdens"
+        "title": "Evil, Animal Suffering, and Greater-Good Defenses"
       }
     ]
   },
@@ -6135,11 +6105,11 @@ export const debateSummaries = [
     "number": "129",
     "title": "Alvin Plantinga vs Stephen Law: Is the EAAN Successful?",
     "label": "Evolutionary argument and rational belief",
-    "date": "2026-07-30",
+    "date": "2026-08-12",
     "duration": "1 hr 09 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=vAJHkRkWCm0",
     "motion": "Is the evolutionary argument against naturalism successful at showing that naturalism plus evolution gives its believers a defeater for trusting their cognitive faculties?",
-    "summary": "Plantinga argues that unguided evolution under naturalism undercuts trust in cognition; Law argues that adaptive behavior and belief content are not so easily severed, and that theistic accounts face parity worries.",
+    "summary": "Plantinga develops a self-defeat argument from evolutionary reliability doubts, while Law counters with adaptive truth-tracking, content constraints, and skeptical parity.",
     "topicCategory": "logic-reason-presuppositions",
     "sides": {
       "pro": {
@@ -6154,27 +6124,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 77,
-      "con": 82
+      "pro": 81,
+      "con": 81
     },
     "sections": [
       {
-        "title": "Self-Defeat Setup"
+        "title": "Adaptive Selection and Truth-Conducive Cognition"
       },
       {
-        "title": "Truth And Selection"
+        "title": "Mental Content, Neurology, and Behavioral Constraints"
       },
       {
-        "title": "Belief Content Constraints"
+        "title": "Probability of Reliable Cognitive Faculties"
       },
       {
-        "title": "Atheism And Naturalism"
+        "title": "Defeater Generation and Epistemic Self-Reference"
       },
       {
-        "title": "Reason And Parity"
-      },
-      {
-        "title": "Final Reliability Impasse"
+        "title": "Worldview Scope and Theistic Symmetry"
       }
     ]
   },
@@ -7865,11 +7832,11 @@ export const debateSummaries = [
     "number": "167",
     "title": "William Lane Craig vs John Shook: The Existence of God",
     "label": "Naturalism, supernaturalism, and explanatory bridges",
-    "date": "2026-08-01",
+    "date": "2026-08-12",
     "duration": "2 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=L3FOgiASYY0",
     "motion": "Does the available philosophical, scientific, moral, historical, and experiential evidence support God's existence?",
-    "summary": "Craig offers five cumulative arguments for supernaturalism; Shook treats naturalism as the rational default when proposed bridges beyond nature fail.",
+    "summary": "Craig presented cumulative theistic arguments; Shook's disciplined evidential restraint and targeted alternative explanations more consistently exposed unresolved bridges from nature to God.",
     "sides": {
       "pro": {
         "name": "Theistic supernaturalism",
@@ -7883,21 +7850,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 75
+      "pro": 76,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Naturalism, default positions, and proof burdens"
+        "title": "Epistemic Burdens, Inference Form, and Naturalism"
       },
       {
-        "title": "Cosmic beginnings and fine-tuning"
+        "title": "Cosmic Beginning and Transcendent Causation"
       },
       {
-        "title": "Objective morality and human agreement"
+        "title": "Fine-Tuning, Alternative Life, and Design"
       },
       {
-        "title": "Resurrection and religious experience"
+        "title": "Objective Morality, Knowledge, and Grounding"
+      },
+      {
+        "title": "Resurrection, Historical Sources, and Miracle Claims"
+      },
+      {
+        "title": "Religious Experience and Conflicting Revelations"
       }
     ]
   },
@@ -8979,11 +8952,11 @@ export const debateSummaries = [
     "number": "192",
     "title": "James Tour vs S. Joshua Swamidass: How Close Is Origin-of-Life Science?",
     "label": "Prebiotic chemistry and scientific agnosticism",
-    "date": "2026-08-01",
+    "date": "2026-08-12",
     "duration": "59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yJgr38h_3H0",
     "motion": "Has science come meaningfully close to explaining how life first arose from nonliving chemistry?",
-    "summary": "Tour argues chemistry cannot bridge raw materials to a cell and public narratives conceal this ignorance; Swamidass agrees no pathway is known but defends limited clues, probabilistic agnosticism, and precise design models.",
+    "summary": "Tour demands an integrated chemical pathway to first life, while Swamidass defends limited clues, probabilistic uncertainty, empirical testing, and scientific agnosticism.",
     "topicCategory": "science-design",
     "sides": {
       "pro": {
@@ -8998,24 +8971,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 87,
-      "con": 91
+      "pro": 80,
+      "con": 78
     },
     "sections": [
       {
-        "title": "What scientists and the public actually know"
+        "title": "Chemical Production, Preservation, and Cellular Assembly"
       },
       {
-        "title": "Four molecular classes and the enemy of time"
+        "title": "Nonzero Probability and Cosmic Opportunity"
       },
       {
-        "title": "Modern cells versus the first life"
+        "title": "Limited Clues and Distance from an Explanation"
       },
       {
-        "title": "Probability, cosmic scale, and repeat origins"
+        "title": "Independent Origins as an Empirical Test"
       },
       {
-        "title": "Can design become a scientific hypothesis?"
+        "title": "Timescales, Breakthroughs, and Scientific Recoverability"
       }
     ]
   },

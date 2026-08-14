@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-dependent-pilot-analysis-remedy-execution",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-dependent-pilot-analysis-remedy",
+  "status": "production-mutation-dependent-pilot-analysis-remedy-execution-passed",
+  "startedAt": "2026-08-14T01:17:26.596Z",
+  "completedAt": "2026-08-14T01:17:33.427Z",
+  "branch": "main",
+  "executionHead": "8db0d959b4e444822bfc9bc2dfe86aa83b35d343",
+  "checkpointCommit": "8d2c102610412b63e4de0ed7616b40b0ec927aeb",
+  "productionCanary": true,
+  "activation": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/dependent-pilot-analysis-remedy/execution-activation.json",
+    "bytes": 20309,
+    "sha256": "32408cdfb2cc9414467abc6883d77ff518edcf17199069138bddc7c35334cb4c",
+    "ancestryPassed": true
+  },
+  "authorization": {
+    "instruction": "Ok. From now on, provide a one line meaningful report on where we are in the process. Proceed with the next task at your discretion.",
+    "scopeInterpretation": "Separate authorization to execute the one frozen 25-path dependent-pilot-analysis production-mutation attempt activated by the prior committed gate; no remaining production batches were authorized.",
+    "productionMutationRetryAuthorized": true,
+    "attemptsAuthorized": 1,
+    "automaticRetriesAuthorized": 0,
+    "remainingProductionBatchesAuthorized": false,
+    "directIncrementalCostEstimateUsd": 0
+  },
+  "attempt": {
+    "overallProductionMutationAttemptOrdinal": 3,
+    "attemptOrdinalUnderThisActivation": 1,
+    "writeStarted": true,
+    "automaticRetry": false,
+    "rollbackInvoked": false,
+    "productionMutationRetained": true
+  },
+  "preflight": {
+    "status": "passed-before-production-write",
+    "branchAndCleanWorktreePassed": true,
+    "activationHashAndAncestryPassed": true,
+    "lockedArtifactsChecked": 16,
+    "lockedArtifactsPassed": 16,
+    "originalPreparationSourcesChecked": 50,
+    "originalPreparationSourcesPassed": 50,
+    "parserRegressionPassed": true,
+    "productionLedgerTargetsAbsent": 10,
+    "stagedLedgersReplayed": 10,
+    "moveScoresReplayed": 188,
+    "productionSourceProjectionPassed": true,
+    "productionSourceProjectedSha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+    "seoOutputsProjected": 380,
+    "seoOutputDifferencesProjected": 12,
+    "pilotAnalysisOutputsProjected": 2,
+    "completeRepositoryCheckPassed": true,
+    "nonMutatingVerificationCorrection": {
+      "occurredBeforeProductionWrite": true,
+      "problem": "The first local preflight invocation compared the frozen aggregate SEO record hash against pretty-printed JSON rather than the compact JSON serialization used to freeze it.",
+      "remedy": "The aggregation formula was corrected to compact JSON, its hash matched, and the entire preflight was rerun from a clean unchanged production baseline.",
+      "productionAttemptConsumed": false,
+      "productionFilesChanged": 0
+    }
+  },
+  "immediatePostwriteBoundary": {
+    "parser": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/status-parser-remedy/status-parser.mjs",
+    "parserInput": "git status --porcelain=v1 -z returned as a Buffer without trimming or line splitting",
+    "rawStatusBytes": 1442,
+    "rawStatusSha256": "b2769c14e73796ca75fca78cc8ddc62c1d40f25413ad70acdefaf5269b1899a7",
+    "changedPaths": 25,
+    "trackedModifications": 15,
+    "untrackedLedgers": 10,
+    "unexpectedStatuses": 0,
+    "renamesOrCopies": 0,
+    "duplicatePaths": 0,
+    "exactCompletePathSetPassed": true,
+    "exactProductionPathsSha256": "5c9301b12d394488fdee83a36321f9d41357fb5fcfbaa9c947e58619454c41d6"
+  },
+  "productionSource": {
+    "path": "src/data/debates.js",
+    "bytes": 4463512,
+    "sha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+    "debateObjects": 195,
+    "replacedDebateObjects": 10,
+    "candidateDeepEqualityPassed": 10,
+    "unchangedDebateObjectsByteEquivalent": 185,
+    "scoreReruns": 0,
+    "publicationAssessmentProseRewrites": 0
+  },
+  "productionLedgers": {
+    "created": 10,
+    "byteIdenticalToFrozenAdapters": 10,
+    "repositoryScoreReplayPassed": 10,
+    "moveScoresReplayed": 188,
+    "files": [
+      { "path": "docs/assessment-ledgers/knechtle-dillahunty-christianity-true-2023.json", "bytes": 108970, "sha256": "17cc8e78b875c4df851b2fc5eb5285f0950955800cb0691eb744116d2cd14afe" },
+      { "path": "docs/assessment-ledgers/tour-swamidass-origin-life-chemistry-2020.json", "bytes": 100503, "sha256": "8ecf47690a057ca7c1a3acf657f1f6bae55e31ead4071841e6fc4c04af08e4fc" },
+      { "path": "docs/assessment-ledgers/plantinga-law-eaan-rational-belief-2010.json", "bytes": 100525, "sha256": "bfe325a35ae1592e702cd8e49ed621662a4116ebb72ed01a63491f9b9254902f" },
+      { "path": "docs/assessment-ledgers/enoch-bush-objective-moral-truths-2026.json", "bytes": 113917, "sha256": "1053187ec4a95a9c50780e2720e27b1d898d2cf8aa5e0951a78ef0b78afb907e" },
+      { "path": "docs/assessment-ledgers/hitchens-ramadan-islam-peace-2010.json", "bytes": 123847, "sha256": "74ad6bc16b19c778818af2f28bb1a2cc6ebdc5604265bdd9078ecaf05bc54511" },
+      { "path": "docs/assessment-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json", "bytes": 107106, "sha256": "eb8f19682600f86f2686b20ed6fa30dffaf3245484c11473a5b0a673a62a2aaf" },
+      { "path": "docs/assessment-ledgers/turek-hitchens-god-existence-2008.json", "bytes": 116216, "sha256": "41bbf2134444a6c80eba0f79315f479eb577ae8d9e6eab791bb0918b3b122343" },
+      { "path": "docs/assessment-ledgers/craig-harris-moral-foundations-2011.json", "bytes": 114972, "sha256": "7c24813c56e312e9a8597b338e0fd6f35f7908ebef1d264a2824c769f015d5ad" },
+      { "path": "docs/assessment-ledgers/craig-shook-existence-god-2008.json", "bytes": 122994, "sha256": "08b98cb619d5d60ab9070c968f57e5d9384fe0e6fc22f135cf2dddfcee3a40c3" },
+      { "path": "docs/assessment-ledgers/horn-oconnor-god-existence-2020.json", "bytes": 102969, "sha256": "46c71692c95df62c6fa603fd371b237d6ae9e3a6ceae2e1c1474b0b4d6088a05" }
+    ]
+  },
+  "generatedSeo": {
+    "outputsVerified": 380,
+    "changedOutputs": 12,
+    "changedOutputsRecordSha256": "4668176bc515bb0ceefe4c307acb7d3b96be09a1640c5b0187837cdbb77f6d07",
+    "changedOutputsMatchedFrozenHashes": 12,
+    "unchangedOutputsByteEquivalent": 368,
+    "unchangedOutputsManifestSha256": "f139a2e9d6869a2ccec6899564280441b963d53b9ed69f3e0e79a23244a322c1"
+  },
+  "dependentPilotAnalysis": {
+    "generatorWritePassed": true,
+    "outputs": [
+      { "path": "docs/calibration/v2.1/pilot-analysis.json", "bytes": 11592, "sha256": "c90f5a64c2cda77eb9fa05a935dc9205f629213a5487dac27a741ae84fa640a5" },
+      { "path": "docs/calibration/v2.1/pilot-analysis.md", "bytes": 5391, "sha256": "f9e08eb45bb3c9acb6cd70bafabd3db0be801cd4caadf6daff0ecbcf19c391c2" }
+    ],
+    "jsonValueChanges": 6,
+    "exactFrozenJsonValueChangesPassed": true,
+    "participantScoreChanges": 0,
+    "candidateChanges": 0,
+    "ledgerPayloadChanges": 0,
+    "publicationAssessmentProseChanges": 0
+  },
+  "validators": [
+    { "command": "node scripts/analyze-v2.1-pilot.mjs", "status": "passed", "durationMs": 82, "outputSha256": "155ea72bc46749fb18bfd69e022e5fa5950e3a488fb1bddc00e8bc9e68d30dd1" },
+    { "command": "git diff --check", "status": "passed", "durationMs": 38, "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" },
+    { "command": "node scripts/validate-debates.mjs", "status": "passed", "durationMs": 128, "outputSha256": "7b9d8e835d5f81930501da5816db3498e0f1da0a287ad217e0edc872e059dd81" },
+    { "command": "node scripts/generate-seo-pages.mjs --check", "status": "passed", "durationMs": 132, "outputSha256": "5ad39e17d38c455d2ab283e60408b269cb7a48fd4015331dd4bfacf398b3c7bc" },
+    { "command": "node scripts/analyze-v2.1-pilot.mjs --check", "status": "passed", "durationMs": 79, "outputSha256": "4b7ad575fd9b1e7746a54f4b382d0ae5926c5657e9493c9a423333d810667ef0" },
+    { "command": "node scripts/validate-corpus-transcripts.mjs", "status": "passed", "durationMs": 196, "outputSha256": "a60cc974f25379dc53b76d8a86019fa7c3eccad93c4466aea15d66019ad994db" },
+    { "command": "npm run check", "status": "passed", "durationMs": 5444, "outputSha256": "537e26fdcf032194405aa228f02112cb7a8e8259f6dddf4707a0a49766b41716" }
+  ],
+  "modelBoundary": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "integerRoundedTieDebates": ["129", "10"],
+    "modelContexts": 0,
+    "judgmentExecution": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "meteredApiCostUsd": 0
+  },
+  "decision": {
+    "allAcceptanceChecksPassed": true,
+    "rollbackRequired": false,
+    "productionMutationRetained": true,
+    "commitAndPushAuthorizedByFrozenExecutionContract": true,
+    "remainingProductionBatchesRemainForbidden": true
+  },
+  "nextAuthorizedAction": "none-under-this-activation-remaining-production-batches-require-a-new-authorized-gate"
+}

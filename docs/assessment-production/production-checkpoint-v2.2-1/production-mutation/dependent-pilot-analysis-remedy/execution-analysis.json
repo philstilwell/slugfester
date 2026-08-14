@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-production-checkpoint-v2.2-production-mutation-dependent-pilot-analysis-remedy-execution-analysis",
+  "protocolId": "assessment-production-checkpoint-v2.2-1-ten-debate-production-mutation-dependent-pilot-analysis-remedy",
+  "status": "production-mutation-dependent-pilot-analysis-remedy-execution-analysis-passed",
+  "analyzedAt": "2026-08-14T01:17:33.427Z",
+  "productionCanary": true,
+  "execution": {
+    "path": "docs/assessment-production/production-checkpoint-v2.2-1/production-mutation/dependent-pilot-analysis-remedy/execution.json",
+    "result": "passed",
+    "overallAttemptOrdinal": 3,
+    "attemptOrdinalUnderActivation": 1,
+    "automaticRetries": 0,
+    "rollbackInvoked": false
+  },
+  "finding": "The ten-debate production canary passed its single authorized 25-file attempt. The production debate source now contains the ten frozen final candidates, the ten production ledgers are exact copies of their frozen adapters, the twelve expected SEO outputs and two deterministic pilot-analysis outputs match their frozen projections, and every required validator passes.",
+  "acceptance": {
+    "exactProductionPathBoundaryPassed": true,
+    "productionDebatesPassed": 10,
+    "productionLedgersPassed": 10,
+    "moveScoreReplaysPassed": 188,
+    "unchangedDebateObjectsPassed": 185,
+    "generatedSeoOutputsPassed": 380,
+    "generatedSeoChangedOutputsPassed": 12,
+    "generatedSeoUnchangedOutputsPassed": 368,
+    "dependentPilotAnalysisOutputsPassed": 2,
+    "dependentPilotAnalysisExactJsonChangesPassed": 6,
+    "postwriteValidatorsPassed": 6,
+    "allAcceptanceChecksPassed": true
+  },
+  "failureHistoryResolution": {
+    "firstAttemptFailure": "The first attempt's line-oriented Git-status handling was replaced by the frozen NUL-delimited parser.",
+    "secondAttemptFailure": "The second attempt's omitted deterministic pilot-analysis dependencies were added to the frozen path and validation boundary.",
+    "thirdAttemptResult": "passed",
+    "retainedProductionMutation": true,
+    "automaticRetryUsed": false
+  },
+  "interpretation": {
+    "canaryPopulation": 10,
+    "fullProductionPopulation": 195,
+    "productionAssessmentsNowUsingFrozenReassessmentCandidates": 10,
+    "productionAssessmentsRemainingOutsideThisCanary": 185,
+    "remainingPopulationAuthorizedByThisExecution": false,
+    "judgmentModelsExecuted": 0,
+    "scoresRerun": 0,
+    "publicationAssessmentProseRewritten": 0,
+    "meteredApiCostUsd": 0
+  },
+  "controlsPreserved": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "stopRulesPreserved": true
+  },
+  "decision": {
+    "canaryPassed": true,
+    "commitAndPushCanary": true,
+    "authorizeRemaining185Debates": false,
+    "prepareRemainingBatchWorkWithoutNewAuthorization": false
+  },
+  "nextAuthorizedAction": "none-under-this-activation-remaining-production-batches-require-a-new-authorized-gate"
+}
