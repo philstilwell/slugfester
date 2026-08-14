@@ -1,0 +1,1782 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-01-decomposed-consensus",
+  "debateNumber": "31",
+  "debateId": "oconnor-craig-resurrection-2023",
+  "moveDisputes": [
+    {
+      "moveId": "con-bones-defeat-experiential-warrant",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-experiential-warrant-and-factual-defeaters"
+              ],
+              "components": [
+                {
+                  "componentId": "con-bones-defeat-experiential-warrant-component-01",
+                  "targetMoveId": "pro-experiential-warrant-and-factual-defeaters",
+                  "text": "Whether conclusive factual contradiction overrides experiential warrant.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-experiential-warrant-and-factual-defeaters"
+              ],
+              "components": [
+                {
+                  "componentId": "con-bones-defeat-experiential-warrant-component-01",
+                  "targetMoveId": "pro-experiential-warrant-and-factual-defeaters",
+                  "text": "Whether powerful personal experience remains rationally controlling when conclusive public facts contradict resurrection.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 88,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 93,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-equal-standard-and-pragmatic-stakes",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-bones-defeat-experiential-warrant"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-equal-standard-and-pragmatic-stakes-component-01",
+                  "targetMoveId": "con-bones-defeat-experiential-warrant",
+                  "text": "Whether conclusive bones evidence would override personal experience.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 48
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-bones-defeat-experiential-warrant"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-equal-standard-and-pragmatic-stakes-component-01",
+                  "targetMoveId": "con-bones-defeat-experiential-warrant",
+                  "text": "Whether conclusive discovery of Jesus's bones would override personal experiential warrant.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 49
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 67,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "subsidiary",
+                "bridgeId": "bridge-con-subsidiary-consequence"
+              }
+            },
+            "candidate2": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "bridge-pro-subsidiary-standard"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 84
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-divine-intent-evidence-expectation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 19,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-equal-standard-and-pragmatic-stakes",
+                "pro-experiential-warrant-and-factual-defeaters"
+              ],
+              "components": [
+                {
+                  "componentId": "con-divine-intent-evidence-expectation-component-01",
+                  "targetMoveId": "pro-equal-standard-and-pragmatic-stakes",
+                  "text": "Whether ordinary historical standards suffice for this resurrection claim.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-divine-intent-evidence-expectation-component-02",
+                  "targetMoveId": "pro-experiential-warrant-and-factual-defeaters",
+                  "text": "Whether nonhistorical warrant changes the expected public evidence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-equal-standard-and-pragmatic-stakes"
+              ],
+              "components": [
+                {
+                  "componentId": "con-divine-intent-evidence-expectation-component-01",
+                  "targetMoveId": "pro-equal-standard-and-pragmatic-stakes",
+                  "text": "Whether resurrection should be assessed by the same evidential standard as ordinary historical claims.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-divine-intent-evidence-expectation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-likelihood-ratio-over-extraordinary-evidence-rule-component-01",
+                  "targetMoveId": "con-divine-intent-evidence-expectation",
+                  "text": "Whether extraordinary claims categorically require extraordinary evidence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-likelihood-ratio-over-extraordinary-evidence-rule-component-02",
+                  "targetMoveId": "con-divine-intent-evidence-expectation",
+                  "text": "Whether divine intent predicts substantially stronger public evidence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-divine-intent-evidence-expectation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-likelihood-ratio-over-extraordinary-evidence-rule-component-01",
+                  "targetMoveId": "con-divine-intent-evidence-expectation",
+                  "text": "Whether ordinary-quality evidence can adequately support an extraordinary event attributed to an intending God.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 92,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 92
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 86,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 89,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-resurrection-low-prior",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-likelihood-ratio-over-extraordinary-evidence-rule"
+              ],
+              "components": [
+                {
+                  "componentId": "con-resurrection-low-prior-component-01",
+                  "targetMoveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+                  "text": "Whether comparative weakness of alternatives overcomes resurrection's low prior.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-likelihood-ratio-over-extraordinary-evidence-rule"
+              ],
+              "components": [
+                {
+                  "componentId": "con-resurrection-low-prior-component-01",
+                  "targetMoveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+                  "text": "Whether comparative weakness of alternatives and ordinary evidence can overcome resurrection's exceptionally low prior.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-theistic-context-for-miracle-prior",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-resurrection-low-prior"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-theistic-context-for-miracle-prior-component-01",
+                  "targetMoveId": "con-resurrection-low-prior",
+                  "text": "Whether resurrection retains an extraordinarily low prior if a creator God exists.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-resurrection-low-prior"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-theistic-context-for-miracle-prior-component-01",
+                  "targetMoveId": "con-resurrection-low-prior",
+                  "text": "Whether resurrection retains an exceptionally low prior once independently supported theism is included in the background.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-five-facts-best-explanation-case",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "constructive-opening",
+              "decisiveTargetIds": [],
+              "components": [],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 74
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-sincere-error-grief-hallucination",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-five-facts-best-explanation-case"
+              ],
+              "components": [
+                {
+                  "componentId": "con-sincere-error-grief-hallucination-component-01",
+                  "targetMoveId": "pro-five-facts-best-explanation-case",
+                  "text": "Whether transformed sincere belief requires the resurrection to be true.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-five-facts-best-explanation-case"
+              ],
+              "components": [
+                {
+                  "componentId": "con-sincere-error-grief-hallucination-component-01",
+                  "targetMoveId": "pro-five-facts-best-explanation-case",
+                  "text": "Whether transformed disciple conviction and reported appearances require resurrection rather than sincere mistake.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 71
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-hallucination-scope-and-power-objection",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-sincere-error-grief-hallucination"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hallucination-scope-and-power-objection-component-01",
+                  "targetMoveId": "con-sincere-error-grief-hallucination",
+                  "text": "Whether hallucination explains bodily-resurrection belief and the empty tomb.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-sincere-error-grief-hallucination"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-hallucination-scope-and-power-objection-component-01",
+                  "targetMoveId": "con-sincere-error-grief-hallucination",
+                  "text": "Whether grief-induced hallucinations can explain bodily-resurrection belief and the full proposed historical data.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-underlying-reports-unreliable",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-five-facts-best-explanation-case",
+                "pro-hallucination-scope-and-power-objection"
+              ],
+              "components": [
+                {
+                  "componentId": "con-underlying-reports-unreliable-component-01",
+                  "targetMoveId": "pro-five-facts-best-explanation-case",
+                  "text": "Whether appearance reports are sufficiently reliable to count as established facts.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-underlying-reports-unreliable-component-02",
+                  "targetMoveId": "pro-hallucination-scope-and-power-objection",
+                  "text": "Whether group appearances and the empty-tomb data require a hallucination explanation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-five-facts-best-explanation-case",
+                "pro-hallucination-scope-and-power-objection"
+              ],
+              "components": [
+                {
+                  "componentId": "con-underlying-reports-unreliable-component-01",
+                  "targetMoveId": "pro-five-facts-best-explanation-case",
+                  "text": "Whether appearance reports and related claims are sufficiently reliable to count as established historical facts.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-underlying-reports-unreliable-component-02",
+                  "targetMoveId": "pro-hallucination-scope-and-power-objection",
+                  "text": "Whether group appearances and the inspectable empty-tomb premise rest on reliable underlying reports.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 94,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-early-and-independent-core-data-support",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-underlying-reports-unreliable"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-early-and-independent-core-data-support-component-01",
+                  "targetMoveId": "con-underlying-reports-unreliable",
+                  "text": "Whether early and independent support establishes the core appearance data.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-underlying-reports-unreliable"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-early-and-independent-core-data-support-component-01",
+                  "targetMoveId": "con-underlying-reports-unreliable",
+                  "text": "Whether the core postmortem reports are too late, isolated, or unevenly attested to establish historical data.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-appearance-legendary-development",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-early-and-independent-core-data-support"
+              ],
+              "components": [
+                {
+                  "componentId": "con-appearance-legendary-development-component-01",
+                  "targetMoveId": "pro-early-and-independent-core-data-support",
+                  "text": "Whether the appearance traditions remain stable rather than developing over time.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-early-and-independent-core-data-support"
+              ],
+              "components": [
+                {
+                  "componentId": "con-appearance-legendary-development-component-01",
+                  "targetMoveId": "pro-early-and-independent-core-data-support",
+                  "text": "Whether early and independent support defeats the inference of legendary growth in resurrection appearances.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 90,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 88
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-early-sources-against-legend",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-appearance-legendary-development"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-early-sources-against-legend-component-01",
+                  "targetMoveId": "con-appearance-legendary-development",
+                  "text": "Whether early source material defeats the legendary-development inference.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-appearance-legendary-development"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-early-sources-against-legend-component-01",
+                  "targetMoveId": "con-appearance-legendary-development",
+                  "text": "Whether increasingly elaborate gospel narratives justify treating postmortem appearances as late legendary development.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 89,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-experiential-warrant-and-factual-defeaters",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-experiential-warrant-and-factual-defeaters",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-bones-defeat-experiential-warrant",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 88,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-bones-defeat-experiential-warrant",
+      "fieldKey": "representationalCharity",
+      "candidate1": 93,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "pro-equal-standard-and-pragmatic-stakes",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-divine-intent-evidence-expectation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-divine-intent-evidence-expectation",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 92,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 86,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+      "fieldKey": "representationalCharity",
+      "candidate1": 89,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-resurrection-low-prior",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-resurrection-low-prior",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "pro-theistic-context-for-miracle-prior",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 90,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-theistic-context-for-miracle-prior",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-five-facts-best-explanation-case",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-five-facts-best-explanation-case",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "con-sincere-error-grief-hallucination",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-sincere-error-grief-hallucination",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "pro-hallucination-scope-and-power-objection",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-underlying-reports-unreliable",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "con-underlying-reports-unreliable",
+      "fieldKey": "representationalCharity",
+      "candidate1": 94,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "pro-early-and-independent-core-data-support",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-early-and-independent-core-data-support",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-early-and-independent-core-data-support",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-appearance-legendary-development",
+      "fieldKey": "representationalCharity",
+      "candidate1": 90,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "pro-early-sources-against-legend",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 89,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-early-sources-against-legend",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-early-sources-against-legend",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 92
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "importance values",
+            "move ratings",
+            "response links",
+            "section weights"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "importance values",
+            "move ratings",
+            "response links",
+            "section weights"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "31",
+      "moves": 14,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 14,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch01IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}

@@ -1,0 +1,2618 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-01-decomposed-consensus",
+  "debateNumber": "195",
+  "debateId": "russell-copleston-existence-of-god-1948",
+  "moveDisputes": [
+    {
+      "moveId": "pro-totality-external-sufficient-reason",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 84
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 60
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 72,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 91,
+          "candidate2": 93,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-necessary-existence-analytic",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-totality-external-sufficient-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-necessary-existence-analytic-component-01",
+                  "targetMoveId": "pro-totality-external-sufficient-reason",
+                  "text": "The proposed external reason must be a coherent necessary being rather than another unexplained existent.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-totality-external-sufficient-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-necessary-existence-analytic-component-01",
+                  "targetMoveId": "pro-totality-external-sufficient-reason",
+                  "text": "Whether the proposed external reason can coherently be a necessary being.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-necessary-existence-analytic-component-02",
+                  "targetMoveId": "pro-totality-external-sufficient-reason",
+                  "text": "Whether the totality requires any external sufficient reason at all.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 76,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 66,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 66,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 67
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-necessary-conditional-from-contingency",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-necessary-existence-analytic"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-necessary-conditional-from-contingency-component-01",
+                  "targetMoveId": "con-necessary-existence-analytic",
+                  "text": "A necessary conclusion may be conditional on an empirically discovered contingent being rather than resting on an analytic existential premise.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-necessary-existence-analytic"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-necessary-conditional-from-contingency-component-01",
+                  "targetMoveId": "con-necessary-existence-analytic",
+                  "text": "Whether an empirical premise can support a necessary conditional inference without itself being analytic.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 64,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 65
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 82,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-existence-not-predicate",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-necessary-conditional-from-contingency",
+                "pro-totality-external-sufficient-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-existence-not-predicate-component-01",
+                  "targetMoveId": "pro-necessary-conditional-from-contingency",
+                  "text": "The asserted necessary being appears to require treating its existence as analytically included in its essence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-existence-not-predicate-component-02",
+                  "targetMoveId": "pro-totality-external-sufficient-reason",
+                  "text": "The external sufficient reason must be characterized without illegitimately making existence a predicate of a named being.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-necessary-conditional-from-contingency",
+                "pro-totality-external-sufficient-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-existence-not-predicate-component-01",
+                  "targetMoveId": "pro-necessary-conditional-from-contingency",
+                  "text": "Whether the claimed necessary being avoids an ontological inference that treats existence as a predicate.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-existence-not-predicate-component-02",
+                  "targetMoveId": "pro-totality-external-sufficient-reason",
+                  "text": "Whether contingent totality requires an external sufficient reason.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 79
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-experiential-inference-essence-existence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-existence-not-predicate",
+                "con-necessary-existence-analytic"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-experiential-inference-essence-existence-component-01",
+                  "targetMoveId": "con-existence-not-predicate",
+                  "text": "God's existence is inferred from experience before essence-existence identity is argued, so existence is not inserted into an a priori definition.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-experiential-inference-essence-existence-component-02",
+                  "targetMoveId": "con-necessary-existence-analytic",
+                  "text": "Knowledge of the relevant being begins from experience rather than an analytic existential proposition.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-existence-not-predicate",
+                "con-necessary-existence-analytic"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-experiential-inference-essence-existence-component-01",
+                  "targetMoveId": "con-existence-not-predicate",
+                  "text": "Whether Copleston's argument defines God into existence or begins from experience.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-experiential-inference-essence-existence-component-02",
+                  "targetMoveId": "con-necessary-existence-analytic",
+                  "text": "Whether necessary existence must be known through an analytic proposition.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 85,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-no-cause-of-totality",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-totality-external-sufficient-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-no-cause-of-totality-component-01",
+                  "targetMoveId": "pro-totality-external-sufficient-reason",
+                  "text": "Explanatory practices concerning particular objects do not by themselves license a causal or sufficient-reason demand for their totality.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-experiential-inference-essence-existence",
+                "pro-necessary-conditional-from-contingency",
+                "pro-totality-external-sufficient-reason"
+              ],
+              "components": [
+                {
+                  "componentId": "con-no-cause-of-totality-component-01",
+                  "targetMoveId": "pro-totality-external-sufficient-reason",
+                  "text": "Whether causal explanation of particulars licenses a cause or sufficient reason for their totality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-no-cause-of-totality-component-02",
+                  "targetMoveId": "pro-necessary-conditional-from-contingency",
+                  "text": "Whether experience of contingency entails a necessary being.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-no-cause-of-totality-component-03",
+                  "targetMoveId": "pro-experiential-inference-essence-existence",
+                  "text": "Whether the inferred being has identical essence and existence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 75,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-mystical-experience-objective-cause",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 71,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 62,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 62
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 67,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 67
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 88,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-private-reports-parity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-mystical-experience-objective-cause"
+              ],
+              "components": [
+                {
+                  "componentId": "con-private-reports-parity-component-01",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "The same private experiential confidence supports incompatible supernatural objects, so testimonial phenomenology does not discriminate God.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-mystical-experience-objective-cause"
+              ],
+              "components": [
+                {
+                  "componentId": "con-private-reports-parity-component-01",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "Whether private mystical conviction discriminates God from incompatible reported objects.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 95
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 89,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 81,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 85,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-transformation-not-verification",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-mystical-experience-objective-cause"
+              ],
+              "components": [
+                {
+                  "componentId": "con-transformation-not-verification-component-01",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "Wholesome transformation caused by an experience does not verify that the experience has an object outside the subject.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-mystical-experience-objective-cause"
+              ],
+              "components": [
+                {
+                  "componentId": "con-transformation-not-verification-component-01",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "Whether profound beneficial transformation verifies a reality external to the experiencer.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-transformation-not-verification-component-02",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "Whether the phenomenology itself is better explained by an objective transcendent cause.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 81
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-beneficial-fiction-counterexample",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-mystical-experience-objective-cause"
+              ],
+              "components": [
+                {
+                  "componentId": "con-beneficial-fiction-counterexample-component-01",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "Beneficial influence from a loved figure does not establish that the figure exists, because fictional figures can produce the same effect.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-mystical-experience-objective-cause"
+              ],
+              "components": [
+                {
+                  "componentId": "con-beneficial-fiction-counterexample-component-01",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "Whether beneficial influence from a loved apparent object establishes that object's existence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-beneficial-fiction-counterexample-component-02",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "Whether mystical phenomenology independently warrants an objective cause.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 87,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 80,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 79,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 82
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-goodness-definition-circularity",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-mystical-experience-objective-cause"
+              ],
+              "components": [
+                {
+                  "componentId": "con-goodness-definition-circularity-component-01",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "The objective-cause inference from mystical phenomenology requires independent discrimination from subjective explanations.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 54
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-mystical-experience-objective-cause"
+              ],
+              "components": [
+                {
+                  "componentId": "con-goodness-definition-circularity-component-01",
+                  "targetMoveId": "pro-mystical-experience-objective-cause",
+                  "text": "Whether mystical awareness is better explained by an objective transcendent cause.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 54
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 89
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 84,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-goodness-reflects-divine-source",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-goodness-definition-circularity"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-goodness-reflects-divine-source-component-01",
+                  "targetMoveId": "con-goodness-definition-circularity",
+                  "text": "Goodness is not simply identical with God; it reflects and proceeds from God, and that interpretation depends on independently recognizing God.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-goodness-definition-circularity"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-goodness-reflects-divine-source-component-01",
+                  "targetMoveId": "con-goodness-definition-circularity",
+                  "text": "Whether Copleston is merely defining God as the sum or system of goodness.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 92
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 24,
+          "candidate2": 22,
+          "roundedMeanAfterAdjudication": 23
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 94,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-moral-feeling-account",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-goodness-reflects-divine-source"
+              ],
+              "components": [
+                {
+                  "componentId": "con-moral-feeling-account-component-01",
+                  "targetMoveId": "pro-goodness-reflects-divine-source",
+                  "text": "The claim that genuine goodness reflects and proceeds from God requires support beyond prior recognition of God.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 58
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-goodness-reflects-divine-source"
+              ],
+              "components": [
+                {
+                  "componentId": "con-moral-feeling-account-component-01",
+                  "targetMoveId": "pro-goodness-reflects-divine-source",
+                  "text": "Whether goodness reflects and proceeds from an independently recognized divine source.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 57
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 68
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 70,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 64,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 65
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-objective-criterion-beyond-feeling",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-moral-feeling-account"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-objective-criterion-beyond-feeling-component-01",
+                  "targetMoveId": "con-moral-feeling-account",
+                  "text": "Feeling alone cannot supply a correctness standard when agents feel differently about conduct, including atrocious conduct.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-moral-feeling-account"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-objective-criterion-beyond-feeling-component-01",
+                  "targetMoveId": "con-moral-feeling-account",
+                  "text": "Whether feeling alone supplies a standard for condemning morally atrocious conduct.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 81,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-transcendent-ground-of-moral-law",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 72,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 72
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 61,
+          "candidate2": 60,
+          "roundedMeanAfterAdjudication": 61
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 63,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 64
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 90,
+          "candidate2": 94,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-historical-moral-variation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 23,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-transcendent-ground-of-moral-law"
+              ],
+              "components": [
+                {
+                  "componentId": "con-historical-moral-variation-component-01",
+                  "targetMoveId": "pro-transcendent-ground-of-moral-law",
+                  "text": "Historically changing perceptions of duty challenge the asserted absoluteness and universal recognition of moral law.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 67
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-transcendent-ground-of-moral-law"
+              ],
+              "components": [
+                {
+                  "componentId": "con-historical-moral-variation-component-01",
+                  "targetMoveId": "pro-transcendent-ground-of-moral-law",
+                  "text": "Whether moral law is absolute given substantial historical change in perceived duties.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 60
+            },
+            "candidate2": {
+              "value": 68
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 55,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 56
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-objective-ideal-moral-order",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-historical-moral-variation",
+                "con-moral-feeling-account"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-objective-ideal-moral-order-component-01",
+                  "targetMoveId": "con-historical-moral-variation",
+                  "text": "The possibility of criticizing accepted codes distinguishes variable moral beliefs from an objective ideal standard.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-objective-ideal-moral-order-component-02",
+                  "targetMoveId": "con-moral-feeling-account",
+                  "text": "An objective ideal order supplies a correctness standard beyond the feelings or conventions of a group.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-historical-moral-variation",
+                "con-moral-feeling-account"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-objective-ideal-moral-order-component-01",
+                  "targetMoveId": "con-historical-moral-variation",
+                  "text": "Whether changing accepted codes defeats an objective ideal moral order.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-objective-ideal-moral-order-component-02",
+                  "targetMoveId": "con-moral-feeling-account",
+                  "text": "Whether moral criticism requires a standard beyond feeling and accepted practice.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 65,
+          "candidate2": 66,
+          "roundedMeanAfterAdjudication": 66
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 65,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 67
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-naturalistic-obligation-account",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-objective-ideal-moral-order",
+                "pro-transcendent-ground-of-moral-law"
+              ],
+              "components": [
+                {
+                  "componentId": "con-naturalistic-obligation-account-component-01",
+                  "targetMoveId": "pro-objective-ideal-moral-order",
+                  "text": "The experienced sense of ought can be explained through imagined disapproval, custom, taboo, environment, and education rather than God.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-naturalistic-obligation-account-component-02",
+                  "targetMoveId": "pro-transcendent-ground-of-moral-law",
+                  "text": "A naturalistic causal account is offered for moral obligation, opposing the claim that a transcendent lawgiver best explains it.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-objective-ideal-moral-order",
+                "pro-transcendent-ground-of-moral-law"
+              ],
+              "components": [
+                {
+                  "componentId": "con-naturalistic-obligation-account-component-01",
+                  "targetMoveId": "pro-transcendent-ground-of-moral-law",
+                  "text": "Whether the sense of obligation requires a transcendent author rather than natural social formation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-naturalistic-obligation-account-component-02",
+                  "targetMoveId": "pro-objective-ideal-moral-order",
+                  "text": "Whether objective criticism and obligatory character require a divine foundation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 63
+            },
+            "candidate2": {
+              "value": 70
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 64,
+          "candidate2": 67,
+          "roundedMeanAfterAdjudication": 66
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-totality-external-sufficient-reason",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 72,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-totality-external-sufficient-reason",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 91,
+      "candidate2": 93,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-necessary-existence-analytic",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 76,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-necessary-existence-analytic",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 66,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-necessary-existence-analytic",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-necessary-existence-analytic",
+      "fieldKey": "representationalCharity",
+      "candidate1": 66,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "pro-necessary-conditional-from-contingency",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 64,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "pro-necessary-conditional-from-contingency",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-necessary-conditional-from-contingency",
+      "fieldKey": "representationalCharity",
+      "candidate1": 82,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-existence-not-predicate",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-experiential-inference-essence-existence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "pro-experiential-inference-essence-existence",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-experiential-inference-essence-existence",
+      "fieldKey": "representationalCharity",
+      "candidate1": 85,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-no-cause-of-totality",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-no-cause-of-totality",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-no-cause-of-totality",
+      "fieldKey": "representationalCharity",
+      "candidate1": 75,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "pro-mystical-experience-objective-cause",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 71,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "pro-mystical-experience-objective-cause",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 62,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 62
+    },
+    {
+      "moveId": "pro-mystical-experience-objective-cause",
+      "fieldKey": "representationalCharity",
+      "candidate1": 67,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "pro-mystical-experience-objective-cause",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 88,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-private-reports-parity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 89,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-private-reports-parity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 81,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-private-reports-parity",
+      "fieldKey": "representationalCharity",
+      "candidate1": 85,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-transformation-not-verification",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-transformation-not-verification",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "con-transformation-not-verification",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-transformation-not-verification",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-beneficial-fiction-counterexample",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 87,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "con-beneficial-fiction-counterexample",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 80,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-beneficial-fiction-counterexample",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-beneficial-fiction-counterexample",
+      "fieldKey": "representationalCharity",
+      "candidate1": 79,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-goodness-definition-circularity",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 90,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "con-goodness-definition-circularity",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 84,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-goodness-definition-circularity",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-goodness-reflects-divine-source",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "pro-goodness-reflects-divine-source",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "pro-goodness-reflects-divine-source",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 24,
+      "candidate2": 22,
+      "roundedMeanAfterAdjudication": 23
+    },
+    {
+      "moveId": "pro-goodness-reflects-divine-source",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 94,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "con-moral-feeling-account",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 70,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "con-moral-feeling-account",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 64,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "con-moral-feeling-account",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-objective-criterion-beyond-feeling",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-objective-criterion-beyond-feeling",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-objective-criterion-beyond-feeling",
+      "fieldKey": "representationalCharity",
+      "candidate1": 81,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-transcendent-ground-of-moral-law",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 72,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "pro-transcendent-ground-of-moral-law",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 61,
+      "candidate2": 60,
+      "roundedMeanAfterAdjudication": 61
+    },
+    {
+      "moveId": "pro-transcendent-ground-of-moral-law",
+      "fieldKey": "representationalCharity",
+      "candidate1": 63,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 64
+    },
+    {
+      "moveId": "pro-transcendent-ground-of-moral-law",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 90,
+      "candidate2": 94,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-historical-moral-variation",
+      "fieldKey": "representationalCharity",
+      "candidate1": 55,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 56
+    },
+    {
+      "moveId": "pro-objective-ideal-moral-order",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 65,
+      "candidate2": 66,
+      "roundedMeanAfterAdjudication": 66
+    },
+    {
+      "moveId": "pro-objective-ideal-moral-order",
+      "fieldKey": "representationalCharity",
+      "candidate1": 65,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 67
+    },
+    {
+      "moveId": "con-naturalistic-obligation-account",
+      "fieldKey": "representationalCharity",
+      "candidate1": 64,
+      "candidate2": 67,
+      "roundedMeanAfterAdjudication": 66
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact judgments",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden contact judgments",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "195",
+      "moves": 18,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 18,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch01IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
