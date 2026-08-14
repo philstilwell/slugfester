@@ -1,0 +1,2152 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "52",
+  "debateId": "horn-dillahunty-resurrection-reasonable-2021",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-reasonable-resurrection-belief",
+      "side": "pro",
+      "description": "Establish an objective standard under which unusual historical beliefs can be reasonable, show that the resurrection reports constitute admissible testimony, and argue that the relevant facts, expected evidence, and comparative explanations leave divine resurrection as a reasonable account.",
+      "successCriteria": "The route succeeds if historical testimony can warrant an unusual event, the cited resurrection materials support sincere postmortem-experience claims, ordinary alternatives do not explain the relevant evidence equally well, and divine agency remains compatible with the applicable background knowledge and expected evidence.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-reasonable-belief",
+        "tier": "motion",
+        "description": "Connect the historical and explanatory case to the conclusion that believing Jesus rose can be reasonable without requiring personal conviction or certainty."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-epistemic-standard",
+          "tier": "central",
+          "description": "Supply a determinate standard for reasonable belief in an unusual historical event based on established facts, expected evidence, and comparative explanations."
+        },
+        {
+          "bridgeId": "pro-central-testimonial-foundation",
+          "tier": "central",
+          "description": "Establish that the historical sources provide evidentially relevant testimony to sincere experiences and proclamations associated with Jesus after his death."
+        },
+        {
+          "bridgeId": "pro-central-comparative-explanation",
+          "tier": "central",
+          "description": "Show why legend, deception, error, hallucination, or transmission accounts do not explain the relevant testimonial and historical claims as adequately as resurrection."
+        },
+        {
+          "bridgeId": "pro-central-divine-possibility",
+          "tier": "central",
+          "description": "Preserve divine resurrection as an available explanation by defending the possibility of divine agency and rejecting a presumption that natural regularity excludes exceptions."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-testimony-method",
+          "tier": "subsidiary",
+          "description": "Explain why testimony and historical inquiry can convey knowledge even when direct physical inspection or experimental replication is unavailable."
+        },
+        {
+          "bridgeId": "pro-subsidiary-sincerity-counterevidence",
+          "tier": "subsidiary",
+          "description": "Clarify the evidential role of costly witness commitment and identify what kinds of contrary historical evidence could undermine the resurrection case."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-unreasonable-resurrection-belief",
+      "side": "con",
+      "description": "Distinguish the reasonableness of accepting resurrection from the event's truth, require evidence proportioned to background knowledge and the claim's unusual character, and argue that inaccessible testimony without adequate corroboration does not warrant accepting resurrection over ordinary human error.",
+      "successCriteria": "The route succeeds if the available ancient reports cannot be sufficiently verified or corroborated, ordinary error or transmission remains more consistent with established experience, supernatural agency lacks independent warrant, and the evidence falls short of what accepting this unusual historical claim reasonably requires.",
+      "motionBridge": {
+        "bridgeId": "con-motion-unwarranted-acceptance",
+        "tier": "motion",
+        "description": "Connect the evidential deficiencies to the conclusion that accepting the resurrection is unreasonable without undertaking to prove that it did not occur."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-background-standard",
+          "tier": "central",
+          "description": "Ground reasonable acceptance in established knowledge about reality and require stronger support when testimony conflicts with well-supported background experience."
+        },
+        {
+          "bridgeId": "con-central-source-limitations",
+          "tier": "central",
+          "description": "Show that ancient testimonial chains cannot be adequately identified, questioned, reconciled, or physically corroborated for the resurrection conclusion."
+        },
+        {
+          "bridgeId": "con-central-ordinary-alternatives",
+          "tier": "central",
+          "description": "Maintain that mistake, deception, interpretive error, or distorted transmission remains a more warranted account of resurrection reports than a supernatural event."
+        },
+        {
+          "bridgeId": "con-central-supernatural-warrant",
+          "tier": "central",
+          "description": "Require independent demonstration of supernatural possibility before divine action can function as a warranted explanation of the historical reports."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-expected-evidence",
+          "tier": "subsidiary",
+          "description": "Compare the surviving record with the stronger and more accessible evidence that a capable relational deity or a confirmed resurrection phenomenon could provide."
+        },
+        {
+          "bridgeId": "con-subsidiary-sincerity-distinction",
+          "tier": "subsidiary",
+          "description": "Separate evidence that witnesses sincerely held a belief from evidence that their interpretation of the reported experience was accurate."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-reasonableness-and-burdens",
+      "title": "Reasonableness Standards and Debate Burdens",
+      "weightPercent": 20,
+      "rationale": "The motion turns on the threshold for justified acceptance rather than solely on whether the event occurred, making the competing definitions of reasonableness, conviction, and burden foundational to every later issue."
+    },
+    {
+      "sectionId": "section-historical-testimony",
+      "title": "Historical Testimony and Source Reliability",
+      "weightPercent": 24,
+      "rationale": "The resurrection case depends principally on ancient reports, so the evidential status of testimony, the accessibility and reliability of the sources, and the legitimacy of historical inference form a major shared issue."
+    },
+    {
+      "sectionId": "section-competing-explanations",
+      "title": "Resurrection and Ordinary Alternative Explanations",
+      "weightPercent": 20,
+      "rationale": "The motion requires comparing resurrection with error, deception, legend, hallucination, misidentification, and transmission accounts rather than assessing the reports without explanatory alternatives."
+    },
+    {
+      "sectionId": "section-background-knowledge",
+      "title": "Background Knowledge, Natural Regularity, and Divine Agency",
+      "weightPercent": 16,
+      "rationale": "Whether resurrection is a live explanatory possibility depends on the role of established natural regularities, the warranted scope of scientific inquiry, and any independent basis for supernatural or divine agency."
+    },
+    {
+      "sectionId": "section-expected-evidence",
+      "title": "Expected Evidence, Corroboration, and Falsifiability",
+      "weightPercent": 12,
+      "rationale": "The presence or absence of physical corroboration, accessible witnesses, modern confirmation, divine disclosure, and potential counterevidence bears directly on what evidence should be expected if the claim were true."
+    },
+    {
+      "sectionId": "section-sincerity-and-sufficiency",
+      "title": "Witness Sincerity and Evidential Sufficiency",
+      "weightPercent": 8,
+      "rationale": "Costly commitment and multiple attestations may bear on sincerity, while the dispute over sufficient evidence determines whether sincerity and accumulated testimony can support the further resurrection inference."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-reasonableness-three-part-test",
+      "sectionId": "section-reasonableness-and-burdens",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Belief in an unusual event is reasonable when it contradicts no established subject-specific fact, lacks no evidence expected if true, and faces no equally adequate ordinary explanation.",
+      "sourceSpan": {
+        "startEvent": 73,
+        "endEvent": 173
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly enumerates three tests in the same uninterrupted affirmative opening and illustrates each test in sequence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-reasonable-belief"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the affirmative route's governing three-part standard and therefore has no earlier opposing target to answer.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it clearly and systematically establishes the framework used throughout the affirmative case."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The three conditions are expressly enumerated, consistently framed, and limited to assessing unusual-event beliefs."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The framework is clearly qualified by three stated conditions, though their joint sufficiency is asserted more than independently defended."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The three conditions form a consistent usable test, with only the sufficiency bridge left somewhat implicit."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Examples illustrate the conditions effectively, but the claim that these exhaust reasonableness requirements remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supplies the affirmative motion-level criterion for when resurrection belief may count as reasonable."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally states an affirmative standard rather than interpreting a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly introduces the expected-evidence condition and then the equal-ordinary-explanation condition as parts of the stated test.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-testimony-and-early-experiences",
+      "sectionId": "section-historical-testimony",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Historical testimony is evidence rather than a bare unsupported claim, and early sources support authentic experiences underlying the disciples' resurrection proclamations.",
+      "sourceSpan": {
+        "startEvent": 174,
+        "endEvent": 244
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Trent identifies Matt's position from previous debates and answers it with historical analogies, early Christian sources, and scholarly testimony.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-testimonial-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This opening constructive move establishes historical testimony and early experience claims without an earlier locked opposing move requiring a response.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within constructive moves, it supplies several directly relevant historical considerations but compresses source verification and independence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The testimonial conclusion is recoverable, but references to authentic experience and universal scholarly agreement require bounded interpretation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Early communities and sources support some experience claims, but the broad scholarly and reliability language exceeds the excerpt's documentation."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from early sources and community formation to authentic underlying experiences is coherent but leaves a bounded transmission bridge."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Named sources and historical considerations are relevant, while reliability, independence, and the universal-consensus claim remain underdocumented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It closely supports the indispensable testimonial foundation by arguing for early sincere resurrection-related experience claims."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The selected span primarily develops positive historical support rather than testing a fully stated opposing alternative."
+        }
+      },
+      "evidenceBasis": "The evidence invokes Luke, Acts, Peter's proclamation, rapid church formation, and scholarly agreement about an authentic experiential foundation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-ordinary-alternatives-comparison",
+      "sectionId": "section-competing-explanations",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "Legend, deceit, and hallucination do not explain the reported group appearances, unexpected conversions, empty-tomb evidence, and sincere proclamations as adequately as resurrection.",
+      "sourceSpan": {
+        "startEvent": 245,
+        "endEvent": 382
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted affirmative opening explicitly evaluates competing explanations and then addresses whether supernatural explanations are arbitrary.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-comparative-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive opening move compares several ordinary explanations with resurrection before any earlier locked opposing move exists to target.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it performs an extensive comparative function central to the affirmative route, albeit with compressed rival analysis."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The rivals and evidential features are identifiable, but claims about group embodiment and tomb checking are broader than the excerpt fully secures."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move treats contested group-appearance and empty-tomb premises as comparatively decisive without fully addressing dependence or alternative transmission."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Legend, deception, hallucination, misidentification, or transmission could generate sincere resurrection reports without an actual resurrection.",
+        "decisiveQualification": "The alternatives need not each explain every reported detail if some details themselves are late, dependent, or uncertain."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The comparative structure is valid, but it implicitly assumes the reliability and joint explanandum status of several contested report features."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Specific features are cited, yet group appearances, rapid verification, and empty-tomb conclusions receive insufficient source and rival-account defense."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the affirmative route's central comparison between resurrection and ordinary explanations."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "Several rival accounts are addressed, but their strongest mixed or transmission-based versions and uncertainty about the explananda are materially compressed."
+        }
+      },
+      "evidenceBasis": "The excerpt relies on embodied group appearances, Jerusalem preaching, potential tomb inspection, and asserted empty-tomb evidence against hallucination accounts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-divine-agency-from-change",
+      "sectionId": "section-background-knowledge",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "constructive",
+      "proposition": "A changing universe ultimately requires an unactualized cause of change whose derived attributes correspond to an immaterial, timeless, powerful, knowledgeable, necessary, good, and personal God.",
+      "sourceSpan": {
+        "startEvent": 384,
+        "endEvent": 442
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Trent announces an argument for God's existence and develops it continuously through the conclusion identifying the ultimate cause with God.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-possibility"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move independently argues for a divine cause and has no earlier locked opposing move whose decisive component it must answer.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it materially supports supernatural availability, though much of the attribute derivation is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The pure-actuality argument is recoverable, but technical terms and the transition to the complete divine attribute set are only partly unpacked."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt supports a proposed changeless cause more directly than it supports every listed personal, moral, and epistemic attribute."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The act-potency chain is intelligible, but several bridges from pure actuality to the full personal God conclusion remain material and implicit."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The argument depends primarily on asserted metaphysical principles and compressed attribute derivations rather than defended representative support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central divine-possibility bridge by offering independent grounds for a divine agent."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The selected move presents a positive metaphysical derivation without substantially interpreting a developed opposing account."
+        }
+      },
+      "evidenceBasis": "The excerpt argues from a changing universe and a non-self-actualizing causal series to pure actuality, changelessness, immateriality, and timelessness.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-reasonableness-reality-standard",
+      "sectionId": "section-reasonableness-and-burdens",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "A claim is reasonable when it accords with what is known to be true and possible in reality, independently of whether the claim ultimately is true.",
+      "sourceSpan": {
+        "startEvent": 523,
+        "endEvent": 564
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the moderator transfers the floor, Matt explicitly asks how reasonableness is determined and states his proposed standard in his uninterrupted opening.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-epistemic-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-reasonableness-three-part-test"
+        ],
+        "components": [
+          {
+            "componentId": "con-reasonableness-reality-standard-component-01",
+            "targetMoveId": "pro-reasonableness-three-part-test",
+            "text": "Whether the affirmative three-part test supplies an adequate objective standard for reasonable unusual-event belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the affirmative standard by proposing consistency with established truth and possibility in reality as a more basic criterion, though it does not separately answer every affirmative condition.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the decisive epistemic-standard component but only partially compares its criterion with all three affirmative tests."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The standard is plainly stated, though what counts as known possibility and consistency with reality remains only partly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The appeal to bias-reducing methods is measured, but the proposed simplest-terms standard is asserted without fully resolving possibility assessment."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The standard coherently connects reasonable acceptance to background knowledge, with a bounded ambiguity about unknown possibilities."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Scientific bias reduction offers relevant methodological support, but the operative possibility criterion receives limited independent defense."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the affirmative central epistemic standard and supplies the con route's competing background criterion."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move advances its own standard and does not materially depend on a characterization of the affirmative beyond identifying the disputed issue."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes cooperative bias-reducing scientific methods and expressly defines reasonableness as consistency with what is known true and possible.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-testimony-insufficient-for-resurrection",
+      "sectionId": "section-sincerity-and-sufficiency",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Hearsay without physical corroboration is insufficient to justify an unverifiable, unfalsifiable resurrection claim carrying life-defining religious consequences.",
+      "sourceSpan": {
+        "startEvent": 567,
+        "endEvent": 684
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt develops this position continuously in his opening through hearsay, courtroom standards, testability, historical reports, and proportional confidence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-testimonial-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-testimony-and-early-experiences",
+          "pro-reasonableness-three-part-test"
+        ],
+        "components": [
+          {
+            "componentId": "con-testimony-insufficient-for-resurrection-component-01",
+            "targetMoveId": "pro-testimony-and-early-experiences",
+            "text": "Whether the cited historical testimony can warrant resurrection despite inaccessible witnesses and absent physical corroboration.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-testimony-insufficient-for-resurrection-component-02",
+            "targetMoveId": "pro-reasonableness-three-part-test",
+            "text": "Whether the expected-evidence condition is satisfied for a life-defining and allegedly unfalsifiable claim.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly challenges testimonial sufficiency and expected evidence by emphasizing hearsay, courtroom comparison, unverifiability, falsifiability, and missing corroboration.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It explicitly contacts both testimonial sufficiency and expected-evidence demands, though the courtroom analogy is not fully defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The insufficiency claim is clear, but hearsay, courtroom standards, unverifiability, and unfalsifiability are not fully distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move proportionally frames confidence but treats courtroom survival and physical corroboration as requirements more strongly than it establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ancient historical testimony may warrant beliefs without laboratory testing or surviving physical evidence.",
+        "decisiveQualification": "The relevant question is whether this testimony is sufficiently identifiable, independent, and reliable for this unusually strong conclusion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The inference from inaccessible hearsay and absent corroboration to withholding acceptance is coherent, though courtroom standards are an imperfect bridge."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Several concrete evidential deficiencies are named, but the universal requirement of physical corroboration and courtroom equivalence remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the affirmative central testimonial foundation and the sufficiency of its historical evidence."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly recognizes historical-report reasoning but presses the heightened corroboration problem, with only a minor omission about ordinary historical practice."
+        }
+      },
+      "evidenceBasis": "The span cites hearsay, courtroom evidentiary standards, lack of physical corroboration, temporal remoteness, unverifiability, and alleged unfalsifiability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-ordinary-error-more-probable",
+      "sectionId": "section-competing-explanations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Deception, mistake, or inaccurate transmission is more probable than resurrection when there is no evidence that resurrection is possible or probable.",
+      "sourceSpan": {
+        "startEvent": 685,
+        "endEvent": 733
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt introduces a second Humean principle, explains its comparative-probability reasoning, and applies it directly to resurrection testimony.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-comparative-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-ordinary-alternatives-comparison",
+          "pro-divine-agency-from-change"
+        ],
+        "components": [
+          {
+            "componentId": "con-ordinary-error-more-probable-component-01",
+            "targetMoveId": "pro-ordinary-alternatives-comparison",
+            "text": "Whether mistake, deception, or distorted transmission remains more probable than resurrection as an explanation of the reports.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-ordinary-error-more-probable-component-02",
+            "targetMoveId": "pro-divine-agency-from-change",
+            "text": "Whether supernatural resurrection has enough prior evidential support to enter the probability comparison.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly rejects the affirmative comparative conclusion by identifying ordinary error mechanisms and challenging the prior evidential availability of resurrection.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the decisive comparative demand and supplies several ordinary rivals, though it does not analyze each affirmative explanandum."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional comparative claim, its ordinary alternatives, and the lack-of-prior-evidence qualification are all clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conditional probability claim is appropriately framed, though absence of demonstrated possibility is treated too quickly as decisive comparative support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The affirmative's combined facts may be poorly explained by any single ordinary error account.",
+        "decisiveQualification": "Ordinary alternatives can be mixed and need not accept every reported feature as independently reliable."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Given its stated background premise, preferring familiar error mechanisms is coherent, with one implicit bridge from possibility evidence to comparative probability."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Mistake, deception, and transmission are genuine alternatives, but no case-specific frequencies or detailed fit comparison are supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the affirmative central comparative-explanation bridge at its central probability inference."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move presents multiple non-lying error routes and avoids reducing the alternative to deliberate fraud, while leaving detailed fact comparison compressed."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly contrasts resurrection with deception, mistake, and inaccurate stories, while conditioning the comparison on absent evidence of resurrection possibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-inaccessible-sources-lack-corroboration",
+      "sectionId": "section-historical-testimony",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The resurrection sources cannot be identified, questioned, reliably reconciled, or physically corroborated, so even purported eyewitness accounts cannot establish the conclusion.",
+      "sourceSpan": {
+        "startEvent": 734,
+        "endEvent": 826
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt explicitly discusses Gospel authorship and eyewitness reliability, inventories missing corroboration, and concludes by contrasting it with evidence God could provide.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-testimonial-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-testimony-and-early-experiences",
+          "pro-ordinary-alternatives-comparison"
+        ],
+        "components": [
+          {
+            "componentId": "con-inaccessible-sources-lack-corroboration-component-01",
+            "targetMoveId": "pro-testimony-and-early-experiences",
+            "text": "Whether the early Christian materials provide sufficiently identifiable, testable, reconcilable, and corroborated testimony.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-inaccessible-sources-lack-corroboration-component-02",
+            "targetMoveId": "pro-ordinary-alternatives-comparison",
+            "text": "Whether unreconciled source differences preserve transmission and reporting error as live alternatives.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly addresses source reliability through anonymity, inability to question witnesses, narrative discrepancies, and absent physical corroboration, while also sustaining transmission alternatives.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the decisive source-access and corroboration premises with multiple concrete limitations."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The source-limitations argument is clear, though the categorical claim that accounts cannot be reconciled is broader than the excerpt demonstrates."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Most limitations are cautiously and concretely stated, but total irreconcilability and inability to establish any conclusion are somewhat stronger."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ancient testimony can remain evidentially useful despite inaccessible authors and some narrative variation.",
+        "decisiveQualification": "Its weight still depends on authorship, independence, consistency, and corroboration appropriate to the resurrection inference."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The connection from inaccessible and unreconciled sources to reduced warrant is direct, with only the strongest categorical conclusion compressed."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Specific verification limitations and account differences are identified, but the claimed irreconcilability is not demonstrated in detail."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the affirmative central testimonial foundation through the precise source limitations disputed in the route."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move targets the strongest evidential qualifications rather than denying that historical texts can ever count as evidence."
+        }
+      },
+      "evidenceBasis": "The excerpt names inability to question source authors, assess reliability directly, reconcile differing narratives, or appeal to surviving physical evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-prior-supernatural-assumptions",
+      "sectionId": "section-background-knowledge",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "proposition": "Resurrection belief appears reasonable only after prior acceptance of supernatural claims that have not themselves been confirmed to interact with reality.",
+      "sourceSpan": {
+        "startEvent": 876,
+        "endEvent": 910
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person continuation of Dillahunty's opening statement is followed by the moderator thanking Matt and Trent.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-supernatural-warrant"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move develops the con route's independent supernatural-warrant objection and has no reply target under the locked move classification.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within constructive moves, it squarely identifies circular prior-supernatural acceptance but offers limited independent analysis of the affirmative metaphysics."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The circularity concern is clear, but the claim that resurrection appears reasonable only after prior supernatural acceptance is broadly scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker frames his inability to accept the inference personally, but generalizes the dependence on prior supernatural belief somewhat strongly."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A cumulative historical case might itself support resurrection without antecedent religious commitment.",
+        "decisiveQualification": "That case must still establish supernatural agency as a warranted competitor rather than merely the least familiar unexplained option."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The anti-circularity objection is coherent, though it risks assuming that supernatural warrant cannot arise within the cumulative case."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Unknown ancient writers and absent confirmed interaction are relevant, but the claim about all resurrection believers' prior assumptions is insufficiently supported."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the con central requirement for independent supernatural warrant before divine action is explanatory."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move identifies the affirmative cumulative inference but somewhat compresses the possibility that historical and metaphysical evidence could be mutually supporting."
+        }
+      },
+      "evidenceBasis": "The span emphasizes no confirmed supernatural interaction and rejects inferring resurrection merely because ancient writings seem extraordinary and no better explanation is offered.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-confirmed-resurrections-would-be-public",
+      "sectionId": "section-expected-evidence",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "If resurrections were established phenomena, confirmed cases would produce conspicuous scientific publications, major recognition, and public demonstrations.",
+      "sourceSpan": {
+        "startEvent": 1165,
+        "endEvent": 1177
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer directly follows Horn's demand for evidence that resurrections do not happen and refers back to Dillahunty's own investigation limits.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-expected-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-ordinary-alternatives-comparison",
+          "pro-divine-agency-from-change"
+        ],
+        "components": [
+          {
+            "componentId": "con-confirmed-resurrections-would-be-public-component-01",
+            "targetMoveId": "pro-ordinary-alternatives-comparison",
+            "text": "Whether resurrection is evidentially available when confirmed instances should produce conspicuous and publicly verifiable results.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-confirmed-resurrections-would-be-public-component-02",
+            "targetMoveId": "pro-divine-agency-from-change",
+            "text": "Whether a metaphysical argument for God supplies empirical evidence that actual resurrections occur.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies issue-bearing expected-evidence considerations and contacts the empirical availability of resurrection, but it does not answer the metaphysical argument for divine agency itself.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It contacts an important empirical component but leaves the separate divine-possibility argument untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The expected publicity proposition is clear, though it shifts between repeated established resurrections and the single ancient claim at issue."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Public recognition is plausible for repeatable confirmed cases, but the inference is less direct for a unique ancient event."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The publicity inference is coherent for established repeatable phenomena, but its application to a unique historical event needs a scope bridge."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Scientific journals, prizes, news, and public demonstrations are plausible expectations, but they are asserted without a developed likelihood model."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary expected-evidence bridge, though it does not itself resolve the central historical claim."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move chiefly states an expected-evidence consequence rather than interpreting a developed alternative account."
+        }
+      },
+      "evidenceBasis": "The excerpt predicts journals, Nobel-level recognition, news demonstrations, and publicly inspectable cases if resurrections were known phenomena.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-burden-withhold-acceptance",
+      "sectionId": "section-reasonableness-and-burdens",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The con burden is to show that resurrection belief is not reasonable, not to prove that the resurrection did not occur.",
+      "sourceSpan": {
+        "startEvent": 1273,
+        "endEvent": 1287
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty begins his allotted cross-examination by thanking Horn for accurately identifying the structure of Dillahunty's stated position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-unwarranted-acceptance"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-reasonableness-three-part-test"
+        ],
+        "components": [
+          {
+            "componentId": "con-burden-withhold-acceptance-component-01",
+            "targetMoveId": "pro-reasonableness-three-part-test",
+            "text": "Whether the motion requires the con side to prove nonoccurrence or only to defeat reasonable affirmative acceptance.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The move justifies a burden reframe that preserves the motion's legitimate issue: con need only show acceptance unwarranted, not establish that resurrection did not occur.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly corrects the burden distinction and states the defeating consequence for what the con side must establish."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between event nonoccurrence, reasonable disbelief, and withholding acceptance is expressly and stably drawn."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The burden claim closely matches the negative motion position and clearly excludes the stronger burden of proving nonoccurrence."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 95,
+          "rationale": "The distinction between rejecting warranted acceptance and proving falsity is explicit, consistent, and directly resolves the burden issue."
+        },
+        "evidenceWarrant": {
+          "value": 90,
+          "rationale": "The proposition is principally a debate-burden clarification and is adequately supported by the stated form of the con position."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supplies the con motion-level bridge from evidential deficiency to warranted withholding rather than contrary proof."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The speaker credits the affirmative for stating this burden accurately, so no adverse alternative interpretation is materially tested."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly says con need not be convinced the event did not happen and distinguishes that from denying reasonable affirmative belief.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-regularity-allows-miracles",
+      "sectionId": "section-background-knowledge",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Uniform natural regularities make genuine exceptions identifiable rather than impossible, and sufficiently reliable testimony can rationally establish an exception to prior uniform experience.",
+      "sourceSpan": {
+        "startEvent": 1472,
+        "endEvent": 1511
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Trent by name, asks about uniform laws and miracles, and Horn gives a sustained first-person answer using two analogies.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-supernatural-warrant"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-ordinary-error-more-probable",
+          "con-prior-supernatural-assumptions"
+        ],
+        "components": [
+          {
+            "componentId": "pro-regularity-allows-miracles-component-01",
+            "targetMoveId": "con-ordinary-error-more-probable",
+            "text": "Whether uniform prior experience itself makes a reported exception irrational or evidentially unavailable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-regularity-allows-miracles-component-02",
+            "targetMoveId": "con-prior-supernatural-assumptions",
+            "text": "Whether treating natural regularity as evidence against exceptions improperly assumes that exceptions cannot be identified.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses that a uniform rule is what makes an exception identifiable, then states that sufficiently reliable testimony can defeat a blanket inference from prior regularity.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly attacks the decisive regularity inference and states why testimony could alter the evidential conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly limits its claim to possible exceptions supported by sincere and reliable testimony rather than asserting all miracle reports."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The cautious possibility claim fits the analogy, though black swans are an ordinary kind and do not fully warrant parity with resurrection."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Uniform experience substantially lowers the prior probability of resurrection even if it does not make exceptions logically impossible.",
+        "decisiveQualification": "A low prior can be overcome only by testimony whose reliability is strong enough relative to ordinary error alternatives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The distinction between regularity and impossibility is sound, but the black-swan analogy leaves a material bridge to supernatural resurrection."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The historical black-swan example supports revisability of experience, while comparability and sufficient reliability of resurrection testimony remain undefended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the con central supernatural-warrant inference that natural regularity excludes evidentially established exceptions."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The reply fairly rejects impossibility but underplays the strongest probabilistic version of the regularity objection and the testimonial threshold it imposes."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that exceptions presuppose general rules and uses testimony about Australian black swans to illustrate rational revision of uniform experience.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-costly-multiple-testimony",
+      "sectionId": "section-sincerity-and-sufficiency",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Multiple sincere witnesses who accept costly punishment can make unusual testimony credible, while testimony is also indispensable to justified belief about ancient history generally.",
+      "sourceSpan": {
+        "startEvent": 1581,
+        "endEvent": 1616
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Horn follows Dillahunty's answer with a sustained counterargument citing Paul, the disciples, named scholars, costly punishment, and ancient-history practice.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-source-limitations"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-testimony-insufficient-for-resurrection",
+          "con-inaccessible-sources-lack-corroboration",
+          "con-ordinary-error-more-probable"
+        ],
+        "components": [
+          {
+            "componentId": "pro-costly-multiple-testimony-component-01",
+            "targetMoveId": "con-testimony-insufficient-for-resurrection",
+            "text": "Whether multiple sincere and costly testimonial commitments can contribute materially to warrant for an unusual ancient claim.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-costly-multiple-testimony-component-02",
+            "targetMoveId": "con-inaccessible-sources-lack-corroboration",
+            "text": "Whether reliance on testimony would require abandoning justified belief about ancient history generally.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-costly-multiple-testimony-component-03",
+            "targetMoveId": "con-ordinary-error-more-probable",
+            "text": "Whether costly sincerity distinguishes these reports from ordinary deception or casual error.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly defends testimony's general historical role and the evidential relevance of costly sincerity, but it does not eliminate sincere mistake or establish source independence.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts decisive testimonial and historical-method components while leaving physical corroboration, independence, and sincere-error alternatives unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move distinguishes increased likelihood from proof, but its claim about abandoning ancient history overextends the opponent's narrower standard."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Costly sincerity is properly presented as raising likelihood, though the general ancient-history comparison overstates what follows from the con position."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Testimony can warrant ordinary ancient facts while remaining insufficient for a singular resurrection claim.",
+        "decisiveQualification": "Costly commitment supports sincerity, not accuracy, and source independence and access remain separate questions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "Costly commitment coherently supports sincerity and testimony is historically indispensable, but the leap toward truth and the reductio are incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Paul, disciples, scholars, and ancient-history practice are invoked, but independence, persecution details, and accuracy warrants are compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the con central source-limitations bridge by defending the legitimacy and weight of historical testimony."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The reply materially weakens the con position by suggesting it abandons ancient history and omits the decisive difference in claim strength and source quality."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes costly punishment, multiple testimony, and the pervasive dependence of ancient historical knowledge on testimonial sources.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-supernatural-requires-demonstration",
+      "sectionId": "section-background-knowledge",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Investigation cannot extend beyond material reality until a supernatural domain is demonstrated and made available for systematic inquiry.",
+      "sourceSpan": {
+        "startEvent": 2083,
+        "endEvent": 2094
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty answers Horn's question about whether science is restricted to material space-time and states the conditions for supernatural inquiry.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-possibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-agency-from-change",
+          "pro-regularity-allows-miracles"
+        ],
+        "components": [
+          {
+            "componentId": "con-supernatural-requires-demonstration-component-01",
+            "targetMoveId": "pro-divine-agency-from-change",
+            "text": "Whether a supernatural domain is sufficiently demonstrated to function as an investigable and warranted historical explanation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-supernatural-requires-demonstration-component-02",
+            "targetMoveId": "pro-regularity-allows-miracles",
+            "text": "Whether testimony about an apparent exception itself demonstrates a supernatural domain and method of inquiry.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly demands demonstration of the supernatural domain invoked by divine agency, but it does not answer the separate claim that reliable testimony can disclose an exception.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the decisive independent-warrant demand while leaving the affirmative testimonial route to supernatural inference largely untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The investigation condition is explicit: demonstrate a nonmaterial domain and identify how it could be systematically investigated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The methodological condition is clear, though requiring scientific investigability may be stronger than required for every historical explanation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Metaphysical reasoning might warrant an immaterial cause even before direct scientific access to a supernatural domain.",
+        "decisiveQualification": "Such reasoning must establish relevant agency and interaction, not merely label an unexplained cause supernatural."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The demand for demonstrability before systematic investigation is coherent, but it implicitly equates warranted inquiry with scientific accessibility."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The absence of demonstrated investigative access is relevant, while the exclusion of metaphysical warrant is asserted rather than defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the affirmative central divine-possibility bridge by requiring independent supernatural demonstration."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The move preserves the demonstration demand but compresses the strongest philosophical rather than scientific route to supernatural warrant."
+        }
+      },
+      "evidenceBasis": "The excerpt states that inquiry beyond material space-time requires demonstration that such a domain exists and an account of how to investigate it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-elvis-parody-differences",
+      "sectionId": "section-competing-explanations",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Unlike the resurrection reports, postmortem Elvis sightings conflict with identified physical and medical evidence and have familiar ordinary explanations such as misidentification or a faked-death story.",
+      "sourceSpan": {
+        "startEvent": 2216,
+        "endEvent": 2241
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Horn agrees that Elvis's body can be checked, then applies his previously stated reasonability tests and contrasts impersonation evidence with the Jesus case.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-ordinary-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-ordinary-error-more-probable",
+          "con-reasonableness-reality-standard"
+        ],
+        "components": [
+          {
+            "componentId": "pro-elvis-parody-differences-component-01",
+            "targetMoveId": "con-ordinary-error-more-probable",
+            "text": "Whether ordinary error explanations have equal force across resurrection reports and analogous postmortem Elvis sightings.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-elvis-parody-differences-component-02",
+            "targetMoveId": "con-reasonableness-reality-standard",
+            "text": "Whether established physical facts and available ordinary explanations distinguish reasonable treatment of the two cases.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply applies the affirmative tests to identify physical evidence and familiar ordinary explanations that distinguish Elvis reports from the resurrection case.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It directly contacts the parody comparison with concrete disanalogies, though it does not independently establish the resurrection evidence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The relevant contrast is specific and stable: body and medical evidence plus impersonation or faked-death explanations in the Elvis case."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The modest claim that Elvis reports have specific defeating evidence and ordinary explanations is proportionate to the cited considerations."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Postmortem Elvis reports parody the same testimonial reasoning used for resurrection.",
+        "decisiveQualification": "Elvis reports face independently identified remains, medical testimony, impersonators, and familiar alternative explanations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The identified physical and explanatory differences validly show that the two testimonial cases need not receive identical assessments."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "Specific body, photograph, examiner, and impersonation considerations support the distinction, with only minor documentation compression."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the con central ordinary-alternatives reasoning by showing that a proposed parody has materially different evidence."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply accurately handles the analogy and identifies multiple decisive disanalogies without denying that both cases involve testimony."
+        }
+      },
+      "evidenceBasis": "The excerpt cites Elvis's body, a paid photograph, medical-examiner testimony, and ordinary explanations for later sightings.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-falsifiability",
+      "sectionId": "section-expected-evidence",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Resurrection belief is falsifiable in principle because strong evidence identifying Jesus' remains or an early apostolic recantation could seriously undermine the historical case.",
+      "sourceSpan": {
+        "startEvent": 2316,
+        "endEvent": 2344
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Horn directly answers a question about verified remains of Jesus and specifies what kinds of discoveries would alter his confidence or broader religious commitments.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-expected-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-testimony-insufficient-for-resurrection",
+          "con-inaccessible-sources-lack-corroboration",
+          "con-confirmed-resurrections-would-be-public"
+        ],
+        "components": [
+          {
+            "componentId": "pro-resurrection-falsifiability-component-01",
+            "targetMoveId": "con-testimony-insufficient-for-resurrection",
+            "text": "Whether identifiable remains or early recantation evidence could in principle undermine the resurrection case.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-resurrection-falsifiability-component-02",
+            "targetMoveId": "con-inaccessible-sources-lack-corroboration",
+            "text": "Whether the lack of current direct access means no conceivable historical discovery could count against the claim.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-resurrection-falsifiability-component-03",
+            "targetMoveId": "con-confirmed-resurrections-would-be-public",
+            "text": "Whether present lack of public demonstration is answered by specifying potential falsifiers.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the falsifiability component by identifying possible contrary discoveries, but the selected evidence also shows that ambiguous remains would not by themselves overcome other evidence.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It answers in-principle falsifiability but only partially specifies the evidential threshold and does not supply present corroboration."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Potential defeaters are identifiable, but the difference between making the speaker curious, seriously undermining the case, and falsifying Christianity is partly unstable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move cautiously presents bone evidence and recantation as potential defeaters while acknowledging ambiguity and residual evidence."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The distinction between possible contrary evidence and decisive falsification is coherent, though the threshold for identification remains implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The examples are relevant conceptual falsifiers, but the selected span offers little support for how they could be reliably authenticated."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly attacks the con subsidiary expected-evidence claim of unfalsifiability, without itself establishing present truth."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The answer specifies its own possible counterevidence without materially relying on a weakened interpretation of an opponent."
+        }
+      },
+      "evidenceBasis": "The response discusses a purported Jesus bone box, the need to relate it to other proclamation evidence, and broader consequences of authenticated contrary evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-martyrdom-shows-belief-not-truth",
+      "sectionId": "section-sincerity-and-sufficiency",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "A willingness to die can demonstrate the strength or presentation of a belief, but it does not establish the truth of the religious proposition believed.",
+      "sourceSpan": {
+        "startEvent": 2471,
+        "endEvent": 2489
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty directly answers the audience's martyrdom question and supports his distinction with examples of deaths associated with other religious groups.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-sincerity-counterevidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-costly-multiple-testimony"
+        ],
+        "components": [
+          {
+            "componentId": "con-martyrdom-shows-belief-not-truth-component-01",
+            "targetMoveId": "pro-costly-multiple-testimony",
+            "text": "Whether willingness to suffer or die establishes the truth, rather than merely sincerity, of a resurrection belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the inference's failure: people may sincerely accept false beliefs, so costly death evidences commitment but does not establish truth.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It explicitly contacts and defeats the decisive sincerity-to-truth inference with a clear consequence and counterexamples."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes knowingly lying, sincere belief, willingness to die, and truth of the underlying proposition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited conclusion that martyrdom alone does not entail truth is exactly supported by the possibility of sincere false belief."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Costly martyrdom is offered as evidence increasing credibility, not as deductive proof of resurrection.",
+        "decisiveQualification": "Even probabilistically, its direct evidential contribution concerns sincerity unless accuracy and access to the event are separately established."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 96,
+          "rationale": "The distinction between sincerity and truth is explicit, valid, and supported by counterexamples of costly false religious commitment."
+        },
+        "evidenceWarrant": {
+          "value": 88,
+          "rationale": "Cross-religious death examples strongly support the limited rebuttal, though the examples are named rather than documented in detail."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally attacks the affirmative subsidiary sincerity bridge by sharply limiting what costly commitment can establish."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The reply fairly recognizes sincere commitment and states the decisive limit, with only a minor compression of possible probabilistic relevance."
+        }
+      },
+      "evidenceBasis": "The excerpt notes that people need not knowingly lie and cites deaths associated with other religious movements, suicide groups, and Waco.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-sincerity-needs-explanation",
+      "sectionId": "section-sincerity-and-sufficiency",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Apostolic persecution supports sincerity rather than truth directly, but the disciples' costly and sincere resurrection belief still requires an explanation for which resurrection is offered as the best account.",
+      "sourceSpan": {
+        "startEvent": 2491,
+        "endEvent": 2528
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Horn identifies a minor point and then a major point, explicitly agrees with Dillahunty's distinction, and develops his own inference from costly sincerity to explanation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-sincerity-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-martyrdom-shows-belief-not-truth",
+          "con-ordinary-error-more-probable"
+        ],
+        "components": [
+          {
+            "componentId": "pro-sincerity-needs-explanation-component-01",
+            "targetMoveId": "con-martyrdom-shows-belief-not-truth",
+            "text": "Whether costly commitment supports only sincerity and, if so, what explains the disciples' sincere resurrection belief.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-sincerity-needs-explanation-component-02",
+            "targetMoveId": "con-ordinary-error-more-probable",
+            "text": "Whether resurrection explains sincere belief better than mistake, interpretation, or transmission alternatives.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply accepts the sincerity-versus-truth distinction and justifies a narrower explanatory demand, but it asserts rather than renews the comparison showing resurrection is best.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It legitimately reframes the issue around explaining sincerity, while leaving the strongest ordinary explanations substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between direct proof, evidence of sincerity, and the subsequent explanatory question is clearly and consistently stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest sincerity inference is matched, but calling resurrection the best explanation relies on earlier compressed evidence and comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Martyrdom demonstrates commitment but cannot distinguish resurrection from sincere error.",
+        "decisiveQualification": "A further explanation is needed, but ordinary psychological and transmission explanations remain candidates in that comparison."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Moving from costly commitment to sincerity and then to an explanatory question is valid, but the best-explanation conclusion is imported."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The span supports costly sincerity, while its resurrection explanation depends on opening evidence not re-defended against sincere error here."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally attacks the con subsidiary sincerity distinction by accepting it yet arguing that sincerity still creates an explanatory burden."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply expressly accepts the opponent's decisive qualification and preserves it, with only a minor omission in not re-comparing the alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt says costly endurance supports sincere belief, then asks what caused that belief and invokes the opening resurrection case as its best explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-modern-evidence-expectation",
+      "sectionId": "section-expected-evidence",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "The claim that God should have arranged modern documentation requires support, while the historical evidence actually available can still make resurrection belief reasonable.",
+      "sourceSpan": {
+        "startEvent": 2628,
+        "endEvent": 2660
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses the question to Trent, and the ensuing uninterrupted answer directly develops the affirmative position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-expected-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-confirmed-resurrections-would-be-public",
+          "con-testimony-insufficient-for-resurrection"
+        ],
+        "components": [
+          {
+            "componentId": "pro-modern-evidence-expectation-component-01",
+            "targetMoveId": "con-confirmed-resurrections-would-be-public",
+            "text": "Whether God was required to arrange modern, public, or otherwise different documentation for reasonable resurrection belief.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-modern-evidence-expectation-component-02",
+            "targetMoveId": "con-testimony-insufficient-for-resurrection",
+            "text": "Whether the surviving historical evidence can still meet the lower threshold of reasonable belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly challenges the unsupported expectation of modern disclosure and returns to whether the evidence actually available can make belief reasonable.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It contacts the expected-evidence demand, though it shifts much of the burden back without supplying a developed divine-reasons account."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The burden challenge and lower reasonableness conclusion are recoverable, though good divine reasons for this disclosure pattern remain unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limited claim that different evidence has not been shown necessary is proportionate, while positive divine reasons remain openly conditional."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A loving relational God would predictably provide more accessible and convincing evidence than ancient reports.",
+        "decisiveQualification": "That prediction requires a defended account of divine aims and constraints, not merely dissatisfaction with the surviving evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Demanding support for the expected-evidence premise is coherent, though the reply does not itself prove that the actual disclosure has good reasons."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The burden critique is legitimate, but the positive claim that existing evidence suffices depends on earlier arguments rather than new support."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally attacks the con subsidiary expected-evidence bridge concerning modern and more accessible disclosure."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The reply accurately identifies the prediction's unsupported premise but only briefly engages its intuitive relational motivation."
+        }
+      },
+      "evidenceBasis": "The excerpt characterizes the demand for different divine evidence as an assertion and asks whether God may have good reasons for the actual disclosure form.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-relational-god-could-provide-better-evidence",
+      "sectionId": "section-expected-evidence",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "A God seeking universal relationship could provide sufficient convincing evidence, yet such evidence has not been supplied.",
+      "sourceSpan": {
+        "startEvent": 2662,
+        "endEvent": 2679
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator names Matt, and Matt explicitly corrects Trent’s characterization before stating his own contrary position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-expected-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-modern-evidence-expectation"
+        ],
+        "components": [
+          {
+            "componentId": "con-relational-god-could-provide-better-evidence-component-01",
+            "targetMoveId": "pro-modern-evidence-expectation",
+            "text": "Whether a God seeking relationship with everyone would be expected to provide evidence sufficient to convince them.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly corrects the suggestion that the evidential bar is limitless and states the relational premise supporting an expectation of sufficient evidence.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It explicitly contacts the burden critique and gives the missing relational rationale, though it does not specify the predicted evidence in detail."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The relational expectation is clear, but universal relationship, sufficient evidence, and convincing evidence are not fully separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "That God could provide more evidence is plausible, but the categorical link from relational desire to universally convincing provision omits competing considerations."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A relational God might have good reasons not to provide coercively overwhelming or uniform evidence.",
+        "decisiveQualification": "The con claim concerns sufficient relationship-enabling evidence, not necessarily irresistible certainty or elimination of freedom."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The conditional from universal relational desire to adequate disclosure is plausible but leaves a material premise about divine reasons and human response."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The relational premise supplies some warrant, yet no independent evidence or detailed prediction establishes the asserted disclosure expectation."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally supports the con subsidiary expected-evidence bridge by grounding the demand in a relational divine purpose."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move rebuts the infinite-bar caricature but does not fully address the strongest good-reasons qualification concerning divine aims."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that a God wanting everyone to know and love him could provide sufficient evidence and denies that the speaker's bar is unlimited.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scripture-fallible-without-divine-guarantee",
+      "sectionId": "section-historical-testimony",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Without prior warrant that God guarantees scripture, biblical resurrection accounts must be assessed as fallible and potentially biased sources rather than divinely certified testimony.",
+      "sourceSpan": {
+        "startEvent": 2881,
+        "endEvent": 2925
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Matt to respond, and Matt contrasts his former Christian reasoning with his current epistemic assessment.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-testimonial-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-testimony-and-early-experiences",
+          "pro-divine-agency-from-change"
+        ],
+        "components": [
+          {
+            "componentId": "con-scripture-fallible-without-divine-guarantee-component-01",
+            "targetMoveId": "pro-testimony-and-early-experiences",
+            "text": "Whether the affirmative historical sources are reliable on ordinary historical grounds independent of divine preservation.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-scripture-fallible-without-divine-guarantee-component-02",
+            "targetMoveId": "pro-divine-agency-from-change",
+            "text": "Whether a general argument for God entails that biblical texts were providentially preserved from error.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move offers relevant caution against assuming divine scriptural preservation, but the affirmative testimonial move appealed to historical sources and scholars rather than an explicit inerrancy guarantee.",
+        "responsivenessWithinClass": {
+          "value": 54,
+          "rationale": "It is issue-bearing contrary material but does not contact the decisive ordinary historical warrant actually offered for the sources."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional distinction between ordinary fallible assessment and prior belief in divine preservation is clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limited claim that divine certification requires prior warrant is proportionate and does not assert that all scriptural claims are false."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The affirmative may defend biblical reports through ordinary historical criteria rather than divine inerrancy.",
+        "decisiveQualification": "Rejecting a preservation guarantee removes automatic certainty but does not by itself defeat ordinary testimonial evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The anti-circularity distinction is coherent, but it does not entail that independently assessed biblical testimony lacks all evidential weight."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The autobiographical contrast illustrates the epistemic dependence, while source bias and fallibility are asserted more than specifically demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly attacks the central testimonial foundation, though less precisely because the targeted divine guarantee was not the affirmative's stated warrant."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The move focuses substantially on a stronger former-Christian rationale and omits the decisive qualification that the actual affirmative case need not assume inerrancy."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts former confidence in necessarily accurate scripture preserved by God with assessment of the texts absent that prior theological guarantee.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-reasonable-disagreement-standard",
+      "sectionId": "section-reasonableness-and-burdens",
+      "side": "pro",
+      "speaker": "Trent Horn",
+      "moveKind": "reply",
+      "proposition": "Reasonableness is a lower threshold than personal conviction, so competing historical explanations can remain reasonable even when neither persuades every evaluator.",
+      "sourceSpan": {
+        "startEvent": 2961,
+        "endEvent": 2994
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator turns to Trent, whose answer explicitly restates the distinction he developed during the debate and applies his proposed test.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-unwarranted-acceptance"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-reasonableness-reality-standard",
+          "con-burden-withhold-acceptance"
+        ],
+        "components": [
+          {
+            "componentId": "pro-reasonable-disagreement-standard-component-01",
+            "targetMoveId": "con-reasonableness-reality-standard",
+            "text": "Whether reasonableness is a lower threshold than personal conviction and can permit informed disagreement over historical explanations.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-reasonable-disagreement-standard-component-02",
+            "targetMoveId": "con-burden-withhold-acceptance",
+            "text": "Whether failure to convince a particular evaluator is enough to establish that affirmative belief is unreasonable.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly distinguishes reasonable belief from being personally convinced and applies that distinction to disagreement about underdetermined historical events.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the decisive threshold issue and gives a clear consequence, though it does not fully reconcile the distinction with the con reality standard."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Reasonable, convincing, disagreement, and competing historical explanations are expressly distinguished and consistently applied."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The distinction is well supported conceptually, though the claim that reasonable disagreement always requires the proposed hierarchy is somewhat compressed."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person may withhold acceptance because the evidence fails an objective reality-based threshold, not merely because it is personally unconvincing.",
+        "decisiveQualification": "Reasonable disagreement is possible only if each position independently has adequate warrant, not simply because conviction thresholds differ."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The lower-threshold distinction coherently explains possible reasonable disagreement, with one material bridge from disagreement possibility to this case's adequacy."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The Mary Celeste analogy and conceptual distinction illustrate the point, but they do not establish that resurrection meets the lower threshold."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly attacks the con motion-level conclusion by distinguishing failure to convince from unreasonableness of belief."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The reply identifies a genuine threshold distinction but somewhat weakens the con view by treating it as insufficiently separated from personal persuasion."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says reasonable is a lower bar than convincing and uses disputed historical explanations to motivate reasonable disagreement.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-sincere-consensus-still-allows-error",
+      "sectionId": "section-competing-explanations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Even unanimous sincere testimony would establish widespread belief rather than resurrection because ordinary interpretive error remains less extraordinary than a violation of established experience.",
+      "sourceSpan": {
+        "startEvent": 3235,
+        "endEvent": 3279
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the hypothetical to Matt, and Matt answers continuously while applying his earlier testimony and Humean framework.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-comparative-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-costly-multiple-testimony",
+          "pro-sincerity-needs-explanation",
+          "pro-ordinary-alternatives-comparison"
+        ],
+        "components": [
+          {
+            "componentId": "con-sincere-consensus-still-allows-error-component-01",
+            "targetMoveId": "pro-costly-multiple-testimony",
+            "text": "Whether even unanimous sincere experiential testimony establishes resurrection rather than widespread interpretive belief.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-sincere-consensus-still-allows-error-component-02",
+            "targetMoveId": "pro-sincerity-needs-explanation",
+            "text": "Whether sincere resurrection belief is better explained by the event than by sincere misinterpretation of experience.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-sincere-consensus-still-allows-error-component-03",
+            "targetMoveId": "pro-ordinary-alternatives-comparison",
+            "text": "Whether ordinary interpretive error remains available despite multiple reports.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses the gap between having an experience, describing it sincerely, and correctly identifying its cause, leaving ordinary interpretation error available even under consensus.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts the decisive sincerity-to-event inference and explains the defeating interpretive gap with a concrete analogy."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly separates experience, sincere description, consensus about belief, causal interpretation, and the resurrection conclusion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limited claim that consensus can coexist with error is proportionate and expressly avoids alleging dishonesty or denying experience."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Multiple independent sincere witnesses may make a shared interpretation more likely than an isolated report does.",
+        "decisiveQualification": "Number and sincerity do not establish accuracy without independence, access, and exclusion of shared interpretive or transmission error."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The inference-gap diagnosis is explicit and valid: sincere consensus entails neither correct causal interpretation nor resurrection."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The demon-experience analogy concretely supports sincere misinterpretation, though case-specific dependence and error mechanisms remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the affirmative central comparative-explanation bridge by preserving ordinary interpretive error under sincere consensus."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move accepts that experiences and sincere reports may be genuine while accurately preserving the decisive distinction concerning interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt uses the speaker's mother's sincere demon report to distinguish believing that an experience occurred from accepting the experiencer's causal description.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct affirmative debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden relevance assessments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence survives the strict exclusion rule.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change affirmative burden completion beyond effects already captured."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct negative debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden relevance assessments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence survives the strict exclusion rule.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change con burden completion beyond effects already captured."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

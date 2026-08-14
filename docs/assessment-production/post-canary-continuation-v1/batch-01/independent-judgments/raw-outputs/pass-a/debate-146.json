@@ -1,0 +1,1857 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "146",
+  "debateId": "harris-dennett-free-will-2018",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-no-libertarian-free-will",
+      "side": "pro",
+      "description": "Establish that determinism and indeterminism both fail to provide the conscious authorship and same-circumstances alternatives integral to free will, and that practical capacities or accountability conventions do not supply what is missing.",
+      "successCriteria": "The route succeeds if unauthored causes, constitutive luck, and unconscious processes defeat ultimate authorship while randomness supplies no control, leaving compatibilist competence and social regulation unable to establish free will in the disputed sense.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-undermining",
+        "tier": "motion",
+        "description": "Show that neither causal determination nor indeterminacy permits the authorship and alternative possibilities required for free will and ultimate moral responsibility."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-conceptual-target",
+          "tier": "central",
+          "description": "Establish that preserving useful capacities under the name free will omits the first-person authorship and actual ability to have done otherwise that motivate the dispute."
+        },
+        {
+          "bridgeId": "pro-central-causal-nonauthorship",
+          "tier": "central",
+          "description": "Show that genes, environment, prior brain states, and unconscious processes produce character and choice without being authored by the agent."
+        },
+        {
+          "bridgeId": "pro-central-responsibility-gap",
+          "tier": "central",
+          "description": "Distinguish useful accountability and behavioral regulation from genuine authorship or ultimate moral responsibility for causally produced conduct."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-luck-regress",
+          "tier": "subsidiary",
+          "description": "Show that tracing conduct to earlier choices only moves the authorship problem backward, while microscopic contingencies expose pervasive causal luck."
+        },
+        {
+          "bridgeId": "pro-subsidiary-randomness-prediction",
+          "tier": "subsidiary",
+          "description": "Show that randomness adds no ownership and that sufficiently informative advance prediction would expose rather than create conscious authorship."
+        }
+      ]
+    },
+    {
+      "routeId": "con-compatibilist-freedom",
+      "side": "con",
+      "description": "Establish that freedom worth preserving is the graded, naturalistic competence to deliberate, respond to reasons, exercise self-control, and undertake obligations, none of which requires exemption from deterministic causation.",
+      "successCriteria": "The route succeeds if reasons-responsive control supports meaningful agency and calibrated responsibility, while demands for absolute self-creation, exact-replay alternatives, or indeterministic choice are shown unnecessary to the distinctions and practices free will must preserve.",
+      "motionBridge": {
+        "bridgeId": "con-motion-compatibilist-preservation",
+        "tier": "motion",
+        "description": "Show that reasons-responsive agency supplies a determinism-compatible form of freedom sufficient for meaningful control and moral responsibility."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-competent-control",
+          "tier": "central",
+          "description": "Define free agency through functioning capacities for reflection, ordered desire, attention, self-control, learning, and responsiveness to reasons."
+        },
+        {
+          "bridgeId": "con-central-bounded-authorship",
+          "tier": "central",
+          "description": "Show that genuine control and temporally extended authorship do not require control of every background condition or awareness of every implementing microprocess."
+        },
+        {
+          "bridgeId": "con-central-pragmatic-responsibility",
+          "tier": "central",
+          "description": "Ground responsibility in graded competence, obligations, justified reliance, and stable consequentialist practices rather than absolute metaphysical desert."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-alternatives",
+          "tier": "subsidiary",
+          "description": "Explain ability to do otherwise through robust competencies and relevantly similar circumstances rather than atom-for-atom replay of the universe."
+        },
+        {
+          "bridgeId": "con-subsidiary-indeterminacy",
+          "tier": "subsidiary",
+          "description": "Show that quantum indeterminacy adds no morally relevant freedom unavailable from deterministic deliberation, control, and practical randomness."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "free-will-concept",
+      "title": "The Concept and Stakes of Free Will",
+      "weightPercent": 20,
+      "rationale": "This issue determines whether naturalistic conceptual revision preserves the phenomenon at stake or changes the subject by omitting authorship and same-circumstances alternatives."
+    },
+    {
+      "sectionId": "reasons-responsive-control",
+      "title": "Reasons-Responsive Competence and Bounded Control",
+      "weightPercent": 22,
+      "rationale": "This issue tests whether deliberation, self-control, obligations, and responsiveness to reasons constitute genuine agency despite dependence on uncontrolled causal conditions."
+    },
+    {
+      "sectionId": "authorship-luck-neural-causation",
+      "title": "Authorship, Constitutive Luck, and Neural Causation",
+      "weightPercent": 22,
+      "rationale": "This issue addresses whether genes, environment, prior brain states, anomalous lapses, and unconscious implementation defeat authorship or remain compatible with temporally extended self-governance."
+    },
+    {
+      "sectionId": "alternative-possibilities-randomness",
+      "title": "Alternative Possibilities, Replay, and Randomness",
+      "weightPercent": 17,
+      "rationale": "This issue compares exact-replay ability with competence across relevantly similar circumstances and tests whether deterministic chaos or indeterminacy contributes anything morally significant."
+    },
+    {
+      "sectionId": "moral-responsibility-practice",
+      "title": "Moral Responsibility, Accountability, and Social Practice",
+      "weightPercent": 19,
+      "rationale": "This issue determines whether causal explanation universally exculpates or whether graded competence, reliance, deterrence, rehabilitation, and stable institutions sustain responsibility without absolute authorship."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-fwc-compatible-responsibility",
+      "sectionId": "free-will-concept",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "constructive",
+      "proposition": "The freedom relevant to moral responsibility is compatible with determinism, whereas libertarian or indeterminist freedom is an unnecessary philosophical fantasy.",
+      "sourceSpan": {
+        "startEvent": 146,
+        "endEvent": 191
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted turn follows the explicit handoff to Dennett and consistently presents his compatibilist position in the first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-compatibilist-preservation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive opening that identifies moral responsibility, rather than indeterminist exemption, as the relevant criterion of freedom.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, this directly establishes the con route's governing criterion and disputed conception."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The compatibilist thesis and rejection of libertarian freedom are recoverable, with the sufficiency standard left partly implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical dismissal of libertarian freedom is stronger than the brief conceptual support supplied in this span."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Libertarian authorship could remain the phenomenon ordinary free-will judgments seek to describe.",
+        "decisiveQualification": "Dennett distinguishes that phenomenon from the freedom relevant to responsibility rather than denying its intuitive appeal."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The criterion-based inference is consistent, but the bridge from responsibility relevance to conceptual dispensability remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The span clearly states the distinction but offers little independent support for why responsibility should control the concept."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "This is direct motion-tier support for determinism-compatible freedom sufficient for responsibility."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The opposing conception is identified accurately, though it is dismissed as dispensable before its motivational force is explored."
+        }
+      },
+      "evidenceBasis": "Dennett separates incompatibility with determinism from grounding moral responsibility, prioritizes the latter, and calls libertarian freedom a fantasy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-fwc-naturalistic-revision",
+      "sectionId": "free-will-concept",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "constructive",
+      "proposition": "Compatibilism can preserve a naturalistic concept of free will by discarding inherited magical commitments without discarding the real phenomenon those commitments misdescribe.",
+      "sourceSpan": {
+        "startEvent": 323,
+        "endEvent": 382
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage begins with Dennett explicitly stating his view of compatibilism and remains his sustained answer until Harris begins responding in the final row.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-bounded-authorship"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive conceptual move presenting compatibilism as a naturalistic recovery of a real phenomenon rather than a theological commitment.",
+        "responsivenessWithinClass": {
+          "value": 79,
+          "rationale": "Within constructive moves, it supplies a useful framing but leaves the preserved phenomenon incompletely specified."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The naturalistic-revision claim is clear, but the contrast between the real phenomenon and inherited magic is only sketched."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling compatibilism the opposite of theology is rhetorically categorical while the supporting naturalistic account remains abbreviated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilism may change the subject by retaining capacities while abandoning authorship and exact alternatives.",
+        "decisiveQualification": "A naturalistic revision can be legitimate only if those capacities explain the central practical and experiential work of freedom."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "Naturalistic revision is coherent, though preserving a phenomenon after discarding inherited commitments requires a material identity bridge."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The excerpt asserts that compatibilism examines the real phenomenon but supplies limited detail demonstrating that continuity."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally supports bounded authorship by denying that genuine freedom requires supernatural commitments."
+        },
+        "representationalCharity": {
+          "value": 69,
+          "rationale": "The move recognizes Harris's theological objection but treats misunderstanding as the diagnosis without fully addressing the change-of-subject concern."
+        }
+      },
+      "evidenceBasis": "Dennett rejects the theology analogy and describes compatibilism as an attempt to examine free will naturalistically.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-rrc-graded-agency-package",
+      "sectionId": "reasons-responsive-control",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "constructive",
+      "proposition": "Responsible agency consists in graded capacities including ordered desires, flexible attention, responsiveness to reasons, and self-control, which distinguish free from impaired agents regardless of determinism.",
+      "sourceSpan": {
+        "startEvent": 463,
+        "endEvent": 533
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett continues his uninterrupted explanation, poses a question about ideal responsibility, and supplies a detailed answer in his own theoretical vocabulary.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-competent-control"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive account enumerating the capacities by which responsible adults differ from impaired or less competent agents.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it gives unusually explicit content to the competent-control bridge through several graded capacities."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The relevant capacities, their graded character, and their connection to an ideal responsible adult are expressly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents a model of responsible agency and explicitly acknowledges degrees rather than claiming an exceptionless binary."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The listed capacities form a consistent and explicit account of graded competence, with only the ultimate responsibility bridge reserved."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Specific functional capacities support the distinction, though comparative evidence about their sufficiency for responsibility is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and comprehensively supports the central competent-control bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span primarily develops a positive capacity account and does not materially characterize an opposing alternative."
+        }
+      },
+      "evidenceBasis": "Dennett lists ordered desires, flexible attention, changing one's mind, responsiveness to reasons, and self-control as graded capacities.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-free-will-first-person-authorship",
+      "sectionId": "free-will-concept",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Compatibilism omits the first-person authorship and same-circumstances ability to do otherwise that motivate the free-will problem, preserving useful capacities under the name of a different phenomenon.",
+      "sourceSpan": {
+        "startEvent": 534,
+        "endEvent": 669
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Harris begins by qualifying his agreement with Dennett and then speaks continuously through his phenomenological account and extended Atlantis analogy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-conceptual-target"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-fwc-naturalistic-revision",
+          "con-rrc-graded-agency-package"
+        ],
+        "components": [
+          {
+            "componentId": "pro-free-will-first-person-authorship-component-01",
+            "targetMoveId": "con-fwc-naturalistic-revision",
+            "text": "Whether the proposed naturalistic revision preserves the phenomenon at issue rather than substituting third-person capacities for first-person authorship.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-free-will-first-person-authorship-component-02",
+            "targetMoveId": "con-rrc-graded-agency-package",
+            "text": "Whether graded reasons-responsive capacities answer the demand for authorship and same-circumstances alternatives.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Harris directly argues that compatibilist revision and capacity language lose the first-person authorship and alternatives motivating the dispute.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within full answers, it squarely contacts the conceptual-preservation demand, although the argument from felt authorship remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The first-person versus third-person distinction is clear, but the scope of what ordinary people necessarily feel is generalized."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The phenomenological challenge is plausible, though the broad claim about people's libertarian self-conception lacks explicit qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilist capacities may capture the practically important phenomenon even if they revise ordinary phenomenology.",
+        "decisiveQualification": "That defense must explain why first-person authorship and actual alternatives are dispensable rather than merely useful errors."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The change-of-subject objection follows coherently if authorship and actual alternatives are constitutive, though that conditional is partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The first-person description and reported experience support the challenge, but no representative evidence establishes its universality."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central conceptual-target bridge by identifying what compatibilist revision allegedly omits."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "Harris recognizes the third-person capacity account but presses a fair residual first-person demand, with limited treatment of revisionary legitimacy."
+        }
+      },
+      "evidenceBasis": "Harris distinguishes first-person and third-person descriptions and says people experience themselves as possessing libertarian authorship.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-neural-contingency-nonauthorship",
+      "sectionId": "authorship-luck-neural-causation",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "When a minute synaptic condition can redirect a consequential choice and an entire life, the agent's dependence on unauthored physical causes undermines the ordinary picture of autonomous authorship.",
+      "sourceSpan": {
+        "startEvent": 792,
+        "endEvent": 820
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Harris explicitly agrees before marking what Dennett has not acknowledged, then develops the first-person challenge through examples involving marriage and life-changing decisions.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-causal-nonauthorship"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rrc-graded-agency-package"
+        ],
+        "components": [
+          {
+            "componentId": "pro-neural-contingency-nonauthorship-component-01",
+            "targetMoveId": "con-rrc-graded-agency-package",
+            "text": "Whether graded reasons-responsive capacities constitute agency despite their physical implementation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The synaptic-contingency example bears on physical dependence but does not directly show why the previously listed capacities cease to constitute control.",
+        "responsivenessWithinClass": {
+          "value": 57,
+          "rationale": "Within relevant nonanswers, it presents a consequential opposing consideration but leaves the decisive capacity-to-control inference untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The causal-dependence claim is clear, but marionette language blurs dependence with lack of agency and generalizes from hypothetical cases."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Minute neural sensitivity is plausible, but its probability and its authorship-defeating consequence are asserted beyond the supplied example."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An agent can own actions implemented by sensitive neural processes when higher-level reasons and dispositions control them.",
+        "decisiveQualification": "Physical dependence alone does not establish that macro-level agency is absent."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The example supports contingency, but the inference from microphysical sensitivity to absence of autonomous authorship needs a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "A hypothetical synaptic charge and life-course example supply illustration rather than representative neurophysiological support."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally supports causal nonauthorship by linking consequential choices to unauthored physical conditions."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move vividly emphasizes causal dependence but does not engage the strongest higher-level-control interpretation of compatibilism."
+        }
+      },
+      "evidenceBasis": "Harris imagines a synaptic charge changing participation or marriage and says recognizing such neurophysiology restores marionette strings.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-small-variation-consequential-action",
+      "sectionId": "alternative-possibilities-randomness",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Microscopic neural variation can determine life-changing actions even when a decision is not already balanced on a knife-edge, so causal chance cannot be confined to inconsequential toss-ups.",
+      "sourceSpan": {
+        "startEvent": 971,
+        "endEvent": 1028
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn explicitly marks Harris's disagreement with Dennett and continues uninterrupted until Dennett answers with the voting example.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-randomness-prediction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rrc-graded-agency-package"
+        ],
+        "components": [
+          {
+            "componentId": "pro-small-variation-consequential-action-component-01",
+            "targetMoveId": "con-rrc-graded-agency-package",
+            "text": "Whether stable graded capacities explain responsible agency independently of microscopic variation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contests confinement of small causal differences to toss-ups, but it does not answer why possession of stable competence is responsibility-relevant.",
+        "responsivenessWithinClass": {
+          "value": 55,
+          "rationale": "Within relevant nonanswers, it offers a focused contrary example while leaving the earlier constructive competence criterion unaddressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between decisions and actions is expressly qualified, and the claim is limited to probable existence of many cases."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Harris uses cautious probability language and explicitly questions whether decision is the correct category for the examples."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "If tiny variations can separate consequential actions outside equipoise, the attempted confinement to trivial toss-ups is coherently challenged."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The claim is cautiously framed but remains speculative and lacks a concrete verified case outside a knife-edge decision."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It materially supports the subsidiary luck and randomness bridge by extending microscopic contingency to consequential conduct."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span advances a bounded possibility claim without materially presenting or weakening a developed opposing interpretation."
+        }
+      },
+      "evidenceBasis": "Harris rejects the idea that bit flips matter only in 50/50 decisions and proposes consequential actions separated by tiny differences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-libertarian-incoherence-redefinition",
+      "sectionId": "free-will-concept",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Libertarian free will maps onto neither determinism nor indeterminism, while graded lawful capacities constitute a compatibilist redefinition rather than the freedom denied by that dilemma.",
+      "sourceSpan": {
+        "startEvent": 1067,
+        "endEvent": 1093
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Harris identifies the disagreement in first-person terms and contrasts his response with Dennett's account before introducing moral responsibility.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-conceptual-target"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-fwc-compatible-responsibility",
+          "con-fwc-naturalistic-revision"
+        ],
+        "components": [
+          {
+            "componentId": "pro-libertarian-incoherence-redefinition-component-01",
+            "targetMoveId": "con-fwc-compatible-responsibility",
+            "text": "Whether responsibility-relevant lawful capacities preserve free will after libertarian freedom is rejected.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-libertarian-incoherence-redefinition-component-02",
+            "targetMoveId": "con-fwc-naturalistic-revision",
+            "text": "Whether the compatibilist account preserves free will or redefines it into a different graded phenomenon.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Harris accepts the incoherence of libertarian freedom but directly disputes Dennett's response of retaining graded capacities under the same name.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within full answers, it explicitly identifies the shared premise and isolates the disagreement over conceptual preservation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The determinism-indeterminism dilemma and the different responses to it are explicitly and consistently distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The exhaustive incoherence claim is categorical, while the span states rather than fully defends the exclusion of every combination."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Graded lawful capacities may be the natural phenomenon imperfectly tracked by inherited free-will language.",
+        "decisiveQualification": "Retaining the label requires showing that these capacities preserve rather than replace the disputed authorship condition."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The dilemma and redefinition objection are consistent, though the premise that libertarian conditions exhaust the disputed concept remains contestable."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The conceptual trilemma is clearly formulated but receives limited defense against a revisionary or functional account."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It supplies direct central support for the claim that compatibilism changes the conceptual target."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move accurately represents Dennett's degrees-of-freedom view and sharply states the remaining conceptual disagreement."
+        }
+      },
+      "evidenceBasis": "Harris contrasts Dennett's lawful degrees of freedom with a libertarian concept mapping onto neither causal determination nor indeterminacy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-neurophysiology-universal-exculpation",
+      "sectionId": "moral-responsibility-practice",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Complete neurophysiological explanation would make ordinary wrongdoing exculpatory in the same relevant sense as behavior caused by a brain tumor because the decisive neural condition was not authored by the agent.",
+      "sourceSpan": {
+        "startEvent": 1094,
+        "endEvent": 1145
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Harris introduces Charles Whitman, develops the neurological analogy, and explicitly generalizes it to ordinary neural causes before Dennett responds.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-responsibility-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-fwc-compatible-responsibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-neurophysiology-universal-exculpation-component-01",
+            "targetMoveId": "con-fwc-compatible-responsibility",
+            "text": "Whether determinism-compatible responsibility survives a complete causal explanation of the action.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The brain-tumor analogy directly challenges responsibility sufficiency by arguing that complete unauthored neural causation generalizes exculpation.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within full answers, it contacts the responsibility premise directly, though the analogy's decisive equivalence is insufficiently defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The universal exculpation thesis is clear, but 'brain tumors all the way down' conflates pathological compulsion with ordinary neural causation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move infers universal exculpation from unauthored neural conditions without qualifying differences in competence, coercion, or pathology."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Brain tumors excuse because they impair ordinary control, not merely because their neural causes are unchosen.",
+        "decisiveQualification": "A complete causal explanation can preserve the distinction between intact and impaired reasons-responsive capacities."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 61,
+          "rationale": "The conclusion follows only if lack of ultimate authorship, rather than impairment of control, explains the tumor case; that premise is unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The hypothetical synapse and tumor analogy do not establish that complete neurophysiology erases functionally relevant responsibility distinctions."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central responsibility-gap bridge by separating causal production from ultimate desert."
+        },
+        "representationalCharity": {
+          "value": 54,
+          "rationale": "The analogy presses a real nonauthorship concern but omits the strongest functional difference between pathological and ordinary causation."
+        }
+      },
+      "evidenceBasis": "Harris calls complete neurophysiological understanding exculpatory and equates an unauthored synaptic charge with a tiny brain tumor.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-capacity-without-self-authorship",
+      "sectionId": "reasons-responsive-control",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Differences in voluntary control and reasons-responsive capacity are real, but agents do not author the genes, environment, conversations, or prior brain states that determine those capacities and their responses.",
+      "sourceSpan": {
+        "startEvent": 1209,
+        "endEvent": 1309
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Harris explicitly concedes differing capacities, then traces persuasion and character to prior causes and closes by preserving only pragmatic accountability.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-causal-nonauthorship"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rrc-graded-agency-package"
+        ],
+        "components": [
+          {
+            "componentId": "pro-capacity-without-self-authorship-component-01",
+            "targetMoveId": "con-rrc-graded-agency-package",
+            "text": "Whether real differences in voluntary and reasons-responsive capacity are sufficient for authored agency.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Harris concedes the capacity differences and directly argues that their dependence on unchosen genes, environment, and brain states defeats self-authorship.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it expressly contacts the decisive capacity premise and explains why Harris regards it as insufficient."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully concedes real capacity differences while separating them from ultimate control over their causal sources."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Dependence on genes and environment is well matched, but the claim that persuasion is entirely unchosen is stated categorically."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Reasons-responsive capacities can constitute agency without an agent having created their genes or developmental history.",
+        "decisiveQualification": "That account yields bounded control but does not by itself establish ultimate self-creation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The distinction between possessing capacities and authoring their determinants is explicit, consistent, and directly responsive."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Genes, environment, conversation, and prior brain state provide concrete causal bases, though the totalizing conclusion remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and strongly supports the central causal-nonauthorship bridge."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "Harris explicitly accepts the practical capacity distinctions and targets only the further claim of self-authorship."
+        }
+      },
+      "evidenceBasis": "Harris says genes, environment, ideas, conversations, and existing brain states determine how a person responds and is persuaded.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-rrc-bounded-control",
+      "sectionId": "reasons-responsive-control",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Genuine control does not require control over every background condition; it consists in competently responding to given conditions and sustaining cultivated self-governance.",
+      "sourceSpan": {
+        "startEvent": 1310,
+        "endEvent": 1443
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett introduces the control objection, develops the sailor and aircraft analogies, and extends the same principle through moral education and adult self-maintenance.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-bounded-authorship"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-capacity-without-self-authorship",
+          "pro-neurophysiology-universal-exculpation"
+        ],
+        "components": [
+          {
+            "componentId": "con-rrc-bounded-control-component-01",
+            "targetMoveId": "pro-capacity-without-self-authorship",
+            "text": "Whether control requires authorship of genes, upbringing, and every background condition shaping present capacities.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-rrc-bounded-control-component-02",
+            "targetMoveId": "pro-neurophysiology-universal-exculpation",
+            "text": "Whether causal dependence eliminates graded adult responsibility in every case.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Dennett directly denies the absolute-control demand, distinguishes impaired responsibility, and grounds ordinary autonomy in cultivated self-control.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it contacts the background-control premise and gives a graded replacement, though its positive control criterion is diffuse."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Bounded control and partial responsibility are clear, but the parental-responsibility example broadens the move beyond its core criterion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The account expressly allows diminished adult responsibility and rejects only an absolute standard, appropriately matching its support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Unchosen determinants may undermine ultimate authorship even where cultivated self-control remains practically effective.",
+        "decisiveQualification": "Dennett's claim is bounded control and graded responsibility, not ultimate creation of every determinant."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The inference from functioning cultivated capacities to bounded control is coherent and avoids requiring control of every precondition."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Moral education and impaired-adult cases illustrate the distinctions, but the causal efficacy of macro-control is not independently established here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central bounded-authorship bridge and attacks universal nonauthorship."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The reply squarely identifies the absolute-control demand and preserves the legitimate concern through partial-responsibility distinctions."
+        }
+      },
+      "evidenceBasis": "Dennett discusses moral education, self-controlling autonomous adults, diminished responsibility, and the absence of any need for absolute responsibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-competence-anomalous-lapse-tension",
+      "sectionId": "reasons-responsive-control",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "A highly competent agent's rare failure may attract maximal blame while being least representative of that agent, exposing luck rather than stable competence as the explanation of the anomalous act.",
+      "sourceSpan": {
+        "startEvent": 1445,
+        "endEvent": 1521
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Harris begins by conceding practical capacity distinctions, develops the Tiger Woods missed-putt case, and states the resulting paradox before yielding the floor.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-competent-control"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rrc-bounded-control"
+        ],
+        "components": [
+          {
+            "componentId": "pro-competence-anomalous-lapse-tension-component-01",
+            "targetMoveId": "con-rrc-bounded-control",
+            "text": "Whether stable competence justifies blame for a rare anomalous failure that least represents the agent.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The golfer analogy directly tests the competence account by contrasting maximal ability and culpability with the anomalous act's low representativeness.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within full answers, it contacts the role of stable competence, though the analogy does not fully map sporting error onto culpable choice."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The competence-versus-anomaly tension is recoverable, but culpability for missing a putt is analogical rather than literal moral culpability."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The example is offered as a tension and uses probabilistic causal language rather than claiming verified cosmic-ray causation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Competence may ground accountability precisely because rare failures remain attributable to an otherwise capable agent.",
+        "decisiveQualification": "An anomalous lapse can still be attributable without being representative of character or strongly blameworthy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The inverse relation between competence and representativeness is clear, but translating it into reduced blame requires an additional normative premise."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The Tiger Woods analogy illustrates anomaly and luck, while the cosmic-ray mechanism and moral mapping remain speculative."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally attacks competent-control sufficiency by presenting a hard case for capacity-based blame."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move identifies a genuine tension but does not fully address the distinction between attributable capacity and character evidence."
+        }
+      },
+      "evidenceBasis": "Harris argues that Tiger Woods is most competent yet a rare missed easy putt says least about him and highlights causal luck.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-earlier-choice-authorship-regress",
+      "sectionId": "authorship-luck-neural-causation",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Relocating responsibility for an anomalous lapse to an earlier avoidable choice does not restore authorship, because closer examination makes each prior choice another causally produced, unauthored event.",
+      "sourceSpan": {
+        "startEvent": 1585,
+        "endEvent": 1651
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Harris contrasts the first-person character of a lapse with Dennett's external account, then recursively applies the same causal objection to proposed prior explanations.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-luck-regress"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-rrc-bounded-control"
+        ],
+        "components": [
+          {
+            "componentId": "pro-earlier-choice-authorship-regress-component-01",
+            "targetMoveId": "con-rrc-bounded-control",
+            "text": "Whether locating responsibility in earlier avoidable conduct escapes the nonauthorship problem.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Harris directly answers the backward-looking control account by arguing that each earlier choice is another causally conditioned event.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within full answers, it contacts the regress demand explicitly, although the premise that causal production defeats bounded ownership remains contested."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The regress claim and anomalous-lapse context are clear, with the relevant standard of authorship carried implicitly from earlier moves."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Tracing prior causes plainly moves backward, but the claim that this cannot ground any responsibility presupposes ultimate authorship."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Earlier choices can ground diachronic responsibility without being ultimately self-created.",
+        "decisiveQualification": "That account establishes temporally extended ownership only if ordinary causal participation is sufficient for authorship."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Moving to an earlier choice does not solve ultimate self-creation, though the inference against all bounded authorship remains incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The anomalous-action comparison and causal regress support the conceptual point, but no detailed earlier-choice chain is established."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary luck-regress bridge by showing that backward tracing does not end ultimate nonauthorship."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "The regress objection fairly targets ultimate authorship but gives limited treatment to the bounded diachronic alternative."
+        }
+      },
+      "evidenceBasis": "Harris calls the anomalous lapse least representative and says returning to prior causes does not resolve the authorship issue.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-aln-bounded-self-authorship",
+      "sectionId": "authorship-luck-neural-causation",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "People can author themselves within limits by working with unchosen materials and can accept moral responsibility even though luck contributes to their development and failures.",
+      "sourceSpan": {
+        "startEvent": 1652,
+        "endEvent": 1687
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett immediately rejects absolute non-authorship, offers a bounded self-construction account, and carries the move into lookahead through his conclusion about unlucky conduct.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-bounded-authorship"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-earlier-choice-authorship-regress",
+          "pro-capacity-without-self-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "con-aln-bounded-self-authorship-component-01",
+            "targetMoveId": "pro-earlier-choice-authorship-regress",
+            "text": "Whether authorship is impossible unless agents create all materials and causes from which they develop.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-aln-bounded-self-authorship-component-02",
+            "targetMoveId": "pro-capacity-without-self-authorship",
+            "text": "Whether unchosen developmental materials preclude genuine self-construction within limits.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Dennett directly rejects absolute nonauthorship and proposes limited self-construction from found materials while conceding luck.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it answers the regress by defining bounded authorship, though the mechanism of self-modification remains abbreviated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The do-it-yourself metaphor is explicitly limited, and luck is openly incorporated rather than denied."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move claims only limited authorship and expressly concedes both found materials and substantial luck."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Because every self-modifying act has unauthored causes, no person is an ultimate author.",
+        "decisiveQualification": "Dennett claims bounded diachronic authorship rather than ultimate origination ex nihilo."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Limited self-construction from unchosen materials is internally consistent and directly avoids the ultimate-authorship regress."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The found-object metaphor and social understanding make the view intelligible, but do not extensively substantiate self-modification."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central bounded-authorship bridge against causal and constitutive luck."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply preserves the force of constitutive luck while clearly rejecting only the stronger absolute inference."
+        }
+      },
+      "evidenceBasis": "Dennett says people author themselves using found objects, explicitly limits do-it-yourself agency, and concedes substantial luck.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mrp-pragmatic-accountability",
+      "sectionId": "moral-responsibility-practice",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Responsibility need not be absolute because free will and legal accountability are pragmatic, consequentialist institutions calibrated to actual human capacities.",
+      "sourceSpan": {
+        "startEvent": 1723,
+        "endEvent": 1779
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly accuses Harris of reverting to absolute responsibility and develops Dennett's consequentialist account of law and accountability.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-pragmatic-responsibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-neurophysiology-universal-exculpation",
+          "pro-capacity-without-self-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "con-mrp-pragmatic-accountability-component-01",
+            "targetMoveId": "pro-neurophysiology-universal-exculpation",
+            "text": "Whether absence of absolute authorship entails absence of morally relevant responsibility.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-mrp-pragmatic-accountability-component-02",
+            "targetMoveId": "pro-capacity-without-self-authorship",
+            "text": "Whether practical responsibility can be grounded in actual capacities despite unchosen causal sources.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "Dennett justifies replacing absolute desert with a consequentialist demand tied to capacities and explains why this preserves accountability's legitimate role.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within justified reframes, it explicitly rejects absolute responsibility and supplies a practical replacement criterion with institutional purpose."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Pragmatic responsibility, consequentialist justification, and rejection of absolute responsibility are expressly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Dennett identifies his account as consequentialist and indicates that it is more complex than deterrence and rehabilitation alone."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Practical accountability may regulate behavior without establishing genuine authorship or ultimate desert.",
+        "decisiveQualification": "Dennett does not claim ultimate desert; he argues that the responsibility worth retaining is a capacity-sensitive institution."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The consequentialist reframe consistently explains why absolute authorship is unnecessary, though the full institutional argument is only begun."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The appeal to calibrated capacities and institutional consequences supplies a warrant, but detailed comparisons with rival practices are limited."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and comprehensively supports the central pragmatic-responsibility bridge."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply accurately preserves Harris's distinction while giving a clear reason to adopt a different responsibility criterion."
+        }
+      },
+      "evidenceBasis": "Dennett rejects absolute responsibility, calls free will ultimately pragmatic, and proposes a consequentialist basis for holding people responsible.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-mrp-stable-enforcement",
+      "sectionId": "moral-responsibility-practice",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Even curable or causally diagnosed wrongdoing may warrant predictable penalties because deterrence, public confidence, and cooperative institutions depend on stable and enforceable rules.",
+      "sourceSpan": {
+        "startEvent": 1888,
+        "endEvent": 2012
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker stresses recursive social effects, deterrence, respect for law, sports penalties, and the institutional importance of reliable sanctions.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-pragmatic-responsibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-neurophysiology-universal-exculpation",
+          "pro-capacity-without-self-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "con-mrp-stable-enforcement-component-01",
+            "targetMoveId": "pro-neurophysiology-universal-exculpation",
+            "text": "Whether causal diagnosis or curability necessarily eliminates justified sanctions and responsibility practices.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-mrp-stable-enforcement-component-02",
+            "targetMoveId": "pro-capacity-without-self-authorship",
+            "text": "Whether social regulation remains justified despite causally produced differences in control.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Dennett directly argues that causal explanation does not settle the sanction question because predictable rules sustain deterrence and cooperation.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "Within full answers, it contacts universal exculpation through institutional consequences, though it does not fully resolve desert-based responsibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The stable-enforcement thesis is clear, but movement between legal punishment, football penalties, and moral responsibility broadens the scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Stable rules plausibly enable institutions, but the categorical treatment of excuses needs qualifications for impaired control and proportionality."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Causal diagnosis can justify treatment or prevention while reducing blame and punitive severity.",
+        "decisiveQualification": "Predictable sanctions may still be needed, but necessity does not by itself establish moral desert or uniform punishment."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The inference from predictable penalties to functioning cooperative practices is coherent, with a material bridge to moral responsibility left open."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Football rules and institutional feedback provide concrete illustrations, though analogy to criminal sanctions and public confidence is incomplete."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It centrally supports pragmatic responsibility through enforceable, capacity-sensitive social practices."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move answers practical abolition concerns but compresses the strongest distinction between regulation and retributive blame."
+        }
+      },
+      "evidenceBasis": "Dennett invokes deterrence, respect for rules, football red cards, and the dependence of cooperative activities on predictable penalties.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-practical-regulation-without-authorship",
+      "sectionId": "moral-responsibility-practice",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Punishment and stable expectations can influence behavior, yet fuller causal understanding would reveal wrongdoing and reactions to it as unchosen brain states rather than genuine self-authorship.",
+      "sourceSpan": {
+        "startEvent": 2013,
+        "endEvent": 2113
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker concedes deterrent utility before distinguishing the ethical and psychological issue, then develops Harris's predictive-neuroscience challenge to authorship.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-responsibility-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-mrp-stable-enforcement",
+          "con-mrp-pragmatic-accountability"
+        ],
+        "components": [
+          {
+            "componentId": "pro-practical-regulation-without-authorship-component-01",
+            "targetMoveId": "con-mrp-stable-enforcement",
+            "text": "Whether the practical need for deterrence and stable rules establishes genuine authorship or responsibility.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-practical-regulation-without-authorship-component-02",
+            "targetMoveId": "con-mrp-pragmatic-accountability",
+            "text": "Whether consequentialist accountability answers the distinct ethical and psychological authorship question.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Harris concedes that punishment can deter and institutions must function, then directly denies that these facts establish self-authorship.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly grants the practical case and isolates the remaining authorship and ethical issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Practical regulation and genuine authorship are clearly separated, with deterrent utility expressly conceded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The concession is carefully qualified, but the forecast that fuller understanding reveals all reactions as unchosen remains ambitious."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Pragmatic, capacity-sensitive responsibility may be the only responsibility Dennett intends to defend.",
+        "decisiveQualification": "That can justify regulation while leaving Harris's separate claim about ultimate authorship untouched."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "Conceding deterrence while denying its entailment of authorship is an explicit and logically clean distinction."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The practical concession is well grounded, but the broader neuroscience prediction about unchosen reactions lacks detailed support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central responsibility-gap bridge by separating useful regulation from genuine authorship."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The move accurately accepts the strongest practical account and explains the narrower respect in which it remains insufficient."
+        }
+      },
+      "evidenceBasis": "Harris agrees punishment can deter and practical systems must function, while distinguishing those constraints from the authorship question.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-aln-macro-authorship",
+      "sectionId": "authorship-luck-neural-causation",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Conscious authorship operates through temporally extended, high-level control and therefore does not require awareness or control of every neural microprocess implementing an action.",
+      "sourceSpan": {
+        "startEvent": 2265,
+        "endEvent": 2364
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker rejects Harris's short-horizon prediction case and uses Mozart, tennis, and jazz examples characteristic of Dennett's macro-control account.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-bounded-authorship"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-practical-regulation-without-authorship",
+          "pro-neural-contingency-nonauthorship"
+        ],
+        "components": [
+          {
+            "componentId": "con-aln-macro-authorship-component-01",
+            "targetMoveId": "pro-practical-regulation-without-authorship",
+            "text": "Whether lack of conscious access to prior neural implementation defeats authorship of temporally extended action.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-aln-macro-authorship-component-02",
+            "targetMoveId": "pro-neural-contingency-nonauthorship",
+            "text": "Whether absence of micro-level control entails absence of control at the agent level.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Dennett diagnoses the inference as a level-of-control error and states that authorship operates through temporally extended macro-control over one's processes.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within diagnostic defeats, it explicitly identifies the micro-to-macro inference and supplies concrete counterexamples and its defeating consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Micro-level and temporally macro-level control are consistently distinguished, and control is expressly limited to a degree."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The bounded macro-control thesis is supported by explicit examples and avoids claiming complete conscious command of implementation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Early neural initiation or prediction may show consciousness is merely informed after the causal work is complete.",
+        "decisiveQualification": "Temporally extended agency can initiate and shape processes without monitoring each implementing event in real time."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The levels-of-control distinction is explicit, consistent, and directly defeats the inference from unconscious implementation to no authorship."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "Mozart, tennis, and jazz provide varied concrete examples, with only a bounded gap in proving the general macro-control model."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and strongly supports the central bounded-authorship bridge."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The reply targets the strongest predictive-nonauthorship inference and preserves its micro-level premise while denying the conclusion."
+        }
+      },
+      "evidenceBasis": "Dennett says Mozart owned brain processes he controlled at a temporal macro level and uses skilled athletic and musical action as examples.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-apr-competence-alternatives",
+      "sectionId": "alternative-possibilities-randomness",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "An agent could have done otherwise by possessing competence across a real range of actions, without requiring an atom-for-atom replay of the identical physical universe.",
+      "sourceSpan": {
+        "startEvent": 2385,
+        "endEvent": 2408
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly demurs from Harris's conclusion and articulates Dennett's capacity-based interpretation of alternative possibilities and causation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-small-variation-consequential-action",
+          "pro-free-will-first-person-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "con-apr-competence-alternatives-component-01",
+            "targetMoveId": "pro-small-variation-consequential-action",
+            "text": "Whether microscopic differences eliminate a meaningful sense in which an agent could have acted otherwise.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-apr-competence-alternatives-component-02",
+            "targetMoveId": "pro-free-will-first-person-authorship",
+            "text": "Whether doing otherwise requires an atom-for-atom replay of precisely identical circumstances.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "Dennett replaces exact replay with competence across a real action range and explains why that preserves the legitimate practical alternatives question.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within justified reframes, it expressly identifies exact replication as the disputed demand and supplies a clear competence-based replacement."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The real-range capacity sense and the rejected atom-for-atom replay sense are explicitly contrasted."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The competence interpretation is clearly defended, though calling exact replay simply irrelevant exceeds what the brief argument establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The intuitive ability to do otherwise requires a different act under precisely the same total conditions.",
+        "decisiveQualification": "A capacity across relevantly similar situations can support deliberation and evaluation without satisfying exact replay."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The competence semantics coherently permits alternatives without exact replay, though its claim to be the uniquely legitimate sense remains contestable."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The range-of-actions explanation supplies a conceptual warrant but little independent support for privileging it over ordinary exact-circumstance intuitions."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally supports the subsidiary alternatives bridge by explicitly defining a replay-independent ability to do otherwise."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "Dennett states the exact-replay alternative accurately and offers a reasoned account of which legitimate concern survives."
+        }
+      },
+      "evidenceBasis": "Dennett says agents possess a real range of actions and rejects atom-for-atom replication as irrelevant to the legitimate capacity sense.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-randomness-prediction-no-ownership",
+      "sectionId": "alternative-possibilities-randomness",
+      "side": "pro",
+      "speaker": "Sam Harris",
+      "moveKind": "reply",
+      "proposition": "Neither deterministic chaos nor practical randomization supplies upstream ownership, and sufficiently early neural prediction would expose conscious action as the result rather than the author of its causal process.",
+      "sourceSpan": {
+        "startEvent": 2476,
+        "endEvent": 2523
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker distinguishes coin flipping from true freedom and returns to Harris's recurring claims about upstream causes, conscious awareness, and predictive neuroscience.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-randomness-prediction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-apr-competence-alternatives",
+          "con-aln-macro-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "pro-randomness-prediction-no-ownership-component-01",
+            "targetMoveId": "con-apr-competence-alternatives",
+            "text": "Whether practical variation and a range of actions provide upstream ownership or conscious authorship.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-randomness-prediction-no-ownership-component-02",
+            "targetMoveId": "con-aln-macro-authorship",
+            "text": "Whether temporally extended macro-control remains authorship if neural activity predicts the action before conscious awareness.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Harris directly argues that randomness or practical variation does not establish ownership and tests macro-authorship with advance prediction.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within full answers, it contacts the ownership implication, though prediction alone does not fully refute temporally extended control."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Randomness, prediction, and felt authorship are distinguished, but the unspecified predictive experiment leaves temporal and accuracy scope open."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The experiment is explicitly hypothetical, though its predicted effect on authorship and its metaphysical implication are somewhat overstated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Neural prediction could track the agent's own extended process rather than reveal an external or nonauthoring cause.",
+        "decisiveQualification": "Prediction challenges a narrow conscious-initiation picture but does not alone disprove macro-level ownership."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "Randomness clearly supplies no ownership, but the inference from predictability before awareness to absence of macro-authorship needs a bridge."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The neuroimaging case is hypothetical and underspecified, while the conceptual point about randomness adding no control is stronger."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary randomness-prediction bridge through both no-ownership and advance-prediction claims."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The move engages macro-authorship but does not fully accommodate the view that predicted neural activity remains part of the agent."
+        }
+      },
+      "evidenceBasis": "Harris distinguishes coin-flip variation from ownership and argues that sufficiently early neuroimaging prediction would challenge felt authorship.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-apr-indeterminacy-irrelevance",
+      "sectionId": "alternative-possibilities-randomness",
+      "side": "con",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "The difference between deterministic chaos and quantum indeterminacy makes no moral difference, so indeterminacy supplies no freedom unavailable from deterministic processes.",
+      "sourceSpan": {
+        "startEvent": 2524,
+        "endEvent": 2540
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn begins with an explicit statement of disagreement and continues uninterrupted until Harris answers the moral-difference claim.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-indeterminacy"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-randomness-prediction-no-ownership"
+        ],
+        "components": [
+          {
+            "componentId": "con-apr-indeterminacy-irrelevance-component-01",
+            "targetMoveId": "pro-randomness-prediction-no-ownership",
+            "text": "Whether genuine quantum randomness provides morally relevant freedom beyond deterministic chaos or practical randomization.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Dennett directly accepts the comparison and denies that quantum indeterminacy creates any morally relevant difference from deterministic chaos.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it explicitly contacts the indeterminacy premise, though it gives little argument for the asserted moral equivalence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "Deterministic chaos, quantum indeterminacy, and the claimed absence of moral difference are clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conclusion is categorical and intuitively supported, but the span does not unpack every possible route from indeterminacy to control."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Real indeterminacy might permit an alternative outcome unavailable in a deterministic system.",
+        "decisiveQualification": "An additional outcome produced by randomness does not by itself increase authorship, reasons-responsiveness, or moral control."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "If morally relevant freedom requires control, the deterministic-versus-quantum difference is coherently irrelevant; that control premise is implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The conceptual comparison is pointed but largely asserted, with no detailed account of proposed indeterminist ownership mechanisms."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally supports the subsidiary indeterminacy bridge by denying any morally relevant quantum advantage."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply accurately isolates the strongest benefit of indeterminacy and explains why it lacks moral significance without control."
+        }
+      },
+      "evidenceBasis": "Dennett explicitly contrasts deterministic chaos with quantum indeterminacy and says the difference makes no moral difference.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence remains beyond the move ratings, response links, relevance findings, and importance judgments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No independent residual completion criterion is established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance",
+          "importance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of already scored material."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence remains beyond the move ratings, response links, relevance findings, and importance judgments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No independent residual completion criterion is established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance",
+          "importance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of already scored material."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
