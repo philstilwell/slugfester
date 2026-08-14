@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-effective-source-overlay",
+  "protocolId": "assessment-production-post-canary-continuation-policy-v1",
+  "status": "three-debate-effective-source-overlay-frozen-and-verified",
+  "frozenAt": "2026-08-14T02:09:42Z",
+  "checkpointCommit": "a647fcebf161ce6d70a9e3da1984076aafce322b",
+  "planningOnly": true,
+  "productionManifest": {
+    "path": "docs/assessment-production/manifest-v1.json",
+    "sha256": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "mutable": false
+  },
+  "corpusAudit": {
+    "path": "docs/calibration/v2.1/corpus-transcript-audit.json",
+    "sha256": "aeaaf6197355a1dd30b9a4cc319badcfa5ca8ffbaee44a8dfb615ebc028b1245",
+    "matchesAllEffectiveTranscriptAndEventChains": true
+  },
+  "mergeRule": "For Debate 88, 127, or 167 only, replace the three source-chain hash fields with the exact effective values below; preserve every path, extraction method, identity field, and all non-source metadata from the frozen production manifest.",
+  "overlays": [
+    {
+      "debateNumber": "88",
+      "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+      "videoId": "FUPOouj5jNg",
+      "repairRecord": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/source-normalization-repair/debate-088-repair-record.json",
+        "sha256": "2993a490a67b1517d871dce6242a691a6c82e8c25f349f5a5e2ff86545acb780",
+        "status": "source-normalization-repair-passed"
+      },
+      "reason": "remove one zero-duration derived event with no unique semantic content",
+      "originalSourceChain": {
+        "transcript": ".assessment-cache/captions/FUPOouj5jNg/transcript.txt",
+        "transcriptSha256": "2d9dc130c0bf75a7ea23f692804b45c1c7ec32e388b3fb29694c9aad55dd68d7",
+        "events": ".assessment-cache/captions/FUPOouj5jNg/events.json",
+        "eventsSha256": "ff485c97996037ea9d003d987d9745f6e743af6939100d9152ace86945d0238b",
+        "manifest": ".assessment-cache/captions/FUPOouj5jNg/manifest.json",
+        "manifestSha256": "72d5db7fe0eefc55b672698c0d718eaa988805ce7418860f0e4f2805671b4f84",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "effectiveSourceChain": {
+        "transcript": ".assessment-cache/captions/FUPOouj5jNg/transcript.txt",
+        "transcriptSha256": "a5be58d0749c2b8a88f113c19c59c66879e936e8ce7b25aa63aac9f5767e4e99",
+        "events": ".assessment-cache/captions/FUPOouj5jNg/events.json",
+        "eventsSha256": "998bad52a6fe00822673555b15ed2eef3a46bdcbfa9378a384b2febf5f5a8d3f",
+        "manifest": ".assessment-cache/captions/FUPOouj5jNg/manifest.json",
+        "manifestSha256": "d304251f5a38c91862a4e58560388e7223aaa0cd9cc121b4d629d30c34760bd0",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "exactOverriddenFields": [
+        "transcriptSha256",
+        "eventsSha256",
+        "manifestSha256"
+      ],
+      "pathsChanged": false,
+      "semanticContentRemoved": false
+    },
+    {
+      "debateNumber": "127",
+      "debateId": "slick-clifton-objective-morality-god-2014",
+      "videoId": "uJeKS705aXs",
+      "repairRecord": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/source-normalization-repair/debate-127-repair-record.json",
+        "sha256": "56dd2b5a0cc772ec92d8f219e7c4f3768bbfc619f9b64e390b1dce597cc644e1",
+        "status": "source-normalization-repair-passed"
+      },
+      "reason": "remove one zero-duration derived event with no unique semantic content",
+      "originalSourceChain": {
+        "transcript": ".assessment-cache/captions/uJeKS705aXs/transcript.txt",
+        "transcriptSha256": "3c6fc4b8df96ec5d56d7521c2896fcfec35b3b3fdcf35fc90cad8a5256b8ab9e",
+        "events": ".assessment-cache/captions/uJeKS705aXs/events.json",
+        "eventsSha256": "a713e5afaafdb3d0377fa3cf150e764eb26dfd0ecf7df76839d80f1f36b4706d",
+        "manifest": ".assessment-cache/captions/uJeKS705aXs/manifest.json",
+        "manifestSha256": "f2554084f686e34cda105fbb22e5afab91286019a4db68ec8181e26aa9eb5d1e",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "effectiveSourceChain": {
+        "transcript": ".assessment-cache/captions/uJeKS705aXs/transcript.txt",
+        "transcriptSha256": "cc36cf5a24922e2f24e360f2e5d27e24b104c182f13a45feaa122f3cbc32faa5",
+        "events": ".assessment-cache/captions/uJeKS705aXs/events.json",
+        "eventsSha256": "306e4aff21ab145306620fee69627346315c2424dfbd407a61073636052466c8",
+        "manifest": ".assessment-cache/captions/uJeKS705aXs/manifest.json",
+        "manifestSha256": "f967bc9295efae637419c45f2853e02b81097a33f71af8c28eba7f56ea823f15",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "exactOverriddenFields": [
+        "transcriptSha256",
+        "eventsSha256",
+        "manifestSha256"
+      ],
+      "pathsChanged": false,
+      "semanticContentRemoved": false
+    },
+    {
+      "debateNumber": "167",
+      "debateId": "craig-shook-existence-god-2008",
+      "videoId": "L3FOgiASYY0",
+      "repairRecord": {
+        "path": "docs/assessment-production/source-repairs/debate-167-empty-event-normalization.json",
+        "sha256": "7c1b0c98159a2968b39346605b942b31861c67668b4cbecd97b06fd67fb54898",
+        "status": "debate-167-empty-derived-event-repair-passed"
+      },
+      "reason": "remove one empty derived event with no semantic content",
+      "originalSourceChain": {
+        "transcript": ".assessment-cache/captions/L3FOgiASYY0/transcript.txt",
+        "transcriptSha256": "2fc2c64b885556902ad6121f46be088f517ffd5ac0928d951dca0669b5846355",
+        "events": ".assessment-cache/captions/L3FOgiASYY0/events.json",
+        "eventsSha256": "c6fc6347fc71f7c1605b9184b995465703bfdf5797ce11d3f67558abd32fb355",
+        "manifest": ".assessment-cache/captions/L3FOgiASYY0/manifest.json",
+        "manifestSha256": "83e855781ce6080f16f8aa2bc8d6cc112ca57c1507457fdc9bfba4edcd8e3ddc",
+        "extractionMethod": "OpenAI Audio API diarized transcription of locally saved, speech-optimized audio chunks"
+      },
+      "effectiveSourceChain": {
+        "transcript": ".assessment-cache/captions/L3FOgiASYY0/transcript.txt",
+        "transcriptSha256": "4b70a4b06d2aabb8eb959c479c25385e5007f199cddbaa48460ebcb2d99177a6",
+        "events": ".assessment-cache/captions/L3FOgiASYY0/events.json",
+        "eventsSha256": "e2dc3cdfd26a0fe4113a0f27d5f1386eb6bdaa8b74786b1fd00bd30fb5131509",
+        "manifest": ".assessment-cache/captions/L3FOgiASYY0/manifest.json",
+        "manifestSha256": "c53451a13f2b21b44010dfbbe0e4834667ac4c765a00a2c3e694fe4f0079c73c",
+        "extractionMethod": "OpenAI Audio API diarized transcription of locally saved, speech-optimized audio chunks"
+      },
+      "exactOverriddenFields": [
+        "transcriptSha256",
+        "eventsSha256",
+        "manifestSha256"
+      ],
+      "pathsChanged": false,
+      "semanticContentRemoved": false
+    }
+  ],
+  "verification": {
+    "corpusDebates": 195,
+    "effectiveSourceFilesExpected": 585,
+    "effectiveSourceFilesVerified": 585,
+    "originalManifestHashMatches": 576,
+    "approvedOverlayHashMatches": 9,
+    "approvedOverlayDebates": [
+      "88",
+      "127",
+      "167"
+    ],
+    "effectiveSourceRecordsSha256": "ec43e1ca7f33742db4185e70f78bb72ee938d6cd47bcf8214ac0287a43e51498",
+    "remainingPendingDyadicDebates": 164,
+    "remainingPendingSourceFilesVerified": 492,
+    "remainingEffectiveSourceRecordsSha256": "83454f861b8c8d181386f0a9f1b2fe03036e9a4fcf3e28e43f80d8606a540c1a",
+    "remainingCanonicalEventDebatesPassed": 164,
+    "remainingCanonicalEventDebatesFailed": 0,
+    "remainingCanonicalEventCount": 449371,
+    "remainingDurationHours": 291.117,
+    "historicalManifestWordCountPreservedWithoutRecomputation": [
+      "167"
+    ],
+    "sourceMutations": 0
+  },
+  "authorization": {
+    "batchSelection": false,
+    "modelExecution": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false
+  },
+  "nextAuthorizedAction": "freeze-post-canary-continuation-selection-policy-plan"
+}

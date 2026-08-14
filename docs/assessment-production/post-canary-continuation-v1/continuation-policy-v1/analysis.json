@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-continuation-policy-analysis",
+  "protocolId": "assessment-production-post-canary-continuation-policy-v1",
+  "status": "post-repair-source-overlay-and-full-campaign-selection-policy-analysis-passed",
+  "analyzedAt": "2026-08-14T02:09:42Z",
+  "effectiveSourceOverlay": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/effective-source-overlay.json",
+    "bytes": 8291,
+    "sha256": "d36c2b0a83e624b036525ae6047778c84a0a6456fa30c9c37b05bb6bd8728c14",
+    "status": "three-debate-effective-source-overlay-frozen-and-verified"
+  },
+  "selectionPolicy": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/selection-policy.json",
+    "bytes": 11599,
+    "sha256": "a7375c3ee116d64df6e0ddfe3c15c598a425be30200e798bbd383cdf83118466",
+    "status": "post-canary-full-campaign-selection-policy-frozen-awaiting-separate-first-batch-selection-decision"
+  },
+  "finding": "The successful repairs for Debates 88 and 127 combine with the prior Debate 167 repair into a three-debate overlay that reconciles all 585 effective source files; all 164 remaining dyadic debates now pass canonical event validation.",
+  "policyDecision": "Use one stable score-blind hash order across every remaining dyadic debate, including debates observed in earlier failed or development gates; publish sequential batches of ten and a final batch of four, never replace a selected blocker, and do not select the next batch before the prior one publishes successfully.",
+  "decision": {
+    "effectiveSourceGatePassed": true,
+    "remainingCanonicalSourceGatePassed": true,
+    "completeCampaignEligibilityReconciled": true,
+    "priorFreshOnlyExclusionRetiredForProductionContinuation": true,
+    "batchSelectionAttempted": false,
+    "batchSelectionAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "productionMutationAuthorized": false
+  },
+  "modelBoundary": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlindnessRequired": true,
+    "modelContexts": 0,
+    "meteredApiCostUsd": 0
+  },
+  "nextAuthorizedAction": "user-decision-on-first-post-canary-production-batch-selection-preparation"
+}
