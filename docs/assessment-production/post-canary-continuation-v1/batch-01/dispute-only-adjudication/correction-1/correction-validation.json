@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-debate-195-burden-adjustment-correction-validation",
+  "protocolId": "assessment-production-post-canary-batch-01-debate-195-burden-adjustment-correction",
+  "status": "correction-output-unavailable-transport-failure",
+  "validatedAt": "2026-08-15T12:03:19.061Z",
+  "debateNumber": "195",
+  "outputAvailable": false,
+  "outputSha256": null,
+  "gateAcceptancePassed": false,
+  "validationSummary": null,
+  "validationMessage": "Reading additional input from stdin...\nOpenAI Codex v0.147.0-alpha.6.5\n--------\nworkdir: /private/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/slugfester-debate-195-correction-G4tmtg\nmodel: gpt-5.6-sol\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: low\nreasoning summaries: none\nsession id: 01a0054e-1012-7ab2-aa1c-48f551c8fc6e\n--------\nuser\nRead manual.md, packet.json, and schema.json; read nothing else. Act only as the isolated, score-blind burden-adjustment correction adjudicator for post-canary Batch 1 Debate 195. Decide exactly the two anonymous candidate pairs in the required pro-then-con order. Select only candidate 1 or candidate 2 as a complete object. Never mix, average, interpolate, repair, rewrite, or invent a candidate. The eighteen preserved move decisions and the prior output are unavailable and immutable. Never request or produce move decisions, pass identities, initial rationales, provenance, calculated scores, winner labels, legacy assessments, other debates, Overall Commentary, AI Extension, or publication prose. Return exactly one schema-conforming JSON object.\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=('properties', 'burdenAdjustmentDecisions'), array schema items is not an object.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}\nERROR: {\n  \"type\": \"error\",\n  \"error\": {\n    \"type\": \"invalid_request_error\",\n    \"code\": \"invalid_json_schema\",\n    \"message\": \"Invalid schema for response_format 'codex_output_schema': In context=('properties', 'burdenAdjustmentDecisions'), array schema items is not an object.\",\n    \"param\": \"text.format.schema\"\n  },\n  \"status\": 400\n}",
+  "preservedMoveDecisions": 18,
+  "originalOutputUnchanged": true,
+  "deterministicMergeAuthorized": false,
+  "scoresDerived": 0,
+  "originalOutputSha256": "c3d018bb633986685123fd1a80fba424b0ba3179b75e77b80d60fddbb1d2e1db",
+  "preservedMoveDecisionsSha256": "508e7c38c213e3881e741162066c9cba6ecb104e10a6558a5da0449973ac4c52"
+}
