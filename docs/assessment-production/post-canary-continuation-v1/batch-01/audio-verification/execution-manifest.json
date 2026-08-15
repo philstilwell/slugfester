@@ -1,0 +1,514 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-audio-verification-execution-manifest",
+  "protocolId": "assessment-production-post-canary-batch-01-decomposed-consensus",
+  "status": "frozen-three-post-canary-batch-01-paid-known-speaker-diarizations-authorized",
+  "preparedAt": "2026-08-15T00:27:27.906Z",
+  "approvedAt": "2026-08-15T00:36:04Z",
+  "checkpointCommit": "94590f9f2db632b1eacff9720a88761e331577dd",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "AIOnly": true,
+  "userAuthorization": {
+    "instruction": "I approve preparation, validation, freezing, committing, and pushing of the Batch 1 audio-verification manifest and cost estimate for exactly the three frozen clips only, with a direct incremental cost cap of $0. Do not execute audio verification or models, play or semantically evaluate audio, use paid services or transcription, adjudicate, derive scores, reconstruct publication, mutate production, or select the next batch.",
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "verificationCallsAuthorizedForPreparation": 3,
+    "audioVerificationExecutionAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "paidServicesAuthorized": false,
+    "transcriptionAuthorized": false,
+    "adjudicationAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "publicationReconstructionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "scope": {
+    "debates": [
+      "175",
+      "75",
+      "13"
+    ],
+    "frozenTargetClips": 3,
+    "verificationCalls": 3,
+    "additionalVerificationTargets": 0,
+    "sameDebateSpeakerSupportReferences": 6,
+    "scoreFieldsAvailable": false,
+    "legacyAssessmentFieldsAvailable": false,
+    "exactFrozenClipPopulationPreserved": true
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "175",
+      "debateId": "oppy-pearce-is-there-a-god-2022",
+      "moveId": "pro-isolated-tradition-genuine-interpretation",
+      "expectedSpeaker": "Kenny Pearce",
+      "proposition": "A long-isolated religious tradition may reflect genuine experiences of God interpreted through its inherited framework rather than faculties wholly disconnected from reality.",
+      "verificationExcerpt": "of uh god that people are trying to make sense of somehow and that that kind of and what we can say about like what does it mean that all their experiences seemed to make sense to them in light of this framework um right or do i actually have to say this about that case the same thing that a naturalist says that um that kind of the these the human faculties somehow went off the",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/clips/pro-isolated-tradition-genuine-interpretation.mp3",
+      "clipSha256": "435c06a8198dce86ff3683a2789bc3895f80a4d43eef17ca9b8bf121951c24dd",
+      "durationSeconds": 135.641,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/transcripts/pro-isolated-tradition-genuine-interpretation.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Kenny Pearce",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/references/kenny-pearce.mp3",
+          "sha256": "56bde4487f9c856c10f09c1790f4bb2cd93695b90d607a4cd29320edfc61958f",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Graham Oppy",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/references/graham-oppy.mp3",
+          "sha256": "b80f300d220faa9f0c40540c23ca80b3ebd896ac39f47473ce91effb175a78ed",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "75",
+      "debateId": "rasmussen-clifton-contingency-argument-2019",
+      "moveId": "con-boundary-intuitions-and-brute-universe",
+      "expectedSpeaker": "Scott Clifton",
+      "proposition": "Even if the universe began and is contingent, causal and explanatory intuitions formed within it may not govern its ultimate boundary, leaving the universe's brute existence a live endpoint.",
+      "verificationExcerpt": "argument that the universe has a first moment in time you know that the universe has a beginning I'm you may notice I'm avoiding the phrase like popping into existence or coming into existence that feels misleading to me because it assumes time where there wouldn't be time but let's say that the universe has a first moment in time the universe has a beginning - it's in the you know all of our intuitions",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/clips/con-boundary-intuitions-and-brute-universe.mp3",
+      "clipSha256": "249986301d8a11fb94e82887356f29ae8cb80030ff94d7fa00338c22635c8298",
+      "durationSeconds": 111.68,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/transcripts/con-boundary-intuitions-and-brute-universe.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Josh Rasmussen",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/references/josh-rasmussen.mp3",
+          "sha256": "1e4723e11d27f3f93823e557b9f5e89e5be9990b5843cd98ccb6e8553a77efb3",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Scott Clifton",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/references/scott-clifton.mp3",
+          "sha256": "89b6fec56155234062def2479ba1c7682222769ff506e15dc47c15f8d2609f41",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "13",
+      "debateId": "knechtle-oconnor-christian-morality-2025",
+      "moveId": "con-job-terrifying-submission",
+      "expectedSpeaker": "Alex O'Connor",
+      "proposition": "God's whirlwind speech in Job appears angry and terrifying rather than loving or consoling, and Job's repentance resembles fear-driven submission instead of a morally reassuring answer to suffering.",
+      "verificationExcerpt": "Job. And he has God say, instead of, you know, gird up thy loins, I will question you, and you'll give me an answer. He says, you know, stand up like a man. I'm going to ask you some questions. Please instruct me. That's what he says. Please instruct me. It's almost sarcastic, right? Because the feeling that you get from God here is like this terrifying rant, right? It doesn't scream love",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/clips/con-job-terrifying-submission.mp3",
+      "clipSha256": "f1821d3e791a519f4d77a3a60710d4b086e804c03c2a6157be2ae2a97012154d",
+      "durationSeconds": 103.96,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/transcripts/con-job-terrifying-submission.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Cliffe Knechtle",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/references/cliffe-knechtle.mp3",
+          "sha256": "da8d12be2dde01f817e2bce640d87b3fabcce5c4d65d4ffa0c0fd42afc090262",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Alex O'Connor",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/references/alex-o-connor.mp3",
+          "sha256": "77f636bd97a1c29f5ecf6a875ba523c4f10db5775166325875695245c5834b5f",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "semanticAudioEvaluationPerformed": false,
+    "audioPlaybackPerformed": false,
+    "references": [
+      {
+        "debateNumber": "175",
+        "speaker": "Kenny Pearce",
+        "selectedMoveId": "pro-contingent-history-needs-free-ground",
+        "selectedMoveSourceSpan": {
+          "startEvent": 312,
+          "endEvent": 481
+        },
+        "selectedMoveDurationSeconds": 372.32,
+        "startSeconds": 861.6,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/references/kenny-pearce.mp3",
+        "sha256": "56bde4487f9c856c10f09c1790f4bb2cd93695b90d607a4cd29320edfc61958f"
+      },
+      {
+        "debateNumber": "175",
+        "speaker": "Graham Oppy",
+        "selectedMoveId": "con-comparative-naturalistic-worldview",
+        "selectedMoveSourceSpan": {
+          "startEvent": 60,
+          "endEvent": 171
+        },
+        "selectedMoveDurationSeconds": 253.44,
+        "startSeconds": 258.4,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/references/graham-oppy.mp3",
+        "sha256": "b80f300d220faa9f0c40540c23ca80b3ebd896ac39f47473ce91effb175a78ed"
+      },
+      {
+        "debateNumber": "75",
+        "speaker": "Josh Rasmussen",
+        "selectedMoveId": "pro-graduated-strengths-of-necessity",
+        "selectedMoveSourceSpan": {
+          "startEvent": 463,
+          "endEvent": 550
+        },
+        "selectedMoveDurationSeconds": 226.4,
+        "startSeconds": 1172.07,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/references/josh-rasmussen.mp3",
+        "sha256": "1e4723e11d27f3f93823e557b9f5e89e5be9990b5843cd98ccb6e8553a77efb3"
+      },
+      {
+        "debateNumber": "75",
+        "speaker": "Scott Clifton",
+        "selectedMoveId": "con-totality-scope-and-brute-deity",
+        "selectedMoveSourceSpan": {
+          "startEvent": 398,
+          "endEvent": 462
+        },
+        "selectedMoveDurationSeconds": 171.271,
+        "startSeconds": 975.845,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/references/scott-clifton.mp3",
+        "sha256": "89b6fec56155234062def2479ba1c7682222769ff506e15dc47c15f8d2609f41"
+      },
+      {
+        "debateNumber": "13",
+        "speaker": "Cliffe Knechtle",
+        "selectedMoveId": "pro-suffering-cross-restoration",
+        "selectedMoveSourceSpan": {
+          "startEvent": 198,
+          "endEvent": 243
+        },
+        "selectedMoveDurationSeconds": 152.72,
+        "startSeconds": 790.52,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 66018,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/references/cliffe-knechtle.mp3",
+        "sha256": "da8d12be2dde01f817e2bce640d87b3fabcce5c4d65d4ffa0c0fd42afc090262"
+      },
+      {
+        "debateNumber": "13",
+        "speaker": "Alex O'Connor",
+        "selectedMoveId": "con-slavery-property-permission",
+        "selectedMoveSourceSpan": {
+          "startEvent": 674,
+          "endEvent": 712
+        },
+        "selectedMoveDurationSeconds": 141.04,
+        "startSeconds": 2265.16,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 66018,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/references/alex-o-connor.mp3",
+        "sha256": "77f636bd97a1c29f5ecf6a875ba523c4f10db5775166325875695245c5834b5f"
+      }
+    ]
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "planningPricePerMinuteUsd": 0.006,
+    "planningRateBasis": "promoted-production-canary",
+    "clipMinutes": 5.8547,
+    "expectedFutureExecutionCostUsd": 0.0351,
+    "futureCostCapAuthorized": true,
+    "officialPricingCheckedAt": "2026-08-14",
+    "officialModelPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialSpeechToTextGuideUrl": "https://developers.openai.com/api/docs/guides/speech-to-text",
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "estimatedPricePerMinuteUsd": 0.006,
+    "actualTokenBilledCostMayVary": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true,
+    "explicitPaidExecutionApprovalRequired": true,
+    "explicitPaidExecutionApprovalRecorded": true,
+    "maximumAuthorizedCostUsd": 0.1
+  },
+  "executionPolicy": {
+    "callsMaximum": 3,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "chunkingStrategy": "auto",
+    "responseFormat": "diarized_json",
+    "language": "en",
+    "knownSpeakerReferencesPerCall": 2,
+    "transcriptsSavedLocally": true
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "isolatedPassesPreserved": true,
+    "unchanged": true
+  },
+  "preparationExecutionBoundary": {
+    "sourceAudioAccessLimitedToProgrammaticReferenceEncodingProbeAndHashing": true,
+    "targetClipAccessLimitedToProgrammaticSizeAndHashValidation": true,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0,
+    "ffmpegReferenceExtractions": 6,
+    "ffprobeReferenceChecks": 6,
+    "workItemSourceHashesReplayed": 80,
+    "directIncrementalCostUsd": 0
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "authorization": {
+    "paidTranscriptionActivation": false,
+    "paidTranscriptionExecution": true,
+    "audioVerificationExecution": true,
+    "deterministicAudioAnalysis": true,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "clipHashMismatchBlocks": true,
+    "referenceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "missingApiKeyBlocks": true,
+    "missingSeparatePaidExecutionApprovalBlocks": true,
+    "futureCostAboveApprovedCapBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "deterministicUnresolvedBlocksAdjudication": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualAttributionOverrideAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "publicationReconstructionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/analysis.json",
+    "transcripts": [
+      "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/transcripts/pro-isolated-tradition-genuine-interpretation.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/transcripts/con-boundary-intuitions-and-brute-universe.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/transcripts/con-job-terrifying-submission.transcript.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/transcripts/pro-isolated-tradition-genuine-interpretation.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/transcripts/con-boundary-intuitions-and-brute-universe.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/transcripts/con-job-terrifying-submission.transcript.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/disagreement-extraction/audio-source-preparation.json": "48299e424956c55b0b52190ff1a8ff206175170de9a4cb66f4c42e6d22e0c706",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/disagreement-extraction/audio-work-item-preparation.json": "4754799fba81c92b3ef144d57fef5c47a7912112225b6dafe9c2e251a362d50e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/disagreement-extraction/audio-work-items.json": "2d52c05d1afa6880da308b7cbc2e92f22cfb76580fa9649e884ddfd12891d6a4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/independent-judgments/execution-preparation-manifest.json": "11d2cdc55b5482110e538b289a7d51d07ab779d88e1b586aa7c0d6fb655a1611",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production-checkpoint-v2.2-audio-verification-workflow.md": "7fbd714108cb3ba63f629742fa3de6b65c57f247a1b082a7fa5e566135b5906e",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-checkpoint-v2.2-audio-verification.mjs": "9eb542d845d9f404fb8eb3a48a8dea0194e999408e0cd758a6c94fca9c6dfe6b",
+    "scripts/activate-assessment-production-checkpoint-v2.2-audio-verification.mjs": "26bbd5e5152fcc9252ec6258858c4a757e515793a7482966f1cd5109e26ecd50",
+    "scripts/run-assessment-production-checkpoint-v2.2-audio-verification.mjs": "e7efef66370a58810f38c0a2459a4fa848e57fecd4cc077e4a6601537e398e20",
+    "scripts/analyze-assessment-production-checkpoint-v2.2-audio-verification.mjs": "9d44e0a4f74f9c3cd9cf2f3f644a8fe4cb0afcc1d925f75efac9bcf220ed6b5e",
+    "scripts/test-assessment-production-checkpoint-v2.2-audio-verification.mjs": "021ca6949f6ad820289c3eb4720872a1fcb6d363e9a151a91e7cf650f25cb642",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/independent-judgments/source-packets/debate-175.json": "f27b671ec033e8c91987fb969b4667c7bf5cd9f5fb3a8c9c7115b385a6aa7299",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/inventory-candidate-sharded/locked-inventories/debate-175.json": "e4c0543928889413794a49c88db5570bcb6d042983aa09fcafbe74c7c05242b8",
+    ".assessment-cache/captions/SyhMlwsQuqc/events.json": "e6c006098e90eaf41a02c22e0d459b40512dc951854f10c0fc102519e3a76355",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/independent-judgments/source-packets/debate-75.json": "ddd80a981751639047394aefc6b3e862efbfb473b3e621d58ccf8ab558ce8ca6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/inventory-candidate-sharded/locked-inventories/debate-75.json": "a12ae89e329c3e738b40f1478020b00536b98b325a99cc139a40b79a4e9403d7",
+    ".assessment-cache/captions/WgiWkE1lhII/events.json": "3d9b6e6080b609813d492abeb61e60d0a6970774e956cca6eb2a43603ccd5821",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/independent-judgments/source-packets/debate-13.json": "c8886747a75c824d44c644d9b90d920ab7b4e545415103de00fc3aecc9489aa3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/inventory-candidate-sharded/locked-inventories/debate-13.json": "202808f72c189edcab593d013a5e52e7a5322245b71fb9803c663ca4d67d34a9",
+    ".assessment-cache/captions/EN5Jqu2-2P8/events.json": "baf0d2e1e1b1b8449bb822dc4d6442f1784b54d31e5fdba5e18b04466eabc7ec",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/audio/source.mp3": "157ab8403102cda9d798272d41169848181a7d8dcab812a9d101c9863114d46c",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/audio/source.mp3": "ac83c88d95be920198fcda2ac6a117ba3dcbca8f61f392fe7afd37fcd8396a12",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/audio/source.mp3": "d8a3bc83bdbc75bb43fcae552f4dfea5be72b7512b5cefb3d01ee79460ec47fd",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/clips/pro-isolated-tradition-genuine-interpretation.mp3": "435c06a8198dce86ff3683a2789bc3895f80a4d43eef17ca9b8bf121951c24dd",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/clips/con-boundary-intuitions-and-brute-universe.mp3": "249986301d8a11fb94e82887356f29ae8cb80030ff94d7fa00338c22635c8298",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/clips/con-job-terrifying-submission.mp3": "f1821d3e791a519f4d77a3a60710d4b086e804c03c2a6157be2ae2a97012154d",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/references/kenny-pearce.mp3": "56bde4487f9c856c10f09c1790f4bb2cd93695b90d607a4cd29320edfc61958f",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/references/graham-oppy.mp3": "b80f300d220faa9f0c40540c23ca80b3ebd896ac39f47473ce91effb175a78ed",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/references/josh-rasmussen.mp3": "1e4723e11d27f3f93823e557b9f5e89e5be9990b5843cd98ccb6e8553a77efb3",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/references/scott-clifton.mp3": "89b6fec56155234062def2479ba1c7682222769ff506e15dc47c15f8d2609f41",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/references/cliffe-knechtle.mp3": "da8d12be2dde01f817e2bce640d87b3fabcce5c4d65d4ffa0c0fd42afc090262",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/references/alex-o-connor.mp3": "77f636bd97a1c29f5ecf6a875ba523c4f10db5775166325875695245c5834b5f"
+  },
+  "totals": {
+    "debates": 3,
+    "targetClips": 3,
+    "supportReferences": 6,
+    "clipMinutes": 5.8547,
+    "audioVerificationCalls": 0,
+    "transcriptionCalls": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "adjudicationContexts": 0,
+    "scoresDerived": 0,
+    "publicationReconstructions": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "execute-exactly-three-post-canary-batch-01-paid-audio-verification-calls-once-sequentially",
+  "userExecutionAuthorization": {
+    "instruction": "I approve activation and execution of exactly the three frozen Batch 1 audio-verification calls using gpt-4o-transcribe-diarize through the OpenAI Transcription API, with two frozen same-debate speaker references per call, sequential execution, one attempt per call, no retries, and a maximum direct incremental cost of $0.10. Stop after deterministic audio-verification validation, analysis, committing, and pushing. Do not run judgment or adjudication models, derive scores, reconstruct publication, mutate production, or select the next batch.",
+    "maximumDirectIncrementalCostUsd": 0.1,
+    "verificationCallsAuthorized": 3,
+    "model": "gpt-4o-transcribe-diarize",
+    "provider": "OpenAI Transcription API",
+    "knownSpeakerReferencesPerCall": 2,
+    "sequentialExecution": true,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "deterministicValidationAndAnalysisAuthorized": true,
+    "judgmentModelExecutionAuthorized": false,
+    "adjudicationModelExecutionAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "publicationReconstructionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/execution-preparation-manifest.json",
+    "sha256": "7f14d382e0bd9f2314ad600a853edfbeae37b7209c84c047e79cab44ec34a509"
+  },
+  "executionToolHashes": {
+    "scripts/activate-assessment-production-post-canary-batch-01-audio-verification.mjs": "28ee42f2cf11f8725ad23562e506ffb36658b7937921410279f285d1c6943077",
+    "scripts/run-assessment-production-post-canary-batch-01-audio-verification.mjs": "db6305cc18a1da8a5894b4c8386310b7d874e0792fbf7f687918c9ac5e3d71d7",
+    "scripts/analyze-assessment-production-post-canary-batch-01-audio-verification.mjs": "ca43696c68247f07107d5bed7ac2e0b94f8e8bc8f2e11db149e541c931f9e830",
+    "scripts/test-assessment-production-post-canary-batch-01-audio-verification.mjs": "5aa6366c1964c36a9c22a41974ce1c931273e163c1b2755823163d4ca10c9d5b",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-audio-cost-control-analysis",
+  "protocolId": "assessment-production-post-canary-batch-01-decomposed-consensus",
+  "status": "audio-attribution-passed-usage-derived-cost-estimate-exceeded-approved-cap",
+  "analyzedAt": "2026-08-15T00:43:47.062Z",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "audioAttributionGate": {
+    "passed": true,
+    "verified": 3,
+    "unresolved": 0,
+    "resultPreserved": true,
+    "resultPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/analysis.json",
+    "resultSha256": "5685a347de09c5decee74b1bd06e3fdfcb45cb766ebfc0e3ee903a89846505df"
+  },
+  "pricing": {
+    "provider": "OpenAI",
+    "model": "gpt-4o-transcribe-diarize",
+    "officialPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialPricingCheckedAt": "2026-08-14",
+    "inputRatePerMillionUsd": 2.5,
+    "outputRatePerMillionUsd": 10,
+    "billingBasis": "returned-token-usage-times-current-official-model-rates",
+    "actualInvoiceChargeAvailable": false,
+    "usageDerivedEstimateNotInvoice": true
+  },
+  "costControl": {
+    "originalPlanningRatePerMinuteUsd": 0.006,
+    "originalPlanningEstimateUsd": 0.0351,
+    "approvedMaximumCostUsd": 0.1,
+    "usageDerivedEstimatedCostUsd": 0.1190425,
+    "amountAboveApprovedCapUsd": 0.01904249999999999,
+    "approvedCapExceeded": true,
+    "planningEstimateUnderstatedUsageDerivedEstimate": true,
+    "noFurtherPaidCallsAfterDiscovery": true,
+    "directIncrementalCostCapControlPassed": false
+  },
+  "calls": [
+    {
+      "debateNumber": "175",
+      "moveId": "pro-isolated-tradition-genuine-interpretation",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/transcripts/pro-isolated-tradition-genuine-interpretation.transcript.json",
+      "transcriptSha256": "7c1eaf24d714dd9ae56bd2bd7ef167dadb8357b5129b97b6918c927488fa90b1",
+      "inputTokens": 2449,
+      "audioInputTokens": 2317,
+      "textInputTokens": 132,
+      "outputTokens": 3807,
+      "totalTokens": 6256,
+      "inputCostUsd": 0.0061224999999999995,
+      "outputCostUsd": 0.03807,
+      "usageDerivedEstimatedCostUsd": 0.044192499999999996
+    },
+    {
+      "debateNumber": "75",
+      "moveId": "con-boundary-intuitions-and-brute-universe",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/transcripts/con-boundary-intuitions-and-brute-universe.transcript.json",
+      "transcriptSha256": "3cb1e8fc4f2f499364ada7ce5f96bcd67c71f9620d0dedda34f6781c65afdde1",
+      "inputTokens": 2244,
+      "audioInputTokens": 2063,
+      "textInputTokens": 181,
+      "outputTokens": 3264,
+      "totalTokens": 5508,
+      "inputCostUsd": 0.0056099999999999995,
+      "outputCostUsd": 0.03264,
+      "usageDerivedEstimatedCostUsd": 0.03825
+    },
+    {
+      "debateNumber": "13",
+      "moveId": "con-job-terrifying-submission",
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/transcripts/con-job-terrifying-submission.transcript.json",
+      "transcriptSha256": "409d669b0cef9f78212636c4dcde409626c4b7b9921f0e833a69a995abe4339d",
+      "inputTokens": 1964,
+      "audioInputTokens": 1849,
+      "textInputTokens": 115,
+      "outputTokens": 3169,
+      "totalTokens": 5133,
+      "inputCostUsd": 0.00491,
+      "outputCostUsd": 0.031689999999999996,
+      "usageDerivedEstimatedCostUsd": 0.036599999999999994
+    }
+  ],
+  "totals": {
+    "inputTokens": 6657,
+    "audioInputTokens": 6229,
+    "textInputTokens": 428,
+    "outputTokens": 10240,
+    "totalTokens": 16897,
+    "usageDerivedEstimatedCostUsd": 0.1190425
+  },
+  "executionBoundary": {
+    "paidCallsAddedByCostAnalysis": 0,
+    "modelCallsAddedByCostAnalysis": 0,
+    "audioPlaybackCalls": 0,
+    "retries": 0,
+    "judgmentModelContexts": 0,
+    "adjudicationModelContexts": 0,
+    "scoresDerived": 0,
+    "publicationReconstructions": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "workflowDisposition": {
+    "deterministicAudioAttributionResultInvalidated": false,
+    "downstreamWorkflowBlocked": true,
+    "priorAnalysisNextAuthorizedActionSuperseded": true,
+    "userReviewRequired": true
+  },
+  "authorization": {
+    "paidTranscription": false,
+    "audioVerificationExecution": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/execution-preparation-manifest.json": "7f14d382e0bd9f2314ad600a853edfbeae37b7209c84c047e79cab44ec34a509",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/execution-manifest.json": "fcd882a77a74a8a6e76961865df07bfea159ce525cb320b67ad3b93c355762f8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/model-execution.json": "454dbad644d493020fa0a158c3a63c75eda492361a16a5aab769c5da630f1996",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/audio-verification.json": "90191e24e125a9eea10a237c78d0b0282da8e4bf5020f899602e36133081538c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/analysis.json": "5685a347de09c5decee74b1bd06e3fdfcb45cb766ebfc0e3ee903a89846505df",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-175/transcripts/pro-isolated-tradition-genuine-interpretation.transcript.json": "7c1eaf24d714dd9ae56bd2bd7ef167dadb8357b5129b97b6918c927488fa90b1",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-75/transcripts/con-boundary-intuitions-and-brute-universe.transcript.json": "3cb1e8fc4f2f499364ada7ce5f96bcd67c71f9620d0dedda34f6781c65afdde1",
+    "output/transcribe/assessment-production-post-canary-batch-01-audio-verification/debate-13/transcripts/con-job-terrifying-submission.transcript.json": "409d669b0cef9f78212636c4dcde409626c4b7b9921f0e833a69a995abe4339d",
+    "scripts/analyze-assessment-production-post-canary-batch-01-audio-cost-control.mjs": "f3d361885c28cda3f3128763f78dc8051522bb338ad14d582483628406777334",
+    "scripts/test-assessment-production-post-canary-batch-01-audio-cost-control.mjs": "6568ae6841f76ae63b93580539561c19e63c08647260416ccd488b9fead0057a"
+  },
+  "nextAuthorizedAction": "user-review-required-before-any-batch-01-downstream-work-after-usage-derived-cost-cap-exceedance"
+}
