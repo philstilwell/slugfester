@@ -1,0 +1,1527 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+  "status": "frozen-post-canary-batch-01-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "debateNumber": "31",
+  "debateId": "oconnor-craig-resurrection-2023",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+    "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+    "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+    "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+    "finalCandidateSha256": "cc70578b9b840ca8daef88a4e28fb20ae221e76dcf96e07b59b2ccc76a181e38",
+    "eventsPath": ".assessment-cache/captions/WsUwyC2cwNg/events.json",
+    "eventsSha256": "a39847a2629be33ccd37499f61fb57b19838c1c8e769ea3ead5d6fc7c85cbb96",
+    "finalJudgmentSha256": "4b1a481ae80bb1295f22753cd40a83fca0569622f6bf9170d1db4a22fb29a6fe"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "31",
+    "debateId": "oconnor-craig-resurrection-2023",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "route-pro-resurrection-best-explanation",
+        "side": "pro",
+        "description": "Establish the relevant historical data, defend their evidential reliability, and show that divine resurrection explains them more adequately than the principal skeptical alternatives within an independently supported theistic context.",
+        "successCriteria": "The route succeeds if the core data are sufficiently established, the resurrection is not excluded by an improperly fixed prior or evidential threshold, and its comparative explanatory advantages support treating it as the best historical explanation.",
+        "motionBridge": {
+          "bridgeId": "bridge-pro-motion-best-explanation",
+          "tier": "motion",
+          "description": "Connect the established historical data to the conclusion that Jesus's resurrection is their best explanation."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "bridge-pro-central-data",
+            "tier": "central",
+            "description": "Establish the burial, empty tomb, postmortem experiences, and transformed disciple belief as historical data requiring explanation."
+          },
+          {
+            "bridgeId": "bridge-pro-central-comparison",
+            "tier": "central",
+            "description": "Show that fabrication, hallucination, and legendary development lack sufficient explanatory scope or power relative to resurrection."
+          },
+          {
+            "bridgeId": "bridge-pro-central-prior",
+            "tier": "central",
+            "description": "Justify assessing resurrection within a theistic context in which divine action is not antecedently prohibitive."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "bridge-pro-subsidiary-standard",
+            "tier": "subsidiary",
+            "description": "Defend best-explanation and probability reasoning as an appropriate form of historical proof without requiring mathematical certainty."
+          },
+          {
+            "bridgeId": "bridge-pro-subsidiary-epistemic-context",
+            "tier": "subsidiary",
+            "description": "Clarify how cumulative arguments, personal experience, and practical stakes relate to, but do not replace, the historical case."
+          }
+        ]
+      },
+      {
+        "routeId": "route-con-evidential-caution",
+        "side": "con",
+        "description": "Prevent the resurrection conclusion by challenging the adequacy and reliability of the proposed historical data, defending naturalistic or source-critical alternatives, and requiring evidential support proportionate to the supernatural claim and its asserted divine context.",
+        "successCriteria": "The route succeeds if uncertainty in the underlying reports, plausible skeptical alternatives, or unresolved prior-probability and evidence-expectation concerns keep resurrection from being warranted as the best explanation.",
+        "motionBridge": {
+          "bridgeId": "bridge-con-motion-caution",
+          "tier": "motion",
+          "description": "Show that skeptical alternatives and evidential uncertainty prevent the resurrection from being established as the best explanation."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "bridge-con-central-source-reliability",
+            "tier": "central",
+            "description": "Contest whether appearance reports, the empty tomb, and related claims are reliable and sufficiently established historical data."
+          },
+          {
+            "bridgeId": "bridge-con-central-alternatives",
+            "tier": "central",
+            "description": "Preserve sincere error, hallucination, legendary development, or combined naturalistic accounts as live explanatory alternatives."
+          },
+          {
+            "bridgeId": "bridge-con-central-evidence-prior",
+            "tier": "central",
+            "description": "Show that the resurrection's prior improbability and the expected evidence under divine authorship require more than ordinary-quality historical support."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "bridge-con-subsidiary-falsifiability",
+            "tier": "subsidiary",
+            "description": "Test whether public counterevidence can override experiential warrant and whether the resurrection claim has a meaningful falsification condition."
+          },
+          {
+            "bridgeId": "bridge-con-subsidiary-consequence",
+            "tier": "subsidiary",
+            "description": "Relate the claim's exceptional historical and religious consequence to the degree of evidential caution appropriate before accepting it."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "section-evidential-standard-and-priors",
+        "title": "Historical Proof, Evidential Standards, and Prior Probability",
+        "weightPercent": 30,
+        "rationale": "This issue governs whether ordinary best-explanation reasoning can establish a supernatural event, how prior probability enters the comparison, and whether a theistic context or the claim's extraordinary character changes the evidential burden."
+      },
+      {
+        "sectionId": "section-core-data-and-source-reliability",
+        "title": "Core Historical Data and Source Reliability",
+        "weightPercent": 30,
+        "rationale": "The comparative inference depends on whether burial, the empty tomb, postmortem experiences, and transformed belief are adequately supported by early and independent sources rather than uncertain or developing reports."
+      },
+      {
+        "sectionId": "section-skeptical-alternatives",
+        "title": "Fabrication, Hallucination, and Legendary Development",
+        "weightPercent": 25,
+        "rationale": "This issue tests whether sincere error, grief-related experiences, deliberate invention, legendary growth, or combinations of naturalistic hypotheses can explain the proposed data without invoking resurrection."
+      },
+      {
+        "sectionId": "section-experience-falsification-and-stakes",
+        "title": "Experiential Warrant, Falsification, and Practical Stakes",
+        "weightPercent": 15,
+        "rationale": "This issue clarifies the relationship between personal religious experience and public historical evidence, identifies potential defeaters, and determines what role practical consequences may have alongside the historical inference."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-experiential-warrant-and-factual-defeaters",
+        "sectionId": "section-experience-falsification-and-stakes",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "Immediate personal experience of God can rationally ground Christian belief when available evidence is misleading, but belief should yield if the facts genuinely contradict Christianity.",
+        "sourceSpan": {
+          "startEvent": 575,
+          "endEvent": 633,
+          "excerpt": "and for that reason I'm not an evidentialist in certain sense of that term although I think there is adequate evidence to make it more probable than not that Christian theism is true I don't think that that sort of evidence and argument is necessary in order for belief in Christ to be rational I think that on the basis of the personal experience of God himself that a person can"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig explicitly distinguishes two questions and develops the answer continuously through first-person statements about evidentialism, experience, truth, and the Holy Spirit.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-epistemic-context"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move distinguishes rational experiential warrant from indefeasibility and expressly allows genuine factual contradiction to defeat belief."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition and its two conditions are recoverable, and the distinction between misleading evidence and genuine contradiction is explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move advances a permissive rational-warrant claim and expressly recognizes factual defeat, matching its limited supporting warrant."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The move supplies a coherent epistemic distinction but largely asserts the warrant of personal experience without representative support."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "Within the subsidiary tier, it directly clarifies how experience relates to evidence and factual defeaters."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No developed opposing alternative is evaluated in this constructive span, so a substantive charity test is not available."
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Craig rejects a strict evidentialist necessity, invokes personal experience of God as rational grounding, and allows contrary facts to override belief.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-bones-defeat-experiential-warrant",
+        "sectionId": "section-experience-falsification-and-stakes",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Conclusive discovery of Jesus's bones would defeat the resurrection claim and should override otherwise powerful personal religious experience.",
+        "sourceSpan": {
+          "startEvent": 634,
+          "endEvent": 660,
+          "excerpt": "kind of thing that would essentially just invalidate all of the religious experience that you may have had in your life uh that you said say sort of exists in a different evidential plane but surely upon discovering the bones of Jesus proving that he never rose from the dead and ascended into heaven this would give you reason to essentially favor this evidence over the personal"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor frames the entire passage as a sustained hypothetical question and explicitly contrasts empirical evidence with Craig's appeal to personal religious experience.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-falsifiability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-experiential-warrant-and-factual-defeaters"
+          ],
+          "components": [
+            {
+              "componentId": "con-bones-defeat-experiential-warrant-component-01",
+              "targetMoveId": "pro-experiential-warrant-and-factual-defeaters",
+              "text": "Whether conclusive factual contradiction overrides experiential warrant.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The bones hypothetical directly tests Craig's stated factual-defeater condition by asking whether decisive public evidence would invalidate resurrection belief."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The hypothetical is expressly limited to conclusive identification of Jesus's bones and a resulting contradiction of resurrection."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "As a conditional question premised on conclusive discovery, its force is proportionate and does not require an additional uncertainty caveat."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Personal experience can remain rational despite misleading evidence.",
+          "decisiveQualification": "Craig also says genuine factual contradiction should defeat Christian belief."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "If the stipulated remains are conclusively Jesus's, the inference to a factual defeater of bodily resurrection is direct and valid."
+          },
+          "evidenceWarrant": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within the subsidiary tier, it sharply tests the proposed public falsification condition for experiential warrant."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (93 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, the hypothetical explicitly contacts the decisive defeasibility condition of the earlier move."
+          }
+        },
+        "evidenceBasis": "O'Connor stipulates discovery of Jesus's bones proving he did not rise and asks whether this should override Craig's religious experience.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-equal-standard-and-pragmatic-stakes",
+        "sectionId": "section-experience-falsification-and-stakes",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "The resurrection should face the same epistemic standard as other historical claims, while Christianity's potential benefits may provide an additional pragmatic reason for belief without replacing historical justification.",
+        "sourceSpan": {
+          "startEvent": 755,
+          "endEvent": 798,
+          "excerpt": "that the best explanation of the established facts concerning the fate of Jesus of Nazareth is the explanation the original disciples gave that God raised him from the dead um but I wouldn't apply to that epistemic justification a different standard than you would apply to other events in history even despite the fact that this is a far more significant historical event and one"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig begins with an explicit rejection of O'Connor's proposed higher standard and then distinguishes pragmatic justification from his asserted epistemic case for resurrection.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-standard"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-bones-defeat-experiential-warrant"
+          ],
+          "components": [
+            {
+              "componentId": "pro-equal-standard-and-pragmatic-stakes-component-01",
+              "targetMoveId": "con-bones-defeat-experiential-warrant",
+              "text": "Whether conclusive discovery of Jesus's bones would override personal experiential warrant.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig discusses equal historical standards and pragmatic stakes but does not answer the selected bones hypothetical or its defeater consequence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Epistemic and pragmatic justification are expressly separated, and pragmatic benefit is not presented as replacing the historical case."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The best-explanation claim is asserted confidently while the historical warrants are only summarized, though the pragmatic qualification is explicit."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The historical best-explanation conclusion is asserted in summary form without defending the underlying facts or comparative alternatives here."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary historical-standard bridge while only contextualizing the larger best-explanation route."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The selected span does not meaningfully assess the bones hypothetical or another developed opposing alternative."
+          },
+          "responsiveness": {
+            "value": 54,
+            "rationale": "The material bears on epistemic standards yet leaves the decisive stipulated factual-defeater question unanswered."
+          }
+        },
+        "evidenceBasis": "Craig says resurrection can be shown as the best explanation, rejects applying a different epistemic standard, and separately identifies pragmatic benefits.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-divine-intent-evidence-expectation",
+        "sectionId": "section-evidential-standard-and-priors",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Ordinary-quality historical evidence is inadequate when the claimed resurrection was performed by an omnipotent God who strongly wants people to believe it occurred.",
+        "sourceSpan": {
+          "startEvent": 799,
+          "endEvent": 815,
+          "excerpt": "fact that the extraordinary claim being made here is one that we're supposed to believe that the omnipotent creator of the universe also wants us desperately to believe and yet the evidence provided is maybe just about in line maybe a little bit more uh of of what we'd expect from any average historical analysis into the past shouldn't we expect a bit more if if God wants us to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly invokes the extraordinary-claims maxim and adds a divine-intention argument about the mismatch between God's supposed goal and the evidence supplied.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-evidence-prior"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-equal-standard-and-pragmatic-stakes"
+          ],
+          "components": [
+            {
+              "componentId": "con-divine-intent-evidence-expectation-component-01",
+              "targetMoveId": "pro-equal-standard-and-pragmatic-stakes",
+              "text": "Whether resurrection should be assessed by the same evidential standard as ordinary historical claims.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O'Connor directly challenges the equal-standard claim by arguing that supernatural authorship plus asserted divine intent changes expected evidence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The evidence-expectation claim is clear, though the relevant degree of divine desire and adequate evidence is only implicitly bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move poses a comparative expectation question and calls the evidence only ordinary or slightly better, appropriately limiting its force."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Resurrection may be assessed by the same historical inference standards as other past events.",
+          "decisiveQualification": "A purposive omnipotent agent wanting belief could alter the evidence expected under the hypothesis."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The expected-evidence inference is coherent if the divine-intention premise holds, but that premise's strength remains only conditionally supported."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly supports the evidence-and-prior burden governing whether ordinary historical support suffices."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The reply expressly identifies why the claimed event and divine purpose allegedly demand more than average historical evidence."
+          }
+        },
+        "evidenceBasis": "O'Connor contrasts average-quality historical evidence with what should be expected if an omnipotent creator strongly wanted people to believe the event.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+        "sectionId": "section-evidential-standard-and-priors",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "A low-prior extraordinary event can become probable through ordinary evidence when the evidence is sufficiently more likely on that hypothesis than on its negation.",
+        "sourceSpan": {
+          "startEvent": 816,
+          "endEvent": 855,
+          "excerpt": "much more probable than the evidence would be if the hypothesis were false and so it's just I think demonstrably wrong to M this slogan that extraordinary events require extraordinary evidence you you can have ordinary evidence that will be sufficient to establish an extraordinary event what's key will be the ratio between the probability of the evidence on the hypothesis and the probability of the evidence on the negation"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig directly labels the extraordinary-evidence slogan false, explains his probability-ratio objection, and then applies his earlier distinction between epistemic and pragmatic standards.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-evidence-prior"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-divine-intent-evidence-expectation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-likelihood-ratio-over-extraordinary-evidence-rule-component-01",
+              "targetMoveId": "con-divine-intent-evidence-expectation",
+              "text": "Whether extraordinary claims categorically require extraordinary evidence.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-likelihood-ratio-over-extraordinary-evidence-rule-component-02",
+              "targetMoveId": "con-divine-intent-evidence-expectation",
+              "text": "Whether divine intent predicts substantially stronger public evidence.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig directly rejects the categorical extraordinary-evidence rule through likelihood ratios, but does not answer the distinct expected-evidence consequence of divine intent."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is precisely framed in terms of evidence likelihoods under a hypothesis and its negation, including the role of a low prior."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move claims only that ordinary evidence can suffice when the likelihood ratio is strong, which follows from the stated probabilistic framework."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Extraordinary resurrection claims demand evidence stronger than ordinary historical evidence.",
+          "decisiveQualification": "Evidence strength depends on its comparative likelihood, not solely on whether its form is ordinary."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks the evidential-prior standard that could antecedently exclude resurrection."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "Within partial answers, the statistical principle contacts a decisive evidential-standard component while leaving the divine-intention component untouched."
+          }
+        },
+        "evidenceBasis": "Craig says ordinary evidence may establish an extraordinary event when it is much more probable on the event hypothesis than on its negation.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-resurrection-low-prior",
+        "sectionId": "section-evidential-standard-and-priors",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Weaknesses in naturalistic alternatives do not by themselves make resurrection probable because divine intervention carries an extraordinarily low prior probability.",
+        "sourceSpan": {
+          "startEvent": 904,
+          "endEvent": 945,
+          "excerpt": "of the historical facts around uh around Jesus's death are best explained by a resurrection when you compare them to the alternatives mhm surely it's quite a difficult thing to do to judge the prior probabilities involved here for example you know one one explanation that's sometimes given of the the fact around Jesus's death uh is that you know the disciples all made it up the"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The extended first-person skeptical objection is delivered during O'Connor's uninterrupted turn before Craig answers directly.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-evidence-prior"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-likelihood-ratio-over-extraordinary-evidence-rule"
+          ],
+          "components": [
+            {
+              "componentId": "con-resurrection-low-prior-component-01",
+              "targetMoveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+              "text": "Whether comparative weakness of alternatives overcomes resurrection's low prior.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O'Connor accepts comparative explanation as the issue but argues that alternative weakness alone cannot overcome the exceptionally low prior assigned to divine intervention."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The low-prior objection and its target are clear, though the basis and magnitude of the prior remain implicit rather than quantified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claimed extraordinary prior disadvantage is plausible but not quantified or grounded in an explicit reference class."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A sufficiently favorable likelihood ratio can overcome a low prior.",
+          "decisiveQualification": "Comparing weak alternatives does not itself establish that the needed likelihood ratio is large enough."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The move identifies a genuine probabilistic gap but supplies no base-rate analysis or defended numerical or comparative prior."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly advances the prior-probability obstacle to establishing resurrection."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts the probability inference and identifies the missing prior-probability component."
+          }
+        },
+        "evidenceBasis": "O'Connor questions judging prior probabilities and argues that shortcomings in fabrication or other alternatives do not automatically make divine resurrection probable.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-theistic-context-for-miracle-prior",
+        "sectionId": "section-evidential-standard-and-priors",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Resurrection evidence should be assessed within a theistic context established by independent arguments, because a resurrection is not antecedently implausible if a creator God exists.",
+        "sourceSpan": {
+          "startEvent": 946,
+          "endEvent": 968,
+          "excerpt": "exists and so in presenting a case for Christianity I don't lead with the evidence for the resurrection I lead with those other argu arguments that give you a theistic context and if there is a God who created and designed the universe uh and brought it into existence then the idea that he might raise someone from the dead is not so implausible um Peter slazak an Australian philosopher in our debate on the resurrection remarked that for a creator"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig begins immediately after O'Connor's objection and sustains the first-person reply through the transition to the next question.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-prior"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-resurrection-low-prior"
+          ],
+          "components": [
+            {
+              "componentId": "pro-theistic-context-for-miracle-prior-component-01",
+              "targetMoveId": "con-resurrection-low-prior",
+              "text": "Whether resurrection retains an extraordinarily low prior if a creator God exists.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig directly answers the low-prior objection by making resurrection's prior conditional on an independently argued theistic context rather than bare naturalism."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional structure is clear: independent theistic arguments supply context, and only given God does resurrection cease to be antecedently prohibitive."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Craig claims conditional non-implausibility rather than proving resurrection from theism alone, so the asserted force fits the supplied bridge."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Divine resurrection has an extraordinarily low prior probability.",
+          "decisiveQualification": "That assessment may change if independent evidence establishes a creator capable of resurrection."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly supplies the pro route's required contextual treatment of miracle prior probability."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The reply preserves the skeptical prior under an unconditioned background and identifies the exact contextual premise claimed to modify it."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the decisive prior premise and states how independent theistic arguments would alter it."
+          }
+        },
+        "evidenceBasis": "Craig says he leads with independent arguments for a creator and contends that, given such a God, raising someone from death is not antecedently implausible.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-five-facts-best-explanation-case",
+        "sectionId": "section-core-data-and-source-reliability",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "The crucifixion, burial, empty tomb, postmortem experiences, and transformed disciples are widely accepted historical facts that are best explained by the disciples' resurrection hypothesis under standard explanatory criteria.",
+        "sourceSpan": {
+          "startEvent": 978,
+          "endEvent": 1013,
+          "excerpt": "those are the facts of the case and the wide majority of Scholars agree with all five of those points then the question is how do you best explain them and I can't think of a better explanation than the one that the or original disciples gave when you assess these explanations in terms of the standard criteria for being a good historical explanation things like explanatory power"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig explicitly enumerates the facts and draws the explanatory conclusion in a continuous answer to O'Connor's request for the main evidence.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "bridge-pro-motion-best-explanation"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move states the central historical data and connects them through standard explanatory criteria to the resurrection as the proposed best explanation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The five facts and best-explanation conclusion are clear, though the scope of scholarly agreement is only implicitly qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The best-explanation conclusion is stronger than the compressed source and rival analysis shown here, though it is framed as comparative rather than certain."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, it directly connects the asserted core data to resurrection as their best explanation."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No skeptical alternative receives enough development in this constructive span to support a meaningful strongest-alternative charity test."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "Within constructive moves, it supplies the route's central data-to-explanation structure, although detailed source defense and rival comparison remain compressed."
+          }
+        },
+        "evidenceBasis": "Craig enumerates crucifixion, burial, empty tomb, appearances, and transformed belief, invokes broad scholarly agreement, and applies historical explanatory criteria.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-sincere-error-grief-hallucination",
+        "sectionId": "section-skeptical-alternatives",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "The disciples could have sincerely but mistakenly believed Jesus rose, including through grief-induced hallucinations, so sincere conviction does not establish the resurrection's truth.",
+        "sourceSpan": {
+          "startEvent": 1103,
+          "endEvent": 1111,
+          "excerpt": "indisputable okay uh so people don't die for things they know to be false but people do die for things that they mistakenly think are true but are in fact false so here's Theory number two what if the disciples were simply mistaken in their belief that Jesus had risen from the dead perhaps a grief induced to lucif ation or something of"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor explicitly contrasts dying for a known falsehood with dying for a mistaken belief and then introduces hallucination as the alternative.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-alternatives"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-five-facts-best-explanation-case"
+          ],
+          "components": [
+            {
+              "componentId": "con-sincere-error-grief-hallucination-component-01",
+              "targetMoveId": "pro-five-facts-best-explanation-case",
+              "text": "Whether transformed sincere belief requires the resurrection to be true.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O'Connor directly contests the inference from sincere conviction by distinguishing known falsehood from mistaken belief and proposing grief-induced hallucination."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The alternative is expressly presented as a possibility and carefully distinguishes sincere error from knowingly maintained fabrication."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move proposes hallucination as a possible explanation rather than claiming it established, matching the limited warrant offered."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The disciples' willingness to suffer supports sincere conviction in resurrection.",
+          "decisiveQualification": "Sincerity excludes known fabrication more readily than sincere perceptual or interpretive error."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it preserves sincere error and hallucination as live alternatives to a key pro inference."
+          },
+          "representationalCharity": {
+            "value": 94,
+            "rationale": "The reply grants the strongest legitimate sincerity inference and precisely limits what that inference can establish about truth."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts a decisive transformation inference, though it does not address every asserted historical fact."
+          }
+        },
+        "evidenceBasis": "O'Connor observes that people die for sincerely mistaken beliefs and suggests grief-induced hallucination as one possible source of resurrection conviction.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-hallucination-scope-and-power-objection",
+        "sectionId": "section-skeptical-alternatives",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Hallucinations lack explanatory power for the disciples' bodily-resurrection belief and lack explanatory scope because they do not account for the publicly inspectable empty tomb.",
+        "sourceSpan": {
+          "startEvent": 1112,
+          "endEvent": 1166,
+          "excerpt": "I don't think hallucinations are uh have the adequate explanatory power to account for the belief in the resurrection moreover the hallucination hypothesis doesn't say anything to explain the historicity of the empty tomb the fact of Jesus empty tomb was a publicly inspectable fact in Jerusalem which anyone could verify including the enemies of the disciples uh and therefore in"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig accepts hallucination as the stronger skeptical theory and then develops two explicit objections in a sustained response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-alternatives"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-sincere-error-grief-hallucination"
+          ],
+          "components": [
+            {
+              "componentId": "pro-hallucination-scope-and-power-objection-component-01",
+              "targetMoveId": "con-sincere-error-grief-hallucination",
+              "text": "Whether grief-induced hallucinations can explain bodily-resurrection belief and the full proposed historical data.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig directly assesses the hallucination proposal under explanatory power and scope, addressing belief content and the empty tomb."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The two objections are clearly recoverable, though the scope of hallucination phenomena is treated with an implicit generalization."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The objections are relevant, but the categorical insufficiency claim outruns the psychological and source support supplied here."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Grief-induced experiences could sincerely produce belief that Jesus appeared alive.",
+          "decisiveQualification": "A complete account must also explain bodily-resurrection interpretation and the independently established empty tomb."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The two-part explanatory critique is coherent, though it depends on the empty tomb being independently established and publicly checkable."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks hallucination's claimed explanatory power and scope."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The response grants hallucination as the stronger sincere-error theory and tests it against the full claimed data rather than dismissing it by label."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The reply explicitly contacts the proposed mechanism and supplies two distinct comparative explanatory objections."
+          }
+        },
+        "evidenceBasis": "Craig argues hallucination would not naturally yield bodily-resurrection belief and would leave the publicly inspectable empty tomb unexplained.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-underlying-reports-unreliable",
+        "sectionId": "section-core-data-and-source-reliability",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Reports of disciple beliefs, group appearances, and post-resurrection events may be unreliable rather than established historical facts requiring explanation.",
+        "sourceSpan": {
+          "startEvent": 1186,
+          "endEvent": 1216,
+          "excerpt": "beliefs and their and and and what they not just what actually happened but the reports of what these people claimed happened are mistaken for example the only reason that we can believe in group appearances is because of a passing reference that Paul made to the 500 that's not recognized anywhere else uh group appearances appear in some of the gospels not others indeed there are no uh post-resurrection appearances at all in the earliest gospel"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor frames a continuous source-critical objection, citing uneven gospel attestation and Paul's isolated reference to the five hundred.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-source-reliability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-five-facts-best-explanation-case",
+            "pro-hallucination-scope-and-power-objection"
+          ],
+          "components": [
+            {
+              "componentId": "con-underlying-reports-unreliable-component-01",
+              "targetMoveId": "pro-five-facts-best-explanation-case",
+              "text": "Whether appearance reports are sufficiently reliable to count as established facts.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-underlying-reports-unreliable-component-02",
+              "targetMoveId": "pro-hallucination-scope-and-power-objection",
+              "text": "Whether group appearances and the empty-tomb data require a hallucination explanation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O'Connor challenges the data before explanation, citing uneven gospel appearance reporting and Paul's isolated five-hundred reference as reasons for source caution."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move identifies particular disputed reports and carefully claims possible unreliability rather than wholesale falsity of every source."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The source-critical conclusion is framed as a live possibility supported by specified attestation gaps, proportionate to the evidence supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The reported appearances and related facts require an explanatory hypothesis.",
+          "decisiveQualification": "That demand arises only after the reports themselves are established as reliable historical data."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "Uneven gospel attestation and the isolated five-hundred reference are specific support, though source dependence and dating receive limited treatment."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly contests whether indispensable appearance and related claims are established historical data."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the decisive reliability premise underlying both the five-facts case and the hallucination critique."
+          }
+        },
+        "evidenceBasis": "O'Connor points to Paul's passing reference to five hundred, uneven group-appearance attestation, and gospel variation in post-resurrection narratives.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-early-and-independent-core-data-support",
+        "sectionId": "section-core-data-and-source-reliability",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "The core resurrection data, especially the disciples' postmortem experiences, are supported by broad scholarly agreement, very early tradition, and multiple independent attestation rather than late unsupported reports.",
+        "sourceSpan": {
+          "startEvent": 1216,
+          "endEvent": 1301,
+          "excerpt": "for example the postmortem appearances of Jesus um these are attested as you say in this extremely early tradition that Paul quotes in 1 Corinthians 15 and then hands on to his converts in Corinth this tradition goes back to within the first five years after the cruci fiction of Jesus and therefore is not plausibly explained away as a late legendary development um rather people"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig explicitly returns to establishing the data and supplies scholarly-consensus and source-attestation arguments throughout his answer.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-source-reliability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-underlying-reports-unreliable"
+          ],
+          "components": [
+            {
+              "componentId": "pro-early-and-independent-core-data-support-component-01",
+              "targetMoveId": "con-underlying-reports-unreliable",
+              "text": "Whether the core postmortem reports are too late, isolated, or unevenly attested to establish historical data.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig expressly returns to establishing the data and invokes early traditions, multiple attestation, and broad scholarly acceptance."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The source-based thesis is clear, but 'broad scholarly agreement' and the extent of independence among traditions remain incompletely scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Early and multiple attestation materially support reliability, but the confident dismissal of naturalistic accounts exceeds the compressed defense supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Appearance and empty-tomb reports may be unreliable or unevenly attested.",
+          "decisiveQualification": "Very early traditions and genuinely independent attestations would materially reduce, not eliminate, that concern."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks the con route's challenge to the reliability of the core historical data."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The response directly answers the source-reliability demand with the relevant kinds of chronological and independence support."
+          }
+        },
+        "evidenceBasis": "Craig explicitly returns to establishing the data and appeals to broad scholarly agreement, early inherited traditions, and multiple independent sources.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-appearance-legendary-development",
+        "sectionId": "section-skeptical-alternatives",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Increasingly elaborate resurrection appearances in later gospel accounts suggest legendary development rather than stable, independent historical testimony.",
+        "sourceSpan": {
+          "startEvent": 1302,
+          "endEvent": 1354,
+          "excerpt": "appearance to the two disciples walking along the road to Emmas um we also get the addition of the Ascension and then John's gospel the latest gospel uh the the yeah the latest gospel written according to most biblical scholarship more fanciful still now we have appearances of Jesus that require him to move into rooms with locked doors and then you have the story of doubting Thomas"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "O'Connor traces a chronological comparison from Mark through Matthew, Luke, and John before explicitly posing the myth-development inference.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-alternatives"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-early-and-independent-core-data-support"
+          ],
+          "components": [
+            {
+              "componentId": "con-appearance-legendary-development-component-01",
+              "targetMoveId": "pro-early-and-independent-core-data-support",
+              "text": "Whether the appearance traditions remain stable rather than developing over time.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "O'Connor directly challenges the early-and-independent support claim by tracing increasingly elaborate appearance details across the canonical gospel sequence."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The proposed development pattern is recoverable, but 'more fanciful' is evaluative and the inference from elaboration to legend needs qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move offers legendary development as a suggested inference from a specified sequence rather than presenting it as certain."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Multiple early traditions independently attest postmortem appearances.",
+          "decisiveQualification": "Later narrative elaboration may still indicate development even if a minimal early appearance tradition existed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "Increasing elaboration can support development, but the inference is not exclusive because genre, purpose, and independent selection could also explain variation."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The move supplies a concrete Mark-to-John comparison, though it does not fully defend dating, textual endpoints, or alternative literary explanations."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it preserves legendary development as a live alternative to stable independent testimony."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, the chronological comparison explicitly contacts the stability and independence of the appearance tradition."
+          }
+        },
+        "evidenceBasis": "O'Connor compares Mark, Matthew, Luke, and John and highlights later additions including Emmaus, ascension, locked-room appearances, and Thomas.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-early-sources-against-legend",
+        "sectionId": "section-skeptical-alternatives",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Multiple early and independent appearance traditions, including Pauline and pre-Markan material, make wholesale dismissal of the postmortem reports as late legendary development unreasonable.",
+        "sourceSpan": {
+          "startEvent": 1354,
+          "endEvent": 1400,
+          "excerpt": "multiple independent traditions of these postmortem appearances of Jesus and it won't do to just write these off as legendary or mythical because they go right back to the earliest sources such as Paul's tradition that he hands on in 1 Corinthians 15 which goes back to within 5 years after Jesus death the premar and passion story of Jesus which foreshadows his appearance in Galilee uh and is an extremely early"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Craig acknowledges the suspicion and then gives a continuous source-critical reply focused on traditions behind Matthew, Luke, John, Mark, and Paul.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-alternatives"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-appearance-legendary-development"
+          ],
+          "components": [
+            {
+              "componentId": "pro-early-sources-against-legend-component-01",
+              "targetMoveId": "con-appearance-legendary-development",
+              "text": "Whether increasingly elaborate gospel narratives justify treating postmortem appearances as late legendary development.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Craig acknowledges the suspicion and directly counters it with Pauline, pre-Markan, and allegedly independent early traditions."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The anti-legend inference is clear, though 'independent traditions' and 'wholesale dismissal' cover a broad evidential range."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Very early traditions constrain wholesale legend claims, but do not by themselves verify every later narrative detail."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Later gospels display increasingly elaborate resurrection narratives suggestive of legend.",
+          "decisiveQualification": "Early appearance traditions can predate those elaborations without establishing every later narrative detail."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks legendary development as a sufficient account of the postmortem reports."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The response explicitly contacts the chronology and independence premises and states why wholesale legendary dismissal would not follow."
+          }
+        },
+        "evidenceBasis": "Craig cites multiple independent traditions, the early creed transmitted by Paul in 1 Corinthians 15, and pre-Markan passion material against wholesale legend.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No uncaptured debate-wide consequence independently changes completion of a named pro burden bridge.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate completion criterion beyond the locked moves and their rated burden contacts.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence is established.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "section weights"
+          ],
+          "counterfactual": "Removing the proposed residual would not change any pro bridge's assessed completion."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No uncaptured debate-wide consequence independently changes completion of a named con burden bridge.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No separate completion criterion beyond the locked moves and their rated burden contacts.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No distinct residual consequence is established.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "section weights"
+          ],
+          "counterfactual": "Removing the proposed residual would not change any con bridge's assessed completion."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "section-evidential-standard-and-priors",
+        "title": "Historical Proof, Evidential Standards, and Prior Probability",
+        "weightPercent": 30,
+        "sides": {
+          "pro": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "pro-likelihood-ratio-over-extraordinary-evidence-rule",
+                "importance": 3,
+                "score": 86
+              },
+              {
+                "moveId": "pro-theistic-context-for-miracle-prior",
+                "importance": 3,
+                "score": 89
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-divine-intent-evidence-expectation",
+                "importance": 3,
+                "score": 86
+              },
+              {
+                "moveId": "con-resurrection-low-prior",
+                "importance": 3,
+                "score": 87
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-core-data-and-source-reliability",
+        "title": "Core Historical Data and Source Reliability",
+        "weightPercent": 30,
+        "sides": {
+          "pro": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "pro-five-facts-best-explanation-case",
+                "importance": 3,
+                "score": 84
+              },
+              {
+                "moveId": "pro-early-and-independent-core-data-support",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-underlying-reports-unreliable",
+                "importance": 3,
+                "score": 90
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-skeptical-alternatives",
+        "title": "Fabrication, Hallucination, and Legendary Development",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "pro-hallucination-scope-and-power-objection",
+                "importance": 3,
+                "score": 87
+              },
+              {
+                "moveId": "pro-early-sources-against-legend",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-sincere-error-grief-hallucination",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "con-appearance-legendary-development",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "section-experience-falsification-and-stakes",
+        "title": "Experiential Warrant, Falsification, and Practical Stakes",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-experiential-warrant-and-factual-defeaters",
+                "importance": 2,
+                "score": 81
+              },
+              {
+                "moveId": "pro-equal-standard-and-pragmatic-stakes",
+                "importance": 2,
+                "score": 74
+              }
+            ]
+          },
+          "con": {
+            "score": 90,
+            "moves": [
+              {
+                "moveId": "con-bones-defeat-experiential-warrant",
+                "importance": 2,
+                "score": 90
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 85.6,
+        "burdenCompletionAdjustment": 0,
+        "score": 86
+      },
+      "con": {
+        "weightedSectionMean": 88.35,
+        "burdenCompletionAdjustment": 0,
+        "score": 88
+      }
+    },
+    "winner": "con",
+    "winningMargin": 2
+  },
+  "audit": {
+    "sections": 4,
+    "moves": 14,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}

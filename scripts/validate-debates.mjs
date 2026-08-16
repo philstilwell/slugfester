@@ -13,6 +13,11 @@ import {
   sha256,
   validateCheckpointV22SiteLedgerAdapter
 } from "./lib/assessment-production-checkpoint-v2.2-compatibility-remedy.mjs";
+import {
+  POST_CANARY_BATCH_01_COMPATIBILITY_ROOT,
+  POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION,
+  validatePostCanaryBatch01SiteLedgerAdapter
+} from "./lib/assessment-production-post-canary-batch-01-compatibility.mjs";
 
 const errors = [];
 const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -104,7 +109,14 @@ function requireArray(object, key, path, options = {}) {
   return value;
 }
 
-function usesCheckpointLedgerAdapter(debate) {
+export function isAdjudicatedConsensusLedgerAdapterVersion(schemaVersion) {
+  return (
+    schemaVersion === CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION ||
+    schemaVersion === POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION
+  );
+}
+
+function usesAdjudicatedConsensusLedgerAdapter(debate) {
   if (!debate?.id) return false;
   const ledgerUrl = new URL(
     `../docs/assessment-ledgers/${encodeURIComponent(debate.id)}.json`,
@@ -112,13 +124,97 @@ function usesCheckpointLedgerAdapter(debate) {
   );
   if (!existsSync(ledgerUrl)) return false;
   try {
-    return (
-      JSON.parse(readFileSync(ledgerUrl, "utf8")).schemaVersion ===
-      CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION
+    return isAdjudicatedConsensusLedgerAdapterVersion(
+      JSON.parse(readFileSync(ledgerUrl, "utf8")).schemaVersion
     );
   } catch {
     return false;
   }
+}
+
+export function validatePostCanaryBatch01LedgerAdapterRouteLocks({
+  debate,
+  ledgerText,
+  packetPath,
+  packetText,
+  packet,
+  activation,
+  preparationText,
+  analysisText
+}) {
+  const packetLock = activation.packetHashes?.find(
+    (item) => item.debateNumber === debate.number
+  );
+  if (
+    activation.status !==
+      "post-canary-batch-01-compatibility-execution-authorized-and-frozen" ||
+    !activation.authorization?.compatibilityExecution ||
+    !activation.authorization?.validatorMigration ||
+    !activation.authorization?.stagingLedgerWrite ||
+    sha256(preparationText) !== activation.preparation?.sha256 ||
+    sha256(analysisText) !== activation.preparationAnalysis?.sha256 ||
+    !packetLock ||
+    packetLock.path !== packetPath ||
+    packetLock.debateId !== debate.id ||
+    sha256(packetText) !== packetLock.sha256 ||
+    packet.debateNumber !== debate.number ||
+    packet.debateId !== debate.id ||
+    packet.futurePaths?.productionLedger !==
+      `docs/assessment-ledgers/${debate.id}.json` ||
+    packet.proposedAdapterSha256 !== packetLock.proposedAdapterSha256 ||
+    sha256(ledgerText) !== packetLock.proposedAdapterSha256
+  ) {
+    throw new Error(
+      "Batch 1 adapter, packet, or activation differs from its frozen route"
+    );
+  }
+  return packetLock;
+}
+
+export function validatePostCanaryBatch01LedgerAdapterRoute({
+  debate,
+  ledger,
+  ledgerText
+}) {
+  const packetPath =
+    `${POST_CANARY_BATCH_01_COMPATIBILITY_ROOT}/packets/debate-${debate.number}.json`;
+  const activationPath =
+    `${POST_CANARY_BATCH_01_COMPATIBILITY_ROOT}/execution-activation.json`;
+  const packetText = readFileSync(
+    new URL(`../${packetPath}`, import.meta.url),
+    "utf8"
+  );
+  const packet = JSON.parse(packetText);
+  const activation = JSON.parse(
+    readFileSync(new URL(`../${activationPath}`, import.meta.url), "utf8")
+  );
+  const preparationText = readFileSync(
+    new URL(`../${activation.preparation?.path}`, import.meta.url),
+    "utf8"
+  );
+  const analysisText = readFileSync(
+    new URL(`../${activation.preparationAnalysis?.path}`, import.meta.url),
+    "utf8"
+  );
+  validatePostCanaryBatch01LedgerAdapterRouteLocks({
+    debate,
+    ledgerText,
+    packetPath,
+    packetText,
+    packet,
+    activation,
+    preparationText,
+    analysisText
+  });
+  const validation = validatePostCanaryBatch01SiteLedgerAdapter({
+    adapter: ledger,
+    candidate: debate,
+    expectedSourceLocks: packet.sourceLocks
+  });
+  if (!debate.logicalExtension) {
+    throw new Error("Batch 1 production assessments require an AI Extension");
+  }
+  return validation;
 }
 
 function validateReassessmentLedger(debate, path) {
@@ -198,6 +294,24 @@ function validateReassessmentLedger(debate, path) {
       addError(
         [...path, "assessmentRubric"],
         `checkpoint ledger validation failed: ${error.message}`
+      );
+    }
+    return;
+  }
+
+  if (
+    ledger.schemaVersion === POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION
+  ) {
+    try {
+      validatePostCanaryBatch01LedgerAdapterRoute({
+        debate,
+        ledger,
+        ledgerText
+      });
+    } catch (error) {
+      addError(
+        [...path, "assessmentRubric"],
+        `Batch 1 ledger validation failed: ${error.message}`
       );
     }
     return;
@@ -475,7 +589,8 @@ function validateDebate(debate, index) {
   });
   const debateNumber = Number.parseInt(debate.number, 10);
   const hasReassessmentRubric = debate.assessmentRubric !== undefined;
-  const hasCheckpointLedgerAdapter = usesCheckpointLedgerAdapter(debate);
+  const hasAdjudicatedConsensusLedgerAdapter =
+    usesAdjudicatedConsensusLedgerAdapter(debate);
   if (hasReassessmentRubric) {
     const rubric = requireString(debate, "assessmentRubric", path);
     requireString(debate, "assessmentModel", path);
@@ -570,13 +685,13 @@ function validateDebate(debate, index) {
 
           if (
             debate.assessmentRubric === V21_RUBRIC ||
-            hasCheckpointLedgerAdapter
+            hasAdjudicatedConsensusLedgerAdapter
           ) {
             if (!exchange.pro && !exchange.con) {
               addError(
                 exchangePath,
-                hasCheckpointLedgerAdapter
-                  ? "must contain at least one checkpoint argument move"
+                hasAdjudicatedConsensusLedgerAdapter
+                  ? "must contain at least one adjudicated-consensus argument move"
                   : "must contain at least one v2.1 argument move"
               );
             }
