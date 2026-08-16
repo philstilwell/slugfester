@@ -586,11 +586,11 @@ export const debateSummaries = [
     "number": "13",
     "title": "Cliffe Knechtle vs Alex O'Connor: Christianity, Scripture, and Morality",
     "label": "Christian ethics",
-    "date": "2026-05-28",
+    "date": "2026-08-15",
     "duration": "51 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=EN5Jqu2-2P8",
     "motion": "Can Christianity's claims about forgiveness, morality, divine judgment, conquest, and slavery withstand skeptical objections?",
-    "summary": "Knechtle defends Christianity through grace and divine authority; O'Connor presses hard cases in scripture and ethics.",
+    "summary": "Knechtle presents Christianity as redemptive and context-sensitive, while O'Connor presses evidential, moral, slavery, and gender objections through specific scriptural counterexamples.",
     "sides": {
       "pro": {
         "name": "Christian defense",
@@ -604,27 +604,21 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 70,
-      "con": 83
+      "pro": 76,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Unforgivable sin"
+        "title": "Meaning, Well-Being, and the Truth of Consoling Belief"
       },
       {
-        "title": "Women and doubt"
+        "title": "Sin, Suffering, Forgiveness, and Divine Judgment"
       },
       {
-        "title": "Value and lifeboat"
+        "title": "Slavery, Legal Accommodation, and Moral Endorsement"
       },
       {
-        "title": "Conquest and judgment"
-      },
-      {
-        "title": "Divine character"
-      },
-      {
-        "title": "Slavery and equality"
+        "title": "Spiritual Equality, Women, and Contextual Restrictions"
       }
     ]
   },
@@ -1427,11 +1421,11 @@ export const debateSummaries = [
     "number": "31",
     "title": "Alex O'Connor vs William Lane Craig: Did Jesus Rise From the Dead?",
     "label": "Resurrection and historical evidence",
-    "date": "2026-05-30",
+    "date": "2026-08-15",
     "duration": "1 hr 5 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=WsUwyC2cwNg",
     "motion": "Does the historical evidence make Jesus' resurrection the best explanation of the facts, or should skeptical alternatives and evidential caution prevent that conclusion?",
-    "summary": "Craig argues that the resurrection best explains the empty tomb, appearances, and disciples' transformation; O'Connor presses the evidential threshold, testimony, alternative hypotheses, and gospel development.",
+    "summary": "Craig defended resurrection through comparative explanation and early testimony, while O'Connor pressed source reliability, natural alternatives, prior probability, and evidential expectations.",
     "sides": {
       "pro": {
         "name": "Resurrection case",
@@ -1446,26 +1440,20 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 86,
-      "con": 84
+      "con": 88
     },
     "sections": [
       {
-        "title": "Faith and evidence"
+        "title": "Historical Proof, Evidential Standards, and Prior Probability"
       },
       {
-        "title": "Historical proof"
+        "title": "Core Historical Data and Source Reliability"
       },
       {
-        "title": "Miracle priors"
+        "title": "Fabrication, Hallucination, and Legendary Development"
       },
       {
-        "title": "Minimal facts"
-      },
-      {
-        "title": "Sincerity and hallucination"
-      },
-      {
-        "title": "Reports and development"
+        "title": "Experiential Warrant, Falsification, and Practical Stakes"
       }
     ]
   },
@@ -2423,11 +2411,11 @@ export const debateSummaries = [
     "number": "52",
     "title": "Trent Horn vs Matt Dillahunty: Is Belief in the Resurrection Reasonable?",
     "label": "Resurrection reasonability and testimony",
-    "date": "2026-06-01",
+    "date": "2026-08-15",
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=7V6UNSvHVDM",
     "motion": "Is it reasonable to believe Jesus of Nazareth rose from the dead, given historical testimony, expected evidence, background knowledge, and standards for unusual claims?",
-    "summary": "Horn argues the resurrection passes a reasonability test for unusual history; Dillahunty argues testimony alone cannot justify a supernatural miracle claim.",
+    "summary": "Horn defended resurrection belief through testimony and comparative explanation; Dillahunty narrowly prevailed by separating sincerity from accuracy and emphasizing ordinary error.",
     "sides": {
       "pro": {
         "name": "Resurrection belief is reasonable",
@@ -2441,30 +2429,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 82
+      "pro": 82,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Reasonable belief threshold"
+        "title": "Reasonableness Standards and Debate Burdens"
       },
       {
-        "title": "Testimony and expected evidence"
+        "title": "Historical Testimony and Source Reliability"
       },
       {
-        "title": "Cross-exam standards"
+        "title": "Resurrection and Ordinary Alternative Explanations"
       },
       {
-        "title": "Background knowledge"
+        "title": "Background Knowledge, Natural Regularity, and Divine Agency"
       },
       {
-        "title": "History and expert consensus"
+        "title": "Expected Evidence, Corroboration, and Falsifiability"
       },
       {
-        "title": "Falsification and artifacts"
-      },
-      {
-        "title": "Closing burden"
+        "title": "Witness Sincerity and Evidential Sufficiency"
       }
     ]
   },
@@ -3386,11 +3371,11 @@ export const debateSummaries = [
     "number": "72",
     "title": "Jay Dyer vs Alex Malpass: The TAG Argument",
     "label": "TAG, induction, and logic",
-    "date": "2026-06-11",
+    "date": "2026-08-15",
     "duration": "1 hr 41 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=gK-rwG392Uc",
     "motion": "Does the transcendental argument show that logic, induction, knowledge, and ethics require the Orthodox Christian God, or can those preconditions be understood without that presupposition?",
-    "summary": "Dyer defends Orthodox Christianity as the coherent ground of transcendental preconditions; Malpass presses the argument's form, induction, non-classical logic, and divine conceptualism.",
+    "summary": "Malpass consistently exposed necessity, parity, and scope gaps, while Dyer offered substantive Orthodox grounding but left several decisive comparative bridges underdeveloped.",
     "sides": {
       "pro": {
         "name": "Orthodox TAG",
@@ -3404,27 +3389,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 87
+      "pro": 74,
+      "con": 91
     },
     "sections": [
       {
-        "title": "Worldview-level TAG"
+        "title": "Worldview Method and the Necessity Claim"
       },
       {
-        "title": "Kant and transcendental need"
+        "title": "Induction, Natural Regularity, and Providence"
       },
       {
-        "title": "Induction and regularity"
+        "title": "Logic, Reductio, and Preconditions of Discourse"
       },
       {
-        "title": "Aristotle and reductio"
+        "title": "Abstract Content and Orthodox Metaphysical Grounding"
       },
       {
-        "title": "Language and platonism"
-      },
-      {
-        "title": "Divine concepts and modality"
+        "title": "Actual Experience, Modality, and Alternative Systems"
       }
     ]
   },
@@ -3530,11 +3512,11 @@ export const debateSummaries = [
     "number": "75",
     "title": "Josh Rasmussen vs Scott Clifton: Is the Contingency Argument Persuasive?",
     "label": "Contingency and necessary foundation",
-    "date": "2026-06-18",
+    "date": "2026-08-15",
     "duration": "1 hr 24 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=WgiWkE1lhII",
     "motion": "Is the argument from contingency persuasive in moving from contingent reality to a necessary or automatically actual foundation?",
-    "summary": "Rasmussen presents contingency reasoning as a careful route to a robust foundation; Clifton grants much of the setup while resisting the leap to necessary concrete being.",
+    "summary": "Rasmussen defends global explanatory inquiry and a noncontingent foundation; Clifton challenges its scope, modal bridge, and advantage over a brute contingent endpoint.",
     "sides": {
       "pro": {
         "name": "Necessary-foundation theist",
@@ -3548,27 +3530,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 86
+      "pro": 79,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Argument and target"
+        "title": "The explanatory principle and its application to total contingent reality"
       },
       {
-        "title": "Grades of necessity"
+        "title": "Global explanatory inference versus a brute foundation"
       },
       {
-        "title": "Explanatory demand"
+        "title": "The explanatory role of automatic actuality and necessity"
       },
       {
-        "title": "Bruteness and contingency"
+        "title": "Fundamentality, independence, and modal necessity"
       },
       {
-        "title": "Logic and propositions"
-      },
-      {
-        "title": "Supreme foundation"
+        "title": "Logic, conceivability, and a concrete necessary foundation"
       }
     ]
   },
@@ -4276,11 +4255,11 @@ export const debateSummaries = [
     "number": "91",
     "title": "Brian Cutter vs Graham Oppy: Does Mind-Brain Harmony Point to God?",
     "label": "Psychophysical harmony and theism",
-    "date": "2026-06-25",
+    "date": "2026-08-15",
     "duration": "1 hr 51 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=dmTLjiGWgpE",
     "motion": "Does psychophysical harmony, the apparent fit between conscious states and physical or functional states, provide evidence for God over naturalism?",
-    "summary": "Cutter argues psychophysical harmony favors theism; Oppy replies that identity theory and probability worries blunt the argument.",
+    "summary": "Cutter argues psychophysical harmony favors divine goodness; Oppy counters that identity theory and unresolved probability measures undermine the proposed evidential comparison.",
     "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
@@ -4295,27 +4274,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 84
+      "pro": 85,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Opening Harmony Case"
+        "title": "The Harmony Datum and Its Value-Producing Character"
       },
       {
-        "title": "Identity And Conceivability"
+        "title": "Comparative Expectation on Theism and Naturalism"
       },
       {
-        "title": "Probability Framework"
+        "title": "Identity, Reduction, and the Epistemic Gap"
       },
       {
-        "title": "Pain Causation"
+        "title": "Conceivability and the Modal Space of Psychophysical Alternatives"
       },
       {
-        "title": "Signs And Disharmony"
-      },
-      {
-        "title": "Closing Burdens"
+        "title": "Likelihood Grounding and Complete-Theory Comparison"
       }
     ]
   },
@@ -4418,11 +4394,11 @@ export const debateSummaries = [
     "number": "94",
     "title": "Richard Swinburne vs Michael Huemer: Is Theism Coherent?",
     "label": "Theism coherence and divine infinity",
-    "date": "2026-06-30",
+    "date": "2026-08-15",
     "duration": "55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=1IkAU6zAYLU",
     "motion": "Is theism coherent, especially if God is described as omnipotent, omniscient, perfectly good, and infinite in power or knowledge?",
-    "summary": "Swinburne defends a coherent Christian-theist model by revising divine attributes around maximal possible power and limited future knowledge; Huemer argues perfect-being theism requires impossible infinite magnitudes.",
+    "summary": "Swinburne defends coherent maximal attributes through logical possibility and doctrinal distinctions; Huemer presses quantitative infinity, residual knowledge, temporal conflict, and supertask objections.",
     "sides": {
       "pro": {
         "name": "Coherent theism",
@@ -4436,27 +4412,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 74,
-      "con": 85
+      "pro": 75,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Target Conception"
+        "title": "Maximal power and quantitative infinity"
       },
       {
-        "title": "Impossible Infinite Attributes"
+        "title": "Divine knowledge, freedom, and the relevant theistic conception"
       },
       {
-        "title": "Omnipotence And Goodness"
+        "title": "Actual infinity, divisibility, and supertasks"
       },
       {
-        "title": "Omniscience And Freedom"
+        "title": "Bodilessness, incarnation, and divine action"
       },
       {
-        "title": "Quantifying Divine Power"
-      },
-      {
-        "title": "Embodiment And Lamp Paradox"
+        "title": "Timelessness, change, and foreknowledge"
       }
     ]
   },
@@ -6899,11 +6872,11 @@ export const debateSummaries = [
     "number": "146",
     "title": "Sam Harris vs Daniel Dennett: Does Free Will Exist?",
     "label": "Determinism, agency, and responsibility",
-    "date": "2026-07-31",
+    "date": "2026-08-15",
     "duration": "1 hr 35 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=_J_9DKIAn48",
     "motion": "Does determinism or indeterminism undermine free will and moral responsibility, or can reasons-responsive agency provide a compatibilist form of freedom worth preserving?",
-    "summary": "Harris argues that no one authors the causal conditions of thought and action; Dennett argues that self-control, responsiveness to reasons, and social accountability are the freedom that matters.",
+    "summary": "Harris challenges ultimate authorship under causation, while Dennett defends graded, reasons-responsive control and pragmatic responsibility without metaphysical self-creation.",
     "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
@@ -6918,27 +6891,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 84
+      "pro": 82,
+      "con": 88
     },
     "sections": [
       {
-        "title": "What Free Will Is For"
+        "title": "The Concept and Stakes of Free Will"
       },
       {
-        "title": "Authorship and Unconscious Choice"
+        "title": "Reasons-Responsive Competence and Bounded Control"
       },
       {
-        "title": "Control, Luck, and Brain Tumors"
+        "title": "Authorship, Constitutive Luck, and Neural Causation"
       },
       {
-        "title": "Moral Lapses and Accountability"
+        "title": "Alternative Possibilities, Replay, and Randomness"
       },
       {
-        "title": "Punishment, Reform, and Social Rules"
-      },
-      {
-        "title": "Prediction and Could Have Done Otherwise"
+        "title": "Moral Responsibility, Accountability, and Social Practice"
       }
     ]
   },
@@ -8174,11 +8144,11 @@ export const debateSummaries = [
     "number": "175",
     "title": "Graham Oppy vs Kenny Pearce: Is There a God?",
     "label": "Theism and naturalistic explanation",
-    "date": "2026-08-01",
+    "date": "2026-08-15",
     "duration": "1 hr 21 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=SyhMlwsQuqc",
     "motion": "Does theism offer a better overall explanation of reality than naturalism?",
-    "summary": "Pearce argues that God's free grounding explains contingent causal history and religious experience; Oppy contends that naturalism matches the explanatory work more simply and that experience is too interpretation-dependent to decide the comparison.",
+    "summary": "Pearce develops theistic grounding and experiential arguments, while Oppy presses symmetrical naturalistic alternatives, epistemic calibration, and religious diversity as stronger comparative explanations.",
     "sides": {
       "pro": {
         "name": "Theism",
@@ -8192,21 +8162,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 88,
-      "con": 91
+      "pro": 84,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Comparing whole worldviews"
+        "title": "Standards for Comparing Complete Worldviews"
       },
       {
-        "title": "Contingent history and divine grounding"
+        "title": "Grounding and the Explanation of Contingent Causal History"
       },
       {
-        "title": "Necessary reality, essence, and Spinozism"
+        "title": "Necessary Existence and Explanatory Termination"
       },
       {
-        "title": "Religious experience, disagreement, and hiddenness"
+        "title": "Epistemic Weight and Naturalistic Calibration of Religious Experience"
+      },
+      {
+        "title": "Divine Communication, Visionaries, and Religious Diversity"
       }
     ]
   },
@@ -9087,11 +9060,11 @@ export const debateSummaries = [
     "number": "195",
     "title": "Bertrand Russell vs Frederick Copleston: Does God Exist?",
     "label": "Contingency, experience, and morality",
-    "date": "2026-08-01",
+    "date": "2026-08-15",
     "duration": "56 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=wMsbD1L5IlQ",
     "motion": "Can God's existence be established through contingency, religious experience, or moral obligation?",
-    "summary": "Copleston defends a necessary ground of contingent reality and of religious and moral experience; Russell disputes the metaphysical inference and offers naturalistic alternatives.",
+    "summary": "Copleston develops contingency, religious-experience, and moral arguments for God; Russell narrowly prevails by exposing modal, evidential, and normative explanatory gaps.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -9106,24 +9079,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 91,
-      "con": 94
+      "pro": 78,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Necessary being and analytic necessity"
+        "title": "Contingency and the meaning of necessary existence"
       },
       {
-        "title": "Sufficient reason and the totality"
+        "title": "The totality of contingent beings and sufficient reason"
       },
       {
-        "title": "Religious experience and rival causes"
+        "title": "Religious experience and an objective transcendent cause"
       },
       {
-        "title": "Moral value and obligation"
+        "title": "Competing reports and transformative effects"
       },
       {
-        "title": "Closing burdens and philosophical method"
+        "title": "Moral feeling, objective value, and critical standards"
+      },
+      {
+        "title": "Moral obligation, variation, and its explanatory ground"
       }
     ]
   }
