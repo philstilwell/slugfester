@@ -1,0 +1,420 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-generated-seo-derivative-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-01-generated-seo-derivative-correction",
+  "status": "frozen-batch-01-generated-seo-derivative-correction-plan-prepared",
+  "preparedAt": "2026-08-16T22:37:21.550Z",
+  "auditBaselineCommit": "db38653043bf7be2059fe149cb5843eac4fc2e2d",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "planningOnly": true,
+  "directIncrementalCostCapUsd": 0,
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "completedModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "modelExecutionPlanned": false
+  },
+  "failedPass": {
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/execution-activation.json",
+      "sha256": "4f5760bf4b93dcba2b4435a6b804fdd02678b6016a57010c037faef11c81c337"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/execution.json",
+      "sha256": "f30b09b63ad58fac3b4840a87e3d0cbdcb120540d76db3a290c7c81b62df88dd",
+      "status": "failed-closed-at-full-repository-seo-summary-regression"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/analysis.json",
+      "sha256": "77178be8b0e07d552150f4dab002d22dc8bda6ab80c069378f85c1ce7a97ee4c",
+      "status": "failed-closed-awaiting-generated-seo-derivative-correction-plan-approval"
+    },
+    "failureId": "generated-debate-summary-index-out-of-date",
+    "preservedAndNotReclassified": true
+  },
+  "lockedInputs": {
+    "mutationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/mutation-manifest.json",
+      "sha256": "45d3c9f8abb07e749b37cb20dc49694404361ef6b126b1f437d8fa0b3ff8a527"
+    },
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "sha256": "89d1787ecba5e88dd788915615002fab5437f762f04ba97764dda419dbf115c1",
+      "bytes": 4646669,
+      "changedDebateRecords": 10
+    },
+    "productionReferences": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+      "mustRemainByteIdentical": true
+    },
+    "validator": {
+      "path": "scripts/validate-debates.mjs",
+      "sha256": "bd61fcb97ea4480b2768fa4575124eac354b09beb8276ae4a3ba04df9812ddcd",
+      "mustRemainByteIdentical": true
+    },
+    "compatibilityAcceptance": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/analysis.json",
+      "sha256": "806c95ce8161b6aefc066c153a43ae42a70f89077436a6e55e385a7022ab11ca",
+      "requiredStatus": "batch-01-production-compatibility-passed-after-correction-2"
+    },
+    "generator": {
+      "path": "scripts/generate-seo-pages.mjs",
+      "sha256": "8ed300943f4d15db89128a39d664be51b9b48dc610c92ec4d8c57065f597fe2f"
+    }
+  },
+  "preservedProductionLedgerLocks": [
+    {
+      "debateNumber": "31",
+      "path": "docs/assessment-ledgers/oconnor-craig-resurrection-2023.json",
+      "sha256": "14890251ec5b7a5796faf6679dcbd8dea6ecfc0e90ebc5334667966ad43676a7"
+    },
+    {
+      "debateNumber": "94",
+      "path": "docs/assessment-ledgers/swinburne-huemer-theism-coherent-2026.json",
+      "sha256": "2b7f9ef78bcd578c88636296451278a75e1f225cfd811e8a8dfa8c886c422681"
+    },
+    {
+      "debateNumber": "52",
+      "path": "docs/assessment-ledgers/horn-dillahunty-resurrection-reasonable-2021.json",
+      "sha256": "eb5931a4f67e63d2b9c983811b68327a14d57c92e2c836749d7cc434db45842a"
+    },
+    {
+      "debateNumber": "146",
+      "path": "docs/assessment-ledgers/harris-dennett-free-will-2018.json",
+      "sha256": "32f699b6ec283fbf4e0a56b79763f82083c2389bc59ba99573835ba5b81c0052"
+    },
+    {
+      "debateNumber": "91",
+      "path": "docs/assessment-ledgers/cutter-oppy-mind-brain-harmony-god-2025.json",
+      "sha256": "7d89d9758e4100df045830ec6dca0f3f0712eec27761dd6900f69df0b5941d8a"
+    },
+    {
+      "debateNumber": "175",
+      "path": "docs/assessment-ledgers/oppy-pearce-is-there-a-god-2022.json",
+      "sha256": "fce8f35ea328b24da817f8588269f8b389ac99860acb34d803ca74bd06ca4bb3"
+    },
+    {
+      "debateNumber": "75",
+      "path": "docs/assessment-ledgers/rasmussen-clifton-contingency-argument-2019.json",
+      "sha256": "b33abde83f178f7a881aa075eb70e32de2757d9c2b8308aec15d0c15a922e5e3"
+    },
+    {
+      "debateNumber": "72",
+      "path": "docs/assessment-ledgers/dyer-malpass-tag-argument-2019.json",
+      "sha256": "9ee905f709f3866f9e1069dced54fe45a0e29008c20521b4597e441e41ba606d"
+    },
+    {
+      "debateNumber": "13",
+      "path": "docs/assessment-ledgers/knechtle-oconnor-christian-morality-2025.json",
+      "sha256": "eeb1522ffab43a3022e8050c243ba4db2e87d8dee0d7eaedb78ab1114f11908f"
+    },
+    {
+      "debateNumber": "195",
+      "path": "docs/assessment-ledgers/russell-copleston-existence-of-god-1948.json",
+      "sha256": "dd06ca9f851b681ba38df42e5a33f99155b5d4788d7d7543c63859ccff4f6d84"
+    }
+  ],
+  "isolatedGeneration": {
+    "sourceCommit": "db38653043bf7be2059fe149cb5843eac4fc2e2d",
+    "temporaryRootPattern": "/var/folders/zh/cq7b6spn0zlbcg3902lllj540000gn/T/slugfester-seo-inventory.*",
+    "localProductionMutationOverlaid": true,
+    "localProductionLedgersOverlaid": 10,
+    "generatorRuns": 1,
+    "generatorOutput": "Generated 380 SEO files.",
+    "repositoryValidationRuns": 0,
+    "productionGeneratedFilesWritten": 0,
+    "temporaryDirectoriesRemaining": 0
+  },
+  "inventory": {
+    "sha256": "61473df8683bccfdda409e5ef193dbfc285736337c9f78fe310a9abf0a9e5003",
+    "generatedFilesCompared": 380,
+    "affectedGeneratedFiles": 12,
+    "unchangedGeneratedFiles": 368,
+    "added": 0,
+    "modified": 12,
+    "deleted": 0,
+    "byRoot": {
+      "debate": 10,
+      "sitemap.xml": 1,
+      "src": 1
+    },
+    "files": [
+      {
+        "path": "debate/cutter-oppy-mind-brain-harmony-god-2025/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "1797b1375889c05f91c39f739ccbee227d792a7a5c71d36df2448f03cb157ff3",
+          "bytes": 7040
+        },
+        "proposed": {
+          "sha256": "5730e158d6819baae9352655fb7c21f93dffe93923f2414cd4e6ce9e047bafa9",
+          "bytes": 7097
+        }
+      },
+      {
+        "path": "debate/dyer-malpass-tag-argument-2019/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "0238252a9f4eaec684d906d4412787eb7ccf9318b9252bfb25a3c2082b2d4d19",
+          "bytes": 6920
+        },
+        "proposed": {
+          "sha256": "6e6f65732dee7c1ec54ef360a0f0e28d2044e4829ce97f9e7f11e99c9575ff46",
+          "bytes": 6922
+        }
+      },
+      {
+        "path": "debate/harris-dennett-free-will-2018/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "ea7fc8bac4b6c3216cf99e78bfa98d670ae590f6bf6759d47e74d16cb329d6bb",
+          "bytes": 7043
+        },
+        "proposed": {
+          "sha256": "4ddeba9fe727f715cf1661686ce9d43e96ebe0780cb770a9bd975cc7dd2dab27",
+          "bytes": 7009
+        }
+      },
+      {
+        "path": "debate/horn-dillahunty-resurrection-reasonable-2021/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "8d460869b8bb4dfd2acead00df11623546375e8a2398fa5acfb5856cbe134703",
+          "bytes": 7214
+        },
+        "proposed": {
+          "sha256": "37b94f35af6b03f43262e8b6e8b523d2d76f2dbf23788033698b0394265109f7",
+          "bytes": 7226
+        }
+      },
+      {
+        "path": "debate/knechtle-oconnor-christian-morality-2025/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "08fbe0403c6da586bf3d00f3e4665c7b5de27890d744cec5b25bd4039ced675b",
+          "bytes": 7030
+        },
+        "proposed": {
+          "sha256": "e56144e62f817bb89ef8be38de523ba51a9145001869ba07704aba6d10fbb36c",
+          "bytes": 7109
+        }
+      },
+      {
+        "path": "debate/oconnor-craig-resurrection-2023/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "954296397107cdd34ec2d2efd269808f141617fdd6bde860e115dce77d661007",
+          "bytes": 7142
+        },
+        "proposed": {
+          "sha256": "fe8bb8c5719e2baedafad68d85655be5be8eb6160b40b65d0cbe9080c4e5923f",
+          "bytes": 7131
+        }
+      },
+      {
+        "path": "debate/oppy-pearce-is-there-a-god-2022/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "5ffbb7eb6d34d7bc4ded6c54d6f8720f6fd81e4539cb17050e2d6523b325970f",
+          "bytes": 6871
+        },
+        "proposed": {
+          "sha256": "cfa1f95710462602108ed439c703045a44d43e634a804c093d1b13d8830128db",
+          "bytes": 6875
+        }
+      },
+      {
+        "path": "debate/rasmussen-clifton-contingency-argument-2019/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "b11669aa5b29da5f4d68b9f631b251378c498da8743d96b729e73df38f685229",
+          "bytes": 7180
+        },
+        "proposed": {
+          "sha256": "e944d930100aea3265dcf9ad87955d6cb4af38efe9bf69351b0148f323eecbb9",
+          "bytes": 7154
+        }
+      },
+      {
+        "path": "debate/russell-copleston-existence-of-god-1948/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "8272ebb365a6ae2d89221fdbf81f7bde172edfe72ea3644e71dbee40b3d0a829",
+          "bytes": 7086
+        },
+        "proposed": {
+          "sha256": "7b874e25d1360e5f4e0d341fd5a82d04673dc5da03b98b5643e5b773932b7742",
+          "bytes": 7063
+        }
+      },
+      {
+        "path": "debate/swinburne-huemer-theism-coherent-2026/index.html",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "848be78082b7983e32977adfea1d72f49c436579a78e091c47a37679fbce57a4",
+          "bytes": 7085
+        },
+        "proposed": {
+          "sha256": "c8368c37c97b5b7727fa5e9083cf0f2f500a1311ba986f60b1c371545bb99408",
+          "bytes": 7069
+        }
+      },
+      {
+        "path": "sitemap.xml",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "1a3be01954e02595e5d4c74dfd1ce5ee074fdc9e191b9bc7c49afad9bf0814e6",
+          "bytes": 47971
+        },
+        "proposed": {
+          "sha256": "f4138d82e534624dbbd559c3995233a6682aba1a7d3f3a12473ff1e49f1d9add",
+          "bytes": 47971
+        }
+      },
+      {
+        "path": "src/data/debate-summaries.js",
+        "changeType": "modify",
+        "baseline": {
+          "sha256": "e23f28317ad737449ec706983aaee5aed1731d2a4de6baa6f7ea493f49f4f73f",
+          "bytes": 284613
+        },
+        "proposed": {
+          "sha256": "4ef6aa16d683a38526e6a5edf2e5115280872e867f3c6e73d212bffbe55eada6",
+          "bytes": 285466
+        }
+      }
+    ]
+  },
+  "futureCorrectionContract": {
+    "separateExecutionApprovalRequired": true,
+    "correctionPasses": 1,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "productionMutationRerunsMaximum": 0,
+    "isolatedGeneratorRunsMaximum": 1,
+    "generatedProductionFilesToWrite": 12,
+    "requiredOrder": [
+      "authenticate this plan, failed-pass evidence, preserved production mutation, ten production ledgers, references, validator, compatibility acceptance, generator, and all twelve generated baselines",
+      "generate all SEO outputs once in a new isolated temporary copy with the exact preserved production mutation overlaid",
+      "require exactly 380 generated outputs and the frozen twelve-file inventory digest",
+      "copy only the twelve hash-locked proposed outputs into the real working tree",
+      "confirm the remaining 368 generated outputs and every protected source remain byte-identical",
+      "run exactly one complete repository validation chain",
+      "on complete acceptance, stage the preserved production mutation, ten production ledgers, twelve generated derivatives, and correction audit records together",
+      "commit and push only the complete accepted transaction"
+    ],
+    "futureCorrectionWrites": [
+      "debate/cutter-oppy-mind-brain-harmony-god-2025/index.html",
+      "debate/dyer-malpass-tag-argument-2019/index.html",
+      "debate/harris-dennett-free-will-2018/index.html",
+      "debate/horn-dillahunty-resurrection-reasonable-2021/index.html",
+      "debate/knechtle-oconnor-christian-morality-2025/index.html",
+      "debate/oconnor-craig-resurrection-2023/index.html",
+      "debate/oppy-pearce-is-there-a-god-2022/index.html",
+      "debate/rasmussen-clifton-contingency-argument-2019/index.html",
+      "debate/russell-copleston-existence-of-god-1948/index.html",
+      "debate/swinburne-huemer-theism-coherent-2026/index.html",
+      "sitemap.xml",
+      "src/data/debate-summaries.js",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/generated-seo-correction/execution-activation.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/generated-seo-correction/execution.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/generated-seo-correction/analysis.json"
+    ],
+    "futureProtectedFiles": [
+      "src/data/debates.js",
+      "src/data/references.js",
+      "scripts/validate-debates.mjs",
+      "scripts/generate-seo-pages.mjs",
+      "docs/assessment-ledgers/<ten-frozen-batch-01-ledgers>",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/final-candidates/**",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/**",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/**",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/correction-1/**",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/correction-2/**",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/mutation-manifest.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/execution-activation.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/execution.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/analysis.json",
+      ".assessment-cache/**"
+    ],
+    "atomicAcceptanceRequired": true,
+    "partialCommitForbidden": true,
+    "partialPushForbidden": true
+  },
+  "preparationValidation": {
+    "failedPassPreserved": true,
+    "productionDebatesHashMatched": true,
+    "productionLedgerHashesMatched": 10,
+    "productionReferencesHashMatched": true,
+    "validatorHashMatched": true,
+    "compatibilityAcceptanceHashMatched": true,
+    "generatorHashMatched": true,
+    "isolatedGenerationCompleted": true,
+    "generatedOutputsCompared": 380,
+    "affectedGeneratedFilesIdentified": 12,
+    "affectedBaselineHashesLocked": 12,
+    "affectedProposedHashesLocked": 12,
+    "inventoryDigestLocked": true,
+    "temporaryDirectoriesRemaining": 0,
+    "productionGeneratedFilesWritten": 0,
+    "repositoryValidationRuns": 0,
+    "productionMutationReruns": 0,
+    "rollbacks": 0,
+    "modelsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "batch2Selected": false
+  },
+  "authorization": {
+    "correctionPlanPreparation": true,
+    "correctionExecutionActivation": false,
+    "isolatedCorrectionGeneration": false,
+    "generatedProductionFileWrites": false,
+    "repositoryValidationRerun": false,
+    "productionMutationRerun": false,
+    "productionCommit": false,
+    "rollback": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "separateExecutionApprovalRequired": true,
+    "planHashMismatchBlocks": true,
+    "failedPassHashMismatchBlocks": true,
+    "productionDebatesHashMismatchBlocks": true,
+    "productionLedgerHashMismatchBlocks": true,
+    "productionReferencesHashMismatchBlocks": true,
+    "validatorHashMismatchBlocks": true,
+    "compatibilityAcceptanceHashMismatchBlocks": true,
+    "generatorHashMismatchBlocks": true,
+    "generatedBaselineHashMismatchBlocks": true,
+    "inventoryDigestMismatchBlocks": true,
+    "proposedOutputHashMismatchBlocks": true,
+    "unexpectedGeneratedDifferenceBlocks": true,
+    "unexpectedWriteBlocks": true,
+    "automaticRetryForbidden": true,
+    "automaticRerunForbidden": true,
+    "automaticRepairForbidden": true,
+    "productionMutationRerunForbidden": true,
+    "rollbackForbidden": true,
+    "partialCommitForbidden": true,
+    "partialPushForbidden": true,
+    "productionReferenceMutationForbidden": true,
+    "validatorRewriteForbidden": true,
+    "candidateRewriteForbidden": true,
+    "stagedLedgerRewriteForbidden": true,
+    "compatibilityEvidenceRewriteForbidden": true,
+    "modelExecutionForbidden": true,
+    "paidServiceForbidden": true,
+    "nextBatchSelectionForbidden": true
+  },
+  "nextAuthorizedAction": "user-approval-required-before-one-frozen-batch-01-generated-seo-derivative-correction-pass"
+}
