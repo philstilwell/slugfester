@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-publication-finalization-provenance",
+  "protocolId": "assessment-production-post-canary-batch-01-publication-finalization",
+  "status": "staging-only-batch-01-final-candidate-provenance",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "debateNumber": "13",
+  "debateId": "knechtle-oconnor-christian-morality-2025",
+  "compiledInput": "docs/assessment-production/post-canary-continuation-v1/batch-01/deterministic-publication-compilation/compiled/debate-13.json",
+  "compiledInputSha256": "9411816962d408275d712c8cf21f3b49eb44bb180c19dbebdeed5a609cd3d0c8",
+  "allowedTransformation": "remove-stagingAudit-from-display-candidate-and-preserve-it-here",
+  "displayFieldsChanged": 0,
+  "participantScoresChanged": false,
+  "scorePassesExecuted": 0,
+  "modelContexts": 0,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/EN5Jqu2-2P8/transcript.txt",
+    "transcriptSha256": "0f5d4d35c8f8ed3ebabdef20b0361ec49989e2d9b96fb7d7a53596d86d029462",
+    "eventsPath": ".assessment-cache/captions/EN5Jqu2-2P8/events.json",
+    "eventsSha256": "baf0d2e1e1b1b8449bb822dc4d6442f1784b54d31e5fdba5e18b04466eabc7ec",
+    "localManifestPath": ".assessment-cache/captions/EN5Jqu2-2P8/manifest.json",
+    "localManifestSha256": "43671ba4aa1a49dbd56d09df43f6fa8592381d7fe3f26a2f94b03efe691fca1c"
+  },
+  "calculatedWinner": "con",
+  "winningMargin": 11,
+  "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+  "displayContract": {
+    "sectionTitle": "AI Extension",
+    "placement": "immediately-after-overall-commentary",
+    "defaultCollapsed": true,
+    "visualVariant": "ai-distinct",
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "prohibitedLanguageScanPassed": true
+  },
+  "noveltyMap": {
+    "pro": {
+      "thesis": {
+        "id": "d13-ai-pro-thesis",
+        "text": "The strongest Christian defense treats redemption as a coherent moral framework whose credibility depends on independent evidence and whose difficult texts must be interpreted through transparent, provision-specific moral criteria.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-sin-grace-eternal-life",
+            "pro-suffering-cross-restoration",
+            "pro-slavery-law-accommodation",
+            "pro-women-local-context-education"
+          ],
+          "explanation": "This steelman preserves the defense's main framework while repairing its evidential and interpretive generality."
+        }
+      },
+      "premises": [
+        {
+          "id": "d13-ai-pro-premise-1",
+          "text": "Christianity's consoling consequences neither prove nor disprove it; its historical, philosophical, and experiential evidence must therefore be assessed independently from the psychological benefits of belief.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-consolation-not-truth",
+              "pro-suffering-cross-restoration"
+            ],
+            "explanation": "This directly repairs the exposed tendency to answer a truth objection mainly with doctrinal meaning."
+          }
+        },
+        {
+          "id": "d13-ai-pro-premise-2",
+          "text": "Divine participation in suffering can matter morally because it combines solidarity with a promised defeat of wrongdoing, but solidarity becomes explanatory only when joined to resurrection, judgment, and restoration.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-suffering-cross-restoration"
+            ],
+            "explanation": "This develops the suffering response by clarifying how participation relates to an ultimate remedy."
+          }
+        },
+        {
+          "id": "d13-ai-pro-premise-3",
+          "text": "An accommodation defense is credible only where each contested law can be shown to restrict an entrenched harm, remain constrained by feasible alternatives, and point toward an identifiable moral ideal.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-slavery-law-accommodation",
+              "con-slavery-property-permission",
+              "con-slavery-family-separation"
+            ],
+            "explanation": "This replaces a generic analogy with provision-specific criteria responsive to the strongest slavery objections."
+          }
+        },
+        {
+          "id": "d13-ai-pro-premise-4",
+          "text": "Contextual readings of gender restrictions require documented local conditions and canonical consistency, including a principled explanation of women praying, prophesying, teaching, and exercising authority.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-women-local-context-education",
+              "con-corinthians-women-subordination"
+            ],
+            "explanation": "This strengthens the contextual defense while acknowledging its missing historical and scope evidence."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d13-ai-pro-conclusion",
+        "text": "Christianity can withstand these objections only conditionally: its central redemptive claims need independent support, and its contested texts require interpretations that explain particular harms without obscuring their moral seriousness.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-sin-grace-eternal-life",
+            "pro-suffering-cross-restoration",
+            "pro-slavery-law-accommodation",
+            "pro-women-local-context-education"
+          ],
+          "explanation": "The conclusion proportionately states what the repaired defense could establish without claiming that every objection has been resolved."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d13-ai-pro-new-1",
+          "title": "Moral trajectory test",
+          "text": "A defensible accommodation reading should satisfy a public moral-trajectory test: identify the ideal, the entrenched practice, the harm reduced by the temporary rule, the feasible alternatives unavailable in context, and the later principles that move beyond the accommodation. Applied consistently, this test prevents every difficult command from being excused as contextual while allowing genuine harm-reduction legislation to be distinguished from endorsement.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This is a new evaluative framework not stated in the transcript and therefore has no source move."
+          }
+        },
+        {
+          "id": "d13-ai-pro-new-2",
+          "title": "Independent-evidence separation",
+          "text": "The defense can concede that Christianity's consoling structure explains part of its appeal while separating that sociological question from whether its central events and metaphysical claims have independent support. This concession removes any need to treat existential benefit as evidence by itself. The case then becomes cumulative and defeasible: consolation explains attraction, whereas historical argument, philosophical coherence, and lived transformation must carry distinct evidential responsibilities.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-consolation-not-truth",
+              "pro-transcendence-wellbeing-meaning",
+              "pro-suffering-cross-restoration"
+            ],
+            "explanation": "This repairs the usefulness-to-truth problem by assigning separate evidential roles to distinct considerations."
+          }
+        }
+      ]
+    },
+    "con": {
+      "thesis": {
+        "id": "d13-ai-con-thesis",
+        "text": "The strongest skeptical case argues that Christianity's truth and moral authority remain doubtful where psychological usefulness substitutes for evidence and provision-specific scriptural harms resist principled contextual explanation.",
+        "novelty": {
+          "classification": "extends",
+          "sourceMoveIds": [
+            "con-consolation-not-truth",
+            "con-slavery-property-permission",
+            "con-slavery-family-separation",
+            "con-corinthians-women-subordination"
+          ],
+          "explanation": "This steelman integrates the skeptic's central evidential and moral challenges into a proportionate thesis."
+        }
+      },
+      "premises": [
+        {
+          "id": "d13-ai-con-premise-1",
+          "text": "A belief's ability to relieve dread creates a credible alternative explanation for its attraction, so claims of psychological benefit cannot independently confirm the belief's truth.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-consolation-not-truth"
+            ],
+            "explanation": "This develops the transcript's epistemic distinction without treating consolation as proof of falsity."
+          }
+        },
+        {
+          "id": "d13-ai-con-premise-2",
+          "text": "Biblical portrayals of divine authority deserve moral evaluation at the level of rhetoric and response, including whether fear and submission replace explanation in narratives concerning innocent suffering.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-job-terrifying-submission"
+            ],
+            "explanation": "This extends the Job objection into a general but still qualified evaluative principle."
+          }
+        },
+        {
+          "id": "d13-ai-con-premise-3",
+          "text": "An accommodation defense fails when a less harmful rule appears compatible with the conceded social constraints, especially where preserving families requires neither immediate abolition nor systemic reconstruction.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-slavery-family-separation",
+              "pro-slavery-law-accommodation"
+            ],
+            "explanation": "This formalizes the decisive logic of the family-separation counterexample."
+          }
+        },
+        {
+          "id": "d13-ai-con-premise-4",
+          "text": "Spiritual equality cannot automatically establish institutional reform, yet explicit ownership and subordination rules still require affirmative justification rather than reliance on broad egalitarian language elsewhere.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-galatians-spiritual-unity-limit",
+              "con-slavery-property-permission",
+              "con-corinthians-women-subordination"
+            ],
+            "explanation": "This combines the limits of equality language with the continuing burden created by explicit rules."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d13-ai-con-conclusion",
+        "text": "Unless Christianity supplies independent truth-directed evidence and provision-specific explanations for avoidable scriptural harms, the skeptical objections substantially weaken its claimed moral coherence without demonstrating that every Christian claim is false.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-consolation-not-truth",
+            "con-slavery-property-permission",
+            "con-slavery-family-separation",
+            "con-corinthians-women-subordination"
+          ],
+          "explanation": "The conclusion repairs potential overreach by limiting the result to substantial weakening rather than comprehensive disproof."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d13-ai-con-new-1",
+          "title": "Counterfactual legislation test",
+          "text": "Evaluate accommodation through counterfactual legislation: ask whether a minimally different command could preserve the assumed social system while preventing the disputed harm. If family unity, reduced violence, or narrower ownership could have been required without abolishing the institution immediately, the absence of those requirements counts against necessity. This method focuses the dispute on feasible moral alternatives instead of forcing a false choice between total abolition and unrestricted regulation.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a general counterfactual method beyond the transcript's single family-separation example."
+          }
+        },
+        {
+          "id": "d13-ai-con-new-2",
+          "title": "Explanatory partition",
+          "text": "The skeptical case should partition three questions that the exchange sometimes blends: why people adopt Christianity, whether Christianity is true, and whether its scriptures exhibit morally trustworthy authority. Psychological consolation bears primarily on adoption, historical and philosophical evidence bears on truth, and contested commands bear on moral authority. Keeping these inquiries separate prevents success in one domain from being transferred automatically to another and clarifies exactly what each objection establishes.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This is a new analytical structure that separates causal, epistemic, and moral burdens across the debate."
+          }
+        }
+      ]
+    }
+  },
+  "modelOutputCompletedAt": "2026-08-15T00:00:00-04:00",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true
+  },
+  "compilationValidation": {
+    "status": "passed",
+    "debateNumber": "13",
+    "sections": 4,
+    "moves": 12,
+    "scoresLocked": true,
+    "scoresRecalculated": false,
+    "modelAuthoredScores": 0,
+    "aiExtensionIncluded": true,
+    "productionMutationPerformed": false
+  },
+  "productionMutationPerformed": false,
+  "nextBatchSelectionPerformed": false
+}
