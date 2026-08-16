@@ -1,0 +1,540 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-debate-31-publication-repair-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-01-debate-31-publication-repair-1",
+  "status": "batch-01-debate-31-seven-context-publication-repair-gate-passed",
+  "gateStartedAt": "2026-08-16T03:09:58.634Z",
+  "gateCompletedAt": "2026-08-16T03:14:19.561Z",
+  "contextsPlanned": 7,
+  "contextsAttempted": 7,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 7,
+  "invalidContexts": 0,
+  "attempts": 7,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 260923,
+  "aggregateModelElapsedMs": 406797,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "validContextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-16T03:09:58.638Z",
+      "completedAt": "2026-08-16T03:10:42.823Z",
+      "elapsedMs": 44185,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-experiential-warrant-and-factual-defeaters.critique",
+        "moveProse.con-bones-defeat-experiential-warrant.critique"
+      ],
+      "copiedInputBytes": 31147,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "8a56855ec1e85a82ac49d58a8ad489f5aacd673dc507db929b0da1977322ba03",
+      "stderrSha256": "71d983c97e43f90edca13d60a490140f97d7aac2289d7912cb400d9ab798e5e8",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "3f0b1897781b42b3ac44354646e31de2eff7975e191ebf9c49fde5f789c47ab1",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "31",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-experiential-warrant-and-factual-defeaters.critique",
+            "words": 115,
+            "characters": 956,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-bones-defeat-experiential-warrant.critique",
+            "words": 117,
+            "characters": 1000,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-16T03:10:42.836Z",
+      "completedAt": "2026-08-16T03:11:30.750Z",
+      "elapsedMs": 47914,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-equal-standard-and-pragmatic-stakes.critique",
+        "moveProse.con-divine-intent-evidence-expectation.critique"
+      ],
+      "copiedInputBytes": 31577,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "4f8352af8280da6874617a92814f409f84a3355c907c6b64d3b1ae5463ddcfe3",
+      "stderrSha256": "aa1a75dea4d22938408eaa2aadfecc04abe408deecc60fd38311be670b291203",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "be2eb706a22a927e758c15972b6a3e6a9e7a60793727c5eb12bbec8028a1f91a",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "31",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-equal-standard-and-pragmatic-stakes.critique",
+            "words": 116,
+            "characters": 973,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-divine-intent-evidence-expectation.critique",
+            "words": 121,
+            "characters": 993,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-16T03:10:42.836Z",
+      "completedAt": "2026-08-16T03:12:15.725Z",
+      "elapsedMs": 92889,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-likelihood-ratio-over-extraordinary-evidence-rule.critique",
+        "moveProse.con-resurrection-low-prior.critique"
+      ],
+      "copiedInputBytes": 32202,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "fd0bfa53d4ab2005ade589d696325a98b485bad638f69addd0ee956b2a9b0bb4",
+      "stderrSha256": "12717496579c70a05095f908cc6cc4128621f301ca3de6421bd3da014dcfb427",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "986ade0bab0563b7d83b64cedcdd2e1e22ae9a1b940e4a23540d7879fa2bcd73",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "31",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-likelihood-ratio-over-extraordinary-evidence-rule.critique",
+            "words": 117,
+            "characters": 900,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-resurrection-low-prior.critique",
+            "words": 117,
+            "characters": 930,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-16T03:12:15.733Z",
+      "completedAt": "2026-08-16T03:13:14.795Z",
+      "elapsedMs": 59062,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-theistic-context-for-miracle-prior.critique",
+        "moveProse.pro-five-facts-best-explanation-case.critique"
+      ],
+      "copiedInputBytes": 31404,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "d04725a42a72a24518e892b20d22539e9a07ace6b6f7ad350ef85fd33fce8546",
+      "stderrSha256": "8fc4977268bfb21ed7423da3b9b72edddcf1ff2c95baa67374a2180583d358d1",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "6996e770867ca5677d265677f32453d7a0a275ca92c9d28c94218b2099c9ce96",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "31",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-theistic-context-for-miracle-prior.critique",
+            "words": 115,
+            "characters": 920,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-five-facts-best-explanation-case.critique",
+            "words": 117,
+            "characters": 973,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 4,
+      "packetIndex": 4,
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-16T03:12:15.733Z",
+      "completedAt": "2026-08-16T03:13:08.568Z",
+      "elapsedMs": 52835,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-sincere-error-grief-hallucination.critique",
+        "moveProse.pro-hallucination-scope-and-power-objection.critique"
+      ],
+      "copiedInputBytes": 31572,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "8b5d56e87618b33dc09350438325d09551329084187a98c7c520eee53f237ccd",
+      "stderrSha256": "ef52738088727aef4ba05ec71533d93df86f22ea890f61581f5c12719ee5dd6e",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "436670539ec8a851b0d1887b5c9fd8c2129a125c9b4319ca37ed545a1abcae4b",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "31",
+        "packetIndex": 4,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-sincere-error-grief-hallucination.critique",
+            "words": 114,
+            "characters": 931,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-hallucination-scope-and-power-objection.critique",
+            "words": 117,
+            "characters": 961,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 5,
+      "packetIndex": 5,
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-16T03:13:08.580Z",
+      "completedAt": "2026-08-16T03:13:53.749Z",
+      "elapsedMs": 45169,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-underlying-reports-unreliable.critique",
+        "moveProse.pro-early-and-independent-core-data-support.critique"
+      ],
+      "copiedInputBytes": 32404,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "ae0d68afb5a1fc3c111cadf582617b889191d3a47c5d85dd5d6205ab14cbd07d",
+      "stderrSha256": "3a02a8f5bd1c81b85eb87c2532deca4dceeacca513e39d0273d9953fe4d78e03",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "4b9ee95e0053af7b37442ace672048a68e53cf6d97f4aa2052361d687e1d5a72",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "31",
+        "packetIndex": 5,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-underlying-reports-unreliable.critique",
+            "words": 118,
+            "characters": 978,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-early-and-independent-core-data-support.critique",
+            "words": 118,
+            "characters": 997,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 6,
+      "packetIndex": 6,
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-16T03:13:14.806Z",
+      "completedAt": "2026-08-16T03:14:19.549Z",
+      "elapsedMs": 64743,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-appearance-legendary-development.critique",
+        "moveProse.pro-early-sources-against-legend.critique"
+      ],
+      "copiedInputBytes": 31765,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "4c52323ebd3fbd4ffc8245f2832c5be787ffcce6f74975a45ad3e0504fe3cc06",
+      "stderrSha256": "e5285f9c3528bb6c213c989aaae74f051ae9d515aa2974bcb4b62fdea2ea3d76",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "2aed5eadb8812e8660f077f7424287f3d56469d4699b687b75f9eeac7a760db9",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "31",
+        "packetIndex": 6,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-appearance-legendary-development.critique",
+            "words": 119,
+            "characters": 1074,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-early-sources-against-legend.critique",
+            "words": 118,
+            "characters": 985,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalFailedOutputPreserved": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicMergeAndCompleteValidation": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "remainingNineContextExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
