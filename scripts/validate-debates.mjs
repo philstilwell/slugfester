@@ -139,20 +139,18 @@ export function validatePostCanaryBatch01LedgerAdapterRouteLocks({
   packetText,
   packet,
   activation,
-  preparationText,
-  analysisText
+  preparationText
 }) {
   const packetLock = activation.packetHashes?.find(
     (item) => item.debateNumber === debate.number
   );
   if (
     activation.status !==
-      "post-canary-batch-01-compatibility-execution-authorized-and-frozen" ||
+      "post-canary-batch-01-compatibility-correction-1-execution-authorized-and-frozen" ||
     !activation.authorization?.compatibilityExecution ||
     !activation.authorization?.validatorMigration ||
     !activation.authorization?.stagingLedgerWrite ||
     sha256(preparationText) !== activation.preparation?.sha256 ||
-    sha256(analysisText) !== activation.preparationAnalysis?.sha256 ||
     !packetLock ||
     packetLock.path !== packetPath ||
     packetLock.debateId !== debate.id ||
@@ -179,7 +177,7 @@ export function validatePostCanaryBatch01LedgerAdapterRoute({
   const packetPath =
     `${POST_CANARY_BATCH_01_COMPATIBILITY_ROOT}/packets/debate-${debate.number}.json`;
   const activationPath =
-    `${POST_CANARY_BATCH_01_COMPATIBILITY_ROOT}/execution-activation.json`;
+    `${POST_CANARY_BATCH_01_COMPATIBILITY_ROOT}/correction-1/execution-activation.json`;
   const packetText = readFileSync(
     new URL(`../${packetPath}`, import.meta.url),
     "utf8"
@@ -192,10 +190,6 @@ export function validatePostCanaryBatch01LedgerAdapterRoute({
     new URL(`../${activation.preparation?.path}`, import.meta.url),
     "utf8"
   );
-  const analysisText = readFileSync(
-    new URL(`../${activation.preparationAnalysis?.path}`, import.meta.url),
-    "utf8"
-  );
   validatePostCanaryBatch01LedgerAdapterRouteLocks({
     debate,
     ledgerText,
@@ -203,8 +197,7 @@ export function validatePostCanaryBatch01LedgerAdapterRoute({
     packetText,
     packet,
     activation,
-    preparationText,
-    analysisText
+    preparationText
   });
   const validation = validatePostCanaryBatch01SiteLedgerAdapter({
     adapter: ledger,
