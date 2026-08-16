@@ -1,0 +1,2204 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+  "status": "frozen-post-canary-batch-01-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "planningOnly": true,
+  "debateNumber": "75",
+  "debateId": "rasmussen-clifton-contingency-argument-2019",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/final-candidates/debate-75.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-01/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-01/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-01/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/WgiWkE1lhII/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+    "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+    "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+    "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+    "finalCandidateSha256": "236dcfc53da4445fb693a22e0405939e4cea6fdde97fb69c6a386126b337cb32",
+    "eventsPath": ".assessment-cache/captions/WgiWkE1lhII/events.json",
+    "eventsSha256": "3d9b6e6080b609813d492abeb61e60d0a6970774e956cca6eb2a43603ccd5821",
+    "finalJudgmentSha256": "d6033b6fa947cee7e399949c0d3005903b9d47c15b00814ee9d94724ec769f4a"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/rasmussen-clifton-contingency-argument-2019.json",
+    "productionLedger": "docs/assessment-ledgers/rasmussen-clifton-contingency-argument-2019.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-01-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+    "status": "frozen-post-canary-batch-01-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 1,
+    "debateNumber": "75",
+    "debateId": "rasmussen-clifton-contingency-argument-2019",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+      "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+      "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+      "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+      "finalCandidateSha256": "236dcfc53da4445fb693a22e0405939e4cea6fdde97fb69c6a386126b337cb32",
+      "eventsPath": ".assessment-cache/captions/WgiWkE1lhII/events.json",
+      "eventsSha256": "3d9b6e6080b609813d492abeb61e60d0a6970774e956cca6eb2a43603ccd5821",
+      "finalJudgmentSha256": "d6033b6fa947cee7e399949c0d3005903b9d47c15b00814ee9d94724ec769f4a"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "75",
+      "debateId": "rasmussen-clifton-contingency-argument-2019",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-necessary-foundation",
+          "side": "pro",
+          "description": "Establish that contingent reality calls for an explanation outside the totality of contingent things and that an automatically actual foundation is a better stopping point than brute contingency.",
+          "successCriteria": "The route succeeds if its explanatory principle legitimately applies to contingent reality as a whole, excludes a contingent explanans from completing the explanation, and supports a noncontingent foundation without requiring an indefensible account of necessity.",
+          "motionBridge": {
+            "bridgeId": "bridge-pro-motion-persuasive-transition",
+            "tier": "motion",
+            "description": "Show that the explanatory facts about contingent reality provide rational support for moving to an automatically actual or necessary foundation."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "bridge-pro-central-explanatory-principle",
+              "tier": "central",
+              "description": "Specify and defend the principle that contingent things have an explanation and that their collective explanation cannot be one of the contingent things explained."
+            },
+            {
+              "bridgeId": "bridge-pro-central-global-application",
+              "tier": "central",
+              "description": "Justify extending ordinary explanatory and abductive reasoning to reality's foundational structure rather than exempting the totality from inquiry."
+            },
+            {
+              "bridgeId": "bridge-pro-central-automatic-actuality",
+              "tier": "central",
+              "description": "Explain why automatic actuality or noncontingency removes the distinctive explanatory demand generated by actuality that could have failed."
+            },
+            {
+              "bridgeId": "bridge-pro-central-necessity-content",
+              "tier": "central",
+              "description": "Provide a coherent route from explanatory fundamentality to an appropriate kind of necessity, including the relation between logical necessity and a concrete foundation."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "bridge-pro-subsidiary-necessity-strengths",
+              "tier": "subsidiary",
+              "description": "Distinguish relevant strengths of necessity so the foundational conclusion does not depend on epistemic certainty or an unnecessarily strong modal formulation."
+            },
+            {
+              "bridgeId": "bridge-pro-subsidiary-conceivability",
+              "tier": "subsidiary",
+              "description": "Account for why apparent conceivability of a foundationless or godless world need not establish genuine metaphysical possibility."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-brute-foundation",
+          "side": "con",
+          "description": "Establish that explanatory reasoning within contingent reality does not warrant a necessary foundation, because an ultimate brute or independent foundation may remain contingent and necessity adds no decisive explanation.",
+          "successCriteria": "The route succeeds if global explanatory demands remain unsupported or if fundamentality, independence, and bruteness can be separated from modal necessity, leaving a contingent universe or other brute foundation as a live endpoint.",
+          "motionBridge": {
+            "bridgeId": "bridge-con-motion-block-transition",
+            "tier": "motion",
+            "description": "Show that the move from contingent reality or an unexplained foundation to a necessary or automatically actual foundation is not warranted."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "bridge-con-central-scope-limit",
+              "tier": "central",
+              "description": "Require justification for applying causal and explanatory intuitions formed within reality to spacetime, total reality, or its ultimate boundary."
+            },
+            {
+              "bridgeId": "bridge-con-central-necessity-no-explanation",
+              "tier": "central",
+              "description": "Show why labeling a foundation necessary does not explain its actuality and may reverse or circularize the proposed explanatory direction."
+            },
+            {
+              "bridgeId": "bridge-con-central-independence-contingency",
+              "tier": "central",
+              "description": "Separate explanatory independence and absence of a further explanation from existence in every possible world."
+            },
+            {
+              "bridgeId": "bridge-con-central-abstract-concrete-gap",
+              "tier": "central",
+              "description": "Require a bridge from necessary logical or abstract truths to the necessary existence of a concrete, causally capable foundation."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "bridge-con-subsidiary-brute-parity",
+              "tier": "subsidiary",
+              "description": "Establish whether comparable bruteness can be assigned to the universe or another contingent foundation without additional explanatory cost."
+            },
+            {
+              "bridgeId": "bridge-con-subsidiary-modal-semantics",
+              "tier": "subsidiary",
+              "description": "Test appeals to hidden contradiction and conceivability by clarifying when undiscovered identities or inferential consequences determine genuine contradiction."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-explanatory-principle-and-totality",
+          "title": "The explanatory principle and its application to total contingent reality",
+          "weightPercent": 24,
+          "rationale": "This issue governs whether contingent reality generates an explanatory burden and whether the explanation must lie outside the collection of contingent things rather than terminate within it."
+        },
+        {
+          "sectionId": "section-global-inference-versus-brute-foundation",
+          "title": "Global explanatory inference versus a brute foundation",
+          "weightPercent": 23,
+          "rationale": "This issue tests whether explanatory practices legitimately extend to ultimate reality and whether a brute universe or other foundation remains an adequate alternative endpoint."
+        },
+        {
+          "sectionId": "section-necessity-explanatory-role",
+          "title": "The explanatory role of automatic actuality and necessity",
+          "weightPercent": 22,
+          "rationale": "This issue determines whether noncontingency answers the relevant demand for explanation or merely redescribes an unexplained foundation while introducing circularity about supremacy and necessity."
+        },
+        {
+          "sectionId": "section-fundamentality-and-modal-necessity",
+          "title": "Fundamentality, independence, and modal necessity",
+          "weightPercent": 18,
+          "rationale": "This issue addresses the key transition from being ultimate, independent, or without further explanation to being unable not to exist across the relevant range of possibilities."
+        },
+        {
+          "sectionId": "section-logic-conceivability-and-concrete-foundation",
+          "title": "Logic, conceivability, and a concrete necessary foundation",
+          "weightPercent": 13,
+          "rationale": "This issue covers whether necessary logical structure supports a concrete foundation and whether conceivability, hidden contradictions, or abstract-truth commitments establish or undermine that connection."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-totality-anti-circular-foundation",
+          "sectionId": "section-explanatory-principle-and-totality",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "constructive",
+          "proposition": "The best explanation of all contingent things cannot be another contingent member of that totality and therefore points to an automatically actual, noncontingent foundation.",
+          "sourceSpan": {
+            "startEvent": 203,
+            "endEvent": 246,
+            "excerpt": "things of all of them is going to be better than no explanation other things being equal and then if you think about what could be the best explanation of contingent things all of them well to avoid circularity it's not going to be one of the contingent things so this is going to take us to something that is not contingent but it is instead automatically actual and foundational"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly hands the discussion to Josh, and Scott is directly invited to respond at the close of this uninterrupted turn.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-pro-motion-persuasive-transition"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move states the route's central totality inference and proposed noncontingent endpoint; as a constructive move it has no earlier opposing target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The totality, circularity concern, and proposed foundation are recoverable, with the best-explanation standard left as an implicit qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The best-explanation framing is appropriately comparative, though the noncontingent conclusion is stronger than the supplied anti-circularity warrant."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "The anti-circularity consideration supports an outside explanation, while the stronger modal characterization remains largely asserted."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "The move directly advances the motion-level transition from contingent reality to a noncontingent foundation."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move presents its own positive inference and does not materially characterize a developed opposing alternative."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "Within constructive moves, it directly establishes the principal inference and endpoint, though the automatic-actuality bridge remains compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly excludes members of the contingent totality and identifies an automatically actual foundation as the proposed explanation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-totality-scope-and-brute-deity",
+          "sectionId": "section-explanatory-principle-and-totality",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "Explanatory intuitions that operate within material reality need not extend to spacetime or reality as a whole, while a foundational deity could itself exist as a brute rather than necessary fact.",
+          "sourceSpan": {
+            "startEvent": 398,
+            "endEvent": 462,
+            "excerpt": "that I if I were a Christian if I were a theist I think I would believe that God's existence is a brute fact not necessary in the sense of has to exist it doesn't seem to say that something either has to exist or can't fail to exist or exist in all possible worlds I don't know what could possibly be making that the case about a being like God and so and it seems it doesn't seem"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn begins with Scott accepting Josh's setup and continues through his first-person account of skeptical intuitions until Josh directly answers him.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-con-motion-block-transition"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-totality-anti-circular-foundation"
+            ],
+            "components": [
+              {
+                "componentId": "con-totality-scope-and-brute-deity-component-01",
+                "targetMoveId": "pro-totality-anti-circular-foundation",
+                "text": "Whether the proposed totality inference warrants a noncontingent rather than brute foundation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-totality-scope-and-brute-deity-component-02",
+                "targetMoveId": "pro-totality-anti-circular-foundation",
+                "text": "Whether explanatory intuitions valid within reality extend to reality as a whole.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the proposed transition by denying its global scope and presenting brute divine existence as an alternative to necessary existence, though it does not fully analyze the anti-circular premise."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between within-reality intuitions, total reality, bruteness, and necessity is stated with explicit hypothetical qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The repeated first-person uncertainty properly limits the claim to a live skeptical alternative rather than a demonstrated impossibility."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The total explanation cannot be one of the contingent things being explained.",
+            "decisiveQualification": "Excluding members of the totality does not by itself validate extrapolating explanatory intuitions to the totality or entail necessity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The modal counterexample is intelligible and directly motivated, but the broader scope restriction receives limited defense in the selected evidence."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly supports the motion-level burden of blocking the transition from contingent reality to a necessary foundation."
+            },
+            "representationalCharity": {
+              "value": 87,
+              "rationale": "The reply preserves the explanatory proposal while fairly isolating two further inferential demands it believes remain unsupported."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "This is a partial answer contacting the decisive global-scope and necessity components while leaving the anti-circular exclusion comparatively underdeveloped."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly says a theist could regard God's existence as brute and questions what could make God exist in all possible worlds.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-graduated-strengths-of-necessity",
+          "sectionId": "section-fundamentality-and-modal-necessity",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "Necessity admits different strengths, allowing the argument to reject maximal epistemic certainty while retaining a weaker foundational status such as inability to begin or cease.",
+          "sourceSpan": {
+            "startEvent": 463,
+            "endEvent": 550,
+            "excerpt": "right so it looks like there might be some so this is I like this way of approaching it because it looks like we can have overlap if we turn the dial to week the actual necessity we can agree there right it's you strong a kind of epistemic certainty that's too strong right and so now the question is okay if there's a kind of foundational layer of reality what what is its nature"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Josh begins by directly revisiting Scott's phrase about having to exist, leads the ensuing clarification, and yields only when the moderator interjects afterward.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-pro-subsidiary-necessity-strengths"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-totality-scope-and-brute-deity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-graduated-strengths-of-necessity-component-01",
+                "targetMoveId": "con-totality-scope-and-brute-deity",
+                "text": "Whether necessity must mean maximal epistemic certainty or existence in every conceivable world.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-graduated-strengths-of-necessity-component-02",
+                "targetMoveId": "con-totality-scope-and-brute-deity",
+                "text": "Whether a weaker automatically actual status can distinguish the foundation from brute contingency.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-graduated-strengths-of-necessity-component-03",
+                "targetMoveId": "con-totality-scope-and-brute-deity",
+                "text": "Whether explanatory reasoning legitimately extends to reality as a whole.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly distinguishes strengths of necessity and seeks overlap on a weaker status, but it does not answer the separate global-scope objection."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between stronger and weaker necessity is explicit, but the content of weaker automatic actuality remains only partially specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The proposal is exploratory and explicitly rejects an overly strong interpretation rather than claiming a completed proof of necessity."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The skeptic denies not merely certainty but any basis for existence across possible worlds.",
+            "decisiveQualification": "Weakening necessity does not itself provide a warrant for the remaining modal status."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The conceptual distinction is plausible, while the evidence does not show why the foundation possesses even the proposed weaker necessity."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary burden of distinguishing necessity strengths without directly completing the central necessity bridge."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a strong partial answer because it contacts the decisive necessity component explicitly while leaving the scope component unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly turns down the strength of necessity, rejects excessive epistemic certainty, and returns to the nature of a foundational layer.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-boundary-intuitions-and-brute-universe",
+          "sectionId": "section-global-inference-versus-brute-foundation",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "Even if the universe began and is contingent, causal and explanatory intuitions formed within it may not govern its ultimate boundary, leaving the universe's brute existence a live endpoint.",
+          "sourceSpan": {
+            "startEvent": 582,
+            "endEvent": 620,
+            "excerpt": "or coming into existence that feels misleading to me because it assumes time where there wouldn't be time but let's say that the universe has a first moment in time the universe has a beginning - it's in the you know all of our intuitions about causes and explanations and all of that is is kind of grounded in the world that we experience around us and when you get to that level"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Scott identifies his own intuitions in the first person and develops the position continuously until Josh begins by affirming his epistemic humility.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-central-scope-limit"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-totality-anti-circular-foundation",
+              "pro-graduated-strengths-of-necessity"
+            ],
+            "components": [
+              {
+                "componentId": "con-boundary-intuitions-and-brute-universe-component-01",
+                "targetMoveId": "pro-totality-anti-circular-foundation",
+                "text": "Whether explanatory intuitions justify inference concerning the universe's ultimate boundary.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-boundary-intuitions-and-brute-universe-component-02",
+                "targetMoveId": "pro-graduated-strengths-of-necessity",
+                "text": "Whether weakening necessity answers the boundary-scope objection.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly attacks the global application presupposed by the original totality inference and keeps brute cosmic existence live, without engaging the later distinctions among strengths of necessity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The universe's beginning, boundary, and the limited provenance of causal intuitions are clearly distinguished and cautiously qualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move advances a limited skeptical possibility and carefully avoids temporally loaded language about the universe coming into existence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A beginning or contingent universe may call for explanation under ordinary inference patterns.",
+            "decisiveQualification": "Those inference patterns were learned within spacetime and may not govern spacetime's boundary."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supplies the central con burden requiring justification for extending internal causal intuitions to ultimate reality."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The reply grants the stipulated beginning and contingency while accurately isolating the scope qualification it regards as decisive."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a partial answer contacting the decisive scope condition while leaving the anti-circular and graduated-necessity components largely untouched."
+            }
+          },
+          "evidenceBasis": "The excerpt carefully distinguishes a first moment from temporal coming-to-exist language and begins locating ordinary intuitions within the universe.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-global-abductive-inquiry",
+          "sectionId": "section-global-inference-versus-brute-foundation",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "Careful inquiry may extend ordinary and scientific inference-to-the-best-explanation practices to reality as a whole, thereby favoring an explanatory foundation over brute contingency.",
+          "sourceSpan": {
+            "startEvent": 621,
+            "endEvent": 688,
+            "excerpt": "epistemic humility here because when you're thinking about the sort of ultimate causes of death or the beginning of time you know I think it is helpful to kind of admit when we don't know or to kind of have a stance of curiosity and exploration one thing that I've personally found helpful is to sort of connect my reasoning about ordinary things or even in science with that using the same structure of reasoning to think about reality as a whole"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Josh explicitly affirms Scott's humility, then develops a first-person methodological reply until Scott acknowledges that it advances the discussion.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-central-global-application"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-boundary-intuitions-and-brute-universe"
+            ],
+            "components": [
+              {
+                "componentId": "pro-global-abductive-inquiry-component-01",
+                "targetMoveId": "con-boundary-intuitions-and-brute-universe",
+                "text": "The decisive challenge is whether ordinary explanatory practices may legitimately guide inquiry about reality as a whole.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly defends methodological continuity through inference to the best explanation while acknowledging epistemic humility."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The methodological proposition, its global scope, and its cautious qualification are all expressly recoverable from the excerpt."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move presents global abduction as a helpful and exploratory method rather than as a certain license for the conclusion."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Ultimate boundary questions may be unlike ordinary scientific and explanatory cases.",
+            "decisiveQualification": "Methodological continuity remains defeasible and requires comparison with possible boundary-specific failures."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "Established explanatory practice supplies relevant support, though no detailed comparison with boundary-specific failure modes is provided."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central pro burden of extending explanatory and abductive inquiry to foundational reality."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly answers the scope challenge with a methodological warrant, though rival reliability concerns remain compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt links ordinary and scientific reasoning to reality-wide inquiry while expressly emphasizing curiosity, exploration, and epistemic humility.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-necessity-conditional-on-existence",
+          "sectionId": "section-necessity-explanatory-role",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "Calling God's existence necessary does not explain why God exists when necessary existence appears to be a property available only conditional on God's already existing.",
+          "sourceSpan": {
+            "startEvent": 689,
+            "endEvent": 724,
+            "excerpt": "explains God's existence well his necessity I you lose me there I don't understand how that actually because it seems to okay so you know the God doesn't have the property of existence right we kind of want to stay away from that right like like the whole like we're not defining we're certainly not defining God into existence we're saying that that if God exists God has this property of necessary"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Scott takes over after acknowledging Josh's prior answer and frames the challenge in first-person terms before the moderator explicitly asks to jump into the exchange.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-central-necessity-no-explanation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-global-abductive-inquiry"
+            ],
+            "components": [
+              {
+                "componentId": "con-necessity-conditional-on-existence-component-01",
+                "targetMoveId": "pro-global-abductive-inquiry",
+                "text": "The decisive demand is whether the proposed necessary foundation actually explains why the foundation exists.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply shifts from general global method to the explanatory adequacy of necessity and directly challenges the proposed endpoint."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conditional-property objection is clear and explicitly separated from any attempt to define God into existence."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker frames the point as a request for an intelligible explanation and explicitly limits what is being denied."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Necessity may describe a nature whose actuality does not require a further external cause.",
+            "decisiveQualification": "That description still needs to explain how necessity bears on actuality rather than presupposing existence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The distinction between possessing a property if existent and explaining existence is coherent and directly exposes a central inferential gap."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central con burden that necessity labeling may fail to explain a foundation's actuality."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It contacts the endpoint's central explanatory claim, though it does not challenge the general legitimacy of abductive inquiry itself."
+            }
+          },
+          "evidenceBasis": "The excerpt distinguishes necessary existence from defining God into existence and asks how a property conditional on God existing explains that existence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-contingency-generates-explanatory-demand",
+          "sectionId": "section-necessity-explanatory-role",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "Actuality that could have failed specially calls for explanation, whereas an automatically actual foundation avoids that demand and may derive its necessity from its supreme nature.",
+          "sourceSpan": {
+            "startEvent": 777,
+            "endEvent": 852,
+            "excerpt": "foundation of reality has a supreme nature that would sort of maybe explain why has a robust automatically actual nature because if it were less than robust it would be less than supreme and so it's supremacy its supreme Ness sort explains its necessity now now that's not going to explain yet why there's a contingent reality so to do that we were gonna have to yeah tell more of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Josh explicitly begins organizing the cluster of objections and sustains the response until he announces that he has manipulated several pieces and Scott resumes.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-central-automatic-actuality"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-necessity-conditional-on-existence",
+              "con-boundary-intuitions-and-brute-universe"
+            ],
+            "components": [
+              {
+                "componentId": "pro-contingency-generates-explanatory-demand-component-01",
+                "targetMoveId": "con-necessity-conditional-on-existence",
+                "text": "Why actuality that could have failed invites explanation while automatic actuality does not.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-contingency-generates-explanatory-demand-component-02",
+                "targetMoveId": "con-necessity-conditional-on-existence",
+                "text": "Whether a supreme nature can explain the foundation's necessity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-contingency-generates-explanatory-demand-component-03",
+                "targetMoveId": "con-boundary-intuitions-and-brute-universe",
+                "text": "Whether global explanatory intuitions are reliable at reality's boundary.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly addresses the explanatory-role challenge by contrasting contingent actuality with automatic actuality and proposing supremacy as a source of necessity, but it leaves the global-scope objection unanswered."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The contrast is recoverable, but supreme nature, robust actuality, and necessity are connected without fully stable definitions."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Words such as maybe and sort appropriately qualify the supremacy proposal, though even that tentative explanatory link remains weakly warranted."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Necessary existence may be only a property attributed after the foundation's existence is assumed.",
+            "decisiveQualification": "The reply proposes that automatic actuality belongs to a supreme nature, but still must show that supremacy independently entails necessity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (69 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central pro burden that automatic actuality removes the explanatory demand distinctive of contingency."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The objection is fairly recognized, while the response slightly compresses the decisive independence requirement for its nature-based explanation."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a strong partial answer contacting the decisive necessity-explanation component while leaving a separate central scope demand untouched."
+            }
+          },
+          "evidenceBasis": "The excerpt proposes that a supreme foundational nature explains robust automatic actuality, while expressly conceding that more explanation is still required.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-supremacy-necessity-circularity",
+          "sectionId": "section-necessity-explanatory-role",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "Explaining divine necessity through divine supremacy threatens circularity if necessary existence is itself among the properties that make the foundation supreme.",
+          "sourceSpan": {
+            "startEvent": 853,
+            "endEvent": 877,
+            "excerpt": "great or in this case it makes God supreme and if it is making God supreme then it feels circular to say that God supreme this is making him necessary so I'm like yeah so my question for you is do you take it to be a coherent question if I were to ask something like what fact of the matter makes it the case that God's existence is necessary is that a coherent question to ask it"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Scott announces an observation and question, then develops them continuously through the explicit question that Josh begins answering on the following row.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-pro-central-necessity-content"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-contingency-generates-explanatory-demand"
+            ],
+            "components": [
+              {
+                "componentId": "con-supremacy-necessity-circularity-component-01",
+                "targetMoveId": "pro-contingency-generates-explanatory-demand",
+                "text": "Whether supremacy can noncircularly explain the foundation's necessary existence.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-supremacy-necessity-circularity-component-02",
+                "targetMoveId": "pro-contingency-generates-explanatory-demand",
+                "text": "Whether automatic actuality removes the demand generated by contingent actuality.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly diagnoses circularity: if necessity helps constitute supremacy, supremacy cannot independently explain necessity. It states the consequence by demanding a further fact making necessity true."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conditional circularity charge and the question about what makes divine existence necessary are both precisely stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The phrase feels circular appropriately conditions the objection on necessity being among the supremacy-making features."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Supremacy may be grounded in features independent of necessity and then explain necessity.",
+            "decisiveQualification": "The preceding account does not identify such independent supremacy-making features."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The conditional circularity diagnosis is valid and the further-fact question cleanly isolates the unresolved explanatory direction."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The argument is well supported by the structure of the stated supremacy proposal, though its force depends on how supremacy is constituted."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly advances the central con bridge challenging necessity's explanatory role and possible reversal or circularity."
+            },
+            "representationalCharity": {
+              "value": 93,
+              "rationale": "The strongest nature-based interpretation is preserved and tested against a precise conditional qualification rather than caricatured."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within diagnostic defeats, it explicitly identifies the failed explanatory direction and its consequence, though it does not challenge every part of the contingency contrast."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly says the account feels circular if necessity makes God supreme and asks what fact makes God's existence necessary.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-principle-explanation-outside-totality",
+          "sectionId": "section-explanatory-principle-and-totality",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "For any contingent things there is an explanation of their existence, and the explanation of all contingent things cannot itself be among the contingent things being explained.",
+          "sourceSpan": {
+            "startEvent": 989,
+            "endEvent": 1004,
+            "excerpt": "principle we can work with that one I printed it I do you think I do think that's true so so like so for any cups there's an explanation of those cups for any stars there's an explanation of those stars for any set of contingent universes if they are contingent then there's an explanation of their existence and yeah so and then from there we infer that the explanation is and among the very things being explained and so isn't itself"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The host explicitly hands the formulation to Josh, who states the principle and draws the inference in his characteristic first-person presentation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-central-explanatory-principle"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-supremacy-necessity-circularity",
+              "con-boundary-intuitions-and-brute-universe"
+            ],
+            "components": [
+              {
+                "componentId": "pro-principle-explanation-outside-totality-component-01",
+                "targetMoveId": "con-supremacy-necessity-circularity",
+                "text": "Whether supremacy explains necessity without presupposing the very property to be explained.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-principle-explanation-outside-totality-component-02",
+                "targetMoveId": "con-boundary-intuitions-and-brute-universe",
+                "text": "Whether explanatory principles extend to sets of contingent universes.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move restates and generalizes the explanatory principle but does not contact the immediately live circularity diagnosis. Its global principle is issue-bearing contrary material and answers a separate earlier scope concern."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The quantified principle and exclusion inference are clear, with only the domain and explanatory-kind qualifications left implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The universal principle is affirmed without defending exceptions or the inference that its explanation cannot belong to the relevant totality."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "Illustrative cases clarify the principle but do not independently defend its universal application or answer brute-foundation alternatives."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central pro explanatory-principle burden despite failing to answer the selected opposing circularity challenge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "This short formulation states the positive principle without developing or characterizing a competing interpretation."
+            },
+            "responsiveness": {
+              "value": 69,
+              "rationale": "Within relevant nonanswers, it makes substantial contact with an earlier global-scope issue but leaves the selected decisive circularity demand uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly generalizes from cups and stars to contingent universes and excludes the things being explained from serving as their explanation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-brute-contingency-worse-than-necessity",
+          "sectionId": "section-global-inference-versus-brute-foundation",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "Brute contingency is explanatorily worse than brute necessity because an automatically actual foundation does not invite a deeper explanation in the way a contingent fact does.",
+          "sourceSpan": {
+            "startEvent": 1024,
+            "endEvent": 1059,
+            "excerpt": "contingent thing in this it's it would be the brute contingency seems worse than brute necessity doesn't it to you I mean if you have something that just automatically actual I'm because you talk about like a dent in your vehicle that didn't have to be there like it right and so it calls for explanation I kind of get there but imagine instead and put God to the side because God"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn uses Rasmussen's recurring contrast between contingent dents and automatically actual foundations and directly addresses Clifton.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-central-automatic-actuality"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-necessity-conditional-on-existence",
+              "con-boundary-intuitions-and-brute-universe",
+              "con-supremacy-necessity-circularity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-brute-contingency-worse-than-necessity-component-01",
+                "targetMoveId": "con-necessity-conditional-on-existence",
+                "text": "Whether necessity provides an explanatory advantage over brute contingent existence.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-brute-contingency-worse-than-necessity-component-02",
+                "targetMoveId": "con-boundary-intuitions-and-brute-universe",
+                "text": "Whether the universe may remain an equally adequate brute endpoint.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-brute-contingency-worse-than-necessity-component-03",
+                "targetMoveId": "con-supremacy-necessity-circularity",
+                "text": "Whether supremacy noncircularly explains necessity.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the necessity-explanation concern through an explicit comparative claim that brute contingency invites explanation whereas automatic actuality does not, but it does not answer the circularity objection."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The comparative claim is clear and framed as a question, with the dent analogy specifying the relevant explanatory contrast."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move presents the comparison as intuitive and interrogative, but assumes rather than fully establishes that automatic actuality ends inquiry."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Necessary existence may be just as brute and no more explanatory than contingent existence.",
+            "decisiveQualification": "The reply identifies only an asymmetry in further explanatory demand, not an explanation of necessity itself."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central pro automatic-actuality burden by comparing the explanatory costs of contingent and necessary bruteness."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "This is a strong partial answer because it contacts the decisive explanatory comparison while leaving the nature-based circularity demand unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly compares brute contingency with brute necessity and uses an avoidable vehicle dent to motivate why contingency calls for explanation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-independence-with-modal-contingency",
+          "sectionId": "section-fundamentality-and-modal-necessity",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "Failure to exist in every possible world need not imply dependence, so an ultimate being could be explanatorily independent while existing in only some possible worlds as a brute modal fact.",
+          "sourceSpan": {
+            "startEvent": 1082,
+            "endEvent": 1102,
+            "excerpt": "imply having a been caused independence right right yeah um I don't think it I don't think not existing in all possible worlds has to mean dependence because God to me seems like the being that is not dependent and yet does not exist in all possible we're holy with you yeah so some notion of possible right right yeah yeah exactly so if if I were a theist that's that would be my view of God because there doesn't seem to be any fact"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Clifton marks the concern in the first person and describes the view he would adopt if he were a theist, before the host intervenes.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-central-independence-contingency"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-brute-contingency-worse-than-necessity",
+              "pro-graduated-strengths-of-necessity"
+            ],
+            "components": [
+              {
+                "componentId": "con-independence-with-modal-contingency-component-01",
+                "targetMoveId": "pro-brute-contingency-worse-than-necessity",
+                "text": "Whether explanatory independence entails existence in all possible worlds.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-independence-with-modal-contingency-component-02",
+                "targetMoveId": "pro-graduated-strengths-of-necessity",
+                "text": "Whether different senses of contingency and necessity have been conflated.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-independence-with-modal-contingency-component-03",
+                "targetMoveId": "pro-brute-contingency-worse-than-necessity",
+                "text": "Whether brute contingency is explanatorily worse than brute necessity.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly separates dependence from modal contingency and identifies a possible equivocation, but it does not answer the comparative claim that contingent bruteness invites more explanation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Dependence, contingency, and possible-world existence are explicitly separated, with the deity example clearly offered as the speaker's view."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker offers the independent but modally contingent being as a coherent possibility rather than a proven metaphysical model."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Contingency may mean causal dependence rather than merely failure to exist in every world.",
+            "decisiveQualification": "The reply explicitly separates those meanings and denies that modal contingency entails dependence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "Independence and cross-world existence are conceptually separable, though the asserted divine countermodel is not independently established."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The semantic distinction supports the conclusion, but the possibility of an independent modally contingent being remains principally intuitive."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central con burden separating explanatory independence from existence in every possible world."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a strong partial answer contacting the decisive modal bridge while leaving the explicit explanatory-cost comparison unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly rejects the conflation of causal dependence with failure to exist in all possible worlds and offers God as the separating case.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-logic-within-foundational-reality",
+          "sectionId": "section-logic-conceivability-and-concrete-foundation",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "Objective necessary principles of logic may belong to reality's foundational layer, with human reasoning tracking rules that remain true independently of human minds.",
+          "sourceSpan": {
+            "startEvent": 1120,
+            "endEvent": 1192,
+            "excerpt": "us to a foundational layer because if the rules of reason or the rules of logic have to be there then those rules of logic could fit into the foundation of existence as a necessary automatically actual firm reality and so what I'm trying to do is sort of paint paint a picture that and and I know this is this is this is contentious but I mean it's it's one that I've come to kind"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Rasmussen develops the logical-landscape terminology at length and closes by directly inviting Clifton's reaction to the proposed picture.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-central-necessity-content"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-independence-with-modal-contingency"
+            ],
+            "components": [
+              {
+                "componentId": "pro-logic-within-foundational-reality-component-01",
+                "targetMoveId": "con-independence-with-modal-contingency",
+                "text": "The decisive challenge is whether independence can coexist with failure to exist in every possible world.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move introduces necessary logical principles into foundational reality but does not explain why an independent concrete foundation must exist across worlds."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The objective-logic proposal is recoverable, but language about logic fitting into or constituting the foundation remains partly unstable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The repeated language of may, could, and painting a picture appropriately limits the proposal to a possible integration."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It directly supports the central pro necessity-content burden by locating necessary logic within foundational reality, albeit incompletely."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move develops a positive metaphysical picture without materially representing the preceding skeptical model."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "It is issue-bearing modal material, yet it leaves the target's decisive independence-versus-necessity distinction uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt places rules of reason and logic within a necessary, automatically actual foundation while presenting the claim as a proposed picture.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-logic-language-not-ontology",
+          "sectionId": "section-logic-conceivability-and-concrete-foundation",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "Logical principles may govern statements and inference rather than constitute an ontological structure embedded in reality, because contradictions characterize claims rather than concrete objects such as rocks or clocks.",
+          "sourceSpan": {
+            "startEvent": 1199,
+            "endEvent": 1222,
+            "excerpt": "of logic is something we've din to the fabric of reality it's not it's not something that we did or just have discovered empirically it's I think that logic are you never get a I have a three-year-old who's trying to get in here contradictions exist statements they don't exist in rocks you know or clocks and so it seems to me that the rules of inference law of non-contradiction"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Clifton begins by checking his understanding, gives his linguistic conception of logic, and anticipates Rasmussen's immediate rejoinder at the end.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-central-abstract-concrete-gap"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-logic-within-foundational-reality"
+            ],
+            "components": [
+              {
+                "componentId": "con-logic-language-not-ontology-component-01",
+                "targetMoveId": "pro-logic-within-foundational-reality",
+                "text": "The decisive inference moves from necessary logical rules to an ontological structure within foundational reality.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply diagnoses a category shift from constraints on statements and inference to constituents of concrete ontology."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between statements, inference rules, and concrete objects is clearly drawn and appropriately qualified as uncertainty."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move uses seems and not sure to present a category objection without overstating that all realist accounts of logic are impossible."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Logical principles may be objective features of reality rather than merely linguistic conventions.",
+            "decisiveQualification": "Objectivity alone does not show that they are concrete ontological constituents or a causal foundation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central con burden requiring a bridge from necessary logical truths to concrete foundational ontology."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The reply preserves mind-independence while accurately distinguishing it from the stronger ontological conclusion it challenges."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly targets the decisive abstract-to-ontological inference and states why the proposed bridge may fail."
+            }
+          },
+          "evidenceBasis": "The excerpt locates contradictions in statements rather than rocks or clocks and questions whether inference rules form an ontological structure.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-abstract-concrete-necessity-gap",
+          "sectionId": "section-logic-conceivability-and-concrete-foundation",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "Although denial-generated contradiction can explain the necessity of abstract truths such as arithmetic, no analogous fact has been identified that makes a concrete being such as God unable not to exist.",
+          "sourceSpan": {
+            "startEvent": 1452,
+            "endEvent": 1477,
+            "excerpt": "say because it's denial literally entails nonsense and so it two plus two equals four has to be true because it there is actually a fact about the world that is making two plus two equals four necessarily true mm-hmm I I can't find a way to apply that to a concrete necessary being like God there's there's nothing there to do the work of me I mean we know that God does not exist"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Clifton explicitly proposes the abstract-concrete distinction and presents the inability to find an analogous explanation for God's necessity as his objection.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-central-abstract-concrete-gap"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-logic-within-foundational-reality"
+            ],
+            "components": [
+              {
+                "componentId": "con-abstract-concrete-necessity-gap-component-01",
+                "targetMoveId": "pro-logic-within-foundational-reality",
+                "text": "Whether the necessity of abstract truths supports the necessary existence of a concrete being.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-abstract-concrete-necessity-gap-component-02",
+                "targetMoveId": "pro-logic-within-foundational-reality",
+                "text": "Whether denial-generated contradiction supplies an analogous necessity-maker for God.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly grants a contradiction-based account for arithmetic and then identifies the absence of an analogous fact for a concrete deity, directly contacting the proposed logical bridge."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The arithmetic example, denial-based necessity, and inability to transfer that account to God are all clearly delimited."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker claims only an inability to identify an analogous fact and does not infer that no such account is possible."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Concrete necessity might be grounded by an undiscovered contradiction analogous to arithmetic denial.",
+            "decisiveQualification": "No such contradiction or concrete necessity-making fact has yet been supplied."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The abstract-concrete distinction is explicit and the demand for an analogous necessity-maker follows coherently from the comparison."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly and strongly supports the central con abstract-concrete-gap burden."
+            },
+            "representationalCharity": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the decisive abstract-to-concrete inference and states the missing analogous warrant, making it a highly responsive full answer."
+            }
+          },
+          "evidenceBasis": "The excerpt explains arithmetic necessity through contradiction upon denial and explicitly says no comparable fact has been found for a concrete God.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-conceivability-hidden-contradiction",
+          "sectionId": "section-logic-conceivability-and-concrete-foundation",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "Conceivability of a godless world does not establish genuine possibility because contradictions can emerge only through extended inference, while the contingency argument may independently indicate such a contradiction.",
+          "sourceSpan": {
+            "startEvent": 1571,
+            "endEvent": 1619,
+            "excerpt": "world in which there's no God I think that inference is too quick right tires yeah that you would be seeing all the possible chains of inferences and I think it would be more proper to say I just don't see it one way or the other at present which i think is maybe the position that you're in but then the argument from contingency could be an independent reason to think that even if you don't see a contradiction"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Following Clifton's concession, Rasmussen extends the proposition argument and explicitly applies it to imagined godless worlds and the contingency argument.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-pro-subsidiary-conceivability"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-abstract-concrete-necessity-gap",
+              "con-logic-language-not-ontology"
+            ],
+            "components": [
+              {
+                "componentId": "pro-conceivability-hidden-contradiction-component-01",
+                "targetMoveId": "con-abstract-concrete-necessity-gap",
+                "text": "The decisive challenge is the absence of an identified contradiction in denying a concrete necessary being.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-conceivability-hidden-contradiction-component-02",
+                "targetMoveId": "con-logic-language-not-ontology",
+                "text": "The earlier challenge denies that logical rules constitute concrete ontological structure.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly cautions that an unseen contradiction may emerge through extended inference, but it does not provide the missing concrete bridge."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between not seeing a contradiction and establishing possibility is clearly and cautiously stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move expressly recommends suspension of judgment and offers the contingency argument only as a possible independent reason."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A godless world appears conceivable and therefore may be genuinely possible.",
+            "decisiveQualification": "Apparent conceivability does not survey every inferential consequence or exclude hidden contradiction."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The conceivability-versus-possibility distinction is coherent, but appealing back to the contingency argument risks leaving the concrete bridge unestablished."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "Extended inferential chains support caution about conceivability, though no particular hidden contradiction is independently exhibited."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary pro burden concerning conceivability, without completing the central concrete-necessity bridge."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It contacts the epistemic force of the missing contradiction while leaving the positive abstract-to-concrete warrant unresolved."
+            }
+          },
+          "evidenceBasis": "The excerpt says a godless world's apparent conceivability may overlook extended inference chains and recommends uncertainty pending independent argument.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-bruteness-does-not-entail-necessity",
+          "sectionId": "section-fundamentality-and-modal-necessity",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "A brute or unexplained foundation need not exist in every possible world, so moving from explanatory fundamentality to necessary existence is unwarranted.",
+          "sourceSpan": {
+            "startEvent": 1778,
+            "endEvent": 1811,
+            "excerpt": "leap from brute to necessity as in existing in all possible worlds and you seemed fine with my having that intuition depending on what you mean by possible if it's just like a mere conceivable then we're okay we're doing that yeah so if if you can have something that is Brut if you could say that okay well maybe God is that Brut thing to me that's not that's not God existing of necessity anymore that's just God happening to exist"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Clifton frames the passage around his own intuition, his difficulty with the inference, and its consequences for the contingency argument.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-central-independence-contingency"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-brute-contingency-worse-than-necessity",
+              "pro-conceivability-hidden-contradiction"
+            ],
+            "components": [
+              {
+                "componentId": "con-bruteness-does-not-entail-necessity-component-01",
+                "targetMoveId": "pro-brute-contingency-worse-than-necessity",
+                "text": "Whether an unexplained foundational endpoint must exist in every possible world.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-bruteness-does-not-entail-necessity-component-02",
+                "targetMoveId": "pro-conceivability-hidden-contradiction",
+                "text": "Whether mere conceivability determines genuine modal possibility.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-bruteness-does-not-entail-necessity-component-03",
+                "targetMoveId": "pro-brute-contingency-worse-than-necessity",
+                "text": "Whether brute contingency is explanatorily worse than brute necessity.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly denies the move from bruteness to all-world necessity and acknowledges a qualification about conceivability, but it leaves the comparative explanatory-cost claim largely unanswered."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move carefully distinguishes brute existence, necessity across worlds, and mere conceivability as possible modal standards."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker presents the separation as an intuition conditional on the meaning of possible and avoids claiming a modal proof."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Bruteness may describe an unexplained nature that is itself necessary.",
+            "decisiveQualification": "No explanationlessness-to-cross-world-existence entailment has been established merely by using the word brute."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The nonentailment between absence of further explanation and existence in every world is clearly and coherently stated."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central con burden separating fundamentality and unexplainedness from modal necessity."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a strong partial answer contacting the decisive modal inference while not resolving the separate explanatory asymmetry."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly calls the move from brute existence to all-world existence a leap and contrasts necessity with merely happening to exist.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-bruteness-compatible-with-necessity",
+          "sectionId": "section-fundamentality-and-modal-necessity",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "Calling a foundation brute means only that it has no further explanation; a necessary nature can still distinguish that foundation from ordinary contingent and dependent things.",
+          "sourceSpan": {
+            "startEvent": 1811,
+            "endEvent": 1819,
+            "excerpt": "contingency well so just to clarify by Brut I don't mean contingent or you know by brood I just mean there's no further explanation and my thought is that if it had a necessary nature then it would be distinct from the kinds of things like the dent in your car yeah that would have a further explanation that was kind of my feeling yeah so but I'm coming"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The explicit clarification of the intended meaning of brute answers Clifton's immediately preceding formulation of Rasmussen's position.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-central-necessity-content"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-bruteness-does-not-entail-necessity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-bruteness-compatible-with-necessity-component-01",
+                "targetMoveId": "con-bruteness-does-not-entail-necessity",
+                "text": "What warrants moving from an unexplained foundation to its necessary existence.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-bruteness-compatible-with-necessity-component-02",
+                "targetMoveId": "con-bruteness-does-not-entail-necessity",
+                "text": "Whether calling something brute already means calling it contingent.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The clarification correctly denies that bruteness semantically entails contingency and states compatibility with necessary nature, but it does not supply the requested warrant from fundamentality to necessity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Brute is expressly defined as having no further explanation and explicitly distinguished from contingent."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The formulation says if it had a necessary nature and presents the distinction as the speaker's thought rather than an established conclusion."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The skeptic may be denying entailment, not claiming that brute and necessary are incompatible.",
+            "decisiveQualification": "Compatibility does not answer the demand for a warrant from bruteness or fundamentality to necessity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It supports the central pro necessity-content burden by clarifying compatibility, though it does not complete the required route."
+            },
+            "representationalCharity": {
+              "value": 69,
+              "rationale": "The clarification is fair as terminology, but it partially answers a stronger incompatibility claim than the preceding nonentailment challenge required."
+            },
+            "responsiveness": {
+              "value": 70,
+              "rationale": "Within relevant nonanswers, it explicitly contacts a secondary terminological component while leaving the decisive inferential demand unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt defines brute solely as lacking further explanation and conditionally contrasts a necessary nature with ordinary explainable contingent things.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-brute-parity-universe-and-god",
+          "sectionId": "section-global-inference-versus-brute-foundation",
+          "side": "con",
+          "speaker": "Scott Clifton",
+          "moveKind": "reply",
+          "proposition": "Necessary existence supplies no genuine explanation of why God exists, while comparable unexplained bruteness can instead be assigned to the universe.",
+          "sourceSpan": {
+            "startEvent": 1820,
+            "endEvent": 1851,
+            "excerpt": "necessary existence is any kind of explanation because I don't think it's essentially doing any explaining it's not actually helping me understand why God exists instead of not existing and so if we can go as far see ya maybe we haven't made it this far though in the conversation but if we can say that listen there may be God just exists it may be possible that there are possible worlds where where God doesn't exist"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Clifton speaks in the first person about his doubts, contrasts God with the universe, and concludes that he rejects the relevant stronger necessity.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-con-motion-block-transition"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-bruteness-compatible-with-necessity",
+              "pro-brute-contingency-worse-than-necessity",
+              "pro-principle-explanation-outside-totality"
+            ],
+            "components": [
+              {
+                "componentId": "con-brute-parity-universe-and-god-component-01",
+                "targetMoveId": "pro-bruteness-compatible-with-necessity",
+                "text": "Whether necessary nature genuinely explains the foundation rather than merely redescribing it.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-brute-parity-universe-and-god-component-02",
+                "targetMoveId": "pro-brute-contingency-worse-than-necessity",
+                "text": "Whether brute necessity is explanatorily preferable to brute contingency.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-brute-parity-universe-and-god-component-03",
+                "targetMoveId": "pro-principle-explanation-outside-totality",
+                "text": "Whether the universe itself may be assigned comparable unexplained bruteness.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly challenges necessity's explanatory value and proposes brute-universe parity, thereby contacting the compatibility clarification, the explanatory asymmetry, and the outside-totality endpoint."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The explanatory objection and proposed parity are clear, while the speaker explicitly marks the universe alternative as conditional."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move presents doubt and a conditional alternative rather than claiming certainty that universe and deity are fully equivalent."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Necessary nature may reduce explanatory demand even if it does not causally explain existence.",
+            "decisiveQualification": "The reply's stated demand is understanding why the foundation exists rather than does not exist."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly supports the motion-level con burden by preserving a brute universe as an alternative to the necessary-foundation transition."
+            },
+            "representationalCharity": {
+              "value": 93,
+              "rationale": "The strongest explanatory-asymmetry proposal is preserved and tested against the exact condition required for it to outperform brute-universe parity."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the decisive explanatory comparison and supplies the principal rival endpoint, making it a highly responsive full answer."
+            }
+          },
+          "evidenceBasis": "The excerpt denies that necessary existence helps explain why God exists and conditionally proposes that God may simply exist without further explanation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-robust-foundational-nature",
+          "sectionId": "section-necessity-explanatory-role",
+          "side": "pro",
+          "speaker": "Josh Rasmussen",
+          "moveKind": "reply",
+          "proposition": "If a merely contingent foundation would remain open to a better further explanation, inquiry into reality's structure gives reason to assign its foundation a more robust nature than ordinary contingent objects possess.",
+          "sourceSpan": {
+            "startEvent": 1852,
+            "endEvent": 1889,
+            "excerpt": "so a further explanation would be better than no explanation that gives me some reason to think that it's not merely contingent like your dent but instead has its sort of different kind of nature maybe a kind of more robust nature right and then and then that's a bit of progress here right because now we're saying something about the nature of the foundation it still leaves open"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Rasmussen offers the passage as a conciliatory response and repeatedly labels the proposal as his own thought about the foundation's nature.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-pro-motion-persuasive-transition"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-brute-parity-universe-and-god",
+              "con-necessity-conditional-on-existence"
+            ],
+            "components": [
+              {
+                "componentId": "pro-robust-foundational-nature-component-01",
+                "targetMoveId": "con-brute-parity-universe-and-god",
+                "text": "Whether brute universe and brute deity remain explanatorily on a par.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-robust-foundational-nature-component-02",
+                "targetMoveId": "con-brute-parity-universe-and-god",
+                "text": "Whether availability of a better further explanation counts against mere contingency.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-robust-foundational-nature-component-03",
+                "targetMoveId": "con-necessity-conditional-on-existence",
+                "text": "Whether robust nature explains the foundation's actuality.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts parity by arguing that a merely contingent foundation remains open to a better explanation and therefore gives some reason for a more robust nature, but it leaves the exact necessity and actuality bridge open."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The abductive comparison is recoverable, though more robust nature is intentionally left less precise than necessary existence."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move claims only some reason and explicitly states that the resulting progress still leaves matters open."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A contingent foundation may simply be brute, with no available or required further explanation.",
+            "decisiveQualification": "The reply argues only that a further explanation would be better, not that the brute alternative is incoherent."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 99,
+              "rationale": "The move directly advances the motion-level transition by offering comparative reason beyond a merely contingent brute foundation."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The alternative is treated as live and answered by a limited abductive preference rather than caricatured as impossible."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a strong partial answer because it directly addresses explanatory parity while expressly conceding that further questions about the foundation remain."
+            }
+          },
+          "evidenceBasis": "The excerpt states that further explanation is better than none, infers reason against a merely contingent foundation, and expressly leaves further questions open.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden-relevance findings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured criterion changes completion of a named pro bridge.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not change pro burden completion independently."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden-relevance findings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured criterion changes completion of a named con bridge.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not change con burden completion independently."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-explanatory-principle-and-totality",
+          "title": "The explanatory principle and its application to total contingent reality",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "pro-totality-anti-circular-foundation",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "pro-principle-explanation-outside-totality",
+                  "importance": 3,
+                  "score": 77
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-totality-scope-and-brute-deity",
+                  "importance": 3,
+                  "score": 88
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-global-inference-versus-brute-foundation",
+          "title": "Global explanatory inference versus a brute foundation",
+          "weightPercent": 23,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-global-abductive-inquiry",
+                  "importance": 3,
+                  "score": 87
+                },
+                {
+                  "moveId": "pro-brute-contingency-worse-than-necessity",
+                  "importance": 3,
+                  "score": 80
+                }
+              ]
+            },
+            "con": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "con-boundary-intuitions-and-brute-universe",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "con-brute-parity-universe-and-god",
+                  "importance": 3,
+                  "score": 90
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-necessity-explanatory-role",
+          "title": "The explanatory role of automatic actuality and necessity",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-contingency-generates-explanatory-demand",
+                  "importance": 3,
+                  "score": 74
+                },
+                {
+                  "moveId": "pro-robust-foundational-nature",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-necessity-conditional-on-existence",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-supremacy-necessity-circularity",
+                  "importance": 3,
+                  "score": 90
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-fundamentality-and-modal-necessity",
+          "title": "Fundamentality, independence, and modal necessity",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-graduated-strengths-of-necessity",
+                  "importance": 2,
+                  "score": 75
+                },
+                {
+                  "moveId": "pro-bruteness-compatible-with-necessity",
+                  "importance": 2,
+                  "score": 80
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-independence-with-modal-contingency",
+                  "importance": 3,
+                  "score": 83
+                },
+                {
+                  "moveId": "con-bruteness-does-not-entail-necessity",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-logic-conceivability-and-concrete-foundation",
+          "title": "Logic, conceivability, and a concrete necessary foundation",
+          "weightPercent": 13,
+          "sides": {
+            "pro": {
+              "score": 75,
+              "moves": [
+                {
+                  "moveId": "pro-logic-within-foundational-reality",
+                  "importance": 2,
+                  "score": 71
+                },
+                {
+                  "moveId": "pro-conceivability-hidden-contradiction",
+                  "importance": 2,
+                  "score": 79
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-logic-language-not-ontology",
+                  "importance": 2,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-abstract-concrete-necessity-gap",
+                  "importance": 3,
+                  "score": 90
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 79.23,
+          "burdenCompletionAdjustment": 0,
+          "score": 79
+        },
+        "con": {
+          "weightedSectionMean": 87.17,
+          "burdenCompletionAdjustment": 0,
+          "score": 87
+        }
+      },
+      "winner": "con",
+      "winningMargin": 8
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 19,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 117101,
+  "proposedAdapterSha256": "b33abde83f178f7a881aa075eb70e32de2757d9c2b8308aec15d0c15a922e5e3",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "75",
+    "sections": 5,
+    "moves": 19,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+    "adapterSha256": "b33abde83f178f7a881aa075eb70e32de2757d9c2b8308aec15d0c15a922e5e3",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

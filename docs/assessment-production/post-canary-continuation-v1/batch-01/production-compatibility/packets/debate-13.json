@@ -1,0 +1,1457 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+  "status": "frozen-post-canary-batch-01-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "planningOnly": true,
+  "debateNumber": "13",
+  "debateId": "knechtle-oconnor-christian-morality-2025",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/final-candidates/debate-13.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-01/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-01/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-01/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/EN5Jqu2-2P8/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+    "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+    "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+    "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+    "finalCandidateSha256": "17f80a36516feed4f68dab850eaa3299308289751937155110b5d36ff512d39e",
+    "eventsPath": ".assessment-cache/captions/EN5Jqu2-2P8/events.json",
+    "eventsSha256": "baf0d2e1e1b1b8449bb822dc4d6442f1784b54d31e5fdba5e18b04466eabc7ec",
+    "finalJudgmentSha256": "96f523cb561ba9aff4742642887fe1ceb81450df88a173dd2af98ebf0fa25699"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/knechtle-oconnor-christian-morality-2025.json",
+    "productionLedger": "docs/assessment-ledgers/knechtle-oconnor-christian-morality-2025.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-01-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+    "status": "frozen-post-canary-batch-01-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 1,
+    "debateNumber": "13",
+    "debateId": "knechtle-oconnor-christian-morality-2025",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+      "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+      "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+      "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+      "finalCandidateSha256": "17f80a36516feed4f68dab850eaa3299308289751937155110b5d36ff512d39e",
+      "eventsPath": ".assessment-cache/captions/EN5Jqu2-2P8/events.json",
+      "eventsSha256": "baf0d2e1e1b1b8449bb822dc4d6442f1784b54d31e5fdba5e18b04466eabc7ec",
+      "finalJudgmentSha256": "96f523cb561ba9aff4742642887fe1ceb81450df88a173dd2af98ebf0fa25699"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "13",
+      "debateId": "knechtle-oconnor-christian-morality-2025",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-christian-coherence",
+          "side": "pro",
+          "description": "Establish that Christian teachings about sin, forgiveness, suffering, judgment, social regulation, and human equality form a morally coherent account whose difficult texts can be reconciled with its governing ideals.",
+          "successCriteria": "Show how Christianity grounds forgiveness and hope, gives a coherent account of suffering and judgment, and distinguishes enduring moral commitments from context-specific legal or congregational accommodations concerning slavery and women.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-withstand-objections",
+            "tier": "motion",
+            "description": "Christianity withstands the motion-level objections if its central moral claims remain coherent after the skeptical challenges are addressed."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-redemption",
+              "tier": "central",
+              "description": "Connect human wrongdoing, Christ's sacrifice, forgiveness, judgment, resurrection, and restoration within one account of divine justice and grace."
+            },
+            {
+              "bridgeId": "pro-central-suffering",
+              "tier": "central",
+              "description": "Explain why Christian hope and divine participation in suffering need not be reduced to psychological consolation or evasion of evil."
+            },
+            {
+              "bridgeId": "pro-central-difficult-texts",
+              "tier": "central",
+              "description": "Distinguish divine moral ideals from temporary regulation or locally directed restrictions in contested biblical passages."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-transcendent-meaning",
+              "tier": "subsidiary",
+              "description": "Explain how transcendent commitments can support meaning and well-being beyond self-directed secular individualism."
+            },
+            {
+              "bridgeId": "pro-subsidiary-equality-context",
+              "tier": "subsidiary",
+              "description": "Relate contextual readings of disputed rules to broader Christian commitments concerning human equality and participation."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-skeptical-moral-challenge",
+          "side": "con",
+          "description": "Establish that Christianity's consoling functions and contested portrayals of divine conduct, slavery, and gender hierarchy create unresolved evidential and moral objections to its claims about forgiveness, judgment, and moral authority.",
+          "successCriteria": "Show that alternative explanations weaken appeals to Christianity's benefits and that specific biblical teachings or omissions resist accommodation-based defenses strongly enough to challenge the claimed coherence of divine goodness and moral authority.",
+          "motionBridge": {
+            "bridgeId": "con-motion-unresolved-objections",
+            "tier": "motion",
+            "description": "Christianity fails the motion-level test if its account leaves substantial skeptical objections to truth, divine character, or scriptural morality unresolved."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-consolation-truth",
+              "tier": "central",
+              "description": "Separate Christianity's psychological or social usefulness from evidence that its consoling and salvific claims are true."
+            },
+            {
+              "bridgeId": "con-central-divine-character",
+              "tier": "central",
+              "description": "Test whether portrayals of suffering, divine speech, anger, and judgment are consistent with the asserted moral character of God."
+            },
+            {
+              "bridgeId": "con-central-scriptural-regulation",
+              "tier": "central",
+              "description": "Determine whether biblical slavery provisions merely regulate existing practices or morally authorize avoidable ownership, mistreatment, and family separation."
+            },
+            {
+              "bridgeId": "con-central-gender-authority",
+              "tier": "central",
+              "description": "Determine whether New Testament restrictions concerning women are local measures or evidence of a broader subordinating moral framework."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-secular-causes",
+              "tier": "subsidiary",
+              "description": "Supply technological and social explanations for modern anxiety that compete with explanations centered on religious decline."
+            },
+            {
+              "bridgeId": "con-subsidiary-equality-limits",
+              "tier": "subsidiary",
+              "description": "Test whether statements of spiritual unity entail corresponding changes to earthly institutions and social distinctions."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-meaning-truth-consolation",
+          "title": "Meaning, Well-Being, and the Truth of Consoling Belief",
+          "weightPercent": 18,
+          "rationale": "This issue tests whether religion's association with meaning or well-being supports Christianity's claims, whether secular individualism explains existential distress, and whether consolation instead supplies a non-truth-based explanation for belief."
+        },
+        {
+          "sectionId": "section-sin-suffering-judgment",
+          "title": "Sin, Suffering, Forgiveness, and Divine Judgment",
+          "weightPercent": 27,
+          "rationale": "This issue bears directly on the Christian account of human rebellion, Christ's suffering, forgiveness, resurrection, and final restoration, as well as the objection that biblical responses to suffering portray divine authority as frightening rather than morally reassuring."
+        },
+        {
+          "sectionId": "section-slavery-accommodation",
+          "title": "Slavery, Legal Accommodation, and Moral Endorsement",
+          "weightPercent": 38,
+          "rationale": "This issue tests whether biblical slavery laws are temporary regulations within a fallen society or forms of moral permission, including whether avoidable rules on ownership, punishment, and family separation undermine the accommodation distinction."
+        },
+        {
+          "sectionId": "section-equality-women-context",
+          "title": "Spiritual Equality, Women, and Contextual Restrictions",
+          "weightPercent": 17,
+          "rationale": "This issue examines whether New Testament equality language and contextual interpretation can reconcile restrictions involving enslaved people and women with Christianity's claimed moral ideals and social implications."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-sin-grace-eternal-life",
+          "sectionId": "section-sin-suffering-judgment",
+          "side": "pro",
+          "speaker": "Cliffe Knechtle",
+          "moveKind": "constructive",
+          "proposition": "Human sin brings separation from God, death, and hell, but God offers grace, forgiveness, and eternal life through Jesus's sacrificial death and faith in him.",
+          "sourceSpan": {
+            "startEvent": 11,
+            "endEvent": 19,
+            "excerpt": "times we've done it, at times we haven't. When we don't, that's called sin and it leads to a consequence, separation from God, death, and hell. But God loves us so much that he sent his only son, Jesus, to bleed and die on a cross to forgive us, to offer us a free gift, grace, forgiveness, and eternal life. And now, as we put our faith in him, he gives us that gift and we begin"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The answer directly follows the host's request for Christianity's central message and consistently presents the Christian-defense position.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-redemption"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is a constructive statement of the Christian redemption account and therefore has no earlier opposing move to answer."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The theological sequence is readily recoverable, though the conditions and mechanism connecting faith, sacrifice, forgiveness, and judgment remain compressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move asserts the full theological account as fact while the excerpt supplies exposition rather than independent warrant for its truth."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 54,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (53 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly establishes most elements of the indispensable redemption bridge, though restoration is only briefly stated."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move presents its own constructive doctrine and does not materially characterize a live opposing interpretation."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "Within constructive moves, it clearly supplies the core claimed sequence from sin through sacrifice and forgiveness to eternal life."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly links sin with separation, death, and hell, then links Jesus's death and faith with grace, forgiveness, and eternal life.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-secular-anxiety-alternatives",
+          "sectionId": "section-meaning-truth-consolation",
+          "side": "con",
+          "speaker": "Alex O'Connor",
+          "moveKind": "reply",
+          "proposition": "Technological overload, social media, and constant communication provide substantial alternative explanations for modern anxiety and loss of meaning, weakening attempts to attribute those conditions confidently to secularism or atheism.",
+          "sourceSpan": {
+            "startEvent": 45,
+            "endEvent": 58,
+            "excerpt": "meaning crisis, existentialism, and I wonder how confidently you can attribute that to something like secularism or atheism, as opposed to, say, the unimaginable shift in our communication with things like social media. If I sort of analyze my daily life and think, well, if I'm feeling anxious or depressed, why is that? Is it because I haven't been to church today, because I don't believe in God? Or is it because I've just scrolled through a news"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The skeptical interviewer explicitly challenges the preceding revival account and contrasts religious decline with modern communications pressures.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-secular-causes"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "pro-sin-grace-eternal-life"
+            ],
+            "components": [
+              {
+                "componentId": "con-secular-anxiety-alternatives-component-01",
+                "targetMoveId": "pro-sin-grace-eternal-life",
+                "text": "Whether Christianity's account of sin, sacrifice, forgiveness, and eternal life is coherent or warranted.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The technological explanation concerns modern anxiety and religious decline, but it does not contact the earlier move's decisive redemption claim."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move clearly offers technological and communicative pressures as competing explanations and expressly frames the conclusion as a limit on confidence."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "It advances alternatives as reasons for caution rather than claiming they uniquely or conclusively explain modern anxiety."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religious decline or secular individualism substantially contributes to the modern meaning crisis.",
+            "decisiveQualification": "Technological overload can be an additional cause without excluding a substantial secularization effect."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The existence of salient rival causes coherently weakens confident single-cause attribution, with only the comparative-strength step left unquantified."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "Within the subsidiary tier, it directly supplies the intended secular rival causes, though it does not establish their comparative magnitude."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The challenge fairly questions confident attribution through concrete rivals, though it does not fully address a multicausal religious-decline account."
+            },
+            "responsiveness": {
+              "value": 56,
+              "rationale": "Within relevant nonanswers, it offers substantial issue-bearing contrary material but leaves the targeted doctrinal demand untouched."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts church attendance and belief with scrolling news and transformed communication as immediate possible sources of anxiety and depression.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-transcendence-wellbeing-meaning",
+          "sectionId": "section-meaning-truth-consolation",
+          "side": "pro",
+          "speaker": "Cliffe Knechtle",
+          "moveKind": "reply",
+          "proposition": "Religious practice is associated with health and well-being, while secularism's focus on individualism and the self rather than something higher contributes to a crisis of meaning.",
+          "sourceSpan": {
+            "startEvent": 59,
+            "endEvent": 85,
+            "excerpt": "when the nation really elevated God and church. And then it kind of shifted to patriotism, focusing on country and fighting for your country. So still something outside of yourself. But now secularism has poisoned our nation because it brings a high level of individualism and a focus on the self rather than something higher. And by doing so, that's why there's a meaning crisis"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The Christian speaker answers the skeptic by invoking studies of church attendance and then advances an explicit critique of secular individualism.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-transcendent-meaning"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-secular-anxiety-alternatives"
+            ],
+            "components": [
+              {
+                "componentId": "pro-transcendence-wellbeing-meaning-component-01",
+                "targetMoveId": "con-secular-anxiety-alternatives",
+                "text": "Whether technological pressures prevent attributing the meaning crisis substantially to secularism and self-focused individualism.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-transcendence-wellbeing-meaning-component-02",
+                "targetMoveId": "con-secular-anxiety-alternatives",
+                "text": "Whether religious practice has an independently supported association with health and well-being.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the rival-cause challenge by offering religious-practice associations and a causal account centered on secular individualism, though it does not compare the proposed causes rigorously."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The claim is recoverable, but broad terms such as secularism, individualism, and meaning crisis shift between cultural description and asserted causal mechanism."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical causal language exceeds the excerpt's general study reference and historical narrative, with no acknowledgment of confounding or rival causes."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Social media, constant communication, and technological overload may better explain present anxiety than religious decline.",
+            "decisiveQualification": "A religious well-being association does not establish that secularism causes distress or defeat technological confounding."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (66 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 61,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (58 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it directly advances reasons against the rival explanation but leaves comparative causal strength underdeveloped."
+            }
+          },
+          "evidenceBasis": "The excerpt asserts that secularism elevates individualism and self-focus over higher commitments and identifies this shift as the reason for a meaning crisis.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-consolation-not-truth",
+          "sectionId": "section-meaning-truth-consolation",
+          "side": "con",
+          "speaker": "Alex O'Connor",
+          "moveKind": "reply",
+          "proposition": "Christianity's capacity to relieve suffering and existential dread can itself explain the appeal and persistence of its salvific story without establishing that the story is true.",
+          "sourceSpan": {
+            "startEvent": 175,
+            "endEvent": 197,
+            "excerpt": "a story we can tell ourselves, which will help us overcome that. And there are two theses here. One is that that's because it's true, and this is how the world is supposed to be. And one is that, well, it's because of all of the suffering and the meaninglessness that people have created this story of Christianity to overcome it. I mean, my suspicion of a position almost exactly"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The skeptic frames an extended challenge in his own analytical voice and expressly contrasts truth with human invention for psychological consolation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-consolation-truth"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-transcendence-wellbeing-meaning",
+              "pro-sin-grace-eternal-life"
+            ],
+            "components": [
+              {
+                "componentId": "con-consolation-not-truth-component-01",
+                "targetMoveId": "pro-transcendence-wellbeing-meaning",
+                "text": "Whether Christianity's benefits for meaning and well-being provide support for its salvific claims being true.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-consolation-not-truth-component-02",
+                "targetMoveId": "pro-sin-grace-eternal-life",
+                "text": "Whether the appealing account of forgiveness and eternal life is independently established rather than explained by its consoling convenience.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply explicitly identifies the usefulness-to-truth inference as defective and states the consequence that consolation can explain belief without verifying Christianity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between consoling usefulness and truth is explicit, and the speaker labels the convenience-based account as a suspicion rather than a demonstration."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move cautiously presents psychological invention as one explanatory possibility and does not claim that convenience logically proves falsehood."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A belief may be consoling and nevertheless true, with consolation reflecting rather than explaining away reality.",
+            "decisiveQualification": "Convenience alone does not determine falsity; it supplies a rival causal explanation that weakens benefit-based confirmation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly addresses the indispensable separation between psychological consolation and evidential support for Christian truth."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The move preserves the distinction between suspicion and disproof and fairly targets the evidential inference rather than simply declaring consoling belief false."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it expressly contacts the decisive inference and articulates a clear alternative explanation of the same evidence."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly contrasts Christianity being true with humans creating its story to overcome suffering and meaninglessness, while describing the latter as a suspicion.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-suffering-cross-restoration",
+          "sectionId": "section-sin-suffering-judgment",
+          "side": "pro",
+          "speaker": "Cliffe Knechtle",
+          "moveKind": "reply",
+          "proposition": "Christianity confronts suffering by locating disorder in human rebellion, portraying God as suffering humbly in Christ, and offering forgiveness, resurrection, judgment, and eternal restoration.",
+          "sourceSpan": {
+            "startEvent": 198,
+            "endEvent": 243,
+            "excerpt": "Christ, you see that God is a suffering God who becomes a human being and life kicked his teeth in, no question about it. And he suffered, and then he bled and died on a cross. And I think right at that point, you're confronted by one of the most amazing things of God's character, which is his humility. He humbles himself, becomes a human being, suffers in order to provide the ultimate solution for suffering, forgiveness in eternal"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The Christian speaker answers the convenience objection with a sustained biblical account spanning creation, the fall, Job, Christ, Revelation, and eternal life.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-suffering"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-consolation-not-truth"
+            ],
+            "components": [
+              {
+                "componentId": "pro-suffering-cross-restoration-component-01",
+                "targetMoveId": "con-consolation-not-truth",
+                "text": "Whether Christianity merely offers a convenient consoling story rather than confronting suffering in a truth-relevant way.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-suffering-cross-restoration-component-02",
+                "targetMoveId": "con-consolation-not-truth",
+                "text": "Whether Christianity's appeal can be explained by its promise of relief from suffering and meaninglessness.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the consolation challenge by stressing rebellion, divine participation in suffering, judgment, and restoration, but it does not independently establish that this account is true."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The fall, divine suffering, forgiveness, resurrection, judgment, and restoration form a recoverable account, although their evidential rather than doctrinal status remains implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The theological narrative is asserted with certainty while the excerpt offers internal interpretation rather than independent support for its truth."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian suffering and resurrection teachings may be psychologically constructed precisely because they offer ultimate consolation.",
+            "decisiveQualification": "A costly or suffering deity can deepen consolation and therefore does not by itself defeat the genealogical explanation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The narrative integrates rebellion, divine participation, forgiveness, judgment, and restoration, but the transition from participation to ultimate solution remains compressed."
+            },
+            "evidenceWarrant": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, the move substantially advances the suffering bridge by integrating divine participation, forgiveness, resurrection, judgment, and restoration."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (62 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it directly addresses the characterization of Christianity as easy consolation, while the truth-evidence demand remains compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt emphasizes God becoming human, suffering and dying, and presents this humility and forgiveness as Christianity's ultimate response to suffering.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-job-terrifying-submission",
+          "sectionId": "section-sin-suffering-judgment",
+          "side": "con",
+          "speaker": "Alex O'Connor",
+          "moveKind": "reply",
+          "proposition": "God's whirlwind speech in Job appears angry and terrifying rather than loving or consoling, and Job's repentance resembles fear-driven submission instead of a morally reassuring answer to suffering.",
+          "sourceSpan": {
+            "startEvent": 358,
+            "endEvent": 391,
+            "excerpt": "Job. And he has God say, instead of, you know, gird up thy loins, I will question you, and you'll give me an answer. He says, you know, stand up like a man. I'm going to ask you some questions. Please instruct me. That's what he says. Please instruct me. It's almost sarcastic, right? Because the feeling that you get from God here is like this terrifying rant, right? It doesn't scream love"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The skeptic directly contests the Christian interpretation of Job by closely describing God's speech, tone, imagery, and Job's submissive reaction.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-divine-character"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-suffering-cross-restoration"
+            ],
+            "components": [
+              {
+                "componentId": "con-job-terrifying-submission-component-01",
+                "targetMoveId": "pro-suffering-cross-restoration",
+                "text": "Whether the Christian treatment of Job and suffering displays a loving divine character and supplies moral reassurance.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-job-terrifying-submission-component-02",
+                "targetMoveId": "pro-suffering-cross-restoration",
+                "text": "Whether Job's response reflects warranted trust rather than fear-driven submission before overwhelming power.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly contests the favorable interpretation of Job through the speech's threatening language and Job's fearful reaction, although it does not answer the broader cross-and-restoration account."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move consistently limits itself to how the whirlwind speech appears and characterizes the fear-based interpretation as an evaluative reading."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Terms such as appears, feeling, and almost appropriately calibrate the interpretive conclusion to the quoted and paraphrased textual features."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "God's questions humble limited human understanding rather than constitute an angry refusal to answer suffering.",
+            "decisiveQualification": "Epistemic humility may explain the questioning while the intimidating rhetoric and Job's fearful response still require moral explanation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly tests whether a major biblical portrayal of divine response to suffering fits asserted divine moral character."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The move recognizes the speech's interrogative purpose but foregrounds its frightening force; it could more fully address the wisdom-and-humility interpretation."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "Within partial answers, it contacts a decisive divine-character component but leaves the broader Christological and restorative components unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt cites God's demanding questions and sarcastic-sounding request for instruction, describing the speech as terrifying rather than expressive of love.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-slavery-property-permission",
+          "sectionId": "section-slavery-accommodation",
+          "side": "con",
+          "speaker": "Alex O'Connor",
+          "moveKind": "reply",
+          "proposition": "Biblical provisions permitting the purchase of foreign slaves and withholding punishment when a beaten slave survives appear to authorize ownership and severe mistreatment, making divine regulation difficult to distinguish from moral condonation.",
+          "sourceSpan": {
+            "startEvent": 674,
+            "endEvent": 712,
+            "excerpt": "slave is his property. And where he says, your male and female slaves may come from the nations around you. From them, you may buy and sell slaves. You may also purchase some of the temporary residents living among you and members of their clan. But you must not rule over your fellow Israelites ruthlessly. Clearly, here, we're dealing with the ownership of other human beings as"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The skeptic introduces the slavery objection, quotes and paraphrases relevant legal provisions, acknowledges historical distinctions, and asks what God is doing in them.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-scriptural-regulation"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "pro-suffering-cross-restoration"
+            ],
+            "components": [
+              {
+                "componentId": "con-slavery-property-permission-component-01",
+                "targetMoveId": "pro-suffering-cross-restoration",
+                "text": "Whether divine suffering, forgiveness, resurrection, and restoration coherently answer the problem of suffering.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The slavery provisions raise a major motion-relevant moral objection but do not contact the decisive components of the earlier suffering-and-restoration move."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The cited permissions, ownership language, punishment rule, and limited conclusion about apparent condonation are all clearly distinguished and recoverable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move uses the provisions to make regulation difficult to distinguish from condonation while acknowledging historical distinctions and inviting disagreement."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The laws restrict harms within an entrenched institution without endorsing slavery as an ideal.",
+            "decisiveQualification": "Some cited provisions appear discretionary and ownership-affirming, so accommodation requires explaining why less harmful restrictions were not imposed."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly reaches the indispensable question whether biblical slavery rules regulate an evil or morally authorize ownership and abuse."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The move acknowledges historical and regulatory distinctions yet identifies specific textual permissions that remain troublesome under the strongest accommodation reading."
+            },
+            "responsiveness": {
+              "value": 57,
+              "rationale": "Within relevant nonanswers, the move is substantial and issue-bearing, but it does not answer the selected earlier proposition."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies purchase of foreign slaves, designation of a slave as property, and nonpunishment when a beaten slave survives as concrete permissions.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-slavery-law-accommodation",
+          "sectionId": "section-slavery-accommodation",
+          "side": "pro",
+          "speaker": "Cliffe Knechtle",
+          "moveKind": "reply",
+          "proposition": "Old Testament slavery laws are instructions regulating life in a hard-hearted, fallen society rather than approval of slavery, analogous to permitted divorce departing from the creation ideal.",
+          "sourceSpan": {
+            "startEvent": 713,
+            "endEvent": 729,
+            "excerpt": "hearts were hard. It gets right back to the book of Job. We live in an unfair, cursed, messed up world. And unfortunately, if there's been adultery, divorce is permissible before God, but that is not the way it was from the beginning. From Genesis 2, 24, for this reason, a man shall leave his father and mother, be united to his wife, and the two shall become one flesh. So remember, those laws in the Old Testament are instructions, not approval"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The Christian speaker gives an immediate direct answer and develops an analogy to Jesus's explanation of Mosaic divorce legislation in Matthew.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-difficult-texts"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-slavery-property-permission",
+              "con-job-terrifying-submission"
+            ],
+            "components": [
+              {
+                "componentId": "pro-slavery-law-accommodation-component-01",
+                "targetMoveId": "con-slavery-property-permission",
+                "text": "Whether biblical slavery regulations constitute moral approval of slavery rather than constrained instruction in a fallen society.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-slavery-law-accommodation-component-02",
+                "targetMoveId": "con-slavery-property-permission",
+                "text": "Why the specific ownership, purchase, and beating provisions were morally permissible accommodations.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-slavery-law-accommodation-component-03",
+                "targetMoveId": "con-job-terrifying-submission",
+                "text": "Whether Job portrays divine authority as terrifying rather than loving and morally reassuring.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the regulation-versus-approval distinction through the divorce analogy, but does not explain the particular slavery permissions or why less harmful rules were unavailable."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between temporary instruction and moral approval is explicit, stable, and illustrated by a clearly identified analogy."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The conclusion that the laws are instruction rather than approval is categorical despite the analogy not establishing why these particular permissions were necessary."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Some slavery provisions do more than mitigate an unavoidable practice by affirmatively permitting ownership, purchase, punishment, or family separation.",
+            "decisiveQualification": "A general accommodation category does not explain each avoidable permission or show that regulation lacks moral authorization."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (71 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly advances the difficult-texts bridge by distinguishing an asserted creation ideal from temporary legal accommodation."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "Within partial answers, it contacts the general decisive distinction but leaves the objection's specific ownership, beating, and purchase provisions unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes hard hearts, a fallen world, permitted divorce, and the Genesis marriage ideal to argue that Old Testament laws can instruct without approving.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-slavery-family-separation",
+          "sectionId": "section-slavery-accommodation",
+          "side": "con",
+          "speaker": "Alex O'Connor",
+          "moveKind": "reply",
+          "proposition": "Even if ancient society could not abolish slavery immediately, God could have required a freed Hebrew slave's wife and children to leave with him, so the family-separation rule cannot be defended as an unavoidable accommodation.",
+          "sourceSpan": {
+            "startEvent": 730,
+            "endEvent": 759,
+            "excerpt": "abolish slavery. Maybe the society just couldn't do without it, whatever the reason may be. It seems to me that it wouldn't have been too much to ask for God to say, if he has a wife and children, then when he goes free, his wife and kids should go with him, because I'm a God who believes in the family. I believe in marriage. I believe in the proper upraising of children, and so if you're going to let that man"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The skeptic explicitly acknowledges the accommodation defense and then constructs a detailed internal counterexample from the Exodus family and lifetime-servitude provisions.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-scriptural-regulation"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-slavery-law-accommodation"
+            ],
+            "components": [
+              {
+                "componentId": "con-slavery-family-separation-component-01",
+                "targetMoveId": "pro-slavery-law-accommodation",
+                "text": "Whether the challenged slavery rules were necessary accommodations to social hardness rather than avoidable moral permissions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-slavery-family-separation-component-02",
+                "targetMoveId": "pro-slavery-law-accommodation",
+                "text": "Whether the divorce analogy explains the particular rule allowing a freed man's wife and children to remain with the owner.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply grants accommodation arguendo, isolates an apparently avoidable family-separation rule, and states why that counterexample defeats the generic necessity inference."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The hypothetical concession, proposed alternative rule, and conclusion about avoidability are sharply bounded and consistently expressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move conditionally grants possible systemic necessity and makes the narrower claim that preserving the enslaved family was still feasible."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Ancient economic and household structures might make immediate abolition or universal release impracticable.",
+            "decisiveQualification": "The narrower family-preservation command appears compatible with continued slavery and therefore avoids relying on immediate abolition."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 94,
+              "rationale": "The internal counterexample is explicit and powerful: even granting systemic accommodation, a narrower family-preservation requirement appears available."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly tests the accommodation bridge's necessity by identifying a specific apparently avoidable form of family separation."
+            },
+            "representationalCharity": {
+              "value": 95,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (95 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it expressly targets the defense's key inference and supplies a concrete internal counterexample with its defeating consequence."
+            }
+          },
+          "evidenceBasis": "The excerpt conditionally grants that slavery might not be immediately abolishable, then proposes that a wife and children should accompany the freed man.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-galatians-spiritual-unity-limit",
+          "sectionId": "section-equality-women-context",
+          "side": "con",
+          "speaker": "Alex O'Connor",
+          "moveKind": "reply",
+          "proposition": "Galatians' statement that there is neither slave nor free does not by itself abolish earthly slavery, because the parallel statement that there is neither male nor female does not abolish earthly sex distinctions.",
+          "sourceSpan": {
+            "startEvent": 774,
+            "endEvent": 794,
+            "excerpt": "verse. They say, look, I know that God seemed to suggest that he was sort of maybe pro-slavery, but look, we have it in the scripture. There is neither slave nor free for we're all one in Christ. Well, it also says there's no male or female. There's no male, no female, no slave, no free, no Jew, no Gentile for we're all one in Jesus. If we're supposed to interpret that as God condemning the earthly"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The skeptic directly responds to the Christian appeal to Galatians by applying the verse's parallel clauses consistently and drawing an explicit interpretive conclusion.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-equality-limits"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-slavery-law-accommodation"
+            ],
+            "components": [
+              {
+                "componentId": "con-galatians-spiritual-unity-limit-component-01",
+                "targetMoveId": "pro-slavery-law-accommodation",
+                "text": "Whether broader Christian ideals establish that slavery regulation was not moral approval and points toward earthly abolition.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-galatians-spiritual-unity-limit-component-02",
+                "targetMoveId": "pro-slavery-law-accommodation",
+                "text": "Whether Galatians' spiritual unity language entails elimination of the corresponding earthly status distinction.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly limits an equality-based extension of the accommodation defense by applying the verse's parallel clauses consistently, although it does not refute accommodation independently."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move precisely distinguishes spiritual unity language from claims about eliminating earthly institutions or embodied distinctions."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The parallel-clause argument supports a limited interpretive conclusion and does not claim that Galatians positively endorses slavery."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Spiritual equality can generate moral pressure against slavery without literally abolishing every distinction named in the verse.",
+            "decisiveQualification": "The verse may supply an egalitarian principle even if it is not itself a direct institutional command."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within the subsidiary tier, it directly tests the limits of spiritual-equality language for earthly slavery and social distinctions."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 94,
+              "rationale": "Within partial answers, it contacts the equality implication decisively but leaves the divorce analogy and regulatory distinction themselves unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt places slave-free beside male-female in the same verse and argues that eliminating one earthly distinction cannot follow automatically when the other persists.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-corinthians-women-subordination",
+          "sectionId": "section-equality-women-context",
+          "side": "con",
+          "speaker": "Alex O'Connor",
+          "moveKind": "constructive",
+          "proposition": "First Corinthians 14:34–35 directs women to remain silent in churches and be subordinate, presenting a serious New Testament challenge to Christianity's treatment of women.",
+          "sourceSpan": {
+            "startEvent": 888,
+            "endEvent": 895,
+            "excerpt": "I think we should start perhaps with what I think is maybe the most problematic, because it's problematic on various levels, which is 1 Corinthians 14, verses 34 to 35, if you're following along at home. Women should be silent in the churches, for they are not permitted to speak, but should be subordinate, as the law also says. If there is something they want to learn, let them"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The established turn sequence and the direct presentation of a skeptical scriptural challenge identify Alex O'Connor as the speaker.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-gender-authority"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is a constructive New Testament gender-authority objection and therefore has no earlier opposing move to answer."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The passage, directives, institutional setting, and limited conclusion that it presents a serious challenge are all clearly recoverable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker frames the passage as perhaps the most problematic rather than claiming that the excerpt alone conclusively establishes universal Christian subordination."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (90 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly supplies the disputed New Testament restriction indispensable to testing Christian gender authority."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The selected constructive span presents the textual challenge without yet materially characterizing a developed contextual alternative."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies First Corinthians 14:34–35 and quotes the commands that women remain silent, not speak, and be subordinate in churches.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-women-local-context-education",
+          "sectionId": "section-equality-women-context",
+          "side": "pro",
+          "speaker": "Cliffe Knechtle",
+          "moveKind": "reply",
+          "proposition": "Paul's restrictions on women speaking addressed local disorder and lack of education rather than universally barring educated women from teaching, as shown by women praying, prophesying, and Priscilla teaching Apollos.",
+          "sourceSpan": {
+            "startEvent": 896,
+            "endEvent": 916,
+            "excerpt": "is tragic, because they weren't allowed to go to school. But women who have an education are to teach. That's why Priscilla taught the great teacher, preacher, Apollos. So it's fascinating that Paul also writes there, right there in 1 Corinthians, when women pray and prophesy, they're to have their heads covered. Well, what about with you, Paul? Are you schizophrenic? Don't you"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The immediate answer to Alex's request for thoughts, followed by a sustained contextual Christian defense, identifies Cliffe Knechtle as the speaker.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-difficult-texts"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-corinthians-women-subordination"
+            ],
+            "components": [
+              {
+                "componentId": "pro-women-local-context-education-component-01",
+                "targetMoveId": "con-corinthians-women-subordination",
+                "text": "Whether First Corinthians 14 imposes a universal subordinating prohibition on women speaking or teaching in churches.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-women-local-context-education-component-02",
+                "targetMoveId": "con-corinthians-women-subordination",
+                "text": "Whether other Pauline references to women praying, prophesying, and teaching support a local-context interpretation.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly offers a local disorder and education interpretation and cites counterexamples within Pauline material, though the historical premise about schooling is asserted rather than established."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The local-context thesis is clear, but the move shifts from lack of education to disorder without fully specifying which condition governs the restriction."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The internal counterexamples strongly pressure a universal silence rule, but the categorical education-based explanation is not fully established in the excerpt."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The passage expresses a broader subordination rule despite permitting women to pray, prophesy, or teach in limited settings.",
+            "decisiveQualification": "Permission for some female speech defeats absolute silence but does not alone defeat every hierarchical or congregational restriction."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "Priscilla and women praying and prophesying materially support contextual scope, while the local education premise lacks documentation in the excerpt."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it directly supports contextual treatment of a disputed restriction and addresses the core gender-authority challenge."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The reply seriously engages universal silence through countertexts but only partially addresses the strongest subordination language in the challenged passage."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within full answers, it expressly contacts the universal-scope inference and supplies multiple concrete textual considerations for a contextual reading."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes women's historical lack of schooling, Priscilla teaching Apollos, and Paul's acknowledgment of women praying and prophesying.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct debate-wide consequence remains outside the move ratings, response links, relevance judgments, and locked section structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the proposed residual would not change burden completion beyond already scored move-level judgments."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule beyond the individual move and response judgments already recorded.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion remains outside the scored move-level treatment.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values"
+            ],
+            "counterfactual": "Removing the proposed residual would not alter burden completion independently of existing judgments."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-meaning-truth-consolation",
+          "title": "Meaning, Well-Being, and the Truth of Consoling Belief",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 72,
+              "moves": [
+                {
+                  "moveId": "pro-transcendence-wellbeing-meaning",
+                  "importance": 2,
+                  "score": 72
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-secular-anxiety-alternatives",
+                  "importance": 2,
+                  "score": 76
+                },
+                {
+                  "moveId": "con-consolation-not-truth",
+                  "importance": 3,
+                  "score": 89
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-sin-suffering-judgment",
+          "title": "Sin, Suffering, Forgiveness, and Divine Judgment",
+          "weightPercent": 27,
+          "sides": {
+            "pro": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "pro-sin-grace-eternal-life",
+                  "importance": 3,
+                  "score": 75
+                },
+                {
+                  "moveId": "pro-suffering-cross-restoration",
+                  "importance": 3,
+                  "score": 78
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-job-terrifying-submission",
+                  "importance": 3,
+                  "score": 88
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-slavery-accommodation",
+          "title": "Slavery, Legal Accommodation, and Moral Endorsement",
+          "weightPercent": 38,
+          "sides": {
+            "pro": {
+              "score": 73,
+              "moves": [
+                {
+                  "moveId": "pro-slavery-law-accommodation",
+                  "importance": 3,
+                  "score": 73
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-slavery-property-permission",
+                  "importance": 3,
+                  "score": 83
+                },
+                {
+                  "moveId": "con-slavery-family-separation",
+                  "importance": 3,
+                  "score": 93
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-equality-women-context",
+          "title": "Spiritual Equality, Women, and Contextual Restrictions",
+          "weightPercent": 17,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-women-local-context-education",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-galatians-spiritual-unity-limit",
+                  "importance": 2,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-corinthians-women-subordination",
+                  "importance": 3,
+                  "score": 89
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 75.77,
+          "burdenCompletionAdjustment": 0,
+          "score": 76
+        },
+        "con": {
+          "weightedSectionMean": 87.45,
+          "burdenCompletionAdjustment": 0,
+          "score": 87
+        }
+      },
+      "winner": "con",
+      "winningMargin": 11
+    },
+    "audit": {
+      "sections": 4,
+      "moves": 12,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 77779,
+  "proposedAdapterSha256": "eeb1522ffab43a3022e8050c243ba4db2e87d8dee0d7eaedb78ab1114f11908f",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "13",
+    "sections": 4,
+    "moves": 12,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+    "adapterSha256": "eeb1522ffab43a3022e8050c243ba4db2e87d8dee0d7eaedb78ab1114f11908f",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

@@ -1,0 +1,1969 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+  "status": "frozen-post-canary-batch-01-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "planningOnly": true,
+  "debateNumber": "94",
+  "debateId": "swinburne-huemer-theism-coherent-2026",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/final-candidates/debate-94.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-01/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-01/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-01/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/1IkAU6zAYLU/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+    "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+    "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+    "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+    "finalCandidateSha256": "d7f98c43eb393c24f32532bc7012129dc44689ac19538a106e63a7127b12f8bc",
+    "eventsPath": ".assessment-cache/captions/1IkAU6zAYLU/events.json",
+    "eventsSha256": "ee504ccf37fd9b5f769a9f77012aad5ec4e5cefc2a7d08ebb45bad08f0e73412",
+    "finalJudgmentSha256": "ae73a6f5714706179ac7894d75f387473abd258fe9a35382c1cedd9d353d2ec2"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/swinburne-huemer-theism-coherent-2026.json",
+    "productionLedger": "docs/assessment-ledgers/swinburne-huemer-theism-coherent-2026.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-01-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+    "status": "frozen-post-canary-batch-01-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 1,
+    "debateNumber": "94",
+    "debateId": "swinburne-huemer-theism-coherent-2026",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+      "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+      "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+      "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+      "finalCandidateSha256": "d7f98c43eb393c24f32532bc7012129dc44689ac19538a106e63a7127b12f8bc",
+      "eventsPath": ".assessment-cache/captions/1IkAU6zAYLU/events.json",
+      "eventsSha256": "ee504ccf37fd9b5f769a9f77012aad5ec4e5cefc2a7d08ebb45bad08f0e73412",
+      "finalJudgmentSha256": "ae73a6f5714706179ac7894d75f387473abd258fe9a35382c1cedd9d353d2ec2"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "94",
+      "debateId": "swinburne-huemer-theism-coherent-2026",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-coherent-theism-route",
+          "side": "pro",
+          "description": "Establish that the relevant conception of God remains coherent when maximal attributes are defined through genuine logical possibilities, divine knowledge is reconciled with freedom, and apparent bodily, temporal, or infinite-task limitations are distinguished from genuine deficits of power.",
+          "successCriteria": "The route succeeds if it supplies a mutually consistent account of maximal power, knowledge, goodness, embodiment, and temporality that answers the quantitative-infinity objection and preserves a recognizable burden-relevant conception of theism.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-coherent-divine-attributes",
+            "tier": "motion",
+            "description": "Show that the divine attributes relevant to the motion admit a jointly coherent interpretation without requiring impossible quantitative magnitudes."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-maximal-power",
+              "tier": "central",
+              "description": "Define maximal power by the range of logically possible actions and explain why unrestricted ability need not be an impossible quantitative infinity."
+            },
+            {
+              "bridgeId": "pro-central-knowledge-freedom",
+              "tier": "central",
+              "description": "Specify the extent of divine knowledge consistently with divine freedom and explain how any restriction relates to the relevant theistic conception."
+            },
+            {
+              "bridgeId": "pro-central-apparent-inabilities",
+              "tier": "central",
+              "description": "Show that apparent limitations arising from embodiment, temporality, or supertasks concern incoherent descriptions or category distinctions rather than absent genuine powers."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-tradition-method",
+              "tier": "subsidiary",
+              "description": "Connect the defended attribute set to historically or explanatorily relevant theism rather than assuming that every maximal quantitative formulation is mandatory."
+            },
+            {
+              "bridgeId": "pro-subsidiary-goodness-relation",
+              "tier": "subsidiary",
+              "description": "Explain how evaluative knowledge and freedom from conflicting desires can make perfect goodness compatible with the defended account of omnipotence."
+            }
+          ]
+        },
+        {
+          "routeId": "con-incoherent-maximal-theism-route",
+          "side": "con",
+          "description": "Establish that the stipulated maximal conception of God requires impossible infinite quantities of power, knowledge, or intelligence, and show that proposed restrictions or reinterpretations either fail to remove those infinities or generate further conflicts among divine attributes and doctrines.",
+          "successCriteria": "The route succeeds if maximal theism cannot avoid impossible non-extensive infinities without relinquishing motion-relevant attributes, or if its proposed repairs produce contradictions involving freedom, timelessness, embodiment, action, or completed infinite processes.",
+          "motionBridge": {
+            "bridgeId": "con-motion-incoherent-maximal-attributes",
+            "tier": "motion",
+            "description": "Show that the motion-relevant maximal divine attributes require impossible magnitudes or otherwise cannot be jointly instantiated coherently."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-quantitative-infinity",
+              "tier": "central",
+              "description": "Establish that all-powerfulness and comprehensive cognition require unbounded or infinite quantities rather than merely a finite list of action kinds or truths."
+            },
+            {
+              "bridgeId": "con-central-restrictions-insufficient",
+              "tier": "central",
+              "description": "Show that limiting foreknowledge or redescribing actions does not eliminate the infinite power, information, or intelligence implicated by the remaining attributes."
+            },
+            {
+              "bridgeId": "con-central-repair-conflicts",
+              "tier": "central",
+              "description": "Demonstrate that proposed repairs involving timelessness, bodilessness, or temporal-event analysis conflict with other theistic commitments or fail on their own terms."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-extensive-infinity",
+              "tier": "subsidiary",
+              "description": "Distinguish allegedly possible extensive infinities from the impossible quantitative infinities attributed to divine power and cognition."
+            },
+            {
+              "bridgeId": "con-subsidiary-doctrinal-tests",
+              "tier": "subsidiary",
+              "description": "Test abstract coherence defenses against incarnation, changing divine intentions, and completed infinite-action cases that expose their material implications."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "maximal-power-and-quantitative-infinity",
+          "title": "Maximal power and quantitative infinity",
+          "weightPercent": 30,
+          "rationale": "This issue bears directly on whether omnipotence can be understood as a coherent range of abilities or necessarily entails an impossible infinite magnitude of power."
+        },
+        {
+          "sectionId": "divine-knowledge-freedom-and-tradition",
+          "title": "Divine knowledge, freedom, and the relevant theistic conception",
+          "weightPercent": 22,
+          "rationale": "The scope of divine knowledge determines whether omniscience conflicts with freedom and whether restricting foreknowledge preserves the conception of theism placed in issue."
+        },
+        {
+          "sectionId": "actual-infinity-divisibility-and-supertasks",
+          "title": "Actual infinity, divisibility, and supertasks",
+          "weightPercent": 21,
+          "rationale": "Spatial division and the lamp supertask test the parties' competing accounts of actual infinity, temporally extended action, and the implications of unrestricted divine agency."
+        },
+        {
+          "sectionId": "bodilessness-incarnation-and-divine-action",
+          "title": "Bodilessness, incarnation, and divine action",
+          "weightPercent": 14,
+          "rationale": "The relationship between necessary bodilessness and incarnation determines whether bodily inabilities are merely logical exclusions or internal tensions within the relevant theology."
+        },
+        {
+          "sectionId": "timelessness-change-and-foreknowledge",
+          "title": "Timelessness, change, and foreknowledge",
+          "weightPercent": 13,
+          "rationale": "Timelessness offers a possible reconciliation of knowledge and control of the future, while divine changes of intention test whether that reconciliation is internally consistent."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-impossible-quantitative-divine-infinity",
+          "sectionId": "maximal-power-and-quantitative-infinity",
+          "side": "con",
+          "speaker": "Michael Huemer",
+          "moveKind": "constructive",
+          "proposition": "The traditional maximal conception of God is incoherent because infinite power, knowledge, and intelligence would be impossible quantitative, non-extensive infinities.",
+          "sourceSpan": {
+            "startEvent": 156,
+            "endEvent": 341,
+            "excerpt": "quantitative. And then what would God's intelligence be? And it looks like the theist would want to say infinite, right? They wouldn't want to give God any limited amount of intelligence. Perhaps there are other infinite characteristics of God um that could be implied in the traditional conception, but that's enough for now. Okay. And why would we think this is impossible? And you know, just to warm you up, there are some kinds of infinities"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly assigns the opening presentation to Huemer, and the uninterrupted first-person argument continues until his concluding revision of the concept of God.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-incoherent-maximal-attributes"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move directly advances the con motion route by claiming that maximal divine attributes entail impossible quantitative infinities."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The main thesis is recoverable, but the boundary between quantity, non-extensive infinity, and impossibility is not kept fully stable or expressly qualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker presents the impossibility as his argued view, but the broad inference to the traditional conception outruns the excerpt's compressed defense."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Omnipotence and omniscience can denote unrestricted ranges or kinds rather than a single measurable infinite magnitude.",
+            "decisiveQualification": "The critique must establish that the relevant attributes necessarily quantify a non-extensive magnitude, not merely concern infinitely many objects or truths."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The inference is intelligible, but a material bridge from unrestricted attributes to impossible quantitative magnitudes remains insufficiently defended."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "Examples and conceptual comparisons support the thesis, but the necessity claim and historical scope receive limited representative support."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "This is the debate's principal motion-level incoherence claim and directly addresses the route-completion condition."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The argument recognizes some distinctions involving extensive infinity but does not adequately handle the strongest range-based interpretation of divine attributes."
+            },
+            "responsiveness": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The selected span explicitly calls traditional theism impossible because God supposedly has infinite knowledge and power, while the larger locked proposition adds intelligence and the quantitative/non-extensive distinction.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-traditional-theism-need-not-quantify-infinity",
+          "sectionId": "divine-knowledge-freedom-and-tradition",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "reply",
+          "proposition": "Historically authoritative Christian theism need not attribute to God infinity in the disputed quantitative senses, so the impossibility of such quantities does not by itself make the relevant theistic conception incoherent.",
+          "sourceSpan": {
+            "startEvent": 349,
+            "endEvent": 370,
+            "excerpt": "uh the point that there couldn't in these senses be an infinite God, I can't see that is relevant to the Christian view of God. So let's uh look uh let's approach the issue from another way and the way I want to do it is to show that some of the uh traditional uh objections uh to the coherence of theism uh do have a certain force and uh and I have a view about how that they can"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator hands the floor to Swinburne, whose marked response begins at event 349 and directly addresses Huemer's preceding presentation.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-tradition-method"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-impossible-quantitative-divine-infinity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-traditional-theism-need-not-quantify-infinity-component-01",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether the allegedly impossible quantitative infinities are required by the historically relevant Christian conception of God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-traditional-theism-need-not-quantify-infinity-component-02",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether infinite power and knowledge are themselves impossible quantities under Huemer's conceptual argument.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response contacts the applicability of Huemer's conception to Christian theism, but it does not answer the independent argument that such quantitative infinities are impossible."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The historical relevance claim is clear, though the precise breadth of Christian tradition invoked and the conception counted as relevant remain only implicitly bounded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker cautiously says he cannot see the objection's relevance and does not claim to have disproved every quantitative-infinity argument."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Huemer may target a common maximal philosophical conception even if not every Christian authority endorsed every quantitative formulation.",
+            "decisiveQualification": "Showing doctrinal non-unanimity does not by itself show that the motion-relevant maximal conception is irrelevant."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "The move materially supports the subsidiary tradition-method bridge but does not itself settle the central attribute analysis."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The response fairly identifies a scope issue but understates the live possibility that the debate concerns a prominent maximal conception rather than unanimous doctrine."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "This is a partial answer that contacts an important applicability component while leaving the underlying impossibility inference unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt says that impossibility in Huemer's disputed senses is not relevant to the Christian view and proposes approaching traditional coherence objections differently.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-omnipotence-as-greatest-logically-possible-power",
+          "sectionId": "maximal-power-and-quantitative-infinity",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "reply",
+          "proposition": "Omnipotence consists in the greatest logically possible power over genuine actions, not power to realize contradictions, and such power coheres with perfect goodness when evaluative knowledge is unopposed by conflicting desires.",
+          "sourceSpan": {
+            "startEvent": 406,
+            "endEvent": 469,
+            "excerpt": "uh in in um uh Greek it's pantocratto uh which means um all powerful and omnipotence means power over everything. So it's um uh the supposition of it is that it's the greatest possible amount of power uh that um a being can have. Um all the uh uh many of the traditional um theologians said of course that doesn't mean that God can do the logically impossible because uh that's not"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Swinburne remains the uninterrupted speaker and explicitly develops consequences of his account of omnipotence through the conclusion about perfect goodness.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-maximal-power"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-impossible-quantitative-divine-infinity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-omnipotence-as-greatest-logically-possible-power-component-01",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether omnipotence must be an impossible quantity rather than maximal power over genuinely describable, logically possible actions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-omnipotence-as-greatest-logically-possible-power-component-02",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether perfect goodness is coherent with the defended maximal-power account.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-omnipotence-as-greatest-logically-possible-power-component-03",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether infinite knowledge and intelligence are impossible quantitative magnitudes.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response directly reframes power around genuine logical possibilities and adds a goodness account, but it does not yet resolve the parallel quantitative objection concerning cognition."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The logical-impossibility exclusion is express and scoped, though greatest possible amount sometimes sits uneasily beside a range-of-actions interpretation."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The exclusion of contradictions is well qualified, but the claim that this yields a greatest coherent power retains an underdefended bridge."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Huemer's objection concerns unbounded capacity among possible actions, not a demand that God perform contradictions.",
+            "decisiveQualification": "Excluding contradictory descriptions does not alone establish that a greatest possible non-infinite power exists."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly addresses the indispensable central bridge defining maximal divine power."
+            },
+            "representationalCharity": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a strong partial answer contacting the decisive power premise while leaving the knowledge and intelligence branches unresolved."
+            }
+          },
+          "evidenceBasis": "The excerpt defines omnipotence as the greatest possible power and explicitly reports the traditional exclusion of logically impossible descriptions from what God can do.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-foreknowledge-limited-by-divine-freedom",
+          "sectionId": "divine-knowledge-freedom-and-tradition",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "reply",
+          "proposition": "Because advance knowledge of one's own future choices would eliminate freedom, a coherent omnipotent God knows the past and logical possibilities but does not know future free choices.",
+          "sourceSpan": {
+            "startEvent": 470,
+            "endEvent": 533,
+            "excerpt": "knows of all true propositions that they are true. And if we take this literally, it is certainly incompatible with uh omnipotence because uh if you know what you're going to do, you have no option but to do it. Um and therefore um God's freedom is in fact non-existent. Doesn't work altogether the other way round. That is to say, for God to be omnipotent, he needs a very great deal of knowledge. Uh he needs a knowledge of the past"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The same marked Swinburne turn explicitly introduces omniscience as the remaining problem and continues until the moderator ends his allotted time.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-knowledge-freedom"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-impossible-quantitative-divine-infinity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-foreknowledge-limited-by-divine-freedom-component-01",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether coherent divine knowledge must include settled advance knowledge of God's own future free choices.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-foreknowledge-limited-by-divine-freedom-component-02",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether the remaining knowledge of past facts and logical possibilities still constitutes an impossible infinity.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move supplies a freedom-based restriction on foreknowledge and therefore contacts the scope of omniscience, but it leaves Huemer's residual quantitative-infinity objection unanswered."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The excluded category—future free choices—and the retained knowledge of past facts and possibilities are expressly and consistently delineated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The claim that knowing one's future act removes freedom is asserted as necessary without addressing compatibilist or dependence-based alternatives."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Knowledge of a future free choice might track that choice without causally or metaphysically eliminating its freedom.",
+            "decisiveQualification": "The argument needs more than the fixity of true belief to show that advance knowledge removes the agent's relevant alternative possibilities."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 66,
+              "rationale": "The proposed restriction is internally intelligible, but its central inference from foreknowledge to lack of freedom is substantially unsupported."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "The scope proposal is explained, yet the decisive incompatibility of foreknowledge and freedom rests mainly on assertion."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "This directly supplies the central route's account of knowledge and divine freedom."
+            },
+            "representationalCharity": {
+              "value": 65,
+              "rationale": "The response targets a genuine tension but omits the strongest compatibility account separating epistemic certainty from causal determination."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It contacts a decisive knowledge-scope component but remains a partial answer because the quantitative residual is not addressed."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that knowing what one will do leaves no option but to do it, then says omnipotence instead requires extensive knowledge of the past and possibilities.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-no-greatest-finite-power",
+          "sectionId": "maximal-power-and-quantitative-infinity",
+          "side": "con",
+          "speaker": "Michael Huemer",
+          "moveKind": "reply",
+          "proposition": "Greatest-possible power cannot be merely finite because finite power admits indefinitely greater amounts, while the only upper bound would be the disputed infinite quantity.",
+          "sourceSpan": {
+            "startEvent": 537,
+            "endEvent": 618,
+            "excerpt": "finite velocities. Okay? And I think that um you know power is similar. There's no greatest possible amount of power. There's just greater and greater possible amounts going on forever. And if there was such a thing as infinite power, if that was possible, then that would be the greatest possible amount. But there isn't a possibility of infinite power. Or so I claim. Um or what"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly returns the floor to Huemer, who thanks Richard and presents a continuous response until declaring that he has said enough.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-maximal-power"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-omnipotence-as-greatest-logically-possible-power",
+              "pro-traditional-theism-need-not-quantify-infinity",
+              "pro-foreknowledge-limited-by-divine-freedom"
+            ],
+            "components": [
+              {
+                "componentId": "con-no-greatest-finite-power-component-01",
+                "targetMoveId": "pro-omnipotence-as-greatest-logically-possible-power",
+                "text": "Whether a greatest logically possible amount of power exists once an impossible infinite quantity is excluded.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-no-greatest-finite-power-component-02",
+                "targetMoveId": "pro-traditional-theism-need-not-quantify-infinity",
+                "text": "Whether the relevant tradition requires a greatest-power conception.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-no-greatest-finite-power-component-03",
+                "targetMoveId": "pro-foreknowledge-limited-by-divine-freedom",
+                "text": "Whether restricting foreknowledge avoids infinite knowledge.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Huemer expressly diagnoses the missing upper bound in Swinburne's maximal-power definition: every finite amount admits a greater one, while infinity is allegedly unavailable."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The claim is clearly conditional on power behaving as an indefinitely increasable magnitude and expressly distinguishes finite from infinite upper bounds."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker marks the impossibility of infinite power as his claim, but the analogy assumes without full defense that power has the requisite scalar structure."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Maximal power may be ordered by unrestricted action-types rather than by a scalar quantity admitting successive finite increments.",
+            "decisiveQualification": "The no-greatest-finite inference applies only if divine power is appropriately modeled as a single monotonic magnitude."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The reply directly attacks the central maximal-power bridge at its upper-bound premise."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (66 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "The reply explicitly attacks the decisive inference supporting a greatest possible power and states the defeating consequence."
+            }
+          },
+          "evidenceBasis": "The excerpt says there is no greatest possible finite amount of power, only indefinitely greater amounts, and that only possible infinite power could supply the maximum.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-changing-intentions-without-exhaustive-foreknowledge",
+          "sectionId": "timelessness-change-and-foreknowledge",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "reply",
+          "proposition": "Christian tradition permits a temporally responsive God who changes intentions or judgments, so exhaustive foreknowledge is not mandatory for the relevant theistic conception.",
+          "sourceSpan": {
+            "startEvent": 619,
+            "endEvent": 685,
+            "excerpt": "Um I was going to make the point uh that um uh the um Christian tradition is not uh at all unanimous in supposing uh that God has uh omniscience in in the sense that causes trouble. uh because there's quite a bit in the Christian tradition which says that um uh God changes his mind. Um uh there are a number of quotations in in scripture of that. Um my favorite one is is Genesis"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "A new marked Swinburne turn begins at event 619 and runs continuously through his conclusion about what Christian tradition requires.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-tradition-method"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-impossible-quantitative-divine-infinity",
+              "con-no-greatest-finite-power"
+            ],
+            "components": [
+              {
+                "componentId": "pro-changing-intentions-without-exhaustive-foreknowledge-component-01",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether exhaustive foreknowledge is mandatory within the relevant Christian conception of God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-changing-intentions-without-exhaustive-foreknowledge-component-02",
+                "targetMoveId": "con-no-greatest-finite-power",
+                "text": "Whether unrestricted ability can avoid an infinite scalar quantity of power.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the scope of traditional omniscience through a changing-intentions conception, while leaving the intervening no-greatest-power objection unanswered."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The non-unanimity claim is recoverable and qualified, though changing a judgment, changing an intention, and lacking foreknowledge are not fully distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker asserts lack of unanimity rather than universal historical agreement, appropriately limiting the force of the tradition claim."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "The historical claim is asserted without representative sources or detailed comparison among doctrinal traditions."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It materially supports the subsidiary tradition-method bridge rather than directly completing the central knowledge account."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move mainly advances a bounded historical scope claim and does not materially characterize a developed opposing alternative."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "It is a meaningful partial answer to the historical-scope component but does not answer the immediately preceding central power inference."
+            }
+          },
+          "evidenceBasis": "The excerpt says Christian tradition is not unanimous about troublesome omniscience and points to strands according to which God changes his intentions or judgments.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-restricted-foreknowledge-still-infinite",
+          "sectionId": "divine-knowledge-freedom-and-tradition",
+          "side": "con",
+          "speaker": "Michael Huemer",
+          "moveKind": "reply",
+          "proposition": "Excluding future free choices from divine foreknowledge does not avoid infinite cognition, because infinitely many mathematical, past, and present truths remain to be known and integrated.",
+          "sourceSpan": {
+            "startEvent": 691,
+            "endEvent": 771,
+            "excerpt": "future free choices are going to be. Okay. But still the omnisient being should know like everything about the past everything that's fully determined every mathematical truth uh every fact about the current state of the physical world. And that's enough to get you an infinite amount of knowledge. Right? And if the being is also able to integrate that information like use all of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "After the moderator initiates another round, Huemer begins a marked response and develops both points continuously until restating his impossibility conclusion.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-restrictions-insufficient"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-foreknowledge-limited-by-divine-freedom",
+              "pro-changing-intentions-without-exhaustive-foreknowledge",
+              "pro-traditional-theism-need-not-quantify-infinity",
+              "pro-omnipotence-as-greatest-logically-possible-power"
+            ],
+            "components": [
+              {
+                "componentId": "con-restricted-foreknowledge-still-infinite-component-01",
+                "targetMoveId": "pro-foreknowledge-limited-by-divine-freedom",
+                "text": "Whether excluding future free choices removes the infinite quantity of cognition alleged by the con case.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-restricted-foreknowledge-still-infinite-component-02",
+                "targetMoveId": "pro-changing-intentions-without-exhaustive-foreknowledge",
+                "text": "Whether a changing temporal God still possesses infinitely many past, present, and mathematical truths.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-restricted-foreknowledge-still-infinite-component-03",
+                "targetMoveId": "pro-traditional-theism-need-not-quantify-infinity",
+                "text": "Whether this remaining cognition belongs to the relevant conception of God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-restricted-foreknowledge-still-infinite-component-04",
+                "targetMoveId": "pro-omnipotence-as-greatest-logically-possible-power",
+                "text": "Whether the maximal-power account itself avoids quantitative infinity.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly explains why foreknowledge restrictions and temporal responsiveness do not defeat the original cognition objection: infinitely many other truths remain."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The excluded and retained classes of truths are clearly distinguished, and the conclusion is expressly limited to the remaining cognitive burden."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The infinite-cardinality conclusion is well motivated, but the further assumption that cardinality constitutes an impossible cognitive quantity remains underqualified."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Knowing infinitely many propositions may constitute an extensive range without requiring an impossible non-extensive magnitude of knowledge or intelligence.",
+            "decisiveQualification": "The residual argument must distinguish cardinal multiplicity of truths from the disputed quantitative magnitude of a cognitive capacity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly advances the central con bridge that restrictions do not eliminate the alleged infinity."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly diagnoses the proposed restriction as insufficient and states the residual-infinity consequence with concrete truth classes."
+            }
+          },
+          "evidenceBasis": "The excerpt accepts exclusion of future free choices but identifies all mathematical truths and facts about the past and present as sufficient for infinitely much knowledge.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-unrestricted-lifting-as-unified-ability",
+          "sectionId": "maximal-power-and-quantitative-infinity",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "reply",
+          "proposition": "The ability to lift any weight is naturally one unified kind of ability, and partitioning it into infinitely many mathematical components does not establish an impossible infinite quantity of power.",
+          "sourceSpan": {
+            "startEvent": 772,
+            "endEvent": 804,
+            "excerpt": "that um although it may be possible to divide the acts that I might do uh into an infinite number of separate acts. This is very artificial um as far as uh a natural understanding of of what he has done there. there's just one thing he can do. He can lift any weight up to a certain limit. And uh this seems very natural a kind of action he could do or not. Um it seems artificial"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker change at event 772 follows Huemer's completed response, and the ensuing first-person objection matches Swinburne's previously stated position.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-quantitative-infinity"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-no-greatest-finite-power",
+              "con-impossible-quantitative-divine-infinity",
+              "con-restricted-foreknowledge-still-infinite"
+            ],
+            "components": [
+              {
+                "componentId": "pro-unrestricted-lifting-as-unified-ability-component-01",
+                "targetMoveId": "con-no-greatest-finite-power",
+                "text": "Whether unrestricted lifting must be represented as infinitely many quantities of power rather than one unified kind of ability.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-unrestricted-lifting-as-unified-ability-component-02",
+                "targetMoveId": "con-impossible-quantitative-divine-infinity",
+                "text": "Whether mathematical partitioning of an ability establishes an impossible actual quantitative infinity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-unrestricted-lifting-as-unified-ability-component-03",
+                "targetMoveId": "con-restricted-foreknowledge-still-infinite",
+                "text": "Whether infinitely many known truths require an impossible cognitive quantity.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response directly contests the scalar decomposition underlying the power objection by offering a natural unified-ability description, while leaving cognition unaddressed."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The unified ability and artificial partition are clearly expressed, though the criterion for natural versus artificial individuation remains implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The claim is presented as a natural and comprehensible interpretation rather than as a demonstrated uniquely correct ontology of powers."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Even one linguistically unified ability may have an unbounded scalar manifestation requiring greater force for greater weights.",
+            "decisiveQualification": "Natural linguistic unity does not by itself establish that the underlying capacity lacks quantitative structure."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 71,
+              "rationale": "Calling the range one ability is consistent, but the conclusion that no infinite quantity is involved does not follow without an account of underlying capacity."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central con claim that omnipotence necessarily embodies quantitative infinity."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (69 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It contacts the decisive characterization of power but only partially answers the broader infinity case."
+            }
+          },
+          "evidenceBasis": "The excerpt calls the infinite division of possible lifting acts artificial and describes lifting any weight up to a limit as one natural kind of action.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-spatial-division-is-actual-infinity",
+          "sectionId": "actual-infinity-divisibility-and-supertasks",
+          "side": "con",
+          "speaker": "Michael Huemer",
+          "moveKind": "reply",
+          "proposition": "Zeno-style spatial division describes an actual extensive infinity because infinitely many points and segments genuinely exist and are traversed, although traversal requires only finite power.",
+          "sourceSpan": {
+            "startEvent": 841,
+            "endEvent": 883,
+            "excerpt": "to point B which is a finite distance but that could be divided into the first half and then the first half of the second half and the first half and second. Okay. Um and um I think that is an actual infinity that is um like you might say oh this is an artificial way of viewing it but I think all of those segments exist you know like space really does have infinitely many points"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Huemer begins a marked turn at event 841, distinguishes this point from his preceding strength clarification, and completes the Zeno argument before Swinburne replies.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-extensive-infinity"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-unrestricted-lifting-as-unified-ability",
+              "pro-omnipotence-as-greatest-logically-possible-power"
+            ],
+            "components": [
+              {
+                "componentId": "con-spatial-division-is-actual-infinity-component-01",
+                "targetMoveId": "pro-unrestricted-lifting-as-unified-ability",
+                "text": "Whether mathematical subdivision is merely artificial or can correspond to genuinely existing infinitely many spatial points and segments.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-spatial-division-is-actual-infinity-component-02",
+                "targetMoveId": "pro-omnipotence-as-greatest-logically-possible-power",
+                "text": "Whether traversing extensive infinity requires infinite power.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly disputes the claim that infinite partition is merely artificial by asserting the reality of spatial points, while conceding that traversal needs only finite power."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Actual spatial infinity and finite traversal power are expressly distinguished, keeping the limited purpose of the example clear."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker frames the existence of all segments as his considered view and expressly limits the inference about required power."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Infinite divisibility need not entail that infinitely many segments exist as completed, independently real objects.",
+            "decisiveQualification": "The argument requires an actualist ontology of points or segments rather than mere potential divisibility."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The extensive-infinity distinction is internally consistent, with one bounded but important ontological premise left implicit."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly advances the subsidiary bridge distinguishing extensive from quantitative infinity."
+            },
+            "representationalCharity": {
+              "value": 76,
+              "rationale": "The move expressly acknowledges the artificial-description objection and answers it, though its realist premise receives limited further defense."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the partition premise and carefully distinguishes actual extensive infinity from quantitative power."
+            }
+          },
+          "evidenceBasis": "The excerpt describes finite travel as divisible into infinitely many segments and asserts that these segments and infinitely many spatial points really exist.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-correlation-does-not-establish-actual-infinity",
+          "sectionId": "actual-infinity-divisibility-and-supertasks",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "reply",
+          "proposition": "A one-to-one correlation between divisions of an action and a familiar infinite numerical series is not sufficient to establish that the action contains a genuine actual infinity.",
+          "sourceSpan": {
+            "startEvent": 884,
+            "endEvent": 900,
+            "excerpt": "series of your kind. um um can be put into one one correlation with um the series 1/2 uh quarter uh 8 etc. Uh but the fact that a series um um has the character is one one correlated with that uh is surely not sufficient to make it um uh truly an an infinite series because every series can be put into one one correlation with that. Um so there must be something special uh about"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted response follows Huemer's Zeno discussion and is identifiable as Swinburne's direct counterargument.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-extensive-infinity"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-spatial-division-is-actual-infinity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-correlation-does-not-establish-actual-infinity-component-01",
+                "targetMoveId": "con-spatial-division-is-actual-infinity",
+                "text": "Whether one-to-one correlation with an infinite numerical sequence is sufficient to establish actual infinity in the divided action.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-correlation-does-not-establish-actual-infinity-component-02",
+                "targetMoveId": "con-spatial-division-is-actual-infinity",
+                "text": "Whether the spatial points and segments are genuinely existing rather than merely correlated descriptions.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies correlation as insufficient and states that an additional distinguishing feature is required, but it does not address the realist premise about segments."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The insufficiency thesis is clear, but the unrestricted claim that every series can be so correlated is unstable without specifying infinite series or relevant domains."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical statement about every series overreaches, and the response does not specify what positive criterion would distinguish genuine actual infinity."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Huemer's claim can rest on the ontology of all spatial points, with correlation serving only as representation rather than the sole proof.",
+            "decisiveQualification": "Defeating correlation as sufficient does not defeat an independent ontological premise that all points or segments actually exist."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 67,
+              "rationale": "The general insufficiency point is valid, but its universal formulation is overbroad and it does not answer the independent existence premise."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The correlation observation is conceptually relevant, yet the universal claim and missing positive criterion are poorly supported."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It directly attacks the subsidiary extensive-infinity bridge, although it does not fully defeat that bridge's strongest premise."
+            },
+            "representationalCharity": {
+              "value": 61,
+              "rationale": "The reply attacks a weaker sufficiency route while leaving Huemer's stronger explicit ontological assertion substantially untouched."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It diagnostically defeats the correlation-only inference, while the opponent's separate existence claim prevents the reply from being comprehensive."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that one-to-one correlation with the sequence one-half, one-quarter, one-eighth is insufficient for true infinity because correlation alone lacks a distinguishing feature.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-bodilessness-excludes-pseudo-activities",
+          "sectionId": "bodilessness-incarnation-and-divine-action",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "constructive",
+          "proposition": "God's inability to walk, marry, or perform other bodily activities does not limit omnipotence because those descriptions are logically incompatible with God's necessarily bodiless nature.",
+          "sourceSpan": {
+            "startEvent": 901,
+            "endEvent": 932,
+            "excerpt": "you can't sort of um uh jump out of. You're forced to uh uh influence the world in that sort of way. If you could jump out of your body at any time, you wouldn't really have a body in that sense. So, um uh God is necessarily non-mbodied. It follows from his the definition and therefore the supposition uh that God could go for a walk is automatically logically impossible and God"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The sustained first-person exposition is explicitly introduced as Swinburne's new point and continues without a speaker change.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-apparent-inabilities"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supports the apparent-inabilities bridge by treating walking and similar bodily predicates as logically unavailable to a necessarily bodiless being, not as genuine powers withheld."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The argument expressly makes necessary bodilessness the scope condition and limits its conclusion to activities logically requiring embodiment."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The conclusion follows given necessary bodilessness, but that necessity is treated as definitional without fully defending its compatibility with incarnation."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supports the central bridge concerning apparent divine inabilities."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The selected constructive span develops its own category distinction before a specific incarnation-based alternative is presented."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that genuine embodiment constrains causal interaction, calls God necessarily non-embodied by definition, and infers that divine walking is logically impossible.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-timeless-reconciliation-considered-and-rejected",
+          "sectionId": "timelessness-change-and-foreknowledge",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "constructive",
+          "proposition": "A timeless conception would reconcile divine knowledge of the future with power over it by locating both together, although Swinburne rejects timelessness as unintelligible and instead adopts an everlasting temporal God.",
+          "sourceSpan": {
+            "startEvent": 933,
+            "endEvent": 958,
+            "excerpt": "timeless moment. Um, now I can't make much sense of this, but if I could make much sense of this, then of course um it would help my case because um um there wouldn't be any incompatibility uh between uh God's knowledge of the future and God's power over the future. uh because they would all happen at the same time. um and um I don't think that makes sense and therefore I have uh uh chosen to operate with my conception of God"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker continues Swinburne's closing exposition and explicitly contrasts medieval timelessness with his own temporal conception.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-knowledge-freedom"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move maps a possible timeless reconciliation, expressly rejects it as unintelligible, and clarifies that the defended God is everlasting and temporal."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The hypothetical timeless solution and the speaker's actual everlasting view are clearly separated and expressly qualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker candidly conditions the benefit on making sense of timelessness and presents his rejection as a considered conceptual judgment."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A timeless model may place divine knowledge and action outside temporal succession and thereby reconcile foreknowledge with control.",
+            "decisiveQualification": "Swinburne grants the model's reconciliatory consequence but rejects its underlying timeless framework as unintelligible."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "The move centrally bears on reconciling divine knowledge and freedom, though it ultimately declines the proposed timeless solution."
+            },
+            "representationalCharity": {
+              "value": 91,
+              "rationale": "The move accurately states the strongest benefit of the alternative and makes the decisive point of disagreement explicit rather than caricaturing it."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "Within constructive moves, it usefully distinguishes a rejected solution from the adopted conception and prevents attribution of the rejected view."
+            }
+          },
+          "evidenceBasis": "The excerpt says a timeless moment would remove incompatibility between knowledge and power over the future, but Swinburne cannot make sense of it and chooses another conception.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-timelessness-conflicts-with-mental-change",
+          "sectionId": "timelessness-change-and-foreknowledge",
+          "side": "con",
+          "speaker": "Michael Huemer",
+          "moveKind": "reply",
+          "proposition": "A timeless God cannot change his mind, because being outside time while possessing successive incompatible intentions combines contradictory attributes.",
+          "sourceSpan": {
+            "startEvent": 959,
+            "endEvent": 966,
+            "excerpt": "Yeah. Good. I mean about about the timeless conception of God, it seems like that conflicts with the things you were saying earlier about God changing his mind, right? So like well if he's not in time then it would just be a contradiction. It would just be God having two incompatible attributes"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The marked speaker transition begins Huemer's direct response to Swinburne's immediately preceding discussion of divine timelessness.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-repair-conflicts"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-timeless-reconciliation-considered-and-rejected",
+              "pro-changing-intentions-without-exhaustive-foreknowledge"
+            ],
+            "components": [
+              {
+                "componentId": "con-timelessness-conflicts-with-mental-change-component-01",
+                "targetMoveId": "pro-timeless-reconciliation-considered-and-rejected",
+                "text": "Whether the temporal-change objection applies to the conception Swinburne actually adopts rather than the timeless view he rejects.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-timelessness-conflicts-with-mental-change-component-02",
+                "targetMoveId": "pro-changing-intentions-without-exhaustive-foreknowledge",
+                "text": "Whether changing divine intentions would contradict divine timelessness if both doctrines were jointly asserted.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The conditional conflict is relevant, but the immediate target expressly rejects timelessness; the reply therefore does not contact the decisive adopted-position qualification."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The contradiction alleged is clear, but its scope slides from a timeless conception generally to Swinburne's own view despite his express rejection."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The incompatibility is strong if both attributes are jointly adopted, but the categorical criticism overlooks the speaker's express rejection of timelessness."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Swinburne invokes timelessness only as a possible reconciliation and explicitly adopts an everlasting temporal God instead.",
+            "decisiveQualification": "No contradiction follows in Swinburne's final view because he does not jointly affirm timelessness and mental change."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (61 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The relevant statements are present, yet the chronological and qualificatory context contradicts the claim that they form his joint position."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "The move directly supports the central repair-conflicts bridge, even though its application to the adopted view is defective."
+            },
+            "representationalCharity": {
+              "value": 47,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (48 and 45); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 70,
+              "rationale": "It contacts a secondary conditional tension but misses the primary qualification that the opponent's defended God is temporal, making this a partial answer."
+            }
+          },
+          "evidenceBasis": "The excerpt says being outside time contradicts changing one's mind, while the earlier locked move expressly says Swinburne considered the timeless solution but rejected it.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-incarnation-undermines-bodiless-inability",
+          "sectionId": "bodilessness-incarnation-and-divine-action",
+          "side": "con",
+          "speaker": "Michael Huemer",
+          "moveKind": "reply",
+          "proposition": "The Christian incarnation challenges the claim that God cannot walk or marry, because Jesus is held to be God, was embodied, walked, and could have married.",
+          "sourceSpan": {
+            "startEvent": 967,
+            "endEvent": 972,
+            "excerpt": "Um the the point about you said that God can't take a walk or get married. But this confused me because Christians think that Jesus was God and Jesus took walks and he could have gotten married if he wanted to, right"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Huemer continues his turn and explicitly challenges Swinburne's examples by invoking traditional Christian claims about Jesus.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-apparent-inabilities"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-bodilessness-excludes-pseudo-activities"
+            ],
+            "components": [
+              {
+                "componentId": "con-incarnation-undermines-bodiless-inability-component-01",
+                "targetMoveId": "pro-bodilessness-excludes-pseudo-activities",
+                "text": "Whether Christian identification of Jesus as God supplies a counterexample to the claim that God cannot perform bodily activities.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly invokes incarnation against the necessary-bodilessness inference by citing Jesus's embodiment, walking, and apparent capacity for marriage."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The incarnation counterexample is clear, though the distinction between God simpliciter, divine nature, and incarnate person is left implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker presents the point as a challenge and request for reconciliation rather than claiming that incarnation conclusively disproves every distinction."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Classical two-natures doctrine attributes Christ's bodily capacities to his human nature without making the divine nature embodied.",
+            "decisiveQualification": "The objection must show that personal predication of walking defeats the nature-specific claim of necessary divine bodilessness."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The counterexample creates a genuine prima facie tension, though its force depends on an unresolved transfer between person and nature."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the pro central apparent-inabilities bridge by testing necessary bodilessness against incarnation."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The reply raises the strongest doctrinal test but does not incorporate the standard nature-level distinction available to the opponent."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It squarely contacts the decisive doctrinal counterexample to the bodily-predicate exclusion."
+            }
+          },
+          "evidenceBasis": "The excerpt points out that Christians identify Jesus as God and that Jesus walked and could apparently have married, directly challenging the bodily-inability claim.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-two-natures-incarnation-distinction",
+          "sectionId": "bodilessness-incarnation-and-divine-action",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "reply",
+          "proposition": "The incarnation is compatible with divine bodilessness because Christ has distinct divine and human natures, with bodily capacities belonging to the incarnate human nature rather than the divine nature.",
+          "sourceSpan": {
+            "startEvent": 973,
+            "endEvent": 997,
+            "excerpt": "Wait a minute. Um the traditional Christian view is that in the incarnation Jesus becoming human um uh Jesus has two natures, a divine nature and a human nature. Um and um uh I was talking about Jesus as well as as God as a member of the Trinity and what I've said applies to that but it doesn't apply to uh uh the incarnate God because the incarnate God is a God who has a second"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "A clear speaker transition introduces Swinburne's detailed answer using the traditional two-natures account of the incarnation.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-doctrinal-tests"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-incarnation-undermines-bodiless-inability"
+            ],
+            "components": [
+              {
+                "componentId": "pro-two-natures-incarnation-distinction-component-01",
+                "targetMoveId": "con-incarnation-undermines-bodiless-inability",
+                "text": "Whether bodily capacities of the incarnate Christ must be attributed to the divine nature as such.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies the predicate-transfer assumption as mistaken and states the defeating two-natures distinction between divine and human capacities."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Divine nature, human nature, and the incarnate person are expressly distinguished, and the scope of the earlier bodilessness claim is clarified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Given the stated traditional two-natures framework, the nature-specific reply is proportionate and expressly qualified."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Because Jesus is one divine person, bodily acts can be truly predicated of God even if performed through the human nature.",
+            "decisiveQualification": "True personal predication does not by itself show that the divine nature has bodily capacities or that necessary divine bodilessness is false."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly attacks the subsidiary doctrinal-test bridge at the incarnation counterexample."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly contacts the decisive doctrinal premise and provides the standard distinction needed to explain the apparent counterexample."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly states the traditional doctrine that Jesus has divine and human natures and limits the earlier bodilessness claim to the divine nature rather than the incarnate human nature.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-supertask-requires-extended-final-period",
+          "sectionId": "actual-infinity-divisibility-and-supertasks",
+          "side": "pro",
+          "speaker": "Richard Swinburne",
+          "moveKind": "reply",
+          "proposition": "Because events occur over periods rather than at instants, Thomson's lamp must be analyzed in terms of temporally extended events and a final period of positive duration rather than an instantaneous terminal state.",
+          "sourceSpan": {
+            "startEvent": 1024,
+            "endEvent": 1045,
+            "excerpt": "um there isn't I think I better go back one stage. I don't think events happen at instances of time. Um uh they happen over periods of time. Instance are simply the boundaries of of uh uh periods. So you can ask a question a question about whether the uh the series would have ended uh with a period of a certain length or not and the answer is it must have done because there are"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Swinburne takes the floor after Huemer states the lamp paradox and develops a continuous response about events and periods.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-repair-conflicts"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-spatial-division-is-actual-infinity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-supertask-requires-extended-final-period-component-01",
+                "targetMoveId": "con-spatial-division-is-actual-infinity",
+                "text": "Whether infinitely many positive-duration events can occur in a finite interval without a final positive-duration event.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-supertask-requires-extended-final-period-component-02",
+                "targetMoveId": "con-spatial-division-is-actual-infinity",
+                "text": "Whether events must occur over periods rather than at durationless instants.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The period ontology is issue-bearing, but it does not establish the asserted requirement of a final positive-duration period or defeat convergent diminishing intervals."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The period-versus-instant distinction is clear, but the asserted need for a final period conflates series completion with possession of a last member."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The conclusion that the series must end with a positive-length final period is much stronger than the event-duration premise warrants."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Every switching may occupy a positive interval even though the ordered sequence has no final switching or final positive-duration interval.",
+            "decisiveQualification": "Positive duration for each member does not entail a last member in an infinite convergent sequence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 52,
+              "rationale": "The conclusion about a required final period does not follow from the premise that events occur over periods rather than at instants."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "The move attacks the con central repair-conflicts bridge by contesting the temporal coherence of a completed supertask."
+            },
+            "representationalCharity": {
+              "value": 49,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (49 and 48); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 70,
+              "rationale": "It contacts a secondary event-duration issue while leaving the decisive mathematical possibility of infinitely many diminishing periods unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt denies that events happen at instants and says they occur over periods, then infers that the series must have ended with a period of some positive length.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-lamp-supertask-has-positive-duration-events",
+          "sectionId": "actual-infinity-divisibility-and-supertasks",
+          "side": "con",
+          "speaker": "Michael Huemer",
+          "moveKind": "reply",
+          "proposition": "Thomson's lamp does not require instantaneous events, because infinitely many switchings can each occupy a positive, diminishing interval while all occur within finite time.",
+          "sourceSpan": {
+            "startEvent": 1046,
+            "endEvent": 1060,
+            "excerpt": "Yes. Uh I think I mean I think we agree on that that an event requires some amount of time but the the Thompson lamp series it's an infinite series of switchings but each switching occupies a finite amount of time right for each one you can say how much time it took and it's non zero but it's just that you can fit an infinite number of these non-zero intervals within the finite"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The marked transition returns to Huemer, who directly reformulates the lamp construction in response to Swinburne's period-based analysis.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-repair-conflicts"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-supertask-requires-extended-final-period"
+            ],
+            "components": [
+              {
+                "componentId": "con-lamp-supertask-has-positive-duration-events-component-01",
+                "targetMoveId": "pro-supertask-requires-extended-final-period",
+                "text": "Whether positive duration for every switching entails a final positive-duration event in the infinite lamp sequence.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-lamp-supertask-has-positive-duration-events-component-02",
+                "targetMoveId": "pro-supertask-requires-extended-final-period",
+                "text": "Whether the series improperly relies on instantaneous events.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply explicitly accepts that events require time and then diagnoses the inference's failure: infinitely many nonzero diminishing intervals can fit within a finite total interval."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between each interval's positive duration and the finite sum of infinitely many diminishing intervals is clearly stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The asserted possibility of a convergent sequence of positive intervals directly matches the mathematical warrant supplied by the example."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Swinburne can require events to occupy periods and reject instantaneous switching boundaries.",
+            "decisiveQualification": "The lamp construction grants positive duration to every event, so that requirement does not generate a final interval or defeat convergence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central repair-conflicts bridge by defeating the proposed temporal-event repair."
+            },
+            "representationalCharity": {
+              "value": 94,
+              "rationale": "The reply grants the strongest legitimate premise of the opposing view and precisely explains why it does not yield the proposed conclusion."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly addresses both the duration premise and the decisive convergence inference, stating the defeating consequence."
+            }
+          },
+          "evidenceBasis": "The excerpt agrees that each switching takes nonzero time but explains that infinitely many such diminishing intervals can all fit within a finite total duration.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct pro-side debate-wide consequence remains outside the move ratings, response links, relevance judgments, and locked section structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing any alleged residual would not alter burden completion independently of the judgments already recorded."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct con-side debate-wide consequence remains outside the move ratings, response links, relevance judgments, and locked section structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing any alleged residual would not alter burden completion independently of the judgments already recorded."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "maximal-power-and-quantitative-infinity",
+          "title": "Maximal power and quantitative infinity",
+          "weightPercent": 30,
+          "sides": {
+            "pro": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "pro-omnipotence-as-greatest-logically-possible-power",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "pro-unrestricted-lifting-as-unified-ability",
+                  "importance": 3,
+                  "score": 76
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-impossible-quantitative-divine-infinity",
+                  "importance": 3,
+                  "score": 81
+                },
+                {
+                  "moveId": "con-no-greatest-finite-power",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "divine-knowledge-freedom-and-tradition",
+          "title": "Divine knowledge, freedom, and the relevant theistic conception",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 72,
+              "moves": [
+                {
+                  "moveId": "pro-traditional-theism-need-not-quantify-infinity",
+                  "importance": 2,
+                  "score": 73
+                },
+                {
+                  "moveId": "pro-foreknowledge-limited-by-divine-freedom",
+                  "importance": 3,
+                  "score": 72
+                }
+              ]
+            },
+            "con": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "con-restricted-foreknowledge-still-infinite",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "actual-infinity-divisibility-and-supertasks",
+          "title": "Actual infinity, divisibility, and supertasks",
+          "weightPercent": 21,
+          "sides": {
+            "pro": {
+              "score": 69,
+              "moves": [
+                {
+                  "moveId": "pro-correlation-does-not-establish-actual-infinity",
+                  "importance": 2,
+                  "score": 73
+                },
+                {
+                  "moveId": "pro-supertask-requires-extended-final-period",
+                  "importance": 2,
+                  "score": 64
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-spatial-division-is-actual-infinity",
+                  "importance": 2,
+                  "score": 82
+                },
+                {
+                  "moveId": "con-lamp-supertask-has-positive-duration-events",
+                  "importance": 2,
+                  "score": 93
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "bodilessness-incarnation-and-divine-action",
+          "title": "Bodilessness, incarnation, and divine action",
+          "weightPercent": 14,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-bodilessness-excludes-pseudo-activities",
+                  "importance": 2,
+                  "score": 81
+                },
+                {
+                  "moveId": "pro-two-natures-incarnation-distinction",
+                  "importance": 2,
+                  "score": 87
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-incarnation-undermines-bodiless-inability",
+                  "importance": 2,
+                  "score": 84
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "timelessness-change-and-foreknowledge",
+          "title": "Timelessness, change, and foreknowledge",
+          "weightPercent": 13,
+          "sides": {
+            "pro": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "pro-changing-intentions-without-exhaustive-foreknowledge",
+                  "importance": 2,
+                  "score": 73
+                },
+                {
+                  "moveId": "pro-timeless-reconciliation-considered-and-rejected",
+                  "importance": 2,
+                  "score": 84
+                }
+              ]
+            },
+            "con": {
+              "score": 68,
+              "moves": [
+                {
+                  "moveId": "con-timelessness-conflicts-with-mental-change",
+                  "importance": 2,
+                  "score": 68
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 75.46,
+          "burdenCompletionAdjustment": 0,
+          "score": 75
+        },
+        "con": {
+          "weightedSectionMean": 83.2,
+          "burdenCompletionAdjustment": 0,
+          "score": 83
+        }
+      },
+      "winner": "con",
+      "winningMargin": 8
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 17,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 106872,
+  "proposedAdapterSha256": "2b7f9ef78bcd578c88636296451278a75e1f225cfd811e8a8dfa8c886c422681",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "94",
+    "sections": 5,
+    "moves": 17,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+    "adapterSha256": "2b7f9ef78bcd578c88636296451278a75e1f225cfd811e8a8dfa8c886c422681",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

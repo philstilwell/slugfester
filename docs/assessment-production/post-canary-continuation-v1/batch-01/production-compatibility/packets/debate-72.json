@@ -1,0 +1,1972 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+  "status": "frozen-post-canary-batch-01-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "planningOnly": true,
+  "debateNumber": "72",
+  "debateId": "dyer-malpass-tag-argument-2019",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/final-candidates/debate-72.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-01/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-01/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-01/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/gK-rwG392Uc/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+    "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+    "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+    "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+    "finalCandidateSha256": "fe154cf689c6ff6ad3ebf4af8908f3b11df19eb3a1876e3c22e984a6e10116d4",
+    "eventsPath": ".assessment-cache/captions/gK-rwG392Uc/events.json",
+    "eventsSha256": "dbc412a082693e48c4850196712549b9ac47f08f41e1393d7cb533820fe98928",
+    "finalJudgmentSha256": "bcf9ef06dc0d1823b4f8aa90edda5d6bebd63660946c4312faf1a916fad22826"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/dyer-malpass-tag-argument-2019.json",
+    "productionLedger": "docs/assessment-ledgers/dyer-malpass-tag-argument-2019.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-01-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-01-production-compatibility",
+    "status": "frozen-post-canary-batch-01-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 1,
+    "debateNumber": "72",
+    "debateId": "dyer-malpass-tag-argument-2019",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "dbcd60be5830479596c436180711f2f76434b5c3eaae850dfdf48a11f840d5ff",
+      "calculatedScoresSha256": "cc2e87260392ce8ffe6d9124e630f236e3c0fe18ddcec990fa0a9d603d4aee78",
+      "finalizationAuditSha256": "fad9cd18d8bd319b6e7b2e964a150194c4e9e726ea904d71e24771bf7f43daea",
+      "renderingAuditSha256": "d0c9ecaf6f015538172cf82a9582491e26465e3218911b1b2b11456b9bd54e7f",
+      "finalCandidateSha256": "fe154cf689c6ff6ad3ebf4af8908f3b11df19eb3a1876e3c22e984a6e10116d4",
+      "eventsPath": ".assessment-cache/captions/gK-rwG392Uc/events.json",
+      "eventsSha256": "dbc412a082693e48c4850196712549b9ac47f08f41e1393d7cb533820fe98928",
+      "finalJudgmentSha256": "bcf9ef06dc0d1823b4f8aa90edda5d6bebd63660946c4312faf1a916fad22826"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "72",
+      "debateId": "dyer-malpass-tag-argument-2019",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-orthodox-tag",
+          "side": "pro",
+          "description": "Establish that intelligible thought and inquiry depend on interconnected logical, epistemic, metaphysical, inductive, and ethical preconditions, and that the Orthodox Christian God supplies their coherent and necessary ground.",
+          "successCriteria": "The route succeeds if it connects unavoidable preconditions of discourse and experience to a specifically Orthodox metaphysical account, explains why non-theistic alternatives cannot supply the same unified justification, and defends the transcendental method used to establish that dependence.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-orthodox-necessity",
+            "tier": "motion",
+            "description": "Show that the preconditions of intelligibility cannot be coherently justified unless the Orthodox Christian God is presupposed."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-transcendental-method",
+              "tier": "central",
+              "description": "Establish that paradigm-level presuppositions require transcendental assessment and that unavoidable circularity at this level does not reduce the case to an ordinary explanatory inference."
+            },
+            {
+              "bridgeId": "pro-central-logic-discourse",
+              "tier": "central",
+              "description": "Show that attempts to deny fundamental logical norms still depend on logical regularities required for meaningful language, predication, and argument."
+            },
+            {
+              "bridgeId": "pro-central-induction-providence",
+              "tier": "central",
+              "description": "Connect scientific induction and natural regularity to a meta-level justification grounded in divine providence rather than merely assuming isolated regularities."
+            },
+            {
+              "bridgeId": "pro-central-orthodox-grounding",
+              "tier": "central",
+              "description": "Explain how creation, divine archetypes, the logoi, and the essence-energies distinction ground shared intelligible content while preserving real distinctions."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-use-justification",
+              "tier": "subsidiary",
+              "description": "Distinguish a non-Christian's practical use of reason from the worldview-level justification claimed to make that use coherent."
+            },
+            {
+              "bridgeId": "pro-subsidiary-actual-experience",
+              "tier": "subsidiary",
+              "description": "Relate the claimed logical and mathematical preconditions to the structures operative in actual human experience despite conceivable alternative formal systems."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-analytic-critique",
+          "side": "con",
+          "description": "Show that the proposed transcendental reasoning does not establish that logic, induction, knowledge, ethics, or abstract content uniquely require the Orthodox Christian God, because the necessity inference and proposed grounding remain contestable.",
+          "successCriteria": "The route succeeds if it identifies a coherent non-Orthodox understanding of the relevant preconditions or shows that the affirmative method, necessity claims, induction account, and divine-conceptualist explanation do not establish the asserted exclusive dependence.",
+          "motionBridge": {
+            "bridgeId": "con-motion-no-unique-requirement",
+            "tier": "motion",
+            "description": "Show that the named preconditions can be understood without presupposing the Orthodox Christian God or that their alleged dependence has not been established."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-necessity-gap",
+              "tier": "central",
+              "description": "Require a demonstrated connection between Orthodox belief and coherent thought rather than inferring necessity from the presence of worldview assumptions."
+            },
+            {
+              "bridgeId": "con-central-logical-revision",
+              "tier": "central",
+              "description": "Show that challenges to classical logical laws can remain intelligible and that reductio does not establish universal non-contradiction against contradiction-tolerant positions."
+            },
+            {
+              "bridgeId": "con-central-induction-parity",
+              "tier": "central",
+              "description": "Show that invoking providence does not nontrivially justify particular inductive expectations and may leave the underlying epistemic burden unchanged."
+            },
+            {
+              "bridgeId": "con-central-alternative-grounding",
+              "tier": "central",
+              "description": "Develop non-theistic access to abstract objects and moral truths while testing whether divine thought explains shared abstract content without recreating the same distinction."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-inference-form",
+              "tier": "subsidiary",
+              "description": "Clarify whether the affirmative case is a transcendental proof, a paradigm-coherence comparison, or an explanatory inference, and identify the completion standard for that form."
+            },
+            {
+              "bridgeId": "con-subsidiary-alternative-systems",
+              "tier": "subsidiary",
+              "description": "Use alternative logics and geometries to test whether structures familiar in ordinary experience are genuinely necessary rather than contingently entrenched."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-worldview-method-necessity",
+          "title": "Worldview Method and the Necessity Claim",
+          "weightPercent": 24,
+          "rationale": "This issue governs the passage from unavoidable worldview assumptions to the motion-level conclusion that a specifically Orthodox presupposition is necessary, including the distinction between practical reasoning and ultimate justification."
+        },
+        {
+          "sectionId": "section-induction-regularity-providence",
+          "title": "Induction, Natural Regularity, and Providence",
+          "weightPercent": 18,
+          "rationale": "Induction is expressly named in the motion, and the central clash concerns whether providence supplies a meta-level justification for scientific regularity or merely relocates an assumption shared by competing accounts."
+        },
+        {
+          "sectionId": "section-logic-reductio-discourse",
+          "title": "Logic, Reductio, and Preconditions of Discourse",
+          "weightPercent": 24,
+          "rationale": "This issue tests the operative transcendental method through non-contradiction, reductio, meaningful assertion, and alternative logics, determining whether denial of familiar logical principles undermines argument itself."
+        },
+        {
+          "sectionId": "section-abstract-content-orthodox-metaphysics",
+          "title": "Abstract Content and Orthodox Metaphysical Grounding",
+          "weightPercent": 22,
+          "rationale": "The debate's claim of specifically Orthodox necessity depends materially on whether Platonist alternatives can explain abstract objects and whether the logoi and essence-energies account resolves shared conceptual content and participation."
+        },
+        {
+          "sectionId": "section-experience-modality-alternatives",
+          "title": "Actual Experience, Modality, and Alternative Systems",
+          "weightPercent": 12,
+          "rationale": "This issue determines whether structures found in ordinary experience support logical or metaphysical necessity when non-classical systems remain conceivable, and how an experience-based formulation connects to the asserted modal conclusion."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-inference-form-comparison-criteria",
+          "sectionId": "section-worldview-method-necessity",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "moveKind": "constructive",
+          "proposition": "Treating the Orthodox worldview as an explanation requires a specified method for weighing its explanatory virtues against its ontological and theoretical costs relative to alternatives.",
+          "sourceSpan": {
+            "startEvent": 294,
+            "endEvent": 322,
+            "excerpt": "explanation for all of those things and that if we compare that to other candidate explanations you think you're a your vision it has I'm not quite sure how we'd make the determine what what you think the mechanics are of the determination I mean is it that yours has a better overall balance between ontological commitments on one hand you know costs of the theory weighing up against theoretical virtues like explanatory"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn begins immediately after Dyer's opening case and is explicitly framed as Malpass's attempt to characterize that case.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-inference-form"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move asks for an explicit comparison rule connecting explanatory virtues, ontological costs, and rival paradigms."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The requested comparison and the relevant virtues and costs are recoverable and consistently bounded to explanatory assessment."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move advances a methodological question rather than claiming that no comparison could succeed, matching the limited support offered."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It directly contacts the subsidiary inference-form bridge and identifies a significant completion standard for the affirmative method."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move requests clarification without developing a substantive interpretation of a competing argument that requires a charity test."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly asks about the mechanics of comparing candidate explanations and balancing ontological commitments against theoretical virtues.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-worldview-paradigm-coherence",
+          "sectionId": "section-worldview-method-necessity",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "reply",
+          "proposition": "The case assesses the coherence of whole paradigms rather than operating as an ordinary explanatory inference, because fundamental worldviews inevitably reason from circular presuppositions.",
+          "sourceSpan": {
+            "startEvent": 323,
+            "endEvent": 375,
+            "excerpt": "worldviews at the fundamental level or circular then even if you if we were to take your where I think you're going with your objection which is that well just because a position has explanatory power or because it can be inferred it doesn't prove that it's true that's correct when it's when it's a situation of normative discourse or a simple law of logic but the claim here is different because it's about paradigms as a whole"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dyer directly answers Malpass's proposed characterization and contrasts ordinary discourse with his broader paradigm-level method.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-transcendental-method"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-inference-form-comparison-criteria"
+            ],
+            "components": [
+              {
+                "componentId": "pro-worldview-paradigm-coherence-component-01",
+                "targetMoveId": "con-inference-form-comparison-criteria",
+                "text": "Specify how whole paradigms are compared when explanatory virtues and ontological or theoretical costs conflict.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply disputes the ordinary-explanatory characterization and invokes inevitable paradigm-level circularity, but it does not provide the requested comparison mechanics or a justified replacement criterion."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The paradigm-level thesis is recoverable, though the operative test of whole-paradigm coherence remains somewhat compressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical claim that fundamental worldviews inevitably reason circularly exceeds the brief distinction supplied and lacks a rival-sensitive qualification."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Malpass is asking for comparison criteria without insisting that TAG must be an ordinary explanatory inference.",
+            "decisiveQualification": "Reclassifying the argument as paradigm assessment does not eliminate the need for standards that discriminate among paradigms."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "The ordinary-versus-paradigm distinction is intelligible, but no bridge shows why unavoidable circularity supplies discriminatory coherence criteria."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "The claim rests mainly on assertion about worldview circularity and does not seriously compare alternative paradigm-level methods."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central transcendental-method bridge by defining the proposed level and character of the reasoning."
+            },
+            "representationalCharity": {
+              "value": 71,
+              "rationale": "The reply fairly recognizes the explanatory challenge but too quickly treats it as an ordinary-inference framing that its opponent need not adopt."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "It supplies relevant methodological contrary material, yet leaves the decisive demand for comparative standards substantially unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt concedes the limitation of ordinary explanatory inference, then asserts that the case differs because it concerns paradigms as wholes and circular presuppositions.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-orthodox-necessity-use-distinction",
+          "sectionId": "section-worldview-method-necessity",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "constructive",
+          "proposition": "Unless the Orthodox Christian God is presupposed, logic, metaphysics, ethics, and other preconditions of intelligibility lack coherent ultimate justification, although non-Christians remain able to use them in practice.",
+          "sourceSpan": {
+            "startEvent": 381,
+            "endEvent": 443,
+            "excerpt": "is the impossibility of having any preconditions or any coherence or any possibility of logic metaphysics and ethics okay good that's helpful so um let's say would it be fair to put it like this then so if you don't use that if you don't presuppose God of Orthodox Christianity then then well so what's the consequence of that then logic and these are the precondition these other"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dyer supplies the requested premise-like formulation and then clarifies its implications through the example of a materialist who practices logic.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-orthodox-necessity"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move states the motion-level necessity claim and distinguishes ultimate worldview justification from a non-Christian's practical use of reason."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The practical-use qualification is explicit, but coherence, possibility, and ultimate justification are not kept fully distinct in the formulation."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The stated exclusivity is much stronger than the support in this span, although the move expressly limits the consequence to ultimate justification rather than practical ability."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (66 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (56 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "The proposition directly states the affirmative motion bridge and supplies the exact exclusivity condition whose completion governs the route."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "This move primarily formulates its own position and practical-use qualification rather than interpreting a developed opposing alternative."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The selected span states that absent presupposition of the Orthodox God there is no coherent possibility for the named preconditions, while the broader move distinguishes use from justification.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-orthodox-necessity-gap",
+          "sectionId": "section-worldview-method-necessity",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "moveKind": "reply",
+          "proposition": "Unlike conditions that directly structure any coherent experience, belief in the Orthodox God has not been shown necessary for coherent thought, since unbelievers demonstrably reason coherently.",
+          "sourceSpan": {
+            "startEvent": 445,
+            "endEvent": 571,
+            "excerpt": "structure things spatially temporally and causally you couldn't have any experience at all so that makes your argument slightly different so it serves two things that one is I don't see the connection between belief in the Orthodox God and coherence in the same way that we get from a Kantian argument and what was the second one just popped out I just said it but I've already forgotten it so mmm maybe you could just reply"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Malpass develops an extended comparison with Kant and explicitly identifies the missing connection in Dyer's claim about divine belief and intelligibility.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "motion",
+            "bridgeId": "pro-motion-orthodox-necessity"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-orthodox-necessity-use-distinction",
+              "pro-worldview-paradigm-coherence"
+            ],
+            "components": [
+              {
+                "componentId": "con-orthodox-necessity-gap-component-01",
+                "targetMoveId": "pro-orthodox-necessity-use-distinction",
+                "text": "Show that Orthodox belief or presupposition is necessary for coherent thought rather than merely for the speaker's preferred ultimate explanation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-orthodox-necessity-gap-component-02",
+                "targetMoveId": "pro-worldview-paradigm-coherence",
+                "text": "Explain how paradigm-level circularity yields the specifically Orthodox necessity conclusion.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies the missing connection between Orthodox belief and coherence, contrasts it with conditions directly structuring experience, and states that coherent unbelieving reason defeats the unqualified necessity inference."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The objection clearly distinguishes necessary structures of experience from an unestablished necessity of Orthodox belief and keeps that scope stable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker frames the issue as a missing demonstrated connection rather than certifying that no possible Orthodox argument could supply one."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The affirmative may distinguish practical coherent reasoning from the ultimate justification of that reasoning.",
+            "decisiveQualification": "That distinction still requires an argument showing why ultimate justification is uniquely Orthodox and why practical coherence evidences no viable rival ground."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 84,
+              "rationale": "The observable counterexample and Kantian comparison support the diagnostic point, with only the ultimate-justification reply left partly open."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly attacks the affirmative motion bridge by challenging the claimed unique necessity of Orthodox presupposition."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly contacts the decisive necessity bridge, diagnoses the absent connection, and states the consequence for the affirmative inference."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts conditions required for any experience with the absent connection between Orthodox belief and coherence, while the move invokes coherent unbelievers as counterevidence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-induction-grounded-in-providence",
+          "sectionId": "section-induction-regularity-providence",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "constructive",
+          "proposition": "Scientific induction presupposes logic and natural regularity, and divine providence supplies a meta-level explanation of that regularity where induction itself lacks a purely logical justification.",
+          "sourceSpan": {
+            "startEvent": 674,
+            "endEvent": 707,
+            "excerpt": "scientific method presupposes things like logic like regularity in nature and as we said from Hume all the way up to William Bentinck wine there's not a logical justification for induction itself and so that the the solution I would say isn't well if the world is created in a in a way in which there's a God who providentially god's nature who has set up nature to operate in a providential"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The same Dyer turn shifts explicitly to induction and develops the distinction between everyday inductive practice and its higher-level justification.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-induction-providence"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move links scientific induction to assumed natural regularity and proposes providential creation as the meta-level explanation for that regularity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The meta-level proposal is recoverable, but its limits regarding particular predictions are only implicit in this span."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move presents providence as a solution while acknowledging induction lacks deductive justification, but it does not qualify how much explanatory grounding yields epistemic warrant."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 73,
+              "rationale": "The explanatory sequence is intelligible, but a material bridge from divine governance to warranted expectations of stable regularity remains unstated."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central induction-providence bridge and states the affirmative account intended to complete that issue."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move develops its own providential account without presenting a sufficiently developed rival interpretation for a meaningful charity test."
+            },
+            "responsiveness": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt says science presupposes logic and natural regularity, denies a purely logical justification for induction, and proposes a providentially ordered creation as the solution.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-providence-induction-parity",
+          "sectionId": "section-induction-regularity-providence",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "moveKind": "reply",
+          "proposition": "Invoking providential divine governance does not nontrivially solve induction, because simply assuming natural regularities would remove the problem in the same question-begging manner.",
+          "sourceSpan": {
+            "startEvent": 708,
+            "endEvent": 739,
+            "excerpt": "to deal with I think that's fair enough on the other hand it feels like if you're allowed to do that then I could just say well if there just are regularities in nature I mean if you're allowed to make a kind of gross metaphysical assumption right then remember of induction is not going to be a problem anymore because well rope that make these types of assumptions about the way"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Malpass explicitly turns to the problem of induction and contrasts Dyer's proposed divine assumption with directly assuming the regularity at issue.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-induction-providence"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-induction-grounded-in-providence"
+            ],
+            "components": [
+              {
+                "componentId": "con-providence-induction-parity-component-01",
+                "targetMoveId": "pro-induction-grounded-in-providence",
+                "text": "Explain why assuming providential governance nontrivially justifies regularity rather than merely relocating the assumption induction requires.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies a parity problem: if a large metaphysical assumption may dissolve induction, directly assuming natural regularities appears to do the same work without the added theology."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The parity objection is recoverable and consistently limited to whether the metaphysical assumption provides non-question-begging epistemic work."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Phrases such as 'feels like' and the conditional framing appropriately present a serious parity challenge rather than a conclusive refutation."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Providence may be offered as a unified metaphysical explanation rather than as a bare assumption of each observed regularity.",
+            "decisiveQualification": "A unified explanation still must show why belief in providence warrants future regularity better than the rival regularity assumption."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The symmetry argument is clear and valid as a challenge unless a relevant warrant-producing difference between the assumptions is supplied."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central affirmative induction bridge by testing whether providence adds nontrivial justification."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The objection preserves the explanatory ambition of providence while pressing the decisive epistemic parity question that remains."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It squarely contacts the proposed providential solution, identifies the alleged defect, and states the comparative consequence."
+            }
+          },
+          "evidenceBasis": "The excerpt conditionally grants the metaphysical move, then compares it with simply assuming natural regularities and argues that either assumption would remove the stated problem.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-induction-meta-level-distinction",
+          "sectionId": "section-induction-regularity-providence",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "reply",
+          "proposition": "The problem of induction concerns the epistemic justification for believing in nature's regularity and using scientific method, not a guarantee that any particular experiment will succeed.",
+          "sourceSpan": {
+            "startEvent": 990,
+            "endEvent": 1180,
+            "excerpt": "problem of induction is not just a question about how do we know about when our scientific experiments are just coincidence and when they're not it's much more than that if you read Hume and again the hundreds of years of actually debate on this question all the way up to coin the debate is actually about the logical justification the epistemic justification of believing in the principle of regularity"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn directly answers Malpass's induction objection and consistently presents the Orthodox TAG position in Dyer's argumentative voice.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-induction-parity"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-providence-induction-parity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-induction-meta-level-distinction-component-01",
+                "targetMoveId": "con-providence-induction-parity",
+                "text": "Identify the non-question-begging epistemic advantage providence has over directly assuming natural regularity.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply accurately clarifies that the induction problem concerns epistemic justification rather than guaranteed experimental success, but it does not answer the parity comparison between providence and assumed regularity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between general epistemic justification and success of particular experiments is expressly and consistently stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "matched",
+            "qualificationStatus": "not-needed",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The definitional clarification is asserted firmly but is appropriately supported by the move's explicit statement of the target epistemic question."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The parity objection concerns justification for general regularity, not merely whether particular experiments might fail.",
+            "decisiveQualification": "Clarifying the general level therefore leaves the rival-assumption comparison intact."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The response usefully corrects one possible reading but weakens the strongest version of the objection by treating it as experiment-focused."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "The clarification is issue-bearing and useful, yet the decisive comparative demand remains uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly says induction concerns logical and epistemic justification for believing regularity, not merely distinguishing successful experiments from coincidences.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-reductio-dialetheist-objection",
+          "sectionId": "section-logic-reductio-discourse",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "moveKind": "reply",
+          "proposition": "Using reductio to establish non-contradiction begs the question against an opponent who already permits true contradictions, because deriving a contradiction supplies no accepted basis for rejecting the assumption.",
+          "sourceSpan": {
+            "startEvent": 1347,
+            "endEvent": 1393,
+            "excerpt": "deriving the contradiction we can then infer back that not P must be false and then we can infer back from that to show the pay must be true and so that's the method of reductio you assumed the contrary and you show that it leads to a contradiction and then you work backwards to the thing you were trying to prove at the point and the reason that it's question begging in this context is if your opponent"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn follows Malpass's announced stepwise analysis and formally reconstructs reductio before applying a direct question-begging objection.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-logical-revision"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-worldview-paradigm-coherence"
+            ],
+            "components": [
+              {
+                "componentId": "con-reductio-dialetheist-objection-component-01",
+                "targetMoveId": "pro-worldview-paradigm-coherence",
+                "text": "Show why paradigm-level reductio can reject a position whose adherent does not accept contradiction as defeating.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply reconstructs reductio, identifies the disputed inference from contradiction to rejection, and states that a dialetheist's denial of that inference defeats the argument's force."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The argument precisely limits itself to reductio against contradiction-tolerant opponents and distinguishes derivation from the rejection inference."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Given the stipulated opponent, the claim that contradiction alone supplies no accepted rejection basis matches the reconstructed inference."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The affirmative may use reductio transcendentally, alleging that contradiction tolerance undermines meaningful discourse rather than merely deriving a contradiction.",
+            "decisiveQualification": "That stronger argument still needs an independent bridge from accepting some contradictions to losing all meaningful assertion."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 94,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The warrant follows directly from the opponent's stipulated acceptance of true contradictions, with little external evidence required for this formal point."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central logical-revision bridge by showing why standard reductio cannot settle the dispute."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly diagnoses the exact inferential dependency and states the consequence for the proposed reductio."
+            }
+          },
+          "evidenceBasis": "The excerpt reconstructs reductio's backward inference and says it begs the question where the opponent does not accept contradiction as a reason to reject the assumption.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-discourse-level-reductio",
+          "sectionId": "section-logic-reductio-discourse",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "reply",
+          "proposition": "Circularity and reductio have a distinctive role when a denial targets logical preconditions of language, communication, and meaningful argument and would thereby eliminate discourse itself.",
+          "sourceSpan": {
+            "startEvent": 1399,
+            "endEvent": 1446,
+            "excerpt": "argument you're correct and as I said kind of early on circular arguments or fallacies but what's unique here is that at this level of discourse when we're actually questioning something that's a precondition for language and communication and meaningful discourse itself like the law of non-contradiction that's so fundamental that it's a unique situation at this point this level the reductio"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker resumes after resolving turn-taking lag and directly defends the paradigm-level transcendental account associated throughout with Dyer.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-logical-revision"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-reductio-dialetheist-objection"
+            ],
+            "components": [
+              {
+                "componentId": "pro-discourse-level-reductio-component-01",
+                "targetMoveId": "con-reductio-dialetheist-objection",
+                "text": "Explain why accepting a true contradiction supplies a reason the dialetheist accepts for rejecting the relevant assumption.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply shifts to the importance of logical preconditions for language and discourse, but does not show that a dialetheist who accepts some contradictions thereby abandons those preconditions or accepts reductio's rejection step."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The discourse-precondition thesis is clear, but 'logical preconditions' shifts toward universal non-contradiction without specifying the required scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move treats denial of non-contradiction as eliminating discourse without addressing contradiction-tolerant systems that retain substantial inferential and linguistic structure."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A dialetheist can preserve grammar, predication, and most inferential practices while accepting selected true contradictions.",
+            "decisiveQualification": "The affirmative must show that local contradiction tolerance, not indiscriminate triviality, eliminates meaningful discourse."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (62 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 59,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "It offers relevant discourse-level contrary material while leaving the decisive dialectical objection to reductio unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt distinguishes ordinary circularity from a purportedly unique case involving preconditions of language, communication, meaningful discourse, and non-contradiction.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-local-assertion-not-universal-lnc",
+          "sectionId": "section-logic-reductio-discourse",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "moveKind": "reply",
+          "proposition": "An opponent's meaningful assertion can be non-contradictory without committing that opponent to universal non-contradiction, since some other sentence may still be accepted as both true and false.",
+          "sourceSpan": {
+            "startEvent": 1745,
+            "endEvent": 1776,
+            "excerpt": "of opponent can't think that the law of non-contradiction is false right but the thing is it's a bad argument because you could believe that say the liar sentence is both true and false but think that the sentence I am a man is true and not false so simply getting me to say one sentence doesn't get me to commit to the contradict non-contradiction being true I could still think"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn develops Malpass's earlier Aristotle analysis and is followed by Dyer's explicit statement of disagreement.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-logical-revision"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-discourse-level-reductio"
+            ],
+            "components": [
+              {
+                "componentId": "con-local-assertion-not-universal-lnc-component-01",
+                "targetMoveId": "pro-discourse-level-reductio",
+                "text": "Show that making one meaningful non-contradictory assertion commits the speaker to universal non-contradiction.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies the local-to-universal inference and defeats it with a coherent position accepting an ordinary sentence as true-only while accepting a different paradoxical sentence as both true and false."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The local assertion, universal law, and separate contradictory sentence are cleanly distinguished, making the scope objection fully recoverable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The counterexample conclusively blocks the specified inference from one ordinary assertion to commitment to universal non-contradiction."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The affirmative might claim only that meaningful speech presupposes some logical regularity, not universal non-contradiction.",
+            "decisiveQualification": "That weaker conclusion does not establish the universal law or the specifically Orthodox necessity claim."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 95,
+              "rationale": "The counterexample is explicit, consistent, and directly invalidates the universal generalization while preserving meaningful assertion."
+            },
+            "evidenceWarrant": {
+              "value": 90,
+              "rationale": "The constructed case is sufficient evidence for the logical possibility needed to defeat the universal inference."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It strongly supports the con central logical-revision bridge by precisely limiting what discourse commitments establish."
+            },
+            "representationalCharity": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly contacts the decisive scope inference, supplies a concrete countermodel, and states the consequence for the discourse argument."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts the true-only sentence 'I am a man' with accepting the liar sentence as both true and false, blocking universal commitment.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-language-presupposes-logical-regularity",
+          "sectionId": "section-logic-reductio-discourse",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "reply",
+          "proposition": "Even paradoxical or inconsistent sentences presuppose logical regularities embodied in grammar, singular-plural structure, and meaningful predication.",
+          "sourceSpan": {
+            "startEvent": 1777,
+            "endEvent": 1814,
+            "excerpt": "even if you were to make a sentence that was a large paradox I believe you absolutely still would be assuming logical regularity in relationship to language so in this regard I would say if you look at people like Carl Otto Apple he's one of the key figures who actually does apply transmittal argumentation to to show how sentences singulars and plurals in sentence structure grammar"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dyer begins with an explicit disagreement and develops his own account until Malpass's acknowledgment at the next row.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-logical-revision"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-local-assertion-not-universal-lnc"
+            ],
+            "components": [
+              {
+                "componentId": "pro-language-presupposes-logical-regularity-component-01",
+                "targetMoveId": "con-local-assertion-not-universal-lnc",
+                "text": "Show that the logical regularities presupposed by meaningful grammar entail universal non-contradiction rather than merely local structure.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply plausibly argues that paradoxical sentences retain grammatical and predicative regularities, but that concedes rather than answers the distinction between some logical structure and universal non-contradiction."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "Grammar and predication are identifiable, but the move does not specify which logical laws they require or how broadly those laws apply."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The certainty that paradoxical language assumes some regularity is plausible, but it is used without the qualification that this may fall short of universal classical logic."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The opponent accepts extensive grammatical and inferential regularity while denying only the universal scope of non-contradiction.",
+            "decisiveQualification": "Showing that sentences retain singular-plural and predicative structure is compatible with that position."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (55 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "The material is directly issue-bearing, yet it does not contact the decisive entailment from local linguistic regularity to the universal law."
+            }
+          },
+          "evidenceBasis": "The excerpt maintains that even a paradoxical sentence assumes logical regularity through grammar, singular-plural structure, and meaningful sentence formation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-nontheistic-abstract-moral-access",
+          "sectionId": "section-abstract-content-orthodox-metaphysics",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "moveKind": "reply",
+          "proposition": "A non-theist can reject materialism and naive empiricism while affirming rational access to abstract objects and moral truths, so those preconditions do not uniquely entail Orthodox theism.",
+          "sourceSpan": {
+            "startEvent": 1901,
+            "endEvent": 1923,
+            "excerpt": "version of God now let's say let me play along for a bit so I agree that let's say I agree that materialism doesn't cut it right it and naive empiricism doesn't cut but I don't believe in God though right I can believe that I have some rational faculty that engages with abstract objects as a Clayton this does I feel like I can use more or less the same thing to talk about moral"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Malpass explicitly redirects the exchange to Dyer's conclusion and frames a first-person non-theistic alternative before inviting a response.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-no-unique-requirement"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-orthodox-necessity-use-distinction",
+              "pro-language-presupposes-logical-regularity"
+            ],
+            "components": [
+              {
+                "componentId": "con-nontheistic-abstract-moral-access-component-01",
+                "targetMoveId": "pro-orthodox-necessity-use-distinction",
+                "text": "Show that rational access to abstract objects and moral truths uniquely requires Orthodox theism.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-nontheistic-abstract-moral-access-component-02",
+                "targetMoveId": "pro-language-presupposes-logical-regularity",
+                "text": "Distinguish dependence on logical structure from dependence on an Orthodox divine ground.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply supplies a coherent non-theistic, non-materialist alternative with rational access to abstract and moral truths, defeating an inference from rejecting materialism to uniquely Orthodox grounding unless that alternative is independently excluded."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move clearly distinguishes non-theism from materialism and limits its claim to the availability of rational access under a Platonist-style account."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The first-person hypothetical appropriately establishes a live alternative without claiming that the alternative has already been fully vindicated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The affirmative claims not merely access to abstract truths but a unified ultimate explanation of their objectivity and accessibility.",
+            "decisiveQualification": "A live non-theistic access account still blocks unique entailment until its explanatory adequacy is compared rather than assumed away."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The rational-faculty proposal is a relevant conceptual counterexample but lacks detailed defense of access and reliability."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly supports the con motion bridge by presenting the requested non-Orthodox understanding of named preconditions."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly contacts the exclusivity demand, presents a live rival account, and identifies the consequence for the necessity inference."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly grants that materialism and naive empiricism may fail while proposing non-theistic rational access to abstract objects and moral truths.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-platonism-participation-critique",
+          "sectionId": "section-abstract-content-orthodox-metaphysics",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "reply",
+          "proposition": "Platonism cannot adequately connect invariant abstract forms with changing particulars, whereas Orthodox divine archetypes locate those forms in God's eternal mind while preserving real distinctions.",
+          "sourceSpan": {
+            "startEvent": 1924,
+            "endEvent": 2021,
+            "excerpt": "that kind of a response is that the metaphysics of Platonism doesn't work you have a lot of these problems of like the external world and the internal world of the mind and the mind somehow tapping into an external immaterial realm of forms the problem there of course is the duality how does how do we get this invariant unchanging abstract realm to relate to a world of flux and"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dyer answers the invitation to distinguish his view from Platonism and sustains the comparison until Malpass begins a clarification.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-alternative-grounding"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-nontheistic-abstract-moral-access"
+            ],
+            "components": [
+              {
+                "componentId": "pro-platonism-participation-critique-component-01",
+                "targetMoveId": "con-nontheistic-abstract-moral-access",
+                "text": "Explain how a non-theistic Platonist connects invariant abstract forms to changing particulars and human cognition.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly diagnoses a participation and access problem for the proposed Platonist alternative and contrasts it with divine archetypes, although the Orthodox solution is more asserted than demonstrated."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The participation objection is clear, but forms, divine archetypes, concepts, and real distinctions are not fully differentiated in the brief answer."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical claim that Platonist metaphysics does not work exceeds the stated participation problem and lacks acknowledgment of developed Platonist responses."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A Platonist may posit a primitive or defended relation of exemplification and rational acquaintance rather than a spatial mind-to-realm interaction.",
+            "decisiveQualification": "The affirmative must show why those relations are incoherent or explanatorily worse, not merely redescribe them as a duality."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 70,
+              "rationale": "The participation challenge is material, but the contrast does not establish that locating forms in a divine mind resolves rather than relocates the relation."
+            },
+            "evidenceWarrant": {
+              "value": 62,
+              "rationale": "The objection relies on broad assertions about Platonism and gives little representative engagement with rival theories or the Orthodox mechanism."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the con central alternative-grounding bridge by challenging the adequacy of its principal non-theistic model."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The reply raises a genuine participation problem but frames the rival largely as a mind somehow tapping an external realm, omitting its strongest relational formulations."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It squarely contacts a decisive explanatory demand and states the alleged defect, with a compressed account of why the proposed alternative succeeds."
+            }
+          },
+          "evidenceBasis": "The excerpt characterizes Platonism as separating mind and an immaterial realm of forms, then asks how invariant abstract content connects with changing particulars.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-divine-conceptualism-content-distinction",
+          "sectionId": "section-abstract-content-orthodox-metaphysics",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "moveKind": "reply",
+          "proposition": "Divine conceptualism does not explain shared abstract content unless God's act of thinking is distinguished from the proposition or theorem thought about, thereby recreating the original distinction.",
+          "sourceSpan": {
+            "startEvent": 2022,
+            "endEvent": 2098,
+            "excerpt": "shared the same thing so what's going on there right the answer has to be that is something the content of our thought is not itself mental or physical but I'm at the argument or the position that you sketch there is a version of divine conceptualism which says that abstract objects such as propositions or numbers or logical laws or whatever are ideas in the mind of God now for that to work right if God thinks about"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Malpass clarifies his small-p platonism and develops a continuous argument about shared thought content until Dyer takes the floor.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-orthodox-grounding"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-platonism-participation-critique"
+            ],
+            "components": [
+              {
+                "componentId": "con-divine-conceptualism-content-distinction-component-01",
+                "targetMoveId": "pro-platonism-participation-critique",
+                "text": "Explain how locating abstract objects in God's mind preserves shared thought content without recreating a distinction between thinking and what is thought.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies the content-sharing requirement and argues that divine conceptualism must distinguish God's mental act from the proposition or theorem, recreating the distinction invoked against Platonism."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Mental acts, shared content, propositions, and divine conceptualism are distinctly identified and the claimed recreated distinction is recoverable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Given genuinely shared content, the requirement to distinguish a particular thinking episode from what multiple thinkers share is proportionate to the argument."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Orthodox conceptualism may invoke analogy, divine archetypes, or energies rather than identifying propositions with temporal human mental acts.",
+            "decisiveQualification": "Those resources must still explain what makes the content shared and how it differs from each act of thinking without merely renaming the distinction."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the affirmative central Orthodox-grounding bridge at its account of shared abstract content."
+            },
+            "representationalCharity": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly contacts the proposed Orthodox alternative, diagnoses a structural parity problem, and states its defeating consequence."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that shared content is neither the individual physical nor mental act, then applies that distinction to propositions or numbers as ideas in God's mind.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-logoi-analogical-participation",
+          "sectionId": "section-abstract-content-orthodox-metaphysics",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "reply",
+          "proposition": "The Orthodox doctrines of the logoi and essence-energies distinction explain analogous participation in divine concepts without identifying human thoughts, created essences, or numbers with God's essence.",
+          "sourceSpan": {
+            "startEvent": 2099,
+            "endEvent": 2179,
+            "excerpt": "essences or archetypes behind things and that would also collect in numbers two numbers are not identified to the mind of God but they are when we have a thought or something like that we believe in analogy right there is in our view and analogous between the conceptions in our mind and what we're calling the divine concepts are the divine thoughts but we don't think that they're identical to the divine essence"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dyer explicitly receives Malpass's objection as a question for Orthodox theology and gives an extended doctrinal answer through the end of his turn.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-orthodox-grounding"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-divine-conceptualism-content-distinction"
+            ],
+            "components": [
+              {
+                "componentId": "pro-logoi-analogical-participation-component-01",
+                "targetMoveId": "con-divine-conceptualism-content-distinction",
+                "text": "Explain shared abstract content without identifying created thoughts or abstracta with God's mental act or essence.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly invokes logoi, analogy, and the essence-energies distinction to preserve distinctions while grounding participation, but leaves the mechanism compressed."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The non-identity claims are explicit, but analogy, archetypes, logoi, concepts, and energies are not defined sufficiently to stabilize their relations."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The reply carefully denies identity, but presents the doctrinal framework as explanatory without fully warranting how analogous participation secures common content."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The objection does not require identity with God's essence; it requires an account of what distinct thinkers share and how that content relates to divine thought.",
+            "decisiveQualification": "Non-identity and analogy alone do not yet specify the content-preserving relation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central Orthodox-grounding bridge through the specific metaphysical resources named in that bridge."
+            },
+            "representationalCharity": {
+              "value": 80,
+              "rationale": "The reply fairly recognizes the distinction problem and avoids crude identity, though it underdevelops the strongest demand concerning shared content."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the identity objection and supplies the relevant Orthodox doctrinal distinctions, though their explanatory work is not fully shown."
+            }
+          },
+          "evidenceBasis": "The excerpt distinguishes numbers and human conceptions from God's essence and describes their relation to divine archetypes or thoughts as analogical rather than identical.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-actual-experience-alternative-systems",
+          "sectionId": "section-experience-modality-alternatives",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "reply",
+          "proposition": "Alternative formal logics and mathematical systems may be possible, yet ordinary human experience has paradigmatic structures that support a normative transcendental argument for this world.",
+          "sourceSpan": {
+            "startEvent": 2317,
+            "endEvent": 2381,
+            "excerpt": "be abstract systems that function in other ways maybe another possible world or something like that but insofar as we know in this world I think that the normative transcendental argument I'm not saying the normative that it's the same as day to day logical arguments I think it's peridot Matic but the argument I'm making is true in a paradigm Attucks sense for our experience in"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dyer explicitly agrees that other formal systems exist, then qualifies the scope of his argument through a sustained account of human experience.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-actual-experience"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-local-assertion-not-universal-lnc",
+              "con-divine-conceptualism-content-distinction"
+            ],
+            "components": [
+              {
+                "componentId": "pro-actual-experience-alternative-systems-component-01",
+                "targetMoveId": "con-local-assertion-not-universal-lnc",
+                "text": "Clarify whether alternative logical structures defeat the claim about logical norms operative in ordinary human experience.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-actual-experience-alternative-systems-component-02",
+                "targetMoveId": "con-divine-conceptualism-content-distinction",
+                "text": "Address whether the asserted necessities concern all possible systems or the structures instantiated in known experience.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply concedes possible alternative formal systems and narrows the argument to paradigmatic structures of ordinary experience, contacting the modal-scope challenge while not resolving earlier abstract-content concerns."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The limitation to this-world human experience is explicit, though 'normative' and 'paradigmatic' remain only loosely specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The concession that other systems may be possible and the limitation to known experience appropriately reduce the force of the claim."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Alternative logics may be coherent formal systems without describing the dominant structures of ordinary experience.",
+            "decisiveQualification": "That concession preserves an experiential claim but abandons any inference from ordinary structure alone to unrestricted logical necessity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary affirmative actual-experience bridge and reaches the upper end of that burden tier."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It directly contacts and substantially answers the experiential-scope component, while leaving broader necessity implications open."
+            }
+          },
+          "evidenceBasis": "The excerpt concedes possible abstract systems or worlds with other structures and expressly limits the normative transcendental claim to paradigmatic features of known experience.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-alternative-logics-modality-analogy",
+          "sectionId": "section-experience-modality-alternatives",
+          "side": "con",
+          "speaker": "Alex Malpass",
+          "moveKind": "reply",
+          "proposition": "Claims that classical logical principles are necessary preconditions may repeat Kant's mistaken treatment of Euclidean structure, because developed non-classical logics make alternative structures conceptually available.",
+          "sourceSpan": {
+            "startEvent": 2410,
+            "endEvent": 2479,
+            "excerpt": "structure our experience such that it's Euclidean space time because we don't it's not right the empirical refutation of counts transcendental proof there and something about Jays insistence that we must presuppose or seems to me classical logical principles strikes me as something similar I'm not saying we've got empirical refutation of any principles of classical object but these days a development of non classical logics"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "After briefly distinguishing logical and metaphysical possibility, Malpass explicitly returns to the central issue and develops the Kant analogy.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-alternative-systems"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-actual-experience-alternative-systems",
+              "pro-language-presupposes-logical-regularity"
+            ],
+            "components": [
+              {
+                "componentId": "con-alternative-logics-modality-analogy-component-01",
+                "targetMoveId": "pro-actual-experience-alternative-systems",
+                "text": "Show why structures dominant in ordinary experience establish necessary classical logical preconditions despite developed non-classical alternatives.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-alternative-logics-modality-analogy-component-02",
+                "targetMoveId": "pro-language-presupposes-logical-regularity",
+                "text": "Distinguish indispensable linguistic regularity from the full necessity of classical logical principles.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply uses Kant's Euclidean-space error as an analogy and points to developed non-classical logics to diagnose the invalid move from entrenched experiential structure to necessity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The analogy, its target inference, and the modest claim about conceptual availability rather than empirical refutation are clearly distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker expressly presents a similarity rather than a proof and disclaims having an empirical refutation of classical logical principles."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The affirmative may claim only that classical structures govern ordinary experience, not that alternatives are inconceivable.",
+            "decisiveQualification": "Such an empirical-scope claim is compatible with the objection and cannot establish unrestricted necessity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 84,
+              "rationale": "Euclidean geometry and developed non-classical logics are specific comparative support, though the analogy is not a direct logical countermodel by itself."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary con alternative-systems bridge by applying those systems to the affirmative modal inference."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the modal inference, provides a concrete diagnostic analogy, and identifies relevant alternative systems."
+            }
+          },
+          "evidenceBasis": "The excerpt compares the claim about necessary classical principles with Kant's treatment of Euclidean structure and cites the development of non-classical logics while disclaiming empirical refutation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-known-experience-empirical-scope",
+          "sectionId": "section-experience-modality-alternatives",
+          "side": "pro",
+          "speaker": "Jay Dyer",
+          "moveKind": "reply",
+          "proposition": "Alternative abstract systems do not displace the logical and mathematical structures used in ordinary experience, so the argument rests substantially on known experience rather than on a purely a priori proof.",
+          "sourceSpan": {
+            "startEvent": 2479,
+            "endEvent": 2533,
+            "excerpt": "systems that don't utilize those same types of structures so my argument is hinging on the known experience that we do have and actually in many ways my argument is actually empirical and it is based on a lot of sense experience so it's I want to be clear that the argument I'm making is not purely an abstract a priori mathematic based argument I'm making more of a broad scope"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dyer begins with a concession about exceptional physical domains and continues his qualification until the host interrupts the exchange.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-actual-experience"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-alternative-logics-modality-analogy"
+            ],
+            "components": [
+              {
+                "componentId": "pro-known-experience-empirical-scope-component-01",
+                "targetMoveId": "con-alternative-logics-modality-analogy",
+                "text": "Determine what known experiential structures establish once alternative abstract systems are conceded.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The reply expressly concedes that alternative systems do not disappear, justifies narrowing the demand to structures actually used in known experience, and answers that replacement with an empirical broad-scope formulation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The empirical and known-experience scope is repeated explicitly, and the move clearly denies offering a purely abstract a priori proof."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The qualified broad-scope empirical claim matches the limited experiential support and avoids claiming that alternatives are impossible."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The non-classical objection challenges unrestricted necessity but need not deny that ordinary reasoning employs familiar structures.",
+            "decisiveQualification": "An empirical description of ordinary use answers that weaker issue while leaving the original modal and Orthodox-exclusivity burdens open."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "Known experience is a relevant basis, but the move supplies no systematic representative evidence for its broad empirical generalization."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "It directly supports the subsidiary affirmative actual-experience bridge but does not reach a central or motion-level completion condition."
+            },
+            "representationalCharity": {
+              "value": 91,
+              "rationale": "The reply accurately accommodates the strongest alternative-system point and clearly states the narrower conclusion it continues to defend."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "The reframe is explicit and justified by the conceded modal point, though it no longer completes an unrestricted necessity claim."
+            }
+          },
+          "evidenceBasis": "The excerpt says ordinary systems use the familiar structures, then expressly states that the argument hinges on known experience and is not a purely a priori mathematical proof.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule for the pro side.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion exists beyond the locked bridge assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing any alleged residual would not change burden completion independently of scored material."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule for the con side.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion exists beyond the locked bridge assessments.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing any alleged residual would not change burden completion independently of scored material."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-worldview-method-necessity",
+          "title": "Worldview Method and the Necessity Claim",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 71,
+              "moves": [
+                {
+                  "moveId": "pro-worldview-paradigm-coherence",
+                  "importance": 3,
+                  "score": 67
+                },
+                {
+                  "moveId": "pro-orthodox-necessity-use-distinction",
+                  "importance": 3,
+                  "score": 75
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-inference-form-comparison-criteria",
+                  "importance": 2,
+                  "score": 83
+                },
+                {
+                  "moveId": "con-orthodox-necessity-gap",
+                  "importance": 3,
+                  "score": 93
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-induction-regularity-providence",
+          "title": "Induction, Natural Regularity, and Providence",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-induction-grounded-in-providence",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-induction-meta-level-distinction",
+                  "importance": 2,
+                  "score": 78
+                }
+              ]
+            },
+            "con": {
+              "score": 90,
+              "moves": [
+                {
+                  "moveId": "con-providence-induction-parity",
+                  "importance": 3,
+                  "score": 90
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-logic-reductio-discourse",
+          "title": "Logic, Reductio, and Preconditions of Discourse",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 67,
+              "moves": [
+                {
+                  "moveId": "pro-discourse-level-reductio",
+                  "importance": 3,
+                  "score": 65
+                },
+                {
+                  "moveId": "pro-language-presupposes-logical-regularity",
+                  "importance": 3,
+                  "score": 68
+                }
+              ]
+            },
+            "con": {
+              "score": 93,
+              "moves": [
+                {
+                  "moveId": "con-reductio-dialetheist-objection",
+                  "importance": 3,
+                  "score": 92
+                },
+                {
+                  "moveId": "con-local-assertion-not-universal-lnc",
+                  "importance": 3,
+                  "score": 94
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-abstract-content-orthodox-metaphysics",
+          "title": "Abstract Content and Orthodox Metaphysical Grounding",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "pro-platonism-participation-critique",
+                  "importance": 3,
+                  "score": 76
+                },
+                {
+                  "moveId": "pro-logoi-analogical-participation",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            },
+            "con": {
+              "score": 92,
+              "moves": [
+                {
+                  "moveId": "con-nontheistic-abstract-moral-access",
+                  "importance": 3,
+                  "score": 91
+                },
+                {
+                  "moveId": "con-divine-conceptualism-content-distinction",
+                  "importance": 3,
+                  "score": 92
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-experience-modality-alternatives",
+          "title": "Actual Experience, Modality, and Alternative Systems",
+          "weightPercent": 12,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-actual-experience-alternative-systems",
+                  "importance": 2,
+                  "score": 77
+                },
+                {
+                  "moveId": "pro-known-experience-empirical-scope",
+                  "importance": 2,
+                  "score": 85
+                }
+              ]
+            },
+            "con": {
+              "score": 88,
+              "moves": [
+                {
+                  "moveId": "con-alternative-logics-modality-analogy",
+                  "importance": 2,
+                  "score": 88
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 74.26,
+          "burdenCompletionAdjustment": 0,
+          "score": 74
+        },
+        "con": {
+          "weightedSectionMean": 90.68,
+          "burdenCompletionAdjustment": 0,
+          "score": 91
+        }
+      },
+      "winner": "con",
+      "winningMargin": 17
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 18,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 108383,
+  "proposedAdapterSha256": "9ee905f709f3866f9e1069dced54fe45a0e29008c20521b4597e441e41ba606d",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "72",
+    "sections": 5,
+    "moves": 18,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-01-single-deterministic-score-pass",
+    "adapterSha256": "9ee905f709f3866f9e1069dced54fe45a0e29008c20521b4597e441e41ba606d",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
