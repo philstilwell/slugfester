@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-selection-analysis",
+  "protocolId": "assessment-production-post-canary-batch-02",
+  "status": "second-post-canary-batch-selection-analysis-passed-awaiting-source-packet-preparation-decision",
+  "analyzedAt": "2026-08-16T23:26:45Z",
+  "selection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/selection.json",
+    "bytes": 31621,
+    "sha256": "b2483a65feaf6a2f554d10f463fd5e50e6bcd411166064b6c038f0179afea19c",
+    "status": "second-post-canary-ten-debate-batch-selection-frozen-source-gate-passed"
+  },
+  "priorBatchPublication": {
+    "batchNumber": 1,
+    "atomicCommit": "1e4408ccc6ef8b8586e66c8b95b566a6b1117fc1",
+    "completionExecutionSha256": "4ee4027f091e29881ccf9294437044555b4733900173598ea13814e9ef9f0958",
+    "completionAnalysisSha256": "468c05f8ffcf65362747d2c260103253b815f184440e3fa4fc083c7ab260c9ce",
+    "accepted": true
+  },
+  "selectedDebates": [
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "rankOrdinal": 11,
+      "rankSha256": "16a1b2d46586e1ae0966f650acb1fe641007ffe3679f93006fe1f3a79ff7b6b3"
+    },
+    {
+      "debateNumber": "172",
+      "debateId": "hitchens-mcgrath-religious-belief-2007",
+      "rankOrdinal": 12,
+      "rankSha256": "1773a4f3a996ea8c244388afb2a38fe13dc3bfbd2ce51d5b25c23f53a3b875bb"
+    },
+    {
+      "debateNumber": "04",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "rankOrdinal": 13,
+      "rankSha256": "1aee969e2a8b4df15f708f8e046a7d113df7172b4ca7eeb1e05a181445e202be"
+    },
+    {
+      "debateNumber": "136",
+      "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+      "rankOrdinal": 14,
+      "rankSha256": "1d17c3a9cc03cd60d1fc8bec1b4fc625aec5206a89e8cb1ed5de029114578efe"
+    },
+    {
+      "debateNumber": "83",
+      "debateId": "loke-oppy-kalam-causal-principle-2020",
+      "rankOrdinal": 15,
+      "rankSha256": "2223ba6d4ebec357215dcf580af782b138ef2cffb6bb40338c895ca2eb6fff5f"
+    },
+    {
+      "debateNumber": "66",
+      "debateId": "donahue-fodor-case-against-christianity-2025",
+      "rankOrdinal": 16,
+      "rankSha256": "23ad8c84ccf8a9caae0ed6bec7d1ecc273ba7c13f724e956311a1cba91e2a9c1"
+    },
+    {
+      "debateNumber": "126",
+      "debateId": "craig-clifton-kalam-cosmological-argument-2021",
+      "rankOrdinal": 17,
+      "rankSha256": "24066ebd2d0ef9f143ac641b9c07d9218ce103c881fb4bf9729fdefef23b963d"
+    },
+    {
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "rankOrdinal": 18,
+      "rankSha256": "25ce16e08a3283d7236b633cd49635aad7e9ff74ab439f102cb6b73cd5f4955a"
+    },
+    {
+      "debateNumber": "93",
+      "debateId": "hunter-dillahunty-christian-god-exist-2019",
+      "rankOrdinal": 19,
+      "rankSha256": "2621c5219da436eacfe72722d5e3bc883bef2f29f2d08f7b1fd54f4536658d7f"
+    },
+    {
+      "debateNumber": "101",
+      "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+      "rankOrdinal": 20,
+      "rankSha256": "268f5302d505893edb420833b5e592e56eaa129781f0f23f6f7f5b337f97e0aa"
+    }
+  ],
+  "finding": "Successful Batch 1 production publication was authenticated at the pushed atomic commit. The immutable campaign rank then selected ordinals 11 through 20 as ten unique pending dyadic debates, and all thirty effective source files and ten canonical event chains passed without replacement.",
+  "decision": {
+    "priorBatchPublicationPrerequisitePassed": true,
+    "deterministicSelectionPassed": true,
+    "selectedSourceGatePassed": true,
+    "replacementsUsed": 0,
+    "sourcePacketPreparationAttempted": false,
+    "modelExecutionAttempted": false,
+    "paidServiceUsed": false,
+    "productionMutationAttempted": false,
+    "nextBatchSelectionAttempted": false
+  },
+  "nextAuthorizedAction": "user-decision-on-second-post-canary-batch-source-packet-preparation"
+}
