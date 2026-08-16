@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-generated-seo-derivative-correction-execution",
+  "protocolId": "assessment-production-post-canary-batch-01-generated-seo-derivative-correction",
+  "status": "failed-closed-before-generated-production-writes-at-harness-output-set-size-control",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "startedAt": null,
+  "startedAtWasCaptured": false,
+  "failureRecordedAt": "2026-08-16T22:51:08Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/generated-seo-correction/execution-activation.json",
+    "sha256": "66b5766cac36fbdd18d2d12889a881be5e40a152bc7ff7cbb87c6d1f3c3eb8cd",
+    "status": "batch-01-generated-seo-derivative-correction-single-pass-authorized-and-frozen"
+  },
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/generated-seo-correction/correction-plan.json",
+    "sha256": "a9bd24b4a6d8768d710cc1968f7b458d515ef12565726cb263fdeffe90d95391",
+    "inventorySha256": "61473df8683bccfdda409e5ef193dbfc285736337c9f78fe310a9abf0a9e5003"
+  },
+  "attempt": {
+    "correctionPassesAuthorized": 1,
+    "correctionPassesAttempted": 1,
+    "correctionPassesAccepted": 0,
+    "isolatedGeneratorRuns": 1,
+    "generatedProductionFilesWritten": 0,
+    "repositoryValidationRuns": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "productionMutationReruns": 0,
+    "rollbacks": 0
+  },
+  "isolatedGeneration": {
+    "completed": true,
+    "generatorOutput": "Generated 380 SEO files.",
+    "generatorReportedOutputs": 380,
+    "temporaryCopyRemoved": true,
+    "temporaryDirectoriesRemaining": 0,
+    "productionRepositoryGeneratedFilesWritten": 0
+  },
+  "failure": {
+    "id": "correction-harness-generated-output-enumerator-omitted-two-routes",
+    "stage": "generated output set size control before inventory comparison and writes",
+    "errorName": "Error",
+    "message": "generated file set size mismatch",
+    "requiredGeneratedOutputs": 380,
+    "harnessEnumeratedOutputs": 378,
+    "enumeratedRootFiles": 373,
+    "enumeratedFixedFiles": 5,
+    "omittedGeneratedOutputs": [
+      "index.html",
+      "search/index.html"
+    ],
+    "plainEnglish": "The isolated generator created the required 380 outputs, but the execution harness counted only 378 because its file enumerator did not include the generated home page or search page. The size assertion stopped the pass before the frozen inventory comparison, the twelve-file copy, or repository validation.",
+    "generatorDefect": false,
+    "frozenInventoryDefect": false,
+    "productionContentDefectObserved": false,
+    "executionHarnessDefect": true
+  },
+  "writeBoundary": {
+    "inventoryDigestVerificationReached": false,
+    "proposedOutputHashVerificationReached": false,
+    "productionWriteLoopReached": false,
+    "twelveGeneratedDerivativesChanged": 0,
+    "otherGeneratedOutputsChanged": 0,
+    "productionDebatesChangedByCorrection": false,
+    "productionLedgersChangedByCorrection": 0,
+    "productionReferencesChanged": false,
+    "validatorChanged": false,
+    "generatorChanged": false,
+    "candidatesChanged": false,
+    "stagedLedgersChanged": false,
+    "compatibilityEvidenceChanged": false
+  },
+  "preservedProductionState": {
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "sha256": "89d1787ecba5e88dd788915615002fab5437f762f04ba97764dda419dbf115c1",
+      "matchesFrozenMutation": true,
+      "committed": false,
+      "pushed": false
+    },
+    "productionLedgerFilesPresent": 10,
+    "productionLedgerHashesMatched": 10,
+    "productionReferences": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+      "byteIdentical": true
+    },
+    "validatorSha256": "bd61fcb97ea4480b2768fa4575124eac354b09beb8276ae4a3ba04df9812ddcd",
+    "generatorSha256": "8ed300943f4d15db89128a39d664be51b9b48dc610c92ec4d8c57065f597fe2f",
+    "compatibilityAcceptanceSha256": "806c95ce8161b6aefc066c153a43ae42a70f89077436a6e55e385a7022ab11ca"
+  },
+  "validation": {
+    "command": "npm run check",
+    "authorizedRuns": 1,
+    "commandRuns": 0,
+    "completed": false,
+    "notReachedBecause": "The required pre-write generated output set size control failed."
+  },
+  "totals": {
+    "isolatedGeneratorRuns": 1,
+    "generatedOutputsReported": 380,
+    "generatedProductionFilesWritten": 0,
+    "repositoryValidationRuns": 0,
+    "commitsCreatedForCompleteTransaction": 0,
+    "completeTransactionPushes": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "nextBatchSelections": 0
+  },
+  "authorization": {
+    "failureDiagnosis": true,
+    "failureAuditCommitAndPush": true,
+    "correctionRetry": false,
+    "correctionRerun": false,
+    "replacementHarnessPreparation": false,
+    "replacementHarnessExecution": false,
+    "generatedProductionWrites": false,
+    "repositoryValidation": false,
+    "productionMutationRerun": false,
+    "rollback": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "firstFailureStoppedPass": true,
+    "noRetryHonored": true,
+    "noRerunHonored": true,
+    "noAutomaticRepairHonored": true,
+    "noProductionMutationRerunHonored": true,
+    "noRollbackHonored": true,
+    "partialTransactionNotCommitted": true,
+    "partialTransactionNotPushed": true,
+    "modelExecutionForbidden": true,
+    "paidServiceForbidden": true,
+    "nextBatchSelectionForbidden": true
+  },
+  "nextAuthorizedAction": "user-approval-required-before-separate-batch-01-generated-seo-correction-2-plan-preparation-only"
+}
