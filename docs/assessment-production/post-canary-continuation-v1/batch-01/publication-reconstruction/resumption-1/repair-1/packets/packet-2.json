@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-publication-resumption-1-repair-1",
+  "packetIndex": 2,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "13",
+  "debateId": "knechtle-oconnor-christian-morality-2025",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/resumption-1/outputs/debate-13.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/packets/debate-13.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-slavery-law-accommodation.critique"
+    ],
+    "writableFieldCount": 1,
+    "maximumWritableFields": 2,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "identityStructureMovesTagsOverallCommentaryAndAIExtensionImmutable": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "quoteTargetWords": [
+      6,
+      14
+    ],
+    "quoteAcceptanceWords": [
+      3,
+      18
+    ],
+    "quoteMustBeExactEligibleSourceSubstring": true,
+    "critiqueLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueTargetWords": [
+      112,
+      118
+    ],
+    "critiqueAcceptanceWords": [
+      105,
+      130
+    ],
+    "critiquePreferredMinimumCharacters": 900,
+    "critiqueAcceptanceMinimumCharacters": 880,
+    "critiqueExactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-slavery-law-accommodation.critique",
+      "repairType": "critique",
+      "moveId": "pro-slavery-law-accommodation",
+      "originalCritique": "Strongest feature: The response offers a clear governing distinction between moral ideals and temporary legal accommodation, illustrating it through the intelligible divorce analogy and connecting difficult legislation to a broader fallen-world framework. Principal limitation: A general category of accommodation does not explain why particular permissions concerning ownership, punishment, purchase, or family separation were necessary, nor does the analogy establish that less harmful regulatory alternatives were unavailable. Live burden: The defense must evaluate each challenged provision individually, identify the constrained evil being reduced, specify the morally preferable ideal, and show credible directional movement toward that ideal without treating regulation alone as exoneration. Locked score: The assessment properly credits direct central relevance and conceptual clarity while reflecting categorical overstatement, comparatively limited warrant, incomplete responsiveness, and insufficient representation of the skeptic's strongest provision-specific counterexamples.",
+      "originalWords": 131,
+      "originalCharacters": 1089,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-slavery-law-accommodation",
+        "sectionId": "section-slavery-accommodation",
+        "side": "pro",
+        "speaker": "Cliffe Knechtle",
+        "moveKind": "reply",
+        "proposition": "Old Testament slavery laws are instructions regulating life in a hard-hearted, fallen society rather than approval of slavery, analogous to permitted divorce departing from the creation ideal.",
+        "importance": 3,
+        "finalScore": 73,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "39:01",
+        "sourceSpan": {
+          "startEvent": 713,
+          "endEvent": 729,
+          "startMs": 2341200,
+          "endMs": 2404400
+        },
+        "sourceExcerpt": "hearts were hard. It gets right back to the book of Job. We live in an unfair, cursed, messed up world. And unfortunately, if there's been adultery, divorce is permissible before God, but that is not the way it was from the beginning. From Genesis 2, 24, for this reason, a man shall leave his father and mother, be united to his wife, and the two shall become one flesh. So remember, those laws in the Old Testament are instructions, not approval",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 82,
+          "characterCount": 447
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-difficult-texts"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-slavery-property-permission",
+            "con-job-terrifying-submission"
+          ],
+          "components": [
+            {
+              "componentId": "pro-slavery-law-accommodation-component-01",
+              "targetMoveId": "con-slavery-property-permission",
+              "text": "Whether biblical slavery regulations constitute moral approval of slavery rather than constrained instruction in a fallen society.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-slavery-law-accommodation-component-02",
+              "targetMoveId": "con-slavery-property-permission",
+              "text": "Why the specific ownership, purchase, and beating provisions were morally permissible accommodations.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-slavery-law-accommodation-component-03",
+              "targetMoveId": "con-job-terrifying-submission",
+              "text": "Whether Job portrays divine authority as terrifying rather than loving and morally reassuring.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts the regulation-versus-approval distinction through the divorce analogy, but does not explain the particular slavery permissions or why less harmful rules were unavailable.",
+          "responsivenessWithinClass": {
+            "value": 68,
+            "rationale": "Within partial answers, it contacts the general decisive distinction but leaves the objection's specific ownership, beating, and purchase provisions unanswered."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "Within partial answers, it contacts the general decisive distinction but leaves the objection's specific ownership, beating, and purchase provisions unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between temporary instruction and moral approval is explicit, stable, and illustrated by a clearly identified analogy."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The conclusion that the laws are instruction rather than approval is categorical despite the analogy not establishing why these particular permissions were necessary."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Some slavery provisions do more than mitigate an unavoidable practice by affirmatively permitting ownership, purchase, punishment, or family separation.",
+          "decisiveQualification": "A general accommodation category does not explain each avoidable permission or show that regulation lacks moral authorization."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (71 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly advances the difficult-texts bridge by distinguishing an asserted creation ideal from temporary legal accommodation."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes hard hearts, a fallen world, permitted divorce, and the Genesis marriage ideal to argue that Old Testament laws can instruct without approving.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

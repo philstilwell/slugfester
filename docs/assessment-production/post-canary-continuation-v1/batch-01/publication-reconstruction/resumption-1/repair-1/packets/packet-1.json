@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-publication-resumption-1-repair-1",
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "13",
+  "debateId": "knechtle-oconnor-christian-morality-2025",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/resumption-1/outputs/debate-13.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/packets/debate-13.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-consolation-not-truth.critique",
+      "moveProse.con-job-terrifying-submission.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "identityStructureMovesTagsOverallCommentaryAndAIExtensionImmutable": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "quoteTargetWords": [
+      6,
+      14
+    ],
+    "quoteAcceptanceWords": [
+      3,
+      18
+    ],
+    "quoteMustBeExactEligibleSourceSubstring": true,
+    "critiqueLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueTargetWords": [
+      112,
+      118
+    ],
+    "critiqueAcceptanceWords": [
+      105,
+      130
+    ],
+    "critiquePreferredMinimumCharacters": 900,
+    "critiqueAcceptanceMinimumCharacters": 880,
+    "critiqueExactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-consolation-not-truth.critique",
+      "repairType": "critique",
+      "moveId": "con-consolation-not-truth",
+      "originalCritique": "Strongest feature: The reply sharply separates psychological usefulness from epistemic confirmation, identifies a plausible genealogical alternative, and carefully presents consolation as a reason for suspicion rather than as deductive proof of Christianity's falsity. Principal limitation: The explanatory possibility remains largely programmatic, because demonstrating that a belief satisfies profound emotional needs does not establish that those needs produced the belief or substantially reduce its independent evidential support. Live burden: The skeptic must supply comparative reasons for preferring the human-construction account while acknowledging that consoling consequences may coexist with truth and that Christian evidence could stand independently of psychological benefit. Locked score: The assessment appropriately recognizes exceptional diagnostic clarity, charitable calibration, and central burden contact while retaining an evidential reservation concerning the transition from a credible debunking possibility to a supported historical or psychological explanation.",
+      "originalWords": 133,
+      "originalCharacters": 1088,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "con-consolation-not-truth",
+        "sectionId": "section-meaning-truth-consolation",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Christianity's capacity to relieve suffering and existential dread can itself explain the appeal and persistence of its salvific story without establishing that the story is true.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "10:34",
+        "sourceSpan": {
+          "startEvent": 175,
+          "endEvent": 197,
+          "startMs": 634000,
+          "endMs": 716160
+        },
+        "sourceExcerpt": "a story we can tell ourselves, which will help us overcome that. And there are two theses here. One is that that's because it's true, and this is how the world is supposed to be. And one is that, well, it's because of all of the suffering and the meaninglessness that people have created this story of Christianity to overcome it. I mean, my suspicion of a position almost exactly",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-consolation-truth"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-transcendence-wellbeing-meaning",
+            "pro-sin-grace-eternal-life"
+          ],
+          "components": [
+            {
+              "componentId": "con-consolation-not-truth-component-01",
+              "targetMoveId": "pro-transcendence-wellbeing-meaning",
+              "text": "Whether Christianity's benefits for meaning and well-being provide support for its salvific claims being true.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-consolation-not-truth-component-02",
+              "targetMoveId": "pro-sin-grace-eternal-life",
+              "text": "Whether the appealing account of forgiveness and eternal life is independently established rather than explained by its consoling convenience.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply explicitly identifies the usefulness-to-truth inference as defective and states the consequence that consolation can explain belief without verifying Christianity.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within diagnostic defeats, it expressly contacts the decisive inference and articulates a clear alternative explanation of the same evidence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it expressly contacts the decisive inference and articulates a clear alternative explanation of the same evidence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between consoling usefulness and truth is explicit, and the speaker labels the convenience-based account as a suspicion rather than a demonstration."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move cautiously presents psychological invention as one explanatory possibility and does not claim that convenience logically proves falsehood."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A belief may be consoling and nevertheless true, with consolation reflecting rather than explaining away reality.",
+          "decisiveQualification": "Convenience alone does not determine falsity; it supplies a rival causal explanation that weakens benefit-based confirmation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly addresses the indispensable separation between psychological consolation and evidential support for Christian truth."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The move preserves the distinction between suspicion and disproof and fairly targets the evidential inference rather than simply declaring consoling belief false."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly contrasts Christianity being true with humans creating its story to overcome suffering and meaninglessness, while describing the latter as a suspicion.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-job-terrifying-submission.critique",
+      "repairType": "critique",
+      "moveId": "con-job-terrifying-submission",
+      "originalCritique": "Strongest feature: The reply grounds its moral interpretation in recognizable textual features, including demanding questions, apparent sarcasm, intimidation, and Job's fearful response, while consistently qualifying the conclusion as an appearance rather than demonstrative certainty. Principal limitation: Its concentrated reading of rhetorical force does not fully develop the alternative interpretation that divine questioning teaches epistemic humility, exposes Job's limited perspective, or functions within the broader literary resolution rather than as straightforward coercion. Live burden: The skeptic must show why intimidating rhetoric outweighs the wisdom framework and why fear-driven submission best explains Job's response after the complete narrative context is considered. Locked score: The assessment appropriately rewards precision, calibration, textual warrant, and direct pressure on divine character while preserving room for the insufficiently explored humility interpretation and the move's narrower reach beyond Job.",
+      "originalWords": 131,
+      "originalCharacters": 1042,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-job-terrifying-submission",
+        "sectionId": "section-sin-suffering-judgment",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "God's whirlwind speech in Job appears angry and terrifying rather than loving or consoling, and Job's repentance resembles fear-driven submission instead of a morally reassuring answer to suffering.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "19:52",
+        "sourceSpan": {
+          "startEvent": 358,
+          "endEvent": 391,
+          "startMs": 1192080,
+          "endMs": 1291040
+        },
+        "sourceExcerpt": "Job. And he has God say, instead of, you know, gird up thy loins, I will question you, and you'll give me an answer. He says, you know, stand up like a man. I'm going to ask you some questions. Please instruct me. That's what he says. Please instruct me. It's almost sarcastic, right? Because the feeling that you get from God here is like this terrifying rant, right? It doesn't scream love",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 391
+        },
+        "attributionConfidence": "high",
+        "audioVerified": true,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-divine-character"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-suffering-cross-restoration"
+          ],
+          "components": [
+            {
+              "componentId": "con-job-terrifying-submission-component-01",
+              "targetMoveId": "pro-suffering-cross-restoration",
+              "text": "Whether the Christian treatment of Job and suffering displays a loving divine character and supplies moral reassurance.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-job-terrifying-submission-component-02",
+              "targetMoveId": "pro-suffering-cross-restoration",
+              "text": "Whether Job's response reflects warranted trust rather than fear-driven submission before overwhelming power.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly contests the favorable interpretation of Job through the speech's threatening language and Job's fearful reaction, although it does not answer the broader cross-and-restoration account.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "Within partial answers, it contacts a decisive divine-character component but leaves the broader Christological and restorative components unanswered."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it contacts a decisive divine-character component but leaves the broader Christological and restorative components unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move consistently limits itself to how the whirlwind speech appears and characterizes the fear-based interpretation as an evaluative reading."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Terms such as appears, feeling, and almost appropriately calibrate the interpretive conclusion to the quoted and paraphrased textual features."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "God's questions humble limited human understanding rather than constitute an angry refusal to answer suffering.",
+          "decisiveQualification": "Epistemic humility may explain the questioning while the intimidating rhetoric and Job's fearful response still require moral explanation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly tests whether a major biblical portrayal of divine response to suffering fits asserted divine moral character."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The move recognizes the speech's interrogative purpose but foregrounds its frightening force; it could more fully address the wisdom-and-humility interpretation."
+          }
+        },
+        "evidenceBasis": "The excerpt cites God's demanding questions and sarcastic-sounding request for instruction, describing the speech as terrifying rather than expressive of love.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
