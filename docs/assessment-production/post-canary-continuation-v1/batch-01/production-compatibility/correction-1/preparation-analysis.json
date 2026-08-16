@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-compatibility-correction-preparation-analysis",
+  "protocolId": "assessment-production-post-canary-batch-01-compatibility-correction-1",
+  "status": "batch-01-compatibility-correction-plan-freeze-passed",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "planningOnly": true,
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/correction-1/preparation-manifest.json",
+    "sha256": "2e2f6cf37b946b28f0c6286393cd18e55cf894131e083c699843646f83c995be"
+  },
+  "correctionPacket": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/correction-1/correction-packet.json",
+    "sha256": "069a588fcd7ac011e14101d4b1a4b3a699e8603465cf8583d672eea30628de99"
+  },
+  "proposedValidator": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/correction-1/proposed-validator.mjs",
+    "targetPath": "scripts/validate-debates.mjs",
+    "sha256": "bd61fcb97ea4480b2768fa4575124eac354b09beb8276ae4a3ba04df9812ddcd",
+    "bytes": 26245
+  },
+  "checks": {
+    "failedExecutionPreserved": true,
+    "failureDiagnosisPreserved": true,
+    "routeLevelTamperContractDefined": true,
+    "innerReplayContractDefined": true,
+    "mutableAnalysisDependencyRemovedFromProposal": true,
+    "correctionSpecificActivationRouteDefined": true,
+    "exactValidatorOutputFrozen": true,
+    "packetsPreserved": 10,
+    "stagedAdaptersPreserved": 10,
+    "packetRewrites": 0,
+    "stagedAdapterRewrites": 0,
+    "activeValidatorChangedThisStage": false,
+    "compatibilityPassesExecuted": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "productionMutationPerformed": false
+  },
+  "totals": {
+    "findings": 2,
+    "exactValidatorTransformations": 6,
+    "debates": 10,
+    "packetsPreserved": 10,
+    "stagedAdaptersPreserved": 10,
+    "stagedAdapterBytesPreserved": 1063267,
+    "packetRewrites": 0,
+    "stagedAdapterRewrites": 0,
+    "compatibilityPassesExecuted": 0,
+    "compatibilityReruns": 0,
+    "modelContexts": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "productionLedgerPublications": 0,
+    "productionMutations": 0
+  },
+  "authorization": {
+    "correctionPlanPreparation": true,
+    "correctionExecutionActivation": false,
+    "validatorCorrectionExecution": false,
+    "compatibilityRerun": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "separateCorrectionExecutionApprovalRequired": true,
+    "sourceHashMismatchBlocks": true,
+    "proposedValidatorHashMismatchBlocks": true,
+    "packetHashMismatchBlocks": true,
+    "stagedAdapterHashMismatchBlocks": true,
+    "unexpectedWriteBlocks": true,
+    "exactlyOneCorrectionPassIfApproved": true,
+    "automaticContinuationForbidden": true,
+    "automaticRerunForbidden": true,
+    "packetRewriteForbidden": true,
+    "stagedAdapterRewriteForbidden": true,
+    "scoreChangeForbidden": true,
+    "proseChangeForbidden": true,
+    "modelExecutionForbidden": true,
+    "paidServiceForbidden": true,
+    "productionLedgerPublicationForbidden": true,
+    "productionMutationForbidden": true,
+    "nextBatchSelectionForbidden": true
+  },
+  "nextAuthorizedAction": "user-approval-required-before-batch-01-compatibility-correction-1-activation-and-single-execution"
+}

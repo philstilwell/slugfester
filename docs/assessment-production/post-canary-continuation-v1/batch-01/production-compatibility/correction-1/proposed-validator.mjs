@@ -1,0 +1,759 @@
+import { debates } from "../src/data/debates.js";
+import { getReferenceDefinition, referenceFromUrl } from "../src/data/references.js";
+import { existsSync, readFileSync } from "node:fs";
+import {
+  calculateV2Ledger,
+  calculateV21Ledger,
+  V2_RUBRIC,
+  V21_RUBRIC
+} from "./lib/reassessment-scoring.mjs";
+import {
+  CHECKPOINT_V22_COMPATIBILITY_REMEDY_ROOT,
+  CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION,
+  sha256,
+  validateCheckpointV22SiteLedgerAdapter
+} from "./lib/assessment-production-checkpoint-v2.2-compatibility-remedy.mjs";
+import {
+  POST_CANARY_BATCH_01_COMPATIBILITY_ROOT,
+  POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION,
+  validatePostCanaryBatch01SiteLedgerAdapter
+} from "./lib/assessment-production-post-canary-batch-01-compatibility.mjs";
+
+const errors = [];
+const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const debateNumberPattern = /^\d{2,}$/;
+const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+const youtubePattern = /^https:\/\/(www\.)?youtube\.com\/watch\?v=[A-Za-z0-9_-]+/;
+const legacyAssessmentModel = "GPT 5.5 Extra High";
+const currentAssessmentModel = "5.6 Terra Extra High";
+const reassessmentRubrics = new Set([V2_RUBRIC, V21_RUBRIC]);
+const terraAssessmentFirstDebate = 131;
+const explicitTopicCategoryFirstDebate = 190;
+const topicCategoryIds = new Set([
+  "cosmological-arguments",
+  "science-design",
+  "scripture-jesus-resurrection",
+  "meaning-purpose",
+  "morality-ethics",
+  "evil-suffering-hiddenness",
+  "mind-consciousness-free-will",
+  "logic-reason-presuppositions",
+  "religion-society-public-reason",
+  "god-theism-atheism",
+  "broader-debate-questions"
+]);
+
+function pathLabel(parts) {
+  return parts.join(".");
+}
+
+function addError(path, message) {
+  errors.push(`${pathLabel(path)}: ${message}`);
+}
+
+function isPlainObject(value) {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+}
+
+function wordCount(value) {
+  return String(value || "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+}
+
+function requireString(object, key, path, options = {}) {
+  const value = object?.[key];
+  if (typeof value !== "string" || !value.trim()) {
+    addError([...path, key], "must be a non-empty string");
+    return "";
+  }
+
+  if (options.pattern && !options.pattern.test(value)) {
+    addError([...path, key], options.patternMessage || "has an invalid format");
+  }
+
+  if (options.minWords && wordCount(value) < options.minWords) {
+    addError([...path, key], `must contain at least ${options.minWords} words`);
+  }
+
+  if (options.maxWords && wordCount(value) > options.maxWords) {
+    addError([...path, key], `must contain no more than ${options.maxWords} words`);
+  }
+
+  return value;
+}
+
+function requireScore(object, key, path) {
+  const value = object?.[key];
+  if (!Number.isInteger(value) || value < 0 || value > 100) {
+    addError([...path, key], "must be an integer from 0 to 100");
+  }
+}
+
+function requireArray(object, key, path, options = {}) {
+  const value = object?.[key];
+  if (!Array.isArray(value)) {
+    addError([...path, key], "must be an array");
+    return [];
+  }
+
+  if (options.minLength && value.length < options.minLength) {
+    addError([...path, key], `must contain at least ${options.minLength} items`);
+  }
+
+  if (options.maxLength && value.length > options.maxLength) {
+    addError([...path, key], `must contain no more than ${options.maxLength} items`);
+  }
+
+  return value;
+}
+
+export function isAdjudicatedConsensusLedgerAdapterVersion(schemaVersion) {
+  return (
+    schemaVersion === CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION ||
+    schemaVersion === POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION
+  );
+}
+
+function usesAdjudicatedConsensusLedgerAdapter(debate) {
+  if (!debate?.id) return false;
+  const ledgerUrl = new URL(
+    `../docs/assessment-ledgers/${encodeURIComponent(debate.id)}.json`,
+    import.meta.url
+  );
+  if (!existsSync(ledgerUrl)) return false;
+  try {
+    return isAdjudicatedConsensusLedgerAdapterVersion(
+      JSON.parse(readFileSync(ledgerUrl, "utf8")).schemaVersion
+    );
+  } catch {
+    return false;
+  }
+}
+
+export function validatePostCanaryBatch01LedgerAdapterRouteLocks({
+  debate,
+  ledgerText,
+  packetPath,
+  packetText,
+  packet,
+  activation,
+  preparationText
+}) {
+  const packetLock = activation.packetHashes?.find(
+    (item) => item.debateNumber === debate.number
+  );
+  if (
+    activation.status !==
+      "post-canary-batch-01-compatibility-correction-1-execution-authorized-and-frozen" ||
+    !activation.authorization?.compatibilityExecution ||
+    !activation.authorization?.validatorMigration ||
+    !activation.authorization?.stagingLedgerWrite ||
+    sha256(preparationText) !== activation.preparation?.sha256 ||
+    !packetLock ||
+    packetLock.path !== packetPath ||
+    packetLock.debateId !== debate.id ||
+    sha256(packetText) !== packetLock.sha256 ||
+    packet.debateNumber !== debate.number ||
+    packet.debateId !== debate.id ||
+    packet.futurePaths?.productionLedger !==
+      `docs/assessment-ledgers/${debate.id}.json` ||
+    packet.proposedAdapterSha256 !== packetLock.proposedAdapterSha256 ||
+    sha256(ledgerText) !== packetLock.proposedAdapterSha256
+  ) {
+    throw new Error(
+      "Batch 1 adapter, packet, or activation differs from its frozen route"
+    );
+  }
+  return packetLock;
+}
+
+export function validatePostCanaryBatch01LedgerAdapterRoute({
+  debate,
+  ledger,
+  ledgerText
+}) {
+  const packetPath =
+    `${POST_CANARY_BATCH_01_COMPATIBILITY_ROOT}/packets/debate-${debate.number}.json`;
+  const activationPath =
+    `${POST_CANARY_BATCH_01_COMPATIBILITY_ROOT}/correction-1/execution-activation.json`;
+  const packetText = readFileSync(
+    new URL(`../${packetPath}`, import.meta.url),
+    "utf8"
+  );
+  const packet = JSON.parse(packetText);
+  const activation = JSON.parse(
+    readFileSync(new URL(`../${activationPath}`, import.meta.url), "utf8")
+  );
+  const preparationText = readFileSync(
+    new URL(`../${activation.preparation?.path}`, import.meta.url),
+    "utf8"
+  );
+  validatePostCanaryBatch01LedgerAdapterRouteLocks({
+    debate,
+    ledgerText,
+    packetPath,
+    packetText,
+    packet,
+    activation,
+    preparationText
+  });
+  const validation = validatePostCanaryBatch01SiteLedgerAdapter({
+    adapter: ledger,
+    candidate: debate,
+    expectedSourceLocks: packet.sourceLocks
+  });
+  if (!debate.logicalExtension) {
+    throw new Error("Batch 1 production assessments require an AI Extension");
+  }
+  return validation;
+}
+
+function validateReassessmentLedger(debate, path) {
+  const isV21 = debate.assessmentRubric === V21_RUBRIC;
+  const ledgerUrl = new URL(
+    `../docs/assessment-ledgers/${encodeURIComponent(debate.id)}.json`,
+    import.meta.url
+  );
+
+  if (!existsSync(ledgerUrl)) {
+    addError([...path, "assessmentRubric"], "requires a matching JSON assessment ledger");
+    return;
+  }
+
+  let ledger;
+  let ledgerText;
+  try {
+    ledgerText = readFileSync(ledgerUrl, "utf8");
+    ledger = JSON.parse(ledgerText);
+  } catch (error) {
+    addError([...path, "assessmentRubric"], `ledger is not valid JSON: ${error.message}`);
+    return;
+  }
+
+  if (ledger.debateId !== debate.id) {
+    addError([...path, "assessmentRubric"], "ledger debateId must match the debate id");
+  }
+  if (ledger.model !== debate.assessmentModel) {
+    addError([...path, "assessmentModel"], "must match the saved assessment ledger model");
+  }
+  const ledgerRubric = isV21 ? ledger.rubricVersion : ledger.rubric;
+  if (ledgerRubric !== debate.assessmentRubric) {
+    addError([...path, "assessmentRubric"], `ledger rubric must be ${debate.assessmentRubric}`);
+  }
+  if (isV21 && ledger.calibrationOnly !== false) {
+    addError([...path, "assessmentRubric"], "published v2.1 ledgers must set calibrationOnly to false");
+  }
+
+  if (ledger.schemaVersion === CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION) {
+    try {
+      const packetUrl = new URL(
+        `../${CHECKPOINT_V22_COMPATIBILITY_REMEDY_ROOT}/packets/debate-${encodeURIComponent(debate.number)}.json`,
+        import.meta.url
+      );
+      const activationUrl = new URL(
+        `../${CHECKPOINT_V22_COMPATIBILITY_REMEDY_ROOT}/execution-activation.json`,
+        import.meta.url
+      );
+      const packetText = readFileSync(packetUrl, "utf8");
+      const packet = JSON.parse(packetText);
+      const activation = JSON.parse(readFileSync(activationUrl, "utf8"));
+      const packetLock = activation.packetHashes?.find(
+        (item) => item.debateNumber === debate.number
+      );
+      if (
+        activation.status !==
+          "compatibility-remedy-execution-authorized-and-frozen" ||
+        !activation.authorization?.compatibilityRemedyExecution ||
+        !packetLock ||
+        packetLock.path !==
+          `${CHECKPOINT_V22_COMPATIBILITY_REMEDY_ROOT}/packets/debate-${debate.number}.json` ||
+        sha256(packetText) !== packetLock.sha256 ||
+        packet.proposedAdapterSha256 !== packetLock.proposedAdapterSha256 ||
+        sha256(ledgerText) !== packetLock.proposedAdapterSha256
+      ) {
+        throw new Error("checkpoint adapter or packet hash differs from its frozen activation");
+      }
+      validateCheckpointV22SiteLedgerAdapter({
+        adapter: ledger,
+        candidate: debate,
+        expectedSourceLocks: packet.sourceLocks
+      });
+      if (!debate.logicalExtension) {
+        throw new Error("checkpoint production assessments require an AI Extension");
+      }
+    } catch (error) {
+      addError(
+        [...path, "assessmentRubric"],
+        `checkpoint ledger validation failed: ${error.message}`
+      );
+    }
+    return;
+  }
+
+  if (
+    ledger.schemaVersion === POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION
+  ) {
+    try {
+      validatePostCanaryBatch01LedgerAdapterRoute({
+        debate,
+        ledger,
+        ledgerText
+      });
+    } catch (error) {
+      addError(
+        [...path, "assessmentRubric"],
+        `Batch 1 ledger validation failed: ${error.message}`
+      );
+    }
+    return;
+  }
+
+  let calculated;
+  try {
+    calculated = isV21 ? calculateV21Ledger(ledger) : calculateV2Ledger(ledger);
+  } catch (error) {
+    addError([...path, "assessmentRubric"], `ledger calculation failed: ${error.message}`);
+    return;
+  }
+
+  if (!Array.isArray(ledger.sections) || ledger.sections.length !== debate.sections?.length) {
+    addError([...path, "sections"], "must have the same section count as the assessment ledger");
+    return;
+  }
+
+  ledger.sections.forEach((ledgerSection, sectionIndex) => {
+    const section = debate.sections[sectionIndex];
+    const sectionPath = [...path, "sections", String(sectionIndex)];
+    if (ledgerSection.title !== section?.title) {
+      addError([...sectionPath, "title"], "must match the assessment ledger section title and order");
+    }
+    ["pro", "con"].forEach((sideKey) => {
+      const ledgerSide = ledgerSection.sides?.[sideKey];
+      const calculatedSide = calculated.sections[sectionIndex].sides[sideKey];
+      const sidePath = [...sectionPath, sideKey];
+      const publishedMoves =
+        section?.exchanges?.map((exchange) => exchange?.[sideKey]).filter(Boolean) || [];
+      if (!ledgerSide || !Array.isArray(ledgerSide.moves)) {
+        addError(sidePath, "must exist in the assessment ledger with a moves array");
+        return;
+      }
+      if (ledgerSide.moves.length !== publishedMoves.length) {
+        addError(sidePath, "must have the same move count as the assessment ledger");
+        return;
+      }
+
+      ledgerSide.moves.forEach((move, moveIndex) => {
+        const movePath = [...sidePath, "moves", String(moveIndex)];
+        const computedMove = calculatedSide.moves[moveIndex];
+        const computed = isV21 ? computedMove.finalScore : computedMove.score;
+        const stored = isV21 ? move.finalScore : move.score;
+        if (stored !== computed || publishedMoves[moveIndex]?.score !== computed) {
+          addError([...movePath, "score"], `computed score ${computed} must match ledger and debate`);
+        }
+        if (isV21 && publishedMoves[moveIndex]?.ledgerMoveId !== move.id) {
+          addError(
+            [...movePath, "id"],
+            "published move ledgerMoveId must match the stable v2.1 ledger move ID"
+          );
+        }
+      });
+
+      if (!isV21 && ledgerSide.moveMean !== calculatedSide.moveMean) {
+        addError([...sidePath, "moveMean"], `must equal computed move mean ${calculatedSide.moveMean}`);
+      }
+      if (ledgerSide.score !== calculatedSide.score || section?.score?.[sideKey] !== calculatedSide.score) {
+        addError([...sidePath, "score"], `computed section score ${calculatedSide.score} must match ledger and debate`);
+      }
+    });
+  });
+
+  ["pro", "con"].forEach((sideKey) => {
+    const ledgerOverall = ledger.overall?.[sideKey];
+    const overallPath = [...path, "overall", sideKey];
+    if (!ledgerOverall) {
+      addError(overallPath, "must exist in the assessment ledger");
+      return;
+    }
+    const calculatedOverall = calculated.overall[sideKey];
+    if (ledgerOverall.weightedSectionMean !== calculatedOverall.weightedSectionMean) {
+      addError(
+        [...overallPath, "weightedSectionMean"],
+        `must equal computed weighted section mean ${calculatedOverall.weightedSectionMean}`
+      );
+    }
+    if (
+      ledgerOverall.score !== calculatedOverall.score ||
+      debate.overall?.[sideKey]?.score !== calculatedOverall.score ||
+      debate.score?.[sideKey] !== calculatedOverall.score
+    ) {
+      addError([...overallPath, "score"], `computed overall score ${calculatedOverall.score} must match ledger and debate`);
+    }
+  });
+
+  if (isV21 && !debate.logicalExtension) {
+    addError([...path, "logicalExtension"], "v2.1 production assessments require an AI Extension");
+  }
+}
+
+function validateTag(tag, path) {
+  if (!isPlainObject(tag)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  requireString(tag, "label", path);
+  const type = requireString(tag, "type", path);
+  const url = requireString(tag, "url", path);
+  requireString(tag, "context", path, { minWords: 8, maxWords: 35 });
+
+  if (!["fallacy", "bias"].includes(type)) {
+    addError([...path, "type"], "must be either fallacy or bias");
+  }
+
+  if (type === "fallacy" && !url.startsWith("https://logfall.com/fallacies/")) {
+    addError([...path, "url"], "fallacy tags must link to LogFall fallacy pages");
+  }
+
+  if (type === "bias" && !url.startsWith("https://cogbias.site/biases/")) {
+    addError([...path, "url"], "bias tags must link to CogBias bias pages");
+  }
+
+  const reference = referenceFromUrl(url);
+  if (!reference || reference.type !== type) {
+    addError([...path, "url"], "must resolve to a matching local reference page");
+  } else if (!getReferenceDefinition(reference.type, reference.slug)) {
+    addError([...path, "url"], "must have a local reference definition");
+  }
+}
+
+function validateArgument(argument, path, { requireLedgerMoveId = false } = {}) {
+  if (!isPlainObject(argument)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  requireString(argument, "time", path);
+  requireString(argument, "role", path, { maxWords: 5 });
+  requireString(argument, "words", path, { minWords: 8, maxWords: 55 });
+  requireScore(argument, "score", path);
+  if (requireLedgerMoveId) requireString(argument, "ledgerMoveId", path);
+
+  const critique = requireString(argument, "critique", path);
+  const critiqueWords = wordCount(critique);
+  if (critiqueWords < 105 || critiqueWords > 130) {
+    addError([...path, "critique"], `should be 105-130 words; found ${critiqueWords}`);
+  }
+
+  requireArray(argument, "tags", path).forEach((tag, index) => {
+    validateTag(tag, [...path, "tags", String(index)]);
+  });
+}
+
+function validateQuote(quote, path) {
+  if (!isPlainObject(quote)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  requireString(quote, "text", path, { minWords: 3, maxWords: 18 });
+  requireString(quote, "context", path, { minWords: 12, maxWords: 55 });
+}
+
+function validateSide(side, path) {
+  if (!isPlainObject(side)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  requireString(side, "name", path);
+  requireString(side, "speaker", path);
+}
+
+function validateOverall(overall, path) {
+  if (!isPlainObject(overall)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  requireScore(overall, "score", path);
+  requireArray(overall, "strengths", path, { minLength: 2 }).forEach((strength, index) => {
+    if (typeof strength !== "string" || !strength.trim()) {
+      addError([...path, "strengths", String(index)], "must be a non-empty string");
+    }
+  });
+
+  requireArray(overall, "blunders", path, { minLength: 1 }).forEach((blunder, index) => {
+    const blunderPath = [...path, "blunders", String(index)];
+    if (!isPlainObject(blunder)) {
+      addError(blunderPath, "must be an object");
+      return;
+    }
+
+    requireString(blunder, "text", blunderPath, { minWords: 8 });
+    requireArray(blunder, "links", blunderPath).forEach((link, linkIndex) => {
+      const linkPath = [...blunderPath, "links", String(linkIndex)];
+      if (!isPlainObject(link)) {
+        addError(linkPath, "must be an object");
+        return;
+      }
+
+      requireString(link, "label", linkPath);
+      const url = requireString(link, "url", linkPath);
+      if (!url.startsWith("https://logfall.com/") && !url.startsWith("https://cogbias.site/")) {
+        addError([...linkPath, "url"], "must link to LogFall or CogBias");
+      }
+
+      const reference = referenceFromUrl(url);
+      if (!reference || !getReferenceDefinition(reference.type, reference.slug)) {
+        addError([...linkPath, "url"], "must have a local reference definition");
+      }
+    });
+  });
+}
+
+function validateLogicalExtensionSide(extension, path) {
+  if (!isPlainObject(extension)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  const finalArgument = extension.finalArgument;
+  const finalArgumentPath = [...path, "finalArgument"];
+  if (!isPlainObject(finalArgument)) {
+    addError(finalArgumentPath, "must be an object");
+  } else {
+    requireString(finalArgument, "thesis", finalArgumentPath, { minWords: 12 });
+    requireArray(finalArgument, "premises", finalArgumentPath, {
+      minLength: 4,
+      maxLength: 6
+    }).forEach((premise, index) => {
+      if (typeof premise !== "string" || wordCount(premise) < 12) {
+        addError([...finalArgumentPath, "premises", String(index)], "must contain at least 12 words");
+      }
+    });
+    requireString(finalArgument, "conclusion", finalArgumentPath, { minWords: 15 });
+  }
+
+  requireArray(extension, "newArguments", path, { minLength: 2, maxLength: 4 }).forEach(
+    (argument, index) => {
+      const argumentPath = [...path, "newArguments", String(index)];
+      if (!isPlainObject(argument)) {
+        addError(argumentPath, "must be an object");
+        return;
+      }
+
+      requireString(argument, "title", argumentPath, { minWords: 2, maxWords: 8 });
+      requireString(argument, "text", argumentPath, { minWords: 45, maxWords: 130 });
+    }
+  );
+}
+
+function validateLogicalExtension(extension, path) {
+  if (!isPlainObject(extension)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  ["pro", "con"].forEach((sideKey) => {
+    validateLogicalExtensionSide(extension[sideKey], [...path, sideKey]);
+  });
+}
+
+function validateDebate(debate, index) {
+  const path = ["debates", String(index)];
+  if (!isPlainObject(debate)) {
+    addError(path, "must be an object");
+    return;
+  }
+
+  if (debate.draft || debate.sections?.some((section) => section?.__draft)) {
+    return;
+  }
+
+  requireString(debate, "id", path, {
+    pattern: slugPattern,
+    patternMessage: "must be a lowercase URL slug"
+  });
+  requireString(debate, "number", path, {
+    pattern: debateNumberPattern,
+    patternMessage: "must be at least two digits and zero-padded below 100"
+  });
+  const debateNumber = Number.parseInt(debate.number, 10);
+  const hasReassessmentRubric = debate.assessmentRubric !== undefined;
+  const hasAdjudicatedConsensusLedgerAdapter =
+    usesAdjudicatedConsensusLedgerAdapter(debate);
+  if (hasReassessmentRubric) {
+    const rubric = requireString(debate, "assessmentRubric", path);
+    requireString(debate, "assessmentModel", path);
+    if (!reassessmentRubrics.has(rubric)) {
+      addError(
+        [...path, "assessmentRubric"],
+        `must be ${V2_RUBRIC} or ${V21_RUBRIC}`
+      );
+    }
+  } else if (debateNumber >= terraAssessmentFirstDebate) {
+    const assessmentModel = requireString(debate, "assessmentModel", path);
+    if (assessmentModel !== currentAssessmentModel) {
+      addError(
+        [...path, "assessmentModel"],
+        `must be ${currentAssessmentModel} for Debate ${terraAssessmentFirstDebate} and later`
+      );
+    }
+  } else if (
+    debate.assessmentModel !== undefined &&
+    debate.assessmentModel !== legacyAssessmentModel
+  ) {
+    addError(
+      [...path, "assessmentModel"],
+      `must be ${legacyAssessmentModel} when provided for debates before ${terraAssessmentFirstDebate}`
+    );
+  }
+  const topicCategory = debate.topicCategory;
+  if (topicCategory === undefined) {
+    if (debateNumber >= explicitTopicCategoryFirstDebate) {
+      addError(
+        [...path, "topicCategory"],
+        `must be set to a valid primary category for Debate ${explicitTopicCategoryFirstDebate} and later`
+      );
+    }
+  } else {
+    requireString(debate, "topicCategory", path);
+    if (!topicCategoryIds.has(topicCategory)) {
+      addError([...path, "topicCategory"], "must be a recognized Slugfester topic category ID");
+    }
+  }
+  requireString(debate, "title", path, { minWords: 3 });
+  requireString(debate, "label", path);
+  requireString(debate, "date", path, {
+    pattern: datePattern,
+    patternMessage: "must use YYYY-MM-DD"
+  });
+  requireString(debate, "duration", path);
+  requireString(debate, "youtubeUrl", path, {
+    pattern: youtubePattern,
+    patternMessage: "must be a YouTube watch URL"
+  });
+  requireString(debate, "motion", path, { minWords: 10 });
+  requireString(debate, "summary", path, { minWords: 8, maxWords: 35 });
+  requireString(debate, "sourceNote", path, { minWords: 10 });
+  const scoringNote = requireString(debate, "scoringNote", path, { minWords: 18 });
+  if (!/AI-generated/i.test(scoringNote)) {
+    addError([...path, "scoringNote"], "must explicitly say the scores are AI-generated");
+  }
+
+  ["pro", "con"].forEach((sideKey) => {
+    requireScore(debate.score, sideKey, [...path, "score"]);
+    validateSide(debate.sides?.[sideKey], [...path, "sides", sideKey]);
+    validateQuote(debate.quotes?.[sideKey], [...path, "quotes", sideKey]);
+    validateOverall(debate.overall?.[sideKey], [...path, "overall", sideKey]);
+  });
+
+  if (debate.logicalExtension !== undefined) {
+    validateLogicalExtension(debate.logicalExtension, [...path, "logicalExtension"]);
+  }
+
+  requireArray(debate, "sections", path, { minLength: 4, maxLength: 7 }).forEach(
+    (section, sectionIndex) => {
+      const sectionPath = [...path, "sections", String(sectionIndex)];
+      if (!isPlainObject(section)) {
+        addError(sectionPath, "must be an object");
+        return;
+      }
+
+      requireString(section, "title", sectionPath, { minWords: 2, maxWords: 10 });
+      requireString(section, "timebox", sectionPath);
+      ["pro", "con"].forEach((sideKey) => {
+        requireScore(section.score, sideKey, [...sectionPath, "score"]);
+      });
+
+      requireArray(section, "exchanges", sectionPath, { minLength: 1, maxLength: 3 }).forEach(
+        (exchange, exchangeIndex) => {
+          const exchangePath = [...sectionPath, "exchanges", String(exchangeIndex)];
+          if (!isPlainObject(exchange)) {
+            addError(exchangePath, "must be an object");
+            return;
+          }
+
+          if (
+            debate.assessmentRubric === V21_RUBRIC ||
+            hasAdjudicatedConsensusLedgerAdapter
+          ) {
+            if (!exchange.pro && !exchange.con) {
+              addError(
+                exchangePath,
+                hasAdjudicatedConsensusLedgerAdapter
+                  ? "must contain at least one adjudicated-consensus argument move"
+                  : "must contain at least one v2.1 argument move"
+              );
+            }
+            if (exchange.pro) {
+              validateArgument(exchange.pro, [...exchangePath, "pro"], {
+                requireLedgerMoveId: true
+              });
+            }
+            if (exchange.con) {
+              validateArgument(exchange.con, [...exchangePath, "con"], {
+                requireLedgerMoveId: true
+              });
+            }
+          } else {
+            validateArgument(exchange.pro, [...exchangePath, "pro"]);
+            validateArgument(exchange.con, [...exchangePath, "con"]);
+          }
+        }
+      );
+    }
+  );
+
+  if (hasReassessmentRubric && reassessmentRubrics.has(debate.assessmentRubric)) {
+    validateReassessmentLedger(debate, path);
+  }
+}
+
+if (!Array.isArray(debates) || debates.length === 0) {
+  addError(["debates"], "must export a non-empty array");
+} else {
+  const ids = new Set();
+  const numbers = new Set();
+  const labels = new Set();
+  debates.forEach(validateDebate);
+  debates.forEach((debate, index) => {
+    if (debate?.id) {
+      if (ids.has(debate.id)) {
+        addError(["debates", String(index), "id"], "must be unique");
+      }
+      ids.add(debate.id);
+    }
+
+    if (debate?.number) {
+      const expectedNumber = String(index + 1).padStart(2, "0");
+      if (numbers.has(debate.number)) {
+        addError(["debates", String(index), "number"], "must be unique");
+      }
+      if (debate.number !== expectedNumber) {
+        addError(
+          ["debates", String(index), "number"],
+          `must be sequential in debate order; expected ${expectedNumber}`
+        );
+      }
+      numbers.add(debate.number);
+    }
+
+    if (debate?.label) {
+      if (labels.has(debate.label)) {
+        addError(["debates", String(index), "label"], "must be unique");
+      }
+      labels.add(debate.label);
+    }
+  });
+}
+
+if (errors.length > 0) {
+  console.error(`Debate validation failed with ${errors.length} issue${errors.length === 1 ? "" : "s"}:`);
+  errors.forEach((error) => console.error(`- ${error}`));
+  process.exit(1);
+}
+
+console.log(`Validated ${debates.length} debate${debates.length === 1 ? "" : "s"}.`);

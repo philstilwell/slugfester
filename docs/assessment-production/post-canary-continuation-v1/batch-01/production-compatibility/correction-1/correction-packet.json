@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-compatibility-correction-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-compatibility-correction-1",
+  "status": "frozen-batch-01-compatibility-correction-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "planningOnly": true,
+  "scope": {
+    "findings": [
+      "route-level-tamper-control",
+      "mutable-analysis-hash-conflict"
+    ],
+    "onlyActiveFileProposedToChange": "scripts/validate-debates.mjs"
+  },
+  "attemptedValidator": {
+    "path": "scripts/validate-debates.mjs",
+    "sha256": "3fb5dd3a3f1e7414966fc6fb7b44c840c80e6d1259195f41f032b5557bc81c7f",
+    "bytes": 26453
+  },
+  "proposedValidator": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/correction-1/proposed-validator.mjs",
+    "targetPath": "scripts/validate-debates.mjs",
+    "sha256": "bd61fcb97ea4480b2768fa4575124eac354b09beb8276ae4a3ba04df9812ddcd",
+    "bytes": 26245
+  },
+  "exactTransformations": [
+    {
+      "order": 1,
+      "id": "remove-analysis-text-route-parameter",
+      "effect": "Remove analysisText from validatePostCanaryBatch01LedgerAdapterRouteLocks."
+    },
+    {
+      "order": 2,
+      "id": "remove-analysis-hash-route-condition",
+      "effect": "Remove the comparison between mutable analysis.json bytes and the preparation-time analysis hash."
+    },
+    {
+      "order": 3,
+      "id": "remove-analysis-file-read",
+      "effect": "Do not read analysis.json during Batch 1 ledger authentication."
+    },
+    {
+      "order": 4,
+      "id": "remove-analysis-text-route-call-argument",
+      "effect": "Remove analysisText from the route-lock call."
+    },
+    {
+      "order": 5,
+      "id": "use-correction-specific-activation-path",
+      "effect": "Authenticate through correction-1/execution-activation.json so the failed activation remains preserved."
+    },
+    {
+      "order": 6,
+      "id": "require-correction-specific-activation-status",
+      "effect": "Require post-canary-batch-01-compatibility-correction-1-execution-authorized-and-frozen."
+    }
+  ],
+  "immutableRouteLocksRetained": [
+    "correction activation status and authorization",
+    "immutable correction preparation-manifest hash",
+    "packet path, debate identity, and packet SHA-256",
+    "production-ledger destination",
+    "exact adapter SHA-256 over ledger bytes",
+    "adapter source-lock object",
+    "repository-derived score replay",
+    "candidate model, rubric, move IDs, section order, and displayed scores",
+    "AI Extension requirement"
+  ],
+  "correctedValidationContract": {
+    "routeLayer": "Every change to serialized adapter bytes, including a score-neutral one-point rating change, must fail the exact adapter SHA-256 check before inner replay acceptance can matter.",
+    "innerReplayLayer": "The inner adapter validator must reproduce and compare the stored integer move, section, and overall score snapshot. It is not required to reject a scoring-input change that provably leaves that entire rounded snapshot unchanged.",
+    "scoreChangingInnerControls": "Inner-validator negative controls must first prove that their tamper changes the derived score snapshot, then require rejection.",
+    "failureSpecificControl": {
+      "debateNumber": "94",
+      "moveId": "con-impossible-quantitative-divine-infinity",
+      "field": "logicalCoherence",
+      "originalValue": 76,
+      "tamperedValue": 77,
+      "innerReplayMayRemainScoreEquivalent": true,
+      "routeHashMustReject": true
+    },
+    "mutableAnalysisRule": "Preparation analysis and execution analysis use separate immutable paths; neither is a live ledger-authentication dependency."
+  },
+  "preservedArtifacts": [
+    {
+      "debateNumber": "31",
+      "debateId": "oconnor-craig-resurrection-2023",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-31.json",
+      "packetSha256": "164fa100f06cd94f3fc2c24150ecaa755ea32a4fcd2927b7d203549b56d611e4",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/oconnor-craig-resurrection-2023.json",
+      "stagedLedgerSha256": "14890251ec5b7a5796faf6679dcbd8dea6ecfc0e90ebc5334667966ad43676a7",
+      "stagedLedgerBytes": 82543,
+      "productionLedgerPath": "docs/assessment-ledgers/oconnor-craig-resurrection-2023.json"
+    },
+    {
+      "debateNumber": "94",
+      "debateId": "swinburne-huemer-theism-coherent-2026",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-94.json",
+      "packetSha256": "349d09b858d6daedd70b0b3e41ba7a914daf2b59a046e089ca2b1ee5d9456189",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/swinburne-huemer-theism-coherent-2026.json",
+      "stagedLedgerSha256": "2b7f9ef78bcd578c88636296451278a75e1f225cfd811e8a8dfa8c886c422681",
+      "stagedLedgerBytes": 106872,
+      "productionLedgerPath": "docs/assessment-ledgers/swinburne-huemer-theism-coherent-2026.json"
+    },
+    {
+      "debateNumber": "52",
+      "debateId": "horn-dillahunty-resurrection-reasonable-2021",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-52.json",
+      "packetSha256": "d958133aa384ccc7c2f79971e25be3187e8f49b54e2e7f1488101895d57f304f",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/horn-dillahunty-resurrection-reasonable-2021.json",
+      "stagedLedgerSha256": "eb5931a4f67e63d2b9c983811b68327a14d57c92e2c836749d7cc434db45842a",
+      "stagedLedgerBytes": 136124,
+      "productionLedgerPath": "docs/assessment-ledgers/horn-dillahunty-resurrection-reasonable-2021.json"
+    },
+    {
+      "debateNumber": "146",
+      "debateId": "harris-dennett-free-will-2018",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-146.json",
+      "packetSha256": "9131b409cb434ad9f292c994c096ae33dfb6ebce3e6e6f87ddc68e4dfbcaf123",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/harris-dennett-free-will-2018.json",
+      "stagedLedgerSha256": "32f699b6ec283fbf4e0a56b79763f82083c2389bc59ba99573835ba5b81c0052",
+      "stagedLedgerBytes": 120912,
+      "productionLedgerPath": "docs/assessment-ledgers/harris-dennett-free-will-2018.json"
+    },
+    {
+      "debateNumber": "91",
+      "debateId": "cutter-oppy-mind-brain-harmony-god-2025",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-91.json",
+      "packetSha256": "7c43b4080f3b05563c64458ce8ae3f58dab155cf2a51293d4493925f807549ae",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/cutter-oppy-mind-brain-harmony-god-2025.json",
+      "stagedLedgerSha256": "7d89d9758e4100df045830ec6dca0f3f0712eec27761dd6900f69df0b5941d8a",
+      "stagedLedgerBytes": 104691,
+      "productionLedgerPath": "docs/assessment-ledgers/cutter-oppy-mind-brain-harmony-god-2025.json"
+    },
+    {
+      "debateNumber": "175",
+      "debateId": "oppy-pearce-is-there-a-god-2022",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-175.json",
+      "packetSha256": "9d16a9f917494bcef55ce52ae605ba373f340f7e2797bae58a29f1fa608215fe",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/oppy-pearce-is-there-a-god-2022.json",
+      "stagedLedgerSha256": "fce8f35ea328b24da817f8588269f8b389ac99860acb34d803ca74bd06ca4bb3",
+      "stagedLedgerBytes": 104833,
+      "productionLedgerPath": "docs/assessment-ledgers/oppy-pearce-is-there-a-god-2022.json"
+    },
+    {
+      "debateNumber": "75",
+      "debateId": "rasmussen-clifton-contingency-argument-2019",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-75.json",
+      "packetSha256": "bec9cbbbc96ccf845264ecc247103907cc936ccd08bf2b0cb5cad7d23ee0b9db",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/rasmussen-clifton-contingency-argument-2019.json",
+      "stagedLedgerSha256": "b33abde83f178f7a881aa075eb70e32de2757d9c2b8308aec15d0c15a922e5e3",
+      "stagedLedgerBytes": 117101,
+      "productionLedgerPath": "docs/assessment-ledgers/rasmussen-clifton-contingency-argument-2019.json"
+    },
+    {
+      "debateNumber": "72",
+      "debateId": "dyer-malpass-tag-argument-2019",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-72.json",
+      "packetSha256": "e299452bcd35807a0452162c56d68a2f9c1ab892eb9a43650b372bb38e4aed00",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/dyer-malpass-tag-argument-2019.json",
+      "stagedLedgerSha256": "9ee905f709f3866f9e1069dced54fe45a0e29008c20521b4597e441e41ba606d",
+      "stagedLedgerBytes": 108383,
+      "productionLedgerPath": "docs/assessment-ledgers/dyer-malpass-tag-argument-2019.json"
+    },
+    {
+      "debateNumber": "13",
+      "debateId": "knechtle-oconnor-christian-morality-2025",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-13.json",
+      "packetSha256": "066e48a52faa80bbe860341a84f1121cbc354ed47be80acb6ab104bf07c14a78",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/knechtle-oconnor-christian-morality-2025.json",
+      "stagedLedgerSha256": "eeb1522ffab43a3022e8050c243ba4db2e87d8dee0d7eaedb78ab1114f11908f",
+      "stagedLedgerBytes": 77779,
+      "productionLedgerPath": "docs/assessment-ledgers/knechtle-oconnor-christian-morality-2025.json"
+    },
+    {
+      "debateNumber": "195",
+      "debateId": "russell-copleston-existence-of-god-1948",
+      "packetPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/packets/debate-195.json",
+      "packetSha256": "3214a44b7477ade3b5bc8b23a7427c8f3b6ca09fbe69caad5f3273da985f0061",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-compatibility/output-bundle/staged-ledgers/russell-copleston-existence-of-god-1948.json",
+      "stagedLedgerSha256": "dd06ca9f851b681ba38df42e5a33f99155b5d4788d7d7543c63859ccff4f6d84",
+      "stagedLedgerBytes": 104029,
+      "productionLedgerPath": "docs/assessment-ledgers/russell-copleston-existence-of-god-1948.json"
+    }
+  ],
+  "authorization": {
+    "correctionPlanPreparation": true,
+    "correctionExecutionActivation": false,
+    "validatorCorrectionExecution": false,
+    "compatibilityRerun": false,
+    "stagedAdapterRewrite": false,
+    "packetRewrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
