@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-production-publication-execution",
+  "protocolId": "assessment-production-post-canary-batch-01-production-publication",
+  "status": "failed-closed-at-full-repository-seo-summary-regression",
+  "productionCanary": false,
+  "batchNumber": 1,
+  "startedAt": "2026-08-16T22:30:00.150Z",
+  "mutationWritesCompletedAt": "2026-08-16T22:30:00.359Z",
+  "validationStartedAt": "2026-08-16T22:30:07Z",
+  "failureRecordedAt": "2026-08-16T22:30:50Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/execution-activation.json",
+    "sha256": "4f5760bf4b93dcba2b4435a6b804fdd02678b6016a57010c037faef11c81c337",
+    "status": "batch-01-production-publication-single-mutation-pass-authorized-and-frozen"
+  },
+  "manifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-01/production-publication/mutation-manifest.json",
+    "sha256": "45d3c9f8abb07e749b37cb20dc49694404361ef6b126b1f437d8fa0b3ff8a527"
+  },
+  "baseline": {
+    "manifestCommit": "e646ade2dd3f093568fb6480de417c68915696fa",
+    "productionBaselineCommit": "f14cee59b63e36ca9285b0d3819f128f3df5a2af"
+  },
+  "attempt": {
+    "mutationPassesAuthorized": 1,
+    "mutationPassesAttempted": 1,
+    "mutationWritesCompleted": 1,
+    "mutationPassesAccepted": 0,
+    "validationRuns": 1,
+    "validationRunsCompleted": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "rollbackPerformed": false
+  },
+  "writes": {
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "baselineSha256": "7043a9f8e3da3c6a2dbf9eb7af4c6df37c5eb63d91689c5c406397dca25a6561",
+      "writtenSha256": "89d1787ecba5e88dd788915615002fab5437f762f04ba97764dda419dbf115c1",
+      "writtenBytes": 4646669,
+      "debatesBefore": 195,
+      "debatesAfter": 195,
+      "changedRecords": 10,
+      "changedDebateNumbers": [
+        "13",
+        "31",
+        "52",
+        "72",
+        "75",
+        "91",
+        "94",
+        "146",
+        "175",
+        "195"
+      ],
+      "nonTargetRecordsChanged": 0,
+      "matchesFrozenExpectedOutput": true,
+      "committed": false,
+      "pushed": false
+    },
+    "productionLedgers": [
+      {
+        "debateNumber": "31",
+        "path": "docs/assessment-ledgers/oconnor-craig-resurrection-2023.json",
+        "sha256": "14890251ec5b7a5796faf6679dcbd8dea6ecfc0e90ebc5334667966ad43676a7",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "94",
+        "path": "docs/assessment-ledgers/swinburne-huemer-theism-coherent-2026.json",
+        "sha256": "2b7f9ef78bcd578c88636296451278a75e1f225cfd811e8a8dfa8c886c422681",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "52",
+        "path": "docs/assessment-ledgers/horn-dillahunty-resurrection-reasonable-2021.json",
+        "sha256": "eb5931a4f67e63d2b9c983811b68327a14d57c92e2c836749d7cc434db45842a",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "146",
+        "path": "docs/assessment-ledgers/harris-dennett-free-will-2018.json",
+        "sha256": "32f699b6ec283fbf4e0a56b79763f82083c2389bc59ba99573835ba5b81c0052",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "91",
+        "path": "docs/assessment-ledgers/cutter-oppy-mind-brain-harmony-god-2025.json",
+        "sha256": "7d89d9758e4100df045830ec6dca0f3f0712eec27761dd6900f69df0b5941d8a",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "175",
+        "path": "docs/assessment-ledgers/oppy-pearce-is-there-a-god-2022.json",
+        "sha256": "fce8f35ea328b24da817f8588269f8b389ac99860acb34d803ca74bd06ca4bb3",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "75",
+        "path": "docs/assessment-ledgers/rasmussen-clifton-contingency-argument-2019.json",
+        "sha256": "b33abde83f178f7a881aa075eb70e32de2757d9c2b8308aec15d0c15a922e5e3",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "72",
+        "path": "docs/assessment-ledgers/dyer-malpass-tag-argument-2019.json",
+        "sha256": "9ee905f709f3866f9e1069dced54fe45a0e29008c20521b4597e441e41ba606d",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "13",
+        "path": "docs/assessment-ledgers/knechtle-oconnor-christian-morality-2025.json",
+        "sha256": "eeb1522ffab43a3022e8050c243ba4db2e87d8dee0d7eaedb78ab1114f11908f",
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "195",
+        "path": "docs/assessment-ledgers/russell-copleston-existence-of-god-1948.json",
+        "sha256": "dd06ca9f851b681ba38df42e5a33f99155b5d4788d7d7543c63859ccff4f6d84",
+        "matchesStagedLedger": true
+      }
+    ],
+    "productionLedgerFilesWritten": 10,
+    "byteIdenticalStagedLedgerCopies": 10,
+    "productionLedgerFilesCommitted": 0,
+    "productionLedgerFilesPushed": 0,
+    "productionReferences": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+      "changed": false
+    },
+    "candidatesRewritten": 0,
+    "stagedLedgersRewritten": 0,
+    "validatorRewritten": false,
+    "compatibilityEvidenceRewritten": false
+  },
+  "validation": {
+    "command": "npm run check",
+    "commandRuns": 1,
+    "completed": false,
+    "routeAndRepositoryScoreValidationPassed": true,
+    "productionDebatesValidated": 195,
+    "batchProductionRoutesValidated": 10,
+    "batchRepositoryDerivedScoresValidated": 20,
+    "checkpointRegressionPassed": true,
+    "legacyRegressionPassed": true,
+    "referenceRegressionPassed": true,
+    "corpusTranscriptHashesPassed": 195,
+    "fullRepositoryRegressionPassed": false,
+    "stoppedAtStage": "generated SEO file freshness check",
+    "failure": {
+      "id": "generated-debate-summary-index-out-of-date",
+      "file": "src/data/debate-summaries.js",
+      "fileSha256": "e23f28317ad737449ec706983aaee5aed1731d2a4de6baa6f7ea493f49f4f73f",
+      "generator": "scripts/generate-seo-pages.mjs",
+      "generatorSha256": "8ed300943f4d15db89128a39d664be51b9b48dc610c92ec4d8c57065f597fe2f",
+      "generatorLine": 349,
+      "errorName": "Error",
+      "message": "/Users/philstilwell/Documents/SLUGFESTER.com/src/data/debate-summaries.js is out of date; run npm run seo",
+      "plainEnglish": "The ten production debate records passed semantic, route, and score validation, but the repository also keeps a generated summary index derived from those records. That index remained at its pre-mutation bytes, so the fail-fast repository check rejected the partial generated state.",
+      "firstObservedGeneratedArtifactOnly": true,
+      "laterGeneratedArtifactsReached": false,
+      "repairCommandExecuted": false
+    }
+  },
+  "preservation": {
+    "mutationWorkingTreePreservedForAudit": true,
+    "partialProductionMutationCommitted": false,
+    "partialProductionMutationPushed": false,
+    "failedExecutionRecordPreserved": true,
+    "automaticRepairPerformed": false,
+    "automaticRerunPerformed": false,
+    "rollbackPerformed": false
+  },
+  "totals": {
+    "debatesPlanned": 10,
+    "productionDebateRecordsWritten": 10,
+    "productionLedgerFilesWritten": 10,
+    "productionRecordsAccepted": 0,
+    "validationRuns": 1,
+    "validationFailures": 1,
+    "reruns": 0,
+    "retries": 0,
+    "automaticRepairs": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "productionCommitCreated": false,
+    "productionPushPerformed": false,
+    "nextBatchSelections": 0
+  },
+  "authorization": {
+    "failureAnalysis": true,
+    "auditCommitAndPush": true,
+    "generatedArtifactRepair": false,
+    "validationRerun": false,
+    "mutationRerun": false,
+    "rollback": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionCommit": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "firstFailureStoppedPass": true,
+    "noAutomaticRepairHonored": true,
+    "noRetryHonored": true,
+    "noRerunHonored": true,
+    "partialPublicationNotCommitted": true,
+    "partialPublicationNotPushed": true,
+    "productionReferencesPreserved": true,
+    "validatorPreserved": true,
+    "candidatesPreserved": true,
+    "stagedLedgersPreserved": true,
+    "compatibilityEvidencePreserved": true,
+    "modelExecutionForbidden": true,
+    "paidServiceForbidden": true,
+    "nextBatchSelectionForbidden": true
+  },
+  "nextAuthorizedAction": "user-approval-required-before-batch-01-generated-seo-derivative-correction-plan-preparation-only"
+}
