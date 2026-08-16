@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2031,
+  "ledgerBytes": 118845,
+  "ledgerSha256": "7a6eb13ee05663603e9dc0504fb94d3828f8bb8756b1548d70bccb540279c51f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51833,
+      "contextSha256": "e1ba0413dc13a4450bceb96cd0cfc17b77e71cd8ca4d9e5fad1beecb5c01789c"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53290,
+      "contextSha256": "38d31cf636a859cfa9c4ab9e298ed493ad4b0d4412c06a5ccb1d92e68159475b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2030,
+      "coreEvents": 351,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2030,
+      "contextEvents": 391,
+      "contextBytes": 23137,
+      "contextSha256": "92c76c5a8c8b6aaf151427318d610b80fe5c9022bcea7777641afe29f890a8d5"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2030,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "04",
+  "debateId": "lennox-atkins-science-explain-everything-2019",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

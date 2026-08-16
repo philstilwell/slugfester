@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-source-preparation",
+  "debateNumber": "101",
+  "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+  "motion": "Does religion poison everything by adding doctrine, dogma, revelation, and moral harm to human decency, or does Christianity supply the sacred ideals and institutions that made modern compassion possible?",
+  "sides": {
+    "pro": {
+      "label": "Religion poisons",
+      "speakers": [
+        "Stephen Woodford"
+      ]
+    },
+    "con": {
+      "label": "Christian humanism",
+      "speakers": [
+        "Glen Scrivener"
+      ]
+    }
+  },
+  "durationSeconds": 5048,
+  "eventCount": 2448,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/8J-WOwrq6bE/transcript.txt",
+    "transcriptSha256": "fedc5fd56d7a56c4ff83ef1607edf6cb3d45549d4d0d5dddf8e7f9a41fbcb70e",
+    "eventsPath": ".assessment-cache/captions/8J-WOwrq6bE/events.json",
+    "eventsSha256": "968c71aee765e95ddb5e1b4bc3649790cb3c7b846d0473c504ec049490fb954d",
+    "localManifestPath": ".assessment-cache/captions/8J-WOwrq6bE/manifest.json",
+    "localManifestSha256": "752c4d605108f4922447a06994a17ae25a77b9b287249957d4a9fa1e7ade29f0"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-02/debate-101.jsonl",
+    "sourceLedgerSha256": "085a5adb3cee22070a56e7895a01f7083ecad17e3084be4fdd21b0eb9806f6dd",
+    "sourceLedgerBytes": 135668,
+    "sourceLedgerEventCount": 2448,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/source-preparation/plans/debate-101.json",
+    "partitionPlanSha256": "8ee68fe1bdd2315ebd27f7e5d811115f4896a54c58a84e40521c9963714d3eb7",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-source-preparation",
+  "debateNumber": "136",
+  "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+  "motion": "How much historical confidence should readers place in the Gospels and resurrection accounts: reliable witness traces or later traditions shaped by memory, theology, and debate?",
+  "sides": {
+    "pro": {
+      "label": "Historical-resurrection challenge",
+      "speakers": [
+        "Ross Douthat"
+      ]
+    },
+    "con": {
+      "label": "Skeptical historian",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 5065,
+  "eventCount": 2001,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/V7EwdZ0Z_gc/transcript.txt",
+    "transcriptSha256": "3d020d64f239c7ecdfd6f1abcd9720980beed14294407bae3ef3fa4ef0aa88a4",
+    "eventsPath": ".assessment-cache/captions/V7EwdZ0Z_gc/events.json",
+    "eventsSha256": "c35331c52ad854d2f173eff0f6a813af09818e99dc2b76a859b1af88dbd2bcd6",
+    "localManifestPath": ".assessment-cache/captions/V7EwdZ0Z_gc/manifest.json",
+    "localManifestSha256": "3ae17553faf62a5671f081c351d726950d219f0fe3a47ce2ece06c3ee307f9f2"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-02/debate-136.jsonl",
+    "sourceLedgerSha256": "2840ee93dc6c4399fa31375235b2c5d40ffddb482967f8884bfac6823c6d79da",
+    "sourceLedgerBytes": 123044,
+    "sourceLedgerEventCount": 2001,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/source-preparation/plans/debate-136.json",
+    "partitionPlanSha256": "2d9ab14458483229c3e9ad302787a69603b07ecee025a5448b9f744c8491f048",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

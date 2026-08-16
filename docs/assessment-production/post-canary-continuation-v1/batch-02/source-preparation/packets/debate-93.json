@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-source-preparation",
+  "debateNumber": "93",
+  "debateId": "hunter-dillahunty-christian-god-exist-2019",
+  "motion": "Does the Christian God exist, and do libertarian freedom, the Kalam argument, resurrection evidence, hiddenness, and inconsistent revelation make Christian theism more reasonable than skepticism?",
+  "sides": {
+    "pro": {
+      "label": "Christian cumulative case",
+      "speakers": [
+        "Braxton Hunter"
+      ]
+    },
+    "con": {
+      "label": "Evidential skepticism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7879,
+  "eventCount": 3742,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Y9Uktg9nLx8/transcript.txt",
+    "transcriptSha256": "595b4c3f03eceabd466de097e81a6d68717dfa5efba278faa518cd2656dcf6e2",
+    "eventsPath": ".assessment-cache/captions/Y9Uktg9nLx8/events.json",
+    "eventsSha256": "66a0fc38a8651c84aacb596497a25ca6fe0a0f16ca648b355ecff90b14e04b3c",
+    "localManifestPath": ".assessment-cache/captions/Y9Uktg9nLx8/manifest.json",
+    "localManifestSha256": "5b2fcf02924aedc4a3a63761a0308e8611e3dd82e1bec339f6f3a8ffebc9a458"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-02/debate-93.jsonl",
+    "sourceLedgerSha256": "ae860697eb7d10a1b4338abc1c83182b83c27949d1031218cf73cb39482b29e1",
+    "sourceLedgerBytes": 221371,
+    "sourceLedgerEventCount": 3742,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/source-preparation/plans/debate-93.json",
+    "partitionPlanSha256": "a59cbc2002ee3ebced55cff7a99c921c965a2bbf0677374d985bff1e65fc2f11",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

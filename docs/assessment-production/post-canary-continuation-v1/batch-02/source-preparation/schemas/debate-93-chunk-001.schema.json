@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-score-stability-v2.1.2-bounded-end-discovery",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "chunkId",
+    "coreStartEvent",
+    "coreEndEvent",
+    "contextStartEvent",
+    "contextEndEvent",
+    "reviewerRole",
+    "assessmentModel",
+    "calibrationOnly",
+    "completeCoreReviewed",
+    "candidates"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-score-stability-v2.1.2-score-blind-chunk-discovery"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-score-stability-v2.1.2-bounded-end-discovery"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "93"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "hunter-dillahunty-christian-god-exist-2019"
+    },
+    "chunkId": {
+      "type": "string",
+      "const": "chunk-001"
+    },
+    "coreStartEvent": {
+      "type": "integer",
+      "const": 0
+    },
+    "coreEndEvent": {
+      "type": "integer",
+      "const": 859
+    },
+    "contextStartEvent": {
+      "type": "integer",
+      "const": 0
+    },
+    "contextEndEvent": {
+      "type": "integer",
+      "const": 899
+    },
+    "reviewerRole": {
+      "type": "string",
+      "const": "score-blind-source-discovery"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "calibrationOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "completeCoreReviewed": {
+      "type": "boolean",
+      "const": true
+    },
+    "candidates": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "candidateId",
+          "side",
+          "speaker",
+          "proposition",
+          "sourceWindow",
+          "attributionConfidence",
+          "attributionBasis",
+          "loadBearingLevel",
+          "loadBearingReason",
+          "responseIntent",
+          "contextSummary",
+          "candidateConfidence"
+        ],
+        "properties": {
+          "candidateId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "side": {
+            "type": "string",
+            "enum": [
+              "pro",
+              "con"
+            ]
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "Braxton Hunter",
+              "Matt Dillahunty"
+            ]
+          },
+          "proposition": {
+            "type": "string",
+            "minLength": 25
+          },
+          "sourceWindow": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "startEvent",
+              "endEvent"
+            ],
+            "properties": {
+              "startEvent": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 859
+              },
+              "endEvent": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 899
+              }
+            }
+          },
+          "attributionConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "attributionBasis": {
+            "type": "string",
+            "minLength": 40
+          },
+          "loadBearingLevel": {
+            "type": "string",
+            "enum": [
+              "motion",
+              "central",
+              "subsidiary"
+            ]
+          },
+          "loadBearingReason": {
+            "type": "string",
+            "minLength": 60
+          },
+          "responseIntent": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "earlierTargetDescription"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "constructive",
+                  "reply"
+                ]
+              },
+              "earlierTargetDescription": {
+                "type": "string"
+              }
+            }
+          },
+          "contextSummary": {
+            "type": "string",
+            "minLength": 60
+          },
+          "candidateConfidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

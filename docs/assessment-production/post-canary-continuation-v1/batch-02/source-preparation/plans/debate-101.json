@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2448,
+  "ledgerBytes": 135668,
+  "ledgerSha256": "085a5adb3cee22070a56e7895a01f7083ecad17e3084be4fdd21b0eb9806f6dd",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47970,
+      "contextSha256": "0461cee2bf550199b13d5bd017394f9170db73e612941a70a3123b7619ad3486"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51104,
+      "contextSha256": "88c30b8bac08cfbe25f8272eeff2bda3e0d10c92a2bc7188ae1c00b1675353c4"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2447,
+      "coreEvents": 768,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2447,
+      "contextEvents": 808,
+      "contextBytes": 45522,
+      "contextSha256": "f91a82daba7eee380fc140ac374e2bdb05313a2a08a00b583145f65a25155277"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2447,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "101",
+  "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

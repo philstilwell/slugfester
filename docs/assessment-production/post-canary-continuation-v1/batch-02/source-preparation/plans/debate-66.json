@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3322,
+  "ledgerBytes": 194333,
+  "ledgerSha256": "c4cb2332e6b9da5d7395c20e7c5e5d4afbefe8622af4ed70baae25c1fb508dfe",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51580,
+      "contextSha256": "59da32f987dde4f048e73f219b2a46090d6c9f1646bd85138a5c78d484d07307"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52813,
+      "contextSha256": "53cc66e30fa463eccdce2cf8eb828b5bcac875c069e4b4e89cdcdf6c906ccf20"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52883,
+      "contextSha256": "ff122026ee18091810b196c9664ceef89b16bdbb2734d17120d6274712e8fc50"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3321,
+      "coreEvents": 822,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3321,
+      "contextEvents": 862,
+      "contextBytes": 51137,
+      "contextSha256": "8507e21998b0b80660ed476853c0d7130491cc128fa78bf61334964c6bfef25d"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3321,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "66",
+  "debateId": "donahue-fodor-case-against-christianity-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

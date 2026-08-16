@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4349,
+  "ledgerBytes": 225557,
+  "ledgerSha256": "672aa469b20dc8b5d26423a1a58eb65ad4fa40e68675636abfe97fd5b26a9c95",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 46052,
+      "contextSha256": "86cef122f2059798df5b3ed0102a9c0765bd6c6be3c5157b11a76d5ff38f74cd"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 46803,
+      "contextSha256": "655086bae9f5413361ed09f313f90f0aab16fcd7e7e48942cc5995ca421d06b1"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 47081,
+      "contextSha256": "8141d375f98271c9aac44e050538f0486071bf5532483704e717748981759056"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 46942,
+      "contextSha256": "0cc5dd5697e108f5e64110204629ea21d9f2eec2b06f80aac78fce06f60a999e"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 46476,
+      "contextSha256": "5bb63f95b319ccd92cf25ca598df8c9252d10eda9e2e714c02c61681c91a77bc"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4348,
+      "coreEvents": 209,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4348,
+      "contextEvents": 249,
+      "contextBytes": 12700,
+      "contextSha256": "a5786d3bc99845919dad38b8ffbf6f93695bac9392bc56f5bb8c1e126dbafe13"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4348,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "83",
+  "debateId": "loke-oppy-kalam-causal-principle-2020",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

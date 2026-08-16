@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-source-preparation-validation",
+  "protocolId": "assessment-production-post-canary-batch-02-source-preparation",
+  "status": "post-canary-batch-02-score-blind-source-packet-validation-passed-frozen-awaiting-user-approval-before-any-model-execution",
+  "validatedAt": "2026-08-16T23:34:25Z",
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/source-preparation/preparation-manifest.json",
+    "bytes": 90568,
+    "sha256": "390dc8a4b1b08a0acdff22a3f1d19c20963c4c089ef94a7ba67df38d74c59671",
+    "status": "post-canary-batch-02-ten-complete-score-blind-source-packets-prepared-awaiting-validation"
+  },
+  "selectedDebates": [
+    "103",
+    "172",
+    "04",
+    "136",
+    "83",
+    "66",
+    "126",
+    "99",
+    "93",
+    "101"
+  ],
+  "checks": {
+    "frozenSelectionReplayed": true,
+    "allThirtyOriginalSourceHashesReplayed": true,
+    "allTenLocalManifestChainsReplayed": true,
+    "exactCanonicalEventProjectionReplayed": true,
+    "exactPartitionCoverageReplayed": true,
+    "exactChunkLedgersReplayed": true,
+    "exactTokenCountedLedgersReplayed": true,
+    "exactZeroLexicalTokenRowPreservedWithZeroCount": true,
+    "exactSourceRowsInjectedOmittedOrRewritten": false,
+    "exactChunkSchemasReplayed": true,
+    "frozenDyadicSpeakerAllowlistsReplayed": true,
+    "scoreBlindPacketKeyAuditPassed": true,
+    "modelBoundaryPreserved": true,
+    "passIsolationPreserved": true,
+    "activeV22PolicyAndTieRulePreserved": true,
+    "allInheritedStopRulesPreserved": true
+  },
+  "totals": {
+    "debates": 10,
+    "sourceFiles": 30,
+    "sourceEvents": 26660,
+    "discoveryContexts": 36,
+    "tokenCountedLedgerRows": 28740,
+    "modelContextsExecuted": 0,
+    "judgmentPasses": 0,
+    "scoresDerived": 0,
+    "paidServiceCalls": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "decision": {
+    "sourcePacketPreparationPassed": true,
+    "deterministicValidationPassed": true,
+    "packetsFrozen": true,
+    "modelExecutionAttempted": false,
+    "judgmentModelExecutionAttempted": false,
+    "paidServiceAttempted": false,
+    "scoreDerivationAttempted": false,
+    "publicationReconstructionAttempted": false,
+    "productionMutationAttempted": false
+  },
+  "authorization": {
+    "modelExecution": false,
+    "judgmentModelExecution": false,
+    "unexpectedPaidService": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "stop-and-obtain-user-approval-before-any-model-execution-or-unexpected-paid-service"
+}

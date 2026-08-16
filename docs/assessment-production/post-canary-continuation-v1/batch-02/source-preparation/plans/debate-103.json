@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1359,
+  "ledgerBytes": 79423,
+  "ledgerSha256": "c3c8f62b848fdd00e78bb5a1c5bed91d0bbfe8b52af65d7f20ec0be4df7055aa",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52303,
+      "contextSha256": "cd1364d98239788deaf2a492ead0de37152299bba2ec540d18835c10af0522a2"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1358,
+      "coreEvents": 499,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1358,
+      "contextEvents": 539,
+      "contextBytes": 31886,
+      "contextSha256": "d025fb470809af34bdc91952c8de66283e0e6661a4d95d5a246320d9262c8f1f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1358,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

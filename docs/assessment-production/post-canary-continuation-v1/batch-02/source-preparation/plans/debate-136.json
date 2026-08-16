@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2001,
+  "ledgerBytes": 123044,
+  "ledgerSha256": "2840ee93dc6c4399fa31375235b2c5d40ffddb482967f8884bfac6823c6d79da",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 55189,
+      "contextSha256": "02005b15d8555211e3539b67e6e0057768377a193a3582141adc79720264fcf5"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 55416,
+      "contextSha256": "603290a74d7fad34cc6b59e1e8ead5e42d94c157a3408ab0863924adf31c99c1"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2000,
+      "coreEvents": 321,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2000,
+      "contextEvents": 361,
+      "contextBytes": 22367,
+      "contextSha256": "7fb7ad28b0775ee1b46b13441fb0184ee507a5b3b3fca184892943d33a87ebf8"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2000,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "136",
+  "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

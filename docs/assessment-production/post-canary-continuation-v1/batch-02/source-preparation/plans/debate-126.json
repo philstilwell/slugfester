@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1559,
+  "ledgerBytes": 85140,
+  "ledgerSha256": "ebc868af5456d11fbd1017a0232669255a72a198fede3fc78029b815c493d4e2",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48592,
+      "contextSha256": "4fde25925baeb41193bf292b535126231324ddcbcc456ce010858d9cdac7601f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1558,
+      "coreEvents": 699,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1558,
+      "contextEvents": 739,
+      "contextBytes": 40766,
+      "contextSha256": "f5d687bdbfb233ca5b4e80356f253d7fb87a6efc521a1f3a85569e76a0bbf7e4"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1558,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "126",
+  "debateId": "craig-clifton-kalam-cosmological-argument-2021",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

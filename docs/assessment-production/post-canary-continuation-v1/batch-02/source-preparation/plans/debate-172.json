@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2452,
+  "ledgerBytes": 141907,
+  "ledgerSha256": "a62d4c8b8a41853a811406932096fd6e292aedbf949ff709b596b625f600a596",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51026,
+      "contextSha256": "108adb912ca4d39db02bf6b2bc1e2d49bbd1efdc787140aa953b6f8a9885f07f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52663,
+      "contextSha256": "14004e154daea04998c1ffcfbd741fb2f2bfd4dceaf536b4d021abe997b5cbaa"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2451,
+      "coreEvents": 772,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2451,
+      "contextEvents": 812,
+      "contextBytes": 47552,
+      "contextSha256": "07523b0441ffa84c2b48f0ef0a928c8863b8c1f78f3c1ca713cdb5397b456f6e"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2451,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "172",
+  "debateId": "hitchens-mcgrath-religious-belief-2007",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
