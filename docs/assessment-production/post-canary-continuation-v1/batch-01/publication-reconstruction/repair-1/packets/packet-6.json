@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-debate-31-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-debate-31-publication-repair-1",
+  "packetIndex": 6,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "31",
+  "debateId": "oconnor-craig-resurrection-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/outputs/debate-31.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/packets/debate-31.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-appearance-legendary-development.critique",
+      "moveProse.pro-early-sources-against-legend.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-appearance-legendary-development.critique",
+      "moveId": "con-appearance-legendary-development",
+      "originalCritique": "Strongest feature: The reply offers a concrete chronological comparison from sparse early presentation toward Emmaus, ascension, locked-room appearances, and Thomas, directly testing whether the appearance tradition remained stable rather than merely asserting that legends generally develop. Principal limitation: Increasing narrative elaboration is not uniquely diagnostic of legend, and the move leaves dating, textual endpoints, genre, authorial purpose, selection, and the possibility of independent supplementary traditions insufficiently defended. Live burden: O'Connor must establish the proposed sequence and show why development better predicts the variations than literary emphasis or selective preservation, while distinguishing a potentially early minimal appearance claim from later embodied details. Locked score: The very strong band reflects excellent direct responsiveness, concrete evidence, calibrated plausibility, central relevance, and charitable recognition of an early core, moderated by nonexclusive inference and incomplete literary analysis.",
+      "originalWords": 132,
+      "originalCharacters": 1069,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "con-appearance-legendary-development",
+        "sectionId": "section-skeptical-alternatives",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Increasingly elaborate resurrection appearances in later gospel accounts suggest legendary development rather than stable, independent historical testimony.",
+        "importance": 3,
+        "finalScore": 86,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "56:56",
+        "sourceSpan": {
+          "startEvent": 1302,
+          "endEvent": 1354,
+          "startMs": 3416760,
+          "endMs": 3544920
+        },
+        "sourceExcerpt": "appearance to the two disciples walking along the road to Emmas um we also get the addition of the Ascension and then John's gospel the latest gospel uh the the yeah the latest gospel written according to most biblical scholarship more fanciful still now we have appearances of Jesus that require him to move into rooms with locked doors and then you have the story of doubting Thomas",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 384
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-alternatives"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-early-and-independent-core-data-support"
+          ],
+          "components": [
+            {
+              "componentId": "con-appearance-legendary-development-component-01",
+              "targetMoveId": "pro-early-and-independent-core-data-support",
+              "text": "Whether the appearance traditions remain stable rather than developing over time.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "O'Connor directly challenges the early-and-independent support claim by tracing increasingly elaborate appearance details across the canonical gospel sequence.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "Within full answers, the chronological comparison explicitly contacts the stability and independence of the appearance tradition."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, the chronological comparison explicitly contacts the stability and independence of the appearance tradition."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The proposed development pattern is recoverable, but 'more fanciful' is evaluative and the inference from elaboration to legend needs qualification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move offers legendary development as a suggested inference from a specified sequence rather than presenting it as certain."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Multiple early traditions independently attest postmortem appearances.",
+          "decisiveQualification": "Later narrative elaboration may still indicate development even if a minimal early appearance tradition existed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "Increasing elaboration can support development, but the inference is not exclusive because genre, purpose, and independent selection could also explain variation."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The move supplies a concrete Mark-to-John comparison, though it does not fully defend dating, textual endpoints, or alternative literary explanations."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it preserves legendary development as a live alternative to stable independent testimony."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "O'Connor compares Mark, Matthew, Luke, and John and highlights later additions including Emmaus, ascension, locked-room appearances, and Thomas.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-early-sources-against-legend.critique",
+      "moveId": "pro-early-sources-against-legend",
+      "originalCritique": "Strongest feature: The response acknowledges the development concern and directly counters its chronological premise with Pauline, pre-Markan, and allegedly independent traditions, appropriately showing why an early appearance core cannot simply be equated with later gospel elaboration. Principal limitation: Early attestation constrains wholesale legendary dismissal but does not verify every later narrative detail, while the asserted independence and evidential significance of pre-Markan material require more demonstration than the compressed response supplies. Live burden: Craig must map the sources and their dependencies, specify the minimal content recoverable from each, and explain why early sincere belief favors resurrection over rapid reinterpretation, visionary experience, or early communal development. Locked score: The very strong band reflects exceptional responsiveness, strong chronological evidence, coherent anti-legend reasoning, precise central relevance, and notable charity, with some overstatement and incomplete source analysis limiting its reach.",
+      "originalWords": 135,
+      "originalCharacters": 1079,
+      "excessWordsAboveAcceptanceMaximum": 5,
+      "lockedMove": {
+        "moveId": "pro-early-sources-against-legend",
+        "sectionId": "section-skeptical-alternatives",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Multiple early and independent appearance traditions, including Pauline and pre-Markan material, make wholesale dismissal of the postmortem reports as late legendary development unreasonable.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "58:58",
+        "sourceSpan": {
+          "startEvent": 1354,
+          "endEvent": 1400,
+          "startMs": 3538200,
+          "endMs": 3687240
+        },
+        "sourceExcerpt": "multiple independent traditions of these postmortem appearances of Jesus and it won't do to just write these off as legendary or mythical because they go right back to the earliest sources such as Paul's tradition that he hands on in 1 Corinthians 15 which goes back to within 5 years after Jesus death the premar and passion story of Jesus which foreshadows his appearance in Galilee uh and is an extremely early",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 413
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-alternatives"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-appearance-legendary-development"
+          ],
+          "components": [
+            {
+              "componentId": "pro-early-sources-against-legend-component-01",
+              "targetMoveId": "con-appearance-legendary-development",
+              "text": "Whether increasingly elaborate gospel narratives justify treating postmortem appearances as late legendary development.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Craig acknowledges the suspicion and directly counters it with Pauline, pre-Markan, and allegedly independent early traditions.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "The response explicitly contacts the chronology and independence premises and states why wholesale legendary dismissal would not follow."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The response explicitly contacts the chronology and independence premises and states why wholesale legendary dismissal would not follow."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The anti-legend inference is clear, though 'independent traditions' and 'wholesale dismissal' cover a broad evidential range."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Very early traditions constrain wholesale legend claims, but do not by themselves verify every later narrative detail."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Later gospels display increasingly elaborate resurrection narratives suggestive of legend.",
+          "decisiveQualification": "Early appearance traditions can predate those elaborations without establishing every later narrative detail."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks legendary development as a sufficient account of the postmortem reports."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Craig cites multiple independent traditions, the early creed transmitted by Paul in 1 Corinthians 15, and pre-Markan passion material against wholesale legend.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

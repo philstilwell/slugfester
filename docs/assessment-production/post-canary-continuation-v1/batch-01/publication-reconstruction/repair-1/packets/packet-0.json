@@ -1,0 +1,242 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-debate-31-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-debate-31-publication-repair-1",
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "31",
+  "debateId": "oconnor-craig-resurrection-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/outputs/debate-31.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/packets/debate-31.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-experiential-warrant-and-factual-defeaters.critique",
+      "moveProse.con-bones-defeat-experiential-warrant.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-experiential-warrant-and-factual-defeaters.critique",
+      "moveId": "pro-experiential-warrant-and-factual-defeaters",
+      "originalCritique": "Strongest feature: The move carefully distinguishes immediate experiential warrant from indefeasibility, explicitly allowing genuine factual contradiction to overturn belief and thereby presenting a coherent, recoverable, appropriately qualified epistemic position rather than an unrestricted appeal to private conviction. Principal limitation: Its central warrant remains substantially asserted, because the passage offers no representative account of why an experience identified as divine should receive this epistemic status or how misleading evidence is reliably distinguished from an actual defeater. Live burden: Craig still needs an independently intelligible method for identifying veridical religious experience and resolving conflicts between personal seeming and public historical evidence without insulating either category from meaningful correction. Locked score: The strong/competent band reflects excellent conceptual clarity and calibration alongside limited evidential development and only subsidiary contact with the debate's central historical burden.",
+      "originalWords": 131,
+      "originalCharacters": 1072,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-experiential-warrant-and-factual-defeaters",
+        "sectionId": "section-experience-falsification-and-stakes",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "Immediate personal experience of God can rationally ground Christian belief when available evidence is misleading, but belief should yield if the facts genuinely contradict Christianity.",
+        "importance": 2,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "23:23",
+        "sourceSpan": {
+          "startEvent": 575,
+          "endEvent": 633,
+          "startMs": 1403000,
+          "endMs": 1581559
+        },
+        "sourceExcerpt": "and for that reason I'm not an evidentialist in certain sense of that term although I think there is adequate evidence to make it more probable than not that Christian theism is true I don't think that that sort of evidence and argument is necessary in order for belief in Christ to be rational I think that on the basis of the personal experience of God himself that a person can",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-pro-subsidiary-epistemic-context"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move distinguishes rational experiential warrant from indefeasibility and expressly allows genuine factual contradiction to defeat belief.",
+          "responsivenessWithinClass": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposition and its two conditions are recoverable, and the distinction between misleading evidence and genuine contradiction is explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move advances a permissive rational-warrant claim and expressly recognizes factual defeat, matching its limited supporting warrant."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The move supplies a coherent epistemic distinction but largely asserts the warrant of personal experience without representative support."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "Within the subsidiary tier, it directly clarifies how experience relates to evidence and factual defeaters."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No developed opposing alternative is evaluated in this constructive span, so a substantive charity test is not available."
+          }
+        },
+        "evidenceBasis": "Craig rejects a strict evidentialist necessity, invokes personal experience of God as rational grounding, and allows contrary facts to override belief.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-bones-defeat-experiential-warrant.critique",
+      "moveId": "con-bones-defeat-experiential-warrant",
+      "originalCritique": "Strongest feature: The stipulated discovery directly tests Craig's own defeater condition, precisely isolates a publicly checkable contradiction of bodily resurrection, and charitably asks whether experiential warrant would yield under the strongest relevant factual counterexample. Principal limitation: Because the example is hypothetical and expressly conclusive, it demonstrates the structure of falsifiability more effectively than it supplies present evidence against resurrection, leaving the practical standards for authenticating such remains unexplored. Live burden: O'Connor must connect this sharp conditional test to realistic historical evidence or a general adjudication rule explaining when less-than-conclusive public evidence should outweigh powerful personal experience. Locked score: The very strong band reflects exceptional responsiveness, coherence, precision, and charitable contact with the stated qualification, while recognizing that the move advances a subsidiary falsification test rather than independently resolving the historical case.",
+      "originalWords": 131,
+      "originalCharacters": 1067,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-bones-defeat-experiential-warrant",
+        "sectionId": "section-experience-falsification-and-stakes",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Conclusive discovery of Jesus's bones would defeat the resurrection claim and should override otherwise powerful personal religious experience.",
+        "importance": 2,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "26:18",
+        "sourceSpan": {
+          "startEvent": 634,
+          "endEvent": 660,
+          "startMs": 1578159,
+          "endMs": 1641679
+        },
+        "sourceExcerpt": "kind of thing that would essentially just invalidate all of the religious experience that you may have had in your life uh that you said say sort of exists in a different evidential plane but surely upon discovering the bones of Jesus proving that he never rose from the dead and ascended into heaven this would give you reason to essentially favor this evidence over the personal",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "bridge-con-subsidiary-falsifiability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-experiential-warrant-and-factual-defeaters"
+          ],
+          "components": [
+            {
+              "componentId": "con-bones-defeat-experiential-warrant-component-01",
+              "targetMoveId": "pro-experiential-warrant-and-factual-defeaters",
+              "text": "Whether conclusive factual contradiction overrides experiential warrant.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The bones hypothetical directly tests Craig's stated factual-defeater condition by asking whether decisive public evidence would invalidate resurrection belief.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within full answers, the hypothetical explicitly contacts the decisive defeasibility condition of the earlier move."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, the hypothetical explicitly contacts the decisive defeasibility condition of the earlier move."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The hypothetical is expressly limited to conclusive identification of Jesus's bones and a resulting contradiction of resurrection."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "As a conditional question premised on conclusive discovery, its force is proportionate and does not require an additional uncertainty caveat."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Personal experience can remain rational despite misleading evidence.",
+          "decisiveQualification": "Craig also says genuine factual contradiction should defeat Christian belief."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "If the stipulated remains are conclusively Jesus's, the inference to a factual defeater of bodily resurrection is direct and valid."
+          },
+          "evidenceWarrant": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within the subsidiary tier, it sharply tests the proposed public falsification condition for experiential warrant."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (93 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "O'Connor stipulates discovery of Jesus's bones proving he did not rise and asks whether this should override Craig's religious experience.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

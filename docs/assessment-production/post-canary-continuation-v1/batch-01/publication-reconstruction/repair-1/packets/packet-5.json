@@ -1,0 +1,260 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-debate-31-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-debate-31-publication-repair-1",
+  "packetIndex": 5,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "31",
+  "debateId": "oconnor-craig-resurrection-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/outputs/debate-31.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/packets/debate-31.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-underlying-reports-unreliable.critique",
+      "moveProse.pro-early-and-independent-core-data-support.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-underlying-reports-unreliable.critique",
+      "moveId": "con-underlying-reports-unreliable",
+      "originalCritique": "Strongest feature: The move challenges the data before the explanation and supplies concrete source-critical grounds, including Paul's isolated reference to five hundred and uneven gospel appearance reporting, while carefully presenting unreliability as possible rather than asserting wholesale fabrication. Principal limitation: Its treatment of source dependence, dating, genre, and the evidential value of early traditions remains abbreviated, so variation across accounts does not alone establish that their shared minimal content is historically unreliable. Live burden: O'Connor must distinguish late elaboration from an earlier recoverable core and show which indispensable claims fail under explicit historical criteria, including how correlated sources and silence should be weighted. Locked score: The very strong band reflects exceptional responsiveness, calibrated skepticism, precise identification of disputed reports, strong central relevance, and charitable insistence on establishing data first, tempered by incomplete source-critical development.",
+      "originalWords": 134,
+      "originalCharacters": 1064,
+      "excessWordsAboveAcceptanceMaximum": 4,
+      "lockedMove": {
+        "moveId": "con-underlying-reports-unreliable",
+        "sectionId": "section-core-data-and-source-reliability",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Reports of disciple beliefs, group appearances, and post-resurrection events may be unreliable rather than established historical facts requiring explanation.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "51:23",
+        "sourceSpan": {
+          "startEvent": 1186,
+          "endEvent": 1216,
+          "startMs": 3083960,
+          "endMs": 3164160
+        },
+        "sourceExcerpt": "beliefs and their and and and what they not just what actually happened but the reports of what these people claimed happened are mistaken for example the only reason that we can believe in group appearances is because of a passing reference that Paul made to the 500 that's not recognized anywhere else uh group appearances appear in some of the gospels not others indeed there are no uh post-resurrection appearances at all in the earliest gospel",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 448
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-source-reliability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-five-facts-best-explanation-case",
+            "pro-hallucination-scope-and-power-objection"
+          ],
+          "components": [
+            {
+              "componentId": "con-underlying-reports-unreliable-component-01",
+              "targetMoveId": "pro-five-facts-best-explanation-case",
+              "text": "Whether appearance reports are sufficiently reliable to count as established facts.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-underlying-reports-unreliable-component-02",
+              "targetMoveId": "pro-hallucination-scope-and-power-objection",
+              "text": "Whether group appearances and the empty-tomb data require a hallucination explanation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "O'Connor challenges the data before explanation, citing uneven gospel appearance reporting and Paul's isolated five-hundred reference as reasons for source caution.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within full answers, it explicitly contacts the decisive reliability premise underlying both the five-facts case and the hallucination critique."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the decisive reliability premise underlying both the five-facts case and the hallucination critique."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move identifies particular disputed reports and carefully claims possible unreliability rather than wholesale falsity of every source."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The source-critical conclusion is framed as a live possibility supported by specified attestation gaps, proportionate to the evidence supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The reported appearances and related facts require an explanatory hypothesis.",
+          "decisiveQualification": "That demand arises only after the reports themselves are established as reliable historical data."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "Uneven gospel attestation and the isolated five-hundred reference are specific support, though source dependence and dating receive limited treatment."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly contests whether indispensable appearance and related claims are established historical data."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "O'Connor points to Paul's passing reference to five hundred, uneven group-appearance attestation, and gospel variation in post-resurrection narratives.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-early-and-independent-core-data-support.critique",
+      "moveId": "pro-early-and-independent-core-data-support",
+      "originalCritique": "Strongest feature: The reply returns directly to the foundational reliability dispute and offers the appropriate kinds of support—early inherited tradition, multiple attestation, and scholarly acceptance—especially locating Pauline appearance material very near the crucifixion rather than in a late narrative layer. Principal limitation: The breadth of scholarly agreement and independence among traditions are incompletely scoped, while early transmission establishes early belief more readily than the veracity of every reported event or the inadequacy of naturalistic explanations. Live burden: Craig must identify the genuinely independent evidential streams, separate minimal early claims from later details, and explain why proximity substantially favors resurrection over sincere error, reinterpretation, or communal development. Locked score: The very strong band reflects direct full responsiveness, central relevance, substantial chronological support, and charitable engagement, constrained by slightly overstated implications and unresolved source relationships.",
+      "originalWords": 133,
+      "originalCharacters": 1075,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "pro-early-and-independent-core-data-support",
+        "sectionId": "section-core-data-and-source-reliability",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "The core resurrection data, especially the disciples' postmortem experiences, are supported by broad scholarly agreement, very early tradition, and multiple independent attestation rather than late unsupported reports.",
+        "importance": 3,
+        "finalScore": 86,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "52:38",
+        "sourceSpan": {
+          "startEvent": 1216,
+          "endEvent": 1301,
+          "startMs": 3158000,
+          "endMs": 3419000
+        },
+        "sourceExcerpt": "for example the postmortem appearances of Jesus um these are attested as you say in this extremely early tradition that Paul quotes in 1 Corinthians 15 and then hands on to his converts in Corinth this tradition goes back to within the first five years after the cruci fiction of Jesus and therefore is not plausibly explained away as a late legendary development um rather people",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 66,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-source-reliability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-underlying-reports-unreliable"
+          ],
+          "components": [
+            {
+              "componentId": "pro-early-and-independent-core-data-support-component-01",
+              "targetMoveId": "con-underlying-reports-unreliable",
+              "text": "Whether the core postmortem reports are too late, isolated, or unevenly attested to establish historical data.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Craig expressly returns to establishing the data and invokes early traditions, multiple attestation, and broad scholarly acceptance.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "The response directly answers the source-reliability demand with the relevant kinds of chronological and independence support."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "The response directly answers the source-reliability demand with the relevant kinds of chronological and independence support."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The source-based thesis is clear, but 'broad scholarly agreement' and the extent of independence among traditions remain incompletely scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Early and multiple attestation materially support reliability, but the confident dismissal of naturalistic accounts exceeds the compressed defense supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Appearance and empty-tomb reports may be unreliable or unevenly attested.",
+          "decisiveQualification": "Very early traditions and genuinely independent attestations would materially reduce, not eliminate, that concern."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly attacks the con route's challenge to the reliability of the core historical data."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Craig explicitly returns to establishing the data and appeals to broad scholarly agreement, early inherited traditions, and multiple independent sources.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

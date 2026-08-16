@@ -1,0 +1,242 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-01-debate-31-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-01-debate-31-publication-repair-1",
+  "packetIndex": 3,
+  "productionCanary": false,
+  "batchNumber": 1,
+  "stagingOnly": true,
+  "debateNumber": "31",
+  "debateId": "oconnor-craig-resurrection-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/outputs/debate-31.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-01/publication-reconstruction/packets/debate-31.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-theistic-context-for-miracle-prior.critique",
+      "moveProse.pro-five-facts-best-explanation-case.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-theistic-context-for-miracle-prior.critique",
+      "moveId": "pro-theistic-context-for-miracle-prior",
+      "originalCritique": "Strongest feature: The reply directly addresses the low-prior objection by making resurrection's antecedent probability conditional on independently supported theism, carefully claiming only that divine action ceases to be prohibitive if a creator exists rather than deriving resurrection from theism alone. Principal limitation: The independent arguments are referenced rather than presented here, and generic creator theism does not by itself establish that God would raise Jesus, making the transition from divine capability to this particular intervention comparatively underdeveloped. Live burden: Craig must defend the relevant theistic background and add reasons concerning divine intention, Jesus's identity, and the expected form of action before the contextual prior materially favors this resurrection hypothesis. Locked score: The very strong band reflects precise conditional reasoning, direct central responsiveness, strong calibration, and charitable preservation of skepticism under an unconditioned background, with evidential compression limiting the application.",
+      "originalWords": 139,
+      "originalCharacters": 1081,
+      "excessWordsAboveAcceptanceMaximum": 9,
+      "lockedMove": {
+        "moveId": "pro-theistic-context-for-miracle-prior",
+        "sectionId": "section-evidential-standard-and-priors",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "reply",
+        "proposition": "Resurrection evidence should be assessed within a theistic context established by independent arguments, because a resurrection is not antecedently implausible if a creator God exists.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "40:11",
+        "sourceSpan": {
+          "startEvent": 946,
+          "endEvent": 968,
+          "startMs": 2411680,
+          "endMs": 2483920
+        },
+        "sourceExcerpt": "exists and so in presenting a case for Christianity I don't lead with the evidence for the resurrection I lead with those other argu arguments that give you a theistic context and if there is a God who created and designed the universe uh and brought it into existence then the idea that he might raise someone from the dead is not so implausible um Peter slazak an Australian philosopher in our debate on the resurrection remarked that for a creator",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 81,
+          "characterCount": 450
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-pro-central-prior"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-resurrection-low-prior"
+          ],
+          "components": [
+            {
+              "componentId": "pro-theistic-context-for-miracle-prior-component-01",
+              "targetMoveId": "con-resurrection-low-prior",
+              "text": "Whether resurrection retains an extraordinarily low prior if a creator God exists.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Craig directly answers the low-prior objection by making resurrection's prior conditional on an independently argued theistic context rather than bare naturalism.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "Within full answers, it explicitly contacts the decisive prior premise and states how independent theistic arguments would alter it."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the decisive prior premise and states how independent theistic arguments would alter it."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional structure is clear: independent theistic arguments supply context, and only given God does resurrection cease to be antecedently prohibitive."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Craig claims conditional non-implausibility rather than proving resurrection from theism alone, so the asserted force fits the supplied bridge."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Divine resurrection has an extraordinarily low prior probability.",
+          "decisiveQualification": "That assessment may change if independent evidence establishes a creator capable of resurrection."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly supplies the pro route's required contextual treatment of miracle prior probability."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The reply preserves the skeptical prior under an unconditioned background and identifies the exact contextual premise claimed to modify it."
+          }
+        },
+        "evidenceBasis": "Craig says he leads with independent arguments for a creator and contends that, given such a God, raising someone from death is not antecedently implausible.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-five-facts-best-explanation-case.critique",
+      "moveId": "pro-five-facts-best-explanation-case",
+      "originalCritique": "Strongest feature: The constructive clearly enumerates the proposed historical data and connects them to resurrection through recognized explanatory criteria, establishing the motion-level architecture needed for a comparative best-explanation case rather than offering an isolated appeal to testimony. Principal limitation: Broad scholarly acceptance is only implicitly qualified, the supporting sources are compressed, and rival explanations receive insufficient development here, so the asserted best explanation is stronger than the displayed defense of both the data and comparison. Live burden: Craig must establish each indispensable fact with appropriately independent evidence and show that resurrection outperforms combined source-critical, psychological, and legendary alternatives without assuming the reliability under dispute. Locked score: The strong/competent band reflects clear structure, coherent relevance, and a recoverable comparative thesis, alongside limited warrant, incomplete qualification of consensus, and no substantive strongest-alternative charity test within this constructive span.",
+      "originalWords": 136,
+      "originalCharacters": 1115,
+      "excessWordsAboveAcceptanceMaximum": 6,
+      "lockedMove": {
+        "moveId": "pro-five-facts-best-explanation-case",
+        "sectionId": "section-core-data-and-source-reliability",
+        "side": "pro",
+        "speaker": "William Lane Craig",
+        "moveKind": "constructive",
+        "proposition": "The crucifixion, burial, empty tomb, postmortem experiences, and transformed disciples are widely accepted historical facts that are best explained by the disciples' resurrection hypothesis under standard explanatory criteria.",
+        "importance": 3,
+        "finalScore": 84,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "41:40",
+        "sourceSpan": {
+          "startEvent": 978,
+          "endEvent": 1013,
+          "startMs": 2500160,
+          "endMs": 2604839
+        },
+        "sourceExcerpt": "those are the facts of the case and the wide majority of Scholars agree with all five of those points then the question is how do you best explain them and I can't think of a better explanation than the one that the or original disciples gave when you assess these explanations in terms of the standard criteria for being a good historical explanation things like explanatory power",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "bridge-pro-motion-best-explanation"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move states the central historical data and connects them through standard explanatory criteria to the resurrection as the proposed best explanation.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "Within constructive moves, it supplies the route's central data-to-explanation structure, although detailed source defense and rival comparison remain compressed."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "Within constructive moves, it supplies the route's central data-to-explanation structure, although detailed source defense and rival comparison remain compressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The five facts and best-explanation conclusion are clear, though the scope of scholarly agreement is only implicitly qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The best-explanation conclusion is stronger than the compressed source and rival analysis shown here, though it is framed as comparative rather than certain."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, it directly connects the asserted core data to resurrection as their best explanation."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "No skeptical alternative receives enough development in this constructive span to support a meaningful strongest-alternative charity test."
+          }
+        },
+        "evidenceBasis": "Craig enumerates crucifixion, burial, empty tomb, appearances, and transformed belief, invokes broad scholarly agreement, and applies historical explanatory criteria.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
