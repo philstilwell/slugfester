@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-discovery-execution-preparation-validation",
+  "protocolId": "assessment-production-post-canary-batch-02-discovery",
+  "status": "batch-02-discovery-execution-manifest-validation-passed-frozen-awaiting-separate-model-execution-approval",
+  "validatedAt": "2026-08-16T23:37:46Z",
+  "executionPreparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/discovery/execution-preparation-manifest.json",
+    "bytes": 124594,
+    "sha256": "5b3bf1327c112de809486203fe7e3afce51992cda9f0fdab06a1542e55286b95",
+    "status": "frozen-thirty-six-post-canary-batch-02-discovery-contexts-prepared-not-authorized"
+  },
+  "preparationManifestSha256": "390dc8a4b1b08a0acdff22a3f1d19c20963c4c089ef94a7ba67df38d74c59671",
+  "preparationValidationSha256": "eee99d5a016000418e32d584a227be5f74dd395975217dd529160f79abb5d024",
+  "selectedDebates": [
+    "103",
+    "172",
+    "04",
+    "136",
+    "83",
+    "66",
+    "126",
+    "99",
+    "93",
+    "101"
+  ],
+  "checks": {
+    "exactContextOrderReplayed": true,
+    "exactPreparedInputHashesReplayed": true,
+    "exactPartitionCoverageReplayed": true,
+    "exactTokenCountedLedgersReplayed": true,
+    "exactZeroLexicalTokenRowCompatibilityReplayed": true,
+    "exactChunkSchemasReplayed": true,
+    "copiedInputCeilingReplayed": true,
+    "scoreBlindBoundaryPreserved": true,
+    "modelAndAuthenticationPreserved": true,
+    "isolationPreserved": true,
+    "activeV22PolicyAndRoundedTieRulePreserved": true,
+    "allInheritedStopRulesPreserved": true,
+    "futureOutputsAbsent": true,
+    "zeroCostCapPreserved": true
+  },
+  "totals": {
+    "debates": 10,
+    "contextsPrepared": 36,
+    "modelContextsExecuted": 0,
+    "attempts": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "executionActivationPreparation": false,
+    "modelExecution": false,
+    "paidService": false,
+    "inventoryModelExecution": false,
+    "judgmentModelExecution": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false
+  },
+  "nextAuthorizedAction": "user-approval-required-before-batch-02-discovery-execution-activation-or-any-model-execution"
+}
