@@ -1,0 +1,1741 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "126",
+  "debateId": "craig-clifton-kalam-cosmological-argument-2021",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-kalam-transcendent-cause-route",
+      "side": "pro",
+      "description": "Establish that the universe began to exist, defend a causal principle whose metaphysical scope includes that beginning, and show that the resulting explanation can be a transcendent personal efficient cause without preexisting material conditions.",
+      "successCriteria": "The route succeeds if the universe's beginning falls under a defensible metaphysical causal principle, objections based on ordinary material and temporal causation do not establish an exemption, and conceptual analysis supports a transcendent personal cause.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-transcendent-cause",
+        "tier": "motion",
+        "description": "Connect the universe's causally explained beginning to a cause beyond spacetime and material reality, with grounds for treating that cause as personal."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-metaphysical-scope",
+          "tier": "central",
+          "description": "Establish that being cannot begin from nonbeing and that this principle is not restricted to processes occurring within spacetime."
+        },
+        {
+          "bridgeId": "pro-central-boundary-beginning",
+          "tier": "central",
+          "description": "Establish that the universe can genuinely begin even though no earlier temporal interval exists."
+        },
+        {
+          "bridgeId": "pro-central-immaterial-efficient-cause",
+          "tier": "central",
+          "description": "Establish the coherence and explanatory adequacy of efficient causation without a preexisting material cause."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-no-relevant-exemption",
+          "tier": "subsidiary",
+          "description": "Require a relevant basis for exempting the universe from a principle applied to other things that begin."
+        },
+        {
+          "bridgeId": "pro-subsidiary-selective-uncaused-beginnings",
+          "tier": "subsidiary",
+          "description": "Explain why allowing an uncaused universe would not license arbitrary substances to begin uncaused."
+        }
+      ]
+    },
+    {
+      "routeId": "con-causal-scope-limitation-route",
+      "side": "con",
+      "description": "Show that ordinary causal evidence supports principles governing physical processes within spacetime but does not warrant extending efficient causation to the beginning of spacetime and matter or inferring a transcendent personal creator.",
+      "successCriteria": "The route succeeds if the pro side does not justify metaphysical scope beyond observed causal conditions, narrower principles account for ordinary regularity, and the universe's temporal boundary does not independently require transcendent causation.",
+      "motionBridge": {
+        "bridgeId": "con-motion-withhold-transcendent-inference",
+        "tier": "motion",
+        "description": "Show that causal regularities within the universe do not supply a warranted bridge to a transcendent cause of the universe."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-physical-scope",
+          "tier": "central",
+          "description": "Establish that the evidential basis for causation is bound to spacetime, material conditions, and interaction within physical reality."
+        },
+        {
+          "bridgeId": "con-central-material-parity",
+          "tier": "central",
+          "description": "Show that induction supporting efficient causes also supports material accompaniment, creating a parity problem for creation without matter."
+        },
+        {
+          "bridgeId": "con-central-temporal-boundary-distinction",
+          "tier": "central",
+          "description": "Distinguish existence at every temporal point from an object appearing after an earlier interval in which it did not exist."
+        },
+        {
+          "bridgeId": "con-central-restricted-principles",
+          "tier": "central",
+          "description": "Provide restricted causal principles that preserve ordinary regularity without extending causation to the universe as a whole."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-affect-effect-relation",
+          "tier": "subsidiary",
+          "description": "Require an account of how causation remains intelligible when no preexisting thing is affected."
+        },
+        {
+          "bridgeId": "con-subsidiary-exception-parity",
+          "tier": "subsidiary",
+          "description": "Show that a principled exceptional class need not entail arbitrary uncaused objects or unrelated spontaneous events."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "causal-principle-scope",
+      "title": "Physical or Metaphysical Scope of the Causal Principle",
+      "weightPercent": 28,
+      "rationale": "This issue governs whether experience of causation within the universe can justify applying a causal premise to the origin of spacetime and material reality themselves."
+    },
+    {
+      "sectionId": "material-cause-and-agent-causation",
+      "title": "Material Accompaniment and Immaterial Agent Causation",
+      "weightPercent": 20,
+      "rationale": "This issue tests whether material involvement is essential to intelligible efficient causation and whether personal agency supplies a coherent model of causation without prior matter."
+    },
+    {
+      "sectionId": "temporal-beginning-and-cosmic-boundary",
+      "title": "Temporal Beginning and the Universe's Boundary",
+      "weightPercent": 20,
+      "rationale": "This issue determines whether existence at every temporal point nevertheless constitutes coming into being and whether ordinary appearance-from-nothing intuitions transfer to the universe."
+    },
+    {
+      "sectionId": "restricted-causal-alternatives",
+      "title": "Restricted Causal Principles and Ordinary Regularity",
+      "weightPercent": 16,
+      "rationale": "This issue addresses whether narrower causal rules can explain why ordinary objects do not begin uncaused while withholding commitment to an unrestricted metaphysical principle."
+    },
+    {
+      "sectionId": "selective-uncaused-existence",
+      "title": "Selective Uncaused Existence and the Arbitrary-Objects Challenge",
+      "weightPercent": 16,
+      "rationale": "This issue examines whether allowing an uncaused universe makes arbitrary uncaused substances inexplicable, and whether exceptions for particular classes can answer that challenge."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-kalam-causal-inference-and-transcendent-cause",
+      "sectionId": "causal-principle-scope",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "If the universe began to exist and everything that begins to exist has a cause, then the universe has a cause whose conceptual analysis supports a beginningless, timeless, spaceless, immaterial, powerful, personal creator.",
+      "sourceSpan": {
+        "startEvent": 62,
+        "endEvent": 109
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly yields the floor to Craig, whose uninterrupted opening presentation states and develops the Kalam argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-transcendent-cause"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move states the Kalam inference and extends its conclusion through conceptual analysis to a transcendent personal cause.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "As a constructive move, it directly establishes the principal route and its intended motion-level conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conditional inference and attributed properties are recoverable, though the conceptual-analysis bridge remains compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Craig says the analysis leads, in his view, to the properties, but the excerpt does not supply each derivation."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The syllogistic causal conclusion is valid conditionally, but the personal-creator properties require additional conceptual bridges."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The excerpt states the premises and conclusion but provides little support for the premises or the listed attributes."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the motion bridge from the universe's beginning to a transcendent personal cause."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents Craig's affirmative argument rather than interpreting a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly derives a cause from the two Kalam premises and lists timeless, spaceless, immaterial, powerful, and personal attributes.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-material-cause-parity",
+      "sectionId": "material-cause-and-agent-causation",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Inductive evidence for efficient causes equally supports the principle that whatever has an efficient cause of its existence also has a material cause, so induction alone cannot justify retaining one principle while rejecting the other.",
+      "sourceSpan": {
+        "startEvent": 160,
+        "endEvent": 240
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton is directly invited to begin his objections and presents the parity principle and its parallel argument in a sustained first-person turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-material-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-kalam-causal-inference-and-transcendent-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-material-cause-parity-component-01",
+            "targetMoveId": "pro-kalam-causal-inference-and-transcendent-cause",
+            "text": "The empirical warrant for retaining efficient causation while discarding material accompaniment.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The parity principle directly challenges the evidential selectivity in extending an efficient cause to the universe without matter.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts a decisive warrant for the proposed transcendent, immaterial efficient cause."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The parallel principle and its inductive parity claim are clearly stated with stable causal terminology."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is limited to equal empirical support rather than asserting that material causation is metaphysically necessary."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The causal premise may rest on metaphysical intuition rather than induction alone.",
+        "decisiveQualification": "The parity objection is expressly directed at empirical or inductive support."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The symmetry argument is clear and valid against an induction-only defense, subject to differences between the principles."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Observed material accompaniment supports the parallel, though representativeness and possible counterexamples remain underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central material-parity bridge by identifying a direct inductive symmetry."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "Clifton fairly confines his conclusion to induction and does not claim to refute every possible metaphysical defense."
+        }
+      },
+      "evidenceBasis": "Clifton formulates the double causal principle and expressly claims that it enjoys as much empirical support as the efficient-cause premise.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-physical-not-metaphysical-scope",
+      "sectionId": "causal-principle-scope",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Observed causation occurs within spacetime, so its evidential scope is physical rather than metaphysical and does not by itself extend to the totality of time and space.",
+      "sourceSpan": {
+        "startEvent": 247,
+        "endEvent": 291
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig asks Clifton whether the premise is false or unproven, and Clifton explicitly answers before explaining his restricted-scope position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-withhold-transcendent-inference"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-kalam-causal-inference-and-transcendent-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-physical-not-metaphysical-scope-component-01",
+            "targetMoveId": "pro-kalam-causal-inference-and-transcendent-cause",
+            "text": "Whether causal evidence warrants application beyond the totality of spacetime.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly denies the crucial extrapolation from observed intracosmic causation to a cause of spacetime itself.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts the motion-level inferential bridge and states the proposed evidential boundary."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Physical and metaphysical scope are contrasted clearly, and the evidential limitation is expressly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Clifton says the evidence is not good enough rather than claiming a demonstrated impossibility of transcendent causation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The causal principle could be defended as an a priori metaphysical principle.",
+        "decisiveQualification": "Observed causal cases alone do not establish that broader metaphysical scope."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The limitation follows coherently from the stated evidential base, although the precise rule of scope is not fully defended."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The appeal to all observed causation occurring within spacetime is pertinent, with the extrapolation standard left compressed."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "This is a direct motion-level reason to withhold the inference to a transcendent cause."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The objection fairly targets the evidential extension while leaving open a differently warranted metaphysical argument."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says causal evidence is intracosmic and denies adequate grounds for applying it to the totality of time and space.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-boundary-compatible-definition-of-beginning",
+      "sectionId": "temporal-beginning-and-cosmic-boundary",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Beginning to exist does not require a preceding empty time; it requires that there be no earlier time at which the thing exists, allowing time and the universe to begin without contradiction.",
+      "sourceSpan": {
+        "startEvent": 292,
+        "endEvent": 352
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig takes the next uninterrupted turn, directly characterizes Clifton's objection as one about scope, and supplies his alternative definition of beginning.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-boundary-beginning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-physical-not-metaphysical-scope"
+        ],
+        "components": [
+          {
+            "componentId": "pro-boundary-compatible-definition-of-beginning-component-01",
+            "targetMoveId": "con-physical-not-metaphysical-scope",
+            "text": "The claimed evidential restriction of causal principles to processes within spacetime.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-boundary-compatible-definition-of-beginning-component-02",
+            "targetMoveId": "con-physical-not-metaphysical-scope",
+            "text": "Whether beginning requires an earlier empty temporal interval.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The definition answers a temporal-boundary concern but does not itself answer Clifton's decisive evidential claim that observed causation has only physical scope.",
+        "responsivenessWithinClass": {
+          "value": 64,
+          "rationale": "It supplies relevant contrary material and resolves a secondary boundary issue, but leaves the primary scope warrant unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposed definition supplies a clear condition and expressly excludes the need for preceding empty time."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The definitional proposal supports coherence at the boundary without claiming by itself to prove a cause."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Clifton's objection concerns evidential scope rather than logical contradiction in beginning time.",
+        "decisiveQualification": "Removing contradiction does not establish that the causal principle applies."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The definition consistently permits a first time and avoids requiring a contradictory time before time."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The conceptual definition is well motivated, though no independent argument establishes it as uniquely correct."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable central bridge that a universe can begin at a temporal boundary."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "Craig recognizes the scope issue but answers mainly a temporal definition, omitting the strongest evidential qualification."
+        }
+      },
+      "evidenceBasis": "Craig defines beginning by the absence of an earlier time at which the entity exists and explicitly denies any need for an empty prior interval.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-ordinary-causal-features-absent",
+      "sectionId": "causal-principle-scope",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Applying causation to the universe abandons features found in observed causal cases, including occurrence within spacetime, interaction between efficient and material causes, and an affect-effect relation.",
+      "sourceSpan": {
+        "startEvent": 353,
+        "endEvent": 397
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton explicitly clarifies his prior objection in an uninterrupted response and enumerates the empirical features he believes cosmic causation sacrifices.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-physical-scope"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-kalam-causal-inference-and-transcendent-cause",
+          "pro-boundary-compatible-definition-of-beginning"
+        ],
+        "components": [
+          {
+            "componentId": "con-ordinary-causal-features-absent-component-01",
+            "targetMoveId": "pro-kalam-causal-inference-and-transcendent-cause",
+            "text": "Whether ordinary causal evidence transfers when its observed background features are removed.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-ordinary-causal-features-absent-component-02",
+            "targetMoveId": "pro-boundary-compatible-definition-of-beginning",
+            "text": "Whether boundary compatibility is sufficient to place the universe under the causal premise.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Clifton identifies several empirical disanalogies that challenge the transfer from ordinary causation even if a boundary beginning is coherent.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "The reply explicitly contacts the evidential bridge and enumerates the missing causal features."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The empirical features are clear, though the affect-effect expression is intuitive and not fully defined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move frames the features as grounds for doubt and intuition rather than a proof that causation is impossible."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some observed causal features may be common accompaniments rather than essential conditions.",
+        "decisiveQualification": "Their uniform presence still bears on an empirical extrapolation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The disanalogy challenge is coherent, although it needs a warrant connecting observed accompaniment to scope limitation."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The cited features are representative of ordinary cases, but necessity and independence among them are not established."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central physical-scope bridge by specifying what cosmic causation would abandon."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "Clifton presents the features as evidentially important without simply assuming that every one is metaphysically necessary."
+        }
+      },
+      "evidenceBasis": "The excerpt lists spacetime location, efficient-material interaction, and an affect-effect relation as features of observed causal cases.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-agent-causation-without-material-cause",
+      "sectionId": "material-cause-and-agent-causation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Material accompaniment may be common rather than essential to efficient causation because an intellectual agent can cause mental events or thoughts that are not constituted from material stuff.",
+      "sourceSpan": {
+        "startEvent": 400,
+        "endEvent": 430
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig resumes after a brief acknowledgment and directly evaluates Clifton's efficient-plus-material principle before proposing mental causation as a counterexample.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-material-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-material-cause-parity",
+          "con-ordinary-causal-features-absent"
+        ],
+        "components": [
+          {
+            "componentId": "pro-agent-causation-without-material-cause-component-01",
+            "targetMoveId": "con-material-cause-parity",
+            "text": "Whether every efficient cause of existence must operate with a material cause.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-agent-causation-without-material-cause-component-02",
+            "targetMoveId": "con-ordinary-causal-features-absent",
+            "text": "Whether efficient-material interaction is essential rather than merely common.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The mental-event example is offered as a direct counterexample to the necessity version of material accompaniment.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It directly contacts the parity principle's decisive universality claim through an explicit proposed counterexample."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The counterexample is clear, but the shift from causing mental events to creating substances limits its scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The example supports possible nonmaterial efficient causation, but its relevance to creation of concrete substances is incomplete."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mental events may depend on material brains even if thoughts are not constituted from matter.",
+        "decisiveQualification": "Dependence differs from having matter as the material constituent of the thought."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "A genuine immaterial mental effect would counter strict parity, but the substance-event analogy leaves a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The claim that thoughts lack material causes is asserted and remains disputed given possible physical dependence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central material-parity bridge with the debate's principal counterexample."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response addresses constitution but does not fully engage causal dependence on embodied physical conditions."
+        }
+      },
+      "evidenceBasis": "Craig cites intellectual agents producing thoughts and argues that thoughts are not constituted from matter or material stuff.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-efficient-explanation-better-than-double-absence",
+      "sectionId": "material-cause-and-agent-causation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "A transcendent personal agent could efficiently cause concrete reality without prior matter, whereas denying cosmic causation leaves a beginning universe with neither an efficient nor a material cause.",
+      "sourceSpan": {
+        "startEvent": 500,
+        "endEvent": 538
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following a brief audio interruption, Craig repeats and develops his response, explicitly contrasting the explanatory consequences of the two positions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-immaterial-efficient-cause"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-material-cause-parity",
+          "con-ordinary-causal-features-absent"
+        ],
+        "components": [
+          {
+            "componentId": "pro-efficient-explanation-better-than-double-absence-component-01",
+            "targetMoveId": "con-material-cause-parity",
+            "text": "Whether rejecting a material cause also warrants rejecting an efficient cause of the universe.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-efficient-explanation-better-than-double-absence-component-02",
+            "targetMoveId": "con-ordinary-causal-features-absent",
+            "text": "Whether a personal agent can intelligibly cause concrete reality without prior matter.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig directly contrasts an immaterial efficient explanation with Clifton's position, which would leave both kinds of cause absent.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the explanatory consequence clearly, although it asserts more than it demonstrates about agent creation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The explanatory comparison is recoverable, with the conditions of agent causation left largely implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Calling double absence absurd exceeds the supplied comparison because brute existence remains a coherent rival possibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The universe could be a brute initial reality requiring neither kind of cause.",
+        "decisiveQualification": "Lacking two causes is not independently worse unless a need for either cause is established."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "The comparison favors an explanation only if agent creation is coherent and causal explanation is antecedently required."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The personal-agent model and claimed absurdity of double absence are asserted without representative support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It centrally supports the adequacy of an immaterial efficient cause despite material absence."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The phrase double absurdity understates the coherent brute-fact alternative and assumes the disputed explanatory demand."
+        }
+      },
+      "evidenceBasis": "Craig says a transcendent personal agent could think concrete objects into reality and contrasts that with neither an efficient nor material cause.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-effect-without-affected-thing",
+      "sectionId": "material-cause-and-agent-causation",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Creation without efficient-material interaction would produce an effect without anything being affected, making transcendent causation less intelligible than restricting the causal principle to physical reality.",
+      "sourceSpan": {
+        "startEvent": 740,
+        "endEvent": 768
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton explicitly attributes the disagreement to divergent causal intuitions and gives a sustained account of why the affect-effect relation is indispensable for him.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-affect-effect-relation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-efficient-explanation-better-than-double-absence",
+          "pro-agent-causation-without-material-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-effect-without-affected-thing-component-01",
+            "targetMoveId": "pro-efficient-explanation-better-than-double-absence",
+            "text": "Whether creation by an immaterial agent remains an intelligible instance of causation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-effect-without-affected-thing-component-02",
+            "targetMoveId": "pro-agent-causation-without-material-cause",
+            "text": "Whether mental agency answers the need for something that is affected.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly identifies the alleged conceptual defect in creation without material interaction: an effect occurs while nothing is affected.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It expressly contacts the proposed agent-causal model and states the defeating conceptual consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The objection is recoverable, though affected and effect are related through an intuitive rather than defined distinction."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Clifton presents the affect-effect condition as an intuition bearing on intelligibility, not as demonstrated necessity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An effect itself may count as what is affected without preexisting material.",
+        "decisiveQualification": "The objection requires a preexisting bearer of change, which the creation model denies."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The challenge is coherent if causation requires alteration, but that requirement is the principal disputed premise."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The affect-effect requirement rests mainly on intuition and ordinary cases rather than a defended metaphysical analysis."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary bridge demanding an intelligible affected-effect relation."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "Clifton recognizes the unusual model but does not fully address whether production, rather than alteration, can be causal."
+        }
+      },
+      "evidenceBasis": "Clifton expressly describes the proposed creation as producing an effect without anything anywhere having been affected.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-temporally-exhaustive-universe",
+      "sectionId": "temporal-beginning-and-cosmic-boundary",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "A universe that exists at every temporal point is not aptly described as popping into existence from nothing, so intuitions about objects newly appearing within time do not transfer to the cosmic boundary.",
+      "sourceSpan": {
+        "startEvent": 789,
+        "endEvent": 830
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton declines to discuss the cause's personal attributes and explains in a continuous turn why he remains unconvinced that the universe requires a cause.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-temporal-boundary-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-boundary-compatible-definition-of-beginning",
+          "pro-kalam-causal-inference-and-transcendent-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-temporally-exhaustive-universe-component-01",
+            "targetMoveId": "pro-boundary-compatible-definition-of-beginning",
+            "text": "Whether existence at every temporal point is equivalent to appearing after prior nonexistence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-temporally-exhaustive-universe-component-02",
+            "targetMoveId": "pro-kalam-causal-inference-and-transcendent-cause",
+            "text": "Whether ordinary popping-into-being intuitions apply to the universe's first boundary.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Clifton directly distinguishes a temporally exhaustive universe from an object appearing within an already existing time.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts the boundary definition and identifies the decisive difference from ordinary examples."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The temporal distinction and the limited criticism of popping-from-nothing language are clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The categorical claim that one cannot use the language goes beyond showing that its ordinary imagery may mislead."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "On a tensed theory, a first temporal state can genuinely come into being without earlier time.",
+        "decisiveQualification": "That view still differs phenomenologically and inductively from intratemporal appearance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The distinction between first-time existence and later appearance is clear and directly blocks a simple analogy."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The temporal contrast is conceptually supported, though the further conclusion about causation depends on disputed time theory."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It nearly maximally supports the central temporal-boundary distinction."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "Clifton acknowledges theories of time while maintaining the narrower transfer objection rather than denying every boundary-beginning concept."
+        }
+      },
+      "evidenceBasis": "Clifton contrasts the universe at every temporal point with a tiger appearing in a room and calls popping-from-nothing language misleading.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-tensed-becoming-from-being-principle",
+      "sectionId": "temporal-beginning-and-cosmic-boundary",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "On a tensed theory of time the universe genuinely comes into being rather than merely possessing a static front edge, and an uncaused beginning conflicts with the principle that being cannot arise from nonbeing.",
+      "sourceSpan": {
+        "startEvent": 831,
+        "endEvent": 893
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly disagrees with Clifton and sustains the response through the tensed-time analysis, metaphysical principle, Hume discussion, and resulting causal conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-temporal-boundary-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-temporally-exhaustive-universe",
+          "con-physical-not-metaphysical-scope"
+        ],
+        "components": [
+          {
+            "componentId": "pro-tensed-becoming-from-being-principle-component-01",
+            "targetMoveId": "con-temporally-exhaustive-universe",
+            "text": "Whether a first temporal state genuinely comes into being on a tensed theory.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-tensed-becoming-from-being-principle-component-02",
+            "targetMoveId": "con-physical-not-metaphysical-scope",
+            "text": "Whether a metaphysical being-from-nonbeing principle reaches the boundary.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig directly answers the front-edge interpretation by invoking objective temporal becoming and connecting it to a metaphysical causal principle.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "The response expressly contacts the decisive temporal interpretation and states the contrary consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The argument is expressly conditional on a tensed theory and distinguishes becoming from a static front edge."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Craig conditions the temporal conclusion on a tensed theory and marks the metaphysical judgment as his considered view."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "On a tenseless theory, the universe may have only a static temporal boundary.",
+        "decisiveQualification": "Craig's rebuttal is expressly conditional on objective temporal becoming."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "Given tensed becoming and the being principle, the reply is coherent, with the causal bridge still requiring defense."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The time theory and ancient metaphysical principle are invoked rather than independently established in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central temporal-boundary distinction at its strongest theoretical point."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The response accurately isolates the relevant time-theoretic alternative and does not pretend to refute it unconditionally."
+        }
+      },
+      "evidenceBasis": "Craig contrasts a static front edge with genuine coming into being under tensed time and invokes the principle that being does not arise from nonbeing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-metaphysical-scope-being-from-nonbeing",
+      "sectionId": "causal-principle-scope",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "The causal principle is metaphysical rather than a scientific law confined to spacetime because it expresses that being cannot arise from nonbeing and that whatever comes into existence requires a cause.",
+      "sourceSpan": {
+        "startEvent": 917,
+        "endEvent": 945
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly answers the scope question in a continuous turn contrasting metaphysical principles with physical laws.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-withhold-transcendent-inference"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-physical-not-metaphysical-scope",
+          "con-ordinary-causal-features-absent"
+        ],
+        "components": [
+          {
+            "componentId": "pro-metaphysical-scope-being-from-nonbeing-component-01",
+            "targetMoveId": "con-physical-not-metaphysical-scope",
+            "text": "Whether the causal premise is a metaphysical principle rather than an intracosmic physical law.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-metaphysical-scope-being-from-nonbeing-component-02",
+            "targetMoveId": "con-ordinary-causal-features-absent",
+            "text": "Whether missing ordinary physical features defeats the principle's broader application.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly rejects the proposed physical restriction and places the burden on Clifton to justify an exemption.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts the decisive scope question and supplies the metaphysical basis for broader application."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The physical-law and metaphysical-principle contrast is clear, as is the claimed being-from-nonbeing rationale."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The necessity claim is intelligible but is supported mainly through restatement of the disputed metaphysical intuition."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The ordinary causal premise may be evidentially restricted without a metaphysical exemption.",
+        "decisiveQualification": "Labeling a principle metaphysical does not independently demonstrate its unrestricted truth."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The conclusion follows if the metaphysical principle is accepted, but its formulation substantially repeats the causal premise."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The broad scope rests largely on assertion and burden shifting rather than independent argument against restricted principles."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly attacks the motion bridge for withholding a transcendent inference on scope grounds."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "Craig squarely recognizes the scope objection but shifts the burden before fully defending the universal metaphysical warrant."
+        }
+      },
+      "evidenceBasis": "Craig explicitly calls the principle metaphysical, states that being cannot come from nonbeing, and demands a reason for physical restriction.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-restricted-causal-principles",
+      "sectionId": "restricted-causal-alternatives",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Principles requiring causes only for non-initial things or for things beginning within spacetime can preserve ordinary causal regularity without adopting an unrestricted metaphysical causal principle.",
+      "sourceSpan": {
+        "startEvent": 1002,
+        "endEvent": 1021
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following a brief interruption, Clifton gives named and generic alternatives in a clearly attributable continuous turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-restricted-principles"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-metaphysical-scope-being-from-nonbeing",
+          "pro-kalam-causal-inference-and-transcendent-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-restricted-causal-principles-component-01",
+            "targetMoveId": "pro-metaphysical-scope-being-from-nonbeing",
+            "text": "Whether ordinary regularity requires an unrestricted metaphysical causal principle.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-restricted-causal-principles-component-02",
+            "targetMoveId": "pro-kalam-causal-inference-and-transcendent-cause",
+            "text": "Whether narrower causal rules block arbitrary intracosmic beginnings without reaching the universe.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Clifton supplies explicit restricted alternatives that preserve ordinary causation while denying the universal premise needed by Kalam.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It answers the demand for a restriction by stating concrete replacement principles and their intended consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Both proposed restrictions are clearly stated and their limited role in preserving ordinary regularity is explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Clifton offers the restricted rules as possibilities sufficient to defeat necessity, not as conclusively established laws."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A restricted principle may appear ad hoc unless independently motivated.",
+        "decisiveQualification": "Logical availability alone answers chaos but does not establish evidential superiority."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The alternatives consistently preserve intracosmic regularity while excluding initial or boundary cases."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Their logical possibility is clear, but independent motivation and comparative explanatory adequacy remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It maximally supports the central restricted-principles bridge with explicit formulations."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly limits itself to showing alternatives and does not claim their mere possibility proves the universe uncaused."
+        }
+      },
+      "evidenceBasis": "Clifton proposes causes for non-initial beginnings or for beginnings within spacetime and explains that these avoid a commitment to chaos.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-arbitrary-objects-challenge",
+      "sectionId": "selective-uncaused-existence",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Once an uncaused beginning is allowed for the universe, no stated restriction explains why only universes, rather than bicycles, root beer, or other arbitrary objects, may begin without causes.",
+      "sourceSpan": {
+        "startEvent": 1226,
+        "endEvent": 1246
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig introduces the follow-up explicitly to Clifton and develops the Arthur Prior challenge until Clifton begins his answer.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-restricted-principles"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-restricted-causal-principles"
+        ],
+        "components": [
+          {
+            "componentId": "pro-arbitrary-objects-challenge-component-01",
+            "targetMoveId": "con-restricted-causal-principles",
+            "text": "Whether the proposed restrictions explain why arbitrary objects cannot begin uncaused.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig directly presses the selectivity consequence of allowing an uncaused universe and demands a principled restriction on other objects.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It clearly contacts the explanatory adequacy of the restricted alternatives through vivid counterexamples."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The challenge is clear, though it leaves implicit that the compared objects must satisfy the same relevant conditions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claimed lack of any answer is stronger than showing that Clifton has not yet supplied a non-ad-hoc answer."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Initial universes and intracosmic artifacts may belong to independently distinguishable classes.",
+        "decisiveQualification": "The restriction must explain why the class difference is causally relevant."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The parity challenge is forceful absent a relevant restriction, but it does not prove all restrictions impossible."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Ordinary nonappearance of arbitrary objects is apt evidence, while the extrapolation across unlike classes needs defense."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central restricted-principles bridge by challenging selective application."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The challenge recognizes no stated restriction but speaks too broadly in implying that no principled distinction could be offered."
+        }
+      },
+      "evidenceBasis": "Craig names bicycles, Beethoven, and root beer and asks what prevents them from beginning uncaused once an exception is admitted.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-substance-event-causation-distinction",
+      "sectionId": "restricted-causal-alternatives",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "The Kalam causal premise concerns substances that begin to exist and does not commit its defender to the separate proposition that every event has a cause.",
+      "sourceSpan": {
+        "startEvent": 1270,
+        "endEvent": 1289
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly distinguishes substances from events and explains the argument's neutrality regarding universal event causation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-exception-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-restricted-causal-principles"
+        ],
+        "components": [
+          {
+            "componentId": "pro-substance-event-causation-distinction-component-01",
+            "targetMoveId": "con-restricted-causal-principles",
+            "text": "Whether possible uncaused events undermine a premise specifically about substances beginning.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig limits his commitment to substances and thereby blocks an event-based parity objection from directly reaching the Kalam premise.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It explicitly identifies the category distinction and the exact proposition to which the argument is committed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The limited commitment concerning substances rather than every event is expressly and consistently formulated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The claim concerns what the stated argument commits its defender to, which is directly established by its formulation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Event causation might still supply an analogy relevant to causal exceptions.",
+        "decisiveQualification": "Relevance by analogy does not make event universalism a premise of Kalam."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinction validly limits the argument's commitments and avoids a direct inference from uncaused events to substances."
+        },
+        "evidenceWarrant": {
+          "value": 89,
+          "rationale": "The wording of the causal premise itself specifically supports the asserted limitation of commitment."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly attacks the subsidiary exception-parity bridge, though it does not settle substance exceptions."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "Craig accurately limits his formal commitment without denying that separate event-causal questions could remain."
+        }
+      },
+      "evidenceBasis": "Craig expressly says the premise concerns everything that begins to exist and does not commit him to the claim that every event has a cause.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-principled-exception-parity",
+      "sectionId": "selective-uncaused-existence",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Allowing a special class of uncaused occurrences does not imply that unrelated events or intracosmic objects should occur uncaused, just as a possible exception for mental events would not predict arbitrary physical events.",
+      "sourceSpan": {
+        "startEvent": 1290,
+        "endEvent": 1307
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton immediately draws the stated lesson from Craig's libertarian example in a continuous responsive turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-exception-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-arbitrary-objects-challenge",
+          "pro-substance-event-causation-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "con-principled-exception-parity-component-01",
+            "targetMoveId": "pro-arbitrary-objects-challenge",
+            "text": "Whether one uncaused class entails arbitrary uncaused objects or unrelated events.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-principled-exception-parity-component-02",
+            "targetMoveId": "pro-substance-event-causation-distinction",
+            "text": "Whether category-specific exceptions can remain principled despite substance-event differences.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Clifton directly denies the entailment from one exceptional class to arbitrary cases and uses Craig's own event exception as a parity example.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It contacts the decisive inference and supplies a concrete structural counterexample to that inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The limited non-entailment claim and its comparison between exceptional classes are clearly expressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move establishes only that the arbitrary-object consequence does not follow logically from a class exception."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig's challenge may concern explanation rather than strict logical entailment.",
+        "decisiveQualification": "Blocking entailment does not itself provide the relevant class explanation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The counterexample effectively blocks the bare entailment, while leaving the explanatory selection problem unresolved."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The analogy to accepted category-specific exceptions is specific and pertinent, though its cosmic relevance is not established."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It maximally supports the subsidiary exception-parity bridge by denying arbitrary spillover."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "Clifton successfully answers a logical reading but only partially meets the stronger demand for an explanatory restriction."
+        }
+      },
+      "evidenceBasis": "Clifton argues that possible uncaused mental events would not predict a floating pen and applies the same class-exception structure to the universe.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-no-prior-empty-interval",
+      "sectionId": "temporal-beginning-and-cosmic-boundary",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "A universe existing at every temporal point differs fundamentally from a universe appearing after an interval of empty time, and only the latter matches the rejected picture of a sudden uncaused appearance.",
+      "sourceSpan": {
+        "startEvent": 1324,
+        "endEvent": 1338
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton contrasts two temporal pictures in his own turn and acknowledges the connection to competing theories of time.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-temporal-boundary-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-arbitrary-objects-challenge",
+          "pro-boundary-compatible-definition-of-beginning"
+        ],
+        "components": [
+          {
+            "componentId": "con-no-prior-empty-interval-component-01",
+            "targetMoveId": "pro-arbitrary-objects-challenge",
+            "text": "Whether a first universe is relevantly analogous to an object appearing after empty time.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-no-prior-empty-interval-component-02",
+            "targetMoveId": "pro-boundary-compatible-definition-of-beginning",
+            "text": "Whether a boundary beginning differs from an intratemporal sudden appearance.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Clifton directly supplies the temporal distinction meant to explain why he rejects intratemporal popping while allowing an initial universe.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It explicitly contacts the analogy and states the relevant condition separating the two cases."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast between prior empty time and existence at all temporal points is sharply and explicitly drawn."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The categorical rejection is confined to the stipulated prior-empty-interval case and does not overstate the broader conclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig's definition allows both cases to count as beginnings despite the temporal distinction.",
+        "decisiveQualification": "Shared classification does not eliminate their evidential and intuitive disanalogy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinction consistently permits a first temporal reality while excluding a later unexplained appearance."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The conceptual temporal contrast is strong, although its causal significance still requires a separate principle."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It nearly maximally supports the central temporal-boundary bridge with a precise distinction."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The reply grants the relevant boundary scenario and explains rather than caricatures the difference from ordinary popping cases."
+        }
+      },
+      "evidenceBasis": "Clifton says he would deny a universe appearing after empty time but distinguishes that from a universe present at every temporal point.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-inexplicability-burden",
+      "sectionId": "selective-uncaused-existence",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Claiming that selective uncaused existence is inexplicable asserts that no explanation is possible, so the claimant bears the burden of supporting that stronger modal conclusion.",
+      "sourceSpan": {
+        "startEvent": 1407,
+        "endEvent": 1418
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton explicitly analyzes the strength of Craig's explanatory claim before beginning an analogy and being interrupted.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-exception-parity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-arbitrary-objects-challenge"
+        ],
+        "components": [
+          {
+            "componentId": "con-inexplicability-burden-component-01",
+            "targetMoveId": "pro-arbitrary-objects-challenge",
+            "text": "Whether no possible explanation can restrict uncaused beginnings to a special class.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses Craig's impossibility language as a stronger modal claim and assigns its supporting burden to the claimant.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It contacts the strongest formulation of Craig's challenge, though it does not itself provide the requested explanation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between lacking a supplied explanation and claiming explanation impossible is clearly articulated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The burden claim is appropriately limited to the stronger modal assertion of impossibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig may be making an internal explanatory challenge rather than asserting absolute modal impossibility.",
+        "decisiveQualification": "His explicit use of inexplicable can nevertheless invite the stronger reading."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The burden distinction is valid, but defeating impossibility does not discharge the weaker explanatory challenge."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The semantic and modal distinction is well supported by the stated claim, with limited bearing on practical explanation."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary exception-parity bridge by resisting an unsupported impossibility conclusion."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "Clifton identifies a legitimate modal burden but risks overlooking the weaker demand for an actually supplied restriction."
+        }
+      },
+      "evidenceBasis": "Clifton explicitly distinguishes asking for an explanation from claiming explanation impossible and assigns the latter claim a burden of proof.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-no-prior-restrictor-of-uncaused-beginnings",
+      "sectionId": "restricted-causal-alternatives",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Restricted causal alternatives do not explain selective uncaused beginnings because, if things can begin from nothing, nothing explanatorily prior exists to restrict which kinds of things can do so.",
+      "sourceSpan": {
+        "startEvent": 1475,
+        "endEvent": 1495
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig identifies and restates the second argument in a sustained closing response, with only a brief overlapping acknowledgment at its final row.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-restricted-principles"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-inexplicability-burden",
+          "con-restricted-causal-principles",
+          "con-principled-exception-parity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-no-prior-restrictor-of-uncaused-beginnings-component-01",
+            "targetMoveId": "con-inexplicability-burden",
+            "text": "Why an explanation restricting uncaused beginnings is allegedly impossible rather than merely absent.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-no-prior-restrictor-of-uncaused-beginnings-component-02",
+            "targetMoveId": "con-restricted-causal-principles",
+            "text": "Whether a restriction can operate without anything explanatorily prior to the beginning.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-no-prior-restrictor-of-uncaused-beginnings-component-03",
+            "targetMoveId": "con-principled-exception-parity",
+            "text": "Whether a class exception can be principled when no prior restrictor exists.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig accepts the modal burden and supplies the claimed reason: no explanatorily prior reality is available to impose a selective restriction.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It expressly contacts the impossibility demand and states both the proposed ground and its consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The inference is clear, though explanatorily prior is not fully defined and may differ from temporally prior."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The absence of a prior restrictor does not obviously exclude essential, logical, or lawlike differences among possible kinds."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A restriction could arise from necessary kind differences rather than an external prior condition.",
+        "decisiveQualification": "Such differences would need independent grounding rather than mere stipulation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The inference works against external prior restriction but becomes too broad when it excludes intrinsic modal constraints."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The impossibility conclusion rests on an asserted explanatory principle without comparison to intrinsic or logical restrictions."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central restricted-principles bridge by challenging their explanatory grounding."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "Craig answers external restriction but does not address the strongest possibility of intrinsic or necessary class constraints."
+        }
+      },
+      "evidenceBasis": "Craig invokes Arthur Prior's second step and argues that nothing explanatorily prior exists to restrict which things may begin from nothing.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move-level ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently of scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide consequence remains outside the move-level ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently of scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

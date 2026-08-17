@@ -1,0 +1,1526 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-theism-irrational-route",
+      "side": "pro",
+      "description": "Show that belief in an all-powerful, all-loving God does not accord with the available evidence because apparently gratuitous suffering and salvation-related confusion conflict with the expected conduct of such a deity, while the offered arguments from reason, design, morality, and purpose do not overcome those conflicts.",
+      "successCriteria": "The route succeeds if the evidence expected under an all-powerful, all-loving God is materially inconsistent with suffering or religious confusion and the affirmative grounds for theism remain insufficient to restore rational warrant.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-bridge",
+        "tier": "motion",
+        "description": "Establish that the total available evidence makes belief in the specified all-powerful, all-loving God irrational."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-gratuitous-evil-bridge",
+          "tier": "central",
+          "description": "Establish that apparently purposeless suffering is unexpected if an all-powerful and all-loving God exists."
+        },
+        {
+          "bridgeId": "pro-salvation-confusion-bridge",
+          "tier": "central",
+          "description": "Establish that serious consequences attached to disputed religious claims conflict with divine love and adequate revelation."
+        },
+        {
+          "bridgeId": "pro-undercut-theistic-evidence-bridge",
+          "tier": "central",
+          "description": "Show that arguments from reason, fine-tuning, morality, or purpose do not supply enough specific support for the specified God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-evidence-standard-bridge",
+          "tier": "subsidiary",
+          "description": "Define rational belief as belief proportioned to the reason and evidence available to the believer."
+        },
+        {
+          "bridgeId": "pro-natural-explanation-bridge",
+          "tier": "subsidiary",
+          "description": "Supply natural explanations for cognition, moral intuitions, or biological complexity where these are offered as evidence for God."
+        }
+      ]
+    },
+    {
+      "routeId": "con-rational-theism-route",
+      "side": "con",
+      "description": "Show that belief in God remains rational through a cumulative explanatory case from reliable reason, life-permitting order, objective morality, and human purpose, while accounting for suffering and other contrary evidence without requiring that every difficulty be conclusively resolved.",
+      "successCriteria": "The route succeeds if theism provides material explanatory support across the principal affirmative issues and the alleged conflicts from evil or religious confusion do not defeat the resulting cumulative warrant.",
+      "motionBridge": {
+        "bridgeId": "con-motion-bridge",
+        "tier": "motion",
+        "description": "Establish that the cumulative evidence and available answers to defeaters make belief in God rational."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-cumulative-case-bridge",
+          "tier": "central",
+          "description": "Establish that reason, cosmic order, morality, and purpose jointly provide positive explanatory support for theism."
+        },
+        {
+          "bridgeId": "con-evil-response-bridge",
+          "tier": "central",
+          "description": "Show that suffering can count as counterevidence without rendering belief in an all-loving God irrational."
+        },
+        {
+          "bridgeId": "con-moral-grounding-bridge",
+          "tier": "central",
+          "description": "Show that objective goodness and obligation are more adequately grounded in God than in purposeless physical reality."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-cognitive-trust-bridge",
+          "tier": "subsidiary",
+          "description": "Explain why designed intelligence supplies a basis for trusting human capacities to understand truth."
+        },
+        {
+          "bridgeId": "con-purpose-and-revelation-bridge",
+          "tier": "subsidiary",
+          "description": "Relate divine intention, religious claims, and human significance to the broader rational case for theism."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "rationality-and-reason",
+      "title": "Rational warrant and trust in reason",
+      "weightPercent": 20,
+      "rationale": "This issue fixes the evidential standard governing the motion and tests whether evolved cognition or divinely intended intelligence provides an adequate basis for trusting human reasoning."
+    },
+    {
+      "sectionId": "evil-and-divine-love",
+      "title": "Suffering, gratuitous evil, and divine love",
+      "weightPercent": 25,
+      "rationale": "The compatibility of apparently purposeless suffering with unlimited power and love is a motion-level dispute and the principal potential defeater confronting rational theism."
+    },
+    {
+      "sectionId": "morality-and-grounding",
+      "title": "Objective morality and its grounding",
+      "weightPercent": 20,
+      "rationale": "The parties dispute whether moral judgments arise adequately from natural processes or require God, and whether grounding goodness in divine nature avoids arbitrariness."
+    },
+    {
+      "sectionId": "design-evolution-and-purpose",
+      "title": "Design, evolution, and human purpose",
+      "weightPercent": 20,
+      "rationale": "Fine-tuning, biological complexity, evolutionary selection, and intentional human existence form a shared dispute over whether observed order and life support divine design."
+    },
+    {
+      "sectionId": "revelation-and-salvation-confusion",
+      "title": "Revelation, miracles, and salvation confusion",
+      "weightPercent": 15,
+      "rationale": "Disagreement about miracle claims, culturally inherited belief, biblical authority, and salvation requirements bears on what revelation an all-loving God should provide and whether religious assent is rational."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-rationality-evidential-standard",
+      "sectionId": "rationality-and-reason",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "constructive",
+      "proposition": "A belief is rational only when it accords with the reason and evidence available to the believer, regardless of whether the belief ultimately proves true.",
+      "sourceSpan": {
+        "startEvent": 101,
+        "endEvent": 137
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Woodford the floor, and the uninterrupted first-person presentation continues through this window.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-evidence-standard-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move defines the evidential standard used by the pro route and therefore has no earlier opposing target to answer.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it clearly and directly establishes the proposed standard governing rational belief."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between rationality and truth is express, and the available-evidence standard remains stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The categorical definition is supported by a clear conceptual distinction and does not require empirical uncertainty."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The evidential standard and truth-rationality distinction form a consistent inference, with only limited defense of the biconditional."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The miasma example concretely supports the distinction, though rival accounts of rational belief are not compared."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly occupies the upper part of the subsidiary tier by establishing the pro route's evidential standard."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move states a governing definition without developing a competing interpretation that requires a charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly defines rational belief by available reason and evidence and distinguishes rationality from eventual truth.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-gratuitous-evil-divine-love",
+      "sectionId": "evil-and-divine-love",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "constructive",
+      "proposition": "Apparently gratuitous suffering makes belief in an all-powerful and all-loving God irrational because such a God could and would prevent evil that serves no greater purpose.",
+      "sourceSpan": {
+        "startEvent": 138,
+        "endEvent": 234
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is an uninterrupted portion of Woodford's announced opening case, with first-person framing and direct reference to Simon's opposing position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-gratuitous-evil-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents the pro side's principal evidential argument from apparently purposeless suffering and has no earlier target.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it directly advances a central route condition with an explicit power-love-purpose inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Gratuitous evil is defined, but the move shifts quickly from apparent examples to the broad claim that such evil is obvious."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The evidential conflict is intelligible, but calling gratuitousness really obvious exceeds what the listed examples alone establish."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "If suffering is genuinely gratuitous, the power-and-love inference is strong, though the epistemic bridge from appearance remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Several representative forms of suffering are named, but their lack of any greater-purpose explanation is primarily asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly establishes the central gratuitous-evil bridge and sits at the top of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The opening argument does not yet present and assess a developed theistic alternative requiring a charity test."
+        }
+      },
+      "evidenceBasis": "The source names disasters, predation, disease, and other suffering, defines gratuitous evil, and links it to classical divine attributes.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-salvation-confusion-divine-love",
+      "sectionId": "revelation-and-salvation-confusion",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "constructive",
+      "proposition": "Salvation-dependent theism is irrationally contradictory because an all-loving God would not attach grave consequences to disputed propositions amid widespread religious confusion.",
+      "sourceSpan": {
+        "startEvent": 235,
+        "endEvent": 283
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Woodford introduces this as the final topic of his opening and continues speaking until his explicit concluding thanks.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-salvation-confusion-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move advances the salvation-confusion objection by connecting grave consequences, disputed claims, and divine love without a reply target.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it clearly establishes the conflict, though denominational scope and consequence conditions remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The core conflict is recoverable, but the range of salvation-dependent theisms and possible consequences is only partly bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Acknowledging universalist alternatives helps, but the broad irrational-contradiction conclusion outruns the compressed doctrinal comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some theists hold universal salvation or deny that explicit propositional assent is a condition of salvation.",
+        "decisiveQualification": "The objection applies most directly to traditions attaching grave consequences to disputed assent conditions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The love-confusion-consequence inference is coherent, but its reach depends on doctrinal assumptions not fully separated."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Concrete disputed propositions and possible consequences are supplied, while prevalence and doctrinal representativeness remain undocumented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central salvation-confusion bridge with an explicit divine-love conflict."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The source recognizes the universalist alternative, although it does not fully differentiate other inclusivist positions."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies assent to disputed claims about God, resurrection, and revelation as possible salvation conditions with grave consequences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-reason-designed-cognition",
+      "sectionId": "rationality-and-reason",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "moveKind": "constructive",
+      "proposition": "Theism provides a basis for trusting human reason, whereas unguided natural selection primarily favors reproductively advantageous behavior rather than reliably truth-directed belief.",
+      "sourceSpan": {
+        "startEvent": 287,
+        "endEvent": 391
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Simon's case, and Edwards presents the first of his three explicitly numbered arguments in a continuous turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-cumulative-case-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies one major element of the con cumulative case by comparing designed cognition with selection for advantageous behavior.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it states a clear comparative argument, although the probability bridge remains underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The comparison is clear, but reliable truth-directed belief and unguided selection are treated at a broad level without scope conditions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Selection not directly targeting truth does not by itself show that evolved cognition is generally untrustworthy or self-defeating."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Natural selection can favor behavior produced by broadly accurate representations even when truth is not its direct target.",
+        "decisiveQualification": "The argument needs a defended reason why adaptive behavior and reliable representation are insufficiently correlated."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The move relies on an unsupported conditional from selection for behavior to general distrust of cognition, creating a material bridge gap."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "Its central evolutionary claim is asserted without representative support or comparison with reliability-producing selection mechanisms."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies a major element of the cumulative case and therefore ranks high within the central tier."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The move presses the indirect-selection point but does not address the strongest correlation-based evolutionary answer."
+        }
+      },
+      "evidenceBasis": "The source argues that natural selection directly favors advantageous behavior rather than true belief and asks why evolved minds should be trusted.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-life-permitting-fine-tuning",
+      "sectionId": "design-evolution-and-purpose",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "moveKind": "constructive",
+      "proposition": "The precise life-permitting calibration of multiple physical parameters is far more expected on intelligent design than on chance and therefore supports belief in God.",
+      "sourceSpan": {
+        "startEvent": 392,
+        "endEvent": 429
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Edwards explicitly labels this his second argument and speaks continuously through its concluding appeal to a super-intellect.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-cumulative-case-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the cosmic-order element of the con cumulative case and therefore has no response target.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it advances a recognizable likelihood argument, but key probability and alternative-model warrants are compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The design comparison is recoverable, though the relevant parameters, probability space, and meaning of chance remain only partly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that fine-tuning points powerfully to God omits uncertainty about probability measures, selection effects, and rival explanations."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "A comparative design inference is usable, but the step from life-permitting sensitivity to a specific divine designer remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The radio-dial illustration and magnitude claim are specific, but neither parameter documentation nor serious rival comparison is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Fine-tuning is an indispensable affirmative component and strongly contacts the central cumulative-case bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing fine-tuning interpretation is represented in this constructive span for a meaningful charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt describes highly sensitive life-permitting dials and argues that their calibration is unlikely by chance and expected under intelligence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-objective-morality-grounded-in-god",
+      "sectionId": "morality-and-grounding",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "moveKind": "constructive",
+      "proposition": "Objective moral obligations are best explained by God because denying their objectivity conflicts with deep moral judgments and impersonal physical particles cannot ground prescriptive moral law.",
+      "sourceSpan": {
+        "startEvent": 430,
+        "endEvent": 491
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Edwards explicitly transitions to his third argument, develops it without a speaker change, and closes by summarizing his cumulative case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-moral-grounding-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents the con side's principal moral-grounding argument and does not answer an earlier opposing locked move.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it directly addresses moral objectivity and grounding, while leaving the positive God-grounding mechanism compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Objective obligation, impersonal physics, and divine explanation remain distinguishable, with one implicit best-explanation qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The challenge to reductive physical grounding is plausible, but the superiority of divine grounding is not fully demonstrated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective moral truths might be nonphysical or irreducible without being grounded in a personal God.",
+        "decisiveQualification": "Showing that particles lack opinions does not exclude non-theistic moral realism or establish divine obligations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The negative challenge to particle-level prescription is coherent, but the inference to God risks a false dichotomy."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Deep moral judgments provide an intelligible datum, but rival grounding theories and the divine-grounding warrant are not developed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supports the central moral-grounding bridge and is the con route's primary constructive treatment."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The move focuses on impersonal particles and omits the strongest non-theistic realist alternative to divine grounding."
+        }
+      },
+      "evidenceBasis": "The source invokes objective moral judgments and argues that impersonal physical particles cannot hold prescriptive opinions about conduct.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolution-cognitive-reliability",
+      "sectionId": "rationality-and-reason",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "The evolutionary argument against naturalism neither establishes theism nor defeats evolved cognition, because atheism does not entail naturalism and selection generally favors broadly accurate representations.",
+      "sourceSpan": {
+        "startEvent": 504,
+        "endEvent": 568
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Woodford to answer Edwards's rationality argument; Woodford states the objection, answers Edwards's clarification, and finishes before Edwards resumes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-cognitive-trust-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-reason-designed-cognition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evolution-cognitive-reliability-component-01",
+            "targetMoveId": "con-reason-designed-cognition",
+            "text": "Answer the claim that selection for advantageous behavior undermines trust in evolved cognition and thereby favors theism.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the decisive reliability inference by distinguishing atheism from naturalism and arguing that selection favors broadly accurate representation.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly addresses both the alleged default inference to theism and the evolutionary reliability premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinctions among atheism, naturalism, theism, and broadly reliable representation are explicit and remain stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The reply advances a bounded defeater to the skeptical inference rather than claiming that evolution guarantees universal accuracy."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The original argument may target unguided naturalism specifically rather than every possible form of atheism.",
+        "decisiveQualification": "Even under naturalism, the move separately argues that adaptive success generally requires broadly accurate representation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The two-part response consistently blocks both the false-alternative route and the inference from behavioral selection to unreliability."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The adaptive-representation warrant is plausible and directly relevant, though it is explained more than empirically documented."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly attacks the subsidiary cognitive-trust bridge and sits at the top of that selected tier."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply notes the scope issue without relying on it alone and answers the stronger naturalistic version as well."
+        }
+      },
+      "evidenceBasis": "The source says defeating atheism would not itself establish theism, rejects atheism-naturalism entailment, and defends adaptive representational accuracy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-truth-directed-designed-intelligence",
+      "sectionId": "rationality-and-reason",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "moveKind": "reply",
+      "proposition": "Theism gives stronger grounds than naturalism for believing that human minds primarily serve truth because designed intelligence is directed toward understanding an intelligible universe.",
+      "sourceSpan": {
+        "startEvent": 569,
+        "endEvent": 608
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Edwards takes over after Woodford's answer and restates his comparative argument in first-person Christian terms until Woodford begins his rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-cognitive-trust-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evolution-cognitive-reliability"
+        ],
+        "components": [
+          {
+            "componentId": "con-truth-directed-designed-intelligence-component-01",
+            "targetMoveId": "pro-evolution-cognitive-reliability",
+            "text": "Answer the claim that adaptive selection can produce broadly reliable cognition and that defeating naturalism would not establish theism.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply restates the designed-mind comparison but does not answer the adaptive-accuracy mechanism or the gap between criticizing naturalism and supporting theism.",
+        "responsivenessWithinClass": {
+          "value": 57,
+          "rationale": "Within relevant nonanswers, it remains directly issue-bearing but largely repeats the initial comparative assertion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The design claim is clear, but primarily truth-directed minds and intelligibility are asserted with incompletely bounded scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Divine design is treated as a stronger reliability guarantee without addressing possible design purposes or the naturalistic reliability answer."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Adaptive cognition may be broadly reliable even if reproductive success rather than truth is selection's direct target.",
+        "decisiveQualification": "A successful reply must explain why adaptive representation remains epistemically inadequate compared with design."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The design comparison is intelligible, but it assumes rather than establishes that divine intention primarily targets human truth acquisition."
+        },
+        "evidenceWarrant": {
+          "value": 59,
+          "rationale": "The excerpt offers assertion about designed intelligence without independent support or comparison against the adaptive-accuracy warrant."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the cognitive-trust bridge and lies high within the subsidiary tier despite limited rebuttal performance."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The response repeats that selection serves success and does not engage the strongest reliability-producing account."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts unguided selection with minds allegedly geared toward understanding an intelligible universe through designed intelligence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-suffering-counterevidence-not-defeater",
+      "sectionId": "evil-and-divine-love",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "moveKind": "reply",
+      "proposition": "Suffering is substantial counterevidence but does not defeat belief in an all-loving God because Christianity describes a disordered world, affirms an afterlife, offers theodicies, and portrays God as sharing human suffering.",
+      "sourceSpan": {
+        "startEvent": 695,
+        "endEvent": 800
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the problem-of-evil question to Simon, who acknowledges Woodford's challenge and gives a sustained Christian response before returning the floor.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-evil-response-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-gratuitous-evil-divine-love"
+        ],
+        "components": [
+          {
+            "componentId": "con-suffering-counterevidence-not-defeater-component-01",
+            "targetMoveId": "pro-gratuitous-evil-divine-love",
+            "text": "Answer why apparently purposeless suffering should not defeat belief in an all-powerful and all-loving God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply concedes the evidential force and supplies several Christian considerations intended to prevent that counterevidence from becoming a defeater.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within full answers, it directly addresses defeater status, though the mechanisms connecting theodicies and afterlife to particular evils remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between counterevidence and a defeater is express, and the response is explicitly limited rather than claiming complete resolution."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Calling suffering the strongest counterevidence and claiming only that it is not a defeater appropriately acknowledges uncertainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The pro argument concerns apparently gratuitous suffering, not merely whether Christianity generally predicts a disordered world.",
+        "decisiveQualification": "A complete defense must connect its proposed goods or eschatology to the absence of preventable purposeless suffering."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Multiple considerations coherently support non-defeat, though their joint bridge to apparently gratuitous cases remains underexplained."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Christian doctrines and categories of theodicy are specified, but their success for representative cases is mostly asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "This is the primary direct support for the central evil-response bridge and ranks near the top of its tier."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The reply fairly concedes the force of suffering but only partially addresses the strongest gratuitousness formulation."
+        }
+      },
+      "evidenceBasis": "The source concedes suffering as major counterevidence, then invokes a disordered world, afterlife, theodicies, and divine participation in suffering.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-creator-evidence-classical-god-gap",
+      "sectionId": "evil-and-divine-love",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Even successful arguments for a creator would not establish the Christian or Islamic God when gratuitous evil conflicts with the unlimited power and perfect love attributed to that God.",
+      "sourceSpan": {
+        "startEvent": 801,
+        "endEvent": 872
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator returns the floor to Woodford, whose response begins at event 801 and continues through the completed creator-versus-classical-God inference in locked context.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-undercut-theistic-evidence-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-suffering-counterevidence-not-defeater",
+          "con-life-permitting-fine-tuning"
+        ],
+        "components": [
+          {
+            "componentId": "pro-creator-evidence-classical-god-gap-component-01",
+            "targetMoveId": "con-suffering-counterevidence-not-defeater",
+            "text": "Answer the claim that Christian considerations prevent suffering from defeating rational belief in the specified God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-creator-evidence-classical-god-gap-component-02",
+            "targetMoveId": "con-life-permitting-fine-tuning",
+            "text": "Determine whether successful creator-oriented evidence establishes the specifically classical or Christian divine attributes at issue.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply argues that creator evidence does not establish the specified God and that gratuitous evil conflicts with that God's unlimited power and love.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it contacts the decisive specificity issue and evil conflict but does not directly assess the offered theodicies."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between a generic creator and the Christian or classical God is explicit and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited claim that generic creator arguments do not by themselves entail classical attributes matches the stated warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Fine-tuning and other arguments may be intended as cumulative evidence rather than deductive proofs of Christianity.",
+        "decisiveQualification": "Even cumulative creator evidence needs an additional bridge to unlimited power, perfect love, and specific revelation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The concessive argument cleanly separates generic creator support from the classical attributes challenged by gratuitous evil."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The conclusion follows mainly from the limited content of the conceded arguments, though the gratuitousness premise remains contested."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central undercut-theistic-evidence bridge by identifying the creator-to-classical-God gap."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply grants the arguments for purposes of analysis and accurately isolates the remaining attribute-specific gap."
+        }
+      },
+      "evidenceBasis": "The excerpt grants multiple existence arguments arguendo and concludes that they would not identify the creator as the Christian God given evil.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolution-moral-intuitions",
+      "sectionId": "morality-and-grounding",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Evolutionary selection can explain prosocial moral feelings and persistent moral disagreement under either atheism or theism without requiring divine moral grounding.",
+      "sourceSpan": {
+        "startEvent": 893,
+        "endEvent": 930
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-directed exchange clearly hands the response to Woodford, whose sustained first-person explanation continues through the closing acknowledgment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-moral-grounding-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-objective-morality-grounded-in-god"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evolution-moral-intuitions-component-01",
+            "targetMoveId": "con-objective-morality-grounded-in-god",
+            "text": "Answer the claim that moral judgments and obligations require divine rather than impersonal natural grounding.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies an evolutionary explanation for prosocial feelings and disagreement, directly challenging the claimed explanatory need for God.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within full answers, it addresses the explanatory demand but does not fully distinguish moral psychology from objective normative truth."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The evolutionary account is clear, but moral feelings, intuitions, and objective morality are not always kept fully distinct."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Evolution plausibly explains moral psychology, but that alone does not resolve whether objective obligations have a further ground."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The con argument concerns the ground of objective obligation, not merely the causal origin of moral feelings.",
+        "decisiveQualification": "An evolutionary genealogy can undercut evidential need without itself providing an objective normative foundation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The evolutionary explanation coherently addresses feelings and disagreement, but its implication for objective grounding needs another bridge."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Prosocial selection and persistent disagreement are relevant examples, though the evolutionary account is stated without detailed verification."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly attacks the central moral-grounding bridge, albeit through an incomplete psychological explanation."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply materially engages explanation but partly substitutes moral psychology for the stronger grounding question."
+        }
+      },
+      "evidenceBasis": "The source appeals to selection for prosocial dispositions and uses major moral disagreement as evidence favoring an evolutionary explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-divine-command-dilemma",
+      "sectionId": "morality-and-grounding",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Divine-command morality faces a dilemma: goodness either exists independently of God or consists merely in God's arbitrary dictates rather than a moral standard.",
+      "sourceSpan": {
+        "startEvent": 992,
+        "endEvent": 1029
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Woodford announces and develops the dilemma in an uninterrupted extended turn, ending by directly asking Edwards which account of goodness he accepts.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-moral-grounding-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-objective-morality-grounded-in-god"
+        ],
+        "components": [
+          {
+            "componentId": "pro-divine-command-dilemma-component-01",
+            "targetMoveId": "con-objective-morality-grounded-in-god",
+            "text": "Test whether grounding morality in God avoids making goodness either independent of God or arbitrary.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly divides divine-command grounding into two horns and states the defeating consequence for the claim that God uniquely grounds morality.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it explicitly identifies the alleged dilemma in the grounding inference and states both consequences."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "Both horns, their conditions, and their alleged consequences are stated clearly without material terminological drift."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The dilemma is forcefully formulated, but it omits the live divine-nature account that denies both presented descriptions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Goodness may be grounded in God's necessary nature rather than in external standards or unconstrained commands.",
+        "decisiveQualification": "The dilemma must show why a necessary divine nature is still independent, arbitrary, or otherwise explanatorily defective."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The horns are internally clear, but presenting them as exhaustive without addressing divine-nature grounding creates a false-dilemma risk."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The conceptual consequences are explained, while the exhaustiveness of the dilemma receives no defense against the main alternative."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central moral-grounding bridge at its core account of divine normativity."
+        },
+        "representationalCharity": {
+          "value": 59,
+          "rationale": "The two-horn formulation omits the most prominent source-compatible third response and therefore weakens the target."
+        }
+      },
+      "evidenceBasis": "The excerpt asks whether God commands independently good acts or makes acts good by command, then derives independence or arbitrariness.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-biblical-revelation-and-human-dignity",
+      "sectionId": "revelation-and-salvation-confusion",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "moveKind": "reply",
+      "proposition": "Biblical revelation, especially the teaching that every person bears God's image, substantially shaped modern Western commitments to universal human value and equal dignity.",
+      "sourceSpan": {
+        "startEvent": 1030,
+        "endEvent": 1072
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Edwards takes the floor immediately after Woodford's question and presents a sustained historical-moral response until Woodford interrupts the contextual defense.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-purpose-and-revelation-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-salvation-confusion-divine-love",
+          "pro-divine-command-dilemma"
+        ],
+        "components": [
+          {
+            "componentId": "con-biblical-revelation-and-human-dignity-component-01",
+            "targetMoveId": "pro-salvation-confusion-divine-love",
+            "text": "Answer why an all-loving God would attach grave consequences to disputed religious propositions amid widespread confusion.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-biblical-revelation-and-human-dignity-component-02",
+            "targetMoveId": "pro-divine-command-dilemma",
+            "text": "Answer the conceptual dilemma about whether divine goodness is independent or arbitrary.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers issue-bearing material about biblical influence and dignity but does not answer the salvation-confusion demand or the divine-command dilemma.",
+        "responsivenessWithinClass": {
+          "value": 48,
+          "rationale": "Within relevant nonanswers, it bears on revelation's value yet leaves the decisive earlier demands substantially untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The human-dignity proposition is clear, but the broad claim about modern Western commitments is only partly scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A biblical text and asserted influence do not alone establish the scale or distinctiveness of the historical causal claim."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The image-of-God premise can support equal dignity, but the inference to broad modern historical influence is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 59,
+          "rationale": "Genesis is specifically identified, while the substantial historical-shaping claim lacks representative causal evidence or rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It supports the subsidiary purpose-and-revelation bridge through human significance, though it misses the earlier central challenge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "Its principal defect is nonresponse and compressed historical support rather than treatment of a developed alternative interpretation."
+        }
+      },
+      "evidenceBasis": "The source cites Genesis 1:27, infers equal value and dignity, and asserts a substantial connection to modern Western commitments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-euthyphro-divine-nature-resolution",
+      "sectionId": "morality-and-grounding",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "moveKind": "reply",
+      "proposition": "The Euthyphro dilemma does not make morality external or arbitrary because God commands goodness on the basis that God is the good itself and objective goodness is rooted in the creator's character.",
+      "sourceSpan": {
+        "startEvent": 1080,
+        "endEvent": 1113
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following clarification of the precise dilemma, Edwards explicitly identifies both horns and gives a continuous answer grounded in God's nature.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-moral-grounding-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-command-dilemma"
+        ],
+        "components": [
+          {
+            "componentId": "con-euthyphro-divine-nature-resolution-component-01",
+            "targetMoveId": "pro-divine-command-dilemma",
+            "text": "Answer whether divine morality must be external to God or arbitrary because it depends only on God's commands.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly rejects both horns by locating goodness in God's character rather than an external norm or unconstrained command.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly contacts the dilemma's decisive inference and supplies the standard divine-nature alternative."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction among command, external goodness, and goodness rooted in divine character is explicit and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents the divine-nature solution as his account and explains its conceptual role without claiming exhaustive proof."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Calling God the good may merely relocate rather than resolve the arbitrariness or independence problem.",
+        "decisiveQualification": "The response must explain why God's character is necessarily good and supplies noncircular normative content."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The third-option structure is coherent, although identifying God with goodness requires a further noncircular explanatory bridge."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The conceptual model is specified but supported mainly by assertion about God's character rather than an independent warrant."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central moral-grounding bridge by answering the principal arbitrariness objection."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The reply accurately addresses the stated horns but does not fully answer the deeper circularity and content objection."
+        }
+      },
+      "evidenceBasis": "The source explicitly identifies the two horns and answers that God commands from being the good, with goodness rooted in creator character.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-history-does-not-establish-miracles",
+      "sectionId": "revelation-and-salvation-confusion",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Historical evidence that religious figures existed does not establish supernatural narratives, and an all-loving God would not reasonably require assent to culturally inherited miracle claims.",
+      "sourceSpan": {
+        "startEvent": 1210,
+        "endEvent": 1233
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Woodford's answer by name, and Woodford gives a continuous comparison of biblical and Quranic historical and miraculous claims.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-salvation-confusion-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-biblical-revelation-and-human-dignity",
+          "con-suffering-counterevidence-not-defeater"
+        ],
+        "components": [
+          {
+            "componentId": "pro-history-does-not-establish-miracles-component-01",
+            "targetMoveId": "con-biblical-revelation-and-human-dignity",
+            "text": "Answer whether historical and biblical considerations warrant the religious claims relevant to revelation and human significance.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-history-does-not-establish-miracles-component-02",
+            "targetMoveId": "con-suffering-counterevidence-not-defeater",
+            "text": "Address whether specifically Christian considerations establish the all-loving God needed to answer contrary evidence.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply distinguishes evidence for historical persons from evidence for miracles and reconnects culturally inherited assent demands to divine love.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it decisively contacts revelation's evidential status but does not answer the separate historical human-dignity thesis."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Historical existence, supernatural narrative, cultural inheritance, and divine assent requirements remain clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker grants ordinary historical claims while denying that they establish miracles, a proportionate and qualified conclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Historical cases for miracles may use multiple facts and explanatory comparison, not existence of a religious figure alone.",
+        "decisiveQualification": "The excerpt establishes an evidential gap but does not examine the strongest cumulative historical miracle case."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The inference that ordinary historical existence does not entail supernatural events is clear and consistently applied across traditions."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The cross-tradition comparison is relevant, but no detailed historical evidence or competing miracle explanation is examined."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central salvation-confusion bridge by challenging culturally inherited miracle-based assent requirements."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The distinction is fair, though the treatment compresses potentially stronger historical arguments into the existence-versus-miracle contrast."
+        }
+      },
+      "evidenceBasis": "The excerpt grants evidence for Jesus and Muhammad as historical figures while denying that this establishes resurrection, Gabriel, or other miracles.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-guided-evolution-and-human-purpose",
+      "sectionId": "design-evolution-and-purpose",
+      "side": "con",
+      "speaker": "Simon Edwards",
+      "moveKind": "constructive",
+      "proposition": "Human beings exist intentionally because God wanted them, and natural selection may be the guided mechanism through which God brought them into existence.",
+      "sourceSpan": {
+        "startEvent": 1241,
+        "endEvent": 1268
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator assigns the evolution question to Edwards first, and Edwards gives a sustained answer combining divine purpose with qualified acceptance of evolution.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-purpose-and-revelation-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move combines divine intention with qualified acceptance of natural selection and has no required earlier reply target.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Within constructive moves, it advances human purpose clearly but offers only a possibility rather than evidence that evolution was guided."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Purpose, mechanism, guided evolution, and uncertainty about macroevolutionary capability are explicitly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move carefully says God could use natural selection and openly states that the speaker considers explanatory capability unsettled."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Divine purpose and evolutionary mechanism are logically compatible, though compatibility alone does not establish actual guidance."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The intentional-purpose conclusion is asserted, and no evidence distinguishes guided evolution from an unguided process."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It materially supports the subsidiary purpose-and-revelation bridge but does not itself complete the design case."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move states a compatible constructive possibility rather than assessing a developed opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The source says humans are intended by God, allows natural selection as God's mechanism, and explicitly expresses uncertainty about macroevolution.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-natural-selection-explains-complexity",
+      "sectionId": "design-evolution-and-purpose",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Natural selection is not mere randomness, and its strong evidential support supplies a natural explanation of biological complexity that does not require traditional creation accounts.",
+      "sourceSpan": {
+        "startEvent": 1269,
+        "endEvent": 1314
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Woodford takes the next turn after Edwards's evolution answer and develops one continuous rebuttal until the moderator intervenes to seek clarification.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-natural-explanation-bridge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-guided-evolution-and-human-purpose",
+          "con-life-permitting-fine-tuning"
+        ],
+        "components": [
+          {
+            "componentId": "pro-natural-selection-explains-complexity-component-01",
+            "targetMoveId": "con-guided-evolution-and-human-purpose",
+            "text": "Answer the suggestion that natural selection needs divine guidance or lacks adequate power to explain biological complexity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-natural-selection-explains-complexity-component-02",
+            "targetMoveId": "con-life-permitting-fine-tuning",
+            "text": "Answer the distinct claim that physical parameters, rather than biological complexity, support intelligent design.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the evolutionary mechanism by distinguishing selection from mere accident and invoking strong evidence for natural explanations of complexity.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it addresses the randomness caricature and explanatory mechanism but not the separate claim of intentional human purpose."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The selection-versus-accident distinction is clear, but the scope of complexity explained and traditional creation accounts is broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Strong evidential support for selection fits the mechanism claim, though the excerpt compresses the evidence and full explanatory scope."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Guided evolution can accept nonrandom natural selection while adding divine intention rather than denying the mechanism.",
+        "decisiveQualification": "Showing that selection is not mere accident does not by itself exclude guidance or answer the separate purpose claim."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The correction about nonrandom selection supports a natural complexity mechanism, but it does not logically rule out compatible divine guidance."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The mechanism is scientifically specific and described as strongly evidenced, though representative supporting evidence is not presented in the span."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the natural-explanation subsidiary bridge and occupies the top of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The reply correctly rejects a randomness caricature but partly treats the opponent as denying selection rather than proposing guidance."
+        }
+      },
+      "evidenceBasis": "The source rejects the description of evolution as accident, emphasizes the selective force, and invokes strong evidence for natural selection.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence survives the strict exclusion rule beyond effects already captured in move judgments and burden contact.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No eligible distinct consequence remains after exclusion.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would leave the recorded burden completion unchanged."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence survives the strict exclusion rule beyond effects already captured in move judgments and burden contact.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was established.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No eligible distinct consequence remains after exclusion.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would leave the recorded burden completion unchanged."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

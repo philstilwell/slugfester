@@ -1,0 +1,1854 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "93",
+  "debateId": "hunter-dillahunty-christian-god-exist-2019",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-christian-cumulative-case",
+      "side": "pro",
+      "description": "Establish a cumulative route from libertarian agency and a caused temporal universe to a divine agent, then use historical resurrection claims to identify that agent with the Christian God while addressing hiddenness and revelation objections.",
+      "successCriteria": "The route succeeds if its generic theistic arguments warrant a personal divine cause, the resurrection inference supplies a specifically Christian identification, and the principal skeptical challenges do not defeat the cumulative evidential connection.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-christian-identification",
+        "tier": "motion",
+        "description": "Connect the cumulative philosophical and historical case to the existence of the specifically Christian God rather than merely an unspecified cause or deity."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-libertarian-agency",
+          "tier": "central",
+          "description": "Show that libertarian agency is real, required for rational and moral responsibility, and better explained by theism than by naturalistic determinism."
+        },
+        {
+          "bridgeId": "pro-central-cosmic-cause",
+          "tier": "central",
+          "description": "Show that the universe began to exist and that its cause is a timeless, immaterial, powerful agent rather than an unspecified impersonal condition."
+        },
+        {
+          "bridgeId": "pro-central-resurrection",
+          "tier": "central",
+          "description": "Show that the relevant historical claims are adequately grounded and that divine resurrection explains them better than the principal naturalistic alternatives."
+        },
+        {
+          "bridgeId": "pro-central-revelation",
+          "tier": "central",
+          "description": "Explain why the available evidence and mode of divine disclosure are compatible with a Christian God seeking freely formed trust."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-method-pluralism",
+          "tier": "subsidiary",
+          "description": "Defend philosophical and historical inference as legitimate methods for realities and past events not directly measurable by scientific instruments."
+        },
+        {
+          "bridgeId": "pro-subsidiary-text-and-miracle-support",
+          "tier": "subsidiary",
+          "description": "Preserve the supporting credibility of transmitted Christian sources and reported miracles against claims of pervasive corruption or evidential disappearance."
+        }
+      ]
+    },
+    {
+      "routeId": "con-evidential-skepticism",
+      "side": "con",
+      "description": "Withhold belief in the Christian God by testing each component of the cumulative case for reliable support, Christian specificity, and explanatory discrimination, while treating hiddenness and inconsistent revelation as contrary evidence.",
+      "successCriteria": "The route succeeds if libertarian agency, the divine Kalam extension, and resurrection remain insufficiently established or non-unique, and if the expected clarity and consistency of Christian revelation are absent under reliable evidential standards.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-christian-warrant",
+        "tier": "motion",
+        "description": "Show that the offered arguments do not warrant belief in the specifically Christian God and that skepticism need not establish universal divine nonexistence."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-agency-coherence",
+          "tier": "central",
+          "description": "Challenge both the evidence for libertarian freedom and its compatibility with an omniscient creator who knowingly selects a complete world history."
+        },
+        {
+          "bridgeId": "con-central-causal-underdetermination",
+          "tier": "central",
+          "description": "Separate the claim that the universe has a cause from unsupported conclusions that the cause is an agent, a God, or the Christian God."
+        },
+        {
+          "bridgeId": "con-central-miracle-method",
+          "tier": "central",
+          "description": "Require historical and supernatural claims to rest on confirmable evidence and methods capable of distinguishing resurrection or divinity from natural, technological, or deceptive alternatives."
+        },
+        {
+          "bridgeId": "con-central-hiddenness-revelation",
+          "tier": "central",
+          "description": "Show that sincere nonbelief, unclear disclosure, competing revelations, and textual uncertainty conflict with expectations generated by the proposed Christian God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-provisional-inquiry",
+          "tier": "subsidiary",
+          "description": "Ground rational skepticism in provisional confidence and claim-sensitive evidence without requiring absolute certainty or asserting the disputed proposition is false."
+        },
+        {
+          "bridgeId": "con-subsidiary-method-reliability",
+          "tier": "subsidiary",
+          "description": "Test whether faith, philosophical inference, historical comparison, and miracle reports reliably discriminate true Christian claims from incompatible alternatives."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "libertarian-freedom-and-divine-agency",
+      "title": "Libertarian Freedom, Rational Agency, and Divine Foreknowledge",
+      "weightPercent": 18,
+      "rationale": "This issue tests a foundational argument for God from experienced freedom, moral responsibility, and rational deliberation, together with the objection that libertarian choice is unverified or incompatible with divine creation and foreknowledge."
+    },
+    {
+      "sectionId": "kalam-and-causal-identification",
+      "title": "Kalam and the Identity of the Universe's Cause",
+      "weightPercent": 20,
+      "rationale": "This issue covers both the inference that the universe requires a cause and the further bridge from a temporal beginning to a timeless personal agent, including whether those added attributes uniquely support theism."
+    },
+    {
+      "sectionId": "resurrection-and-christian-specificity",
+      "title": "Resurrection Evidence and Christian Identification",
+      "weightPercent": 27,
+      "rationale": "The resurrection is the principal bridge from generic theistic considerations to the specifically Christian God, making the status of the historical premises, alternative explanations, and antecedent miracle plausibility central to the motion."
+    },
+    {
+      "sectionId": "hiddenness-and-inconsistent-revelation",
+      "title": "Divine Hiddenness, Revelation, and Textual Reliability",
+      "weightPercent": 20,
+      "rationale": "This issue tests whether sincere nonbelief, religious disagreement, ambiguous disclosure, and manuscript uncertainty count against the expected conduct of the Christian God or remain compatible with freely chosen trust and preserved revelation."
+    },
+    {
+      "sectionId": "evidential-methods-and-discrimination",
+      "title": "Evidential Standards, Falsifiability, and Explanatory Discrimination",
+      "weightPercent": 15,
+      "rationale": "This cross-cutting issue determines which philosophical, historical, empirical, and testimonial methods can warrant extraordinary conclusions and whether observed anomalies can discriminate divine action from unknown or deceptive alternatives."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-freedom-theistic-explanation",
+      "sectionId": "libertarian-freedom-and-divine-agency",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "constructive",
+      "proposition": "The libertarian freedom people experience is better explained by God because a natural universe operating solely through physical cause and effect would be deterministic.",
+      "sourceSpan": {
+        "startEvent": 184,
+        "endEvent": 298
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly introduces Hunter, and the uninterrupted first-person opening statement presents his announced affirmative case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-libertarian-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move initiates the affirmative agency route and therefore has no earlier opposing move to answer.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it clearly advances a central route but compresses its naturalism-to-determinism bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The thesis is recoverable, but natural systems, determinism, and experienced libertarian freedom are treated too broadly."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling God the best explanation outruns the appeal to introspection and the unsupported deterministic characterization of naturalism."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalism may include indeterministic or compatibilist accounts of agency.",
+        "decisiveQualification": "The argument must show libertarian freedom exists and that rival natural accounts fail."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "The inference is intelligible, but it relies on unsupported transitions from natural causation to determinism and from felt freedom to libertarian freedom."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The principal support is introspective confidence that people could do otherwise, with no independent evidence or rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central libertarian-agency bridge and supplies a major premise of the affirmative route."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The move largely reduces naturalism to deterministic physical causation without addressing the strongest rival accounts."
+        }
+      },
+      "evidenceBasis": "The excerpt says a merely natural system would be causal and deterministic, asserts that God could grant freedom, and appeals to what people deeply know.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-kalam-mental-cause",
+      "sectionId": "kalam-and-causal-identification",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "constructive",
+      "proposition": "Because the universe began to exist, its cause must transcend space, time, and matter and is best identified as a sufficiently powerful disembodied mind.",
+      "sourceSpan": {
+        "startEvent": 372,
+        "endEvent": 445
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hunter explicitly introduces his second argument and develops the Kalam syllogism and his inference about the nature of its cause.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-cause"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes the affirmative cosmic-cause route and has no earlier opposing locked move to answer.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it directly states the causal syllogism and begins identifying the proposed transcendent cause."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The causal thesis is clear, but the scope of what follows from transcending spacetime and matter is insufficiently qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt supports a cause claim more clearly than the stronger identification of that cause as a disembodied mind."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An atemporal impersonal condition might be proposed as the universe's cause.",
+        "decisiveQualification": "The personal-cause conclusion requires excluding impersonal candidates rather than merely naming an agent."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The basic causal inference is usable, while the transition from a nonphysical cause to a sufficiently powerful mind leaves a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The move explains its conceptual premises but provides limited defense of the universe's beginning and little comparative support for mentality."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the indispensable causal and identification claims of the central cosmic-cause bridge."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The causal argument is presented fairly enough, but the strongest impersonal alternative is not seriously compared."
+        }
+      },
+      "evidenceBasis": "The excerpt states that whatever begins has an external cause, applies that premise to the universe, and notes that the cause cannot be constituted by spacetime and matter.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-best-explanation",
+      "sectionId": "resurrection-and-christian-specificity",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "constructive",
+      "proposition": "The disciples' reported experiences and willingness to die for their proclamation are better explained by God raising Jesus than by deliberate fabrication or disputed visionary-error accounts.",
+      "sourceSpan": {
+        "startEvent": 653,
+        "endEvent": 705
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hunter marks this as the third historical consideration and concludes by synthesizing the facts into his resurrection inference.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-christian-identification"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the announced historical bridge to Christian identification and has no prior opposing locked move to answer.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it directly advances the motion-level identification route, though historical warrants remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The best-explanation claim is clear, but the evidential scope and comparison class of natural alternatives remain underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical best-explanation conclusion exceeds the displayed support for the reports, martyrdom premise, and rival exclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Sincere visionary experience, legend, or mixed historical development could explain the reports without deliberate fraud.",
+        "decisiveQualification": "Rejecting fabrication alone does not defeat the strongest non-fraud natural alternatives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "A valid abductive structure is present, but the inference compresses the decisive comparison between resurrection and multiple natural alternatives."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The excerpt asserts historical superiority without representative documentation of the experiences, deaths, independence, or alternative likelihoods."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "This is the principal motion-level move connecting generic theism to the specifically Christian God."
+        },
+        "representationalCharity": {
+          "value": 56,
+          "rationale": "The move recognizes visionary-error accounts but does not develop or comparatively defeat their strongest forms."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes willingness to die, says miracle priors can be recalibrated, and concludes that God raising Jesus is the best historical explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-christian-specificity-gap",
+      "sectionId": "resurrection-and-christian-specificity",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Arguments equally available to multiple religions cannot establish the specifically Christian God, and skepticism need not assert that every god is nonexistent.",
+      "sourceSpan": {
+        "startEvent": 760,
+        "endEvent": 783
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker follows Hunter's completed opener, identifies Hunter by name, and states the skeptical position associated with Dillahunty.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-christian-identification"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-kalam-mental-cause",
+          "pro-freedom-theistic-explanation",
+          "pro-resurrection-best-explanation"
+        ],
+        "components": [
+          {
+            "componentId": "con-christian-specificity-gap-component-01",
+            "targetMoveId": "pro-kalam-mental-cause",
+            "text": "Generic causal reasoning does not identify the specifically Christian God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-christian-specificity-gap-component-02",
+            "targetMoveId": "pro-freedom-theistic-explanation",
+            "text": "The freedom argument is likewise available to multiple theistic religions.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-christian-specificity-gap-component-03",
+            "targetMoveId": "pro-resurrection-best-explanation",
+            "text": "Whether the resurrection supplies the missing Christian identification is deferred rather than assessed here.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly contacts the genericity of the first two arguments but does not yet evaluate the resurrection move that expressly purports to provide Christian specificity.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "This is a partial answer contacting the decisive genericity problem while leaving the announced resurrection bridge untreated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between generic arguments and Christian identification is explicit, as is the limited skeptical burden."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move makes a bounded insufficiency claim and expressly disclaims the stronger task of disproving every God."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A cumulative case may use generic premises before adding specifically Christian evidence.",
+        "decisiveQualification": "The later identifying evidence must still complete the specificity bridge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The distinction between generic theistic support, Christian identification, and a limited skeptical burden is clear and consistent."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The cross-religious availability point is concretely illustrated, though the resurrection's claimed identifying role is not yet tested."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly attacks completion of the motion-level Christian-identification bridge and clarifies the skeptical burden."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The speaker acknowledges that more will be addressed later and does not deny the legitimacy of cumulative structure itself."
+        }
+      },
+      "evidenceBasis": "The excerpt names Hindu, Sikh, Muslim, and Jewish availability, says such arguments are not specifically Christian, and disclaims an attempt to disprove God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-hiddenness-prediction",
+      "sectionId": "hiddenness-and-inconsistent-revelation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "proposition": "A specified God model generates observable expectations from its attributed goals and conduct, so the absence of those expected conditions provides disconfirming evidence.",
+      "sourceSpan": {
+        "startEvent": 991,
+        "endEvent": 1049
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person skeptical presentation and explicit introduction of divine hiddenness identify Dillahunty as speaker.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-hiddenness-revelation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes a predictive hiddenness test and has no earlier opposing locked move that it is required to answer.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it clearly formulates a central evidential test connecting divine attributes and goals to observations."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is framed conditionally around a specified God model, its attributed goals, and predicted observations."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conditional evidential claim is appropriately limited and does not assert that every absence conclusively disproves every deity."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The model-to-prediction-to-observation structure is explicit, consistent, and supplies a valid defeasible evidential inference."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The methodological warrant is strong, although the excerpt does not yet specify and test a complete Christian prediction set."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central hiddenness-and-revelation bridge's governing inferential requirement."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents a general predictive framework rather than engaging a developed opposing alternative interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt asks that a God model's characteristics, goals, and interactions be defined so observable expectations can be compared with reality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-inconsistent-revelation",
+      "sectionId": "hiddenness-and-inconsistent-revelation",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "proposition": "Competing religious revelations and sincere unanswered seeking show that nonbelief can be reasonable rather than the product of dishonesty or culpable resistance.",
+      "sourceSpan": {
+        "startEvent": 1050,
+        "endEvent": 1187
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained autobiographical skeptical argument and references to Matt in the third person by imagined critics securely identify Dillahunty.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-hiddenness-revelation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move offers religious disagreement and sincere seeking as evidence on revelation and has no earlier opposing reply obligation.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it materially advances the hiddenness route, although its representative support is substantially personal."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The reasonable-nonbelief thesis is recoverable, but movement from personal experience to a broader class of seekers is only implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The personal case supports possibility and some evidential weight, but the generalized conclusion needs broader representative evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Apparent silence might have reasons compatible with divine purposes and free response.",
+        "decisiveQualification": "Such compatibility does not erase the evidential force of sincere unanswered seeking."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from sincere seeking and unmet expectations to reasonable nonbelief is coherent, with one bounded generalization gap."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Personal testimony is relevant but does not alone establish the prevalence, sincerity, or divine-response conditions of the broader claim."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central claim that sincere nonbelief and competing revelation conflict with expected Christian disclosure."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move does not claim logical incompatibility and instead treats the experience as evidence against expected disclosure."
+        }
+      },
+      "evidenceBasis": "The excerpt describes applying skepticism consistently, sincerely seeking divine guidance, and failing to receive the response expected from the believed God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-source-discrimination",
+      "sectionId": "evidential-methods-and-discrimination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "proposition": "Even extraordinary phenomena would not uniquely establish God unless a reliable method could distinguish divinity from advanced intelligence, deception, or mentalist trickery.",
+      "sourceSpan": {
+        "startEvent": 1188,
+        "endEvent": 1272
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "First-person references to being a magician, mentalist, former Christian, and skeptic align unambiguously with Dillahunty's presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-miracle-method"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes a discrimination requirement for extraordinary evidence and has no earlier opposing move to answer.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it clearly states the central methodological problem and provides concrete deceptive and technological rivals."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conclusion is carefully limited to non-unique establishment absent a reliable discriminating method."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The necessity concerns discriminatory inference rather than certainty about reality, and the stated alternatives warrant that requirement."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A sufficiently distinctive event might itself make divine agency the best explanation.",
+        "decisiveQualification": "Distinctiveness still requires comparison with advanced, deceptive, or unknown agents."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The underdetermination inference is explicit: anomalous performance alone does not uniquely identify its source as divine."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Advanced intelligence and mentalist performance are concrete rivals, though their likelihood in any particular case remains unquantified."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central miracle-method requirement that evidence discriminate divine action from relevant alternatives."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The move grants that extraordinary phenomena could be powerful evidence while preserving the need for source discrimination."
+        }
+      },
+      "evidenceBasis": "The excerpt grants that extraordinary linguistic performance would be powerful but invokes advanced intelligence and mentalism as indistinguishable alternative sources.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-christian-identification",
+      "sectionId": "resurrection-and-christian-specificity",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "reply",
+      "proposition": "The resurrection case supplements the generic arguments for a creator by identifying the inferred God specifically as the Christian God.",
+      "sourceSpan": {
+        "startEvent": 1413,
+        "endEvent": 1444
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hunter continues the same rebuttal and explicitly describes the sequence and intended function of his own opening arguments.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-christian-identification"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-christian-specificity-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-resurrection-christian-identification-component-01",
+            "targetMoveId": "con-christian-specificity-gap",
+            "text": "The resurrection argument is offered as the specifically Christian identifying component.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly explains the cumulative architecture and identifies which argument is intended to close the specificity gap, though it does not further defend that argument's success.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly contacts the decisive structural criticism, while leaving the separate evidential adequacy of resurrection to other material."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The respective roles of the generic opening arguments and the Christian resurrection argument are stated expressly."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move chiefly clarifies argumentative function rather than claiming that this clarification independently proves the resurrection."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The specificity criticism may concern evidential success, not merely cumulative architecture.",
+        "decisiveQualification": "Naming an identifying component does not show that it establishes Christian identity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The cumulative division of labor is coherent, though identifying an intended bridge is not equivalent to validating that bridge."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The excerpt establishes what role the resurrection case is meant to play but supplies no additional historical warrant here."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supports the motion-level connection from generic creator arguments to the specifically Christian God."
+        },
+        "representationalCharity": {
+          "value": 81,
+          "rationale": "The reply fairly recognizes the genericity concern but answers its structural form more fully than its evidential form."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes that the first two arguments concern God generically and states that the resurrection case was included to identify the Christian God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-hiddenness-free-trust",
+      "sectionId": "hiddenness-and-inconsistent-revelation",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "reply",
+      "proposition": "God is not substantially hidden because evidence is widely available, while limited disclosure permits the freely chosen trust and loyalty God seeks rather than mere intellectual acknowledgment.",
+      "sourceSpan": {
+        "startEvent": 1506,
+        "endEvent": 1590
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hunter explicitly identifies Matt's divine-hiddenness argument and answers it throughout the uninterrupted remainder of this rebuttal segment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-hiddenness-revelation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-hiddenness-prediction",
+          "con-inconsistent-revelation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-hiddenness-free-trust-component-01",
+            "targetMoveId": "con-hiddenness-prediction",
+            "text": "The expected disclosure is moderated by God's alleged aim of freely formed trust and loyalty.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-hiddenness-free-trust-component-02",
+            "targetMoveId": "con-inconsistent-revelation",
+            "text": "The reply asserts adequate general evidence but does not directly explain sincere unanswered seeking or competing revelations.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The free-trust rationale directly contacts the prediction argument but only indirectly bears on the distinct evidence from sincere seekers and inconsistent revelation.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "This partial answer addresses the central predicted-goal premise while leaving the experiential and disagreement components substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Trust, loyalty, evidence availability, and the claimed optimal amount of evidence lack stable operational scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that this evidential level maximizes freely chosen relationship is asserted without comparative or empirical support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Clear awareness of God's existence may remain compatible with rejecting trust or loyalty.",
+        "decisiveQualification": "Intellectual clarity need not coerce relationship, as acknowledgment and allegiance are distinct."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The compatibility defense is intelligible, but the key conditional linking limited evidence to maximized free trust is unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "Claims about widespread evidence and the optimal disclosure level are asserted without representative evidence or alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central hiddenness prediction by proposing a divine purpose for limited disclosure."
+        },
+        "representationalCharity": {
+          "value": 59,
+          "rationale": "The move distinguishes belief from trust but does not adequately address why clearer evidence would eliminate free relational rejection."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes intellectual belief from trust and loyalty and asserts that the existing amount of evidence permits the greatest freely chosen response.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-libertarian-freedom-coherence",
+      "sectionId": "libertarian-freedom-and-divine-agency",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Libertarian freedom is unverified and conflicts with a creator who foreknows and selects the universe's complete history while exercising providence and issuing prophecy.",
+      "sourceSpan": {
+        "startEvent": 1620,
+        "endEvent": 1670
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A clear post-rebuttal speaker transition precedes first-person references to compatibilism and direct responses to Hunter's opening claims.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-libertarian-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-freedom-theistic-explanation"
+        ],
+        "components": [
+          {
+            "componentId": "con-libertarian-freedom-coherence-component-01",
+            "targetMoveId": "pro-freedom-theistic-explanation",
+            "text": "The felt impression of alternative possibility does not verify actual ability to do otherwise.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-libertarian-freedom-coherence-component-02",
+            "targetMoveId": "pro-freedom-theistic-explanation",
+            "text": "Classical divine foreknowledge and world selection allegedly conflict with libertarian choice.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both the experiential warrant for libertarian freedom and the coherence of using a classical creator to explain that freedom.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly challenges the decisive evidence and internal-theistic coherence components of the freedom argument."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The two objections are clear, though the exact modal assumptions connecting foreknowledge, selection, and necessity remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The verification challenge is well fitted, but describing direct conflict requires modal premises not fully stated in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Foreknowledge may track rather than cause a freely made choice.",
+        "decisiveQualification": "World selection and infallibility still require a separate modal argument beyond mere causation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The epistemic objection is strong, while the foreknowledge incompatibility claim leaves a material modal bridge."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The inability to distinguish impression from actuality is a substantive evidential challenge, but the theological conflict is mostly conceptual assertion."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central affirmative libertarian-agency bridge at both evidential and coherence points."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move raises the stronger world-selection concern but compresses the distinction between causal determination and settled truth."
+        }
+      },
+      "evidenceBasis": "The excerpt asks how an impression of doing otherwise differs from the fact and asserts conflict between libertarian freedom and classical divine knowledge.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-kalam-identification-gap",
+      "sectionId": "kalam-and-causal-identification",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The Kalam concludes only that the universe has a cause; identifying that cause as a transcendent agent or God adds assertions not derived by the syllogism.",
+      "sourceSpan": {
+        "startEvent": 1671,
+        "endEvent": 1719
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty explicitly turns to Hunter's Kalam argument and continues analyzing its premises, conclusion, and added divine interpretation through the context boundary.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-cause"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-kalam-mental-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-kalam-identification-gap-component-01",
+            "targetMoveId": "pro-kalam-mental-cause",
+            "text": "The syllogism's stated conclusion is only that the universe has a cause, not that the cause is an agent or God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly locates the inferential gap between the formal Kalam conclusion and the subsequently assigned transcendent and personal attributes.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It explicitly identifies why the target inference fails and states the defeating consequence for divine identification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The formal conclusion and the additional attribute claims are sharply distinguished without scope drift."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "As a claim about what the stated syllogism formally entails, the force matches the displayed argument structure."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Supplementary arguments, rather than the bare syllogism, may infer the cause's attributes.",
+        "decisiveQualification": "Those supplements require independent defense and cannot be credited to the Kalam alone."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The formal-conclusion distinction is explicit and valid, and it precisely isolates the unsupported identification step."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The critique accurately restates the syllogism and compares its conclusion with the extra attributes, though it does not refute every possible supplement."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central cosmic-cause bridge's indispensable transition from a cause to a divine agent."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The move permits added reasoning in principle while correctly requiring it to be separately warranted."
+        }
+      },
+      "evidenceBasis": "The excerpt recites the Kalam premises and causal conclusion, then notes that transcendence and agency are additional assertions rather than parts of that syllogism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-resurrection-data-gap",
+      "sectionId": "resurrection-and-christian-specificity",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The resurrection's proposed minimal facts are not adequately confirmable data, and scholarly agreement, personal assessment, or sincerity cannot substitute for their underlying evidence.",
+      "sourceSpan": {
+        "startEvent": 1804,
+        "endEvent": 1848
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker directly names Habermas and the minimal-facts approach while sustaining Dillahunty's first-person demand for data rather than assessments.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-best-explanation"
+        ],
+        "components": [
+          {
+            "componentId": "con-resurrection-data-gap-component-01",
+            "targetMoveId": "pro-resurrection-best-explanation",
+            "text": "The alleged minimal facts require confirmable underlying data before explanatory comparison.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-resurrection-data-gap-component-02",
+            "targetMoveId": "pro-resurrection-best-explanation",
+            "text": "Scholarly assessment and sincerity do not substitute for the historical evidence itself.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly attacks the evidential premises supporting the resurrection inference and states why consensus or sincerity cannot replace source data.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts the decisive historical-data demand, although it does not independently analyze each underlying source."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between facts, assessments, and confirmable evidence is clear and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The demand for underlying evidence is well fitted, but the blanket nonconfirmability claim is not fully demonstrated in the excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Broad scholarly agreement can be defeasible evidence that specialists judge the historical sources favorably.",
+        "decisiveQualification": "Consensus cannot replace inspection of the sources and warrants supporting the disputed facts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The inference that an abductive conclusion depends on adequately established input facts is explicit and sound."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The methodological criticism is strong, but the excerpt does not inspect representative sources to establish that every minimal fact is unconfirmable."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central resurrection bridge at its necessary historical-premise stage."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The move fairly rejects assessment as a substitute for data without claiming expert evaluation is wholly irrelevant."
+        }
+      },
+      "evidenceBasis": "The excerpt says the proposed minimal facts are not confirmable and insists on data and evidence rather than assessments from theologians or other commentators.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-claim-sensitive-evidence",
+      "sectionId": "evidential-methods-and-discrimination",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Demonstration requirements properly vary with the claim, so familiar ordinary claims need comparatively little support while worldview-altering claims require substantially stronger evidence.",
+      "sourceSpan": {
+        "startEvent": 1988,
+        "endEvent": 2004
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty directly answers Hunter's request to define demonstration, using ordinary-dog and extraordinary-dragon examples to articulate his standard.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-provisional-inquiry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-best-explanation"
+        ],
+        "components": [
+          {
+            "componentId": "con-claim-sensitive-evidence-component-01",
+            "targetMoveId": "pro-resurrection-best-explanation",
+            "text": "A worldview-altering resurrection claim requires stronger evidence than an ordinary familiar claim.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the resurrection's evidential threshold through a general claim-sensitive standard, though it does not itself assess the historical record.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "This partial answer contacts the evidential-strength component but not the specific resurrection premises or rival explanations."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparison is explicitly graduated by familiarity, prior knowledge, and effect on one's worldview."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is a proportionate evidential principle illustrated with ordinary and extraordinary examples."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The proportional-evidence principle and illustrative contrast are coherent, though the exact threshold remains qualitative."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The dog-and-dragon contrast effectively supports the principle, while it does not determine the evidence actually needed for resurrection."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary provisional-inquiry bridge by explaining why confidence should vary with claims."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move states a general evidential standard without materially representing a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts accepting an ordinary report of a pet dog with demanding substantially more for a pet dragon that would alter background understanding.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-method-domain-pluralism",
+      "sectionId": "evidential-methods-and-discrimination",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "reply",
+      "proposition": "Requiring a science-like detector for God mistakes one reliable investigative method for a method capable of detecting every reality, whereas philosophy and history address different evidential domains.",
+      "sourceSpan": {
+        "startEvent": 2546,
+        "endEvent": 2580
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response is explicitly framed as Braxton's answer and develops his distinctive metal-detector analogy and philosophical case.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-method-pluralism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-source-discrimination",
+          "con-claim-sensitive-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-method-domain-pluralism-component-01",
+            "targetMoveId": "con-source-discrimination",
+            "text": "Different domains may require philosophical and historical methods rather than a single science-like detector.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-method-domain-pluralism-component-02",
+            "targetMoveId": "con-claim-sensitive-evidence",
+            "text": "The reply supports methodological plurality but does not deny that stronger claims need stronger evidence.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the concern about an appropriate method but does not answer the separate demand that any method reliably discriminate divine agency from rivals.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "It contacts a secondary methodological component while leaving the decisive reliability and source-discrimination requirement unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The domain-pluralist thesis is clear, but the claimed reach and reliability of philosophy and history remain broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The detector analogy supports pluralism but not the stronger assertion that the named methods reliably yield the proposed conclusions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The objection demands discrimination, not exclusive reliance on laboratory science.",
+        "decisiveQualification": "Methodological plurality does not itself establish that philosophy or history distinguishes God from rivals."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The analogy validly challenges universal method exclusivity but does not establish the reliability of the replacement methods."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The metal-detector analogy supports domain sensitivity, while the crucial reliability of philosophical and historical inferences is asserted."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary method-pluralism bridge and is near the top of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "The analogy partly recasts the skeptical demand as method monism and thereby misses its strongest reliability form."
+        }
+      },
+      "evidenceBasis": "The excerpt uses a metal detector's inability to detect water, trees, and air to argue for other instruments and analogizes those to philosophy and history.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-cause-attributes-underdetermined",
+      "sectionId": "kalam-and-causal-identification",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Even granting that the universe has a cause, the Kalam does not establish what that cause is or provide a method for knowing the attributes assigned to it.",
+      "sourceSpan": {
+        "startEvent": 2581,
+        "endEvent": 2589
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt directly interrupts the claim that he offered no substantive Kalam response and states his own objection in first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-causal-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-kalam-mental-cause",
+          "pro-method-domain-pluralism"
+        ],
+        "components": [
+          {
+            "componentId": "con-cause-attributes-underdetermined-component-01",
+            "targetMoveId": "pro-kalam-mental-cause",
+            "text": "Granting a cause leaves both its identity and the method for knowing its attributes undetermined.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-cause-attributes-underdetermined-component-02",
+            "targetMoveId": "pro-method-domain-pluralism",
+            "text": "Naming philosophy as a method does not supply the missing attribute warrants.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the residual inferential demand after granting causation and states that the presented attribute list lacks a demonstrated method.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It directly diagnoses the missing identification bridge and its consequence for the proposed divine cause."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The concessive structure clearly separates existence of a cause from knowledge of that cause's attributes."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move asks for warrants rather than claiming no attributes could ever be inferred by any method."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Conceptual analysis might derive some attributes from being the cause of spacetime.",
+        "decisiveQualification": "Each derived attribute still needs a stated inference and exclusion of alternatives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The underdetermination diagnosis follows directly from the distinction between establishing causation and identifying a cause."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The excerpt accurately identifies the missing warrants, though it does not separately evaluate every conceptual attribute argument."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central skeptical causal-underdetermination bridge at its decisive identification step."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The concession grants the causal premise and targets only the unsupported extension, preserving the strongest affirmative possibility."
+        }
+      },
+      "evidenceBasis": "The excerpt grants for argument that the universe has a cause, then asks what is known about it and how, characterizing the attributes as assertions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-agent-causation-bridge",
+      "sectionId": "kalam-and-causal-identification",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "reply",
+      "proposition": "A timeless state producing the first temporal event is best explained by an agent with causal power and libertarian freedom rather than by an impersonal condition.",
+      "sourceSpan": {
+        "startEvent": 2646,
+        "endEvent": 2679
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Braxton asks to answer the agency question and then presents the event-event, state-state, and state-event causation analysis.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-causal-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-cause-attributes-underdetermined",
+          "con-kalam-identification-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-agent-causation-bridge-component-01",
+            "targetMoveId": "con-cause-attributes-underdetermined",
+            "text": "Agent causation is proposed to explain transition from a timeless state to the first temporal event.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-agent-causation-bridge-component-02",
+            "targetMoveId": "con-kalam-identification-gap",
+            "text": "The response supplies a supplementary argument beyond the bare Kalam syllogism.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly supplies the previously requested supplementary bridge from timeless causation to agency, though it does not establish uniqueness over all impersonal models.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It explicitly contacts the missing agent-identification inference but leaves the rival-exclusion component compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "State-event causation and timeless nothingness are not fully stabilized, and the universal exclusion of alternatives is unqualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Saying only agent causation makes sense radically exceeds the brief conceptual assertion and absence of rival analysis."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An atemporal impersonal condition might entail or probabilistically produce a first temporal state.",
+        "decisiveQualification": "The affirmative must show why such an impersonal model cannot explain the transition."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "The proposal is intelligible, but its exclusivity rests on an unsupported conditional and an ambiguous timeless-to-temporal transition."
+        },
+        "evidenceWarrant": {
+          "value": 50,
+          "rationale": "The asserted uniqueness of agent causation and need for libertarian freedom receive no representative support or serious alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central skeptical underdetermination bridge by supplying an agent-causation rationale."
+        },
+        "representationalCharity": {
+          "value": 52,
+          "rationale": "The reply labels agent causation the only option without developing the strongest impersonal alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt says a timeless state leading to the universe's beginning is state-event causation and asserts that only agent causation with libertarian freedom explains it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-foreknowledge-not-causation",
+      "sectionId": "libertarian-freedom-and-divine-agency",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "reply",
+      "proposition": "Divine foreknowledge does not eliminate libertarian freedom because knowing a person's future choice is not the same as causally determining that choice.",
+      "sourceSpan": {
+        "startEvent": 2794,
+        "endEvent": 2816
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "An audience member directs the question to Braxton, who explicitly answers it using the modal-fallacy and noncausal-knowledge distinction.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-agency-coherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-libertarian-freedom-coherence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-foreknowledge-not-causation-component-01",
+            "targetMoveId": "con-libertarian-freedom-coherence",
+            "text": "Divine knowledge of a future choice is distinguished from causally determining that choice.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-foreknowledge-not-causation-component-02",
+            "targetMoveId": "con-libertarian-freedom-coherence",
+            "text": "The stronger world-selection and modal-settledness objection is not fully answered.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the causal version of the foreknowledge objection but leaves the distinct modal issue concerning infallibility and selecting a complete history unresolved.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "This partial answer addresses a decisive causal component while omitting the stronger world-selection component."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The knowledge-causation distinction is clear, but its scope relative to necessity and world selection remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Foreknowledge is not itself efficient causation, but that alone does not resolve every modal incompatibility argument."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The objection can concern modal fixity and divine world selection rather than causal production.",
+        "decisiveQualification": "Showing that knowledge is not causation does not show that alternative choice remains possible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The knowledge-causation distinction is valid, while the conclusion about libertarian compatibility requires an additional modal bridge."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The conceptual distinction supplies relevant support but does not address infallibility, providence, prophecy, or world selection."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central skeptical agency-coherence bridge through the foreknowledge component."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The reply accurately rejects causal conflation but underrepresents the strongest modal form of the objection."
+        }
+      },
+      "evidenceBasis": "The selected span frames the question whether omniscient knowledge makes the future set; the proposition supplies the response that knowledge is not causal determination.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "pro-christian-falsifiability",
+      "sectionId": "evidential-methods-and-discrimination",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "reply",
+      "proposition": "Christian theism is falsifiable through an internal contradiction or strong contrary historical evidence, although an apparent supernatural event associated with a rival religion would not by itself refute it.",
+      "sourceSpan": {
+        "startEvent": 3308,
+        "endEvent": 3359
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The audience question is directed to Braxton, and his first-person answer continues through the locked lookahead with explicit falsification conditions.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-method-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-source-discrimination"
+        ],
+        "components": [
+          {
+            "componentId": "pro-christian-falsifiability-component-01",
+            "targetMoveId": "con-source-discrimination",
+            "text": "Christian theism is said to face potential defeat from contradiction or strong contrary historical evidence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-christian-falsifiability-component-02",
+            "targetMoveId": "con-source-discrimination",
+            "text": "A rival supernatural-seeming event is not accepted as automatically identifying its source or falsifying Christianity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly addresses testability and preserves the source-discrimination point by denying that an unexplained rival event identifies its origin automatically.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It gives concrete falsifiers, although the thresholds and implications of contrary historical evidence remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposed falsifier types are recoverable, but strong contrary history and internal contradiction lack detailed thresholds."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move makes only the bounded claim that falsification conditions exist and qualifies what a rival anomaly would establish."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A worldview can name nominal falsifiers while insulating itself from realistic adverse evidence.",
+        "decisiveQualification": "The proposed conditions must be practically applicable rather than merely conceivable."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Contradiction and contrary history are coherent defeaters, and refusing automatic source attribution is consistent with discrimination concerns."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Concrete classes of defeater are supplied, but their evidential thresholds and practical adjudication are underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It materially attacks the subsidiary skeptical method-reliability bridge by addressing falsifiability and attribution."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move supplies recognizable conditions but does not fully explain how disputed evidence would trigger them."
+        }
+      },
+      "evidenceBasis": "The excerpt defines falsifiability and introduces conditions that could show Christian theism false; the locked proposition specifies contradiction, historical evidence, and rival events.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-belief-not-voluntary",
+      "sectionId": "libertarian-freedom-and-divine-agency",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Beliefs are states of conviction rather than voluntary choices, although human decision-making also includes preferences and emotions that can serve rational and cooperative interests.",
+      "sourceSpan": {
+        "startEvent": 3465,
+        "endEvent": 3508
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The question is expressly addressed to Matt, and the answer continues in a single first-person voice until Braxton is asked whether he wishes to follow up.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-agency-coherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-freedom-theistic-explanation",
+          "pro-hiddenness-free-trust",
+          "pro-foreknowledge-not-causation"
+        ],
+        "components": [
+          {
+            "componentId": "con-belief-not-voluntary-component-01",
+            "targetMoveId": "pro-freedom-theistic-explanation",
+            "text": "Belief formation is denied to be a voluntary exercise of libertarian choice.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-belief-not-voluntary-component-02",
+            "targetMoveId": "pro-hiddenness-free-trust",
+            "text": "The distinction bears on whether withholding clearer evidence preserves freely chosen belief or trust.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-belief-not-voluntary-component-03",
+            "targetMoveId": "pro-foreknowledge-not-causation",
+            "text": "The move does not address whether foreknowledge causes or modally fixes choices.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly challenges voluntary belief and bears on the free-trust defense, while its broader observations about preference do not answer the foreknowledge issue.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "This partial answer contacts the voluntariness component but not the full metaphysical or foreknowledge case."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Belief and decision are distinguished, though the proposition's broader account of rational and emotional interests is less sharply scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The involuntariness claim is presented as considered judgment, but the excerpt gives introspective assertion rather than broad evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "People may indirectly influence beliefs by choosing inquiry, attention, and evidential exposure.",
+        "decisiveQualification": "Indirect influence does not establish direct voluntary control over conviction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The distinction among conviction, preference, emotion, and decision is coherent and relevant to voluntariness."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The conclusion is supported mainly by introspection and assertion, without broader psychological evidence or engagement with indirect control."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally supports the skeptical agency-coherence bridge by challenging a voluntary-belief implication of libertarian agency."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The move's wording concerns beliefs themselves and remains compatible with indirect control over belief-forming conduct."
+        }
+      },
+      "evidenceBasis": "The excerpt says decisions are not all purely rational, that preferences are not chosen, and that beliefs are not choices.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-variant-count-context",
+      "sectionId": "hiddenness-and-inconsistent-revelation",
+      "side": "pro",
+      "speaker": "Braxton Hunter",
+      "moveKind": "reply",
+      "proposition": "The raw number of New Testament variants is misleading when spread across thousands of manuscripts, and openly disclosed disputed passages do not by themselves establish pervasive textual corruption.",
+      "sourceSpan": {
+        "startEvent": 3541,
+        "endEvent": 3574
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows Matt's remarks as the other debater's direct response and explicitly distinguishes agreement about known passages from disagreement about their broader significance.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-text-and-miracle-support"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-inconsistent-revelation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-variant-count-context-component-01",
+            "targetMoveId": "con-inconsistent-revelation",
+            "text": "Raw variant totals are contextualized by their distribution across thousands of manuscripts.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-variant-count-context-component-02",
+            "targetMoveId": "con-inconsistent-revelation",
+            "text": "Openly identified disputed passages are argued not to establish pervasive textual corruption.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the textual-uncertainty component of inconsistent revelation by explaining the denominator and limited implication of disputed passages.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It explicitly answers the numerical-corruption inference, though it does not resolve broader competing-revelation or hiddenness concerns."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The raw count, manuscript denominator, and limited conclusion about pervasive corruption are clearly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move does not claim zero uncertainty; it makes the narrower point that the aggregate count is misleading without context."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A high aggregate count might still indicate uncertainty at some consequential passages.",
+        "decisiveQualification": "Distribution across manuscripts does not by itself show that every important reading is secure."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The denominator correction validly defeats the inference that variant count alone implies every word is multiply uncertain."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Specific manuscript and word counts materially support the contextual point, though variant types and consequential readings are not analyzed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary text-and-miracle bridge but addresses only the textual portion of revelation reliability."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response preserves room for disputed passages while rejecting the stronger inference of pervasive corruption."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts roughly 400,000 variants with about 138,000 New Testament words and explains that variants accumulate across more than 5,000 manuscripts.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct affirmative debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured affirmative burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide affirmative consequence qualifies.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the alleged residual would not alter burden completion independently of scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct skeptical debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden contacts.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured skeptical burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide skeptical consequence qualifies.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the alleged residual would not alter burden completion independently of scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
