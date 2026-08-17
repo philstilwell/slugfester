@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-audio-validation-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-02-decomposed-consensus",
+  "status": "frozen-debate-99-response-schema-failure-diagnosed",
+  "diagnosedAt": "2026-08-17T17:45:29Z",
+  "checkpointCommit": "59483c04feeff2c785b46ebb84c7085e297f9799",
+  "sourceCheckpointCommit": "23677b333ee12df2b83d40599fdef045beb5e4c4",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "I approve deterministic diagnosis, validation, freezing, committing, and pushing of the preserved Batch 2 Debate 99 audio-verification validation failure only, with a direct incremental cost cap of $0. Use only the preserved request, transcript, execution, and error records. Do not access, download, play, or semantically evaluate audio; execute or retry transcription or other models; use paid services; filter, repair, normalize, or merge the transcript; alter the validator or thresholds; adjudicate; derive scores; reconstruct publication; mutate production; or select the next batch.",
+    "maximumDirectIncrementalCostUsd": 0,
+    "deterministicFailureDiagnosisAuthorized": true,
+    "deterministicValidationAuthorized": true,
+    "freezingAuthorized": true,
+    "commitAndPushAuthorized": true,
+    "transcriptMutationAuthorized": false,
+    "validatorOrThresholdMutationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServiceAuthorized": false
+  },
+  "evidenceBoundary": {
+    "authorizedRecords": {
+      "request": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-manifest.json",
+        "sha256": "721dc697420d7aab79c5c1e715ebbf4ed67e27e608909e44be49e6526e68e34c"
+      },
+      "transcript": {
+        "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
+        "sha256": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1"
+      },
+      "execution": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/model-execution.json",
+        "sha256": "cdb9921eae444eb525c73f81c633c5b1d1695ed9466c3c44da318f1988f490ec"
+      },
+      "error": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/validation-failure.json",
+        "sha256": "46091700f8fe40eb01070990b93acc37f60bbfa52cedfe4997ebc6ae9645121c"
+      }
+    },
+    "authorizedRecordCount": 4,
+    "audioFilesAccessed": 0,
+    "audioFilesDownloaded": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptTextIncludedInDiagnosis": false,
+    "transcriptTextSemanticallyEvaluated": false,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0
+  },
+  "target": {
+    "failedCallIndex": 6,
+    "failedCallOrdinal": 7,
+    "debateNumber": "99",
+    "debateId": "jones-jump-digital-physics-god-2019",
+    "moveId": "pro-neural-correlation-interface-model",
+    "expectedSpeaker": "Michael Jones",
+    "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
+    "transcriptSha256": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1"
+  },
+  "requestRecord": {
+    "exactTargetCallLocated": true,
+    "callIndex": 6,
+    "model": "gpt-4o-transcribe-diarize",
+    "responseFormat": "diarized_json",
+    "chunkingStrategy": "auto",
+    "language": "en",
+    "clipSha256": "7480842bdfbd2f4d9095376b4238c1f5aee7e12dadb69dded4e5db0ccff1b8fc",
+    "durationSeconds": 133.099,
+    "knownSpeakerReferences": [
+      {
+        "speaker": "Michael Jones",
+        "sha256": "1a6d48085adc7ee152b6281f2c151c7180a06b1c5ca47e52d70481c31e8b4b86",
+        "durationSeconds": 8
+      },
+      {
+        "speaker": "Tom Jump",
+        "sha256": "01c6f6eb5a640a0732e5285d2cef9faa78cfb50a2cdd86c6b82829dcb2320333",
+        "durationSeconds": 8
+      }
+    ],
+    "attemptsPerCallMaximum": 1,
+    "retriesMaximum": 0
+  },
+  "executionRecord": {
+    "exactTargetResultLocated": true,
+    "resultIndex": 6,
+    "status": "completed",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "commandExitCode": 0,
+    "terminationSignal": null,
+    "transcriptWritten": true,
+    "transcriptJsonValid": true,
+    "usageValid": true,
+    "transcriptSha256": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1",
+    "failureMessage": null,
+    "requestFailure": false,
+    "usageMatchesPreservedTranscript": true,
+    "preservedUsageDerivedEstimatedCostUsd": 0.0493875
+  },
+  "transcriptStructure": {
+    "jsonParsed": true,
+    "topLevelTextPresent": true,
+    "topLevelTextIncludedInDiagnosis": false,
+    "durationSeconds": 133.099,
+    "segmentCount": 44,
+    "segmentTypeCounts": {
+      "transcript.text.segment": 44
+    },
+    "segmentIdsUnique": true,
+    "segmentStartsNondecreasing": true,
+    "segmentEndsNondecreasing": true,
+    "nonemptyTextSegmentCount": 43,
+    "emptyTextSegmentCount": 1,
+    "invalidSegment": {
+      "index": 36,
+      "id": "seg_36",
+      "type": "transcript.text.segment",
+      "speaker": "A",
+      "start": 111.982,
+      "end": 112.132,
+      "durationSeconds": 0.15,
+      "textType": "string",
+      "textLength": 0,
+      "trimmedTextLength": 0
+    },
+    "adjacentBoundaries": {
+      "precedingSegmentEnd": 111.982,
+      "invalidSegmentStart": 111.982,
+      "invalidSegmentEnd": 112.132,
+      "followingSegmentStart": 112.132
+    },
+    "returnedSpeakerLabelCounts": {
+      "A": 13,
+      "Michael Jones": 31
+    }
+  },
+  "diagnosis": {
+    "classification": "completed-transport-with-response-schema-invalid-empty-segment-text",
+    "transportLayerPassed": true,
+    "responseJsonParsed": true,
+    "segmentLevelValidationPassed": false,
+    "exactFailure": "The preserved diarized JSON has exactly one segment whose text is an empty string. The preserved error record identifies the same segment index and rejects that field under the unchanged validation gate.",
+    "invalidField": "segments[36].text",
+    "invalidValueType": "string",
+    "invalidValueLength": 0,
+    "invalidValueTrimmedLength": 0,
+    "invalidSegmentDurationSeconds": 0.15,
+    "otherSegmentsWithNonemptyText": 43,
+    "transcriptHashAgreement": {
+      "evidenceHash": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1",
+      "executionResultHash": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1",
+      "errorRecordHash": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1",
+      "allEqual": true
+    },
+    "requestConstructionFailureEstablished": false,
+    "transportFailureEstablished": false,
+    "localTranscriptMutationEstablished": false,
+    "retryOrRepairFailureEstablished": false,
+    "validatorOrThresholdMutationEstablished": false,
+    "providerReasonForEmptySegmentDetermined": false,
+    "audioContentOrSpeakerIdentityAccuracyDetermined": false,
+    "scopeConclusion": "The allowed records establish the exact structural reason for rejection, but they do not establish why the response contained the empty segment or whether any speaker label or transcript wording is semantically correct."
+  },
+  "preservedStopDisposition": {
+    "batchAudioGatePassed": false,
+    "remainingTranscriptValidationPerformedAfterFailure": false,
+    "downstreamWorkflowBlocked": true,
+    "originalTranscriptPreserved": true,
+    "transcriptFiltered": false,
+    "transcriptRepaired": false,
+    "transcriptNormalized": false,
+    "transcriptMerged": false,
+    "retryPerformed": false,
+    "validatorAltered": false,
+    "thresholdsAltered": false
+  },
+  "executionBoundary": {
+    "directIncrementalCostUsdMaximum": 0,
+    "directIncrementalCostUsdActual": 0,
+    "audioAccesses": 0,
+    "audioDownloads": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "transcriptFilters": 0,
+    "transcriptRepairs": 0,
+    "transcriptNormalizations": 0,
+    "transcriptMerges": 0,
+    "validatorChanges": 0,
+    "thresholdChanges": 0,
+    "adjudications": 0,
+    "scoresDerived": 0,
+    "publicationReconstructions": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "authorization": {
+    "correctionPreparation": false,
+    "correctionExecution": false,
+    "transcriptMutation": false,
+    "validatorOrThresholdMutation": false,
+    "audioAccess": false,
+    "transcriptionOrModelExecution": false,
+    "paidServiceUse": false,
+    "cohortValidationResumption": false,
+    "adjudication": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "freezing": {
+    "evidenceHashesLocked": true,
+    "exactTargetLocked": true,
+    "diagnosisToolPath": "scripts/diagnose-assessment-production-post-canary-batch-02-audio-validation-failure.mjs",
+    "diagnosisToolSha256": "c4553cc9370206c16b1fd05d2428f01fd4a75b22e3659a83c5ce3344b965910b"
+  },
+  "nextAuthorizedAction": "user-approval-required-before-any-batch-02-debate-99-audio-verification-correction-preparation-or-cohort-validation-resumption"
+}
