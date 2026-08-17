@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0-assessment-production-post-canary-batch-02-audio-validation-correction-1-execution-activation",
   "protocolId": "assessment-production-post-canary-batch-02-decomposed-consensus",
-  "status": "frozen-debate-99-correction-1-execution-harness-prepared-not-authorized",
+  "status": "frozen-debate-99-correction-1-deterministic-replay-authorized",
   "preparedAt": "2026-08-17T18:46:55Z",
-  "authorizedAt": null,
-  "checkpointCommit": "3994ba1952d3b57e86e9a34fb2a405f422b06d9e",
+  "authorizedAt": "2026-08-17T19:00:51Z",
+  "checkpointCommit": "4580524797bb85a3d3f3921f003b19970d9efec2",
   "productionCanary": false,
   "batchNumber": 2,
   "correctionNumber": 1,
@@ -241,7 +241,7 @@
     "exactThresholdsLocked": true,
     "exactCorrectionDeltaLocked": true,
     "futureOutputsAbsent": true,
-    "executionAuthorized": false,
+    "executionAuthorized": true,
     "readyForSeparateUserExecutionApproval": true
   },
   "executionBoundary": {
@@ -268,9 +268,9 @@
     "directIncrementalCostUsd": 0
   },
   "authorization": {
-    "correctionExecution": false,
-    "cohortValidationResumption": false,
-    "deterministicAnalysis": false,
+    "correctionExecution": true,
+    "cohortValidationResumption": true,
+    "deterministicAnalysis": true,
     "audioAccess": false,
     "transcriptionOrModelExecution": false,
     "paidServiceUse": false,
@@ -305,6 +305,26 @@
     "automaticRepairBlocks": true,
     "downstreamWorkBlocksUntilReplayPasses": true
   },
-  "userExecutionAuthorization": null,
-  "nextAuthorizedAction": "user-approval-required-before-activation-and-execution-of-exactly-one-batch-02-debate-99-correction-1-validation-overlay-pass-and-one-ten-transcript-cohort-replay"
+  "userExecutionAuthorization": {
+    "instruction": "I approve activation and execution of exactly one frozen Batch 2 Debate 99 correction-1 deterministic validation-overlay pass and one complete ten-transcript cohort replay, with a direct incremental cost cap of $0. Use one attempt, no retries, no reruns, and no automatic repairs. Preserve all ten original transcripts byte-identically, omit only the frozen empty segment from an in-memory validation copy, and use the exact frozen validator and thresholds. Stop after deterministic validation, analysis, committing, and pushing. Do not access audio, execute transcription or other models, use paid services, adjudicate, derive scores, reconstruct publication, mutate production, or select the next batch.",
+    "correctionPasses": 1,
+    "cohortReplayPasses": 1,
+    "transcripts": 10,
+    "transientOverlayApplicationsMaximum": 1,
+    "persistentTranscriptWritesMaximum": 0,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "audioAccessAuthorized": false,
+    "transcriptionOrOtherModelExecutionAuthorized": false,
+    "paidServiceUseAuthorized": false,
+    "adjudicationAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "publicationReconstructionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "nextAuthorizedAction": "execute-exactly-one-batch-02-debate-99-correction-1-validation-overlay-pass-and-one-ten-transcript-cohort-replay"
 }

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-audio-verification-analysis",
+  "protocolId": "assessment-production-post-canary-batch-02-decomposed-consensus",
+  "status": "post-canary-batch-02-audio-verification-unresolved-after-correction-1-overlay",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "gate": {
+    "passed": false,
+    "executionComplete": true,
+    "deterministicReplayComplete": true,
+    "requiredMoves": 10,
+    "verified": 9,
+    "unresolved": 1,
+    "deterministicThresholdsApplied": true,
+    "exactValidatorPreserved": true,
+    "originalTranscriptsPreserved": true,
+    "transientCorrectionOverlayApplications": 1,
+    "persistentTranscriptWrites": 0
+  },
+  "costs": {
+    "preservedPaidDiarizationCallsAttempted": 10,
+    "preservedUsageDerivedEstimatedCostUsd": 0.2933175,
+    "directIncrementalCostUsdThisStage": 0,
+    "paidServiceCallsThisStage": 0,
+    "modelOrApiCallsThisStage": 0
+  },
+  "judgmentModelBoundary": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "isolatedPassesPreserved": true,
+    "scoreBlindnessPreserved": true,
+    "integerRoundedTiesPermitted": true,
+    "modelContextsThisStage": 0,
+    "unchanged": true
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": false,
+    "paidTranscription": false,
+    "audioVerificationExecution": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "user-approval-required-before-any-further-batch-02-audio-verification-diagnosis-or-correction"
+}
