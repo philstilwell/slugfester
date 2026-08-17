@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-candidate-sharded-inventory",
+  "debateNumber": "83",
+  "debateId": "loke-oppy-kalam-causal-principle-2020",
+  "motion": "Does Loke's reformulated Kalam cosmological argument successfully establish a beginningless personal creator of the universe?",
+  "sides": {
+    "pro": {
+      "label": "Reformulated Kalam",
+      "speakers": [
+        "Andrew Loke"
+      ]
+    },
+    "con": {
+      "label": "Naturalist theory comparison",
+      "speakers": [
+        "Graham Oppy"
+      ]
+    }
+  },
+  "durationSeconds": 8903,
+  "eventCount": 4349,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/a8NrTv-Durc/transcript.txt",
+    "transcriptSha256": "a678d9a2e941cf830ae06d08ca1a6548fb48fccaf161eedd511c5e34e3587165",
+    "eventsPath": ".assessment-cache/captions/a8NrTv-Durc/events.json",
+    "eventsSha256": "e4465e29d94ec9fd47308ca855c242217054f9a5cdead2baf7f0f82b6c666b3a",
+    "localManifestPath": ".assessment-cache/captions/a8NrTv-Durc/manifest.json",
+    "localManifestSha256": "5d9afea4028646e860995c01807fa8bbdbb7bf9fad3f1daa4d6d41bb952fd446"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-02/debate-83.jsonl",
+    "sourceLedgerSha256": "672aa469b20dc8b5d26423a1a58eb65ad4fa40e68675636abfe97fd5b26a9c95",
+    "sourceLedgerBytes": 225557,
+    "sourceLedgerEventCount": 4349,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/source-preparation/plans/debate-83.json",
+    "partitionPlanSha256": "8b2b11fea25efe65feea5d955aab7fb27400a1ff808ad6cf47a916c80632d1e9",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

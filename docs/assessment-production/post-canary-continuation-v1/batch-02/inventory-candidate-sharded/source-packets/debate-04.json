@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-candidate-sharded-inventory",
+  "debateNumber": "04",
+  "debateId": "lennox-atkins-science-explain-everything-2019",
+  "motion": "Can science explain everything worth explaining, or do rationality, miracles, purpose, origins, morality, and meaning require a different kind of explanation?",
+  "sides": {
+    "pro": {
+      "label": "Science has limits",
+      "speakers": [
+        "John Lennox"
+      ]
+    },
+    "con": {
+      "label": "Science explains reality",
+      "speakers": [
+        "Peter Atkins"
+      ]
+    }
+  },
+  "durationSeconds": 5939,
+  "eventCount": 2031,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/fSYwCaFkYno/transcript.txt",
+    "transcriptSha256": "75f073cd00302d207f5386663ddf50d9517659dc38e587ac03d5c930322cd302",
+    "eventsPath": ".assessment-cache/captions/fSYwCaFkYno/events.json",
+    "eventsSha256": "fade372893ceaf7793f820a0645ed171437b45ebe2b641f28a86cd81af251499",
+    "localManifestPath": ".assessment-cache/captions/fSYwCaFkYno/manifest.json",
+    "localManifestSha256": "ea875d78124276e903721d653143c17b936b34535647da2c9fc9f49e7e18eecf"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-02/debate-04.jsonl",
+    "sourceLedgerSha256": "7a6eb13ee05663603e9dc0504fb94d3828f8bb8756b1548d70bccb540279c51f",
+    "sourceLedgerBytes": 118845,
+    "sourceLedgerEventCount": 2031,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/source-preparation/plans/debate-04.json",
+    "partitionPlanSha256": "59c96a1c5feb65cf77dd4d2f6b3026dfbd80d64ab20ac972684debf6219f7f8f",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
