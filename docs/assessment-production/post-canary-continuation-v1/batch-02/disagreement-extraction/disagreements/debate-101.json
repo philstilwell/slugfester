@@ -1,0 +1,3395 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-02-decomposed-consensus",
+  "debateNumber": "101",
+  "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+  "moveDisputes": [
+    {
+      "moveId": "pro-unique-good-without-harm-test",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": false,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": {
+          "candidate1": {
+            "tested": false,
+            "representationalCharity": 75
+          },
+          "candidate2": {
+            "tested": true,
+            "representationalCharity": 60
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 64
+            },
+            "candidate2": {
+              "value": 58
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 72,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 94,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-internal-critique-corrupt-religion",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-internal-critique-corrupt-religion-component-01",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Religion merely appropriates prior human goodness while adding corrupting doctrine and institutional power.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-internal-critique-corrupt-religion-component-02",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "Christianity must identify a distinct good rather than merely internal criticism of religious corruption.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-internal-critique-corrupt-religion-component-01",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether religion merely adds poison rather than containing resources that criticize corrupt religious power.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-internal-critique-corrupt-religion-component-02",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "Whether a distinctively Christian principle supplies an identifiable good capable of meeting the proposed test.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-devotion-compassion-institutions",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-devotion-compassion-institutions-component-01",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "Identify a uniquely religious good that is not merely an independently human contribution.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-devotion-compassion-institutions-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Compassion and service arise prior to religion and are only appropriated by it.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-devotion-compassion-institutions-component-01",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "Whether Christianity supplied a distinctively religious good through neighbor-directed devotion and humanitarian institutions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-devotion-compassion-institutions-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether compassion is exhaustively prior and human rather than historically shaped by Christian devotion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 67
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-human-poison-christian-antidote",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 12,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-human-poison-christian-antidote-component-01",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Religion is the distinctive source of poison added to otherwise prior human decency.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-human-poison-christian-antidote-component-02",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "A successful reply must show a uniquely religious good unaccompanied by religious harm.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-human-poison-christian-antidote-component-01",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether violence and domination are distinctively introduced by religion or are a general human problem.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-human-poison-christian-antidote-component-02",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "Whether Christianity's cruciform antidote constitutes a uniquely good contribution without accompanying harm.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "bridge-con-motion-sacred-humanism"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "bridge-con-human-not-religious-poison"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 67
+            },
+            "candidate2": {
+              "value": 61
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 74,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 72
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 57,
+          "candidate2": 56,
+          "roundedMeanAfterAdjudication": 57
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-community-with-doctrinal-subordination",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-human-poison-christian-antidote",
+                "con-internal-critique-corrupt-religion"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-community-with-doctrinal-subordination-component-01",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Christian community and charity constitute extraordinary religious goods and institutional fruits.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-community-with-doctrinal-subordination-component-02",
+                  "targetMoveId": "con-internal-critique-corrupt-religion",
+                  "text": "Internal religious criticism distinguishes authentic blessing from corrupt religious power.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-community-with-doctrinal-subordination-component-03",
+                  "targetMoveId": "con-human-poison-christian-antidote",
+                  "text": "The primary poison is generally human rather than distinctively religious.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-human-poison-christian-antidote"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-community-with-doctrinal-subordination-component-01",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Whether religious community and charity count as unqualified goods once accompanying doctrinal harms are included.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-community-with-doctrinal-subordination-component-02",
+                  "targetMoveId": "con-human-poison-christian-antidote",
+                  "text": "Whether identified harms can be assigned to religious doctrine rather than only general human vice.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 65
+            },
+            "candidate2": {
+              "value": 72
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 80,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-community-is-human-not-unique",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-human-poison-christian-antidote"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-community-is-human-not-unique-component-01",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Christian devotion generated a distinct compassion revolution and associated institutions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-community-is-human-not-unique-component-02",
+                  "targetMoveId": "con-human-poison-christian-antidote",
+                  "text": "Christianity supplies a distinct antidote to generally human pride and violence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-human-poison-christian-antidote"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-community-is-human-not-unique-component-01",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Whether community is a uniquely religious contribution rather than a reproducible human social good.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-community-is-human-not-unique-component-02",
+                  "targetMoveId": "con-human-poison-christian-antidote",
+                  "text": "Whether Christianity's proposed antidote supplies a distinctive contribution beyond ordinary human community.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 69
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "matched",
+                "qualificationStatus": "not-needed",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 82,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-christian-dominion-failed-to-abolish",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-human-poison-christian-antidote",
+                "con-internal-critique-corrupt-religion"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-christian-dominion-failed-to-abolish-component-01",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Christianity generated major humanitarian institutions and reforms from its distinctive devotion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-christian-dominion-failed-to-abolish-component-02",
+                  "targetMoveId": "con-internal-critique-corrupt-religion",
+                  "text": "Christian standards can criticize corrupt religious power from within the tradition.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-christian-dominion-failed-to-abolish-component-03",
+                  "targetMoveId": "con-human-poison-christian-antidote",
+                  "text": "Christianity functions as an antidote to general human domination and violence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 83
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-human-poison-christian-antidote"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-christian-dominion-failed-to-abolish-component-01",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Whether claimed Christian humanitarian causation withstands the prolonged record of Christian institutional power over slavery.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-christian-dominion-failed-to-abolish-component-02",
+                  "targetMoveId": "con-human-poison-christian-antidote",
+                  "text": "Whether Christian standards functioned as an effective antidote when Christian authorities possessed governing power.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 75
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 80,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 79
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-original-sin-precedes-religion",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-christian-dominion-failed-to-abolish",
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-original-sin-precedes-religion-component-01",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Humanity supplies an unpoisoned well of decency before religion adds pride, violence, and domination.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-original-sin-precedes-religion-component-02",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "Religion fails unless it supplies unique good without introducing any bad.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-original-sin-precedes-religion-component-03",
+                  "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                  "text": "Christian political dominance had adequate capacity yet failed to prohibit slavery.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-christian-dominion-failed-to-abolish",
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-original-sin-precedes-religion-component-01",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "The premise that religion arrives after an otherwise unpoisoned stock of human decency and adds the relevant brutality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-original-sin-precedes-religion-component-02",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "The demand for a uniquely religious good with no accompanying bad consequence.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-original-sin-precedes-religion-component-03",
+                  "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                  "text": "The historical claim that Christian political power failed to abolish slavery categorically.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 85
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 74
+            },
+            "candidate2": {
+              "value": 65
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 74
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-monogamy-constrains-male-power",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-community-with-doctrinal-subordination",
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-monogamy-constrains-male-power-component-01",
+                  "targetMoveId": "pro-community-with-doctrinal-subordination",
+                  "text": "Religious doctrines accompanying community subordinate women and impose serious social harms.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-monogamy-constrains-male-power-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Humane benefits are prior human goods rather than distinctively religious contributions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-monogamy-constrains-male-power-component-03",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "A religious principle must supply a unique good without an accompanying bad.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-community-with-doctrinal-subordination",
+                "pro-prior-human-decency"
+              ],
+              "components": [
+                {
+                  "componentId": "con-monogamy-constrains-male-power-component-01",
+                  "targetMoveId": "pro-community-with-doctrinal-subordination",
+                  "text": "Whether Christian sexual doctrine only subordinates women or also materially constrains exploitative male power.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-monogamy-constrains-male-power-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether Christianity supplies a distinctive institutional mechanism protecting women and children.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 71,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 71
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 76,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-humane-motif-retreats-from-scripture",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-internal-critique-corrupt-religion",
+                "con-monogamy-constrains-male-power"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-humane-motif-retreats-from-scripture-component-01",
+                  "targetMoveId": "con-monogamy-constrains-male-power",
+                  "text": "Christian doctrine protects and elevates women by constraining elite male sexual access.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-humane-motif-retreats-from-scripture-component-02",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Christian scripture and devotion generate compassionate institutions and practices.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-humane-motif-retreats-from-scripture-component-03",
+                  "targetMoveId": "con-internal-critique-corrupt-religion",
+                  "text": "Christianity contains internal standards that criticize corrupt or oppressive religious power.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-internal-critique-corrupt-religion",
+                "con-monogamy-constrains-male-power"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-humane-motif-retreats-from-scripture-component-01",
+                  "targetMoveId": "con-monogamy-constrains-male-power",
+                  "text": "The inference that a humane presentation of Christian sexual ethics derives its protective character from explicit scriptural teaching.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-humane-motif-retreats-from-scripture-component-02",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "The claim that Christian compassion is generated by scripture and devotion rather than imported human concern.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-humane-motif-retreats-from-scripture-component-03",
+                  "targetMoveId": "con-internal-critique-corrupt-religion",
+                  "text": "The claim that internal Christian standards adequately correct harmful explicit teachings.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 66
+            },
+            "candidate2": {
+              "value": 84
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 62
+            },
+            "candidate2": {
+              "value": 82
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-image-of-god-against-slavery",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 6,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-christian-dominion-failed-to-abolish",
+                "pro-humane-motif-retreats-from-scripture",
+                "pro-prior-human-decency"
+              ],
+              "components": [
+                {
+                  "componentId": "con-image-of-god-against-slavery-component-01",
+                  "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                  "text": "Christian authorities lacked or failed to articulate a categorical doctrinal basis for rejecting human ownership.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-image-of-god-against-slavery-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Moral opposition to domination is an independently human good appropriated by religion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-image-of-god-against-slavery-component-03",
+                  "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                  "text": "Humane Christian reform must retreat from scripture and import external compassion.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-christian-dominion-failed-to-abolish",
+                "pro-humane-motif-retreats-from-scripture",
+                "pro-prior-human-decency"
+              ],
+              "components": [
+                {
+                  "componentId": "con-image-of-god-against-slavery-component-01",
+                  "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                  "text": "Whether Christianity supplies a doctrinal reason that categorically condemns enslaving human beings.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-image-of-god-against-slavery-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether equal human status has a distinctively Christian doctrinal foundation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-image-of-god-against-slavery-component-03",
+                  "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                  "text": "Whether the humane antislavery principle is drawn from scripture rather than imported from outside it.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 84
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "not-needed",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-trinitarian-ground-of-goodness",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-christian-dominion-failed-to-abolish",
+                "pro-humane-motif-retreats-from-scripture",
+                "pro-prior-human-decency"
+              ],
+              "components": [
+                {
+                  "componentId": "con-trinitarian-ground-of-goodness-component-01",
+                  "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                  "text": "Christian compassion is imported from outside scripture and doctrine rather than grounded within Christianity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trinitarian-ground-of-goodness-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Love and compassion are wholly prior human goods merely appropriated by religion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trinitarian-ground-of-goodness-component-03",
+                  "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                  "text": "Christian institutions failed historically to prohibit slavery despite their power.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-humane-motif-retreats-from-scripture",
+                "pro-prior-human-decency"
+              ],
+              "components": [
+                {
+                  "componentId": "con-trinitarian-ground-of-goodness-component-01",
+                  "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                  "text": "The premise that Christian appeals to love and goodness necessarily abandon doctrine or import an external humane standard.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-trinitarian-ground-of-goodness-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether love and goodness possess a specifically Christian theological foundation rather than being merely appropriated human goods.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 80,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 82,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-equality-and-gradual-abolition",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-christian-dominion-failed-to-abolish",
+                "pro-humane-motif-retreats-from-scripture",
+                "pro-prior-human-decency"
+              ],
+              "components": [
+                {
+                  "componentId": "con-equality-and-gradual-abolition-component-01",
+                  "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                  "text": "Christian political dominance could have prohibited slavery but instead tolerated human ownership for centuries.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-equality-and-gradual-abolition-component-02",
+                  "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                  "text": "Humane reform succeeds only by moving away from explicit biblical doctrine.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-equality-and-gradual-abolition-component-03",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Equality and reforming concern arise independently of Christian doctrine.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-christian-dominion-failed-to-abolish",
+                "pro-humane-motif-retreats-from-scripture"
+              ],
+              "components": [
+                {
+                  "componentId": "con-equality-and-gradual-abolition-component-01",
+                  "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                  "text": "Why Christian teaching did not immediately prohibit slavery despite affirming equality and possessing institutional influence.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-equality-and-gradual-abolition-component-02",
+                  "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                  "text": "Whether antislavery equality can be derived from Pauline and Christian doctrine itself.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 62,
+          "candidate2": 63,
+          "roundedMeanAfterAdjudication": 63
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-selective-gradualism-on-slavery",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-equality-and-gradual-abolition",
+                "con-image-of-god-against-slavery"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-selective-gradualism-on-slavery-component-01",
+                  "targetMoveId": "con-equality-and-gradual-abolition",
+                  "text": "Christianity necessarily transformed slavery gradually because its movement works socially like yeast.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-selective-gradualism-on-slavery-component-02",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Christian institutions achieved radical reforms such as opposition to infanticide.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-selective-gradualism-on-slavery-component-03",
+                  "targetMoveId": "con-image-of-god-against-slavery",
+                  "text": "Image-of-God doctrine supplied an abolitionist basis against slavery.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-equality-and-gradual-abolition",
+                "con-image-of-god-against-slavery"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-selective-gradualism-on-slavery-component-01",
+                  "targetMoveId": "con-equality-and-gradual-abolition",
+                  "text": "The premise that Christianity's gradual method explains its failure to abolish slavery promptly.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-selective-gradualism-on-slavery-component-02",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "The claimed ability of Christian institutions to enact major humanitarian changes such as ending infanticide.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-selective-gradualism-on-slavery-component-03",
+                  "targetMoveId": "con-image-of-god-against-slavery",
+                  "text": "The claim that Christian anthropology supplied a sufficiently operative antislavery principle.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 75,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 76
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-enemy-love-beyond-tribe",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-community-is-human-not-unique",
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-enemy-love-beyond-tribe-component-01",
+                  "targetMoveId": "pro-community-is-human-not-unique",
+                  "text": "Community and compassion are ordinary human goods reproducible without religion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-enemy-love-beyond-tribe-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Compassion and love are wholly prior human goods merely claimed by religion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-enemy-love-beyond-tribe-component-03",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "Christianity must identify a uniquely religious moral contribution.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-community-is-human-not-unique",
+                "pro-prior-human-decency",
+                "pro-unique-good-without-harm-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-enemy-love-beyond-tribe-component-01",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether universalized concern for enemies and the weak is simply ordinary prior human decency.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-enemy-love-beyond-tribe-component-02",
+                  "targetMoveId": "pro-community-is-human-not-unique",
+                  "text": "Whether Christianity contributes only generic community rather than an unusually expansive moral norm.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-enemy-love-beyond-tribe-component-03",
+                  "targetMoveId": "pro-unique-good-without-harm-test",
+                  "text": "Whether love of enemies constitutes a uniquely Christian good with no accompanying religious harm.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 78
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "bridge-con-institutional-fruits"
+              }
+            },
+            "candidate2": {
+              "value": 99,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "bridge-con-motion-sacred-humanism"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 69
+            },
+            "candidate2": {
+              "value": 62
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 64,
+          "candidate2": 65,
+          "roundedMeanAfterAdjudication": 65
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-divine-nature-canaan-test",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-enemy-love-beyond-tribe",
+                "con-image-of-god-against-slavery",
+                "con-trinitarian-ground-of-goodness"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-divine-nature-canaan-test-component-01",
+                  "targetMoveId": "con-trinitarian-ground-of-goodness",
+                  "text": "God's eternal loving nature grounds goodness and avoids arbitrary divine-command morality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-divine-nature-canaan-test-component-02",
+                  "targetMoveId": "con-image-of-god-against-slavery",
+                  "text": "Divine image-bearing provides a stable Christian foundation for equal human worth.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-divine-nature-canaan-test-component-03",
+                  "targetMoveId": "con-enemy-love-beyond-tribe",
+                  "text": "Christianity authoritatively extends love to enemies, outsiders, and the weak.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-enemy-love-beyond-tribe",
+                "con-image-of-god-against-slavery",
+                "con-trinitarian-ground-of-goodness"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-divine-nature-canaan-test-component-01",
+                  "targetMoveId": "con-trinitarian-ground-of-goodness",
+                  "text": "Whether identifying goodness with God's loving nature can morally constrain commands attributed to God.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-divine-nature-canaan-test-component-02",
+                  "targetMoveId": "con-image-of-god-against-slavery",
+                  "text": "Whether sacred human status consistently prohibits grave violence against divine image-bearers.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-divine-nature-canaan-test-component-03",
+                  "targetMoveId": "con-enemy-love-beyond-tribe",
+                  "text": "Whether Christian enemy love coheres with divinely commanded conquest narratives.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "question",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 69,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 76,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 78
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-objective-ground-beyond-agreement",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-divine-nature-canaan-test",
+                "pro-prior-human-decency",
+                "pro-selective-gradualism-on-slavery"
+              ],
+              "components": [
+                {
+                  "componentId": "con-objective-ground-beyond-agreement-component-01",
+                  "targetMoveId": "pro-divine-nature-canaan-test",
+                  "text": "Shared moral recognition of atrocity is sufficient to test claims that divine commands express goodness.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-objective-ground-beyond-agreement-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Human decency supplies moral standards prior to and independently of religion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-objective-ground-beyond-agreement-component-03",
+                  "targetMoveId": "pro-selective-gradualism-on-slavery",
+                  "text": "Historical delay undermines Christianity's claimed moral authority concerning slavery.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-divine-nature-canaan-test",
+                "pro-prior-human-decency",
+                "pro-selective-gradualism-on-slavery"
+              ],
+              "components": [
+                {
+                  "componentId": "con-objective-ground-beyond-agreement-component-01",
+                  "targetMoveId": "pro-divine-nature-canaan-test",
+                  "text": "Whether the affirmative can condemn conquest and slavery objectively without a ground beyond present agreement.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-objective-ground-beyond-agreement-component-02",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether shared human decency supplies an objective rather than contingent moral foundation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-objective-ground-beyond-agreement-component-03",
+                  "targetMoveId": "pro-selective-gradualism-on-slavery",
+                  "text": "Whether later moral condemnation establishes objective improvement rather than changed social preference.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 76,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 65,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 63
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-nonchristian-moral-goods-test",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 21,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 2
+          },
+          "candidate2": {
+            "importance": 3
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-enemy-love-beyond-tribe",
+                "con-objective-ground-beyond-agreement"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-nonchristian-moral-goods-test-component-01",
+                  "targetMoveId": "con-enemy-love-beyond-tribe",
+                  "text": "Christianity uniquely scaled morally valuable concern beyond ordinary kin and tribal boundaries.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-nonchristian-moral-goods-test-component-02",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "Modern compassion and institutions are distinctively derivative of Christianity.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-nonchristian-moral-goods-test-component-03",
+                  "targetMoveId": "con-objective-ground-beyond-agreement",
+                  "text": "Objective moral condemnation requires a foundation beyond contingent human agreement.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 71
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-devotion-compassion-institutions",
+                "con-enemy-love-beyond-tribe",
+                "con-objective-ground-beyond-agreement"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-nonchristian-moral-goods-test-component-01",
+                  "targetMoveId": "con-enemy-love-beyond-tribe",
+                  "text": "The premise that socially valuable compassion and family practices require distinctively Christian derivation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-nonchristian-moral-goods-test-component-02",
+                  "targetMoveId": "con-devotion-compassion-institutions",
+                  "text": "The claim that major modern moral goods are uniquely generated by Christian devotion and institutions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-nonchristian-moral-goods-test-component-03",
+                  "targetMoveId": "con-objective-ground-beyond-agreement",
+                  "text": "The separate question whether non-Christian moral goods possess an objective metaethical foundation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 68
+            },
+            "candidate2": {
+              "value": 81
+            }
+          },
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "bridge-con-institutional-fruits"
+              }
+            },
+            "candidate2": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "bridge-con-motion-sacred-humanism"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-conquest-context-and-christian-prohibition",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-divine-nature-canaan-test",
+                "pro-humane-motif-retreats-from-scripture",
+                "pro-nonchristian-moral-goods-test"
+              ],
+              "components": [
+                {
+                  "componentId": "con-conquest-context-and-christian-prohibition-component-01",
+                  "targetMoveId": "pro-divine-nature-canaan-test",
+                  "text": "The conquest commands apparently authorize indiscriminate atrocity and contradict God's loving nature.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-conquest-context-and-christian-prohibition-component-02",
+                  "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                  "text": "Humane Christian interpretation retreats from explicit scripture toward external compassion.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-conquest-context-and-christian-prohibition-component-03",
+                  "targetMoveId": "pro-nonchristian-moral-goods-test",
+                  "text": "Christian moral claims require comparison with independent non-Christian contributions.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-divine-nature-canaan-test",
+                "pro-humane-motif-retreats-from-scripture",
+                "pro-prior-human-decency"
+              ],
+              "components": [
+                {
+                  "componentId": "con-conquest-context-and-christian-prohibition-component-01",
+                  "targetMoveId": "pro-divine-nature-canaan-test",
+                  "text": "Whether the conquest narratives straightforwardly command the indiscriminate atrocities used to challenge divine goodness.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-conquest-context-and-christian-prohibition-component-02",
+                  "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                  "text": "Whether Christian nonviolence is a doctrinal culmination rather than a retreat from scripture.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-conquest-context-and-christian-prohibition-component-03",
+                  "targetMoveId": "pro-prior-human-decency",
+                  "text": "Whether Christianity contains an authoritative prohibition on religious violence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "bridge-con-internal-critique"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "bridge-pro-doctrinal-harm"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 75
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-child-sacrifice-punishment-incoherence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": true,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": true
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-conquest-context-and-christian-prohibition",
+                "con-enemy-love-beyond-tribe",
+                "con-trinitarian-ground-of-goodness"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-child-sacrifice-punishment-incoherence-component-01",
+                  "targetMoveId": "con-conquest-context-and-christian-prohibition",
+                  "text": "Judgment on a violent child-sacrificing culture and ancient context morally explain the conquest commands.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-child-sacrifice-punishment-incoherence-component-02",
+                  "targetMoveId": "con-trinitarian-ground-of-goodness",
+                  "text": "Divine goodness is identical with eternal love and cannot be arbitrary command.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-child-sacrifice-punishment-incoherence-component-03",
+                  "targetMoveId": "con-enemy-love-beyond-tribe",
+                  "text": "Christianity makes concern for enemies and the weak morally authoritative.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "con-conquest-context-and-christian-prohibition",
+                "con-internal-critique-corrupt-religion",
+                "con-trinitarian-ground-of-goodness"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-child-sacrifice-punishment-incoherence-component-01",
+                  "targetMoveId": "con-conquest-context-and-christian-prohibition",
+                  "text": "The inference that judgment for child sacrifice can morally justify killing the judged population's children.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-child-sacrifice-punishment-incoherence-component-02",
+                  "targetMoveId": "con-trinitarian-ground-of-goodness",
+                  "text": "Whether the conquest defense remains consistent with identifying divine goodness as love.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-child-sacrifice-punishment-incoherence-component-03",
+                  "targetMoveId": "con-internal-critique-corrupt-religion",
+                  "text": "Whether internal Christian standards successfully criticize the apparent religious violence in this case.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": {
+          "candidate1": {
+            "assessmentConfidence": "medium"
+          },
+          "candidate2": {
+            "assessmentConfidence": "high"
+          }
+        },
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 69,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "subsidiary",
+                "bridgeId": "bridge-pro-moral-test-cases"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "bridge-pro-doctrinal-harm"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 86
+            },
+            "candidate2": {
+              "value": 78
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "not-needed",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 93,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-prior-human-decency",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 58,
+      "candidate2": 62,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "pro-unique-good-without-harm-test",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 72,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-unique-good-without-harm-test",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 94,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "con-internal-critique-corrupt-religion",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-internal-critique-corrupt-religion",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "con-internal-critique-corrupt-religion",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-devotion-compassion-institutions",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "con-devotion-compassion-institutions",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-human-poison-christian-antidote",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 74,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "con-human-poison-christian-antidote",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 57,
+      "candidate2": 56,
+      "roundedMeanAfterAdjudication": 57
+    },
+    {
+      "moveId": "pro-community-with-doctrinal-subordination",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-community-with-doctrinal-subordination",
+      "fieldKey": "representationalCharity",
+      "candidate1": 80,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-community-is-human-not-unique",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "pro-community-is-human-not-unique",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 82,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-community-is-human-not-unique",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-christian-dominion-failed-to-abolish",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-christian-dominion-failed-to-abolish",
+      "fieldKey": "representationalCharity",
+      "candidate1": 80,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-original-sin-precedes-religion",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "con-monogamy-constrains-male-power",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-monogamy-constrains-male-power",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 71,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "con-monogamy-constrains-male-power",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-monogamy-constrains-male-power",
+      "fieldKey": "representationalCharity",
+      "candidate1": 76,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-trinitarian-ground-of-goodness",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 80,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-trinitarian-ground-of-goodness",
+      "fieldKey": "representationalCharity",
+      "candidate1": 82,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "con-equality-and-gradual-abolition",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-equality-and-gradual-abolition",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 62,
+      "candidate2": 63,
+      "roundedMeanAfterAdjudication": 63
+    },
+    {
+      "moveId": "con-equality-and-gradual-abolition",
+      "fieldKey": "representationalCharity",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-selective-gradualism-on-slavery",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 75,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "con-enemy-love-beyond-tribe",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-enemy-love-beyond-tribe",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 64,
+      "candidate2": 65,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "pro-divine-nature-canaan-test",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-divine-nature-canaan-test",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 69,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-divine-nature-canaan-test",
+      "fieldKey": "representationalCharity",
+      "candidate1": 76,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "con-objective-ground-beyond-agreement",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 76,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-objective-ground-beyond-agreement",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-objective-ground-beyond-agreement",
+      "fieldKey": "representationalCharity",
+      "candidate1": 65,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 63
+    },
+    {
+      "moveId": "pro-nonchristian-moral-goods-test",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "pro-nonchristian-moral-goods-test",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-conquest-context-and-christian-prohibition",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-conquest-context-and-christian-prohibition",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-conquest-context-and-christian-prohibition",
+      "fieldKey": "representationalCharity",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "pro-child-sacrifice-punishment-incoherence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 93,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 92
+    }
+  ],
+  "burdenAdjustmentDisputes": [],
+  "audioVerificationMoveIds": [
+    "pro-child-sacrifice-punishment-incoherence"
+  ],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "101",
+      "moves": 21,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 21,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch02IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
