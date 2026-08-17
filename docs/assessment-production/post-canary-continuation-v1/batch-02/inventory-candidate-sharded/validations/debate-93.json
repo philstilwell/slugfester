@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-02-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "93",
+  "inventoryPlanCanonicalSha256": "f82e00f9d061d7b0566d2b9d51785e2b4e299d113892ec07a8c9e11733f5ca57",
+  "sideSelectionSha256": {
+    "pro": "129548ab02a160bf81f826c62db6e29e6ec71ef0751f1b85e7cef15dfd61fd8e",
+    "con": "244656a527109aab78143c34f8dad68f1cd02ef492bc3f470321c11521485a7f"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c008",
+      "side": "pro",
+      "moveId": "pro-resurrection-best-explanation",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The source summarizes the historical considerations and affirmatively infers resurrection as their best explanation; that comparative historical inference remains substantive even without a retained opposing alternative.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

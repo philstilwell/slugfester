@@ -1,0 +1,673 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "66",
+  "debateId": "donahue-fodor-case-against-christianity-2025",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-reflective-christian-credibility",
+      "side": "pro",
+      "description": "Establish reflective Christianity as credible through a cumulative case from philosophical reasoning, scriptural and experiential considerations, and resurrection evidence, while limiting skeptical inferences from evil, disagreement, expert dissent, and Christian moral failure.",
+      "successCriteria": "The route succeeds if the positive considerations provide reasonable warrant for Christianity and the negative considerations neither render its core claims unlikely nor defeat the cumulative case when assessed together.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-credibility-bridge",
+        "tier": "motion",
+        "description": "Connect the cumulative positive case and the answers to skeptical objections to the conclusion that reflective Christianity remains credible."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-philosophical-warrant",
+          "tier": "central",
+          "description": "Show that philosophical arguments can provide discriminating support for theism despite uncertainty about premises, divine motivations, and evidential partitioning."
+        },
+        {
+          "bridgeId": "pro-central-christian-evidence",
+          "tier": "central",
+          "description": "Show that revelation, religious experience, and resurrection considerations supply warrant for distinctively Christian claims rather than generic theism alone."
+        },
+        {
+          "bridgeId": "pro-central-defeater-control",
+          "tier": "central",
+          "description": "Show that evil, religious disagreement, expert dissent, and moral failure do not outweigh or defeat the positive cumulative case."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-epistemic-limits",
+          "tier": "subsidiary",
+          "description": "Specify when cognitive limits and consequential complexity legitimately restrict skeptical likelihood judgments without indiscriminately defeating positive arguments."
+        },
+        {
+          "bridgeId": "pro-subsidiary-confidence-scope",
+          "tier": "subsidiary",
+          "description": "Distinguish reasonable Christian credibility from certainty and explain why acknowledged disagreement need not require an atheistic conclusion."
+        }
+      ]
+    },
+    {
+      "routeId": "con-skeptical-unlikelihood",
+      "side": "con",
+      "description": "Establish skeptical atheism by challenging the predictive and explanatory force of the positive Christian considerations and presenting evil, religious disagreement, expert dissent, and Christian moral failure as cumulative evidence against Christianity.",
+      "successCriteria": "The route succeeds if the positive arguments fail to make Christianity sufficiently probable and the negative considerations are better expected without the Christian account of God, revelation, resurrection, and transformation.",
+      "motionBridge": {
+        "bridgeId": "con-motion-unlikelihood-bridge",
+        "tier": "motion",
+        "description": "Connect the failure of the positive case and the cumulative skeptical evidence to the conclusion that Christianity is unlikely."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-positive-case-undercut",
+          "tier": "central",
+          "description": "Show that philosophical arguments, biblical beauty, religious experience, and resurrection evidence lack the claimed discriminatory or explanatory force."
+        },
+        {
+          "bridgeId": "con-central-world-evidence",
+          "tier": "central",
+          "description": "Show that apparently preventable suffering and persistent religious confusion are less expected under the proposed Christian God than under naturalism."
+        },
+        {
+          "bridgeId": "con-central-social-epistemic-evidence",
+          "tier": "central",
+          "description": "Show that informed dissent and the observed moral record materially reduce confidence in Christianity's truth and transformative claims."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-alternative-explanations",
+          "tier": "subsidiary",
+          "description": "Supply naturalistic explanations for fine-tuning and resurrection data that avoid disputed assumptions about divine psychology or miraculous intervention."
+        },
+        {
+          "bridgeId": "con-subsidiary-consistency-test",
+          "tier": "subsidiary",
+          "description": "Require consistent treatment of uncertainty, cognitive limitation, comparative expertise, and likelihood reasoning across positive and negative arguments."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+      "title": "Philosophical Arguments, Fine-Tuning, and Divine Psychology",
+      "weightPercent": 24,
+      "rationale": "This issue tests whether philosophical and fine-tuning arguments predict a life-permitting universe under theism or instead depend on uncertain premises, contested value theories, and arbitrary evidential partitions."
+    },
+    {
+      "sectionId": "scripture-religious-experience-and-reflective-warrant",
+      "title": "Scripture, Religious Experience, and Reflective Warrant",
+      "weightPercent": 14,
+      "rationale": "This issue concerns whether biblical qualities and religious experience distinguish Christian revelation and justify reflective belief despite rival experiences, counterarguments, and disagreement."
+    },
+    {
+      "sectionId": "resurrection-and-naturalistic-explanation",
+      "title": "Resurrection Evidence and Naturalistic Explanation",
+      "weightPercent": 19,
+      "rationale": "This issue addresses whether physical resurrection best explains the burial, appearances, and resulting bodily-resurrection belief or whether a naturalistic sequence explains the same evidence."
+    },
+    {
+      "sectionId": "evil-disagreement-and-epistemic-limitation",
+      "title": "Evil, Religious Disagreement, and Epistemic Limitation",
+      "weightPercent": 27,
+      "rationale": "This issue bears directly on whether suffering and failed or uneven revelation are improbable under Christianity, and whether appeals to consequential complexity or cognitive limits answer those inferences consistently."
+    },
+    {
+      "sectionId": "expert-dissent-confidence-and-moral-fruit",
+      "title": "Expert Dissent, Rational Confidence, and Christian Moral Fruit",
+      "weightPercent": 16,
+      "rationale": "This issue examines how interdisciplinary and specialist disagreement should constrain confidence and whether Christianity's claimed moral transformation generates unmet observable expectations relevant to credibility."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-philosophical-divine-psychology-undercut",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "constructive",
+      "proposition": "Philosophical arguments for God depend on numerous uncertain assumptions and speculative inferences about divine desires, motivations, and reasons for acting.",
+      "sourceSpan": {
+        "startEvent": 126,
+        "endEvent": 177
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly solicits Fodor's reasons, and the uninterrupted answer uses first-person statements of his skeptical position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "I mean it sort of related to the first but the other broad uh concern I have with philosophical alignments for God's existence is that many of them I think are susceptible to the what I call what has been called the problem of divine psychology which is the idea that they require some sort of inference or knowledge about God's uh desires or motivations or reasons for acting one",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 166,
+        "endToken": 235,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-divine-motivation-from-moral-value",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "A perfectly good God's creative motivations can be grounded in moral value, so the goods enabled by conscious life make a life-permitting universe reasonably expected under theism.",
+      "sourceSpan": {
+        "startEvent": 254,
+        "endEvent": 293
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Donahue identifies himself as the author of a paper on divine psychology and presents its proposed moral-value inference before requesting a response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Divine psychology in considerations of moral value and so the more morally value some State of Affairs is the more likely it is that God will actualize It Whatever the context might be and so then you you would want to show in the context of the relevant theistic argument take take fine tuning that a universe fine tuned for life is a great good and it allows for moral goods and",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 169,
+        "endToken": 240,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-fine-tuning-creative-possibilities",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "reply",
+      "proposition": "Appealing to divine goodness does not make a universe like ours probable because the relevant theory of goodness is disputed and theism permits vastly many unlike creative possibilities.",
+      "sourceSpan": {
+        "startEvent": 294,
+        "endEvent": 383
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Fodor begins by identifying the proposal as a familiar approach and then develops sustained first-person objections to both its divine and moral premises.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "reasons with respect to morality But ult ultimately I find that often these these claims are it well at least again I'm still exploring this but I've not been very convinced about the ability to provide a combination of these views that seems to render making our universe and only our universe or a universe like ours to be fairly probable it seems to me that it always gets swamped by other creative possibilities",
+        "characterCount": 415,
+        "tokenCount": 74,
+        "startToken": 576,
+        "endToken": 649,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-fine-tuning-background-laws",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "When the laws of nature and psychophysical laws are included as background information, the relevant comparison narrows to universes under which fine-tuning remains expected if theism is true.",
+      "sourceSpan": {
+        "startEvent": 609,
+        "endEvent": 654
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Donahue calls the preceding objection strong, introduces his published response, and specifies the two groups of laws his analysis conditions upon.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "govern the connection between mental and physical States and so I say well let's just take on the psychophysical laws as background and so if we include both of those the laws of nature the universe we we zero in on those universes governed by our laws of nature and those that have our psychophysical laws then we ought to expect a fine-tuned universe if theism is true and it is",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 232,
+        "endToken": 303,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-scriptural-beauty-baseline",
+      "qualifiedCandidateId": "chunk-002:c002-01",
+      "sectionId": "scripture-religious-experience-and-reflective-warrant",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "reply",
+      "proposition": "The literary beauty and cultural importance of scripture do not establish divine inspiration because no defensible baseline distinguishes inspired texts from impressive human literature or rival scriptures.",
+      "sourceSpan": {
+        "startEvent": 861,
+        "endEvent": 928
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained answer follows Donahue's question and is delivered in Fodor's skeptical first-person voice.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "argument for the Quran which is that like no person could have written this without divine inspiration because of how amazing it is and beautiful and intricate and all that sort of stuff um I think that the simplest objections to this is simply to ask what the Baseline is for making this this assessment so on the one hand what we would need is some kind of criteria or or collection of texts that we can establish",
+        "characterCount": 415,
+        "tokenCount": 78,
+        "startToken": 113,
+        "endToken": 190,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-self-authentication-discrimination",
+      "qualifiedCandidateId": "chunk-002:c002-02",
+      "sectionId": "scripture-religious-experience-and-reflective-warrant",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "reply",
+      "proposition": "Calling Christian religious experience self-authenticating does not resolve its epistemic weakness because it provides no reliable way to distinguish Christian revelation from rival religious experiences.",
+      "sourceSpan": {
+        "startEvent": 1038,
+        "endEvent": 1075
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer directly follows Donahue's presentation of Craig's position and consistently expresses Fodor's skeptical epistemology.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "get to the point of how you can reliably distinguish the two um particularly because the idea is that you can only tell if you can only tell what it's like after you've experienced it then I mean which I think actually is what he says right so if you haven't experienced it then you won't be able to know but if you have well then you will but you will never be able to explain it",
+        "characterCount": 380,
+        "tokenCount": 77,
+        "startToken": 113,
+        "endToken": 189,
+        "weightedOverlap": 4,
+        "matchedAnchorTokens": 1,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-properly-basic-experiential-warrant",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "scripture-religious-experience-and-reflective-warrant",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Belief in God may be properly basic when grounded in coherent and undefeated direct experience of divine reality, analogously to ordinary warranted trust in the external world.",
+      "sourceSpan": {
+        "startEvent": 1076,
+        "endEvent": 1116
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly describes his own enduring experience of God while presenting Plantinga-style reformed epistemology.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "belief in God can be properly basic I mean Alvin planting is a smart guy and so reformed epistemology isn't obviously ludicrous which is this claim that like in the same way that I am justified in believing in an external world and and for believing that I'm not dreaming right now that I'm not trapped in The Matrix I can be justified in believing in God and it would seem that the common element is that I just directly experience",
+        "characterCount": 432,
+        "tokenCount": 81,
+        "startToken": 14,
+        "endToken": 94,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-resurrection-naturalistic-sequence",
+      "qualifiedCandidateId": "chunk-002:c002-05",
+      "sectionId": "resurrection-and-naturalistic-explanation",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "reply",
+      "proposition": "A temporary reburial, bereavement experiences, memory-shaping biases, and socialization can jointly explain sincere early Christian resurrection belief without a literal bodily resurrection.",
+      "sourceSpan": {
+        "startEvent": 1272,
+        "endEvent": 1397
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Fodor identifies the account as his RHBS model and systematically explains each naturalistic component in the first person.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "offered well I call it the rhbs model which is probably a little bit overly pompous for what it is because it's mostly just an appeal to uh existing findings or concepts or ideas from likey psychology sociology um and a little bit of um historical case study to explain how we might be able to account for the emergence of the belief emergence of the sincere belief that Jesus had risen from the dead by his his early",
+        "characterCount": 417,
+        "tokenCount": 79,
+        "startToken": 0,
+        "endToken": 78,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-resurrection-belief-expectations",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "resurrection-and-naturalistic-explanation",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "reply",
+      "proposition": "Jewish expectations do not uniquely favor a resurrection inference, while collective experiences and a perceived empty tomb could produce bodily-resurrection belief under a naturalistic account.",
+      "sourceSpan": {
+        "startEvent": 1507,
+        "endEvent": 1567
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response directly addresses Donahue's Craig-style objection and restates distinctive elements of Fodor's naturalistic model.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "account from my account because Craig as I as far as I can understand he argues that the disciples came to believe that Jesus had been resurrected specifically uh because the tomb was empty and because Jesus appeared to them in a way that convinced them that it was some kind of bodily physical uh appearance and I argue the exact same I argue that the tomb was empty and that the",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 264,
+        "endToken": 335,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-physical-appearance-explanation",
+      "qualifiedCandidateId": "chunk-002:c002-08",
+      "sectionId": "resurrection-and-naturalistic-explanation",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Physical appearances of Jesus better explain both the reported phenomenological character of the appearances and the disciples' specifically bodily interpretation of their experiences.",
+      "sourceSpan": {
+        "startEvent": 1568,
+        "endEvent": 1598
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Donahue explicitly frames the passage as advocacy for Craig and develops the resurrection explanation against Fodor's characterization.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "merely hallucinations that wouldn't explain the phenomenological characteristics of the appearances and the narratives that we do have and so given that they had appearances of Jesus alive rather than appearances of Jesus or experiences of Jesus as alive rather than experiences of Jesus in heaven uh that is what is better explained by the resurrection hypothesis and so I I just don't think he would point to the empty tomb",
+        "characterCount": 425,
+        "tokenCount": 71,
+        "startToken": 91,
+        "endToken": 161,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-preventable-suffering-evidence",
+      "qualifiedCandidateId": "chunk-002:c002-10",
+      "sectionId": "evil-disagreement-and-epistemic-limitation",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "constructive",
+      "proposition": "Extensive apparently preventable suffering is unexpected if a perfectly good and powerful God created the world to realize morally valuable well-being.",
+      "sourceSpan": {
+        "startEvent": 1668,
+        "endEvent": 1719
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Fodor begins the requested explanation of the problem of evil and develops it continuously through the delivered context boundary.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "problem of evil is a good argument against you know at least traditional forms of theism um but it is it is going to be a bit contingent on what you think the nature of God is and what you think his um reasons for creating are so but certainly if you think as we discussed before with respect to the fun argument that uh God created in order to um exemplify the um exemplify the morally good states of of well",
+        "characterCount": 409,
+        "tokenCount": 82,
+        "startToken": 10,
+        "endToken": 91,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-consequential-complexity-defense",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-03",
+      "sectionId": "evil-disagreement-and-epistemic-limitation",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Because historical consequences are deeply interconnected and compound beyond human prediction, only an omniscient mind could reliably compare the total outcomes relevant to apparently gratuitous evil.",
+      "sourceSpan": {
+        "startEvent": 1871,
+        "endEvent": 1911
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker identifies the skeptical-theist view he finds most plausible, names its consequential-complexity rationale, develops it, and asks for a response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "consequences of one's actions maybe maybe not but I think on its face anyway that's a plausible claim that if we that that the the the effects of changing a certain event are compound over time little changes accumulate into hugely Divergent histories and from that perspective it would seem that only an omniscient or near omniscient mind could make the Judgment call about which events",
+        "characterCount": 387,
+        "tokenCount": 66,
+        "startToken": 190,
+        "endToken": 255,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-religious-contingency-confusion",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-06",
+      "sectionId": "evil-disagreement-and-epistemic-limitation",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "constructive",
+      "proposition": "Geographic religious contingency and deep Christian doctrinal disagreement are more expected under naturalism than under a God who intends to reveal beliefs and practices to humanity.",
+      "sourceSpan": {
+        "startEvent": 2098,
+        "endEvent": 2184
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following an explicit topic transition and request for the skeptical argument, the speaker gives a sustained first-person explanation of two levels of religious disagreement.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "under naturalism it seems much less expected um if we think that there's an omnipotent and Omni benevolent God who's uh wants everyone to have access to this information um so this is um a general observation about the historical and Geographic contingency of religious belief and where it emerges and who didn't who didn't have access to information about Christianity and things",
+        "characterCount": 380,
+        "tokenCount": 63,
+        "startToken": 184,
+        "endToken": 246,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-disagreement-inscrutability-or-outweighing",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-07",
+      "sectionId": "evil-disagreement-and-epistemic-limitation",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Christianity may accommodate religious disagreement if its likelihood under Christianity is inscrutable given consequential complexity and Molinism, or if contrary evidence is outweighed within the cumulative case.",
+      "sourceSpan": {
+        "startEvent": 2185,
+        "endEvent": 2241
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker says the problem has core plausibility, identifies what he considers Christianity's best response, and then states a secondary cumulative-case response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "evidence here that you've delineated has an inscrutable likelihood given Christian Christianity that we just can't evaluate what kind of a circumstance of religious agreement or lack thereof we should expect if Christianity is true and again I think the best bet for that kind of option would be be the same that you would give in the problem of evil which would be a consequential complexity argument that also given molinism",
+        "characterCount": 426,
+        "tokenCount": 72,
+        "startToken": 94,
+        "endToken": 165,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-expert-dissent-selection-effects",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-01",
+      "sectionId": "expert-dissent-confidence-and-moral-fruit",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Broad philosophical opinion is weak evidence against theism because most philosophers lack specialist knowledge of contemporary philosophy of religion, while specialist opinion is affected by selection effects.",
+      "sourceSpan": {
+        "startEvent": 2531,
+        "endEvent": 2622
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn explicitly presents a response from the theistic perspective and uses first-person descriptions matching Donahue's stated expertise and position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "knowledge of the relevant issues I mean that's not indicting philosophers specifically for not understanding philosophy of religion I think that when you just come to understand what philosophy is it is such a huge expansive field that the collective opinion of philosophers on some very specific issue is just not that significant I mean for instance the opinion of a philosopher",
+        "characterCount": 380,
+        "tokenCount": 62,
+        "startToken": 331,
+        "endToken": 392,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-informed-dissent-confidence",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-02",
+      "sectionId": "expert-dissent-confidence-and-moral-fruit",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "reply",
+      "proposition": "Persistent disagreement among informed people requires substantial moderation of confidence even when its exact degree is uncertain and relevant expertise extends beyond philosophy of religion.",
+      "sourceSpan": {
+        "startEvent": 2623,
+        "endEvent": 2713
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker defends the previously introduced ten-percent estimate and explicitly frames it as his personal conciliatory judgment, identifying the turn as Fodor's.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "disagreement amongst epistemic peers even if you take the philosophy of religion figure I I don't know it's like 60% theist or something like that last I remember looking at it but it's not like 99% right and the point is that there's more than enough examples of people with knowledge of these different areas who disagree I think to moderate at away from very strong commitments now exactly how much moderation",
+        "characterCount": 412,
+        "tokenCount": 72,
+        "startToken": 37,
+        "endToken": 108,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-disagreement-limits-confidence-not-belief",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-03",
+      "sectionId": "expert-dissent-confidence-and-moral-fruit",
+      "side": "pro",
+      "speaker": "Miles K. Donahue",
+      "moveKind": "reply",
+      "proposition": "Peer disagreement should lower confidence in theism, but disagreement alone does not justify an all-things-considered probability below one-half or the belief that God does not exist.",
+      "sourceSpan": {
+        "startEvent": 2714,
+        "endEvent": 2744
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn agrees that confidence in theism should move downward while objecting to treating disagreement as support for atheism, which coheres with Donahue's pro position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "confidence in theism and I do agree with you that it is to move it in the downward Direction because you you can't I agree you can't be certain or 99% confident after taking account of the fact that all of these things are so complex and the relevant experts do disagree to some extent what I would take issue with is that there's any argument for atheism among the peer disagreement so I think 10% as the final probability that God",
+        "characterCount": 432,
+        "tokenCount": 82,
+        "startToken": 22,
+        "endToken": 103,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-christian-moral-transformation-test",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-10",
+      "sectionId": "expert-dissent-confidence-and-moral-fruit",
+      "side": "con",
+      "speaker": "James Fodor",
+      "moveKind": "constructive",
+      "proposition": "Christian claims that divine indwelling morally transforms believers generate an observable expectation that Christians should display better moral conduct than the historical and contemporary record appears to show.",
+      "sourceSpan": {
+        "startEvent": 3224,
+        "endEvent": 3282
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker introduces the final skeptical consideration, characterizes it as an objection from Christian moral fruits, and develops it in the first person as Fodor's argument.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "of of thing um and um it seems to me that this is actually potentially a testable claim um not directly perhaps but that we might expect I mean this actually this is actually slightly different to evils done in the name of religion but it's connected to the idea of the mega moral fruits kind of response right um I think they're two sides of the same coin Mega moral fruits and I",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 101,
+        "endToken": 174,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

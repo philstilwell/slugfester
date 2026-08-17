@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-02-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "136",
+  "inventoryPlanCanonicalSha256": "d2cdbed0874d4e09f589f04fb8e0eccaa5eafa4e626e00b4f9d22ef59f8b0338",
+  "sideSelectionSha256": {
+    "pro": "ab72397952a3290d4389606e29a95d45e362619a8f35374e639a05e272bcf16e",
+    "con": "f6377396cb336ead86b2836363dcf3f123fb5c70bdbd83793178ad9f68463e7f"
+  },
+  "sections": 5,
+  "moves": 18,
+  "proMoves": 8,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c003",
+      "side": "con",
+      "moveId": "con-calibrated-existence-baseline",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The evidence supports a freestanding distinction between confidence in Jesus’s existence and confidence in particular Gospel words and deeds.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c007",
+      "side": "con",
+      "moveId": "con-anonymous-late-changing-transmission",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The cited authorship, dating, contradiction, and oral-transmission features constitute a self-contained basis for limiting straightforward historical confidence in the Gospels.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 2,
+  "nominatedCandidates": 18,
+  "retainedCandidates": 18,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

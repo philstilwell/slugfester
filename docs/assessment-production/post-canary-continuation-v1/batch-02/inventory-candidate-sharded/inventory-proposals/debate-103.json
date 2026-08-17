@@ -1,0 +1,251 @@
+{
+  "schemaVersion": "4.2.21.16.2-score-blind-side-partitioned-selection-map-proposal",
+  "protocolId": "v4.2.21.16.2-side-partitioned-selection-map-contract",
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "reviewerRole": "score-blind-inventory-curator",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-theism-irrational-route",
+      "side": "pro",
+      "description": "Show that belief in an all-powerful, all-loving God does not accord with the available evidence because apparently gratuitous suffering and salvation-related confusion conflict with the expected conduct of such a deity, while the offered arguments from reason, design, morality, and purpose do not overcome those conflicts.",
+      "successCriteria": "The route succeeds if the evidence expected under an all-powerful, all-loving God is materially inconsistent with suffering or religious confusion and the affirmative grounds for theism remain insufficient to restore rational warrant.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-bridge",
+        "tier": "motion",
+        "description": "Establish that the total available evidence makes belief in the specified all-powerful, all-loving God irrational."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-gratuitous-evil-bridge",
+          "tier": "central",
+          "description": "Establish that apparently purposeless suffering is unexpected if an all-powerful and all-loving God exists."
+        },
+        {
+          "bridgeId": "pro-salvation-confusion-bridge",
+          "tier": "central",
+          "description": "Establish that serious consequences attached to disputed religious claims conflict with divine love and adequate revelation."
+        },
+        {
+          "bridgeId": "pro-undercut-theistic-evidence-bridge",
+          "tier": "central",
+          "description": "Show that arguments from reason, fine-tuning, morality, or purpose do not supply enough specific support for the specified God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-evidence-standard-bridge",
+          "tier": "subsidiary",
+          "description": "Define rational belief as belief proportioned to the reason and evidence available to the believer."
+        },
+        {
+          "bridgeId": "pro-natural-explanation-bridge",
+          "tier": "subsidiary",
+          "description": "Supply natural explanations for cognition, moral intuitions, or biological complexity where these are offered as evidence for God."
+        }
+      ]
+    },
+    {
+      "routeId": "con-rational-theism-route",
+      "side": "con",
+      "description": "Show that belief in God remains rational through a cumulative explanatory case from reliable reason, life-permitting order, objective morality, and human purpose, while accounting for suffering and other contrary evidence without requiring that every difficulty be conclusively resolved.",
+      "successCriteria": "The route succeeds if theism provides material explanatory support across the principal affirmative issues and the alleged conflicts from evil or religious confusion do not defeat the resulting cumulative warrant.",
+      "motionBridge": {
+        "bridgeId": "con-motion-bridge",
+        "tier": "motion",
+        "description": "Establish that the cumulative evidence and available answers to defeaters make belief in God rational."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-cumulative-case-bridge",
+          "tier": "central",
+          "description": "Establish that reason, cosmic order, morality, and purpose jointly provide positive explanatory support for theism."
+        },
+        {
+          "bridgeId": "con-evil-response-bridge",
+          "tier": "central",
+          "description": "Show that suffering can count as counterevidence without rendering belief in an all-loving God irrational."
+        },
+        {
+          "bridgeId": "con-moral-grounding-bridge",
+          "tier": "central",
+          "description": "Show that objective goodness and obligation are more adequately grounded in God than in purposeless physical reality."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-cognitive-trust-bridge",
+          "tier": "subsidiary",
+          "description": "Explain why designed intelligence supplies a basis for trusting human capacities to understand truth."
+        },
+        {
+          "bridgeId": "con-purpose-and-revelation-bridge",
+          "tier": "subsidiary",
+          "description": "Relate divine intention, religious claims, and human significance to the broader rational case for theism."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "rationality-and-reason",
+      "title": "Rational warrant and trust in reason",
+      "weightPercent": 20,
+      "rationale": "This issue fixes the evidential standard governing the motion and tests whether evolved cognition or divinely intended intelligence provides an adequate basis for trusting human reasoning."
+    },
+    {
+      "sectionId": "evil-and-divine-love",
+      "title": "Suffering, gratuitous evil, and divine love",
+      "weightPercent": 25,
+      "rationale": "The compatibility of apparently purposeless suffering with unlimited power and love is a motion-level dispute and the principal potential defeater confronting rational theism."
+    },
+    {
+      "sectionId": "morality-and-grounding",
+      "title": "Objective morality and its grounding",
+      "weightPercent": 20,
+      "rationale": "The parties dispute whether moral judgments arise adequately from natural processes or require God, and whether grounding goodness in divine nature avoids arbitrariness."
+    },
+    {
+      "sectionId": "design-evolution-and-purpose",
+      "title": "Design, evolution, and human purpose",
+      "weightPercent": 20,
+      "rationale": "Fine-tuning, biological complexity, evolutionary selection, and intentional human existence form a shared dispute over whether observed order and life support divine design."
+    },
+    {
+      "sectionId": "revelation-and-salvation-confusion",
+      "title": "Revelation, miracles, and salvation confusion",
+      "weightPercent": 15,
+      "rationale": "Disagreement about miracle claims, culturally inherited belief, biblical authority, and salvation requirements bears on what revelation an all-loving God should provide and whether religious assent is rational."
+    }
+  ],
+  "candidateSelectionsBySide": {
+    "pro": {
+      "chunk-001:c001": {
+        "sectionId": "rationality-and-reason",
+        "moveId": "pro-rationality-evidential-standard",
+        "moveKind": "constructive",
+        "proposition": "A belief is rational only when it accords with the reason and evidence available to the believer, regardless of whether the belief ultimately proves true."
+      },
+      "chunk-001:c002": {
+        "sectionId": "evil-and-divine-love",
+        "moveId": "pro-gratuitous-evil-divine-love",
+        "moveKind": "constructive",
+        "proposition": "Apparently gratuitous suffering makes belief in an all-powerful and all-loving God irrational because such a God could and would prevent evil that serves no greater purpose."
+      },
+      "chunk-001:c003": {
+        "sectionId": "revelation-and-salvation-confusion",
+        "moveId": "pro-salvation-confusion-divine-love",
+        "moveKind": "constructive",
+        "proposition": "Salvation-dependent theism is irrationally contradictory because an all-loving God would not attach grave consequences to disputed propositions amid widespread religious confusion."
+      },
+      "chunk-001:c007": {
+        "sectionId": "rationality-and-reason",
+        "moveId": "pro-evolution-cognitive-reliability",
+        "moveKind": "reply",
+        "proposition": "The evolutionary argument against naturalism neither establishes theism nor defeats evolved cognition, because atheism does not entail naturalism and selection generally favors broadly accurate representations."
+      },
+      "chunk-001:c010": {
+        "sectionId": "evil-and-divine-love",
+        "moveId": "pro-creator-evidence-classical-god-gap",
+        "moveKind": "reply",
+        "proposition": "Even successful arguments for a creator would not establish the Christian or Islamic God when gratuitous evil conflicts with the unlimited power and perfect love attributed to that God."
+      },
+      "chunk-002:chunk002-c01": {
+        "sectionId": "morality-and-grounding",
+        "moveId": "pro-evolution-moral-intuitions",
+        "moveKind": "reply",
+        "proposition": "Evolutionary selection can explain prosocial moral feelings and persistent moral disagreement under either atheism or theism without requiring divine moral grounding."
+      },
+      "chunk-002:chunk002-c03": {
+        "sectionId": "morality-and-grounding",
+        "moveId": "pro-divine-command-dilemma",
+        "moveKind": "reply",
+        "proposition": "Divine-command morality faces a dilemma: goodness either exists independently of God or consists merely in God's arbitrary dictates rather than a moral standard."
+      },
+      "chunk-002:chunk002-c06": null,
+      "chunk-002:chunk002-c08": {
+        "sectionId": "revelation-and-salvation-confusion",
+        "moveId": "pro-history-does-not-establish-miracles",
+        "moveKind": "reply",
+        "proposition": "Historical evidence that religious figures existed does not establish supernatural narratives, and an all-loving God would not reasonably require assent to culturally inherited miracle claims."
+      },
+      "chunk-002:chunk002-c10": {
+        "sectionId": "design-evolution-and-purpose",
+        "moveId": "pro-natural-selection-explains-complexity",
+        "moveKind": "reply",
+        "proposition": "Natural selection is not mere randomness, and its strong evidential support supplies a natural explanation of biological complexity that does not require traditional creation accounts."
+      }
+    },
+    "con": {
+      "chunk-001:c004": {
+        "sectionId": "rationality-and-reason",
+        "moveId": "con-reason-designed-cognition",
+        "moveKind": "constructive",
+        "proposition": "Theism provides a basis for trusting human reason, whereas unguided natural selection primarily favors reproductively advantageous behavior rather than reliably truth-directed belief."
+      },
+      "chunk-001:c005": {
+        "sectionId": "design-evolution-and-purpose",
+        "moveId": "con-life-permitting-fine-tuning",
+        "moveKind": "constructive",
+        "proposition": "The precise life-permitting calibration of multiple physical parameters is far more expected on intelligent design than on chance and therefore supports belief in God."
+      },
+      "chunk-001:c006": {
+        "sectionId": "morality-and-grounding",
+        "moveId": "con-objective-morality-grounded-in-god",
+        "moveKind": "constructive",
+        "proposition": "Objective moral obligations are best explained by God because denying their objectivity conflicts with deep moral judgments and impersonal physical particles cannot ground prescriptive moral law."
+      },
+      "chunk-001:c008": {
+        "sectionId": "rationality-and-reason",
+        "moveId": "con-truth-directed-designed-intelligence",
+        "moveKind": "reply",
+        "proposition": "Theism gives stronger grounds than naturalism for believing that human minds primarily serve truth because designed intelligence is directed toward understanding an intelligible universe."
+      },
+      "chunk-001:c009": {
+        "sectionId": "evil-and-divine-love",
+        "moveId": "con-suffering-counterevidence-not-defeater",
+        "moveKind": "reply",
+        "proposition": "Suffering is substantial counterevidence but does not defeat belief in an all-loving God because Christianity describes a disordered world, affirms an afterlife, offers theodicies, and portrays God as sharing human suffering."
+      },
+      "chunk-002:chunk002-c02": null,
+      "chunk-002:chunk002-c04": {
+        "sectionId": "revelation-and-salvation-confusion",
+        "moveId": "con-biblical-revelation-and-human-dignity",
+        "moveKind": "reply",
+        "proposition": "Biblical revelation, especially the teaching that every person bears God's image, substantially shaped modern Western commitments to universal human value and equal dignity."
+      },
+      "chunk-002:chunk002-c05": {
+        "sectionId": "morality-and-grounding",
+        "moveId": "con-euthyphro-divine-nature-resolution",
+        "moveKind": "reply",
+        "proposition": "The Euthyphro dilemma does not make morality external or arbitrary because God commands goodness on the basis that God is the good itself and objective goodness is rooted in the creator's character."
+      },
+      "chunk-002:chunk002-c07": null,
+      "chunk-002:chunk002-c09": {
+        "sectionId": "design-evolution-and-purpose",
+        "moveId": "con-guided-evolution-and-human-purpose",
+        "moveKind": "constructive",
+        "proposition": "Human beings exist intentionally because God wanted them, and natural selection may be the guided mechanism through which God brought them into existence."
+      }
+    }
+  },
+  "audit": {
+    "completeCandidateEvidenceBundleReviewed": true,
+    "everySelectedCandidateUsedOnce": true,
+    "ratingsUnavailable": true,
+    "responseTopologyUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true
+  }
+}
