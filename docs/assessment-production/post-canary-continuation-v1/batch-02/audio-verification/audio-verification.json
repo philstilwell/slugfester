@@ -1,18 +1,30 @@
 {
   "schemaVersion": "1.0-assessment-production-post-canary-batch-02-audio-verification-audit",
   "protocolId": "assessment-production-post-canary-batch-02-decomposed-consensus",
-  "status": "post-canary-batch-02-audio-verification-unresolved-after-correction-1-overlay",
+  "status": "passed-all-ten-post-canary-batch-02-confidence-moves-audio-verified-after-correction-2-reference-overlay",
   "productionCanary": false,
   "batchNumber": 2,
   "stagingOnly": true,
-  "correction": {
-    "number": 1,
-    "operation": "omit-one-exact-empty-text-segment-from-transient-validation-overlay",
-    "targetMoveId": "pro-neural-correlation-interface-model",
-    "transientOverlayApplications": 1,
-    "persistentTranscriptWrites": 0,
-    "allOriginalTranscriptsUnchanged": true
-  },
+  "corrections": [
+    {
+      "number": 1,
+      "operation": "omit-one-exact-empty-text-segment-from-transient-validation-overlay",
+      "targetMoveId": "pro-neural-correlation-interface-model",
+      "transientOverlayApplications": 1,
+      "persistentTranscriptWrites": 0,
+      "unchanged": true
+    },
+    {
+      "number": 2,
+      "operation": "replace-only-the-transient-debate-83-verification-reference-with-one-source-exact-expected-speaker-substring",
+      "targetMoveId": "pro-modality-02",
+      "field": "verificationExcerpt",
+      "deltaSha256": "426a4b4313d1799ec61e43ec7c78a789171f53237f96cc07f51df815c9f5e4e4",
+      "transientOverlayApplications": 1,
+      "persistentSourceWrites": 0,
+      "persistentTranscriptWrites": 0
+    }
+  ],
   "debates": [
     {
       "debateNumber": "83",
@@ -32,8 +44,8 @@
             "eitherPassAttributionBelowHigh": false
           },
           "executionStatus": "completed",
-          "status": "unresolved",
-          "resolvedSpeaker": null,
+          "status": "verified",
+          "resolvedSpeaker": "Andrew Loke",
           "clip": {
             "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/clips/pro-modality-02.mp3",
             "sha256": "8f45323220e49ea7e410a2a78dc9a622f9f88fbbbc91fb97dc280379f3c4817c",
@@ -47,20 +59,31 @@
             "responseFormat": "diarized_json",
             "persistentMutation": false
           },
-          "validationOverlay": null,
+          "validationOverlay": {
+            "correctionNumber": 2,
+            "operation": "replace-only-the-transient-debate-83-verification-reference-with-one-source-exact-expected-speaker-substring",
+            "field": "verificationExcerpt",
+            "originalValueSha256": "091e5d31ed90688c3559a1cd1b699b871b0b7810f950b57e3894aec150f8800e",
+            "originalLexicalTokenCount": 75,
+            "replacementValueSha256": "3b7b6c1abbd910e52ae8de4a5524b49208c5945335038ca9ffe56a031be5a309",
+            "replacementLexicalTokenCount": 18,
+            "deltaSha256": "426a4b4313d1799ec61e43ec7c78a789171f53237f96cc07f51df815c9f5e4e4",
+            "persistentSourceWritten": false,
+            "persistentTranscriptWritten": false
+          },
           "deterministicEvidence": {
-            "status": "unresolved",
+            "status": "verified",
             "expectedSpeaker": "Andrew Loke",
-            "fullClipExcerptRecall": 0.9866666666666667,
-            "expectedSpeakerExcerptRecall": 0.7466666666666667,
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
             "highestOtherSpeaker": "Graham Oppy",
-            "highestOtherSpeakerExcerptRecall": 0.6133333333333333,
-            "expectedSpeakerRecallMargin": 0.13333333333333341,
+            "highestOtherSpeakerExcerptRecall": 0.3888888888888889,
+            "expectedSpeakerRecallMargin": 0.6111111111111112,
             "expectedSpeakerDurationSeconds": 59.55,
             "checks": {
               "fullClipExcerptRecovered": true,
-              "expectedSpeakerExcerptRecovered": false,
-              "expectedSpeakerRecallDistinct": false,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
               "expectedSpeakerDurationSufficient": true
             },
             "speakerEvidence": [
@@ -69,21 +92,21 @@
                 "segmentCount": 25,
                 "durationSeconds": 59.55,
                 "wordCount": 222,
-                "excerptRecall": 0.7466666666666667
+                "excerptRecall": 1
               },
               {
                 "speaker": "Graham Oppy",
                 "segmentCount": 9,
                 "durationSeconds": 32.1,
                 "wordCount": 93,
-                "excerptRecall": 0.6133333333333333
+                "excerptRecall": 0.3888888888888889
               },
               {
                 "speaker": "A",
                 "segmentCount": 1,
                 "durationSeconds": 1,
                 "wordCount": 6,
-                "excerptRecall": 0.013333333333333334
+                "excerptRecall": 0
               }
             ]
           }
@@ -439,6 +462,7 @@
             "persistentMutation": false
           },
           "validationOverlay": {
+            "correctionNumber": 1,
             "operation": "omit-one-exact-empty-text-segment-from-transient-validation-overlay",
             "sourceTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
             "sourceTranscriptSha256": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1",
@@ -882,14 +906,15 @@
   },
   "totals": {
     "requiredMoves": 10,
-    "verified": 9,
-    "unresolved": 1,
+    "verified": 10,
+    "unresolved": 0,
     "paidDiarizationCallsAttempted": 10,
     "paidDiarizationCallsCompleted": 10,
     "callsSkipped": 0,
     "retries": 0,
-    "corrections": 1,
-    "deterministicReplayPasses": 1,
+    "corrections": 2,
+    "deterministicReplayPasses": 2,
+    "correction2ReplayPasses": 1,
     "clipMinutes": 13.37,
     "durationOnlyPlanningExposureUsd": 0.0802,
     "usageDerivedEstimatedCostUsd": 0.2933175,

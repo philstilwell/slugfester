@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0-assessment-production-post-canary-batch-02-audio-validation-correction-2-execution-activation",
   "protocolId": "assessment-production-post-canary-batch-02-decomposed-consensus",
-  "status": "frozen-debate-83-correction-2-execution-harness-prepared-not-authorized",
+  "status": "frozen-debate-83-correction-2-deterministic-replay-authorized",
   "preparedAt": "2026-08-17T20:54:13Z",
-  "authorizedAt": null,
-  "checkpointCommit": "cfe81b68109acf60966f2653e3e9db9c1fcbd267",
+  "authorizedAt": "2026-08-17T21:16:39Z",
+  "checkpointCommit": "b2b9cb7d3988adae4982dd08e217231fddfb27a9",
   "productionCanary": false,
   "batchNumber": 2,
   "correctionNumber": 2,
@@ -303,7 +303,7 @@
     "exactCorrection2DeltaLocked": true,
     "preExecutionAuditAndAnalysisAuthenticated": true,
     "correction2ExecutionRecordAbsent": true,
-    "executionAuthorized": false,
+    "executionAuthorized": true,
     "readyForSeparateUserExecutionApproval": true
   },
   "executionBoundary": {
@@ -332,9 +332,9 @@
     "directIncrementalCostUsd": 0
   },
   "authorization": {
-    "correctionExecution": false,
-    "cohortValidationResumption": false,
-    "deterministicAnalysis": false,
+    "correctionExecution": true,
+    "cohortValidationResumption": true,
+    "deterministicAnalysis": true,
     "audioAccess": false,
     "transcriptionOrModelExecution": false,
     "paidServiceUse": false,
@@ -376,6 +376,29 @@
   "executionAuthorizationTemplate": {
     "instruction": "I approve activation and execution of exactly one frozen Batch 2 Debate 83 correction-2 deterministic verification-reference overlay pass and one complete ten-transcript cohort replay, with a direct incremental cost cap of $0. Apply the frozen 18-token in-memory replacement only to Debate 83 pro-modality-02, preserve the exact Debate 99 correction-1 overlay, use one attempt, no retries, no reruns, no automatic repairs, and no recursive correction, and keep all transcripts, the original request, inventory, audio work items, validator, and thresholds byte-identical. Stop after deterministic validation, analysis, committing, and pushing. Do not access audio, execute transcription or other models, use paid services, adjudicate, derive scores, reconstruct publication, mutate production, or select the next batch."
   },
-  "userExecutionAuthorization": null,
-  "nextAuthorizedAction": "user-approval-required-before-activation-and-execution-of-exactly-one-batch-02-debate-83-correction-2-reference-overlay-pass-and-one-ten-transcript-cohort-replay"
+  "userExecutionAuthorization": {
+    "instruction": "I approve activation and execution of exactly one frozen Batch 2 Debate 83 correction-2 deterministic verification-reference overlay pass and one complete ten-transcript cohort replay, with a direct incremental cost cap of $0. Apply the frozen 18-token in-memory replacement only to Debate 83 pro-modality-02, preserve the exact Debate 99 correction-1 overlay, use one attempt, no retries, no reruns, no automatic repairs, and no recursive correction, and keep all transcripts, the original request, inventory, audio work items, validator, and thresholds byte-identical. Stop after deterministic validation, analysis, committing, and pushing. Do not access audio, execute transcription or other models, use paid services, adjudicate, derive scores, reconstruct publication, mutate production, or select the next batch.",
+    "correctionPasses": 1,
+    "cohortReplayPasses": 1,
+    "transcripts": 10,
+    "correction1OverlayApplications": 1,
+    "correction2OverlayApplications": 1,
+    "persistentSourceWritesMaximum": 0,
+    "persistentTranscriptWritesMaximum": 0,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "recursiveCorrectionsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0,
+    "audioAccessAuthorized": false,
+    "transcriptionOrOtherModelExecutionAuthorized": false,
+    "paidServiceUseAuthorized": false,
+    "adjudicationAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "publicationReconstructionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "nextAuthorizedAction": "execute-exactly-one-batch-02-debate-83-correction-2-reference-overlay-pass-and-one-ten-transcript-cohort-replay"
 }
