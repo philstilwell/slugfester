@@ -1,0 +1,865 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-audio-verification-execution-preparation-manifest",
+  "protocolId": "assessment-production-post-canary-batch-02-decomposed-consensus",
+  "status": "prepared-ten-post-canary-batch-02-paid-known-speaker-diarizations-pending-separate-explicit-user-approval",
+  "preparedAt": "2026-08-17T12:04:08.588Z",
+  "approvedAt": null,
+  "checkpointCommit": "7e2880f663cb7a920a65b9f50a99749462288c9d",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "AIOnly": true,
+  "userAuthorization": {
+    "instruction": "I approve preparation, validation, freezing, committing, and pushing of the Batch 2 audio-verification manifest and cost estimate for exactly the ten frozen clips only, with a direct incremental cost cap of $0. Do not execute audio verification or models, play or semantically evaluate audio, use paid services or transcription, adjudicate, derive scores, reconstruct publication, mutate production, or select the next batch.",
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "verificationCallsAuthorizedForPreparation": 10,
+    "speakerReferencesAuthorizedForPreparation": 8,
+    "audioVerificationExecutionAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "paidServicesAuthorized": false,
+    "transcriptionAuthorized": false,
+    "adjudicationAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "publicationReconstructionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "scope": {
+    "debates": [
+      "83",
+      "99",
+      "93",
+      "101"
+    ],
+    "frozenTargetClips": 10,
+    "verificationCalls": 10,
+    "additionalVerificationTargets": 0,
+    "sameDebateSpeakerSupportReferences": 8,
+    "scoreFieldsAvailable": false,
+    "legacyAssessmentFieldsAvailable": false,
+    "exactFrozenClipPopulationPreserved": true,
+    "sourceCompatibility": {
+      "status": "exact-source-zero-lexical-token-row-preserved-with-zero-count",
+      "reason": "One nonempty canonical caption row contains only a redaction marker and therefore has zero repository lexical tokens.",
+      "policy": "Preserve the exact canonical row and text, record lexicalTokenCount as 0, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+      "sourceRowsInjected": 0,
+      "sourceRowsOmitted": 0,
+      "sourceRowsRewritten": 0,
+      "minimumCandidateLexicalTokensChanged": false,
+      "occurrences": [
+        {
+          "debateNumber": "99",
+          "eventIndex": 3272,
+          "startMs": 6837429,
+          "durationMs": 2851,
+          "textSha256": "49168d2b71b06d64d686d39414b8b2135e6d12e0c7ec2bc2b78e03eae6b87691"
+        }
+      ]
+    }
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "83",
+      "debateId": "loke-oppy-kalam-causal-principle-2020",
+      "moveId": "pro-modality-02",
+      "expectedSpeaker": "Andrew Loke",
+      "proposition": "The relevant necessity is not existence in every logically possible world, but the inability of a beginningless, unsustained first cause to fail to exist in its initial state.",
+      "verificationExcerpt": "contingent in that sense it's nothing that says that it must exist that in every other possible world every other possible world starts out you have to make that inference from necessity right that's the problem that you need to work well i'm not claiming the second thing right i'm not claiming that god exists in all logical possible i'm not i'm not getting that what i what i'm claiming is that's the initial state",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/clips/pro-modality-02.mp3",
+      "clipSha256": "8f45323220e49ea7e410a2a78dc9a622f9f88fbbbc91fb97dc280379f3c4817c",
+      "durationSeconds": 104.121,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/transcripts/pro-modality-02.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Andrew Loke",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/references/andrew-loke.mp3",
+          "sha256": "aeb2cb5a79eca99d8bbe10abedc87155ed15fed04c0aff5b8e600a4c9d2cca8e",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Graham Oppy",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/references/graham-oppy.mp3",
+          "sha256": "efc4bd41bfb7982e4388b9b91339a55aa24dab1990878a61fc7de6c06288a5dd",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "83",
+      "debateId": "loke-oppy-kalam-causal-principle-2020",
+      "moveId": "con-initial-instant-event",
+      "expectedSpeaker": "Graham Oppy",
+      "proposition": "An instantaneous event occurring wholly at the universe's initial time need not have a distinct beginning, undermining the premise that every event begins.",
+      "verificationExcerpt": "about the the initial state and think about the um the the um i don't know like there's the universe and let's think about the universe as expanding right does the at t equals zero does the event of the universe is expanding that's happening at t equals zero have a beginning um is an instant right if it has a beginning then at t equals zero we've got to somehow either divide it",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/clips/con-initial-instant-event.mp3",
+      "clipSha256": "5e9c298b27a5bc229b1db1d5755b9b67ae2c6bed6a7fc0ecf2c856c9a367975c",
+      "durationSeconds": 79.08,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/transcripts/con-initial-instant-event.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Andrew Loke",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/references/andrew-loke.mp3",
+          "sha256": "aeb2cb5a79eca99d8bbe10abedc87155ed15fed04c0aff5b8e600a4c9d2cca8e",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Graham Oppy",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/references/graham-oppy.mp3",
+          "sha256": "efc4bd41bfb7982e4388b9b91339a55aa24dab1990878a61fc7de6c06288a5dd",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "con-natural-emergent-spacetime",
+      "expectedSpeaker": "Tom Jump",
+      "proposition": "Emergent spacetime and quantum phenomena do not support a cosmic mind because natural emergence remains viable and consciousness-based quantum interpretations are scientifically marginal.",
+      "verificationExcerpt": "physicists I am an atheist so that the fact that space-time is emergent has nothing to do with the mind at all it said Justin can be a emergent from natural properties of the universe which is in fact the consensus in physics the consciousness perspectivism vast minority position okay to vote was your first argument your second Iron Age the consciousness from presented by von women and Wigner no no I would never think that when I use based",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/con-natural-emergent-spacetime.mp3",
+      "clipSha256": "ee701a01cdeda617ee70ca23db66689a8c36b15516d9c928001e69744b0d4273",
+      "durationSeconds": 79.01,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/con-natural-emergent-spacetime.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Michael Jones",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/michael-jones.mp3",
+          "sha256": "1a6d48085adc7ee152b6281f2c151c7180a06b1c5ca47e52d70481c31e8b4b86",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Tom Jump",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/tom-jump.mp3",
+          "sha256": "01c6f6eb5a640a0732e5285d2cef9faa78cfb50a2cdd86c6b82829dcb2320333",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "con-physical-basis-more-parsimonious",
+      "expectedSpeaker": "Tom Jump",
+      "proposition": "Digital-physics, observer-consciousness, and introspective considerations do not establish fundamental mind, while an undiscovered physical basis is more parsimonious than a new ontological category.",
+      "verificationExcerpt": "consciousness the Wigner example again mostly rejected by physicists wrong Wigner himself rejected it and then the information the introspective argument is your third argument argument from ignorance it was it's so it's a more parsimonious explanation to say that mind is explained by some physical force we haven't discovered yet then hypothesizing an entirely new category ontological",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/con-physical-basis-more-parsimonious.mp3",
+      "clipSha256": "fa240b8c43b3fe4a3b2a5175587a32e564d3fc1f7011792dc2868f070176af5a",
+      "durationSeconds": 42.71,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/con-physical-basis-more-parsimonious.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Michael Jones",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/michael-jones.mp3",
+          "sha256": "1a6d48085adc7ee152b6281f2c151c7180a06b1c5ca47e52d70481c31e8b4b86",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Tom Jump",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/tom-jump.mp3",
+          "sha256": "01c6f6eb5a640a0732e5285d2cef9faa78cfb50a2cdd86c6b82829dcb2320333",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "pro-deeper-laws-compatible-with-mind",
+      "expectedSpeaker": "Michael Jones",
+      "proposition": "Deriving spacetime from deeper laws remains compatible with a mind-first account when those foundational properties are themselves mindlike.",
+      "verificationExcerpt": "more underlying fundamental laws fine I think that's what I'm arguing to it seems like his argument to be just compatible with my point I would just point out that this for the same properties it would be a mine and therefore the university's most likely emerged from a mine so how do you get from more natural properties to its am I because how are you defining natural I mean as",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/pro-deeper-laws-compatible-with-mind.mp3",
+      "clipSha256": "30324c1b7f597b9a741971940e778910881467c03f474089625994135df0d52c",
+      "durationSeconds": 96.86,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-deeper-laws-compatible-with-mind.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Michael Jones",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/michael-jones.mp3",
+          "sha256": "1a6d48085adc7ee152b6281f2c151c7180a06b1c5ca47e52d70481c31e8b4b86",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Tom Jump",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/tom-jump.mp3",
+          "sha256": "01c6f6eb5a640a0732e5285d2cef9faa78cfb50a2cdd86c6b82829dcb2320333",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "pro-fundamental-consciousness-ends-regress",
+      "expectedSpeaker": "Michael Jones",
+      "proposition": "A conscious cause composed of reducible natural parts would continue an explanatory regress, whereas idealism treats consciousness as fundamental.",
+      "verificationExcerpt": "natural we can do this in my video in the digital physics argument it would have to probably come from reducible parts and build up and so you just start creating a chain events where that thing we have to be in a universe and then they have to come from something else infinite regress infinite regress yeah so eventually I would say as an idealist it consciousness is fundamental debate so you get back to a conscious",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/pro-fundamental-consciousness-ends-regress.mp3",
+      "clipSha256": "64878538dafd8c3d5bd2a404e5006c61c3a78c65704bf184c20aedb895a8aa9f",
+      "durationSeconds": 58.250938,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-fundamental-consciousness-ends-regress.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Michael Jones",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/michael-jones.mp3",
+          "sha256": "1a6d48085adc7ee152b6281f2c151c7180a06b1c5ca47e52d70481c31e8b4b86",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Tom Jump",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/tom-jump.mp3",
+          "sha256": "01c6f6eb5a640a0732e5285d2cef9faa78cfb50a2cdd86c6b82829dcb2320333",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "pro-neural-correlation-interface-model",
+      "expectedSpeaker": "Michael Jones",
+      "proposition": "Neural activity correlates with consciousness without demonstrating production of subjective experience, allowing an idealist model of the brain as an interface.",
+      "verificationExcerpt": "and that that's that's the leap there that's what that's the hard chrome of consciousness that we're trying to dissolve and so idealist like myself would say the brain the human body is is it's a second person it's a third person experience I'm a first person conscious experience of course we're gonna see correlations because if it is a conscious person they're going to have to",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/pro-neural-correlation-interface-model.mp3",
+      "clipSha256": "7480842bdfbd2f4d9095376b4238c1f5aee7e12dadb69dded4e5db0ccff1b8fc",
+      "durationSeconds": 133.099,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Michael Jones",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/michael-jones.mp3",
+          "sha256": "1a6d48085adc7ee152b6281f2c151c7180a06b1c5ca47e52d70481c31e8b4b86",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Tom Jump",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/tom-jump.mp3",
+          "sha256": "01c6f6eb5a640a0732e5285d2cef9faa78cfb50a2cdd86c6b82829dcb2320333",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "93",
+      "debateId": "hunter-dillahunty-christian-god-exist-2019",
+      "moveId": "pro-foreknowledge-not-causation",
+      "expectedSpeaker": "Braxton Hunter",
+      "proposition": "Divine foreknowledge does not eliminate libertarian freedom because knowing a person's future choice is not the same as causally determining that choice.",
+      "verificationExcerpt": "that are who don't believe the same as me about libertarian free will who are Christians and I didn't think this would be a Calvinism debate tonight but maybe it is though so when we tell when we think about a God who is omniscient he knows all future things so are you asking me if he knows everything it's like it's already set so then how are we free is that your question yes",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/clips/pro-foreknowledge-not-causation.mp3",
+      "clipSha256": "09c6a975f7930a43bfa0d5552f07eb3dd6c20e5c9a002beb39f6ddaba8399686",
+      "durationSeconds": 56.68,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/transcripts/pro-foreknowledge-not-causation.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Braxton Hunter",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/references/braxton-hunter.mp3",
+          "sha256": "b7c7ea7bb12599e5451eed9bbecde73173cafda7a647be178c5ed142dc8f1881",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/references/matt-dillahunty.mp3",
+          "sha256": "af1cb6da439b6ebe35fb2d388a0fd9955571c0ae47df6858435ff00154c04af1",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "93",
+      "debateId": "hunter-dillahunty-christian-god-exist-2019",
+      "moveId": "pro-christian-falsifiability",
+      "expectedSpeaker": "Braxton Hunter",
+      "proposition": "Christian theism is falsifiable through an internal contradiction or strong contrary historical evidence, although an apparent supernatural event associated with a rival religion would not by itself refute it.",
+      "verificationExcerpt": "worldview is not falsifiable he brought up false pliability and I meant to get to that you're not gonna like what I say about falsifiability and by the way for those of you that don't know if falsifiability is the if you if you have a good hypothesis you should be able to provide something that would show that it's false one thing that would show that that Christian theism was",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/clips/pro-christian-falsifiability.mp3",
+      "clipSha256": "f18f93a9f905ddcb7424e78082bbfda04166f0d90e600be210c63f6d324ebbb0",
+      "durationSeconds": 100.631,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/transcripts/pro-christian-falsifiability.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Braxton Hunter",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/references/braxton-hunter.mp3",
+          "sha256": "b7c7ea7bb12599e5451eed9bbecde73173cafda7a647be178c5ed142dc8f1881",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/references/matt-dillahunty.mp3",
+          "sha256": "af1cb6da439b6ebe35fb2d388a0fd9955571c0ae47df6858435ff00154c04af1",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "101",
+      "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+      "moveId": "pro-child-sacrifice-punishment-incoherence",
+      "expectedSpeaker": "Stephen Woodford",
+      "proposition": "Condemning child sacrifice cannot justify commanding the killing of that population's children or the taking of its young girls.",
+      "verificationExcerpt": "child sacrifice. So, God sits there and goes, \"I got a really good idea. They are murdering their children. That's bad. So, I'm going to command my people to go into their village and murder their children.\" >> Yeah, but that's not what happened. Okay, so Yes, it is. You could What he says is you go in there to this wicked place. >> Yes. You don't just kill the adults that have",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/clips/pro-child-sacrifice-punishment-incoherence.mp3",
+      "clipSha256": "01d1d440bfd95eacd07a30a10e645bca6767028e93678ed00db2b5e00fa1a4ca",
+      "durationSeconds": 51.76,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/transcripts/pro-child-sacrifice-punishment-incoherence.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Stephen Woodford",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/references/stephen-woodford.mp3",
+          "sha256": "a8125ae42d60ed96222d71058cd6a329df14d21d148222259c4ae200da3f978e",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Glen Scrivener",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/references/glen-scrivener.mp3",
+          "sha256": "9c47a13d87a655abd6bafd53f7fda30ed328bbf6f5b300ed51c3db4604feae18",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "semanticAudioEvaluationPerformed": false,
+    "audioPlaybackPerformed": false,
+    "references": [
+      {
+        "debateNumber": "83",
+        "speaker": "Andrew Loke",
+        "selectedMoveId": "pro-causal-principle-01",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1393,
+          "endEvent": 1614
+        },
+        "selectedMoveDurationSeconds": 388.879,
+        "startSeconds": 2904.919,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/references/andrew-loke.mp3",
+        "sha256": "aeb2cb5a79eca99d8bbe10abedc87155ed15fed04c0aff5b8e600a4c9d2cca8e"
+      },
+      {
+        "debateNumber": "83",
+        "speaker": "Graham Oppy",
+        "selectedMoveId": "con-necessary-initial-natural-state",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1291,
+          "endEvent": 1392
+        },
+        "selectedMoveDurationSeconds": 240.799,
+        "startSeconds": 2589.2,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/references/graham-oppy.mp3",
+        "sha256": "efc4bd41bfb7982e4388b9b91339a55aa24dab1990878a61fc7de6c06288a5dd"
+      },
+      {
+        "debateNumber": "99",
+        "speaker": "Michael Jones",
+        "selectedMoveId": "pro-emergent-mindlike-structure",
+        "selectedMoveSourceSpan": {
+          "startEvent": 227,
+          "endEvent": 335
+        },
+        "selectedMoveDurationSeconds": 225.6,
+        "startSeconds": 894.47,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/michael-jones.mp3",
+        "sha256": "1a6d48085adc7ee152b6281f2c151c7180a06b1c5ca47e52d70481c31e8b4b86"
+      },
+      {
+        "debateNumber": "99",
+        "speaker": "Tom Jump",
+        "selectedMoveId": "con-limits-metaphysical-stopping-points",
+        "selectedMoveSourceSpan": {
+          "startEvent": 577,
+          "endEvent": 690
+        },
+        "selectedMoveDurationSeconds": 201.39,
+        "startSeconds": 1580.945,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/tom-jump.mp3",
+        "sha256": "01c6f6eb5a640a0732e5285d2cef9faa78cfb50a2cdd86c6b82829dcb2320333"
+      },
+      {
+        "debateNumber": "93",
+        "speaker": "Braxton Hunter",
+        "selectedMoveId": "pro-freedom-theistic-explanation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 184,
+          "endEvent": 298
+        },
+        "selectedMoveDurationSeconds": 250.269,
+        "startSeconds": 557.444,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/references/braxton-hunter.mp3",
+        "sha256": "b7c7ea7bb12599e5451eed9bbecde73173cafda7a647be178c5ed142dc8f1881"
+      },
+      {
+        "debateNumber": "93",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "con-inconsistent-revelation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1050,
+          "endEvent": 1187
+        },
+        "selectedMoveDurationSeconds": 297.19,
+        "startSeconds": 2382.485,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/references/matt-dillahunty.mp3",
+        "sha256": "af1cb6da439b6ebe35fb2d388a0fd9955571c0ae47df6858435ff00154c04af1"
+      },
+      {
+        "debateNumber": "101",
+        "speaker": "Stephen Woodford",
+        "selectedMoveId": "pro-prior-human-decency",
+        "selectedMoveSourceSpan": {
+          "startEvent": 75,
+          "endEvent": 168
+        },
+        "selectedMoveDurationSeconds": 215.92,
+        "startSeconds": 274,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/references/stephen-woodford.mp3",
+        "sha256": "a8125ae42d60ed96222d71058cd6a329df14d21d148222259c4ae200da3f978e"
+      },
+      {
+        "debateNumber": "101",
+        "speaker": "Glen Scrivener",
+        "selectedMoveId": "con-human-poison-christian-antidote",
+        "selectedMoveSourceSpan": {
+          "startEvent": 415,
+          "endEvent": 511
+        },
+        "selectedMoveDurationSeconds": 229.52,
+        "startSeconds": 1046.84,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "channels": 1,
+        "sampleRateHz": 16000,
+        "measuredBitRateBps": 65226,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/references/glen-scrivener.mp3",
+        "sha256": "9c47a13d87a655abd6bafd53f7fda30ed328bbf6f5b300ed51c3db4604feae18"
+      }
+    ]
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "promotedPlanningPricePerMinuteUsd": 0.006,
+    "durationOnlyPlanningRateBasis": "promoted-production-canary",
+    "clipSeconds": 802.201938,
+    "clipMinutes": 13.37,
+    "durationOnlyPlanningEstimateUsd": 0.0802,
+    "primaryExpectedFutureExecutionCostUsd": 0.273,
+    "primaryEstimateBasis": "Batch 1 returned-token usage rates applied to Batch 2 exact clip seconds and ten-call count",
+    "proposedFutureMaximumCostUsd": 0.4,
+    "futureCostCapAuthorized": false,
+    "batch01ObservedBaseline": {
+      "calls": 3,
+      "clipSeconds": 351.281,
+      "clipMinutes": 5.8547,
+      "audioInputTokens": 6229,
+      "textInputTokens": 428,
+      "outputTokens": 10240,
+      "usageDerivedEstimatedCostUsd": 0.1190425,
+      "usageDerivedCostPerMinuteUsd": 0.020333,
+      "originalDurationOnlyEstimateUsd": 0.0351,
+      "originalApprovedMaximumCostUsd": 0.1,
+      "originalAmountAboveApprovedCapUsd": 0.0190425,
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/cost-control-analysis.json"
+    },
+    "projectedUsage": {
+      "audioInputTokens": 14225,
+      "textInputTokens": 1427,
+      "totalInputTokens": 15652,
+      "outputTokens": 23385
+    },
+    "officialPricingCheckedAt": "2026-08-17",
+    "officialModelPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialSpeechToTextGuideUrl": "https://developers.openai.com/api/docs/guides/speech-to-text",
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "actualTokenBilledCostMayVary": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true,
+    "explicitPaidExecutionApprovalRequired": true,
+    "explicitPaidExecutionApprovalRecorded": false
+  },
+  "executionPolicy": {
+    "callsMaximum": 10,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "chunkingStrategy": "auto",
+    "responseFormat": "diarized_json",
+    "language": "en",
+    "knownSpeakerReferencesPerCall": 2,
+    "transcriptsSavedLocally": true
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "modelSlug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "isolatedPassesPreserved": true,
+    "unchanged": true
+  },
+  "preparationExecutionBoundary": {
+    "sourceAudioAccessLimitedToProgrammaticReferenceEncodingProbeAndHashing": true,
+    "targetClipAccessLimitedToProgrammaticSizeAndHashValidation": true,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0,
+    "ffmpegReferenceExtractions": 8,
+    "ffprobeReferenceChecks": 8,
+    "workItemSourceHashesReplayed": 82,
+    "directIncrementalCostUsd": 0
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "authorization": {
+    "paidTranscriptionActivation": false,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "deterministicAudioAnalysis": false,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "clipHashMismatchBlocks": true,
+    "referenceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "missingApiKeyBlocks": true,
+    "missingSeparatePaidExecutionApprovalBlocks": true,
+    "futureCostAboveApprovedCapBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "usageDerivedCapExceedanceStopsRemaining": true,
+    "deterministicUnresolvedBlocksAdjudication": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualAttributionOverrideAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "publicationReconstructionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/analysis.json",
+    "costControlAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json",
+    "transcripts": [
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/transcripts/pro-modality-02.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/transcripts/con-initial-instant-event.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/con-natural-emergent-spacetime.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/con-physical-basis-more-parsimonious.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-deeper-laws-compatible-with-mind.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-fundamental-consciousness-ends-regress.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/transcripts/pro-foreknowledge-not-causation.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/transcripts/pro-christian-falsifiability.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/transcripts/pro-child-sacrifice-punishment-incoherence.transcript.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-manifest.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/transcripts/pro-modality-02.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/transcripts/con-initial-instant-event.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/con-natural-emergent-spacetime.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/con-physical-basis-more-parsimonious.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-deeper-laws-compatible-with-mind.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-fundamental-consciousness-ends-regress.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/transcripts/pro-foreknowledge-not-causation.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/transcripts/pro-christian-falsifiability.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/transcripts/pro-child-sacrifice-punishment-incoherence.transcript.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/disagreement-extraction/audio-source-preparation.json": "adda98ca215da4f94c3825d15cb1e13d2a803c3898f8cbf29017495a194b0d62",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/disagreement-extraction/audio-work-item-preparation.json": "f04715df821566bf00ca78f944d12c4b64426eefbbb37995fdc10a91729bbeef",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/disagreement-extraction/audio-work-items.json": "f72b3d23f889b8dee65b51d6b96e504efeb72e3519ac22dc78679aa5eee6d4ff",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/independent-judgments/execution-preparation-manifest.json": "2415aa2d0ff52d23d9f7a42a6e38ee756144b719dd30e92bfef847e53246aef4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/cost-control-analysis.json": "137fd417a3e73368bec4773d7ab8d0c8f0943f53cf19d3de642107ba8b411858",
+    "docs/assessment-production/post-canary-continuation-v1/batch-01/audio-verification/model-execution.json": "454dbad644d493020fa0a158c3a63c75eda492361a16a5aab769c5da630f1996",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production-checkpoint-v2.2-audio-verification-workflow.md": "7fbd714108cb3ba63f629742fa3de6b65c57f247a1b082a7fa5e566135b5906e",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-checkpoint-v2.2-audio-verification.mjs": "9eb542d845d9f404fb8eb3a48a8dea0194e999408e0cd758a6c94fca9c6dfe6b",
+    "scripts/activate-assessment-production-checkpoint-v2.2-audio-verification.mjs": "26bbd5e5152fcc9252ec6258858c4a757e515793a7482966f1cd5109e26ecd50",
+    "scripts/run-assessment-production-checkpoint-v2.2-audio-verification.mjs": "e7efef66370a58810f38c0a2459a4fa848e57fecd4cc077e4a6601537e398e20",
+    "scripts/analyze-assessment-production-checkpoint-v2.2-audio-verification.mjs": "9d44e0a4f74f9c3cd9cf2f3f644a8fe4cb0afcc1d925f75efac9bcf220ed6b5e",
+    "scripts/test-assessment-production-checkpoint-v2.2-audio-verification.mjs": "021ca6949f6ad820289c3eb4720872a1fcb6d363e9a151a91e7cf650f25cb642",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/independent-judgments/source-packets/debate-83.json": "9cedb0a7f91f8717817a9134cc6d3a9e04f0e1b32b964106579c0f5197b52963",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/locked-inventories/debate-83.json": "8571cb81426f2c2004e3439ea546132947fdd5b87aff34866febf06b57c0cf95",
+    ".assessment-cache/captions/a8NrTv-Durc/events.json": "e4465e29d94ec9fd47308ca855c242217054f9a5cdead2baf7f0f82b6c666b3a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/independent-judgments/source-packets/debate-99.json": "14ca2d2113aad4f69bd0c61be1c4abb54962c650bb243781360751b388842785",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/locked-inventories/debate-99.json": "8651ca2334c0e9356c5e4ce5e6a3c17af05a0d666420a2a109e80b41b6433dec",
+    ".assessment-cache/captions/UWCvKiWjV0g/events.json": "f27acc146aab36fe21dfd7ae50d1624240a2a12c28fbee9a349b0b36b22f4879",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/independent-judgments/source-packets/debate-93.json": "3071cdd07ceedd47bcf187e9826ac38305a8c9a2da08501b79f14969bc279b4d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/locked-inventories/debate-93.json": "6ee17ac0a357fd38173f98ef0afb468a857de79305885a57a3b579b02b4c2cfa",
+    ".assessment-cache/captions/Y9Uktg9nLx8/events.json": "66a0fc38a8651c84aacb596497a25ca6fe0a0f16ca648b355ecff90b14e04b3c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/independent-judgments/source-packets/debate-101.json": "a84024284788835cc55189b4d5dc67440feff4b54cc917a31227eae598cfe811",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/locked-inventories/debate-101.json": "0a2657ce8723ea7e56e84f14a05c349f00e932739a3b13e79d0d54e743a297bd",
+    ".assessment-cache/captions/8J-WOwrq6bE/events.json": "968c71aee765e95ddb5e1b4bc3649790cb3c7b846d0473c504ec049490fb954d",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/audio/source.mp3": "9680090a7b28798221f34fd9fbf4629090635aa9455dd9af9ba047736dfdc3c8",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/audio/source.mp3": "3efe4bf1ee498a9c9af39a87dd364442a69ae060e3940d8819cb395424d04d24",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/audio/source.mp3": "fc484931bef53dc7a64046873e908604fd6925db15e1007847eadd363633d0c2",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/audio/source.mp3": "54f5ac5694273690e90ef3b4be0f9b8ecc1f6b34fcf74e3509a7d7860b7c663a",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/clips/pro-modality-02.mp3": "8f45323220e49ea7e410a2a78dc9a622f9f88fbbbc91fb97dc280379f3c4817c",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/clips/con-initial-instant-event.mp3": "5e9c298b27a5bc229b1db1d5755b9b67ae2c6bed6a7fc0ecf2c856c9a367975c",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/con-natural-emergent-spacetime.mp3": "ee701a01cdeda617ee70ca23db66689a8c36b15516d9c928001e69744b0d4273",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/con-physical-basis-more-parsimonious.mp3": "fa240b8c43b3fe4a3b2a5175587a32e564d3fc1f7011792dc2868f070176af5a",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/pro-deeper-laws-compatible-with-mind.mp3": "30324c1b7f597b9a741971940e778910881467c03f474089625994135df0d52c",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/pro-fundamental-consciousness-ends-regress.mp3": "64878538dafd8c3d5bd2a404e5006c61c3a78c65704bf184c20aedb895a8aa9f",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/clips/pro-neural-correlation-interface-model.mp3": "7480842bdfbd2f4d9095376b4238c1f5aee7e12dadb69dded4e5db0ccff1b8fc",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/clips/pro-foreknowledge-not-causation.mp3": "09c6a975f7930a43bfa0d5552f07eb3dd6c20e5c9a002beb39f6ddaba8399686",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/clips/pro-christian-falsifiability.mp3": "f18f93a9f905ddcb7424e78082bbfda04166f0d90e600be210c63f6d324ebbb0",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/clips/pro-child-sacrifice-punishment-incoherence.mp3": "01d1d440bfd95eacd07a30a10e645bca6767028e93678ed00db2b5e00fa1a4ca",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/references/andrew-loke.mp3": "aeb2cb5a79eca99d8bbe10abedc87155ed15fed04c0aff5b8e600a4c9d2cca8e",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/references/graham-oppy.mp3": "efc4bd41bfb7982e4388b9b91339a55aa24dab1990878a61fc7de6c06288a5dd",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/michael-jones.mp3": "1a6d48085adc7ee152b6281f2c151c7180a06b1c5ca47e52d70481c31e8b4b86",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/references/tom-jump.mp3": "01c6f6eb5a640a0732e5285d2cef9faa78cfb50a2cdd86c6b82829dcb2320333",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/references/braxton-hunter.mp3": "b7c7ea7bb12599e5451eed9bbecde73173cafda7a647be178c5ed142dc8f1881",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/references/matt-dillahunty.mp3": "af1cb6da439b6ebe35fb2d388a0fd9955571c0ae47df6858435ff00154c04af1",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/references/stephen-woodford.mp3": "a8125ae42d60ed96222d71058cd6a329df14d21d148222259c4ae200da3f978e",
+    "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/references/glen-scrivener.mp3": "9c47a13d87a655abd6bafd53f7fda30ed328bbf6f5b300ed51c3db4604feae18"
+  },
+  "totals": {
+    "debates": 4,
+    "targetClips": 10,
+    "supportReferences": 8,
+    "clipMinutes": 13.37,
+    "audioVerificationCalls": 0,
+    "transcriptionCalls": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "adjudicationContexts": 0,
+    "scoresDerived": 0,
+    "publicationReconstructions": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "user-approval-required-before-batch-02-paid-audio-verification-activation-or-execution"
+}
