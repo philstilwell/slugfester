@@ -1,0 +1,314 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-audio-validation-correction-1-preparation",
+  "protocolId": "assessment-production-post-canary-batch-02-decomposed-consensus",
+  "status": "frozen-debate-99-empty-segment-validation-overlay-plan-prepared",
+  "preparedAt": "2026-08-17T18:38:19Z",
+  "checkpointCommit": "30fab8f796afc72c6b954fd34c72396c757425ce",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "I approve.",
+    "interpretedScope": "Prepare, validate, freeze, commit, and push a zero-cost deterministic Debate 99 correction-and-validation-resumption plan only.",
+    "maximumDirectIncrementalCostUsd": 0,
+    "correctionPlanPreparationAuthorized": true,
+    "correctionExecutionAuthorized": false,
+    "cohortValidationResumptionAuthorized": false,
+    "transcriptMutationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServiceUseAuthorized": false
+  },
+  "sourceLocks": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-manifest.json": "721dc697420d7aab79c5c1e715ebbf4ed67e27e608909e44be49e6526e68e34c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/model-execution.json": "cdb9921eae444eb525c73f81c633c5b1d1695ed9466c3c44da318f1988f490ec",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/validation-failure.json": "46091700f8fe40eb01070990b93acc37f60bbfa52cedfe4997ebc6ae9645121c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/failure-diagnosis.json": "f2f6eae4c43cf2bd15be097c5aa1d9f6e0a463dfbad3dbfe0b3ca929339927da",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/analyze-assessment-production-post-canary-batch-02-audio-verification.mjs": "e33d7c88e12b79a36168c84e863deb808fc39126885db22443cc25f3bdd3e4e8",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec"
+  },
+  "transcriptLocks": [
+    {
+      "callIndex": 0,
+      "debateNumber": "83",
+      "debateId": "loke-oppy-kalam-causal-principle-2020",
+      "moveId": "pro-modality-02",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/transcripts/pro-modality-02.transcript.json",
+      "sha256": "fe1a99c87b0d33bc7d51d6d2c12799f1cc1e28639fec9d77456ef2c003c30712"
+    },
+    {
+      "callIndex": 1,
+      "debateNumber": "83",
+      "debateId": "loke-oppy-kalam-causal-principle-2020",
+      "moveId": "con-initial-instant-event",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-83/transcripts/con-initial-instant-event.transcript.json",
+      "sha256": "f972e5ce45306a1658033a4fb23e43a5f48d5fa64a4d4c5daef3201be898a9b7"
+    },
+    {
+      "callIndex": 2,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "con-natural-emergent-spacetime",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/con-natural-emergent-spacetime.transcript.json",
+      "sha256": "9f2592cf448e0b516b608974cd57df60af486f4cc68eea4378a8f20c57308883"
+    },
+    {
+      "callIndex": 3,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "con-physical-basis-more-parsimonious",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/con-physical-basis-more-parsimonious.transcript.json",
+      "sha256": "5b72d8329944651588bf0906026f351014a7fcbd1b9a2602b297846491d1767d"
+    },
+    {
+      "callIndex": 4,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "pro-deeper-laws-compatible-with-mind",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-deeper-laws-compatible-with-mind.transcript.json",
+      "sha256": "310ede3113c6ae21026d95407785aac52e49dfe2fa1f063ed36e6c4196fbc0c7"
+    },
+    {
+      "callIndex": 5,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "pro-fundamental-consciousness-ends-regress",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-fundamental-consciousness-ends-regress.transcript.json",
+      "sha256": "375534fd3d631af81eeeaa15778d0ce2103e521eec3b74700622c603274b305e"
+    },
+    {
+      "callIndex": 6,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "moveId": "pro-neural-correlation-interface-model",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
+      "sha256": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1"
+    },
+    {
+      "callIndex": 7,
+      "debateNumber": "93",
+      "debateId": "hunter-dillahunty-christian-god-exist-2019",
+      "moveId": "pro-foreknowledge-not-causation",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/transcripts/pro-foreknowledge-not-causation.transcript.json",
+      "sha256": "0166238fc26b0be6be1cb205f36bca231425d77ea76cf82b2e4dfd6be5416eab"
+    },
+    {
+      "callIndex": 8,
+      "debateNumber": "93",
+      "debateId": "hunter-dillahunty-christian-god-exist-2019",
+      "moveId": "pro-christian-falsifiability",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-93/transcripts/pro-christian-falsifiability.transcript.json",
+      "sha256": "ba5ef192c637834ca40fc60813f330278fc50b2ae869e2f7af9dee605bd51657"
+    },
+    {
+      "callIndex": 9,
+      "debateNumber": "101",
+      "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+      "moveId": "pro-child-sacrifice-punishment-incoherence",
+      "path": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-101/transcripts/pro-child-sacrifice-punishment-incoherence.transcript.json",
+      "sha256": "75afb1972ed97108f018abaf4eed16a00b7c3bfa64f4e013bb104113965f1f7d"
+    }
+  ],
+  "target": {
+    "callIndex": 6,
+    "callOrdinal": 7,
+    "debateNumber": "99",
+    "debateId": "jones-jump-digital-physics-god-2019",
+    "moveId": "pro-neural-correlation-interface-model",
+    "expectedSpeaker": "Michael Jones",
+    "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
+    "transcriptSha256": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1",
+    "invalidField": "segments[36].text",
+    "preservedErrorMessage": "pro-neural-correlation-interface-model: segment 36 text invalid"
+  },
+  "proposedCorrection": {
+    "operation": "omit-one-exact-empty-text-segment-from-transient-validation-overlay",
+    "persistentTranscriptWrite": false,
+    "sourceTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-02-audio-verification/debate-99/transcripts/pro-neural-correlation-interface-model.transcript.json",
+    "sourceTranscriptSha256": "d74a06138cb65fca68b862f52447a2a09e6876722dca68a6cf44c02f22c312f1",
+    "target": {
+      "segmentIndex": 36,
+      "segmentId": "seg_36",
+      "segmentType": "transcript.text.segment",
+      "speaker": "A",
+      "start": 111.982,
+      "end": 112.132,
+      "textType": "string",
+      "textLength": 0
+    },
+    "originalSegmentCount": 44,
+    "transientOverlaySegmentCount": 43,
+    "remainingSegmentIdsReindexed": false,
+    "topLevelFieldsChanged": [],
+    "speakerLabelsChanged": [],
+    "textFieldsAuthoredOrReplaced": [],
+    "timingFieldsChanged": [],
+    "usageFieldsChanged": [],
+    "deltaSha256": "8910b495ed4fbb16d02e171d60402d453f8f39e08a894809324fc6ed6e6a37ac",
+    "rationale": "The empty segment contains no transcript wording that could be preserved or replaced. Omitting only that exact object from a transient validation copy permits the unchanged segment validator to evaluate the remaining provider response without inventing text, changing a speaker label, changing timing, or overwriting the preserved transcript.",
+    "proposedOutputTranscriptPath": null,
+    "proposedOutputTranscriptSha256": null,
+    "correctionPerformedThisStage": false
+  },
+  "futureExecutionPolicy": {
+    "activationManifestRequired": true,
+    "deterministicPassesMaximum": 1,
+    "rerunsMaximum": 0,
+    "retriesMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "exactTenTranscriptCohortReplayRequired": true,
+    "originalCallOrderRequired": [
+      {
+        "debateNumber": "83",
+        "moveId": "pro-modality-02"
+      },
+      {
+        "debateNumber": "83",
+        "moveId": "con-initial-instant-event"
+      },
+      {
+        "debateNumber": "99",
+        "moveId": "con-natural-emergent-spacetime"
+      },
+      {
+        "debateNumber": "99",
+        "moveId": "con-physical-basis-more-parsimonious"
+      },
+      {
+        "debateNumber": "99",
+        "moveId": "pro-deeper-laws-compatible-with-mind"
+      },
+      {
+        "debateNumber": "99",
+        "moveId": "pro-fundamental-consciousness-ends-regress"
+      },
+      {
+        "debateNumber": "99",
+        "moveId": "pro-neural-correlation-interface-model"
+      },
+      {
+        "debateNumber": "93",
+        "moveId": "pro-foreknowledge-not-causation"
+      },
+      {
+        "debateNumber": "93",
+        "moveId": "pro-christian-falsifiability"
+      },
+      {
+        "debateNumber": "101",
+        "moveId": "pro-child-sacrifice-punishment-incoherence"
+      }
+    ],
+    "transientOverlayAllowedOnlyForMoveId": "pro-neural-correlation-interface-model",
+    "originalTranscriptMustRemainByteIdentical": true,
+    "otherNineTranscriptsMustRemainByteIdentical": true,
+    "exactValidatorPath": "scripts/lib/v416-audio-verification.mjs",
+    "exactValidatorSha256": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "exactThresholds": {
+      "minimumFullClipExcerptRecall": 0.8,
+      "minimumExpectedSpeakerExcerptRecall": 0.8,
+      "minimumExpectedSpeakerRecallMargin": 0.15,
+      "minimumExpectedSpeakerDurationSeconds": 5
+    },
+    "originalAnalyzerPreservedAsReference": {
+      "path": "scripts/analyze-assessment-production-post-canary-batch-02-audio-verification.mjs",
+      "sha256": "e33d7c88e12b79a36168c84e863deb808fc39126885db22443cc25f3bdd3e4e8"
+    },
+    "audioFileAccessAllowed": false,
+    "semanticAudioEvaluationAllowed": false,
+    "transcriptionOrOtherModelExecutionAllowed": false,
+    "paidServiceUseAllowed": false,
+    "adjudicationAllowed": false,
+    "scoreDerivationAllowed": false,
+    "publicationReconstructionAllowed": false,
+    "productionMutationAllowed": false,
+    "nextBatchSelectionAllowed": false
+  },
+  "acceptanceRequirements": {
+    "allSourceAndTranscriptHashesMatch": true,
+    "exactEmptySegmentMatches": true,
+    "originalTranscriptHashUnchangedBeforeAndAfter": true,
+    "exactlyOneTransientSegmentOmitted": true,
+    "noRemainingSegmentMutation": true,
+    "noTopLevelTranscriptMutation": true,
+    "unchangedValidatorHash": true,
+    "unchangedThresholds": true,
+    "exactTenCallReplayCompletes": true,
+    "allTenAttributionResultsVerified": true,
+    "noUnresolvedResult": true,
+    "noValidationException": true,
+    "noAudioAccess": true,
+    "noModelOrPaidServiceCall": true,
+    "directIncrementalCostUsd": 0
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "transcriptHashMismatchBlocks": true,
+    "targetShapeMismatchBlocks": true,
+    "emptySegmentCountOtherThanOneBlocks": true,
+    "persistentTranscriptWriteBlocks": true,
+    "overlayDeltaBeyondExactOmissionBlocks": true,
+    "validatorHashMismatchBlocks": true,
+    "thresholdMismatchBlocks": true,
+    "validationExceptionBlocks": true,
+    "unresolvedAttributionBlocks": true,
+    "audioAccessBlocks": true,
+    "modelOrPaidServiceCallBlocks": true,
+    "retryBlocks": true,
+    "rerunBlocks": true,
+    "downstreamWorkBlocksUntilReplayPasses": true
+  },
+  "judgmentModelBoundary": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "isolatedPassesPreserved": true,
+    "scoreBlindnessPreserved": true,
+    "integerRoundedTiesPermitted": true,
+    "modelContextsThisStage": 0,
+    "unchanged": true
+  },
+  "executionBoundary": {
+    "correctionPlansPrepared": 1,
+    "correctionPassesExecuted": 0,
+    "cohortValidationPassesExecuted": 0,
+    "transcriptWrites": 0,
+    "audioAccesses": 0,
+    "audioDownloads": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "reruns": 0,
+    "adjudications": 0,
+    "scoresDerived": 0,
+    "publicationReconstructions": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "preparationToolLocks": {
+    "scripts/prepare-assessment-production-post-canary-batch-02-audio-validation-correction-1.mjs": "2be8ae4a38cf905cf6211736ab2a04ad86383b6edc5b9d5d535d0a02cdf68996",
+    "scripts/test-assessment-production-post-canary-batch-02-audio-validation-correction-1-preparation.mjs": "55ff4cd4f23f45d267dbe8d35b4ca855a4b7116c0bb8da7c12c7518c18ed6d27"
+  },
+  "authorization": {
+    "correctionExecution": false,
+    "cohortValidationResumption": false,
+    "audioAccess": false,
+    "transcriptionOrModelExecution": false,
+    "paidServiceUse": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "user-approval-required-before-preparing-the-exact-correction-1-execution-harness-and-activation-manifest"
+}
