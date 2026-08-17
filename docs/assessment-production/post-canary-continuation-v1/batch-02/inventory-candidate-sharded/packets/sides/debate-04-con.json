@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-chronology-fallback-side-selector-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-candidate-sharded-inventory",
+  "sideSelectionProtocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+  "stage": "con-candidate-evidence-selection-with-chronology-fallback",
+  "debateNumber": "04",
+  "debateId": "lennox-atkins-science-explain-everything-2019",
+  "side": "con",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true
+  },
+  "isolation": {
+    "freshContextRequired": true,
+    "oneDebateOnly": true,
+    "oneSideOnly": true,
+    "scoreBlind": true,
+    "routesAndSectionsImmutable": true,
+    "otherSideCandidateEvidenceUnavailable": true,
+    "otherSideSelectorOutputUnavailable": true,
+    "plannerExecutionMetadataUnavailable": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "preferredMoveKindRequired": true,
+    "constructiveOrphanFallbackRequired": true,
+    "fallbackConditionRepositoryOwned": true,
+    "priorAndOtherJudgmentsUnavailable": true,
+    "legacyAssessmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  },
+  "immutablePlanCanonicalSha256": "051129588f06cdb597954b4201bb0faad2b5e5ee4c53b1342caf885ecf4ff96e",
+  "copiedInputs": [
+    {
+      "role": "inventory-source-packet",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/source-packets/debate-04.json",
+      "sha256": "6dff22ec2072bd508ad5c48de65b873513692f9a03f41f7c883442a4da543135",
+      "bytes": 3590
+    },
+    {
+      "role": "immutable-candidate-census-plan",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/plans/debate-04.json",
+      "sha256": "925fb56932ce236ef18c41ac19dd7a0c7923eeb04112ad4d6ee5e9f9a878202e",
+      "canonicalSha256": "051129588f06cdb597954b4201bb0faad2b5e5ee4c53b1342caf885ecf4ff96e",
+      "bytes": 7141
+    },
+    {
+      "role": "con-complete-candidate-evidence-transport",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/transports/sides/debate-04-con.json",
+      "sha256": "8b417a6a4bbae27f84912002b6b08eb57eed2fc1f60617316e733a182d8cb73e",
+      "bytes": 14184
+    },
+    {
+      "role": "candidate-sharded-inventory-guide",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+      "sha256": "4e6544489ae52aa0090f3f06d39f7bfddbf709efcd3d3754007c03df2d325311",
+      "bytes": 6057
+    },
+    {
+      "role": "inventory-manual",
+      "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+      "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+      "bytes": 3432
+    },
+    {
+      "role": "strict-output-schema",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/schemas/sides/debate-04-con.schema.json",
+      "sha256": "e3c66e42f4a3b9d44d06a474158660c2d28363f678fcdbfbcd68342197332eaf",
+      "bytes": 6342
+    }
+  ],
+  "copiedInputBytes": 40746,
+  "maximumCopiedInputBytes": 115000,
+  "writableDomains": [
+    "candidateSelections"
+  ],
+  "output": "docs/assessment-production/post-canary-continuation-v1/batch-02/inventory-candidate-sharded/side-selections/debate-04-con.json",
+  "attemptsMaximum": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "modelExecutionAuthorized": false
+}
