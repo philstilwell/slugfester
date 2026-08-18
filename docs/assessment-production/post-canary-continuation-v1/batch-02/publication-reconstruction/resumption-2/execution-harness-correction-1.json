@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-2-execution-harness-correction",
+  "status": "frozen-batch-02-publication-resumption-2-execution-harness-correction-1",
+  "frozenAt": "2026-08-18T17:56:01.000Z",
+  "checkpointCommit": "f213204d8331e9518bb542f51e77e4dcf379f8ce",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "I authorize creation and use of a Batch 2 standing-authorization record for the remaining publication workflow. Within a direct incremental cost cap of $0, you may diagnose the preserved Debate 103 failure; prepare, freeze, activate, and execute bounded score-locked repair and resumption contexts using 5.6 Sol with low reasoning through my ChatGPT subscription; merge accepted repairs; resume the nine unattempted frozen publication contexts; validate, compile, finalize, render-verify, commit, and push each checkpoint. Every model context must be hash-locked before execution, isolated, limited to one attempt, and use no retries, timeout extensions, or recursive repairs. Repairs may expose no more than two writable fields per packet and must preserve scores, sources, and accepted fields. Continue automatically while gates pass. Stop before any paid service, production mutation, next-batch selection, score or source change, failed repair, unexpected validation category, or action outside this authorization.",
+    "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-standing-authorization.json",
+    "standingAuthorizationSha256": "c6f02c8459751d38cd1f9b213eeccfd22e35b791f92c168999124145d43cf5b7",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "failure": {
+    "category": "pre-model-execution-harness-assertion-mismatch",
+    "message": "the Batch 2 publication resumption controls changed",
+    "modelContextsAttempted": 0,
+    "modelAttemptsConsumed": 0,
+    "outputsWritten": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "change": {
+    "category": "execution-policy-context-count-assertion",
+    "expression": "activation.executionPolicy?.contexts",
+    "originalValue": 9,
+    "correctedValue": 8,
+    "changedAssertions": 1,
+    "schedulerChanged": false,
+    "modelChanged": false,
+    "contextSetChanged": false,
+    "packetOrSchemaChanged": false,
+    "stopRuleChanged": false
+  },
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/execution-activation.json",
+    "sha256": "65288848fb6e1461caab9d85262357cd9c3d30e28cfe6cd9feeba02f8c8dc150"
+  },
+  "originalHarness": {
+    "path": "scripts/run-assessment-production-post-canary-batch-02-publication-resumption-2.mjs",
+    "sha256": "58c092fb3e752b59da16943323cf9a0ada63cf5283caad3b02197f077acf843f"
+  },
+  "correctedHarness": {
+    "path": "scripts/run-assessment-production-post-canary-batch-02-publication-resumption-2-correction-1.mjs",
+    "sha256": "931307e11760b435a359da0c3e8c74e52ec48969941b44cd57fa4f4b3bbde04d"
+  },
+  "launcher": {
+    "path": "scripts/execute-assessment-production-post-canary-batch-02-publication-resumption-2-harness-correction-1.mjs",
+    "sha256": "f66eacc4f89661b2f865b893e7f0b0eddd5c029d8ed14501781fbad6faa3b082"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/execution-preparation-manifest.json": "6fb052d5abab134f2607f833abab75f8b36e005f5fd579905a6d12b8635f5c4e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/execution-activation.json": "65288848fb6e1461caab9d85262357cd9c3d30e28cfe6cd9feeba02f8c8dc150",
+    "scripts/run-assessment-production-post-canary-batch-02-publication-resumption-2.mjs": "58c092fb3e752b59da16943323cf9a0ada63cf5283caad3b02197f077acf843f",
+    "scripts/run-assessment-production-post-canary-batch-02-publication-resumption-2-correction-1.mjs": "931307e11760b435a359da0c3e8c74e52ec48969941b44cd57fa4f4b3bbde04d",
+    "scripts/execute-assessment-production-post-canary-batch-02-publication-resumption-2-harness-correction-1.mjs": "f66eacc4f89661b2f865b893e7f0b0eddd5c029d8ed14501781fbad6faa3b082",
+    "scripts/prepare-assessment-production-post-canary-batch-02-publication-resumption-2-harness-correction-1.mjs": "58120eaf10a6db1d405d369ad1eb8b87b8f75b48e9faffda93496ff09d58cc41",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-standing-authorization.json": "c6f02c8459751d38cd1f9b213eeccfd22e35b791f92c168999124145d43cf5b7",
+    "scripts/lib/assessment-production-post-canary-batch-02-publication-resumption-2.mjs": "486847ab1cb8584a10cec64c23edcec23f936d9845475bc3574c23313a01c123",
+    "scripts/lib/assessment-production-post-canary-batch-02-standing-authorization.mjs": "8a5080d2e7311b572706363a0976ba770e00950aa44a000ce695b659a76c7826"
+  },
+  "modelContextsAttemptedBeforeCorrection": 0,
+  "attemptsPerContext": 1,
+  "retriesAuthorized": false,
+  "timeoutExtensionsAuthorized": false,
+  "recursiveRepairsAuthorized": false,
+  "paidServicesAuthorized": false,
+  "productionMutationAuthorized": false,
+  "nextAuthorizedAction": "execute-the-eight-frozen-resumption-2-contexts-once-through-the-hash-locked-corrected-harness"
+}
