@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-2-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-resumption-2-repair-1",
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "136",
+  "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/outputs/debate-136.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-136.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-miracle-content-method-challenge.critique",
+      "moveProse.pro-attestation-can-raise-miracle-probability.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-miracle-content-method-challenge.critique",
+      "moveId": "pro-miracle-content-method-challenge",
+      "originalCritique": "Strongest feature: The controlled hypothetical isolates miraculous content while holding lateness, oral transmission, and linguistic change constant, thereby forcing the skeptical historian to articulate whether rarity, rather than source defects alone, changes the evidentiary assessment. Principal limitation: As a diagnostic question, it supplies neither empirical base rates nor an actual comparison showing that the resurrection evidence matches an ordinary report in independence, quality, and transmission history. Live burden: The pro route must move from exposing a possible methodological asymmetry to demonstrating how real resurrection testimony overcomes concrete alternatives such as dependence, witness error, embellishment, or invention. Locked score: The very strong band reflects exceptional clarity, logical focus, direct contact with the governing historical-method burden, and charitable isolation of the disputed variable, while recognizing that a methodological challenge is not itself positive evidence.",
+      "originalWords": 132,
+      "originalCharacters": 1027,
+      "wordsBelowAcceptanceMinimum": 0,
+      "wordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-miracle-content-method-challenge",
+        "sectionId": "historical-method-for-miracles",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Historians must explain whether miraculous content itself supplies an additional reason to distrust a story when its transmission history otherwise matches that of a non-miraculous story.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "35:33",
+        "sourceSpan": {
+          "startEvent": 825,
+          "endEvent": 837,
+          "startMs": 2133610,
+          "endMs": 2164177
+        },
+        "sourceExcerpt": "present to me two stories that follow the same trajectory you’ve described. They’re written down later. They pass through some kind of oral history. They’re written in a new language. They’re the same story, except one of them has a miracle in it. One of them doesn’t. Does the skeptical optical historian tautological again say the miracle is an extra reason to think that one of",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-historical-method"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-anonymous-late-changing-transmission"
+          ],
+          "components": [
+            {
+              "componentId": "pro-miracle-content-method-challenge-component-01",
+              "targetMoveId": "con-anonymous-late-changing-transmission",
+              "text": "Whether the stated transmission defects justify extra distrust when two otherwise matched stories differ only by miraculous content.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The controlled comparison contacts the inference from transmission defects to distrust and asks whether miracle content independently changes the historical assessment, but it does not defeat the documented defects themselves.",
+          "responsivenessWithinClass": {
+            "value": 73,
+            "rationale": "This is a strong partial answer because it contacts the decisive inferential standard while leaving the underlying source-critical premises intact."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "This is a strong partial answer because it contacts the decisive inferential standard while leaving the underlying source-critical premises intact."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "not-needed",
+          "rationale": "The matched-story hypothetical clearly isolates miraculous content as the variable whose evidentiary effect requires explanation."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "As a controlled methodological question, its force matches its support and does not require an additional uncertainty qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Transmission defects can reduce confidence in both stories even if miracle content creates an additional base-rate concern.",
+          "decisiveQualification": "The controlled comparison isolates only the additional effect of miraculous content, not the independent force of transmission defects."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The hypothetical effectively identifies a methodological burden, but it supplies no empirical base-rate or concrete attestation comparison."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly attacks the central historical-method bridge by asking whether miraculous content is being treated as independently disqualifying."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly matches lateness, oral history, and language, then varies only whether the story contains a miracle.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-attestation-can-raise-miracle-probability.critique",
+      "moveId": "pro-attestation-can-raise-miracle-probability",
+      "originalCritique": "Strongest feature: The move identifies multiplicity, independence, and skeptical disposition as concrete evidentiary properties that could raise the probability of an extraordinary event, effectively denying that rarity makes testimony historically inert. Principal limitation: The claim remains hypothetical and leaves its threshold undefined, while supplying no demonstration that the surviving resurrection materials actually constitute numerous independent reports from initially skeptical witnesses. Live burden: The pro case must connect this sound probabilistic possibility to the documentary record, distinguish genuinely independent attestation from literary dependence, and show that the resulting increase exceeds ordinary-error explanations rather than merely moving probability upward. Locked score: The very strong band reflects coherent calibration, direct methodological relevance, and fair acknowledgment of low prior frequency, tempered by modest evidence warrant because the decisive application to the resurrection accounts remains undeveloped.",
+      "originalWords": 131,
+      "originalCharacters": 1064,
+      "wordsBelowAcceptanceMinimum": 0,
+      "wordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-attestation-can-raise-miracle-probability",
+        "sectionId": "historical-method-for-miracles",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "A sufficiently large and independent body of testimony, including witnesses disposed toward skepticism, should be capable of increasing the historical probability assigned to an apparent miracle.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "38:02",
+        "sourceSpan": {
+          "startEvent": 886,
+          "endEvent": 916,
+          "startMs": 2282930,
+          "endMs": 2366250
+        },
+        "sourceExcerpt": "like independent witnesses, lots of different writers writing about it, people who have reasons to be skeptical saying it happened, all of these things. But then you’re still left with the fact that do people normally fly. No do people normally levitate. No so I’m just curious in, is there any level of historical attestation where you would say, O.K, this makes this miracle more",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-historical-method"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-historical-plausibility-of-miracle-reports"
+          ],
+          "components": [
+            {
+              "componentId": "pro-attestation-can-raise-miracle-probability-component-01",
+              "targetMoveId": "con-historical-plausibility-of-miracle-reports",
+              "text": "Whether sufficiently numerous, independent, and skeptical witnesses can raise a miracle report’s historical probability despite its low prior frequency.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move directly challenges any fixed evidentiary ceiling by specifying independence, multiplicity, and skeptical witnesses, although it does not demonstrate that the resurrection evidence has those properties.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "It contacts the decisive methodological component but remains a partial answer because the hypothetical threshold is not connected to the actual record."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive methodological component but remains a partial answer because the hypothetical threshold is not connected to the actual record."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The direction of the claim is clear, though 'sufficiently large and independent' leaves the evidential threshold only implicitly specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The question asks only whether such attestation can increase probability, a modest force well matched to the hypothetical."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Rare-event testimony can increase probability while still leaving ordinary error or invention more probable overall.",
+          "decisiveQualification": "An increase in probability does not by itself establish that the miracle probably occurred."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly attacks the central historical-method bridge by denying that low ordinary frequency makes testimonial evidence evidentially inert."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt names independent witnesses, numerous writers, and people disposed toward skepticism, then asks whether any attestation level can make a miracle more probable.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

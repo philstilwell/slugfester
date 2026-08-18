@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-2-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-resumption-2-repair-1",
+  "packetIndex": 4,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "136",
+  "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/outputs/debate-136.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-136.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-bodily-scenes-as-polemical-development.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-bodily-scenes-as-polemical-development.critique",
+      "moveId": "con-bodily-scenes-as-polemical-development",
+      "originalCritique": "Strongest feature: The move offers a concrete rival explanation for fish eating and wound touching by connecting those scenes to disputes over spiritual versus physical resurrection and to a recognizably bodily theological purpose. Principal limitation: A later polemical use does not establish invention, because inherited experiential traditions could also serve apologetic aims, and the asserted direction and intention require fuller evidence concerning dating and literary dependence. Live burden: The skeptical case must distinguish adaptation from creation, demonstrate that the disputed context predicts these scenes better than preserved memory does, and explain the remaining doubt and misrecognition material. Locked score: The strong band reflects direct responsiveness to the authenticity inference, coherent subsidiary relevance, identifiable historical context, and a serious alternative function, tempered by slightly overstated calibration and incomplete accommodation of traditions that are both inherited and polemically deployed.",
+      "originalWords": 137,
+      "originalCharacters": 1049,
+      "wordsBelowAcceptanceMinimum": 0,
+      "wordsAboveAcceptanceMaximum": 7,
+      "lockedMove": {
+        "moveId": "con-bodily-scenes-as-polemical-development",
+        "sectionId": "resurrection-narrative-development",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "The fish-eating and wound-touching scenes answer later Christians who favored spiritual resurrection and align the accounts with Jewish expectations of bodily resurrection.",
+        "importance": 2,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "77:40",
+        "sourceSpan": {
+          "startEvent": 1849,
+          "endEvent": 1863,
+          "startMs": 4660550,
+          "endMs": 4691250
+        },
+        "sourceExcerpt": "because by the time when they’re being written later, we have records of Christians who think that Jesus wasn’t physically raised from the dead, but was spiritually raised from the dead. And Paul saying, no, no, no, it was a physical Resurrection. These accounts in Luke, and John, where Jesus is eating fish and touch my wounds and things. It’s meant to show that it actually was",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-literary-polemical-development"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-doubt-psychologically-realistic",
+            "pro-bereavement-visions-explanatorily-insufficient"
+          ],
+          "components": [
+            {
+              "componentId": "con-bodily-scenes-as-polemical-development-component-01",
+              "targetMoveId": "pro-doubt-psychologically-realistic",
+              "text": "Whether physical-touch and bodily-demonstration details are best treated as natural experiential reactions or later argumentative constructions.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-bodily-scenes-as-polemical-development-component-02",
+              "targetMoveId": "pro-bereavement-visions-explanatorily-insufficient",
+              "text": "Whether radical bodily content requires an original bodily event rather than later intra-Christian development.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move directly offers a rival literary and polemical explanation for touch and eating scenes, although it does not specifically explain the persistence of doubt.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "It contacts the decisive authenticity inference but remains partial because doubt and the full narrative mixture are not yet addressed."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive authenticity inference but remains partial because doubt and the full narrative mixture are not yet addressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The identified scenes, opposing spiritual view, and bodily-resurrection purpose remain stable, with authorship of the intention implicitly inferred."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The polemical context makes the function plausible, but saying the scenes are meant to answer it needs fuller evidence of direction and dating."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Physical details may preserve experiential memories even if later authors also used them polemically.",
+          "decisiveQualification": "A later apologetic function does not by itself prove that the underlying traditions were invented for that function."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It is at the top of the subsidiary tier because it directly explains difficult bodily details through polemical and theological function."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The move identifies a serious rival function but does not fully accommodate the possibility of inherited memory serving that later function."
+          }
+        },
+        "evidenceBasis": "The excerpt cites Christians favoring spiritual resurrection and connects Luke’s and John’s fish-eating and wound-touching scenes to insisting on physical resurrection.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

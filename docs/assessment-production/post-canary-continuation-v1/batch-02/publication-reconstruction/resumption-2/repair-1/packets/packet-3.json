@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-2-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-resumption-2-repair-1",
+  "packetIndex": 3,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "136",
+  "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/outputs/debate-136.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-136.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-local-knowledge-supports-continuity.critique",
+      "moveProse.con-empty-tomb-narrative-not-verification.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-local-knowledge-supports-continuity.critique",
+      "moveId": "pro-local-knowledge-supports-continuity",
+      "originalCritique": "Strongest feature: The move presses a concrete asymmetry in the transmission hypothesis, asking why decades and geographical distance did not produce widespread errors in Palestinian names and geography if connection with the setting had substantially dissolved. Principal limitation: Accurate local details can be preserved, researched, or inherited independently of particular sayings and episodes, so the argument slides from cultural continuity toward broader historical credit without a sufficiently domain-specific bridge. Live burden: The pro case must show that the mechanisms preserving geography and naming patterns also make accurate event testimony likely, while addressing anonymity, literary dependence, and selective theological change. Locked score: The strong band reflects pertinent continuity evidence, direct pressure on an expected-error implication, and substantial central relevance, moderated by partly unstable scope, implicit qualification, and incomplete engagement with selective preservation.",
+      "originalWords": 131,
+      "originalCharacters": 1021,
+      "wordsBelowAcceptanceMinimum": 0,
+      "wordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-local-knowledge-supports-continuity",
+        "sectionId": "documentary-base-and-source-proximity",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "The Gospels’ accurate Palestinian geography and period-appropriate personal names indicate that substantial local knowledge survived transmission and therefore merit historical credit.",
+        "importance": 2,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "65:17",
+        "sourceSpan": {
+          "startEvent": 1547,
+          "endEvent": 1587,
+          "startMs": 3917580,
+          "endMs": 4040810
+        },
+        "sourceExcerpt": "and so on. Why didn’t those cycles and those distance make Williams’s argument obsolete? Like, why don’t people just get the names wrong After 60 years? Why don’t they start introducing massive errors of geography too? Why are all the errors that you imagined to be there about things Jesus said as opposed to where is Jericho in relationship to Jerusalem. Shouldn’t there be more",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-source-continuity"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-anonymous-late-changing-transmission"
+          ],
+          "components": [
+            {
+              "componentId": "pro-local-knowledge-supports-continuity-component-01",
+              "targetMoveId": "con-anonymous-late-changing-transmission",
+              "text": "Whether decades of remote oral transmission should have erased or corrupted Palestinian geography and period-appropriate naming knowledge.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move directly challenges the expected-error implication of remote transmission using retained geography and names, but it does not answer anonymity, dependence, contradiction, or accuracy of sayings.",
+          "responsivenessWithinClass": {
+            "value": 74,
+            "rationale": "It is a strong partial answer because it contacts continuity evidence while leaving several independent source-critical demands unresolved."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It is a strong partial answer because it contacts continuity evidence while leaving several independent source-critical demands unresolved."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Local knowledge and continuity are recoverable, but the move slides somewhat from absence of massive geographic error to broader historical credit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Accurate local details support continuity, but the implication for narrative or sayings accuracy needs an explicit domain-specific limitation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Accurate geography and names can be preserved or researched while sayings and episodes are substantially altered.",
+          "decisiveQualification": "Local knowledge supports cultural continuity but does not independently establish eyewitness authorship or event-level accuracy."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly advances the central source-continuity bridge by supplying geographical and cultural retention as evidence against total remoteness."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The move acknowledges that proposed errors concern sayings and fairly presses the asymmetry, though it does not fully resolve selective preservation."
+          }
+        },
+        "evidenceBasis": "The excerpt asks why long transmission did not generate wrong names or massive geographical errors and contrasts retained Jericho-Jerusalem knowledge with disputed sayings.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-empty-tomb-narrative-not-verification.critique",
+      "moveId": "con-empty-tomb-narrative-not-verification",
+      "originalCritique": "Strongest feature: The move sharply separates literary or emotional power from historical occurrence and observes that, within the narratives, the empty tomb generates doubt rather than functioning as self-sufficient verification of resurrection. Principal limitation: It does not answer the selected local-knowledge argument, and its narrative observation cannot itself establish that the empty-tomb tradition was invented or lacked evidentiary significance when combined with appearances. Live burden: The skeptical case must connect the literary function of doubt to source history and explain why psychological realism or cumulative evidence does not support an underlying event, rather than relying on nonverification alone. Locked score: The strong band reflects clear scope, coherent qualification, useful subsidiary relevance, and charitable acknowledgment of the passages’ force, reduced by its nonanswer to the decisive earlier target and limited independent warrant about historicity.",
+      "originalWords": 133,
+      "originalCharacters": 995,
+      "wordsBelowAcceptanceMinimum": 0,
+      "wordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "con-empty-tomb-narrative-not-verification",
+        "sectionId": "resurrection-narrative-development",
+        "side": "con",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "The empty-tomb passages may be emotionally powerful, but within the narratives the empty tomb produces doubt rather than faith and does not itself verify resurrection historically.",
+        "importance": 2,
+        "finalScore": 78,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "73:05",
+        "sourceSpan": {
+          "startEvent": 1733,
+          "endEvent": 1741,
+          "startMs": 4385980,
+          "endMs": 4407520
+        },
+        "sourceExcerpt": "Well, I’m struck by the passages. They’re extremely powerful passages. But that doesn’t mean they happened. And so I think that one of the interesting things about the Resurrection, two things that people haven’t noticed. My first point is that the empty tomb in the New Testament never brings about faith. It always brings doubt Yeah and so it was never taken as the evidence",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 376
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-literary-polemical-development"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-local-knowledge-supports-continuity"
+          ],
+          "components": [
+            {
+              "componentId": "con-empty-tomb-narrative-not-verification-component-01",
+              "targetMoveId": "pro-local-knowledge-supports-continuity",
+              "text": "Whether retained Palestinian geography and naming patterns support continuity and historical credit for Gospel traditions.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move bears on Gospel historical confidence but does not contact the local-knowledge evidence or its continuity inference; it instead argues that literary power and doubt do not verify resurrection.",
+          "responsivenessWithinClass": {
+            "value": 57,
+            "rationale": "It is relevant contrary material within the class but leaves the selected earlier move’s decisive local-knowledge demand unanswered."
+          },
+          "responsiveness": {
+            "value": 57,
+            "rationale": "It is relevant contrary material within the class but leaves the selected earlier move’s decisive local-knowledge demand unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move precisely distinguishes emotional force, narrative effects of the empty tomb, and independent historical verification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move does not deny that the event happened; it argues only that power and the empty tomb's narrative effect do not establish resurrection."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Narrated doubt can itself be a realistic feature and need not show that the empty tomb lacked evidentiary significance.",
+          "decisiveQualification": "Psychological realism does not independently establish that the narrated empty tomb occurred historically."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It strongly occupies the subsidiary literary-development tier by interpreting doubt and empty-tomb function rather than directly completing the natural reconstruction."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes the passages’ emotional power, denies that power proves occurrence, and states that the empty tomb produces doubt rather than faith within the narratives.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-post-canary-batch-02-publication-resumption-2-repair-3",
+  "title": "Slugfester post-canary Batch 2 Debate 136 bounded publication repair packet 3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-02-publication-resumption-2-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-02-publication-resumption-2-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 3
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "136"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "douthat-ehrman-resurrection-gospel-history-2026"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-local-knowledge-supports-continuity",
+        "con-empty-tomb-narrative-not-verification"
+      ],
+      "properties": {
+        "pro-local-knowledge-supports-continuity": {
+          "type": "string",
+          "minLength": 880
+        },
+        "con-empty-tomb-narrative-not-verification": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-2-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-resumption-2-repair-1",
+  "packetIndex": 2,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "136",
+  "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/outputs/debate-136.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-136.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-acts-ending-supports-early-date.critique",
+      "moveProse.pro-variation-compatible-with-testimony.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-acts-ending-supports-early-date.critique",
+      "moveId": "pro-acts-ending-supports-early-date",
+      "originalCritique": "Strongest feature: The argument identifies conspicuous omitted events, including later persecution, war, and the temple’s destruction, then offers a clear chronological inference from Acts ending while Paul remains alive in Rome. Principal limitation: It treats authorial ignorance as the most straightforward explanation without comparatively testing thematic closure, selective scope, or literary purpose, so the omission supports but does not secure an early date. Live burden: The pro case must show that a narrative ending is more expected under early composition than under later literary design and explain how the proposed date addresses anonymity, dependence, contradiction, and transmission separately. Locked score: The strong band reflects substantial central relevance, a concrete textual datum, and direct contact with the dating component of the skeptical case, moderated by overstated calibration and incomplete coverage of that broader source-critical argument.",
+      "originalWords": 134,
+      "originalCharacters": 978,
+      "wordsBelowAcceptanceMinimum": 0,
+      "wordsAboveAcceptanceMaximum": 4,
+      "lockedMove": {
+        "moveId": "pro-acts-ending-supports-early-date",
+        "sectionId": "documentary-base-and-source-proximity",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Acts’ abrupt ending while Paul is still alive in Rome supports composition in the early 60s, which would place Luke-Acts closer to the narrated events.",
+        "importance": 2,
+        "finalScore": 82,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "43:31",
+        "sourceSpan": {
+          "startEvent": 1011,
+          "endEvent": 1049,
+          "startMs": 2611340,
+          "endMs": 2724680
+        },
+        "sourceExcerpt": "persecution of the Christians. And then you have the Jewish War and the destruction of the temple. So it’s a very action packed decade. It has always seemed to me that the most straightforward reading of Acts, ending where it does, without any detail of the subsequent events, is just that the writer wasn’t aware of those subsequent events and was writing, was ending his story roughly where he was. It’s the early 60s. Paul is still alive",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 81,
+          "characterCount": 440
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-source-continuity"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-anonymous-late-changing-transmission"
+          ],
+          "components": [
+            {
+              "componentId": "pro-acts-ending-supports-early-date-component-01",
+              "targetMoveId": "con-anonymous-late-changing-transmission",
+              "text": "The claim that Luke-Acts belongs to a decades-later documentary setting remote from the narrated events.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The narrative-ending argument directly challenges the late-date component of the earlier transmission case, but it does not address anonymity, language, dependence, contradiction, or oral change.",
+          "responsivenessWithinClass": {
+            "value": 74,
+            "rationale": "It is a partial answer contacting a decisive dating component while leaving the remaining source-critical components untouched."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It is a partial answer contacting a decisive dating component while leaving the remaining source-critical components untouched."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The dating inference is clear, though alternative literary reasons for the ending are only implicitly excluded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The ending supports an early date, but treating authorial ignorance as the most straightforward explanation omits live narrative-purpose alternatives."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Acts may end with Paul preaching in Rome for thematic or literary reasons despite later composition.",
+          "decisiveQualification": "An omitted later event supports early dating only if literary closure and selective narrative scope are comparatively less plausible."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It strongly occupies the central source-continuity tier by directly advancing a substantially earlier date for Luke-Acts."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The move recognizes the omitted-event issue forcefully but gives limited attention to the strongest literary-ending alternative."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies persecution, the Jewish War, and the temple’s destruction as omitted major events, then infers that the writer ended near his own chronological horizon.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-variation-compatible-with-testimony.critique",
+      "moveId": "pro-variation-compatible-with-testimony",
+      "originalCritique": "Strongest feature: The reply carefully separates inerrancy from historical usefulness and claims compatibility rather than proof, granting ordinary error while directly resisting the inference from discrepancy to worthless or wholly detached testimony. Principal limitation: Its memoir analogy is anecdotal and does not establish that the actual Gospel contradictions arose under comparable conditions, from independent memories, or within transmission capable of preserving the central events accurately. Live burden: The pro route must examine the concrete variations, distinguish ordinary testimonial divergence from theological alteration, and supply positive evidence that witness-derived continuity explains the documents better than layered literary development. Locked score: The very strong band reflects precise calibration, major direct responsiveness, central relevance, and charitable concession of error, tempered because general compatibility with sincere testimony cannot verify the provenance or reliability of these particular accounts.",
+      "originalWords": 133,
+      "originalCharacters": 1054,
+      "wordsBelowAcceptanceMinimum": 0,
+      "wordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "pro-variation-compatible-with-testimony",
+        "sectionId": "transmission-variation-and-contradiction",
+        "side": "pro",
+        "speaker": "Ross Douthat",
+        "moveKind": "reply",
+        "proposition": "Ordinary errors, compression, and differing interpretations among related accounts are compatible with sincere eyewitness-derived transmission and do not make those accounts historically worthless.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "56:31",
+        "sourceSpan": {
+          "startEvent": 1332,
+          "endEvent": 1388,
+          "startMs": 3391250,
+          "endMs": 3544990
+        },
+        "sourceExcerpt": "if you feel obliged to believe that, the Gospels can never get a name wrong or a date wrong or anything like that, or else you have to throw them out. If you’re evaluating the likelihood that these are texts that actually come from eyewitnesses, come from eyewitnesses through mediation. Someone is writing down eyewitness accounts. Fine right. But come from eyewitnesses. They’re",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 65,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-variation-compatible"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-concrete-gospel-contradictions",
+            "con-anonymous-late-changing-transmission"
+          ],
+          "components": [
+            {
+              "componentId": "pro-variation-compatible-with-testimony-component-01",
+              "targetMoveId": "con-concrete-gospel-contradictions",
+              "text": "Whether contradictions and changed details necessarily make the accounts historically worthless or incompatible with witness-derived transmission.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-variation-compatible-with-testimony-component-02",
+              "targetMoveId": "con-anonymous-late-changing-transmission",
+              "text": "Whether mediated and fallible transmission can nevertheless preserve historically usable witness material.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move concedes that discrepancies defeat strict inerrancy but directly argues that ordinary error and mediation remain compatible with usable testimony; it does not reconcile the concrete contradictions.",
+          "responsivenessWithinClass": {
+            "value": 77,
+            "rationale": "It contacts the decisive historical-worth consequence but only partially answers because it does not test whether the actual variations exceed ordinary testimonial error."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive historical-worth consequence but only partially answers because it does not test whether the actual variations exceed ordinary testimonial error."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between inerrancy and historically usable eyewitness-derived mediation is clear and repeatedly maintained."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move claims compatibility rather than proof of eyewitness origin and openly concedes ordinary errors and compression."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Some contradictions may reflect substantive theological alteration rather than ordinary testimonial variation.",
+          "decisiveQualification": "Showing compatibility with testimony does not establish that the actual Gospel differences arose from sincere eyewitness mediation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "Personal memoir differences provide an apt illustration, yet they are anecdotal and do not verify comparable transmission conditions or independence."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It nearly maximizes central-tier relevance by directly explaining why contradiction need not defeat broadly witness-derived transmission."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The move grants that errors undermine inerrancy and confines its rebuttal to the stronger inference toward historical worthlessness."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly separates strict inerrancy from evaluation of texts arising from eyewitnesses through mediation and permits names, dates, and details to be wrong.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
