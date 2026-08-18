@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-finalization-compatibility-analysis",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-finalization",
+  "status": "batch-02-production-compatibility-boundary-recorded",
+  "analyzedAt": "2026-08-18T19:25:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "observations": {
+    "optionalOverallReferenceLinksAlreadyAcceptedByCurrentValidator": true,
+    "batchRows": [
+      {
+        "debateNumber": "103",
+        "oneSidedDisplayRows": 3,
+        "overallBlunders": 7,
+        "emptyReferenceLinks": 7,
+        "taggedReferenceLinks": 0
+      },
+      {
+        "debateNumber": "172",
+        "oneSidedDisplayRows": 1,
+        "overallBlunders": 4,
+        "emptyReferenceLinks": 3,
+        "taggedReferenceLinks": 1
+      },
+      {
+        "debateNumber": "04",
+        "oneSidedDisplayRows": 1,
+        "overallBlunders": 7,
+        "emptyReferenceLinks": 6,
+        "taggedReferenceLinks": 1
+      },
+      {
+        "debateNumber": "136",
+        "oneSidedDisplayRows": 2,
+        "overallBlunders": 8,
+        "emptyReferenceLinks": 8,
+        "taggedReferenceLinks": 0
+      },
+      {
+        "debateNumber": "83",
+        "oneSidedDisplayRows": 0,
+        "overallBlunders": 6,
+        "emptyReferenceLinks": 4,
+        "taggedReferenceLinks": 2
+      },
+      {
+        "debateNumber": "66",
+        "oneSidedDisplayRows": 2,
+        "overallBlunders": 6,
+        "emptyReferenceLinks": 6,
+        "taggedReferenceLinks": 0
+      },
+      {
+        "debateNumber": "126",
+        "oneSidedDisplayRows": 2,
+        "overallBlunders": 4,
+        "emptyReferenceLinks": 3,
+        "taggedReferenceLinks": 1
+      },
+      {
+        "debateNumber": "99",
+        "oneSidedDisplayRows": 0,
+        "overallBlunders": 6,
+        "emptyReferenceLinks": 6,
+        "taggedReferenceLinks": 0
+      },
+      {
+        "debateNumber": "93",
+        "oneSidedDisplayRows": 0,
+        "overallBlunders": 8,
+        "emptyReferenceLinks": 8,
+        "taggedReferenceLinks": 0
+      },
+      {
+        "debateNumber": "101",
+        "oneSidedDisplayRows": 3,
+        "overallBlunders": 5,
+        "emptyReferenceLinks": 4,
+        "taggedReferenceLinks": 1
+      }
+    ],
+    "totals": {
+      "oneSidedDisplayRows": 14,
+      "overallBlunders": 61,
+      "emptyReferenceLinks": 55,
+      "taggedReferenceLinks": 6
+    }
+  },
+  "findings": [
+    {
+      "id": "batch-02-site-ledger-adapter-and-validator-route",
+      "description": "The live site validator recognizes adjudicated-consensus ledgers only through the earlier checkpoint-specific adapter schema, activation, and packet root; it cannot authenticate or replay Batch 2 ledgers without a separately frozen Batch 2 adapter route.",
+      "evidence": {
+        "debates": 10,
+        "sections": 51,
+        "moves": 190,
+        "oneSidedDisplayRows": 14,
+        "displayedRubric": "Slugfester Reassessment Rubric v2",
+        "batchFinalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-02/final-ledger/final-ledger.json",
+        "batchScores": "docs/assessment-production/post-canary-continuation-v1/batch-02/score-pass/calculated-scores.json",
+        "currentValidator": "scripts/validate-debates.mjs",
+        "currentCheckpointAdapter": "scripts/lib/assessment-production-checkpoint-v2.2-compatibility-remedy.mjs"
+      },
+      "blocksFinalizationStaging": false,
+      "blocksRenderingVerification": false,
+      "blocksProductionMutation": true,
+      "requiredRemedy": "A separately authorized production-compatibility plan must define, hash-lock, and test a Batch 2 site-ledger adapter and validator route without changing scores, prose, attribution, or the accepted optional-reference behavior."
+    }
+  ],
+  "authorization": {
+    "compatibilityRemedyPlanPreparation": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
