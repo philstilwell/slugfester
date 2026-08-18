@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-debate-103-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-debate-103-publication-repair-1",
+  "packetIndex": 8,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/outputs/debate-103.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-103.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-natural-selection-explains-complexity.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-natural-selection-explains-complexity.critique",
+      "moveId": "pro-natural-selection-explains-complexity",
+      "originalCritique": "Strongest feature: The reply correctly distinguishes natural selection from undirected randomness at the level of differential survival and reproduction, emphasizes its evidential support, and directly answers the suggestion that evolutionary mechanisms cannot generate complex human outcomes. Principal limitation: Correcting the accident characterization does not address Edwards's separate claim that God intended or guided the process, and the move broadly invokes explanatory success without specifying the evidence or limits of complexity explained. Live burden: Woodford must show either that guidance adds no explanatory value or that relevant observations favor unguided evolution, while Edwards must identify evidence distinguishing purposive direction from an accepted natural mechanism. Locked score: The strong band reflects a coherent and evidentially grounded correction with meaningful relevance, moderated by partial responsiveness, compressed support, broad scope, and insufficient charity toward guided evolution's compatibility with selection.",
+      "originalWords": 135,
+      "originalCharacters": 1063,
+      "excessWordsAboveAcceptanceMaximum": 5,
+      "lockedMove": {
+        "moveId": "pro-natural-selection-explains-complexity",
+        "sectionId": "design-evolution-and-purpose",
+        "side": "pro",
+        "speaker": "Stephen Woodford",
+        "moveKind": "reply",
+        "proposition": "Natural selection is not mere randomness, and its strong evidential support supplies a natural explanation of biological complexity that does not require traditional creation accounts.",
+        "importance": 3,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "48:12",
+        "sourceSpan": {
+          "startEvent": 1269,
+          "endEvent": 1314,
+          "startMs": 2892559,
+          "endMs": 2991839
+        },
+        "sourceExcerpt": "an accident only people that don't know what evolution by natural selection is says that Evolution doesn't say that you're an accident the selection force that brings you about is anything but an accident unfortunately that's something that's Tau by people that don't believe in evolution because it's known as a straw man you want to make out a VI to be weaker than what it is so",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-natural-explanation-bridge"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-guided-evolution-and-human-purpose"
+          ],
+          "components": [
+            {
+              "componentId": "pro-natural-selection-explains-complexity-component-01",
+              "targetMoveId": "con-guided-evolution-and-human-purpose",
+              "text": "Whether natural selection is an accidental process incapable of explaining complex human origins.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-natural-selection-explains-complexity-component-02",
+              "targetMoveId": "con-guided-evolution-and-human-purpose",
+              "text": "Whether the evolutionary process was guided by divine intention.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-natural-selection-explains-complexity-component-03",
+              "targetMoveId": "con-guided-evolution-and-human-purpose",
+              "text": "Whether natural selection has sufficient evidential support as a complexity-producing mechanism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Woodford directly corrects the randomness characterization and supports selection's explanatory role, but does not answer the separate claim of divine guidance or purpose.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "Within partial answers, it contacts the decisive mechanism component while leaving the purposive overlay unresolved."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive mechanism component while leaving the purposive overlay unresolved."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The selection-versus-accident distinction is clear, but the scope of complexity explained and traditional creation accounts is broad."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Strong evidential support for selection fits the mechanism claim, though the excerpt compresses the evidence and full explanatory scope."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Guided evolution accepts natural selection while adding that God intended its outcome.",
+          "decisiveQualification": "Showing selection is nonrandom and powerful does not by itself exclude divine guidance or establish purposelessness."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary natural-explanation bridge through biological complexity."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (66 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt distinguishes natural selection from mere accident, describes selection as a directional force, and invokes its strong evidential standing.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

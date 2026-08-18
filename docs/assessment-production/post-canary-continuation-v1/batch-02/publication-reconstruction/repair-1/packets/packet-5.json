@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-debate-103-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-debate-103-publication-repair-1",
+  "packetIndex": 5,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/outputs/debate-103.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-103.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-evolution-moral-intuitions.critique",
+      "moveProse.pro-divine-command-dilemma.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-evolution-moral-intuitions.critique",
+      "moveId": "pro-evolution-moral-intuitions",
+      "originalCritique": "Strongest feature: The reply supplies a plausible natural genealogy for prosocial feelings and persistent disagreement, applies it under both theistic and atheistic worldviews, and avoids presenting evolutionary origin as a conclusive disproof of objective morality. Principal limitation: Explaining why people possess moral intuitions does not answer the principal ontological question of whether objective obligations exist or what grounds their authority, so the move leaves Edwards's central demand substantially untouched. Live burden: Woodford must connect evolutionary genealogy to an epistemic or metaphysical undercut of divine grounding, while distinguishing causal explanations of belief from arguments about the truth and authority of moral propositions. Locked score: The strong band reflects relevant explanatory content, clear qualifications, and a useful challenge to simplistic moral experience arguments, but its partial responsiveness and failure to engage the decisive grounding component materially restrict its contribution.",
+      "originalWords": 137,
+      "originalCharacters": 1046,
+      "excessWordsAboveAcceptanceMaximum": 7,
+      "lockedMove": {
+        "moveId": "pro-evolution-moral-intuitions",
+        "sectionId": "morality-and-grounding",
+        "side": "pro",
+        "speaker": "Stephen Woodford",
+        "moveKind": "reply",
+        "proposition": "Evolutionary selection can explain prosocial moral feelings and persistent moral disagreement under either atheism or theism without requiring divine moral grounding.",
+        "importance": 2,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "34:00",
+        "sourceSpan": {
+          "startEvent": 893,
+          "endEvent": 930,
+          "startMs": 2040840,
+          "endMs": 2124760
+        },
+        "sourceExcerpt": "under a theist or an atheistic view evolua provides a very simple explanation for the moral feelings that we have and it also explains why there's so much moral disagreement over very important things such as gay rights such as uh what is the status of wom in society this is very hard to account for if you're going to do it through a completely objective moral framework whereas Evolution",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 390
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-natural-explanation-bridge"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-objective-morality-grounded-in-god"
+          ],
+          "components": [
+            {
+              "componentId": "pro-evolution-moral-intuitions-component-01",
+              "targetMoveId": "con-objective-morality-grounded-in-god",
+              "text": "Whether objective moral obligations require a grounding unavailable to impersonal physical reality.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-evolution-moral-intuitions-component-02",
+              "targetMoveId": "con-objective-morality-grounded-in-god",
+              "text": "Whether evolutionary selection explains prosocial moral feelings.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-evolution-moral-intuitions-component-03",
+              "targetMoveId": "con-objective-morality-grounded-in-god",
+              "text": "Whether moral disagreement is expected if objective divine morality is revealed or implanted.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Woodford supplies relevant evolutionary explanations of feelings and disagreement, but those explanations do not contact the primary ontological grounding demand about objective obligation.",
+          "responsivenessWithinClass": {
+            "value": 64,
+            "rationale": "Within relevant nonanswers, it offers substantial contrary material while leaving the decisive grounding component unanswered."
+          },
+          "responsiveness": {
+            "value": 70,
+            "rationale": "Within relevant nonanswers, it offers substantial contrary material while leaving the decisive grounding component unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between explaining moral feelings and reporting disagreement is recoverable and applied across both worldviews."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Evolution is offered as a simple explanation of feelings and disagreement, not as a conclusive refutation of objective morality."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The moral argument concerns the grounding of objective obligations, not merely the causal origin of moral feelings.",
+          "decisiveQualification": "An evolutionary genealogy may undercut confidence but does not alone establish that objective obligations lack divine grounding."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It strongly supports the subsidiary natural-explanation bridge rather than directly completing the central grounding dispute."
+          },
+          "representationalCharity": {
+            "value": 60,
+            "rationale": "The reply provides a legitimate epistemic challenge but largely substitutes genealogy and disagreement for the ontological demand."
+          }
+        },
+        "evidenceBasis": "The excerpt says evolution explains moral feelings under either worldview and points to persistent disagreement over major social questions.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-divine-command-dilemma.critique",
+      "moveId": "pro-divine-command-dilemma",
+      "originalCritique": "Strongest feature: The reply sharply states two competing relations between God and goodness and explains why either independence or arbitrary command would weaken the claim that God uniquely and satisfactorily grounds objective morality. Principal limitation: Treating those horns as exhaustive omits the familiar proposal that goodness is grounded in God's necessary nature, allowing Edwards to diagnose a structural gap rather than choose between the offered alternatives. Live burden: Woodford must show that the divine-nature account merely relocates the explanatory problem or lacks substantive constraints, while Edwards must explain how identity with goodness yields determinate obligations without circularity. Locked score: The strong band reflects clarity, direct relevance, and substantial diagnostic pressure against simple command theory, moderated because the incomplete alternatives permit a coherent third response and therefore prevent the dilemma from securing its broader conclusion as stated.",
+      "originalWords": 136,
+      "originalCharacters": 1013,
+      "excessWordsAboveAcceptanceMaximum": 6,
+      "lockedMove": {
+        "moveId": "pro-divine-command-dilemma",
+        "sectionId": "morality-and-grounding",
+        "side": "pro",
+        "speaker": "Stephen Woodford",
+        "moveKind": "reply",
+        "proposition": "Divine-command morality faces a dilemma: goodness either exists independently of God or consists merely in God's arbitrary dictates rather than a moral standard.",
+        "importance": 3,
+        "finalScore": 80,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "37:30",
+        "sourceSpan": {
+          "startEvent": 992,
+          "endEvent": 1029,
+          "startMs": 2250440,
+          "endMs": 2350599
+        },
+        "sourceExcerpt": "command us to do things because those things are good or is something good because God commands it if if God commands us to do things because they are good then the good obviously exists independent of God and you can have that as an atheist but if something is only good because God commands it then we're not looking at morality we're just looking at a dictator it's what's good is whatever he commands there's nothing moral",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 426
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-moral-grounding-bridge"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-objective-morality-grounded-in-god"
+          ],
+          "components": [
+            {
+              "componentId": "pro-divine-command-dilemma-component-01",
+              "targetMoveId": "con-objective-morality-grounded-in-god",
+              "text": "Test whether grounding morality in God avoids making goodness either independent of God or arbitrary.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly divides divine-command grounding into two horns and states the defeating consequence for the claim that God uniquely grounds morality.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the alleged dilemma in the grounding inference and states both consequences."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the alleged dilemma in the grounding inference and states both consequences."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "not-needed",
+          "rationale": "Both horns, their conditions, and their alleged consequences are stated clearly without material terminological drift."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The dilemma is sharply stated, but the exhaustive two-horn framing omits the familiar divine-nature alternative later offered."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Goodness may be grounded in God's necessary nature rather than external standards or arbitrary commands.",
+          "decisiveQualification": "That account must explain why identifying God with the good is substantive rather than a relabeling."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 69,
+            "rationale": "Each horn's consequence is coherent, but treating the horns as exhaustive leaves a substantial false-dilemma challenge."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central moral-grounding bridge at its divine-source inference."
+          },
+          "representationalCharity": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (58 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt asks whether God commands independently good acts or makes acts good by command, then states the consequence of each answer.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

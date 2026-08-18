@@ -1,0 +1,274 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-debate-103-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-debate-103-publication-repair-1",
+  "packetIndex": 6,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/outputs/debate-103.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-103.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-biblical-revelation-and-human-dignity.critique",
+      "moveProse.con-euthyphro-divine-nature-resolution.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-biblical-revelation-and-human-dignity.critique",
+      "moveId": "con-biblical-revelation-and-human-dignity",
+      "originalCritique": "Strongest feature: The move identifies a concrete biblical doctrine with genuine universalizing potential, links divine image-bearing to equal dignity, and acknowledges that difficult scriptural material exists rather than presenting the tradition without qualification. Principal limitation: The broad historical claim about shaping modern Western equality lacks sustained comparison with classical, Enlightenment, legal, economic, and secular influences, and the reply does not answer the live salvation-confusion or divine-command challenges. Live burden: Edwards must establish the doctrine's distinctive causal contribution and explain how biblical revelation remains sufficiently clear and morally trustworthy despite disputed interpretations and troubling texts. Locked score: The mixed band recognizes relevant material about revelation, purpose, and dignity, but reflects the move's nonanswer status, loosely bounded historical inference, limited comparative evidence, and weak contact with the decisive objections then requiring a response.",
+      "originalWords": 131,
+      "originalCharacters": 1050,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-biblical-revelation-and-human-dignity",
+        "sectionId": "revelation-and-salvation-confusion",
+        "side": "con",
+        "speaker": "Simon Edwards",
+        "moveKind": "reply",
+        "proposition": "Biblical revelation, especially the teaching that every person bears God's image, substantially shaped modern Western commitments to universal human value and equal dignity.",
+        "importance": 2,
+        "finalScore": 67,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "39:07",
+        "sourceSpan": {
+          "startEvent": 1030,
+          "endEvent": 1072,
+          "startMs": 2347599,
+          "endMs": 2448520
+        },
+        "sourceExcerpt": "Genesis 1: 27 which says uh every person is created in the image of God in the image of God they created male and female they are created so every person has value and and dignity um um totally agree with and totally valid that you would pick some really tricky verses from the Old Testament and say how does this Square against your your your abs Etc um the one in number 31 that",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-purpose-and-revelation-bridge"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-salvation-confusion-divine-love",
+            "pro-divine-command-dilemma"
+          ],
+          "components": [
+            {
+              "componentId": "con-biblical-revelation-and-human-dignity-component-01",
+              "targetMoveId": "pro-salvation-confusion-divine-love",
+              "text": "Answer why an all-loving God would attach grave consequences to disputed religious propositions amid widespread confusion.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-biblical-revelation-and-human-dignity-component-02",
+              "targetMoveId": "pro-divine-command-dilemma",
+              "text": "Answer the conceptual dilemma about whether divine goodness is independent or arbitrary.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply offers issue-bearing material about biblical influence and dignity but does not answer the salvation-confusion demand or the divine-command dilemma.",
+          "responsivenessWithinClass": {
+            "value": 48,
+            "rationale": "Within relevant nonanswers, it bears on revelation's value yet leaves the decisive earlier demands substantially untouched."
+          },
+          "responsiveness": {
+            "value": 54,
+            "rationale": "Within relevant nonanswers, it bears on revelation's value yet leaves the decisive earlier demands substantially untouched."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The image-of-God dignity claim is clear, but the broad claim about shaping modern Western equality is only loosely scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "A broad historical-causal conclusion is asserted from a scriptural teaching without sustained comparison with other influences."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Biblical traditions include difficult texts and modern equality has multiple religious and secular causes.",
+          "decisiveQualification": "Genesis supplies a genuine universalizing dignity principle even if its historical effects are mixed."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The theological dignity inference is coherent, while the transition to broad modern historical influence is materially compressed."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It materially supports the subsidiary purpose-and-revelation bridge through a concrete dignity doctrine."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "Edwards acknowledges difficult Old Testament material but leaves the multi-causal historical alternative underdeveloped."
+          }
+        },
+        "evidenceBasis": "The excerpt cites Genesis 1:27 as grounding equal value and dignity and acknowledges difficult Old Testament passages.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-euthyphro-divine-nature-resolution.critique",
+      "moveId": "con-euthyphro-divine-nature-resolution",
+      "originalCritique": "Strongest feature: The reply directly defeats the dilemma's claimed exhaustiveness by presenting a third relation in which commands express God's necessary character, thereby avoiding both an external moral standard and unconstrained voluntarism. Principal limitation: Identifying God with the good may label rather than explain objective goodness unless the account supplies substantive content, constraints on divine character, and a bridge from that character to particular obligations. Live burden: Edwards must clarify why divine nature is independently recognizable as good and how it generates authoritative duties, while Woodford must engage this necessary-nature theory rather than continue targeting simple command voluntarism. Locked score: The very-strong band reflects precise diagnosis, complete contact with every stated horn, clear conceptual structure, careful qualification, and charitable engagement, with the remaining explanatory identity problem preventing the response from becoming a complete moral-grounding theory.",
+      "originalWords": 135,
+      "originalCharacters": 1040,
+      "excessWordsAboveAcceptanceMaximum": 5,
+      "lockedMove": {
+        "moveId": "con-euthyphro-divine-nature-resolution",
+        "sectionId": "morality-and-grounding",
+        "side": "con",
+        "speaker": "Simon Edwards",
+        "moveKind": "reply",
+        "proposition": "The Euthyphro dilemma does not make morality external or arbitrary because God commands goodness on the basis that God is the good itself and objective goodness is rooted in the creator's character.",
+        "importance": 3,
+        "finalScore": 86,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "41:03",
+        "sourceSpan": {
+          "startEvent": 1080,
+          "endEvent": 1113,
+          "startMs": 2463200,
+          "endMs": 2540200
+        },
+        "sourceExcerpt": "higher themselves but if God if good is just whatever God does it seems to make goodness arbitrary the answer to the youth ethro dilemma I think is that God commands uh what he does not because it is good but because he is the good what does that mean well it means that the idea that we have that there is such a thing as objective goodness from where I sit is rooted not in some",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 77,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-moral-grounding-bridge"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-divine-command-dilemma"
+          ],
+          "components": [
+            {
+              "componentId": "con-euthyphro-divine-nature-resolution-component-01",
+              "targetMoveId": "pro-divine-command-dilemma",
+              "text": "Whether the two proposed horns exhaust the possible relation between God and goodness.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-euthyphro-divine-nature-resolution-component-02",
+              "targetMoveId": "pro-divine-command-dilemma",
+              "text": "Whether goodness is external to God under the proposed alternative.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-euthyphro-divine-nature-resolution-component-03",
+              "targetMoveId": "pro-divine-command-dilemma",
+              "text": "Whether divine commands become arbitrary under the proposed alternative.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Edwards expressly identifies why the dilemma fails—its horns omit goodness grounded in God's nature—and states that this avoids both externality and arbitrariness.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the defective exhaustiveness premise and gives the defeating consequence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the defective exhaustiveness premise and gives the defeating consequence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The divine-nature alternative, its relation to commands, and its intended avoidance of both horns are expressly stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Edwards presents the divine-nature account as his answer and explains its structure without claiming that all objections are eliminated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Calling God the good may relabel rather than explain objective goodness or constrain divine character.",
+          "decisiveQualification": "The proposal nevertheless constitutes a distinct necessary-nature account not captured by either original horn."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The third-option response coherently blocks the dilemma's exhaustiveness, with one remaining explanatory identity bridge."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The conceptual model is specified but supported mainly by assertion about God's character rather than an independent warrant."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central moral-grounding bridge against its strongest stated dilemma."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The answer fairly addresses the original dilemma, though it does not fully answer the strongest explanatory challenge to identity with goodness."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly rejects both horns by saying God commands from God's character because God is the good itself.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-debate-103-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-debate-103-publication-repair-1",
+  "packetIndex": 4,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/outputs/debate-103.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-103.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-suffering-counterevidence-not-defeater.critique",
+      "moveProse.pro-creator-evidence-classical-god-gap.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-suffering-counterevidence-not-defeater.critique",
+      "moveId": "con-suffering-counterevidence-not-defeater",
+      "originalCritique": "Strongest feature: The reply candidly recognizes suffering as the strongest counterevidence, distinguishes substantial evidential pressure from a decisive defeater, and offers several specifically Christian considerations rather than denying the objection's seriousness. Principal limitation: The disordered world, afterlife, available theodicies, and divine participation are presented compactly without showing how they change the probability of particular apparently gratuitous horrors rather than merely demonstrate logical compatibility. Live burden: Edwards must connect each consideration to the evidential distribution and severity of suffering, explaining why an all-loving, all-powerful God would permit these cases and why compensatory goods are morally sufficient. Locked score: The very-strong band reflects exceptional relevance, calibration, explicit concession, and direct engagement with the central objection, while retaining a meaningful evidential limitation because the proposed responses are named more fully than their probabilistic mechanisms are defended.",
+      "originalWords": 133,
+      "originalCharacters": 1080,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "con-suffering-counterevidence-not-defeater",
+        "sectionId": "evil-and-divine-love",
+        "side": "con",
+        "speaker": "Simon Edwards",
+        "moveKind": "reply",
+        "proposition": "Suffering is substantial counterevidence but does not defeat belief in an all-loving God because Christianity describes a disordered world, affirms an afterlife, offers theodicies, and portrays God as sharing human suffering.",
+        "importance": 3,
+        "finalScore": 85,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "26:28",
+        "sourceSpan": {
+          "startEvent": 695,
+          "endEvent": 800,
+          "startMs": 1588720,
+          "endMs": 1832440
+        },
+        "sourceExcerpt": "I think uh I consider the evidence of suffering and evil in the world is probably the strongest counterevidence for the existence of an all powerful all loving God um but I don't think it's a um it's a defeater I think there are good arguments in response the tricky thing is uh the question of suffering as you would all know it's not just an intellectual uh question it's a human",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-evil-response-bridge"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-gratuitous-evil-divine-love"
+          ],
+          "components": [
+            {
+              "componentId": "con-suffering-counterevidence-not-defeater-component-01",
+              "targetMoveId": "pro-gratuitous-evil-divine-love",
+              "text": "Answer why apparently purposeless suffering should not defeat belief in an all-powerful and all-loving God.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply concedes the evidential force and supplies several Christian considerations intended to prevent that counterevidence from becoming a defeater.",
+          "responsivenessWithinClass": {
+            "value": 86,
+            "rationale": "Within full answers, it directly addresses defeater status, though the mechanisms connecting theodicies and afterlife to particular evils remain compressed."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it directly addresses defeater status, though the mechanisms connecting theodicies and afterlife to particular evils remain compressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between strong counterevidence and a defeater is explicit, stable, and central to the response."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Edwards openly calls suffering the strongest counterevidence and advances his response as non-conclusive grounds for continued belief."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Apparently pointless suffering is strong evidence against unlimited power and love even if generic theodicies are possible.",
+          "decisiveQualification": "A response must do more than show logical compatibility; it must bear on the evidential force of apparently gratuitous cases."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The counterevidence-versus-defeater distinction is coherent, but the several responses are not fully connected to the evidential conclusion."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "Relevant Christian doctrines and response types are named, while their explanatory probability and application remain underdeveloped."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the principal response required by the central evil-response bridge."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The move fairly recognizes the objection's evidential strength, though it only compressively addresses the decisive probabilistic qualification."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes suffering as the strongest counterevidence, denies it is a defeater, and invokes Christian disorder, afterlife, theodicies, and shared suffering.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-creator-evidence-classical-god-gap.critique",
+      "moveId": "pro-creator-evidence-classical-god-gap",
+      "originalCritique": "Strongest feature: The reply grants multiple positive arguments conditionally and then precisely exposes the inferential distance between establishing some creator and identifying the all-powerful, perfectly loving God targeted by the motion. Principal limitation: A sophisticated cumulative case can assign attributes jointly rather than expect any single design or moral argument to establish the complete classical conception, so the identity gap alone does not dispose of Edwards's combined evidence. Live burden: Woodford must show that apparently gratuitous suffering remains sufficiently improbable under the cumulative classical hypothesis, while Edwards must demonstrate how his arguments jointly identify the relevant attributes and reconcile them with evil. Locked score: The very-strong band reflects excellent conditional reasoning, stable scope, high responsiveness, and direct contact with several central claims, moderated only because the underlying gratuitousness premise and the cumulative identification question still require further comparative defense.",
+      "originalWords": 139,
+      "originalCharacters": 1075,
+      "excessWordsAboveAcceptanceMaximum": 9,
+      "lockedMove": {
+        "moveId": "pro-creator-evidence-classical-god-gap",
+        "sectionId": "evil-and-divine-love",
+        "side": "pro",
+        "speaker": "Stephen Woodford",
+        "moveKind": "reply",
+        "proposition": "Even successful arguments for a creator would not establish the Christian or Islamic God when gratuitous evil conflicts with the unlimited power and perfect love attributed to that God.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "30:30",
+        "sourceSpan": {
+          "startEvent": 801,
+          "endEvent": 872,
+          "startMs": 1830159,
+          "endMs": 1995720
+        },
+        "sourceExcerpt": "evil we could Grant every argument for God's existence that we just heard that theological arguments col cosmological if he wanted to throw those in moral arguments all of these arguments even if all of those arguments were powerful and true and philosophers took them seriously enough to believe in them again they don't what we would conclude from this is that whatever that God is that created the world isn't isn't the Christian",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 432
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-undercut-theistic-evidence-bridge"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-suffering-counterevidence-not-defeater",
+            "con-life-permitting-fine-tuning",
+            "con-objective-morality-grounded-in-god"
+          ],
+          "components": [
+            {
+              "componentId": "pro-creator-evidence-classical-god-gap-component-01",
+              "targetMoveId": "con-suffering-counterevidence-not-defeater",
+              "text": "Whether the positive case and generic theodicies preserve warrant for the specified all-loving God.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-creator-evidence-classical-god-gap-component-02",
+              "targetMoveId": "con-life-permitting-fine-tuning",
+              "text": "Whether a successful design inference identifies the Christian or Islamic classical God.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-creator-evidence-classical-god-gap-component-03",
+              "targetMoveId": "con-objective-morality-grounded-in-god",
+              "text": "Whether a successful moral argument identifies the specified classical God.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Woodford directly argues that even granting the positive arguments yields at most a creator and that gratuitous evil still conflicts with the specified classical deity.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "Within full answers, it explicitly contacts the identity gap and the continued force of evil against the target conception."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts the identity gap and the continued force of evil against the target conception."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional concession and creator-versus-classical-God distinction are both explicit and stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The limited claim that generic creator arguments do not by themselves entail classical attributes matches the stated warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A cumulative case may identify divine attributes jointly rather than through any single creator argument.",
+          "decisiveQualification": "The cumulative case still must reconcile those attributes with the allegedly gratuitous suffering invoked here."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The conceptual identity gap is well illustrated, though the continued gratuitousness premise retains its earlier evidential compression."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central undercut-theistic-evidence bridge by identifying the creator-to-classical-God gap."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt grants multiple arguments arguendo and concludes that they would not identify the Christian God given the unresolved evil evidence.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-debate-103-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-debate-103-publication-repair-1",
+  "packetIndex": 7,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/outputs/debate-103.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-103.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-history-does-not-establish-miracles.critique",
+      "moveProse.con-guided-evolution-and-human-purpose.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-history-does-not-establish-miracles.critique",
+      "moveId": "pro-history-does-not-establish-miracles",
+      "originalCritique": "Strongest feature: The reply carefully separates well-supported ordinary historical claims from additional supernatural conclusions, applies the distinction across Christian and Islamic examples, and connects the evidential gap directly to the fairness of required religious assent. Principal limitation: Strong historical miracle cases appeal to testimony, explanatory comparison, and cumulative context rather than merely inferring miracles from a person's existence, so the response does not examine the most developed version of the opposing evidence. Live burden: Woodford must compare testimonial miracle hypotheses with natural alternatives and explain what level of revelation divine love would require, while Edwards must supply evidence adequate for the extraordinary claims invoked. Locked score: The very-strong band reflects strong calibration, precise distinctions, broad responsiveness, and central relevance to salvation confusion, tempered by incomplete engagement with the best cumulative historical case for miracles.",
+      "originalWords": 134,
+      "originalCharacters": 1036,
+      "excessWordsAboveAcceptanceMaximum": 4,
+      "lockedMove": {
+        "moveId": "pro-history-does-not-establish-miracles",
+        "sectionId": "revelation-and-salvation-confusion",
+        "side": "pro",
+        "speaker": "Stephen Woodford",
+        "moveKind": "reply",
+        "proposition": "Historical evidence that religious figures existed does not establish supernatural narratives, and an all-loving God would not reasonably require assent to culturally inherited miracle claims.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "45:55",
+        "sourceSpan": {
+          "startEvent": 1210,
+          "endEvent": 1233,
+          "startMs": 2755200,
+          "endMs": 2810400
+        },
+        "sourceExcerpt": "existed he resurrected and did all these other claims that are made in the Bible similarly I'd say the same with the Quran uh did Muhammad exist yes did he conquer the Arabian Peninsula definitely uh there's lots of for it did he you know was he spoken to by Gabriel was the Miracles that are spoken about in the Quran true no I don't think it's true and I don't think that an all loving God would require",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 79,
+          "characterCount": 405
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-salvation-confusion-bridge"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-biblical-revelation-and-human-dignity",
+            "con-suffering-counterevidence-not-defeater"
+          ],
+          "components": [
+            {
+              "componentId": "pro-history-does-not-establish-miracles-component-01",
+              "targetMoveId": "con-biblical-revelation-and-human-dignity",
+              "text": "Whether historical and scriptural material establishes divine revelation rather than ordinary historical facts.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-history-does-not-establish-miracles-component-02",
+              "targetMoveId": "con-biblical-revelation-and-human-dignity",
+              "text": "Whether an all-loving God could reasonably require assent to disputed miracle narratives.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-history-does-not-establish-miracles-component-03",
+              "targetMoveId": "con-suffering-counterevidence-not-defeater",
+              "text": "Whether specifically Christian doctrines receive enough support to help answer the broader evidential challenge.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Woodford directly distinguishes evidence for historical existence from evidence for supernatural events and links that gap to salvation-related assent.",
+          "responsivenessWithinClass": {
+            "value": 89,
+            "rationale": "Within full answers, it explicitly contacts the historical-to-revelatory inference and its consequence for required belief."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts the historical-to-revelatory inference and its consequence for required belief."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Ordinary existence claims, supernatural claims, and the divine-love consequence are clearly separated and qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Woodford concedes well-supported ordinary history while withholding assent from distinct miracle claims rather than claiming disproof."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Historical cases for miracles rely on testimony and explanatory comparison, not merely the figure's existence.",
+          "decisiveQualification": "Evidence for existence alone still cannot carry the additional supernatural conclusion or justify compulsory assent."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The ordinary-history versus miracle distinction and its salvation consequence form a clear, consistent inference."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central salvation-confusion bridge by challenging the warrant for required supernatural assent."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The reply correctly identifies an evidential gap, though it does not examine the strongest cumulative testimonial case."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes that Jesus and Muhammad existed while separating those facts from resurrection, Gabriel, and other miracle claims.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-guided-evolution-and-human-purpose.critique",
+      "moveId": "con-guided-evolution-and-human-purpose",
+      "originalCritique": "Strongest feature: The move explicitly separates the question of human purpose from the mechanism of biological development, accepts natural selection as potentially compatible with divine action, and carefully frames guided evolution as a possibility. Principal limitation: Compatibility supplies no discriminating evidence that evolution was guided or that humans were intended, while the purpose conclusion is asserted without identifying observations more expected under divine intention than under unguided selection. Live burden: Edwards must offer a comparative marker of guidance or explain how the wider cumulative case warrants purposive interpretation, while addressing the evidential sufficiency of natural evolutionary mechanisms. Locked score: The strong band recognizes coherence, qualification, conceptual flexibility, and constructive relevance to purpose, but preserves a substantial evidential discount because neither intentional human existence nor guidance is independently supported by the compatibility claim itself.",
+      "originalWords": 133,
+      "originalCharacters": 1040,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "con-guided-evolution-and-human-purpose",
+        "sectionId": "design-evolution-and-purpose",
+        "side": "con",
+        "speaker": "Simon Edwards",
+        "moveKind": "constructive",
+        "proposition": "Human beings exist intentionally because God wanted them, and natural selection may be the guided mechanism through which God brought them into existence.",
+        "importance": 2,
+        "finalScore": 78,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "47:07",
+        "sourceSpan": {
+          "startEvent": 1241,
+          "endEvent": 1268,
+          "startMs": 2827760,
+          "endMs": 2895720
+        },
+        "sourceExcerpt": "purpose because somebody God wanted us to be here um and it's OB would just say if you ever feel like you're just an accident you sort of a cosmic accident when morai said that's not true you're meant to be here because someone wanted you to be here God now as to the second question of how God did that hugely open to the idea that God could have used uh uh mechanisms of natural selection and what I say guided",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 82,
+          "characterCount": 412
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-purpose-and-revelation-bridge"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move combines intentional human purpose with qualified acceptance of natural selection as a possible divine mechanism.",
+          "responsivenessWithinClass": {
+            "value": 84,
+            "rationale": "Within constructive moves, it clearly states the purpose claim and a compatible mechanism, while expressing evidential reservations."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "Within constructive moves, it clearly states the purpose claim and a compatible mechanism, while expressing evidential reservations."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Purpose, guided evolution, and uncertainty about macroevolution's total explanatory capacity are explicitly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move carefully says God could use natural selection and openly states that the speaker considers explanatory capability unsettled."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Natural selection may explain human origins without divine guidance or prior intention.",
+          "decisiveQualification": "Compatibility with selection does not itself supply evidence that the process was guided or purposive."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "The intentional-purpose conclusion is asserted, and no evidence distinguishes guided evolution from an unguided process."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 80,
+            "rationale": "The move accepts much of the natural mechanism but does not fully confront the alternative's evidential sufficiency."
+          }
+        },
+        "evidenceBasis": "The excerpt says humans are meant to exist because God wanted them and treats guided natural selection as a possible mechanism.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

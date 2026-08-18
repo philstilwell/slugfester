@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-debate-103-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-debate-103-publication-repair-1",
+  "packetIndex": 3,
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "debateNumber": "103",
+  "debateId": "woodford-edwards-rational-belief-god-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/outputs/debate-103.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-103.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-evolution-cognitive-reliability.critique",
+      "moveProse.con-truth-directed-designed-intelligence.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-evolution-cognitive-reliability.critique",
+      "moveId": "pro-evolution-cognitive-reliability",
+      "originalCritique": "Strongest feature: The reply separates atheism from naturalism, distinguishes defeating a rival from establishing theism, and directly answers the reliability challenge by explaining why broadly accurate environmental representations can contribute to adaptive behavior. Principal limitation: The response establishes only a general compatibility between selection and useful truth tracking; it does not specify how that reliability extends from ordinary environmental cognition to abstract mathematics, moral judgment, philosophy, or metaphysical theorizing. Live burden: Woodford must defend a calibrated account of domain-specific evolutionary reliability, while Edwards must demonstrate that the remaining limitations selectively undermine naturalism rather than human reasoning employed by both participants. Locked score: The very-strong band reflects unusually complete contact with the decisive claims, careful qualifications, strong logical organization, and charitable representation, with only a residual need for deeper evidence about reliability beyond everyday adaptive domains.",
+      "originalWords": 135,
+      "originalCharacters": 1092,
+      "excessWordsAboveAcceptanceMaximum": 5,
+      "lockedMove": {
+        "moveId": "pro-evolution-cognitive-reliability",
+        "sectionId": "rationality-and-reason",
+        "side": "pro",
+        "speaker": "Stephen Woodford",
+        "moveKind": "reply",
+        "proposition": "The evolutionary argument against naturalism neither establishes theism nor defeats evolved cognition, because atheism does not entail naturalism and selection generally favors broadly accurate representations.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "19:01",
+        "sourceSpan": {
+          "startEvent": 504,
+          "endEvent": 568,
+          "startMs": 1141039,
+          "endMs": 1296960
+        },
+        "sourceExcerpt": "theism that's very strong rather you're going to get there by default by showing that the alternative is false the way that um Simon defined atheism is that it NE all atheists necessarily affirm naturalism which is just boss most atheists don't actually affirm naturalism so it's actually a very critical mistake in terms of uh logical fallacis and and logical deduction also the argument",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 65,
+          "characterCount": 388
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "con-cognitive-trust-bridge"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-reason-designed-cognition"
+          ],
+          "components": [
+            {
+              "componentId": "pro-evolution-cognitive-reliability-component-01",
+              "targetMoveId": "con-reason-designed-cognition",
+              "text": "Whether behavioral selection undermines the broad reliability of evolved cognition.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-evolution-cognitive-reliability-component-02",
+              "targetMoveId": "con-reason-designed-cognition",
+              "text": "Whether atheism entails the unguided naturalism targeted by Edwards's argument.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-evolution-cognitive-reliability-component-03",
+              "targetMoveId": "con-reason-designed-cognition",
+              "text": "Whether defeating naturalism would independently provide positive evidence for theism.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Woodford contacts the decisive reliability demand by invoking generally accurate representations and also challenges both the atheism-naturalism entailment and the route to theism.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "Within full answers, it explicitly addresses the principal inference and two associated scope and consequence claims."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly addresses the principal inference and two associated scope and consequence claims."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The response separates atheism, naturalism, cognitive reliability, and positive evidence for theism with clear qualifications."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim is appropriately general rather than universal and does not assert perfect evolutionary truth tracking."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The evolutionary objection targets naturalism and claims selection is directed primarily toward adaptive behavior.",
+          "decisiveQualification": "Primarily adaptive selection can still favor broadly accurate representations without guaranteeing all beliefs."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly attacks the subsidiary cognitive-trust bridge rather than independently resolving the motion."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt rejects an atheism-naturalism entailment, denies that defeating an alternative establishes theism, and defends broadly reliable evolved representation.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-truth-directed-designed-intelligence.critique",
+      "moveId": "con-truth-directed-designed-intelligence",
+      "originalCritique": "Strongest feature: The reply plainly states the positive theistic alternative: if intelligence is intentionally directed toward understanding an intelligible universe, cognitive trust may possess a purposive foundation unavailable on Edwards's description of unguided selection. Principal limitation: It largely repeats the design contrast without answering Woodford's decisive point that adaptive success can favor broadly accurate representation, and it leaves the mechanism connecting divine intention to actual cognitive reliability implicit. Live burden: Edwards must establish why a designer would prioritize truth across relevant domains, account for pervasive bias and error, and show a comparative advantage over evolutionary reliability rather than merely asserting different origins. Locked score: The mixed band reflects a clear and relevant subsidiary reply with a coherent comparative aspiration, reduced by incomplete responsiveness, weak independent warrant, missing qualifications, and limited charity toward the sufficiency of adaptive truth tracking.",
+      "originalWords": 138,
+      "originalCharacters": 1069,
+      "excessWordsAboveAcceptanceMaximum": 8,
+      "lockedMove": {
+        "moveId": "con-truth-directed-designed-intelligence",
+        "sectionId": "rationality-and-reason",
+        "side": "con",
+        "speaker": "Simon Edwards",
+        "moveKind": "reply",
+        "proposition": "Theism gives stronger grounds than naturalism for believing that human minds primarily serve truth because designed intelligence is directed toward understanding an intelligible universe.",
+        "importance": 2,
+        "finalScore": 69,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "21:35",
+        "sourceSpan": {
+          "startEvent": 569,
+          "endEvent": 608,
+          "startMs": 1295600,
+          "endMs": 1393480
+        },
+        "sourceExcerpt": "primarily serve truth because uh from where I sit uh our minds are not the product of a nonrational unguided process nor are they the product of a process that is geared primarily towards passing on D the Next Generation or whatever serves uh evolutionary success they are geared primarily towards understanding the universe around us in other words desert intelligence that gives",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 63,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-cognitive-trust-bridge"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-evolution-cognitive-reliability"
+          ],
+          "components": [
+            {
+              "componentId": "con-truth-directed-designed-intelligence-component-01",
+              "targetMoveId": "pro-evolution-cognitive-reliability",
+              "text": "Whether theism offers a stronger positive basis for trusting truth-directed human cognition.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-truth-directed-designed-intelligence-component-02",
+              "targetMoveId": "pro-evolution-cognitive-reliability",
+              "text": "Whether adaptive natural selection can also generate broadly reliable representations.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "Edwards directly restates the designed-truth alternative but does not answer Woodford's decisive claim that adaptive success can favor broad representational accuracy.",
+          "responsivenessWithinClass": {
+            "value": 68,
+            "rationale": "Within partial answers, it contacts the positive-theistic comparison but leaves the opposing evolutionary mechanism unanswered."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "Within partial answers, it contacts the positive-theistic comparison but leaves the opposing evolutionary mechanism unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The comparative design claim is clear, though the mechanism connecting design to actual cognitive reliability remains implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Divine design is treated as a stronger reliability guarantee without addressing possible design purposes or the naturalistic reliability answer."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Adaptive selection can produce broadly reliable cognition without making truth its sole or primary target.",
+          "decisiveQualification": "Broad reliability is sufficient for the rebuttal even if many biases and false beliefs persist."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary cognitive-trust bridge, though with limited comparative completion."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The response repeats the unguided-process contrast without addressing the alternative's decisive sufficiency claim."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts unguided reproduction-oriented processes with minds allegedly geared toward understanding an intelligible universe.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
