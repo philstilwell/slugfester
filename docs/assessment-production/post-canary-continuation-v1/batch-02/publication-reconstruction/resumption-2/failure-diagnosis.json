@@ -1,0 +1,439 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-2-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-resumption-2",
+  "status": "diagnosed-batch-02-resumption-2-two-debate-ten-critique-word-boundary-failures",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "failureBoundary": {
+    "failedDebates": [
+      "136",
+      "83"
+    ],
+    "failedDebateCount": 2,
+    "failedFieldCount": 10,
+    "overMaximumFieldCount": 9,
+    "underMinimumFieldCount": 1,
+    "wordsRemovedInDiagnosticCopies": 24,
+    "wordsAddedInDiagnosticCopies": 4,
+    "unexpectedValidationCategories": 0,
+    "debateDiagnoses": [
+      {
+        "debateNumber": "136",
+        "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+        "contextIndex": 1,
+        "originalContextIndex": 3,
+        "failedFields": [
+          {
+            "path": "moveProse.con-calibrated-existence-baseline.critique",
+            "words": 132,
+            "characters": 1009,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 2
+          },
+          {
+            "path": "moveProse.con-anonymous-late-changing-transmission.critique",
+            "words": 131,
+            "characters": 1064,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 1
+          },
+          {
+            "path": "moveProse.pro-miracle-content-method-challenge.critique",
+            "words": 132,
+            "characters": 1027,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 2
+          },
+          {
+            "path": "moveProse.pro-attestation-can-raise-miracle-probability.critique",
+            "words": 131,
+            "characters": 1064,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 1
+          },
+          {
+            "path": "moveProse.pro-acts-ending-supports-early-date.critique",
+            "words": 134,
+            "characters": 978,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 4
+          },
+          {
+            "path": "moveProse.pro-variation-compatible-with-testimony.critique",
+            "words": 133,
+            "characters": 1054,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 3
+          },
+          {
+            "path": "moveProse.pro-local-knowledge-supports-continuity.critique",
+            "words": 131,
+            "characters": 1021,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 1
+          },
+          {
+            "path": "moveProse.con-empty-tomb-narrative-not-verification.critique",
+            "words": 133,
+            "characters": 995,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 3
+          },
+          {
+            "path": "moveProse.con-bodily-scenes-as-polemical-development.critique",
+            "words": 137,
+            "characters": 1049,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 0,
+            "wordsAboveMaximum": 7
+          }
+        ],
+        "wordsRemoved": 24,
+        "wordsAdded": 0,
+        "diagnosticReplay": {
+          "status": "passed",
+          "debateNumber": "136",
+          "moves": 18,
+          "critiques": 18,
+          "minimumCritiqueCharacters": 958,
+          "tags": 0,
+          "quoteExactSourceMatches": 2,
+          "overallCommentarySides": 2,
+          "noveltyItems": 18,
+          "introducedItems": 4,
+          "newArguments": 4,
+          "aiExtensionSides": 2,
+          "calculatedScoresAuthoredByModel": 0,
+          "lockedScoresUnchanged": true
+        },
+        "artifacts": {
+          "output": {
+            "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/outputs/debate-136.json",
+            "sha256": "1154f73f706b3b3640f7fbfafede264da783e73b7ee66e20829736f672dd0e72"
+          },
+          "packet": {
+            "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-136.json",
+            "sha256": "c36b9f4ed504dedc2b8119c835e81c6824083b9d40273dccfb5277a59e857d50"
+          },
+          "validation": {
+            "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/validations/debate-136.json",
+            "sha256": "3afc8df43f614ec6cc698a79eaeaa0525115d4549bc014755883dd1f1034e760"
+          },
+          "provenance": {
+            "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/provenance/debate-136.json",
+            "sha256": "46752ab4491cfe03452ef8f78e33ce3910a67ffa688f4c724e1708e94e445ac0"
+          }
+        }
+      },
+      {
+        "debateNumber": "83",
+        "debateId": "loke-oppy-kalam-causal-principle-2020",
+        "contextIndex": 2,
+        "originalContextIndex": 4,
+        "failedFields": [
+          {
+            "path": "moveProse.pro-first-cause-01.critique",
+            "words": 101,
+            "characters": 885,
+            "acceptanceWords": [
+              105,
+              130
+            ],
+            "targetWords": [
+              112,
+              118
+            ],
+            "minimumCharacters": 880,
+            "wordsBelowMinimum": 4,
+            "wordsAboveMaximum": 0
+          }
+        ],
+        "wordsRemoved": 0,
+        "wordsAdded": 4,
+        "diagnosticReplay": {
+          "status": "passed",
+          "debateNumber": "83",
+          "moves": 20,
+          "critiques": 20,
+          "minimumCritiqueCharacters": 880,
+          "tags": 2,
+          "quoteExactSourceMatches": 2,
+          "overallCommentarySides": 2,
+          "noveltyItems": 20,
+          "introducedItems": 4,
+          "newArguments": 6,
+          "aiExtensionSides": 2,
+          "calculatedScoresAuthoredByModel": 0,
+          "lockedScoresUnchanged": true
+        },
+        "artifacts": {
+          "output": {
+            "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/outputs/debate-83.json",
+            "sha256": "1fbe0189b9bb7d3bc0b549c1c4d231ad0346d076e0031b2ec3c79b43928ee77b"
+          },
+          "packet": {
+            "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/packets/debate-83.json",
+            "sha256": "535ae5a2b30886c92025e2f3963b3cd3a65a7a51f2d11c40bc3cc2d59b531fe3"
+          },
+          "validation": {
+            "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/validations/debate-83.json",
+            "sha256": "83a4e19b36f083ddd8cb5a8a2f9da5cfb36df47a13b0cd5df43001b9d877e8a5"
+          },
+          "provenance": {
+            "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/provenance/debate-83.json",
+            "sha256": "907491d4db01773fbcabc221698ec9e4d21ab98c4d5624a555cec69b3a97c26f"
+          }
+        }
+      }
+    ]
+  },
+  "rampDisposition": {
+    "contextsPlanned": 8,
+    "contextsAttempted": 3,
+    "contextsPassed": 1,
+    "contextsFailed": 2,
+    "contextsUnattempted": 5,
+    "acceptedDebate": "04",
+    "unattemptedDebates": [
+      "66",
+      "126",
+      "99",
+      "93",
+      "101"
+    ],
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0
+  },
+  "diagnosticReplay": {
+    "persistedCorrectedOutputs": false,
+    "originalOutputsModified": false,
+    "completeDebatesPassed": [
+      {
+        "debateNumber": "136",
+        "result": {
+          "status": "passed",
+          "debateNumber": "136",
+          "moves": 18,
+          "critiques": 18,
+          "minimumCritiqueCharacters": 958,
+          "tags": 0,
+          "quoteExactSourceMatches": 2,
+          "overallCommentarySides": 2,
+          "noveltyItems": 18,
+          "introducedItems": 4,
+          "newArguments": 4,
+          "aiExtensionSides": 2,
+          "calculatedScoresAuthoredByModel": 0,
+          "lockedScoresUnchanged": true
+        }
+      },
+      {
+        "debateNumber": "83",
+        "result": {
+          "status": "passed",
+          "debateNumber": "83",
+          "moves": 20,
+          "critiques": 20,
+          "minimumCritiqueCharacters": 880,
+          "tags": 2,
+          "quoteExactSourceMatches": 2,
+          "overallCommentarySides": 2,
+          "noveltyItems": 20,
+          "introducedItems": 4,
+          "newArguments": 6,
+          "aiExtensionSides": 2,
+          "calculatedScoresAuthoredByModel": 0,
+          "lockedScoresUnchanged": true
+        }
+      }
+    ]
+  },
+  "prospectiveRecoveryOnly": {
+    "currentlyAuthorizedUnderStandingAuthorization": true,
+    "repairPacketsPrepared": 0,
+    "repairPacketMaximumWritableFields": 2,
+    "proposedRepairPacketCount": 6,
+    "proposedRepairPartition": [
+      {
+        "debateNumber": "136",
+        "writableFields": [
+          "moveProse.con-calibrated-existence-baseline.critique",
+          "moveProse.con-anonymous-late-changing-transmission.critique"
+        ]
+      },
+      {
+        "debateNumber": "136",
+        "writableFields": [
+          "moveProse.pro-miracle-content-method-challenge.critique",
+          "moveProse.pro-attestation-can-raise-miracle-probability.critique"
+        ]
+      },
+      {
+        "debateNumber": "136",
+        "writableFields": [
+          "moveProse.pro-acts-ending-supports-early-date.critique",
+          "moveProse.pro-variation-compatible-with-testimony.critique"
+        ]
+      },
+      {
+        "debateNumber": "136",
+        "writableFields": [
+          "moveProse.pro-local-knowledge-supports-continuity.critique",
+          "moveProse.con-empty-tomb-narrative-not-verification.critique"
+        ]
+      },
+      {
+        "debateNumber": "136",
+        "writableFields": [
+          "moveProse.con-bodily-scenes-as-polemical-development.critique"
+        ]
+      },
+      {
+        "debateNumber": "83",
+        "writableFields": [
+          "moveProse.pro-first-cause-01.critique"
+        ]
+      }
+    ],
+    "proposedModel": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription"
+    },
+    "attemptsMaximumPerPacket": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 0
+  },
+  "preservedControls": {
+    "participantJudgmentWasScoreBlind": true,
+    "scoresChanged": false,
+    "sourcesChanged": false,
+    "modelContextsExecutedForDiagnosis": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "productionMutation": false
+  },
+  "authorization": {
+    "standingAuthorizationApplies": true,
+    "repairPacketPreparation": true,
+    "repairModelExecutionAfterFrozenPreparationAndActivation": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveRepair": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "coreArtifacts": {
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/execution-activation.json",
+      "sha256": "65288848fb6e1461caab9d85262357cd9c3d30e28cfe6cd9feeba02f8c8dc150"
+    },
+    "harnessCorrection": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/execution-harness-correction-1.json",
+      "sha256": "0517f886ce84a5a6f0dea34deaf3b5726ad8e3b81c2b09eda2f42d9ec19913fe"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/model-execution.json",
+      "sha256": "dde1427b0b29f6eb6dfd83b4f467fc9f3287c01434c0c64855e39dcc55daec4c"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-2/analysis.json",
+      "sha256": "b3f3cb78ddc4411c34b853353651440c506f4f5821a6fe3f49c5906b5fd94531"
+    }
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-standing-authorization.json",
+    "sha256": "c6f02c8459751d38cd1f9b213eeccfd22e35b791f92c168999124145d43cf5b7",
+    "status": "frozen-active-batch-02-remaining-publication-standing-authorization"
+  },
+  "nextRequiredAction": "prepare-six-bounded-debate-136-and-83-publication-repair-packets-under-standing-authorization"
+}
