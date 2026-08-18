@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-4-analysis-harness-correction-1",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-resumption-4-analysis-harness-correction-1",
+  "status": "frozen-batch-02-publication-resumption-4-analysis-harness-candidate-source-correction-1",
+  "frozenAt": "2026-08-18T18:52:07.000Z",
+  "checkpointCommit": "8c6ccf457a0ddc53a7c6abed9a88ba7b7fb42735",
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "diagnosis": {
+    "category": "deterministic-analysis-harness-candidate-source-mismatch",
+    "failedExpression": "activation.acceptedDebate66.output",
+    "missingActivationKeys": [
+      "acceptedDebate66",
+      "acceptedDebate126",
+      "acceptedDebate99"
+    ],
+    "preparationContainsAllAcceptedDebates": true,
+    "acceptedModelOutputsValid": 2,
+    "modelContextsRerun": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "correctionBoundary": {
+    "originalAnalyzer": "scripts/analyze-assessment-production-post-canary-batch-02-publication-resumption-4.mjs",
+    "correctedAnalyzer": "scripts/analyze-assessment-production-post-canary-batch-02-publication-resumption-4-correction-1.mjs",
+    "exactChange": "fall back from the activation record to the authenticated preparation manifest for accepted-debate records omitted by the activation serializer",
+    "validatorChanged": false,
+    "modelOutputsChanged": false,
+    "scoresChanged": false,
+    "sourcesChanged": false,
+    "acceptedPublicationFieldsChanged": false
+  },
+  "lockedInputs": {
+    "preparation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-4/execution-preparation-manifest.json",
+      "sha256": "627924d0b631d84ace2f3be364a4837be25a5fde255fa53b0b9dfdf0c979c669"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-4/execution-activation.json",
+      "sha256": "3b189098780d6befbacc18f714565f52160f058e12bdd681fed311d56a31be2f"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-4/model-execution.json",
+      "sha256": "9f96d75e90dc032ef23ee29fede7db842877259cad4347b2eb8ffb1a3e2ae28c"
+    },
+    "originalAnalyzer": {
+      "path": "scripts/analyze-assessment-production-post-canary-batch-02-publication-resumption-4.mjs",
+      "sha256": "c8fde2c46656ea5e9d839233d43403050f8f3b065d7cc8f4dba8e18b1fb0e520"
+    },
+    "correctedAnalyzer": {
+      "path": "scripts/analyze-assessment-production-post-canary-batch-02-publication-resumption-4-correction-1.mjs",
+      "sha256": "3b221d4ed21fcbbddb31ab66ac89a5b04ee69093bf5c35f63d006a890d5ded94"
+    }
+  },
+  "executionPolicy": {
+    "correctedAnalyzerPasses": 1,
+    "modelContexts": 0,
+    "modelRetries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "correctedDeterministicAnalysis": true,
+    "modelExecution": false,
+    "repairPacketPreparation": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "futureOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-4/analysis.json",
+  "nextRequiredAction": "execute-exactly-one-corrected-batch-02-publication-resumption-4-analysis-pass"
+}
