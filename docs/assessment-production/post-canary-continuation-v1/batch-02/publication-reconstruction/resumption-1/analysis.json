@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-analysis",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-resumption-1",
+  "status": "post-canary-batch-02-publication-resumption-failed-validation",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-1/execution-preparation-manifest.json",
+    "preparationSha256": "333895c0d004fc48d410ff7acb4efba5dbcc78b4dcbd6c7a85373eba3c397b36",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-1/execution-activation.json",
+    "activationSha256": "f406f369e9ffedcaf14cb75ca5776bf7e4b7d08f0689b34b310ab46e863a973e",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-1/model-execution.json",
+    "executionSha256": "4a86980ae46d62ace38d705e7bc2900f17c49d472e83ed6fbb2113d0f3926bf5",
+    "acceptedDebate103": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/repair-1/merged/debate-103.json"
+  },
+  "acceptedDebate103": {
+    "status": "passed-repaired-and-complete-publication-validation",
+    "validation": {
+      "status": "passed",
+      "debateNumber": "103",
+      "moves": 17,
+      "critiques": 17,
+      "minimumCritiqueCharacters": 901,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 16,
+      "introducedItems": 4,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    },
+    "repairContexts": 9,
+    "repairedFields": 17,
+    "immutableFieldsChanged": 0,
+    "lockedScoresUnchanged": true
+  },
+  "execution": {
+    "contextsPlanned": 9,
+    "contextsAttempted": 1,
+    "contextsUnattempted": 8,
+    "validContexts": 0,
+    "invalidContexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumObservedConcurrency": 1,
+    "wallElapsedMs": 352402,
+    "aggregateModelElapsedMs": 352387
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 0,
+      "originalContextIndex": 1,
+      "debateNumber": "172",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    }
+  ],
+  "gate": {
+    "resumptionSemanticPass": false,
+    "cohortSemanticPass": false,
+    "timingPass": true,
+    "resumptionValidContexts": 0,
+    "cohortValidDebates": 1,
+    "cohortMoves": 17,
+    "cohortCritiques": 17,
+    "cohortExactSourceQuotes": 2,
+    "cohortOverallCommentarySides": 2,
+    "cohortAIExtensionSides": 2,
+    "minimumCritiqueCharacters": 901,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "totals": {
+    "acceptedRepairedDebates": 1,
+    "acceptedRepairContexts": 9,
+    "repairedFields": 17,
+    "resumptionModelContexts": 1,
+    "cohortDebates": 1,
+    "cohortMoves": 17,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0,
+    "paidServiceCalls": 0,
+    "publicationCompilationPasses": 0,
+    "publicationFinalizations": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "integrity": {
+    "participantJudgmentWasScoreBlind": true,
+    "scoresRemainedImmutable": true,
+    "acceptedDebate103RepairReplayed": true,
+    "everyAcceptedResumptionOutputReplayedDeterministically": true,
+    "aiExtensionExcludedFromScores": true,
+    "retriesPerformed": false,
+    "timeoutExtensionsPerformed": false,
+    "correctionContextsPerformed": false,
+    "publicationCompiled": false,
+    "publicationFinalized": false,
+    "productionMutated": false
+  },
+  "authorization": {
+    "failureDiagnosis": true,
+    "repairPacketPreparation": true,
+    "repairModelExecution": false,
+    "publicationCompilationPreparation": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "diagnose-batch-02-publication-resumption-failure-under-standing-authorization"
+}
