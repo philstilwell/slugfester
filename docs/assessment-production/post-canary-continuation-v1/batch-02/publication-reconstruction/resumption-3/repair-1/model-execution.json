@@ -1,0 +1,403 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-publication-resumption-3-repair-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-02-publication-resumption-3-repair-1",
+  "status": "batch-02-resumption-3-five-context-publication-repair-gate-passed",
+  "gateStartedAt": "2026-08-18T18:35:57.094Z",
+  "gateCompletedAt": "2026-08-18T18:38:13.517Z",
+  "contextsPlanned": 5,
+  "contextsAttempted": 5,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 5,
+  "invalidContexts": 0,
+  "attempts": 5,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 136422,
+  "aggregateModelElapsedMs": 210285,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3,
+        4
+      ],
+      "validContextIndexes": [
+        3,
+        4
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T18:35:57.096Z",
+      "completedAt": "2026-08-18T18:36:30.668Z",
+      "elapsedMs": 33572,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-natural-emergent-spacetime.critique",
+        "moveProse.con-physical-basis-more-parsimonious.critique"
+      ],
+      "copiedInputBytes": 32662,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "12ac8c7c7286be0606b41b92df870c9ae126f5bbb56d610fe41bb8dfe9db0750",
+      "stderrSha256": "90e4970329aff798776ae2d9f833546f0e8106a24b2925de7ab81e7432d3952b",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "f3fefa67e8c6d5b5efa09bb5e7dcf40d22c1e97c481d332b11885660cceac3b5",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "99",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-natural-emergent-spacetime.critique",
+            "words": 118,
+            "characters": 1008,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-physical-basis-more-parsimonious.critique",
+            "words": 118,
+            "characters": 984,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T18:36:30.680Z",
+      "completedAt": "2026-08-18T18:37:11.395Z",
+      "elapsedMs": 40715,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-induction-natural-consciousness.critique",
+        "moveProse.pro-deeper-laws-compatible-with-mind.critique"
+      ],
+      "copiedInputBytes": 32567,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "385b02f5235b3b4b2b48e75f91203b973d264140698d4a8469ea85be84c46e0f",
+      "stderrSha256": "21232c3f41b20c9a602e0b0692102437ec9aec75429da3908ab79d323a07b08d",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "d28b7e2b60e8e6f4bd51ac10846d464a68436610eaf90a2bbdc7419b1da8d9fc",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "99",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-induction-natural-consciousness.critique",
+            "words": 119,
+            "characters": 1031,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-deeper-laws-compatible-with-mind.critique",
+            "words": 118,
+            "characters": 1001,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T18:36:30.680Z",
+      "completedAt": "2026-08-18T18:37:31.783Z",
+      "elapsedMs": 61103,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-necessary-foundation-identified-as-god.critique",
+        "moveProse.con-natural-cosmic-foundation.critique"
+      ],
+      "copiedInputBytes": 32109,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "c827ea17df5d1fee27a6d727c109f3ba5f70a9147cd8f5679fbab35b06a04f64",
+      "stderrSha256": "d1a5057e7adb6c05be410b36b9e0cb8f967cfe4a1def59d0705765249d179163",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "b81296d12fea8670dc9e442674977e6c55a344cbcd77f6c6c3848bb90ee154cc",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "99",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-necessary-foundation-identified-as-god.critique",
+            "words": 118,
+            "characters": 949,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-natural-cosmic-foundation.critique",
+            "words": 116,
+            "characters": 903,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T18:37:31.793Z",
+      "completedAt": "2026-08-18T18:38:13.507Z",
+      "elapsedMs": 41714,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-fundamental-consciousness-ends-regress.critique",
+        "moveProse.con-conscious-god-not-physical-theory.critique"
+      ],
+      "copiedInputBytes": 32575,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "699e3fd13179ad1d2ba8e8d6d4e8721e117f389c3b134937198a0058d013103c",
+      "stderrSha256": "b9ee0ce314d6582447a6ac0cd8fe479ad5a39f843a1cac9050132ce68615c8c4",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "15c6415df54b3b0c4588b1726a2b6548fad1cbc38d1cb243c67119382d9a20e9",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "99",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-fundamental-consciousness-ends-regress.critique",
+            "words": 117,
+            "characters": 995,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-conscious-god-not-physical-theory.critique",
+            "words": 117,
+            "characters": 943,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 4,
+      "packetIndex": 4,
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T18:37:31.793Z",
+      "completedAt": "2026-08-18T18:38:04.974Z",
+      "elapsedMs": 33181,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-neural-correlation-interface-model.critique"
+      ],
+      "copiedInputBytes": 25644,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "eeeefe25c6498e2b9d710885e32fec09f449b1c1a2a9d73238b457a983454765",
+      "stderrSha256": "7d9e9ce6d04b364083fe1d9a4432699a45ebf2aedfee248a9817a0f1fa73378d",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "30dde267548642237cb68908e523f664957a8b2a4d3b5a4bf8aa1e22ca6e3582",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "99",
+        "packetIndex": 4,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-neural-correlation-interface-model.critique",
+            "words": 116,
+            "characters": 989,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalFailedOutputPreserved": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicMergeAndCompleteValidation": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "remainingTwoContextExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
