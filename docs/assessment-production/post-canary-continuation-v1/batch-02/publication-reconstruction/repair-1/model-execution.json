@@ -1,0 +1,663 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-debate-103-publication-repair-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-02-debate-103-publication-repair-1",
+  "status": "batch-02-debate-103-nine-context-publication-repair-gate-passed",
+  "gateStartedAt": "2026-08-18T17:24:50.625Z",
+  "gateCompletedAt": "2026-08-18T17:29:32.535Z",
+  "contextsPlanned": 9,
+  "contextsAttempted": 9,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 9,
+  "invalidContexts": 0,
+  "attempts": 9,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 281908,
+  "aggregateModelElapsedMs": 480435,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "validContextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:24:50.627Z",
+      "completedAt": "2026-08-18T17:25:31.892Z",
+      "elapsedMs": 41265,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-rationality-evidential-standard.critique",
+        "moveProse.pro-gratuitous-evil-divine-love.critique"
+      ],
+      "copiedInputBytes": 30670,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "1a34a97fdd636d1b55b410ea92546b0cdc99eab370791878265a9cf44e38f6ce",
+      "stderrSha256": "ea5c961a1a30918303eea5a648a029d3a8c486f8e4561e51a0b220a6f467b9c3",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "a2abcf355cd83837cfe878493ec76a451ca8d4780404bdeb2781b945a770312a",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-rationality-evidential-standard.critique",
+            "words": 117,
+            "characters": 910,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-gratuitous-evil-divine-love.critique",
+            "words": 118,
+            "characters": 936,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:25:31.902Z",
+      "completedAt": "2026-08-18T17:26:47.618Z",
+      "elapsedMs": 75716,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-salvation-confusion-divine-love.critique",
+        "moveProse.con-reason-designed-cognition.critique"
+      ],
+      "copiedInputBytes": 31265,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "f55d505859e379aa6ef5b5765d7f72969d70e13e60f4e1fe7d5e061c2baa50b0",
+      "stderrSha256": "e19f933699333d65ac037a39b1d7c912d617e29a0132914c4a808b71f97cb10b",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "05eee1fdb8e7cd24d18644d4c5364fd1668b717dc6a1fee1b00cded13e3511d7",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-salvation-confusion-divine-love.critique",
+            "words": 115,
+            "characters": 1005,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-reason-designed-cognition.critique",
+            "words": 118,
+            "characters": 961,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:25:31.902Z",
+      "completedAt": "2026-08-18T17:26:10.943Z",
+      "elapsedMs": 39041,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-life-permitting-fine-tuning.critique",
+        "moveProse.con-objective-morality-grounded-in-god.critique"
+      ],
+      "copiedInputBytes": 30595,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "45197d8e5bbf91f3a5b55b7e113c456446793a4c9f718584cc176f95046a2e50",
+      "stderrSha256": "0c03f455d5fa1ca95a633bc1a8d1c0a152cf54e174a185724134f13e1f00aac8",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "1dd3e475329670ef5f437aa1d8be8c4134ef853ee22fa6eb7b32bf0290616d48",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-life-permitting-fine-tuning.critique",
+            "words": 115,
+            "characters": 953,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-objective-morality-grounded-in-god.critique",
+            "words": 119,
+            "characters": 901,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:26:47.628Z",
+      "completedAt": "2026-08-18T17:27:55.216Z",
+      "elapsedMs": 67588,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-evolution-cognitive-reliability.critique",
+        "moveProse.con-truth-directed-designed-intelligence.critique"
+      ],
+      "copiedInputBytes": 32851,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "7e286cf1520d9ce566802e635cd54dc68ba9d79290aeae36a1dd93785348fa6a",
+      "stderrSha256": "55c852813b46bf059164c9eeacfdaf05d27092c6ab1e78a94f98eac7648152c5",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "9b18cedbffd0b04bfca7e6dcd05eb9a4492768f91d75c39ad4de7f9b1d35fccc",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-evolution-cognitive-reliability.critique",
+            "words": 113,
+            "characters": 976,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-truth-directed-designed-intelligence.critique",
+            "words": 116,
+            "characters": 942,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 4,
+      "packetIndex": 4,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:26:47.628Z",
+      "completedAt": "2026-08-18T17:27:37.252Z",
+      "elapsedMs": 49624,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-suffering-counterevidence-not-defeater.critique",
+        "moveProse.pro-creator-evidence-classical-god-gap.critique"
+      ],
+      "copiedInputBytes": 32631,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "b0ca88dbdc3509c78de6ec360728789174ce702da7f200eccf9e5ed4adce2825",
+      "stderrSha256": "d3da5f075709c9b758f72c9a529a22b8e1e82372027f7475de0d626fb511639a",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "d5d4b0b00b1f264a5669f7dd55d173b507dc544baa6ea6bcb883e821b73922ff",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 4,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-suffering-counterevidence-not-defeater.critique",
+            "words": 115,
+            "characters": 1009,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-creator-evidence-classical-god-gap.critique",
+            "words": 116,
+            "characters": 917,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 5,
+      "packetIndex": 5,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:27:37.261Z",
+      "completedAt": "2026-08-18T17:28:27.814Z",
+      "elapsedMs": 50553,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-evolution-moral-intuitions.critique",
+        "moveProse.pro-divine-command-dilemma.critique"
+      ],
+      "copiedInputBytes": 32247,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "50a75d36727000eb91e5b4dd1bccbe1af0c7bdfbe65b7c7998c412aabbfb2f72",
+      "stderrSha256": "43b7042e0bcef78b27b403a60879c4fff26c7cf5099a951ce9a05936d000bef3",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "6ea985fe9df1993d3fb8d2c00d2c53e19c8ad18a623e5daa40344e36b9601642",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 5,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-evolution-moral-intuitions.critique",
+            "words": 118,
+            "characters": 977,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-divine-command-dilemma.critique",
+            "words": 117,
+            "characters": 916,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 6,
+      "packetIndex": 6,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:27:55.223Z",
+      "completedAt": "2026-08-18T17:28:58.589Z",
+      "elapsedMs": 63366,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-biblical-revelation-and-human-dignity.critique",
+        "moveProse.con-euthyphro-divine-nature-resolution.critique"
+      ],
+      "copiedInputBytes": 32482,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "9e1b99980df0c708b79226246253abee24ea53cbfb7d5a5dcf3d5d09ed8039a8",
+      "stderrSha256": "d55faa44ff9bfea5e45a3fcaa2c98450f7a17fef8bd64db3961f6fc25e024956",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "67cf9eada50588e55a15ddd4ccd8b8603f2833549d67dd01b34d924721289d95",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 6,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-biblical-revelation-and-human-dignity.critique",
+            "words": 117,
+            "characters": 977,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-euthyphro-divine-nature-resolution.critique",
+            "words": 118,
+            "characters": 907,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 7,
+      "packetIndex": 7,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:28:27.821Z",
+      "completedAt": "2026-08-18T17:29:27.175Z",
+      "elapsedMs": 59354,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-history-does-not-establish-miracles.critique",
+        "moveProse.con-guided-evolution-and-human-purpose.critique"
+      ],
+      "copiedInputBytes": 31972,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "73ae3c1b6e82f836d29f6df901d6236817bb3d7e0adb16af3342cf19d2bcb682",
+      "stderrSha256": "744eda309a007332b8ed0d0e87ea152f141b8ee95bbb19727d757c9aab4852b8",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "d523c83b127d6bd50870058023fff37e06d5933e3f056440334b0c572e93c0e8",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 7,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-history-does-not-establish-miracles.critique",
+            "words": 114,
+            "characters": 930,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-guided-evolution-and-human-purpose.critique",
+            "words": 116,
+            "characters": 947,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 8,
+      "packetIndex": 8,
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-18T17:28:58.600Z",
+      "completedAt": "2026-08-18T17:29:32.528Z",
+      "elapsedMs": 33928,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-natural-selection-explains-complexity.critique"
+      ],
+      "copiedInputBytes": 25839,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "35c0d6c757e166afcca5db6a89f2f7e22eefde2dfa2abb53c105b0597e3089f9",
+      "stderrSha256": "7d0860895456c0db5d6cbbe128ae417bb16635c0d9e4e7a10d6c61e64f8bf1d0",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "9296929d8a7275b283ed481fcca17e34f3648eb5c5a9673dc9f6bbcd163d604a",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "103",
+        "packetIndex": 8,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-natural-selection-explains-complexity.critique",
+            "words": 118,
+            "characters": 979,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalFailedOutputPreserved": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicMergeAndCompleteValidation": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "remainingNineContextExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
