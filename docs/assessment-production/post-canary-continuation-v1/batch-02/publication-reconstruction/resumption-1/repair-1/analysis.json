@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-debate-172-publication-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-02-debate-172-publication-repair-1",
+  "status": "batch-02-debate-172-bounded-repair-and-complete-publication-validation-passed",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "stagingOnly": true,
+  "gate": {
+    "repairContextsPlanned": 1,
+    "repairContextsAttempted": 1,
+    "repairContextsPassed": 1,
+    "repairContextsFailed": 0,
+    "repairContextsUnattempted": 0,
+    "completeDebateValidationPassed": true,
+    "correctedFields": [
+      {
+        "field": "moveProse.pro-christ-centered-progressive-revelation.critique",
+        "words": 116,
+        "characters": 990,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.pro-enemy-love-resists-dehumanization.critique",
+        "words": 118,
+        "characters": 947,
+        "sentences": 4
+      }
+    ],
+    "correctedFieldCount": 2,
+    "movesValidated": 19,
+    "critiquesValidated": 19,
+    "exactSourceQuotesValidated": 2,
+    "overallCommentarySidesValidated": 2,
+    "aiExtensionSidesValidated": 2,
+    "immutableFieldsChanged": 0,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "originalFailedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-1/outputs/debate-172.json",
+    "originalFailedOutputPreserved": true,
+    "repairOutputs": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-1/repair-1/outputs/packet-0.json"
+    ],
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-1/repair-1/merged/debate-172.json",
+    "completeValidation": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-1/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-reconstruction/resumption-1/repair-1/merge-audit.json"
+  },
+  "totals": {
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "eightContextResumptionManifestPreparation": true,
+    "eightContextModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-a-separate-eight-context-batch-02-publication-resumption-manifest-under-standing-authorization"
+}
