@@ -1,0 +1,297 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-compatibility-execution-activation",
+  "protocolId": "assessment-production-post-canary-batch-02-production-compatibility",
+  "status": "post-canary-batch-02-compatibility-execution-authorized-and-frozen",
+  "activatedAt": "2026-08-19T23:22:48Z",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "directIncrementalCostCapUsd": 0,
+  "userAuthorization": {
+    "instruction": "I approve the activation and exactly one deterministic Batch 2 compatibility staging pass.",
+    "scopeInterpretation": "Activate the frozen Batch 2 compatibility manifest and execute exactly one validator-and-staged-ledger compatibility pass with no reruns, models, paid services, production ledger publication, production data mutation, or Batch 3 selection."
+  },
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/preparation-manifest.json",
+    "sha256": "f980bcb67237b8621d1ff9dd04a882a315183a4331db8612130d816ba22e93f6"
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/analysis.json",
+    "sha256": "a72b41449caf9743f3f4f10169043c8226297dab489b896b4c1991a4731389a7",
+    "snapshot": {
+      "schemaVersion": "1.0-assessment-production-post-canary-batch-02-compatibility-preparation-analysis",
+      "protocolId": "assessment-production-post-canary-batch-02-production-compatibility",
+      "status": "post-canary-batch-02-compatibility-plan-freeze-passed",
+      "productionCanary": false,
+      "batchNumber": 2,
+      "planningOnly": true,
+      "preparation": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/preparation-manifest.json",
+        "sha256": "f980bcb67237b8621d1ff9dd04a882a315183a4331db8612130d816ba22e93f6"
+      },
+      "finding": {
+        "id": "batch-02-site-ledger-adapter-and-validator-route",
+        "adapterDefined": true,
+        "validatorRouteDefined": true,
+        "executed": false
+      },
+      "checks": {
+        "finalLedgerReplayPassed": true,
+        "repositoryScoreReplaysPassed": 10,
+        "candidateCompatibilityChecksPassed": 10,
+        "exactAdapterOutputsFrozen": 10,
+        "validatorBaselineHashFrozen": true,
+        "checkpointRoutePreservationSpecified": true,
+        "batch01RoutePreservationSpecified": true,
+        "legacyRoutePreservationSpecified": true,
+        "optionalReferenceBehaviorPreservationSpecified": true,
+        "activeValidatorChanged": false,
+        "stagingLedgersWritten": 0,
+        "productionLedgersWritten": 0,
+        "productionDebatesChanged": false,
+        "modelContexts": 0,
+        "paidServiceCalls": 0,
+        "productionMutationPerformed": false
+      },
+      "totals": {
+        "debates": 10,
+        "planPackets": 10,
+        "sections": 51,
+        "moves": 190,
+        "oneSidedDisplayRows": 14,
+        "overallBlunders": 61,
+        "emptyReferenceLinks": 55,
+        "suppliedReferenceLinks": 6,
+        "proposedAdapterBytes": 1127398,
+        "repositoryScoreReplays": 10,
+        "modelContexts": 0,
+        "modelAuthoredScores": 0,
+        "scoreChanges": 0,
+        "proseChanges": 0,
+        "attributionChanges": 0,
+        "optionalReferenceBehaviorChanges": 0,
+        "paidServiceCalls": 0,
+        "directIncrementalCostUsd": 0,
+        "productionMutations": 0
+      },
+      "authorization": {
+        "compatibilityPlanPreparation": true,
+        "compatibilityExecutionActivation": false,
+        "compatibilityExecution": false,
+        "validatorMigration": false,
+        "stagingLedgerWrite": false,
+        "modelExecution": false,
+        "paidServices": false,
+        "productionLedgerPublication": false,
+        "productionMutation": false,
+        "nextBatchSelection": false
+      },
+      "stopRules": {
+        "separateExecutionApprovalRequired": true,
+        "exactlyOneDeterministicStagingPassIfApproved": true,
+        "rerunForbidden": true,
+        "sourceHashMismatchBlocks": true,
+        "packetHashMismatchBlocks": true,
+        "adapterHashMismatchBlocks": true,
+        "unexpectedWriteBlocks": true,
+        "testFailureBlocks": true,
+        "checkpointRouteRegressionBlocks": true,
+        "batch01RouteRegressionBlocks": true,
+        "legacyRouteRegressionBlocks": true,
+        "suppliedReferenceValidationWeakeningForbidden": true,
+        "optionalReferenceBehaviorChangeForbidden": true,
+        "rubricRelabelingForbidden": true,
+        "modelRelabelingForbidden": true,
+        "scoreProtocolRelabelingForbidden": true,
+        "scoreChangeForbidden": true,
+        "proseChangeForbidden": true,
+        "attributionChangeForbidden": true,
+        "scoreRerunForbidden": true,
+        "modelExecutionForbidden": true,
+        "paidServiceForbidden": true,
+        "productionLedgerPublicationForbidden": true,
+        "productionMutationForbidden": true,
+        "nextBatchSelectionForbidden": true
+      },
+      "nextAuthorizedAction": "user-approval-required-before-batch-02-production-compatibility-execution-activation"
+    }
+  },
+  "validator": {
+    "path": "scripts/validate-debates.mjs",
+    "baselineSha256": "bd61fcb97ea4480b2768fa4575124eac354b09beb8276ae4a3ba04df9812ddcd",
+    "proposedSha256": "3540467e3d98cb6b0fc2a6b47cfacbdbc5b2abc43ae9bf9eb000825477624bf0",
+    "proposedBytes": 29514,
+    "exactTransformationLibrary": "scripts/lib/assessment-production-post-canary-batch-02-compatibility-execution.mjs",
+    "routeCredentialStatus": "post-canary-batch-02-compatibility-execution-authorized-and-frozen"
+  },
+  "packetHashes": [
+    {
+      "debateNumber": "103",
+      "debateId": "woodford-edwards-rational-belief-god-2023",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-103.json",
+      "sha256": "3262fe90a193f24281019c8ffbd87b8c7f75109a7b790679ce5709a86376cca2",
+      "proposedAdapterSha256": "23979fdd9cd993babbd1e643ec2b49dcf2a4ff65f62bc8ca55ed31b55e73c00e",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/woodford-edwards-rational-belief-god-2023.json",
+      "stagedLedgerSha256": "23979fdd9cd993babbd1e643ec2b49dcf2a4ff65f62bc8ca55ed31b55e73c00e",
+      "stagedLedgerBytes": 99226,
+      "productionLedgerPath": "docs/assessment-ledgers/woodford-edwards-rational-belief-god-2023.json"
+    },
+    {
+      "debateNumber": "172",
+      "debateId": "hitchens-mcgrath-religious-belief-2007",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-172.json",
+      "sha256": "84767d6bdd52ddfd7f4744d0539f7ccbd811901eb2d5aac742d12a4b4a6a57de",
+      "proposedAdapterSha256": "d5698a17ca5130ac9f13e6dd640618115b8d0e03116d27fe5acfc8ee1a475f47",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/hitchens-mcgrath-religious-belief-2007.json",
+      "stagedLedgerSha256": "d5698a17ca5130ac9f13e6dd640618115b8d0e03116d27fe5acfc8ee1a475f47",
+      "stagedLedgerBytes": 110237,
+      "productionLedgerPath": "docs/assessment-ledgers/hitchens-mcgrath-religious-belief-2007.json"
+    },
+    {
+      "debateNumber": "04",
+      "debateId": "lennox-atkins-science-explain-everything-2019",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-04.json",
+      "sha256": "6ae17de5c841a37f47f510b19bf43079d109c6a93c9c037abdf8d239afec0ab8",
+      "proposedAdapterSha256": "66689e7a2b25579f17d2cf8af01ada044a6f8b8805defc3aca745e5a4816ef11",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/lennox-atkins-science-explain-everything-2019.json",
+      "stagedLedgerSha256": "66689e7a2b25579f17d2cf8af01ada044a6f8b8805defc3aca745e5a4816ef11",
+      "stagedLedgerBytes": 111187,
+      "productionLedgerPath": "docs/assessment-ledgers/lennox-atkins-science-explain-everything-2019.json"
+    },
+    {
+      "debateNumber": "136",
+      "debateId": "douthat-ehrman-resurrection-gospel-history-2026",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-136.json",
+      "sha256": "3036bf3fba3c6f7ae87dc7793a05281796cdb8ca05ee81b81bcaf3c45e66f5a5",
+      "proposedAdapterSha256": "21453dee76054514f6605db79529b488381a3b7555ad88f0db937550889cc59d",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/douthat-ehrman-resurrection-gospel-history-2026.json",
+      "stagedLedgerSha256": "21453dee76054514f6605db79529b488381a3b7555ad88f0db937550889cc59d",
+      "stagedLedgerBytes": 107182,
+      "productionLedgerPath": "docs/assessment-ledgers/douthat-ehrman-resurrection-gospel-history-2026.json"
+    },
+    {
+      "debateNumber": "83",
+      "debateId": "loke-oppy-kalam-causal-principle-2020",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-83.json",
+      "sha256": "9b130ca9c627e9bee8084024e8fbdfdfdb55deaae4980995df7834f71976e917",
+      "proposedAdapterSha256": "cb45753c739ebfb8013c2f5658cf3ed8c8ab2ca9fa4abb1771643ab748f107c0",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/loke-oppy-kalam-causal-principle-2020.json",
+      "stagedLedgerSha256": "cb45753c739ebfb8013c2f5658cf3ed8c8ab2ca9fa4abb1771643ab748f107c0",
+      "stagedLedgerBytes": 114323,
+      "productionLedgerPath": "docs/assessment-ledgers/loke-oppy-kalam-causal-principle-2020.json"
+    },
+    {
+      "debateNumber": "66",
+      "debateId": "donahue-fodor-case-against-christianity-2025",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-66.json",
+      "sha256": "305172ef100f894a83969b981bf9b3c3e8d4911acf33c6741fa1f0375562f035",
+      "proposedAdapterSha256": "7b951548dcf4110716ba5b82885ddaa123422e2c014281ca96e9dfbfa71ba476",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/donahue-fodor-case-against-christianity-2025.json",
+      "stagedLedgerSha256": "7b951548dcf4110716ba5b82885ddaa123422e2c014281ca96e9dfbfa71ba476",
+      "stagedLedgerBytes": 108727,
+      "productionLedgerPath": "docs/assessment-ledgers/donahue-fodor-case-against-christianity-2025.json"
+    },
+    {
+      "debateNumber": "126",
+      "debateId": "craig-clifton-kalam-cosmological-argument-2021",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-126.json",
+      "sha256": "0204f058d0dc04e7ddbf12e8895e969e2f02d366d0d239d689afa421c87664c6",
+      "proposedAdapterSha256": "c75445d9a3970d2ac28ae7a6330436e5b644c636ae633254694a7d3500559f4f",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/craig-clifton-kalam-cosmological-argument-2021.json",
+      "stagedLedgerSha256": "c75445d9a3970d2ac28ae7a6330436e5b644c636ae633254694a7d3500559f4f",
+      "stagedLedgerBytes": 108198,
+      "productionLedgerPath": "docs/assessment-ledgers/craig-clifton-kalam-cosmological-argument-2021.json"
+    },
+    {
+      "debateNumber": "99",
+      "debateId": "jones-jump-digital-physics-god-2019",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-99.json",
+      "sha256": "04cf27d9eb22ceb05fa8c81bed97b9cc970556772fbf82bcd3e1c3a25122adfe",
+      "proposedAdapterSha256": "deb2974bac689bc5fd60c43e92da52ce4403f5736e824511fca6ee31a5e6bc1a",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/jones-jump-digital-physics-god-2019.json",
+      "stagedLedgerSha256": "deb2974bac689bc5fd60c43e92da52ce4403f5736e824511fca6ee31a5e6bc1a",
+      "stagedLedgerBytes": 117554,
+      "productionLedgerPath": "docs/assessment-ledgers/jones-jump-digital-physics-god-2019.json"
+    },
+    {
+      "debateNumber": "93",
+      "debateId": "hunter-dillahunty-christian-god-exist-2019",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-93.json",
+      "sha256": "379a496987565f74b59eee6bb4f1f55ae799e06227c4d57977af92796c74128e",
+      "proposedAdapterSha256": "767e6fc5cfba71c96f57aa8cb0ea9ad73aa97c2826346841b108109e04bf1ea7",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/hunter-dillahunty-christian-god-exist-2019.json",
+      "stagedLedgerSha256": "767e6fc5cfba71c96f57aa8cb0ea9ad73aa97c2826346841b108109e04bf1ea7",
+      "stagedLedgerBytes": 117575,
+      "productionLedgerPath": "docs/assessment-ledgers/hunter-dillahunty-christian-god-exist-2019.json"
+    },
+    {
+      "debateNumber": "101",
+      "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/packets/debate-101.json",
+      "sha256": "8b2a50de8a6faf5ff556b47f8e257651883ca287cccaf79bb21b57a8d068b759",
+      "proposedAdapterSha256": "793e9f0b3ddd4f2531f61abc2a772fd02dcd8c4e11afdfd941366630cc6134f7",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/woodford-scrivener-religion-poisons-everything-2026.json",
+      "stagedLedgerSha256": "793e9f0b3ddd4f2531f61abc2a772fd02dcd8c4e11afdfd941366630cc6134f7",
+      "stagedLedgerBytes": 133189,
+      "productionLedgerPath": "docs/assessment-ledgers/woodford-scrivener-religion-poisons-everything-2026.json"
+    }
+  ],
+  "executionToolHashes": {
+    "scripts/lib/assessment-production-post-canary-batch-02-compatibility.mjs": "6e7ccec5fb136df0768d98dd6079735a1f3ef1248289699257bcadeb1f3f3d2c",
+    "scripts/lib/assessment-production-post-canary-batch-02-compatibility-execution.mjs": "caa49f8af2645f1d80f823ae1ae17cd432e75d7ba556a117715a17b1638e21a0",
+    "scripts/activate-assessment-production-post-canary-batch-02-compatibility.mjs": "7197816d692b61f104a1e015f43814541795df47765c1a3d934cb1389a6a4b09",
+    "scripts/test-assessment-production-post-canary-batch-02-compatibility-activation.mjs": "fe1f306e01fc138a0952e96a30ddaa5fe12314bfe1c0b8612d03566802ab68b4",
+    "scripts/run-assessment-production-post-canary-batch-02-compatibility.mjs": "111f8131236810154e6486401e053b45c3ac8445aa8ac736df7529f442d7b804",
+    "scripts/test-assessment-production-post-canary-batch-02-compatibility-execution.mjs": "8588b428a06342f6e545560eb02138a0e340a1028814e67d2102e478aa840a15"
+  },
+  "protectedProduction": {
+    "debates": {
+      "path": "src/data/debates.js",
+      "sha256": "89d1787ecba5e88dd788915615002fab5437f762f04ba97764dda419dbf115c1"
+    },
+    "references": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+    },
+    "productionLedgers": {
+      "files": 21,
+      "digest": "1d0b17f5d7dcc03786a50898c8e3f2b0981c8665a5e95cfc073c3d1775a0558c"
+    }
+  },
+  "executionDiscipline": {
+    "compatibilityPassesMaximum": 1,
+    "attemptsPerPass": 1,
+    "rerunsAllowed": false,
+    "retriesAllowed": false,
+    "automaticRepairsAllowed": false,
+    "packetRewritesAllowed": false,
+    "adapterRewritesAllowed": false,
+    "timeoutExtensionsAllowed": false
+  },
+  "requiredRegressions": [
+    "Batch 2 route positive and negative controls",
+    "checkpoint v2.2 route and score replay",
+    "Batch 1 route and score replay",
+    "legacy Rubric v2 and v2.1 calculations",
+    "reference validation",
+    "full repository check"
+  ],
+  "authorization": {
+    "executionActivation": true,
+    "compatibilityExecution": true,
+    "validatorMigration": true,
+    "stagingLedgerWrite": true,
+    "compatibilityPasses": 1,
+    "compatibilityRerun": false,
+    "packetRewrite": false,
+    "adapterRewrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-frozen-batch-02-production-compatibility-staging-pass-no-reruns"
+}
