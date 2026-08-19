@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-rendering-transport-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-02-rendering-verification-transport-readiness-resumption-1",
+  "status": "preserved-batch-02-bootstrap-only-transport-readiness-failure",
+  "diagnosedAt": "2026-08-19T12:00:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "affectedViewport": {
+    "debateNumber": "103",
+    "viewportName": "desktop",
+    "phase": "pointer",
+    "stage": "bootstrap"
+  },
+  "observedFailure": {
+    "category": "browser-transport-documentation-precondition",
+    "message": "Required documentation has not been read: \"capabilities/tab/cdp\". Read the instructions with await agent.documentation.get(\"capabilities/tab/cdp\").",
+    "bootstrapHttpStatus": 200,
+    "candidatePagesLoaded": 0,
+    "screenshotsCaptured": 0,
+    "evidenceFilesPersisted": 0,
+    "candidateSemanticValidationReached": false
+  },
+  "diagnosis": "The frozen pointer transport reached only its local diagnostic bootstrap. The browser controller refused low-level diagnostic access before any candidate navigation because its packaged CDP instructions had not yet been loaded.",
+  "materiality": {
+    "candidateChanged": false,
+    "participantScoresChanged": false,
+    "publicationFieldsChanged": false,
+    "productionChanged": false,
+    "sourceChanged": false
+  },
+  "originalPreparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/rendering-verification/preparation-manifest.json",
+    "sha256": "eb800a6726c56234d8a4d9495d5f8ff7fac64d624bf6c6686f0f8b4efdce2f7a"
+  },
+  "originalActivation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/rendering-verification/execution-activation.json",
+    "sha256": "ea249974b93cfbb6fb168e41b41eddcbb23c955bc898eced4bf62bd9e6041b6e"
+  },
+  "disposition": {
+    "originalActivationPreserved": true,
+    "originalAttemptNotPromoted": true,
+    "replacementAttemptRequiresSeparateFrozenResumption": true
+  },
+  "directIncrementalCostUsd": 0
+}
