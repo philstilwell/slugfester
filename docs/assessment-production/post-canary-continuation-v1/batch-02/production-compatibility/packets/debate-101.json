@@ -1,0 +1,2459 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-02-production-compatibility",
+  "status": "frozen-post-canary-batch-02-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "planningOnly": true,
+  "debateNumber": "101",
+  "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-finalization/output-bundle/final-candidates/debate-101.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-02/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-02/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-02/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-02/rendering-verification/resumption-1/rendering-audit.json",
+    "events": ".assessment-cache/captions/8J-WOwrq6bE/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "2b760a3ec2b69a32a7fa2e5dcddc679e6619a79f7cbfcb426e57d1928dd7d21c",
+    "calculatedScoresSha256": "15559f8d7d6b5cf8c3f5edc304359ddd1283e813725b3d01df09d8e2b7149aa2",
+    "finalizationAuditSha256": "69ac4aeae7a8ec810ba3f426d08402e3838e2cb6520439fdfb0288da86d4fd68",
+    "renderingAuditSha256": "5022557b5315ae792f3c7571c0262a187d3e5c15fb03715a948b85b58784cbfe",
+    "finalCandidateSha256": "de1aec74d256910efe866214d75fcdd024e3b92c8f3585d455372993254d256f",
+    "eventsPath": ".assessment-cache/captions/8J-WOwrq6bE/events.json",
+    "eventsSha256": "968c71aee765e95ddb5e1b4bc3649790cb3c7b846d0473c504ec049490fb954d",
+    "finalJudgmentSha256": "6434e9fc4cc325cf0377641ee6e4df90a89da33f3c73d9bd1e20a1a846560d28"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-compatibility/output-bundle/staged-ledgers/woodford-scrivener-religion-poisons-everything-2026.json",
+    "productionLedger": "docs/assessment-ledgers/woodford-scrivener-religion-poisons-everything-2026.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-02-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-02-production-compatibility",
+    "status": "frozen-post-canary-batch-02-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 2,
+    "debateNumber": "101",
+    "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-02-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "2b760a3ec2b69a32a7fa2e5dcddc679e6619a79f7cbfcb426e57d1928dd7d21c",
+      "calculatedScoresSha256": "15559f8d7d6b5cf8c3f5edc304359ddd1283e813725b3d01df09d8e2b7149aa2",
+      "finalizationAuditSha256": "69ac4aeae7a8ec810ba3f426d08402e3838e2cb6520439fdfb0288da86d4fd68",
+      "renderingAuditSha256": "5022557b5315ae792f3c7571c0262a187d3e5c15fb03715a948b85b58784cbfe",
+      "finalCandidateSha256": "de1aec74d256910efe866214d75fcdd024e3b92c8f3585d455372993254d256f",
+      "eventsPath": ".assessment-cache/captions/8J-WOwrq6bE/events.json",
+      "eventsSha256": "968c71aee765e95ddb5e1b4bc3649790cb3c7b846d0473c504ec049490fb954d",
+      "finalJudgmentSha256": "6434e9fc4cc325cf0377641ee6e4df90a89da33f3c73d9bd1e20a1a846560d28"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "101",
+      "debateId": "woodford-scrivener-religion-poisons-everything-2026",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-human-decency-before-doctrine",
+          "side": "pro",
+          "description": "Establish that compassion and other humane goods arise independently of religion, then show that religious doctrine, dogma, revelation, or institutional authority appropriates those goods while adding morally harmful conditions or obstructing reform.",
+          "successCriteria": "The route succeeds if independently available human decency explains the admitted goods and representative doctrinal and historical cases show religion adding material harm without supplying a necessary, uniquely religious humane contribution.",
+          "motionBridge": {
+            "bridgeId": "bridge-pro-motion-poison-test",
+            "tier": "motion",
+            "description": "Connect the motion to whether religion adds avoidable doctrinal harm to human goods that exist without it."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "bridge-pro-prior-human-goods",
+              "tier": "central",
+              "description": "Establish that compassion, community, equality, and reforming concern can arise outside or prior to Christian doctrine."
+            },
+            {
+              "bridgeId": "bridge-pro-doctrinal-harm",
+              "tier": "central",
+              "description": "Show that authoritative teachings or revelations introduce or entrench serious harms alongside claimed religious benefits."
+            },
+            {
+              "bridgeId": "bridge-pro-reform-away-from-specifics",
+              "tier": "central",
+              "description": "Explain humane religious reform as movement away from specific harmful rules toward broader human compassion."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "bridge-pro-institutional-history",
+              "tier": "subsidiary",
+              "description": "Test claims of Christian humanitarian causation against prolonged conduct under Christian institutional power."
+            },
+            {
+              "bridgeId": "bridge-pro-moral-test-cases",
+              "tier": "subsidiary",
+              "description": "Use concrete cases such as slavery, subordination, and conquest to test proposed religious moral foundations."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-christian-source-of-compassion",
+          "side": "con",
+          "description": "Distinguish corrupt religion from Christianity's governing sacred ideals, locate domination in a general human condition, and show how Christian anthropology and devotion supplied foundations and institutions for universal compassion, equality, and reform.",
+          "successCriteria": "The route succeeds if Christian doctrines provide a coherent basis and historically consequential mechanism for humane ideals that cannot be reduced to unaided tribal concern, while apparent religious harms can be distinguished from or corrected by those doctrines.",
+          "motionBridge": {
+            "bridgeId": "bridge-con-motion-sacred-humanism",
+            "tier": "motion",
+            "description": "Connect the motion to Christianity's capacity to originate, ground, and extend the humane ideals used to judge religious corruption."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "bridge-con-human-not-religious-poison",
+              "tier": "central",
+              "description": "Locate pride, violence, and domination in humanity generally rather than treating religion as their distinctive cause."
+            },
+            {
+              "bridgeId": "bridge-con-sacred-human-worth",
+              "tier": "central",
+              "description": "Ground equal human worth and moral obligation in divine love, the image of God, and the incarnation."
+            },
+            {
+              "bridgeId": "bridge-con-institutional-fruits",
+              "tier": "central",
+              "description": "Trace sacred ideals into practices and institutions extending protection and compassion beyond kin, status, or tribe."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "bridge-con-internal-critique",
+              "tier": "subsidiary",
+              "description": "Show how Christianity contains standards for condemning corrupt religious power and interpreting difficult inherited practices."
+            },
+            {
+              "bridgeId": "bridge-con-objective-moral-ground",
+              "tier": "subsidiary",
+              "description": "Explain why moral condemnation requires a foundation stronger than present agreement or culturally contingent preference."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-governing-poison-test",
+          "title": "The Governing Test: Prior Human Goods or Distinctive Religious Contribution",
+          "weightPercent": 18,
+          "rationale": "This issue defines what the motion requires by testing whether acknowledged religious goods are uniquely generated by religion or are independently human goods burdened by harmful additions."
+        },
+        {
+          "sectionId": "section-slavery-abolition-and-gradual-reform",
+          "title": "Slavery, Abolition, and the Pace of Christian Reform",
+          "weightPercent": 24,
+          "rationale": "Slavery supplies the debate's principal doctrinal and historical test of whether Christianity entrenched domination or furnished the anthropology and reforming trajectory that overcame it."
+        },
+        {
+          "sectionId": "section-women-family-and-social-institutions",
+          "title": "Women, Family, and Christian Social Institutions",
+          "weightPercent": 13,
+          "rationale": "The competing accounts of scripture, monogamy, and institutional change test whether Christian teaching constrained exploitation or imposed harmful subordination on women."
+        },
+        {
+          "sectionId": "section-moral-grounding-and-human-worth",
+          "title": "Moral Grounding, Divine Love, and Equal Human Worth",
+          "weightPercent": 18,
+          "rationale": "This issue concerns whether humane judgments can stand on shared human concern alone or require the Christian account of divine goodness, love, and persons bearing sacred worth."
+        },
+        {
+          "sectionId": "section-conquest-revelation-and-religious-violence",
+          "title": "Conquest Narratives, Revelation, and Religious Violence",
+          "weightPercent": 13,
+          "rationale": "The Canaan narratives provide a concentrated test of whether revelation authorizes grave moral harm or can be interpreted within a framework that ultimately prohibits religious violence."
+        },
+        {
+          "sectionId": "section-universal-compassion-and-historical-causation",
+          "title": "Universal Compassion and Its Historical Sources",
+          "weightPercent": 14,
+          "rationale": "This issue tests whether concern for outsiders, enemies, and the weak is an ordinary cross-cultural human capacity or a distinctively Christian ideal made socially expansive through doctrine and institutions."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-prior-human-decency",
+          "sectionId": "section-governing-poison-test",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "constructive",
+          "proposition": "Human decency precedes religion, which appropriates human compassion and hope while adding harmful doctrines, dogmas, and revelations.",
+          "sourceSpan": {
+            "startEvent": 75,
+            "endEvent": 168,
+            "excerpt": "We're talking of our decency, our love, our compassion, our hope. That's all in the well, and it's all human, it's all ours. And then, once upon a time, a religious community comes along, and they take over the village, and they approach the well, and they tip something in. They tip in the doctrines. They tip in the dogma. They tip in the revelations. And then the water changes"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Woodford announces the affirmative case and develops its recurring well metaphor throughout this uninterrupted opening passage.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-pro-motion-poison-test"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is a constructive opening move defining the affirmative account of prior human goods and religion's allegedly harmful additions; no earlier opposing target exists."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The well metaphor makes the proposition recoverable, but broad terms such as religion and human decency lack material scope qualifications."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical claim that humane goods are wholly human and religion merely adds poison outruns the metaphor offered as support."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The metaphor supplies a usable inference, but the bridge from independent human capacities to religion's merely appropriative role remains underdeveloped."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly states the route-completion theory that religion adds avoidable doctrinal harm to independently existing human goods."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move develops its own governing account rather than engaging a sufficiently specified live opposing interpretation."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "Within constructive moves, it clearly establishes the central affirmative framing and supplies a memorable explanatory model."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies decency, love, compassion, and hope as already in the human well, followed by doctrine, dogma, and revelation as additions.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-unique-good-without-harm-test",
+          "sectionId": "section-governing-poison-test",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "constructive",
+          "proposition": "The governing poison test asks whether religion can contribute something uniquely good without also introducing something bad.",
+          "sourceSpan": {
+            "startEvent": 169,
+            "endEvent": 244,
+            "excerpt": "bad. That is you cannot do religion cannot do something uniquely good without introducing something bad. A simple claim. Turns out that there is a very easy way to test this. It's it's a fallo you can actually test the theory with what I would call a trinity of hurdles and here they are. All Glen needs to do is to name a religious action taken or a religious principle held that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Woodford explicitly defines his intended claim and presents a three-hurdle test before yielding the floor to Scrivener.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "bridge-pro-motion-poison-test"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move expressly formulates the affirmative's governing poison test and burden for assessing alleged religious contributions; it has no reply target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The test is plainly recoverable, though the universe of religion and the threshold for introducing something bad remain insufficiently bounded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move treats its demanding uniqueness-without-harm test as dispositive without defending why mixed effects or comparative net contribution cannot answer the motion."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religion might make a distinctive or necessary contribution while also being associated with some harms.",
+            "decisiveQualification": "The stated test excludes mixed contributions without separately justifying that exclusion as the motion's required standard."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "The move clearly states a falsifiable challenge, yet the selected passage does not defend why its demanding conjunction is the proper governing standard."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It expressly defines the affirmative route's motion-level completion condition and the test applied to later examples."
+            },
+            "representationalCharity": {
+              "value": 60,
+              "rationale": "The move gives the opponent a clear route but materially narrows the strongest reasonable opposing position to an absolute no-harm claim."
+            },
+            "responsiveness": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly says religion cannot do something uniquely good without introducing something bad and announces proposed hurdles for testing that claim.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-internal-critique-corrupt-religion",
+          "sectionId": "section-conquest-revelation-and-religious-violence",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Christianity distinguishes self-exalting religion from outward divine blessing and contains prophetic and Christ-centered standards for criticizing corrupt religious power.",
+          "sourceSpan": {
+            "startEvent": 258,
+            "endEvent": 311,
+            "excerpt": "nations. So, it's the difference between an up-and-in kind of religion and a down-and-out movement of blessing. And the rest of the Old Testament, uh I think, puts a question mark over the goodness of religion, in fact. So, the king is kept out of the temple, and kings are not priests. And prophets come along to speak truth to power. Uh there's a profound question mark put over"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Scrivener's opening identifies biblical episodes and the cross as an internally Christian critique of poisonous institutional religion.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-con-internal-critique"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-prior-human-decency",
+              "pro-unique-good-without-harm-test"
+            ],
+            "components": [
+              {
+                "componentId": "con-internal-critique-corrupt-religion-component-01",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Religion merely appropriates prior human goodness while adding corrupting doctrine and institutional power.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-internal-critique-corrupt-religion-component-02",
+                "targetMoveId": "pro-unique-good-without-harm-test",
+                "text": "Christianity must identify a distinct good rather than merely internal criticism of religious corruption.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Biblical distinctions between self-exalting religion and outward blessing directly contact the claim that doctrine only corrupts, but do not yet satisfy the separate unique-good test."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The internal-critique proposition is clear, though the movement from selected biblical episodes to Christianity generally has an implicit representativeness qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker presents the interpretation as a considered reading and supports it with several concrete biblical contrasts rather than certainty."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religion may contain criticism while still adding the harms identified by the affirmative.",
+            "decisiveQualification": "Internal criticism rebuts an undifferentiated account but does not itself establish net or unique religious benefit."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary internal-critique bridge by identifying scriptural mechanisms for condemning corrupt religious power."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "This partial answer contacts the decisive corruption premise through internal standards while leaving the unique-contribution demand unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts inward self-exaltation with outward blessing and cites institutional separation and prophets speaking truth to power.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-devotion-compassion-institutions",
+          "sectionId": "section-universal-compassion-and-historical-causation",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Christian devotion redirected service toward neighbors understood as divine images and generated institutions and reforms opposing infanticide, pederasty, and gladiatorial violence.",
+          "sourceSpan": {
+            "startEvent": 329,
+            "endEvent": 414,
+            "excerpt": "Jesus because they were serving God by serving their neighbor. It birthed an incredible compassion revolution in which Christians stood against infanticide, and instead took the exposed infants and raised them, pioneering a new way of orphan care. I think that's an extraordinary good that uniquely Christianity brought to the world. I think the the abolition of infanticide, the abolition of the gladiatorial games, the abolition of pederasty"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Scrivener develops the claim in his opening through early-Christian worship, neighbor service, and several asserted historical reforms.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-institutional-fruits"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-unique-good-without-harm-test",
+              "pro-prior-human-decency"
+            ],
+            "components": [
+              {
+                "componentId": "con-devotion-compassion-institutions-component-01",
+                "targetMoveId": "pro-unique-good-without-harm-test",
+                "text": "Identify a uniquely religious good that is not merely an independently human contribution.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-devotion-compassion-institutions-component-02",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Compassion and service arise prior to religion and are only appropriated by it.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The asserted Christian mechanism and institutional reforms directly answer the demand for a distinct contribution and contest the claim that compassion was merely appropriated."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The causal claim and examples are clear, but phrases such as uniquely Christianity brought lack temporal and comparative scope qualifications."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Categorical uniqueness and abolition claims exceed the comparative historical support contained in the selected evidence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christians may have expressed ordinary human compassion through religious language rather than originating it.",
+            "decisiveQualification": "Institutional expression can be causally important without proving that the underlying compassion or reform was uniquely Christian."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central institutional-fruits bridge through a claimed doctrinal mechanism and several humanitarian practices."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The answer supplies a serious mechanism but weakens the live alternative by moving quickly from Christian participation to unique Christian authorship."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "The reply explicitly supplies both a claimed mechanism and concrete candidate goods, though their uniqueness remains historically contestable."
+            }
+          },
+          "evidenceBasis": "The excerpt links serving Jesus with serving neighbors and names care for exposed infants and opposition to infanticide, gladiatorial games, and pederasty.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-human-poison-christian-antidote",
+          "sectionId": "section-governing-poison-test",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Religious and secular atrocities reveal pride and violence as a general human poison, while Christianity supplies standards for condemning that poison and presents Jesus as its antidote.",
+          "sourceSpan": {
+            "startEvent": 415,
+            "endEvent": 511,
+            "excerpt": "secular crusades in the name of religion. In the name of liberty and equality and fraternity, in the name of race and class and nation. And they have killed far more than religion ever has. There is a poison going on. The name for that poison is not best called religion. It is a human problem. And what we really need is an antidote. And I think the antidote is the one on that cross. He is the one who was the victim of religious violence"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Scrivener concedes church crimes, compares them with secular terrors, and closes his opening by identifying the cross as the antidote.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-human-not-religious-poison"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-prior-human-decency",
+              "pro-unique-good-without-harm-test"
+            ],
+            "components": [
+              {
+                "componentId": "con-human-poison-christian-antidote-component-01",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Religion is the distinctive source of poison added to otherwise prior human decency.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-human-poison-christian-antidote-component-02",
+                "targetMoveId": "pro-unique-good-without-harm-test",
+                "text": "A successful reply must show a uniquely religious good unaccompanied by religious harm.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly diagnoses violence and pride as general human phenomena rather than religion-specific additions and states that this defeats the affirmative causal label."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The human-poison thesis is recoverable, but comparisons of secular and religious killing and the meaning of antidote remain broadly scoped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The claim that secular causes killed far more and that Jesus is the antidote is asserted categorically without adequate comparative warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religion may intensify general human vices even if those vices also appear in secular movements.",
+            "decisiveQualification": "Showing nonreligious atrocity defeats exclusivity but does not by itself defeat the claim of distinctive religious amplification."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 56); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It squarely advances the central con bridge locating pride and domination in humanity generally rather than religion alone."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The move fairly recognizes the affirmative's concern with poison but weakens it toward an exclusivity claim and omits the amplification possibility."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "The diagnostic response directly challenges the causal premise, but its proposed Christian antidote is asserted more than demonstrated."
+            }
+          },
+          "evidenceBasis": "The excerpt compares atrocities committed under secular ideals with religious violence, labels the poison human, and identifies the crucified Jesus as antidote.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-community-with-doctrinal-subordination",
+          "sectionId": "section-women-family-and-social-institutions",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "reply",
+          "proposition": "Religious community and charity do not come free when accompanying doctrines subordinate women and impose harms on gay people.",
+          "sourceSpan": {
+            "startEvent": 514,
+            "endEvent": 547,
+            "excerpt": "community, strongly in charity. But it doesn't come free, right? It comes with the dogma, the doctrines, the revelations. And so, what they do is they teach that a women's a woman's testimony is only worth half that of a man's. So, you need to get two women in court instead of one in order to have it go past the line. They throw gays from their mosque roofs, right? So, I'm curious. Do you agree that that's poison"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "After Scrivener's opening, Woodford identifies its appeals to community and charity and applies his test through an Islamic example.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-doctrinal-harm"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-devotion-compassion-institutions",
+              "con-human-poison-christian-antidote"
+            ],
+            "components": [
+              {
+                "componentId": "pro-community-with-doctrinal-subordination-component-01",
+                "targetMoveId": "con-devotion-compassion-institutions",
+                "text": "Whether religious community and charity count as unqualified goods once accompanying doctrinal harms are included.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-community-with-doctrinal-subordination-component-02",
+                "targetMoveId": "con-human-poison-christian-antidote",
+                "text": "Whether identified harms can be assigned to religious doctrine rather than only general human vice.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply concedes community and charity but directly applies the proposed poison test by identifying doctrinal subordination and anti-gay violence as accompanying costs."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The good-with-cost proposition is clear, though the transition from particular Islamic practices to religion generally requires an implicit scope qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The examples plausibly show religiously associated harms, but their general and representative force is somewhat overstated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religious community may produce genuine goods even when some doctrines or institutions cause harm.",
+            "decisiveQualification": "Conceding those goods does not establish that every community bears the cited harms or that the goods are nonunique."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "Concrete examples support the existence of harms, while representativeness, doctrinal attribution, and causal comparison are not defended."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central doctrinal-harm bridge by linking valued religious community to asserted doctrinal injuries."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (80 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It directly contacts the claimed institutional good and supplies concrete contrary material, though examples from different religious settings limit its answer to Christianity specifically."
+            }
+          },
+          "evidenceBasis": "The excerpt concedes religious community and charity, then cites unequal female testimony and violence against gay people as accompanying doctrinal costs.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-community-is-human-not-unique",
+          "sectionId": "section-universal-compassion-and-historical-causation",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "reply",
+          "proposition": "Community is a human good reproducible by secular communities, so religion cannot claim it as a uniquely religious contribution.",
+          "sourceSpan": {
+            "startEvent": 581,
+            "endEvent": 604,
+            "excerpt": "Islam. There are good aspects to Islam. So it doesn't poison everything. No, because the community aspect aspect is good. Yes, I understand what you're saying. What I said is that religion cannot contribute something unique without introducing something bad. Okay. So what's going on there is community. There are secular communities. This is human. This is what I mean when I say"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Woodford clarifies his definition immediately after Scrivener challenges the breadth of the claim and distinguishes good community from unique contribution.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-prior-human-goods"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-devotion-compassion-institutions",
+              "con-human-poison-christian-antidote"
+            ],
+            "components": [
+              {
+                "componentId": "pro-community-is-human-not-unique-component-01",
+                "targetMoveId": "con-devotion-compassion-institutions",
+                "text": "Christian devotion generated a distinct compassion revolution and associated institutions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-community-is-human-not-unique-component-02",
+                "targetMoveId": "con-human-poison-christian-antidote",
+                "text": "Christianity supplies a distinct antidote to generally human pride and violence.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The existence of secular communities directly contacts uniqueness of community, but it does not address the more specific claim about Christian institutional causation or antidote."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "The limited proposition that community exists in secular settings and is therefore not uniquely religious is plainly and stably stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The modest existence claim that secular communities occur adequately supports denial that community as such is exclusively religious."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christianity may not uniquely create community but may uniquely shape its scope, motives, or institutions.",
+            "decisiveQualification": "Secular reproducibility defeats generic uniqueness, not every narrower claim of Christian form or historical influence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The reply correctly rejects generic exclusivity but compresses the opponent's more specific claim about devotional motivation and institutional consequences."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "The decisive uniqueness component is contacted, while the distinctive devotional mechanism and historical reform examples remain substantially unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt distinguishes good community from unique religious contribution and explicitly observes that secular communities also exist.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-christian-dominion-failed-to-abolish",
+          "sectionId": "section-slavery-abolition-and-gradual-reform",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "reply",
+          "proposition": "Centuries of Christian political dominance provided ample power to prohibit slavery, yet Christian authorities did not categorically abolish human ownership.",
+          "sourceSpan": {
+            "startEvent": 682,
+            "endEvent": 709,
+            "excerpt": "by Christians. And they are able to do what they need to do at that moment because they take over the infrastructure. We have Christian dominion here, right? And we have it for the better part of what? 1500, 1600 years, arguably still. And so, they have the ability to say, \"Guys, slavery, it's wrong. We shouldn't do it.\" And yet, they didn't. They didn't do it. And the question"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Woodford introduces fourth-century Christian control of imperial infrastructure and contrasts prolonged inaction on slavery with other reforms.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-pro-institutional-history"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-devotion-compassion-institutions",
+              "con-human-poison-christian-antidote"
+            ],
+            "components": [
+              {
+                "componentId": "pro-christian-dominion-failed-to-abolish-component-01",
+                "targetMoveId": "con-devotion-compassion-institutions",
+                "text": "Whether claimed Christian humanitarian causation withstands the prolonged record of Christian institutional power over slavery.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-christian-dominion-failed-to-abolish-component-02",
+                "targetMoveId": "con-human-poison-christian-antidote",
+                "text": "Whether Christian standards functioned as an effective antidote when Christian authorities possessed governing power.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move tests both claimed institutional fruit and antidotal power against many centuries of Christian dominance without categorical abolition, directly contacting those causal claims."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The institutional-delay claim is recoverable, but Christian dominion and the asserted fifteen-century opportunity require regional and temporal qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The word arguably provides some caution, though the sweeping duration and unified-capacity claim remains stronger than the evidence shown."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian doctrine may have constrained slavery gradually despite limited capacity for immediate universal abolition.",
+            "decisiveQualification": "Long political dominance is probative, but institutional capacity and doctrinal influence varied across authorities and centuries."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The broad historical duration is relevant but unsupported by representative institutional detail or comparison of abolition opportunities."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary institutional-history bridge by contrasting prolonged Christian power with failure to prohibit slavery."
+            },
+            "representationalCharity": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (80 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It squarely engages the historical-causation premise with a relevant institutional counterexample, though exact jurisdictional variation remains compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt asserts roughly fifteen centuries of Christian control over infrastructure and contrasts that capacity with failure to declare slavery categorically wrong.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-original-sin-precedes-religion",
+          "sectionId": "section-governing-poison-test",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Human brutality, pride, violence, and domination precede religion rather than arising from otherwise unpoisoned human decency, and Christianity provides a basis for rejecting them.",
+          "sourceSpan": {
+            "startEvent": 905,
+            "endEvent": 939,
+            "excerpt": "pride and violence and you know, all the negative aspects of the human person. And that what is baked into humanity but before your idea of religion coming along later and adding into it, what is baked in seems to be, whether you look at Hammurabi, whether you look at Harari, whether you look at the Old Testament, is a brutal world that we that we wish was otherwise, right? And what I want to know from you, Stephen, is with what on what basis"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker addresses Stephen directly and contrasts Augustine, humanity's condition, and his own appeal to Jesus and the New Testament.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-human-not-religious-poison"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-prior-human-decency",
+              "pro-unique-good-without-harm-test",
+              "pro-christian-dominion-failed-to-abolish"
+            ],
+            "components": [
+              {
+                "componentId": "con-original-sin-precedes-religion-component-01",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "The premise that religion arrives after an otherwise unpoisoned stock of human decency and adds the relevant brutality.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-original-sin-precedes-religion-component-02",
+                "targetMoveId": "pro-unique-good-without-harm-test",
+                "text": "The demand for a uniquely religious good with no accompanying bad consequence.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-original-sin-precedes-religion-component-03",
+                "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                "text": "The historical claim that Christian political power failed to abolish slavery categorically.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies pre-religious or generally human pride, violence, and domination as defeating the opening causal picture, but it does not resolve the distinct uniqueness test or slavery record."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The causal challenge is clear, though references to humanity, Hammurabi, Harari, and the Old Testament compress distinct historical categories and time periods."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Phrases such as seems to be appropriately qualify the historical inference while concrete ancient references support its limited force."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The affirmative can affirm prior human brutality while claiming religion adds distinctive legitimating harms.",
+            "decisiveQualification": "Prior brutality defeats an unpoisoned baseline but not the narrower claim that doctrine can intensify or authorize harm."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "Evidence of prior human brutality defeats an innocence premise, but the inference does not by itself defeat religion's possible marginal contribution to harm."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central human-not-religious-poison bridge by locating domination and violence in humanity before religion."
+            },
+            "representationalCharity": {
+              "value": 74,
+              "rationale": "The move effectively challenges the literal well metaphor but does not fully preserve the strongest additive-harm version of the affirmative case."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "As a diagnostic defeat, it explicitly targets the opening move's causal premise and states the consequence that religion is not the source of the baseline poison."
+            }
+          },
+          "evidenceBasis": "The excerpt describes pride, violence, and brutality as baked into humanity and invokes Hammurabi and the ancient world against the clean-well chronology.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-monogamy-constrains-male-power",
+          "sectionId": "section-women-family-and-social-institutions",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Christian monogamous marriage constrained elite male sexual access and aggression, thereby protecting and elevating women and children within family and social life.",
+          "sourceSpan": {
+            "startEvent": 986,
+            "endEvent": 1044,
+            "excerpt": "the Christian sexual ethic the church was reaching down and grabbing men by the testicles, right? It was it was absolutely constraining rampant male sexual aggression for the benefit of their women and children, right? And so it it was absolutely that Do you think that's good? Like like to to to restrict elite male access to all the women all the concubines all all you know all"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The extended answer cites Joseph Henrich, Matthew 19, and Jesus while repeatedly asking Stephen whether the resulting constraint was good.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-institutional-fruits"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-community-with-doctrinal-subordination",
+              "pro-prior-human-decency"
+            ],
+            "components": [
+              {
+                "componentId": "con-monogamy-constrains-male-power-component-01",
+                "targetMoveId": "pro-community-with-doctrinal-subordination",
+                "text": "Whether Christian sexual doctrine only subordinates women or also materially constrains exploitative male power.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-monogamy-constrains-male-power-component-02",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Whether Christianity supplies a distinctive institutional mechanism protecting women and children.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly supplies a contrary consequence of Christian sexual doctrine—restricting elite male access for women and children's benefit—while not answering all cited harms or comparative uniqueness."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The mechanism is clear, while claims about elite men, women, and children need historical and comparative scope qualifications."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical protective effect is plausible but stronger than the bounded causal evidence contained in the excerpt."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian sexual doctrine may constrain male access while also subordinating women in other respects.",
+            "decisiveQualification": "One protective mechanism does not resolve the overall status or effects of the broader doctrinal system."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "This partial answer contacts the decisive subordination premise with a concrete contrary mechanism but leaves other doctrines and harms untreated."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies Christian sexual ethics as restricting elite male access and aggressive behavior for the benefit of women and children.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-humane-motif-retreats-from-scripture",
+          "sectionId": "section-women-family-and-social-institutions",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "reply",
+          "proposition": "A humane Christian defense of women succeeds only by retreating from explicit biblical doctrines and importing compassion not supplied by those texts.",
+          "sourceSpan": {
+            "startEvent": 1045,
+            "endEvent": 1086,
+            "excerpt": "quiet. And yet the very mode of preaching that you're giving in order to sound palatable is that you actually have to remove yourself from the Bible, from the doctrines, from the dogma, from the revelations. And consequently, what you're doing is illustrating my point for me, Glenn, because your decency, your love, your compassion isn't coming from scripture because you're having to invent a motif"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker contrasts his own cited scriptural passages with Glen's opening motif and directly names Glen near the conclusion.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-reform-away-from-specifics"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-monogamy-constrains-male-power",
+              "con-devotion-compassion-institutions",
+              "con-internal-critique-corrupt-religion"
+            ],
+            "components": [
+              {
+                "componentId": "pro-humane-motif-retreats-from-scripture-component-01",
+                "targetMoveId": "con-monogamy-constrains-male-power",
+                "text": "The inference that a humane presentation of Christian sexual ethics derives its protective character from explicit scriptural teaching.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-humane-motif-retreats-from-scripture-component-02",
+                "targetMoveId": "con-devotion-compassion-institutions",
+                "text": "The claim that Christian compassion is generated by scripture and devotion rather than imported human concern.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-humane-motif-retreats-from-scripture-component-03",
+                "targetMoveId": "con-internal-critique-corrupt-religion",
+                "text": "The claim that internal Christian standards adequately correct harmful explicit teachings.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "By contrasting explicit quiet-and-submission texts with the opponent's humane motif, the reply diagnoses a retreat from specific doctrine and states that imported compassion, not scripture, does the corrective work."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The retreat claim is clear, but “the Bible” and “scripture” are treated broadly despite possible interpretive context and countertexts."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The conclusion that humane preaching can only come from outside scripture exceeds the selected contrary-text evidence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A Christian defense may interpret restrictive passages through other scriptural themes rather than abandon scripture.",
+            "decisiveQualification": "Selective omission can weaken a defense, but internal canonical interpretation is not equivalent to importing wholly external compassion."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The contrast between explicit subordinating text and humane presentation strongly supports the retreat inference, subject to a bounded whole-canon bridge."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "Specific scriptural language grounds the challenge, but the move does not compare contextual readings or countertexts that could support the humane motif."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central reform-away-from-specifics bridge by arguing that humane defense retreats from explicit restrictive rules."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The reply highlights genuinely difficult texts but materially narrows the opponent's interpretive position into simple removal from scripture."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "The reply expressly identifies the disputed inference, cites contrary scriptural content, and states the defeating consequence for the source-of-compassion claim."
+            }
+          },
+          "evidenceBasis": "The excerpt juxtaposes a command that a woman remain quiet with Scrivener's humane preaching and alleges that the latter removes itself from explicit doctrine.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-image-of-god-against-slavery",
+          "sectionId": "section-slavery-abolition-and-gradual-reform",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Slavery is wrong because enslaving a person made in God's image violates humanity's divinely granted status and its vocation to exercise dominion rather than be enslaved.",
+          "sourceSpan": {
+            "startEvent": 1162,
+            "endEvent": 1169,
+            "excerpt": "Uh because we're made in God's image and therefore to enslave an image of God is as unthinkable as to enslave God himself, right? And we were we were created to have dominion rather to be served. So So what what These were the arguments that brought about abolition in in the 17th 18th centuries"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The answer uses explicit Christian doctrines in direct response to repeated demands that Glen explain why slavery is wrong.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-sacred-human-worth"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-christian-dominion-failed-to-abolish",
+              "pro-prior-human-decency",
+              "pro-humane-motif-retreats-from-scripture"
+            ],
+            "components": [
+              {
+                "componentId": "con-image-of-god-against-slavery-component-01",
+                "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                "text": "Christian authorities lacked or failed to articulate a categorical doctrinal basis for rejecting human ownership.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-image-of-god-against-slavery-component-02",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Moral opposition to domination is an independently human good appropriated by religion.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-image-of-god-against-slavery-component-03",
+                "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                "text": "Humane Christian reform must retreat from scripture and import external compassion.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The image-of-God argument directly supplies a Christian doctrinal basis against slavery and identifies its asserted abolitionist use, though it does not explain the long delay."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "The normative inference from divine image-bearing to the wrongness of enslavement is concise, stable, and readily recoverable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The normative claim is well matched, but the broad historical statement about arguments bringing abolition needs qualification."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Image-of-God doctrine coexisted with Christian slavery and therefore did not categorically determine abolition.",
+            "decisiveQualification": "A doctrine can ground abolitionist reasoning without having been consistently applied or historically sufficient by itself."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "If every person images God and is created for dominion rather than enslavement, the anti-slavery inference is strong and explicit."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The doctrinal warrant is stated, but its claimed role in seventeenth- and eighteenth-century abolition lacks specific historical support here."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central sacred-human-worth bridge by deriving anti-slavery status from universal divine image-bearing."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The move provides a genuine doctrinal answer without claiming that all Christians applied it consistently, though historical sufficiency is compressed."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "The reply answers the doctrinal-basis demand explicitly but only partially contacts the historical failure and timing component."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that enslaving God's image is analogous to enslaving God and that humans were created for dominion rather than servitude.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-trinitarian-ground-of-goodness",
+          "sectionId": "section-moral-grounding-and-human-worth",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Trinitarian Christianity avoids arbitrary divine command by identifying goodness with God's eternal loving life and evil with violation of the love that shapes creation.",
+          "sourceSpan": {
+            "startEvent": 1234,
+            "endEvent": 1270,
+            "excerpt": "Holy Spirit bound together as a community of love. Their life is love, right? So, God is goodness in the sense that well, God is love, and goodness is love, right? And this is the kind of world that Christians say we live in. We we live in a world that's been made by love, shaped by love, determined for love. And and to violate that love, that is the essence of what evil kind of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker presents the historic Christian-Platonist answer and develops it through the Father, Son, and Holy Spirit as a community of love.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-sacred-human-worth"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-humane-motif-retreats-from-scripture",
+              "pro-prior-human-decency"
+            ],
+            "components": [
+              {
+                "componentId": "con-trinitarian-ground-of-goodness-component-01",
+                "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                "text": "The premise that Christian appeals to love and goodness necessarily abandon doctrine or import an external humane standard.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-trinitarian-ground-of-goodness-component-02",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Whether love and goodness possess a specifically Christian theological foundation rather than being merely appropriated human goods.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The response expressly grounds love within eternal Trinitarian life, diagnosing why an appeal to love need not retreat from Christian doctrine, though it does not prove historical uniqueness."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The theological proposition is clearly recoverable and stable, with an implicit qualification that its force is conditional on the Trinitarian premises."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Within the stated theological framework, identifying evil with violation of divine love is proportionate and avoids a simple arbitrary-command claim."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Identifying God with love may rename goodness without resolving whether divine acts are independently recognizable as loving.",
+            "decisiveQualification": "The account avoids crude voluntarism but still needs criteria connecting divine nature, love, and disputed commands."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The Trinitarian structure supplies a theological warrant, while no independent defense establishes the key identity or its application to hard cases."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central sacred-human-worth bridge by locating goodness and love in Christianity's account of divine reality."
+            },
+            "representationalCharity": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly targets the source-of-goodness inference and supplies the defeating doctrinal account that love is internal to Christianity's conception of God."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies God's Trinitarian life with love and describes creation as made, shaped, and directed for love, with evil violating that love.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-equality-and-gradual-abolition",
+          "sectionId": "section-slavery-abolition-and-gradual-reform",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Paul addressed conduct within an existing slave society while affirming equality under Christ, and Christianity's gradual, yeast-like social transformation ultimately ended the slave trade.",
+          "sourceSpan": {
+            "startEvent": 1460,
+            "endEvent": 1487,
+            "excerpt": "Christ and we are all brothers and sisters. We are not slaves of one another. There is absolute egalitarianism within the church.\" When you go back into the workplace, as it were, you are to do your job well, okay? And that and that is the working within the structures that is the only thing that has ever ended the slave trade, okay? Jesus says that his movement will work like yeast"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker identifies Ephesians 6:5, contextualizes Paul's instruction, and invokes Jesus's yeast metaphor for gradual social transformation.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-pro-institutional-history"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-christian-dominion-failed-to-abolish",
+              "pro-humane-motif-retreats-from-scripture"
+            ],
+            "components": [
+              {
+                "componentId": "con-equality-and-gradual-abolition-component-01",
+                "targetMoveId": "pro-christian-dominion-failed-to-abolish",
+                "text": "Why Christian teaching did not immediately prohibit slavery despite affirming equality and possessing institutional influence.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-equality-and-gradual-abolition-component-02",
+                "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                "text": "Whether antislavery equality can be derived from Pauline and Christian doctrine itself.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply supplies both a Pauline equality principle and a gradual yeast-like mechanism, directly addressing doctrinal resources and delayed change, though its historical exclusivity claim is insufficiently defended."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The church-workplace distinction and gradualism are explicit, while the claim that this alone ended the trade is insufficiently scoped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The assertion that this is the only process ever to end the slave trade is far stronger than the evidence provided."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Pauline equality may coexist with practical accommodation that prolonged slavery rather than reliably dissolving it.",
+            "decisiveQualification": "A gradual trajectory is possible, but coexistence and delay require evidence that accommodation causally promoted eventual abolition."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly attacks the subsidiary institutional-history bridge by offering a doctrinal explanation for gradual rather than immediate reform."
+            },
+            "representationalCharity": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts the decisive delay-and-doctrine demand explicitly, but the claim that gradual internal work was the only successful mechanism remains underanswered evidentially."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes equality among brothers and sisters in Christ, accommodation within existing work structures, and Jesus's yeast metaphor for gradual transformation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-selective-gradualism-on-slavery",
+          "sectionId": "section-slavery-abolition-and-gradual-reform",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "reply",
+          "proposition": "Christian gradualism cannot excuse slavery when Christian rulers made radical institutional changes elsewhere but left slavery intact until the Enlightenment era.",
+          "sourceSpan": {
+            "startEvent": 1491,
+            "endEvent": 1546,
+            "excerpt": "radical changes. For instance, as you boast, they banned in infanticide. Amazing. This is a massive change that they make to the entire world. They established a theocracy. The idea that they didn't want to make major changes because God works in mysterious ways and actually it's going to take about a thousand years until slavery becomes a problem and when it does so it's going to be suspiciously when the enlightenment"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker directly addresses Glen, contrasts slavery with bans on crucifixion, gladiatorial combat, and infanticide, and invokes Enlightenment chronology.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-pro-institutional-history"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-equality-and-gradual-abolition",
+              "con-devotion-compassion-institutions",
+              "con-image-of-god-against-slavery"
+            ],
+            "components": [
+              {
+                "componentId": "pro-selective-gradualism-on-slavery-component-01",
+                "targetMoveId": "con-equality-and-gradual-abolition",
+                "text": "The premise that Christianity's gradual method explains its failure to abolish slavery promptly.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-selective-gradualism-on-slavery-component-02",
+                "targetMoveId": "con-devotion-compassion-institutions",
+                "text": "The claimed ability of Christian institutions to enact major humanitarian changes such as ending infanticide.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-selective-gradualism-on-slavery-component-03",
+                "targetMoveId": "con-image-of-god-against-slavery",
+                "text": "The claim that Christian anthropology supplied a sufficiently operative antislavery principle.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The contrast with rapid, radical changes expressly diagnoses selective gradualism and states that the explanatory excuse fails when Christian rulers changed other institutions but not slavery."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The selective-gradualism challenge is clear, though references to theocracy, the Enlightenment, and the timing of abolition need regional qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The contrast strongly challenges necessity, but suspicious timing and Enlightenment attribution exceed the support shown in the excerpt."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Different reforms can face different institutional constraints, so rapid action on infanticide need not make immediate abolition feasible.",
+            "decisiveQualification": "The contrast defeats a bare appeal to gradualism unless those differing constraints are specifically explained."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "Evidence of capacity for radical reform directly undercuts unexplained necessity of gradualism, though it does not prove identical feasibility across issues."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary institutional-history bridge by exposing an unexplained asymmetry in Christian reform speed."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The move fairly uses the opponent's own radical-reform claim and leaves a clear route for a differentiated institutional response."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly targets the gradualist premise, uses the opponent's own reform examples, and states the defeating consequence for the delay explanation."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts asserted radical Christian reform of infanticide and establishment with the much later emergence of categorical opposition to slavery.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-enemy-love-beyond-tribe",
+          "sectionId": "section-universal-compassion-and-historical-causation",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Christianity scaled compassion beyond kin and tribe by making love of enemies and concern for outsiders and the weak culturally authoritative despite contrary evolutionary pressures.",
+          "sourceSpan": {
+            "startEvent": 1603,
+            "endEvent": 1639,
+            "excerpt": "group is a proper object of my compassion and concern. But, but the other guy, that level of compassion, um absolutely is is not natural. And this is This is why Nietzsche thought that Christianity was poison. He thought Christianity was poison. He He called it, you know, humanity's nausea because it was the Christians who were saying that you should love your enemies and and care for the weak"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker develops a kin-selection and group-selection contrast, then invokes Nietzsche's account of distinctively Christian concern for enemies and the weak.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-con-institutional-fruits"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-prior-human-decency",
+              "pro-community-is-human-not-unique",
+              "pro-unique-good-without-harm-test"
+            ],
+            "components": [
+              {
+                "componentId": "con-enemy-love-beyond-tribe-component-01",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Whether universalized concern for enemies and the weak is simply ordinary prior human decency.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-enemy-love-beyond-tribe-component-02",
+                "targetMoveId": "pro-community-is-human-not-unique",
+                "text": "Whether Christianity contributes only generic community rather than an unusually expansive moral norm.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-enemy-love-beyond-tribe-component-03",
+                "targetMoveId": "pro-unique-good-without-harm-test",
+                "text": "Whether love of enemies constitutes a uniquely Christian good with no accompanying religious harm.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly challenges ordinary-human and generic-community explanations by identifying costly enemy love as distinctively authoritative, but it does not answer the separate no-harm requirement."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "Enemy-love and care for the weak are clear, but claims that such compassion is unnatural require biological and cross-cultural qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The absolute denial of natural out-group compassion exceeds the Nietzsche reference and evolutionary assertion offered."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Humans have cross-cultural capacities for outsider compassion even if Christianity amplified enemy-love institutionally.",
+            "decisiveQualification": "Amplification and cultural authority may be distinctive without proving that the underlying concern is absent from human nature or other traditions."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central institutional-fruits bridge by identifying a norm claimed to extend compassion beyond tribe and status."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "The response identifies an important scaling mechanism but materially weakens the alternative by treating beyond-kin compassion as simply unnatural."
+            },
+            "responsiveness": {
+              "value": 74,
+              "rationale": "This partial answer contacts the decisive distinctiveness premise through enemy love but does not establish uniqueness across cultures or absence of accompanying harm."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts natural in-group concern with Christian commands to love enemies and care for the weak, supported by Nietzsche's hostile recognition of that ethic.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-divine-nature-canaan-test",
+          "sectionId": "section-moral-grounding-and-human-worth",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "reply",
+          "proposition": "Divine commands concerning the conquest of Canaan test whether grounding goodness in God's nature can render apparently atrocious acts moral.",
+          "sourceSpan": {
+            "startEvent": 1686,
+            "endEvent": 1697,
+            "excerpt": "commands, for example, the conquest of Canaan and he says to his people, \"Listen, I want you to go on in and I want you to murder all of the men and all of the women. I want you to take the little boys. I want you to murder them. But all of the little girls that have not lie lie slept with a man, keep them for yourself.\" Like is that just moral because God is God's nature? That"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn directly challenges Glen's divine-nature account through a sustained biblical counterexample posed by Stephen.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-con-sacred-human-worth"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-trinitarian-ground-of-goodness",
+              "con-image-of-god-against-slavery",
+              "con-enemy-love-beyond-tribe"
+            ],
+            "components": [
+              {
+                "componentId": "pro-divine-nature-canaan-test-component-01",
+                "targetMoveId": "con-trinitarian-ground-of-goodness",
+                "text": "Whether identifying goodness with God's loving nature can morally constrain commands attributed to God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-divine-nature-canaan-test-component-02",
+                "targetMoveId": "con-image-of-god-against-slavery",
+                "text": "Whether sacred human status consistently prohibits grave violence against divine image-bearers.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-divine-nature-canaan-test-component-03",
+                "targetMoveId": "con-enemy-love-beyond-tribe",
+                "text": "Whether Christian enemy love coheres with divinely commanded conquest narratives.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The conquest counterexample directly tests the divine-nature inference and exposes tension with sacred worth and enemy love, though the compressed quotation combines contested passages and interpretations."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move is framed explicitly as a test of whether the cited commands can be moral under the divine-nature account."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move asks a conditional moral question rather than claiming to have conclusively established every historical or textual detail."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Conquest texts may use hyperbole, target combatants, or describe exceptional judgment rather than literal indiscriminate killing.",
+            "decisiveQualification": "Those contextual readings must still explain the apparent commands and their consistency with loving divine nature."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central sacred-human-worth bridge by testing the claimed loving moral ground against conquest commands."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the decisive moral-grounding premise with a severe test case and asks whether divine attribution alone renders the acts moral."
+            }
+          },
+          "evidenceBasis": "The excerpt attributes commands to kill men, women, and boys while retaining virgin girls, then asks whether divine nature alone renders that conduct moral.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-objective-ground-beyond-agreement",
+          "sectionId": "section-moral-grounding-and-human-worth",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "Present social agreement cannot establish that slavery or caste hierarchy is objectively wrong, so moral condemnation requires a foundation beyond contingent collective preference.",
+          "sourceSpan": {
+            "startEvent": 1845,
+            "endEvent": 1885,
+            "excerpt": "law. Oh, objectively better means you've got a metaethical theory. But objectively better based on what? We both agree. And that's all that's required. We might agree, but but okay, as a society wants to run the slavery experiment. Slavery is okay. That's quite the agreement. >> [laughter] >> Yeah. There might be one person at the back that's like, \"I want to put my hand up but"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Glen develops a sustained grounding challenge using Hammurabi's caste system and the religious character of abolitionism.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "bridge-con-objective-moral-ground"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-divine-nature-canaan-test",
+              "pro-prior-human-decency",
+              "pro-selective-gradualism-on-slavery"
+            ],
+            "components": [
+              {
+                "componentId": "con-objective-ground-beyond-agreement-component-01",
+                "targetMoveId": "pro-divine-nature-canaan-test",
+                "text": "Shared moral recognition of atrocity is sufficient to test claims that divine commands express goodness.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-objective-ground-beyond-agreement-component-02",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Human decency supplies moral standards prior to and independently of religion.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-objective-ground-beyond-agreement-component-03",
+                "targetMoveId": "pro-selective-gradualism-on-slavery",
+                "text": "Historical delay undermines Christianity's claimed moral authority concerning slavery.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly questions whether shared agreement can ground objective condemnation, but it does not resolve the Canaan consistency test or supply the full positive foundation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The limited claim that social agreement alone does not establish objective wrongness is clear, with an implicit distinction between consensus and richer secular realism."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The need for something beyond agreement is plausible, but the move treats objectivity as necessary without defending that metaethical requirement."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Moral reasons can be objective or action-guiding without resting on mere numerical agreement or Christian theism.",
+            "decisiveQualification": "Refuting simple conventionalism does not establish that Christianity is the required or successful alternative foundation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary objective-ground bridge by demanding a basis for condemnation beyond contingent collective preference."
+            },
+            "representationalCharity": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (65 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "It contacts the metaethical basis component while leaving the concrete divine-command challenge substantially unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt tests social agreement with a hypothetical pro-slavery consensus and presses for the basis on which one arrangement is objectively better.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-nonchristian-moral-goods-test",
+          "sectionId": "section-universal-compassion-and-historical-causation",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "reply",
+          "proposition": "Christianity's claimed necessity for modern social goods is testable against moral contributions supplied by non-Christian people and cultures.",
+          "sourceSpan": {
+            "startEvent": 2119,
+            "endEvent": 2153,
+            "excerpt": "testable your hypothesis is. Can you name for me one morally good thing in our society that is not a derivative in any way of Christianity? Oh, I I think the ways in which non-Christian cultures come over to the West and and deal with family, for instance. Uh wonderful contributions to our incredibly selfish entitled incurved Western privileged attitudes. Um and I think in in so many ways um non-Christian and anti-Christian people"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Stephen proposes a direct test of Glen's hypothesis and draws the inference from Glen's own non-Christian family example.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-con-institutional-fruits"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-enemy-love-beyond-tribe",
+              "con-devotion-compassion-institutions",
+              "con-objective-ground-beyond-agreement"
+            ],
+            "components": [
+              {
+                "componentId": "pro-nonchristian-moral-goods-test-component-01",
+                "targetMoveId": "con-enemy-love-beyond-tribe",
+                "text": "The premise that socially valuable compassion and family practices require distinctively Christian derivation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-nonchristian-moral-goods-test-component-02",
+                "targetMoveId": "con-devotion-compassion-institutions",
+                "text": "The claim that major modern moral goods are uniquely generated by Christian devotion and institutions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-nonchristian-moral-goods-test-component-03",
+                "targetMoveId": "con-objective-ground-beyond-agreement",
+                "text": "The separate question whether non-Christian moral goods possess an objective metaethical foundation.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The proposed empirical test and the opponent's own positive example of non-Christian family contributions diagnose why Christian necessity or exhaustive derivation fails, while leaving metaethical grounding separate."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposition is framed as a test of necessity or exhaustive derivation, and the counterexample's limited family-practice scope is identifiable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The existence of acknowledged non-Christian moral contribution appropriately defeats an exhaustive necessity claim without purporting to settle every historical influence."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Non-Christians may contribute goods within societies whose moral vocabulary was substantially shaped by Christianity.",
+            "decisiveQualification": "Cultural influence does not establish exclusive causation, and genuinely independent contributions would weaken necessity claims."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The opponent's own family example directly supports the limited counterexample, though deeper cultural independence is not demonstrated."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central institutional-fruits bridge by testing whether claimed social goods require Christian derivation."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It expressly states a falsification test, elicits a counterexample, and identifies the defeating consequence for an exhaustive Christian-causation claim."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly asks for falsifiability and identifies non-Christian family practices and critiques of Western selfishness as candidate moral contributions.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-conquest-context-and-christian-prohibition",
+          "sectionId": "section-conquest-revelation-and-religious-violence",
+          "side": "con",
+          "speaker": "Glen Scrivener",
+          "moveKind": "reply",
+          "proposition": "The conquest narratives employ ancient military hyperbole and concern judgment against violent cultures and combatants, while their culmination in Christ prohibits Christians from enforcing divine justice violently.",
+          "sourceSpan": {
+            "startEvent": 2179,
+            "endEvent": 2258,
+            "excerpt": "narrative culminates in Christ and in him crucified, the one who takes the violence into himself, rises up again, and says, \"Those who live by the sword will die by the sword.\" Now, the church has absolutely no right. I have no right to take that justice into my hands, okay? So, Christians ought not ever to prosecute the justice of the Lord in any kind of violent way, shape, or"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Glen gives an extended interpretive defense spanning genre, narrative context, archaeology, just-war framing, and Christian nonviolence.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "bridge-pro-doctrinal-harm"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-divine-nature-canaan-test",
+              "pro-humane-motif-retreats-from-scripture",
+              "pro-prior-human-decency"
+            ],
+            "components": [
+              {
+                "componentId": "con-conquest-context-and-christian-prohibition-component-01",
+                "targetMoveId": "pro-divine-nature-canaan-test",
+                "text": "Whether the conquest narratives straightforwardly command the indiscriminate atrocities used to challenge divine goodness.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-conquest-context-and-christian-prohibition-component-02",
+                "targetMoveId": "pro-humane-motif-retreats-from-scripture",
+                "text": "Whether Christian nonviolence is a doctrinal culmination rather than a retreat from scripture.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-conquest-context-and-christian-prohibition-component-03",
+                "targetMoveId": "pro-prior-human-decency",
+                "text": "Whether Christianity contains an authoritative prohibition on religious violence.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Genre, context, judgment, and Christ-centered nonviolence contact the central interpretive and normative components of the conquest challenge, though the selected excerpt most clearly supports only the later prohibition."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The multi-part interpretation is recoverable and explicitly distinguishes ancient narrative from Christian practice, though the boundaries of hyperbole and combatant scope remain compressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The contextual reading is qualified, though the absolute Christian prohibition is asserted more strongly than its historical and textual defense here."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Even hyperbolic conquest rhetoric can portray divine authorization of collective killing and remain morally problematic.",
+            "decisiveQualification": "Genre and canonical culmination limit literal and contemporary application but do not automatically vindicate the narrated judgment."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central affirmative doctrinal-harm bridge by contesting the conquest reading and denying Christian violent enforcement."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "The extended reply addresses the decisive textual inference through several interpretive routes and states a clear Christian consequence against violent enforcement."
+            }
+          },
+          "evidenceBasis": "The excerpt places conquest within a narrative culminating in the crucified Christ and expressly denies Christians any right to prosecute divine justice violently.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-child-sacrifice-punishment-incoherence",
+          "sectionId": "section-conquest-revelation-and-religious-violence",
+          "side": "pro",
+          "speaker": "Stephen Woodford",
+          "moveKind": "reply",
+          "proposition": "Condemning child sacrifice cannot justify commanding the killing of that population's children or the taking of its young girls.",
+          "sourceSpan": {
+            "startEvent": 2263,
+            "endEvent": 2288,
+            "excerpt": "child sacrifice. So, God sits there and goes, \"I got a really good idea. They are murdering their children. That's bad. So, I'm going to command my people to go into their village and murder their children.\" >> Yeah, but that's not what happened. Okay, so Yes, it is. You could What he says is you go in there to this wicked place. >> Yes. You don't just kill the adults that have done wicked things, do you? No, he says explicitly"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Stephen directly restates the moral contradiction he sees in Glen's narrative defense and anchors it in the described biblical commands.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "bridge-pro-doctrinal-harm"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-conquest-context-and-christian-prohibition",
+              "con-trinitarian-ground-of-goodness",
+              "con-enemy-love-beyond-tribe"
+            ],
+            "components": [
+              {
+                "componentId": "pro-child-sacrifice-punishment-incoherence-component-01",
+                "targetMoveId": "con-conquest-context-and-christian-prohibition",
+                "text": "Judgment on a violent child-sacrificing culture and ancient context morally explain the conquest commands.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-child-sacrifice-punishment-incoherence-component-02",
+                "targetMoveId": "con-trinitarian-ground-of-goodness",
+                "text": "Divine goodness is identical with eternal love and cannot be arbitrary command.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-child-sacrifice-punishment-incoherence-component-03",
+                "targetMoveId": "con-enemy-love-beyond-tribe",
+                "text": "Christianity makes concern for enemies and the weak morally authoritative.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies the mismatch between condemning child sacrifice and killing children as defeating the proposed justificatory rationale, with a stated inconsistency consequence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The contradiction is sharply recoverable, but it assumes the contested literal scope of the command rather than conditioning the argument explicitly on that reading."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "not-needed",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Given the stated premises, the limited claim that child sacrifice cannot justify killing those children is proportionately asserted."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The conquest may not literally involve indiscriminate child killing because of hyperbole or narrower combatant reference.",
+            "decisiveQualification": "If children were not commanded killed, the inconsistency weakens; if they were, the child-sacrifice rationale cannot justify it."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "The normative warrant is strong, but the selected exchange leaves disputed whether the relevant text actually commands the described child killing."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central affirmative doctrinal-harm bridge with the debate's most concentrated revelation-based moral test."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The move presses the decisive residual issue forcefully but treats the disputed textual premise as settled despite the opponent's immediate denial."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly isolates and attacks the decisive justification rather than merely repeating general moral disapproval."
+            }
+          },
+          "evidenceBasis": "The excerpt explicitly contrasts condemnation of child sacrifice with an alleged command to enter the community and kill its children, while the factual premise is disputed.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct affirmative debate-wide consequence remains uncaptured by move ratings, response links, importance, or burden relevance findings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion remains beyond the locked affirmative bridges already evaluated move by move.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible residual consequence was identified under the strict exclusion rule.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded move judgments."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct negative debate-wide consequence remains uncaptured by move ratings, response links, importance, or burden relevance findings.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion remains beyond the locked negative bridges already evaluated move by move.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible residual consequence was identified under the strict exclusion rule.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded move judgments."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-governing-poison-test",
+          "title": "The Governing Test: Prior Human Goods or Distinctive Religious Contribution",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-prior-human-decency",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-unique-good-without-harm-test",
+                  "importance": 3,
+                  "score": 77
+                }
+              ]
+            },
+            "con": {
+              "score": 80,
+              "moves": [
+                {
+                  "moveId": "con-human-poison-christian-antidote",
+                  "importance": 3,
+                  "score": 76
+                },
+                {
+                  "moveId": "con-original-sin-precedes-religion",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-slavery-abolition-and-gradual-reform",
+          "title": "Slavery, Abolition, and the Pace of Christian Reform",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "pro-christian-dominion-failed-to-abolish",
+                  "importance": 3,
+                  "score": 80
+                },
+                {
+                  "moveId": "pro-selective-gradualism-on-slavery",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            },
+            "con": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "con-image-of-god-against-slavery",
+                  "importance": 3,
+                  "score": 87
+                },
+                {
+                  "moveId": "con-equality-and-gradual-abolition",
+                  "importance": 3,
+                  "score": 76
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-women-family-and-social-institutions",
+          "title": "Women, Family, and Christian Social Institutions",
+          "weightPercent": 13,
+          "sides": {
+            "pro": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "pro-community-with-doctrinal-subordination",
+                  "importance": 2,
+                  "score": 81
+                },
+                {
+                  "moveId": "pro-humane-motif-retreats-from-scripture",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            },
+            "con": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "con-monogamy-constrains-male-power",
+                  "importance": 2,
+                  "score": 82
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-moral-grounding-and-human-worth",
+          "title": "Moral Grounding, Divine Love, and Equal Human Worth",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 87,
+              "moves": [
+                {
+                  "moveId": "pro-divine-nature-canaan-test",
+                  "importance": 3,
+                  "score": 87
+                }
+              ]
+            },
+            "con": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "con-trinitarian-ground-of-goodness",
+                  "importance": 3,
+                  "score": 85
+                },
+                {
+                  "moveId": "con-objective-ground-beyond-agreement",
+                  "importance": 3,
+                  "score": 73
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-conquest-revelation-and-religious-violence",
+          "title": "Conquest Narratives, Revelation, and Religious Violence",
+          "weightPercent": 13,
+          "sides": {
+            "pro": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "pro-child-sacrifice-punishment-incoherence",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            },
+            "con": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "con-internal-critique-corrupt-religion",
+                  "importance": 2,
+                  "score": 78
+                },
+                {
+                  "moveId": "con-conquest-context-and-christian-prohibition",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-universal-compassion-and-historical-causation",
+          "title": "Universal Compassion and Its Historical Sources",
+          "weightPercent": 14,
+          "sides": {
+            "pro": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "pro-community-is-human-not-unique",
+                  "importance": 2,
+                  "score": 82
+                },
+                {
+                  "moveId": "pro-nonchristian-moral-goods-test",
+                  "importance": 2,
+                  "score": 89
+                }
+              ]
+            },
+            "con": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "con-devotion-compassion-institutions",
+                  "importance": 3,
+                  "score": 80
+                },
+                {
+                  "moveId": "con-enemy-love-beyond-tribe",
+                  "importance": 3,
+                  "score": 74
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 83.26,
+          "burdenCompletionAdjustment": 0,
+          "score": 83
+        },
+        "con": {
+          "weightedSectionMean": 80.4,
+          "burdenCompletionAdjustment": 0,
+          "score": 80
+        }
+      },
+      "winner": "pro",
+      "winningMargin": 3
+    },
+    "audit": {
+      "sections": 6,
+      "moves": 21,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 133189,
+  "proposedAdapterSha256": "793e9f0b3ddd4f2531f61abc2a772fd02dcd8c4e11afdfd941366630cc6134f7",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "101",
+    "sections": 6,
+    "moves": 21,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-02-single-deterministic-score-pass",
+    "adapterSha256": "793e9f0b3ddd4f2531f61abc2a772fd02dcd8c4e11afdfd941366630cc6134f7",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
