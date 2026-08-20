@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-source-preparation",
+  "debateNumber": "09",
+  "debateId": "peterson-dillahunty-god-debate-2023",
+  "motion": "Does God-language name a real supernatural being, or does it function mainly as a religious, moral, and psychological substrate for meaning?",
+  "sides": {
+    "pro": {
+      "label": "Religious pragmatist",
+      "speakers": [
+        "Jordan Peterson"
+      ]
+    },
+    "con": {
+      "label": "Secular skeptic",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 5992,
+  "eventCount": 2935,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/9nQUg4QeI_Y/transcript.txt",
+    "transcriptSha256": "758b383c5cfec1112f6a4c4a549fb67b7dc76f827307db9ad4c6e6fc896f7309",
+    "eventsPath": ".assessment-cache/captions/9nQUg4QeI_Y/events.json",
+    "eventsSha256": "60215982a1d706dbaf7db7b7ba08878a75fc02c4913c000a2410ef3909bd9b96",
+    "localManifestPath": ".assessment-cache/captions/9nQUg4QeI_Y/manifest.json",
+    "localManifestSha256": "112dfdb4e89f613f552b2e5d6d0da17d3da47f23d344a1cb655bd3c408a8bb48"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-03/debate-09.jsonl",
+    "sourceLedgerSha256": "6e56503b6e6f691638defb40a0608dd395b5cb60459a7501f2d18eb0854500ff",
+    "sourceLedgerBytes": 159452,
+    "sourceLedgerEventCount": 2935,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/source-preparation/plans/debate-09.json",
+    "partitionPlanSha256": "2ce0cd91d17ed7d22405a6bfe69618e353c48d9c73b2189bbb704c0ad2efaaaf",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

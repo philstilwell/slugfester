@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2868,
+  "ledgerBytes": 158520,
+  "ledgerSha256": "ca42a5d2386e1a12eee4c0044eb1aa579a1aa8f7c673af1c67d2de63b052ddbe",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48024,
+      "contextSha256": "51cafaf82b7188655ea4d1139a5205d3521b2b2d13f4d48444a88175170eca95"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50147,
+      "contextSha256": "5ae84a36d08f9e1178006dec149a1f4f3a9d6c8c1466155fb37fce4d184c2dd2"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50954,
+      "contextSha256": "760d89f110f56036fcac68ca0c4a61580877368283b3e09ad8f852e03223bf42"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2867,
+      "coreEvents": 368,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2867,
+      "contextEvents": 408,
+      "contextBytes": 22842,
+      "contextSha256": "7f65fac23d0579b54af104f3419154733b068d83f04d2318a9adfcb1a6961829"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2867,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "138",
+  "debateId": "albrecht-price-bodily-resurrection-2022",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

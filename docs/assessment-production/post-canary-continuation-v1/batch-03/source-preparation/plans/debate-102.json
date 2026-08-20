@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2625,
+  "ledgerBytes": 146885,
+  "ledgerSha256": "4f7a7fa8658df2e72c7fb05d8a0a5b414c540661c499286754dcc64e72a53c88",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49755,
+      "contextSha256": "99edeb7c609112e33b98a64cb2962723b3313860d0d9ad4e043faae426fe9e7b"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51241,
+      "contextSha256": "85be8953cde035a2bc880dbfa892e7b23ce27c772cd90c59ebb5ac747c9c59ff"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 50172,
+      "contextSha256": "980375e81207f0ddf9dfbbf361321602cdb7e7d92ab7180b932ef79fd2978236"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2624,
+      "coreEvents": 125,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2624,
+      "contextEvents": 165,
+      "contextBytes": 9311,
+      "contextSha256": "562b7571a40f83aea4a6bc135eab6a54c1dc3a5e15bdc4553c02a9670bee9fb4"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2624,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "102",
+  "debateId": "woodford-brierley-christianity-rational-2019",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

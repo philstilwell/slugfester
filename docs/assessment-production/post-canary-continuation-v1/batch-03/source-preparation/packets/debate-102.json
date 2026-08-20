@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-source-preparation",
+  "debateNumber": "102",
+  "debateId": "woodford-brierley-christianity-rational-2019",
+  "motion": "Is Christianity rational, and do its claims about God, morality, reason, and resurrection meet proportionate evidential standards?",
+  "sides": {
+    "pro": {
+      "label": "Christianity irrational",
+      "speakers": [
+        "Stephen Woodford"
+      ]
+    },
+    "con": {
+      "label": "Christian rationality",
+      "speakers": [
+        "Justin Brierley"
+      ]
+    }
+  },
+  "durationSeconds": 5248,
+  "eventCount": 2625,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/EfAWALcKf2w/transcript.txt",
+    "transcriptSha256": "0586751d6e27491811d666b085379ffd7aa744e614b0839085fad5c605af37af",
+    "eventsPath": ".assessment-cache/captions/EfAWALcKf2w/events.json",
+    "eventsSha256": "ea755276262999f032aab172206740d8542d4e7831c47f3f6710220739b5e2da",
+    "localManifestPath": ".assessment-cache/captions/EfAWALcKf2w/manifest.json",
+    "localManifestSha256": "c1afc5161a3be35f8d9ac5782eebeb479147fa83b6bf3ea931e87ee62665095d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-03/debate-102.jsonl",
+    "sourceLedgerSha256": "4f7a7fa8658df2e72c7fb05d8a0a5b414c540661c499286754dcc64e72a53c88",
+    "sourceLedgerBytes": 146885,
+    "sourceLedgerEventCount": 2625,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/source-preparation/plans/debate-102.json",
+    "partitionPlanSha256": "0fcd208a8aef811dbb0cedac63b9d7beb08e732d43f3dc54de26d33d77aaecb1",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

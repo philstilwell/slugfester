@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1511,
+  "ledgerBytes": 176287,
+  "ledgerSha256": "dbe76558c92097e9cc0b665b2aa2f6a80b7b293f28ea5068977066b222836694",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 564,
+      "coreEvents": 565,
+      "contextStartEvent": 0,
+      "contextEndEvent": 604,
+      "contextEvents": 605,
+      "contextBytes": 69963,
+      "contextSha256": "019f130c9381f8ba2790a2d97fb51175e0c3aaa20dee989e90696927b5e65f97"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 565,
+      "coreEndEvent": 1085,
+      "coreEvents": 521,
+      "contextStartEvent": 525,
+      "contextEndEvent": 1125,
+      "contextEvents": 601,
+      "contextBytes": 69934,
+      "contextSha256": "c73fe7335b5a2bdc4a681e6875cb8ccfc9d6aa37a6225525caa5c6499d5c493c"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1086,
+      "coreEndEvent": 1510,
+      "coreEvents": 425,
+      "contextStartEvent": 1046,
+      "contextEndEvent": 1510,
+      "contextEvents": 465,
+      "contextBytes": 54822,
+      "contextSha256": "d800ef3a5bb1f00f7473b796972b09e9dbca2b2910be5b07bc569534997bc6a7"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1510,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "150",
+  "debateId": "licona-dillahunty-resurrection-evidence-2017",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3124,
+  "ledgerBytes": 178257,
+  "ledgerSha256": "d1e8b8c64236e7babc522ed1cd60421570370298b04efea5d670e1a4a999e05f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50553,
+      "contextSha256": "9bfcce68c3562d6d801c321de28eaa8e68edb95a45137d3ed7c4bc5270335496"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51524,
+      "contextSha256": "bd7be475f028da32d0ded3ea10f6a8b7dd64d6d82ef7d5919ac37944a2026b33"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51477,
+      "contextSha256": "f876bde8398b751577d834c2b25d51fe62a77a6a7240017e8378fb266c29fc0b"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3123,
+      "coreEvents": 624,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3123,
+      "contextEvents": 664,
+      "contextBytes": 38219,
+      "contextSha256": "084c1dbbc37dc56b457ccd07dd583d295362ed437a7a9cdcaf45a7f03192cc40"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3123,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "157",
+  "debateId": "dillahunty-howitt-christianity-true-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

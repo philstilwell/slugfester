@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2935,
+  "ledgerBytes": 159452,
+  "ledgerSha256": "6e56503b6e6f691638defb40a0608dd395b5cb60459a7501f2d18eb0854500ff",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48551,
+      "contextSha256": "ee8055824941df3fad782b06dc17e13abdd6437daefac4a83f8ca975db922b6d"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48585,
+      "contextSha256": "51c8b282e6c2aa2ce7ef7535e5e86501fe370e65acc8e60c78d13fd9589342cb"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 49638,
+      "contextSha256": "247814b1c6863b51ad259f2dff4ad78ab84a7b4a9fede2017156da17c19af712"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2934,
+      "coreEvents": 435,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2934,
+      "contextEvents": 475,
+      "contextBytes": 25497,
+      "contextSha256": "a63e32b622036dab9b532bbc2ff265b76d38069ec58ed3a7cb47dbe00f7fbfb1"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2934,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "09",
+  "debateId": "peterson-dillahunty-god-debate-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

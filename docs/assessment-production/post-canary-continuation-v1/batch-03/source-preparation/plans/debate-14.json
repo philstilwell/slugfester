@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3541,
+  "ledgerBytes": 206295,
+  "ledgerSha256": "00e9c2fa4d7d9cf2d5e3543667e2500dff2d318faaca6115860411e7c8582b44",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51758,
+      "contextSha256": "fe157d200ac355e8bcd5637eb3d404afa8f71bd5f7e6e14022fce66104bc3414"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53250,
+      "contextSha256": "282fe04fb006cb841007898db04e1e8d599820004806365401c5fb5c9507d6c0"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52126,
+      "contextSha256": "68167840c4699c5d6431c3ee70697b2b28eeef8525d329b5928496fee39a6e52"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52682,
+      "contextSha256": "0af477174f2fd666c5a367b08f7cd845b74602c3007abedc3d11aa087f516412"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3540,
+      "coreEvents": 221,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3540,
+      "contextEvents": 261,
+      "contextBytes": 15116,
+      "contextSha256": "c8c69b1c6d4cc771374c95e4c0ef9ece73e5e80877d4fac535eb65f54ef0c6ac"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3540,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "14",
+  "debateId": "jones-carrier-god-existence-2025",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

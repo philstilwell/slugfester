@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3541,
+  "ledgerBytes": 236420,
+  "ledgerSha256": "2eb12fdc7b9350e7a9d1e9090c9f6a549a742762b827a39682114e274534cf99",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 62669,
+      "contextSha256": "6e749874a564b11ff52589bd8da1ce819938b2fab036ba19f6f28237c596ad92"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 58383,
+      "contextSha256": "1b72c446ba1d7015ac8e09aaecf14cf6c130be7c2310cf212616baac907a5f70"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 56464,
+      "contextSha256": "acb7b6a374798d8d893078d6f661fb44223b3d9ab696a0e60aa6a5fb8c95011f"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 66711,
+      "contextSha256": "abe4a2c7a657f33dcd1490833113d682f647f85c17f354efc3c090e5ae95cdae"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3540,
+      "coreEvents": 221,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3540,
+      "contextEvents": 261,
+      "contextBytes": 15675,
+      "contextSha256": "f4542f9651cb12c3f10d3c2099b308593c89dea0d76b57abbde536bf1852d851"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3540,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "58",
+  "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

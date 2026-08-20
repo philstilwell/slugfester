@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-source-preparation",
+  "debateNumber": "157",
+  "debateId": "dillahunty-howitt-christianity-true-2023",
+  "motion": "Is Christianity true, and do the grounding of logic, a necessary cause, divine hiddenness, and the relation of reason to revelation support or undermine it?",
+  "sides": {
+    "pro": {
+      "label": "Christian logos",
+      "speakers": [
+        "Lewis Howitt (PerspectivePhilosophy)"
+      ]
+    },
+    "con": {
+      "label": "Skeptical empiricism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7065,
+  "eventCount": 3124,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/13PnL6QyMEw/transcript.txt",
+    "transcriptSha256": "b764ef00b320fcfb77f79008de9cd0d0b74015a973628e9576f9b253740810d7",
+    "eventsPath": ".assessment-cache/captions/13PnL6QyMEw/events.json",
+    "eventsSha256": "069b4eccfa2bae25b212d9b4ed5337668159d4b261c7839c9bc5438a831992c6",
+    "localManifestPath": ".assessment-cache/captions/13PnL6QyMEw/manifest.json",
+    "localManifestSha256": "49876762ed160876207917a57809e4467792d523d53a2879a8fdb18edb5819a4"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-03/debate-157.jsonl",
+    "sourceLedgerSha256": "d1e8b8c64236e7babc522ed1cd60421570370298b04efea5d670e1a4a999e05f",
+    "sourceLedgerBytes": 178257,
+    "sourceLedgerEventCount": 3124,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/source-preparation/plans/debate-157.json",
+    "partitionPlanSha256": "27d053284a178c5f61b97d263f5aff1082e05e97b572c0bb9e4fa75ca5da3241",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

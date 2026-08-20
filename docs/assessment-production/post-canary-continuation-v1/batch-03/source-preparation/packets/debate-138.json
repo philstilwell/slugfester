@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-source-preparation",
+  "debateNumber": "138",
+  "debateId": "albrecht-price-bodily-resurrection-2022",
+  "motion": "Did Jesus Christ bodily rise from the dead, as early Christian sources claim?",
+  "sides": {
+    "pro": {
+      "label": "Bodily resurrection case",
+      "speakers": [
+        "William Albrecht"
+      ]
+    },
+    "con": {
+      "label": "Historical-analogy skepticism",
+      "speakers": [
+        "Robert Price"
+      ]
+    }
+  },
+  "durationSeconds": 6782,
+  "eventCount": 2868,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/CqpFmw4pwrY/transcript.txt",
+    "transcriptSha256": "18d66ecfdaa13ca600d39484006aeed24d906444b2768ddb348089189126e1d9",
+    "eventsPath": ".assessment-cache/captions/CqpFmw4pwrY/events.json",
+    "eventsSha256": "6e90b8cc0dae1d877902bba30cfd75b782a498a4b74a880c4cc2208d3768e21e",
+    "localManifestPath": ".assessment-cache/captions/CqpFmw4pwrY/manifest.json",
+    "localManifestSha256": "cbfa3f8b14a702ef8b74f673fa9ad0466f0fbe36bd16b7b801febd73672fc465"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-03/debate-138.jsonl",
+    "sourceLedgerSha256": "ca42a5d2386e1a12eee4c0044eb1aa579a1aa8f7c673af1c67d2de63b052ddbe",
+    "sourceLedgerBytes": 158520,
+    "sourceLedgerEventCount": 2868,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/source-preparation/plans/debate-138.json",
+    "partitionPlanSha256": "daa87807089403cf38b78229f9856ff6290baa34c92dea535315c3f257b4ece8",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1691,
+  "ledgerBytes": 99769,
+  "ledgerSha256": "7b5fdd832a635d9acbce2ca6895b8d6e671a3f867d7ece6401d86a493cfa35fd",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52392,
+      "contextSha256": "e1e245581c85f081a561b413fa3c992ae41c5f2a1a887c04586458b892f838c2"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1690,
+      "coreEvents": 831,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1690,
+      "contextEvents": 871,
+      "contextBytes": 52100,
+      "contextSha256": "37ff590b9108d423d4202cffee4a4457f911620a0093f71627c6a5a40dfb63c2"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1690,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
