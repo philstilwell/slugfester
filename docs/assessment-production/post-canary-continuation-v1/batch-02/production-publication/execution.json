@@ -1,0 +1,245 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-production-publication-execution",
+  "protocolId": "assessment-production-post-canary-batch-02-production-publication",
+  "status": "failed-closed-at-full-repository-seo-summary-regression",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "startedAt": "2026-08-20T01:07:05.465Z",
+  "mutationWritesCompletedAt": "2026-08-20T01:07:05.475Z",
+  "validationStartedAt": "2026-08-20T01:07:05.481Z",
+  "validationCompletedAt": "2026-08-20T01:07:10.953Z",
+  "failureRecordedAt": "2026-08-20T01:07:10.970Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-publication/execution-activation.json",
+    "sha256": "18d791112a14303bf839107908c6ac365b8cf6d11c564537108401070e2e1894",
+    "status": "batch-02-production-publication-single-mutation-pass-authorized-and-frozen"
+  },
+  "manifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-02/production-publication/mutation-manifest.json",
+    "sha256": "deeadbe110d242062610317919f810f1c9cc05ba10b52ad35d7496cb53f5f366"
+  },
+  "baseline": {
+    "manifestCommit": "0118bd570a59eef207ed3eb2e1d23e25c835a9c8",
+    "productionBaselineCommit": "198a9301c3a47a357e99e73a1255f5c009a43f03"
+  },
+  "attempt": {
+    "mutationPassesAuthorized": 1,
+    "mutationPassesAttempted": 1,
+    "mutationWritesCompleted": 1,
+    "mutationPassesAccepted": 0,
+    "validationRuns": 1,
+    "validationRunsCompleted": 0,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "rollbackPerformed": false
+  },
+  "writes": {
+    "productionDebates": {
+      "path": "src/data/debates.js",
+      "baselineSha256": "89d1787ecba5e88dd788915615002fab5437f762f04ba97764dda419dbf115c1",
+      "writtenSha256": "53e43d9c500a3cdb25ef0a92537ea4071bb63d7f4c11a0823b9e5f6dcbbe4d40",
+      "writtenBytes": 4844061,
+      "debatesBefore": 195,
+      "debatesAfter": 195,
+      "changedRecords": 10,
+      "changedDebateNumbers": [
+        "04",
+        "66",
+        "83",
+        "93",
+        "99",
+        "101",
+        "103",
+        "126",
+        "136",
+        "172"
+      ],
+      "nonTargetRecordsChanged": 0,
+      "matchesFrozenExpectedOutput": true,
+      "committed": false,
+      "pushed": false
+    },
+    "productionLedgers": [
+      {
+        "debateNumber": "103",
+        "path": "docs/assessment-ledgers/woodford-edwards-rational-belief-god-2023.json",
+        "sha256": "23979fdd9cd993babbd1e643ec2b49dcf2a4ff65f62bc8ca55ed31b55e73c00e",
+        "bytes": 99226,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "172",
+        "path": "docs/assessment-ledgers/hitchens-mcgrath-religious-belief-2007.json",
+        "sha256": "d5698a17ca5130ac9f13e6dd640618115b8d0e03116d27fe5acfc8ee1a475f47",
+        "bytes": 110237,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "04",
+        "path": "docs/assessment-ledgers/lennox-atkins-science-explain-everything-2019.json",
+        "sha256": "66689e7a2b25579f17d2cf8af01ada044a6f8b8805defc3aca745e5a4816ef11",
+        "bytes": 111187,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "136",
+        "path": "docs/assessment-ledgers/douthat-ehrman-resurrection-gospel-history-2026.json",
+        "sha256": "21453dee76054514f6605db79529b488381a3b7555ad88f0db937550889cc59d",
+        "bytes": 107182,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "83",
+        "path": "docs/assessment-ledgers/loke-oppy-kalam-causal-principle-2020.json",
+        "sha256": "cb45753c739ebfb8013c2f5658cf3ed8c8ab2ca9fa4abb1771643ab748f107c0",
+        "bytes": 114323,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "66",
+        "path": "docs/assessment-ledgers/donahue-fodor-case-against-christianity-2025.json",
+        "sha256": "7b951548dcf4110716ba5b82885ddaa123422e2c014281ca96e9dfbfa71ba476",
+        "bytes": 108727,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "126",
+        "path": "docs/assessment-ledgers/craig-clifton-kalam-cosmological-argument-2021.json",
+        "sha256": "c75445d9a3970d2ac28ae7a6330436e5b644c636ae633254694a7d3500559f4f",
+        "bytes": 108198,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "99",
+        "path": "docs/assessment-ledgers/jones-jump-digital-physics-god-2019.json",
+        "sha256": "deb2974bac689bc5fd60c43e92da52ce4403f5736e824511fca6ee31a5e6bc1a",
+        "bytes": 117554,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "93",
+        "path": "docs/assessment-ledgers/hunter-dillahunty-christian-god-exist-2019.json",
+        "sha256": "767e6fc5cfba71c96f57aa8cb0ea9ad73aa97c2826346841b108109e04bf1ea7",
+        "bytes": 117575,
+        "matchesStagedLedger": true
+      },
+      {
+        "debateNumber": "101",
+        "path": "docs/assessment-ledgers/woodford-scrivener-religion-poisons-everything-2026.json",
+        "sha256": "793e9f0b3ddd4f2531f61abc2a772fd02dcd8c4e11afdfd941366630cc6134f7",
+        "bytes": 133189,
+        "matchesStagedLedger": true
+      }
+    ],
+    "productionLedgerFilesWritten": 10,
+    "byteIdenticalStagedLedgerCopies": 10,
+    "productionLedgerFilesCommitted": 0,
+    "productionLedgerFilesPushed": 0,
+    "productionReferences": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+      "bytes": 4467,
+      "changed": false
+    },
+    "candidatesRewritten": 0,
+    "stagedLedgersRewritten": 0,
+    "validatorRewritten": false,
+    "compatibilityEvidenceRewritten": false,
+    "scoreChangesFromFrozenCandidates": 0
+  },
+  "validation": {
+    "command": "npm run check",
+    "commandRuns": 1,
+    "exitCode": 1,
+    "signal": null,
+    "completed": false,
+    "stdoutBytes": 12862,
+    "stdoutSha256": "282d741c66660334dd17599cdb061632b17eff23956111acf7513b80e8be4ec1",
+    "stdoutTail": "6a87d4379f578c07f691064e400ed8939061efd77dc7758a0ef3faa\",\n  \"debates\": [\n    {\n      \"debateId\": \"dillahunty-ten-bruggencate-reasonable-god-2014\",\n      \"passASha256\": \"2b52f908a78b63f9d2323156356fad71e6509f6ff278d01ac100e68bab72e8a6\",\n      \"passBSha256\": \"41fac0be0d8b7be81a985e32b935428c55cf76f561db3be9f4930d38ea3e7ea5\",\n      \"adjudicationSha256\": \"e79925d0f8f5912dfd33e4c8ad5f0eeed466d4ac8b97d8d517eafbd01575f6b8\",\n      \"ledgerSha256\": \"a61956c79df0485ab4a4e20f92e8e5e04cbc3ec09938c7280d09465c2a25afcb\",\n      \"moves\": 26,\n      \"triggeredMoves\": 11,\n      \"calculatorMismatches\": 0\n    },\n    {\n      \"debateId\": \"rasmussen-oppy-ultimate-reality-naturalism-2020\",\n      \"passASha256\": \"4f25f3ece7bdbb32b0c53a185a768cdbe023c4e63439c2980d10d1a28696a1fc\",\n      \"passBSha256\": \"4bb94c704d219ac4fe1262b25a675f7c800eaff670fcc731ccfc2de7929fef07\",\n      \"adjudicationSha256\": \"0392a39cb390d2c45113008c1d5d4eac8b1fe365cbbe49b535a5721bf038b984\",\n      \"ledgerSha256\": \"a696dad18c62253f32028a00aa6f4ce959f7b17a05898bf48d6eaa8617be163a\",\n      \"moves\": 25,\n      \"triggeredMoves\": 6,\n      \"calculatorMismatches\": 0\n    },\n    {\n      \"debateId\": \"craig-frazier-goff-folley-god-reality-2026\",\n      \"passASha256\": \"3e726b70c338cc0603993bf4b7fe403906201510ad9e833393a1b643ebc02f4f\",\n      \"passBSha256\": \"17a757ad3cd29b3ab890e19f6cdd957a409b3668d9a2d6ffa0207da2985c779f\",\n      \"adjudicationSha256\": \"af91028a9a57aee8be39c1eaacbda18abfdb3991f1982b083a675d98dddd1335\",\n      \"ledgerSha256\": \"bd6ece122e18efaf7f0b9368f55c1c8f3062b60f353cd6cad0a79682d77f240d\",\n      \"moves\": 28,\n      \"triggeredMoves\": 9,\n      \"calculatorMismatches\": 0\n    }\n  ],\n  \"totals\": {\n    \"debateCount\": 3,\n    \"sectionCount\": 17,\n    \"moveCount\": 79,\n    \"triggeredMoveCount\": 26,\n    \"moveAdjudicationRate\": 0.3291,\n    \"mediumOrLowAudioVerified\": 14,\n    \"unresolvedMediumOrLow\": 0,\n    \"passSchemaVariants\": 1,\n    \"ledgerSchemaVariants\": 1,\n    \"burdenAdjustmentEligibilityViolations\": 0,\n    \"missingRequiredAdjudications\": 0,\n    \"calculatorMismatches\": 0\n  },\n  \"overallStatus\": \"passed-mechanics-gate-not-passed\"\n}\n{\n  \"status\": \"passed\",\n  \"debateCount\": 3,\n  \"paidTranscriptionCalls\": 0,\n  \"debates\": [\n    {\n      \"debateId\": \"carroll-shermer-hutchinson-dsouza-science-religion-2012\",\n      \"videoId\": \"ulykALV2FQ8\",\n      \"sourceType\": \"auto-captions\",\n      \"wordCount\": 23301,\n      \"eventCount\": 3081,\n      \"transcriptSha256\": \"51e43ff9453eda91fbb7a6816c1adbb2c3b7e8361f31fd7f2568c6de34251d16\",\n      \"eventsSha256\": \"eb553642477116561edeb0a6f946fd31b3f9cd0062ab8f9d8fe683add1a76aee\",\n      \"manifestSha256\": \"028f8fe555ce43955d69694bba626e04bc4997d1402451a21525dc657a832dde\"\n    },\n    {\n      \"debateId\": \"licona-dillahunty-resurrection-evidence-2017\",\n      \"videoId\": \"IW9w6c2RWmA\",\n      \"sourceType\": \"human-captions\",\n      \"wordCount\": 28504,\n      \"eventCount\": 1511,\n      \"transcriptSha256\": \"f24ccb20690144ccfcecff41f4b274f6d9f285d10f7d190cdb998398c4554fbd\",\n      \"eventsSha256\": \"a9e6767e0f7325793049c7af2483841d23af4bbcd2766d6bd8789e5cf4e0aa44\",\n      \"manifestSha256\": \"b9df8f56313a43e7c141abb5eee8d05d4005283d956123ff7b7fa78f6a7a0a50\"\n    },\n    {\n      \"debateId\": \"huemer-oppy-souls-personal-identity-2022\",\n      \"videoId\": \"gxSi0htNihk\",\n      \"sourceType\": \"auto-captions\",\n      \"wordCount\": 24870,\n      \"eventCount\": 3704,\n      \"transcriptSha256\": \"8ad124154675eef151672bd438520af0a514ddea61f822ee18534959957cee3d\",\n      \"eventsSha256\": \"fc752494e233eff522021e36dcba0a3f2efdab7feab46649cd356d155d974272\",\n      \"manifestSha256\": \"29f9d3bd89a96dd9b8e8654d2f7aa2f8ead528526fefa2cbc4f2b5e6dd7b64de\"\n    }\n  ]\n}\n{\n  \"status\": \"passed\",\n  \"sourceDisagreements\": 32,\n  \"orthogonalExamples\": 32,\n  \"heldOutEligible\": false\n}\n{\n  \"status\": \"passed\",\n  \"debateCount\": 3,\n  \"paidTranscriptionCalls\": 0,\n  \"debates\": [\n    {\n      \"debateId\": \"enoch-sampson-loeb-lutz-moral-realism-2024\",\n      \"videoId\": \"6Uw9szL-3MA\",\n      \"sourceType\": \"auto-captions\",\n      \"wordCount\": 21908,\n      \"eventCount\": 2695,\n      \"transcriptSha256\": \"b856ac8642eb744f11cf4d77bbbf3776430a2907f2341caf242b24291323e1d4\",\n      \"eventsSha256\": \"ce6e3b0249def2172eab06f3db03b765c5c8ea7bfabcfc4386d6203a440f3542\",\n      \"manifestSha256\": \"24783e957f4244dd72101df8e4975054f81704b3948639fd0516a06e268f9f56\"\n    },\n    {\n      \"debateId\": \"licona-carrier-resurrection-history-2010\",\n      \"videoId\": \"0IpKHdVLZb4\",\n      \"sourceType\": \"human-captions\",\n      \"wordCount\": 29078,\n      \"eventCount\": 1571,\n      \"transcriptSha256\": \"4db3c90469196c75e7ad14e960367e1c8360ec1523683897ee772309919da97b\",\n      \"eventsSha256\": \"cc44372243cbd640ad13a702286c232c90667636fbb385499552822e11cfeda1\",\n      \"manifestSha256\": \"771f1afb79b7f597c7cc6deaf67274de96ec80bdfc1b065e54e22ac6fa4d8699\"\n    },\n    {\n      \"debateId\": \"dennett-caruso-free-will-responsibility-2021\",\n      \"videoId\": \"AxhA7S3q49o\",\n      \"sourceType\": \"auto-captions\",\n      \"wordCount\": 22811,\n      \"eventCount\": 3514,\n      \"transcriptSha256\": \"bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b\",\n      \"eventsSha256\": \"b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e\",\n      \"manifestSha256\": \"566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a\"\n    }\n  ]\n}\n{\n  \"status\": \"passed\",\n  \"caseCount\": 15,\n  \"disputedFieldCount\": 24,\n  \"derivedExampleCount\": 15,\n  \"heldOutContamination\": 0\n}\n{\n  \"status\": \"passed\",\n  \"caseCount\": 15,\n  \"intentionalContactRevisions\": [\n    \"173:173-m11\",\n    \"192:m08\"\n  ],\n  \"sourceSha256\": \"e009e3eb8112ccccc982178ccf565afaa58cb1a6cae1f44fb967be999b6b82e3\",\n  \"examplesSha256\": \"61470975c752fa967c3040e1758c9d18350bc13cceb49e717a06f7fe25eecc95\",\n  \"schemaSha256\": \"9387f7011f5a7bd4de529e186b5fb3b028d1a8ee2d06c63cd2bb1024daa2edb9\"\n}\n{\n  \"status\": \"passed\",\n  \"assertions\": 12\n}\n{\n  \"status\": \"passed\",\n  \"write\": false,\n  \"replayCount\": 3,\n  \"stableMoveCount\": 36,\n  \"burdenDerivationRegressions\": 0,\n  \"reframeDerivationRegressions\": 0\n}\nValidated locked debate page design.\n",
+    "stderrBytes": 509,
+    "stderrSha256": "37d7b6f7237b228533a43d209d3ab82a04ab0b42cc5d5aedb0058399fb104974",
+    "stderrTail": "file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/generate-seo-pages.mjs:349\n    throw new Error(`${file} is out of date; run npm run seo`);\n          ^\n\nError: /Users/philstilwell/Documents/SLUGFESTER.com/src/data/debate-summaries.js is out of date; run npm run seo\n    at ensureMatches (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/generate-seo-pages.mjs:349:11)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/generate-seo-pages.mjs:365:5\n\nNode.js v25.9.0\n",
+    "routeAndRepositoryScoreValidationPassed": true,
+    "productionDebatesValidated": 195,
+    "batchProductionRoutesValidated": 10,
+    "batchRepositoryDerivedScoresValidated": 20,
+    "checkpointBatch01LegacyReferenceRegressionsPassed": true,
+    "corpusTranscriptHashesPassed": null,
+    "fullRepositoryRegressionPassed": false,
+    "stoppedAtStage": "generated SEO file freshness check",
+    "failure": {
+      "id": "generated-debate-summary-index-out-of-date",
+      "file": "src/data/debate-summaries.js",
+      "fileSha256": "4ef6aa16d683a38526e6a5edf2e5115280872e867f3c6e73d212bffbe55eada6",
+      "generator": "scripts/generate-seo-pages.mjs",
+      "generatorSha256": "8ed300943f4d15db89128a39d664be51b9b48dc610c92ec4d8c57065f597fe2f",
+      "generatorLine": 349,
+      "errorName": "Error",
+      "message": "Error: /Users/philstilwell/Documents/SLUGFESTER.com/src/data/debate-summaries.js is out of date; run npm run seo",
+      "plainEnglish": "The ten Batch 2 production debate records passed semantic, authenticated-route, and score validation, but the repository also keeps generated search and SEO files derived from those records. The first freshness check found the summary index still at its pre-mutation bytes, so the one authorized repository validation stopped.",
+      "firstObservedGeneratedArtifactOnly": true,
+      "laterGeneratedArtifactsReached": false,
+      "repairCommandExecuted": false
+    }
+  },
+  "preservation": {
+    "mutationWorkingTreePreservedForAudit": true,
+    "partialProductionMutationCommitted": false,
+    "partialProductionMutationPushed": false,
+    "failedExecutionRecordPreserved": true,
+    "automaticRepairPerformed": false,
+    "automaticRerunPerformed": false,
+    "rollbackPerformed": false
+  },
+  "totals": {
+    "debatesPlanned": 10,
+    "productionDebateRecordsWritten": 10,
+    "productionLedgerFilesWritten": 10,
+    "productionRecordsAccepted": 0,
+    "validationRuns": 1,
+    "validationFailures": 1,
+    "reruns": 0,
+    "retries": 0,
+    "automaticRepairs": 0,
+    "scorePasses": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "productionCommitCreated": false,
+    "productionPushPerformed": false,
+    "nextBatchSelections": 0
+  },
+  "authorization": {
+    "executionAnalysis": true,
+    "auditCommitAndPush": true,
+    "productionCommit": false,
+    "generatedSeoDerivativeCorrectionPreparation": false,
+    "generatedSeoDerivativeCorrectionExecution": false,
+    "validationRerun": false,
+    "mutationRerun": false,
+    "rollback": false,
+    "scorePass": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "firstFailureStoppedPass": true,
+    "noAutomaticRepairHonored": true,
+    "noRetryHonored": true,
+    "noRerunHonored": true,
+    "partialPublicationNotCommitted": true,
+    "partialPublicationNotPushed": true,
+    "productionReferencesPreserved": true,
+    "validatorPreserved": true,
+    "candidatesPreserved": true,
+    "stagedLedgersPreserved": true,
+    "compatibilityEvidencePreserved": true,
+    "scorePolicyPreserved": true,
+    "modelExecutionForbidden": true,
+    "paidServiceForbidden": true,
+    "nextBatchSelectionForbidden": true
+  },
+  "nextAuthorizedAction": "user-approval-required-before-batch-02-generated-seo-derivative-correction-plan-preparation-only"
+}
