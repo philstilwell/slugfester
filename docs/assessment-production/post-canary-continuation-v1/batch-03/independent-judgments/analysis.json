@@ -1,0 +1,941 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-independent-judgment-analysis",
+  "protocolId": "assessment-production-post-canary-batch-03-independent-judgments",
+  "status": "twenty-post-canary-batch-03-independent-judgments-passed-standing-authorization-active-for-disagreement-extraction",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "sourceCompatibility": {
+    "status": "exact-source-zero-lexical-token-row-preserved-with-zero-count",
+    "reason": "0 nonempty canonical caption rows contain zero repository lexical tokens; every occurrence is preserved byte-for-byte with count zero.",
+    "policy": "Preserve the exact canonical row and text, record lexicalTokenCount as 0, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "execution": {
+    "contextsPlanned": 20,
+    "contextsAttempted": 20,
+    "contextsUnattempted": 0,
+    "validContexts": 20,
+    "invalidContexts": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "rampPhases": [
+      {
+        "phase": "operational-canary-one",
+        "maximumParallelContexts": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true,
+        "startedAt": "2026-08-20T14:06:15.842Z",
+        "completedAt": "2026-08-20T14:11:31.593Z",
+        "attemptedContextIndexes": [
+          0
+        ],
+        "validContextIndexes": [
+          0
+        ],
+        "passed": true,
+        "skippedBecausePriorRampFailed": false
+      },
+      {
+        "phase": "ramp-two",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          1,
+          2
+        ],
+        "expansionRequiresAllValid": true,
+        "startedAt": "2026-08-20T14:11:31.593Z",
+        "completedAt": "2026-08-20T14:18:38.090Z",
+        "attemptedContextIndexes": [
+          1,
+          2
+        ],
+        "validContextIndexes": [
+          1,
+          2
+        ],
+        "passed": true,
+        "skippedBecausePriorRampFailed": false
+      },
+      {
+        "phase": "steady-two",
+        "maximumParallelContexts": 2,
+        "contextIndexes": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "expansionRequiresAllValid": false,
+        "startedAt": "2026-08-20T14:18:38.090Z",
+        "completedAt": "2026-08-20T14:57:03.641Z",
+        "attemptedContextIndexes": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "validContextIndexes": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "passed": true,
+        "skippedBecausePriorRampFailed": false
+      }
+    ],
+    "maximumParallelContextsObserved": 2,
+    "wallElapsedMs": 3047800,
+    "modelWorkElapsedMs": 5625342,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0,
+    "modelAuthoredScores": 0,
+    "scoresDerived": 0
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "124",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 315268,
+      "moves": 24,
+      "judgmentSha256": "1390e5741e8d6cbb5720c91ffe5df39e4aab5c1532afbb7018f104f427cae153",
+      "rawOutputSha256": "077c4c63e7eb3fba01d06f43ed754ea7f4a80ddcd6c2e5458baf3214129e8d78",
+      "lockedInventorySha256": "0f92252f7fbb06b44c5d5568c318b28e976d4a0b13bae545b549943fe825af93",
+      "mediumConfidenceMoves": [
+        "con-heuristics-fail-under-change",
+        "pro-rational-instruction-behavioral-limit"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "con-heuristics-fail-under-change",
+        "pro-rational-instruction-behavioral-limit"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "124",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 295805,
+      "moves": 24,
+      "judgmentSha256": "f433d5fe340f62e608a25ec0ff5682f0f920373676090db69fe778c9cde5357c",
+      "rawOutputSha256": "d793b40b3fcf6bc8bc1c1af037873249bcf7955899ba8d479a6cfd09b0574bae",
+      "lockedInventorySha256": "0f92252f7fbb06b44c5d5568c318b28e976d4a0b13bae545b549943fe825af93",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "14",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 426056,
+      "moves": 18,
+      "judgmentSha256": "772b378e5ab3eeb4e236c78b941c2856b0190e0735f31b4acc284a2984e86c0a",
+      "rawOutputSha256": "5e6446850a4215cd5f2934fb301d1aee50666dda9fe221eaf67e6e661c448952",
+      "lockedInventorySha256": "c3c99f2d1a726ec74d452befd2fbde8c3e90555ec589b4ed78e6b317eb328987",
+      "mediumConfidenceMoves": [
+        "pro-unconstrained-bubble-causal-gap"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "pro-unconstrained-bubble-causal-gap"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "14",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 209875,
+      "moves": 18,
+      "judgmentSha256": "193f41345c59f53bc2536a5b41f588c2373c8212f2f547baec4c3305877d6e2e",
+      "rawOutputSha256": "f862d45182f5a0d60f229cd5631bcef4f8b28dabc313e6ea5c950186fb661e44",
+      "lockedInventorySha256": "c3c99f2d1a726ec74d452befd2fbde8c3e90555ec589b4ed78e6b317eb328987",
+      "mediumConfidenceMoves": [
+        "pro-unconstrained-bubble-causal-gap"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "pro-unconstrained-bubble-causal-gap"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "58",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 274929,
+      "moves": 19,
+      "judgmentSha256": "d8d6bbcc8b6ac334e6a9e92c4c407687032dce7c830090750359b154ff8eded9",
+      "rawOutputSha256": "89e7174dcccebacf89846ef862870ef853fcde199f9244a9f037344a2a7d02c9",
+      "lockedInventorySha256": "24558c44e069e6c7fe16d3496594a6342e0477161282362f0df36a88e2e2998f",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "58",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 396187,
+      "moves": 19,
+      "judgmentSha256": "a5f42c334b9784bf8a8aa0188895a3cf6f02aa33a293392d0b133bfa52cac8a6",
+      "rawOutputSha256": "848d2bdb5705c957ced2320dbce812be3fcb5a5c7aff6ce35665d3fc67b55f47",
+      "lockedInventorySha256": "24558c44e069e6c7fe16d3496594a6342e0477161282362f0df36a88e2e2998f",
+      "mediumConfidenceMoves": [
+        "pro-logic-presupposition-suffices"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "pro-logic-presupposition-suffices"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "150",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 246651,
+      "moves": 19,
+      "judgmentSha256": "596e90363d8a7f9bd52f7ce97702ba910410e2a14eb3012a9d750f73789aef4e",
+      "rawOutputSha256": "dfcd6b696abb0f899d1d4c17798f4a0d286fb49502fc0327c28a183441f63a09",
+      "lockedInventorySha256": "fabded53fb78874820961ce079e529b04d4cf408e230575376a372885494708b",
+      "mediumConfidenceMoves": [
+        "con-event-acceptance-not-causal-verdict"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "con-event-acceptance-not-causal-verdict"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "150",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 262818,
+      "moves": 19,
+      "judgmentSha256": "4c99974994b519113834fe2080182a945226d65523693924de09569d987170fe",
+      "rawOutputSha256": "0a17d4f70179b14242bd317bfae7fc00c92f733be5e05b64376691ef6fec83ae",
+      "lockedInventorySha256": "fabded53fb78874820961ce079e529b04d4cf408e230575376a372885494708b",
+      "mediumConfidenceMoves": [
+        "con-event-acceptance-not-causal-verdict"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "con-event-acceptance-not-causal-verdict"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 8,
+      "debateNumber": "157",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 291719,
+      "moves": 23,
+      "judgmentSha256": "d2f745c7975d804e5a5788ce2f4521fb6d9c8acb2cf031c86f9c631edf9ce380",
+      "rawOutputSha256": "2554db73b8300bef2747e08467ca067ba3d09776c7ba8233913da307fe7737d2",
+      "lockedInventorySha256": "d074271efe681fdeea8c8b322226cbae93d9b4eb9a221213335aa454578eb631",
+      "mediumConfidenceMoves": [
+        "con-reason-incarnation-access-gap",
+        "pro-divine-doubt-self-knowledge",
+        "pro-infer-divine-self-knowledge"
+      ],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [
+        "con-reason-incarnation-access-gap",
+        "pro-divine-doubt-self-knowledge",
+        "pro-infer-divine-self-knowledge"
+      ],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 9,
+      "debateNumber": "157",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 269706,
+      "moves": 23,
+      "judgmentSha256": "2e261103f7f0bd6f71ea8881f5837f64f59d46bc84dccab4e9eb0c9ace320f6e",
+      "rawOutputSha256": "51fddec382fc3a44f40e809748c5461b5af488852e8a67cb61d0b2fa2397556c",
+      "lockedInventorySha256": "d074271efe681fdeea8c8b322226cbae93d9b4eb9a221213335aa454578eb631",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 10,
+      "debateNumber": "102",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 253129,
+      "moves": 19,
+      "judgmentSha256": "cbd761ed03b62124889606e88a9eb40dd70d46eef29f2b6bc4003c5c4ea056b8",
+      "rawOutputSha256": "a3a0143b75b6e1d103f9c7dc4eb457c10751ed6a634f473354f1426e246374a4",
+      "lockedInventorySha256": "f2f743f34ee2a09106bdfedfb700b457d607162316654a7dabd39427f4e4557f",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 11,
+      "debateNumber": "102",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 260094,
+      "moves": 19,
+      "judgmentSha256": "5038e41b49d22ee61382751fb6451ffe102f81618b4a9dc56c5eca9a553d1829",
+      "rawOutputSha256": "b7001227ae36cf20d83092f45077e261b47829ee010c508c10469d82728d3880",
+      "lockedInventorySha256": "f2f743f34ee2a09106bdfedfb700b457d607162316654a7dabd39427f4e4557f",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 12,
+      "debateNumber": "09",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 284778,
+      "moves": 20,
+      "judgmentSha256": "837005f5697b4e0150148e6f74494ba36c00d3b264a9024f73ab698888dfa49b",
+      "rawOutputSha256": "8ee69ce0e6270c995169baf96fce5e19804631b2f2ef9ef9a3f8b0ab94060bcf",
+      "lockedInventorySha256": "64db4b7272e8d7204a8ad73fb99f4fe6b972707adb1af1a5035b642143ea5bf7",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 13,
+      "debateNumber": "09",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 273973,
+      "moves": 20,
+      "judgmentSha256": "a5d038e2347799fdf57cfb9609deece176c585b3bad8564eb8536a766235a89d",
+      "rawOutputSha256": "a8a938922a2438b2137afc3675380136e5b29d34a9533976795a36fd12f6360c",
+      "lockedInventorySha256": "64db4b7272e8d7204a8ad73fb99f4fe6b972707adb1af1a5035b642143ea5bf7",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 14,
+      "debateNumber": "181",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 302354,
+      "moves": 20,
+      "judgmentSha256": "f7489917df71b2c341866a740c8971c3b0ae569800dcbe2f8a3a89030c605851",
+      "rawOutputSha256": "a53fc8bf397a1e254335cae6f02cbd4e1f126e5679706be057380ff7c03495ce",
+      "lockedInventorySha256": "dd7aa7a47283cb7d69e4a321aab880283c3e444bdd2ffee584efb9463e989a8a",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 15,
+      "debateNumber": "181",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 242158,
+      "moves": 20,
+      "judgmentSha256": "e1141e8a49310979bd9f7a724cc9da33835c47382f2e79295db73a0cf59f6fc8",
+      "rawOutputSha256": "9345212a6f178bf6bd87c77462b62ceac9e1ce89cfa600ed8e0cb49c8a0a7948",
+      "lockedInventorySha256": "dd7aa7a47283cb7d69e4a321aab880283c3e444bdd2ffee584efb9463e989a8a",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 16,
+      "debateNumber": "138",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 270121,
+      "moves": 19,
+      "judgmentSha256": "47a17da8fc53d932ed03b2b9f91a0f7eca02b1cab6525855320e7a1746a70fef",
+      "rawOutputSha256": "26e35703bf485485f3f3185b3d1f248b8cae1f0e89484021d35da7ff89843258",
+      "lockedInventorySha256": "79dd2d29c8902084fef3612b719e3d5ea936ed8435ca9138c05193098f04dd06",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 17,
+      "debateNumber": "138",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 245259,
+      "moves": 19,
+      "judgmentSha256": "e4cab3e4b7a2e132ad5912312b4abfd5fcee1ccc97af9cfb9e1e845aaf1e5a1d",
+      "rawOutputSha256": "698cd18c74d263ce7c80ffbbb5f4a542f05d8fe236fc13f7f204a1a2eadc42aa",
+      "lockedInventorySha256": "79dd2d29c8902084fef3612b719e3d5ea936ed8435ca9138c05193098f04dd06",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 18,
+      "debateNumber": "27",
+      "reviewerPass": "A",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 278179,
+      "moves": 19,
+      "judgmentSha256": "3ae89a5588d735e9bbbcefc035d486b4da16424b6c53d6c9d02c320c419155a5",
+      "rawOutputSha256": "7182ab22bb0c470920cb5d0696058d9dba43bb48e32e40593a535bc1353c91c1",
+      "lockedInventorySha256": "44ac4a5ab32c26d1b42518919e737a436b83399a8fffff76a90579d1f5b5fa4e",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    },
+    {
+      "contextIndex": 19,
+      "debateNumber": "27",
+      "reviewerPass": "B",
+      "accepted": true,
+      "status": "completed-valid",
+      "elapsedMs": 226283,
+      "moves": 19,
+      "judgmentSha256": "7f6d47932bfdfa519e82e18f8efb338dddc7610517174e1164966b316bfb63fe",
+      "rawOutputSha256": "66e4790cc811101b3befec9fa88221ea321ca1f283a74ce61044dfb7d194c9a9",
+      "lockedInventorySha256": "44ac4a5ab32c26d1b42518919e737a436b83399a8fffff76a90579d1f5b5fa4e",
+      "mediumConfidenceMoves": [],
+      "lowConfidenceMoves": [],
+      "belowHighConfidenceMoves": [],
+      "preparedSourceHashesVerified": true,
+      "originalEventHashVerified": true,
+      "canonicalEventProjectionReplayed": true,
+      "sourceCompatibilityPreserved": true,
+      "unchangedV4220ValidatorPassed": true,
+      "semanticRepairPerformed": false,
+      "modelAuthoredScores": 0,
+      "scoresDerived": 0
+    }
+  ],
+  "pairs": [
+    {
+      "debateNumber": "124",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [
+        "con-heuristics-fail-under-change",
+        "pro-rational-instruction-behavioral-limit"
+      ],
+      "judgmentBelowHighConfidenceMoves": [
+        "con-heuristics-fail-under-change",
+        "pro-rational-instruction-behavioral-limit"
+      ],
+      "audioVerificationMoveIds": [
+        "con-heuristics-fail-under-change",
+        "pro-rational-instruction-behavioral-limit"
+      ],
+      "audioVerificationRequiredBeforeAdjudication": true
+    },
+    {
+      "debateNumber": "14",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [
+        "pro-unconstrained-bubble-causal-gap"
+      ],
+      "judgmentBelowHighConfidenceMoves": [
+        "pro-unconstrained-bubble-causal-gap"
+      ],
+      "audioVerificationMoveIds": [
+        "pro-unconstrained-bubble-causal-gap"
+      ],
+      "audioVerificationRequiredBeforeAdjudication": true
+    },
+    {
+      "debateNumber": "58",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [
+        "pro-logic-presupposition-suffices"
+      ],
+      "audioVerificationMoveIds": [
+        "pro-logic-presupposition-suffices"
+      ],
+      "audioVerificationRequiredBeforeAdjudication": true
+    },
+    {
+      "debateNumber": "150",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [
+        "con-event-acceptance-not-causal-verdict"
+      ],
+      "judgmentBelowHighConfidenceMoves": [
+        "con-event-acceptance-not-causal-verdict"
+      ],
+      "audioVerificationMoveIds": [
+        "con-event-acceptance-not-causal-verdict"
+      ],
+      "audioVerificationRequiredBeforeAdjudication": true
+    },
+    {
+      "debateNumber": "157",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [
+        "con-reason-incarnation-access-gap",
+        "pro-divine-doubt-self-knowledge",
+        "pro-infer-divine-self-knowledge"
+      ],
+      "audioVerificationMoveIds": [
+        "con-reason-incarnation-access-gap",
+        "pro-divine-doubt-self-knowledge",
+        "pro-infer-divine-self-knowledge"
+      ],
+      "audioVerificationRequiredBeforeAdjudication": true
+    },
+    {
+      "debateNumber": "102",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "09",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "181",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "138",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    },
+    {
+      "debateNumber": "27",
+      "contexts": 2,
+      "passes": [
+        "A",
+        "B"
+      ],
+      "bothAccepted": true,
+      "separateOutputHashes": true,
+      "sameLockedInventory": true,
+      "repositoryBelowHighAttributionMoves": [],
+      "judgmentBelowHighConfidenceMoves": [],
+      "audioVerificationMoveIds": [],
+      "audioVerificationRequiredBeforeAdjudication": false
+    }
+  ],
+  "acceptance": {
+    "twentyValidContexts": true,
+    "sameLockedInventoryEveryPair": true,
+    "separatePassOutputEveryPair": true,
+    "preparedSourceHashReplays": 20,
+    "unchangedV4220ValidatorPasses": 20,
+    "canonicalEventProjectionReplays": 20,
+    "semanticRepairs": 0,
+    "modelAuthoredScores": 0,
+    "scores": 0,
+    "passed": true
+  },
+  "audioPolicy": {
+    "selectedBelowHighAttributionMoveRequiresVerification": true,
+    "mediumConfidenceAlwaysRequiresVerification": true,
+    "queue": [
+      {
+        "debateNumber": "124",
+        "moveId": "con-heuristics-fail-under-change",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "124",
+        "moveId": "pro-rational-instruction-behavioral-limit",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "14",
+        "moveId": "pro-unconstrained-bubble-causal-gap",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "58",
+        "moveId": "pro-logic-presupposition-suffices",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "150",
+        "moveId": "con-event-acceptance-not-causal-verdict",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "157",
+        "moveId": "con-reason-incarnation-access-gap",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "157",
+        "moveId": "pro-divine-doubt-self-knowledge",
+        "requiredBeforeAdjudication": true
+      },
+      {
+        "debateNumber": "157",
+        "moveId": "pro-infer-divine-self-knowledge",
+        "requiredBeforeAdjudication": true
+      }
+    ],
+    "queueCompiledDeterministicallyWithoutAudioAccess": true,
+    "audioCallsThisStage": 0
+  },
+  "totals": {
+    "debates": 10,
+    "contexts": 20,
+    "uniqueMoves": 200,
+    "movesJudgedAcrossPasses": 400,
+    "pendingAudioVerificationMoves": 8,
+    "modelContextsExecuted": 20,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "semanticCorrections": 0,
+    "disagreementFieldsExtracted": 0,
+    "audioCalls": 0,
+    "adjudicationModelContexts": 0,
+    "modelAuthoredScores": 0,
+    "scoresDerived": 0,
+    "publicationModelContexts": 0,
+    "productionMutations": 0,
+    "meteredApiCostUsd": 0,
+    "transcriptionCostUsd": 0
+  },
+  "authorization": {
+    "disagreementExtraction": false,
+    "independentJudgmentModelExecution": false,
+    "audioVerificationPreparation": false,
+    "paidTranscription": false,
+    "unexpectedPaidService": false,
+    "adjudicationPreparation": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "extract-freeze-and-analyze-batch-03-disagreements-under-standing-authorization"
+}

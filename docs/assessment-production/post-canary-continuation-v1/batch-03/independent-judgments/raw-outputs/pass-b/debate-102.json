@@ -1,0 +1,1706 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "102",
+  "debateId": "woodford-brierley-christianity-rational-2019",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-christianity-irrational-route",
+      "side": "pro",
+      "description": "Establish that Christianity lacks proportionate rational warrant by applying consistent evidential standards to its supernatural claims and showing that revelation, doctrine, and theistic explanations do not overcome available objections or alternatives.",
+      "successCriteria": "The route succeeds if Christianity's distinctive claims require support not supplied by transmitted testimony, religious experience, or worldview comparison, while unclear revelation, contested doctrine, and unresolved counterevidence prevent those claims from being rationally justified.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-insufficient-warrant",
+        "tier": "motion",
+        "description": "Connect inadequate support for Christianity's distinctive claims and material undefeated objections to the conclusion that Christianity is not rationally warranted."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-proportionate-evidence",
+          "tier": "central",
+          "description": "Require evidence proportionate to supernatural claims and apply the same justificatory standard to Christianity and incompatible religions."
+        },
+        {
+          "bridgeId": "pro-revelation-and-resurrection-gap",
+          "tier": "central",
+          "description": "Show that indirect historical transmission, disputed revelation, and resurrection premises do not establish Christianity's conclusions about Jesus or God."
+        },
+        {
+          "bridgeId": "pro-naturalistic-coherence",
+          "tier": "central",
+          "description": "Provide non-theistic accounts of morality and fallible reasoning sufficient to resist claims that Christianity uniquely grounds value or rational inference."
+        },
+        {
+          "bridgeId": "pro-divine-coherence-objections",
+          "tier": "central",
+          "description": "Relate unclear communication, moral disagreement, and troubling scriptural claims to the expected attributes of an omnipotent and loving God."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-atheism-scope",
+          "tier": "subsidiary",
+          "description": "Distinguish atheism from materialism and determinism so that objections to those positions do not by themselves establish Christian rationality."
+        },
+        {
+          "bridgeId": "pro-verification-under-fallibility",
+          "tier": "subsidiary",
+          "description": "Explain how testing and verification can support rational inquiry despite uncertainty about evolved cognition."
+        }
+      ]
+    },
+    {
+      "routeId": "con-christian-rationality-route",
+      "side": "con",
+      "description": "Establish that Christianity is rational through a cumulative comparative case in which theism accounts for cosmic order, objective value, and reason, while historical considerations and experience provide specifically Christian warrant.",
+      "successCriteria": "The route succeeds if Christian belief can rest on good evidence without requiring certainty, Christianity supplies a coherent comparative explanation of reason and morality, and the resurrection and revelation claims remain historically and intellectually defensible against the principal objections.",
+      "motionBridge": {
+        "bridgeId": "con-motion-cumulative-warrant",
+        "tier": "motion",
+        "description": "Connect the cumulative explanatory and historical case to the conclusion that accepting Christianity can be rational."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-theistic-explanation",
+          "tier": "central",
+          "description": "Show that fine-tuning and mathematical intelligibility are better explained by purposive mind than by unguided alternatives."
+        },
+        {
+          "bridgeId": "con-reason-and-morality",
+          "tier": "central",
+          "description": "Show that Christian theism can ground truth-directed reason, human dignity, moral obligation, and responsibility more coherently than reductive naturalism."
+        },
+        {
+          "bridgeId": "con-resurrection-history",
+          "tier": "central",
+          "description": "Establish sufficiently reliable access to early Christian claims and defend resurrection as an explanation of the relevant historical facts."
+        },
+        {
+          "bridgeId": "con-objection-resilience",
+          "tier": "central",
+          "description": "Explain how interpretive method, divine purposes, and qualified evidential access can answer objections from difficult scripture, disagreement, and uneven revelation."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-rational-disagreement",
+          "tier": "subsidiary",
+          "description": "Define rationality so that good-faith disagreement and lack of certainty do not automatically make Christian belief irrational."
+        },
+        {
+          "bridgeId": "con-experience-and-cumulative-fit",
+          "tier": "subsidiary",
+          "description": "Integrate personal experience and Christianity's account of meaning and hope as supporting considerations within the wider case."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "standards-revelation-and-access",
+      "title": "Evidential Standards, Revelation, and Access",
+      "weightPercent": 20,
+      "rationale": "Determines what rational belief requires, whether one standard is applied across religions, and whether disagreement, personal experience, unequal access, and the chosen mode of revelation bear on Christian warrant."
+    },
+    {
+      "sectionId": "cosmic-order-and-explanation",
+      "title": "Fine-Tuning, Intelligibility, and Theistic Explanation",
+      "weightPercent": 12,
+      "rationale": "Tests whether fine-tuning and mathematical order materially support purposive mind, including the force of probability qualifications and the challenge that religious interpretation follows external scientific correction."
+    },
+    {
+      "sectionId": "morality-dignity-and-scriptural-coherence",
+      "title": "Morality, Human Dignity, and Scriptural Coherence",
+      "weightPercent": 23,
+      "rationale": "Covers rival accounts of moral obligation and human value together with disagreement, justice and mercy, and difficult biblical narratives that test Christianity's claimed moral coherence."
+    },
+    {
+      "sectionId": "reason-freedom-and-naturalism",
+      "title": "Reason, Freedom, Evolution, and Naturalism",
+      "weightPercent": 20,
+      "rationale": "Addresses whether determined or evolved cognition can remain rationally trustworthy, whether theism supplies a better foundation for reason, and whether atheism is properly identified with the naturalistic positions under challenge."
+    },
+    {
+      "sectionId": "resurrection-and-historical-inference",
+      "title": "Resurrection, Testimony, and Christian-Specific Inference",
+      "weightPercent": 25,
+      "rationale": "Examines the principal bridge from general theism to Christianity: the reliability of early testimony, the explanatory case for resurrection, and whether reported miracles entail the claimed identity and authority of Jesus."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-rational-belief-standard",
+      "sectionId": "standards-revelation-and-access",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "constructive",
+      "proposition": "Rational belief requires good reasons, but reasonable people may assess the available evidence differently, so disagreement alone does not make either Christian or atheist belief irrational.",
+      "sourceSpan": {
+        "startEvent": 179,
+        "endEvent": 209
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Justin immediately before this uninterrupted first-person opening address.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-rational-disagreement"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes a permissive but reason-based standard for rational disagreement and therefore has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it clearly supplies a usable standard, though the phrase personally valid reasons remains somewhat underexplained."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim and disagreement qualification are recoverable, but personally valid reasons is less exact than the stated good-reasons requirement."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest possibility claim fits the general observation that reasonable assessors can differ, and the speaker expressly avoids declaring atheists irrational."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from differing reasonable assessments to disagreement not entailing irrationality is coherent, with only the standard for valid reasons compressed."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The proposition is principally conceptual and plausible, but the passage does not defend when personal reasons qualify as genuinely good reasons."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within the subsidiary tier, this directly defines rational disagreement and places it toward the upper part of that burden class."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing interpretation is represented closely enough in this constructive passage to support a meaningful charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt requires good reasons, permits rational Christian and atheist belief, and explicitly refuses to infer irrationality merely from disagreement.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-experience-and-investigation",
+      "sectionId": "standards-revelation-and-access",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "constructive",
+      "proposition": "Christian belief may be rationally grounded in an undefeated personal experience, while objective investigation can also provide intellectual support for Christianity.",
+      "sourceSpan": {
+        "startEvent": 215,
+        "endEvent": 245
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The first-person autobiographical account continues within Justin's uninterrupted opening speech.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-experience-and-cumulative-fit"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move offers personal experience and objective investigation as distinct potential supports and has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 81,
+          "rationale": "Within constructive moves, it supplies two intelligible sources of warrant, though the objective-investigation component is only announced in the selected evidence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The passage clearly limits experiential justification to the absence of a compelling defeater and distinguishes it from objective evidence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is permissive rather than conclusive, and the undefeated-experience condition expressly limits the force assigned to subjective experience."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The undefeated-experience structure is coherent, though it leaves implicit why transformative experience has sufficient initial epistemic authority."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The selected evidence describes common transformative experience but supplies no representative investigation or verification of its Christian interpretation."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within the subsidiary tier, the move directly integrates experience into the cumulative case and is relatively strong in that class."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The passage advances positive grounds without developing a specific competing interpretation whose strongest form could be assessed for charity."
+        }
+      },
+      "evidenceBasis": "The excerpt says Christians may be justified by an apparently transformative experience until a compelling defeater appears, while also distinguishing objective evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-fine-tuning-intelligibility",
+      "sectionId": "cosmic-order-and-explanation",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "constructive",
+      "proposition": "Life-permitting fine-tuning and the mathematical intelligibility of nature make more explanatory sense if a purposive mind stands behind the universe than if both are unguided coincidences.",
+      "sourceSpan": {
+        "startEvent": 271,
+        "endEvent": 320
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Justin explicitly numbers this as his first constructive consideration and develops it without a speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-theistic-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies a comparative purposive explanation of mathematical intelligibility and fine-tuning and has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it states a central comparison and explanatory conclusion, although rival explanations and probability measures remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The comparative proposition is clear, but makes more sense carries an implicit rather than formally specified explanatory criterion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The explanatory preference is intelligible, but calling coincidence unsatisfactory does not by itself establish that purposive mind is more probable than alternatives."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mathematical intelligibility and life-permitting constants may reflect selection effects, deeper laws, or currently unknown non-purposive structure.",
+        "decisiveQualification": "Those alternatives remain live unless their comparative likelihood and explanatory costs are assessed rather than grouped as luck."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "A purposive mind could explain intelligible order, but the move leaves a material bridge from dissatisfaction with coincidence to comparative superiority."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "It names mathematical effectiveness and fine-tuning, yet offers no defended probability model or serious comparison with representative rival accounts."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this directly supplies the route's principal theistic explanation and sits near the top of that relevance class."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move frames the principal rival largely as happy coincidence or luck and does not engage stronger law-based or selection-based alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes the effectiveness of mathematics, rejects coincidence as unsatisfactory, and concludes that a mind behind nature makes better explanatory sense.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-dignity-and-moral-grounding",
+      "sectionId": "morality-dignity-and-scriptural-coherence",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "constructive",
+      "proposition": "Christianity grounds objective human dignity and moral obligation in humanity's creation in God's image and Christ's sacrifice, where material facts alone do not yield moral oughts.",
+      "sourceSpan": {
+        "startEvent": 321,
+        "endEvent": 368
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Justin marks this as his second argument and sustains the first-person Christian comparison throughout the window.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-reason-and-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move contrasts materialist resources with image-of-God and incarnation grounds for dignity and has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it directly advances a central comparative account, though moral obligation and dignity are treated more assertively than demonstrated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The grounding claim is recoverable, but value, dignity, and moral oughts are closely associated without fully distinguishing their meanings or relations."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The statement that atheism fails while Christianity has the explanation is stronger than the excerpt's undeveloped comparison with secular accounts permits."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Non-theistic moral realism or naturalistic accounts may ground dignity in sentience, agency, interests, or impartial reasons without deriving ought directly from bare matter.",
+        "decisiveQualification": "Such accounts must be compared on their actual normative premises rather than treated as attempts to derive value from material description alone."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "Divine creation and sacrifice can function as a grounding proposal, but the inference from divine valuation to objective obligation remains materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The biblical claims support what Christianity teaches, but the asserted failure of atheism and superiority of this grounding receive little comparative defense."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly addresses human dignity and moral grounding, an indispensable step in the comparative route."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "The move reduces the opposing space to atheism failing to account for value and does not address stronger non-theistic normative alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt says atheism fails to explain human value and cites creation in God's image and Jesus's sacrifice as investing humans with ultimate dignity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-god-guarantor-of-reason",
+      "sectionId": "reason-freedom-and-naturalism",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "constructive",
+      "proposition": "If beliefs are fixed wholly by non-rational material causes, confidence in reasoning is undermined, whereas creation by God can make genuine freedom and rational deliberation intelligible.",
+      "sourceSpan": {
+        "startEvent": 369,
+        "endEvent": 433
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Justin identifies Stephen by name, describes the opposing worldview, and presents the theistic alternative in one continuous argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-reason-and-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move argues that God makes freedom and rational deliberation intelligible against wholly material causation and has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within constructive moves, it squarely advances a central foundation-of-reason argument, but the key causal-to-epistemic bridge is not fully defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conditional argument is recoverable, though rational causes, material causes, freedom, and trustworthy reason are not sharply distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling God the only way out exceeds the supplied warrant because compatibilist, emergent, and reliability-based naturalistic accounts are not excluded."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Determined cognitive processes may still respond to evidence and reliably track truth without libertarian choice over beliefs.",
+        "decisiveQualification": "The argument must show why causal determination excludes rational sensitivity rather than merely assuming that non-rational physical causes cannot realize it."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "The argument depends on an unsupported conditional equating wholly material causation with epistemic defeat and then presents God as the sole escape."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The passage provides a conceptual assertion rather than evidence that natural cognition is unreliable or that divine creation guarantees reliable deliberation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly addresses the route's reason-and-morality bridge and is highly germane to comparative rational grounding."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The move largely identifies material causation with the absence of genuine reasoning and does not engage the strongest compatibilist alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt calls the naturalistic position self-defeating, identifies God as guarantor, and links divine creation to freedom and the rational formation of beliefs.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-resurrection-best-explanation",
+      "sectionId": "resurrection-and-historical-inference",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "constructive",
+      "proposition": "Jesus's crucifixion, the empty tomb, reported appearances, conversions, and the emergence of the early church are collectively best explained by the resurrection.",
+      "sourceSpan": {
+        "startEvent": 434,
+        "endEvent": 485
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Justin transitions explicitly from generic theism to Jesus and completes the historical argument before summarizing his speech.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-resurrection-history"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move assembles five claimed historical facts and offers resurrection as their collective best explanation, with no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within constructive moves, it presents the debate's principal Christian-specific inference in an organized form, despite compressed fact and rival defense."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The abductive conclusion and proposed facts are clear, but best explanation implicitly depends on disputed reliability and comparative-explanation conditions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The best-explanation force exceeds the excerpt's support because the facts' independence, documentation, base rates, and natural rivals are not defended here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some combination of grief experiences, tradition development, mistaken tomb claims, and social dynamics may explain the reported data without resurrection.",
+        "decisiveQualification": "A best-explanation claim requires comparing those alternatives and establishing the historical facts independently, not merely listing them."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The abductive structure is usable, but the bridge from the listed claims to resurrection as uniquely best remains a material undeveloped comparison."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "Specific claimed facts are enumerated, yet their sources, independence, contestability, and performance against serious alternatives are not defended in the passage."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this is the principal direct support for the specifically Christian historical bridge and occupies the top of that class."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The move provides a cumulative list but does not represent or test the strongest composite non-resurrection explanations and their qualifications."
+        }
+      },
+      "evidenceBasis": "The excerpt enumerates crucifixion, empty tomb, appearances, skeptical conversions, and early-church growth as the collective basis for resurrection inference.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-scientific-correction-of-genesis",
+      "sectionId": "cosmic-order-and-explanation",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Christian acceptance of evolution followed correction by overwhelming scientific evidence rather than clear foresight in Genesis, weakening revelation as an independent guide to explanations of nature.",
+      "sourceSpan": {
+        "startEvent": 610,
+        "endEvent": 626
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Stephen continues his audience-poll argument in the same uninterrupted opening address and explicitly discusses Christianity's historical response.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-theistic-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-fine-tuning-intelligibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-scientific-correction-of-genesis-component-01",
+            "targetMoveId": "con-fine-tuning-intelligibility",
+            "text": "Whether fine-tuning and mathematical intelligibility are comparatively better explained by purposive mind.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies issue-bearing material about revelation being corrected by science, but it does not contact the fine-tuning or mathematical-intelligibility inference itself.",
+        "responsivenessWithinClass": {
+          "value": 48,
+          "rationale": "Within relevant nonanswers, the move bears on Christianity's explanatory authority but remains adjacent to rather than an answer to the selected target's decisive inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The historical-correction claim is clear, though Christianity across history is generalized without specifying traditions, periods, or interpretive variation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Scientific correction supports the historical point, but the stronger implication that revelation thereby loses independent explanatory value needs additional argument."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Genesis may be non-scientific theological literature whose compatibility with evolution does not depend on predicting modern evolutionary theory.",
+        "decisiveQualification": "Even on that reading, historical reliance on Genesis as natural history can still weaken claims of clear independent scientific guidance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The correction history reasonably weakens a claim of clear prior scientific guidance, though it does not directly rebut a separate fine-tuning explanation."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "It identifies evolution and historical resistance as concrete support, but the broad historical assertions and interpretive generalization are not documented or compared."
+        },
+        "relevanceBurden": {
+          "value": 84,
+          "rationale": "Within the central tier, it attacks theistic explanatory authority indirectly and therefore ranks low relative to direct fine-tuning challenges."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move focuses on historical Christian belief and correction, but does not explicitly distinguish non-literal theological readings from scientific prediction claims."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts historic Genesis-based creation beliefs with later acceptance of evolution under pressure from overwhelming scientific discoveries.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-consistent-evidence-trilemma",
+      "sectionId": "standards-revelation-and-access",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Evidential standards permissive enough to rationalize Christianity also rationalize incompatible religions, while healthier standards reject those claims and Christianity-only standards constitute special pleading.",
+      "sourceSpan": {
+        "startEvent": 627,
+        "endEvent": 657
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Stephen explicitly announces the topic at hand and lays out a structured three-alternative evidential argument in his opening speech.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-proportionate-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-experience-and-investigation",
+          "con-rational-belief-standard"
+        ],
+        "components": [
+          {
+            "componentId": "pro-consistent-evidence-trilemma-component-01",
+            "targetMoveId": "con-experience-and-investigation",
+            "text": "Whether undefeated personal experience or objective investigation can rationally support Christianity specifically.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-consistent-evidence-trilemma-component-02",
+            "targetMoveId": "con-rational-belief-standard",
+            "text": "Whether differing personally valid reasons suffice while all parties still owe good reasons for belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both the permissive experiential standard and the good-reasons standard by arguing that permissiveness generalizes to incompatible religions unless independently constrained.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it reaches the decisive consistency problem but does not separately examine objective investigation or establish that every qualifying standard accepts all incompatible claims."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The trilemma is recoverable and its special-pleading branch is clear, though mutually exclusive religions is treated at a broad undifferentiated scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The structured alternatives expose a genuine consistency demand, but permissive standards need not rationalize every incompatible religion without regard to differing evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A general evidential standard can permit rational belief in incompatible propositions when agents possess different evidence, without declaring all propositions true.",
+        "decisiveQualification": "The standard still must explain why Christian experiences or evidence have defeater-resistant advantages over analogous incompatible claims."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The consistency challenge is forceful, but the first horn risks conflating rationally held incompatible beliefs with violation of non-contradiction at the truth level."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The argument is mainly conceptual and needs representative cross-religious evidence showing relevant symmetry rather than merely asserting that standards generalize."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the proportionate and consistently applied evidence bridge and ranks near the top of that class."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move identifies a strong symmetry problem but partially conflates rational permissibility under differing evidence with joint truth or identical warrant."
+        }
+      },
+      "evidenceBasis": "The excerpt presents permissive, restrictive, and Christianity-specific evidential options, arguing that the first admits incompatible religions and the third special pleads.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-divine-communication-objection",
+      "sectionId": "standards-revelation-and-access",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "An omnipotent and loving God could communicate Christianity clearly to everyone, so widespread unbelief, doctrinal disagreement, and reliance on poor indirect transmission count against the claimed God.",
+      "sourceSpan": {
+        "startEvent": 663,
+        "endEvent": 762
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Stephen frames the argument explicitly as a consequence of the Christian worldview attributed to Justin and the audience, then develops it continuously.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-divine-coherence-objections"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-experience-and-investigation",
+          "con-rational-belief-standard"
+        ],
+        "components": [
+          {
+            "componentId": "pro-divine-communication-objection-component-01",
+            "targetMoveId": "con-experience-and-investigation",
+            "text": "Whether personal experience and intellectual investigation supply adequate and reasonably accessible Christian warrant.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-divine-communication-objection-component-02",
+            "targetMoveId": "con-rational-belief-standard",
+            "text": "Whether reasonable disagreement can persist without counting against the rationality of Christianity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts accessibility and disagreement by arguing that a loving omnipotent communicator would provide clearer, more universal evidence than disputed indirect transmission.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "Within partial answers, it reaches the decisive accessibility objection but does not directly defeat every form of experiential warrant or the modest disagreement thesis."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The expected-communication argument is clear, but it leaves implicit the conditions under which love requires universally compelling rather than sufficient communication."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that an all-loving God already would convince everyone requires premises about divine aims, freedom, relationship, and nonresistant belief that are not defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A loving God may value noncoercive relationship, human inquiry, historical mediation, or other goods compatible with uneven and resistible evidence.",
+        "decisiveQualification": "Such purposes must explain apparently nonresistant unbelief and why the chosen transmission method is proportionate to the claimed stakes."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The expectation from omnipotence and love to clear communication is plausible, but the necessity of universal conviction remains a material unsupported bridge."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Widespread unbelief and disagreement are relevant observations, while the description of transmission and divine expectations is asserted without representative support or alternatives."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the divine-coherence objection by connecting unclear revelation to claimed divine attributes."
+        },
+        "representationalCharity": {
+          "value": 71,
+          "rationale": "The objection retains force against unclear access, but it does not explicitly engage the strongest purpose-based reasons for noncompelling revelation."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that omnipotence permits universal conviction, love would motivate it, and indirect ancient transmission is irrational given the claimed eternal stakes.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-rationality-without-free-choice",
+      "sectionId": "reason-freedom-and-naturalism",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Rationality consists in aligning beliefs and actions with the available reasons and evidence, rather than in freely choosing which beliefs one holds.",
+      "sourceSpan": {
+        "startEvent": 879,
+        "endEvent": 905
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response directly answers Brierley's request for an account of rationality and develops Woodford's distinction between rationality and truth.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-naturalistic-coherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-god-guarantor-of-reason"
+        ],
+        "components": [
+          {
+            "componentId": "pro-rationality-without-free-choice-component-01",
+            "targetMoveId": "con-god-guarantor-of-reason",
+            "text": "Whether rational belief requires libertarian freedom from wholly material causal determination.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses the inference as confusing rational alignment with freely choosing beliefs and substitutes evidence-responsiveness as the relevant rationality condition.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within diagnostic defeats, it explicitly contacts the decisive freedom premise and states why rationality can instead concern correspondence with reasons and evidence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The distinction between truth, rationality, and voluntary belief choice is plainly recoverable and remains stable throughout the selected passage."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The definitional and diagnostic claim is proportionate: it does not guarantee truth, only explains how evidence-responsive belief can qualify as rational."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The opposing argument may concern whether reasons genuinely cause beliefs rather than whether agents consciously choose those beliefs.",
+        "decisiveQualification": "Even then, causal determination alone does not show that evidence and reasons lack a truth-tracking causal role."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction coherently blocks the inference from lack of free belief choice to irrationality, with only the account of causal reasons-responsiveness left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The conceptual definition is well explained in the excerpt, though no empirical or philosophical support is supplied for its operation under determinism."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly supports naturalistic coherence by answering the claimed dependence of reason on libertarian freedom."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly isolates freedom of belief as unnecessary, though it could distinguish more explicitly between reasons-responsiveness and epiphenomenal rationalization."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes truth from rationality and defines rationality as fitting beliefs and actions to the available evidence and reasons.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-naturalistic-moral-cooperation",
+      "sectionId": "morality-dignity-and-scriptural-coherence",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Moral systems can arise from shared aversion to suffering, biologically grounded interests, and cooperative social rules even if moral wrongness is not metaphysically ultimate.",
+      "sourceSpan": {
+        "startEvent": 1051,
+        "endEvent": 1106
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Woodford answers the moral challenge in the first person, contrasting religious interpretation with his naturalistic account of human preferences and cooperation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-naturalistic-coherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-dignity-and-moral-grounding"
+        ],
+        "components": [
+          {
+            "componentId": "pro-naturalistic-moral-cooperation-component-01",
+            "targetMoveId": "con-dignity-and-moral-grounding",
+            "text": "Whether non-theistic resources can account for moral reasons, cooperation, and human value without divine grounding.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the demand for a non-theistic account by grounding shared interests and cooperative rules in evolved aversions and preferences, but does not fully answer objective dignity.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it directly addresses moral practice and reasons for cooperation while leaving the target's objective dignity and ultimate obligation components largely unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The cooperative account is recoverable, but right and wrong shifts between preference-relative rules, shared interests, and broader moral language without full separation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker limits the account by denying metaphysically ultimate wrongness, matching the practical cooperative warrant rather than claiming objective moral realism."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The theistic challenge seeks objective dignity and categorical obligation, not merely an explanation of shared preferences and stable cooperation.",
+        "decisiveQualification": "A practical naturalistic morality can still resist claims of social incoherence even if it does not supply the same metaphysical objectivity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Shared aversion and interests can coherently explain cooperative rules, while the passage appropriately stops short of deriving metaphysically ultimate wrongness."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Biological interests and cooperation are plausible mechanisms, but the passage supplies little representative evidence or defense against conflict and free-rider problems."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly supplies the route's requested non-theistic moral account, albeit without fully addressing objective dignity."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response acknowledges moral subjectivity rather than pretending to establish the target's stronger objectivity, though it only partly meets that stronger demand."
+        }
+      },
+      "evidenceBasis": "The excerpt locates preferences and aversion in human biology and uses shared wants and cooperative social rules to explain practical moral judgments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-davids-child-moral-objection",
+      "sectionId": "morality-dignity-and-scriptural-coherence",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "constructive",
+      "proposition": "The biblical punishment of David through the death of his innocent child conflicts with the claimed existence of an omnipotent and omnibenevolent God.",
+      "sourceSpan": {
+        "startEvent": 1413,
+        "endEvent": 1429
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Woodford introduces the Samuel passage, summarizes the punishment it depicts, and expressly formulates the resulting challenge to God's attributes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-divine-coherence-objections"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents a specific biblical case as counterevidence to divine omnibenevolence and omnipotence and has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "Within constructive moves, it provides a concrete morally salient objection, though the broader incompatibility argument is more stated than fully developed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The textual allegation and attribute conflict are clear, with the implicit qualification that the narrative is being read as reporting divine punitive agency."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The passage is strong prima facie counterevidence, but a strict incompatibility conclusion requires addressing interpretive context and possible theodicies."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The narrative may be interpreted through ancient genre, corporate consequence, divine foreknowledge, or a broader theological account of death and judgment.",
+        "decisiveQualification": "Any such reading still must explain the text's explicit linkage between David's act and the innocent child's death."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Punishing a father through an innocent child's death creates a clear prima facie tension with perfect goodness, though deductive incompatibility is not established."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "A specific passage and its operative language are supplied, but translation, surrounding context, and competing interpretations are not independently examined."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this is a direct and concrete contribution to the divine-coherence objection and ranks near the top of the class."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The objection uses the text's apparent sense accurately, although it does not examine contextual or theological qualifications available to its defender."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes the Samuel passage linking David's deed to his child's death and frames that punishment as conflicting with omnibenevolent divine agency.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-christological-scripture-reading",
+      "sectionId": "morality-dignity-and-scriptural-coherence",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "reply",
+      "proposition": "Morally difficult Old Testament narratives need not defeat rational Christianity because they are partial and culturally situated revelations whose interpretation is governed by the fuller revelation of God in Jesus.",
+      "sourceSpan": {
+        "startEvent": 1430,
+        "endEvent": 1537
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley answers Woodford's scriptural objection by challenging its moral basis, qualifying the passage's interpretation, and presenting Jesus as his hermeneutical lens.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-divine-coherence-objections"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-davids-child-moral-objection"
+        ],
+        "components": [
+          {
+            "componentId": "con-christological-scripture-reading-component-01",
+            "targetMoveId": "pro-davids-child-moral-objection",
+            "text": "Whether the narrative's punishment of David through his innocent child's death defeats Christianity's claim about a good God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the interpretive force of the objection by treating Old Testament material as partial revelation governed by Jesus, but does not resolve the child's death itself.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "Within partial answers, it addresses a decisive hermeneutical premise but leaves the specific moral action and its compatibility with divine goodness substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The Jesus-centered interpretive rule is clear, though the scope and authority of partial revelation are not specified enough to determine which claims are corrected."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest claim that difficult narratives need not defeat Christianity fits the proposed hermeneutical qualification without claiming to solve every passage directly."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The objection concerns the apparent divine act within canonical scripture, so invoking later revelation may relocate rather than remove the moral contradiction.",
+        "decisiveQualification": "A successful Christological reading must explain how the specific narrative is reinterpreted consistently with Jesus, not only identify Jesus as the lens."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "Progressive and Christological interpretation is coherent as a framework, but no explicit bridge shows how it changes the moral assessment of the cited event."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The Hebrews theme supports the proposed hierarchy of revelation, yet the application to the specific Samuel text is asserted without detailed exegesis."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly supports objection resilience through interpretive method, though its resolution of the concrete objection is incomplete."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The reply acknowledges partial and culturally situated revelation, but does not fully engage the objection's demand for an interpretation of this particular death."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies Jesus as the final and governing revelation through which earlier partial Old Testament revelations should be interpreted.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-proportionate-supernatural-evidence",
+      "sectionId": "resurrection-and-historical-inference",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Christian supernatural claims require evidence proportionate to their extraordinary character, and transmitted testimony, apparent wonders, and potentially altered texts do not supply that evidence.",
+      "sourceSpan": {
+        "startEvent": 1716,
+        "endEvent": 1779
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This uninterrupted closing-statement passage follows Woodford's explicit transition and consistently uses his first-person hypothetical examples.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-revelation-and-resurrection-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-resurrection-best-explanation",
+          "con-christological-scripture-reading"
+        ],
+        "components": [
+          {
+            "componentId": "pro-proportionate-supernatural-evidence-component-01",
+            "targetMoveId": "con-resurrection-best-explanation",
+            "text": "Whether transmitted historical claims provide evidence strong enough to make resurrection the best explanation of the asserted facts.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-proportionate-supernatural-evidence-component-02",
+            "targetMoveId": "con-christological-scripture-reading",
+            "text": "Whether scriptural transmission and interpretation reliably support specifically Christian conclusions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the sufficiency of testimony and transmission for extraordinary claims, contacting both the resurrection inference and scriptural-access premise.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "Within partial answers, it reaches the decisive proportionality demand but does not individually contest each historical fact or compare detailed resurrection alternatives."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proportional-evidence standard and its application to supernatural testimony are recoverable, with examples explicitly distinguishing ordinary and extraordinary claims."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The demand for stronger evidence is well fitted, but the categorical insufficiency of transmitted testimony needs more source-specific analysis than the analogy provides."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Multiple early and partially independent testimonies might cumulatively overcome an initially low prior probability even for an extraordinary event.",
+        "decisiveQualification": "That cumulative case depends on source independence, reliability, alternatives, and prior assumptions, each requiring direct assessment."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The principle that evidential demands rise with claim improbability is coherently applied, with only the exact threshold and prior assumptions left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Concrete analogies clarify the warrant, but claims about altered texts, transmission quality, and the historical corpus require more specific representative support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the revelation-and-resurrection gap by attacking the adequacy of evidence for supernatural conclusions."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly targets evidential proportionality and transmission risk, although it does not fully analyze the strongest cumulative historical case."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts low-stakes testimony with extraordinary assertions and argues that supernatural claims require correspondingly stronger evidence than transmitted reports provide.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-miracles-do-not-entail-divinity",
+      "sectionId": "resurrection-and-historical-inference",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Even provisionally granting Jesus's virgin birth and resurrection would not logically entail that Jesus is God's son, leaving Christianity's identity inference unsupported.",
+      "sourceSpan": {
+        "startEvent": 1780,
+        "endEvent": 1828
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Woodford's uninterrupted closing statement and explicitly develops his announced second objection to Christianity.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-revelation-and-resurrection-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-resurrection-best-explanation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-miracles-do-not-entail-divinity-component-01",
+            "targetMoveId": "con-resurrection-best-explanation",
+            "text": "Whether resurrection, even if established, supports the specifically Christian conclusion about Jesus's divine identity and authority.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly grants the miracle claims conditionally, identifies the non-entailment to divine sonship, and states that the Christian-specific identity inference remains unsupported.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within diagnostic defeats, it explicitly isolates and attacks the decisive bridge from miraculous event to divine identity while stating the resulting inferential gap."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The provisional concessions and narrow non-entailment conclusion are explicit, stable, and readily distinguish logical implication from evidential support."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "As a claim of non-entailment, the force is matched: resurrection alone does not deductively establish sonship, and the concessions are expressly provisional."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Resurrection may support divinity abductively when combined with Jesus's prior claims, actions, context, and theistic background evidence.",
+        "decisiveQualification": "That cumulative inference is stronger than bare entailment but requires those additional premises to be independently established."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "Conditionally granting both miracles and denying that divine sonship follows is logically sound and cleanly identifies a missing Christian-specific premise."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The logical point needs little empirical support, though its broader force depends on whether contextual identity premises elsewhere supplement the resurrection claim."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the crucial bridge from resurrection evidence to the distinctively Christian conclusion about Jesus."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move accurately defeats a bare entailment while its express conditional framing leaves room for a fuller cumulative identity argument."
+        }
+      },
+      "evidenceBasis": "The excerpt provisionally grants virgin birth and resurrection, then explicitly argues that Jesus being God's son does not follow from those events alone.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-early-testimony-access",
+      "sectionId": "resurrection-and-historical-inference",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "reply",
+      "proposition": "Textual criticism, early documentary proximity, indications of eyewitness testimony, and Paul's preservation of early traditions provide substantially reliable access to first-century Christian claims.",
+      "sourceSpan": {
+        "startEvent": 1955,
+        "endEvent": 2010
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Brierley explicitly turns to textual transmission and continues the same audience answer until the moderator invites a brief response from Woodford.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-revelation-and-resurrection-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-proportionate-supernatural-evidence",
+          "pro-miracles-do-not-entail-divinity"
+        ],
+        "components": [
+          {
+            "componentId": "con-early-testimony-access-component-01",
+            "targetMoveId": "pro-proportionate-supernatural-evidence",
+            "text": "Whether textual transmission and historical testimony are reliable and proximate enough to contribute proportionate evidence for Christian claims.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-early-testimony-access-component-02",
+            "targetMoveId": "pro-miracles-do-not-entail-divinity",
+            "text": "Whether the available sources preserve contextual material capable of supporting a Christian-specific identity inference.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts transmission reliability through textual criticism, proximity, eyewitness indications, and early Pauline traditions, but not the logical identity gap.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it addresses the decisive access and reliability component strongly while leaving source independence and the miracle-to-divinity inference unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The access claim is clear, though extremely close, eyewitness indications, and pretty good idea lack specified dates, documents, and reliability thresholds."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Early sources and textual criticism support substantial access, but the confidence expressed exceeds the excerpt's limited treatment of authorship, dependence, and divergence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Early documents can preserve traditions while remaining anonymous, dependent, theologically shaped, or insufficient to establish extraordinary events.",
+        "decisiveQualification": "Proximity and textual recoverability do not alone establish eyewitness independence or the truth of the reported supernatural content."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Textual recoverability, proximity, and early tradition coherently support historical access, though access is not equivalent to truth or eyewitness independence."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Several specific evidential categories are named, but representative documents, dates, textual variants, and scholarly disputes are not developed in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the claimed revelation-and-resurrection access gap and ranks near the top of that class."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The reply rejects wholesale historical skepticism but does not fully engage stronger, qualified doubts about independence and supernatural reliability."
+        }
+      },
+      "evidenceBasis": "The excerpt cites early documentary proximity, internal indications of eyewitness testimony, Paul, and preservation of early traditions as grounds for historical access.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-fine-tuning-probability-qualified",
+      "sectionId": "cosmic-order-and-explanation",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "reply",
+      "proposition": "Although a fine-tuning tolerance cannot be translated straightforwardly into an ordinary probability, the extreme precision of the life-permitting range still calls for explanation.",
+      "sourceSpan": {
+        "startEvent": 2241,
+        "endEvent": 2267
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The exchange identifies the challenged statistic as Brierley's earlier claim, and this first-person answer concedes limitations in his own prior probability presentation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-theistic-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-scientific-correction-of-genesis"
+        ],
+        "components": [
+          {
+            "componentId": "con-fine-tuning-probability-qualified-component-01",
+            "targetMoveId": "pro-scientific-correction-of-genesis",
+            "text": "Whether scientific scrutiny undermines the legitimacy of Christianity's present explanatory appeal to fine-tuning.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply concedes a prior probability analogy's limitation and preserves a narrower fine-tuning demand, contacting scientific criticism only indirectly rather than Genesis specifically.",
+        "responsivenessWithinClass": {
+          "value": 62,
+          "rationale": "Within partial answers, it addresses methodological overstatement about fine-tuning but does not answer the target's historical claim about Genesis and scientific correction."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between an ordinary sequence probability and a constant's tolerance level is explicit, as is the narrower residual explanatory claim."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The concession materially lowers the force from a numerical probability claim to a qualified assertion that extreme precision remains explanation-worthy."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A narrow life-permitting range does not by itself define a probability distribution or establish design over selection effects and unknown physical necessity.",
+        "decisiveQualification": "It can still identify an explanatory question even when it cannot establish an ordinary low-probability calculation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The concession and narrowed conclusion are consistent: rejecting the dice analogy does not eliminate the existence of an unusually restrictive life-permitting range."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The qualification improves the warrant, but the magnitude and physical interpretation of the tolerance are not documented or compared with alternative explanations."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within the central tier, it directly supports the fine-tuning bridge, though it only indirectly addresses the earlier Genesis-based criticism."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply explicitly accepts the central probability criticism and carefully preserves only the more limited explanatory significance of tolerance."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes that a fine-tuning tolerance is unlike an ordinary repeated-roll probability while maintaining that the restrictive range still requires explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolutionary-truth-defeater",
+      "sectionId": "reason-freedom-and-naturalism",
+      "side": "con",
+      "speaker": "Justin Brierley",
+      "moveKind": "reply",
+      "proposition": "If evolution selects cognition primarily for survival rather than truth, naturalism lacks an adequate basis for trusting the beliefs generated by evolved cognition.",
+      "sourceSpan": {
+        "startEvent": 2565,
+        "endEvent": 2580
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly characterizes the preceding answer and invokes Plantinga, matching Justin's earlier argument from reason and naturalism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-naturalistic-coherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-rationality-without-free-choice"
+        ],
+        "components": [
+          {
+            "componentId": "con-evolutionary-truth-defeater-component-01",
+            "targetMoveId": "pro-rationality-without-free-choice",
+            "text": "Whether evidence-responsive rationality remains trustworthy when cognition is wholly produced by evolution and natural causes.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the naturalistic trust question by arguing that survival-directed selection undercuts confidence in evolved beliefs, but it does not address reasons-responsiveness in detail.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within partial answers, it reaches the decisive reliability component but relies on a general survival-versus-truth contrast rather than answering verification or adaptive truth tracking."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The defeater argument is recoverable, although primarily directed at survival leaves implicit how often fitness and broadly accurate representation diverge."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Evolution favoring fitness does not by itself show general cognitive unreliability; correlations between accurate cognition and successful action require direct assessment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Accurate-enough representation often improves survival, while social correction, science, and domain-specific verification can refine fallible evolved cognition.",
+        "decisiveQualification": "Naturalism must still explain reliability in abstract domains where fitness linkage is indirect and systematic biases persist."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "The defeater requires an unsupported bridge from selection for fitness rather than truth as such to low confidence in evolved cognition generally."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The passage invokes evolutionary function and Plantinga but supplies no empirical or probabilistic support about the reliability of fitness-producing cognitive systems."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the route's naturalistic account of trustworthy reason and is highly relevant to that bridge."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "The move presents survival and truth as too sharply opposed and does not engage the strongest reliability and correction mechanisms available to naturalism."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that evolution selects beliefs for survival rather than truth and therefore asks how naturalists can trust the resulting cognitive process.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-fallible-cognition-and-verification",
+      "sectionId": "reason-freedom-and-naturalism",
+      "side": "pro",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Uncertainty about evolved cognition is unavoidable but manageable through verification, and it does not justify adopting a more appealing theistic worldview.",
+      "sourceSpan": {
+        "startEvent": 2581,
+        "endEvent": 2608
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker addresses Justin by name, defends the naturalistic worldview in the first person, and is answered by Justin within the final row.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-verification-under-fallibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolutionary-truth-defeater",
+          "con-god-guarantor-of-reason"
+        ],
+        "components": [
+          {
+            "componentId": "pro-fallible-cognition-and-verification-component-01",
+            "targetMoveId": "con-evolutionary-truth-defeater",
+            "text": "Whether evolved, fallible cognition can remain rationally usable and trustworthy under naturalism.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-fallible-cognition-and-verification-component-02",
+            "targetMoveId": "con-god-guarantor-of-reason",
+            "text": "Whether uncertainty and causal limitation require adopting God as a guarantor of rational belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both demands by accepting unavoidable fallibility, invoking verification, and denying that discomfort with uncertainty warrants a more appealing theistic worldview.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it reaches the decisive correction mechanism but does not explain verification's independence from the same allegedly unreliable cognitive faculties."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The limited claim that verification manages rather than eliminates uncertainty is clear, stable, and explicitly distinguished from certainty."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move openly accepts uncertainty and advances only the modest claim that verification provides usable support without licensing certainty or worldview preference."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Verification itself uses evolved cognition, so it cannot answer a global reliability defeater merely by repeating checks within the same system.",
+        "decisiveQualification": "Independent instruments, intersubjective replication, prediction, and error correction can nevertheless improve reliability without absolute external validation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Fallibility is compatible with rational inquiry and verification can improve confidence, though the reply leaves the anti-circular structure of verification implicit."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Verification is a concrete epistemic mechanism, but the passage offers no representative cases or developed account of replication, prediction, and error correction."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within the subsidiary tier, it directly supplies the route's verification-under-fallibility bridge and sits at the top of that relevance class."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The response identifies verification but does not spell out how its independent and social features avoid circularity in answering the global challenge."
+        }
+      },
+      "evidenceBasis": "The excerpt accepts evolved cognitive limitation, states that claims can be verified, and rejects moving to a more appealing worldview merely because certainty is unavailable.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence survives exclusion from the move ratings, response links, importance judgments, and burden relevance assessments already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence remains after ordinary move-level capture.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence survives exclusion from the move ratings, response links, importance judgments, and burden relevance assessments already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No separate debate-wide consequence remains after ordinary move-level capture.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

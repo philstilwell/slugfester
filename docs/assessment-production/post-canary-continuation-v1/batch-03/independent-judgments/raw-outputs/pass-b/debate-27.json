@@ -1,0 +1,1788 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-divine-moral-ground",
+      "side": "pro",
+      "description": "Establish that experienced evil and categorical moral obligation presuppose objective standards of goodness, then argue that those standards and the rational norms used to recognize them require a transcendent divine ground.",
+      "successCriteria": "The route succeeds if objective moral obligations are warranted as more than evolved preferences, God provides their necessary ontological ground, and the proposed naturalistic explanations fail to account for moral and rational normativity without undermining themselves.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-evil-to-god",
+        "tier": "motion",
+        "description": "Connect the reality of evil through objective goodness and obligation to a divine ground adequate to explain them."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-objective-obligation",
+          "tier": "central",
+          "description": "Establish that immediate moral experience warrants belief in categorical obligations that do not depend on individual or cultural attitudes."
+        },
+        {
+          "bridgeId": "pro-central-divine-grounding",
+          "tier": "central",
+          "description": "Show that objective goodness and obligation require an ultimate standard grounded in God's nature rather than human preference."
+        },
+        {
+          "bridgeId": "pro-central-naturalist-reliability",
+          "tier": "central",
+          "description": "Show that an unguided evolutionary account cannot both explain all beliefs causally and justify confidence in moral and rational beliefs as truth-directed."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-scope",
+          "tier": "subsidiary",
+          "description": "Limit the moral argument to a divine moral ground while leaving identification of a particular religion to a cumulative case."
+        },
+        {
+          "bridgeId": "pro-subsidiary-disagreement",
+          "tier": "subsidiary",
+          "description": "Distinguish disagreement or uncertainty about moral facts from evidence that no objective moral facts exist."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-naturalistic-moral-experience",
+      "side": "con",
+      "description": "Explain moral experience through evolved conscious psychology and shared practical aims while denying that its force, consensus, or emotional immediacy entails mind-independent value or a divine moral ground.",
+      "successCriteria": "The route succeeds if agnostic atheism bears no unnecessary positive worldview burden, evolutionary and psychological processes adequately explain moral experience, and the pro case does not establish objective morality or derive God without circular or unsupported grounding assumptions.",
+      "motionBridge": {
+        "bridgeId": "con-motion-experience-without-god",
+        "tier": "motion",
+        "description": "Account for compelling moral experience without inferring mind-independent moral facts or accepting a divine moral ground."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-subjective-status",
+          "tier": "central",
+          "description": "Distinguish the psychological force of moral judgments from mind-independent truth and locate moral valuation in conscious attitudes."
+        },
+        {
+          "bridgeId": "con-central-evolutionary-explanation",
+          "tier": "central",
+          "description": "Explain shared survival-oriented dispositions, practical moral rules, and disputed cases through evolutionary concern for flourishing and harm."
+        },
+        {
+          "bridgeId": "con-central-inference-gap",
+          "tier": "central",
+          "description": "Show that explaining why moral judgments occur neither establishes their objective truth nor permits a divine mind to be assumed as their ground."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-burden-definition",
+          "tier": "subsidiary",
+          "description": "Clarify agnostic atheism as nonbelief while identifying which additional naturalistic claims, if asserted, independently require support."
+        },
+        {
+          "bridgeId": "con-subsidiary-reason-baseline",
+          "tier": "subsidiary",
+          "description": "Treat reason as a necessary shared starting point for inquiry while distinguishing objective logical rules from conclusions dependent on adopted premises."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-burden-and-argument-scope",
+      "title": "Burden of Proof and Scope of the Moral Argument",
+      "weightPercent": 12,
+      "rationale": "This issue fixes what agnostic atheism commits its defender to establish and whether the moral argument aims only at a divine moral ground or at a more specific religious conclusion."
+    },
+    {
+      "sectionId": "section-objective-moral-grounding",
+      "title": "Objective Moral Obligation and Divine Grounding",
+      "weightPercent": 28,
+      "rationale": "This is the principal ontological clash: whether evil and categorical obligation disclose a mind-independent standard of goodness and whether such a standard requires grounding in God."
+    },
+    {
+      "sectionId": "section-evolutionary-moral-experience",
+      "title": "Evolutionary and Psychological Explanation of Moral Experience",
+      "weightPercent": 24,
+      "rationale": "This issue tests whether evolved dispositions, consciousness, flourishing, and harm can explain the felt force and broad convergence of morality without converting causal explanation into objective justification."
+    },
+    {
+      "sectionId": "section-reason-logic-and-reliability",
+      "title": "Reason, Logic, and Evolutionary Reliability",
+      "weightPercent": 20,
+      "rationale": "The competing accounts must address whether naturalistic evolution permits warranted trust in cognition and whether objective logical norms require a transcendent explanation or can function as shared assumptions."
+    },
+    {
+      "sectionId": "section-disagreement-and-practical-judgment",
+      "title": "Moral Disagreement, Cultural Variation, and Practical Judgment",
+      "weightPercent": 16,
+      "rationale": "Disagreement and ambiguous cases bear on whether moral experience is evidence of objective reality, cultural contingency, or merely limited access to truths that remain independent of judgment."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-evil-good-divine-ground",
+      "sectionId": "section-objective-moral-grounding",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "constructive",
+      "proposition": "Evil is a privation of good, and because goodness is identified with God's nature, the existence of evil presupposes a divine standard of goodness.",
+      "sourceSpan": {
+        "startEvent": 201,
+        "endEvent": 230
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly invites Frank to state his case, and the uninterrupted first-person argument follows that invitation.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-evil-to-god"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Constructive opening directly advances the motion bridge from evil through goodness to God.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "A focused constructive statement of the principal route, though its grounding warrant is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The privation claim is recoverable, but identifying goodness with God's nature shifts between definition and substantive grounding."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The excerpt asserts a necessary divine ground without defending why goodness cannot exist otherwise."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 64,
+          "rationale": "The privation inference can show evil depends conceptually on good, but the further identification of good with God's nature is asserted rather than derived."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The rust analogy illustrates privation but supplies no independent warrant for the divine-grounding premise."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "This directly states the locked motion bridge connecting evil, goodness, and God."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed competing interpretation is assessed in this constructive span."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly calls evil a privation of good and defines goodness as God's nature, using rust as the sole supporting analogy.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-burden-agnostic-atheism-nonbelief",
+      "sectionId": "section-burden-and-argument-scope",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Agnostic atheism denotes a lack of belief rather than a positive worldview, so it carries no general burden of proof; only the positive assertion that no God exists incurs that burden.",
+      "sourceSpan": {
+        "startEvent": 285,
+        "endEvent": 326
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host directly addresses Alex, and Alex identifies his own position as agnostic atheism throughout the response.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-burden-definition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evil-good-divine-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-burden-agnostic-atheism-nonbelief-component-01",
+            "targetMoveId": "pro-evil-good-divine-ground",
+            "text": "The decisive demand is whether goodness requires a divine ground.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The burden-definition discussion is relevant to who must argue, but it does not address the earlier inference from good to God.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "A relevant nonanswer that clarifies burden without contacting the grounding inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The nonbelief/positive-denial distinction is clear, though 'no general burden' risks extending beyond bare agnostic atheism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is expressly limited by conceding a burden for the positive assertion that no God exists."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The distinction between withholding belief and asserting nonexistence coherently supports the limited burden conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The conceptual distinction is explained, although the broader burden convention is not independently defended."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary burden-definition bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span defines the speaker's position rather than testing a developed rival account."
+        }
+      },
+      "evidenceBasis": "O'Connor distinguishes not knowing and therefore not believing from actively believing there is no God, assigning a burden only to the latter claim.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-atheist-positive-claims-burden",
+      "sectionId": "section-burden-and-argument-scope",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Atheists who supplement nonbelief with naturalistic explanations such as evolution, materialism, multiple universes, or quantum vacuums advance positive claims that require defense.",
+      "sourceSpan": {
+        "startEvent": 345,
+        "endEvent": 374
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Frank is addressed by name immediately before the passage and answers Alex's lack-of-belief definition in a sustained turn.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-burden-definition"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-burden-agnostic-atheism-nonbelief"
+        ],
+        "components": [
+          {
+            "componentId": "pro-atheist-positive-claims-burden-component-01",
+            "targetMoveId": "con-burden-agnostic-atheism-nonbelief",
+            "text": "The decisive demand is whether the defended atheist position makes positive claims requiring support.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "Turek accepts bare nonbelief conditionally but justifies shifting attention to added naturalistic explanations, which independently carry burdens.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The reply explicitly preserves the bare-position qualification while identifying the positive claims to which its replacement demand applies."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional concession is clear, though references to what atheists generally say are broader than the opponent's stated position."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Positive naturalistic claims do require defense, but the generalization from observed atheists is only asserted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person may defend only agnostic nonbelief and assert none of the listed naturalistic explanations.",
+        "decisiveQualification": "The reply says that bare lack of belief may avoid the burden and applies its criticism only when explanatory claims are added."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The conditional inference from adding explanatory propositions to acquiring corresponding burdens is explicit and sound."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The examples are concrete, but the descriptive claim about atheists generally and the opponent's adoption of them are not established here."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly attacks the subsidiary burden-definition bridge rather than the motion itself."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "It expressly grants the strongest limited-burden interpretation before distinguishing supplemented positions."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes the bare lack-of-belief formulation, then lists multiverse, evolution, quantum-vacuum, and materialist explanations as positive beliefs needing defense.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-moral-argument-limited-conclusion",
+      "sectionId": "section-burden-and-argument-scope",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "The moral argument aims to establish God as the ground of morality, not by itself to identify that ground specifically as the Christian God; other arguments are needed for that conclusion.",
+      "sourceSpan": {
+        "startEvent": 597,
+        "endEvent": 605
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Alex asks whether objective morality requires the Christian God, and Frank directly answers that another God could satisfy this argument alone.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-scope"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-burden-agnostic-atheism-nonbelief"
+        ],
+        "components": [
+          {
+            "componentId": "pro-moral-argument-limited-conclusion-component-01",
+            "targetMoveId": "con-burden-agnostic-atheism-nonbelief",
+            "text": "The relevant demand is what positive conclusion the pro moral argument undertakes to establish.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly limits the argument to a divine moral ground and separates identification of Christianity into other arguments.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly answers the scope question with a clear concession and boundary."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conclusion and its limitation are expressly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker carefully says the moral argument alone does not reach the Christian God."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even if morality requires a god, the argument does not identify the Christian God.",
+        "decisiveQualification": "The speaker accepts precisely that limitation and invokes other arguments for the more specific identification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The distinction between a limited argument and a cumulative case is explicit and internally consistent."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "As a scope clarification it needs little external evidence, though it does not support the separate cumulative-case claim."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary bridge limiting the moral argument's scope."
+        },
+        "representationalCharity": {
+          "value": 95,
+          "rationale": "The strongest scope objection is accurately and expressly conceded."
+        }
+      },
+      "evidenceBasis": "Turek explicitly agrees that another God could satisfy this argument and says the moral argument does not by itself reach Christianity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-objective-morality-evidential-concession",
+      "sectionId": "section-objective-moral-grounding",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Demonstrated objective morality would demand an explanation beyond current naturalism, but scientific proposals do not establish it merely by assuming that flourishing is morally good.",
+      "sourceSpan": {
+        "startEvent": 614,
+        "endEvent": 640
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host redirects the question to Alex, whose first-person answer discusses what evidence would compel him and critiques Sam Harris.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-objective-obligation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-moral-argument-limited-conclusion",
+          "pro-evil-good-divine-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-objective-morality-evidential-concession-component-01",
+            "targetMoveId": "pro-moral-argument-limited-conclusion",
+            "text": "The decisive demand is the limited conclusion that a divine ground follows from objective morality.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-objective-morality-evidential-concession-component-02",
+            "targetMoveId": "pro-evil-good-divine-ground",
+            "text": "Whether goodness has been established as identical with God's nature.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply discusses what objective morality would require and exposes circularity in a scientific flourishing account, but it does not answer the limited-conclusion or divine-ground inference.",
+        "responsivenessWithinClass": {
+          "value": 62,
+          "rationale": "Substantive contrary material on objective morality, but not contact with the selected grounding demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The concession and criticism of assuming flourishing's goodness are clearly separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is carefully conditional on objective morality being demonstrated and current naturalistic understanding."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Science could establish objective morality by showing which conduct produces flourishing societies.",
+        "decisiveQualification": "Objective facts about consequences establish moral conclusions only after the goodness of flourishing is supplied as a normative premise."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The is-to-ought gap in the flourishing proposal is explicitly and coherently identified."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The warrant is conceptually strong, though the excerpt gives only one scientific-morality proposal and does not compare alternatives."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central claim that objective obligation has been established."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply fairly isolates the strongest scientific proposal and identifies its decisive assumed value premise."
+        }
+      },
+      "evidenceBasis": "O'Connor concedes that demonstrated objective morality would exceed current understanding, then argues that objective prosperity findings assume rather than prove that prosperity is good.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-conscious-moral-status-circular-grounding",
+      "sectionId": "section-objective-moral-grounding",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Moral wrongness depends on conscious psychology, and preserving it through a transcendent mind would assume the being invoked to establish objective morality before using that morality to argue for God.",
+      "sourceSpan": {
+        "startEvent": 679,
+        "endEvent": 708
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Frank addresses Alex by name, and Alex explicitly states and develops his own definition of objective and subjective morality.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evil-good-divine-ground",
+          "pro-moral-argument-limited-conclusion"
+        ],
+        "components": [
+          {
+            "componentId": "con-conscious-moral-status-circular-grounding-component-01",
+            "targetMoveId": "pro-evil-good-divine-ground",
+            "text": "The decisive inference identifies goodness with God's nature and uses that goodness to infer God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-conscious-moral-status-circular-grounding-component-02",
+            "targetMoveId": "pro-moral-argument-limited-conclusion",
+            "text": "Whether even the limited divine-ground conclusion follows without assuming a transcendent mind.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses circularity: a transcendent being is introduced to preserve wrongness and the resulting morality is then used to prove that being.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It identifies the exact inferential defect and states why the proposed ground cannot independently prove itself."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The dependence on conscious psychology and the alleged circularity are clearly stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The circularity diagnosis fits the presented formulation, though it does not exclude every independent argument for a transcendent mind."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Wrongness could remain mind-dependent yet objective relative to a necessarily existing transcendent mind.",
+        "decisiveQualification": "That proposal cannot serve as an independent route to the mind's existence if the mind is assumed solely to secure the moral premise."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The circularity objection is valid against assuming the divine mind solely to ground the premise, though the broader psychological-dependence claim is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The warrant is principally conceptual and directly explained, but alternative noncircular divine-grounding routes are not examined."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the indispensable divine-grounding bridge."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply engages the strongest mind-based rescue, with only a minor omission concerning independently warranted theism."
+        }
+      },
+      "evidenceBasis": "The excerpt says wrongness without psychology is nonsensical, considers a transcendent being, and then identifies the circular use of that being to prove morality and morality to prove God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolved-dispositions-conditional-rules",
+      "sectionId": "section-evolutionary-moral-experience",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Evolutionary survival dispositions can support conditionally objective behavioral rules once well-being is assumed as a goal, while even unanimous condemnation would not make morality mind-independent.",
+      "sourceSpan": {
+        "startEvent": 727,
+        "endEvent": 771
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Frank asks Alex why ingrained moral convictions should be doubted, and Alex answers with an evolutionary and conditional account.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-experience-without-god"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evil-good-divine-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-evolved-dispositions-conditional-rules-component-01",
+            "targetMoveId": "pro-evil-good-divine-ground",
+            "text": "The decisive demand is whether moral experience requires a divine rather than natural explanation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies an evolutionary account of survival dispositions and distinguishes conditional behavioral truths from mind-independent morality.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the natural-explanation demand directly, though the causal mechanism and well-being premise remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional structure is explicit, but 'objective moral truths' risks conflating objective means-end facts with categorical moral facts."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker qualifies the conclusions as conditional on evolved goals and denies that consensus creates mind independence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Universal or deeply ingrained moral conviction is evidence of an objective moral reality.",
+        "decisiveQualification": "Even unanimity can reflect shared evolved attitudes and does not by itself entail attitude-independent truth."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The conditional means-end inference works, but calling its conclusions moral truths leaves a material ambiguity about normativity."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Evolutionary survival pressure is a plausible mechanism, but the span offers no detailed evidence or comparison with rival explanations."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the con motion bridge by explaining moral experience without a divine ground."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply fairly engages the evidential force of convergence while preserving the distinction between force and ontology."
+        }
+      },
+      "evidenceBasis": "O'Connor attributes survival-directed dispositions to evolution, derives conditional rules from that goal, and denies that unanimous condemnation would become mind-independent.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolution-global-belief-defeater",
+      "sectionId": "section-evolutionary-moral-experience",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "The evident wrongness of sexually abusing children should not be dismissed through an evolutionary account that, if applied to thought generally, would undercut trust in every belief.",
+      "sourceSpan": {
+        "startEvent": 773,
+        "endEvent": 797
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage directly opposes Alex's analogy and develops Frank's characteristic evolutionary-debunking challenge until Alex begins answering.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-naturalist-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolved-dispositions-conditional-rules"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evolution-global-belief-defeater-component-01",
+            "targetMoveId": "con-evolved-dispositions-conditional-rules",
+            "text": "The decisive demand is whether evolutionary causation explains moral belief without defeating confidence in belief generally.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly argues that applying the evolutionary explanation to thought globally defeats trust in all resulting beliefs.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It squarely identifies the alleged self-undermining consequence, though it does not establish the needed reliability premise."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The defeater is recoverable, but the move expands from moral dispositions to every belief without specifying the relevant evolutionary mechanism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Evolutionary causation alone does not necessarily undercut belief reliability; the missing truth-tracking premise is decisive."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolution can favor generally reliable cognition because accurate representation often promotes survival.",
+        "decisiveQualification": "The reply does not compare this truth-tracking possibility before claiming a global defeater."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 61,
+          "rationale": "The inference from evolutionary origin to global unreliability requires a substantial unprovided bridge and risks a genetic fallacy."
+        },
+        "evidenceWarrant": {
+          "value": 52,
+          "rationale": "The vivid abuse example supports moral conviction but supplies no evidence that evolved cognition is globally unreliable."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central naturalist-reliability bridge."
+        },
+        "representationalCharity": {
+          "value": 59,
+          "rationale": "It omits the strongest obvious reliability alternative, materially weakening the evolutionary account."
+        }
+      },
+      "evidenceBasis": "Turek invokes the evident wrongness of child abuse and says an evolutionary explanation undercuts every thought, but the excerpt supplies no argument connecting evolutionary origin to unreliability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-reason-necessary-epistemic-baseline",
+      "sectionId": "section-reason-logic-and-reliability",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Reason cannot be validated without employing reason, but it remains a necessary shared starting assumption for inquiry, like assumptions concerning existence and the external world.",
+      "sourceSpan": {
+        "startEvent": 833,
+        "endEvent": 844
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the host summarizes the argument against naturalism, Alex answers in the first person and identifies reason as a necessary assumption.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-reason-baseline"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evolution-global-belief-defeater"
+        ],
+        "components": [
+          {
+            "componentId": "con-reason-necessary-epistemic-baseline-component-01",
+            "targetMoveId": "pro-evolution-global-belief-defeater",
+            "text": "The decisive demand is how reason can be trusted if its validation cannot escape the same cognitive process.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply answers by treating reason as an unavoidable shared starting point rather than offering a noncircular proof of its reliability.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts the epistemic challenge and gives a coherent baseline response, but does not fully rebut the specific evolutionary defeater."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Reason's status as a necessary assumption rather than a demonstrated truth is clearly expressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest claim is that inquiry must begin with reason, not that this independently proves naturalistic reliability."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A naturalistic origin of cognition supplies a specific reason to distrust it, beyond ordinary foundational circularity.",
+        "decisiveQualification": "Calling reason unavoidable does not itself show that the evolutionary defeater fails."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The transcendental starting-point response is internally coherent, with a bounded gap between necessity of use and reliability."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The analogies to existence and the external world support the foundational point, but do not compare evolutionary reliability accounts."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary shared-reason baseline."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The reply treats the general skeptical challenge fairly but only partially addresses its evolutionary form."
+        }
+      },
+      "evidenceBasis": "O'Connor compares reason with unavoidable assumptions about existence and the external world and explicitly says consensus does not prove it true.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-logic-reason-naturalist-grounding",
+      "sectionId": "section-reason-logic-and-reliability",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Treating reason as an evolved assumption does not explain why it is trustworthy or account for objective, immaterial laws of logic that are not composed of matter.",
+      "sourceSpan": {
+        "startEvent": 845,
+        "endEvent": 875
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Frank expressly agrees with Alex's assumption point, then repeatedly challenges the naturalistic explanation of reason and objective logical laws.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-reason-baseline"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-reason-necessary-epistemic-baseline",
+          "con-evolved-dispositions-conditional-rules"
+        ],
+        "components": [
+          {
+            "componentId": "pro-logic-reason-naturalist-grounding-component-01",
+            "targetMoveId": "con-reason-necessary-epistemic-baseline",
+            "text": "The decisive demand is whether merely assuming reason explains its trustworthiness and objective logical norms.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-logic-reason-naturalist-grounding-component-02",
+            "targetMoveId": "con-evolved-dispositions-conditional-rules",
+            "text": "Whether naturalistic evolution can account for truth-directed rational cognition.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes using reason from explaining its trustworthiness and asks how material naturalism grounds immaterial logical laws.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts both the reliability and ontological demands, though it mainly poses rather than resolves the grounding question."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The challenge is clear, but 'immaterial laws' and 'explain' alternate between semantic, epistemic, and ontological senses."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Showing that logical laws are not molecules does not establish that naturalism cannot account for them or that a transcendent ground is required."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Logical laws may be abstract relations or necessary truths rather than material objects needing a personal cause.",
+        "decisiveQualification": "The reply offers no argument excluding these naturalistic or non-theistic accounts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The distinction between assumption and explanation is sound, but the move from nonmateriality to failure of naturalism remains unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 55,
+          "rationale": "The passage provides questions and assertions rather than a defended comparison among accounts of logic."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly attacks the subsidiary reason-baseline bridge."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "It frames naturalism as needing molecules for logic and omits the strongest abstract-relation alternative."
+        }
+      },
+      "evidenceBasis": "Turek presses why evolved reason is trustworthy and asks how objective immaterial logical laws can be explained on naturalism because they are not made of molecules.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-objective-logic-subjective-reasoning",
+      "sectionId": "section-reason-logic-and-reliability",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Objective logical rules may exist even though reasoning remains dependent on adopted assumptions, just as conditional moral conclusions can follow objectively from chosen premises.",
+      "sourceSpan": {
+        "startEvent": 864,
+        "endEvent": 871
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The exchange directly addresses Alex by name, and this answer consistently advances his distinction between rules and their assumption-dependent use.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-naturalist-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-logic-reason-naturalist-grounding"
+        ],
+        "components": [
+          {
+            "componentId": "con-objective-logic-subjective-reasoning-component-01",
+            "targetMoveId": "pro-logic-reason-naturalist-grounding",
+            "text": "The decisive demand is whether objective logical rules can coexist with assumption-dependent reasoning.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly grants objective logical rules while distinguishing them from conclusions conditional on adopted premises.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly answers the alleged incompatibility, though it does not supply a naturalistic ontology of logical laws."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "materially-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Calling reason subjective is liable to confuse premise-relative conclusions with subjective logical validity."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The conditional distinction is sound, but the terminology overstates subjectivity and leaves the ontological question unanswered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The objection concerns the ground of logical norms, not merely whether conclusions depend on premises.",
+        "decisiveQualification": "Granting objective rules does not explain their naturalistic ground."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Objective validity can coexist with premise-relative conclusions, but labeling reason itself subjective introduces a material equivocation."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The analogy to conditional morality illustrates the distinction but does not warrant an ontology or reliability account."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It attacks the central claim that naturalism cannot sustain objective rational norms."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply answers a validity concern but omits a decisive part of the opponent's ontological challenge."
+        }
+      },
+      "evidenceBasis": "O'Connor grants objective rules of logic but describes reasoning and moral conclusions as conditional on assumptions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-subjective-reason-self-defeat",
+      "sectionId": "section-reason-logic-and-reliability",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "The claim that reason is subjective is self-defeating because asserting it as a conclusion relies on an objective truth claim and on the possibility of reaching true conclusions.",
+      "sourceSpan": {
+        "startEvent": 938,
+        "endEvent": 946
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage follows Turek's recurring self-defeat objection and is immediately answered by O'Connor's distinction between answers and methods.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-naturalist-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-objective-logic-subjective-reasoning"
+        ],
+        "components": [
+          {
+            "componentId": "pro-subjective-reason-self-defeat-component-01",
+            "targetMoveId": "con-objective-logic-subjective-reasoning",
+            "text": "The decisive claim is that reason itself is subjective despite objective logical rules.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explicitly diagnoses self-defeat: asserting the subjectivity thesis as true appears to rely on objective rational warrant.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It identifies the exact formulation and states its allegedly defeating consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The self-defeat objection is clear, though it assumes 'subjective reason' means no objectively valid inference rather than premise dependence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conclusion follows only under a stronger interpretation than the opponent's explicit grant of objective logical rules."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Reasoning can use objective inference rules while conclusions remain conditional on selected premises.",
+        "decisiveQualification": "On that interpretation, stating the conditionality of conclusions is not self-defeating."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "The self-defeat form is valid against global irrationalism, but does not establish that the opponent adopted that stronger thesis."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The argument relies almost entirely on an unestablished interpretation of 'subjective reason.'"
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central naturalist-reliability bridge."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The reply materially weakens the distinction by treating premise dependence as denial of all true conclusions."
+        }
+      },
+      "evidenceBasis": "Turek argues that if reason is subjective no true conclusions follow and that this assertion itself purports to be an objective truth claim.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-compelling-yet-culturally-contingent-judgment",
+      "sectionId": "section-disagreement-and-practical-judgment",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Condemnations such as the judgment that racism is wrong can feel as instinctively compelling as numerical truths while remaining subjective and culturally contingent rather than mind-independent.",
+      "sourceSpan": {
+        "startEvent": 1030,
+        "endEvent": 1059
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly compares moral intuitions with mathematics and answers the hypothetical about attitudes formed within a racist culture.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-subjective-status"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-subjective-reason-self-defeat",
+          "pro-evolution-global-belief-defeater"
+        ],
+        "components": [
+          {
+            "componentId": "con-compelling-yet-culturally-contingent-judgment-component-01",
+            "targetMoveId": "pro-subjective-reason-self-defeat",
+            "text": "The decisive demand is whether premise-dependent reasoning is self-defeating.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-compelling-yet-culturally-contingent-judgment-component-02",
+            "targetMoveId": "pro-evolution-global-belief-defeater",
+            "text": "Whether compelling moral intuitions survive an evolutionary explanation as evidence of objective truth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply does not address rational self-defeat, but it does contact the earlier moral-intuition demand by separating felt certainty from objective status.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "A relevant nonanswer to the primary move with substantive contact to a secondary earlier challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between instinctive force, mathematical truth, and cultural contingency is explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The example is offered as evidence of possible contingency rather than proof that every moral judgment is subjective."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A moral judgment's compelling immediacy may be defeasible evidence of objective truth even if cultures disagree.",
+        "decisiveQualification": "Cultural formation can explain comparable felt certainty without entailing truth, though it does not by itself disprove objectivity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The distinction between phenomenological force and mind-independent truth is coherent, with only a bounded inferential gap from cultural influence to subjectivity."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The historical-cultural example is apt but selective and does not establish the full causal account."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central subjective-status bridge."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply fairly limits the evidential force of intuition without claiming cultural variation deductively refutes realism."
+        }
+      },
+      "evidenceBasis": "O'Connor contrasts objective numerical truth with racism's equally instinctive feel and invokes historical Southern culture to illustrate contingency.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-basic-objective-obligation",
+      "sectionId": "section-objective-moral-grounding",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Immediate awareness of objective moral obligation is more evident than the skeptical premises offered for atheism or moral subjectivism, and therefore warrants treatment as basic evidence.",
+      "sourceSpan": {
+        "startEvent": 1082,
+        "endEvent": 1102
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek introduces an atheist philosopher's argument and applies its conclusion directly to Alex's denial of objective moral obligations.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-objective-obligation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-compelling-yet-culturally-contingent-judgment"
+        ],
+        "components": [
+          {
+            "componentId": "pro-basic-objective-obligation-component-01",
+            "targetMoveId": "con-compelling-yet-culturally-contingent-judgment",
+            "text": "The decisive demand is whether compelling moral awareness has evidential force despite skeptical explanations.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that immediate obligation is more evident than premises supporting skepticism and therefore may be treated as basic evidence.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It contacts the intuition-versus-skepticism comparison explicitly, although it does not answer cultural contingency in detail."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The comparative-evidence claim is clear, but it shifts between objective values, objective obligations, and the speaker's strong sense of obligation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Immediate seeming can provide prima facie warrant, but the excerpt overstates its priority over every skeptical premise without comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Strong moral seemings may be culturally or evolutionarily generated and therefore defeasible.",
+        "decisiveQualification": "A seeming can remain prima facie evidence, but its strength must be compared with specific defeaters rather than declared superior in advance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Treating immediate awareness as defeasible basic evidence is coherent, but the universal comparative superiority claim is underargued."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The move relies on an authority quotation and phenomenological force without defending independence from the proposed cultural and evolutionary explanations."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central objective-obligation bridge."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The reply recognizes skepticism as premise-based but does not engage the strongest causal defeaters individually."
+        }
+      },
+      "evidenceBasis": "Turek quotes an atheist philosopher saying moral skepticism rests on premises less obvious than objective moral values and applies the point to felt obligation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-causal-explanation-not-moral-justification",
+      "sectionId": "section-evolutionary-moral-experience",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Evolutionary science can explain why people experience actions as right or wrong without thereby establishing that those actions truly are right or wrong.",
+      "sourceSpan": {
+        "startEvent": 1121,
+        "endEvent": 1130
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "O'Connor explicitly contrasts his explanatory project with Sam Harris's attempted derivation of moral truth from scientific facts.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-inference-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-basic-objective-obligation",
+          "pro-evolution-global-belief-defeater"
+        ],
+        "components": [
+          {
+            "componentId": "con-causal-explanation-not-moral-justification-component-01",
+            "targetMoveId": "pro-basic-objective-obligation",
+            "text": "The decisive inference moves from experiencing obligation to the objective truth of that obligation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-causal-explanation-not-moral-justification-component-02",
+            "targetMoveId": "pro-evolution-global-belief-defeater",
+            "text": "Whether an evolutionary explanation must purport to justify or discredit every resulting belief.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explicitly separates explaining why moral experiences occur from establishing whether their contents are true, defeating the immediate explanatory-to-normative inference.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It states the exact inference gap and the limited consequence of the scientific account."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Causal explanation and moral justification are cleanly and repeatedly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The narrow claim that causal explanation alone neither proves rightness nor wrongness is appropriately categorical."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Moral experience may still provide prima facie evidence even if science explains its origin.",
+        "decisiveQualification": "The evolutionary account does not by itself refute that evidential status; it only declines to derive moral truth from the causal story."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 95,
+          "rationale": "The distinction between explaining a belief's occurrence and justifying its content is explicit, consistent, and resolves the central inference challenge."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "The conceptual warrant is directly defended through a precise contrast with attempts to derive rightness from science."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central inference-gap bridge."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply expressly limits its conclusion and does not overstate causal explanation as a disproof of realism."
+        }
+      },
+      "evidenceBasis": "O'Connor contrasts Harris's attempt to show actions are right or wrong scientifically with his own attempt only to explain why people experience them that way.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-better-society-implies-best",
+      "sectionId": "section-disagreement-and-practical-judgment",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Judging one society better or worse than another presupposes a best or objective standard of goodness outside individual preferences and therefore raises the question of that standard's ontological ground.",
+      "sourceSpan": {
+        "startEvent": 1175,
+        "endEvent": 1184
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage states Turek's characteristic external-standard argument and follows O'Connor's proposal to reason from shared concern for humanity.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-explanation-not-moral-justification",
+          "con-evolved-dispositions-conditional-rules"
+        ],
+        "components": [
+          {
+            "componentId": "pro-better-society-implies-best-component-01",
+            "targetMoveId": "con-causal-explanation-not-moral-justification",
+            "text": "The decisive demand is to preserve the distinction between causal explanation and moral justification.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-better-society-implies-best-component-02",
+            "targetMoveId": "con-evolved-dispositions-conditional-rules",
+            "text": "Whether shared pursuit of a better society requires an objective external standard.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply does not challenge the causal-versus-normative distinction; it instead argues that comparative practical judgments imply an external best.",
+        "responsivenessWithinClass": {
+          "value": 66,
+          "rationale": "A relevant nonanswer to the primary inference-gap move, though it contacts the earlier shared-goal component."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "materially-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "'Better,' 'best,' objective standard, and ontological ground are treated as interchangeable despite distinct comparative, superlative, and metaphysical meanings."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Comparative judgment does not necessarily imply a maximally best state or a mind-independent ontological standard."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A society can be better relative to shared aims or along specified dimensions without a uniquely best society or transcendent standard.",
+        "decisiveQualification": "Comparatives require criteria, but the criteria may be conditional, plural, or attitude-dependent."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 54,
+          "rationale": "The inference from 'better' to a unique 'best,' and then from a best criterion to an external ontological ground, contains two substantial unsupported bridges."
+        },
+        "evidenceWarrant": {
+          "value": 50,
+          "rationale": "No evidence or rival comparison supports the claimed progression from ordinary comparative language to divine grounding."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central divine-grounding bridge despite its weak inference."
+        },
+        "representationalCharity": {
+          "value": 52,
+          "rationale": "The reply omits the strongest conditional-comparison interpretation and converts practical agreement into metaphysical realism."
+        }
+      },
+      "evidenceBasis": "Turek says better and worse imply a best and immediately asks for the ontological grounding of that best outside individual preference.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-revulsion-does-not-refute-subjectivism",
+      "sectionId": "section-disagreement-and-practical-judgment",
+      "side": "con",
+      "speaker": "Alex O'Connor",
+      "moveKind": "reply",
+      "proposition": "Naturalism may make morality evolutionarily arbitrary, but emotional revulsion at that implication does not establish that naturalism is false or that objective morality exists.",
+      "sourceSpan": {
+        "startEvent": 1319,
+        "endEvent": 1339
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker accepts the naturalistic implication and then applies the same reality-versus-revulsion principle to atheistic objections against God.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-subjective-status"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-better-society-implies-best",
+          "pro-basic-objective-obligation"
+        ],
+        "components": [
+          {
+            "componentId": "con-revulsion-does-not-refute-subjectivism-component-01",
+            "targetMoveId": "pro-better-society-implies-best",
+            "text": "The decisive demand is whether discomfort with arbitrary morality establishes an objective external best.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-revulsion-does-not-refute-subjectivism-component-02",
+            "targetMoveId": "pro-basic-objective-obligation",
+            "text": "Whether the compelling force of moral conviction establishes its objective truth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses an appeal from emotional recoil to truth and states that revulsion cannot establish either naturalism's falsity or objective morality.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It directly identifies the evidential defect and generalizes the consequence consistently to atheistic recoil from God."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The concession about evolutionary arbitrariness and the limited evidential conclusion are clearly separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The narrow proposition that emotional revulsion alone does not determine truth is fully warranted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Revulsion is not merely emotion but part of prima facie moral evidence.",
+        "decisiveQualification": "Even if revulsion contributes evidence, its emotional force alone does not entail mind-independent truth or defeat naturalism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The distinction between an implication's unpleasantness and its truth is explicit and consistently applied to both sides."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The symmetrical example supplies a strong conceptual warrant, with only a bounded gap concerning whether intuition has non-emotional evidential content."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central subjective-status bridge."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The reply addresses the evidential reading while correctly limiting what recoil can establish."
+        }
+      },
+      "evidenceBasis": "O'Connor accepts that naturalism may render morality arbitrary, then compares recoil from that implication with atheistic recoil from an objectionable conception of God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolution-self-reference-basic-belief",
+      "sectionId": "section-evolutionary-moral-experience",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "If every thought results from evolution, the evolutionary account cannot certify its own truth; by contrast, moral conviction may be a properly basic belief rather than a mere assumption.",
+      "sourceSpan": {
+        "startEvent": 1362,
+        "endEvent": 1373
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage restates Turek's evolutionary self-defeat argument and identifies the wrongness of gratuitous infant torture as properly basic.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-naturalist-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-revulsion-does-not-refute-subjectivism",
+          "con-causal-explanation-not-moral-justification"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evolution-self-reference-basic-belief-component-01",
+            "targetMoveId": "con-revulsion-does-not-refute-subjectivism",
+            "text": "The decisive demand is whether moral conviction has epistemic status beyond emotional recoil.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-evolution-self-reference-basic-belief-component-02",
+            "targetMoveId": "con-causal-explanation-not-moral-justification",
+            "text": "Whether an evolutionary causal account can warrant confidence in its own truth.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply distinguishes properly basic moral belief from mere assumption and renews the self-reference objection to universal evolutionary explanation.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It contacts both the epistemic-status and self-reference components, though the basic-belief warrant is asserted rather than developed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "'Every thought results from evolution' is broader than the opponent's causal account, while 'properly basic' is named without its defeasibility conditions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A belief's evolutionary causal history does not by itself prevent it from being true or warranted, and basic status does not immunize it from defeaters."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolutionary processes can produce reliable cognition, and causal explanations need not claim that every belief is determined without truth-sensitive feedback.",
+        "decisiveQualification": "The reply must show why the evolutionary account is non-truth-tracking rather than merely causally involved."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 58,
+          "rationale": "The self-reference argument requires the unprovided premise that evolutionary origins defeat reliability; calling moral belief basic does not supply that bridge."
+        },
+        "evidenceWarrant": {
+          "value": 51,
+          "rationale": "Neither global unreliability nor the properly basic status of the moral example is defended beyond assertion."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central naturalist-reliability bridge."
+        },
+        "representationalCharity": {
+          "value": 55,
+          "rationale": "It omits the decisive reliability qualification and recasts a limited explanation as a universal debunking theory."
+        }
+      },
+      "evidenceBasis": "Turek says an evolutionary thought cannot certify evolution unless one gets outside the process, then labels moral conviction properly basic rather than assumed.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-disagreement-not-unreality",
+      "sectionId": "section-disagreement-and-practical-judgment",
+      "side": "pro",
+      "speaker": "Frank Turek",
+      "moveKind": "reply",
+      "proposition": "Disagreement or lack of clarity about moral cases concerns knowledge of moral reality and does not show that objective morality is unreal, just as scientific disagreement does not eliminate the objective world.",
+      "sourceSpan": {
+        "startEvent": 1436,
+        "endEvent": 1449
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Turek announces two objections, reiterating his evolutionary reliability challenge and drawing an explicit analogy with scientific disagreement.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-disagreement"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-revulsion-does-not-refute-subjectivism",
+          "con-compelling-yet-culturally-contingent-judgment"
+        ],
+        "components": [
+          {
+            "componentId": "pro-disagreement-not-unreality-component-01",
+            "targetMoveId": "con-revulsion-does-not-refute-subjectivism",
+            "text": "The decisive issue is whether variation or discomfort establishes that objective morality is unreal.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-disagreement-not-unreality-component-02",
+            "targetMoveId": "con-compelling-yet-culturally-contingent-judgment",
+            "text": "Whether cultural disagreement and unclear cases negate an objective moral reality.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses the inference from disagreement or incomplete clarity to unreality and states the defeating analogy with scientific disagreement about an objective world.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts the disagreement inference and states why the conclusion does not follow."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The epistemic-versus-ontological distinction is clearly recoverable and appropriately limited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The narrow claim that disagreement alone does not entail unreality is deductively secure."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Persistent structured disagreement may be probabilistic evidence against objective moral facts even if it does not entail their absence.",
+        "decisiveQualification": "The analogy defeats the deductive inference but does not erase possible evidential weight from the pattern or source of disagreement."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinction between uncertainty about facts and the nonexistence of facts is explicit and the scientific analogy validly supports it."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The analogy is strong for the limited conclusion, though no evidence compares the character of scientific and moral disagreement."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary disagreement bridge."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply fairly defeats entailment but gives limited treatment to the strongest probabilistic version."
+        }
+      },
+      "evidenceBasis": "Turek says moral issues need not all be clear and analogizes scientific disagreement about aspects of the world to disagreement that does not eliminate objective reality.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No uncaptured debate-wide consequence distinct from the move-level ratings and response records changes completion of a named pro bridge.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "A nonzero adjustment would require a distinct uncaptured fact changing completion of an identified pro bridge.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No qualifying residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance judgments",
+          "burden-contact findings"
+        ],
+        "counterfactual": "Removing the alleged residual would not change any pro bridge's completion beyond effects already recorded."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No uncaptured debate-wide consequence distinct from the move-level ratings and response records changes completion of a named con bridge.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "A nonzero adjustment would require a distinct uncaptured fact changing completion of an identified con bridge.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No qualifying residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance judgments",
+          "burden-contact findings"
+        ],
+        "counterfactual": "Removing the alleged residual would not change any con bridge's completion beyond effects already recorded."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

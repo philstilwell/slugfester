@@ -1,0 +1,1819 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "138",
+  "debateId": "albrecht-price-bodily-resurrection-2022",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-bodily-resurrection",
+      "side": "pro",
+      "description": "Establish that the earliest Christian sources report Jesus as raised in bodily continuity, then support the historical credibility of those reports through transmission, attestation, and relevant circumstantial considerations.",
+      "successCriteria": "The route succeeds if the sources can be treated as sufficiently early and historically connected to witnesses, their resurrection language is bodily rather than merely immaterial, and the principal skeptical alternatives do not defeat the resulting inference.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-historical-bodily-rising",
+        "tier": "motion",
+        "description": "Connect credible early-source testimony to the historical conclusion that Jesus rose bodily from the dead."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-early-testimony",
+          "tier": "central",
+          "description": "Establish an early and multiply attested proclamation of burial, resurrection, and appearances."
+        },
+        {
+          "bridgeId": "pro-central-bodily-meaning",
+          "tier": "central",
+          "description": "Show that spiritual-body and related source language denotes transformed bodily continuity rather than a nonphysical survival claim."
+        },
+        {
+          "bridgeId": "pro-central-transmission-reliability",
+          "tier": "central",
+          "description": "Ground the relevant texts and early church testimony in a historically credible chain connected to apostolic witnesses."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-analogy-distinction",
+          "tier": "subsidiary",
+          "description": "Distinguish the claimed event from proposed pagan dying-and-rising parallels in chronology, content, and documentary support."
+        },
+        {
+          "bridgeId": "pro-subsidiary-costly-commitment",
+          "tier": "subsidiary",
+          "description": "Explain how conversion, persecution, martyrdom traditions, and early expansion bear on the sincerity and claimed witness basis of the proclamation."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-historical-skepticism",
+      "side": "con",
+      "description": "Withhold the historical conclusion of bodily resurrection by applying inductive historical standards, challenging the sources' provenance and bodily meaning, and supplying analogues or ordinary explanations for the cited evidence.",
+      "successCriteria": "The route succeeds if the affirmative evidence does not overcome the event's weak experiential analogy, the sources remain materially uncertain or internally disputed, or the supporting phenomena are adequately compatible with non-resurrection explanations.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-historical-inference",
+        "tier": "motion",
+        "description": "Show that the available early Christian claims do not warrant concluding historically that Jesus bodily rose from the dead."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-method-and-analogy",
+          "tier": "central",
+          "description": "Require inductive and revisable historical inference while distinguishing divine possibility from evidence that this event occurred."
+        },
+        {
+          "bridgeId": "con-central-source-and-meaning",
+          "tier": "central",
+          "description": "Challenge the provenance, coherence, and physical interpretation of the New Testament and patristic source base."
+        },
+        {
+          "bridgeId": "con-central-alternative-context",
+          "tier": "central",
+          "description": "Place resurrection claims alongside ancient religious analogues and ordinary mechanisms capable of explaining belief formation and transmission."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-lineage-uncertainty",
+          "tier": "subsidiary",
+          "description": "Test whether apostolic succession, named witnesses, and martyrdom traditions are independently verifiable rather than dependent on later institutional claims."
+        },
+        {
+          "bridgeId": "con-subsidiary-sincerity-distinction",
+          "tier": "subsidiary",
+          "description": "Separate sincere costly commitment and movement growth from the factual correctness of the resurrection proclamation."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-historical-method",
+      "title": "Historical Method, Miracle Possibility, and Evidential Burden",
+      "weightPercent": 18,
+      "rationale": "This issue determines what kind of inference ancient testimony can support, how present experience and historical analogy constrain that inference, and why divine capability alone does or does not establish the reported event."
+    },
+    {
+      "sectionId": "section-earliest-sources-bodily-meaning",
+      "title": "Earliest Resurrection Sources and the Meaning of Bodily",
+      "weightPercent": 27,
+      "rationale": "The motion turns directly on whether Paul and other early Christian texts proclaim bodily continuity, a transformed physical body, or a spiritual event that conflicts with later flesh-and-bones presentations."
+    },
+    {
+      "sectionId": "section-provenance-transmission-attestation",
+      "title": "Source Provenance, Apostolic Transmission, and Multiple Attestation",
+      "weightPercent": 22,
+      "rationale": "The historical force of the resurrection reports depends on authorship, authenticity, chronology, witness connection, cross-community transmission, and whether apparent convergence supplies independent attestation."
+    },
+    {
+      "sectionId": "section-pagan-parallels",
+      "title": "Pagan Resurrection Parallels and Comparative Context",
+      "weightPercent": 18,
+      "rationale": "Proposed Attis, Osiris, Baal, and related parallels bear on the use of historical analogy, the claimed uniqueness of the Christian account, and competing explanations of the narrative's religious context."
+    },
+    {
+      "sectionId": "section-martyrdom-growth",
+      "title": "Martyrdom, Conversion, and Early Christian Growth",
+      "weightPercent": 15,
+      "rationale": "Costly commitment, apostolic martyrdom traditions, Paul's conversion, and movement expansion may support witness-based sincerity, while alternative social explanations test whether those facts establish more than belief."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-early-pauline-received-tradition",
+      "sectionId": "section-provenance-transmission-attestation",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "constructive",
+      "proposition": "Paul's received tradition in 1 Corinthians 15 preserves an early proclamation that Christ was buried, raised, and seen by numerous named witnesses.",
+      "sourceSpan": {
+        "startEvent": 151,
+        "endEvent": 209
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Albrecht's timed opening, and this uninterrupted first-person presentation remains within that opening turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-early-testimony"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes the asserted early Pauline tradition and named appearances; as an opening case component, it answers no earlier opposing locked move.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it directly develops a central evidentiary premise with specific textual content and a clear historical purpose."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The received-tradition claim is recoverable and its terms remain stable, though the move compresses the scope of universal transmission and its precise dating."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The cited Pauline formulation supports an early proclamation, but universal church reception and direct witness reliability receive less support than the force suggests."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from received material to an early proclamation is coherent, with a bounded implicit bridge from transmission language to historical proximity."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The move names Paul, received tradition, burial, appearances, and broad circulation, but does not verify dating, independence, or witness access in detail."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, this directly advances the indispensable early-testimony bridge through the earliest named proclamation and appearance list."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move primarily presents affirmative source evidence and does not meaningfully formulate or assess a live opposing interpretation."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly describes Pauline paradosis as universally taught and already known through the churches before Paul relayed it in writing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-glorious-body-empty-tomb",
+      "sectionId": "section-earliest-sources-bodily-meaning",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "constructive",
+      "proposition": "Paul's glorious-body language and Acts' contrast between David's occupied tomb and Christ's uncorrupted flesh support bodily resurrection and an empty tomb.",
+      "sourceSpan": {
+        "startEvent": 210,
+        "endEvent": 274
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is a continuous segment of Albrecht's opening statement, with explicit transitions among Pauline and Acts-based arguments.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-bodily-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies Pauline glorious-body language and an Acts tomb contrast as affirmative evidence; it has no earlier opposing locked target to answer.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it materially develops the bodily-meaning case, although the connection between separate texts is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The bodily-resurrection proposition is clear, but the breadth of the claim about the Gospels and Acts and the empty-tomb inference is only implicitly bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The texts plausibly support bodily interpretation, but the move speaks broadly about pervasive empty-tomb teaching without defending each textual step."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Glorious-body language and the tomb contrast are relevant to bodily continuity, but their combination leaves a material bridge to an actual empty tomb."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Philippians and Acts are specifically invoked, yet the crucial wording, provenance, and inference from noncorruption to an empty tomb remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, this directly addresses the indispensable question whether the early sources describe transformed bodily continuity."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed rival reading is considered in this constructive span, so a meaningful source-supported charity test is unavailable."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes Philippians 3:21's glorious body and characterizes Acts sermons as teaching an empty tomb and bodily resurrection.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-experiences-not-mere-visions",
+      "sectionId": "section-historical-method",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "constructive",
+      "proposition": "Concessions that the disciples experienced the risen Jesus, together with the sources' lack of merely visionary language, support treating the appearances as historical evidence.",
+      "sourceSpan": {
+        "startEvent": 355,
+        "endEvent": 421
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker remains Albrecht throughout this opening segment and explicitly cites several skeptical scholars before drawing his own conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-historical-bodily-rising"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move uses scholarly concessions about postmortem experiences and rejects a merely visionary account; no earlier opposing locked move is available for response analysis.",
+        "responsivenessWithinClass": {
+          "value": 80,
+          "rationale": "Within constructive moves, it reaches the motion-level historical inference, though its decisive exclusion of visionary alternatives is underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposition is recoverable, but experience, appearance, vision, and historical evidence are not sufficiently distinguished, and the scholarly concession's scope is blurred."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A concession that disciples had experiences does not by itself make nonvisionary bodily appearances probable, and the missing alternative comparison is material."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The move coherently treats experiences as evidence, but it makes an unsupported transition from experiences of appearance to nonvisionary bodily encounters."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "A named scholarly concession supports reported experiences, while the decisive claim that they were not visions is largely asserted rather than comparatively warranted."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "Within motion-tier contacts, the move directly attempts to connect appearance experiences to the historical occurrence claimed by the motion."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span asserts that visions are difficult but does not develop a sufficiently specific alternative interpretation for a charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes Lüdemann's historical concession that Peter and the disciples had experiences of the risen Jesus, then rejects merely visionary appearances.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-apostolic-fathers-transmission-chain",
+      "sectionId": "section-provenance-transmission-attestation",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "constructive",
+      "proposition": "Early church writers connected to apostolic witnesses consistently taught resurrection in the flesh, preserving a claimed chain of bodily-resurrection testimony.",
+      "sourceSpan": {
+        "startEvent": 423,
+        "endEvent": 485
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Albrecht introduces the early church fathers by name and remains the uninterrupted speaker through the cited Clement, Ignatius, Irenaeus, and Polycarp material.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transmission-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move adduces Clement, Ignatius, Irenaeus, and Polycarp as a claimed apostolic transmission chain; it does not answer an earlier opposing locked move.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "Within constructive moves, it supplies a concrete chain relevant to provenance, while leaving the chain's independent verification substantially compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The claimed chain and fleshly teaching are clear, but acquaintance with apostles and consistency across writers are generalized beyond the demonstrated links."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Named writers and an Irenaean recollection provide relevant support, but they do not by themselves establish every link as historically secure."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "A chain from apostles through Polycarp to Irenaeus could support transmission, but several links and the inference to consistent witness testimony remain implicit."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The move supplies names, approximate dates, and Irenaeus's report, yet authenticity, independence, and exact apostolic connections are not established."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, the move directly addresses the indispensable transmission-reliability bridge with an asserted named historical lineage."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This opening presentation does not engage a developed alternative account of pseudonymity, dependence, or institutional lineage."
+        }
+      },
+      "evidenceBasis": "The excerpt dates Clement and Ignatius, claims acquaintance with apostles, and reports Irenaeus recalling Polycarp's account of John's preaching.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-method-analogy-improbability",
+      "sectionId": "section-historical-method",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Historical judgment relies on analogy with credible experience, so the absence of credible modern resurrections and the presence of ancient mythic analogues make Jesus's resurrection historically improbable.",
+      "sourceSpan": {
+        "startEvent": 699,
+        "endEvent": 822
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Price explicitly introduces analogy as another mark of historical method and carries the argument through examples to its resurrection-specific conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-method-and-analogy"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-experiences-not-mere-visions",
+          "pro-early-pauline-received-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "con-method-analogy-improbability-component-01",
+            "targetMoveId": "pro-experiences-not-mere-visions",
+            "text": "Whether reported disciple experiences warrant treating bodily resurrection appearances as historically credible rather than visionary or fictional.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-method-analogy-improbability-component-02",
+            "targetMoveId": "pro-early-pauline-received-tradition",
+            "text": "Whether early testimony alone supplies adequate historical grounds for the extraordinary event it reports.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Price contacts the decisive experiential inference by applying analogy and asking for credible resurrection instances. He also contests the sufficiency of testimony, though he does not individually analyze the disciples' reported experiences.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, the decisive inference is contacted, but the specific appearance evidence and competing explanations are not examined in depth."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The analogical method and improbability conclusion are recoverable, though credible experience and cult advocacy are used without stable criteria."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Price frames the conclusion probabilistically and acknowledges limits, but absence of known modern cases and presence of myths do not fully establish fiction."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The disciples' reported experiences constitute unusual historical evidence even without a routine modern analogue.",
+        "decisiveQualification": "Extraordinary testimony can have evidential weight while still requiring comparison with base rates, source dependence, and ordinary alternatives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The inductive appeal to analogy is coherent and relevant, but the move compresses the bridge from low experiential frequency to probable fiction."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Modern absence and ancient analogues provide some comparative support, yet no representative survey or close comparison of the reports is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, it directly supplies the con route's historical-method requirement and challenges the affirmative experiential inference."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move recognizes resurrection testimony but weakens it through an ax-grinder framing and does not fairly compare the specific early evidence with alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt asks whether noncultic modern resurrection testimony exists, says none is known, and contrasts that absence with ancient religious narratives.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-method-possibility-not-occurrence",
+      "sectionId": "section-historical-method",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "A God's ability to perform a resurrection would establish only its possibility, while faith cannot replace historical grounds for concluding that Jesus's resurrection actually occurred.",
+      "sourceSpan": {
+        "startEvent": 833,
+        "endEvent": 864
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is Price's uninterrupted concluding argument in his opening, extending beyond the core boundary to its actual final argumentative source row.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-insufficient-historical-inference"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-experiences-not-mere-visions",
+          "pro-early-pauline-received-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "con-method-possibility-not-occurrence-component-01",
+            "targetMoveId": "pro-experiences-not-mere-visions",
+            "text": "Whether conceding postmortem experiences and rejecting visions supplies historical grounds that a bodily resurrection actually occurred.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-method-possibility-not-occurrence-component-02",
+            "targetMoveId": "pro-early-pauline-received-tradition",
+            "text": "Whether confident faith in received testimony can substitute for an evidential bridge from report to historical occurrence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Price expressly diagnoses the gap between divine possibility or faith and historical occurrence, and states the defeating consequence that faith cannot serve as the historical reason for belief.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within diagnostic defeats, the reply explicitly identifies the missing epistemic bridge and states why the affirmative material does not establish occurrence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between metaphysical possibility, faith, and historical warrant is expressly stated and remains stable throughout the move."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The necessity claim is methodological: possibility and faith alone cannot establish occurrence. That limited proposition matches the argument supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Faith may coexist with historical reasons and need not be offered as a substitute for evidence.",
+        "decisiveQualification": "The reply defeats only an inference resting on divine capability or faith alone, not every testimony-based historical argument."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The possibility-versus-occurrence distinction is explicit and valid, with only a bounded risk of attributing a faith-only argument too broadly."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The central claim is conceptual rather than heavily fact-dependent, though its application would benefit from closer demonstration that the pro case relies on faith alone."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "Within motion-tier contacts, the move directly attacks the ultimate inference from claimed possibility or testimony to bodily resurrection as historical fact."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "Price identifies the strongest distinction but rhetorically treats certainty as self-deception without fully allowing that independent historical reasons might also be offered."
+        }
+      },
+      "evidenceBasis": "The excerpt challenges the epistemology of certainty about resurrection and explicitly concludes that faith cannot double as a reason for dubious historical belief.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-parallels-attis-osiris-baal",
+      "sectionId": "section-pagan-parallels",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Pre-Christian evidence is at least suggestive of an Attis resurrection, while the resurrection traditions concerning Osiris and Baal predate the Christian account.",
+      "sourceSpan": {
+        "startEvent": 937,
+        "endEvent": 957
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives William Albrecht the questioning period, and Price directly answers Albrecht's Attis question in this window.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-alternative-context"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-apostolic-fathers-transmission-chain",
+          "pro-experiences-not-mere-visions"
+        ],
+        "components": [
+          {
+            "componentId": "con-parallels-attis-osiris-baal-component-01",
+            "targetMoveId": "pro-apostolic-fathers-transmission-chain",
+            "text": "Whether the specifically claimed apostolic transmission chain is historically credible and preserves bodily-resurrection testimony.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-parallels-attis-osiris-baal-component-02",
+            "targetMoveId": "pro-experiences-not-mere-visions",
+            "text": "Whether ancient religious analogues provide an alternative context for interpreting resurrection appearance claims.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The analogue material is issue-bearing and contacts an alternative-context component, but it does not answer the decisive provenance and transmission claim selected as primary. The response is therefore a relevant partial nonanswer to that demand.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "Within partial answers, the move contacts a secondary alternative-context issue but leaves the primary transmission demand untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The claimed parallels are identifiable, but resurrection, return, posture, and narrative similarity are not sharply distinguished across the three deities."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The Attis point is expressly tentative, but the broader assertion that Osiris and Baal resurrections predate Jesus receives little qualification or documentation here."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Pre-Christian analogues are relevant to comparative context, but similarity alone leaves a material bridge to explaining or reducing the Christian claim."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The Attis item is acknowledged as ambiguous and later attestation is mentioned, while Osiris and Baal chronology is largely asserted without supporting particulars."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "Within central contacts, the move materially advances the con alternative-context bridge by alleging pre-Christian dying-and-rising analogues."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This brief answer offers comparative evidence without developing a particular opposing interpretation sufficiently for a meaningful charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt tentatively interprets an Attis posture as resurrection-related and asserts that Osiris and Baal resurrection stories predate Jesus.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-attis-documentary-gap",
+      "sectionId": "section-pagan-parallels",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "The Attis comparison lacks early written testimony to a resurrection, leaving an ambiguous pottery interpretation and documentary accounts from a later period.",
+      "sourceSpan": {
+        "startEvent": 964,
+        "endEvent": 977
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Albrecht identifies Attis as the subject he wishes to keep examining and frames the documentary objection directly to Price.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-analogy-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-parallels-attis-osiris-baal"
+        ],
+        "components": [
+          {
+            "componentId": "pro-attis-documentary-gap-component-01",
+            "targetMoveId": "con-parallels-attis-osiris-baal",
+            "text": "Whether there is sufficiently early evidence that Attis supplied a pre-Christian resurrection analogue.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-attis-documentary-gap-component-02",
+            "targetMoveId": "con-parallels-attis-osiris-baal",
+            "text": "Whether ambiguous pottery can substitute for actual early written testimony about Attis's resurrection.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Albrecht directly contacts the Attis chronology and documentation components by distinguishing ambiguous pottery from later written testimony, though the reply does not address Price's separate Osiris and Baal examples.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it squarely contacts the decisive Attis component but leaves the other named analogues unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully limits itself to Attis, distinguishes pottery from writings, and frames the absence as the speaker's documentary finding."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is posed as a confirmation question and qualified by what the speaker has found, matching the limited evidence offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Ambiguous early iconography may still provide evidence when later texts clarify the depicted cultic motif.",
+        "decisiveQualification": "Such retrospective interpretation remains weaker than an unambiguous pre-Christian written resurrection account."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction between ambiguous material evidence and later explicit writings is clear and directly bears on the claimed chronology."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The opponent's apparent concession and the documentary distinction support the limited point, but no representative source chronology is actually supplied."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within subsidiary contacts, this is near the top because it directly distinguishes a principal proposed analogue by documentary chronology."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply fairly recognizes the pottery evidence while accurately isolating the decisive limitation that the explicit documentary testimony appears later."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies pottery as the apparent early support, asks whether actual writings come later, and reports finding no early Attis resurrection text.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-parallels-baal-ugaritic-evidence",
+      "sectionId": "section-pagan-parallels",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Ugaritic evidence supports Baal's death and return, and early Christian explanations of pagan anticipations indicate that dying-and-rising parallels were already recognized.",
+      "sourceSpan": {
+        "startEvent": 1055,
+        "endEvent": 1083
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Price explicitly answers Albrecht's question about pagan deities and cites both Ugaritic texts and early Christian interpretive responses.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-alternative-context"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-attis-documentary-gap",
+          "pro-early-pauline-received-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "con-parallels-baal-ugaritic-evidence-component-01",
+            "targetMoveId": "pro-attis-documentary-gap",
+            "text": "Whether the documentary weakness of Attis defeats the broader claim that pre-Christian dying-and-rising analogues existed.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-parallels-baal-ugaritic-evidence-component-02",
+            "targetMoveId": "pro-early-pauline-received-tradition",
+            "text": "Whether early Christian recognition of pagan anticipations places the proclamation in a broader comparative context.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Price answers the broader analogue challenge by shifting to Ugaritic Baal evidence and early Christian recognition of parallels. This contacts the documentary issue's consequence but does not rehabilitate Attis itself.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it contacts the decisive broader inference with a different documented analogue while leaving the Attis-specific gap intact."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The Baal proposition is recoverable, but death and rise are treated as equivalent to Christian resurrection without specifying the relevant similarities and differences."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Ugaritic texts are concrete support for a Baal return tradition, but the move overstates their status as a clincher for equivalence or influence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Baal's cyclical divine return may differ materially from a one-time embodied human resurrection.",
+        "decisiveQualification": "Predating Christianity establishes comparative context but does not by itself establish equivalence, dependence, or explanatory influence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The evidence coherently answers the existence of an earlier analogue, but the inference from recognition of parallels to explanatory significance remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The move names Ugaritic texts and an adverse scholarly admission, yet dating, wording, and the early fathers' precise statements are not documented in detail."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, it directly strengthens the alternative-context bridge with a specifically identified pre-Christian textual corpus."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The move acknowledges scholarly doubt but omits the decisive difference between a pre-Christian return narrative and the specific Christian historical claim."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes newly found Ugaritic texts as showing Baal died and rose and begins an appeal to early church fathers' recognition of parallels.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-justin-no-prior-equivalent",
+      "sectionId": "section-pagan-parallels",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "Justin Martyr neither dates pagan resurrection stories before Christianity nor treats their manner of suffering, death, and ending as equivalent to Christ's resurrection.",
+      "sourceSpan": {
+        "startEvent": 1103,
+        "endEvent": 1155
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Albrecht names Justin Martyr, distinguishes general pagan parallels from resurrection chronology, and cites Justin's apology while addressing Price.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-analogy-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-parallels-baal-ugaritic-evidence",
+          "con-parallels-attis-osiris-baal"
+        ],
+        "components": [
+          {
+            "componentId": "pro-justin-no-prior-equivalent-component-01",
+            "targetMoveId": "con-parallels-baal-ugaritic-evidence",
+            "text": "Whether early Christian acknowledgment of pagan parallels establishes a prior resurrection equivalent to Christ.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-justin-no-prior-equivalent-component-02",
+            "targetMoveId": "con-parallels-attis-osiris-baal",
+            "text": "Whether the pagan stories are chronologically prior and equivalent in suffering, death, and outcome.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Albrecht directly distinguishes Justin's recognition of similarities from both prior dating and equivalence of suffering and death. The response contacts the inference, although it does not analyze the Ugaritic Baal text itself.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Within partial answers, it contacts the decisive equivalence inference and chronology claim but leaves the opponent's strongest independent Baal evidence underexamined."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes generic parallels, chronological priority, and equivalence, while limiting the textual claim to Justin's treatment."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conclusion is framed as a problem rather than a categorical disproof, fitting the limited Justin citation and acknowledged disagreement."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Justin's apologetic discussion may evidence that Christians already recognized meaningful pagan anticipations.",
+        "decisiveQualification": "Recognition of similarities does not establish that Justin dated them before Christianity or viewed them as equivalent resurrections."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The distinction between acknowledged similarity and demonstrated prior equivalence is explicit, valid, and responsive to the opponent's inference."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Justin's Apology 22 is specifically identified and a relevant distinction is reported, though the full passage and rival reading are not examined."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within subsidiary contacts, the move strongly advances the analogy-distinction bridge through chronology and content rather than mere denial."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply preserves the opponent's legitimate similarity point while accurately isolating the missing chronology and equivalence qualifications."
+        }
+      },
+      "evidenceBasis": "The excerpt cites Justin's statement that manner of suffering and death differ and argues that noting parallels does not establish a prior equivalent.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-provenance-disputed-authorship",
+      "sectionId": "section-provenance-transmission-attestation",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "The New Testament and patristic documents have substantial authorship and authenticity disputes, so attributed church tradition cannot simply be treated as a critically established historical chain.",
+      "sourceSpan": {
+        "startEvent": 1457,
+        "endEvent": 1475
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator starts Price's cross-examination, after which Price directly criticizes Albrecht's handling of named and anonymous Christian documents.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-transmission-reliability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-apostolic-fathers-transmission-chain",
+          "pro-early-pauline-received-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "con-provenance-disputed-authorship-component-01",
+            "targetMoveId": "pro-apostolic-fathers-transmission-chain",
+            "text": "Whether the named New Testament and patristic attributions securely establish an apostolic transmission chain.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-provenance-disputed-authorship-component-02",
+            "targetMoveId": "pro-early-pauline-received-tradition",
+            "text": "Whether attributed Christian documents may be treated as critically established sources without addressing authenticity disputes.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Price directly attacks the authenticity and authorship premise underlying the asserted chain, naming anonymous Gospels and disputed patristic works. He contacts the decisive provenance demand, though mostly at a general level.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within full answers, the reply explicitly challenges the decisive source premise but does not substantiate the scope of each claimed dispute."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The provenance objection is clear, but 'any of these things' and the grouping of New Testament, church-father, and apostolic-father texts overgeneralize the dispute."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Serious authorship disputes are relevant, but the suggestion that virtually none bear their attributed names is broader than the particulars supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some sources may remain useful historical evidence despite anonymity, disputed attribution, or later titles.",
+        "decisiveQualification": "Uncertain traditional authorship weakens an asserted named lineage but does not automatically erase dating, content, or all witness connections."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Disputed provenance validly weakens a named transmission chain, but the move risks treating uncertainty of authorship as wholesale historical unusability."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Anonymous Gospel titles provide a concrete example, yet the sweeping claims about patristic authenticity and all named documents are not individually supported."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, this directly attacks the indispensable transmission-reliability bridge at its authorship and authenticity foundation."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The reply raises the strongest provenance concern but materially compresses the affirmative position into an official party line and overgeneralizes across documents."
+        }
+      },
+      "evidenceBasis": "The excerpt alleges serious doubts about New Testament and patristic attributions and specifically notes that all four Gospels originally lacked names.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-bodily-meaning-paul-luke-conflict",
+      "sectionId": "section-earliest-sources-bodily-meaning",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "First Corinthians 15 presents resurrection as spiritual rather than physical and conflicts with Luke's insistence that the risen Jesus possesses flesh and bones rather than being a spirit.",
+      "sourceSpan": {
+        "startEvent": 1527,
+        "endEvent": 1546
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Price answers Albrecht's question about earliest Christian belief by quoting and contrasting First Corinthians 15 with Luke's resurrection language.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-bodily-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-glorious-body-empty-tomb",
+          "pro-early-pauline-received-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "con-bodily-meaning-paul-luke-conflict-component-01",
+            "targetMoveId": "pro-glorious-body-empty-tomb",
+            "text": "Whether Paul's spiritual-body language supports a physically transformed resurrection body.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-bodily-meaning-paul-luke-conflict-component-02",
+            "targetMoveId": "pro-early-pauline-received-tradition",
+            "text": "Whether the early Pauline proclamation coheres with Luke's later flesh-and-bones presentation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Price directly interprets First Corinthians 15 against physicality and contrasts it with Luke's flesh-and-bones language. This contacts both bodily meaning and claimed source coherence.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly engages the decisive Pauline language and supplies a concrete alleged contradiction with another affirmative source."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conflict is clearly stated, but physical, natural, spiritual, spirit, flesh, and blood are treated as simpler equivalents than the texts necessarily require."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The quoted contrast creates a real interpretive tension, but saying Luke directly contradicts Paul requires excluding transformed-physical readings that are not examined here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul's spiritual body may mean a transformed body empowered by spirit rather than an immaterial spirit.",
+        "decisiveQualification": "Flesh-and-blood exclusion can concern corruptible mortality, so a contradiction with Luke is not established merely by the adjective spiritual."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The textual contrast is logically relevant, but the argument depends on an equivocation between a spiritual body and being a disembodied spirit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Specific Pauline and Lukan language is quoted, while the semantic range, immediate context, and compatibility of transformed embodiment remain underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, this directly attacks the indispensable bodily-meaning bridge using the earliest-source interpretation and an alleged source conflict."
+        },
+        "representationalCharity": {
+          "value": 56,
+          "rationale": "The move identifies the relevant alternative only as an assumption and omits its decisive semantic qualification before declaring direct contradiction."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes flesh and blood not inheriting God's kingdom, contrasts natural and spiritual bodies, and opposes this to Luke's flesh-and-bones saying.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-spiritual-not-immaterial",
+      "sectionId": "section-earliest-sources-bodily-meaning",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "Pauline usage and Ignatius's conjunction of fleshly and spiritual predicates show that describing a resurrection body as spiritual does not make it immaterial.",
+      "sourceSpan": {
+        "startEvent": 1645,
+        "endEvent": 1681
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Albrecht explicitly identifies the disputed Greek term, develops its historical usage, and applies Ignatius's flesh-and-spirit language to Price's interpretation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-bodily-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-bodily-meaning-paul-luke-conflict",
+          "con-provenance-disputed-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "pro-spiritual-not-immaterial-component-01",
+            "targetMoveId": "con-bodily-meaning-paul-luke-conflict",
+            "text": "Whether Paul's term spiritual necessarily denotes an immaterial resurrection body and therefore conflicts with Luke.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-spiritual-not-immaterial-component-02",
+            "targetMoveId": "con-provenance-disputed-authorship",
+            "text": "Whether later patristic usage can independently settle the meaning of Paul's earlier terminology.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Albrecht directly denies the equation of spiritual with immaterial and supplies Ignatius's conjunction of fleshly and spiritual predicates. He answers the semantic premise but not the separate provenance or direct Pauline-context challenges.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "Within partial answers, it contacts the decisive semantic component but leaves authorship and Paul's immediate contextual contrast unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The distinction between spiritual and immaterial is clear, but the claim about usage throughout history exceeds the single patristic example presented."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Ignatius demonstrates compatibility of fleshly and spiritual predicates, but does not alone establish Paul's exact intended meaning or all historical usage."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul's immediate contrast may give spiritual a more nonphysical sense than Ignatius gives it in a different construction.",
+        "decisiveQualification": "A later compatibility example rebuts semantic necessity but does not by itself determine Paul's contextual meaning."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Showing that fleshly and spiritual can jointly predicate Christ coherently defeats a simple semantic incompatibility, with a bounded contextual bridge remaining."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "A specific Ignatian formulation supplies relevant usage evidence, but the broader New Testament and historical generalization lacks representative documentation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, the move directly supports the bodily-meaning bridge by rebutting the alleged necessary equivalence of spiritual and immaterial."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply fairly targets the claim of necessary immateriality, though it gives insufficient weight to the opponent's immediate-context qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes Ignatius describing Christ as both fleshly and spiritual and infers that spiritual need not mean immaterial or symbolic.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-bodily-meaning-immediate-context",
+      "sectionId": "section-earliest-sources-bodily-meaning",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "The immediate context of First Corinthians contrasts mortal flesh with spirit and therefore does not support interpreting Paul's spiritual body as a physically transformed body.",
+      "sourceSpan": {
+        "startEvent": 1682,
+        "endEvent": 1707
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly challenges Albrecht by name and advances Price's contextual interpretation before Albrecht answers.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-bodily-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-spiritual-not-immaterial",
+          "pro-glorious-body-empty-tomb"
+        ],
+        "components": [
+          {
+            "componentId": "con-bodily-meaning-immediate-context-component-01",
+            "targetMoveId": "pro-spiritual-not-immaterial",
+            "text": "Whether examples of fleshly and spiritual predicates outside First Corinthians determine Paul's meaning in its immediate context.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-bodily-meaning-immediate-context-component-02",
+            "targetMoveId": "pro-glorious-body-empty-tomb",
+            "text": "Whether Paul's flesh-and-spirit contrast supports the affirmative transformed-physical reading.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Price directly argues that immediate context controls over distant usage and identifies Paul's mortality and flesh-spirit contrasts. The reply contacts the semantic warrant, although it does not fully parse spiritual body.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, the decisive contextual demand is explicitly contacted, with only the detailed lexical and syntactic analysis compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The contextual claim is recoverable, but flesh, mortality, spirit, and physicality remain partly conflated rather than carefully distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Immediate context properly bears greater interpretive weight, but the move overstates what the mortality image alone proves about transformed physical embodiment."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Flesh and blood may denote corruptible mortality while spiritual body denotes transformed embodied life.",
+        "decisiveQualification": "A contrast with mortality does not necessarily entail a contrast with every form of physical or bodily continuity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "Prioritizing immediate context is sound, but the inference from flesh as mortal to spiritual as nonphysical leaves a material semantic bridge."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The move points to relevant Pauline contrasts, yet does not quote or analyze enough context to exclude a transformed-incorruptible bodily reading."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within central contacts, this directly attacks the bodily-meaning bridge at the immediate contextual interpretation of First Corinthians."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "The move engages the transformed-body position indirectly but omits its decisive qualification and treats inherent mortality as settling nonphysicality."
+        }
+      },
+      "evidenceBasis": "The excerpt insists on immediate context, appeals to flesh and blood as an image of mortality, and says First Corinthians opposes flesh to spirit.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-transmission-unverifiable-lineage",
+      "sectionId": "section-provenance-transmission-attestation",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Apostolic-succession and institutional-pedigree claims cannot be independently verified and resemble the competing prestigious-lineage claims made by other later religious communities.",
+      "sourceSpan": {
+        "startEvent": 1847,
+        "endEvent": 1864
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response follows Albrecht's request for an admission and uses Price's characteristic comparative skepticism about succession claims.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-lineage-uncertainty"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-apostolic-fathers-transmission-chain",
+          "pro-early-pauline-received-tradition"
+        ],
+        "components": [
+          {
+            "componentId": "con-transmission-unverifiable-lineage-component-01",
+            "targetMoveId": "pro-apostolic-fathers-transmission-chain",
+            "text": "Whether claimed apostolic acquaintance and succession can be independently verified as a reliable historical lineage.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-transmission-unverifiable-lineage-component-02",
+            "targetMoveId": "pro-early-pauline-received-tradition",
+            "text": "Whether institutional claims of founding pedigree independently corroborate the early proclamation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Price directly denies independent verification of the asserted lineage and supports the objection with comparison to competing later religious pedigree claims. The reply contacts the decisive verification demand.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within full answers, it explicitly challenges the decisive lineage premise, though the analogy substitutes for detailed source-by-source verification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The lineage objection is clear, but the categorical phrase 'no way to verify' is broader than the comparative examples demonstrate."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Competing pedigree claims justify skepticism, but they do not establish the categorical impossibility of verifying any part of the Christian lineage."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Named succession reports can carry partial historical weight even when they cannot be independently confirmed at every link.",
+        "decisiveQualification": "Lack of complete independent verification weakens confidence but is not identical to evidence of fabrication or total unverifiability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Competing prestigious lineages coherently motivate caution, but resemblance between institutional claims does not itself show this lineage is unverifiable."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The comparative examples are relevant but anecdotal, and the move supplies no direct evaluation of Clement, Ignatius, Polycarp, or Irenaeus."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within subsidiary contacts, it directly reaches the defined lineage-uncertainty bridge through the question of independent verification."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The comparison usefully tests institutional pedigree, but the categorical dismissal omits the decisive possibility of partial corroboration."
+        }
+      },
+      "evidenceBasis": "The excerpt says the lineage cannot be verified and compares it with Islamic and other communities' claims that an apostle founded their congregation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-martyrdom-legendary-apostles",
+      "sectionId": "section-martyrdom-growth",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Uncertainty about the apostles' identities and activities, together with dependence on late and legend-laden acts, prevents their alleged martyrdoms from securely supporting the resurrection claim.",
+      "sourceSpan": {
+        "startEvent": 2106,
+        "endEvent": 2158
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Price about the apostles, after which he challenges their identification and surveys legendary apocryphal accounts.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-costly-commitment"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-apostolic-fathers-transmission-chain",
+          "pro-experiences-not-mere-visions"
+        ],
+        "components": [
+          {
+            "componentId": "con-martyrdom-legendary-apostles-component-01",
+            "targetMoveId": "pro-apostolic-fathers-transmission-chain",
+            "text": "Whether the named early church transmission chain reliably connects bodily-resurrection testimony to known apostolic witnesses.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-martyrdom-legendary-apostles-component-02",
+            "targetMoveId": "pro-experiences-not-mere-visions",
+            "text": "Whether identified apostles supplied secure eyewitness evidence rather than later legendary reports.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The legendary-acts objection is materially relevant to apostolic witness claims and contacts their identification, but it does not examine the particular early-father chain selected as the primary demand.",
+        "responsivenessWithinClass": {
+          "value": 62,
+          "rationale": "Within partial answers, it contacts a secondary witness-reliability component while leaving the earlier named transmission chain substantially unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The late-legend objection is clear, but claims that nothing is known and that the relevant material derives only from later acts are overbroad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Late legendary acts materially weaken many martyrdom traditions, but the categorical conclusion exceeds the examples and qualifications supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some apostolic identities, activities, or deaths may have earlier and more credible attestation than the apocryphal acts.",
+        "decisiveQualification": "Legendary elaboration in later acts does not establish that every underlying apostolic or martyrdom tradition is late or false."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "Dependence on late legendary acts would weaken martyrdom evidence, but the universal conclusion rests on an unsupported exhaustive-source premise."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Several second- and third-century apocryphal acts are specifically named, yet their relationship to every asserted martyrdom is not demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within subsidiary contacts, the move strongly attacks costly-commitment support by disputing the identity and evidentiary basis of alleged apostolic martyrs."
+        },
+        "representationalCharity": {
+          "value": 52,
+          "rationale": "The move highlights a serious evidentiary weakness but materially flattens differing traditions into a single late legendary category."
+        }
+      },
+      "evidenceBasis": "The excerpt points to variations in apostle lists and names the Acts of Paul, Thomas, Peter, and John as late, legend-laden sources.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-growth-sincerity-ordinary-causes",
+      "sectionId": "section-martyrdom-growth",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Martyrdom demonstrates sincere belief rather than factual truth, while Christian charity, demographics, missionary practices, and accessibility offer ordinary explanations for the movement's growth.",
+      "sourceSpan": {
+        "startEvent": 2302,
+        "endEvent": 2427
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the multipart question to Price, and the sustained answer addresses martyrdom and the spread of Christianity.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-sincerity-distinction"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-apostolic-fathers-transmission-chain",
+          "pro-experiences-not-mere-visions"
+        ],
+        "components": [
+          {
+            "componentId": "con-growth-sincerity-ordinary-causes-component-01",
+            "targetMoveId": "pro-apostolic-fathers-transmission-chain",
+            "text": "Whether early Christian growth and institutional continuity independently confirm the asserted apostolic transmission chain.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-growth-sincerity-ordinary-causes-component-02",
+            "targetMoveId": "pro-experiences-not-mere-visions",
+            "text": "Whether sincere costly belief and movement growth establish that the underlying resurrection experiences were factually veridical.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Price directly distinguishes sincerity from truth and supplies ordinary growth mechanisms, but he does not answer the primary named transmission-chain evidence. The contrary material is relevant to supporting circumstances rather than provenance.",
+        "responsivenessWithinClass": {
+          "value": 63,
+          "rationale": "Within partial answers, it contacts an important secondary sincerity inference while leaving the selected transmission demand untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between sincerity and truth is explicit, and the ordinary demographic and missionary mechanisms are presented as alternatives rather than necessities."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move offers ordinary mechanisms as plausible explanations and does not claim that any single mechanism necessarily accounts for all growth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Costly commitment can modestly support sincerity and sometimes the witnesses' confidence in what they experienced.",
+        "decisiveQualification": "Sincerity and confidence remain compatible with mistake, legend, social transmission, or nonresurrection explanations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The sincerity-truth distinction is valid, and the listed demographic and missionary mechanisms coherently show that growth is evidentially underdetermining."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Several concrete ordinary mechanisms are given, but their magnitude and historical representativeness are asserted rather than documented in this span."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "Within subsidiary contacts, it directly and strongly supplies the sincerity-distinction bridge governing martyrdom and growth evidence."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply preserves the legitimate sincerity inference while accurately denying the stronger transition from sincere commitment or growth to factual truth."
+        }
+      },
+      "evidenceBasis": "The span distinguishes martyr sincerity from truth and attributes growth to charity, demographic practices, intermarriage, conversion, and accessibility to gentiles.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-costly-bodily-witness-belief",
+      "sectionId": "section-martyrdom-growth",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "Paul and early martyrs accepted persecution because they believed testimony that Christ remained physically alive after bodily resurrection.",
+      "sourceSpan": {
+        "startEvent": 2430,
+        "endEvent": 2477
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives William the response, and he invokes Paul, Ignatius, gospel testimony, and comparisons with Joseph Smith and Muhammad.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-costly-commitment"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-martyrdom-legendary-apostles",
+          "con-growth-sincerity-ordinary-causes"
+        ],
+        "components": [
+          {
+            "componentId": "pro-costly-bodily-witness-belief-component-01",
+            "targetMoveId": "con-martyrdom-legendary-apostles",
+            "text": "Whether reliable evidence identifies the apostles and establishes their martyrdom for bodily-resurrection testimony.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-costly-bodily-witness-belief-component-02",
+            "targetMoveId": "con-growth-sincerity-ordinary-causes",
+            "text": "Whether persecution and costly commitment support sincere belief in a physically risen Christ.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-costly-bodily-witness-belief-component-03",
+            "targetMoveId": "con-growth-sincerity-ordinary-causes",
+            "text": "Whether sincerity and costly belief establish the factual truth of bodily resurrection.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Albrecht expressly postpones the evidentiary dispute about the apostles, so the primary legendary-source demand is uncontacted. He does contact sincere bodily belief but not Price's distinction between sincerity and truth.",
+        "responsivenessWithinClass": {
+          "value": 54,
+          "rationale": "Within relevant nonanswers, it offers issue-bearing sincerity material but expressly leaves the decisive source and truth-inference challenges unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The claimed bodily belief is clear, but 'they' shifts among Paul, apostles, martyrs, and Gospel witnesses without stable evidentiary scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Costly commitment supports sincerity, but the move overstates its bearing on bodily occurrence and defers the reliability dispute needed for the stronger conclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "People may sincerely accept costly bodily-resurrection testimony without personally witnessing it or being factually correct.",
+        "decisiveQualification": "Persecution bears primarily on sincerity; witness identity, access, alternatives, and truth require separate support."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "The argument moves from costly belief to evidential significance without supplying the necessary bridge from sincerity or reported seeing to historical truth."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "Paul, Ignatius, and Gospel accounts are invoked, but reliable personal witness, martyrdom circumstances, and the truth-discriminating value of persecution remain unsupported."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within subsidiary contacts, it directly supports costly commitment and claimed bodily witness belief, though it does not complete the inference to truth."
+        },
+        "representationalCharity": {
+          "value": 55,
+          "rationale": "The reply recognizes belief but largely repeats the inference Price distinguished, omitting the decisive gap between costly sincerity and factual correctness."
+        }
+      },
+      "evidenceBasis": "The excerpt says the believers thought they saw the bodily risen Christ alive physically, while expressly deferring disagreement about proof concerning the apostles.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-growth-eyewitness-linked-testimony",
+      "sectionId": "section-martyrdom-growth",
+      "side": "pro",
+      "speaker": "William Albrecht",
+      "moveKind": "reply",
+      "proposition": "Christian expansion occurred as converts encountered eyewitness-linked resurrection testimony and embraced the faith despite continuing persecution.",
+      "sourceSpan": {
+        "startEvent": 2479,
+        "endEvent": 2531
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Within William's answer, he explicitly turns to why the faith expanded and continues through the locked lookahead to his concluding claim.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-costly-commitment"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-growth-sincerity-ordinary-causes",
+          "con-transmission-unverifiable-lineage"
+        ],
+        "components": [
+          {
+            "componentId": "pro-growth-eyewitness-linked-testimony-component-01",
+            "targetMoveId": "con-growth-sincerity-ordinary-causes",
+            "text": "Whether ordinary demographic, charitable, missionary, and social mechanisms adequately explain Christian expansion without resurrection truth.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-growth-eyewitness-linked-testimony-component-02",
+            "targetMoveId": "con-growth-sincerity-ordinary-causes",
+            "text": "Whether continued persecution supports the sincerity of converts such as Justin.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-growth-eyewitness-linked-testimony-component-03",
+            "targetMoveId": "con-transmission-unverifiable-lineage",
+            "text": "Whether the testimony encountered by converts was verifiably linked to eyewitnesses.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move invokes persecution and available resurrection evidence but does not engage Price's concrete ordinary growth mechanisms or verify the claimed eyewitness link. It is relevant contrary material rather than an answer to the primary explanation.",
+        "responsivenessWithinClass": {
+          "value": 50,
+          "rationale": "Within relevant nonanswers, it supplies sincerity and claimed-evidence considerations but leaves the decisive ordinary-cause comparison uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Growth, eyewitness-linked testimony, persecution, evidence, and suppression are combined without a clearly bounded causal proposition or verified linkage."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Justin's conversion under persecution supports sincerity but does not establish that expansion generally resulted from eyewitness-linked evidence rather than ordinary mechanisms."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian expansion may reflect sincere conviction plus ordinary demographic and missionary mechanisms rather than verification of resurrection testimony.",
+        "decisiveQualification": "Persecution does not exclude ordinary causes, and conversion does not itself verify the provenance or truth of the evidence encountered."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 58,
+          "rationale": "The causal inference from persecution-era conversion and alleged suppression to eyewitness-driven expansion contains multiple unsupported links."
+        },
+        "evidenceWarrant": {
+          "value": 56,
+          "rationale": "Justin and claimed Jewish opposition are cited, but neither representative growth data nor a demonstrated eyewitness transmission chain supports the broad conclusion."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within subsidiary contacts, it bears on costly commitment and movement growth, but its asserted eyewitness link is not adequately established."
+        },
+        "representationalCharity": {
+          "value": 52,
+          "rationale": "The reply acknowledges persecution but does not address the strongest ordinary-cause account and treats conversion despite cost as evidence of the underlying claim."
+        }
+      },
+      "evidenceBasis": "The excerpt cites Justin's conversion amid persecution and alleged efforts to suppress resurrection evidence, then infers an evidence-driven movement.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence remains after the move ratings, response links, importance judgments, and burden contacts are applied.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No separate completion criterion exists beyond the locked pro bridges already evaluated move by move.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified for the pro route.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact and relevance",
+          "importance values"
+        ],
+        "counterfactual": "Removing the proposed residual would not change burden completion because no separate residual was found."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence remains after the move ratings, response links, importance judgments, and burden contacts are applied.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No separate completion criterion exists beyond the locked con bridges already evaluated move by move.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified for the con route.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden contact and relevance",
+          "importance values"
+        ],
+        "counterfactual": "Removing the proposed residual would not change burden completion because no separate residual was found."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
