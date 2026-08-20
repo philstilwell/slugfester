@@ -1,0 +1,321 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-audio-verification-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-03-decomposed-consensus",
+  "status": "frozen-three-batch-03-audio-unresolved-and-cost-decimal-mismatch-diagnosed",
+  "diagnosedAt": "2026-08-20T22:12:01Z",
+  "checkpointCommit": "a84922345aa760f3a3c6f97f788fb8b02cc8a9c3",
+  "sourceCheckpointCommit": "a84922345aa760f3a3c6f97f788fb8b02cc8a9c3",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "I approve deterministic diagnosis, validation, freezing, committing, and pushing of the three preserved Batch 3 audio-verification unresolved results and the cost-control decimal mismatch only, with a direct incremental cost cap of $0. Use only preserved request, transcript, execution, validation, and cost records. Do not access or play audio, execute or retry models, use paid services, alter transcripts or thresholds, repair results, adjudicate, derive scores, or begin downstream work.",
+    "maximumDirectIncrementalCostUsd": 0,
+    "deterministicDiagnosisAuthorized": true,
+    "deterministicValidationAuthorized": true,
+    "freezingAuthorized": true,
+    "commitAndPushAuthorized": true,
+    "transcriptOrThresholdMutationAuthorized": false,
+    "repairAuthorized": false,
+    "adjudicationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServiceAuthorized": false
+  },
+  "evidenceBoundary": {
+    "authorizedRecords": {
+      "request": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/execution-manifest.json",
+        "sha256": "8795fdf28daea01ed7a09d73bdd9f97144e57b77acc589a7ee44317aacb0ce08"
+      },
+      "execution": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/model-execution.json",
+        "sha256": "dcd4da54457a8423bc7c5981b54dfab65aade52f1ccef10c59f8f1a81863e484"
+      },
+      "validationAudit": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/audio-verification.json",
+        "sha256": "c1f4418803d468801b3731361ebff701f2d4c1a8ca4dc374332d14dedbe4a523"
+      },
+      "validationAnalysis": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/analysis.json",
+        "sha256": "f3e185fc66438cb054f2ea2d9005c6460cf5d57cf6167e93a114cc77d41ed989"
+      },
+      "cost": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/cost-control-analysis.json",
+        "sha256": "bb6fd4702e3401dd97694e20744d3eaf05de51b691ccd691d9b1a588b888afd8"
+      }
+    },
+    "authorizedRecordCount": 5,
+    "validatorRecords": {
+      "attributionLibrary": {
+        "path": "scripts/lib/v416-audio-verification.mjs",
+        "sha256": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7"
+      },
+      "attributionAnalyzer": {
+        "path": "scripts/analyze-assessment-production-post-canary-batch-03-audio-verification.mjs",
+        "sha256": "5fab747b3f999d577a8d0e520ec631373c8bb2468330faef7aa29ced10ef602c"
+      },
+      "costAnalyzer": {
+        "path": "scripts/analyze-assessment-production-post-canary-batch-03-audio-cost-control.mjs",
+        "sha256": "df86e69a5aebb2de57bdc0ddfc54a1a1f5f1eb03c4411313c1b014e4f2a2bdc1"
+      },
+      "cohortTest": {
+        "path": "scripts/test-assessment-production-post-canary-batch-03-audio-verification.mjs",
+        "sha256": "42ca4e0963ce42dac02e84f61309cab63bf30d86a9c82a0608e5aa531b238c47"
+      }
+    },
+    "validatorRecordCount": 4,
+    "transcriptRecords": [
+      {
+        "debateNumber": "124",
+        "moveId": "pro-rational-instruction-behavioral-limit",
+        "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/pro-rational-instruction-behavioral-limit.transcript.json",
+        "sha256": "2534981c9101fac0f5a8695928bc8167953a037eec173467c0226de8a4a3db3d"
+      },
+      {
+        "debateNumber": "58",
+        "moveId": "pro-logic-presupposition-suffices",
+        "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/transcripts/pro-logic-presupposition-suffices.transcript.json",
+        "sha256": "6aca9be1794e534daf2dc5116ef8441104f2160d9b821b9f22b6c542a40112a5"
+      },
+      {
+        "debateNumber": "157",
+        "moveId": "con-reason-incarnation-access-gap",
+        "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/con-reason-incarnation-access-gap.transcript.json",
+        "sha256": "abcd04a42e445e4851c828661010a4deaa540a928e83e15502a062ae7eaef85f"
+      }
+    ],
+    "transcriptRecordCount": 3,
+    "transcriptBytesHashVerified": true,
+    "transcriptTextIncludedInDiagnosis": false,
+    "transcriptTextSemanticallyEvaluated": false,
+    "audioFilesAccessed": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0
+  },
+  "executionRecord": {
+    "status": "eight-post-canary-batch-03-paid-known-speaker-diarizations-completed",
+    "callsPlanned": 8,
+    "callsAttempted": 8,
+    "callsCompleted": 8,
+    "callsSkipped": 0,
+    "retries": 0,
+    "correctionCalls": 0,
+    "requestFailure": false,
+    "costCapReachedOrExceeded": false,
+    "usage": {
+      "inputTokens": 12817,
+      "audioInputTokens": 11995,
+      "textInputTokens": 822,
+      "outputTokens": 21319,
+      "totalTokens": 34136
+    },
+    "usageDerivedEstimatedCostUsd": 0.2452325,
+    "maximumAuthorizedCostUsd": 1
+  },
+  "attributionDiagnosis": {
+    "classification": "three-completed-calls-failed-unchanged-deterministic-attribution-thresholds",
+    "requiredMoves": 8,
+    "verifiedMoves": 5,
+    "unresolvedMoves": 3,
+    "frozenThresholds": {
+      "minimumFullClipExcerptRecall": 0.8,
+      "minimumExpectedSpeakerExcerptRecall": 0.8,
+      "minimumExpectedSpeakerRecallMargin": 0.15,
+      "minimumExpectedSpeakerDurationSeconds": 5
+    },
+    "unresolved": [
+      {
+        "debateNumber": "124",
+        "debateId": "harris-peterson-god-atheism-bible-2018",
+        "moveId": "pro-rational-instruction-behavioral-limit",
+        "expectedSpeaker": "Jordan Peterson",
+        "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/pro-rational-instruction-behavioral-limit.transcript.json",
+        "transcriptSha256": "2534981c9101fac0f5a8695928bc8167953a037eec173467c0226de8a4a3db3d",
+        "executionCompleted": true,
+        "attemptCount": 1,
+        "retryCount": 0,
+        "statusPreserved": "unresolved",
+        "resolvedSpeakerPreserved": null,
+        "deterministicEvidence": {
+          "fullClipExcerptRecall": 0.9142857142857143,
+          "expectedSpeakerExcerptRecall": 0.6571428571428571,
+          "highestOtherSpeaker": "Sam Harris",
+          "highestOtherSpeakerExcerptRecall": 0.38571428571428573,
+          "expectedSpeakerRecallMargin": 0.2714285714285714,
+          "expectedSpeakerDurationSeconds": 26.35,
+          "checks": {
+            "fullClipExcerptRecovered": true,
+            "expectedSpeakerExcerptRecovered": false,
+            "expectedSpeakerRecallDistinct": true,
+            "expectedSpeakerDurationSufficient": true
+          },
+          "failedChecks": [
+            "expectedSpeakerExcerptRecovered"
+          ],
+          "expectedSpeakerExcerptRecallShortfall": 0.142857142857143,
+          "expectedSpeakerRecallMarginShortfall": 0
+        },
+        "classification": "expected-speaker-excerpt-recall-below-frozen-threshold"
+      },
+      {
+        "debateNumber": "58",
+        "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+        "moveId": "pro-logic-presupposition-suffices",
+        "expectedSpeaker": "Matt Dillahunty",
+        "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/transcripts/pro-logic-presupposition-suffices.transcript.json",
+        "transcriptSha256": "6aca9be1794e534daf2dc5116ef8441104f2160d9b821b9f22b6c542a40112a5",
+        "executionCompleted": true,
+        "attemptCount": 1,
+        "retryCount": 0,
+        "statusPreserved": "unresolved",
+        "resolvedSpeakerPreserved": null,
+        "deterministicEvidence": {
+          "fullClipExcerptRecall": 0.9436619718309859,
+          "expectedSpeakerExcerptRecall": 0.7746478873239436,
+          "highestOtherSpeaker": "Matt Slick",
+          "highestOtherSpeakerExcerptRecall": 0.5070422535211268,
+          "expectedSpeakerRecallMargin": 0.2676056338028169,
+          "expectedSpeakerDurationSeconds": 20.7,
+          "checks": {
+            "fullClipExcerptRecovered": true,
+            "expectedSpeakerExcerptRecovered": false,
+            "expectedSpeakerRecallDistinct": true,
+            "expectedSpeakerDurationSufficient": true
+          },
+          "failedChecks": [
+            "expectedSpeakerExcerptRecovered"
+          ],
+          "expectedSpeakerExcerptRecallShortfall": 0.025352112676056,
+          "expectedSpeakerRecallMarginShortfall": 0
+        },
+        "classification": "expected-speaker-excerpt-recall-below-frozen-threshold"
+      },
+      {
+        "debateNumber": "157",
+        "debateId": "dillahunty-howitt-christianity-true-2023",
+        "moveId": "con-reason-incarnation-access-gap",
+        "expectedSpeaker": "Matt Dillahunty",
+        "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/con-reason-incarnation-access-gap.transcript.json",
+        "transcriptSha256": "abcd04a42e445e4851c828661010a4deaa540a928e83e15502a062ae7eaef85f",
+        "executionCompleted": true,
+        "attemptCount": 1,
+        "retryCount": 0,
+        "statusPreserved": "unresolved",
+        "resolvedSpeakerPreserved": null,
+        "deterministicEvidence": {
+          "fullClipExcerptRecall": 0.9473684210526315,
+          "expectedSpeakerExcerptRecall": 0.4868421052631579,
+          "highestOtherSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+          "highestOtherSpeakerExcerptRecall": 0.75,
+          "expectedSpeakerRecallMargin": -0.2631578947368421,
+          "expectedSpeakerDurationSeconds": 35.75,
+          "checks": {
+            "fullClipExcerptRecovered": true,
+            "expectedSpeakerExcerptRecovered": false,
+            "expectedSpeakerRecallDistinct": false,
+            "expectedSpeakerDurationSufficient": true
+          },
+          "failedChecks": [
+            "expectedSpeakerExcerptRecovered",
+            "expectedSpeakerRecallDistinct"
+          ],
+          "expectedSpeakerExcerptRecallShortfall": 0.313157894736842,
+          "expectedSpeakerRecallMarginShortfall": 0.413157894736842
+        },
+        "classification": "expected-speaker-excerpt-recall-and-distinctness-margin-below-frozen-threshold"
+      }
+    ],
+    "allFullClipExcerptChecksPassed": true,
+    "allExpectedSpeakerDurationChecksPassed": true,
+    "expectedSpeakerExcerptRecallFailures": 3,
+    "expectedSpeakerRecallDistinctnessFailures": 1,
+    "transcriptOrSpeakerSemanticAccuracyDetermined": false,
+    "providerCauseDetermined": false,
+    "correctionApproachDetermined": false,
+    "scopeConclusion": "The preserved records establish exactly which frozen threshold checks failed. They do not establish whether the transcript wording or speaker labels are semantically correct, why the provider produced them, or what correction should be used."
+  },
+  "costControlDiagnosis": {
+    "classification": "binary-floating-point-serialization-mismatch-after-unrounded-per-call-aggregation",
+    "inputTokens": 12817,
+    "outputTokens": 21319,
+    "inputRatePerMillionUsd": 2.5,
+    "outputRatePerMillionUsd": 10,
+    "exactCostRepresentation": {
+      "unit": "one-ten-millionth-us-dollar",
+      "integerUnits": 2452325,
+      "exactDecimalUsd": 0.2452325
+    },
+    "executionRecordUsd": 0.2452325,
+    "costRecordSerializedAggregateUsd": 0.24523250000000002,
+    "binaryFloatingPointDifferenceUsd": 2.7755575615628914e-17,
+    "sevenDecimalPlacesEqual": true,
+    "strictEqualityEqual": false,
+    "testMismatchEstablished": true,
+    "mathematicalCostChanged": false,
+    "approvedCapUsd": 1,
+    "approvedCapExceeded": false,
+    "capDispositionChanged": false,
+    "actualInvoiceChargeAvailable": false,
+    "repairOrNormalizationPerformed": false,
+    "scopeConclusion": "The cost analyzer accepted the rounded aggregate against the execution total, then stored the unrounded binary floating-point aggregate. The cohort test compares that stored value to the execution total with strict equality. The mismatch is representational and does not change the exact usage-derived estimate or the approved-cap result."
+  },
+  "preservedStopDisposition": {
+    "audioVerificationGatePassed": false,
+    "unresolvedResultsPreserved": 3,
+    "transcriptFilesPreservedByteIdentically": true,
+    "thresholdsPreserved": true,
+    "costRecordPreserved": true,
+    "costTestFailurePreserved": true,
+    "repairPerformed": false,
+    "validationResumed": false,
+    "adjudicationStarted": false,
+    "downstreamWorkflowBlocked": true
+  },
+  "executionBoundary": {
+    "directIncrementalCostUsdMaximum": 0,
+    "directIncrementalCostUsdActual": 0,
+    "audioAccesses": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "transcriptMutations": 0,
+    "thresholdChanges": 0,
+    "repairs": 0,
+    "adjudications": 0,
+    "scoresDerived": 0,
+    "downstreamStagesBegun": 0
+  },
+  "authorization": {
+    "audioVerificationCorrectionPreparation": false,
+    "audioVerificationCorrectionExecution": false,
+    "costControlCorrectionPreparation": false,
+    "costControlCorrectionExecution": false,
+    "transcriptMutation": false,
+    "thresholdMutation": false,
+    "audioAccess": false,
+    "transcriptionOrModelExecution": false,
+    "paidServiceUse": false,
+    "cohortValidationResumption": false,
+    "adjudicationPacketPreparation": false,
+    "adjudication": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "freezing": {
+    "evidenceHashesLocked": true,
+    "transcriptHashesLocked": true,
+    "validatorHashesLocked": true,
+    "exactThreeUnresolvedMovesLocked": true,
+    "costMismatchLocked": true,
+    "diagnosisToolPath": "scripts/diagnose-assessment-production-post-canary-batch-03-audio-verification-failure.mjs",
+    "diagnosisToolSha256": "1164fea306596723a5f58922577bac35fdc314a89d9429132135a552eb3bfc18"
+  },
+  "nextAuthorizedAction": "user-approval-required-before-any-batch-03-audio-verification-or-cost-control-correction-preparation-or-cohort-validation-resumption"
+}

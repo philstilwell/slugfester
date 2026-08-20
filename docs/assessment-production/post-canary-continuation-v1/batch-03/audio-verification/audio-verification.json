@@ -1,0 +1,755 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-audio-verification-audit",
+  "protocolId": "assessment-production-post-canary-batch-03-decomposed-consensus",
+  "status": "post-canary-batch-03-audio-verification-unresolved",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debates": [
+    {
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "moves": [
+        {
+          "debateNumber": "124",
+          "debateId": "harris-peterson-god-atheism-bible-2018",
+          "moveId": "con-heuristics-fail-under-change",
+          "expectedSpeaker": "Sam Harris",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "medium",
+            "passBAttributionConfidence": "medium",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": true
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Sam Harris",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/clips/con-heuristics-fail-under-change.mp3",
+            "sha256": "9e7a13363a72a46d79f9ba7d7be572bab3ecfa1bde6e71ee6e214280bd4c04ee",
+            "durationSeconds": 87.01
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/con-heuristics-fail-under-change.transcript.json",
+            "sha256": "3baf9294c825764051069481143b6d96820c12dd89eac651142e6ab811f97f67",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Sam Harris",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Jordan Peterson",
+            "highestOtherSpeakerExcerptRecall": 0.2125,
+            "expectedSpeakerRecallMargin": 0.7875,
+            "expectedSpeakerDurationSeconds": 75.2,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Sam Harris",
+                "segmentCount": 17,
+                "durationSeconds": 75.2,
+                "wordCount": 246,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Jordan Peterson",
+                "segmentCount": 9,
+                "durationSeconds": 9,
+                "wordCount": 52,
+                "excerptRecall": 0.2125
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "124",
+          "debateId": "harris-peterson-god-atheism-bible-2018",
+          "moveId": "pro-rational-instruction-behavioral-limit",
+          "expectedSpeaker": "Jordan Peterson",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "medium",
+            "passBAttributionConfidence": "medium",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": true
+          },
+          "executionStatus": "completed",
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/clips/pro-rational-instruction-behavioral-limit.mp3",
+            "sha256": "0dc15ec235e92a479c5b7e9ff8165007b7713fef720538ea35b0f6c13b6102d4",
+            "durationSeconds": 40.62
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/pro-rational-instruction-behavioral-limit.transcript.json",
+            "sha256": "2534981c9101fac0f5a8695928bc8167953a037eec173467c0226de8a4a3db3d",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Jordan Peterson",
+            "fullClipExcerptRecall": 0.9142857142857143,
+            "expectedSpeakerExcerptRecall": 0.6571428571428571,
+            "highestOtherSpeaker": "Sam Harris",
+            "highestOtherSpeakerExcerptRecall": 0.38571428571428573,
+            "expectedSpeakerRecallMargin": 0.2714285714285714,
+            "expectedSpeakerDurationSeconds": 26.35,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Jordan Peterson",
+                "segmentCount": 21,
+                "durationSeconds": 26.35,
+                "wordCount": 105,
+                "excerptRecall": 0.6571428571428571
+              },
+              {
+                "speaker": "Sam Harris",
+                "segmentCount": 19,
+                "durationSeconds": 13.05,
+                "wordCount": 58,
+                "excerptRecall": 0.38571428571428573
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "14",
+      "debateId": "jones-carrier-god-existence-2025",
+      "moves": [
+        {
+          "debateNumber": "14",
+          "debateId": "jones-carrier-god-existence-2025",
+          "moveId": "pro-unconstrained-bubble-causal-gap",
+          "expectedSpeaker": "Michael Jones",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "medium",
+            "passBAttributionConfidence": "medium",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": true
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Michael Jones",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/clips/pro-unconstrained-bubble-causal-gap.mp3",
+            "sha256": "a44a4129850d3b276e93d0a0a8d51164ad0206f551219a8cb251249980c73f71",
+            "durationSeconds": 35.8
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/transcripts/pro-unconstrained-bubble-causal-gap.transcript.json",
+            "sha256": "c8478207ff6ad484349faa25c24f392bb8b945dcd47f8bb07b12dda259e00425",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Michael Jones",
+            "fullClipExcerptRecall": 0.9841269841269841,
+            "expectedSpeakerExcerptRecall": 0.9841269841269841,
+            "highestOtherSpeaker": "Richard Carrier",
+            "highestOtherSpeakerExcerptRecall": 0.12698412698412698,
+            "expectedSpeakerRecallMargin": 0.8571428571428571,
+            "expectedSpeakerDurationSeconds": 30.05,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Michael Jones",
+                "segmentCount": 7,
+                "durationSeconds": 30.05,
+                "wordCount": 106,
+                "excerptRecall": 0.9841269841269841
+              },
+              {
+                "speaker": "Richard Carrier",
+                "segmentCount": 5,
+                "durationSeconds": 5.35,
+                "wordCount": 24,
+                "excerptRecall": 0.12698412698412698
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 0.05,
+                "wordCount": 1,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "moves": [
+        {
+          "debateNumber": "58",
+          "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+          "moveId": "pro-logic-presupposition-suffices",
+          "expectedSpeaker": "Matt Dillahunty",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/clips/pro-logic-presupposition-suffices.mp3",
+            "sha256": "b6757cc3c43de89d782a1248b14031a5ecc3c0187b2b4528450e3c287c2a01ee",
+            "durationSeconds": 33.32
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/transcripts/pro-logic-presupposition-suffices.transcript.json",
+            "sha256": "6aca9be1794e534daf2dc5116ef8441104f2160d9b821b9f22b6c542a40112a5",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Matt Dillahunty",
+            "fullClipExcerptRecall": 0.9436619718309859,
+            "expectedSpeakerExcerptRecall": 0.7746478873239436,
+            "highestOtherSpeaker": "Matt Slick",
+            "highestOtherSpeakerExcerptRecall": 0.5070422535211268,
+            "expectedSpeakerRecallMargin": 0.2676056338028169,
+            "expectedSpeakerDurationSeconds": 20.7,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 13,
+                "durationSeconds": 20.7,
+                "wordCount": 71,
+                "excerptRecall": 0.7746478873239436
+              },
+              {
+                "speaker": "Matt Slick",
+                "segmentCount": 13,
+                "durationSeconds": 9.7,
+                "wordCount": 53,
+                "excerptRecall": 0.5070422535211268
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "150",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "moves": [
+        {
+          "debateNumber": "150",
+          "debateId": "licona-dillahunty-resurrection-evidence-2017",
+          "moveId": "con-event-acceptance-not-causal-verdict",
+          "expectedSpeaker": "Matt Dillahunty",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "medium",
+            "passBAttributionConfidence": "medium",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": true
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Matt Dillahunty",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/clips/con-event-acceptance-not-causal-verdict.mp3",
+            "sha256": "0ae0df5f89081e060d07ca5ff67c23c930cc4fce102a69177a1fe9ca25cd0b96",
+            "durationSeconds": 103.84
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/transcripts/con-event-acceptance-not-causal-verdict.transcript.json",
+            "sha256": "5614753b1f06a9b0e1ed7262db5b5fb58c6751cd7e5d46b6056e4acf42d55440",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Matt Dillahunty",
+            "fullClipExcerptRecall": 0.971830985915493,
+            "expectedSpeakerExcerptRecall": 0.8169014084507042,
+            "highestOtherSpeaker": "Mike Licona",
+            "highestOtherSpeakerExcerptRecall": 0.6338028169014085,
+            "expectedSpeakerRecallMargin": 0.18309859154929575,
+            "expectedSpeakerDurationSeconds": 68.25,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 30,
+                "durationSeconds": 68.25,
+                "wordCount": 253,
+                "excerptRecall": 0.8169014084507042
+              },
+              {
+                "speaker": "Mike Licona",
+                "segmentCount": 23,
+                "durationSeconds": 30.15,
+                "wordCount": 133,
+                "excerptRecall": 0.6338028169014085
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "moves": [
+        {
+          "debateNumber": "157",
+          "debateId": "dillahunty-howitt-christianity-true-2023",
+          "moveId": "con-reason-incarnation-access-gap",
+          "expectedSpeaker": "Matt Dillahunty",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/con-reason-incarnation-access-gap.mp3",
+            "sha256": "d28f8fdf59192e480d4ff632133af2938524373e971aedbe2b3f07e9a16dcdb9",
+            "durationSeconds": 122.179
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/con-reason-incarnation-access-gap.transcript.json",
+            "sha256": "abcd04a42e445e4851c828661010a4deaa540a928e83e15502a062ae7eaef85f",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Matt Dillahunty",
+            "fullClipExcerptRecall": 0.9473684210526315,
+            "expectedSpeakerExcerptRecall": 0.4868421052631579,
+            "highestOtherSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+            "highestOtherSpeakerExcerptRecall": 0.75,
+            "expectedSpeakerRecallMargin": -0.2631578947368421,
+            "expectedSpeakerDurationSeconds": 35.75,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": false,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+                "segmentCount": 16,
+                "durationSeconds": 74.2,
+                "wordCount": 253,
+                "excerptRecall": 0.75
+              },
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 13,
+                "durationSeconds": 35.75,
+                "wordCount": 81,
+                "excerptRecall": 0.4868421052631579
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "157",
+          "debateId": "dillahunty-howitt-christianity-true-2023",
+          "moveId": "pro-divine-doubt-self-knowledge",
+          "expectedSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/pro-divine-doubt-self-knowledge.mp3",
+            "sha256": "0c87362514d97c51e99a2ba29117cda135c8108a942878539b26df4b893dfd3b",
+            "durationSeconds": 90.641
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/pro-divine-doubt-self-knowledge.transcript.json",
+            "sha256": "57d3ad38234e47cae53ae5f3f7214320ea0864f3c96265e159bc6275bdd1640c",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+            "fullClipExcerptRecall": 0.9876543209876543,
+            "expectedSpeakerExcerptRecall": 0.9876543209876543,
+            "highestOtherSpeaker": "Matt Dillahunty",
+            "highestOtherSpeakerExcerptRecall": 0.012345679012345678,
+            "expectedSpeakerRecallMargin": 0.9753086419753085,
+            "expectedSpeakerDurationSeconds": 80.1,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+                "segmentCount": 26,
+                "durationSeconds": 80.1,
+                "wordCount": 229,
+                "excerptRecall": 0.9876543209876543
+              },
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 1,
+                "durationSeconds": 1.9,
+                "wordCount": 4,
+                "excerptRecall": 0.012345679012345678
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "157",
+          "debateId": "dillahunty-howitt-christianity-true-2023",
+          "moveId": "pro-infer-divine-self-knowledge",
+          "expectedSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "high",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/pro-infer-divine-self-knowledge.mp3",
+            "sha256": "8a2ed3441548a5f725adb9b2031547b70d2c44acb53857e1093cab398a7977ff",
+            "durationSeconds": 152.78
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/pro-infer-divine-self-knowledge.transcript.json",
+            "sha256": "0f5f1f1540d258505fb76f41f52b3825e59a18d60bd7f35a190892532063d336",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Matt Dillahunty",
+            "highestOtherSpeakerExcerptRecall": 0.21621621621621623,
+            "expectedSpeakerRecallMargin": 0.7837837837837838,
+            "expectedSpeakerDurationSeconds": 132.85,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+                "segmentCount": 36,
+                "durationSeconds": 132.85,
+                "wordCount": 430,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 14,
+                "durationSeconds": 9.05,
+                "wordCount": 36,
+                "excerptRecall": 0.21621621621621623
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "124",
+        "speaker": "Jordan Peterson",
+        "selectedMoveId": "pro-integrated-canonical-development",
+        "selectedMoveSourceSpan": {
+          "startEvent": 877,
+          "endEvent": 986
+        },
+        "selectedMoveDurationSeconds": 270.08,
+        "startSeconds": 2335.67,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/jordan-peterson.mp3",
+        "sha256": "5f1567d5d3dee0db6fe867b629aef424847b042f905f5183d1738c8b487a391d"
+      },
+      {
+        "debateNumber": "124",
+        "speaker": "Sam Harris",
+        "selectedMoveId": "con-universal-misery-ground",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1568,
+          "endEvent": 1681
+        },
+        "selectedMoveDurationSeconds": 285.07,
+        "startSeconds": 4003.285,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/sam-harris.mp3",
+        "sha256": "89f5da739c7e29139c01645edeb9e72bf857c10601b70c0e5cc21d1d75141509"
+      },
+      {
+        "debateNumber": "14",
+        "speaker": "Michael Jones",
+        "selectedMoveId": "pro-informational-emergent-cosmos",
+        "selectedMoveSourceSpan": {
+          "startEvent": 164,
+          "endEvent": 269
+        },
+        "selectedMoveDurationSeconds": 210.96,
+        "startSeconds": 471.64,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/references/michael-jones.mp3",
+        "sha256": "581e3d676d85af590c0e9df02013f56bcd9c26deb0ffa721d176a3b95f39cf0e"
+      },
+      {
+        "debateNumber": "14",
+        "speaker": "Richard Carrier",
+        "selectedMoveId": "con-naturalistic-total-evidence-synthesis",
+        "selectedMoveSourceSpan": {
+          "startEvent": 2825,
+          "endEvent": 2957
+        },
+        "selectedMoveDurationSeconds": 268,
+        "startSeconds": 5593.04,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/references/richard-carrier.mp3",
+        "sha256": "1f8cd9bace1d7b25ebcd1c8c1614a4046217f8eb03251f5657d5ee40e18fd903"
+      },
+      {
+        "debateNumber": "58",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "pro-scriptural-conflict-resolution-failure",
+        "selectedMoveSourceSpan": {
+          "startEvent": 731,
+          "endEvent": 767
+        },
+        "selectedMoveDurationSeconds": 192.72,
+        "startSeconds": 2093.86,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/references/matt-dillahunty.mp3",
+        "sha256": "8e6ca02fbac03f68d1e7542a19dfb078f375dbc990801617bc0f1acac89dc598"
+      },
+      {
+        "debateNumber": "58",
+        "speaker": "Matt Slick",
+        "selectedMoveId": "con-science-presuppositions-foundation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1039,
+          "endEvent": 1143
+        },
+        "selectedMoveDurationSeconds": 331.88,
+        "startSeconds": 3370.04,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/references/matt-slick.mp3",
+        "sha256": "351bed91c51bd6d6d3de5f38f4a36b5d9a0d84c0153a0abd5079e947cbae011f"
+      },
+      {
+        "debateNumber": "150",
+        "speaker": "Mike Licona",
+        "selectedMoveId": "pro-background-cumulative-paranormal-evidence",
+        "selectedMoveSourceSpan": {
+          "startEvent": 61,
+          "endEvent": 178
+        },
+        "selectedMoveDurationSeconds": 683.36,
+        "startSeconds": 737.64,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/references/mike-licona.mp3",
+        "sha256": "3a6586cfd184275ce73321ad5a3c8e8cf4519aa17f41e3156deb2471445d6dde"
+      },
+      {
+        "debateNumber": "150",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "con-anomalies-do-not-establish-supernatural-realm",
+        "selectedMoveSourceSpan": {
+          "startEvent": 361,
+          "endEvent": 429
+        },
+        "selectedMoveDurationSeconds": 389.68,
+        "startSeconds": 2358.2,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/references/matt-dillahunty.mp3",
+        "sha256": "c0381360602a5e293c100f814fc9f1d90d1e44bd94300cac4b8c3bef169310d3"
+      },
+      {
+        "debateNumber": "157",
+        "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+        "selectedMoveId": "pro-contingency-necessary-cause",
+        "selectedMoveSourceSpan": {
+          "startEvent": 72,
+          "endEvent": 181
+        },
+        "selectedMoveDurationSeconds": 257.041,
+        "startSeconds": 288.26,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/lewis-howitt-perspectivephilosophy-.mp3",
+        "sha256": "45c52a10b279a12a73adac55abfd765b695cb498857d475a2fc4a1f9cc8c9493"
+      },
+      {
+        "debateNumber": "157",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "con-hiddenness-disagreement",
+        "selectedMoveSourceSpan": {
+          "startEvent": 372,
+          "endEvent": 484
+        },
+        "selectedMoveDurationSeconds": 241.5,
+        "startSeconds": 955.97,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/matt-dillahunty.mp3",
+        "sha256": "074f6b35a3003697e2c943cd88d77e501859c496418e47900d4a97457a4f9794"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 8,
+    "verified": 5,
+    "unresolved": 3,
+    "paidDiarizationCallsAttempted": 8,
+    "paidDiarizationCallsCompleted": 8,
+    "callsSkipped": 0,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 11.1032,
+    "durationOnlyPlanningExposureUsd": 0.0666,
+    "usageDerivedEstimatedCostUsd": 0.2452325,
+    "actualBilledCostUsdAvailable": false,
+    "maximumAuthorizedCostUsd": 1,
+    "directIncrementalCostCapControlPassed": true,
+    "meteredJudgmentModelApiCostUsd": 0,
+    "judgmentModelContexts": 0,
+    "adjudicationModelContexts": 0,
+    "scoresDerived": 0,
+    "publicationReconstructions": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": false,
+    "audioFailureDiagnosis": false,
+    "paidTranscription": false,
+    "audioVerificationExecution": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}

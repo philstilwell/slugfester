@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-audio-verification-analysis",
+  "protocolId": "assessment-production-post-canary-batch-03-decomposed-consensus",
+  "status": "post-canary-batch-03-audio-verification-unresolved",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "gate": {
+    "passed": false,
+    "executionComplete": true,
+    "requiredMoves": 8,
+    "verified": 5,
+    "unresolved": 3,
+    "deterministicThresholdsApplied": true,
+    "measuredReferenceDurationContractApplied": true,
+    "knownSpeakerNamesApplied": true,
+    "locallySavedTranscripts": true
+  },
+  "costs": {
+    "paidDiarizationCallsAttempted": 8,
+    "paidDiarizationCallsCompleted": 8,
+    "callsSkipped": 0,
+    "retries": 0,
+    "durationOnlyPlanningExposureUsd": 0.0666,
+    "usageDerivedEstimatedCostUsd": 0.2452325,
+    "actualBilledCostUsdAvailable": false,
+    "maximumAuthorizedCostUsd": 1,
+    "directIncrementalCostCapControlPassed": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "meteredJudgmentModelApiCostUsd": 0
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "unchanged": true
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/standing-authorization.json",
+    "sha256": "7f46c90c1243062e6472f586a1e93db35b43f0b386acc19afb37b23f2adf237b",
+    "status": "frozen-active-batch-03-complete-remaining-workflow-standing-authorization",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "automaticContinuationWhileGatesPass": true
+  },
+  "sourceCompatibility": {
+    "status": "exact-source-zero-lexical-token-row-preserved-with-zero-count",
+    "reason": "0 nonempty canonical caption rows contain zero repository lexical tokens; every occurrence is preserved byte-for-byte with count zero.",
+    "policy": "Preserve the exact canonical row and text, record lexicalTokenCount as 0, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": false,
+    "audioFailureDiagnosis": false,
+    "paidTranscription": false,
+    "audioVerificationExecution": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "standing-authorization-stop-new-approval-required-before-batch-03-audio-verification-failure-diagnosis"
+}
