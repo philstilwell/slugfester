@@ -1,0 +1,931 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-audio-verification-execution-manifest",
+  "protocolId": "assessment-production-post-canary-batch-03-decomposed-consensus",
+  "status": "frozen-eight-post-canary-batch-03-paid-known-speaker-diarizations-authorized-under-standing-authorization",
+  "preparedAt": "2026-08-20T21:05:06.069Z",
+  "approvedAt": null,
+  "checkpointCommit": "64a34e73fcc0b57e99d7eaa8780dedb358ac2dcf",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "AIOnly": true,
+  "userAuthorization": {
+    "instruction": "I authorize creation and use of a Batch 3 standing-authorization record covering the complete remaining Batch 3 reassessment and publication workflow for exactly the ten frozen selected debates.\n\nAutomatically prepare, validate, freeze, activate, execute, analyze, commit, and push each successful checkpoint for:\n\n1. Score-blind source-packet preparation and discovery.\n2. Candidate-census planning and candidate-sharded side selection.\n3. Two isolated independent judgments per debate.\n4. Deterministic disagreement extraction.\n5. Local audio-source preparation, public-source download attempts, and FFmpeg clip creation when required, without playing or semantically evaluating audio.\n6. Audio-verification manifest preparation and cost estimation.\n7. Required audio verification using gpt-4o-transcribe-diarize.\n8. Dispute-only adjudication and bounded deterministic corrections.\n9. Final-ledger assembly and the single deterministic score pass.\n10. Score-locked publication reconstruction and bounded field-level repairs.\n11. Deterministic compilation, finalization, rendering verification, compatibility staging, production publication, generated-SEO correction, and complete repository validation.\n\nPreserve these controls throughout:\n\n- Use 5.6 Sol with low reasoning effort through my ChatGPT subscription for every judgment, adjudication, and publication context.\n- Keep model passes isolated, score-blind where required, and free of legacy scores, winners, assessments, and other prohibited material.\n- Hash-lock every model context, schema, input, candidate, ledger, validator, and production mutation before execution.\n- Use the frozen stage-specific scheduler and concurrency.\n- Allow exactly one attempt per context or deterministic pass, with no retries, reruns, timeout extensions, recursive repairs, automatic repairs, rollback, or hand-adjusted scores.\n- Permit integer-rounded ties under the active v2.2 score-stability policy.\n- Repairs may expose no more than two explicitly diagnosed writable fields per packet and must preserve every accepted field, source, identity, move, score, and protected hash.\n- Models must never derive numerical scores. Use exactly one repository score pass.\n- Production publication may replace only the ten Batch 3 debate records and their ten validated ledgers. Keep references and all unrelated production records byte-identical.\n- Generated derivatives may be written only from a frozen inventory after an isolated generator comparison.\n- Commit and push every successful frozen checkpoint to main.\n- Direct incremental cost for subscription-backed models and local work must remain $0.\n\nFor paid audio verification, freeze and report the usage-derived estimate before the first call. I give conditional advance approval only if the frozen estimate is no more than $1.00 total. Execute sequentially with one attempt per clip, no retries, and stop remaining calls after any request failure or usage-derived cap exceedance.\n\nContinue automatically while every frozen gate passes. Stop and obtain new approval only before:\n\n- a projected or actual paid-service cost above $1.00;\n- an action involving a debate outside Batch 3;\n- a source, score, identity, reference, validator, or accepted-field change not already frozen;\n- a failed model output or failed bounded repair;\n- an unexpected validation category;\n- a proposed retry, rerun, recursive correction, rollback, or manual score adjustment;\n- production mutation that differs from its frozen manifest;\n- Batch 4 selection; or\n- any action outside this standing authorization.\n\nA routine successful checkpoint, expected validation result, bounded diagnosed repair, commit, or push does not require additional approval.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/standing-authorization.json",
+    "standingAuthorizationSha256": "7f46c90c1243062e6472f586a1e93db35b43f0b386acc19afb37b23f2adf237b",
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "verificationCallsAuthorizedForPreparation": 8,
+    "speakerReferencesAuthorizedForPreparation": 10,
+    "conditionalAdvanceApprovalRecorded": true,
+    "audioVerificationExecutionAuthorizedOnlyAfterFrozenEstimateAtOrBelowOneDollar": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "adjudicationAuthorizedThisStage": false,
+    "scoreDerivationAuthorizedThisStage": false,
+    "productionMutationAuthorizedThisStage": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "scope": {
+    "debates": [
+      "124",
+      "14",
+      "58",
+      "150",
+      "157"
+    ],
+    "frozenTargetClips": 8,
+    "verificationCalls": 8,
+    "additionalVerificationTargets": 0,
+    "sameDebateSpeakerSupportReferences": 10,
+    "scoreFieldsAvailable": false,
+    "legacyAssessmentFieldsAvailable": false,
+    "exactFrozenClipPopulationPreserved": true,
+    "sourceCompatibility": {
+      "status": "exact-source-zero-lexical-token-row-preserved-with-zero-count",
+      "reason": "0 nonempty canonical caption rows contain zero repository lexical tokens; every occurrence is preserved byte-for-byte with count zero.",
+      "policy": "Preserve the exact canonical row and text, record lexicalTokenCount as 0, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+      "sourceRowsInjected": 0,
+      "sourceRowsOmitted": 0,
+      "sourceRowsRewritten": 0,
+      "minimumCandidateLexicalTokensChanged": false,
+      "occurrences": []
+    }
+  },
+  "model": "gpt-4o-transcribe-diarize",
+  "calls": [
+    {
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "moveId": "con-heuristics-fail-under-change",
+      "expectedSpeaker": "Sam Harris",
+      "proposition": "Religious heuristics are unreliable because they can produce adaptive behavior for mistaken reasons and cannot adjust reliably when circumstances change.",
+      "verificationExcerpt": "heuristics in general it doesn't make sense for the right reason and that's why it's not a reliable guide given other changes in the world but with everything changing you want to be making sense for the right reason you don't want it like it's a useful fictions have to be retired at a certain point useful truths stay true I mean if you because they're based on your engagement with reality and so to take your point about pornography",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/clips/con-heuristics-fail-under-change.mp3",
+      "clipSha256": "9e7a13363a72a46d79f9ba7d7be572bab3ecfa1bde6e71ee6e214280bd4c04ee",
+      "durationSeconds": 87.01,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/con-heuristics-fail-under-change.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Jordan Peterson",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/jordan-peterson.mp3",
+          "sha256": "5f1567d5d3dee0db6fe867b629aef424847b042f905f5183d1738c8b487a391d",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Sam Harris",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/sam-harris.mp3",
+          "sha256": "89f5da739c7e29139c01645edeb9e72bf857c10601b70c0e5cc21d1d75141509",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "moveId": "pro-rational-instruction-behavioral-limit",
+      "expectedSpeaker": "Jordan Peterson",
+      "proposition": "Rational educational interventions often exert little influence on fundamental behavior, so explicit reasoned explanation alone may be behaviorally insufficient as practical moral guidance.",
+      "verificationExcerpt": "about the effects on human relationships and your own mind and your own intention and the way you view other pieces have now barely works for sex ed it barely works for condom education well what was already works like those sorts of educational interventions to stop that kind of fundamental behavior have very little effect well people aren't nearly as amenable to behavioral changes as a consequence of rational",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/clips/pro-rational-instruction-behavioral-limit.mp3",
+      "clipSha256": "0dc15ec235e92a479c5b7e9ff8165007b7713fef720538ea35b0f6c13b6102d4",
+      "durationSeconds": 40.62,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/pro-rational-instruction-behavioral-limit.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Jordan Peterson",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/jordan-peterson.mp3",
+          "sha256": "5f1567d5d3dee0db6fe867b629aef424847b042f905f5183d1738c8b487a391d",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Sam Harris",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/sam-harris.mp3",
+          "sha256": "89f5da739c7e29139c01645edeb9e72bf857c10601b70c0e5cc21d1d75141509",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "14",
+      "debateId": "jones-carrier-god-existence-2025",
+      "moveId": "pro-unconstrained-bubble-causal-gap",
+      "expectedSpeaker": "Michael Jones",
+      "proposition": "The absence of constraints is merely a negative description and supplies no positive causal facts or principles explaining how a primitive bubble generates a universe.",
+      "verificationExcerpt": "laws, that's a negative statement. Negative statements are not facts. They're just the absence of facts. We need actual facts to explain how this nothing state or this bubble is able to go from that to a universe. We need actual descriptions. We need actual causal principles. We need actual explanations here. Just saying, well, nothing constrains it, therefore it can be anything",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/clips/pro-unconstrained-bubble-causal-gap.mp3",
+      "clipSha256": "a44a4129850d3b276e93d0a0a8d51164ad0206f551219a8cb251249980c73f71",
+      "durationSeconds": 35.8,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/transcripts/pro-unconstrained-bubble-causal-gap.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Michael Jones",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/references/michael-jones.mp3",
+          "sha256": "581e3d676d85af590c0e9df02013f56bcd9c26deb0ffa721d176a3b95f39cf0e",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Richard Carrier",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/references/richard-carrier.mp3",
+          "sha256": "1f8cd9bace1d7b25ebcd1c8c1614a4046217f8eb03251f5657d5ee40e18fd903",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "moveId": "pro-logic-presupposition-suffices",
+      "expectedSpeaker": "Matt Dillahunty",
+      "proposition": "Secular humanism may presuppose logic for practical inquiry, and the absence of an additional divine account does not establish that its reasoning is false or defective.",
+      "verificationExcerpt": "brain didn't make me say it. I am my brain. My brain said it. Ah, so. Here's the thing. Secular humanism, I have acknowledged multiple times that I presuppose the foundations of logic. Yes, I know you do. That's it. You can't then say, ah, yours is flawed because you can't give an account for this. I can't say that? Yes, I can. Watch. You can. Your position's flawed because you",
+      "trigger": {
+        "passAAssessmentConfidence": "high",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/clips/pro-logic-presupposition-suffices.mp3",
+      "clipSha256": "b6757cc3c43de89d782a1248b14031a5ecc3c0187b2b4528450e3c287c2a01ee",
+      "durationSeconds": 33.32,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/transcripts/pro-logic-presupposition-suffices.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/references/matt-dillahunty.mp3",
+          "sha256": "8e6ca02fbac03f68d1e7542a19dfb078f375dbc990801617bc0f1acac89dc598",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Matt Slick",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/references/matt-slick.mp3",
+          "sha256": "351bed91c51bd6d6d3de5f38f4a36b5d9a0d84c0153a0abd5079e947cbae011f",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "150",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "moveId": "con-event-acceptance-not-causal-verdict",
+      "expectedSpeaker": "Matt Dillahunty",
+      "proposition": "Even observing an extraordinary return from death would justify accepting that the event occurred without justifying an unsupported supernatural causal explanation.",
+      "verificationExcerpt": "extraordinary and you still wouldn't believe in the Supernatural you said even if you saw that no I what I would believe is that this happened I will not accept the explanation because there's been no justification for a causal explanation the Supernatural is just a bucket that you throw in I don't know how this happened well it's more than that it's to say this doesn't happen my natural cause",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/clips/con-event-acceptance-not-causal-verdict.mp3",
+      "clipSha256": "0ae0df5f89081e060d07ca5ff67c23c930cc4fce102a69177a1fe9ca25cd0b96",
+      "durationSeconds": 103.84,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/transcripts/con-event-acceptance-not-causal-verdict.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Mike Licona",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/references/mike-licona.mp3",
+          "sha256": "3a6586cfd184275ce73321ad5a3c8e8cf4519aa17f41e3156deb2471445d6dde",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/references/matt-dillahunty.mp3",
+          "sha256": "c0381360602a5e293c100f814fc9f1d90d1e44bd94300cac4b8c3bef169310d3",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "moveId": "con-reason-incarnation-access-gap",
+      "expectedSpeaker": "Matt Dillahunty",
+      "proposition": "Natural reasoning cannot disclose the historical and incarnational claim that Jesus was divine and human to beings with no knowledge of humanity or earthly events.",
+      "verificationExcerpt": "Jesus uh is God because God is his father and is human because his mother was human even though they have no idea what humans they wouldn't have to say human and uh specifically they would have to understand that he could have particular concrete existence and I would say that would be the experience of God for example in all of us I think I think Isaac basheva Singer said uh there is a Divine",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/con-reason-incarnation-access-gap.mp3",
+      "clipSha256": "d28f8fdf59192e480d4ff632133af2938524373e971aedbe2b3f07e9a16dcdb9",
+      "durationSeconds": 122.179,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/con-reason-incarnation-access-gap.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/lewis-howitt-perspectivephilosophy-.mp3",
+          "sha256": "45c52a10b279a12a73adac55abfd765b695cb498857d475a2fc4a1f9cc8c9493",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/matt-dillahunty.mp3",
+          "sha256": "074f6b35a3003697e2c943cd88d77e501859c496418e47900d4a97457a4f9794",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "moveId": "pro-divine-doubt-self-knowledge",
+      "expectedSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+      "proposition": "Divine doubt need not obtain as an imperfection; it can be a moment of falsifiable self-knowledge that is overcome and unified within the Trinitarian process.",
+      "verificationExcerpt": "doubt was only a moment within the existence of God so when we look at knowledge and we're not just simply seeing truth not something's identity with itself which necessarily something is perfect it must be perfect absolutely 100 agree with you there if God is perfect he must know himself to be perfect what I'm arguing is that the that the the the way in which you know something is to have the capacity to accept that is what falsifiable",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/pro-divine-doubt-self-knowledge.mp3",
+      "clipSha256": "0c87362514d97c51e99a2ba29117cda135c8108a942878539b26df4b893dfd3b",
+      "durationSeconds": 90.641,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/pro-divine-doubt-self-knowledge.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/lewis-howitt-perspectivephilosophy-.mp3",
+          "sha256": "45c52a10b279a12a73adac55abfd765b695cb498857d475a2fc4a1f9cc8c9493",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/matt-dillahunty.mp3",
+          "sha256": "074f6b35a3003697e2c943cd88d77e501859c496418e47900d4a97457a4f9794",
+          "actualDurationSeconds": 8
+        }
+      ]
+    },
+    {
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "moveId": "pro-infer-divine-self-knowledge",
+      "expectedSpeaker": "Lewis Howitt (PerspectivePhilosophy)",
+      "proposition": "Humans need not comprehend God's complete self-knowledge to infer necessary aspects of how God knows himself, and falsifiable self-relation can support rather than undermine Christ's divinity.",
+      "verificationExcerpt": "the absolute knowledge of a mind the most perfect being that would necessarily have to exist well that is incomprehensible to a human so I don't but yet he still believes in God and actually argues if you can rationally believe in God so do you see the the reason that he does this is because it's not that you need to know what God knows about himself you simply need to know how",
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "high",
+        "passAAttributionConfidence": "high",
+        "passBAttributionConfidence": "high",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": false
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/pro-infer-divine-self-knowledge.mp3",
+      "clipSha256": "8a2ed3441548a5f725adb9b2031547b70d2c44acb53857e1093cab398a7977ff",
+      "durationSeconds": 152.78,
+      "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/pro-infer-divine-self-knowledge.transcript.json",
+      "model": "gpt-4o-transcribe-diarize",
+      "responseFormat": "diarized_json",
+      "chunkingStrategy": "auto",
+      "language": "en",
+      "knownSpeakers": [
+        {
+          "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/lewis-howitt-perspectivephilosophy-.mp3",
+          "sha256": "45c52a10b279a12a73adac55abfd765b695cb498857d475a2fc4a1f9cc8c9493",
+          "actualDurationSeconds": 8
+        },
+        {
+          "speaker": "Matt Dillahunty",
+          "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/matt-dillahunty.mp3",
+          "sha256": "074f6b35a3003697e2c943cd88d77e501859c496418e47900d4a97457a4f9794",
+          "actualDurationSeconds": 8
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "124",
+        "speaker": "Jordan Peterson",
+        "selectedMoveId": "pro-integrated-canonical-development",
+        "selectedMoveSourceSpan": {
+          "startEvent": 877,
+          "endEvent": 986
+        },
+        "selectedMoveDurationSeconds": 270.08,
+        "startSeconds": 2335.67,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/jordan-peterson.mp3",
+        "sha256": "5f1567d5d3dee0db6fe867b629aef424847b042f905f5183d1738c8b487a391d"
+      },
+      {
+        "debateNumber": "124",
+        "speaker": "Sam Harris",
+        "selectedMoveId": "con-universal-misery-ground",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1568,
+          "endEvent": 1681
+        },
+        "selectedMoveDurationSeconds": 285.07,
+        "startSeconds": 4003.285,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/sam-harris.mp3",
+        "sha256": "89f5da739c7e29139c01645edeb9e72bf857c10601b70c0e5cc21d1d75141509"
+      },
+      {
+        "debateNumber": "14",
+        "speaker": "Michael Jones",
+        "selectedMoveId": "pro-informational-emergent-cosmos",
+        "selectedMoveSourceSpan": {
+          "startEvent": 164,
+          "endEvent": 269
+        },
+        "selectedMoveDurationSeconds": 210.96,
+        "startSeconds": 471.64,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/references/michael-jones.mp3",
+        "sha256": "581e3d676d85af590c0e9df02013f56bcd9c26deb0ffa721d176a3b95f39cf0e"
+      },
+      {
+        "debateNumber": "14",
+        "speaker": "Richard Carrier",
+        "selectedMoveId": "con-naturalistic-total-evidence-synthesis",
+        "selectedMoveSourceSpan": {
+          "startEvent": 2825,
+          "endEvent": 2957
+        },
+        "selectedMoveDurationSeconds": 268,
+        "startSeconds": 5593.04,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/references/richard-carrier.mp3",
+        "sha256": "1f8cd9bace1d7b25ebcd1c8c1614a4046217f8eb03251f5657d5ee40e18fd903"
+      },
+      {
+        "debateNumber": "58",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "pro-scriptural-conflict-resolution-failure",
+        "selectedMoveSourceSpan": {
+          "startEvent": 731,
+          "endEvent": 767
+        },
+        "selectedMoveDurationSeconds": 192.72,
+        "startSeconds": 2093.86,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/references/matt-dillahunty.mp3",
+        "sha256": "8e6ca02fbac03f68d1e7542a19dfb078f375dbc990801617bc0f1acac89dc598"
+      },
+      {
+        "debateNumber": "58",
+        "speaker": "Matt Slick",
+        "selectedMoveId": "con-science-presuppositions-foundation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1039,
+          "endEvent": 1143
+        },
+        "selectedMoveDurationSeconds": 331.88,
+        "startSeconds": 3370.04,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/references/matt-slick.mp3",
+        "sha256": "351bed91c51bd6d6d3de5f38f4a36b5d9a0d84c0153a0abd5079e947cbae011f"
+      },
+      {
+        "debateNumber": "150",
+        "speaker": "Mike Licona",
+        "selectedMoveId": "pro-background-cumulative-paranormal-evidence",
+        "selectedMoveSourceSpan": {
+          "startEvent": 61,
+          "endEvent": 178
+        },
+        "selectedMoveDurationSeconds": 683.36,
+        "startSeconds": 737.64,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/references/mike-licona.mp3",
+        "sha256": "3a6586cfd184275ce73321ad5a3c8e8cf4519aa17f41e3156deb2471445d6dde"
+      },
+      {
+        "debateNumber": "150",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "con-anomalies-do-not-establish-supernatural-realm",
+        "selectedMoveSourceSpan": {
+          "startEvent": 361,
+          "endEvent": 429
+        },
+        "selectedMoveDurationSeconds": 389.68,
+        "startSeconds": 2358.2,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/references/matt-dillahunty.mp3",
+        "sha256": "c0381360602a5e293c100f814fc9f1d90d1e44bd94300cac4b8c3bef169310d3"
+      },
+      {
+        "debateNumber": "157",
+        "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+        "selectedMoveId": "pro-contingency-necessary-cause",
+        "selectedMoveSourceSpan": {
+          "startEvent": 72,
+          "endEvent": 181
+        },
+        "selectedMoveDurationSeconds": 257.041,
+        "startSeconds": 288.26,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/lewis-howitt-perspectivephilosophy-.mp3",
+        "sha256": "45c52a10b279a12a73adac55abfd765b695cb498857d475a2fc4a1f9cc8c9493"
+      },
+      {
+        "debateNumber": "157",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "con-hiddenness-disagreement",
+        "selectedMoveSourceSpan": {
+          "startEvent": 372,
+          "endEvent": 484
+        },
+        "selectedMoveDurationSeconds": 241.5,
+        "startSeconds": 955.97,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/matt-dillahunty.mp3",
+        "sha256": "074f6b35a3003697e2c943cd88d77e501859c496418e47900d4a97457a4f9794"
+      }
+    ]
+  },
+  "costEstimate": {
+    "preparationDirectIncrementalCostUsdMaximum": 0,
+    "preparationDirectIncrementalCostUsdActual": 0,
+    "promotedPlanningPricePerMinuteUsd": 0.006,
+    "durationOnlyPlanningRateBasis": "promoted-production-canary",
+    "clipSeconds": 666.19,
+    "clipMinutes": 11.1032,
+    "durationOnlyPlanningEstimateUsd": 0.0666,
+    "primaryExpectedFutureExecutionCostUsd": 0.2435025,
+    "primaryEstimateBasis": "Batch 2 returned-token usage rates applied to Batch 3 exact clip seconds and eight-call count",
+    "projectedUsage": {
+      "audioInputTokens": 12413,
+      "textInputTokens": 912,
+      "outputTokens": 21019,
+      "totalInputTokens": 13325
+    },
+    "usageBaseline": {
+      "batch": 2,
+      "calls": 10,
+      "clipSeconds": 802.201938,
+      "audioInputTokens": 14947,
+      "textInputTokens": 1140,
+      "outputTokens": 25310,
+      "usageDerivedEstimatedCostUsd": 0.2933175,
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json"
+    },
+    "officialPricingCheckedAt": "2026-08-20",
+    "officialModelPricingUrl": "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize",
+    "officialPricePerMillionTokensUsd": {
+      "input": 2.5,
+      "output": 10
+    },
+    "actualTokenBilledCostMayVary": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "OpenAIApiBillingRequired": true,
+    "conditionalAdvanceApprovalRecorded": true,
+    "conditionalAdvanceApprovalMaximumUsd": 1,
+    "estimateWithinConditionalApproval": true,
+    "maximumAuthorizedCostUsd": 1,
+    "futureCostCapAuthorized": true,
+    "standingAuthorizationActivated": true
+  },
+  "executionPolicy": {
+    "callsMaximum": 8,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "sequentialExecution": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "continueAfterCompletedButDeterministicallyUnresolvedTranscript": true,
+    "chunkingStrategy": "auto",
+    "responseFormat": "diarized_json",
+    "knownSpeakerReferencesPerCall": 2,
+    "transcriptsSavedLocally": true
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "unchanged": true
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/standing-authorization.json",
+    "sha256": "7f46c90c1243062e6472f586a1e93db35b43f0b386acc19afb37b23f2adf237b",
+    "status": "frozen-active-batch-03-complete-remaining-workflow-standing-authorization",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "automaticContinuationWhileGatesPass": true
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "paidTranscriptionActivation": false,
+    "paidTranscriptionExecution": true,
+    "deterministicAudioAnalysis": true,
+    "retry": false,
+    "correctionCall": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false,
+    "audioVerificationExecution": true,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "preexistingTranscriptBlocks": true,
+    "missingApiKeyBlocks": true,
+    "failedTranscriptPreserved": true,
+    "requestFailureStopsRemaining": true,
+    "usageDerivedCapExceedanceStopsRemaining": true,
+    "deterministicUnresolvedBlocksAdjudication": true,
+    "retryAuthorized": false,
+    "correctionAuthorized": false,
+    "thresholdRelaxationAuthorized": false,
+    "speakerRelabelingAuthorized": false,
+    "manualAttributionOverrideAuthorized": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/execution-manifest.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/analysis.json",
+    "costControlAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/cost-control-analysis.json",
+    "transcripts": [
+      "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/con-heuristics-fail-under-change.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/pro-rational-instruction-behavioral-limit.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/transcripts/pro-unconstrained-bubble-causal-gap.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/transcripts/pro-logic-presupposition-suffices.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/transcripts/con-event-acceptance-not-causal-verdict.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/con-reason-incarnation-access-gap.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/pro-divine-doubt-self-knowledge.transcript.json",
+      "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/pro-infer-divine-self-knowledge.transcript.json"
+    ]
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/con-heuristics-fail-under-change.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/pro-rational-instruction-behavioral-limit.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/transcripts/pro-unconstrained-bubble-causal-gap.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/transcripts/pro-logic-presupposition-suffices.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/transcripts/con-event-acceptance-not-causal-verdict.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/con-reason-incarnation-access-gap.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/pro-divine-doubt-self-knowledge.transcript.json",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/transcripts/pro-infer-divine-self-knowledge.transcript.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/audio-verification.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/analysis.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/cost-control-analysis.json"
+  ],
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/disagreement-extraction/audio-source-preparation.json": "761c9a4c4986c1d20599fe415e6c5e1a509b40e2cf58bce83fd62d979a93535e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/disagreement-extraction/audio-work-item-preparation.json": "8a0e6f47af4239a0dc7dc4bc398ae03c695188742b0eb7de5e747d82f9f9a92f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/disagreement-extraction/audio-work-items.json": "c130d5b0410c73a9c4529c7d71b7f6ef99b2ae3c3902b58eb91a699a25089887",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/independent-judgments/execution-preparation-manifest.json": "f844fa3794859a2833f6f35963eda257695875534bf76611c5047569a43cb05d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/execution-preparation-manifest.json": "95811440a764b6c42262483aea32b797417bae085c575141dc474668df82a758",
+    "docs/assessment-production/post-canary-continuation-v1/batch-02/audio-verification/cost-control-analysis.json": "876346b068e8c51ee3fc074ec19726340969e8b82357c068f18d009a1fedd2b8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/standing-authorization.json": "7f46c90c1243062e6472f586a1e93db35b43f0b386acc19afb37b23f2adf237b",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/assessment-production-post-canary-batch-03-standing-authorization.mjs": "4c78e98065f8c6b1888e555ebc5c9078e61798ae91900051ddd4283cb7af75d9",
+    "scripts/prepare-assessment-production-post-canary-batch-03-audio-verification.mjs": "7f16d2bb84bd7aa7b7a8157cc4ef44b2692294e239a6dfe785d085c0ff69c772",
+    "scripts/test-assessment-production-post-canary-batch-03-audio-verification-preparation.mjs": "7908aa75f6ebdf3f037a286f864bf06532acb0fdcd0fa5209c4fe544a6fc79ed",
+    "scripts/prepare-assessment-production-post-canary-batch-03-audio-sources.mjs": "6586997d590d9b0813482968b5d142b887daed263146e11948236e903fba4e79",
+    "scripts/test-assessment-production-post-canary-batch-03-audio-sources.mjs": "225545d32f5dba4a1039b6806eace8d943a0023882a9d0c4a6a76bef7994ab97",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/audio/source.mp3": "4bb1e7e09923426ca8ddbd297a99fedcfd5f7a89095c25c006932b7e53a8da79",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/audio/source.mp3": "6092b84f09635294b99d7659f119ecb77311c2766c79403a33e8bdac0d40c779",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/audio/source.mp3": "501ea688bd244975b6067e9f6fcc30c002d7a5cf4ae0fa04c2391b4759c8a187",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/audio/source.mp3": "394477926ad0ade75db1ff9d50c49b9838a2a97d924ff66cae6f2490bcc9918d",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/audio/source.mp3": "4a241884613b6b046ec492206fb97833d87656a5092e2aebb6e204707e887591",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/clips/con-heuristics-fail-under-change.mp3": "9e7a13363a72a46d79f9ba7d7be572bab3ecfa1bde6e71ee6e214280bd4c04ee",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/clips/pro-rational-instruction-behavioral-limit.mp3": "0dc15ec235e92a479c5b7e9ff8165007b7713fef720538ea35b0f6c13b6102d4",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/clips/pro-unconstrained-bubble-causal-gap.mp3": "a44a4129850d3b276e93d0a0a8d51164ad0206f551219a8cb251249980c73f71",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/clips/pro-logic-presupposition-suffices.mp3": "b6757cc3c43de89d782a1248b14031a5ecc3c0187b2b4528450e3c287c2a01ee",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/clips/con-event-acceptance-not-causal-verdict.mp3": "0ae0df5f89081e060d07ca5ff67c23c930cc4fce102a69177a1fe9ca25cd0b96",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/con-reason-incarnation-access-gap.mp3": "d28f8fdf59192e480d4ff632133af2938524373e971aedbe2b3f07e9a16dcdb9",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/pro-divine-doubt-self-knowledge.mp3": "0c87362514d97c51e99a2ba29117cda135c8108a942878539b26df4b893dfd3b",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/clips/pro-infer-divine-self-knowledge.mp3": "8a2ed3441548a5f725adb9b2031547b70d2c44acb53857e1093cab398a7977ff",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/jordan-peterson.mp3": "5f1567d5d3dee0db6fe867b629aef424847b042f905f5183d1738c8b487a391d",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/references/sam-harris.mp3": "89f5da739c7e29139c01645edeb9e72bf857c10601b70c0e5cc21d1d75141509",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/references/michael-jones.mp3": "581e3d676d85af590c0e9df02013f56bcd9c26deb0ffa721d176a3b95f39cf0e",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-14/references/richard-carrier.mp3": "1f8cd9bace1d7b25ebcd1c8c1614a4046217f8eb03251f5657d5ee40e18fd903",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/references/matt-dillahunty.mp3": "8e6ca02fbac03f68d1e7542a19dfb078f375dbc990801617bc0f1acac89dc598",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-58/references/matt-slick.mp3": "351bed91c51bd6d6d3de5f38f4a36b5d9a0d84c0153a0abd5079e947cbae011f",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/references/mike-licona.mp3": "3a6586cfd184275ce73321ad5a3c8e8cf4519aa17f41e3156deb2471445d6dde",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-150/references/matt-dillahunty.mp3": "c0381360602a5e293c100f814fc9f1d90d1e44bd94300cac4b8c3bef169310d3",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/lewis-howitt-perspectivephilosophy-.mp3": "45c52a10b279a12a73adac55abfd765b695cb498857d475a2fc4a1f9cc8c9493",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-157/references/matt-dillahunty.mp3": "074f6b35a3003697e2c943cd88d77e501859c496418e47900d4a97457a4f9794"
+  },
+  "nextAuthorizedAction": "execute-exactly-eight-post-canary-batch-03-paid-audio-verification-calls-once-sequentially",
+  "activatedAt": "2026-08-20T21:09:50.000Z",
+  "userExecutionAuthorization": {
+    "instruction": "I authorize creation and use of a Batch 3 standing-authorization record covering the complete remaining Batch 3 reassessment and publication workflow for exactly the ten frozen selected debates.\n\nAutomatically prepare, validate, freeze, activate, execute, analyze, commit, and push each successful checkpoint for:\n\n1. Score-blind source-packet preparation and discovery.\n2. Candidate-census planning and candidate-sharded side selection.\n3. Two isolated independent judgments per debate.\n4. Deterministic disagreement extraction.\n5. Local audio-source preparation, public-source download attempts, and FFmpeg clip creation when required, without playing or semantically evaluating audio.\n6. Audio-verification manifest preparation and cost estimation.\n7. Required audio verification using gpt-4o-transcribe-diarize.\n8. Dispute-only adjudication and bounded deterministic corrections.\n9. Final-ledger assembly and the single deterministic score pass.\n10. Score-locked publication reconstruction and bounded field-level repairs.\n11. Deterministic compilation, finalization, rendering verification, compatibility staging, production publication, generated-SEO correction, and complete repository validation.\n\nPreserve these controls throughout:\n\n- Use 5.6 Sol with low reasoning effort through my ChatGPT subscription for every judgment, adjudication, and publication context.\n- Keep model passes isolated, score-blind where required, and free of legacy scores, winners, assessments, and other prohibited material.\n- Hash-lock every model context, schema, input, candidate, ledger, validator, and production mutation before execution.\n- Use the frozen stage-specific scheduler and concurrency.\n- Allow exactly one attempt per context or deterministic pass, with no retries, reruns, timeout extensions, recursive repairs, automatic repairs, rollback, or hand-adjusted scores.\n- Permit integer-rounded ties under the active v2.2 score-stability policy.\n- Repairs may expose no more than two explicitly diagnosed writable fields per packet and must preserve every accepted field, source, identity, move, score, and protected hash.\n- Models must never derive numerical scores. Use exactly one repository score pass.\n- Production publication may replace only the ten Batch 3 debate records and their ten validated ledgers. Keep references and all unrelated production records byte-identical.\n- Generated derivatives may be written only from a frozen inventory after an isolated generator comparison.\n- Commit and push every successful frozen checkpoint to main.\n- Direct incremental cost for subscription-backed models and local work must remain $0.\n\nFor paid audio verification, freeze and report the usage-derived estimate before the first call. I give conditional advance approval only if the frozen estimate is no more than $1.00 total. Execute sequentially with one attempt per clip, no retries, and stop remaining calls after any request failure or usage-derived cap exceedance.\n\nContinue automatically while every frozen gate passes. Stop and obtain new approval only before:\n\n- a projected or actual paid-service cost above $1.00;\n- an action involving a debate outside Batch 3;\n- a source, score, identity, reference, validator, or accepted-field change not already frozen;\n- a failed model output or failed bounded repair;\n- an unexpected validation category;\n- a proposed retry, rerun, recursive correction, rollback, or manual score adjustment;\n- production mutation that differs from its frozen manifest;\n- Batch 4 selection; or\n- any action outside this standing authorization.\n\nA routine successful checkpoint, expected validation result, bounded diagnosed repair, commit, or push does not require additional approval.",
+    "standingAuthorizationSha256": "7f46c90c1243062e6472f586a1e93db35b43f0b386acc19afb37b23f2adf237b",
+    "maximumDirectIncrementalCostUsd": 1,
+    "frozenUsageDerivedEstimateUsd": 0.2435025,
+    "verificationCallsAuthorized": 8,
+    "model": "gpt-4o-transcribe-diarize",
+    "provider": "OpenAI Transcription API",
+    "knownSpeakerReferencesPerCall": 2,
+    "sequentialExecution": true,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "returnedTokenUsageCostControlRequired": true,
+    "stopRemainingAfterRequestLevelFailure": true,
+    "stopRemainingAfterUsageDerivedCapExceedance": true,
+    "deterministicValidationAndCostAnalysisAuthorized": true,
+    "judgmentModelExecutionAuthorized": false,
+    "adjudicationModelExecutionAuthorized": false,
+    "scoreDerivationAuthorized": false,
+    "publicationReconstructionAuthorized": false,
+    "productionMutationAuthorized": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/audio-verification/execution-preparation-manifest.json",
+    "sha256": "bd981bf2ae697e725e827b5222a8dd9c28891972f83bdc2aa649bdcfd9e6c838"
+  },
+  "canonicalSourceGate": {
+    "productionManifest": "docs/assessment-production/manifest-v1.json",
+    "productionManifestSha256": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "debates": [
+      {
+        "debateNumber": "124",
+        "debateId": "harris-peterson-god-atheism-bible-2018",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Religious pragmatism",
+            "speakers": [
+              "Jordan Peterson"
+            ]
+          },
+          "con": {
+            "label": "Secular moral realism",
+            "speakers": [
+              "Sam Harris"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/jey_CzIOfYE/transcript.txt",
+          "transcriptSha256": "83d4309183a7ac03f8c1c36e67734745b0674b894f21ee89c191e029db2cc3cc",
+          "events": ".assessment-cache/captions/jey_CzIOfYE/events.json",
+          "eventsSha256": "92807ab2005591e720f60f0f3e719161ea92e4d18e0fce31a87c4161c86a1f24",
+          "manifest": ".assessment-cache/captions/jey_CzIOfYE/manifest.json",
+          "manifestSha256": "aa3b298522702708621de2517cc061cd89e5f1e4217c0fce64b6cacdafdf6f0f",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "14",
+        "debateId": "jones-carrier-god-existence-2025",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Theistic idealism",
+            "speakers": [
+              "Michael Jones"
+            ]
+          },
+          "con": {
+            "label": "Secular naturalism",
+            "speakers": [
+              "Richard Carrier"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/Ht_SVm0GWBs/transcript.txt",
+          "transcriptSha256": "065a86c006ba2a304e2581dde95b8fa3fc7f67f2f60a6c35bd953dd9391b8911",
+          "events": ".assessment-cache/captions/Ht_SVm0GWBs/events.json",
+          "eventsSha256": "154d741524b1f8a131a49fac435cf982a104aee9c0a7cdba5c73e61b06d5027f",
+          "manifest": ".assessment-cache/captions/Ht_SVm0GWBs/manifest.json",
+          "manifestSha256": "86825230b0eecb0a19da18af65e54d61bf25fdb00d128a9f7bd42c6c6ef34765",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "58",
+        "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Secular humanism",
+            "speakers": [
+              "Matt Dillahunty"
+            ]
+          },
+          "con": {
+            "label": "Christian foundations",
+            "speakers": [
+              "Matt Slick"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/EKlycI9ZKsY/transcript.txt",
+          "transcriptSha256": "1c2fb5df7186d08f545ae9f69aed2be7c10b3610cbc71b2619a4cb2050e0481d",
+          "events": ".assessment-cache/captions/EKlycI9ZKsY/events.json",
+          "eventsSha256": "50322254fd632f9b82f88055be80a65887178ea841940c8110671ab910c7d2a6",
+          "manifest": ".assessment-cache/captions/EKlycI9ZKsY/manifest.json",
+          "manifestSha256": "e0deedbed0a82b736394623ad47bb3e925a4437032c720fa6501bc0f7cb36b84",
+          "extractionMethod": "OpenAI Audio API timestamped transcription of locally saved, speech-optimized audio chunks"
+        }
+      },
+      {
+        "debateNumber": "150",
+        "debateId": "licona-dillahunty-resurrection-evidence-2017",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Resurrection hypothesis",
+            "speakers": [
+              "Mike Licona"
+            ]
+          },
+          "con": {
+            "label": "Skeptical evidentialism",
+            "speakers": [
+              "Matt Dillahunty"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/IW9w6c2RWmA/transcript.txt",
+          "transcriptSha256": "f24ccb20690144ccfcecff41f4b274f6d9f285d10f7d190cdb998398c4554fbd",
+          "events": ".assessment-cache/captions/IW9w6c2RWmA/events.json",
+          "eventsSha256": "a9e6767e0f7325793049c7af2483841d23af4bbcd2766d6bd8789e5cf4e0aa44",
+          "manifest": ".assessment-cache/captions/IW9w6c2RWmA/manifest.json",
+          "manifestSha256": "b9df8f56313a43e7c141abb5eee8d05d4005283d956123ff7b7fa78f6a7a0a50",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      },
+      {
+        "debateNumber": "157",
+        "debateId": "dillahunty-howitt-christianity-true-2023",
+        "speakerCount": 2,
+        "sides": {
+          "pro": {
+            "label": "Christian logos",
+            "speakers": [
+              "Lewis Howitt (PerspectivePhilosophy)"
+            ]
+          },
+          "con": {
+            "label": "Skeptical empiricism",
+            "speakers": [
+              "Matt Dillahunty"
+            ]
+          }
+        },
+        "sourceChain": {
+          "transcript": ".assessment-cache/captions/13PnL6QyMEw/transcript.txt",
+          "transcriptSha256": "b764ef00b320fcfb77f79008de9cd0d0b74015a973628e9576f9b253740810d7",
+          "events": ".assessment-cache/captions/13PnL6QyMEw/events.json",
+          "eventsSha256": "069b4eccfa2bae25b212d9b4ed5337668159d4b261c7839c9bc5438a831992c6",
+          "manifest": ".assessment-cache/captions/13PnL6QyMEw/manifest.json",
+          "manifestSha256": "49876762ed160876207917a57809e4467792d523d53a2879a8fdb18edb5819a4",
+          "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+        }
+      }
+    ],
+    "transcriptHashesVerified": 5,
+    "eventHashesVerified": 5,
+    "manifestHashesVerified": 5,
+    "dyadicDebatesVerified": 5
+  },
+  "executionToolHashes": {
+    "scripts/activate-assessment-production-post-canary-batch-03-audio-verification.mjs": "0a5682d7c0e9e796b3270c8bbdb8dad33fd1a62bbc3928c2526ecea9f0597809",
+    "scripts/run-assessment-production-post-canary-batch-03-audio-verification.mjs": "28006a83c0b5ca1cbc3254d3b6cf41f5461be395420230be70b046c9e13e34aa",
+    "scripts/analyze-assessment-production-post-canary-batch-03-audio-verification.mjs": "5fab747b3f999d577a8d0e520ec631373c8bb2468330faef7aa29ced10ef602c",
+    "scripts/analyze-assessment-production-post-canary-batch-03-audio-cost-control.mjs": "df86e69a5aebb2de57bdc0ddfc54a1a1f5f1eb03c4411313c1b014e4f2a2bdc1",
+    "scripts/test-assessment-production-post-canary-batch-03-audio-verification.mjs": "42ca4e0963ce42dac02e84f61309cab63bf30d86a9c82a0608e5aa531b238c47",
+    "scripts/lib/assessment-production-post-canary-batch-03-standing-authorization.mjs": "4c78e98065f8c6b1888e555ebc5c9078e61798ae91900051ddd4283cb7af75d9",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951"
+  }
+}
