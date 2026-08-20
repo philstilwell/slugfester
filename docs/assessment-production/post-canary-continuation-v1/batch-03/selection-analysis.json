@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-selection-analysis",
+  "protocolId": "assessment-production-post-canary-batch-03",
+  "status": "third-post-canary-batch-selection-analysis-passed-awaiting-source-packet-preparation-decision",
+  "analyzedAt": "2026-08-20T01:47:16Z",
+  "selection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/selection.json",
+    "bytes": 31127,
+    "sha256": "d294ccf76345c052a7a484a998803ab0b2e6b3fed80b8acedef08a2342f758e5",
+    "status": "third-post-canary-ten-debate-batch-selection-frozen-source-gate-passed"
+  },
+  "priorBatchPublication": {
+    "batchNumber": 2,
+    "atomicCommit": "9b00bb7df367f65d6b278b3b818efc2d6c6d1511",
+    "completionExecutionSha256": "26bd8380fe8dd46ca5180fdc41614a9898f4896d51fe3be617ce8e16802e0c5d",
+    "completionAnalysisSha256": "1380edae44923685e1358eddc3b37aa6f9818c082ecebcadda18dbc6fe03ea44",
+    "accepted": true
+  },
+  "selectedDebates": [
+    {
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "rankOrdinal": 21,
+      "rankSha256": "26e011448643f5071c289c5d7d708892071dadf93eaa27f7f3b09e5b57d41604"
+    },
+    {
+      "debateNumber": "14",
+      "debateId": "jones-carrier-god-existence-2025",
+      "rankOrdinal": 22,
+      "rankSha256": "277c6c244376766784f7e89ac15e6b9d920377c3c44a6f57cc168cb2dd8552bf"
+    },
+    {
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "rankOrdinal": 23,
+      "rankSha256": "29df8141527dd2ff54d28fd7f478ec752dcdd4f97c6c8f693da309df5fe6f895"
+    },
+    {
+      "debateNumber": "150",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "rankOrdinal": 24,
+      "rankSha256": "2a4f88c46e6b5440b14130b4adf4c81824117a273e19fb7f549e7be266e85b13"
+    },
+    {
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "rankOrdinal": 25,
+      "rankSha256": "2bc4898e283d90d0afac220d59813e0b9b7eaa41f97f4e6c53cbea330d4e1867"
+    },
+    {
+      "debateNumber": "102",
+      "debateId": "woodford-brierley-christianity-rational-2019",
+      "rankOrdinal": 26,
+      "rankSha256": "2c31cd2294d62ead78aa4b3d19e4afd254f0b19d13ce1e973d682f3322cc0950"
+    },
+    {
+      "debateNumber": "09",
+      "debateId": "peterson-dillahunty-god-debate-2023",
+      "rankOrdinal": 27,
+      "rankSha256": "2d742d583150656218c699d433d23f3ebc19a66b449752ccbfc8b31bc8f630c8"
+    },
+    {
+      "debateNumber": "181",
+      "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+      "rankOrdinal": 28,
+      "rankSha256": "335d3ee17d0368eebd38d5c6fde25bc702ed6b6eb12655fd49d9de810e9294d0"
+    },
+    {
+      "debateNumber": "138",
+      "debateId": "albrecht-price-bodily-resurrection-2022",
+      "rankOrdinal": 29,
+      "rankSha256": "33d3b5701ce6e7310f68ddcfe3c3784243654535d26ae542fa6956dcf2369590"
+    },
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "rankOrdinal": 30,
+      "rankSha256": "353418aca740af8cda13610c10506b36592e45178261201007d77e6e8836716f"
+    }
+  ],
+  "finding": "Successful Batch 2 production publication was authenticated at the pushed atomic commit. The immutable campaign rank then selected ordinals 21 through 30 as ten unique pending dyadic debates, and all thirty effective source files and ten canonical event chains passed without replacement.",
+  "decision": {
+    "priorBatchPublicationPrerequisitePassed": true,
+    "deterministicSelectionPassed": true,
+    "selectedSourceGatePassed": true,
+    "replacementsUsed": 0,
+    "sourcePacketPreparationAttempted": false,
+    "modelExecutionAttempted": false,
+    "paidServiceUsed": false,
+    "productionMutationAttempted": false,
+    "nextBatchSelectionAttempted": false
+  },
+  "nextAuthorizedAction": "user-decision-on-third-post-canary-batch-source-packet-preparation"
+}
