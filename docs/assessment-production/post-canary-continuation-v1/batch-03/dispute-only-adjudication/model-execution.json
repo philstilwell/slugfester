@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-dispute-only-adjudication-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-03-dispute-only-adjudication",
+  "status": "post-canary-batch-03-dispute-only-adjudication-gate-complete-with-failure",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "gateStartedAt": "2026-08-20T22:58:28.301Z",
+  "gateCompletedAt": "2026-08-20T23:38:51.820Z",
+  "contextsPlanned": 10,
+  "contextsAttempted": 1,
+  "unattemptedContextIndexes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "validContexts": 0,
+  "invalidContexts": 1,
+  "attempts": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "corrections": 0,
+  "maximumObservedConcurrency": 1,
+  "wallElapsedMs": 2423519,
+  "aggregateModelElapsedMs": 2423511,
+  "meanElapsedMs": 2423511,
+  "rampPhases": [
+    {
+      "phase": 1,
+      "name": "operational-one",
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": 2,
+      "name": "ramp-two",
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    },
+    {
+      "phase": 3,
+      "name": "steady-two",
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [],
+      "validContextIndexes": [],
+      "passed": false,
+      "skippedBecausePriorRampFailed": true
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "scoreBlind": true,
+      "roundedIntegerScoreTiesPermitted": true,
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "startedAt": "2026-08-20T22:58:28.302Z",
+      "completedAt": "2026-08-20T23:38:51.813Z",
+      "elapsedMs": 2423511,
+      "timedOut": true,
+      "commandExitCode": null,
+      "terminationSignal": "SIGTERM",
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "copiedInputBytes": 350419,
+      "audioTranscriptInputs": [
+        "audio-transcript-con-heuristics-fail-under-change.json",
+        "audio-transcript-pro-rational-instruction-behavioral-limit.json"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCalls": 0,
+      "transcriptionCostUsdThisStage": 0,
+      "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderrSha256": "8d78c37a439b775e6499f948d36a6993086d5079540976e7fb76c1409085a837",
+      "status": "timed-out",
+      "gateAcceptancePassed": false,
+      "outputWritten": false,
+      "failureMessage": "\"derivedClass\":\"diagnostic-defeat\",\"decisiveTargetIds\":[\"pro-penitent-prayer-as-correction\"],\"components\":[{\"componentId\":\"con-prayer-naturalized-psychology-component-01\",\"targetMoveId\":\"pro-penitent-prayer-as-correction\",\"text\":\"Whether corrective insight during penitent self-examination requires supernatural communication or divine authorship.\",\"contacted\":true,\"decisive\":true}],\"issueBearingContraryMaterial\":true,\"diagnosticConsequenceExplicit\":true,\"replacementDemandAnswered\":false},\"responsivenessWithinClass\":{\"value\":96}},\"candidate2\":{\"responseStructure\":{\"derivedClass\":\"diagnostic-defeat\",\"decisiveTargetIds\":[\"pro-penitent-prayer-as-correction\"],\"components\":[{\"componentId\":\"con-prayer-naturalized-psychology-component-01\",\"targetMoveId\":\"pro-penitent-prayer-as-correction\",\"text\":\"Whether corrective insight arising during penitent self-examination requires supernatural communication.\",\"contacted\":true,\"decisive\":true},{\"componentId\":\"con-prayer-naturalized-psychology-component-02\",\"targetMoveId\":\"pro-penitent-prayer-as-correction\",\"text\":\"Whether the described experience supports divine authorship or authority for religious books.\",\"contacted\":true,\"decisive\":true}],\"issueBearingContraryMaterial\":false,\"diagnosticConsequenceExplicit\":true,\"replacementDemandAnswered\":false},\"responsivenessWithinClass\":{\"value\":94}}},\"charityPair\":null,\"assessmentConfidencePair\":null,\"scoringFields\":{\"precisionClarity\":{\"candidate1\":{\"value\":95,\"closedFindings\":{\"propositionRecoverability\":\"complete\",\"termStability\":\"stable\",\"scopeStability\":\"stable\",\"qualificationExplicitness\":\"not-needed\"}},\"candidate2\":{\"value\":95,\"closedFindings\":{\"propositionRecoverability\":\"complete\",\"termStability\":\"stable\",\"scopeStability\":\"stable\",\"qualificationExplicitness\":\"explicit\"}}},\"epistemicCalibration\":{\"candidate1\":{\"value\":95,\"closedFindings\":{\"assertedForce\":\"necessity\",\"warrantFit\":\"matched\",\"qualificationStatus\":\"explicit\",\"uncertaintyAcknowledged\":\"not-needed\"}},\"candidate2\":{\"value\":95,\"closedFindings\":{\"assertedForce\":\"necessity\",\"warrantFit\":\"matched\",\"qualificationStatus\":\"not-needed\",\"uncertaintyAcknowledged\":\"not-needed\"}}}}}\ncon-conflicting-traditions-deeper-reality\tIncompatible religious traditions assign conflicting meanings to good and evil, so their usefulness points toward a deeper common reality rather than the truth of any one tradition.\tgood and evil is is irreconcilable with what you get christiana look but it doesn't it doesn't have to be interoperable right well but but in a reality presumably Hinduism is also useful as a set of heuristic as to be for Hindus and if Hinduism as a matter of doctrine and as a matter of the interpretations of the heuristics by the devout in both systems if Hinduism and Christianity are irreconcilable right then there must be a deeper\t{\"importancePair\":null,\"attributionPair\":null,\"responsePair\":{\"candidate1\":{\"responseStructure\":{\"derivedClass\":\"full-answer\",\"decisiveTargetIds\":[\"pro-transpersonal-god-language\"],\"components\":[{\"componentId\":\"con-conflicting-traditions-deeper-reality-component-01\",\"targetMoveId\":\"pro-transpersonal-god-language\",\"text\":\"Whether one religious vocabulary has distinctive truth when incompatible traditions also offer useful transpersonal heuristics.\",\"contacted\":true,\"decisive\":true}],\"issueBearingContraryMaterial\":true,\"diagnosticConsequenceExplicit\":false,\"replacementDemandAnswered\":false},\"responsivenessWithinClass\":{\"value\":87}},\"candidate2\":{\"responseStructure\":{\"derivedClass\":\"full-answer\",\"decisiveTargetIds\":[\"pro-transpersonal-god-language\"],\"components\":[{\"componentId\":\"con-conflicting-traditions-deeper-reality-component-01\",\"targetMoveId\":\"pro-transpersonal-god-language\",\"text\":\"Whether one religious vocabulary uniquely captures the deeper reality when incompatible traditions are also useful.\",\"contacted\":true,\"decisive\":true}],\"issueBearingContraryMaterial\":false,\"diagnosticConsequenceExplicit\":false,\"replacementDemandAnswered\":false},\"responsivenessWithinClass\":{\"value\":88}}},\"charityPair\":null,\"assessmentConfidencePair\":null,\"scoringFields\":{\"precisionClarity\":{\"candidate1\":{\"value\":85,\"closedFindings\":{\"propositionRecoverability\":\"complete\",\"termStability\":\"stable\",\"scopeStability\":\"stable\",\"qualificationExplicitness\":\"implicit\"}},\"candidate2\":{\"value\":75,\"closedFindings\":{\"propositionRecoverability\":\"complete\",\"termStability\":\"partly-unstable\",\"scopeStability\":\"stable\",\"qualificationExplicitness\":\"implicit\"}}}}}\npro-cross-domain-recurrent-patterns\tReligious pluralism need not end in nihilism if inquiry identifies recurrent patterns across religion, biology, philosophy, neuroscience, emotion, and play that constrain interpretation.\tbefore he wrote his book I tried to use a conciliatory assistance I looked at Christianity I looked at Neri biology I looked at philosophy I looked at neuroscience and I looked at the literature on emotion and motivation and and in the literature on play that was very nicely delineated by Piaget and I tried to see where there was a pattern that repeated across all dimensions of\t{\"importancePair\":null,\"attributionPair\":null,\"responsePair\":{\"candidate1\":{\"responseStructure\":{\"derivedClass\":\"full-answer\",\"decisiveTargetIds\":[\"con-conflicting-traditions-deeper-reality\"],\"components\":[{\"componentId\":\"pro-cross-domain-recurrent-patterns-component-01\",\"targetMoveId\":\"con-conflicting-traditions-deeper-reality\",\"text\":\"Whether incompatible traditions force nihilism or can be assessed through recurrent patterns across independent domains.\",\"contacted\":true,\"decisive\":true}],\"issueBearingContraryMaterial\":true,\"diagnosticConsequenceExplicit\":false,\"replacementDemandAnswered\":false},\"responsivenessWithinClass\":{\"value\":89}},\"candidate2\":{\"responseStructure\":{\"derivedClass\":\"partial-answer\",\"decisiveTargetIds\":[\"con-conflicting-traditions-deeper-reality\"],\"components\":[{\"componentId\":\"pro-cross-domain-recurrent-patterns-component-01\",\"targetMoveId\":\"con-conflicting-traditions-deeper-reality\",\"text\":\"Whether a deeper common reality can be investigated through patterns recurring across traditions and independent domains.\",\"contacted\":true,\"decisive\":true},{\"componentId\":\"pro-cross-domain-recurrent-patterns-component-02\",\"targetMoveId\":\"con-conflicting-traditions-deeper-reality\",\"text\":\"Whether recurrence supplies constraints strong enough to adjudicate incompatible religious doctrines.\",\"contacted\":false,\"decisive\":true}],\"issueBearingContraryMaterial\":false,\"diagnosticConsequenceExplicit\":false,\"replacementDemandAnswered\":false},\"responsivenessWithinClass\":{\"value\":73}}},\"charityPair\":null,\"assessmentConfidencePair\":null,\"scoringFields\":{\"precisionClarity\":{\"candidate1\":{\"value\":75,\"closedFindings\":{\"propositionRecoverability\":\"complete\",\"termStability\":\"partly-unstable\",\"scopeStability\":\"stable\",\"qualificationExplicitness\":\"explicit\"}},\"candidate2\":{\"value\":75,\"closedFindings\":{\"propositionRecoverability\":\"complete\",\"termStability\":\"partly-unstable\",\"scopeStability\":\"stable\",\"qualificationExplicitness\":\"implicit\"}}},\"epistemicCalibration\":{\"candidate1\":{\"value\":85,\"closedFindings\":{\"assertedForce\":\"plausibility\",\"warrantFit\":\"matched\",\"qualificationStatus\":\"implicit\",\"uncertaintyAcknowledged\":\"yes\"}},\"candidate2\":{\"value\":95,\"closedFindings\":{\"assertedForce\":\"plausibility\",\"warrantFit\":\"matched\",\"qualificationStatus\":\"explicit\",\"uncertaintyAcknowledged\":\"yes\"}}}}}\ncon-variation-challenges-recurring-patterns\tReligious and cultural variation undermines the claim that supposedly universal moral patterns recur consistently across traditions.\tall these cultures and all these religious traditions then how can you make the claim that everyone would agree with your description of what constitutes bad beginning in the landscape it would be it's just it's just not it's not evil in the sense that that it's there's better and worse there's better can we do we have there's either universal moral intuitions or they're honest\t{\"importancePair\":null,\"attributionPair\":null,\"responsePair\":{\"candidate1\":{\"responseStructure\":{\"derivedClass\":\"full-answer\",\"decisiveTargetIds\":[\"pro-cross-domain-recurrent-patterns\"],\"components\":[{\"componentId\":\"con-variation-challenges-recurring-patterns-component-01\",\"targetMoveId\":\"pro-cross-domain-recurrent-patterns\",\"text\":\"Whether claimed recurring patterns genuinely survive religious and cultural disagreement about moral badness.\",\"contacted\":true,\"decisive\":true}],\"issueBearingContraryMaterial\":false,\"diagnosticConsequenceExplicit\":false,\"replacementDemandAnswered\":false},\"responsivenessWithinClass\":{\"value\":87}},\"candidate2\":{\"responseStructure\":{\"derivedClass\":\"full-answer\",\"decisiveTargetIds\":[\"pro-cross-domain-recurrent-patterns\"],\"components\":[{\"componentId\":\"con-variation-challenges-recurring-patterns-component-01\",\"targetMoveId\":\"pro-cross-domain-recurrent-patterns\",\"text\":\"Whether claimed recurrent patterns survive extensive cultural and religious disagreement about good, evil, and bad lives.\",\"contacted\":true,\"decisive\":true}],\"issueBearingContraryMaterial\":true,\"diagnosticConsequenceExplicit\":false,\"replacementDemandAnswered\":false},\"responsivenessWithinClass\":{\"value\":91}}},\"charityPair\":null,\"assessmentConfidencePair\":null,\"scoringFields\":{\"precisionClarity\":{\"candidate1\":{\"value\":75,\"closedFindings\":{\"propositionRecoverability\":\"complete\",\"termStability\":\"partly-unstable\",\"scopeStability\":\"partly-unstable\",\"qualificationExplicitness\":\"implicit\"}},\"candidate2\":{\"value\":75,\"closedFindings\":{\"propositionRecoverability\":\"complete\",\"termStability\":\"partly-unstable\",\"scopeStability\":\"partly-unstable\",\"qualificationExplicitness\":\"missing\"}}},\"epistemicCalibration\":{\"candidate1\":{\"value\":75,\"closedFindings\":{\"assertedForce\":\"strong-probability\",\"warrantFit\":\"slightly-overstated\",\"qualificationStatus\":\"missing\",\"uncertaintyAcknowledged\":\"no\"}},\"candidate2\":{\"value\":85,\"closedFindings\":{\"assertedForce\":\"probability\",\"warrantFit\":\"matched\",\"qualificationStatus\":\"implicit\",\"uncertaintyAcknowledged\":\"yes\"}}}}}"
+    }
+  ],
+  "adjudicationModelContexts": 1,
+  "judgmentModelContexts": 0,
+  "paidServiceCalls": 0,
+  "meteredApiCostUsd": 0,
+  "transcriptionCostUsdThisStage": 0,
+  "directIncrementalCostUsd": 0,
+  "scoresDerived": 0,
+  "publicationReconstructions": 0,
+  "productionMutations": 0,
+  "nextBatchSelections": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "correctionModelExecution": false,
+    "judgmentModelExecution": false,
+    "paidServices": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
