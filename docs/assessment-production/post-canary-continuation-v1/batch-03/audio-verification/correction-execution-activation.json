@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0-assessment-production-post-canary-batch-03-audio-verification-correction-execution-activation",
   "protocolId": "assessment-production-post-canary-batch-03-decomposed-consensus",
-  "status": "frozen-batch-03-audio-correction-execution-harness-prepared-not-authorized",
+  "status": "frozen-batch-03-audio-correction-deterministic-replay-authorized",
   "preparedAt": "2026-08-20T22:40:10Z",
-  "authorizedAt": null,
+  "authorizedAt": "2026-08-20T22:46:55Z",
   "checkpointCommit": "188a44212960b2c2b0ade10a5e943076b20df740",
   "productionCanary": false,
   "batchNumber": 3,
@@ -266,7 +266,19 @@
   "executionAuthorizationTemplate": {
     "instruction": "I approve activation and execution of exactly one frozen Batch 3 deterministic audio-verification correction pass and one complete eight-transcript cohort replay, with a direct incremental cost cap of $0. Apply only the three frozen transient verification-reference overlays and the frozen exact-decimal cost-validation overlay. Preserve all original transcripts, requests, inventories, audio work items, execution records, audit records, analysis records, cost records, validator, and thresholds byte-identically. Use one attempt with no retries, reruns, automatic repairs, recursive corrections, or audio access. Do not execute models or paid services, adjudicate during the correction, derive scores, reconstruct publication, mutate production, or select Batch 4. If the correction and replay pass, commit and push the checkpoint and resume the existing Batch 3 standing authorization automatically; stop for new approval if they fail."
   },
-  "userExecutionAuthorization": null,
+  "userExecutionAuthorization": {
+    "instruction": "I approve.",
+    "interpretedScope": "I approve activation and execution of exactly one frozen Batch 3 deterministic audio-verification correction pass and one complete eight-transcript cohort replay, with a direct incremental cost cap of $0. Apply only the three frozen transient verification-reference overlays and the frozen exact-decimal cost-validation overlay. Preserve all original transcripts, requests, inventories, audio work items, execution records, audit records, analysis records, cost records, validator, and thresholds byte-identically. Use one attempt with no retries, reruns, automatic repairs, recursive corrections, or audio access. Do not execute models or paid services, adjudicate during the correction, derive scores, reconstruct publication, mutate production, or select Batch 4. If the correction and replay pass, commit and push the checkpoint and resume the existing Batch 3 standing authorization automatically; stop for new approval if they fail.",
+    "correctionPasses": 1,
+    "cohortReplayPasses": 1,
+    "transcripts": 8,
+    "attempts": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "recursiveCorrectionsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
   "judgmentModelBoundary": {
     "label": "5.6 Sol",
     "slug": "gpt-5.6-sol",
@@ -298,10 +310,10 @@
     "directIncrementalCostUsd": 0
   },
   "authorization": {
-    "correctionExecution": false,
-    "cohortValidationResumption": false,
-    "deterministicAnalysis": false,
-    "resumeStandingAuthorizationAfterPass": false,
+    "correctionExecution": true,
+    "cohortValidationResumption": true,
+    "deterministicAnalysis": true,
+    "resumeStandingAuthorizationAfterPass": true,
     "audioAccess": false,
     "transcriptionOrModelExecution": false,
     "paidServiceUse": false,
@@ -316,5 +328,5 @@
     "productionMutation": false,
     "nextBatchSelection": false
   },
-  "nextAuthorizedAction": "user-approval-required-before-activating-and-executing-the-one-frozen-batch-03-audio-correction-and-eight-transcript-replay"
+  "nextAuthorizedAction": "execute-the-one-frozen-batch-03-audio-correction-and-eight-transcript-replay"
 }
