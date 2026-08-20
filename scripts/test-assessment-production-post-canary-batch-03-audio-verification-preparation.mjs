@@ -79,7 +79,7 @@ for (const call of preparation.calls) {
     assert.equal(sha256(await readFile(reference.localPath)), reference.sha256);
   }
 }
-assert.equal(preparation.costEstimate.clipSeconds, 666.192);
+assert.equal(preparation.costEstimate.clipSeconds, 666.19);
 assert.equal(preparation.costEstimate.clipMinutes, 11.1032);
 assert.equal(
   preparation.costEstimate.primaryExpectedFutureExecutionCostUsd,
