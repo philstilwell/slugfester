@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-03-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "14",
+  "inventoryPlanCanonicalSha256": "714717d3695959eb40d1b3fc5ebb3b16a324779ec2e66558fb1a27ed66cd33b7",
+  "sideSelectionSha256": {
+    "pro": "93cdcd51fc7dadbb21620fe00d417daefd6c1d1ed56092fe95f85bbe98116ee6",
+    "con": "eda52f74c34e80527993438b9ea3284854473fbfee2af39cfd61b5f50c37729b"
+  },
+  "sections": 5,
+  "moves": 18,
+  "proMoves": 9,
+  "conMoves": 9,
+  "belowHighAttributionMoveIds": [
+    "pro-unconstrained-bubble-causal-gap"
+  ],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c007",
+      "side": "pro",
+      "moveId": "pro-nothing-cosmology-incoherence",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "If no earlier opposing cosmological move is retained, the same source-grounded proposition still constructively challenges whether absolute nothing can possess causal or probabilistic resources.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 18,
+  "retainedCandidates": 18,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

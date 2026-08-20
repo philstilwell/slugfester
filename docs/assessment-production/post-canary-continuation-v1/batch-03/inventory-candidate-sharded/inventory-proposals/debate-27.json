@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "4.2.21.16.2-score-blind-side-partitioned-selection-map-proposal",
+  "protocolId": "v4.2.21.16.2-side-partitioned-selection-map-contract",
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "reviewerRole": "score-blind-inventory-curator",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-divine-moral-ground",
+      "side": "pro",
+      "description": "Establish that experienced evil and categorical moral obligation presuppose objective standards of goodness, then argue that those standards and the rational norms used to recognize them require a transcendent divine ground.",
+      "successCriteria": "The route succeeds if objective moral obligations are warranted as more than evolved preferences, God provides their necessary ontological ground, and the proposed naturalistic explanations fail to account for moral and rational normativity without undermining themselves.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-evil-to-god",
+        "tier": "motion",
+        "description": "Connect the reality of evil through objective goodness and obligation to a divine ground adequate to explain them."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-objective-obligation",
+          "tier": "central",
+          "description": "Establish that immediate moral experience warrants belief in categorical obligations that do not depend on individual or cultural attitudes."
+        },
+        {
+          "bridgeId": "pro-central-divine-grounding",
+          "tier": "central",
+          "description": "Show that objective goodness and obligation require an ultimate standard grounded in God's nature rather than human preference."
+        },
+        {
+          "bridgeId": "pro-central-naturalist-reliability",
+          "tier": "central",
+          "description": "Show that an unguided evolutionary account cannot both explain all beliefs causally and justify confidence in moral and rational beliefs as truth-directed."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-scope",
+          "tier": "subsidiary",
+          "description": "Limit the moral argument to a divine moral ground while leaving identification of a particular religion to a cumulative case."
+        },
+        {
+          "bridgeId": "pro-subsidiary-disagreement",
+          "tier": "subsidiary",
+          "description": "Distinguish disagreement or uncertainty about moral facts from evidence that no objective moral facts exist."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-naturalistic-moral-experience",
+      "side": "con",
+      "description": "Explain moral experience through evolved conscious psychology and shared practical aims while denying that its force, consensus, or emotional immediacy entails mind-independent value or a divine moral ground.",
+      "successCriteria": "The route succeeds if agnostic atheism bears no unnecessary positive worldview burden, evolutionary and psychological processes adequately explain moral experience, and the pro case does not establish objective morality or derive God without circular or unsupported grounding assumptions.",
+      "motionBridge": {
+        "bridgeId": "con-motion-experience-without-god",
+        "tier": "motion",
+        "description": "Account for compelling moral experience without inferring mind-independent moral facts or accepting a divine moral ground."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-subjective-status",
+          "tier": "central",
+          "description": "Distinguish the psychological force of moral judgments from mind-independent truth and locate moral valuation in conscious attitudes."
+        },
+        {
+          "bridgeId": "con-central-evolutionary-explanation",
+          "tier": "central",
+          "description": "Explain shared survival-oriented dispositions, practical moral rules, and disputed cases through evolutionary concern for flourishing and harm."
+        },
+        {
+          "bridgeId": "con-central-inference-gap",
+          "tier": "central",
+          "description": "Show that explaining why moral judgments occur neither establishes their objective truth nor permits a divine mind to be assumed as their ground."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-burden-definition",
+          "tier": "subsidiary",
+          "description": "Clarify agnostic atheism as nonbelief while identifying which additional naturalistic claims, if asserted, independently require support."
+        },
+        {
+          "bridgeId": "con-subsidiary-reason-baseline",
+          "tier": "subsidiary",
+          "description": "Treat reason as a necessary shared starting point for inquiry while distinguishing objective logical rules from conclusions dependent on adopted premises."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-burden-and-argument-scope",
+      "title": "Burden of Proof and Scope of the Moral Argument",
+      "weightPercent": 12,
+      "rationale": "This issue fixes what agnostic atheism commits its defender to establish and whether the moral argument aims only at a divine moral ground or at a more specific religious conclusion."
+    },
+    {
+      "sectionId": "section-objective-moral-grounding",
+      "title": "Objective Moral Obligation and Divine Grounding",
+      "weightPercent": 28,
+      "rationale": "This is the principal ontological clash: whether evil and categorical obligation disclose a mind-independent standard of goodness and whether such a standard requires grounding in God."
+    },
+    {
+      "sectionId": "section-evolutionary-moral-experience",
+      "title": "Evolutionary and Psychological Explanation of Moral Experience",
+      "weightPercent": 24,
+      "rationale": "This issue tests whether evolved dispositions, consciousness, flourishing, and harm can explain the felt force and broad convergence of morality without converting causal explanation into objective justification."
+    },
+    {
+      "sectionId": "section-reason-logic-and-reliability",
+      "title": "Reason, Logic, and Evolutionary Reliability",
+      "weightPercent": 20,
+      "rationale": "The competing accounts must address whether naturalistic evolution permits warranted trust in cognition and whether objective logical norms require a transcendent explanation or can function as shared assumptions."
+    },
+    {
+      "sectionId": "section-disagreement-and-practical-judgment",
+      "title": "Moral Disagreement, Cultural Variation, and Practical Judgment",
+      "weightPercent": 16,
+      "rationale": "Disagreement and ambiguous cases bear on whether moral experience is evidence of objective reality, cultural contingency, or merely limited access to truths that remain independent of judgment."
+    }
+  ],
+  "candidateSelectionsBySide": {
+    "pro": {
+      "chunk-001:c001": {
+        "sectionId": "section-objective-moral-grounding",
+        "moveId": "pro-evil-good-divine-ground",
+        "moveKind": "constructive",
+        "proposition": "Evil is a privation of good, and because goodness is identified with God's nature, the existence of evil presupposes a divine standard of goodness."
+      },
+      "chunk-001:c003": {
+        "sectionId": "section-burden-and-argument-scope",
+        "moveId": "pro-atheist-positive-claims-burden",
+        "moveKind": "reply",
+        "proposition": "Atheists who supplement nonbelief with naturalistic explanations such as evolution, materialism, multiple universes, or quantum vacuums advance positive claims that require defense."
+      },
+      "chunk-001:c004": {
+        "sectionId": "section-burden-and-argument-scope",
+        "moveId": "pro-moral-argument-limited-conclusion",
+        "moveKind": "reply",
+        "proposition": "The moral argument aims to establish God as the ground of morality, not by itself to identify that ground specifically as the Christian God; other arguments are needed for that conclusion."
+      },
+      "chunk-001:c008": {
+        "sectionId": "section-evolutionary-moral-experience",
+        "moveId": "pro-evolution-global-belief-defeater",
+        "moveKind": "reply",
+        "proposition": "The evident wrongness of sexually abusing children should not be dismissed through an evolutionary account that, if applied to thought generally, would undercut trust in every belief."
+      },
+      "chunk-001:c010": {
+        "sectionId": "section-reason-logic-and-reliability",
+        "moveId": "pro-logic-reason-naturalist-grounding",
+        "moveKind": "reply",
+        "proposition": "Treating reason as an evolved assumption does not explain why it is trustworthy or account for objective, immaterial laws of logic that are not composed of matter."
+      },
+      "chunk-002:c002-02": {
+        "sectionId": "section-reason-logic-and-reliability",
+        "moveId": "pro-subjective-reason-self-defeat",
+        "moveKind": "reply",
+        "proposition": "The claim that reason is subjective is self-defeating because asserting it as a conclusion relies on an objective truth claim and on the possibility of reaching true conclusions."
+      },
+      "chunk-002:c002-04": {
+        "sectionId": "section-objective-moral-grounding",
+        "moveId": "pro-basic-objective-obligation",
+        "moveKind": "reply",
+        "proposition": "Immediate awareness of objective moral obligation is more evident than the skeptical premises offered for atheism or moral subjectivism, and therefore warrants treatment as basic evidence."
+      },
+      "chunk-002:c002-06": {
+        "sectionId": "section-disagreement-and-practical-judgment",
+        "moveId": "pro-better-society-implies-best",
+        "moveKind": "reply",
+        "proposition": "Judging one society better or worse than another presupposes a best or objective standard of goodness outside individual preferences and therefore raises the question of that standard's ontological ground."
+      },
+      "chunk-002:c002-08": {
+        "sectionId": "section-evolutionary-moral-experience",
+        "moveId": "pro-evolution-self-reference-basic-belief",
+        "moveKind": "reply",
+        "proposition": "If every thought results from evolution, the evolutionary account cannot certify its own truth; by contrast, moral conviction may be a properly basic belief rather than a mere assumption."
+      },
+      "chunk-002:c002-10": {
+        "sectionId": "section-disagreement-and-practical-judgment",
+        "moveId": "pro-disagreement-not-unreality",
+        "moveKind": "reply",
+        "proposition": "Disagreement or lack of clarity about moral cases concerns knowledge of moral reality and does not show that objective morality is unreal, just as scientific disagreement does not eliminate the objective world."
+      }
+    },
+    "con": {
+      "chunk-001:c002": {
+        "sectionId": "section-burden-and-argument-scope",
+        "moveId": "con-burden-agnostic-atheism-nonbelief",
+        "moveKind": "reply",
+        "proposition": "Agnostic atheism denotes a lack of belief rather than a positive worldview, so it carries no general burden of proof; only the positive assertion that no God exists incurs that burden."
+      },
+      "chunk-001:c005": {
+        "sectionId": "section-objective-moral-grounding",
+        "moveId": "con-objective-morality-evidential-concession",
+        "moveKind": "reply",
+        "proposition": "Demonstrated objective morality would demand an explanation beyond current naturalism, but scientific proposals do not establish it merely by assuming that flourishing is morally good."
+      },
+      "chunk-001:c006": {
+        "sectionId": "section-objective-moral-grounding",
+        "moveId": "con-conscious-moral-status-circular-grounding",
+        "moveKind": "reply",
+        "proposition": "Moral wrongness depends on conscious psychology, and preserving it through a transcendent mind would assume the being invoked to establish objective morality before using that morality to argue for God."
+      },
+      "chunk-001:c007": {
+        "sectionId": "section-evolutionary-moral-experience",
+        "moveId": "con-evolved-dispositions-conditional-rules",
+        "moveKind": "reply",
+        "proposition": "Evolutionary survival dispositions can support conditionally objective behavioral rules once well-being is assumed as a goal, while even unanimous condemnation would not make morality mind-independent."
+      },
+      "chunk-001:c009": {
+        "sectionId": "section-reason-logic-and-reliability",
+        "moveId": "con-reason-necessary-epistemic-baseline",
+        "moveKind": "reply",
+        "proposition": "Reason cannot be validated without employing reason, but it remains a necessary shared starting assumption for inquiry, like assumptions concerning existence and the external world."
+      },
+      "chunk-002:c002-01": {
+        "sectionId": "section-reason-logic-and-reliability",
+        "moveId": "con-objective-logic-subjective-reasoning",
+        "moveKind": "reply",
+        "proposition": "Objective logical rules may exist even though reasoning remains dependent on adopted assumptions, just as conditional moral conclusions can follow objectively from chosen premises."
+      },
+      "chunk-002:c002-03": {
+        "sectionId": "section-disagreement-and-practical-judgment",
+        "moveId": "con-compelling-yet-culturally-contingent-judgment",
+        "moveKind": "reply",
+        "proposition": "Condemnations such as the judgment that racism is wrong can feel as instinctively compelling as numerical truths while remaining subjective and culturally contingent rather than mind-independent."
+      },
+      "chunk-002:c002-05": {
+        "sectionId": "section-evolutionary-moral-experience",
+        "moveId": "con-causal-explanation-not-moral-justification",
+        "moveKind": "reply",
+        "proposition": "Evolutionary science can explain why people experience actions as right or wrong without thereby establishing that those actions truly are right or wrong."
+      },
+      "chunk-002:c002-07": {
+        "sectionId": "section-disagreement-and-practical-judgment",
+        "moveId": "con-revulsion-does-not-refute-subjectivism",
+        "moveKind": "reply",
+        "proposition": "Naturalism may make morality evolutionarily arbitrary, but emotional revulsion at that implication does not establish that naturalism is false or that objective morality exists."
+      },
+      "chunk-002:c002-09": null
+    }
+  },
+  "audit": {
+    "completeCandidateEvidenceBundleReviewed": true,
+    "everySelectedCandidateUsedOnce": true,
+    "ratingsUnavailable": true,
+    "responseTopologyUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true
+  }
+}

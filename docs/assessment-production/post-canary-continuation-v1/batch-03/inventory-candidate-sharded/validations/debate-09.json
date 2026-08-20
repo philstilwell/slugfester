@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-03-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "09",
+  "inventoryPlanCanonicalSha256": "ee64a2e821963aa62982af13b83f7944af59a13afe581f64a1215fe7c5756b07",
+  "sideSelectionSha256": {
+    "pro": "84c90d815edff389935d9d38d42604f05639c6ccd17b8b320b2025a8c16070fd",
+    "con": "df02066a9b8709fa9f3a28362255f7f62bfbedb97038c987988d8391079f0eb0"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c002",
+      "side": "con",
+      "moveId": "con-truth-utility-distinction",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Independently of any preceding opposing move, this distinction establishes the con route's governing requirement that practical usefulness not substitute for evidence of supernatural existence.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}
