@@ -150,11 +150,11 @@ export const debateSummaries = [
     "number": "04",
     "title": "John Lennox vs Peter Atkins: Can Science Explain Everything?",
     "label": "Science and explanation",
-    "date": "2026-05-28",
+    "date": "2026-08-18",
     "duration": "1 hr 38 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=fSYwCaFkYno",
     "motion": "Can science explain everything worth explaining, or do rationality, miracles, purpose, origins, morality, and meaning require a different kind of explanation?",
-    "summary": "Lennox argues science has real limits and points beyond itself; Atkins argues science can answer every real evidence-based question.",
+    "summary": "Lennox defended explanatory pluralism across purpose, rationality, miracles, origins, and ethics, while Atkins pressed public evidence, natural sufficiency, and scientific progress.",
     "sides": {
       "pro": {
         "name": "Science has limits",
@@ -168,30 +168,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 77,
-      "con": 70
+      "pro": 84,
+      "con": 77
     },
     "sections": [
       {
-        "title": "Science and question scope"
+        "title": "The Scope and Standards of Rational Explanation"
       },
       {
-        "title": "Miracles and resurrection"
+        "title": "Scientific Progress, Intelligibility, and Rational Minds"
       },
       {
-        "title": "Rationality and science"
+        "title": "Origins of Natural Law, the Universe, and Life"
       },
       {
-        "title": "Purpose and personal evidence"
+        "title": "Miracles, Historical Evidence, and Revisability"
       },
       {
-        "title": "Something from nothing"
-      },
-      {
-        "title": "Falsifiability and commitment"
-      },
-      {
-        "title": "Morality and final stakes"
+        "title": "Morality, Purpose, and Human Meaning"
       }
     ]
   },
@@ -3081,11 +3075,11 @@ export const debateSummaries = [
     "number": "66",
     "title": "Miles K. Donahue vs James Fodor: The Case Against Christianity",
     "label": "Christianity, evidence, and disagreement",
-    "date": "2026-06-07",
+    "date": "2026-08-18",
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=jOYiPLT41wM",
     "motion": "Do philosophical arguments, biblical beauty, religious experience, and resurrection evidence make Christianity credible, or do evil, disagreement, expert dissent, and Christian moral failure make it unlikely?",
-    "summary": "Donahue tests whether Christian belief can remain rational under skeptical pressure; Fodor argues that the case for Christianity is too assumption-heavy and the case against it is cumulatively stronger.",
+    "summary": "Donahue defended Christianity cumulatively, while Fodor pressed comparative objections from divine psychology, suffering, religious confusion, informed dissent, and observable moral outcomes.",
     "sides": {
       "pro": {
         "name": "Reflective Christianity",
@@ -3099,30 +3093,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 86
+      "pro": 81,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Theistic arguments and divine psychology"
+        "title": "Philosophical Arguments, Fine-Tuning, and Divine Psychology"
       },
       {
-        "title": "Biblical beauty and religious texts"
+        "title": "Scripture, Religious Experience, and Reflective Warrant"
       },
       {
-        "title": "Experience and proper basicality"
+        "title": "Resurrection Evidence and Naturalistic Explanation"
       },
       {
-        "title": "Resurrection and naturalized psychology"
+        "title": "Evil, Religious Disagreement, and Epistemic Limitation"
       },
       {
-        "title": "Evil and skeptical theism"
-      },
-      {
-        "title": "Revelation and religious disagreement"
-      },
-      {
-        "title": "Expert dissent and moral fruits"
+        "title": "Expert Dissent, Rational Confidence, and Christian Moral Fruit"
       }
     ]
   },
@@ -3886,11 +3874,11 @@ export const debateSummaries = [
     "number": "83",
     "title": "Andrew Loke vs Graham Oppy: Is the Kalam Sound?",
     "label": "Kalam causal principle and necessity",
-    "date": "2026-06-22",
+    "date": "2026-08-18",
     "duration": "2 hr 28 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=a8NrTv-Durc",
     "motion": "Does Loke's reformulated Kalam cosmological argument successfully establish a beginningless personal creator of the universe?",
-    "summary": "Loke defends a deductive causal-principle route to a personal first cause; Oppy argues that naturalistic theory comparison and necessary initial reality remain stronger.",
+    "summary": "Loke builds a first-cause route toward personal agency, while Oppy challenges its modal bridges and develops a comparatively economical necessary-natural-state alternative.",
     "sides": {
       "pro": {
         "name": "Reformulated Kalam",
@@ -3904,27 +3892,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 83,
-      "con": 87
+      "pro": 74,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Argument and Ground Rules"
+        "title": "First Causes, Infinite Regress, and Causal Loops"
       },
       {
-        "title": "Causation Loops and Regress"
+        "title": "The Causal Principle and a Necessary Initial Natural State"
       },
       {
-        "title": "Causal Principle"
+        "title": "Necessity, Possibility, and Ultimate Explanation"
       },
       {
-        "title": "Necessity and Simplicity"
+        "title": "Beginninglessness, Timelessness, Events, and Change"
       },
       {
-        "title": "Special Properties and Modality"
-      },
-      {
-        "title": "Freedom States and Events"
+        "title": "Personal Agency and Comparative Explanatory Burden"
       }
     ]
   },
@@ -4347,11 +4332,11 @@ export const debateSummaries = [
     "number": "93",
     "title": "Braxton Hunter vs Matt Dillahunty: Does the Christian God Exist?",
     "label": "Christian God evidential standards",
-    "date": "2026-06-25",
+    "date": "2026-08-18",
     "duration": "2 hr 11 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Y9Uktg9nLx8",
     "motion": "Does the Christian God exist, and do libertarian freedom, the Kalam argument, resurrection evidence, hiddenness, and inconsistent revelation make Christian theism more reasonable than skepticism?",
-    "summary": "Hunter builds a cumulative case for Christian theism from freedom, cosmology, and resurrection; Dillahunty challenges the inferential method, evidential threshold, and divine-hiddenness implications.",
+    "summary": "Hunter builds a cumulative Christian case from freedom, causation, and resurrection; Dillahunty presses underdetermination, evidential discrimination, hiddenness, and revelation inconsistency.",
     "sides": {
       "pro": {
         "name": "Christian cumulative case",
@@ -4365,27 +4350,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 76,
-      "con": 83
+      "pro": 77,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Freedom And Rationality"
+        "title": "Libertarian Freedom, Rational Agency, and Divine Foreknowledge"
       },
       {
-        "title": "Kalam And Cause"
+        "title": "Kalam and the Identity of the Universe's Cause"
       },
       {
-        "title": "Resurrection Evidence"
+        "title": "Resurrection Evidence and Christian Identification"
       },
       {
-        "title": "Hiddenness And Revelation"
+        "title": "Divine Hiddenness, Revelation, and Textual Reliability"
       },
       {
-        "title": "Evidence Standards"
-      },
-      {
-        "title": "Method And Falsifiability"
+        "title": "Evidential Standards, Falsifiability, and Explanatory Discrimination"
       }
     ]
   },
@@ -4629,11 +4611,11 @@ export const debateSummaries = [
     "number": "99",
     "title": "Michael Jones vs Tom Jump: Does God Exist?",
     "label": "Digital physics and naturalistic pantheism",
-    "date": "2026-07-16",
+    "date": "2026-08-18",
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=UWCvKiWjV0g",
     "motion": "Does God exist, and do emergent spacetime, quantum consciousness, idealism, and the limits of metaphysical knowledge make theism more reasonable than naturalistic alternatives?",
-    "summary": "Jones argues that emergent spacetime and consciousness point to a governing mind; Jump argues that the same data underdetermine theism and fit naturalistic pantheism.",
+    "summary": "Jones defended theistic idealism through consciousness and emergent spacetime; Jump pressed underdetermination, epistemic limits, natural alternatives, and the explanatory cost of divine attributes.",
     "sides": {
       "pro": {
         "name": "Theistic idealism",
@@ -4647,27 +4629,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 78
+      "pro": 76,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Opening Case"
+        "title": "Emergent Spacetime, Quantum Information, and Cosmic Mind"
       },
       {
-        "title": "Consensus And Evidence"
+        "title": "Consciousness, Reduction, and Idealist Ontology"
       },
       {
-        "title": "Metaphysical Stops"
+        "title": "Abduction, Knowledge Limits, and Metaphysical Inference"
       },
       {
-        "title": "Naturalism And Method"
+        "title": "Underdetermination, Explanatory Scope, and Parsimony"
       },
       {
-        "title": "Labels And God"
-      },
-      {
-        "title": "Mind And Interface"
+        "title": "Necessary Foundations, Cosmic Origins, and Divine Identification"
       }
     ]
   },
@@ -4723,11 +4702,11 @@ export const debateSummaries = [
     "number": "101",
     "title": "Stephen Woodford vs Glen Scrivener: Does Religion Poison Everything?",
     "label": "Religion poison and Christian humanism",
-    "date": "2026-07-17",
+    "date": "2026-08-18",
     "duration": "1 hr 24 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=8J-WOwrq6bE",
     "motion": "Does religion poison everything by adding doctrine, dogma, revelation, and moral harm to human decency, or does Christianity supply the sacred ideals and institutions that made modern compassion possible?",
-    "summary": "Woodford argues religion corrupts human goods with dogma; Scrivener argues Christianity critiques religion and gave the West its compassion, equality, and sacred ideals.",
+    "summary": "Woodford pressed doctrinal harm and non-Christian moral goods; Scrivener answered through Christian anthropology, reforming institutions, sacred equality, and nonviolent interpretation.",
     "sides": {
       "pro": {
         "name": "Religion poisons",
@@ -4741,27 +4720,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 81,
-      "con": 78
+      "pro": 83,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Opening Stakes"
+        "title": "The Governing Test: Prior Human Goods or Distinctive Religious Contribution"
       },
       {
-        "title": "Clean Good Test"
+        "title": "Slavery, Abolition, and the Pace of Christian Reform"
       },
       {
-        "title": "Slavery And Scripture"
+        "title": "Women, Family, and Christian Social Institutions"
       },
       {
-        "title": "Women And Goodness"
+        "title": "Moral Grounding, Divine Love, and Equal Human Worth"
       },
       {
-        "title": "Abolition And Compassion"
+        "title": "Conquest Narratives, Revelation, and Religious Violence"
       },
       {
-        "title": "Science Violence Closing"
+        "title": "Universal Compassion and Its Historical Sources"
       }
     ]
   },
@@ -4820,11 +4799,11 @@ export const debateSummaries = [
     "number": "103",
     "title": "Stephen Woodford vs Simon Edwards: Is It Rational to Believe in God?",
     "label": "Rational theism and gratuitous evil",
-    "date": "2026-07-17",
+    "date": "2026-08-18",
     "duration": "51 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=g1TlLCSn_5o",
     "motion": "Is belief in an all-powerful, all-loving God rational given alleged gratuitous evil, salvation confusion, rationality, design, and morality?",
-    "summary": "Woodford argues classical theism is irrational because gratuitous evil and salvation confusion overwhelm the evidence; Edwards argues God best explains rationality, design, and objective morality.",
+    "summary": "Woodford presses suffering, revelation, and evidential gaps; Edwards answers through a cumulative theistic case grounded in reason, order, morality, and purpose.",
     "sides": {
       "pro": {
         "name": "Theism irrational",
@@ -4839,26 +4818,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 82,
-      "con": 77
+      "con": 78
     },
     "sections": [
       {
-        "title": "Opening Cases"
+        "title": "Rational warrant and trust in reason"
       },
       {
-        "title": "Rationality And Naturalism"
+        "title": "Suffering, gratuitous evil, and divine love"
       },
       {
-        "title": "Evil And Theodicy"
+        "title": "Objective morality and its grounding"
       },
       {
-        "title": "Morality And Euthyphro"
+        "title": "Design, evolution, and human purpose"
       },
       {
-        "title": "Bible And History"
-      },
-      {
-        "title": "Evolution And Purpose"
+        "title": "Revelation, miracles, and salvation confusion"
       }
     ]
   },
@@ -5931,11 +5907,11 @@ export const debateSummaries = [
     "number": "126",
     "title": "William Lane Craig vs Scott Clifton: The Kalam Cosmological Argument",
     "label": "Kalam cosmological argument",
-    "date": "2026-07-30",
+    "date": "2026-08-18",
     "duration": "1 hr 00 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=TmYCwjU_5Wc",
     "motion": "Does the Kalam causal premise justify a transcendent cause of the universe, or is ordinary causation too bound to space, time, and material conditions to support that inference?",
-    "summary": "Craig defends the causal premise as a metaphysical principle that leads to a transcendent creator; Clifton grants a cosmic beginning for argument's sake while challenging the premise's scope and causal imagery.",
+    "summary": "Craig defends metaphysical causation beyond spacetime, while Clifton argues ordinary causal evidence supports narrower principles and leaves transcendent creation insufficiently warranted.",
     "sides": {
       "pro": {
         "name": "Kalam defense",
@@ -5949,27 +5925,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 81
+      "pro": 82,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Kalam Ground Rules"
+        "title": "Physical or Metaphysical Scope of the Causal Principle"
       },
       {
-        "title": "Material Cause Parity"
+        "title": "Material Accompaniment and Immaterial Agent Causation"
       },
       {
-        "title": "Concrete Objects"
+        "title": "Temporal Beginning and the Universe's Boundary"
       },
       {
-        "title": "Metaphysical Scope"
+        "title": "Restricted Causal Principles and Ordinary Regularity"
       },
       {
-        "title": "Nothing Language"
-      },
-      {
-        "title": "Prior's Challenge"
+        "title": "Selective Uncaused Existence and the Arbitrary-Objects Challenge"
       }
     ]
   },
@@ -6417,11 +6390,11 @@ export const debateSummaries = [
     "number": "136",
     "title": "Ross Douthat vs Bart Ehrman: Did Jesus Rise From the Dead?",
     "label": "Resurrection, Gospel testimony, and belief",
-    "date": "2026-07-30",
+    "date": "2026-08-18",
     "duration": "1 hr 24 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=V7EwdZ0Z_gc",
     "motion": "How much historical confidence should readers place in the Gospels and resurrection accounts: reliable witness traces or later traditions shaped by memory, theology, and debate?",
-    "summary": "Douthat presses whether Gospel coherence, local knowledge, and resurrection strangeness favor a stronger historical reading; Ehrman argues that early belief and some historical core do not establish reliable Gospel narration or a physical resurrection.",
+    "summary": "Douthat pressed witness continuity and resurrection strangeness; Ehrman narrowly prevailed through source criticism, calibrated historical method, and a multistage visionary reconstruction.",
     "sides": {
       "pro": {
         "name": "Historical-resurrection challenge",
@@ -6435,27 +6408,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 84
+      "pro": 84,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Historical Existence and Sources"
+        "title": "Documentary Base, Dating, and Historical Proximity"
       },
       {
-        "title": "Miracles and Historical Method"
+        "title": "Transmission, Variation, and Gospel Contradictions"
       },
       {
-        "title": "Luke-Acts and Dating"
+        "title": "Historical Method and Extraordinary Claims"
       },
       {
-        "title": "Contradictions and Eyewitness Memory"
+        "title": "Experiences and the Origins of Resurrection Belief"
       },
       {
-        "title": "Geography, Names, and Transmission"
-      },
-      {
-        "title": "Visions, Doubt, and Resurrection"
+        "title": "Resurrection Narratives: Witness Traces or Apologetic Development"
       }
     ]
   },
@@ -8014,11 +7984,11 @@ export const debateSummaries = [
     "number": "172",
     "title": "Christopher Hitchens vs Alister McGrath: Poison or Cure? Religious Belief in the Modern World",
     "label": "Religious truth, morality, violence, and meaning",
-    "date": "2026-08-01",
+    "date": "2026-08-18",
     "duration": "1 hr 40 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Xc0kbM4tBYE",
     "motion": "Is religious belief in the modern world intellectually credible and morally constructive, or is it an evidentially unsupported source of coercion and harm?",
-    "summary": "McGrath argues that Christianity is compatible with science, supports human value, and contains resources for moral correction and hope; Hitchens argues that revelation fails evidentially and turns ordinary human failings into divinely authorized coercion.",
+    "summary": "Hitchens pressed evidential, coercive, and secular-moral objections; McGrath defended interpretive openness, transcendent morality, restorative doctrine, and Christianity's nonviolent norms.",
     "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
@@ -8033,21 +8003,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 83,
-      "con": 90
+      "pro": 80,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Science, explanation, and evidential standards"
+        "title": "Public Evidence, Science, and Religious Explanation"
       },
       {
-        "title": "Morality and human flourishing"
+        "title": "Divine and Secular Grounds of Moral Obligation"
       },
       {
-        "title": "Violence, totalitarianism, and self-correction"
+        "title": "Religious Harm, Extremism, and Constructive Effects"
       },
       {
-        "title": "Resurrection, salvation, and freedom"
+        "title": "Scripture, Salvation, Sacrifice, and Coercive Authority"
+      },
+      {
+        "title": "Consolation, Human Dignity, and Worldview Motivation"
       }
     ]
   },

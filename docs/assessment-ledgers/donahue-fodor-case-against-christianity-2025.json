@@ -1,0 +1,1940 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-02-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-02-production-compatibility",
+  "status": "frozen-post-canary-batch-02-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 2,
+  "debateNumber": "66",
+  "debateId": "donahue-fodor-case-against-christianity-2025",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-02-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "2b760a3ec2b69a32a7fa2e5dcddc679e6619a79f7cbfcb426e57d1928dd7d21c",
+    "calculatedScoresSha256": "15559f8d7d6b5cf8c3f5edc304359ddd1283e813725b3d01df09d8e2b7149aa2",
+    "finalizationAuditSha256": "69ac4aeae7a8ec810ba3f426d08402e3838e2cb6520439fdfb0288da86d4fd68",
+    "renderingAuditSha256": "5022557b5315ae792f3c7571c0262a187d3e5c15fb03715a948b85b58784cbfe",
+    "finalCandidateSha256": "869adb914d4de2817b33e8605f072bb299fe83a11b811fa7aa5c970e3f824bc1",
+    "eventsPath": ".assessment-cache/captions/jOYiPLT41wM/events.json",
+    "eventsSha256": "a2553e53ff209dd2d64f64b11b146c42c63ebbafcb0871b1041759ff0ec221a6",
+    "finalJudgmentSha256": "1a6dd53e0309dd16fc717b219485caaf8bb25f1b1707e5ba143aea36fbc2e0f6"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "66",
+    "debateId": "donahue-fodor-case-against-christianity-2025",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-reflective-christian-credibility",
+        "side": "pro",
+        "description": "Establish reflective Christianity as credible through a cumulative case from philosophical reasoning, scriptural and experiential considerations, and resurrection evidence, while limiting skeptical inferences from evil, disagreement, expert dissent, and Christian moral failure.",
+        "successCriteria": "The route succeeds if the positive considerations provide reasonable warrant for Christianity and the negative considerations neither render its core claims unlikely nor defeat the cumulative case when assessed together.",
+        "motionBridge": {
+          "bridgeId": "pro-motion-credibility-bridge",
+          "tier": "motion",
+          "description": "Connect the cumulative positive case and the answers to skeptical objections to the conclusion that reflective Christianity remains credible."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-central-philosophical-warrant",
+            "tier": "central",
+            "description": "Show that philosophical arguments can provide discriminating support for theism despite uncertainty about premises, divine motivations, and evidential partitioning."
+          },
+          {
+            "bridgeId": "pro-central-christian-evidence",
+            "tier": "central",
+            "description": "Show that revelation, religious experience, and resurrection considerations supply warrant for distinctively Christian claims rather than generic theism alone."
+          },
+          {
+            "bridgeId": "pro-central-defeater-control",
+            "tier": "central",
+            "description": "Show that evil, religious disagreement, expert dissent, and moral failure do not outweigh or defeat the positive cumulative case."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-subsidiary-epistemic-limits",
+            "tier": "subsidiary",
+            "description": "Specify when cognitive limits and consequential complexity legitimately restrict skeptical likelihood judgments without indiscriminately defeating positive arguments."
+          },
+          {
+            "bridgeId": "pro-subsidiary-confidence-scope",
+            "tier": "subsidiary",
+            "description": "Distinguish reasonable Christian credibility from certainty and explain why acknowledged disagreement need not require an atheistic conclusion."
+          }
+        ]
+      },
+      {
+        "routeId": "con-skeptical-unlikelihood",
+        "side": "con",
+        "description": "Establish skeptical atheism by challenging the predictive and explanatory force of the positive Christian considerations and presenting evil, religious disagreement, expert dissent, and Christian moral failure as cumulative evidence against Christianity.",
+        "successCriteria": "The route succeeds if the positive arguments fail to make Christianity sufficiently probable and the negative considerations are better expected without the Christian account of God, revelation, resurrection, and transformation.",
+        "motionBridge": {
+          "bridgeId": "con-motion-unlikelihood-bridge",
+          "tier": "motion",
+          "description": "Connect the failure of the positive case and the cumulative skeptical evidence to the conclusion that Christianity is unlikely."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-central-positive-case-undercut",
+            "tier": "central",
+            "description": "Show that philosophical arguments, biblical beauty, religious experience, and resurrection evidence lack the claimed discriminatory or explanatory force."
+          },
+          {
+            "bridgeId": "con-central-world-evidence",
+            "tier": "central",
+            "description": "Show that apparently preventable suffering and persistent religious confusion are less expected under the proposed Christian God than under naturalism."
+          },
+          {
+            "bridgeId": "con-central-social-epistemic-evidence",
+            "tier": "central",
+            "description": "Show that informed dissent and the observed moral record materially reduce confidence in Christianity's truth and transformative claims."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-subsidiary-alternative-explanations",
+            "tier": "subsidiary",
+            "description": "Supply naturalistic explanations for fine-tuning and resurrection data that avoid disputed assumptions about divine psychology or miraculous intervention."
+          },
+          {
+            "bridgeId": "con-subsidiary-consistency-test",
+            "tier": "subsidiary",
+            "description": "Require consistent treatment of uncertainty, cognitive limitation, comparative expertise, and likelihood reasoning across positive and negative arguments."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+        "title": "Philosophical Arguments, Fine-Tuning, and Divine Psychology",
+        "weightPercent": 24,
+        "rationale": "This issue tests whether philosophical and fine-tuning arguments predict a life-permitting universe under theism or instead depend on uncertain premises, contested value theories, and arbitrary evidential partitions."
+      },
+      {
+        "sectionId": "scripture-religious-experience-and-reflective-warrant",
+        "title": "Scripture, Religious Experience, and Reflective Warrant",
+        "weightPercent": 14,
+        "rationale": "This issue concerns whether biblical qualities and religious experience distinguish Christian revelation and justify reflective belief despite rival experiences, counterarguments, and disagreement."
+      },
+      {
+        "sectionId": "resurrection-and-naturalistic-explanation",
+        "title": "Resurrection Evidence and Naturalistic Explanation",
+        "weightPercent": 19,
+        "rationale": "This issue addresses whether physical resurrection best explains the burial, appearances, and resulting bodily-resurrection belief or whether a naturalistic sequence explains the same evidence."
+      },
+      {
+        "sectionId": "evil-disagreement-and-epistemic-limitation",
+        "title": "Evil, Religious Disagreement, and Epistemic Limitation",
+        "weightPercent": 27,
+        "rationale": "This issue bears directly on whether suffering and failed or uneven revelation are improbable under Christianity, and whether appeals to consequential complexity or cognitive limits answer those inferences consistently."
+      },
+      {
+        "sectionId": "expert-dissent-confidence-and-moral-fruit",
+        "title": "Expert Dissent, Rational Confidence, and Christian Moral Fruit",
+        "weightPercent": 16,
+        "rationale": "This issue examines how interdisciplinary and specialist disagreement should constrain confidence and whether Christianity's claimed moral transformation generates unmet observable expectations relevant to credibility."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "con-philosophical-divine-psychology-undercut",
+        "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "constructive",
+        "proposition": "Philosophical arguments for God depend on numerous uncertain assumptions and speculative inferences about divine desires, motivations, and reasons for acting.",
+        "sourceSpan": {
+          "startEvent": 126,
+          "endEvent": 177,
+          "excerpt": "I mean it sort of related to the first but the other broad uh concern I have with philosophical alignments for God's existence is that many of them I think are susceptible to the what I call what has been called the problem of divine psychology which is the idea that they require some sort of inference or knowledge about God's uh desires or motivations or reasons for acting one"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The host explicitly solicits Fodor's reasons, and the uninterrupted answer uses first-person statements of his skeptical position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-positive-case-undercut"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This is a constructive challenge to the discriminatory force of philosophical theistic arguments, so no earlier opposing move is targeted."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection is recoverable and its key terms are stable, though the phrase many philosophical arguments leaves its exact scope somewhat open."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker presents a broad concern rather than a conclusive refutation and expressly treats the relevant assumptions as uncertain."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The inference from dependence on uncertain divine motives to reduced argumentative force is coherent, with the breadth of application left implicit."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central philosophical-warrant bridge by challenging the predictive assumptions used in theistic arguments."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The passage states a general methodological objection without developing a competing interpretation that requires a charity test."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "Within constructive moves, it directly develops a central objection and identifies the disputed inferential dependency."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly says many philosophical arguments require inference or knowledge about God's desires, motivations, or reasons for acting.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-divine-motivation-from-moral-value",
+        "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+        "side": "pro",
+        "speaker": "Miles K. Donahue",
+        "moveKind": "reply",
+        "proposition": "A perfectly good God's creative motivations can be grounded in moral value, so the goods enabled by conscious life make a life-permitting universe reasonably expected under theism.",
+        "sourceSpan": {
+          "startEvent": 254,
+          "endEvent": 293,
+          "excerpt": "morally value some State of Affairs is the more likely it is that God will actualize It Whatever the context might be and so then you you would want to show in the context of the relevant theistic argument take take fine tuning that a universe fine tuned for life is a great good and it allows for moral goods and therefore it's not terribly unlikely that God would actualize it and so that the obviously Rough and Ready connection is between God's"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Donahue identifies himself as the author of a paper on divine psychology and presents its proposed moral-value inference before requesting a response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-philosophical-warrant"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-philosophical-divine-psychology-undercut"
+          ],
+          "components": [
+            {
+              "componentId": "pro-divine-motivation-from-moral-value-component-01",
+              "targetMoveId": "con-philosophical-divine-psychology-undercut",
+              "text": "Whether divine creative motivation can be grounded without merely speculating about God's desires.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the decisive concern by proposing moral value as a principled basis for predicting what a perfectly good God would create."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The proposition and comparison are clear, but the ceteris-paribus limits on moving from greater moral value to greater creative likelihood remain implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Moral value plausibly supplies a motive, but the excerpt moves somewhat quickly from that motive to an expectation of fine-tuning."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Divine motives may remain underdetermined even if conscious life realizes genuine moral goods.",
+          "decisiveQualification": "The reply must show comparative likelihood, not merely identify one intelligible divine reason."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central philosophical-warrant bridge by answering the divine-motivation challenge at its main inferential point."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "The proposal fairly addresses underdetermination through a substantive moral principle, but does not fully establish comparative dominance over other goods."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It directly supplies the kind of motivation-grounding principle demanded, though its defense of that principle remains compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt states that more morally valuable states are likelier for God to actualize and applies that principle to life-permitting fine-tuning.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-fine-tuning-creative-possibilities",
+        "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "reply",
+        "proposition": "Appealing to divine goodness does not make a universe like ours probable because the relevant theory of goodness is disputed and theism permits vastly many unlike creative possibilities.",
+        "sourceSpan": {
+          "startEvent": 294,
+          "endEvent": 383,
+          "excerpt": "I find that often these these claims are it well at least again I'm still exploring this but I've not been very convinced about the ability to provide a combination of these views that seems to render making our universe and only our universe or a universe like ours to be fairly probable it seems to me that it always gets swamped by other creative possibilities that don't look"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Fodor begins by identifying the proposal as a familiar approach and then develops sustained first-person objections to both its divine and moral premises.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-positive-case-undercut"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-divine-motivation-from-moral-value"
+          ],
+          "components": [
+            {
+              "componentId": "con-fine-tuning-creative-possibilities-component-01",
+              "targetMoveId": "pro-divine-motivation-from-moral-value",
+              "text": "Whether moral value makes a life-permitting universe like ours comparatively probable under theism.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-fine-tuning-creative-possibilities-component-02",
+              "targetMoveId": "pro-divine-motivation-from-moral-value",
+              "text": "Whether a defensible theory of goodness supports the proposed divine-motivation inference.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly challenges both the disputed value theory and the comparative probability claim by invoking numerous unlike valuable possibilities."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection is clear and maintains a stable comparison, while the speaker explicitly qualifies it as a still-developing judgment."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker claims lack of convincing comparative probability rather than impossibility and openly acknowledges ongoing exploration."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Moral-value theory might privilege universes containing conscious agents and distinctive interpersonal goods.",
+          "decisiveQualification": "Privilege for some life does not by itself show that our universe or a relevantly similar universe receives substantial probability."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally supports the positive-case undercut by attacking fine-tuning's claimed discriminatory likelihood under theism."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the decisive comparative-probability inference and also addresses the moral-theory premise supporting that inference."
+          }
+        },
+        "evidenceBasis": "The excerpt says proposed combinations of divine and moral views fail to render our universe fairly probable because other creative possibilities swamp it.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-fine-tuning-background-laws",
+        "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+        "side": "pro",
+        "speaker": "Miles K. Donahue",
+        "moveKind": "reply",
+        "proposition": "When the laws of nature and psychophysical laws are included as background information, the relevant comparison narrows to universes under which fine-tuning remains expected if theism is true.",
+        "sourceSpan": {
+          "startEvent": 609,
+          "endEvent": 654,
+          "excerpt": "between mental and physical States and so I say well let's just take on the psychophysical laws as background and so if we include both of those the laws of nature the universe we we zero in on those universes governed by our laws of nature and those that have our psychophysical laws then we ought to expect a fine-tuned universe if theism is true and it is unlikely if natural"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Donahue calls the preceding objection strong, introduces his published response, and specifies the two groups of laws his analysis conditions upon.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-philosophical-warrant"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-fine-tuning-creative-possibilities",
+            "con-philosophical-divine-psychology-undercut"
+          ],
+          "components": [
+            {
+              "componentId": "pro-fine-tuning-background-laws-component-01",
+              "targetMoveId": "con-fine-tuning-creative-possibilities",
+              "text": "Whether the relevant probability comparison is swamped by radically unlike divine creative possibilities.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-fine-tuning-background-laws-component-02",
+              "targetMoveId": "con-philosophical-divine-psychology-undercut",
+              "text": "Whether fine-tuning continues to rely on an uncontrolled inference about divine motivation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply narrows the evidential comparison by conditioning on natural and psychophysical laws, thereby addressing both unrestricted possibilities and motive underdetermination."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The conditioning proposal is recoverable and technically stable, but the evidential independence required for lawful backgrounding is left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The narrowed conditional may yield the stated expectation, but asserting that it is the relevant comparison outruns the defense supplied here."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Conditioning on our laws may improperly remove evidence that itself requires explanation under the competing hypotheses.",
+          "decisiveQualification": "The background laws must be independently warranted rather than selected merely to exclude unfavorable creative possibilities."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The conditional inference is internally understandable, but the crucial bridge authorizing the laws as background rather than evidence is missing."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central philosophical-warrant bridge by proposing a restricted fine-tuning comparison against the swamping challenge."
+          },
+          "representationalCharity": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (64 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It squarely contacts the swamping objection, though it does not fully justify treating the selected laws as legitimate background information."
+          }
+        },
+        "evidenceBasis": "The excerpt conditions on laws of nature and psychophysical laws and then claims that universes within that restricted class should be fine-tuned under theism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-scriptural-beauty-baseline",
+        "sectionId": "scripture-religious-experience-and-reflective-warrant",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "reply",
+        "proposition": "The literary beauty and cultural importance of scripture do not establish divine inspiration because no defensible baseline distinguishes inspired texts from impressive human literature or rival scriptures.",
+        "sourceSpan": {
+          "startEvent": 861,
+          "endEvent": 928,
+          "excerpt": "similar argument for the Quran which is that like no person could have written this without divine inspiration because of how amazing it is and beautiful and intricate and all that sort of stuff um I think that the simplest objections to this is simply to ask what the Baseline is for making this this assessment so on the one hand what we would need is some kind of criteria or or collection of texts that we can establish"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The sustained answer follows Donahue's question and is delivered in Fodor's skeptical first-person voice.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-positive-case-undercut"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-fine-tuning-background-laws",
+            "pro-divine-motivation-from-moral-value"
+          ],
+          "components": [
+            {
+              "componentId": "con-scriptural-beauty-baseline-component-01",
+              "targetMoveId": "pro-fine-tuning-background-laws",
+              "text": "Whether conditioning on natural and psychophysical laws legitimately answers the fine-tuning possibility-space objection.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-scriptural-beauty-baseline-component-02",
+              "targetMoveId": "pro-divine-motivation-from-moral-value",
+              "text": "Whether moral value grounds a comparative prediction of a life-permitting universe.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move offers issue-bearing skeptical material about scripture, but it does not contact either earlier philosophical argument's decisive component."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The baseline and discrimination demand is stated clearly, with rival scripture and impressive human literature explicitly defining its scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move argues that beauty does not establish inspiration without a baseline, a proportionate defeater claim rather than an excessive conclusion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Exceptional literary and cultural qualities might be probabilistic signs of inspiration even without a known corpus of inspired controls.",
+          "decisiveQualification": "A probabilistic sign still requires a defensible comparative baseline against human and rival religious texts."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The inference from absent discriminatory baseline to failure of beauty as evidence is clear, while allowing the text's literary merit."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central positive-case undercut by challenging scriptural beauty as discriminating evidence for Christian inspiration."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "It is a relevant contribution to the overall positive-case dispute but is a nonanswer to the only legally earlier opposing moves."
+          }
+        },
+        "evidenceBasis": "The excerpt compares similar claims for the Quran and asks for criteria or a baseline capable of distinguishing inspired from impressive texts.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-self-authentication-discrimination",
+        "sectionId": "scripture-religious-experience-and-reflective-warrant",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "reply",
+        "proposition": "Calling Christian religious experience self-authenticating does not resolve its epistemic weakness because it provides no reliable way to distinguish Christian revelation from rival religious experiences.",
+        "sourceSpan": {
+          "startEvent": 1038,
+          "endEvent": 1075,
+          "excerpt": "get to the point of how you can reliably distinguish the two um particularly because the idea is that you can only tell if you can only tell what it's like after you've experienced it then I mean which I think actually is what he says right so if you haven't experienced it then you won't be able to know but if you have well then you will but you will never be able to explain it"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The answer directly follows Donahue's presentation of Craig's position and consistently expresses Fodor's skeptical epistemology.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-positive-case-undercut"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-fine-tuning-background-laws",
+            "pro-divine-motivation-from-moral-value"
+          ],
+          "components": [
+            {
+              "componentId": "con-self-authentication-discrimination-component-01",
+              "targetMoveId": "pro-fine-tuning-background-laws",
+              "text": "Whether the proposed evidential background legitimately narrows the fine-tuning comparison.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "con-self-authentication-discrimination-component-02",
+              "targetMoveId": "pro-divine-motivation-from-moral-value",
+              "text": "Whether moral goodness supplies a sufficiently discriminating divine creative motive.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The religious-experience discrimination objection materially bears on the cumulative positive case but answers neither legally earlier philosophical move."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The demand for reliable discrimination is clear, and the argument consistently distinguishes private felt certainty from public epistemic reliability."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move claims an unresolved reliability problem rather than asserting that all religious experience is false or epistemically worthless."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A self-authenticating experience could confer first-person warrant even if its quality cannot be communicated to outsiders.",
+          "decisiveQualification": "First-person certainty does not itself supply a reliable method for distinguishing incompatible religious experiences."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The conceptual symmetry is well explained, but the excerpt supplies no representative detail about the actual range and structure of rival experiences."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally supports the positive-case undercut by challenging religious experience's ability to discriminate Christianity from rival revelations."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "It is a focused argument in a new issue area and therefore remains a relevant nonanswer to the available earlier targets."
+          }
+        },
+        "evidenceBasis": "The excerpt asks how incompatible experiences can reliably be distinguished when only those who undergo each experience can supposedly recognize its authenticity.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-properly-basic-experiential-warrant",
+        "sectionId": "scripture-religious-experience-and-reflective-warrant",
+        "side": "pro",
+        "speaker": "Miles K. Donahue",
+        "moveKind": "reply",
+        "proposition": "Belief in God may be properly basic when grounded in coherent and undefeated direct experience of divine reality, analogously to ordinary warranted trust in the external world.",
+        "sourceSpan": {
+          "startEvent": 1076,
+          "endEvent": 1116,
+          "excerpt": "belief in God can be properly basic I mean Alvin planting is a smart guy and so reformed epistemology isn't obviously ludicrous which is this claim that like in the same way that I am justified in believing in an external world and and for believing that I'm not dreaming right now that I'm not trapped in The Matrix I can be justified in believing in God and it would seem that the common element is that I just directly experience"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker explicitly describes his own enduring experience of God while presenting Plantinga-style reformed epistemology.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-christian-evidence"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-self-authentication-discrimination"
+          ],
+          "components": [
+            {
+              "componentId": "pro-properly-basic-experiential-warrant-component-01",
+              "targetMoveId": "con-self-authentication-discrimination",
+              "text": "Whether direct experience can warrant belief despite the inability to provide an outsider-accessible discriminator.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-properly-basic-experiential-warrant-component-02",
+              "targetMoveId": "con-self-authentication-discrimination",
+              "text": "Whether rival religious experiences defeat otherwise properly basic Christian experiential belief.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The external-world analogy contacts the demand for first-person warrant, but it does not resolve the decisive rival-experience and defeater-discrimination component."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Proper basicality and direct experience are used consistently, though coherence and absence of defeaters are more implicit than demonstrated in the excerpt."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker claims that belief may be justified and explicitly avoids presenting reformed epistemology as obviously decisive or incontestable."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Rival religious experiences may be equally direct and properly basic for those who undergo them.",
+          "decisiveQualification": "Initial warrant can exist while later awareness of incompatible experiences supplies a defeater requiring discrimination."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The external-world analogy gives a coherent route to noninferential warrant, but relevant disanalogies and defeater conditions remain materially compressed."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central Christian-evidence bridge by offering an epistemic basis for warranted belief grounded in religious experience."
+          },
+          "representationalCharity": {
+            "value": 66,
+            "rationale": "The analogy fairly establishes possible prima facie warrant but does not adequately incorporate the strongest disagreement-based defeater."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "It contacts a secondary warrant component but leaves the strongest rival-experience component unanswered, placing it midrange among partial answers."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes Plantinga-style proper basicality and analogizes direct experience of God to ordinary warranted belief in the external world.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-resurrection-naturalistic-sequence",
+        "sectionId": "resurrection-and-naturalistic-explanation",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "reply",
+        "proposition": "A temporary reburial, bereavement experiences, memory-shaping biases, and socialization can jointly explain sincere early Christian resurrection belief without a literal bodily resurrection.",
+        "sourceSpan": {
+          "startEvent": 1272,
+          "endEvent": 1397,
+          "excerpt": "rhbs model which is probably a little bit overly pompous for what it is because it's mostly just an appeal to uh existing findings or concepts or ideas from likey psychology sociology um and a little bit of um historical case study to explain how we might be able to account for the emergence of the belief emergence of the sincere belief that Jesus had risen from the dead by his his early"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Fodor identifies the account as his RHBS model and systematically explains each naturalistic component in the first person.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-alternative-explanations"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-properly-basic-experiential-warrant"
+          ],
+          "components": [
+            {
+              "componentId": "con-resurrection-naturalistic-sequence-component-01",
+              "targetMoveId": "pro-properly-basic-experiential-warrant",
+              "text": "Whether direct divine experience can confer properly basic warrant despite rival religious experience.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The naturalistic resurrection account bears on Christian evidence generally but does not address the earlier experiential-warrant inference or its defeater condition."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The RHBS account and its naturalistic components are identifiable, and the move presents them as a possible joint explanation rather than a certainty."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The account is offered as a way the belief could emerge and is explicitly characterized as drawing on existing psychological and sociological ideas."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The proposed multi-stage sequence is coherent and explanatory in outline, though dependencies among reburial, experiences, memory, and socialization are compressed."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary alternative-explanations bridge by supplying a naturalistic sequence for sincere resurrection belief."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The selected passage principally constructs an alternative sequence and does not itself engage a sufficiently specified opposing interpretation for testing."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "It supplies substantial contrary evidence in a different issue area, making it a relevant nonanswer to the available target."
+          }
+        },
+        "evidenceBasis": "The excerpt labels the RHBS model and grounds it in psychology, sociology, and historical case study to explain sincere early resurrection belief.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-resurrection-belief-expectations",
+        "sectionId": "resurrection-and-naturalistic-explanation",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "reply",
+        "proposition": "Jewish expectations do not uniquely favor a resurrection inference, while collective experiences and a perceived empty tomb could produce bodily-resurrection belief under a naturalistic account.",
+        "sourceSpan": {
+          "startEvent": 1507,
+          "endEvent": 1567,
+          "excerpt": "like that um and so at that point I don't think that there's anything that distinguishes Craig's account from my account because Craig as I as far as I can understand he argues that the disciples came to believe that Jesus had been resurrected specifically uh because the tomb was empty and because Jesus appeared to them in a way that convinced them that it was some kind of bodily"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The response directly addresses Donahue's Craig-style objection and restates distinctive elements of Fodor's naturalistic model.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-alternative-explanations"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-properly-basic-experiential-warrant"
+          ],
+          "components": [
+            {
+              "componentId": "con-resurrection-belief-expectations-component-01",
+              "targetMoveId": "pro-properly-basic-experiential-warrant",
+              "text": "Whether direct experience can make theistic belief properly basic in the face of epistemic competitors.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move advances the resurrection alternative by explaining an empty tomb and bodily interpretation, but it does not contact experiential proper basicality."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The naturalistic account's predicted empty tomb, appearances, and bodily interpretation are clearly identified without unstable terminology."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker argues that the same observations are available on his account, a comparative possibility claim proportionate to the excerpt's support."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Jewish background plus an empty tomb and vivid appearances may favor bodily resurrection over ordinary bereavement experience.",
+          "decisiveQualification": "The observations favor resurrection only if the naturalistic sequence cannot independently predict both emptiness and bodily interpretation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The response takes the bodily character seriously and attempts to reproduce it within the alternative rather than substituting a merely spiritual belief."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "It is material to the broader Christian-evidence dispute while remaining a nonanswer to the only legally available opposing target."
+          }
+        },
+        "evidenceBasis": "The excerpt states that Fodor's account, like Craig's, includes an empty tomb and appearances understood as bodily rather than merely spiritual.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-physical-appearance-explanation",
+        "sectionId": "resurrection-and-naturalistic-explanation",
+        "side": "pro",
+        "speaker": "Miles K. Donahue",
+        "moveKind": "reply",
+        "proposition": "Physical appearances of Jesus better explain both the reported phenomenological character of the appearances and the disciples' specifically bodily interpretation of their experiences.",
+        "sourceSpan": {
+          "startEvent": 1568,
+          "endEvent": 1598,
+          "excerpt": "them and that if they were merely hallucinations that wouldn't explain the phenomenological characteristics of the appearances and the narratives that we do have and so given that they had appearances of Jesus alive rather than appearances of Jesus or experiences of Jesus as alive rather than experiences of Jesus in heaven uh that is what is better explained by the resurrection"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Donahue explicitly frames the passage as advocacy for Craig and develops the resurrection explanation against Fodor's characterization.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-christian-evidence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-resurrection-belief-expectations",
+            "con-resurrection-naturalistic-sequence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-physical-appearance-explanation-component-01",
+              "targetMoveId": "con-resurrection-belief-expectations",
+              "text": "Whether the naturalistic account explains the appearances' phenomenological character and specifically bodily interpretation.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-physical-appearance-explanation-component-02",
+              "targetMoveId": "con-resurrection-naturalistic-sequence",
+              "text": "Whether hallucination and social-memory mechanisms adequately explain the reported appearance narratives.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly argues that physical appearances better explain both phenomenology and bodily interpretation, contacting the naturalistic model's decisive explanatory demand."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The explanatory claim is clear and stable, but the evidential status and scope of the appearance narratives are left as implicit qualifications."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Physical appearances would explain bodily interpretation, but the superiority claim exceeds the excerpt's limited defense of the narrative evidence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Naturalistic experiences plus an empty tomb and social interpretation could generate bodily belief without a physical Jesus.",
+          "decisiveQualification": "That account must explain the reported alive-and-present phenomenology rather than only the conclusion later drawn from it."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The resurrection-to-physical-appearance-to-bodily-belief inference is coherent, with a bounded gap in comparing all mechanisms of the rival sequence."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central Christian-evidence bridge by claiming superior explanation of the resurrection appearance evidence."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It expressly contacts the decisive comparative-explanation component and also challenges a central mechanism in the broader sequence."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that hallucinations do not explain the reported phenomenological character and that experiences of Jesus alive are better explained by resurrection.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-preventable-suffering-evidence",
+        "sectionId": "evil-disagreement-and-epistemic-limitation",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "constructive",
+        "proposition": "Extensive apparently preventable suffering is unexpected if a perfectly good and powerful God created the world to realize morally valuable well-being.",
+        "sourceSpan": {
+          "startEvent": 1668,
+          "endEvent": 1719,
+          "excerpt": "problem of evil is a good argument against you know at least traditional forms of theism um but it is it is going to be a bit contingent on what you think the nature of God is and what you think his um reasons for creating are so but certainly if you think as we discussed before with respect to the fun argument that uh God created in order to um exemplify the um exemplify the morally good states of of well"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Fodor begins the requested explanation of the problem of evil and develops it continuously through the delivered context boundary.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-world-evidence"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move introduces the evidential problem of apparently preventable suffering and has no earlier target requirement."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is framed conditionally on traditional divine attributes and morally valuable creation, keeping both scope and key terms controlled."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker treats the argument's force as contingent on one's account of God and divine reasons, appropriately limiting the conclusion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A perfectly good God may permit suffering for goods, freedom, soul-making, or consequences unavailable without it.",
+          "decisiveQualification": "Such possibilities answer the evidence only if they make the observed extent of apparently preventable suffering reasonably expected."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "Extensive suffering is a concrete evidential datum, but the excerpt does not specify representative cases or quantify comparative expectations."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central world-evidence bridge by arguing that observed suffering is unexpected under the proposed Christian God."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt frames evil as evidence against traditional theism when God creates to exemplify morally good states and possesses the relevant attributes.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-consequential-complexity-defense",
+        "sectionId": "evil-disagreement-and-epistemic-limitation",
+        "side": "pro",
+        "speaker": "Miles K. Donahue",
+        "moveKind": "reply",
+        "proposition": "Because historical consequences are deeply interconnected and compound beyond human prediction, only an omniscient mind could reliably compare the total outcomes relevant to apparently gratuitous evil.",
+        "sourceSpan": {
+          "startEvent": 1871,
+          "endEvent": 1911,
+          "excerpt": "is determined solely by the value of the consequences of one's actions maybe maybe not but I think on its face anyway that's a plausible claim that if we that that the the the effects of changing a certain event are compound over time little changes accumulate into hugely Divergent histories and from that perspective it would seem that only an omniscient or near omniscient mind"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker identifies the skeptical-theist view he finds most plausible, names its consequential-complexity rationale, develops it, and asks for a response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-world-evidence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-preventable-suffering-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-consequential-complexity-defense-component-01",
+              "targetMoveId": "con-preventable-suffering-evidence",
+              "text": "Whether humans can reliably judge that apparently preventable suffering lacks consequences sufficient to justify divine permission.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The response contacts the key inference by arguing that compounding historical consequences prevent human observers from comparing total outcomes reliably."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Consequential complexity and the resulting epistemic limitation are clearly defined, with the claim presented as plausible rather than demonstrated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker repeatedly qualifies the claim and limits it to reliable total-outcome comparison, matching the argument actually supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Some suffering may be so apparently pointless that its evidential force survives uncertainty about remote consequences.",
+          "decisiveQualification": "General complexity must bear on the particular likelihood judgment without making all observed evidence indiscriminately inscrutable."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central world-evidence bridge by challenging the inference from apparent preventability to evidential improbability."
+          },
+          "representationalCharity": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (69 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly challenges the skeptical likelihood judgment and states why the observer lacks the information needed for that judgment."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that small changes compound into divergent histories and that only an omniscient or near-omniscient mind could compare the resulting outcomes.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-religious-contingency-confusion",
+        "sectionId": "evil-disagreement-and-epistemic-limitation",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "constructive",
+        "proposition": "Geographic religious contingency and deep Christian doctrinal disagreement are more expected under naturalism than under a God who intends to reveal beliefs and practices to humanity.",
+        "sourceSpan": {
+          "startEvent": 2098,
+          "endEvent": 2184,
+          "excerpt": "under naturalism it seems much less expected um if we think that there's an omnipotent and Omni benevolent God who's uh wants everyone to have access to this information um so this is um a general observation about the historical and Geographic contingency of religious belief and where it emerges and who didn't who didn't have access to information about Christianity and things"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Following an explicit topic transition and request for the skeptical argument, the speaker gives a sustained first-person explanation of two levels of religious disagreement.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-world-evidence"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move introduces religious contingency and doctrinal confusion as comparative world evidence and has no response target."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Geographic contingency, information access, and intra-Christian disagreement form a clear and consistently scoped evidential proposition."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim is comparative and uses expectation language rather than necessity, with its dependence on divine revelatory intent made explicit."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "God may value noncoercion, cultural development, or diverse searching enough to permit uneven revelation and disagreement.",
+          "decisiveQualification": "Those goods must explain the geographic pattern and deep doctrinal confusion despite the posited desire for accessible revelation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central world-evidence bridge by treating persistent religious confusion as less expected under Christianity."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts naturalism with an omnipotent, benevolent God who wants universal access to religious information and notes geographic contingency in access.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-disagreement-inscrutability-or-outweighing",
+        "sectionId": "evil-disagreement-and-epistemic-limitation",
+        "side": "pro",
+        "speaker": "Miles K. Donahue",
+        "moveKind": "reply",
+        "proposition": "Christianity may accommodate religious disagreement if its likelihood under Christianity is inscrutable given consequential complexity and Molinism, or if contrary evidence is outweighed within the cumulative case.",
+        "sourceSpan": {
+          "startEvent": 2185,
+          "endEvent": 2241,
+          "excerpt": "evidence here that you've delineated has an inscrutable likelihood given Christian Christianity that we just can't evaluate what kind of a circumstance of religious agreement or lack thereof we should expect if Christianity is true and again I think the best bet for that kind of option would be be the same that you would give in the problem of evil which would be a consequential complexity argument that also given molinism"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker says the problem has core plausibility, identifies what he considers Christianity's best response, and then states a secondary cumulative-case response.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-defeater-control"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-religious-contingency-confusion",
+            "con-preventable-suffering-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-disagreement-inscrutability-or-outweighing-component-01",
+              "targetMoveId": "con-religious-contingency-confusion",
+              "text": "Whether religious disagreement has a determinable low likelihood under Christianity.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-disagreement-inscrutability-or-outweighing-component-02",
+              "targetMoveId": "con-religious-contingency-confusion",
+              "text": "Whether disagreement evidence can be outweighed by the remaining cumulative Christian case.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-disagreement-inscrutability-or-outweighing-component-03",
+              "targetMoveId": "con-preventable-suffering-evidence",
+              "text": "Whether consequential complexity similarly limits likelihood judgments about evil.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the comparative-likelihood inference through inscrutability and separately proposes cumulative outweighing, while extending the complexity rationale to evil."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The two proposed responses—inscrutable likelihood and cumulative outweighing—are distinguishable and expressly presented as alternatives."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker says Christianity may accommodate the evidence and identifies these as possible responses, not as a demonstrated defeat."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Geographic and doctrinal contingency remains predictable evidence even if remote consequences and counterfactual freedom are complex.",
+          "decisiveQualification": "Invoking complexity must explain why the negative likelihood is inaccessible without equally disabling favorable Christian likelihood judgments."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (63 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports central defeater control by offering two ways religious disagreement might fail to defeat the cumulative Christian case."
+          },
+          "representationalCharity": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It expressly addresses the decisive likelihood inference and offers two answer routes, though neither route receives a full supporting warrant."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly claims religious disagreement may have inscrutable likelihood under Christianity because of consequential complexity and Molinism, with cumulative outweighing as another response.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-expert-dissent-selection-effects",
+        "sectionId": "expert-dissent-confidence-and-moral-fruit",
+        "side": "pro",
+        "speaker": "Miles K. Donahue",
+        "moveKind": "reply",
+        "proposition": "Broad philosophical opinion is weak evidence against theism because most philosophers lack specialist knowledge of contemporary philosophy of religion, while specialist opinion is affected by selection effects.",
+        "sourceSpan": {
+          "startEvent": 2531,
+          "endEvent": 2622,
+          "excerpt": "views on these arguments or their acquaintance with these arguments is very unsophisticated and they have no profound knowledge of the relevant issues I mean that's not indicting philosophers specifically for not understanding philosophy of religion I think that when you just come to understand what philosophy is it is such a huge expansive field that the collective opinion of"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn explicitly presents a response from the theistic perspective and uses first-person descriptions matching Donahue's stated expertise and position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-defeater-control"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-religious-contingency-confusion"
+          ],
+          "components": [
+            {
+              "componentId": "pro-expert-dissent-selection-effects-component-01",
+              "targetMoveId": "con-religious-contingency-confusion",
+              "text": "Whether geographic and doctrinal disagreement is less expected under intended Christian revelation.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The expertise and selection-effects argument bears on disagreement broadly but does not answer the revelation-based geographic and doctrinal likelihood demand."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The general-versus-specialist distinction is clear, but relevant expertise and the magnitude of alleged selection effects are only partly delimited."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Breadth of philosophy supports caution about general polls, but the stronger dismissal and selection-effect claim need further comparative support."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Broad philosophical opinion can remain evidence because adjacent specialties bear on theism and specialist populations may be positively selected.",
+          "decisiveQualification": "Reduced individual specialization does not make aggregate informed opinion insignificant, and selection effects require direction and magnitude evidence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "The field's breadth is a plausible observation, while claims about knowledge deficits and selection effects are asserted without representative data."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally supports defeater control by attempting to reduce the evidential force of broad and specialist expert dissent."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The response identifies a real expertise problem but understates the strongest case for relevant interdisciplinary competence."
+          },
+          "responsiveness": {
+            "value": 56,
+            "rationale": "It is closely issue-bearing contrary material but remains a relevant nonanswer to the legally available earlier religious-confusion target."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that philosophy is too expansive for general philosophers' views on philosophy of religion to carry substantial specialist evidential weight.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-informed-dissent-confidence",
+        "sectionId": "expert-dissent-confidence-and-moral-fruit",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "reply",
+        "proposition": "Persistent disagreement among informed people requires substantial moderation of confidence even when its exact degree is uncertain and relevant expertise extends beyond philosophy of religion.",
+        "sourceSpan": {
+          "startEvent": 2623,
+          "endEvent": 2713,
+          "excerpt": "disagreement amongst epistemic peers even if you take the philosophy of religion figure I I don't know it's like 60% theist or something like that last I remember looking at it but it's not like 99% right and the point is that there's more than enough examples of people with knowledge of these different areas who disagree I think to moderate at away from very strong commitments now exactly how much moderation"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker defends the previously introduced ten-percent estimate and explicitly frames it as his personal conciliatory judgment, identifying the turn as Fodor's.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-social-epistemic-evidence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-expert-dissent-selection-effects"
+          ],
+          "components": [
+            {
+              "componentId": "con-informed-dissent-confidence-component-01",
+              "targetMoveId": "pro-expert-dissent-selection-effects",
+              "text": "Whether informed disagreement remains evidentially significant despite generalist knowledge limits and specialist selection effects.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-informed-dissent-confidence-component-02",
+              "targetMoveId": "pro-expert-dissent-selection-effects",
+              "text": "Whether relevant expertise extends beyond specialists in philosophy of religion.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly argues that sufficiently informed dissent persists across relevant fields and supports moderation even if its exact magnitude is uncertain."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The moderation claim, informed-person reference class, and uncertainty about degree are clearly distinguished and consistently maintained."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker claims confidence should move away from extremes while expressly declining to claim precision about how far it must move."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Specialists may rationally retain high confidence because they possess discriminating evidence unavailable to broader philosophical opinion.",
+          "decisiveQualification": "Persistent dissent among knowledgeable specialists and adjacent experts still requires an account before near-certainty is rational."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central social-epistemic bridge by connecting informed dissent to a material reduction in confidence."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The reply allows differences in expertise and focuses on the bounded consequence of moderating extreme confidence rather than demanding suspension of belief."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the decisive expertise objection and its selection implication while carefully limiting the claimed degree of moderation."
+          }
+        },
+        "evidenceBasis": "The excerpt notes substantial theist and non-theist disagreement even within philosophy of religion and argues this warrants moderation from very strong commitments.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-disagreement-limits-confidence-not-belief",
+        "sectionId": "expert-dissent-confidence-and-moral-fruit",
+        "side": "pro",
+        "speaker": "Miles K. Donahue",
+        "moveKind": "reply",
+        "proposition": "Peer disagreement should lower confidence in theism, but disagreement alone does not justify an all-things-considered probability below one-half or the belief that God does not exist.",
+        "sourceSpan": {
+          "startEvent": 2714,
+          "endEvent": 2744,
+          "excerpt": "confidence in theism and I do agree with you that it is to move it in the downward Direction because you you can't I agree you can't be certain or 99% confident after taking account of the fact that all of these things are so complex and the relevant experts do disagree to some extent what I would take issue with is that there's any argument for atheism among the peer disagreement so I think 10% as the final probability that God"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn agrees that confidence in theism should move downward while objecting to treating disagreement as support for atheism, which coheres with Donahue's pro position.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-confidence-scope"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-informed-dissent-confidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-disagreement-limits-confidence-not-belief-component-01",
+              "targetMoveId": "con-informed-dissent-confidence",
+              "text": "Whether informed peer disagreement requires moderation of confidence in theism.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-disagreement-limits-confidence-not-belief-component-02",
+              "targetMoveId": "con-informed-dissent-confidence",
+              "text": "Whether such moderation supports an all-things-considered probability below one-half or atheistic belief.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply accepts the confidence-moderation demand and then limits its consequence, distinguishing downward adjustment from positive support for atheism."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Confidence reduction, final probability, and belief in atheism are clearly separated, with the claim expressly limited to disagreement alone."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The response accepts uncertainty and lower confidence while making the narrower calibrated claim that disagreement alone does not settle the balance."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Disagreement can be genuine evidence for atheism when the distribution of informed judgment is more expected if theism's evidence is weak.",
+          "decisiveQualification": "Even then, its evidential direction and size do not by themselves establish an all-things-considered probability below one-half."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary confidence-scope bridge by distinguishing rational moderation from abandoning theistic belief."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts both the accepted moderation component and the disputed inference from moderation to atheistic belief."
+          }
+        },
+        "evidenceBasis": "The excerpt agrees that expert disagreement lowers confidence from certainty or ninety-nine percent, but denies that disagreement alone supports a ten-percent final probability.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-christian-moral-transformation-test",
+        "sectionId": "expert-dissent-confidence-and-moral-fruit",
+        "side": "con",
+        "speaker": "James Fodor",
+        "moveKind": "constructive",
+        "proposition": "Christian claims that divine indwelling morally transforms believers generate an observable expectation that Christians should display better moral conduct than the historical and contemporary record appears to show.",
+        "sourceSpan": {
+          "startEvent": 3224,
+          "endEvent": 3282,
+          "excerpt": "of of thing um and um it seems to me that this is actually potentially a testable claim um not directly perhaps but that we might expect I mean this actually this is actually slightly different to evils done in the name of religion but it's connected to the idea of the mega moral fruits kind of response right um I think they're two sides of the same coin Mega moral fruits and I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The speaker introduces the final skeptical consideration, characterizes it as an objection from Christian moral fruits, and develops it in the first person as Fodor's argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-social-epistemic-evidence"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "This constructive move introduces an observable-expectation test for Christian moral transformation and has no earlier response obligation."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The expected moral difference is recoverable, though the relevant Christian population, comparison group, and measure of conduct remain partly unspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker calls the claim potentially and indirectly testable, appropriately acknowledging limitations in measurement and causal attribution."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Christian transformation may be gradual, uneven, counterfactual, or concentrated in dimensions not captured by crude group comparisons.",
+          "decisiveQualification": "The doctrine still generates some observable differential expectation unless every measurable comparison is insulated by auxiliary explanations."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central social-epistemic bridge by testing Christianity's claimed transformative consequences against observed moral conduct."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The move frames a probabilistic test rather than demanding perfect behavior, though it does not fully specify how counterfactual transformation should be measured."
+          },
+          "responsiveness": {
+            "value": 87,
+            "rationale": "Within constructive moves, it identifies a doctrine-linked prediction and contrasts it with an apparently unfavorable historical and contemporary record."
+          }
+        },
+        "evidenceBasis": "The excerpt characterizes Christian moral fruit as a potentially testable claim and links moral transformation expectations to observed conduct by believers.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct pro-side burden-completion consequence remains outside the move ratings, response links, relevance judgments, and inventory structure.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No eligible distinct debate-wide consequence exists.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing the alleged residual would not change any burden bridge's completion independently of scored move performance."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct con-side burden-completion consequence remains outside the move ratings, response links, relevance judgments, and inventory structure.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No uncaptured completion criterion was identified.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No eligible distinct debate-wide consequence exists.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "burden relevance"
+          ],
+          "counterfactual": "Removing the alleged residual would not change any burden bridge's completion independently of scored move performance."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "philosophical-arguments-fine-tuning-and-divine-psychology",
+        "title": "Philosophical Arguments, Fine-Tuning, and Divine Psychology",
+        "weightPercent": 24,
+        "sides": {
+          "pro": {
+            "score": 81,
+            "moves": [
+              {
+                "moveId": "pro-divine-motivation-from-moral-value",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "pro-fine-tuning-background-laws",
+                "importance": 3,
+                "score": 79
+              }
+            ]
+          },
+          "con": {
+            "score": 86,
+            "moves": [
+              {
+                "moveId": "con-philosophical-divine-psychology-undercut",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "con-fine-tuning-creative-possibilities",
+                "importance": 3,
+                "score": 89
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "scripture-religious-experience-and-reflective-warrant",
+        "title": "Scripture, Religious Experience, and Reflective Warrant",
+        "weightPercent": 14,
+        "sides": {
+          "pro": {
+            "score": 77,
+            "moves": [
+              {
+                "moveId": "pro-properly-basic-experiential-warrant",
+                "importance": 3,
+                "score": 77
+              }
+            ]
+          },
+          "con": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "con-scriptural-beauty-baseline",
+                "importance": 2,
+                "score": 81
+              },
+              {
+                "moveId": "con-self-authentication-discrimination",
+                "importance": 3,
+                "score": 80
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "resurrection-and-naturalistic-explanation",
+        "title": "Resurrection Evidence and Naturalistic Explanation",
+        "weightPercent": 19,
+        "sides": {
+          "pro": {
+            "score": 84,
+            "moves": [
+              {
+                "moveId": "pro-physical-appearance-explanation",
+                "importance": 3,
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 75,
+            "moves": [
+              {
+                "moveId": "con-resurrection-naturalistic-sequence",
+                "importance": 3,
+                "score": 74
+              },
+              {
+                "moveId": "con-resurrection-belief-expectations",
+                "importance": 3,
+                "score": 75
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "evil-disagreement-and-epistemic-limitation",
+        "title": "Evil, Religious Disagreement, and Epistemic Limitation",
+        "weightPercent": 27,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-consequential-complexity-defense",
+                "importance": 3,
+                "score": 85
+              },
+              {
+                "moveId": "pro-disagreement-inscrutability-or-outweighing",
+                "importance": 3,
+                "score": 81
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-preventable-suffering-evidence",
+                "importance": 3,
+                "score": 87
+              },
+              {
+                "moveId": "con-religious-contingency-confusion",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "expert-dissent-confidence-and-moral-fruit",
+        "title": "Expert Dissent, Rational Confidence, and Christian Moral Fruit",
+        "weightPercent": 16,
+        "sides": {
+          "pro": {
+            "score": 79,
+            "moves": [
+              {
+                "moveId": "pro-expert-dissent-selection-effects",
+                "importance": 3,
+                "score": 70
+              },
+              {
+                "moveId": "pro-disagreement-limits-confidence-not-belief",
+                "importance": 3,
+                "score": 87
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-informed-dissent-confidence",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "con-christian-moral-transformation-test",
+                "importance": 3,
+                "score": 81
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 81.23,
+        "burdenCompletionAdjustment": 0,
+        "score": 81
+      },
+      "con": {
+        "weightedSectionMean": 83.45,
+        "burdenCompletionAdjustment": 0,
+        "score": 83
+      }
+    },
+    "winner": "con",
+    "winningMargin": 2
+  },
+  "audit": {
+    "sections": 5,
+    "moves": 18,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
