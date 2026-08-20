@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-candidate-sharded-inventory",
+  "debateNumber": "181",
+  "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+  "motion": "Does the historical evidence make Jesus' bodily resurrection a rational conclusion?",
+  "sides": {
+    "pro": {
+      "label": "Resurrection is the best explanation",
+      "speakers": [
+        "Gary Habermas"
+      ]
+    },
+    "con": {
+      "label": "Resurrection is not established",
+      "speakers": [
+        "Antony Flew"
+      ]
+    }
+  },
+  "durationSeconds": 5435,
+  "eventCount": 2220,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Ksa8uGe21rw/transcript.txt",
+    "transcriptSha256": "080b0ac0df237588fdd5b50841c073ee2fb0c504261fb198e4d5960ec04068f4",
+    "eventsPath": ".assessment-cache/captions/Ksa8uGe21rw/events.json",
+    "eventsSha256": "db68beafe582a1402b8be16aa21f63756a2332a7415e809bf07e028a0db901d9",
+    "localManifestPath": ".assessment-cache/captions/Ksa8uGe21rw/manifest.json",
+    "localManifestSha256": "8d65d3ef0691ef7a7206e18ba059c614d25949993f24a9ec83ee45969bcb16e3"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-03/debate-181.jsonl",
+    "sourceLedgerSha256": "83588e164cb35684f4858c2bc9440ce6c4291dca7e7b44abd61d8a1fea926e6f",
+    "sourceLedgerBytes": 130759,
+    "sourceLedgerEventCount": 2220,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/source-preparation/plans/debate-181.json",
+    "partitionPlanSha256": "3241004189db2304f30f15c1111fa017339484b8c0fe819004ab9c51b5f28bc7",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

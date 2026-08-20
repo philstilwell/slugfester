@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-candidate-sharded-inventory",
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "motion": "Does evil and objective morality point to God, or can agnostic atheism explain moral experience without accepting a divine moral ground?",
+  "sides": {
+    "pro": {
+      "label": "Moral argument",
+      "speakers": [
+        "Frank Turek"
+      ]
+    },
+    "con": {
+      "label": "Subjective morality",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 3516,
+  "eventCount": 1691,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/b5a3MxIqZOs/transcript.txt",
+    "transcriptSha256": "c498b2e8d82ee11879cb1f0fa38c59209242e5aef4b444d8f3903374f853da76",
+    "eventsPath": ".assessment-cache/captions/b5a3MxIqZOs/events.json",
+    "eventsSha256": "827b7f9e8da8a9fbbe1386893bfabd6c5eeb4dd7d2f6a212f1935d763768fa54",
+    "localManifestPath": ".assessment-cache/captions/b5a3MxIqZOs/manifest.json",
+    "localManifestSha256": "c1341042be389efad202f0c947c4c1dc41004f4ee8779e0fdf668073b37e648d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-03/debate-27.jsonl",
+    "sourceLedgerSha256": "7b5fdd832a635d9acbce2ca6895b8d6e671a3f867d7ece6401d86a493cfa35fd",
+    "sourceLedgerBytes": 99769,
+    "sourceLedgerEventCount": 1691,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/source-preparation/plans/debate-27.json",
+    "partitionPlanSha256": "f019d87f36f757373b28ea8f78bf972009be300db496e4d3e9a9c465c6cefc83",
+    "partitionChunks": 2,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
