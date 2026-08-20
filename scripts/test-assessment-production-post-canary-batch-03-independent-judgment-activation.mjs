@@ -175,7 +175,24 @@ assert.equal(activation.acceptanceContract.modelAuthoredScoresMaximum, 0);
 assert.equal(activation.acceptanceContract.scoresDerived, 0);
 assert.deepEqual(
   activation.audioPolicy.pendingAttributionVerificationMoves,
-  []
+  [
+    {
+      debateNumber: "124",
+      moveId: "con-heuristics-fail-under-change",
+    },
+    {
+      debateNumber: "124",
+      moveId: "pro-rational-instruction-behavioral-limit",
+    },
+    {
+      debateNumber: "14",
+      moveId: "pro-unconstrained-bubble-causal-gap",
+    },
+    {
+      debateNumber: "150",
+      moveId: "con-event-acceptance-not-causal-verdict",
+    },
+  ]
 );
 assert.equal(allBooleanLeavesTrue(activation.stopRules), true);
 for (const key of [
