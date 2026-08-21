@@ -1,0 +1,2427 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-04-decomposed-consensus",
+  "debateNumber": "85",
+  "debateId": "atkins-fox-god-science-future-humanity-2024",
+  "moveDisputes": [
+    {
+      "moveId": "pro-public-evidence-and-scientific-scope",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 42
+            },
+            "candidate2": {
+              "value": 35
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 58,
+          "candidate2": 62,
+          "roundedMeanAfterAdjudication": 60
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 48,
+          "candidate2": 43,
+          "roundedMeanAfterAdjudication": 46
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 100,
+          "candidate2": 99,
+          "roundedMeanAfterAdjudication": 100
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 86,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-scope-material-explanation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scope-material-explanation-component-01",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether publicly evidenced material explanation exhausts every real question.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scope-material-explanation-component-02",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether religious belief lacks relevant data or historically grounded support.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-scope-material-explanation-component-01",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether scientific answers to material questions establish that science answers every real question.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-scope-material-explanation-component-02",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether religious belief has no evidence beyond wishful thinking and superstition.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "pro-motion-scientific-sufficiency"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-scope-and-ultimate-grounds"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 86
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-mechanism-compatible-with-creator",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-mechanism-compatible-with-creator-component-01",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether understanding how the world works establishes that God is unnecessary.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-mechanism-compatible-with-creator-component-01",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether understanding how the world works establishes that divine agency or an originating creator is unnecessary.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "pro-motion-scientific-sufficiency"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-scope-and-ultimate-grounds"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 74,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 81,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 82
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-evolutionary-is-not-moral-ought",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 36,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-evolutionary-is-not-moral-ought-component-01",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether science supplies publicly verifiable answers while religion lacks comparable evidence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 58
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-evolutionary-is-not-moral-ought-component-01",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether a scientific evolutionary account can by itself answer the normative question of how humans ought to behave.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 92,
+          "candidate2": 94,
+          "roundedMeanAfterAdjudication": 93
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 84,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-resurrection-historical-case",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-resurrection-historical-case-component-01",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether Christian supernatural belief has historically grounded evidence rather than mere wishful thinking.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-resurrection-historical-case-component-01",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether Christian supernatural belief has historical considerations that qualify the claim that it rests only on superstition.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-resurrection-historical-case-component-02",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether the cited resurrection considerations establish the event rather than merely making it a serious historical question.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 76
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 85,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 78
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 79,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 79
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-relational-personhood-beyond-ai",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 73,
+          "candidate2": 75,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 58,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 60
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 73,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-humans-machines-and-ai-species",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 11,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-relational-personhood-beyond-ai"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-humans-machines-and-ai-species-component-01",
+                  "targetMoveId": "con-relational-personhood-beyond-ai",
+                  "text": "Whether relational personhood and mutual respect distinguish humans in a way AI cannot replace.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 57
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-relational-personhood-beyond-ai"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-humans-machines-and-ai-species-component-01",
+                  "targetMoveId": "con-relational-personhood-beyond-ai",
+                  "text": "Whether humans are categorically unlike machines and whether advanced AI is incapable of becoming a distinct kind of agent.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-humans-machines-and-ai-species-component-02",
+                  "targetMoveId": "con-relational-personhood-beyond-ai",
+                  "text": "Whether advanced AI could possess the relational mutual respect proposed as distinctive of human personhood.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 68
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 69,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 70
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 87,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 58,
+          "candidate2": 61,
+          "roundedMeanAfterAdjudication": 60
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-genetic-healing-dignity-limits",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 1,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 86,
+          "candidate2": 87,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 87,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 86
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 90,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-science-religion-intellectual-incompatibility",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity"
+        ],
+        "importanceMismatch": true,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": {
+          "candidate1": {
+            "importance": 3
+          },
+          "candidate2": {
+            "importance": 2
+          }
+        },
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-genetic-healing-dignity-limits",
+                "con-scope-material-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-science-religion-intellectual-incompatibility-component-01",
+                  "targetMoveId": "con-scope-material-explanation",
+                  "text": "Whether science's material scope leaves legitimate questions of value, purpose, meaning, and Christian evidence.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-science-religion-intellectual-incompatibility-component-02",
+                  "targetMoveId": "con-genetic-healing-dignity-limits",
+                  "text": "Whether Christian ethical commitments can coexist with responsible scientific and medical practice.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 46
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-genetic-healing-dignity-limits",
+                "con-mechanism-compatible-with-creator",
+                "con-scope-material-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-science-religion-intellectual-incompatibility-component-01",
+                  "targetMoveId": "con-genetic-healing-dignity-limits",
+                  "text": "Whether Christian dignity principles provide useful ethical limits for genetic healing, enhancement, unequal access, and disability.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-science-religion-intellectual-incompatibility-component-02",
+                  "targetMoveId": "con-scope-material-explanation",
+                  "text": "Whether Christian belief can use evidence and reasoning rather than superstition alone.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-science-religion-intellectual-incompatibility-component-03",
+                  "targetMoveId": "con-mechanism-compatible-with-creator",
+                  "text": "Whether scientific mechanism can be intellectually compatible with belief in a creator.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 59
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 99,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "motion",
+                "bridgeId": "con-motion-theistic-integration"
+              }
+            },
+            "candidate2": {
+              "value": 86,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-science-compatibility"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "materially-misleading"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "materially-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "materially-misleading"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 54,
+          "candidate2": 51,
+          "roundedMeanAfterAdjudication": 53
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 41,
+          "candidate2": 38,
+          "roundedMeanAfterAdjudication": 40
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 28,
+          "candidate2": 30,
+          "roundedMeanAfterAdjudication": 29
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-cosmic-origin-balanced-opposites",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-mechanism-compatible-with-creator",
+                "con-scope-material-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-cosmic-origin-balanced-opposites-component-01",
+                  "targetMoveId": "con-mechanism-compatible-with-creator",
+                  "text": "Whether science can provide an account of cosmic origin rather than merely later operation.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-cosmic-origin-balanced-opposites-component-02",
+                  "targetMoveId": "con-scope-material-explanation",
+                  "text": "Whether scientific inquiry can approach ultimate questions about existence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-mechanism-compatible-with-creator",
+                "con-scope-material-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-cosmic-origin-balanced-opposites-component-01",
+                  "targetMoveId": "con-mechanism-compatible-with-creator",
+                  "text": "Whether science has a prospective natural account of cosmic origin rather than only accounts of operation after origin.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-cosmic-origin-balanced-opposites-component-02",
+                  "targetMoveId": "con-scope-material-explanation",
+                  "text": "Whether scientific inquiry can begin to approach the ultimate question of why there is something rather than nothing.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 70,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-revisable-scriptural-interpretation",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-cosmic-origin-balanced-opposites",
+                "pro-science-religion-intellectual-incompatibility"
+              ],
+              "components": [
+                {
+                  "componentId": "con-revisable-scriptural-interpretation-component-01",
+                  "targetMoveId": "pro-science-religion-intellectual-incompatibility",
+                  "text": "Whether Christian belief is necessarily intellectually incompatible with established scientific knowledge.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-revisable-scriptural-interpretation-component-02",
+                  "targetMoveId": "pro-cosmic-origin-balanced-opposites",
+                  "text": "Whether a scientific cosmological account necessarily contradicts central Christian faith.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-public-evidence-and-scientific-scope",
+                "pro-science-religion-intellectual-incompatibility"
+              ],
+              "components": [
+                {
+                  "componentId": "con-revisable-scriptural-interpretation-component-01",
+                  "targetMoveId": "pro-science-religion-intellectual-incompatibility",
+                  "text": "Whether Christianity must retain ancient scientific readings of scripture in conflict with established scientific findings.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-revisable-scriptural-interpretation-component-02",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether revisable interpretation shows religious commitment is uniformly insulated from correction.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 84
+            },
+            "candidate2": {
+              "value": 90
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 83,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 84
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-evolution-chance-natural-selection",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 79,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 74,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 76
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 93,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-evolution-without-gap-theism",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-evolution-chance-natural-selection",
+                "pro-public-evidence-and-scientific-scope"
+              ],
+              "components": [
+                {
+                  "componentId": "con-evolution-without-gap-theism-component-01",
+                  "targetMoveId": "pro-evolution-chance-natural-selection",
+                  "text": "Whether evolution and prebiotic development provide a complete natural account requiring no further qualification.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-evolution-without-gap-theism-component-02",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether current science has verifiable answers across every relevant stage of biological origins.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-evolution-chance-natural-selection"
+              ],
+              "components": [
+                {
+                  "componentId": "con-evolution-without-gap-theism-component-01",
+                  "targetMoveId": "pro-evolution-chance-natural-selection",
+                  "text": "Whether evolution adequately explains development from simple biological forms to complex organisms without a scientific God-of-the-gaps inference.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-evolution-without-gap-theism-component-02",
+                  "targetMoveId": "pro-evolution-chance-natural-selection",
+                  "text": "Whether the same account currently supplies a unified explanation of abiogenesis from inorganic matter to cellular life.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-evolution-without-gap-theism-component-03",
+                  "targetMoveId": "pro-evolution-chance-natural-selection",
+                  "text": "Whether material description establishes that life is exhaustively material.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 91
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 90
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-afterlife-evidence-and-present-harm",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 47
+            },
+            "candidate2": {
+              "value": 58
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 59,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 58
+        },
+        {
+          "fieldKey": "responsivenessWithinClass",
+          "candidate1": 82,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-finite-purpose-without-cosmic-purpose",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "evidenceWarrant",
+          "representationalCharity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-evolutionary-is-not-moral-ought",
+                "con-scope-material-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-finite-purpose-without-cosmic-purpose-component-01",
+                  "targetMoveId": "con-evolutionary-is-not-moral-ought",
+                  "text": "Whether a naturalistic human life can contain practical purpose and behavioral restraint without a cosmic assignment.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-finite-purpose-without-cosmic-purpose-component-02",
+                  "targetMoveId": "con-scope-material-explanation",
+                  "text": "Whether meaning and purpose require an answer beyond material nature.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-evolutionary-is-not-moral-ought",
+                "con-scope-material-explanation"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-finite-purpose-without-cosmic-purpose-component-01",
+                  "targetMoveId": "con-evolutionary-is-not-moral-ought",
+                  "text": "Whether humans can possess practical purposes and behavioral limits without a divinely grounded cosmic purpose.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-finite-purpose-without-cosmic-purpose-component-02",
+                  "targetMoveId": "con-evolutionary-is-not-moral-ought",
+                  "text": "What grounds the stated requirement not to enjoy life at the expense of other people.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-finite-purpose-without-cosmic-purpose-component-03",
+                  "targetMoveId": "con-scope-material-explanation",
+                  "text": "Whether meaning and purpose necessarily require answers beyond material nature.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 76
+            },
+            "candidate2": {
+              "value": 69
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 82
+            },
+            "candidate2": {
+              "value": 63
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 83,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 83
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-physical-world-invites-inquiry",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-afterlife-evidence-and-present-harm",
+                "pro-public-evidence-and-scientific-scope",
+                "pro-science-religion-intellectual-incompatibility"
+              ],
+              "components": [
+                {
+                  "componentId": "con-physical-world-invites-inquiry-component-01",
+                  "targetMoveId": "pro-afterlife-evidence-and-present-harm",
+                  "text": "Whether Christian future-oriented belief necessarily depreciates present physical life and human action.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-physical-world-invites-inquiry-component-02",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether Christianity is intrinsically opposed to investigating and modifying the material world.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-physical-world-invites-inquiry-component-03",
+                  "targetMoveId": "pro-science-religion-intellectual-incompatibility",
+                  "text": "Whether Christian commitment is necessarily incompatible with scientific practice.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-afterlife-evidence-and-present-harm",
+                "pro-public-evidence-and-scientific-scope",
+                "pro-science-religion-intellectual-incompatibility"
+              ],
+              "components": [
+                {
+                  "componentId": "con-physical-world-invites-inquiry-component-01",
+                  "targetMoveId": "pro-afterlife-evidence-and-present-harm",
+                  "text": "Whether Christian future-oriented belief necessarily depreciates present physical life or encourages withdrawal from material reality.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-physical-world-invites-inquiry-component-02",
+                  "targetMoveId": "pro-public-evidence-and-scientific-scope",
+                  "text": "Whether Christian commitment necessarily opposes investigation of the physical world.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-physical-world-invites-inquiry-component-03",
+                  "targetMoveId": "pro-science-religion-intellectual-incompatibility",
+                  "text": "Whether Christian faith can positively motivate scientific exploration.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 78,
+          "candidate2": 83,
+          "roundedMeanAfterAdjudication": 81
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-testimony-and-miracle-evidence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 3,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-physical-world-invites-inquiry",
+                "con-resurrection-historical-case"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-testimony-and-miracle-evidence-component-01",
+                  "targetMoveId": "con-resurrection-historical-case",
+                  "text": "Whether early testimony and historical considerations warrant taking resurrection claims seriously.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-testimony-and-miracle-evidence-component-02",
+                  "targetMoveId": "con-physical-world-invites-inquiry",
+                  "text": "Whether Christian engagement with inquiry supplies evidence for particular supernatural claims.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 71
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-physical-world-invites-inquiry",
+                "con-resurrection-historical-case"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-testimony-and-miracle-evidence-component-01",
+                  "targetMoveId": "con-resurrection-historical-case",
+                  "text": "Whether early testimony, an empty-tomb question, and disciple transformation warrant accepting a supernatural resurrection rather than mistaken reporting.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-testimony-and-miracle-evidence-component-02",
+                  "targetMoveId": "con-resurrection-historical-case",
+                  "text": "Whether the specific early creed and historical circumstances are independently reliable and resistant to natural alternatives.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-testimony-and-miracle-evidence-component-03",
+                  "targetMoveId": "con-physical-world-invites-inquiry",
+                  "text": "Whether Christian encouragement of physical inquiry bears on the truth of resurrection and miracle claims.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 60,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 62
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 50,
+          "candidate2": 52,
+          "roundedMeanAfterAdjudication": 51
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 53,
+          "candidate2": 57,
+          "roundedMeanAfterAdjudication": 55
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "pro-public-evidence-and-scientific-scope",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 58,
+      "candidate2": 62,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "pro-public-evidence-and-scientific-scope",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 48,
+      "candidate2": 43,
+      "roundedMeanAfterAdjudication": 46
+    },
+    {
+      "moveId": "pro-public-evidence-and-scientific-scope",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 100,
+      "candidate2": 99,
+      "roundedMeanAfterAdjudication": 100
+    },
+    {
+      "moveId": "pro-public-evidence-and-scientific-scope",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-scope-material-explanation",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-scope-material-explanation",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "con-scope-material-explanation",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-mechanism-compatible-with-creator",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "con-mechanism-compatible-with-creator",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 74,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "con-mechanism-compatible-with-creator",
+      "fieldKey": "representationalCharity",
+      "candidate1": 81,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-evolutionary-is-not-moral-ought",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 92,
+      "candidate2": 94,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "con-evolutionary-is-not-moral-ought",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 84,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-evolutionary-is-not-moral-ought",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-resurrection-historical-case",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 78
+    },
+    {
+      "moveId": "con-resurrection-historical-case",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-resurrection-historical-case",
+      "fieldKey": "representationalCharity",
+      "candidate1": 79,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-relational-personhood-beyond-ai",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 73,
+      "candidate2": 75,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "con-relational-personhood-beyond-ai",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 58,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "con-relational-personhood-beyond-ai",
+      "fieldKey": "representationalCharity",
+      "candidate1": 73,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-humans-machines-and-ai-species",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 69,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "pro-humans-machines-and-ai-species",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 87,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-humans-machines-and-ai-species",
+      "fieldKey": "representationalCharity",
+      "candidate1": 58,
+      "candidate2": 61,
+      "roundedMeanAfterAdjudication": 60
+    },
+    {
+      "moveId": "con-genetic-healing-dignity-limits",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-genetic-healing-dignity-limits",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-genetic-healing-dignity-limits",
+      "fieldKey": "representationalCharity",
+      "candidate1": 87,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 86
+    },
+    {
+      "moveId": "con-genetic-healing-dignity-limits",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 90,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "pro-science-religion-intellectual-incompatibility",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 54,
+      "candidate2": 51,
+      "roundedMeanAfterAdjudication": 53
+    },
+    {
+      "moveId": "pro-science-religion-intellectual-incompatibility",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 41,
+      "candidate2": 38,
+      "roundedMeanAfterAdjudication": 40
+    },
+    {
+      "moveId": "pro-science-religion-intellectual-incompatibility",
+      "fieldKey": "representationalCharity",
+      "candidate1": 28,
+      "candidate2": 30,
+      "roundedMeanAfterAdjudication": 29
+    },
+    {
+      "moveId": "pro-cosmic-origin-balanced-opposites",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 70,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "con-revisable-scriptural-interpretation",
+      "fieldKey": "representationalCharity",
+      "candidate1": 83,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-evolution-chance-natural-selection",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-evolution-chance-natural-selection",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 79,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-evolution-chance-natural-selection",
+      "fieldKey": "representationalCharity",
+      "candidate1": 74,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 76
+    },
+    {
+      "moveId": "pro-evolution-chance-natural-selection",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 93,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-evolution-without-gap-theism",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 90,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "con-evolution-without-gap-theism",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "pro-afterlife-evidence-and-present-harm",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 59,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 58
+    },
+    {
+      "moveId": "pro-afterlife-evidence-and-present-harm",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 82,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "pro-finite-purpose-without-cosmic-purpose",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 83,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 83
+    },
+    {
+      "moveId": "con-hope-motivates-present-action",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 86,
+      "candidate2": 87,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-hope-motivates-present-action",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 75,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "con-hope-motivates-present-action",
+      "fieldKey": "representationalCharity",
+      "candidate1": 86,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-hope-motivates-present-action",
+      "fieldKey": "responsivenessWithinClass",
+      "candidate1": 88,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-physical-world-invites-inquiry",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "con-physical-world-invites-inquiry",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-physical-world-invites-inquiry",
+      "fieldKey": "representationalCharity",
+      "candidate1": 78,
+      "candidate2": 83,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "pro-testimony-and-miracle-evidence",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 60,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 62
+    },
+    {
+      "moveId": "pro-testimony-and-miracle-evidence",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 50,
+      "candidate2": 52,
+      "roundedMeanAfterAdjudication": 51
+    },
+    {
+      "moveId": "pro-testimony-and-miracle-evidence",
+      "fieldKey": "representationalCharity",
+      "candidate1": 53,
+      "candidate2": 57,
+      "roundedMeanAfterAdjudication": 55
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance findings",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance findings",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "85",
+      "moves": 18,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 18,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch04IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
