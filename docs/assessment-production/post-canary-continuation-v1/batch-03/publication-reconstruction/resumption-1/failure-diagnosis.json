@@ -1,0 +1,359 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-1",
+  "status": "diagnosed-batch-03-publication-resumption-five-field-validation-failures",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "preservedGate": {
+    "contextsPlanned": 9,
+    "contextsAttempted": 3,
+    "contextsValid": 1,
+    "contextsInvalid": 2,
+    "contextsUnattempted": 6,
+    "acceptedDebates": [
+      "124",
+      "14"
+    ],
+    "failedDebates": [
+      "58",
+      "150"
+    ],
+    "unattemptedDebates": [
+      "157",
+      "102",
+      "09",
+      "181",
+      "138",
+      "27"
+    ],
+    "attempts": 3,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0
+  },
+  "failedContexts": [
+    {
+      "contextIndex": 1,
+      "originalContextIndex": 2,
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "correctionContextCount": 0,
+      "transportPassed": true,
+      "gateAcceptancePassed": false,
+      "outputSha256": "9fa595a37d68d7610b19a5f7e38d743edd2f9e26ac60753331092b5e54135c99"
+    },
+    {
+      "contextIndex": 2,
+      "originalContextIndex": 3,
+      "debateNumber": "150",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "correctionContextCount": 0,
+      "transportPassed": true,
+      "gateAcceptancePassed": false,
+      "outputSha256": "39a973826d345902cd31465442592e1a80a68236e9636de54dbbba14a499fde6"
+    }
+  ],
+  "failureBoundary": {
+    "failedFields": [
+      {
+        "debateNumber": "58",
+        "path": "aiExtension.con.premises[id=d58-ai-con-premise-4].novelty.explanation",
+        "itemId": "d58-ai-con-premise-4",
+        "words": 7,
+        "characters": 62,
+        "minimumWords": 8,
+        "missingWords": 1,
+        "originalValidationMessage": "d58-ai-con-premise-4: novelty explanation too short"
+      },
+      {
+        "debateNumber": "150",
+        "path": "moveProse.con-divine-agent-requires-prior-support.critique",
+        "moveId": "con-divine-agent-requires-prior-support",
+        "words": 132,
+        "characters": 1024,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 2,
+        "originalValidationMessage": "con-divine-agent-requires-prior-support: critique outside 105–130 words"
+      },
+      {
+        "debateNumber": "150",
+        "path": "moveProse.pro-causation-against-methodological-exclusion.critique",
+        "moveId": "pro-causation-against-methodological-exclusion",
+        "words": 132,
+        "characters": 1075,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 2,
+        "originalValidationMessage": "con-divine-agent-requires-prior-support: critique outside 105–130 words"
+      },
+      {
+        "debateNumber": "150",
+        "path": "moveProse.con-test-before-supernatural-attribution.critique",
+        "moveId": "con-test-before-supernatural-attribution",
+        "words": 132,
+        "characters": 1063,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 2,
+        "originalValidationMessage": "con-divine-agent-requires-prior-support: critique outside 105–130 words"
+      },
+      {
+        "debateNumber": "150",
+        "path": "moveProse.con-paul-and-reports-insufficient.critique",
+        "moveId": "con-paul-and-reports-insufficient",
+        "words": 131,
+        "characters": 1019,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "acceptanceWords": [
+          105,
+          130
+        ],
+        "targetWords": [
+          112,
+          118
+        ],
+        "minimumCharacters": 880,
+        "excessWordsAboveAcceptanceMaximum": 1,
+        "originalValidationMessage": "con-divine-agent-requires-prior-support: critique outside 105–130 words"
+      }
+    ],
+    "failedFieldCount": 5,
+    "affectedDebates": 2,
+    "noveltyExplanationFailures": 1,
+    "critiqueWordBoundaryFailures": 4,
+    "missingNoveltyWordsTotal": 1,
+    "excessCritiqueWordsTotal": 7,
+    "additionalFailuresDetected": false,
+    "sourceFailureDetected": false,
+    "identityFailureDetected": false,
+    "transportFailureDetected": false,
+    "timeoutFailureDetected": false,
+    "responseSchemaFailureDetected": false,
+    "scoreFailureDetected": false,
+    "validatorFailureDetected": false
+  },
+  "diagnosticReplay": {
+    "inMemoryOnly": true,
+    "persistedCorrectedOutputs": 0,
+    "originalOutputBytesChanged": false,
+    "hypotheticalWritableFields": [
+      "aiExtension.con.premises[id=d58-ai-con-premise-4].novelty.explanation",
+      "moveProse.con-divine-agent-requires-prior-support.critique",
+      "moveProse.pro-causation-against-methodological-exclusion.critique",
+      "moveProse.con-test-before-supernatural-attribution.critique",
+      "moveProse.con-paul-and-reports-insufficient.critique"
+    ],
+    "hypotheticalNoveltyWordsAdded": 1,
+    "hypotheticalCritiqueWordsRemoved": 7,
+    "debates": [
+      {
+        "debateNumber": "58",
+        "result": {
+          "status": "passed",
+          "debateNumber": "58",
+          "moves": 19,
+          "critiques": 19,
+          "minimumCritiqueCharacters": 886,
+          "tags": 0,
+          "quoteExactSourceMatches": 2,
+          "overallCommentarySides": 2,
+          "noveltyItems": 16,
+          "introducedItems": 4,
+          "newArguments": 4,
+          "aiExtensionSides": 2,
+          "calculatedScoresAuthoredByModel": 0,
+          "lockedScoresUnchanged": true
+        }
+      },
+      {
+        "debateNumber": "150",
+        "result": {
+          "status": "passed",
+          "debateNumber": "150",
+          "moves": 19,
+          "critiques": 19,
+          "minimumCritiqueCharacters": 976,
+          "tags": 0,
+          "quoteExactSourceMatches": 2,
+          "overallCommentarySides": 2,
+          "noveltyItems": 16,
+          "introducedItems": 4,
+          "newArguments": 4,
+          "aiExtensionSides": 2,
+          "calculatedScoresAuthoredByModel": 0,
+          "lockedScoresUnchanged": true
+        }
+      }
+    ]
+  },
+  "preservedControls": {
+    "modelContextsExecutedForDiagnosis": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionModelContexts": 0,
+    "repairPacketsPrepared": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "scoresRecalculated": false,
+    "scoresChanged": false,
+    "modelAuthoredScores": 0,
+    "publicationCompiled": false,
+    "publicationFinalized": false,
+    "productionMutation": false,
+    "nextBatchSelected": false
+  },
+  "prospectiveRecoveryOnly": {
+    "currentlyAuthorizedUnderFailureRecoveryStandingAuthorization": true,
+    "repairPacketsPrepared": 0,
+    "repairPacketMaximumWritableFields": 2,
+    "proposedRepairPacketCount": 3,
+    "proposedWritableFields": [
+      "aiExtension.con.premises[id=d58-ai-con-premise-4].novelty.explanation",
+      "moveProse.con-divine-agent-requires-prior-support.critique",
+      "moveProse.pro-causation-against-methodological-exclusion.critique",
+      "moveProse.con-test-before-supernatural-attribution.critique",
+      "moveProse.con-paul-and-reports-insufficient.critique"
+    ],
+    "proposedRepairPartition": [
+      [
+        "aiExtension.con.premises[id=d58-ai-con-premise-4].novelty.explanation"
+      ],
+      [
+        "moveProse.con-divine-agent-requires-prior-support.critique",
+        "moveProse.pro-causation-against-methodological-exclusion.critique"
+      ],
+      [
+        "moveProse.con-test-before-supernatural-attribution.critique",
+        "moveProse.con-paul-and-reports-insufficient.critique"
+      ]
+    ],
+    "proposedModel": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription"
+    },
+    "proposedAttemptsMaximumPerPacket": 1,
+    "proposedRetriesMaximum": 0,
+    "requiredAfterRepair": [
+      "merge-only-the-five-accepted-repair-fields",
+      "validate-complete-debates-58-and-150",
+      "replay-the-complete-four-debate-accepted-cohort",
+      "resume-only-the-six-unattempted-publication-contexts"
+    ]
+  },
+  "authorization": {
+    "standingAuthorizationApplies": true,
+    "failureRecoveryStandingAuthorizationApplies": true,
+    "repairPacketPreparation": true,
+    "repairModelExecutionAfterFrozenPreparationAndActivation": true,
+    "publicationGateResumptionAfterCompleteDebateValidation": true,
+    "retry": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "artifacts": {
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/execution-activation.json",
+      "sha256": "e1c2eabd1c8a8dbed936057e61b8ed9391d80d8cd2d25bfbb14b8cb4f04826de"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/model-execution.json",
+      "sha256": "116d9c0bc10193fb323e20bd2c664280600120bf77147fe148b1de0f2de0eded"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/analysis.json",
+      "sha256": "67f35957e93bb259c637ccdcffc561ba370a35a190619c456fcb8393ba286d13"
+    },
+    "output58": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/outputs/debate-58.json",
+      "sha256": "9fa595a37d68d7610b19a5f7e38d743edd2f9e26ac60753331092b5e54135c99"
+    },
+    "output150": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/outputs/debate-150.json",
+      "sha256": "39a973826d345902cd31465442592e1a80a68236e9636de54dbbba14a499fde6"
+    },
+    "packet58": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-58.json",
+      "sha256": "0afa3468b4b89a99ddd9208a6b8a41adbc824681d0e5d8bfafb15fd8a130f0d8"
+    },
+    "packet150": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-150.json",
+      "sha256": "06d24ceacb9ceeaf0b862c1763edd2e96cde3182bdaaa64e912e111b42421a63"
+    },
+    "validation58": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/validations/debate-58.json",
+      "sha256": "e195c53e6441d2e2b616faa2de7813c30d52d7dd81e1c72a7d9c404d0194111b"
+    },
+    "validation150": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/validations/debate-150.json",
+      "sha256": "a3957ad0c7b32a7eabd9378765e243b7d0a1c908cbc3481122695a04012c7d51"
+    },
+    "provenance58": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/provenance/debate-58.json",
+      "sha256": "ea3f95564d9ab6b8645d4e30539df0f027880ead7cc6f676065ed611ef104bef"
+    },
+    "provenance150": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/provenance/debate-150.json",
+      "sha256": "faece331db2ea8b6e05e1aa923e481323acdf50377dbe499dda9e9401120f1a7"
+    }
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/standing-authorization.json",
+    "sha256": "7f46c90c1243062e6472f586a1e93db35b43f0b386acc19afb37b23f2adf237b",
+    "status": "frozen-active-batch-03-complete-remaining-workflow-standing-authorization"
+  },
+  "failureRecoveryStandingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/failure-recovery-standing-authorization.json",
+    "sha256": "f090b4f6302f8aac4938303fb89e1229dfea5115c23fe172546eb7d27006819f",
+    "status": "frozen-active-batch-03-first-failure-recovery-standing-authorization"
+  },
+  "nextRequiredAction": "prepare-three-bounded-batch-03-publication-resumption-repair-packets"
+}
