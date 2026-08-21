@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-185-adjudication-validation-failure-diagnosis",
+  "status": "frozen-diagnosed-batch-04-debate-185-missing-required-importance-choice",
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debateNumber": "185",
+  "preservedFailure": {
+    "classification": "schema-valid-transport-output-null-required-anonymous-importance-choice",
+    "moveId": "con-reasons-without-desert-freedom",
+    "field": "importancePairChoice",
+    "returnedValue": null,
+    "requiredValues": [
+      1,
+      2
+    ],
+    "commandExitCode": 0,
+    "timedOut": false,
+    "outputWritten": true,
+    "moveDecisionsReturned": 18,
+    "moveDecisionsRequired": 18,
+    "burdenAdjustmentDecisionsReturned": 2,
+    "burdenAdjustmentDecisionsRequired": 2,
+    "invalidOutputSha256": "795b542b81418eb260c0c6a1549db878276d7906221844b17b41432dd7cb2412",
+    "invalidOutputReusable": false,
+    "attemptCount": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "deterministicDiagnosisOverlay": {
+    "persistentMutation": false,
+    "placeholderEntries": 1,
+    "validationAfterOverlay": "passed",
+    "candidateSelectionsAfterOverlay": 60,
+    "additionalValidationDefectsExposed": 0,
+    "overlayDecisionAccepted": false
+  },
+  "boundedCorrection": {
+    "operation": "fresh-full-packet-score-blind-adjudication-correction",
+    "reason": "No field from the failed partial output may be reused, so all 60 original anonymous selections must be decided in one fresh correction context.",
+    "contexts": 1,
+    "disputedMoves": 18,
+    "candidateSelections": 60,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "originalPacketPreserved": true,
+    "originalSchemaPreserved": true,
+    "originalValidatorMeaningPreserved": true,
+    "failedPartialOutputReusable": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/standing-authorization.json": "37c73fd5ad5bcaf6f907c048d662529cd11934924419dded17a56987687bb9e0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/execution-activation.json": "4c5124bdcb55ad7d98dafe14c3a2d3fc5c95f2c5c66ac37f0b43b8e68a3a49ae",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/model-execution.json": "e84c47f300fa56ca0242d3dba28e94f8beb3a83c2131a262ecaf5eb6f19cf51e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/packets/debate-185.json": "b24e560d6f8013110a50ff759c23dd74e4c9f9668531317e999be0594c07a593",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/outputs/debate-185.json": "795b542b81418eb260c0c6a1549db878276d7906221844b17b41432dd7cb2412",
+    "scripts/lib/assessment-production-post-canary-batch-04-dispute-adjudication.mjs": "60d2fab73d6e7748d0b2192c6026383ccf00500b67fadb3ce71512e36c7a7ab6",
+    "scripts/diagnose-assessment-production-post-canary-batch-04-debate-185-adjudication-validation-failure.mjs": "a993d1087c63e1d8b505218c934535ea352b20de9183adc9fb21a01d90fcd042",
+    "scripts/test-assessment-production-post-canary-batch-04-debate-185-adjudication-validation-failure-diagnosis.mjs": "42861d38080aa2ff2c5009d02aa9f7cf8ec47964e5ab67d326169ff973690c7f"
+  },
+  "authorization": {
+    "correctionPreparation": true,
+    "correctionModelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-freeze-one-fresh-full-packet-debate-185-adjudication-correction-context"
+}
