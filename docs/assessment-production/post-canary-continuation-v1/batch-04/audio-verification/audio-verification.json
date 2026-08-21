@@ -1,0 +1,432 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-audio-verification-audit",
+  "protocolId": "assessment-production-post-canary-batch-04-decomposed-consensus",
+  "status": "passed-all-four-post-canary-batch-04-confidence-moves-audio-verified",
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debates": [
+    {
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "moves": [
+        {
+          "debateNumber": "49",
+          "debateId": "dyer-dillahunty-transcendental-theism-2019",
+          "moveId": "con-secular-moral-reasoning",
+          "expectedSpeaker": "Matt Dillahunty",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Matt Dillahunty",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-49/clips/con-secular-moral-reasoning.mp3",
+            "sha256": "6e5322a401cabec19d2968c56845b95581830ce1cf5ff81c7c03900332af59f2",
+            "durationSeconds": 75.981
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-49/transcripts/con-secular-moral-reasoning.transcript.json",
+            "sha256": "9768c3efbf91cb24d5f3782137da62a8e1909a365e3649b8a24d878e67f294a8",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Matt Dillahunty",
+            "fullClipExcerptRecall": 0.958904109589041,
+            "expectedSpeakerExcerptRecall": 0.9452054794520548,
+            "highestOtherSpeaker": "Jay Dyer",
+            "highestOtherSpeakerExcerptRecall": 0.0410958904109589,
+            "expectedSpeakerRecallMargin": 0.904109589041096,
+            "expectedSpeakerDurationSeconds": 67.4,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 11,
+                "durationSeconds": 67.4,
+                "wordCount": 206,
+                "excerptRecall": 0.9452054794520548
+              },
+              {
+                "speaker": "Jay Dyer",
+                "segmentCount": 1,
+                "durationSeconds": 3.1,
+                "wordCount": 10,
+                "excerptRecall": 0.0410958904109589
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "186",
+      "debateId": "huemer-sapolsky-free-will-determinism-2024",
+      "moves": [
+        {
+          "debateNumber": "186",
+          "debateId": "huemer-sapolsky-free-will-determinism-2024",
+          "moveId": "con-concepts-prior-causes-not-randomness",
+          "expectedSpeaker": "Robert Sapolsky",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Robert Sapolsky",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-186/clips/con-concepts-prior-causes-not-randomness.mp3",
+            "sha256": "c2c1e2a929121450f332617d4981b5494ff6b6772f0b512a93cfd0beb1d4b6d8",
+            "durationSeconds": 53.4
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-186/transcripts/con-concepts-prior-causes-not-randomness.transcript.json",
+            "sha256": "d35b0a92ad5706ec5117791bcc10676eedd32be24de11c8c1b7ebf1f371fbcfd",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Robert Sapolsky",
+            "fullClipExcerptRecall": 0.9692307692307692,
+            "expectedSpeakerExcerptRecall": 0.9692307692307692,
+            "highestOtherSpeaker": "Michael Huemer",
+            "highestOtherSpeakerExcerptRecall": 0.015384615384615385,
+            "expectedSpeakerRecallMargin": 0.9538461538461538,
+            "expectedSpeakerDurationSeconds": 43.05,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Robert Sapolsky",
+                "segmentCount": 15,
+                "durationSeconds": 43.05,
+                "wordCount": 105,
+                "excerptRecall": 0.9692307692307692
+              },
+              {
+                "speaker": "Michael Huemer",
+                "segmentCount": 2,
+                "durationSeconds": 3.35,
+                "wordCount": 9,
+                "excerptRecall": 0.015384615384615385
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "moves": [
+        {
+          "debateNumber": "81",
+          "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+          "moveId": "con-necessary-physical-continuity",
+          "expectedSpeaker": "Graham Oppy",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Graham Oppy",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-81/clips/con-necessary-physical-continuity.mp3",
+            "sha256": "0bc8d85bde3607b31293f79cdae93f0678fe3388438f2d00f87b470920bbc5ff",
+            "durationSeconds": 128.069
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-81/transcripts/con-necessary-physical-continuity.transcript.json",
+            "sha256": "6972f0f5e0992bd7a4b174154591c39acc7374c73b41bd8ab5a3c2ab920fa71e",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 0.9577464788732394,
+            "expectedSpeakerExcerptRecall": 0.9436619718309859,
+            "highestOtherSpeaker": "Josh Rasmussen",
+            "highestOtherSpeakerExcerptRecall": 0.14084507042253522,
+            "expectedSpeakerRecallMargin": 0.8028169014084506,
+            "expectedSpeakerDurationSeconds": 107.9,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 17,
+                "durationSeconds": 107.9,
+                "wordCount": 291,
+                "excerptRecall": 0.9436619718309859
+              },
+              {
+                "speaker": "Josh Rasmussen",
+                "segmentCount": 7,
+                "durationSeconds": 7.85,
+                "wordCount": 31,
+                "excerptRecall": 0.14084507042253522
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "81",
+          "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+          "moveId": "con-necessity-stopping-point",
+          "expectedSpeaker": "Graham Oppy",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Graham Oppy",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-81/clips/con-necessity-stopping-point.mp3",
+            "sha256": "9aaba000383115a83cb36c23c47b49af8d2036706c454e67a46cbabb09148830",
+            "durationSeconds": 76.549
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-81/transcripts/con-necessity-stopping-point.transcript.json",
+            "sha256": "1fa1616295f1f4020aa8441957a1c44cf0d3228748a35da1390d8fb00285602a",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json"
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 0.9863013698630136,
+            "highestOtherSpeaker": "Josh Rasmussen",
+            "highestOtherSpeakerExcerptRecall": 0.0684931506849315,
+            "expectedSpeakerRecallMargin": 0.9178082191780821,
+            "expectedSpeakerDurationSeconds": 63.2,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 9,
+                "durationSeconds": 63.2,
+                "wordCount": 143,
+                "excerptRecall": 0.9863013698630136
+              },
+              {
+                "speaker": "Josh Rasmussen",
+                "segmentCount": 4,
+                "durationSeconds": 4.55,
+                "wordCount": 16,
+                "excerptRecall": 0.0684931506849315
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "49",
+        "speaker": "Jay Dyer",
+        "selectedMoveId": "pro-transcendentals-maximal-certainty",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1345,
+          "endEvent": 1472
+        },
+        "selectedMoveDurationSeconds": 273.921,
+        "startSeconds": 3287.28,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-49/references/jay-dyer.mp3",
+        "sha256": "526dda0a23d2d9bea3fd40558332d0c79941a30d42592b5a23062b38ea99a495"
+      },
+      {
+        "debateNumber": "49",
+        "speaker": "Matt Dillahunty",
+        "selectedMoveId": "con-fallible-proportioned-confidence",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1116,
+          "endEvent": 1214
+        },
+        "selectedMoveDurationSeconds": 220.5,
+        "startSeconds": 2755.78,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-49/references/matt-dillahunty.mp3",
+        "sha256": "80be86015873f7c8fb8651ee530b0cd3a6ae670683f4ba5873218eea021f92c5"
+      },
+      {
+        "debateNumber": "186",
+        "speaker": "Michael Huemer",
+        "selectedMoveId": "pro-determinism-self-defeats-reasons",
+        "selectedMoveSourceSpan": {
+          "startEvent": 463,
+          "endEvent": 579
+        },
+        "selectedMoveDurationSeconds": 268.081,
+        "startSeconds": 1303.719,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-186/references/michael-huemer.mp3",
+        "sha256": "1c5c9bf8d1be65da99ada8d0daf211f049ce49613e878099531aa3f07e52b901"
+      },
+      {
+        "debateNumber": "186",
+        "speaker": "Robert Sapolsky",
+        "selectedMoveId": "con-causal-multiscale-antecedents",
+        "selectedMoveSourceSpan": {
+          "startEvent": 92,
+          "endEvent": 263
+        },
+        "selectedMoveDurationSeconds": 442.64,
+        "startSeconds": 453.24,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-186/references/robert-sapolsky.mp3",
+        "sha256": "1cdf59a1699a9a43b8b0acff7f47a057ed08e063f5a138a4afbb97854bbdf6fc"
+      },
+      {
+        "debateNumber": "81",
+        "speaker": "Josh Rasmussen",
+        "selectedMoveId": "pro-introspective-mind-irreducibility",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1779,
+          "endEvent": 1917
+        },
+        "selectedMoveDurationSeconds": 342.9,
+        "startSeconds": 4922.34,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-81/references/josh-rasmussen.mp3",
+        "sha256": "323454f777302de4bfcd5ef3844c105a1348994962d934e59094be8b9c7050da"
+      },
+      {
+        "debateNumber": "81",
+        "speaker": "Graham Oppy",
+        "selectedMoveId": "con-historical-natural-category",
+        "selectedMoveSourceSpan": {
+          "startEvent": 450,
+          "endEvent": 521
+        },
+        "selectedMoveDurationSeconds": 218.43,
+        "startSeconds": 1201.075,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-04-audio-verification/debate-81/references/graham-oppy.mp3",
+        "sha256": "47f547f2b9a8617ba7d7d30bc3750f8b3f4e3d7fcc9118941dea0ebdebca6112"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 4,
+    "verified": 4,
+    "unresolved": 0,
+    "paidDiarizationCallsAttempted": 4,
+    "paidDiarizationCallsCompleted": 4,
+    "callsSkipped": 0,
+    "retries": 0,
+    "corrections": 0,
+    "clipMinutes": 5.5667,
+    "durationOnlyPlanningExposureUsd": 0.0334,
+    "usageDerivedEstimatedCostUsd": 0.1144125,
+    "actualBilledCostUsdAvailable": false,
+    "maximumAuthorizedCostUsd": 1,
+    "directIncrementalCostCapControlPassed": true,
+    "meteredJudgmentModelApiCostUsd": 0,
+    "judgmentModelContexts": 0,
+    "adjudicationModelContexts": 0,
+    "scoresDerived": 0,
+    "publicationReconstructions": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": true,
+    "audioFailureDiagnosis": false,
+    "paidTranscription": false,
+    "audioVerificationExecution": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}

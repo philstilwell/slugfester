@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-audio-verification-analysis",
+  "protocolId": "assessment-production-post-canary-batch-04-decomposed-consensus",
+  "status": "passed-all-four-post-canary-batch-04-confidence-moves-audio-verified",
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "gate": {
+    "passed": true,
+    "executionComplete": true,
+    "requiredMoves": 4,
+    "verified": 4,
+    "unresolved": 0,
+    "deterministicThresholdsApplied": true,
+    "measuredReferenceDurationContractApplied": true,
+    "knownSpeakerNamesApplied": true,
+    "locallySavedTranscripts": true
+  },
+  "costs": {
+    "paidDiarizationCallsAttempted": 4,
+    "paidDiarizationCallsCompleted": 4,
+    "callsSkipped": 0,
+    "retries": 0,
+    "durationOnlyPlanningExposureUsd": 0.0334,
+    "usageDerivedEstimatedCostUsd": 0.1144125,
+    "actualBilledCostUsdAvailable": false,
+    "maximumAuthorizedCostUsd": 1,
+    "directIncrementalCostCapControlPassed": true,
+    "ChatGPTSubscriptionApplicable": false,
+    "meteredJudgmentModelApiCostUsd": 0
+  },
+  "judgmentModelBoundary": {
+    "judgmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "judgmentModelCallsThisStage": 0,
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "unchanged": true
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/standing-authorization.json",
+    "sha256": "37c73fd5ad5bcaf6f907c048d662529cd11934924419dded17a56987687bb9e0",
+    "status": "frozen-active-batch-04-complete-remaining-workflow-standing-authorization",
+    "conditionalPaidAudioMaximumUsd": 1,
+    "automaticContinuationWhileGatesPass": true
+  },
+  "sourceCompatibility": {
+    "status": "all-source-rows-have-positive-repository-lexical-token-count",
+    "reason": "All selected canonical source rows contain at least one repository lexical token.",
+    "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": true,
+    "audioFailureDiagnosis": false,
+    "paidTranscription": false,
+    "audioVerificationExecution": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-and-push-batch-04-dispute-only-adjudication-packets-under-standing-authorization"
+}

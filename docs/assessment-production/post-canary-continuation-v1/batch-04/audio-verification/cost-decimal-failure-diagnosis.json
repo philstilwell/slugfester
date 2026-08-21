@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-audio-cost-decimal-failure-diagnosis",
+  "status": "frozen-batch-04-audio-cost-binary-decimal-mismatch-diagnosed",
+  "batchNumber": 4,
+  "checkpointCommit": "c11c6651781c7ee369cb4679118921ed9d4b824f",
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/standing-authorization.json",
+    "sha256": "37c73fd5ad5bcaf6f907c048d662529cd11934924419dded17a56987687bb9e0",
+    "boundedFirstDeterministicRecoveryAuthorized": true
+  },
+  "preservedResults": {
+    "callsCompleted": 4,
+    "retries": 0,
+    "requestFailures": 0,
+    "verifiedMoves": 4,
+    "unresolvedMoves": 0,
+    "usageDerivedExecutionCostUsd": 0.1144125,
+    "approvedMaximumCostUsd": 1,
+    "approvedCapExceeded": false
+  },
+  "failure": {
+    "category": "binary-floating-point-strict-equality-validation-mismatch",
+    "testPath": "scripts/test-assessment-production-post-canary-batch-04-audio-verification.mjs",
+    "actualSerializedAggregateCostUsd": 0.11441250000000001,
+    "expectedExactCostUsd": 0.1144125,
+    "strictEqualityEqual": false,
+    "sevenDecimalNormalizationEqual": true,
+    "mathematicalCostChanged": false,
+    "capDispositionChanged": false
+  },
+  "exactCostRepresentation": {
+    "unit": "one-ten-millionth-dollar",
+    "inputTokens": 6441,
+    "outputTokens": 9831,
+    "inputUnitsPerToken": 25,
+    "outputUnitsPerToken": 100,
+    "exactIntegerUnits": 1144125,
+    "exactCostUsd": 0.1144125
+  },
+  "boundaries": {
+    "transcriptsChanged": 0,
+    "audioFilesAccessed": 0,
+    "paidCallsAdded": 0,
+    "modelsExecuted": 0,
+    "validatorsChanged": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/execution-preparation-manifest.json": "2081bf990c1c580617017b68e205387525442f2031de6eaf79fdb309601e7cf7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/execution-manifest.json": "8f71d0db474f8d1fb684b87eda3a13eb93111f30bb2fe7ea1433dbbd2843f37e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/model-execution.json": "499fd518a657dccc79c2857fe4979a6ebfb41659a14ab46d6220d5d20ddbeb5c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/audio-verification.json": "33e2f247d0825b699fae5c48396c8e50022622a87783ea223166ac143f06a56e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/analysis.json": "3f64809520086402c63e449c20d2e35e1da2250782a65cc4e5cd4462fb80c415",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/cost-control-analysis.json": "19de6d195bb4bbb7c93c19aa9d7ff2baf7ac55e63a7017aa07ddba9cb75f70a2",
+    "scripts/test-assessment-production-post-canary-batch-04-audio-verification.mjs": "9fc7fb49143fff6a5965bdca523a18b67c2451940051472244447a09fd4d6aae",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/standing-authorization.json": "37c73fd5ad5bcaf6f907c048d662529cd11934924419dded17a56987687bb9e0"
+  },
+  "nextAuthorizedAction": "prepare-and-freeze-one-batch-04-exact-cost-normalization-overlay-under-standing-recovery-authorization"
+}
