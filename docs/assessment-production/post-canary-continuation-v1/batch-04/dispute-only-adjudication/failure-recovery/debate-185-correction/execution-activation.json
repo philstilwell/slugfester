@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-185-adjudication-correction-activation",
+  "protocolId": "assessment-production-post-canary-batch-04-dispute-only-adjudication",
+  "status": "frozen-one-batch-04-debate-185-full-packet-adjudication-correction-context-authorized",
+  "frozenAt": "2026-08-21T18:06:41Z",
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/diagnosis.json",
+  "failedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/outputs/debate-185.json",
+    "sha256": "795b542b81418eb260c0c6a1549db878276d7906221844b17b41432dd7cb2412",
+    "reusable": false,
+    "preservedCopy": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/original-invalid-output.json"
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "modelInputs": {
+    "rubric": "docs/reassessment-rubric-v2.1.md",
+    "decomposedRubric": "docs/reassessment-rubric-v4.0.md",
+    "derivedFindingsRubric": "docs/reassessment-rubric-v4.0.1.md",
+    "boundedInventoryRubric": "docs/reassessment-rubric-v4.1.md",
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "adjudicationWorkflow": "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md",
+    "schema": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "185",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/packets/debate-185.json",
+      "packetSha256": "b24e560d6f8013110a50ff759c23dd74e4c9f9668531317e999be0594c07a593",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/provenance/debate-185.json",
+      "provenanceSha256": "c46dbf84c2977cedd12adc3ae92347ea7e60c2512248d37f660c984c721a97e6",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/corrected-output.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-04/disagreement-extraction/disagreements/debate-185.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/locked-inventories/debate-185.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-04/independent-judgments/source-packets/debate-185.json",
+      "originalEvents": ".assessment-cache/captions/AxhA7S3q49o/events.json",
+      "disputedMoves": 18,
+      "candidateSelections": 60,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 256537,
+      "copiedInputBytes": 292309,
+      "originalContextIndex": 9,
+      "correctionId": "fresh-full-packet-correction-1"
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 1,
+    "schedulerRamp": [
+      1
+    ],
+    "maximumParallelContexts": 1,
+    "rampPhases": [
+      {
+        "phase": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true
+      }
+    ],
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 900000,
+    "maximumMinutesPerContext": 12,
+    "maximumMeanMinutes": 9.5,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "terminateIsolatedProcessGroupAtFrozenTimeout": true
+  },
+  "requiredOutputShape": {
+    "moveDecisions": 18,
+    "burdenAdjustmentDecisions": 2,
+    "burdenAdjustmentSideOrder": [
+      "pro",
+      "con"
+    ],
+    "candidateSelections": 60
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/model-execution.json",
+    "correctedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/corrected-output.json",
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/outputs/debate-185.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/analysis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/diagnosis.json": "60d6ccaf352bd55788972b1d3c767b8da13c3c5d6051d4c1c2eb8de9c2aa64b6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/execution-activation.json": "4c5124bdcb55ad7d98dafe14c3a2d3fc5c95f2c5c66ac37f0b43b8e68a3a49ae",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/outputs/debate-185.json": "795b542b81418eb260c0c6a1549db878276d7906221844b17b41432dd7cb2412",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/packets/debate-185.json": "b24e560d6f8013110a50ff759c23dd74e4c9f9668531317e999be0594c07a593",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md": "7ea2da737b26349826c3e8ff595f41524afd1f4b23294f3783923946601fee0c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md": "afe02e43ab72c1af4104730e1097bc2fb783c2dd7ab803d3efeb5a61efe4f0d1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/adjudication.schema.json": "821208670b186ae2a04de1db70f12a533dc34f3325cb73c139b3831decb6b9bb",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4221175-decomposed-adjudication.mjs": "485cd043a9fe4ab2bdc69f67479672d18f05ce44bde9122663009a0a45ce98e1",
+    "scripts/lib/v42211728-hard-route-adjudication.mjs": "53d850f6d25f5b1d71f7be6c81ad4c642c13bad204a5c01947e89b3410dbb388",
+    "scripts/lib/assessment-production-post-canary-batch-04-dispute-adjudication.mjs": "60d2fab73d6e7748d0b2192c6026383ccf00500b67fadb3ce71512e36c7a7ab6",
+    "scripts/prepare-assessment-production-post-canary-batch-04-debate-185-adjudication-correction.mjs": "2b4e22efab2b6b55f283b098fc7d5e8927e605823797c149176b4d17c7431984",
+    "scripts/test-assessment-production-post-canary-batch-04-debate-185-adjudication-correction-preparation.mjs": "5408821f9829143bf9e51134722e7a0ce28c25ae084b291ce26ad36ad4601d78",
+    "scripts/activate-assessment-production-post-canary-batch-04-debate-185-adjudication-correction.mjs": "d059f8b752406b6c1b271986f610f42bc8cfe73e10043ea6974cab1b76ecc506",
+    "scripts/run-assessment-production-post-canary-batch-04-debate-185-adjudication-correction.mjs": "afea5652c0081c1293d195107c3a80fa2895f948d8fe5145aa0a7e88eedf8349",
+    "scripts/merge-assessment-production-post-canary-batch-04-debate-185-adjudication-correction.mjs": "c910039cf2e4530039268f50f7c04caf6afd6d67864f151e66cb1b4447138556",
+    "scripts/test-assessment-production-post-canary-batch-04-debate-185-adjudication-correction-gate.mjs": "7aaa8023a0d3b33d6d782fb8a9172e043ea019eb10590c0932acf2be857045f4"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/corrected-output.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/analysis.json"
+  ],
+  "authorization": {
+    "executionActivation": false,
+    "adjudicationModelContexts": true,
+    "deterministicMergeAndCohortReplay": true,
+    "judgmentModelContexts": false,
+    "paidServices": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "execute-one-fresh-debate-185-full-packet-adjudication-correction-context",
+  "authorizedAt": "2026-08-21T18:07:05Z",
+  "checkpointCommit": "69c5e8c8e07d2bd361b3622fa8b6ca88b2621b0f",
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/dispute-only-adjudication/failure-recovery/debate-185-correction/execution-preparation-manifest.json",
+    "sha256": "774d10c6fa434c91422d6dae9e71f81ff7c1233e09a46e6ece20fdd6a5a1e90c"
+  }
+}
