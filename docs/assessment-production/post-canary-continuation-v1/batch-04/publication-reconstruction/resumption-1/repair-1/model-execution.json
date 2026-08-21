@@ -1,0 +1,822 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-1",
+  "status": "batch-04-debate-49-eleven-context-publication-resumption-repair-gate-passed",
+  "gateStartedAt": "2026-08-21T20:07:23.808Z",
+  "gateCompletedAt": "2026-08-21T20:14:06.648Z",
+  "contextsPlanned": 11,
+  "contextsAttempted": 11,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 11,
+  "invalidContexts": 0,
+  "attempts": 11,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 402839,
+  "aggregateModelElapsedMs": 696609,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "validContextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:07:23.809Z",
+      "completedAt": "2026-08-21T20:08:38.802Z",
+      "elapsedMs": 74993,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-theism-worldview-coherence.critique",
+        "moveProse.con-god-guarantor-assumes-foundation.critique"
+      ],
+      "copiedInputBytes": 31756,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "ae125144590d3141a58df2cb79a3ac37459fa99de2c4cd40eba10843bb8f69c3",
+      "stderrSha256": "f07681beb2c2d6eaf45a51a7c79381e43ae569708ad4d2ba833fe6772986f503",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "dd8d32c16a546658c2f6e97a447cbd12a21848a68ff6598e5f432e9ebc200ae0",
+      "validationWritten": true,
+      "validationSha256": "5523a7e058774132de43dce06ce93a412e610d5d90d6e21472f395cc825c0447",
+      "provenanceWritten": true,
+      "provenanceSha256": "bdac776aaf4bf429f64aefece7267c3ae81f3dfc59dd582f70c0b845f6d83fbb",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-theism-worldview-coherence.critique",
+            "words": 118,
+            "characters": 966,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-god-guarantor-assumes-foundation.critique",
+            "words": 118,
+            "characters": 978,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:08:38.812Z",
+      "completedAt": "2026-08-21T20:09:38.668Z",
+      "elapsedMs": 59856,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-reliability-parsimony-justify-use.critique",
+        "moveProse.pro-personal-god-unifies-categories.critique"
+      ],
+      "copiedInputBytes": 32624,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "b2661df7283d2e74ac544246c033ccff024b2e7d37ac5f3217f9aa45bd294dd9",
+      "stderrSha256": "72ebe54afa8ee51e1bc6f13a9294787c0bf85a493bdb417259f0578d4e41366b",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "b1a52a893263cafa2a8a248315785f2dd6bbde3c7547c7e668565fe493415dce",
+      "validationWritten": true,
+      "validationSha256": "af5a480a38c7a3df385afa12e737f20ae520704befb870aad6330e5b19789a7b",
+      "provenanceWritten": true,
+      "provenanceSha256": "20df9bfc416a089f128487fbf3201ba2379388a068c739a1243b97da0cb79d3f",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-reliability-parsimony-justify-use.critique",
+            "words": 117,
+            "characters": 986,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-personal-god-unifies-categories.critique",
+            "words": 115,
+            "characters": 987,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:08:38.812Z",
+      "completedAt": "2026-08-21T20:09:18.938Z",
+      "elapsedMs": 40126,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-fallible-proportioned-confidence.critique",
+        "moveProse.pro-transcendentals-maximal-certainty.critique"
+      ],
+      "copiedInputBytes": 32553,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "f6f95d411250f892362f59be4a72290b4d02965e59cc11827db3f392e64e2125",
+      "stderrSha256": "e5dcb6c789daf1584285cf26c02e97cf27017a597b94c6d71753ea0d53fbdeb7",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "64033941c70eff0e4db8f5d57499c8bc2ad8cde68f4db2895477af96e650ed14",
+      "validationWritten": true,
+      "validationSha256": "5331f4ec66671dab7b7c2e393a1c7508f826cf8ff07a4c37ad670525eadd5919",
+      "provenanceWritten": true,
+      "provenanceSha256": "71bbdab5842c794cbf75c67e27c0fe4a985210d54f442cb058d942697f2ad199",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-fallible-proportioned-confidence.critique",
+            "words": 118,
+            "characters": 986,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-transcendentals-maximal-certainty.critique",
+            "words": 118,
+            "characters": 954,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:09:38.678Z",
+      "completedAt": "2026-08-21T20:11:02.416Z",
+      "elapsedMs": 83738,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-coherentist-web-no-arbitrary-stop.critique",
+        "moveProse.con-reductio-must-exhaust-alternatives.critique"
+      ],
+      "copiedInputBytes": 32954,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "27cd8c6351c3dc24da8a5788dee44df35461924a8303875832909ffe7efc11f6",
+      "stderrSha256": "3b11855db5d86698de4307e56a5f7da8cd2c925d9414972a2d0bb45fdfb7e7b5",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "b2c3e9a45368ca24e79e6178db646000efe44f59ed03acc6d6f494d738e292da",
+      "validationWritten": true,
+      "validationSha256": "78ed4141c086c0a10420c11df0609b9a46f8c2bcd5223f59ab6d1f2c69d3f1c9",
+      "provenanceWritten": true,
+      "provenanceSha256": "543c78f15aaa65cc7d1553b3c0d57c2103dcaaa66e3c20799059b9596aa26c4a",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-coherentist-web-no-arbitrary-stop.critique",
+            "words": 117,
+            "characters": 926,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-reductio-must-exhaust-alternatives.critique",
+            "words": 116,
+            "characters": 938,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 4,
+      "packetIndex": 4,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:09:38.678Z",
+      "completedAt": "2026-08-21T20:10:52.350Z",
+      "elapsedMs": 73672,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-divine-logic-dilemma.critique",
+        "moveProse.con-perfect-ground-fallible-access.critique"
+      ],
+      "copiedInputBytes": 32523,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "80990469009b33d533291f6691cc9d9fd62f087293894f958ae7a6882676584d",
+      "stderrSha256": "420d003f967594dc6174ea699703b368e1c7b7c117760f5e0282d92fddef07a4",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "4b856b4c94f079b474055d5a903cba68716d4fc321de6867c63f139e3208c74d",
+      "validationWritten": true,
+      "validationSha256": "8bd660df45f9b188bccc590690bba0a2cf27d474be0b7ca74d8d9834f9386cbc",
+      "provenanceWritten": true,
+      "provenanceSha256": "2ee9d3bf78871ac1fea2bee517330e8746061091425b0240a5922f793f55891b",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 4,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-divine-logic-dilemma.critique",
+            "words": 117,
+            "characters": 912,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-perfect-ground-fallible-access.critique",
+            "words": 117,
+            "characters": 934,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 5,
+      "packetIndex": 5,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:10:52.358Z",
+      "completedAt": "2026-08-21T20:11:51.151Z",
+      "elapsedMs": 58793,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-induction-pragmatic-circularity.critique",
+        "moveProse.con-use-without-causal-explanation.critique"
+      ],
+      "copiedInputBytes": 33190,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "89476af23db516960fc7732dda768e83722d9579c43797ee23e1579c10e65f67",
+      "stderrSha256": "247f27e89355ffc4ec290ad46ebafb022ed147ce7f771c7cc3acb864ff935cf4",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "cf44e54f1ef890fa03cacefa8dbc904848706cd5f7d1e9d72d54922804cf2109",
+      "validationWritten": true,
+      "validationSha256": "83f7a76ae6e269c24a4fe465b09f0dacc34bf727a8b9b8d1fea40813cbd35092",
+      "provenanceWritten": true,
+      "provenanceSha256": "443c1dee632190fe101e8373b5ff39e2214c42cff66446006f79c278edb26e2a",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 5,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-induction-pragmatic-circularity.critique",
+            "words": 118,
+            "characters": 977,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-use-without-causal-explanation.critique",
+            "words": 117,
+            "characters": 940,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 6,
+      "packetIndex": 6,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:11:02.425Z",
+      "completedAt": "2026-08-21T20:11:54.330Z",
+      "elapsedMs": 51905,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-atheism-nonbelief-burden.critique",
+        "moveProse.pro-skeptical-neutrality-commitments.critique"
+      ],
+      "copiedInputBytes": 32531,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "c032b167d2d02287b986bccdb92bf74addb720881ff73d4bf02958a302d20530",
+      "stderrSha256": "f66e902d536b274544a2dec1a3cc91bbbc9a2e70209e40ffd3ac660d3abbc822",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "27d76965ab416ad62c113f78f47e2e5d221f1a87a66c4f32b2a3239e3add327c",
+      "validationWritten": true,
+      "validationSha256": "0e1ffb927fa07b57805f2cf5f4727976e43ada9fec3e581754daf7f25ba8b454",
+      "provenanceWritten": true,
+      "provenanceSha256": "ebe6b24ae8d7e5131ef89c9c32a8ae150fed8dd673501d1351656cc0cc604689",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 6,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-atheism-nonbelief-burden.critique",
+            "words": 115,
+            "characters": 959,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-skeptical-neutrality-commitments.critique",
+            "words": 115,
+            "characters": 910,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 7,
+      "packetIndex": 7,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:11:51.160Z",
+      "completedAt": "2026-08-21T20:13:05.440Z",
+      "elapsedMs": 74280,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-logic-describes-invariant-relations.critique",
+        "moveProse.con-explicit-form-required.critique"
+      ],
+      "copiedInputBytes": 32695,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "4e209168ffefdc58967fb3516709f04930e7315b797521622291689985209b9d",
+      "stderrSha256": "3e8b60c07e6d24eaf98d420bdfee6466e17a5a1bf217223b8c62b11aee80cd8b",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "1f8d5d43d81b6e216f45f97cf7d5870ff37233fe190994837e730f3c4d4bb4a7",
+      "validationWritten": true,
+      "validationSha256": "f3fc3f8a5ca75d0338c6616f75a2b478a5d555a6f89b1e774582efc7609a83f7",
+      "provenanceWritten": true,
+      "provenanceSha256": "75ec2014cdd190256cefda3a5264c3d05ed7c638f4d3cbbed80d506a3200c290",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 7,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-logic-describes-invariant-relations.critique",
+            "words": 115,
+            "characters": 917,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-explicit-form-required.critique",
+            "words": 116,
+            "characters": 929,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 8,
+      "packetIndex": 8,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:11:54.338Z",
+      "completedAt": "2026-08-21T20:12:59.027Z",
+      "elapsedMs": 64689,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-denial-dependent-positive-proof.critique",
+        "moveProse.pro-logic-reflects-divine-mind.critique"
+      ],
+      "copiedInputBytes": 32673,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "68e039926124bca6f4223477f3154b0c513753cf88cc28268beb6ef3a3c8c1ce",
+      "stderrSha256": "e3d54cb9b318c63835f7b9b5265a4f811d975a3ab149914b2fc59f1e85772471",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "bd9b376d0fdb848c879c32e8a6cf2366573478b3f2f9dc64eaa9341c3ebd378e",
+      "validationWritten": true,
+      "validationSha256": "5dba134749281a89e1cb59339c909123b2d05881b3ad871249a83433c9b579cf",
+      "provenanceWritten": true,
+      "provenanceSha256": "3f356ee295413139c7d4cbff97d2c37a05bfabc609e37a435bf8127e7740caaf",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 8,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-denial-dependent-positive-proof.critique",
+            "words": 115,
+            "characters": 1000,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-logic-reflects-divine-mind.critique",
+            "words": 117,
+            "characters": 911,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 9,
+      "packetIndex": 9,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:12:59.037Z",
+      "completedAt": "2026-08-21T20:13:52.405Z",
+      "elapsedMs": 53368,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-knowledge-requires-god.critique",
+        "moveProse.con-divine-guarantee-unnecessary-step.critique"
+      ],
+      "copiedInputBytes": 31290,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "94d030cd7951cfecfc4e61a071b833be7acb82dd035b740f2e1d243dd7ac7894",
+      "stderrSha256": "b99060abe7e310c76afee8211f36b169827c063260b8fd5b2169825f2756bda0",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "d346c7bdf645252050746f14c0863530013682796b74315a005fd09ffe0afc55",
+      "validationWritten": true,
+      "validationSha256": "9938ea586933ef8e2480fb1fc705f0e91a027ff87ebb3daa02fa6a31b809aea6",
+      "provenanceWritten": true,
+      "provenanceSha256": "6d9beb7baff69a32c528f4bc46344ac321bbed77d32d0569630567b8899f5a06",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 9,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-knowledge-requires-god.critique",
+            "words": 114,
+            "characters": 910,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-divine-guarantee-unnecessary-step.critique",
+            "words": 118,
+            "characters": 905,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 10,
+      "packetIndex": 10,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T20:13:05.450Z",
+      "completedAt": "2026-08-21T20:14:06.639Z",
+      "elapsedMs": 61189,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-logic-divine-energies.critique",
+        "moveProse.con-secular-moral-reasoning.critique"
+      ],
+      "copiedInputBytes": 31727,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "c2e11cbd0496ca5b73708ebe8a109cbede99aa043321e5eea46ca41b60c90cde",
+      "stderrSha256": "0773bd8bfaf414a61b6a1cce7986c6322a657292e09f3fa1a1024005350e1c95",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "7906f39a258893ec3c1ab4596de49eb5780ba11428cd7a508919ad2789c04e07",
+      "validationWritten": true,
+      "validationSha256": "a6598fa46d829a755a4185aa284d8cd079733b458f304250e4e0cd424fa10c9d",
+      "provenanceWritten": true,
+      "provenanceSha256": "b709c846a7e581f51477f902db81b8dc281791665e3f9cbef59f4a7e81eb0ab7",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "49",
+        "packetIndex": 10,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-logic-divine-energies.critique",
+            "words": 116,
+            "characters": 1002,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-secular-moral-reasoning.critique",
+            "words": 118,
+            "characters": 901,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalFailedOutputPreserved": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicMergeAndCompleteValidation": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "remainingSixContextExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
