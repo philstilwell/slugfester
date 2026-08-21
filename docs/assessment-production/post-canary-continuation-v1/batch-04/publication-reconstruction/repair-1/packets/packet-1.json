@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-127-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-debate-127-publication-repair-1",
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debateNumber": "127",
+  "debateId": "slick-clifton-objective-morality-god-2014",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/outputs/debate-127.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/packets/debate-127.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-recipient-preference-variability.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-recipient-preference-variability.critique",
+      "moveId": "pro-recipient-preference-variability",
+      "originalCritique": "Strongest feature: The response exposes an authentic weakness in crude preference satisfaction by showing that variable desires alone cannot determine moral status without attention to consent, coercion, agency, and the character of the act. Principal limitation: It attributes that crude theory to a broader secular position that had already invoked potential conscious states, impartial rules, and social consequences, so its generalized conclusion misses decisive components of the immediate proposal. Live burden: The objection must address the strongest welfare-and-rule account and demonstrate that recipient variation defeats its impartial criteria rather than merely producing different outcomes under relevantly different conditions. Locked score: The supplied weak band reflects a clear and locally relevant example whose overextended scope, reduced representation of the opposing view, and limited responsiveness prevent it from establishing the absence of secular objectivity.",
+      "originalWords": 132,
+      "originalCharacters": 988,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-recipient-preference-variability",
+        "sectionId": "secular-welfare-and-impartial-construction",
+        "side": "pro",
+        "speaker": "Matt Slick",
+        "moveKind": "reply",
+        "proposition": "A recipient-preference account can assign opposite moral statuses to the same conduct depending on what a recipient wants and therefore cannot furnish an objective standard.",
+        "importance": 2,
+        "finalScore": 63,
+        "scoreBand": "weak 50–64",
+        "displayTime": "65:57",
+        "sourceSpan": {
+          "startEvent": 1706,
+          "endEvent": 1743,
+          "startMs": 3957680,
+          "endMs": 4035520
+        },
+        "sourceExcerpt": "preference because that's what you were saying before. People want this or don't want that. It's not the perpetrator, but the receiver. So if the receiver tends to like that kind of a thing then when the rapist does it it's a good thing but if he doesn't like it then it's not a good thing. The same action has opposite consequences and hence you can't have any objective standard",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-secular-insufficiency"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-veil-of-ignorance-rules",
+            "con-potential-states-rule-consequences"
+          ],
+          "components": [
+            {
+              "componentId": "pro-recipient-preference-variability-component-01",
+              "targetMoveId": "con-veil-of-ignorance-rules",
+              "text": "Does not address impartial hypothetical agreement; it substitutes an individual recipient-preference criterion.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-recipient-preference-variability-component-02",
+              "targetMoveId": "con-potential-states-rule-consequences",
+              "text": "Does not engage actual and potential states or rule-level consequences.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The criticism is relevant to crude preference theories but misses the decisive components of the immediately preceding secular accounts.",
+          "responsivenessWithinClass": {
+            "value": 50,
+            "rationale": "It is issue-bearing contrary material without contact with the veil or rule-consequence mechanisms."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "It is issue-bearing contrary material without contact with the veil or rule-consequence mechanisms."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The variable-preference example is clear, but its conclusion expands from that account to absence of any objective standard."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Opposite preferences do not show that an impartial welfare-and-rule account assigns opposite moral statuses."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The secular view evaluates actual and potential states plus impartial rules, not whether a recipient happens to welcome an act.",
+          "decisiveQualification": "Consent, autonomy, coercion, and rule consequences distinguish the proposed cases."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (58 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It centrally supports the secular-insufficiency bridge, though its contact with the strongest opposing account is weak."
+          },
+          "representationalCharity": {
+            "value": 43,
+            "rationale": "The objection materially weakens the developed secular position into a recipient-liking test."
+          }
+        },
+        "evidenceBasis": "Slick claims the same assault changes moral status solely with the recipient's preference and concludes that no objective standard remains.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
