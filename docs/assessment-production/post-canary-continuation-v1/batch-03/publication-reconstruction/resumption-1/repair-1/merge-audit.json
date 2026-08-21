@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-repair-merge-audit",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-1-repair-1",
+  "status": "passed",
+  "debates": [
+    "58",
+    "150"
+  ],
+  "originalFailedOutputs": {
+    "58": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/outputs/debate-58.json",
+      "sha256": "9fa595a37d68d7610b19a5f7e38d743edd2f9e26ac60753331092b5e54135c99"
+    },
+    "150": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/outputs/debate-150.json",
+      "sha256": "39a973826d345902cd31465442592e1a80a68236e9636de54dbbba14a499fde6"
+    }
+  },
+  "repairOutputs": [
+    {
+      "packetIndex": 0,
+      "debateNumber": "58",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/outputs/packet-0.json",
+      "sha256": "5eacb0369f963334ac04099f2bf9efb0ccec14d7d846751bb466d7fe3de6d7de"
+    },
+    {
+      "packetIndex": 1,
+      "debateNumber": "150",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/outputs/packet-1.json",
+      "sha256": "df39a1addb8c60c2c832022e60bc2b033cff0c6f8d38317c31bd43e8f1f64717"
+    },
+    {
+      "packetIndex": 2,
+      "debateNumber": "150",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/outputs/packet-2.json",
+      "sha256": "06d42e1c951779a6e6b06e5ff82115032f8fe55f7cb5b6af96cd940b30b71056"
+    }
+  ],
+  "mergedOutputs": {
+    "58": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/merged/debate-58.json",
+      "sha256": "4db3844aff296599ab2ec10647f1d31d221dc680afefebcc9dc41f3ed706b7f5"
+    },
+    "150": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/merged/debate-150.json",
+      "sha256": "f78f16dd2aad9101e5d7ccd9670cf90ccaf3d234704d40cccbcf5070d4049cb3"
+    }
+  },
+  "authorizedTransformations": [
+    {
+      "debateNumber": "58",
+      "field": "aiExtension.con.premises[id=d58-ai-con-premise-4].novelty.explanation",
+      "packetIndex": 0,
+      "operation": "replace-authorized-invalid-field",
+      "before": "It directly repairs the unresolved scriptural-conflict burden.",
+      "after": "It directly repairs the unresolved burden of conflicting scriptural interpretations."
+    },
+    {
+      "debateNumber": "150",
+      "field": "moveProse.con-divine-agent-requires-prior-support.critique",
+      "packetIndex": 1,
+      "operation": "replace-authorized-invalid-field",
+      "before": "Strongest feature: The move identifies a genuine missing component in the affirmative hypothesis by distinguishing generic supernatural background evidence from evidence for an agent capable of and disposed toward raising Jesus. Principal limitation: Describing prior belief in such an agent as necessary confuses antecedent plausibility with an absolute prerequisite and neglects the possibility that sufficiently discriminating event evidence could update the probability of divine agency. Live burden: The skeptical side must restate the objection probabilistically, explain what evidence would distinguish a purposeful divine act from unknown alternatives, and assess whether the resurrection evidence itself supplies any such discrimination. Locked score: The strong and competent band reflects substantial relevance and a coherent background-probability challenge, constrained by materially overstated necessity, incomplete qualification, and an unsupported bridge from needing agent content to requiring prior belief.",
+      "after": "Strongest feature: The move identifies missing affirmative support by distinguishing generic supernatural background evidence from evidence for an agent capable of and disposed toward raising Jesus. Principal limitation: Describing prior belief in such an agent as necessary confuses plausibility with an absolute prerequisite and neglects the possibility that discriminating event evidence could update the probability of divine agency. Live burden: The skeptical side must restate the objection probabilistically, explain what evidence distinguishes a divine act from unknown alternatives, and assess whether resurrection evidence supplies such discrimination. Locked score: The strong and competent band reflects relevance and a coherent background-probability challenge, constrained by overstated necessity, incomplete qualification, and an unsupported bridge from needing agent content to requiring prior belief."
+    },
+    {
+      "debateNumber": "150",
+      "field": "moveProse.pro-causation-against-methodological-exclusion.critique",
+      "packetIndex": 1,
+      "operation": "replace-authorized-invalid-field",
+      "before": "Strongest feature: The private-information hypothetical effectively demonstrates how automatic preference for any natural explanation could prejudge evidence and clarifies the affirmative's concern about methodological exclusion rather than ordinary evidential caution. Principal limitation: Showing that dogmatic exclusion would be defective does not establish a supernatural cause, distinguish one from unknown natural alternatives, or demonstrate that ancient resurrection evidence possesses the hypothetical's immediacy, specificity, and independently checkable informational strength. Live burden: The affirmative must provide a noncircular threshold for concluding that known natural explanations are genuinely inadequate and explain what positive features license supernatural classification after that threshold is crossed. Locked score: The strong and competent band reflects a coherent, relevant challenge to prior exclusion and a vivid counterexample, moderated by incomplete causal discrimination and limited transfer from the hypothetical to the historical case.",
+      "after": "Strongest feature: The private-information hypothetical demonstrates how preferring any natural explanation could prejudge evidence and clarifies the affirmative concern about methodological exclusion rather than ordinary evidential caution. Principal limitation: Showing dogmatic exclusion defective does not establish a supernatural cause, distinguish one from unknown natural alternatives, or demonstrate that resurrection evidence possesses the hypothetical immediacy, specificity, and independently checkable informational strength. Live burden: The affirmative must provide a noncircular threshold for concluding known natural explanations inadequate and explain what positive features license supernatural classification after crossing it. Locked score: The strong and competent band reflects a relevant challenge to prior exclusion and vivid counterexample, moderated by incomplete causal discrimination and limited transfer from the hypothetical to the historical case."
+    },
+    {
+      "debateNumber": "150",
+      "field": "moveProse.con-test-before-supernatural-attribution.critique",
+      "packetIndex": 2,
+      "operation": "replace-authorized-invalid-field",
+      "before": "Strongest feature: The reply clearly distinguishes permission to test an extraordinary event from permission to attribute it supernaturally, directly answering the claim that methodological naturalism prevents investigation from beginning. Principal limitation: The formulation says little about what evidence could confirm supernatural causation, potentially leaving attribution indefinitely postponed even when an event generated highly specific contrasts against fraud, error, hallucination, and known natural alternatives. Live burden: The skeptical side must identify a principled evidential threshold for causal attribution and explain why the affirmative's historical and paranormal evidence falls below it without converting methodological caution into prior exclusion. Locked score: The very strong band reflects precise scope, matched calibration, exceptional responsiveness, and a powerful clarification of investigative practice, with a limited residual burden to make the proposed test-and-confirm standard operational rather than merely restrictive.",
+      "after": "Strongest feature: The reply distinguishes permission to investigate extraordinary events from permission to assign supernatural causation, answering the claim that methodological naturalism bars inquiry. Principal limitation: It says too little about what evidence could confirm such causation, leaving attribution indefinitely deferred even when an event yields specific contrasts against fraud, error, hallucination, and natural alternatives. Live burden: The side must specify a principled evidential threshold for causal attribution and explain why the affirmative's historical and paranormal evidence misses it, without turning methodological caution into prior exclusion. Locked score: The very strong band reflects precise scope, matched calibration, responsiveness, and a clarification of investigative practice, while recognizing the need to make the test-and-confirm standard operational rather than restrictive."
+    },
+    {
+      "debateNumber": "150",
+      "field": "moveProse.con-paul-and-reports-insufficient.critique",
+      "packetIndex": 2,
+      "operation": "replace-authorized-invalid-field",
+      "before": "Strongest feature: The reply grants Paul's importance while precisely identifying his lack of direct access to Jesus's ministry, execution, burial, and empty-tomb history, thereby challenging the affirmative's central historical foundation. Principal limitation: Direct eyewitness access to every underlying event is not required for all historical knowledge, and the selected criticism does not fully evaluate Paul's claimed experience, apostolic contacts, early tradition, or possible corroboration from other sources. Live burden: The skeptical side must assess the complete transmission chain, independence, dating, and content of the appearance traditions and show why their combined warrant remains insufficient despite Paul's proximity to principal witnesses. Locked score: The very strong band reflects focused source criticism, careful calibration, substantial relevance, and direct responsiveness, moderated by the need for fuller engagement with indirect historical corroboration and testimonial convergence.",
+      "after": "Strongest feature: The reply grants Paul's importance while identifying his lack of direct access to Jesus's ministry, execution, burial, and empty-tomb history, challenging the affirmative's historical foundation. Principal limitation: Direct eyewitness access to every event is unnecessary for historical knowledge, and the criticism does not assess Paul's claimed experience, apostolic contacts, early tradition, or corroboration from other sources. Live burden: The skeptical side must examine the transmission chain, independence, dating, and content of the appearance traditions, and show why their combined warrant remains insufficient despite Paul's proximity to witnesses. Locked score: The very strong band reflects focused source criticism, careful calibration, relevance, and responsiveness, while recognizing the need for fuller engagement with indirect historical corroboration and testimonial convergence."
+    }
+  ],
+  "authorizedFieldsChanged": 5,
+  "immutableFieldsChanged": 0,
+  "completeDebateValidations": {
+    "58": {
+      "status": "passed",
+      "debateNumber": "58",
+      "moves": 19,
+      "critiques": 19,
+      "minimumCritiqueCharacters": 886,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 16,
+      "introducedItems": 4,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    },
+    "150": {
+      "status": "passed",
+      "debateNumber": "150",
+      "moves": 19,
+      "critiques": 19,
+      "minimumCritiqueCharacters": 917,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 16,
+      "introducedItems": 4,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "completeCohortValidation": {
+    "debates": 4,
+    "moves": 80,
+    "critiques": 80,
+    "exactSourceQuotes": 8,
+    "overallCommentarySides": 8,
+    "aiExtensionSides": 8,
+    "minimumCritiqueCharacters": 886,
+    "modelAuthoredScores": 0,
+    "lockedScoresUnchanged": true
+  },
+  "modelAuthoredScores": 0,
+  "lockedScoresUnchanged": true
+}

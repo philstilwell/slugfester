@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-repair-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-1-repair-1",
+  "status": "batch-03-publication-resumption-three-context-repair-gate-passed",
+  "gateStartedAt": "2026-08-21T01:59:17.250Z",
+  "gateCompletedAt": "2026-08-21T02:00:34.784Z",
+  "contextsPlanned": 3,
+  "contextsAttempted": 3,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 3,
+  "invalidContexts": 0,
+  "attempts": 3,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 77533,
+  "aggregateModelElapsedMs": 129431,
+  "rampPhases": [
+    {
+      "phase": "repair-operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "repair-ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "repairType": "novelty-explanation-word-boundary",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T01:59:17.252Z",
+      "completedAt": "2026-08-21T01:59:32.658Z",
+      "elapsedMs": 15406,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "aiExtension.con.premises[id=d58-ai-con-premise-4].novelty.explanation"
+      ],
+      "copiedInputBytes": 19881,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "ffd299af588fdeeee892c9ba70e401f856c272ee32a34dbca471bfcbc1247138",
+      "stderrSha256": "05ec2ba6c8bddc0421701f6f69b4d876e63181271eb7529ff53d6522953b6f90",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "5eacb0369f963334ac04099f2bf9efb0ccec14d7d846751bb466d7fe3de6d7de",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "58",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "aiExtension.con.premises[id=d58-ai-con-premise-4].novelty.explanation",
+            "repairType": "novelty-explanation",
+            "words": 10,
+            "characters": 84,
+            "itemId": "d58-ai-con-premise-4"
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "150",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "repairType": "critique-word-boundary",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T01:59:32.671Z",
+      "completedAt": "2026-08-21T02:00:24.590Z",
+      "elapsedMs": 51919,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-divine-agent-requires-prior-support.critique",
+        "moveProse.pro-causation-against-methodological-exclusion.critique"
+      ],
+      "copiedInputBytes": 33526,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "badcbb5d1d6cc56920c80f9d0037d4e205e567a686f6b49a37528330ac402724",
+      "stderrSha256": "fa6ffa3df07b28d4cc8e7561703038a315dd63236dca76979dbb64d2c9990015",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "df39a1addb8c60c2c832022e60bc2b033cff0c6f8d38317c31bd43e8f1f64717",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "150",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-divine-agent-requires-prior-support.critique",
+            "repairType": "critique",
+            "words": 118,
+            "characters": 917,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-causation-against-methodological-exclusion.critique",
+            "repairType": "critique",
+            "words": 118,
+            "characters": 978,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "150",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "repairType": "critique-word-boundary",
+      "model": "5.6 Sol",
+      "modelSlug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T01:59:32.671Z",
+      "completedAt": "2026-08-21T02:00:34.777Z",
+      "elapsedMs": 62106,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-test-before-supernatural-attribution.critique",
+        "moveProse.con-paul-and-reports-insufficient.critique"
+      ],
+      "copiedInputBytes": 33516,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "133557a54373f5cfecf3a1c2b2c6de18a1a32c694dd65d1a83e6df8418fef9bc",
+      "stderrSha256": "84c6f140f7924d73513ce96805ab602c615e10fd5b024e2833f661e54513a2ff",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "06d42e1c951779a6e6b06e5ff82115032f8fe55f7cb5b6af96cd940b30b71056",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "150",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-test-before-supernatural-attribution.critique",
+            "repairType": "critique",
+            "words": 117,
+            "characters": 923,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-paul-and-reports-insufficient.critique",
+            "repairType": "critique",
+            "words": 118,
+            "characters": 920,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalFailedOutputsPreserved": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicMergeAndCompleteValidation": true,
+    "deterministicCohortReplay": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "publicationModelExecution": false,
+    "publicationCompilation": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
