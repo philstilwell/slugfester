@@ -1,0 +1,839 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "127",
+  "debateId": "slick-clifton-objective-morality-god-2014",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-divine-foundation-route",
+      "side": "pro",
+      "description": "Establish that universally binding moral truths require a nonhuman objective standard, identify that standard with God's immutable and revealed character, and show that secular welfare, preference, convention, and contract accounts cannot supply equivalent moral objectivity or obligation.",
+      "successCriteria": "The route succeeds if objective moral absolutes are established, God's necessary character is shown to ground both their truth and authority, and the proposed secular standards are shown unable to explain their universality, nonarbitrariness, or prescriptive force.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-necessary-divine-standard",
+        "tier": "motion",
+        "description": "Show that objective moral truth and obligation require God's character as their necessary, nonhuman foundation."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-moral-absolutes",
+          "tier": "central",
+          "description": "Establish that at least some actions possess universally true moral status independent of individual or collective preference."
+        },
+        {
+          "bridgeId": "pro-central-divine-nature",
+          "tier": "central",
+          "description": "Explain how God's immutable character, rather than an arbitrary divine choice, constitutes the objective moral standard."
+        },
+        {
+          "bridgeId": "pro-central-secular-insufficiency",
+          "tier": "central",
+          "description": "Show why consequence, preference, convention, and contractual agreement cannot generate universally binding moral duties."
+        },
+        {
+          "bridgeId": "pro-central-normative-authority",
+          "tier": "central",
+          "description": "Connect God's nature, creative authority, and purposes to prescriptions that bind human agents."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-revelation-omniscience",
+          "tier": "subsidiary",
+          "description": "Explain how revelation and divine omniscience provide access to moral requirements and informed guidance about their application."
+        },
+        {
+          "bridgeId": "pro-subsidiary-counterexamples",
+          "tier": "subsidiary",
+          "description": "Use difficult cases to test whether harm-oriented secular standards preserve the moral judgments they purport to explain."
+        }
+      ]
+    },
+    {
+      "routeId": "con-secular-inquiry-route",
+      "side": "con",
+      "description": "Reject the claimed necessity of a divine foundation by distinguishing definitions from objectively assessable judgments, grounding moral inquiry in real consequences, intentions, and impartial rule construction, and showing that divine-nature claims do not independently explain goodness or obligation.",
+      "successCriteria": "The route succeeds if a coherent secular method can yield objective assessments or justified rules without God, or if the divine account fails to establish moral absolutes, nonarbitrary goodness, or a valid transition from facts about God to binding duties.",
+      "motionBridge": {
+        "bridgeId": "con-motion-god-not-required",
+        "tier": "motion",
+        "description": "Show that God is not required for defensible moral truth or obligation because secular inquiry is viable or divine grounding is explanatorily incomplete."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-secular-objectivity",
+          "tier": "central",
+          "description": "Distinguish the selection of a moral standard from the objective truth of judgments concerning suffering, consequences, intentions, and circumstances."
+        },
+        {
+          "bridgeId": "con-central-impartial-rules",
+          "tier": "central",
+          "description": "Explain how welfare-sensitive reasoning and impartial contractual construction can justify rules without presupposing divine existence."
+        },
+        {
+          "bridgeId": "con-central-divine-circularity",
+          "tier": "central",
+          "description": "Test whether identifying goodness with God's nature makes the divine standard circular, arbitrary, or modally unexplained."
+        },
+        {
+          "bridgeId": "con-central-is-ought",
+          "tier": "central",
+          "description": "Require an account of how descriptions of God's nature, power, creation, or judgment entail reasons or duties to obey."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-information-foundation",
+          "tier": "subsidiary",
+          "description": "Distinguish God's possible role as an omniscient source of information from the facts that make conduct morally right or wrong."
+        },
+        {
+          "bridgeId": "con-subsidiary-motivation-ontology",
+          "tier": "subsidiary",
+          "description": "Separate the existence or justification of moral requirements from motivation, compliance, punishment, and practical deterrence."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "moral-objectivity-and-absolutes",
+      "title": "Moral Objectivity and the Existence of Absolutes",
+      "weightPercent": 20,
+      "rationale": "Defines the phenomenon requiring explanation and tests whether morality involves intrinsic universal truths, objectively assessable claims under a chosen standard, or context-sensitive judgments about consequences and intentions."
+    },
+    {
+      "sectionId": "divine-nature-and-nonarbitrariness",
+      "title": "Divine Nature, Necessity, and Nonarbitrariness",
+      "weightPercent": 20,
+      "rationale": "Addresses whether God's immutable character supplies a necessary moral standard or leaves unresolved circularity, contrary-nature possibilities, and the basis for calling the divine character good."
+    },
+    {
+      "sectionId": "secular-welfare-and-impartial-construction",
+      "title": "Secular Welfare and Impartial Rule Construction",
+      "weightPercent": 20,
+      "rationale": "Examines whether facts about suffering, potential conscious states, social consequences, and veil-of-ignorance reasoning can support objective assessments or justified rules without God."
+    },
+    {
+      "sectionId": "moral-obligation-and-is-ought",
+      "title": "Moral Obligation and the Is-Ought Bridge",
+      "weightPercent": 20,
+      "rationale": "Tests how either foundation produces binding prescriptions, with particular attention to whether creation, ownership, divine purposes, definitions, or secular commitments provide reasons agents ought to act."
+    },
+    {
+      "sectionId": "omniscience-revelation-and-moral-knowledge",
+      "title": "Omniscience, Revelation, and Moral Knowledge",
+      "weightPercent": 10,
+      "rationale": "Distinguishes the metaphysical ground of morality from access to relevant facts and evaluates whether omniscience and revelation establish foundation, reliable guidance, or only informational authority."
+    },
+    {
+      "sectionId": "counterexamples-motivation-and-practical-force",
+      "title": "Counterexamples, Motivation, and Practical Force",
+      "weightPercent": 10,
+      "rationale": "Organizes the disputed cases involving hidden harm, rule consequences, disobedience, punishment, and deterrence to test each account without conflating moral truth with motivation or compliance."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-mind-grounded-moral-truth",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "moral-objectivity-and-absolutes",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "constructive",
+      "proposition": "Moral truth requires a mind-grounded, nonarbitrary source, while an atheistic appeal to consequences cannot impose universally binding moral values.",
+      "sourceSpan": {
+        "startEvent": 132,
+        "endEvent": 234
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening argument is delivered by Matt after Scott explicitly asks him to present his case from the ground up.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "obtain a moral? I think well you were saying we do it by assigning a value. You uh I think you said something to the effect of uh that which reduces harm and increases happiness. That's an oversimplification but that's a basic uh idea. And uh but then how does that truth statement or how does that statement acquire its truth value? See, in an atheistic worldview, I don't see how there could be any justification for it to be a universal",
+        "characterCount": 439,
+        "tokenCount": 82,
+        "startToken": 465,
+        "endToken": 546,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-welfare-definition-objectivity",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "moral-objectivity-and-absolutes",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Secular moral inquiry can adopt the substantive aim of promoting flourishing and reducing unnecessary suffering while recognizing that the definition of morality is not itself a truth claim.",
+      "sourceSpan": {
+        "startEvent": 235,
+        "endEvent": 302
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Scott takes the floor after Matt yields and explicitly contrasts top-down and bottom-up approaches while explaining his own practical moral concern.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "bottom up. So we can we can talk about what we're interested in. Like I you know I don't so much care about the word morality. It's just a word. Words have arbitrary definitions always. You can always assign any meaning you want to any combination of of syllables and sounds. Uh what I'm interested in is uh maximizing happiness and flourishing and well-being and minimizing unnecessary suffering",
+        "characterCount": 396,
+        "tokenCount": 69,
+        "startToken": 180,
+        "endToken": 248,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-immutable-divine-character",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "divine-nature-and-nonarbitrariness",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "Morality is grounded in God's immutable nature and essence rather than arbitrary commands, and that enduring standard is disclosed through divine self-revelation.",
+      "sourceSpan": {
+        "startEvent": 377,
+        "endEvent": 420
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt expressly rejects the divine-command formulation attributed to him and states the character-based Christian account during the ensuing exchange.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "divine command theory. Other people say that it's it's God's nature. It's God's nature and essence. Yeah. That's not the uh dilemma. The euthor doesn't include God's nature as a third possible option. Trust me, you can you can ask the euthiferral dilemma pertaining to God's nature. You simply have to ask, is it is God's nature what it is because it's good or are good things good because they reflect God's nature. Well, God is a standard",
+        "characterCount": 440,
+        "tokenCount": 78,
+        "startToken": 74,
+        "endToken": 151,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-contrary-divine-nature",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "divine-nature-and-nonarbitrariness",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "God's fixed identity does not explain why an eternally contrary divine nature is impossible, leaving the alleged necessity and nonarbitrariness of the divine moral standard unexplained.",
+      "sourceSpan": {
+        "startEvent": 498,
+        "endEvent": 621
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Scott repeatedly advances and refines the possible-world and hypothetical-world challenge, with Matt's short answers serving as the objects of that sustained examination.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "any world I would assume. I can't speak for God. I would assume he has his nature eternally. And since he is what he is, he can't be anything other than what he is. He is what he is, so he has to have what he is. So is there a reason that God has the nature he has and not some other nature? If I were to say that there's a reason that God had a certain nature, then I'd be subjecting God's",
+        "characterCount": 390,
+        "tokenCount": 84,
+        "startToken": 194,
+        "endToken": 277,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-contrary-nature-counterfactual",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "sectionId": "divine-nature-and-nonarbitrariness",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "A hypothetical that reverses God's essential holy and righteous character cannot test divine morality because it replaces the theological subject whose nature grounds the standard.",
+      "sourceSpan": {
+        "startEvent": 622,
+        "endEvent": 674
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt directly answers the proposed alternate divine nature, explains why he will not grant it, and concludes by restating his revealed-character account.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "This this scenario is idolatrous. So I I would imagine that you would be open to hypothetically talking about a universe in which God has different qualities. It's different to talk about a condition of what that defines truth versus uh redefining God's character. The question is God exists. He's holy and he's righteous and he reveals his will to us and he reveals the morals to",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 269,
+        "endToken": 335,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-self-certifying-divine-standard",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "divine-nature-and-nonarbitrariness",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "If God is the sole standard by which God is evaluated, believers lack a noncircular basis for determining that the divine standard is good rather than profoundly harmful.",
+      "sourceSpan": {
+        "startEvent": 692,
+        "endEvent": 768
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Scott clarifies the counterfactual, tests dishonesty for logical impossibility, and then explicitly states the circular-standard objection as the conclusion of his questioning.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "nature is the foundation of morality. This raises a whole bunch of very very important questions about how that is the case. Uh and it and it sounds the bottom what I'm really getting at here Matt is that uh on your view of morality you have no standard by which to evaluate that God is good and that God is a good standard of morality other than God himself. So you wouldn't know",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 346,
+        "endToken": 419,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-circular-obedience-reason",
+      "qualifiedCandidateId": "chunk-001:c008",
+      "sectionId": "moral-obligation-and-is-ought",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "A divine-nature account supplies no rational reason to obey God when its justification that God is good reduces to the circular claim that God conforms to God's own nature.",
+      "sourceSpan": {
+        "startEvent": 788,
+        "endEvent": 824
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Scott supplies the extended practical example and carries it through the successive questions about wrongness, divine nature, goodness, and reasons for compliance.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "God's nature.\" And so at the end of the day, at the end of the conversation, Matt, I'm left thinking, \"Yeah, I really don't see any reason to to behave in the way that this being wants me to behave because I have no it's imp forfeited the ability to make a rational assessment of this being as being a a found a good foundation for morality. I mean it's it's a good that in itself is enough for any rational human being to reject God",
+        "characterCount": 433,
+        "tokenCount": 86,
+        "startToken": 179,
+        "endToken": 264,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-omniscient-revelatory-reasons",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "omniscience-revelation-and-moral-knowledge",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "God knows all actual and potential facts, so divine moral revelations may rest on relevant reasons that limited human agents cannot fully understand.",
+      "sourceSpan": {
+        "startEvent": 825,
+        "endEvent": 837
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt responds immediately to Scott's practical objection and explicitly invokes divine omniscience to distinguish God from an ordinary human adviser.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "moral agnosticism because what you're doing is arguing yourself into a corner and what you're doing is being inconsistent. See, God by definition knows all things. He knows all things actual as well as potential. We do not. So Jerry down the street doesn't compare to God. If God's going to reveal something to us, he's going to have reasons for those uh revelations and desires that we may not understand",
+        "characterCount": 405,
+        "tokenCount": 71,
+        "startToken": 9,
+        "endToken": 79,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-perfect-consequence-knowledge",
+      "qualifiedCandidateId": "chunk-002:c002-01",
+      "sectionId": "omniscience-revelation-and-moral-knowledge",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "Because God knows every end result, divine omniscience permits perfect moral judgments and informed prescriptions about which actions agents should and should not perform.",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 887
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly answers Clifton's question about omniscience and consistently presents Slick's divine-knowledge argument.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "were to say that God is omnisient and he knows the ends of all things and so therefore he can declare to you and reveal to you certain actions that you should and should not do, then he's doing the very same thing that you say you do when you assign moral value by assigning it to the end result. God's omniscience means he knows all end results and can make perfect judgments. So",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 96,
+        "endToken": 169,
+        "weightedOverlap": 42,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-omniscient-informational-intermediary",
+      "qualifiedCandidateId": "chunk-002:c002-02",
+      "sectionId": "omniscience-revelation-and-moral-knowledge",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "If consequences determine which actions are right, omniscience makes God an informational intermediary who communicates those facts rather than the foundation that makes the actions right.",
+      "sourceSpan": {
+        "startEvent": 888,
+        "endEvent": 908
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton explicitly develops a hypothetical theistic concession and draws the intermediary-versus-standard distinction in his own turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "don't know always the consequences of these actions we might need to defer to an omnisient being which does know the consequence of these actions. Um, well, what we've done now is is we've we've m we've turned God into not necessarily the standard, but the middleman who is able to pass the information along to us, but really what makes something right and wrong in this scenario",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 68,
+        "endToken": 135,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-objective-application-chosen-standard",
+      "qualifiedCandidateId": "chunk-002:c002-04",
+      "sectionId": "moral-objectivity-and-absolutes",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "As with conventional measurement standards, a moral definition may be selected by humans while particular judgments assessed against that standard remain objectively true or false.",
+      "sourceSpan": {
+        "startEvent": 967,
+        "endEvent": 988
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton introduces and develops the ruler analogy immediately after Slick's objection to subjective standards.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "now, you don't know the the right and wrong. you you have no way to find out objectively what the standard of a foot is. And I might come along and I might say, but a foot is whatever we decide it to be. The standard is always arbitrary. What we evaluate against that standard is either objectively true or false. But there is no magic ruler in the sky. Now, you seem to be saying",
+        "characterCount": 380,
+        "tokenCount": 76,
+        "startToken": 71,
+        "endToken": 146,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-impossibility-to-contrary",
+      "qualifiedCandidateId": "chunk-002:c002-05",
+      "sectionId": "moral-objectivity-and-absolutes",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "Given moral absolutes that require an objective standard, the failure of atheistic systems to justify such a standard leaves the theistic account validated by impossibility to the contrary.",
+      "sourceSpan": {
+        "startEvent": 1215,
+        "endEvent": 1251
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Slick identifies his eliminative argumentative form and explicitly contrasts atheistic and theistic justification of moral absolutes.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "about is this is that if you only have two options and one of them is negated, then the other is automatically validated. Impossibility to the contrary. If we have a moral absolute and a moral set and a moral standard, and we do have moral absolutes out there, and I can give you one that I I ubiquitously use with atheists that we can discuss. How does an atheist account for the",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 3,
+        "endToken": 75,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-universal-torture-prohibition",
+      "qualifiedCandidateId": "chunk-002:c002-06",
+      "sectionId": "counterexamples-motivation-and-practical-force",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "Torturing babies to death merely for pleasure is wrong for everyone, and God's revealed prohibition on murder supplies the standard supporting that universal judgment.",
+      "sourceSpan": {
+        "startEvent": 1365,
+        "endEvent": 1388
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Slick defines moral absolutes, supplies the torture example, and expressly grounds its truth in divine revelation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "wrong for everyone to torture babies to death merely for their personal pleasure. Now, I would say that's of course that's always true for everyone. And the reason I would say is because God has revealed to us that we're not to murder. We're not to do things like that. So therefore, I have a standard by which I can say that statement is true because it comports with the revelation",
+        "characterCount": 383,
+        "tokenCount": 71,
+        "startToken": 92,
+        "endToken": 162,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-hidden-assault-harm-test",
+      "qualifiedCandidateId": "chunk-002:c002-08",
+      "sectionId": "secular-welfare-and-impartial-construction",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "A secret assault on an unconscious person remains wrong even when awareness, pregnancy, disease, discovery, and other stipulated harms are absent, challenging a harm-only moral criterion.",
+      "sourceSpan": {
+        "startEvent": 1551,
+        "endEvent": 1569
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Slick constructs the coma scenario and expressly applies it as a counterexample to Clifton's stated harm criterion.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "wrong because I heard somebody that there's an unconscious woman hooked up to a bunch of tubes in a hospital. She's in a coma. You are the only not you. I'm not accusing you of this. A man walks in. Okay. A man walks in, sees her. There is nobody around. There is nobody around. And he forces himself upon her. She suffers no pregnancy. There's no disease. There's no anything. She's not aware of it. Nobody finds out. So there is no harm",
+        "characterCount": 438,
+        "tokenCount": 84,
+        "startToken": 4,
+        "endToken": 87,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-potential-states-rule-consequences",
+      "qualifiedCandidateId": "chunk-002:c002-09",
+      "sectionId": "secular-welfare-and-impartial-construction",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Secular moral reasoning can evaluate actual and potential conscious states together with rule-level social consequences rather than merely maximizing immediate aggregate happiness.",
+      "sourceSpan": {
+        "startEvent": 1620,
+        "endEvent": 1649
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton refines his definition and uses the organ-harvesting thought experiment to explain broader consequences of adopting a rule.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "actual and potential conscious states. So for an example like why why can't on my view why can't we if we see you you've heard of the homeless guy who walks into the ER right and and and there are five people one person needs a heart another person needs a kidney another person needs a liver all these people are waiting for transplants and here's this perfectly healthy homeless guy that we could cut up and like and uh you know give his organs",
+        "characterCount": 446,
+        "tokenCount": 85,
+        "startToken": 17,
+        "endToken": 101,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-veil-of-ignorance-rules",
+      "qualifiedCandidateId": "chunk-002:c002-10",
+      "sectionId": "secular-welfare-and-impartial-construction",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Hypothetical rational construction behind a veil of ignorance can generate impartial rules for social conduct without presupposing the existence or authority of God.",
+      "sourceSpan": {
+        "startEvent": 1669,
+        "endEvent": 1705
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton introduces a named secular approach and fully explains the rational-choice and veil-of-ignorance mechanism across the boundary lookahead.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "and so forth. So how people should treat one another. You and I who are perfectly rational are now responsible for figuring out how people uh h how to govern uh interactions and behavior between people. And not only that, we have to do this. We have to negotiate this contract, you and me, behind what John RS called a veil of ignorance. Right? So we don't know who we are. So you",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 88,
+        "endToken": 160,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-recipient-preference-variability",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-01",
+      "sectionId": "secular-welfare-and-impartial-construction",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "A recipient-preference account can assign opposite moral statuses to the same conduct depending on what a recipient wants and therefore cannot furnish an objective standard.",
+      "sourceSpan": {
+        "startEvent": 1706,
+        "endEvent": 1743
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The alternating dialogue and Slick's explicit second-person criticism clearly attribute this sustained objection to Matt Slick.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "preference because that's what you were saying before. People want this or don't want that. It's not the perpetrator, but the receiver. So if the receiver tends to like that kind of a thing then when the rapist does it it's a good thing but if he doesn't like it then it's not a good thing. The same action has opposite consequences and hence you can't have any objective standard",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 183,
+        "endToken": 252,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-universal-misery-counterexample",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-04",
+      "sectionId": "counterexamples-motivation-and-practical-force",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "A divine moral theory can separate right and wrong entirely from suffering, happiness, and health because a divine nature favoring universal misery would make misery moral by definition.",
+      "sourceSpan": {
+        "startEvent": 1979,
+        "endEvent": 1990
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton introduces the objection as a problem with Slick's worldview and develops the universal-misery hypothetical directly.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "with your worldview. Your worldview in principle in principle, right and wrong can be totally divorced from real issues of human suffering and happiness, health and well. No, in principle it can be because God wished nothing, if God's nature happened to be such that he wished nothing but the worst possible misery for everyone, you already conceded, Matt, that that would be moral",
+        "characterCount": 381,
+        "tokenCount": 64,
+        "startToken": 15,
+        "endToken": 78,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-belief-without-motivation",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-06",
+      "sectionId": "counterexamples-motivation-and-practical-force",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Even accepting Christianity's factual and moral claims does not by itself supply a motivating reason that compels an agent to obey the divine prescriptions the agent believes are true.",
+      "sourceSpan": {
+        "startEvent": 2160,
+        "endEvent": 2269
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Clifton explicitly sets up and repeatedly clarifies a role-playing counterexample in which he accepts every proposition in Slick's worldview.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "don't believe in Hold on. You got to say is I don't believe in God. I'm going to have my fun. No, no, no. I do believe in God. I I believe that in the I believe that Christianity and everything you're saying is true in this scenario. That's that's the bit I'm getting at. Say it again. I in this scenario, I'm about to to molest this baby and I'm I believe every your entire moral",
+        "characterCount": 380,
+        "tokenCount": 77,
+        "startToken": 315,
+        "endToken": 391,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-truth-compliance-distinction",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-07",
+      "sectionId": "counterexamples-motivation-and-practical-force",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "A Christian may knowingly violate acknowledged moral requirements, but inconsistency between profession and practice does not undermine the existence of objective moral truth.",
+      "sourceSpan": {
+        "startEvent": 2270,
+        "endEvent": 2291
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Slick introduces the revised scenario, cites his counseling experience, and explicitly distinguishes Christian profession from inconsistent practice.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Christian principles. They're inconsistent. The profession and their practice, excuse me, are different. And I work with them and try and get them to be consistent. But that doesn't prove that there's an objective moral or not an objective moral because if something is wrong, it's just wrong. An atheist doesn't have any objective moral standard by which he can say that raping a",
+        "characterCount": 380,
+        "tokenCount": 64,
+        "startToken": 64,
+        "endToken": 127,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-christian-is-ought-bridge",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-02",
+      "sectionId": "moral-obligation-and-is-ought",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "Christianity can bridge the is-ought gap because its account includes prescriptions, whereas an arbitrary atheistic system cannot derive a binding ought from descriptions alone.",
+      "sourceSpan": {
+        "startEvent": 2506,
+        "endEvent": 2513
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The wording expressly defends the prior prescription, invokes the Christian worldview, and contrasts it with Clifton's atheistic system in Slick's argumentative voice.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "You're just making descriptions. I just said prescription. I said the ought. It's a deonttological issue because in your worldview, you cannot bridge the gap between is and ought. You might have a statement, but you can't get the ugh bridged out of it in an arbitrary atheistic system. We can as Christians",
+        "characterCount": 306,
+        "tokenCount": 53,
+        "startToken": 0,
+        "endToken": 52,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-divine-descriptions-no-duty",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-03",
+      "sectionId": "moral-obligation-and-is-ought",
+      "side": "con",
+      "speaker": "Scott Clifton",
+      "moveKind": "reply",
+      "proposition": "Facts that God created humanity, is powerful, defines morality, or can punish people remain descriptions that do not by themselves explain why anyone ought to obey God.",
+      "sourceSpan": {
+        "startEvent": 2522,
+        "endEvent": 2528
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker introduces a list of Slick's divine claims as examples and explicitly applies Clifton's recurring descriptive-versus-prescriptive objection to them.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "examples of some descriptions that you just tried to put out there. God uh created you. God is all powerful. God is the standard of morality. God can put you in hell. I mean, these are all descriptions. None of those tell me why I should or shouldn't do what God",
+        "characterCount": 262,
+        "tokenCount": 51,
+        "startToken": 0,
+        "endToken": 50,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-obligation-through-divine-glory",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-04",
+      "sectionId": "moral-obligation-and-is-ought",
+      "side": "pro",
+      "speaker": "Matt Slick",
+      "moveKind": "reply",
+      "proposition": "People ought to do what is right because right conduct is consistent with and glorifies God, the supreme object of worship and the proper moral standard.",
+      "sourceSpan": {
+        "startEvent": 2529,
+        "endEvent": 2534
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response explicitly reiterates what Slick says he has already told Clifton and invokes God's glory, worship-worthiness, and status as the moral standard.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "commands. I've already told you numerous times, you ought to do that which is right because it brings glory to God and he is the greatest object of worship and he is the right standard. You ought to do that which is consistent with him",
+        "characterCount": 235,
+        "tokenCount": 45,
+        "startToken": 0,
+        "endToken": 44,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

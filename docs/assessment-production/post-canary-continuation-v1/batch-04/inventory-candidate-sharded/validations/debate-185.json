@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-04-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debateNumber": "185",
+  "inventoryPlanCanonicalSha256": "d6ded3aa2df7d64124b21dc2e14726b58012cefb50eeee5a68fd1bdcb692c2ea",
+  "sideSelectionSha256": {
+    "pro": "c7de9de5b41fd997bf076235c8d9653969706d5c810a5f15097f2e08b3017621",
+    "con": "8f4a36b9c7f1508981f19f37df88dc866120306eb7720427f7d4e1513937ea2f"
+  },
+  "sections": 5,
+  "moves": 19,
+  "proMoves": 9,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c004",
+      "side": "con",
+      "moveId": "con-indeterminacy-settlement-gap",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The replay argument independently shows that strategically placed indeterminacy yields an uncontrolled distribution of outcomes rather than the control required for desert.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 19,
+  "retainedCandidates": 19,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}
