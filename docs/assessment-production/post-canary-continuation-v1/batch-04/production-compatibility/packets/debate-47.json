@@ -1,0 +1,2168 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-production-compatibility",
+  "status": "frozen-post-canary-batch-04-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 4,
+  "planningOnly": true,
+  "debateNumber": "47",
+  "debateId": "jones-krauss-christianity-secular-ethics-2025",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-47.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-04/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-04/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-04/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/yef-BFukQWg/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "2c458470e87a431178ebd1453538ffcc2a3eca8469de56ae3e5c4a97d7022e58",
+    "calculatedScoresSha256": "c476980ef5e4eb6d8e712c8af6de18acf0c9439384e1d28438d35a1ba0c3743e",
+    "finalizationAuditSha256": "d68e829739d0d4f21e1423786dfa44e946d4901f1e0544b950db7bafca741871",
+    "renderingAuditSha256": "63d991085d176365aa3f8e5a673624527d48465df6ff448244f2babe4473bc64",
+    "finalCandidateSha256": "0ae483ec03be1501a62499d221c6e899a63fed30b54689e7ee015e77720a990b",
+    "eventsPath": ".assessment-cache/captions/yef-BFukQWg/events.json",
+    "eventsSha256": "2f90b46a33db98819695ecb0fae37be2f7a6b76742d616d90483e2d3698e58ea",
+    "finalJudgmentSha256": "03aa0566e7555dbbcff17c7c55f8ad1666a439784f1ae5f7d7278923211ac243"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/jones-krauss-christianity-secular-ethics-2025.json",
+    "productionLedger": "docs/assessment-ledgers/jones-krauss-christianity-secular-ethics-2025.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-04-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-04-production-compatibility",
+    "status": "frozen-post-canary-batch-04-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 4,
+    "debateNumber": "47",
+    "debateId": "jones-krauss-christianity-secular-ethics-2025",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-04-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "2c458470e87a431178ebd1453538ffcc2a3eca8469de56ae3e5c4a97d7022e58",
+      "calculatedScoresSha256": "c476980ef5e4eb6d8e712c8af6de18acf0c9439384e1d28438d35a1ba0c3743e",
+      "finalizationAuditSha256": "d68e829739d0d4f21e1423786dfa44e946d4901f1e0544b950db7bafca741871",
+      "renderingAuditSha256": "63d991085d176365aa3f8e5a673624527d48465df6ff448244f2babe4473bc64",
+      "finalCandidateSha256": "0ae483ec03be1501a62499d221c6e899a63fed30b54689e7ee015e77720a990b",
+      "eventsPath": ".assessment-cache/captions/yef-BFukQWg/events.json",
+      "eventsSha256": "2f90b46a33db98819695ecb0fae37be2f7a6b76742d616d90483e2d3698e58ea",
+      "finalJudgmentSha256": "03aa0566e7555dbbcff17c7c55f8ad1666a439784f1ae5f7d7278923211ac243"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "47",
+      "debateId": "jones-krauss-christianity-secular-ethics-2025",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "route-pro-christian-society",
+          "side": "pro",
+          "description": "Establish that a broadly Christian society provides more durable foundations and stronger practical support for beneficial institutions, social conduct, human welfare, liberty, and intergenerational continuity than secular ethics.",
+          "successCriteria": "The route succeeds if Christian commitments are connected to socially important institutions and outcomes, those benefits are shown to remain distinctively dependent on Christianity, and secular ethics is shown unable to equal or sustain them over time.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-comparative-social-benefit",
+            "tier": "motion",
+            "description": "Show that Christianity yields a more beneficial and sustainable social order than secular ethics across the debate's principal institutional, moral, and human-welfare criteria."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-outcomes",
+              "tier": "central",
+              "description": "Establish a credible comparative connection between Christian practice and prosocial behavior, charitable institutions, mental health, liberty, and resistance to authoritarian politics."
+            },
+            {
+              "bridgeId": "pro-central-historical-foundations",
+              "tier": "central",
+              "description": "Show that Christianity materially generated or preserved the legal, educational, medical, scientific, and human-rights institutions central to modern social flourishing."
+            },
+            {
+              "bridgeId": "pro-central-normative-foundation",
+              "tier": "central",
+              "description": "Explain why Christian anthropology and moral commitments provide a durable basis for equal worth, fallibility, responsibility, and humane social norms."
+            },
+            {
+              "bridgeId": "pro-central-continuity",
+              "tier": "central",
+              "description": "Demonstrate that demographic and cultural continuity is a necessary condition for preserving beneficial institutions and that Christian society better satisfies it."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-evidence-specificity",
+              "tier": "subsidiary",
+              "description": "Defend the methodological relevance of sociological findings by connecting measured religiosity and study populations specifically to practiced Christianity."
+            },
+            {
+              "bridgeId": "pro-subsidiary-doctrinal-mechanisms",
+              "tier": "subsidiary",
+              "description": "Identify Christian ideas about fallibility, lawful creation, and common human ancestry that could explain the claimed institutional and ethical effects."
+            }
+          ]
+        },
+        {
+          "routeId": "route-con-secular-ethics",
+          "side": "con",
+          "description": "Establish that secular ethics offers an adequate moral foundation and a more reliable method for building a free, humane, knowledgeable, and revisable society than dependence on Christian doctrine or Christian-majority identity.",
+          "successCriteria": "The route succeeds if secular ethics can ground dignity and cooperation, empirical inquiry and fallibilism are connected to modern social gains, and Christianity's alleged unique benefits are shown to be unnecessary, overstated, or offset by doctrinal and historical costs.",
+          "motionBridge": {
+            "bridgeId": "con-motion-comparative-social-benefit",
+            "tier": "motion",
+            "description": "Show that secular ethics better supports humane social outcomes through equal standing, open inquiry, empirical correction, and revisable moral deliberation without requiring Christian authority."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-secular-moral-grounding",
+              "tier": "central",
+              "description": "Provide a sufficient secular basis for equal human worth, reciprocity, empathy, cooperation, responsibility, and rational consideration of consequences."
+            },
+            {
+              "bridgeId": "con-central-enlightenment-progress",
+              "tier": "central",
+              "description": "Connect secular Enlightenment norms and empirical inquiry to modern freedom, science, reduced violence, expanded equality, and correction of harmful supernatural explanations."
+            },
+            {
+              "bridgeId": "con-central-christian-costs",
+              "tier": "central",
+              "description": "Establish that Christian doctrines or institutions can impose coercion, inherited guilt, exclusion, dogmatism, or historically harmful practices relevant to social comparison."
+            },
+            {
+              "bridgeId": "con-central-nonuniqueness",
+              "tier": "central",
+              "description": "Show that beneficial institutions and conduct attributed to Christianity can arise from secular methods, while Christian identity and religiosity are too heterogeneous to establish general superiority."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-fallibilist-safeguard",
+              "tier": "subsidiary",
+              "description": "Explain how open criticism and willingness to revise beliefs constrain both religious dogma and dogmatic secular political movements."
+            },
+            {
+              "bridgeId": "con-subsidiary-origin-independence",
+              "tier": "subsidiary",
+              "description": "Distinguish the historical Christian setting of modern institutions from the present justification and operation of their secular empirical methods."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "section-social-outcomes",
+          "title": "Comparative Social and Psychological Outcomes",
+          "weightPercent": 24,
+          "rationale": "The motion requires comparison of lived social effects, making charity, volunteering, health, interpersonal conduct, and the reliability and Christian specificity of the supporting research a major burden-bearing clash."
+        },
+        {
+          "sectionId": "section-progress-institutions",
+          "title": "Origins and Operation of Modern Institutions",
+          "weightPercent": 24,
+          "rationale": "Competing accounts of science, education, medicine, rights, democracy, and Enlightenment reform determine whether modern social gains depend on Christianity or are better explained and maintained by secular inquiry."
+        },
+        {
+          "sectionId": "section-moral-foundations",
+          "title": "Foundations of Morality, Dignity, and Cooperation",
+          "weightPercent": 22,
+          "rationale": "Each side must explain how its framework supports equal worth, moral obligation, empathy, responsibility, and cooperative life, including whether those goods require divine authority or can rest on shared humanity and deliberation."
+        },
+        {
+          "sectionId": "section-doctrine-fallibilism",
+          "title": "Doctrine, Dogma, and Corrective Fallibilism",
+          "weightPercent": 16,
+          "rationale": "The social implications of original sin, punishment, scriptural authority, naturalism, open questioning, and belief revision bear on which framework better prevents coercion and corrects moral or factual error."
+        },
+        {
+          "sectionId": "section-liberty-continuity",
+          "title": "Political Liberty and Social Continuity",
+          "weightPercent": 14,
+          "rationale": "Claims about authoritarianism, Christian nationalism, demographic sustainability, cultural persistence, and the relevance of fertility test whether either framework can preserve free and beneficial institutions across generations."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-social-missionary-prosocial-outcomes",
+          "sectionId": "section-social-outcomes",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "constructive",
+          "proposition": "Christian missionary institutions and religious participation produce greater literacy, medical care, charity, volunteering, and prosocial behavior than secularism does.",
+          "sourceSpan": {
+            "startEvent": 118,
+            "endEvent": 257,
+            "excerpt": "to more economic progress Medical Care Freedom democracy literacy education Etc when Nations secularize this will decrease which I think we all can agree is not a good thing so on this issue Christian societies L outperform secular ones as even the secular humanist Phil Zuckerman admitted in his book religious religiously involved individuals also exhibit greater manifestations"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly gives Michael Jones the opening, and this uninterrupted argument follows under that introduction.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-outcomes"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the principal empirical case linking Christian participation and missionary institutions to socially beneficial outcomes."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The comparative claim is recoverable, but Christianity, religiosity, missionary activity, and national secularization are treated too interchangeably."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move advances broad causal and comparative conclusions from summarized studies without acknowledging selection, identification, or heterogeneity limits."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "Named studies and outcome categories provide substance, but representativeness, causal independence, and the secular comparison remain materially underdefended."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, this is a leading contribution to the indispensable comparative social-outcomes bridge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "No developed opposing interpretation is evaluated closely enough to support a source-grounded charity test."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "Within constructive moves, it directly develops a principal comparative-outcomes route with multiple specified outcome categories."
+            }
+          },
+          "evidenceBasis": "The source excerpt expressly claims greater charity, medical care, freedom, democracy, literacy, and education and predicts decline with secularization.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-social-mental-health-outcomes",
+          "sectionId": "section-social-outcomes",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "constructive",
+          "proposition": "Christian religiosity is associated with lower depression and suicide, supporting the claim that Christian society produces better population-level mental health.",
+          "sourceSpan": {
+            "startEvent": 258,
+            "endEvent": 293,
+            "excerpt": "religiosity is also positively associated with better mental health as seen in this metaanalysis which looked at the data from over 850 studies if you want a mentally healthy Society of people who do not want to kill themselves we should prefer a Christian Society so the reality is Christian Christianity results in better mental health lower depression and lower suicide rates than secularism"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage remains within Michael Jones's uninterrupted opening statement and uses his first-person framing throughout.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-outcomes"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move adds a population-health comparison based on asserted associations between religiosity, depression, suicide, and mental health."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The outcome claim is clear, but religiosity becomes Christianity and association becomes a population-level comparison with secularism."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "A large meta-analytic literature can support an association, but the unqualified claim that Christianity causes better outcomes than secularism overstates it."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The reference to a meta-analysis of more than 850 studies is material support, but methods, effect sizes, confounding, and Christian specificity are absent."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, mental health and suicide are important welfare outcomes bearing directly on the comparative-outcomes bridge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move presents affirmative evidence without testing a developed alternative account of the reported association."
+            },
+            "responsiveness": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes a meta-analysis covering more than 850 studies and expressly asserts lower depression and suicide under Christianity than secularism.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-liberty-practice-against-authoritarianism",
+          "sectionId": "section-liberty-continuity",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "constructive",
+          "proposition": "Practicing Christianity restrains Christian nationalism and other political religions while supporting accountability, democratic values, human rights, and resistance to authoritarianism.",
+          "sourceSpan": {
+            "startEvent": 294,
+            "endEvent": 405,
+            "excerpt": "as a suppressor of political religiosity without it this will increase as secularization increases on the right Christian nationalism on the left wokeism or Dei this should not be surprising since other researchers found that Christianity is associated with citizen empowerment voice and accountability Democratic Values human rights and lower levels of corruption humans tend to"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This is a continuous portion of Jones's opening, introduced by his transition to nationalism and authoritarianism.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-outcomes"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move connects practiced Christianity to democratic accountability and reduced authoritarian political religiosity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The claim is identifiable, but political religiosity, Christian nationalism, wokeism, secularization, and practiced Christianity lack stable operational boundaries."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Reported associations support plausibility, but the prediction that secularization increases rival political religions lacks adequate qualification and causal defense."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian identity and Christian nationalism may coexist even when some forms of practiced Christianity discourage authoritarianism.",
+            "decisiveQualification": "The claimed restraint must be shown for practiced Christianity across relevant populations rather than selected measures or subgroups."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (67 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "Researchers and measured democratic outcomes are mentioned, but no representative comparison or warrant supports the broad causal political prediction."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "Within the central tier, democratic values, accountability, human rights, and authoritarian resistance materially support the outcomes bridge."
+            },
+            "representationalCharity": {
+              "value": 60,
+              "rationale": "The move reduces secular alternatives to wokeism or other political religion and omits the decisive possibility of ordinary democratic secularism."
+            },
+            "responsiveness": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt associates Christianity with citizen empowerment, accountability, democratic values, human rights, and lower corruption while predicting political religiosity under secularization.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-continuity-replacement-fertility",
+          "sectionId": "section-liberty-continuity",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "constructive",
+          "proposition": "Secular societies cannot sustain replacement-level populations across generations, whereas religious fertility enables Christian cultures and their social benefits to endure.",
+          "sourceSpan": {
+            "startEvent": 406,
+            "endEvent": 511,
+            "excerpt": "secular culture May create well-being and satisfaction but it would not be good for Humanity if it could not sustain itself from multip Generations because it would die out and be replaced by a less optimal culture so any given culture must be able to sustain itself as part as of the reason as to why it's good for Humanity Christian societies have historically been able to do this by producing replacement populations"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker explicitly labels this his final issue and continues uninterrupted until the applause ending Jones's opening.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-continuity"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move advances the distinct continuity burden by treating demographic replacement as necessary to preserve a beneficial culture."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The demographic proposition is clear, but it shifts between a secular culture, secular societies generally, and Christianity's historical fertility."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The necessity claim overlooks migration, cultural transmission, institutional adaptation, and variation in fertility without addressing those alternatives."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A culture can persist through transmission, conversion, migration, and institutional adaptation even without replacement fertility among current adherents.",
+            "decisiveQualification": "The move must show that biological replacement by adherents is necessary for preserving the relevant social benefits."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 62,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (61 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 57,
+              "rationale": "The excerpt offers a historical generalization and demographic assertion without comparative rates, time horizons, transmission evidence, or rival explanations."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The move recognizes that secular culture may create well-being, but omits the strongest nonbiological continuity mechanisms decisive to its necessity claim."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt concedes possible secular well-being but argues that a culture must reproduce across generations and says Christian societies historically produced replacement populations.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-social-empirical-countercase",
+          "sectionId": "section-social-outcomes",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "reply",
+          "proposition": "Claims about charity, missions, politics, and fertility do not establish Christian social superiority when the studies are disputed, missions damaged cultures, useful medicine came from science, and reproduction does not measure social quality.",
+          "sourceSpan": {
+            "startEvent": 555,
+            "endEvent": 620,
+            "excerpt": "Christian Society just telling people they were sinful destroying the culture and by the way bringing medicine to save them which by the way medicine is a product of a secular society and Science and certainly not a product of religion so if they brought anything good to those societies other than destroying the traditional cultures that those societies had what they brought that was good came"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly introduces Lawrence Krauss, and the passage uses first-person replies to claims from Jones's immediately preceding opening.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-outcomes"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-social-missionary-prosocial-outcomes",
+              "pro-continuity-replacement-fertility",
+              "pro-liberty-practice-against-authoritarianism"
+            ],
+            "components": [
+              {
+                "componentId": "con-social-empirical-countercase-component-01",
+                "targetMoveId": "pro-social-missionary-prosocial-outcomes",
+                "text": "Whether missionary activity and religious participation establish distinctively Christian prosocial superiority over secular alternatives.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-social-empirical-countercase-component-02",
+                "targetMoveId": "pro-continuity-replacement-fertility",
+                "text": "Whether reproduction and demographic persistence measure the social quality of a culture.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-social-empirical-countercase-component-03",
+                "targetMoveId": "pro-liberty-practice-against-authoritarianism",
+                "text": "Whether the cited political studies establish that practiced Christianity restrains authoritarianism.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly disputes the missionary inference by alleging cultural damage and secular scientific origins for useful medicine, and it rejects fertility as a quality measure. It does not substantively answer the earlier authoritarianism evidence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The counterclaims are identifiable, but particular missionary harms and medicine's scientific basis are generalized toward the overall comparison."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The categorical attribution of useful medicine to secular science and missions to cultural destruction exceeds the evidence supplied in the span."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Missionaries may have produced literacy, medical, and charitable benefits even if some missions also damaged indigenous cultures.",
+            "decisiveQualification": "Mixed effects require comparison of both benefits and harms rather than treating cultural damage as dispositive."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, the move directly attacks a principal empirical pillar of the Christian comparative-outcomes case."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (56 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "Within partial answers, it contacts the primary missionary claim and a demographic component but leaves other empirical outcome demands largely unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt characterizes missions as culturally destructive, attributes beneficial medicine to secular society and science, and the locked proposition also rejects fertility as a quality metric.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-progress-enlightenment-gains",
+          "sectionId": "section-progress-institutions",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "constructive",
+          "proposition": "The liberal secular Enlightenment, rather than the preceding centuries of Christian dominance, generated central features of modern progress and broadened moral concern toward women, gay people, animals, and humanity generally.",
+          "sourceSpan": {
+            "startEvent": 623,
+            "endEvent": 683,
+            "excerpt": "modern world what it is we had 1500 years or so of Christianity before the liberal secular Enlightenment and then we had 500 years of liberal secular Enlightenment that what did that teach us almost everything that is a that on which your daily life is based okay the enlightenment teaching us among other things that uh we're not separate than animals than animal that we we have a common ancestor and that changed treatment"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Krauss explicitly returns to the debate's comparative title and introduces this as his own empirical answer to the motion.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-enlightenment-progress"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the central secular historical narrative connecting Enlightenment ideas to modern knowledge and expanded moral concern."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The contrast is clear, but liberalism, secularism, science, and the Enlightenment operate as an insufficiently differentiated explanatory package."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The chronology and examples support a contribution claim, not the near-total attribution of modern daily life to a unitary secular Enlightenment."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Enlightenment institutions may have emerged partly from Christian intellectual, legal, and institutional antecedents despite later secularization.",
+            "decisiveQualification": "Historical sequencing alone does not distinguish independent secular causation from development within inherited Christian institutions."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (69 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, this is a direct and broad contribution to the Enlightenment-progress bridge."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (59 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts roughly fifteen centuries of Christianity with the liberal secular Enlightenment and links common ancestry to changed treatment of other beings.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-doctrine-secular-fallibilism",
+          "sectionId": "section-doctrine-fallibilism",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "constructive",
+          "proposition": "A secular ethos of admitting error, accepting human responsibility, recognizing cosmic insignificance, and naturalizing choice supports an open, humble, and more humane society without religious certainty or cosmic supervision.",
+          "sourceSpan": {
+            "startEvent": 703,
+            "endEvent": 760,
+            "excerpt": "open Society the realization that we Answer to No One ultimately outside of ourselves there's no Cosmic dictator or scorekeeper keeping score of what we're doing we have to do that for ourselves the realization one of the one of the most solipsistic aspects of religion is this ridiculous notion that the Universe was created for us realizing the universe was not created for US produces a kind of cosmic humility"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Krauss continues uninterrupted, marking successive naturalistic realizations as consequences of rejecting religious assumptions.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-fallibilist-safeguard"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move proposes responsibility, openness, error admission, and cosmic humility as secular safeguards against dogmatic certainty."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The ethical outlook is recoverable and its central terms remain stable, though its extension from personal humility to a humane open society is broad."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move plausibly links responsibility and humility to openness, but does not fully establish that naturalism reliably produces those dispositions."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religious belief can also foster humility, accountability, and acknowledgment of human fallibility.",
+            "decisiveQualification": "The secular argument establishes availability without showing exclusivity or superior institutional reliability."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 62,
+              "rationale": "Religion is described through cosmic dictatorship and solipsism, leaving its strongest humility and accountability interpretation materially underrepresented."
+            },
+            "responsiveness": {
+              "value": 81,
+              "rationale": "Within constructive moves, it gives a coherent normative orientation but only a compressed institutional mechanism."
+            }
+          },
+          "evidenceBasis": "The excerpt argues that humans answer to themselves without a cosmic scorekeeper and that rejecting a human-centered universe produces cosmic humility.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-morality-secular-ethical-basis",
+          "sectionId": "section-moral-foundations",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "constructive",
+          "proposition": "A complete ethical life can be grounded without God through free inquiry, equal moral worth, universal treatment, rationality, sympathy, and conscientious empathy for people affected by one's choices.",
+          "sourceSpan": {
+            "startEvent": 761,
+            "endEvent": 834,
+            "excerpt": "Adam Smith in his theory of moral sentiments said he grounded Morality In what he called sympathy a conscientious effort to put ourselves in others Place shoes and have moral empathy for them before making choices that might affect them in his ethics liberal morality echoed Jesus as Jonathan put it as you did to one of the the least of my brothers you do to me but that's liberalism that same idea comes from without a belief in God"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Krauss introduces examples of liberal Enlightenment principles and develops them through attributed formulations from secular thinkers.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-secular-moral-grounding"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move directly supplies a secular ethical basis in sympathy, equal regard, rational reflection, and attention to affected persons."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The basis is clearly recoverable and its ethical concepts are stable, with sufficiency rather than infallible motivation reasonably implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The examples and philosophical account fit the moderate claim that a coherent ethical life can be grounded without belief in God."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian ethics may historically articulate overlapping reciprocity and empathy principles while adding divine authority.",
+            "decisiveQualification": "Overlap or historical influence does not show that present ethical justification requires belief in God."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, the move directly supplies the secular route's indispensable moral-grounding step."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The move expressly acknowledges ethical overlap with Jesus while reasonably distinguishing the same principle's availability without theism."
+            },
+            "responsiveness": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes Adam Smith's moral sympathy, conscientious perspective-taking, empathy, and a liberal analogue of concern for the least without belief in God.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-doctrine-sin-punishment",
+          "sectionId": "section-doctrine-fallibilism",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "constructive",
+          "proposition": "Christian teachings that people are born sinful and face eternal punishment impose impossible guilt while making nonbelief and the exercise of free choice subject to coercive cosmic condemnation.",
+          "sourceSpan": {
+            "startEvent": 835,
+            "endEvent": 867,
+            "excerpt": "to tell children the idea that that people are born in sin before they're that they're in fact perhaps the greatest evil we do to young people and people is to is to is to make them fulfill something that's impossible as Hitchin and before him said the impossible task of which Christianity gives us which is to be born ill and commanded to be well to be born ill and be commanded"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Krauss explicitly transitions from liberalism's virtues to Christianity's flaws, and the argument continues coherently into the delivered boundary context.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-christian-costs"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move presents inherited sin and eternal punishment as coercive doctrinal costs relevant to social and moral comparison."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The criticism is clear, but one punitive interpretation is treated as Christianity generally without denominational or doctrinal qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The stated doctrinal interpretation supports a coercion concern, but the universal characterization and extreme political analogy exceed the supplied warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Original sin can be understood as a doctrine of universal fallibility joined to grace rather than an impossible command to self-cure.",
+            "decisiveQualification": "Eternal punishment and inherited guilt still require separate treatment across Christian interpretations and social practices."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 60,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "Within the central tier, the move materially supports the Christian-costs bridge through a specified doctrinal mechanism."
+            },
+            "representationalCharity": {
+              "value": 48,
+              "rationale": "The move depends heavily on the harshest punitive construction and omits the grace-centered interpretation that directly qualifies its impossible-task framing."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "Within constructive moves, it clearly identifies a Christian doctrinal cost, though its social mechanism is compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt describes Christianity as requiring people born ill to become well and condemning nonbelievers to eternal punishment by a cosmic dictator.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-doctrine-original-sin-fallibilism",
+          "sectionId": "section-doctrine-fallibilism",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "reply",
+          "proposition": "Christian teaching about human fallibility, including original sin, historically encouraged repeated experimentation and verification in the development of scientific method.",
+          "sourceSpan": {
+            "startEvent": 899,
+            "endEvent": 937,
+            "excerpt": "goes to jail and other myths he may point out is that the idea of original sin uh convinced a lot of early scientists that they were fallible they had to keep doing constant experimentation to verify their results and they conclude that belief and other Christians belief helped develop science including the scientific method so you should be thanking Christian and the doctrine"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator expressly gives Mike the floor, and the uninterrupted rebuttal follows in his first-person voice.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-doctrinal-mechanisms"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-doctrine-sin-punishment",
+              "con-progress-enlightenment-gains"
+            ],
+            "components": [
+              {
+                "componentId": "pro-doctrine-original-sin-fallibilism-component-01",
+                "targetMoveId": "con-doctrine-sin-punishment",
+                "text": "Whether original sin and eternal punishment impose impossible guilt and coercive condemnation on believers and nonbelievers.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-doctrine-original-sin-fallibilism-component-02",
+                "targetMoveId": "con-progress-enlightenment-gains",
+                "text": "Whether scientific method and experimentation arose independently from secular Enlightenment norms.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move gives original sin a fallibilist scientific effect and thereby contacts the historical-origin issue, but it does not answer the punishment, guilt, or coercion components of the doctrinal criticism."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The historical thesis is clear, but early scientists and Christian belief are generalized without identifying the extent or comparative scope of influence."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The named historical thesis supports contribution, but the thanking-Christianity conclusion implies a broader causal importance than the excerpt establishes."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Original sin may have encouraged fallibility in some scientists while also carrying guilt or punishment implications criticized by Krauss.",
+            "decisiveQualification": "A beneficial epistemic use does not defeat the distinct objection concerning eternal punishment or inherited guilt."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The response offers a legitimate alternative function of the doctrine but does not preserve the strongest independent qualification in the criticism."
+            },
+            "responsiveness": {
+              "value": 68,
+              "rationale": "This relevant nonanswer supplies contrary material about original sin but leaves the selected move's decisive punishment and guilt demand uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt cites a historical work and claims original sin convinced early scientists of fallibility, motivating repeated experimentation and verification.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-progress-rights-missions",
+          "sectionId": "section-progress-institutions",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "reply",
+          "proposition": "Human rights and major educational and health gains developed through Christian legal traditions and Protestant missionary activity rather than through secularism alone.",
+          "sourceSpan": {
+            "startEvent": 938,
+            "endEvent": 1018,
+            "excerpt": "came from the Canon lawyers of the Middle Ages Samuel Mo says the thesis of his book Christian human rights is that this is a pro a project of the Christian right not the secular left Brian tyrany in his book The idea of natural rights as the humanistic jurist Prudence of the 12th century especially the writing of the medieval uh Deus May provide a better starting point for the"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This remains within Jones's uninterrupted timed rebuttal and includes his explicit citations to historians and missionary research.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-historical-foundations"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-progress-enlightenment-gains",
+              "con-social-empirical-countercase"
+            ],
+            "components": [
+              {
+                "componentId": "pro-progress-rights-missions-component-01",
+                "targetMoveId": "con-progress-enlightenment-gains",
+                "text": "Whether modern rights, education, and health gains should be attributed principally to secular Enlightenment rather than Christian antecedents and institutions.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-progress-rights-missions-component-02",
+                "targetMoveId": "con-social-empirical-countercase",
+                "text": "Whether missionary activity produced material education and health benefits rather than predominantly cultural harm.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly supplies claimed medieval Christian rights antecedents and missionary education and health effects, contacting both the historical attribution dispute and missionary countercase."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The historical proposition is clear, though antecedence, development, and principal causal credit are not consistently distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Named scholarship supports Christian contributions, but the move presses beyond contribution toward comparative priority without fully addressing joint causation."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian legal antecedents may have contributed to rights while later secular movements broadened, justified, and enforced them.",
+            "decisiveQualification": "Establishing earlier Christian sources does not alone establish present dependence or predominant causal credit."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The evidence coherently challenges an exclusively secular origin, but the inference from antecedence to broader Christian social superiority remains incomplete."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, it is a leading contribution to the historical-foundations bridge."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (69 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "This is a strong full answer within its class because it contacts the decisive historical attribution issue with named works and institutional examples."
+            }
+          },
+          "evidenceBasis": "The excerpt names Samuel Moyn and Brian Tierney and locates natural-rights jurisprudence in medieval Christian sources; the locked move also adduces missionary education and health gains.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-progress-christian-institutions",
+          "sectionId": "section-progress-institutions",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "reply",
+          "proposition": "Christian societies created hospitals, orphanages, independent universities, church-state distinctions, and institutional conditions that enabled modern science.",
+          "sourceSpan": {
+            "startEvent": 1074,
+            "endEvent": 1115,
+            "excerpt": "church is the largest non-governmental provider of healthcare around the world uh so I'd like you to again re show Christianity invented orphanages and hospitals we invented independent universities okay the in the ancient world they had institutions for learning but they didn't have independent universities with governing boards historians like Edward Grant note it was Christian societies"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Jones continues his uninterrupted rebuttal, speaking collectively of Christian achievements and naming historians in support.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-historical-foundations"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-progress-enlightenment-gains",
+              "con-social-empirical-countercase"
+            ],
+            "components": [
+              {
+                "componentId": "pro-progress-christian-institutions-component-01",
+                "targetMoveId": "con-progress-enlightenment-gains",
+                "text": "Whether modern hospitals, universities, science, and liberal institutions are chiefly products of the secular Enlightenment.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-progress-christian-institutions-component-02",
+                "targetMoveId": "con-social-empirical-countercase",
+                "text": "Whether useful medical provision by Christian institutions is merely borrowed from secular science.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move supplies Christian institutional antecedents and continuing provision, directly challenging the claim that modern institutional progress is principally a secular creation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The institutional claims are identifiable, but 'invented' and collective 'we' overstate uniform Christian authorship and causal scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Categorical invention and enabling claims exceed the bounded historical evidence and omit precursor, continuity, and joint-development qualifications."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian societies developed important institutions whose modern methods and justification can nevertheless operate independently through secular governance and science.",
+            "decisiveQualification": "Historical creation does not by itself demonstrate present dependence or comparative superiority."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, the move directly develops the indispensable Christian historical-foundations bridge."
+            },
+            "representationalCharity": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (63 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it directly engages the historical-origin claim with several named institutional counterexamples and an operating healthcare example."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies the church's healthcare role, orphanages, hospitals, independent universities with governing boards, and historians of Christian scientific institutions.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-liberty-demography-women",
+          "sectionId": "section-liberty-continuity",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "reply",
+          "proposition": "Christianity's historical burdens on women undermine its claimed foundation for women's rights, while population growth shows that secular people can reproduce and that demographic size is not a measure of social value.",
+          "sourceSpan": {
+            "startEvent": 1390,
+            "endEvent": 1426,
+            "excerpt": "is one of them uh have tended to make life difficult for women to argue that somehow Christianity is the basis of women's rights is the most ridiculous thing I've ever heard the notion that somehow we don't have a self-sustainable side when I was your age the population of the world was about three and a half billion the population of the world is 7 billion right now we seem to"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Dr. Krauss's final rebuttal immediately before this continuous passage in his characteristic first-person delivery.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-continuity"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-continuity-replacement-fertility",
+              "pro-progress-rights-missions"
+            ],
+            "components": [
+              {
+                "componentId": "con-liberty-demography-women-component-01",
+                "targetMoveId": "pro-continuity-replacement-fertility",
+                "text": "Whether secular populations are demographically unsustainable and whether reproductive persistence is a valid measure of social quality.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-liberty-demography-women-component-02",
+                "targetMoveId": "pro-progress-rights-missions",
+                "text": "Whether Christianity provides the historical basis for women's rights.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly rejects demographic unsustainability using population growth and challenges the rights narrative through Christianity's historical burdens on women, though aggregate population is an imperfect answer to subgroup fertility."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The two counterclaims are clear, but global population growth is substituted for the narrower fertility and continuity of secular populations."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Calling the Christian women's-rights claim ridiculous and treating global growth as decisive both exceed the specific warrant provided."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian institutions may have contributed to some women's rights even amid substantial historical restrictions on women.",
+            "decisiveQualification": "Mixed historical effects require comparative causal evidence rather than categorical dismissal."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 65,
+              "rationale": "Historical burdens are relevant to rights claims, but total world population growth does not logically resolve replacement fertility among secular populations."
+            },
+            "evidenceWarrant": {
+              "value": 54,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (56 and 52); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 52,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (50 and 54); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "This partial answer contacts both stated demands, but the demographic evidence does not isolate secular replacement rates or cultural continuity."
+            }
+          },
+          "evidenceBasis": "The excerpt alleges Christian burdens on women and contrasts world population growth from roughly 3.5 to 7 billion with the secular-unsustainability claim.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-progress-natural-causation",
+          "sectionId": "section-progress-institutions",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "reply",
+          "proposition": "Scientific recognition that physical effects have physical causes displaced harmful supernatural explanations such as blaming and burning alleged witches, illustrating secular inquiry's corrective social power.",
+          "sourceSpan": {
+            "startEvent": 1427,
+            "endEvent": 1472,
+            "excerpt": "example of History of Science and how it's changed things because there's really good historical evidence that's been discussed that in fact the ending of the burning of witches happened around the same time as Newton developed the pipia because what Newton told us was that in fact the same laws that govern an apple falling on Earth govern the cosmos and not only that the cosmos was understandable and that physical effects have physical causes"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This is the concluding uninterrupted portion of Krauss's announced final rebuttal, ending with his explicit thanks before the format changes.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-enlightenment-progress"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "pro-progress-christian-institutions",
+              "pro-doctrine-original-sin-fallibilism"
+            ],
+            "components": [
+              {
+                "componentId": "con-progress-natural-causation-component-01",
+                "targetMoveId": "pro-progress-christian-institutions",
+                "text": "Whether Christian institutions and doctrines materially created the conditions for modern science and associated institutions.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-progress-natural-causation-component-02",
+                "targetMoveId": "pro-doctrine-original-sin-fallibilism",
+                "text": "Whether specifically Christian doctrines materially generated experimentation and scientific method.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The witch-burning example supplies relevant contrary material about scientific correction of supernatural explanations, but it does not answer the claimed Christian origins of science or experimentation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The causal proposition is clear, but the timing and causal connection between Newtonian science and ending witch burning remain broadly stated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The asserted historical evidence does not establish that Newtonian causation ended witch burning or that this effect was distinctively secular."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian theological and institutional changes may have contributed alongside natural philosophy to ending witch persecutions.",
+            "decisiveQualification": "Natural explanation can still displace supernatural accusation even if the historical causation was multivariate."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 64,
+              "rationale": "Physical causation can displace supernatural blame, but the causal inference from contemporaneous Newtonian science to the end of witch burning is underdeveloped."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The move invokes historical evidence and a concrete Newtonian mechanism, but supplies no details establishing timing, magnitude, or exclusion of rival causes."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The move identifies a serious secular mechanism but only partly accommodates plausible religious, legal, and political co-causes."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "This is a relevant nonanswer: it advances a secular benefit but leaves the decisive historical-origin and doctrinal-causation components uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt links the end of witch burning to Newtonian universal laws and the proposition that understandable physical effects have physical causes.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-liberty-secular-reform",
+          "sectionId": "section-liberty-continuity",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "reply",
+          "proposition": "Modern secular society is safer and freer, and Christianity became gentler because it was embedded within a liberal scientific Enlightenment that protects disagreement and reforms inherited religious practice.",
+          "sourceSpan": {
+            "startEvent": 1999,
+            "endEvent": 2078,
+            "excerpt": "600 years younger than Christianity and it resembles Christianity in the Middle Ages Christianity grew out of it and it grew out of it because happily it became embedded in a society dominated by the liberal Enlightenment that came from science so Christianity has evolved into a Kindler gentler kind of religion because it has existed in a liberal secular world not the other way"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator invites Krauss to respond, after which he directly addresses Jones's examples and contrasts past religious societies with the present.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-enlightenment-progress"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-progress-christian-institutions",
+              "pro-liberty-practice-against-authoritarianism",
+              "pro-progress-rights-missions"
+            ],
+            "components": [
+              {
+                "componentId": "con-liberty-secular-reform-component-01",
+                "targetMoveId": "pro-progress-christian-institutions",
+                "text": "Whether Christian institutions generated modern freedom and progress rather than being reformed by a liberal secular environment.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-liberty-secular-reform-component-02",
+                "targetMoveId": "pro-liberty-practice-against-authoritarianism",
+                "text": "Whether Christianity itself reliably restrains authoritarian political religion.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-liberty-secular-reform-component-03",
+                "targetMoveId": "pro-progress-rights-missions",
+                "text": "Whether historical Christian origins establish present Christian dependence of liberal rights.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly reverses the proposed causal direction, arguing that liberal scientific Enlightenment institutions made Christianity gentler and protect current freedom."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The causal reversal is clear, but Christianity in the Middle Ages, Islam, secular society, science, and liberal Enlightenment are generalized broadly."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The reform hypothesis is plausible, but the claim that Christianity grew gentler because of secular liberal science alone exceeds the comparative evidence supplied."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian doctrines and reformers may have helped produce liberal constraints even if secular institutions later moderated churches.",
+            "decisiveQualification": "Historical interaction can be reciprocal, so modern embedding does not establish exclusively secular causation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The institutional-constraint explanation coherently reverses the causal claim, though it treats correlation and historical sequence as sufficient for a largely exclusive cause."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, this is a major contribution to the Enlightenment-progress account and a direct challenge to Christian liberty claims."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The response provides a strong rival causal direction but materially underweights internal reform and other interacting causes."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it explicitly contacts the decisive causal inference connecting Christianity to modern institutional freedom and offers a rival explanation."
+            }
+          },
+          "evidenceBasis": "The excerpt says Christianity became kinder after being embedded in a society dominated by liberal Enlightenment and science, expressly reversing the Christian-priority account.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-doctrine-scientific-order",
+          "sectionId": "section-doctrine-fallibilism",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "constructive",
+          "proposition": "Christian doctrines about human fallibility, lawful creation, and an intelligible natural order materially contributed to experimentation and the scientific method.",
+          "sourceSpan": {
+            "startEvent": 2467,
+            "endEvent": 2498,
+            "excerpt": "these doctrines and that slowly filtered into natural philosophy which came became science uh Christianity produced ideas again like I said like total depravity which convinced Christians that they were fallible so they keep doing constant experimentation to verify results that contributed to the scientific method which Noah J Efron talks about the idea that universe is lawful"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "An audience question is directed to Michael, and his answer cites historians while connecting specified Christian ideas to scientific practices.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-doctrinal-mechanisms"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive answer specifies fallibility, lawful creation, and intelligibility as doctrinal mechanisms contributing to experimental science."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The proposed mechanisms are clearly recoverable, though Christianity and scientific method remain broad and the degree of contribution is only implicitly bounded."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The mechanisms plausibly support contribution, but their magnitude and independence from other intellectual traditions remain unqualified."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within the subsidiary tier, it directly and substantially fulfills the doctrinal-mechanisms bridge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move develops an affirmative mechanism without relying on a detailed characterization of a live opposing argument."
+            },
+            "responsiveness": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt links total depravity to repeated experimentation and verification and invokes Noah Efron regarding belief in a lawful universe.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-morality-naturalistic-fallacy",
+          "sectionId": "section-moral-foundations",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "reply",
+          "proposition": "Observed animal behavior cannot by itself establish moral value, and judgments about whether conduct is natural must distinguish biological description from natural-law theory.",
+          "sourceSpan": {
+            "startEvent": 2627,
+            "endEvent": 2642,
+            "excerpt": "we have to avoid the naturalistic fallacy just because something happens in nature doesn't mean it's good or bad I mean yeah animals do all sorts of horrible things too we just can't look at the nature of animals I would agree it's wrong to just say homosexual is unnatural because that what do you mean by that you mean natural in terms of ainus is natural law theory do you mean"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The question explicitly redirects the issue to Michael, and the ensuing answer uses Jones's Christian analytic framing and terminology.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-secular-moral-grounding"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-morality-secular-ethical-basis",
+              "con-progress-enlightenment-gains"
+            ],
+            "components": [
+              {
+                "componentId": "pro-morality-naturalistic-fallacy-component-01",
+                "targetMoveId": "con-morality-secular-ethical-basis",
+                "text": "Whether empirical facts about animals, biology, or common nature can themselves establish moral value and obligation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-morality-naturalistic-fallacy-component-02",
+                "targetMoveId": "con-progress-enlightenment-gains",
+                "text": "Whether recognition of common animal ancestry directly determines improved moral treatment.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The move expressly diagnoses the descriptive-to-normative inference as a naturalistic fallacy and states that animal behavior alone cannot determine good or bad, while distinguishing biological from natural-law meanings."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The descriptive-normative distinction is explicit, and the move carefully distinguishes biological usage of natural from natural-law terminology."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The limited claim that descriptive occurrence alone cannot determine goodness matches the logical warrant and includes an explicit terminological qualification."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A secular ethic can use facts about suffering and kinship as inputs without claiming that every natural behavior is morally good.",
+            "decisiveQualification": "The naturalistic-fallacy objection defeats a bare inference from occurrence, not all empirically informed secular reasoning."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within diagnostic defeats, it explicitly identifies the inferential failure and gives the defeating consequence for moral conclusions from observed nature."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly states that occurrence in nature does not make conduct good or bad, gives animal counterexamples, and distinguishes biological from natural-law meanings.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-social-religious-heterogeneity",
+          "sectionId": "section-social-outcomes",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "reply",
+          "proposition": "Religiosity cannot establish Christianity's general social superiority when highly religious societies can be harmful and people labeled Christian occupy sharply conflicting moral and political positions.",
+          "sourceSpan": {
+            "startEvent": 3546,
+            "endEvent": 3573,
+            "excerpt": "religious right that you you don't like and so so that there's a broad spectrum of Christians that believe in a lot of different things but somehow they're they're they're all labeled as Christian and that that's correlated to goodness I just want to make I just want to see if understand it's a very specific religiosity that's Christian religiosity that's correlated with all the positive I find that highly"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Krauss takes the floor with a direct challenge to Jones's sampling explanation and contrasts multiple kinds of religious societies and Christians.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-evidence-specificity"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-social-missionary-prosocial-outcomes",
+              "pro-liberty-practice-against-authoritarianism",
+              "pro-social-mental-health-outcomes"
+            ],
+            "components": [
+              {
+                "componentId": "con-social-religious-heterogeneity-component-01",
+                "targetMoveId": "pro-social-missionary-prosocial-outcomes",
+                "text": "Whether generic religiosity and broad Christian labels identify the practiced Christianity needed for the claimed positive social correlations.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-social-religious-heterogeneity-component-02",
+                "targetMoveId": "pro-liberty-practice-against-authoritarianism",
+                "text": "Whether sharply conflicting Christian political groups can be treated as one protective social category.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-social-religious-heterogeneity-component-03",
+                "targetMoveId": "pro-social-mental-health-outcomes",
+                "text": "Whether religiosity findings are sufficiently Christian-specific to support the mental-health comparison.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies category heterogeneity as the defect: highly different religious societies and Christians are grouped together, defeating a general inference from religiosity or label to Christian superiority."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The challenge consistently distinguishes broad Christian labels from specific religiosity measures and makes the scope objection explicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move appropriately raises a methodological challenge rather than claiming definitive refutation, and its uncertainty is expressed through questioning."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Jones may mean a specific measure of practiced Christian religiosity rather than every self-identified Christian or religious society.",
+            "decisiveQualification": "That narrower interpretation requires evidence connecting the study populations and measures to the motion's broadly Christian society."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "Heterogeneity and measurement specificity directly limit generalization from religiosity correlations to Christian society, with only the empirical magnitude unresolved."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The broad spectrum of Christian moral and political positions is a concrete internal counterexample, though prevalence and study coding are not documented."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "Within the subsidiary tier, it nearly maximizes relevance by directly attacking the evidence-specificity bridge."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The response expressly considers the narrower practiced-Christian interpretation and identifies the remaining generalization requirement without caricaturing it."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it squarely identifies the measurement and category problem and states why the positive correlation cannot bear the general conclusion."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts conflicting Christians under one label and asks whether only a very specific Christian religiosity is correlated with the claimed positive outcomes.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-morality-equal-human-standing",
+          "sectionId": "section-moral-foundations",
+          "side": "con",
+          "speaker": "Lawrence Krauss",
+          "moveKind": "reply",
+          "proposition": "Secular ethics grounds equal human worth in common humanity and empirically demonstrated biological kinship, giving every person equal standing and claims to happiness, survival, and social care without scriptural authority.",
+          "sourceSpan": {
+            "startEvent": 3610,
+            "endEvent": 3651,
+            "excerpt": "standing equal right for happiness equal right to to survive equal rights to to uh expect uh Society to treat them uh and to take care of them in the way that Society can do and so I think that every that secularism basically argues because we have a common Humanity because the evidence of science suggests we all not only suggests demonstrates that we are all human we share DNA"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator directs the final question to Krauss, whose extended answer explicitly presents secularism's basis for human value.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-secular-moral-grounding"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-morality-naturalistic-fallacy",
+              "pro-progress-rights-missions"
+            ],
+            "components": [
+              {
+                "componentId": "con-morality-equal-human-standing-component-01",
+                "targetMoveId": "pro-morality-naturalistic-fallacy",
+                "text": "Whether common biological facts can move from description to normative claims about equal standing without committing the naturalistic fallacy.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-morality-equal-human-standing-component-02",
+                "targetMoveId": "pro-progress-rights-missions",
+                "text": "Whether equal human standing requires Christian historical or scriptural foundations.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move supplies a secular basis for equal standing and rejects scriptural necessity, but it does not explain the normative bridge from shared DNA and common humanity after the naturalistic-fallacy objection."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "Equal standing, common humanity, and social claims are clearly stated, with the normative force of common humanity left as an implicit premise."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Science can demonstrate biological kinship, but equal rights and duties require an additional normative commitment not established by DNA alone."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Shared DNA establishes factual kinship but cannot by itself entail equal moral worth or social rights.",
+            "decisiveQualification": "The move also expressly adopts equal standing as a secular ethical principle, so biology need not carry the entire normative inference."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "Within the central tier, the move directly supplies equal human worth as an indispensable secular moral-grounding component."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The answer fairly preserves the is-to-ought qualification while presenting scientific kinship as support rather than the sole moral premise."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "This partial answer contacts the Christian-foundation issue but leaves the selected fact-to-value challenge materially unresolved."
+            }
+          },
+          "evidenceBasis": "The excerpt states equal standing and rights to happiness, survival, and care, then grounds them in common humanity and scientifically demonstrated shared DNA.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-morality-adamic-human-unity",
+          "sectionId": "section-moral-foundations",
+          "side": "pro",
+          "speaker": "Michael Jones",
+          "moveKind": "reply",
+          "proposition": "Darwin's conception of human unity and equality drew from Christian abolitionist teaching about common Adamic ancestry and one human family.",
+          "sourceSpan": {
+            "startEvent": 3652,
+            "endEvent": 3662,
+            "excerpt": "Darwin's sacred cause uh where they point out the two leading historians on Darwin point out that a lot of his ideas came from adamic Unity that is unity in adom this idea of equality that we're all of the same family came from uh abolitionist tracks that Darwin and his family devoured and that filtered into his own scientific ideas so again we can thank Christianity for a lot"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Jones interjects with a named historical work and returns to his recurring thesis about Christianity's intellectual influence.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-nonuniqueness"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-morality-equal-human-standing",
+              "con-progress-enlightenment-gains"
+            ],
+            "components": [
+              {
+                "componentId": "pro-morality-adamic-human-unity-component-01",
+                "targetMoveId": "con-morality-equal-human-standing",
+                "text": "Whether scientific common ancestry provides an independent secular foundation for human unity and equal standing.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-morality-adamic-human-unity-component-02",
+                "targetMoveId": "con-progress-enlightenment-gains",
+                "text": "Whether the modern common-ancestry insight and its egalitarian effects originated independently in secular Enlightenment thought.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly contests independence by alleging that Darwin's scientific human-unity conception drew from Christian abolitionist teaching about Adamic unity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The historical influence claim is clearly bounded to Darwin's ideas and Christian abolitionist texts, with broader social credit only implicitly asserted."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Named historians and a specified transmission route support influence, but the concluding broad credit to Christianity exceeds that bounded claim."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A concept may have Christian historical antecedents while its present secular justification rests independently on evidence and equal-regard principles.",
+            "decisiveQualification": "Historical influence on Darwin does not establish current normative dependence on Christianity."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "Abolitionist Adamic-unity texts could influence Darwin's conception, but intellectual influence does not alone establish Christianity as the basis of equality."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "Within attacks on central secular moral grounding, the move challenges historical independence but leaves current normative adequacy substantially intact."
+            },
+            "representationalCharity": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "This is a full answer to the historical-origin component, though it does not defeat the present secular justification of equality."
+            }
+          },
+          "evidenceBasis": "The excerpt cites Darwin's Sacred Cause and says Christian abolitionist tracts about Adamic unity influenced Darwin and his family's scientific conception of one human family.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual conditions; all identified effects are already reflected in move-level judgments and burden contact.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion remains outside the locked move and burden evaluations.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden-contact judgments"
+            ],
+            "counterfactual": "Removing the proposed residual would not change burden completion because no independent residual was found."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual conditions; all identified effects are already reflected in move-level judgments and burden contact.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No separate completion criterion remains outside the locked move and burden evaluations.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden-contact judgments"
+            ],
+            "counterfactual": "Removing the proposed residual would not change burden completion because no independent residual was found."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "section-social-outcomes",
+          "title": "Comparative Social and Psychological Outcomes",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "pro-social-missionary-prosocial-outcomes",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "pro-social-mental-health-outcomes",
+                  "importance": 3,
+                  "score": 76
+                }
+              ]
+            },
+            "con": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "con-social-empirical-countercase",
+                  "importance": 3,
+                  "score": 70
+                },
+                {
+                  "moveId": "con-social-religious-heterogeneity",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-progress-institutions",
+          "title": "Origins and Operation of Modern Institutions",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "pro-progress-rights-missions",
+                  "importance": 3,
+                  "score": 83
+                },
+                {
+                  "moveId": "pro-progress-christian-institutions",
+                  "importance": 3,
+                  "score": 80
+                }
+              ]
+            },
+            "con": {
+              "score": 71,
+              "moves": [
+                {
+                  "moveId": "con-progress-enlightenment-gains",
+                  "importance": 3,
+                  "score": 73
+                },
+                {
+                  "moveId": "con-progress-natural-causation",
+                  "importance": 2,
+                  "score": 68
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-moral-foundations",
+          "title": "Foundations of Morality, Dignity, and Cooperation",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "pro-morality-naturalistic-fallacy",
+                  "importance": 2,
+                  "score": 90
+                },
+                {
+                  "moveId": "pro-morality-adamic-human-unity",
+                  "importance": 2,
+                  "score": 82
+                }
+              ]
+            },
+            "con": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "con-morality-secular-ethical-basis",
+                  "importance": 3,
+                  "score": 84
+                },
+                {
+                  "moveId": "con-morality-equal-human-standing",
+                  "importance": 3,
+                  "score": 78
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-doctrine-fallibilism",
+          "title": "Doctrine, Dogma, and Corrective Fallibilism",
+          "weightPercent": 16,
+          "sides": {
+            "pro": {
+              "score": 75,
+              "moves": [
+                {
+                  "moveId": "pro-doctrine-original-sin-fallibilism",
+                  "importance": 2,
+                  "score": 72
+                },
+                {
+                  "moveId": "pro-doctrine-scientific-order",
+                  "importance": 2,
+                  "score": 77
+                }
+              ]
+            },
+            "con": {
+              "score": 73,
+              "moves": [
+                {
+                  "moveId": "con-doctrine-secular-fallibilism",
+                  "importance": 2,
+                  "score": 73
+                },
+                {
+                  "moveId": "con-doctrine-sin-punishment",
+                  "importance": 2,
+                  "score": 72
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "section-liberty-continuity",
+          "title": "Political Liberty and Social Continuity",
+          "weightPercent": 14,
+          "sides": {
+            "pro": {
+              "score": 71,
+              "moves": [
+                {
+                  "moveId": "pro-liberty-practice-against-authoritarianism",
+                  "importance": 2,
+                  "score": 72
+                },
+                {
+                  "moveId": "pro-continuity-replacement-fertility",
+                  "importance": 2,
+                  "score": 70
+                }
+              ]
+            },
+            "con": {
+              "score": 76,
+              "moves": [
+                {
+                  "moveId": "con-liberty-demography-women",
+                  "importance": 2,
+                  "score": 72
+                },
+                {
+                  "moveId": "con-liberty-secular-reform",
+                  "importance": 3,
+                  "score": 78
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 79.02,
+          "burdenCompletionAdjustment": 0,
+          "score": 79
+        },
+        "con": {
+          "weightedSectionMean": 75.9,
+          "burdenCompletionAdjustment": 0,
+          "score": 76
+        }
+      },
+      "winner": "pro",
+      "winningMargin": 3
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 20,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 119794,
+  "proposedAdapterSha256": "1d1de5401d40142634375e1768f2d5ee7b4f40476589f15635da8d328a0e5ed4",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "47",
+    "sections": 5,
+    "moves": 20,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-04-single-deterministic-score-pass",
+    "adapterSha256": "1d1de5401d40142634375e1768f2d5ee7b4f40476589f15635da8d328a0e5ed4",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
