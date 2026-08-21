@@ -1,0 +1,2146 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-production-compatibility",
+  "status": "frozen-post-canary-batch-03-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "planningOnly": true,
+  "debateNumber": "150",
+  "debateId": "licona-dillahunty-resurrection-evidence-2017",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-150.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-03/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-03/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-03/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/IW9w6c2RWmA/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "255af20c4410a3d9a9d05b286ed70456e9e879bcdba199e6ab8f5d286cc77116",
+    "calculatedScoresSha256": "4c20ddc148798cbe289f321518cb706afc1b30b51ec77a7d6947d12778bce371",
+    "finalizationAuditSha256": "166a00b82a42bbdd9874383148c10d44392243aa0bc4bb387a14ba92fc5ecb9c",
+    "renderingAuditSha256": "ea4f531d8c554fd4e881f02e8b2a8ea32a516b4259ec0b5784e863646291b9b1",
+    "finalCandidateSha256": "7dcffa0842735dc5f9445ca7e53a80cd41811bba84178392d70cd5eb2e91c9c5",
+    "eventsPath": ".assessment-cache/captions/IW9w6c2RWmA/events.json",
+    "eventsSha256": "a9e6767e0f7325793049c7af2483841d23af4bbcd2766d6bd8789e5cf4e0aa44",
+    "finalJudgmentSha256": "f9125404a8f79f4bc717d58e5f053d049da28ed7db896de9c8bf1e17c3a871b1"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/licona-dillahunty-resurrection-evidence-2017.json",
+    "productionLedger": "docs/assessment-ledgers/licona-dillahunty-resurrection-evidence-2017.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-03-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-03-production-compatibility",
+    "status": "frozen-post-canary-batch-03-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 3,
+    "debateNumber": "150",
+    "debateId": "licona-dillahunty-resurrection-evidence-2017",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-03-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "255af20c4410a3d9a9d05b286ed70456e9e879bcdba199e6ab8f5d286cc77116",
+      "calculatedScoresSha256": "4c20ddc148798cbe289f321518cb706afc1b30b51ec77a7d6947d12778bce371",
+      "finalizationAuditSha256": "166a00b82a42bbdd9874383148c10d44392243aa0bc4bb387a14ba92fc5ecb9c",
+      "renderingAuditSha256": "ea4f531d8c554fd4e881f02e8b2a8ea32a516b4259ec0b5784e863646291b9b1",
+      "finalCandidateSha256": "7dcffa0842735dc5f9445ca7e53a80cd41811bba84178392d70cd5eb2e91c9c5",
+      "eventsPath": ".assessment-cache/captions/IW9w6c2RWmA/events.json",
+      "eventsSha256": "a9e6767e0f7325793049c7af2483841d23af4bbcd2766d6bd8789e5cf4e0aa44",
+      "finalJudgmentSha256": "f9125404a8f79f4bc717d58e5f053d049da28ed7db896de9c8bf1e17c3a871b1"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "150",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-resurrection-historical-inference-route",
+          "side": "pro",
+          "description": "Establish a historically credible body of postmortem-appearance data, defend supernatural events as admissible historical conclusions, and show that resurrection explains the relevant data better than the principal naturalistic alternatives.",
+          "successCriteria": "The route succeeds if the appearance traditions are sufficiently established, resurrection has greater comparative explanatory adequacy than rival accounts, and neither methodological naturalism nor uncertainty about the precise divine agent blocks the supernatural conclusion.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-resurrection-best-explanation",
+            "tier": "motion",
+            "description": "The historical evidence and relevant background information must make Jesus's resurrection the best explanation of the reported postmortem appearances."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-historical-bedrock",
+              "tier": "central",
+              "description": "Early and corroborated sources must establish individual, hostile, and group appearance claims as data requiring explanation."
+            },
+            {
+              "bridgeId": "pro-central-comparative-explanation",
+              "tier": "central",
+              "description": "Resurrection must provide greater explanatory scope, power, plausibility, and economy than hallucination or other naturalistic alternatives."
+            },
+            {
+              "bridgeId": "pro-central-supernatural-admissibility",
+              "tier": "central",
+              "description": "Historical inquiry must be able to recognize an event transcending known natural capacities without first identifying its precise supernatural agent."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-background-supernaturalism",
+              "tier": "subsidiary",
+              "description": "Independent allegedly paranormal phenomena may supply background plausibility for admitting supernatural explanations."
+            },
+            {
+              "bridgeId": "pro-subsidiary-testimony-standard",
+              "tier": "subsidiary",
+              "description": "Reliable ordinary testimonial evidence must be capable in principle of supporting an extraordinary historical event."
+            }
+          ]
+        },
+        {
+          "routeId": "con-evidential-withholding-route",
+          "side": "con",
+          "description": "Maintain that resurrection proponents bear the evidential burden, challenge the accessibility and reliability of the ancient appearance reports, and deny that unexplained events or defeated natural alternatives establish supernatural causation.",
+          "successCriteria": "The route succeeds if the historical data remain insufficiently confirmed or if resurrection and divine agency cannot be warranted from those data, making suspension of belief appropriate without requiring proof that resurrection was impossible.",
+          "motionBridge": {
+            "bridgeId": "con-motion-burden-unmet",
+            "tier": "motion",
+            "description": "Belief in Jesus's resurrection must be withheld unless the affirmative evidence establishes both the alleged event and the inferential move to resurrection."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-source-sufficiency",
+              "tier": "central",
+              "description": "Ancient appearance reports must provide accessible, independently supportable evidence adequate to establish the claimed postmortem events."
+            },
+            {
+              "bridgeId": "con-central-causal-underdetermination",
+              "tier": "central",
+              "description": "An unexplained or anomalous event must not be treated as evidence of supernatural causation without a method that distinguishes that cause from error, fraud, hallucination, or unknown natural causes."
+            },
+            {
+              "bridgeId": "con-central-hypothesis-content",
+              "tier": "central",
+              "description": "The resurrection hypothesis must supply testable or discriminating explanatory content rather than merely relabeling the absence of a natural explanation."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-investigative-distance",
+              "tier": "subsidiary",
+              "description": "The evidential limits created by two millennia of investigative distance must constrain comparisons with directly observable modern anomalies."
+            },
+            {
+              "bridgeId": "con-subsidiary-theistic-background",
+              "tier": "subsidiary",
+              "description": "Attributing resurrection to divine action requires independent grounds for a capable and willing agent or evidence that itself discriminates in favor of such an agent."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "historical-appearance-evidence",
+          "title": "Historical foundation for the appearance claims",
+          "weightPercent": 25,
+          "rationale": "The existence, independence, accessibility, and reliability of the Pauline, apostolic, individual, and group appearance traditions determine what historical data the competing explanations must address."
+        },
+        {
+          "sectionId": "comparative-resurrection-inference",
+          "title": "Resurrection versus naturalistic explanations",
+          "weightPercent": 27,
+          "rationale": "The motion turns centrally on whether resurrection explains the asserted historical data better than hallucination, error, dishonesty, or other naturalistic possibilities under comparative explanatory criteria."
+        },
+        {
+          "sectionId": "supernatural-causal-inference",
+          "title": "From anomaly to supernatural causation",
+          "weightPercent": 22,
+          "rationale": "This issue governs whether an event judged incompatible with known natural capacities may be classified as supernatural or whether that classification merely substitutes a label for unresolved causation."
+        },
+        {
+          "sectionId": "methods-and-evidential-standards",
+          "title": "Historical method and standards for extraordinary claims",
+          "weightPercent": 16,
+          "rationale": "The parties' competing standards for testimony, repeatability, methodological naturalism, and investigation determine what kinds of evidence can justify an extraordinary historical conclusion."
+        },
+        {
+          "sectionId": "background-plausibility-and-divine-agency",
+          "title": "Background supernaturalism and identification of divine agency",
+          "weightPercent": 10,
+          "rationale": "Allegedly paranormal phenomena and the question of prior grounds for God affect the background plausibility of resurrection and the further inference from a postmortem event to purposeful divine action."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "pro-background-cumulative-paranormal-evidence",
+          "sectionId": "background-plausibility-and-divine-agency",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "constructive",
+          "proposition": "Multiple classes of allegedly paranormal experience collectively provide empirical support for a supernatural dimension of reality.",
+          "sourceSpan": {
+            "startEvent": 61,
+            "endEvent": 178,
+            "excerpt": "data strongly suggest that Jesus rose from the dead now um let me start with that first major contention that empirical data strongly suggests that reality has a supernatural Dimension and I'm going to provide four lines of evidence in support the first line of evidence has to first line up first next slide and then press one more time Paranormal experiences okay press it again"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Licona immediately before this uninterrupted opening-statement segment, and the speaker explicitly identifies his first major contention.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-background-supernaturalism"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move introduces cumulative paranormal reports as background support for admitting a supernatural dimension; it does not answer an earlier opposing move."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The cumulative empirical-support claim is recoverable and qualified as suggestive, but the meaning and boundaries of supernatural dimension remain partly unsettled."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The claim that empirical data strongly suggest a supernatural dimension outruns the excerpted announcement, which supplies no visible verification or rival comparison."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "A cumulative-evidence inference is coherent, but the bridge from several anomalous experience classes to a supernatural dimension remains materially compressed."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "The move directly supports the subsidiary background-supernaturalism bridge and sits near the top of that tier because this is its express purpose."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move principally advances its own cumulative background case and does not meaningfully interpret a developed opposing alternative in this span."
+            },
+            "responsiveness": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Licona expressly says empirical data strongly suggest a supernatural dimension and announces four lines of evidence, beginning with paranormal experiences.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-historical-pauline-apostolic-bedrock",
+          "sectionId": "historical-appearance-evidence",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "constructive",
+          "proposition": "Early Pauline material and apostolic corroboration support a historical bedrock of individual, hostile, and group resurrection-appearance experiences.",
+          "sourceSpan": {
+            "startEvent": 179,
+            "endEvent": 275,
+            "excerpt": "early Source he claims to be an eyewitness he knew jesus' disciples and we can certify he preaching the same message they're preaching so our historical Bedrock that we get from this again this is virtually Undisputed in the world of scholarship no matter if you're an atheist agnostic Jewish or Christian scholar a number of Jesus disciples belied the Risen Jesus appeared to them these experiences occurred in individual and in group"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This remains within Licona's uninterrupted opening statement, and the speaker expressly transitions to his second major contention concerning historical data.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-historical-bedrock"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the affirmative historical data set through Paul, his apostolic contacts, and asserted individual and group appearance experiences."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The source-based proposition is clear, though the scope of scholarly agreement and the distinction between belief, experience, and veridical appearance are compressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Paul's early status and apostolic contact warrant historical significance, but the broad virtually-undisputed framing and full bedrock conclusion need qualification."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "This move expressly supplies the early and corroborated appearance material required by the central historical-bedrock bridge and is maximally relevant within that tier."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move presents affirmative source evidence without directly construing or evaluating a developed skeptical alternative in the selected span."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies Paul as an early claimed eyewitness who knew Jesus's disciples and preached their message, then states individual and group appearance experiences.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-comparative-ibt-explanatory-criteria",
+          "sectionId": "comparative-resurrection-inference",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "constructive",
+          "proposition": "Under explanatory scope, power, plausibility, and avoidance of ad hoc assumptions, resurrection explains the asserted historical bedrock better than hallucination.",
+          "sourceSpan": {
+            "startEvent": 276,
+            "endEvent": 313,
+            "excerpt": "hallucination hypothesis which is the most popular among Scholars it has good explanatory scope it can account for our three facts it does not have good explanatory power because of um uh if it were true we would not expect an appearance to Paul because he's not grieving uh we wouldn't expect the group hallucinations of course um it does it it's it passes the Less ad hoc Criterion it's not very ad hoc um plausibility"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted Licona opening continues through a methodological comparison and ends with his stated conclusion followed by audience applause.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-comparative-explanation"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move applies explanatory scope, power, plausibility, and ad hocness to compare resurrection with the hallucination hypothesis."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The comparative proposition and criteria are recoverable and stable, with an implicit qualification that the result depends on accepting the asserted historical facts."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move offers genuine comparative reasons, but confidently favoring resurrection requires fuller treatment of rival variants, priors, and the asserted group data."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Hallucination can explain the appearance reports without invoking resurrection.",
+            "decisiveQualification": "It must also account for hostile and group experiences under the accepted bedrock."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The criteria form a coherent inference-to-best-explanation framework, but expected grief and group hallucination assumptions leave a material rival-model bridge underdeveloped."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly performs the comparative explanation required by a central bridge and is at the top of its relevance tier."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The comparison acknowledges hallucination's scope and economy but treats its strongest variants too narrowly and leaves their qualifications underdeveloped."
+            },
+            "responsiveness": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Licona grants hallucination explanatory scope and limited ad hocness but argues it lacks power and plausibility for Paul and alleged group appearances.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-evidential-default-and-burden",
+          "sectionId": "methods-and-evidential-standards",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Belief in resurrection should be withheld unless its proponents discharge their evidential burden and show that the skeptical default is false.",
+          "sourceSpan": {
+            "startEvent": 326,
+            "endEvent": 360,
+            "excerpt": "basically how we establish what the default position for any question should be the null hypothesis cannot be proved as a matter of practicality it's it's the thing that you assume to be true because it can't be confirmed and then you demonstrate that your idea is Superior or correct by actually showing that the null hypothesis is false innocent until proven guilty proving your"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly gives the floor to Matt Dillahunty, who identifies his position as being unconvinced and develops the null-hypothesis framework.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-burden-unmet"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-comparative-ibt-explanatory-criteria",
+              "pro-historical-pauline-apostolic-bedrock"
+            ],
+            "components": [
+              {
+                "componentId": "con-evidential-default-and-burden-component-01",
+                "targetMoveId": "pro-comparative-ibt-explanatory-criteria",
+                "text": "Whether resurrection is actually shown superior to the skeptical default under the proposed comparison.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-evidential-default-and-burden-component-02",
+                "targetMoveId": "pro-historical-pauline-apostolic-bedrock",
+                "text": "Whether the asserted historical appearance evidence discharges the proponent's evidential burden.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The null-hypothesis framework contacts the demand that proponents establish superiority, but it does not yet examine whether the stated Pauline evidence meets that burden."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The withholding rule is clear, but null hypothesis shifts between a practical default, an unconfirmed proposition, and an innocence analogy without full specification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "Assigning proponents a burden is warranted, but describing the null as assumed true rather than a position of withholding slightly overstates the default."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The affirmative need only show resurrection is comparatively best, not prove skepticism false with certainty.",
+            "decisiveQualification": "Comparative superiority still requires sufficient evidence to overcome withholding."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "The move expressly states the motion-level condition for withholding belief and therefore has near-maximal relevance within the motion tier."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The move fairly places the burden on the affirmative, but its null-hypothesis language risks making the opposing burden sound more absolute than necessary."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "This is a partial answer: it contacts the decisive comparative burden while leaving the concrete historical premises and Licona's criteria largely unevaluated."
+            }
+          },
+          "evidenceBasis": "Dillahunty invokes a null-hypothesis default and says the proponent must demonstrate that its proposal is superior by showing the default false.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-anomalies-do-not-establish-supernatural-realm",
+          "sectionId": "background-plausibility-and-divine-agency",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Reports of unexplained experiences do not establish a supernatural realm when that category remains poorly defined, unconfirmed, and causally uninvestigated.",
+          "sourceSpan": {
+            "startEvent": 361,
+            "endEvent": 429,
+            "excerpt": "the Supernatural is real when we test for it the first problem is Supernatural is poorly defined what does it mean not natural okay you've told me what it isn't you haven't told me what it is the supernatural can't seemingly be tested for which is why we hear about well you know the evidence of reality seems to suggest that there is a supernatural realm how please can we Define"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "This is an uninterrupted part of Dillahunty's opening, marked by first-person references to his magician background and his skeptical methodological position.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-background-supernaturalism"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-background-cumulative-paranormal-evidence"
+            ],
+            "components": [
+              {
+                "componentId": "con-anomalies-do-not-establish-supernatural-realm-component-01",
+                "targetMoveId": "pro-background-cumulative-paranormal-evidence",
+                "text": "Whether classes of unexplained experience collectively warrant a supernatural dimension.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies the inference's defect: supernatural is poorly defined and unconfirmed, so reports attributed to it cannot establish that causal category without investigation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposition clearly distinguishes reports attributed to the supernatural from confirmation that a supernatural realm or cause exists."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move does not claim anomalies are false; it makes the appropriately limited claim that unexplained reports do not establish the proposed category."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Several independent anomaly classes may cumulatively support supernaturalism without individually proving it.",
+            "decisiveQualification": "Cumulative force still depends on defined terms, reliable cases, and exclusion of ordinary causes."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The methodological objections are relevant, but the excerpt does not examine representative paranormal cases or demonstrate that all announced evidence lacks safeguards."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The move directly attacks the subsidiary background-supernaturalism bridge and is highly relevant within that tier."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It expressly attacks the decisive inference from anomalous reports to supernatural reality and states the defeating consequence, qualifying as a strong diagnostic defeat."
+            }
+          },
+          "evidenceBasis": "Dillahunty says supernatural is poorly defined and has not been confirmed, while allowing investigation of claims merely attributed to supernatural causes.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-resurrection-lacks-explanatory-content",
+          "sectionId": "comparative-resurrection-inference",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Eliminating a hoax or lacking a natural explanation does not establish resurrection, because attributing the event to divine action supplies no mechanism or explanatory content.",
+          "sourceSpan": {
+            "startEvent": 430,
+            "endEvent": 469,
+            "excerpt": "explanatory power we explain things or we gain an understanding of the UN known by appealing to the known if you try to solve a mystery by appealing to a bigger mystery you have solved nothing saying God did it is identical to saying it's magic there's no content there that explains how it how it actually happened or how you know it happened and simply saying well we can't come up with a better natural explanation"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dillahunty remains the uninterrupted speaker and explicitly applies his earlier methodological criticism to resurrection arguments and an apologetic dichotomy.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-comparative-explanation"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-comparative-ibt-explanatory-criteria"
+            ],
+            "components": [
+              {
+                "componentId": "con-resurrection-lacks-explanatory-content-component-01",
+                "targetMoveId": "pro-comparative-ibt-explanatory-criteria",
+                "text": "Whether resurrection's comparative victory supplies explanatory content rather than merely naming an unresolved cause.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The move expressly diagnoses the inference's failure: eliminating hoax or natural explanation does not confer explanatory content on divine resurrection, so comparative labeling is insufficient."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between ruling out a rival and providing a positive causal explanation is clear, stable, and explicitly applied to resurrection."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Requiring positive explanatory content is apt, but saying supernatural explanation has no content at all is somewhat broader than the displayed argument establishes."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Divine resurrection can explain the appearances even without describing a physical mechanism.",
+            "decisiveQualification": "It must still add discriminating content beyond the absence of an accepted natural explanation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly attacks the central comparative-explanation bridge at its decisive requirement of explanatory power."
+            },
+            "representationalCharity": {
+              "value": 80,
+              "rationale": "The reply accurately presses the need for positive content, though equating every divine explanation with magic understates possible agent-intention explanations."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It squarely attacks the decisive explanatory inference and states the defeating consequence that saying God did it leaves the mystery unresolved."
+            }
+          },
+          "evidenceBasis": "Dillahunty asks how divine resurrection became most plausible and argues that appeal to a larger mystery supplies no mechanism or explanatory content.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-divine-agent-requires-prior-support",
+          "sectionId": "background-plausibility-and-divine-agency",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Treating resurrection as plausible presupposes independent grounds for a God capable of and willing to raise Jesus, while private revelation is unverifiable hearsay to outsiders.",
+          "sourceSpan": {
+            "startEvent": 476,
+            "endEvent": 512,
+            "excerpt": "Jesus was raised from the dead as the core argument this evening which I'll get to more in the rebuttal when when William L cigas debated the resurrection he acknowledges that he presupposes a foundational premise that a God exists specifically a god that is capable and desirous of Resurrection someone this is a necessary component because you have to have this belief in order to even attempt to claim that raising from the dead is a plausible"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The uninterrupted skeptical opening continues, with the speaker contrasting theological and philosophical approaches before identifying their required divine premise.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-theistic-background"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-comparative-ibt-explanatory-criteria",
+              "pro-background-cumulative-paranormal-evidence"
+            ],
+            "components": [
+              {
+                "componentId": "con-divine-agent-requires-prior-support-component-01",
+                "targetMoveId": "pro-comparative-ibt-explanatory-criteria",
+                "text": "Whether resurrection is plausible without antecedent grounds for a capable and willing agent.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-divine-agent-requires-prior-support-component-02",
+                "targetMoveId": "pro-background-cumulative-paranormal-evidence",
+                "text": "Whether generic supernatural background evidence supports the specific divine-agent inference.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly raises a missing prior premise for the affirmative hypothesis and distinguishes generic supernaturalism from evidence for a resurrection-capable God."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The required-agent premise is clear, but the claim that one must already believe it to assess plausibility blurs prior probability with absolute prerequisite."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Independent grounds would strengthen the hypothesis, but calling prior belief a necessary component excludes the possibility that event evidence updates agent probability."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Resurrection evidence may itself provide grounds for belief in a capable divine agent.",
+            "decisiveQualification": "The evidence must discriminate that agent from other unknown causes rather than presuppose it."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 72,
+              "rationale": "The background-probability point is coherent, but the necessity claim contains a material unsupported bridge from needing agent content to needing prior belief."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The cited debate precedent illustrates the premise but does not establish its necessity, and the private-revelation concern is asserted rather than developed here."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The move expressly supports the subsidiary theistic-background bridge and sits at the top of that relevance tier."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The move identifies a real background-plausibility issue but overstates it as a strict prerequisite and underplays evidential updating from the event itself."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "It fully contacts the agent-plausibility component, although it does not answer every historical or comparative element of the affirmative case."
+            }
+          },
+          "evidenceBasis": "Dillahunty says a resurrection argument requires a God capable of and desirous of resurrection and treats that premise as necessary for plausibility.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-no-workable-supernatural-causal-method",
+          "sectionId": "supernatural-causal-inference",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Neither historical inquiry nor science can confirm supernatural causation without a workable account of what the supernatural is and how it causally operates.",
+          "sourceSpan": {
+            "startEvent": 513,
+            "endEvent": 537,
+            "excerpt": "science can't confirm the supernatural we have no way to investigate it we are barred from investigating things that are not natural we can certainly investigate claims that are attributed to the supernatural hey I can tell you this but we can't develop a causal connection to that until we understand what the Supernatural is and not just what it isn't from a historical perspective"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Dillahunty remains the sole speaker and explicitly turns from the limits of direct scientific investigation to the historical method used by Licona.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-causal-underdetermination"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-comparative-ibt-explanatory-criteria",
+              "pro-background-cumulative-paranormal-evidence"
+            ],
+            "components": [
+              {
+                "componentId": "con-no-workable-supernatural-causal-method-component-01",
+                "targetMoveId": "pro-comparative-ibt-explanatory-criteria",
+                "text": "Whether historical comparison can establish a supernatural resurrection cause.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-no-workable-supernatural-causal-method-component-02",
+                "targetMoveId": "pro-background-cumulative-paranormal-evidence",
+                "text": "Whether attributed supernatural claims can confirm a supernatural causal category.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies the missing causal-discrimination method and concludes that neither scientific nor historical inquiry can confirm the asserted supernatural connection without it."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move clearly distinguishes event investigation from causal confirmation and expressly conditions the latter on understanding what supernatural means positively."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "A discriminating causal method is reasonably required, while saying inquiry is barred until supernatural ontology is understood imposes a somewhat stronger condition than defended."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Historical inference may identify extraordinary causation from effects without a complete causal mechanism.",
+            "decisiveQualification": "The effects must discriminate supernatural causation from unknown natural causes and error."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The distinction between investigating reported events and confirming a supernatural causal connection is explicit, consistent, and directly resolves a likely equivocation."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move nearly maximally supports the central causal-underdetermination bridge by demanding a method linking evidence to supernatural causation."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (79 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly diagnoses a central inferential gap, though the categorical statement about every possible historical method is broader than the argument supplied."
+            }
+          },
+          "evidenceBasis": "Dillahunty distinguishes investigating claims attributed to the supernatural from developing a causal connection and demands an account of what the supernatural is.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-methods-discipline-specific-investigation",
+          "sectionId": "methods-and-evidential-standards",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "reply",
+          "proposition": "Scientific and historical disciplines use different investigative methods, so lack of controlled repeatability does not by itself disqualify supernatural claims from investigation.",
+          "sourceSpan": {
+            "startEvent": 588,
+            "endEvent": 624,
+            "excerpt": "supernatural Dimension and here I provided four lines of evidence in support of that contention I argued for paranormal phenomena well-evidenced near-death experiences veritical apparitions and extreme answered prayer um what Matt argued is he came back and he said well you can't test those uh they got to be scientifically uh there for test well the science disciplines have different methods there is no single scientific"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator introduces Licona, who explicitly frames the passage as his rebuttal to Dillahunty's opening objections.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-causal-underdetermination"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-no-workable-supernatural-causal-method",
+              "con-anomalies-do-not-establish-supernatural-realm"
+            ],
+            "components": [
+              {
+                "componentId": "pro-methods-discipline-specific-investigation-component-01",
+                "targetMoveId": "con-no-workable-supernatural-causal-method",
+                "text": "Whether lack of a single repeatable scientific test prevents disciplined investigation of supernatural claims.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-methods-discipline-specific-investigation-component-02",
+                "targetMoveId": "con-anomalies-do-not-establish-supernatural-realm",
+                "text": "Whether the announced paranormal evidence can be tested by methods appropriate to its evidential discipline.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response directly contests the alleged methodological bar by distinguishing discipline-specific methods, but only partly answers the demand for causal discrimination."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The discipline-specific-method proposition is clear, with an implicit qualification that methodological diversity does not eliminate standards of causal discrimination."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The limited claim that lack of laboratory repeatability does not itself disqualify investigation fits the methodological observation, subject to an implicit evidential qualification."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The skeptical demand concerns causal confirmation, not one universal laboratory method.",
+            "decisiveQualification": "Discipline-specific inquiry still needs reliable tests that distinguish rival causes."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "Named paranormal categories illustrate the intended domain, yet the excerpt gives no specific historical safeguards or successful validation procedure."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "The reply attacks the central causal-underdetermination bridge, but it reaches only the investigability component rather than the full causal-discrimination demand."
+            },
+            "representationalCharity": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (67 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "This partial answer contacts investigation and testing, while leaving the decisive request for a workable supernatural causal link substantially unanswered."
+            }
+          },
+          "evidenceBasis": "Licona lists paranormal phenomena, near-death experiences, apparitions, and answered prayer, then argues that scientific disciplines employ different methods rather than one universal test.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-causation-against-methodological-exclusion",
+          "sectionId": "supernatural-causal-inference",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "reply",
+          "proposition": "Methodological naturalism can exclude supernatural explanations in advance and prevent recognition of events that known natural causes cannot plausibly explain.",
+          "sourceSpan": {
+            "startEvent": 625,
+            "endEvent": 655,
+            "excerpt": "to this relative of yours that died 10 years ago and they shared with me a private conversation that only you and that relative had I could not have possibly known so is a miracle the least probable explanation and since uh historians must choose the most probable we'd have to say anything even group Hallucination is more probable no that's methodological naturalism that's the"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Licona continues his rebuttal in a sustained first-person critique, with no speaker transition before the next topic.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-supernatural-admissibility"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-no-workable-supernatural-causal-method",
+              "con-resurrection-lacks-explanatory-content"
+            ],
+            "components": [
+              {
+                "componentId": "pro-causation-against-methodological-exclusion-component-01",
+                "targetMoveId": "con-no-workable-supernatural-causal-method",
+                "text": "Whether methodological naturalism improperly excludes supernatural explanations before comparison.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-causation-against-methodological-exclusion-component-02",
+                "targetMoveId": "con-resurrection-lacks-explanatory-content",
+                "text": "Whether an extraordinary information-bearing event can count against ordinary causal explanations.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the exclusion concern with a concrete anomalous-information hypothetical, but it does not fully answer how the supernatural cause is distinguished from every unknown alternative."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The anti-exclusion proposition is clear and stable, subject to the implicit condition that known natural explanations have genuinely been tested and found implausible."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The hypothetical shows that automatic exclusion can distort comparison, but it does not establish that the actual resurrection evidence meets the hypothetical's evidential strength."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Methodological naturalism withholds supernatural attribution without denying anomalous events.",
+            "decisiveQualification": "Withholding is legitimate unless evidence discriminates supernatural from unknown natural causes."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 74,
+              "rationale": "Prior exclusion can bias comparison, but the move risks a false choice between supernatural causation and group hallucination without exhausting other explanations."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supports the central supernatural-admissibility requirement by arguing that supernatural hypotheses must not be excluded before comparison."
+            },
+            "representationalCharity": {
+              "value": 61,
+              "rationale": "The response exposes a risk of dogmatic exclusion but treats the skeptical position too readily as choosing any natural account regardless of evidence."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "This is a strong partial answer because it exposes possible prior exclusion while leaving the opponent's demand for a workable positive causal method only partly answered."
+            }
+          },
+          "evidenceBasis": "Licona offers a hypothetical involving inaccessible private information and argues that always preferring hallucination would embody methodological naturalism rather than neutral comparison.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-comparative-case-by-case-resurrection",
+          "sectionId": "comparative-resurrection-inference",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "reply",
+          "proposition": "Case-by-case comparison of hypotheses using the historical data and relevant background information favors resurrection over the proposed naturalistic alternatives.",
+          "sourceSpan": {
+            "startEvent": 656,
+            "endEvent": 694,
+            "excerpt": "I agree that's why we use strictly controlled Historical Method you formulate hypotheses based on the known data and you weigh those hypotheses to see which one is the most probable and when you do that I only did it with hallucination but when you do it with all the other naturalistic hypothesis you find out Resurrection comes out on top every time he says the supernatural has"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The passage remains Licona's uninterrupted rebuttal and repeatedly restates his historical-hypothesis methodology in the first person.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-resurrection-best-explanation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-evidential-default-and-burden",
+              "con-resurrection-lacks-explanatory-content",
+              "con-no-workable-supernatural-causal-method"
+            ],
+            "components": [
+              {
+                "componentId": "pro-comparative-case-by-case-resurrection-component-01",
+                "targetMoveId": "con-evidential-default-and-burden",
+                "text": "Whether controlled historical comparison can discharge the affirmative burden.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-comparative-case-by-case-resurrection-component-02",
+                "targetMoveId": "con-resurrection-lacks-explanatory-content",
+                "text": "Whether resurrection can be compared as a substantive historical hypothesis.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-comparative-case-by-case-resurrection-component-03",
+                "targetMoveId": "con-no-workable-supernatural-causal-method",
+                "text": "Whether historical method can assess a supernatural conclusion case by case.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly proposes historical hypothesis comparison as the means of meeting the burden and asserts a result across naturalistic rivals, while compressing the actual comparisons."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The comparative method and conclusion are clear, with an implicit dependence on the accuracy and completeness of the known historical data and rival set."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Saying resurrection comes out on top every time is categorical, while the excerpt admits only hallucination was shown and supplies no analysis of all other rivals."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Naturalistic hypotheses or suspension may remain preferable because the data and causal method are underdetermined.",
+            "decisiveQualification": "Each rival and the resurrection hypothesis require symmetrical comparison using established data."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "This is direct motion-level contact because it expressly claims resurrection is the best explanation after case-by-case comparison with naturalistic rivals."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The move endorses case-by-case comparison but does not present the strongest versions of the other naturalistic hypotheses before declaring universal superiority."
+            },
+            "responsiveness": {
+              "value": 96,
+              "rationale": "It contacts all three methodological demands, but the assertion that resurrection wins every comparison lacks the displayed analysis needed for a fully explicit answer."
+            }
+          },
+          "evidenceBasis": "Licona describes formulating hypotheses from known data and weighing them for probability, then says resurrection defeats all naturalistic hypotheses although only hallucination was presented.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-test-before-supernatural-attribution",
+          "sectionId": "methods-and-evidential-standards",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Methodological naturalism permits investigation of extraordinary events but withholds supernatural attribution until a testable model distinguishes genuine phenomena from fraud, error, and hallucination.",
+          "sourceSpan": {
+            "startEvent": 716,
+            "endEvent": 759,
+            "excerpt": "until we actually have the ability to investigate and confirm that the supernatural exists we don't get to appeal to it it doesn't bar us from testing claims that are attributed to the supernatural no no scientist if that Comet hit and spelled out something no scientist on the grounds of methodological naturalism or any other scientific model would be prohibited from a testing that the event"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator announces Dillahunty's rebuttal, after which he directly answers Licona's claims in a continuous monologue.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-causal-underdetermination"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-causation-against-methodological-exclusion",
+              "pro-methods-discipline-specific-investigation",
+              "pro-comparative-case-by-case-resurrection"
+            ],
+            "components": [
+              {
+                "componentId": "con-test-before-supernatural-attribution-component-01",
+                "targetMoveId": "pro-causation-against-methodological-exclusion",
+                "text": "Whether methodological naturalism bars testing extraordinary claims or instead withholds only unsupported causal attribution.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-test-before-supernatural-attribution-component-02",
+                "targetMoveId": "pro-methods-discipline-specific-investigation",
+                "text": "Whether discipline-specific investigation answers the need to confirm a supernatural causal model.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-test-before-supernatural-attribution-component-03",
+                "targetMoveId": "pro-comparative-case-by-case-resurrection",
+                "text": "Whether comparative historical assessment alone justifies supernatural attribution.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly diagnoses Licona's exclusion objection as mistaken: claims remain testable, while attribution is withheld pending confirmation and discrimination."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between investigating an event and confirming a supernatural attribution is explicit, consistent, and carefully scoped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The requirement to test before causal attribution fits the limited skeptical conclusion and does not deny that extraordinary events may occur or be investigated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Methodological naturalism may function as an a priori ban on supernatural explanations.",
+            "decisiveQualification": "A test-first policy need not ban investigation or permanently exclude a supported supernatural model."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supports the central causal-underdetermination bridge by specifying the required order of investigation and attribution."
+            },
+            "representationalCharity": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly contacts the decisive methodological premise, preserves investigation, and states the defeating consequence for premature supernatural attribution."
+            }
+          },
+          "evidenceBasis": "Dillahunty says methodological naturalism does not bar testing attributed claims, including an extraordinary comet event, but withholds supernatural appeal pending confirmation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-paul-and-reports-insufficient",
+          "sectionId": "historical-appearance-evidence",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Paul is a weak foundation for resurrection because he lacked direct access to Jesus's ministry, death, burial, and empty tomb, while surviving reports do not independently demonstrate a return from death.",
+          "sourceSpan": {
+            "startEvent": 797,
+            "endEvent": 825,
+            "excerpt": "agree that Scholars hold this position and it may in fact be the case that Paul is the best source but what do we know about that best source well man never met Jesus while he was alive claims he did later after he was realive wasn't around for any of Jesus's events wasn't around for the death wasn't around for the crucifixion the burial wasn't there to see the empty tomb right"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The first-person skeptical assessment remains part of Dillahunty's announced rebuttal and ends immediately before the moderator changes formats.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-historical-bedrock"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-historical-pauline-apostolic-bedrock"
+            ],
+            "components": [
+              {
+                "componentId": "con-paul-and-reports-insufficient-component-01",
+                "targetMoveId": "pro-historical-pauline-apostolic-bedrock",
+                "text": "Whether Paul provides direct and independently adequate evidence for Jesus's death, burial, empty tomb, and postmortem return.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response directly attacks the asserted Pauline foundation by identifying Paul's lack of direct access to Jesus's life, death, burial, and tomb."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The source-access criticism is clear and explicitly limited to what Paul did not directly witness during Jesus's life, death, burial, and tomb history."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The argument presents source limitations as reasons for evidential weakness rather than proof of falsity and acknowledges Paul's scholarly status as the best source."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Paul is valuable because he is early, claims an appearance, and knew leading disciples.",
+            "decisiveQualification": "Those advantages do not give him direct access to every event underlying the resurrection narrative."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The reply directly attacks the central historical-bedrock bridge by contesting the affirmative's principal early source."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It squarely contacts source sufficiency, though it does not answer Licona's separate claim that Paul knew disciples and transmitted their appearance tradition."
+            }
+          },
+          "evidenceBasis": "Dillahunty grants Paul's status as a leading source but notes that he never met the living Jesus and did not witness the death, burial, or empty tomb.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-supernatural-label-does-not-identify-cause",
+          "sectionId": "supernatural-causal-inference",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Calling an event supernatural merely labels the absence of a natural explanation and cannot justify specific conclusions about gods, spirits, souls, or resurrection.",
+          "sourceSpan": {
+            "startEvent": 1031,
+            "endEvent": 1047,
+            "excerpt": "natural natural explanations so you're back to can't be accounted for this is this has been like the repeated theme based on what we know we can't account for this right based on what we know about things like hallucinations and all this plus what is possible according to the laws of nature but we know that group hallucinations are possible well I don't think we even know that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Within the alternating questioning, Dillahunty explicitly identifies the repeated explanatory pattern and develops a continuous skeptical challenge.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-causal-underdetermination"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-causation-against-methodological-exclusion",
+              "pro-comparative-case-by-case-resurrection"
+            ],
+            "components": [
+              {
+                "componentId": "con-supernatural-label-does-not-identify-cause-component-01",
+                "targetMoveId": "pro-causation-against-methodological-exclusion",
+                "text": "Whether inability to fit an event within known natural explanations positively identifies a supernatural cause.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-supernatural-label-does-not-identify-cause-component-02",
+                "targetMoveId": "pro-comparative-case-by-case-resurrection",
+                "text": "Whether gaps in currently available natural explanations make resurrection the best causal verdict.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly challenges the inference from currently unaccounted-for phenomena to a supernatural label and questions the supposed impossibility of group explanations."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposition consistently distinguishes absence of a present natural account from positive identification of a supernatural or resurrection cause."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The limited claim that explanatory failure does not itself identify a cause is appropriately forceful and expressly tied to what is presently known."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An event impossible under known laws may reasonably be called supernatural without naming its agent.",
+            "decisiveQualification": "Known-law incompatibility must be established and still does not identify resurrection or a particular agent."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supports the central causal-underdetermination bridge at its decisive inferential point."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts the decisive inference from failed known explanations to supernatural causation, though the excerpt is less explicit about specific gods or agents."
+            }
+          },
+          "evidenceBasis": "Dillahunty identifies the repeated move from inability to account for something under present knowledge to a stronger supernatural causal conclusion.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-five-hundred-claim-uninvestigable",
+          "sectionId": "historical-appearance-evidence",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "The claim that Jesus appeared to five hundred people lacks accessible identities, statements, and experiences sufficient to investigate whether the reported event occurred.",
+          "sourceSpan": {
+            "startEvent": 1162,
+            "endEvent": 1174,
+            "excerpt": "more about who these 500 were but that's an extraordinary claim and simply saying oh he appeared to 500 when we have no way to investigate that I don't think you have to worry about whether or not this hallucinate this was a hallucination a group of hallucination of 500 I think you have to worry about whether or not this actually happened and I don't have sufficient evidence to"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly invites Dillahunty's comment, and his first-person response continues until the moderator resumes speaking.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-historical-bedrock"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-historical-pauline-apostolic-bedrock",
+              "pro-comparative-ibt-explanatory-criteria"
+            ],
+            "components": [
+              {
+                "componentId": "con-five-hundred-claim-uninvestigable-component-01",
+                "targetMoveId": "pro-historical-pauline-apostolic-bedrock",
+                "text": "Whether the reported appearance to five hundred is accessible and sufficiently evidenced to count as historical group data.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-five-hundred-claim-uninvestigable-component-02",
+                "targetMoveId": "pro-comparative-ibt-explanatory-criteria",
+                "text": "Whether group hallucination must be explained before the underlying five-hundred-person report is established.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly shifts the evidential demand from explaining a mass experience to first establishing an investigable report through identities and testimony."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The criticism is clearly and narrowly scoped to the historical investigability and evidential sufficiency of the reported five-hundred appearance."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The speaker appropriately states personal evidential insufficiency rather than certainty that the report was false, matching the limited accessibility critique."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An early report that many witnesses remained alive could function as a checkable public claim.",
+            "decisiveQualification": "Modern evaluation lacks their identities, statements, and independent experiential records."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly attacks a material component of the central historical-bedrock bridge, though not the entire source complex."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It expressly contacts both the group-data premise and the downstream hallucination comparison, identifying the prior verification step those arguments require."
+            }
+          },
+          "evidenceBasis": "Dillahunty says the five-hundred report cannot presently be investigated and insists occurrence must be established before debating a group-hallucination explanation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-methods-good-ordinary-testimony",
+          "sectionId": "methods-and-evidential-standards",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "reply",
+          "proposition": "An extraordinary event does not require a special category of extraordinary evidence when sufficiently good ordinary eyewitness evidence supports it.",
+          "sourceSpan": {
+            "startEvent": 1177,
+            "endEvent": 1188,
+            "excerpt": "ordinary it just needs to be good and I don't know what it even means to be extraordinary does it need to grow you don't think it'd be extraordinary evidence after I watched your head being chopped off for you to walk back in the room that that alone would not I think that would be extraordinary evidence no that would be the event itself to see that I would be alive I'm just saying the eyewitness testimony"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator offers Licona a reply, and Licona develops his beheading hypothetical until Dillahunty answers his distinction between event and evidence.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-testimony-standard"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-test-before-supernatural-attribution",
+              "con-five-hundred-claim-uninvestigable"
+            ],
+            "components": [
+              {
+                "componentId": "pro-methods-good-ordinary-testimony-component-01",
+                "targetMoveId": "con-test-before-supernatural-attribution",
+                "text": "Whether extraordinary events require a special evidential category beyond sufficiently good eyewitness testimony.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-methods-good-ordinary-testimony-component-02",
+                "targetMoveId": "con-five-hundred-claim-uninvestigable",
+                "text": "Whether the actual ancient testimony is sufficiently accessible and reliable to establish the claimed group event.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the general evidential-standard issue through a vivid eyewitness hypothetical but does not answer the concrete accessibility defects in the ancient reports."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The ordinary-good-testimony proposition is recoverable, but extraordinary evidence shifts between evidential quality, evidential type, and direct observation in the exchange."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The narrow claim that evidence need not be unusual in kind is supported by the hypothetical, with an implicit requirement that testimony actually be sufficiently reliable."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Extraordinary claims require evidential strength proportionate to their low prior probability.",
+            "decisiveQualification": "Proportionate strength need not mean an extraordinary type of evidence."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "The move directly supports the subsidiary testimony-standard bridge, though it does not establish that the debate's actual testimony meets that standard."
+            },
+            "representationalCharity": {
+              "value": 78,
+              "rationale": "The reply fairly distinguishes evidence quality from an undefined special category, but it partly treats the skeptical maxim as demanding exotic evidence rather than stronger warrant."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "This partial answer addresses the standard in principle while leaving the decisive application to Paul's five-hundred report and source quality unanswered."
+            }
+          },
+          "evidenceBasis": "Licona argues that evidence need only be good, using a return-after-beheading hypothetical to distinguish the extraordinary event from eyewitness testimony about it.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-event-acceptance-not-causal-verdict",
+          "sectionId": "comparative-resurrection-inference",
+          "side": "con",
+          "speaker": "Matt Dillahunty",
+          "moveKind": "reply",
+          "proposition": "Even observing an extraordinary return from death would justify accepting that the event occurred without justifying an unsupported supernatural causal explanation.",
+          "sourceSpan": {
+            "startEvent": 1189,
+            "endEvent": 1207,
+            "excerpt": "it you walking back in is that's a monumentally extraordinary and you still wouldn't believe in the Supernatural you said even if you saw that no I what I would believe is that this happened I will not accept the explanation because there's been no justification for a causal explanation the Supernatural is just a bucket that you throw in I don't know how this happened well it's"
+          },
+          "attributionConfidence": "medium",
+          "attributionBasis": "Dillahunty initiates the event-versus-explanation distinction and repeatedly returns to it, although brief Licona interjections occur within the exchange.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-causal-underdetermination"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-methods-good-ordinary-testimony",
+              "pro-causation-against-methodological-exclusion"
+            ],
+            "components": [
+              {
+                "componentId": "con-event-acceptance-not-causal-verdict-component-01",
+                "targetMoveId": "pro-methods-good-ordinary-testimony",
+                "text": "Whether observing or accepting an extraordinary event also warrants the proposed supernatural causal explanation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-event-acceptance-not-causal-verdict-component-02",
+                "targetMoveId": "pro-causation-against-methodological-exclusion",
+                "text": "Whether openness to the event entails accepting supernatural causation rather than withholding causal judgment.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly diagnoses a conflation between event occurrence and causal explanation and states that accepting the former does not justify the latter."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The event-versus-explanation distinction is fully recoverable and stable despite brief interjections during the exchange."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move appropriately insists that event evidence and causal evidence are distinct, without denying the hypothetical event or claiming certainty about its cause."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An event transcending known natural capacities may itself support a supernatural classification.",
+            "decisiveQualification": "That classification requires justification beyond merely observing the event and still may not identify its cause."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 94,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (93 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supports the central causal-underdetermination bridge by separating event acceptance from causal attribution."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly contacts the decisive inference, articulates the event-cause distinction, and states the defeating consequence for supernatural attribution."
+            }
+          },
+          "evidenceBasis": "Dillahunty says he would accept that the extraordinary event happened but would not accept a supernatural causal explanation absent independent justification.",
+          "assessmentConfidence": "medium"
+        },
+        {
+          "moveId": "pro-causation-event-before-agent",
+          "sectionId": "supernatural-causal-inference",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "reply",
+          "proposition": "A verified event impossible under known natural laws may be classified as supernatural even when its particular causal agent remains unidentified.",
+          "sourceSpan": {
+            "startEvent": 1295,
+            "endEvent": 1308,
+            "excerpt": "that event was not possible given the laws of nature well then we would say that is a supernatural event it transcends the laws of nature that's the definition of it I don't know why that's a a problem just because I can't specify what the cause is whether it was God or an angel a demon or an ET or whatever we can still say that it was a s that the event occurred that the event"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The transcript explicitly introduces Licona, whose uninterrupted first-person answer continues until Dillahunty responds at the next row.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-supernatural-admissibility"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-event-acceptance-not-causal-verdict",
+              "con-supernatural-label-does-not-identify-cause",
+              "con-no-workable-supernatural-causal-method"
+            ],
+            "components": [
+              {
+                "componentId": "pro-causation-event-before-agent-component-01",
+                "targetMoveId": "con-event-acceptance-not-causal-verdict",
+                "text": "Whether an event established as impossible under natural laws may be classified as supernatural before identifying its agent.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-causation-event-before-agent-component-02",
+                "targetMoveId": "con-supernatural-label-does-not-identify-cause",
+                "text": "Whether failure to identify God, angel, demon, or another agent prevents classifying the event itself.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-causation-event-before-agent-component-03",
+                "targetMoveId": "con-no-workable-supernatural-causal-method",
+                "text": "Whether the event classification supplies a workable method for proving impossibility under natural laws.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply contacts the event-versus-agent distinction and concedes agent uncertainty, but it assumes rather than supplies the method establishing natural impossibility."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The classification rule is clear, but supernatural alternates between transcending natural laws and an event caused by various nonnatural or extraterrestrial agents."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Conditional classification follows from the offered definition, but treating established incompatibility with current laws as straightforwardly available understates epistemic uncertainty."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Even an unprecedented event may reflect unknown natural causes rather than a supernatural cause.",
+            "decisiveQualification": "The pro criterion applies only if impossibility under natural laws is actually verified."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supports central supernatural admissibility by arguing that agent uncertainty need not block classifying a verified law-transcending event."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The reply fairly narrows its conclusion and openly preserves agent uncertainty, although it does not solve the antecedent's demanding proof requirement."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "This partial answer directly resolves agent identification after impossibility is verified while leaving the decisive verification and causal-discrimination demand unanswered."
+            }
+          },
+          "evidenceBasis": "Licona argues that an event shown impossible under natural laws is supernatural by definition even if its particular agent—God, angel, demon, or otherwise—is unknown.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-background-resurrection-supports-theism",
+          "sectionId": "background-plausibility-and-divine-agency",
+          "side": "pro",
+          "speaker": "Mike Licona",
+          "moveKind": "reply",
+          "proposition": "Evidence for resurrection can itself support supernaturalism and probably theism without requiring a prior proof of God's existence.",
+          "sourceSpan": {
+            "startEvent": 1331,
+            "endEvent": 1345,
+            "excerpt": "you uh Jesus rose it gives you the supernatural real and it probably gives you God the classical approach where you add God's existence I think it just adds all all it continues to just Stack Up on the plausibility I mean I could have gone into that but I just wanted to do the supernatural here um but you know you could add some arguments for God's existence from design for the"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "An audience member directs the methodological question to Licona, and his sustained answer ends before he shifts to remarks about limited presentation time.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-theistic-background"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-divine-agent-requires-prior-support",
+              "con-event-acceptance-not-causal-verdict"
+            ],
+            "components": [
+              {
+                "componentId": "pro-background-resurrection-supports-theism-component-01",
+                "targetMoveId": "con-divine-agent-requires-prior-support",
+                "text": "Whether resurrection evidence may itself support supernaturalism and theism without prior proof of God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-background-resurrection-supports-theism-component-02",
+                "targetMoveId": "con-event-acceptance-not-causal-verdict",
+                "text": "Whether the event evidence discriminates a theistic agent from other unknown causes.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response directly rejects a strict prior-proof requirement by allowing evidential feedback from resurrection, but it does not provide the needed agent discriminator."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The probabilistic feedback claim is recoverable, but God, theism, supernatural, and the contribution of auxiliary arguments are not sharply separated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Probably gives you God is explicitly probabilistic, yet the excerpt supplies no discriminating bridge from resurrection or generic supernaturalism to classical theism."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A divine-agent hypothesis needs independent prior support or event evidence that discriminates in its favor.",
+            "decisiveQualification": "Event evidence can update priors, but only to the extent that it discriminates theism from rivals."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 58,
+              "rationale": "The claim is principally asserted, and references to design, cosmology, and molecular biology are merely listed rather than developed as supporting evidence."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "This partial answer contacts the prior-support premise while leaving the decisive inference from a resurrection event to probable theism largely asserted."
+            }
+          },
+          "evidenceBasis": "Licona says resurrection evidence can support the supernatural and probably God, while independent design, cosmological, and biological arguments could add plausibility.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct pro-side debate-wide consequence remains outside the individual ratings, response links, relevance judgments, and captured omissions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured criterion changes completion of a named pro burden bridge.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "All identified pro-side consequences are already represented at move level.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response components",
+              "burden relevance",
+              "precision and calibration findings"
+            ],
+            "counterfactual": "Removing any alleged residual would not change bridge completion independently of the existing judgments."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct con-side debate-wide consequence remains outside the individual ratings, response links, relevance judgments, and captured omissions.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured criterion changes completion of a named con burden bridge.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "All identified con-side consequences are already represented at move level.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response components",
+              "burden relevance",
+              "precision and calibration findings"
+            ],
+            "counterfactual": "Removing any alleged residual would not change bridge completion independently of the existing judgments."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "historical-appearance-evidence",
+          "title": "Historical foundation for the appearance claims",
+          "weightPercent": 25,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-historical-pauline-apostolic-bedrock",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-paul-and-reports-insufficient",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-five-hundred-claim-uninvestigable",
+                  "importance": 2,
+                  "score": 91
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "comparative-resurrection-inference",
+          "title": "Resurrection versus naturalistic explanations",
+          "weightPercent": 27,
+          "sides": {
+            "pro": {
+              "score": 80,
+              "moves": [
+                {
+                  "moveId": "pro-comparative-ibt-explanatory-criteria",
+                  "importance": 3,
+                  "score": 79
+                },
+                {
+                  "moveId": "pro-comparative-case-by-case-resurrection",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            },
+            "con": {
+              "score": 90,
+              "moves": [
+                {
+                  "moveId": "con-resurrection-lacks-explanatory-content",
+                  "importance": 3,
+                  "score": 87
+                },
+                {
+                  "moveId": "con-event-acceptance-not-causal-verdict",
+                  "importance": 3,
+                  "score": 92
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "supernatural-causal-inference",
+          "title": "From anomaly to supernatural causation",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "pro-causation-against-methodological-exclusion",
+                  "importance": 3,
+                  "score": 79
+                },
+                {
+                  "moveId": "pro-causation-event-before-agent",
+                  "importance": 3,
+                  "score": 78
+                }
+              ]
+            },
+            "con": {
+              "score": 89,
+              "moves": [
+                {
+                  "moveId": "con-no-workable-supernatural-causal-method",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-supernatural-label-does-not-identify-cause",
+                  "importance": 3,
+                  "score": 90
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "methods-and-evidential-standards",
+          "title": "Historical method and standards for extraordinary claims",
+          "weightPercent": 16,
+          "sides": {
+            "pro": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "pro-methods-discipline-specific-investigation",
+                  "importance": 2,
+                  "score": 83
+                },
+                {
+                  "moveId": "pro-methods-good-ordinary-testimony",
+                  "importance": 2,
+                  "score": 74
+                }
+              ]
+            },
+            "con": {
+              "score": 85,
+              "moves": [
+                {
+                  "moveId": "con-evidential-default-and-burden",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "con-test-before-supernatural-attribution",
+                  "importance": 3,
+                  "score": 92
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "background-plausibility-and-divine-agency",
+          "title": "Background supernaturalism and identification of divine agency",
+          "weightPercent": 10,
+          "sides": {
+            "pro": {
+              "score": 71,
+              "moves": [
+                {
+                  "moveId": "pro-background-cumulative-paranormal-evidence",
+                  "importance": 2,
+                  "score": 72
+                },
+                {
+                  "moveId": "pro-background-resurrection-supports-theism",
+                  "importance": 2,
+                  "score": 70
+                }
+              ]
+            },
+            "con": {
+              "score": 80,
+              "moves": [
+                {
+                  "moveId": "con-anomalies-do-not-establish-supernatural-realm",
+                  "importance": 2,
+                  "score": 85
+                },
+                {
+                  "moveId": "con-divine-agent-requires-prior-support",
+                  "importance": 2,
+                  "score": 75
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 78.97,
+          "burdenCompletionAdjustment": 0,
+          "score": 79
+        },
+        "con": {
+          "weightedSectionMean": 87.73,
+          "burdenCompletionAdjustment": 0,
+          "score": 88
+        }
+      },
+      "winner": "con",
+      "winningMargin": 9
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 19,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 117722,
+  "proposedAdapterSha256": "f5539563849c980ade891f0e820be6efcbd96eee0f48476c5067c4291a1a3c39",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "150",
+    "sections": 5,
+    "moves": 19,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-03-single-deterministic-score-pass",
+    "adapterSha256": "f5539563849c980ade891f0e820be6efcbd96eee0f48476c5067c4291a1a3c39",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}

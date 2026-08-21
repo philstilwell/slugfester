@@ -1,0 +1,206 @@
+import { createHash } from "node:crypto";
+
+export const POST_CANARY_BATCH_03_COMPATIBILITY_ACTIVATION_STATUS =
+  "post-canary-batch-03-compatibility-execution-authorized-and-frozen";
+
+export function sha256(value) {
+  return createHash("sha256").update(value).digest("hex");
+}
+
+function replaceExactOnce(source, before, after, label) {
+  const first = source.indexOf(before);
+  if (first < 0 || source.indexOf(before, first + before.length) >= 0) {
+    throw new Error(`${label}: expected exactly one baseline anchor`);
+  }
+  return source.replace(before, after);
+}
+
+export function buildPostCanaryBatch03ValidatorSource(baselineSource) {
+  let source = baselineSource;
+
+  const batch01Import = `import {
+  POST_CANARY_BATCH_01_COMPATIBILITY_ROOT,
+  POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION,
+  validatePostCanaryBatch01SiteLedgerAdapter
+} from "./lib/assessment-production-post-canary-batch-01-compatibility.mjs";`;
+  const batch03Import = `import {
+  POST_CANARY_BATCH_03_COMPATIBILITY_ROOT,
+  POST_CANARY_BATCH_03_SITE_LEDGER_ADAPTER_VERSION,
+  validatePostCanaryBatch03SiteLedgerAdapter
+} from "./lib/assessment-production-post-canary-batch-03-compatibility.mjs";`;
+  source = replaceExactOnce(
+    source,
+    `${batch01Import}\nimport {
+  POST_CANARY_BATCH_02_COMPATIBILITY_ROOT,
+  POST_CANARY_BATCH_02_SITE_LEDGER_ADAPTER_VERSION,
+  validatePostCanaryBatch02SiteLedgerAdapter
+} from "./lib/assessment-production-post-canary-batch-02-compatibility.mjs";`,
+    `${batch01Import}\nimport {
+  POST_CANARY_BATCH_02_COMPATIBILITY_ROOT,
+  POST_CANARY_BATCH_02_SITE_LEDGER_ADAPTER_VERSION,
+  validatePostCanaryBatch02SiteLedgerAdapter
+} from "./lib/assessment-production-post-canary-batch-02-compatibility.mjs";\n${batch03Import}`,
+    "Batch 3 compatibility import"
+  );
+
+  const adapterVersions = `    schemaVersion === CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION ||
+    schemaVersion === POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION ||
+    schemaVersion === POST_CANARY_BATCH_02_SITE_LEDGER_ADAPTER_VERSION`;
+  source = replaceExactOnce(
+    source,
+    adapterVersions,
+    `${adapterVersions} ||\n    schemaVersion === POST_CANARY_BATCH_03_SITE_LEDGER_ADAPTER_VERSION`,
+    "Batch 3 adapter-version route"
+  );
+
+  const routeFunctions = `export function validatePostCanaryBatch03LedgerAdapterRouteLocks({
+  debate,
+  ledgerText,
+  packetPath,
+  packetText,
+  packet,
+  activation,
+  preparationText
+}) {
+  const packetLock = activation.packetHashes?.find(
+    (item) => item.debateNumber === debate.number
+  );
+  if (
+    activation.status !==
+      "${POST_CANARY_BATCH_03_COMPATIBILITY_ACTIVATION_STATUS}" ||
+    !activation.authorization?.compatibilityExecution ||
+    !activation.authorization?.validatorMigration ||
+    !activation.authorization?.stagingLedgerWrite ||
+    sha256(preparationText) !== activation.preparation?.sha256 ||
+    !packetLock ||
+    packetLock.path !== packetPath ||
+    packetLock.debateId !== debate.id ||
+    sha256(packetText) !== packetLock.sha256 ||
+    packet.debateNumber !== debate.number ||
+    packet.debateId !== debate.id ||
+    packet.futurePaths?.stagedLedger !== packetLock.stagedLedgerPath ||
+    packet.futurePaths?.productionLedger !== packetLock.productionLedgerPath ||
+    packetLock.productionLedgerPath !==
+      \`docs/assessment-ledgers/\${debate.id}.json\` ||
+    packet.proposedAdapterSha256 !== packetLock.proposedAdapterSha256 ||
+    packetLock.stagedLedgerSha256 !== packetLock.proposedAdapterSha256 ||
+    sha256(ledgerText) !== packetLock.stagedLedgerSha256
+  ) {
+    throw new Error(
+      "Batch 3 adapter, packet, or activation differs from its frozen route"
+    );
+  }
+  return packetLock;
+}
+
+export function validatePostCanaryBatch03LedgerAdapterRoute({
+  debate,
+  ledger,
+  ledgerText
+}) {
+  const packetPath =
+    \`\${POST_CANARY_BATCH_03_COMPATIBILITY_ROOT}/packets/debate-\${debate.number}.json\`;
+  const activationPath =
+    \`\${POST_CANARY_BATCH_03_COMPATIBILITY_ROOT}/execution-activation.json\`;
+  const packetText = readFileSync(
+    new URL(\`../\${packetPath}\`, import.meta.url),
+    "utf8"
+  );
+  const packet = JSON.parse(packetText);
+  const activation = JSON.parse(
+    readFileSync(new URL(\`../\${activationPath}\`, import.meta.url), "utf8")
+  );
+  const preparationText = readFileSync(
+    new URL(\`../\${activation.preparation?.path}\`, import.meta.url),
+    "utf8"
+  );
+  validatePostCanaryBatch03LedgerAdapterRouteLocks({
+    debate,
+    ledgerText,
+    packetPath,
+    packetText,
+    packet,
+    activation,
+    preparationText
+  });
+  const validation = validatePostCanaryBatch03SiteLedgerAdapter({
+    adapter: ledger,
+    candidate: debate,
+    expectedSourceLocks: packet.sourceLocks
+  });
+  if (!debate.logicalExtension) {
+    throw new Error("Batch 3 production assessments require an AI Extension");
+  }
+  return validation;
+}
+
+`;
+  source = replaceExactOnce(
+    source,
+    "function validateReassessmentLedger(debate, path) {",
+    `${routeFunctions}function validateReassessmentLedger(debate, path) {`,
+    "Batch 3 route functions"
+  );
+
+  const batch03Branch = `  if (
+    ledger.schemaVersion === POST_CANARY_BATCH_03_SITE_LEDGER_ADAPTER_VERSION
+  ) {
+    try {
+      validatePostCanaryBatch03LedgerAdapterRoute({
+        debate,
+        ledger,
+        ledgerText
+      });
+    } catch (error) {
+      addError(
+        [...path, "assessmentRubric"],
+        \`Batch 3 ledger validation failed: \${error.message}\`
+      );
+    }
+    return;
+  }
+
+`;
+  source = replaceExactOnce(
+    source,
+    "  let calculated;\n",
+    `${batch03Branch}  let calculated;\n`,
+    "Batch 3 ledger branch"
+  );
+
+  validatePostCanaryBatch03ValidatorSource(source);
+  return source;
+}
+
+export function validatePostCanaryBatch03ValidatorSource(source) {
+  const required = [
+    "POST_CANARY_BATCH_03_COMPATIBILITY_ROOT",
+    "POST_CANARY_BATCH_03_SITE_LEDGER_ADAPTER_VERSION",
+    "validatePostCanaryBatch03SiteLedgerAdapter",
+    "validatePostCanaryBatch03LedgerAdapterRouteLocks",
+    "validatePostCanaryBatch03LedgerAdapterRoute",
+    POST_CANARY_BATCH_03_COMPATIBILITY_ACTIVATION_STATUS,
+    "Batch 3 production assessments require an AI Extension",
+    "Batch 3 ledger validation failed"
+  ];
+  for (const text of required) {
+    if (!source.includes(text)) {
+      throw new Error(`proposed Batch 3 validator is missing ${text}`);
+    }
+  }
+  if (
+    !source.includes("CHECKPOINT_V22_SITE_LEDGER_ADAPTER_VERSION") ||
+    !source.includes("POST_CANARY_BATCH_01_SITE_LEDGER_ADAPTER_VERSION") ||
+    !source.includes("POST_CANARY_BATCH_02_SITE_LEDGER_ADAPTER_VERSION") ||
+    !source.includes("validatePostCanaryBatch02LedgerAdapterRoute") ||
+    !source.includes("calculateV2Ledger") ||
+    !source.includes("calculateV21Ledger")
+  ) {
+    throw new Error("proposed Batch 3 validator weakens an existing route");
+  }
+  return {
+    status: "passed",
+    bytes: Buffer.byteLength(source),
+    sha256: sha256(source)
+  };
+}

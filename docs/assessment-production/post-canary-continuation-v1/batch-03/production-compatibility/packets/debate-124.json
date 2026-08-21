@@ -1,0 +1,2542 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-production-compatibility",
+  "status": "frozen-post-canary-batch-03-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "planningOnly": true,
+  "debateNumber": "124",
+  "debateId": "harris-peterson-god-atheism-bible-2018",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-124.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-03/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-03/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-03/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/jey_CzIOfYE/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "255af20c4410a3d9a9d05b286ed70456e9e879bcdba199e6ab8f5d286cc77116",
+    "calculatedScoresSha256": "4c20ddc148798cbe289f321518cb706afc1b30b51ec77a7d6947d12778bce371",
+    "finalizationAuditSha256": "166a00b82a42bbdd9874383148c10d44392243aa0bc4bb387a14ba92fc5ecb9c",
+    "renderingAuditSha256": "ea4f531d8c554fd4e881f02e8b2a8ea32a516b4259ec0b5784e863646291b9b1",
+    "finalCandidateSha256": "799b6a27e5fe4cbe8e660f4138a6528db88aa9b049da87c729a36aff970ff87f",
+    "eventsPath": ".assessment-cache/captions/jey_CzIOfYE/events.json",
+    "eventsSha256": "92807ab2005591e720f60f0f3e719161ea92e4d18e0fce31a87c4161c86a1f24",
+    "finalJudgmentSha256": "1189af19b42fa5e3390cbde71db58e706bb9bc1aa05478c13d3a0c1e739a8466"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/harris-peterson-god-atheism-bible-2018.json",
+    "productionLedger": "docs/assessment-ledgers/harris-peterson-god-atheism-bible-2018.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-03-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-03-production-compatibility",
+    "status": "frozen-post-canary-batch-03-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 3,
+    "debateNumber": "124",
+    "debateId": "harris-peterson-god-atheism-bible-2018",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-03-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "255af20c4410a3d9a9d05b286ed70456e9e879bcdba199e6ab8f5d286cc77116",
+      "calculatedScoresSha256": "4c20ddc148798cbe289f321518cb706afc1b30b51ec77a7d6947d12778bce371",
+      "finalizationAuditSha256": "166a00b82a42bbdd9874383148c10d44392243aa0bc4bb387a14ba92fc5ecb9c",
+      "renderingAuditSha256": "ea4f531d8c554fd4e881f02e8b2a8ea32a516b4259ec0b5784e863646291b9b1",
+      "finalCandidateSha256": "799b6a27e5fe4cbe8e660f4138a6528db88aa9b049da87c729a36aff970ff87f",
+      "eventsPath": ".assessment-cache/captions/jey_CzIOfYE/events.json",
+      "eventsSha256": "92807ab2005591e720f60f0f3e719161ea92e4d18e0fce31a87c4161c86a1f24",
+      "finalJudgmentSha256": "1189af19b42fa5e3390cbde71db58e706bb9bc1aa05478c13d3a0c1e739a8466"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-religious-pragmatism-route",
+          "side": "pro",
+          "description": "Establish that evolved religious stories, God-language, and biblical tradition encode indispensable interpretive structures through which moral facts acquire normative force, recurrent patterns become intelligible, and truthful conduct becomes practically embodied.",
+          "successCriteria": "The route succeeds by showing that bare facts and explicit rational instruction are insufficient for grounding and transmitting value, while a developmental and psychologically informed reading of religious tradition can preserve truth-seeking, moral universals, and effective guidance without requiring rigid literalism.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-interpretive-grounding",
+            "tier": "motion",
+            "description": "Show that religious narrative supplies a necessary or materially superior interpretive framework connecting reality to moral value, meaning, and conduct."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-fact-value-mediation",
+              "tier": "central",
+              "description": "Explain why facts require antecedent moral intuitions or narrative structures before they can yield judgments about better and worse states."
+            },
+            {
+              "bridgeId": "pro-central-symbolic-truth",
+              "tier": "central",
+              "description": "Establish a constrained developmental method by which biblical stories and God-language express recurring psychological, social, and moral realities."
+            },
+            {
+              "bridgeId": "pro-central-universal-patterns",
+              "tier": "central",
+              "description": "Show that deeper cross-context patterns can survive cultural variation and orient objective moral judgment without collapsing into relativism."
+            },
+            {
+              "bridgeId": "pro-central-practical-embodiment",
+              "tier": "central",
+              "description": "Explain how personified stories, inherited practices, conscience, sacrifice, and truthful speech embody moral guidance more effectively than abstract propositions alone."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-dogmatism-distinction",
+              "tier": "subsidiary",
+              "description": "Distinguish the general human danger of fundamentalism from religion itself and show how religious tradition can subordinate fixed dogma to truthful inquiry."
+            },
+            {
+              "bridgeId": "pro-subsidiary-evolutionary-inheritance",
+              "tier": "subsidiary",
+              "description": "Connect evolved interpretive structures and cultural inheritance to the formation and transmission of durable moral intuitions."
+            }
+          ]
+        },
+        {
+          "routeId": "con-secular-moral-realism-route",
+          "side": "con",
+          "description": "Establish that objective concern for conscious well-being, reality-directed inquiry, and revisable causal understanding can ground moral truth and meaning without biblical authority, while dogma, immoral texts, unconstrained reinterpretation, and ambiguous God-language weaken the religious alternative.",
+          "successCriteria": "The route succeeds by providing a coherent nonreligious basis for objective value and meaningful life, then showing that open inquiry can retain useful psychological or cultural insights while correcting harmful, obsolete, or unsupported religious commitments.",
+          "motionBridge": {
+            "bridgeId": "con-motion-secular-sufficiency",
+            "tier": "motion",
+            "description": "Show that facts about conscious experience and honest inquiry adequately ground moral truth and meaning, making dogmatic religious frameworks unnecessary and comparatively unreliable."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-wellbeing-ground",
+              "tier": "central",
+              "description": "Ground objective moral distinctions in the intrinsic badness of universal misery and the full range of consequences for conscious beings."
+            },
+            {
+              "bridgeId": "con-central-reality-and-revision",
+              "tier": "central",
+              "description": "Establish reality-directed, evidence-sensitive inquiry as the common basis for knowledge and the correction of moral rules as causal understanding improves."
+            },
+            {
+              "bridgeId": "con-central-scriptural-liability",
+              "tier": "central",
+              "description": "Show how explicit immoral commands and revelation claims obstruct correction and give literal fundamentalism continuing persuasive resources."
+            },
+            {
+              "bridgeId": "con-central-reinterpretation-dilemma",
+              "tier": "central",
+              "description": "Demonstrate that literal readings preserve harmful commitments while increasingly metaphorical readings depend on standards external to scripture."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-naturalized-spirituality",
+              "tier": "subsidiary",
+              "description": "Account for spiritual, introspective, and morally transformative experiences through universal facts about consciousness and human psychology."
+            },
+            {
+              "bridgeId": "con-subsidiary-language-and-pluralism",
+              "tier": "subsidiary",
+              "description": "Test religious authority through conflicting traditions and assess whether unconventional God-language misleadingly validates ordinary supernatural beliefs."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "moral-grounding",
+          "title": "Moral Facts, Well-Being, and the Fact–Value Bridge",
+          "weightPercent": 24,
+          "rationale": "This issue contains the foundational clash over whether conscious suffering and flourishing can terminate moral reasoning or whether facts become normative only through antecedent intuitions and narrative interpretation."
+        },
+        {
+          "sectionId": "scripture-and-interpretation",
+          "title": "Scriptural Authority and Interpretive Constraint",
+          "weightPercent": 20,
+          "rationale": "This issue tests whether developmental and psychological readings can extract defensible biblical truth while remaining textually constrained, especially when confronting explicit immoral or apocalyptic material."
+        },
+        {
+          "sectionId": "god-language-and-spiritual-experience",
+          "title": "God-Language, Prayer, and Naturalized Spirituality",
+          "weightPercent": 15,
+          "rationale": "This issue determines whether pragmatic accounts of God and prayer identify realities best expressed through religious language or merely redescribe psychological and social processes available to secular explanation."
+        },
+        {
+          "sectionId": "universality-and-pluralism",
+          "title": "Moral Universals, Cultural Variation, and Religious Pluralism",
+          "weightPercent": 15,
+          "rationale": "This issue assesses whether recurrent structures across stories, cultures, and disciplines constrain moral interpretation or whether incompatible traditions undermine claims of distinctive religious authority."
+        },
+        {
+          "sectionId": "dogmatism-and-open-inquiry",
+          "title": "Dogmatism, Truthful Speech, and Revisable Inquiry",
+          "weightPercent": 16,
+          "rationale": "This issue compares the claim that religious symbolism can elevate truthful correction above fixed dogma with the secular claim that evidence-sensitive inquiry is a clearer and more reliable safeguard against error."
+        },
+        {
+          "sectionId": "practical-guidance",
+          "title": "Inherited Heuristics and Practical Moral Guidance",
+          "weightPercent": 10,
+          "rationale": "This issue examines whether culturally embodied stories guide conduct where rational instruction is behaviorally weak or instead preserve mistaken rules that causal knowledge can revise and replace."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-moral-realism-discoverable-answers",
+          "sectionId": "moral-grounding",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "constructive",
+          "proposition": "Questions of human value have discoverable right and wrong answers independent of what perpetrators happen to want.",
+          "sourceSpan": {
+            "startEvent": 227,
+            "endEvent": 246,
+            "excerpt": "want pouch what's not the victim side but the perpetrator side and so crucially for me is the claim that I'm a realist I'm a moral realist and what realism means is that it's there that there are right and wrong answers to questions of this kind and and and you can not know what you're missing in fact we almost certainly don't know what we're missing on questions of human value"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker explicitly identifies himself as a moral realist and develops the position in Harris's characteristic first-person terms.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-secular-sufficiency"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is a constructive statement of the secular route's core moral-realist claim, so no earlier opposing move requires an answer."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The claim about discoverable answers is recoverable, and uncertainty about presently unknown answers is expressly acknowledged."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Confidence in realism exceeds the support supplied here, although ignorance about particular answers is explicitly conceded."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 99,
+              "rationale": "It directly advances the motion-level claim that secular moral inquiry can identify objective answers."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move advances its own realism and does not materially characterize a developed opposing alternative."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Harris explicitly identifies as a moral realist, separates truth from perpetrators' wants, and says our task is discovery.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-religion-valorizes-dogma",
+          "sectionId": "dogmatism-and-open-inquiry",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "constructive",
+          "proposition": "Religion warrants special scrutiny because it treats dogma and belief without compelling evidence as virtues rather than epistemic defects.",
+          "sourceSpan": {
+            "startEvent": 276,
+            "endEvent": 290,
+            "excerpt": "there is that religion is the only language game where in fundamentalism and of dogmatism dogmatism is not a pejorative concept the dogma is a good word in specifically within Catholicism and the notion that you must believe things on faith that is in the absence of compelling evidence that would otherwise cause a rational person to believe it that you know religious context is"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Harris explicitly explains why he focuses on religion and contrasts religious faith with standards applied in other domains.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-scriptural-liability"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies a general criticism of religious epistemic norms and has no reply target."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The epistemic criticism is clear, but the scope of religion as the only relevant language game is broader than the examples establish."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The broad uniqueness claim about religion is stronger than the Catholic and faith-based examples establish."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religious traditions can call dogma good while also containing practices of interpretation, correction, and evidence-sensitive inquiry.",
+            "decisiveQualification": "The move concerns religion's distinctive authorization of belief without compelling evidence, not every practice within religion."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The inference from valorized faith and dogma to special scrutiny is clear, though the uniqueness premise is broad."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "The move relies on asserted linguistic and doctrinal examples without representative comparison across religions."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It strongly supports the central scriptural-liability bridge by identifying an epistemic mechanism resistant to correction."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "It identifies a genuine distinguishing feature but compresses internal diversity and corrective resources within traditions."
+            },
+            "responsiveness": {
+              "value": 79,
+              "rationale": "Within constructive moves, it states a pointed distinction but supports it mainly through one religious usage."
+            }
+          },
+          "evidenceBasis": "Harris contrasts ordinary pejorative dogmatism with religiously valorized dogma and belief maintained without compelling evidence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-explicit-immoral-scriptural-commands",
+          "sectionId": "scripture-and-interpretation",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "constructive",
+          "proposition": "Many scriptural commands are unambiguous, ethically inferior, and resistant to revision, keeping modern societies tied to Iron Age morality.",
+          "sourceSpan": {
+            "startEvent": 667,
+            "endEvent": 758,
+            "excerpt": "they can have their reason they can have their respect for science they can have a 21st century worldview but they can also hold on to everything they love than Christianity or fear to lose it is undoubtedly mostly Christianity but but whatever any religion my concern is that it keeps us shackled to these Iron Age philosophies and these Iron Age conversations where we should be"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Harris explicitly responds in defense of how fundamentalists parse texts, then develops examples from scripture and addresses Peterson directly.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-scriptural-liability"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This is a constructive challenge to scriptural authority, not a reply selected against an earlier opposing locked move."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The liability claim is clear, though many scriptures and resistance to revision are generalized beyond the excerpt's rendered examples."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The Iron Age comparison supports concern, but the breadth and unambiguity of many commands need fuller representative demonstration."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Developmental or canonical interpretation can condition earlier commands and preserve a tradition without endorsing every literal rule.",
+            "decisiveQualification": "Such interpretation must still explain why harmful explicit language is not authoritative and how revision remains textually constrained."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable central bridge concerning explicit immoral commands and resistance to correction."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The move fairly targets the continuing force of explicit texts while leaving room for, but not resolving, sophisticated interpretation."
+            },
+            "responsiveness": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (89 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Harris argues that attachment to scripture keeps modern believers tied to Iron Age ethical conversations despite modern knowledge.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-integrated-canonical-development",
+          "sectionId": "scripture-and-interpretation",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Individual biblical sentences must be interpreted within the developmental structure of the entire narrative, because later portions condition the meaning of earlier portions.",
+          "sourceSpan": {
+            "startEvent": 877,
+            "endEvent": 986,
+            "excerpt": "at the end it changes the entire structure and so this is the one of the complex problems that actually led to the rise of postmodern interpretations of literature which is that if you take a complex narrative there's a very large number of ways of interpreting it and it isn't self-evident which of those are canonically correct and we can deal with that horrible issue later but"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn directly answers the clarifying question and uses Peterson's characteristic account of narrative coherence and the Christian Bible as a developmental narrative.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-symbolic-truth"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-explicit-immoral-scriptural-commands"
+            ],
+            "components": [
+              {
+                "componentId": "pro-integrated-canonical-development-component-01",
+                "targetMoveId": "con-explicit-immoral-scriptural-commands",
+                "text": "Whether isolated scriptural commands retain their apparent moral meaning when interpreted within the whole developing canon.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-integrated-canonical-development-component-02",
+                "targetMoveId": "con-explicit-immoral-scriptural-commands",
+                "text": "Whether the proposed whole-canon method supplies a determinate constraint rather than merely permitting revision.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the isolation premise by arguing that later narrative portions condition earlier ones, but it concedes many interpretations and does not establish a rule selecting the canonically correct reading."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The developmental claim is clear, but canonical correctness remains partly unstable and is expressly admitted not to be self-evident."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The claim is appropriately qualified by acknowledging numerous interpretations and the unresolved problem of canonical correctness."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Explicit commands can retain their ordinary harmful meanings even when embedded in a later developmental narrative.",
+            "decisiveQualification": "A developmental account needs a principled textual rule showing when later material revises rather than merely obscures earlier content."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supports the central symbolic-truth bridge by proposing a developmental canonical method."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 72,
+              "rationale": "This is a partial answer contacting the decisive isolation issue while leaving the constraint demand unanswered."
+            }
+          },
+          "evidenceBasis": "Peterson argues that narrative endings alter the whole structure while conceding many interpretations and no self-evident canonical choice.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-revelation-psychological-pattern",
+          "sectionId": "scripture-and-interpretation",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Revelation can be interpreted psychologically as depicting recurrent personal and social collapse in which heroic truthful speech provides a path toward redemption.",
+          "sourceSpan": {
+            "startEvent": 1135,
+            "endEvent": 1184,
+            "excerpt": "darkest time of the year from from a from a metaphysical perspective there's an idea there that when things fall apart that's the time for the birth of the hero and the hero in Revelation is also the place where free where we're truthful speech most clearly manifests itself because in the Christian tradition Christ is identified with truthful speech and so the notion there is that redemption under apocalyptic conditions"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker explicitly invokes Peterson's biblical lectures and develops his established psychological reading of Revelation, Christ, heroism, and truthful speech.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-symbolic-truth"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-explicit-immoral-scriptural-commands"
+            ],
+            "components": [
+              {
+                "componentId": "pro-revelation-psychological-pattern-component-01",
+                "targetMoveId": "con-explicit-immoral-scriptural-commands",
+                "text": "Whether psychologically reading Revelation answers the objection from explicit immoral or false scriptural meanings.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The psychological interpretation provides relevant contrary material but does not answer how immoral commands are revised or why this reading is textually controlling."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The collapse-and-redemption pattern is recoverable, though revelation, metaphysical perspective, and hero are only loosely delimited."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The reading is plausible as interpretation, but recurrence and psychological truth receive no comparative textual or empirical defense."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The interpretation relies on asserted symbolic correspondences without representative recurrence evidence or rival-reading comparison."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It materially supports the central symbolic-truth bridge by illustrating a psychological reading of a biblical narrative."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move principally offers its own symbolic reading and does not substantially portray a competing interpretation."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "It is a relevant nonanswer: it illustrates a valuable reading without contacting the decisive scriptural-liability demand."
+            }
+          },
+          "evidenceBasis": "Peterson reads Revelation as recurring collapse and redemption, linking darkest conditions with the birth of a truthful hero.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-reinterpretation-loses-constraint",
+          "sectionId": "scripture-and-interpretation",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "As theology becomes less literal, it becomes less constrained by scripture and permits modern insights to be projected onto texts whose literal meanings are barbaric or false.",
+          "sourceSpan": {
+            "startEvent": 1202,
+            "endEvent": 1273,
+            "excerpt": "the the sophisticated theology is in in most cases inspired by a more and more modern recognition that well we can't read it literally because it either makes no sense or it makes barbaric sense right so we have to get away from the literal and the more you get away from the literal the more you are unconstrained by the text and you can just broadcast on it anything you want to"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The extended turn advances Harris's recognizable criticism that sophisticated theology retreats from literal meaning and freely imports acceptable modern ideas into ancient texts.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-reinterpretation-dilemma"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-integrated-canonical-development",
+              "pro-revelation-psychological-pattern"
+            ],
+            "components": [
+              {
+                "componentId": "con-reinterpretation-loses-constraint-component-01",
+                "targetMoveId": "pro-integrated-canonical-development",
+                "text": "Whether whole-canon development supplies a constrained method for determining the correct nonliteral interpretation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-reinterpretation-loses-constraint-component-02",
+                "targetMoveId": "pro-revelation-psychological-pattern",
+                "text": "Whether the psychological Revelation reading is constrained by the text rather than projected from modern preferences.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly identifies loss of textual constraint as the defect in both developmental and psychological reinterpretation and states that arbitrary projection follows."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The constraint dilemma is clear, though the assertion that interpreters can project anything is broader than literally necessary."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The retreat-from-literalism mechanism is well identified, but complete unconstrainedness is stronger than the evidence establishes."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Canonical, historical, literary, and pragmatic criteria can constrain sophisticated nonliteral interpretation.",
+            "decisiveQualification": "The preceding account itself concedes that canonical correctness is not self-evident and supplies no operative selection criterion."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central reinterpretation-dilemma bridge and attacks the pro symbolic-truth method."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly targets the decisive inference and gives the defeating consequence that nonliteral retreat permits projection."
+            }
+          },
+          "evidenceBasis": "Harris says barbaric or nonsensical literal meanings motivate retreat, while increasing distance from literal text weakens constraint.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-word-as-antidote-to-dogma",
+          "sectionId": "dogmatism-and-open-inquiry",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Christianity embodies free truthful expression as the redemptive Word, giving personified form to an antidote against denial, dogmatism, and totalitarianism.",
+          "sourceSpan": {
+            "startEvent": 1274,
+            "endEvent": 1318,
+            "excerpt": "Christianity in particular is the notion that the thing that's redeeming is exactly that and it doesn't matter so it's a universal truth now if we both agree on that the idea that the free expression of truthful speech is the antidote let's say both denialism and to totalitarianism then the notion that that might be embodied in something like the word which is truly I think the deepest of Christian"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker builds Peterson's distinctive connection among Christianity, the Word, incarnation, embodied personality, truthful speech, and resistance to totalitarianism.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-dogmatism-distinction"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-religion-valorizes-dogma"
+            ],
+            "components": [
+              {
+                "componentId": "pro-word-as-antidote-to-dogma-component-01",
+                "targetMoveId": "con-religion-valorizes-dogma",
+                "text": "Whether Christianity merely valorizes dogma or also embodies a principle of free truthful correction.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly counters the characterization of religion by identifying Christianity's redemptive Word with truthful expression opposed to denial and totalitarianism."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The Word-to-truthful-speech identification is clear, but its scope across Christianity is only implicitly limited."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The symbolic connection is supported by the stated Christian ideal, but universal antidotal efficacy is underdefended."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religious doctrine can praise truth while still authorizing dogma and unevidenced belief in practice.",
+            "decisiveQualification": "A symbolic ideal is not by itself evidence that the tradition reliably subordinates fixed doctrine to correction."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "Personifying truthful speech as the Word can oppose dogma, but the bridge to Christianity's actual epistemic performance is incomplete."
+            },
+            "evidenceWarrant": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary dogmatism distinction, but does not directly complete the motion-level grounding route."
+            },
+            "representationalCharity": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (78 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts the decisive claim about religious dogmatism, though it does not compare the symbolic ideal with institutional practice."
+            }
+          },
+          "evidenceBasis": "Peterson identifies the Christian Word with embodied free truthful speech and calls it an antidote to denial and totalitarianism.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-interpretive-fact-value-mediation",
+          "sectionId": "moral-grounding",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Facts cannot yield values without an antecedent interpretive framework, and that mediating framework may be understood partly as a personality or story rather than bare propositions.",
+          "sourceSpan": {
+            "startEvent": 1319,
+            "endEvent": 1346,
+            "excerpt": "directly from the fact to the value because there's an interpretive framework that mediates between you and the facts and so first of all I'd like to know if you accept that proposition and then the second question would be if you do accept the proposition then what's your understanding of the nature of the interpretive framework because I think it's best understood at least in part as a personality or as a story"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn explicitly contrasts Peterson's account of interpretive mediation with Harris's effort to ground values objectively in facts and ends by proposing personality or story.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-fact-value-mediation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-moral-realism-discoverable-answers"
+            ],
+            "components": [
+              {
+                "componentId": "pro-interpretive-fact-value-mediation-component-01",
+                "targetMoveId": "con-moral-realism-discoverable-answers",
+                "text": "Whether discoverable moral answers can be obtained from facts without an antecedent value-laden interpretive framework.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly challenges the secular realism inference by demanding the mediating framework between facts and values, then proposes story or personality as part of it."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The mediation thesis is recoverable, with personality or story explicitly offered only as a partial characterization."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Some interpretive mediation is plausible, but necessity and the story-or-personality characterization are not fully established here."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Moral facts may concern conscious experience directly, with basic badness functioning as an axiom rather than a narrative inference.",
+            "decisiveQualification": "Even an axiom requires an account of why conscious-state facts have normative rather than merely descriptive force."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable central bridge explaining antecedent interpretation between facts and moral judgments."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It expressly contacts the decisive fact-to-value bridge, although its positive account of the mediator remains compressed."
+            }
+          },
+          "evidenceBasis": "Peterson explicitly asks what mediates facts and values and proposes that the framework is partly personality or story.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-narrative-moral-limiting-cases",
+          "sectionId": "moral-grounding",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "A moral framework contrasting extreme suffering with flourishing relies on foundational, story-like moral intuitions analogous to the narrative poles of hell and heaven.",
+          "sourceSpan": {
+            "startEvent": 1414,
+            "endEvent": 1480,
+            "excerpt": "moral claim and I think that's where you put your stake in the ground and I would say when I read that I thought well if you take your jungle story which you've extracted from a bunch of Horrors and compiled and you take your positive story which you've extracted from a bunch of horrors or a bunch of quasi utopias let's say and compiled you're two-thirds of the way to a landscape of Hell in heaven"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker explicitly rereads Harris's moral framework through Peterson's thesis that stories or personalities can function as a priori structures of moral intuition.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-wellbeing-ground"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-moral-realism-discoverable-answers"
+            ],
+            "components": [
+              {
+                "componentId": "pro-narrative-moral-limiting-cases-component-01",
+                "targetMoveId": "con-moral-realism-discoverable-answers",
+                "text": "Whether the secular moral landscape rests on prior narrative-like intuitions rather than facts alone.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply applies the mediation objection to Harris's own worst and better cases, arguing that those poles are compiled stories analogous to hell and heaven."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The analogy between limiting cases and story-like intuitions is clear, with the precise force of the analogy left implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The claim is presented as an interpretive analogy, and its modest force fits the support supplied."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Worst misery and flourishing can be conceptual limiting cases without functioning as religious narratives or personalities.",
+            "decisiveQualification": "Their conceptual rather than religious form does not eliminate the need for a prior evaluative intuition connecting experience to value."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 70,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central secular wellbeing ground by questioning the source of its foundational evaluative poles."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It contacts the foundational demand through a concrete analogy, but does not show that narrative form defeats moral realism."
+            }
+          },
+          "evidenceBasis": "Peterson recasts Harris's negative and positive limiting cases as compiled stories approaching the abstractions of hell and heaven.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-universal-misery-ground",
+          "sectionId": "moral-grounding",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "The worst possible misery for every conscious being is intrinsically bad, providing a nonreligious foundation for intelligible judgments about better and worse states.",
+          "sourceSpan": {
+            "startEvent": 1568,
+            "endEvent": 1681,
+            "excerpt": "better and worse or anything any make any value judgement about anything it will implicit in those judgments will be an acknowledgment whether you're going to acknowledge it or not when I put the question to you that the worst possible misery for everyone is bad you can't use the word bad unless you're disagreeing in the least about that okay so it's built into your good and bad in with respect to every"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The extended turn is Harris's explicit formulation and defense of his foundational moral axiom, including its application to every possible conscious sufferer.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-wellbeing-ground"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-interpretive-fact-value-mediation",
+              "pro-narrative-moral-limiting-cases"
+            ],
+            "components": [
+              {
+                "componentId": "con-universal-misery-ground-component-01",
+                "targetMoveId": "pro-interpretive-fact-value-mediation",
+                "text": "Whether an additional narrative framework is needed before universal misery can intelligibly count as bad.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-universal-misery-ground-component-02",
+                "targetMoveId": "pro-narrative-moral-limiting-cases",
+                "text": "Whether the worst-state example depends on a religious story rather than the ordinary meaning of bad.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply argues that denying the badness of universal misery makes evaluative language unusable, thereby locating a proposed stopping point before further narrative mediation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "The universal-misery limiting case and its claimed intrinsic badness are precise and consistently scoped to conscious beings."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The limiting case strongly supports a minimal axiom, but the claim that all value judgments implicitly acknowledge it is broader."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Calling misery bad may reveal a basic moral intuition but still not derive value from descriptive facts alone.",
+            "decisiveQualification": "The argument can establish a shared evaluative axiom without independently proving that every normative conclusion is factual."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 84,
+              "rationale": "The stipulated case strongly supports a foundational distinction, with the broader sufficiency of wellbeing left underdeveloped."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It nearly maximizes central-tier relevance by directly grounding objective better and worse states in conscious experience."
+            },
+            "representationalCharity": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly targets the demand for further mediation and states the defeating consequence for any use of better and worse."
+            }
+          },
+          "evidenceBasis": "Harris argues that every intelligible use of good and bad already recognizes universal worst-possible misery as bad.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-truthful-updating-over-dogma",
+          "sectionId": "dogmatism-and-open-inquiry",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Religious tradition can rank truthful knowledge-updating above reliance on inherited dogma, permitting revision rather than requiring beliefs to remain frozen in the past.",
+          "sourceSpan": {
+            "startEvent": 2018,
+            "endEvent": 2034,
+            "excerpt": "of such texts is the idea that the process by which your knowledge is updated has to occupy a position in the hierarchy of values that supersedes your reliance or Dogma is the fundamental claim that's why for example in Christianity the notion is is that the word is the highest of values and that's the embodied word and that's the thing that mediates between order and chaos and"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The response invokes Peterson's recurring interpretation of the Christian Word as the principle mediating order, chaos, and truthful revision.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-dogmatism-distinction"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-religion-valorizes-dogma"
+            ],
+            "components": [
+              {
+                "componentId": "pro-truthful-updating-over-dogma-component-01",
+                "targetMoveId": "con-religion-valorizes-dogma",
+                "text": "Whether religious tradition necessarily ranks inherited dogma above truthful evidence-sensitive updating.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly contests the claimed valorization of dogma by interpreting the Christian Word as a higher-order process of truthful knowledge revision."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The updating-over-dogma thesis is clear and limited to the most profound texts, though that class is undefined."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The textual ideal is intelligible, but calling it Christianity's fundamental claim outruns the support displayed."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Christian institutions can celebrate the Word while treating inherited revelation as exempt from ordinary revision.",
+            "decisiveQualification": "The symbolic ranking of updating must be distinguished from whether concrete doctrines are actually corrigible."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "Ranking updating above dogma is coherent, while the inference that Christianity fundamentally does so remains interpretively compressed."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary dogmatism distinction by positing an internal principle of revision."
+            },
+            "representationalCharity": {
+              "value": 80,
+              "rationale": "The move addresses the strongest epistemic criticism internally but omits the practical and institutional qualification."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts the decisive epistemic issue but offers an internal interpretation rather than evidence of reliable implementation."
+            }
+          },
+          "evidenceBasis": "Peterson says the knowledge-updating process must supersede reliance on dogma and identifies it with Christianity's embodied Word.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-transpersonal-god-language",
+          "sectionId": "god-language-and-spiritual-experience",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "God can be understood as a transpersonal reality expressed through truthful speech, conscience, sacrifice, evolved valuation, judgment, and selection across long timeframes.",
+          "sourceSpan": {
+            "startEvent": 2095,
+            "endEvent": 2196,
+            "excerpt": "expressed in truth the truthful speech that rectifies pathological hierarchies and that isn't all it does it also confronts the chaos of being itself and generates habitable order that's a that's the metaphysical proposition and that that's best conceptualized as at least one element of God and so I would think about it as a transcendent reality that's only observable across the longest of timeframes"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Peterson announces that he will state what he means by God and develops a continuous list grounded in his established conceptual vocabulary.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-symbolic-truth"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-reinterpretation-loses-constraint",
+              "con-moral-realism-discoverable-answers"
+            ],
+            "components": [
+              {
+                "componentId": "pro-transpersonal-god-language-component-01",
+                "targetMoveId": "con-reinterpretation-loses-constraint",
+                "text": "What constrains the proposed nonliteral God-concept to traditional scriptural meaning rather than modern projection.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-transpersonal-god-language-component-02",
+                "targetMoveId": "con-moral-realism-discoverable-answers",
+                "text": "Whether transpersonal truth, conscience, sacrifice, and selection supply an alternative moral interpretive framework.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move develops an alternative transpersonal account of God and moral order, but it does not answer the decisive interpretive-constraint objection or establish why the religious noun is textually controlled."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "partial",
+            "termStability": "materially-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "A family of processes is identifiable, but God shifts among speech, conscience, selection, valuation, and transcendent reality."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The phrase at least one element appropriately limits the claim, but unifying the listed processes remains weakly warranted."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 58,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (59 and 57); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It directly supports the central symbolic-truth bridge by offering a naturalized, psychologically extended account of God-language."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move primarily defines its own usage of God and does not substantially assess a developed opposing interpretation."
+            },
+            "responsiveness": {
+              "value": 70,
+              "rationale": "It offers substantial issue-bearing material on moral interpretation while leaving the primary constraint demand uncontacted."
+            }
+          },
+          "evidenceBasis": "Peterson describes God through truthful speech, corrective hierarchy, conscience, sacrifice, valuation, judgment, and long-term selection.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-god-redefinition-omits-agent",
+          "sectionId": "god-language-and-spiritual-experience",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "An abstract definition of God omits the personal supernatural agent ordinarily meant by believers and changes the traditional noun rather than defending it.",
+          "sourceSpan": {
+            "startEvent": 2201,
+            "endEvent": 2265,
+            "excerpt": "I see you do I mean maybe you have more to say on the topic of God but this is what I hear you doing with God you have defined the God that most people believe in and we know this is the God that most people I was asked what God I believed in yes no I'm asking you what percentage yes but you you by shifting the the definition you have robbed the the noun the traditional noun of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker directly contrasts Peterson's preceding list with personal divine concern, answered prayer, ordinary believers, and conventional supernatural meanings.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-language-and-pluralism"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-transpersonal-god-language"
+            ],
+            "components": [
+              {
+                "componentId": "con-god-redefinition-omits-agent-component-01",
+                "targetMoveId": "pro-transpersonal-god-language",
+                "text": "Whether the transpersonal definition preserves the personal supernatural agency ordinarily carried by the word God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-god-redefinition-omits-agent-component-02",
+                "targetMoveId": "pro-transpersonal-god-language",
+                "text": "Whether using the traditional noun misleadingly validates ordinary believers' substantially different conception.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response directly identifies the omitted agency and the semantic consequence: shifting the definition changes what the traditional noun ordinarily communicates rather than defending that belief."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The redefinition objection is clear and is scoped to what most ordinary believers mean, though most is not quantified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The ordinary-meaning objection is strong, but what most believers mean is asserted without evidence in this span."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "God may legitimately denote a transpersonal process rather than a discrete supernatural person.",
+            "decisiveQualification": "That revision can be coherent while still failing to defend the agent ordinarily affirmed by traditional believers."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The preceding definition supports the omission claim, while the empirical assertion about most believers is undocumented."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary language-and-pluralism bridge by testing whether unconventional God-language misleads."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It explicitly contacts the decisive definitional issue and states the consequence for ordinary religious understanding."
+            }
+          },
+          "evidenceBasis": "Harris contrasts the abstract definition with personal concern, answered prayer, and the creator believed in by ordinary adherents.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-penitent-prayer-as-correction",
+          "sectionId": "god-language-and-spiritual-experience",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "constructive",
+          "proposition": "Penitent self-examination can function as answered prayer by eliciting an unwelcome corrective insight into one's wrongdoing and a possible means of restitution.",
+          "sourceSpan": {
+            "startEvent": 2305,
+            "endEvent": 2343,
+            "excerpt": "you so now you're penitent and you're confessing let's say and you're confessing to yourself as much as to anyone and you say I really want to know what I did wrong and I really want to know what I could do to put it right and I'm willing to accept any answer that will manifest itself to me you try that see what happens well that's a prayer that will be answered and it won't be"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Peterson constructs a first-person practical exercise involving confession, penitence, openness to an answer, and the resulting corrective response.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-practical-embodiment"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive illustration introduces a practical account of prayer and does not purport to answer an earlier opposing locked move."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The self-examination mechanism is clear, but the assertion that such prayer will be answered is insufficiently scoped."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Self-examination plausibly elicits insight, but the categorical promise that the prayer will be answered lacks a failure condition."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It materially supports the central practical-embodiment bridge through a concrete conscience and restitution practice."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move presents an introspective exercise rather than a characterization of an opposing explanatory account."
+            },
+            "responsiveness": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Peterson describes confession, willingness to accept unwelcome insight, recognition of wrongdoing, and a possible means of restitution.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-prayer-naturalized-psychology",
+          "sectionId": "god-language-and-spiritual-experience",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "The experience described as answered prayer is familiar human psychology and requires neither supernatural causation nor divine authorship of scripture.",
+          "sourceSpan": {
+            "startEvent": 2344,
+            "endEvent": 2352,
+            "excerpt": "but that what are you communicating with are you communicating with will you know that that is something that that is a process that I'm familiar with it doesn't require any supernatural explanation and it certainly it certainly doesn't require that many imagine that any of our books were dictated by the creator of the universe"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The immediate response accepts familiarity with the process while explicitly denying the need for supernatural explanation or divinely dictated books.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-naturalized-spirituality"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-penitent-prayer-as-correction"
+            ],
+            "components": [
+              {
+                "componentId": "con-prayer-naturalized-psychology-component-01",
+                "targetMoveId": "pro-penitent-prayer-as-correction",
+                "text": "Whether corrective insight during penitent self-examination requires supernatural communication or divine authorship.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply accepts the described experience but expressly denies that it entails supernatural causation or divinely dictated scripture, defeating that stronger implication."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "The naturalized explanation and the limited negative conclusion are stated clearly and consistently."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "not-needed",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The claim is only that the phenomenon does not require supernatural explanation, which the familiar process supports."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Penitent prayer may name a real corrective process without asserting miraculous intervention in each instance.",
+            "decisiveQualification": "That pragmatic naming does not establish supernatural causation or divine dictation of religious texts."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary naturalized-spirituality bridge by explaining prayer-like correction without supernatural causation."
+            },
+            "representationalCharity": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It precisely separates the conceded psychological phenomenon from the unsupported supernatural explanatory consequence."
+            }
+          },
+          "evidenceBasis": "Harris calls the process familiar while denying that it requires supernatural explanation or creator-dictated books.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-conflicting-traditions-deeper-reality",
+          "sectionId": "universality-and-pluralism",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Incompatible religious traditions assign conflicting meanings to good and evil, so their usefulness points toward a deeper common reality rather than the truth of any one tradition.",
+          "sourceSpan": {
+            "startEvent": 2382,
+            "endEvent": 2432,
+            "excerpt": "good and evil is is irreconcilable with what you get christiana look but it doesn't it doesn't have to be interoperable right well but but in a reality presumably Hinduism is also useful as a set of heuristic as to be for Hindus and if Hinduism as a matter of doctrine and as a matter of the interpretations of the heuristics by the devout in both systems if Hinduism and Christianity are irreconcilable right then there must be a deeper"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker contrasts Christianity with Hinduism and Buddhism and develops the pluralism objection using Harris's secular comparative perspective.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-language-and-pluralism"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-transpersonal-god-language"
+            ],
+            "components": [
+              {
+                "componentId": "con-conflicting-traditions-deeper-reality-component-01",
+                "targetMoveId": "pro-transpersonal-god-language",
+                "text": "Whether one religious vocabulary uniquely captures the deeper reality when incompatible traditions are also useful.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly challenges distinctive religious authority by arguing that useful yet doctrinally irreconcilable traditions point beyond any single tradition to a deeper common reality."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The incompatibility argument is clear, but 'deeper reality' is left broad and only inferentially characterized."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The conditional language appropriately presents deeper common reality as an inference from simultaneous usefulness and doctrinal conflict."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Different religious traditions may encode complementary aspects of one reality despite doctrinal incompatibility.",
+            "decisiveQualification": "Usefulness alone cannot decide which conflicting doctrinal claims are true or which vocabulary has distinctive authority."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It maximally engages the subsidiary pluralism bridge by testing religious authority against conflicting useful traditions."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts the pluralism implication clearly, though the existence and nature of the deeper reality remain underdeveloped."
+            }
+          },
+          "evidenceBasis": "Harris contrasts Christianity, Hinduism, and Buddhism, arguing that incompatible useful systems imply a deeper common reality.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-cross-domain-recurrent-patterns",
+          "sectionId": "universality-and-pluralism",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Religious pluralism need not end in nihilism if inquiry identifies recurrent patterns across religion, biology, philosophy, neuroscience, emotion, and play that constrain interpretation.",
+          "sourceSpan": {
+            "startEvent": 2433,
+            "endEvent": 2508,
+            "excerpt": "before he wrote his book I tried to use a conciliatory assistance I looked at Christianity I looked at Neri biology I looked at philosophy I looked at neuroscience and I looked at the literature on emotion and motivation and and in the literature on play that was very nicely delineated by Piaget and I tried to see where there was a pattern that repeated across all dimensions of"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Peterson accepts the pluralism problem, invokes Nietzsche and postmodern nihilism, and describes his own cross-disciplinary consilience method.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-universal-patterns"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-conflicting-traditions-deeper-reality"
+            ],
+            "components": [
+              {
+                "componentId": "pro-cross-domain-recurrent-patterns-component-01",
+                "targetMoveId": "con-conflicting-traditions-deeper-reality",
+                "text": "Whether a deeper common reality can be investigated through patterns recurring across traditions and independent domains.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-cross-domain-recurrent-patterns-component-02",
+                "targetMoveId": "con-conflicting-traditions-deeper-reality",
+                "text": "Whether recurrence supplies constraints strong enough to adjudicate incompatible religious doctrines.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move contacts the deeper-reality demand by proposing cross-domain recurrence as an investigative method, but it does not show that the method selects among incompatible doctrines."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The consilience proposal is recoverable, though pattern and recurrence lack a specified threshold or test."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The span describes an exploratory comparative method and does not claim that its result is already proven."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Cross-domain similarities may reflect selective analogy rather than an independently recurring universal structure.",
+            "decisiveQualification": "A valid consilience method must establish domain independence and criteria that could disconfirm the proposed pattern."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central universal-patterns bridge by proposing consilience as the answer to pluralism."
+            },
+            "representationalCharity": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It partially answers the search-for-commonality issue while leaving the decisive adjudication and constraint component unresolved."
+            }
+          },
+          "evidenceBasis": "Peterson invokes religion, biology, philosophy, neuroscience, emotion, motivation, and play as domains searched for recurrence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-variation-challenges-recurring-patterns",
+          "sectionId": "universality-and-pluralism",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Religious and cultural variation undermines the claim that supposedly universal moral patterns recur consistently across traditions.",
+          "sourceSpan": {
+            "startEvent": 2509,
+            "endEvent": 2544,
+            "excerpt": "all these cultures and all these religious traditions then how can you make the claim that everyone would agree with your description of what constitutes bad beginning in the landscape it would be it's just it's just not it's not evil in the sense that that it's there's better and worse there's better can we do we have there's either universal moral intuitions or they're honest"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn directly challenges Peterson's preceding cross-domain convergence argument and is followed by Peterson's answer.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-universal-patterns"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-cross-domain-recurrent-patterns"
+            ],
+            "components": [
+              {
+                "componentId": "con-variation-challenges-recurring-patterns-component-01",
+                "targetMoveId": "pro-cross-domain-recurrent-patterns",
+                "text": "Whether claimed recurrent patterns survive extensive cultural and religious disagreement about good, evil, and bad lives.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly challenges recurrence by asking how universal agreement can be claimed amid acknowledged variation across cultures and traditions."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The variation objection is clear, but agreement, intuition, and recurrence are not perfectly equivalent standards."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The challenge is framed interrogatively and conditionally, fitting the limited evidence available in the exchange."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A pattern can be universal at a deeper level despite disagreement over local expression and application.",
+            "decisiveQualification": "The pro account must specify that deeper level and show recurrence rather than infer it from selected analogies."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central universal-patterns bridge at its indispensable cross-context recurrence requirement."
+            },
+            "representationalCharity": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It explicitly contacts the universality inference, though the wording moves between universal agreement and universal moral intuitions."
+            }
+          },
+          "evidenceBasis": "Harris invokes wide cultural and religious differences and asks how universal moral intuitions or shared badness can be claimed.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-hierarchy-of-moral-universals",
+          "sectionId": "universality-and-pluralism",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Moral intuitions form a hierarchy in which deeper principles remain valid across more contexts and can orient judgments of better and worse lives despite local variation.",
+          "sourceSpan": {
+            "startEvent": 2620,
+            "endEvent": 2657,
+            "excerpt": "could say a Brits point is that like moral intuitions of the sort that you're describing have different zones of relevance so there's some things that would only work as an intuition in very delimited areas of time and space let's say there's a hierarchy of moral intuitions and the more profound the intuition the more it works as a universal truth across contexts just like in a"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The extended turn develops Peterson's hierarchy-of-intuitions framework before Harris begins a distinct objection about God-language.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-universal-patterns"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-variation-challenges-recurring-patterns"
+            ],
+            "components": [
+              {
+                "componentId": "pro-hierarchy-of-moral-universals-component-01",
+                "targetMoveId": "con-variation-challenges-recurring-patterns",
+                "text": "Whether local cultural variation defeats the existence of deeper moral principles valid across broader contexts.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply directly distinguishes shallow context-bound intuitions from deeper principles whose validity expands across contexts, answering disagreement hierarchically."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The hierarchy is clearly described in terms of breadth across contexts, with local and deeper intuitions expressly distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The hierarchy is plausible, but the scientific-truth analogy does not itself establish cross-cultural moral universals."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Cultural variation may extend even to purportedly deep principles, leaving no demonstrated universal hierarchy.",
+            "decisiveQualification": "The proposed hierarchy needs evidence that breadth across contexts reflects truth rather than abstraction or vagueness."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "Cross-context robustness is a coherent universality criterion, but identifying profundity independently remains a material bridge."
+            },
+            "evidenceWarrant": {
+              "value": 66,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central universal-patterns bridge by explaining how universality can coexist with local variation."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts the decisive variation inference and provides a clear conceptual answer, though empirical universality remains unshown."
+            }
+          },
+          "evidenceBasis": "Peterson distinguishes locally useful intuitions from deeper principles that remain true across increasingly broad contexts.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-heuristics-fail-under-change",
+          "sectionId": "practical-guidance",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Religious heuristics are unreliable because they can produce adaptive behavior for mistaken reasons and cannot adjust reliably when circumstances change.",
+          "sourceSpan": {
+            "startEvent": 2910,
+            "endEvent": 2947,
+            "excerpt": "heuristics in general it doesn't make sense for the right reason and that's why it's not a reliable guide given other changes in the world but with everything changing you want to be making sense for the right reason you don't want it like it's a useful fictions have to be retired at a certain point useful truths stay true I mean if you because they're based on your engagement with reality"
+          },
+          "attributionConfidence": "medium",
+          "attributionBasis": "The turn follows the moderator's synthesis and advances Harris's recurring distinction between reality-tracking reasons and mythological justification.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-practical-embodiment"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-hierarchy-of-moral-universals"
+            ],
+            "components": [
+              {
+                "componentId": "con-heuristics-fail-under-change-component-01",
+                "targetMoveId": "pro-hierarchy-of-moral-universals",
+                "text": "Whether inherited religious guidance remains reliable when changing circumstances expose mistaken underlying reasons.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move applies a reality-tracking criterion to inherited heuristics and directly argues that useful fictions can fail under change because their apparent guidance does not track the correct causes."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The right-reason and change-sensitivity test is clear, but the generalization across religious heuristics is broad."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Changed conditions plausibly expose blind heuristics, but the universal contrast between useful fictions and truths is too sharp."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Inherited heuristics can embody genuine causal regularities before users can articulate the underlying reasons.",
+            "decisiveQualification": "Their historical adaptiveness does not ensure reliable transfer when causal conditions or relevant variables change."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central practical-embodiment bridge by challenging reliability when circumstances change."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It contacts the practical reliability implication of inherited universals, though not the abstract hierarchy claim in full."
+            }
+          },
+          "evidenceBasis": "Harris argues that heuristics can work for mistaken reasons, fail after environmental change, and lack reality-tracking reliability.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-rational-instruction-behavioral-limit",
+          "sectionId": "practical-guidance",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Rational educational interventions often exert little influence on fundamental behavior, so explicit reasoned explanation alone may be behaviorally insufficient as practical moral guidance.",
+          "sourceSpan": {
+            "startEvent": 2949,
+            "endEvent": 2965,
+            "excerpt": "about the effects on human relationships and your own mind and your own intention and the way you view other pieces have now barely works for sex ed it barely works for condom education well what was already works like those sorts of educational interventions to stop that kind of fundamental behavior have very little effect well people aren't nearly as amenable to behavioral changes as a consequence of rational"
+          },
+          "attributionConfidence": "medium",
+          "attributionBasis": "The turn counters Harris's proposed rational discussion by invoking clinical findings about limited behavioral responsiveness to education.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-practical-embodiment"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-heuristics-fail-under-change"
+            ],
+            "components": [
+              {
+                "componentId": "pro-rational-instruction-behavioral-limit-component-01",
+                "targetMoveId": "con-heuristics-fail-under-change",
+                "text": "Whether inherited heuristics remain reliable when they track outcomes for mistaken reasons and circumstances change.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Limited educational efficacy is relevant to practical guidance but does not answer the decisive objection about false causal models and changed circumstances."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The limited behavioral-efficacy claim is clear and framed as 'often' and 'may,' though examples are narrow."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Behavioral resistance is plausible, but broad insufficiency is inferred from compressed sex-education examples."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Rational causal guidance can be correct and revisable even when information alone does not immediately change behavior.",
+            "decisiveQualification": "Behavioral efficacy and epistemic reliability are distinct, so weak uptake does not rehabilitate mistaken inherited reasons."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "Weak behavioral uptake coherently limits instruction's sufficiency, though it does not vindicate any alternative guidance."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The reply materially shifts from reliability to efficacy and omits the strongest distinction in the opposing argument."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "It is a relevant nonanswer because it changes the issue from reliability to immediate behavioral effectiveness."
+            }
+          },
+          "evidenceBasis": "Peterson cites sex and condom education as interventions with little effect on fundamental behavior and rationally induced change.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-causal-knowledge-improves-guidance",
+          "sectionId": "practical-guidance",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "Causal understanding improves practical guidance by identifying the variables that matter and replacing inherited taboos that track outcomes blindly.",
+          "sourceSpan": {
+            "startEvent": 2966,
+            "endEvent": 2998,
+            "excerpt": "taboos and and taboos around you know hand-washing and foot washing it's actually very wise the wisdom of the germ theory of disease was sort of built into our Scripture and people were surviving there was a kind of differential level of survival based on those who really adhere to these these practices and those who didn't okay but it one it's blind to the actual variables like"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Harris rejects the preceding efficacy defense and develops the germ-theory example before Peterson begins a separate response.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-reality-and-revision"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-rational-instruction-behavioral-limit"
+            ],
+            "components": [
+              {
+                "componentId": "con-causal-knowledge-improves-guidance-component-01",
+                "targetMoveId": "pro-rational-instruction-behavioral-limit",
+                "text": "Whether limited immediate educational efficacy defeats the practical superiority of accurate causal understanding.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply answers the efficacy defense by distinguishing inherited outcome-tracking from knowledge of variables, using germ theory to show why causal understanding improves guidance."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The variable-identification claim is clear, with replacement of inherited taboos stated at an appropriate general level."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The modest claim that causal understanding improves revision and targeting fits the example supplied."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Inherited washing taboos can preserve beneficial conduct before germ theory is available or widely teachable.",
+            "decisiveQualification": "Blind rules cannot distinguish the causally relevant variables and therefore generalize or revise less reliably."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The germ-theory example is specific and representative of the mechanism, though broader moral generalization remains compressed."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central reality-and-revision bridge through an example of causal knowledge correcting blind rules."
+            },
+            "representationalCharity": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (93 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It contacts the practical comparison and provides a concrete mechanism, though it does not fully answer behavioral uptake."
+            }
+          },
+          "evidenceBasis": "Harris grants survival value to washing taboos but argues that germ theory identifies the actual variables those rules track blindly.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-revisable-reality-directed-worldview",
+          "sectionId": "dogmatism-and-open-inquiry",
+          "side": "con",
+          "speaker": "Sam Harris",
+          "moveKind": "reply",
+          "proposition": "A worldview continuously corrected through honest engagement with reality is preferable to one anchored in unchanging ideas formed without modern investigative tools.",
+          "sourceSpan": {
+            "startEvent": 3033,
+            "endEvent": 3041,
+            "excerpt": "we should be able to agree that having a worldview guided by a continuous honest engagement with reality and so far as we can apprehend it is better than having a worldview solidified or anchored to unchanging ideas that were born of people who had none of our present tools none of our present insights into anything Paul it depends on it depends"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The statement summarizes Harris's epistemic position after Peterson discusses the developmental history and incomplete reach of Enlightenment thought.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-reality-and-revision"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-truthful-updating-over-dogma",
+              "pro-rational-instruction-behavioral-limit"
+            ],
+            "components": [
+              {
+                "componentId": "con-revisable-reality-directed-worldview-component-01",
+                "targetMoveId": "pro-truthful-updating-over-dogma",
+                "text": "Whether symbolic religious updating is as reliable as a worldview continuously corrected by engagement with reality.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-revisable-reality-directed-worldview-component-02",
+                "targetMoveId": "pro-rational-instruction-behavioral-limit",
+                "text": "Whether limited behavioral responsiveness supplies a reason to retain worldviews anchored in unchanging inherited ideas.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly advances reality-directed revision as the relevant standard against inherited fixation, but it does not answer the separate behavioral-efficacy concern."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The comparison is clear and expressly limited by the phrase insofar as reality can be apprehended."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Preference for revisable reality engagement over unchanging uninformed ideas matches the stated qualifications and warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Religious traditions may encode higher-order principles of truthful updating rather than merely fixed ancient propositions.",
+            "decisiveQualification": "Such traditions still need a reliable practice for allowing reality to correct inherited claims rather than insulating them symbolically."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It nearly maximizes central-tier support for reality-sensitive inquiry as the basis of moral and epistemic correction."
+            },
+            "representationalCharity": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It is a partial answer: the decisive epistemic component is contacted while the practical uptake component remains unanswered."
+            }
+          },
+          "evidenceBasis": "Harris contrasts continuous honest engagement with apprehensible reality against ideas fixed before modern investigative tools existed.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-evolved-implicit-guidance",
+          "sectionId": "practical-guidance",
+          "side": "pro",
+          "speaker": "Jordan Peterson",
+          "moveKind": "reply",
+          "proposition": "Evolution has produced implicit interpretive structures that mediate access to facts and ground moral intuition, yet cannot be derived solely from the presently available facts.",
+          "sourceSpan": {
+            "startEvent": 3041,
+            "endEvent": 3093,
+            "excerpt": "interpretive structures that guide our interaction with the facts and those a priori implicit structures that have emerged out of this evolutionary course have a structure that mediates between us and the facts that cannot be derived from the facts at hand and so so then the question is what is that structure and and it's in both of our interests to get that right yeah because you use that as the source of moral intuition"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Peterson takes the final substantive turn, distinguishes higher-order principles from local rules, and explicitly contrasts his account with Harris's extraction of value from facts.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-fact-value-mediation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-revisable-reality-directed-worldview",
+              "con-causal-knowledge-improves-guidance"
+            ],
+            "components": [
+              {
+                "componentId": "pro-evolved-implicit-guidance-component-01",
+                "targetMoveId": "con-revisable-reality-directed-worldview",
+                "text": "Whether present reality-directed inquiry can operate without evolved implicit structures mediating access to facts and values.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-evolved-implicit-guidance-component-02",
+                "targetMoveId": "con-causal-knowledge-improves-guidance",
+                "text": "Whether explicit causal knowledge exhausts the structures needed to form and apply moral intuitions.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply accepts the interest in getting reality right but argues that evolved prior structures condition both factual access and moral intuition beyond present facts."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The mediation thesis is clear, though implicit interpretive structures are not specified beyond their evolutionary origin and function."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Mediation is plausible, but the claim that structures cannot be derived from facts at hand needs a sharper derivational argument."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Reality-directed inquiry can acknowledge evolved priors while testing, revising, and sometimes replacing them through causal evidence.",
+            "decisiveQualification": "Acknowledging priors does not establish their reliability, religious character, or immunity from evidence-sensitive revision."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "Evolved priors plausibly mediate perception and valuation, but their normative authority and religious embodiment do not follow."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central fact-value-mediation bridge by identifying evolved antecedent interpretive structures."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The move accurately challenges naive fact access but leaves the strongest revisability qualification largely intact."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly contacts the sufficiency of present fact-directed inquiry, though it does not show religious stories uniquely capture the structures."
+            }
+          },
+          "evidenceBasis": "Peterson argues that evolved implicit structures mediate facts and ground moral intuition but are not derivable from present facts alone.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct residual consequence remains outside the move ratings, response links, relevance judgments, and importance assessments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured bridge-completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence survives the strict exclusion rule.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance",
+              "importance values"
+            ],
+            "counterfactual": "Removing the proposed residual would not change any burden-completion judgment."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct residual consequence remains outside the move ratings, response links, relevance judgments, and importance assessments.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured bridge-completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct debate-wide consequence survives the strict exclusion rule.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "burden relevance",
+              "importance values"
+            ],
+            "counterfactual": "Removing the proposed residual would not change any burden-completion judgment."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "moral-grounding",
+          "title": "Moral Facts, Well-Being, and the Fact–Value Bridge",
+          "weightPercent": 24,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-interpretive-fact-value-mediation",
+                  "importance": 3,
+                  "score": 84
+                },
+                {
+                  "moveId": "pro-narrative-moral-limiting-cases",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            },
+            "con": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "con-moral-realism-discoverable-answers",
+                  "importance": 3,
+                  "score": 83
+                },
+                {
+                  "moveId": "con-universal-misery-ground",
+                  "importance": 3,
+                  "score": 89
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "scripture-and-interpretation",
+          "title": "Scriptural Authority and Interpretive Constraint",
+          "weightPercent": 20,
+          "sides": {
+            "pro": {
+              "score": 75,
+              "moves": [
+                {
+                  "moveId": "pro-integrated-canonical-development",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "pro-revelation-psychological-pattern",
+                  "importance": 2,
+                  "score": 71
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-explicit-immoral-scriptural-commands",
+                  "importance": 3,
+                  "score": 82
+                },
+                {
+                  "moveId": "con-reinterpretation-loses-constraint",
+                  "importance": 3,
+                  "score": 86
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "god-language-and-spiritual-experience",
+          "title": "God-Language, Prayer, and Naturalized Spirituality",
+          "weightPercent": 15,
+          "sides": {
+            "pro": {
+              "score": 72,
+              "moves": [
+                {
+                  "moveId": "pro-transpersonal-god-language",
+                  "importance": 3,
+                  "score": 69
+                },
+                {
+                  "moveId": "pro-penitent-prayer-as-correction",
+                  "importance": 2,
+                  "score": 76
+                }
+              ]
+            },
+            "con": {
+              "score": 85,
+              "moves": [
+                {
+                  "moveId": "con-god-redefinition-omits-agent",
+                  "importance": 3,
+                  "score": 83
+                },
+                {
+                  "moveId": "con-prayer-naturalized-psychology",
+                  "importance": 2,
+                  "score": 89
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "universality-and-pluralism",
+          "title": "Moral Universals, Cultural Variation, and Religious Pluralism",
+          "weightPercent": 15,
+          "sides": {
+            "pro": {
+              "score": 80,
+              "moves": [
+                {
+                  "moveId": "pro-cross-domain-recurrent-patterns",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "pro-hierarchy-of-moral-universals",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            },
+            "con": {
+              "score": 83,
+              "moves": [
+                {
+                  "moveId": "con-conflicting-traditions-deeper-reality",
+                  "importance": 3,
+                  "score": 82
+                },
+                {
+                  "moveId": "con-variation-challenges-recurring-patterns",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "dogmatism-and-open-inquiry",
+          "title": "Dogmatism, Truthful Speech, and Revisable Inquiry",
+          "weightPercent": 16,
+          "sides": {
+            "pro": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "pro-word-as-antidote-to-dogma",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-truthful-updating-over-dogma",
+                  "importance": 3,
+                  "score": 79
+                }
+              ]
+            },
+            "con": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "con-religion-valorizes-dogma",
+                  "importance": 2,
+                  "score": 77
+                },
+                {
+                  "moveId": "con-revisable-reality-directed-worldview",
+                  "importance": 3,
+                  "score": 85
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "practical-guidance",
+          "title": "Inherited Heuristics and Practical Moral Guidance",
+          "weightPercent": 10,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-rational-instruction-behavioral-limit",
+                  "importance": 2,
+                  "score": 73
+                },
+                {
+                  "moveId": "pro-evolved-implicit-guidance",
+                  "importance": 3,
+                  "score": 82
+                }
+              ]
+            },
+            "con": {
+              "score": 87,
+              "moves": [
+                {
+                  "moveId": "con-heuristics-fail-under-change",
+                  "importance": 3,
+                  "score": 85
+                },
+                {
+                  "moveId": "con-causal-knowledge-improves-guidance",
+                  "importance": 3,
+                  "score": 89
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 78.4,
+          "burdenCompletionAdjustment": 0,
+          "score": 78
+        },
+        "con": {
+          "weightedSectionMean": 84.46,
+          "burdenCompletionAdjustment": 0,
+          "score": 84
+        }
+      },
+      "winner": "con",
+      "winningMargin": 6
+    },
+    "audit": {
+      "sections": 6,
+      "moves": 24,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 136206,
+  "proposedAdapterSha256": "b42063a802f4d32615f503b771f058eb9eca93ac056d571eddc385df0301a550",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "124",
+    "sections": 6,
+    "moves": 24,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-03-single-deterministic-score-pass",
+    "adapterSha256": "b42063a802f4d32615f503b771f058eb9eca93ac056d571eddc385df0301a550",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
