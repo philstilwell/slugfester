@@ -1,0 +1,553 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-157-publication-repair-resumption-1-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-2-debate-157-repair-resumption-1",
+  "status": "batch-03-debate-157-seven-context-publication-repair-resumption-passed",
+  "gateStartedAt": "2026-08-21T02:49:35.029Z",
+  "gateCompletedAt": "2026-08-21T02:53:52.640Z",
+  "contextsPlanned": 7,
+  "contextsAttempted": 7,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 7,
+  "invalidContexts": 0,
+  "attempts": 7,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 257611,
+  "aggregateModelElapsedMs": 439794,
+  "rampPhases": [
+    {
+      "phase": "resumption-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "resumption-ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "resumption-steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "validContextIndexes": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "originalContextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T02:49:35.030Z",
+      "completedAt": "2026-08-21T02:50:28.143Z",
+      "elapsedMs": 53113,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "correction2OutputAvailableToModel": false,
+      "failedPacket0OutputAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-hiddenness-disagreement.critique",
+        "moveProse.con-generic-ground-specificity-gap.critique"
+      ],
+      "copiedInputBytes": 31791,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "9e30ffec481d6876aed4210d5c93d6ceea3c704b35f7643b855307909d3a77fa",
+      "stderrSha256": "3b54c7380c318436be5f5262321d1a7060dd58500d02eb7b5907136b4389eced",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "5336b631cfe958febddbf856b440ed2a8850c2e4fc13c6beba4c6e0fac395d18",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "157",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-hiddenness-disagreement.critique",
+            "words": 113,
+            "characters": 951,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-generic-ground-specificity-gap.critique",
+            "words": 118,
+            "characters": 958,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "originalContextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T02:50:28.152Z",
+      "completedAt": "2026-08-21T02:51:23.780Z",
+      "elapsedMs": 55628,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "correction2OutputAvailableToModel": false,
+      "failedPacket0OutputAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-objective-logic-logos.critique",
+        "moveProse.con-logic-trinity-mapping-gap.critique"
+      ],
+      "copiedInputBytes": 31835,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "5b2293cccce17fc0639cf4f8d2796ea3536de00b942c5b17514ae9939cd5010f",
+      "stderrSha256": "40fa0a58b1633749b3bdf0c98ce19d99754aaa0a39fb72ddc0627beba4afa7ff",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "e34d63155a5f2070f9e159ec6d66f9b48d31e4eb9902362bbe79dd642f76b089",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "157",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-objective-logic-logos.critique",
+            "words": 117,
+            "characters": 1014,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-logic-trinity-mapping-gap.critique",
+            "words": 117,
+            "characters": 967,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "originalContextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T02:50:28.152Z",
+      "completedAt": "2026-08-21T02:51:14.262Z",
+      "elapsedMs": 46110,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "correction2OutputAvailableToModel": false,
+      "failedPacket0OutputAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-necessary-mind-to-catholic-trinity-gap.critique",
+        "moveProse.pro-trinity-natural-reason.critique"
+      ],
+      "copiedInputBytes": 32349,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "fc972a526e7353e9f1c258cae483545806e01f3c3866ab920b0fd4929002c045",
+      "stderrSha256": "10c0a50b0a6ea77870976369d90b86d70b9a04da0c4762a998690af1db586e4c",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "d501f9fe41bf9e0df1fd205dc014fa046ee5de0f9fcecd2777a345b3d22f0f5a",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "157",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-necessary-mind-to-catholic-trinity-gap.critique",
+            "words": 118,
+            "characters": 934,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-trinity-natural-reason.critique",
+            "words": 118,
+            "characters": 956,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "originalContextIndex": 4,
+      "packetIndex": 4,
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T02:51:23.791Z",
+      "completedAt": "2026-08-21T02:53:01.725Z",
+      "elapsedMs": 97934,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "correction2OutputAvailableToModel": false,
+      "failedPacket0OutputAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-reason-incarnation-access-gap.critique",
+        "moveProse.pro-infer-divine-self-knowledge.critique"
+      ],
+      "copiedInputBytes": 32156,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "f04e8b397b7727ffabe917bbb31577fd2b86946e089a80561c86c26e0ee2ff34",
+      "stderrSha256": "02b4b7cf998d80ef0c4c9417360e003232e000f7ea75d4a4fb02125a5c569b98",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "b201cdad259696449f1653248d6fd336eedf068a425d1f934bf9f863f701d800",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "157",
+        "packetIndex": 4,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-reason-incarnation-access-gap.critique",
+            "words": 116,
+            "characters": 960,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-infer-divine-self-knowledge.critique",
+            "words": 116,
+            "characters": 998,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 4,
+      "originalContextIndex": 5,
+      "packetIndex": 5,
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T02:51:23.791Z",
+      "completedAt": "2026-08-21T02:52:40.114Z",
+      "elapsedMs": 76323,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "correction2OutputAvailableToModel": false,
+      "failedPacket0OutputAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-timeless-creation.critique",
+        "moveProse.con-creator-relations-contingency.critique"
+      ],
+      "copiedInputBytes": 31181,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "9917b33a9ccb60dddcb692c79976b5b88fe2dbad4f7aa11faca14a8080dbfd8e",
+      "stderrSha256": "39f2bb6c2d8d2cbc5d5bf483c9ea086e645a84a3ca9a85fda76995e3c6dcc370",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "9d49c7fd69b53bae340ed9a408045d5e7124ac71c2d1c4159c9aebb5448ab717",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "157",
+        "packetIndex": 5,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-timeless-creation.critique",
+            "words": 115,
+            "characters": 960,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-creator-relations-contingency.critique",
+            "words": 118,
+            "characters": 1002,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 5,
+      "originalContextIndex": 6,
+      "packetIndex": 6,
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T02:52:40.126Z",
+      "completedAt": "2026-08-21T02:53:39.917Z",
+      "elapsedMs": 59791,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "correction2OutputAvailableToModel": false,
+      "failedPacket0OutputAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-logic-god-explanatory-relocation.critique",
+        "moveProse.pro-spacetime-contained-in-god.critique"
+      ],
+      "copiedInputBytes": 32439,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "a6c2096d9168016e063fbd16bf865448fa9261e54dffb781a3c272c4273b305b",
+      "stderrSha256": "acd9ae7553320cb479edcc8cdf0ae60661b08a0fc29a1f40a5e597dad658eb6b",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "d496ab5526dbbeb1227003987bc9833f506ec45e9d077c68db84440df49440b7",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "157",
+        "packetIndex": 6,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-logic-god-explanatory-relocation.critique",
+            "words": 116,
+            "characters": 908,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-spacetime-contained-in-god.critique",
+            "words": 118,
+            "characters": 938,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 6,
+      "originalContextIndex": 7,
+      "packetIndex": 7,
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T02:53:01.733Z",
+      "completedAt": "2026-08-21T02:53:52.628Z",
+      "elapsedMs": 50895,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "correction2OutputAvailableToModel": false,
+      "failedPacket0OutputAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-spatial-multiplicity-classical-logic.critique",
+        "moveProse.pro-hiddenness-human-knowledge.critique"
+      ],
+      "copiedInputBytes": 32207,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "0747cbfb10bdfcc7b410553f89fb2aee7d467b5a553a85a07f0a62ef41bb7757",
+      "stderrSha256": "e0ebc308de758e69e005d56d7aef7cfab8c06a634754050c466ec54ca7e11dc6",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "bc68a2181f1d90e8cfb120df595a305bd344ec5ac3fd109a6ec4a4a281e0c4b6",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "157",
+        "packetIndex": 7,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-spatial-multiplicity-classical-logic.critique",
+            "words": 118,
+            "characters": 965,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-hiddenness-human-knowledge.critique",
+            "words": 118,
+            "characters": 940,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalPacket0FailurePreservedAndUnaccepted": true,
+  "acceptedCorrection2PreservedAndUnavailableToModels": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicMergeAndCohortReplay": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrection": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
