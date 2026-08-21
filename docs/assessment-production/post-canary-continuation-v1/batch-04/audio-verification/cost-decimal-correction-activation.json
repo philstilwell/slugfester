@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-audio-cost-decimal-correction-activation",
+  "status": "active-for-exactly-one-batch-04-exact-cost-normalization-overlay",
+  "batchNumber": 4,
+  "activatedFromCommit": "0c91ceda03afd922846c643a0a88fcfbb25bc586",
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/cost-decimal-correction-plan.json",
+    "sha256": "4d969960cddd4242eaa81d6ed8cbf912286a8599073f6169c5a224bb936e62d4"
+  },
+  "exactOverlay": {
+    "operation": "validate-preserved-cost-using-exact-ten-millionth-dollar-integer-units-and-seven-decimal-normalization-overlay",
+    "inputTokens": 6441,
+    "outputTokens": 9831,
+    "inputUnitsPerToken": 25,
+    "outputUnitsPerToken": 100,
+    "exactIntegerUnits": 1144125,
+    "exactCostUsd": 0.1144125,
+    "preservedSerializedCostUsd": 0.11441250000000001,
+    "approvedMaximumCostUsd": 1,
+    "mathematicalCostChanged": false,
+    "capDispositionChanged": false
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "recursiveCorrectionsMaximum": 0,
+    "persistentProtectedWritesMaximum": 0,
+    "outputWritesMaximum": 1,
+    "audioAccessAllowed": false,
+    "modelExecutionAllowed": false,
+    "paidServiceAllowed": false,
+    "scoreDerivationAllowed": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/cost-decimal-failure-diagnosis.json": "d1880b21fb692db0bdaa26d58f21500d464874f55b6f9c3ad08ce2264816f48a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/standing-authorization.json": "37c73fd5ad5bcaf6f907c048d662529cd11934924419dded17a56987687bb9e0",
+    "scripts/prepare-assessment-production-post-canary-batch-04-audio-cost-decimal-correction.mjs": "4017935436bdb1c58a7aababcc428f2da4b67f8f2f01a8d35d084138af82baed",
+    "scripts/activate-assessment-production-post-canary-batch-04-audio-cost-decimal-correction.mjs": "3d4df58a383b90f5432e5efaf3328d81eb52864c95bda9784b7448c0b96d3451",
+    "scripts/run-assessment-production-post-canary-batch-04-audio-cost-decimal-correction.mjs": "b53337cfdd5516e00ddbb262880f57b791f8c8441e5062689642664d058d81ff",
+    "scripts/test-assessment-production-post-canary-batch-04-audio-cost-decimal-correction.mjs": "082bfe639d2eae0447a938cd4647f05ce1a771fb7dc482c61b4a81d38f5c5222",
+    "scripts/lib/assessment-production-post-canary-batch-04-standing-authorization.mjs": "efe9d3eb0ab0e5fe7039975edd9d2f0e3995f26dd56f734afa31fec6d5111e62",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/audio-verification/cost-decimal-correction-validation.json",
+  "authorization": {
+    "deterministicCostOverlay": true,
+    "audioAccess": false,
+    "modelExecution": false,
+    "paidService": false,
+    "transcriptMutation": false,
+    "scoreDerivation": false
+  }
+}
