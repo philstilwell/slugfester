@@ -1,0 +1,146 @@
+#!/usr/bin/env node
+
+import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
+import { access, readFile } from "node:fs/promises";
+
+import { normalizeV418Events } from "./lib/v418-source-integrity.mjs";
+
+const ROOT = "docs/assessment-production/post-canary-continuation-v1/batch-05";
+const SELECTION = `${ROOT}/selection.json`;
+const ANALYSIS = `${ROOT}/selection-analysis.json`;
+const PRIOR_COMPLETION_COMMIT = "7effc324449805108ff1d23f47873939a3058ca1";
+const sha256 = (value) => createHash("sha256").update(value).digest("hex");
+const serializedJson = (value) => `${JSON.stringify(value, null, 2)}\n`;
+const exists = (file) => access(file).then(() => true, () => false);
+
+const [selectionBytes, analysisBytes] = await Promise.all([readFile(SELECTION), readFile(ANALYSIS)]);
+const selection = JSON.parse(selectionBytes);
+const analysis = JSON.parse(analysisBytes);
+assert.equal(selection.status, "fifth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed");
+assert.equal(analysis.status, "fifth-post-canary-batch-selection-analysis-passed-awaiting-source-packet-preparation-decision");
+assert.equal(analysis.selection.sha256, sha256(selectionBytes));
+assert.equal(selection.batchNumber, 5);
+assert.equal(selection.productionSequenceOrdinal, 6);
+assert.equal(selection.productionContinuation, true);
+assert.equal(selection.developmentValidationOnly, false);
+assert.equal(selection.stagingOnly, true);
+assert.equal(selection.priorBatchPublicationPrerequisite.atomicPublicationCommit, PRIOR_COMPLETION_COMMIT);
+assert.equal(selection.priorBatchPublicationPrerequisite.atomicPublicationCommitWasHead, true);
+assert.equal(selection.priorBatchPublicationPrerequisite.atomicPublicationCommitWasPushedOriginMain, true);
+assert.equal(selection.priorBatchPublicationPrerequisite.completeTransactionAccepted, true);
+assert.equal(selection.priorBatchPublicationPrerequisite.fullRepositoryRegressionPassed, true);
+execFileSync("git", ["merge-base", "--is-ancestor", PRIOR_COMPLETION_COMMIT, "HEAD"]);
+
+assert.equal(selection.eligibility.frozenCensusSize, 164);
+assert.equal(selection.eligibility.rankedCensusSize, 164);
+assert.equal(selection.eligibility.previouslyPublishedAndRemovedCount, 40);
+assert.equal(selection.eligibility.remainingBeforeBatchCount, 124);
+assert.equal(selection.eligibility.selectedCount, 10);
+assert.equal(selection.eligibility.remainingUnselectedCount, 114);
+assert.equal(selection.eligibility.priorObservationExcluded, false);
+assert.equal(selection.selected.length, 10);
+assert.equal(new Set(selection.selected.map((item) => item.debateNumber)).size, 10);
+
+const policy = JSON.parse(await readFile(selection.policyLocks.selectionPolicy.path));
+const manifest = JSON.parse(await readFile("docs/assessment-production/manifest-v1.json"));
+const priorSelection = JSON.parse(await readFile(selection.priorBatchPublicationPrerequisite.selection.path));
+const priorMutationManifestBytes = await readFile(selection.priorBatchPublicationPrerequisite.mutationManifest.path);
+const priorCompletionExecutionBytes = await readFile(selection.priorBatchPublicationPrerequisite.completionExecution.path);
+const priorCompletionAnalysisBytes = await readFile(selection.priorBatchPublicationPrerequisite.completionAnalysis.path);
+const priorCompletionExecution = JSON.parse(priorCompletionExecutionBytes);
+const priorCompletionAnalysis = JSON.parse(priorCompletionAnalysisBytes);
+const priorMutationManifest = JSON.parse(priorMutationManifestBytes);
+assert.equal(sha256(priorMutationManifestBytes), selection.priorBatchPublicationPrerequisite.mutationManifest.sha256);
+assert.equal(sha256(priorCompletionExecutionBytes), selection.priorBatchPublicationPrerequisite.completionExecution.sha256);
+assert.equal(sha256(priorCompletionAnalysisBytes), selection.priorBatchPublicationPrerequisite.completionAnalysis.sha256);
+assert.equal(priorCompletionExecution.status, "passed-complete-batch-04-production-transaction-after-dependent-pilot-analysis-correction");
+assert.equal(priorCompletionExecution.totals.originalSeoPasses, 1);
+assert.equal(priorCompletionExecution.totals.deterministicCorrectionPasses, 1);
+assert.equal(priorCompletionExecution.totals.repositoryValidationRunsInCorrection, 1);
+assert.equal(priorCompletionExecution.totals.retries, 0);
+assert.equal(priorCompletionExecution.totals.reruns, 0);
+assert.equal(priorCompletionExecution.totals.productionMutationReruns, 0);
+assert.equal(priorCompletionExecution.totals.recursiveCorrections, 0);
+assert.equal(priorCompletionExecution.totals.scorePasses, 0);
+assert.equal(priorCompletionExecution.totals.modelContexts, 0);
+assert.equal(priorCompletionExecution.totals.paidServiceCalls, 0);
+assert.equal(priorCompletionExecution.validation.runs, 1);
+assert.equal(priorCompletionExecution.validation.exitCode, 0);
+assert.equal(priorCompletionExecution.validation.completeRepositoryRegressionPassed, true);
+assert.equal(priorCompletionExecution.acceptedTransaction.productionDebates, 10);
+assert.equal(priorCompletionExecution.acceptedTransaction.productionLedgers, 10);
+assert.equal(priorCompletionExecution.acceptedTransaction.generatedSeoWrites, 12);
+assert.equal(priorCompletionExecution.acceptedTransaction.unchangedGeneratedSeoOutputs, 368);
+assert.equal(priorCompletionExecution.acceptedTransaction.dependentPilotAnalysisWrites, 2);
+assert.equal(priorCompletionAnalysis.status, "batch-04-production-publication-accepted-after-dependent-pilot-analysis-correction");
+assert.equal(priorCompletionAnalysis.decision.boundedCorrectionPassed, true);
+assert.equal(priorCompletionAnalysis.decision.productionTransactionPreserved, true);
+assert.equal(priorCompletionAnalysis.decision.all380GeneratedOutputsPreserved, true);
+assert.equal(priorCompletionAnalysis.decision.completeRepositoryValidationPassed, true);
+assert.equal(priorCompletionAnalysis.decision.completeTransactionAccepted, true);
+assert.equal(priorCompletionAnalysis.decision.atomicCommitAndPushAuthorized, true);
+assert.deepEqual(priorMutationManifest.explicitOrder, priorSelection.selected.map((item) => item.debateNumber));
+
+const manifestByNumber = new Map(manifest.items.map((item) => [item.debateNumber, item]));
+const ranked = policy.reconciledCorpus.remainingPendingDyadic.map((debateNumber) => {
+  const item = manifestByNumber.get(debateNumber);
+  return { debateNumber, debateId: item.debateId, rankSha256: sha256(`${selection.deterministicOrdering.rankDomain}|${selection.deterministicOrdering.normativeTextSha256}|${selection.deterministicOrdering.promotionRecordSha256}|${item.debateNumber}|${item.debateId}`) };
+}).sort((left, right) => left.rankSha256.localeCompare(right.rankSha256) || left.debateNumber.localeCompare(right.debateNumber));
+assert.equal(sha256(serializedJson(ranked)), selection.eligibility.fullRankedCensusSha256);
+assert.equal(sha256(serializedJson(ranked.slice(40))), selection.eligibility.remainingBeforeBatchRankedSha256);
+assert.deepEqual(priorSelection.selected.map((item) => item.debateNumber), ranked.slice(30, 40).map((item) => item.debateNumber));
+assert.deepEqual(selection.selected.map((item) => item.debateNumber), ranked.slice(40, 50).map((item) => item.debateNumber));
+assert.deepEqual(selection.selected.map((item) => item.rankOrdinal), [41, 42, 43, 44, 45, 46, 47, 48, 49, 50]);
+assert.deepEqual(selection.selected.map((item) => item.rankSha256), ranked.slice(40, 50).map((item) => item.rankSha256));
+
+for (const item of selection.selected) {
+  assert.equal(item.speakerCount, 2);
+  assert.equal(Object.values(item.sourceGate).every(Boolean), true);
+  assert.equal(sha256(await readFile(item.sourceChain.transcript)), item.sourceChain.transcriptSha256);
+  assert.equal(sha256(await readFile(item.sourceChain.events)), item.sourceChain.eventsSha256);
+  assert.equal(sha256(await readFile(item.sourceChain.manifest)), item.sourceChain.manifestSha256);
+  assert.equal(normalizeV418Events(JSON.parse(await readFile(item.sourceChain.events))).length, item.eventCount);
+}
+assert.equal(selection.sourceGate.selectedDebatesChecked, 10);
+assert.equal(selection.sourceGate.selectedSourceFilesChecked, 30);
+assert.equal(selection.sourceGate.selectedSourceFilesHashMatched, 30);
+assert.equal(selection.sourceGate.canonicalEventDebatesPassed, 10);
+assert.equal(selection.sourceGate.canonicalEventDebatesFailed, 0);
+for (const key of ["transcriptContentSemanticallyInspected", "legacyAssessmentAccessed", "scoreAccessed", "winnerAccessed", "priorModelOutputAccessed"]) assert.equal(selection.sourceGate[key], false);
+assert.deepEqual(selection.deterministicOrdering.selectedRankOrdinals, [41, 50]);
+assert.equal(selection.deterministicOrdering.firstTenRemainingSelectedWithoutReplacement, true);
+assert.equal(selection.deterministicOrdering.priorPublishedBatchRemovedWithoutReplacement, true);
+assert.equal(selection.deterministicOrdering.replacementsAllowed, false);
+assert.equal(selection.deterministicOrdering.resultDependentOrdering, false);
+assert.equal(selection.modelBoundary.label, "5.6 Sol");
+assert.equal(selection.modelBoundary.reasoningEffort, "low");
+assert.equal(selection.modelBoundary.authentication, "ChatGPT subscription");
+assert.equal(selection.modelBoundary.scoreBlind, true);
+assert.equal(selection.modelBoundary.roundedIntegerScoreTiesPermitted, true);
+assert.equal(selection.modelBoundary.modelContextsExecuted, 0);
+assert.deepEqual(selection.stageConcurrency, { discovery: 4, inventory: 2, judgments: 2, audio: 2, adjudication: 2, publication: 2 });
+assert.equal(Object.values(selection.stopRules).every(Boolean), true);
+assert.equal(selection.totals.selectedDebates, 10);
+assert.equal(selection.totals.sourcePacketsPrepared, 0);
+assert.equal(selection.totals.modelContexts, 0);
+assert.equal(selection.totals.paidServiceCalls, 0);
+assert.equal(selection.totals.directIncrementalCostUsd, 0);
+assert.equal(selection.authorization.batchSelectionPreparation, true);
+assert.equal(selection.authorization.batchSelection, true);
+for (const key of ["sourcePacketPreparation", "discoveryModelExecution", "inventoryModelExecution", "independentJudgmentModelExecution", "audioModelExecution", "adjudicationModelExecution", "scoreDerivation", "publicationReconstruction", "acceptedCalibrationPromotion", "productionMutation", "nextBatchSelection"]) assert.equal(selection.authorization[key], false, `${key}: must remain unauthorized`);
+for (const [file, expected] of Object.entries(selection.sourceHashes)) assert.equal(sha256(await readFile(file)), expected, `${file}: selection source drifted`);
+assert.equal(await exists(selection.futureArtifacts.sourcePreparation), false);
+assert.equal(analysis.decision.priorBatchPublicationPrerequisitePassed, true);
+assert.equal(analysis.decision.deterministicSelectionPassed, true);
+assert.equal(analysis.decision.selectedSourceGatePassed, true);
+assert.equal(analysis.decision.replacementsUsed, 0);
+assert.equal(analysis.decision.sourcePacketPreparationAttempted, false);
+assert.equal(analysis.decision.modelExecutionAttempted, false);
+assert.equal(analysis.decision.paidServiceUsed, false);
+assert.equal(analysis.decision.productionMutationAttempted, false);
+assert.equal(analysis.decision.nextBatchSelectionAttempted, false);
+assert.equal(selection.nextAuthorizedAction, "user-decision-on-fifth-post-canary-batch-source-packet-preparation");
+
+console.log(JSON.stringify({ status: "passed", selectedDebates: selection.selected.map((item) => item.debateNumber), selectedRankOrdinals: [41, 50], sourceFiles: 30, replacements: 0, sourcePacketsPrepared: 0, modelContexts: 0, paidServiceCalls: 0, directCostUsd: 0, nextAuthorizedAction: selection.nextAuthorizedAction }, null, 2));
