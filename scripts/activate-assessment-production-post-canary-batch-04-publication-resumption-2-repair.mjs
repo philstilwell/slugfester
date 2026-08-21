@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
+import { access, readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { POST_CANARY_BATCH_04_RESUMPTION_2_REPAIR_ROOT } from "./lib/assessment-production-post-canary-batch-04-publication-resumption-2-repair.mjs";
+import { loadAndValidatePostCanaryBatch04StandingAuthorization } from "./lib/assessment-production-post-canary-batch-04-standing-authorization.mjs";
+import { assertV4 } from "./lib/v4-lean-production.mjs";
+const shouldWrite=process.argv.includes("--write");const i=process.argv.indexOf("--activated-at");
+const activatedAt=i>=0?process.argv[i+1]:null;assertV4(activatedAt&&!Number.isNaN(Date.parse(activatedAt)),"activatedAt required");
+const ROOT=POST_CANARY_BATCH_04_RESUMPTION_2_REPAIR_ROOT;
+const PREPARATION=`${ROOT}/execution-preparation-manifest.json`;const ACTIVATION=`${ROOT}/execution-activation.json`;
+const sha256=v=>createHash("sha256").update(v).digest("hex");const exists=f=>access(path.resolve(f)).then(()=>true,()=>false);
+const standing=await loadAndValidatePostCanaryBatch04StandingAuthorization();assertV4(!(await exists(ACTIVATION)),`${ACTIVATION} exists`);
+const bytes=await readFile(path.resolve(PREPARATION));const p=JSON.parse(bytes);
+assertV4(p.status==="frozen-two-isolated-single-field-batch-04-publication-resumption-2-repair-contexts-prepared-under-standing-authorization"&&p.contexts?.length===2&&p.totals?.writableFields===2&&p.contexts.every(c=>c.writableFieldCount===1)&&p.model?.slug==="gpt-5.6-sol"&&p.model?.reasoningEffort==="low"&&p.executionPolicy?.attemptsPerContext===1&&p.executionPolicy?.retriesMaximum===0&&p.authorization?.standingAuthorizationPermitsActivation===true&&p.userAuthorization?.standingAuthorizationSha256===standing.sha256&&Object.values(p.stopRules).every(Boolean),"repair not prepared");
+assertV4(execFileSync(p.executionEnvironment.codexPath,["--version"],{encoding:"utf8"}).trim()===p.executionEnvironment.codexCliVersion,"Codex version changed");
+for(const[file,digest]of Object.entries(p.sourceHashes))assertV4(sha256(await readFile(path.resolve(file)))===digest,`${file}: source drift`);
+for(const f of p.futureOutputPathsExcludedFromSourceHashes)if(f!==ACTIVATION)assertV4(!(await exists(f)),`${f} exists`);
+const a={schemaVersion:"1.0-assessment-production-post-canary-batch-04-publication-resumption-2-repair-execution-activation",protocolId:p.protocolId,status:"frozen-two-isolated-single-field-batch-04-publication-resumption-2-repair-contexts-authorized-under-standing-authorization",activatedAt,checkpointCommit:execFileSync("git",["rev-parse","HEAD"],{encoding:"utf8"}).trim(),productionCanary:false,batchNumber:4,stagingOnly:true,AIOnly:true,userAuthorization:{...structuredClone(p.userAuthorization),repairModelContexts:2,repairModelExecution:true},preparationManifest:PREPARATION,preparationManifestSha256:sha256(bytes),model:structuredClone(p.model),costBoundary:structuredClone(p.costEstimate),executionEnvironment:structuredClone(p.executionEnvironment),modelInputs:structuredClone(p.modelInputs),inputs:structuredClone(p.inputs),contexts:structuredClone(p.contexts),isolation:structuredClone(p.isolation),repairContract:structuredClone(p.repairContract),executionPolicy:structuredClone(p.executionPolicy),deterministicValidation:structuredClone(p.deterministicValidation),stopRules:structuredClone(p.stopRules),authorization:{repairModelContexts:true,repairModelExecution:true,deterministicRepairOutputValidation:true,deterministicMergeAndCompleteValidation:true,deterministicCohortAnalysis:true,retry:false,timeoutExtension:false,recursiveCorrectionModelExecution:false,publicationCompilation:false,paidServices:false,productionMutation:false,nextBatchSelection:false},artifacts:structuredClone(p.artifacts),futureOutputPathsExcludedFromSourceHashes:p.futureOutputPathsExcludedFromSourceHashes.filter(f=>f!==ACTIVATION),sourceHashes:structuredClone(p.sourceHashes),nextRequiredAction:"execute-the-two-frozen-single-field-publication-repair-contexts-once"};
+if(shouldWrite)await writeFile(path.resolve(ACTIVATION),`${JSON.stringify(a,null,2)}\n`);
+console.log(JSON.stringify({status:shouldWrite?a.status:"preview",debates:a.contexts.map(c=>c.debateNumber),contexts:2,writableFields:2,model:a.model,schedulerRamp:[1,2],attemptsPerContext:1,retriesMaximum:0,directIncrementalCostUsdMaximum:0,repairModelContextsAuthorized:true,nextRequiredAction:a.nextRequiredAction},null,2));

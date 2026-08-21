@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-04-publication-resumption-2-repair-1",
+  "title": "Slugfester Batch 4 Debate 185 single-field publication repair",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritique"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-04-publication-resumption-2-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-04-publication-resumption-2-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 1
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "185"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "dennett-caruso-free-will-responsibility-2021"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritique": {
+      "type": "string",
+      "minLength": 880
+    }
+  }
+}
