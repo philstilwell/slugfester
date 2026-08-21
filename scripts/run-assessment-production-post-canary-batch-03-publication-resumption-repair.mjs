@@ -34,7 +34,7 @@ assertV4(
   activation.status ===
       "frozen-three-isolated-five-field-batch-03-publication-resumption-repair-contexts-authorized-under-failure-recovery-standing-authorization" &&
     activation.productionCanary === false &&
-    activation.batchNumber === 1 &&
+    activation.batchNumber === 3 &&
     activation.contexts?.length === 3 &&
     activation.authorization?.repairModelContexts === true &&
     activation.authorization?.repairModelExecution === true &&

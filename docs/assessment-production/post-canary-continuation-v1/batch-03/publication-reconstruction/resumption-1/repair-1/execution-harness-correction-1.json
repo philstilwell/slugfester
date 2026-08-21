@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-repair-execution-harness-correction",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-1-repair-1",
+  "status": "frozen-batch-03-publication-resumption-repair-execution-harness-correction-1",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "failure": {
+    "category": "deterministic-execution-harness-validation",
+    "message": "the runner expected Batch 1 although the frozen activation correctly identifies Batch 3",
+    "rejectedActivationPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/execution-activation-failed-harness.json",
+    "rejectedActivationSha256": "07089b8dcb430a6a7186d6d55bd3ac684d122264a5b62936994badc3542bfcac",
+    "contextsAttempted": 0,
+    "modelContextsExecuted": 0
+  },
+  "correction": {
+    "path": "scripts/run-assessment-production-post-canary-batch-03-publication-resumption-repair.mjs",
+    "exactChange": "activation.batchNumber === 1 -> activation.batchNumber === 3",
+    "originalSha256": "f818fe82eb93599396edf7686ec4a493603d6943829d343819dc09c3381a5178",
+    "correctedSha256": "cbd1263f7cd08ca4a7a50dabf9c4ec22d3fdfef9437760b9f2e1fbbbf14c057d",
+    "validatorMeaningChanged": false,
+    "packetsChanged": false,
+    "schemasChanged": false,
+    "contextsChanged": false,
+    "modelSettingsChanged": false,
+    "executionControlsChanged": false
+  },
+  "authorization": {
+    "source": "Batch 3 failure-recovery standing authorization",
+    "deterministicExecutionHarnessCorrection": true,
+    "activationCredentialRegeneration": true,
+    "attemptsMaximumAfterCorrectedGate": 1,
+    "retriesMaximum": 0,
+    "paidServices": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "correctionScript": {
+    "path": "scripts/correct-assessment-production-post-canary-batch-03-publication-resumption-repair-harness.mjs",
+    "sha256": "a2197abfb407b4d2c99ee5e4341709165a119c303e310ca6b904bc23a79ecaa3"
+  },
+  "nextRequiredAction": "regenerate-activation-and-execute-three-hash-locked-repair-contexts-once"
+}

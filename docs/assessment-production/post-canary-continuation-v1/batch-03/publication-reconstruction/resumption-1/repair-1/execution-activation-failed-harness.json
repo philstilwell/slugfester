@@ -1,28 +1,29 @@
 {
-  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-repair-execution-preparation-manifest",
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-repair-execution-activation",
   "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-1-repair-1",
-  "status": "frozen-three-isolated-five-field-batch-03-publication-resumption-repair-contexts-prepared-under-failure-recovery-standing-authorization",
-  "frozenAt": "2026-08-21T01:56:41.000Z",
-  "checkpointCommit": "efd43b35604312d7f7ff09ee44d41e71c7c77412",
+  "status": "frozen-three-isolated-five-field-batch-03-publication-resumption-repair-contexts-authorized-under-failure-recovery-standing-authorization",
+  "activatedAt": "2026-08-21T01:57:04.000Z",
+  "checkpointCommit": "24ac969aac8ad7ff454645f0cf639ce931b869ac",
   "productionCanary": false,
   "batchNumber": 3,
   "stagingOnly": true,
-  "developmentValidationOnly": false,
   "AIOnly": true,
   "userAuthorization": {
-    "instruction": "Batch 3 failure-recovery standing authorization permits one bounded correction for preserved deterministic-validation failures, including publication repair packets exposing no more than two diagnosed writable fields each.",
+    "instruction": "Batch 3 failure-recovery standing authorization permits activation and one execution attempt for each newly frozen bounded correction context, followed by deterministic merge and affected-cohort replay.",
     "directIncrementalCostUsdMaximum": 0,
-    "contextsPrepared": 3,
-    "writableFieldsPrepared": 5,
-    "repairModelExecution": false,
+    "repairModelContexts": 3,
+    "writableFields": 5,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
     "publicationModelExecution": false,
     "paidServices": false,
-    "repairMerge": false,
     "publicationCompilation": false,
     "publicationFinalization": false,
     "productionMutation": false,
     "nextBatchSelection": false
   },
+  "preparationManifest": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/execution-preparation-manifest.json",
+  "preparationManifestSha256": "816b56e1cf10f19a54549c08fcff6e8003b04f53409c1b91de615ffe3c1c2a7b",
   "standingAuthorization": {
     "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/standing-authorization.json",
     "sha256": "7f46c90c1243062e6472f586a1e93db35b43f0b386acc19afb37b23f2adf237b",
@@ -39,7 +40,7 @@
     "reasoningEffort": "low",
     "authentication": "ChatGPT subscription"
   },
-  "costEstimate": {
+  "costBoundary": {
     "authentication": "ChatGPT subscription",
     "directIncrementalCostUsdMaximum": 0,
     "meteredApiCostUsdMaximum": 0,
@@ -60,6 +61,17 @@
       "historicalWallMinutes": 5.25,
       "scalingRule": "scaled-from-seven-context-batch-03-publication-repair-with-contingency"
     }
+  },
+  "executionEnvironment": {
+    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
+    "codexCliVersion": "codex-cli 0.148.0-alpha.15",
+    "shell": false
+  },
+  "modelInputs": {
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
+    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
+    "manual": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/manual.md"
   },
   "inputs": {
     "productionWorkflow": "docs/assessment-production-workflow.md",
@@ -155,12 +167,6 @@
       "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/provenance/packet-2.json"
     }
   ],
-  "modelInputs": {
-    "productionWorkflow": "docs/assessment-production-workflow.md",
-    "readinessWorkflow": "docs/assessment-workflow-v4.2.21.17.41.md",
-    "outputContract": "/Users/philstilwell/.codex/skills/reassess-slugfester-debates/references/output-contract.md",
-    "manual": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/manual.md"
-  },
   "isolation": {
     "freshTemporaryWorkingDirectoryPerContext": true,
     "freshTemporaryCodexHomePerContext": true,
@@ -201,11 +207,6 @@
     "scoresRepositoryOwnedAndImmutable": true,
     "modelAuthoredScoresMaximum": 0,
     "recursiveRepairMaximum": 0
-  },
-  "executionEnvironment": {
-    "codexPath": "/Applications/ChatGPT.app/Contents/Resources/codex",
-    "codexCliVersion": "codex-cli 0.148.0-alpha.15",
-    "shell": false
   },
   "executionPolicy": {
     "contexts": 3,
@@ -296,13 +297,12 @@
     "nextBatchSelectionBlocks": true
   },
   "authorization": {
-    "executionActivationPreparation": true,
-    "repairModelContexts": false,
-    "repairModelExecution": false,
-    "deterministicRepairOutputValidation": false,
-    "deterministicMergeAndCompleteValidation": false,
-    "deterministicCohortReplay": false,
-    "deterministicAnalysis": false,
+    "repairModelContexts": true,
+    "repairModelExecution": true,
+    "deterministicRepairOutputValidation": true,
+    "deterministicMergeAndCompleteValidation": true,
+    "deterministicCohortReplay": true,
+    "deterministicAnalysis": true,
     "retry": false,
     "timeoutExtension": false,
     "recursiveCorrectionModelExecution": false,
@@ -313,19 +313,6 @@
     "paidServices": false,
     "productionMutation": false,
     "nextBatchSelection": false
-  },
-  "totals": {
-    "debates": 2,
-    "contexts": 3,
-    "writableFields": 5,
-    "modelContextsExecuted": 0,
-    "modelAuthoredScores": 0,
-    "scorePassesExecutedThisStage": 0,
-    "repairMerges": 0,
-    "publicationCompilationPasses": 0,
-    "paidServiceCallsThisStage": 0,
-    "directIncrementalCostUsd": 0,
-    "deterministicHarnessCorrections": 1
   },
   "artifacts": {
     "activation": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/execution-activation.json",
@@ -351,7 +338,6 @@
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/outputs/packet-2.json",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/validations/packet-2.json",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/provenance/packet-2.json",
-    "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/execution-activation.json",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/model-execution.json",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/analysis.json",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/merged/debate-58.json",
@@ -390,22 +376,14 @@
     "scripts/lib/v388-reconstruction.mjs": "b91aecc26cd3a978ef807bec877222b641fff4cd911028538cd035b747f5a342",
     "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
     "scripts/prepare-assessment-production-post-canary-batch-03-publication-resumption-repair.mjs": "3b553fd2051b93f38434f03daddd02717b0c9e2ee28f5387af2456597be2edbe",
-    "scripts/run-assessment-production-post-canary-batch-03-publication-resumption-repair.mjs": "cbd1263f7cd08ca4a7a50dabf9c4ec22d3fdfef9437760b9f2e1fbbbf14c057d",
+    "scripts/run-assessment-production-post-canary-batch-03-publication-resumption-repair.mjs": "f818fe82eb93599396edf7686ec4a493603d6943829d343819dc09c3381a5178",
     "scripts/test-assessment-production-post-canary-batch-03-publication-resumption-repair-preparation.mjs": "ba10a759463c541a416c8a749659c4ffa1793ef788bcb49015a8bd359f59e520",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/packets/packet-0.json": "4c5924718c2ffffad9e287974b00cc45f734db1e008187218be624d868122393",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/schemas/packet-0.schema.json": "d616762296e7ee7849d010e6764adfb7a2def16e4bef3ea5fff01a8af0583e1c",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/packets/packet-1.json": "58f83ddfb2bb118ab34110f1b7a0ce9103d3660224a6699334d8d95cae33af83",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/schemas/packet-1.schema.json": "de0eacccbe6704ab24a5e32ef25234956f34a620f5d4689ced896cd3b98be99a",
     "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/packets/packet-2.json": "4319a994900f27faab3e4751b29f5917ba149d90c5f5b26e48ed93f5e695ad3e",
-    "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/schemas/packet-2.schema.json": "cba2b5d40426b0d07727bf23780170e0517c8f8d0e94b4bea0a27d40ce6b3ef4",
-    "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/execution-harness-correction-1.json": "74e1a8be970ae668120e7ea3ed30dea24cdd81c60f7632464c47a7e2f665f5cf",
-    "scripts/correct-assessment-production-post-canary-batch-03-publication-resumption-repair-harness.mjs": "a2197abfb407b4d2c99ee5e4341709165a119c303e310ca6b904bc23a79ecaa3"
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/schemas/packet-2.schema.json": "cba2b5d40426b0d07727bf23780170e0517c8f8d0e94b4bea0a27d40ce6b3ef4"
   },
-  "nextAuthorizedAction": "activate-and-execute-exactly-three-frozen-batch-03-publication-resumption-repair-contexts-under-failure-recovery-standing-authorization",
-  "executionHarnessCorrection": {
-    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/repair-1/execution-harness-correction-1.json",
-    "sha256": "74e1a8be970ae668120e7ea3ed30dea24cdd81c60f7632464c47a7e2f665f5cf",
-    "correctedRunner": "scripts/run-assessment-production-post-canary-batch-03-publication-resumption-repair.mjs",
-    "correctedRunnerSha256": "cbd1263f7cd08ca4a7a50dabf9c4ec22d3fdfef9437760b9f2e1fbbbf14c057d"
-  }
+  "nextRequiredAction": "execute-the-three-frozen-batch-03-publication-resumption-repair-contexts-once"
 }
