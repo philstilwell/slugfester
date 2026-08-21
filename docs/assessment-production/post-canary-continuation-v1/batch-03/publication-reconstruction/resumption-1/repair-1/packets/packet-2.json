@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-1-repair-1",
+  "packetIndex": 2,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "150",
+  "debateId": "licona-dillahunty-resurrection-evidence-2017",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/outputs/debate-150.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-150.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-test-before-supernatural-attribution.critique",
+      "moveProse.con-paul-and-reports-insufficient.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "identityStructureSourcesScoresAndUnlistedFieldsImmutable": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "noveltyExplanationTargetWords": [
+      8,
+      18
+    ],
+    "noveltyExplanationAcceptanceWords": [
+      8,
+      35
+    ],
+    "preserveNoveltyClassificationSourceMoveIdsAndItemText": true,
+    "critiqueLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueTargetWords": [
+      112,
+      118
+    ],
+    "critiqueAcceptanceWords": [
+      105,
+      130
+    ],
+    "critiquePreferredMinimumCharacters": 900,
+    "critiqueAcceptanceMinimumCharacters": 880,
+    "critiqueExactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-test-before-supernatural-attribution.critique",
+      "repairType": "critique",
+      "moveId": "con-test-before-supernatural-attribution",
+      "originalCritique": "Strongest feature: The reply clearly distinguishes permission to test an extraordinary event from permission to attribute it supernaturally, directly answering the claim that methodological naturalism prevents investigation from beginning. Principal limitation: The formulation says little about what evidence could confirm supernatural causation, potentially leaving attribution indefinitely postponed even when an event generated highly specific contrasts against fraud, error, hallucination, and known natural alternatives. Live burden: The skeptical side must identify a principled evidential threshold for causal attribution and explain why the affirmative's historical and paranormal evidence falls below it without converting methodological caution into prior exclusion. Locked score: The very strong band reflects precise scope, matched calibration, exceptional responsiveness, and a powerful clarification of investigative practice, with a limited residual burden to make the proposed test-and-confirm standard operational rather than merely restrictive.",
+      "originalWords": 132,
+      "originalCharacters": 1063,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "con-test-before-supernatural-attribution",
+        "sectionId": "methods-and-evidential-standards",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Methodological naturalism permits investigation of extraordinary events but withholds supernatural attribution until a testable model distinguishes genuine phenomena from fraud, error, and hallucination.",
+        "importance": 3,
+        "finalScore": 92,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "70:42",
+        "sourceSpan": {
+          "startEvent": 716,
+          "endEvent": 759,
+          "startMs": 4242320,
+          "endMs": 4500400
+        },
+        "sourceExcerpt": "until we actually have the ability to investigate and confirm that the supernatural exists we don't get to appeal to it it doesn't bar us from testing claims that are attributed to the supernatural no no scientist if that Comet hit and spelled out something no scientist on the grounds of methodological naturalism or any other scientific model would be prohibited from a testing that the event",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 394
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-causal-underdetermination"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-causation-against-methodological-exclusion",
+            "pro-methods-discipline-specific-investigation",
+            "pro-comparative-case-by-case-resurrection"
+          ],
+          "components": [
+            {
+              "componentId": "con-test-before-supernatural-attribution-component-01",
+              "targetMoveId": "pro-causation-against-methodological-exclusion",
+              "text": "Whether methodological naturalism bars testing extraordinary claims or instead withholds only unsupported causal attribution.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-test-before-supernatural-attribution-component-02",
+              "targetMoveId": "pro-methods-discipline-specific-investigation",
+              "text": "Whether discipline-specific investigation answers the need to confirm a supernatural causal model.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-test-before-supernatural-attribution-component-03",
+              "targetMoveId": "pro-comparative-case-by-case-resurrection",
+              "text": "Whether comparative historical assessment alone justifies supernatural attribution.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly diagnoses Licona's exclusion objection as mistaken: claims remain testable, while attribution is withheld pending confirmation and discrimination.",
+          "responsivenessWithinClass": {
+            "value": 96,
+            "rationale": "It explicitly contacts the decisive methodological premise, preserves investigation, and states the defeating consequence for premature supernatural attribution."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts the decisive methodological premise, preserves investigation, and states the defeating consequence for premature supernatural attribution."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between investigating an event and confirming a supernatural attribution is explicit, consistent, and carefully scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The requirement to test before causal attribution fits the limited skeptical conclusion and does not deny that extraordinary events may occur or be investigated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Methodological naturalism may function as an a priori ban on supernatural explanations.",
+          "decisiveQualification": "A test-first policy need not ban investigation or permanently exclude a supported supernatural model."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central causal-underdetermination bridge by specifying the required order of investigation and attribution."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Dillahunty says methodological naturalism does not bar testing attributed claims, including an extraordinary comet event, but withholds supernatural appeal pending confirmation.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-paul-and-reports-insufficient.critique",
+      "repairType": "critique",
+      "moveId": "con-paul-and-reports-insufficient",
+      "originalCritique": "Strongest feature: The reply grants Paul's importance while precisely identifying his lack of direct access to Jesus's ministry, execution, burial, and empty-tomb history, thereby challenging the affirmative's central historical foundation. Principal limitation: Direct eyewitness access to every underlying event is not required for all historical knowledge, and the selected criticism does not fully evaluate Paul's claimed experience, apostolic contacts, early tradition, or possible corroboration from other sources. Live burden: The skeptical side must assess the complete transmission chain, independence, dating, and content of the appearance traditions and show why their combined warrant remains insufficient despite Paul's proximity to principal witnesses. Locked score: The very strong band reflects focused source criticism, careful calibration, substantial relevance, and direct responsiveness, moderated by the need for fuller engagement with indirect historical corroboration and testimonial convergence.",
+      "originalWords": 131,
+      "originalCharacters": 1019,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-paul-and-reports-insufficient",
+        "sectionId": "historical-appearance-evidence",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Paul is a weak foundation for resurrection because he lacked direct access to Jesus's ministry, death, burial, and empty tomb, while surviving reports do not independently demonstrate a return from death.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "79:10",
+        "sourceSpan": {
+          "startEvent": 797,
+          "endEvent": 825,
+          "startMs": 4750560,
+          "endMs": 4944520
+        },
+        "sourceExcerpt": "agree that Scholars hold this position and it may in fact be the case that Paul is the best source but what do we know about that best source well man never met Jesus while he was alive claims he did later after he was realive wasn't around for any of Jesus's events wasn't around for the death wasn't around for the crucifixion the burial wasn't there to see the empty tomb right",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-historical-bedrock"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-historical-pauline-apostolic-bedrock"
+          ],
+          "components": [
+            {
+              "componentId": "con-paul-and-reports-insufficient-component-01",
+              "targetMoveId": "pro-historical-pauline-apostolic-bedrock",
+              "text": "Whether Paul provides direct and independently adequate evidence for Jesus's death, burial, empty tomb, and postmortem return.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The response directly attacks the asserted Pauline foundation by identifying Paul's lack of direct access to Jesus's life, death, burial, and tomb.",
+          "responsivenessWithinClass": {
+            "value": 89,
+            "rationale": "It squarely contacts source sufficiency, though it does not answer Licona's separate claim that Paul knew disciples and transmitted their appearance tradition."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It squarely contacts source sufficiency, though it does not answer Licona's separate claim that Paul knew disciples and transmitted their appearance tradition."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The source-access criticism is clear and explicitly limited to what Paul did not directly witness during Jesus's life, death, burial, and tomb history."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The argument presents source limitations as reasons for evidential weakness rather than proof of falsity and acknowledges Paul's scholarly status as the best source."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul is valuable because he is early, claims an appearance, and knew leading disciples.",
+          "decisiveQualification": "Those advantages do not give him direct access to every event underlying the resurrection narrative."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The reply directly attacks the central historical-bedrock bridge by contesting the affirmative's principal early source."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Dillahunty grants Paul's status as a leading source but notes that he never met the living Jesus and did not witness the death, burial, or empty tomb.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

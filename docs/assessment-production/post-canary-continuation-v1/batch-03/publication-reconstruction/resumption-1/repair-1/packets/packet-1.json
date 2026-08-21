@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-1-repair-1",
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "150",
+  "debateId": "licona-dillahunty-resurrection-evidence-2017",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-1/outputs/debate-150.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-150.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-divine-agent-requires-prior-support.critique",
+      "moveProse.pro-causation-against-methodological-exclusion.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "identityStructureSourcesScoresAndUnlistedFieldsImmutable": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "noveltyExplanationTargetWords": [
+      8,
+      18
+    ],
+    "noveltyExplanationAcceptanceWords": [
+      8,
+      35
+    ],
+    "preserveNoveltyClassificationSourceMoveIdsAndItemText": true,
+    "critiqueLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueTargetWords": [
+      112,
+      118
+    ],
+    "critiqueAcceptanceWords": [
+      105,
+      130
+    ],
+    "critiquePreferredMinimumCharacters": 900,
+    "critiqueAcceptanceMinimumCharacters": 880,
+    "critiqueExactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-divine-agent-requires-prior-support.critique",
+      "repairType": "critique",
+      "moveId": "con-divine-agent-requires-prior-support",
+      "originalCritique": "Strongest feature: The move identifies a genuine missing component in the affirmative hypothesis by distinguishing generic supernatural background evidence from evidence for an agent capable of and disposed toward raising Jesus. Principal limitation: Describing prior belief in such an agent as necessary confuses antecedent plausibility with an absolute prerequisite and neglects the possibility that sufficiently discriminating event evidence could update the probability of divine agency. Live burden: The skeptical side must restate the objection probabilistically, explain what evidence would distinguish a purposeful divine act from unknown alternatives, and assess whether the resurrection evidence itself supplies any such discrimination. Locked score: The strong and competent band reflects substantial relevance and a coherent background-probability challenge, constrained by materially overstated necessity, incomplete qualification, and an unsupported bridge from needing agent content to requiring prior belief.",
+      "originalWords": 132,
+      "originalCharacters": 1024,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "con-divine-agent-requires-prior-support",
+        "sectionId": "background-plausibility-and-divine-agency",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Treating resurrection as plausible presupposes independent grounds for a God capable of and willing to raise Jesus, while private revelation is unverifiable hearsay to outsiders.",
+        "importance": 2,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "47:01",
+        "sourceSpan": {
+          "startEvent": 476,
+          "endEvent": 512,
+          "startMs": 2821040,
+          "endMs": 3028320
+        },
+        "sourceExcerpt": "Jesus was raised from the dead as the core argument this evening which I'll get to more in the rebuttal when when William L cigas debated the resurrection he acknowledges that he presupposes a foundational premise that a God exists specifically a god that is capable and desirous of Resurrection someone this is a necessary component because you have to have this belief in order to even attempt to claim that raising from the dead is a plausible",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 446
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-theistic-background"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-comparative-ibt-explanatory-criteria",
+            "pro-background-cumulative-paranormal-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "con-divine-agent-requires-prior-support-component-01",
+              "targetMoveId": "pro-comparative-ibt-explanatory-criteria",
+              "text": "Whether resurrection is plausible without antecedent grounds for a capable and willing agent.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-divine-agent-requires-prior-support-component-02",
+              "targetMoveId": "pro-background-cumulative-paranormal-evidence",
+              "text": "Whether generic supernatural background evidence supports the specific divine-agent inference.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move directly raises a missing prior premise for the affirmative hypothesis and distinguishes generic supernaturalism from evidence for a resurrection-capable God.",
+          "responsivenessWithinClass": {
+            "value": 82,
+            "rationale": "It fully contacts the agent-plausibility component, although it does not answer every historical or comparative element of the affirmative case."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It fully contacts the agent-plausibility component, although it does not answer every historical or comparative element of the affirmative case."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The required-agent premise is clear, but the claim that one must already believe it to assess plausibility blurs prior probability with absolute prerequisite."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Independent grounds would strengthen the hypothesis, but calling prior belief a necessary component excludes the possibility that event evidence updates agent probability."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Resurrection evidence may itself provide grounds for belief in a capable divine agent.",
+          "decisiveQualification": "The evidence must discriminate that agent from other unknown causes rather than presuppose it."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The background-probability point is coherent, but the necessity claim contains a material unsupported bridge from needing agent content to needing prior belief."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The cited debate precedent illustrates the premise but does not establish its necessity, and the private-revelation concern is asserted rather than developed here."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The move expressly supports the subsidiary theistic-background bridge and sits at the top of that relevance tier."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The move identifies a real background-plausibility issue but overstates it as a strict prerequisite and underplays evidential updating from the event itself."
+          }
+        },
+        "evidenceBasis": "Dillahunty says a resurrection argument requires a God capable of and desirous of resurrection and treats that premise as necessary for plausibility.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-causation-against-methodological-exclusion.critique",
+      "repairType": "critique",
+      "moveId": "pro-causation-against-methodological-exclusion",
+      "originalCritique": "Strongest feature: The private-information hypothetical effectively demonstrates how automatic preference for any natural explanation could prejudge evidence and clarifies the affirmative's concern about methodological exclusion rather than ordinary evidential caution. Principal limitation: Showing that dogmatic exclusion would be defective does not establish a supernatural cause, distinguish one from unknown natural alternatives, or demonstrate that ancient resurrection evidence possesses the hypothetical's immediacy, specificity, and independently checkable informational strength. Live burden: The affirmative must provide a noncircular threshold for concluding that known natural explanations are genuinely inadequate and explain what positive features license supernatural classification after that threshold is crossed. Locked score: The strong and competent band reflects a coherent, relevant challenge to prior exclusion and a vivid counterexample, moderated by incomplete causal discrimination and limited transfer from the hypothetical to the historical case.",
+      "originalWords": 132,
+      "originalCharacters": 1075,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-causation-against-methodological-exclusion",
+        "sectionId": "supernatural-causal-inference",
+        "side": "pro",
+        "speaker": "Mike Licona",
+        "moveKind": "reply",
+        "proposition": "Methodological naturalism can exclude supernatural explanations in advance and prevent recognition of events that known natural causes cannot plausibly explain.",
+        "importance": 3,
+        "finalScore": 79,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "61:59",
+        "sourceSpan": {
+          "startEvent": 625,
+          "endEvent": 655,
+          "startMs": 3719160,
+          "endMs": 3895640
+        },
+        "sourceExcerpt": "to this relative of yours that died 10 years ago and they shared with me a private conversation that only you and that relative had I could not have possibly known so is a miracle the least probable explanation and since uh historians must choose the most probable we'd have to say anything even group Hallucination is more probable no that's methodological naturalism that's the",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 65,
+          "characterCount": 379
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-supernatural-admissibility"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-no-workable-supernatural-causal-method",
+            "con-resurrection-lacks-explanatory-content"
+          ],
+          "components": [
+            {
+              "componentId": "pro-causation-against-methodological-exclusion-component-01",
+              "targetMoveId": "con-no-workable-supernatural-causal-method",
+              "text": "Whether methodological naturalism improperly excludes supernatural explanations before comparison.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-causation-against-methodological-exclusion-component-02",
+              "targetMoveId": "con-resurrection-lacks-explanatory-content",
+              "text": "Whether an extraordinary information-bearing event can count against ordinary causal explanations.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts the exclusion concern with a concrete anomalous-information hypothetical, but it does not fully answer how the supernatural cause is distinguished from every unknown alternative.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "This is a strong partial answer because it exposes possible prior exclusion while leaving the opponent's demand for a workable positive causal method only partly answered."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "This is a strong partial answer because it exposes possible prior exclusion while leaving the opponent's demand for a workable positive causal method only partly answered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The anti-exclusion proposition is clear and stable, subject to the implicit condition that known natural explanations have genuinely been tested and found implausible."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The hypothetical shows that automatic exclusion can distort comparison, but it does not establish that the actual resurrection evidence meets the hypothetical's evidential strength."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Methodological naturalism withholds supernatural attribution without denying anomalous events.",
+          "decisiveQualification": "Withholding is legitimate unless evidence discriminates supernatural from unknown natural causes."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "Prior exclusion can bias comparison, but the move risks a false choice between supernatural causation and group hallucination without exhausting other explanations."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central supernatural-admissibility requirement by arguing that supernatural hypotheses must not be excluded before comparison."
+          },
+          "representationalCharity": {
+            "value": 61,
+            "rationale": "The response exposes a risk of dogmatic exclusion but treats the skeptical position too readily as choosing any natural account regardless of evidence."
+          }
+        },
+        "evidenceBasis": "Licona offers a hypothetical involving inaccessible private information and argues that always preferring hallucination would embody methodological naturalism rather than neutral comparison.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
