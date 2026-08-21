@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-124-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-debate-124-publication-repair-1",
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "124",
+  "debateId": "harris-peterson-god-atheism-bible-2018",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/outputs/debate-124.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-124.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-narrative-moral-limiting-cases.critique",
+      "moveProse.pro-rational-instruction-behavioral-limit.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-narrative-moral-limiting-cases.critique",
+      "moveId": "pro-narrative-moral-limiting-cases",
+      "originalCritique": "Strongest feature: The move concretely applies the mediation objection to the secular framework's own negative and positive limiting cases, revealing that descriptions of misery and flourishing already organize experience through evaluative selection and imaginative construction. Principal limitation: The analogy to hell and heaven does not show that conceptual limiting cases function as religious narratives, nor does their narrative-like presentation undermine the possibility that conscious experience itself supplies objective moral information. Live burden: The argument must establish what explanatory work narrative form performs, why that work cannot be reproduced by secular concepts, and how resemblance to inherited imagery supports reliability rather than rhetorical vividness. Locked score: The strong competent band rewards incisive contact, modest calibration, and an illuminating analogy while preserving the distinction between exposing an evaluative premise and defeating moral realism.",
+      "originalWords": 131,
+      "originalCharacters": 1007,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-narrative-moral-limiting-cases",
+        "sectionId": "moral-grounding",
+        "side": "pro",
+        "speaker": "Jordan Peterson",
+        "moveKind": "reply",
+        "proposition": "A moral framework contrasting extreme suffering with flourishing relies on foundational, story-like moral intuitions analogous to the narrative poles of hell and heaven.",
+        "importance": 3,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "58:16",
+        "sourceSpan": {
+          "startEvent": 1414,
+          "endEvent": 1480,
+          "startMs": 3496600,
+          "endMs": 3643049
+        },
+        "sourceExcerpt": "moral claim and I think that's where you put your stake in the ground and I would say when I read that I thought well if you take your jungle story which you've extracted from a bunch of Horrors and compiled and you take your positive story which you've extracted from a bunch of horrors or a bunch of quasi utopias let's say and compiled you're two-thirds of the way to a landscape of Hell in heaven",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 400
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-wellbeing-ground"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-moral-realism-discoverable-answers"
+          ],
+          "components": [
+            {
+              "componentId": "pro-narrative-moral-limiting-cases-component-01",
+              "targetMoveId": "con-moral-realism-discoverable-answers",
+              "text": "Whether the secular moral landscape rests on prior narrative-like intuitions rather than facts alone.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply applies the mediation objection to Harris's own worst and better cases, arguing that those poles are compiled stories analogous to hell and heaven.",
+          "responsivenessWithinClass": {
+            "value": 86,
+            "rationale": "It contacts the foundational demand through a concrete analogy, but does not show that narrative form defeats moral realism."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It contacts the foundational demand through a concrete analogy, but does not show that narrative form defeats moral realism."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The analogy between limiting cases and story-like intuitions is clear, with the precise force of the analogy left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The claim is presented as an interpretive analogy, and its modest force fits the support supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Worst misery and flourishing can be conceptual limiting cases without functioning as religious narratives or personalities.",
+          "decisiveQualification": "Their conceptual rather than religious form does not eliminate the need for a prior evaluative intuition connecting experience to value."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central secular wellbeing ground by questioning the source of its foundational evaluative poles."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Peterson recasts Harris's negative and positive limiting cases as compiled stories approaching the abstractions of hell and heaven.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-rational-instruction-behavioral-limit.critique",
+      "moveId": "pro-rational-instruction-behavioral-limit",
+      "originalCritique": "Strongest feature: The move identifies an important practical distinction between possessing an accurate explanation and successfully changing entrenched behavior, using educational interventions to challenge any assumption that explicit reasoning automatically governs conduct. Principal limitation: It changes the dispute from epistemic reliability to immediate efficacy, so weak behavioral uptake does not answer whether inherited heuristics track mistaken causes, fail after environmental change, or deserve continued authority. Live burden: The argument must provide broader evidence than compressed sexual-education examples, explain how narrative practices outperform improved interventions, and integrate accurate causal understanding rather than treating motivational difficulty as support for inherited explanations. Locked score: The mixed band credits coherent behavioral insight and genuine practical relevance while recording limited warrant, reduced charity toward the opponent's reliability distinction, and failure to contact the decisive causal objection.",
+      "originalWords": 131,
+      "originalCharacters": 1073,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-rational-instruction-behavioral-limit",
+        "sectionId": "practical-guidance",
+        "side": "pro",
+        "speaker": "Jordan Peterson",
+        "moveKind": "reply",
+        "proposition": "Rational educational interventions often exert little influence on fundamental behavior, so explicit reasoned explanation alone may be behaviorally insufficient as practical moral guidance.",
+        "importance": 2,
+        "finalScore": 73,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "120:23",
+        "sourceSpan": {
+          "startEvent": 2949,
+          "endEvent": 2965,
+          "startMs": 7223070,
+          "endMs": 7258690
+        },
+        "sourceExcerpt": "about the effects on human relationships and your own mind and your own intention and the way you view other pieces have now barely works for sex ed it barely works for condom education well what was already works like those sorts of educational interventions to stop that kind of fundamental behavior have very little effect well people aren't nearly as amenable to behavioral changes as a consequence of rational",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 414
+        },
+        "attributionConfidence": "medium",
+        "audioVerified": true,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-practical-embodiment"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-heuristics-fail-under-change"
+          ],
+          "components": [
+            {
+              "componentId": "pro-rational-instruction-behavioral-limit-component-01",
+              "targetMoveId": "con-heuristics-fail-under-change",
+              "text": "Whether inherited heuristics remain reliable when they track outcomes for mistaken reasons and circumstances change.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "Limited educational efficacy is relevant to practical guidance but does not answer the decisive objection about false causal models and changed circumstances.",
+          "responsivenessWithinClass": {
+            "value": 51,
+            "rationale": "It is a relevant nonanswer because it changes the issue from reliability to immediate behavioral effectiveness."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "It is a relevant nonanswer because it changes the issue from reliability to immediate behavioral effectiveness."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The limited behavioral-efficacy claim is clear and framed as 'often' and 'may,' though examples are narrow."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Behavioral resistance is plausible, but broad insufficiency is inferred from compressed sex-education examples."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Rational causal guidance can be correct and revisable even when information alone does not immediately change behavior.",
+          "decisiveQualification": "Behavioral efficacy and epistemic reliability are distinct, so weak uptake does not rehabilitate mistaken inherited reasons."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "Weak behavioral uptake coherently limits instruction's sufficiency, though it does not vindicate any alternative guidance."
+          },
+          "evidenceWarrant": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (64 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The reply materially shifts from reliability to efficacy and omits the strongest distinction in the opposing argument."
+          }
+        },
+        "evidenceBasis": "Peterson cites sex and condom education as interventions with little effect on fundamental behavior and rationally induced change.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

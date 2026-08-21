@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-124-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-debate-124-publication-repair-1",
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "124",
+  "debateId": "harris-peterson-god-atheism-bible-2018",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/outputs/debate-124.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-124.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-evolved-implicit-guidance.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-evolved-implicit-guidance.critique",
+      "moveId": "pro-evolved-implicit-guidance",
+      "originalCritique": "Strongest feature: The reply directly challenges naive factual immediacy by arguing that evolved implicit structures condition perception, interpretation, and moral intuition before explicit causal reasoning can begin. Principal limitation: Descriptive evolutionary origin does not establish normative authority, religious embodiment, or superior reliability, and the assertion that these structures cannot be derived from present facts requires a sharper account of derivation. Live burden: The argument must identify the relevant structures, show how religious narratives preserve them, explain their correction when environments change, and distinguish indispensable cognitive priors from inherited biases that evidence-sensitive inquiry should revise. Locked score: The strong competent band rewards full contact with secular sufficiency, coherent mediation, central relevance, and explicit acknowledgment of a shared interest in accuracy, tempered by limited warrant and an incomplete bridge from evolved priors to religious guidance.",
+      "originalWords": 133,
+      "originalCharacters": 1039,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "pro-evolved-implicit-guidance",
+        "sectionId": "practical-guidance",
+        "side": "pro",
+        "speaker": "Jordan Peterson",
+        "moveKind": "reply",
+        "proposition": "Evolution has produced implicit interpretive structures that mediate access to facts and ground moral intuition, yet cannot be derived solely from the presently available facts.",
+        "importance": 3,
+        "finalScore": 82,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "124:00",
+        "sourceSpan": {
+          "startEvent": 3041,
+          "endEvent": 3093,
+          "startMs": 7440650,
+          "endMs": 7562310
+        },
+        "sourceExcerpt": "interpretive structures that guide our interaction with the facts and those a priori implicit structures that have emerged out of this evolutionary course have a structure that mediates between us and the facts that cannot be derived from the facts at hand and so so then the question is what is that structure and and it's in both of our interests to get that right yeah because you use that as the source of moral intuition",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 425
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-fact-value-mediation"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-revisable-reality-directed-worldview",
+            "con-causal-knowledge-improves-guidance"
+          ],
+          "components": [
+            {
+              "componentId": "pro-evolved-implicit-guidance-component-01",
+              "targetMoveId": "con-revisable-reality-directed-worldview",
+              "text": "Whether present reality-directed inquiry can operate without evolved implicit structures mediating access to facts and values.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-evolved-implicit-guidance-component-02",
+              "targetMoveId": "con-causal-knowledge-improves-guidance",
+              "text": "Whether explicit causal knowledge exhausts the structures needed to form and apply moral intuitions.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply accepts the interest in getting reality right but argues that evolved prior structures condition both factual access and moral intuition beyond present facts.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "It directly contacts the sufficiency of present fact-directed inquiry, though it does not show religious stories uniquely capture the structures."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly contacts the sufficiency of present fact-directed inquiry, though it does not show religious stories uniquely capture the structures."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The mediation thesis is clear, though implicit interpretive structures are not specified beyond their evolutionary origin and function."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Mediation is plausible, but the claim that structures cannot be derived from facts at hand needs a sharper derivational argument."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Reality-directed inquiry can acknowledge evolved priors while testing, revising, and sometimes replacing them through causal evidence.",
+          "decisiveQualification": "Acknowledging priors does not establish their reliability, religious character, or immunity from evidence-sensitive revision."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "Evolved priors plausibly mediate perception and valuation, but their normative authority and religious embodiment do not follow."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central fact-value-mediation bridge by identifying evolved antecedent interpretive structures."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The move accurately challenges naive fact access but leaves the strongest revisability qualification largely intact."
+          }
+        },
+        "evidenceBasis": "Peterson argues that evolved implicit structures mediate facts and ground moral intuition but are not derivable from present facts alone.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-post-canary-batch-03-debate-124-publication-repair-1",
+  "title": "Slugfester post-canary Batch 3 Debate 124 bounded publication repair packet 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-03-debate-124-publication-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-03-debate-124-publication-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 1
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "124"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "harris-peterson-god-atheism-bible-2018"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-evolved-implicit-guidance"
+      ],
+      "properties": {
+        "pro-evolved-implicit-guidance": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}
