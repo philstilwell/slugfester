@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-finalization-provenance",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-finalization",
+  "status": "staging-only-batch-03-final-candidate-provenance",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "debateNumber": "102",
+  "debateId": "woodford-brierley-christianity-rational-2019",
+  "compiledInput": "docs/assessment-production/post-canary-continuation-v1/batch-03/deterministic-publication-compilation/compiled/debate-102.json",
+  "compiledInputSha256": "8747ad7543fd965f89023ab2c0e4cce258bc19cf8f31525f6d49cf7b214610ff",
+  "allowedTransformation": "remove-stagingAudit-from-display-candidate-and-preserve-it-here",
+  "displayFieldsChanged": 0,
+  "participantScoresChanged": false,
+  "scorePassesExecuted": 0,
+  "modelContexts": 0,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/EfAWALcKf2w/transcript.txt",
+    "transcriptSha256": "0586751d6e27491811d666b085379ffd7aa744e614b0839085fad5c605af37af",
+    "eventsPath": ".assessment-cache/captions/EfAWALcKf2w/events.json",
+    "eventsSha256": "ea755276262999f032aab172206740d8542d4e7831c47f3f6710220739b5e2da",
+    "localManifestPath": ".assessment-cache/captions/EfAWALcKf2w/manifest.json",
+    "localManifestSha256": "c1afc5161a3be35f8d9ac5782eebeb479147fa83b6bf3ea931e87ee62665095d"
+  },
+  "calculatedWinner": "pro",
+  "winningMargin": 5,
+  "scoreProtocolId": "assessment-production-post-canary-batch-03-single-deterministic-score-pass",
+  "displayContract": {
+    "sectionTitle": "AI Extension",
+    "placement": "immediately-after-overall-commentary",
+    "defaultCollapsed": true,
+    "visualVariant": "ai-distinct",
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "prohibitedLanguageScanPassed": true
+  },
+  "noveltyMap": {
+    "pro": {
+      "thesis": {
+        "id": "d102-ai-pro-thesis",
+        "text": "The AI steelman is that Christianity lacks proportionate public warrant when its distinctive supernatural conclusions depend on contested testimony, uneven revelation, and explanatory inferences that remain underdetermined by their evidence.",
+        "novelty": {
+          "classification": "extends",
+          "sourceMoveIds": [
+            "pro-proportionate-supernatural-evidence",
+            "pro-divine-communication-objection",
+            "pro-miracles-do-not-entail-divinity"
+          ],
+          "explanation": "This integrates three transcript objections into a single proportionate thesis without attributing the synthesis to Woodford."
+        }
+      },
+      "premises": [
+        {
+          "id": "d102-ai-pro-premise-1",
+          "text": "Extraordinary causal and identity claims should receive lower initial confidence and require evidence whose independence, reliability, and discriminatory power increase with the claim's departure from well-established experience.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-proportionate-supernatural-evidence"
+            ],
+            "explanation": "This develops the proportionality standard by specifying independence, reliability, and discriminatory power."
+          }
+        },
+        {
+          "id": "d102-ai-pro-premise-2",
+          "text": "Early access to Christian claims can establish what communities reported without by itself establishing independent eyewitness confirmation, accurate supernatural interpretation, or the truth of the reported events.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-proportionate-supernatural-evidence",
+              "con-early-testimony-access"
+            ],
+            "explanation": "This repairs an overly categorical treatment of testimony by conceding historical access while limiting its inferential reach."
+          }
+        },
+        {
+          "id": "d102-ai-pro-premise-3",
+          "text": "Even well-supported anomalous events would leave their cause and theological meaning underdetermined unless additional evidence identified the responsible agency and connected that agency to specifically Christian doctrine.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-miracles-do-not-entail-divinity"
+            ],
+            "explanation": "This extends the non-entailment diagnosis into a broader causal and theological underdetermination principle."
+          }
+        },
+        {
+          "id": "d102-ai-pro-premise-4",
+          "text": "A perfectly loving and capable revealer would reasonably be expected to reduce severe, morally consequential disparities in sincere access more effectively than the observed pattern of ambiguity and inherited disagreement suggests.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-divine-communication-objection"
+            ],
+            "explanation": "This repairs the universal-conviction claim by using a qualified expectation about severe access disparities."
+          }
+        },
+        {
+          "id": "d102-ai-pro-premise-5",
+          "text": "Naturalistic accounts need not guarantee infallibility; prediction, replication, independent instrumentation, and adversarial correction can justify domain-specific confidence while leaving every worldview open to revision.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-fallible-cognition-and-verification",
+              "pro-rationality-without-free-choice"
+            ],
+            "explanation": "This supplies mechanisms missing from the transcript's brief appeal to verification and fallibilism."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d102-ai-pro-conclusion",
+        "text": "Accordingly, withholding belief from Christianity's distinctive supernatural and identity claims can be rational when the available evidence does not sufficiently discriminate those claims from serious historical, psychological, and theological alternatives.",
+        "novelty": {
+          "classification": "extends",
+          "sourceMoveIds": [
+            "pro-consistent-evidence-trilemma",
+            "pro-proportionate-supernatural-evidence",
+            "pro-miracles-do-not-entail-divinity"
+          ],
+          "explanation": "This draws a limited withholding conclusion rather than claiming that every form of Christian belief is demonstrably false."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d102-ai-pro-new-1",
+          "title": "The transmission bottleneck argument",
+          "text": "If a universally consequential revelation is routed mainly through ancient languages, disputed authorship, manuscript reconstruction, institutional inheritance, and uneven missionary history, those bottlenecks are not merely accidental background conditions. They become observations to compare against rival hypotheses about the revealer's aims. A human cultural-development hypothesis readily predicts geographical clustering, doctrinal branching, and dependence on inherited testimony. A perfectly capable communicator hypothesis needs additional reasons for expecting the same pattern. This comparison strengthens the hiddenness objection without assuming that love requires coercive certainty or identical experiences for every person.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This newly frames transmission structure itself as comparative evidence rather than restating any participant's direct argument."
+          }
+        },
+        {
+          "id": "d102-ai-pro-new-2",
+          "title": "Causal underdetermination after anomaly",
+          "text": "Suppose several resurrection-related facts were granted at unusually high confidence. The inference would still require two stages: first, identifying resurrection rather than misperception, survival, legend, or unknown intervention; second, identifying the agent's theological meaning. Evidence adequate for an anomaly may remain inadequate for divine sonship, scriptural authority, or an entire doctrinal system. Separating event, cause, and interpretation prevents confidence gained at one stage from being silently transferred to later conclusions. It also explains why cumulative evidence must be evaluated for discrimination, not merely accumulated as a larger list.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-miracles-do-not-entail-divinity",
+              "pro-proportionate-supernatural-evidence"
+            ],
+            "explanation": "This develops the transcript's entailment gap into a staged model of event, cause, and theological interpretation."
+          }
+        }
+      ]
+    },
+    "con": {
+      "thesis": {
+        "id": "d102-ai-con-thesis",
+        "text": "The AI steelman is that Christianity can be rationally held as a defeasible cumulative explanation when experiential, philosophical, moral, and historical considerations jointly raise its plausibility without requiring certainty.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-rational-belief-standard",
+            "con-experience-and-investigation",
+            "con-fine-tuning-intelligibility",
+            "con-resurrection-best-explanation"
+          ],
+          "explanation": "This repairs overstatement by presenting the Christian case as cumulative, defeasible, and explicitly short of certainty."
+        }
+      },
+      "premises": [
+        {
+          "id": "d102-ai-con-premise-1",
+          "text": "Rational commitment can be comparative and graded: a person may reasonably prefer the worldview that best integrates several evidence classes even when each consideration is individually contestable.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-rational-belief-standard"
+            ],
+            "explanation": "This develops the transcript's moderate rationality standard into an explicit cumulative and comparative model."
+          }
+        },
+        {
+          "id": "d102-ai-con-premise-2",
+          "text": "Fine-tuning and mathematical intelligibility need not establish a numerical design probability to count as evidence if purposive mentality makes a life-permitting, discoverable order less surprising than specified rival hypotheses do.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-fine-tuning-intelligibility",
+              "con-fine-tuning-probability-qualified"
+            ],
+            "explanation": "This repairs the design inference by abandoning unsupported ordinary probability language and requiring explicit rival comparison."
+          }
+        },
+        {
+          "id": "d102-ai-con-premise-3",
+          "text": "Christian moral anthropology offers an internally unified account of equal dignity, obligation, forgiveness, and sacrificial concern, although its comparative success must be assessed against serious non-theistic moral realism.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-dignity-and-moral-grounding"
+            ],
+            "explanation": "This preserves the positive Christian account while withdrawing the unsupported assertion that atheism cannot ground value."
+          }
+        },
+        {
+          "id": "d102-ai-con-premise-4",
+          "text": "Historical evidence can rationally support resurrection only after source dependence, dating, genre, alternative explanations, and background plausibility are openly incorporated rather than bypassed by listing traditional facts.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-resurrection-best-explanation",
+              "con-early-testimony-access"
+            ],
+            "explanation": "This repairs the historical case by adding the comparative and source-critical work identified as missing."
+          }
+        },
+        {
+          "id": "d102-ai-con-premise-5",
+          "text": "Religious experience can provide defeasible first-person justification when it coheres with other evidence, produces no contradiction, and remains responsive to psychological, moral, and evidential defeaters.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-experience-and-investigation"
+            ],
+            "explanation": "This adds discrimination and defeater conditions to the transcript's otherwise underspecified experiential justification."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d102-ai-con-conclusion",
+        "text": "Therefore Christianity may be rational for a believer when this cumulative case survives serious alternative comparison and identified defeaters, even though the same evidence need not rationally compel every informed evaluator.",
+        "novelty": {
+          "classification": "extends",
+          "sourceMoveIds": [
+            "con-rational-belief-standard",
+            "con-experience-and-investigation",
+            "con-fine-tuning-intelligibility",
+            "con-resurrection-best-explanation"
+          ],
+          "explanation": "This gives the cumulative case a modest rational-permissibility conclusion consistent with persistent reasonable disagreement."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d102-ai-con-new-1",
+          "title": "Cross-domain coherence without simple addition",
+          "text": "A cumulative case should not treat every consideration as an independent vote. Instead, Christianity can claim support when one hypothesis jointly anticipates a discoverable cosmos, normatively significant persons, transformative experience, and a historically embedded revelation. Dependence and tension among these observations must be modeled openly, but explanatory integration can still matter: one framework may reduce the number of unrelated assumptions needed to connect them. The argument succeeds only comparatively, after rival naturalistic and religious packages receive equally charitable construction, and therefore supports rational preference rather than compulsory assent.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This introduces a disciplined coherence model that neither participant articulated, including controls for dependence and rival comparison."
+          }
+        },
+        {
+          "id": "d102-ai-con-new-2",
+          "title": "Costly correction as experiential evidence",
+          "text": "Religious experience is more evidentially interesting when it produces specific, costly, and independently observable correction rather than comfort or familiarity alone. A Christian could therefore narrow the experiential claim to cases involving durable restitution, relinquishment of advantage, reconciliation, or resistance to prior prejudice, while still allowing psychological explanations and counterexamples. Such outcomes would not prove divine causation, but they could modestly increase confidence when predicted by the tradition's moral center and integrated with other evidence. This approach reduces reliance on private resonance and makes at least part of the experiential case publicly assessable.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This newly proposes costly behavioral correction as a constrained, partially public test of experiential claims."
+          }
+        }
+      ]
+    }
+  },
+  "modelOutputCompletedAt": "2026-08-20T00:00:00-04:00",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true
+  },
+  "compilationValidation": {
+    "status": "passed",
+    "debateNumber": "102",
+    "sections": 5,
+    "moves": 19,
+    "scoresLocked": true,
+    "scoresRecalculated": false,
+    "modelAuthoredScores": 0,
+    "aiExtensionIncluded": true,
+    "productionMutationPerformed": false
+  },
+  "productionMutationPerformed": false,
+  "nextBatchSelectionPerformed": false
+}
