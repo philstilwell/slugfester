@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-rendering-verification-execution",
+  "protocolId": "assessment-production-post-canary-batch-04-rendering-verification",
+  "status": "ten-debate-batch-04-rendering-verification-passed",
+  "completedAt": "2026-08-21T21:20:00.000Z",
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/rendering-verification/preparation-manifest.json",
+    "sha256": "a44807196304914641d806bb28a967ea010ad5a372014903c0f4491e24c3d6ed"
+  },
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/rendering-verification/execution-activation.json",
+    "sha256": "eac441e31e20072478506ccbcfa0afc7e6626ba056ce400f1bd86be7fd078274"
+  },
+  "renderingAudit": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/rendering-verification/rendering-audit.json",
+    "sha256": "63d991085d176365aa3f8e5a673624527d48465df6ff448244f2babe4473bc64"
+  },
+  "explicitOrder": [
+    "127",
+    "67",
+    "85",
+    "49",
+    "186",
+    "81",
+    "148",
+    "47",
+    "03",
+    "185"
+  ],
+  "browserEvidence": {
+    "debates": 10,
+    "sections": 53,
+    "moves": 203,
+    "browserDocumentLoads": 80,
+    "diagnosticBootstrapLoads": 40,
+    "measuredCandidateLoads": 40,
+    "viewportResults": 20,
+    "screenshots": 40,
+    "validJpegScreenshots": 40,
+    "nonblankScreenshots": 40,
+    "dimensionMatchedScreenshots": 40,
+    "collapsedOpenPairsWithDifferentHashes": 20,
+    "requiredBooleanChecks": 760,
+    "rawAccordionStateObservations": 100,
+    "exactViewportPhaseChecks": 60,
+    "pointerInteractionTests": 20,
+    "keyboardEnterTests": 20,
+    "keyboardSpaceTests": 20,
+    "keyboardInitialPageNavigateCalls": 20,
+    "keyboardRuntimeLocationAssignCalls": 20,
+    "consoleErrors": 0,
+    "consoleWarnings": 0,
+    "pageErrors": 0,
+    "failedRequests": 0,
+    "horizontalOverflowFailures": 0,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "directCostUsd": 0
+  },
+  "executionDiscipline": {
+    "viewportAttempts": 20,
+    "viewportRetries": 0,
+    "candidateNavigationRetries": 0,
+    "timeoutExtensions": 0,
+    "alternativeNavigationMethods": 0,
+    "partialPassPromotion": false,
+    "priorEvidenceReuse": false,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directCostUsd": 0
+  },
+  "authorization": {
+    "retry": false,
+    "timeoutExtension": false,
+    "alternativeNavigationMethod": false,
+    "renderingRepair": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "productionMutationPerformed": false
+}
