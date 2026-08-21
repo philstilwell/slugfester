@@ -1,0 +1,266 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-activation-successor",
+  "protocolId": "assessment-production-post-canary-batch-03-dispute-only-adjudication",
+  "status": "frozen-two-batch-03-debate-124-field-disjoint-adjudication-correction-contexts-authorized",
+  "frozenAt": "2026-08-20T21:30:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "recoveryAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-03/failure-recovery-standing-authorization.json",
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-124-timeout-diagnosis.json",
+  "originalFailure": {
+    "contextIndex": 0,
+    "acceptedOutputs": 0,
+    "failedPartialOutputReusable": false,
+    "originalPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/packets/debate-124.json",
+    "originalPacketSha256": "505caebb69cf1b56f31af4335847e919a541f80e3c8d04fb26b4d1a585a2bbdc"
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "modelInputs": {
+    "rubric": "docs/reassessment-rubric-v2.1.md",
+    "decomposedRubric": "docs/reassessment-rubric-v4.0.md",
+    "derivedFindingsRubric": "docs/reassessment-rubric-v4.0.1.md",
+    "boundedInventoryRubric": "docs/reassessment-rubric-v4.1.md",
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "adjudicationWorkflow": "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md",
+    "schema": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "shardId": "shard-01",
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/packets/debate-124-shard-01.json",
+      "packetSha256": "e6d68ca2d86b56c12eb5dccd1586d7b91c7e395bd9987e348d026074f004c17f",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/outputs/debate-124-shard-01.json",
+      "disputedMoves": 12,
+      "burdenAdjustmentDisputes": 1,
+      "candidateSelections": 35,
+      "audioTranscriptInputs": [],
+      "packetBytes": 178149,
+      "copiedInputBytes": 213921,
+      "moveIds": [
+        "con-religion-valorizes-dogma",
+        "con-explicit-immoral-scriptural-commands",
+        "pro-integrated-canonical-development",
+        "pro-revelation-psychological-pattern",
+        "con-reinterpretation-loses-constraint",
+        "pro-word-as-antidote-to-dogma",
+        "pro-interpretive-fact-value-mediation",
+        "pro-narrative-moral-limiting-cases",
+        "con-universal-misery-ground",
+        "pro-truthful-updating-over-dogma",
+        "pro-transpersonal-god-language",
+        "con-god-redefinition-omits-agent"
+      ],
+      "burdenAdjustmentSides": [
+        "pro"
+      ]
+    },
+    {
+      "contextIndex": 1,
+      "shardId": "shard-02",
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/packets/debate-124-shard-02.json",
+      "packetSha256": "a3d1d796d59b4c3096ecda14a770271a770c248aa29be62a909d457bc676f57e",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/outputs/debate-124-shard-02.json",
+      "disputedMoves": 11,
+      "burdenAdjustmentDisputes": 1,
+      "candidateSelections": 32,
+      "audioTranscriptInputs": [
+        {
+          "moveId": "con-heuristics-fail-under-change",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/con-heuristics-fail-under-change.transcript.json",
+          "modelInputFile": "audio-transcript-con-heuristics-fail-under-change.json",
+          "sha256": "3baf9294c825764051069481143b6d96820c12dd89eac651142e6ab811f97f67"
+        },
+        {
+          "moveId": "pro-rational-instruction-behavioral-limit",
+          "sourcePath": "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/pro-rational-instruction-behavioral-limit.transcript.json",
+          "modelInputFile": "audio-transcript-pro-rational-instruction-behavioral-limit.json",
+          "sha256": "2534981c9101fac0f5a8695928bc8167953a037eec173467c0226de8a4a3db3d"
+        }
+      ],
+      "packetBytes": 120122,
+      "copiedInputBytes": 173134,
+      "moveIds": [
+        "pro-penitent-prayer-as-correction",
+        "con-prayer-naturalized-psychology",
+        "con-conflicting-traditions-deeper-reality",
+        "pro-cross-domain-recurrent-patterns",
+        "con-variation-challenges-recurring-patterns",
+        "pro-hierarchy-of-moral-universals",
+        "con-heuristics-fail-under-change",
+        "pro-rational-instruction-behavioral-limit",
+        "con-causal-knowledge-improves-guidance",
+        "con-revisable-reality-directed-worldview",
+        "pro-evolved-implicit-guidance"
+      ],
+      "burdenAdjustmentSides": [
+        "con"
+      ]
+    }
+  ],
+  "mergePlan": {
+    "originalPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/packets/debate-124.json",
+    "originalPacketSha256": "505caebb69cf1b56f31af4335847e919a541f80e3c8d04fb26b4d1a585a2bbdc",
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-124.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-analysis.json",
+    "originalMoveOrder": [
+      "con-religion-valorizes-dogma",
+      "con-explicit-immoral-scriptural-commands",
+      "pro-integrated-canonical-development",
+      "pro-revelation-psychological-pattern",
+      "con-reinterpretation-loses-constraint",
+      "pro-word-as-antidote-to-dogma",
+      "pro-interpretive-fact-value-mediation",
+      "pro-narrative-moral-limiting-cases",
+      "con-universal-misery-ground",
+      "pro-truthful-updating-over-dogma",
+      "pro-transpersonal-god-language",
+      "con-god-redefinition-omits-agent",
+      "pro-penitent-prayer-as-correction",
+      "con-prayer-naturalized-psychology",
+      "con-conflicting-traditions-deeper-reality",
+      "pro-cross-domain-recurrent-patterns",
+      "con-variation-challenges-recurring-patterns",
+      "pro-hierarchy-of-moral-universals",
+      "con-heuristics-fail-under-change",
+      "pro-rational-instruction-behavioral-limit",
+      "con-causal-knowledge-improves-guidance",
+      "con-revisable-reality-directed-worldview",
+      "pro-evolved-implicit-guidance"
+    ],
+    "originalBurdenOrder": [
+      "pro",
+      "con"
+    ],
+    "requiredCandidateSelections": 67,
+    "everyOriginalFieldAcceptedExactlyOnce": true,
+    "validateMergedOutputAgainstOriginalPacket": true
+  },
+  "executionPolicy": {
+    "contexts": 2,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumParallelContexts": 2,
+    "rampPhases": [
+      {
+        "phase": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true
+      },
+      {
+        "phase": 2,
+        "contextIndexes": [
+          1
+        ],
+        "expansionRequiresAllValid": true
+      }
+    ],
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 900000,
+    "maximumMinutesPerContext": 12,
+    "maximumMeanMinutes": 9.5,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "terminateIsolatedProcessGroupAtFrozenTimeout": true,
+    "failedPartialOutputReusable": false
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-model-execution.json",
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-124.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-analysis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/failure-recovery-standing-authorization.json": "f090b4f6302f8aac4938303fb89e1229dfea5115c23fe172546eb7d27006819f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-124-timeout-diagnosis.json": "02d2fc1e233dd4028699b0cabed684f731ed759c3444d96bf616d20e10af0ff3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/execution-activation.json": "fb4bd6c00eecdcb22dfe7d39af2755f724c503d51e2edc968919c246256b3126",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/model-execution.json": "2d26eff63ca7261ab5e255e9c3252210df62a3318a4e644e99454f8e62a871cb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/analysis.json": "10758a72471d9b705b88f35a4625db0bc64ca9cba95eefccf40e250826c540a8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/packets/debate-124.json": "505caebb69cf1b56f31af4335847e919a541f80e3c8d04fb26b4d1a585a2bbdc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/adjudication.schema.json": "ee6dacadcc3b9f558e45ad55fd17bd2616c26c3790dc1aba2b2ca41ce3f41c6d",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md": "7ea2da737b26349826c3e8ff595f41524afd1f4b23294f3783923946601fee0c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md": "afe02e43ab72c1af4104730e1097bc2fb783c2dd7ab803d3efeb5a61efe4f0d1",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4221175-decomposed-adjudication.mjs": "485cd043a9fe4ab2bdc69f67479672d18f05ce44bde9122663009a0a45ce98e1",
+    "scripts/lib/v42211728-hard-route-adjudication.mjs": "53d850f6d25f5b1d71f7be6c81ad4c642c13bad204a5c01947e89b3410dbb388",
+    "scripts/lib/assessment-production-post-canary-batch-03-dispute-adjudication.mjs": "788d21eab5dca55b4477164d183a5d3330527ce16240667bbff6ef39cb667613",
+    "scripts/lib/assessment-production-post-canary-batch-03-failure-recovery-standing-authorization.mjs": "e0c1fb1b6bf390b893bd57921064128094fa5a1cbbbe0ff1ea79d44e23533ca1",
+    "scripts/prepare-assessment-production-post-canary-batch-03-debate-124-adjudication-correction.mjs": "2d2825095da72237f5723fd760393e6f22d0f7bbb3a77ae5bfa30df39eb8cb97",
+    "scripts/test-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-preparation.mjs": "41a76dc5cf988b40384ead231450b2cc0834889652a8dc5393be329ae819c890",
+    "scripts/activate-assessment-production-post-canary-batch-03-debate-124-adjudication-correction.mjs": "4a1ed69c6379aa017ced5eae023adf2bc9b79a3836b26398b5f07f125e674f10",
+    "scripts/run-assessment-production-post-canary-batch-03-debate-124-adjudication-correction.mjs": "37505cba1e98c11ece85a573edda0a97202ad1cdd6098b9e6135b36566fe188e",
+    "scripts/merge-assessment-production-post-canary-batch-03-debate-124-adjudication-correction.mjs": "baea3ab62125f37636d24d0417cad988e0646485c30980105e9b92f2766ccbd7",
+    "scripts/test-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-gate.mjs": "02cd88ce497c62a3ed8616919e20d3ed6526fdda69c4f47eab1092aa16bb02ae",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/con-heuristics-fail-under-change.transcript.json": "3baf9294c825764051069481143b6d96820c12dd89eac651142e6ab811f97f67",
+    "output/transcribe/assessment-production-post-canary-batch-03-audio-verification/debate-124/transcripts/pro-rational-instruction-behavioral-limit.transcript.json": "2534981c9101fac0f5a8695928bc8167953a037eec173467c0226de8a4a3db3d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-harness-diagnosis.json": "94b7b539f379efcf0d0f4ed982defa0ba19ee8d815d487ab5445c9cccdf707ad",
+    "scripts/prepare-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-activation-successor.mjs": "f09e70ccef4989d7ea9d92a3c8388851cdc35b02e6e1b2a09ab09654e55e6932",
+    "scripts/test-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-activation-successor.mjs": "edecccd4f647e681bd14170017c13d43ca00ca67d48ee11d7a4a4d9232b739dc"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/outputs/debate-124-shard-01.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/outputs/debate-124-shard-02.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-124.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-analysis.json"
+  ],
+  "authorization": {
+    "executionActivation": false,
+    "adjudicationModelContexts": true,
+    "deterministicMergeAndValidation": true,
+    "judgmentModelContexts": false,
+    "paidServices": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "execute-two-debate-124-field-disjoint-correction-contexts-once-with-corrected-activation-path",
+  "authorizedAt": "2026-08-20T22:00:00.000Z",
+  "checkpointCommit": "4220aecc73ee268ce4ccfaec47be98e5db857b6b",
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-preparation-manifest.json",
+    "sha256": "b8afd66b31c5bfaff0702f554b94cbed3c2df6a9cf6814a73a056ee0109eb0a9"
+  },
+  "recoveryAuthorizationSha256": "f090b4f6302f8aac4938303fb89e1229dfea5115c23fe172546eb7d27006819f",
+  "supersedesActivation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-execution-activation.json",
+    "sha256": "98292715af6346f7ee0e48571655cbc4f2da0aed54f1f39c2976c2c3912ba44c"
+  },
+  "harnessCorrectionDiagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-harness-diagnosis.json",
+    "sha256": "94b7b539f379efcf0d0f4ed982defa0ba19ee8d815d487ab5445c9cccdf707ad"
+  }
+}
