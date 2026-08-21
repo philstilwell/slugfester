@@ -102,11 +102,11 @@ export const debateSummaries = [
     "number": "03",
     "title": "Christopher Hitchens vs Dinesh D'Souza: Is Religion the Problem?",
     "label": "Religion and public reason",
-    "date": "2026-05-28",
+    "date": "2026-08-21",
     "duration": "1 hr 48 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=9V85OykSDT8",
     "motion": "Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
-    "summary": "Hitchens argues religion is man-made and morally dangerous; D'Souza argues God explains facts that secular accounts leave unresolved.",
+    "summary": "Hitchens challenged revelation, supernatural explanation, and religious authority; D'Souza defended theism through comparative explanation, design, morality, purpose, and human agency.",
     "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
@@ -121,27 +121,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 76,
-      "con": 73
+      "pro": 83,
+      "con": 75
     },
     "sections": [
       {
-        "title": "Doubt and explanation"
+        "title": "Inquiry, Revelation, and the Testability of Religious Claims"
       },
       {
-        "title": "Human origins of religion"
+        "title": "Cosmic Origins, Life, and the Inference to Design"
       },
       {
-        "title": "Science, life, and design"
+        "title": "Morality, Altruism, and Human Responsibility"
       },
       {
-        "title": "Falsifiability and deism"
+        "title": "Purpose, Mortality, Faith, and Religious Experience"
       },
       {
-        "title": "Morality and violence"
-      },
-      {
-        "title": "Purpose and closing"
+        "title": "Religious Authority, Providence, and Political Violence"
       }
     ]
   },
@@ -2156,11 +2153,11 @@ export const debateSummaries = [
     "number": "47",
     "title": "Michael Jones vs Lawrence Krauss: Christianity or Secular Ethics - What's Best for Society?",
     "label": "Christian social goods and secular inquiry",
-    "date": "2026-06-01",
+    "date": "2026-08-21",
     "duration": "2 hr 23 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yef-BFukQWg",
     "motion": "Which is better for society: Christianity, understood as a Christian-value society with a largely Christian population, or secular ethics?",
-    "summary": "Jones argues data and history show Christianity produces stronger charity, social health, fertility, rights, and science; Krauss argues secular Enlightenment, science, fallibilism, and liberal ethics best explain modern progress.",
+    "summary": "Christianity's institutional and moral arguments narrowly outperformed secular ethics, while secular challenges concerning heterogeneity, fallibilism, causation, and equal standing remained substantial.",
     "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
@@ -2175,30 +2172,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 81,
+      "pro": 79,
       "con": 76
     },
     "sections": [
       {
-        "title": "Opening social case"
+        "title": "Comparative Social and Psychological Outcomes"
       },
       {
-        "title": "Missionaries and modern rights"
+        "title": "Origins and Operation of Modern Institutions"
       },
       {
-        "title": "Fertility and replacement"
+        "title": "Foundations of Morality, Dignity, and Cooperation"
       },
       {
-        "title": "Science and secular method"
+        "title": "Doctrine, Dogma, and Corrective Fallibilism"
       },
       {
-        "title": "Witch trials and violence"
-      },
-      {
-        "title": "Moral motivation"
-      },
-      {
-        "title": "Closing frameworks"
+        "title": "Political Liberty and Social Continuity"
       }
     ]
   },
@@ -2255,11 +2246,11 @@ export const debateSummaries = [
     "number": "49",
     "title": "Jay Dyer vs Matt Dillahunty: Transcendental Argument for Theism",
     "label": "Transcendental theism and logic",
-    "date": "2026-06-01",
+    "date": "2026-08-21",
     "duration": "2 hr 46 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=AajJBhdRpDA",
     "motion": "Does the transcendental argument show that Orthodox Christian theism is needed to ground logic, truth, induction, ethics, and knowledge?",
-    "summary": "Dyer argues that transcendental categories cohere only within Orthodox theism; Dillahunty accepts fallible use of logic while denying that a divine foundation has been shown necessary.",
+    "summary": "Dyer argues Orthodox theism uniquely grounds transcendental categories; Dillahunty counters that fallible reliability permits rational inquiry without an unproved divine guarantor.",
     "sides": {
       "pro": {
         "name": "Orthodox theism",
@@ -2273,27 +2264,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 73,
-      "con": 84
+      "pro": 76,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Opening transcendental case"
+        "title": "Necessity of an Orthodox theistic ground"
       },
       {
-        "title": "Coherence and circularity"
+        "title": "Logic, necessity, and the divine mind"
       },
       {
-        "title": "Arbitrariness and necessity"
+        "title": "Knowledge, certainty, and fallible access"
       },
       {
-        "title": "Crossfire on skepticism"
+        "title": "Induction, natural regularity, and science"
       },
       {
-        "title": "Ontology and meta-logic"
+        "title": "Transcendental proof, coherentism, and argument form"
       },
       {
-        "title": "Presuppositions and closing"
+        "title": "Worldview commitments, ethics, and skeptical neutrality"
       }
     ]
   },
@@ -3104,11 +3095,11 @@ export const debateSummaries = [
     "number": "67",
     "title": "Michael Jones vs James Fodor: The Digital Physics Argument for God",
     "label": "Digital physics and theistic idealism",
-    "date": "2026-06-08",
+    "date": "2026-08-21",
     "duration": "2 hr 07 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=b2HZu6BcxHU",
     "motion": "Does digital physics, emergent spacetime, quantum information, and idealist metaphysics make God the best explanation of reality, or is a materialist ontology simpler and better disciplined?",
-    "summary": "Jones argues that emergent physical reality and information-theoretic physics point to a necessary mind; Fodor argues that the physics is unsettled, the move to mind is underwarranted, and theistic idealism explains too little.",
+    "summary": "Jones links emergent spacetime and structural physics to theistic idealism; Fodor counters that the science permits nonmental foundations and better constrains explanation.",
     "sides": {
       "pro": {
         "name": "Theistic idealism",
@@ -3122,30 +3113,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 78,
-      "con": 86
+      "pro": 71,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Emergence and digital physics"
+        "title": "Evidence for Emergent Spacetime"
       },
       {
-        "title": "From information to mind"
+        "title": "From Structure and Information to Ontology"
       },
       {
-        "title": "Parsimony and ontology"
+        "title": "From Emergence to Mind and God"
       },
       {
-        "title": "Brute facts and regularity"
+        "title": "Parsimony, Contingency, and Brute Facts"
       },
       {
-        "title": "Agency and cosmological alternatives"
-      },
-      {
-        "title": "Holography and scientific support"
-      },
-      {
-        "title": "Theology, falsifiability, and closure"
+        "title": "Explanatory Constraint and Empirical Discrimination"
       }
     ]
   },
@@ -3764,11 +3749,11 @@ export const debateSummaries = [
     "number": "81",
     "title": "Josh Rasmussen vs Graham Oppy: Theism, Naturalism, and Ultimate Reality",
     "label": "Ultimate reality and naturalism",
-    "date": "2026-06-19",
+    "date": "2026-08-21",
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=YhqFdIb13bk",
     "motion": "Is a theistic supreme foundation or a naturalistic initial reality the better account of ultimate reality, mind, and worldview simplicity?",
-    "summary": "Rasmussen argues that removing arbitrary limits from the foundation points toward supreme value, mind, and explanatory unity; Oppy argues that naturalistic theory comparison should remain cautious, science-facing, and evaluated by total worldview costs.",
+    "summary": "Rasmussen develops unified theistic foundations from unlimitedness and consciousness; Oppy answers with naturalistic continuity, neural identity, and disciplined whole-worldview comparison.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -3783,27 +3768,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 87
+      "pro": 81,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Shared Method"
+        "title": "Initial Reality, Naturalness, and Categorical Continuity"
       },
       {
-        "title": "Naturalism's Border"
+        "title": "Arbitrary Limits, Supreme Value, and Personhood"
       },
       {
-        "title": "Necessity and Limits"
+        "title": "Necessity, Unification, and Explanatory Stopping Points"
       },
       {
-        "title": "Axioms and Unity"
+        "title": "Consciousness, Introspection, and Physical Identity"
       },
       {
-        "title": "Trinity and Downstream Costs"
-      },
-      {
-        "title": "Mind and Whole Worldviews"
+        "title": "Local Analysis and Whole-Worldview Comparison"
       }
     ]
   },
@@ -3950,11 +3932,11 @@ export const debateSummaries = [
     "number": "85",
     "title": "Peter Atkins vs Keith Fox: God vs Science Debate",
     "label": "Science, God, and human futures",
-    "date": "2026-06-23",
+    "date": "2026-08-21",
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=2pDEBRG_9_Q",
     "motion": "Do science, evolution, and future technology make God unnecessary, or do value, personhood, origins, and hope point beyond scientific materialism?",
-    "summary": "Atkins argues science and evolution make God unnecessary; Fox argues science explains mechanisms while Christianity addresses meaning, dignity, duty, and hope.",
+    "summary": "Atkins defended scientific materialism and finite purpose; Fox more consistently distinguished mechanism from metaphysics while grounding morality, personhood, hope, and technological restraint.",
     "sides": {
       "pro": {
         "name": "Scientific materialism",
@@ -3968,27 +3950,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 82
+      "pro": 70,
+      "con": 85
     },
     "sections": [
       {
-        "title": "Scope of Science"
+        "title": "Epistemic Scope and Supernatural Evidence"
       },
       {
-        "title": "God and Explanation"
+        "title": "Cosmic and Biological Origins"
       },
       {
-        "title": "Morality and Harm"
+        "title": "Morality, Meaning, and Hope"
       },
       {
-        "title": "AI and Personhood"
+        "title": "Personhood, Artificial Intelligence, and Genetic Technology"
       },
       {
-        "title": "Biotechnology and Space"
-      },
-      {
-        "title": "Origins, Purpose, and Hope"
+        "title": "Science, Faith, and Human Flourishing"
       }
     ]
   },
@@ -5927,11 +5906,11 @@ export const debateSummaries = [
     "number": "127",
     "title": "Matt Slick vs Scott Clifton: Does Objective Morality Require God?",
     "label": "Objective morality and theistic foundations",
-    "date": "2026-07-30",
+    "date": "2026-08-21",
     "duration": "1 hr 48 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=uJeKS705aXs",
     "motion": "Does objective morality require God as its necessary foundation, or can secular moral reasoning explain the relevant moral truths and obligations?",
-    "summary": "Slick argues that moral absolutes need God's revealed character as their objective standard; Clifton argues that this either becomes circular or fails to outperform secular moral inquiry.",
+    "summary": "Slick grounds universal morality in God's immutable character, while Clifton's secular alternatives and circularity objections more completely address objectivity, obligation, and impartial justification.",
     "sides": {
       "pro": {
         "name": "Christian moral foundation",
@@ -5945,30 +5924,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 72,
-      "con": 82
+      "pro": 70,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Starting Points"
+        "title": "Moral Objectivity and the Existence of Absolutes"
       },
       {
-        "title": "God's Nature"
+        "title": "Divine Nature, Necessity, and Nonarbitrariness"
       },
       {
-        "title": "Omniscience and Consequences"
+        "title": "Secular Welfare and Impartial Rule Construction"
       },
       {
-        "title": "Moral Absolutes"
+        "title": "Moral Obligation and the Is-Ought Bridge"
       },
       {
-        "title": "Hard Cases"
+        "title": "Omniscience, Revelation, and Moral Knowledge"
       },
       {
-        "title": "Arbitrariness and Oughts"
-      },
-      {
-        "title": "Closing Claims"
+        "title": "Counterexamples, Motivation, and Practical Force"
       }
     ]
   },
@@ -6910,11 +6886,11 @@ export const debateSummaries = [
     "number": "148",
     "title": "David Baggett vs Matt Dillahunty: The Moral Argument for God",
     "label": "Moral authority, God, and secular ethics",
-    "date": "2026-07-31",
+    "date": "2026-08-21",
     "duration": "2 hr 02 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=YWeOWtmCoCs",
     "motion": "Do objective moral facts, moral knowledge, moral transformation, and moral rationality make theism a better explanation than secular ethical theories?",
-    "summary": "Baggett argues that morality's categorical authority and its fourfold character give some abductive support to classical theism; Dillahunty argues that the moral phenomena need grounding and that God is not yet a justified explanatory candidate.",
+    "summary": "Baggett’s qualified theistic explanation meets Dillahunty’s secular mechanisms, candidacy constraints, access objections, and hiddenness challenge across moral authority, knowledge, transformation, and flourishing.",
     "sides": {
       "pro": {
         "name": "Theistic moral explanation",
@@ -6928,24 +6904,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 73,
-      "con": 83
+      "pro": 85,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Four Moral Phenomena and Candidate Explanations"
+        "title": "Abductive Method, Candidate Pool, and Conclusion"
       },
       {
-        "title": "Moral Authority, Guilt, and Well-Being"
+        "title": "Objective Moral Facts and Categorical Authority"
       },
       {
-        "title": "Empathy and First Moral Principles"
+        "title": "Moral Knowledge, Guilt, and Conscience"
       },
       {
-        "title": "Moral Law, Naturalism, and Divine Goodness"
+        "title": "Moral Transformation and Its Horizon"
       },
       {
-        "title": "Ultimate Reality, Bad Lots, and Closing"
+        "title": "Moral Rationality, Flourishing, and Scope"
+      },
+      {
+        "title": "Comparative Worldview Fit and Theistic Liabilities"
       }
     ]
   },
@@ -8546,11 +8525,11 @@ export const debateSummaries = [
     "number": "185",
     "title": "Daniel Dennett vs Gregg Caruso: Free Will and Moral Responsibility",
     "label": "Compatibilism, desert, and punishment",
-    "date": "2026-08-01",
+    "date": "2026-08-21",
     "duration": "2 hr 6 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=AxhA7S3q49o",
     "motion": "Does the natural human capacity for reasons-responsive control justify free will, moral desert, and responsibility practices?",
-    "summary": "Dennett defends a socially constructed compatibilist freedom grounded in control and accountability; Caruso denies basic desert while preserving forward-looking moral dialogue, public safety, and proportionate sanctions.",
+    "summary": "Caruso’s carefully delimited desert skepticism and forward-looking alternatives outperform Dennett’s practical compatibilism, whose institutional strengths leave ultimate sourcehood and desert’s independent role unresolved.",
     "sides": {
       "pro": {
         "name": "Compatibilist free will is worth wanting",
@@ -8564,27 +8543,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 90,
-      "con": 94
+      "pro": 79,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Which free will is under dispute?"
+        "title": "Reasons-Responsive Control and the Ability to Do Otherwise"
       },
       {
-        "title": "Control, responsibility, and social competence"
+        "title": "Sourcehood, Determinism, and Manipulation"
       },
       {
-        "title": "Desert and the deterministic agents"
+        "title": "Basic Desert and Ordinary Compatibilist Desert"
       },
       {
-        "title": "Quarantine, proportionality, and public safety"
+        "title": "Punishment, Public Safety, and Institutional Justification"
       },
       {
-        "title": "Manipulation and the boundary of control"
-      },
-      {
-        "title": "Rule systems, reactive attitudes, and reform"
+        "title": "Reactive Attitudes and Reform of Responsibility Practices"
       }
     ]
   },
@@ -8593,11 +8569,11 @@ export const debateSummaries = [
     "number": "186",
     "title": "Michael Huemer vs Robert Sapolsky: Does Free Will Exist—and Does It Matter?",
     "label": "Agency, biological causation, and responsibility",
-    "date": "2026-08-01",
+    "date": "2026-08-21",
     "duration": "1 hr 26 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=FjAYvhv1-Lg",
     "motion": "Do people sometimes control which of multiple genuinely available actions occurs, and does that freedom justify responsibility?",
-    "summary": "Huemer defends alternative possibilities through deliberation, rational norms, and desert; Sapolsky presents behavior as an unbroken biological-environmental causal arc and urges radical reform of praise and blame.",
+    "summary": "Huemer challenges the leap from pervasive causal influence to determination, while Sapolsky explains mechanistic change and presses a humane rejection of retributive desert.",
     "topicCategory": "mind-consciousness-free-will",
     "sides": {
       "pro": {
@@ -8612,27 +8588,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 91,
-      "con": 89
+      "pro": 83,
+      "con": 80
     },
     "sections": [
       {
-        "title": "From behavioral influence to determination"
+        "title": "Causal explanation, influence, and genuinely available alternatives"
       },
       {
-        "title": "Is determinist reasoning self-defeating?"
+        "title": "Intuition, scientific evidence, and the burden of proof"
       },
       {
-        "title": "Intuition, appearance, and epistemic foundations"
+        "title": "Control, deliberation, change, and reason-responsive agency"
       },
       {
-        "title": "Retribution and the innocent defendant"
+        "title": "Responsibility, moral desert, punishment, and humane practice"
       },
       {
-        "title": "Scientific burden and the shrinking space for freedom"
-      },
-      {
-        "title": "Brute choice, compatibilism, and reasons"
+        "title": "Concepts of freedom, explanatory stopping points, and indeterminacy"
       }
     ]
   },
