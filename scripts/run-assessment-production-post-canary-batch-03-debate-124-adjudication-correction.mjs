@@ -21,7 +21,7 @@ const RECOVERY_ROOT =
   "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery";
 
 const activationPath =
-  `${RECOVERY_ROOT}/execution-activation.json`;
+  `${RECOVERY_ROOT}/correction-execution-activation-1.json`;
 const manifest = JSON.parse(await readFile(activationPath, "utf8"));
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const exists = (file) => access(file).then(() => true, () => false);

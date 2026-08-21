@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-harness-diagnosis",
+  "status": "frozen-diagnosed-debate-124-correction-pre-model-activation-path-mismatch",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "124",
+  "failure": {
+    "classification": "pre-model-activation-path-resolution-failure",
+    "requestedPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/execution-activation.json",
+    "frozenActivationPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-execution-activation.json",
+    "errorCode": "ENOENT",
+    "modelProcessesStarted": 0,
+    "modelContextsAttempted": 0,
+    "outputsWritten": 0,
+    "paidServices": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "correction": {
+    "operation": "replace-runner-activation-path-and-issue-authenticated-successor-activation",
+    "correctedPath": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-execution-activation-1.json",
+    "originalPacketsPreserved": true,
+    "originalSchemasPreserved": true,
+    "modelSettingsPreserved": true,
+    "schedulerPreserved": true,
+    "timeoutPreserved": true,
+    "attemptsConsumed": 0
+  },
+  "hashes": {
+    "originalActivationSha256": "98292715af6346f7ee0e48571655cbc4f2da0aed54f1f39c2976c2c3912ba44c",
+    "authenticatedOriginalRunnerSha256": "32dd55b89ccc3ca4f58898f3b51395240d42d4c7950ad401d38bd4cc9b965ad5",
+    "correctedRunnerSha256": "37505cba1e98c11ece85a573edda0a97202ad1cdd6098b9e6135b36566fe188e"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-execution-activation.json": "98292715af6346f7ee0e48571655cbc4f2da0aed54f1f39c2976c2c3912ba44c",
+    "scripts/run-assessment-production-post-canary-batch-03-debate-124-adjudication-correction.mjs": "37505cba1e98c11ece85a573edda0a97202ad1cdd6098b9e6135b36566fe188e",
+    "scripts/diagnose-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-harness.mjs": "c6f53718bfb67f8a002e14cfcc1b79ad68ef762e0a3cde3763840453a4ba2c90",
+    "scripts/test-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-harness-diagnosis.mjs": "45f35fd84af9e8fc5bf61964e4ccb45d4b79437cd640226d94c6aedca0626ae1",
+    "scripts/prepare-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-activation-successor.mjs": "f09e70ccef4989d7ea9d92a3c8388851cdc35b02e6e1b2a09ab09654e55e6932",
+    "scripts/test-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-activation-successor.mjs": "edecccd4f647e681bd14170017c13d43ca00ca67d48ee11d7a4a4d9232b739dc"
+  },
+  "nextAuthorizedAction": "freeze-authenticated-debate-124-correction-activation-successor"
+}
