@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-publication-finalization-analysis",
+  "protocolId": "assessment-production-post-canary-batch-04-publication-finalization",
+  "status": "ten-debate-batch-04-publication-finalization-passed",
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "gate": {
+    "sourceHashesPassed": true,
+    "explicitOrderPassed": true,
+    "finalCandidatesPassed": 10,
+    "expectedFinalCandidates": 10,
+    "moves": 203,
+    "displayFieldsChanged": 0,
+    "participantScoresChanged": false,
+    "deterministicFinalizationPasses": 1,
+    "reruns": 0,
+    "modelContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePasses": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "compatibilityBoundary": {
+    "stagingFinalizationPermittedAfterSeparateActivation": true,
+    "renderingVerificationPermittedAfterFinalizationPasses": true,
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "blockers": [
+      "batch-04-site-ledger-adapter-and-validator-route"
+    ]
+  },
+  "preservedControls": {
+    "exactModelLabel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true,
+    "integerRoundedTiePolicyPreserved": true,
+    "priorJudgmentsChanged": false,
+    "scoresChanged": false
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/preparation-manifest.json",
+    "compatibilityAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/compatibility-analysis.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/analysis.json",
+    "outputBundle": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/finalization-audit.json",
+    "finalCandidates": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-127.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-67.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-85.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-49.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-186.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-81.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-148.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-47.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-03.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/final-candidates/debate-185.json"
+    ],
+    "provenance": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-127.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-67.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-85.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-49.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-186.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-81.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-148.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-47.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-03.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/provenance/debate-185.json"
+    ],
+    "preview": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-finalization/output-bundle/previews/index.html"
+  },
+  "authorization": {
+    "renderingVerificationPreparation": true,
+    "renderingVerification": false,
+    "compatibilityRemedyPlanPreparation": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-04-rendering-verification-under-standing-authorization"
+}
