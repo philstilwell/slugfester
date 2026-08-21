@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-3-analysis",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-3",
+  "status": "batch-03-publication-resumption-3-failed-stop-required",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "gate": {
+    "contextsPlanned": 5,
+    "contextsAttempted": 5,
+    "contextsPassed": 4,
+    "contextsFailed": 1,
+    "contextsUnattempted": 0,
+    "acceptedPriorDebates": 5,
+    "completeTenDebateCohortReplayPassed": false,
+    "cohort": {
+      "debates": 9,
+      "moves": 181,
+      "critiques": 181,
+      "exactSourceQuotes": 18,
+      "overallCommentarySides": 18,
+      "aiExtensionSides": 18,
+      "noveltyItems": 152,
+      "newArguments": 36,
+      "modelAuthoredScores": 0,
+      "lockedScoresUnchanged": true
+    },
+    "attempts": 5,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "modelAuthoredScores": 0
+  },
+  "failureMessage": null,
+  "sourceHashes": {
+    "preparation": "ba906e800dced84b2b708faeabf2581950ba14a8249bc5c6b2065bb9739eba4c",
+    "activation": "b916427de3a5a920326a711c906873e7bd22d0e6593877feeef728136f11797b",
+    "execution": "d0e95ab001c2988b9468d3d3b092256acf7e3e164ec6061eac462c987e9e6bea"
+  },
+  "totals": {
+    "modelContexts": 5,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "deterministicCompilationPreparation": false,
+    "repairPreparation": false,
+    "retry": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "stop-without-repair-or-retry-after-failed-publication-model-output"
+}
