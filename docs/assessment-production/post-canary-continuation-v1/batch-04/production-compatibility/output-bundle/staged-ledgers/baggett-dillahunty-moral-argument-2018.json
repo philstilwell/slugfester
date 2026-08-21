@@ -1,0 +1,2309 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-site-ledger-adapter",
+  "protocolId": "assessment-production-post-canary-batch-04-production-compatibility",
+  "status": "frozen-post-canary-batch-04-site-ledger-adapter",
+  "productionCanary": false,
+  "batchNumber": 4,
+  "debateNumber": "148",
+  "debateId": "baggett-dillahunty-moral-argument-2018",
+  "model": "5.6 Sol",
+  "rubric": "Slugfester Reassessment Rubric v2",
+  "scoreProtocolId": "assessment-production-post-canary-batch-04-single-deterministic-score-pass",
+  "sourceLocks": {
+    "finalLedgerSha256": "2c458470e87a431178ebd1453538ffcc2a3eca8469de56ae3e5c4a97d7022e58",
+    "calculatedScoresSha256": "c476980ef5e4eb6d8e712c8af6de18acf0c9439384e1d28438d35a1ba0c3743e",
+    "finalizationAuditSha256": "d68e829739d0d4f21e1423786dfa44e946d4901f1e0544b950db7bafca741871",
+    "renderingAuditSha256": "63d991085d176365aa3f8e5a673624527d48465df6ff448244f2babe4473bc64",
+    "finalCandidateSha256": "983df42206019c24f59090b958d4533032cd8d95564ca4812186b80279e41997",
+    "eventsPath": ".assessment-cache/captions/YWeOWtmCoCs/events.json",
+    "eventsSha256": "ee8165a051b367be8254fcfaa4826cc7a5805ea639346bf0bea144ebd97ac3e3",
+    "finalJudgmentSha256": "85a2436920b65ddf7d165a8d56847877b3b5e37b9192b38d995ff323d01e90ed"
+  },
+  "scoringJudgment": {
+    "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+    "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+    "debateNumber": "148",
+    "debateId": "baggett-dillahunty-moral-argument-2018",
+    "reviewerRole": "integrated-primary-judge",
+    "assessmentModel": "5.6 Sol",
+    "calibrationOnly": true,
+    "isolation": {
+      "legacyAssessmentsUnavailable": true,
+      "calculatedTotalsUnavailable": true,
+      "winnerLabelsUnavailable": true,
+      "otherJudgmentsUnavailable": true,
+      "assessmentProseUnavailable": true,
+      "contaminationDetected": false
+    },
+    "routes": [
+      {
+        "routeId": "pro-abductive-theistic-route",
+        "side": "pro",
+        "description": "Present objective moral facts and duties, moral knowledge, moral transformation, and moral rationality as a connected body of evidence, then compare classical theism with secular ethical accounts under abductive explanatory criteria.",
+        "successCriteria": "The route succeeds if the four moral phenomena warrant explanation, classical theism is a legitimate explanatory candidate, and its account of their authority, accessibility, transformative horizon, and relation to fulfillment provides qualified comparative support for theism.",
+        "motionBridge": {
+          "bridgeId": "pro-qualified-comparative-support",
+          "tier": "motion",
+          "description": "Comparative explanation of the four moral phenomena must provide at least a qualified increase in the plausibility of classical theism within a cumulative case."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "pro-moral-explananda",
+            "tier": "central",
+            "description": "Objective value and categorical obligation, moral knowledge, moral transformation, and morality’s rational relation to fulfillment must be established as genuine explananda."
+          },
+          {
+            "bridgeId": "pro-classical-theism-candidacy",
+            "tier": "central",
+            "description": "A morally perfect, omniscient, and omnipotent creator must qualify as a coherent candidate capable of explaining the identified moral phenomena."
+          },
+          {
+            "bridgeId": "pro-comparative-explanatory-advantage",
+            "tier": "central",
+            "description": "The theistic account must explain the authority and breadth of moral experience better than naturalistic, cultural, instrumental, or axiomatic alternatives."
+          },
+          {
+            "bridgeId": "pro-bounded-abductive-conclusion",
+            "tier": "central",
+            "description": "The comparative advantage must remain evidentially relevant after accounting for prior plausibility, an incomplete candidate pool, combined alternatives, and the argument’s cumulative role."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "pro-categorical-authority-access",
+            "tier": "subsidiary",
+            "description": "Moral phenomenology and properly basic moral apprehension must support irreducible categorical authority rather than merely chosen goals or social conditioning."
+          },
+          {
+            "bridgeId": "pro-transformation-rational-congruence",
+            "tier": "subsidiary",
+            "description": "Theism must offer resources for complete moral transformation and for harmony between moral life and ultimate human fulfillment."
+          }
+        ]
+      },
+      {
+        "routeId": "con-secular-undercutting-route",
+        "side": "con",
+        "description": "Challenge both the proposed moral explananda and the admission of God into the explanatory comparison while showing how well-being, empathy, culture, natural processes, and disciplined inquiry can account for moral judgment and change.",
+        "successCriteria": "The route succeeds if theism lacks demonstrated candidacy or comparative explanatory advantage, or if secular accounts adequately accommodate the four moral phenomena while theistic grounding leaves additional epistemic, methodological, or hiddenness problems.",
+        "motionBridge": {
+          "bridgeId": "con-no-theistic-inference",
+          "tier": "motion",
+          "description": "The four moral phenomena must fail to provide a warranted comparative inference from moral experience to classical theism."
+        },
+        "centralBridges": [
+          {
+            "bridgeId": "con-candidate-pool-constraint",
+            "tier": "central",
+            "description": "God’s eligibility and the adequacy of the explanatory candidate pool must be justified before comparative abduction can support a theistic conclusion."
+          },
+          {
+            "bridgeId": "con-secular-moral-account",
+            "tier": "central",
+            "description": "Well-being, empathy, shared physical needs, learning, culture, and natural processes must adequately explain moral evaluation, conscience, knowledge, and ordinary transformation."
+          },
+          {
+            "bridgeId": "con-no-categorical-grounding-need",
+            "tier": "central",
+            "description": "Objective means-end assessment after adopting foundational values must remain viable without an additional divine source of categorical obligation."
+          },
+          {
+            "bridgeId": "con-theistic-explanatory-liabilities",
+            "tier": "central",
+            "description": "Problems of divine identification, access to divine requirements, unconstrained supernatural hypotheses, and hiddenness must defeat the claimed theistic advantage."
+          }
+        ],
+        "subsidiaryBridges": [
+          {
+            "bridgeId": "con-variable-moral-phenomenology",
+            "tier": "subsidiary",
+            "description": "Variation in guilt and moral intuition must support cultural and psychological explanations rather than an inference to universally apprehended divine authority."
+          },
+          {
+            "bridgeId": "con-limited-abductive-confidence",
+            "tier": "subsidiary",
+            "description": "Any comparative conclusion must be constrained by priors, bad-lot concerns, combined secular alternatives, and the limited reach of moral intuition."
+          }
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "sectionId": "abductive-method-and-candidacy",
+        "title": "Abductive Method, Candidate Pool, and Conclusion",
+        "weightPercent": 20,
+        "rationale": "This issue governs whether classical theism may enter the explanatory comparison, how candidate-pool and prior-plausibility constraints apply, and what qualified conclusion comparative success could support."
+      },
+      {
+        "sectionId": "objective-moral-authority",
+        "title": "Objective Moral Facts and Categorical Authority",
+        "weightPercent": 25,
+        "rationale": "The principal ontological clash concerns whether binding moral obligations are irreducibly categorical and call for a personal moral ground, or can be understood through foundational values and objective relations to well-being."
+      },
+      {
+        "sectionId": "moral-knowledge-and-conscience",
+        "title": "Moral Knowledge, Guilt, and Conscience",
+        "weightPercent": 15,
+        "rationale": "This issue tests whether moral axioms, guilt, and apparent authority disclose genuine moral truths requiring theistic explanation or arise adequately through empathy, culture, learning, and shared human conditions."
+      },
+      {
+        "sectionId": "moral-transformation",
+        "title": "Moral Transformation and Its Horizon",
+        "weightPercent": 12,
+        "rationale": "Transformation is an express part of the motion, requiring comparison between theistic hope for complete moral formation and secular mechanisms that produce behavioral and character change."
+      },
+      {
+        "sectionId": "moral-rationality-and-flourishing",
+        "title": "Moral Rationality, Flourishing, and Scope",
+        "weightPercent": 13,
+        "rationale": "This issue examines whether morality is rationally congruent with ultimate fulfillment and whether flourishing-based accounts can cover categorical duties, animal suffering, character, and apparent conflicts between morality and self-interest."
+      },
+      {
+        "sectionId": "comparative-worldview-fit",
+        "title": "Comparative Worldview Fit and Theistic Liabilities",
+        "weightPercent": 15,
+        "rationale": "The final comparison integrates explanatory breadth with challenges involving divine identification, access, methodological restraint, hiddenness, naturalistic reduction, and the cumulative evidential role claimed for morality."
+      }
+    ],
+    "moves": [
+      {
+        "moveId": "pro-abductive-comparative-framework",
+        "sectionId": "abductive-method-and-candidacy",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "constructive",
+        "proposition": "Theism and secular ethical theories should be compared by standard explanatory criteria for their accounts of moral facts, knowledge, transformation, and rationality.",
+        "sourceSpan": {
+          "startEvent": 168,
+          "endEvent": 253,
+          "excerpt": "knowledge I turns or moral transformation and what I call moral rationality so I appeal to a broader range of moral phenomena than Craig uses and it seems to me that all of these are in need of explanation if they're to be taken seriously and I think they should be we then identify a range of explanatory candidates right from theistic theories to various secular ethical theories"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "David explicitly introduces his own abductive moral argument and develops its phenomena, candidates, criteria, and limited conclusion without a speaker change.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-qualified-comparative-support"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move constructively establishes the comparative abductive method, identifies four classes of moral phenomena, and proposes explanatory criteria and rival candidates."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comparative proposal, its four explananda, and its limited evidential purpose are recoverable and consistently framed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move proposes comparative assessment and a limited evidential conclusion rather than claiming that explanatory comparison deductively proves theism."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly supplies the motion-level comparative framework on which the entire affirmative route depends."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "This constructive methodological proposal does not materially characterize a live opposing argument."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly names moral knowledge, transformation, rationality, phenomena needing explanation, and both theistic and secular candidates.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-abduction-explananda-candidacy",
+        "sectionId": "abductive-method-and-candidacy",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "The abductive case has not justified either that the asserted moral phenomena require further explanation or that God qualifies as a reasonable candidate explanation.",
+        "sourceSpan": {
+          "startEvent": 263,
+          "endEvent": 391,
+          "excerpt": "objective moral phenomena that needed an explanation now we're at the point where okay what are the candidate explanations and I see no justification for why positing a god allow it you know should be accepted as a candidate explanation it seems to me that we would need to when we do when we do abduction normally to make sure that we're not making mistakes we specifically pick out candidates that are reasonable"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "David directly passes the discussion to Matt, and this sustained first-person response is identifiable as Matt's opening critique until David resumes.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "motion",
+          "bridgeId": "pro-qualified-comparative-support"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-abductive-comparative-framework"
+          ],
+          "components": [
+            {
+              "componentId": "con-abduction-explananda-candidacy-component-01",
+              "targetMoveId": "pro-abductive-comparative-framework",
+              "text": "The framework must justify treating the asserted moral phenomena as explananda and admitting God as a reasonable candidate.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-abduction-explananda-candidacy-component-02",
+              "targetMoveId": "pro-abductive-comparative-framework",
+              "text": "The comparison also needs a sufficiently warranted and non-question-begging conception of objective morality.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "Dillahunty directly diagnoses two prerequisites the framework has not supplied—explanandum status and candidate eligibility—and states that their absence blocks the proposed abduction."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The two objections and their conditional relation to the proposed abductive inference are explicitly distinguishable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The lack-of-justification claim is source-grounded, though the move moves quickly from absence in the presentation to inadequacy."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The framework offers comparative rather than deductive support and may treat God as one hypothesis to be assessed rather than presupposed.",
+          "decisiveQualification": "Even a comparative proposal needs some account of why the phenomena are explananda and why the candidate is sufficiently specified to compare."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly attacks whether the motion-level comparative inference may begin or support its proposed conclusion."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it explicitly attacks the framework's decisive prerequisites and states the consequence for the abductive inference."
+          }
+        },
+        "evidenceBasis": "The source conditionally grants objective moral phenomena, then asks what candidates qualify and says no justification has been shown for positing God.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-secular-moral-transformation",
+        "sectionId": "moral-transformation",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Moral transformation can occur through secular natural processes, and even a false belief in divine supervision could motivate behavioral improvement.",
+        "sourceSpan": {
+          "startEvent": 675,
+          "endEvent": 732,
+          "excerpt": "so if we if we know that it can happen through purely secular natural materialistic means so far as we can tell and we have no reason to think that anything beyond the natural world in fact in this change why wouldn't that automatically be the best explanation because I can encourage someone to do good with a lie I can I can see something that is false and get them to do a good"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Matt explicitly isolates moral transformation as one component of David's case and develops a sustained counterexplanation in his own turn.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-secular-moral-account"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-abductive-comparative-framework"
+          ],
+          "components": [
+            {
+              "componentId": "con-secular-moral-transformation-component-01",
+              "targetMoveId": "pro-abductive-comparative-framework",
+              "text": "The claimed need for a distinctively theistic explanation of moral transformation requires comparison with secular mechanisms.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply contacts the framework's transformation explanandum by offering natural processes and separating behavioral efficacy of belief from the truth of that belief."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claims concern possible ordinary behavioral improvement by natural processes and explicitly use the epistemically cautious phrase 'so far as we can tell.'"
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move offers a plausible undercutting alternative and uses a familiar possibility of false belief motivating good action without claiming exhaustive proof."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It materially supports the central secular-account bridge by addressing one of the motion's four express phenomena."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move advances a rival explanation without a sufficiently developed opposing alternative to test for caricature."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive comparative issue but addresses ordinary improvement rather than the later, stronger total-transformation horizon."
+          }
+        },
+        "evidenceBasis": "The excerpt says change can occur through secular material means and notes that a false belief can still motivate a good action.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-bounded-abductive-conclusion",
+        "sectionId": "abductive-method-and-candidacy",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "reply",
+        "proposition": "Comparative explanatory superiority cannot overcome a sufficiently low intrinsic probability, so the moral evidence supplies at most a qualified reason for theism within the total evidence.",
+        "sourceSpan": {
+          "startEvent": 756,
+          "endEvent": 807,
+          "excerpt": "that being the case even if my argument goes through a sort of sufficiently epistemic ly modest conclusion would would be something along these lines morality at least thus construed gives us some reasons to believe in God okay but there's an there all sorts of maybe atheists who could say yeah I'm okay with that but I still think overall when you look at all the other evidence"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "David resumes after Matt and the moderator, explicitly addressing the ambition objection; Matt's brief clarification is incorporated into David's completed answer.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-bounded-abductive-conclusion"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-abduction-explananda-candidacy",
+            "con-secular-moral-transformation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-bounded-abductive-conclusion-component-01",
+              "targetMoveId": "con-abduction-explananda-candidacy",
+              "text": "The abductive argument must state what conclusion follows even if its comparative explanatory case succeeds.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-bounded-abductive-conclusion-component-02",
+              "targetMoveId": "con-secular-moral-transformation",
+              "text": "A secular mechanism for some transformation does not by itself settle the argument's total evidential contribution.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Baggett directly answers the demand for inferential scope by limiting the conclusion to some reason within total evidence; the nearby transformation objection is relevant but not itself answered."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between local moral evidence and an all-things-considered conclusion is express and stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker deliberately claims only some reason for belief and acknowledges that total evidence could still favor atheism."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The candidacy and secular-explanation objections may defeat the argument rather than merely reduce its confidence.",
+          "decisiveQualification": "The reply narrows the conclusion but does not itself establish that the moral evidence has positive likelihood value."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central burden requiring a bounded conclusion after priors, rivals, and total evidence are considered."
+          },
+          "representationalCharity": {
+            "value": 94,
+            "rationale": "The move expressly accommodates the strongest opposing total-evidence position and preserves only the bounded consequence its argument supports."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, the decisive conclusion-scope concern is explicitly contacted, while the separate secular transformation alternative remains unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly calls the conclusion epistemically modest, claims only some reason for God, and allows that the total evidence may still favor atheism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-complete-moral-transformation-horizon",
+        "sectionId": "moral-transformation",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "constructive",
+        "proposition": "The relevant transformation question is not whether ordinary moral improvement occurs, but whether secular naturalism can sustain realistic hope for complete moral transformation.",
+        "sourceSpan": {
+          "startEvent": 961,
+          "endEvent": 984,
+          "excerpt": "any kind of realistic hope for total moral transformation total moral transformation and so it's not the issue of can suck can we nominally morally improve in this world or something like that because the clearly the answer to that is yes but if we have anything like aspirations for more can that can we've make any sense of that a say on a naturalistic perspective or a secular"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Baggett announces a final point about moral transformation and distinguishes total transformation from ordinary improvement within one continuous turn.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-transformation-rational-congruence"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The constructive move distinguishes ordinary improvement from realistic hope for total moral transformation and asks whether secular naturalism can sustain the latter."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The contrast with ordinary improvement is explicit, but 'total moral transformation' lacks a detailed success condition."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move poses a comparative challenge and explicitly concedes secular ordinary improvement rather than claiming demonstrated impossibility."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Secular accounts need explain attainable moral improvement, not guarantee complete perfection beyond mortal life.",
+          "decisiveQualification": "The affirmative must justify why realistic hope for complete transformation is itself a genuine datum requiring explanation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The move offers a conceptual distinction and concession but little evidence that total transformation is realistic, universal, or explanatorily required."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary transformation bridge by defining the distinctive horizon attributed to theism."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The move explicitly grants the secular account's strongest ordinary claim and isolates the more demanding horizon it intends to compare."
+          },
+          "responsiveness": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly concedes moral improvement in this world and contrasts it with realistic hope for total transformation under naturalism.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-objective-value-duty-definition",
+        "sectionId": "objective-moral-authority",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "constructive",
+        "proposition": "Objective moral values are intrinsically good, whereas objective moral duties are binding and authoritative prescriptions that can impose categorical requirements without exception.",
+        "sourceSpan": {
+          "startEvent": 988,
+          "endEvent": 1005,
+          "excerpt": "what I mean by objective moral values and duties are with respect to values I'm talking about things that are good morally good of value of intrinsically good with respect to moral obligations I'm talking about binding prescriptive authoritative moral obligations you know the day ontic aspects of morality like you ought to do such and such and at least sometimes those Ott's are"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Baggett explicitly introduces what he means by objective moral values and duties and supplies separate definitions and an example.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-moral-explananda"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The move constructively distinguishes intrinsically good values from binding, prescriptive, authoritative duties and identifies some duties as exceptionless categorical requirements."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Values, duties, authority, and the 'at least sometimes' categorical scope qualification are explicitly differentiated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move is stipulating the terms of its argument and appropriately limits categorical force to at least some duties."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The move successfully supports terminological clarity, but it supplies little independent evidence that exceptionless categorical duties exist."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally advances the explananda burden by specifying the objective values and authoritative duties requiring explanation."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "This is a constructive definition and does not materially represent an opposing position."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt defines objective value as intrinsic moral goodness and duties as binding, prescriptive, authoritative obligations, sometimes categorical.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-variable-guilt-objective-assessment",
+        "sectionId": "objective-moral-authority",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Culturally variable guilt cannot ground objective morality, while actions can still be assessed objectively by their effects on adopted goals such as survival and well-being.",
+        "sourceSpan": {
+          "startEvent": 1084,
+          "endEvent": 1196,
+          "excerpt": "with respect to well-being let's say which is ill-defined and encompasses all sorts of things there are objective facts about the universe that can be assessed objectively without relying on subjective opinions so we assess consequences of our actions with respect to a goal that that assessment can be made objectively you know it's it's not a matter of opinion if the goal is to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dillahunty explicitly disputes Baggett's evidential appeal to guilt and contrasts it with his own goal-relative account of objective assessment.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-no-categorical-grounding-need"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-objective-value-duty-definition",
+            "pro-abductive-comparative-framework"
+          ],
+          "components": [
+            {
+              "componentId": "con-variable-guilt-objective-assessment-component-01",
+              "targetMoveId": "pro-objective-value-duty-definition",
+              "text": "The affirmative must show that variable guilt tracks objective authoritative duties rather than culture while distinguishing objectivity from goal-relative assessment.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-variable-guilt-objective-assessment-component-02",
+              "targetMoveId": "pro-abductive-comparative-framework",
+              "text": "The proposed moral explananda must be specified independently of disputed definitions of objective morality.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply challenges guilt as an objective guide and offers objective consequence assessment relative to well-being, though it does not fully answer categorical authority."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The means-end conception is recoverable, but well-being is expressly acknowledged to be ill-defined and broad, leaving some term instability."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move acknowledges definitional dependence and the breadth of well-being while making a bounded means-end claim."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Guilt is offered as defeasible evidence of authority, not as a complete foundation or infallible detector of objective morality.",
+          "decisiveQualification": "Cultural variation weakens guilt's reliability but does not by itself show that no guilt experience tracks genuine wrongdoing."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central secular grounding route by explaining objective means-end assessment without an additional categorical ought."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The response does not need to deny every evidential role for guilt, but its compressed presentation only partly preserves that qualification."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the objectivity dispute and supplies an alternative assessment model, but leaves the categorical-duty component substantially unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt stresses definitional dependence, calls well-being broad and ill-defined, and claims objective facts about consequences can be assessed without subjective opinions.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-guilt-as-moral-evidence",
+        "sectionId": "moral-knowledge-and-conscience",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "reply",
+        "proposition": "The phenomenology of guilt can provide evidence of genuine wrongdoing and moral authority rather than being exhausted by an account in terms of cultural conditioning.",
+        "sourceSpan": {
+          "startEvent": 1199,
+          "endEvent": 1268,
+          "excerpt": "a potential evidence to suggest the authoritative nature of the moral obligations I'm not tying the whole thing on the experience of guilt I do think that other speak for myself okay well is certainly what I've done certain things on occasion I felt guilt and I can die it seems to me that the phenomenology of guilt is such that I I don't see it as simply a cultural imposition I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Baggett recalls and qualifies his earlier use of guilt, then gives a sustained response distinguishing socialization from an experience of objective wrongdoing.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-categorical-authority-access"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-variable-guilt-objective-assessment"
+          ],
+          "components": [
+            {
+              "componentId": "pro-guilt-as-moral-evidence-component-01",
+              "targetMoveId": "con-variable-guilt-objective-assessment",
+              "text": "The variability objection must allow that guilt can remain defeasible evidence of genuine wrongdoing without serving as the entire foundation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply narrows guilt to potential evidence and denies that cultural conditioning exhausts its phenomenology, but offers mainly introspective support."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move expressly limits guilt to potential evidence and disclaims making the whole argument depend on it."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Its cautious evidential force fits the personal phenomenological basis and acknowledges the limited role assigned to guilt."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Guilt can be culturally produced and highly variable even when it feels authoritative to the subject.",
+          "decisiveQualification": "The reply only denies that cultural imposition exhausts every experience; it does not claim phenomenology alone proves objective authority."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "It preserves the secular alternative and responds with a suitably narrow, defeasible claim."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It directly contacts the variation objection through a qualified evidential claim, without explaining how reliable cases are distinguished."
+          }
+        },
+        "evidenceBasis": "The excerpt calls guilt potential evidence, disclaims resting the whole argument on it, and reports that its phenomenology does not seem merely culturally imposed.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-empathy-role-reversal-conscience",
+        "sectionId": "moral-knowledge-and-conscience",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Empathy, universalization, and role reversal can explain conscience and much apparent moral authority without religious commands or a further supernatural foundation.",
+        "sourceSpan": {
+          "startEvent": 1269,
+          "endEvent": 1328,
+          "excerpt": "moral authority the issue is what is that Authority and I'm not saying that you know oh this is the way you were you learned or indoctrinated I think the foundational application that are the foundational item that contributes to guilt isn't oh my parents told me this movement was wrong or over my community told me this was wrong or oh my religion told me this was wrong foundation is empathy"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dillahunty identifies empathy as the foundation of guilt and develops the point through Rawlsian role reversal and revised reciprocal treatment.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-secular-moral-account"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-guilt-as-moral-evidence",
+            "pro-objective-value-duty-definition"
+          ],
+          "components": [
+            {
+              "componentId": "con-empathy-role-reversal-conscience-component-01",
+              "targetMoveId": "pro-guilt-as-moral-evidence",
+              "text": "The authoritative phenomenology of guilt requires an account that distinguishes supernatural authority from empathy and learned moral cognition.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-empathy-role-reversal-conscience-component-02",
+              "targetMoveId": "pro-objective-value-duty-definition",
+              "text": "An explanation of apparent authority does not by itself establish the binding categorical duties defined by the affirmative.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly proposes empathy, universalization, and role reversal as sources of conscience, but does not fully derive objective categorical authority."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move consistently distinguishes perceived moral authority from its proposed empathic foundation and claims only substantial explanatory reach."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The source offers empathy as a foundation rather than claiming it demonstrably explains every conscience judgment."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The affirmative treats guilt as evidence of genuine wrongdoing, not as a product of explicit parental or religious commands alone.",
+          "decisiveQualification": "An empathic causal account must still explain why the resulting demands appear categorically authoritative and sometimes oppose self-interest."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "Empathy, universalization, and role reversal form a coherent psychological account, with the normativity bridge left implicit."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally supports the secular moral account of conscience and moral cognition."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The response accurately engages the phenomenological demand and avoids reducing the opposing position to simple religious indoctrination."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It contacts the decisive explanatory alternative to guilt while leaving the ontological status of categorical duties unresolved."
+          }
+        },
+        "evidenceBasis": "The excerpt rejects a simple parental, communal, or religious indoctrination story and identifies empathy as the foundational contributor to guilt.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-properly-basic-moral-knowledge",
+        "sectionId": "moral-knowledge-and-conscience",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "reply",
+        "proposition": "Exceptionally obvious foundational moral principles can be rationally accepted as properly basic axioms from which further ethical reasoning proceeds without inferential proof.",
+        "sourceSpan": {
+          "startEvent": 1497,
+          "endEvent": 1541,
+          "excerpt": "for that I don't exactly know what to say because I'm not sure what I could appeal to that's more obvious than the wrongness of that so what I'm open to math is that in the arena of morality there are certain foundational axiomatic moral principles that are so exceedingly obvious right that they really do properly qualify as basic kind of kinds of axiomatic starting points that"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Baggett explicitly frames the difficulty as one concerning ethical first principles and explains their axiomatic or properly basic epistemic status.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-categorical-authority-access"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-empathy-role-reversal-conscience",
+            "con-variable-guilt-objective-assessment"
+          ],
+          "components": [
+            {
+              "componentId": "pro-properly-basic-moral-knowledge-component-01",
+              "targetMoveId": "con-empathy-role-reversal-conscience",
+              "text": "The demand for an inferential proof of every foundational moral truth should be replaced by assessment of whether some principles are properly basic.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-properly-basic-moral-knowledge-component-02",
+              "targetMoveId": "con-variable-guilt-objective-assessment",
+              "text": "Variable guilt does not determine whether exceptionally obvious moral principles can be rationally basic.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": true,
+          "rationale": "The reply justifies treating exceptionally obvious principles as axiomatic starting points when no more evident premise is available, preserving the knowledge issue."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is expressly restricted to exceptionally obvious foundational principles and further reasoning from them."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker presents openness to properly basic status and acknowledges difficulty producing a more obvious supporting premise."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Empathy and shared human cognition may causally explain why principles seem obvious without validating their truth.",
+          "decisiveQualification": "Proper basicality can confer prima facie rationality but does not by itself establish reliability or a theistic source."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (82 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly reframes the justificatory demand and states the epistemic consequence, though it offers no reliability discriminator."
+          }
+        },
+        "evidenceBasis": "The excerpt says nothing more obvious can be offered and proposes exceedingly obvious moral principles as properly basic axiomatic starting points.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-human-axioms-ethical-convergence",
+        "sectionId": "moral-rationality-and-flourishing",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Human-benefiting axioms can generate coherent ethical systems and could arise under godless physical conditions because creatures with shared needs have reasons to converge on them.",
+        "sourceSpan": {
+          "startEvent": 1586,
+          "endEvent": 1644,
+          "excerpt": "axiomatic convictions I won't go off too much on a tangent but my view on this was very similar in the sense that my argument is that you could create a moral system by even randomly plucking the things that you were just going to tentatively accept as axioms life is generally preferable to death health is preferable to sickness pleasure is preferable to pain boom you use those"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dillahunty explicitly responds to the discussion of foundational axioms and develops both their practical derivation and naturalistic dependence on creaturely interests.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-secular-moral-account"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-properly-basic-moral-knowledge",
+            "pro-abductive-comparative-framework"
+          ],
+          "components": [
+            {
+              "componentId": "con-human-axioms-ethical-convergence-component-01",
+              "targetMoveId": "pro-properly-basic-moral-knowledge",
+              "text": "Foundational moral axioms need an account of how they generate ethical systems and why agents might converge on them.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-human-axioms-ethical-convergence-component-02",
+              "targetMoveId": "pro-abductive-comparative-framework",
+              "text": "A secular candidate should explain moral knowledge through shared creaturely conditions and practical convergence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply accepts axiomatic starting points and explains convergence through common needs under physical conditions, contacting both the epistemic proposal and the comparative secular demand."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The system-building claim is clear, but 'human-benefiting' and convergence remain broad and the random-selection illustration obscures justificatory standards."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim is framed as what creatures could construct or converge upon, matching the limited warrant supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Properly basic principles are claimed as rationally apparent truths, not merely arbitrary axioms selected to construct a useful system.",
+          "decisiveQualification": "A secular convergence story must address epistemic warrant and categorical authority, not only systemic coherence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "Concrete examples illustrate plausible convergence, yet the move supplies little evidence of universality, independence, or justificatory force."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It materially supports the central secular account of moral reasoning and convergence."
+          },
+          "representationalCharity": {
+            "value": 74,
+            "rationale": "The reply engages the axiomatic structure but partly weakens the opposing epistemic claim by emphasizing arbitrary selection and system coherence."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it directly adopts the axiom framework and offers a secular convergence account, though selection among rival axioms is underdeveloped."
+          }
+        },
+        "evidenceBasis": "The excerpt describes tentatively accepting axioms such as life over death, health over sickness, and pleasure over pain to create a moral system.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-categorical-not-instrumental-duty",
+        "sectionId": "moral-rationality-and-flourishing",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "reply",
+        "proposition": "Some moral obligations are categorical requirements and therefore cannot be reduced to instrumental reasoning about how to achieve goals that an agent has already chosen.",
+        "sourceSpan": {
+          "startEvent": 1706,
+          "endEvent": 1752,
+          "excerpt": "achieve the goal and you've accounted for an honest there it seems to me that that and that's perfectly legitimate this is practical reasoning practical rationality you know Aristotle would be all about it you know you've got your in solid company but but it seems to me with respect to this I'm inclined to suggest that this is still sort of the instrumental odd and and I think that at least some moral obligations"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The uninterrupted turn continues Baggett's comparison of the two moral systems and presents his categorical-obligation example.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-no-categorical-grounding-need"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-human-axioms-ethical-convergence",
+            "con-variable-guilt-objective-assessment"
+          ],
+          "components": [
+            {
+              "componentId": "pro-categorical-not-instrumental-duty-component-01",
+              "targetMoveId": "con-human-axioms-ethical-convergence",
+              "text": "A coherent system generated from adopted axioms must still explain obligations that bind independently of an agent's chosen ends.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-categorical-not-instrumental-duty-component-02",
+              "targetMoveId": "con-variable-guilt-objective-assessment",
+              "text": "Objective means-end assessment must be distinguished from categorical moral authority.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "Baggett identifies the secular account as instrumental reasoning and states the defeating consequence: it cannot yet account for at least some obligations presented as categorical."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Instrumental and categorical oughts are clearly contrasted, and the claim is limited to at least some moral obligations."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker says he is inclined to suggest the distinction and restricts the conclusion rather than claiming universal categorical force."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The secular view can objectively assess means after adopting foundational values and need not claim agents choose every end arbitrarily.",
+          "decisiveQualification": "Even objective means-end facts do not alone show why an agent who rejects the end is categorically bound."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally attacks the secular no-grounding-need bridge by identifying what instrumental assessment leaves unexplained."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the instrumental limitation and connects it to the unmet categorical-obligation demand."
+          }
+        },
+        "evidenceBasis": "The excerpt grants the legitimacy of goal-directed practical reasoning but calls it instrumental and contrasts it with at least some moral obligations.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-wellbeing-means-end-assessment",
+        "sectionId": "objective-moral-authority",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Once concern for well-being is adopted, actions can be evaluated by whether they advance or frustrate that goal without introducing additional categorical oughts.",
+        "sourceSpan": {
+          "startEvent": 1753,
+          "endEvent": 1822,
+          "excerpt": "from two is--is to a nod and then John pointed out correctly that I was actually smuggling the odd end so this is why I've kind of changed the way that I talked about this I don't know that I can get to the initial art of caring about well-being but once that's there there are no Ott's after that it is here's the goal does this action move us towards the goal away from the goal"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The turn explicitly describes Dillahunty's revised treatment of oughts and develops secular answers to Baggett's examples.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-no-categorical-grounding-need"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-categorical-not-instrumental-duty",
+            "pro-objective-value-duty-definition"
+          ],
+          "components": [
+            {
+              "componentId": "con-wellbeing-means-end-assessment-component-01",
+              "targetMoveId": "pro-categorical-not-instrumental-duty",
+              "text": "The categorical challenge must show why further oughts are required after concern for well-being and an evaluative goal are adopted.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-wellbeing-means-end-assessment-component-02",
+              "targetMoveId": "pro-objective-value-duty-definition",
+              "text": "The account must distinguish authoritative categorical prescription from objective assessment relative to a goal.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Dillahunty directly answers by locating the only nonderived commitment in caring about well-being and treating subsequent judgments as factual goal-relative assessments."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The initial commitment and subsequent goal-relative assessments are explicitly separated, with a clear conditional scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Saying there are no further oughts is somewhat stronger than the argument establishes, although the initial commitment and hard cases are acknowledged."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The affirmative agrees that instrumental reasoning is legitimate but claims some obligations bind independently of an adopted goal.",
+          "decisiveQualification": "The reply explains assessment conditional on well-being, not the alleged categorical authority or the rational necessity of that end."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The conditional means-end structure is coherent, though the assertion that no oughts remain overlooks standards embedded in measurement and tradeoffs."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central claim that objective moral assessment can proceed without additional divine categorical grounding."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts the instrumental-versus-categorical distinction, while conceding that the initial commitment remains unexplained."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes an initial ought of caring about well-being, then describes evaluating whether actions move toward or away from that goal.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-flourishing-scope-challenge",
+        "sectionId": "moral-rationality-and-flourishing",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "reply",
+        "proposition": "An account restricted to human flourishing is morally too narrow because animal suffering and the formation of a person's moral character can also matter intrinsically.",
+        "sourceSpan": {
+          "startEvent": 1844,
+          "endEvent": 1878,
+          "excerpt": "find that there is going to be a challenge there a little bit right so how do you how do you extend it to say animal rights or something like that because human flourishing that is certainly important but I mean taking an example like torturing a cat even a bobcat that would still be wrong it seems to me and and yeah I mean there might be something a little bit too constricting"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Following the moderator's transition, Baggett resumes the exchange, addresses the animal example, and connects it to moral transformation.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-secular-moral-account"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-wellbeing-means-end-assessment",
+            "con-human-axioms-ethical-convergence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-flourishing-scope-challenge-component-01",
+              "targetMoveId": "con-wellbeing-means-end-assessment",
+              "text": "A well-being account must show that its goal and assessment cover morally relevant beings and consequences beyond human flourishing.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-flourishing-scope-challenge-component-02",
+              "targetMoveId": "con-human-axioms-ethical-convergence",
+              "text": "Human-benefiting axioms must account for animal suffering and the moral formation of the acting person.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Baggett directly tests the scope of flourishing against animal suffering and character formation, contacting both the goal-relative account and its human-centered axioms."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection clearly targets an account restricted to human flourishing and uses animal suffering and character as distinct scope tests."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents a challenge and says the account may be too constricting rather than claiming decisive refutation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A well-being framework can include animal welfare and the effects of cruelty on human character rather than restricting value to immediate human benefit.",
+          "decisiveQualification": "If those expansions are allowed, the example tests specification and scope more than the viability of the framework itself."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "Animal suffering provides a coherent scope counterexample, and character formation adds a distinct reason not reducible to immediate human benefit."
+          },
+          "evidenceWarrant": {
+            "value": 75,
+            "rationale": "The cat-torture case is a specific intuitive test, though no argument establishes that broader well-being cannot accommodate it."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally attacks the adequacy and breadth of the secular moral account."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The challenge is phrased conditionally and leaves room for expansion, while correctly identifying a scope burden for the presented formulation."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it supplies a concrete counterexample and a second character-based consideration, though it does not prove the account cannot expand."
+          }
+        },
+        "evidenceBasis": "The excerpt asks how human flourishing extends to animal rights and uses torturing a cat or bobcat as an apparently wrong act outside a narrow scope.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-loving-creator-authority-account",
+        "sectionId": "objective-moral-authority",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "reply",
+        "proposition": "Binding, objective, prescriptive moral obligations call for explanation, and a loving creator who enables moral apprehension offers an account of their authority.",
+        "sourceSpan": {
+          "startEvent": 1879,
+          "endEvent": 2015,
+          "excerpt": "binding objective prescriptive authoritative moral obligation I say okay let's look at that evidence really carefully that's why I think it's worthwhile that we did what we did and spend time doing that then you say now what would what would explain that at the wording now again if you say yeah but there's no real authority there because I've given you this other account yeah I"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Baggett gives a sustained first-person exposition of his abductive moral argument and contrasts it with Dillahunty's account throughout the turn.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-comparative-explanatory-advantage"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-wellbeing-means-end-assessment",
+            "con-abduction-explananda-candidacy",
+            "con-variable-guilt-objective-assessment"
+          ],
+          "components": [
+            {
+              "componentId": "pro-loving-creator-authority-account-component-01",
+              "targetMoveId": "con-wellbeing-means-end-assessment",
+              "text": "The secular goal-relative account must explain the binding, prescriptive authority attributed to categorical moral obligations.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-loving-creator-authority-account-component-02",
+              "targetMoveId": "con-abduction-explananda-candidacy",
+              "text": "The theistic proposal must explain why a loving creator is a relevant candidate for the identified moral authority.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-loving-creator-authority-account-component-03",
+              "targetMoveId": "con-variable-guilt-objective-assessment",
+              "text": "Objective consequence assessment must be distinguished from an explanation of categorical authority.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "Baggett directly contrasts goal-relative assessment with binding authority and proposes a loving creator who enables apprehension as the explanatory candidate, while acknowledging that denial of real authority would block the proposal."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The authority claim and loving-creator proposal are recoverable, but their dependence on the reality of categorical authority is only implicitly conditional."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The account is offered as explanatory, but the excerpt does not sufficiently compare alternatives or derive authority from loving creation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The secular account denies that any authority beyond objective means-end assessment needs explanation.",
+          "decisiveQualification": "The theistic proposal gains purchase only if irreducibly categorical authority has first been established rather than stipulated."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central affirmative comparative-advantage bridge concerning moral authority."
+          },
+          "representationalCharity": {
+            "value": 93,
+            "rationale": "Baggett expressly acknowledges that Dillahunty's alternative would defeat the argument if it adequately showed that no further authority exists."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it contacts the authority and candidacy demands, though the comparative superiority of the creator account remains compressed."
+          }
+        },
+        "evidenceBasis": "The excerpt focuses on binding, objective, prescriptive, authoritative obligation, asks what explains it, and contrasts the proposed account with denial of real authority.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-methodological-naturalism-demonstrability",
+        "sectionId": "comparative-worldview-fit",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Methodological naturalism permits demonstrated supernatural causes but rejects an unexplained deity that adds mystery without predictive or explanatory power.",
+        "sourceSpan": {
+          "startEvent": 2016,
+          "endEvent": 2102,
+          "excerpt": "I don't philosophical naturalism being the assertion that the supernatural doesn't exist or more accurately that the natural world is all that exists methodological naturalism doesn't preclude supernatural explanations it just doesn't get to appeal to any explanations that aren't demonstrable so if in fact there were some some supernatural aspect as soon as it's demonstrated to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dillahunty corrects Baggett's characterization of his position and then presents a continuous methodological and explanatory critique.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-theistic-explanatory-liabilities"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-loving-creator-authority-account",
+            "pro-abductive-comparative-framework"
+          ],
+          "components": [
+            {
+              "componentId": "con-methodological-naturalism-demonstrability-component-01",
+              "targetMoveId": "pro-loving-creator-authority-account",
+              "text": "The creator proposal must add demonstrable explanatory or predictive content rather than merely relocating the mystery into an unexplained deity.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-methodological-naturalism-demonstrability-component-02",
+              "targetMoveId": "pro-abductive-comparative-framework",
+              "text": "The candidate criteria must constrain supernatural explanations rather than admit them solely because they are logically possible.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "Dillahunty corrects the characterization of methodological naturalism, states its demonstrability constraint, and identifies lack of added explanatory power as defeating the proposed candidate's advantage."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Philosophical and methodological naturalism are distinguished, and supernatural explanation is explicitly conditionally admissible."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The necessity concerns a methodological admission standard, and the conditional acceptance of demonstrated supernatural causes supplies the relevant qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The affirmative offers theism as an abductive explanatory candidate, not as an unexplained label or deductively demonstrated cause.",
+          "decisiveQualification": "The candidate still needs discriminating explanatory content and evidential access sufficient for comparison."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The distinction and conditional openness are coherent, though 'demonstrable' risks imposing a stronger standard than the comparative method requires."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally supports the theistic-liabilities bridge by attacking admissibility and explanatory content."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (81 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the methodological failure and its consequence for admitting an unexplained deity as an explanation."
+          }
+        },
+        "evidenceBasis": "The excerpt distinguishes philosophical from methodological naturalism and says supernatural explanations are permitted once demonstrable rather than merely appealed to.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-divine-identification-access",
+        "sectionId": "moral-knowledge-and-conscience",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Positing God as morality's foundation does not resolve moral disagreement unless people can reliably identify the good deity and access that deity's requirements.",
+        "sourceSpan": {
+          "startEvent": 2141,
+          "endEvent": 2175,
+          "excerpt": "the classical theism god that serves as a as a reason for why we feel some moral authority what does that get us if we don't have access to and then we disagree you know it's it's not like throughout history I mean the the Nazis had Gottman oontz on their belt buckles they thought that God was with them and this has been the case for all sorts of other people how do we resolve"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Dillahunty explicitly introduces a major stumbling block and develops it through historical disagreement and a good-deity identification challenge.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-theistic-explanatory-liabilities"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-loving-creator-authority-account",
+            "pro-properly-basic-moral-knowledge"
+          ],
+          "components": [
+            {
+              "componentId": "con-divine-identification-access-component-01",
+              "targetMoveId": "pro-loving-creator-authority-account",
+              "text": "A divine authority account must explain how people identify the morally perfect deity and reliably access that deity's requirements amid disagreement.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-divine-identification-access-component-02",
+              "targetMoveId": "pro-properly-basic-moral-knowledge",
+              "text": "Claims of immediate moral knowledge require a way to handle severe disagreement and confident religious error.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly presses identification and access, using historical religious disagreement to show that positing a divine foundation does not resolve moral disputes."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The identification, access, disagreement, and resolution demands are explicit and consistently scoped to the account's epistemic payoff."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Reliable identification and access are correctly presented as necessary for using divine grounding to resolve practical moral disagreement."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Theism may ground moral truth even if human beings imperfectly identify God or misunderstand divine requirements.",
+          "decisiveQualification": "Imperfect access does not refute ontology, but it weakens an explanatory advantage concerning moral knowledge and practical resolution."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central theistic-liabilities bridge through divine identification and access."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The objection accurately targets epistemic payoff rather than treating disagreement as a direct disproof of God."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the account's decisive epistemic liability and states the consequence for explanatory usefulness."
+          }
+        },
+        "evidenceBasis": "The excerpt asks what the classical-theist foundation achieves without access, cites conflicting historical claims of divine support, and asks how disputes are resolved.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-maximally-good-theistic-candidate",
+        "sectionId": "comparative-worldview-fit",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "reply",
+        "proposition": "Theistic ethics requires a morally perfect, maximally great God rather than an arbitrary deity, and moral considerations can help distinguish that hypothesis from finite or capricious gods.",
+        "sourceSpan": {
+          "startEvent": 2176,
+          "endEvent": 2206,
+          "excerpt": "I don't think that theistic ethics works on every conception of God I think I mean at all you know so so in fact I think there are compelling moral considerations that can be brought to bear in the efforts of natural theologies and to narrow the field so if you're talking about God is the possessor of the Omni qualities for example this is going to show itself to be it seems to"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Baggett accepts the relevance of Dillahunty's questions and answers by restricting the divine hypothesis and contrasting classes of deity.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-classical-theism-candidacy"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-divine-identification-access",
+            "con-methodological-naturalism-demonstrability"
+          ],
+          "components": [
+            {
+              "componentId": "pro-maximally-good-theistic-candidate-component-01",
+              "targetMoveId": "con-divine-identification-access",
+              "text": "The identification objection requires specifying which conception of God can ground ethics and how moral considerations narrow the candidate field.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-maximally-good-theistic-candidate-component-02",
+              "targetMoveId": "con-methodological-naturalism-demonstrability",
+              "text": "A theistic candidate requires discriminating properties rather than an unrestricted appeal to supernatural agency.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply denies that every deity qualifies and specifies a maximally great, omni-property candidate, but only sketches how moral evidence identifies it."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The maximally great candidate is clear, but the exact omni-properties and moral criteria doing the narrowing are not fully specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker says moral considerations can narrow the field, while the excerpt supplies only a preliminary sketch of that discrimination."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The access objection concerns not merely arbitrary gods but people's reliable identification of the good deity and its requirements.",
+          "decisiveQualification": "Specifying a morally perfect candidate does not yet show that humans can identify its existence, nature, or commands without circularity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (69 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally supports classical-theism candidacy by defining the morally perfect candidate needed for the proposed explanation."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The move accepts the relevance of the identification questions and offers a substantive restriction without pretending it resolves every access concern."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts candidate specification but leaves reliable access to requirements and independent identification substantially unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt says theistic ethics fails on many God concepts and invokes moral considerations and omni-properties to narrow natural theology's field.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-bad-lot-confidence-constraint",
+        "sectionId": "abductive-method-and-candidacy",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Confidence in an abductive conclusion should be proportioned to the quality and depth of the available pool of candidate explanations.",
+        "sourceSpan": {
+          "startEvent": 2537,
+          "endEvent": 2559,
+          "excerpt": "abductive arguments then you should adjust your confidence level to reflect how good your pool is I mean we have a there are some areas in science where we have great understanding and there's some areas where we don't and I think that recognizing that we may not have a particularly deep set of explanations should at a minimum say well even if we think this is the best one it's nowhere near enough to reach a you know a reasonable conclusion"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The moderator solicits reactions, and this response matches Dillahunty's earlier stated reservations about abductive reasoning.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-limited-abductive-confidence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-maximally-good-theistic-candidate",
+            "pro-bounded-abductive-conclusion"
+          ],
+          "components": [
+            {
+              "componentId": "con-bad-lot-confidence-constraint-component-01",
+              "targetMoveId": "pro-maximally-good-theistic-candidate",
+              "text": "Even a specified theistic candidate warrants confidence only relative to the depth and quality of the whole explanatory candidate pool.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-bad-lot-confidence-constraint-component-02",
+              "targetMoveId": "pro-bounded-abductive-conclusion",
+              "text": "The bounded conclusion must reflect bad-lot risk and limited understanding, not merely acknowledge generic prior probability.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly imposes a candidate-pool confidence constraint and states that shallow understanding can leave even the best available explanation far from reasonable conclusion."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Confidence, candidate-pool quality, disciplinary depth, and the bounded consequence are all explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Proportioning confidence to pool quality is asserted as a methodological requirement while uncertainty is central to the claim."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The affirmative already limits the conclusion to some reason for theism within total evidence rather than a decisive verdict.",
+          "decisiveQualification": "That modesty helps, but the positive evidential increment still depends on comparison against a sufficiently representative pool."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The link between incomplete candidate exploration and limited abductive confidence is explicit, consistent, and appropriately conditional."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It maximally supports the subsidiary limited-confidence bridge through the bad-lot constraint."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts comparative confidence and gives the defeating consequence, though it does not inventory omitted candidates."
+          }
+        },
+        "evidenceBasis": "The excerpt says confidence must reflect pool quality, contrasts well- and poorly-understood scientific areas, and warns that a best option may remain inconclusive.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "con-moral-divine-hiddenness",
+        "sectionId": "comparative-worldview-fit",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Persistent divine hiddenness is morally unexpected if a good creator could clarify a consequential dispute whose prolonged uncertainty causes harm.",
+        "sourceSpan": {
+          "startEvent": 2707,
+          "endEvent": 2749,
+          "excerpt": "creator placed us here gave us a brain and we learned the process by which we can figure out an understand reality and if there are seemingly sufficient natural explanations for these observations that are in fact wrong because this Omni God is in fact the explanation for these then I think that just compounds the moral obligation and it's bizarre to me that this is of course a version of the Divine hiddenness"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "The passage remains within Dillahunty's assigned closing remarks and explicitly identifies its reasoning as a form of the divine-hiddenness argument.",
+        "importance": 3,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-theistic-explanatory-liabilities"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-maximally-good-theistic-candidate",
+            "pro-loving-creator-authority-account"
+          ],
+          "components": [
+            {
+              "componentId": "con-moral-divine-hiddenness-component-01",
+              "targetMoveId": "pro-maximally-good-theistic-candidate",
+              "text": "A maximally good creator hypothesis must explain why consequential moral and metaphysical truth remains persistently hidden despite resulting harm.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-moral-divine-hiddenness-component-02",
+              "targetMoveId": "pro-loving-creator-authority-account",
+              "text": "A loving creator who enables apprehension must be reconciled with apparently sufficient natural explanations and unresolved disagreement.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": false,
+          "diagnosticConsequenceExplicit": true,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply identifies hiddenness as morally unexpected under the maximally good creator account and states that preventable harmful uncertainty counts as a liability against its explanatory advantage."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The argument is explicitly conditional on an omni creator being the true explanation while natural explanations misleadingly appear sufficient."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents hiddenness as a version of an argument and a surprising liability, not as a deductive disproof of every divine purpose."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A good God may have relationship-preserving, freedom-related, or developmental reasons not to make divine reality maximally obvious.",
+          "decisiveQualification": "Those reasons must explain why less coercive clarification could not reduce serious harm while preserving relational goods."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central theistic-liabilities bridge through moral divine hiddenness."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it expressly identifies the conflict between divine goodness, ability to clarify, and prolonged harmful uncertainty."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that a creator who gave humans inquiry capacities would bear greater responsibility if apparently sufficient natural explanations were misleading.",
+        "assessmentConfidence": "high"
+      },
+      {
+        "moveId": "pro-relational-hiddenness-account",
+        "sectionId": "comparative-worldview-fit",
+        "side": "pro",
+        "speaker": "David Baggett",
+        "moveKind": "reply",
+        "proposition": "Divine hiddenness may reflect relational priorities beyond producing bare belief in God's existence, because recognizing that someone exists is not equivalent to having a relationship.",
+        "sourceSpan": {
+          "startEvent": 2770,
+          "endEvent": 2791,
+          "excerpt": "that like like Pascal suggests and others that there are probably reasons for a real measure of hiddenness here and that God has other priorities and simply to help us or make us to believe in his existence I mean it's potential you know there's a lot beyond that you know I mean just take my wife who's in the room here with me I'm I said to her the other day I was like you know"
+        },
+        "attributionConfidence": "high",
+        "attributionBasis": "Baggett explicitly turns to the hiddenness issue and develops a relational analogy during his moderator-assigned closing response.",
+        "importance": 2,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-theistic-explanatory-liabilities"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-moral-divine-hiddenness",
+            "con-divine-identification-access"
+          ],
+          "components": [
+            {
+              "componentId": "pro-relational-hiddenness-account-component-01",
+              "targetMoveId": "con-moral-divine-hiddenness",
+              "text": "The hiddenness objection must consider whether God's relational purposes differ from merely producing bare belief in divine existence.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-relational-hiddenness-account-component-02",
+              "targetMoveId": "con-divine-identification-access",
+              "text": "Relational priorities may explain some hiddenness but do not independently supply reliable moral access.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "issueBearingContraryMaterial": true,
+          "diagnosticConsequenceExplicit": false,
+          "replacementDemandAnswered": false,
+          "rationale": "The reply directly supplies a possible relational reason for hiddenness and distinguishes existence-belief from relationship, but does not answer the harm and clarification component."
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The belief-versus-relationship distinction is clear, but 'other priorities' and the appropriate measure of hiddenness remain underspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker offers probable or potential reasons rather than claiming to know God's actual reasons, matching the limited analogy."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The hiddenness objection allows that relationship matters but asks why a good God cannot clarify existence and moral truth without coercing relationship.",
+          "decisiveQualification": "Bare belief is not relationship, yet reliable awareness is ordinarily a prerequisite for entering a relationship and avoiding harmful error."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 65,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (66 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "It contacts the decisive possibility of justified hiddenness while leaving the opponent's less-coercive clarification and harm challenge unanswered."
+          }
+        },
+        "evidenceBasis": "The excerpt proposes reasons for a measure of hiddenness, says God may prioritize more than producing belief, and analogizes belief in a spouse's existence to relationship.",
+        "assessmentConfidence": "high"
+      }
+    ],
+    "burdenCompletionAdjustment": {
+      "pro": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all identified effects are already represented in move judgments and burden links.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No additional completion criterion remains outside the rated moves and response topology.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No eligible distinct residual consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden contact"
+          ],
+          "counterfactual": "Removing the proposed adjustment would not omit any independently identified burden-completion consequence."
+        }
+      },
+      "con": {
+        "value": 0,
+        "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule; all identified effects are already represented in move judgments and burden links.",
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "completionCriterion": "No additional completion criterion remains outside the rated moves and response topology.",
+          "relatedMoveIds": [],
+          "distinctConsequence": "No eligible distinct residual consequence was identified.",
+          "alreadyCapturedBy": [
+            "move ratings",
+            "response links",
+            "importance values",
+            "burden contact"
+          ],
+          "counterfactual": "Removing the proposed adjustment would not omit any independently identified burden-completion consequence."
+        }
+      }
+    },
+    "audit": {
+      "completeTranscriptReviewed": true,
+      "allLoadBearingLinesRepresented": true,
+      "allMovesJudgedOnce": true,
+      "sectionWeightsLockedBeforeRatings": true,
+      "responseComponentsApplied": true,
+      "closedPrecisionAnchorsApplied": true,
+      "closedCalibrationAnchorsApplied": true,
+      "charityAnchorApplied": true,
+      "burdenExclusionRuleApplied": true,
+      "calculatedTotalsAbsent": true
+    }
+  },
+  "calculated": {
+    "sections": [
+      {
+        "sectionId": "abductive-method-and-candidacy",
+        "title": "Abductive Method, Candidate Pool, and Conclusion",
+        "weightPercent": 20,
+        "sides": {
+          "pro": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "pro-abductive-comparative-framework",
+                "importance": 3,
+                "score": 90
+              },
+              {
+                "moveId": "pro-bounded-abductive-conclusion",
+                "importance": 3,
+                "score": 85
+              }
+            ]
+          },
+          "con": {
+            "score": 89,
+            "moves": [
+              {
+                "moveId": "con-abduction-explananda-candidacy",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "con-bad-lot-confidence-constraint",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "objective-moral-authority",
+        "title": "Objective Moral Facts and Categorical Authority",
+        "weightPercent": 25,
+        "sides": {
+          "pro": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "pro-objective-value-duty-definition",
+                "importance": 3,
+                "score": 89
+              },
+              {
+                "moveId": "pro-loving-creator-authority-account",
+                "importance": 3,
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-variable-guilt-objective-assessment",
+                "importance": 3,
+                "score": 84
+              },
+              {
+                "moveId": "con-wellbeing-means-end-assessment",
+                "importance": 3,
+                "score": 86
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "moral-knowledge-and-conscience",
+        "title": "Moral Knowledge, Guilt, and Conscience",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 83,
+            "moves": [
+              {
+                "moveId": "pro-guilt-as-moral-evidence",
+                "importance": 2,
+                "score": 82
+              },
+              {
+                "moveId": "pro-properly-basic-moral-knowledge",
+                "importance": 3,
+                "score": 84
+              }
+            ]
+          },
+          "con": {
+            "score": 87,
+            "moves": [
+              {
+                "moveId": "con-empathy-role-reversal-conscience",
+                "importance": 2,
+                "score": 82
+              },
+              {
+                "moveId": "con-divine-identification-access",
+                "importance": 3,
+                "score": 91
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "moral-transformation",
+        "title": "Moral Transformation and Its Horizon",
+        "weightPercent": 12,
+        "sides": {
+          "pro": {
+            "score": 78,
+            "moves": [
+              {
+                "moveId": "pro-complete-moral-transformation-horizon",
+                "importance": 2,
+                "score": 78
+              }
+            ]
+          },
+          "con": {
+            "score": 85,
+            "moves": [
+              {
+                "moveId": "con-secular-moral-transformation",
+                "importance": 2,
+                "score": 85
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "moral-rationality-and-flourishing",
+        "title": "Moral Rationality, Flourishing, and Scope",
+        "weightPercent": 13,
+        "sides": {
+          "pro": {
+            "score": 89,
+            "moves": [
+              {
+                "moveId": "pro-categorical-not-instrumental-duty",
+                "importance": 3,
+                "score": 90
+              },
+              {
+                "moveId": "pro-flourishing-scope-challenge",
+                "importance": 2,
+                "score": 88
+              }
+            ]
+          },
+          "con": {
+            "score": 82,
+            "moves": [
+              {
+                "moveId": "con-human-axioms-ethical-convergence",
+                "importance": 2,
+                "score": 82
+              }
+            ]
+          }
+        }
+      },
+      {
+        "sectionId": "comparative-worldview-fit",
+        "title": "Comparative Worldview Fit and Theistic Liabilities",
+        "weightPercent": 15,
+        "sides": {
+          "pro": {
+            "score": 80,
+            "moves": [
+              {
+                "moveId": "pro-maximally-good-theistic-candidate",
+                "importance": 3,
+                "score": 82
+              },
+              {
+                "moveId": "pro-relational-hiddenness-account",
+                "importance": 2,
+                "score": 76
+              }
+            ]
+          },
+          "con": {
+            "score": 88,
+            "moves": [
+              {
+                "moveId": "con-methodological-naturalism-demonstrability",
+                "importance": 3,
+                "score": 88
+              },
+              {
+                "moveId": "con-moral-divine-hiddenness",
+                "importance": 3,
+                "score": 88
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 84.73,
+        "burdenCompletionAdjustment": 0,
+        "score": 85
+      },
+      "con": {
+        "weightedSectionMean": 86.16,
+        "burdenCompletionAdjustment": 0,
+        "score": 86
+      }
+    },
+    "winner": "con",
+    "winningMargin": 1
+  },
+  "audit": {
+    "sections": 6,
+    "moves": 21,
+    "repositoryDerivedScores": true,
+    "modelAuthoredScores": 0,
+    "scoreChanges": 0,
+    "proseChanges": 0,
+    "attributionChanges": 0,
+    "optionalReferenceBehaviorChanges": 0,
+    "productionMutationPerformed": false
+  }
+}
