@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-1",
+  "packetIndex": 6,
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debateNumber": "49",
+  "debateId": "dyer-dillahunty-transcendental-theism-2019",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/resumption-1/outputs/debate-49.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/packets/debate-49.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-atheism-nonbelief-burden.critique",
+      "moveProse.pro-skeptical-neutrality-commitments.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-atheism-nonbelief-burden.critique",
+      "moveId": "con-atheism-nonbelief-burden",
+      "originalCritique": "Strongest feature: The reply clearly distinguishes general nonbelief from a universal assertion that no deity exists and explains, through a concrete observational example, when a specified god claim can acquire grounds for positive rejection. Principal limitation: Clarifying the burden attached to atheism does not erase the logical, metaphysical, or evidential commitments used by a skeptic, so it only partly addresses the affirmative's broader worldview-level transcendental challenge. Live burden: The negative must preserve its modest burden distinction while acknowledging those residual commitments, and the affirmative must show that evaluating them establishes Orthodox necessity rather than simply demonstrating that no reasoner is commitment-free. Locked score: The very strong band reflects precise qualification, strong responsiveness, accessible illustration, and disciplined evidential scope, with limited reservation because the reply addresses propositional nonbelief more fully than the underlying foundations of the skeptic's reasoning practices.",
+      "originalWords": 138,
+      "originalCharacters": 1067,
+      "excessWordsAboveAcceptanceMaximum": 8,
+      "lockedMove": {
+        "moveId": "con-atheism-nonbelief-burden",
+        "sectionId": "sec-worldview-implications",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Atheism need not assert universal divine nonexistence; general nonbelief carries a different burden, while particular god concepts may be rejected when they conflict with observation.",
+        "importance": 2,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "111:02",
+        "sourceSpan": {
+          "startEvent": 2935,
+          "endEvent": 2956,
+          "startMs": 6662900,
+          "endMs": 6707550
+        },
+        "sourceExcerpt": "that a God first what we need to define a god what god are you talking about which God because there are some gods which by virtue of them conflicting with observations from reality and I think we can be reasonably confident those gods don't exist if you say that your God makes this the sky pink 24/7 well this guy's not pink 24/7 and so there's a conflict either with whether or",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-uncertainty-and-nonbelief"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-theism-worldview-coherence",
+            "pro-personal-god-unifies-categories"
+          ],
+          "components": [
+            {
+              "componentId": "con-atheism-nonbelief-burden-component-01",
+              "targetMoveId": "pro-theism-worldview-coherence",
+              "text": "General nonbelief is not the positive universal claim that no deity or foundation exists.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-atheism-nonbelief-burden-component-02",
+              "targetMoveId": "pro-personal-god-unifies-categories",
+              "text": "Particular divine concepts may be rejected when their stated consequences conflict with observation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly distinguishes suspended or general nonbelief from stronger negative claims and explains when a specified deity may incur evidential rejection.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "Within full answers, it clearly contacts the burden characterization and supplies a concrete observational qualification."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it clearly contacts the burden characterization and supplies a concrete observational qualification."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "General atheistic nonbelief and rejection of particular observationally conflicting gods are expressly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The modest burden distinction and conditional observational rejection fit the illustrative pink-sky example."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The affirmative challenges the worldview commitments used by a nonbeliever, not merely a universal no-gods proposition.",
+          "decisiveQualification": "Nonbelief does not erase commitments to logic and evidence, but it need not assume a positive universal atheology."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It closely supports the subsidiary con bridge distinguishing nonbelief and uncertainty from stronger positive claims."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The reply fairly narrows its burden claim while leaving substantive commitments open to separate evaluation."
+          }
+        },
+        "evidenceBasis": "The excerpt asks which God is meant and explains that specific divine claims may be rejected when observations conflict.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-skeptical-neutrality-commitments.critique",
+      "moveId": "pro-skeptical-neutrality-commitments",
+      "originalCritique": "Strongest feature: The reply grants skeptical neutrality regarding the God proposition while correctly observing that suspending judgment still employs logical rules, metaphysical assumptions, and standards of justification that can themselves be philosophically evaluated. Principal limitation: Residual commitments do not transfer the affirmative burden or establish that skeptical nonbelief secretly contains a positive atheistic worldview, and their existence alone supplies no inference to a specifically Orthodox foundation. Live burden: The affirmative must identify contradictions within the skeptic's actual commitments and connect their resolution to Orthodox theology, while respecting the narrower distinction between neutrality about God and neutrality about reasoning generally. Locked score: The very strong band reflects unusually precise qualification, direct engagement, proportionate force, and successful correction of an overly broad neutrality claim, moderated because it opens a legitimate evaluative inquiry without completing the decisive metaphysical or theological argument required by the motion.",
+      "originalWords": 142,
+      "originalCharacters": 1124,
+      "excessWordsAboveAcceptanceMaximum": 12,
+      "lockedMove": {
+        "moveId": "pro-skeptical-neutrality-commitments",
+        "sectionId": "sec-worldview-implications",
+        "side": "pro",
+        "speaker": "Jay Dyer",
+        "moveKind": "reply",
+        "proposition": "Suspending judgment about God is not paradigmatically neutral because that stance still entails logical, metaphysical, and justificatory commitments open to transcendental evaluation.",
+        "importance": 2,
+        "finalScore": 85,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "111:46",
+        "sourceSpan": {
+          "startEvent": 2957,
+          "endEvent": 3005,
+          "startMs": 6706290,
+          "endMs": 6802200
+        },
+        "sourceExcerpt": "that Matt would like to have I know that in an exact substantial sense Matt takes the position of skeptical neutrality but I don't think that he understands that even that position necessitates logical claims and metaphysical claims and claims about justifying things whether he wants it to or not that's what I think is the the disparity here Jay do you believe I have a thousand",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-uncertainty-and-nonbelief"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-atheism-nonbelief-burden",
+            "con-fallible-proportioned-confidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-skeptical-neutrality-commitments-component-01",
+              "targetMoveId": "con-atheism-nonbelief-burden",
+              "text": "Show that skeptical nonbelief still relies on logical, metaphysical, and justificatory commitments.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-skeptical-neutrality-commitments-component-02",
+              "targetMoveId": "con-fallible-proportioned-confidence",
+              "text": "Establish that fallibilist evaluation itself remains open to transcendental assessment.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly concedes skeptical neutrality in a limited sense but argues that the stance still makes logical, metaphysical, and justificatory commitments subject to evaluation.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "Within ordinary contacted replies, it explicitly addresses the claimed neutrality without falsely treating nonbelief as universal denial."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within ordinary contacted replies, it explicitly addresses the claimed neutrality without falsely treating nonbelief as universal denial."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move qualifies neutrality as exact and substantial while identifying the residual commitments it attributes to that stance."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The narrow claim that reasoning and justification entail logical commitments is proportionate to the stated warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Skeptical neutrality concerns the God proposition and does not claim neutrality about logic or all metaphysics.",
+          "decisiveQualification": "Residual commitments are evaluable but do not transfer the motion's positive necessity burden to the skeptic."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The conceptual warrant is clear, though the specific metaphysical commitments and their consequences are not developed."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly attacks the subsidiary con neutrality bridge by identifying commitments that remain open to challenge."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt recognizes Matt's skeptical neutrality but says it necessarily uses logical, metaphysical, and justificatory claims.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

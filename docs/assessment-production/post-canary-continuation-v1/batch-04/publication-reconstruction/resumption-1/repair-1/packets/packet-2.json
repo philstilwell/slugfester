@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-1",
+  "packetIndex": 2,
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debateNumber": "49",
+  "debateId": "dyer-dillahunty-transcendental-theism-2019",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/resumption-1/outputs/debate-49.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/packets/debate-49.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-fallible-proportioned-confidence.critique",
+      "moveProse.pro-transcendentals-maximal-certainty.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-fallible-proportioned-confidence.critique",
+      "moveId": "con-fallible-proportioned-confidence",
+      "originalCritique": "Strongest feature: The reply carefully distinguishes absolute certainty, maximal confidence, and lower evidential confidence, then presents revisability and proportioning belief to evidence as principled features of inquiry rather than embarrassing concessions. Principal limitation: Fallibilism answers how responsible agents should calibrate beliefs but does not independently explain the metaphysical possibility of warrant, logical normativity, or reliable cognition, which is the affirmative's deeper stated concern. Live burden: The negative must maintain the distinction between justified confidence and ultimate explanation while showing why failure to supply the latter does not invalidate knowledge or transfer the necessity burden away from the affirmative. Locked score: The very strong band reflects exceptional precision, calibration, responsiveness, and a coherent replacement standard, with limited reservation because the account presupposes evidential and logical norms without developing their ontology and therefore defeats certainty demands more completely than grounding demands.",
+      "originalWords": 139,
+      "originalCharacters": 1101,
+      "excessWordsAboveAcceptanceMaximum": 9,
+      "lockedMove": {
+        "moveId": "con-fallible-proportioned-confidence",
+        "sectionId": "sec-knowledge-certainty",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Fallible presuppositions permit maximal rather than absolute confidence, with belief proportioned to deductive or inductive support and conclusions remaining revisable.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "44:09",
+        "sourceSpan": {
+          "startEvent": 1116,
+          "endEvent": 1214,
+          "startMs": 2649530,
+          "endMs": 2870030
+        },
+        "sourceExcerpt": "certainty that doesn't approach a maximal and maximal could be absolute if the laws of logic are absolute then maximal becomes absolute it's just that I don't have any way to demonstrate that for everything else we have a lower confidence level and Allah Hume the wise man proportions his belief to the evidence and so recognizing that I live in a world and I don't think I can be",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-fallible-justification"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "pro-orthodox-divine-ground",
+            "pro-personal-god-unifies-categories"
+          ],
+          "components": [
+            {
+              "componentId": "con-fallible-proportioned-confidence-component-01",
+              "targetMoveId": "pro-orthodox-divine-ground",
+              "text": "Replace absolute divine assurance with confidence proportioned to deductive and inductive evidence.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-fallible-proportioned-confidence-component-02",
+              "targetMoveId": "pro-personal-god-unifies-categories",
+              "text": "Challenge the need for maximal certainty as a condition of knowledge or coherent inquiry.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply explicitly replaces absolute certainty with revisable, evidence-proportioned confidence and explains why this preserves knowledge and inquiry despite fallible presuppositions.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "Within justified reframes, it directly supplies a clear alternative epistemic standard and its operative qualifications."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within justified reframes, it directly supplies a clear alternative epistemic standard and its operative qualifications."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Absolute, maximal, and lower confidence are expressly distinguished and linked to different forms of support."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker expressly limits confidence, acknowledges demonstration limits, and makes revisability central to the position."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The affirmative may seek metaphysical preconditions of any warrant rather than psychologically absolute confidence.",
+          "decisiveQualification": "Fallibilism answers the certainty demand but does not by itself explain the ultimate possibility of warrant."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The distinctions among absolute, maximal, and proportioned confidence form a consistent and usable fallibilist account."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It nearly maximizes contact with the central con bridge requiring a fallibilist account of rational inquiry."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The reply fairly supplies a competing epistemic standard while leaving the distinct metaphysical question open."
+          }
+        },
+        "evidenceBasis": "The excerpt distinguishes maximal from absolute certainty and invokes Hume's maxim of proportioning belief to evidence.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-transcendentals-maximal-certainty.critique",
+      "moveId": "pro-transcendentals-maximal-certainty",
+      "originalCritique": "Strongest feature: The reply directly connects transcendental categories to indispensable practices of predication, knowledge, scientific inquiry, communication, and action, giving the maximal-certainty claim a concrete denial-dependent rationale rather than bare assertion. Principal limitation: Indispensability for reasoning does not by itself determine the categories' metaphysical ontology or establish that their best explanation is divine, and the transition from unavoidable employment to certainty remains partly compressed. Live burden: The affirmative must distinguish certainty regarding a rule's practical necessity from certainty regarding its ontological ground, then demonstrate why fallibilism cannot consistently recognize the former while suspending judgment about the latter. Locked score: The very strong band reflects a focused, highly responsive, and substantially qualified answer to the confidence challenge, moderated because its warrant establishes unavoidable use more securely than maximal metaphysical certainty and leaves the specifically Orthodox inference outstanding.",
+      "originalWords": 136,
+      "originalCharacters": 1101,
+      "excessWordsAboveAcceptanceMaximum": 6,
+      "lockedMove": {
+        "moveId": "pro-transcendentals-maximal-certainty",
+        "sectionId": "sec-knowledge-certainty",
+        "side": "pro",
+        "speaker": "Jay Dyer",
+        "moveKind": "reply",
+        "proposition": "Transcendental categories are maximally certain because denying them undermines the coherence required for knowledge, predication, science, communication, and practical action.",
+        "importance": 3,
+        "finalScore": 85,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "52:34",
+        "sourceSpan": {
+          "startEvent": 1345,
+          "endEvent": 1472,
+          "startMs": 3154319,
+          "endMs": 3428240
+        },
+        "sourceExcerpt": "of the coherence of one's belief system or even the possibility of knowledge the possibility of operating in the world of predicating about objects in the world of knowing things in the world or doing science at all those types of things are so fundamental that there I'm arguing even stronger as an argument they're maximally certain to whatever degree you want to pause it there",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 66,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-fallible-justification"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-fallible-proportioned-confidence",
+            "con-reliability-parsimony-justify-use"
+          ],
+          "components": [
+            {
+              "componentId": "pro-transcendentals-maximal-certainty-component-01",
+              "targetMoveId": "con-fallible-proportioned-confidence",
+              "text": "Show why transcendental categories warrant maximal confidence rather than merely revisable evidential confidence.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-transcendentals-maximal-certainty-component-02",
+              "targetMoveId": "con-reliability-parsimony-justify-use",
+              "text": "Explain why practical reliance presupposes deeper conditions of predication, science, and action.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly argues that denying the categories would undermine knowledge, predication, science, communication, and action, thereby contacting the fallibilist challenge to maximal confidence.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "Within ordinary contacted replies, it explicitly addresses the confidence standard but leaves the denial inference compressed."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within ordinary contacted replies, it explicitly addresses the confidence standard but leaves the denial inference compressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claimed category class, maximal confidence, and practical consequences of denial are all readily recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker qualifies the degree formulation, but indispensability does not fully establish the categories' asserted metaphysical status."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Fallibilism can grant indispensable use of categories while withholding certainty about their metaphysical explanation.",
+          "decisiveQualification": "Practical indispensability is not identical to certainty about a specific ontology or divine ground."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central con fallibilist bridge by arguing that the relevant commitments are maximally certain."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The move fairly targets the foundational level, though it compresses the fallibilist distinction between principles and formulations."
+          }
+        },
+        "evidenceBasis": "The excerpt ties the categories to knowledge, predication, science, communication, and action, then calls them maximally certain.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

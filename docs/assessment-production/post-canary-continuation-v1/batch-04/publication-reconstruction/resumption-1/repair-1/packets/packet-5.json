@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-1",
+  "packetIndex": 5,
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debateNumber": "49",
+  "debateId": "dyer-dillahunty-transcendental-theism-2019",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/resumption-1/outputs/debate-49.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/packets/debate-49.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-induction-pragmatic-circularity.critique",
+      "moveProse.con-use-without-causal-explanation.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-induction-pragmatic-circularity.critique",
+      "moveId": "pro-induction-pragmatic-circularity",
+      "originalCritique": "Strongest feature: The reply accurately identifies the classic meta-inductive difficulty: appealing to induction's historical success can provide pragmatic encouragement while employing the very pattern whose independent logical justification remains under examination. Principal limitation: Showing unavoidable circularity in a deductive vindication does not establish that induction is irrational, because rule-circular, probabilistic, externalist, or practical justification may be appropriate to an ampliative method. Live burden: The affirmative must explain why induction requires a noncircular transcendental ground and why divine providence improves its epistemic status, while the negative must clarify what kind of circularity its reliability appeal tolerates. Locked score: The strong competent band reflects clear philosophical relevance, strong contact with the reliability response, and a genuine justificatory challenge, moderated because the move concedes practical warrant, underdevelops competing theories of justification, and does not complete the inference from Humean difficulty to Orthodox necessity.",
+      "originalWords": 140,
+      "originalCharacters": 1123,
+      "excessWordsAboveAcceptanceMaximum": 10,
+      "lockedMove": {
+        "moveId": "pro-induction-pragmatic-circularity",
+        "sectionId": "sec-induction-regularity",
+        "side": "pro",
+        "speaker": "Jay Dyer",
+        "moveKind": "reply",
+        "proposition": "Justifying induction by its continued practical success is circular because the inference already presupposes the reliability that requires justification.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "70:55",
+        "sourceSpan": {
+          "startEvent": 1840,
+          "endEvent": 1870,
+          "startMs": 4255070,
+          "endMs": 4328470
+        },
+        "sourceExcerpt": "and about what shouldn't exist my worldview is that I accept to this because of a demonstration of its continued reliability called induction I haven't and that's not a justification that's just saying there it is right so in logical justification that was why I point to Hume all the way up to coin they still say that this is not a belief or a view that can be justified yes and",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-fallible-justification"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-reliability-parsimony-justify-use",
+            "con-fallible-proportioned-confidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-induction-pragmatic-circularity-component-01",
+              "targetMoveId": "con-reliability-parsimony-justify-use",
+              "text": "Continued reliability reports induction's success but cannot noncircularly justify induction's future reliability.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-induction-pragmatic-circularity-component-02",
+              "targetMoveId": "con-fallible-proportioned-confidence",
+              "text": "Proportioning belief to inductive evidence still presupposes the reliability of inductive inference.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly distinguishes observed success from logical justification and identifies the circular use of induction to warrant induction.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "Within diagnostic defeats, it contacts the decisive warrant and states why the offered evidence cannot supply the requested justification."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it contacts the decisive warrant and states why the offered evidence cannot supply the requested justification."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "not-needed",
+          "rationale": "The distinction between observed continued reliability and logical justification is explicit and consistently maintained."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "For the narrow claim that inductive success cannot noncircularly prove induction, the asserted force matches the warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The opponent offers externalist or pragmatic justification rather than a deductively noncircular proof of induction.",
+          "decisiveQualification": "Such justification may rationalize use while conceding that it does not answer the affirmative's ultimate-ground demand."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central con fallibilist account at its claimed reliability-based justificatory foundation."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The reply distinguishes usefulness from the stronger justificatory claim, though it does not fully explore rule-circular warrant."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts accepting induction due to continued reliability with supplying a logical justification and invokes Hume.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-use-without-causal-explanation.critique",
+      "moveId": "con-use-without-causal-explanation",
+      "originalCritique": "Strongest feature: The car analogy vividly distinguishes knowing that a system works from knowing why it works, supporting a modest and intuitively powerful claim that operational reliability can warrant rational reliance without complete causal explanation. Principal limitation: Induction differs from an independently observable machine because assessments of its continuing reliability themselves employ inductive expectations, so the analogy does not fully answer the affirmative's meta-inductive circularity concern. Live burden: The negative must supplement operational success with an account of permissible rule-circular justification, while the affirmative must show why incomplete ultimate explanation defeats reasonable expectation rather than merely limiting philosophical completeness. Locked score: The very strong band reflects excellent responsiveness, clarity, calibration, and practical force against an excessive explanatory demand, tempered because the analogy partially shifts from justification of induction to technical knowledge of mechanisms and therefore leaves the deepest circularity objection unresolved.",
+      "originalWords": 141,
+      "originalCharacters": 1134,
+      "excessWordsAboveAcceptanceMaximum": 11,
+      "lockedMove": {
+        "moveId": "con-use-without-causal-explanation",
+        "sectionId": "sec-induction-regularity",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Demonstrated practical reliability permits rational use of a system even when its ultimate causal explanation is unknown, just as knowing a car works does not require knowing how it works.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "102:44",
+        "sourceSpan": {
+          "startEvent": 2710,
+          "endEvent": 2783,
+          "startMs": 6164140,
+          "endMs": 6329710
+        },
+        "sourceExcerpt": "use which is a God as a foundation for them that's the point at which we disagree and what you seem to be saying is that unless I can provide an explanation for why they work I cannot have any reasonable expectation that they are in fact working and that's a crock because I can I don't need to know how my car works to know whether or not it's working I don't need to know how we",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-fallible-justification"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "pro-induction-pragmatic-circularity",
+            "pro-orthodox-divine-ground",
+            "pro-transcendentals-maximal-certainty"
+          ],
+          "components": [
+            {
+              "componentId": "con-use-without-causal-explanation-component-01",
+              "targetMoveId": "pro-induction-pragmatic-circularity",
+              "text": "Rational use requires demonstrated operation, not possession of the system's ultimate causal explanation.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-use-without-causal-explanation-component-02",
+              "targetMoveId": "pro-orthodox-divine-ground",
+              "text": "The practical entitlement to use logic and induction does not entail adding God as their foundation.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-use-without-causal-explanation-component-03",
+              "targetMoveId": "pro-transcendentals-maximal-certainty",
+              "text": "Reasonable expectation can be grounded below the level of maximal or absolute certainty.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply justifies a replacement epistemic demand through the car analogy: operational reliability can warrant use despite ignorance of underlying explanation.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "Within justified reframes, it clearly preserves reasonable reliance and explains why ultimate causal knowledge is not required."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within justified reframes, it clearly preserves reasonable reliance and explains why ultimate causal knowledge is not required."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Operational reliability, ultimate explanation, and reasonable expectation are clearly distinguished in the selected span."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The car analogy adequately supports the limited claim that practical knowledge need not include a complete causal theory."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The affirmative asks for justification of induction's reliability, not technical knowledge of every causal mechanism.",
+          "decisiveQualification": "Operational success can justify use, but the car analogy does not fully resolve the meta-inductive circularity objection."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly develops the central fallibilist bridge by defending rational use without an ultimate causal account."
+          },
+          "representationalCharity": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (74 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says reasonable expectation does not require knowing why a system works and illustrates this with a functioning car.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

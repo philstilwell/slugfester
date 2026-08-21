@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-1",
+  "packetIndex": 8,
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debateNumber": "49",
+  "debateId": "dyer-dillahunty-transcendental-theism-2019",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/resumption-1/outputs/debate-49.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/packets/debate-49.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-denial-dependent-positive-proof.critique",
+      "moveProse.pro-logic-reflects-divine-mind.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-denial-dependent-positive-proof.critique",
+      "moveId": "pro-denial-dependent-positive-proof",
+      "originalCritique": "Strongest feature: The reply provides a concise and recognizable transcendental form: if denial of a purported precondition necessarily employs that precondition, the attempted denial supplies a distinctive kind of positive support. Principal limitation: This structure can establish only what the demonstrated performative dependence warrants, and the excerpt does not show that a personal deity, Orthodox theology, or any complete metaphysical system is assumed in denying the categories. Live burden: The affirmative must formulate each contradiction explicitly and then defend the additional inference from unavoidable logical practice to the uniquely Orthodox ground rather than treating both conclusions as one step. Locked score: The strong competent band reflects substantial methodological clarity, direct contact with the demand for argument form, and a legitimate proof strategy, moderated by partial responsiveness, insufficiently explicit premises, and failure to complete the crucial motion-level bridge beyond indispensable preconditions.",
+      "originalWords": 140,
+      "originalCharacters": 1053,
+      "excessWordsAboveAcceptanceMaximum": 10,
+      "lockedMove": {
+        "moveId": "pro-denial-dependent-positive-proof",
+        "sectionId": "sec-transcendental-method",
+        "side": "pro",
+        "speaker": "Jay Dyer",
+        "moveKind": "reply",
+        "proposition": "A transcendental precondition receives positive proof when its attempted denial necessarily assumes it, although this proof differs from ordinary empirical demonstration.",
+        "importance": 3,
+        "finalScore": 76,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "142:00",
+        "sourceSpan": {
+          "startEvent": 3789,
+          "endEvent": 3840,
+          "startMs": 8520810,
+          "endMs": 8635600
+        },
+        "sourceExcerpt": "argument is that when you deny something that's fundamental and paradigm attak the proof for that thing is in the fact that it's assumed in its denial that is a transcendental argument that's it's that simple and it is a positive proof it's just a different type of proof than normal empirical claims or even normal logical claims and that's why because the nature of the thing is",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-transcendental-proof"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-explicit-form-required",
+            "con-reductio-must-exhaust-alternatives"
+          ],
+          "components": [
+            {
+              "componentId": "pro-denial-dependent-positive-proof-component-01",
+              "targetMoveId": "con-explicit-form-required",
+              "text": "The proof form is that denial of a fundamental precondition necessarily employs that precondition.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-denial-dependent-positive-proof-component-02",
+              "targetMoveId": "con-reductio-must-exhaust-alternatives",
+              "text": "The response explains a denial-dependent proof but does not exclude alternatives to a specifically divine precondition.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply supplies a concise transcendental inference answering the demand for form, while leaving the further inference from necessary preconditions to Orthodox God unshown.",
+          "responsivenessWithinClass": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive demand for argument form but not the separate alternative-exclusion requirement."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive demand for argument form but not the separate alternative-exclusion requirement."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The denial condition, assumed precondition, and distinction from empirical proof are all explicitly recoverable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The form can establish unavoidable preconditions, but the excerpt does not show that the Orthodox God is among them."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An unavoidable rule of reasoning may be pragmatically indispensable without proving a particular metaphysical ontology.",
+          "decisiveQualification": "Denial dependence establishes the rule's use or status only as far as the specific contradiction demonstrates."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 73,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly and strongly supports the subsidiary transcendental-proof bridge through an explicit denial-dependent account."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says a fundamental claim is positively proved when its denial necessarily assumes it, distinguishing this from empirical proof.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-logic-reflects-divine-mind.critique",
+      "moveId": "pro-logic-reflects-divine-mind",
+      "originalCritique": "Strongest feature: The reply supplies a coherent third option to the alterability dilemma by presenting logical laws as reflections of an unchanging divine mind, neither arbitrary creations nor external constraints upon omnipotence. Principal limitation: Internal coherence within the Orthodox paradigm does not establish the model's truth, explanatory superiority, or necessity, and reflection remains insufficiently developed relative to the rival proposal of primitive invariant relations. Live burden: The affirmative must explain how mentality accounts for logical necessity and normativity and why this relation grounds rather than redescribes them, while comparing the model fairly with nonpersonal alternatives. Locked score: The strong competent band reflects direct responsiveness, conceptual clarity, and successful avoidance of the dilemma's stated horns, moderated by partial rather than complete rebuttal, asserted worldview dependence, limited independent warrant, and an outstanding inference from possible divine reflection to uniquely necessary Orthodox explanation.",
+      "originalWords": 140,
+      "originalCharacters": 1084,
+      "excessWordsAboveAcceptanceMaximum": 10,
+      "lockedMove": {
+        "moveId": "pro-logic-reflects-divine-mind",
+        "sectionId": "sec-logic-divine-mind",
+        "side": "pro",
+        "speaker": "Jay Dyer",
+        "moveKind": "reply",
+        "proposition": "Logical laws are neither standards imposed independently on God nor arbitrary rules God can alter, but reflections of the divine mind within the Orthodox worldview.",
+        "importance": 3,
+        "finalScore": 77,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "144:32",
+        "sourceSpan": {
+          "startEvent": 3853,
+          "endEvent": 3878,
+          "startMs": 8672859,
+          "endMs": 8727170
+        },
+        "sourceExcerpt": "of logic are arbitrary categories that God sort of can change or play with it will or whatever we wouldn't say that we would say that the laws of logic truth at cetera are reflections of God the reflections of the divine mind so no God does not change the laws of logic and that's not a denial of his omnipotence because within our paradigm within our worldview the the meaning of",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-logic-induction-dilemmas"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-divine-logic-dilemma",
+            "con-logic-describes-invariant-relations"
+          ],
+          "components": [
+            {
+              "componentId": "pro-logic-reflects-divine-mind-component-01",
+              "targetMoveId": "con-divine-logic-dilemma",
+              "text": "Answer the alterable-or-external dilemma by treating logic as an unchanging reflection of God's mind.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-logic-reflects-divine-mind-component-02",
+              "targetMoveId": "con-logic-describes-invariant-relations",
+              "text": "Explain why invariant logical descriptions have a divine rather than primitive basis.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly supplies a third model under which logic is neither alterable nor externally imposed, but it does not explain why reflection in a divine mind is preferable to primitive invariance.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "Within partial answers, it contacts the decisive dilemma while leaving the competing descriptive account substantially unanswered."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive dilemma while leaving the competing descriptive account substantially unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Arbitrary alteration, external constraint, reflection, and omnipotence are distinctly presented within the Orthodox paradigm."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The model coherently answers the dilemma, but its truth and unique explanatory adequacy remain asserted rather than demonstrated."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Necessary logical relations may be primitive and invariant without reflecting any personal mind.",
+          "decisiveQualification": "The reflection model avoids the dilemma but must independently establish that personality explains logical necessity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "Necessary reflection supplies a coherent third option, though the grounding relation and omnipotence account remain partly implicit."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It strongly supports the subsidiary logic-dilemma bridge by resolving the alterability and external-constraint objection."
+          },
+          "representationalCharity": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt denies arbitrary divine alteration, calls logic a reflection of the divine mind, and denies conflict with omnipotence.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

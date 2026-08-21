@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-1",
+  "packetIndex": 4,
+  "productionCanary": false,
+  "batchNumber": 4,
+  "stagingOnly": true,
+  "debateNumber": "49",
+  "debateId": "dyer-dillahunty-transcendental-theism-2019",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/resumption-1/outputs/debate-49.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-04/publication-reconstruction/packets/debate-49.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-divine-logic-dilemma.critique",
+      "moveProse.con-perfect-ground-fallible-access.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-divine-logic-dilemma.critique",
+      "moveId": "con-divine-logic-dilemma",
+      "originalCritique": "Strongest feature: The reply presents a memorable two-horn challenge that directly tests whether divine guarantorship actually explains logical invariance, assigning a clear adverse consequence to both alterability and divine inability to alter logic. Principal limitation: The dilemma is not exhaustive because logical laws might necessarily express an unchanging divine nature, neither voluntarily created nor externally imposed, leaving a third model that requires separate evaluation. Live burden: The negative must explain why necessary-expression accounts merely redescribe rather than ground logical necessity, while the affirmative must articulate how reflection in divine nature supplies explanatory value without collapsing into arbitrariness or external constraint. Locked score: The very strong band reflects precise structure, excellent relevance, appropriate interrogative calibration, and decisive pressure on the guarantor model, moderated by incomplete charity toward the available third option and the absence of a conclusive demonstration that every divine relation fails.",
+      "originalWords": 142,
+      "originalCharacters": 1091,
+      "excessWordsAboveAcceptanceMaximum": 12,
+      "lockedMove": {
+        "moveId": "con-divine-logic-dilemma",
+        "sectionId": "sec-logic-divine-mind",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "God cannot secure logical laws as guarantor: if God can alter them they are insecure, while if God cannot alter them God is subject to those laws.",
+        "importance": 3,
+        "finalScore": 86,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "64:48",
+        "sourceSpan": {
+          "startEvent": 1688,
+          "endEvent": 1700,
+          "startMs": 3888630,
+          "endMs": 3922800
+        },
+        "sourceExcerpt": "in addition to what no demonstration of necessity and I'm not sure what the warrant is apart from an assertion that there is a need and atheism or a a non-theistic view of the world that doesn't feel that is this can God change alter or violate the laws of logic because if so then they're not guaranteed and if not then he's not the guarantor he is now subject to those same laws",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-divine-grounding-deficit"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-orthodox-divine-ground",
+            "pro-coherentist-web-no-arbitrary-stop"
+          ],
+          "components": [
+            {
+              "componentId": "con-divine-logic-dilemma-component-01",
+              "targetMoveId": "pro-orthodox-divine-ground",
+              "text": "A divine guarantor must explain whether logical laws are alterable by God or constraints upon God.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-divine-logic-dilemma-component-02",
+              "targetMoveId": "pro-coherentist-web-no-arbitrary-stop",
+              "text": "Adding God does not end arbitrariness if the relation between God and logical necessity remains unexplained.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply presents an explicit dilemma and states the defeating consequence for each horn: insecurity if alterable, nonguarantor status if not.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within diagnostic defeats, it directly challenges the core guarantor inference and states both adverse consequences."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it directly challenges the core guarantor inference and states both adverse consequences."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The alterability dilemma and its consequences are sharply recoverable with no material scope drift."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The challenge is appropriately framed as a question exposing a dilemma rather than as a conclusively established contradiction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Logical laws may necessarily express God's unchanging nature rather than be alterable products or external constraints.",
+          "decisiveQualification": "That third account must explain why necessary expression counts as grounding rather than redescribing the relation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The two branches are internally clear, but the dilemma is not exhaustive because necessary-expression accounts remain available."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central divine-grounding-deficit bridge by challenging how God could guarantee logical necessity."
+          },
+          "representationalCharity": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt asks whether God can alter logic and argues that either alterability defeats security or inability defeats guarantorship.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-perfect-ground-fallible-access.critique",
+      "moveId": "con-perfect-ground-fallible-access",
+      "originalCritique": "Strongest feature: The reply cleanly separates an allegedly perfect ontological foundation from fallible human access to it, showing that divine existence alone cannot automatically transmit maximal epistemic warrant through imperfect cognitive faculties. Principal limitation: The claim that God has no way to provide such assurance unless human minds become wholly unflawed is broader than demonstrated, since generally reliable faculties, revelation, or defeasible authentication remain conceivable. Live burden: The affirmative must explain the epistemic transmission from divine ground to human belief and calibrate its promised warrant, while the negative must distinguish objections to maximal certainty from objections to ordinary fallible knowledge. Locked score: The very strong band reflects a highly responsive, charitable, and powerful internal critique that succeeds even while granting the divine premise, with a modest deduction for overstating the impossibility of divine communication and leaving reliable-but-imperfect access insufficiently explored.",
+      "originalWords": 140,
+      "originalCharacters": 1069,
+      "excessWordsAboveAcceptanceMaximum": 10,
+      "lockedMove": {
+        "moveId": "con-perfect-ground-fallible-access",
+        "sectionId": "sec-knowledge-certainty",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Even a perfect divine foundation cannot confer maximal epistemic warrant on flawed human minds unless their cognitive fallibility is removed.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "65:19",
+        "sourceSpan": {
+          "startEvent": 1701,
+          "endEvent": 1735,
+          "startMs": 3919830,
+          "endMs": 4002030
+        },
+        "sourceExcerpt": "dirty filter and so the fact that you are convinced that there's a God out there that serves as a foundation for logic doesn't mean there is one and even if that God does exist and does serve as the foundation for it logic there's no way for that God to demonstrate that to you and what to the point where you would have the essentially absolute or maximal epistemic warrant unless that God makes your mind completely not flawed",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 80,
+          "characterCount": 428
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-divine-grounding-deficit"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-transcendentals-maximal-certainty",
+            "pro-orthodox-divine-ground"
+          ],
+          "components": [
+            {
+              "componentId": "con-perfect-ground-fallible-access-component-01",
+              "targetMoveId": "pro-transcendentals-maximal-certainty",
+              "text": "A perfect ground does not yield maximal human warrant through fallible cognitive access.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-perfect-ground-fallible-access-component-02",
+              "targetMoveId": "pro-orthodox-divine-ground",
+              "text": "Even granting the divine foundation, the epistemic transmission from God to a flawed believer remains unresolved.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply grants the proposed ground arguendo and identifies the dirty-filter access problem, which defeats the claimed move from perfection to maximal warrant.",
+          "responsivenessWithinClass": {
+            "value": 95,
+            "rationale": "Within diagnostic defeats, it directly isolates the access bridge and explains why the conclusion does not follow even on the premise."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it directly isolates the access bridge and explains why the conclusion does not follow even on the premise."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between ontic foundation and epistemic access is explicit and consistently illustrated by the filter analogy."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The access objection is well fitted, though saying there is no way for God to demonstrate it is broader than established."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A God could design generally reliable faculties or provide revelation without eliminating every human error.",
+          "decisiveQualification": "General reliability would support fallible warrant but still would not automatically produce maximal individual certainty."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It strongly advances the central divine-grounding-deficit bridge concerning secure access by fallible human agents."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt compares cognition to a dirty filter and denies that divine existence alone supplies maximal epistemic warrant.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

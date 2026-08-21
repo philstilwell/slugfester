@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-preparation-harness-correction-1",
+  "protocolId": "assessment-production-post-canary-batch-04-debate-49-publication-resumption-repair-1",
+  "status": "frozen-applied-deterministic-synthetic-shortening-ceiling-correction",
+  "batchNumber": 4,
+  "debateNumber": "49",
+  "directIncrementalCostUsd": 0,
+  "failure": {
+    "stage": "preparation-preview",
+    "modelContextsExecuted": 0,
+    "message": "con-divine-guarantee-unnecessary-step: repaired critique shorter than 880 characters",
+    "cause": "The synthetic full-output proof shortened every diagnosed critique to the 118-word generation target, although the deterministic proof only needs to establish the frozen 130-word acceptance ceiling. That unnecessary shortening reduced one synthetic critique below the independent 880-character acceptance minimum."
+  },
+  "correction": {
+    "file": "scripts/prepare-assessment-production-post-canary-batch-04-publication-resumption-repair.mjs",
+    "preCorrectionSha256": "0931b4c69162f035c6ef758a2348a0950856d435cd3f17688078175f84fb1723",
+    "correctedSourceSha256": "faedf699538d2aac45f79a1d4594be0ab3caeadeb8a6c8d73e72874efa46af4a",
+    "oldSyntheticWordCeiling": 118,
+    "newSyntheticWordCeiling": 130,
+    "modelGenerationTargetWordsPreserved": [112, 118],
+    "modelAcceptanceWordsPreserved": [105, 130],
+    "minimumCharactersPreserved": 880,
+    "packetFieldsChanged": 0,
+    "schemaFieldsChanged": 0,
+    "modelInputsChanged": 0,
+    "protectedEvidenceChanged": 0
+  },
+  "authorization": {
+    "standingAuthorizationApplies": true,
+    "boundedFirstDeterministicHarnessCorrection": true,
+    "correctedValidationPassesMaximum": 1,
+    "modelExecution": false,
+    "paidServices": false,
+    "retry": false,
+    "recursiveCorrection": false
+  },
+  "nextRequiredAction": "perform-exactly-one-corrected-preparation-preview-and-freeze-only-if-it-passes"
+}
