@@ -389,11 +389,11 @@ export const debateSummaries = [
     "number": "09",
     "title": "Jordan Peterson vs Matt Dillahunty: The Greatest God Debate In History",
     "label": "God and religious meaning",
-    "date": "2026-05-28",
+    "date": "2026-08-21",
     "duration": "1 hr 39 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=9nQUg4QeI_Y",
     "motion": "Does God-language name a real supernatural being, or does it function mainly as a religious, moral, and psychological substrate for meaning?",
-    "summary": "Peterson defends religious meaning as culture's deep substrate; Dillahunty asks for evidence that any actual God exists.",
+    "summary": "Peterson defended religious experience, narrative, and ultimate value as meaning-bearing realities; Dillahunty separated those functions from warranted belief in supernatural agency.",
     "sides": {
       "pro": {
         "name": "Religious pragmatist",
@@ -407,30 +407,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 68,
-      "con": 80
+      "pro": 73,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Meaning versus existence"
+        "title": "God-Language, Definition, and Ontological Reference"
       },
       {
-        "title": "Mystical experience"
+        "title": "Religious Experience and Naturalistic Explanation"
       },
       {
-        "title": "Origins of religious attribution"
+        "title": "Moral Grounding and Secular Alternatives"
       },
       {
-        "title": "Morality and well-being"
+        "title": "Narrative Inheritance and Existential Orientation"
       },
       {
-        "title": "Religion as archive and language"
-      },
-      {
-        "title": "What counts as atheism"
-      },
-      {
-        "title": "Evolutionary morality and close"
+        "title": "Consciousness, Reality, and Explanatory Limits"
       }
     ]
   },
@@ -621,11 +615,11 @@ export const debateSummaries = [
     "number": "14",
     "title": "Michael Jones vs Richard Carrier: Does God Exist?",
     "label": "God and naturalism",
-    "date": "2026-05-28",
+    "date": "2026-08-21",
     "duration": "1 hr 55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ht_SVm0GWBs",
     "motion": "Does the evidence from consciousness, emergence, morality, and cosmology make theism more plausible than naturalism?",
-    "summary": "Jones argues theism explains mind, emergence, and morality; Carrier argues naturalism better fits precedent, simplicity, and evidence.",
+    "summary": "Jones and Carrier closely contest whether consciousness, cosmic structure, morality, and origins comparatively favor theistic idealism or secular naturalism.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -641,26 +635,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 74,
-      "con": 80
+      "con": 73
     },
     "sections": [
       {
-        "title": "Idealism and mind"
+        "title": "Consciousness, Computation, and Physical Reduction"
       },
       {
-        "title": "Emergent universe"
+        "title": "Emergence, Information, and Cosmic Structure"
       },
       {
-        "title": "Moral realism"
+        "title": "Morality, Obligation, and Historical Development"
       },
       {
-        "title": "Parsimony and precedent"
+        "title": "Cosmological Origins, Probability, and Brute Facts"
       },
       {
-        "title": "Nothing and bubble"
-      },
-      {
-        "title": "Consciousness crossfire"
+        "title": "Parsimony, Prediction, and Explanatory Unification"
       }
     ]
   },
@@ -1226,11 +1217,11 @@ export const debateSummaries = [
     "number": "27",
     "title": "Alex O'Connor vs Frank Turek: The Moral Argument Debate",
     "label": "Evil and moral objectivity",
-    "date": "2026-05-30",
+    "date": "2026-08-21",
     "duration": "58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=b5a3MxIqZOs",
     "motion": "Does evil and objective morality point to God, or can agnostic atheism explain moral experience without accepting a divine moral ground?",
-    "summary": "Turek argues evil, goodness, logic, and reason require God; O'Connor argues atheism carries no single worldview burden and moral experience can be subjective yet intelligible.",
+    "summary": "Turek grounds objective obligation in God; O'Connor distinguishes compelling moral experience from objectivity and offers evolutionary, psychological, and conditional explanations.",
     "sides": {
       "pro": {
         "name": "Moral argument",
@@ -1244,27 +1235,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 81,
-      "con": 84
+      "pro": 76,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Evil and burden"
+        "title": "Burden of Proof and Scope of the Moral Argument"
       },
       {
-        "title": "Objective morality"
+        "title": "Objective Moral Obligation and Divine Grounding"
       },
       {
-        "title": "Objectivity and subjectivity"
+        "title": "Evolutionary and Psychological Explanation of Moral Experience"
       },
       {
-        "title": "Human flourishing"
+        "title": "Reason, Logic, and Evolutionary Reliability"
       },
       {
-        "title": "Evolution and ambiguity"
-      },
-      {
-        "title": "Reason and circularity"
+        "title": "Moral Disagreement, Cultural Variation, and Practical Judgment"
       }
     ]
   },
@@ -2690,11 +2678,11 @@ export const debateSummaries = [
     "number": "58",
     "title": "Matt Dillahunty vs Matt Slick: Is Secular Humanism Superior to Christianity?",
     "label": "Secular humanism and presuppositional critique",
-    "date": "2026-06-03",
+    "date": "2026-08-21",
     "duration": "2 hr 43 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=EKlycI9ZKsY",
     "motion": "Is secular humanism superior to Christianity at achieving human flourishing, rational decision-making, moral reasoning, and conflict resolution?",
-    "summary": "Dillahunty argues that secular humanism is more revisable, evidence-facing, and focused on this-world human flourishing; Slick argues that it self-refutes because it cannot ground logic, science, or morality without Christianity.",
+    "summary": "Dillahunty’s revisable, welfare-centered humanism outperformed Slick’s foundational Christian critique, whose serious grounding objections remained insufficiently connected to comparative practical superiority.",
     "sides": {
       "pro": {
         "name": "Secular humanism",
@@ -2709,26 +2697,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 82,
-      "con": 68
+      "con": 74
     },
     "sections": [
       {
-        "title": "Goals and definitions"
+        "title": "Comparative Standard and the Meaning of Flourishing"
       },
       {
-        "title": "Methods and evidence"
+        "title": "Cognition, Logical Inference, and Epistemic Reliability"
       },
       {
-        "title": "Moral reasoning and consequences"
+        "title": "Foundations of Logic, Science, and Intelligibility"
       },
       {
-        "title": "Bible, slavery, and interpretation"
+        "title": "Moral Standards, Consequences, and Context"
       },
       {
-        "title": "Logic, brains, and presuppositions"
-      },
-      {
-        "title": "Q&A, harms, and closing focus"
+        "title": "Practical Outcomes, Cooperation, and Conflict Resolution"
       }
     ]
   },
@@ -4749,11 +4734,11 @@ export const debateSummaries = [
     "number": "102",
     "title": "Stephen Woodford vs Justin Brierley: Is Christianity Rational?",
     "label": "Christian rationality and evidence",
-    "date": "2026-07-17",
+    "date": "2026-08-21",
     "duration": "1 hr 27 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=EfAWALcKf2w",
     "motion": "Is Christianity rational, and do its claims about God, morality, reason, and resurrection meet proportionate evidential standards?",
-    "summary": "Woodford argues Christianity lowers evidential standards and leaves hiddenness and moral tensions unresolved; Brierley argues Christianity is rational as a cumulative worldview explanation.",
+    "summary": "Woodford pressed consistent evidence, naturalistic alternatives, and inference gaps; Brierley defended cumulative Christian warrant through experience, explanation, morality, reason, and testimony.",
     "sides": {
       "pro": {
         "name": "Christianity irrational",
@@ -4772,25 +4757,19 @@ export const debateSummaries = [
     },
     "sections": [
       {
-        "title": "Opening Burdens"
+        "title": "Evidential Standards, Revelation, and Access"
       },
       {
-        "title": "Materialism And Reason"
+        "title": "Fine-Tuning, Intelligibility, and Theistic Explanation"
       },
       {
-        "title": "Morality And Human Value"
+        "title": "Morality, Human Dignity, and Scriptural Coherence"
       },
       {
-        "title": "Faith And Hiddenness"
+        "title": "Reason, Freedom, Evolution, and Naturalism"
       },
       {
-        "title": "Justice Mercy Scripture"
-      },
-      {
-        "title": "Resurrection And Closing"
-      },
-      {
-        "title": "Fine Tuning And Evolved Reason"
+        "title": "Resurrection, Testimony, and Christian-Specific Inference"
       }
     ]
   },
@@ -5807,11 +5786,11 @@ export const debateSummaries = [
     "number": "124",
     "title": "Sam Harris vs Jordan Peterson: God, Atheism, The Bible, Jesus",
     "label": "Religion, myth, and moral truth",
-    "date": "2026-07-29",
+    "date": "2026-08-21",
     "duration": "2 hr 06 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=jey_CzIOfYE",
     "motion": "Can religious stories, God-language, and biblical tradition ground moral truth and meaning, or should moral realism, well-being, and open inquiry replace dogmatic religious frameworks?",
-    "summary": "Peterson argues that religious stories and God-language encode evolved moral heuristics and truth-seeking structures; Harris argues that dogma, revelation claims, and elastic God-language obstruct clearer secular moral realism.",
+    "summary": "Peterson defends religious narrative as moral mediation and embodied guidance; Harris argues that well-being, causal inquiry, and revisability provide clearer secular foundations.",
     "sides": {
       "pro": {
         "name": "Religious pragmatism",
@@ -5825,30 +5804,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 80,
-      "con": 87
+      "pro": 78,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Moral Common Ground"
+        "title": "Moral Facts, Well-Being, and the Fact–Value Bridge"
       },
       {
-        "title": "Dogma And Totalitarianism"
+        "title": "Scriptural Authority and Interpretive Constraint"
       },
       {
-        "title": "Scripture And Slavery"
+        "title": "God-Language, Prayer, and Naturalized Spirituality"
       },
       {
-        "title": "Prophecy And Psychology"
+        "title": "Moral Universals, Cultural Variation, and Religious Pluralism"
       },
       {
-        "title": "Facts Values Stories"
+        "title": "Dogmatism, Truthful Speech, and Revisable Inquiry"
       },
       {
-        "title": "Heuristics And Updating"
-      },
-      {
-        "title": "God And Atheism"
+        "title": "Inherited Heuristics and Practical Moral Guidance"
       }
     ]
   },
@@ -6475,11 +6451,11 @@ export const debateSummaries = [
     "number": "138",
     "title": "William Albrecht vs Robert Price: Did Jesus Bodily Rise from the Dead?",
     "label": "Bodily resurrection, ancient parallels, and testimony",
-    "date": "2026-07-31",
+    "date": "2026-08-21",
     "duration": "1 hr 53 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=CqpFmw4pwrY",
     "motion": "Did Jesus Christ bodily rise from the dead, as early Christian sources claim?",
-    "summary": "Albrecht argues that Paul, Gospel appearances, and early Christian testimony establish a bodily resurrection; Price invokes historical analogy, textual tension, and natural explanations for Christian belief and growth.",
+    "summary": "Albrecht defended bodily continuity through early testimony and textual distinctions; Price narrowly prevailed by pressing historical method, provenance uncertainty, and ordinary alternative explanations.",
     "sides": {
       "pro": {
         "name": "Bodily resurrection case",
@@ -6493,24 +6469,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 74,
-      "con": 79
+      "pro": 78,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Historical Method and Early Testimony"
+        "title": "Historical Method, Miracle Possibility, and Evidential Burden"
       },
       {
-        "title": "Ancient Parallels and Pagan Context"
+        "title": "Earliest Resurrection Sources and the Meaning of Bodily"
       },
       {
-        "title": "Paul's Received Tradition"
+        "title": "Source Provenance, Apostolic Transmission, and Multiple Attestation"
       },
       {
-        "title": "Spiritual Body and Apostolic Tradition"
+        "title": "Pagan Resurrection Parallels and Comparative Context"
       },
       {
-        "title": "Martyrdom, Growth, and Sincerity"
+        "title": "Martyrdom, Conversion, and Early Christian Growth"
       }
     ]
   },
@@ -7022,11 +6998,11 @@ export const debateSummaries = [
     "number": "150",
     "title": "Mike Licona vs Matt Dillahunty: Was Jesus Raised from the Dead?",
     "label": "Miracles, resurrection, and historical evidence",
-    "date": "2026-07-31",
+    "date": "2026-08-21",
     "duration": "2 hr 30 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=IW9w6c2RWmA",
     "motion": "Did Jesus rise from the dead, and can historical evidence plus allegedly supernatural phenomena justify that conclusion?",
-    "summary": "Licona argues that corroborated anomalous experiences and Pauline testimony make resurrection the best historical explanation; Dillahunty argues that unexplained reports and ancient sources cannot establish supernatural causation.",
+    "summary": "Licona defended resurrection through historical and comparative inference; Dillahunty more effectively separated reported events, unexplained anomalies, supernatural classification, and justified causal attribution.",
     "sides": {
       "pro": {
         "name": "Resurrection hypothesis",
@@ -7040,24 +7016,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 61,
-      "con": 84
+      "pro": 79,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Experiential Claims and Empirical Confirmation"
+        "title": "Historical foundation for the appearance claims"
       },
       {
-        "title": "Paul, Historical Bedrock, and Explanatory Scope"
+        "title": "Resurrection versus naturalistic explanations"
       },
       {
-        "title": "Methodological Naturalism and Anomalies"
+        "title": "From anomaly to supernatural causation"
       },
       {
-        "title": "Cross-Examination: Naming the Supernatural"
+        "title": "Historical method and standards for extraordinary claims"
       },
       {
-        "title": "Audience Questions: Testimony, Faith, and Inquiry"
+        "title": "Background supernaturalism and identification of divine agency"
       }
     ]
   },
@@ -7338,11 +7314,11 @@ export const debateSummaries = [
     "number": "157",
     "title": "Matt Dillahunty vs Lewis Howitt: Is Christianity True?",
     "label": "Logic, reason, and divine grounding",
-    "date": "2026-08-01",
+    "date": "2026-08-21",
     "duration": "1 hr 58 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=13PnL6QyMEw",
     "motion": "Is Christianity true, and do the grounding of logic, a necessary cause, divine hiddenness, and the relation of reason to revelation support or undermine it?",
-    "summary": "Howitt argues that reason requires a necessary divine logos; Dillahunty says the inference to Christianity is unshown and its God remains evidentially hidden.",
+    "summary": "Howitt develops a necessary Logos and Trinitarian metaphysics; Dillahunty challenges its evidential standards, Christian specificity, divine coherence, and treatment of classical logic.",
     "sides": {
       "pro": {
         "name": "Christian logos",
@@ -7356,24 +7332,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 65,
-      "con": 81
+      "pro": 71,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Truth, public evidence, and divine hiddenness"
+        "title": "Truth Standards, Evidence, and Divine Hiddenness"
       },
       {
-        "title": "From logical structure to the Trinity"
+        "title": "Grounding Logic and the Logos"
       },
       {
-        "title": "Natural reason, history, and doctrine"
+        "title": "Necessary Cause, Contingency, and Explanatory Termination"
       },
       {
-        "title": "Perfection, doubt, and timelessness"
+        "title": "From Metaphysical Structure to Trinity, Incarnation, and Revelation"
       },
       {
-        "title": "Dialectic, contingency, and the closing burden"
+        "title": "Perfect Divine Knowledge, Doubt, and Self-Relation"
+      },
+      {
+        "title": "Creation, Divine Relations, Spacetime, and Logical Coherence"
       }
     ]
   },
@@ -8381,11 +8360,11 @@ export const debateSummaries = [
     "number": "181",
     "title": "Gary Habermas vs Antony Flew: Did Jesus Rise from the Dead?",
     "label": "Historical and philosophical evidence for resurrection",
-    "date": "2026-08-01",
+    "date": "2026-08-21",
     "duration": "1 hr 31 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ksa8uGe21rw",
     "motion": "Does the historical evidence make Jesus' bodily resurrection a rational conclusion?",
-    "summary": "Habermas argues from a minimal historical core, early Pauline testimony, an empty tomb, and failed natural alternatives; Flew accepts much of the core but invokes visions, evidential gaps, and naturalistic priors.",
+    "summary": "Habermas assembled convergent historical and bodily evidence, while Flew pressed source limitations, natural underdetermination, and the need for justified theological priors.",
     "sides": {
       "pro": {
         "name": "Resurrection is the best explanation",
@@ -8399,27 +8378,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 89,
-      "con": 84
+      "pro": 87,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Minimal facts and early Pauline testimony"
+        "title": "Historical Sources and Early Tradition"
       },
       {
-        "title": "Grief visions and Paul's conversion"
+        "title": "Death, Burial, and the Empty Tomb"
       },
       {
-        "title": "Physical versus spiritual resurrection"
+        "title": "Appearances and Psychological Alternatives"
       },
       {
-        "title": "Death, burial, and the empty tomb"
+        "title": "Nature of the Resurrection Body"
       },
       {
-        "title": "Miracles, prior beliefs, and natural law"
+        "title": "Comparative Explanation and Burden of Reconstruction"
       },
       {
-        "title": "Near-death experiences and worldview support"
+        "title": "Miracle Priors and Worldview Evidence"
       }
     ]
   },
