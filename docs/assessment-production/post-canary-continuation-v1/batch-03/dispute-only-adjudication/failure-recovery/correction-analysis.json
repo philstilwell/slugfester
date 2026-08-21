@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-124-adjudication-correction-analysis",
+  "status": "passed-batch-03-debate-124-field-disjoint-adjudication-correction-and-merge-successor",
+  "analyzedAt": "2026-08-21T00:38:26.459Z",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "124",
+  "originalFailure": {
+    "acceptedOutputs": 0,
+    "failedPartialOutputReused": false
+  },
+  "correction": {
+    "contexts": 2,
+    "attempts": 2,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "validContexts": 2,
+    "candidateSelections": 67,
+    "disputedMoves": 23,
+    "burdenAdjustmentDecisions": 2,
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-124.json",
+    "mergedOutputSha256": "0ebdd2b769eb2cf79631a3c5a256290c352755ed2d36e6cb40d613b56437b2a7",
+    "validation": {
+      "status": "passed",
+      "debateNumber": "124",
+      "disputedMoves": 23,
+      "candidateSelections": 67,
+      "calculatedScores": 0,
+      "scoreDerivationAuthorized": false
+    }
+  },
+  "mergeSuccessor": {
+    "deterministicPasses": 1,
+    "parentDirectoryCreated": true,
+    "candidateSelectionsChanged": 0
+  },
+  "protectedBoundary": {
+    "originalPacketPreserved": true,
+    "originalSchemaPreserved": true,
+    "originalValidatorMeaningPreserved": true,
+    "acceptedFieldsChanged": 0,
+    "scoresDerived": 0,
+    "paidServices": 0
+  },
+  "authorization": {
+    "nineContextResumptionPreparation": true,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "paidServices": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-freeze-nine-unattempted-batch-03-adjudication-resumption-contexts"
+}
