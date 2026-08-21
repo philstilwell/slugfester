@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-candidate-sharded-inventory",
+  "debateNumber": "148",
+  "debateId": "baggett-dillahunty-moral-argument-2018",
+  "motion": "Do objective moral facts, moral knowledge, moral transformation, and moral rationality make theism a better explanation than secular ethical theories?",
+  "sides": {
+    "pro": {
+      "label": "Theistic moral explanation",
+      "speakers": [
+        "David Baggett"
+      ]
+    },
+    "con": {
+      "label": "Secular moral inquiry",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7320,
+  "eventCount": 2829,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/YWeOWtmCoCs/transcript.txt",
+    "transcriptSha256": "5d69508a8a3fdc0882d237de846649be40586c341df1740db510618791d2d4da",
+    "eventsPath": ".assessment-cache/captions/YWeOWtmCoCs/events.json",
+    "eventsSha256": "ee8165a051b367be8254fcfaa4826cc7a5805ea639346bf0bea144ebd97ac3e3",
+    "localManifestPath": ".assessment-cache/captions/YWeOWtmCoCs/manifest.json",
+    "localManifestSha256": "fd2154da74216232f68f876527d6e49df2e5e5e57bcbfcdb0b2a55b322400b9d"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-04/debate-148.jsonl",
+    "sourceLedgerSha256": "dca0f1271b88d063349a281da5b57cccc3c4d97d34c56f7462795ac841406a48",
+    "sourceLedgerBytes": 166789,
+    "sourceLedgerEventCount": 2829,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/source-preparation/plans/debate-148.json",
+    "partitionPlanSha256": "f72ad194c72f6b93dc84eb6c4fd0290591ee8fb4b489a288fde5d4cfcf6b1efa",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

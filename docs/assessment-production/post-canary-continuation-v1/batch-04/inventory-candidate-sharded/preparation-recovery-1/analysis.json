@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-inventory-preparation-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-04-inventory-preparation-recovery-1",
+  "status": "batch-04-inventory-preparation-static-guide-correction-passed",
+  "analyzedAt": "2026-08-21T20:00:00.000Z",
+  "recoveryAttempt": 1,
+  "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/preparation-recovery-1/correction-plan.json",
+  "results": {
+    "correctedPreparationPasses": 1,
+    "deterministicValidationPassed": true,
+    "debates": 10,
+    "candidates": 404,
+    "plannerContextsFrozen": 10,
+    "sideTransportsFrozen": 20,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "artifacts": {
+    "preparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/preparation-manifest.json",
+      "bytes": 107857,
+      "sha256": "a78af56ba557aa2f28324ad8c51bf00c29fa428a620e118372d33a9e8f5d9e9a"
+    },
+    "preparationValidation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/preparation-validation.json",
+      "bytes": 3532,
+      "sha256": "bd62d1eafd0b67dbf8a0d76a87b2e6f220d36f48d8096632ed1c64d4bd864ddc"
+    },
+    "plannerExecutionPreparation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-execution-preparation-manifest.json",
+      "bytes": 65911,
+      "sha256": "3a0b4c4458ddff76767d4952dd641389b17c7caf588acb994b123e340a617a12"
+    }
+  },
+  "preservation": {
+    "acceptedDiscoveryOutputsChanged": false,
+    "sourcePacketsChanged": false,
+    "modelSettingsChanged": false,
+    "validatorMeaningChanged": false,
+    "retryOrRerunUsed": false
+  },
+  "nextAuthorizedAction": "activate-and-execute-ten-frozen-batch-04-candidate-census-planner-contexts"
+}
