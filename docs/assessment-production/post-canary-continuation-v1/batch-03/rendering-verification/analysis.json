@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-rendering-verification-analysis",
+  "protocolId": "assessment-production-post-canary-batch-03-rendering-verification",
+  "status": "ten-debate-batch-03-rendering-verification-passed",
+  "analyzedAt": "2026-08-21T04:07:46Z",
+  "execution": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/rendering-verification/execution.json",
+    "sha256": "e6e7cc752d2b5a613e937d58110106f1a2d658d562c6edd5030184a50021badd"
+  },
+  "renderingAudit": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/rendering-verification/rendering-audit.json",
+    "sha256": "ea4f531d8c554fd4e881f02e8b2a8ea32a516b4259ec0b5784e863646291b9b1"
+  },
+  "decision": {
+    "failedClosed": false,
+    "renderingGatePassed": true,
+    "tenDebatesPassed": true,
+    "desktopAndMobilePassed": true,
+    "pointerAndKeyboardPassed": true,
+    "imageContractPassed": true,
+    "runtimeGatePassed": true,
+    "sourceMutationDetected": false,
+    "retryPerformed": false,
+    "timeoutExtended": false,
+    "renderingRepairPerformed": false,
+    "validatorMigrationPerformed": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "compatibilityBoundary": {
+    "renderingVerificationPermittedAfterSeparateActivation": true,
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "blockers": [
+      "batch-03-site-ledger-adapter-and-validator-route"
+    ]
+  },
+  "authorization": {
+    "compatibilityRemedyPlanPreparation": true,
+    "compatibilityRemedyExecution": false,
+    "renderingRepair": false,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-03-production-compatibility-under-standing-authorization"
+}
