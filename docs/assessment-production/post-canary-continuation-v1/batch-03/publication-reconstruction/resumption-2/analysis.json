@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-2-analysis",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-2",
+  "status": "batch-03-publication-resumption-2-failed-validation",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-2/execution-preparation-manifest.json",
+    "preparationSha256": "04002647820ace5ca14c32df8e5326588822bf9018ff490d4e57767416b9076a",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-2/execution-activation.json",
+    "activationSha256": "d3bcfe0e94514537d06122da4935e7690c5dc2296b263e2705e2c386d34f0224",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-2/model-execution.json",
+    "executionSha256": "09b78744f220f59643648c595bc7c7e126d141cd1103b3d554b6f352133276ed"
+  },
+  "execution": {
+    "contextsPlanned": 6,
+    "contextsAttempted": 1,
+    "contextsUnattempted": 5,
+    "validContexts": 0,
+    "invalidContexts": 1,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumObservedConcurrency": 1,
+    "wallElapsedMs": 264478,
+    "aggregateModelElapsedMs": 264459
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "157",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    }
+  ],
+  "cohortValidation": {
+    "passed": false,
+    "rows": [],
+    "totals": {
+      "debates": 0,
+      "moves": 0,
+      "critiques": 0,
+      "exactSourceQuotes": 0,
+      "overallCommentarySides": 0,
+      "aiExtensionSides": 0,
+      "minimumCritiqueCharacters": null,
+      "modelAuthoredScores": 0,
+      "lockedScoresUnchanged": true
+    },
+    "failureMessage": null
+  },
+  "integrity": {
+    "participantJudgmentWasScoreBlind": true,
+    "scoresRemainedImmutable": true,
+    "everyAcceptedOutputReplayedDeterministically": false,
+    "aiExtensionExcludedFromScores": true,
+    "retriesPerformed": false,
+    "timeoutExtensionsPerformed": false,
+    "correctionContextsPerformed": false,
+    "publicationCompiled": false,
+    "publicationFinalized": false,
+    "productionMutated": false
+  },
+  "totals": {
+    "acceptedPriorDebates": 4,
+    "resumptionModelContexts": 1,
+    "cohortDebates": 0,
+    "cohortMoves": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0,
+    "paidServiceCalls": 0,
+    "publicationCompilationPasses": 0,
+    "publicationFinalizations": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "failureDiagnosis": true,
+    "publicationCompilationPreparation": false,
+    "deterministicCompilation": false,
+    "repairPacketPreparation": false,
+    "retry": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "diagnose-preserved-batch-03-publication-resumption-2-failure-under-failure-recovery-standing-authorization"
+}
