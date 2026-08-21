@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-124-publication-repair-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-03-debate-124-publication-repair-1",
+  "status": "batch-03-debate-124-two-context-publication-repair-gate-passed",
+  "gateStartedAt": "2026-08-21T01:29:18.696Z",
+  "gateCompletedAt": "2026-08-21T01:30:48.175Z",
+  "contextsPlanned": 2,
+  "contextsAttempted": 2,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 2,
+  "invalidContexts": 0,
+  "attempts": 2,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 1,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 89478,
+  "aggregateModelElapsedMs": 89454,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        1
+      ],
+      "validContextIndexes": [
+        1
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T01:29:18.697Z",
+      "completedAt": "2026-08-21T01:30:05.575Z",
+      "elapsedMs": 46878,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-narrative-moral-limiting-cases.critique",
+        "moveProse.pro-rational-instruction-behavioral-limit.critique"
+      ],
+      "copiedInputBytes": 31750,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "f06f40eafc83e23b46dbe6f8fb54eeb3231820975737a0517d261dbddc6b3245",
+      "stderrSha256": "578693ba3fe2ed823975245c7d1e260c18945994325ed2098b2243ce27fc48ab",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "79c27d36625977b96b7922af5e28e7ee1b1dc8ff756f716c14057253340de8fb",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "124",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-narrative-moral-limiting-cases.critique",
+            "words": 116,
+            "characters": 903,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-rational-instruction-behavioral-limit.critique",
+            "words": 116,
+            "characters": 941,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T01:30:05.589Z",
+      "completedAt": "2026-08-21T01:30:48.165Z",
+      "elapsedMs": 42576,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-evolved-implicit-guidance.critique"
+      ],
+      "copiedInputBytes": 25448,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "b98588b8640e146dc01f92fa2b2180daf216c78e9bdcca048a556a1c43184528",
+      "stderrSha256": "1bd8aba2f6532357d83cda5c153f1bb6198a69c0b443c70c6df35bb9728b5aef",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "349110f2b18f9a0f50a75f70291c2c131e0666a65127cab5dc697d86c750651f",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "124",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-evolved-implicit-guidance.critique",
+            "words": 116,
+            "characters": 1000,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalFailedOutputPreserved": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0,
+  "authorization": {
+    "deterministicAnalysis": true,
+    "deterministicMergeAndCompleteValidation": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "remainingNineContextExecution": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}

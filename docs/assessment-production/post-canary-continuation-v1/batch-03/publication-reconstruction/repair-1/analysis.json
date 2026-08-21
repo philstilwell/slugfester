@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-124-publication-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-03-debate-124-publication-repair-1",
+  "status": "batch-03-debate-124-bounded-repair-and-complete-publication-validation-passed",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "gate": {
+    "repairContextsPlanned": 2,
+    "repairContextsAttempted": 2,
+    "repairContextsPassed": 2,
+    "repairContextsFailed": 0,
+    "repairContextsUnattempted": 0,
+    "completeDebateValidationPassed": true,
+    "correctedFields": [
+      {
+        "field": "moveProse.pro-narrative-moral-limiting-cases.critique",
+        "words": 116,
+        "characters": 903,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.pro-rational-instruction-behavioral-limit.critique",
+        "words": 116,
+        "characters": 941,
+        "sentences": 4
+      },
+      {
+        "field": "moveProse.pro-evolved-implicit-guidance.critique",
+        "words": 116,
+        "characters": 1000,
+        "sentences": 4
+      }
+    ],
+    "correctedFieldCount": 3,
+    "movesValidated": 24,
+    "critiquesValidated": 24,
+    "exactSourceQuotesValidated": 2,
+    "overallCommentarySidesValidated": 2,
+    "aiExtensionSidesValidated": 2,
+    "immutableFieldsChanged": 0,
+    "attempts": 2,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "originalFailedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/outputs/debate-124.json",
+    "originalFailedOutputPreserved": true,
+    "repairOutputs": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/repair-1/outputs/packet-0.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/repair-1/outputs/packet-1.json"
+    ],
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/repair-1/merged/debate-124.json",
+    "completeValidation": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/repair-1/merge-audit.json"
+  },
+  "totals": {
+    "modelContexts": 2,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "nineContextResumptionManifestPreparation": true,
+    "nineContextModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-a-separate-nine-context-batch-03-publication-resumption-manifest-under-standing-authorization"
+}
