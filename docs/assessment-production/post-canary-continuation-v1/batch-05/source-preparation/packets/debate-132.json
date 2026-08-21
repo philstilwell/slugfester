@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-source-preparation",
+  "debateNumber": "132",
+  "debateId": "mclatchie-carrier-paul-celestial-jesus-2018",
+  "motion": "Did Paul understand Jesus as an earthly historical person, or as a celestial figure whose death and resurrection occurred in a mythic heavenly realm?",
+  "sides": {
+    "pro": {
+      "label": "Pauline historicity",
+      "speakers": [
+        "Jonathan McLatchie"
+      ]
+    },
+    "con": {
+      "label": "Celestial mythicism",
+      "speakers": [
+        "Richard Carrier"
+      ]
+    }
+  },
+  "durationSeconds": 4982,
+  "eventCount": 2371,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/HCcq8G-WzJM/transcript.txt",
+    "transcriptSha256": "9123a4118612acda8c318c397d5824f8f45c8798e884bb6d2b563768ab7035b9",
+    "eventsPath": ".assessment-cache/captions/HCcq8G-WzJM/events.json",
+    "eventsSha256": "34eac07c6a11b156258ada03a8dfcdcf0ee9de8e882bc664b4e20956c8c71d2a",
+    "localManifestPath": ".assessment-cache/captions/HCcq8G-WzJM/manifest.json",
+    "localManifestSha256": "ed7939d75aa83f88d32fe1d6bed0e728aacceb0755f4ce123060ee931217b746"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-05/debate-132.jsonl",
+    "sourceLedgerSha256": "e2612fdd8e5754fec85fcc674388286bb2f28ec238177486461306d781e9c657",
+    "sourceLedgerBytes": 140016,
+    "sourceLedgerEventCount": 2371,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/plans/debate-132.json",
+    "partitionPlanSha256": "7bba60acdc11223fe1ce14b8b708768c52bda322ce1c166816544361bac86767",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

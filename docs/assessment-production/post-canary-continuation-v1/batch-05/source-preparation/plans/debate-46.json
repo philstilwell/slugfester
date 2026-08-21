@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2441,
+  "ledgerBytes": 144119,
+  "ledgerSha256": "75ded381e567dbc4448c64f9d19626d87a2042a3d53bbd03805cc0fa82171d3c",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52167,
+      "contextSha256": "5e901d680e8d388768603bd35a368183e9f80b0b2c88b6fb49b78e494bdcb42e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53410,
+      "contextSha256": "4dca78597ebdfbd52228c6528f2873c903f04a96857cf6893dfdd8f4cd2b8621"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2440,
+      "coreEvents": 761,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2440,
+      "contextEvents": 801,
+      "contextBytes": 47828,
+      "contextSha256": "ddd9e1f40f7f41650bacfc7a51c258145b5f838db9734d89a1f83866c6545e11"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2440,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "46",
+  "debateId": "shapiro-oconnor-atheist-delusion-society-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3926,
+  "ledgerBytes": 231907,
+  "ledgerSha256": "b691c6f74c0c41c9ee0661389cc0d77c13c255e20a46c2ac02da8e262d6b240d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51601,
+      "contextSha256": "3e979dee120a568b425f4db77389d8a3505beee96f352c6c0381c127358fd414"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53260,
+      "contextSha256": "51adf2f2043b795f29bd5238bf84cf069a1b50acfcfd5928fa810007e23c0961"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53744,
+      "contextSha256": "60277fece573193e311720f351982753450ae033247312322e25864596aa2da1"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53915,
+      "contextSha256": "61d1dd685887b50c4b1cb326b55430b21e8a04087ca897d34c68b9c4a40b0a8f"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3925,
+      "coreEvents": 606,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3925,
+      "contextEvents": 646,
+      "contextBytes": 38379,
+      "contextSha256": "5ffdd5e50041721ff588749fc771ae1adcb4ec92f9a51364a723cab45298f119"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3925,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "109",
+  "debateId": "mclatchie-oconnor-theism-naturalism-reality-2022",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4107,
+  "ledgerBytes": 215216,
+  "ledgerSha256": "57176a00912b7b19eb7a08a30d0ba89425ddf7958fa4a3c5409345bdc43975dc",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 46358,
+      "contextSha256": "dd1b287eacca8e33d1caa22bfc7c2f359dc0f30c1d5a04091520cd2b5b592369"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 47695,
+      "contextSha256": "749c9a66a1a898d5b101d6ec76feb2ad89a190261d376e2e2f84b132daf786b9"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 47264,
+      "contextSha256": "1d367eefa1fecc8214034c432a4e11cfa4c3fc9987ba87a5e201a13885ac4ef8"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 47180,
+      "contextSha256": "06089ac2470788cd8143e71686b7bd6c37fdca49bb2d85a9a52051ce847c397d"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4106,
+      "coreEvents": 787,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4106,
+      "contextEvents": 827,
+      "contextBytes": 43496,
+      "contextSha256": "c72c3276901b0553e73414cac3997833f9e6ff98c348159a5412e930e5994d06"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4106,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "64",
+  "debateId": "pine-watkins-god-existence-2020",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

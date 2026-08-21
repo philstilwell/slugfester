@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2710,
+  "ledgerBytes": 157093,
+  "ledgerSha256": "beac0d9f63074f49df8ea9100150b5a57c57f60c57180f151cfbb416e5ead116",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51250,
+      "contextSha256": "3ac7297885acb034633282fee0bd19bb7a318f3d29695c597f29c924ef9e2f8c"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52637,
+      "contextSha256": "72125fbb2cf3654c3ba3ecdb07b0f2d2094f044c835f43d41237bda72e3a96b5"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52653,
+      "contextSha256": "b320c36570fa08f2b51641ca276575d9a5dee7d7df23ea02b2e66e50b78de66b"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2709,
+      "coreEvents": 210,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2709,
+      "contextEvents": 250,
+      "contextBytes": 14564,
+      "contextSha256": "8d4b2798fae07c11fb919ef44e3cbb90a8cb5b6249d5d4c0cd746185d839f0bb"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2709,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "179",
+  "debateId": "craig-ehrman-historical-evidence-resurrection-2006",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

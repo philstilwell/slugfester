@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-source-preparation",
+  "debateNumber": "46",
+  "debateId": "shapiro-oconnor-atheist-delusion-society-2023",
+  "motion": "Does atheism depend on borrowed religious or extra-natural assumptions about free will, morality, reason, and social order, or can secular life face the truth without religious scaffolding?",
+  "sides": {
+    "pro": {
+      "label": "Religious social order",
+      "speakers": [
+        "Ben Shapiro"
+      ]
+    },
+    "con": {
+      "label": "Secular skeptical critique",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 4781,
+  "eventCount": 2441,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/yspPYcJHI3k/transcript.txt",
+    "transcriptSha256": "de01eaac6d4c4bb75d54f20dea1aa40370bd82db621a3135ad1ee98df5499d8e",
+    "eventsPath": ".assessment-cache/captions/yspPYcJHI3k/events.json",
+    "eventsSha256": "eaa7e30a5b64354d06b0152bcf301555cad0502f88daa7c869c8b76fa968bc28",
+    "localManifestPath": ".assessment-cache/captions/yspPYcJHI3k/manifest.json",
+    "localManifestSha256": "88f2f673e83518e778035c740c205854db0d2100bc6d78cc739123aa41115c80"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-05/debate-46.jsonl",
+    "sourceLedgerSha256": "75ded381e567dbc4448c64f9d19626d87a2042a3d53bbd03805cc0fa82171d3c",
+    "sourceLedgerBytes": 144119,
+    "sourceLedgerEventCount": 2441,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/plans/debate-46.json",
+    "partitionPlanSha256": "6813e920fb07f751f92d443265c41e249e9478c578de877787e93f56bc0937b3",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

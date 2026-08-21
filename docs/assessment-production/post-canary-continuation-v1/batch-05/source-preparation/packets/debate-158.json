@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-source-preparation",
+  "debateNumber": "158",
+  "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+  "motion": "Is there strong historical evidence that Jesus rose from the dead, or are the surviving Christian reports too indirect and insufficiently testable to establish a resurrection?",
+  "sides": {
+    "pro": {
+      "label": "Historical resurrection case",
+      "speakers": [
+        "Dr Jonathan McLatchie"
+      ]
+    },
+    "con": {
+      "label": "Skeptical historical standard",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 9281,
+  "eventCount": 4823,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/a-wIaCRIdOA/transcript.txt",
+    "transcriptSha256": "d53322488b4f6c760e32fc0b837b17d2e1b059859866b11f536a20d6cb76dc4f",
+    "eventsPath": ".assessment-cache/captions/a-wIaCRIdOA/events.json",
+    "eventsSha256": "95c01ab641bff6aaf17668b8f34f7c096b53f89b55516d9890070694a15b1ee9",
+    "localManifestPath": ".assessment-cache/captions/a-wIaCRIdOA/manifest.json",
+    "localManifestSha256": "c7d104bd2d8b63f7c8f04d5eb0c8d35a7180844c7961484083e33ee9ea070760"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-05/debate-158.jsonl",
+    "sourceLedgerSha256": "9c8fec15944f90d24cf9642abde5a026e1cf34f88ad5a88947af6c1ffbd6f493",
+    "sourceLedgerBytes": 254359,
+    "sourceLedgerEventCount": 4823,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/plans/debate-158.json",
+    "partitionPlanSha256": "69184cd9c3f5fe3c4c9f5d40793bc2ac3b635ebff767c25003f3405303da5250",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

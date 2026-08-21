@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2698,
+  "ledgerBytes": 156429,
+  "ledgerSha256": "f1f46ecd864a5e30c3327da778f79eaa9dd2ccbdf9eb2a735de80eaa26b9b745",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51554,
+      "contextSha256": "e2303d7304d200ff60f5cb8f562e7b7d78190b6a1fb5b3699bf055335b27987e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52166,
+      "contextSha256": "a94c01904535509384416a115ab087c91a6d7cf51a1a3150b5fe473735e32abc"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52798,
+      "contextSha256": "833b32efe2ef27e22843d73cf8620aab60a66e0a0c4d8467ac6c7815d6389d63"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2697,
+      "coreEvents": 198,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2697,
+      "contextEvents": 238,
+      "contextBytes": 13866,
+      "contextSha256": "3a2b2e7673241a0b0ce1ebabf9ecafa3606e8b4512819360979a3d9495e168c4"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2697,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "59",
+  "debateId": "bollore-halper-god-science-evidence-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

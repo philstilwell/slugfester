@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3200,
+  "ledgerBytes": 186390,
+  "ledgerSha256": "b976ce297dd37a31e4fc98e8628b275e855e4ddc560bf44162149ea5bcd2135e",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51040,
+      "contextSha256": "4721c351b540198e7549beb21e91ad9eb5355769d66aa2fae1c39af842221889"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53031,
+      "contextSha256": "0da2c90a43b4123e8cd6017b78f4a6c7ff1e43531023f9b8bbeb8b8e6124cd1b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52977,
+      "contextSha256": "acce3a1694915c4f5ef1aed0a467deb1af4ddc96fd81b114577e011f8a37babc"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3199,
+      "coreEvents": 700,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3199,
+      "contextEvents": 740,
+      "contextBytes": 43486,
+      "contextSha256": "2ca36fd92a3b3e92b449858a5f68c808517a875f8b93a19a921254cb444cd00a"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3199,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "05",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
