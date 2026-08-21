@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-source-preparation",
+  "debateNumber": "67",
+  "debateId": "jones-fodor-digital-physics-god-2021",
+  "motion": "Does digital physics, emergent spacetime, quantum information, and idealist metaphysics make God the best explanation of reality, or is a materialist ontology simpler and better disciplined?",
+  "sides": {
+    "pro": {
+      "label": "Theistic idealism",
+      "speakers": [
+        "Michael Jones"
+      ]
+    },
+    "con": {
+      "label": "Materialist realism",
+      "speakers": [
+        "James Fodor"
+      ]
+    }
+  },
+  "durationSeconds": 7602,
+  "eventCount": 4518,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/b2HZu6BcxHU/transcript.txt",
+    "transcriptSha256": "d19191f9eacd1a68e3260bdc6ea71a0a184e059eb0e333f110cac00d7ae7c1f3",
+    "eventsPath": ".assessment-cache/captions/b2HZu6BcxHU/events.json",
+    "eventsSha256": "3aa409e9d38151a36ccd78a4eac295f126b82cf7794334e587a76ca4f85450db",
+    "localManifestPath": ".assessment-cache/captions/b2HZu6BcxHU/manifest.json",
+    "localManifestSha256": "cedb314aa7610437d44618f2e5a23e732605373df8388c2fcd4d2208c2dcee30"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-04/debate-67.jsonl",
+    "sourceLedgerSha256": "078f47c37d3c12a98310bd71ab1b90770d8aa1e389518f64d0e7548fec83af0e",
+    "sourceLedgerBytes": 243891,
+    "sourceLedgerEventCount": 4518,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/source-preparation/plans/debate-67.json",
+    "partitionPlanSha256": "8e45dcbfc95f111b608770615570f1a3463e433d6ee1050d48b4a8a5e8751c76",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

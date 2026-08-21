@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-source-preparation",
+  "debateNumber": "47",
+  "debateId": "jones-krauss-christianity-secular-ethics-2025",
+  "motion": "Which is better for society: Christianity, understood as a Christian-value society with a largely Christian population, or secular ethics?",
+  "sides": {
+    "pro": {
+      "label": "Christian society",
+      "speakers": [
+        "Michael Jones"
+      ]
+    },
+    "con": {
+      "label": "Secular ethics",
+      "speakers": [
+        "Lawrence Krauss"
+      ]
+    }
+  },
+  "durationSeconds": 8563,
+  "eventCount": 3734,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/yef-BFukQWg/transcript.txt",
+    "transcriptSha256": "18fdc49b647b954f7db705fa22c8f8618eafa64e55767d8628f15d018383b562",
+    "eventsPath": ".assessment-cache/captions/yef-BFukQWg/events.json",
+    "eventsSha256": "2f90b46a33db98819695ecb0fae37be2f7a6b76742d616d90483e2d3698e58ea",
+    "localManifestPath": ".assessment-cache/captions/yef-BFukQWg/manifest.json",
+    "localManifestSha256": "39bad871e7c8117e2ae0c49d077f05fdf577575d6111c627229c43093afef3e2"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-04/debate-47.jsonl",
+    "sourceLedgerSha256": "0f1a81a92023730cbe54b786ea67ad66ee3b8e30f5d572ff2297098dd85dd18b",
+    "sourceLedgerBytes": 219075,
+    "sourceLedgerEventCount": 3734,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/source-preparation/plans/debate-47.json",
+    "partitionPlanSha256": "035733ee51229de2a54ee28d51012d4981b904c863f4073515c919dfe759bb54",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

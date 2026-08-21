@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2829,
+  "ledgerBytes": 166789,
+  "ledgerSha256": "dca0f1271b88d063349a281da5b57cccc3c4d97d34c56f7462795ac841406a48",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52155,
+      "contextSha256": "1b4edd31f90e73ecb6855572d9de2fd4e45db9c94bcbd7b002c632949b74645b"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53306,
+      "contextSha256": "e0d53eed68464db48313e8c6e6d507bd17df5293bc6d214a21ecff9717b760d9"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53563,
+      "contextSha256": "0675f39f61c3c6f8cc6309d46db0e0a1765ac8694fcd12de12437bd8959a7f73"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2828,
+      "coreEvents": 329,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2828,
+      "contextEvents": 369,
+      "contextBytes": 22008,
+      "contextSha256": "19de0765990842ed16bbcdb1866c46bbb05078563be029c3d6daeecd9d232cd2"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2828,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "148",
+  "debateId": "baggett-dillahunty-moral-argument-2018",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

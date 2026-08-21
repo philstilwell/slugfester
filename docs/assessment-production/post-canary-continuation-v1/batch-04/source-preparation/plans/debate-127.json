@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2835,
+  "ledgerBytes": 166941,
+  "ledgerSha256": "949f3caaa802652eb904e12580272a4f7c7b94f2fcc3881d78df142671ccb88b",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51757,
+      "contextSha256": "54eb7a02dc56455800e2e5ecd8600f7e40bc134a588eabb18be3a8d102d9c0e9"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53635,
+      "contextSha256": "519dc9a225e4bc83343229e768926a686732163cfd95c63c11106dbea2c7a7c8"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53388,
+      "contextSha256": "349a59a0c8405a3138d0a5c5f13c4dfae5e2e290d1c156a13ca9cd1932e19a89"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2834,
+      "coreEvents": 335,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2834,
+      "contextEvents": 375,
+      "contextBytes": 22377,
+      "contextSha256": "1c4087c1730261112441e01c93e507bb52ed682842503b06202f30adc8cfd55b"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2834,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "127",
+  "debateId": "slick-clifton-objective-morality-god-2014",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

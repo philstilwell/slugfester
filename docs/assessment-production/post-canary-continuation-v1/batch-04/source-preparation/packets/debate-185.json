@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-source-preparation",
+  "debateNumber": "185",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "motion": "Does the natural human capacity for reasons-responsive control justify free will, moral desert, and responsibility practices?",
+  "sides": {
+    "pro": {
+      "label": "Compatibilist free will is worth wanting",
+      "speakers": [
+        "Daniel Dennett"
+      ]
+    },
+    "con": {
+      "label": "Basic-desert free will is unjustified",
+      "speakers": [
+        "Gregg Caruso"
+      ]
+    }
+  },
+  "durationSeconds": 7567,
+  "eventCount": 3514,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/AxhA7S3q49o/transcript.txt",
+    "transcriptSha256": "bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b",
+    "eventsPath": ".assessment-cache/captions/AxhA7S3q49o/events.json",
+    "eventsSha256": "b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e",
+    "localManifestPath": ".assessment-cache/captions/AxhA7S3q49o/manifest.json",
+    "localManifestSha256": "566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-04/debate-185.jsonl",
+    "sourceLedgerSha256": "26a341e9457dca7f8e71555ff74d13004de82f0f109b44fac83a662d5363263f",
+    "sourceLedgerBytes": 181643,
+    "sourceLedgerEventCount": 3514,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/source-preparation/plans/debate-185.json",
+    "partitionPlanSha256": "15a1093d60f1b97ef7028632dcc3e461107c3d6af2458577eb95056a3e162db3",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

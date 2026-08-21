@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2716,
+  "ledgerBytes": 160303,
+  "ledgerSha256": "851f25d693fa1ef3fa5c53a5578df97be6966b1a87bc3ce11ef2baa4ef350a75",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52264,
+      "contextSha256": "9bda2e688c31728ca2cb7158e72f36b1fe9d30b91a1f9b200e0a4aafd7271a61"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53261,
+      "contextSha256": "d04a17f06407b85ae505ff8810098b90dce79b169c17a9f5ae533f432ef01e0b"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53699,
+      "contextSha256": "0fce9b7314f130c71417addd267588441e21712135d27fae18589a76f6bc7a6e"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2715,
+      "coreEvents": 216,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2715,
+      "contextEvents": 256,
+      "contextBytes": 15331,
+      "contextSha256": "6b75d4008828ecebaaaf47162c4b7a6b946a9db70ad6f168bea266f207ff651b"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2715,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "81",
+  "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

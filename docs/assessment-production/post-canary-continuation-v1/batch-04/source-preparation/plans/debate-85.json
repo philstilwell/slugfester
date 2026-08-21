@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1769,
+  "ledgerBytes": 101818,
+  "ledgerSha256": "6aec6e9ce172c6d7825bf3a9b9f1b60cb85dda1a79b86cf546799886d72ccc9e",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51116,
+      "contextSha256": "45f0fe4e58df490eb79cdd5904e9c7600bfeda5c0b86a0ea8974a2a6ca7f18a4"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52392,
+      "contextSha256": "cdf7ce46873ab21442526c373c02bfa57c2f90ac928926499ff58dc717478b42"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1768,
+      "coreEvents": 89,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1768,
+      "contextEvents": 129,
+      "contextBytes": 7532,
+      "contextSha256": "4a4ff4b9dc4a55992530132ad9957126d5e21f3f453eabedea79b62e466034e9"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1768,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "85",
+  "debateId": "atkins-fox-god-science-future-humanity-2024",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

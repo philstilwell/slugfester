@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4406,
+  "ledgerBytes": 260768,
+  "ledgerSha256": "11689ab08d65f770718d03598797627a0917643671b85d2da441c2149dc1841a",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52202,
+      "contextSha256": "25b300d8d8316a8a99742ceeed4b0397bf11c5ff4a76ea8e478b50c465e37f68"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53477,
+      "contextSha256": "4d6c001b1f7232c5e3d5dcf8a484f88864e755d018540e2ceec648837ea184bd"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53587,
+      "contextSha256": "712326e99bfa00210131e5b74da64358ca1b675ff534e5291466a107475f4f55"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53475,
+      "contextSha256": "14889094b9f34d649f8e9698192b21e0158122c3f32a9b4c2473836a72f65ee2"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 53562,
+      "contextSha256": "0028f7d5a9a88ea9f7e59a50a0e53566205ef836df1a8661eedd6d40e0a2b60c"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4405,
+      "coreEvents": 266,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4405,
+      "contextEvents": 306,
+      "contextBytes": 18244,
+      "contextSha256": "f1aa91afda7bd546663eb6478b3c99d9bf8934efebb850a27890408fd07de676"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4405,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "49",
+  "debateId": "dyer-dillahunty-transcendental-theism-2019",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

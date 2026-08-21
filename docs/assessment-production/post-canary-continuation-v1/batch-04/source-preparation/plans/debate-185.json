@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3514,
+  "ledgerBytes": 181643,
+  "ledgerSha256": "26a341e9457dca7f8e71555ff74d13004de82f0f109b44fac83a662d5363263f",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 45620,
+      "contextSha256": "ef2b557e758334462ea77989c37e482969a66f69471c1c706139515ee7ccb97f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 47039,
+      "contextSha256": "a251889b7d393e157aac4ff5ef4edaf9c89ee4edbb485c8798721e737937aa0a"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 46799,
+      "contextSha256": "6f13233c168db57892b38f6055c6a9a51c254976e51db34372388dbb83292d90"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 46462,
+      "contextSha256": "a7e19133693291111beb38c576d5a958fe42082a286792d22cd8bf1fd66300ef"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3513,
+      "coreEvents": 194,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3513,
+      "contextEvents": 234,
+      "contextBytes": 12376,
+      "contextSha256": "36a4e3531a8d77149ee76714613696baa5939d5af24accccaefe05c7c0b0ea5b"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3513,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "185",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

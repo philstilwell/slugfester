@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2662,
+  "ledgerBytes": 153794,
+  "ledgerSha256": "09088f8e198a40e320ac7d3385f27bdf5f5f8a148481cd0a33cab2ed6ca2f702",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50583,
+      "contextSha256": "c3ec8f4048065721d631fdfa7a412649c06fcfb1c0fcc1d8b435dd679f92fee4"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52484,
+      "contextSha256": "fddbfe4ebd2c787536cb4bb4a40d5f2915cc55529edd7c235cf5094026bc3d43"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52918,
+      "contextSha256": "2df114decebda07dfc196cb65de62a6fe2bdc11c2659e680547479493f429792"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 2661,
+      "coreEvents": 162,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 2661,
+      "contextEvents": 202,
+      "contextBytes": 11845,
+      "contextSha256": "a0023dd5c33ad5688c3802db8ad139528c1f3c83dde6ac5833396980ea235989"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2661,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "03",
+  "debateId": "hitchens-dsouza-religion-problem-2010",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

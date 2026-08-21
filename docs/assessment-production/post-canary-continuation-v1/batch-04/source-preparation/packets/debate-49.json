@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-source-preparation",
+  "debateNumber": "49",
+  "debateId": "dyer-dillahunty-transcendental-theism-2019",
+  "motion": "Does the transcendental argument show that Orthodox Christian theism is needed to ground logic, truth, induction, ethics, and knowledge?",
+  "sides": {
+    "pro": {
+      "label": "Orthodox theism",
+      "speakers": [
+        "Jay Dyer"
+      ]
+    },
+    "con": {
+      "label": "Skeptical atheism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 9945,
+  "eventCount": 4406,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/AajJBhdRpDA/transcript.txt",
+    "transcriptSha256": "76c62ef28ac0cedb47a3f0194aba1d48bd2519935e1ca602231b15b52eb9b581",
+    "eventsPath": ".assessment-cache/captions/AajJBhdRpDA/events.json",
+    "eventsSha256": "02dd86059d458cd7aa2de6fb76ab42cfc3a827ca467b90a68de58f6d51fc8fa2",
+    "localManifestPath": ".assessment-cache/captions/AajJBhdRpDA/manifest.json",
+    "localManifestSha256": "2c95addc023fc2149e1220048358f1d72ba142d9fca74232a4d1884028b6d0d1"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-04/debate-49.jsonl",
+    "sourceLedgerSha256": "11689ab08d65f770718d03598797627a0917643671b85d2da441c2149dc1841a",
+    "sourceLedgerBytes": 260768,
+    "sourceLedgerEventCount": 4406,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/source-preparation/plans/debate-49.json",
+    "partitionPlanSha256": "54e1948464d68b475ea23b153bcae8d25ae96c55a51586df94a7e0ec03e7331c",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

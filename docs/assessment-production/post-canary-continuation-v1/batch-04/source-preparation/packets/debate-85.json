@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-04-source-preparation",
+  "debateNumber": "85",
+  "debateId": "atkins-fox-god-science-future-humanity-2024",
+  "motion": "Do science, evolution, and future technology make God unnecessary, or do value, personhood, origins, and hope point beyond scientific materialism?",
+  "sides": {
+    "pro": {
+      "label": "Scientific materialism",
+      "speakers": [
+        "Peter Atkins"
+      ]
+    },
+    "con": {
+      "label": "Christian theism",
+      "speakers": [
+        "Keith Fox"
+      ]
+    }
+  },
+  "durationSeconds": 4790,
+  "eventCount": 1769,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/2pDEBRG_9_Q/transcript.txt",
+    "transcriptSha256": "fbf4fc2199bcab18618ee517d50e396e2b2b76541aaad8700f287f4b81dba34c",
+    "eventsPath": ".assessment-cache/captions/2pDEBRG_9_Q/events.json",
+    "eventsSha256": "a6faef03c8c5aa9548cc61e804363a2a1a2b759e313d7b57872ef3f8baa9802f",
+    "localManifestPath": ".assessment-cache/captions/2pDEBRG_9_Q/manifest.json",
+    "localManifestSha256": "f8b24e7a599ca24ca5f87c9d9ef31733fef4b508cdf89b27134809b8b1b34ae6"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-04/debate-85.jsonl",
+    "sourceLedgerSha256": "6aec6e9ce172c6d7825bf3a9b9f1b60cb85dda1a79b86cf546799886d72ccc9e",
+    "sourceLedgerBytes": 101818,
+    "sourceLedgerEventCount": 1769,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/source-preparation/plans/debate-85.json",
+    "partitionPlanSha256": "bb209c4f258598475868092b1f34b055f30eaaf47dbe6ce5b0064bf330ed14e9",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

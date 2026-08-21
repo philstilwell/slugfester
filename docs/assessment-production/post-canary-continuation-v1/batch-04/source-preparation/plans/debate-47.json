@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3734,
+  "ledgerBytes": 219075,
+  "ledgerSha256": "0f1a81a92023730cbe54b786ea67ad66ee3b8e30f5d572ff2297098dd85dd18b",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51209,
+      "contextSha256": "bff32cc57b9e8bde58ca44bf68fd4ef9c598cd618d7686ee72d0aeb18bc47f26"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53021,
+      "contextSha256": "6b767d88c708f11acdc45307212b472fa0d682123f5cc49b8bc63b3c5475caff"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53637,
+      "contextSha256": "db2d2d0521ff878bac5f9efc232f8284098bdf21cf5c3e5506cfb3305700a941"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53190,
+      "contextSha256": "3e9a4c08faab25d3b06acaeca705509c273f78fff184f93c485a91c3606e2c73"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3733,
+      "coreEvents": 414,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3733,
+      "contextEvents": 454,
+      "contextBytes": 26807,
+      "contextSha256": "485f9871146b85c542f487609490ddc3e987a8367a6c242c979ce7b6c3bb1d19"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3733,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "47",
+  "debateId": "jones-krauss-christianity-secular-ethics-2025",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

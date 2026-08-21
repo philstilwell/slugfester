@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4518,
+  "ledgerBytes": 243891,
+  "ledgerSha256": "078f47c37d3c12a98310bd71ab1b90770d8aa1e389518f64d0e7548fec83af0e",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 47105,
+      "contextSha256": "8b48f29431c09e620cab278c1a293e16eceedd15cf837a2e28256032b12fcd58"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 48958,
+      "contextSha256": "341000c080c4280b466d99b8f3cc96e7ed1913e85c8552e55640cafa3a2059cd"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 49109,
+      "contextSha256": "1955ef4d2c44f7cee38b3c8e6a9046195c8b011efba2d2344cad50a1da98001b"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 49023,
+      "contextSha256": "e12cd008751cbe5c584eaf14ec39812b2df9221ed580c19cfe7f17e3c092a170"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 48833,
+      "contextSha256": "eaff948a4fcd6b20a539d134367bd053564396c7ac14a2aff6dbed96065558c2"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4517,
+      "coreEvents": 378,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4517,
+      "contextEvents": 418,
+      "contextBytes": 22762,
+      "contextSha256": "828627303eba68c1e3bf031b852d85ff408436144ba650bb13da5d29be02065f"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4517,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "67",
+  "debateId": "jones-fodor-digital-physics-god-2021",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
