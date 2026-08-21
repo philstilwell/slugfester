@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-124-adjudication-merge-successor",
+  "status": "frozen-debate-124-correction-merge-successor-prepared",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "124",
+  "diagnosis": {
+    "classification": "deterministic-merge-output-parent-directory-missing",
+    "errorCode": "ENOENT",
+    "failedWritePath": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-124.json",
+    "acceptedShardOutputs": 2,
+    "acceptedCandidateSelections": 67,
+    "modelContextsAdded": 0,
+    "outputWrittenByFailedPass": false
+  },
+  "correction": {
+    "operation": "create-exact-parent-directory-before-writing-hash-locked-merged-output",
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-124.json",
+    "mergedOutputSha256": "0ebdd2b769eb2cf79631a3c5a256290c352755ed2d36e6cb40d613b56437b2a7",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-analysis.json",
+    "validation": {
+      "status": "passed",
+      "debateNumber": "124",
+      "disputedMoves": 23,
+      "candidateSelections": 67,
+      "calculatedScores": 0,
+      "scoreDerivationAuthorized": false
+    },
+    "originalMergeMeaningPreserved": true,
+    "modelOutputsPreserved": true,
+    "candidateSelectionsChanged": 0,
+    "deterministicPassesMaximum": 1
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-execution-activation-1.json": "b4d0e694627f279fa4efe271f6592c53dfab7d5f9ba853b0fd364af4ba8660e6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-model-execution.json": "3f5fba2fd5d9f8b3c4f93c2894157de84af92fd37d949d31a4f926f90318c158",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/packets/debate-124.json": "505caebb69cf1b56f31af4335847e919a541f80e3c8d04fb26b4d1a585a2bbdc",
+    "scripts/merge-assessment-production-post-canary-batch-03-debate-124-adjudication-correction.mjs": "baea3ab62125f37636d24d0417cad988e0646485c30980105e9b92f2766ccbd7",
+    "scripts/prepare-assessment-production-post-canary-batch-03-debate-124-adjudication-merge-successor.mjs": "2c9613f292832ecdd14a5b9e6151fa3ba6d14dd042460fc5900cd9fd5aa00360",
+    "scripts/execute-assessment-production-post-canary-batch-03-debate-124-adjudication-merge-successor.mjs": "6b47423ea66ab2bc66c6a46396509808a1868be6aa493a5d32dcee952645efc1",
+    "scripts/test-assessment-production-post-canary-batch-03-debate-124-adjudication-merge-successor.mjs": "36abba927b0758b667c569d17c738368c8b18a40317e12da58c9356925fcf2ba",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/packets/debate-124-shard-01.json": "e6d68ca2d86b56c12eb5dccd1586d7b91c7e395bd9987e348d026074f004c17f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/outputs/debate-124-shard-01.json": "2aa69a72356d4d958b07ccf0b425de4527a0db900a69810ee5a949443c166344",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/packets/debate-124-shard-02.json": "a3d1d796d59b4c3096ecda14a770271a770c248aa29be62a909d457bc676f57e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/outputs/debate-124-shard-02.json": "9e09aaed6c4cf039c572b1fc64302248e5cb18ed64b6ca5031184ac651d62292"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-124.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/correction-analysis.json"
+  ],
+  "authorization": {
+    "deterministicMergeSuccessor": true,
+    "modelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "execute-one-deterministic-debate-124-merge-successor-pass"
+}
