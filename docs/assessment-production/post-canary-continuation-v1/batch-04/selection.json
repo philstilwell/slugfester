@@ -1,0 +1,665 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-selection",
+  "protocolId": "assessment-production-post-canary-batch-04",
+  "status": "fourth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+  "frozenAt": "2026-08-21T18:00:00.000Z",
+  "checkpointCommit": "1a23cf5749c991903265fcbbc79d015ae6ee0337",
+  "branch": "main",
+  "productionContinuation": true,
+  "developmentValidationOnly": false,
+  "stagingOnly": true,
+  "batchNumber": 4,
+  "productionSequenceOrdinal": 5,
+  "userAuthorization": {
+    "instruction": "Continue.",
+    "scopeInterpretation": "Materialize and source-validate only Batch 4 under the frozen continuation policy after authenticating successful Batch 3 publication. Do not prepare source or model packets, execute models, derive scores, reconstruct publication prose, mutate production, or select Batch 5.",
+    "directIncrementalCostEstimateUsd": 0
+  },
+  "policyLocks": {
+    "selectionPolicy": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/selection-policy.json",
+      "bytes": 11599,
+      "sha256": "a7375c3ee116d64df6e0ddfe3c15c598a425be30200e798bbd383cdf83118466",
+      "status": "post-canary-full-campaign-selection-policy-frozen-awaiting-separate-first-batch-selection-decision"
+    },
+    "policyAnalysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/analysis.json",
+      "bytes": 2294,
+      "sha256": "a62a1fb461d1051192c98d234558726fe91eaac99ec034204e9279d02cbb1538",
+      "status": "post-repair-source-overlay-and-full-campaign-selection-policy-analysis-passed"
+    },
+    "effectiveSourceOverlay": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/effective-source-overlay.json",
+      "bytes": 8291,
+      "sha256": "d36c2b0a83e624b036525ae6047778c84a0a6456fa30c9c37b05bb6bd8728c14",
+      "status": "three-debate-effective-source-overlay-frozen-and-verified"
+    }
+  },
+  "priorBatchPublicationPrerequisite": {
+    "required": true,
+    "batchNumber": 3,
+    "selection": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/selection.json",
+      "bytes": 31127,
+      "sha256": "d294ccf76345c052a7a484a998803ab0b2e6b3fed80b8acedef08a2342f758e5",
+      "status": "third-post-canary-ten-debate-batch-selection-frozen-source-gate-passed"
+    },
+    "completionExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-publication/generated-seo-correction/execution.json",
+      "bytes": 6982,
+      "sha256": "47d1780c4633cf67cd156aa1794471890373d678221b30d4176eb33f6e97b4b3",
+      "status": "passed-complete-batch-03-transaction-ready-for-atomic-commit"
+    },
+    "completionAnalysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-publication/generated-seo-correction/analysis.json",
+      "bytes": 2199,
+      "sha256": "d44a4edfae31012e3e98d27f3e332817c25ef2dc20d05376974e24eac04b86a4",
+      "status": "batch-03-production-publication-accepted-for-atomic-commit-after-generated-seo-correction"
+    },
+    "mutationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-publication/mutation-manifest.json",
+      "bytes": 28736,
+      "sha256": "665d6dfbc48fa5c741cac9491233edef7661797e17558adbf1e003831824c77e",
+      "status": "frozen-batch-03-production-publication-mutation-manifest-prepared"
+    },
+    "atomicPublicationCommit": "1a23cf5749c991903265fcbbc79d015ae6ee0337",
+    "atomicPublicationCommitWasHead": true,
+    "atomicPublicationCommitWasPushedOriginMain": true,
+    "completeTransactionAccepted": true,
+    "fullRepositoryRegressionPassed": true,
+    "publishedDebates": [
+      "124",
+      "14",
+      "58",
+      "150",
+      "157",
+      "102",
+      "09",
+      "181",
+      "138",
+      "27"
+    ]
+  },
+  "eligibility": {
+    "frozenCensusSize": 164,
+    "rankedCensusSize": 164,
+    "fullRankedCensusSha256": "78b9b19796c9cee48f5fd39c906efe07a06dc2adf76c15ad551f89e276289ec8",
+    "previouslyPublishedAndRemovedCount": 30,
+    "remainingBeforeBatchCount": 134,
+    "remainingBeforeBatchRankedSha256": "bd01c6d756ca90c17974f41b2218928cdae163f1ed94bd000cd339347d312547",
+    "selectedCount": 10,
+    "remainingUnselectedCount": 124,
+    "dyadicOnly": true,
+    "acceptedCalibrationExcluded": true,
+    "publishedCanaryExcluded": true,
+    "publishedPriorContinuationBatchesExcluded": true,
+    "multiSpeakerExcluded": true,
+    "priorObservationExcluded": false
+  },
+  "deterministicOrdering": {
+    "rankDomain": "assessment-production-post-canary-continuation-v1",
+    "rankFormula": "SHA-256(rank domain | active v2.2 normative-text hash | v2.2 promotion-record hash | debate number | debate id), ascending; debate number ascending breaks a cryptographic tie",
+    "normativeTextSha256": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+    "promotionRecordSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "selectedRankOrdinals": [
+      31,
+      40
+    ],
+    "firstTenRemainingSelectedWithoutReplacement": true,
+    "priorPublishedBatchRemovedWithoutReplacement": true,
+    "replacementsAllowed": false,
+    "resultDependentOrdering": false
+  },
+  "selected": [
+    {
+      "debateNumber": "127",
+      "debateId": "slick-clifton-objective-morality-god-2014",
+      "videoId": "uJeKS705aXs",
+      "motion": "Does objective morality require God as its necessary foundation, or can secular moral reasoning explain the relevant moral truths and obligations?",
+      "sides": {
+        "pro": {
+          "label": "Christian moral foundation",
+          "speakers": [
+            "Matt Slick"
+          ]
+        },
+        "con": {
+          "label": "Secular moral inquiry",
+          "speakers": [
+            "Scott Clifton"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 31,
+      "rankSha256": "35c296cbc477c6f2838e3f700f2bee7018bceecae5c493a7fddb8b856cfbc8b0",
+      "eventCount": 2835,
+      "durationSeconds": 6488.92,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/uJeKS705aXs/transcript.txt",
+        "transcriptSha256": "cc36cf5a24922e2f24e360f2e5d27e24b104c182f13a45feaa122f3cbc32faa5",
+        "events": ".assessment-cache/captions/uJeKS705aXs/events.json",
+        "eventsSha256": "306e4aff21ab145306620fee69627346315c2424dfbd407a61073636052466c8",
+        "manifest": ".assessment-cache/captions/uJeKS705aXs/manifest.json",
+        "manifestSha256": "f967bc9295efae637419c45f2853e02b81097a33f71af8c28eba7f56ea823f15",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": true,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "67",
+      "debateId": "jones-fodor-digital-physics-god-2021",
+      "videoId": "b2HZu6BcxHU",
+      "motion": "Does digital physics, emergent spacetime, quantum information, and idealist metaphysics make God the best explanation of reality, or is a materialist ontology simpler and better disciplined?",
+      "sides": {
+        "pro": {
+          "label": "Theistic idealism",
+          "speakers": [
+            "Michael Jones"
+          ]
+        },
+        "con": {
+          "label": "Materialist realism",
+          "speakers": [
+            "James Fodor"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 32,
+      "rankSha256": "3a22b1e85dee7e3d7d14b3dfa97f4d359ad4079294f5d70b4ebe3dd0e4ba520a",
+      "eventCount": 4518,
+      "durationSeconds": 7603.52,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/b2HZu6BcxHU/transcript.txt",
+        "transcriptSha256": "d19191f9eacd1a68e3260bdc6ea71a0a184e059eb0e333f110cac00d7ae7c1f3",
+        "events": ".assessment-cache/captions/b2HZu6BcxHU/events.json",
+        "eventsSha256": "3aa409e9d38151a36ccd78a4eac295f126b82cf7794334e587a76ca4f85450db",
+        "manifest": ".assessment-cache/captions/b2HZu6BcxHU/manifest.json",
+        "manifestSha256": "cedb314aa7610437d44618f2e5a23e732605373df8388c2fcd4d2208c2dcee30",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "85",
+      "debateId": "atkins-fox-god-science-future-humanity-2024",
+      "videoId": "2pDEBRG_9_Q",
+      "motion": "Do science, evolution, and future technology make God unnecessary, or do value, personhood, origins, and hope point beyond scientific materialism?",
+      "sides": {
+        "pro": {
+          "label": "Scientific materialism",
+          "speakers": [
+            "Peter Atkins"
+          ]
+        },
+        "con": {
+          "label": "Christian theism",
+          "speakers": [
+            "Keith Fox"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 33,
+      "rankSha256": "3ab12d8156a8055ffaadd6dbc9049b1d44a3fad87f452c900e7dc4f0382eb5ae",
+      "eventCount": 1769,
+      "durationSeconds": 4772.719,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/2pDEBRG_9_Q/transcript.txt",
+        "transcriptSha256": "fbf4fc2199bcab18618ee517d50e396e2b2b76541aaad8700f287f4b81dba34c",
+        "events": ".assessment-cache/captions/2pDEBRG_9_Q/events.json",
+        "eventsSha256": "a6faef03c8c5aa9548cc61e804363a2a1a2b759e313d7b57872ef3f8baa9802f",
+        "manifest": ".assessment-cache/captions/2pDEBRG_9_Q/manifest.json",
+        "manifestSha256": "f8b24e7a599ca24ca5f87c9d9ef31733fef4b508cdf89b27134809b8b1b34ae6",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "videoId": "AajJBhdRpDA",
+      "motion": "Does the transcendental argument show that Orthodox Christian theism is needed to ground logic, truth, induction, ethics, and knowledge?",
+      "sides": {
+        "pro": {
+          "label": "Orthodox theism",
+          "speakers": [
+            "Jay Dyer"
+          ]
+        },
+        "con": {
+          "label": "Skeptical atheism",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 34,
+      "rankSha256": "3cdd3068751b9e8aaf014cf7891c4123d9caef25ea7a556a6474091f65bf2710",
+      "eventCount": 4406,
+      "durationSeconds": 9946.67,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/AajJBhdRpDA/transcript.txt",
+        "transcriptSha256": "76c62ef28ac0cedb47a3f0194aba1d48bd2519935e1ca602231b15b52eb9b581",
+        "events": ".assessment-cache/captions/AajJBhdRpDA/events.json",
+        "eventsSha256": "02dd86059d458cd7aa2de6fb76ab42cfc3a827ca467b90a68de58f6d51fc8fa2",
+        "manifest": ".assessment-cache/captions/AajJBhdRpDA/manifest.json",
+        "manifestSha256": "2c95addc023fc2149e1220048358f1d72ba142d9fca74232a4d1884028b6d0d1",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "186",
+      "debateId": "huemer-sapolsky-free-will-determinism-2024",
+      "videoId": "FjAYvhv1-Lg",
+      "motion": "Do people sometimes control which of multiple genuinely available actions occurs, and does that freedom justify responsibility?",
+      "sides": {
+        "pro": {
+          "label": "Libertarian free will exists and matters",
+          "speakers": [
+            "Michael Huemer"
+          ]
+        },
+        "con": {
+          "label": "Causal determination leaves no free will",
+          "speakers": [
+            "Robert Sapolsky"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 35,
+      "rankSha256": "3f694f619fb1970a89bc8a7a14f8501e596b928c824d6e35d03fa2e02febeb89",
+      "eventCount": 2069,
+      "durationSeconds": 5175.199,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/FjAYvhv1-Lg/transcript.txt",
+        "transcriptSha256": "0f95a8e51821706d410371c4ce48befdab385fba5690e1e2543d4bb88cb965f2",
+        "events": ".assessment-cache/captions/FjAYvhv1-Lg/events.json",
+        "eventsSha256": "7414e73cb06f66fc498157c30c26232dc0d9494ff5ad6200f0ea4cb00c923460",
+        "manifest": ".assessment-cache/captions/FjAYvhv1-Lg/manifest.json",
+        "manifestSha256": "87bb71b546e9b66889a97f09d7856de68e340a67dd68da68d8d66e7102fa5b1d",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "videoId": "YhqFdIb13bk",
+      "motion": "Is a theistic supreme foundation or a naturalistic initial reality the better account of ultimate reality, mind, and worldview simplicity?",
+      "sides": {
+        "pro": {
+          "label": "Theistic supremacy",
+          "speakers": [
+            "Josh Rasmussen"
+          ]
+        },
+        "con": {
+          "label": "Naturalistic comparison",
+          "speakers": [
+            "Graham Oppy"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 36,
+      "rankSha256": "3f7487882ca64d3e021c2b65a03f7cd8476df8ea5ec399db031da3281483d1d0",
+      "eventCount": 2716,
+      "durationSeconds": 7184.71,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/YhqFdIb13bk/transcript.txt",
+        "transcriptSha256": "1892348c2caa65082767c0278c9cb5f75093d28ec91d159df46dc690a2e0bbc9",
+        "events": ".assessment-cache/captions/YhqFdIb13bk/events.json",
+        "eventsSha256": "573271176713a5b0a83b0fd01e5435bb75789185c3808468c021ddce5c2e2df7",
+        "manifest": ".assessment-cache/captions/YhqFdIb13bk/manifest.json",
+        "manifestSha256": "2a9a560ec016ec9a7d29e6b2dd7b66ef518dc8d83214f32ca6116cca6b0d3be5",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "148",
+      "debateId": "baggett-dillahunty-moral-argument-2018",
+      "videoId": "YWeOWtmCoCs",
+      "motion": "Do objective moral facts, moral knowledge, moral transformation, and moral rationality make theism a better explanation than secular ethical theories?",
+      "sides": {
+        "pro": {
+          "label": "Theistic moral explanation",
+          "speakers": [
+            "David Baggett"
+          ]
+        },
+        "con": {
+          "label": "Secular moral inquiry",
+          "speakers": [
+            "Matt Dillahunty"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 37,
+      "rankSha256": "40b30ff83183878527380c03ee36b51999785de5cd317ddbdc8116ef22bcf181",
+      "eventCount": 2829,
+      "durationSeconds": 7321.97,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/YWeOWtmCoCs/transcript.txt",
+        "transcriptSha256": "5d69508a8a3fdc0882d237de846649be40586c341df1740db510618791d2d4da",
+        "events": ".assessment-cache/captions/YWeOWtmCoCs/events.json",
+        "eventsSha256": "ee8165a051b367be8254fcfaa4826cc7a5805ea639346bf0bea144ebd97ac3e3",
+        "manifest": ".assessment-cache/captions/YWeOWtmCoCs/manifest.json",
+        "manifestSha256": "fd2154da74216232f68f876527d6e49df2e5e5e57bcbfcdb0b2a55b322400b9d",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "47",
+      "debateId": "jones-krauss-christianity-secular-ethics-2025",
+      "videoId": "yef-BFukQWg",
+      "motion": "Which is better for society: Christianity, understood as a Christian-value society with a largely Christian population, or secular ethics?",
+      "sides": {
+        "pro": {
+          "label": "Christian society",
+          "speakers": [
+            "Michael Jones"
+          ]
+        },
+        "con": {
+          "label": "Secular ethics",
+          "speakers": [
+            "Lawrence Krauss"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 38,
+      "rankSha256": "42be2f2380953d3ae03cb52937461dc11a9745d54633644154c7cdecbbfe3b34",
+      "eventCount": 3734,
+      "durationSeconds": 8516.64,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/yef-BFukQWg/transcript.txt",
+        "transcriptSha256": "18fdc49b647b954f7db705fa22c8f8618eafa64e55767d8628f15d018383b562",
+        "events": ".assessment-cache/captions/yef-BFukQWg/events.json",
+        "eventsSha256": "2f90b46a33db98819695ecb0fae37be2f7a6b76742d616d90483e2d3698e58ea",
+        "manifest": ".assessment-cache/captions/yef-BFukQWg/manifest.json",
+        "manifestSha256": "39bad871e7c8117e2ae0c49d077f05fdf577575d6111c627229c43093afef3e2",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "03",
+      "debateId": "hitchens-dsouza-religion-problem-2010",
+      "videoId": "9V85OykSDT8",
+      "motion": "Is religion the problem, or does the God hypothesis better explain life, morality, purpose, and human experience than secular doubt?",
+      "sides": {
+        "pro": {
+          "label": "Religion is the problem",
+          "speakers": [
+            "Christopher Hitchens"
+          ]
+        },
+        "con": {
+          "label": "God explains the problem",
+          "speakers": [
+            "Dinesh D'Souza"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 39,
+      "rankSha256": "42c24153595bd121b5b3f1074bf5da41a76a6105b6c62ad5dedc5b362a0d5894",
+      "eventCount": 2662,
+      "durationSeconds": 6485.8,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/9V85OykSDT8/transcript.txt",
+        "transcriptSha256": "91f3389991e4626c581bcafeb5da95f52ac5fbd2b3c646c15c7f45da6b425c79",
+        "events": ".assessment-cache/captions/9V85OykSDT8/events.json",
+        "eventsSha256": "35696ae7d8b62649a91d5e4585362a49175d4ad35a44326a6f49241b6c4c6481",
+        "manifest": ".assessment-cache/captions/9V85OykSDT8/manifest.json",
+        "manifestSha256": "f3ae6ef1994814615515f5ffaf7f5bed16f5e50e0f10fd14129c3314bedc6b03",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    },
+    {
+      "debateNumber": "185",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "videoId": "AxhA7S3q49o",
+      "motion": "Does the natural human capacity for reasons-responsive control justify free will, moral desert, and responsibility practices?",
+      "sides": {
+        "pro": {
+          "label": "Compatibilist free will is worth wanting",
+          "speakers": [
+            "Daniel Dennett"
+          ]
+        },
+        "con": {
+          "label": "Basic-desert free will is unjustified",
+          "speakers": [
+            "Gregg Caruso"
+          ]
+        }
+      },
+      "speakerCount": 2,
+      "rankOrdinal": 40,
+      "rankSha256": "431fc2d3759b48f50066b541c9aafc31f8ac4f3ee900824615e6526b1f1071f5",
+      "eventCount": 3514,
+      "durationSeconds": 7568.56,
+      "sourceChain": {
+        "transcript": ".assessment-cache/captions/AxhA7S3q49o/transcript.txt",
+        "transcriptSha256": "bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b",
+        "events": ".assessment-cache/captions/AxhA7S3q49o/events.json",
+        "eventsSha256": "b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e",
+        "manifest": ".assessment-cache/captions/AxhA7S3q49o/manifest.json",
+        "manifestSha256": "566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a",
+        "extractionMethod": "YouTube public Innertube Android player captions; srv3 XML normalized locally"
+      },
+      "sourceChainOverlayApplied": false,
+      "sourceGate": {
+        "transcriptPresentAndHashMatched": true,
+        "eventsPresentAndHashMatched": true,
+        "localManifestPresentAndHashMatched": true,
+        "localManifestHashChainPassed": true,
+        "canonicalEventProjectionNonempty": true
+      }
+    }
+  ],
+  "sourceGate": {
+    "selectedDebatesChecked": 10,
+    "selectedSourceFilesChecked": 30,
+    "selectedSourceFilesHashMatched": 30,
+    "canonicalEventDebatesPassed": 10,
+    "canonicalEventDebatesFailed": 0,
+    "overlayDebatesSelected": [
+      "127"
+    ],
+    "transcriptContentSemanticallyInspected": false,
+    "legacyAssessmentAccessed": false,
+    "scoreAccessed": false,
+    "winnerAccessed": false,
+    "priorModelOutputAccessed": false
+  },
+  "modelBoundary": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "apiKeysRemovedWhenModelsEventuallyRun": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "modelContextsExecuted": 0
+  },
+  "stageConcurrency": {
+    "discovery": 4,
+    "inventory": 2,
+    "judgments": 2,
+    "audio": 2,
+    "adjudication": 2,
+    "publication": 2
+  },
+  "stopRules": {
+    "selectionHashMismatchBlocks": true,
+    "policyOrOverlayHashMismatchBlocks": true,
+    "priorBatchPublicationFailureBlocks": true,
+    "priorBatchCommitOrPushMismatchBlocks": true,
+    "stableRankMismatchBlocks": true,
+    "sourceHashMismatchBlocksWholeBatch": true,
+    "canonicalEventFailureBlocksWholeBatch": true,
+    "speakerCountAmbiguityBlocksWholeBatch": true,
+    "replacementSelectionBlocks": true,
+    "sourcePacketPreparationBeforeSeparateDecisionBlocks": true,
+    "modelExecutionBlocks": true,
+    "scoreDerivationBlocks": true,
+    "publicationReconstructionBlocks": true,
+    "acceptedCalibrationPromotionBlocks": true,
+    "productionMutationBlocks": true,
+    "concurrentBatchSelectionBlocks": true,
+    "nextBatchSelectionBlocks": true,
+    "paidServiceUseBlocks": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/selection-policy.json": "a7375c3ee116d64df6e0ddfe3c15c598a425be30200e798bbd383cdf83118466",
+    "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/analysis.json": "a62a1fb461d1051192c98d234558726fe91eaac99ec034204e9279d02cbb1538",
+    "docs/assessment-production/post-canary-continuation-v1/continuation-policy-v1/effective-source-overlay.json": "d36c2b0a83e624b036525ae6047778c84a0a6456fa30c9c37b05bb6bd8728c14",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/score-stability-policy-v2.2-proposal.md": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/selection.json": "d294ccf76345c052a7a484a998803ab0b2e6b3fed80b8acedef08a2342f758e5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/selection-analysis.json": "251dd7aceb136ed481321b04626f875220a709743a072240a980dea950f23e47",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/production-publication/mutation-manifest.json": "665d6dfbc48fa5c741cac9491233edef7661797e17558adbf1e003831824c77e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/production-publication/generated-seo-correction/execution.json": "47d1780c4633cf67cd156aa1794471890373d678221b30d4176eb33f6e97b4b3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/production-publication/generated-seo-correction/analysis.json": "d44a4edfae31012e3e98d27f3e332817c25ef2dc20d05376974e24eac04b86a4",
+    "scripts/select-assessment-production-post-canary-batch-04.mjs": "709d6fc84062b891772c333132c3347a52668ab671e7a70818ae38ac22dbc71f",
+    "scripts/test-assessment-production-post-canary-batch-04-selection.mjs": "b03fcd7d7694980c2b6fa36fd9d599e324d51122e013fb54d5a675394b17ec3b",
+    ".assessment-cache/captions/uJeKS705aXs/transcript.txt": "cc36cf5a24922e2f24e360f2e5d27e24b104c182f13a45feaa122f3cbc32faa5",
+    ".assessment-cache/captions/uJeKS705aXs/events.json": "306e4aff21ab145306620fee69627346315c2424dfbd407a61073636052466c8",
+    ".assessment-cache/captions/uJeKS705aXs/manifest.json": "f967bc9295efae637419c45f2853e02b81097a33f71af8c28eba7f56ea823f15",
+    ".assessment-cache/captions/b2HZu6BcxHU/transcript.txt": "d19191f9eacd1a68e3260bdc6ea71a0a184e059eb0e333f110cac00d7ae7c1f3",
+    ".assessment-cache/captions/b2HZu6BcxHU/events.json": "3aa409e9d38151a36ccd78a4eac295f126b82cf7794334e587a76ca4f85450db",
+    ".assessment-cache/captions/b2HZu6BcxHU/manifest.json": "cedb314aa7610437d44618f2e5a23e732605373df8388c2fcd4d2208c2dcee30",
+    ".assessment-cache/captions/2pDEBRG_9_Q/transcript.txt": "fbf4fc2199bcab18618ee517d50e396e2b2b76541aaad8700f287f4b81dba34c",
+    ".assessment-cache/captions/2pDEBRG_9_Q/events.json": "a6faef03c8c5aa9548cc61e804363a2a1a2b759e313d7b57872ef3f8baa9802f",
+    ".assessment-cache/captions/2pDEBRG_9_Q/manifest.json": "f8b24e7a599ca24ca5f87c9d9ef31733fef4b508cdf89b27134809b8b1b34ae6",
+    ".assessment-cache/captions/AajJBhdRpDA/transcript.txt": "76c62ef28ac0cedb47a3f0194aba1d48bd2519935e1ca602231b15b52eb9b581",
+    ".assessment-cache/captions/AajJBhdRpDA/events.json": "02dd86059d458cd7aa2de6fb76ab42cfc3a827ca467b90a68de58f6d51fc8fa2",
+    ".assessment-cache/captions/AajJBhdRpDA/manifest.json": "2c95addc023fc2149e1220048358f1d72ba142d9fca74232a4d1884028b6d0d1",
+    ".assessment-cache/captions/FjAYvhv1-Lg/transcript.txt": "0f95a8e51821706d410371c4ce48befdab385fba5690e1e2543d4bb88cb965f2",
+    ".assessment-cache/captions/FjAYvhv1-Lg/events.json": "7414e73cb06f66fc498157c30c26232dc0d9494ff5ad6200f0ea4cb00c923460",
+    ".assessment-cache/captions/FjAYvhv1-Lg/manifest.json": "87bb71b546e9b66889a97f09d7856de68e340a67dd68da68d8d66e7102fa5b1d",
+    ".assessment-cache/captions/YhqFdIb13bk/transcript.txt": "1892348c2caa65082767c0278c9cb5f75093d28ec91d159df46dc690a2e0bbc9",
+    ".assessment-cache/captions/YhqFdIb13bk/events.json": "573271176713a5b0a83b0fd01e5435bb75789185c3808468c021ddce5c2e2df7",
+    ".assessment-cache/captions/YhqFdIb13bk/manifest.json": "2a9a560ec016ec9a7d29e6b2dd7b66ef518dc8d83214f32ca6116cca6b0d3be5",
+    ".assessment-cache/captions/YWeOWtmCoCs/transcript.txt": "5d69508a8a3fdc0882d237de846649be40586c341df1740db510618791d2d4da",
+    ".assessment-cache/captions/YWeOWtmCoCs/events.json": "ee8165a051b367be8254fcfaa4826cc7a5805ea639346bf0bea144ebd97ac3e3",
+    ".assessment-cache/captions/YWeOWtmCoCs/manifest.json": "fd2154da74216232f68f876527d6e49df2e5e5e57bcbfcdb0b2a55b322400b9d",
+    ".assessment-cache/captions/yef-BFukQWg/transcript.txt": "18fdc49b647b954f7db705fa22c8f8618eafa64e55767d8628f15d018383b562",
+    ".assessment-cache/captions/yef-BFukQWg/events.json": "2f90b46a33db98819695ecb0fae37be2f7a6b76742d616d90483e2d3698e58ea",
+    ".assessment-cache/captions/yef-BFukQWg/manifest.json": "39bad871e7c8117e2ae0c49d077f05fdf577575d6111c627229c43093afef3e2",
+    ".assessment-cache/captions/9V85OykSDT8/transcript.txt": "91f3389991e4626c581bcafeb5da95f52ac5fbd2b3c646c15c7f45da6b425c79",
+    ".assessment-cache/captions/9V85OykSDT8/events.json": "35696ae7d8b62649a91d5e4585362a49175d4ad35a44326a6f49241b6c4c6481",
+    ".assessment-cache/captions/9V85OykSDT8/manifest.json": "f3ae6ef1994814615515f5ffaf7f5bed16f5e50e0f10fd14129c3314bedc6b03",
+    ".assessment-cache/captions/AxhA7S3q49o/transcript.txt": "bcfc11bc3e5a181d72c0cd073acba09d43e1bd6fbb6803ac31f18be2d539e98b",
+    ".assessment-cache/captions/AxhA7S3q49o/events.json": "b144776e56915556eb6a0aa88183eae51d2bf06b4a8dd18cf3d79dad2cdf3a7e",
+    ".assessment-cache/captions/AxhA7S3q49o/manifest.json": "566c51d307d76a5b220d3431c172131d43f19a3f44c4df41049b13f48a3ab80a"
+  },
+  "totals": {
+    "selectedDebates": 10,
+    "eventCount": 31052,
+    "durationHours": 19.74,
+    "sourcePacketsPrepared": 0,
+    "modelContexts": 0,
+    "scorePasses": 0,
+    "publicationContexts": 0,
+    "productionMutations": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorization": {
+    "batchSelectionPreparation": true,
+    "batchSelection": true,
+    "sourcePacketPreparation": false,
+    "discoveryModelExecution": false,
+    "inventoryModelExecution": false,
+    "independentJudgmentModelExecution": false,
+    "audioModelExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationReconstruction": false,
+    "acceptedCalibrationPromotion": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "futureArtifacts": {
+    "sourcePreparation": "docs/assessment-production/post-canary-continuation-v1/batch-04/source-preparation/preparation-manifest.json"
+  },
+  "nextAuthorizedAction": "user-decision-on-fourth-post-canary-batch-source-packet-preparation"
+}
