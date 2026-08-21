@@ -29,10 +29,6 @@ assert.equal(
 assert.equal(plan.batchNumber, 4);
 assert.equal(plan.diagnosis.path, diagnosisPath);
 assert.equal(plan.diagnosis.sha256, sha256(diagnosisBytes));
-assert.equal(
-  plan.authenticatedInput.sha256,
-  sha256(await readFile(plan.authenticatedInput.path))
-);
 assert.equal(plan.exactMutation.targetPath, diagnosis.cause.targetPath);
 assert.equal(plan.exactMutation.fromSha256, diagnosis.cause.recordedSha256);
 assert.equal(
@@ -52,28 +48,14 @@ assert.equal(
   diagnosis.protectedEvidence.workArtifactSha256
 );
 
-console.log(
-  JSON.stringify(
-    {
-      status: "passed",
-      diagnosedFiles: 1,
-      writableFields: 1,
-      mediaAccessOccurred: false,
-      modelContexts: 0,
-      paidServiceCalls: 0,
-      directIncrementalCostUsd: 0
-    },
-    null,
-    2
-  )
-);
-
+let executionValidated = false;
 try {
-  const [activationBytes, execution] = await Promise.all([
+  const [activationBytes, executionBytes] = await Promise.all([
     readFile(activationPath),
-    readFile(executionPath, "utf8").then(JSON.parse)
+    readFile(executionPath)
   ]);
   const activation = JSON.parse(activationBytes);
+  const execution = JSON.parse(executionBytes);
   assert.equal(
     activation.status,
     "active-for-exactly-one-deterministic-source-hash-correction-pass"
@@ -90,6 +72,7 @@ try {
   assert.equal(execution.mediaFilesAccessed, 0);
   assert.equal(execution.modelContexts, 0);
   assert.equal(execution.paidServiceCalls, 0);
+  assert.equal(execution.directIncrementalCostUsd, 0);
   const correctedBytes = await readFile(execution.output.path);
   assert.equal(sha256(correctedBytes), execution.output.sha256);
   const corrected = JSON.parse(correctedBytes);
@@ -103,6 +86,30 @@ try {
     sha256(Buffer.from(`${JSON.stringify(corrected, null, 2)}\n`)),
     plan.authenticatedInput.sha256
   );
+  executionValidated = true;
 } catch (error) {
   if (error?.code !== "ENOENT") throw error;
+  assert.equal(
+    plan.authenticatedInput.sha256,
+    sha256(await readFile(plan.authenticatedInput.path))
+  );
 }
+
+console.log(
+  JSON.stringify(
+    {
+      status: "passed",
+      diagnosedFiles: 1,
+      writableFields: 1,
+      executionValidated,
+      frozenPreimageReconstructed: executionValidated,
+      correctionRerun: false,
+      mediaAccessOccurred: false,
+      modelContexts: 0,
+      paidServiceCalls: 0,
+      directIncrementalCostUsd: 0
+    },
+    null,
+    2
+  )
+);

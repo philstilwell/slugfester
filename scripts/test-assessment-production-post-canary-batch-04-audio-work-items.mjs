@@ -223,6 +223,10 @@ assert.doesNotMatch(
 assert.deepEqual((await readdir(ROOT)).sort(), [
   "analysis.json",
   "audio-work-item-preparation.json",
+  "audio-work-item-source-hash-correction-activation.json",
+  "audio-work-item-source-hash-correction-execution.json",
+  "audio-work-item-source-hash-correction-plan.json",
+  "audio-work-item-source-hash-failure-diagnosis.json",
   "audio-work-items.json",
   "disagreements"
 ]);
