@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-audio-work-item-source-hash-correction-plan",
+  "status": "frozen-bounded-source-hash-correction-ready-for-activation",
+  "batchNumber": 4,
+  "checkpointCommit": "beda844cdedb46573708e15397aa3bad529f7bd7",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/disagreement-extraction/audio-work-item-source-hash-failure-diagnosis.json",
+    "sha256": "5436140608b87c225164f9b7c799bdcfa6cec3d909891caa367828d9c580d773"
+  },
+  "authenticatedInput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/disagreement-extraction/audio-work-item-preparation.json",
+    "sha256": "262c1e9c8509e7ea50af6c0772dbd1bad7bb8026c17bc999039df0a973af0460"
+  },
+  "exactMutation": {
+    "jsonPointer": "/sourceHashes/scripts~1lib~1assessment-production-post-canary-batch-04-audio-work-items.mjs",
+    "targetPath": "scripts/lib/assessment-production-post-canary-batch-04-audio-work-items.mjs",
+    "fromSha256": "8167284f59d9e39eb14b17a1e64a12afd174aeed053da1b35aef4ccd7d34700a",
+    "toSha256": "61582fd71f267fb6c009ee282c8415de689ff38f4f9e9f8ada50203315dd80bf",
+    "writableFields": 1
+  },
+  "controls": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "mediaAccessAllowed": false,
+    "modelsAllowed": false,
+    "paidServicesAllowed": false,
+    "scoresAllowed": false,
+    "packetOrSchemaChangesAllowed": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "requiredValidation": {
+    "audioWorkItemReplay": true,
+    "audioSourcePreparationPreview": true,
+    "preservedWorkArtifactHash": "2438ea124e7e8f128895ccf55746cdd568d7709bd8c0a04137d5f3ea7f2fa314"
+  }
+}
