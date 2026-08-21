@@ -8,6 +8,8 @@ const root =
   "docs/assessment-production/post-canary-continuation-v1/batch-04/disagreement-extraction";
 const diagnosisPath = `${root}/audio-work-item-source-hash-failure-diagnosis.json`;
 const planPath = `${root}/audio-work-item-source-hash-correction-plan.json`;
+const activationPath = `${root}/audio-work-item-source-hash-correction-activation.json`;
+const executionPath = `${root}/audio-work-item-source-hash-correction-execution.json`;
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 
 const [diagnosisBytes, plan] = await Promise.all([
@@ -65,3 +67,42 @@ console.log(
     2
   )
 );
+
+try {
+  const [activationBytes, execution] = await Promise.all([
+    readFile(activationPath),
+    readFile(executionPath, "utf8").then(JSON.parse)
+  ]);
+  const activation = JSON.parse(activationBytes);
+  assert.equal(
+    activation.status,
+    "active-for-exactly-one-deterministic-source-hash-correction-pass"
+  );
+  assert.equal(activation.plan.sha256, sha256(await readFile(planPath)));
+  assert.equal(
+    execution.status,
+    "completed-exactly-one-deterministic-source-hash-correction-pass"
+  );
+  assert.equal(execution.activationSha256, sha256(activationBytes));
+  assert.equal(execution.attempts, 1);
+  assert.equal(execution.retries, 0);
+  assert.equal(execution.reruns, 0);
+  assert.equal(execution.mediaFilesAccessed, 0);
+  assert.equal(execution.modelContexts, 0);
+  assert.equal(execution.paidServiceCalls, 0);
+  const correctedBytes = await readFile(execution.output.path);
+  assert.equal(sha256(correctedBytes), execution.output.sha256);
+  const corrected = JSON.parse(correctedBytes);
+  assert.equal(
+    corrected.sourceHashes[plan.exactMutation.targetPath],
+    plan.exactMutation.toSha256
+  );
+  corrected.sourceHashes[plan.exactMutation.targetPath] =
+    plan.exactMutation.fromSha256;
+  assert.equal(
+    sha256(Buffer.from(`${JSON.stringify(corrected, null, 2)}\n`)),
+    plan.authenticatedInput.sha256
+  );
+} catch (error) {
+  if (error?.code !== "ENOENT") throw error;
+}
