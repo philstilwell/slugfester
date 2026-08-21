@@ -1,0 +1,374 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-candidate-census-plan-analysis",
+  "protocolId": "assessment-production-post-canary-batch-04-candidate-sharded-inventory",
+  "status": "post-canary-batch-04-candidate-census-plan-gate-passed-standing-authorization-active-for-side-packet-preparation",
+  "productionContinuation": true,
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "stagingOnly": true,
+  "AIOnly": true,
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "sourceCompatibility": {
+    "status": "all-source-rows-have-positive-repository-lexical-token-count",
+    "reason": "All selected canonical source rows contain at least one repository lexical token.",
+    "policy": "Preserve every exact canonical row and text, record lexicalTokenCount as 0 when applicable, and continue to enforce the unchanged 12-token minimum on every inclusive candidate window.",
+    "sourceRowsInjected": 0,
+    "sourceRowsOmitted": 0,
+    "sourceRowsRewritten": 0,
+    "minimumCandidateLexicalTokensChanged": false,
+    "occurrences": []
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true
+  },
+  "originalActivation": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-execution-activation.json",
+  "originalExecution": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-model-execution.json",
+  "recoveryActivation": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/execution-activation.json",
+  "recoveryExecution": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/model-execution.json",
+  "recoveryAnalysis": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/analysis.json",
+  "plans": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "127",
+      "debateId": "slick-clifton-objective-morality-god-2014",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-127.json",
+      "outputSha256": "06b6f1baf6fd70231895d139ff80268aa4b9120e9d33166847b50c29cf3a1d19",
+      "canonicalSha256": "4074a8b59f602cbb18dc9338df0a81eaf39dd80f9197541ee75f35e7ff726b2a",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 6,
+      "sectionIds": [
+        "moral-objectivity-and-absolutes",
+        "divine-nature-and-nonarbitrariness",
+        "secular-welfare-and-impartial-construction",
+        "moral-obligation-and-is-ought",
+        "omniscience-revelation-and-moral-knowledge",
+        "counterexamples-motivation-and-practical-force"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 1,
+      "debateNumber": "67",
+      "debateId": "jones-fodor-digital-physics-god-2021",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-67.json",
+      "outputSha256": "10ce06a2314526e671b19ae53e9d1c1d01977c871bcc53068ae8ef5761ece074",
+      "canonicalSha256": "ad9361514b7354890e59467e369477e287bb1b9af278f61af583d27ea0f170b9",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "emergent-spacetime-evidence",
+        "structure-information-and-ontology",
+        "mental-and-divine-foundation",
+        "parsimony-contingency-and-brute-facts",
+        "explanatory-discrimination"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 2,
+      "debateNumber": "85",
+      "debateId": "atkins-fox-god-science-future-humanity-2024",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-85.json",
+      "outputSha256": "4e526cc59be556f82fc9901ff71abc025e8cd1dea6cc8153b7a33f9dc8869d11",
+      "canonicalSha256": "8032865f71c2a3cf80df9c99c59b0297d2e59c66df275111325657b6e7c572ab",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "epistemic-scope-and-supernatural-evidence",
+        "cosmic-biological-origins",
+        "morality-meaning-and-hope",
+        "personhood-ai-and-genetic-technology",
+        "science-faith-and-human-flourishing"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 3,
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-49.json",
+      "outputSha256": "eab59fd30eb964c36128fc88ec790753764cf85347006e5bbc85175ab2a3d271",
+      "canonicalSha256": "350aa73a9dc9366605de63d93879697bfba7567f30f953ad78f1217104d02eba",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 6,
+      "sectionIds": [
+        "sec-necessity-orthodox-ground",
+        "sec-logic-divine-mind",
+        "sec-knowledge-certainty",
+        "sec-induction-regularity",
+        "sec-transcendental-method",
+        "sec-worldview-implications"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "bounded-first-recovery-two-field-disjoint-shards",
+      "validated": true
+    },
+    {
+      "contextIndex": 4,
+      "debateNumber": "186",
+      "debateId": "huemer-sapolsky-free-will-determinism-2024",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-186.json",
+      "outputSha256": "7c40cdc178741787c62527b8fd8c56cc3deaf2080fcc4d0e167807632d1f9713",
+      "canonicalSha256": "c3e5c97b26a00a9ada52cc858c2a83b846975c9ffe30ef7a7250b92442b073cc",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-causal-explanation-and-alternatives",
+        "section-evidence-and-burden-of-proof",
+        "section-control-deliberation-and-reasons",
+        "section-responsibility-desert-and-punishment",
+        "section-concepts-explanation-and-indeterminacy"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 5,
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-81.json",
+      "outputSha256": "e97f4e6ed1ac9cdafe1a20093c445a7ccb8d2c04cb21755a7a9ca7a46b597bec",
+      "canonicalSha256": "c770d8071bfd32eb282886090d284554a4e8fc3ecc560a9ad4ee08ee694466d4",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "initial-reality-categories-and-continuity",
+        "arbitrary-limits-supremacy-and-personhood",
+        "necessity-unification-and-explanatory-stopping-points",
+        "consciousness-and-physical-identity",
+        "whole-worldview-comparison"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 6,
+      "debateNumber": "148",
+      "debateId": "baggett-dillahunty-moral-argument-2018",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-148.json",
+      "outputSha256": "d8821207215ba31ef78c2aab558094aea0c35f5f1deff9d286847996d0ed9b5b",
+      "canonicalSha256": "92034e603e73bdff3fd031ad4b87d00eece2d89e7f0ff1bc7cf2b051b5b557ab",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 6,
+      "sectionIds": [
+        "abductive-method-and-candidacy",
+        "objective-moral-authority",
+        "moral-knowledge-and-conscience",
+        "moral-transformation",
+        "moral-rationality-and-flourishing",
+        "comparative-worldview-fit"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 7,
+      "debateNumber": "47",
+      "debateId": "jones-krauss-christianity-secular-ethics-2025",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-47.json",
+      "outputSha256": "59aee50f4499c474c0b9b478f4144e0fa53ecee8f39df0209c5b53db7e4f63b4",
+      "canonicalSha256": "c9e2c41d95ff89d945d59e4876fd8ba176430d6886ab0404d0f39cf1182974fa",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-social-outcomes",
+        "section-progress-institutions",
+        "section-moral-foundations",
+        "section-doctrine-fallibilism",
+        "section-liberty-continuity"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 8,
+      "debateNumber": "03",
+      "debateId": "hitchens-dsouza-religion-problem-2010",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-03.json",
+      "outputSha256": "6ff97dcd6b86f056a0f2085ee04d05da73fd6cabd2954c92a7e3c33f6fd00b7b",
+      "canonicalSha256": "57b9dd676a5f9eb8fb3ced94c1f4d2e149c23d9648ebb6cc655f8b4b5cb595d6",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-epistemology-revelation",
+        "section-origins-design",
+        "section-morality-altruism",
+        "section-purpose-experience",
+        "section-religion-harm"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    },
+    {
+      "contextIndex": 9,
+      "debateNumber": "185",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-185.json",
+      "outputSha256": "d6f4fdd1d6aa90761e5fe982a4fcf72e11caaaf0e086cff06f5185cb97778ff4",
+      "canonicalSha256": "d6ded3aa2df7d64124b21dc2e14726b58012cefb50eeee5a68fd1bdcb692c2ea",
+      "routes": 2,
+      "routeSides": [
+        "con",
+        "pro"
+      ],
+      "sections": 5,
+      "sectionIds": [
+        "section-control-and-alternatives",
+        "section-sourcehood-and-manipulation",
+        "section-desert-conceptions",
+        "section-sanctions-and-public-protection",
+        "section-reactive-attitudes-and-reform"
+      ],
+      "weightPercentTotal": 100,
+      "provenance": "original-accepted-planner-context",
+      "validated": true
+    }
+  ],
+  "audit": {
+    "exactPlanCount": 10,
+    "everyAcceptedContextOrShardSingleAttempt": true,
+    "everyPlanSchemaAndSemanticValidationPassed": true,
+    "everyPlanCanonicalHashReplayed": true,
+    "everyPlanHasOneRoutePerSide": true,
+    "everyPlanHasFourToSixSections": true,
+    "everyPlanWeightsTotalOneHundred": true,
+    "boundedFirstRecoveryUsed": true,
+    "recoveredDebate": "49",
+    "minimumFieldDisjointShardCount": 2,
+    "originalFailedPartialOutputReused": false,
+    "nineOriginalAcceptedPlansByteIdentical": true,
+    "sourceRowsInjectedOmittedOrRewritten": false,
+    "candidateSelectionPerformed": false,
+    "exactSidePacketsFrozen": 0,
+    "sideSelectorModelsExecuted": 0,
+    "judgmentModelsExecuted": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "publicationReconstructionPerformed": false,
+    "productionMutations": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/preparation-manifest.json": "a78af56ba557aa2f28324ad8c51bf00c29fa428a620e118372d33a9e8f5d9e9a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-execution-preparation-manifest.json": "3a0b4c4458ddff76767d4952dd641389b17c7caf588acb994b123e340a617a12",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-execution-activation.json": "ebfa89385b68cb330fff3ac2ba43cf0a6209ab49612529aff2ddd6c5d001f871",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-model-execution.json": "251a9bd35efda8e1e1d4ea7497ed27013b07ea77fd1c89c11f864773e9fbf070",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/execution-preparation-manifest.json": "37cf0e31d1a7ffd0ffa9c5b4ee02a2e23095d78f38f64d55afebf034e007ecd6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/execution-activation.json": "f8fbb4ff7edf3bea65e0116048bf70045cd421bda96c03efd9ff1e498dfa9e0d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/model-execution.json": "5331940380509ef655fffbb447242953b21eb5fbe362cfa379ef790adaf78f6a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/analysis.json": "acb070d532e663934f9a20146a051a2b50d868ea0b8f2e219f314681a167bf8e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-127.json": "06b6f1baf6fd70231895d139ff80268aa4b9120e9d33166847b50c29cf3a1d19",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-67.json": "10ce06a2314526e671b19ae53e9d1c1d01977c871bcc53068ae8ef5761ece074",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-85.json": "4e526cc59be556f82fc9901ff71abc025e8cd1dea6cc8153b7a33f9dc8869d11",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-49.json": "eab59fd30eb964c36128fc88ec790753764cf85347006e5bbc85175ab2a3d271",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-186.json": "7c40cdc178741787c62527b8fd8c56cc3deaf2080fcc4d0e167807632d1f9713",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-81.json": "e97f4e6ed1ac9cdafe1a20093c445a7ccb8d2c04cb21755a7a9ca7a46b597bec",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-148.json": "d8821207215ba31ef78c2aab558094aea0c35f5f1deff9d286847996d0ed9b5b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-47.json": "59aee50f4499c474c0b9b478f4144e0fa53ecee8f39df0209c5b53db7e4f63b4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-03.json": "6ff97dcd6b86f056a0f2085ee04d05da73fd6cabd2954c92a7e3c33f6fd00b7b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plans/debate-185.json": "d6f4fdd1d6aa90761e5fe982a4fcf72e11caaaf0e086cff06f5185cb97778ff4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/outputs/debate-49-routes.json": "2573cf2c63b9e98f2f23569a2afe67ae722b5e9a4243ae882a4c6f8d0fc24503",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/plan-recovery-1/debate-49/outputs/debate-49-sections.json": "87f754d3b769869f33686849cd46a219b6ed21ab28e9c2e9ec411c5d16df1604"
+  },
+  "totals": {
+    "debates": 10,
+    "originalPlanContextsAttempted": 10,
+    "recoveryShardContextsAttempted": 2,
+    "acceptedPlans": 10,
+    "modelContextsExecuted": 12,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0,
+    "paidServiceCalls": 0,
+    "audioCalls": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0,
+    "meteredApiCostUsd": 0
+  },
+  "authorization": {
+    "exactSidePacketPreparation": false,
+    "sideSelectorExecutionManifestPreparation": false,
+    "sideSelectorModelExecution": false,
+    "inventoryCompilation": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrection": false,
+    "independentJudgmentModelExecution": false,
+    "paidTranscription": false,
+    "audioVerification": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "publicationModelExecution": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-and-activate-twenty-exact-batch-04-side-selector-packets-under-standing-authorization"
+}
