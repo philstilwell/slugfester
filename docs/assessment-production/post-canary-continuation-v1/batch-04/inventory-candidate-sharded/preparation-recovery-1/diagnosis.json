@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-inventory-preparation-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-04-inventory-preparation-recovery-1",
+  "status": "frozen-batch-04-inventory-preparation-missing-static-guide-diagnosed",
+  "diagnosedAt": "2026-08-21T19:52:00.000Z",
+  "checkpointCommit": "da958564",
+  "failureCategory": "deterministic-preparation-missing-static-guide",
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-04-inventory.mjs freeze --frozen-at 2026-08-21T19:50:00.000Z",
+  "failure": {
+    "code": "ENOENT",
+    "syscall": "open",
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+    "writesCompleted": 0,
+    "modelsExecuted": 0,
+    "paidServicesUsed": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "diagnosis": "The inherited preparation harness reads the batch-specific candidate-sharded inventory guide before it constructs any generated artifact. The Batch 4 guide had not yet been created, so the model-free preview failed closed before writing output.",
+  "boundedCorrection": {
+    "kind": "supply-missing-authenticated-static-guide",
+    "writableFiles": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/candidate-sharded-inventory-guide.md"
+    ],
+    "sourceCandidateOrEvidenceChange": false,
+    "modelContextChange": false,
+    "schemaOrValidatorMeaningChange": false,
+    "scoreChange": false,
+    "retryOfModelContext": false,
+    "recoveryAttempt": 1
+  },
+  "authorization": {
+    "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-04/standing-authorization.json",
+    "boundedFirstRecoveryAuthorized": true,
+    "additionalUserApprovalRequired": false
+  }
+}

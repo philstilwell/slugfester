@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-inventory-preparation-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-04-inventory-preparation-recovery-1",
+  "status": "frozen-active-batch-04-inventory-preparation-static-guide-correction-plan",
+  "frozenAt": "2026-08-21T19:54:00.000Z",
+  "checkpointCommit": "da958564",
+  "recoveryAttempt": 1,
+  "correction": {
+    "exactFile": "docs/assessment-production/post-canary-continuation-v1/batch-04/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+    "bytes": 5998,
+    "sha256": "8a1badfa4cf14ad0381c75ff9bda43d9c445d55fe3c8d7329a31547b4262a3f8",
+    "contentBoundary": "Batch 4 cohort identity, promoted inventory instructions, 404 accepted discovery candidates, and three below-high attribution candidates only"
+  },
+  "lockedInputs": {
+    "scripts/prepare-assessment-production-post-canary-batch-04-inventory.mjs": "9f87dc7948c7fd6e8d6a85f51798cf0314d3305a04c32fb8fdc826d02c3074d0",
+    "scripts/run-assessment-production-post-canary-batch-04-inventory-plans.mjs": "4f1182dbf58ff287c5129a92f33cf7bcdcdecc53deebc63ca62f14addfe479fe",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/discovery/analysis.json": "5a592a938fda849261a51da1ad522ad8505ad21fdbdc10586ccbacf562b0668b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-04/standing-authorization.json": "37c73fd5ad5bcaf6f907c048d662529cd11934924419dded17a56987687bb9e0"
+  },
+  "execution": {
+    "command": "node scripts/prepare-assessment-production-post-canary-batch-04-inventory.mjs freeze --write --frozen-at 2026-08-21T19:58:00.000Z",
+    "validationCommand": "node scripts/prepare-assessment-production-post-canary-batch-04-inventory.mjs validate",
+    "attemptsMaximum": 1,
+    "rerunsMaximum": 0,
+    "modelsAuthorized": false,
+    "paidServicesAuthorized": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "preservation": {
+    "discoveryOutputsByteIdentical": true,
+    "sourcePacketsByteIdentical": true,
+    "standingAuthorizationByteIdentical": true,
+    "modelSettingsUnchanged": true,
+    "schedulerUnchanged": true,
+    "scoresDerived": 0,
+    "productionMutations": 0
+  },
+  "nextAuthorizedAction": "execute-one-corrected-batch-04-inventory-preparation-pass"
+}
