@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-2-debate-157-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-2-debate-157-repair-1",
+  "packetIndex": 2,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "157",
+  "debateId": "dillahunty-howitt-christianity-true-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-2/outputs/debate-157.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-157.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-objective-logic-logos.critique",
+      "moveProse.con-logic-trinity-mapping-gap.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-objective-logic-logos.critique",
+      "moveId": "pro-objective-logic-logos",
+      "originalCritique": "Strongest feature: The reply directly contacts objections to subjective projection and divine grounding by presenting logic as reality’s objective structure and explaining how its internally related moments are intended to support the Logos framework. Principal limitation: Ground, meta-ground, Logos, and Trinity alternate between explanatory and identificatory functions, while the assertion that objective logic is only intelligible through Christianity largely restates the disputed conclusion instead of deriving mentality, personhood, or triune identity. Live burden: The affirmative must establish why objective validity requires a mind, why interdependence yields personal relations, and why those relations identify Christianity rather than another realist metaphysics. Locked score: The mixed band acknowledges direct responsiveness, central relevance, and a recoverable metaphysical position, but preserves substantial deductions for materially overstated exclusivity, unstable explanatory terminology, insufficient independent warrant, and failure to complete the mapping.",
+      "originalWords": 134,
+      "originalCharacters": 1084,
+      "excessWordsAboveAcceptanceMaximum": 4,
+      "lockedMove": {
+        "moveId": "pro-objective-logic-logos",
+        "sectionId": "logic-and-logos",
+        "side": "pro",
+        "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+        "moveKind": "reply",
+        "proposition": "Logic is the objective structure of reality, and its mutually dependent universal, particular, and individual moments are intelligible as the Christian Logos and Trinity.",
+        "importance": 3,
+        "finalScore": 73,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "24:06",
+        "sourceSpan": {
+          "startEvent": 646,
+          "endEvent": 744,
+          "startMs": 1446419,
+          "endMs": 1683059
+        },
+        "sourceExcerpt": "ground and why it doesn't make sense to reject it and why this I would say rep it is only understood in terms of the logos uh the CR as the Christian God now the the the sort of two things to be said there I think that there is a metaphysical proposition that I probably haven't outwardly expressed which is that I see this I'm arguing that this logic isn't something that we are exporting to reality",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 400
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-logic-ground"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-truth-correspondence-evidence",
+            "con-generic-ground-specificity-gap"
+          ],
+          "components": [
+            {
+              "componentId": "pro-objective-logic-logos-component-01",
+              "targetMoveId": "con-truth-correspondence-evidence",
+              "text": "Why the proposed divine logical ground is more than an unevidenced addition to reality.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-objective-logic-logos-component-02",
+              "targetMoveId": "con-generic-ground-specificity-gap",
+              "text": "Why objective logical structure should be understood specifically through the Christian Logos.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts both challenges by presenting logic as reality's objective meta-ground and linking its moments to the Logos, but it mostly restates rather than demonstrates the contested bridges.",
+          "responsivenessWithinClass": {
+            "value": 73,
+            "rationale": "Within partial answers, it contacts the decisive demands but leaves the justification for divine and Trinitarian identification materially incomplete."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it contacts the decisive demands but leaves the justification for divine and Trinitarian identification materially incomplete."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The objective-logic thesis is recoverable, but ground, meta-ground, Logos, and Trinity shift between explanatory and identificatory roles."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The claim that logic can only be understood through the Christian God greatly exceeds the excerpt's compressed account of logical interdependence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Logic may objectively describe reality without being a mind or specifically Christian Logos.",
+          "decisiveQualification": "Objective validity alone does not entail mentality, personhood, or Trinitarian identity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 63,
+            "rationale": "The account provides a recognizable meta-grounding structure but leaves an unsupported identity from objective logical relations to the Christian Logos."
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "The meta-grounding account is asserted without representative evidence or serious comparison with logical realism."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central-tier contacts, it directly defends the affirmative logic-ground bridge against the principal skeptical challenge."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The response recognizes rejection of its ground but does not fairly resolve the strongest nonmental-realist alternative."
+          }
+        },
+        "evidenceBasis": "The excerpt calls logic the ground, proposes a meta-ground for why it must be the ground, and says it is only understood through the Christian Logos.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-logic-trinity-mapping-gap.critique",
+      "moveId": "con-logic-trinity-mapping-gap",
+      "originalCritique": "Strongest feature: The reply isolates the crucial difference between noticing a triadic resemblance and establishing an ontological identity, then accurately explains why assigning logical categories to divine persons cannot itself demonstrate the Christian Trinity. Principal limitation: Its informal description of the mapping as something that would be appealing is rhetorically colorful but unnecessary, and it does not independently explore the strongest possible account of how relations among logical moments might generate personal distinction. Live burden: The skeptical side must preserve the metaphor-versus-identity distinction while addressing any explicit derivation the affirmative offers for mentality, personhood, numerical distinction, and uniquely Christian correspondence. Locked score: The very strong band reflects decisive target contact, stable terminology, careful qualification, high logical coherence, and excellent burden relevance, with modest reservation for limited constructive analysis of the affirmative’s strongest ontological interpretation.",
+      "originalWords": 134,
+      "originalCharacters": 1077,
+      "excessWordsAboveAcceptanceMaximum": 4,
+      "lockedMove": {
+        "moveId": "con-logic-trinity-mapping-gap",
+        "sectionId": "logic-and-logos",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Identifying God with logic does not justify treating the logical categories of universality, particularity, and unity as the persons of the Trinity.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "33:34",
+        "sourceSpan": {
+          "startEvent": 888,
+          "endEvent": 911,
+          "startMs": 2014440,
+          "endMs": 2081339
+        },
+        "sourceExcerpt": "God is logic and then it seems and I'm I'm not trying to be insulting but it seems like you've taking a look at the difficulties in epistemology and decided that hey it'd be really cool if I could map the Trinity on not as a metaphor but as an actual and so then particularity becomes Jesus Christ and unity becomes the holy spirit so you've gone from hey we have identity and non",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-trinitarian-identification"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-objective-logic-logos",
+            "pro-logical-moments-trinity"
+          ],
+          "components": [
+            {
+              "componentId": "con-logic-trinity-mapping-gap-component-01",
+              "targetMoveId": "pro-objective-logic-logos",
+              "text": "Whether universal, particular, and individual logical categories are literally the Trinitarian persons.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-logic-trinity-mapping-gap-component-02",
+              "targetMoveId": "pro-logical-moments-trinity",
+              "text": "Whether the initial logical-moments argument justifies its Trinitarian mapping.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly identifies the unsupported literal mapping and explains that assigning categories to persons does not establish identity.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "It directly targets the decisive inference and states the defeating consequence for both formulations of the mapping."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly targets the decisive inference and states the defeating consequence for both formulations of the mapping."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The challenged mapping and the distinction between metaphorical resemblance and actual identity are stated with clear, stable scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker frames the criticism as how the account appears and avoids claiming a formal contradiction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The affirmative may claim an ontological identity, not merely a decorative metaphor, between logical moments and divine persons.",
+          "decisiveQualification": "Calling the mapping ontological heightens rather than removes the need for premises establishing personhood and numerical distinctions."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The mapping-gap critique is consistent and directly exposes the missing inference from logical categories to personal Trinitarian identities."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central-tier contacts, it directly attacks the affirmative Trinitarian-identification bridge at its decisive inferential point."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The reply explicitly recognizes the non-metaphorical intention, though its sarcastic phrasing slightly weakens presentation of the strongest derivation."
+          }
+        },
+        "evidenceBasis": "The evidence recounts the literal mapping of universality, particularity, and unity to the Trinity and challenges the absence of justification for that move.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

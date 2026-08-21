@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-2-debate-157-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-2-debate-157-repair-1",
+  "packetIndex": 4,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "157",
+  "debateId": "dillahunty-howitt-christianity-true-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-2/outputs/debate-157.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-157.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-reason-incarnation-access-gap.critique",
+      "moveProse.pro-infer-divine-self-knowledge.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-reason-incarnation-access-gap.critique",
+      "moveId": "con-reason-incarnation-access-gap",
+      "originalCritique": "Strongest feature: The hypothetical sharply distinguishes information available through abstract natural reason from contingent historical and biological information required for the claim that Jesus was divine and human, thereby testing the affirmative’s asserted accessibility. Principal limitation: The example does not exclude natural reason from yielding a generic divine particularity or embodiment concept, and the unusual hypothetical setting requires careful separation between what cannot be named and what cannot be conceptually inferred. Live burden: The skeptical side must show that Christianity’s identifying historical content cannot follow from metaphysical structure alone, while conceding whatever abstract conclusions reason could genuinely support. Locked score: The very strong band reflects precise diagnostic relevance, appropriately limited questioning, strong representational charity, and decisive exposure of the access gap, tempered only because the hypothetical establishes missing historical information rather than disproving every generic incarnational metaphysics.",
+      "originalWords": 137,
+      "originalCharacters": 1098,
+      "excessWordsAboveAcceptanceMaximum": 7,
+      "lockedMove": {
+        "moveId": "con-reason-incarnation-access-gap",
+        "sectionId": "trinity-reason-revelation",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Natural reasoning cannot disclose the historical and incarnational claim that Jesus was divine and human to beings with no knowledge of humanity or earthly events.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "44:34",
+        "sourceSpan": {
+          "startEvent": 1184,
+          "endEvent": 1234,
+          "startMs": 2674680,
+          "endMs": 2791859
+        },
+        "sourceExcerpt": "Jesus uh is God because God is his father and is human because his mother was human even though they have no idea what humans they wouldn't have to say human and uh specifically they would have to understand that he could have particular concrete existence and I would say that would be the experience of God for example in all of us I think I think Isaac basheva Singer said uh there is a Divine",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 396
+        },
+        "attributionConfidence": "high",
+        "audioVerified": true,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-reason-revelation-gap"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-trinity-natural-reason",
+            "pro-logical-moments-trinity"
+          ],
+          "components": [
+            {
+              "componentId": "con-reason-incarnation-access-gap-component-01",
+              "targetMoveId": "pro-trinity-natural-reason",
+              "text": "Whether natural reason alone can disclose the incarnational claim that Jesus is divine and human.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-reason-incarnation-access-gap-component-02",
+              "targetMoveId": "pro-logical-moments-trinity",
+              "text": "Whether abstract logical particularity identifies the historical person Jesus.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The alien hypothetical diagnoses that abstract reason lacks the historical and human information required for incarnation claims.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "It explicitly contacts the decisive access demand and states why the historical identification cannot follow."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts the decisive access demand and states why the historical identification cannot follow."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The hypothetical beings' informational limitations and the targeted historical-incarnational conclusion are sufficiently clear and bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The questioning form appropriately tests what could be inferred without claiming that no abstract divine particularity could ever be reasoned to."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Natural reason might yield a generic divine particularity without yielding the earthly name, biography, or species term 'human.'",
+          "decisiveQualification": "That generic result would not establish the historical Christian claim that Jesus was divine and human."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within subsidiary-tier contacts, it directly and strongly advances the con reason-revelation gap at the incarnation claim."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt asks how beings unfamiliar with humans could infer that Jesus is divine and human, exposing dependence on contingent earthly information.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-infer-divine-self-knowledge.critique",
+      "moveId": "pro-infer-divine-self-knowledge",
+      "originalCritique": "Strongest feature: The reply correctly distinguishes exhaustive comprehension from limited rational inference, preventing human cognitive limitation from automatically blocking every justified conclusion about how a perfect mind knows itself. Principal limitation: The valid distinction does not license the specific falsification-driven process attributed to God, and the account leaves both divine self-knowledge and falsifiable self-relation underspecified while offering insufficient independent warrant for their connection. Live burden: The affirmative must derive the particular process from acknowledged divine attributes, distinguish inference from speculative projection, and show why perfect self-knowledge involves more than immediate knowledge of perfection. Locked score: The mixed band recognizes a useful epistemological clarification, full contact with the objection, and comparatively strong relevance, but retains substantial concern about underdetermination, unstable process language, limited evidence, and failure to establish the positive divine attribution.",
+      "originalWords": 131,
+      "originalCharacters": 1081,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-infer-divine-self-knowledge",
+        "sectionId": "perfect-divine-mind",
+        "side": "pro",
+        "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+        "moveKind": "reply",
+        "proposition": "Humans need not comprehend God's complete self-knowledge to infer necessary aspects of how God knows himself, and falsifiable self-relation can support rather than undermine Christ's divinity.",
+        "importance": 3,
+        "finalScore": 74,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "64:12",
+        "sourceSpan": {
+          "startEvent": 1704,
+          "endEvent": 1763,
+          "startMs": 3852420,
+          "endMs": 4000200
+        },
+        "sourceExcerpt": "in his belief he thinks that the absolute knowledge of a mind the most perfect being that would necessarily have to exist well that is incomprehensible to a human so I don't but yet he still believes in God and actually argues if you can rationally believe in God so do you see the the reason that he does this is because it's not that you need to know what God knows about himself",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": true,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-perfect-mind-objection"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-perfect-mind-no-self-testing",
+            "con-perfect-mind-cannot-doubt"
+          ],
+          "components": [
+            {
+              "componentId": "pro-infer-divine-self-knowledge-component-01",
+              "targetMoveId": "con-perfect-mind-no-self-testing",
+              "text": "Whether limited humans can infer anything about the manner of God's perfect self-knowledge.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-infer-divine-self-knowledge-component-02",
+              "targetMoveId": "con-perfect-mind-cannot-doubt",
+              "text": "Whether falsifiable self-relation supports rather than contradicts Christ's divinity.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply distinguishes complete comprehension from limited inference and restates falsifiable self-relation as compatible with divinity.",
+          "responsivenessWithinClass": {
+            "value": 66,
+            "rationale": "It contacts both objections but largely reframes human access without resolving the no-self-testing inference."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "It contacts both objections but largely reframes human access without resolving the no-self-testing inference."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comprehension-inference distinction is clear, but how God knows and falsifiable self-relation remain underspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Human limitation is acknowledged, but the positive inference about divine self-knowledge receives insufficient warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Humans may infer that a perfect mind knows itself without inferring any doubtful or falsification-driven process.",
+          "decisiveQualification": "Limited comprehension does not license the particular process attributed to God; that attribution still needs an argument."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "Within central-tier contacts, it addresses the divine-coherence dispute but does not fully defeat the perfect-mind objection."
+          },
+          "representationalCharity": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (65 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says humans need not possess God's absolute self-knowledge to infer how God knows himself and invokes Aquinas as allowing rational belief despite incomprehensibility.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

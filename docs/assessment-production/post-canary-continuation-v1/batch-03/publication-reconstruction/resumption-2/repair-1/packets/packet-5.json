@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-2-debate-157-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-2-debate-157-repair-1",
+  "packetIndex": 5,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "157",
+  "debateId": "dillahunty-howitt-christianity-true-2023",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-2/outputs/debate-157.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-157.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-timeless-creation.critique",
+      "moveProse.con-creator-relations-contingency.critique"
+    ],
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-timeless-creation.critique",
+      "moveId": "pro-timeless-creation",
+      "originalCritique": "Strongest feature: The reply explicitly distinguishes timelessness from everlasting duration and offers a coherent framework in which divine self-relation, willing, and continual sustenance lack temporal succession or improvement. Principal limitation: The assertion that God’s timeless self-relation necessarily produces this reality is not defended, and the response supplies relevant creation material without contacting the decisive earlier objection that perfect self-knowledge requires no doubtful or corrective testing. Live burden: The affirmative must explain how a contingent world follows from timeless divine activity without becoming necessary, clarify the causal status of divine knowledge, and address relational contingency directly. Locked score: The mixed band reflects careful temporal qualification, recognizable theological coherence, and relevant support for divine transcendence, counterbalanced by materially overstated causal necessity, incomplete responsiveness, limited warrant, and unresolved dependence between perfect God and contingent creation.",
+      "originalWords": 132,
+      "originalCharacters": 1076,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-timeless-creation",
+        "sectionId": "creation-transcendence-logic",
+        "side": "pro",
+        "speaker": "Lewis Howitt (PerspectivePhilosophy)",
+        "moveKind": "reply",
+        "proposition": "God's timeless self-relation eternally includes the Trinity and causally sustains reality, so creation does not represent a temporal improvement or change in divine perfection.",
+        "importance": 2,
+        "finalScore": 71,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "75:51",
+        "sourceSpan": {
+          "startEvent": 2010,
+          "endEvent": 2039,
+          "startMs": 4551560,
+          "endMs": 4628580
+        },
+        "sourceExcerpt": "remember like it is eternality but it's not Eternal as an everlasting but as in timelessness the absolute relation of God to himself is what necessarily produces this reality which is why Thomas Aquinas would say the knowledge of God is actually the most causative aspect of God it is what causes his willing it is the the constant creation or sustainance or sustenance of reality",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 66,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-divine-coherence"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "con-perfect-mind-no-self-testing"
+          ],
+          "components": [
+            {
+              "componentId": "pro-timeless-creation-component-01",
+              "targetMoveId": "con-perfect-mind-no-self-testing",
+              "text": "Whether timeless divine perfection can include an explanatory self-relation without deliberative process.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply offers relevant material about timeless self-relation and causative knowledge, but it does not contact the decisive claim that perfection requires no self-testing.",
+          "responsivenessWithinClass": {
+            "value": 52,
+            "rationale": "Within relevant nonanswers, it bears on divine process generally but answers a creation-and-change issue rather than the targeted no-testing inference."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "Within relevant nonanswers, it bears on divine process generally but answers a creation-and-change issue rather than the targeted no-testing inference."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between everlasting duration and timelessness is explicit, and temporal priority is carefully qualified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The move strongly asserts that God's timeless self-relation necessarily produces reality without defending the causal necessity or contingent-world alternative."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "Creedal and Thomistic references identify a tradition, but do not independently establish the asserted necessary causal relation."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "Within central-tier contacts, it materially supports divine coherence concerning timeless creation, though it leaves contingent truths underexplained."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The passage develops its own timeless-creation account without directly presenting a competing account of divine causal relations."
+          }
+        },
+        "evidenceBasis": "The excerpt corrects temporal language about divine priority, describes God's relation to himself as timeless, and says that relation necessarily produces reality.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-creator-relations-contingency.critique",
+      "moveId": "con-creator-relations-contingency",
+      "originalCritique": "Strongest feature: The reply carefully distinguishes intrinsic necessary attributes from relational descriptions arising through contingent creation and accurately identifies that the preceding answer did not address whether creator status introduces contingency or dependence. Principal limitation: It presents the concern with explicit uncertainty and does not establish whether relational properties are real intrinsic changes, merely extrinsic descriptions, or compatible Cambridge relations lacking any alteration within God. Live burden: The skeptical side must show what kind of dependence creator relations entail and why an extrinsic-relations account cannot preserve divine necessity alongside freely contingent creation. Locked score: The very strong band reflects excellent diagnostic contact, precise conceptual separation, commendable calibration, substantial charity, and direct relevance to divine coherence, while recognizing that the move identifies an unanswered problem rather than completing a metaphysical demonstration of divine contingency.",
+      "originalWords": 133,
+      "originalCharacters": 1064,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "con-creator-relations-contingency",
+        "sectionId": "creation-transcendence-logic",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "An account of God's necessary attributes does not answer whether being creator and standing in relations to creation gives God contingent properties.",
+        "importance": 2,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "93:21",
+        "sourceSpan": {
+          "startEvent": 2466,
+          "endEvent": 2487,
+          "startMs": 5601900,
+          "endMs": 5654940
+        },
+        "sourceExcerpt": "nothing in that answer addressed the actual question um the actual question was about the notion that God seems contingent because he's the Creator and has a relationship with creation um that I don't necessarily know that that's uh correct but that was what the issue is and I would say that the thing that makes him more contingent is this notion that Jesus the human air quotes",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-divine-coherence"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-timeless-creation"
+          ],
+          "components": [
+            {
+              "componentId": "con-creator-relations-contingency-component-01",
+              "targetMoveId": "pro-timeless-creation",
+              "text": "Whether timeless necessary attributes answer the contingency of God's creator relation to creation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly identifies the unanswered distinction between intrinsic necessary attributes and contingent relational properties arising from being creator.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "Within diagnostic defeats, it accurately isolates the missing component, though it cautiously declines to endorse the audience premise outright."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it accurately isolates the missing component, though it cautiously declines to endorse the audience premise outright."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Necessary attributes, creator status, and relations to creation are clearly distinguished, with explicit uncertainty about the objection's final correctness."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker carefully presents the contingency concern as an unanswered issue rather than claiming its truth without argument."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "God's intrinsic nature may be necessary while relational descriptions such as creator vary extrinsically with contingent creation.",
+          "decisiveQualification": "The account must explain whether such extrinsic relations introduce any real dependence or contingent property in God."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within central-tier contacts, it directly attacks divine coherence concerning contingent creator relations and identifies the completion criterion."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt states that the prior answer did not address whether God's creator status and relation to creation make God contingent, while withholding final endorsement.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
