@@ -1,0 +1,1761 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "186",
+  "debateId": "huemer-sapolsky-free-will-determinism-2024",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-libertarian-control",
+      "side": "pro",
+      "description": "Establish that people sometimes face genuinely available alternatives, exercise control over which alternative occurs, and thereby possess the kind of freedom capable of grounding responsibility.",
+      "successCriteria": "The route succeeds by supporting alternatives and agent control, answering the inference from pervasive causal influence to exhaustive determination, and connecting that freedom to deliberation, normative requirements, and desert-sensitive responsibility.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-freedom-responsibility",
+        "tier": "motion",
+        "description": "Show that genuine alternatives and control sometimes exist and can justify responsibility for the action selected."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-alternatives",
+          "tier": "central",
+          "description": "Explain why causal influence, probabilistic pressure, and reason-giving explanation need not eliminate every genuinely available alternative."
+        },
+        {
+          "bridgeId": "bridge-pro-central-epistemic-case",
+          "tier": "central",
+          "description": "Supply a defensible basis for believing in freedom while addressing challenges to intuition, appearances, deliberation, and reason-responsive belief."
+        },
+        {
+          "bridgeId": "bridge-pro-central-responsibility",
+          "tier": "central",
+          "description": "Show why responsibility and normative practices require feasible alternatives or desert beyond purely forward-looking behavioral management."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-concepts",
+          "tier": "subsidiary",
+          "description": "Clarify the incompatibilist and possible compatibilist concepts at stake when control, fixed history, and the ability to do otherwise are compared."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-explanation",
+          "tier": "subsidiary",
+          "description": "Explain how reasons can make free action intelligible even if the final selection is not determined by a further cause."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-causal-determination",
+      "side": "con",
+      "description": "Establish that behavior remains within an integrated chain of biological and environmental causes, leaving no agent-controlled selection among genuinely available alternatives and no desert-based responsibility.",
+      "successCriteria": "The route succeeds by connecting multi-timescale causal explanation to the exclusion of libertarian control, rebutting intuition-based and practical objections, and deriving responsibility practices that do not depend on retribution or earned moral entitlement.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-determination-responsibility",
+        "tier": "motion",
+        "description": "Show that antecedent causation excludes genuine alternative control and therefore cannot justify desert-based responsibility."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-causal-chain",
+          "tier": "central",
+          "description": "Integrate immediate, neural, physiological, developmental, genetic, cultural, and historical causes into a continuous account of behavior."
+        },
+        {
+          "bridgeId": "bridge-con-central-evidence-burden",
+          "tier": "central",
+          "description": "Explain why expanding mechanistic evidence and the absence of causally independent action undermine reliance on experienced freedom."
+        },
+        {
+          "bridgeId": "bridge-con-central-practical-compatibility",
+          "tier": "central",
+          "description": "Show how learning, intervention, deliberative inputs, and behavioral change can operate causally without agent-originating freedom."
+        },
+        {
+          "bridgeId": "bridge-con-central-responsibility-revision",
+          "tier": "central",
+          "description": "Connect causal explanation to rejection of retribution and differential desert while preserving forward-looking social responses."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-indeterminacy",
+          "tier": "subsidiary",
+          "description": "Distinguish agent control from randomness so that indeterminacy does not itself establish freely authored choice."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-moral-emotions",
+          "tier": "subsidiary",
+          "description": "Account for gratitude and other responsibility-adjacent practices through evolutionary and mechanistic functions without presupposing free choice."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-causal-explanation-and-alternatives",
+      "title": "Causal explanation, influence, and genuinely available alternatives",
+      "weightPercent": 27,
+      "rationale": "This issue tests whether the integrated biological and environmental causal account exhausts the explanation of conduct or merely influences choices while leaving some alternatives available."
+    },
+    {
+      "sectionId": "section-evidence-and-burden-of-proof",
+      "title": "Intuition, scientific evidence, and the burden of proof",
+      "weightPercent": 20,
+      "rationale": "This issue determines whether experienced freedom and intellectual appearances supply a rational default, or whether mechanistic discoveries and historical error require withholding or revising that belief."
+    },
+    {
+      "sectionId": "section-control-deliberation-and-reasons",
+      "title": "Control, deliberation, change, and reason-responsive agency",
+      "weightPercent": 19,
+      "rationale": "This issue addresses whether deliberation, advice, belief formation, learning, and reasons can constitute meaningful control or remain fully intelligible as determined causal processes."
+    },
+    {
+      "sectionId": "section-responsibility-desert-and-punishment",
+      "title": "Responsibility, moral desert, punishment, and humane practice",
+      "weightPercent": 24,
+      "rationale": "This issue connects the metaphysical dispute to the motion's responsibility clause by testing retribution, innocence, entitlement, blame, and forward-looking approaches to harmful behavior."
+    },
+    {
+      "sectionId": "section-concepts-explanation-and-indeterminacy",
+      "title": "Concepts of freedom, explanatory stopping points, and indeterminacy",
+      "weightPercent": 10,
+      "rationale": "This issue clarifies incompatibilist and compatibilist definitions, whether choice can terminate explanation at an agent's reasons, and why randomness alone may fail to provide agency."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-causal-multiscale-antecedents",
+      "sectionId": "section-causal-explanation-and-alternatives",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "constructive",
+      "proposition": "Behavioral choices arise from causal influences extending from immediate cues and physiology through development, genes, culture, and deep history.",
+      "sourceSpan": {
+        "startEvent": 92,
+        "endEvent": 263
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This uninterrupted opening-statement sequence remains in Sapolsky's voice and develops the empirical case he announced at the outset.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-causal-chain"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the con route's multiscale causal foundation and therefore has no earlier opposing target to answer.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it develops a broad and concrete causal account across several timescales."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The causal-influence proposition is clear, though the limits of what influence alone establishes remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The examples strongly support pervasive influence without themselves being presented as a complete proof of determinism."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The progression across immediate, developmental, genetic, cultural, and historical causes is internally consistent and cumulative."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The move gives numerous concrete biological and developmental examples, with a bounded gap concerning representativeness and exhaustiveness."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly develops the indispensable central bridge requiring an integrated multiscale causal chain."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move builds an affirmative causal case rather than interpreting a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The span links immediate cues, physiology, childhood adversity, genes, culture, and deeper history as antecedents of behavior.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-causal-seamless-arc",
+      "sectionId": "section-causal-explanation-and-alternatives",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "constructive",
+      "proposition": "Biological and environmental influences form a seamless causal arc that leaves no explanatory gap in which freely controlled alternatives operate.",
+      "sourceSpan": {
+        "startEvent": 264,
+        "endEvent": 302
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Sapolsky explicitly synthesizes his preceding examples and closes his opening statement before the moderator resumes control.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-con-motion-determination-responsibility"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive synthesis advances the con motion route directly and has no earlier opposing locked move requiring a reply.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it clearly states the route conclusion but compresses the exclusion inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The seamless-arc claim is recoverable, but the step from pervasive influence to no available alternatives lacks a stated qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical claim that no room remains exceeds what the preceding examples of interaction and influence alone establish."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Pervasive biological and environmental influence may constrain action without fully determining every choice.",
+        "decisiveQualification": "The move must establish causal exhaustiveness, not merely extensive causal contribution."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The conclusion follows only if pervasive causal influence is exhaustive, a central bridge asserted rather than defended."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The multiscale examples support extensive influence, but no representative evidence establishes an exceptionless seamless arc."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The proposition directly asserts the con motion-level exclusion of free alternative control."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The synthesis does not squarely address the strongest distinction between influence and exhaustive determination."
+        }
+      },
+      "evidenceBasis": "Sapolsky explicitly synthesizes biological and environmental influences into a seamless arc leaving no room for free will.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-free-will-alternatives-control",
+      "sectionId": "section-causal-explanation-and-alternatives",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "Free will consists in sometimes having multiple possibilities available and exercising control over which of those possibilities is realized.",
+      "sourceSpan": {
+        "startEvent": 362,
+        "endEvent": 426
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator introduces Huemer's opening statement, and Huemer explicitly presents his understanding of the disputed thesis and its implications.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "bridge-pro-motion-freedom-responsibility"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move defines the motion-level pro thesis of genuine alternatives and agent control, without an earlier reply obligation.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it states the central thesis clearly but mainly defines rather than independently supports it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move explicitly limits the thesis to sometimes having alternatives and control over which is realized."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "As an articulation of the thesis rather than an empirical demonstration, its limited existential force is appropriately framed."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The definition consistently connects multiple available possibilities with control over the realized outcome."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The move provides conceptual clarification but little independent support that the defined condition is actually instantiated."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It states the exact motion-level pro requirement of genuine alternatives and control."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The passage states Huemer's own conception and does not depend on construing an opposing alternative."
+        }
+      },
+      "evidenceBasis": "Huemer says free will means more than one action is available and it is up to the person which occurs.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-practices-presuppose-alternatives",
+      "sectionId": "section-responsibility-desert-and-punishment",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "Deliberation, advice, evaluation, reward, and retributive punishment would not make sense if people never had alternatives available to them.",
+      "sourceSpan": {
+        "startEvent": 427,
+        "endEvent": 462
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is a continuous part of Huemer's prepared opening and uses his stated hard-determinist framework throughout.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-responsibility"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move argues from familiar deliberative and responsibility practices and has no earlier opposing target to answer.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it offers several connected practical implications, although their common presupposition is contestable."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The examples are clear, but the scope of what would cease to make sense under every deterministic account is underqualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that these practices cannot make sense without alternatives omits live forward-looking and compatibilist explanations."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Deliberation, advice, reward, and punishment can function as causal inputs without presupposing libertarian alternatives.",
+        "decisiveQualification": "Retributive desert is more dependent on alternatives than advice, deliberation, or forward-looking incentives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The inference relies on the disputed premise that practical and normative reasons require categorical alternative possibilities."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The practices are relevant examples, but their existence does not by itself verify the claimed libertarian presupposition."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It centrally advances the responsibility bridge by connecting alternatives to retribution and normative practices."
+        },
+        "representationalCharity": {
+          "value": 60,
+          "rationale": "The move groups practices with importantly different dependence on alternative possibilities and omits that qualification."
+        }
+      },
+      "evidenceBasis": "Huemer cites reward, retributive punishment, deliberation, advice, and evaluation as practices presupposing alternatives.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-determinism-self-defeats-reasons",
+      "sectionId": "section-control-deliberation-and-reasons",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "constructive",
+      "proposition": "Arguing for or rationally accepting determinism is self-defeating because argument and rational belief invoke reasons, while reasons to act require that the action be both possible and avoidable.",
+      "sourceSpan": {
+        "startEvent": 463,
+        "endEvent": 579
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer labels and develops the self-defeat portion of his opening, distinguishes prior formulations, and then presents his own connected arguments.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-epistemic-case"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents an epistemic self-defeat argument against determinism and has no earlier opposing reply target.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "Within constructive moves, it develops a recognizable inference but leaves its pivotal reasons premise insufficiently defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The inference is recoverable, but reasons for belief and reasons for action are treated too interchangeably."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical self-defeat conclusion depends on a controversial account of reasons that is asserted without qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Determined agents may still respond to reasons when reasons are among the causes of belief and action.",
+        "decisiveQualification": "Causal determination does not obviously eliminate normative or explanatory reason relations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 58,
+          "rationale": "The core inference equivocates between inability to do otherwise, absence of practical reasons, and absence of epistemic reasons."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The argument supplies an explicit chain but offers little support for its crucial claim that determinism eliminates all reasons."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central epistemic bridge by challenging the rational assertibility of determinism."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The move does not address the strongest reason-responsive deterministic account before declaring all argument self-defeating."
+        }
+      },
+      "evidenceBasis": "Huemer argues that reasons require both possibility and avoidability, then applies that premise to arguments for determinism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evidence-intuition-unreliable",
+      "sectionId": "section-evidence-and-burden-of-proof",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "reply",
+      "proposition": "The felt obviousness of freely choosing is not reliable evidence because compelling intuitive explanations have repeatedly yielded to mechanistic accounts.",
+      "sourceSpan": {
+        "startEvent": 606,
+        "endEvent": 726
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator assigns Sapolsky the rebuttal, and he explicitly identifies Huemer's reliance on intuition before supplying counterexamples.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-epistemic-case"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-free-will-alternatives-control"
+        ],
+        "components": [
+          {
+            "componentId": "con-evidence-intuition-unreliable-component-01",
+            "targetMoveId": "pro-free-will-alternatives-control",
+            "text": "Whether the apparent availability and control described by Huemer provide evidence that such freedom exists.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the evidential force of apparent free choice by comparing confident intuitions with historically displaced explanations, though it does not directly disprove alternatives.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the decisive evidential component but does not answer the metaphysical claim itself."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The caution about intuition is clear, though the relevant class of intuitions and degree of unreliability remain broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Historical errors warrant caution, but the analogy does not establish that introspective appearances of agency are probably mistaken."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some intellectual appearances may be defeasible yet remain prima facie justified absent specific defeating evidence.",
+        "decisiveQualification": "Historical intuitive error does not make every appearance evidentially worthless."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The skeptical induction is coherent, with a material bridge from past intuitive errors to this particular appearance."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Multiple historical examples support general caution, but their comparability to experienced agency is incompletely defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central pro epistemic bridge concerning justification from apparent freedom."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The reply recognizes intuition as compelling but insufficiently distinguishes fallible evidence from wholly unreliable evidence."
+        }
+      },
+      "evidenceBasis": "Sapolsky invokes witchcraft and other displaced intuitive explanations to argue for suspicion toward the felt obviousness of choice.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-control-causal-change",
+      "sectionId": "section-control-deliberation-and-reasons",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "reply",
+      "proposition": "Determinism permits behavioral change because learning and changed conditions mechanistically alter organisms and their subsequent responses.",
+      "sourceSpan": {
+        "startEvent": 727,
+        "endEvent": 764
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains within Sapolsky's designated rebuttal and explicitly addresses an implication he attributes to critics of hard incompatibilism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-practical-compatibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-practices-presuppose-alternatives",
+          "pro-determinism-self-defeats-reasons"
+        ],
+        "components": [
+          {
+            "componentId": "con-control-causal-change-component-01",
+            "targetMoveId": "pro-practices-presuppose-alternatives",
+            "text": "Whether advice, deliberation, and behavioral change make sense only if libertarian alternatives are available.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-control-causal-change-component-02",
+            "targetMoveId": "pro-determinism-self-defeats-reasons",
+            "text": "Whether reason-responsive change is impossible under deterministic causation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explains how conditioning and changed inputs alter later behavior, directly supplying a causal account of change and indirectly preserving a role for reasons.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within full answers, it explicitly contacts the practical-change demand and supplies a clear alternative mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between choosing to change and being changed through mechanisms is explicit and consistently maintained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Mechanistic change is well illustrated, though the stronger claim that change never involves agent control remains under-supported."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Learning can be mechanistically implemented while also constituting meaningful agent-level control.",
+        "decisiveQualification": "Compatibility with mechanism does not alone establish the absence of control."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The causal explanation consistently shows why determinism need not imply behavioral stasis or insensitivity to inputs."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Conditioning and rapid behavioral updates provide concrete support, with a remaining bridge to universal noncontrol."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable con bridge explaining practical change within causal determination."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply fairly answers the claim that determinism precludes change but does not fully address compatibilist agent-level control."
+        }
+      },
+      "evidenceBasis": "Sapolsky uses conditioning and altered threat responses to show that mechanistic inputs can produce rapid behavioral change.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-influence-not-determination",
+      "sectionId": "section-causal-explanation-and-alternatives",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Examples of biological or environmental influence do not establish complete determination, and cases involving impairment do not eliminate freedom in ordinary, unimpaired decisions.",
+      "sourceSpan": {
+        "startEvent": 773,
+        "endEvent": 820
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Huemer the rebuttal, and Huemer expressly identifies examples from Sapolsky's opening before challenging their inferential force.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-causal-chain"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-multiscale-antecedents",
+          "con-causal-seamless-arc"
+        ],
+        "components": [
+          {
+            "componentId": "pro-influence-not-determination-component-01",
+            "targetMoveId": "con-causal-multiscale-antecedents",
+            "text": "Whether the cited biological and environmental influences establish complete causal determination of ordinary choices.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-influence-not-determination-component-02",
+            "targetMoveId": "con-causal-seamless-arc",
+            "text": "Whether impairment cases justify the inference that no ordinary unimpaired decision leaves alternatives.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the inference from influence to exhaustive determination and from impaired cases to ordinary cases as unsupported, stating that the examples do not establish the conclusion.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within diagnostic defeats, it explicitly isolates two decisive inferential gaps and states their defeating consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The reply clearly distinguishes causal influence from complete determination and impaired from ordinary cases."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited conclusion that the examples do not establish determinism is proportionate to the identified inferential gaps."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The multiscale examples may be intended cumulatively rather than as isolated impairment cases.",
+        "decisiveQualification": "Even cumulative influence requires an additional exhaustiveness premise to entail determination."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The distinction between influence and determination directly defeats an invalid entailment without claiming influence is absent."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The source-grounded contrast with ordinary unimpaired choice is apt, though the prevalence of impairment examples is not systematically documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central con causal-chain bridge at its inference to exhaustive determination."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply preserves the cumulative causal case while accurately identifying the missing step to exhaustive determination."
+        }
+      },
+      "evidenceBasis": "Huemer labels the influence-to-determination step and the move from impaired cases to ordinary cases as unwarranted inferences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-appearances-ground-justification",
+      "sectionId": "section-evidence-and-burden-of-proof",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Intellectual appearances are indispensable sources of justification, and challenges to free will themselves rely on intuitive and logical appearances.",
+      "sourceSpan": {
+        "startEvent": 821,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer announces a response to Sapolsky's discussion of intuition and continues that epistemological reply through the final delivered context row.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-evidence-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evidence-intuition-unreliable"
+        ],
+        "components": [
+          {
+            "componentId": "pro-appearances-ground-justification-component-01",
+            "targetMoveId": "con-evidence-intuition-unreliable",
+            "text": "Whether historical errors show that intellectual appearances cannot provide prima facie justification for free will.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply argues that reasoning itself depends on intellectual appearances and therefore wholesale rejection of appearances would undermine the skeptical argument's own justificatory basis.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within diagnostic defeats, it directly targets the skeptical premise and states the self-undermining consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The justificatory claim is clear, though intuition, appearance, and logical seeming are not fully differentiated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Some reliance on appearances is plausibly indispensable, but that does not by itself validate the specific appearance of free will."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptical argument challenges a class of intuitions without rejecting every intellectual appearance or logical seeming.",
+        "decisiveQualification": "Selective skepticism can remain coherent if a relevant reliability difference is supplied."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The transcendental-style response is coherent, with a bounded gap from indispensable appearances generally to this appearance specifically."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The dependence of reasoning on appearances is plausibly illustrated but not enough to establish the reliability of free-will appearances."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the con central evidence bridge by challenging its basis for discounting experienced freedom."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The reply exposes a burden on selective skepticism but sometimes treats it as wholesale rejection of appearances."
+        }
+      },
+      "evidenceBasis": "Huemer defines intuition as intellectual appearance and argues that all justification, including logical challenge, ultimately relies on appearances.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-responsibility-retribution-unjustified",
+      "sectionId": "section-responsibility-desert-and-punishment",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "reply",
+      "proposition": "Practical difficulty imagining life without free-will-based praise and blame does not make retribution or differential moral entitlement justified.",
+      "sourceSpan": {
+        "startEvent": 943,
+        "endEvent": 998
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly gives Sapolsky the floor, and the continuous turn states his mechanistic orientation and consequences for punishment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-pro-central-responsibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-practices-presuppose-alternatives"
+        ],
+        "components": [
+          {
+            "componentId": "con-responsibility-retribution-unjustified-component-01",
+            "targetMoveId": "pro-practices-presuppose-alternatives",
+            "text": "Whether practical dependence on praise, blame, punishment, and reward establishes their retributive moral justification.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply distinguishes difficulty functioning without familiar practices from their moral justification and expressly rejects retribution and unequal entitlement.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it explicitly contacts the inference from practical necessity to retributive justification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly separates practical feasibility from moral justification and focuses its conclusion on retribution and entitlement."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Sapolsky candidly acknowledges practical uncertainty, though the asserted moral conclusion still relies on his contested deterministic premise."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Huemer's practices argument may concern conceptual presupposition rather than an appeal to social inconvenience.",
+        "decisiveQualification": "Showing that change is difficult does not answer whether deliberation or desert conceptually requires alternatives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The distinction between feasibility and justification is valid, but the positive moral conclusion depends on premises supplied elsewhere."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The move offers a principled assertion and practical concession but little independent support for rejecting all differential entitlement."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central pro responsibility bridge concerning retributive desert."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The reply strongly answers a practical-collapse objection but partly recasts the broader presupposition argument as mere anxiety."
+        }
+      },
+      "evidenceBasis": "Sapolsky concedes uncertainty about social functioning while denying that difficulty can justify blame, retribution, or unequal entitlement.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-innocent-framing-desert-objection",
+      "sectionId": "section-responsibility-desert-and-punishment",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Deterrence and incapacitation alone cannot explain why framing an innocent ex-convict is wrong while imposing the same punishment on the actual offender is permissible.",
+      "sourceSpan": {
+        "startEvent": 999,
+        "endEvent": 1060
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn begins with Huemer answering Sapolsky's punishment claim and develops one continuous framing thought experiment to its stated intuitive conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-responsibility-revision"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-responsibility-retribution-unjustified"
+        ],
+        "components": [
+          {
+            "componentId": "pro-innocent-framing-desert-objection-component-01",
+            "targetMoveId": "con-responsibility-retribution-unjustified",
+            "text": "Whether purely forward-looking deterrence and incapacitation can justify punishing offenders without desert.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The framing case directly tests the adequacy of forward-looking punishment by holding deterrent effects constant while varying guilt, thereby exposing an innocence constraint.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly contacts the justificatory basis for nonretributive punishment with a focused counterexample."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The thought experiment clearly contrasts innocent and guilty subjects under an otherwise similar forward-looking rationale."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The case strongly challenges simple deterrence accounts, but sophisticated forward-looking theories can independently prohibit framing."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A nonretributive theory can reject framing because of rights, rule consequences, legitimacy, or epistemic safeguards.",
+        "decisiveQualification": "The example defeats deterrence alone, not every non-desert account of punishment."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The controlled comparison effectively shows that deterrent utility alone cannot capture the intuitive difference between guilty and innocent punishment."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The thought experiment is probative conceptual evidence, though its conclusion is narrower than a general defense of retribution."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the con central responsibility-revision bridge by testing its replacement rationale for punishment."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The objection targets the simplest forward-looking rationale but omits several strong innocence-protecting alternatives."
+        }
+      },
+      "evidenceBasis": "Huemer contrasts punishing an actual offender with framing an innocent ex-convict when both could generate similar deterrence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-responsibility-humane-causal-revision",
+      "sectionId": "section-responsibility-desert-and-punishment",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "reply",
+      "proposition": "Scientific causal explanations have repeatedly reduced blame and punishment while enabling more humane treatment rather than causing social collapse.",
+      "sourceSpan": {
+        "startEvent": 1130,
+        "endEvent": 1163
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response follows Huemer's explicit defense of retribution and uses a continuous historical series of causal reinterpretations attributed to Sapolsky.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-responsibility-revision"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-practices-presuppose-alternatives",
+          "pro-innocent-framing-desert-objection"
+        ],
+        "components": [
+          {
+            "componentId": "con-responsibility-humane-causal-revision-component-01",
+            "targetMoveId": "pro-practices-presuppose-alternatives",
+            "text": "Whether subtracting responsibility and retribution makes humane social practice incoherent or causes practical collapse.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-responsibility-humane-causal-revision-component-02",
+            "targetMoveId": "pro-innocent-framing-desert-objection",
+            "text": "Whether causal revision can preserve humane treatment without relying on retributive desert.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Historical examples directly answer collapse concerns by showing humane causal reinterpretation, but they do not address the framing case's specific innocent-versus-guilty constraint.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "Within partial answers, it contacts the decisive social-practice component but leaves the later innocence objection unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The historical claim is clear, with an implicit limitation from particular medical cases to broader responsibility revision."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The examples support humane gains from reduced blame but do not establish that eliminating desert generally will have similar consequences."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Medicalizing conditions may reduce misplaced blame without eliminating responsibility for ordinary intentional wrongdoing.",
+        "decisiveQualification": "The analogy requires showing that the relevant causal discoveries generalize across ordinary agency."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The historical induction is coherent, with a material bridge from selected medical revisions to responsibility practices generally."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Epilepsy, schizophrenia, and learning difficulties offer concrete support, though alternative explanations and generalizability remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con bridge replacing retribution with humane causal responses."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply presents genuine humane precedents but compresses the contested generalization from pathology to ordinary wrongdoing."
+        }
+      },
+      "evidenceBasis": "Sapolsky cites epilepsy, schizophrenia, and reading difficulty as cases where causal understanding reduced blame and improved treatment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evidence-no-independent-neuron",
+      "sectionId": "section-evidence-and-burden-of-proof",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "reply",
+      "proposition": "No neural action has been shown independent of hormones, genes, development, and environment, so expanding causal knowledge warrants caution about blame and deserved advantage.",
+      "sourceSpan": {
+        "startEvent": 1283,
+        "endEvent": 1381
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Sapolsky answers Huemer's skeptical-induction objection, issues the neuron-independence challenge, and carries its ethical implications through the end of his turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-evidence-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-appearances-ground-justification",
+          "pro-influence-not-determination"
+        ],
+        "components": [
+          {
+            "componentId": "con-evidence-no-independent-neuron-component-01",
+            "targetMoveId": "pro-appearances-ground-justification",
+            "text": "Whether appearances of freedom retain sufficient warrant despite expanding mechanistic evidence about neural action.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-evidence-no-independent-neuron-component-02",
+            "targetMoveId": "pro-influence-not-determination",
+            "text": "Whether dependence on multiple antecedents establishes exhaustive determination rather than pervasive influence.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The challenge supplies contrary mechanistic material relevant to appearances, but demanding a neuron independent of all antecedents does not contact Huemer's influence-versus-determination distinction.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "Within partial answers, it contacts the evidential challenge but misses the decisive distinction concerning causal exhaustiveness."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The independence challenge is clear, but its scope shifts from neural dependence to blame and deserved social advantage."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Absence of causally independent neurons supports caution, but independence from every cause is not a necessary condition of all agency."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Libertarian control need not require a neuron wholly independent of hormones, genes, development, and environment.",
+        "decisiveQualification": "Causal dependence is compatible with influence that falls short of determining the final selection."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 66,
+          "rationale": "The inference risks treating causal dependence as equivalent to exhaustive determination and then extending it to desert."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The listed neural dependencies are concrete and plausible, but the universal negative and ethical extension remain insufficiently verified."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the con central evidence bridge by opposing experienced freedom with mechanistic dependence."
+        },
+        "representationalCharity": {
+          "value": 59,
+          "rationale": "The challenge imposes a stronger independence condition than Huemer's stated alternative-control thesis requires."
+        }
+      },
+      "evidenceBasis": "Sapolsky challenges opponents to identify neural action independent of hormones, food, genes, development, and environmental connectivity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-free-will-appearance-default",
+      "sectionId": "section-evidence-and-burden-of-proof",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Without decisive scientific evidence for either determinism or freedom, the rational default is to accept the appearance that one has free will unless compelling contrary evidence emerges.",
+      "sourceSpan": {
+        "startEvent": 1388,
+        "endEvent": 1421
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer explicitly turns to the larger scientific question and states a continuous epistemic argument from possible testing to the default of appearances.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-evidence-burden"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evidence-no-independent-neuron",
+          "con-evidence-intuition-unreliable"
+        ],
+        "components": [
+          {
+            "componentId": "pro-free-will-appearance-default-component-01",
+            "targetMoveId": "con-evidence-no-independent-neuron",
+            "text": "Whether mechanistic dependence constitutes compelling evidence sufficient to defeat the appearance of free will.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-free-will-appearance-default-component-02",
+            "targetMoveId": "con-evidence-intuition-unreliable",
+            "text": "Whether general historical unreliability removes the prima facie warrant of this appearance.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply states a defeasible appearance-based default and argues that neither side has decisive scientific evidence, directly answering the proposed evidential defeaters.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it contacts both evidential challenges, though it does not independently establish appearance reliability."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The defeasible structure is explicit, but the broad rule that everything is as it appears has an unstable scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The lack of decisive evidence is acknowledged, but a universal appearance-default principle is stronger than the defense requires."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mechanistic evidence may be nondeductive yet still sufficiently weighty to defeat an initial appearance of freedom.",
+        "decisiveQualification": "A rational default depends on the appearance's reliability and the cumulative strength of contrary evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The defeasible-default inference is coherent, with a bounded gap concerning why this appearance deserves its proposed prior weight."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The acknowledged scientific uncertainty supports withholding certainty, but not by itself the positive default in favor of freedom."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the con central evidence bridge and advances the pro epistemic case."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply recognizes defeasibility but understates the possibility of cumulative, nondecisive mechanistic defeat."
+        }
+      },
+      "evidenceBasis": "Huemer says neither side has decisive scientific evidence and proposes accepting apparent free will until compelling evidence defeats it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-explanation-without-determination",
+      "sectionId": "section-concepts-explanation-and-indeterminacy",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Scientific explanation does not require determinism because scientific theories may be indeterministic and an agent's reasons may explain behavior without determining it.",
+      "sourceSpan": {
+        "startEvent": 1655,
+        "endEvent": 1668
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer takes the floor after the audience question and gives a compact continuous answer citing quantum mechanics and reason-based explanation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-causal-chain"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-seamless-arc",
+          "con-evidence-no-independent-neuron"
+        ],
+        "components": [
+          {
+            "componentId": "pro-explanation-without-determination-component-01",
+            "targetMoveId": "con-causal-seamless-arc",
+            "text": "Whether scientific explanation must be deterministic and therefore exclude reason-based, nondetermining explanations of choice.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-explanation-without-determination-component-02",
+            "targetMoveId": "con-evidence-no-independent-neuron",
+            "text": "Whether causal explanation requires complete independence from all prior conditions.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the assumed equivalence between scientific explanation and determinism as false, citing indeterministic science and reason-giving explanation as countermodels.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within diagnostic defeats, it explicitly rejects the decisive explanatory premise and states why the inference does not follow."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes explanation from determination and provides two explicit kinds of nondetermining explanation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited claim that scientific or reason-based explanation can be nondeterministic is adequately supported by the counterexamples."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A deterministic opponent may accept indeterministic theories while denying that indeterminacy supplies agent control.",
+        "decisiveQualification": "Refuting explanation-determinism equivalence does not itself establish libertarian authorship."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "Indeterministic scientific theories directly refute the universal equivalence, and reason explanation supplies a coherent additional model."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "Quantum mechanics is a concrete counterexample, though the warrant for nondetermining reasons as action explanations is compressed."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally attacks the con causal-chain inference that complete explanation must amount to determination."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply accurately defeats the equivalence while leaving the separate agency question appropriately unresolved."
+        }
+      },
+      "evidenceBasis": "Huemer cites indeterministic quantum theories and explanations of behavior by reasons as cases of explanation without determination.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-reasons-explain-free-choice",
+      "sectionId": "section-concepts-explanation-and-indeterminacy",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "An agent's reasons can explain a free choice even if there is no further explanation of why the agent selected those reasons over competing reasons.",
+      "sourceSpan": {
+        "startEvent": 1693,
+        "endEvent": 1709
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn follows Huemer's earlier answer and develops his characteristic reasons-based account of libertarian choice.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-causal-seamless-arc",
+          "con-evidence-no-independent-neuron"
+        ],
+        "components": [
+          {
+            "componentId": "pro-reasons-explain-free-choice-component-01",
+            "targetMoveId": "con-causal-seamless-arc",
+            "text": "Whether a freely selected action can remain intelligible without a further determining cause of the final selection.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-reasons-explain-free-choice-component-02",
+            "targetMoveId": "con-evidence-no-independent-neuron",
+            "text": "Whether every explanatory stopping point must instead be traced to antecedent neural conditions.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply gives reasons as a partial explanation while candidly allowing that why one reason prevailed may have no further explanation, contacting the demand for intelligibility.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Within partial answers, it contacts the explanatory demand but does not explain how the unexplained selection constitutes control."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between explaining action by reasons and lacking a further selection explanation is explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Huemer's tentative language accurately reflects the limited explanatory proposal and its acknowledged stopping point."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An unexplained selection among reasons may be random rather than controlled by the agent.",
+        "decisiveQualification": "Reason citation must distinguish authored selection from mere indeterministic occurrence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Reasons can explain action intelligibly, but the bridge from an unexplained final selection to agent control remains material."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The account is conceptually plausible but largely asserted and does not compare deterministic or randomness-based rival explanations."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary pro bridge concerning how reasons can explain nondetermined action."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The move acknowledges the unexplained stopping point but does not answer the strongest randomness challenge it creates."
+        }
+      },
+      "evidenceBasis": "Huemer says an action can be explained by the agent's reason while conceding no further explanation for selecting that reason.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-concepts-prior-causes-not-randomness",
+      "sectionId": "section-concepts-explanation-and-indeterminacy",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "reply",
+      "proposition": "A decision never becomes an unexplained act of agent selection because prior causes remain operative, and quantum indeterminacy does not supply agency.",
+      "sourceSpan": {
+        "startEvent": 1710,
+        "endEvent": 1728
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The explicit contrast with the preceding view and the deterministic causal argument identify Sapolsky as the responding speaker.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-con-subsidiary-indeterminacy"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-reasons-explain-free-choice",
+          "pro-explanation-without-determination"
+        ],
+        "components": [
+          {
+            "componentId": "con-concepts-prior-causes-not-randomness-component-01",
+            "targetMoveId": "pro-reasons-explain-free-choice",
+            "text": "Whether the final selection can be an agent-controlled stopping point rather than the product of prior causes or randomness.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-concepts-prior-causes-not-randomness-component-02",
+            "targetMoveId": "pro-explanation-without-determination",
+            "text": "Whether quantum indeterminacy provides the relevant kind of freely authored agency.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies an unexplained stopping point and distinguishes quantum indeterminacy from agency, contacting both the prior-cause and randomness demands.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it explicitly addresses the two proposed routes away from determination, though tersely."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The prior-cause and quantum claims are recoverable, though the relevant scale and control criterion remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The randomness point is well directed, but the universal assertion that prior causes always decide the issue is under-supported."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Agent control might be neither deterministic causation nor mere quantum randomness.",
+        "decisiveQualification": "Rejecting randomness does not exclude every nonrandom libertarian account of agent causation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The distinction between randomness and control is sound, while the perpetual-prior-cause premise is asserted rather than established."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The move gestures toward scale arguments about quantum effects but supplies little specific support in the selected span."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary con bridge distinguishing indeterminacy from agent control."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The reply correctly denies that indeterminacy alone yields freedom but does not address stronger agent-causal alternatives."
+        }
+      },
+      "evidenceBasis": "Sapolsky says prior causes never cease operating and argues that microscopic quantum indeterminacy has no capacity to provide agency.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-concepts-compatibilism-excluded",
+      "sectionId": "section-concepts-explanation-and-indeterminacy",
+      "side": "con",
+      "speaker": "Robert Sapolsky",
+      "moveKind": "reply",
+      "proposition": "Known biological and environmental causes leave no room for philosophically significant free will, including attempts to preserve it through compatibilism.",
+      "sourceSpan": {
+        "startEvent": 1780,
+        "endEvent": 1801
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly addresses Sapolsky, whose answer identifies himself with an unusually uncompromising hard-incompatibilist position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "bridge-pro-subsidiary-concepts"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-free-will-alternatives-control",
+          "pro-explanation-without-determination"
+        ],
+        "components": [
+          {
+            "componentId": "con-concepts-compatibilism-excluded-component-01",
+            "targetMoveId": "pro-free-will-alternatives-control",
+            "text": "Whether any philosophically significant conception of freedom survives known biological and environmental causation.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-concepts-compatibilism-excluded-component-02",
+            "targetMoveId": "pro-explanation-without-determination",
+            "text": "Whether nondetermining explanation preserves a meaningful form of agency.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply squarely denies that libertarian or compatibilist freedom survives the causal evidence, but it does not analyze the distinct conditions of those conceptions.",
+        "responsivenessWithinClass": {
+          "value": 66,
+          "rationale": "Within partial answers, it states a contrary conclusion about the decisive issue without fully engaging the conceptual criteria."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The universal exclusion claim is clear, but philosophically significant free will and compatibilism are left insufficiently specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that all contemporary and historical views are ruled out is categorical and unsupported by comparative analysis."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilism identifies freedom with reason-responsive action or acting without coercion, consistently with causal determination.",
+        "decisiveQualification": "Excluding compatibilism requires showing why those agent-level capacities are not philosophically significant control."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 56,
+          "rationale": "The conclusion may be consistent with hard incompatibilism, but it lacks the comparative inference needed to exclude every rival conception."
+        },
+        "evidenceWarrant": {
+          "value": 51,
+          "rationale": "Known causal influence is invoked generally, with no specific evidence or view-by-view warrant supporting universal exclusion."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly attacks the subsidiary pro conceptual bridge concerning alternative definitions of control."
+        },
+        "representationalCharity": {
+          "value": 45,
+          "rationale": "The reply dismisses a broad family of views without stating or answering its strongest reason-responsive formulation."
+        }
+      },
+      "evidenceBasis": "Sapolsky asserts that known biology and environmental influence rule out every philosophically significant account, including compatibilism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-belief-deliberation-control",
+      "sectionId": "section-control-deliberation-and-reasons",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "When evidence is inconclusive, people can exercise control over belief by weighing epistemic reasons in a deliberative process analogous to choosing among actions.",
+      "sourceSpan": {
+        "startEvent": 1908,
+        "endEvent": 1966
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directs the question to Huemer, and the answer consistently defends his earlier deliberation argument against doxastic involuntarism.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "bridge-con-central-practical-compatibility"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-control-causal-change",
+          "con-concepts-compatibilism-excluded"
+        ],
+        "components": [
+          {
+            "componentId": "pro-belief-deliberation-control-component-01",
+            "targetMoveId": "con-control-causal-change",
+            "text": "Whether weighing reasons in belief formation can constitute control rather than merely mechanistic alteration by inputs.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-belief-deliberation-control-component-02",
+            "targetMoveId": "con-concepts-compatibilism-excluded",
+            "text": "Whether an agent-level deliberative process provides a philosophically significant form of control.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The analogy between practical deliberation and weighing epistemic reasons directly supplies an agent-level control model, though it does not show that the process is nondetermined.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Within partial answers, it contacts the control demand but leaves the decisive libertarian alternatives requirement unestablished."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is limited to inconclusive evidence and clearly identifies weighing reasons as the proposed choice process."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The tentative analogy supports plausibility and appropriately acknowledges weaker control over belief than over action."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Reason weighing may be a causally determined process and therefore not establish libertarian control.",
+        "decisiveQualification": "Agent-level deliberation must be connected to genuinely available alternatives to answer hard determinism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The analogy between practical and epistemic deliberation is coherent, with a bounded bridge from reason weighing to genuine control."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The phenomenology and structure of weighing reasons support the analogy, but no independent evidence establishes nondetermination."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central con practical-compatibility bridge by construing deliberation as controlled agency."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move offers a fair control model but does not fully confront its compatibility with deterministic processing."
+        }
+      },
+      "evidenceBasis": "Huemer compares weighing reasons for actions with weighing reasons for beliefs and describes both as choice-like deliberative processes.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence survives the strict exclusion rule beyond the judgments already recorded for individual moves.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing any alleged residual would not alter burden completion independently of the recorded judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence survives the strict exclusion rule beyond the judgments already recorded for individual moves.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance findings"
+        ],
+        "counterfactual": "Removing any alleged residual would not alter burden completion independently of the recorded judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

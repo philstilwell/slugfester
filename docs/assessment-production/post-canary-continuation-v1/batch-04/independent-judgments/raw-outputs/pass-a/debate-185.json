@@ -1,0 +1,1871 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "185",
+  "debateId": "dennett-caruso-free-will-responsibility-2021",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-reasons-responsive-compatibilism",
+      "side": "pro",
+      "description": "Establish that naturally developed, reasons-responsive self-control constitutes the freedom relevant to moral agency and can support ordinary desert, responsibility, sanctions, and reactive practices without requiring ultimate self-creation or indeterminism.",
+      "successCriteria": "The route succeeds if it connects practical control and moral competence to meaningful alternatives, distinguishes ordinary causation from responsibility-undermining interference, and explains why stable responsibility practices and proportionate consequences remain justified under determinism.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-capacity-to-practice",
+        "tier": "motion",
+        "description": "Show that natural reasons-responsive control is sufficient to justify compatibilist freedom, ordinary desert, and responsibility practices."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-control",
+          "tier": "central",
+          "description": "Define the relevant freedom through informed, unimpaired, reasons-responsive self-control rather than randomness or ultimate metaphysical authorship."
+        },
+        {
+          "bridgeId": "pro-central-development",
+          "tier": "central",
+          "description": "Explain how learning, reflection, practice, and moral education make agents sufficiently autonomous and accountable despite deterministic causal histories."
+        },
+        {
+          "bridgeId": "pro-central-institutions",
+          "tier": "central",
+          "description": "Justify proportionate, public, rule-governed sanctions and blame as components of a secure cooperative social order."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-manipulation",
+          "tier": "subsidiary",
+          "description": "Distinguish deliberate interpersonal control from impersonal causal determination in assessing whether an agent's control has been displaced."
+        },
+        {
+          "bridgeId": "pro-subsidiary-reactive-attitudes",
+          "tier": "subsidiary",
+          "description": "Account for morally condemnatory reactions as fitting and behavior-guiding responses to serious wrongdoing by competent adults."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-basic-desert-skepticism",
+      "side": "con",
+      "description": "Establish that reasons-responsive agency does not supply the ultimate control required for basic desert, while showing that protection, deterrence, rehabilitation, moral engagement, and rule enforcement remain available on forward-looking grounds.",
+      "successCriteria": "The route succeeds if it separates practical agency from basic-desert responsibility, shows why neither determinism nor indeterminism supplies ultimate control, and provides non-desert foundations for justified social responses without retaining retribution or desert-dependent anger.",
+      "motionBridge": {
+        "bridgeId": "con-motion-control-without-desert",
+        "tier": "motion",
+        "description": "Show that natural reasons-responsive control does not justify basic desert and that defensible responsibility practices need not presuppose it."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-ultimate-control",
+          "tier": "central",
+          "description": "Argue that agents are not ultimate sources of their characters and actions under either deterministic or indeterministic causal conditions."
+        },
+        {
+          "bridgeId": "con-central-sufficiency-gap",
+          "tier": "central",
+          "description": "Show that reasons-responsiveness and compatibilist agent control can matter practically without establishing desert-based blame or punishment."
+        },
+        {
+          "bridgeId": "con-central-alternative-practices",
+          "tier": "central",
+          "description": "Ground coercion, deterrence, rehabilitation, and rule enforcement in public safety, future risk, proportionality, and least-restrictive means."
+        },
+        {
+          "bridgeId": "con-central-desert-dispensability",
+          "tier": "central",
+          "description": "Require an independent role for backward-looking desert beyond what consequentialist institutions and causal responsibility already provide."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-manipulation",
+          "tier": "subsidiary",
+          "description": "Use manipulation and malfunction cases to test whether internal psychological responsiveness is sufficient for responsibility."
+        },
+        {
+          "bridgeId": "con-subsidiary-reform",
+          "tier": "subsidiary",
+          "description": "Explain how evolved reactive attitudes and responsibility practices can be revised without surrendering their protective or communicative functions."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-control-and-alternatives",
+      "title": "Reasons-Responsive Control and the Ability to Do Otherwise",
+      "weightPercent": 24,
+      "rationale": "This issue tests whether informed, unimpaired responsiveness to reasons constitutes the relevant practical control and meaningful alternative possibilities, or whether those capacities fall short of the freedom needed for desert."
+    },
+    {
+      "sectionId": "section-sourcehood-and-manipulation",
+      "title": "Sourcehood, Determinism, and Manipulation",
+      "weightPercent": 21,
+      "rationale": "This issue addresses whether deterministic histories undermine accountable agency, whether developed self-control supplies adequate sourcehood, and whether manipulation cases reveal a relevant gap between causation and control."
+    },
+    {
+      "sectionId": "section-desert-conceptions",
+      "title": "Basic Desert and Ordinary Compatibilist Desert",
+      "weightPercent": 22,
+      "rationale": "This issue fixes the central conceptual dispute over whether basic desert is required, whether ordinary conduct-sensitive desert is independently defensible, and whether reasons-responsive agency can bridge the two notions."
+    },
+    {
+      "sectionId": "section-sanctions-and-public-protection",
+      "title": "Punishment, Public Safety, and Institutional Justification",
+      "weightPercent": 20,
+      "rationale": "This issue compares rule-governed punishment and proportional sanctions with quarantine, deterrence, rehabilitation, and least-restrictive protection as foundations for legitimate coercive practices."
+    },
+    {
+      "sectionId": "section-reactive-attitudes-and-reform",
+      "title": "Reactive Attitudes and Reform of Responsibility Practices",
+      "weightPercent": 13,
+      "rationale": "This issue examines whether moral anger and condemnation are justified or indispensable, and whether evolved practices can instead be revised toward non-desert attitudes while retaining social regulation and moral communication."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-indeterminacy-settlement-gap",
+      "sectionId": "section-control-and-alternatives",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "constructive",
+      "proposition": "Introducing indeterminacy into deliberation does not provide desert-grounding control because the agent still cannot settle which of the supported outcomes occurs.",
+      "sourceSpan": {
+        "startEvent": 387,
+        "endEvent": 464
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker distinguishes recent libertarian accounts and evaluates their strategically placed indeterminacy before concluding that agents lack the required control.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-ultimate-control"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive argument against indeterminacy as a source of ultimate control, so it has no earlier opposing target to answer.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "Within constructive moves, it clearly states a focused objection and the relevant settlement gap."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is recoverable and expressly limited to libertarian accounts that introduce indeterminacy without agent settlement."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The conclusion tracks the stated inability of indeterminacy alone to explain which supported outcome occurs."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The inference from unsettled outcomes to failure of desert-grounding control is clear, with only the desert criterion compressed."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The conceptual settlement argument is directly stated, though rival agent-causal mechanisms are not examined in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central ultimate-control bridge but does not by itself complete the broader skeptical route."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The excerpt attacks a specified model but does not meaningfully compare a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes libertarian types and identifies the agent's inability to settle which indeterminate outcome occurs.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-ultimate-sourcehood-denial",
+      "sectionId": "section-sourcehood-and-manipulation",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "constructive",
+      "proposition": "Because who agents are and what they do ultimately result from factors beyond their control, basic-desert responsibility is absent under either determinism or indeterminism.",
+      "sourceSpan": {
+        "startEvent": 522,
+        "endEvent": 568
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Caruso explicitly identifies himself as the free-will skeptic, contrasts Dennett as the compatibilist, and states the defining thesis of his position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-control-without-desert"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive statement of the skeptical route's central sourcehood thesis and therefore has no earlier opposing target.",
+        "responsivenessWithinClass": {
+          "value": 85,
+          "rationale": "Within constructive moves, it states the position, causal premise, and specifically limited responsibility conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The speaker expressly limits the denial to a particular pervasive basic-desert sense of moral responsibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical conclusion exceeds the brief support supplied for the move from uncontrolled factors to absent basic desert."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The sourcehood premise connects coherently to basic-desert denial, but the required ultimate-control principle remains implicit."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The excerpt asserts that agents ultimately result from uncontrolled factors without defending that sweeping causal premise here."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly states the motion-level skeptical thesis linking natural agency to the absence of basic-desert responsibility."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This passage states the speaker's own thesis without developing or characterizing a competing account."
+        }
+      },
+      "evidenceBasis": "Caruso defines skepticism through factors beyond agents' control and explicitly limits the resulting denial to basic-desert responsibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-control-practical-changeability",
+      "sectionId": "section-control-and-alternatives",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Determinism does not eliminate the responsibility-relevant ability to do otherwise because people remain capable of responding to persuasion, changing their conduct, and developing moral competence.",
+      "sourceSpan": {
+        "startEvent": 795,
+        "endEvent": 847
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett affirms the host's formulation and then explains a nonmetaphysical sense of alternatives through behavioral change, legal responsibility, and developing competence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-capacity-to-practice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-ultimate-sourcehood-denial",
+          "con-indeterminacy-settlement-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-control-practical-changeability-component-01",
+            "targetMoveId": "con-ultimate-sourcehood-denial",
+            "text": "Whether agents are ultimate sources of who they are and what they do",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-control-practical-changeability-component-02",
+            "targetMoveId": "con-indeterminacy-settlement-gap",
+            "text": "Whether indeterminacy enables an agent to settle which supported outcome occurs",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Practical changeability rebuts fatalistic implications of determinism, but it does not answer the earlier demand for ultimate sourcehood or outcome settlement.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "This is a relevant nonanswer: it advances practical control while leaving the decisive ultimate-sourcehood demand untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Practical change is clear, but its scope as an ability to do otherwise under identical conditions remains only implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Observed behavioral change supports practical flexibility, but the rhetoric overstates what it establishes about responsibility-relevant alternatives."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Determinism allows conduct to change across changed reasons and circumstances while still excluding ultimate sourcehood.",
+        "decisiveQualification": "Practical changeability alone does not establish the basic-desert control challenged by the opponent."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The anti-fatalist inference is sound, but the bridge from changeability across circumstances to responsibility-relevant alternatives is underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Common observation that people change supports plasticity, while the metaphysical and responsibility bridge receives little independent support."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly advances the motion bridge by presenting practical changeability as responsibility-relevant control."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly rejects fatalism, though it does not fully preserve the opponent's distinct ultimate-control qualification."
+        }
+      },
+      "evidenceBasis": "Dennett points to persuasion, changed lives, developing competence, and observed behavioral change despite determinism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-basic-desert-limited-target",
+      "sectionId": "section-desert-conceptions",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "reply",
+      "proposition": "Free-will skepticism rejects basic-desert responsibility while preserving causal and attributive responsibility and forward-looking moral engagement grounded in reconciliation, safety, and moral formation.",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 938
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly yields to Gregg, and the uninterrupted first-person explanation states the skeptical position associated with his work.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-control-without-desert"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-control-practical-changeability"
+        ],
+        "components": [
+          {
+            "componentId": "con-basic-desert-limited-target-component-01",
+            "targetMoveId": "pro-control-practical-changeability",
+            "text": "Whether practical change and reasons-responsiveness justify the responsibility practices at issue",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The move preserves practical agency but justifies replacing a general responsibility demand with the narrower basic-desert question and forward-looking alternatives.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly preserves causal and attributive responsibility while explaining the narrower disputed target and its replacement grounds."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between rejected basic desert and preserved causal, attributive, and forward-looking responsibility is explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The bounded claim that non-desert responsibility practices remain available is proportionate to the enumerated grounds."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilist practical control may justify ordinary responsibility without purporting to establish ultimate self-creation.",
+        "decisiveQualification": "The skeptical rejection is expressly limited to basic-desert responsibility rather than all agency or accountability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The distinctions and forward-looking replacement are coherent, with only the full institutional derivation deferred."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Three specific forward-looking grounds are supplied, though their sufficiency for every responsibility practice is not fully defended here."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "The move directly advances the skeptical motion bridge by separating natural control from basic desert while preserving practices."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move accurately preserves substantial compatibilist functions while isolating the narrower point of disagreement."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects basic desert while grounding retained responsibility in reconciliation, future safety, and moral formation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-desert-sufficient-ordinary-responsibility",
+      "sectionId": "section-desert-conceptions",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Basic moral desert is a misleading requirement, while sufficient ordinary moral responsibility can still justify coercion, imprisonment, fines, and reputational consequences for violations.",
+      "sourceSpan": {
+        "startEvent": 982,
+        "endEvent": 1023
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Caruso directly invites Dan to respond, after which Dennett rejects basic desert and develops the Donald Trump coercion example in his characteristic first person.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-capacity-to-practice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-basic-desert-limited-target",
+          "con-ultimate-sourcehood-denial"
+        ],
+        "components": [
+          {
+            "componentId": "pro-desert-sufficient-ordinary-responsibility-component-01",
+            "targetMoveId": "con-basic-desert-limited-target",
+            "text": "Whether responsibility practices can be justified once basic-desert responsibility is rejected",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-desert-sufficient-ordinary-responsibility-component-02",
+            "targetMoveId": "con-ultimate-sourcehood-denial",
+            "text": "Whether absence of ultimate sourcehood excludes every sufficient form of moral responsibility",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts that basic desert is unnecessary and directly asserts sufficient ordinary responsibility for familiar coercive consequences.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the decisive practical implication, though the criterion making ordinary responsibility sufficient remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The consequences and limited target are clear, but 'enough moral responsibility' lacks a fully stable criterion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical authorization of imprisonment is stronger than the brief appeal to legal violations and ordinary responsibility warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptic permits coercion but grounds it in protection rather than backward-looking desert.",
+        "decisiveQualification": "Showing permissible coercion does not alone establish that ordinary desert performs independent justificatory work."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The conclusion follows only if ordinary responsibility independently justifies the listed sanctions, a material bridge left largely asserted."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The Donald Trump and law-violation example illustrates the intuition but does not defend the governing criterion or proportionality."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly supports the motion bridge by claiming ordinary responsibility is sufficient for consequential responsibility practices."
+        },
+        "representationalCharity": {
+          "value": 71,
+          "rationale": "The reply recognizes permissible coercion but substantially compresses the opponent's alternative non-desert justification."
+        }
+      },
+      "evidenceBasis": "Dennett rejects basic desert as necessary and invokes law violations and sufficient ordinary responsibility to justify coercive consequences.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-quarantine-public-protection",
+      "sectionId": "section-sanctions-and-public-protection",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "reply",
+      "proposition": "Coercion and liberty restriction can be justified through self-defense, public safety, proportionality, and least-restrictive means without invoking free will, retribution, or basic desert.",
+      "sourceSpan": {
+        "startEvent": 1031,
+        "endEvent": 1121
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn answers Dennett's challenge in the first person and develops Caruso's recognizable public-health quarantine model and least-restriction principle.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-control-without-desert"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-desert-sufficient-ordinary-responsibility",
+          "pro-control-practical-changeability"
+        ],
+        "components": [
+          {
+            "componentId": "con-quarantine-public-protection-component-01",
+            "targetMoveId": "pro-desert-sufficient-ordinary-responsibility",
+            "text": "Whether justified coercion and imprisonment require ordinary moral desert",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-quarantine-public-protection-component-02",
+            "targetMoveId": "pro-control-practical-changeability",
+            "text": "Whether retained practical agency must ground coercive responsibility practices",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly supplies non-desert grounds for coercion and adds proportionality and least-restrictive limitations to the alternative framework.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly answers the coercion challenge with a structured alternative justification and relevant limiting principles."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Public danger, self-defense, proportionality, and least-restrictive means clearly delimit the proposed coercive authority."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The conclusion is carefully conditioned on significant threats, proportionality, and prevention of harm to others."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The state may regard deserved consequences as part of a stable lawful response to responsible violations.",
+        "decisiveQualification": "The reply must show coercion is independently justified without claiming that no desert-based account is conceivable."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The analogy and limiting principles form a clear route from serious threats to justified preventive restrictions."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The self-defense and quarantine analogy supplies a concrete warrant, though differences between disease and culpable crime remain bounded gaps."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly completes a major part of the skeptical motion bridge by grounding responsibility practices without desert."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "It answers the strongest practical challenge through an independent basis without caricaturing all compatibilist institutions."
+        }
+      },
+      "evidenceBasis": "Caruso expressly invokes significant public danger, self-defense, harm prevention, proportionality, and least-restrictive intervention.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-sourcehood-developed-self-control",
+      "sectionId": "section-sourcehood-and-manipulation",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Deterministic causation does not eliminate accountable sourcehood because autonomous agents become largely self-made through sustained learning, reflection, practice, exposure to reasons, and moral education.",
+      "sourceSpan": {
+        "startEvent": 1321,
+        "endEvent": 1371
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett directly addresses Gregg by name, diagnoses a confusion between causation and control, and answers the Maya and Marina thought experiment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-development"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-ultimate-sourcehood-denial",
+          "con-basic-desert-limited-target"
+        ],
+        "components": [
+          {
+            "componentId": "pro-sourcehood-developed-self-control-component-01",
+            "targetMoveId": "con-ultimate-sourcehood-denial",
+            "text": "Whether deterministic causal histories exclude accountable sourcehood",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-sourcehood-developed-self-control-component-02",
+            "targetMoveId": "con-basic-desert-limited-target",
+            "text": "Whether learned moral competence supports more than causal or attributive responsibility",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly replaces ultimate self-creation with developed autonomy through learning, reflection, reasons, and moral education.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It squarely contacts the sourcehood premise but leaves the final bridge from developed self-control to desert partly implicit."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The developmental mechanisms and impaired-agent exception are explicit, though 'largely self-made' remains somewhat elastic."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The qualified claim of being largely rather than ultimately self-made fits the developmental considerations offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A person may develop through reasons while the capacities and history enabling that development remain ultimately uncontrolled.",
+        "decisiveQualification": "Developed autonomy answers practical sourcehood but does not itself refute the skeptic's ultimate-source requirement."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Development plausibly supports autonomous self-control, but its sufficiency for desert rather than competence is an implicit bridge."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Learning, practice, reflection, reasons, and moral education provide concrete support, with no detailed rival-case comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central development bridge by explaining autonomy as an acquired capacity under determinism."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply addresses the strongest causal concern fairly, while the remaining difference over ultimate sourcehood is compressed."
+        }
+      },
+      "evidenceBasis": "Dennett cites twenty years of learning, practice, reflection, exposure to reasons, and moral education, while recognizing defective self-control.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-control-ordinary-ability-otherwise",
+      "sectionId": "section-control-and-alternatives",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "An undamaged, informed, reasons-responsive, and self-controlled person can meaningfully be said to have been able to do otherwise despite deterministic causation.",
+      "sourceSpan": {
+        "startEvent": 1387,
+        "endEvent": 1402
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following the question about alternative possibilities, Dennett gives a first-person clarification centered on degrees of freedom, self-control, and reasons-responsive functioning.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-control"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-ultimate-sourcehood-denial",
+          "con-indeterminacy-settlement-gap"
+        ],
+        "components": [
+          {
+            "componentId": "pro-control-ordinary-ability-otherwise-component-01",
+            "targetMoveId": "con-ultimate-sourcehood-denial",
+            "text": "Whether deterministic causation rules out a meaningful responsibility-relevant alternative ability",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-control-ordinary-ability-otherwise-component-02",
+            "targetMoveId": "con-indeterminacy-settlement-gap",
+            "text": "Whether alternative ability must consist in settling an indeterminate outcome",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers a compatibilist criterion of alternative ability based on freedom from impairment, misinformation, restraint, and defective reasons-responsiveness.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It directly supplies the disputed alternative criterion, although it does not fully argue why that criterion answers basic desert."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The operative ability is defined through explicit conditions of information, freedom from restraint, reasons, and functioning."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Given the stipulated compatibilist meaning, the asserted ability is matched to the explicit unimpaired-function conditions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The skeptic can accept conditional practical ability while denying categorical alternatives or basic-desert control.",
+        "decisiveQualification": "The proposed criterion establishes ordinary functional freedom, not automatically the opponent's ultimate-control standard."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The criterion is internally coherent and concretely specified, with one remaining normative bridge to desert."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The listed impairment contrasts support the functional criterion, but its superiority to rival readings is not fully defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central control bridge by defining the responsibility-relevant ability in compatibilist terms."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move fairly states an alternative concept of ability, though it does not fully engage the skeptic's distinct desert qualification."
+        }
+      },
+      "evidenceBasis": "The excerpt defines ability otherwise through degrees of freedom, self-control, adequate information, reasons, and normal functioning.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-agent-control-sufficiency-gap",
+      "sectionId": "section-sourcehood-and-manipulation",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "reply",
+      "proposition": "Compatibilist agent control and freedom from intentional external manipulation are distinct, and possessing reasons-responsive control leaves open whether basic-desert responsibility is justified.",
+      "sourceSpan": {
+        "startEvent": 1562,
+        "endEvent": 1642
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Caruso announces a return to Dennett's causation-control distinction and develops the two loci of control before stating the unresolved sufficiency challenge.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-sufficiency-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-sourcehood-developed-self-control",
+          "pro-control-ordinary-ability-otherwise",
+          "pro-control-practical-changeability"
+        ],
+        "components": [
+          {
+            "componentId": "con-agent-control-sufficiency-gap-component-01",
+            "targetMoveId": "pro-sourcehood-developed-self-control",
+            "text": "Whether developed reasons-responsive self-control is sufficient for desert-based responsibility",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-agent-control-sufficiency-gap-component-02",
+            "targetMoveId": "pro-control-ordinary-ability-otherwise",
+            "text": "Whether an unimpaired compatibilist ability otherwise supplies desert-grounding control",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-agent-control-sufficiency-gap-component-03",
+            "targetMoveId": "pro-control-practical-changeability",
+            "text": "Whether practical changeability resolves the separate sufficiency question about desert",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses an equivocation between agent control and freedom from interpersonal control, then states that desert sufficiency remains unestablished.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly identifies the inference gap and states the defeating consequence for the compatibilist sufficiency claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two loci of control and the residual question concerning desert-based responsibility are expressly distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move carefully claims an open sufficiency question rather than claiming that reasons-responsive control has been disproved."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilist control may be sufficient because responsibility concerns an agent's functioning rather than ultimate authorship.",
+        "decisiveQualification": "Freedom from intentional interference and internal agent control are distinct, and neither alone settles basic desert."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The distinction directly undercuts the inference from possessed control to desert, and the limited conclusion is well matched."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Several recognized argument types are identified as reasons the question remains open, though they are not developed in this excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central sufficiency-gap bridge by separating practical agent control from desert justification."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move grants the compatibilist form of control and accurately isolates the remaining normative sufficiency dispute."
+        }
+      },
+      "evidenceBasis": "Caruso distinguishes internal agent control from freedom from intentional external control and lists multiple unresolved skeptical arguments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-sourcehood-interpersonal-interference",
+      "sectionId": "section-sourcehood-and-manipulation",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Deliberate control by other agents differs responsibility-relevantly from impersonal natural causation because social institutions must address planned interpersonal interference that displaces another person's control.",
+      "sourceSpan": {
+        "startEvent": 1758,
+        "endEvent": 1780
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett directly denies the question-begging charge and explains the social significance of control by other agents.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-manipulation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-agent-control-sufficiency-gap",
+          "con-ultimate-sourcehood-denial"
+        ],
+        "components": [
+          {
+            "componentId": "pro-sourcehood-interpersonal-interference-component-01",
+            "targetMoveId": "con-agent-control-sufficiency-gap",
+            "text": "Whether interpersonal manipulation differs responsibility-relevantly from ordinary natural causation",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-sourcehood-interpersonal-interference-component-02",
+            "targetMoveId": "con-ultimate-sourcehood-denial",
+            "text": "Whether all uncontrolled causal antecedents are equivalent to another agent displacing control",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes planned interpersonal interference from impersonal causation by its institutional and control-displacing significance.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It contacts the manipulation distinction clearly but only indirectly addresses whether the distinction establishes basic desert."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is expressly limited to other agents' planned projects that interfere with another person's control."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The institutional distinction is supported by the specified social role of intentional, planned interference."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Manipulation cases may reveal that internally reasons-responsive mechanisms can still originate in responsibility-undermining histories.",
+        "decisiveQualification": "Political importance of interpersonal interference does not alone establish that causal history is irrelevant to desert."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The institutional distinction is coherent, though its inference to individual desert rather than social regulation is incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Planned social interference provides a concrete distinguishing feature, but difficult manipulation analogies receive no extended comparison."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary manipulation bridge by identifying why interpersonal control differs from natural causation."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move recognizes displaced control but partly shifts from the skeptic's sufficiency test to institutional significance."
+        }
+      },
+      "evidenceBasis": "Dennett appeals to laws, social agents, deliberate plans, and projects that interfere with another agent's activities and control.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-risk-sensitive-legal-distinctions",
+      "sectionId": "section-sanctions-and-public-protection",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "reply",
+      "proposition": "A forward-looking public-health model can preserve distinctions among intentional, accidental, and habitually negligent conduct by tracking future danger and the protection each case warrants.",
+      "sourceSpan": {
+        "startEvent": 1818,
+        "endEvent": 1953
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Caruso gives the extended answer, identifies his model, and uses three parent cases to explain differing interventions and responsibility concepts.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-alternative-practices"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-sourcehood-interpersonal-interference",
+          "pro-desert-sufficient-ordinary-responsibility"
+        ],
+        "components": [
+          {
+            "componentId": "con-risk-sensitive-legal-distinctions-component-01",
+            "targetMoveId": "pro-sourcehood-interpersonal-interference",
+            "text": "Whether a forward-looking system can preserve distinctions involving intention and control",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-risk-sensitive-legal-distinctions-component-02",
+            "targetMoveId": "pro-desert-sufficient-ordinary-responsibility",
+            "text": "Whether legal distinctions and interventions require desert-based moral responsibility",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explains how intentional, accidental, and negligent cases generate different future risks and therefore different warranted interventions.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It directly answers the institutional-distinction challenge with several differentiated cases and an explicit decision variable."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The model's criterion is explicitly future danger, and its application is differentiated across specified conduct types."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The bounded claim that the model can preserve distinctions is proportionate to the supplied comparative examples."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Intentional and negligent distinctions may track deserved blame rather than only predicted future danger.",
+        "decisiveQualification": "The move need only show that non-desert risk variables can preserve legally important distinctions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "Different future risks coherently support different interventions, though exact risk assessment and proportionality rules remain compressed."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The three-parent comparison provides specific representative support, with empirical prediction reliability left undeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central alternative-practices bridge by explaining differentiated intervention without desert."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply squarely handles the functional challenge while leaving open the opponent's separate interpretation of those distinctions."
+        }
+      },
+      "evidenceBasis": "Caruso uses intentional, accidental, and negligent parental cases to link conduct patterns with different future threats and protections.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-reasons-without-desert-freedom",
+      "sectionId": "section-control-and-alternatives",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "reply",
+      "proposition": "Determinism and free-will skepticism preserve rational deliberation, persuasion, belief revision, and reasons-responsive action because reasons can remain causally effective.",
+      "sourceSpan": {
+        "startEvent": 2053,
+        "endEvent": 2084
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Caruso labels the objection a recurring misconception and answers it by aligning his view with compatibilists on deliberation and reasons as causes.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-sufficiency-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-control-practical-changeability",
+          "pro-control-ordinary-ability-otherwise"
+        ],
+        "components": [
+          {
+            "componentId": "con-reasons-without-desert-freedom-component-01",
+            "targetMoveId": "pro-control-practical-changeability",
+            "text": "Whether skepticism and determinism undermine deliberation, persuasion, or behavioral change",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-reasons-without-desert-freedom-component-02",
+            "targetMoveId": "pro-control-ordinary-ability-otherwise",
+            "text": "Whether reasons-responsive functioning remains possible without desert-grounding freedom",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply agrees that reasons cause belief and action changes while denying that this shared practical agency resolves the desert dispute.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the anti-fatalism point and preserves its force within a skeptical account."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The preserved capacities are specifically enumerated and distinguished from the disputed basic-desert freedom."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The common-ground assertion that deterministic reasons can causally affect beliefs and actions fits the stated mechanism."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilists infer freedom from the same reasons-responsive deliberative capacities the skeptic preserves.",
+        "decisiveQualification": "Agreement about rational efficacy does not establish agreement about the desert consequences of that efficacy."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The compatibility of deterministic causation with reasons as causes is stated clearly and avoids the fatalistic inference."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "Belief revision and action change supply a concrete causal explanation, though empirical documentation is not developed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central sufficiency-gap bridge by preserving reasons-responsiveness without conceding desert."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The reply fully grants the practical compatibilist insight and accurately locates the remaining disagreement."
+        }
+      },
+      "evidenceBasis": "Caruso expressly agrees that rational deliberation survives determinism and explains that reasons change beliefs which cause actions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-sanctions-public-proportionate-law",
+      "sectionId": "section-sanctions-and-public-protection",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Public and proportionate punishment can sustain respect for law and instantiate a consequentialist notion of desert whose justification does not depend on whether determinism is true.",
+      "sourceSpan": {
+        "startEvent": 2089,
+        "endEvent": 2159
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett receives the floor by name and presents a continuous account of law, punishment, desert, and exceptions for impaired agents.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-capacity-to-practice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-quarantine-public-protection",
+          "con-risk-sensitive-legal-distinctions",
+          "con-reasons-without-desert-freedom"
+        ],
+        "components": [
+          {
+            "componentId": "pro-sanctions-public-proportionate-law-component-01",
+            "targetMoveId": "con-quarantine-public-protection",
+            "text": "Whether public safety and legitimate coercion require abandoning desert language and punishment",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-sanctions-public-proportionate-law-component-02",
+            "targetMoveId": "con-risk-sensitive-legal-distinctions",
+            "text": "Whether public institutions can maintain law, proportionality, and impaired-agent exceptions",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-sanctions-public-proportionate-law-component-03",
+            "targetMoveId": "con-reasons-without-desert-freedom",
+            "text": "Whether consequential institutions remain justified independently of determinism",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers public, proportionate, consequentially justified punishment and exceptions for impaired agents as an institutional alternative.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly defends punishment's forward-looking institutional role, though the independent role of desert remains underexplained."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "'Consequentialist desert' is somewhat unstable, but publicity, proportionality, law, and impairment exceptions constrain the claim."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The assertion that law systems are obviously worth preserving exceeds the excerpt's limited comparison with nonpunitive alternatives."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Public safety, deterrence, and legal order may be sustained without calling imposed consequences deserved punishment.",
+        "decisiveQualification": "The defense must identify what desert adds beyond the acknowledged good consequences of stable rules."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Consequences coherently support stable legal sanctions, but labeling the resulting account desert-based adds an insufficiently explained step."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Law, proportionality, publicity, and impairment exceptions are specific supports, while comparative institutional evidence is absent."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the motion bridge by connecting responsibility, desert, and proportionate public practices under determinism."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move addresses institutional necessity but gives limited attention to the strongest non-desert functional equivalent."
+        }
+      },
+      "evidenceBasis": "Dennett grounds law and punishment in good consequences, respect for rules, proportionality, publicity, and exceptions for impairment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-desert-everyday-conduct-sensitive",
+      "sectionId": "section-desert-conceptions",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Basic moral desert posits a nonexistent requirement, whereas the desert that matters is the familiar, conduct-sensitive everyday notion and is compatible with deterministic causation.",
+      "sourceSpan": {
+        "startEvent": 2354,
+        "endEvent": 2397
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett is explicitly invited to reply and contrasts basic moral desert with ordinary practices of deserving outcomes, rewards, and punishment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-capacity-to-practice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-agent-control-sufficiency-gap",
+          "con-basic-desert-limited-target",
+          "con-reasons-without-desert-freedom"
+        ],
+        "components": [
+          {
+            "componentId": "pro-desert-everyday-conduct-sensitive-component-01",
+            "targetMoveId": "con-agent-control-sufficiency-gap",
+            "text": "Whether the relevant ordinary notion of desert requires ultimate sourcehood or basic desert",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-desert-everyday-conduct-sensitive-component-02",
+            "targetMoveId": "con-basic-desert-limited-target",
+            "text": "Whether rejecting basic desert also requires abandoning familiar conduct-sensitive deservingness",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-desert-everyday-conduct-sensitive-component-03",
+            "targetMoveId": "con-reasons-without-desert-freedom",
+            "text": "Whether deterministic reasons-responsive agency can support ordinary desert",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply rejects basic desert as empty and identifies familiar conduct-sensitive deservingness as the relevant compatibilist alternative.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It contacts the conceptual target directly, though familiar usage alone does not establish the alternative's justificatory sufficiency."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Basic and everyday desert are distinguished, but the exact normative content of everyday desert remains partly unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling basic desert a term for nothing and treating familiarity as sufficient substantially exceeds the argument supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Basic desert is a substantive claim about blameworthiness independent of future benefits, not merely unfamiliar vocabulary.",
+        "decisiveQualification": "Everyday conduct-sensitive usage may be coherent while failing to justify punishment or hostile blame."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The conceptual distinction is usable, but the inference from familiar everyday usage to morally justificatory desert is substantial and unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The better-team example documents ordinary language but provides weak support for desert-based blame or coercive consequences."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly addresses the motion-level dispute by defending an ordinary deterministic conception of desert."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "The move recognizes the competing category but materially weakens it by dismissing basic desert as empty without argument."
+        }
+      },
+      "evidenceBasis": "Dennett contrasts basic desert with familiar deservingness and illustrates everyday usage through a better-team example.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolved-practices-revisable",
+      "sectionId": "section-reactive-attitudes-and-reform",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "reply",
+      "proposition": "Because responsibility practices are socially evolved and historically changeable, society can further reform them by relinquishing harmful notions of just desert and retribution.",
+      "sourceSpan": {
+        "startEvent": 2759,
+        "endEvent": 2786
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage occurs within Caruso's clearly marked response turn and presents his characteristic reformist argument against basic-desert practices.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-reform"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-desert-everyday-conduct-sensitive",
+          "pro-sanctions-public-proportionate-law"
+        ],
+        "components": [
+          {
+            "componentId": "con-evolved-practices-revisable-component-01",
+            "targetMoveId": "pro-desert-everyday-conduct-sensitive",
+            "text": "Whether familiar and socially embedded desert practices are fixed or normatively indispensable",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-evolved-practices-revisable-component-02",
+            "targetMoveId": "pro-sanctions-public-proportionate-law",
+            "text": "Whether evolved legal and responsibility practices can be further revised",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply uses prior cultural change to argue that present desert and retributive practices are revisable rather than indispensable.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It directly contacts the appeal to familiarity, although historical revisability alone does not prove the proposed reform is superior."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conclusion is framed as hope for further reform and identifies the specific concepts proposed for relinquishment."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest possibility claim is proportionate to the historical observation that responsibility cultures have changed."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolved desert practices may be revisable yet retain valuable functions that replacement practices cannot duplicate.",
+        "decisiveQualification": "Historical change establishes possibility of reform, not the dispensability or harmfulness of every desert concept."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Past cultural change supports possible further reform, while the transition from possibility to desirability remains appropriately qualified."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The honor-culture comparison supplies a concrete example, but harm and replacement-effectiveness claims remain lightly supported."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It strongly supports the subsidiary reform bridge by establishing that reactive and responsibility practices can change."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The move makes the limited revisability inference fairly and avoids claiming that historical change alone proves success."
+        }
+      },
+      "evidenceBasis": "Caruso invokes the historical movement from honor cultures to individualistic cultures as evidence that responsibility practices can evolve.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-desert-dispensability-dilemma",
+      "sectionId": "section-desert-conceptions",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "reply",
+      "proposition": "If backward-looking desert performs genuine justificatory work in a punishment theory, that theory is mixed rather than purely consequentialist; if desert performs none, it should be removed.",
+      "sourceSpan": {
+        "startEvent": 2942,
+        "endEvent": 3022
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Caruso resumes the conceptual challenge in an extended turn, contrasting his forward-looking conversational model with Dennett's retained backward-looking element.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-desert-dispensability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-sanctions-public-proportionate-law",
+          "pro-desert-everyday-conduct-sensitive"
+        ],
+        "components": [
+          {
+            "componentId": "con-desert-dispensability-dilemma-component-01",
+            "targetMoveId": "pro-sanctions-public-proportionate-law",
+            "text": "Whether consequentialist desert performs independent justificatory work in punishment",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-desert-dispensability-dilemma-component-02",
+            "targetMoveId": "pro-desert-everyday-conduct-sensitive",
+            "text": "Whether familiar backward-looking desert adds justification beyond forward-looking consequences",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies a dilemma: justificatory desert makes the theory mixed, while nonjustificatory desert is dispensable, undermining the claimed purely consequentialist position.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It explicitly targets the opponent's classification, states both branches, and gives the defeating consequence for each."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The two exhaustive roles considered for desert are clearly stated and tied to distinct classificatory consequences."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Given the stipulated distinction between doing justificatory work and doing none, the conditional dilemma is proportionate."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Desert may be a rule-internal concept generated and justified by consequentialist institutional design.",
+        "decisiveQualification": "A derivative rule-level role could be consequentialist while still requiring explanation of what desert adds to rule application."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The dilemma is clear and forceful, with one bounded gap concerning derivative or constitutive consequentialist roles for desert."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The opponent's expressed consequentialist desert supplies the relevant premise, though comparison with sophisticated rule-consequentialist accounts is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central desert-dispensability bridge by demanding an independent justificatory role for retained desert."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The dilemma addresses the strongest ordinary reading, though a derivative rule-concept alternative is not fully developed."
+        }
+      },
+      "evidenceBasis": "Caruso expressly contrasts desert that performs justificatory work with desert that can drop out of a purely consequentialist theory.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-sanctions-rule-governed-consequentialism",
+      "sectionId": "section-sanctions-and-public-protection",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Consequentialist reasons can justify a rule-governed punishment system even though individual adjudication properly applies agreed rules rather than recalculating the consequences of punishment in each case.",
+      "sourceSpan": {
+        "startEvent": 3052,
+        "endEvent": 3107
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dennett explicitly recalls a disagreement from the book and develops his familiar game and referee analogy in direct response to Caruso.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-institutions"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-desert-dispensability-dilemma",
+          "con-quarantine-public-protection",
+          "con-risk-sensitive-legal-distinctions"
+        ],
+        "components": [
+          {
+            "componentId": "pro-sanctions-rule-governed-consequentialism-component-01",
+            "targetMoveId": "con-desert-dispensability-dilemma",
+            "text": "Whether rule-governed punishment can remain consequentialist when adjudicators apply rules nonconsequentially",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-sanctions-rule-governed-consequentialism-component-02",
+            "targetMoveId": "con-quarantine-public-protection",
+            "text": "Whether individualized forward-looking calculation should control each coercive decision",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-sanctions-rule-governed-consequentialism-component-03",
+            "targetMoveId": "con-risk-sensitive-legal-distinctions",
+            "text": "Whether stable rules can govern differentiated legal judgments",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply distinguishes consequentialist system justification from rule-bound adjudication and explains why case-by-case recalculation would undermine law.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It squarely answers the mixed-theory concern at the institutional level, though it does not fully explain desert's independent role."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "System-level justification and case-level rule application are distinctly stated, with their respective scopes made explicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The institutional claim is appropriately tied to the asserted consequence that ad hoc recalculation undermines respect for law."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A rule-consequentialist system can explain punishment rules without retaining backward-looking desert terminology.",
+        "decisiveQualification": "The system-versus-act distinction answers the mixed-theory charge but not the separate dispensability challenge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The rule-versus-act distinction coherently reconciles consequentialist design with noncalculative adjudication, with desert still underexplained."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "The game and referee analogy concretely illustrates rule application, though the empirical claim about legal respect lacks verification."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central institutions bridge through a rule-governed consequentialist account of punishment."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The response accurately addresses institutional consequentialism while leaving the opponent's narrower desert question substantially intact."
+        }
+      },
+      "evidenceBasis": "Dennett uses rule-following and referee analogies to distinguish system justification from consequence calculation in individual cases.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-replacement-reactive-attitudes",
+      "sectionId": "section-reactive-attitudes-and-reform",
+      "side": "con",
+      "speaker": "Gregg Caruso",
+      "moveKind": "reply",
+      "proposition": "Desert-dependent moral anger can be replaced by attitudes such as disappointment or sorrow while retaining, and potentially improving, the practical work of interpersonal responsibility practices.",
+      "sourceSpan": {
+        "startEvent": 3396,
+        "endEvent": 3439
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This uninterrupted first-person argument continues Caruso's identified turn and develops his established skeptical position on reactive attitudes.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-reform"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-sanctions-rule-governed-consequentialism",
+          "pro-desert-everyday-conduct-sensitive"
+        ],
+        "components": [
+          {
+            "componentId": "con-replacement-reactive-attitudes-component-01",
+            "targetMoveId": "pro-sanctions-rule-governed-consequentialism",
+            "text": "Whether desert-dependent attitudes are needed for responsibility practices to perform their social functions",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-replacement-reactive-attitudes-component-02",
+            "targetMoveId": "pro-desert-everyday-conduct-sensitive",
+            "text": "Whether ordinary desert reactions can be replaced without losing moral communication",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply proposes disappointment and sorrow as non-desert replacements that can retain or improve interpersonal guidance and communication.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly contacts functional indispensability, though its comparative effectiveness claim receives only an illustrative example."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim identifies the attitudes to replace, their proposed substitutes, and the limited interpersonal function at issue."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Replacement plausibility is supported, but saying it does exactly the same work and may improve outcomes exceeds the single example."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Moral anger may communicate the gravity of adult wrongdoing in ways disappointment and sorrow cannot duplicate.",
+        "decisiveQualification": "The replacement claim must preserve condemnation and deterrent communication, not merely parental behavior correction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Non-desert attitudes could coherently perform guiding functions, but equivalence across all reactive practices remains an implicit generalization."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The daughter example makes the proposal intelligible, while equal or greater effectiveness remains substantially unsupported."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary reform bridge by proposing concrete non-desert replacements for moral anger."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move addresses functional replacement but uses a child-focused example that incompletely captures serious adult wrongdoing."
+        }
+      },
+      "evidenceBasis": "Caruso proposes disappointment and sorrow in place of moral anger and claims they can perform the same interpersonal work.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-reactive-moral-anger-adult-wrongdoing",
+      "sectionId": "section-reactive-attitudes-and-reform",
+      "side": "pro",
+      "speaker": "Daniel Dennett",
+      "moveKind": "reply",
+      "proposition": "Although disappointment may appropriately guide children, serious wrongdoing by competent adults can justify moral anger that also warns others against comparable misconduct.",
+      "sourceSpan": {
+        "startEvent": 3470,
+        "endEvent": 3500
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The preceding handoff names Daniel Dennett, and the ensuing final comment directly answers Caruso's daughter and replacement-attitude examples.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-reactive-attitudes"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-replacement-reactive-attitudes",
+          "con-evolved-practices-revisable"
+        ],
+        "components": [
+          {
+            "componentId": "pro-reactive-moral-anger-adult-wrongdoing-component-01",
+            "targetMoveId": "con-replacement-reactive-attitudes",
+            "text": "Whether disappointment or sorrow adequately replaces moral anger for serious competent-adult wrongdoing",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-reactive-moral-anger-adult-wrongdoing-component-02",
+            "targetMoveId": "con-evolved-practices-revisable",
+            "text": "Whether reform should relinquish morally condemnatory anger in adult cases",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts disappointment for children but directly denies its adequacy for grave adult wrongdoing and asserts a warning function for anger.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It contacts the strongest replacement example and supplies an adult-wrongdoing distinction, though the justification is mostly intuitive."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is clearly limited to terrible wrongdoing by competent adults and contrasts it with guidance of younger children."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical entitlement and justification for anger rest mainly on an intuitive Trump example rather than a defended fittingness standard."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Non-desert disappointment, sorrow, protest, and firm sanctions may condemn adult wrongdoing without hostile moral anger.",
+        "decisiveQualification": "The opponent claims functional replacement, not mildness or absence of serious public condemnation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "The child-adult distinction is relevant, but the move from seriousness to justified moral anger requires a missing fittingness bridge."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The Trump illustration evokes a strong intuition but supplies little comparative evidence that anger is necessary or more effective."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly supports the subsidiary reactive-attitudes bridge by defending moral anger for competent adult wrongdoing."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The reply treats disappointment as inadequate but does not address stronger non-angry protest or the claim of equivalent condemnation."
+        }
+      },
+      "evidenceBasis": "Dennett contrasts parental disappointment with terrible adult wrongdoing and uses Donald Trump to illustrate the asserted inadequacy of disappointment.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side burden-completion consequence remains outside the move ratings, response links, importance, and relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct debate-wide consequence exists beyond the assessed moves.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the adjustment would not change any independently unscored burden-completion finding."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side burden-completion consequence remains outside the move ratings, response links, importance, and relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct debate-wide consequence exists beyond the assessed moves.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the adjustment would not change any independently unscored burden-completion finding."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
