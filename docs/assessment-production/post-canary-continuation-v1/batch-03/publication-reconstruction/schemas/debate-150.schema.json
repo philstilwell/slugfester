@@ -1,0 +1,2572 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-post-canary-batch-03-publication-150",
+  "title": "Slugfester post-canary Batch 3 publication Debate 150",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "productionCanary",
+    "stagingOnly",
+    "completedAt",
+    "summary",
+    "representativeQuotes",
+    "moveProse",
+    "overallCommentary",
+    "aiExtension",
+    "displayContract",
+    "audit"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-03-publication-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-03-publication-reconstruction"
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "150"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "licona-dillahunty-resurrection-evidence-2017"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "productionCanary": {
+      "type": "boolean",
+      "const": false
+    },
+    "stagingOnly": {
+      "type": "boolean",
+      "const": true
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 40
+    },
+    "representativeQuotes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "pro-background-cumulative-paranormal-evidence",
+                "pro-historical-pauline-apostolic-bedrock",
+                "pro-comparative-ibt-explanatory-criteria",
+                "pro-methods-discipline-specific-investigation",
+                "pro-causation-against-methodological-exclusion",
+                "pro-comparative-case-by-case-resurrection",
+                "pro-methods-good-ordinary-testimony",
+                "pro-causation-event-before-agent",
+                "pro-background-resurrection-supports-theism"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "sourceMoveId",
+            "text",
+            "context"
+          ],
+          "properties": {
+            "sourceMoveId": {
+              "type": "string",
+              "enum": [
+                "con-evidential-default-and-burden",
+                "con-anomalies-do-not-establish-supernatural-realm",
+                "con-resurrection-lacks-explanatory-content",
+                "con-divine-agent-requires-prior-support",
+                "con-no-workable-supernatural-causal-method",
+                "con-test-before-supernatural-attribution",
+                "con-paul-and-reports-insufficient",
+                "con-supernatural-label-does-not-identify-cause",
+                "con-five-hundred-claim-uninvestigable",
+                "con-event-acceptance-not-causal-verdict"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 12
+            },
+            "context": {
+              "type": "string",
+              "minLength": 60
+            }
+          }
+        }
+      }
+    },
+    "moveProse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-background-cumulative-paranormal-evidence",
+        "pro-historical-pauline-apostolic-bedrock",
+        "pro-comparative-ibt-explanatory-criteria",
+        "con-evidential-default-and-burden",
+        "con-anomalies-do-not-establish-supernatural-realm",
+        "con-resurrection-lacks-explanatory-content",
+        "con-divine-agent-requires-prior-support",
+        "con-no-workable-supernatural-causal-method",
+        "pro-methods-discipline-specific-investigation",
+        "pro-causation-against-methodological-exclusion",
+        "pro-comparative-case-by-case-resurrection",
+        "con-test-before-supernatural-attribution",
+        "con-paul-and-reports-insufficient",
+        "con-supernatural-label-does-not-identify-cause",
+        "con-five-hundred-claim-uninvestigable",
+        "pro-methods-good-ordinary-testimony",
+        "con-event-acceptance-not-causal-verdict",
+        "pro-causation-event-before-agent",
+        "pro-background-resurrection-supports-theism"
+      ],
+      "properties": {
+        "pro-background-cumulative-paranormal-evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-historical-pauline-apostolic-bedrock": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-comparative-ibt-explanatory-criteria": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-evidential-default-and-burden": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-anomalies-do-not-establish-supernatural-realm": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-resurrection-lacks-explanatory-content": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-divine-agent-requires-prior-support": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-no-workable-supernatural-causal-method": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-methods-discipline-specific-investigation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-causation-against-methodological-exclusion": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-comparative-case-by-case-resurrection": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-test-before-supernatural-attribution": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-paul-and-reports-insufficient": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-supernatural-label-does-not-identify-cause": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-five-hundred-claim-uninvestigable": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-methods-good-ordinary-testimony": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con-event-acceptance-not-causal-verdict": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-causation-event-before-agent": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pro-background-resurrection-supports-theism": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "role",
+            "words",
+            "critique",
+            "tags"
+          ],
+          "properties": {
+            "role": {
+              "type": "string",
+              "enum": [
+                "Load-bearing constructive",
+                "Supporting constructive",
+                "Major direct reply",
+                "Supporting reply",
+                "Diagnostic challenge",
+                "Concession or qualification"
+              ]
+            },
+            "words": {
+              "type": "string",
+              "minLength": 50
+            },
+            "critique": {
+              "type": "string",
+              "minLength": 880
+            },
+            "tags": {
+              "type": "array",
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "label",
+                  "type",
+                  "slug",
+                  "context"
+                ],
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "fallacy",
+                      "bias"
+                    ]
+                  },
+                  "slug": {
+                    "type": "string",
+                    "enum": [
+                      "appeal-to-authority",
+                      "argument-from-ignorance",
+                      "begging-the-question",
+                      "equivocation",
+                      "red-herring",
+                      "special-pleading",
+                      "ambiguity-effect",
+                      "authority-bias",
+                      "base-rate-neglect",
+                      "belief-bias",
+                      "confirmation-bias",
+                      "scope-neglect",
+                      "subjective-validation"
+                    ]
+                  },
+                  "context": {
+                    "type": "string",
+                    "minLength": 40
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "overallCommentary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strengths",
+            "blunders"
+          ],
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 30
+              }
+            },
+            "blunders": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 50
+                  },
+                  "tags": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "type",
+                        "slug",
+                        "context"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "fallacy",
+                            "bias"
+                          ]
+                        },
+                        "slug": {
+                          "type": "string",
+                          "enum": [
+                            "appeal-to-authority",
+                            "argument-from-ignorance",
+                            "begging-the-question",
+                            "equivocation",
+                            "red-herring",
+                            "special-pleading",
+                            "ambiguity-effect",
+                            "authority-bias",
+                            "base-rate-neglect",
+                            "belief-bias",
+                            "confirmation-bias",
+                            "scope-neglect",
+                            "subjective-validation"
+                          ]
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "strengths",
+            "blunders"
+          ],
+          "properties": {
+            "strengths": {
+              "type": "array",
+              "minItems": 3,
+              "maxItems": 6,
+              "items": {
+                "type": "string",
+                "minLength": 30
+              }
+            },
+            "blunders": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "text",
+                  "tags"
+                ],
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 50
+                  },
+                  "tags": {
+                    "type": "array",
+                    "maxItems": 2,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "type",
+                        "slug",
+                        "context"
+                      ],
+                      "properties": {
+                        "label": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "fallacy",
+                            "bias"
+                          ]
+                        },
+                        "slug": {
+                          "type": "string",
+                          "enum": [
+                            "appeal-to-authority",
+                            "argument-from-ignorance",
+                            "begging-the-question",
+                            "equivocation",
+                            "red-herring",
+                            "special-pleading",
+                            "ambiguity-effect",
+                            "authority-bias",
+                            "base-rate-neglect",
+                            "belief-bias",
+                            "confirmation-bias",
+                            "scope-neglect",
+                            "subjective-validation"
+                          ]
+                        },
+                        "context": {
+                          "type": "string",
+                          "minLength": 40
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "aiExtension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "aiGenerated",
+        "disclaimer",
+        "pro",
+        "con"
+      ],
+      "properties": {
+        "aiGenerated": {
+          "type": "boolean",
+          "const": true
+        },
+        "disclaimer": {
+          "type": "string",
+          "const": "This section is an AI-generated contribution, not transcript content. Its wording is not attributable to either participant and it does not affect any participant score."
+        },
+        "pro": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-background-cumulative-paranormal-evidence",
+                          "pro-historical-pauline-apostolic-bedrock",
+                          "pro-comparative-ibt-explanatory-criteria",
+                          "con-evidential-default-and-burden",
+                          "con-anomalies-do-not-establish-supernatural-realm",
+                          "con-resurrection-lacks-explanatory-content",
+                          "con-divine-agent-requires-prior-support",
+                          "con-no-workable-supernatural-causal-method",
+                          "pro-methods-discipline-specific-investigation",
+                          "pro-causation-against-methodological-exclusion",
+                          "pro-comparative-case-by-case-resurrection",
+                          "con-test-before-supernatural-attribution",
+                          "con-paul-and-reports-insufficient",
+                          "con-supernatural-label-does-not-identify-cause",
+                          "con-five-hundred-claim-uninvestigable",
+                          "pro-methods-good-ordinary-testimony",
+                          "con-event-acceptance-not-causal-verdict",
+                          "pro-causation-event-before-agent",
+                          "pro-background-resurrection-supports-theism"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-background-cumulative-paranormal-evidence",
+                            "pro-historical-pauline-apostolic-bedrock",
+                            "pro-comparative-ibt-explanatory-criteria",
+                            "con-evidential-default-and-burden",
+                            "con-anomalies-do-not-establish-supernatural-realm",
+                            "con-resurrection-lacks-explanatory-content",
+                            "con-divine-agent-requires-prior-support",
+                            "con-no-workable-supernatural-causal-method",
+                            "pro-methods-discipline-specific-investigation",
+                            "pro-causation-against-methodological-exclusion",
+                            "pro-comparative-case-by-case-resurrection",
+                            "con-test-before-supernatural-attribution",
+                            "con-paul-and-reports-insufficient",
+                            "con-supernatural-label-does-not-identify-cause",
+                            "con-five-hundred-claim-uninvestigable",
+                            "pro-methods-good-ordinary-testimony",
+                            "con-event-acceptance-not-causal-verdict",
+                            "pro-causation-event-before-agent",
+                            "pro-background-resurrection-supports-theism"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-background-cumulative-paranormal-evidence",
+                          "pro-historical-pauline-apostolic-bedrock",
+                          "pro-comparative-ibt-explanatory-criteria",
+                          "con-evidential-default-and-burden",
+                          "con-anomalies-do-not-establish-supernatural-realm",
+                          "con-resurrection-lacks-explanatory-content",
+                          "con-divine-agent-requires-prior-support",
+                          "con-no-workable-supernatural-causal-method",
+                          "pro-methods-discipline-specific-investigation",
+                          "pro-causation-against-methodological-exclusion",
+                          "pro-comparative-case-by-case-resurrection",
+                          "con-test-before-supernatural-attribution",
+                          "con-paul-and-reports-insufficient",
+                          "con-supernatural-label-does-not-identify-cause",
+                          "con-five-hundred-claim-uninvestigable",
+                          "pro-methods-good-ordinary-testimony",
+                          "con-event-acceptance-not-causal-verdict",
+                          "pro-causation-event-before-agent",
+                          "pro-background-resurrection-supports-theism"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 280
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-background-cumulative-paranormal-evidence",
+                            "pro-historical-pauline-apostolic-bedrock",
+                            "pro-comparative-ibt-explanatory-criteria",
+                            "con-evidential-default-and-burden",
+                            "con-anomalies-do-not-establish-supernatural-realm",
+                            "con-resurrection-lacks-explanatory-content",
+                            "con-divine-agent-requires-prior-support",
+                            "con-no-workable-supernatural-causal-method",
+                            "pro-methods-discipline-specific-investigation",
+                            "pro-causation-against-methodological-exclusion",
+                            "pro-comparative-case-by-case-resurrection",
+                            "con-test-before-supernatural-attribution",
+                            "con-paul-and-reports-insufficient",
+                            "con-supernatural-label-does-not-identify-cause",
+                            "con-five-hundred-claim-uninvestigable",
+                            "pro-methods-good-ordinary-testimony",
+                            "con-event-acceptance-not-causal-verdict",
+                            "pro-causation-event-before-agent",
+                            "pro-background-resurrection-supports-theism"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "con": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "thesis",
+            "premises",
+            "conclusion",
+            "newArguments"
+          ],
+          "properties": {
+            "thesis": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-background-cumulative-paranormal-evidence",
+                          "pro-historical-pauline-apostolic-bedrock",
+                          "pro-comparative-ibt-explanatory-criteria",
+                          "con-evidential-default-and-burden",
+                          "con-anomalies-do-not-establish-supernatural-realm",
+                          "con-resurrection-lacks-explanatory-content",
+                          "con-divine-agent-requires-prior-support",
+                          "con-no-workable-supernatural-causal-method",
+                          "pro-methods-discipline-specific-investigation",
+                          "pro-causation-against-methodological-exclusion",
+                          "pro-comparative-case-by-case-resurrection",
+                          "con-test-before-supernatural-attribution",
+                          "con-paul-and-reports-insufficient",
+                          "con-supernatural-label-does-not-identify-cause",
+                          "con-five-hundred-claim-uninvestigable",
+                          "pro-methods-good-ordinary-testimony",
+                          "con-event-acceptance-not-causal-verdict",
+                          "pro-causation-event-before-agent",
+                          "pro-background-resurrection-supports-theism"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "premises": {
+              "type": "array",
+              "minItems": 4,
+              "maxItems": 6,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-background-cumulative-paranormal-evidence",
+                            "pro-historical-pauline-apostolic-bedrock",
+                            "pro-comparative-ibt-explanatory-criteria",
+                            "con-evidential-default-and-burden",
+                            "con-anomalies-do-not-establish-supernatural-realm",
+                            "con-resurrection-lacks-explanatory-content",
+                            "con-divine-agent-requires-prior-support",
+                            "con-no-workable-supernatural-causal-method",
+                            "pro-methods-discipline-specific-investigation",
+                            "pro-causation-against-methodological-exclusion",
+                            "pro-comparative-case-by-case-resurrection",
+                            "con-test-before-supernatural-attribution",
+                            "con-paul-and-reports-insufficient",
+                            "con-supernatural-label-does-not-identify-cause",
+                            "con-five-hundred-claim-uninvestigable",
+                            "pro-methods-good-ordinary-testimony",
+                            "con-event-acceptance-not-causal-verdict",
+                            "pro-causation-event-before-agent",
+                            "pro-background-resurrection-supports-theism"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "conclusion": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "text",
+                "novelty"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 80
+                },
+                "novelty": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "classification",
+                    "sourceMoveIds",
+                    "explanation"
+                  ],
+                  "properties": {
+                    "classification": {
+                      "type": "string",
+                      "enum": [
+                        "extends",
+                        "repairs",
+                        "introduces"
+                      ]
+                    },
+                    "sourceMoveIds": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "enum": [
+                          "pro-background-cumulative-paranormal-evidence",
+                          "pro-historical-pauline-apostolic-bedrock",
+                          "pro-comparative-ibt-explanatory-criteria",
+                          "con-evidential-default-and-burden",
+                          "con-anomalies-do-not-establish-supernatural-realm",
+                          "con-resurrection-lacks-explanatory-content",
+                          "con-divine-agent-requires-prior-support",
+                          "con-no-workable-supernatural-causal-method",
+                          "pro-methods-discipline-specific-investigation",
+                          "pro-causation-against-methodological-exclusion",
+                          "pro-comparative-case-by-case-resurrection",
+                          "con-test-before-supernatural-attribution",
+                          "con-paul-and-reports-insufficient",
+                          "con-supernatural-label-does-not-identify-cause",
+                          "con-five-hundred-claim-uninvestigable",
+                          "pro-methods-good-ordinary-testimony",
+                          "con-event-acceptance-not-causal-verdict",
+                          "pro-causation-event-before-agent",
+                          "pro-background-resurrection-supports-theism"
+                        ]
+                      }
+                    },
+                    "explanation": {
+                      "type": "string",
+                      "minLength": 40
+                    }
+                  }
+                }
+              }
+            },
+            "newArguments": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 4,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "title",
+                  "text",
+                  "novelty"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 8
+                  },
+                  "text": {
+                    "type": "string",
+                    "minLength": 280
+                  },
+                  "novelty": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "classification",
+                      "sourceMoveIds",
+                      "explanation"
+                    ],
+                    "properties": {
+                      "classification": {
+                        "type": "string",
+                        "enum": [
+                          "extends",
+                          "repairs",
+                          "introduces"
+                        ]
+                      },
+                      "sourceMoveIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": [
+                            "pro-background-cumulative-paranormal-evidence",
+                            "pro-historical-pauline-apostolic-bedrock",
+                            "pro-comparative-ibt-explanatory-criteria",
+                            "con-evidential-default-and-burden",
+                            "con-anomalies-do-not-establish-supernatural-realm",
+                            "con-resurrection-lacks-explanatory-content",
+                            "con-divine-agent-requires-prior-support",
+                            "con-no-workable-supernatural-causal-method",
+                            "pro-methods-discipline-specific-investigation",
+                            "pro-causation-against-methodological-exclusion",
+                            "pro-comparative-case-by-case-resurrection",
+                            "con-test-before-supernatural-attribution",
+                            "con-paul-and-reports-insufficient",
+                            "con-supernatural-label-does-not-identify-cause",
+                            "con-five-hundred-claim-uninvestigable",
+                            "pro-methods-good-ordinary-testimony",
+                            "con-event-acceptance-not-causal-verdict",
+                            "pro-causation-event-before-agent",
+                            "pro-background-resurrection-supports-theism"
+                          ]
+                        }
+                      },
+                      "explanation": {
+                        "type": "string",
+                        "minLength": 40
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "displayContract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sectionTitle",
+        "placement",
+        "defaultCollapsed",
+        "visualVariant",
+        "byline",
+        "prohibitedLanguageScanPassed"
+      ],
+      "properties": {
+        "sectionTitle": {
+          "type": "string",
+          "const": "AI Extension"
+        },
+        "placement": {
+          "type": "string",
+          "const": "immediately-after-overall-commentary"
+        },
+        "defaultCollapsed": {
+          "type": "boolean",
+          "const": true
+        },
+        "visualVariant": {
+          "type": "string",
+          "const": "ai-distinct"
+        },
+        "byline": {
+          "type": "string",
+          "const": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2."
+        },
+        "prohibitedLanguageScanPassed": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lockedScoresUnchanged",
+        "everyMoveAuthoredOnce",
+        "legacyAssessmentUnavailable",
+        "otherDebatesUnavailable",
+        "aiMaterialExcludedFromScores",
+        "sourceOnlyQuoteSelection"
+      ],
+      "properties": {
+        "lockedScoresUnchanged": {
+          "type": "boolean",
+          "const": true
+        },
+        "everyMoveAuthoredOnce": {
+          "type": "boolean",
+          "const": true
+        },
+        "legacyAssessmentUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "otherDebatesUnavailable": {
+          "type": "boolean",
+          "const": true
+        },
+        "aiMaterialExcludedFromScores": {
+          "type": "boolean",
+          "const": true
+        },
+        "sourceOnlyQuoteSelection": {
+          "type": "boolean",
+          "const": true
+        }
+      }
+    }
+  }
+}
