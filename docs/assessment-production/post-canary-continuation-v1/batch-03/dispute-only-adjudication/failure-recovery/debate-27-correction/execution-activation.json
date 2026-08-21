@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-27-adjudication-correction-activation",
+  "protocolId": "assessment-production-post-canary-batch-03-dispute-only-adjudication",
+  "status": "frozen-one-batch-03-debate-27-full-packet-adjudication-correction-context-authorized",
+  "frozenAt": "2026-08-21T01:00:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/diagnosis.json",
+  "failedOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-27.json",
+    "sha256": "ba8c9689f8839e22b9be50e2dc500a1c0a0e5377ff61480db11ab25cdf27aa40",
+    "reusable": false,
+    "preservedCopy": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/original-invalid-output.json"
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "meteredApiCostUsdMaximum": 0
+  },
+  "modelInputs": {
+    "rubric": "docs/reassessment-rubric-v2.1.md",
+    "decomposedRubric": "docs/reassessment-rubric-v4.0.md",
+    "derivedFindingsRubric": "docs/reassessment-rubric-v4.0.1.md",
+    "boundedInventoryRubric": "docs/reassessment-rubric-v4.1.md",
+    "productionWorkflow": "docs/assessment-production-workflow.md",
+    "adjudicationWorkflow": "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md",
+    "manual": "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md",
+    "schema": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/adjudication.schema.json"
+  },
+  "contexts": [
+    {
+      "contextIndex": 0,
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "packet": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/packets/debate-27.json",
+      "packetSha256": "3e3dcfe4e2e0def3560f6327a198387e8ba35542f5f8b919c3e67ae060543a43",
+      "provenance": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/provenance/debate-27.json",
+      "provenanceSha256": "6190d8a2f4cd7ff5ef634a3e6a5c90f03638d41fa265d08262ccf77bf6fcaf78",
+      "output": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/corrected-output.json",
+      "disputeSource": "docs/assessment-production/post-canary-continuation-v1/batch-03/disagreement-extraction/disagreements/debate-27.json",
+      "lockedInventory": "docs/assessment-production/post-canary-continuation-v1/batch-03/inventory-candidate-sharded/locked-inventories/debate-27.json",
+      "sourcePacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/independent-judgments/source-packets/debate-27.json",
+      "originalEvents": ".assessment-cache/captions/b5a3MxIqZOs/events.json",
+      "disputedMoves": 19,
+      "candidateSelections": 70,
+      "audioVerifiedMoves": 0,
+      "audioTranscriptInputs": [],
+      "packetBytes": 170113,
+      "copiedInputBytes": 205885,
+      "originalContextIndex": 8,
+      "correctionId": "fresh-full-packet-correction-1"
+    }
+  ],
+  "executionPolicy": {
+    "contexts": 1,
+    "schedulerRamp": [
+      1
+    ],
+    "maximumParallelContexts": 1,
+    "rampPhases": [
+      {
+        "phase": 1,
+        "contextIndexes": [
+          0
+        ],
+        "expansionRequiresAllValid": true
+      }
+    ],
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerContext": 900000,
+    "maximumMinutesPerContext": 12,
+    "maximumMeanMinutes": 9.5,
+    "removedEnvironmentVariables": [
+      "OPENAI_API_KEY",
+      "OPENAI_ORG_ID",
+      "OPENAI_PROJECT_ID",
+      "OPENAI_BASE_URL",
+      "AZURE_OPENAI_API_KEY",
+      "CODEX_API_KEY"
+    ],
+    "terminateIsolatedProcessGroupAtFrozenTimeout": true
+  },
+  "requiredOutputShape": {
+    "moveDecisions": 19,
+    "burdenAdjustmentDecisions": 2,
+    "burdenAdjustmentSideOrder": [
+      "pro",
+      "con"
+    ],
+    "candidateSelections": 70
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/execution-preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/model-execution.json",
+    "correctedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/corrected-output.json",
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-27.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/analysis.json"
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/diagnosis.json": "e634a15b30a3f19de4ccb41b9e9518b8286a6065062ba5b76136638fc20eb771",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/resumption/execution-activation.json": "2b5610119f50a0e86acf7d3bcf7bdfdf85b5159af1f4e97937b58eb61bf72b16",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/outputs/debate-27.json": "ba8c9689f8839e22b9be50e2dc500a1c0a0e5377ff61480db11ab25cdf27aa40",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/packets/debate-27.json": "3e3dcfe4e2e0def3560f6327a198387e8ba35542f5f8b919c3e67ae060543a43",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "docs/reassessment-rubric-v4.0.md": "f8c21e091df3e2738fd9e0b2163a942a4e1fdbe55e02febd40333249581a3b72",
+    "docs/reassessment-rubric-v4.0.1.md": "c945d33f83a44cd2c0a17becd6525ccdf718e76d3f7fd12884d18541850e594c",
+    "docs/reassessment-rubric-v4.1.md": "b1dc46c2b546d88993851151e09f92c8acd947b1960ff1699564412529486106",
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production-checkpoint-v2.2-dispute-only-adjudication-workflow.md": "7ea2da737b26349826c3e8ff595f41524afd1f4b23294f3783923946601fee0c",
+    "docs/assessment-production/production-checkpoint-v2.2-1/dispute-only-adjudication/manual.md": "afe02e43ab72c1af4104730e1097bc2fb783c2dd7ab803d3efeb5a61efe4f0d1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/adjudication.schema.json": "ee6dacadcc3b9f558e45ad55fd17bd2616c26c3790dc1aba2b2ca41ce3f41c6d",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/lib/v4221175-decomposed-adjudication.mjs": "485cd043a9fe4ab2bdc69f67479672d18f05ce44bde9122663009a0a45ce98e1",
+    "scripts/lib/v42211728-hard-route-adjudication.mjs": "53d850f6d25f5b1d71f7be6c81ad4c642c13bad204a5c01947e89b3410dbb388",
+    "scripts/lib/assessment-production-post-canary-batch-03-dispute-adjudication.mjs": "788d21eab5dca55b4477164d183a5d3330527ce16240667bbff6ef39cb667613",
+    "scripts/prepare-assessment-production-post-canary-batch-03-debate-27-adjudication-correction.mjs": "fa408fe44f6aea5b155a79492bf021bfe2683c30cb4e33500d122f3ab8c4e666",
+    "scripts/test-assessment-production-post-canary-batch-03-debate-27-adjudication-correction-preparation.mjs": "06f586bdfc13d5a57d06568e8f3fb6d0fbe7ff3f73d7085668d9403318a60a73",
+    "scripts/activate-assessment-production-post-canary-batch-03-debate-27-adjudication-correction.mjs": "82bc360768ef0936a93f6a020c099f497d26e08b5715d94bf706f591c9327d2c",
+    "scripts/run-assessment-production-post-canary-batch-03-debate-27-adjudication-correction.mjs": "736d4074454d08ceb33fe6130f72886f38ca66cd6765c048ae5686b06fc6bfd5",
+    "scripts/merge-assessment-production-post-canary-batch-03-debate-27-adjudication-correction.mjs": "fd2b6e0e0db2ee95b659961749aa4049cc50d5e64db33325f2198ed94beaf985",
+    "scripts/test-assessment-production-post-canary-batch-03-debate-27-adjudication-correction-gate.mjs": "69eff4e54648c0b4a964e7796e7cca9ec102e2d2460a72eeb89ef432e5961af5"
+  },
+  "futureOutputPathsExcludedFromSourceHashes": [
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/model-execution.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/corrected-output.json",
+    "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/analysis.json"
+  ],
+  "authorization": {
+    "executionActivation": false,
+    "adjudicationModelContexts": true,
+    "deterministicMergeAndCohortReplay": true,
+    "judgmentModelContexts": false,
+    "paidServices": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "execute-one-fresh-debate-27-full-packet-adjudication-correction-context",
+  "authorizedAt": "2026-08-21T01:15:00.000Z",
+  "checkpointCommit": "1f2d1c771d31fef213fea3407d5b056b10344033",
+  "preparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/dispute-only-adjudication/failure-recovery/debate-27-correction/execution-preparation-manifest.json",
+    "sha256": "1cc71748c155bc1a74cf9d08275a6a94a6ed2b3b5220c5d61666ad2566f5511d"
+  }
+}
