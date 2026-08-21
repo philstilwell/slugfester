@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-04-compatibility-execution-activation",
+  "protocolId": "assessment-production-post-canary-batch-04-production-compatibility",
+  "status": "post-canary-batch-04-compatibility-execution-authorized-and-frozen",
+  "activatedAt": "2026-08-21T21:30:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 4,
+  "directIncrementalCostCapUsd": 0,
+  "userAuthorization": {
+    "instruction": "The Batch 4 standing authorization covers activation and exactly one deterministic compatibility staging pass.",
+    "scopeInterpretation": "Activate the frozen Batch 4 compatibility manifest and execute exactly one validator-and-staged-ledger compatibility pass with no reruns, models, paid services, production ledger publication, production data mutation, or Batch 4 selection."
+  },
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/preparation-manifest.json",
+    "sha256": "d2292137698a24d88b33d6831ea07246dfeeada0cc1b8b770ac64cd08c717dc2"
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/analysis.json",
+    "sha256": "ed010eda04d887e0d15b66a8d678a44650c07e13e87f90bb64851063ed442afb",
+    "snapshot": {
+      "schemaVersion": "1.0-assessment-production-post-canary-batch-04-compatibility-preparation-analysis",
+      "protocolId": "assessment-production-post-canary-batch-04-production-compatibility",
+      "status": "post-canary-batch-04-compatibility-plan-freeze-passed",
+      "productionCanary": false,
+      "batchNumber": 4,
+      "planningOnly": true,
+      "preparation": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/preparation-manifest.json",
+        "sha256": "d2292137698a24d88b33d6831ea07246dfeeada0cc1b8b770ac64cd08c717dc2"
+      },
+      "finding": {
+        "id": "batch-04-site-ledger-adapter-and-validator-route",
+        "adapterDefined": true,
+        "validatorRouteDefined": true,
+        "executed": false
+      },
+      "checks": {
+        "finalLedgerReplayPassed": true,
+        "repositoryScoreReplaysPassed": 10,
+        "candidateCompatibilityChecksPassed": 10,
+        "exactAdapterOutputsFrozen": 10,
+        "validatorBaselineHashFrozen": true,
+        "checkpointRoutePreservationSpecified": true,
+        "batch01RoutePreservationSpecified": true,
+        "batch02RoutePreservationSpecified": true,
+        "batch03RoutePreservationSpecified": true,
+        "legacyRoutePreservationSpecified": true,
+        "optionalReferenceBehaviorPreservationSpecified": true,
+        "activeValidatorChanged": false,
+        "stagingLedgersWritten": 0,
+        "productionLedgersWritten": 0,
+        "productionDebatesChanged": false,
+        "modelContexts": 0,
+        "paidServiceCalls": 0,
+        "productionMutationPerformed": false
+      },
+      "totals": {
+        "debates": 10,
+        "planPackets": 10,
+        "sections": 53,
+        "moves": 203,
+        "oneSidedDisplayRows": 7,
+        "overallBlunders": 55,
+        "emptyReferenceLinks": 49,
+        "suppliedReferenceLinks": 6,
+        "proposedAdapterBytes": 1209313,
+        "repositoryScoreReplays": 10,
+        "modelContexts": 0,
+        "modelAuthoredScores": 0,
+        "scoreChanges": 0,
+        "proseChanges": 0,
+        "attributionChanges": 0,
+        "optionalReferenceBehaviorChanges": 0,
+        "paidServiceCalls": 0,
+        "directIncrementalCostUsd": 0,
+        "productionMutations": 0
+      },
+      "authorization": {
+        "compatibilityPlanPreparation": true,
+        "compatibilityExecutionActivation": false,
+        "compatibilityExecution": false,
+        "validatorMigration": false,
+        "stagingLedgerWrite": false,
+        "modelExecution": false,
+        "paidServices": false,
+        "productionLedgerPublication": false,
+        "productionMutation": false,
+        "nextBatchSelection": false
+      },
+      "stopRules": {
+        "separateExecutionApprovalRequired": true,
+        "exactlyOneDeterministicStagingPassIfApproved": true,
+        "rerunForbidden": true,
+        "sourceHashMismatchBlocks": true,
+        "packetHashMismatchBlocks": true,
+        "adapterHashMismatchBlocks": true,
+        "unexpectedWriteBlocks": true,
+        "testFailureBlocks": true,
+        "checkpointRouteRegressionBlocks": true,
+        "batch01RouteRegressionBlocks": true,
+        "batch02RouteRegressionBlocks": true,
+        "batch03RouteRegressionBlocks": true,
+        "legacyRouteRegressionBlocks": true,
+        "suppliedReferenceValidationWeakeningForbidden": true,
+        "optionalReferenceBehaviorChangeForbidden": true,
+        "rubricRelabelingForbidden": true,
+        "modelRelabelingForbidden": true,
+        "scoreProtocolRelabelingForbidden": true,
+        "scoreChangeForbidden": true,
+        "proseChangeForbidden": true,
+        "attributionChangeForbidden": true,
+        "scoreRerunForbidden": true,
+        "modelExecutionForbidden": true,
+        "paidServiceForbidden": true,
+        "productionLedgerPublicationForbidden": true,
+        "productionMutationForbidden": true,
+        "nextBatchSelectionForbidden": true
+      },
+      "nextAuthorizedAction": "activate-and-execute-one-batch-04-production-compatibility-pass-under-standing-authorization"
+    }
+  },
+  "validator": {
+    "path": "scripts/validate-debates.mjs",
+    "baselineSha256": "8054bcd6101cd8b6df28a5329187becff74d8bc1d6e687fa848b6c782c3778c4",
+    "proposedSha256": "005ec453f505468ad0d5bdc4dca4f309db7fdf1703bb05a4d3f88cb8de0c1d15",
+    "proposedBytes": 36052,
+    "exactTransformationLibrary": "scripts/lib/assessment-production-post-canary-batch-04-compatibility-execution.mjs",
+    "routeCredentialStatus": "post-canary-batch-04-compatibility-execution-authorized-and-frozen"
+  },
+  "packetHashes": [
+    {
+      "debateNumber": "127",
+      "debateId": "slick-clifton-objective-morality-god-2014",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-127.json",
+      "sha256": "1abee095a4959f5cdafb82e29b7b2968869d5270eb15db43026fb68b75a5aa0a",
+      "proposedAdapterSha256": "27a412e31ea567e938d1b4b0686fc4767a8d5fd168d8c40c31d61e6331f5b171",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/slick-clifton-objective-morality-god-2014.json",
+      "stagedLedgerSha256": "27a412e31ea567e938d1b4b0686fc4767a8d5fd168d8c40c31d61e6331f5b171",
+      "stagedLedgerBytes": 135866,
+      "productionLedgerPath": "docs/assessment-ledgers/slick-clifton-objective-morality-god-2014.json"
+    },
+    {
+      "debateNumber": "67",
+      "debateId": "jones-fodor-digital-physics-god-2021",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-67.json",
+      "sha256": "3edd6a66fafe490b7a498134a663eabcab88cd4db956c192f7b88d07dcdf1bb1",
+      "proposedAdapterSha256": "d9336a74d8cbeca58e2d37af3b93f624dd1324dac83b539b356f4f223ca19216",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/jones-fodor-digital-physics-god-2021.json",
+      "stagedLedgerSha256": "d9336a74d8cbeca58e2d37af3b93f624dd1324dac83b539b356f4f223ca19216",
+      "stagedLedgerBytes": 120794,
+      "productionLedgerPath": "docs/assessment-ledgers/jones-fodor-digital-physics-god-2021.json"
+    },
+    {
+      "debateNumber": "85",
+      "debateId": "atkins-fox-god-science-future-humanity-2024",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-85.json",
+      "sha256": "18923921dbd8d25d690ca5ba6dc05b1c196b69a2b99ac83f32bd727f632d45f2",
+      "proposedAdapterSha256": "180968d5f0fc7c3280671cc00b4eeba969d97e33f9cc7508c0af0da29ef6a06d",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/atkins-fox-god-science-future-humanity-2024.json",
+      "stagedLedgerSha256": "180968d5f0fc7c3280671cc00b4eeba969d97e33f9cc7508c0af0da29ef6a06d",
+      "stagedLedgerBytes": 111350,
+      "productionLedgerPath": "docs/assessment-ledgers/atkins-fox-god-science-future-humanity-2024.json"
+    },
+    {
+      "debateNumber": "49",
+      "debateId": "dyer-dillahunty-transcendental-theism-2019",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-49.json",
+      "sha256": "063eb81014e6af285a5f1cd6061e37c9b3eec6a76a4b29b831176d47f834e527",
+      "proposedAdapterSha256": "6d9392c04b0f2c550d4b5bc0a48f051708b8178f753bd6253d1e73911e6e581f",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/dyer-dillahunty-transcendental-theism-2019.json",
+      "stagedLedgerSha256": "6d9392c04b0f2c550d4b5bc0a48f051708b8178f753bd6253d1e73911e6e581f",
+      "stagedLedgerBytes": 140579,
+      "productionLedgerPath": "docs/assessment-ledgers/dyer-dillahunty-transcendental-theism-2019.json"
+    },
+    {
+      "debateNumber": "186",
+      "debateId": "huemer-sapolsky-free-will-determinism-2024",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-186.json",
+      "sha256": "873b84fb4a528b408738026c5922219bd9c12c9294ebdc4feea47f4042c675b4",
+      "proposedAdapterSha256": "563c1965871fd6a0277f268aae198e03f944bf80972343bbd2827397805ed129",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/huemer-sapolsky-free-will-determinism-2024.json",
+      "stagedLedgerSha256": "563c1965871fd6a0277f268aae198e03f944bf80972343bbd2827397805ed129",
+      "stagedLedgerBytes": 109850,
+      "productionLedgerPath": "docs/assessment-ledgers/huemer-sapolsky-free-will-determinism-2024.json"
+    },
+    {
+      "debateNumber": "81",
+      "debateId": "rasmussen-oppy-ultimate-reality-naturalism-2020",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-81.json",
+      "sha256": "2aafb35b50337aeacdef511e6f00f69f4326bc2316fd464ea130cb37e3b02de1",
+      "proposedAdapterSha256": "1120b05a9b3c7859cfca76ebcc4e0006136b9e8c4cbb632e1bbc63b3bde64f34",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/rasmussen-oppy-ultimate-reality-naturalism-2020.json",
+      "stagedLedgerSha256": "1120b05a9b3c7859cfca76ebcc4e0006136b9e8c4cbb632e1bbc63b3bde64f34",
+      "stagedLedgerBytes": 111710,
+      "productionLedgerPath": "docs/assessment-ledgers/rasmussen-oppy-ultimate-reality-naturalism-2020.json"
+    },
+    {
+      "debateNumber": "148",
+      "debateId": "baggett-dillahunty-moral-argument-2018",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-148.json",
+      "sha256": "ed78ab52906c3dd0b734a2bcbd611d64f8881cb79905db6ee7cac7e4765dd4c3",
+      "proposedAdapterSha256": "106bd5398cb7eff4533ac4410fc2a4c06d17a1b3c4648cfb1629cfc47afb41b7",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/baggett-dillahunty-moral-argument-2018.json",
+      "stagedLedgerSha256": "106bd5398cb7eff4533ac4410fc2a4c06d17a1b3c4648cfb1629cfc47afb41b7",
+      "stagedLedgerBytes": 127740,
+      "productionLedgerPath": "docs/assessment-ledgers/baggett-dillahunty-moral-argument-2018.json"
+    },
+    {
+      "debateNumber": "47",
+      "debateId": "jones-krauss-christianity-secular-ethics-2025",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-47.json",
+      "sha256": "e62318d89e47b0757298b909dedbf551d53c649064cc7de664d08eb1e0fdc785",
+      "proposedAdapterSha256": "1d1de5401d40142634375e1768f2d5ee7b4f40476589f15635da8d328a0e5ed4",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/jones-krauss-christianity-secular-ethics-2025.json",
+      "stagedLedgerSha256": "1d1de5401d40142634375e1768f2d5ee7b4f40476589f15635da8d328a0e5ed4",
+      "stagedLedgerBytes": 119794,
+      "productionLedgerPath": "docs/assessment-ledgers/jones-krauss-christianity-secular-ethics-2025.json"
+    },
+    {
+      "debateNumber": "03",
+      "debateId": "hitchens-dsouza-religion-problem-2010",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-03.json",
+      "sha256": "bc0ca0104775dcdd529cb4b2805f834bc1c8f4ef585edffbb3baf5c039fc3f4f",
+      "proposedAdapterSha256": "f35c9c4c72c620bee074920d127f001469ce5ce65f167837e15c533f58303aef",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/hitchens-dsouza-religion-problem-2010.json",
+      "stagedLedgerSha256": "f35c9c4c72c620bee074920d127f001469ce5ce65f167837e15c533f58303aef",
+      "stagedLedgerBytes": 115446,
+      "productionLedgerPath": "docs/assessment-ledgers/hitchens-dsouza-religion-problem-2010.json"
+    },
+    {
+      "debateNumber": "185",
+      "debateId": "dennett-caruso-free-will-responsibility-2021",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/packets/debate-185.json",
+      "sha256": "e16545207d04b5270c5ac67e18ba3f6192dff52a639df31e12d885a877168fc5",
+      "proposedAdapterSha256": "a8f7c771639cbebca2ca6346585ef98e32628c4375000de650cbdc53cd368ae2",
+      "stagedLedgerPath": "docs/assessment-production/post-canary-continuation-v1/batch-04/production-compatibility/output-bundle/staged-ledgers/dennett-caruso-free-will-responsibility-2021.json",
+      "stagedLedgerSha256": "a8f7c771639cbebca2ca6346585ef98e32628c4375000de650cbdc53cd368ae2",
+      "stagedLedgerBytes": 116184,
+      "productionLedgerPath": "docs/assessment-ledgers/dennett-caruso-free-will-responsibility-2021.json"
+    }
+  ],
+  "executionToolHashes": {
+    "scripts/lib/assessment-production-post-canary-batch-04-compatibility.mjs": "1eccec91ce42645266ab73648e65843bc4608912dc64c5f040a2c9481f20e86b",
+    "scripts/lib/assessment-production-post-canary-batch-04-compatibility-execution.mjs": "2ccf4791b9b35ec2ce4f72aaa02e5072aa2c880b90bb495cb01c176d8fdb71b5",
+    "scripts/activate-assessment-production-post-canary-batch-04-compatibility.mjs": "0dd718527e69e38ce9d063744b6b33045084e5f425cc142cae92b49762f43f33",
+    "scripts/test-assessment-production-post-canary-batch-04-compatibility-activation.mjs": "2893049c3fa413250273a87a0cf5dd85c763dbf3be6488d067be072c03cb34be",
+    "scripts/run-assessment-production-post-canary-batch-04-compatibility.mjs": "055a34fe5575d0bf97873b44abb805c997fcb9fbf6113fd229d42aa3cef68312",
+    "scripts/test-assessment-production-post-canary-batch-04-compatibility-execution.mjs": "0235b7d70b1bb89250c0b289260dd0963fa554e4bd36db2a958ad64a63229f91"
+  },
+  "protectedProduction": {
+    "debates": {
+      "path": "src/data/debates.js",
+      "sha256": "a4d06760aafa48796398ab51c7c4630ca4017dc02563706dfeda782357d755f7"
+    },
+    "references": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b"
+    },
+    "productionLedgers": {
+      "files": 41,
+      "digest": "ca07c46e7222da8a4d7c322f855a963e6f95f820e704aa9a1fdc4e4a4802d319"
+    }
+  },
+  "executionDiscipline": {
+    "compatibilityPassesMaximum": 1,
+    "attemptsPerPass": 1,
+    "rerunsAllowed": false,
+    "retriesAllowed": false,
+    "automaticRepairsAllowed": false,
+    "packetRewritesAllowed": false,
+    "adapterRewritesAllowed": false,
+    "timeoutExtensionsAllowed": false
+  },
+  "requiredRegressions": [
+    "Batch 4 route positive and negative controls",
+    "checkpoint v2.2 route and score replay",
+    "Batch 1 route and score replay",
+    "Batch 2 route and score replay",
+    "Batch 3 route and score replay",
+    "legacy Rubric v2 and v2.1 calculations",
+    "reference validation",
+    "full repository check"
+  ],
+  "authorization": {
+    "executionActivation": true,
+    "compatibilityExecution": true,
+    "validatorMigration": true,
+    "stagingLedgerWrite": true,
+    "compatibilityPasses": 1,
+    "compatibilityRerun": false,
+    "packetRewrite": false,
+    "adapterRewrite": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false,
+    "scoreRerun": false,
+    "proseRewrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-one-frozen-batch-04-production-compatibility-staging-pass-no-reruns"
+}
