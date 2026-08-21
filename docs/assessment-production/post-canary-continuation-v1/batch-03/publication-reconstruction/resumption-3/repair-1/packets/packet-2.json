@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-1",
+  "packetIndex": 2,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-3/outputs/debate-27.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-27.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-objective-logic-subjective-reasoning.critique",
+      "moveProse.pro-evolution-self-reference-basic-belief.critique"
+    ],
+    "orderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-objective-logic-subjective-reasoning.critique",
+      "moveId": "con-objective-logic-subjective-reasoning",
+      "originalCritique": "Strongest feature: The reply affirms objective logical rules while distinguishing them from conclusions dependent on adopted premises, offering a plausible compatibility response rather than denying the normative structure of inference. Principal limitation: Calling reason itself subjective confuses discretionary premise selection with the validity of reasoning, generating material terminological instability and obscuring whether the claimed subjectivity concerns psychology, justification, or logical consequence. Live burden: The con case must reformulate the distinction precisely, explain why objective validity requires no divine ontology, and show how premise-relative moral conclusions differ from categorical obligations without collapsing either category. Locked score: The strong band recognizes direct contact, coherent conditional structure, stable scope, and proportionate possibility language, while the ambiguous description of reason and incomplete ontology of logical norms prevent the answer from fully resolving the grounding challenge.",
+      "originalWords": 131,
+      "originalCharacters": 1059,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-objective-logic-subjective-reasoning",
+        "sectionId": "section-reason-logic-and-reliability",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Objective logical rules may exist even though reasoning remains dependent on adopted assumptions, just as conditional moral conclusions can follow objectively from chosen premises.",
+        "importance": 2,
+        "finalScore": 80,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "30:02",
+        "sourceSpan": {
+          "startEvent": 864,
+          "endEvent": 871,
+          "startMs": 1802399,
+          "endMs": 1821519
+        },
+        "sourceExcerpt": "of logic well yes there are there are objective um rules and tenants of reason but reason itself is subjective in the same way that morality you can say under certain assumptions there are objective truths about morality if you have a certain assumption about R about reason then yes there are objective tenden well",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 55,
+          "characterCount": 315
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-naturalist-reliability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-logic-reason-naturalist-grounding"
+          ],
+          "components": [
+            {
+              "componentId": "con-objective-logic-subjective-reasoning-component-01",
+              "targetMoveId": "pro-logic-reason-naturalist-grounding",
+              "text": "Whether objective logical rules are compatible with reasoning whose conclusions depend on adopted assumptions.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts the logical-law challenge by affirming objective rules while distinguishing those rules from assumption-dependent applications of reason.",
+          "responsivenessWithinClass": {
+            "value": 86,
+            "rationale": "Within full answers, it directly addresses compatibility, though it does not provide an ontological explanation of logical laws."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "Within full answers, it directly addresses compatibility, though it does not provide an ontological explanation of logical laws."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "materially-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "Calling reason subjective is liable to confuse premise-relative conclusions with subjective logical validity."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move advances a compatibility distinction with explicit dependence on assumptions rather than claiming a complete ontology of logic."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro challenge seeks an ontological ground for logical laws, not merely compatibility with subjective premise choice.",
+          "decisiveQualification": "The reply answers compatibility but leaves the requested ontological explanation largely untouched."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 73,
+            "rationale": "Objective validity can coexist with premise-relative conclusions, but labeling reason itself subjective introduces a material equivocation."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It attacks the central claim that naturalism cannot sustain objective rational norms."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The distinction is fair and relevant, while the omitted ontological demand remains a bounded but important limitation."
+          }
+        },
+        "evidenceBasis": "The excerpt affirms objective rules of logic while claiming that conclusions about reason and morality can depend on adopted assumptions.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-evolution-self-reference-basic-belief.critique",
+      "moveId": "pro-evolution-self-reference-basic-belief",
+      "originalCritique": "Strongest feature: The reply isolates a genuine self-referential question for comprehensive evolutionary debunking and contrasts an unavoidable assumption with the epistemologically richer category of properly basic belief. Principal limitation: It broadens the opponent's causal explanation into the claim that every thought is evolution-produced, assumes causation defeats justification, and invokes proper basicality without stating reliability, defeasibility, or warrant conditions. Live burden: The pro case must demonstrate why evolved mechanisms cannot track truth, explain how reflective correction escapes the alleged defeater, and show why moral conviction qualifies as basic while the evolutionary belief does not receive comparable entitlement. Locked score: The mixed band recognizes diagnostic relevance and a clearly recoverable challenge while reflecting materially overstated necessity, unstable scope and terminology, missing qualification, and insufficient support for both the self-defeat claim and the proposed epistemic asymmetry.",
+      "originalWords": 133,
+      "originalCharacters": 1052,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "pro-evolution-self-reference-basic-belief",
+        "sectionId": "section-evolutionary-moral-experience",
+        "side": "pro",
+        "speaker": "Frank Turek",
+        "moveKind": "reply",
+        "proposition": "If every thought results from evolution, the evolutionary account cannot certify its own truth; by contrast, moral conviction may be a properly basic belief rather than a mere assumption.",
+        "importance": 3,
+        "finalScore": 72,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "46:54",
+        "sourceSpan": {
+          "startEvent": 1362,
+          "endEvent": 1373,
+          "startMs": 2814720,
+          "endMs": 2843880
+        },
+        "sourceExcerpt": "evolution you have to get outside the evolutionary process to believe that thought is true because if that thought is a result of the evolutionary process as well why believe it but again it's it's existentialism we have to have certain assumptions well what I'm saying this isn't just an assumption this is what we would call a properly basic belief it's not just an assumption",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 66,
+          "characterCount": 378
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-naturalist-reliability"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-revulsion-does-not-refute-subjectivism",
+            "con-causal-explanation-not-moral-justification",
+            "con-reason-necessary-epistemic-baseline"
+          ],
+          "components": [
+            {
+              "componentId": "pro-evolution-self-reference-basic-belief-component-01",
+              "targetMoveId": "con-revulsion-does-not-refute-subjectivism",
+              "text": "Whether an evolutionary origin account can warrant belief in its own truth rather than merely describe causal production.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-evolution-self-reference-basic-belief-component-02",
+              "targetMoveId": "con-causal-explanation-not-moral-justification",
+              "text": "Whether causal explanation of thought supplies epistemic justification for accepting the explanatory theory.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-evolution-self-reference-basic-belief-component-03",
+              "targetMoveId": "con-reason-necessary-epistemic-baseline",
+              "text": "Whether moral conviction is merely an assumption or may instead be treated as properly basic.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies an alleged self-referential defeat for evolutionary explanation and contrasts mere assumption with properly basic moral belief.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within diagnostic defeats, it explicitly contacts causal explanation's justificatory limits and states the self-undermining consequence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly contacts causal explanation's justificatory limits and states the self-undermining consequence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "'Every thought results from evolution' is broader than the opponent's causal account, while 'properly basic' is named without its defeasibility conditions."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The move treats evolutionary causation as automatically defeating its own theory without establishing an absence of truth-tracking mechanisms."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Evolution can causally produce cognitive systems whose generally accurate beliefs improve survival and can assess evolutionary theory through evidence.",
+          "decisiveQualification": "A causal origin does not itself defeat a belief unless a further reason shows the process to be unreliable regarding that belief."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (59 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 53,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (54 and 51); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly supports the pro naturalist-reliability bridge through a self-reference challenge."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (60 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says an evolutionary thought cannot certify evolution if it too results from evolution and labels moral conviction properly basic rather than assumed.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

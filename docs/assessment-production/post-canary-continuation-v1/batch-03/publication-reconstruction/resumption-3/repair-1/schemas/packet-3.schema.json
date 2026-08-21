@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-03-debate-27-publication-repair-3",
+  "title": "Slugfester Batch 3 Debate 27 bounded publication repair packet 3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 3
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "27"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "oconnor-turek-evil-moral-argument-2017"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-disagreement-not-unreality"
+      ],
+      "properties": {
+        "pro-disagreement-not-unreality": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-1",
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-3/outputs/debate-27.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-27.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-moral-argument-limited-conclusion.critique",
+      "moveProse.con-conscious-moral-status-circular-grounding.critique"
+    ],
+    "orderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-moral-argument-limited-conclusion.critique",
+      "moveId": "pro-moral-argument-limited-conclusion",
+      "originalCritique": "Strongest feature: The reply explicitly concedes that another deity could satisfy the immediate conclusion and cleanly separates a generic divine moral ground from the later, cumulative identification of Christianity. Principal limitation: This careful limitation protects the argument from overreach but does not itself supply evidence that any divine ground exists or show how the unspecified additional arguments complete the broader religious conclusion. Live burden: The pro case must therefore establish the narrower grounding inference on its own merits while preventing references to Christianity from carrying evidential weight unavailable from the moral argument itself. Locked score: The very strong band reflects a direct full answer, stable terminology, explicit qualification, proportionate possibility language, and unusually disciplined conclusion management, with only the inherent evidential modesty of a scope clarification limiting its independent constructive contribution.",
+      "originalWords": 131,
+      "originalCharacters": 994,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-moral-argument-limited-conclusion",
+        "sectionId": "section-burden-and-argument-scope",
+        "side": "pro",
+        "speaker": "Frank Turek",
+        "moveKind": "reply",
+        "proposition": "The moral argument aims to establish God as the ground of morality, not by itself to identify that ground specifically as the Christian God; other arguments are needed for that conclusion.",
+        "importance": 1,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "20:25",
+        "sourceSpan": {
+          "startEvent": 597,
+          "endEvent": 605,
+          "startMs": 1225679,
+          "endMs": 1243280
+        },
+        "sourceExcerpt": "it could be another God right yeah AB you're absolutely right and that's why I was to say that there are other arguments you don't get all the way to the Christian God with the moral argument but with other arguments I think uh in my opinion anyway you arrive at the grounding for Morality as God and that God happens to be the Christian God",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 66,
+          "characterCount": 341
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-scope"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-burden-agnostic-atheism-nonbelief"
+          ],
+          "components": [
+            {
+              "componentId": "pro-moral-argument-limited-conclusion-component-01",
+              "targetMoveId": "con-burden-agnostic-atheism-nonbelief",
+              "text": "The relevant demand is what positive conclusion the pro moral argument undertakes to establish.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly limits the argument to a divine moral ground and separates identification of Christianity into other arguments.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "It explicitly answers the scope question with a clear concession and boundary."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly answers the scope question with a clear concession and boundary."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The speaker explicitly distinguishes reaching a generic divine moral ground from identifying the Christian God through other arguments."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move carefully limits what the moral argument can establish and labels the further Christian conclusion as dependent on other arguments."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Even if morality requires a god, the argument does not identify the Christian God.",
+          "decisiveQualification": "The speaker accepts precisely that limitation and invokes other arguments for the more specific identification."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within the subsidiary tier, it directly and clearly completes the pro bridge limiting the argument's scope."
+          },
+          "representationalCharity": {
+            "value": 95,
+            "rationale": "The strongest scope objection is accurately and expressly conceded."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly concedes that another God could ground morality and says the moral argument alone does not reach the Christian God.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-conscious-moral-status-circular-grounding.critique",
+      "moveId": "con-conscious-moral-status-circular-grounding",
+      "originalCritique": "Strongest feature: The reply identifies a specific potentially circular sequence in which a transcendent being secures moral objectivity and that objectivity subsequently becomes evidence for the same being, making the diagnostic objection immediately intelligible. Principal limitation: The objection assumes that the proponent lacks independent reasons for divine reality or a noninferential account of God's explanatory role, so its categorical presentation outruns what this excerpt establishes. Live burden: The con case must show that consciousness dependence entails attitude dependence and must answer versions of the moral argument that treat God as an independently supported explanation rather than a premise introduced exclusively for this inference. Locked score: The very strong band reflects precise contact, strong coherence, and explicit qualification, tempered by slight overstatement concerning circularity and an incompletely defended transition from psychological dependence to moral subjectivism.",
+      "originalWords": 134,
+      "originalCharacters": 1018,
+      "excessWordsAboveAcceptanceMaximum": 4,
+      "lockedMove": {
+        "moveId": "con-conscious-moral-status-circular-grounding",
+        "sectionId": "section-objective-moral-grounding",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Moral wrongness depends on conscious psychology, and preserving it through a transcendent mind would assume the being invoked to establish objective morality before using that morality to argue for God.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "23:15",
+        "sourceSpan": {
+          "startEvent": 679,
+          "endEvent": 708,
+          "startMs": 1395000,
+          "endMs": 1461799
+        },
+        "sourceExcerpt": "That Couldn't still be wrong surely that wouldn't that would be a nonsense concept without some kind of human psychology the only way that you could argue that perhaps it would still be wrong is if there was some kind of transcendent being um but then you need to have that being in order to prove the existence of the objective morality that you're then using to prove the the God",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-divine-grounding"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-evil-good-divine-ground",
+            "pro-moral-argument-limited-conclusion"
+          ],
+          "components": [
+            {
+              "componentId": "con-conscious-moral-status-circular-grounding-component-01",
+              "targetMoveId": "pro-evil-good-divine-ground",
+              "text": "Whether invoking a transcendent divine mind independently grounds objective wrongness without circularity.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-conscious-moral-status-circular-grounding-component-02",
+              "targetMoveId": "pro-moral-argument-limited-conclusion",
+              "text": "Whether a generic divine ground can be inferred from objective morality rather than presupposed in defining it.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly identifies the alleged circular sequence—invoking a transcendent being to secure objectivity and then using that objectivity to prove the being—and states why it fails.",
+          "responsivenessWithinClass": {
+            "value": 96,
+            "rationale": "Within diagnostic defeats, it explicitly targets the central inference, names the circularity, and gives the defeating consequence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it explicitly targets the central inference, names the circularity, and gives the defeating consequence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The dependence claim and circularity objection are recoverable, with the transcendent-mind qualification explicitly stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The circularity objection is forceful and specific, but it assumes the pro argument has no independent route to the divine standard."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A divine-nature theorist may offer God independently and then explain moral facts rather than infer God circularly.",
+          "decisiveQualification": "The selected pro move itself supplies no independent reason for the divine being before using its nature as the standard."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the indispensable divine-grounding bridge."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says wrongness would be nonsensical without psychology and argues that invoking a transcendent being to establish morality before proving God is circular.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

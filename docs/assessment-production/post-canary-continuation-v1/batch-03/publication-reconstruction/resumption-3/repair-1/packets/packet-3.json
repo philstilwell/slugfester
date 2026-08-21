@@ -1,0 +1,162 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-1",
+  "packetIndex": 3,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-3/outputs/debate-27.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-27.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-disagreement-not-unreality.critique"
+    ],
+    "orderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-disagreement-not-unreality.critique",
+      "moveId": "pro-disagreement-not-unreality",
+      "originalCritique": "Strongest feature: The reply precisely distinguishes epistemology from ontology and uses a well-targeted scientific analogy to defeat the inference that disagreement or incomplete clarity, by itself, entails the absence of objective reality. Principal limitation: Showing that disagreement does not logically eliminate moral facts does not establish those facts, identify reliable access to them, or assess whether the extent and pattern of disagreement provide probabilistic evidence. Live burden: The pro case must supplement this successful defensive point with positive grounding evidence and explain how moral inquiry distinguishes genuine discovery from cultural projection, persistent bias, and conflicting intuition. Locked score: The very strong band reflects exact scope, stable terminology, explicit qualification, decisive responsiveness, matched categorical force, and substantial charity, while appropriately limiting credit to rebutting an invalid entailment rather than proving moral objectivity or divine grounding.",
+      "originalWords": 134,
+      "originalCharacters": 1032,
+      "excessWordsAboveAcceptanceMaximum": 4,
+      "lockedMove": {
+        "moveId": "pro-disagreement-not-unreality",
+        "sectionId": "section-disagreement-and-practical-judgment",
+        "side": "pro",
+        "speaker": "Frank Turek",
+        "moveKind": "reply",
+        "proposition": "Disagreement or lack of clarity about moral cases concerns knowledge of moral reality and does not show that objective morality is unreal, just as scientific disagreement does not eliminate the objective world.",
+        "importance": 2,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "49:29",
+        "sourceSpan": {
+          "startEvent": 1436,
+          "endEvent": 1449,
+          "startMs": 2969200,
+          "endMs": 3004240
+        },
+        "sourceExcerpt": "just reiterate that if the evolutionary process gives us our moral ideas it also gives us all of our ideas so why should we believe any of them but secondly not every issue needs to be crystal clear on morality for God to exist you know scientists disagree over aspects of the objective world but that doesn't mean there isn't an objective world that's a difference between again epistemology and ontology",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 405
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-disagreement"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-compelling-yet-culturally-contingent-judgment",
+            "con-evolved-dispositions-conditional-rules",
+            "con-revulsion-does-not-refute-subjectivism"
+          ],
+          "components": [
+            {
+              "componentId": "pro-disagreement-not-unreality-component-01",
+              "targetMoveId": "con-compelling-yet-culturally-contingent-judgment",
+              "text": "Whether moral disagreement or lack of clarity entails that there is no objective moral reality.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-disagreement-not-unreality-component-02",
+              "targetMoveId": "con-evolved-dispositions-conditional-rules",
+              "text": "Whether variation in moral judgment by itself establishes only conditional or subjective morality.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-disagreement-not-unreality-component-03",
+              "targetMoveId": "con-revulsion-does-not-refute-subjectivism",
+              "text": "Whether epistemic difficulty should be distinguished from the ontological existence of moral facts.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly diagnoses an inference from disagreement to unreality and defeats it by distinguishing knowledge from ontology through a scientific analogy.",
+          "responsivenessWithinClass": {
+            "value": 95,
+            "rationale": "Within diagnostic defeats, it directly identifies the inference gap and gives a clear counterexample and consequence."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within diagnostic defeats, it directly identifies the inference gap and gives a clear counterexample and consequence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between disagreement about reality and the existence of reality is explicit and consistently limited."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The narrow claim that disagreement alone does not entail unreality is fully warranted and does not claim disagreement is irrelevant evidence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Persistent patterned disagreement may be evidence against accessible objective moral facts even if it does not logically disprove them.",
+          "decisiveQualification": "The reply defeats entailment from disagreement to unreality but does not answer every evidential argument from disagreement."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within the subsidiary tier, it directly and strongly supports the pro bridge distinguishing disagreement from moral unreality."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The strongest evidential alternative is preserved as a qualification while the targeted ontological inference is correctly rejected."
+          }
+        },
+        "evidenceBasis": "The excerpt says moral issues need not all be clear and compares moral disagreement with scientists disagreeing about aspects of an objective world.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

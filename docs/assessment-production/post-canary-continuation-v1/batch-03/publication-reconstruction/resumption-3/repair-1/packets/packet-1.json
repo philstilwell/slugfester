@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-1",
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 3,
+  "stagingOnly": true,
+  "debateNumber": "27",
+  "debateId": "oconnor-turek-evil-moral-argument-2017",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/resumption-3/outputs/debate-27.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-reconstruction/packets/debate-27.json",
+  "participantJudgmentWasScoreBlind": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-evolved-dispositions-conditional-rules.critique",
+      "moveProse.pro-logic-reason-naturalist-grounding.critique"
+    ],
+    "orderedLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "scoresUnavailableAsOutputFields": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-evolved-dispositions-conditional-rules.critique",
+      "moveId": "con-evolved-dispositions-conditional-rules",
+      "originalCritique": "Strongest feature: The move offers a concrete evolutionary explanation for shared practical dispositions while explicitly limiting the resulting rules to an assumed survival or well-being objective and denying that unanimity creates mind independence. Principal limitation: Describing goal-relative conclusions as objective destabilizes the central terminology, because valid conditional guidance differs importantly from categorical moral truth and from objectivity independent of every valuing mind. Live burden: The account must explain why particular ends receive practical authority, how conflicts among survival, flourishing, and individual preference are resolved, and whether its conditional norms deserve specifically moral rather than merely instrumental status. Locked score: The very strong band reflects a well-calibrated explanatory possibility, substantial motion contact, and clear qualifications, with terminological instability and incomplete normative grounding preventing the evolutionary account from fully resolving the ontological dispute.",
+      "originalWords": 131,
+      "originalCharacters": 1062,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-evolved-dispositions-conditional-rules",
+        "sectionId": "section-evolutionary-moral-experience",
+        "side": "con",
+        "speaker": "Alex O'Connor",
+        "moveKind": "reply",
+        "proposition": "Evolutionary survival dispositions can support conditionally objective behavioral rules once well-being is assumed as a goal, while even unanimous condemnation would not make morality mind-independent.",
+        "importance": 3,
+        "finalScore": 86,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "25:03",
+        "sourceSpan": {
+          "startEvent": 727,
+          "endEvent": 771,
+          "startMs": 1503840,
+          "endMs": 1605640
+        },
+        "sourceExcerpt": "morality so because Evolution has instilled build within us um through our through genetics a a a a drive to stay alive um then we can derive objective moral truths about how we should act in order um that complies with this inner nature which I think has come about through Evolution so even if you're even if you don't subscribe to the idea that uh certain moral actions such as",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-experience-without-god"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-evil-good-divine-ground",
+            "pro-moral-argument-limited-conclusion"
+          ],
+          "components": [
+            {
+              "componentId": "con-evolved-dispositions-conditional-rules-component-01",
+              "targetMoveId": "pro-evil-good-divine-ground",
+              "text": "Whether compelling moral judgments require mind-independent goodness and a divine standard.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-evolved-dispositions-conditional-rules-component-02",
+              "targetMoveId": "pro-moral-argument-limited-conclusion",
+              "text": "Whether conditional practical rules can explain moral experience without reaching any divine ground.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move contacts the need for a divine explanation by offering evolved dispositions and conditional rules while explicitly denying that consensus yields mind independence.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "Within full answers, it directly supplies a nondivine account of moral experience, though some empirical warrants remain compressed."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it directly supplies a nondivine account of moral experience, though some empirical warrants remain compressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional structure is explicit, but calling goal-relative conclusions objective risks instability between conditional and mind-independent objectivity."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move offers evolution as an explanatory possibility and expressly limits resulting rules to an assumed survival or well-being end."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The pro claim concerns categorical obligation, not merely the existence of convergent conditional behavioral rules.",
+          "decisiveQualification": "The evolutionary account explains felt and shared rules but does not itself establish or disprove categorical normativity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, it directly advances a naturalistic account of compelling moral experience without a divine ground."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt attributes a drive to survive to evolution and derives behavioral rules conditional on that drive, while denying that agreement creates objective morality.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-logic-reason-naturalist-grounding.critique",
+      "moveId": "pro-logic-reason-naturalist-grounding",
+      "originalCritique": "Strongest feature: The reply directly separates merely assuming reason from explaining its trustworthiness and presses a distinct ontological question about logical laws, thereby contacting both epistemic reliability and naturalistic grounding. Principal limitation: Calling logical laws immaterial because they are not molecular does not establish that they are entities requiring supernatural explanation, and the passage does not specify which version of naturalism faces the objection. Live burden: The argument must clarify whether logical laws are propositions, relations, abstractions, or norms, then demonstrate why nominalist, conceptualist, structural, or realist naturalistic treatments are inadequate and why divine cognition improves the explanation. Locked score: The strong band reflects excellent responsiveness, substantial relevance, and appropriately interrogative force, moderated by partly unstable terminology, implicit qualification, and the absence of a developed inference from nonmateriality to a divine ground.",
+      "originalWords": 132,
+      "originalCharacters": 1037,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-logic-reason-naturalist-grounding",
+        "sectionId": "section-reason-logic-and-reliability",
+        "side": "pro",
+        "speaker": "Frank Turek",
+        "moveKind": "reply",
+        "proposition": "Treating reason as an evolved assumption does not explain why it is trustworthy or account for objective, immaterial laws of logic that are not composed of matter.",
+        "importance": 3,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "29:21",
+        "sourceSpan": {
+          "startEvent": 845,
+          "endEvent": 875,
+          "startMs": 1761440,
+          "endMs": 1831200
+        },
+        "sourceExcerpt": "um rules and tenants of reason but reason itself is subjective in the same way that morality you can say under certain assumptions there are objective truths about morality if you have a certain assumption about R about reason then yes there are objective tenden well that's what I mean these these immaterial laws of logic that aren't made of molecules how do we explain those on",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-reason-baseline"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-reason-necessary-epistemic-baseline",
+            "con-evolved-dispositions-conditional-rules"
+          ],
+          "components": [
+            {
+              "componentId": "pro-logic-reason-naturalist-grounding-component-01",
+              "targetMoveId": "con-reason-necessary-epistemic-baseline",
+              "text": "Whether calling reason a necessary assumption explains its trustworthiness or the status of objective logical laws.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-logic-reason-naturalist-grounding-component-02",
+              "targetMoveId": "con-evolved-dispositions-conditional-rules",
+              "text": "Whether assumption-dependent conclusions account for objective norms rather than merely applying stipulated premises.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly challenges both the unexplained trustworthiness of assumed reason and the naturalistic account of objective immaterial logical laws.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "Within full answers, it explicitly contacts the decisive explanatory gap and adds a closely connected challenge about logical norms."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it explicitly contacts the decisive explanatory gap and adds a closely connected challenge about logical norms."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The challenges are recoverable, but immaterial shifts from not being molecular to potentially requiring nonnatural grounding without clarification."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The move mostly poses explanatory questions rather than claiming their answers are impossible, keeping its expressed force proportionate."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A naturalist may treat logical laws as abstract relations or descriptions without claiming that they are material objects.",
+          "decisiveQualification": "The move establishes an explanatory question but does not exclude these non-theistic naturalist or nominalist accounts."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The trustworthiness challenge is coherent, but the move compresses the bridge from nonmolecular logical laws to a problem specifically for naturalism."
+          },
+          "evidenceWarrant": {
+            "value": 55,
+            "rationale": "The passage provides questions and assertions rather than a defended comparison among accounts of logic."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "Within the subsidiary tier, it directly attacks the con reason-baseline bridge at its unresolved explanatory point."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "It frames naturalism as needing molecules for logic and omits the strongest abstract-relation alternative."
+          }
+        },
+        "evidenceBasis": "The excerpt questions how assumed reason is trustworthy and asks how naturalism explains objective immaterial laws of logic that are not molecules.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

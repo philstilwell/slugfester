@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-03-debate-27-publication-repair-0",
+  "title": "Slugfester Batch 3 Debate 27 bounded publication repair packet 0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 0
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "27"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "oconnor-turek-evil-moral-argument-2017"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-moral-argument-limited-conclusion",
+        "con-conscious-moral-status-circular-grounding"
+      ],
+      "properties": {
+        "pro-moral-argument-limited-conclusion": {
+          "type": "string",
+          "minLength": 880
+        },
+        "con-conscious-moral-status-circular-grounding": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}
