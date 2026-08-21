@@ -1,0 +1,341 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-debate-27-publication-repair-model-execution",
+  "protocolId": "assessment-production-post-canary-batch-03-publication-resumption-3-debate-27-repair-1",
+  "status": "batch-03-debate-27-four-context-publication-repair-passed",
+  "gateStartedAt": "2026-08-21T03:46:02.081Z",
+  "gateCompletedAt": "2026-08-21T03:49:15.378Z",
+  "contextsPlanned": 4,
+  "contextsAttempted": 4,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 4,
+  "invalidContexts": 0,
+  "attempts": 4,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrectionContexts": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 193297,
+  "aggregateModelElapsedMs": 258994,
+  "rampPhases": [
+    {
+      "phase": "repair-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "repair-ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "repair-steady-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        3
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3
+      ],
+      "validContextIndexes": [
+        3
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T03:46:02.082Z",
+      "completedAt": "2026-08-21T03:47:33.598Z",
+      "elapsedMs": 91516,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "acceptedOutputsAvailableToModel": false,
+      "otherRepairPacketsAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-moral-argument-limited-conclusion.critique",
+        "moveProse.con-conscious-moral-status-circular-grounding.critique"
+      ],
+      "copiedInputBytes": 31705,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "daf52db9fafb2763c55c1e43c3cde6ffb11f366fd43a8c79be7033b38e226e19",
+      "stderrSha256": "092c6c0efbf1253d56af44fd433469f593fe405339b4248595975261d95c6da4",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "b0a530e1fe060a05d2bd5c4c18bc92fec0cf8526212a13af77e8c1b4553e4076",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "27",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-moral-argument-limited-conclusion.critique",
+            "words": 117,
+            "characters": 937,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-conscious-moral-status-circular-grounding.critique",
+            "words": 118,
+            "characters": 917,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T03:47:33.613Z",
+      "completedAt": "2026-08-21T03:48:39.351Z",
+      "elapsedMs": 65738,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "acceptedOutputsAvailableToModel": false,
+      "otherRepairPacketsAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-evolved-dispositions-conditional-rules.critique",
+        "moveProse.pro-logic-reason-naturalist-grounding.critique"
+      ],
+      "copiedInputBytes": 32453,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "b093dc0bf25e1b0010bb0a5dbd3d315eca515d7027c7ab0307a2a02b151004ce",
+      "stderrSha256": "7d506d3587d75b1a3b9bc86fa4e019163581d75d3cb6996ea5efca08060bf2cb",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "6cf25019546110a341c450f2a8f78a26cdc481afe7964524106ae6ed8fde71a9",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "27",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-evolved-dispositions-conditional-rules.critique",
+            "words": 116,
+            "characters": 975,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-logic-reason-naturalist-grounding.critique",
+            "words": 114,
+            "characters": 951,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T03:47:33.613Z",
+      "completedAt": "2026-08-21T03:48:45.203Z",
+      "elapsedMs": 71590,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "acceptedOutputsAvailableToModel": false,
+      "otherRepairPacketsAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-objective-logic-subjective-reasoning.critique",
+        "moveProse.pro-evolution-self-reference-basic-belief.critique"
+      ],
+      "copiedInputBytes": 32506,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "25dd5cefdd77d99c2462a2819746c97edf914a70c0d899dfc4c2fc20cba72702",
+      "stderrSha256": "223cb1801414c7c91881d0248bac2d2d6299b830cfa1d4a3db062db95d0cb4e1",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "81195c16eda06ff092860122693a1d28dfd4f2a52b9d55bbc65c3a816b1749d6",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "27",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-objective-logic-subjective-reasoning.critique",
+            "words": 118,
+            "characters": 1012,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-evolution-self-reference-basic-belief.critique",
+            "words": 119,
+            "characters": 968,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionContextCount": 0,
+      "startedAt": "2026-08-21T03:48:45.217Z",
+      "completedAt": "2026-08-21T03:49:15.367Z",
+      "elapsedMs": 30150,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "acceptedOutputsAvailableToModel": false,
+      "otherRepairPacketsAvailableToModel": false,
+      "participantJudgmentWasScoreBlind": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-disagreement-not-unreality.critique"
+      ],
+      "copiedInputBytes": 25655,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "45829dd8928b4f790afce4b43ff77e8cd52824f20a755278fcc08e4f27df522b",
+      "stderrSha256": "2c5e6f5cdb32bf46e9da1f75b29468f30b054c205992c4610cd19aa1d8ca8279",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "repairOutputSha256": "40548995b82c8aaee002b8e73da466db786332975a7e5b9a73ab0e125ac37cb8",
+      "validationWritten": true,
+      "provenanceWritten": true,
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "27",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-disagreement-not-unreality.critique",
+            "words": 122,
+            "characters": 1064,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "originalFailedOutputPreserved": true,
+  "acceptedNineDebateCohortUnavailableToModels": true,
+  "participantJudgmentWasScoreBlind": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "authorization": {
+    "deterministicAnalysisAndMerge": true,
+    "deterministicCohortReplay": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveRepair": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
