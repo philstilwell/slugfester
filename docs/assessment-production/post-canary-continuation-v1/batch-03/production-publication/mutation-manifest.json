@@ -1,0 +1,602 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-03-production-publication-mutation-manifest",
+  "protocolId": "assessment-production-post-canary-batch-03-production-publication",
+  "status": "frozen-batch-03-production-publication-mutation-manifest-prepared",
+  "frozenAt": "2026-08-21T17:00:00.000Z",
+  "baselineCommit": "f563595613a5a5e1ad9155bace7b2289ed7b6587",
+  "productionCanary": false,
+  "batchNumber": 3,
+  "preparationOnly": true,
+  "directIncrementalCostCapUsd": 0,
+  "explicitOrder": [
+    "124",
+    "14",
+    "58",
+    "150",
+    "157",
+    "102",
+    "09",
+    "181",
+    "138",
+    "27"
+  ],
+  "invariants": {
+    "assessmentModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "completedModelPassesWereIsolated": true,
+    "scoreBlindnessPreserved": true,
+    "roundedIntegerScoreTiesPermitted": true,
+    "activeScoreStabilityPolicy": "v2.2",
+    "scorePassesAlreadyCompleted": 1,
+    "futureScorePassesAuthorized": 0,
+    "modelsInThisStage": 0,
+    "paidServicesInThisStage": 0
+  },
+  "compatibilityAcceptance": {
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/analysis.json",
+      "sha256": "ebb3bcbad4b1235c163ee0656bb535f08bd68a9d6ad158fa05e5b817f05f75f0",
+      "bytes": 2337
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/execution.json",
+      "sha256": "fd374f9fa3bbaa3cafa4630ea8def123b7fdb2fbf2047d31739aea6128d5d163",
+      "bytes": 13626
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/execution-activation.json",
+      "sha256": "9bf487c6b9204894434b33345058d13fbf8fe62748ceaf5148a9629b52110e42",
+      "bytes": 16887
+    },
+    "preparation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/preparation-manifest.json",
+      "sha256": "abffa073d1ddaf5396e5dc189d6d5e3c389fbaff6c649865ed4d8fb39fc5d80c",
+      "bytes": 25946
+    },
+    "requiredGatePassed": true
+  },
+  "validator": {
+    "path": "scripts/validate-debates.mjs",
+    "sha256": "8054bcd6101cd8b6df28a5329187becff74d8bc1d6e687fa848b6c782c3778c4",
+    "bytes": 32783,
+    "rewriteAuthorized": false
+  },
+  "scorePolicy": {
+    "promotion": {
+      "path": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+      "sha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+      "bytes": 4896
+    },
+    "activeControl": {
+      "path": "scripts/lib/assessment-production-score-stability-policy-active.mjs",
+      "sha256": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+      "bytes": 1331
+    },
+    "activeControlTest": {
+      "path": "scripts/test-assessment-production-score-stability-policy-active.mjs",
+      "sha256": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1",
+      "bytes": 3037
+    }
+  },
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/standing-authorization.json",
+    "sha256": "7f46c90c1243062e6472f586a1e93db35b43f0b386acc19afb37b23f2adf237b",
+    "bytes": 11108
+  },
+  "failureRecoveryAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/failure-recovery-standing-authorization.json",
+    "sha256": "f090b4f6302f8aac4938303fb89e1229dfea5115c23fe172546eb7d27006819f",
+    "bytes": 8404
+  },
+  "productionBaseline": {
+    "debates": {
+      "path": "src/data/debates.js",
+      "sha256": "53e43d9c500a3cdb25ef0a92537ea4071bb63d7f4c11a0823b9e5f6dcbbe4d40",
+      "bytes": 4844061,
+      "debateCount": 195,
+      "exactBatchRecordsLocated": 10
+    },
+    "references": {
+      "path": "src/data/references.js",
+      "sha256": "b814bb04cf46e6423acd0981b70380a37c22273a1e9fbb14991ec9704920b57b",
+      "bytes": 4467,
+      "mustRemainByteIdentical": true
+    },
+    "existingProductionLedgers": {
+      "directory": "docs/assessment-ledgers",
+      "count": 31,
+      "digestAlgorithm": "sha256 of sorted path<TAB>sha256<TAB>bytes<LF>",
+      "inventorySha256": "2c197743d8615ef2e7708db3472752ad71b7a7425fc79fccb1f1c275cc97d7de",
+      "compatibilityInventorySha256": "80aa241217eec12b60707db5bd002e4ab370172104ad3c44a23083a8df1b8b18",
+      "files": [
+        {
+          "path": "docs/assessment-ledgers/craig-clifton-kalam-cosmological-argument-2021.json",
+          "sha256": "c75445d9a3970d2ac28ae7a6330436e5b644c636ae633254694a7d3500559f4f",
+          "bytes": 108198
+        },
+        {
+          "path": "docs/assessment-ledgers/craig-harris-moral-foundations-2011.json",
+          "sha256": "7c24813c56e312e9a8597b338e0fd6f35f7908ebef1d264a2824c769f015d5ad",
+          "bytes": 114972
+        },
+        {
+          "path": "docs/assessment-ledgers/craig-oconnor-god-debate-2026.json",
+          "sha256": "cb0f23d5d13737c1284cb9e5cb612372ce8875c56c545c5b444b57177027ff5d",
+          "bytes": 13723
+        },
+        {
+          "path": "docs/assessment-ledgers/craig-shook-existence-god-2008.json",
+          "sha256": "08b98cb619d5d60ab9070c968f57e5d9384fe0e6fc22f135cf2dddfcee3a40c3",
+          "bytes": 122994
+        },
+        {
+          "path": "docs/assessment-ledgers/cutter-oppy-mind-brain-harmony-god-2025.json",
+          "sha256": "7d89d9758e4100df045830ec6dca0f3f0712eec27761dd6900f69df0b5941d8a",
+          "bytes": 104691
+        },
+        {
+          "path": "docs/assessment-ledgers/donahue-fodor-case-against-christianity-2025.json",
+          "sha256": "7b951548dcf4110716ba5b82885ddaa123422e2c014281ca96e9dfbfa71ba476",
+          "bytes": 108727
+        },
+        {
+          "path": "docs/assessment-ledgers/douthat-ehrman-resurrection-gospel-history-2026.json",
+          "sha256": "21453dee76054514f6605db79529b488381a3b7555ad88f0db937550889cc59d",
+          "bytes": 107182
+        },
+        {
+          "path": "docs/assessment-ledgers/dyer-malpass-tag-argument-2019.json",
+          "sha256": "9ee905f709f3866f9e1069dced54fe45a0e29008c20521b4597e441e41ba606d",
+          "bytes": 108383
+        },
+        {
+          "path": "docs/assessment-ledgers/enoch-bush-objective-moral-truths-2026.json",
+          "sha256": "1053187ec4a95a9c50780e2720e27b1d898d2cf8aa5e0951a78ef0b78afb907e",
+          "bytes": 113917
+        },
+        {
+          "path": "docs/assessment-ledgers/harris-dennett-free-will-2018.json",
+          "sha256": "32f699b6ec283fbf4e0a56b79763f82083c2389bc59ba99573835ba5b81c0052",
+          "bytes": 120912
+        },
+        {
+          "path": "docs/assessment-ledgers/hitchens-mcgrath-religious-belief-2007.json",
+          "sha256": "d5698a17ca5130ac9f13e6dd640618115b8d0e03116d27fe5acfc8ee1a475f47",
+          "bytes": 110237
+        },
+        {
+          "path": "docs/assessment-ledgers/hitchens-ramadan-islam-peace-2010.json",
+          "sha256": "74ad6bc16b19c778818af2f28bb1a2cc6ebdc5604265bdd9078ecaf05bc54511",
+          "bytes": 123847
+        },
+        {
+          "path": "docs/assessment-ledgers/horn-dillahunty-resurrection-reasonable-2021.json",
+          "sha256": "eb5931a4f67e63d2b9c983811b68327a14d57c92e2c836749d7cc434db45842a",
+          "bytes": 136124
+        },
+        {
+          "path": "docs/assessment-ledgers/horn-oconnor-god-existence-2020.json",
+          "sha256": "46c71692c95df62c6fa603fd371b237d6ae9e3a6ceae2e1c1474b0b4d6088a05",
+          "bytes": 102969
+        },
+        {
+          "path": "docs/assessment-ledgers/hunter-dillahunty-christian-god-exist-2019.json",
+          "sha256": "767e6fc5cfba71c96f57aa8cb0ea9ad73aa97c2826346841b108109e04bf1ea7",
+          "bytes": 117575
+        },
+        {
+          "path": "docs/assessment-ledgers/jones-jump-digital-physics-god-2019.json",
+          "sha256": "deb2974bac689bc5fd60c43e92da52ce4403f5736e824511fca6ee31a5e6bc1a",
+          "bytes": 117554
+        },
+        {
+          "path": "docs/assessment-ledgers/knechtle-dillahunty-christianity-true-2023.json",
+          "sha256": "17cc8e78b875c4df851b2fc5eb5285f0950955800cb0691eb744116d2cd14afe",
+          "bytes": 108970
+        },
+        {
+          "path": "docs/assessment-ledgers/knechtle-oconnor-christian-morality-2025.json",
+          "sha256": "eeb1522ffab43a3022e8050c243ba4db2e87d8dee0d7eaedb78ab1114f11908f",
+          "bytes": 77779
+        },
+        {
+          "path": "docs/assessment-ledgers/lennox-atkins-science-explain-everything-2019.json",
+          "sha256": "66689e7a2b25579f17d2cf8af01ada044a6f8b8805defc3aca745e5a4816ef11",
+          "bytes": 111187
+        },
+        {
+          "path": "docs/assessment-ledgers/loke-oppy-kalam-causal-principle-2020.json",
+          "sha256": "cb45753c739ebfb8013c2f5658cf3ed8c8ab2ca9fa4abb1771643ab748f107c0",
+          "bytes": 114323
+        },
+        {
+          "path": "docs/assessment-ledgers/oconnor-baker-hytch-argument-from-reason-2020.json",
+          "sha256": "eb8f19682600f86f2686b20ed6fa30dffaf3245484c11473a5b0a673a62a2aaf",
+          "bytes": 107106
+        },
+        {
+          "path": "docs/assessment-ledgers/oconnor-craig-resurrection-2023.json",
+          "sha256": "14890251ec5b7a5796faf6679dcbd8dea6ecfc0e90ebc5334667966ad43676a7",
+          "bytes": 82543
+        },
+        {
+          "path": "docs/assessment-ledgers/oppy-pearce-is-there-a-god-2022.json",
+          "sha256": "fce8f35ea328b24da817f8588269f8b389ac99860acb34d803ca74bd06ca4bb3",
+          "bytes": 104833
+        },
+        {
+          "path": "docs/assessment-ledgers/plantinga-law-eaan-rational-belief-2010.json",
+          "sha256": "bfe325a35ae1592e702cd8e49ed621662a4116ebb72ed01a63491f9b9254902f",
+          "bytes": 100525
+        },
+        {
+          "path": "docs/assessment-ledgers/rasmussen-clifton-contingency-argument-2019.json",
+          "sha256": "b33abde83f178f7a881aa075eb70e32de2757d9c2b8308aec15d0c15a922e5e3",
+          "bytes": 117101
+        },
+        {
+          "path": "docs/assessment-ledgers/russell-copleston-existence-of-god-1948.json",
+          "sha256": "dd06ca9f851b681ba38df42e5a33f99155b5d4788d7d7543c63859ccff4f6d84",
+          "bytes": 104029
+        },
+        {
+          "path": "docs/assessment-ledgers/swinburne-huemer-theism-coherent-2026.json",
+          "sha256": "2b7f9ef78bcd578c88636296451278a75e1f225cfd811e8a8dfa8c886c422681",
+          "bytes": 106872
+        },
+        {
+          "path": "docs/assessment-ledgers/tour-swamidass-origin-life-chemistry-2020.json",
+          "sha256": "8ecf47690a057ca7c1a3acf657f1f6bae55e31ead4071841e6fc4c04af08e4fc",
+          "bytes": 100503
+        },
+        {
+          "path": "docs/assessment-ledgers/turek-hitchens-god-existence-2008.json",
+          "sha256": "41bbf2134444a6c80eba0f79315f479eb577ae8d9e6eab791bb0918b3b122343",
+          "bytes": 116216
+        },
+        {
+          "path": "docs/assessment-ledgers/woodford-edwards-rational-belief-god-2023.json",
+          "sha256": "23979fdd9cd993babbd1e643ec2b49dcf2a4ff65f62bc8ca55ed31b55e73c00e",
+          "bytes": 99226
+        },
+        {
+          "path": "docs/assessment-ledgers/woodford-scrivener-religion-poisons-everything-2026.json",
+          "sha256": "793e9f0b3ddd4f2531f61abc2a772fd02dcd8c4e11afdfd941366630cc6134f7",
+          "bytes": 133189
+        }
+      ],
+      "mustRemainByteIdentical": true
+    },
+    "batchProductionLedgersAbsent": 10
+  },
+  "debates": [
+    {
+      "debateNumber": "124",
+      "debateId": "harris-peterson-god-atheism-bible-2018",
+      "productionRecordIndex": 123,
+      "currentProductionRecordSha256": "45c8edcdaef24a47a1a243a8cbdd537f3dcd2ca757241be7743b0cd01308cd31",
+      "currentProductionRecordBytes": 23298,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-124.json",
+        "sha256": "799b6a27e5fe4cbe8e660f4138a6528db88aa9b049da87c729a36aff970ff87f",
+        "bytes": 49421
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/harris-peterson-god-atheism-bible-2018.json",
+        "sha256": "b42063a802f4d32615f503b771f058eb9eca93ac056d571eddc385df0301a550",
+        "bytes": 136206
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-124.json",
+        "sha256": "a123e87a15d97ef9788a147157a5c7b4afaf76cf0857cfb788ffad4c97207e39",
+        "bytes": 144248
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/harris-peterson-god-atheism-bible-2018.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "14",
+      "debateId": "jones-carrier-god-existence-2025",
+      "productionRecordIndex": 13,
+      "currentProductionRecordSha256": "e13fa07375ddadeb7ab458331792728a25c2a22250e04b2ae2f368c2f80dda9b",
+      "currentProductionRecordBytes": 18597,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-14.json",
+        "sha256": "8ffb498be9b84b682c880e0fa35aa6d1ab2cfd62c0cb97b3c4e75d42859656e5",
+        "bytes": 39835
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/jones-carrier-god-existence-2025.json",
+        "sha256": "88284f5e6d6d92db0e6f38971b9955f11422132e70b971a544db0457cc81e3ec",
+        "bytes": 106105
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-14.json",
+        "sha256": "eac7d9c71e90d0905fa994ddd7e3f581d7b5b473f7caf19cab17533f009101a8",
+        "bytes": 112974
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/jones-carrier-god-existence-2025.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "58",
+      "debateId": "dillahunty-slick-secular-humanism-christianity-2016",
+      "productionRecordIndex": 57,
+      "currentProductionRecordSha256": "c7bb49e800dfc12c329986a95c190476a6e17486d27176a66e4e28c0da37fb8b",
+      "currentProductionRecordBytes": 23313,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-58.json",
+        "sha256": "576e4ddbad8d37ca30a0690e9436a9198fa2d5e6cc00167ea12fd70d01bf51fb",
+        "bytes": 38062
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/dillahunty-slick-secular-humanism-christianity-2016.json",
+        "sha256": "0acbb9c7c7f3dcf02411b0fa912b5f0db1732a2a42b1703ab5c03852a04e63b5",
+        "bytes": 111589
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-58.json",
+        "sha256": "a178567e89866df144ca71a93f9e5e605ed296ffd945a67fea06a91caf828e4b",
+        "bytes": 118803
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/dillahunty-slick-secular-humanism-christianity-2016.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "150",
+      "debateId": "licona-dillahunty-resurrection-evidence-2017",
+      "productionRecordIndex": 149,
+      "currentProductionRecordSha256": "69e89ef2216a69a13f6cb631c1d2fab002ad05ca0c2521d4103473dda08a579a",
+      "currentProductionRecordBytes": 20522,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-150.json",
+        "sha256": "7dcffa0842735dc5f9445ca7e53a80cd41811bba84178392d70cd5eb2e91c9c5",
+        "bytes": 39493
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/licona-dillahunty-resurrection-evidence-2017.json",
+        "sha256": "f5539563849c980ade891f0e820be6efcbd96eee0f48476c5067c4291a1a3c39",
+        "bytes": 117722
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-150.json",
+        "sha256": "d28b91b711858047de437945fc889330b53a4eece40cc73432a692b0f8dfb7bc",
+        "bytes": 124990
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/licona-dillahunty-resurrection-evidence-2017.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "157",
+      "debateId": "dillahunty-howitt-christianity-true-2023",
+      "productionRecordIndex": 156,
+      "currentProductionRecordSha256": "1ecdd90650f4717097f23262981ee71909b10a5475c7e6af3eab798af9e6cb75",
+      "currentProductionRecordBytes": 18928,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-157.json",
+        "sha256": "c598c3d7e77190f7f23ccfc630ece9d4ee23903aa7059be0f051c584d19e9d65",
+        "bytes": 45300
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/dillahunty-howitt-christianity-true-2023.json",
+        "sha256": "fd7437db9e7e5cfdbe47cd15bfee2ccd7d22ea26c50eba29769d605ea4d607ec",
+        "bytes": 133383
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-157.json",
+        "sha256": "dc755ddf23b0d73cbdb0cab0e2ce364770b6ddd8c3c80f22533beb1fc684183a",
+        "bytes": 141387
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/dillahunty-howitt-christianity-true-2023.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "102",
+      "debateId": "woodford-brierley-christianity-rational-2019",
+      "productionRecordIndex": 101,
+      "currentProductionRecordSha256": "11e914f3364b5ca88e04166ccaaace9bd30b81c85fa81132060336fe5806adcf",
+      "currentProductionRecordBytes": 25699,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-102.json",
+        "sha256": "c3893b4ee99f601c097570c99f94d2265a2267b987c4b96c0fb848c8c98186e4",
+        "bytes": 40379
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/woodford-brierley-christianity-rational-2019.json",
+        "sha256": "65992a350fac64d0d9c6dcbcae40655ad0d1a699475df274a2b0a6c882d5153d",
+        "bytes": 109699
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-102.json",
+        "sha256": "68a8a2c54e52ce419de83ee318e328685714ca56c105b4f6c7598fa226ba92e0",
+        "bytes": 116727
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/woodford-brierley-christianity-rational-2019.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "09",
+      "debateId": "peterson-dillahunty-god-debate-2023",
+      "productionRecordIndex": 8,
+      "currentProductionRecordSha256": "57364b8e4b1a6dae4da99920369d6dbe0e5ec0a5af5d98df4914332ffb4094ff",
+      "currentProductionRecordBytes": 22475,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-09.json",
+        "sha256": "fc5461b47730b5fd8fcdd74a8bcbefe0fbc403ad2bc77c3cf176ffd1f38ffbac",
+        "bytes": 42209
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/peterson-dillahunty-god-debate-2023.json",
+        "sha256": "ffd681c90d4cbc266fad352a8a8e7eba5f2ae99b4f51107817ccef8d1c6c88b5",
+        "bytes": 121770
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-09.json",
+        "sha256": "fb309aee78ea3ddf90dc8a7b2fd20d9e163505ce109627943e997da8c34a0cba",
+        "bytes": 129188
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/peterson-dillahunty-god-debate-2023.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "181",
+      "debateId": "habermas-flew-did-jesus-rise-dead-2000",
+      "productionRecordIndex": 180,
+      "currentProductionRecordSha256": "daa8be96f77f90ebf394637d9cb1f6e3d4b0a9078760f55622222fd08ba60ee8",
+      "currentProductionRecordBytes": 21779,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-181.json",
+        "sha256": "0429b4d12147204a96d6d5f278239f72bc64d52aa7039c20d364d753330304f2",
+        "bytes": 41514
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/habermas-flew-did-jesus-rise-dead-2000.json",
+        "sha256": "759aab11206c0b2c3601df1c7c47fd8d4dca029dc88a111d4655443b77d7628c",
+        "bytes": 121216
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-181.json",
+        "sha256": "82c65f24d3f9ae7aea9cf5a6b550e0c72c0ea37ca47c8567d80c8b3c136eb95d",
+        "bytes": 128768
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/habermas-flew-did-jesus-rise-dead-2000.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "138",
+      "debateId": "albrecht-price-bodily-resurrection-2022",
+      "productionRecordIndex": 137,
+      "currentProductionRecordSha256": "039ddb66caf8b2583c240cb461cba027e1f08b22d44c730b8a3829ab0e5be2c9",
+      "currentProductionRecordBytes": 19695,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-138.json",
+        "sha256": "03c65890b14bcb0dfcf25365c1107fab3defc5a07b07740920a71f46f84e05c2",
+        "bytes": 39278
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/albrecht-price-bodily-resurrection-2022.json",
+        "sha256": "32481997ba0313cc7e580f6d1061754e00c12d87acff443c85fa90b5a155a3fd",
+        "bytes": 112597
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-138.json",
+        "sha256": "b504ca02ebffa6ce542fe1ff3124312e694e4265818f33cb0220db1e68b470a0",
+        "bytes": 119748
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/albrecht-price-bodily-resurrection-2022.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    },
+    {
+      "debateNumber": "27",
+      "debateId": "oconnor-turek-evil-moral-argument-2017",
+      "productionRecordIndex": 26,
+      "currentProductionRecordSha256": "25a684024ab958127c18cb8f27a4c2426e12cbd596fc08755535b76433c5cdb9",
+      "currentProductionRecordBytes": 18578,
+      "candidate": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/publication-finalization/output-bundle/final-candidates/debate-27.json",
+        "sha256": "335ad0092453777db0360bce20317a6116aa94928d14586ed8bc99ac850b3ac3",
+        "bytes": 44374
+      },
+      "stagedLedger": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/output-bundle/staged-ledgers/oconnor-turek-evil-moral-argument-2017.json",
+        "sha256": "b95dd8af77c133256a3b545d55968a76d245205bf32e1be3c739cca6e9d8f7f4",
+        "bytes": 114064
+      },
+      "compatibilityPacket": {
+        "path": "docs/assessment-production/post-canary-continuation-v1/batch-03/production-compatibility/packets/debate-27.json",
+        "sha256": "035b36114b3d39a2635765601fd840a44685f7bed21161592de86732cbfe1cad",
+        "bytes": 121315
+      },
+      "productionLedgerPath": "docs/assessment-ledgers/oconnor-turek-evil-moral-argument-2017.json",
+      "productionLedgerAbsent": true,
+      "candidateLedgerLinkPassed": true
+    }
+  ],
+  "executionContract": {
+    "mutationPasses": 1,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairs": false,
+    "rollback": false,
+    "requiredOrder": [
+      "authenticate the frozen manifest and every locked input",
+      "confirm all ten production-ledger paths remain absent and all 31 existing ledgers remain byte-identical",
+      "publish ten production ledgers byte-for-byte from the staged ledgers",
+      "replace exactly ten Batch 3 records in src/data/debates.js with the finalized candidates",
+      "keep src/data/references.js byte-identical",
+      "run deterministic Batch 3 route and score validation",
+      "freeze execution evidence before isolated generated-derivative comparison"
+    ],
+    "exactProductionWrites": [
+      "src/data/debates.js",
+      "docs/assessment-ledgers/harris-peterson-god-atheism-bible-2018.json",
+      "docs/assessment-ledgers/jones-carrier-god-existence-2025.json",
+      "docs/assessment-ledgers/dillahunty-slick-secular-humanism-christianity-2016.json",
+      "docs/assessment-ledgers/licona-dillahunty-resurrection-evidence-2017.json",
+      "docs/assessment-ledgers/dillahunty-howitt-christianity-true-2023.json",
+      "docs/assessment-ledgers/woodford-brierley-christianity-rational-2019.json",
+      "docs/assessment-ledgers/peterson-dillahunty-god-debate-2023.json",
+      "docs/assessment-ledgers/habermas-flew-did-jesus-rise-dead-2000.json",
+      "docs/assessment-ledgers/albrecht-price-bodily-resurrection-2022.json",
+      "docs/assessment-ledgers/oconnor-turek-evil-moral-argument-2017.json"
+    ],
+    "generatedDerivativeWrites": 0,
+    "models": 0,
+    "paidServices": 0,
+    "nextBatchSelection": false
+  },
+  "preparationTools": [
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-03-production-publication.mjs",
+      "sha256": "920c262fafd82f58f4c388e22c8c5f8319b84652825bab82465663f5ee29479b",
+      "bytes": 5244
+    },
+    {
+      "path": "scripts/prepare-assessment-production-post-canary-batch-03-production-publication.mjs",
+      "sha256": "2b0d82c9ceafc0591be50161fe177407de3bb80cd3532801aeef442ba2b0bb0e",
+      "bytes": 14287
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-03-production-publication-preparation.mjs",
+      "sha256": "854d528dbe73c78a617fc6c796642fb1851b900a9ce90edee792807cfa0f91d6",
+      "bytes": 5189
+    },
+    {
+      "path": "scripts/activate-assessment-production-post-canary-batch-03-production-publication.mjs",
+      "sha256": "72f2e7a42bab015124fb60b774cd3bc3b3455ab0e59cbba43cd430fcc46b3725",
+      "bytes": 8243
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-03-production-publication-activation.mjs",
+      "sha256": "ebaab10138cd12a8a8633647b25a89d1b66192bca5dd0d5d50e2459dcc7d3ba6",
+      "bytes": 3738
+    },
+    {
+      "path": "scripts/run-assessment-production-post-canary-batch-03-production-publication.mjs",
+      "sha256": "18093afb127c75c0b4b2c18ea3a0a9036d3cf9b6229979c8658abbb211447b12",
+      "bytes": 10117
+    }
+  ],
+  "authorization": {
+    "mutationManifestPreparation": true,
+    "executionActivation": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "generatedDerivativeMutation": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "activate-and-execute-one-frozen-batch-03-production-publication-mutation-pass-under-standing-authorization"
+}
