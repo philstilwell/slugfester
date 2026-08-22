@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-06-independent-judgment-audio-queue-recovery-1",
+  "status": "batch-06-independent-judgment-preparation-audio-queue-test-failure-diagnosed",
+  "diagnosedAt": "2026-08-22T21:39:00.000Z",
+  "failureCategory": "deterministic-stale-pending-audio-count-expectation",
+  "failedValidation": "scripts/test-assessment-production-post-canary-batch-06-independent-judgment-preparation.mjs",
+  "observed": 2,
+  "staleExpected": 0,
+  "frozenMoves": [
+    {"debateNumber":"97","moveId":"con-classical-suppression-and-absorption"},
+    {"debateNumber":"97","moveId":"pro-secularism-theological-descent"}
+  ],
+  "rootCause": "The preparation and manifest tests retained Batch 5's empty pending-audio expectation even though the accepted Batch 6 inventory contains two below-high-attribution moves.",
+  "preservedPreparationManifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/preparation-manifest.json",
+    "sha256": "ae5d1317ac30cabd1f51139276793ad455c77855d7cf6efbb11778c2ce14b983"
+  },
+  "packetPreparationSucceeded": true,
+  "modelContextsExecuted": 0,
+  "audioAccessed": false,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}
