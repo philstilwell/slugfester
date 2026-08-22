@@ -46,7 +46,8 @@ if (
 const proposedAnalysis = JSON.parse(proposedAnalysisBytes);
 if (
   proposedAnalysis.preparation?.sha256 !== plan.correctionScope.newSha256 ||
-  plan.sourceHashes[plan.correctionScope.target] !== plan.correctionScope.oldSha256
+  JSON.parse(await readFile(plan.correctionScope.target)).preparation?.sha256 !==
++    plan.correctionScope.oldSha256
 ) {
   throw new Error("correction-2 preimage or proposed hash is unauthenticated");
 }
