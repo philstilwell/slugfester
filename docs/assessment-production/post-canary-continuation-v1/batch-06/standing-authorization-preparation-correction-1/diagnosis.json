@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-standing-authorization-preparation-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-06-standing-authorization-preparation-correction-1",
+  "status": "frozen-batch-06-standing-authorization-preparation-stale-selection-metadata-and-checkpoint-harness-diagnosed",
+  "diagnosedAt": "2026-08-22T20:01:50.000Z",
+  "directIncrementalCostUsd": 0,
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-06-standing-authorization.mjs --write --authorized-at 2026-08-22T19:59:46.000Z",
+  "errorMessage": "the frozen Batch 6 selection or source-packet boundary changed",
+  "successfulStandingAuthorizationWritten": false,
+  "acceptedEvidence": {
+    "selection": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/selection.json",
+      "sha256": "2dbf2e111715ba22ee161bfd23e33a3ef1051c377d35705f6cf74e7946448932",
+      "bytes": 32195
+    },
+    "selectionAnalysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/selection-analysis.json",
+      "sha256": "3c01acaba2fe771f23e04df79f2f46eec6d28da57d1b617b1e78f7aa71f71538",
+      "bytes": 3926
+    },
+    "sourcePreparation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/preparation-manifest.json",
+      "sha256": "8734772ced1638c8b36294300ddaf2eca4bb77da282600a071db1ffc48544b91",
+      "bytes": 95274
+    },
+    "sourceValidation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/validation.json",
+      "sha256": "e7ef057821c2bb01077bb9c8a9a2775cf781054363c532f45fa79c6745da7589",
+      "bytes": 2655
+    },
+    "instruction": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-instruction.txt",
+      "sha256": "9d5c631a82213ed34e58370989069f5a858691cd2bb9a6045a0fdf33a7de8fc8",
+      "bytes": 6992
+    },
+    "selectedDebates": [
+      "73",
+      "36",
+      "38",
+      "97",
+      "141",
+      "06",
+      "168",
+      "135",
+      "143",
+      "169"
+    ],
+    "discoveryContexts": 39,
+    "modelContextsExecuted": 0
+  },
+  "rootCause": {
+    "staleSelectionField": {
+      "path": "/batchNumber",
+      "frozenValue": 5,
+      "authenticatedBatchIdentity": 6,
+      "finding": "The accepted selection artifact retained the inherited Batch 5 numeric literal even though its protocol, status, paths, rank slice, debate boundary, and analysis all authenticate Batch 6. Source preparation hash-locked that immutable artifact."
+    },
+    "recoveryCheckpointHarness": {
+      "sourcePacketCommit": "75c9b395c045518f064988c76987e0e2b5a72493",
+      "finding": "The preparation harness requires the source-packet commit to remain exact HEAD. The mandated diagnosis, plan, and activation commits necessarily advance HEAD while preserving that commit as an ancestor, so recovery requires ancestor authentication plus HEAD/origin equality."
+    },
+    "sourceOrContentDefect": false,
+    "modelFailure": false,
+    "paidServiceFailure": false
+  },
+  "correctionBoundary": {
+    "level": 1,
+    "correctionType": "bounded-deterministic-validation-overlay-and-checkpoint-authentication-correction",
+    "writableFiles": [
+      "scripts/lib/assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "scripts/prepare-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "scripts/test-assessment-production-post-canary-batch-06-standing-authorization.mjs"
+    ],
+    "selectionArtifactWritable": false,
+    "sourcePacketsWritable": false,
+    "schemasWritable": false,
+    "modelsAuthorizedInCorrection": 0,
+    "paidServicesAuthorizedInCorrection": 0,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "rollback": false
+  },
+  "sourceLocks": [
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/selection.json",
+      "sha256": "2dbf2e111715ba22ee161bfd23e33a3ef1051c377d35705f6cf74e7946448932",
+      "bytes": 32195
+    },
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/selection-analysis.json",
+      "sha256": "3c01acaba2fe771f23e04df79f2f46eec6d28da57d1b617b1e78f7aa71f71538",
+      "bytes": 3926
+    },
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/preparation-manifest.json",
+      "sha256": "8734772ced1638c8b36294300ddaf2eca4bb77da282600a071db1ffc48544b91",
+      "bytes": 95274
+    },
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/validation.json",
+      "sha256": "e7ef057821c2bb01077bb9c8a9a2775cf781054363c532f45fa79c6745da7589",
+      "bytes": 2655
+    },
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-instruction.txt",
+      "sha256": "9d5c631a82213ed34e58370989069f5a858691cd2bb9a6045a0fdf33a7de8fc8",
+      "bytes": 6992
+    },
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "73c5a7e848f85d5ada962ce2e0695ac222d886724b45b6a6be09608e389f1516",
+      "bytes": 6226
+    },
+    {
+      "path": "scripts/prepare-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "c1fbbb9bc2a3633f5bfdb049913d0fb42217c90873130aaa3cc139dd35db1797",
+      "bytes": 12602
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "b4fe03746835d941e9225c7def8f21502d36e0d85fce2c312697d3e1262544fd",
+      "bytes": 2500
+    },
+    {
+      "path": "scripts/diagnose-assessment-production-post-canary-batch-06-standing-authorization-failure.mjs",
+      "sha256": "379b946087cbfd3ac581c89015ece2460ed9e40b7eabcb13cb8cc5a957003a76",
+      "bytes": 7189
+    }
+  ],
+  "nextAuthorizedAction": "prepare-and-hash-lock-batch-06-standing-authorization-preparation-correction-1"
+}
