@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-independent-judgment-preparation-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-05-independent-judgment-preparation-recovery-1",
+  "status": "batch-05-independent-judgment-preparation-selection-status-correction-passed",
+  "analyzedAt": "2026-08-22T01:39:24.000Z",
+  "recoveryAttempt": 1,
+  "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-05/independent-judgments/preparation-recovery-1/correction-plan.json",
+  "results": {
+    "correctedPreviewPasses": 1,
+    "correctedWritePasses": 1,
+    "deterministicPreparationTestsPassed": true,
+    "debates": 10,
+    "contexts": 20,
+    "sourcePackets": 10,
+    "judgmentPackets": 20,
+    "schemas": 20,
+    "uniqueMoves": 187,
+    "movesJudgedAcrossPasses": 374,
+    "maximumCopiedInputBytes": 95095,
+    "modelContextsExecuted": 0,
+    "audioCalls": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "artifacts": {
+    "correctedPreparationHarness": {
+      "path": "scripts/prepare-assessment-production-post-canary-batch-05-independent-judgments.mjs",
+      "bytes": 27168,
+      "sha256": "dd8adc3d18349790431a8a42a1cce0be962fa3fdc27c53ce2e66a13b9cab9ea1"
+    },
+    "preparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/independent-judgments/preparation-manifest.json",
+      "bytes": 100018,
+      "sha256": "0a4be712b6b0692d9d9dbd55ec9c1db355c5c42a77301474406534decb1d1529"
+    }
+  },
+  "preservation": {
+    "selectionChanged": false,
+    "lockedInventoriesChanged": false,
+    "acceptedSideSelectionsChanged": false,
+    "sourcePacketsChanged": false,
+    "modelSettingsChanged": false,
+    "schedulerChanged": false,
+    "scoresChanged": false
+  },
+  "nextAuthorizedAction": "prepare-independent-judgment-execution-manifest-under-standing-authorization"
+}
