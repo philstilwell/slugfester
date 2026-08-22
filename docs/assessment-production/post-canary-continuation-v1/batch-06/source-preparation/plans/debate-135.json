@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3576,
+  "ledgerBytes": 207957,
+  "ledgerSha256": "636ec7d0a3437ce3475e8cc5c9942ca0c951e9f228270bf14cd77e004cd60b5b",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50226,
+      "contextSha256": "ef92e4c5ec799982748d677497ef6b1f1164930e8dea5ae023dcea7d684520ff"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52635,
+      "contextSha256": "f435e684cf293272ae5ea5aa3645329dfba3da4fe770b73041b356125d8b4c2e"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53361,
+      "contextSha256": "a8cd9ba1be128d6046f0a0b354e6f693ea890627e0672d37e198dfb090c69a95"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52873,
+      "contextSha256": "155774a3564eee1be8c3e2c32f9050a74872b381fcc8faed25e1a55fb3e1b7a7"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3575,
+      "coreEvents": 256,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3575,
+      "contextEvents": 296,
+      "contextBytes": 17488,
+      "contextSha256": "5dbd53331fc530c7c615f4efc5025e906a87a0eb65ed86a1b8c9f40102cc18b3"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3575,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

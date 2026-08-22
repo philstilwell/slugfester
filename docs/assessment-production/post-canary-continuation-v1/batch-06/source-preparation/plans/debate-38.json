@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1792,
+  "ledgerBytes": 98459,
+  "ledgerSha256": "0cb0f90d6c0a9e9cca34f86155537ef4d0d51b410f4ef75bb0931a81f7ab4d1d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 48254,
+      "contextSha256": "df44ae0e475a294b1946b0f25b5001bcc3ac7a0bb40f2337dcb111e91603f68a"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 50442,
+      "contextSha256": "d70917659d3b75e4bc8c79cb53aa41113ed259a838367fcfad4e9e2290f19196"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1791,
+      "coreEvents": 112,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1791,
+      "contextEvents": 152,
+      "contextBytes": 8636,
+      "contextSha256": "bb8b206d620629ffe1efb9bb6fc617719cfb20f36819e4fbf5fd9fd00f36d25a"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1791,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "38",
+  "debateId": "mcdowell-ehrman-moral-objectivity-2026",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-source-preparation",
+  "debateNumber": "97",
+  "debateId": "holland-grayling-christianity-human-values-2019",
+  "motion": "Did Christianity give the modern West its human values, or do dignity, equality, humanism, science, and moral concern owe more to classical, Axial Age, Enlightenment, and secular sources?",
+  "sides": {
+    "pro": {
+      "label": "Christian inheritance",
+      "speakers": [
+        "Tom Holland"
+      ]
+    },
+    "con": {
+      "label": "Classical humanism",
+      "speakers": [
+        "A. C. Grayling"
+      ]
+    }
+  },
+  "durationSeconds": 4935,
+  "eventCount": 1960,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/7eSyz3BaVK8/transcript.txt",
+    "transcriptSha256": "8f8bfe442428894847f758d50d522b0487b318d58ff83b013dabbb15ce7aff25",
+    "eventsPath": ".assessment-cache/captions/7eSyz3BaVK8/events.json",
+    "eventsSha256": "1fe3693591dca7582c656dc6e941d95c100dfa820462ed64670779963eb56689",
+    "localManifestPath": ".assessment-cache/captions/7eSyz3BaVK8/manifest.json",
+    "localManifestSha256": "cc4f6e66b80800bc542956f65a71f18cb7efcd69f39ea25b38e00f6ac0329520"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-06/debate-97.jsonl",
+    "sourceLedgerSha256": "00409c1902a32b1a9fd77a49ae8cfc4b2549e6158ad049744a4babca1cccf4c2",
+    "sourceLedgerBytes": 115330,
+    "sourceLedgerEventCount": 1960,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/plans/debate-97.json",
+    "partitionPlanSha256": "5bf25a940f37e6fce8bc96d5f66d4ed7a9a7ff28fa4496c88fd5491882f98620",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

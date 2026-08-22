@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1960,
+  "ledgerBytes": 115330,
+  "ledgerSha256": "00409c1902a32b1a9fd77a49ae8cfc4b2549e6158ad049744a4babca1cccf4c2",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52269,
+      "contextSha256": "0e17e6092bfc27ef747540492455f2cddc9316ff779c21d40a267dba06b986c2"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53466,
+      "contextSha256": "19c60e471e610a333d805c0645004abe09f56ddbf4b596462154bef696261a81"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1959,
+      "coreEvents": 280,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1959,
+      "contextEvents": 320,
+      "contextBytes": 19062,
+      "contextSha256": "e06f27e0e1c6a744e01253611b93cdbe15f79dab0d001c937c142e2e67ee8df9"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1959,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "97",
+  "debateId": "holland-grayling-christianity-human-values-2019",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

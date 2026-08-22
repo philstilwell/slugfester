@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 4714,
+  "ledgerBytes": 246090,
+  "ledgerSha256": "bde681081755dc03ee0fc4270958deaffbfc6be83167d366ebd8d20f1109ce3c",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 45890,
+      "contextSha256": "11093913148e54a91f82c2dea389a0170d5bd4b7601d3edee685365d43519dbf"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 47905,
+      "contextSha256": "d20c96eb863f9499a38975671a4e33bc01d54b520ea8f7ccfe1ac382fbeb71dd"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 47699,
+      "contextSha256": "6639c0d06f9499e8a39facb2ecd7b03af26f3c6260533d1255cdc03d52e9f893"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 47290,
+      "contextSha256": "e2e44402251aa5d4a831219d668041de564696e5eb04b5729c45bfb1d48682fb"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 4139,
+      "coreEvents": 820,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 4179,
+      "contextEvents": 900,
+      "contextBytes": 47795,
+      "contextSha256": "c456094e498a7651296a1224cc4ae875a0d19ec4278430c0ee0da5a7b1c26456"
+    },
+    {
+      "chunkId": "chunk-006",
+      "coreStartEvent": 4140,
+      "coreEndEvent": 4713,
+      "coreEvents": 574,
+      "contextStartEvent": 4100,
+      "contextEndEvent": 4713,
+      "contextEvents": 614,
+      "contextBytes": 30756,
+      "contextSha256": "f2a0b855d702881bb5d420fdd3a8fd62a0ccc498d698f66c1e8c44338818849d"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 4713,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "141",
+  "debateId": "fischer-dillahunty-axiomatic-evidence-god-2020",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

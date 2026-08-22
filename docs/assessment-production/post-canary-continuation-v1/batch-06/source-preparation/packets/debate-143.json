@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-source-preparation",
+  "debateNumber": "143",
+  "debateId": "vela-dillahunty-transcendental-evidence-god-2020",
+  "motion": "Do laws of logic and other transcendental facts provide good evidence for a necessary personal God?",
+  "sides": {
+    "pro": {
+      "label": "Transcendental theism",
+      "speakers": [
+        "Tyler Vela"
+      ]
+    },
+    "con": {
+      "label": "Evidential skepticism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 8200,
+  "eventCount": 3798,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/kf0Us__r9SQ/transcript.txt",
+    "transcriptSha256": "022de1b9585e10e30bea1ad5067dc0e57bc82e22caad2b2697ab2c49a4bde06f",
+    "eventsPath": ".assessment-cache/captions/kf0Us__r9SQ/events.json",
+    "eventsSha256": "3075958b6e713bdda8aba7d8e54c5234781fea1eb12801db996818238403252b",
+    "localManifestPath": ".assessment-cache/captions/kf0Us__r9SQ/manifest.json",
+    "localManifestSha256": "97299ec573ebd8b8b8f5895d1ad300af2f6ca4de5b4461c0cacd7ac1c37ec41e"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-06/debate-143.jsonl",
+    "sourceLedgerSha256": "e390a5165bfd30aae2a00bdbb3e4361bf1d06e1da8e532fd899357dd80adb509",
+    "sourceLedgerBytes": 218108,
+    "sourceLedgerEventCount": 3798,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/plans/debate-143.json",
+    "partitionPlanSha256": "873403999b420841f7e43a9388688ae4072c5c80a0083ce409ff580605b336ac",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

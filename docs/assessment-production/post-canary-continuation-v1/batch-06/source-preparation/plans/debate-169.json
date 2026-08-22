@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2205,
+  "ledgerBytes": 127211,
+  "ledgerSha256": "38da8da35d214e7aa7d6be00ac59dd299b5eabbeda126fdf8371f43ace01f906",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50908,
+      "contextSha256": "235bc2afffd6e903c86610576871028a8ccab1d1b1bfc97819c6ceacc9dd455e"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52405,
+      "contextSha256": "799a3487d24bbf8e10511f3be0cd95bb6c9116afb0848646630415235ff787b2"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2204,
+      "coreEvents": 525,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2204,
+      "contextEvents": 565,
+      "contextBytes": 33098,
+      "contextSha256": "72ca77b45eef792e667a1539ee661c011799028f7de69d5ac61e0aa0e7fe1c5e"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2204,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "169",
+  "debateId": "lennox-krauss-universe-god-question-2013",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

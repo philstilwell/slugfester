@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-source-preparation",
+  "debateNumber": "06",
+  "debateId": "dsouza-dillahunty-god-woman-2023",
+  "motion": "Should beliefs about God, gender, politics, and social welfare be guided by faith-informed inference, empirical evidence, or secular-humanist consequences?",
+  "sides": {
+    "pro": {
+      "label": "Theistic conservative",
+      "speakers": [
+        "Dinesh D'Souza"
+      ]
+    },
+    "con": {
+      "label": "Secular humanist",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7186,
+  "eventCount": 3235,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/mEM1AhlH9eI/transcript.txt",
+    "transcriptSha256": "951a29806ec790e9a7e13c87f250016adba192248574fe2f73f984ba478afdca",
+    "eventsPath": ".assessment-cache/captions/mEM1AhlH9eI/events.json",
+    "eventsSha256": "2931ded5c580dca33436426186c8d4c9ac1e59192972330712c6b3ebdefff708",
+    "localManifestPath": ".assessment-cache/captions/mEM1AhlH9eI/manifest.json",
+    "localManifestSha256": "84b73cef5027f16b3f6aa9517540582c064496e2777d6f79c6cfa260110a003f"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-06/debate-06.jsonl",
+    "sourceLedgerSha256": "f1fb4009b9a9d3c6bb8cd9a6864c35ba14ab2c5c48b8e9f4384e333d9849e06d",
+    "sourceLedgerBytes": 185500,
+    "sourceLedgerEventCount": 3235,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/plans/debate-06.json",
+    "partitionPlanSha256": "92df111ad66e09393bf440b1170764f866f6ba5b4100b0821c3374030856140f",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

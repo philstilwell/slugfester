@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3798,
+  "ledgerBytes": 218108,
+  "ledgerSha256": "e390a5165bfd30aae2a00bdbb3e4361bf1d06e1da8e532fd899357dd80adb509",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52087,
+      "contextSha256": "64d4008815443261a6a5ab0322a0b01cffcc7daadbbb5c229a946713add5f1f2"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52061,
+      "contextSha256": "79a6c85ed79c76a5e0755b39a64ffc56eaa025c23e5207be3a37aaf21aa887e7"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 51546,
+      "contextSha256": "0374720916504f43f567ef9e0aad2ee87cb8a7ec34da055160d19839292766c8"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 51292,
+      "contextSha256": "ad4e4c37bed18e29b37ab15ca08e62234b12f96423b42eed82b0bc964675f76a"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3797,
+      "coreEvents": 478,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3797,
+      "contextEvents": 518,
+      "contextBytes": 29415,
+      "contextSha256": "c793205fe56106042c36165d344cbd9aef6ec5771ccd1509eedf4414d7928fc4"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3797,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "143",
+  "debateId": "vela-dillahunty-transcendental-evidence-god-2020",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

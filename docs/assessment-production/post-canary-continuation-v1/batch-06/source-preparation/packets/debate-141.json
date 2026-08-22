@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-source-preparation",
+  "debateNumber": "141",
+  "debateId": "fischer-dillahunty-axiomatic-evidence-god-2020",
+  "motion": "Is there good evidence for God, rather than merely an asserted epistemic starting point?",
+  "sides": {
+    "pro": {
+      "label": "Axiomatic theism",
+      "speakers": [
+        "Ben Fischer"
+      ]
+    },
+    "con": {
+      "label": "Evidential skepticism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 9688,
+  "eventCount": 4714,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/KByryLId3dQ/transcript.txt",
+    "transcriptSha256": "a946f564db7a37a31bb2408335a7df459bc387a2f656f7087a5709312860452e",
+    "eventsPath": ".assessment-cache/captions/KByryLId3dQ/events.json",
+    "eventsSha256": "09e4ddbc907246d5ef01ccb9df48f37d8fa4d15059f939be64b4ac38abafbf9a",
+    "localManifestPath": ".assessment-cache/captions/KByryLId3dQ/manifest.json",
+    "localManifestSha256": "33f276110d60fefa135ca63548e332b768469f1c1d0e55cd65517cb6b9162387"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-06/debate-141.jsonl",
+    "sourceLedgerSha256": "bde681081755dc03ee0fc4270958deaffbfc6be83167d366ebd8d20f1109ce3c",
+    "sourceLedgerBytes": 246090,
+    "sourceLedgerEventCount": 4714,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/plans/debate-141.json",
+    "partitionPlanSha256": "bf9f1a0ead4ce1b77a7ec6f33287717449abb2ff4c9785af5ed1ec1690fb9544",
+    "partitionChunks": 6,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

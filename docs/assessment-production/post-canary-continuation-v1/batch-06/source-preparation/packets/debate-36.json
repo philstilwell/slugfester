@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-source-preparation",
+  "debateNumber": "36",
+  "debateId": "carroll-halvorson-metaphysics-worldview-2016",
+  "motion": "How should scientific knowledge be integrated into naturalist and theistic worldviews, and do cosmology, fine-tuning, quantum mechanics, consciousness, morality, and meaning favor either metaphysical picture?",
+  "sides": {
+    "pro": {
+      "label": "Naturalist",
+      "speakers": [
+        "Sean Carroll"
+      ]
+    },
+    "con": {
+      "label": "Theist",
+      "speakers": [
+        "Hans Halvorson"
+      ]
+    }
+  },
+  "durationSeconds": 5582,
+  "eventCount": 2536,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Ku6tLuEjmTY/transcript.txt",
+    "transcriptSha256": "d6861a95f99b46c6a4b9d748d0bfdeca37f8aea0110547e1bcabecc0b40d1f45",
+    "eventsPath": ".assessment-cache/captions/Ku6tLuEjmTY/events.json",
+    "eventsSha256": "ae03e875c4073e0ca4e7c44103ef90fccce189f6b5cbdc2940e433d74880c0d2",
+    "localManifestPath": ".assessment-cache/captions/Ku6tLuEjmTY/manifest.json",
+    "localManifestSha256": "73d2925c7ef56b225a03df7238a6b74771554218864782ec885c9773e25edebb"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-06/debate-36.jsonl",
+    "sourceLedgerSha256": "2d3ab7d8184fed3e352081134470d128fa158c1c06460515e52b6656c89cd23c",
+    "sourceLedgerBytes": 147709,
+    "sourceLedgerEventCount": 2536,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/plans/debate-36.json",
+    "partitionPlanSha256": "0f2c0321ea62cf14145e6d446470c717784c2691a185a20aee0f44e7c345a202",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

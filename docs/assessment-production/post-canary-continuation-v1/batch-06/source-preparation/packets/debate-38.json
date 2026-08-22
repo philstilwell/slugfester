@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-source-preparation",
+  "debateNumber": "38",
+  "debateId": "mcdowell-ehrman-moral-objectivity-2026",
+  "motion": "Do Jesus' teachings and the West's moral transformation point to objective moral truths grounded beyond human preference, or can morality be explained as historically shaped human inclination without divine grounding?",
+  "sides": {
+    "pro": {
+      "label": "Moral realist",
+      "speakers": [
+        "Sean McDowell"
+      ]
+    },
+    "con": {
+      "label": "Secular historian",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    }
+  },
+  "durationSeconds": 3827,
+  "eventCount": 1792,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Cz57BuQOCmQ/transcript.txt",
+    "transcriptSha256": "74522a2503187a75f206f46c97fdad22e1110f1f115a85778c7bfe63129192d9",
+    "eventsPath": ".assessment-cache/captions/Cz57BuQOCmQ/events.json",
+    "eventsSha256": "592d711bd3d7f2a31ea6032d3f75abd86ac74c349f75541bcd5d1e6aa06f9c1e",
+    "localManifestPath": ".assessment-cache/captions/Cz57BuQOCmQ/manifest.json",
+    "localManifestSha256": "a2f2f4f8aa6febed4af8ab92f06699fac84ff0c1cf332541fd4df3f8fbef6681"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-06/debate-38.jsonl",
+    "sourceLedgerSha256": "0cb0f90d6c0a9e9cca34f86155537ef4d0d51b410f4ef75bb0931a81f7ab4d1d",
+    "sourceLedgerBytes": 98459,
+    "sourceLedgerEventCount": 1792,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/plans/debate-38.json",
+    "partitionPlanSha256": "83e4f129aab146192d546052cf67ba781e38d63d97436a17013b0e5de54ccdde",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}
