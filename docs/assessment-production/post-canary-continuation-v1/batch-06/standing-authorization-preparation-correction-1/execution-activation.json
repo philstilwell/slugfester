@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-standing-authorization-preparation-correction-1-activation",
+  "protocolId": "assessment-production-post-canary-batch-06-standing-authorization-preparation-correction-1",
+  "status": "frozen-batch-06-standing-authorization-preparation-correction-1-activated",
+  "activatedAt": "2026-08-22T20:04:38.000Z",
+  "directIncrementalCostUsd": 0,
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/correction-plan.json",
+    "sha256": "68a844ca2989a51a3fc42c02f2d3397a9bb5beafe382b00428f9c0118679cbe7",
+    "bytes": 4781
+  },
+  "preparationAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/preparation-analysis.json",
+    "sha256": "4514b081d0923242d308c83c714c35f2635586c41f1d480a271dc2a4e392a554",
+    "bytes": 940
+  },
+  "originalSources": [
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "73c5a7e848f85d5ada962ce2e0695ac222d886724b45b6a6be09608e389f1516",
+      "bytes": 6226
+    },
+    {
+      "path": "scripts/prepare-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "c1fbbb9bc2a3633f5bfdb049913d0fb42217c90873130aaa3cc139dd35db1797",
+      "bytes": 12602
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "b4fe03746835d941e9225c7def8f21502d36e0d85fce2c312697d3e1262544fd",
+      "bytes": 2500
+    }
+  ],
+  "proposedSources": [
+    {
+      "target": "scripts/lib/assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/proposed-library.mjs",
+      "sha256": "165fd367eb968e58c6d9cd3b922596affb9b4e44ba085af00dc827a9fcba6b1e",
+      "bytes": 6308
+    },
+    {
+      "target": "scripts/prepare-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/proposed-preparation.mjs",
+      "sha256": "69b3afe5caa9a7af88e64c6febdeeef9d2ec3c0760ccc1f89929ac11c91bab2f",
+      "bytes": 12696
+    },
+    {
+      "target": "scripts/test-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/proposed-test.mjs",
+      "sha256": "e26cee556206f220971903e9e430487578577e6c040804869562844359c6cfe6",
+      "bytes": 2775
+    }
+  ],
+  "executionContract": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "rollback": false,
+    "models": 0,
+    "paidServices": 0,
+    "exactPreparationPasses": 1,
+    "exactValidationReplays": 1
+  },
+  "outputPaths": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/analysis.json"
+  },
+  "authorization": {
+    "boundedCorrectionExecution": true,
+    "standingAuthorizationPreparation": true,
+    "modelExecution": false,
+    "paidServiceUse": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-batch-06-standing-authorization-preparation-correction-1-once"
+}
