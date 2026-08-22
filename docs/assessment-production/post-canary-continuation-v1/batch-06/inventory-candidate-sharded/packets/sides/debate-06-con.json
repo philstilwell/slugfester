@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-chronology-fallback-side-selector-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-candidate-sharded-inventory",
+  "sideSelectionProtocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+  "stage": "con-candidate-evidence-selection-with-chronology-fallback",
+  "debateNumber": "06",
+  "debateId": "dsouza-dillahunty-god-woman-2023",
+  "side": "con",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "roundedIntegerScoreTiesPermitted": true
+  },
+  "isolation": {
+    "freshContextRequired": true,
+    "oneDebateOnly": true,
+    "oneSideOnly": true,
+    "scoreBlind": true,
+    "routesAndSectionsImmutable": true,
+    "otherSideCandidateEvidenceUnavailable": true,
+    "otherSideSelectorOutputUnavailable": true,
+    "plannerExecutionMetadataUnavailable": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "preferredMoveKindRequired": true,
+    "constructiveOrphanFallbackRequired": true,
+    "fallbackConditionRepositoryOwned": true,
+    "priorAndOtherJudgmentsUnavailable": true,
+    "legacyAssessmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  },
+  "immutablePlanCanonicalSha256": "c341807cd1fa4ef5f22beeec975ee7fbab3707fc8c2796fff5e3157f65a987bb",
+  "copiedInputs": [
+    {
+      "role": "inventory-source-packet",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/source-packets/debate-06.json",
+      "sha256": "c8994162acb884552a253773b5b1be5384c9b5ba15c1ac380304b048886003fd",
+      "bytes": 3575
+    },
+    {
+      "role": "immutable-candidate-census-plan",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/plans/debate-06.json",
+      "sha256": "44fa7615e9261b02e3859f0a358abcd3d0bf11dffd5fbc4f45be9cf5499df4e3",
+      "canonicalSha256": "c341807cd1fa4ef5f22beeec975ee7fbab3707fc8c2796fff5e3157f65a987bb",
+      "bytes": 7782
+    },
+    {
+      "role": "con-complete-candidate-evidence-transport",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/transports/sides/debate-06-con.json",
+      "sha256": "779ca74becd1fed0d9a969d4dc9189b1f062e3e56d73473a95b96a552c60619f",
+      "bytes": 25760
+    },
+    {
+      "role": "candidate-sharded-inventory-guide",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+      "sha256": "85b4e01157b0e0299a0ac482b692ddf9260dff7f91fd444665923491d247cb51",
+      "bytes": 6021
+    },
+    {
+      "role": "inventory-manual",
+      "path": "docs/calibration/v4.2.21.16/decomposed-consensus-contract/inventory-manual.md",
+      "sha256": "e5e90e205c621633e9f338b6a15cae3fdfe201817a31b00828fed346b975fd52",
+      "bytes": 3432
+    },
+    {
+      "role": "strict-output-schema",
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/schemas/sides/debate-06-con.schema.json",
+      "sha256": "8e05400e76535a4ee8b95fb6a1ebbb585509234037582c17033067fac137332a",
+      "bytes": 7285
+    }
+  ],
+  "copiedInputBytes": 53855,
+  "maximumCopiedInputBytes": 115000,
+  "writableDomains": [
+    "candidateSelections"
+  ],
+  "output": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/side-selections/debate-06-con.json",
+  "attemptsMaximum": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "modelExecutionAuthorized": false
+}
