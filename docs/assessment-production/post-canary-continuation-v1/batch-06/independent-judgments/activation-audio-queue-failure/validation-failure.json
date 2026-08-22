@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-assessment-production-deterministic-validation-failure",
+  "protocolId": "assessment-production-post-canary-batch-06-independent-judgment-activation-audio-queue-failure",
+  "status": "batch-06-independent-judgment-activation-validation-failed-preserved",
+  "failedAt": "2026-08-22T22:00:00.000Z",
+  "attempt": 1,
+  "validation": "scripts/test-assessment-production-post-canary-batch-06-independent-judgment-activation.mjs",
+  "exitCode": 1,
+  "failureCategory": "deterministic-stale-pending-audio-list-expectation",
+  "assertionLine": 176,
+  "expected": [],
+  "actual": [
+    {
+      "debateNumber": "97",
+      "moveId": "con-classical-suppression-and-absorption"
+    },
+    {
+      "debateNumber": "97",
+      "moveId": "pro-secularism-theological-descent"
+    }
+  ],
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/execution-activation.json",
+    "sha256": "d13efb9bc9d26d3483ebf3384c7632e76b8356ef319cfe0794c12bb2b29b022a"
+  },
+  "validationSource": {
+    "path": "scripts/test-assessment-production-post-canary-batch-06-independent-judgment-activation.mjs",
+    "sha256": "18467db37f3ee0e7df4debaa8c5b7cfd0664dfbe73a0dad6c5524b1a3e5e7dbd"
+  },
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}
