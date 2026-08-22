@@ -1,0 +1,146 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-42-publication-repair-diagnosis",
+  "status": "frozen-diagnosed-batch-05-debate-42-four-critique-word-overruns",
+  "frozenAt": "2026-08-22T14:35:07Z",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "classification": "four-critique-word-boundary-failures-in-complete-rejected-output",
+  "preservedFailure": {
+    "originalAttemptCount": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "acceptedOutput": false,
+    "completeRejectedOutputPreserved": true,
+    "rejectedOutputSha256": "633ec422301aa342945c7e00da46045c7af1ac8c2af24efad6df348bb5246231",
+    "validationMessage": "Error: pro-analogy-distinguishes-divine-attributes: critique outside 105–130 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateCheckpointV22PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs:99:5)\n    at validatePostCanaryBatch05PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-post-canary-batch-05-publication-validation.mjs:8:10)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-05-publication-resumption-2.mjs:108:33)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-05-publication-resumption-2.mjs:157:65)\n    at async Promise.all (index 1)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-05-publication-resumption-2.mjs:158:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-05-publication-resumption-2.mjs:165:24"
+  },
+  "failedFields": [
+    {
+      "moveId": "pro-analogy-distinguishes-divine-attributes",
+      "path": "moveProse.pro-analogy-distinguishes-divine-attributes.critique",
+      "words": 131,
+      "characters": 1064,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 1
+    },
+    {
+      "moveId": "pro-unity-grounding-aseity-reply",
+      "path": "moveProse.pro-unity-grounding-aseity-reply.critique",
+      "words": 135,
+      "characters": 1019,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 5
+    },
+    {
+      "moveId": "con-begotten-son-godhead-distinction",
+      "path": "moveProse.con-begotten-son-godhead-distinction.critique",
+      "words": 131,
+      "characters": 1021,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 1
+    },
+    {
+      "moveId": "con-changing-reality-epistemic-change",
+      "path": "moveProse.con-changing-reality-epistemic-change.critique",
+      "words": 131,
+      "characters": 1050,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 1
+    }
+  ],
+  "failedFieldCount": 4,
+  "excessWordsTotal": 8,
+  "preservedFields": {
+    "moveCount": 15,
+    "repairFields": 4,
+    "validMoveProseEntries": 11,
+    "everyOtherOutputFieldImmutable": true,
+    "acceptedDebate179Preserved": true,
+    "acceptedDebate179Sha256": "faa2427e4ca03705c21009cbe8000aa435de28b5bc1f12c8659e63ba27a0166b",
+    "acceptedDebate05Preserved": true,
+    "acceptedDebate05Sha256": "27e2841b3e163cda9a7d7f72ed709fbc2b37d5f2b9da976589228889e00705dd",
+    "debate59Unattempted": true
+  },
+  "diagnosticReplay": {
+    "originalOutputModified": false,
+    "persistedCorrectedOutput": false,
+    "hypotheticalWordsRemoved": 8,
+    "result": {
+      "status": "passed",
+      "debateNumber": "42",
+      "moves": 15,
+      "critiques": 15,
+      "minimumCritiqueCharacters": 981,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 4,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "minimumBoundedRepair": {
+    "operation": "two-isolated-two-field-publication-repair-packets",
+    "reasonMinimum": "Four diagnosed writable fields with a maximum of two fields per packet require two packets.",
+    "packetCount": 2,
+    "partition": [
+      [
+        "moveProse.pro-analogy-distinguishes-divine-attributes.critique",
+        "moveProse.pro-unity-grounding-aseity-reply.critique"
+      ],
+      [
+        "moveProse.con-begotten-son-godhead-distinction.critique",
+        "moveProse.con-changing-reality-epistemic-change.critique"
+      ]
+    ],
+    "attemptsPerPacket": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveRecoveryMaximum": 0,
+    "mergeRule": "Replace only the four authorized critiques in the complete rejected Debate 42 output, preserve every other field, then validate the complete debate output."
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/packets/debate-42.json": "bece5eec669fe53ade7e4aea19dfe37ad6cb7576f61c2ea36e536b4ae36e94fb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/analysis.json": "dd25db1eecff14ab44aac0aa5896d166f63a406e1573881464a7c3ad7a8e312d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/execution-activation.json": "92c2df63833ae9a5d119c24506b0717e12287d1152b61fc50bbf344b9485bb7e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/model-execution.json": "29571a31498305221a3292886077a47b42ad68c84944f4ded7a1ef35d106a730",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/outputs/debate-05.json": "27e2841b3e163cda9a7d7f72ed709fbc2b37d5f2b9da976589228889e00705dd",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/outputs/debate-179.json": "faa2427e4ca03705c21009cbe8000aa435de28b5bc1f12c8659e63ba27a0166b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/outputs/debate-42.json": "633ec422301aa342945c7e00da46045c7af1ac8c2af24efad6df348bb5246231",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/provenance/debate-05.json": "6e8630eed96fcf32965fe6ee9befd9709ba9b8c8eea9c1cd5316909bd4ebc29a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/provenance/debate-179.json": "c0631e83a0a34f6ec6e94af811cf3bbdc0693f63ac4aa2e3ba0bfe92f4a69f65",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/provenance/debate-42.json": "1d6ed509b16d46eb32b9c0119ca41c1917461ddaa4034efcab924027aac696d3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/validations/debate-05.json": "5347d92b0e56e7c8970e1ed1987d278308fb7b44292c0d6c8f20a1e3960805c2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/validations/debate-179.json": "ab769258a84d7a554af744ce277911efc272695bec6f37018a7a0d6803073a7b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/validations/debate-42.json": "bb3f65a3584bb154b6cf0149c50db350b957eaadb28c8151e1e02f724e87ec57"
+  },
+  "directIncrementalCostUsd": 0,
+  "userAuthorization": {
+    "instruction": "Authorize deterministic diagnosis and two field-disjoint repair packets for the four Debate 42 critique overruns.",
+    "subscriptionModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "repairPreparation": true,
+    "repairModelExecution": false,
+    "deterministicMergeAndValidation": false,
+    "debate59Resumption": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-two-field-disjoint-debate-42-publication-repair-packets"
+}
