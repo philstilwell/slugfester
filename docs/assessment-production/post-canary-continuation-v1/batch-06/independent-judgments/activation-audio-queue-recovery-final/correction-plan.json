@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-06-independent-judgment-activation-audio-queue-recovery-final",
+  "status": "batch-06-independent-judgment-activation-audio-queue-final-exception-frozen-not-activated",
+  "frozenAt": "2026-08-22T22:08:00.000Z",
+  "exception": {
+    "kind": "one-time-third-failure-exception",
+    "furtherRecoveryForUnderlyingProblemMaximum": 0
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/activation-audio-queue-failure/diagnosis.json",
+    "sha256": "11c37583e9fd74b244150827fae8f8e3c47f5432c81c3654568031a769e5965d"
+  },
+  "targets": [
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-06-independent-judgment-activation.mjs",
+      "preimageSha256": "18467db37f3ee0e7df4debaa8c5b7cfd0664dfbe73a0dad6c5524b1a3e5e7dbd",
+      "proposedSha256": "0c2e910b6aa54cf0454c6b2f8e029e4b91ac7bc796fa41eb1414de67e1fe5ae3",
+      "exactChange": "replace only the empty pendingAttributionVerificationMoves expectation with the two frozen Debate 97 debate/move pairs in their frozen order"
+    },
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/execution-activation.json",
+      "preimageSha256": "d13efb9bc9d26d3483ebf3384c7632e76b8356ef319cfe0794c12bb2b29b022a",
+      "proposedSha256": "afc400d458f07e4ec35d2240c3925ca9efbaf2e445d86400128aad770463fc0a",
+      "exactChange": "replace only the authenticated activation-test source hash with the proposed test hash"
+    }
+  ],
+  "frozenExpectedMoves": [
+    {
+      "debateNumber": "97",
+      "moveId": "con-classical-suppression-and-absorption"
+    },
+    {
+      "debateNumber": "97",
+      "moveId": "pro-secularism-theological-descent"
+    }
+  ],
+  "preservation": {
+    "packets": "byte-identical",
+    "schemas": "byte-identical",
+    "sources": "byte-identical",
+    "inventories": "byte-identical",
+    "modelSettings": "byte-identical",
+    "scores": "unavailable-and-unchanged",
+    "otherActivationFields": "byte-identical"
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "validationPasses": 1,
+    "retries": 0,
+    "furtherCorrectionsForUnderlyingProblem": 0,
+    "modelsBeforePassingGate": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAction": "activate-and-execute-final-two-target-correction-once"
+}
