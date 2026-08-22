@@ -1,0 +1,340 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-publication-resumption-failure-diagnosis",
+  "status": "frozen-diagnosed-batch-05-debate-189-validation-and-debate-109-timeout",
+  "frozenAt": "2026-08-22T12:04:01Z",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "preservedGate": {
+    "contextsPlanned": 7,
+    "contextsAttempted": 3,
+    "contextsValid": 1,
+    "contextsInvalid": 2,
+    "contextsUnattempted": 4,
+    "validDebates": [
+      "132"
+    ],
+    "failedDebates": [
+      "189",
+      "109"
+    ],
+    "unattemptedDebates": [
+      "179",
+      "05",
+      "42",
+      "59"
+    ],
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "modelAuthoredScores": 0
+  },
+  "debate189": {
+    "classification": "eight-critique-word-boundary-failures",
+    "originalAttemptCount": 1,
+    "acceptedOutput": false,
+    "originalOutputPreserved": true,
+    "outputSha256": "f2c4b5e467b2a2d6f4b364383959c9b4991d79e3ba4d1b6e235cb630c6389f95",
+    "failedFields": [
+      {
+        "moveId": "con-information-agency-transition",
+        "path": "moveProse.con-information-agency-transition.critique",
+        "words": 131,
+        "characters": 1089,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "excessWordsAboveAcceptanceMaximum": 1
+      },
+      {
+        "moveId": "pro-information-insufficient-without-cellular-matter",
+        "path": "moveProse.pro-information-insufficient-without-cellular-matter.critique",
+        "words": 132,
+        "characters": 1101,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "excessWordsAboveAcceptanceMaximum": 2
+      },
+      {
+        "moveId": "pro-autocatalysis-not-cellular-pathway",
+        "path": "moveProse.pro-autocatalysis-not-cellular-pathway.critique",
+        "words": 131,
+        "characters": 1046,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "excessWordsAboveAcceptanceMaximum": 1
+      },
+      {
+        "moveId": "con-natural-molybdate-information",
+        "path": "moveProse.con-natural-molybdate-information.critique",
+        "words": 131,
+        "characters": 1107,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "excessWordsAboveAcceptanceMaximum": 1
+      },
+      {
+        "moveId": "pro-growing-cell-knowledge-widens-target",
+        "path": "moveProse.pro-growing-cell-knowledge-widens-target.critique",
+        "words": 137,
+        "characters": 1098,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "excessWordsAboveAcceptanceMaximum": 7
+      },
+      {
+        "moveId": "con-copying-selection-pathway",
+        "path": "moveProse.con-copying-selection-pathway.critique",
+        "words": 131,
+        "characters": 1087,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "excessWordsAboveAcceptanceMaximum": 1
+      },
+      {
+        "moveId": "pro-minimal-cell-complexity-gap",
+        "path": "moveProse.pro-minimal-cell-complexity-gap.critique",
+        "words": 133,
+        "characters": 1046,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "excessWordsAboveAcceptanceMaximum": 3
+      },
+      {
+        "moveId": "con-objective-molecular-complexity-theory",
+        "path": "moveProse.con-objective-molecular-complexity-theory.critique",
+        "words": 133,
+        "characters": 1081,
+        "sentences": 4,
+        "orderedLabelsPassed": true,
+        "terminalPunctuationPassed": true,
+        "excessWordsAboveAcceptanceMaximum": 3
+      }
+    ],
+    "failedFieldCount": 8,
+    "excessWordsTotal": 19,
+    "diagnosticReplay": {
+      "originalOutputModified": false,
+      "persistedCorrectedOutput": false,
+      "hypotheticalWordsRemoved": 19,
+      "result": {
+        "status": "passed",
+        "debateNumber": "189",
+        "moves": 19,
+        "critiques": 19,
+        "minimumCritiqueCharacters": 1022,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 16,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    "minimumBoundedRepair": {
+      "operation": "four-isolated-two-field-publication-repair-packets",
+      "reasonMinimum": "Eight diagnosed writable fields with a maximum of two fields per repair packet require four packets.",
+      "packetCount": 4,
+      "partition": [
+        [
+          "moveProse.con-information-agency-transition.critique",
+          "moveProse.pro-information-insufficient-without-cellular-matter.critique"
+        ],
+        [
+          "moveProse.pro-autocatalysis-not-cellular-pathway.critique",
+          "moveProse.con-natural-molybdate-information.critique"
+        ],
+        [
+          "moveProse.pro-growing-cell-knowledge-widens-target.critique",
+          "moveProse.con-copying-selection-pathway.critique"
+        ],
+        [
+          "moveProse.pro-minimal-cell-complexity-gap.critique",
+          "moveProse.con-objective-molecular-complexity-theory.critique"
+        ]
+      ],
+      "attemptsPerPacket": 1,
+      "retries": 0,
+      "timeoutExtensions": 0,
+      "mergeRule": "Replace only the eight authorized critiques in original move order, preserve every other field, then validate the complete Debate 189 output."
+    }
+  },
+  "debate109": {
+    "classification": "timeout-before-result-without-reusable-partial-output",
+    "originalAttemptCount": 1,
+    "acceptedOutputs": 0,
+    "failedPartialOutputReusable": false,
+    "outputWritten": false,
+    "stdoutEmpty": true,
+    "timedOut": true,
+    "terminationSignal": "SIGTERM",
+    "frozenTimeoutMs": 600000,
+    "recordedElapsedMs": 600008,
+    "retryCount": 0,
+    "timeoutExtensionCount": 0,
+    "workload": {
+      "packetBytes": 110684,
+      "schemaBytes": 83065,
+      "copiedInputBytes": 215925,
+      "moves": 19,
+      "proMoves": 9,
+      "conMoves": 10,
+      "modelAuthoredContentFields": 26
+    },
+    "finding": {
+      "evidence": "The context produced no result file or stdout, reached the frozen timeout, and ended with SIGTERM without an extension.",
+      "inference": "The monolithic 19-move publication workload exceeded the frozen runtime; preserved evidence establishes no semantic, schema, source, identity, or score defect."
+    },
+    "minimumBoundedResumption": {
+      "operation": "partition-original-context-into-two-side-based-field-disjoint-score-locked-shards",
+      "reasonMinimum": "One context would repeat the failed workload; two is the smallest nontrivial partition, and the 26 content fields divide evenly into two 13-field shards.",
+      "shardCount": 2,
+      "shards": [
+        {
+          "shardId": "shard-01-pro-shared",
+          "side": "pro",
+          "moveIds": [
+            "pro-dna-rna-information-design-inference",
+            "pro-genetic-code-optimization-design",
+            "pro-resurrection-fabrication-improbable",
+            "pro-resurrection-mistake-improbable",
+            "pro-hiddenness-adequate-evidence",
+            "pro-suffering-evidential-limits",
+            "pro-regular-world-occasional-harm",
+            "pro-hiddenness-moral-probation",
+            "pro-supernatural-justification-without-mechanism"
+          ],
+          "writableFields": [
+            "summary",
+            "representativeQuotes.pro",
+            "moveProse.pro-dna-rna-information-design-inference",
+            "moveProse.pro-genetic-code-optimization-design",
+            "moveProse.pro-resurrection-fabrication-improbable",
+            "moveProse.pro-resurrection-mistake-improbable",
+            "moveProse.pro-hiddenness-adequate-evidence",
+            "moveProse.pro-suffering-evidential-limits",
+            "moveProse.pro-regular-world-occasional-harm",
+            "moveProse.pro-hiddenness-moral-probation",
+            "moveProse.pro-supernatural-justification-without-mechanism",
+            "overallCommentary.pro",
+            "aiExtension.pro"
+          ],
+          "writableFieldCount": 13
+        },
+        {
+          "shardId": "shard-02-con",
+          "side": "con",
+          "moveIds": [
+            "con-hiddenness-nonresistant-nonbelief",
+            "con-religious-geography-cultural-pattern",
+            "con-gratuitous-suffering-framework",
+            "con-animal-suffering-naturalistic-expectation",
+            "con-dna-gap-does-not-warrant-design",
+            "con-resurrection-comparative-prior",
+            "con-gospel-appearance-development",
+            "con-abiogenesis-suspended-inference",
+            "con-brain-based-religious-belief",
+            "con-religion-as-consoling-genealogy"
+          ],
+          "writableFields": [
+            "representativeQuotes.con",
+            "moveProse.con-hiddenness-nonresistant-nonbelief",
+            "moveProse.con-religious-geography-cultural-pattern",
+            "moveProse.con-gratuitous-suffering-framework",
+            "moveProse.con-animal-suffering-naturalistic-expectation",
+            "moveProse.con-dna-gap-does-not-warrant-design",
+            "moveProse.con-resurrection-comparative-prior",
+            "moveProse.con-gospel-appearance-development",
+            "moveProse.con-abiogenesis-suspended-inference",
+            "moveProse.con-brain-based-religious-belief",
+            "moveProse.con-religion-as-consoling-genealogy",
+            "overallCommentary.con",
+            "aiExtension.con"
+          ],
+          "writableFieldCount": 13
+        }
+      ],
+      "fixedDeterministicFields": [
+        "schemaVersion",
+        "protocolId",
+        "debateNumber",
+        "debateId",
+        "assessmentModel",
+        "completedAt",
+        "productionCanary",
+        "stagingOnly",
+        "displayContract",
+        "audit"
+      ],
+      "everyOriginalContentFieldAcceptedExactlyOnce": true,
+      "mergeRule": "Restore the original publication schema; take each content field from exactly one accepted shard; derive fixed contract fields deterministically; use the later shard completion timestamp; validate against the original packet.",
+      "originalPacketPreserved": true,
+      "originalSchemaPreserved": true,
+      "originalValidatorMeaningPreserved": true,
+      "originalFailedPartialOutputIgnored": true,
+      "attemptsPerShard": 1,
+      "retries": 0,
+      "timeoutExtensions": 0
+    }
+  },
+  "combinedRecovery": {
+    "model": {
+      "label": "5.6 Sol",
+      "slug": "gpt-5.6-sol",
+      "reasoningEffort": "low",
+      "authentication": "ChatGPT subscription"
+    },
+    "contexts": 6,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumParallelContexts": 2,
+    "attemptsPerContext": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "userAuthorization": {
+    "instruction": "I authorize deterministic diagnosis of the preserved Batch 5 Debate 189 publication-validation failure and Debate 109 publication timeout. Freeze and push the diagnosis, then prepare and execute one bounded Debate 189 field-level repair and the minimum hash-locked, field-disjoint Debate 109 resumption shards required by the diagnosis. Use 5.6 Sol with low reasoning through my ChatGPT subscription, one attempt per new context, no retries or timeout extensions, and a direct incremental cost cap of $0. Preserve all accepted outputs, sources, identities, scores, and unrelated fields. If both debates pass complete validation, resume exactly the four unattempted contexts, replay the ten-debate cohort, commit and push successful checkpoints, and resume the Batch 5 standing authorization. Stop on any further failed output, paid service, unexpected validation category, retry, protected-field change, or action outside this authorization.",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/execution-preparation-manifest.json": "a90082762ecabe862f16addcfc5067d392d4708eb94c9c12dcd90f0f59a6448e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/execution-activation.json": "f002fa7f85b028b9a08f3b9d3d4b9904f00e09030b74b3de7297977c4637c2fc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/model-execution.json": "5ef794a7264f9780689e1660e571f4dcba22b0d7ec01326af4a4ba415689e439",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/analysis.json": "d04c54af7e737ec9a10adb8678aa735d5c66f3a41f4f19e09c36767a2220b135",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/outputs/debate-189.json": "f2c4b5e467b2a2d6f4b364383959c9b4991d79e3ba4d1b6e235cb630c6389f95",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/validations/debate-189.json": "8790714323504c471e74c3bbb1a203190f29cd5701c202efc41332c364f8bf1f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/provenance/debate-189.json": "71644a0dc1c3440560f6e7b0a609a0d0872019dbb4cd4744f2248760993b7722",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/packets/debate-189.json": "3aab38a2da1798ce70ebc2b53d8cc7931795d156a70c6d358acd456f2f8852de",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/schemas/debate-189.schema.json": "21bcb47c27b1a6f9222006f2ad255b192882e3ff033f424068f27888b95668ed",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/packets/debate-109.json": "1e5a1ac445488d35534b614c51e984cc220d3663c3f53594f260cc99b5f50a8f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/schemas/debate-109.schema.json": "4e6caba5d1b1f3b090406968ac4ceef869690dafa99c607bfad3b60fd92d69e0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685",
+    "scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs": "e300714ea30b3056864ada9fb1e03be429465c8fd26aeb4c1fb49055a6d908ff",
+    "scripts/lib/assessment-production-post-canary-batch-05-publication-validation.mjs": "b01f53110b9fc2620866e76e7efe80af980573e396f1b68acdf487bcbc3da01b",
+    "scripts/diagnose-assessment-production-post-canary-batch-05-publication-resumption-failures.mjs": "1cefab2be59e55f967b3d739c57e1d59f611db11b77ece2a3402d79f0e11e7f1"
+  },
+  "authorization": {
+    "recoveryPreparation": true,
+    "recoveryModelExecution": false,
+    "deterministicMergeAndValidation": false,
+    "fourContextResumption": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-four-debate-189-repair-packets-and-two-debate-109-field-disjoint-resumption-shards"
+}
