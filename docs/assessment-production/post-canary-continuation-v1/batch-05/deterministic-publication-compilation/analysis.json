@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-deterministic-publication-compilation-analysis",
+  "protocolId": "assessment-production-post-canary-batch-05-deterministic-publication-compilation",
+  "status": "ten-debate-batch-05-deterministic-publication-compilation-passed",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "gate": {
+    "sourceHashesPassed": true,
+    "explicitOrderPassed": true,
+    "compiledRecordsPassed": 10,
+    "expectedCompiledRecords": 10,
+    "moves": 187,
+    "deterministicCompilationPasses": 1,
+    "reruns": 0,
+    "scoresRecalculated": false,
+    "scoresChanged": false,
+    "modelContexts": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/preparation-manifest.json",
+    "identitySnapshot": "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/production-identity-snapshot.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/analysis.json",
+    "compilationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compilation-audit.json",
+    "compiledOutputs": [
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-158.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-46.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-64.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-132.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-189.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-109.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-179.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-05.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-42.json",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-59.json"
+    ]
+  },
+  "authorization": {
+    "publicationFinalizationPreparation": true,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-05-publication-finalization-under-standing-authorization"
+}
