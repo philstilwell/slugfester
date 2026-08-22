@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-publication-finalization-provenance",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-finalization",
+  "status": "staging-only-batch-05-final-candidate-provenance",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "debateNumber": "132",
+  "debateId": "mclatchie-carrier-paul-celestial-jesus-2018",
+  "compiledInput": "docs/assessment-production/post-canary-continuation-v1/batch-05/deterministic-publication-compilation/compiled/debate-132.json",
+  "compiledInputSha256": "f0327fca758dd7738574596e800ecd0c92af965f3cd98b8dabbf7053d226175c",
+  "allowedTransformation": "remove-stagingAudit-from-display-candidate-and-preserve-it-here",
+  "displayFieldsChanged": 0,
+  "participantScoresChanged": false,
+  "scorePassesExecuted": 0,
+  "modelContexts": 0,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/HCcq8G-WzJM/transcript.txt",
+    "transcriptSha256": "9123a4118612acda8c318c397d5824f8f45c8798e884bb6d2b563768ab7035b9",
+    "eventsPath": ".assessment-cache/captions/HCcq8G-WzJM/events.json",
+    "eventsSha256": "34eac07c6a11b156258ada03a8dfcdcf0ee9de8e882bc664b4e20956c8c71d2a",
+    "localManifestPath": ".assessment-cache/captions/HCcq8G-WzJM/manifest.json",
+    "localManifestSha256": "ed7939d75aa83f88d32fe1d6bed0e728aacceb0755f4ce123060ee931217b746"
+  },
+  "calculatedWinner": "con",
+  "winningMargin": 3,
+  "scoreProtocolId": "assessment-production-post-canary-batch-05-single-deterministic-score-pass",
+  "displayContract": {
+    "sectionTitle": "AI Extension",
+    "placement": "immediately-after-overall-commentary",
+    "defaultCollapsed": true,
+    "visualVariant": "ai-distinct",
+    "byline": "Assessments made by 5.6 Sol. — Rubric: Slugfester Reassessment Rubric v2.",
+    "prohibitedLanguageScanPassed": true
+  },
+  "noveltyMap": {
+    "pro": {
+      "thesis": {
+        "id": "d132-ai-pro-thesis",
+        "text": "The AI steelman is that the best cumulative reading of Paul's accepted letters identifies Jesus as a recent earthly person, because ordinary kinship, ancestry, meal, and execution language converges with a specifically human reading of the Corinthian rulers.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-pauline-biographical-markers",
+            "pro-human-rulers-from-corinthian-context",
+            "pro-biological-brothers-convergence"
+          ],
+          "explanation": "It repairs the live case by restricting the core inference to accepted Pauline evidence and combining markers through an explicit comparative standard."
+        }
+      },
+      "premises": [
+        {
+          "id": "d132-ai-pro-premise-1",
+          "text": "Evidence from disputed letters should remain supplementary; the principal case should rely on accepted Pauline passages whose authenticity is shared ground, preventing corpus controversy from carrying more weight than it can support.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-contested-thirteen-letter-corpus",
+              "pro-pauline-biographical-markers"
+            ],
+            "explanation": "It corrects the unstable corpus scope by separating secure Pauline material from merely supplementary disputed evidence."
+          }
+        },
+        {
+          "id": "d132-ai-pro-premise-2",
+          "text": "References to being born under law, Davidic descent, a final meal, named kin, and execution by rulers form a cumulative pattern whose ordinary historical readings share one terrestrial explanation.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-pauline-biographical-markers",
+              "pro-biological-brothers-convergence"
+            ],
+            "explanation": "It develops the transcript's catalogue into an explicit cumulative inference rather than leaving the markers as an uninterpreted list."
+          }
+        },
+        {
+          "id": "d132-ai-pro-premise-3",
+          "text": "The immediate Corinthian contrast with human sages, social status, and worldly authorities supplies stronger local control over the rulers phrase than a general possibility of cosmic agency does.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-human-rulers-from-corinthian-context",
+              "pro-human-rulers-with-spiritual-participation"
+            ],
+            "explanation": "It strengthens the contextual argument by stating why local discourse should outweigh broader cosmological possibility."
+          }
+        },
+        {
+          "id": "d132-ai-pro-premise-4",
+          "text": "Spiritual participation and human execution are compatible: cosmic powers may influence earthly authorities without becoming the grammatical rulers or relocating the crucifixion beyond the terrestrial sphere.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "pro-human-rulers-with-spiritual-participation",
+              "con-demonic-rulers-hidden-plan"
+            ],
+            "explanation": "It develops the mixed-agency distinction while directly answering the strongest demonic-rulers objection."
+          }
+        },
+        {
+          "id": "d132-ai-pro-premise-5",
+          "text": "Later narratives should corroborate Paul only where independence can be defended; otherwise they may illuminate possible meanings but cannot determine the earlier Pauline expressions by themselves.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "pro-biological-brothers-convergence",
+              "pro-interlocking-gospel-details",
+              "con-family-traditions-source-separation"
+            ],
+            "explanation": "It repairs the source-separation weakness by limiting what later family and Gospel traditions can establish."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d132-ai-pro-conclusion",
+        "text": "Taken together, the secure Pauline markers and locally human rulers context make an earthly Jesus the better supported interpretation, while later Acts and Gospel evidence remains secondary rather than indispensable.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "pro-pauline-biographical-markers",
+            "pro-human-rulers-from-corinthian-context",
+            "pro-human-rulers-with-spiritual-participation"
+          ],
+          "explanation": "It offers a proportionate conclusion that rests on the strongest Pauline evidence without depending on contested later-source claims."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d132-ai-pro-new-1",
+          "title": "Explanatory compression across accepted letters",
+          "text": "Instead of asking whether each Pauline expression could receive a celestial reinterpretation in isolation, compare how many independent interpretive adjustments each model requires. An earthly-person model reads birth, ancestry, kinship, communal meal tradition, and execution language substantially in their ordinary senses. A celestial model may remain possible, but it must coordinate several specialized readings across different contexts. This does not prove historicity; it supplies a transparent comparative criterion favoring the explanation that compresses the accepted evidence with fewer unrelated semantic departures.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This newly introduces explanatory compression as a comparative method for weighing the combined Pauline markers rather than treating them separately."
+          }
+        },
+        {
+          "id": "d132-ai-pro-new-2",
+          "title": "Agency does not determine location",
+          "text": "The identity of ultimate spiritual opponents should be separated from the location and proximate mechanism of an event. Ancient writers could describe political violence as spiritually instigated while still locating the act among human institutions. Accordingly, even persuasive evidence that Paul imagined demonic participation would not establish a heavenly crucifixion unless the text also displaced human agents or supplied a nonterrestrial setting. This argument narrows the dispute to the missing bridge from cosmic significance to celestial geography and prevents spiritual agency from doing two evidentiary jobs at once.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This newly introduces a general distinction among ultimate agency, proximate agency, and event location to clarify the rulers dispute."
+          }
+        }
+      ]
+    },
+    "con": {
+      "thesis": {
+        "id": "d132-ai-con-thesis",
+        "text": "The AI steelman is that Paul's accepted letters leave the saving events' terrestrial location materially underdetermined, while cosmic rulers and ancient counterpart cosmology preserve a coherent celestial interpretation that later dependent narratives cannot settle.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-authentic-pauline-terrestrial-silence",
+            "con-demonic-rulers-hidden-plan",
+            "con-heavenly-counterpart-crucifixion",
+            "con-family-traditions-source-separation"
+          ],
+          "explanation": "It repairs overstatement by arguing underdetermination and coherence rather than claiming that silence alone proves a celestial setting."
+        }
+      },
+      "premises": [
+        {
+          "id": "d132-ai-con-premise-1",
+          "text": "The relevant corpus should begin with the accepted Pauline letters, because conclusions about Paul's belief should not depend principally on documents whose Pauline authorship remains disputed.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-authentic-pauline-terrestrial-silence",
+              "pro-contested-thirteen-letter-corpus"
+            ],
+            "explanation": "It develops the secure-corpus approach while answering the proposal to expand the evidentiary base without first establishing authenticity."
+          }
+        },
+        {
+          "id": "d132-ai-con-premise-2",
+          "text": "Paul does not narrate an earthly ministry, pre-death discipleship, miracles, trial, or terrestrial execution location, so indirect markers must bear more interpretive weight than explicit biography would require.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-authentic-pauline-terrestrial-silence",
+              "pro-pauline-biographical-markers"
+            ],
+            "explanation": "It retains the silence evidence while explicitly acknowledging that indirect markers exist and require comparative interpretation."
+          }
+        },
+        {
+          "id": "d132-ai-con-premise-3",
+          "text": "The rulers' ignorance of concealed divine wisdom and their opposition to the salvific plan fit cosmic adversaries, although corrupt human agents or layered agency remain possible alternatives.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-demonic-rulers-hidden-plan",
+              "pro-human-rulers-with-spiritual-participation"
+            ],
+            "explanation": "It moderates the demonic-rulers claim and expressly incorporates the strongest mixed-agency alternative."
+          }
+        },
+        {
+          "id": "d132-ai-con-premise-4",
+          "text": "Attested heavenly counterparts establish conceptual availability, but a celestial crucifixion requires a separate bridge showing that execution practices, not merely places or ritual objects, could receive counterparts.",
+          "novelty": {
+            "classification": "repairs",
+            "sourceMoveIds": [
+              "con-heavenly-counterpart-crucifixion"
+            ],
+            "explanation": "It corrects the transcript's quick transition from general counterparts to the particular claim about crucifixion."
+          }
+        },
+        {
+          "id": "d132-ai-con-premise-5",
+          "text": "Acts and Gospel family or feeding traditions cannot determine Paul's earlier meanings unless their independence, chronology, and transmission are established rather than assumed from narrative coherence.",
+          "novelty": {
+            "classification": "extends",
+            "sourceMoveIds": [
+              "con-family-traditions-source-separation",
+              "con-acts-pauline-contradictions",
+              "con-john-synoptic-literary-dependence"
+            ],
+            "explanation": "It integrates the source-separation objections into a single explicit condition for using later narratives as Pauline evidence."
+          }
+        }
+      ],
+      "conclusion": {
+        "id": "d132-ai-con-conclusion",
+        "text": "Therefore, a celestial interpretation remains a serious explanation of the accepted Pauline evidence, particularly if cosmic-ruler and counterpart bridges are independently substantiated, while later earthly narratives cannot simply be read back into Paul.",
+        "novelty": {
+          "classification": "repairs",
+          "sourceMoveIds": [
+            "con-pauline-mythic-realm-thesis",
+            "con-authentic-pauline-terrestrial-silence",
+            "con-demonic-rulers-hidden-plan",
+            "con-heavenly-counterpart-crucifixion"
+          ],
+          "explanation": "It states a conditional, proportionate conclusion that preserves the thesis without claiming that ambiguity or possibility establishes it conclusively."
+        }
+      },
+      "newArguments": [
+        {
+          "id": "d132-ai-con-new-1",
+          "title": "Expected-reference comparison",
+          "text": "The silence case should be framed through competing expectations rather than simple absence. If Paul's communities already knew an earthly biography, occasional letters might omit much of it; nevertheless, disputes over authority, ethics, revelation, and resurrection create several contexts where an earthly teacher, witnesses to his ministry, or a terrestrial execution setting could have been useful. The celestial model gains support only to the extent that these reference opportunities are genuinely more expected under historicity. This approach makes genre sensitivity part of the argument and identifies what evidence would weaken the inference.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This newly introduces a disciplined expected-reference framework that converts raw Pauline silence into a testable comparative argument."
+          }
+        },
+        {
+          "id": "d132-ai-con-new-2",
+          "title": "Transmission asymmetry for later narratives",
+          "text": "Later narratives may preserve genuine history, but their evidentiary use is asymmetric when the question is specifically Paul's earlier belief. Agreement with an earthly biography can arise through shared tradition, literary dependence, theological development, or historical memory, whereas a demonstrated Pauline allusion would directly connect the traditions. Consequently, Gospel and Acts material should receive substantial weight only after a transmission path to or from Paul is established. This does not dismiss later sources; it prevents their narrative detail from silently supplying premises absent from the accepted letters being interpreted.",
+          "novelty": {
+            "classification": "introduces",
+            "sourceMoveIds": [],
+            "explanation": "This newly introduces transmission asymmetry as a reason to require stronger linkage before later narratives determine Paul's earlier conceptual framework."
+          }
+        }
+      ]
+    }
+  },
+  "modelOutputCompletedAt": "2026-08-22T00:00:00-04:00",
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "independentModelPassesWereIsolated": true,
+    "participantJudgmentWasScoreBlind": true,
+    "integerRoundedScoreTiesPermitted": true
+  },
+  "compilationValidation": {
+    "status": "passed",
+    "debateNumber": "132",
+    "sections": 5,
+    "moves": 19,
+    "scoresLocked": true,
+    "scoresRecalculated": false,
+    "modelAuthoredScores": 0,
+    "aiExtensionIncluded": true,
+    "productionMutationPerformed": false
+  },
+  "productionMutationPerformed": false,
+  "nextBatchSelectionPerformed": false
+}
