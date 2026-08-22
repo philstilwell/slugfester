@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-candidate-sharded-inventory",
+  "debateNumber": "64",
+  "debateId": "pine-watkins-god-existence-2020",
+  "motion": "Does God exist, and do Thomistic arguments from being, act and potency, divine simplicity, revelation, evil, freedom, and changing knowledge support or undermine classical theism?",
+  "sides": {
+    "pro": {
+      "label": "Thomistic theism",
+      "speakers": [
+        "Gregory Pine"
+      ]
+    },
+    "con": {
+      "label": "Analytic atheism",
+      "speakers": [
+        "Ben Watkins"
+      ]
+    }
+  },
+  "durationSeconds": 7914,
+  "eventCount": 4107,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/0QMwHUijmqo/transcript.txt",
+    "transcriptSha256": "00ff60099048ee434a037d320c9119a369586cb2004f187e49e2730614ea6ecf",
+    "eventsPath": ".assessment-cache/captions/0QMwHUijmqo/events.json",
+    "eventsSha256": "27de60c9bd9c112226bcfc425533a3414e1460a49b43958f9bf34b1698709a65",
+    "localManifestPath": ".assessment-cache/captions/0QMwHUijmqo/manifest.json",
+    "localManifestSha256": "1795d19667611490447c4d423f215b8abb1eca8f14ca495dd70a66cb2f0bdc48"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-05/debate-64.jsonl",
+    "sourceLedgerSha256": "57176a00912b7b19eb7a08a30d0ba89425ddf7958fa4a3c5409345bdc43975dc",
+    "sourceLedgerBytes": 215216,
+    "sourceLedgerEventCount": 4107,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/plans/debate-64.json",
+    "partitionPlanSha256": "9464e7b179bf9f9c5eb863666f4c0f7ba28a24384bf4feaee4d2682f44bdfd0a",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

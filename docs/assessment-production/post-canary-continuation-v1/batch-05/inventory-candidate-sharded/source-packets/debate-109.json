@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-candidate-sharded-inventory",
+  "debateNumber": "109",
+  "debateId": "mclatchie-oconnor-theism-naturalism-reality-2022",
+  "motion": "Theism or naturalism: which provides a better account of reality, including biological information, resurrection testimony, divine hiddenness, religious geography, and suffering?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "Jonathan McLatchie"
+      ]
+    },
+    "con": {
+      "label": "Atheistic naturalism",
+      "speakers": [
+        "Alex O'Connor"
+      ]
+    }
+  },
+  "durationSeconds": 8704,
+  "eventCount": 3926,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/rnIQFI1pYLM/transcript.txt",
+    "transcriptSha256": "29ab709e3808973a66e583116451e4772054c19999a6f3e5f143ae144bfb8113",
+    "eventsPath": ".assessment-cache/captions/rnIQFI1pYLM/events.json",
+    "eventsSha256": "ab1c00886cbbbb3a0791534ecfc3df132405b9202765b1430c3a2d3f042da692",
+    "localManifestPath": ".assessment-cache/captions/rnIQFI1pYLM/manifest.json",
+    "localManifestSha256": "737358b8bf8f66cd8d3554e0d39a8d0ab201477ff2305bd7dc2e4fa6cafc3aa1"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-05/debate-109.jsonl",
+    "sourceLedgerSha256": "b691c6f74c0c41c9ee0661389cc0d77c13c255e20a46c2ac02da8e262d6b240d",
+    "sourceLedgerBytes": 231907,
+    "sourceLedgerEventCount": 3926,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/plans/debate-109.json",
+    "partitionPlanSha256": "d5c4cefab521de00bbca3b4aa9333c5da13b9d52049206ae61b18f94c98aaf90",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

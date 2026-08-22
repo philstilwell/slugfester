@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-candidate-sharded-inventory",
+  "debateNumber": "05",
+  "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+  "motion": "Is belief in God reasonable, and can truth, logic, knowledge, induction, and evidence be accounted for without Christian revelation?",
+  "sides": {
+    "pro": {
+      "label": "Presuppositional theist",
+      "speakers": [
+        "Sye Ten Bruggencate"
+      ]
+    },
+    "con": {
+      "label": "Skeptical atheist",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 6957,
+  "eventCount": 3200,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/OL8LREmbDi0/transcript.txt",
+    "transcriptSha256": "bd430d54672142640c78efaf3630dcbbfd15e833732058f53bd5df60b3b92a17",
+    "eventsPath": ".assessment-cache/captions/OL8LREmbDi0/events.json",
+    "eventsSha256": "ec182e33fd6ecc7af309efceffc13f87af1e6e8ee2be8dd0bc24394cc3a5e05a",
+    "localManifestPath": ".assessment-cache/captions/OL8LREmbDi0/manifest.json",
+    "localManifestSha256": "e10fd606a6127193c78d4c3c566b72e1bea36ffa0583978a2d75aa33179457fe"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-05/debate-05.jsonl",
+    "sourceLedgerSha256": "b976ce297dd37a31e4fc98e8628b275e855e4ddc560bf44162149ea5bcd2135e",
+    "sourceLedgerBytes": 186390,
+    "sourceLedgerEventCount": 3200,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/plans/debate-05.json",
+    "partitionPlanSha256": "734147b0cf7caf9f548e4d4b755f4df67380edf850a27611eb999b381ee9a934",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-candidate-sharded-inventory",
+  "debateNumber": "59",
+  "debateId": "bollore-halper-god-science-evidence-2026",
+  "motion": "Do cosmology, fine-tuning, origin-of-life research, biblical claims, and suffering make the Christian God more or less plausible?",
+  "sides": {
+    "pro": {
+      "label": "Christian theism",
+      "speakers": [
+        "Michel-Yves Bollore"
+      ]
+    },
+    "con": {
+      "label": "Scientific skepticism",
+      "speakers": [
+        "Phil Halper"
+      ]
+    }
+  },
+  "durationSeconds": 6496,
+  "eventCount": 2698,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/oeYze2psUpw/transcript.txt",
+    "transcriptSha256": "0708fb6f1fd7d2245f41ef59e9538c131a8c243c0acfe1c2872ea7db8c9753ac",
+    "eventsPath": ".assessment-cache/captions/oeYze2psUpw/events.json",
+    "eventsSha256": "d29236dc9b27c2530b452ea0e67e4e5cebdcae9f8e2a73ea3a3ddf42d0d009a8",
+    "localManifestPath": ".assessment-cache/captions/oeYze2psUpw/manifest.json",
+    "localManifestSha256": "5170f17f3de60516390468ced6b9b1842207547c5fd758f7395b2c3daa488b32"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-05/debate-59.jsonl",
+    "sourceLedgerSha256": "f1f46ecd864a5e30c3327da778f79eaa9dd2ccbdf9eb2a735de80eaa26b9b745",
+    "sourceLedgerBytes": 156429,
+    "sourceLedgerEventCount": 2698,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/plans/debate-59.json",
+    "partitionPlanSha256": "76656331d6ad8acd2860ce6a92ac379d85988438387fe6034a693142b8fb78a8",
+    "partitionChunks": 4,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
