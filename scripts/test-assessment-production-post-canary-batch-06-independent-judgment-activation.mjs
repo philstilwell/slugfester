@@ -175,7 +175,16 @@ assert.equal(activation.acceptanceContract.modelAuthoredScoresMaximum, 0);
 assert.equal(activation.acceptanceContract.scoresDerived, 0);
 assert.deepEqual(
   activation.audioPolicy.pendingAttributionVerificationMoves,
-  []
+  [
+    {
+      debateNumber: "97",
+      moveId: "con-classical-suppression-and-absorption",
+    },
+    {
+      debateNumber: "97",
+      moveId: "pro-secularism-theological-descent",
+    },
+  ]
 );
 assert.equal(allBooleanLeavesTrue(activation.stopRules), true);
 for (const key of [
