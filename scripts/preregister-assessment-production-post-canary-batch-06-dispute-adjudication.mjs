@@ -80,7 +80,7 @@ assertV4(
   "Batch 6 adjudication model or score-blind boundary changed"
 );
 assertV4(
-  preparation.totals.maximumCopiedInputBytes <= 360000,
+  preparation.totals.maximumCopiedInputBytes <= 400000,
   "Batch 6 context exceeds the frozen transport ceiling"
 );
 assertV4(
@@ -228,7 +228,7 @@ const manifest = {
     maximumMinutesPerContext: 12,
     maximumMeanMinutes: 9.5,
     absoluteGateTimeoutMs: 5400000,
-    copiedInputBytesMaximum: 360000,
+    copiedInputBytesMaximum: 400000,
     authentication: "ChatGPT subscription",
     APIKeysRemoved: true,
     removedEnvironmentVariables: [

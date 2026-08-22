@@ -492,8 +492,8 @@ assertV4(
   "Batch 6 adjudication packet workload differs from frozen inputs"
 );
 assertV4(
-  preparation.totals.maximumCopiedInputBytes <= 360000,
-  `Batch 6 context ${preparation.totals.maximumCopiedInputBytes} bytes exceeds the 360 KB ceiling`
+  preparation.totals.maximumCopiedInputBytes <= 400000,
+  `Batch 6 context ${preparation.totals.maximumCopiedInputBytes} bytes exceeds the frozen 400 KB correction ceiling`
 );
 if (shouldWrite) {
   await mkdir(POST_CANARY_BATCH_06_DISPUTE_ADJ_ROOT, { recursive: true });

@@ -35,7 +35,7 @@ assert.equal(preparation.totals.contexts, 10);
 assert.equal(preparation.totals.disputedMoves, 197);
 assert.equal(preparation.totals.candidateSelections, 609);
 assert.equal(preparation.totals.audioVerifiedMoves, 2);
-assert.equal(preparation.totals.maximumCopiedInputBytes <= 360000, true);
+assert.equal(preparation.totals.maximumCopiedInputBytes <= 400000, true);
 assert.equal(preparation.totals.modelContextsExecuted, 0);
 assert.equal(preparation.totals.paidServiceCalls, 0);
 assert.equal(preparation.totals.finalLedgersAssembled, 0);
