@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-189-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-resumption-1-recovery-1",
+  "contextIndex": 0,
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "189",
+  "debateId": "tour-cronin-origin-of-life-2020",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/outputs/debate-189.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/packets/debate-189.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-information-agency-transition.critique",
+      "moveProse.pro-information-insufficient-without-cellular-matter.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-information-agency-transition.critique",
+      "moveId": "con-information-agency-transition",
+      "originalCritique": "Strongest feature: The reply gives information a comparatively discriminating meaning through encoding and decoding, presenting it as an intermediate marker toward agency rather than simply equating abstract information with a completed living cell. Principal limitation: Agency and decision-making remain broadly characterized, and the conceptual distinction does not demonstrate how encoders, decoders, or materially organized cellular functions originate and persist within an experimentally realized chemical system. Live burden: The account must operationalize syntactic information independently of familiar biology, identify measurable precursors, and show how such organization couples to replication, heredity, metabolism, and selectable functionality without presupposing the machinery under explanation. Locked score: The strong or competent band reflects direct conceptual engagement, appropriate qualification, coherent calibration, and substantial central relevance, moderated by limited empirical warrant and the unresolved material-construction component of the transition.",
+      "originalWords": 131,
+      "originalCharacters": 1089,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-information-agency-transition",
+        "sectionId": "section-definitions-and-measurement",
+        "side": "con",
+        "speaker": "Lee Cronin",
+        "moveKind": "reply",
+        "proposition": "Syntactically structured information requiring encoding and decoding can mark the transition from ordinary chemistry toward agency or decision-making systems.",
+        "importance": 2,
+        "finalScore": 82,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "24:42",
+        "sourceSpan": {
+          "startEvent": 624,
+          "endEvent": 705,
+          "startMs": 1482230,
+          "endMs": 1669340
+        },
+        "sourceExcerpt": "problem so and so that's why I made that very well-thought-out statement that universes without life that can't have information because there's no syntactic information there's a no encode or no decoder universe is about life of course have the laws of physics in them and the laws of chemistry but I'm really interested in that transition to a agency or a decision-making entity",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-testability"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-simple-chemistry-to-life-transition-gap"
+          ],
+          "components": [
+            {
+              "componentId": "con-information-agency-transition-component-01",
+              "targetMoveId": "pro-simple-chemistry-to-life-transition-gap",
+              "text": "Why information should count as a meaningful intermediate rather than being equated with life itself.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts the information objection by defining syntactic encoding and decoding as a transition marker, but does not answer the demand for cellular material organization.",
+          "responsivenessWithinClass": {
+            "value": 73,
+            "rationale": "Within partial answers, it reaches a decisive informational component while leaving the broader chemistry-to-cell construction gap unresolved."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "Within partial answers, it reaches a decisive informational component while leaving the broader chemistry-to-cell construction gap unresolved."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Encoding and decoding make the intended information concept recoverable, though agency and decision-making entity remain only broadly characterized."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim is framed as the transition of interest rather than as a completed mechanism, fitting the conceptual support actually provided."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Information alone is not life and does not construct a cell.",
+          "decisiveQualification": "The reply offers syntactic information as a transition marker, not as a sufficient account of cellular life."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (81 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 66,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It centrally advances testability by offering a discriminating information criterion for locating a transition beyond ordinary chemistry."
+          },
+          "representationalCharity": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Cronin distinguishes physical and chemical regularities from syntactic information involving an encoder and decoder, linking the latter to agency.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-information-insufficient-without-cellular-matter.critique",
+      "moveId": "pro-information-insufficient-without-cellular-matter",
+      "originalCritique": "Strongest feature: The reply forcefully distinguishes recursive information from materially organized biology, ensuring that an informational marker cannot silently substitute for the construction, maintenance, and coordinated operation of an actual living system. Principal limitation: The categorical requirement that life must already be cellular insufficiently preserves the weaker possibility that noncellular copying or informational systems could function as scientifically relevant precursors rather than completed instances of life. Live burden: The argument should specify which material capacities become necessary at successive stages and explain why proposed precellular intermediates cannot accumulate heredity or functionality before reaching recognizable cellular organization. Locked score: The strong or competent band reflects excellent responsiveness, central relevance, and a legitimate material-organization demand, moderated by incomplete qualification, limited evidence for universal cell necessity, and imperfect charity toward the opponent's explicitly intermediate proposal.",
+      "originalWords": 132,
+      "originalCharacters": 1101,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-information-insufficient-without-cellular-matter",
+        "sectionId": "section-generative-theory-and-selection",
+        "side": "pro",
+        "speaker": "James Tour",
+        "moveKind": "reply",
+        "proposition": "Information or recursive replication alone cannot explain life's origin without accounting for the material construction and organization of cellular systems.",
+        "importance": 3,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "32:23",
+        "sourceSpan": {
+          "startEvent": 816,
+          "endEvent": 867,
+          "startMs": 1943940,
+          "endMs": 2083560
+        },
+        "sourceExcerpt": "organisms an organism is a living entity consisting of one cell for example bacteria or several cells for example animals plan fun John that's what biology is and that definition that I just said is something that and that I will listen what is the definition here this is you've got to have a cell in order to have life you want to you just want to say that I have a recursive information system",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 396
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-transition-gap"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-information-agency-transition"
+          ],
+          "components": [
+            {
+              "componentId": "pro-information-insufficient-without-cellular-matter-component-01",
+              "targetMoveId": "con-information-agency-transition",
+              "text": "Whether recursive or syntactic information itself supplies the transition to living organization.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly denies that recursive information alone constitutes life and adds the unmet requirement of a materially organized cellular system.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "Within full answers, it squarely contacts the informational inference, though its insistence on cells as the relevant life form is only briefly defended."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "Within full answers, it squarely contacts the informational inference, though its insistence on cells as the relevant life form is only briefly defended."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The information-versus-cell distinction is clear, but whether all relevant precursor life must already satisfy the cellular definition is left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Cellular material organization is a strong target requirement, but the categorical cell-necessity claim does not consider possible pre-cellular evolutionary intermediates."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Recursive information may mark a precursor transition toward life without itself being a living cell.",
+          "decisiveQualification": "The reply treats the proposal largely as a claim of life itself and does not fully preserve its weaker precursor role."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "The biological examples ground ordinary cellular life, yet no evidence shows that every scientifically relevant life precursor must already be cellular."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central transition gap by requiring material cellular construction in addition to abstract or recursive information."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The move preserves the legitimate material-organization demand but sometimes treats the opponent's intermediate marker as though it claimed to be life itself."
+          }
+        },
+        "evidenceBasis": "Tour defines biology through cellular organisms and argues that a recursive information system, standing alone, is not life.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-189-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-resumption-1-recovery-1",
+  "contextIndex": 1,
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "189",
+  "debateId": "tour-cronin-origin-of-life-2020",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/outputs/debate-189.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/packets/debate-189.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-autocatalysis-not-cellular-pathway.critique",
+      "moveProse.con-natural-molybdate-information.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-autocatalysis-not-cellular-pathway.critique",
+      "moveId": "pro-autocatalysis-not-cellular-pathway",
+      "originalCritique": "Strongest feature: The response directly tests whether a highlighted laboratory result warrants pathway significance, identifying investigator selection and the distinction between an autocatalytic reaction and the considerably richer organization required by cellular life. Principal limitation: Researcher preparation does not negate the natural behavior subsequently observed, and declaring that nothing points toward life exceeds the brief influence argument while leaving coupled catalysis and syntactic information substantially unanalyzed. Live burden: The critique must identify a principled relevance threshold, compare the observed network against it, and explain why the system cannot constitute one limited stage even if it falls far short of cellularity. Locked score: The mixed band reflects genuine experimental relevance and partial contact with the pathway inference, offset by overstatement, incomplete responsiveness, comparatively weak warrant, and insufficiently charitable treatment of investigator-mediated experimentation.",
+      "originalWords": 131,
+      "originalCharacters": 1046,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-autocatalysis-not-cellular-pathway",
+        "sectionId": "section-experimental-systems",
+        "side": "pro",
+        "speaker": "James Tour",
+        "moveKind": "reply",
+        "proposition": "The molybdate experiment demonstrates investigator-influenced autocatalysis but does not by itself establish a meaningful pathway toward cellular life.",
+        "importance": 2,
+        "finalScore": 71,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "35:14",
+        "sourceSpan": {
+          "startEvent": 883,
+          "endEvent": 929,
+          "startMs": 2114160,
+          "endMs": 2218300
+        },
+        "sourceExcerpt": "over 100 years ago I don't see how that is giving you in from of life the day his student walks in that laboratory by walking into that laboratory he's influenced that experiment by choosing a chemical off the shelf he's influenced that experiment and then all he set up was an auto catalytic reaction I think that there's nothing there there's nothing there that points me toward",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-generative-principles"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-gradual-chemical-pathway",
+            "con-information-agency-transition"
+          ],
+          "components": [
+            {
+              "componentId": "pro-autocatalysis-not-cellular-pathway-component-01",
+              "targetMoveId": "con-gradual-chemical-pathway",
+              "text": "Whether a laboratory chemical result establishes a meaningful gradual route toward life.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-autocatalysis-not-cellular-pathway-component-02",
+              "targetMoveId": "con-information-agency-transition",
+              "text": "Whether the cited chemistry demonstrates the organized informational transition to agency.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move contacts the pathway inference by characterizing the experiment as ordinary autocatalysis and noting investigator selection, but it does not analyze syntactic information.",
+          "responsivenessWithinClass": {
+            "value": 72,
+            "rationale": "Within partial answers, it attacks the decisive relevance of one laboratory example but leaves the broader gradual-process and informational claims standing."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "Within partial answers, it attacks the decisive relevance of one laboratory example but leaves the broader gradual-process and informational claims standing."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The criticism is recoverable and confined to the experiment, though the standard for what would count as pointing toward life remains implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling the system merely autocatalytic and saying there is nothing pointing toward life exceeds the brief investigator-influence argument supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A deliberately initiated experiment can still reveal a natural generative principle relevant to prebiotic chemistry.",
+          "decisiveQualification": "Investigator selection does not by itself negate the natural behavior observed once the system operates."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 67,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (67 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (57 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Tour notes that researchers selected an off-the-shelf chemical, calls the result autocatalysis, and denies that it points toward life.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-natural-molybdate-information.critique",
+      "moveId": "con-natural-molybdate-information",
+      "originalCritique": "Strongest feature: The move supplies a concrete contrast between sequence-intensive engineered biological systems and a prepared salt system displaying templated, coupled catalytic organization, thereby advancing the claim that simple chemistry can generate nontrivial structure. Principal limitation: The asserted first occurrence outside biology and the inference from improbability are not independently supported here, while sodium molybdate selection and experimental preparation appropriately prevent any claim of wholly unaided environmental emergence. Live burden: The experiment must establish reproducibility, quantify structural improbability against relevant chemical baselines, and connect the coupled set to copying, variation, or selection without conflating surprising organization with life. Locked score: The strong or competent band reflects specific experimental content, productive qualification, central generative relevance, and meaningful partial responsiveness, tempered by unverified novelty, incomplete downstream continuity, and evidentiary dependence on asserted interpretation.",
+      "originalWords": 131,
+      "originalCharacters": 1107,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-natural-molybdate-information",
+        "sectionId": "section-experimental-systems",
+        "side": "con",
+        "speaker": "Lee Cronin",
+        "moveKind": "reply",
+        "proposition": "Simple molybdate chemistry can produce improbable templated structures and coupled catalytic organization without engineered biological sequence information.",
+        "importance": 3,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "54:19",
+        "sourceSpan": {
+          "startEvent": 1379,
+          "endEvent": 1433,
+          "startMs": 3259340,
+          "endMs": 3385760
+        },
+        "sourceExcerpt": "flush to make another royal flush and I am excited because there's a first time outside of biology that coupled catalytic sets have been shown to emerge people have made them in DNA and proteins but the amount of sequence information required requires you to create it whereas in our salt system yes I have to get some sodium molybdate which is one compound and I have to add some",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-generative-principles"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-autocatalysis-not-cellular-pathway",
+            "pro-information-insufficient-without-cellular-matter"
+          ],
+          "components": [
+            {
+              "componentId": "con-natural-molybdate-information-component-01",
+              "targetMoveId": "pro-autocatalysis-not-cellular-pathway",
+              "text": "Show what naturally organized feature makes the molybdate system more informative than investigator-imposed autocatalysis.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-natural-molybdate-information-component-02",
+              "targetMoveId": "pro-information-insufficient-without-cellular-matter",
+              "text": "Show whether the system contains cellular material organization rather than only nonbiological chemistry.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies improbable templated coupled sets emerging from simple salt chemistry with little sequence specification, but does not claim or show cellular construction.",
+          "responsivenessWithinClass": {
+            "value": 73,
+            "rationale": "Within partial answers, it directly answers the experimental-organization objection while leaving the distinct cellular-material sufficiency demand unanswered."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "Within partial answers, it directly answers the experimental-organization objection while leaving the distinct cellular-material sufficiency demand unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The novelty and setup are specific: coupled catalytic sets outside biology, simple sodium molybdate inputs, and contrast with engineered sequence-rich systems."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move openly states the required reagent, but the first-outside-biology claim and improbability inference are not independently verified here."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Supplying sodium molybdate and laboratory conditions means the result is not an unguided origin-of-life pathway.",
+          "decisiveQualification": "The relevant claim is spontaneous organization within the prepared chemical system, not absence of all experimental setup."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports central generative principles by presenting simple chemistry that yields templating and coupled catalytic organization."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Cronin describes a coupled catalytic set arising from sodium molybdate and contrasts it with DNA and protein systems requiring substantial engineered sequence information.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

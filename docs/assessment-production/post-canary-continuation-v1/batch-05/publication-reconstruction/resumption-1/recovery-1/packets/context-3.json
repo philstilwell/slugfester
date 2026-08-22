@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-189-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-resumption-1-recovery-1",
+  "contextIndex": 3,
+  "packetIndex": 3,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "189",
+  "debateId": "tour-cronin-origin-of-life-2020",
+  "repairType": "critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/outputs/debate-189.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/packets/debate-189.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-minimal-cell-complexity-gap.critique",
+      "moveProse.con-objective-molecular-complexity-theory.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-minimal-cell-complexity-gap.critique",
+      "moveId": "pro-minimal-cell-complexity-gap",
+      "originalCritique": "Strongest feature: The reply gives the transition challenge a concrete biological benchmark by citing the organization of the simplest known cells and an estimated minimum of 256 protein-coding genes rather than invoking complexity abstractly. Principal limitation: Known minimal cells are products of extensive evolution, so their present requirements establish a demanding endpoint but not necessarily the minimum organization of extinct precellular systems or the earliest selectable intermediates. Live burden: The argument must defend the estimate's assumptions and relevance, distinguish endpoint complexity from starting thresholds, and identify which cellular functions cannot be deferred or distributed across a chemically evolving population. Locked score: The strong or competent band reflects strong responsiveness, tangible evidence, stable presentation, and central relevance, moderated by incomplete sourcing, slightly overstated origin implications, and insufficient separation between surviving cells and hypothetical precursors.",
+      "originalWords": 133,
+      "originalCharacters": 1046,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "pro-minimal-cell-complexity-gap",
+        "sectionId": "section-chemistry-to-cell-gap",
+        "side": "pro",
+        "speaker": "James Tour",
+        "moveKind": "reply",
+        "proposition": "Proposed early chemical phenomena remain far removed from even the simplest known cells and their estimated minimum gene-level organization.",
+        "importance": 3,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "68:16",
+        "sourceSpan": {
+          "startEvent": 1733,
+          "endEvent": 1750,
+          "startMs": 4096859,
+          "endMs": 4150529
+        },
+        "sourceExcerpt": "far from a by Allah Juuko sell in the complexity of the simplest cells that we have and the simplest cells that we have signs of having so in other words the simplest cells that we have have in in the record are about the same complexity as our simplest cells today there have been estimates that you have to have at least 256 protein coding genes and this level of sophistication",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-transition-gap"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-copying-selection-pathway",
+            "con-simple-laws-beneath-cell-complexity"
+          ],
+          "components": [
+            {
+              "componentId": "pro-minimal-cell-complexity-gap-component-01",
+              "targetMoveId": "con-copying-selection-pathway",
+              "text": "Show that primitive copying and selection can bridge to the minimum organization found in cellular life.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-minimal-cell-complexity-gap-component-02",
+              "targetMoveId": "con-simple-laws-beneath-cell-complexity",
+              "text": "Address whether simple laws are sufficient despite the organization required by minimal cells.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies a concrete minimum-cell benchmark and argues that proposed primitive phenomena remain far below it, directly challenging the unfilled selection and generative bridge.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "Within full answers, it explicitly supplies the biological target whose attainment the copying-selection proposal must explain."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly supplies the biological target whose attainment the copying-selection proposal must explain."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move specifies known simplest cells and an estimated minimum of 256 protein-coding genes, marking the number as an estimate rather than certainty."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker properly labels the gene count as an estimate, but inferring a necessary origin threshold from known cells is stronger than shown."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The first evolvable chemical systems could be substantially simpler than the simplest surviving cells.",
+          "decisiveQualification": "Modern minimal-cell complexity is therefore a demanding endpoint benchmark, not necessarily a minimum starting threshold."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (74 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "A quantitative gene-level estimate provides concrete support, though its source, assumptions, and relevance to extinct precellular stages are not defended."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central transition-gap bridge by specifying the organized cellular target requiring explanation."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The move identifies a legitimate endpoint gap but insufficiently distinguishes minimal known cells from the potentially simpler systems at issue."
+          }
+        },
+        "evidenceBasis": "Tour states that the simplest known cells resemble today's simplest cells in complexity and cites estimates of at least 256 protein-coding genes.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-objective-molecular-complexity-theory.critique",
+      "moveId": "con-objective-molecular-complexity-theory",
+      "originalCritique": "Strongest feature: The reply proposes objective molecular measurement and explicitly presents the work as the beginning of a theory, supplying a potentially testable framework for discussing evolutionary organization beyond already biological systems. Principal limitation: The metric is not operationally defined in the excerpt and does not yet address replication fidelity, metabolism, heredity, or the substantial organizational distance between complex molecules and minimal cells. Live burden: The theory must specify its measurement procedure, demonstrate robustness across biological and nonbiological controls, predict experimental outcomes, and show why increasing measured complexity tracks causal progress toward selectable functionality rather than molecular intricacy alone. Locked score: The strong or competent band reflects relevant testability, appropriate preliminary calibration, coherent ambition, and charitable scope, moderated by partial responsiveness, limited displayed evidence, underdefined terminology, and an unresolved bridge to biological thresholds.",
+      "originalWords": 133,
+      "originalCharacters": 1081,
+      "excessWordsAboveAcceptanceMaximum": 3,
+      "lockedMove": {
+        "moveId": "con-objective-molecular-complexity-theory",
+        "sectionId": "section-generative-theory-and-selection",
+        "side": "con",
+        "speaker": "Lee Cronin",
+        "moveKind": "reply",
+        "proposition": "An objective measure of molecular complexity can support a theory in which chemical evolution generates organized complexity beyond already biological systems.",
+        "importance": 3,
+        "finalScore": 76,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "71:34",
+        "sourceSpan": {
+          "startEvent": 1811,
+          "endEvent": 1823,
+          "startMs": 4294110,
+          "endMs": 4328580
+        },
+        "sourceExcerpt": "the last few weeks we have bottom we have got the beginnings of a new theory which explains how we can get measure complexity objectively in molecules that gives us something very interesting and I I think the evolution be up is a phenomena that goes beyond biology so I I don't want to start the last discussion but I would reassure James and Jim and you to say that actually the",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-testability"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-metabolism-replication-fidelity-thresholds",
+            "pro-growing-cell-knowledge-widens-target",
+            "pro-minimal-cell-complexity-gap"
+          ],
+          "components": [
+            {
+              "componentId": "con-objective-molecular-complexity-theory-component-01",
+              "targetMoveId": "pro-metabolism-replication-fidelity-thresholds",
+              "text": "Provide an objective measurable framework for distinguishing and tracking organized chemical complexity.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-objective-molecular-complexity-theory-component-02",
+              "targetMoveId": "pro-growing-cell-knowledge-widens-target",
+              "text": "Explain how measurable chemical evolution can represent progress beyond already biological systems.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-objective-molecular-complexity-theory-component-03",
+              "targetMoveId": "pro-minimal-cell-complexity-gap",
+              "text": "Show how the proposed measure bridges from molecular complexity to minimum cellular organization.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply offers the beginnings of an objective molecular-complexity theory and extends evolution beyond biology, but it does not specify replication or fidelity thresholds or bridge to minimal cells.",
+          "responsivenessWithinClass": {
+            "value": 70,
+            "rationale": "Within partial answers, it contacts the decisive measurement demand and progress framing, while leaving the biological-threshold components substantially unresolved."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "Within partial answers, it contacts the decisive measurement demand and progress framing, while leaving the biological-threshold components substantially unresolved."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposal is recoverable and expressly preliminary, but objective complexity and evolution beyond biology are not operationally defined in the excerpt."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker repeatedly calls this the beginnings of a new theory and avoids presenting it as a completed or validated explanation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Objective molecular complexity need not establish metabolism, heredity, replication fidelity, or cellular life.",
+          "decisiveQualification": "The proposed theory supplies a prospective measure, not yet the full set of biological criteria."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central testability bridge by proposing objective molecular measurement, despite leaving the metric undeveloped."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The reply is appropriately preliminary and does not claim that complexity measurement alone resolves every operational or cellular burden."
+          }
+        },
+        "evidenceBasis": "Cronin reports the beginnings of a theory for objectively measuring molecular complexity and proposes that evolutionary phenomena extend beyond biology.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

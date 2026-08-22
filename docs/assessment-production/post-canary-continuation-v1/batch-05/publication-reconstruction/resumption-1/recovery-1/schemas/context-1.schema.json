@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-05-debate-189-publication-repair-1",
+  "title": "Batch 5 Debate 189 bounded publication repair 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-05-debate-189-publication-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-05-publication-resumption-1-recovery-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 1
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "189"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "tour-cronin-origin-of-life-2020"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "pro-autocatalysis-not-cellular-pathway",
+        "con-natural-molybdate-information"
+      ],
+      "properties": {
+        "pro-autocatalysis-not-cellular-pathway": {
+          "type": "string",
+          "minLength": 880
+        },
+        "con-natural-molybdate-information": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}
