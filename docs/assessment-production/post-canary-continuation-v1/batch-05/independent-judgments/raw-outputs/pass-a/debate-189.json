@@ -1,0 +1,1794 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "189",
+  "debateId": "tour-cronin-origin-of-life-2020",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-current-progress-overstated",
+      "side": "pro",
+      "description": "Establish that current research findings remain too remote from a materially adequate account of life's emergence and that broader representations of those findings convey substantially greater explanatory proximity than the evidence supports.",
+      "successCriteria": "The route succeeds if the remaining transition from simple chemistry to organized, heritable, evolving cellular systems is shown to be unresolved under meaningful empirical criteria, while current research claims or narratives are shown to obscure or exceed that limitation.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-overstatement-gap",
+        "tier": "motion",
+        "description": "Connect the unresolved chemistry-to-life gap to a substantial mismatch between demonstrated progress and communicated explanatory proximity."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-transition-gap",
+          "tier": "central",
+          "description": "Require an account of how simple chemistry becomes materially organized, information-bearing, heritable, and evolvable biological machinery."
+        },
+        {
+          "bridgeId": "pro-central-operational-criteria",
+          "tier": "central",
+          "description": "Require discriminating empirical standards for metabolism, replication, fidelity, heredity, and life rather than reliance on broadly lifelike behavior."
+        },
+        {
+          "bridgeId": "pro-central-extrapolation",
+          "tier": "central",
+          "description": "Show that limited chemical results or early organizing principles do not by themselves warrant claims of substantial proximity to cellular life."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-current-not-permanent",
+          "tier": "subsidiary",
+          "description": "Distinguish criticism of present evidentiary adequacy from a claim that a future naturalistic explanation is impossible."
+        },
+        {
+          "bridgeId": "pro-subsidiary-methodological-scope",
+          "tier": "subsidiary",
+          "description": "Ground the critique in naturalistic evidentiary requirements rather than a design inference or theological objection."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-testable-pathway-emerging",
+      "side": "con",
+      "description": "Establish that substantial explanatory progress need not reproduce Earth's exact history or begin with modern cells because experiments and theory can identify testable generative principles linking simple chemistry, information, selection, and evolving organization.",
+      "successCriteria": "The route succeeds if measurable chemical organization and selection provide a falsifiable staged pathway toward biological functionality, and if present claims are appropriately limited to emerging mechanisms rather than completion of a full historical or cellular account.",
+      "motionBridge": {
+        "bridgeId": "con-motion-emerging-pathway",
+        "tier": "motion",
+        "description": "Connect reproducible, falsifiable steps from chemistry toward evolving organization to a warranted claim that an explanatory pathway is emerging."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-generative-principles",
+          "tier": "central",
+          "description": "Identify simple natural principles capable of generating molecular complexity, templating, coupled catalysis, or primitive copying."
+        },
+        {
+          "bridgeId": "con-central-selection-continuity",
+          "tier": "central",
+          "description": "Explain how heritable chemical variation and selection can develop increasingly functional organization toward biological systems."
+        },
+        {
+          "bridgeId": "con-central-testability",
+          "tier": "central",
+          "description": "Provide objective measurements and experimental predictions that can distinguish progress from unconstrained historical speculation."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-scope-of-claim",
+          "tier": "subsidiary",
+          "description": "Separate evidence for a general pathway from claims to know the unique molecular sequence followed on early Earth."
+        },
+        {
+          "bridgeId": "con-subsidiary-research-discipline",
+          "tier": "subsidiary",
+          "description": "Require uncertainty, experimental revision, and collaborative scrutiny to constrain ambitious origin-of-life hypotheses."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-claim-scope-and-overstatement",
+      "title": "Scope of Present Claims and the Standard for Overstatement",
+      "weightPercent": 22,
+      "rationale": "This issue determines what current research is claiming, whether an emerging pathway is distinct from a completed explanation, and whether public or scientific extrapolation materially exceeds the demonstrated results."
+    },
+    {
+      "sectionId": "section-chemistry-to-cell-gap",
+      "title": "The Explanatory Gap from Simple Chemistry to Cellular Life",
+      "weightPercent": 24,
+      "rationale": "The motion centrally turns on whether the distance between simple chemical environments and organized cellular systems is an unresolved burden-defining gap or a bridgeable sequence whose governing principles are becoming accessible."
+    },
+    {
+      "sectionId": "section-experimental-systems",
+      "title": "What Laboratory Chemical Systems Demonstrate",
+      "weightPercent": 21,
+      "rationale": "The relevance of templating, autocatalysis, coupled catalytic organization, and primitive copying determines whether laboratory results disclose mechanisms continuous with life or remain isolated chemical achievements."
+    },
+    {
+      "sectionId": "section-definitions-and-measurement",
+      "title": "Operational Definitions and Objective Measures of Life-like Progress",
+      "weightPercent": 17,
+      "rationale": "Standards for information, metabolism, replication, fidelity, complexity, and life establish what observations would count as genuine explanatory progress and keep the dispute empirically testable."
+    },
+    {
+      "sectionId": "section-generative-theory-and-selection",
+      "title": "Generative Principles, Selection, and Predictive Pathways",
+      "weightPercent": 16,
+      "rationale": "The viability of complexity-based theory, chemical selection, and experimentally testable predictions bears on whether research offers a cumulative natural pathway rather than either a historical narrative or an admission of ignorance."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-overstatement-unsupported-confidence",
+      "sectionId": "section-claim-scope-and-overstatement",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "constructive",
+      "proposition": "Current origin-of-life accounts convey substantially more confidence and understanding than the supporting chemical evidence warrants.",
+      "sourceSpan": {
+        "startEvent": 69,
+        "endEvent": 106
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host addresses Jim directly, and the uninterrupted first-person answer describes his study and criticism of origin-of-life research.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-overstatement-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move directly alleges the evidence-to-confidence mismatch specified by the motion, although its excerpt supplies mainly the speaker's studied conclusion rather than representative instances.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it frames the decisive overstatement issue directly and intelligibly, with the evidentiary demonstration left compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The allegation is recoverable, but terms such as clueless, untrue, and hyped are broad, and the relevant set of origin-of-life accounts is not delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Categorical claims that humankind is clueless and much work is untrue exceed the general study-based assertion supplied in this span."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The inference from the speaker's review to systematic overstatement is intelligible but leaves the sampling and comparison bridge materially implicit."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The excerpt relies chiefly on the speaker's conclusion after study and supplies no representative claims, chemical results, or comparative warrant."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supplies the motion-level claim that communicated understanding substantially exceeds demonstrated explanatory progress."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move advances its own general criticism without developing a sufficiently specific opposing interpretation for a meaningful charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt says the speaker reviewed origin-of-life organic chemistry, concluded humanity is clueless, and regarded much reporting as untrue and hyped.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-methodological-naturalism-boundary",
+      "sectionId": "section-claim-scope-and-overstatement",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "Origin-of-life inquiry should remain a fair, evidence-grounded scientific debate, while intelligent design lacks a demonstrable scientific basis.",
+      "sourceSpan": {
+        "startEvent": 266,
+        "endEvent": 278
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Cronin enters after Tour disputes a prior characterization, speaks in the first person, and explicitly states his own scientific assessment.",
+      "importance": 1,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-methodological-scope"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-overstatement-unsupported-confidence"
+        ],
+        "components": [
+          {
+            "componentId": "con-methodological-naturalism-boundary-component-01",
+            "targetMoveId": "pro-overstatement-unsupported-confidence",
+            "text": "Show that current origin-of-life confidence and understanding exceed the chemical evidence.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move offers issue-bearing methodological boundary-setting and rejects intelligent design, but it does not answer the earlier allegation that naturalistic research claims are overstated relative to evidence.",
+        "responsivenessWithinClass": {
+          "value": 48,
+          "rationale": "Within relevant nonanswers, it contributes a legitimate methodological clarification but leaves the decisive evidence-to-confidence allegation untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The methodological position is clear, but demonstratable nonsense is undefined and the asserted absence of any scientific basis is not qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical dismissal of intelligent design is accompanied only by an offer to discuss reasons, not the promised demonstration itself."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Some design arguments may purport to offer empirical scientific inferences.",
+        "decisiveQualification": "The excerpt does not examine their strongest empirical formulation before dismissing the category."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "A fair evidence-grounded debate is compatible with excluding unsupported design claims, but the exclusionary conclusion lacks its stated demonstration."
+        },
+        "evidenceWarrant": {
+          "value": 54,
+          "rationale": "No scientific criterion or example is supplied to substantiate the categorical assessment of intelligent design in the selected span."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly contacts the subsidiary methodological-scope bridge by locating the inquiry within evidence-grounded naturalistic science."
+        },
+        "representationalCharity": {
+          "value": 55,
+          "rationale": "The categorical characterization materially weakens a live alternative by asserting demonstrable nonsense without presenting the decisive comparison."
+        }
+      },
+      "evidenceBasis": "Cronin calls intelligent design demonstrable nonsense while also advocating a fair, well-grounded debate and noting areas of agreement.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-gradual-chemical-pathway",
+      "sectionId": "section-chemistry-to-cell-gap",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "constructive",
+      "proposition": "Laboratory work can reveal a gradual pathway by which simple chemistry generates complexity capable of evolution without recreating Earth's exact history.",
+      "sourceSpan": {
+        "startEvent": 293,
+        "endEvent": 352
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host asks Lee to summarize his research, and the ensuing first-person explanation describes his experimental program and its intended inference.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-emerging-pathway"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents the con route's central framing: laboratory reproduction of generative laws can disclose a gradual pathway without duplicating the unique historical sequence.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it directly articulates the motion-level alternative standard and connects laboratory work to an emerging explanatory pathway."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The general pathway claim is clear and expressly disclaims identical historical reconstruction, though complexity and gradual process remain somewhat broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The methodological possibility is appropriately limited, but the assertion that the laboratory process explains a gradual pathway outruns detail in this span."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The distinction between reproducing history and discovering generative laws is coherent, with one bounded bridge from laboratory complexity to evolution."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The move describes a research program and methodological rationale but gives no specific experimental result demonstrating the proposed gradual sequence."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly supports the motion-level con bridge by explaining what an emerging, experimentally accessible pathway would consist of."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move chiefly develops a positive research standard and does not materially characterize an opposing alternative that requires charity testing."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes laboratory creation of the relevant process from exact historical replay and describes complexity and life as arising gradually under natural laws.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evidence-with-sequence-uncertainty",
+      "sectionId": "section-claim-scope-and-overstatement",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "Meteoritic and early-Earth evidence supports a simpler chemical starting world while leaving the precise sequence of prebiotic molecules unresolved.",
+      "sourceSpan": {
+        "startEvent": 468,
+        "endEvent": 553
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Cronin answers Tour directly, distinguishes his limited claim from a detailed historical narrative, and repeatedly identifies the evidence he considers relevant.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-scope-of-claim"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-overstatement-unsupported-confidence"
+        ],
+        "components": [
+          {
+            "componentId": "con-evidence-with-sequence-uncertainty-component-01",
+            "targetMoveId": "pro-overstatement-unsupported-confidence",
+            "text": "Show whether present accounts claim more knowledge of the prebiotic sequence than evidence warrants.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the overstatement allegation by expressly conceding that the precise small-molecule sequence is unsupported while preserving a narrower claim about a simple chemical starting world.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it directly distinguishes supported background evidence from an unsupported detailed sequence and acknowledges the decisive uncertainty."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly separates uncertainty about the precise molecular sequence from the narrower claim that an initially simple chemical world existed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker explicitly says he does not know the precise chemistry and agrees that evidence does not establish the sequence of small molecules."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Origin-of-life narratives sometimes specify a reducing or oxidizing environment followed by phosphorus, sugars, and RNA.",
+        "decisiveQualification": "Cronin concedes that evidence does not establish that precise sequence rather than defending the strongest detailed narrative."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The supported-background versus unknown-sequence distinction is explicit, consistent, and directly resolves a likely scope equivocation."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The admission is careful and the broader evidence is referenced, but the meteoritic and early-Earth support is not specifically developed here."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It is highly relevant within the subsidiary scope tier because it sharply limits the claimed pathway to something less than a unique sequence."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move accurately states and accepts the strongest relevant evidentiary limitation while preserving only a narrower, qualified background claim."
+        }
+      },
+      "evidenceBasis": "Cronin rejects a confident reducing-to-oxidizing-to-phosphorus-to-sugar-to-RNA story and expressly concedes no evidence fixes the small-molecule sequence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-simple-chemistry-to-life-transition-gap",
+      "sectionId": "section-chemistry-to-cell-gap",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Evidence for simple prebiotic chemistry and later cellular life does not explain the unresolved transition between them, and information by itself is not life.",
+      "sourceSpan": {
+        "startEvent": 554,
+        "endEvent": 623
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host explicitly invites Jim to respond, after which Tour challenges Cronin's prior wording and develops a distinction between information and living systems.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transition-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evidence-with-sequence-uncertainty",
+          "con-gradual-chemical-pathway"
+        ],
+        "components": [
+          {
+            "componentId": "pro-simple-chemistry-to-life-transition-gap-component-01",
+            "targetMoveId": "con-evidence-with-sequence-uncertainty",
+            "text": "Determine what follows from agreement on simple chemistry and later cellular life despite sequence uncertainty.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-simple-chemistry-to-life-transition-gap-component-02",
+            "targetMoveId": "con-gradual-chemical-pathway",
+            "text": "Supply the explanatory bridge from simple molecules to organized cellular life.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts the endpoint facts but emphasizes that neither those facts nor information alone explains the transition, directly challenging the asserted gradual pathway's missing bridge.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly identifies the disputed inference from accepted endpoints to an explained transition, while only briefly treating information."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes agreed endpoints from the unknown transition and confines its conclusion to present explanatory insufficiency."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Certainty concerns the parties' stated agreement that the transition is unknown, while the speaker acknowledges missing historical details rather than claiming impossibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Endpoint evidence and general laws may support a research pathway without already specifying every historical intermediate.",
+        "decisiveQualification": "That weaker claim still does not itself explain the material transition to cellular life."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The distinction between evidence at points A and B and an explanation of the path between them is logically strong and explicit."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The argument rests on an acknowledged evidentiary gap, though the additional claim that information is not life receives limited independent support here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable central transition-gap bridge by isolating the unexplained move from chemistry to cellular life."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply grants the agreed chemical and fossil facts and targets the remaining inference rather than denying the narrower evidentiary claims."
+        }
+      },
+      "evidenceBasis": "The span records agreement on lifeless chemistry and later simple cellular life while stressing that how point A became point B remains unknown.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-information-agency-transition",
+      "sectionId": "section-definitions-and-measurement",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "Syntactically structured information requiring encoding and decoding can mark the transition from ordinary chemistry toward agency or decision-making systems.",
+      "sourceSpan": {
+        "startEvent": 624,
+        "endEvent": 705
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Cronin directly answers Tour's paper example and continues with first-person descriptions of his laboratory work, expectations, and research strategy.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-testability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-simple-chemistry-to-life-transition-gap"
+        ],
+        "components": [
+          {
+            "componentId": "con-information-agency-transition-component-01",
+            "targetMoveId": "pro-simple-chemistry-to-life-transition-gap",
+            "text": "Provide a discriminating intermediate criterion connecting chemistry and life rather than merely invoking information.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply proposes syntactic encoding and decoding as a measurable conceptual transition toward agency, contacting the information component but not explaining cellular material construction.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within partial answers, it contacts the decisive information criterion but leaves the separate demand for a material chemistry-to-cell pathway unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Encoding and decoding make the intended information concept recoverable, though agency and decision-making entity remain only broadly characterized."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is framed as the transition of interest rather than as a completed mechanism, fitting the conceptual support actually provided."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Information alone is not life and does not construct a cell.",
+        "decisiveQualification": "The reply offers syntactic information as a transition marker, not as a sufficient account of cellular life."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The encoding-decoding distinction supplies a coherent criterion, but the bridge from syntactic information to agency remains partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The move supplies a conceptual definition but no experiment showing that encoding and decoding arise naturally or generate decision-making systems."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It centrally advances testability by offering a discriminating information criterion for locating a transition beyond ordinary chemistry."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The move preserves the opponent's sufficiency objection by limiting its proposal to a marker of transition toward agency."
+        }
+      },
+      "evidenceBasis": "Cronin distinguishes physical and chemical regularities from syntactic information involving an encoder and decoder, linking the latter to agency.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-current-ignorance-not-permanent-impossibility",
+      "sectionId": "section-claim-scope-and-overstatement",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "A future naturalistic explanation remains possible, but current open problems should not be portrayed as though they are already understood.",
+      "sourceSpan": {
+        "startEvent": 778,
+        "endEvent": 815
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the host asks for Jim's response, Tour explicitly states his position on intelligent design, natural explanations, and the limits of current knowledge.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-current-not-permanent"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-methodological-naturalism-boundary"
+        ],
+        "components": [
+          {
+            "componentId": "pro-current-ignorance-not-permanent-impossibility-component-01",
+            "targetMoveId": "con-methodological-naturalism-boundary",
+            "text": "Clarify whether the critique relies on intelligent design or denies a possible naturalistic explanation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly accepts methodological constraints, declines to support intelligent design without a measuring tool, and denies claiming naturalistic impossibility.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "Within full answers, it explicitly contacts both the design-inference concern and the alleged denial of naturalistic possibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The speaker clearly limits his position to lack of a measurement tool and expressly distinguishes present criticism from naturalistic impossibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The categorical statements concern the speaker's own methodological position and are directly evidenced by his express disclaimers."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Tour's criticism could be interpreted as an implicit intelligent-design or impossibility argument.",
+        "decisiveQualification": "He expressly withholds design support and allows that a naturalistic explanation may exist."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "Applying the same measurable-evidence standard to design and naturalistic claims is explicit, consistent, and answers the validity challenge."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The move establishes the speaker's bounded position directly, though it does not independently defend the full adequacy of his measurement criterion."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It is exceptionally direct within the subsidiary current-not-permanent bridge, expressly denying that present ignorance entails impossibility."
+        },
+        "representationalCharity": {
+          "value": 94,
+          "rationale": "The reply squarely handles the strongest methodological concern and states the qualification that separates current ignorance from impossibility."
+        }
+      },
+      "evidenceBasis": "Tour says he lacks a tool to measure intelligent design, therefore does not support it, and has never claimed a naturalistic explanation cannot occur.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-information-insufficient-without-cellular-matter",
+      "sectionId": "section-generative-theory-and-selection",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Information or recursive replication alone cannot explain life's origin without accounting for the material construction and organization of cellular systems.",
+      "sourceSpan": {
+        "startEvent": 816,
+        "endEvent": 867
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Tour continues his answer, explicitly contrasts his material-chemistry focus with Cronin's information focus, and develops the point until the host intervenes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transition-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-information-agency-transition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-information-insufficient-without-cellular-matter-component-01",
+            "targetMoveId": "con-information-agency-transition",
+            "text": "Establish whether recursive or syntactic information is sufficient to constitute or explain life.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies sufficiency by insisting that biological life requires cellular material organization, but it asserts a cell-based definition more than it defends it.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it contacts the decisive sufficiency inference explicitly, while its affirmative cellular criterion remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The information-versus-cell distinction is clear, but biology and life are treated as necessarily cellular without addressing borderline or precursor systems."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that one must have a cell to have life is stronger than the definitional assertion and examples supplied in this excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Recursive information may mark a precursor transition toward life without itself being a living cell.",
+        "decisiveQualification": "The reply treats the proposal largely as a claim of life itself and does not fully preserve its weaker precursor role."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "If cellular organization is necessary, information alone is insufficient, but that necessity is asserted rather than established and risks definitional closure."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The biological examples ground ordinary cellular life, yet no evidence shows that every scientifically relevant life precursor must already be cellular."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central transition gap by requiring material cellular construction in addition to abstract or recursive information."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "It fairly challenges sufficiency but materially compresses the stronger alternative in which information is an intermediate rather than a complete cell."
+        }
+      },
+      "evidenceBasis": "Tour defines biology through cellular organisms and argues that a recursive information system, standing alone, is not life.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-autocatalysis-not-cellular-pathway",
+      "sectionId": "section-experimental-systems",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "The molybdate experiment demonstrates investigator-influenced autocatalysis but does not by itself establish a meaningful pathway toward cellular life.",
+      "sourceSpan": {
+        "startEvent": 883,
+        "endEvent": 929
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly yields the floor to Tour, whose first-person critique continues until the handoff inviting Cronin to defend his work.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-generative-principles"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-gradual-chemical-pathway",
+          "con-information-agency-transition"
+        ],
+        "components": [
+          {
+            "componentId": "pro-autocatalysis-not-cellular-pathway-component-01",
+            "targetMoveId": "con-gradual-chemical-pathway",
+            "text": "Show that a laboratory chemical result constitutes a meaningful step along the proposed pathway to life.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-autocatalysis-not-cellular-pathway-component-02",
+            "targetMoveId": "con-information-agency-transition",
+            "text": "Show that the experimental system supplies the organization relevant to agency or life.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply attacks extrapolation from the molybdate experiment by identifying investigator choices and ordinary autocatalysis, but it does not address the separate information-to-agency criterion.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "Within partial answers, it contacts the decisive laboratory-to-pathway inference while leaving the independent agency criterion untreated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The criticism is confined to what this experiment establishes and distinguishes investigator setup, autocatalysis, and a pathway toward life."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical conclusion that there is nothing pointing toward anything is stronger than showing investigator influence or an autocatalytic reaction."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A deliberately initiated experiment can still reveal a natural generative principle relevant to prebiotic chemistry.",
+        "decisiveQualification": "Investigator selection does not by itself negate the natural behavior observed once the system operates."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The gap from autocatalysis to life is valid, but the inference from laboratory setup to evidentiary emptiness is substantially unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The move identifies pure-chemical selection and autocatalysis but supplies little technical comparison showing why the coupled behavior lacks pathway relevance."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the con central generative-principles bridge by disputing what the principal laboratory system demonstrates."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The reply raises a legitimate extrapolation problem but gives excessive weight to investigator involvement and understates discovery of a natural mechanism."
+        }
+      },
+      "evidenceBasis": "Tour notes that researchers selected an off-the-shelf chemical, calls the result autocatalysis, and denies that it points toward life.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-coupled-catalytic-templating",
+      "sectionId": "section-experimental-systems",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "The molybdate system exhibits molecular templating and a coupled set in which catalysts help generate other catalysts, exceeding ordinary autocatalysis.",
+      "sourceSpan": {
+        "startEvent": 932,
+        "endEvent": 1024
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Cronin's defense, and the ensuing sustained first-person explanation answers Tour until Cronin pivots to a distinct biological-detection argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-generative-principles"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-autocatalysis-not-cellular-pathway"
+        ],
+        "components": [
+          {
+            "componentId": "con-coupled-catalytic-templating-component-01",
+            "targetMoveId": "pro-autocatalysis-not-cellular-pathway",
+            "text": "Determine whether the molybdate result is merely ordinary autocatalysis or a more organized catalytic system.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly disputes the experiment's characterization as ordinary autocatalysis by specifying a coupled catalytic set in which catalysts participate in generating other catalysts.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within full answers, it expressly targets the decisive experimental characterization and identifies the allegedly distinguishing system property."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly defines the importance of a catalytic set and confines the novelty claim to a nonbiological example of mutually coupled catalysis."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The categorical novelty claim is specific but not independently documented in the excerpt; the concession about pure molybdate appropriately limits it."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The system remains investigator-initiated and may still be remote from cellular life.",
+        "decisiveQualification": "Cronin concedes use of pure molybdate but argues that coupled catalyst production, not spontaneous cellularity, is the relevant result."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction between a single autocatalytic reaction and a coupled catalytic set is explicit and directly defeats the narrower characterization."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "A concrete distinguishing mechanism is stated, but the broad first-outside-biology novelty claim lacks documentation or rival comparison in the span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and specifically supports the central generative-principles bridge through coupled catalysis and templating."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply preserves the setup qualification and answers the narrower experimental objection without claiming the system is already life."
+        }
+      },
+      "evidenceBasis": "Cronin emphasizes that set is crucial, describes catalysts helping generate other catalysts, and concedes that researchers began with pure molybdate.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-complexity-based-life-assay",
+      "sectionId": "section-definitions-and-measurement",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "An informational-complexity assay can experimentally distinguish biological organization from random chemistry without reconstructing Earth's unique historical pathway.",
+      "sourceSpan": {
+        "startEvent": 1025,
+        "endEvent": 1084
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Cronin remains the uninterrupted speaker and introduces a distinct assay and black-box thought experiment before the moderator transfers the floor to Tour.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-testability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-information-insufficient-without-cellular-matter"
+        ],
+        "components": [
+          {
+            "componentId": "con-complexity-based-life-assay-component-01",
+            "targetMoveId": "pro-information-insufficient-without-cellular-matter",
+            "text": "Provide an empirical criterion capable of distinguishing biological organization from random chemistry.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies the outline of a black-box informational-complexity assay, directly addressing the demand for discriminating empirical identification, though not the construction of cells.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly offers an attackable assay for distinguishing a cell from random chemistry, contacting the empirical criterion demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The intended assay and comparison are recoverable, but informational complexity is not operationally defined within the selected evidence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The assay is offered as a testable proposal, but its claimed ability to distinguish alien life is broader than the method shown here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An assay that detects organized complexity need not explain how cellular matter originated.",
+        "decisiveQualification": "The reply presents a detection criterion, not a complete generative pathway."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "A complexity discriminator can separate organized biological output from random chemistry, though the mapping from measure to life needs one material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The black-box example makes the proposal testable, but no threshold, procedure, validation result, or false-positive analysis is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central testability bridge by proposing an objective laboratory and astrobiological discrimination task."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The proposal answers the measurement issue while leaving the distinct causal-origin demand intact rather than claiming the assay resolves it."
+        }
+      },
+      "evidenceBasis": "Cronin proposes a detection system and black-box assay intended to discriminate a living cell from random chemistry and potentially alien life from nonlife.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-simple-laws-beneath-cell-complexity",
+      "sectionId": "section-chemistry-to-cell-gap",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "Simple generative laws may underlie life-like complexity even when those laws are obscured by the intricacy of modern cellular systems.",
+      "sourceSpan": {
+        "startEvent": 1276,
+        "endEvent": 1366
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Cronin explicitly asks to respond and delivers a sustained methodological argument until the moderator begins a new question about Tour's earlier criticism.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-transition-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-simple-chemistry-to-life-transition-gap"
+        ],
+        "components": [
+          {
+            "componentId": "con-simple-laws-beneath-cell-complexity-component-01",
+            "targetMoveId": "pro-simple-chemistry-to-life-transition-gap",
+            "text": "Explain why the complexity of known cells does not preclude simpler underlying generative principles.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply uses an analogy to argue that complex observed systems can arise from simple laws, contacting the inference from cellular intricacy to an unbridgeable explanatory distance.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the decisive complexity inference but provides an analogy rather than a chemical mechanism bridging the transition."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The simple-laws thesis is recoverable from the wider span, but the selected excerpt is heavily analogical and leaves life and relevant laws underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The argument establishes only that simple underlying laws may be obscured by complex outcomes, and the speaker openly acknowledges major uncertainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Modern cellular complexity may identify concrete organizational burdens absent from simple chemistry.",
+        "decisiveQualification": "A simple-law analogy shows possibility but does not discharge those concrete chemical burdens."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The analogy supports compatibility between simple laws and complex outcomes, but compatibility alone does not explain the chemical transition."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The asteroid-and-gravity analogy illustrates the thesis but supplies no origin-of-life experiment or law establishing the proposed relation."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It centrally attacks the claim that observed cell complexity itself establishes an explanatory barrier, though the contact is mainly analogical."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move does not deny cellular intricacy, but its analogy only partially addresses the opponent's demand for an actual transition mechanism."
+        }
+      },
+      "evidenceBasis": "Cronin introduces an asteroid-belt and gravity analogy after acknowledging uncertainty about life, using it to motivate simple laws beneath complex appearances.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "con-natural-molybdate-information",
+      "sectionId": "section-experimental-systems",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "Simple molybdate chemistry can produce improbable templated structures and coupled catalytic organization without engineered biological sequence information.",
+      "sourceSpan": {
+        "startEvent": 1379,
+        "endEvent": 1433
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Cronin begins immediately after the moderator restates Tour's extrapolation objection and continues through the completed experimental explanation before moderator commentary.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-generative-principles"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-autocatalysis-not-cellular-pathway",
+          "pro-information-insufficient-without-cellular-matter"
+        ],
+        "components": [
+          {
+            "componentId": "con-natural-molybdate-information-component-01",
+            "targetMoveId": "pro-autocatalysis-not-cellular-pathway",
+            "text": "Show what naturally organized feature makes the molybdate system more informative than investigator-imposed autocatalysis.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-natural-molybdate-information-component-02",
+            "targetMoveId": "pro-information-insufficient-without-cellular-matter",
+            "text": "Show whether the system contains cellular material organization rather than only nonbiological chemistry.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies improbable templated coupled sets emerging from simple salt chemistry with little sequence specification, but does not claim or show cellular construction.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "Within partial answers, it directly answers the experimental-organization objection while leaving the distinct cellular-material sufficiency demand unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The novelty and setup are specific: coupled catalytic sets outside biology, simple sodium molybdate inputs, and contrast with engineered sequence-rich systems."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move openly states the required reagent, but the first-outside-biology claim and improbability inference are not independently verified here."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Supplying sodium molybdate and laboratory conditions means the result is not an unguided origin-of-life pathway.",
+        "decisiveQualification": "The relevant claim is spontaneous organization within the prepared chemical system, not absence of all experimental setup."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The contrast between sequence-engineered biological polymers and a simple-salt coupled set supports the claimed reduction in prescribed information."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The move names a concrete system and relevant comparison, but novelty, improbability, and emergence claims lack methodological detail in the excerpt."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports central generative principles by presenting simple chemistry that yields templating and coupled catalytic organization."
+        },
+        "representationalCharity": {
+          "value": 89,
+          "rationale": "The reply fairly concedes reagent provision and narrows the evidentiary claim to emergence of coupled organization under those conditions."
+        }
+      },
+      "evidenceBasis": "Cronin describes a coupled catalytic set arising from sodium molybdate and contrasts it with DNA and protein systems requiring substantial engineered sequence information.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-growing-cell-knowledge-widens-target",
+      "sectionId": "section-generative-theory-and-selection",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Primitive information buildup and coupled catalysis should not be treated as proximity to life when increasing knowledge of cellular organization reveals a still more demanding target.",
+      "sourceSpan": {
+        "startEvent": 1507,
+        "endEvent": 1587
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following the break, the moderator directly invites Tour to begin; Tour's uninterrupted statement ends when Cronin thanks him and starts his response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-emerging-pathway"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-natural-molybdate-information",
+          "con-coupled-catalytic-templating",
+          "con-complexity-based-life-assay"
+        ],
+        "components": [
+          {
+            "componentId": "pro-growing-cell-knowledge-widens-target-component-01",
+            "targetMoveId": "con-natural-molybdate-information",
+            "text": "Establish whether primitive coupled chemistry materially reduces the remaining distance to cellular life.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-growing-cell-knowledge-widens-target-component-02",
+            "targetMoveId": "con-coupled-catalytic-templating",
+            "text": "Determine whether coupled catalytic organization should count as proximity to the biological target.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-growing-cell-knowledge-widens-target-component-03",
+            "targetMoveId": "con-complexity-based-life-assay",
+            "text": "Address whether growing cell knowledge changes what an adequate life criterion must detect.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply argues that increasingly detailed cellular knowledge enlarges the target and therefore contests treating primitive information or catalysis as proximity, while not assessing the proposed assay itself.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "Within partial answers, it contacts the decisive pathway-proximity inference for coupled chemistry but leaves the objective assay proposal untreated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The widening-target thesis is clear, but closer, further away, and most origin-of-life people lack a fixed metric or delimited scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical claim that research gets farther away every year does not follow without comparing new burdens against simultaneous mechanistic progress."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Improved cellular knowledge can enlarge the target while primitive-chemistry research still solves genuine component problems.",
+        "decisiveQualification": "A growing description of cells does not by itself show net explanatory regression."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 62,
+          "rationale": "More discovered cellular complexity can increase explanatory demands, but it does not entail that progress is negative without a comparative measure."
+        },
+        "evidenceWarrant": {
+          "value": 60,
+          "rationale": "The claim references continuing discoveries about cellular communication and information but supplies no examples or net-distance assessment."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly attacks the motion-level emerging-pathway bridge by denying that cited chemical advances represent increasing proximity to life."
+        },
+        "representationalCharity": {
+          "value": 54,
+          "rationale": "The reply identifies real additional burdens but materially weakens the alternative by treating target growth as proof that no progress is occurring."
+        }
+      },
+      "evidenceBasis": "Tour argues that each year's discoveries about cellular communication and information move the biological target farther from primitive origin-of-life systems.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-copying-selection-pathway",
+      "sectionId": "section-generative-theory-and-selection",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "A permissive environment may enable primitive self-copying chemistry to arise, after which selection can develop increasingly functional molecular organization.",
+      "sourceSpan": {
+        "startEvent": 1588,
+        "endEvent": 1665
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Cronin explicitly begins by answering Tour, develops a continuous first-person account of primitive cells and information creation, and stops when the moderator intervenes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-selection-continuity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-growing-cell-knowledge-widens-target",
+          "pro-autocatalysis-not-cellular-pathway"
+        ],
+        "components": [
+          {
+            "componentId": "con-copying-selection-pathway-component-01",
+            "targetMoveId": "pro-growing-cell-knowledge-widens-target",
+            "text": "Explain how primitive chemistry can progress toward sophisticated cellular functions despite the complexity of the modern target.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-copying-selection-pathway-component-02",
+            "targetMoveId": "pro-autocatalysis-not-cellular-pathway",
+            "text": "Show how permissive laboratory intervention can reveal rather than prescribe a pathway.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply proposes that a forgiving laboratory environment can nurse primitive copying into existence, after which selection explores sequence space toward function, directly answering the claimed widening target.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it explicitly supplies the selection bridge from primitive copying to later sophistication and distinguishes nursing conditions from prescribing outcomes."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The staged proposal is recoverable and carefully described as hopeful, though primitive copying and forgiving environment remain operationally broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Phrases such as gives me hope and maybe appropriately present the nursemaid-and-selection mechanism as a research hypothesis, not an achieved pathway."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Permissive laboratory conditions may amount to investigator prescription rather than natural pathway evidence.",
+        "decisiveQualification": "Cronin distinguishes environmental support from specifying the copying sequence or selected functional outcome."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Once heritable copying exists, selection toward function is coherent, but the origin and fidelity of the first copier remain a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "Evolutionary sequence-space reasoning supports the later stage, while the emergence of primitive self-copying under permissive chemistry remains speculative here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable selection-continuity bridge from primitive copying to increasingly functional molecular organization."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply acknowledges laboratory assistance and states the precise qualification that it is intended as nursing rather than prescription."
+        }
+      },
+      "evidenceBasis": "Cronin contrasts sophisticated enzymes shaped over long evolutionary time with primitive chemistry in a forgiving laboratory environment described as a nursemaid, not prescriber.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-agreed-empirical-life-criteria",
+      "sectionId": "section-definitions-and-measurement",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Origin-of-life research needs agreed empirical criteria that distinguish genuinely living systems from chemical systems displaying merely lifelike behavior.",
+      "sourceSpan": {
+        "startEvent": 1699,
+        "endEvent": 1732
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the response to Jim, and the uninterrupted first-person answer continues through the stated testing proposal.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-operational-criteria"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-complexity-based-life-assay",
+          "con-copying-selection-pathway"
+        ],
+        "components": [
+          {
+            "componentId": "pro-agreed-empirical-life-criteria-component-01",
+            "targetMoveId": "con-complexity-based-life-assay",
+            "text": "Specify empirical parameters that distinguish living systems from merely lifelike chemical behavior.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-agreed-empirical-life-criteria-component-02",
+            "targetMoveId": "con-copying-selection-pathway",
+            "text": "Determine what observations would show that a primitive copying system has become relevantly living.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts an assay-like approach but demands agreed parameters because motion and chemical activity can mimic life, directly pressing the operational threshold issue.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly contacts the assay's discriminating task and identifies false-positive lifelike behavior as the decisive challenge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The demand is well bounded: define parameters that distinguish a genuinely living system from chemical effects that merely look alive."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Requiring parameters for a proposed empirical test fits the identified false-positive problem and does not claim that no such criteria can exist."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A complexity assay may provide objective life-discrimination parameters even before consensus is complete.",
+        "decisiveQualification": "The proposal still must specify and validate thresholds against nonliving systems with lifelike behavior."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The existence of nonliving chemical motion makes explicit discriminating parameters necessary for the proposed inference to life."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "A concrete class of false positives is identified, although no particular candidate assay or validation dataset is evaluated in this span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central operational-criteria bridge by demanding validated parameters separating life from lifelike chemistry."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The reply welcomes a test in principle and focuses fairly on the strongest outstanding validation requirement rather than rejecting measurement."
+        }
+      },
+      "evidenceBasis": "Tour observes that nonliving chemical systems can move and appear alive, then asks that a proposed Turing-style test state parameters indicating a living system.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-minimal-cell-complexity-gap",
+      "sectionId": "section-chemistry-to-cell-gap",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Proposed early chemical phenomena remain far removed from even the simplest known cells and their estimated minimum gene-level organization.",
+      "sourceSpan": {
+        "startEvent": 1733,
+        "endEvent": 1750
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous portion of Tour's answer, marked by his direct reference to Lee's program and comparison with known cellular systems.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-transition-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-copying-selection-pathway",
+          "con-simple-laws-beneath-cell-complexity"
+        ],
+        "components": [
+          {
+            "componentId": "pro-minimal-cell-complexity-gap-component-01",
+            "targetMoveId": "con-copying-selection-pathway",
+            "text": "Show that primitive copying and selection can bridge to the minimum organization found in cellular life.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-minimal-cell-complexity-gap-component-02",
+            "targetMoveId": "con-simple-laws-beneath-cell-complexity",
+            "text": "Address whether simple laws are sufficient despite the organization required by minimal cells.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies a concrete minimum-cell benchmark and argues that proposed primitive phenomena remain far below it, directly challenging the unfilled selection and generative bridge.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly supplies the biological target whose attainment the copying-selection proposal must explain."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move specifies known simplest cells and an estimated minimum of 256 protein-coding genes, marking the number as an estimate rather than certainty."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The numerical estimate is appropriately qualified, but treating known minimal cells as the necessary origin-stage target requires an additional bridge."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The first evolvable chemical systems could be substantially simpler than the simplest surviving cells.",
+        "decisiveQualification": "Modern minimal-cell complexity is therefore a demanding endpoint benchmark, not necessarily a minimum starting threshold."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "Known minimal-cell complexity establishes a substantial endpoint burden, but it does not alone establish the minimum complexity of the first evolvable system."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "A quantitative gene-level estimate provides concrete support, though its source, assumptions, and relevance to extinct precellular stages are not defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central transition-gap bridge by specifying the organized cellular target requiring explanation."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move acknowledges estimates but does not adequately preserve the strongest alternative that extinct precellular replicators preceded known cells."
+        }
+      },
+      "evidenceBasis": "Tour states that the simplest known cells resemble today's simplest cells in complexity and cites estimates of at least 256 protein-coding genes.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-metabolism-replication-fidelity-thresholds",
+      "sectionId": "section-definitions-and-measurement",
+      "side": "pro",
+      "speaker": "James Tour",
+      "moveKind": "reply",
+      "proposition": "Claims of metabolism or self-replication require operational thresholds for sustained copying and adequate fidelity, rather than loose resemblance to ordinary chemical reactions.",
+      "sourceSpan": {
+        "startEvent": 1751,
+        "endEvent": 1766
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted answer remains in Tour's voice and develops specific cautions about metabolic and replication terminology before he changes topics.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-operational-criteria"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-copying-selection-pathway",
+          "con-complexity-based-life-assay"
+        ],
+        "components": [
+          {
+            "componentId": "pro-metabolism-replication-fidelity-thresholds-component-01",
+            "targetMoveId": "con-copying-selection-pathway",
+            "text": "Specify sustained replication and fidelity conditions needed for selection to operate cumulatively.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-metabolism-replication-fidelity-thresholds-component-02",
+            "targetMoveId": "con-complexity-based-life-assay",
+            "text": "Define operational thresholds preventing ordinary reactions from being mislabeled metabolism or replication.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly identifies metabolism, repeated copying, and fidelity as required operational parameters for both the proposed assay and the selection pathway.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "Within full answers, it explicitly contacts the decisive cumulative-copying premise and names the missing threshold dimensions rather than merely requesting more detail."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes ordinary chemical reactions from metabolism and a single copy from sustained self-replication with adequate fidelity."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The necessity claim is tied to evaluating replication and selectable heredity, and the move asks for parameters rather than imposing unsupported numerical thresholds."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Primitive replication may begin with low fidelity and only later improve through selection.",
+        "decisiveQualification": "It must nonetheless cross some persistence and heredity threshold for cumulative selection to function."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The requirement of sustained copying and sufficient fidelity follows directly from the claim that selection can preserve and accumulate functional variation."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The conceptual warrant is strong and identifies ordinary-reaction false positives, though empirical threshold values and examples are not supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly and specifically supports the central operational-criteria bridge through metabolism, replication, persistence, and fidelity requirements."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply leaves open how demanding early thresholds must be while correctly preserving the need for more than a single transient copy."
+        }
+      },
+      "evidenceBasis": "Tour asks what metabolism, replication, and self-replication mean, distinguishes them from ordinary reactions, and emphasizes multiple copies and fidelity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-objective-molecular-complexity-theory",
+      "sectionId": "section-generative-theory-and-selection",
+      "side": "con",
+      "speaker": "Lee Cronin",
+      "moveKind": "reply",
+      "proposition": "An objective measure of molecular complexity can support a theory in which chemical evolution generates organized complexity beyond already biological systems.",
+      "sourceSpan": {
+        "startEvent": 1811,
+        "endEvent": 1823
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Lee immediately before this answer, and Cronin begins a sustained first-person account of his theory and calculations.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-testability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-metabolism-replication-fidelity-thresholds",
+          "pro-growing-cell-knowledge-widens-target",
+          "pro-minimal-cell-complexity-gap"
+        ],
+        "components": [
+          {
+            "componentId": "con-objective-molecular-complexity-theory-component-01",
+            "targetMoveId": "pro-metabolism-replication-fidelity-thresholds",
+            "text": "Provide an objective measurable framework for distinguishing and tracking organized chemical complexity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-objective-molecular-complexity-theory-component-02",
+            "targetMoveId": "pro-growing-cell-knowledge-widens-target",
+            "text": "Explain how measurable chemical evolution can represent progress beyond already biological systems.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-objective-molecular-complexity-theory-component-03",
+            "targetMoveId": "pro-minimal-cell-complexity-gap",
+            "text": "Show how the proposed measure bridges from molecular complexity to minimum cellular organization.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers the beginnings of an objective molecular-complexity theory and extends evolution beyond biology, but it does not specify replication or fidelity thresholds or bridge to minimal cells.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "Within partial answers, it contacts the decisive measurement demand and progress framing, while leaving the biological-threshold components substantially unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposal is recoverable and expressly preliminary, but objective complexity and evolution beyond biology are not operationally defined in the excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker repeatedly calls this the beginnings of a new theory and avoids presenting it as a completed or validated explanation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective molecular complexity need not establish metabolism, heredity, replication fidelity, or cellular life.",
+        "decisiveQualification": "The proposed theory supplies a prospective measure, not yet the full set of biological criteria."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "Objective molecular complexity could ground testable chemical evolution, but the inference from complexity to organized biological function remains materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The theory is announced as newly begun without its metric, derivation, experimental validation, predictions, or comparison with rival measures."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central testability bridge by proposing objective molecular measurement, despite leaving the metric undeveloped."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply is appropriately preliminary and does not claim that complexity measurement alone resolves every operational or cellular burden."
+        }
+      },
+      "evidenceBasis": "Cronin reports the beginnings of a theory for objectively measuring molecular complexity and proposes that evolutionary phenomena extend beyond biology.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence remains outside the individual move ratings, response links, importance judgments, and burden contacts already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "None beyond consequences already captured move by move.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contact codes"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence remains outside the individual move ratings, response links, importance judgments, and burden contacts already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "None beyond consequences already captured move by move.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contact codes"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

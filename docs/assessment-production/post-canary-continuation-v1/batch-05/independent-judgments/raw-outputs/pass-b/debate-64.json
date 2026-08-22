@@ -1,0 +1,1553 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "64",
+  "debateId": "pine-watkins-god-existence-2020",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-thomistic-classical-theism",
+      "side": "pro",
+      "description": "Establish classical theism by reasoning from the present dependence, contingency, and actualization of created things to a necessary sustaining source, then defend the coherence and goodness of that source against objections from freedom, temporal knowledge, evil, and hiddenness.",
+      "successCriteria": "The route succeeds if vertical causal dependence requires a necessary and purely actual divine ground, the relevant divine attributes remain mutually coherent, and suffering, nonbelief, and religious diversity are compatible with providential goodness and revelation.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-necessary-divine-ground",
+        "tier": "motion",
+        "description": "Show that the necessary explanatory source reached through Thomistic metaphysics possesses the attributes required for the God of classical theism and remains credible after the principal objections."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-dependent-being-to-sustaining-cause",
+          "tier": "central",
+          "description": "Establish that contingent beings and act-potency causal series require a concurrent sustaining cause rather than merely an earliest temporal cause."
+        },
+        {
+          "bridgeId": "pro-source-to-classical-attributes",
+          "tier": "central",
+          "description": "Connect the sustaining explanatory source to pure actuality and the divine attributes characteristic of classical theism."
+        },
+        {
+          "bridgeId": "pro-coherence-of-agency-and-knowledge",
+          "tier": "central",
+          "description": "Explain how pure actuality permits divine freedom and how eternal causal knowledge encompasses temporal change without change in God."
+        },
+        {
+          "bridgeId": "pro-goodness-providence-and-revelation",
+          "tier": "central",
+          "description": "Reconcile divine goodness and providence with creaturely evil, suffering, hiddenness, and diverse forms of religious access."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-natural-reason-and-revelation",
+          "tier": "subsidiary",
+          "description": "Explain why knowledge of God can be naturally accessible while remaining difficult enough to warrant revelation and unequal human uptake."
+        },
+        {
+          "bridgeId": "pro-teleology-and-analogy",
+          "tier": "subsidiary",
+          "description": "Supply the teleological and analogical framework needed to predicate goodness of God and evaluate created suffering within an ordered whole."
+        }
+      ]
+    },
+    {
+      "routeId": "con-analytic-atheist-undercutting-case",
+      "side": "con",
+      "description": "Undermine classical theism by challenging the inferences from dependent causal series to one purely actual, good, worship-worthy God and by arguing that pure actuality conflicts with divine freedom and changing knowledge while evolutionary suffering and nonresistant nonbelief count against perfect providential love.",
+      "successCriteria": "The route succeeds if the Thomistic causal arguments leave material explanatory or identification gaps, classical divine attributes generate unresolved contradictions, or the observed patterns of suffering and nonbelief are sufficiently unexpected under a perfectly good and loving God.",
+      "motionBridge": {
+        "bridgeId": "con-motion-classical-theism-undermined",
+        "tier": "motion",
+        "description": "Show that the proposed classical God is not established by the Thomistic arguments and is independently undermined by conceptual and evidential objections."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-causal-inference-gaps",
+          "tier": "central",
+          "description": "Challenge concurrent conservation, termination, common-cause, pure-actuality, perfect-goodness, and worship-worthiness steps in the Thomistic inference."
+        },
+        {
+          "bridgeId": "con-pure-actuality-incoherence",
+          "tier": "central",
+          "description": "Argue that a purely actual and immutable God cannot possess alternative-possibility freedom or knowledge responsive to a changing temporal world."
+        },
+        {
+          "bridgeId": "con-evolutionary-evil",
+          "tier": "central",
+          "description": "Establish that extensive apparently gratuitous animal suffering is improbable under perfect providential goodness and remains morally assessable."
+        },
+        {
+          "bridgeId": "con-hiddenness-and-disagreement",
+          "tier": "central",
+          "description": "Argue that nonresistant unbelief and persistent incompatible religious traditions conflict with the expectations generated by perfect divine love."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-secular-normative-grounding",
+          "tier": "subsidiary",
+          "description": "Ground objective judgments about needless suffering in irreducible normative truths without requiring natural teleology or a divine creator."
+        },
+        {
+          "bridgeId": "con-existential-inertia-alternative",
+          "tier": "subsidiary",
+          "description": "Present existential inertia as a coherent alternative to the claim that creatures require continuous divine conservation."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "causal-dependence-and-divine-identification",
+      "title": "Causal Dependence, Conservation, and Identification of God",
+      "weightPercent": 25,
+      "rationale": "This issue contains the affirmative route from contingent, actualized beings to a sustaining necessary cause and the objections concerning existential inertia, infinite or multiple termini, pure actuality, goodness, and worship-worthiness."
+    },
+    {
+      "sectionId": "pure-actuality-and-divine-freedom",
+      "title": "Pure Actuality and Divine Freedom",
+      "weightPercent": 15,
+      "rationale": "The compatibility of pure actuality with free creation is a distinct burden because classical theism must explain how divine action is internally principled and genuinely free without unrealized potentialities or alternative possibilities."
+    },
+    {
+      "sectionId": "immutability-and-temporal-knowledge",
+      "title": "Immutability, Eternity, and Knowledge of Temporal Change",
+      "weightPercent": 18,
+      "rationale": "This section tests whether eternal causal knowledge can encompass changing temporal truths without acquisition or loss in God, including challenges arising across competing theories of time."
+    },
+    {
+      "sectionId": "evil-goodness-and-providence",
+      "title": "Evolutionary Evil, Divine Goodness, and Providence",
+      "weightPercent": 27,
+      "rationale": "The scale and apparent gratuitousness of animal and human suffering directly bear on perfect goodness, while the opposing framework invokes transcendence, privation, creaturely freedom, redemptive goods, teleology, and cosmic order."
+    },
+    {
+      "sectionId": "hiddenness-revelation-and-religious-diversity",
+      "title": "Divine Hiddenness, Revelation, and Religious Diversity",
+      "weightPercent": 15,
+      "rationale": "This issue joins claims about natural accessibility and accommodated revelation with objections from nonresistant nonbelief and religious disagreement, testing what epistemic access a perfectly loving God would provide."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-natural-reason-and-revelation",
+      "sectionId": "hiddenness-revelation-and-religious-diversity",
+      "side": "pro",
+      "speaker": "Gregory Pine",
+      "moveKind": "constructive",
+      "proposition": "God's existence is accessible to natural reason yet also revealed because rational discovery is difficult, error-prone, and not immediately obvious.",
+      "sourceSpan": {
+        "startEvent": 309,
+        "endEvent": 367
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains within Pine's uninterrupted affirmative opening and explicitly presents the Catholic and Thomistic account he identifies as his tradition.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-natural-reason-and-revelation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move explains the asserted overlap between natural accessibility and revelation by identifying difficulty and error as reasons revelation remains useful.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it supplies a clear explanation of a material subsidiary epistemic issue, though it does not independently demonstrate accessibility."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition and its limited explanatory scope are readily recoverable, and difficulty is expressly offered rather than treated as universal impossibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move advances a modest compatibility explanation and explicitly acknowledges variable difficulty rather than claiming universal easy discovery."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Accessibility and supplementary revelation are coherently reconciled through difficulty and error, with only the accessibility premise left compressed."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The explanatory considerations are intelligible, but the selected evidence does not substantiate how broadly natural reason succeeds or how often error occurs."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly addresses the subsidiary natural-reason-and-revelation bridge and sits near the top of that tier without completing the broader hiddenness burden."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move primarily states and explains its own epistemic framework without engaging a developed live alternative in the selected evidence."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly calls God's existence discoverable by reason and also revealed because reaching the conclusion can be difficult.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-act-potency-ground",
+      "sectionId": "causal-dependence-and-divine-identification",
+      "side": "pro",
+      "speaker": "Gregory Pine",
+      "moveKind": "constructive",
+      "proposition": "Causal chains in which potencies become actual cannot actualize themselves and require an actuality capable of grounding their interdependent causal relations.",
+      "sourceSpan": {
+        "startEvent": 529,
+        "endEvent": 554
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Pine remains the uninterrupted speaker and explicitly introduces act and potency as the basic distinction operating throughout his cosmological arguments.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-dependent-being-to-sustaining-cause"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the metaphysical starting point for concurrent causal dependence by distinguishing potency, actuality, and the inability of potency to actualize itself.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "Within constructive moves, it directly establishes a central route premise, although the termination and divine-identification stages remain outside this span."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The act-potency claim is recoverable and terms remain stable, but the scope of the required grounding actuality across all causal networks is compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The impossibility of self-actualization supports a necessity claim locally, while the move only sketches the bridge to a common comprehensive ground."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The core potency-to-actuality inference is coherent, but the bridge from local actualizers to an actuality grounding all networks remains materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The move offers a metaphysical warrant rather than bare assertion, yet does not compare existential inertia, regress, or plural-ground alternatives."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly reaches the indispensable central bridge from dependent actualization to a sustaining cause, while stopping before route completion."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The selected constructive passage develops its own metaphysical inference without expressly representing a competing account of causal actualization."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies causal chains of act and potency, denies metaphysical self-actualization, and appeals to a ground of the interdependent relations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolutionary-suffering-evidence",
+      "sectionId": "evil-goodness-and-providence",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "constructive",
+      "proposition": "Evolution's immense, inefficient, and frequently biologically or morally useless suffering is significant evidence against a perfectly good providential creator.",
+      "sourceSpan": {
+        "startEvent": 763,
+        "endEvent": 861
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Watkins explicitly announces his first argument and develops it continuously as a Bayesian argument from evolutionary evil during his opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-evolutionary-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents observed scale, distribution, and apparent biological or moral uselessness of suffering as evidentially unexpected under perfect providence.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it clearly states the central evidential consideration and gives a representative case, though comparative probabilities remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The argument is recoverable as evidential rather than deductive, and terms such as apparently gratuitous are appropriately scoped by plausibility language."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move frames suffering as significant evidence and uses plausibility rather than certainty when classifying particular suffering as gratuitous."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Apparently useless suffering may serve biological, systemic, or morally sufficient goods unavailable from the local case.",
+        "decisiveQualification": "The argument concerns the aggregate pattern and apparent inefficiency, not certainty that every individual instance lacks justification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The inference from an apparently random and inefficient distribution to reduced likelihood under perfect providence is coherent, with Bayesian comparison left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The move identifies a broad empirical pattern and a concrete case, but does not quantify likelihoods or compare the strongest providential rival account."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central evolutionary-evil bridge with the key probabilistic evidence, near the top of central-tier relevance."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The formulation leaves room for unknown goods while retaining an aggregate evidential challenge, avoiding a deductive caricature of providence."
+        }
+      },
+      "evidenceBasis": "The excerpt describes evolution as inefficient and cruel, emphasizes apparently random pain with little morally fruitful function, and gives the burning-fawn example.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-pure-actuality-excludes-freedom",
+      "sectionId": "pure-actuality-and-divine-freedom",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "constructive",
+      "proposition": "A purely actual God lacks potentialities and contingencies, cannot have done otherwise, and therefore cannot possess the perfect freedom affirmed by traditional theism.",
+      "sourceSpan": {
+        "startEvent": 910,
+        "endEvent": 962
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening-statement passage is delivered by Ben Watkins and explicitly introduces his argument from freedom against Thomism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-pure-actuality-incoherence"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move gives an explicit chain from absence of potentiality through absence of contingency and alternatives to denial of perfect divine freedom.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it presents a complete validity chain on a central attribute-coherence issue, though the contested freedom criterion is not defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The deductive proposition is fully recoverable and terminology remains stable, but the assumed alternative-possibilities condition on perfect freedom is only implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conclusion follows only given a disputed account of perfect freedom, so unqualified deductive force modestly exceeds the defended warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Freedom may consist in intellectual action from an internal principle rather than the capacity to do otherwise.",
+        "decisiveQualification": "The objection succeeds only if perfect divine freedom requires genuine contingency or alternative possibilities."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The chain is valid conditional on its freedom criterion, but that material bridge is asserted by definition rather than independently defended."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The move supports its conclusion through definitions but supplies little warrant for treating alternative possibilities as necessary for perfect divine freedom."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central pure-actuality incoherence bridge by targeting a core divine attribute, without alone establishing the whole motion."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The inference is fairly stated, but the selected argument does not address the strongest source-supported non-alternative account of divine freedom."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly links pure actuality to no potentialities, no contingencies, inability to do otherwise, and absence of perfect freedom.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-temporal-change-changes-divine-knowledge",
+      "sectionId": "immutability-and-temporal-knowledge",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "constructive",
+      "proposition": "Real temporal change requires God's knowledge to acquire and lose truths, contradicting the immutability and absence of potency asserted by classical theism.",
+      "sourceSpan": {
+        "startEvent": 963,
+        "endEvent": 1069
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Watkins explicitly announces the argument from changing knowledge and develops it continuously through its stated conclusion that classical theism is false.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-pure-actuality-incoherence"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move argues that real change in temporal truth requires acquisition or loss in divine knowledge, which conflicts with pure actuality and immutability.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it identifies the central contradiction clearly, though the semantic bridge from changing truths to intrinsic divine change is compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The argument is recoverable, but the scope of change across temporal propositions and competing theories of time is not fully specified here."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The contradiction is asserted categorically although it depends on a substantive account of temporal truth and knowledge that is not fully defended."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An eternal God may know all temporal changes causally in one immutable act rather than acquiring successive beliefs.",
+        "decisiveQualification": "The objection must show that truth variation entails intrinsic variation in the timeless act of knowledge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The contradiction is coherent if knowledge must track temporal change successively, but that decisive bridge remains materially underargued."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The reality of temporal change is invoked clearly, while the required theory of propositions and intrinsic divine cognition is largely asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central pure-actuality incoherence bridge through the changing-knowledge objection and reaches an indispensable attribute issue."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The move identifies a serious pressure but omits the strongest distinction between changing objects or truth relations and immutable causal knowledge."
+        }
+      },
+      "evidenceBasis": "The excerpt announces changing knowledge, infers divine change from worldly temporal change, and contrasts this with immutable pure actuality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-eternal-causal-knowledge",
+      "sectionId": "immutability-and-temporal-knowledge",
+      "side": "pro",
+      "speaker": "Gregory Pine",
+      "moveKind": "reply",
+      "proposition": "God's eternal causal knowledge does not change with temporal creatures because the divine plan accounts for every creaturely change without itself undergoing change.",
+      "sourceSpan": {
+        "startEvent": 1112,
+        "endEvent": 1277
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Pine the rebuttal floor, and Pine expressly begins with changing knowledge before presenting the classical-theist distinction at length.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-pure-actuality-incoherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-temporal-change-changes-divine-knowledge"
+        ],
+        "components": [
+          {
+            "componentId": "pro-eternal-causal-knowledge-component-01",
+            "targetMoveId": "con-temporal-change-changes-divine-knowledge",
+            "text": "Whether temporal creaturely change requires God to acquire or lose knowledge and thereby change intrinsically.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies the required dependence of divine knowing on successive creaturely change, proposing one eternal causal plan containing every change.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the decisive inference from temporal change to intrinsic divine change and offers a developed alternative model of knowing."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between creaturely temporal variation and an unchanging divine causal plan is recoverable and consistently maintained throughout the proposition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The model directly establishes compatibility if accepted, but its metaphysical availability and explanatory adequacy are presented more than demonstrated."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Changing temporal truths may require different truth-valued cognitive relations even if all events are eternally caused.",
+        "decisiveQualification": "A complete reply must explain why variation in temporal truth does not constitute intrinsic change in divine knowledge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "An immutable cause can coherently specify temporally changing effects, but the bridge from causal specification to exhaustive propositional knowledge remains partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The reply gives a substantive metaphysical model and explanatory distinction, but offers limited independent defense or comparison with temporal-knowledge alternatives."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central incoherence bridge at its decisive changing-knowledge inference and nearly exhausts the central-tier issue."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply squarely addresses the strongest acquisition premise, though it does not fully analyze changing truth relations under rival time theories."
+        }
+      },
+      "evidenceBasis": "The excerpt says divine knowing is not contingent on creatures changing in time because God causes their being and causation within one plan.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-interior-principle-freedom",
+      "sectionId": "pure-actuality-and-divine-freedom",
+      "side": "pro",
+      "speaker": "Gregory Pine",
+      "moveKind": "reply",
+      "proposition": "Divine freedom consists in action from an interior intellectual principle rather than the availability of alternatives, so pure actuality and a fixed end do not eliminate freedom.",
+      "sourceSpan": {
+        "startEvent": 1278,
+        "endEvent": 1349
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Pine explicitly turns to the second argument, identifies it as a modal-collapse argument, and continuously supplies his account of freedom until time is called.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-pure-actuality-incoherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-pure-actuality-excludes-freedom"
+        ],
+        "components": [
+          {
+            "componentId": "pro-interior-principle-freedom-component-01",
+            "targetMoveId": "con-pure-actuality-excludes-freedom",
+            "text": "Whether inability to do otherwise is sufficient to show that a purely actual divine will is not perfectly free.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly rejects the alternative-possibilities criterion and substitutes action from an interior intellectual principle as the relevant account of freedom.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly contacts the decisive freedom criterion and supplies a contrary definition, though its adequacy for divine creation is only partly defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The rival conception of freedom is clearly recoverable and expressly distinguishes fixation on an end from action through an interior principle."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The compatibility claim is plausible on the proposed account, but the move does not fully establish that this account captures perfect creative freedom."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Perfect freedom may require genuine contingency in what is willed, not merely internal intellectual authorship of a necessary act.",
+        "decisiveQualification": "Internal-principle freedom must explain why creation is not necessitated despite God's fixed nature and end."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The account coherently separates freedom from open alternatives, while the bridge from intellectual interiority to non-necessitated creation remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "A recognizable account of freedom is supplied, but little argument establishes its superiority or its fit with the contingent creation claim."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central pure-actuality incoherence bridge by answering the decisive freedom criterion, short of fully resolving modal collapse."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The reply fairly targets the alternative-possibilities premise but leaves the modal-collapse concern about the creative outcome underdeveloped."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly says freedom is not primarily having options but moving from an interior principle proper to an intellectual being.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-perfect-love-and-nonresistant-unbelief",
+      "sectionId": "hiddenness-revelation-and-religious-diversity",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "proposition": "Perfect divine love would keep every finite person able to enter a loving relationship with God, making nonresistant unbelief evidence against perfect divine goodness.",
+      "sourceSpan": {
+        "startEvent": 1361,
+        "endEvent": 1391
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Watkins begins his rebuttal by naming Pine's unequal-access claim and explicitly connects it to the recognized problem of divine hiddenness.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-hiddenness-and-disagreement"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-natural-reason-and-revelation"
+        ],
+        "components": [
+          {
+            "componentId": "con-perfect-love-and-nonresistant-unbelief-component-01",
+            "targetMoveId": "pro-natural-reason-and-revelation",
+            "text": "Whether difficult and unequal access to knowledge of God is compatible with God's revelatory purpose and perfect love.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the compatibility claim by arguing that belief is a necessary condition of relationship and perfect love preserves relational availability.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the access issue through a clear contrary expectation, though it does not directly refute every reason revelation might remain non-obvious."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The hiddenness inference and its finite-person scope are recoverable, though nonresistance and the exact strength of relational availability are compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents nonbelief as evidence generated by an expectation of love rather than as an unqualified logical disproof."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A loving God may permit non-obviousness for freedom, formation, or accommodated revelation while remaining relationally available.",
+        "decisiveQualification": "The objection is strongest only for genuinely nonresistant persons whose unbelief prevents relationship without offsetting goods."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The belief-to-relationship premise and love-generated availability expectation form a coherent evidential argument, with nonresistance partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The conceptual warrant is clear, but the selected span supplies no representative evidence establishing the prevalence of nonresistant unbelief."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central hiddenness-and-disagreement bridge by connecting perfect love to epistemic access and nonbelief."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move accurately isolates relational belief as necessary, but does not fully develop the nonresistance qualification or strongest accommodation account."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that belief in the other party is necessary for loving relationship and that perfect love would preserve each person's opportunity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-quantifier-shift-in-thomistic-ways",
+      "sectionId": "causal-dependence-and-divine-identification",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "proposition": "The first three Thomistic ways commit a quantifier-shift error because each causal chain having a first cause does not entail one shared first cause of every chain.",
+      "sourceSpan": {
+        "startEvent": 1392,
+        "endEvent": 1469
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Watkins announces his turn to the remaining three ways, names the quantifier-shift objection, and develops it through a beginningless gunky-series example.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-causal-inference-gaps"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-act-potency-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-quantifier-shift-in-thomistic-ways-component-01",
+            "targetMoveId": "pro-act-potency-ground",
+            "text": "Whether the need for a first actualizer in each dependent causal chain establishes one shared first cause for all such chains.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses a quantifier shift from each chain having a cause to one cause of every chain and states that the common-cause conclusion does not follow.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly identifies the allegedly invalid inference, illustrates its logical form, and states the defeating consequence for the common-ground conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The formal objection is recoverable, its quantifiers remain stable, and the conclusion is limited to failure of the shared-cause inference."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "As a conditional validity objection, the force matches the displayed quantifier distinction and does not claim more than the inference's invalidity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A common purely actual source might follow from additional dependence, simplicity, or termination premises rather than the bare quantified form.",
+        "decisiveQualification": "The objection defeats only an inference relying on each-chain termination without an independent common-source bridge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The counselor analogy clearly exhibits the invalid quantifier transition and directly applies it to the claimed common first cause."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "The logical form and analogy provide strong support, though the move does not show that the opponent's fuller metaphysics contains no additional uniqueness premise."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central causal-inference bridge at the common-source step and ranks at the top of central-tier relevance."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move accurately limits its objection to the quantified inference while leaving open that further premises could establish a unique source."
+        }
+      },
+      "evidenceBasis": "The excerpt compares each student having a counselor with each causal chain having a first cause and denies inference to one shared cause.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-first-cause-identification-gap",
+      "sectionId": "causal-dependence-and-divine-identification",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "proposition": "The Thomistic causal arguments do not establish a perfectly good or worship-worthy being, so further argument is required to bridge from a first cause to God.",
+      "sourceSpan": {
+        "startEvent": 1496,
+        "endEvent": 1507
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Watkins explicitly introduces the second gap and states that the arguments remain compatible with a being unworthy of worship.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-causal-inference-gaps"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-act-potency-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-first-cause-identification-gap-component-01",
+            "targetMoveId": "pro-act-potency-ground",
+            "text": "Whether an actuality grounding causal dependence has thereby been identified as perfectly good and worthy of worship.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the missing inference from a causal ground to perfect goodness and worship-worthiness and states that further argument is required.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly contacts and diagnoses a route-completion gap, although it does not challenge the prior causal-ground conclusion itself."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes establishing a first cause from establishing perfect goodness and worship-worthiness, without unstable terminology or scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The modest conclusion that further argument is needed follows directly from the identified absence of an attribute bridge."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The full Thomistic route may derive goodness and other attributes through later arguments not contained in the initial causal step.",
+        "decisiveQualification": "The objection establishes an identification gap, not that the gap is impossible to fill."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The distinction between causal priority and perfect goodness is explicit, and the demand for an additional bridge follows without equivocation."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "The selected causal conclusion plainly lacks the named evaluative attributes, though assessment of the full route would require its later attribute arguments."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central causal-inference gap concerning identification and worship-worthiness, an indispensable route bridge."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move expressly asks for further argument rather than pretending the causal argument must itself prove that no good God exists."
+        }
+      },
+      "evidenceBasis": "The excerpt states that the causal arguments remain compatible with a being lacking perfect goodness and therefore require additional argumentation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-transcendent-creator-evil-framework",
+      "sectionId": "evil-goodness-and-providence",
+      "side": "pro",
+      "speaker": "Gregory Pine",
+      "moveKind": "reply",
+      "proposition": "The evolutionary-evil objection misclassifies God as one cause among others, whereas the transcendent creator produces both actuality and the conditions in which potentiality and defect are possible.",
+      "sourceSpan": {
+        "startEvent": 1574,
+        "endEvent": 1711
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Pine explicitly turns to the problem of evil, addresses Watkins's focus on animal pain, and develops the reply continuously through the end of his timed rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-evolutionary-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolutionary-suffering-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-transcendent-creator-evil-framework-component-01",
+            "targetMoveId": "con-evolutionary-suffering-evidence",
+            "text": "Whether apparently gratuitous creaturely suffering licenses judging the transcendent creator defective or guilty of neglect.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the moral-assessment inference by distinguishing creation from ordinary actualization and emphasizing that God creates both actuality and potentiality.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It contacts a decisive evaluative premise, but only partially answers the probabilistic evidence concerning the scale, distribution, and apparent uselessness of suffering."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The creator-creature distinction is recoverable, but its precise consequences for moral assessment and evidential probability remain incompletely specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Transcendence may alter the evaluative framework, but it does not by itself establish that observed suffering supplies no evidence against providential goodness."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even a transcendent creator can be assessed by the creator's own perfect-goodness commitments and choices among possible created orders.",
+        "decisiveQualification": "Creating the conditions of defect does not alone answer why this distribution of suffering was permitted or sustained."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The creation-versus-making distinction is coherent, but the inference from that distinction to immunity from neglect or defect lacks a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "The metaphysical distinction is explained, yet no comparative account shows why this suffering pattern is expected under perfect creative goodness."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It attacks the central evolutionary-evil bridge on moral classification, but leaves major evidential components unresolved within that tier."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The reply recognizes the objection but substantially underaddresses its strongest probabilistic form by focusing on causal category rather than distribution."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes making from creation and argues that God produces both potentiality and actuality, including the conditions under which defects arise.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-changing-truth-under-multiple-time-theories",
+      "sectionId": "immutability-and-temporal-knowledge",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "proposition": "The changing-knowledge argument does not require presentism because propositions vary in truth across temporal locations even under eternalism or growing-block theories.",
+      "sourceSpan": {
+        "startEvent": 2681,
+        "endEvent": 2723
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly directs the question to Ben, and the answer refers in the first person to the changing-knowledge argument he presented earlier.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-pure-actuality-incoherence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-eternal-causal-knowledge"
+        ],
+        "components": [
+          {
+            "componentId": "con-changing-truth-under-multiple-time-theories-component-01",
+            "targetMoveId": "pro-eternal-causal-knowledge",
+            "text": "Whether an eternal causal plan prevents temporal truth variation from requiring a relevant change in divine knowledge.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-changing-truth-under-multiple-time-theories-component-02",
+            "targetMoveId": "pro-eternal-causal-knowledge",
+            "text": "Whether the changing-knowledge objection depends specifically on presentism or temporal becoming understood presentistically.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies that presentism is required and argues that truth varies by temporal location even if all times are equally real.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It answers the time-theory escape clearly, but only partially addresses the deeper distinction between truth variation and intrinsic change in divine cognition."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The cross-theory claim is recoverable, but the phrase that a proposition changed throughout time risks conflating tensed truth with truth at a time."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The response plausibly shows independence from presentism, while its stronger implication for intrinsic divine change remains insufficiently qualified."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An eternalist may treat propositions as tenselessly time-indexed and eternally fixed, with no proposition acquiring or losing truth simpliciter.",
+        "decisiveQualification": "The objection must distinguish truth at varying temporal indices from a proposition's changing truth value simpliciter."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The move broadens the objection beyond presentism, but equivocates somewhat between temporal variation in facts and propositions changing truth simpliciter."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Multiple time theories are named and a proposition is offered, yet no semantic argument establishes the crucial truth-change claim across them."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central changing-knowledge objection by addressing a significant time-theory defense, though not the whole intrinsic-change issue."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply considers eternalism but does not adequately handle its strongest time-indexed semantic formulation, leaving a decisive qualification unresolved."
+        }
+      },
+      "evidenceBasis": "The excerpt says the argument does not rely on presentist temporal becoming because human existence varies across time even under eternalism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-continuous-conservation",
+      "sectionId": "causal-dependence-and-divine-identification",
+      "side": "pro",
+      "speaker": "Gregory Pine",
+      "moveKind": "reply",
+      "proposition": "A creature made from nothing lacks an underlying material source from which to subsist independently, so its act of being must remain imparted by God.",
+      "sourceSpan": {
+        "startEvent": 2771,
+        "endEvent": 2824
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator names Father Pine as respondent, and the answer develops a Thomistic creation argument using an artisan-and-chair analogy.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-dependent-being-to-sustaining-cause"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-first-cause-identification-gap",
+          "con-quantifier-shift-in-thomistic-ways"
+        ],
+        "components": [
+          {
+            "componentId": "pro-continuous-conservation-component-01",
+            "targetMoveId": "con-first-cause-identification-gap",
+            "text": "Whether continuous dependence identifies the sustaining cause as perfectly good and worthy of worship.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-continuous-conservation-component-02",
+            "targetMoveId": "con-quantifier-shift-in-thomistic-ways",
+            "text": "Whether multiple dependent beings or chains require one shared sustaining cause rather than several causes.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move materially supports continuous dependence from creation ex nihilo, but it does not contact the available earlier identification or common-cause objections.",
+        "responsivenessWithinClass": {
+          "value": 52,
+          "rationale": "It is relevant contrary material on the causal route but remains a relevant nonanswer to the decisive components of the earlier locked objections."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conservation thesis and nothingness contrast are recoverable, although the continuing impartation inference relies on an implicit metaphysical dependence principle."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The ex-nihilo framework supports dependence, but independent subsistence is ruled out more quickly than the artisan analogy alone establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A created being might persist through existential inertia after its initial production even without preexisting matter.",
+        "decisiveQualification": "The reply must show why ex-nihilo origin entails continual ontological dependence rather than merely initial dependence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The imparted-act-of-being account is coherent, but the transition from origin from nothing to necessary continuous conservation remains a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The artisan contrast supplies explanatory support, though the move does not compare or independently defeat existential-inertia models."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central sustaining-cause bridge by arguing for continuous dependence, even though it misses the selected earlier objections."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The move engages the persistence intuition through imparted being, but the decisive inference against existential inertia remains compressed."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts artifacts subsisting from matter with creatures from nothing and describes God as continually imparting their act of being.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-animal-suffering-escapes-soul-building",
+      "sectionId": "evil-goodness-and-providence",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "proposition": "Soul-building and redemptive accounts do not answer evolutionary evil because nonhuman animals endured immense gratuitous pain and little flourishing before moral agents existed.",
+      "sourceSpan": {
+        "startEvent": 3019,
+        "endEvent": 3053
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Ben, who explicitly refocuses on the evolutionary-evil argument he gave and contrasts it with Pine's preceding response.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-evolutionary-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-transcendent-creator-evil-framework"
+        ],
+        "components": [
+          {
+            "componentId": "con-animal-suffering-escapes-soul-building-component-01",
+            "targetMoveId": "pro-transcendent-creator-evil-framework",
+            "text": "Whether the creator framework and human-directed redemptive goods answer immense suffering endured by nonmoral animals.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes animal evolutionary suffering from person-centered soul-building and emphasizes its duration, low flourishing, and divine sustaining.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the mismatch between human moral goods and nonhuman suffering, though it does not answer every teleological or ecosystemic justification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The target population, historical scale, and limited conclusion against soul-building responses are clearly and consistently specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The mismatch with soul-building is strongly supported, though describing the entire suffering history as gratuitous exceeds what the selected evidence independently establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Animal suffering may contribute to ecosystemic order, creaturely goods, or a cosmic purpose not reducible to human soul-building.",
+        "decisiveQualification": "The reply decisively limits person-centered defenses but does not eliminate every nonhuman or systemic justification."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The distinction between moral agents and animals coherently defeats person-centered soul-building as a comprehensive answer to evolutionary suffering."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The deep-time scale and limited flourishing provide substantive support, but gratuitousness and comparative expectations are not fully established."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly strengthens the central evolutionary-evil bridge by isolating the animal cases that evade prominent human-centered defenses."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The move fairly confines its conclusion to the failure of soul-building-style replies while foregrounding the strongest animal-specific concern."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes nonmoral animals, hundreds of millions of years of pain, relatively little flourishing, and God's moment-by-moment sustaining role.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-teleological-cosmic-order",
+      "sectionId": "evil-goodness-and-providence",
+      "side": "pro",
+      "speaker": "Gregory Pine",
+      "moveKind": "reply",
+      "proposition": "Whether suffering is gratuitous must be judged relative to creatures' ends and the world's ordered harmony, whose ultimate purpose is manifesting God's glory rather than serving each creature's particular needs.",
+      "sourceSpan": {
+        "startEvent": 3285,
+        "endEvent": 3319
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator turns to Father Pine, and the response uses explicitly Thomistic claims about ends, creation, divine glory, and created order.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-evolutionary-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-animal-suffering-escapes-soul-building",
+          "con-evolutionary-suffering-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-teleological-cosmic-order-component-01",
+            "targetMoveId": "con-animal-suffering-escapes-soul-building",
+            "text": "Whether animal suffering lacks justification when assessed through animal flourishing alone rather than ecosystemic and cosmic order.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-teleological-cosmic-order-component-02",
+            "targetMoveId": "con-evolutionary-suffering-evidence",
+            "text": "Whether apparent biological or moral uselessness is sufficient to classify the aggregate suffering pattern as gratuitous.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly broadens the evaluative unit from individual animal needs to ecosystemic harmony and the ultimate purpose of creation.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the decisive gratuitousness classification, but only partially answers the magnitude, efficiency, and probability components of the evidential objection."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The teleological reorientation is recoverable, but ecosystemic harmony and manifestation of glory are insufficiently specified as constraints on permissible suffering."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move cautiously offers a broader evaluative framework rather than claiming to have demonstrated that every instance of suffering is justified."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Systemic harmony may still be achievable through a less painful evolutionary order, leaving comparative inefficiency evidentially significant.",
+        "decisiveQualification": "A cosmic end must explain why this scale and distribution of pain is proportionate or necessary, not merely redirect the evaluative level."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "A broader teleological unit can coherently affect gratuitousness judgments, but the link from divine glory to this suffering pattern remains underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Ecosystemic harmony and divine manifestation are asserted as possible goods without evidence that they require or proportionately justify the observed pain."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central evolutionary-evil bridge's gratuitousness premise, while leaving several empirical and comparative demands unanswered."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move recognizes the animal-flourishing concern but does not fully address the strongest comparative claim about less harmful possible orders."
+        }
+      },
+      "evidenceBasis": "The excerpt situates animal flourishing within ecosystemic harmony and identifies manifestation of divine glory rather than individual service as creation's purpose.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-religious-disagreement-against-perfect-love",
+      "sectionId": "hiddenness-revelation-and-religious-diversity",
+      "side": "con",
+      "speaker": "Ben Watkins",
+      "moveKind": "reply",
+      "proposition": "Widespread incompatible religious traditions are surprising if a perfectly loving God exists, making religious disagreement a stronger objection than surface parallels among religions.",
+      "sourceSpan": {
+        "startEvent": 3516,
+        "endEvent": 3545
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the discussion to Ben, whose answer continues until the moderator begins the next question.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-hiddenness-and-disagreement"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-natural-reason-and-revelation"
+        ],
+        "components": [
+          {
+            "componentId": "con-religious-disagreement-against-perfect-love-component-01",
+            "targetMoveId": "pro-natural-reason-and-revelation",
+            "text": "Whether difficult but available natural and revealed knowledge adequately explains widespread incompatible religious traditions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that disagreement itself is surprising under perfect love and distinguishes that issue from historical parallels among religions.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts the access-and-love issue clearly, but does not fully analyze the affirmative explanation based on difficulty, error, and varied uptake."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The evidential proposition is recoverable, its focus on incompatible traditions remains stable, and it is expressly distinguished from a different historical question."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is appropriately framed as surprising evidence under perfect love rather than a deductive contradiction or certain historical conclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious diversity may result from difficult inquiry, cultural mediation, human error, and non-overwhelming revelation compatible with love.",
+        "decisiveQualification": "The objection requires showing that the observed persistence and incompatibility exceed what those accommodations predict."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The expectation that perfect love improves reliable relational access coherently makes persistent incompatible traditions evidentially surprising."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The widespread-disagreement premise is plausible and specific, but the selected span offers no representative data or explicit likelihood comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central hiddenness-and-disagreement bridge by identifying incompatible traditions as the salient evidential pattern."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The move fairly identifies the stronger disagreement problem but leaves comparative expectations under the accommodation account largely implicit."
+        }
+      },
+      "evidenceBasis": "The excerpt states that religious traditions disagree in ways surprising under perfect love and separates this objection from questions of historical parallels.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-accommodated-nonoverwhelming-revelation",
+      "sectionId": "hiddenness-revelation-and-religious-diversity",
+      "side": "pro",
+      "speaker": "Gregory Pine",
+      "moveKind": "reply",
+      "proposition": "Divine hiddenness is compatible with love because gradual, dramatic, and non-overwhelming revelation suits embodied rational creatures and preserves a freely developing relationship with God.",
+      "sourceSpan": {
+        "startEvent": 3677,
+        "endEvent": 3845
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator announces Pine's closing statement, and Pine develops one continuous hiddenness response until the moderator thanks him and invites Ben.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-hiddenness-and-disagreement"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-perfect-love-and-nonresistant-unbelief",
+          "con-religious-disagreement-against-perfect-love"
+        ],
+        "components": [
+          {
+            "componentId": "pro-accommodated-nonoverwhelming-revelation-component-01",
+            "targetMoveId": "con-perfect-love-and-nonresistant-unbelief",
+            "text": "Whether perfect love requires continuously unmistakable belief-enabling disclosure to every finite person.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-accommodated-nonoverwhelming-revelation-component-02",
+            "targetMoveId": "con-religious-disagreement-against-perfect-love",
+            "text": "Whether gradual and culturally mediated revelation explains persistent incompatible religious traditions.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly argues that non-overwhelming gradual revelation suits embodied rational agents and free relationship, but does not answer disagreement among traditions.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the decisive hiddenness demand but leaves the separate religious-disagreement component uncontacted, making the response materially partial."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The accommodation thesis is recoverable, but gradual, dramatic, and non-overwhelming revelation are not precisely related to all nonresistant persons."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The response offers a possible purposive explanation and invites consideration of why this mode was chosen, without claiming demonstrative necessity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Nonresistant belief need not overwhelm freedom, and clearer evidence could permit rather than coerce a loving response.",
+        "decisiveQualification": "The reply must explain why greater belief-enabling clarity would undermine freely developing relationship for nonresistant persons."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Accommodation to embodied development is a coherent possibility, but the claim that clearer revelation threatens freedom needs a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The anthropology and purposive account are asserted with limited support and without comparing clearer noncoercive modes of revelation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central hiddenness bridge through an accommodation account, while failing to contact the disagreement component."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move acknowledges the love-and-freedom concern but does not fully confront the strongest distinction between belief and coerced relationship."
+        }
+      },
+      "evidenceBasis": "The excerpt says God could reveal himself in many ways, chose this mode, and relates evaluation of that choice to embodied human nature and development.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence beyond the judged moves was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently of the recorded judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured burden-completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence beyond the judged moves was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently of the recorded judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

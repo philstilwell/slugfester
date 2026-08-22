@@ -1,0 +1,1504 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "42",
+  "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-classical-coherence-route",
+      "side": "pro",
+      "description": "Establish that divine simplicity follows from classical commitments concerning aseity and pure actuality, then explain apparent plurality, Trinitarian relations, freedom, and contingent knowledge without introducing real intrinsic composition or change in God.",
+      "successCriteria": "The route succeeds if its account excludes intrinsic parts on principled metaphysical grounds while preserving intelligible divine attributes, real Trinitarian relational distinction, free creation or noncreation, and omniscient knowledge of contingent and changing reality.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-coherence",
+        "tier": "motion",
+        "description": "Show that one intrinsically simple divine reality can satisfy the classical-theist, Trinitarian, freedom, and omniscience commitments named in the motion."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-metaphysical-ground",
+          "tier": "central",
+          "description": "Derive the exclusion of intrinsic composition from aseity, explanatory independence, or the pure actuality required of a first cause."
+        },
+        {
+          "bridgeId": "pro-central-distinction-account",
+          "tier": "central",
+          "description": "Distinguish real intrinsic composition from grounded conceptual distinctions, analogical predication, and extrinsic creature-directed predications."
+        },
+        {
+          "bridgeId": "pro-central-trinitarian-relations",
+          "tier": "central",
+          "description": "Explain how persons and opposed procession-relations can be identical with the divine essence without becoming additional intrinsic constituents."
+        },
+        {
+          "bridgeId": "pro-central-contingent-knowledge",
+          "tier": "central",
+          "description": "Explain contingent and temporally varying knowledge attributions through an immutable divine intellect and causal efficacy together with extrinsic truths and creaturely changes."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-issue-specificity",
+          "tier": "subsidiary",
+          "description": "Treat distinct alleged forms of composition separately while identifying the act-potency principles that connect them."
+        },
+        {
+          "bridgeId": "pro-subsidiary-creative-gratuity",
+          "tier": "subsidiary",
+          "description": "Account for creation and noncreation as free possibilities that neither complete nor intrinsically improve God."
+        }
+      ]
+    },
+    {
+      "routeId": "con-incoherence-route",
+      "side": "con",
+      "description": "Define the intrinsic distinctions prohibited by simplicity and show that classical theism's positive commitments generate at least one such distinction through dependence, Trinitarian processions, free contingent knowledge, or knowledge of changing reality.",
+      "successCriteria": "The route succeeds if the proposed reconciliations cannot preserve the relevant Trinitarian or epistemic realities without admitting a positive intrinsic distinction, contingent state, potentiality, or change inconsistent with divine simplicity.",
+      "motionBridge": {
+        "bridgeId": "con-motion-incoherence",
+        "tier": "motion",
+        "description": "Show that the commitments named in the motion require distinctions or changes that an intrinsically partless God cannot coherently possess."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-composition-criterion",
+          "tier": "central",
+          "description": "Specify which positive ontological items or distinctions count as intrinsic constituents and why simplicity excludes them."
+        },
+        {
+          "bridgeId": "con-central-aseity-gap",
+          "tier": "central",
+          "description": "Show that divine independence can be understood without eliminating every intrinsic distinction, undermining the inference from aseity to simplicity."
+        },
+        {
+          "bridgeId": "con-central-trinitarian-tension",
+          "tier": "central",
+          "description": "Show that real processions, opposed relations, or asymmetric personal predicates require distinctions not reducible to the undifferentiated divine essence."
+        },
+        {
+          "bridgeId": "con-central-epistemic-tension",
+          "tier": "central",
+          "description": "Show that free noncreation or changing contingent truths require contingent intrinsic knowledge or epistemic change incompatible with immutability and pure actuality."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-extrinsic-account",
+          "tier": "subsidiary",
+          "description": "Require an account of what divine knowledge consists in if its contingent differentiation is assigned wholly or principally to extrinsic reality."
+        },
+        {
+          "bridgeId": "con-subsidiary-modal-availability",
+          "tier": "subsidiary",
+          "description": "Establish the availability of an alone world through divine freedom, self-sufficiency, or reasons compatible with refraining from creation."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "metaphysical-content-of-simplicity",
+      "title": "Metaphysical content, parts, and divine predication",
+      "weightPercent": 20,
+      "rationale": "This issue fixes what simplicity excludes and whether conceptual, analogical, relational, or truthmaker-based distinctions preserve meaningful divine attributes without adding positive intrinsic constituents."
+    },
+    {
+      "sectionId": "aseity-pure-actuality-and-composition",
+      "title": "Aseity, pure actuality, and the exclusion of composition",
+      "weightPercent": 20,
+      "rationale": "This issue tests the principal positive grounds for simplicity and the counterclaim that divine independence can survive intrinsic multiplicity under alternative accounts of dependence, grounding, and unity."
+    },
+    {
+      "sectionId": "trinitarian-persons-and-relations",
+      "title": "Trinitarian persons, processions, and subsistent relations",
+      "weightPercent": 25,
+      "rationale": "This issue directly addresses whether real personal and procession-based distinctions can be identical with one divine essence or instead constitute intrinsic plurality prohibited by simplicity."
+    },
+    {
+      "sectionId": "freedom-contingency-and-divine-knowledge",
+      "title": "Divine freedom and knowledge of contingent, changing reality",
+      "weightPercent": 35,
+      "rationale": "This issue joins the creationless-world and changing-truth objections with accounts of extrinsic predication, immutable intellect, causality, and creaturely relations, covering the motion's central freedom and omniscience requirements."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-simplicity-composition-taxonomy",
+      "sectionId": "metaphysical-content-of-simplicity",
+      "side": "con",
+      "speaker": "Joe Schmid",
+      "moveKind": "constructive",
+      "proposition": "Classical divine simplicity excludes multiple kinds of composition in God, including distinctions between essence and existence, attributes, action, potency, and matter.",
+      "sourceSpan": {
+        "startEvent": 152,
+        "endEvent": 230
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the discussion to Joe, whose uninterrupted turn introduces and explains each listed form of composition.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-issue-specificity"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies a useful taxonomy of the kinds of composition denied by classical simplicity, establishing issue-specific background for the later disputes.",
+        "responsivenessWithinClass": {
+          "value": 80,
+          "rationale": "Within constructive moves, it performs strongly as organized groundwork, though it does not yet defend a general criterion of composition."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "not-needed",
+        "rationale": "The enumerated kinds of composition and the claim that classical simplicity denies them are readily recoverable and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move presents a descriptive taxonomy of the doctrine rather than an ambitious disputed inference, and its categorical presentation fits that task."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The categories are coherently distinguished and jointly serve the announced clarificatory purpose, with no material internal tension."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The move specifically enumerates representative forms of composition, though the excerpt does not independently document every item in the taxonomy."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "Within the subsidiary tier, the taxonomy directly advances issue specificity and ranks near the upper part of that tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move principally describes a taxonomy and does not meaningfully engage a live opposing interpretation requiring a charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly announces clarification of different forms of composition and begins distinguishing supposite from essence as one such form.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-analogy-distinguishes-divine-attributes",
+      "sectionId": "metaphysical-content-of-simplicity",
+      "side": "pro",
+      "speaker": "Chris Tomaszewski",
+      "moveKind": "reply",
+      "proposition": "Analogical predication permits one simple divine reality to ground distinct attributions of knowledge and power without identifying the corresponding creaturely properties.",
+      "sourceSpan": {
+        "startEvent": 323,
+        "endEvent": 388
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Chris by name with a direct coherence challenge, and Chris supplies the entire ensuing answer before Joe is invited to respond.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-distinction-account"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-simplicity-composition-taxonomy"
+        ],
+        "components": [
+          {
+            "componentId": "pro-analogy-distinguishes-divine-attributes-component-01",
+            "targetMoveId": "con-simplicity-composition-taxonomy",
+            "text": "Explain how simplicity can deny attribute composition while preserving distinct, meaningful predications of divine knowledge and power.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the attribute-composition issue by invoking analogical predication, but it states the mechanism more than it fully explains how one reality grounds the distinctions.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within full answers, it explicitly addresses the decisive attribute-distinction issue, with a bounded explanatory gap about grounding."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The analogical-predication proposal is recoverable and stable, although the limits of what analogy alone establishes remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Saying simplicity cannot be had without analogy is somewhat stronger than the supplied explanation, which establishes usefulness more clearly than necessity."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The distinction between analogical predicates and creaturely properties is coherent, but the bridge from analogy to grounded divine plurality is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The warrant rests chiefly on a conceptual explanation and does not compare rival accounts or fully defend why analogy supplies the required grounding."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly advances the indispensable distinction account and is strongly positioned in that tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The response offers its own predication account without materially interpreting or characterizing a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly denies univocal knowledge and power properties in God and presents analogy as necessary for reconciling those attributions with simplicity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-positive-intrinsic-item-criterion",
+      "sectionId": "metaphysical-content-of-simplicity",
+      "side": "con",
+      "speaker": "Joe Schmid",
+      "moveKind": "constructive",
+      "proposition": "A part may be understood as any positive ontological item intrinsic to a subject but distinct from that subject, so absolute divine simplicity requires anything intrinsic to God to be identical to God.",
+      "sourceSpan": {
+        "startEvent": 397,
+        "endEvent": 453
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Joe announces that he will clarify the classical-theist understanding of parts and then gives the definition and its conceptual components in one turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-composition-criterion"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move states a general criterion for parts and derives the core simplicity condition that anything intrinsic to God must be identical with God.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it supplies a clear and highly consequential criterion that directly structures the subsequent intrinsic-composition objections."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The criterion specifies positivity, intrinsicness, and distinctness, and explicitly identifies the resulting absolute-simplicity condition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The entailment is appropriately confined to absolute divine simplicity under the stated definition, matching the force of the warrant."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The definition and its application form a clear inference: an intrinsic positive item distinct from the subject qualifies as a part."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The move supplies a precise published characterization and an explanatory generalization, though alternative part criteria are not seriously compared."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this directly supplies the con route's indispensable composition criterion and sits at the top of the tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move defines and applies a criterion without presenting a meaningful competing interpretation for comparative charity assessment."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes the condition that anything intrinsic to God is identical to God and generalizes a part as a positive intrinsic item distinct from its subject.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-intrinsic-conceptual-extrinsic-distinctions",
+      "sectionId": "metaphysical-content-of-simplicity",
+      "side": "pro",
+      "speaker": "Chris Tomaszewski",
+      "moveKind": "reply",
+      "proposition": "Divine simplicity excludes real intrinsic distinctions in God while allowing grounded conceptual distinctions among attributes and contingent extrinsic predications concerning creatures.",
+      "sourceSpan": {
+        "startEvent": 470,
+        "endEvent": 544
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly asks Chris to clarify or disagree, and Chris responds continuously by refining Joe's formula around two key qualifications.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-distinction-account"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-positive-intrinsic-item-criterion",
+          "con-simplicity-composition-taxonomy"
+        ],
+        "components": [
+          {
+            "componentId": "pro-intrinsic-conceptual-extrinsic-distinctions-component-01",
+            "targetMoveId": "con-positive-intrinsic-item-criterion",
+            "text": "Explain which distinctions remain permissible once positive intrinsic items distinct from God are excluded by the stated criterion.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-intrinsic-conceptual-extrinsic-distinctions-component-02",
+            "targetMoveId": "con-simplicity-composition-taxonomy",
+            "text": "Clarify how meaningful attribute and change predications can survive the denial of real intrinsic composition.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes real intrinsic, grounded conceptual, and extrinsic distinctions, thereby contacting both the criterion and its application to attributes and change.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within full answers, it explicitly contacts the intrinsicness premise and offers a structured distinction account, though the grounding details remain compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly separates intrinsic reality, mind-grounded conceptual distinctions, and extrinsic contingent predication without shifting their scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The categorical claim is appropriately limited to the speaker's stated understanding of simplicity and to the permissibility of extrinsic predication."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The three-way distinction is internally coherent and answers the criterion, with one bounded implicit bridge concerning how conceptual distinctions are objectively grounded."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The account is specifically articulated but largely asserted; the objective grounding and adequacy of wholly extrinsic contingent predicates receive limited defense."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly supplies the principal pro distinction account and ranks near the tier maximum."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move develops a positive distinction framework rather than evaluating a substantial alternative interpretation of the opposing position."
+        }
+      },
+      "evidenceBasis": "The excerpt says the mind accurately tracks divine features while emphasizing that extrinsic change and contingent predication pose no problem for simplicity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-aseity-excludes-intrinsic-parts",
+      "sectionId": "aseity-pure-actuality-and-composition",
+      "side": "pro",
+      "speaker": "Chris Tomaszewski",
+      "moveKind": "constructive",
+      "proposition": "Divine aseity supports simplicity because intrinsic components would make God's being or properties depend on realities not identical with the metaphysically ultimate source.",
+      "sourceSpan": {
+        "startEvent": 564,
+        "endEvent": 603
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Joe asks Christopher to present the aseity motivation, and Chris gives a continuous explanation before explicitly transferring the discussion back to Joe.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-metaphysical-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move grounds simplicity in God's radical metaphysical independence by arguing that ultimate reality cannot depend on intrinsic components distinct from itself.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it advances the route's principal metaphysical ground, though the dependence inference is more asserted than fully derived."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The aseity thesis and ultimate-source rationale are stable, while the exact dependence relation generated by components is left partly implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker frames the argument as an intuition and metaphysical motivation rather than an apodictic proof, fitting the support supplied."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The inference from ultimate independence to no distinct intrinsic components is plausible, but the key bridge from composition to dependence remains materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The move supplies biblical and philosophical-theist motivation but does not yet defend a specific theory of grounding or compare independence accounts."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this is the route's express metaphysical grounding argument and occupies the highest part of that tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No developed opposing account of aseity is interpreted in this constructive span, so a substantive charity test is not available."
+        }
+      },
+      "evidenceBasis": "The excerpt appeals to God's complete independence, metaphysical ultimacy, and status as the source of reality as the motivation for simplicity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-aseity-without-simplicity",
+      "sectionId": "aseity-pure-actuality-and-composition",
+      "side": "con",
+      "speaker": "Joe Schmid",
+      "moveKind": "reply",
+      "proposition": "Divine aseity need not entail simplicity because dependence may be merely counterfactual, the whole may ground its parts, Trinitarian multiplicity may resist the stronger demand, or aseity may exclude only external dependence.",
+      "sourceSpan": {
+        "startEvent": 604,
+        "endEvent": 664
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Chris explicitly announces Joe's nonclassical responses, and Joe then enumerates four distinct replies within a single uninterrupted turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-aseity-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-aseity-excludes-intrinsic-parts",
+          "pro-intrinsic-conceptual-extrinsic-distinctions",
+          "pro-analogy-distinguishes-divine-attributes"
+        ],
+        "components": [
+          {
+            "componentId": "con-aseity-without-simplicity-component-01",
+            "targetMoveId": "pro-aseity-excludes-intrinsic-parts",
+            "text": "Show why divine independence must exclude every intrinsic distinction rather than only dependence on something external to God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-aseity-without-simplicity-component-02",
+            "targetMoveId": "pro-intrinsic-conceptual-extrinsic-distinctions",
+            "text": "Challenge whether the proposed intrinsic boundary follows from aseity rather than being independently stipulated.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-aseity-without-simplicity-component-03",
+            "targetMoveId": "pro-analogy-distinguishes-divine-attributes",
+            "text": "Address whether analogical predication by itself establishes the stronger metaphysical independence conclusion.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contests the aseity-to-simplicity bridge through several dependence models, but it does not separately answer the earlier argument from analogy.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it contacts the decisive aseity component and several alternatives, while leaving the separate analogy component untouched."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The alternatives are recoverable and qualified, though multiple senses of dependence and grounding are presented without complete comparative stabilization."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The repeated modal framing claims only that alternative understandings are available, a force well matched to the supplied countermodels."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Aseity requires complete explanatory independence, including independence from any intrinsic constituents.",
+        "decisiveQualification": "That stronger reading needs an argument that intrinsic multiplicity cannot be grounded by the whole or remain internally self-sufficient."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The alternatives coherently undercut entailment from aseity to simplicity, though their multiplicity leaves the preferred account and comparative force underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Several concrete countermodels are supplied, but their metaphysical viability and compatibility with the full classical framework are not independently defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, the move directly supplies the con route's indispensable aseity gap and ranks near the tier ceiling."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The move fairly recognizes the strong independence demand and responds with several specifically qualified alternative dependence relations."
+        }
+      },
+      "evidenceBasis": "The excerpt presents Trinitarian multiplicity as a possible challenge to the strong aseity demand and explicitly turns to an alternative understanding of aseity.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-unity-grounding-aseity-reply",
+      "sectionId": "aseity-pure-actuality-and-composition",
+      "side": "pro",
+      "speaker": "Chris Tomaszewski",
+      "moveKind": "reply",
+      "proposition": "The threat composition poses to aseity is explanatory grounding: even if God could ground alleged parts, the unity making those parts one composite would ground God.",
+      "sourceSpan": {
+        "startEvent": 670,
+        "endEvent": 717
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Joe invites Christopher to proceed, and Chris explicitly pauses to answer the counterfactual-dependence and priority-monism proposals before changing topics.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-aseity-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-aseity-without-simplicity",
+          "con-positive-intrinsic-item-criterion",
+          "con-simplicity-composition-taxonomy"
+        ],
+        "components": [
+          {
+            "componentId": "pro-unity-grounding-aseity-reply-component-01",
+            "targetMoveId": "con-aseity-without-simplicity",
+            "text": "Answer the proposal that God as a whole could ground alleged intrinsic parts without compromising divine aseity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-unity-grounding-aseity-reply-component-02",
+            "targetMoveId": "con-positive-intrinsic-item-criterion",
+            "text": "Explain why distinct intrinsic items would generate a composite unity that is explanatorily prior to God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-unity-grounding-aseity-reply-component-03",
+            "targetMoveId": "con-simplicity-composition-taxonomy",
+            "text": "Relate the general composition taxonomy to a specific grounding-based threat to divine unity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply targets the whole-grounding-parts alternative by locating dependence in the unifying fact, while also explaining how the composition criterion threatens aseity.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within full answers, it explicitly contacts the decisive grounding proposal and states the defeating consequence for divine aseity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The unity-grounding thesis is clearly recoverable, though the exact ontology of the unifying fact and its priority is left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents the conclusion as what seems correct rather than certain, appropriately matching the compressed metaphysical warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God as a whole may ground the parts, so the parts need not explanatorily ground God.",
+        "decisiveQualification": "Even on that proposal, the fact unifying the plurality into one composite may explain the existence of the whole."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The reply identifies a coherent regress or circularity concern, with a bounded gap about why unity must be distinct from and prior to God."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The unifying-fact analysis is specific and relevant but receives little defense against theories treating unity as primitive or internally grounded."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the con aseity-gap bridge and ranks strongly because it isolates the key explanatory issue."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply accurately isolates the strongest whole-grounding alternative and answers it through the distinct explanatory role of composite unity."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes dependence on separate parts from dependence on their being united and argues that God cannot ground the unity constituting God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-trinitarian-inconsistent-tetrad",
+      "sectionId": "trinitarian-persons-and-relations",
+      "side": "con",
+      "speaker": "Joe Schmid",
+      "moveKind": "constructive",
+      "proposition": "Trinitarianism and absolute divine simplicity form an inconsistent tetrad if eternal processions are positive ontological items intrinsic to God yet distinct from God.",
+      "sourceSpan": {
+        "startEvent": 883,
+        "endEvent": 926
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The preceding transition assigns the second Trinitarian worry to Joe, and the concluding handoff explicitly turns the discussion over to Christopher.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-trinitarian-tension"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move formulates the central Trinitarian tension as an explicit inconsistent set centered on positive intrinsic processions distinct from God.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within constructive moves, it sharply states a route-central inconsistency and identifies the premise on which Trinitarian processions generate composition."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional conflict is recoverable, and the move explicitly qualifies the proposed tetrad as prima facie rather than conclusively established."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Calling the tetrad a prima facie plausible problem precisely matches the conditional status of its contested procession premise."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The inconsistent-set structure is clear and valid conditional on processions satisfying the positive-intrinsic-distinct criterion; that premise remains contestable."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The move identifies eternal processions as a specific candidate item, though it does not yet fully establish their positivity, intrinsicness, and strict distinctness."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, this is the con route's principal Trinitarian inconsistency and occupies the top of the tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move constructs an inconsistency argument but does not yet interpret a developed reconciliation model that could be charity-tested."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly introduces an inconsistent tetrad and states that Trinitarianism appears to require a positive ontological item intrinsic to but distinct from God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-latin-trinity-subsistent-relations",
+      "sectionId": "trinitarian-persons-and-relations",
+      "side": "pro",
+      "speaker": "Chris Tomaszewski",
+      "moveKind": "reply",
+      "proposition": "A Latin Trinitarian model reconciles simplicity with real personal distinction by identifying each person and procession-relation with the divine essence while distinguishing persons through opposed relations.",
+      "sourceSpan": {
+        "startEvent": 927,
+        "endEvent": 1019
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Joe explicitly hands the floor to Christopher, who announces that he rejects the first claim and speaks until he explicitly lets Joe respond.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-trinitarian-relations"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-trinitarian-inconsistent-tetrad",
+          "con-positive-intrinsic-item-criterion",
+          "con-aseity-without-simplicity",
+          "con-simplicity-composition-taxonomy"
+        ],
+        "components": [
+          {
+            "componentId": "pro-latin-trinity-subsistent-relations-component-01",
+            "targetMoveId": "con-trinitarian-inconsistent-tetrad",
+            "text": "Explain how real Trinitarian persons and procession relations can be distinguished without becoming positive intrinsic constituents distinct from God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-latin-trinity-subsistent-relations-component-02",
+            "targetMoveId": "con-positive-intrinsic-item-criterion",
+            "text": "Show how each person and relation can satisfy the identity requirement imposed on anything intrinsic to God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-latin-trinity-subsistent-relations-component-03",
+            "targetMoveId": "con-aseity-without-simplicity",
+            "text": "Address the concern that Trinitarian multiplicity undermines the strong account of divine aseity.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-latin-trinity-subsistent-relations-component-04",
+            "targetMoveId": "con-simplicity-composition-taxonomy",
+            "text": "Specify a Trinitarian model that avoids treating God as a composite community of persons.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly offers the Latin identity-and-opposition model demanded by the tetrad and expressly rejects the social-composite model that would violate simplicity.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within full answers, it explicitly contacts the decisive procession premise and supplies a model preserving identity with essence and relational opposition."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast between social and Latin models, identity with essence, and distinction by opposed relations is clearly and consistently stated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The necessity claim is confined to selecting a non-social model if simplicity is retained, which follows from the conceded incompatibility of community composition."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Trinitarianism makes God a community composed of three distinct personal members.",
+        "decisiveQualification": "That social model is incompatible with simplicity, but a Latin model identifies each person and relation with the one essence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The identity-and-opposition model is coherent at a schematic level, but the compatibility of shared essence-identity with real interpersonal distinction remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The model is specifically described and compared with social Trinitarianism, though the metaphysics of subsistent opposed relations is not fully defended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly supplies the route's indispensable Trinitarian reconciliation and reaches the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply expressly concedes the force of the social model objection and then presents the strongest relevant noncompositional alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt concedes that a community of three persons conflicts with simplicity and proposes a Latin model on which each person is identical with the divine essence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-begotten-son-godhead-distinction",
+      "sectionId": "trinitarian-persons-and-relations",
+      "side": "con",
+      "speaker": "Joe Schmid",
+      "moveKind": "reply",
+      "proposition": "Because the Son is begotten while God as such is not begotten, the Son appears strictly distinct from the Godhead and, being intrinsic rather than extrinsic to God, constitutes composition under the stated part criterion.",
+      "sourceSpan": {
+        "startEvent": 1093,
+        "endEvent": 1119
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker frames the passage as the non-classical-theist response, addresses Christopher's account, and expressly gives Christopher the last word at the end.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-trinitarian-tension"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-latin-trinity-subsistent-relations",
+          "pro-intrinsic-conceptual-extrinsic-distinctions",
+          "pro-aseity-excludes-intrinsic-parts",
+          "pro-unity-grounding-aseity-reply",
+          "pro-analogy-distinguishes-divine-attributes"
+        ],
+        "components": [
+          {
+            "componentId": "con-begotten-son-godhead-distinction-component-01",
+            "targetMoveId": "pro-latin-trinity-subsistent-relations",
+            "text": "Explain how the Son can be begotten while God as such is not begotten if both are strictly identical in the proposed Latin model.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-begotten-son-godhead-distinction-component-02",
+            "targetMoveId": "pro-intrinsic-conceptual-extrinsic-distinctions",
+            "text": "Show that the personal distinction is intrinsic rather than merely conceptual or creature-relative.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-begotten-son-godhead-distinction-component-03",
+            "targetMoveId": "pro-aseity-excludes-intrinsic-parts",
+            "text": "Apply the pro dependence rationale to an allegedly intrinsic personal distinction within God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-begotten-son-godhead-distinction-component-04",
+            "targetMoveId": "pro-unity-grounding-aseity-reply",
+            "text": "Test whether divine unity can remain noncomposite given asymmetric personal predicates.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-begotten-son-godhead-distinction-component-05",
+            "targetMoveId": "pro-analogy-distinguishes-divine-attributes",
+            "text": "Determine whether analogical predication resolves the asymmetric begotten and unbegotten predicates.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly presses Leibniz-style asymmetric predication against the Latin identity claim and applies the intrinsic-item criterion, while leaving analogy separately untreated.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it contacts the decisive Latin-model identity issue and several supporting components but not the separate analogy response."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The asymmetric-predicate argument is recoverable, though the shift between God, God as such, and the Godhead leaves one material scope question."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The repeated appearance and seeming language appropriately presents a prima facie distinction rather than claiming a settled contradiction."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The Son is identical with the essence absolutely but distinguished through an opposed relation of origin.",
+        "decisiveQualification": "The asymmetric predicates still require an account of why begottenness applies to the Son but not to God as such without strict intrinsic distinction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The asymmetric-predicate inference is strong as a challenge, though its conclusion depends on stabilizing the referent and sense of God as such."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The move supplies a specific conciliar asymmetry and applies the established part criterion, with a bounded gap concerning relative-identity responses."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the route's Trinitarian tension at the most difficult identity point and ranks at the ceiling."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The objection engages the core Latin identity claim and identifies its hardest asymmetric-predication qualification without reducing it to social Trinitarianism."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that the Son is begotten while God as such is not, inferring strict distinction and then intrinsic composition because the Son is not extrinsic to God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-relational-directedness-no-added-item",
+      "sectionId": "trinitarian-persons-and-relations",
+      "side": "pro",
+      "speaker": "Chris Tomaszewski",
+      "moveKind": "reply",
+      "proposition": "The Son is identical with begottenness relationally and with the divine essence absolutely, while the directedness of that relation adds no positive ontological item to God.",
+      "sourceSpan": {
+        "startEvent": 1124,
+        "endEvent": 1155
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderators explicitly invite Christopher's last word, and the next speaker closes the exchange by saying there is much to answer before moving onward.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-trinitarian-tension"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-begotten-son-godhead-distinction",
+          "con-trinitarian-inconsistent-tetrad",
+          "con-positive-intrinsic-item-criterion",
+          "con-aseity-without-simplicity",
+          "con-simplicity-composition-taxonomy"
+        ],
+        "components": [
+          {
+            "componentId": "pro-relational-directedness-no-added-item-component-01",
+            "targetMoveId": "con-begotten-son-godhead-distinction",
+            "text": "Explain why asymmetric begottenness does not entail a positive intrinsic ontological item distinct from the divine essence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-relational-directedness-no-added-item-component-02",
+            "targetMoveId": "con-trinitarian-inconsistent-tetrad",
+            "text": "Answer the tetrad's claim that an eternal procession is a positive item intrinsic to but distinct from God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-relational-directedness-no-added-item-component-03",
+            "targetMoveId": "con-positive-intrinsic-item-criterion",
+            "text": "Show why relational directedness fails the positivity-and-distinctness conditions in the stated part criterion.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-relational-directedness-no-added-item-component-04",
+            "targetMoveId": "con-aseity-without-simplicity",
+            "text": "Preserve divine aseity while recognizing a real relation between Father and Son.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-relational-directedness-no-added-item-component-05",
+            "targetMoveId": "con-simplicity-composition-taxonomy",
+            "text": "Locate relational opposition without introducing an additional form of real intrinsic composition.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply squarely distinguishes absolute essence from relational directedness and denies that the latter is an additional positive item, contacting the objection's decisive inference.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within full answers, it explicitly contacts the positive-item inference and states exactly why relational towardness does not satisfy that criterion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The absolute-versus-relative distinction is recoverable, although directedness, towardness, and relation are not fully ontologically stabilized."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The denial that directedness is any additional positive item is categorical, while the excerpt explains the distinction but does not fully defend its ontology."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Asymmetric begottenness entails that the Son is strictly distinct from the unbegotten Godhead and therefore an intrinsic part.",
+        "decisiveQualification": "The Latin account distinguishes relational directedness from absolute essence and denies that directedness adds a positive ontological item."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The response provides the needed distinction, but the claim that a real directed relation adds no positive item leaves a material metaphysical bridge."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The scholastic towardness distinction is specifically invoked, yet its ability to support real distinction without positive ontology is mostly asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the decisive Trinitarian-tension inference and ranks at the upper limit of the tier."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply accurately targets the strongest asymmetric-predicate objection and supplies the relevant qualification, though further defense of relational ontology is needed."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes divine essence from relational directedness and expressly denies that the Son's towardness is an additional positive ontological item in God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-alone-world-contingent-knowledge",
+      "sectionId": "freedom-contingency-and-divine-knowledge",
+      "side": "con",
+      "speaker": "Joe Schmid",
+      "moveKind": "constructive",
+      "proposition": "If God freely creates nothing, no positive ontological item is extrinsic to God in that world, so God's knowledge of contingent truths would be a contingent intrinsic item incompatible with divine simplicity.",
+      "sourceSpan": {
+        "startEvent": 1164,
+        "endEvent": 1311
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Joe introduces the aloneness argument after closing the prior exchange and concludes the extended formulation by repeatedly handing the floor to Christopher.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-epistemic-tension"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move uses a freely creationless world to argue that contingent omniscient knowledge cannot be assigned to extrinsic positive reality and must become intrinsic.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "Within constructive moves, it presents a targeted modal test that links freedom, contingency, omniscience, and the intrinsic-item criterion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The alone-world supposition, absence of extrinsic positive items, and resulting intrinsic-knowledge conclusion are explicitly and consistently connected."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The conclusion follows given the stated positive-item dichotomy, but the move does not fully exclude non-item or purely relational accounts of contingent truth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God's contingent knowledge can be extrinsically differentiated by created facts while God's intrinsic intellect remains simple.",
+        "decisiveQualification": "In an alone world there are no created positive items to provide that extrinsic differentiation, despite God's knowledge of contingent truths."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The alone-world inference is clear and forceful, with a bounded gap about whether every contingent truth requires a positive ontological knowledge item."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The argument supplies a detailed modal case and explicit omniscience premise, though the metaphysical availability of the alone world remains underdefended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the core epistemic tension and strongly integrates the motion's freedom and knowledge demands."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The modal case directly grants and stress-tests the strongest extrinsic-knowledge proposal at the precise point where its ordinary truthmakers are absent."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says the extrinsic model loses its positive extrinsic items in an alone world while omniscience still requires knowledge of contingent truths.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-changing-reality-epistemic-change",
+      "sectionId": "freedom-contingency-and-divine-knowledge",
+      "side": "con",
+      "speaker": "Joe Schmid",
+      "moveKind": "constructive",
+      "proposition": "If an immutable and purely actual God cannot gain or lose knowledge while omniscience of changing contingent reality requires such epistemic change, then classical theism cannot accommodate that changing reality.",
+      "sourceSpan": {
+        "startEvent": 1796,
+        "endEvent": 2032
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Joe announces a sustained presentation, states and defends the premises in sequence, and explicitly yields the floor to Christopher at its conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-epistemic-tension"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive argument contends that omniscience of temporally changing truths requires acquiring or losing knowledge, contrary to immutable self-knowledge and pure actuality.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "Within constructive moves, it develops a direct and highly consequential epistemic-change challenge to the classical package named in the motion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional premises concerning immutable self-knowledge, changing truths, and epistemic acquisition are recoverable and explicitly structured."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The asserted incompatibility is presented conditionally on explicit premises, so its necessity matches the formal argumentative structure rather than overclaiming."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An immutable God timelessly knows all temporal truths without acquiring or losing any intrinsic cognitive state.",
+        "decisiveQualification": "The argument requires an account of how presently indexed and changing truths can vary without any corresponding epistemic difference in omniscient knowledge."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The conditional argument is well structured, with the principal disputed bridge being whether omniscience of changing truths entails intrinsic epistemic change."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The move supplies a developed premise chain and a specific Boethian commitment, while rival tenseless or extrinsic accounts remain incompletely compared."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly advances the indispensable epistemic-tension bridge and occupies the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The move recognizes immutable self-knowledge and focuses on the strongest unresolved temporal-truth issue, though timeless-indexical distinctions could receive fuller treatment."
+        }
+      },
+      "evidenceBasis": "The excerpt states that immutable divine self-knowledge cannot acquire or lose content and invokes Boethius on divine knowledge passing over every change.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-changing-truths-no-divine-potency",
+      "sectionId": "freedom-contingency-and-divine-knowledge",
+      "side": "pro",
+      "speaker": "Chris Tomaszewski",
+      "moveKind": "reply",
+      "proposition": "Changing contingent truths alter extrinsic knowledge predications without changing God's intrinsic positive reality, so they do not introduce acquired knowledge or potentiality in God.",
+      "sourceSpan": {
+        "startEvent": 2049,
+        "endEvent": 2203
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly asks Chris which premise he rejects, and Chris delivers a continuous answer framed around an explicit equivocation diagnosis.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-epistemic-tension"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-changing-reality-epistemic-change",
+          "con-alone-world-contingent-knowledge",
+          "con-positive-intrinsic-item-criterion"
+        ],
+        "components": [
+          {
+            "componentId": "pro-changing-truths-no-divine-potency-component-01",
+            "targetMoveId": "con-changing-reality-epistemic-change",
+            "text": "Explain how knowledge attributions can vary with changing truths without God acquiring knowledge, losing knowledge, or realizing intrinsic potentiality.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-changing-truths-no-divine-potency-component-02",
+            "targetMoveId": "con-alone-world-contingent-knowledge",
+            "text": "Explain whether contingent knowledge can remain extrinsically differentiated when creaturely truthmakers or positive external items are absent.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-changing-truths-no-divine-potency-component-03",
+            "targetMoveId": "con-positive-intrinsic-item-criterion",
+            "text": "Show why changing knowledge predicates do not identify a positive intrinsic item distinct from God.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly answers the changing-truth argument by assigning variation to extrinsic truth while keeping intrinsic reality fixed, but it does not answer the alone-world restriction.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it explicitly contacts the decisive changing-reality component while leaving the distinct alone-world component uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The intrinsic positive reality and extrinsic truth components are consistently separated, and the claim is expressly confined to changes in predication."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that extrinsicality is sufficient is categorical, while the excerpt does not fully establish that all epistemic differences reduce to predication."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Omniscience of changing reality requires God to acquire and lose knowledge as the relevant truths change.",
+        "decisiveQualification": "The reply distinguishes an invariant intrinsic intellect from extrinsic changes in the truths making temporal knowledge predicates correct."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The invariant-intrinsic and changing-extrinsic distinction is coherent, but the bridge from altered truth conditions to genuine knowledge remains somewhat compressed."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "A concrete temporal example and metaphysical distinction support the response, though rival views of knowledge content are not seriously compared."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly attacks the principal changing-reality epistemic tension and ranks near the tier ceiling."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The response engages the strongest epistemic-change inference directly and supplies the decisive intrinsic-versus-extrinsic qualification rather than denying changing truths."
+        }
+      },
+      "evidenceBasis": "The excerpt locates variation in the extrinsic truth of what God knows and denies any difference in God's intrinsic positive ontological reality.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-intellect-causality-extrinsic-knowledge",
+      "sectionId": "freedom-contingency-and-divine-knowledge",
+      "side": "pro",
+      "speaker": "Chris Tomaszewski",
+      "moveKind": "reply",
+      "proposition": "God's contingent knowledge consists in his intrinsic intellect and causal efficacy, while differences among temporally varying true knowledge attributions are entirely extrinsic.",
+      "sourceSpan": {
+        "startEvent": 2247,
+        "endEvent": 2320
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Chris explicitly accepts Joe's question and gives an uninterrupted answer that distinguishes the intrinsic basis of each item from their extrinsic difference.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-contingent-knowledge"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-changing-reality-epistemic-change",
+          "con-alone-world-contingent-knowledge",
+          "con-positive-intrinsic-item-criterion"
+        ],
+        "components": [
+          {
+            "componentId": "pro-intellect-causality-extrinsic-knowledge-component-01",
+            "targetMoveId": "con-changing-reality-epistemic-change",
+            "text": "State what remains intrinsic to divine knowledge while explaining temporally different true knowledge attributions without intrinsic epistemic change.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-intellect-causality-extrinsic-knowledge-component-02",
+            "targetMoveId": "con-alone-world-contingent-knowledge",
+            "text": "Identify what divine contingent knowledge consists in apart from the positive extrinsic facts differentiating ordinary created worlds.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-intellect-causality-extrinsic-knowledge-component-03",
+            "targetMoveId": "con-positive-intrinsic-item-criterion",
+            "text": "Explain why intrinsic intellect and causal efficacy do not introduce multiple positive items distinct from God.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies intrinsic intellect and causal efficacy as the basis of knowledge and treats temporal differences as extrinsic, contacting both epistemic challenges but not separately defending simplicity of those intrinsic features.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "Within partial answers, it contacts both main epistemic demands but leaves the distinct positive-item challenge to intellect and causality underexplained."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposed intrinsic basis and wholly extrinsic difference between temporal attributions are plainly stated and maintain consistent scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The assertion that the difference is entirely extrinsic is stronger than the abbreviated defense, especially concerning intentional content and the alone world."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Distinct contingent truths require distinct intrinsic cognitive contents or states in an omniscient knower.",
+        "decisiveQualification": "The proposed account locates knowledge in one intrinsic intellect and causal efficacy while assigning differences among true temporal attributions to external facts."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The two-component account is coherent, but the link from invariant intellect and causality to specific contingent knowledge content remains a material bridge."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The move gives a concrete dinosaur example and a definite ontology, yet the causal-knowledge warrant and alone-world applicability remain underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Within the central tier, it directly supplies the route's required account of contingent and temporally varying divine knowledge."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The response squarely addresses the strongest content-based objection, though it does not fully justify why causal efficacy supplies determinate contingent knowledge."
+        }
+      },
+      "evidenceBasis": "The excerpt asks what differs between two temporally indexed divine knowledge claims and answers that the difference is entirely extrinsic, not intrinsic to God.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence exists beyond the assessed moves.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the scored move judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence remains outside the move ratings, response links, importance judgments, and burden relevance findings.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence exists beyond the assessed moves.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the scored move judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
