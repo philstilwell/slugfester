@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-publication-resumption-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-resumption-1-recovery-1",
+  "status": "batch-05-publication-resumption-recovery-or-complete-validation-failed",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "gate": {
+    "contextsPlanned": 6,
+    "contextsAttempted": 6,
+    "contextsPassed": 5,
+    "contextsFailed": 1,
+    "debate189RepairContexts": 4,
+    "debate189AuthorizedFields": 8,
+    "debate189CompleteValidationPassed": false,
+    "debate189MovesValidated": 0,
+    "debate109ResumptionShards": 2,
+    "debate109AcceptedOriginalContentFields": 0,
+    "debate109CompleteValidationPassed": false,
+    "debate109MovesValidated": 0,
+    "immutableFieldsChangedOutsideDiagnosis": null,
+    "originalFailedDebate109PartialOutputReused": false,
+    "attempts": 6,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "originalFailedDebate189Output": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/outputs/debate-189.json",
+    "originalFailedDebate189OutputPreserved": true,
+    "originalFailedDebate109PartialOutputReused": false,
+    "mergedDebate189": null,
+    "mergedDebate109": null,
+    "completeValidationDebate189": null,
+    "completeValidationDebate109": null
+  },
+  "totals": {
+    "modelContexts": 6,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "fourContextResumptionManifestPreparation": false,
+    "fourContextModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "stop-after-failed-bounded-publication-resumption-recovery"
+}
