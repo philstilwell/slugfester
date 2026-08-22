@@ -98,7 +98,7 @@ assert.equal(
 );
 assert.equal(preparation.isolation.validationCohortOutputsUnavailable, true);
 assert.equal(preparation.audioPolicy.mediumConfidenceAlwaysRequiresVerification, true);
-assert.equal(preparation.audioPolicy.pendingAttributionVerificationMoves.length, 0);
+assert.equal(preparation.audioPolicy.pendingAttributionVerificationMoves.length, 2);
 assert.equal(preparation.executionPolicyToFreezeSeparately.maximumParallelContexts, 2);
 assert.deepEqual(preparation.executionPolicyToFreezeSeparately.schedulerRamp, [1, 2]);
 assert.equal(preparation.executionPolicyToFreezeSeparately.retriesMaximum, 0);
