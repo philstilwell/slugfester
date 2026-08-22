@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-stop-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-06-inventory-preparation-stop",
+  "status": "batch-06-inventory-preparation-stopped-after-failed-second-correction",
+  "diagnosedAt": "2026-08-22T20:50:00.000Z",
+  "failureCategory": "deterministic-stale-selection-status-expectation",
+  "observed": {
+    "selectionStatus": "sixth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+    "selectionBatchNumber": 5,
+    "selectedDebates": [
+      "73",
+      "36",
+      "38",
+      "97",
+      "141",
+      "06",
+      "168",
+      "135",
+      "143",
+      "169"
+    ]
+  },
+  "staleHarnessExpectation": {
+    "path": "scripts/prepare-assessment-production-post-canary-batch-06-inventory.mjs",
+    "expectedSelectionStatus": "fifth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+    "exactMismatchCount": 1
+  },
+  "protectedEvidence": {
+    "selectionChanged": false,
+    "selectionOverlayProposed": false,
+    "discoveryOutputsChanged": false,
+    "inventoryArtifactsWritten": 0,
+    "modelsExecutedAfterDiscovery": 0,
+    "paidServicesUsed": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorizationAudit": {
+    "recoveryLevelsUsed": 2,
+    "recursiveCorrectionsMaximum": 1,
+    "secondCorrectionFailed": true,
+    "newApprovalRequired": true
+  },
+  "possibleBoundedNextStepNotAuthorized": "Replace only the one stale fifth-post-canary selection-status expectation with the frozen sixth-post-canary value, then perform one inventory-preparation preview. Preserve selection.json byte-identically, including its already-diagnosed stale batchNumber field."
+}

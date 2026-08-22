@@ -345,7 +345,7 @@ async function buildFrozenArtifacts(frozenAt) {
   );
   assertV4(
     discoveryExecution.status ===
-      "forty-one-post-canary-batch-06-discovery-contexts-passed" &&
+      "thirty-nine-post-canary-batch-06-discovery-contexts-passed" &&
       discoveryExecution.contextsAttempted === 39 &&
       discoveryExecution.validContexts === 39 &&
       discoveryExecution.invalidContexts === 0 &&
