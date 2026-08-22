@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-06-inventory-preparation-recovery-2",
+  "status": "batch-06-inventory-preparation-recursive-correction-authorized-once",
+  "activatedAt": "2026-08-22T20:48:00.000Z",
+  "checkpointCommit": "5f5e4370a311f6e847a1f19794c4eab473db8a79",
+  "branch": "main",
+  "diagnosisSha256": "3dea7ae9d8942becabbf738de5d36396538fdc65e36a6ceb4592616760e303b4",
+  "correctionPlanSha256": "d939f9df8255b81e30f9d1721bf930760abfac4d46cdb19d58b24fc6f090f588",
+  "target": {
+    "path": "scripts/prepare-assessment-production-post-canary-batch-06-inventory.mjs",
+    "preimageSha256": "d9cd7edafe938158db741bc3c84efc90be7815ebfb426a3cb28321a830555996"
+  },
+  "proposal": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-recovery-2/proposed-preparation.mjs",
+    "sha256": "cd2cb5c41ab734113723d81527d322ffba469ae33689e76908100fbf5934bd27"
+  },
+  "execution": {
+    "attempts": 1,
+    "retries": 0,
+    "furtherRecoveries": 0,
+    "previewValidationPasses": 1,
+    "models": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAction": "replace-target-byte-for-byte-and-run-one-preview"
+}
