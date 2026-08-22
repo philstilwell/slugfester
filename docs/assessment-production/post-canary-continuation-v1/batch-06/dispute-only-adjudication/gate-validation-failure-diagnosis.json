@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-adjudication-gate-validation-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-06-dispute-only-adjudication",
+  "status": "frozen-batch-06-adjudication-gate-stale-audio-count-expectation-diagnosed",
+  "diagnosedAt": "2026-08-23T00:05:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "failureCategory": "deterministic-validation-harness-stale-cohort-expectation",
+  "preservedError": "AssertionError: Expected values to be strictly equal: 2 !== 6",
+  "failedAssertion": {
+    "path": "scripts/test-assessment-production-post-canary-batch-06-dispute-adjudication-gate.mjs",
+    "line": 214,
+    "expression": "assert.equal(analysis.evidenceBoundary.audioTranscriptInputs, 6)",
+    "actualFrozenBatch06Value": 2,
+    "staleCopiedBatch05Value": 6
+  },
+  "acceptedExecution": {
+    "status": "ten-post-canary-batch-06-dispute-only-adjudication-contexts-passed",
+    "contextsAttempted": 10,
+    "validContexts": 10,
+    "invalidContexts": 0,
+    "disputedMoves": 197,
+    "candidateSelections": 609,
+    "audioTranscriptInputs": 2,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "rootCause": "The Batch 6 gate test was mechanically adapted from Batch 5 but retained Batch 5's six-audio-input assertion. Batch 6 has exactly two frozen and accepted Debate 97 audio inputs, as authenticated by the preparation, activation, execution, and deterministic analysis records.",
+  "boundedCorrection": {
+    "authorizedClass": "deterministic-validation-harness-correction",
+    "exactChange": "replace-only-the-gate-test-audioTranscriptInputs-expectation-from-6-to-2",
+    "activationCredentialHashUpdateRequired": true,
+    "modelOutputChanges": 0,
+    "modelReruns": 0,
+    "packetChanges": 0,
+    "sourceChanges": 0,
+    "candidateChanges": 0,
+    "scoreChanges": 0,
+    "analysisChanges": 0
+  },
+  "sourceHashes": {
+    "scripts/test-assessment-production-post-canary-batch-06-dispute-adjudication-gate.mjs": "634986fd83be9533f358d373cb0d43a9c106609d94cf592bd806fe9a4f6bd6a9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/dispute-only-adjudication/execution-activation.json": "a42c3df21f78faf0523421d7b8170293c8e3c5d1586cca13daa6b6fd475579da",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/dispute-only-adjudication/model-execution.json": "33a7fc5f47b6d6dab56d42daf6e9290d46cf12243459ff955d0a3b6d9c45204e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/dispute-only-adjudication/analysis.json": "3489bb86c519a19fe10ffed0d4fb662ee8088ffc12f32d22622ce4f1afffdbfe"
+  },
+  "executionBoundary": {
+    "newModelContexts": 0,
+    "modelReruns": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "prepare-hash-lock-and-run-one-corrected-batch-06-adjudication-gate-validation"
+}
