@@ -1,0 +1,2137 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-production-compatibility",
+  "status": "frozen-post-canary-batch-05-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "planningOnly": true,
+  "debateNumber": "132",
+  "debateId": "mclatchie-carrier-paul-celestial-jesus-2018",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-finalization/output-bundle/final-candidates/debate-132.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-05/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-finalization/output-bundle/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-05/rendering-verification/resumption-1/rendering-audit.json",
+    "events": ".assessment-cache/captions/HCcq8G-WzJM/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "82133511e09ca1bc7e637795c7f072633f3ca2a88a32ffeb1d12a15e0741993f",
+    "calculatedScoresSha256": "e60e3023b32d6310e55fda25a17c774202c6f4e994a197996855980bc19758a1",
+    "finalizationAuditSha256": "c78eecb6f1816c227a3c1ab8f9da44b295a96e9411418fc847df1f39f21900db",
+    "renderingAuditSha256": "8b9df992b39bd1efeb33416b931f34e231d61e2ebdf46efb9a656c1764e6d189",
+    "finalCandidateSha256": "d9f8e01c5acdbc888ff4dc03dd06923c34b45eb6871af88fa80156ff6aa54c6c",
+    "eventsPath": ".assessment-cache/captions/HCcq8G-WzJM/events.json",
+    "eventsSha256": "34eac07c6a11b156258ada03a8dfcdcf0ee9de8e882bc664b4e20956c8c71d2a",
+    "finalJudgmentSha256": "495d079dd7a52f94e2d25b84ef1d6bbcca24914b9961beca997104c4f4989b44"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/output-bundle/staged-ledgers/mclatchie-carrier-paul-celestial-jesus-2018.json",
+    "productionLedger": "docs/assessment-ledgers/mclatchie-carrier-paul-celestial-jesus-2018.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-05-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-05-production-compatibility",
+    "status": "frozen-post-canary-batch-05-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 5,
+    "debateNumber": "132",
+    "debateId": "mclatchie-carrier-paul-celestial-jesus-2018",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-05-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "82133511e09ca1bc7e637795c7f072633f3ca2a88a32ffeb1d12a15e0741993f",
+      "calculatedScoresSha256": "e60e3023b32d6310e55fda25a17c774202c6f4e994a197996855980bc19758a1",
+      "finalizationAuditSha256": "c78eecb6f1816c227a3c1ab8f9da44b295a96e9411418fc847df1f39f21900db",
+      "renderingAuditSha256": "8b9df992b39bd1efeb33416b931f34e231d61e2ebdf46efb9a656c1764e6d189",
+      "finalCandidateSha256": "d9f8e01c5acdbc888ff4dc03dd06923c34b45eb6871af88fa80156ff6aa54c6c",
+      "eventsPath": ".assessment-cache/captions/HCcq8G-WzJM/events.json",
+      "eventsSha256": "34eac07c6a11b156258ada03a8dfcdcf0ee9de8e882bc664b4e20956c8c71d2a",
+      "finalJudgmentSha256": "495d079dd7a52f94e2d25b84ef1d6bbcca24914b9961beca997104c4f4989b44"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "132",
+      "debateId": "mclatchie-carrier-paul-celestial-jesus-2018",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-pauline-historicity-route",
+          "side": "pro",
+          "description": "Establish that Paul understood Jesus as an earthly historical person by combining Pauline biographical and familial references with an earthly reading of the crucifying rulers and corroboration from sources connected to Paul and the Gospel tradition.",
+          "successCriteria": "The route succeeds if the Pauline references are best explained as ordinary historical claims, the rulers passage situates the crucifixion among human authorities, and the proposed Acts and Gospel corroboration remains sufficiently independent and reliable to reinforce that reading.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-earthly-person",
+            "tier": "motion",
+            "description": "Show that the cumulative evidence is better explained by Paul referring to a human Jesus who lived and was crucified on Earth than by a wholly celestial setting for the saving events."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-pauline-biographical-markers",
+              "tier": "central",
+              "description": "Establish that Pauline references to ancestry, birth, teachings, associates, betrayal, and execution supply meaningful historical particularity."
+            },
+            {
+              "bridgeId": "pro-human-crucifying-rulers",
+              "tier": "central",
+              "description": "Establish from the context of First Corinthians that the rulers responsible for the crucifixion are human authorities, even if spiritual forces also participated."
+            },
+            {
+              "bridgeId": "pro-familial-references",
+              "tier": "central",
+              "description": "Show that references to James and other brothers of the Lord are most coherently understood as biological relationships to Jesus."
+            },
+            {
+              "bridgeId": "pro-companion-corroboration",
+              "tier": "central",
+              "description": "Establish that Acts is substantially reliable and connected to a companion of Paul, making its historical Jesus relevant to reconstructing Paul's understanding."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-corpus-scope",
+              "tier": "subsidiary",
+              "description": "Defend a sufficiently broad Pauline corpus so that relevant historical references are not excluded solely by disputed authorship judgments."
+            },
+            {
+              "bridgeId": "pro-gospel-coincidences",
+              "tier": "subsidiary",
+              "description": "Show that dispersed incidental correspondences among Gospel narratives are more expected on historical information than deliberate literary harmonization."
+            }
+          ]
+        },
+        {
+          "routeId": "con-celestial-mythicism-route",
+          "side": "con",
+          "description": "Establish that Paul's accepted letters do not securely locate Jesus's ministry, death, and resurrection on Earth, while their cosmic language permits a flesh-bearing celestial figure killed by demonic rulers in a mythic heavenly realm.",
+          "successCriteria": "The route succeeds if Pauline biographical and familial expressions remain materially ambiguous, the rulers and cosmology make a heavenly crucifixion viable, and Acts and Gospel narratives cannot independently import a later earthly biography into Paul's letters.",
+          "motionBridge": {
+            "bridgeId": "con-motion-celestial-figure",
+            "tier": "motion",
+            "description": "Show that the earliest relevant Pauline evidence remains compatible with, and materially supports, a mortal embodied Jesus whose death and resurrection occurred in a celestial rather than terrestrial realm."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-pauline-terrestrial-silence",
+              "tier": "central",
+              "description": "Establish that the accepted Pauline letters lack an unambiguous earthly ministry or terrestrial location for Jesus's death and resurrection."
+            },
+            {
+              "bridgeId": "con-demonic-rulers",
+              "tier": "central",
+              "description": "Show that the rulers of the age can be celestial demonic powers and that their concealed knowledge and interests fit that interpretation."
+            },
+            {
+              "bridgeId": "con-heavenly-crucifixion-cosmology",
+              "tier": "central",
+              "description": "Establish that ancient cosmology allowed heavenly counterparts of earthly places, objects, and practices, making a celestial crucifixion intelligible."
+            },
+            {
+              "bridgeId": "con-later-source-independence",
+              "tier": "central",
+              "description": "Show that Acts and the Gospels are too disputed, literary, dependent, or historically unstable to determine what Paul believed about Jesus."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-cultic-brother-language",
+              "tier": "subsidiary",
+              "description": "Show that Pauline brother-of-the-Lord language can identify an ordinary baptized Christian rather than a biological sibling of Jesus."
+            },
+            {
+              "bridgeId": "con-savior-cult-background",
+              "tier": "subsidiary",
+              "description": "Supply the comparative possibility that a savior cult could later place a nonhistorical divine figure into an earthly narrative."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "pauline-biography-and-corpus",
+          "title": "Pauline Biography, Silence, and Corpus Scope",
+          "weightPercent": 25,
+          "rationale": "The motion turns first on whether the relevant Pauline letters contain historical markers sufficient to locate Jesus on Earth, and whether the admissible Pauline corpus expands or restricts that evidence."
+        },
+        {
+          "sectionId": "rulers-and-crucifixion-realm",
+          "title": "The Rulers and the Realm of Crucifixion",
+          "weightPercent": 22,
+          "rationale": "The identity of the rulers of the age and the cosmological intelligibility of heavenly counterparts directly distinguish an earthly execution by human authorities from a celestial passion involving demonic powers."
+        },
+        {
+          "sectionId": "james-and-familial-language",
+          "title": "James and the Brothers of the Lord",
+          "weightPercent": 16,
+          "rationale": "Whether Paul's references identify biological relatives or members of a baptized cultic family is among the most direct disputes over historical particularity within the Pauline evidence."
+        },
+        {
+          "sectionId": "acts-reliability-and-companion-authorship",
+          "title": "Acts, Pauline Chronology, and Companion Authorship",
+          "weightPercent": 22,
+          "rationale": "Acts can connect Paul to a thoroughly historical Jesus only if its chronology, factual reliability, first-person narration, and claimed relationship to a Pauline companion survive the competing literary explanation."
+        },
+        {
+          "sectionId": "gospel-independence-and-corroboration",
+          "title": "Gospel Independence and Undesigned Coincidences",
+          "weightPercent": 15,
+          "rationale": "The evidential value of cross-Gospel correspondences depends on whether dispersed details reflect independent historical information or deliberate adaptation and harmonization of earlier narrative sources."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-pauline-mythic-realm-thesis",
+          "sectionId": "pauline-biography-and-corpus",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "constructive",
+          "proposition": "Carrier's mythicist thesis grants that Paul conceived Jesus as acquiring mortal Jewish flesh while locating his death and resurrection in a mythic realm rather than on Earth.",
+          "sourceSpan": {
+            "startEvent": 314,
+            "endEvent": 346,
+            "excerpt": "ministers thesis does hold that Paul believed that Jesus became flesh and blood that he acquired in fact literally Jewish flesh that he actually acquired a mortal body and died in that mortal body but the the view of this particular version of the origins of Christianity holds that that actually took place in a mythic realm not not actually on earth not in Jerusalem etc and and"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The proposition occurs within Carrier's uninterrupted thesis-setting turn after the moderator explicitly invites him to present his position.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-celestial-figure"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move defines the celestial-mythic thesis and directly supplies the con route's proposed account of embodiment and location."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The claim clearly distinguishes mortal Jewish embodiment from the proposed nonterrestrial location of death and resurrection."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "As a definition of the version of mythicism being defended, the categorical formulation matches its limited thesis-setting function."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly states the con motion-level account of Jesus as embodied yet killed outside the terrestrial realm."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move defines Carrier's own thesis and does not materially interpret a live opposing alternative."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Carrier expressly grants flesh, blood, Jewish identity, mortality, and death while locating the events in a mythic realm rather than Jerusalem or Earth.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-authentic-pauline-terrestrial-silence",
+          "sectionId": "pauline-biography-and-corpus",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "constructive",
+          "proposition": "The seven accepted Pauline letters do not locate Jesus's life and death on Earth or describe an earthly ministry, while presenting his teachings as received through revelation.",
+          "sourceSpan": {
+            "startEvent": 379,
+            "endEvent": 440,
+            "excerpt": "we look at those now when we look at the authentic letters of Paul he repeatedly says the teachings of Jesus came by revelation after his death I mean he never mentions anyone ever having met Jesus or even seeing Jesus before his death Paul never mentions Jesus selecting disciples are having a ministry or performing miracles or exorcisms or ever being or doing anything on earth"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carrier remains the sole speaker throughout the passage and explicitly turns from comparative religion to the evidentiary contents of Paul's letters.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-pauline-terrestrial-silence"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the con route's central evidentiary argument from what the accepted Pauline letters do and do not say."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The restriction to accepted letters and the asserted absences are stated clearly enough for direct evaluation."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The listed silences are pertinent, but the inference from omitted biography to a nonterrestrial setting needs genre and expectation comparison."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Pauline ancestry, birth, meal, brother, and execution references may indirectly supply terrestrial particularity.",
+            "decisiveQualification": "The move must distinguish absence of a narrated ministry from absence of all terrestrial implications."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly advances the central bridge concerning the absence of unambiguous terrestrial biography in accepted letters."
+            },
+            "representationalCharity": {
+              "value": 61,
+              "rationale": "It presents meaningful silence evidence but does not address the strongest indirect-marker interpretation."
+            },
+            "responsiveness": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (93 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "Carrier lists no pre-death meetings, disciple selection, ministry, miracles, exorcisms, or other earthly activity and contrasts these absences with revelation.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-contested-thirteen-letter-corpus",
+          "sectionId": "pauline-biography-and-corpus",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "The restriction of Pauline evidence to seven letters rests on a contestable authorship consensus, and the case for treating all thirteen letters as Pauline should be reconsidered.",
+          "sourceSpan": {
+            "startEvent": 474,
+            "endEvent": 511,
+            "excerpt": "that he is advocating for I just want to know for the record that I don't subscribe to his minimal Pauline to pin Paul down to just seven of the thirteen letters of his let me quote from Richard Currier from his book on historicity of Jesus he writes and I quote there's a great deal wrong with how a consensus has been reached on the day it's an authorship of all these Christian"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator hands the discussion to McLatchie, who identifies Carrier by name, cites Carrier's methodological concern, and states his contrary authorship position.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-corpus-scope"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-authentic-pauline-terrestrial-silence"
+            ],
+            "components": [
+              {
+                "componentId": "pro-contested-thirteen-letter-corpus-component-01",
+                "targetMoveId": "con-authentic-pauline-terrestrial-silence",
+                "text": "Whether the seven accepted letters themselves lack an unambiguous earthly ministry or terrestrial death location.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-contested-thirteen-letter-corpus-component-02",
+                "targetMoveId": "con-authentic-pauline-terrestrial-silence",
+                "text": "Whether restricting the evidentiary corpus to seven letters is methodologically justified.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move challenges corpus restriction but does not answer the decisive claim about the contents of the seven accepted letters; it contacts only a secondary methodological component."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The authorship challenge is recoverable, though the evidentiary standard for reconsidering all thirteen letters remains implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The call for reconsideration is moderate, but the quotation does not itself establish thirteen-letter authenticity."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A defensible critical consensus may still restrict secure Pauline evidence to seven letters.",
+            "decisiveQualification": "Carrier's quoted criticism of consensus formation does not itself authenticate all thirteen letters."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 61,
+              "rationale": "It relies mainly on Carrier's general criticism of consensus formation rather than representative authorship evidence."
+            },
+            "relevanceBurden": {
+              "value": 68,
+              "rationale": "The move directly supports the subsidiary corpus-scope bridge, though it does not complete the authorship case."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The move fairly identifies methodological contestability but does not confront this decisive distinction."
+            },
+            "responsiveness": {
+              "value": 70,
+              "rationale": "Within partial answers, it contacts the secondary corpus premise but not the decisive textual-silence component."
+            }
+          },
+          "evidenceBasis": "McLatchie rejects limiting Paul to seven letters and quotes Carrier's published concern about how the disputed-authorship consensus was reached.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-pauline-biographical-markers",
+          "sectionId": "pauline-biography-and-corpus",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "Paul's letters contain multiple historical markers for Jesus, including Davidic descent, birth from a woman under the law, teachings, brothers, followers, betrayal, a final meal, and crucifixion by rulers.",
+          "sourceSpan": {
+            "startEvent": 512,
+            "endEvent": 540,
+            "excerpt": "woman born under the law in Galatians 4:4 that he stood before Pontius Pilate and four 7213 take first Timothy to be written by Paul teachings about divorce in 1st Corinthians 7 verse 10 he is betrayed in 1st Corinthians 11:23 we have the last supper in 1st Corinthians 11 also he had brothers according to 1:19 and first corinthians 9 5 he had 12 special followers in 1st Corinthians 15 verse 5 he was crucified by the rulers"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "McLatchie continues his identified response and expressly introduces information he says can be extracted about Jesus's life from the Pauline epistles.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-pauline-biographical-markers"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-authentic-pauline-terrestrial-silence",
+              "con-pauline-mythic-realm-thesis"
+            ],
+            "components": [
+              {
+                "componentId": "pro-pauline-biographical-markers-component-01",
+                "targetMoveId": "con-authentic-pauline-terrestrial-silence",
+                "text": "Supplies Pauline references offered as counterexamples to alleged terrestrial silence.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-pauline-biographical-markers-component-02",
+                "targetMoveId": "con-pauline-mythic-realm-thesis",
+                "text": "Must show that these markers favor an earthly setting over a flesh-bearing celestial interpretation.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The list directly contests silence but mostly leaves interpretation and comparative force unstated."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The catalogue is clear, but it combines accepted and disputed letters without consistently qualifying their different evidentiary status."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The cumulative catalogue is probative, but some items permit nonbiographical readings and one expressly depends on disputed authorship."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The cited expressions may be compatible with a flesh-bearing celestial Jesus or later disputed letters.",
+            "decisiveQualification": "Compatibility alone does not show that ordinary terrestrial readings lack evidentiary force."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "Multiple markers can cumulatively answer silence, but the bridge from each reference to terrestrial biography is compressed."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "Specific passages are named, while authenticity, translation, and rival readings are largely undefended."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly supplies the historical particulars required by the central Pauline-biographical-markers bridge."
+            },
+            "representationalCharity": {
+              "value": 63,
+              "rationale": "It offers genuine counterevidence but omits the strongest rival interpretations."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It contacts the decisive silence claim with numerous examples but only partially answers their celestial reinterpretation."
+            }
+          },
+          "evidenceBasis": "McLatchie cites birth under law, Pilate, divorce teaching, betrayal, a final meal, brothers, twelve followers, and crucifixion by rulers.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-demonic-rulers-hidden-plan",
+          "sectionId": "rulers-and-crucifixion-realm",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "reply",
+          "proposition": "Paul's rulers of this age can be demonic powers, whose hostile motives and ignorance of God's concealed salvific plan fit the crucifixion passage better than obedient earthly authorities.",
+          "sourceSpan": {
+            "startEvent": 550,
+            "endEvent": 612,
+            "excerpt": "should obey the authorities Paul never has an apologetic in that section in Romans 13 to explain it well except for the rulers who killed Jesus obviously they were trying to thwart God's plan and so God had to hide the truth the cosmic truth of the death so that they wouldn't and so on there's an incongruity here but in in Paul's theology it doesn't make sense it's almost as if"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "McLatchie explicitly yields the cited passage to Carrier, whose ensuing uninterrupted turn analyzes the Greek terminology and contrasts possible agents of the crucifixion.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-demonic-rulers"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-pauline-biographical-markers",
+              "pro-contested-thirteen-letter-corpus"
+            ],
+            "components": [
+              {
+                "componentId": "con-demonic-rulers-hidden-plan-component-01",
+                "targetMoveId": "pro-pauline-biographical-markers",
+                "text": "Whether the rulers who crucified Jesus provide a secure human and terrestrial biographical marker.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-demonic-rulers-hidden-plan-component-02",
+                "targetMoveId": "pro-contested-thirteen-letter-corpus",
+                "text": "Whether expanding the Pauline corpus resolves the identity of the rulers in First Corinthians.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carrier identifies an alleged incongruity in the human-authority reading and states that hostile ignorant cosmic rulers better explain God's concealed plan."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The proposed demonic reading and its contrast with obedient earthly authorities are clearly recoverable and appropriately framed as an interpretation."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The theological incongruity is relevant, but it does not by itself exclude corrupt human rulers or mixed agency."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Paul can commend governing authority generally while condemning particular corrupt human rulers who crucified Jesus.",
+            "decisiveQualification": "Romans 13 need not imply that every earthly authority always understands or advances God's purposes."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (74 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central con bridge identifying the rulers as demonic powers."
+            },
+            "representationalCharity": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within diagnostic defeats, it expressly attacks the inference from rulers to human terrestrial execution and supplies the defeating consequence."
+            }
+          },
+          "evidenceBasis": "Carrier contrasts Romans 13 obedience with agents attempting to thwart a concealed cosmic plan and argues that this incongruity favors demonic rulers.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-heavenly-counterpart-crucifixion",
+          "sectionId": "rulers-and-crucifixion-realm",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "reply",
+          "proposition": "Ancient Jewish cosmology could place counterparts of earthly objects and practices in heavenly realms, making a celestial counterpart of crucifixion intelligible within that worldview.",
+          "sourceSpan": {
+            "startEvent": 621,
+            "endEvent": 643,
+            "excerpt": "ascension of isaiah as well that fir'd for every to every level of heaven including the lower upper firmament where satan and his demons reigned there were versions of everything so there's versions of gardens and castles and graveyards and things in every different level of heaven this is a standard Jewish cosmological view at the time so when it's not a crucifixion of course they're gonna use the the version of crucifixion that is a copy"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carrier answers the moderator's direct objection by invoking Hebrews and the Ascension of Isaiah during a clearly bounded uninterrupted response.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-heavenly-crucifixion-cosmology"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-pauline-biographical-markers"
+            ],
+            "components": [
+              {
+                "componentId": "con-heavenly-counterpart-crucifixion-component-01",
+                "targetMoveId": "pro-pauline-biographical-markers",
+                "text": "Whether crucifixion terminology necessarily locates the event on Earth among ordinary human practices.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly supplies a cosmological explanation for how an earthly mode of execution could have a heavenly counterpart, preserving the celestial thesis."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The counterpart claim is clear, although the precise ancient sources and extent of the copying principle remain compressed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "It plausibly establishes intelligibility, but “of course” overstates the evidentiary basis for a copied crucifixion."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Heavenly counterparts of some objects or rites do not entail a heavenly counterpart of a Roman execution method.",
+            "decisiveQualification": "A specific bridge from attested counterparts to celestial crucifixion is required."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "A heavenly copy principle makes celestial crucifixion intelligible, but why this specific practice is copied remains a material implicit bridge."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "Hebrews and Ascension of Isaiah are invoked generally, without quoted representative passages or a defended inference to crucifixion."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "The move directly advances the central heavenly-crucifixion-cosmology bridge."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The move asserts analogy without adequately handling this strongest limiting distinction."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within full answers, it explicitly contacts the inference from crucifixion terminology to terrestrial location."
+            }
+          },
+          "evidenceBasis": "Carrier invokes Jewish cosmological counterparts, Hebrews, and the Ascension of Isaiah, arguing that Satanic execution could copy earthly crucifixion.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-human-rulers-from-corinthian-context",
+          "sectionId": "rulers-and-crucifixion-realm",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "The surrounding contrast between divine wisdom and ordinary human wisdom indicates that the rulers who crucified Jesus in First Corinthians are human authorities rather than exclusively demonic forces.",
+          "sourceSpan": {
+            "startEvent": 649,
+            "endEvent": 740,
+            "excerpt": "rulers are not terror or contest the plural of Archon there again are not a terror to good conduct but to bad and so there in that context that word is talking about human authorities now and so the question we want to address is is it talking about human authorities in 1st Corinthians 2 or is it talking about spiritual or demonic forces so let's take a look at the surrounding"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator addresses McLatchie and he begins a sustained textual response, comparing Pauline usage and walking through the surrounding chapters before stating his conclusion.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-human-crucifying-rulers"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-demonic-rulers-hidden-plan",
+              "con-heavenly-counterpart-crucifixion"
+            ],
+            "components": [
+              {
+                "componentId": "pro-human-rulers-from-corinthian-context-component-01",
+                "targetMoveId": "con-demonic-rulers-hidden-plan",
+                "text": "Whether First Corinthians identifies the crucifying rulers as demonic rather than human authorities.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-human-rulers-from-corinthian-context-component-02",
+                "targetMoveId": "con-heavenly-counterpart-crucifixion",
+                "text": "Whether a heavenly-copy cosmology overrides the local human-wisdom contrast in First Corinthians.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "McLatchie directly answers the identity question through the surrounding contrast between God's wisdom and human worldly wisdom, also weakening the need for a heavenly setting."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The contextual claim and its conclusion about human authorities are stated with stable terms and a defined textual scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move argues contextual probability rather than necessity and acknowledges the interpretive question."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The rulers can denote demonic powers operating within Paul's cosmic theology.",
+            "decisiveQualification": "The immediate chapters repeatedly contrast divine wisdom with human sages, debaters, and worldly status."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central human-crucifying-rulers bridge at the top of its tier."
+            },
+            "representationalCharity": {
+              "value": 88,
+              "rationale": "The alternative is represented fairly and answered with relevant local context, though the cosmic vocabulary is not exhaustively treated."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within full answers, it explicitly engages the decisive contextual inference about the rulers' identity."
+            }
+          },
+          "evidenceBasis": "McLatchie examines First Corinthians 1–2, emphasizing sages, scribes, debaters, worldly wisdom, and the surrounding human social context.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-human-rulers-with-spiritual-participation",
+          "sectionId": "rulers-and-crucifixion-realm",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "The context of First Corinthians 2 concerns human authorities, so its rulers can be understood as human even if demonic forces also participated spiritually in the crucifixion.",
+          "sourceSpan": {
+            "startEvent": 877,
+            "endEvent": 912,
+            "excerpt": "concerns humans and so I think that the Archon or the or Conte spoken of there in verse 22 our human rulers and authorities he mentioned Romans 13 where it's speaks about rulers are not a terror to good conduct but but to bad and I think Paul is instructing us to submit ourselves to the governing authorities and rulers here on earth even if they are bad I mean Jesus says the render to Caesar what is Caesar's right I mean it it also"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly hands the exchange to Jonathan, whose sustained first-person response continues through the contextual conclusion.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-human-crucifying-rulers"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-demonic-rulers-hidden-plan",
+              "con-heavenly-counterpart-crucifixion"
+            ],
+            "components": [
+              {
+                "componentId": "pro-human-rulers-with-spiritual-participation-component-01",
+                "targetMoveId": "con-demonic-rulers-hidden-plan",
+                "text": "Whether demonic participation requires construing the named rulers as exclusively spiritual agents.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-human-rulers-with-spiritual-participation-component-02",
+                "targetMoveId": "con-heavenly-counterpart-crucifixion",
+                "text": "Whether spiritual participation requires relocating the crucifixion itself to a heavenly realm.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly distinguishes the grammatical identity of the rulers from possible spiritual participation, answering both exclusive-demonic identity and heavenly-location inferences."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Human identity, possible demonic participation, and terrestrial governing authority are carefully distinguished."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The qualified formulation matches the contextual support and avoids claiming that spiritual agency is absent."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Demonic forces may participate in or motivate the crucifixion.",
+            "decisiveQualification": "Such participation does not entail that Paul's grammatical rulers are nonhuman or that the event is celestial."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The mixed-agency distinction explicitly resolves the false choice between human rulers and spiritual participation."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central human-rulers bridge while answering the principal competing inference."
+            },
+            "representationalCharity": {
+              "value": 92,
+              "rationale": "The move preserves the strongest defensible spiritual-agency alternative while identifying its limited consequence."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within full answers, it expressly contacts the decisive inference and supplies a clear mixed-agency distinction."
+            }
+          },
+          "evidenceBasis": "McLatchie concludes the Corinthian context concerns humans, cites earthly governing authorities, and expressly allows that demonic forces could participate spiritually.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-james-cultic-brother-title",
+          "sectionId": "james-and-familial-language",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "reply",
+          "proposition": "Because Paul treats baptized Christians as the Lord's brethren, his title for James can identify a non-apostolic baptized Christian rather than a biological sibling of Jesus.",
+          "sourceSpan": {
+            "startEvent": 937,
+            "endEvent": 1026,
+            "excerpt": "know for a fact that Paul believed that all baptized Christians were brothers of the Lord Jesus is the firstborn of many brethren so when he's talking about brothers of the Lord does he mean just non apostolate Christian is that just the word for Christian that he uses at the time does he mean cultic brother or does he mean biological brother and once again it's unclear the way"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator addresses Richard by name, and the ensuing extended answer presents Carrier's book-based grammatical and contextual interpretation.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-cultic-brother-language"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-pauline-biographical-markers"
+            ],
+            "components": [
+              {
+                "componentId": "con-james-cultic-brother-title-component-01",
+                "targetMoveId": "pro-pauline-biographical-markers",
+                "text": "Whether references to James and brothers of the Lord provide unambiguous biological particularity.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Carrier directly supplies a cultic reading of the brother terminology and explains why the expression is ambiguous within Paul's baptismal kinship language."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction among apostle, ordinary Christian, cultic brother, and biological brother is expressly drawn."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Carrier concludes that the usage is unclear rather than asserting that the cultic interpretation is conclusively established."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The marked phrase brother of the Lord may identify Jesus's biological sibling rather than any baptized Christian.",
+            "decisiveQualification": "General Christian brotherhood does not automatically explain the marked title attached specifically to James."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 79,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (79 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary cultic-brother-language bridge with a specific Pauline rationale."
+            },
+            "representationalCharity": {
+              "value": 72,
+              "rationale": "The biological alternative is acknowledged, but its strongest grammatical distinctiveness is not adequately confronted."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "Within full answers, it explicitly contacts the decisive inference from brother language to biological siblinghood."
+            }
+          },
+          "evidenceBasis": "Carrier appeals to Paul's belief that baptized Christians are Jesus's brethren and asks whether James is a non-apostolic cultic brother rather than biological kin.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-biological-brothers-convergence",
+          "sectionId": "james-and-familial-language",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "The combined references to James, the brothers of the Lord, and Jesus's mother alongside his brothers support a biological rather than merely cultic relationship.",
+          "sourceSpan": {
+            "startEvent": 1033,
+            "endEvent": 1064,
+            "excerpt": "Lord and I do think he's speaking there just about general Christian's taking brother taking for themselves wives and also a.m. in Matthew's Gospel I think as in chapter 13 in chapter 26 we have references to Jesus brothers one of him mentioned is James and then also in the book of Acts in Chapter 1 Jesus mother is praying alongside the the brothers and the fact that they're mentioned alongside the mother suggests that they are biological"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator directs the biological-sibling question to Jonathan, and the answer advances his interpretation across Pauline, Gospel, and Acts references.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-familial-references"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-james-cultic-brother-title",
+              "con-authentic-pauline-terrestrial-silence"
+            ],
+            "components": [
+              {
+                "componentId": "pro-biological-brothers-convergence-component-01",
+                "targetMoveId": "con-james-cultic-brother-title",
+                "text": "Whether the brother terminology is better explained as cultic membership than biological kinship.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-biological-brothers-convergence-component-02",
+                "targetMoveId": "con-authentic-pauline-terrestrial-silence",
+                "text": "Whether familial references provide historical particularity for an earthly Jesus.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move answers the cultic reading by combining James with Gospel and Acts family groupings, though the later-source independence needed for convergence is not fully defended."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The biological inference is clear, but Pauline evidence and later narrative traditions are combined without an explicit independence qualification."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Mention beside Jesus's mother supports biological kinship, but later-source dependence limits what it establishes about Paul's usage."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Paul's usage may be cultic, while later narratives independently develop a biological family tradition.",
+            "decisiveQualification": "Later mother-and-brothers groupings do not by themselves determine the meaning of Paul's earlier phrase."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The convergence is coherent if the sources are evidentially linked, but that independence and transmission bridge remains material."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central familial-reference bridge, though part of the support comes from later sources."
+            },
+            "representationalCharity": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 95,
+              "rationale": "Within partial answers, it contacts the decisive biological-versus-cultic issue but compresses the independence objection."
+            }
+          },
+          "evidenceBasis": "McLatchie combines Paul's James and brothers language with Matthew's named brothers and Acts's grouping of Jesus's mother alongside the brothers.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-family-traditions-source-separation",
+          "sectionId": "james-and-familial-language",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "reply",
+          "proposition": "First Corinthians 9 remains compatible with cultic brethren, while later Gospel and Acts family traditions cannot resolve Paul's ambiguous usage because Paul shows no awareness of those stories.",
+          "sourceSpan": {
+            "startEvent": 1066,
+            "endEvent": 1105,
+            "excerpt": "it's unclear and then when you get to the other stuff when you talk about what's in the Gospels and stuff if we look at later legends for yes of course all kinds of later legends arose about the family of Jesus that doesn't help us understand what Paul thought because Paul doesn't show any awareness of these gospel stories do you think Poole doesn't show when it's of the gospel"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly returns to Richard, whose answer addresses both the Pauline passage and McLatchie's appeal to later narrative sources.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-later-source-independence"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-biological-brothers-convergence",
+              "pro-pauline-biographical-markers"
+            ],
+            "components": [
+              {
+                "componentId": "con-family-traditions-source-separation-component-01",
+                "targetMoveId": "pro-biological-brothers-convergence",
+                "text": "Whether later Gospel and Acts family traditions can determine the meaning of Paul's earlier ambiguous terminology.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-family-traditions-source-separation-component-02",
+                "targetMoveId": "pro-pauline-biographical-markers",
+                "text": "Whether First Corinthians 9 independently requires biological brothers.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carrier identifies the source-separation failure in the convergence argument and states that later legends cannot resolve Paul absent evidence that Paul knew those stories."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between Paul's usage and later narrative family traditions is clearly delimited."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Source separation is a strong limitation, though calling the later material legends assumes more than the excerpt demonstrates."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Later traditions might preserve authentic family information that clarifies Paul's compressed reference.",
+            "decisiveQualification": "Preservation remains possible even if direct Pauline awareness of the written Gospel stories is absent."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 84,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The ambiguity point is supported; the later-legend and nonawareness claims lack representative demonstration."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central later-source-independence bridge and attacks familial convergence."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The move identifies the independence issue but largely labels rather than tests this stronger alternative."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it explicitly identifies the independence defect and its consequence for the proposed convergence."
+            }
+          },
+          "evidenceBasis": "Carrier maintains that First Corinthians 9 remains unclear and that later Gospel family stories cannot establish Paul's meaning because Paul shows no awareness of them.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-acts-fictionalized-history",
+          "sectionId": "acts-reliability-and-companion-authorship",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "constructive",
+          "proposition": "Acts is an agenda-driven work of fictionalized history that may reshape source material so extensively that historical facts cannot reliably be separated from its narrative embellishments.",
+          "sourceSpan": {
+            "startEvent": 1135,
+            "endEvent": 1183,
+            "excerpt": "he's doing it in the way that a lot of fictional history got written at the time he's he's crafting stories to convey immoral points political points and points about the gospel that he's not if he's relying on historical sources at all really difficult to figure out what are the historical facts and what are the embellishments and changes that he's making to it and and to that"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator asks Richard for his account of Acts, and Carrier gives a sustained description of its author, aims, literary method, and possible source use.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-later-source-independence"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "This constructive move supplies the con route's general reliability challenge to Acts as an independent source for reconstructing Paul's beliefs."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conclusion is clear, but fictionalized history covers a broad range of source use and alteration that remains only partly specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "plausibility",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Carrier allows possible historical sources, but the broad difficulty claim receives little concrete demonstration in this move."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An agenda-driven ancient narrative can still preserve substantial, identifiable historical information.",
+            "decisiveQualification": "Literary purpose and embellishment do not entail wholesale unreliability."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly advances the central later-source-independence bridge concerning Acts."
+            },
+            "representationalCharity": {
+              "value": 63,
+              "rationale": "The move allows source use but does not explain criteria for preserving or rejecting particular facts."
+            },
+            "responsiveness": {
+              "value": 88,
+              "rationale": "Within constructive moves, it clearly establishes the literary-reliability issue, though it initially remains general."
+            }
+          },
+          "evidenceBasis": "Carrier characterizes Acts as moral, political, and theological fictionalized history whose possible source facts are difficult to separate from embellishment and change.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-acts-paul-undersigned-correspondence",
+          "sectionId": "acts-reliability-and-companion-authorship",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "Undesigned correspondences between Paul's letters and Acts support Acts's substantial historical accuracy and the identification of its author as Paul's traveling companion Luke.",
+          "sourceSpan": {
+            "startEvent": 1202,
+            "endEvent": 1264,
+            "excerpt": "substantial veracity of Acts and indeed that the author of Acts who I take to be Luke was a traveling companion of the Apostle Paul I know Richard carrier thinks that the book of Acts is largely historical fiction that it was written even in the second century and I I don't find that those positions at all plausible or tractable and let's take an example of how it relates to the letters"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator hands the question to Jonathan, who explicitly states his thesis and develops a detailed correspondence involving Timothy, Ephesus, Corinth, and Macedonia.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-companion-corroboration"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-acts-fictionalized-history",
+              "con-family-traditions-source-separation"
+            ],
+            "components": [
+              {
+                "componentId": "pro-acts-paul-undersigned-correspondence-component-01",
+                "targetMoveId": "con-acts-fictionalized-history",
+                "text": "Offers an undesigned correspondence between Acts and Paul's letters as evidence against pervasive fabrication.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-acts-paul-undersigned-correspondence-component-02",
+                "targetMoveId": "con-family-traditions-source-separation",
+                "text": "Establishes Acts' independence from Paul or the Gospel family tradition.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "It directly challenges Acts' unreliability but does not independently establish companion authorship or relevance to the family traditions."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The claimed correspondence and conclusion are clear, though substantial accuracy and companion authorship are distinct conclusions with an implicit bridge."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "One correspondence cannot by itself sustain substantial accuracy and companion authorship without dependence and base-rate analysis."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An author could use Paul's letters as source material and thereby produce correspondences without being a companion.",
+            "decisiveQualification": "The evidentiary force depends on the details being genuinely indirect rather than recoverable through literary use."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "An genuinely undesigned fit supports informed authorship, but the further inference to Luke and substantial veracity remains compressed."
+            },
+            "evidenceWarrant": {
+              "value": 79,
+              "rationale": "A detailed Timothy-Ephesus-Corinth-Macedonia example is offered, while independence and representativeness need fuller defense."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central companion-corroboration bridge."
+            },
+            "representationalCharity": {
+              "value": 61,
+              "rationale": "The move rejects Carrier's position and gives an example but does not adequately test dependence."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "A strong partial answer: one detailed correspondence contacts reliability, while the companion-authorship conclusion remains underbridged."
+            }
+          },
+          "evidenceBasis": "McLatchie presents a detailed fit between Paul's letters and Acts involving Timothy, Ephesus, Corinth, and Macedonia, then infers substantial accuracy and companion authorship.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-acts-pauline-contradictions",
+          "sectionId": "acts-reliability-and-companion-authorship",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "reply",
+          "proposition": "Acts contradicts Paul's chronology and mission claims concerning Judea, Arabia, and the Gentile mission, so source correspondences do not establish its reliability or companion authorship.",
+          "sourceSpan": {
+            "startEvent": 1286,
+            "endEvent": 1349,
+            "excerpt": "Paul as source material but he is wanting and contradicting them but I'll give you examples Paul himself tells us that he was unknown by face to anyone in Judea until years after his conversion axe has him already a famous person living in Judea from the beginning Paul says he went to Arabia for years immediately after his conversion acts completely erases his mission to Arabia"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator requests Richard's assessment, and Carrier answers continuously with methodological objections followed by several specific categories of contradiction and error.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-companion-corroboration"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-acts-paul-undersigned-correspondence"
+            ],
+            "components": [
+              {
+                "componentId": "con-acts-pauline-contradictions-component-01",
+                "targetMoveId": "pro-acts-paul-undersigned-correspondence",
+                "text": "Whether selected correspondences establish Acts's broad reliability or authorship by Paul's companion.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-acts-pauline-contradictions-component-02",
+                "targetMoveId": "pro-acts-paul-undersigned-correspondence",
+                "text": "Whether Acts contradicts Paul's own chronology concerning Judea and Arabia.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carrier expressly argues that correspondence is compatible with literary use of Paul and that specific contradictions defeat the inference to broad reliability or companion authorship."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The contradicted claims and the limited consequence of source correspondences are specifically delineated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Specific apparent conflicts warrant skepticism, though calling each a contradiction depends on chronology readings."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Acts may telescope events or remain substantially reliable despite localized discrepancies.",
+            "decisiveQualification": "A companion-author claim still must explain substantial divergences from Paul's own chronology and mission account."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The distinction between source access and reliable companion testimony directly defeats the overbroad inference from correspondence."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "It cites concrete Judea, Arabia, and mission discrepancies, though exact chronological exclusions are not fully demonstrated."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central companion-corroboration bridge at the top of its tier."
+            },
+            "representationalCharity": {
+              "value": 73,
+              "rationale": "The move supplies serious examples but does not fully distinguish contradiction from compression."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it identifies the invalid generalization and supplies concrete contrary cases and their consequence."
+            }
+          },
+          "evidenceBasis": "Carrier contrasts Acts with Paul's claims about being unknown in Judea, traveling to Arabia, and his Gentile mission, while allowing that Acts may use Pauline material.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-acts-telescoping-and-cumulative-fit",
+          "sectionId": "acts-reliability-and-companion-authorship",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "Acts can telescope Paul's Arabian interval within its reference to many days, while undesigned coincidences and difficult external details cumulatively weigh against wholesale literary fabrication.",
+          "sourceSpan": {
+            "startEvent": 1361,
+            "endEvent": 1440,
+            "excerpt": "many days has taken to refer to a three year span at that point so it doesn't necessarily I mean I think Luke here in Acts chapter 1 is telescoping it quite significantly and also about on the point that he made about the understand coincidence I mentioned in 1st Corinthians 4:16 and in acts 19 I don't think it helps his case at all to propose that that Luke is using Paul's epistles of source material because these are things which are undesigned"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Following the moderator's invitation for a response, Jonathan addresses Carrier's Galatians objection and then develops cumulative internal and external corroboration arguments.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-companion-corroboration"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-acts-pauline-contradictions",
+              "con-acts-fictionalized-history"
+            ],
+            "components": [
+              {
+                "componentId": "pro-acts-telescoping-and-cumulative-fit-component-01",
+                "targetMoveId": "con-acts-pauline-contradictions",
+                "text": "Whether Acts's many-days wording can accommodate Paul's Arabian interval rather than contradict it.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-acts-telescoping-and-cumulative-fit-component-02",
+                "targetMoveId": "con-acts-fictionalized-history",
+                "text": "Whether cumulative internal and external details are expected under wholesale literary fabrication.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-acts-telescoping-and-cumulative-fit-component-03",
+                "targetMoveId": "con-acts-pauline-contradictions",
+                "text": "Whether Acts contradicts Paul's Judean fame and Gentile-mission claims beyond the Arabian chronology.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move answers the Arabian example and gives cumulative contrary evidence, but it leaves Carrier's other specific Pauline contradictions substantially unanswered."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The telescoping proposal is clear and qualified, but “cumulative fit” ranges over details not fully rendered in the excerpt."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The many-days reconciliation is plausible, but cumulative claims about difficult external detail remain only briefly substantiated."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Acts may have used Pauline letters and still contradict Paul's chronology in several respects.",
+            "decisiveQualification": "Explaining the Arabian interval does not answer the Judean-fame and Gentile-mission discrepancies."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "Telescoping coherently reconciles the Arabian interval, while the cumulative inference depends on an underdeveloped independence premise."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central companion-corroboration bridge while answering one major contradiction."
+            },
+            "representationalCharity": {
+              "value": 71,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (72 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "Within partial answers, it contacts one decisive contradiction and the cumulative reliability issue but not the remaining contradictions."
+            }
+          },
+          "evidenceBasis": "McLatchie interprets many days as accommodating three years, defends the Timothy correspondence as undesigned, and appeals to cumulative difficult external details.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-interlocking-gospel-details",
+          "sectionId": "gospel-independence-and-corroboration",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "Interlocking incidental details across John, Luke, and Mark form undesigned coincidences that are difficult to explain if the Gospel narratives are fabricated.",
+          "sourceSpan": {
+            "startEvent": 1854,
+            "endEvent": 1947,
+            "excerpt": "these are extraneous details not found in any other gospel now if you over to John chapter 12 we learn that Philip is from a certain town called but Saida we also learned in John chapter 1 that Philips sorry that Andrew is from beside also mentions phillipine from the sited there as well in Luke's account at the feeding of the 5,000 miracle Luke chapter of 9 he mentions that he"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The moderator explicitly asks Jonathan for Gospel fingerprints of history, and the answer presents two extended undesigned-coincidence examples.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-gospel-coincidences"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-acts-fictionalized-history",
+              "con-family-traditions-source-separation"
+            ],
+            "components": [
+              {
+                "componentId": "pro-interlocking-gospel-details-component-01",
+                "targetMoveId": "con-acts-fictionalized-history",
+                "text": "Whether detailed narrative correspondences are more expected from historical information than broad literary fabrication.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-interlocking-gospel-details-component-02",
+                "targetMoveId": "con-family-traditions-source-separation",
+                "text": "Whether later Gospel narratives possess enough independence to corroborate historical information.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Although the earlier opposing moves concern later-source reliability generally rather than this exact Gospel example, the interlocking details directly supply relevant contrary evidence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "missing",
+            "rationale": "The examples are recoverable, but “undesigned” and “fabricated” are not operationalized and independence is assumed."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Difficulty under fabrication is asserted without comparing literary dependence, harmonization, or coincidence base rates."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A later author using earlier Gospels can deliberately repair, redistribute, or harmonize details.",
+            "decisiveQualification": "The examples must be improbable under known literary dependence, not merely coherent across texts."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "Dispersed explanatory fits can support independence, but the inference requires a bounded implicit premise excluding deliberate adaptation."
+            },
+            "evidenceWarrant": {
+              "value": 71,
+              "rationale": "Two extended textual examples are offered, while dependence and selection effects remain unaddressed."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary Gospel-coincidences bridge."
+            },
+            "representationalCharity": {
+              "value": 58,
+              "rationale": "The move presents the coincidences but does not test the strongest literary alternative."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "Within full answers, it contacts the decisive independence and fabrication concern through concrete cross-source examples."
+            }
+          },
+          "evidenceBasis": "McLatchie presents cross-narrative details involving Philip, Andrew, Bethsaida, and the feeding episode as mutually explanatory without explicit harmonization.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-john-synoptic-literary-dependence",
+          "sectionId": "gospel-independence-and-corroboration",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "reply",
+          "proposition": "John used and rewrote Synoptic source material, so apparent interlocking Gospel details can result from designed literary harmonization rather than independent historical information.",
+          "sourceSpan": {
+            "startEvent": 1948,
+            "endEvent": 1966,
+            "excerpt": "the most prominent ones in the past 20 plus years that John is using the other Gospels as a source material he's actually rewriting the gospel in his own words but he's using the other Gospels as his material so he's he's actually this is a design coincidence he's actually trying to clean up some things or make some things make sense or tell a story in a way that that he thinks"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The response follows McLatchie's examples at the explicit handoff, argues from Johannine scholarship, and directly labels the coincidence designed.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "pro-gospel-coincidences"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-interlocking-gospel-details"
+            ],
+            "components": [
+              {
+                "componentId": "con-john-synoptic-literary-dependence-component-01",
+                "targetMoveId": "pro-interlocking-gospel-details",
+                "text": "Whether apparent interlocking details require independent historical information rather than literary dependence.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Carrier expressly identifies dependence on Synoptic sources as an alternative production mechanism and states that this defeats the inference from coincidence to independence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The source-dependence mechanism is clear, although the precise scholarly model and passages demonstrating it are not specified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The move treats Johannine dependence and design as settled without presenting the passage-level warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Dispersed incidental details may reflect independent memory rather than deliberate harmonization.",
+            "decisiveQualification": "General Johannine dependence does not automatically explain every specific interlock or its indirect presentation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 64,
+              "rationale": "The move appeals to scholarship and a general rewriting model without representative passage-level demonstration."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly attacks the subsidiary Gospel-coincidences bridge."
+            },
+            "representationalCharity": {
+              "value": 76,
+              "rationale": "The move accurately states the independence claim but compresses the example-specific burden needed to defeat it fully."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "Within diagnostic defeats, it directly identifies the dependence premise and its consequence for the alleged coincidence."
+            }
+          },
+          "evidenceBasis": "Carrier states that John rewrites Synoptic source material and can deliberately clarify, alter, or harmonize inherited narrative details.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-dispersed-feeding-details",
+          "sectionId": "gospel-independence-and-corroboration",
+          "side": "pro",
+          "speaker": "Jonathan McLatchie",
+          "moveKind": "reply",
+          "proposition": "The feeding narrative's relevant facts are dispersed across John and Luke in a way that deliberate harmonization should have made explicit, favoring an undesigned coincidence.",
+          "sourceSpan": {
+            "startEvent": 1979,
+            "endEvent": 1995,
+            "excerpt": "of the feeding of the 5,000 in John chapter 6 John does not mention that the event took place in beside I he doesn't even give that detail in fact he doesn't even mention that Philip or Andrew a from beside in John chapter 6 he mentions that in John chapter 12 in John chapter 1 and then the other puzzle pieces in Luke chapter 9 where the event took place and beside us he would"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "After the moderator asks Jonathan why deliberate reconciliation is insufficient, this answer returns specifically to his feeding-of-the-five-thousand example.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-gospel-coincidences"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-john-synoptic-literary-dependence",
+              "con-family-traditions-source-separation"
+            ],
+            "components": [
+              {
+                "componentId": "pro-dispersed-feeding-details-component-01",
+                "targetMoveId": "con-john-synoptic-literary-dependence",
+                "text": "Whether deliberate harmonization plausibly explains why the relevant feeding details remain dispersed across distant passages.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-dispersed-feeding-details-component-02",
+                "targetMoveId": "con-family-traditions-source-separation",
+                "text": "Whether the sources' independence is established generally beyond this particular dispersed pattern.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move directly challenges the design explanation for the feeding example by stressing its dispersed and unstated character, but it does not independently settle John's broader source use."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The locations and missing explicit connection are clear, while the prediction about what harmonization should look like remains implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Dispersion reduces an obvious harmonization explanation, but literary adaptation need not make every reused association explicit."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "An adapting author can reuse characters and associations without explicitly restating their source locations.",
+            "decisiveQualification": "A complete design account should still explain why the explanatory clues are distributed across separate Johannine passages and Luke."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 78,
+              "rationale": "Dispersal is relevant to design, but the inference that design should be explicit is not fully warranted."
+            },
+            "evidenceWarrant": {
+              "value": 75,
+              "rationale": "Specific chapter locations support the factual pattern, while the probabilistic literary warrant remains compressed."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary Gospel-coincidences bridge with a focused example."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The move fairly targets the strongest dependence alternative with the example's distinctive distribution, though authorial selectivity remains possible."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "Within partial answers, it contacts the decisive example-specific design question but not the broader dependence evidence."
+            }
+          },
+          "evidenceBasis": "McLatchie notes that John 6 omits Bethsaida, while Philip and Andrew's Bethsaida association appears elsewhere in John and the location appears in Luke 9.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-character-selection-from-sources",
+          "sectionId": "gospel-independence-and-corroboration",
+          "side": "con",
+          "speaker": "Richard Carrier",
+          "moveKind": "reply",
+          "proposition": "An author adapting earlier Gospel material can select characters found in those sources without restating every associated location, naturally producing the alleged feeding-narrative coincidence.",
+          "sourceSpan": {
+            "startEvent": 1996,
+            "endEvent": 2011,
+            "excerpt": "he has to mention what city was in he's basing it on the source material that he has but Luke chapter 9 doesn't mention Jesus turning to Philip render getting involved in the replies and so you've got John John is like okay so I'm gonna have Jesus talk to some people who should I pick to be the people he talks to he looks at his source material he picks on people and he does it"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Carrier immediately answers McLatchie's hidden-coincidence challenge and explains the author's character selection through conscious use of sources.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "subsidiary",
+            "bridgeId": "pro-gospel-coincidences"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-dispersed-feeding-details",
+              "pro-interlocking-gospel-details"
+            ],
+            "components": [
+              {
+                "componentId": "con-character-selection-from-sources-component-01",
+                "targetMoveId": "pro-dispersed-feeding-details",
+                "text": "Whether dispersed character and location details are difficult to produce through conscious use of earlier Gospel sources.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-character-selection-from-sources-component-02",
+                "targetMoveId": "pro-interlocking-gospel-details",
+                "text": "Whether the broader set of alleged undesigned coincidences can all be explained by the same selection mechanism.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Carrier directly explains the focused feeding example through character selection from source material, but does not address the broader collection of interlocking examples."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The source-selection mechanism is intelligible, though the identity of the exact source and selection evidence remains implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "missing",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The mechanism is plausible, but the move asserts that this is what occurred without passage-level evidence sufficient to exclude coincidence or tradition."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The selected characters and dispersed geographical clues may reflect independent historical memory.",
+            "decisiveQualification": "A literary-use account must explain why these characters were selected and whether their relevant associations were available in the source."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 81,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 66,
+              "rationale": "The proposed authorial process is largely asserted and is not documented through the exact earlier-source details."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly attacks the subsidiary Gospel-coincidences bridge through the final focused example."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The move offers a plausible rival but treats the selection mechanism as sufficient without fully meeting the example-specific qualification."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "Within partial answers, it contacts the decisive focused example while leaving the wider cumulative case unanswered."
+            }
+          },
+          "evidenceBasis": "Carrier proposes that John consulted source material, chose familiar characters for Jesus to address, and need not repeat every associated location.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual requirements for the pro side.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion exists outside the scored moves and response links.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing the proposed residual changes no burden completion beyond the existing judgments."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual requirements for the con side.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No additional completion criterion exists outside the scored moves and response links.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No distinct residual consequence was identified.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "section weights"
+            ],
+            "counterfactual": "Removing the proposed residual changes no burden completion beyond the existing judgments."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "pauline-biography-and-corpus",
+          "title": "Pauline Biography, Silence, and Corpus Scope",
+          "weightPercent": 25,
+          "sides": {
+            "pro": {
+              "score": 73,
+              "moves": [
+                {
+                  "moveId": "pro-contested-thirteen-letter-corpus",
+                  "importance": 2,
+                  "score": 71
+                },
+                {
+                  "moveId": "pro-pauline-biographical-markers",
+                  "importance": 3,
+                  "score": 75
+                }
+              ]
+            },
+            "con": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "con-pauline-mythic-realm-thesis",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "con-authentic-pauline-terrestrial-silence",
+                  "importance": 3,
+                  "score": 83
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "rulers-and-crucifixion-realm",
+          "title": "The Rulers and the Realm of Crucifixion",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 90,
+              "moves": [
+                {
+                  "moveId": "pro-human-rulers-from-corinthian-context",
+                  "importance": 3,
+                  "score": 89
+                },
+                {
+                  "moveId": "pro-human-rulers-with-spiritual-participation",
+                  "importance": 3,
+                  "score": 91
+                }
+              ]
+            },
+            "con": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "con-demonic-rulers-hidden-plan",
+                  "importance": 3,
+                  "score": 83
+                },
+                {
+                  "moveId": "con-heavenly-counterpart-crucifixion",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "james-and-familial-language",
+          "title": "James and the Brothers of the Lord",
+          "weightPercent": 16,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-biological-brothers-convergence",
+                  "importance": 3,
+                  "score": 81
+                }
+              ]
+            },
+            "con": {
+              "score": 83,
+              "moves": [
+                {
+                  "moveId": "con-james-cultic-brother-title",
+                  "importance": 2,
+                  "score": 82
+                },
+                {
+                  "moveId": "con-family-traditions-source-separation",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "acts-reliability-and-companion-authorship",
+          "title": "Acts, Pauline Chronology, and Companion Authorship",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 78,
+              "moves": [
+                {
+                  "moveId": "pro-acts-paul-undersigned-correspondence",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-acts-telescoping-and-cumulative-fit",
+                  "importance": 3,
+                  "score": 78
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-acts-fictionalized-history",
+                  "importance": 3,
+                  "score": 78
+                },
+                {
+                  "moveId": "con-acts-pauline-contradictions",
+                  "importance": 3,
+                  "score": 89
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "gospel-independence-and-corroboration",
+          "title": "Gospel Independence and Undesigned Coincidences",
+          "weightPercent": 15,
+          "sides": {
+            "pro": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "pro-interlocking-gospel-details",
+                  "importance": 2,
+                  "score": 78
+                },
+                {
+                  "moveId": "pro-dispersed-feeding-details",
+                  "importance": 2,
+                  "score": 76
+                }
+              ]
+            },
+            "con": {
+              "score": 76,
+              "moves": [
+                {
+                  "moveId": "con-john-synoptic-literary-dependence",
+                  "importance": 2,
+                  "score": 79
+                },
+                {
+                  "moveId": "con-character-selection-from-sources",
+                  "importance": 2,
+                  "score": 73
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 79.72,
+          "burdenCompletionAdjustment": 0,
+          "score": 80
+        },
+        "con": {
+          "weightedSectionMean": 82.7,
+          "burdenCompletionAdjustment": 0,
+          "score": 83
+        }
+      },
+      "winner": "con",
+      "winningMargin": 3
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 19,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 111738,
+  "proposedAdapterSha256": "fedafe0884f49f8f002a6ab42c1687cc5550a65cccbcb98f4ed7edd9e695bf0f",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "132",
+    "sections": 5,
+    "moves": 19,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-05-single-deterministic-score-pass",
+    "adapterSha256": "fedafe0884f49f8f002a6ab42c1687cc5550a65cccbcb98f4ed7edd9e695bf0f",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
