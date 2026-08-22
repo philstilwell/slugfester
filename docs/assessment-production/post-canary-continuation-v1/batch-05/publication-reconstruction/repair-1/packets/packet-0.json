@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-64-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-debate-64-publication-repair-1",
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "64",
+  "debateId": "pine-watkins-god-existence-2020",
+  "repairType": "representative-quote-exactness-and-critique-word-boundary",
+  "immutableBaseOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/outputs/debate-64.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/packets/debate-64.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "representativeQuotes.con.text",
+      "moveProse.con-first-cause-identification-gap.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "quoteTargetWords": [
+      6,
+      14
+    ],
+    "quoteAcceptanceWords": [
+      3,
+      18
+    ],
+    "quoteMustBeExactEligibleSourceSubstring": true,
+    "critiqueLabels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "critiqueTargetWords": [
+      112,
+      118
+    ],
+    "critiqueAcceptanceWords": [
+      105,
+      130
+    ],
+    "critiqueAcceptanceMinimumCharacters": 880,
+    "critiqueExactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "unexpectedCJKHangulKanaAndReplacementCharactersRejected": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true
+  },
+  "corrections": [
+    {
+      "field": "representativeQuotes.con.text",
+      "repairType": "representative-quote",
+      "side": "con",
+      "sourceMoveId": "con-quantifier-shift-in-thomistic-ways",
+      "originalText": "each student having a counselor with one counselor for all",
+      "originalContext": "Watkins uses the counselor analogy to distinguish a separate terminus for each causal chain from one universal terminus.",
+      "quoteEligible": true,
+      "sourceExcerpt": "doing that but um per se chains in each of the ways commit um the quantifier shift fallacy because just as it doesn't follow that there's a single unique counselor for all students from the fact that for each such student he or she has a counselor it likewise doesn't follow that there's a first cause of all chains of changes from the fact that for each such chain it has a first",
+      "sourceSpan": {
+        "startEvent": 1392,
+        "endEvent": 1469,
+        "startMs": 2573200,
+        "endMs": 2755520
+      },
+      "defect": "the original text is a paraphrase rather than an exact source substring"
+    },
+    {
+      "field": "moveProse.con-first-cause-identification-gap.critique",
+      "repairType": "critique",
+      "moveId": "con-first-cause-identification-gap",
+      "originalCritique": "Strongest feature: The move sharply separates establishing a causal ground from identifying that ground as perfectly good and worthy of worship, thereby exposing a central burden that cannot be satisfied by causal termination alone. Principal limitation: It functions principally as a demanding undercut rather than a positive demonstration that the missing attributes cannot be derived through subsequent arguments from actuality, simplicity, intellect, goodness, or teleology. Live burden: The affirmative must explicitly bridge from sustaining cause to the attributes required by classical theism, while the negative must evaluate those additional derivations rather than treating their absence from one causal inference as permanent failure. Locked score: The very strong band reflects precise limitation, excellent relevance, disciplined calibration, and fair characterization of the argument's reach, without overstating the identification gap as an impossibility proof.",
+      "originalWords": 131,
+      "originalCharacters": 976,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-first-cause-identification-gap",
+        "sectionId": "causal-dependence-and-divine-identification",
+        "side": "con",
+        "speaker": "Ben Watkins",
+        "moveKind": "reply",
+        "proposition": "The Thomistic causal arguments do not establish a perfectly good or worship-worthy being, so further argument is required to bridge from a first cause to God.",
+        "importance": 3,
+        "finalScore": 92,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "47:03",
+        "sourceSpan": {
+          "startEvent": 1496,
+          "endEvent": 1507,
+          "startMs": 2823520,
+          "endMs": 2855680
+        },
+        "sourceExcerpt": "now friar gregory mentioned i think the second gap or at least alluded to it in that these arguments don't get us to a being that is perfectly good so these arguments are entirely compatible with a being that is not worthy of our worship and so if that's the case we're going to need further argumentation to fill this gap um",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 62,
+          "characterCount": 325
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-causal-inference-gaps"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-act-potency-ground"
+          ],
+          "components": [
+            {
+              "componentId": "con-first-cause-identification-gap-component-01",
+              "targetMoveId": "pro-act-potency-ground",
+              "text": "Whether an actuality grounding causal dependence has thereby been identified as perfectly good and worthy of worship.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly identifies the missing inference from a causal ground to perfect goodness and worship-worthiness and states that further argument is required.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "It explicitly contacts and diagnoses a route-completion gap, although it does not challenge the prior causal-ground conclusion itself."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts and diagnoses a route-completion gap, although it does not challenge the prior causal-ground conclusion itself."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The limited conclusion is explicit: the cited causal arguments alone do not establish perfect goodness or worship-worthiness."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The demand for an additional bridge is appropriately restricted to what the causal arguments have not themselves established."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The Thomistic case may contain later arguments deriving goodness and other divine attributes.",
+          "decisiveQualification": "The move claims only that those further derivations are required and are not supplied by the causal conclusion alone."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central causal-inference bridge at the source-to-good-God identification step."
+          },
+          "representationalCharity": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt states that the arguments remain compatible with a being not worthy of worship and therefore need further argument.",
+        "assessmentConfidence": "high"
+      },
+      "defect": "the original critique contains one word above the 130-word acceptance maximum"
+    }
+  ]
+}
