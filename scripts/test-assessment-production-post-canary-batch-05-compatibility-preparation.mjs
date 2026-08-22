@@ -81,7 +81,7 @@ assert.equal(
 );
 assert.equal(
   preparation.proposedValidatorRoute.unchangedBehavior.length,
-  8
+  9
 );
 assert.equal(preparation.stagedExecutionPlan[1].passLimit, 1);
 assert.equal(preparation.stagedExecutionPlan[1].rerunsAllowed, false);

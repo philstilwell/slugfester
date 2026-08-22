@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-preparation-validation-correction-2-diagnosis",
+  "status": "frozen-batch-05-compatibility-preparation-correction-1-analysis-hash-conflict-diagnosed",
+  "diagnosedAt": "2026-08-22T15:23:38.000Z",
+  "checkpointCommit": "298770cc43848afa8a7eab525986b66eaef56aea",
+  "preservedFailure": {
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-1/execution.json",
+      "sha256": "eb6928e5810c609df5007ed3fe5813269eaaa3374025716efdc060f2a2342f34"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-1/analysis.json",
+      "sha256": "2d539287f46da864effcc83149ee4044cc06b1ff2dee34909886567d03b68684"
+    },
+    "failedCommand": "/opt/homebrew/Cellar/node/25.9.0_3/bin/node scripts/test-assessment-production-post-canary-batch-05-compatibility-preparation.mjs",
+    "exitCode": 1,
+    "attempt": 1,
+    "retries": 0,
+    "reruns": 0
+  },
+  "failure": {
+    "category": "deterministic-preparation-analysis-authenticated-hash-stale-after-correction-1",
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/analysis.json#/preparation/sha256",
+    "observed": "79079f61bc4c800092017a3c21fa2e8b352f379b2ce85090abb5e6ada0638efd",
+    "expected": "51d9ecce99e62dc984fc97be35cc431239ae7bddb2be25ffba22713d4f551ea0"
+  },
+  "finding": "Correction-1 wrote the exact frozen test and corrected preparation manifest. The preparation test then failed only because the immutable preparation analysis still authenticated the pre-correction manifest hash.",
+  "permittedCorrection": "Replace only production-compatibility/analysis.json preparation.sha256 with the authenticated hash of the already-corrected preparation manifest.",
+  "protectedInputsChanged": false,
+  "modelContexts": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}
