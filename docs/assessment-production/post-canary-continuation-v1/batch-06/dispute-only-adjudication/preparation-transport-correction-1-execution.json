@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-adjudication-preparation-transport-correction-1-execution",
+  "protocolId": "assessment-production-post-canary-batch-06-dispute-only-adjudication",
+  "status": "passed-batch-06-adjudication-400000-byte-transport-correction-1-preview",
+  "executedAt": "2026-08-22T23:40:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "correctionNumber": 1,
+  "stagingOnly": true,
+  "correctionPassesAttempted": 1,
+  "correctionPassesPassed": 1,
+  "contexts": 10,
+  "disputedMoves": 197,
+  "candidateSelections": 609,
+  "audioVerifiedMoves": 2,
+  "maximumCopiedInputBytes": 382133,
+  "correctedCopiedInputCeilingBytes": 400000,
+  "headroomBytes": 17867,
+  "packetWrites": 0,
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "retries": 0,
+  "reruns": 0,
+  "scoresDerived": 0,
+  "productionMutations": 0,
+  "directIncrementalCostUsd": 0,
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/dispute-only-adjudication/preparation-transport-correction-1-plan.json",
+    "sha256": "c78b773a8dc014adc1af83af95996796e6768b56f35899d398e613794204bbd2"
+  },
+  "correctedSourceHashes": {
+    "scripts/build-assessment-production-post-canary-batch-06-dispute-adjudication-packets.mjs": "fe2b437ee46590de6b0ef27c3215e1be893b818e74b2fc70262370cab24f4542",
+    "scripts/preregister-assessment-production-post-canary-batch-06-dispute-adjudication.mjs": "f88aa373f51c44325721ce480ae487c22923730bf69c8e1c6af939e618e5be6e",
+    "scripts/test-assessment-production-post-canary-batch-06-dispute-adjudication-packets.mjs": "15df8b70327b882d6a8f18baeb374b464afc71f724bf025fe34ce6e0e7e0cb77"
+  },
+  "nextAuthorizedAction": "resume-batch-06-standing-authorization-with-adjudication-packet-preparation"
+}
