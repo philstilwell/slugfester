@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-06-inventory-preparation-recovery-1",
+  "status": "batch-06-inventory-preparation-guide-correction-frozen-not-executed",
+  "frozenAt": "2026-08-22T20:42:00.000Z",
+  "recoveryLevel": 1,
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-recovery-1/diagnosis.json",
+  "correction": {
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-recovery-1/proposed-candidate-sharded-inventory-guide.md",
+    "sourceSha256": "85b4e01157b0e0299a0ac482b692ddf9260dff7f91fd444665923491d247cb51",
+    "target": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+    "targetMustBeAbsentBeforeExecution": true,
+    "writeMode": "byte-for-byte-copy",
+    "writesMaximum": 1
+  },
+  "authenticatedHarness": {
+    "scripts/prepare-assessment-production-post-canary-batch-06-inventory.mjs": "d9cd7edafe938158db741bc3c84efc90be7815ebfb426a3cb28321a830555996",
+    "scripts/run-assessment-production-post-canary-batch-06-inventory-plans.mjs": "bfdf6e5f564c4569f6404fa2a2234ec4253d906f4f1fb060b52a789d62a8817b",
+    "scripts/prepare-assessment-production-post-canary-batch-06-inventory-side-packets.mjs": "0d38439f4361e1e62c19e3640c04537e63ade7fd910fabe1b0284097b5e7fdff",
+    "scripts/activate-assessment-production-post-canary-batch-06-inventory-side-selectors.mjs": "dcb983f8483433fb216ab0dd47949aa2bfea6c28daf35a916596c31153ecdcec",
+    "scripts/run-assessment-production-post-canary-batch-06-inventory-side-selectors.mjs": "c63177895c72c2fbbc10202d1efc546a50e450e9372b620617842c878ee33cd6",
+    "scripts/analyze-assessment-production-post-canary-batch-06-inventory-side-selectors.mjs": "0c3ec0006d8ac335c7ef8621670002e35c44dbc74b5fb8a58cfada802ebdde03"
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "recursiveCorrectionsUsed": 0,
+    "previewValidationPasses": 1,
+    "models": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "protectedEvidence": {
+    "discoveryOutputsChanged": false,
+    "candidateBundlesChanged": false,
+    "sourcePacketsChanged": false,
+    "scoresDerived": false,
+    "productionMutations": false
+  },
+  "nextAction": "activate-and-execute-this-guide-correction-once"
+}
