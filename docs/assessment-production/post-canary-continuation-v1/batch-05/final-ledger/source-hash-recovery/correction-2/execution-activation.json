@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-final-ledger-second-validation-correction-activation",
+  "protocolId": "assessment-production-post-canary-batch-05-adjudicated-consensus",
+  "status": "frozen-active-for-one-test-expectation-and-manifest-hash-correction",
+  "preparedAt": "2026-08-22T04:54:38.000Z",
+  "checkpointCommit": "11362d4a34128c424b1afedfcf60e83c0f0c531a",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "userAuthorization": {
+    "instruction": "I approve/authorize the next step, interpreted as the exact one-time recursive Batch 5 final-ledger test-harness recovery quoted in the preceding assistant response.",
+    "directIncrementalCostUsdMaximum": 0,
+    "correctedGateExecutionsAuthorized": 1,
+    "retriesMaximum": 0,
+    "ledgerAssemblyRerunsMaximum": 0,
+    "modelContextsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "scorePassesMaximum": 0
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/second-validation-failure-diagnosis.json",
+    "sha256": "0f1aca4fd6a5635f5d3ba8f04b10cc04736b34f04aae211db7cfdb697bea70ea"
+  },
+  "correctionTool": {
+    "path": "scripts/assessment-production-post-canary-batch-05-final-ledger-second-validation-recovery.mjs",
+    "sha256": "21e852b15b0de50d7a25f038d36c11f69f9c48a1c06033c5ed7cf5303fac7064"
+  },
+  "testCorrection": {
+    "path": "scripts/test-assessment-production-post-canary-batch-05-final-ledger.mjs",
+    "preimageSha256": "00e00ceacc4e894669e95eaf4fcd762544bc3df40fa88910799b6c2387a2a2e1",
+    "proposedSha256": "a1be39190636707792ea2577f491dd8d9a2f524dd884e4484c05115ce8553532",
+    "exactOldValue": 9,
+    "exactNewValue": 10,
+    "semanticField": "accepted-adjudication-outputs-without-correction expected population",
+    "changedLinesMaximum": 1
+  },
+  "manifestCorrection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/final-ledger-manifest.json",
+    "preimageSha256": "5b6cd1e975faef97fa8ac87586381d8f73b9b76cebe9664067e0adb33bf009b9",
+    "proposedSha256": "9640c2692d5692a80458d89d097ed8d70c65eb4b17f8550d7c1f236fcf2524f6",
+    "jsonPointer": "/sourceHashes/scripts~1test-assessment-production-post-canary-batch-05-final-ledger.mjs",
+    "exactOldValue": "00e00ceacc4e894669e95eaf4fcd762544bc3df40fa88910799b6c2387a2a2e1",
+    "exactNewValue": "a1be39190636707792ea2577f491dd8d9a2f524dd884e4484c05115ce8553532",
+    "changedFieldsMaximum": 1
+  },
+  "protectedArtifacts": {
+    "finalLedger": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/final-ledger.json",
+      "sha256": "82133511e09ca1bc7e637795c7f072633f3ca2a88a32ffeb1d12a15e0741993f"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/analysis.json",
+      "sha256": "87e15bc5d1509655a5e989607e09a83732278267101d55fdfcafc14ae7774a4c"
+    }
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrectionsAfterThis": 0,
+    "correctedFinalLedgerTests": 1,
+    "fullCohortReplayInsideCorrectedTest": true,
+    "ledgerAssemblyReruns": 0
+  },
+  "mutations": {
+    "files": [
+      "scripts/test-assessment-production-post-canary-batch-05-final-ledger.mjs",
+      "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/final-ledger-manifest.json"
+    ],
+    "testExpectationLines": 1,
+    "manifestHashFields": 1,
+    "ledgerFiles": 0,
+    "analysisFiles": 0,
+    "evidenceFiles": 0,
+    "adjudicationFiles": 0,
+    "scoreFiles": 0
+  },
+  "outputs": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/correction-2/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/correction-2/execution.json"
+  },
+  "nextAction": "execute-one-correction-and-one-corrected-final-ledger-test",
+  "activatedAt": "2026-08-22T04:54:52.000Z",
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/correction-2/correction-plan.json",
+    "sha256": "d539e4404eacbb0e8eee4bd23748258ed656eb8f52444155eb811d61c1b421f9"
+  },
+  "authorization": {
+    "testCorrection": true,
+    "manifestHashCorrection": true,
+    "correctedFinalLedgerTest": true,
+    "fullCohortReplay": true,
+    "ledgerAssemblyRerun": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "scoreDerivation": false
+  }
+}
