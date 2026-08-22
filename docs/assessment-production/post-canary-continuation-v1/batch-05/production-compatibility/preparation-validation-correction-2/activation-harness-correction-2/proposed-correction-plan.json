@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-plan",
+  "status": "frozen-batch-05-compatibility-preparation-correction-2-prepared",
+  "frozenAt": "2026-08-22T15:23:38.000Z",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/diagnosis.json",
+    "sha256": "936ffe08ed6db640005cf82bd063c995978d207f8de337c2f674a88956ac25d0"
+  },
+  "correctionScope": {
+    "target": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/analysis.json",
+    "jsonPointer": "/preparation/sha256",
+    "oldSha256": "79079f61bc4c800092017a3c21fa2e8b352f379b2ce85090abb5e6ada0638efd",
+    "newSha256": "51d9ecce99e62dc984fc97be35cc431239ae7bddb2be25ffba22713d4f551ea0",
+    "writableFields": 1,
+    "allOtherAnalysisFieldsPreserved": true,
+    "preparationManifestPreserved": true,
+    "preparationTestPreserved": true,
+    "correction1RecordsPreserved": true
+  },
+  "proposed": {
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/proposed-analysis.json",
+      "sha256": "c4d52daefefe46dae0a7e1e8e45a5600081024738cf87d74468b0f7903826cf7",
+      "bytes": 3763
+    }
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-manifest.json": "51d9ecce99e62dc984fc97be35cc431239ae7bddb2be25ffba22713d4f551ea0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/analysis.json": "8f7ce39ae4706566d9a1799006eabe4fbe430a28230c6e8c4c209da00d36dd0b",
+    "scripts/test-assessment-production-post-canary-batch-05-compatibility-preparation.mjs": "7e2ca37a29348ab1a7630c9bb55b24f76bb54256ebc3bc239a74b4ae6fb5ccef",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-1/execution-activation.json": "adb927ef447aabbcaf3d2122bdbc2adfc9853eeba3d7affb42a530b9486e3f30",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-1/execution.json": "eb6928e5810c609df5007ed3fe5813269eaaa3374025716efdc060f2a2342f34",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-1/analysis.json": "2d539287f46da864effcc83149ee4044cc06b1ff2dee34909886567d03b68684",
+    "scripts/prepare-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs": "50b7258c15fa07d722c1675401febc88411c5ac56b0d38c87a0bc5ff13d918d2",
+    "scripts/activate-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs": "b861823d590b10456346a125f66fea0765a76f8388731310ed2dfd2ef5fc09d9",
+    "scripts/run-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs": "496e435e1758a33e7acfc3413f5f7a665f3cb39e5a9df678124d9c125631b34b"
+  },
+  "executionPolicy": {
+    "correctedValidationPassesMaximum": 1,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "artifacts": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/analysis.json"
+  },
+  "authorization": {
+    "recursiveDeterministicHarnessCorrection": true,
+    "correctedValidationPass": false,
+    "compatibilityActivation": false,
+    "compatibilityExecution": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "activate-one-batch-05-compatibility-preparation-correction-2-validation-pass"
+}
