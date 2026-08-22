@@ -1,0 +1,2583 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-reconstruction",
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "productionCanary": false,
+  "stagingOnly": true,
+  "metadata": {
+    "title": "Bart Ehrman vs Robert Price: Did Jesus Exist?",
+    "label": "Historical Jesus, mythicism, and textual evidence",
+    "date": "2026-08-23",
+    "duration": "2 hr 34 min",
+    "youtubeUrl": "https://www.youtube.com/watch?v=GzjYmpwbHEA",
+    "motion": "Did a first-century Jewish preacher named Jesus exist behind the Christian traditions, or did Christianity develop from mythic and scriptural materials without such a person?",
+    "sourceNote": "Assessment based exclusively on the complete locally cached YouTube caption transcript and timestamped events (transcript SHA-256 6ef1c455e378cc1edb2dc687b3cfbdcc64814c9ed0f46f6a5ca73b12e6545017). Required below-high-confidence audio checks were completed before adjudication; representative quotations must be exact strings from quote-eligible locked source spans.",
+    "scoringNote": "Scores are AI-generated estimates of argumentative performance under the locked adjudicated-consensus workflow. Repository code calculated every move, section, and overall result once, only after two isolated judgments, required audio review, and disputed-field adjudication closed."
+  },
+  "sides": {
+    "pro": {
+      "name": "Historical Jesus",
+      "speaker": "Bart Ehrman",
+      "color": "teal"
+    },
+    "con": {
+      "name": "Jesus mythicism",
+      "speaker": "Robert Price",
+      "color": "coral"
+    }
+  },
+  "routes": [
+    {
+      "routeId": "pro-historicity-convergent-evidence",
+      "side": "pro",
+      "description": "Establish that a first-century Jewish preacher existed behind the Christian traditions by combining early Pauline testimony, multiple source traditions, historically plausible context, and the distinction between legendary development and personal nonexistence.",
+      "successCriteria": "The route succeeds if independent and comparatively early evidence is more probable given an earthly Jesus than a wholly mythical origin, while source criticism can reject legendary details without eliminating the underlying person.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-historical-person",
+        "tier": "motion",
+        "description": "Show that the cumulative source pattern makes a historical Jewish person behind the traditions more probable than an origin without such a person."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-early-pauline-anchor",
+          "tier": "central",
+          "description": "Establish that early Pauline material refers to an earthly Jewish Jesus and connects Paul with people represented as Jesus's brother and disciple."
+        },
+        {
+          "bridgeId": "pro-central-source-attestation",
+          "tier": "central",
+          "description": "Establish that multiple comparatively early traditions provide historically significant attestation rather than merely repeating one late narrative."
+        },
+        {
+          "bridgeId": "pro-central-crucified-messiah",
+          "tier": "central",
+          "description": "Explain why proclamation of a crucified Messiah is more expected as a response to an actual execution than as an invention from prevailing Jewish expectations."
+        },
+        {
+          "bridgeId": "pro-central-legend-person-distinction",
+          "tier": "central",
+          "description": "Show that mythic, miraculous, or scripturally patterned accretions can surround a person whose existence remains historically recoverable."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-context-and-chronology",
+          "tier": "subsidiary",
+          "description": "Prefer explanations grounded in first-century Jewish and Roman conditions over proposed analogies whose relevant evidence is culturally remote or later."
+        },
+        {
+          "bridgeId": "pro-subsidiary-probabilistic-method",
+          "tier": "subsidiary",
+          "description": "Apply comparative historical probability through source proximity, independence, contextual fit, and explanatory economy."
+        }
+      ]
+    },
+    {
+      "routeId": "con-mythic-scriptural-origin",
+      "side": "con",
+      "description": "Establish that Christianity can be explained without a recoverable first-century preacher by challenging the independence, authenticity, and terrestrial meaning of the sources while offering celestial, scriptural, and literary pathways for the development of Jesus traditions.",
+      "successCriteria": "The route succeeds if purported historical anchors remain dependent, ambiguous, interpolated, or methodologically circular and the emergence of the exalted Christ is at least as well explained by mythic and scriptural development as by an ordinary founder.",
+      "motionBridge": {
+        "bridgeId": "con-motion-no-historical-founder-required",
+        "tier": "motion",
+        "description": "Show that the surviving evidence does not require a historical preacher and remains compatible with Christianity developing without such a person."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-pauline-celestial-origin",
+          "tier": "central",
+          "description": "Interpret the earliest Pauline Christ as accessible through revelation and scripture and as compatible with a celestial death followed by later historicization."
+        },
+        {
+          "bridgeId": "con-central-source-dependence",
+          "tier": "central",
+          "description": "Show that Gospel sources, oral traditions, and external notices do not constitute securely independent attestations of an underlying person."
+        },
+        {
+          "bridgeId": "con-central-literary-mythic-development",
+          "tier": "central",
+          "description": "Provide a plausible pathway from Jewish divine, scriptural, or mythic materials to terrestrial narratives about Jesus."
+        },
+        {
+          "bridgeId": "con-central-founder-insufficiency",
+          "tier": "central",
+          "description": "Show that positing an ordinary teacher does not by itself explain the emergence and character of the exalted miracle-working Christ."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-textual-uncertainty",
+          "tier": "subsidiary",
+          "description": "Preserve material uncertainty about historicizing passages through interpolation arguments, manuscript gaps, and disputed authorship."
+        },
+        {
+          "bridgeId": "con-subsidiary-reconstruction-limits",
+          "tier": "subsidiary",
+          "description": "Challenge historical reconstructions whose chronology, narrative anchors, or organizing paradigms presuppose the person they are meant to establish."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "historical-method-and-burden",
+      "title": "Historical Method and Comparative Burden",
+      "weightPercent": 15,
+      "rationale": "Defines the probability standard for the motion and tests how source proximity, independence, background knowledge, and competing explanatory paradigms bear on existence.",
+      "timebox": "8:36–145:27",
+      "score": {
+        "pro": 89,
+        "con": 76
+      },
+      "displayRows": [
+        {
+          "pro": "pro-method-motion-position",
+          "con": "con-method-chronology-presupposition"
+        },
+        {
+          "pro": "pro-comparative-historical-probability",
+          "con": "con-method-rival-paradigms"
+        }
+      ]
+    },
+    {
+      "sectionId": "pauline-jesus-and-textual-foundations",
+      "title": "Pauline Jesus and Textual Foundations",
+      "weightPercent": 25,
+      "rationale": "Addresses the earliest principal evidence, including earthly or celestial reference, biographical silence, revelation, associates, interpolation, authorship, and textual authenticity.",
+      "timebox": "18:05–61:51",
+      "score": {
+        "pro": 86,
+        "con": 85
+      },
+      "displayRows": [
+        {
+          "pro": "pro-paul-earthly-jewish-jesus",
+          "con": "con-pauline-celestial-archons"
+        },
+        {
+          "pro": "pro-paul-knew-james-and-peter",
+          "con": "con-pauline-revelatory-sayings"
+        }
+      ]
+    },
+    {
+      "sectionId": "gospel-traditions-and-historical-recovery",
+      "title": "Gospel Traditions and Historical Recovery",
+      "weightPercent": 20,
+      "rationale": "Tests whether multiple Gospel traditions preserve recoverable information about a person or instead reflect dependent literary, scriptural, and legendary construction.",
+      "timebox": "13:26–142:33",
+      "score": {
+        "pro": 82,
+        "con": 85
+      },
+      "displayRows": [
+        {
+          "pro": "pro-gospel-independent-early-traditions",
+          "con": "con-gospel-hypothetical-sources"
+        },
+        {
+          "pro": "pro-critical-tradition-recovery",
+          "con": "con-gospel-defective-historical-anchors"
+        }
+      ]
+    },
+    {
+      "sectionId": "external-attestation-and-chronology",
+      "title": "External Attestation and Chronology",
+      "weightPercent": 15,
+      "rationale": "Examines whether non-Christian notices, ancient critics, oral transmission, and proposed early sources independently anchor Jesus or merely attest later Christian claims.",
+      "timebox": "44:42–77:10",
+      "score": {
+        "pro": 85,
+        "con": 80
+      },
+      "displayRows": [
+        {
+          "pro": "pro-ancient-critics-earthly-jesus",
+          "con": "con-external-hearsay-attestation"
+        },
+        {
+          "pro": "pro-late-gnostic-chronology",
+          "con": "con-external-josephus-interpolation"
+        }
+      ]
+    },
+    {
+      "sectionId": "origins-context-and-crucified-messiah",
+      "title": "Movement Origins, Jewish Context, and the Crucified Messiah",
+      "weightPercent": 15,
+      "rationale": "Compares an executed Jewish founder followed by resurrection belief with celestial, theophanic, or scriptural origin models and asks which better explains the movement's emergence.",
+      "timebox": "27:29–88:30",
+      "score": {
+        "pro": 84,
+        "con": 79
+      },
+      "displayRows": [
+        {
+          "pro": "pro-crucified-messiah-unlikely-invention",
+          "con": "con-origins-israelite-theophany"
+        },
+        {
+          "pro": "pro-resurrection-belief-origin-catalyst",
+          "con": "con-origins-ordinary-crucified-insufficient"
+        }
+      ]
+    },
+    {
+      "sectionId": "legendary-development-and-explanatory-fit",
+      "title": "Legendary Development and Explanatory Fit",
+      "weightPercent": 10,
+      "rationale": "Determines whether mythic accretions are compatible with an underlying person and whether a minimal historical figure or a mythic origin better accounts for the resulting Christ traditions.",
+      "timebox": "11:19–128:06",
+      "score": {
+        "pro": 89,
+        "con": 79
+      },
+      "displayRows": [
+        {
+          "pro": "pro-legend-pattern-person-distinction",
+          "con": "con-legend-demythologized-core"
+        },
+        {
+          "pro": "pro-miracles-do-not-negate-existence",
+          "con": "con-legend-mundane-founder-insufficient"
+        }
+      ]
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-method-motion-position",
+      "sectionId": "historical-method-and-burden",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Whatever else may be claimed about Jesus of Nazareth, a historical person existed behind the traditions.",
+      "importance": 3,
+      "finalScore": 85,
+      "scoreBand": "very strong 85–94",
+      "displayTime": "8:36",
+      "sourceSpan": {
+        "startEvent": 181,
+        "endEvent": 210,
+        "startMs": 516200,
+        "endMs": 579680
+      },
+      "sourceExcerpt": "give you a brief synopsis of my position tonight my brief synopsis is this whatever else you want to say about Jesus of Nazareth I think you can say that he certainly existed in my talk I'm going to be mounting the positive Arguments for that some of the positive arguments and we have we have only 30 minutes uh if you've read uh Bob's works you know he could go for 30 days days",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 75,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-historical-person"
+      },
+      "response": {
+        "class": "constructive-opening",
+        "decisiveTargetIds": [],
+        "components": [],
+        "rationale": "This constructive opening clearly states the historical-existence thesis that the ensuing arguments undertake to establish.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "As a constructive thesis statement, it clearly frames the motion and the position to be defended."
+        },
+        "responsiveness": {
+          "value": 88,
+          "rationale": "As a constructive thesis statement, it clearly frames the motion and the position to be defended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The existence claim and its deliberately minimal scope are expressly recoverable and consistently framed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical existence claim precedes its promised evidence, although its scope is expressly limited."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly states the route-completion claim that a historical person existed behind the traditions."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move announces a positive thesis and does not materially characterize a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly says Jesus certainly existed and announces that positive arguments will follow.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-legend-pattern-person-distinction",
+      "sectionId": "legendary-development-and-explanatory-fit",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Stories molded to mythic or stereotyped narrative patterns can accumulate around important people without implying that those people never existed.",
+      "importance": 3,
+      "finalScore": 85,
+      "scoreBand": "very strong 85–94",
+      "displayTime": "11:19",
+      "sourceSpan": {
+        "startEvent": 253,
+        "endEvent": 299,
+        "startMs": 679079,
+        "endMs": 808480
+      },
+      "sourceExcerpt": "ways this is typically what happens with important figures uh from the past famous people are told in terms of stereotypes we have our own stereotypes we have the rags to riches story we have the politician sexual exploits story we have the divine Savior Story the fact that stories are molded to a model has no bearing on whether the person actually existed or not now let me get",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 70,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-legend-person-distinction"
+      },
+      "response": {
+        "class": "constructive-opening",
+        "decisiveTargetIds": [],
+        "components": [],
+        "rationale": "This constructive move establishes a general distinction between patterned legendary narration and the existence of the narrated person.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "responsiveness": {
+          "value": 90,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The proposition is clear, with an implicit ordinary qualification that patterned stories alone have no decisive bearing on existence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The categorical phrase 'no bearing' is somewhat stronger than the examples establish, although the intended non-entailment point is sound."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Several familiar stereotype classes support the compatibility claim, though no comparative base rate is developed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central bridge distinguishing legendary development from personal nonexistence."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move advances a general methodological distinction without developing a specific opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt names several story stereotypes and expressly denies that molding to a model settles whether a person existed.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-gospel-independent-early-traditions",
+      "sectionId": "gospel-traditions-and-historical-recovery",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Multiple independent first-century sources, including traditions traceable to Aramaic-speaking Palestine, provide unusually early attestation for Jesus.",
+      "importance": 3,
+      "finalScore": 83,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "13:26",
+      "sourceSpan": {
+        "startEvent": 300,
+        "endEvent": 400,
+        "startMs": 806320,
+        "endMs": 1065760
+      },
+      "sourceExcerpt": "multiple independent sources from the first century how is it possible that you have so many sources about somebody who never existed these sources are independent of each other they're not copying one another you have independent sources from before the gospels some of these sources have traditions in them that almost certainly go back to Aramaic speaking Palestine some of these sources record sayings of Jesus",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 67,
+        "characterCount": 414
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-source-attestation"
+      },
+      "response": {
+        "class": "constructive-opening",
+        "decisiveTargetIds": [],
+        "components": [],
+        "rationale": "This constructive move presents early multiplicity, independence, and Aramaic Palestinian provenance as positive source attestation.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "responsiveness": {
+          "value": 92,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The proposition is clear, but the scope of the claimed sources and the basis for their independence are compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Claims of independence and near-certain Aramaic provenance are stronger than the verification supplied in this excerpt."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The move identifies relevant source features but does not document particular sources or defend their independence here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable central bridge concerning multiple comparatively early attestations."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move builds a positive source case without articulating and testing a developed dependence alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt asserts multiple independent first-century and pre-Gospel sources, including traditions traced to Aramaic-speaking Palestine.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-paul-earthly-jewish-jesus",
+      "sectionId": "pauline-jesus-and-textual-foundations",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Paul's early authentic letters describe Jesus as a Jewish preacher and teacher crucified by earthly opponents, rather than as a celestial figure killed in space.",
+      "importance": 3,
+      "finalScore": 84,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "18:05",
+      "sourceSpan": {
+        "startEvent": 408,
+        "endEvent": 477,
+        "startMs": 1085799,
+        "endMs": 1261880
+      },
+      "sourceExcerpt": "about the historical Jesus Paul's views of Jesus are really important as I think Bob and I would both agree Paul does not talk about a Heavenly Cosmic figure Joshua or Jesus who was crucified by demons in outer space the way mythicists have often said Paul talks about a real historical figure Jesus a Jew among Jews a preacher teacher who was crucified by his Earthly opponents",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 68,
+        "characterCount": 378
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-early-pauline-anchor"
+      },
+      "response": {
+        "class": "constructive-opening",
+        "decisiveTargetIds": [],
+        "components": [],
+        "rationale": "This constructive move uses the earliest Pauline evidence to characterize Jesus as earthly, Jewish, teaching, and crucified by earthly opponents.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "responsiveness": {
+          "value": 93,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The Pauline interpretation is clear and stable, though the excerpt leaves its textual basis and the scope of 'Paul' implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical exclusion of a celestial interpretation exceeds the textual analysis displayed in this excerpt."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul describes a celestial Christ killed by demonic powers rather than an earthly teacher.",
+        "decisiveQualification": "The excerpt asserts earthly traits but does not interpret the particular disputed Pauline passages supporting the celestial reading."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central early-Pauline anchor by arguing for an earthly Jewish Jesus."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "It identifies the rival reading accurately enough, but answers mainly by contrary assertion rather than its strongest textual warrant."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts a cosmic execution with Paul's alleged Jewish preacher and teacher crucified by earthly opponents.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-paul-knew-james-and-peter",
+      "sectionId": "pauline-jesus-and-textual-foundations",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Paul reports personally meeting Peter, Jesus's close disciple, and James, specifically distinguished as the Lord's brother.",
+      "importance": 3,
+      "finalScore": 88,
+      "scoreBand": "very strong 85–94",
+      "displayTime": "22:35",
+      "sourceSpan": {
+        "startEvent": 514,
+        "endEvent": 601,
+        "startMs": 1355640,
+        "endMs": 1583760
+      },
+      "sourceExcerpt": "1: 19 where Paul says that 3 years after his conversion so this would be by my chronology about the year 35 or 36 the Common Era he says after three years I went to Jerusalem to visit sephus I remained with him for 15 days sephus is Peter jesus' closest disciple but I saw none of the other Apostles except James the Lord's brother the brother of the Lord Paul knows Jesus brother",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 74,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-early-pauline-anchor"
+      },
+      "response": {
+        "class": "constructive-opening",
+        "decisiveTargetIds": [],
+        "components": [],
+        "rationale": "This constructive move treats Paul's reported meetings with Peter and James as direct interpersonal anchors to Jesus.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (94 and 96); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "responsiveness": {
+          "value": 95,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (94 and 96); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The interpersonal claim is recoverable, though the kinship sense of Lord's brother is defended only in compressed form."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Paul's reported meeting is explicit, but equating 'Lord's brother' categorically with a biological sibling requires a defended semantic qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Lord's brother is a cultic designation rather than a biological relationship to Jesus.",
+        "decisiveQualification": "The move must distinguish ordinary Christian brotherhood from the specifically marked expression applied to James."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "The move quotes a concrete Pauline report and identifies its key terms, with only the usage defense compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable early-Pauline bridge through named associates represented as disciple and brother."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt quotes Paul's visit to Cephas and his meeting with James, expressly identified as the Lord's brother.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-crucified-messiah-unlikely-invention",
+      "sectionId": "origins-context-and-crucified-messiah",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "constructive",
+      "proposition": "Because crucifixion contradicted Jewish expectations of a victorious Messiah, the proclamation of a crucified Messiah is better explained by followers confronting an actual execution than by invention.",
+      "importance": 3,
+      "finalScore": 84,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "27:29",
+      "sourceSpan": {
+        "startEvent": 630,
+        "endEvent": 749,
+        "startMs": 1649960,
+        "endMs": 1978399
+      },
+      "sourceExcerpt": "that was made up the crucified Messiah is because people thought Jesus was the Messiah and they knew that this man had been killed as a crucified criminal that's why Paul says that the crucifixion of Jesus was the greatest stumbling block for Jews it was the one reason most Jews rejected the Christian claim that Jesus was the Messiah most Jews thought the claim was crazy it was",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 69,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-crucified-messiah"
+      },
+      "response": {
+        "class": "constructive-opening",
+        "decisiveTargetIds": [],
+        "components": [],
+        "rationale": "This constructive move argues that the counterexpectational proclamation of a crucified Messiah is best explained by an actual execution.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "responsiveness": {
+          "value": 93,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The comparative inference is clear, though the scope of Jewish messianic expectations is treated broadly."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Counterexpectation supports the inference, but the move does not compare scriptural reinterpretation or innovation alternatives."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 79,
+          "rationale": "Paul's stumbling-block language supports the premise, but Jewish expectation diversity and rival mechanisms are underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central bridge explaining why a crucified Messiah is unlikely to be freely invented."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "A positive explanatory argument is offered without sustained engagement with a specific rival origin mechanism."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes Paul's stumbling-block claim and explains why a crucified Messiah appeared contradictory to many Jews.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-method-chronology-presupposition",
+      "sectionId": "historical-method-and-burden",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Dating traditions to shortly after Jesus's supposed crucifixion presupposes the disputed Gospel chronology rather than independently establishing when the relevant history began.",
+      "importance": 2,
+      "finalScore": 73,
+      "scoreBand": "mixed 65–74",
+      "displayTime": "38:57",
+      "sourceSpan": {
+        "startEvent": 876,
+        "endEvent": 894,
+        "startMs": 2337960,
+        "endMs": 2396079
+      },
+      "sourceExcerpt": "point in history when the gospels have Jesus appear but if there was no historical Jesus as we Wildey tin foil hat wearing mythicists I know I am anyway um suggest the bottom falls out of the whole thing there's no way to determine when the timeline began no way to say what or when counts as early to say for instance quote in nearly all our sources Peter was Jesus most intimate companion and Confidant for his entire public Ministry after",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 82,
+        "characterCount": 441
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-probabilistic-method"
+      },
+      "response": {
+        "class": "diagnostic-defeat",
+        "decisiveTargetIds": [
+          "pro-gospel-independent-early-traditions"
+        ],
+        "components": [
+          {
+            "componentId": "con-method-chronology-presupposition-component-01",
+            "targetMoveId": "pro-gospel-independent-early-traditions",
+            "text": "The dating of traditions as early evidence independently supports proximity to the supposed historical person.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "Price expressly identifies circularity in dating material relative to a disputed Gospel timeline and states that without the person the proposed starting point disappears.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "The reply explicitly attacks the chronological premise and states the consequence for claims that traditions are early."
+        },
+        "responsiveness": {
+          "value": 98,
+          "rationale": "The reply explicitly attacks the chronological premise and states the consequence for claims that traditions are early."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The circularity objection is recoverable, but its claim that there is 'no way' to date the timeline has overbroad scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Saying there is no way to identify what is early overlooks independent dating of documents and traditions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Sources can be dated independently and then evaluated relative to the Gospel-era placement of Jesus.",
+        "decisiveQualification": "Independent document dating does not by itself validate the disputed biographical event used as the proximity benchmark."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 71,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The move identifies the premise it disputes but supplies no analysis showing that independent textual or historical dating methods fail."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It attacks a material subsidiary probabilistic premise concerning source proximity and chronological comparison."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The reply exposes a possible circular use of chronology but materially weakens the alternative by treating all dating as dependent on Gospel historicity."
+        }
+      },
+      "evidenceBasis": "The excerpt says that absent a historical Jesus the Gospel-based starting point falls away and early cannot be fixed relative to it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-legend-demythologized-core",
+      "sectionId": "legendary-development-and-explanatory-fit",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Removing supernatural elements from Jesus traditions leaves mundane incidents with no evident reason to have been preserved or to have generated Christianity.",
+      "importance": 3,
+      "finalScore": 77,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "40:03",
+      "sourceSpan": {
+        "startEvent": 899,
+        "endEvent": 1006,
+        "startMs": 2403400,
+        "endMs": 2680319
+      },
+      "sourceExcerpt": "we decide that there was indeed a historical Superman but that he was merely Clark Kent um Bart says you can shape a tradition about Jesus any way you want so that it looks highly legendary but that has no bearing on the question of whether the legendary shaping uh whether beneath the legendary shaping lies the core of the historical event well let's try to imagine what some of",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 70,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-legend-person-distinction"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-legend-pattern-person-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "con-legend-demythologized-core-component-01",
+            "targetMoveId": "pro-legend-pattern-person-distinction",
+            "text": "The decisive distinction is whether legendary molding can be removed while leaving an independently explanatory historical person.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The Superman and Clark Kent analogy contacts the distinction by arguing that stripping wonders leaves a mundane residue with no demonstrated historical or causal role.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts the decisive component but mainly challenges explanatory significance rather than showing that patterned legend implies nonexistence."
+        },
+        "responsiveness": {
+          "value": 94,
+          "rationale": "It contacts the decisive component but mainly challenges explanatory significance rather than showing that patterned legend implies nonexistence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The explanatory-insufficiency claim is clear, but it slides partly between preservation, causal origin, and personal existence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The mundane-residue problem is plausible, but the fictional-superhero analogy does not establish that every demythologized tradition lacks a historical core."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Legendary accretions may surround a real but ordinary founder without those accretions preserving his importance accurately.",
+        "decisiveQualification": "Existence of a mundane founder and adequacy of that founder to explain the exalted tradition remain distinct questions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "Several analogical reconstructions illustrate the concern, but no evidence shows mundane cores lack preservation or causal pathways."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central legend-person distinction, albeit partly through a founder-insufficiency concern."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The reply recognizes the minimal-founder proposal but materially weakens it by treating limited causal explanation as evidence of nonexistence."
+        }
+      },
+      "evidenceBasis": "The excerpt uses the Superman and Clark Kent analogy against the claim that legendary molding has no bearing on existence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-external-hearsay-attestation",
+      "sectionId": "external-attestation-and-chronology",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Pliny, Tacitus, and widespread oral Gospel traditions attest Christian claims and their transmission rather than independently attesting the underlying existence of Jesus.",
+      "importance": 2,
+      "finalScore": 82,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "44:42",
+      "sourceSpan": {
+        "startEvent": 1009,
+        "endEvent": 1038,
+        "startMs": 2682680,
+        "endMs": 2768119
+      },
+      "sourceExcerpt": "the supposed non-Christian documentation of a historical Jesus and then we have to ask why are the gospels witnesses to Jesus any better founded Bart says that quote stories about Jesus circulated widely throughout the major urban areas of the Mediterranean from a very early time our written sources are based on oral traditions in other words here say just like plenty in tacitus",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 65,
+        "characterCount": 381
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-source-dependence"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-gospel-independent-early-traditions"
+        ],
+        "components": [
+          {
+            "componentId": "con-external-hearsay-attestation-component-01",
+            "targetMoveId": "pro-gospel-independent-early-traditions",
+            "text": "The decisive demand is whether the purported sources independently attest Jesus rather than merely transmit Christian claims.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply directly disputes independence by classifying Pliny, Tacitus, and circulating oral Gospel material as downstream hearsay about Christian belief.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts the independence issue squarely, though it does not separately analyze the provenance of each named source."
+        },
+        "responsiveness": {
+          "value": 97,
+          "rationale": "It contacts the independence issue squarely, though it does not separately analyze the provenance of each named source."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The attestation distinction is clear, but 'hearsay' groups legally and historically different transmission relationships under one loose term."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Dependence on Christian reports is plausible for some notices, but the move does not establish it uniformly."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Early widespread oral traditions can contain independent lines of information despite being transmitted orally.",
+        "decisiveQualification": "Orality alone does not prove either independence or dependence; transmission relationships require separate analysis."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference from dependent transmission to lack of independent attestation is coherent, subject to source-specific provenance that remains unexamined."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con bridge challenging the independence of external and Gospel attestation."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move preserves the central distinction between claim and event, but compresses possible differences among the external witnesses."
+        }
+      },
+      "evidenceBasis": "The excerpt calls Pliny, Tacitus, and orally based Gospel sources hearsay that attests claims rather than Jesus directly.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-external-josephus-interpolation",
+      "sectionId": "external-attestation-and-chronology",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "The Testimonium Flavianum is better explained as Christian interpolation because its Christian language, context, and reduced form provide no clear reason for Josephus to mention Jesus.",
+      "importance": 2,
+      "finalScore": 78,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "46:05",
+      "sourceSpan": {
+        "startEvent": 1039,
+        "endEvent": 1140,
+        "startMs": 2765920,
+        "endMs": 3041000
+      },
+      "sourceExcerpt": "interpolation he says quote here we find textual studies driven by convenience ience if a passage contradicts your views simply claim that it was not written by the author end quote but aren't consensus Scholars doing the same darn thing with the testimonium flavianum they dearly want Josephus to have mentioned Jesus but the passage as it stands they admit cannot have been the work of a non-Christian",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 69,
+        "characterCount": 403
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-textual-uncertainty"
+      },
+      "response": {
+        "class": "relevant-nonanswer",
+        "decisiveTargetIds": [
+          "pro-gospel-independent-early-traditions"
+        ],
+        "components": [
+          {
+            "componentId": "con-external-josephus-interpolation-component-01",
+            "targetMoveId": "pro-gospel-independent-early-traditions",
+            "text": "The decisive claim concerns multiple independent first-century traditions, while this reply isolates the authenticity of a later Josephus passage.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "rationale": "The interpolation case is issue-bearing contrary material about external attestation, but it does not contact the selected move's decisive pre-Gospel multiplicity claim.",
+        "responsivenessWithinClass": {
+          "value": 57,
+          "rationale": "It is a relevant nonanswer to the selected earlier move because Josephus is not the decisive source set asserted there."
+        },
+        "responsiveness": {
+          "value": 57,
+          "rationale": "It is a relevant nonanswer to the selected earlier move because Josephus is not the decisive source set asserted there."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The interpolation thesis and its grounds—language, context, and reduced-form motivation—are distinctly recoverable and appropriately bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents interpolation as a comparative explanation and acknowledges the scholarly reduced-form alternative it disputes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Josephus wrote a neutral core later expanded with explicitly Christian language.",
+        "decisiveQualification": "A reconstructed neutral core still needs a contextual reason for Josephus to mention Jesus at that location."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The move cites wording, scholarly concessions, and context, but manuscript and reconstruction evidence remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt notes admitted Christian language and accuses neutral-core reconstruction of being driven by the desire for a Josephan notice.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-gospel-hypothetical-sources",
+      "sectionId": "gospel-traditions-and-historical-recovery",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Hypothetical sources such as Q, M, and L and disputed extracanonical dependencies cannot securely establish multiple independent pre-Gospel witnesses to a historical Jesus.",
+      "importance": 3,
+      "finalScore": 90,
+      "scoreBand": "very strong 85–94",
+      "displayTime": "50:41",
+      "sourceSpan": {
+        "startEvent": 1142,
+        "endEvent": 1210,
+        "startMs": 3041000,
+        "endMs": 3240040
+      },
+      "sourceExcerpt": "a helpful theoretical model for organizing the data of the gospels um others cut the pie in other ways uh uh q m and L are theor itical purely hypothetical not known but lost documents like The Gospel According to the Hebrews B also appeals to the gospels of Thomas and Peter and the so-called ederton gospel is independent witnesses to a recent and therefore historical Jesus but",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 69,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-source-dependence"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-gospel-independent-early-traditions"
+        ],
+        "components": [
+          {
+            "componentId": "con-gospel-hypothetical-sources-component-01",
+            "targetMoveId": "pro-gospel-independent-early-traditions",
+            "text": "The decisive demand is whether several asserted early sources are real, independent witnesses rather than products of a contested source model.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply directly attacks the independence premise by identifying Q, M, and L as hypothetical and extracanonical dependencies as disputed.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It squarely contacts the central source-independence demand across multiple examples, while stopping short of proving dependence in each case."
+        },
+        "responsiveness": {
+          "value": 98,
+          "rationale": "It squarely contacts the central source-independence demand across multiple examples, while stopping short of proving dependence in each case."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is carefully limited to insecurity rather than asserting that every proposed source is demonstrably dependent."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The cautious conclusion that these sources cannot securely establish independence fits the stated scholarly disputes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Hypothetical source reconstruction can explain textual patterns and support independence without surviving manuscripts.",
+        "decisiveQualification": "A useful explanatory model is not automatically a securely identified historical witness with established independence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "Several named source proposals and disputed dependencies are identified, though their individual evidence is only summarized."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central source-dependence bridge by attacking the alleged multiplicity and independence."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt calls Q, M, and L theoretical and notes disputed dependence for Thomas, Peter, and the Egerton Gospel.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-pauline-celestial-archons",
+      "sectionId": "pauline-jesus-and-textual-foundations",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Paul's unidentified rulers of the age can be read as demonic powers who killed a celestial Christ, with an earthly crucifixion narrative arising through later historicization.",
+      "importance": 3,
+      "finalScore": 83,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "55:16",
+      "sourceSpan": {
+        "startEvent": 1240,
+        "endEvent": 1323,
+        "startMs": 3316079,
+        "endMs": 3533720
+      },
+      "sourceExcerpt": "the rulers or archons of this ion uh the principalities and Powers mythicists infer that the author of these Epistles was writing at a time when Christians believed in a Celestial man of light who had not appeared on the earth to teach and heal and die on a Roman cross but who had been ambushed and slain by the Demonic entities inhabiting the lower Heavens as we read in various",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 71,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-pauline-celestial-origin"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-paul-earthly-jewish-jesus"
+        ],
+        "components": [
+          {
+            "componentId": "con-pauline-celestial-archons-component-01",
+            "targetMoveId": "pro-paul-earthly-jewish-jesus",
+            "text": "The decisive demand is whether Paul's language locates Christ's death among earthly opponents or permits celestial demonic rulers.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply directly offers an alternative reading of Paul's archons as lower-heaven demonic powers and later terrestrial narration as historicization.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the earthly-versus-celestial inference explicitly, though it does not answer every earthly descriptor asserted by Ehrman."
+        },
+        "responsiveness": {
+          "value": 97,
+          "rationale": "It contacts the earthly-versus-celestial inference explicitly, though it does not answer every earthly descriptor asserted by Ehrman."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly presents the celestial reading as an inference rather than an indisputable textual fact."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The inferential force is cautious, but surviving later Gnostic analogies do not fully warrant the Pauline reconstruction."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul's rulers of the age are earthly authorities or a combined earthly and spiritual agency.",
+        "decisiveQualification": "The rulers are unidentified in the cited phrase, so either reading requires contextual argument beyond the label itself."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The archon language and analogical Gnostic material are relevant, but provenance, dating, and Pauline fit are underdefended."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central Pauline-celestial-origin bridge against the pro terrestrial reading."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The reply supplies a coherent rival interpretation but does not fully engage the terrestrial attributes emphasized by the target."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies Paul's archons with demonic lower-heaven powers and proposes subsequent earthly historicization.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-pauline-revelatory-sayings",
+      "sectionId": "pauline-jesus-and-textual-foundations",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Paul's purported sayings of Jesus may represent private revelations from an ascended Christ, while his broader biographical silence suggests that Gospel sayings were not yet available.",
+      "importance": 3,
+      "finalScore": 87,
+      "scoreBand": "very strong 85–94",
+      "displayTime": "58:50",
+      "sourceSpan": {
+        "startEvent": 1324,
+        "endEvent": 1391,
+        "startMs": 3530319,
+        "endMs": 3711920
+      },
+      "sourceExcerpt": "the ascended Christ I think the latter is more likely we cannot be sure Paul does not mean he has a historical Jesus quote on hand but if this notion of Paul passing on private oracles is even a plausible suggestion then uh you can't just assert that he is quoting the historical Jesus the same applies to 1 Corinthians 11:23 through 26 where Paul quotes the words of institution",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 71,
+        "characterCount": 379
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-pauline-celestial-origin"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-paul-earthly-jewish-jesus"
+        ],
+        "components": [
+          {
+            "componentId": "con-pauline-revelatory-sayings-component-01",
+            "targetMoveId": "pro-paul-earthly-jewish-jesus",
+            "text": "The decisive demand is whether Pauline references to Jesus preserve earthly biography and teaching or derive from revelation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply directly challenges the earthly-teacher inference by treating Pauline commands and institution words as possible private revelations from the ascended Christ.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts the evidentiary route to an earthly teacher, though it does not answer all of the earlier move's earthly claims."
+        },
+        "responsiveness": {
+          "value": 97,
+          "rationale": "It contacts the evidentiary route to an earthly teacher, though it does not answer all of the earlier move's earthly claims."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The revelatory interpretation is stated as plausible and expressly concedes uncertainty about a historical saying source."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move appropriately argues that a plausible revelatory reading blocks bare assertion rather than proving revelation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Paul is transmitting sayings received through an ordinary historical chain rather than private revelation.",
+        "decisiveQualification": "Paul's wording and broader silence are ambiguous and require passage-specific comparison of transmission and revelation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Named Pauline passages and biographical silence support ambiguity, though detailed linguistic analysis is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central celestial-origin bridge by construing Pauline sayings as revelatory rather than biographical."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The reply acknowledges that Paul may possess historical sayings but does not fully address genre-based expectations or tradition formulas."
+        }
+      },
+      "evidenceBasis": "The excerpt describes commands as possibly granted by an ascended Christ and applies the point to 1 Corinthians 11.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-ancient-critics-earthly-jesus",
+      "sectionId": "external-attestation-and-chronology",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Trypho and Celsus disputed Christian supernatural claims while still treating Jesus as an earthly person who was born, baptized, tempted, and crucified.",
+      "importance": 2,
+      "finalScore": 83,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "68:05",
+      "sourceSpan": {
+        "startEvent": 1529,
+        "endEvent": 1558,
+        "startMs": 4085559,
+        "endMs": 4151400
+      },
+      "sourceExcerpt": "to read them the dialogue with Trio dialogue with Trio by Justin and the Contra the the against celsus that you find in origin where he quotes celsus as views and it's pretty clear that that celsus believes that Jesus was born and that he was baptized and he was tempted that he was crucified I mean he's quite explicit about I noticed when you're talking about my view uh in that",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 72,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-source-dependence"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "con-external-hearsay-attestation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-ancient-critics-earthly-jesus-component-01",
+            "targetMoveId": "con-external-hearsay-attestation",
+            "text": "The decisive demand is whether non-Christian or hostile testimony merely repeats Christian claims or independently presupposes an earthly Jesus.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply contacts that demand by identifying hostile critics who rejected Christian claims yet represented Jesus as born, baptized, tempted, and crucified.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "It provides pertinent contrary witnesses, but does not establish that their earthly information was independent of Christian traditions."
+        },
+        "responsiveness": {
+          "value": 97,
+          "rationale": "It provides pertinent contrary witnesses, but does not establish that their earthly information was independent of Christian traditions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The historical claim is clear, though the evidentiary difference between hostile acceptance and independent attestation remains implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The texts support what the critics believed or assumed, but not necessarily an information chain independent of Christian narrative."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Trypho and Celsus may merely adopt Christian narrative premises for purposes of hostile argument.",
+        "decisiveQualification": "Hostile acceptance is not automatically independent historical attestation without evidence of their information sources."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central con claim that external materials merely repeat Christian assertions without earthly bearing."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt names Justin's dialogue and Origen's quotations of Celsus and lists birth, baptism, temptation, and crucifixion.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-critical-tradition-recovery",
+      "sectionId": "gospel-traditions-and-historical-recovery",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Critical historical analysis can evaluate Gospel traditions individually and recover substantial claims about Jesus without accepting miracles or merely naturalizing miracle stories.",
+      "importance": 2,
+      "finalScore": 81,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "72:37",
+      "sourceSpan": {
+        "startEvent": 1651,
+        "endEvent": 1670,
+        "startMs": 4357120,
+        "endMs": 4400120
+      },
+      "sourceExcerpt": "it was Joe Rabbi look I wrote an entire book on what we can say about the historical Jesus so uh you know it's I don't know what it is 250 pages long so it's not as if there's nothing you can say there's a lot you can say without conceding a single Miracle but the way you get there is not by reading the miracle the five th000 and saying that they just really just had a picnic I",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 80,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-source-dependence"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "con-gospel-hypothetical-sources"
+        ],
+        "components": [
+          {
+            "componentId": "pro-critical-tradition-recovery-component-01",
+            "targetMoveId": "con-gospel-hypothetical-sources",
+            "text": "The decisive demand is whether critical analysis can recover historical claims despite disputed source reconstruction and miraculous narrative material.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply asserts that traditions can be evaluated without accepting miracles and distinguishes critical analysis from merely naturalizing supernatural stories.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It contacts the recoverability issue, but largely appeals to the existence of a longer treatment rather than displaying the method here."
+        },
+        "responsiveness": {
+          "value": 94,
+          "rationale": "It contacts the recoverability issue, but largely appeals to the existence of a longer treatment rather than displaying the method here."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The conclusion is recoverable, but 'the way you get there' and 'a lot you can say' leave the operative critical criteria unspecified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Recoverability is plausible, but the excerpt's reference to a lengthy book substitutes for the warrant needed in this selected span."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Historical recovery simply strips miracles away and preserves an unsupported mundane remainder.",
+        "decisiveQualification": "Modern critical analysis evaluates traditions individually and need not convert each miracle into a natural event."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "The move cites the existence of an extended treatment and one obsolete method, without giving representative recovered claims or criteria."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply accurately identifies and rejects the strongest methodological misunderstanding with a concrete picnic example."
+        }
+      },
+      "evidenceBasis": "The excerpt says much can be recovered without accepting miracles and rejects explaining the feeding story as merely a picnic.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-late-gnostic-chronology",
+      "sectionId": "external-attestation-and-chronology",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Extant Gnostic writings are predominantly second-century evidence and therefore cannot establish a Gnostic background for Paul's letters from the 50s.",
+      "importance": 2,
+      "finalScore": 87,
+      "scoreBand": "very strong 85–94",
+      "displayTime": "76:30",
+      "sourceSpan": {
+        "startEvent": 1752,
+        "endEvent": 1768,
+        "startMs": 4590239,
+        "endMs": 4630760
+      },
+      "sourceExcerpt": "is normally understood to be a second century phenomenon that it didn't pred predate Paul and so no nobody talks about gnosticism as a pred cessor of Paul because these these texts that we have postate Paul the nagamati library is all second century stuff so I don't think you can use second century texts in order to show that this is the background of letters written in the 50s",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 70,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-pauline-celestial-origin"
+      },
+      "response": {
+        "class": "diagnostic-defeat",
+        "decisiveTargetIds": [
+          "con-pauline-celestial-archons"
+        ],
+        "components": [
+          {
+            "componentId": "pro-late-gnostic-chronology-component-01",
+            "targetMoveId": "con-pauline-celestial-archons",
+            "text": "The decisive support for the celestial Pauline model invokes surviving Gnostic materials as parallels or background.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply expressly diagnoses a chronology failure: predominantly second-century extant Gnostic texts cannot establish the background of letters written in the 50s.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly attacks a central evidentiary warrant and states the consequence, though possible earlier antecedents remain unaddressed."
+        },
+        "responsiveness": {
+          "value": 98,
+          "rationale": "It explicitly attacks a central evidentiary warrant and states the consequence, though possible earlier antecedents remain unaddressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The chronological objection is clear, but 'all second century stuff' overgeneralizes the dating and composition history of the corpus."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Later attestation cannot by itself prove earlier background, but later texts may still preserve antecedent concepts if continuity is independently shown."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Second-century Gnostic texts may preserve religious concepts that predate their extant witnesses.",
+        "decisiveQualification": "Possible preservation requires an independent genealogical bridge to Paul's first-century context."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central Pauline-celestial-origin bridge by challenging its proposed Gnostic background."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt dates the Nag Hammadi material to the second century and contrasts it with Pauline letters from the 50s.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-belief-origin-catalyst",
+      "sectionId": "origins-context-and-crucified-messiah",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Belief that the crucified Jesus had been raised was the indispensable catalyst that transformed attachment to a Jewish teacher into Christianity.",
+      "importance": 3,
+      "finalScore": 84,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "82:08",
+      "sourceSpan": {
+        "startEvent": 1893,
+        "endEvent": 1911,
+        "startMs": 4928560,
+        "endMs": 4975239
+      },
+      "sourceExcerpt": "Jesus became God uh I actually argue that that it was the resurrection that really mattered that that you know if you have I mean suppose you do have this group of people up in Galilee who really appreciate things like The Sermon on the Mount or something you know and and there are this like alternative group um I just don't I don't see how you get Christianity out of that I mean basically you've got a Jewish teacher",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 80,
+        "characterCount": 420
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-founder-insufficiency"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "con-legend-demythologized-core"
+        ],
+        "components": [
+          {
+            "componentId": "pro-resurrection-belief-origin-catalyst-component-01",
+            "targetMoveId": "con-legend-demythologized-core",
+            "text": "A mundane teacher and incidents lack the causal power needed to generate Christianity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply accepts that appreciation of an ordinary teacher is insufficient and identifies resurrection belief as the additional movement-generating catalyst.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It directly contacts the causal insufficiency demand and supplies a specific replacement mechanism."
+        },
+        "responsiveness": {
+          "value": 97,
+          "rationale": "It directly contacts the causal insufficiency demand and supplies a specific replacement mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The catalyst claim is clear, but 'really mattered' and the indispensable scope are broader than the causal comparison developed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The example makes resurrection belief causally plausible, but does not establish that no other mechanism could transform a teacher movement."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Teachings and alternative Galilean communities could develop into Christianity without a resurrection catalyst.",
+        "decisiveQualification": "The proposed teaching-centered path must explain the shift to proclamation of an exalted crucified Christ."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "Adding resurrection belief coherently answers why an ordinary teacher could become the center of an exalted movement."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The causal mechanism is historically pertinent, but the excerpt offers little evidence that it was indispensable rather than one factor."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply treats the rival path as possible in outline and identifies its decisive explanatory deficit without gross caricature."
+        }
+      },
+      "evidenceBasis": "The excerpt says admiration for a Galilean teacher does not yield Christianity and identifies resurrection belief as what mattered.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-origins-israelite-theophany",
+      "sectionId": "origins-context-and-crucified-messiah",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Jesus may derive from an older Israelite theophanic tradition in which Yahweh appeared as a subordinate divine son distinguished from the Most High God.",
+      "importance": 3,
+      "finalScore": 80,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "85:45",
+      "sourceSpan": {
+        "startEvent": 1978,
+        "endEvent": 2006,
+        "startMs": 5145560,
+        "endMs": 5225119
+      },
+      "sourceExcerpt": "Israelite polytheism just like you had uh farahan carrying on the original version of the Nation of Islam yet Latin Mass Catholics who rejected uh the official Judgment of Vatican 2 well these these myths and beliefs don't die out and she said that Jesus she thinks is supposed to be Jehovah and that the name yahoshua yah saves that uh he was understood to be a theophany of Yahweh and he was praying to his father Al Elan the most high God",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 83,
+        "characterCount": 441
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-literary-mythic-development"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-late-gnostic-chronology"
+        ],
+        "components": [
+          {
+            "componentId": "con-origins-israelite-theophany-component-01",
+            "targetMoveId": "pro-late-gnostic-chronology",
+            "text": "The decisive demand is whether a mythic divine-son background can plausibly predate Paul despite the late extant Gnostic texts.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply contacts the chronology objection by relocating the proposed background to persistent older Israelite theophanic traditions rather than late Gnosticism alone.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It answers the temporal objection with an earlier candidate tradition, but does not demonstrate the transmission link into Pauline Christianity."
+        },
+        "responsiveness": {
+          "value": 96,
+          "rationale": "It answers the temporal objection with an earlier candidate tradition, but does not demonstrate the transmission link into Pauline Christianity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposed Yahweh-son model is recoverable and marked as a scholarly reconstruction, though divine titles and relationships remain compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The cautious force fits a proposed reconstruction whose survival and transmission are not directly established."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The exalted Christ developed from resurrection belief about an executed Jewish teacher rather than preserved Israelite polytheism.",
+        "decisiveQualification": "The older-theophany model needs a traceable transmission path and comparative fit with the earliest Christian evidence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes Margaret Barker's reconstruction of Jesus as a Yahweh theophany subordinate to the Most High.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-origins-ordinary-crucified-insufficient",
+      "sectionId": "origins-context-and-crucified-messiah",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "A commonplace crucified teacher does not adequately explain Christianity's emergence because the causally significant figure is the richly mythologized, miracle-working Christ.",
+      "importance": 3,
+      "finalScore": 77,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "88:07",
+      "sourceSpan": {
+        "startEvent": 2032,
+        "endEvent": 2041,
+        "startMs": 5287480,
+        "endMs": 5310560
+      },
+      "sourceExcerpt": "are you talking about uh this miracle working Superman who seems in many ways to be a classic Hercules I'm not talking about him I'm not talking about him I'm talking about the historical Jesus well if there there we go back to my Clark Kent thing I don't know why even such a crucified figure would have made a splash it's certainly not impossible that people got crucified that's",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 70,
+        "characterCount": 381
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-founder-insufficiency"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-resurrection-belief-origin-catalyst"
+        ],
+        "components": [
+          {
+            "componentId": "con-origins-ordinary-crucified-insufficient-component-01",
+            "targetMoveId": "pro-resurrection-belief-origin-catalyst",
+            "text": "The decisive demand is whether an executed Jewish teacher plus resurrection belief adequately explains Christianity's emergence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply contacts explanatory adequacy by denying that a commonplace crucified figure explains the movement represented by the mythologized Christ.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It challenges the causal bridge but does not directly analyze the proposed resurrection-belief mechanism that was meant to supply it."
+        },
+        "responsiveness": {
+          "value": 94,
+          "rationale": "It challenges the causal bridge but does not directly analyze the proposed resurrection-belief mechanism that was meant to supply it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The insufficiency claim is clear, but 'made a splash' and the Superman/Clark Kent categories leave the causal standard imprecise."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker appropriately says he does not know why such a figure made a splash rather than claiming impossibility."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A mundane execution became significant because followers came to believe the victim had been raised.",
+        "decisiveQualification": "The reply must assess the proposed post-execution catalyst, not demand that crucifixion alone explain Christianity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 59,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (60 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central founder-insufficiency bridge by denying that an ordinary crucified teacher explains Christianity."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply distinguishes the mundane founder from the final myth but largely bypasses the transformation mechanism proposed by the opponent."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts the miracle-working Christ with a historical Jesus and questions why an ordinary crucified figure would matter.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-method-rival-paradigms",
+      "sectionId": "historical-method-and-burden",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Historical-Jesus reconstructions remain rival interpretive paradigms imposed on fragmentary evidence, as persistent disagreement about Jesus's identity illustrates.",
+      "importance": 2,
+      "finalScore": 78,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "95:18",
+      "sourceSpan": {
+        "startEvent": 2217,
+        "endEvent": 2266,
+        "startMs": 5718400,
+        "endMs": 5854880
+      },
+      "sourceExcerpt": "at the evidence it's the hermeneutical Circle kind of thing that boltman and Hyer talk about but it's exactly what Bulman says about the New Testament you approach it with questions and you find uh that the data does or does not address them and so you revise your questions if they don't that's why like among people that do believe there was a historical Jesus that's about where",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 69,
+        "characterCount": 381
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-reconstruction-limits"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-critical-tradition-recovery"
+        ],
+        "components": [
+          {
+            "componentId": "con-method-rival-paradigms-component-01",
+            "targetMoveId": "pro-critical-tradition-recovery",
+            "text": "Critical historical methods can recover substantial claims about Jesus from individually evaluated traditions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply contacts confidence in historical recovery by describing interpretation as a revisable hermeneutical circle producing rival Jesus reconstructions.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It reaches methodological underdetermination but does not show that critical revision cannot yield better-supported conclusions."
+        },
+        "responsiveness": {
+          "value": 95,
+          "rationale": "It reaches methodological underdetermination but does not show that critical revision cannot yield better-supported conclusions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The hermeneutical-circle point is recoverable, but 'paradigm' and what counts as imposition versus revision remain loosely specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move modestly describes interpretive iteration and persistent disagreement without claiming that paradigm plurality proves nonexistence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Historically responsible inquiry revises questions against evidence and can rank rival reconstructions.",
+        "decisiveQualification": "A hermeneutical circle need not be vicious when evidence constrains and corrects the initial paradigm."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (77 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt describes a hermeneutical circle in which questions shape engagement with fragmentary evidence and are then revised.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-miracles-do-not-negate-existence",
+      "sectionId": "legendary-development-and-explanatory-fit",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Rejecting miraculous stories about Jesus does not negate his existence, just as false divine claims about Augustus do not erase Augustus from history.",
+      "importance": 3,
+      "finalScore": 92,
+      "scoreBand": "very strong 85–94",
+      "displayTime": "117:00",
+      "sourceSpan": {
+        "startEvent": 2711,
+        "endEvent": 2749,
+        "startMs": 7020760,
+        "endMs": 7112480
+      },
+      "sourceExcerpt": "the son of God and he wasn't really miraculously Bor he didn't really Ascend to Heaven well of course he didn't but he but there still was a Caesar Augustus I think history really matters I mean I think it matters whether we we we correctly know what happened in the past especially with important uh historical figures and I think um whatever else we might think about Jesus he's",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 70,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-founder-insufficiency"
+      },
+      "response": {
+        "class": "diagnostic-defeat",
+        "decisiveTargetIds": [
+          "con-origins-ordinary-crucified-insufficient",
+          "con-legend-demythologized-core"
+        ],
+        "components": [
+          {
+            "componentId": "pro-miracles-do-not-negate-existence-component-01",
+            "targetMoveId": "con-origins-ordinary-crucified-insufficient",
+            "text": "A mundane historical figure is inadequate because the relevant Christian figure is the miracle-working Christ.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-miracles-do-not-negate-existence-component-02",
+            "targetMoveId": "con-legend-demythologized-core",
+            "text": "Removing supernatural claims leaves no meaningful basis for retaining the existence of the underlying person.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The Augustus comparison expressly identifies the inference from false supernatural claims to nonexistence as invalid and states that historical existence remains a separate question.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly attacks the decisive inference and supplies a clear counterexample preserving the legitimate historical issue."
+        },
+        "responsiveness": {
+          "value": 99,
+          "rationale": "It explicitly attacks the decisive inference and supplies a clear counterexample preserving the legitimate historical issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is a precise non-entailment: rejecting miracle stories does not by itself negate the existence of their subject."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "not-needed",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The counterexample fully warrants the logical point that legendary claims do not entail personal nonexistence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Jesus's supernatural identity is so constitutive that removing it leaves no historically meaningful founder.",
+        "decisiveQualification": "Explanatory importance and ontological existence are separate even when legends dominate the surviving portrait."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central con founder-insufficiency inference by separating causal adequacy from existence."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply preserves the opponent's explanatory concern while accurately rejecting its use as an existence inference."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects Augustus's divine and miraculous claims while observing that Caesar Augustus nevertheless existed.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-legend-mundane-founder-insufficient",
+      "sectionId": "legendary-development-and-explanatory-fit",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "An ordinary itinerant teacher, healer, or exorcist would be too commonplace to provide an adequate foundation for the exalted Christ myth.",
+      "importance": 3,
+      "finalScore": 81,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "126:44",
+      "sourceSpan": {
+        "startEvent": 2938,
+        "endEvent": 2967,
+        "startMs": 7604280,
+        "endMs": 7686400
+      },
+      "sourceExcerpt": "an itinerate teacher or even an exorcist as uh Josephus and Luc and ofas say these people were a dime a dozen it would would be like almost like saying Kenneth copelan was the son of God uh he has an avid group of fans that thinks he's teaching wisdom and and he's even supposedly healing people but I I don't know that that is an adequate foundation for uh Jesus Christ it's like",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 74,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-founder-insufficiency"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-miracles-do-not-negate-existence",
+          "pro-legend-pattern-person-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "con-legend-mundane-founder-insufficient-component-01",
+            "targetMoveId": "pro-miracles-do-not-negate-existence",
+            "text": "The decisive issue is whether bare compatibility with existence supplies an adequate historical foundation for the exalted Christ tradition.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-legend-mundane-founder-insufficient-component-02",
+            "targetMoveId": "pro-legend-pattern-person-distinction",
+            "text": "Whether a commonplace founder remains explanatorily significant after legendary accretions are distinguished from personal existence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply concedes the type of mundane figure but argues such figures were common and therefore inadequate to explain the specific exalted Christ.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts explanatory adequacy and the legend-person distinction, though it does not refute the narrower compatibility claim."
+        },
+        "responsiveness": {
+          "value": 95,
+          "rationale": "It contacts explanatory adequacy and the legend-person distinction, though it does not refute the narrower compatibility claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly claims inadequacy as a foundation rather than impossibility of an ordinary person's existence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker's expressed doubt is proportionate to an analogical explanatory challenge rather than a demonstrated exclusion."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A commonplace teacher could become exceptional through followers' experiences, beliefs, and later legendary development.",
+        "decisiveQualification": "Commonplaceness at the outset does not by itself measure the probability of later movement formation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central founder-insufficiency bridge by challenging a mundane figure's explanatory adequacy."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move fairly targets adequacy rather than possibility, but it does not engage the strongest multi-stage transformation account."
+        }
+      },
+      "evidenceBasis": "The excerpt calls itinerant teachers and exorcists commonplace and compares the proposed foundation with Kenneth Copeland.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-gospel-defective-historical-anchors",
+      "sectionId": "gospel-traditions-and-historical-recovery",
+      "side": "con",
+      "speaker": "Robert Price",
+      "moveKind": "reply",
+      "proposition": "Jesus remains historically free-floating because Gospel links to Herod, Pilate, Caiaphas, and the Sanhedrin are literarily borrowed, implausible, or historically defective.",
+      "importance": 3,
+      "finalScore": 79,
+      "scoreBand": "strong/competent 75–84",
+      "displayTime": "140:54",
+      "sourceSpan": {
+        "startEvent": 3257,
+        "endEvent": 3293,
+        "startMs": 8454280,
+        "endMs": 8553439
+      },
+      "sourceExcerpt": "historical you don't have to you know be special pleading to say that uh that those things pilate would never have lifted a finger to to save Jesus the Herod stories borrowed from Josephus is Moses Nativity the the Sanhedrin trial on Passover Eve is written by somebody that doesn't know what the circumstances were at the time so if you take that away I Think Jesus is is free floating",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 71,
+        "characterCount": 386
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-source-dependence"
+      },
+      "response": {
+        "class": "full-answer",
+        "decisiveTargetIds": [
+          "pro-gospel-independent-early-traditions",
+          "pro-critical-tradition-recovery"
+        ],
+        "components": [
+          {
+            "componentId": "con-gospel-defective-historical-anchors-component-01",
+            "targetMoveId": "pro-gospel-independent-early-traditions",
+            "text": "The decisive demand is whether Gospel traditions contain reliable contextual anchors rather than literary or historically defective placements.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-gospel-defective-historical-anchors-component-02",
+            "targetMoveId": "pro-critical-tradition-recovery",
+            "text": "Whether critical removal of defective narrative anchors still leaves a historically locatable and recoverable Jesus.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply identifies particular Gospel anchors as borrowed or implausible and states the defeating consequence that Jesus becomes historically free-floating.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts contextual reliability with several specifics, though it does not address all independent traditions or recovery criteria."
+        },
+        "responsiveness": {
+          "value": 97,
+          "rationale": "It contacts contextual reliability with several specifics, though it does not address all independent traditions or recovery criteria."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The free-floating conclusion is clear, but several historical and literary claims are compressed into broad dismissals."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Specific narrative defects can weaken anchoring, but they do not alone establish that every remaining chronological or social anchor fails."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Historically defective narrative details can coexist with a recoverable person located by independent source evidence.",
+        "decisiveQualification": "The attack must address remaining Pauline and independent-tradition anchors, not only Gospel scene construction."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central source-dependence bridge by attacking Gospel narrative anchors to ordinary history."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt challenges Pilate's conduct, calls the Herod material borrowed, and attacks the Sanhedrin trial's historical setting.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-comparative-historical-probability",
+      "sectionId": "historical-method-and-burden",
+      "side": "pro",
+      "speaker": "Bart Ehrman",
+      "moveKind": "reply",
+      "proposition": "Historical existence is assessed probabilistically through the independence, proximity, agreement, and critical examination of sources, under which Jesus has better evidence than figures known only through late singular hearsay.",
+      "importance": 3,
+      "finalScore": 93,
+      "scoreBand": "very strong 85–94",
+      "displayTime": "143:43",
+      "sourceSpan": {
+        "startEvent": 3319,
+        "endEvent": 3357,
+        "startMs": 8623040,
+        "endMs": 8727520
+      },
+      "sourceExcerpt": "another talk about this person and say similar things about this person uh and that you can date some of these sources actually within years of when this person live that's better evidence so historians always are trying to establish probability ities of what happened and we can't have the kind of scientific certainty that you can have uh for example you can have in a chemistry",
+      "sourceExcerptAudit": {
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "tokenCount": 67,
+        "characterCount": 380
+      },
+      "attributionConfidence": "high",
+      "audioVerified": false,
+      "quoteEligible": true,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-historical-person"
+      },
+      "response": {
+        "class": "justified-reframe",
+        "decisiveTargetIds": [
+          "con-method-rival-paradigms",
+          "con-gospel-defective-historical-anchors",
+          "con-external-hearsay-attestation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-comparative-historical-probability-component-01",
+            "targetMoveId": "con-method-rival-paradigms",
+            "text": "The decisive methodological demand is how fragmentary and paradigm-laden evidence can justify a historical existence judgment.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-comparative-historical-probability-component-02",
+            "targetMoveId": "con-gospel-defective-historical-anchors",
+            "text": "Whether remaining evidence retains comparative force when individual narrative anchors are challenged.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-comparative-historical-probability-component-03",
+            "targetMoveId": "con-external-hearsay-attestation",
+            "text": "Whether multiple, proximate sources provide better evidence than late singular hearsay despite imperfect certainty.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "rationale": "The reply justifies replacing unattainable scientific certainty with comparative historical probability and specifies independence, proximity, agreement, and criticism as the legitimate criteria.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly preserves the methodological issue and answers it with comparative criteria, while source-specific application remains compressed."
+        },
+        "responsiveness": {
+          "value": 98,
+          "rationale": "It explicitly preserves the methodological issue and answers it with comparative criteria, while source-specific application remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The comparative probability standard and its source criteria are expressly stated and consistently bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move expressly rejects scientific certainty and matches its conclusion to comparative historical probability."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Defective narrative anchors and interpretive rivalry make Jesus no better attested than late hearsay figures.",
+        "decisiveQualification": "Historical comparison can still rank evidence by number, independence, proximity, agreement, and critical survivability."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the pro motion-completion condition by stating how cumulative evidence makes historical existence comparatively probable."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts late singular hearsay with multiple sources datable near a person and explicitly frames history probabilistically.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "calculatedScores": {
+    "overall": {
+      "pro": {
+        "weightedSectionMean": 85.5,
+        "burdenCompletionAdjustment": 0,
+        "score": 86
+      },
+      "con": {
+        "weightedSectionMean": 81.4,
+        "burdenCompletionAdjustment": 0,
+        "score": 81
+      }
+    },
+    "winner": "pro",
+    "winningMargin": 5,
+    "scoreProtocolId": "assessment-production-post-canary-batch-06-single-deterministic-score-pass"
+  },
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/GzjYmpwbHEA/transcript.txt",
+    "transcriptSha256": "6ef1c455e378cc1edb2dc687b3cfbdcc64814c9ed0f46f6a5ca73b12e6545017",
+    "eventsPath": ".assessment-cache/captions/GzjYmpwbHEA/events.json",
+    "eventsSha256": "36cdb59103dbf8b2759f801c5f5b1dc9828016ed4fe46d889fc3b31f72550b2c",
+    "localManifestPath": ".assessment-cache/captions/GzjYmpwbHEA/manifest.json",
+    "localManifestSha256": "247a84184f6d3762e1ba8426da5ea22437b04792ee7a6ae0554d3681be9cc861"
+  },
+  "publicationBoundary": {
+    "participantJudgmentClosed": true,
+    "participantJudgmentWasScoreBlind": true,
+    "adjudicationClosed": true,
+    "scoresLocked": true,
+    "ownDebateCalculatedScoresAvailableAsImmutableInputs": true,
+    "modelAuthorsNoIdentityStructureMoveOrScoreField": true,
+    "allLockedMovesMustReceiveProse": true,
+    "legacyAssessmentUnavailable": true,
+    "otherDebatesUnavailable": true,
+    "aiExtensionNeverScored": true
+  },
+  "prohibitedInputs": [
+    "legacy scores",
+    "legacy critiques",
+    "legacy tags",
+    "legacy Overall Commentary",
+    "legacy AI Extension",
+    "other debates",
+    "rankings",
+    "winner comparisons"
+  ]
+}
