@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-64-publication-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-05-debate-64-publication-repair-1",
+  "status": "batch-05-debate-64-bounded-repair-and-complete-publication-validation-passed",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "gate": {
+    "repairContextsPlanned": 1,
+    "repairContextsAttempted": 1,
+    "repairContextsPassed": 1,
+    "repairContextsFailed": 0,
+    "completeDebateValidationPassed": true,
+    "correctedFields": [
+      {
+        "field": "representativeQuotes.con.text",
+        "repairType": "representative-quote",
+        "words": 9,
+        "exactSourceSubstring": true,
+        "sourceMoveId": "con-quantifier-shift-in-thomistic-ways"
+      },
+      {
+        "field": "moveProse.con-first-cause-identification-gap.critique",
+        "repairType": "critique",
+        "words": 118,
+        "characters": 880,
+        "sentences": 4
+      }
+    ],
+    "correctedFieldCount": 2,
+    "movesValidated": 17,
+    "critiquesValidated": 17,
+    "exactSourceQuotesValidated": 2,
+    "overallCommentarySidesValidated": 2,
+    "aiExtensionSidesValidated": 2,
+    "immutableFieldsChanged": 0,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrectionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "failureMessage": null,
+  "artifacts": {
+    "originalFailedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/outputs/debate-64.json",
+    "originalFailedOutputPreserved": true,
+    "repairOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/repair-1/outputs/packet-0.json",
+    "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/repair-1/merged/debate-64.json",
+    "completeValidation": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/repair-1/complete-debate-validation.json",
+    "mergeAudit": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/repair-1/merge-audit.json"
+  },
+  "totals": {
+    "modelContexts": 1,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "transcriptionCostUsdThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "sevenContextResumptionManifestPreparation": true,
+    "sevenContextModelExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrectionModelExecution": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-a-separate-seven-context-batch-05-publication-resumption-manifest"
+}

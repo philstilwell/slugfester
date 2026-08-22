@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-64-publication-repair-merge-audit",
+  "protocolId": "assessment-production-post-canary-batch-05-debate-64-publication-repair-1",
+  "status": "passed",
+  "debateNumber": "64",
+  "originalFailedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/outputs/debate-64.json",
+  "originalFailedOutputSha256": "b65b5a48065f0224ce7fe58f69a0bbf06a93b0566f98bf8d5fb3301f5b241038",
+  "repairOutput": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/repair-1/outputs/packet-0.json",
+    "sha256": "b1881f76f564039d7c0f6fbb814b81afc6d221dab23042333b7a1d156deffc33"
+  },
+  "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/repair-1/merged/debate-64.json",
+  "mergedOutputSha256": "aafd10bdc881bd20afd62c031ccca7eb1c0262ba4f33fcb5abac48c983163d64",
+  "authorizedTransformations": [
+    {
+      "field": "representativeQuotes.con.text",
+      "packetIndex": 0,
+      "operation": "replace-authorized-invalid-field",
+      "before": "each student having a counselor with one counselor for all",
+      "after": "it likewise doesn't follow that there's a first cause"
+    },
+    {
+      "field": "moveProse.con-first-cause-identification-gap.critique",
+      "packetIndex": 0,
+      "operation": "replace-authorized-invalid-field",
+      "before": "Strongest feature: The move sharply separates establishing a causal ground from identifying that ground as perfectly good and worthy of worship, thereby exposing a central burden that cannot be satisfied by causal termination alone. Principal limitation: It functions principally as a demanding undercut rather than a positive demonstration that the missing attributes cannot be derived through subsequent arguments from actuality, simplicity, intellect, goodness, or teleology. Live burden: The affirmative must explicitly bridge from sustaining cause to the attributes required by classical theism, while the negative must evaluate those additional derivations rather than treating their absence from one causal inference as permanent failure. Locked score: The very strong band reflects precise limitation, excellent relevance, disciplined calibration, and fair characterization of the argument's reach, without overstating the identification gap as an impossibility proof.",
+      "after": "Strongest feature: The move separates establishing a causal ground from identifying that ground as perfectly good and worthy of worship, exposing the burden that causal termination alone cannot satisfy. Principal limitation: It remains a demanding undercut rather than a demonstration that the missing attributes cannot be derived through arguments concerning actuality, simplicity, intellect, goodness, or teleology. Live burden: The affirmative must bridge from sustaining cause to the attributes required by classical theism, while the negative must evaluate those derivations rather than treating their absence from this causal inference as failure. Locked score: The very strong band reflects precise limitation, relevance, disciplined calibration, and evenhanded characterization of the argument's reach, without overstating the identification gap as an impossibility proof."
+    }
+  ],
+  "authorizedFieldsChanged": 2,
+  "immutableFieldsChanged": 0,
+  "completeDebateValidation": {
+    "status": "passed",
+    "debateNumber": "64",
+    "moves": 17,
+    "critiques": 17,
+    "minimumCritiqueCharacters": 880,
+    "tags": 0,
+    "quoteExactSourceMatches": 2,
+    "overallCommentarySides": 2,
+    "noveltyItems": 18,
+    "introducedItems": 2,
+    "newArguments": 4,
+    "aiExtensionSides": 2,
+    "calculatedScoresAuthoredByModel": 0,
+    "lockedScoresUnchanged": true
+  },
+  "modelAuthoredScores": 0,
+  "lockedScoresUnchanged": true
+}
