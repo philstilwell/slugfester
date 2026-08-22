@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-audio-source-transport-recovery-3-diagnosis",
+  "status": "preserved-recovery-2-no-hls-format-failure-diagnosed-official-route-selected",
+  "batchNumber": 5,
+  "userAuthorization": "The user replied 'I authorize that' to authorization for deterministic diagnosis of the preserved Debate 189 recovery-2 failure, read-only public metadata and route discovery, one newly frozen public-source download attempt without private cookies or retries, and automatic continuation through Debate 05 and complete cohort validation if successful, with direct incremental cost capped at $0.",
+  "preservedFailure": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-2/execution.json",
+    "sha256": "24a0fa6646014010b5354fd8cf6ecf4f5f0b2852d2a8441ba58f8e2431f8c1d1",
+    "category": "requested-web-safari-hls-format-unavailable",
+    "exactStderrEvidence": "ERROR: [youtube] 3DHvNRK452c: Requested format is not available.",
+    "exactStderrEvidenceLocation": "preserved-current-task-execution-transcript",
+    "downloadCliInvocations": 1,
+    "debate05Invocations": 0,
+    "retries": 0
+  },
+  "diagnosis": {
+    "failureBoundary": "format-selection-before-media-download",
+    "mediaBytesDownloadedByRecovery2": 0,
+    "canonicalSourceIdentityChanged": false,
+    "protectedEvidenceChanged": false,
+    "modelOrPaidServiceUsed": false,
+    "failedPartialOutputAcceptedOrReused": false
+  },
+  "selectedCorrection": {
+    "routeDiscovery": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-3/route-discovery.json",
+      "sha256": "8e3b0b79488e0fc9b9284a19cbf86d17b663f81ac69dcf3012d9384f623aab53"
+    },
+    "route": "official-broadcaster-same-episode-mp3-delivery",
+    "canonicalEvidenceRemainsYoutubeVideoId": "3DHvNRK452c",
+    "officialEpisodeAudioUsedOnlyForLocalAudioVerification": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-work-item-preparation.json": "866fd690502324ff22f3fe18287012aed943055c4deb4551b282968a90ee4a82",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-work-items.json": "0f46a282c597b874b2dae8f44ce26096533d645b65c777727e2b076b610830e0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-preparation-failure-diagnosis.json": "afcf55cced41747d5d97b70dfeffdd22c39ab65b5e3f8f65bec3204cd801382f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-1/correction-plan.json": "21d4dc26e84d77a8fe0d9d2d83a6ceeeffeaac33c0cb642a0294fa061072b28e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-1/execution-activation.json": "6b074db43b7d7eb0eb11637e82036d2002e411f707d0848fda984083a01b3684",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-1/execution.json": "a9817826525c52762333356974081680d69e857f64679fbeb757f8c37dd4f038",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-2/failure-diagnosis.json": "7ed5e914f5421c7bf645730afcf3e79996e8de394cacf27b373e0fcd4d3121da",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-2/correction-plan.json": "76a2ab2254f39b57f2c3287f7af028732683588d476471341e02ba833a6f696c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-2/execution-activation.json": "0ba6178aca1cb179dbeb11c92c417c4e9cf0de2be8dacc8dcc741c33df80b2ed",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-2/execution.json": "24a0fa6646014010b5354fd8cf6ecf4f5f0b2852d2a8441ba58f8e2431f8c1d1"
+  },
+  "nextAction": "freeze-validate-commit-and-push-recovery-3-before-media-download"
+}
