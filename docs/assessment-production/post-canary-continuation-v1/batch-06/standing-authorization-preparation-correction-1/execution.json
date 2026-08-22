@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-standing-authorization-preparation-correction-1-execution",
+  "protocolId": "assessment-production-post-canary-batch-06-standing-authorization-preparation-correction-1",
+  "status": "passed-batch-06-standing-authorization-preparation-correction-1",
+  "startedAt": "2026-08-22T20:05:39.955Z",
+  "completedAt": "2026-08-22T20:05:40.122Z",
+  "activation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization-preparation-correction-1/execution-activation.json",
+    "sha256": "ba832751c97b776159802a9b6ddaf8b0114aabbd0849735308d3453f6cfd7008",
+    "bytes": 3819
+  },
+  "appliedSources": [
+    {
+      "path": "scripts/lib/assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "165fd367eb968e58c6d9cd3b922596affb9b4e44ba085af00dc827a9fcba6b1e",
+      "bytes": 6308
+    },
+    {
+      "path": "scripts/prepare-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "69b3afe5caa9a7af88e64c6febdeeef9d2ec3c0760ccc1f89929ac11c91bab2f",
+      "bytes": 12696
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-06-standing-authorization.mjs",
+      "sha256": "e26cee556206f220971903e9e430487578577e6c040804869562844359c6cfe6",
+      "bytes": 2775
+    }
+  ],
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization.json",
+    "sha256": "b6d7f27c77d76fbdf609d22e0b60b0314b0b8d58c1905d8f84bdcebba58e13f2",
+    "bytes": 16687
+  },
+  "validation": {
+    "preparationPasses": 1,
+    "preparationExitCode": 0,
+    "validationReplays": 1,
+    "validationExitCode": 0,
+    "stdoutSha256": "b503f850f5a1032242cf8902bceff150bdd4814811724bb8bbe6a44848d3443f",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "totals": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "timeoutExtensions": 0,
+    "rollbacks": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "commit-and-push-corrected-batch-06-standing-authorization-then-resume-discovery-preparation"
+}

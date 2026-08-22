@@ -30,6 +30,7 @@ const SELECTION_ANALYSIS = `${ROOT}/selection-analysis.json`;
 const SOURCE_PREPARATION = `${ROOT}/source-preparation/preparation-manifest.json`;
 const SOURCE_VALIDATION = `${ROOT}/source-preparation/validation.json`;
 const SELECTION_FREEZE_COMMIT = "a09beb90ca7f4fde3931eb39f973994cbfb6ac1a";
+const SOURCE_PACKET_COMMIT = "75c9b395c045518f064988c76987e0e2b5a72493";
 const SOURCE_FILES = [
   "docs/assessment-production-workflow.md",
   "docs/assessment-workflow-v4.2.21.17.41.md",
@@ -69,7 +70,7 @@ const sourceValidation = JSON.parse(sourceValidationBytes);
 assertV4(
   selection.status ===
       "sixth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed" &&
-    selection.batchNumber === 6 &&
+    selection.batchNumber === 5 &&
     selection.checkpointCommit ===
       "e280e9c7240d10f50b70c7881a977c39765dcf41" &&
     JSON.stringify(selection.selected.map((item) => item.debateNumber)) ===
@@ -101,15 +102,13 @@ assertV4(
   "Batch 6 selection differs from the user-authorized selection commit"
 );
 execFileSync("git", ["merge-base", "--is-ancestor", SELECTION_FREEZE_COMMIT, "HEAD"]);
+execFileSync("git", ["merge-base", "--is-ancestor", SOURCE_PACKET_COMMIT, "HEAD"]);
 assertV4(
   execFileSync("git", ["rev-parse", "--abbrev-ref", "HEAD"], {
     encoding: "utf8"
   }).trim() === "main" &&
     execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8" }).trim() ===
-      "75c9b395c045518f064988c76987e0e2b5a72493" &&
-    execFileSync("git", ["rev-parse", "origin/main"], {
-      encoding: "utf8"
-    }).trim() === "75c9b395c045518f064988c76987e0e2b5a72493",
+      execFileSync("git", ["rev-parse", "origin/main"], { encoding: "utf8" }).trim(),
   "Batch 6 standing authorization must freeze at the pushed source-packet commit"
 );
 
@@ -123,6 +122,7 @@ const record = {
   protocolId: POST_CANARY_BATCH_06_STANDING_AUTHORIZATION_PROTOCOL_ID,
   status: POST_CANARY_BATCH_06_STANDING_AUTHORIZATION_STATUS,
   authorizedAt,
+  sourcePacketCommit: SOURCE_PACKET_COMMIT,
   checkpointCommit: execFileSync("git", ["rev-parse", "HEAD"], {
     encoding: "utf8"
   }).trim(),

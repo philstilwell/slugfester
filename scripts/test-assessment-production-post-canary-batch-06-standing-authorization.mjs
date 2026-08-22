@@ -2,6 +2,7 @@
 
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
 
 import {
@@ -12,7 +13,10 @@ import {
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const { record, bytes } =
   await loadAndValidatePostCanaryBatch06StandingAuthorization();
-assert.equal(record.checkpointCommit, "75c9b395c045518f064988c76987e0e2b5a72493");
+const SOURCE_PACKET_COMMIT = "75c9b395c045518f064988c76987e0e2b5a72493";
+assert.equal(record.sourcePacketCommit, SOURCE_PACKET_COMMIT);
+execFileSync("git", ["merge-base", "--is-ancestor", SOURCE_PACKET_COMMIT, "HEAD"]);
+execFileSync("git", ["merge-base", "--is-ancestor", record.checkpointCommit, "HEAD"]);
 assert.equal(record.authorizedSequence.length, 11);
 assert.equal(record.selectedDebates.length, 10);
 assert.equal(record.userAuthorization.supersedesPerStageUserApprovalPausesWithinFrozenScope, true);

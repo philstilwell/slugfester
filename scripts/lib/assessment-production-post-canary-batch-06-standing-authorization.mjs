@@ -31,6 +31,7 @@ export function validatePostCanaryBatch06StandingAuthorization(record) {
       record.status === POST_CANARY_BATCH_06_STANDING_AUTHORIZATION_STATUS &&
       record.productionCanary === false &&
       record.batchNumber === 6 &&
+      record.sourcePacketCommit === "75c9b395c045518f064988c76987e0e2b5a72493" &&
       record.stagingOnly === true &&
       !Number.isNaN(Date.parse(record.authorizedAt)) &&
       record.userAuthorization?.instruction ===
