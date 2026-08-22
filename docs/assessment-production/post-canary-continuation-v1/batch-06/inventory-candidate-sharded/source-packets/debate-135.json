@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-candidate-sharded-inventory",
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "motion": "Did a first-century Jewish preacher named Jesus exist behind the Christian traditions, or did Christianity develop from mythic and scriptural materials without such a person?",
+  "sides": {
+    "pro": {
+      "label": "Historical Jesus",
+      "speakers": [
+        "Bart Ehrman"
+      ]
+    },
+    "con": {
+      "label": "Jesus mythicism",
+      "speakers": [
+        "Robert Price"
+      ]
+    }
+  },
+  "durationSeconds": 9250,
+  "eventCount": 3576,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/GzjYmpwbHEA/transcript.txt",
+    "transcriptSha256": "6ef1c455e378cc1edb2dc687b3cfbdcc64814c9ed0f46f6a5ca73b12e6545017",
+    "eventsPath": ".assessment-cache/captions/GzjYmpwbHEA/events.json",
+    "eventsSha256": "36cdb59103dbf8b2759f801c5f5b1dc9828016ed4fe46d889fc3b31f72550b2c",
+    "localManifestPath": ".assessment-cache/captions/GzjYmpwbHEA/manifest.json",
+    "localManifestSha256": "247a84184f6d3762e1ba8426da5ea22437b04792ee7a6ae0554d3681be9cc861"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-06/debate-135.jsonl",
+    "sourceLedgerSha256": "636ec7d0a3437ce3475e8cc5c9942ca0c951e9f228270bf14cd77e004cd60b5b",
+    "sourceLedgerBytes": 207957,
+    "sourceLedgerEventCount": 3576,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/plans/debate-135.json",
+    "partitionPlanSha256": "4dc37ca8585312720a5730dea4ebee9baba513ce69364716ab55a774df90a508",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

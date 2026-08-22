@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-candidate-sharded-inventory",
+  "debateNumber": "169",
+  "debateId": "lennox-krauss-universe-god-question-2013",
+  "motion": "Do modern cosmology, fine-tuning, and the universe's existence support a divine mind or a self-contained natural account?",
+  "sides": {
+    "pro": {
+      "label": "Theistic explanation",
+      "speakers": [
+        "John Lennox"
+      ]
+    },
+    "con": {
+      "label": "Physical cosmology",
+      "speakers": [
+        "Lawrence Krauss"
+      ]
+    }
+  },
+  "durationSeconds": 4796,
+  "eventCount": 2205,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/yotpTOKLZ00/transcript.txt",
+    "transcriptSha256": "be5d6b13f6ecad27b61a330d5162492b0d0cb79ed4fda88e9c81e231263aa0f9",
+    "eventsPath": ".assessment-cache/captions/yotpTOKLZ00/events.json",
+    "eventsSha256": "6c79f37758d5c46c64650ad142383d59efef5833e6a7f80ffeef2f4679565922",
+    "localManifestPath": ".assessment-cache/captions/yotpTOKLZ00/manifest.json",
+    "localManifestSha256": "a2a78ab6b0c3cdb21a324727f64a1d59857522f747a8a03d2d4e3ca2d2b80083"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-06/debate-169.jsonl",
+    "sourceLedgerSha256": "38da8da35d214e7aa7d6be00ac59dd299b5eabbeda126fdf8371f43ace01f906",
+    "sourceLedgerBytes": 127211,
+    "sourceLedgerEventCount": 2205,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/source-preparation/plans/debate-169.json",
+    "partitionPlanSha256": "95a615e2fd7fe4f081cd72739b88f6a8e6c0421024d8b31e85ea01d211b8b11c",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
