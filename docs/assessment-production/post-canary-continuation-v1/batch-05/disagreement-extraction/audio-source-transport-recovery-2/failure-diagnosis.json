@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-audio-source-transport-recovery-2-diagnosis",
+  "status": "preserved-batch-05-debate-189-recovery-1-http-403-transport-failure-diagnosed",
+  "batchNumber": 5,
+  "userAuthorization": "The user replied 'I authorize that' to the explicit request to preserve and diagnose the HTTP 403 failure, then prepare and execute one final hash-locked alternative Debate 189 public-source transport route with no retries and a direct incremental cost cap of $0; if successful, continue Debate 05 and the remaining frozen clips and cohort under the prior authorization, and stop on any further source or validation failure.",
+  "preservedFailure": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-1/execution.json",
+    "sha256": "a9817826525c52762333356974081680d69e857f64679fbeb757f8c37dd4f038",
+    "category": "public-source-direct-media-transport-http-403",
+    "exactError": "ERROR: unable to download video data: HTTP Error 403: Forbidden",
+    "exactErrorEvidenceLocation": "preserved-current-task-execution-transcript",
+    "repositoryExecutionRecordContainsFailedCommandOnly": true,
+    "debateNumber": "189",
+    "sourceVideoId": "3DHvNRK452c",
+    "downloadCliInvocations": 1,
+    "retries": 0,
+    "debate05Invocations": 0
+  },
+  "diagnosis": {
+    "failureBoundary": "direct-media-file-transport-after-youtube-extraction",
+    "exactServerPolicyCauseEstablished": false,
+    "sourceIdentityChanged": false,
+    "protectedEvidenceChanged": false,
+    "audioPlayedOrSemanticallyEvaluated": false,
+    "modelOrPaidServiceUsed": false,
+    "failedPartialOutputAcceptedOrReused": false
+  },
+  "boundedAlternative": {
+    "route": "web-safari-hls-manifest-native-segment-transport",
+    "reason": "The authenticated local yt-dlp runtime defines web_safari HLS delivery separately from direct HTTPS formats; the HLS token policy is not required, so an HLS-only native-segment route is a distinct bounded transport without changing the public video identity.",
+    "publicSourceUrl": "https://www.youtube.com/watch?v=3DHvNRK452c",
+    "playerClient": "web_safari",
+    "formatSelector": "best[protocol^=m3u8]",
+    "downloader": "m3u8:native",
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0
+  },
+  "authenticatedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-work-item-preparation.json": "866fd690502324ff22f3fe18287012aed943055c4deb4551b282968a90ee4a82",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-work-items.json": "0f46a282c597b874b2dae8f44ce26096533d645b65c777727e2b076b610830e0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-preparation-failure-diagnosis.json": "afcf55cced41747d5d97b70dfeffdd22c39ab65b5e3f8f65bec3204cd801382f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-1/correction-plan.json": "21d4dc26e84d77a8fe0d9d2d83a6ceeeffeaac33c0cb642a0294fa061072b28e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-1/execution-activation.json": "6b074db43b7d7eb0eb11637e82036d2002e411f707d0848fda984083a01b3684",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-1/execution.json": "a9817826525c52762333356974081680d69e857f64679fbeb757f8c37dd4f038"
+  },
+  "toolRuntime": {
+    "ytDlpVersion": "2026.03.17",
+    "files": {
+      "/Users/philstilwell/Library/Python/3.13/lib/python/site-packages/yt_dlp/extractor/youtube/_base.py": "c48eb07cbfa38a6cbc02a5082b956d5c96ab779eac5558fbd15fe549ac671856",
+      "/Users/philstilwell/Library/Python/3.13/lib/python/site-packages/yt_dlp/extractor/youtube/_video.py": "d1b49839b125f5f1aff7bf94f7ef981e0b5a9fb90c50458aa7812e80b64321bc",
+      "/Users/philstilwell/Library/Python/3.13/lib/python/site-packages/yt_dlp/version.py": "f4605ddc2f2b42ebddbd0374cfb3c66cc5776f5b75a1cbc28fc6aa1a57639016"
+    }
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAction": "freeze-validate-commit-and-push-one-final-hls-transport-recovery"
+}
