@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-side-packet-preparation-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-05-side-packet-preparation-recovery-1",
+  "status": "frozen-active-batch-05-side-packet-preparation-source-compatibility-correction-plan",
+  "frozenAt": "2026-08-22T01:00:41.000Z",
+  "checkpointCommit": "f2c6116482e76befd84e6f3536db7d3933a18c19",
+  "recoveryAttempt": 1,
+  "correction": {
+    "exactFile": "scripts/prepare-assessment-production-post-canary-batch-05-inventory-side-packets.mjs",
+    "preCorrectionSha256": "5da7ee7fc310542f249d24cabc43a7a8a02b723530d24ba8805c469ef795cad9",
+    "postCorrectionSha256": "3e9c693741c4e16d578d03355d06061ef393ea69fe61b2449732bb4a667e4c5d",
+    "oldExpectation": "exact-source-zero-lexical-token-row-preserved-with-zero-count",
+    "newExpectation": "all-source-rows-have-positive-repository-lexical-token-count",
+    "replacementCount": 1
+  },
+  "lockedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/inventory-candidate-sharded/preparation-manifest.json": "ef0c741c7cb36a1e651acbe24733ba3f932c94b8db837eb007a14627ba036494",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/inventory-candidate-sharded/plan-execution-activation.json": "83005fd80cff2c4c8f5ebd563e8a307394713d6315c23e6d3aa0072705f94ffc",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/inventory-candidate-sharded/plan-model-execution.json": "3a7aca5442beafaecfd4423f6c746586a778edb4fea357faa3b24eb652078a23",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/inventory-candidate-sharded/plan-analysis.json": "9dc5c1eab3c96800c491bdd6fd719eedcfa5ef9d367ffcd313fe7fcde12d5feb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685"
+  },
+  "execution": {
+    "previewCommand": "node scripts/prepare-assessment-production-post-canary-batch-05-inventory-side-packets.mjs prepare --frozen-at 2026-08-22T01:02:00.000Z",
+    "writeCommand": "node scripts/prepare-assessment-production-post-canary-batch-05-inventory-side-packets.mjs prepare --write --frozen-at 2026-08-22T01:02:00.000Z",
+    "validationCommand": "node scripts/prepare-assessment-production-post-canary-batch-05-inventory-side-packets.mjs validate",
+    "correctedPreviewAttemptsMaximum": 1,
+    "writePassesMaximum": 1,
+    "validationPassesMaximum": 1,
+    "modelsAuthorized": false,
+    "paidServicesAuthorized": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "preservation": {
+    "sourcePreparationByteIdentical": true,
+    "plannerOutputsByteIdentical": true,
+    "standingAuthorizationByteIdentical": true,
+    "modelSettingsUnchanged": true,
+    "schedulerUnchanged": true,
+    "scoresDerived": 0,
+    "productionMutations": 0
+  },
+  "nextAuthorizedAction": "execute-one-corrected-batch-05-side-packet-preparation-preview"
+}

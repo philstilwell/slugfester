@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-side-packet-preparation-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-05-side-packet-preparation-recovery-1",
+  "status": "frozen-batch-05-side-packet-preparation-stale-source-compatibility-expectation-diagnosed",
+  "diagnosedAt": "2026-08-22T01:00:41.000Z",
+  "checkpointCommit": "f2c6116482e76befd84e6f3536db7d3933a18c19",
+  "failureCategory": "deterministic-validation-stale-cohort-expectation",
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-05-inventory-side-packets.mjs prepare --frozen-at 2026-08-22T00:59:54.000Z",
+  "failure": {
+    "message": "Batch 5 source preparation boundary drifted",
+    "writesCompleted": 0,
+    "modelsExecuted": 0,
+    "paidServicesUsed": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "diagnosis": "The inherited side-packet preparation harness expects the Batch 3 source-compatibility status exact-source-zero-lexical-token-row-preserved-with-zero-count. The frozen Batch 5 preparation manifest correctly records all-source-rows-have-positive-repository-lexical-token-count with zero occurrences, so the stale cohort-specific status string alone rejects the otherwise authenticated boundary.",
+  "evidence": {
+    "harnessSha256": "5da7ee7fc310542f249d24cabc43a7a8a02b723530d24ba8805c469ef795cad9",
+    "sourcePreparationSha256": "ef0c741c7cb36a1e651acbe24733ba3f932c94b8db837eb007a14627ba036494",
+    "frozenSourceCompatibilityStatus": "all-source-rows-have-positive-repository-lexical-token-count",
+    "frozenSourceCompatibilityOccurrences": 0,
+    "staleHarnessExpectation": "exact-source-zero-lexical-token-row-preserved-with-zero-count"
+  },
+  "boundedCorrection": {
+    "kind": "replace-one-stale-cohort-specific-status-expectation",
+    "writableFiles": [
+      "scripts/prepare-assessment-production-post-canary-batch-05-inventory-side-packets.mjs"
+    ],
+    "writableExpectationCount": 1,
+    "sourceCandidateOrEvidenceChange": false,
+    "modelContextChange": false,
+    "schemaChange": false,
+    "scoreChange": false,
+    "retryOfModelContext": false,
+    "recoveryAttempt": 1
+  },
+  "authorization": {
+    "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json",
+    "standingAuthorizationSha256": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685",
+    "boundedFirstRecoveryAuthorized": true,
+    "additionalUserApprovalRequired": false
+  }
+}
