@@ -1,0 +1,254 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-42-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-debate-42-publication-resumption-2-repair-1",
+  "contextIndex": 1,
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "42",
+  "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+  "repairType": "critique-word-boundary",
+  "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-2/outputs/debate-42.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/packets/debate-42.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-begotten-son-godhead-distinction.critique",
+      "moveProse.con-changing-reality-epistemic-change.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "recursiveRecoveryMaximum": 0
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-begotten-son-godhead-distinction.critique",
+      "moveId": "con-begotten-son-godhead-distinction",
+      "originalCritique": "Strongest feature: The asymmetric-predicate argument directly pressures the Latin identity account: begottenness applies to the Son but not to God as such, apparently generating strict distinction that can be tested against the previously stated intrinsic-item criterion. Principal limitation: The formulation shifts among God, God as such, and Godhead without completely stabilizing their semantic scope, leaving room for the defender to distinguish personal from essential predication without conceding constituent nonidentity. Live burden: The critic must establish that the predicate asymmetry entails ontological distinctness rather than relationally qualified identity and that the resulting distinction is a positive intrinsic item, not merely opposition within one essence. Locked score: The supplied very-strong placement reflects incisive responsiveness, appropriate qualification, and powerful reuse of the composition criterion, moderated by the unresolved inference from predicative asymmetry to composition.",
+      "originalWords": 131,
+      "originalCharacters": 1021,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-begotten-son-godhead-distinction",
+        "sectionId": "trinitarian-persons-and-relations",
+        "side": "con",
+        "speaker": "Joe Schmid",
+        "moveKind": "reply",
+        "proposition": "Because the Son is begotten while God as such is not begotten, the Son appears strictly distinct from the Godhead and, being intrinsic rather than extrinsic to God, constitutes composition under the stated part criterion.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "42:37",
+        "sourceSpan": {
+          "startEvent": 1093,
+          "endEvent": 1119,
+          "startMs": 2557599,
+          "endMs": 2620640
+        },
+        "sourceExcerpt": "part of consiliar um trinitarianism that these relations are asymmetric. Um so if God is not begotten uh at extra but the son is begotten it seems as though we have some kind of strict distinction between the son and god as such. Uh the godhead maybe we can say. Um but if that's the case then because the sun is not exttrinsic to God it would be intrinsic to God but not strictly",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-trinitarian-tension"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-latin-trinity-subsistent-relations"
+          ],
+          "components": [
+            {
+              "componentId": "con-begotten-son-godhead-distinction-component-01",
+              "targetMoveId": "pro-latin-trinity-subsistent-relations",
+              "text": "Explain how the Son can be identical with the Godhead when begottenness is asymmetrically true of the Son.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-begotten-son-godhead-distinction-component-02",
+              "targetMoveId": "pro-latin-trinity-subsistent-relations",
+              "text": "Show why the intrinsic Son does not satisfy the positive-item criterion for composition.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly pressures the Latin identity account with the asymmetric predicate of begottenness and reapplies the intrinsic-item criterion.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "Within full answers, it explicitly contacts the model's decisive identity claim through a focused Leibniz-style distinction."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within full answers, it explicitly contacts the model's decisive identity claim through a focused Leibniz-style distinction."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The asymmetric-predicate argument is recoverable, though the shift between God, God as such, and the Godhead leaves one material scope question."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The repeated appearance and seeming language appropriately presents a prima facie distinction rather than claiming a settled contradiction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The Son is identical with the essence absolutely but distinguished through an opposed relation of origin.",
+          "decisiveQualification": "The asymmetric predicates still require an account of why begottenness applies to the Son but not to God as such without strict intrinsic distinction."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly advances the route's Trinitarian tension at the most difficult identity point and ranks at the ceiling."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that the Son is begotten while God as such is not, inferring strict distinction and then intrinsic composition because the Son is not extrinsic to God.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-changing-reality-epistemic-change.critique",
+      "moveId": "con-changing-reality-epistemic-change",
+      "originalCritique": "Strongest feature: The conditional argument clearly joins immutability, pure actuality, and omniscience by pressing whether temporally changing truths require an omniscient knower to acquire or lose knowledge, making the epistemic tension immediately relevant to the motion. Principal limitation: Its crucial premise may conflate changes in what makes temporally indexed propositions true with intrinsic changes in the knower, despite acknowledging the alternative of timelessly knowing every temporal truth through one invariant cognitive act. Live burden: The critic must demonstrate that presently varying truth conditions entail corresponding intrinsic epistemic differences rather than merely different extrinsic predications of unchanged comprehensive knowledge. Locked score: The supplied very-strong placement appropriately reflects excellent structure, central burden contact, explicit qualifications, and strong evidential framing, while recognizing that the inference from changing reality to intrinsic cognitive change remains disputable.",
+      "originalWords": 131,
+      "originalCharacters": 1050,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-changing-reality-epistemic-change",
+        "sectionId": "freedom-contingency-and-divine-knowledge",
+        "side": "con",
+        "speaker": "Joe Schmid",
+        "moveKind": "constructive",
+        "proposition": "If an immutable and purely actual God cannot gain or lose knowledge while omniscience of changing contingent reality requires such epistemic change, then classical theism cannot accommodate that changing reality.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "68:54",
+        "sourceSpan": {
+          "startEvent": 1796,
+          "endEvent": 2032,
+          "startMs": 4134480,
+          "endMs": 4593600
+        },
+        "sourceExcerpt": "what happens in time. And this commitment of CT entails premise one CT is classical theism. uh since if God knows only himself then God cannot acquire any new knowledge or lose old knowledge since God himself does not change and hence God's knowledge of himself does not change either. Botheus also says um quote God's knowledge which passes over every change views its own direct",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 66,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-epistemic-tension"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive argument contends that omniscience of temporally changing truths requires acquiring or losing knowledge, contrary to immutable self-knowledge and pure actuality.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (93 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (93 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conditional premises concerning immutable self-knowledge, changing truths, and epistemic acquisition are recoverable and explicitly structured."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The incompatibility is asserted conditionally, but the premise equating changed truth with intrinsic epistemic change remains disputable."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "An immutable God timelessly knows all temporal truths without acquiring or losing any intrinsic cognitive state.",
+          "decisiveQualification": "The argument requires an account of how presently indexed and changing truths can vary without any corresponding epistemic difference in omniscient knowledge."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 83); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "Within the central tier, it directly advances the indispensable epistemic-tension bridge and occupies the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (87 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt states that immutable divine self-knowledge cannot acquire or lose content and invokes Boethius on divine knowledge passing over every change.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

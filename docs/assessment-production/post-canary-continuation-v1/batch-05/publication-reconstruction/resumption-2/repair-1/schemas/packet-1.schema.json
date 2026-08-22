@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-05-debate-42-publication-repair-1",
+  "title": "Batch 5 Debate 42 publication repair packet 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-05-debate-42-publication-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-05-debate-42-publication-resumption-2-repair-1"
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 1
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "42"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "schmid-tomaszewski-divine-simplicity-2020"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "con-begotten-son-godhead-distinction",
+        "con-changing-reality-epistemic-change"
+      ],
+      "properties": {
+        "con-begotten-son-godhead-distinction": {
+          "type": "string",
+          "minLength": 880
+        },
+        "con-changing-reality-epistemic-change": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}
