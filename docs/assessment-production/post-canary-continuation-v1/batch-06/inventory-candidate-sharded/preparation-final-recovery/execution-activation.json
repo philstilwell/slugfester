@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-assessment-production-authorized-final-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-06-inventory-preparation-final-recovery",
+  "status": "batch-06-inventory-preparation-final-recovery-activated-once",
+  "activatedAt": "2026-08-22T20:54:00.000Z",
+  "checkpointCommit": "1907140e85a3ac0a7fd97505ae234acd992b3d30",
+  "branch": "main",
+  "originMain": "1907140e85a3ac0a7fd97505ae234acd992b3d30",
+  "correctionPlan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-final-recovery/correction-plan.json",
+    "sha256": "1e793cb3a7d013f14ab7dd05a2cc6127a55b4d132e3848eb39f21244eb4f90f3"
+  },
+  "userAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-final-recovery/user-authorization.txt",
+    "sha256": "9b17995280026b09956865bdba19d13e5084c52d761e005e6f17a14586abe370"
+  },
+  "target": {
+    "path": "scripts/prepare-assessment-production-post-canary-batch-06-inventory.mjs",
+    "preimageSha256": "cd2cb5c41ab734113723d81527d322ffba469ae33689e76908100fbf5934bd27"
+  },
+  "proposal": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-final-recovery/proposed-preparation.mjs",
+    "sha256": "af84b1078c82bc6c52211a22ce28ecab8191fb1420526fff2727c41cc0844599"
+  },
+  "protectedSelection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/selection.json",
+    "sha256": "2dbf2e111715ba22ee161bfd23e33a3ef1051c377d35705f6cf74e7946448932",
+    "writeAuthorized": false
+  },
+  "execution": {
+    "attempts": 1,
+    "correctedPreparationPreviews": 1,
+    "retries": 0,
+    "reruns": 0,
+    "additionalRecoveriesForThisProblem": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAction": "apply-proposal-byte-for-byte-and-run-one-corrected-inventory-preparation-preview"
+}
