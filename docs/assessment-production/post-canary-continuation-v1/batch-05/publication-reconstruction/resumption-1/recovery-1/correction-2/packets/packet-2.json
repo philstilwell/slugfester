@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-109-pro-correction-2-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-resumption-1-recovery-1-debate-109-pro-correction-2",
+  "contextIndex": 2,
+  "packetIndex": 2,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "109",
+  "debateId": "mclatchie-oconnor-theism-naturalism-reality-2022",
+  "shardId": "shard-01-pro-shared",
+  "repairType": "critique-word-boundary",
+  "immutableRejectedShardOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/recovery-1/outputs/context-4.json",
+  "originalShardPacket": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/recovery-1/packets/context-4.json",
+  "oneTimeRecursiveRecoveryException": true,
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "content.moveProse.pro-suffering-evidential-limits.critique",
+      "content.moveProse.pro-regular-world-occasional-harm.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherShardFieldsImmutable": true,
+    "acceptedConShardImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "furtherRecursiveRecoveryMaximum": 0
+  },
+  "corrections": [
+    {
+      "field": "content.moveProse.pro-suffering-evidential-limits.critique",
+      "moveId": "pro-suffering-evidential-limits",
+      "originalCritique": "Strongest feature: The reply correctly distinguishes the existence of suffering from its total comparative evidential weight, adding potentially relevant considerations about dependence among instances, convergent positive evidence, and the precondition of consciousness. Principal limitation: Finite evidential value does not entail weak evidential value, the asserted theistic advantage concerning consciousness is not defended here, and invoking other positive evidence can offset suffering only if that evidence is independently established; animal suffering receives no distinct explanation. Live burden: The proponent must specify the claimed dependence structure, defend comparative expectations for consciousness and suffering, integrate rather than merely juxtapose positive and negative evidence, and address the scale and distribution of nonhuman pain. Locked score: The mixed band recognizes a pertinent probabilistic framework and appropriately limited conclusion, while reflecting incomplete support, somewhat overstated likelihood claims, partial responsiveness, and an unresolved animal-specific challenge.",
+      "originalWords": 138,
+      "originalCharacters": 1122,
+      "excessWordsAboveAcceptanceMaximum": 8,
+      "lockedMove": {
+        "moveId": "pro-suffering-evidential-limits",
+        "sectionId": "suffering-and-divine-goodness",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "The evidential force of suffering is limited by dependence among instances, convergent positive evidence for theism, and suffering's dependence on consciousness.",
+        "importance": 3,
+        "finalScore": 72,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "52:19",
+        "sourceSpan": {
+          "startEvent": 1391,
+          "endEvent": 1456,
+          "startMs": 3139520,
+          "endMs": 3277520
+        },
+        "sourceExcerpt": "of suffering Consciousness as Richard SW burn has shown is much more probable much more likely on the supposition of theism than on the supposition of naturalism and therefore evil and suffering is highly unexpected highly surprising whether you're a theist or whether you're an atheist uh furthermore um the problem of evil has finite evidential value as I think Alex would agree",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 63,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-suffering-bridge"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-gratuitous-suffering-framework",
+            "con-animal-suffering-naturalistic-expectation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-suffering-evidential-limits-component-01",
+              "targetMoveId": "con-gratuitous-suffering-framework",
+              "text": "Show why apparently unnecessary suffering should not substantially disconfirm an all-loving and powerful God.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-suffering-evidential-limits-component-02",
+              "targetMoveId": "con-animal-suffering-naturalistic-expectation",
+              "text": "Explain animal suffering without relying only on freedom, human moral development, or assured compensation.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly limits the general evidential inference through dependence, positive evidence, and consciousness, but it does not contact the distinct animal-suffering demand.",
+          "responsivenessWithinClass": {
+            "value": 73,
+            "rationale": "This is a partial answer that contacts the decisive general evidential component while leaving the animal-specific challenge unanswered."
+          },
+          "responsiveness": {
+            "value": 73,
+            "rationale": "This is a partial answer that contacts the decisive general evidential component while leaving the animal-specific challenge unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Finite evidential value and comparative consciousness claims are clear, though the proposed dependence among suffering instances is not fully specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The finite-evidence conclusion is cautious, but the claim that consciousness is much more likely on theism is asserted more strongly than defended."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Even dependent instances of suffering may collectively remain substantially more expected under naturalism than under theism.",
+          "decisiveQualification": "Finite evidential value does not imply weak evidential value, and positive theistic evidence must be independently warranted before offsetting it."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 59); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "Within central-tier contacts, it directly challenges suffering's evidential force but does not explain the animal-specific data."
+          },
+          "representationalCharity": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 65); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The source argues consciousness is more probable on theism, suffering surprises both views, and the problem of evil has finite evidential value.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "content.moveProse.pro-regular-world-occasional-harm.critique",
+      "moveId": "pro-regular-world-occasional-harm",
+      "originalCritique": "Strongest feature: The reply offers a clear purpose-based account of occasional harm by connecting stable natural regularities with scientific inquiry and morally significant agency, while carefully presenting its modal conclusion as uncertain rather than categorical. Principal limitation: Showing that some harm may accompany lawful regularity does not establish the necessity, magnitude, or actual distribution of suffering, and the argument does not examine whether selective intervention or less damaging laws could preserve predictability; animal suffering remains untreated. Live burden: The defense must explain why relevant goods require approximately these laws and risks, why proportionate interventions would undermine them, and how the account extends beyond minor human harms to extensive nonhuman suffering. Locked score: The strong/competent band reflects coherent reasoning, calibrated qualification, good precision, and direct contact with one suffering example, limited by narrow scope and unresolved alternatives concerning preventability and scale.",
+      "originalWords": 140,
+      "originalCharacters": 1069,
+      "excessWordsAboveAcceptanceMaximum": 10,
+      "lockedMove": {
+        "moveId": "pro-regular-world-occasional-harm",
+        "sectionId": "suffering-and-divine-goodness",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "Minor suffering may be an unavoidable byproduct of a regular, intelligible world whose stable laws enable moral agency and scientific inquiry.",
+        "importance": 2,
+        "finalScore": 79,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "54:34",
+        "sourceSpan": {
+          "startEvent": 1457,
+          "endEvent": 1475,
+          "startMs": 3274640,
+          "endMs": 3327359
+        },
+        "sourceExcerpt": "moral arena in which we find ourselves um from God's perspective and the the Enterprise of science is good which supposes um a regular um predictable intelligible um pattern to the to the to the world um and so um is therefore unclear that there exist possible universes which unfold so elegantly in accordance with scientifically intelligible laws which should not also result in occasional harm",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 66,
+          "characterCount": 396
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-suffering-bridge"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-gratuitous-suffering-framework",
+            "con-animal-suffering-naturalistic-expectation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-regular-world-occasional-harm-component-01",
+              "targetMoveId": "con-gratuitous-suffering-framework",
+              "text": "Whether apparently unnecessary minor harms can have a sufficient purpose in an orderly world.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-regular-world-occasional-harm-component-02",
+              "targetMoveId": "con-animal-suffering-naturalistic-expectation",
+              "text": "Whether animal suffering escapes freedom, soul-making, and compensation explanations.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts minor apparently gratuitous harm by linking it to regular laws, science, and moral agency, but leaves animal suffering unaddressed.",
+          "responsivenessWithinClass": {
+            "value": 72,
+            "rationale": "Within partial answers, it gives a direct purpose-based answer to minor harm while omitting the animal-specific component."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "Within partial answers, it gives a direct purpose-based answer to minor harm while omitting the animal-specific component."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is clearly limited to occasional harm and possible universes with regular scientifically intelligible laws."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The reply carefully says it is unclear that an elegant lawful universe could avoid occasional harm, matching its modest modal support."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Stable laws might permit far less harm, or God might intervene selectively without destroying regularity or inquiry.",
+          "decisiveQualification": "Showing some harm may accompany regular laws does not establish the necessity, quantity, or distribution of actual suffering."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "Within central-tier contacts, it directly addresses a material suffering example but has narrower scope than the broader bridge."
+          },
+          "representationalCharity": {
+            "value": 73,
+            "rationale": "The reply fairly identifies the value of regularity but does not fully address selective intervention or the scale qualification."
+          }
+        },
+        "evidenceBasis": "The source connects the moral arena and scientific inquiry with a regular, predictable, intelligible world and questions whether such a world can avoid occasional harm.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

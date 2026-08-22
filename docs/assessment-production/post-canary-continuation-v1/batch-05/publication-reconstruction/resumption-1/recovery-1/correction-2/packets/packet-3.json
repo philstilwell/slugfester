@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-109-pro-correction-2-packet",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-resumption-1-recovery-1-debate-109-pro-correction-2",
+  "contextIndex": 3,
+  "packetIndex": 3,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "109",
+  "debateId": "mclatchie-oconnor-theism-naturalism-reality-2022",
+  "shardId": "shard-01-pro-shared",
+  "repairType": "critique-word-boundary",
+  "immutableRejectedShardOutput": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/recovery-1/outputs/context-4.json",
+  "originalShardPacket": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/recovery-1/packets/context-4.json",
+  "oneTimeRecursiveRecoveryException": true,
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "content.moveProse.pro-hiddenness-moral-probation.critique",
+      "content.moveProse.pro-supernatural-justification-without-mechanism.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherShardFieldsImmutable": true,
+    "acceptedConShardImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "furtherRecursiveRecoveryMaximum": 0
+  },
+  "corrections": [
+    {
+      "field": "content.moveProse.pro-hiddenness-moral-probation.critique",
+      "moveId": "pro-hiddenness-moral-probation",
+      "originalCritique": "Strongest feature: The reply supplies a definite morally significant purpose for limited divine visibility, connecting hiddenness to character formation and thereby addressing the central demand for compatibility between purposeful divine action and nonbelief. Principal limitation: The asserted necessity is not established, since people routinely make genuine choices while aware of authorities or relationships, and the argument does not show that clear awareness of God would coerce virtue rather than improve informed responsibility; religious geography remains untouched. Live burden: The probation account must explain the mechanism and degree by which divine salience impairs freedom, justify unequal evidential access, and preserve a loving God’s openness to sincere relationship. Locked score: The mixed band reflects direct relevance and an intelligible compatibility proposal, but also materially overstated modal force, missing evidential support, incomplete responsiveness, and insufficient engagement with the strongest informed-choice alternative.",
+      "originalWords": 138,
+      "originalCharacters": 1063,
+      "excessWordsAboveAcceptanceMaximum": 8,
+      "lockedMove": {
+        "moveId": "pro-hiddenness-moral-probation",
+        "sectionId": "hiddenness-and-religious-geography",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "reply",
+        "proposition": "Some divine hiddenness is necessary for earthly life to function as a probationary arena for genuine moral character formation.",
+        "importance": 3,
+        "finalScore": 70,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "92:59",
+        "sourceSpan": {
+          "startEvent": 2502,
+          "endEvent": 2523,
+          "startMs": 5579880,
+          "endMs": 5635239
+        },
+        "sourceExcerpt": "you were hinting at yeah I I do actually um so I as I said in my opening statement I or in my rebuttal I I think that um this world is this life is a probation um I I we live in a moral choice Arena where we mold and shape our character in engaging uh with each other and um making engaging moral decision- making and if if God were um constantly at the Forefront of our awareness",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 80,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-hiddenness-bridge"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-hiddenness-nonresistant-nonbelief",
+            "con-religious-geography-cultural-pattern"
+          ],
+          "components": [
+            {
+              "componentId": "pro-hiddenness-moral-probation-component-01",
+              "targetMoveId": "con-hiddenness-nonresistant-nonbelief",
+              "text": "Whether a perfectly loving God could permit sincere nonbelief while remaining open to relationship.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-hiddenness-moral-probation-component-02",
+              "targetMoveId": "con-religious-geography-cultural-pattern",
+              "text": "Whether the geographic pattern of belief is better explained by cultural production.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The probation proposal gives a direct possible reason for limited awareness, but it does not address why religious access tracks geography.",
+          "responsivenessWithinClass": {
+            "value": 72,
+            "rationale": "Within partial answers, it contacts the decisive divine-purpose premise while leaving cultural distribution and proportional access unanswered."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "Within partial answers, it contacts the decisive divine-purpose premise while leaving cultural distribution and proportional access unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The moral-choice-arena proposition is recoverable and stable, though how much awareness would defeat probation is left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The move says some hiddenness is necessary but does not establish why unmistakable awareness would prevent genuine moral choice or character formation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "People can make genuine moral choices while knowing that authorities, loved ones, or God exist and care about their conduct.",
+          "decisiveQualification": "The probation account must show that divine awareness uniquely coerces virtue rather than merely informing morally significant choice."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (67 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 55,
+            "rationale": "The moral-choice model is asserted without evidence that divine salience would undermine rather than improve responsible character formation."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central affirmative hiddenness bridge by offering a morally sufficient purpose for limited divine visibility."
+          },
+          "representationalCharity": {
+            "value": 61,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (58 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The source describes earthly life as probation and a moral-choice arena in which people shape character, suggesting constant divine awareness would interfere.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "content.moveProse.pro-supernatural-justification-without-mechanism.critique",
+      "moveId": "pro-supernatural-justification-without-mechanism",
+      "originalCritique": "Strongest feature: The move draws a clear epistemic distinction between knowing that something exists and knowing its interaction mechanism, modestly arguing that mechanistic ignorance need not by itself eliminate sufficient justification for supernatural belief. Principal limitation: The mind–brain comparison supplies support only if nonphysical mind is independently credible, whereas identity or realization theories dissolve the proposed interaction parallel; moreover, the move does not present the independent evidence needed to establish a supernatural realm. Live burden: The proponent must identify evidence whose justificatory force survives uncertainty about causal interaction and defend the analogy against physicalist accounts without treating one unresolved problem as validation of another. Locked score: The strong/competent band reflects stable terminology, appropriate qualification, logical coherence, and a useful answer to a subsidiary methodological objection, tempered by modest evidential warrant and dependence on a disputed analogy.",
+      "originalWords": 136,
+      "originalCharacters": 1061,
+      "excessWordsAboveAcceptanceMaximum": 6,
+      "lockedMove": {
+        "moveId": "pro-supernatural-justification-without-mechanism",
+        "sectionId": "comparative-explanation-and-religious-belief",
+        "side": "pro",
+        "speaker": "Jonathan McLatchie",
+        "moveKind": "constructive",
+        "proposition": "Although the mechanism by which a supernatural realm interacts with matter may be unknowable, people can still possess sufficient justification for believing that such a realm exists.",
+        "importance": 2,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "131:42",
+        "sourceSpan": {
+          "startEvent": 3577,
+          "endEvent": 3590,
+          "startMs": 7902400,
+          "endMs": 7936280
+        },
+        "sourceExcerpt": "I don't think that we really can get a handle on how mind interacts with matter um we don't understand how the Mind interacts with the material brain and the same way that I don't think we can understand how the supernatural interacts with the material world that we nonetheless I think can have sufficient justification for believing that there is a supernatural realm even if we",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-comparative-inference-bridge"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive epistemic move has no earlier opposing target; it is assessed within the constructive class for comparative explanatory standards.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (78 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The conclusion is expressly limited to possible sufficient justification despite an unknown interaction mechanism, with stable terms."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move does not claim to explain supernatural interaction and modestly maintains only that mechanistic ignorance need not preclude justification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Mind-brain interaction may not be analogous if mind is identical with or wholly realized by the brain.",
+          "decisiveQualification": "The analogy supports the conclusion only if independent evidence for nonphysical mind or supernatural reality is already available."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 61,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 60); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The source compares unknown supernatural-material interaction with the unresolved mind-brain interaction and claims justification can remain sufficient despite mechanistic ignorance.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
