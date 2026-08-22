@@ -191,11 +191,11 @@ export const debateSummaries = [
     "number": "05",
     "title": "Matt Dillahunty vs Sye Ten Bruggencate: Is It Reasonable to Believe God Exists?",
     "label": "Logic and presuppositions",
-    "date": "2026-05-28",
+    "date": "2026-08-22",
     "duration": "1 hr 55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=OL8LREmbDi0",
     "motion": "Is belief in God reasonable, and can truth, logic, knowledge, induction, and evidence be accounted for without Christian revelation?",
-    "summary": "Ten Bruggencate argues God grounds truth; Dillahunty argues reasonable belief requires public evidence without absolute certainty.",
+    "summary": "Dillahunty’s fallibilist evidential method consistently outperformed Ten Bruggencate’s presuppositional case, whose challenges identified foundational problems but rarely demonstrated Christianity’s exclusive necessity.",
     "sides": {
       "pro": {
         "name": "Presuppositional theist",
@@ -209,30 +209,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 50,
-      "con": 82
+      "pro": 64,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Opening burden and truth"
+        "title": "Reasonableness, Burden of Proof, and Presuppositional Method"
       },
       {
-        "title": "Solipsism and certainty"
+        "title": "Truth, Knowledge, Certainty, and Hard Solipsism"
       },
       {
-        "title": "Logic and worldview"
+        "title": "Logic, Reason, and Worldview Grounding"
       },
       {
-        "title": "Reason, senses, and induction"
+        "title": "Induction, Evidence, and Supernatural Inquiry"
       },
       {
-        "title": "Revelation and universal knowledge"
-      },
-      {
-        "title": "Evidence and supernatural causation"
-      },
-      {
-        "title": "Audience tests and defeaters"
+        "title": "Revelation, Rival Claims, and Christian Specificity"
       }
     ]
   },
@@ -1912,11 +1906,11 @@ export const debateSummaries = [
     "number": "42",
     "title": "Joe Schmid vs Chris Tomaszewski: Is Divine Simplicity True?",
     "label": "Divine simplicity and classical theism",
-    "date": "2026-05-31",
+    "date": "2026-08-22",
     "duration": "1 hr 55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=rX6di0Au5Kg",
     "motion": "Is divine simplicity, understood as God's absence of real intrinsic parts or composition, coherent with classical theism, Trinitarian doctrine, divine freedom, and omniscient knowledge of contingent reality?",
-    "summary": "In a collegial discussion, Tomaszewski defends Thomistic simplicity through analogy, aseity, and extrinsic predication, while Schmid tests it with Trinitarian, alone-world, and changing-knowledge objections.",
+    "summary": "Schmid presses simplicity through composition, Trinitarian asymmetry, and contingent knowledge; Tomaszewski answers through aseity, analogical predication, subsistent relations, and extrinsic differentiation.",
     "sides": {
       "pro": {
         "name": "Classical theist",
@@ -1930,27 +1924,21 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 84
+      "pro": 86,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Definitions and analogy"
+        "title": "Metaphysical content, parts, and divine predication"
       },
       {
-        "title": "Aseity and dependence"
+        "title": "Aseity, pure actuality, and the exclusion of composition"
       },
       {
-        "title": "Trinity and relations"
+        "title": "Trinitarian persons, processions, and subsistent relations"
       },
       {
-        "title": "Alone world knowledge"
-      },
-      {
-        "title": "Timeless changing knowledge"
-      },
-      {
-        "title": "Q&A and closing"
+        "title": "Divine freedom and knowledge of contingent, changing reality"
       }
     ]
   },
@@ -2103,11 +2091,11 @@ export const debateSummaries = [
     "number": "46",
     "title": "Ben Shapiro vs Alex O'Connor: The Atheist Delusion, Free Will, and Society",
     "label": "Atheism, free will, and social order",
-    "date": "2026-06-01",
+    "date": "2026-08-22",
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yspPYcJHI3k",
     "motion": "Does atheism depend on borrowed religious or extra-natural assumptions about free will, morality, reason, and social order, or can secular life face the truth without religious scaffolding?",
-    "summary": "Shapiro argues that society needs religiously grounded assumptions about free will, morality, and institutions; O'Connor denies free will, doubts religious moral authority, and presses the cost of useful falsehoods.",
+    "summary": "Shapiro defends religious foundations for agency, morality, science, and cohesion; O'Connor counters with determinism, revisability, historical resistance, scriptural counterexamples, and epistemic honesty.",
     "sides": {
       "pro": {
         "name": "Religious social order",
@@ -2121,30 +2109,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 83
+      "pro": 71,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Atheist delusion"
+        "title": "Free Will, Agency, and Social Responsibility"
       },
       {
-        "title": "Free will and utility"
+        "title": "Moral Authority, Equal Law, and Revisability"
       },
       {
-        "title": "Moral absolutes"
+        "title": "Religion, Science, and Rational Inquiry"
       },
       {
-        "title": "Christian inheritance"
+        "title": "Scripture, Slavery, and Moral Development"
       },
       {
-        "title": "Social cohesion"
-      },
-      {
-        "title": "Scripture and slavery"
-      },
-      {
-        "title": "Future society and children"
+        "title": "Social Cohesion, Cultural Inheritance, and Truth"
       }
     ]
   },
@@ -2713,11 +2695,11 @@ export const debateSummaries = [
     "number": "59",
     "title": "Michel-Yves Bollore vs Phil Halper: Does Science Point to God?",
     "label": "God, science, and cosmic evidence",
-    "date": "2026-06-04",
+    "date": "2026-08-22",
     "duration": "1 hr 48 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=oeYze2psUpw",
     "motion": "Do cosmology, fine-tuning, origin-of-life research, biblical claims, and suffering make the Christian God more or less plausible?",
-    "summary": "Bollore argues that modern science and biblical coherence make a creator God the best explanation; Halper argues that the scientific case is overclaimed and that biblical errors and animal suffering fit atheism better.",
+    "summary": "Scientific skepticism prevailed by exposing cosmological underdetermination, alternative fine-tuning explanations, ancient biblical cosmology, and insufficient answers to extensive animal suffering.",
     "sides": {
       "pro": {
         "name": "Christian theism",
@@ -2731,30 +2713,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 64,
-      "con": 84
+      "pro": 69,
+      "con": 88
     },
     "sections": [
       {
-        "title": "Opening frameworks"
+        "title": "Cosmic Beginning, Theorems, and an Eternal Past"
       },
       {
-        "title": "Beginning, BGV, and infinity"
+        "title": "Fine-Tuning, Naturalistic Alternatives, and the Origin of Life"
       },
       {
-        "title": "Fine-tuning and alternatives"
+        "title": "Biblical Cosmology, Genre, and Revelatory Credibility"
       },
       {
-        "title": "Abiogenesis and information"
+        "title": "Animal Suffering, Scriptural Violence, and Divine Goodness"
       },
       {
-        "title": "Bible and concordism"
-      },
-      {
-        "title": "Animal suffering and divine violence"
-      },
-      {
-        "title": "Q&A standards and hiddenness"
+        "title": "Natural Order, Beauty, and Materialist Accounts of Mind"
       }
     ]
   },
@@ -2957,11 +2933,11 @@ export const debateSummaries = [
     "number": "64",
     "title": "Gregory Pine vs Ben Watkins: Does God Exist?",
     "label": "Thomistic theism and analytic atheism",
-    "date": "2026-06-07",
+    "date": "2026-08-22",
     "duration": "2 hr 12 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=0QMwHUijmqo",
     "motion": "Does God exist, and do Thomistic arguments from being, act and potency, divine simplicity, revelation, evil, freedom, and changing knowledge support or undermine classical theism?",
-    "summary": "Pine defends Thomistic classical theism as the necessary ground of being, intelligibility, and revelation; Watkins argues that evolutionary evil, divine freedom, changing knowledge, and hiddenness favor philosophical atheism.",
+    "summary": "Pine defends classical theism through Thomistic metaphysics, while Watkins presses identification gaps, divine-attribute tensions, evolutionary suffering, hiddenness, and religious disagreement.",
     "sides": {
       "pro": {
         "name": "Thomistic theism",
@@ -2975,27 +2951,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 82
+      "pro": 79,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Access, reason, and hiddenness"
+        "title": "Causal Dependence, Conservation, and Identification of God"
       },
       {
-        "title": "Five ways and sustaining causality"
+        "title": "Pure Actuality and Divine Freedom"
       },
       {
-        "title": "Evolutionary evil and moral standards"
+        "title": "Immutability, Eternity, and Knowledge of Temporal Change"
       },
       {
-        "title": "Freedom, pure act, and contingency"
+        "title": "Evolutionary Evil, Divine Goodness, and Providence"
       },
       {
-        "title": "Changing knowledge and timelessness"
-      },
-      {
-        "title": "Pluralism and final standards"
+        "title": "Divine Hiddenness, Revelation, and Religious Diversity"
       }
     ]
   },
@@ -5034,11 +5007,11 @@ export const debateSummaries = [
     "number": "109",
     "title": "Jonathan McLatchie vs Alex O'Connor: Theism or Naturalism?",
     "label": "Theism, naturalism, and reality",
-    "date": "2026-07-27",
+    "date": "2026-08-22",
     "duration": "2 hr 25 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=rnIQFI1pYLM",
     "motion": "Theism or naturalism: which provides a better account of reality, including biological information, resurrection testimony, divine hiddenness, religious geography, and suffering?",
-    "summary": "McLatchie argues biology and Christianity make theism likely; O'Connor argues hiddenness, geography, suffering, and naturalistic restraint make atheism the better account.",
+    "summary": "McLatchie advances biological-design and resurrection arguments while answering hiddenness and suffering objections through adequate evidence, moral probation, epistemic limits, and lawful regularity.",
     "topicCategory": "god-theism-atheism",
     "sides": {
       "pro": {
@@ -5053,30 +5026,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 75,
-      "con": 84
+      "pro": 74,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Biological Information"
+        "title": "Biological information, organization, and naturalistic origins"
       },
       {
-        "title": "Irreducible Complexity"
+        "title": "Resurrection testimony and naturalistic alternatives"
       },
       {
-        "title": "Resurrection Testimony"
+        "title": "Divine hiddenness, sincere nonbelief, and religious geography"
       },
       {
-        "title": "Divine Hiddenness"
+        "title": "Human and animal suffering under theism and naturalism"
       },
       {
-        "title": "Religious Geography"
-      },
-      {
-        "title": "Suffering And Consciousness"
-      },
-      {
-        "title": "Closing Burdens"
+        "title": "Comparative inference, religious experience, and worldview explanation"
       }
     ]
   },
@@ -6148,11 +6115,11 @@ export const debateSummaries = [
     "number": "132",
     "title": "Jonathan McLatchie vs Richard Carrier: Did Paul Believe in a Celestial Jesus?",
     "label": "Paul and celestial Jesus mythicism",
-    "date": "2026-07-30",
+    "date": "2026-08-22",
     "duration": "1 hr 23 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=HCcq8G-WzJM",
     "motion": "Did Paul understand Jesus as an earthly historical person, or as a celestial figure whose death and resurrection occurred in a mythic heavenly realm?",
-    "summary": "McLatchie argues that Paul's letters, Acts, Luke, and the Gospels point to a historical Jesus; Carrier argues that the earliest Pauline evidence remains compatible with a celestial mythic Christ.",
+    "summary": "Carrier narrowly prevailed by pressing Pauline ambiguity and source dependence, while McLatchie answered most forcefully through contextual analysis of the crucifying rulers.",
     "sides": {
       "pro": {
         "name": "Pauline historicity",
@@ -6166,27 +6133,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 79,
-      "con": 82
+      "pro": 80,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Celestial Savior Framework"
+        "title": "Pauline Biography, Silence, and Corpus Scope"
       },
       {
-        "title": "Rulers of This Age"
+        "title": "The Rulers and the Realm of Crucifixion"
       },
       {
-        "title": "Brother of the Lord"
+        "title": "James and the Brothers of the Lord"
       },
       {
-        "title": "Acts and Paul's Biography"
+        "title": "Acts, Pauline Chronology, and Companion Authorship"
       },
       {
-        "title": "Luke Companion Inference"
-      },
-      {
-        "title": "Gospel Coincidences"
+        "title": "Gospel Independence and Undesigned Coincidences"
       }
     ]
   },
@@ -7340,11 +7304,11 @@ export const debateSummaries = [
     "number": "158",
     "title": "Matt Dillahunty vs Jonathan McLatchie: Is There Strong Evidence for the Resurrection?",
     "label": "Resurrection, testimony, and history",
-    "date": "2026-08-01",
+    "date": "2026-08-22",
     "duration": "2 hr 35 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=a-wIaCRIdOA",
     "motion": "Is there strong historical evidence that Jesus rose from the dead, or are the surviving Christian reports too indirect and insufficiently testable to establish a resurrection?",
-    "summary": "McLatchie argues that early testimony, Gospel reliability, and alternatives support resurrection; Dillahunty says anonymous, untestable reports cannot constitute strong evidence for a miracle.",
+    "summary": "McLatchie built a cumulative resurrection case from early testimony; Dillahunty prevailed by challenging source independence, testability, alternative explanations, and evidential thresholds.",
     "sides": {
       "pro": {
         "name": "Historical resurrection case",
@@ -7358,21 +7322,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 65,
-      "con": 80
+      "pro": 78,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Apostolic proclamation and eyewitness access"
+        "title": "Source Proximity, Attribution, and Testability"
       },
       {
-        "title": "Alternatives, strong evidence, and priors"
+        "title": "Corroboration, Independence, and Source Reliability"
       },
       {
-        "title": "Undesigned coincidences and Gospel reliability"
+        "title": "Reported Encounters and Competing Explanations"
       },
       {
-        "title": "Claims, competing religions, and falsifiability"
+        "title": "Testimonial Standards and Comparative Consistency"
+      },
+      {
+        "title": "Prior Probability, Explanatory Power, and Strong-Evidence Threshold"
       }
     ]
   },
@@ -8251,11 +8218,11 @@ export const debateSummaries = [
     "number": "179",
     "title": "William Lane Craig vs Bart Ehrman: Is There Historical Evidence for the Resurrection?",
     "label": "Historical evidence for Jesus' resurrection",
-    "date": "2026-08-01",
+    "date": "2026-08-22",
     "duration": "1 hr 55 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=MW5_nJYSKyk",
     "motion": "Does the historical evidence make Jesus' bodily resurrection the best explanation of what followed his crucifixion?",
-    "summary": "Craig argues that burial, empty tomb, appearances, and transformed belief are best explained by resurrection; Ehrman disputes key facts and argues that historians cannot rank a miracle above natural alternatives.",
+    "summary": "Craig defended resurrection through cumulative explanatory comparison; Ehrman challenged source reliability, supernatural inference, and whether historical standards can distinguish bodily resurrection from alternatives.",
     "sides": {
       "pro": {
         "name": "Historical evidence supports resurrection",
@@ -8269,24 +8236,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 92,
-      "con": 88
+      "pro": 84,
+      "con": 83
     },
     "sections": [
       {
-        "title": "Burial and the empty tomb"
+        "title": "Historical Sources and Evidentiary Standards"
       },
       {
-        "title": "Postmortem appearances and transformed belief"
+        "title": "Burial and the Empty Tomb"
       },
       {
-        "title": "Gospel discrepancies and evidential core"
+        "title": "Appearances and the Origin of Resurrection Belief"
       },
       {
-        "title": "Natural alternatives and explanatory comparison"
+        "title": "Miracle Probability and the Scope of History"
       },
       {
-        "title": "Miracle probability and the limits of history"
+        "title": "Competing Explanations, Underdetermination, and Context"
       }
     ]
   },
@@ -8709,11 +8676,11 @@ export const debateSummaries = [
     "number": "189",
     "title": "James Tour vs Lee Cronin: Are We Close to Discovering the Origin of Life?",
     "label": "Origin of life chemistry and evidential overstatement",
-    "date": "2026-08-01",
+    "date": "2026-08-22",
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=3DHvNRK452c",
     "motion": "Does current origin-of-life research substantially overstate how close it is to explaining the emergence of life?",
-    "summary": "Tour argues prebiotic chemistry remains distant from minimal cellular life and routinely oversold; Cronin agrees historical narratives are weak but defends a falsifiable bottom-up program for detecting and generating information-bearing chemical complexity.",
+    "summary": "Tour pressed unresolved cellular thresholds and evidential overstatement; Cronin defended experimentally testable chemical organization while carefully conceding uncertainty about historical sequence.",
     "topicCategory": "science-design",
     "sides": {
       "pro": {
@@ -8728,27 +8695,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 92,
-      "con": 94
+      "pro": 82,
+      "con": 80
     },
     "sections": [
       {
-        "title": "Critique, creation, and natural explanation"
+        "title": "Scope of Present Claims and the Standard for Overstatement"
       },
       {
-        "title": "From primordial soup to first life"
+        "title": "The Explanatory Gap from Simple Chemistry to Cellular Life"
       },
       {
-        "title": "What counts as life or information?"
+        "title": "What Laboratory Chemical Systems Demonstrate"
       },
       {
-        "title": "Do autocatalytic sets cross a threshold?"
+        "title": "Operational Definitions and Objective Measures of Life-like Progress"
       },
       {
-        "title": "Extrapolation, targets, and scientific modesty"
-      },
-      {
-        "title": "Predictions, optimism, and what would follow"
+        "title": "Generative Principles, Selection, and Predictive Pathways"
       }
     ]
   },
