@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-final-execution-runner-recovery-plan",
+  "status": "frozen-batch-05-correction-2-final-execution-runner-recovery-prepared",
+  "frozenAt": "2026-08-22T18:14:01.000Z",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-runner-recovery-final/diagnosis.json",
+    "sha256": "8b5db70bd35f28bfe05d47018b62300917c4f801300434de606d63b262507785"
+  },
+  "correctionScope": {
+    "targetRunner": "scripts/run-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs",
+    "exactOldAssertion": "if (sha256(currentAnalysisBytes) !== activation.correctionScope.oldSha256) {",
+    "exactNewAssertion": "if (JSON.parse(currentAnalysisBytes).preparation?.sha256 !== activation.correctionScope.oldSha256) {",
+    "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/correction-plan.json",
+    "correctionActivation": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-activation.json",
+    "runnerAssertionsChanged": 1,
+    "authenticatedRunnerHashesChanged": 2,
+    "authenticatedPlanHashesChanged": 1,
+    "allOtherFieldsPreserved": true,
+    "proposedAnalysisPreserved": true,
+    "targetAnalysisPreserved": true
+  },
+  "proposed": {
+    "runner": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-runner-recovery-final/proposed-runner.mjs",
+      "sha256": "151acc78df0a0d9b7b53904acbc91493d4d6f083e59e801b9cb2aecc7c48b222",
+      "bytes": 5743
+    },
+    "correctionPlan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-runner-recovery-final/proposed-correction-plan.json",
+      "sha256": "d33f8c1a23eeff1282b31fea0becfda0f0852c2f8e95b985634ecc6c1298c4b8",
+      "bytes": 4255
+    },
+    "correctionActivation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-runner-recovery-final/proposed-correction-activation.json",
+      "sha256": "0ff90c8f78b198c61359129d887ca11ef609365e51ae83381df9c2673893eeae",
+      "bytes": 4095
+    }
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-preflight-failure/diagnosis.json": "b7fd7e7d1aa37d0773dd679f9d95aad4dd9b0d8eac5e73c043fd2c78cf6a2814",
+    "scripts/run-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs": "496e435e1758a33e7acfc3413f5f7a665f3cb39e5a9df678124d9c125631b34b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/correction-plan.json": "4129c6b3a88932ce5f0cda3bf61acebe18fa208e4630c9243f61acafa25ed8da",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-activation.json": "8598109cde08d2aad88b7c76fcb863efe9ae16c4ebffa5d9e999bf51c5966411",
+    "scripts/prepare-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-execution-runner-recovery-final.mjs": "08a6a51737d3a3ab766e7c36b99884e6558e2706e7ab6b392d4f96bdf36a8fe0",
+    "scripts/activate-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-execution-runner-recovery-final.mjs": "a2dcf91e2ba3e3baf1838b5c6eada66f6ebbcad8c12a20a2495fc354d3001595",
+    "scripts/run-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-execution-runner-recovery-final.mjs": "8d96bc34932046546fffc2c68034326543b3c9c21bd025232a644e0fe5b6d914"
+  },
+  "executionPolicy": {
+    "recoveryAttemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "furtherRecoveryForSameUnderlyingProblem": false,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "artifacts": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-runner-recovery-final/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-runner-recovery-final/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-runner-recovery-final/analysis.json"
+  },
+  "authorization": {
+    "finalExecutionRunnerRecovery": true,
+    "correction2DeterministicValidation": false,
+    "compatibilityExecution": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "activate-one-final-batch-05-correction-2-execution-runner-recovery"
+}

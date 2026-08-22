@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-final-execution-runner-recovery-diagnosis",
+  "status": "frozen-batch-05-correction-2-final-execution-runner-recovery-diagnosed",
+  "diagnosedAt": "2026-08-22T18:14:01.000Z",
+  "checkpointCommit": "758d447f79135fc82aa60ed991037d0df1d684ee",
+  "preservedFailure": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-preflight-failure/diagnosis.json",
+    "sha256": "b7fd7e7d1aa37d0773dd679f9d95aad4dd9b0d8eac5e73c043fd2c78cf6a2814"
+  },
+  "finding": "The runner alone repeats the diagnosed complete-file-versus-JSON-field preimage comparison. The target analysis already contains the exact frozen old field value, so the correct preflight parses that field without changing the one-field correction payload.",
+  "correctionScope": {
+    "runnerAssertionChanges": 1,
+    "correctionPlanRunnerHashChanges": 1,
+    "correctionActivationRunnerHashChanges": 1,
+    "correctionActivationPlanHashChanges": 1,
+    "totalCredentialFieldsChanged": 3,
+    "proposedAnalysisChanged": false,
+    "targetAnalysisChangedDuringRecovery": false
+  },
+  "recoveryFinal": true,
+  "furtherRecoveryForSameUnderlyingProblem": false,
+  "modelContexts": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}
