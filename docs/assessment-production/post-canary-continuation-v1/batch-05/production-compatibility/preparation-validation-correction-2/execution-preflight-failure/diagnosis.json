@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-execution-preflight-failure-diagnosis",
+  "status": "frozen-batch-05-correction-2-third-underlying-preimage-authentication-failure-diagnosed",
+  "diagnosedAt": "2026-08-22T15:30:31.000Z",
+  "checkpointCommit": "8a92b8abb5f298b64e093111e94103310c70e79d",
+  "failedCommand": "node scripts/run-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs --executed-at 2026-08-22T15:29:59.000Z",
+  "failure": {
+    "category": "deterministic-execution-preflight-file-hash-versus-json-field-hash-comparison",
+    "exitCode": 1,
+    "message": "correction-2 target preimage changed",
+    "runnerAssertion": "sha256(currentAnalysisBytes) === activation.correctionScope.oldSha256",
+    "wholeAnalysisFileSha256": "8f7ce39ae4706566d9a1799006eabe4fbe430a28230c6e8c4c209da00d36dd0b",
+    "frozenOldPreparationFieldSha256": "79079f61bc4c800092017a3c21fa2e8b352f379b2ce85090abb5e6ada0638efd",
+    "observedPreparationFieldSha256": "79079f61bc4c800092017a3c21fa2e8b352f379b2ce85090abb5e6ada0638efd"
+  },
+  "finding": "The target file and its frozen preparation.sha256 field are unchanged. The runner incorrectly compares the SHA-256 digest of the complete analysis.json file with the frozen value of its preparation.sha256 field, repeating the same underlying authentication mistake previously diagnosed in the activation preflight.",
+  "stopCondition": {
+    "triggered": true,
+    "rule": "stop before a third failure involving the same underlying problem",
+    "underlyingProblemOccurrences": 3,
+    "furtherRecoveryAuthorized": false,
+    "newApprovalRequired": true
+  },
+  "lockedEvidence": {
+    "correctionPlan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/correction-plan.json",
+      "sha256": "4129c6b3a88932ce5f0cda3bf61acebe18fa208e4630c9243f61acafa25ed8da"
+    },
+    "activation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/execution-activation.json",
+      "sha256": "8598109cde08d2aad88b7c76fcb863efe9ae16c4ebffa5d9e999bf51c5966411"
+    },
+    "runner": {
+      "path": "scripts/run-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs",
+      "sha256": "496e435e1758a33e7acfc3413f5f7a665f3cb39e5a9df678124d9c125631b34b"
+    },
+    "targetAnalysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/analysis.json",
+      "sha256": "8f7ce39ae4706566d9a1799006eabe4fbe430a28230c6e8c4c209da00d36dd0b"
+    }
+  },
+  "writesBeforeFailure": 0,
+  "correctedValidationPassesAttempted": 0,
+  "compatibilityPassesAttempted": 0,
+  "productionMutations": 0,
+  "modelContexts": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}
