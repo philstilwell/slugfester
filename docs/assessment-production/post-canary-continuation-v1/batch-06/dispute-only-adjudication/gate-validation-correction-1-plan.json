@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-adjudication-gate-validation-correction-1-plan",
+  "protocolId": "assessment-production-post-canary-batch-06-dispute-only-adjudication",
+  "status": "frozen-batch-06-adjudication-gate-audio-count-correction-1-prepared",
+  "preparedAt": "2026-08-23T00:10:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "correctionNumber": 1,
+  "stagingOnly": true,
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/dispute-only-adjudication/gate-validation-failure-diagnosis.json",
+    "sha256": "66c7fe08c0fdf49647f3123ba9ded3af0b24a85e7ccdf44c5d90a0ff85c2cbf6"
+  },
+  "exactDelta": {
+    "testPath": "scripts/test-assessment-production-post-canary-batch-06-dispute-adjudication-gate.mjs",
+    "oldAssertionValue": 6,
+    "newAssertionValue": 2,
+    "oldTestSha256": "634986fd83be9533f358d373cb0d43a9c106609d94cf592bd806fe9a4f6bd6a9",
+    "newTestSha256": "ea9c4ffc9902952a0e1ddcbcd5350c6f056d83297fe5cd951b820eeef213086b",
+    "oldActivationSha256": "a42c3df21f78faf0523421d7b8170293c8e3c5d1586cca13daa6b6fd475579da",
+    "newActivationSha256": "d7c08fa097d6ab55ee3470843d34a359ec586e48ee9ae6a0ddac55d2efb3c6ec",
+    "activationFieldsChanged": [
+      "executionToolHashes.scripts/test-assessment-production-post-canary-batch-06-dispute-adjudication-gate.mjs",
+      "sourceHashes.scripts/test-assessment-production-post-canary-batch-06-dispute-adjudication-gate.mjs"
+    ],
+    "modelOutputsChanged": 0,
+    "analysisChanged": 0,
+    "packetsChanged": 0,
+    "sourcesChanged": 0,
+    "scoresChanged": 0
+  },
+  "lockedAcceptedEvidence": {
+    "modelExecutionPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/dispute-only-adjudication/model-execution.json",
+    "modelExecutionSha256": "33a7fc5f47b6d6dab56d42daf6e9290d46cf12243459ff955d0a3b6d9c45204e",
+    "analysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/dispute-only-adjudication/analysis.json",
+    "analysisSha256": "3489bb86c519a19fe10ffed0d4fb662ee8088ffc12f32d22622ce4f1afffdbfe",
+    "validContexts": 10,
+    "audioTranscriptInputs": 2
+  },
+  "executionPolicy": {
+    "correctedValidationPassesMaximum": 1,
+    "modelExecutionsMaximum": 0,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "paidServiceUseAllowed": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "execute-one-corrected-batch-06-adjudication-gate-validation"
+}

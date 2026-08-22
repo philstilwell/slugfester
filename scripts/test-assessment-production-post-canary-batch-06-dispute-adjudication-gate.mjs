@@ -211,7 +211,7 @@ assert.equal(analysis.gate.retries, 0);
 assert.equal(analysis.gate.timeoutExtensions, 0);
 assert.equal(analysis.gate.corrections, 0);
 assert.equal(analysis.gate.scoresDerived, 0);
-assert.equal(analysis.evidenceBoundary.audioTranscriptInputs, 6);
+assert.equal(analysis.evidenceBoundary.audioTranscriptInputs, 2);
 assert.equal(analysis.evidenceBoundary.judgmentModelContexts, 0);
 assert.equal(analysis.totals.paidServiceCalls, 0);
 assert.equal(analysis.totals.directIncrementalCostUsd, 0);
