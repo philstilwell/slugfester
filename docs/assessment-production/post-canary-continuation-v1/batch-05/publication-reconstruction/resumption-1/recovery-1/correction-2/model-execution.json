@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-109-correction-2-execution",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-resumption-1-recovery-1-debate-109-pro-correction-2",
+  "status": "batch-05-debate-109-four-context-correction-2-gate-passed",
+  "gateStartedAt": "2026-08-22T13:46:15.279Z",
+  "gateCompletedAt": "2026-08-22T13:49:47.535Z",
+  "contextsPlanned": 4,
+  "contextsAttempted": 4,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 4,
+  "invalidContexts": 0,
+  "attempts": 4,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "furtherRecursiveCorrections": 0,
+  "maximumObservedConcurrency": 2,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 212255,
+  "aggregateModelElapsedMs": 264841,
+  "rampPhases": [
+    {
+      "phase": "correction-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "correction-pair",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "correction-final-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        3
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        3
+      ],
+      "validContextIndexes": [
+        3
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "109",
+      "debateId": "mclatchie-oconnor-theism-naturalism-reality-2022",
+      "shardId": "shard-01-pro-shared",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "furtherRecursiveCorrectionCount": 0,
+      "startedAt": "2026-08-22T13:46:15.280Z",
+      "completedAt": "2026-08-22T13:47:20.888Z",
+      "elapsedMs": 65608,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "content.moveProse.pro-dna-rna-information-design-inference.critique",
+        "content.moveProse.pro-resurrection-fabrication-improbable.critique"
+      ],
+      "copiedInputBytes": 32092,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "fececbe47f297355b5b5ab3ff76a8b9f19a06733bf6f6ddd808a5ffabe729778",
+      "stderrSha256": "5d676ca6fd8a77570e4db9f9c4050d6835d1345b37b18fa2082d2a77943843db",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "64314b8ef25edd8b98df9e4291bd6f4f0340840bdc21832b13e30a6d2c112769",
+      "validationSha256": "0d52b3da2703427def2419071ebac09200eb3d10ebcd9653642538a493c0d40d",
+      "provenanceSha256": "2335cef3bde4ca8535af30c36776cdcbf3a367cf1e5dcb29c214ebc3986b32a5",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "109",
+        "shardId": "shard-01-pro-shared",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "content.moveProse.pro-dna-rna-information-design-inference.critique",
+            "moveId": "pro-dna-rna-information-design-inference",
+            "words": 115,
+            "characters": 985,
+            "sentences": 4
+          },
+          {
+            "field": "content.moveProse.pro-resurrection-fabrication-improbable.critique",
+            "moveId": "pro-resurrection-fabrication-improbable",
+            "words": 117,
+            "characters": 997,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "109",
+      "debateId": "mclatchie-oconnor-theism-naturalism-reality-2022",
+      "shardId": "shard-01-pro-shared",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "furtherRecursiveCorrectionCount": 0,
+      "startedAt": "2026-08-22T13:47:20.900Z",
+      "completedAt": "2026-08-22T13:48:13.519Z",
+      "elapsedMs": 52619,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "content.moveProse.pro-resurrection-mistake-improbable.critique",
+        "content.moveProse.pro-hiddenness-adequate-evidence.critique"
+      ],
+      "copiedInputBytes": 32763,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "1498bd8bfa990ee087a912ec3d5ca086f06ae891c5c2448d828fba08624c5ce5",
+      "stderrSha256": "440cefe9b50d1a2511ca1c1a1942b9b3025454970059043d0453db30a7797575",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "f26d01eadf0e120b97588b860bf9281b2e17059dd0ac05251ba8901f83363ed8",
+      "validationSha256": "6cb3c635fa8ff6e49253f62ed31407d2a8bd81b8cc1c015dd570439723df404b",
+      "provenanceSha256": "50c06c42411dcdba0275e772d34be5f537b4ad59e781beb1dd3662de2821c790",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "109",
+        "shardId": "shard-01-pro-shared",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "content.moveProse.pro-resurrection-mistake-improbable.critique",
+            "moveId": "pro-resurrection-mistake-improbable",
+            "words": 117,
+            "characters": 1049,
+            "sentences": 4
+          },
+          {
+            "field": "content.moveProse.pro-hiddenness-adequate-evidence.critique",
+            "moveId": "pro-hiddenness-adequate-evidence",
+            "words": 115,
+            "characters": 967,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "109",
+      "debateId": "mclatchie-oconnor-theism-naturalism-reality-2022",
+      "shardId": "shard-01-pro-shared",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "furtherRecursiveCorrectionCount": 0,
+      "startedAt": "2026-08-22T13:47:20.900Z",
+      "completedAt": "2026-08-22T13:48:26.745Z",
+      "elapsedMs": 65845,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "content.moveProse.pro-suffering-evidential-limits.critique",
+        "content.moveProse.pro-regular-world-occasional-harm.critique"
+      ],
+      "copiedInputBytes": 33347,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "bcafc609eafe1b6304dbd894eb12d757f420d9aa9a7f78f88db04fde354ff8d5",
+      "stderrSha256": "3beda6b84963f870afbb3ad2d923065ec30273b26b9802a51ae51015fba34502",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "85fd33b8b6048f2e5506163b19e6a98ca3d29067745c41190b709ecb3cdc4579",
+      "validationSha256": "00e4106cb2e811883c6467eb823c539c53d42ce2568db773950deca78a598d59",
+      "provenanceSha256": "27296d8ac94b918f6ad5f93c433a8da5680264d13b7ec06066bbea0ade739419",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "109",
+        "shardId": "shard-01-pro-shared",
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "content.moveProse.pro-suffering-evidential-limits.critique",
+            "moveId": "pro-suffering-evidential-limits",
+            "words": 116,
+            "characters": 1089,
+            "sentences": 4
+          },
+          {
+            "field": "content.moveProse.pro-regular-world-occasional-harm.critique",
+            "moveId": "pro-regular-world-occasional-harm",
+            "words": 118,
+            "characters": 970,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "109",
+      "debateId": "mclatchie-oconnor-theism-naturalism-reality-2022",
+      "shardId": "shard-01-pro-shared",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "furtherRecursiveCorrectionCount": 0,
+      "startedAt": "2026-08-22T13:48:26.757Z",
+      "completedAt": "2026-08-22T13:49:47.526Z",
+      "elapsedMs": 80769,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "content.moveProse.pro-hiddenness-moral-probation.critique",
+        "content.moveProse.pro-supernatural-justification-without-mechanism.critique"
+      ],
+      "copiedInputBytes": 32755,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "scorePassesExecutedThisStage": 0,
+      "stdoutSha256": "e158caca784ed3b6976bd9271b3108fedbe82547ae20c52c72d1900b0ce790a0",
+      "stderrSha256": "dd8ec66e71a30f8bcb11703066cc6d64cd0734bb5551be9e88141067e52b4eb3",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "f57c75084ec2d665a3bd9f38e81a2b915d5791c8523a3ab7aea790fe13187e78",
+      "validationSha256": "b312ecced54ef99f6baf4ecb7cb8c422b9d273186c1296bec0530a0c716d5b6c",
+      "provenanceSha256": "bc4cd1529f590872813135babe5cbeaa9a862db718b080a0a666001adda149d8",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "109",
+        "shardId": "shard-01-pro-shared",
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "content.moveProse.pro-hiddenness-moral-probation.critique",
+            "moveId": "pro-hiddenness-moral-probation",
+            "words": 118,
+            "characters": 904,
+            "sentences": 4
+          },
+          {
+            "field": "content.moveProse.pro-supernatural-justification-without-mechanism.critique",
+            "moveId": "pro-supernatural-justification-without-mechanism",
+            "words": 118,
+            "characters": 921,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "rejectedProShardPreserved": true,
+  "acceptedConShardPreserved": true,
+  "publicationWasScoreLocked": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0,
+  "scorePassesExecutedThisStage": 0
+}
