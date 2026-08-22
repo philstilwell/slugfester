@@ -47,7 +47,7 @@ if (
   throw new Error("activated proposed correction-2 analysis drifted");
 }
 const currentAnalysisBytes = await readFile(activation.correctionScope.target);
-if (sha256(currentAnalysisBytes) !== activation.correctionScope.oldSha256) {
+if (JSON.parse(currentAnalysisBytes).preparation?.sha256 !== activation.correctionScope.oldSha256) {
   throw new Error("correction-2 target preimage changed");
 }
 
