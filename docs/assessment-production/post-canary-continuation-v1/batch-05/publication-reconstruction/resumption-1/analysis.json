@@ -1,0 +1,227 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-publication-resumption-analysis",
+  "protocolId": "assessment-production-post-canary-batch-05-publication-resumption-1",
+  "status": "post-canary-batch-05-publication-resumption-failed-validation",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "sources": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/execution-preparation-manifest.json",
+    "preparationSha256": "a90082762ecabe862f16addcfc5067d392d4708eb94c9c12dcd90f0f59a6448e",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/execution-activation.json",
+    "activationSha256": "f002fa7f85b028b9a08f3b9d3d4b9904f00e09030b74b3de7297977c4637c2fc",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/resumption-1/model-execution.json",
+    "executionSha256": "5ef794a7264f9780689e1660e571f4dcba22b0d7ec01326af4a4ba415689e439",
+    "acceptedDebates": [
+      {
+        "debateNumber": "158",
+        "output": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/outputs/debate-158.json"
+      },
+      {
+        "debateNumber": "46",
+        "output": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/outputs/debate-46.json"
+      },
+      {
+        "debateNumber": "64",
+        "output": "docs/assessment-production/post-canary-continuation-v1/batch-05/publication-reconstruction/repair-1/merged/debate-64.json"
+      }
+    ]
+  },
+  "acceptedDebates": [
+    {
+      "debateNumber": "158",
+      "status": "passed-original-publication-validation",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "158",
+        "moves": 20,
+        "critiques": 20,
+        "minimumCritiqueCharacters": 931,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "repairContexts": 0,
+      "repairedFields": 0,
+      "immutableFieldsChanged": 0,
+      "lockedScoresUnchanged": true
+    },
+    {
+      "debateNumber": "46",
+      "status": "passed-original-publication-validation",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "46",
+        "moves": 18,
+        "critiques": 18,
+        "minimumCritiqueCharacters": 894,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "repairContexts": 0,
+      "repairedFields": 0,
+      "immutableFieldsChanged": 0,
+      "lockedScoresUnchanged": true
+    },
+    {
+      "debateNumber": "64",
+      "status": "passed-repaired-and-complete-publication-validation",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "64",
+        "moves": 17,
+        "critiques": 17,
+        "minimumCritiqueCharacters": 880,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 2,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      },
+      "repairContexts": 1,
+      "repairedFields": 2,
+      "immutableFieldsChanged": 0,
+      "lockedScoresUnchanged": true
+    }
+  ],
+  "execution": {
+    "contextsPlanned": 7,
+    "contextsAttempted": 3,
+    "contextsUnattempted": 4,
+    "validContexts": 1,
+    "invalidContexts": 2,
+    "attempts": 3,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumObservedConcurrency": 2,
+    "wallElapsedMs": 935249,
+    "aggregateModelElapsedMs": 1164778
+  },
+  "validationReplay": [
+    {
+      "contextIndex": 0,
+      "originalContextIndex": 3,
+      "debateNumber": "132",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "validationReplayed": true,
+      "outputSha256": "ba868a7148324b43fc727811bf0aa4a8a215df04376edd28e7ba08808eacf747",
+      "validation": {
+        "status": "passed",
+        "debateNumber": "132",
+        "moves": 19,
+        "critiques": 19,
+        "minimumCritiqueCharacters": 880,
+        "tags": 0,
+        "quoteExactSourceMatches": 2,
+        "overallCommentarySides": 2,
+        "noveltyItems": 18,
+        "introducedItems": 4,
+        "newArguments": 4,
+        "aiExtensionSides": 2,
+        "calculatedScoresAuthoredByModel": 0,
+        "lockedScoresUnchanged": true
+      }
+    },
+    {
+      "contextIndex": 1,
+      "originalContextIndex": 4,
+      "debateNumber": "189",
+      "status": "output-validation-failed",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    },
+    {
+      "contextIndex": 2,
+      "originalContextIndex": 5,
+      "debateNumber": "109",
+      "status": "timed-out",
+      "gateAcceptancePassed": false,
+      "validationReplayed": false
+    }
+  ],
+  "gate": {
+    "resumptionSemanticPass": false,
+    "cohortSemanticPass": false,
+    "timingPass": false,
+    "resumptionValidContexts": 1,
+    "cohortValidDebates": 4,
+    "cohortMoves": 74,
+    "cohortCritiques": 74,
+    "cohortExactSourceQuotes": 8,
+    "cohortOverallCommentarySides": 8,
+    "cohortAIExtensionSides": 8,
+    "minimumCritiqueCharacters": 880,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "totals": {
+    "acceptedDebates": 3,
+    "acceptedRepairedDebates": 1,
+    "acceptedRepairContexts": 1,
+    "repairedFields": 2,
+    "resumptionModelContexts": 3,
+    "cohortDebates": 4,
+    "cohortMoves": 74,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0,
+    "paidServiceCalls": 0,
+    "publicationCompilationPasses": 0,
+    "publicationFinalizations": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "integrity": {
+    "participantJudgmentWasScoreBlind": true,
+    "scoresRemainedImmutable": true,
+    "acceptedDebate64RepairReplayed": true,
+    "everyAcceptedResumptionOutputReplayedDeterministically": true,
+    "aiExtensionExcludedFromScores": true,
+    "retriesPerformed": false,
+    "timeoutExtensionsPerformed": false,
+    "correctionContextsPerformed": false,
+    "publicationCompiled": false,
+    "publicationFinalized": false,
+    "productionMutated": false
+  },
+  "authorization": {
+    "failureDiagnosis": true,
+    "repairPacketPreparation": true,
+    "repairModelExecution": false,
+    "publicationCompilationPreparation": false,
+    "deterministicCompilation": false,
+    "publicationFinalization": false,
+    "renderingVerification": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "diagnose-batch-05-publication-resumption-failure-under-standing-authorization"
+}
