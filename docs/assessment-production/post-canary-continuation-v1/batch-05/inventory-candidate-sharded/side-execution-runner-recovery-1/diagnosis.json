@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-side-execution-runner-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-05-side-execution-runner-recovery-1",
+  "status": "frozen-batch-05-side-execution-runner-stale-source-compatibility-expectation-diagnosed",
+  "diagnosedAt": "2026-08-22T01:05:41.000Z",
+  "checkpointCommit": "fb349a80ac5cc841cd8659a4cf7b21cacce6acf8",
+  "failureCategory": "deterministic-runner-preflight-stale-cohort-expectation",
+  "failedCommand": "node scripts/run-assessment-production-post-canary-batch-05-inventory-side-selectors.mjs --preflight-only",
+  "failure": {
+    "message": "post-canary Batch 5 side-selector execution is unauthorized",
+    "contextsStarted": 0,
+    "modelsExecuted": 0,
+    "paidServicesUsed": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "diagnosis": "The side-selector runner preflight inherits the Batch 3 source-compatibility status expectation exact-source-zero-lexical-token-row-preserved-with-zero-count. The frozen Batch 5 activation authentically carries all-source-rows-have-positive-repository-lexical-token-count with zero occurrences. One stale status assertion alone blocks the runner before context creation.",
+  "boundedCorrection": {
+    "kind": "replace-one-stale-runner-preflight-status-expectation",
+    "writableFiles": [
+      "scripts/run-assessment-production-post-canary-batch-05-inventory-side-selectors.mjs"
+    ],
+    "preCorrectionSha256": "7d5a198b5f90c6967cab4067d710f8ff4f1c336749b2fd4b51d367aa8129af31",
+    "postCorrectionSha256": "f6d41ef9a95f41328e8d736f4e3f2ff68a8d81f204224fbfc26e1648b5ee2526",
+    "packetOrSchemaChange": false,
+    "sourceCandidateOrEvidenceChange": false,
+    "modelContextChange": false,
+    "scoreChange": false,
+    "modelRetry": false,
+    "recoveryAttempt": 1
+  },
+  "authorization": {
+    "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json",
+    "standingAuthorizationSha256": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685",
+    "boundedFirstRecoveryAuthorized": true,
+    "additionalUserApprovalRequired": false
+  }
+}
