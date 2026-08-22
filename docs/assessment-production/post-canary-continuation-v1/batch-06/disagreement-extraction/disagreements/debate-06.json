@@ -1,0 +1,2810 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-deterministic-disagreements",
+  "protocolId": "assessment-production-post-canary-batch-06-decomposed-consensus",
+  "debateNumber": "06",
+  "debateId": "dsouza-dillahunty-god-woman-2023",
+  "moveDisputes": [
+    {
+      "moveId": "con-epistemic-withhold-until-evidence",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": false,
+        "responsivenessWithinClassDelta": 0,
+        "responsePairDispute": false,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": null,
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-proportional-belief"
+              }
+            },
+            "candidate2": {
+              "value": 100,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "motion",
+                "bridgeId": "con-motion-evidence-and-consequences"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-epistemic-domain-limits",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 16,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-epistemic-withhold-until-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-epistemic-domain-limits-component-01",
+                  "targetMoveId": "con-epistemic-withhold-until-evidence",
+                  "text": "Show why empirical inability to settle a question supplies affirmative warrant for belief rather than continued nonacceptance.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 58
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-epistemic-withhold-until-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-epistemic-domain-limits-component-01",
+                  "targetMoveId": "con-epistemic-withhold-until-evidence",
+                  "text": "Whether empirical evidence is capable of settling the consequential existential questions at issue.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-epistemic-domain-limits-component-02",
+                  "targetMoveId": "con-epistemic-withhold-until-evidence",
+                  "text": "Whether uncertainty itself supplies warrant for belief in a particular God.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 74
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": false,
+            "representationalCharity": 75
+          },
+          "candidate2": {
+            "tested": true,
+            "representationalCharity": 82
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 82,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 69,
+          "candidate2": 73,
+          "roundedMeanAfterAdjudication": 71
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-epistemic-burden-and-nonacceptance",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-epistemic-domain-limits"
+              ],
+              "components": [
+                {
+                  "componentId": "con-epistemic-burden-and-nonacceptance-component-01",
+                  "targetMoveId": "pro-epistemic-domain-limits",
+                  "text": "Explain why an unresolved question does not warrant accepting a supernatural answer and why the affirmative claimant retains the burden.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-epistemic-domain-limits"
+              ],
+              "components": [
+                {
+                  "componentId": "con-epistemic-burden-and-nonacceptance-component-01",
+                  "targetMoveId": "pro-epistemic-domain-limits",
+                  "text": "The inference from scientific nonresolution to a skeptic's affirmative denial of the supernatural.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-epistemic-burden-and-nonacceptance-component-02",
+                  "targetMoveId": "pro-epistemic-domain-limits",
+                  "text": "Whether unresolved questions transfer the burden away from the affirmative claimant.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 96
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 87,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 88
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 94,
+          "roundedMeanAfterAdjudication": 93
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-science-mechanism-causation-policy",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 30,
+        "responsePairDispute": true,
+        "charityTestedMismatch": true,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-epistemic-burden-and-nonacceptance",
+                "con-epistemic-withhold-until-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-science-mechanism-causation-policy-component-01",
+                  "targetMoveId": "con-epistemic-burden-and-nonacceptance",
+                  "text": "Apply the demand for proportionate inference by separating greenhouse mechanism, primary human causation, and preferred policy.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-science-mechanism-causation-policy-component-02",
+                  "targetMoveId": "con-epistemic-withhold-until-evidence",
+                  "text": "Avoid treating evidence for one proposition as sufficient evidence for distinct causal and policy propositions.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-epistemic-burden-and-nonacceptance",
+                "con-epistemic-withhold-until-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-science-mechanism-causation-policy-component-01",
+                  "targetMoveId": "con-epistemic-burden-and-nonacceptance",
+                  "text": "The requirement that an affirmative factual claim carry adequate supporting evidence.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-science-mechanism-causation-policy-component-02",
+                  "targetMoveId": "con-epistemic-withhold-until-evidence",
+                  "text": "The general demand that confidence remain proportionate to evidence.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 56
+            }
+          }
+        },
+        "charityPair": {
+          "candidate1": {
+            "tested": true,
+            "representationalCharity": 86
+          },
+          "candidate2": {
+            "tested": false,
+            "representationalCharity": 75
+          }
+        },
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 91,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 75,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 73
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-science-evidence-over-advocate-conduct",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-science-mechanism-causation-policy"
+              ],
+              "components": [
+                {
+                  "componentId": "con-science-evidence-over-advocate-conduct-component-01",
+                  "targetMoveId": "pro-science-mechanism-causation-policy",
+                  "text": "Determine climate claims from scientific evidence and relevant expertise rather than from alleged hypocrisy by advocates.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-epistemic-domain-limits",
+                "pro-science-mechanism-causation-policy"
+              ],
+              "components": [
+                {
+                  "componentId": "con-science-evidence-over-advocate-conduct-component-01",
+                  "targetMoveId": "pro-science-mechanism-causation-policy",
+                  "text": "Whether advocate hypocrisy is a sound basis for assessing the climate propositions under dispute.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-science-evidence-over-advocate-conduct-component-02",
+                  "targetMoveId": "pro-epistemic-domain-limits",
+                  "text": "Whether relevant scientific expertise should govern an empirically tractable factual dispute.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 94
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 93,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 93
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 90,
+          "candidate2": 88,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-science-research-funding-incentives",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-science-evidence-over-advocate-conduct"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-science-research-funding-incentives-component-01",
+                  "targetMoveId": "con-science-evidence-over-advocate-conduct",
+                  "text": "Challenge unqualified reliance on experts by identifying institutional funding incentives that may affect research independence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 81
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-epistemic-burden-and-nonacceptance",
+                "con-science-evidence-over-advocate-conduct"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-science-research-funding-incentives-component-01",
+                  "targetMoveId": "con-science-evidence-over-advocate-conduct",
+                  "text": "Whether an appeal to scientific experts remains reliable when research incentives may systematically bias findings.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-science-research-funding-incentives-component-02",
+                  "targetMoveId": "con-epistemic-burden-and-nonacceptance",
+                  "text": "Whether the asserted funding bias is supported rather than merely alleged.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 49,
+          "candidate2": 48,
+          "roundedMeanAfterAdjudication": 49
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 68,
+          "candidate2": 69,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-science-revision-through-better-science",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 2,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-science-research-funding-incentives"
+              ],
+              "components": [
+                {
+                  "componentId": "con-science-revision-through-better-science-component-01",
+                  "targetMoveId": "pro-science-research-funding-incentives",
+                  "text": "Show why examples of scientific error or institutional imperfection do not establish that present scientific findings are false.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 91
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "diagnostic-defeat",
+              "decisiveTargetIds": [
+                "pro-science-mechanism-causation-policy",
+                "pro-science-research-funding-incentives"
+              ],
+              "components": [
+                {
+                  "componentId": "con-science-revision-through-better-science-component-01",
+                  "targetMoveId": "pro-science-research-funding-incentives",
+                  "text": "The inference that scientific fallibility or interested institutions discredit current scientific findings as such.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-science-revision-through-better-science-component-02",
+                  "targetMoveId": "pro-science-mechanism-causation-policy",
+                  "text": "Whether scientific conclusions are tentative and subject to correction through further inquiry.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": true,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 90,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 78,
+          "candidate2": 79,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 86,
+          "roundedMeanAfterAdjudication": 85
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-gender-biology-identity-and-welfare",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 25,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "pro-science-mechanism-causation-policy"
+              ],
+              "components": [
+                {
+                  "componentId": "con-gender-biology-identity-and-welfare-component-01",
+                  "targetMoveId": "pro-science-mechanism-causation-policy",
+                  "text": "Address the earlier demand to separate descriptive facts, causal conclusions, and policy recommendations in the gender context.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 47
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "pro-science-mechanism-causation-policy",
+                "pro-science-research-funding-incentives"
+              ],
+              "components": [
+                {
+                  "componentId": "con-gender-biology-identity-and-welfare-component-01",
+                  "targetMoveId": "pro-science-mechanism-causation-policy",
+                  "text": "Whether biological observations by themselves determine broader identity categories and humane social policy.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-gender-biology-identity-and-welfare-component-02",
+                  "targetMoveId": "pro-science-research-funding-incentives",
+                  "text": "Whether relevant welfare evidence can be trusted despite generalized institutional-incentive objections.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 79,
+          "candidate2": 84,
+          "roundedMeanAfterAdjudication": 82
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 70,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 72
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-gender-biological-differences-institutions",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 13,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "representationalCharity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-gender-biology-identity-and-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-gender-biological-differences-institutions-component-01",
+                  "targetMoveId": "con-gender-biology-identity-and-welfare",
+                  "text": "Show why acknowledged biological sex differences can remain institutionally relevant despite socially variable gender norms.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 86
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-gender-biology-identity-and-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-gender-biological-differences-institutions-component-01",
+                  "targetMoveId": "con-gender-biology-identity-and-welfare",
+                  "text": "Whether biological sex differences can legitimately inform norms and sex-separated institutions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-gender-biological-differences-institutions-component-02",
+                  "targetMoveId": "con-gender-biology-identity-and-welfare",
+                  "text": "Whether the resulting institutional rules improve well-being across affected groups.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 73
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 87
+            },
+            "candidate2": {
+              "value": 72
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 77,
+          "roundedMeanAfterAdjudication": 80
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 73,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 73
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-gender-protective-sex-boundaries",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-gender-biology-identity-and-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-gender-protective-sex-boundaries-component-01",
+                  "targetMoveId": "con-gender-biology-identity-and-welfare",
+                  "text": "Identify a protective institutional purpose that must be considered before sex-separated bathroom boundaries are discarded.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 79
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-gender-biology-identity-and-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-gender-protective-sex-boundaries-component-01",
+                  "targetMoveId": "con-gender-biology-identity-and-welfare",
+                  "text": "Whether existing sex-separated boundaries have protective purposes that a humane policy must consider.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-gender-protective-sex-boundaries-component-02",
+                  "targetMoveId": "con-gender-biology-identity-and-welfare",
+                  "text": "Whether bathroom separation actually produces better welfare outcomes than available alternatives.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 67
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "possibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 78,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "relevanceBurden",
+          "candidate1": 69,
+          "candidate2": 68,
+          "roundedMeanAfterAdjudication": 69
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-public-institutions-religious-neutrality",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 8,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-gender-protective-sex-boundaries"
+              ],
+              "components": [
+                {
+                  "componentId": "con-public-institutions-religious-neutrality-component-01",
+                  "targetMoveId": "pro-gender-protective-sex-boundaries",
+                  "text": "Distinguish private religious conviction from the obligations of government and community-serving medical institutions.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-gender-biological-differences-institutions",
+                "pro-gender-protective-sex-boundaries"
+              ],
+              "components": [
+                {
+                  "componentId": "con-public-institutions-religious-neutrality-component-01",
+                  "targetMoveId": "pro-gender-protective-sex-boundaries",
+                  "text": "Whether inherited or conscience-based institutional arrangements may restrict services affecting the wider community.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-public-institutions-religious-neutrality-component-02",
+                  "targetMoveId": "pro-gender-biological-differences-institutions",
+                  "text": "Whether public-facing institutional policy should track medically sound evidence rather than religious doctrine.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 90
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {}
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 88,
+          "candidate2": 91,
+          "roundedMeanAfterAdjudication": 90
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 81,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 88,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 89
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-epistemic-probabilistic-inference",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 9,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-epistemic-burden-and-nonacceptance",
+                "con-epistemic-withhold-until-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-epistemic-probabilistic-inference-component-01",
+                  "targetMoveId": "con-epistemic-burden-and-nonacceptance",
+                  "text": "Show how belief may be rationally supported by probabilistic reasons even when direct empirical proof is unavailable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-epistemic-probabilistic-inference-component-02",
+                  "targetMoveId": "con-epistemic-withhold-until-evidence",
+                  "text": "Challenge a proof-like evidential threshold by offering a secular example of rational inference under incomplete evidence.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 84
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-epistemic-burden-and-nonacceptance",
+                "con-epistemic-withhold-until-evidence"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-epistemic-probabilistic-inference-component-01",
+                  "targetMoveId": "con-epistemic-burden-and-nonacceptance",
+                  "text": "Whether belief without direct empirical proof can nevertheless possess rational evidential support.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-epistemic-probabilistic-inference-component-02",
+                  "targetMoveId": "con-epistemic-withhold-until-evidence",
+                  "text": "Whether the extraterrestrial analogy supplies comparable reasons for belief in a particular God.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 75
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 77,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 79
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 70,
+          "roundedMeanAfterAdjudication": 69
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 73,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 75
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-markets-information-entrepreneurial-welfare",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 26,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "nonanswer",
+              "decisiveTargetIds": [
+                "con-public-institutions-religious-neutrality"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-markets-information-entrepreneurial-welfare-component-01",
+                  "targetMoveId": "con-public-institutions-religious-neutrality",
+                  "text": "Answer the autonomy-and-neutrality constraints governing public-facing institutions rather than shift to market reward and innovation.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 24
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "relevant-nonanswer",
+              "decisiveTargetIds": [
+                "con-gender-biology-identity-and-welfare",
+                "con-public-institutions-religious-neutrality"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-markets-information-entrepreneurial-welfare-component-01",
+                  "targetMoveId": "con-public-institutions-religious-neutrality",
+                  "text": "Whether public-facing institutions owe autonomy- and evidence-based obligations independent of voluntary consumer choice.",
+                  "contacted": false,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-markets-information-entrepreneurial-welfare-component-02",
+                  "targetMoveId": "con-gender-biology-identity-and-welfare",
+                  "text": "Whether humane institutional policy should be evaluated by documented well-being.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": true,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 50
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 81,
+          "candidate2": 80,
+          "roundedMeanAfterAdjudication": 81
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 74,
+          "candidate2": 71,
+          "roundedMeanAfterAdjudication": 73
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-markets-invention-and-living-wages",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-markets-information-entrepreneurial-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "con-markets-invention-and-living-wages-component-01",
+                  "targetMoveId": "pro-markets-information-entrepreneurial-welfare",
+                  "text": "Show why consumer-valued invention does not by itself resolve the welfare and justice of employee compensation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-markets-information-entrepreneurial-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "con-markets-invention-and-living-wages-component-01",
+                  "targetMoveId": "pro-markets-information-entrepreneurial-welfare",
+                  "text": "Whether innovation and voluntary consumer rewards are sufficient to justify immense entrepreneurial wealth.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-markets-invention-and-living-wages-component-02",
+                  "targetMoveId": "pro-markets-information-entrepreneurial-welfare",
+                  "text": "Whether dependent employees receive adequate wages and share in the resulting social benefit.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "con-central-shared-welfare"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "pro-central-markets-incentives"
+              }
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 74,
+          "roundedMeanAfterAdjudication": 73
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 91,
+          "candidate2": 92,
+          "roundedMeanAfterAdjudication": 92
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-labor-voluntary-employment-agreement",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 10,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "logicalCoherence",
+          "evidenceWarrant",
+          "representationalCharity",
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-markets-invention-and-living-wages"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-labor-voluntary-employment-agreement-component-01",
+                  "targetMoveId": "con-markets-invention-and-living-wages",
+                  "text": "Answer the wage objection by appealing to worker choice among alternatives and voluntary agreement over compensation.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 82
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-markets-invention-and-living-wages"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-labor-voluntary-employment-agreement-component-01",
+                  "targetMoveId": "con-markets-invention-and-living-wages",
+                  "text": "Whether low wages are illegitimate when workers choose the job among available alternatives.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-labor-voluntary-employment-agreement-component-02",
+                  "targetMoveId": "con-markets-invention-and-living-wages",
+                  "text": "Whether formal agreement reflects meaningful bargaining power or produces adequate social welfare.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 72
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "logicalCoherence": {
+            "candidate1": {
+              "value": 72
+            },
+            "candidate2": {
+              "value": 65
+            }
+          },
+          "evidenceWarrant": {
+            "candidate1": {
+              "value": 65
+            },
+            "candidate2": {
+              "value": 59
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 64
+            },
+            "candidate2": {
+              "value": 57
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "necessity",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-labor-reciprocal-welfare",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 4,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": false,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-labor-voluntary-employment-agreement"
+              ],
+              "components": [
+                {
+                  "componentId": "con-labor-reciprocal-welfare-component-01",
+                  "targetMoveId": "pro-labor-voluntary-employment-agreement",
+                  "text": "Show why voluntary acceptance does not settle whether low wages promote health, productivity, and a better society.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 89
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-labor-voluntary-employment-agreement",
+                "pro-markets-information-entrepreneurial-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "con-labor-reciprocal-welfare-component-01",
+                  "targetMoveId": "pro-labor-voluntary-employment-agreement",
+                  "text": "Whether voluntary agreement is sufficient to establish that low pay is socially acceptable.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-labor-reciprocal-welfare-component-02",
+                  "targetMoveId": "pro-markets-information-entrepreneurial-welfare",
+                  "text": "Whether entrepreneurial benefit outweighs effects on workers' health and access to basic goods.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 93
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "plausibility",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "yes"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "assertedForce": "probability",
+                "warrantFit": "matched",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "not-needed"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 76,
+          "candidate2": 78,
+          "roundedMeanAfterAdjudication": 77
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 92,
+          "candidate2": 90,
+          "roundedMeanAfterAdjudication": 91
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-healthcare-third-party-payment-competition",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": true,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": false,
+        "materialScoringFieldKeys": [
+          "relevanceBurden",
+          "representationalCharity",
+          "precisionClarity"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-labor-reciprocal-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-healthcare-third-party-payment-competition-component-01",
+                  "targetMoveId": "con-labor-reciprocal-welfare",
+                  "text": "Offer an institutional mechanism for lowering health-care costs while preserving catastrophic coverage and a safety net.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 83
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-labor-reciprocal-welfare"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-healthcare-third-party-payment-competition-component-01",
+                  "targetMoveId": "con-labor-reciprocal-welfare",
+                  "text": "Whether recognizing health care as a basic welfare concern requires the prevailing third-party payment structure.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-healthcare-third-party-payment-competition-component-02",
+                  "targetMoveId": "con-labor-reciprocal-welfare",
+                  "text": "Whether market reform can preserve a safety net while improving access and affordability.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 88
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "relevanceBurden": {
+            "candidate1": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "support",
+                "tier": "central",
+                "bridgeId": "pro-central-markets-incentives"
+              }
+            },
+            "candidate2": {
+              "value": 87,
+              "burdenContact": {
+                "polarity": "attack",
+                "tier": "central",
+                "bridgeId": "con-central-shared-welfare"
+              }
+            }
+          },
+          "representationalCharity": {
+            "candidate1": {
+              "value": 78
+            },
+            "candidate2": {
+              "value": 87
+            }
+          },
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "explicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 82,
+          "candidate2": 85,
+          "roundedMeanAfterAdjudication": 84
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 68,
+          "candidate2": 72,
+          "roundedMeanAfterAdjudication": 70
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "con-healthcare-expertise-access-and-harm",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 5,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-healthcare-third-party-payment-competition"
+              ],
+              "components": [
+                {
+                  "componentId": "con-healthcare-expertise-access-and-harm-component-01",
+                  "targetMoveId": "pro-healthcare-third-party-payment-competition",
+                  "text": "Challenge the consumer-market analogy by emphasizing medical expertise, necessary care, community benefit, and preventable harm from unaffordable access.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 87
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "pro-healthcare-third-party-payment-competition"
+              ],
+              "components": [
+                {
+                  "componentId": "con-healthcare-expertise-access-and-harm-component-01",
+                  "targetMoveId": "pro-healthcare-third-party-payment-competition",
+                  "text": "Whether health-care consumers can make ordinary market choices despite dependence on professional expertise and urgent need.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "con-healthcare-expertise-access-and-harm-component-02",
+                  "targetMoveId": "pro-healthcare-third-party-payment-competition",
+                  "text": "Whether reducing third-party payment would preserve access and avoid preventable death.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 92
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            },
+            "candidate2": {
+              "value": 95,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "stable",
+                "scopeStability": "stable",
+                "qualificationExplicitness": "explicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "implicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "slightly-overstated",
+                "qualificationStatus": "explicit",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 84,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 87
+        },
+        {
+          "fieldKey": "evidenceWarrant",
+          "candidate1": 72,
+          "candidate2": 76,
+          "roundedMeanAfterAdjudication": 74
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 84,
+          "candidate2": 89,
+          "roundedMeanAfterAdjudication": 87
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    },
+    {
+      "moveId": "pro-healthcare-mandates-demand-incentives",
+      "triggers": {
+        "attributionConfidenceMismatch": false,
+        "audioVerificationRequired": false,
+        "responseStructureMismatch": true,
+        "responsivenessWithinClassDelta": 7,
+        "responsePairDispute": true,
+        "charityTestedMismatch": false,
+        "assessmentConfidenceMismatch": false,
+        "burdenContactMismatch": false,
+        "precisionFindingsMismatch": true,
+        "calibrationFindingsMismatch": true,
+        "materialScoringFieldKeys": [
+          "precisionClarity",
+          "epistemicCalibration"
+        ],
+        "importanceMismatch": false,
+        "attributionAudioRequired": false,
+        "assessmentBelowHighAudioRequired": false
+      },
+      "candidates": {
+        "importancePair": null,
+        "attributionPair": null,
+        "responsePair": {
+          "candidate1": {
+            "responseStructure": {
+              "derivedClass": "full-answer",
+              "decisiveTargetIds": [
+                "con-healthcare-expertise-access-and-harm"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-healthcare-mandates-demand-incentives-component-01",
+                  "targetMoveId": "con-healthcare-expertise-access-and-harm",
+                  "text": "Identify political and demand-side mechanisms that can raise costs even when medical access and expertise are valuable.",
+                  "contacted": true,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 77
+            }
+          },
+          "candidate2": {
+            "responseStructure": {
+              "derivedClass": "partial-answer",
+              "decisiveTargetIds": [
+                "con-healthcare-expertise-access-and-harm"
+              ],
+              "components": [
+                {
+                  "componentId": "pro-healthcare-mandates-demand-incentives-component-01",
+                  "targetMoveId": "con-healthcare-expertise-access-and-harm",
+                  "text": "Whether expanded access and professional provision can themselves create political or demand-side distortions.",
+                  "contacted": true,
+                  "decisive": true
+                },
+                {
+                  "componentId": "pro-healthcare-mandates-demand-incentives-component-02",
+                  "targetMoveId": "con-healthcare-expertise-access-and-harm",
+                  "text": "Whether loneliness-driven use materially explains health-care costs or weakens the preventable-harm case.",
+                  "contacted": false,
+                  "decisive": true
+                }
+              ],
+              "issueBearingContraryMaterial": false,
+              "diagnosticConsequenceExplicit": false,
+              "replacementDemandAnswered": false
+            },
+            "responsivenessWithinClass": {
+              "value": 70
+            }
+          }
+        },
+        "charityPair": null,
+        "assessmentConfidencePair": null,
+        "scoringFields": {
+          "precisionClarity": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "materially-unstable",
+                "qualificationExplicitness": "missing"
+              }
+            },
+            "candidate2": {
+              "value": 75,
+              "closedFindings": {
+                "propositionRecoverability": "complete",
+                "termStability": "partly-unstable",
+                "scopeStability": "partly-unstable",
+                "qualificationExplicitness": "implicit"
+              }
+            }
+          },
+          "epistemicCalibration": {
+            "candidate1": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "certainty",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            },
+            "candidate2": {
+              "value": 60,
+              "closedFindings": {
+                "assertedForce": "strong-probability",
+                "warrantFit": "materially-overstated",
+                "qualificationStatus": "missing",
+                "uncertaintyAcknowledged": "no"
+              }
+            }
+          }
+        }
+      },
+      "nondisputedScalarMerges": [
+        {
+          "fieldKey": "logicalCoherence",
+          "candidate1": 65,
+          "candidate2": 64,
+          "roundedMeanAfterAdjudication": 65
+        },
+        {
+          "fieldKey": "representationalCharity",
+          "candidate1": 57,
+          "candidate2": 56,
+          "roundedMeanAfterAdjudication": 57
+        }
+      ],
+      "disputed": true,
+      "calculatedScores": 0
+    }
+  ],
+  "nondisputedScalarMerges": [
+    {
+      "moveId": "con-epistemic-withhold-until-evidence",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-epistemic-domain-limits",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 82,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "pro-epistemic-domain-limits",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 69,
+      "candidate2": 73,
+      "roundedMeanAfterAdjudication": 71
+    },
+    {
+      "moveId": "con-epistemic-burden-and-nonacceptance",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 87,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 88
+    },
+    {
+      "moveId": "con-epistemic-burden-and-nonacceptance",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 94,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "pro-science-mechanism-causation-policy",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 91,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "pro-science-mechanism-causation-policy",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 75,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "con-science-evidence-over-advocate-conduct",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 93,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 93
+    },
+    {
+      "moveId": "con-science-evidence-over-advocate-conduct",
+      "fieldKey": "representationalCharity",
+      "candidate1": 90,
+      "candidate2": 88,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-science-research-funding-incentives",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 49,
+      "candidate2": 48,
+      "roundedMeanAfterAdjudication": 49
+    },
+    {
+      "moveId": "pro-science-research-funding-incentives",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 68,
+      "candidate2": 69,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-science-revision-through-better-science",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 90,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-science-revision-through-better-science",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 78,
+      "candidate2": 79,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-science-revision-through-better-science",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 86,
+      "roundedMeanAfterAdjudication": 85
+    },
+    {
+      "moveId": "con-gender-biology-identity-and-welfare",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 79,
+      "candidate2": 84,
+      "roundedMeanAfterAdjudication": 82
+    },
+    {
+      "moveId": "con-gender-biology-identity-and-welfare",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 70,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 72
+    },
+    {
+      "moveId": "pro-gender-biological-differences-institutions",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 77,
+      "roundedMeanAfterAdjudication": 80
+    },
+    {
+      "moveId": "pro-gender-biological-differences-institutions",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 73,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "pro-gender-protective-sex-boundaries",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 78,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "pro-gender-protective-sex-boundaries",
+      "fieldKey": "relevanceBurden",
+      "candidate1": 69,
+      "candidate2": 68,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "con-public-institutions-religious-neutrality",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 88,
+      "candidate2": 91,
+      "roundedMeanAfterAdjudication": 90
+    },
+    {
+      "moveId": "con-public-institutions-religious-neutrality",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 81,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "con-public-institutions-religious-neutrality",
+      "fieldKey": "representationalCharity",
+      "candidate1": 88,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 89
+    },
+    {
+      "moveId": "pro-epistemic-probabilistic-inference",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 77,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 79
+    },
+    {
+      "moveId": "pro-epistemic-probabilistic-inference",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 70,
+      "roundedMeanAfterAdjudication": 69
+    },
+    {
+      "moveId": "pro-epistemic-probabilistic-inference",
+      "fieldKey": "representationalCharity",
+      "candidate1": 73,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 75
+    },
+    {
+      "moveId": "pro-markets-information-entrepreneurial-welfare",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 81,
+      "candidate2": 80,
+      "roundedMeanAfterAdjudication": 81
+    },
+    {
+      "moveId": "pro-markets-information-entrepreneurial-welfare",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 74,
+      "candidate2": 71,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "con-markets-invention-and-living-wages",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 74,
+      "roundedMeanAfterAdjudication": 73
+    },
+    {
+      "moveId": "con-markets-invention-and-living-wages",
+      "fieldKey": "representationalCharity",
+      "candidate1": 91,
+      "candidate2": 92,
+      "roundedMeanAfterAdjudication": 92
+    },
+    {
+      "moveId": "con-labor-reciprocal-welfare",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 76,
+      "candidate2": 78,
+      "roundedMeanAfterAdjudication": 77
+    },
+    {
+      "moveId": "con-labor-reciprocal-welfare",
+      "fieldKey": "representationalCharity",
+      "candidate1": 92,
+      "candidate2": 90,
+      "roundedMeanAfterAdjudication": 91
+    },
+    {
+      "moveId": "pro-healthcare-third-party-payment-competition",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 82,
+      "candidate2": 85,
+      "roundedMeanAfterAdjudication": 84
+    },
+    {
+      "moveId": "pro-healthcare-third-party-payment-competition",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 68,
+      "candidate2": 72,
+      "roundedMeanAfterAdjudication": 70
+    },
+    {
+      "moveId": "con-healthcare-expertise-access-and-harm",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 84,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "con-healthcare-expertise-access-and-harm",
+      "fieldKey": "evidenceWarrant",
+      "candidate1": 72,
+      "candidate2": 76,
+      "roundedMeanAfterAdjudication": 74
+    },
+    {
+      "moveId": "con-healthcare-expertise-access-and-harm",
+      "fieldKey": "representationalCharity",
+      "candidate1": 84,
+      "candidate2": 89,
+      "roundedMeanAfterAdjudication": 87
+    },
+    {
+      "moveId": "pro-healthcare-mandates-demand-incentives",
+      "fieldKey": "logicalCoherence",
+      "candidate1": 65,
+      "candidate2": 64,
+      "roundedMeanAfterAdjudication": 65
+    },
+    {
+      "moveId": "pro-healthcare-mandates-demand-incentives",
+      "fieldKey": "representationalCharity",
+      "candidate1": 57,
+      "candidate2": 56,
+      "roundedMeanAfterAdjudication": 57
+    }
+  ],
+  "burdenAdjustmentDisputes": [
+    {
+      "side": "pro",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden-contact judgments",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    },
+    {
+      "side": "con",
+      "candidate1": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden-contact judgments",
+            "importance values",
+            "move ratings",
+            "response links"
+          ]
+        }
+      },
+      "candidate2": {
+        "value": 0,
+        "eligibility": {
+          "distinctDebateWideConsequence": false,
+          "affectsBurdenCompletion": false,
+          "notAlreadyScored": false,
+          "affectedBurdenIds": [],
+          "relatedMoveIds": [],
+          "alreadyCapturedBy": [
+            "burden relevance",
+            "move ratings",
+            "response links"
+          ]
+        }
+      }
+    }
+  ],
+  "audioVerificationMoveIds": [],
+  "audit": {
+    "pairValidation": {
+      "status": "passed",
+      "debateNumber": "06",
+      "moves": 19,
+      "fixedMoveKeys": [
+        "moveId",
+        "sectionId",
+        "side",
+        "speaker",
+        "moveKind",
+        "proposition",
+        "sourceSpan",
+        "attributionConfidence",
+        "attributionBasis"
+      ],
+      "importanceRepositoryLocked": false
+    },
+    "uniqueMovesCompared": 19,
+    "importanceComparedAsJudgmentField": true,
+    "mediumConfidenceFromEitherPassTriggersAudio": true,
+    "aggregateOrDiagnosticScoresComputed": 0,
+    "weightedScoresComputed": 0,
+    "scoreBasedDisputeTriggers": 0,
+    "rationaleWordingAloneCreatesDispute": false,
+    "eitherPassAssessmentBelowHighTriggersAudio": true,
+    "repositoryAttributionBelowHighTriggersAudio": true,
+    "frozenPostCanaryBatch06IndependentJudgmentPairCompared": true,
+    "acceptedIndependentJudgmentOutputsOnly": true,
+    "audioWorkItemsPrepared": false,
+    "audioAccessed": false,
+    "adjudicationPrepared": false,
+    "adjudicationExecuted": false
+  },
+  "scoreDerivationAuthorized": false
+}
