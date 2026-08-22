@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-side-execution-runner-recursive-recovery-analysis",
+  "protocolId": "assessment-production-post-canary-batch-05-side-execution-runner-recovery-2",
+  "status": "batch-05-side-execution-runner-activation-credential-correction-passed",
+  "analyzedAt": "2026-08-22T01:16:02.000Z",
+  "recursiveRecoveryAttempt": 1,
+  "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-05/inventory-candidate-sharded/side-execution-runner-recovery-2/correction-plan.json",
+  "results": {
+    "activationCredentialFieldsChanged": 1,
+    "correctedPreflightPasses": 1,
+    "correctedPreflightPassed": true,
+    "contextsValidated": 20,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "artifacts": {
+    "correctedRunner": {
+      "path": "scripts/run-assessment-production-post-canary-batch-05-inventory-side-selectors.mjs",
+      "bytes": 22727,
+      "sha256": "f6d41ef9a95f41328e8d736f4e3f2ff68a8d81f204224fbfc26e1648b5ee2526"
+    },
+    "correctedActivation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/inventory-candidate-sharded/side-execution-activation.json",
+      "bytes": 69082,
+      "sha256": "821ecd771842df24e419ad17e2748004efcd5cdcb5719cdbfaf0bd57901d59a1"
+    }
+  },
+  "preflight": {
+    "status": "passed-model-free-preflight",
+    "contexts": 20,
+    "model": "5.6 Sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlind": true,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumParallelContexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0
+  },
+  "preservation": {
+    "completedPacketsChanged": false,
+    "completedSchemasChanged": false,
+    "runnerCorrectionChanged": false,
+    "otherActivationFieldsChanged": false,
+    "sourcesChanged": false,
+    "candidatesChanged": false,
+    "scoresChanged": false,
+    "modelSettingsChanged": false,
+    "schedulerChanged": false
+  },
+  "nextAuthorizedAction": "execute-exactly-twenty-frozen-post-canary-batch-05-side-selector-contexts-once"
+}
