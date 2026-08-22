@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-audio-source-preparation",
+  "protocolId": "assessment-production-post-canary-batch-06-decomposed-consensus",
+  "status": "prepared-two-post-canary-batch-06-local-audio-clips-standing-authorization-active-for-audio-verification-preparation",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "developmentValidationOnly": false,
+  "checkpointCommit": "fba16b95e1501b14c8fffbf27da88311e78348d3",
+  "userAuthorization": {
+    "instruction": "I authorize creation and use of a Batch 6 standing authorization covering selection and the complete Batch 6 SLUGFESTER reassessment and publication workflow.\n\nBegin by deterministically selecting and freezing exactly the next ten eligible debates under the current promoted post-canary selection policy. Then automatically prepare, validate, freeze, activate, execute, analyze, commit, and push every successful or preserved-failure checkpoint to `main`.\n\nThis authorization covers:\n\n1. Score-blind source-packet preparation and discovery.\n2. Candidate-census planning and candidate-sharded side selection.\n3. Two isolated independent judgments per debate.\n4. Deterministic disagreement extraction.\n5. Local audio-source preparation, one public-source download attempt per missing source with downloader retries disabled, and local FFmpeg clip creation where required. Do not play or semantically evaluate audio.\n6. Audio-verification preparation, cost estimation, and conditionally authorized transcription calls.\n7. Dispute-only adjudication and bounded corrections.\n8. Final-ledger assembly and exactly one deterministic repository score pass.\n9. Score-locked publication reconstruction and bounded field-level repairs.\n10. Compilation, finalization, rendering verification, compatibility staging, production publication, generated-derivative correction, and complete repository validation.\n\nPreserve these controls throughout:\n\n- Use 5.6 Sol with low reasoning effort through my ChatGPT subscription for every discovery, selection, judgment, adjudication, correction, and publication context.\n- Subscription-backed model execution and local work have a direct incremental cost cap of $0.\n- Use ChatGPT-subscription authentication with API keys removed from subscription-backed contexts.\n- Keep every model context isolated and score-blind wherever required.\n- Never expose legacy scores, winners, assessments, publication prose, tags, or unrelated debate material to score-blind model contexts.\n- Hash-lock every context, schema, source, candidate, output path, validator, merge rule, ledger, and production mutation before execution.\n- Use the current frozen stage-specific scheduler and concurrency.\n- Give every newly frozen model context or deterministic pass exactly one attempt, with no ordinary retries, reruns, timeout extensions, rollback, or manual score adjustment.\n- Permit integer-rounded ties under the active v2.2 score-stability policy.\n- Models must never calculate numerical scores. Use exactly one repository score pass.\n- Each judgment field may be accepted exactly once. Never reuse a rejected partial output as accepted content.\n- Preserve every accepted field, source, identity, move decision, score, candidate, ledger, reference, and unrelated production record unless a frozen diagnosis proves that exact field is the cause of a failure.\n- Publication repair packets may expose no more than two explicitly diagnosed writable fields each.\n- Production publication may replace only the ten frozen Batch 6 debate records and publish their ten validated ledgers.\n- Keep `src/data/references.js` and all unrelated production records byte-identical.\n- Compatibility changes may add only the authenticated Batch 6 route required by the frozen compatibility plan. Do not otherwise change validator meaning.\n- Generated files may be written only from a frozen inventory produced by an isolated generator comparison.\n- Commit and push every successful checkpoint and every preserved-failure diagnosis to `main`.\n\nFor paid audio verification:\n\n- Before the first call, freeze and report the usage-derived estimate using the current official rate.\n- I grant conditional advance approval only if the total frozen estimate is no more than $1.00.\n- If that condition passes, proceed automatically using `gpt-4o-transcribe-diarize` through the OpenAI Transcription API.\n- Use the frozen same-debate speaker references, sequential execution, one attempt per clip, and no retries.\n- Apply returned usage at the frozen official rate.\n- Stop remaining paid calls after any request-level failure or usage-derived cap exceedance.\n- Do not use any other paid service.\n\nBounded failure recovery is also authorized:\n\nFor each distinct deterministic-validation, transport, timeout, response-schema, rendering, compilation, compatibility, production-publication, or generated-derivative failure, you may automatically:\n\n1. Preserve and diagnose the failure using only frozen records and local repository evidence.\n2. Validate, freeze, commit, and push the diagnosis.\n3. Prepare and hash-lock one bounded correction.\n4. Execute that correction once.\n5. If necessary, perform one recursive correction for the same underlying problem.\n6. Replay the complete affected cohort, validate it, commit and push, and resume the standing workflow automatically.\n\nPermitted corrections include:\n\n- deterministic execution-harness and authenticated-hash corrections;\n- response-schema and transport corrections;\n- minimum field-disjoint partitioning of an oversized or timed-out context;\n- resumption of only unattempted contexts;\n- validation overlays that preserve original evidence byte-identically;\n- replacement contexts for fields without an accepted decision;\n- publication repairs exposing at most two diagnosed writable fields per packet;\n- deterministic rendering, compatibility, calibration-output, and generated-derivative corrections limited to diagnosed files.\n\nEvery correction must be separately diagnosed and frozen before execution. A correction is not an ordinary retry. Do not reuse a failed partial model output as accepted content.\n\nContinue automatically while all frozen gates pass. Routine preparation, activation, model execution, deterministic execution, bounded first or recursive correction, validation, merge, cohort replay, analysis, commit, and push require no further approval.\n\nStop and obtain new approval only before:\n\n- a projected or actual paid-service cost above $1.00;\n- a third failure involving the same underlying problem;\n- a failed second bounded correction;\n- changing an accepted source, identity, judgment, numerical score, reference, candidate field, or production target outside a frozen diagnosis;\n- changing validator meaning beyond the frozen Batch 6 compatibility route;\n- modifying a debate outside the ten frozen Batch 6 selections;\n- an ordinary retry, rerun, timeout extension, rollback, manual score adjustment, or reuse of rejected content;\n- production mutation differing from its frozen manifest;\n- using a model or paid service not explicitly authorized here;\n- selecting Batch 7; or\n- any action outside this authorization.\n\nWhen Batch 6 is complete, stop before Batch 7 selection and provide a concise report covering debates processed, model contexts, disputes, audio calls and actual cost, corrections, scores, publication validation, rendering, production changes, generated files, repository validation, commits, and the next action.",
+    "standingAuthorizationPath": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization.json",
+    "standingAuthorizationSha256": "b6d7f27c77d76fbdf609d22e0b60b0314b0b8d58c1905d8f84bdcebba58e13f2",
+    "directIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "sourceAudioFilesAuthorized": 1,
+    "clipsAuthorized": 2,
+    "onePublicSourceDownloadAttemptPerMissingVideo": true,
+    "localFfmpegProcessingAuthorized": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorizedThisStage": false,
+    "transcriptionAuthorizedThisStage": false,
+    "adjudicationAuthorizedThisStage": false,
+    "scoreDerivationAuthorizedThisStage": false,
+    "productionMutationAuthorizedThisStage": false,
+    "nextBatchSelectionAuthorized": false
+  },
+  "inputHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/disagreement-extraction/audio-work-item-preparation.json": "8af4208ae72ce51451d95e8e9913d91d0be33d8e6cba32207c5f840c18b75fd2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/disagreement-extraction/audio-work-items.json": "276345a8a2f94aaf623fcf578646c5f6806b50dfe36f0d08b53baccaa2615479",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization.json": "b6d7f27c77d76fbdf609d22e0b60b0314b0b8d58c1905d8f84bdcebba58e13f2",
+    "scripts/prepare-assessment-production-post-canary-batch-06-audio-sources.mjs": "303207490caf34f14aad08e32266594bd475d6c9bd5b3c4cc152d074ae320844",
+    "scripts/test-assessment-production-post-canary-batch-06-audio-sources.mjs": "328d9a05fc7a8b8cfb28ac868d20d0445ce7fce562f7869face823f789774977",
+    "scripts/prepare-assessment-production-post-canary-batch-06-audio-work-items.mjs": "76fcc87ab09594246f8a78d28bfe79c2c17ad6ff129c338a79ff26ca6853091f",
+    "scripts/test-assessment-production-post-canary-batch-06-audio-work-items.mjs": "0f169ea1b1258c70b0a0440d1043f40b0e1d7befedd6ee0a549526521fd2001a",
+    "scripts/lib/assessment-production-post-canary-batch-06-audio-work-items.mjs": "6d0d0d165e56ecfdf5240e72285efcf721e40738bcba26acf9e7ba51ff0f97b5",
+    "scripts/lib/assessment-production-post-canary-batch-06-standing-authorization.mjs": "165fd367eb968e58c6d9cd3b922596affb9b4e44ba085af00dc827a9fcba6b1e",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd"
+  },
+  "workItemSourceHashesReplayed": 78,
+  "acquisitionPolicy": {
+    "reuseValidatedLocalSourceBeforeDownload": true,
+    "onePublicSourceAttemptPerMissingVideo": true,
+    "maximumPublicSourceAttempts": 1,
+    "ytDlpRetryControls": {
+      "retries": 0,
+      "fragmentRetries": 0,
+      "extractorRetries": 0,
+      "fileAccessRetries": 0
+    },
+    "acquisitionFormat": "bestaudio/best",
+    "normalizedChannels": 1,
+    "normalizedSampleRateHz": 16000,
+    "normalizedBitrateKbps": 48,
+    "clipBitrateKbps": 64,
+    "paidServices": false,
+    "transcription": false
+  },
+  "publicSourceAttemptAudit": [
+    {
+      "debateNumber": "97",
+      "videoId": "7eSyz3BaVK8",
+      "attempt": 1,
+      "maximumAttempts": 1,
+      "outcome": "success"
+    }
+  ],
+  "executionBoundary": {
+    "audioAccessLimitedToProgrammaticEncodingProbeAndHashing": true,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "transcriptionCalls": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0
+  },
+  "toolVersions": {
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 8.1.2 Copyright (c) 2007-2026 the FFmpeg developers",
+    "ytDlp": "2026.03.17"
+  },
+  "sources": [
+    {
+      "debateNumber": "97",
+      "videoId": "7eSyz3BaVK8",
+      "acquisitionMode": "downloaded-public-source",
+      "publicSourceAcquisitionAttempts": 1,
+      "publicSourceAttemptOutcome": "success",
+      "sourceAudio": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/audio/source.mp3",
+      "sourceAudioSha256": "34327ec96171af690f786f17bd76ff7913bf39ea8200145be7732fbb7064922e",
+      "durationSeconds": 4934.54225,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 48000,
+      "normalizedBitrateKbps": 48
+    }
+  ],
+  "clips": [
+    {
+      "debateNumber": "97",
+      "debateId": "holland-grayling-christianity-human-values-2019",
+      "sourceVideoId": "7eSyz3BaVK8",
+      "moveId": "con-classical-suppression-and-absorption",
+      "expectedSpeaker": "A. C. Grayling",
+      "proposition": "Christianity's claim to unique foundations is weakened by older divine-son motifs, early Christian suppression of pagan culture, and its later absorption of classical philosophy.",
+      "verificationExcerpt": "the son of a god because a mortal just couldn't do it and I mean this goes way back Priam a Homeric view of the egregious individual to use that term neutrally now just to go back to it to the point of our contradictions there's no contradiction between saying that the early Christians tried to efface a pagan culture they failed they smashed a lot of temples and they burn a lot",
+      "sourceSpan": {
+        "startEvent": 538,
+        "endEvent": 643
+      },
+      "clipWindow": {
+        "startMs": 1365690,
+        "endMs": 1640300,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/clips/con-classical-suppression-and-absorption.mp3",
+      "clipSha256": "48d9a8e3525f932d117708a8242ed980ce029e02a882d5a8f6625c0e316ae935",
+      "plannedDurationSeconds": 274.61,
+      "durationSeconds": 274.610938,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    },
+    {
+      "debateNumber": "97",
+      "debateId": "holland-grayling-christianity-human-values-2019",
+      "sourceVideoId": "7eSyz3BaVK8",
+      "moveId": "pro-secularism-theological-descent",
+      "expectedSpeaker": "Tom Holland",
+      "proposition": "Secularism and assumptions shared by contemporary atheists descend through medieval theology to Gospel materials and older scriptural fragments.",
+      "verificationExcerpt": "they're very asymmetric movies they did it goes back to I mean back to the aging theology and then ultimately back to back to back back to the Gospels I mean it's it's these are you know I hate almost everything that you and I and justice Justin think is down to theologians fragments of scripture from long long ago I think you really want",
+      "sourceSpan": {
+        "startEvent": 1933,
+        "endEvent": 1941
+      },
+      "clipWindow": {
+        "startMs": 4845399,
+        "endMs": 4877039,
+        "paddingMs": 2500
+      },
+      "trigger": {
+        "passAAssessmentConfidence": "medium",
+        "passBAssessmentConfidence": "medium",
+        "passAAttributionConfidence": "medium",
+        "passBAttributionConfidence": "medium",
+        "eitherPassAssessmentBelowHigh": true,
+        "eitherPassAttributionBelowHigh": true
+      },
+      "clipPath": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/clips/pro-secularism-theological-descent.mp3",
+      "clipSha256": "e20ccb84c243f989105741352c586058f94025a813c6ee1889afe4a1b6cfd108",
+      "plannedDurationSeconds": 31.64,
+      "durationSeconds": 31.64,
+      "channels": 1,
+      "sampleRateHz": 16000,
+      "measuredBitRateBps": 64000,
+      "targetBitrateKbps": 64,
+      "audioVerificationCompleted": false
+    }
+  ],
+  "totals": {
+    "sources": 1,
+    "sourceDownloads": 1,
+    "existingNormalizedSources": 0,
+    "sourceAcquisitionAttempts": 1,
+    "clips": 2,
+    "clipMinutes": 5.1042,
+    "paidTranscriptionCalls": 0,
+    "transcriptionCostUsd": 0,
+    "audioVerificationCalls": 0,
+    "audioVerificationCompleted": 0,
+    "modelContexts": 0,
+    "meteredModelApiCostUsd": 0,
+    "directIncrementalCostUsd": 0,
+    "audioFilesPlayed": 0,
+    "semanticAudioEvaluations": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0
+  },
+  "activePolicy": {
+    "version": "v2.2",
+    "promotion": "docs/assessment-production/score-stability-policy-v2.2-promotion.json",
+    "promotionSha256": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "agreedWinningSideMayCollapseToIntegerRoundedTie": true,
+    "agreedInitialTieImposesNoDirectionConstraint": true,
+    "numericalThresholdsChanged": false,
+    "scorePassesMaximum": 1
+  },
+  "validatedInventoryContract": {
+    "protocolId": "v4.2.21.16.6-candidate-sharded-chronology-fallback-contract",
+    "planAndSideIsolationPreserved": true,
+    "fallbackConditionRepositoryOwned": true,
+    "fallbackAppliedOnlyToRetainedOrphanReply": true,
+    "validationCohortOutputsAvailableToModels": false,
+    "scoreFieldsAvailable": false
+  },
+  "authorization": {
+    "audioVerificationManifestPreparation": true,
+    "audioVerificationCostEstimation": true,
+    "paidTranscriptionExecution": false,
+    "audioVerificationExecution": false,
+    "adjudicationPacketPreparation": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "policyPromotion": false,
+    "publicationFinalization": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-freeze-validate-and-push-batch-06-audio-verification-manifest-and-cost-estimate-under-standing-authorization"
+}
