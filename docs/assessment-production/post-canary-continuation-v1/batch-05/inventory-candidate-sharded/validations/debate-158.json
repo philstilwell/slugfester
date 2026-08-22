@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-05-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "158",
+  "inventoryPlanCanonicalSha256": "b4f56728abd685cdad9f11540250815464a20b06705284d97b3106d782e707a4",
+  "sideSelectionSha256": {
+    "pro": "ff6ba0c48befb650b4888382513c864dbf3b4aed93a9fb889b2f724a3abc15d2",
+    "con": "a1e57ca5127b5086fbe7d6388574f9a107db7c2500070e811350f0710730b99e"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c005",
+      "side": "pro",
+      "moveId": "pro-prolonged-group-multisensory-encounters",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The contrast between ordinary error conditions and the reported duration, group participation, familiarity, and sensory range independently advances the sincere-mistake comparison.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-05-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "179",
+  "inventoryPlanCanonicalSha256": "8ef2ea1fbe185b35c978f86e1f436f348301f033e97f3c530c2a3b232b64d2f2",
+  "sideSelectionSha256": {
+    "pro": "235020c5369c24b9ef30fabbf57c81180bd1a4343258f1a1d082ea4337c18a11",
+    "con": "5fdaa65590b6a0f9a8d3b06982f93eb6e36d9679282fd3b5e65870d2a2857f05"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:chunk-001-candidate-06",
+      "side": "pro",
+      "moveId": "pro-resurrection-comparative-explanation",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Even without an earlier retained opposing move, Craig's comparison states an affirmative inference from the four facts to resurrection as their best explanation.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}
