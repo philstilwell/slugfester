@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-independent-judgment-preparation-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-05-independent-judgment-preparation-recovery-1",
+  "status": "frozen-active-batch-05-independent-judgment-preparation-selection-status-correction-plan",
+  "frozenAt": "2026-08-22T01:38:16.000Z",
+  "checkpointCommit": "8d816a3a19d7cc4901372796e4204bea7327a7f8",
+  "recoveryAttempt": 1,
+  "correction": {
+    "exactFile": "scripts/prepare-assessment-production-post-canary-batch-05-independent-judgments.mjs",
+    "preCorrectionSha256": "ccd1d9940e6cd539aee16dbccda267dc0304c6c33e9e606c9925a8f28446c08a",
+    "postCorrectionSha256": "dd8adc3d18349790431a8a42a1cce0be962fa3fdc27c53ce2e66a13b9cab9ea1",
+    "oldExpectation": "fourth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+    "newExpectation": "fifth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+    "replacementCount": 1
+  },
+  "lockedInputs": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/selection.json": "9bd8e4ae3ad86606966a66f560e89ac9f4a65eae3927dc17884fa2dc3851b260",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/inventory-candidate-sharded/inventory-analysis.json": "89b53fe1ffdc3e2eff1f51ca36e08e704e4875f68f15310408d0f72538a1dcb9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685"
+  },
+  "execution": {
+    "previewCommand": "node scripts/prepare-assessment-production-post-canary-batch-05-independent-judgments.mjs --frozen-at 2026-08-22T01:40:00.000Z",
+    "writeCommand": "node scripts/prepare-assessment-production-post-canary-batch-05-independent-judgments.mjs --write --frozen-at 2026-08-22T01:40:00.000Z",
+    "correctedPreviewAttemptsMaximum": 1,
+    "writePassesMaximum": 1,
+    "modelsAuthorized": false,
+    "paidServicesAuthorized": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "preservation": {
+    "selectionByteIdentical": true,
+    "lockedInventoriesByteIdentical": true,
+    "acceptedSideSelectionsByteIdentical": true,
+    "sourcePacketsByteIdentical": true,
+    "modelSettingsUnchanged": true,
+    "schedulerUnchanged": true,
+    "scoresDerived": 0,
+    "productionMutations": 0
+  },
+  "nextAuthorizedAction": "execute-one-corrected-batch-05-independent-judgment-preparation-preview"
+}
