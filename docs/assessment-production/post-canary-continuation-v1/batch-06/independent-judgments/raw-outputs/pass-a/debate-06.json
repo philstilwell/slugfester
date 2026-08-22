@@ -1,0 +1,1742 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "06",
+  "debateId": "dsouza-dillahunty-god-woman-2023",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-faith-inference-and-conservative-order",
+      "side": "pro",
+      "description": "Establish that empirical inquiry has genuine domain limits, that rational guidance may include probabilistic and faith-informed inference about existential and moral questions, and that conservative institutions and market mechanisms can translate such guidance into social policy.",
+      "successCriteria": "The route is completed by connecting the limits of empirical access to a warranted role for nonempirical inference, then showing how objective human features, inherited institutions, voluntary exchange, and incentive-sensitive policy can guide contested questions without requiring empirical certainty.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-guidance-beyond-empiricism",
+        "tier": "motion",
+        "description": "Show that faith-informed inference and conservative consequences can legitimately guide belief and policy where empirical methods underdetermine existential, moral, or institutional questions."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-domain-limits",
+          "tier": "central",
+          "description": "Establish that unresolved questions about origins, purpose, morality, and postmortem existence are not exhausted by present empirical inquiry."
+        },
+        {
+          "bridgeId": "pro-central-rational-inference",
+          "tier": "central",
+          "description": "Explain when probabilistic reasoning, practical uncertainty, or high-stakes consequences warrant attention to possibilities lacking direct verification."
+        },
+        {
+          "bridgeId": "pro-central-human-nature-institutions",
+          "tier": "central",
+          "description": "Connect biological or moral features of human beings to social norms and institutions that are claimed to track those features."
+        },
+        {
+          "bridgeId": "pro-central-markets-incentives",
+          "tier": "central",
+          "description": "Show how voluntary exchange, dispersed information, competition, and cost awareness can guide welfare policy and justify unequal outcomes."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-expert-incentives",
+          "tier": "subsidiary",
+          "description": "Identify incentive structures or institutional interests that may complicate reliance on expert consensus or government-administered systems."
+        },
+        {
+          "bridgeId": "pro-subsidiary-protective-continuity",
+          "tier": "subsidiary",
+          "description": "Explain why longstanding sex-based or conscience-sensitive arrangements may serve protective purposes that proposed reforms must address."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-evidence-and-human-welfare",
+      "side": "con",
+      "description": "Establish that belief should remain proportionate to publicly accessible evidence, that unsupported supernatural claims retain their burden of proof, and that political and social arrangements should be judged by secular-humanist consequences for autonomy, health, and shared welfare.",
+      "successCriteria": "The route is completed by distinguishing uncertainty from affirmative unsupported belief, defending empirical correction and relevant expertise, and applying evidence about harm and well-being to religion in public institutions, gender policy, labor, and health care.",
+      "motionBridge": {
+        "bridgeId": "con-motion-evidence-and-consequences",
+        "tier": "motion",
+        "description": "Show that empirical warrant and secular-humanist consequences provide the appropriate standards for beliefs and policies affecting other people."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-proportional-belief",
+          "tier": "central",
+          "description": "Require confidence and inference to remain proportionate to available evidence while assigning affirmative supernatural claims their burden of proof."
+        },
+        {
+          "bridgeId": "con-central-reliable-inquiry",
+          "tier": "central",
+          "description": "Defend scientific evidence, relevant expertise, and revisability as the governing means of resolving factual disputes about the natural and social world."
+        },
+        {
+          "bridgeId": "con-central-autonomy-neutrality",
+          "tier": "central",
+          "description": "Connect personal autonomy and religious neutrality to the treatment of identity, legislation, and essential public-facing institutions."
+        },
+        {
+          "bridgeId": "con-central-shared-welfare",
+          "tier": "central",
+          "description": "Assess markets, wages, health care, and public policy by their consequences for preventable harm, reciprocal dependence, and access to basic goods."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-alternative-possibilities",
+          "tier": "subsidiary",
+          "description": "Show why high stakes or imaginable possibilities do not select one religious conclusion when incompatible alternatives remain evidentially unresolved."
+        },
+        {
+          "bridgeId": "con-subsidiary-institutional-design",
+          "tier": "subsidiary",
+          "description": "Develop measurable, harm-sensitive alternatives where inherited classifications or consumer-market analogies fail to capture relevant human needs."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-epistemic-warrant",
+      "title": "Evidence, uncertainty, and faith-informed inference",
+      "weightPercent": 30,
+      "rationale": "This issue supplies the governing standards for the entire motion: the burden of supernatural claims, the limits of empirical access, proportional confidence, probabilistic inference, and whether practical stakes can warrant belief or action under uncertainty."
+    },
+    {
+      "sectionId": "section-science-expertise",
+      "title": "Scientific authority, correction, and institutional incentives",
+      "weightPercent": 17,
+      "rationale": "This section tests how each route handles contested natural-world claims by examining empirical inference, scientific revisability, expert reliance, funding incentives, and the separation of observed mechanisms from causal or policy conclusions."
+    },
+    {
+      "sectionId": "section-gender-public-institutions",
+      "title": "Gender, human nature, autonomy, and public institutions",
+      "weightPercent": 20,
+      "rationale": "The gender and religious-neutrality disputes apply the competing standards to biological facts, socially constructed identity, welfare evidence, protective institutions, personal conscience, and the obligations of government and community-serving organizations."
+    },
+    {
+      "sectionId": "section-markets-labor-welfare",
+      "title": "Markets, inequality, labor, and human welfare",
+      "weightPercent": 15,
+      "rationale": "This issue contrasts voluntary exchange and entrepreneurial value with living-wage and distributional concerns, clarifying whether market consent or broader effects on workers and society should govern political-economic judgments."
+    },
+    {
+      "sectionId": "section-healthcare-access",
+      "title": "Health-care access, incentives, and reciprocal social dependence",
+      "weightPercent": 18,
+      "rationale": "Health care provides a concrete policy test of consumer choice, third-party payment, public mandates, professional expertise, preventable suffering, and the extent to which shared welfare creates collective obligations."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-epistemic-withhold-until-evidence",
+      "sectionId": "section-epistemic-warrant",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "constructive",
+      "proposition": "Belief should be withheld until evidence supports it, and neither debate nor scripture supplies sound warrant for belief in a particular God.",
+      "sourceSpan": {
+        "startEvent": 266,
+        "endEvent": 311
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty labels the preceding comparison whataboutism, proposes education in logic and critical thinking, and poses the warrant question himself.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-proportional-belief"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive statement of the con side's proportional-belief standard and therefore has no earlier locked move to answer.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it clearly states the governing epistemic demand and connects it to the God claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The withholding rule and its application are recoverable, though the phrase anything until evidence supports it is somewhat broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker acknowledges disputes about evidential sufficiency, but states the general withholding norm more categorically than the excerpt defends."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The norm and its application fit together, with only a bounded bridge from lack of good reason to withholding belief."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The excerpt supplies a clear normative rationale but little specific support for the further claim about scripture or the debate."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the proportional-belief requirement, placing it near the top of central-tier contact."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move advances its own evidential standard without developing a source-supported alternative interpretation that requires a charity test."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly says belief should be reserved until there is a good reason and that evidence must support what is believed.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-epistemic-domain-limits",
+      "sectionId": "section-epistemic-warrant",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Human ignorance about cosmic origins, life's possible purpose, and postmortem existence leaves consequential questions that present empirical science may be unable to settle.",
+      "sourceSpan": {
+        "startEvent": 312,
+        "endEvent": 400
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "D'Souza explicitly begins an answer, enumerates three questions, and leads the subsequent exchange about the present and possible future reach of science.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-domain-limits"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-epistemic-withhold-until-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-epistemic-domain-limits-component-01",
+            "targetMoveId": "con-epistemic-withhold-until-evidence",
+            "text": "Show why empirical inability to settle a question supplies affirmative warrant for belief rather than continued nonacceptance.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move identifies consequential questions that science may not settle, but it does not answer the decisive demand for evidence supporting a particular affirmative belief.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "It is relevant contrary material within the epistemic dispute, yet leaves the opposing move's decisive warrant demand uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The three questions and the limited claim about present or possible scientific reach are stated with clear qualifications."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move poses and explores possible limits rather than claiming certainty that science can never address the questions."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The inference to unresolved consequential questions is sound, though it does not bridge those limits to affirmative religious guidance."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The listed questions illustrate the claimed limits, but the lasting inability of science to settle them remains largely asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move squarely presents the central domain-limit step and nearly exhausts that bridge's immediate requirement."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "No sufficiently developed alternative is characterized in this span; the move mainly establishes its own domain-limit questions."
+        }
+      },
+      "evidenceBasis": "D'Souza enumerates origins, purpose, and postmortem existence and explicitly asks whether science can settle them now or later.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-epistemic-burden-and-nonacceptance",
+      "sectionId": "section-epistemic-warrant",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Absent adequate evidence, a supernatural claim should not be accepted, which differs from affirming its negation, while the claimant retains the burden of proof.",
+      "sourceSpan": {
+        "startEvent": 404,
+        "endEvent": 452
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty identifies himself as a skeptic, corrects D'Souza's interpretation, and develops the courtroom burden-of-proof analogy in a continuous turn.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-proportional-belief"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-epistemic-domain-limits"
+        ],
+        "components": [
+          {
+            "componentId": "con-epistemic-burden-and-nonacceptance-component-01",
+            "targetMoveId": "pro-epistemic-domain-limits",
+            "text": "Explain why an unresolved question does not warrant accepting a supernatural answer and why the affirmative claimant retains the burden.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the failure in treating nonacceptance as belief in a negation and states the defeating consequence that the claimant still bears the burden.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts the decisive inference from unresolved evidence to belief and diagnoses the burden-of-proof error."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between not believing X and believing not-X is explicit, stable, and concretely illustrated by the courtroom analogy."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The categorical burden distinction is adequately supported as a logical point, while uncertainty about the supernatural is expressly preserved."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Domain limits leave supernatural explanations genuinely open rather than disproved.",
+        "decisiveQualification": "Openness of a possibility does not transfer the affirmative claimant's burden or require acceptance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 94,
+          "rationale": "The belief-state distinction and burden consequence are explicit, consistent, and directly resolve the relevant validity challenge."
+        },
+        "evidenceWarrant": {
+          "value": 87,
+          "rationale": "The logical distinction and courtroom analogy strongly support the burden point, with only limited development of evidential thresholds."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the indispensable proportional-belief and claimant-burden requirements at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply preserves the live possibility of the supernatural while accurately distinguishing that openness from warranted acceptance."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly distinguishes lack of conviction from conviction of the negation and uses a not-guilty verdict to locate the burden.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-science-mechanism-causation-policy",
+      "sectionId": "section-science-expertise",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Accepting greenhouse warming does not by itself establish that humans are its primary cause or determine which policy response is best.",
+      "sourceSpan": {
+        "startEvent": 907,
+        "endEvent": 932
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly states his qualified acceptance of greenhouse science in D'Souza's recognizable first-person position.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-reliable-inquiry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-epistemic-burden-and-nonacceptance",
+          "con-epistemic-withhold-until-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-science-mechanism-causation-policy-component-01",
+            "targetMoveId": "con-epistemic-burden-and-nonacceptance",
+            "text": "Apply the demand for proportionate inference by separating greenhouse mechanism, primary human causation, and preferred policy.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-science-mechanism-causation-policy-component-02",
+            "targetMoveId": "con-epistemic-withhold-until-evidence",
+            "text": "Avoid treating evidence for one proposition as sufficient evidence for distinct causal and policy propositions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the evidential demand by separating three propositions, although it does not provide affirmative evidence against human causation or particular policies.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It directly answers the epistemic demand through proposition separation, but leaves the resulting causal and policy questions unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The accepted mechanism and the disputed causal and policy propositions are distinctly and explicitly separated."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limited claim that one proposition does not itself establish two further propositions matches the logical support provided."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Climate evidence may jointly support mechanism, anthropogenic attribution, and policy even though these are distinct claims.",
+        "decisiveQualification": "Acceptance of the mechanism alone still does not logically establish the separate attribution and policy conclusions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The separation of mechanism, causal attribution, and policy is explicit and valid, though it does not decide the latter questions."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The conceptual distinction is warranted, but the suggestion that the other propositions are smuggled receives no specific empirical support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It materially attacks an overcompressed use of scientific inference and therefore strongly contacts reliable inquiry at the central tier."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The move fairly accepts greenhouse warming but compresses the possibility that broader scientific evidence supports the additional conclusions."
+        }
+      },
+      "evidenceBasis": "D'Souza accepts the greenhouse effect and then separately identifies primary human causation and best-policy claims as further propositions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-science-evidence-over-advocate-conduct",
+      "sectionId": "section-science-expertise",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Climate claims should be assessed through scientific evidence and relevant expertise rather than inferred from alleged hypocrisy in prominent advocates' private conduct.",
+      "sourceSpan": {
+        "startEvent": 1049,
+        "endEvent": 1063
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker identifies his lack of climate expertise and contrasts his expert-centered method directly with D'Souza's examples.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-reliable-inquiry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-science-mechanism-causation-policy"
+        ],
+        "components": [
+          {
+            "componentId": "con-science-evidence-over-advocate-conduct-component-01",
+            "targetMoveId": "pro-science-mechanism-causation-policy",
+            "text": "Determine climate claims from scientific evidence and relevant expertise rather than from alleged hypocrisy by advocates.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses advocate-conduct evidence as an unsound method for deciding whether climate propositions are true and states the expert-evidence replacement.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly identifies the defective inference and the epistemic consequence, though it does not itself resolve the separated climate propositions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The contrast between scientific evidence and advocate hypocrisy is clearly recoverable, with an explicit disclaimer of personal expertise."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The methodological claim is forceful but appropriately qualified by the speaker's admitted lack of climate expertise."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Advocate conduct can reveal inconsistency or information about the advocates' own confidence.",
+        "decisiveQualification": "Such conduct still does not determine the truth of the underlying scientific proposition."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The distinction between a claim's truth and an advocate's conduct is explicit and directly defeats the identified inference."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The methodological warrant is strong, but the excerpt relies generally on experts without presenting the relevant climate evidence itself."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly defends evidence and relevant expertise as central methods for resolving the factual dispute."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The response accurately isolates the limited relevance of hypocrisy and rejects only its use as a truth-determining epistemology."
+        }
+      },
+      "evidenceBasis": "Dillahunty disclaims climate expertise, says he consults science and experts, and expressly rejects alleged hypocrisy as a sound epistemology.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-science-research-funding-incentives",
+      "sectionId": "section-science-expertise",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Large funding structures can make climate research institutionally interested when grants reward researchers for reaching a predetermined conclusion.",
+      "sourceSpan": {
+        "startEvent": 1064,
+        "endEvent": 1080
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn immediately answers Matt's appeal to experts and presents D'Souza's explicit institutional-incentive objection to climate research.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-expert-incentives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-science-evidence-over-advocate-conduct"
+        ],
+        "components": [
+          {
+            "componentId": "pro-science-research-funding-incentives-component-01",
+            "targetMoveId": "con-science-evidence-over-advocate-conduct",
+            "text": "Challenge unqualified reliance on experts by identifying institutional funding incentives that may affect research independence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the appeal to expertise by alleging a concrete incentive mechanism, but it does not establish that the relevant findings are actually distorted.",
+        "responsivenessWithinClass": {
+          "value": 81,
+          "rationale": "It answers the expert-reliance premise directly, while leaving the decisive empirical question of actual distortion insufficiently supported."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The incentive allegation is recoverable, but gigantic funding and predetermined conclusions are undefined and generalized across climate research."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A field-wide claim of predetermined conclusions is asserted categorically without representative evidence or uncertainty about heterogeneous funding."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Researchers can receive large grants while methodological safeguards and diverse funders preserve substantial independence.",
+        "decisiveQualification": "Funding incentives can still create risks that warrant scrutiny even when they do not establish corrupted findings."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The proposed incentive mechanism is possible, but the move moves too quickly from funding dependence to predetermined conclusions."
+        },
+        "evidenceWarrant": {
+          "value": 49,
+          "rationale": "The broad factual allegation relies on assertion and an analogy to pharmaceutical funding without representative documentation or alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly contacts the subsidiary expert-incentives bridge, though it does not complete the empirical case for distortion."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The move raises a legitimate incentive concern but materially weakens the alternative by treating large funding as predetermined outcome production."
+        }
+      },
+      "evidenceBasis": "D'Souza characterizes climate science as massively funded, says grants target a predetermined conclusion, and analogizes pharmaceutical research funding.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-science-revision-through-better-science",
+      "sectionId": "section-science-expertise",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Past scientific error does not establish that current findings are false, because flawed scientific conclusions are corrected through more and better science.",
+      "sourceSpan": {
+        "startEvent": 1270,
+        "endEvent": 1336
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker labels the inference from past error a fallacy and states Matt's recurring account of science as tentative and self-correcting.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-reliable-inquiry"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-science-research-funding-incentives"
+        ],
+        "components": [
+          {
+            "componentId": "con-science-revision-through-better-science-component-01",
+            "targetMoveId": "pro-science-research-funding-incentives",
+            "text": "Show why examples of scientific error or institutional imperfection do not establish that present scientific findings are false.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the inference from prior error to present falsity as defective and states that correction requires further and better inquiry.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It expressly diagnoses the inference and supplies the defeating consequence, though it does not directly investigate the specific funding allegation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The self-correction proposition is clear, though the phrase only thing ever to correct science is broader than the supporting discussion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The central revisability claim fits the argument, but the exclusive historical formulation is stronger than the excerpt demonstrates."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Funding incentives can bias current research even though science has mechanisms for later correction.",
+        "decisiveQualification": "That possibility warrants scrutiny but does not by itself show that a current conclusion is false."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The response validly distinguishes fallibility from present falsity and clearly identifies continued inquiry as the corrective mechanism."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The general account of scientific correction is plausible and well connected, but the exclusive historical claim lacks specific support."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly defends revisability and empirical correction as indispensable features of the central reliable-inquiry bridge."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply preserves the possibility of scientific error but only indirectly addresses the strongest institution-specific version of the objection."
+        }
+      },
+      "evidenceBasis": "Dillahunty calls the inference from past error fallacious and says flawed scientific findings are corrected through more and better science.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-gender-biology-identity-and-welfare",
+      "sectionId": "section-gender-public-institutions",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Genetic sex and chromosomes are biological facts, while gender identity and expression are socially constructed categories whose humane treatment should follow evidence about well-being.",
+      "sourceSpan": {
+        "startEvent": 1685,
+        "endEvent": 1781
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained first-person response follows D'Souza's challenge and matches Dillahunty's explicitly secular, empirical position throughout the exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-autonomy-neutrality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-science-mechanism-causation-policy"
+        ],
+        "components": [
+          {
+            "componentId": "con-gender-biology-identity-and-welfare-component-01",
+            "targetMoveId": "pro-science-mechanism-causation-policy",
+            "text": "Address the earlier demand to separate descriptive facts, causal conclusions, and policy recommendations in the gender context.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move offers a relevant distinction between genetic sex and socially constructed gender, but does not directly answer the earlier climate-specific inferential demand.",
+        "responsivenessWithinClass": {
+          "value": 47,
+          "rationale": "It is issue-bearing contrary material at the motion level but does not contact the selected earlier move's decisive climate inference."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Sex, identity, and expression are distinguished, though the broad term social construct receives only an informal account."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker openly acknowledges possible errors, but the welfare conclusion and breadth of construction receive compressed evidential support."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The biological and social categories can coherently coexist, but the bridge from construction to the recommended humane treatment is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Examples explain identity and expression, while the claim about evidence for well-being is asserted without specific studies or outcomes."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly develops autonomy, identity, and welfare considerations central to the institutional gender dispute."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span primarily develops distinctions within the speaker's own position and does not clearly test a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "Dillahunty distinguishes genetic sex from gender identity and expression, calls the latter social constructs, and invokes evidence about well-being.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-gender-biological-differences-institutions",
+      "sectionId": "section-gender-public-institutions",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Biological sex distinctions are real, and sex-separated institutions such as athletic competition can legitimately develop in congruence with embodied differences.",
+      "sourceSpan": {
+        "startEvent": 1784,
+        "endEvent": 1890
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "D'Souza explicitly resumes his analogy, contrasts male and female with manliness, and develops the biological case through sports examples.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-human-nature-institutions"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-gender-biology-identity-and-welfare"
+        ],
+        "components": [
+          {
+            "componentId": "pro-gender-biological-differences-institutions-component-01",
+            "targetMoveId": "con-gender-biology-identity-and-welfare",
+            "text": "Show why acknowledged biological sex differences can remain institutionally relevant despite socially variable gender norms.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly contacts the claim that gender categories are socially constructed by distinguishing variable norms from embodied sex differences and applying them to sports.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the decisive biological-relevance component, though it does not answer the opposing welfare standard in comparable detail."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The biological-institutional proposition is recoverable, but congruence and the range of justified institutions remain only partly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Sports provide a plausible application, but the wider suggestion that inherited norms track biology needs a clearer scope qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Gender norms may be socially constructed while some sex-linked physical differences remain relevant to limited institutions.",
+        "decisiveQualification": "The social construction claim does not entail that every sex-based athletic classification is arbitrary."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The move coherently links embodied differences to athletic classifications, with a material but bounded scope bridge to institutions generally."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Sports supply a concrete illustration, but the historical and biological generalizations lack specific comparative evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central bridge connecting human biological features to at least one major social institution."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The move fairly preserves social and historical variation while identifying the narrower biological qualification relevant to sport."
+        }
+      },
+      "evidenceBasis": "D'Souza distinguishes historical norms from biology and argues that biological differences can generate congruent rules, especially in athletics.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-gender-protective-sex-boundaries",
+      "sectionId": "section-gender-public-institutions",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Longstanding sex-separated public bathrooms may serve protective purposes, especially for women, that should be understood before those boundaries are discarded.",
+      "sourceSpan": {
+        "startEvent": 2028,
+        "endEvent": 2074
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "D'Souza introduces the fence analogy, identifies protection of women as the institution's rationale, and connects it to broader sex distinctions.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-protective-continuity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-gender-biology-identity-and-welfare"
+        ],
+        "components": [
+          {
+            "componentId": "pro-gender-protective-sex-boundaries-component-01",
+            "targetMoveId": "con-gender-biology-identity-and-welfare",
+            "text": "Identify a protective institutional purpose that must be considered before sex-separated bathroom boundaries are discarded.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the welfare component by proposing protection of women as a reason for inherited boundaries, but it does not substantiate the risk or compare alternatives.",
+        "responsivenessWithinClass": {
+          "value": 79,
+          "rationale": "It directly raises the decisive protective-purpose component but gives only a partial answer because evidence and alternative designs are absent."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The protective-purpose claim is clear and cautiously framed, though its application across public bathrooms remains broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker presents protection as a possible purpose to investigate, a force proportionate to the limited support offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Inclusive bathroom rules may protect transgender users without materially reducing women's safety.",
+        "decisiveQualification": "Any reform should still examine whether and how existing privacy or safety functions can be preserved."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "A protective function would be relevant to reform, but the inference from longstanding separation to actual protection remains underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The safety rationale is asserted through an inherited-fence analogy without representative harm evidence or comparison to alternative arrangements."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the subsidiary protective-continuity concern and sits near the top of that burden tier."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move identifies a legitimate qualification but does not seriously compare inclusive designs or evidence about their actual safety effects."
+        }
+      },
+      "evidenceBasis": "D'Souza uses the fence analogy and argues that sex-separated bathrooms may have developed to protect women and merit investigation before removal.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-public-institutions-religious-neutrality",
+      "sectionId": "section-gender-public-institutions",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Religious convictions may guide public servants personally, but government must not favor religion and community hospitals should provide medically sound services rather than impose doctrine.",
+      "sourceSpan": {
+        "startEvent": 2120,
+        "endEvent": 2148
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dillahunty explicitly agrees that officials retain private faith, then identifies religious favoritism and doctrinal limits on community medical care as unacceptable.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-autonomy-neutrality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-gender-protective-sex-boundaries"
+        ],
+        "components": [
+          {
+            "componentId": "con-public-institutions-religious-neutrality-component-01",
+            "targetMoveId": "pro-gender-protective-sex-boundaries",
+            "text": "Distinguish private religious conviction from the obligations of government and community-serving medical institutions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the institutional-boundary issue by accepting personal faith while arguing that public authority and community hospitals may not impose doctrine.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It directly answers institutional legitimacy, though its focus on religion and hospitals only partly overlaps the bathroom-protection claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Private conviction, government favoritism, and community medical service are separately and clearly delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The institutional neutrality prescription is stated firmly with explicit limits that preserve private religious exercise and charitable activity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious organizations can serve communities while retaining a faith-based institutional identity.",
+        "decisiveQualification": "Community-wide essential services should remain medically sound and should not impose doctrine on recipients."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The private-public distinction is consistent and supplies a clear bridge from neutrality to institutional service obligations."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The normative distinction is well explained, but the claimed medical consequences and exact institutional duties receive limited evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central autonomy-and-neutrality requirement in government and essential community institutions."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The response expressly permits religiously motivated service and targets only favoritism or doctrinal restriction in public-facing essential care."
+        }
+      },
+      "evidenceBasis": "Dillahunty permits personally religious officials and religious charity but rejects government favoritism and doctrinal limits on community medical services.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-epistemic-probabilistic-inference",
+      "sectionId": "section-epistemic-warrant",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "A belief can be rationally warranted by probabilistic inference without direct empirical proof, as an inference to extraterrestrial life from cosmic scale illustrates.",
+      "sourceSpan": {
+        "startEvent": 2367,
+        "endEvent": 2429
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "D'Souza announces a secular test of the disputed proposition and develops the extraterrestrial-life analogy through probability, inference, and evidential openness.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-rational-inference"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-epistemic-burden-and-nonacceptance",
+          "con-epistemic-withhold-until-evidence"
+        ],
+        "components": [
+          {
+            "componentId": "pro-epistemic-probabilistic-inference-component-01",
+            "targetMoveId": "con-epistemic-burden-and-nonacceptance",
+            "text": "Show how belief may be rationally supported by probabilistic reasons even when direct empirical proof is unavailable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-epistemic-probabilistic-inference-component-02",
+            "targetMoveId": "con-epistemic-withhold-until-evidence",
+            "text": "Challenge a proof-like evidential threshold by offering a secular example of rational inference under incomplete evidence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The extraterrestrial analogy directly contacts the requirement for warrant beyond proof, but it does not establish comparable probabilities for a particular God.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It answers the general rational-inference component clearly while leaving the analogy-to-theism and burden-of-proof qualification incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proof-versus-reason distinction is clear, but rational warrant and probability are not given a stable threshold across domains."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker remains open to empirical correction, though the claim of equal epistemic status overstates what the analogy alone establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Nonacceptance need not require empirical proof and can reflect insufficient comparative evidence.",
+        "decisiveQualification": "Probabilistic reasons can warrant belief only if their premises, base rates, and rival explanations are adequately defended."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The secular analogy establishes that proof is unnecessary for some rational beliefs, but the bridge to supernatural belief remains material and implicit."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Cosmic scale offers an intuitive probability consideration, yet no base rate or comparison shows that the analogy supports theistic inference."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the indispensable central question of when probabilistic inference may rationally guide belief."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The move correctly rejects proof as the sole warrant but compresses the con side's stronger demand for comparative evidential adequacy."
+        }
+      },
+      "evidenceBasis": "D'Souza uses extraterrestrial life as a secular example, distinguishes reasons from empirical proof, and states openness to later empirical evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-markets-information-entrepreneurial-welfare",
+      "sectionId": "section-markets-labor-welfare",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Markets convey information through people's choices, and exceptional entrepreneurial wealth can reflect voluntary rewards for innovations that greatly increase human welfare.",
+      "sourceSpan": {
+        "startEvent": 2617,
+        "endEvent": 2710
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker defends his earlier market references and advances examples involving Bezos, Jobs, Apple, and entrepreneurial compensation characteristic of D'Souza's position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-markets-incentives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-public-institutions-religious-neutrality"
+        ],
+        "components": [
+          {
+            "componentId": "pro-markets-information-entrepreneurial-welfare-component-01",
+            "targetMoveId": "con-public-institutions-religious-neutrality",
+            "text": "Answer the autonomy-and-neutrality constraints governing public-facing institutions rather than shift to market reward and innovation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The market argument does not contact the earlier religious-neutrality move's decisive institutional demand and instead begins a distinct welfare-policy issue.",
+        "responsivenessWithinClass": {
+          "value": 24,
+          "rationale": "The move is substantively developed but is a nonanswer to the only selected earlier opposing institutional-neutrality target."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The innovation-and-voluntary-reward proposition is clear, but its extension from selected entrepreneurs to exceptional wealth generally is broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The examples make the welfare claim plausible, while the justice conclusion overlooks costs and distributional qualifications."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "Voluntary purchases can reward welfare-enhancing innovation, but the step from that fact to justified immense wealth is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Recognizable inventions illustrate consumer benefit, though the account is selective and does not compare labor, monopoly, or externality explanations."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly develops voluntary exchange, dispersed choice, entrepreneurial value, and unequal reward within the central market bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The span chiefly develops the positive entrepreneurial case and does not clearly formulate a developed opposing interpretation for testing."
+        }
+      },
+      "evidenceBasis": "D'Souza cites major communication innovations and argues that consumers voluntarily reward entrepreneurs for large increases in human welfare.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-markets-invention-and-living-wages",
+      "sectionId": "section-markets-labor-welfare",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Entrepreneurial invention does not alone justify immense wealth when the resulting business depends on many employees who are denied an adequate living wage.",
+      "sourceSpan": {
+        "startEvent": 2711,
+        "endEvent": 2730
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker grants D'Souza's point about entrepreneurs before distinguishing invention from the labor and wages of thousands of employees.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-shared-welfare"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-markets-information-entrepreneurial-welfare"
+        ],
+        "components": [
+          {
+            "componentId": "con-markets-invention-and-living-wages-component-01",
+            "targetMoveId": "pro-markets-information-entrepreneurial-welfare",
+            "text": "Show why consumer-valued invention does not by itself resolve the welfare and justice of employee compensation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply grants entrepreneurial contribution and directly identifies the omitted employee-wage component, though it does not establish actual wage inadequacy in the examples.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It explicitly contacts the inference from innovation to justified wealth and supplies a clear limiting welfare consideration."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between invention and labor compensation is clear, though adequate living wage lacks a specified threshold."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker frames poor wages conditionally and concedes entrepreneurial achievement, matching the limited conclusion that invention is not sufficient."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Exceptional innovators may deserve exceptional rewards because their products create immense consumer value.",
+        "decisiveQualification": "That contribution does not alone establish that dependent employees receive adequate compensation or that total social welfare is maximized."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The insufficiency argument is explicit: inventor contribution does not logically settle employee compensation or total social benefit."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The conditional example supports the distinction, but no wage data or business-specific evidence establishes the asserted deprivation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central shared-welfare assessment of wages, dependence, and distributional consequences."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The reply explicitly grants the strongest entrepreneurial premise before isolating the distinct wage and societal-benefit qualification."
+        }
+      },
+      "evidenceBasis": "Dillahunty grants self-made entrepreneurial achievement, then contrasts invention with reliance on thousands of potentially underpaid employees.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-labor-voluntary-employment-agreement",
+      "sectionId": "section-markets-labor-welfare",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Low-paid employment can remain legitimate when workers select it from available alternatives and voluntarily agree with the employer about compensation.",
+      "sourceSpan": {
+        "startEvent": 2773,
+        "endEvent": 2797
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker introduces Walmart wage figures and challenges Dillahunty's authority to override employment agreements, continuing D'Souza's voluntary-exchange case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-markets-incentives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-markets-invention-and-living-wages"
+        ],
+        "components": [
+          {
+            "componentId": "pro-labor-voluntary-employment-agreement-component-01",
+            "targetMoveId": "con-markets-invention-and-living-wages",
+            "text": "Answer the wage objection by appealing to worker choice among alternatives and voluntary agreement over compensation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly contacts the wage-legitimacy demand through choice and agreement, but it does not answer whether constrained options yield adequate welfare.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "It supplies a direct consent-based answer while leaving bargaining power, necessity, and living-wage adequacy materially unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The consent proposition is clear, but voluntary is insufficiently specified where all available employment alternatives may be constrained."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Observed acceptance supports some preference for the job, but not the broader legitimacy conclusion without qualifications about bargaining conditions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Workers may accept the best available job under economic necessity without endorsing its wage as fair or adequate.",
+        "decisiveQualification": "Actual choice among employers remains relevant evidence of preference, though it is not conclusive evidence of justice."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Consent is relevant to legitimacy, but the argument compresses the material bridge from best available option to fair compensation."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The Walmart and alternative-employer examples illustrate choice, yet provide no evidence about bargaining power, wages, or realistic mobility."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central voluntary-exchange component of the pro market-and-incentives bridge."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The response emphasizes available alternatives but materially understates the opposing distinction between constrained consent and adequate compensation."
+        }
+      },
+      "evidenceBasis": "D'Souza says Walmart employees could choose competing employers, select their best available job, and agree with Walmart about compensation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-labor-reciprocal-welfare",
+      "sectionId": "section-markets-labor-welfare",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Society may reject poverty wages because collective welfare depends on workers remaining healthy and productive, including through access to health care.",
+      "sourceSpan": {
+        "startEvent": 2798,
+        "endEvent": 2847
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker answers the challenge about who may judge wages, invokes secular social interdependence, and explicitly argues that health care is a basic human right.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-shared-welfare"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-labor-voluntary-employment-agreement"
+        ],
+        "components": [
+          {
+            "componentId": "con-labor-reciprocal-welfare-component-01",
+            "targetMoveId": "pro-labor-voluntary-employment-agreement",
+            "text": "Show why voluntary acceptance does not settle whether low wages promote health, productivity, and a better society.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response directly contacts the consent inference by distinguishing chosen employment from societal adequacy and identifying health-care consequences.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It explicitly answers the decisive inference from agreement to legitimacy, though the asserted collective effects are not quantified."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between voluntary work and broader welfare is clear, with health and productivity specifying the social concern."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker concedes the descriptive account may be true while denying that it necessarily yields justice or better social outcomes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A mutually accepted wage can benefit both worker and employer relative to their available alternatives.",
+        "decisiveQualification": "Mutual benefit does not by itself establish adequate health access, distributive fairness, or optimal social consequences."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The argument clearly distinguishes factual consent from normative adequacy and connects inadequate compensation to social welfare concerns."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The health-and-productivity mechanism is plausible, but the excerpt offers no representative wage, health-access, or productivity evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the shared-welfare bridge through reciprocal dependence, preventable hardship, and access to basic goods."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply grants the central voluntary-exchange possibility and precisely identifies the broader welfare conclusions it cannot alone establish."
+        }
+      },
+      "evidenceBasis": "Dillahunty concedes that people may accept low wages but argues this does not make the outcome just, socially beneficial, or compatible with health-care access.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-healthcare-third-party-payment-competition",
+      "sectionId": "section-healthcare-access",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Third-party payment inflates health-care prices, while consumer cost awareness, routine self-payment, catastrophic coverage, and competition can reduce costs while preserving a safety net.",
+      "sourceSpan": {
+        "startEvent": 2851,
+        "endEvent": 3000
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained response develops D'Souza's third-payer critique, proposes catastrophic insurance and vouchers, and closes by associating the approach with Trump.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-markets-incentives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-labor-reciprocal-welfare"
+        ],
+        "components": [
+          {
+            "componentId": "pro-healthcare-third-party-payment-competition-component-01",
+            "targetMoveId": "con-labor-reciprocal-welfare",
+            "text": "Offer an institutional mechanism for lowering health-care costs while preserving catastrophic coverage and a safety net.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the access concern with a cost-and-competition model, although it does not fully answer affordability for patients lacking routine-care resources.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "It supplies a concrete policy mechanism and safety-net qualification, but only partially resolves the opposing access-and-harm demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Third-party incentives and the proposed coverage split are clear, though the magnitude and generality of price effects remain broad."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The mechanism is plausible and the safety net is explicit, but the confident cost claim exceeds the anecdotal and conceptual support given."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Insurance pools risk and can improve access even while weakening direct consumer price sensitivity.",
+        "decisiveQualification": "Third-party payment can still reduce price scrutiny and requires institutional controls against inflated billing."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The price-insensitivity mechanism and proposed consumer model cohere, with a material bridge from routine self-payment to affordable access."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The account relies substantially on intuitive incentives and examples without comparative cost evidence or analysis of market failures."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly develops competition, cost awareness, insurance design, and incentives within the central pro market-policy bridge."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move recognizes catastrophic coverage and a safety net but gives insufficient weight to insurance's risk-pooling and access functions."
+        }
+      },
+      "evidenceBasis": "D'Souza argues that absent consumer price attention enables inflated bills and proposes routine self-payment, catastrophic insurance, competition, and vouchers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-healthcare-expertise-access-and-harm",
+      "sectionId": "section-healthcare-access",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Health care is not gratuitous consumption: patients depend on medical expertise, necessary treatment benefits the community, and unaffordable access causes preventable death.",
+      "sourceSpan": {
+        "startEvent": 3002,
+        "endEvent": 3135
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the response to Matt, who answers the grocery and test examples in the first person and returns to his community-welfare framework.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-shared-welfare"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-healthcare-third-party-payment-competition"
+        ],
+        "components": [
+          {
+            "componentId": "con-healthcare-expertise-access-and-harm-component-01",
+            "targetMoveId": "pro-healthcare-third-party-payment-competition",
+            "text": "Challenge the consumer-market analogy by emphasizing medical expertise, necessary care, community benefit, and preventable harm from unaffordable access.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The response contacts both the price-conscious-consumer premise and its access consequence, though it does not fully rebut the alleged billing incentives.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It directly answers the central consumer-choice analogy and access implications while leaving some third-party price-inflation concerns standing."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The expertise and access claims are clear, but health care as a unified category covers services with materially different urgency and discretion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The severe access-harm claim is plausible, but its general application and the characterization of the pricing account receive limited qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Third-party payment can encourage excessive billing and reduce patient attention to cost.",
+        "decisiveQualification": "Patients often cannot assess medical necessity and unaffordable essential care can cause serious preventable harm."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Expertise dependence and necessity coherently limit ordinary consumer analogies, though they do not negate every third-party incentive effect."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The mechanisms are concrete and plausible, but the excerpt supplies no representative access, mortality, or comparative-system evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies central shared-welfare requirements concerning expertise, basic access, community benefit, and preventable harm."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply recognizes the incentive allegation but partly recasts it as a broad conspiracy, which is stronger than the pro mechanism required."
+        }
+      },
+      "evidenceBasis": "Dillahunty disputes the scam framing, emphasizes dependence on medical expertise and necessary treatment, and links unaffordable access to community harm and death.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-healthcare-mandates-demand-incentives",
+      "sectionId": "section-healthcare-access",
+      "side": "pro",
+      "speaker": "Dinesh D'Souza",
+      "moveKind": "reply",
+      "proposition": "Government health mandates can enrich insurers through political collusion, while nonmedical needs such as loneliness can inflate elderly demand for clinical services.",
+      "sourceSpan": {
+        "startEvent": 3136,
+        "endEvent": 3222
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker directly labels Obamacare a government-insurer arrangement and then offers D'Souza's extended counterexample concerning elderly health-care utilization.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-shared-welfare"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-healthcare-expertise-access-and-harm"
+        ],
+        "components": [
+          {
+            "componentId": "pro-healthcare-mandates-demand-incentives-component-01",
+            "targetMoveId": "con-healthcare-expertise-access-and-harm",
+            "text": "Identify political and demand-side mechanisms that can raise costs even when medical access and expertise are valuable.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the access model by alleging insurer collusion and nonmedical utilization, but neither mechanism resolves the opposing preventable-harm concern.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It contacts a secondary cost-and-demand component but does not answer the decisive necessity, expertise, and lethal-access components."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "materially-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Two distinct mechanisms are recoverable, but collusion, nonmedical need, and inflated demand are insufficiently defined or delimited."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The move labels demand patterns empirical facts and alleges political enrichment without providing representative evidence or material caveats."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Elderly loneliness can itself be a legitimate health concern, and mandates can expand access rather than merely enrich insurers.",
+        "decisiveQualification": "Coverage rules and clinical settings can still create rent-seeking or channel nonacute needs into costly medical services."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 65,
+          "rationale": "Both proposed mechanisms are possible, but their combination does not establish that mandates or elderly utilization are generally inefficient."
+        },
+        "evidenceWarrant": {
+          "value": 46,
+          "rationale": "The political-collusion allegation and elderly-demand generalization rely on assertion and personal examples rather than representative support."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move centrally attacks the con shared-welfare policy bridge by alleging mandate and utilization effects, though incompletely."
+        },
+        "representationalCharity": {
+          "value": 57,
+          "rationale": "The move identifies possible incentive effects but materially discounts legitimate health dimensions of loneliness and access-expanding purposes."
+        }
+      },
+      "evidenceBasis": "D'Souza characterizes Obamacare as government-insurer enrichment and argues that loneliness and counseling needs can expand elderly use of clinical services.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct pro-side debate-wide consequence survives the strict exclusion rule beyond matters already captured in move judgments and burden contact.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was established.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden-contact judgments"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct con-side debate-wide consequence survives the strict exclusion rule beyond matters already captured in move judgments and burden contact.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No uncaptured completion criterion was identified.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was established.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden-contact judgments"
+        ],
+        "counterfactual": "Removing the alleged residual would not change burden completion independently of the recorded move judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

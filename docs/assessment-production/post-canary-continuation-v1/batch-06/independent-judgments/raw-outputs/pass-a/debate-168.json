@@ -1,0 +1,2135 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "168",
+  "debateId": "craig-krauss-evidence-god-2012",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-cumulative-theistic-evidence",
+      "side": "pro",
+      "description": "Establish that contingency, a finite cosmic past, life-permitting fine-tuning, objective morality, and the historical case for Jesus's resurrection collectively raise the probability of God's existence.",
+      "successCriteria": "The route succeeds if the cited facts are sufficiently established, are more expected or better explained given theism than its relevant alternatives, and cumulatively support the motion's evidentiary threshold.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-probability",
+        "tier": "motion",
+        "description": "The motion is satisfied if the cumulative considerations make God's existence more probable than it would otherwise be."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-cosmological-ground",
+          "tier": "central",
+          "description": "Contingent reality and a universe with a finite past must warrant inference to a necessary, transcendent causal ground."
+        },
+        {
+          "bridgeId": "pro-fine-tuning-design",
+          "tier": "central",
+          "description": "Life-permitting constants and initial conditions must be better explained by design than by necessity, chance, or multiverse selection."
+        },
+        {
+          "bridgeId": "pro-objective-morality",
+          "tier": "central",
+          "description": "Objective moral values and duties must exist and require an ontological foundation supplied by God's necessary moral nature."
+        },
+        {
+          "bridgeId": "pro-resurrection",
+          "tier": "central",
+          "description": "The relevant historical facts concerning Jesus must be established and better explained by divine resurrection than by naturalistic alternatives."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-broad-evidence-standard",
+          "tier": "subsidiary",
+          "description": "Philosophical, moral, historical, and scientific considerations must be admissible within a probability-raising conception of evidence."
+        },
+        {
+          "bridgeId": "pro-cumulative-reinforcement",
+          "tier": "subsidiary",
+          "description": "The several independent considerations must retain material cumulative force even if no individual consideration proves theism by itself."
+        }
+      ]
+    },
+    {
+      "routeId": "con-empirical-naturalistic-defeat",
+      "side": "con",
+      "description": "Show that the affirmative considerations are unsupported, underdetermined, or more plausibly addressed through empirical naturalism, so they do not supply adequate evidence for a divine cause or the Christian God.",
+      "successCriteria": "The route succeeds if the affirmative fails to justify its probability assignments or if natural models, explanatory uncertainty, secular morality, and ordinary historical explanations prevent the cited facts from discriminating in favor of God.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-evidence",
+        "tier": "motion",
+        "description": "The motion is not established unless the affirmative supplies testable or otherwise warranted evidence that favors God over relevant natural alternatives."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-natural-cosmology",
+          "tier": "central",
+          "description": "Quantum-gravity, multiverse, or other physical possibilities must block the inference from contingency or cosmic beginnings to a uniquely divine cause."
+        },
+        {
+          "bridgeId": "con-fine-tuning-alternatives",
+          "tier": "central",
+          "description": "Dynamical explanations and observer selection must make apparent fine-tuning insufficient to distinguish purposive design from natural cosmology."
+        },
+        {
+          "bridgeId": "con-secular-morality",
+          "tier": "central",
+          "description": "Moral truth or understanding must remain intelligible without divine grounding, or the proposed divine foundation must face an unresolved arbitrariness problem."
+        },
+        {
+          "bridgeId": "con-ordinary-historical-explanation",
+          "tier": "central",
+          "description": "Human error, illusion, imagination, or intervention must remain more plausible than resurrection as explanations of the reported historical claims."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-empirical-warrant",
+          "tier": "subsidiary",
+          "description": "Claims about divine evidence must meet a defensible empirical or probabilistic standard rather than rest on intuition or unquantified priors."
+        },
+        {
+          "bridgeId": "con-no-gap-inference",
+          "tier": "subsidiary",
+          "description": "Present explanatory ignorance must remain a reason for continued investigation rather than an evidential inference to supernatural agency."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "title": "Evidential Standards and the Cumulative Inference",
+      "weightPercent": 15,
+      "rationale": "The parties dispute what qualifies as evidence, how probability-raising claims are warranted, where the burden lies, and whether several distinct considerations can jointly support the motion."
+    },
+    {
+      "sectionId": "contingency-and-necessary-ground",
+      "title": "Contingency and the Necessary Explanatory Ground",
+      "weightPercent": 17,
+      "rationale": "This issue tests whether contingent reality requires an external necessary explanation and whether God has any justified advantage over a necessary or eternal natural terminus."
+    },
+    {
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "title": "Cosmic Beginning, Infinity, and Transcendent Causation",
+      "weightPercent": 20,
+      "rationale": "The finite-past argument depends on philosophical claims about actual infinity, scientific claims about cosmic boundaries, and the inference from a beginning to a transcendent cause."
+    },
+    {
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "title": "Fine-Tuning, Design, and Multiverse Selection",
+      "weightPercent": 17,
+      "rationale": "This section addresses whether life-permitting conditions favor purposive design or are better treated through dynamics, varied universes, observer selection, and unresolved physical theory."
+    },
+    {
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "title": "Moral Objectivity and Divine Grounding",
+      "weightPercent": 14,
+      "rationale": "The moral argument requires both objective values or duties and a uniquely divine ontology, while the opposing route contests that dependence through rational, biological, and arbitrariness-based alternatives."
+    },
+    {
+      "sectionId": "resurrection-and-historical-explanation",
+      "title": "Resurrection and Competing Historical Explanations",
+      "weightPercent": 17,
+      "rationale": "The historical pillar turns on the status of the alleged facts, their connection to God's existence, and the comparative plausibility of resurrection against ordinary human explanations."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-cumulative-probability-standard",
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Facts concerning the universe, morality, and history collectively raise the probability that God exists.",
+      "sourceSpan": {
+        "startEvent": 9,
+        "endEvent": 48
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening statement explicitly introduces Craig's probabilistic conception of evidence and cumulative case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-probability"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes the probability-raising standard and announces the cumulative route without answering an earlier opposing move.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It directly frames the motion-level cumulative inference and clearly identifies the considerations that will supply it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The probability comparison, background information, and cumulative evidential scope are expressly and consistently identified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The comparative-probability framing is appropriately qualified, though calling the increase indisputable slightly exceeds the support supplied here."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The probability-raising standard is coherent, but the independence and aggregation bridges among the considerations remain implicit."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The move identifies relevant classes of facts but does not yet supply comparative likelihoods or a defended cumulative calculation."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly states the motion-level criterion by which the several affirmative considerations are meant to support God."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move introduces its own evidential framework and does not materially characterize a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "Craig defines evidence through a conditional-probability increase and applies that framework to facts about the universe, morality, and history.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-contingency-necessary-cause",
+      "sectionId": "contingency-and-necessary-ground",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The existence of contingent beings is best explained by a necessarily existing transcendent cause identified as God.",
+      "sourceSpan": {
+        "startEvent": 49,
+        "endEvent": 105
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this his first consideration and presents both an explanatory inference and its deductive formulation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-probability"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the affirmative contingency argument and its necessary-versus-external explanation structure.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly advances an indispensable cosmological bridge through an explicit explanatory and deductive formulation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The explanatory principle and contingent universe are recoverable, though identification of the necessary cause with God is compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The argument supports an explanatory terminus more readily than the specifically transcendent divine identification asserted in the conclusion."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The explanatory structure is valid conditional on its premises, but the bridge from necessary explanation to God remains materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The principle of explanation is asserted and formulated, while rival natural necessary termini receive no comparison in this move."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "The move directly supplies the central bridge from contingent existence to a necessary transcendent explanatory ground."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The constructive presentation does not develop or assess a sufficiently specific opposing interpretation in this span."
+        }
+      },
+      "evidenceBasis": "Craig states that everything has an explanation in its nature or an external cause, applies this to the universe, and identifies God as the terminus.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cosmic-beginning-cause",
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe began to exist and therefore has a transcendent cause beyond space and time, best identified as God.",
+      "sourceSpan": {
+        "startEvent": 106,
+        "endEvent": 194
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly presents his second argument, supports its premises, and closes with a numbered deductive formulation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-probability"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move presents the finite-past causal argument and expressly infers a cause beyond physical space and time.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It supplies a complete central argumentative structure, including causal premise, beginning premise, and transcendent-cause conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The causal syllogism is fully recoverable, but the further claim that its cause is best identified as God is only compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The causal conclusion follows if both premises hold, while the divine-character inference requires additional qualifications not fully stated here."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The explicit syllogism is valid, though the transition from a cause to a personal or divine transcendent cause retains an implicit bridge."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The move reportedly supports both premises, but the selected evidence chiefly displays the formulation rather than serious alternative comparison."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly advances the indispensable cosmological-ground bridge through the universe's alleged beginning and transcendent cause."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "This opening constructive case does not yet engage a developed opposing cosmological model or interpretation."
+        }
+      },
+      "evidenceBasis": "Craig explicitly states that whatever begins has a cause, that the universe began, and that its cause must transcend physical space and time.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-fine-tuning-design",
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe's life-permitting fine-tuning is better explained by design than by physical necessity or chance.",
+      "sourceSpan": {
+        "startEvent": 195,
+        "endEvent": 267
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig identifies fine-tuning as his third consideration and explicitly compares necessity, chance, and design as explanations.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-cosmological-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move compares physical necessity, chance, and design as explanations of life-permitting cosmic conditions.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It directly supplies the central fine-tuning comparison and identifies the principal rival explanation classes."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The alternatives and comparative conclusion are clear, though probability measures and the design hypothesis's scope remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The improbability considerations provide some comparative force, but the confident design preference lacks explicit priors and likelihoods."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Fine-tuning may result from physical necessity or chance rather than purposive design.",
+        "decisiveQualification": "Independence from presently known laws does not establish independence from every deeper physical theory."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The eliminative comparison is coherent, but excluding two categories does not fully establish design without exhaustive and well-specified alternatives."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Specific fine-tuning features and alternatives are identified, while quantitative likelihoods and deeper physical accounts remain underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly addresses the central requirement that design outperform necessity, chance, and related natural explanations."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move expressly considers necessity and chance, though it compresses the strongest deeper-law and selection qualifications."
+        }
+      },
+      "evidenceBasis": "Craig identifies necessity, chance, and design, argues constants and quantities are not fixed by known laws, and treats chance as extraordinarily improbable.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-objective-morality-ground",
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values and duties exist, and their existence entails God because atheism cannot ground their objectivity.",
+      "sourceSpan": {
+        "startEvent": 268,
+        "endEvent": 327
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this his fourth argument and concludes with an explicit three-premise-style deductive presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-cosmological-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move asserts objective moral facts and uses their alleged incompatibility with atheism to infer God's existence.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It squarely advances the central moral bridge through an explicit conditional argument and claimed objective examples."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The syllogism is recoverable, but objective values, duties, and their ontological grounding are not kept fully distinct."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Assigning probability 1.0 to God from objective wrongness radically exceeds the unargued dependence premise in this span."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective moral truths may exist without being constituted or grounded by a divine person.",
+        "decisiveQualification": "Recognizing genuine wrongness does not itself establish that atheism lacks every adequate moral ontology."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The deductive form is valid, but its central conditional equates non-theism with the absence of objective morality without adequate bridgework."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "Examples support belief that some acts are wrong, not the distinct ontological assertion that only God can ground that wrongness."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses both objective moral existence and the claimed need for a divine foundation."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The move treats atheism as unable to ground morality without addressing the strongest non-theistic realist alternative."
+        }
+      },
+      "evidenceBasis": "Craig cites apparent moral abominations and an authority accepting objective error, then formulates the conditional from objective morality to God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-core-facts",
+      "sectionId": "resurrection-and-historical-explanation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The empty tomb, postmortem appearances, and disciples' transformed belief are best explained by Jesus's resurrection, which entails God.",
+      "sourceSpan": {
+        "startEvent": 328,
+        "endEvent": 406
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels the historical case his fifth argument, enumerates three facts, and states the resurrection inference and theistic conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-fine-tuning-design"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move enumerates the empty tomb, appearances, and transformed belief and offers resurrection as their best explanation.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It directly supplies the historical pillar's alleged facts and comparative supernatural conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The three facts and explanatory claim are recoverable, though scholarly agreement and inferential scope require implicit qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The asserted scholarly facts provide a case to compare, but do not alone warrant the confident miraculous best-explanation conclusion."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The abductive structure is usable, but the bridge from the reported facts to divine resurrection needs explicit rival and prior comparison."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The move appeals to majority historical recognition and enumerates facts, but documentation and independence of sources are compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central resurrection bridge by stating both the relevant facts and the proposed best explanation."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "Naturalistic rival accounts are not sufficiently developed within this constructive span to support a meaningful charity test."
+        }
+      },
+      "evidenceBasis": "Craig lists an empty tomb, postmortem appearances, and transformed disciples, appeals to historical scholarship, and infers a divine resurrection.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-affirmative-empirical-burden",
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Craig bears the affirmative burden of supplying recognizable empirical evidence for God, while Krauss need not disprove God's existence.",
+      "sourceSpan": {
+        "startEvent": 439,
+        "endEvent": 471
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss explicitly distinguishes this evidence debate from a general existence debate and repeatedly assigns Craig the evidentiary burden.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-objective-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cumulative-probability-standard"
+        ],
+        "components": [
+          {
+            "componentId": "con-affirmative-empirical-burden-component-01",
+            "targetMoveId": "pro-cumulative-probability-standard",
+            "text": "Whether the affirmative's probability-raising considerations supply recognizable evidence sufficient for the motion.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the evidential standard by demanding affirmative support, but it does not specifically assess the likelihood relations Craig proposed.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "It contacts the decisive burden issue but answers only partly because it substitutes recognizable empirical evidence without fully defending that restriction."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The burden allocation is clear, but recognizable empirical evidence is not given a stable criterion or defended scope."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The affirmative burden is appropriate, while treating empirical recognizability as mandatory needs a qualification for non-scientific evidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The affirmative offers philosophical, moral, historical, and scientific probability-raising evidence rather than scientific proof alone.",
+        "decisiveQualification": "Bearing the affirmative burden does not establish that only laboratory-style empirical evidence can discharge it."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "Burden placement is coherent, but the inference from affirmative burden to an exclusively empirical standard is insufficiently defended."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The move asserts a disciplinary evidential norm without representative support or a comparison with Craig's probabilistic standard."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "It directly contests whether the affirmative has met the motion-level evidentiary burden."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The reply fairly identifies the burden but materially narrows the affirmative's expressly broader evidential conception."
+        }
+      },
+      "evidenceBasis": "Krauss repeatedly assigns Craig the burden to demonstrate evidence and distinguishes that task from requiring Krauss to disprove God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-extraordinary-divine-evidence-standard",
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "An infinitely powerful divine intelligence is an extraordinary claim requiring correspondingly extraordinary evidence, which ordinary probability assertions do not by themselves supply.",
+      "sourceSpan": {
+        "startEvent": 472,
+        "endEvent": 561
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss develops an explicit evidentiary criterion, illustrates what miraculous evidence might look like, and applies it to Craig's case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-objective-morality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cumulative-probability-standard"
+        ],
+        "components": [
+          {
+            "componentId": "con-extraordinary-divine-evidence-standard-component-01",
+            "targetMoveId": "pro-cumulative-probability-standard",
+            "text": "Whether ordinary probability-raising considerations warrant belief in the extraordinary hypothesis of an infinitely powerful divine intelligence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges the adequacy of Craig's evidential threshold, though it does not quantify the prior or likelihood standard it invokes.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the decisive evidential inference and supplies a rival standard, but the standard itself remains materially underdefended."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The heightened-evidence demand is clear, while extraordinary and scientific evidence retain partly unspecified meanings."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A low-prior hypothesis rationally needs stronger discriminating evidence, but the categorical formulation lacks explicit probabilistic qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Several ordinary facts could cumulatively favor theism even without a spectacular miracle occurring during the debate.",
+        "decisiveQualification": "Extraordinary claims require highly discriminating evidence, not necessarily evidence that is itself spectacular or anomalous."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The Bayesian intuition is coherent, but extraordinary evidence is not operationalized and need not mean a visibly miraculous event."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Illustrative possible miracles clarify the demand, yet no defended prior or comparative likelihood analysis is supplied."
+        },
+        "relevanceBurden": {
+          "value": 88,
+          "rationale": "The move directly challenges whether the affirmative evidence can satisfy the motion-level threshold for the divine hypothesis."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply raises the proper prior-probability concern but frames the strongest alternative too narrowly around miraculous demonstration."
+        }
+      },
+      "evidenceBasis": "Krauss characterizes divine intelligence as exceptionally extraordinary, contrasts Craig's evidence with scientific practice, and imagines stronger miraculous evidence.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-infinity-intuition-challenge",
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Classical intuitions about the absurdity of infinity cannot override mathematics and empirically successful physics, both of which consistently employ infinite quantities.",
+      "sourceSpan": {
+        "startEvent": 562,
+        "endEvent": 754
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss sustains the same rebuttal through methodological claims, a quantum-mechanical illustration, and a direct discussion of mathematical infinities.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cosmic-beginning-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-infinity-intuition-challenge-component-01",
+            "targetMoveId": "pro-cosmic-beginning-cause",
+            "text": "Whether philosophical objections to actual infinity adequately support the premise that the universe began to exist.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts one support for the beginning premise by showing legitimate mathematical and physical uses of infinity, but does not settle past actuality.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "It contacts a decisive subsidiary premise but only partially answers because formal and calculational infinities are not identical to an actual infinite past."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Infinity shifts among mathematical objects, infinite series, physical quantities, and a temporally actual infinite history."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Successful uses of infinity undermine simple intuition but do not by themselves show that a physically actual infinite past exists."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Mathematical consistency and calculational utility may coexist with the impossibility of a physically instantiated infinite past.",
+        "decisiveQualification": "The relevant dispute concerns actual temporal instantiation, not merely mathematical manipulation of infinite quantities."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 66,
+          "rationale": "The counterexample strategy is relevant, but it equivocates between mathematical infinity and the metaphysical actuality challenged by Craig."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Complex analysis and successful physics are concrete support, though they do not verify an eternal physical history."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move centrally attacks an important premise supporting the cosmological-ground inference."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The reply substantially weakens the argument by treating several importantly distinct senses of infinity as equivalent."
+        }
+      },
+      "evidenceBasis": "Krauss cites complex analysis, infinite series, quantum mechanics, and modern physics as successful disciplines that routinely handle infinities.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-contingency-gap-objection",
+      "sectionId": "contingency-and-necessary-ground",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Contingency and presently unexplained causal processes do not support God, because unknown explanations invite investigation and may ultimately prove entirely physical.",
+      "sourceSpan": {
+        "startEvent": 755,
+        "endEvent": 835
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss explicitly turns to Craig's first listed consideration and develops a continuous objection centered on accidents and unknown physical causes.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-cumulative-reinforcement"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-contingency-necessary-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-contingency-gap-objection-component-01",
+            "targetMoveId": "pro-contingency-necessary-cause",
+            "text": "Whether unexplained contingent existence licenses an inference to God rather than continued investigation of possible physical explanations.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies a gap between present ignorance and God and states the defeating consequence that future physical explanations could remove the inference.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It expressly diagnoses a missing inference and gives the relevant consequence, though it partly misstates Craig's argument as ignorance about human origins."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The no-gap principle is clear, but the target shifts from contingent being generally toward causal processes producing human beings."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The reply appropriately claims that unknown causes may be physical and treats uncertainty as a reason to investigate rather than conclude."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The contingency argument invokes a general explanatory principle rather than merely ignorance of the biological causes of human beings.",
+        "decisiveQualification": "Even a general principle still needs a bridge showing why the necessary explanation must be divine rather than physical."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The caution against inference from ignorance is sound, though it does not directly refute the stated principle of sufficient explanation."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The history-of-discovery rationale supports caution, but no specific necessary natural explanation is supplied in this move."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly advances the subsidiary no-gap bridge while only indirectly reaching the full central contingency argument."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The gap criticism is legitimate, but the example materially narrows and partly misdescribes the stronger contingency argument."
+        }
+      },
+      "evidenceBasis": "Krauss labels the inference God-of-the-gaps, emphasizes unknown processes, and warns that later-discovered causes may prove entirely physical.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-eternal-multiverse-first-cause-alternative",
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Quantum gravity, inflation, and a potentially eternal multiverse provide natural models in which our universe can arise spontaneously without a relevant divine first cause.",
+      "sourceSpan": {
+        "startEvent": 889,
+        "endEvent": 928
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted Krauss turn is identified by the moderator's transition to Craig at events 953 through 955.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cosmic-beginning-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-eternal-multiverse-first-cause-alternative-component-01",
+            "targetMoveId": "pro-cosmic-beginning-cause",
+            "text": "Whether the universe's beginning requires a divine first cause when an eternal multiverse could generate our local universe.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move directly offers a physical alternative to the divine first-cause inference, while acknowledging uncertainty about the multiverse's own cause.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive causal inference, but establishes the alternative mainly as a model-supported possibility rather than a demonstrated account."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The local-universe versus multiverse distinction is clear, though eternal is stated more categorically than the model uncertainty allows."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The core claim is appropriately modal: the local universe could arise spontaneously from a potentially eternal multiverse."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A multiverse may itself require a beginning or explanation and therefore may not remove the ultimate causal question.",
+        "decisiveQualification": "Generating our local universe blocks only the local first-cause inference unless the multiverse is independently shown past-eternal."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The distinction between a local beginning and an ultimate beginning is coherent, though the eternal-multiverse premise remains conditional."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Inflation and quantum gravity provide a motivated possibility, but no representative result establishes that the actual multiverse is eternal."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central natural-cosmology bridge against the inference from our universe's beginning to God."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The reply acknowledges uncertainty about causation but overstates the model's eternity before adding that qualification."
+        }
+      },
+      "evidenceBasis": "Krauss invokes inflation, quantum gravity, and an eternal multiverse from which the observable universe might spontaneously appear.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-moral-independence-dilemma",
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "If an act would remain wrong despite divine approval, moral truth constrains God's choices and therefore neither originates in God nor gains explanatory grounding from God.",
+      "sourceSpan": {
+        "startEvent": 937,
+        "endEvent": 952
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Krauss's uninterrupted opening turn immediately before the moderator introduces Craig's rebuttal.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-broad-evidence-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-morality-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-moral-independence-dilemma-component-01",
+            "targetMoveId": "pro-objective-morality-ground",
+            "text": "Whether morality originates in God if an independently wrong act would remain wrong even under divine approval.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the arbitrariness-or-independence problem and states that either horn undermines God as morality's explanatory source.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly attacks the decisive divine-grounding inference with a clear dilemma, although it does not anticipate a divine-nature response."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The counterfactual command, independent wrongness, and explanatory consequence are all clearly recoverable and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The dilemma strongly challenges command voluntarism, but does not exhaust an account grounded in God's necessary character."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Moral truth may be grounded in God's necessary nature rather than arbitrary choices or an external standard.",
+        "decisiveQualification": "A nature-based account must still explain why that character is morally authoritative without circularity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The conditional dilemma is clear and forceful against arbitrary command theory, with one material unaddressed nature-based alternative."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The conceptual counterexample directly tests the grounding claim, though no further support establishes exhaustive coverage of divine theories."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "It directly advances the central secular-morality bridge by attacking the alleged dependence of objective morality on God."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The dilemma is fair against subjective commands but omits the strongest necessary-character version of divine grounding."
+        }
+      },
+      "evidenceBasis": "Krauss asks whether divine approval could make rape permissible and argues that a negative answer makes morality independent of God's choice.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-beginning-infinity-quantum-defense",
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Mathematical treatments of infinity and quantum-vacuum cosmology do not defeat the evidence that the universe and its physical state began.",
+      "sourceSpan": {
+        "startEvent": 1071,
+        "endEvent": 1145
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous section of Craig's moderator-introduced rebuttal, with Krauss not resuming until events 1241 through 1242.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-probability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-eternal-multiverse-first-cause-alternative",
+          "con-infinity-intuition-challenge"
+        ],
+        "components": [
+          {
+            "componentId": "pro-beginning-infinity-quantum-defense-component-01",
+            "targetMoveId": "con-eternal-multiverse-first-cause-alternative",
+            "text": "Whether quantum-vacuum and multiverse cosmology can be past-eternal and thereby avoid an ultimate cosmic beginning.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-beginning-infinity-quantum-defense-component-02",
+            "targetMoveId": "con-infinity-intuition-challenge",
+            "text": "Whether mathematical handling of infinity answers the objection to an actually instantiated infinite past.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts both infinity and quantum-cosmology objections, invoking the distinction between mathematics and actuality plus a boundary theorem.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly answers both decisive challenges, though its theorem-based conclusion is stated more broadly than the displayed support warrants."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The distinction between mathematical and physical infinity is clear, but theorem scope is extended to every past-eternal cosmology."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The cited theorem supplies important boundary evidence but the declaration that cosmologists can no longer retain past eternity is overbroad."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A boundary theorem may establish past geodesic incompleteness without proving an absolute beginning from nothing.",
+        "decisiveQualification": "Geodesic incompleteness does not by itself specify the prior boundary's ontology or exclude every quantum-gravity extension."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The rebuttal structure is coherent, but the inference from a theorem's boundary result to an absolute cosmic beginning is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "A named cosmological theorem and quotation provide specific support, while theorem applicability and limitations are not defended."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "The reply directly defends the central cosmological-ground bridge against infinity and past-eternal physical alternatives."
+        },
+        "representationalCharity": {
+          "value": 63,
+          "rationale": "The response engages the physical alternative but omits the theorem's decisive limitation when drawing its strongest conclusion."
+        }
+      },
+      "evidenceBasis": "Craig distinguishes mathematical infinity from actual temporal infinity and invokes the Borde-Guth-Vilenkin theorem against an eternal quantum-vacuum past.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-physical-fine-tuning-alternatives",
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Quantum-gravitational origins, universes with varying laws, and observer selection provide physical explanations for apparent fine-tuning without supernatural imposition.",
+      "sourceSpan": {
+        "startEvent": 1351,
+        "endEvent": 1493
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is part of Krauss's uninterrupted response turn, explicitly bounded by moderator transitions at events 1241 and 1572 through 1574.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-fine-tuning-design"
+        ],
+        "components": [
+          {
+            "componentId": "con-physical-fine-tuning-alternatives-component-01",
+            "targetMoveId": "pro-fine-tuning-design",
+            "text": "Whether physical dynamics, varied laws, and observer selection can explain apparent fine-tuning without supernatural design.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly supplies the main natural alternative classes and an analogy to naturally produced apparent design.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "It contacts the decisive design inference and presents multiple alternatives, although their application to cosmic parameters remains partly schematic."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Fine-tuning and physical explanation are clear overall, but biological selection and cosmological observer selection are partly blended."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The alternatives are presented as possible physical explanations rather than as a conclusively verified account of all constants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Biological natural selection does not itself explain cosmological constants, and a multiverse may require fine-tuned generating laws.",
+        "decisiveQualification": "The analogy supports the possibility of natural apparent design but not a specific cosmological likelihood comparison."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The underdetermination argument is coherent, though moving from biological apparent design to cosmological fine-tuning needs a further bridge."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Quantum gravity, varying laws, and selection effects are specific alternatives, but their probabilities and empirical status remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central fine-tuning-alternatives bridge against purposive design."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The reply recognizes the design inference but leans on an analogy that leaves the strongest cosmological qualification unresolved."
+        }
+      },
+      "evidenceBasis": "Krauss invokes quantum-gravitational origins, varying physical laws, observer selection, and natural selection as mechanisms yielding apparent design.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-multiverse-fine-tuning-defense",
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "A many-worlds hypothesis does not explain embodied interactive observers and instead relocates fine-tuning to the laws governing the multiverse.",
+      "sourceSpan": {
+        "startEvent": 1699,
+        "endEvent": 1740
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted turn continues Craig's rebuttal, explicitly addresses Krauss by name, and ends before Craig changes to morality.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-cosmological-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-physical-fine-tuning-alternatives"
+        ],
+        "components": [
+          {
+            "componentId": "pro-multiverse-fine-tuning-defense-component-01",
+            "targetMoveId": "con-physical-fine-tuning-alternatives",
+            "text": "Whether many-worlds and observer selection explain embodied interactive observers without relocating fine-tuning to multiverse-generating laws.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges both observer adequacy and the unexplained laws of the proposed multiverse.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts two decisive aspects of the multiverse alternative, though it does not compare probabilities under a specified multiverse model."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The embodied-observer and higher-level-law objections are clearly stated, with only the model class left broadly specified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The objections expose explanatory gaps but do not establish that every multiverse model fails or that design consequently wins."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A sufficiently specified multiverse measure could select life-permitting domains without requiring purposive fine-tuning of its laws.",
+        "decisiveQualification": "Such a model still requires a defended measure and generating dynamics rather than a bare appeal to many worlds."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The two-pronged objection is coherent and directly exposes explanatory relocation, with one implicit assumption about observer typicality."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "The reasoning identifies concrete explanatory requirements but supplies no representative multiverse model or quantitative observer comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly defends the central design bridge against the leading natural selection alternative."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response fairly targets the strongest model's measure and law requirements, though it states the challenge categorically."
+        }
+      },
+      "evidenceBasis": "Craig argues that bare many-worlds do not predict embodied interactive observers and asks what explains the special multiverse-generating laws.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-necessary-divine-character",
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Divine commands necessarily express God's compassionate, just, and fair character, while naturalism lacks a foundation for objective moral duties and values.",
+      "sourceSpan": {
+        "startEvent": 1741,
+        "endEvent": 1758
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly presents his divine-command account in a continuous turn and contrasts it with the moral implications he attributes to Krauss.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-cosmological-ground"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-moral-independence-dilemma"
+        ],
+        "components": [
+          {
+            "componentId": "pro-necessary-divine-character-component-01",
+            "targetMoveId": "con-moral-independence-dilemma",
+            "text": "Whether divine morality is arbitrary when commands necessarily express God's compassionate, just, and fair character.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly answers the command counterfactual with a necessary-character theory and renews the grounding challenge to naturalism.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It explicitly contacts the dilemma's decisive arbitrariness premise, though it does not fully explain the authority of the stipulated character."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Commands, necessary divine character, and the impossibility claim are distinguished and expressly connected."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Necessary character blocks arbitrary contrary commands, but the conclusion that naturalism has no objective values remains underargued."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Naturalistic moral realism could affirm objective duties without grounding them in divine commands or character.",
+        "decisiveQualification": "Blocking divine arbitrariness does not itself eliminate independent secular moral ontology."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The necessary-character response coherently avoids arbitrary commands, though moral authority and the naturalistic contrast retain missing bridges."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The response supplies a conceptual model but largely stipulates divine properties and asserts the failure of naturalistic grounding."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly defends the central objective-morality bridge against the independence dilemma."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The direct answer to the dilemma is fair, but the renewed claim about naturalism omits its strongest realist alternative."
+        }
+      },
+      "evidenceBasis": "Craig states that commands necessarily express God's compassionate, kind, just, and fair essence and therefore cannot commend rape.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-natural-moral-understanding",
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Rationality, evolution, biology, and continued investigation can explain moral understanding and conduct without belief in or dependence upon God.",
+      "sourceSpan": {
+        "startEvent": 1874,
+        "endEvent": 1915
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss continues his uninterrupted rebuttal, first rejecting the divine inference and then explicitly developing a naturalistic approach to morality.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-broad-evidence-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-necessary-divine-character",
+          "pro-objective-morality-ground"
+        ],
+        "components": [
+          {
+            "componentId": "con-natural-moral-understanding-component-01",
+            "targetMoveId": "pro-necessary-divine-character",
+            "text": "Whether moral understanding and decent conduct require belief in or ontological dependence upon a necessarily good God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-natural-moral-understanding-component-02",
+            "targetMoveId": "pro-objective-morality-ground",
+            "text": "Whether rationality, evolution, and biology can make morality intelligible without a divine foundation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts practical and explanatory dependence on God, while candidly leaving a complete naturalistic moral theory unresolved.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It answers important components with natural mechanisms but only partially addresses the distinct ontological question of objective truth."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Understanding, motivation, conduct, and ontological grounding are not always distinguished, but incompleteness is expressly acknowledged."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Krauss cautiously claims natural factors go a long way and explicitly says he does not know whether they completely define morality."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The moral argument concerns the ontology of objective duties, not whether atheists can understand morality or behave decently.",
+        "decisiveQualification": "Natural moral competence rebuts motivational dependence but does not alone supply an objective moral ontology."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The naturalistic explanation is coherent as an account of moral cognition, but it does not entail independent objective moral truth."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Ordinary nonbeliever conduct and named biological mechanisms provide support, though the move gives no developed explanatory model."
+        },
+        "relevanceBurden": {
+          "value": 71,
+          "rationale": "It materially advances the central secular-morality bridge, albeit more strongly for understanding than ontology."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The reply offers relevant natural explanation yet partly answers a practical claim weaker than Craig's stated grounding thesis."
+        }
+      },
+      "evidenceBasis": "Krauss notes that nonbelievers remain moral, invokes rationality, evolution, and biology, and explicitly acknowledges incomplete understanding.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-dynamical-fine-tuning-and-purpose",
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Known dynamics explain some alleged fine-tuning, while the unexplained vacuum-energy value is not shown to be life-necessary and does not evidence competent purposive design.",
+      "sourceSpan": {
+        "startEvent": 1917,
+        "endEvent": 1978
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss explicitly announces his return to fine-tuning, discusses entropy and vacuum energy, and concludes the argument before the moderator opens summaries.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-fine-tuning-design",
+          "pro-multiverse-fine-tuning-defense"
+        ],
+        "components": [
+          {
+            "componentId": "con-dynamical-fine-tuning-and-purpose-component-01",
+            "targetMoveId": "pro-fine-tuning-design",
+            "text": "Whether known dynamics and the uncertain life-relevance of vacuum energy undermine fine-tuning as evidence of competent purpose.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-dynamical-fine-tuning-and-purpose-component-02",
+            "targetMoveId": "pro-multiverse-fine-tuning-defense",
+            "text": "Whether unexplained features of cosmology establish purposive multiverse-level design.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply addresses dynamical explanation, life necessity, and purposive competence, while its final universal claim exceeds those local points.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It contacts the decisive comparative-design inference through several components, though some conclusions are broader than the supporting examples."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The local physical claims are clear, but the conclusion expands from selected parameters to all evidence of cosmic purpose."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Acknowledged uncertainty about vacuum energy does not warrant the categorical conclusion that all cosmic evidence shows no purpose or design."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A life-permitting universe need not maximize life or efficiency in order to be intentionally designed.",
+        "decisiveQualification": "Apparent inefficiency weakens some purpose hypotheses but does not logically exclude every purposive aim."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 70,
+          "rationale": "The dynamical and life-necessity objections are coherent, while the leap to universal purposelessness is a substantial non sequitur."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Entropy and vacuum-energy examples are specific, but their implications for life and designer competence are not comprehensively supported."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the central natural fine-tuning alternative and attacks the design comparison."
+        },
+        "representationalCharity": {
+          "value": 59,
+          "rationale": "The reply raises a legitimate competence objection but treats a narrow optimality conception as exhausting purposive design."
+        }
+      },
+      "evidenceBasis": "Krauss discusses dynamical explanations of entropy, uncertainty over vacuum energy's life necessity, and alleged inefficiency under purposive design.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-resurrection-testimony-error",
+      "sectionId": "resurrection-and-historical-explanation",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Reports of Jesus's resurrection are more plausibly attributable to mistaken human testimony than to a miraculous event and therefore do not provide adequate evidence for God.",
+      "sourceSpan": {
+        "startEvent": 2117,
+        "endEvent": 2265
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss begins his announced summary, answers Craig's five points in sequence, and ends with thanks immediately before the moderator addresses the audience.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-broad-evidence-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-core-facts"
+        ],
+        "components": [
+          {
+            "componentId": "con-resurrection-testimony-error-component-01",
+            "targetMoveId": "pro-resurrection-core-facts",
+            "text": "Whether anecdotal human testimony makes error more plausible than resurrection as an explanation of the reported historical claims.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contests testimonial reliability and comparative plausibility but does not separately analyze the three alleged core facts.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "It contacts the decisive miraculous inference, yet remains a partial answer because source independence and each historical datum go unexamined."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The testimony-error alternative is recoverable, though anecdotal evidence broadly groups distinct texts, traditions, and claims."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "General human fallibility supports an ordinary-error prior, but does not independently resolve the reliability of these particular reports."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The historical case appeals to multiple specific facts and comparative explanation rather than treating one anecdote as decisive.",
+        "decisiveQualification": "Even multiple traditions require analysis of dependence, dating, transmission, and alternative explanations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 75,
+          "rationale": "Preferring ordinary testimonial error is coherent, but the argument needs explicit connection to each alleged fact and source."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Human fallibility is relevant background evidence, while the move provides little specific historical or textual analysis."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "It directly advances the central ordinary-historical-explanation bridge against resurrection."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "The reply identifies a real testimonial limitation but compresses the affirmative's multi-fact comparative case into anecdote generally."
+        }
+      },
+      "evidenceBasis": "Krauss characterizes the historical material as anecdotal and argues that mistaken testimony is antecedently more plausible than a miracle.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-ordinary-resurrection-explanations",
+      "sectionId": "resurrection-and-historical-explanation",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Human error, imagination, illusion, or deliberate intervention are more plausible explanations of resurrection claims than an extraordinary supernatural resurrection.",
+      "sourceSpan": {
+        "startEvent": 2707,
+        "endEvent": 2762
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows a question directed to Krauss and uses his first-person comparisons with alien-abduction reports and physical plausibility.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-broad-evidence-standard"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-core-facts"
+        ],
+        "components": [
+          {
+            "componentId": "con-ordinary-resurrection-explanations-component-01",
+            "targetMoveId": "pro-resurrection-core-facts",
+            "text": "Whether imagination, illusion, error, or deliberate intervention more plausibly explain resurrection reports than a supernatural event.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply offers several ordinary explanatory classes and expressly compares their simplicity with resurrection, while declining to establish one specific account.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It contacts the decisive comparative issue but remains partial because possibilities are listed without a unified explanation of all core facts."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The alternative classes and limited claim are clear, including the express disclaimer that no particular one is established."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move appropriately argues comparative plausibility and expressly avoids claiming proof of a particular ordinary explanation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A successful rival must explain the empty tomb, appearances, and transformed belief together rather than merely be ordinary.",
+        "decisiveQualification": "Higher prior plausibility matters, but explanatory scope and fit to all alleged facts also require comparison."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "The ordinary-explanation comparison is coherent and qualified, though a disjunction of possibilities does not itself explain the whole dataset."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "Known human error and illusion provide relevant base-rate support, but no alternative is documented against the particular reports."
+        },
+        "relevanceBurden": {
+          "value": 72,
+          "rationale": "It directly advances the central ordinary historical explanation bridge."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The response acknowledges limited commitment but does not fully confront the affirmative's demand for joint explanatory scope."
+        }
+      },
+      "evidenceBasis": "Krauss compares resurrection claims with other extraordinary reports and lists imagination, illusion, error, and deliberate enhancement as simpler possibilities.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-comparative-explanation",
+      "sectionId": "resurrection-and-historical-explanation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Widely accepted historical facts surrounding Jesus are best explained by resurrection because rival naturalistic accounts fail standard explanatory criteria.",
+      "sourceSpan": {
+        "startEvent": 2762,
+        "endEvent": 2794
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker handoff names Craig, and the response reprises his specific historical case and scholarly explanatory criteria.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-fine-tuning-design"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-ordinary-resurrection-explanations",
+          "con-resurrection-testimony-error"
+        ],
+        "components": [
+          {
+            "componentId": "pro-resurrection-comparative-explanation-component-01",
+            "targetMoveId": "con-ordinary-resurrection-explanations",
+            "text": "Whether ordinary rival accounts jointly explain the accepted historical facts with adequate scope, power, plausibility, and non-ad-hocness.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-resurrection-comparative-explanation-component-02",
+            "targetMoveId": "con-resurrection-testimony-error",
+            "text": "Whether general testimonial fallibility defeats the specific comparative historical case.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly invokes standard explanatory criteria against named natural rivals, though it mainly reports their failure rather than demonstrating it.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It contacts the decisive comparative demand and names rival theories and criteria, with a bounded evidential demonstration gap."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The rival theories and explanatory criteria are stable, though scholarly adherence is only implicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Listing criteria and reporting low scholarly adherence does not by itself justify the categorical claim that every natural rival fails."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Several ordinary mechanisms may combine, and their higher prior probability may offset imperfections in explanatory scope.",
+        "decisiveQualification": "A fair comparison must include priors and permit composite hypotheses rather than evaluating only isolated classic theories."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The abductive comparison is well structured, but scholarly acceptance and named criteria do not deductively establish resurrection."
+        },
+        "evidenceWarrant": {
+          "value": 71,
+          "rationale": "Specific rivals and historical criteria are identified, while their individual failures and the core facts' documentation remain asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly defends the central resurrection bridge against ordinary historical explanations."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The response names established alternatives but omits the strongest composite and prior-probability qualification."
+        }
+      },
+      "evidenceBasis": "Craig names conspiracy, apparent death, and hallucination theories and says they fail explanatory scope, power, plausibility, and non-ad-hocness.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-necessary-terminus",
+      "sectionId": "contingency-and-necessary-ground",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Explanatory inquiry stops non-arbitrarily with God because contingent things require external causes whereas God exists necessarily by his own nature.",
+      "sourceSpan": {
+        "startEvent": 2924,
+        "endEvent": 2953
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The explicit rebuttal transition and the defense of the principle of sufficient reason identify Craig and his established contingency argument.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "pro-motion-probability"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-contingency-gap-objection"
+        ],
+        "components": [
+          {
+            "componentId": "pro-necessary-terminus-component-01",
+            "targetMoveId": "con-contingency-gap-objection",
+            "text": "Whether explanatory inquiry stops arbitrarily at God or principledly at a being whose existence is necessary by nature.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly answers the stopping-point objection by restating the necessary-versus-contingent explanatory principle.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It contacts the decisive arbitrariness challenge explicitly, though it does not independently establish that God possesses necessary existence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Necessary nature, contingent existence, and external cause are clearly distinguished, with divine necessity stipulated rather than derived."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The explanatory schema conditionally licenses a necessary terminus, but its application specifically to God remains underwarranted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A natural entity or totality could be necessary by nature and serve as the explanatory terminus.",
+        "decisiveQualification": "Non-arbitrary termination requires demonstrating God's necessity and advantage over natural candidates, not defining it."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The termination rule is coherent, but the claim that God satisfies it and the universe cannot is not established here."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "The move restates a principled explanatory distinction but supplies little evidence for God's modal status or unique candidacy."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly defends the central cosmological-ground bridge at its necessary-terminus step."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The response fairly distinguishes necessary from contingent stopping points but omits the strongest natural necessary-terminus alternative."
+        }
+      },
+      "evidenceBasis": "Craig says explanations terminate non-arbitrarily in necessary nature, contrasts this with contingent external causation, and assigns necessity to God.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-natural-necessary-terminus",
+      "sectionId": "contingency-and-necessary-ground",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Defining God as the necessary explanatory terminus has no demonstrated advantage over an eternal multiverse, which can serve as a natural terminus and is physically motivated.",
+      "sourceSpan": {
+        "startEvent": 3003,
+        "endEvent": 3016
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The rebuttal handoff follows Craig's answer, and the speaker contrasts Craig's definition with Krauss's own physics-based multiverse proposal.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-necessary-terminus",
+          "pro-contingency-necessary-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-natural-necessary-terminus-component-01",
+            "targetMoveId": "pro-necessary-terminus",
+            "text": "Whether God has any demonstrated explanatory advantage over an eternal, physically motivated multiverse as the necessary terminus.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-natural-necessary-terminus-component-02",
+            "targetMoveId": "pro-contingency-necessary-cause",
+            "text": "Whether the necessary explanatory ground must be divine rather than a natural multiverse.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contests unique divine necessity by proposing a structurally parallel natural terminus and claiming physical motivation.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the decisive identification gap, though defining the multiverse as eternal does not itself establish its necessity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Eternal existence and metaphysical necessity are partly conflated, even though the comparative terminus claim is clear."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A physically motivated multiverse is a live alternative, but stipulating eternal existence is not evidence of metaphysical necessity."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God is proposed as metaphysically necessary, whereas a multiverse model may be merely temporally eternal and contingent.",
+        "decisiveQualification": "The theistic claim still needs an argument for divine necessity, but structural parity requires matching modal properties."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The parity objection is relevant, but it slides from eternal duration to necessary existence and partly defines its conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Physical motivation gives the alternative more than bare conceivability, while the excerpt does not document the model or necessity."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central natural-cosmology bridge against a uniquely divine explanatory ground."
+        },
+        "representationalCharity": {
+          "value": 77,
+          "rationale": "The reply exposes an identification gap but partly weakens the opposing view by equating eternity with necessity."
+        }
+      },
+      "evidenceBasis": "Krauss proposes an always-existing multiverse as a natural terminus, contrasts it with Craig's definition, and claims physics motivates his alternative.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-broad-evidence-scope",
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Restricting rational evidence to scientific proof is self-defeating, while theism jointly explains moral, philosophical, historical, and scientific facts.",
+      "sourceSpan": {
+        "startEvent": 3077,
+        "endEvent": 3103
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The rebuttal transition and direct discussion of Krauss's epistemology clearly mark Craig's response to the preceding answer.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-fine-tuning-design"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-affirmative-empirical-burden",
+          "con-extraordinary-divine-evidence-standard"
+        ],
+        "components": [
+          {
+            "componentId": "pro-broad-evidence-scope-component-01",
+            "targetMoveId": "con-affirmative-empirical-burden",
+            "text": "Whether rational evidence must be restricted to scientific or empirical proof when that restriction is not itself scientifically provable.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-broad-evidence-scope-component-02",
+            "targetMoveId": "con-extraordinary-divine-evidence-standard",
+            "text": "Whether a broad cumulative hypothesis may be assessed through moral, philosophical, historical, and scientific considerations.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly diagnoses the exclusive-scientific standard as self-defeating and states a broader replacement evidential scope.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly attacks the decisive restriction and names admissible evidence classes, though it does not show that each class favors theism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Scientific, empirical, moral, philosophical, metaphysical, and historical evidence are expressly distinguished and consistently scoped."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The self-defeat objection supports broader admissibility, but does not alone warrant the hypothesis's claimed explanatory power."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Krauss may demand strong empirical discrimination without claiming that every non-scientific proposition is irrational.",
+        "decisiveQualification": "A heightened empirical demand for God is narrower than an exclusive verification principle and need not be self-defeating."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The self-reference objection is coherent against exclusive scientism, while the further cumulative-theism conclusion requires separate bridges."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The range of evidence classes is specifically identified, but their comparative support for God is asserted rather than demonstrated here."
+        },
+        "relevanceBurden": {
+          "value": 85,
+          "rationale": "It directly supplies the subsidiary broad-evidence-standard bridge and indirectly supports the cumulative motion route."
+        },
+        "representationalCharity": {
+          "value": 65,
+          "rationale": "The response effectively rebuts strict scientism but may attribute a stronger exclusivity thesis than the opposing moves establish."
+        }
+      },
+      "evidenceBasis": "Craig calls an exclusively scientific epistemology self-defeating and identifies moral experience, metaphysics, history, and science as evidence domains.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule for the affirmative side.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists outside the locked bridge and move assessments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual rule for the opposing side.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists outside the locked bridge and move assessments.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

@@ -1,0 +1,1683 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "97",
+  "debateId": "holland-grayling-christianity-human-values-2019",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-christian-inheritance",
+      "side": "pro",
+      "description": "Establish that Christianity distinctively transformed inherited ideas into universal dignity, equality, bodily integrity, and moral concern, then trace modern Western rights, reform, humanism, science, and secular institutions through that Christian conceptual inheritance.",
+      "successCriteria": "The route succeeds if it connects distinctive Christian moral mechanisms to enduring Western concepts and institutions while explaining why classical borrowings, historical failures, and nominally secular reform do not break the claimed genealogy.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-modern-values-genealogy",
+        "tier": "motion",
+        "description": "Show that the modern West's defining human values depend principally on distinctive Christian transformations and their continuing cultural transmission."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-dignity-reversal",
+          "tier": "central",
+          "description": "Explain how the crucified victim, universal divine kinship, and humanity's divine image generate exceptional and equal human dignity."
+        },
+        {
+          "bridgeId": "pro-central-moral-institutional-effects",
+          "tier": "central",
+          "description": "Connect Christian universalism to consequential changes in slavery, sexual power, bodily integrity, marriage, rights, and reform."
+        },
+        {
+          "bridgeId": "pro-central-secular-continuity",
+          "tier": "central",
+          "description": "Demonstrate that Renaissance, science, Enlightenment, humanism, and secularism developed through Christian institutions or conceptual patterns rather than independently of them."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-transformative-borrowing",
+          "tier": "subsidiary",
+          "description": "Distinguish Christianity's reconfiguration of earlier materials from mere repetition or passive borrowing."
+        },
+        {
+          "bridgeId": "pro-subsidiary-classical-transmission",
+          "tier": "subsidiary",
+          "description": "Account for Christianity's preservation and transmission of classical learning despite disputes about suppression and delay."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-classical-secular-sources",
+      "side": "con",
+      "description": "Establish that Western human values and intellectual modernity have substantial pre-Christian and non-Christian sources, while showing that Christian borrowing, institutional conduct, and delayed reform weaken the claim to distinctive or primary causal credit.",
+      "successCriteria": "The route succeeds if classical, Axial Age, cross-cultural, Enlightenment, and secular sources adequately explain dignity, equality, humanism, science, and moral concern without requiring Christianity as their principal origin.",
+      "motionBridge": {
+        "bridgeId": "con-motion-plural-alternative-genealogy",
+        "tier": "motion",
+        "description": "Show that modern Western human values owe more to older, plural, rational, and secular traditions than to a uniquely Christian inheritance."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-prechristian-ethical-sources",
+          "tier": "central",
+          "description": "Trace equality, cosmopolitan obligation, natural liberty, friendship, and ethical reflection to Axial Age and classical traditions."
+        },
+        {
+          "bridgeId": "con-central-independent-humanism",
+          "tier": "central",
+          "description": "Establish that shared humanity, compassion, and humanistic ethics arose independently across multiple pre-Christian and non-Christian cultures."
+        },
+        {
+          "bridgeId": "con-central-intellectual-emancipation",
+          "tier": "central",
+          "description": "Connect Renaissance recovery, empirical science, Enlightenment reason, and secular humanism to freedom from inherited ecclesiastical authority."
+        },
+        {
+          "bridgeId": "con-central-christian-counterhistory",
+          "tier": "central",
+          "description": "Test Christian causal claims against borrowing, cultural suppression, misogyny, slavery, delayed reform, and contested claims of novelty."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-transmission-plurality",
+          "tier": "subsidiary",
+          "description": "Recognize Arab, Persian, monastic, and other channels in the preservation and transmission of classical knowledge."
+        },
+        {
+          "bridgeId": "con-subsidiary-genealogical-method",
+          "tier": "subsidiary",
+          "description": "Require claimed Christian contributions to be both historically distinctive and materially explanatory of the values at issue."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-dignity-equality-origins",
+      "title": "Origins of Universal Dignity and Equality",
+      "weightPercent": 25,
+      "rationale": "This issue tests the central genealogical dispute between Christian moral reversal and divine-image doctrines on one side and Stoic, Axial Age, and other pre-Christian accounts of universality on the other."
+    },
+    {
+      "sectionId": "section-humanism-cross-cultural-concern",
+      "title": "Humanism, Compassion, and Cross-Cultural Parallels",
+      "weightPercent": 18,
+      "rationale": "The geographic and historical independence of humanistic concern determines whether modern humanism requires Christian cultural inheritance or can arise through reflection on shared humanity."
+    },
+    {
+      "sectionId": "section-slavery-gender-sexual-ethics",
+      "title": "Slavery, Gender, Bodily Integrity, and Reform",
+      "weightPercent": 20,
+      "rationale": "Concrete disputes over slavery, sexual power, gender, marriage, and abolition test whether Christian universalism produced durable moral change or coexisted with practices inconsistent with that genealogy."
+    },
+    {
+      "sectionId": "section-classical-borrowing-preservation",
+      "title": "Classical Borrowing, Suppression, and Preservation",
+      "weightPercent": 12,
+      "rationale": "The relationship between Christianity and classical culture bears on whether Christianity transformed and transmitted prior sources or depended upon, suppressed, and only later recovered them."
+    },
+    {
+      "sectionId": "section-science-enlightenment-secularism",
+      "title": "Science, Enlightenment, Rights, and Secularism",
+      "weightPercent": 25,
+      "rationale": "Competing explanations of universities, scientific inquiry, Enlightenment rights, secularism, and modern humanism determine whether intellectual modernity continues Christian patterns or represents recovery and emancipation from ecclesiastical authority."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-crucifixion-dignity-reversal",
+      "sectionId": "section-dignity-equality-origins",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "constructive",
+      "proposition": "The crucifixion reversed Roman valuations of power by giving dignity to victims, slaves, and people previously treated as insignificant.",
+      "sourceSpan": {
+        "startEvent": 171,
+        "endEvent": 238
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host asks Holland why the cross is central, and Holland supplies the sustained historical explanation that follows.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-dignity-reversal"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive account of Christianity's central dignity mechanism, so no earlier opposing move requires an answer here.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it clearly develops an indispensable mechanism connecting crucifixion, victimhood, and dignity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The Roman comparison and dignity reversal are recoverable, though the historical scope is bounded only implicitly."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The cultural contrast supports a strong claim, but the exceptional breadth of the dignity conclusion exceeds the excerpt's examples."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The inversion of Roman status values supplies a clear bridge from crucifixion to enhanced dignity, with limited causal compression."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The Roman contrast and victim-centered mechanism are concrete, but broader historical effects and representative comparison remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly develops the central dignity-reversal bridge and sits at the top of that central-contact tier."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move advances its positive genealogy without materially interpreting a developed opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says the cross dignifies previously disregarded people and makes the lowest potentially the highest.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-transformed-universal-kinship",
+      "sectionId": "section-dignity-equality-origins",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "constructive",
+      "proposition": "Christianity reconfigured Jewish, Persian, Greek, and Roman materials through the crucified God and a universal divine kinship extending God's love to all humanity.",
+      "sourceSpan": {
+        "startEvent": 411,
+        "endEvent": 537
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host directs Grayling's objections to Holland, who answers at length using first-person framing and a continuous historical synthesis.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-dignity-reversal"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies a second central mechanism—universal divine kinship—without bearing a required earlier-opponent response.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within constructive moves, it substantially explains how inherited materials become a universal Christian relationship."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The transformation thesis is clear, but the reach from Pauline citizenship to all Christianity and humanity is partly compressed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Pauline universalism supports the mechanism, though the larger claim of historical reconfiguration has only an implicit caveat."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The move coherently links shared citizenship and divine love to universal kinship, while compressing the institutional causal bridge."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Paul's no-Jew-or-Greek formula and acknowledged Stoic and Roman inputs are specific, but downstream influence is underdocumented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the universal-kinship half of the central Christian dignity bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "Although inherited Stoic and imperial materials are acknowledged, no developed opposing interpretation is directly evaluated."
+        }
+      },
+      "evidenceBasis": "The evidence identifies Pauline shared citizenship, Stoic models, Roman imperial context, and God's love extending beyond the Jews.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-classical-suppression-and-absorption",
+      "sectionId": "section-classical-borrowing-preservation",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Christianity's claim to unique foundations is weakened by older divine-son motifs, early Christian suppression of pagan culture, and its later absorption of classical philosophy.",
+      "sourceSpan": {
+        "startEvent": 538,
+        "endEvent": 643
+      },
+      "attributionConfidence": "medium",
+      "attributionBasis": "Grayling begins in direct response to Holland and carries the main counterargument, though Holland interjects several challenges during the exchange.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-transformative-borrowing"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-transformed-universal-kinship"
+        ],
+        "components": [
+          {
+            "componentId": "con-classical-suppression-and-absorption-component-01",
+            "targetMoveId": "pro-transformed-universal-kinship",
+            "text": "Whether Christianity distinctively transformed inherited materials rather than relying on older analogues.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Older divine-son motifs and Christian absorption of classical thought contact distinctiveness, while suppression evidence adds relevant counterhistory without fully addressing universal kinship.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "This is a partial answer that contacts the decisive distinctiveness component but not the claimed universal divine-love mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The three-part counterclaim is recoverable, although the scale of early Christian suppression is only loosely bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The examples make dependence plausible, but they do not by themselves establish how much unique Christian transformation remains."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christianity borrowed earlier forms but transformed their moral meaning into a distinct universal synthesis.",
+        "decisiveQualification": "Borrowing and suppression alone do not disprove transformative reconfiguration."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The evidence coherently weakens uniqueness, but suppression, borrowing, and lack of novelty do not jointly entail no transformation."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Specific motifs, temples, books, and philosophical absorption are offered, though their representativeness and causal consequence remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It materially attacks transformative borrowing, placing it high within the subsidiary-contact tier."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move recognizes absorption but does not adequately confront the possibility that borrowed materials acquired a distinct synthesis."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes older divine-son traditions, attempted effacement of pagan culture, destroyed temples and books, and later classical absorption.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "pro-christian-classical-preservation",
+      "sectionId": "section-classical-borrowing-preservation",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "reply",
+      "proposition": "Christian copyists preserved central works of ancient culture, undermining the claim that Christianity conducted a systematic campaign to erase classical literature.",
+      "sourceSpan": {
+        "startEvent": 645,
+        "endEvent": 748
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Holland explicitly re-enters to challenge the destruction claim and sustains the rebuttal through examples of Christian textual preservation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-classical-transmission"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-classical-suppression-and-absorption"
+        ],
+        "components": [
+          {
+            "componentId": "pro-christian-classical-preservation-component-01",
+            "targetMoveId": "con-classical-suppression-and-absorption",
+            "text": "Whether Christian suppression amounted to a systematic erasure of classical literary culture.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-christian-classical-preservation-component-02",
+            "targetMoveId": "con-classical-suppression-and-absorption",
+            "text": "Whether Christianity later depended upon and absorbed classical philosophy.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Christian copying directly answers systematic literary erasure, but preservation is compatible with later philosophical absorption and does not answer that separate component.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "The reply contacts the decisive erasure claim with concrete counterexamples but leaves the absorption component unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The preservation proposition and its target are clear, with systematic rather than universal erasure serving as an implicit qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Survival through Christian copyists appropriately rebuts systematic erasure without logically requiring that no suppression occurred."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christians could preserve major texts while earlier institutions also suppressed substantial pagan culture.",
+        "decisiveQualification": "Preservation defeats total or systematic erasure, not every claim of suppression."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The survival-and-copying counterexample directly undermines systematic erasure, with a bounded implicit distinction between preservation and universal tolerance."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The Iliad and Homer provide pointed counterexamples, though the overall scale and institutional distribution of copying are not documented."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the classical-transmission subsidiary bridge and strongly occupies that tier."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly narrows the dispute to systematic erasure, though its rhetoric sometimes presses beyond that bounded conclusion."
+        }
+      },
+      "evidenceBasis": "The excerpt points to Christian copying as the transmission mechanism for Homer and the Iliad within Christian cultural inheritance.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-plural-preservation-channels",
+      "sectionId": "section-classical-borrowing-preservation",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Large-scale monastic preservation followed centuries after Christian suppression, while Arab and Persian translators supplied an important independent channel for preserving and returning classical texts to Europe.",
+      "sourceSpan": {
+        "startEvent": 749,
+        "endEvent": 783
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host grants Grayling a factual response, and Grayling explicitly enumerates two historical claims in a continuous answer.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-transmission-plurality"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-christian-classical-preservation"
+        ],
+        "components": [
+          {
+            "componentId": "con-plural-preservation-channels-component-01",
+            "targetMoveId": "pro-christian-classical-preservation",
+            "text": "Whether Christian copyists alone adequately explain the preservation and return of classical learning.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-plural-preservation-channels-component-02",
+            "targetMoveId": "pro-christian-classical-preservation",
+            "text": "Whether Christian copying itself demonstrates recognition of classical culture as part of Christian inheritance.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies delayed monastic and independent Arab-Persian channels, directly qualifying exclusivity while not denying that Christians also preserved texts.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It contacts the main preservation-channel demand but only qualifies, rather than defeats, Christian preservation itself."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The delayed monastic chronology and plural translation channels are expressly distinguished and appropriately bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The evidence is framed as substantial plural contribution rather than exclusive preservation, matching the support offered."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian copyists genuinely preserved central classical texts even if other channels also mattered.",
+        "decisiveQualification": "Plural channels limit exclusivity but do not erase Christian preservation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "Delayed monastic activity and independent Arab-Persian work coherently establish plural transmission without requiring an exclusive alternative."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The chronology and named Arab and Persian channels are specific, though quantities and representative textual examples remain limited."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supplies the plural-transmission subsidiary bridge and ranks near the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 88,
+          "rationale": "The reply preserves the Christian contribution while adding timing and independent-channel qualifications that bear directly on causal credit."
+        }
+      },
+      "evidenceBasis": "The excerpt states that large-scale monastic copying began centuries later and credits Muslim, Arab, and Persian scribes with substantial preservation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-axial-classical-ethical-origins",
+      "sectionId": "section-dignity-equality-origins",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Axial Age and classical philosophy supplied pre-Christian foundations for ethical inquiry, equality, cosmopolitan obligation, natural liberty, and friendship.",
+      "sourceSpan": {
+        "startEvent": 872,
+        "endEvent": 993
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly addresses Antony, and the uninterrupted first-person answer advances Grayling's characteristic classical-humanist position until the moderator's next question.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-prechristian-ethical-sources"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-transformed-universal-kinship",
+          "pro-crucifixion-dignity-reversal"
+        ],
+        "components": [
+          {
+            "componentId": "con-axial-classical-ethical-origins-component-01",
+            "targetMoveId": "pro-transformed-universal-kinship",
+            "text": "Whether universal ethical concern and equality require a distinctively Christian origin.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-axial-classical-ethical-origins-component-02",
+            "targetMoveId": "pro-crucifixion-dignity-reversal",
+            "text": "Whether pre-Christian traditions lacked serious resources for valuing persons beyond inherited status.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Pre-Christian ethical inquiry, equality, cosmopolitan duty, liberty, and friendship directly contact both Christian-origin demands, though causal transmission to modernity remains compressed.",
+        "responsivenessWithinClass": {
+          "value": 79,
+          "rationale": "The reply contacts both decisive origin claims with alternatives, but does not fully compare their meanings or later transmission."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The chronological and civilizational scope is clearly stated, and the ethical concepts remain distinguishable throughout."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The move claims pre-Christian foundations rather than complete modern equivalence, which fits the historical examples supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christianity may have transformed earlier universal ideas into a socially distinctive dignity ethic.",
+        "decisiveQualification": "Earlier analogues rebut sole origin but not necessarily later transformation or dissemination."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "Earlier articulated ethical universals directly weaken exclusive Christian-origin claims, with only the modern transmission bridge left implicit."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The Axial chronology and multiple ethical concepts are specific and comparative, but named texts and downstream causal evidence are limited."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly establishes the indispensable pre-Christian ethical-sources bridge at the top of the central tier."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly challenges origin with substantial predecessors, though it only implicitly accommodates possible Christian transformation."
+        }
+      },
+      "evidenceBasis": "The passage locates systematic ethical reflection in several Axial civilizations before Christianity and develops classical equality and cosmopolitan concepts.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-bodily-integrity-sexual-restraint",
+      "sectionId": "section-slavery-gender-sexual-ethics",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "reply",
+      "proposition": "Pauline Christianity attributed bodily integrity to every person, constrained male sexual power, and reshaped marriage in ways inherited by modern sexual ethics.",
+      "sourceSpan": {
+        "startEvent": 1033,
+        "endEvent": 1132
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Holland explicitly announces a new focus on sex and sustains the argument through Pauline teaching, ancient sexual exploitation, marriage, and the modern Me Too comparison.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-institutional-effects"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-axial-classical-ethical-origins"
+        ],
+        "components": [
+          {
+            "componentId": "pro-bodily-integrity-sexual-restraint-component-01",
+            "targetMoveId": "con-axial-classical-ethical-origins",
+            "text": "Whether pre-Christian traditions already supplied equality, cosmopolitan obligation, liberty, and ethical reflection.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The Pauline account offers relevant contrary moral development but does not address the specific pre-Christian concepts or their priority, making it a relevant nonanswer.",
+        "responsivenessWithinClass": {
+          "value": 55,
+          "rationale": "It bears on comparative moral history but does not contact the decisive premise concerning earlier ethical sources."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Bodily integrity, sexual power, and marriage are recoverable, though the breadth of inheritance into modern ethics is implicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Pauline teaching supports a restraint mechanism, but the claim of reshaping modern sexual ethics requires more comparative historical support."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "The bodily-sacrality premise coherently supports restraints on exploitation, while the bridge to broad modern sexual ethics remains implicit."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Pauline bodily integrity and household-slave vulnerability are specific, but longitudinal practice and rival explanations are underdeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central moral-institutional-effects bridge through sexual power, bodily integrity, and marriage."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents a positive Pauline mechanism without interpreting the strongest pre-Christian ethical-source alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt attributes bodily value and sacral integrity to every person and contrasts this with household slaves' sexual availability.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-christian-gender-slavery-counterhistory",
+      "sectionId": "section-slavery-gender-sexual-ethics",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Pauline restrictions on women and Christianity's prolonged tolerance of misogyny and racial slavery undermine the claim that Christianity consistently transformed ancient moral practice toward equality and bodily dignity.",
+      "sourceSpan": {
+        "startEvent": 1134,
+        "endEvent": 1173
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Grayling explicitly identifies Holland's preceding position, counters it with Pauline restrictions on women and later Christian slavery, and speaks continuously until Holland responds.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-institutional-effects"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-bodily-integrity-sexual-restraint",
+          "pro-transformed-universal-kinship"
+        ],
+        "components": [
+          {
+            "componentId": "con-christian-gender-slavery-counterhistory-component-01",
+            "targetMoveId": "pro-bodily-integrity-sexual-restraint",
+            "text": "Whether Pauline Christianity materially elevated women and constrained entrenched sexual and gender hierarchy.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-christian-gender-slavery-counterhistory-component-02",
+            "targetMoveId": "pro-transformed-universal-kinship",
+            "text": "Whether universal divine kinship produced consistent historical equality.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Pauline restrictions, misogyny, and prolonged Christian slavery directly test claimed moral transformation and the historical efficacy of universal kinship.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "The reply contacts the decisive practice-and-efficacy demand, though it does not fully distinguish doctrine from institutional compliance."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The counterhistory is clear, but Christianity's institutional and temporal scope is generalized with only implicit qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Long tolerance strongly challenges consistent transformation, but does not alone establish that Christian ideas exerted no reforming force."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian doctrine could generate reform despite severe delay, inconsistency, and institutional violation.",
+        "decisiveQualification": "Historical failure weakens causal efficacy without logically eliminating doctrinal contribution."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 80,
+          "rationale": "Persistent contrary practice is a valid challenge to strong transformation claims, though doctrine-practice causation remains partly unresolved."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Pauline restrictions and the long chronology of racial slavery are concrete, but comparative prevalence and causal controls are absent."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central moral-institutional-effects bridge with consequential counterhistory."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The move powerfully tests practice but tends to treat delayed realization as near-disproof of any Christian causal contribution."
+        }
+      },
+      "evidenceBasis": "The excerpt cites women's subordinate status and Christianity's failure over roughly fifteen centuries to end racial slavery before the nineteenth century.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-christian-abolition-impetus",
+      "sectionId": "section-slavery-gender-sexual-ethics",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "reply",
+      "proposition": "Quaker and evangelical commitments to Christian universalism and divine law supplied the chief moral impetus for abolishing racial slavery.",
+      "sourceSpan": {
+        "startEvent": 1174,
+        "endEvent": 1226
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Holland begins by conceding the historical existence of Atlantic slavery, then traces abolition through Quaker and evangelical conscience until Grayling introduces a counterexample.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-institutional-effects"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-christian-gender-slavery-counterhistory"
+        ],
+        "components": [
+          {
+            "componentId": "pro-christian-abolition-impetus-component-01",
+            "targetMoveId": "con-christian-gender-slavery-counterhistory",
+            "text": "Whether Christianity's long coexistence with slavery shows it was too weak to produce meaningful egalitarian reform.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-christian-abolition-impetus-component-02",
+            "targetMoveId": "con-christian-gender-slavery-counterhistory",
+            "text": "Whether Pauline restrictions and Christian misogyny undermine claims about women's bodily dignity.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Quaker and evangelical abolition directly answers the claimed absence of Christian reforming efficacy but leaves the separate gender counterhistory unanswered.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "The reply contacts the decisive slavery-efficacy component with an abolition mechanism while conceding rather than resolving the delay."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The Christian abolition mechanism is clear, but 'chief impetus' and the relevant abolitionist population are only implicitly bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Named religious movements support major impetus, while comparative causal priority over secular and economic factors is not established."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian societies tolerated slavery for centuries and abolition had mixed religious, political, and economic causes.",
+        "decisiveQualification": "Christian abolitionists demonstrate contribution but not necessarily chief or exclusive causal credit."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Christian universalism coherently explains abolitionist conscience, though moving from major participants to chief impetus needs a comparative bridge."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "Quakers, evangelicals, conscience, and divine law provide concrete support, but alternative causes and relative influence remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the indispensable central bridge connecting Christian universalism to consequential reform."
+        },
+        "representationalCharity": {
+          "value": 74,
+          "rationale": "The concession acknowledges historical slavery, but rival abolition causes and the force of delayed reform remain materially underdeveloped."
+        }
+      },
+      "evidenceBasis": "The passage traces abolitionist moral impetus to Quaker and evangelical Protestant convictions about conscience, spirit, and proper action.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-classical-recovery-empirical-emancipation",
+      "sectionId": "section-science-enlightenment-secularism",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "The Renaissance and scientific revolution advanced intellectual modernity through recovered classical learning, observation, reason, and the rejection of inherited ecclesiastical authority.",
+      "sourceSpan": {
+        "startEvent": 1352,
+        "endEvent": 1438
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "After the moderator contrasts the two genealogies, Grayling explicitly states his disagreement and develops the Renaissance-to-science account until the moderator returns the floor to Holland.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-intellectual-emancipation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-christian-abolition-impetus"
+        ],
+        "components": [
+          {
+            "componentId": "con-classical-recovery-empirical-emancipation-component-01",
+            "targetMoveId": "pro-christian-abolition-impetus",
+            "text": "Whether Christian universalism supplied the chief moral impetus for abolishing racial slavery.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The Renaissance and science genealogy is important contrary material on the overall motion but does not contact the preceding abolition claim's moral or causal components.",
+        "responsivenessWithinClass": {
+          "value": 47,
+          "rationale": "This is a relevant nonanswer: it advances another central genealogy without addressing abolitionist impetus."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The Renaissance-to-science sequence and its epistemic mechanisms are clear, with causal priority only implicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Recovered learning, observation, and reason support emancipation, but chiefly external opposition to ecclesiastical authority is not fully shown."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Universities and scientific lawfulness may themselves have developed substantially within Christian institutions and theology.",
+        "decisiveQualification": "Conflict with authority does not establish independence from Christian institutional or conceptual inheritance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The epistemic shift coherently supports intellectual emancipation, though rejection of authority does not by itself identify the dominant genealogy."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Renaissance recovery, observation, reason, and scientific inquiry are specific mechanisms, but institutional comparisons and causal proportions remain compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supplies the central intellectual-emancipation bridge and occupies the top of that tier."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The move emphasizes emancipation but does not seriously compare the possibility of internal Christian institutional continuity."
+        }
+      },
+      "evidenceBasis": "The excerpt links Renaissance human dignity and scientific revolution to recovered learning, observation, reason, and setting aside church authority.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-christian-modernity-continuity",
+      "sectionId": "section-science-enlightenment-secularism",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "reply",
+      "proposition": "Universities, scientific lawfulness, reformations, and the Enlightenment express recurring Christian commitments to rational order and liberation from superstition.",
+      "sourceSpan": {
+        "startEvent": 1443,
+        "endEvent": 1514
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Holland begins by challenging Grayling's Renaissance framing, then supplies a continuous counter-genealogy through universities, science, reform, Reformation, and Enlightenment.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-secular-continuity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-classical-recovery-empirical-emancipation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-christian-modernity-continuity-component-01",
+            "targetMoveId": "con-classical-recovery-empirical-emancipation",
+            "text": "Whether scientific and Enlightenment modernity is best explained as emancipation from inherited ecclesiastical authority.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The recurring Christian reform narrative and institutional genealogy directly contest emancipation as independence, though detailed causal comparison remains incomplete.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "The reply contacts the decisive independence inference but answers it mainly through a broad recurring-pattern claim."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The continuity thesis is recoverable, but 'Christian narrative' shifts between institutional descent and structural resemblance across broad periods."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Recurring reform language makes continuity plausible, but does not establish that universities, science, Reformation, and Enlightenment share one controlling genealogy."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Modern inquiry could emerge within Christian societies while materially breaking from ecclesiastical authority and inherited theology.",
+        "decisiveQualification": "Institutional location and narrative resemblance do not prove conceptual dependence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "A recurring reform pattern offers a usable inference, but resemblance is insufficiently distinguished from historical and conceptual causation."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Universities, scientific lawfulness, reformations, and Enlightenment are named, yet the connecting warrants and rival genealogy remain materially compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central secular-continuity bridge across the principal institutions at issue."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The reply recognizes overt anti-Christianity but absorbs it into a Christian narrative without adequately testing genuine discontinuity."
+        }
+      },
+      "evidenceBasis": "The excerpt characterizes Reformation and Enlightenment attacks on superstition as recurring Christian narratives even when overtly anti-Christian.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-enlightenment-secular-humanism",
+      "sectionId": "section-science-enlightenment-secularism",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Secular humanism and modern rational inquiry owe chiefly to classical ethics, Enlightenment reason, scientific method, shared humanity, and sympathetic reflection rather than a particular Judeo-Christian root.",
+      "sourceSpan": {
+        "startEvent": 1608,
+        "endEvent": 1650
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Grayling for his overall response; Grayling rejects Holland's assertion and continuously states the classical and Enlightenment genealogy through his final identification of classical antiquity.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-plural-alternative-genealogy"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-christian-modernity-continuity"
+        ],
+        "components": [
+          {
+            "componentId": "con-enlightenment-secular-humanism-component-01",
+            "targetMoveId": "pro-christian-modernity-continuity",
+            "text": "Whether secular humanism and rational inquiry remain principally continuous with Christian concepts and institutions.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The classical and Enlightenment genealogy expressly rejects principal Judeo-Christian dependence and supplies alternative mechanisms of reason, science, and sympathy.",
+        "responsivenessWithinClass": {
+          "value": 78,
+          "rationale": "It directly contacts the continuity thesis, though comparative proof of chiefly greater causal influence remains incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposed sources and comparative 'owes more' conclusion are stated clearly and remain consistently scoped to secular humanism."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The alternative sources are relevant and specific, but the comparative claim of chiefly greater influence lacks a defended causal weighting."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Secular reason may reject theology while retaining Christian moral assumptions and institutional inheritance.",
+        "decisiveQualification": "Explicit secularity does not by itself demonstrate genealogical independence."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "Classical ethics, Enlightenment reason, science, and sympathy form a coherent alternative genealogy, with comparative priority still partly implicit."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "Several mechanisms and historical sources are named, but representative transmission evidence and serious comparison with Christian continuity are limited."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the con motion bridge by asserting and explaining a principally plural and secular genealogy."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The move supplies affirmative alternatives but gives limited treatment to indirect Christian continuity beneath overtly secular forms."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly grounds secular humanism in Enlightenment thinking, scientific and rational approaches, and deeper classical-antiquity roots.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-humanism-cultural-distribution",
+      "sectionId": "section-humanism-cross-cultural-concern",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "reply",
+      "proposition": "The concentration of organized humanism in historically Christian, especially Protestant, societies supports treating modern humanism as a culturally contingent Christian inheritance.",
+      "sourceSpan": {
+        "startEvent": 1717,
+        "endEvent": 1745
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted first-person argument continues Holland's established defense of Christian cultural inheritance before Grayling answers.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-modern-values-genealogy"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-enlightenment-secular-humanism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-humanism-cultural-distribution-component-01",
+            "targetMoveId": "con-enlightenment-secular-humanism",
+            "text": "Whether modern organized humanism is genealogically independent of historically Christian cultural formation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The geographic concentration of organized humanism directly challenges independence, but correlation with Christian and Protestant history does not resolve causal transmission.",
+        "responsivenessWithinClass": {
+          "value": 75,
+          "rationale": "The reply contacts the decisive independence issue with distributional evidence but leaves confounding explanations largely untreated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The claim is clear, but 'humanism' moves between organized movements, ethical doctrine, and soft Protestant culture."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Geographic concentration supports cultural contingency, but calling humanism derivative requires independence tests and alternative distribution explanations."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Humanism may organize most visibly in Christian societies because of modernization, institutions, or political freedom rather than Christian doctrine.",
+        "decisiveQualification": "Distribution alone cannot distinguish doctrinal descent from correlated historical conditions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The distribution-to-inheritance inference is intelligible, but it risks ecological inference and leaves major causal alternatives unresolved."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The claimed concentration is relevant empirical evidence, yet no verification, base rate, comparison group, or confounder analysis is supplied."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly advances the pro motion genealogy, although its warrant quality is separately limited."
+        },
+        "representationalCharity": {
+          "value": 58,
+          "rationale": "The inference largely bypasses strong confounders and treats concentration as more decisive genealogical evidence than it is."
+        }
+      },
+      "evidenceBasis": "The excerpt claims organized humanism is concentrated in historically Christian, especially Protestant, countries and labels it godless Protestantism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-independent-cross-cultural-humanism",
+      "sectionId": "section-humanism-cross-cultural-concern",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Humanistic ethics arose independently in Greek, Chinese, Jain, and Buddhist traditions through reflection on shared humanity rather than through Christian revelation or transmission.",
+      "sourceSpan": {
+        "startEvent": 1749,
+        "endEvent": 1797
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is a sustained first-person rebuttal following Holland's claim, with examples characteristic of Grayling's stated classical-humanist case.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-independent-humanism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-humanism-cultural-distribution"
+        ],
+        "components": [
+          {
+            "componentId": "con-independent-cross-cultural-humanism-component-01",
+            "targetMoveId": "pro-humanism-cultural-distribution",
+            "text": "Whether humanism is culturally contingent on Christian, especially Protestant, historical formation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Independent Greek, Chinese, Jain, and Buddhist examples directly attack the proposed Christian contingency by supplying cross-cultural generation mechanisms.",
+        "responsivenessWithinClass": {
+          "value": 83,
+          "rationale": "The reply explicitly contacts the decisive independence demand with multiple counterexamples and a shared-reflection mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The independent-tradition claim, named cultures, and reflection-on-humanity mechanism are clearly and consistently bounded."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Multiple pre-Christian and non-Christian examples appropriately establish possibility and substantial independent occurrence, not total equivalence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Modern organized humanism could remain a Christian derivative despite earlier humanistic analogues elsewhere.",
+        "decisiveQualification": "Analogues establish independent humanistic ethics but not necessarily the genealogy of every modern organization."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "Independent historical instances directly rebut necessity of Christian transmission, with modern organizational genealogy appropriately remaining a separate question."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Several geographically and religiously diverse traditions are identified, though their precise doctrines and independence are only briefly documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly establishes the central independent-humanism bridge with geographically diverse examples."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The move answers the broad contingency thesis fairly, while leaving a bounded distinction between ethical humanism and modern organizations."
+        }
+      },
+      "evidenceBasis": "The excerpt identifies humanistic reflection in classical Greece and continues with non-Christian Chinese, Jain, and Buddhist traditions.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-compassion-dignity-distinction",
+      "sectionId": "section-humanism-cross-cultural-concern",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "reply",
+      "proposition": "Although compassion recurs across cultures, the distinctive claim that every human possesses rights and exceptional dignity originates in Christian tradition.",
+      "sourceSpan": {
+        "startEvent": 1797,
+        "endEvent": 1823
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "A direct adversative answer follows Grayling's cross-cultural examples and resumes Holland's recurring argument about dignity and Christian origins.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-independent-humanism"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-independent-cross-cultural-humanism"
+        ],
+        "components": [
+          {
+            "componentId": "pro-compassion-dignity-distinction-component-01",
+            "targetMoveId": "con-independent-cross-cultural-humanism",
+            "text": "Whether cross-cultural compassion and humanistic reflection establish equivalents of universal rights and exceptional human dignity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Distinguishing recurring compassion from universal rights and exceptional dignity directly challenges equivalence, though the excerpt's evidence for unique Christian origin is thin.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "The reply contacts the decisive equivalence premise but asserts the historical-origin distinction more than it demonstrates it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The compassion-dignity distinction is recoverable from context, but the excerpt shifts toward humanism's distribution and universal mission."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Calling humanism derivative of Christianity and uniquely grounding dignity is much stronger than the distributional material warrants."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Cross-cultural traditions may contain dignity-like universal concern even without modern rights vocabulary.",
+        "decisiveQualification": "Conceptual differences require demonstration, not merely different terminology or institutional distribution."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The conceptual distinction could defeat analogy, but its criteria and the inference to uniquely Christian origin remain underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 59,
+          "rationale": "The excerpt mainly offers geographic claims and derivative assertion rather than representative comparison of compassion, dignity, and rights doctrines."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central independent-humanism bridge by denying that the proposed parallels establish equivalent dignity."
+        },
+        "representationalCharity": {
+          "value": 55,
+          "rationale": "The move narrows humanism to Christian-derived rights language without adequately examining functional equivalents in Grayling's examples."
+        }
+      },
+      "evidenceBasis": "The evidence asserts that humanism is derivative of Christianity and notes its Christian-country distribution, but only indirectly supports the locked dignity distinction.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-humanistic-parallels-originality-test",
+      "sectionId": "section-humanism-cross-cultural-concern",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Christianity cannot claim exclusive ownership of humanistic impulses when earlier and cross-cultural analogues exist, so primary causal credit requires identifying a genuinely unique major Christian innovation.",
+      "sourceSpan": {
+        "startEvent": 1823,
+        "endEvent": 1843
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly challenges Tom and frames a question from Grayling's opposing position before Holland immediately accepts the challenge.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-genealogical-method"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-compassion-dignity-distinction",
+          "pro-humanism-cultural-distribution"
+        ],
+        "components": [
+          {
+            "componentId": "con-humanistic-parallels-originality-test-component-01",
+            "targetMoveId": "pro-compassion-dignity-distinction",
+            "text": "Whether universal dignity and rights constitute a genuinely distinctive Christian innovation without earlier analogues.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-humanistic-parallels-originality-test-component-02",
+            "targetMoveId": "pro-humanism-cultural-distribution",
+            "text": "Whether organized humanism's Christian-country concentration establishes Christian conceptual derivation.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The demand for one major innovation directly tests distinctive dignity, but it does not address the separate distributional inference concerning modern humanism.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "The reply contacts the decisive originality demand but frames a stringent analogy test without fully defending its causal sufficiency."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The originality test is clear, though 'some source, parallel, or analogy' ranges from direct borrowing to loose resemblance."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Numerous parallels weaken exclusivity, but the inability to name novelty does not alone settle primary causal credit or transformation."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christianity's major contribution may be a novel synthesis or social intensification of elements with earlier analogues.",
+        "decisiveQualification": "An analogue does not establish equivalence, transmission, or absence of transformative innovation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The originality test is relevant to uniqueness, but it risks treating any analogy as sufficient to defeat distinctiveness or causal importance."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The challenge invokes broad comparative reflection but supplies few developed examples within this selected span and no equivalence criteria."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly advances the subsidiary methodological bridge requiring historical distinctiveness and explanatory significance."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The challenge is serious but sets a near-absolute novelty requirement that understates synthesis and changed social meaning."
+        }
+      },
+      "evidenceBasis": "The excerpt asks for one major Christian ethical or metaphysical innovation lacking any source, parallel, or analogy in earlier civilizations.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-disputed-sexual-ethical-novelties",
+      "sectionId": "section-slavery-gender-sexual-ethics",
+      "side": "con",
+      "speaker": "A. C. Grayling",
+      "moveKind": "reply",
+      "proposition": "Proposed Christian innovations in monogamy and sexual classification are either ethically contestable or already represented in older religious materials, weakening their value as distinctive achievements.",
+      "sourceSpan": {
+        "startEvent": 1883,
+        "endEvent": 1898
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The concluding speaker addresses Tom's examples from the opposing side and is then interrupted by Holland's direct counterargument.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-genealogical-method"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-compassion-dignity-distinction",
+          "pro-bodily-integrity-sexual-restraint"
+        ],
+        "components": [
+          {
+            "componentId": "con-disputed-sexual-ethical-novelties-component-01",
+            "targetMoveId": "pro-compassion-dignity-distinction",
+            "text": "Whether claimed Christian ethical distinctiveness can be sustained through proposed innovations in sexual morality.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-disputed-sexual-ethical-novelties-component-02",
+            "targetMoveId": "pro-bodily-integrity-sexual-restraint",
+            "text": "Whether Christian monogamy and sexual classification materially improved bodily integrity and sexual ethics.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move tests proposed innovations for both prior representation and ethical merit, directly contacting distinctiveness and the claimed sexual-ethical achievement.",
+        "responsivenessWithinClass": {
+          "value": 77,
+          "rationale": "It contacts both novelty and ethical-value components but treats them briefly and without sustained historical comparison."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Monogamy's ethical value and sexual classification's alleged novelty are separately stated and appropriately conditional."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Conditional language and admitted difficulty match the limited conclusion that these examples do not securely demonstrate major novelty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian monogamy or sexual categories might be historically distinctive in social application despite older textual precedents.",
+        "decisiveQualification": "Earlier representation does not by itself settle changed practice, meaning, or institutional reach."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "If examples are ethically contestable or previously represented, they weakly answer the originality challenge; practical distinctiveness remains unresolved."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "Monogamy and Pentateuchal sexual categories are concrete, but their historical equivalence and comparative ethical effects are not developed."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It materially supports the subsidiary originality methodology by testing specific proposed innovations."
+        },
+        "representationalCharity": {
+          "value": 73,
+          "rationale": "The move fairly questions value and novelty but gives limited attention to differences between textual precedent and later social application."
+        }
+      },
+      "evidenceBasis": "The excerpt questions monogamy's status as a major achievement and identifies an older Pentateuchal distinction concerning same-sex conduct.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-secularism-theological-descent",
+      "sectionId": "section-science-enlightenment-secularism",
+      "side": "pro",
+      "speaker": "Tom Holland",
+      "moveKind": "reply",
+      "proposition": "Secularism and assumptions shared by contemporary atheists descend through medieval theology to Gospel materials and older scriptural fragments.",
+      "sourceSpan": {
+        "startEvent": 1933,
+        "endEvent": 1941
+      },
+      "attributionConfidence": "medium",
+      "attributionBasis": "The historical rejoinder matches Holland's thesis and follows Grayling's account of medieval secularism, although the opening row has a noisy transcription.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-secular-continuity"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-disputed-sexual-ethical-novelties"
+        ],
+        "components": [
+          {
+            "componentId": "pro-secularism-theological-descent-component-01",
+            "targetMoveId": "con-disputed-sexual-ethical-novelties",
+            "text": "Whether Christian monogamy and sexual classifications were genuinely novel and ethically valuable achievements.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The theological descent of secularism bears on the wider genealogy but does not contact the immediately preceding novelty and sexual-ethics demands.",
+        "responsivenessWithinClass": {
+          "value": 45,
+          "rationale": "This is relevant contrary material on the motion, but it is a nonanswer to the selected opponent's decisive components."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "partial",
+        "termStability": "materially-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "A theological-descent thesis is discernible, but noisy wording obscures the precise assumptions, mechanisms, and scope being claimed."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "radically-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim that almost everything shared by contemporary interlocutors descends from theology far exceeds the fragmentary support provided."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 55,
+          "rationale": "A descent chain from medieval theology to Gospel and scriptural material is usable, but its intermediate causal links are largely absent."
+        },
+        "evidenceWarrant": {
+          "value": 42,
+          "rationale": "The fact-dependent comprehensive genealogy is asserted through a short list of ancestors without examples, transmission evidence, or rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It expressly supports the central secular-continuity bridge, though its placement within that tier is limited by compressed contact."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The short, noisy rejoinder does not develop a sufficiently stable opposing interpretation for a meaningful charity test."
+        }
+      },
+      "evidenceBasis": "The noisy excerpt nevertheless explicitly traces shared modern assumptions through medieval theology to the Gospels and older scriptural fragments.",
+      "assessmentConfidence": "medium"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No uncaptured debate-wide consequence distinct from the move ratings, response links, importance judgments, and burden contacts is established.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No separate completion criterion exists beyond the scored move-level bridges.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contacts"
+        ],
+        "counterfactual": "Removing the proposed residual changes no burden completion beyond existing judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No uncaptured debate-wide consequence distinct from the move ratings, response links, importance judgments, and burden contacts is established.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No separate completion criterion exists beyond the scored move-level bridges.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contacts"
+        ],
+        "counterfactual": "Removing the proposed residual changes no burden completion beyond existing judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

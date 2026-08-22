@@ -1,0 +1,1766 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "73",
+  "debateId": "hawkins-folley-free-will-compatibilism-2026",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "pro-libertarian-freedom-route",
+      "side": "pro",
+      "description": "Establish that human freedom requires genuinely live alternatives and agent sourcehood, and that deliberative experience, constrained indeterminacy, executive selection, and cumulative self-formation can jointly supply those conditions despite biological and social limits.",
+      "successCriteria": "The route succeeds if alternative-capable deliberation and agent contribution are necessary for freedom and responsibility, if indeterminism can operate through rather than replace rational selection, and if deterministic proximal agency cannot preserve the required authorship.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-libertarian-requirements",
+        "tier": "motion",
+        "description": "Show that freedom requires both genuinely available alternatives and an agent-originating contribution that deterministic practical agency cannot supply."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-deliberative-alternatives",
+          "tier": "central",
+          "description": "Establish that first-person deliberation and practical inquiry present alternatives as genuinely available rather than merely hypothetical."
+        },
+        {
+          "bridgeId": "pro-central-indeterminate-selection",
+          "tier": "central",
+          "description": "Explain how constrained neural indeterminacy and executive criteria permit rational selection without reducing choice to either prior determination or randomness."
+        },
+        {
+          "bridgeId": "pro-central-sourcehood-self-formation",
+          "tier": "central",
+          "description": "Show that agents originate action and progressively shape their own characters through repeated alternative-capable choices under inherited constraints."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-empirical-underdetermination",
+          "tier": "subsidiary",
+          "description": "Establish that neuroscience does not decisively show conscious deliberation to be causally idle or choices to be settled before awareness."
+        },
+        {
+          "bridgeId": "pro-subsidiary-metaphysical-integration",
+          "tier": "subsidiary",
+          "description": "Provide a non-dualist account on which conscious valition, brain-level realization, top-down constraint, and indeterminacy can belong to one agent."
+        }
+      ]
+    },
+    {
+      "routeId": "con-compatibilist-agency-route",
+      "side": "con",
+      "description": "Establish that determinism preserves practically important freedom through willing action, consent, proximal causation, character, and responsibility practices, without requiring categorical alternatives or ultimate self-origination.",
+      "successCriteria": "The route succeeds if meaningful distinctions between choices and nonchoices remain available under determinism, if persons can act through their brains and characters as proximal sources, and if libertarian alternatives or sourcehood add no necessary, workable condition for responsibility.",
+      "motionBridge": {
+        "bridgeId": "con-motion-compatibilist-survival",
+        "tier": "motion",
+        "description": "Show that freedom, will, and responsibility retain burden-satisfying practical content under determinism without libertarian alternatives or ultimate sourcehood."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-willing-practical-agency",
+          "tier": "central",
+          "description": "Ground freedom in durable distinctions among willing, unwilling, consensual, coerced, chosen, and unchosen conduct."
+        },
+        {
+          "bridgeId": "con-central-proximal-sourcehood",
+          "tier": "central",
+          "description": "Show that an embodied person can be the causally effective proximal source of conduct through deliberation and character even when prior conditions determine it."
+        },
+        {
+          "bridgeId": "con-central-responsibility-practices",
+          "tier": "central",
+          "description": "Explain responsibility through plural, practice-shaped concepts of praise, blame, answerability, and reactive attitudes rather than one libertarian essence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-formation-constraints",
+          "tier": "subsidiary",
+          "description": "Test whether genetics, upbringing, and restricted evaluative criteria leave libertarian agents with the ultimate authorship their account requires."
+        },
+        {
+          "bridgeId": "con-subsidiary-live-option-criterion",
+          "tier": "subsidiary",
+          "description": "Require a principled account of when an alternative is genuinely live and how that status explains responsibility across constrained cases."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "freedom-standard",
+      "title": "The Required Standard of Human Freedom",
+      "weightPercent": 20,
+      "rationale": "Defines the motion-level dispute between libertarian alternatives and sourcehood on one side and compatibilist willing, choice, and practical agency on the other."
+    },
+    {
+      "sectionId": "deliberation-alternatives",
+      "title": "Deliberation and Genuine Alternative Possibilities",
+      "weightPercent": 20,
+      "rationale": "Tests whether first-person deliberation and practical inquiry support genuinely open options or can coexist with a determined future understood from a third-person perspective."
+    },
+    {
+      "sectionId": "indeterminism-agential-selection",
+      "title": "Indeterminism, Randomness, and Agential Selection",
+      "weightPercent": 20,
+      "rationale": "Addresses whether constrained stochastic variation plus executive criteria can produce rational libertarian choice, or whether probabilistic weighting still fails to confer authorship."
+    },
+    {
+      "sectionId": "sourcehood-character-formation",
+      "title": "Sourcehood, Character, and Formative Constraints",
+      "weightPercent": 25,
+      "rationale": "Compares cumulative libertarian self-formation with compatibilist proximal causation while accounting for the roles of genetics, upbringing, evaluative criteria, and constrained opportunities."
+    },
+    {
+      "sectionId": "responsibility-practical-agency",
+      "title": "Responsibility and Practical Agency Under Determinism",
+      "weightPercent": 15,
+      "rationale": "Examines whether consent, coercion, willing conduct, blame, praise, and reactive attitudes preserve freedom-relevant distinctions without categorical alternatives or ultimate sourcehood."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-c001-surviving-freedom-standard",
+      "sectionId": "freedom-standard",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "constructive",
+      "proposition": "Compatibilism should identify the important notions of freedom and willing that survive determinism rather than claim to preserve the libertarian conception unchanged.",
+      "sourceSpan": {
+        "startEvent": 104,
+        "endEvent": 143
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host addresses Joe before the answer, and the speaker explicitly identifies the position as his compatibilist view.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-compatibilist-survival"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes the compatibilist motion standard by identifying survival, rather than preservation of the libertarian conception, as the relevant inquiry.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it clearly frames the principal compatibilist route and its governing standard."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between surviving notions and an unchanged libertarian conception is explicit and stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move proposes a framing rather than claiming that compatibilism has already satisfied every substantive burden."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Compatibilism may claim to preserve the very freedom libertarians value, not merely substitute a practical notion.",
+        "decisiveQualification": "Folley expressly disclaims that stronger preservation claim and argues for identifying independently important surviving notions."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The proposed standard is internally consistent and directly explains what compatibilism undertakes to establish."
+        },
+        "evidenceWarrant": {
+          "value": 85,
+          "rationale": "The conceptual distinction is clearly stated, though substantive examples of surviving freedom are deferred to later moves."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly defines the motion-level completion condition for the compatibilist route."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The move accurately distinguishes the stronger preservation thesis before advancing its more modest standard."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly asks which important notions of freedom and will survive determinism or remain orthogonal to it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-experienced-libertarian-agency",
+      "sectionId": "freedom-standard",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "constructive",
+      "proposition": "Ordinary deliberation presents agents as considering genuine alternatives, selecting among them, and acting, which supports libertarian freedom absent a sufficient reason to reject that experience.",
+      "sourceSpan": {
+        "startEvent": 146,
+        "endEvent": 198
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host directly asks Nathan for his position, and the answer begins with an explicit declaration that he is a libertarian.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-libertarian-requirements"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move supplies the initial libertarian case from ordinary deliberative experience, genuine-seeming options, selection, and subsequent action.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it directly states the experiential basis for both alternatives and agent control."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The experiential claim is clear, but the defeasible bridge from appearance to reality remains implicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move offers experience as defeasible support and does not present phenomenology as demonstrative proof."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The inference is coherent, but the bridge from experienced openness to metaphysically genuine alternatives is compressed."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "Ordinary phenomenology supports the premise, while its reliability concerning metaphysical indeterminacy is not independently defended."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "The move directly advances the motion claim that freedom involves genuine alternatives and agent selection."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move presents a positive experiential starting point without interpreting a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt describes seriously considering several genuine-seeming options, selecting among them, and acting rather than operating on autopilot.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-c007-embodied-personal-causation",
+      "sectionId": "sourcehood-character-formation",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "reply",
+      "proposition": "On monism or physicalism, a person's brain states are parts of that person, so neural causation does not displace personal agency or establish that the person was not the source.",
+      "sourceSpan": {
+        "startEvent": 476,
+        "endEvent": 556
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The same identified Joe turn continues, using explicit references to his position on determinism and to what follows from taking physicalism seriously.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-proximal-sourcehood"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-experienced-libertarian-agency"
+        ],
+        "components": [
+          {
+            "componentId": "con-c007-embodied-personal-causation-component-01",
+            "targetMoveId": "pro-experienced-libertarian-agency",
+            "text": "Whether brain-level causal explanation displaces the person as the selecting and acting source.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses the displacement inference as failing under physicalism: brain states are parts of the person, so neural causation does not imply nonpersonal causation.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It expressly identifies and defeats the brain-versus-person inference central to the sourcehood issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The monist or physicalist condition is stated, and the person–brain relation remains stable throughout."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Given the expressly conditional physicalist premise, the rejection of a brain-versus-person contrast is appropriately forceful."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Neural precursors might show that conscious personal deliberation is not the effective source even if the brain belongs to the person.",
+        "decisiveQualification": "Mere identification of neural causation with a process in the person does not by itself establish conscious efficacy or libertarian authorship."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The part–whole reasoning is clear and blocks the stated inference, with only the stronger conscious-efficacy question left open."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The monist identity premise supports the conceptual conclusion, although no independent empirical account of personal-level causation is supplied."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central compatibilist bridge concerning embodied persons as proximal causal sources."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly defeats simple displacement but does not erase the stronger causal-efficacy challenge."
+        }
+      },
+      "evidenceBasis": "The excerpt warns that taking physicalism seriously makes it misleading to contrast what the person did with what the person's brain did.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-c008-willing-consent-distinction",
+      "sectionId": "freedom-standard",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "constructive",
+      "proposition": "Even if willing is determined, morally important distinctions between willing and unwilling conduct, including consent, survive and provide substantive content for compatibilist freedom.",
+      "sourceSpan": {
+        "startEvent": 557,
+        "endEvent": 618
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This remains within Joe's uninterrupted answer and explicitly develops what compatibilists should retain if determinism is assumed by stipulation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-willing-practical-agency"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move grounds practical agency in morally significant distinctions between willing and unwilling conduct, including consent, even under determinism.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "Within constructive moves, it gives a direct and concrete basis for the compatibilist practical-agency bridge."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is expressly conditional on determinism and consistently concerns willing, unwillingness, and consent."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The persistence of these ordinary distinctions under the stipulated condition is asserted with proportionate confidence."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Libertarians can accept distinctions involving consent while denying that those distinctions amount to freedom in the motion's relevant sense.",
+        "decisiveQualification": "The move claims substantive surviving content, not yet that willing and consent exhaust every freedom or responsibility requirement."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 92,
+          "rationale": "The inference from determined willing to a surviving willing–unwilling distinction is explicit and internally consistent."
+        },
+        "evidenceWarrant": {
+          "value": 86,
+          "rationale": "Consent provides a specific representative case, though the move does not yet compare hard manipulation or coercion cases."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It is an especially direct contribution to the central willing and practical-agency bridge."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "It preserves the libertarian reservation by advancing a bounded survival claim rather than an identity claim."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly says that consent remains important and that willing differs from not willing even when the will is determined.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-libet-causal-dissociation",
+      "sectionId": "deliberation-alternatives",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "Libet-style readiness potentials do not establish that unconscious activity causes conscious decisions or actions, because readiness activity can be dissociated from both deciding and moving.",
+      "sourceSpan": {
+        "startEvent": 620,
+        "endEvent": 741
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Nathan takes the floor by returning to the Libet experiment and later refers approvingly to the researcher and interpretation he had introduced in his earlier answer.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-empirical-underdetermination"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c007-embodied-personal-causation"
+        ],
+        "components": [
+          {
+            "componentId": "pro-libet-causal-dissociation-component-01",
+            "targetMoveId": "con-c007-embodied-personal-causation",
+            "text": "Whether readiness-potential evidence establishes that unconscious neural activity causes the conscious decision and action.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply diagnoses the empirical causal inference as invalid because readiness activity can occur without either a conscious decision or a motor action.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly attacks the causal inference from temporal neural activity to a settled unconscious decision."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Readiness potential, conscious decision, and motor action remain distinct, and the conclusion is limited to what the experiment establishes."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Dissociation undermines the claimed causal proof, although saying it cannot cause either event is somewhat stronger than the evidence summarized."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Readiness activity could be one probabilistic causal contributor even if it is neither sufficient nor invariably followed by decision or movement.",
+        "decisiveQualification": "The observed dissociations defeat a simple sufficient-cause interpretation but do not exclude every contributory causal role."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The dissociation argument coherently defeats sufficiency, while the broader conclusion about all causation requires an additional bridge."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The move identifies specific dissociations and an averaging explanation, but representative documentation and rival comparison are compressed."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary empirical-underdetermination bridge rather than the route's central metaphysical claim."
+        },
+        "representationalCharity": {
+          "value": 83,
+          "rationale": "The reply engages the main causal interpretation fairly but presses the dissociation beyond what it strictly excludes."
+        }
+      },
+      "evidenceBasis": "The excerpt states that conscious decision and motor action can dissociate from readiness activity and offers averaged brain noise as an alternative explanation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-constrained-indeterminate-selection",
+      "sectionId": "indeterminism-agential-selection",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "Indeterminism need not be random or reasonless, because probabilistically constrained variation can be evaluated and selected through deliberative processes as part of libertarian agency.",
+      "sourceSpan": {
+        "startEvent": 750,
+        "endEvent": 899
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The host poses the determined-or-random objection and Nathan answers in a sustained libertarian voice, repeatedly characterizing what a libertarian can consistently maintain.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-indeterminate-selection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c008-willing-consent-distinction"
+        ],
+        "components": [
+          {
+            "componentId": "pro-constrained-indeterminate-selection-component-01",
+            "targetMoveId": "con-c008-willing-consent-distinction",
+            "text": "Whether indeterministic agency must collapse into random or reasonless occurrence rather than rational willing.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly contacts the determined-or-random challenge by distinguishing chaotic randomness from probability distributions constrained and evaluated in deliberation.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It answers the decisive randomness concern, though the authorship role of selection remains only partly developed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The proposition is recoverable, but 'random' shifts between reasonless chaos and probabilistic indeterminacy."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move makes the appropriately limited claim that indeterminism can involve constrained variation rather than pure chaos."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A probabilistically constrained result can remain random in the relevant authorship sense even when it is not chaotic or equiprobable.",
+        "decisiveQualification": "Constraint and deliberative evaluation answer reasonlessness but do not alone show that the agent authors which permissible outcome occurs."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 77,
+          "rationale": "The constrained-variation model is coherent, but the bridge from rational evaluation to authorship of the realized result remains material."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Probability distributions supply a plausible model, while their neural realization and contribution to control are asserted rather than demonstrated here."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central requirement that indeterminacy operate through rather than replace rational selection."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The reply recognizes the core randomness problem but initially treats only one meaning of randomness as decisive."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes reasonless chaotic randomness from quantum-style probability distributions or variation within constraints.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-c201-weighted-stochastic-authorship",
+      "sectionId": "indeterminism-agential-selection",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "reply",
+      "proposition": "A decision produced by weighted stochastic variation may remain no better than randomness for purposes of authorship when the agent's weighting criteria constrain the possible result.",
+      "sourceSpan": {
+        "startEvent": 917,
+        "endEvent": 1021
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly adopts an incompatibilist perspective hypothetically and develops objections to weighted stochastic choice.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-indeterminate-selection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-constrained-indeterminate-selection"
+        ],
+        "components": [
+          {
+            "componentId": "con-c201-weighted-stochastic-authorship-component-01",
+            "targetMoveId": "pro-constrained-indeterminate-selection",
+            "text": "Whether weighted stochastic constraints make the realized choice authored rather than merely a constrained random outcome.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly presses the missing authorship bridge: criteria can weight possible outcomes without explaining why the realized stochastic result is attributable to the agent.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It explicitly contacts the decisive inference from probabilistic constraint to agential authorship."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The challenge consistently distinguishes stochastic output, weighting criteria, and authorship, while acknowledging the need for careful development."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents a natural objection and expressly says that the point requires careful elaboration."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The agent may author a process by setting or embodying rational constraints even without determining its unique outcome.",
+        "decisiveQualification": "Process authorship must still explain how inherited criteria and stochastic realization yield the libertarian control claimed."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The objection cleanly exposes a missing inference between weighted stochastic production and authorship of the selected outcome."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The conceptual challenge is well specified, though it does not yet establish that no process-based authorship account can answer it."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It attacks the exact central bridge connecting constrained indeterminacy to agent-controlled selection."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The objection grants weighted rational structure and targets the remaining authorship question rather than caricaturing indeterminism."
+        }
+      },
+      "evidenceBasis": "The excerpt states that weighted stochasticity may be no better than randomness and asks how criterial constraints generate authorship.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-self-as-valitional-system",
+      "sectionId": "sourcehood-character-formation",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "When the self is identified with the brain's executive or valitional system, the agent participates in imposing the criteria that constrain and govern indeterminate choice.",
+      "sourceSpan": {
+        "startEvent": 1022,
+        "endEvent": 1047
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn directly answers the preceding probabilistic objection by asking what the choosing self could be and locating it in executive brain function.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-sourcehood-self-formation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c201-weighted-stochastic-authorship"
+        ],
+        "components": [
+          {
+            "componentId": "pro-self-as-valitional-system-component-01",
+            "targetMoveId": "con-c201-weighted-stochastic-authorship",
+            "text": "What the choosing self is and how it participates in imposing criteria on stochastic possibilities.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the authorship demand by identifying the self with the brain's executive or valitional system that applies the relevant constraints.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "It identifies an agent-level controller but only partially explains how that identification resolves outcome authorship."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The self is recoverably located in executive brain function, but 'you,' self, brain, and valitional system are not fully distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move offers a possible physicalist identification rather than claiming a settled theory of the self."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Identifying the self with executive brain function may redescribe the weighting mechanism without adding control over its stochastic output.",
+        "decisiveQualification": "System identification answers displacement but does not alone establish ultimate or contrastive authorship."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "The identity proposal is coherent, but participation in constraint-setting is not yet shown to settle the prior stochastic authorship objection."
+        },
+        "evidenceWarrant": {
+          "value": 69,
+          "rationale": "The executive-system identification is asserted with little empirical or theoretical defense in this short span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central sourcehood bridge by locating valitional control within the embodied agent."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The response addresses the strongest physicalist formulation but leaves its decisive authorship qualification open."
+        }
+      },
+      "evidenceBasis": "The excerpt asks what the choosing self could be and proposes the brain or its valitional executive function as the physical self.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-c204-externally-formed-criteria",
+      "sectionId": "sourcehood-character-formation",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "reply",
+      "proposition": "Genetics and upbringing heavily constrain an agent's evaluative criteria and place much of the possible choice space outside the agent's control, challenging claims of ultimate sourcehood.",
+      "sourceSpan": {
+        "startEvent": 1172,
+        "endEvent": 1214
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Folley explicitly presents the other incompatibilist line and closes by asking Hawkins how his libertarian account responds to it.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-sourcehood-self-formation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-self-as-valitional-system",
+          "pro-constrained-indeterminate-selection"
+        ],
+        "components": [
+          {
+            "componentId": "con-c204-externally-formed-criteria-component-01",
+            "targetMoveId": "pro-self-as-valitional-system",
+            "text": "Whether the valitional system authors its governing criteria when genetics and upbringing substantially form those criteria.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-c204-externally-formed-criteria-component-02",
+            "targetMoveId": "pro-constrained-indeterminate-selection",
+            "text": "Whether constrained probabilistic choice supplies libertarian control when much of the possible choice space is antecedently fixed.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly challenges sourcehood by tracing criterial constraints and the available possibility space to genetics, upbringing, and other factors outside the agent's control.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It contacts both the constitution of the choosing system and the constraints governing stochastic selection."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully claims heavy influence and extensive constraint rather than total external determination of every criterion."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The force matches the modest and well-qualified claim that formative factors heavily constrain criteria and possibilities."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Agents may revise inherited criteria incrementally and become partial sources without being ultimate creators of their starting point.",
+        "decisiveQualification": "Incremental revision can establish limited self-formation while leaving the claimed ultimate or regress-ending sourcehood unsupported."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The inference from externally shaped criteria and option sets to pressure on ultimate sourcehood is explicit and appropriately limited."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Genetics and upbringing are representative formative factors, though their exact extent and interaction are not documented in the span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central libertarian bridge requiring agent-originating sourcehood through criterial control."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The objection expressly allows possible later meddling and therefore targets residual rather than absolute external formation."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly attributes criteria to genetics and upbringing and describes extensive nonagent constraints on the possibilities later governed by those criteria.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cumulative-self-realization",
+      "sectionId": "sourcehood-character-formation",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "Despite biological, social, and environmental limits, agents contribute through repeated choices and learning to reshaping their brains, expanding later options, and realizing themselves over time.",
+      "sourceSpan": {
+        "startEvent": 1215,
+        "endEvent": 1285
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hawkins expressly accepts limits on libertarian freedom and develops a positive account of constrained choice reshaping later character and possibilities.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-sourcehood-self-formation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c204-externally-formed-criteria"
+        ],
+        "components": [
+          {
+            "componentId": "pro-cumulative-self-realization-component-01",
+            "targetMoveId": "con-c204-externally-formed-criteria",
+            "text": "Whether externally constrained agents can nevertheless contribute to their later criteria, capacities, and option sets.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts inherited limits and answers by explaining how repeated choices and learning reshape neural organization, capacities, and later possibilities.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly answers the formative-constraint demand with a cumulative and concrete self-modification mechanism."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The cumulative, constrained, and partial character of self-realization is expressly maintained across the example."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The modest claim that choices contribute to later capacities is supported without claiming creation independent of prior conditions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Deterministic learning can also reshape brains and option sets, so cumulative change alone need not establish libertarian sourcehood.",
+        "decisiveQualification": "The example demonstrates diachronic contribution but requires a separate argument that earlier formative choices contained genuine alternatives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Cumulative self-modification coherently answers total passivity, but its specifically libertarian significance depends on earlier alternative-capable choices."
+        },
+        "evidenceWarrant": {
+          "value": 81,
+          "rationale": "The language-learning example concretely supports neural and practical self-modification, with the indeterministic component left less developed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central sourcehood and self-formation bridge under inherited constraints."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply fairly accepts external limits, although it does not fully separate libertarian self-formation from deterministic plasticity."
+        }
+      },
+      "evidenceBasis": "The excerpt uses repeated daily decisions and learning Greek to illustrate brain change, expanded understanding, and enlarged later options.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-c207-restricted-outlook-responsibility",
+      "sectionId": "responsibility-practical-agency",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "reply",
+      "proposition": "A libertarian model may not deliver the ultimate responsibility commonly expected of it when a restrictive environment prevents an agent from developing access to materially different evaluative criteria.",
+      "sourceSpan": {
+        "startEvent": 1358,
+        "endEvent": 1445
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Folley states his concern about self-causing libertarianism and develops the racist-upbringing example as a challenge to Hawkins's restricted criteria account.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-sourcehood-self-formation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-cumulative-self-realization"
+        ],
+        "components": [
+          {
+            "componentId": "con-c207-restricted-outlook-responsibility-component-01",
+            "targetMoveId": "pro-cumulative-self-realization",
+            "text": "Whether cumulative self-formation yields responsibility when a restrictive environment prevents access to materially different evaluative criteria.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply contacts the cumulative account by testing a case in which upbringing restricts the criteria available for self-revision and thus limits ultimate responsibility.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It directly tests the self-formation mechanism in the hard case of a deeply restricted evaluative outlook."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is framed as a challenge to ultimate responsibility and explicitly recognizes the modesty of Hawkins's position."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Folley presents the implication tentatively and acknowledges that the libertarian account may be more modest than common versions."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A degree-based libertarian can deny full responsibility in severely restrictive environments while retaining partial responsibility elsewhere.",
+        "decisiveQualification": "That retreat is coherent but reduces the account's ability to deliver the robust ultimate responsibility often motivating libertarianism."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The restricted-outlook example directly pressures the inference from cumulative choice to robust responsibility without assuming total incapacity."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The upbringing case is a concrete and relevant test, though its psychological premises remain illustrative rather than independently documented."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly attacks the central libertarian sourcehood and self-formation bridge through responsibility implications."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "The reply recognizes the modest alternative and directs its criticism to the resulting limitation rather than denying it."
+        }
+      },
+      "evidenceBasis": "The span develops a restrictive-upbringing case and argues that unavailable alternative criteria make the offered libertarian responsibility notably modest.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-top-down-criterial-causation",
+      "sectionId": "indeterminism-agential-selection",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "Indeterminate neuronal firing can lack a sufficient determining cause while system-level criterial constraints exert top-down causation, providing a physical mechanism for agential selection.",
+      "sourceSpan": {
+        "startEvent": 1627,
+        "endEvent": 1665
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hawkins directly answers the demand for an uncaused neuron by describing synaptic indeterminacy and system-level criterial causation in the cited model.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-indeterminate-selection"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c201-weighted-stochastic-authorship",
+          "con-c207-restricted-outlook-responsibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-top-down-criterial-causation-component-01",
+            "targetMoveId": "con-c201-weighted-stochastic-authorship",
+            "text": "How an undetermined neural event can be governed by agent-level criteria rather than remaining causally reasonless.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-top-down-criterial-causation-component-02",
+            "targetMoveId": "con-c207-restricted-outlook-responsibility",
+            "text": "Whether system-level criteria can exert a real causal contribution despite lower-level indeterminacy.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply supplies the requested mechanism: synaptic events lack sufficient determining causes while system-level criterial constraints exert top-down causal control.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "It explicitly addresses the mechanism demand, although ultimate authorship of the criteria remains a separate issue."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The multilevel proposal is recoverable, but criterial, formal, and top-down causation are introduced without fully fixing their relations."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents the account as a proposed physical mechanism and does not claim that the brief description proves it empirically."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Top-down constraint may supervene on lower-level physical conditions and therefore fail to add indeterministic agent causation.",
+        "decisiveQualification": "A multilevel constraint description must establish causal efficacy and not merely redescribe the same lower-level process."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The multilevel structure is coherent, but the bridge from system-level constraint to specifically agential selection remains compressed."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Synaptic indeterminacy and criterial causation are asserted technically without representative empirical support or comparison to exclusionary accounts."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly addresses the central mechanism needed to integrate indeterminacy with rational selection."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move supplies the model but gives limited attention to the strongest supervenience or causal-exclusion alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt combines absent sufficient causation at synapses with system-level top-down criterial or formal causation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-live-options-degree-responsibility",
+      "sectionId": "responsibility-practical-agency",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "Freedom operates among alternatives genuinely live for an agent, while severe biological or social constraints can narrow those alternatives and correspondingly reduce moral responsibility by degree.",
+      "sourceSpan": {
+        "startEvent": 1669,
+        "endEvent": 1718
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hawkins distinguishes impossible or psychologically unavailable options from live alternatives and applies that distinction to responsibility for racist beliefs.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-formation-constraints"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c207-restricted-outlook-responsibility",
+          "con-c204-externally-formed-criteria"
+        ],
+        "components": [
+          {
+            "componentId": "pro-live-options-degree-responsibility-component-01",
+            "targetMoveId": "con-c207-restricted-outlook-responsibility",
+            "text": "How responsibility should vary when biology or social environment narrows the alternatives genuinely available to an agent.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-live-options-degree-responsibility-component-02",
+            "targetMoveId": "con-c204-externally-formed-criteria",
+            "text": "Whether external formation eliminates freedom entirely or instead narrows its scope and degree.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply accepts the restrictive cases and answers them with a live-option condition and degree-theoretic responsibility rather than insisting on uniform freedom.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It directly answers the hard constraint cases by specifying both a scope condition and a responsibility consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Live options, constrained scope, and responsibility by degree are all expressly distinguished and consistently applied."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The claim is appropriately qualified to alternatives that are genuinely live and allows diminished responsibility under severe constraints."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A compatibilist can also grade responsibility by reasons-responsiveness or coercive constraint without categorical alternatives.",
+        "decisiveQualification": "The degree framework handles cases but does not by itself show that metaphysically open live options are necessary for those gradations."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The scope limitation and graded-responsibility consequence fit together clearly, though the criterion for metaphysical liveness needs further specification."
+        },
+        "evidenceWarrant": {
+          "value": 77,
+          "rationale": "The constrained cases plausibly support gradation, but the proposed live-option test is not independently operationalized here."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "The move strongly answers the subsidiary formation-constraints bridge through a bounded responsibility account."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The response treats restrictive cases fairly but leaves the strongest compatibilist explanation of the same gradations underexamined."
+        }
+      },
+      "evidenceBasis": "The excerpt says biology can genuinely affect freedom, requires an option to be live for the agent, and explicitly adopts degree-theoretic responsibility.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-c301-live-option-criterion",
+      "sectionId": "deliberation-alternatives",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "reply",
+      "proposition": "An alternatives-based account needs a principled way to determine when an option was genuinely live, particularly in cases where restrictive upbringing appears to exclude alternative evaluative paths.",
+      "sourceSpan": {
+        "startEvent": 1719,
+        "endEvent": 1800
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn follows Nathan Hawkins's account of constrained live options and is framed in the first person as an incompatibilist challenge before discussing Jojo evidence.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-live-option-criterion"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-live-options-degree-responsibility",
+          "pro-cumulative-self-realization"
+        ],
+        "components": [
+          {
+            "componentId": "con-c301-live-option-criterion-component-01",
+            "targetMoveId": "pro-live-options-degree-responsibility",
+            "text": "What principled test determines whether an alternative was genuinely live for a particular constrained agent.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-c301-live-option-criterion-component-02",
+            "targetMoveId": "pro-cumulative-self-realization",
+            "text": "Whether restrictive upbringing left any accessible path by which the agent could have formed different criteria.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly requests a criterion for liveness and tests it against upbringing and socioeconomic cases where alternative evaluative paths may be absent.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It expressly contacts the missing operational criterion and applies the demand to the opponent's central hard case."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The demand is clearly limited to determining liveness for particular agents under specified formative restrictions."
+      },
+      "calibrationFindings": {
+        "assertedForce": "question",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move appropriately poses an unresolved criterion demand rather than claiming that no possible answer exists."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Liveness might be indexed to psychologically accessible reasons rather than to every physically possible alternative path.",
+        "decisiveQualification": "That indexing still requires a noncircular method for identifying accessibility and connecting it to responsibility."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The criterion demand follows directly from the degree account and identifies a necessary explanatory step without overreaching."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "Restrictive upbringing and economic background are representative tests, though no comparative case set is developed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It is an exceptionally direct contribution to the subsidiary live-option criterion bridge."
+        },
+        "representationalCharity": {
+          "value": 93,
+          "rationale": "The reply recognizes agent-relative limitation and asks precisely what makes that limitation principled."
+        }
+      },
+      "evidenceBasis": "The excerpt asks how one determines liveness and compares the claimed limitation with arguments based on economic and social upbringing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-responsibility-through-self-formation",
+      "sectionId": "responsibility-practical-agency",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "Responsibility rests partly on an agent's alternative-capable role in gradually shaping the character from which later settled conduct proceeds, not only on isolated proximal choices.",
+      "sourceSpan": {
+        "startEvent": 1801,
+        "endEvent": 1882
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly identifies his position as libertarian, answers the Jojo example, and develops a first-person account of character formation and responsibility.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-sourcehood-self-formation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c301-live-option-criterion",
+          "con-c207-restricted-outlook-responsibility"
+        ],
+        "components": [
+          {
+            "componentId": "pro-responsibility-through-self-formation-component-01",
+            "targetMoveId": "con-c301-live-option-criterion",
+            "text": "Why later settled conduct can remain attributable to an agent despite the absence of a live proximal alternative.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-responsibility-through-self-formation-component-02",
+            "targetMoveId": "con-c207-restricted-outlook-responsibility",
+            "text": "How responsibility can arise from an agent's history of shaping character rather than from one isolated choice.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply shifts the analysis to the agent's alternative-capable historical role in forming character, thereby answering why settled later conduct may remain attributable.",
+        "responsivenessWithinClass": {
+          "value": 86,
+          "rationale": "It contacts the diachronic responsibility issue but does not fully supply the requested criterion for when earlier alternatives were live."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between proximal action and historical character formation is explicit and consistently tied to responsibility."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move offers historical self-formation as part of responsibility rather than claiming it resolves every constrained case."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A compatibilist can also ground responsibility in a history-sensitive character without requiring indeterministic earlier choices.",
+        "decisiveQualification": "The libertarian account needs to show that genuine alternatives in the formative history add responsibility beyond ordinary historical ownership."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Historical character formation can coherently ground later attribution, conditional on the earlier choices having the requisite alternative structure."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The contrast with animals and settled desires illustrates attribution, but the decisive historical-alternatives premise is compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central self-formation bridge linking alternative-capable history to responsibility."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The move fairly distinguishes proximal from historical analysis but leaves the compatibilist version of historical ownership largely open."
+        }
+      },
+      "evidenceBasis": "The excerpt distinguishes proximal conduct from the moral significance of an agent's role in shaping the person and desires from which conduct proceeds.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-c304-plural-practice-shaped-responsibility",
+      "sectionId": "responsibility-practical-agency",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "reply",
+      "proposition": "Freedom and responsibility comprise plural, practice-shaped concepts whose content can be reconstructed through praise, blame, coercion, and reactive attitudes rather than one metaphysical formula.",
+      "sourceSpan": {
+        "startEvent": 1938,
+        "endEvent": 2078
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Folley continues the same uninterrupted turn, surveys several compatibilist traditions, and explicitly advances a pragmatic reconstruction from responsibility practices.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-responsibility-practices"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-responsibility-through-self-formation",
+          "pro-live-options-degree-responsibility"
+        ],
+        "components": [
+          {
+            "componentId": "con-c304-plural-practice-shaped-responsibility-component-01",
+            "targetMoveId": "pro-responsibility-through-self-formation",
+            "text": "What practical responsibility concepts and practices require, rather than what single metaphysical essence all responsibility must instantiate.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-c304-plural-practice-shaped-responsibility-component-02",
+            "targetMoveId": "pro-live-options-degree-responsibility",
+            "text": "How praise, blame, coercion, and reactive attitudes may structure graded responsibility in practice.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": true,
+        "rationale": "The reply justifies replacing a single metaphysical formula with a plural practice-based inquiry that preserves the legitimate questions of praise, blame, coercion, and answerability.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It gives a justified alternative demand and connects that demand to several concrete responsibility practices."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "Plurality, pragmatic reconstruction, and reactive attitudes are consistently distinguished from a single metaphysical account."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Folley explicitly opens a line of inquiry and does not claim that practice alone conclusively settles every normative question."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Responsibility practices might themselves require justification by deeper facts about desert, alternatives, or sourcehood.",
+        "decisiveQualification": "Pragmatic reconstruction preserves practical functions but does not automatically vindicate retributive or basic-desert components."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 87,
+          "rationale": "The pluralist reframe is explicit and preserves the legitimate practical issue, though its normative selection criteria remain partly open."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "Praise, blame, coercion, and reactive attitudes provide representative support, but competing practice reforms are not systematically compared."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central compatibilist bridge grounding responsibility in plural social practices."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The move fairly reframes the issue while leaving room for metaphysical constraints on particular responsibility practices."
+        }
+      },
+      "evidenceBasis": "The excerpt proposes working backward from reactive attitudes and asking how responsibility practices should be shaped going forward.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-pragmatic-sourcehood-alternatives",
+      "sectionId": "freedom-standard",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "Taking deliberative phenomenology and practical causal reasoning seriously supports treating agents as originating sources and their apparent ability to do otherwise as real rather than irrelevant.",
+      "sourceSpan": {
+        "startEvent": 2083,
+        "endEvent": 2175
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker announces an attempt to persuade Joe toward libertarianism on Joe's pragmatic grounds and develops the argument using deliberation, causation, and responsibility.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "motion",
+        "bridgeId": "con-motion-compatibilist-survival"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c304-plural-practice-shaped-responsibility",
+          "con-c001-surviving-freedom-standard"
+        ],
+        "components": [
+          {
+            "componentId": "pro-pragmatic-sourcehood-alternatives-component-01",
+            "targetMoveId": "con-c304-plural-practice-shaped-responsibility",
+            "text": "Whether a pragmatic approach should take ordinary deliberative sourcehood and apparent alternatives as real features rather than dispensable appearances.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-pragmatic-sourcehood-alternatives-component-02",
+            "targetMoveId": "con-c001-surviving-freedom-standard",
+            "text": "Whether compatibilist practical survival can omit the experienced agent-originating and alternative-capable structure of deliberation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply meets the pragmatic reframe on its own terms and argues that deliberation treats the self as an originating cause whose alternatives matter in reasoning and responsibility.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly engages the pragmatic standard, though the inference from indispensable representation to metaphysical truth remains compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The practical claim is clear, but originating cause, causal-chain termination, and uncaused cause are not fully distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Deliberative phenomenology supports practical source-representation, but the suggestion of an uncaused cause exceeds what that evidence alone establishes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A compatibilist can treat agent-causal language as a useful personal-level representation without accepting metaphysical uncaused causation.",
+        "decisiveQualification": "Practical indispensability or phenomenological immediacy does not by itself decide whether the represented alternatives are categorically open."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The move coherently identifies practical sourcehood, but it compresses the inference from first-person causal reasoning to uncaused libertarian agency."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Phenomenological and practical observations are relevant, while the metaphysical conclusion lacks independent verification or rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly attacks the motion-level claim that compatibilist practical notions adequately survive without libertarian sourcehood."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move engages pragmatic compatibilism seriously but gives insufficient weight to its levels-of-description alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt says deliberators regard themselves as causes of their actions and describes their reasoning as terminating a causal chain.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-pragmatic-deliberative-alternatives",
+      "sectionId": "deliberation-alternatives",
+      "side": "pro",
+      "speaker": "Nathan Hawkins",
+      "moveKind": "reply",
+      "proposition": "The evolved practical indispensability of conscious deliberation and inquiry supports taking their alternative-possibility structure seriously, including when interpreting the agency of other people.",
+      "sourceSpan": {
+        "startEvent": 2238,
+        "endEvent": 2287
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hawkins introduces two explicit further challenges, addresses Joe by name, and links evolutionary usefulness, inquiry, and interpersonal reactive attitudes to libertarian agency.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-deliberative-alternatives"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-c304-plural-practice-shaped-responsibility",
+          "con-c001-surviving-freedom-standard"
+        ],
+        "components": [
+          {
+            "componentId": "pro-pragmatic-deliberative-alternatives-component-01",
+            "targetMoveId": "con-c304-plural-practice-shaped-responsibility",
+            "text": "Whether pragmatic and evolutionary considerations favor taking deliberation's alternative structure seriously.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-pragmatic-deliberative-alternatives-component-02",
+            "targetMoveId": "con-c001-surviving-freedom-standard",
+            "text": "Whether practically important surviving notions can omit the apparent openness built into inquiry and decision-making.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly applies the opponent's pragmatic orientation, arguing that evolved usefulness and inquiry make conscious deliberation and its alternatives explanatorily significant.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "It contacts the pragmatic challenge, although usefulness is not yet shown to entail metaphysical openness."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The argument consistently links evolutionary usefulness, conscious decision-making, inquiry, and deliberation, with one implicit truth qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Usefulness supports taking the structure seriously, but the suggestion that usefulness makes it true in some sense needs further qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolution can favor useful deliberative representations even if categorical alternatives are absent, as with other simplifying cognitive models.",
+        "decisiveQualification": "Adaptive usefulness establishes practical efficacy more readily than metaphysical accuracy about possible futures."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The practical-indispensability inference is intelligible, but the bridge from evolutionary usefulness to genuine alternatives remains materially underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "Evolutionary usefulness is asserted generally without evidence distinguishing truth-tracking deliberation from adaptively useful representation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central libertarian deliberative-alternatives bridge through inquiry and practical decision-making."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "The move fairly uses pragmatic premises but insufficiently answers the strongest adaptive-representation alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that conscious decision-making evolved because it is useful and connects inquiry itself with deliberative consideration of alternatives.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-c308-choice-distinction-under-determinism",
+      "sectionId": "deliberation-alternatives",
+      "side": "con",
+      "speaker": "Joe Folley",
+      "moveKind": "reply",
+      "proposition": "Even if determinism were proven, distinctions between choices and nonchoices could remain intelligible, while tension between objective inquiry and first-person deliberation would burden theories of human inquiry generally.",
+      "sourceSpan": {
+        "startEvent": 2296,
+        "endEvent": 2383
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following Hawkins's request for the useful notion, Folley repeatedly identifies proximal sourcehood as his view and develops the object-versus-subject naturalism problem.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-compatibilist-survival"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-pragmatic-deliberative-alternatives",
+          "pro-pragmatic-sourcehood-alternatives"
+        ],
+        "components": [
+          {
+            "componentId": "con-c308-choice-distinction-under-determinism-component-01",
+            "targetMoveId": "pro-pragmatic-deliberative-alternatives",
+            "text": "Whether the practical distinction between choices and nonchoices depends on metaphysically open alternatives.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-c308-choice-distinction-under-determinism-component-02",
+            "targetMoveId": "pro-pragmatic-sourcehood-alternatives",
+            "text": "Whether first-person causal reasoning uniquely supports libertarian sourcehood rather than a general problem for naturalistic inquiry.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly denies that determinism erases the choice distinction and argues that first-person versus objective tension burdens naturalistic inquiry generally, not compatibilism alone.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It contacts both the practical choice distinction and the purportedly distinctive significance of first-person inquiry."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim is explicitly hypothetical and consistently distinguishes choice from nonchoice without claiming categorical alternatives."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move claims only that the distinction could remain intelligible if determinism were proven, which matches its conceptual support."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The libertarian may grant a behavioral choice distinction while insisting that it lacks the freedom-relevant contrastive control at issue.",
+        "decisiveQualification": "Survival of an intelligible distinction supports practical agency but does not alone prove that every responsibility-relevant freedom survives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 90,
+          "rationale": "The hypothetical is clear, and the inference that determination need not collapse choice into nonchoice is internally consistent."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The conceptual example supports intelligibility, though fuller criteria for choice and comparison with manipulation cases are not supplied."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the motion-level compatibilist claim that meaningful practical agency survives determinism."
+        },
+        "representationalCharity": {
+          "value": 90,
+          "rationale": "The response preserves the stronger libertarian reservation while establishing the bounded compatibilist survival claim."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly supposes determinism proven and maintains that choices can still be distinguished from nonchoices, including conduct supported by overwhelming reasons.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence remains after the individual move, response, relevance, and omission judgments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No separate residual completion criterion is established beyond the locked pro bridges.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "None beyond consequences already captured in the move-level judgments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any proposed residual would not change pro burden completion independently of the scored moves."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence remains after the individual move, response, relevance, and omission judgments.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No separate residual completion criterion is established beyond the locked con bridges.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "None beyond consequences already captured in the move-level judgments.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "burden relevance"
+        ],
+        "counterfactual": "Removing any proposed residual would not change con burden completion independently of the scored moves."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
