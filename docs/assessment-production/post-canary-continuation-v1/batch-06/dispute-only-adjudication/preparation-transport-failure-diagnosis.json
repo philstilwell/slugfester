@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-adjudication-preparation-transport-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-06-dispute-only-adjudication",
+  "status": "frozen-batch-06-adjudication-preparation-360000-byte-ceiling-failure-diagnosed",
+  "diagnosedAt": "2026-08-22T23:30:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "failureCategory": "deterministic-preparation-transport-ceiling",
+  "preservedError": "Batch 6 context 382133 bytes exceeds the 360 KB ceiling",
+  "preview": {
+    "contexts": 10,
+    "disputedMoves": 197,
+    "candidateSelections": 609,
+    "audioVerifiedMoves": 2,
+    "maximumCopiedInputBytes": 382133,
+    "meanCopiedInputBytes": 310657,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "affectedContext": {
+    "contextIndex": 6,
+    "debateNumber": "168",
+    "debateId": "craig-krauss-evidence-god-2012",
+    "disputedMoves": 23,
+    "candidateSelections": 82,
+    "audioVerifiedMoves": 0,
+    "packetBytes": 346361,
+    "copiedInputBytes": 382133,
+    "amountAboveFrozenCeilingBytes": 22133
+  },
+  "otherContextCopiedInputBytes": [
+    { "debateNumber": "73", "bytes": 353823 },
+    { "debateNumber": "36", "bytes": 342958 },
+    { "debateNumber": "38", "bytes": 258922 },
+    { "debateNumber": "97", "bytes": 343226 },
+    { "debateNumber": "141", "bytes": 277559 },
+    { "debateNumber": "06", "bytes": 319769 },
+    { "debateNumber": "135", "bytes": 343618 },
+    { "debateNumber": "143", "bytes": 270860 },
+    { "debateNumber": "169", "bytes": 213703 }
+  ],
+  "rootCause": "The complete score-blind Debate 168 dispute-only packet and the fixed shared adjudication inputs total 382133 copied bytes. The inherited 360000-byte preparation ceiling rejects that complete context before packets are written or any model is executed.",
+  "boundedCorrection": {
+    "authorizedClass": "deterministic-transport-correction",
+    "proposedChange": "raise-only-the-batch-06-adjudication-copied-input-ceiling-from-360000-to-400000-bytes",
+    "rationale": "The repository already uses a frozen 400000-byte hard-route transport budget for complete publication contexts, and the measured 382133-byte context remains below that established ceiling.",
+    "packetContentChanges": 0,
+    "schemaChanges": 0,
+    "sourceChanges": 0,
+    "candidateChanges": 0,
+    "scoreChanges": 0,
+    "modelSettingChanges": 0,
+    "schedulerChanges": 0,
+    "futureCorrectionAttemptsMaximum": 1
+  },
+  "sourceHashes": {
+    "scripts/build-assessment-production-post-canary-batch-06-dispute-adjudication-packets.mjs": "ddf34cad9f5e10483801b988c92cd14007c50ccbe524743e9e65f3d7e1ef2dd3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/disagreement-extraction/analysis.json": "4bff899f763efd108a3accc7e02ed38ca62d3ee70162265a87a3262b68cb7fd4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/audio-verification.json": "684f828fa5f2593fd082e107498967e11c2f67f50548c690ede1c3ee214bdd6e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/analysis.json": "6cd61a3637e7d98695c4baac2360eb868558a9642ed3ba843adc1124dc482df9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/cost-control-analysis.json": "aac88bf76c1fcfd272721c3fd2f06ce8a1928f21bb8edcbd245b5fc347865fb2",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization.json": "b6d7f27c77d76fbdf609d22e0b60b0314b0b8d58c1905d8f84bdcebba58e13f2"
+  },
+  "executionBoundary": {
+    "packetWrites": 0,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "reruns": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "prepare-and-hash-lock-one-batch-06-adjudication-400000-byte-transport-correction"
+}
