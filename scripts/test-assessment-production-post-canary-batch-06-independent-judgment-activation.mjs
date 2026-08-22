@@ -412,8 +412,8 @@ if (analysis.acceptance.passed) {
         pair.separateOutputHashes
     )
   );
-  assert.equal(analysis.totals.uniqueMoves, 187);
-  assert.equal(analysis.totals.movesJudgedAcrossPasses, 374);
+  assert.equal(analysis.totals.uniqueMoves, 200);
+  assert.equal(analysis.totals.movesJudgedAcrossPasses, 400);
   assert.equal(
     analysis.nextAuthorizedAction,
     "extract-freeze-and-analyze-batch-06-disagreements-under-standing-authorization"

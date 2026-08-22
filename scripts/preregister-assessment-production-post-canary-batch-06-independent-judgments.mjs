@@ -92,8 +92,8 @@ assertV4(
     preparation.stagingOnly === true &&
     preparation.contexts.length === 20 &&
     preparation.totals.debates === 10 &&
-    preparation.totals.uniqueMoves === 187 &&
-    preparation.totals.movesJudgedAcrossPasses === 374 &&
+    preparation.totals.uniqueMoves === 200 &&
+    preparation.totals.movesJudgedAcrossPasses === 400 &&
     preparation.totals.maximumCopiedInputBytes <= 115000 &&
     preparation.totals.modelContextsExecuted === 0 &&
     preparation.totals.audioCalls === 0 &&

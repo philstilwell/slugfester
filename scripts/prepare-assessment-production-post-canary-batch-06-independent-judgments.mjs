@@ -425,7 +425,7 @@ for (const debate of inventoryAnalysis.debates) {
 
 assertV4(contexts.length === 20, "independent-judgment preparation must contain twenty contexts");
 assertV4(
-  contexts.reduce((sum, context) => sum + context.moves, 0) === 374,
+  contexts.reduce((sum, context) => sum + context.moves, 0) === 400,
   "independent-judgment move coverage drifted"
 );
 for (const debateNumber of EXPECTED_DEBATES) {

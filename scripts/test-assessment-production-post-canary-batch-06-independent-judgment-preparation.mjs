@@ -71,8 +71,8 @@ assert.equal(preparation.model.meteredApiCostUsdMaximum, 0);
 assert.equal(preparation.contexts.length, 20);
 assert.equal(preparation.totals.debates, 10);
 assert.equal(preparation.totals.contexts, 20);
-assert.equal(preparation.totals.uniqueMoves, 187);
-assert.equal(preparation.totals.movesJudgedAcrossPasses, 374);
+assert.equal(preparation.totals.uniqueMoves, 200);
+assert.equal(preparation.totals.movesJudgedAcrossPasses, 400);
 assert.equal(preparation.totals.modelContextsExecuted, 0);
 assert.equal(preparation.totals.audioCalls, 0);
 assert.equal(preparation.totals.scoresDerived, 0);
@@ -225,7 +225,7 @@ for (const context of preparation.contexts) {
   assert(context.copiedInputBytes <= preparation.transport.provenCeilingBytes);
   movesAcrossPasses += context.moves;
 }
-assert.equal(movesAcrossPasses, 374);
+assert.equal(movesAcrossPasses, 400);
 
 for (const outputPath of preparation.futureOutputPathsExcludedFromSourceHashes) {
   assert.equal(Object.hasOwn(preparation.sourceHashes, outputPath), false);

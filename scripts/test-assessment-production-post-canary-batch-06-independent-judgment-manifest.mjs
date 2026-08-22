@@ -99,8 +99,8 @@ assert.deepEqual(
   [...new Set(manifest.contexts.map((context) => context.debateNumber))],
   EXPECTED_DEBATES
 );
-assert.equal(preparation.totals.uniqueMoves, 187);
-assert.equal(preparation.totals.movesJudgedAcrossPasses, 374);
+assert.equal(preparation.totals.uniqueMoves, 200);
+assert.equal(preparation.totals.movesJudgedAcrossPasses, 400);
 assert.equal(preparation.totals.maximumCopiedInputBytes <= 115000, true);
 assert.deepEqual(manifest.transport, preparation.transport);
 assert.equal(manifest.transport.identicalSchemaSubtreeInterningOnly, true);
@@ -267,8 +267,8 @@ console.log(
       status: "passed",
       debates: 10,
       contexts: 20,
-      uniqueMoves: 187,
-      movesJudgedAcrossPasses: 374,
+      uniqueMoves: 200,
+      movesJudgedAcrossPasses: 400,
       exactContextOrder: true,
       pairwiseInventoryAndSourceIdentity: true,
       canonicalEventProjectionReplay: true,
