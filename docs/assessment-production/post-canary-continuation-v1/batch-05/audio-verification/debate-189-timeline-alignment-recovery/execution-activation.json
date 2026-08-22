@@ -1,0 +1,282 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-189-audio-alignment-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-05-decomposed-consensus",
+  "status": "frozen-active-for-two-corrected-references-and-one-debate-189-correction-call",
+  "preparedAt": "2026-08-22T04:22:40.000Z",
+  "checkpointCommit": "848c6cfe447b6042d8cfc53ae1010c5179b93f96",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "correctionNumber": 1,
+  "userAuthorization": {
+    "instruction": "I approve/authorize the next step, interpreted as the exact bounded Debate 189 timeline-alignment and speaker-reference recovery quoted in the preceding assistant message.",
+    "additionalDirectIncrementalCostUsdMaximum": 0.15,
+    "expectedAdditionalUsageDerivedCostUsd": 0.07322,
+    "referenceWindowsAuthorized": 2,
+    "localFfmpegReferenceCreationAuthorized": true,
+    "audioPlaybackAuthorized": false,
+    "semanticAudioEvaluationAuthorized": false,
+    "correctionTranscriptionCallsAuthorized": 1,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "applyThreePriorFrozenOverlaysAfterCorrectionPass": true,
+    "completeSixResultReplayAfterCorrectionPass": true
+  },
+  "alignmentBasis": {
+    "canonicalCandidateDiscovery": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/discovery-outputs/debate-189-chunk-002.json",
+    "canonicalEvents": ".assessment-cache/captions/3DHvNRK452c/events.json",
+    "preservedTranscript": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/transcripts/con-simple-laws-beneath-cell-complexity.transcript.json",
+    "preservedTranscriptSha256": "714acc24092d86ca243cb69107200dda7e87a05300364eb5a160184742be917e",
+    "targetClip": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/clips/con-simple-laws-beneath-cell-complexity.mp3",
+    "targetClipSha256": "79a17e9136085342d31a10c5d58355e0c0b16d189162e755ba4e061e5a1695d8",
+    "canonicalYouTubeMillisecondsUsedForOriginalAlternateDeliveryReferences": true,
+    "correctedReferencesUseClipRelativeTextAlignment": true,
+    "semanticAudioEvaluationPerformed": false
+  },
+  "referenceWindows": [
+    {
+      "speaker": "James Tour",
+      "candidateId": "c002-05",
+      "canonicalSourceWindow": {
+        "startEvent": 1228,
+        "endEvent": 1275
+      },
+      "canonicalAttributionConfidence": "high",
+      "canonicalAttributionBasis": "After the moderator requests examples, Tour gives a continuous answer and then turns specifically to Cronin's redefinition before Cronin takes the floor.",
+      "deterministicSelectionRule": "longest-preserved-transcript-segment-of-at-least-eight-seconds-with-at-least-0.90-recall-to-one-high-attribution-canonical-candidate-span-and-at-least-0.15-recall-margin-over-the-other-span; ties-use-higher-recall-then-earlier-time-and-index",
+      "selectedTranscriptSegment": {
+        "segmentIndex": 16,
+        "segmentId": "seg_16",
+        "segmentStart": 76.212,
+        "segmentEnd": 96.31200000000001,
+        "durationSeconds": 20.10000000000001,
+        "preservedProviderLabel": "Lee Cronin",
+        "canonicalSpeakerRecall": 0.9607843137254902,
+        "competingSpeakerRecall": 0.5490196078431373,
+        "recallMargin": 0.4117647058823529
+      },
+      "clipRelativeStartSeconds": 82.262,
+      "requestedDurationSeconds": 8,
+      "sourceClipPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/clips/con-simple-laws-beneath-cell-complexity.mp3",
+      "sourceClipSha256": "79a17e9136085342d31a10c5d58355e0c0b16d189162e755ba4e061e5a1695d8",
+      "outputPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/james-tour.mp3"
+    },
+    {
+      "speaker": "Lee Cronin",
+      "candidateId": "c002-06",
+      "canonicalSourceWindow": {
+        "startEvent": 1276,
+        "endEvent": 1366
+      },
+      "canonicalAttributionConfidence": "high",
+      "canonicalAttributionBasis": "Cronin explicitly asks to respond and delivers a sustained methodological argument until the moderator begins a new question about Tour's earlier criticism.",
+      "deterministicSelectionRule": "longest-preserved-transcript-segment-of-at-least-eight-seconds-with-at-least-0.90-recall-to-one-high-attribution-canonical-candidate-span-and-at-least-0.15-recall-margin-over-the-other-span; ties-use-higher-recall-then-earlier-time-and-index",
+      "selectedTranscriptSegment": {
+        "segmentIndex": 38,
+        "segmentId": "seg_38",
+        "segmentStart": 172.436,
+        "segmentEnd": 197.686,
+        "durationSeconds": 25.25,
+        "preservedProviderLabel": "A",
+        "canonicalSpeakerRecall": 0.9882352941176471,
+        "competingSpeakerRecall": 0.36470588235294116,
+        "recallMargin": 0.6235294117647059
+      },
+      "clipRelativeStartSeconds": 181.061,
+      "requestedDurationSeconds": 8,
+      "sourceClipPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/clips/con-simple-laws-beneath-cell-complexity.mp3",
+      "sourceClipSha256": "79a17e9136085342d31a10c5d58355e0c0b16d189162e755ba4e061e5a1695d8",
+      "outputPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/lee-cronin.mp3"
+    }
+  ],
+  "correctionCall": {
+    "debateNumber": "189",
+    "debateId": "tour-cronin-origin-of-life-2020",
+    "moveId": "con-simple-laws-beneath-cell-complexity",
+    "expectedSpeaker": "Lee Cronin",
+    "verificationExcerpt": "a very good point I can be very constructive on and if I may just please do I don't know what like I don't even know if life really exists right that's a really massive physical discussion we even have another day what I think is really important is to say look if I looked at the asteroid belt right way and just zoomed in and I didn't do anything about the laws of gravity and I",
+    "clipPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/clips/con-simple-laws-beneath-cell-complexity.mp3",
+    "clipSha256": "79a17e9136085342d31a10c5d58355e0c0b16d189162e755ba4e061e5a1695d8",
+    "durationSeconds": 213.49,
+    "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/transcripts-correction-1/con-simple-laws-beneath-cell-complexity.transcript.json",
+    "model": "gpt-4o-transcribe-diarize",
+    "responseFormat": "diarized_json",
+    "chunkingStrategy": "auto",
+    "language": "en",
+    "knownSpeakerReferencePaths": [
+      "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/james-tour.mp3",
+      "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/lee-cronin.mp3"
+    ],
+    "knownSpeakers": [
+      {
+        "speaker": "James Tour",
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/james-tour.mp3",
+        "sha256": "58f55aee7080430e2a2f6cdf4c69f44face5a0bc022972f58f4918585420dd65",
+        "actualDurationSeconds": 8
+      },
+      {
+        "speaker": "Lee Cronin",
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/lee-cronin.mp3",
+        "sha256": "51b22d04569055ed54e28652ef59760f3c5916a2db23221c0a50ae5b6b1c5b3e",
+        "actualDurationSeconds": 8
+      }
+    ]
+  },
+  "priorReferenceOverlayPlan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/correction-plan.json",
+    "sha256": "2594036eb34e80e6ce3a77f9603c500eda149a1eb5a85a79fed8542cd3cf4fb0",
+    "activationEligibleOverlays": 3,
+    "blockedOverlayReplacedByCorrectionCall": "189:con-simple-laws-beneath-cell-complexity"
+  },
+  "transcriptLocks": [
+    {
+      "callIndex": 0,
+      "debateNumber": "158",
+      "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "moveId": "pro-case-specific-extraordinary-testimony-standard",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/pro-case-specific-extraordinary-testimony-standard.transcript.json",
+      "sha256": "c62e85c9ce10dcf58ed5b146cb38b8bed2cd74fa2d259f47d7d22987d3552ba9"
+    },
+    {
+      "callIndex": 1,
+      "debateNumber": "158",
+      "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "moveId": "con-unverified-resurrection-prior",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-unverified-resurrection-prior.transcript.json",
+      "sha256": "24e404e3aac5f0daa4a55b676eb8978a1cd21465f2b0a757627847452ba7ea59"
+    },
+    {
+      "callIndex": 2,
+      "debateNumber": "158",
+      "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "moveId": "con-no-presented-extrabiblical-support",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-no-presented-extrabiblical-support.transcript.json",
+      "sha256": "a1b799be5615e4c08413e505070ff1428f7c357740104b15c791e92fb4483d8a"
+    },
+    {
+      "callIndex": 3,
+      "debateNumber": "189",
+      "debateId": "tour-cronin-origin-of-life-2020",
+      "moveId": "con-simple-laws-beneath-cell-complexity",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/transcripts/con-simple-laws-beneath-cell-complexity.transcript.json",
+      "sha256": "714acc24092d86ca243cb69107200dda7e87a05300364eb5a160184742be917e"
+    },
+    {
+      "callIndex": 4,
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "moveId": "con-logical-grounding-burden",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/con-logical-grounding-burden.transcript.json",
+      "sha256": "c3b18268802569cf21f50920155165bc20d51fe1a097d26e3a3d4eebda33577a"
+    },
+    {
+      "callIndex": 5,
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "moveId": "pro-logic-reflects-gods-thinking",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/pro-logic-reflects-gods-thinking.transcript.json",
+      "sha256": "9e7641bfd7e320d3077b05a5c9dc4c080ccb84573aee19b4788913542c5f4184"
+    }
+  ],
+  "exactThresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "executionPolicy": {
+    "referenceCreationPassesMaximum": 1,
+    "correctionCallsMaximum": 1,
+    "attemptsPerCall": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveCorrectionsMaximum": 0,
+    "sequentialExecution": true,
+    "stopAfterRequestFailure": true,
+    "stopAfterAdditionalUsageDerivedCostAboveUsd": 0.15,
+    "originalTranscriptsReusableOnlyAsProtectedCohortInputs": true,
+    "failedCorrectionOutputReusable": false,
+    "originalAudioReferenceOrTranscriptWritesMaximum": 0,
+    "audioPlaybackCallsMaximum": 0,
+    "semanticAudioEvaluationsMaximum": 0,
+    "judgmentModelContextsMaximum": 0,
+    "scoresDerivedMaximum": 0
+  },
+  "outputs": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/debate-189-timeline-alignment-recovery/execution-activation.json",
+    "references": [
+      "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/james-tour.mp3",
+      "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/lee-cronin.mp3"
+    ],
+    "correctionTranscript": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/transcripts-correction-1/con-simple-laws-beneath-cell-complexity.transcript.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/debate-189-timeline-alignment-recovery/model-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/debate-189-timeline-alignment-recovery/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/debate-189-timeline-alignment-recovery/analysis.json",
+    "cost": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/debate-189-timeline-alignment-recovery/cost-control-analysis.json"
+  },
+  "sourceHashes": {
+    "scripts/assessment-production-post-canary-batch-05-debate-189-audio-alignment-recovery.mjs": "ade8a59bdb17e2fcd0cc9054b1bc3edc3f16f1e4b1da9db07d5bde9bf038415d",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685",
+    "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py": "d623b1fed1491b7ca4b7b5b393089165e3581a83d90d5a57868241f1b2a5d951",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/execution-manifest.json": "58df5bc0ec550e84e41ff1835d033a16a86400c961c4e1dbbff8ea8131deb444",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/model-execution.json": "d0df7c12abd9a9da63b0c89dee33a5567a55283985ac2fb0b50f2148150c480e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/audio-verification.json": "5dc1acd3e56e91c9fe7bc9ce02daf8bdeffd0bdd2d5367e07babd7239d5ae26f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/analysis.json": "378c3da31625fca292cb9bc105a9309f251c9005405a8a657d0712078f254eff",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/cost-control-analysis.json": "50f3fff123cff0c765949e724392438a039aa27f4f919e78fa96d24dcc478d82",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/failure-diagnosis.json": "bdc8a8a5057df5aaec9f90dc2cb7148c2f373c9def43af162bbc3b2bae581d51",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/correction-plan.json": "2594036eb34e80e6ce3a77f9603c500eda149a1eb5a85a79fed8542cd3cf4fb0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/discovery-outputs/debate-189-chunk-002.json": "5ac71cbfcbfab7487fd74967b569d70922922cea11ef2a05e7016ccb8de234a4",
+    ".assessment-cache/captions/3DHvNRK452c/events.json": "5a1e21d8a1e796f403839a938f8d42487b71419a82f5f64109a09ac2c461b762",
+    ".assessment-cache/captions/3DHvNRK452c/transcript.txt": "57fdb4178e04382fa8699406f9da3b649540d763ee639090325f9576983a189d",
+    ".assessment-cache/captions/3DHvNRK452c/manifest.json": "316cf97298bce0082694a35851bde16efd0f805f4ef3a68023c8036fe80855fe",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/clips/con-simple-laws-beneath-cell-complexity.mp3": "79a17e9136085342d31a10c5d58355e0c0b16d189162e755ba4e061e5a1695d8",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references/james-tour.mp3": "6966f38b07fd7e7af0228eb51bd777a78fc5e3a28715103e277908419d27f46d",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references/lee-cronin.mp3": "f5ca6010f81661e87bbb899bb6b1a6f201335f26bc15c20d54441287682836ad"
+  },
+  "nextAction": "execute-exactly-one-debate-189-correction-transcription-call",
+  "activatedAt": "2026-08-22T04:22:59.000Z",
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/debate-189-timeline-alignment-recovery/plan.json",
+    "sha256": "c2d80f2c58ef85ed19f53a1bd5c666282bf8f3d448a3fec0179a28b9cc6771da"
+  },
+  "correctedReferences": [
+    {
+      "speaker": "James Tour",
+      "localPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/james-tour.mp3",
+      "sha256": "58f55aee7080430e2a2f6cdf4c69f44face5a0bc022972f58f4918585420dd65",
+      "actualDurationSeconds": 8,
+      "clipRelativeStartSeconds": 82.262,
+      "sourceClipPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/clips/con-simple-laws-beneath-cell-complexity.mp3",
+      "sourceClipSha256": "79a17e9136085342d31a10c5d58355e0c0b16d189162e755ba4e061e5a1695d8"
+    },
+    {
+      "speaker": "Lee Cronin",
+      "localPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/references-correction-1/lee-cronin.mp3",
+      "sha256": "51b22d04569055ed54e28652ef59760f3c5916a2db23221c0a50ae5b6b1c5b3e",
+      "actualDurationSeconds": 8,
+      "clipRelativeStartSeconds": 181.061,
+      "sourceClipPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/clips/con-simple-laws-beneath-cell-complexity.mp3",
+      "sourceClipSha256": "79a17e9136085342d31a10c5d58355e0c0b16d189162e755ba4e061e5a1695d8"
+    }
+  ],
+  "executionAuthorization": {
+    "correctionCallExecution": true,
+    "deterministicCorrectionValidation": true,
+    "threePriorOverlays": true,
+    "completeSixResultReplay": true,
+    "costAnalysis": true,
+    "commitAndPush": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "recursiveCorrection": false,
+    "audioPlayback": false,
+    "semanticAudioEvaluation": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
