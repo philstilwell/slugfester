@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-preparation-correction-1-activation",
+  "status": "frozen-batch-05-compatibility-preparation-correction-1-authorized",
+  "activatedAt": "2026-08-22T15:15:44.000Z",
+  "checkpointCommit": "bb01004477a14a4855337739e8edceb7b4595337",
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-1/correction-plan.json",
+    "sha256": "441e9215aed62438f4bc2611cb5c4a971c6a98d1133ee07d3341fd01aaeca3d7",
+    "bytes": 3580
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-manifest.json": "79079f61bc4c800092017a3c21fa2e8b352f379b2ce85090abb5e6ada0638efd",
+    "scripts/test-assessment-production-post-canary-batch-05-compatibility-preparation.mjs": "06670bcd1ed60ccc3973b13d96491c0a8c9df5967d8496f26314350b29c8ad0d",
+    "scripts/prepare-assessment-production-post-canary-batch-05-compatibility-preparation-correction-1.mjs": "609695371cc6d9c9261ba6dce2e4865f9c043f07335a95a7ce828f126bffaa23",
+    "scripts/activate-assessment-production-post-canary-batch-05-compatibility-preparation-correction-1.mjs": "04abedcdfabeba84ad0434710b1eddb3e0349ed5a75957aa7229984bf54beb36",
+    "scripts/run-assessment-production-post-canary-batch-05-compatibility-preparation-correction-1.mjs": "1605c9ad5fe02b9feeac406662da6c4c21338ee1a092fcaa9482230b2bc6e376"
+  },
+  "proposed": {
+    "test": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-1/proposed-test.mjs",
+      "sha256": "7e2ca37a29348ab1a7630c9bb55b24f76bb54256ebc3bc239a74b4ae6fb5ccef",
+      "bytes": 9450
+    },
+    "preparation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-1/proposed-preparation-manifest.json",
+      "sha256": "51d9ecce99e62dc984fc97be35cc431239ae7bddb2be25ffba22713d4f551ea0",
+      "bytes": 27155
+    }
+  },
+  "correctionScope": {
+    "test": "scripts/test-assessment-production-post-canary-batch-05-compatibility-preparation.mjs",
+    "oldExpectedCount": 8,
+    "newExpectedCount": 9,
+    "writableAssertions": 1,
+    "preparationManifest": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-manifest.json",
+    "authenticatedSourceHashUpdates": 1,
+    "allOtherManifestFieldsPreserved": true
+  },
+  "executionPolicy": {
+    "correctedValidationPassesMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "authorization": {
+    "deterministicHarnessCorrection": true,
+    "correctedValidationPass": true,
+    "compatibilityActivation": false,
+    "compatibilityExecution": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextRequiredAction": "execute-one-batch-05-compatibility-preparation-correction-1-validation-pass"
+}
