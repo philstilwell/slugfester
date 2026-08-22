@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-audio-verification-audit",
+  "protocolId": "assessment-production-post-canary-batch-06-decomposed-consensus",
+  "status": "passed-all-two-batch-06-audio-attributions-after-empty-segment-overlay",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "correction": {
+    "number": 1,
+    "operation": "omit-exactly-two-frozen-empty-segment-objects-from-transient-validation-copy",
+    "targetMoveId": "con-classical-suppression-and-absorption",
+    "omittedSegmentIndexes": [
+      52,
+      110
+    ],
+    "transientOverlayApplications": 1,
+    "persistentTranscriptWrites": 0,
+    "allOriginalTranscriptsUnchanged": true
+  },
+  "debates": [
+    {
+      "debateNumber": "97",
+      "debateId": "holland-grayling-christianity-human-values-2019",
+      "moves": [
+        {
+          "debateNumber": "97",
+          "debateId": "holland-grayling-christianity-human-values-2019",
+          "moveId": "con-classical-suppression-and-absorption",
+          "expectedSpeaker": "A. C. Grayling",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "medium",
+            "passBAttributionConfidence": "medium",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": true
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "A. C. Grayling",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/clips/con-classical-suppression-and-absorption.mp3",
+            "sha256": "48d9a8e3525f932d117708a8242ed980ce029e02a882d5a8f6625c0e316ae935",
+            "durationSeconds": 274.610938
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/transcripts/con-classical-suppression-and-absorption.transcript.json",
+            "sha256": "2d707c9dfd5683a6ebf4b3ad6a3274dd415c0516efd80d094b9e9fa1e665c785",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "persistentMutation": false
+          },
+          "validationOverlay": {
+            "operation": "omit-exactly-two-frozen-empty-segment-objects-from-transient-validation-copy",
+            "omittedSegmentIndexes": [
+              52,
+              110
+            ],
+            "originalSegmentCount": 123,
+            "validationSegmentCount": 121,
+            "persistentTranscriptWritten": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "A. C. Grayling",
+            "fullClipExcerptRecall": 0.958904109589041,
+            "expectedSpeakerExcerptRecall": 0.958904109589041,
+            "highestOtherSpeaker": "Tom Holland",
+            "highestOtherSpeakerExcerptRecall": 0.3150684931506849,
+            "expectedSpeakerRecallMargin": 0.6438356164383561,
+            "expectedSpeakerDurationSeconds": 245.95,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "A. C. Grayling",
+                "segmentCount": 71,
+                "durationSeconds": 245.95,
+                "wordCount": 835,
+                "excerptRecall": 0.958904109589041
+              },
+              {
+                "speaker": "Tom Holland",
+                "segmentCount": 43,
+                "durationSeconds": 22.05,
+                "wordCount": 131,
+                "excerptRecall": 0.3150684931506849
+              },
+              {
+                "speaker": "B",
+                "segmentCount": 4,
+                "durationSeconds": 0.75,
+                "wordCount": 11,
+                "excerptRecall": 0.0410958904109589
+              },
+              {
+                "speaker": "C",
+                "segmentCount": 1,
+                "durationSeconds": 0.2,
+                "wordCount": 1,
+                "excerptRecall": 0
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 0.15,
+                "wordCount": 1,
+                "excerptRecall": 0
+              },
+              {
+                "speaker": "D",
+                "segmentCount": 1,
+                "durationSeconds": 0.1,
+                "wordCount": 1,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "97",
+          "debateId": "holland-grayling-christianity-human-values-2019",
+          "moveId": "pro-secularism-theological-descent",
+          "expectedSpeaker": "Tom Holland",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "medium",
+            "passBAttributionConfidence": "medium",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": true
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Tom Holland",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/clips/pro-secularism-theological-descent.mp3",
+            "sha256": "e20ccb84c243f989105741352c586058f94025a813c6ee1889afe4a1b6cfd108",
+            "durationSeconds": 31.64
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/transcripts/pro-secularism-theological-descent.transcript.json",
+            "sha256": "429b174c128edf5bebc445e5b7bfd9a636ee21cac4661594f1d52c4040cd20c5",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "persistentMutation": false
+          },
+          "validationOverlay": null,
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Tom Holland",
+            "fullClipExcerptRecall": 0.8923076923076924,
+            "expectedSpeakerExcerptRecall": 0.8,
+            "highestOtherSpeaker": "A. C. Grayling",
+            "highestOtherSpeakerExcerptRecall": 0.24615384615384617,
+            "expectedSpeakerRecallMargin": 0.5538461538461539,
+            "expectedSpeakerDurationSeconds": 21.35,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Tom Holland",
+                "segmentCount": 14,
+                "durationSeconds": 21.35,
+                "wordCount": 91,
+                "excerptRecall": 0.8
+              },
+              {
+                "speaker": "A. C. Grayling",
+                "segmentCount": 12,
+                "durationSeconds": 9.5,
+                "wordCount": 46,
+                "excerptRecall": 0.24615384615384617
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "97",
+        "speaker": "Tom Holland",
+        "selectedMoveId": "pro-transformed-universal-kinship",
+        "selectedMoveSourceSpan": {
+          "startEvent": 411,
+          "endEvent": 537
+        },
+        "selectedMoveDurationSeconds": 340.58,
+        "startSeconds": 1196.03,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/references/tom-holland.mp3",
+        "sha256": "063c8e2360cce96b4260e8b39ca935f8879bf26512be88109fde0494c318c82d"
+      },
+      {
+        "debateNumber": "97",
+        "speaker": "A. C. Grayling",
+        "selectedMoveId": "con-axial-classical-ethical-origins",
+        "selectedMoveSourceSpan": {
+          "startEvent": 872,
+          "endEvent": 993
+        },
+        "selectedMoveDurationSeconds": 301.919,
+        "startSeconds": 2298.11,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/references/a-c-grayling.mp3",
+        "sha256": "795ec56f309b7be7793fe71dc38b52814356de3e719ded9808a4280787d03602"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 2,
+    "verified": 2,
+    "unresolved": 0,
+    "paidDiarizationCallsAttempted": 2,
+    "paidDiarizationCallsCompleted": 2,
+    "callsSkipped": 0,
+    "retries": 0,
+    "corrections": 1,
+    "deterministicReplayPasses": 1,
+    "clipMinutes": 5.1042,
+    "durationOnlyPlanningExposureUsd": 0.0306,
+    "usageDerivedEstimatedCostUsd": 0.1127375,
+    "actualBilledCostUsdAvailable": false,
+    "maximumAuthorizedCostUsd": 1,
+    "directIncrementalCostCapControlPassed": true,
+    "directIncrementalCostUsdThisStage": 0,
+    "judgmentModelContexts": 0,
+    "adjudicationModelContexts": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": true,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
