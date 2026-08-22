@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.0-assessment-production-post-canary-batch-06-audio-validation-correction-1-execution-activation",
   "protocolId": "assessment-production-post-canary-batch-06-decomposed-consensus",
-  "status": "frozen-batch-06-audio-validation-correction-1-prepared-not-active",
+  "status": "frozen-batch-06-audio-validation-correction-1-authorized-under-standing-authorization",
   "preparedAt": "2026-08-22T23:10:00.000Z",
-  "activatedAt": null,
+  "activatedAt": "2026-08-22T23:15:00.000Z",
   "productionCanary": false,
   "batchNumber": 6,
   "correctionNumber": 1,
@@ -143,12 +143,12 @@
     "cost": "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/cost-control-analysis.json"
   },
   "authorization": {
-    "correctionExecution": false,
-    "cohortReplay": false,
+    "correctionExecution": true,
+    "cohortReplay": true,
     "audioAccess": false,
     "modelExecution": false,
     "paidServiceUse": false,
-    "downstreamWork": false
+    "downstreamWork": true
   },
-  "nextAuthorizedAction": "activate-one-frozen-batch-06-deterministic-audio-validation-correction-pass"
+  "nextAuthorizedAction": "execute-exactly-one-batch-06-audio-validation-correction-1-pass"
 }
