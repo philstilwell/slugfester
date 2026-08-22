@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0-assessment-production-authorized-final-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-06-inventory-preparation-final-recovery",
+  "status": "batch-06-inventory-preparation-final-recovery-frozen-not-activated",
+  "frozenAt": "2026-08-22T20:52:00.000Z",
+  "checkpointCommit": "80fab5bfef663b653de6cf1cc9de2a982956e438",
+  "branch": "main",
+  "userAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-final-recovery/user-authorization.txt",
+  "priorStopDiagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-stop-diagnosis.json",
+    "sha256": "37ba5c5306d6c900ed98ebf43a690a8ee2d292ad43f93670ccf31231024800cc"
+  },
+  "protectedSelection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/selection.json",
+    "sha256": "2dbf2e111715ba22ee161bfd23e33a3ef1051c377d35705f6cf74e7946448932",
+    "writeAuthorized": false
+  },
+  "correction": {
+    "target": "scripts/prepare-assessment-production-post-canary-batch-06-inventory.mjs",
+    "preimageSha256": "cd2cb5c41ab734113723d81527d322ffba469ae33689e76908100fbf5934bd27",
+    "proposal": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-final-recovery/proposed-preparation.mjs",
+    "proposalSha256": "af84b1078c82bc6c52211a22ce28ecab8191fb1420526fff2727c41cc0844599",
+    "exactReplacement": {
+      "from": "fifth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+      "to": "sixth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+      "occurrences": 1
+    },
+    "otherChangesAuthorized": false
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "timeoutExtensions": 0,
+    "additionalRecoveriesForThisProblem": 0,
+    "correctedPreparationPreviews": 1,
+    "models": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "successContinuation": "resume-existing-batch-06-standing-authorization",
+  "failureAction": "preserve-diagnosis-commit-push-and-stop"
+}
