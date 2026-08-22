@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-assessment-production-authorized-final-recovery-execution",
+  "protocolId": "assessment-production-post-canary-batch-06-inventory-preparation-final-recovery",
+  "status": "batch-06-inventory-preparation-final-recovery-executed-passed",
+  "executedAt": "2026-08-22T20:55:00.000Z",
+  "attempt": 1,
+  "correction": {
+    "target": "scripts/prepare-assessment-production-post-canary-batch-06-inventory.mjs",
+    "resultSha256": "af84b1078c82bc6c52211a22ce28ecab8191fb1420526fff2727c41cc0844599",
+    "writtenByteForByteFromFrozenProposal": true,
+    "replacementCount": 1
+  },
+  "protectedSelection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/selection.json",
+    "sha256Before": "2dbf2e111715ba22ee161bfd23e33a3ef1051c377d35705f6cf74e7946448932",
+    "sha256After": "2dbf2e111715ba22ee161bfd23e33a3ef1051c377d35705f6cf74e7946448932",
+    "byteIdentical": true
+  },
+  "correctedPreview": {
+    "attempts": 1,
+    "exitCode": 0,
+    "debates": 10,
+    "candidates": 376,
+    "proCandidates": 189,
+    "conCandidates": 187,
+    "plannerContexts": 10,
+    "sideTransports": 20,
+    "maximumPlannerCopiedInputBytes": 59201,
+    "copiedInputBytesCeiling": 115000,
+    "schedulerRamp": [1, 2]
+  },
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}
