@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-activation-harness-diagnosis",
+  "status": "frozen-batch-05-correction-2-activation-preflight-file-versus-field-hash-error-diagnosed",
+  "diagnosedAt": "2026-08-22T15:26:19.000Z",
+  "checkpointCommit": "cc770abbc4f88fd8b7edcaa8de9d4396a56d4fc1",
+  "failedCommand": "node scripts/activate-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs --activated-at 2026-08-22T15:24:11.000Z",
+  "failure": {
+    "category": "deterministic-activation-preflight-file-hash-versus-json-field-hash-comparison",
+    "exitCode": 1,
+    "message": "correction-2 preimage or proposed hash is unauthenticated",
+    "invalidComparison": "SHA-256 of the complete analysis.json file compared with the old preparation.sha256 field value",
+    "requiredComparison": "analysis.json preparation.sha256 field compared with the frozen old field value"
+  },
+  "writesBeforeFailure": 0,
+  "correction2ActivationCreated": false,
+  "proposedAnalysisChanged": false,
+  "modelContexts": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}

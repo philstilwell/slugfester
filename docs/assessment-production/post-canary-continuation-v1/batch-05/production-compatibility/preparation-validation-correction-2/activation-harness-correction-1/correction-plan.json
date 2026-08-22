@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-activation-harness-correction-1-plan",
+  "status": "frozen-batch-05-correction-2-activation-harness-correction-1-prepared",
+  "frozenAt": "2026-08-22T15:26:19.000Z",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/activation-harness-correction-1/diagnosis.json",
+    "sha256": "06e689ea74374ce9811f212fae8c1990f35c2bc731afd6082b03bc85e8d86b3b"
+  },
+  "correctionScope": {
+    "targetScript": "scripts/activate-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs",
+    "exactFaultyExpression": "plan.sourceHashes[plan.correctionScope.target] !== plan.correctionScope.oldSha256",
+    "exactCorrectedExpression": "JSON.parse(await readFile(plan.correctionScope.target)).preparation?.sha256 !==\n+    plan.correctionScope.oldSha256",
+    "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/correction-plan.json",
+    "authenticatedSourceHashUpdates": 1,
+    "writableHarnessExpressions": 1,
+    "proposedAnalysisPreserved": true,
+    "correction2TargetPreserved": true
+  },
+  "proposed": {
+    "activationScript": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/activation-harness-correction-1/proposed-activation-script.mjs",
+      "sha256": "f1cc6a37cef6c62c3c3876846d8c68d227797f04d86e128ea41c10ede404fe4a",
+      "bytes": 3704
+    },
+    "correctionPlan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/activation-harness-correction-1/proposed-correction-plan.json",
+      "sha256": "96f116328f36b48f9fe2c21ee3bdd2bed6b1e2cbcd221ea62f792aa7324973d2",
+      "bytes": 4255
+    }
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/correction-plan.json": "b6d05c4844ab2944827b1f9715b9745fcf67f81a6e6307368650cfe8f1574deb",
+    "scripts/activate-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2.mjs": "63690b2a7cab383493f32281b067f0654d614ed56b3d1a9dba70f3b211231fa9",
+    "scripts/prepare-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-activation-harness-correction-1.mjs": "68380fdc378c971a9982fb53f751f50b4edb4e1fc77fcf8f2d614f2f64b3454e",
+    "scripts/activate-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-activation-harness-correction-1.mjs": "3eefb05262f3b56f7853a211bac2229e75c7a05ec205de0b918b0d8e6a54ec1a",
+    "scripts/run-assessment-production-post-canary-batch-05-compatibility-preparation-correction-2-activation-harness-correction-1.mjs": "5389776da015bf0e5efb2c4d49cef75483308788f92b10ae38f8e21886195973"
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0
+  },
+  "artifacts": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/activation-harness-correction-1/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/activation-harness-correction-1/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-05/production-compatibility/preparation-validation-correction-2/activation-harness-correction-1/analysis.json"
+  },
+  "nextAuthorizedAction": "activate-one-batch-05-correction-2-activation-harness-correction-1-pass"
+}
