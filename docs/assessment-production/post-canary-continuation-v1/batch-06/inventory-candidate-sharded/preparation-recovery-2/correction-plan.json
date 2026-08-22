@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-06-inventory-preparation-recovery-2",
+  "status": "batch-06-inventory-preparation-recursive-correction-frozen-not-executed",
+  "frozenAt": "2026-08-22T20:47:00.000Z",
+  "recoveryLevel": 2,
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-recovery-2/diagnosis.json",
+  "correction": {
+    "target": "scripts/prepare-assessment-production-post-canary-batch-06-inventory.mjs",
+    "oldSha256": "d9cd7edafe938158db741bc3c84efc90be7815ebfb426a3cb28321a830555996",
+    "proposal": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/preparation-recovery-2/proposed-preparation.mjs",
+    "proposalSha256": "cd2cb5c41ab734113723d81527d322ffba469ae33689e76908100fbf5934bd27",
+    "exactChange": {
+      "from": "forty-one-post-canary-batch-06-discovery-contexts-passed",
+      "to": "thirty-nine-post-canary-batch-06-discovery-contexts-passed",
+      "occurrences": 1
+    }
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "furtherRecursiveCorrections": 0,
+    "previewValidationPasses": 1,
+    "models": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAction": "activate-and-execute-correction-2-once"
+}

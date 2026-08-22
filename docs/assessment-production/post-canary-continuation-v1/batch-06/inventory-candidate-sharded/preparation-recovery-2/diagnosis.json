@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-06-inventory-preparation-recovery-2",
+  "status": "batch-06-inventory-preparation-recursive-failure-diagnosed",
+  "diagnosedAt": "2026-08-22T20:46:00.000Z",
+  "recoveryLevel": 2,
+  "failureCategory": "deterministic-stale-discovery-execution-status-expectation",
+  "observedStatus": "thirty-nine-post-canary-batch-06-discovery-contexts-passed",
+  "staleExpectedStatus": "forty-one-post-canary-batch-06-discovery-contexts-passed",
+  "rootCause": "The Batch 6 inventory preparation harness correctly updated all numeric discovery counts to 39 but retained the Batch 5 word-form status prefix in one assertion.",
+  "scope": {
+    "filesProvenAtFault": [
+      "scripts/prepare-assessment-production-post-canary-batch-06-inventory.mjs"
+    ],
+    "fieldsProvenAtFault": [
+      "discoveryExecution.status expected literal"
+    ],
+    "guideCorrectionPreserved": true,
+    "guideSha256": "85b4e01157b0e0299a0ac482b692ddf9260dff7f91fd444665923491d247cb51",
+    "discoveryOutputsChanged": false,
+    "inventoryArtifactsWritten": 0,
+    "modelsExecuted": 0,
+    "paidServicesUsed": 0
+  },
+  "stopControl": "No further recovery is authorized for this underlying Batch 6 inventory-preparation problem if correction-2 fails."
+}
