@@ -1,0 +1,357 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-audio-verification-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-05-decomposed-consensus",
+  "status": "blocked-before-activation-three-reference-overlays-viable-debate-189-reference-not-distinct",
+  "preparedAt": "2026-08-22T04:14:58.000Z",
+  "checkpointCommit": "32a884f0a6cdab73229c9ec98de0291a8532e46d",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "userAuthorization": {
+    "instruction": "I approve/authorize the next step, interpreted as deterministic diagnosis and automatic first bounded recovery only if every gate passes.",
+    "directIncrementalCostUsdMaximum": 0,
+    "planPreparationAuthorized": true,
+    "correctionExecutionAuthorizedOnlyIfCompleteFourMovePlanPasses": true,
+    "audioAccessAuthorized": false,
+    "modelOrApiCallsAuthorized": false,
+    "paidServiceAuthorized": false,
+    "sourceSpeakerTranscriptThresholdJudgmentOrScoreMutationAuthorized": false
+  },
+  "sourceRecords": {
+    "request": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/execution-manifest.json",
+      "sha256": "58df5bc0ec550e84e41ff1835d033a16a86400c961c4e1dbbff8ea8131deb444"
+    },
+    "execution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/model-execution.json",
+      "sha256": "d0df7c12abd9a9da63b0c89dee33a5567a55283985ac2fb0b50f2148150c480e"
+    },
+    "audit": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/audio-verification.json",
+      "sha256": "5dc1acd3e56e91c9fe7bc9ce02daf8bdeffd0bdd2d5367e07babd7239d5ae26f"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/analysis.json",
+      "sha256": "378c3da31625fca292cb9bc105a9309f251c9005405a8a657d0712078f254eff"
+    },
+    "cost": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/cost-control-analysis.json",
+      "sha256": "50f3fff123cff0c765949e724392438a039aa27f4f919e78fa96d24dcc478d82"
+    },
+    "diagnosis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/failure-diagnosis.json",
+      "sha256": "bdc8a8a5057df5aaec9f90dc2cb7148c2f373c9def43af162bbc3b2bae581d51"
+    },
+    "attributionValidator": {
+      "path": "scripts/lib/v416-audio-verification.mjs",
+      "sha256": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7"
+    },
+    "routeDiscovery": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-3/route-discovery.json",
+      "sha256": "8e3b0b79488e0fc9b9284a19cbf86d17b663f81ac69dcf3012d9384f623aab53"
+    },
+    "audioRecoveryPlan": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-3/correction-plan.json",
+      "sha256": "f0b80fc8e5106128cde4920204c2480eb54ac0bed467a77c1c5af3910b16b2f9"
+    },
+    "audioRecoveryExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-3/execution.json",
+      "sha256": "016f5a3afc97a732cee9e07c6fde94551b30b4aa7c56467fd40039976fe69656"
+    },
+    "audioSourcePreparation": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-preparation.json",
+      "sha256": "290a0904aa23717116138d35245204a81a66ae7cccec0809feb30f884bff3e7a"
+    }
+  },
+  "transcriptLocks": [
+    {
+      "callIndex": 0,
+      "debateNumber": "158",
+      "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "moveId": "pro-case-specific-extraordinary-testimony-standard",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/pro-case-specific-extraordinary-testimony-standard.transcript.json",
+      "sha256": "c62e85c9ce10dcf58ed5b146cb38b8bed2cd74fa2d259f47d7d22987d3552ba9"
+    },
+    {
+      "callIndex": 1,
+      "debateNumber": "158",
+      "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "moveId": "con-unverified-resurrection-prior",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-unverified-resurrection-prior.transcript.json",
+      "sha256": "24e404e3aac5f0daa4a55b676eb8978a1cd21465f2b0a757627847452ba7ea59"
+    },
+    {
+      "callIndex": 2,
+      "debateNumber": "158",
+      "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "moveId": "con-no-presented-extrabiblical-support",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-no-presented-extrabiblical-support.transcript.json",
+      "sha256": "a1b799be5615e4c08413e505070ff1428f7c357740104b15c791e92fb4483d8a"
+    },
+    {
+      "callIndex": 3,
+      "debateNumber": "189",
+      "debateId": "tour-cronin-origin-of-life-2020",
+      "moveId": "con-simple-laws-beneath-cell-complexity",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/transcripts/con-simple-laws-beneath-cell-complexity.transcript.json",
+      "sha256": "714acc24092d86ca243cb69107200dda7e87a05300364eb5a160184742be917e"
+    },
+    {
+      "callIndex": 4,
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "moveId": "con-logical-grounding-burden",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/con-logical-grounding-burden.transcript.json",
+      "sha256": "c3b18268802569cf21f50920155165bc20d51fe1a097d26e3a3d4eebda33577a"
+    },
+    {
+      "callIndex": 5,
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "moveId": "pro-logic-reflects-gods-thinking",
+      "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/pro-logic-reflects-gods-thinking.transcript.json",
+      "sha256": "9e7641bfd7e320d3077b05a5c9dc4c080ccb84573aee19b4788913542c5f4184"
+    }
+  ],
+  "proposedReferenceOverlays": [
+    {
+      "operation": "replace-only-transient-verification-reference",
+      "targetCallIndex": 1,
+      "targetDebateNumber": "158",
+      "targetDebateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "targetMoveId": "con-unverified-resurrection-prior",
+      "field": "verificationExcerpt",
+      "expectedSpeaker": "Matt Dillahunty",
+      "originalValueSha256": "93d8fc2b398f5cf86c75efa683c1733a55b96ed2325dcbe0edbb7c3506c0f50f",
+      "originalLexicalTokenCount": 77,
+      "replacementValue": "and then comes back to life that we can actually verify",
+      "replacementValueSha256": "90aa006e150fa113da63c8d1690a395a2050ae296f4f5978058cb1a303564262",
+      "replacementLexicalTokenCount": 11,
+      "replacementStartCharacter": 76,
+      "replacementIsExactSubstringOfOriginal": true,
+      "deterministicSelectionRule": "longest contiguous lexical sequence, capped at 18 tokens, shared by the frozen source reference and one preserved segment labeled as the expected speaker; ties use earliest source position then earliest segment index",
+      "replacementSupport": {
+        "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-unverified-resurrection-prior.transcript.json",
+        "transcriptSha256": "24e404e3aac5f0daa4a55b676eb8978a1cd21465f2b0a757627847452ba7ea59",
+        "segmentIndex": 14,
+        "segmentId": "seg_14",
+        "preservedSpeakerLabel": "Matt Dillahunty",
+        "start": 72.672,
+        "end": 75.572
+      },
+      "nonauthoritativePlanningProjection": {
+        "expectedSpeakerExcerptRecall": 1,
+        "highestOtherSpeaker": "Dr Jonathan McLatchie",
+        "highestOtherSpeakerExcerptRecall": 0.5454545454545454,
+        "expectedSpeakerRecallMargin": 0.4545454545454546,
+        "frozenRecallChecksSatisfiedNumerically": true,
+        "semanticSpeakerIdentityProved": false
+      },
+      "activationEligible": true,
+      "deltaSha256": "f4d2ff7c7568f8868485d0be3818d8d2154afbbb527729ed90bf808b27baced7",
+      "originalRequestWrite": false,
+      "originalTranscriptWrite": false,
+      "validatorWrite": false,
+      "thresholdWrite": false,
+      "correctionExecutedThisStage": false
+    },
+    {
+      "operation": "replace-only-transient-verification-reference",
+      "targetCallIndex": 3,
+      "targetDebateNumber": "189",
+      "targetDebateId": "tour-cronin-origin-of-life-2020",
+      "targetMoveId": "con-simple-laws-beneath-cell-complexity",
+      "field": "verificationExcerpt",
+      "expectedSpeaker": "Lee Cronin",
+      "originalValueSha256": "e01758ed1a38055892de4e97b2536fa16fd51779912115df1a06d2ebac70d7f7",
+      "originalLexicalTokenCount": 77,
+      "replacementValue": "what I",
+      "replacementValueSha256": "7152cc3ae9db290a2517b8eece4d63f5e678d70c24fca4746f87caef72d1deba",
+      "replacementLexicalTokenCount": 2,
+      "replacementStartCharacter": 214,
+      "replacementIsExactSubstringOfOriginal": true,
+      "deterministicSelectionRule": "longest contiguous lexical sequence, capped at 18 tokens, shared by the frozen source reference and one preserved segment labeled as the expected speaker; ties use earliest source position then earliest segment index",
+      "replacementSupport": {
+        "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/transcripts/con-simple-laws-beneath-cell-complexity.transcript.json",
+        "transcriptSha256": "714acc24092d86ca243cb69107200dda7e87a05300364eb5a160184742be917e",
+        "segmentIndex": 21,
+        "segmentId": "seg_21",
+        "preservedSpeakerLabel": "Lee Cronin",
+        "start": 121.748,
+        "end": 124.14800000000001
+      },
+      "nonauthoritativePlanningProjection": {
+        "expectedSpeakerExcerptRecall": 1,
+        "highestOtherSpeaker": "A",
+        "highestOtherSpeakerExcerptRecall": 1,
+        "expectedSpeakerRecallMargin": 0,
+        "frozenRecallChecksSatisfiedNumerically": false,
+        "semanticSpeakerIdentityProved": false
+      },
+      "activationEligible": false,
+      "deltaSha256": "f68dc3ccf7dd267b530b3bf561ba271b21171c962bdb0cec6c0655796e7265e8",
+      "originalRequestWrite": false,
+      "originalTranscriptWrite": false,
+      "validatorWrite": false,
+      "thresholdWrite": false,
+      "correctionExecutedThisStage": false
+    },
+    {
+      "operation": "replace-only-transient-verification-reference",
+      "targetCallIndex": 4,
+      "targetDebateNumber": "05",
+      "targetDebateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "targetMoveId": "con-logical-grounding-burden",
+      "field": "verificationExcerpt",
+      "expectedSpeaker": "Matt Dillahunty",
+      "originalValueSha256": "c9400d391ff0174983dd1057f0574111f3e0204b05f878e14372476162cd502a",
+      "originalLexicalTokenCount": 83,
+      "replacementValue": "would be a fallacy if I was asserting that you were wrong",
+      "replacementValueSha256": "861962176ae8769846442c89caf59312746f7ea824ea5d21cd98fa6b0e7ac807",
+      "replacementLexicalTokenCount": 12,
+      "replacementStartCharacter": 250,
+      "replacementIsExactSubstringOfOriginal": true,
+      "deterministicSelectionRule": "longest contiguous lexical sequence, capped at 18 tokens, shared by the frozen source reference and one preserved segment labeled as the expected speaker; ties use earliest source position then earliest segment index",
+      "replacementSupport": {
+        "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/con-logical-grounding-burden.transcript.json",
+        "transcriptSha256": "c3b18268802569cf21f50920155165bc20d51fe1a097d26e3a3d4eebda33577a",
+        "segmentIndex": 16,
+        "segmentId": "seg_16",
+        "preservedSpeakerLabel": "Matt Dillahunty",
+        "start": 26.188,
+        "end": 30.088
+      },
+      "nonauthoritativePlanningProjection": {
+        "expectedSpeakerExcerptRecall": 1,
+        "highestOtherSpeaker": "Sye Ten Bruggencate",
+        "highestOtherSpeakerExcerptRecall": 0.5,
+        "expectedSpeakerRecallMargin": 0.5,
+        "frozenRecallChecksSatisfiedNumerically": true,
+        "semanticSpeakerIdentityProved": false
+      },
+      "activationEligible": true,
+      "deltaSha256": "33f2a69e39fd1680d996ca8c3f6b52439e9d8cc2607ec80bf4e8f2ca32a51a73",
+      "originalRequestWrite": false,
+      "originalTranscriptWrite": false,
+      "validatorWrite": false,
+      "thresholdWrite": false,
+      "correctionExecutedThisStage": false
+    },
+    {
+      "operation": "replace-only-transient-verification-reference",
+      "targetCallIndex": 5,
+      "targetDebateNumber": "05",
+      "targetDebateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "targetMoveId": "pro-logic-reflects-gods-thinking",
+      "field": "verificationExcerpt",
+      "expectedSpeaker": "Sye Ten Bruggencate",
+      "originalValueSha256": "ff6efaef0f0300ce02039708a190f7fd31a4bf40dc1e3c0399ec1a2906b18193",
+      "originalLexicalTokenCount": 54,
+      "replacementValue": "see because we all appeal to logical absolutes",
+      "replacementValueSha256": "68c6284b5df21bf80cf801ae678eacf36f5bd3e4fa6b0aac9362d6fff0faf9fe",
+      "replacementLexicalTokenCount": 8,
+      "replacementStartCharacter": 212,
+      "replacementIsExactSubstringOfOriginal": true,
+      "deterministicSelectionRule": "longest contiguous lexical sequence, capped at 18 tokens, shared by the frozen source reference and one preserved segment labeled as the expected speaker; ties use earliest source position then earliest segment index",
+      "replacementSupport": {
+        "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/pro-logic-reflects-gods-thinking.transcript.json",
+        "transcriptSha256": "9e7641bfd7e320d3077b05a5c9dc4c080ccb84573aee19b4788913542c5f4184",
+        "segmentIndex": 9,
+        "segmentId": "seg_9",
+        "preservedSpeakerLabel": "Sye Ten Bruggencate",
+        "start": 13.700000000000001,
+        "end": 15.95
+      },
+      "nonauthoritativePlanningProjection": {
+        "expectedSpeakerExcerptRecall": 1,
+        "highestOtherSpeaker": "Matt Dillahunty",
+        "highestOtherSpeakerExcerptRecall": 0.25,
+        "expectedSpeakerRecallMargin": 0.75,
+        "frozenRecallChecksSatisfiedNumerically": true,
+        "semanticSpeakerIdentityProved": false
+      },
+      "activationEligible": true,
+      "deltaSha256": "10a73d44662287d450ff239108d9afdb55355939949cdadbf6a7afdf141c5aa0",
+      "originalRequestWrite": false,
+      "originalTranscriptWrite": false,
+      "validatorWrite": false,
+      "thresholdWrite": false,
+      "correctionExecutedThisStage": false
+    }
+  ],
+  "preflight": {
+    "unresolvedTargets": 4,
+    "activationEligibleOverlays": 3,
+    "blockedOverlays": 1,
+    "allTargetsCoveredByPassingPlan": false,
+    "blockedTarget": {
+      "debateNumber": "189",
+      "moveId": "con-simple-laws-beneath-cell-complexity",
+      "expectedSpeaker": "Lee Cronin",
+      "deterministicReason": "longest-source-exact-expected-speaker-sequence-is-two-tokens-and-has-zero-recall-margin-against-anonymous-speaker-A",
+      "transcriptSpeakerLabelsObserved": [
+        "Lee Cronin",
+        "A",
+        "James Tour",
+        "B"
+      ],
+      "anonymousSpeakerRelabelingAuthorized": false,
+      "semanticSpeakerIdentityProved": false
+    },
+    "sourceTimelineRisk": {
+      "canonicalYoutubeDurationSeconds": 4816,
+      "alternateOfficialSourceDurationSeconds": 6480.64,
+      "durationDifferenceSeconds": 1664.64,
+      "deliveryProviderChanged": true,
+      "canonicalYoutubeClipMillisecondsAppliedWithoutReanchoring": true,
+      "alternateTimelineEquivalenceAuthenticated": false,
+      "classification": "alternate-delivery-timeline-equivalence-not-authenticated"
+    },
+    "correctionExecutionWouldBeKnownIncomplete": true,
+    "activationPrepared": false,
+    "correctionExecuted": false,
+    "cohortReplayExecuted": false
+  },
+  "controls": {
+    "transcriptsPreservedByteIdentically": true,
+    "originalRequestPreserved": true,
+    "sourceEvidencePreserved": true,
+    "validatorPreserved": true,
+    "thresholdsPreserved": true,
+    "acceptedResultsPreserved": true,
+    "audioFilesAccessed": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0,
+    "modelOrApiCalls": 0,
+    "paidServiceCalls": 0,
+    "retries": 0,
+    "reruns": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-05-audio-verification-correction-plan.mjs": "5fa7b9f50c0a69a4bb09dd3aa59ad97cfcaddeb23108cdb8cf5656c6c28fa879",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/execution-manifest.json": "58df5bc0ec550e84e41ff1835d033a16a86400c961c4e1dbbff8ea8131deb444",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/model-execution.json": "d0df7c12abd9a9da63b0c89dee33a5567a55283985ac2fb0b50f2148150c480e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/audio-verification.json": "5dc1acd3e56e91c9fe7bc9ce02daf8bdeffd0bdd2d5367e07babd7239d5ae26f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/analysis.json": "378c3da31625fca292cb9bc105a9309f251c9005405a8a657d0712078f254eff",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/cost-control-analysis.json": "50f3fff123cff0c765949e724392438a039aa27f4f919e78fa96d24dcc478d82",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/audio-verification/failure-diagnosis.json": "bdc8a8a5057df5aaec9f90dc2cb7148c2f373c9def43af162bbc3b2bae581d51",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-3/route-discovery.json": "8e3b0b79488e0fc9b9284a19cbf86d17b663f81ac69dcf3012d9384f623aab53",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-3/correction-plan.json": "f0b80fc8e5106128cde4920204c2480eb54ac0bed467a77c1c5af3910b16b2f9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-transport-recovery-3/execution.json": "016f5a3afc97a732cee9e07c6fde94551b30b4aa7c56467fd40039976fe69656",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/disagreement-extraction/audio-source-preparation.json": "290a0904aa23717116138d35245204a81a66ae7cccec0809feb30f884bff3e7a",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/pro-case-specific-extraordinary-testimony-standard.transcript.json": "c62e85c9ce10dcf58ed5b146cb38b8bed2cd74fa2d259f47d7d22987d3552ba9",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-unverified-resurrection-prior.transcript.json": "24e404e3aac5f0daa4a55b676eb8978a1cd21465f2b0a757627847452ba7ea59",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-no-presented-extrabiblical-support.transcript.json": "a1b799be5615e4c08413e505070ff1428f7c357740104b15c791e92fb4483d8a",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/transcripts/con-simple-laws-beneath-cell-complexity.transcript.json": "714acc24092d86ca243cb69107200dda7e87a05300364eb5a160184742be917e",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/con-logical-grounding-burden.transcript.json": "c3b18268802569cf21f50920155165bc20d51fe1a097d26e3a3d4eebda33577a",
+    "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/pro-logic-reflects-gods-thinking.transcript.json": "9e7641bfd7e320d3077b05a5c9dc4c080ccb84573aee19b4788913542c5f4184"
+  },
+  "workflowDisposition": {
+    "activationBlocked": true,
+    "existingStandingAuthorizationCannotResolveBlockedSourceIdentityAndTimelineRisk": true,
+    "newUserApprovalRequired": true,
+    "nextAction": "obtain-approval-before-any-debate-189-source-timeline-or-speaker-identity-recovery"
+  }
+}
