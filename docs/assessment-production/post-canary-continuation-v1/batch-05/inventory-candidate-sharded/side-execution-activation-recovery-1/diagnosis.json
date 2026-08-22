@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-side-execution-activation-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-05-side-execution-activation-recovery-1",
+  "status": "frozen-batch-05-side-execution-activation-stale-source-compatibility-expectation-diagnosed",
+  "diagnosedAt": "2026-08-22T01:03:52.000Z",
+  "checkpointCommit": "c055b76ab4432a986577dc3d4c91d4c098e2db30",
+  "failureCategory": "deterministic-activation-validation-stale-cohort-expectation",
+  "failedCommand": "node scripts/activate-assessment-production-post-canary-batch-05-inventory-side-selectors.mjs --activated-at 2026-08-22T01:03:28.000Z",
+  "failure": {
+    "message": "side-selector execution activation is not authorized",
+    "activationWritten": false,
+    "modelsExecuted": 0,
+    "paidServicesUsed": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "diagnosis": "The activation harness inherited the Batch 3 source-compatibility status expectation exact-source-zero-lexical-token-row-preserved-with-zero-count. The authenticated Batch 5 preparation manifests all record all-source-rows-have-positive-repository-lexical-token-count with zero occurrences. This one stale status assertion rejects the otherwise authorized activation boundary.",
+  "evidence": {
+    "activationHarnessSha256": "1392613e968dca900501fcddc21111761b26f780c4fc90cd1616a84fd20cd49d",
+    "executionPreparationSha256": "69e7945c4b24d2f1b6ddf797a8f1fb8f1b9c9ed09712f7aa951a53e3b8ba6bf1",
+    "sidePacketPreparationSha256": "6d5aa037f941a43068def6028cb45b350fdebb5af8611ebbde1e923ef4f5ae6c",
+    "sourcePreparationSha256": "ef0c741c7cb36a1e651acbe24733ba3f932c94b8db837eb007a14627ba036494",
+    "frozenSourceCompatibilityStatus": "all-source-rows-have-positive-repository-lexical-token-count",
+    "staleHarnessExpectation": "exact-source-zero-lexical-token-row-preserved-with-zero-count"
+  },
+  "boundedCorrection": {
+    "kind": "replace-one-stale-activation-status-expectation",
+    "writableFiles": [
+      "scripts/activate-assessment-production-post-canary-batch-05-inventory-side-selectors.mjs"
+    ],
+    "writableExpectationCount": 1,
+    "packetOrSchemaChange": false,
+    "sourceCandidateOrEvidenceChange": false,
+    "modelContextChange": false,
+    "scoreChange": false,
+    "modelRetry": false,
+    "recoveryAttempt": 1
+  },
+  "authorization": {
+    "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json",
+    "standingAuthorizationSha256": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685",
+    "boundedFirstRecoveryAuthorized": true,
+    "additionalUserApprovalRequired": false
+  }
+}
