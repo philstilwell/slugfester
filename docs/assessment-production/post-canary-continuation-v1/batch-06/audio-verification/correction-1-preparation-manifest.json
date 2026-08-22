@@ -1,0 +1,168 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-audio-validation-correction-1-preparation",
+  "protocolId": "assessment-production-post-canary-batch-06-decomposed-consensus",
+  "status": "frozen-batch-06-two-empty-segment-validation-overlay-plan-prepared",
+  "preparedAt": "2026-08-22T23:10:00.000Z",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "correctionNumber": 1,
+  "stagingOnly": true,
+  "directIncrementalCostUsdMaximum": 0,
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization.json",
+    "sha256": "b6d7f27c77d76fbdf609d22e0b60b0314b0b8d58c1905d8f84bdcebba58e13f2",
+    "boundedInitialCorrectionAuthorized": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/execution-preparation-manifest.json": "6c2df34a13f25da9a024dccc050aaedeecaa6044614d8691f8767c40f6dcc920",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/execution-manifest.json": "8af85a4b992e2f6678887524352a1d9e52b3039f3d7b1ae3307942a2a5acc9d7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/model-execution.json": "f3ea6695f90a6b58c862c9fdd5c45ceacc252bec563688a3121ac6ed1d02ac10",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/failure-diagnosis.json": "c40a2433d1de301bfe16eb7a6a9ea753117c42014348459e63e997164520066f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-06/standing-authorization.json": "b6d7f27c77d76fbdf609d22e0b60b0314b0b8d58c1905d8f84bdcebba58e13f2",
+    "scripts/lib/v416-audio-verification.mjs": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7",
+    "scripts/assessment-production-post-canary-batch-06-audio-verification-stage.mjs": "3d0a37a793fb967b037a0e56547422e5714580daabb2b26b16f851166fd9af0f",
+    "scripts/prepare-assessment-production-post-canary-batch-06-audio-validation-correction-1.mjs": "c96521c2a8933715ec954221411aaf61e64c641548c42765319367ea02d302d7",
+    "scripts/activate-assessment-production-post-canary-batch-06-audio-validation-correction-1.mjs": "8e0a3378722281f27f660eebb9aea2287c206b1afc6685b205d336f4d2dfc260",
+    "scripts/run-assessment-production-post-canary-batch-06-audio-validation-correction-1.mjs": "ecf9567c5f2399e650869002bb8a8f2acabe7d0e96f2622cad06a65a590f5291"
+  },
+  "transcriptLocks": [
+    {
+      "callIndex": 0,
+      "debateNumber": "97",
+      "debateId": "holland-grayling-christianity-human-values-2019",
+      "moveId": "con-classical-suppression-and-absorption",
+      "path": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/transcripts/con-classical-suppression-and-absorption.transcript.json",
+      "sha256": "2d707c9dfd5683a6ebf4b3ad6a3274dd415c0516efd80d094b9e9fa1e665c785"
+    },
+    {
+      "callIndex": 1,
+      "debateNumber": "97",
+      "debateId": "holland-grayling-christianity-human-values-2019",
+      "moveId": "pro-secularism-theological-descent",
+      "path": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/transcripts/pro-secularism-theological-descent.transcript.json",
+      "sha256": "429b174c128edf5bebc445e5b7bfd9a636ee21cac4661594f1d52c4040cd20c5"
+    }
+  ],
+  "target": {
+    "callIndex": 0,
+    "debateNumber": "97",
+    "debateId": "holland-grayling-christianity-human-values-2019",
+    "moveId": "con-classical-suppression-and-absorption",
+    "transcriptPath": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/transcripts/con-classical-suppression-and-absorption.transcript.json",
+    "transcriptSha256": "2d707c9dfd5683a6ebf4b3ad6a3274dd415c0516efd80d094b9e9fa1e665c785",
+    "originalSegmentCount": 123,
+    "overlaySegmentCount": 121,
+    "emptySegments": [
+      {
+        "index": 52,
+        "id": "seg_52",
+        "type": "transcript.text.segment",
+        "speaker": "A. C. Grayling",
+        "start": 105.16799999999999,
+        "end": 105.56799999999998,
+        "text": ""
+      },
+      {
+        "index": 110,
+        "id": "seg_110",
+        "type": "transcript.text.segment",
+        "speaker": "Tom Holland",
+        "start": 245.662,
+        "end": 245.71200000000002,
+        "text": ""
+      }
+    ]
+  },
+  "correction": {
+    "name": "omit-exactly-two-frozen-empty-segment-objects-from-transient-validation-copy",
+    "targetTranscriptPath": "output/transcribe/assessment-production-post-canary-batch-06-audio-verification/debate-97/transcripts/con-classical-suppression-and-absorption.transcript.json",
+    "targetTranscriptSha256": "2d707c9dfd5683a6ebf4b3ad6a3274dd415c0516efd80d094b9e9fa1e665c785",
+    "omittedSegments": [
+      {
+        "index": 52,
+        "id": "seg_52",
+        "type": "transcript.text.segment",
+        "speaker": "A. C. Grayling",
+        "start": 105.16799999999999,
+        "end": 105.56799999999998,
+        "text": ""
+      },
+      {
+        "index": 110,
+        "id": "seg_110",
+        "type": "transcript.text.segment",
+        "speaker": "Tom Holland",
+        "start": 245.662,
+        "end": 245.71200000000002,
+        "text": ""
+      }
+    ],
+    "originalSegmentCount": 123,
+    "transientSegmentCount": 121,
+    "persistentTranscriptWrite": false,
+    "remainingSegmentsReindexed": false,
+    "topLevelFieldsChanged": [],
+    "speakerLabelsChanged": [],
+    "textFieldsAuthoredOrReplaced": [],
+    "timingFieldsChanged": [],
+    "thresholdsChanged": false,
+    "deltaSha256": "dbc8b65a9309dd9c292054a4b34c113a76e92c5433b35509dbf7e48bac6885fc"
+  },
+  "exactValidator": {
+    "path": "scripts/lib/v416-audio-verification.mjs",
+    "sha256": "9f7c2a6dc40b33de092503350994b3198588c5e9b7aaf9d547365e81ceb138d7"
+  },
+  "exactThresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "preservedPaidExecution": {
+    "callsAttempted": 2,
+    "callsCompleted": 2,
+    "retries": 0,
+    "usageDerivedEstimatedCostUsd": 0.1127375,
+    "maximumAuthorizedCostUsd": 1,
+    "newCallsAuthorized": 0
+  },
+  "executionPolicy": {
+    "deterministicPassesMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0,
+    "audioAccessAllowed": false,
+    "modelExecutionAllowed": false,
+    "paidServiceUseAllowed": false,
+    "persistentTranscriptWritesMaximum": 0,
+    "completeTwoTranscriptReplayRequired": true
+  },
+  "outputs": {
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/correction-1-execution.json",
+    "audit": "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/audio-verification.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/analysis.json",
+    "cost": "docs/assessment-production/post-canary-continuation-v1/batch-06/audio-verification/cost-control-analysis.json"
+  },
+  "judgmentModelBoundary": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "scoreBlindnessPreserved": true,
+    "isolatedPassesPreserved": true,
+    "integerRoundedTiesPermitted": true,
+    "modelContextsThisStage": 0
+  },
+  "stopRules": {
+    "sourceHashMismatchBlocks": true,
+    "transcriptHashMismatchBlocks": true,
+    "targetShapeMismatchBlocks": true,
+    "overlayDeltaBeyondExactOmissionBlocks": true,
+    "validatorHashMismatchBlocks": true,
+    "thresholdMismatchBlocks": true,
+    "validationExceptionBlocks": true,
+    "unresolvedAttributionBlocks": true,
+    "paidOrModelCallBlocks": true,
+    "downstreamWorkBlocksUntilReplayPasses": true
+  }
+}
