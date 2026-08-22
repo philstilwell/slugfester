@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-rendering-resumption-1-analysis",
+  "protocolId": "assessment-production-post-canary-batch-05-rendering-verification-transport-readiness-resumption-1",
+  "status": "ten-debate-batch-05-rendering-resumption-1-passed",
+  "analyzedAt": "2026-08-22T15:09:22.000Z",
+  "execution": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/rendering-verification/resumption-1/execution.json",
+    "sha256": "246ff7175fb1058c1f4bbf109195184cc08c8f8fb16100dfb49a419b41b5e44d"
+  },
+  "renderingAudit": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/rendering-verification/resumption-1/rendering-audit.json",
+    "sha256": "8b9df992b39bd1efeb33416b931f34e231d61e2ebdf46efb9a656c1764e6d189"
+  },
+  "decision": {
+    "failedClosed": false,
+    "bootstrapOnlyFailurePreserved": true,
+    "renderingGatePassed": true,
+    "tenDebatesPassed": true,
+    "desktopAndMobilePassed": true,
+    "pointerAndKeyboardPassed": true,
+    "imageContractPassed": true,
+    "runtimeGatePassed": true,
+    "authorizedReplacementAttempts": 1,
+    "retryAfterResumptionPerformed": false,
+    "timeoutExtended": false,
+    "sourceMutationDetected": false,
+    "productionMutationRemainsBlocked": true
+  },
+  "compatibilityBoundary": {
+    "renderingVerificationPermittedAfterSeparateActivation": true,
+    "productionMutationBlocked": true,
+    "validatorMigrationAuthorized": false,
+    "productionLedgerPublicationAuthorized": false,
+    "blockers": [
+      "batch-05-site-ledger-adapter-and-validator-route"
+    ]
+  },
+  "authorization": {
+    "compatibilityPlanPreparation": true,
+    "validatorMigration": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-05-production-compatibility-under-standing-authorization"
+}
