@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-final-ledger-second-validation-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-05-adjudicated-consensus",
+  "status": "frozen-second-final-ledger-stage-validation-failure-diagnosed-new-approval-required",
+  "diagnosedAt": "2026-08-22T04:50:44.000Z",
+  "checkpointCommit": "c00c6c3634200fc49ad9fb13958afe51077ced2f",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "failedGate": "test-assessment-production-post-canary-batch-05-final-ledger",
+  "preservedCommand": "node scripts/test-assessment-production-post-canary-batch-05-final-ledger.mjs",
+  "preservedFailure": {
+    "name": "AssertionError",
+    "message": "Expected values to be strictly equal: 10 !== 9",
+    "file": "scripts/test-assessment-production-post-canary-batch-05-final-ledger.mjs",
+    "line": 95,
+    "assertionMeaning": "count of debate ledgers whose adjudication output was accepted without correction",
+    "frozenExpectedValue": 9,
+    "deterministicallyObservedValue": 10
+  },
+  "diagnosis": {
+    "category": "stale-batch-04-test-expectation-in-batch-05-adaptation",
+    "cause": "Batch 4 had one corrected adjudication output and therefore expected nine original outputs. All ten Batch 5 adjudication outputs passed without correction, so the copied test's remaining literal 9 is stale.",
+    "ledgerAssemblyPassed": true,
+    "ledgerReplayValidationPassed": true,
+    "ledgerAnalysisPassed": true,
+    "testHarnessPassed": false,
+    "substantiveLedgerConflict": false,
+    "sourceEvidenceConflict": false,
+    "adjudicationConflict": false,
+    "scoreConflict": false,
+    "productionMutationOccurred": false
+  },
+  "preservedArtifacts": {
+    "manifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/final-ledger-manifest.json",
+      "sha256": "5b6cd1e975faef97fa8ac87586381d8f73b9b76cebe9664067e0adb33bf009b9"
+    },
+    "firstRecoveryExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/execution.json",
+      "sha256": "3a06ddabec8d1b63e7071ed4c9b3fd64d454a44c537bf28e9e2da0932cfcbe18"
+    },
+    "finalLedger": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/final-ledger.json",
+      "sha256": "82133511e09ca1bc7e637795c7f072633f3ca2a88a32ffeb1d12a15e0741993f"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/analysis.json",
+      "sha256": "87e15bc5d1509655a5e989607e09a83732278267101d55fdfcafc14ae7774a4c"
+    },
+    "failedTestHarness": {
+      "path": "scripts/test-assessment-production-post-canary-batch-05-final-ledger.mjs",
+      "sha256": "00e00ceacc4e894669e95eaf4fcd762544bc3df40fa88910799b6c2387a2a2e1"
+    }
+  },
+  "standingAuthorizationDisposition": {
+    "firstRecoveryAlreadyConsumed": true,
+    "secondRecoveryNotAuthorized": true,
+    "recursiveRecoveryNotAuthorized": true,
+    "correctionPrepared": false,
+    "correctionExecuted": false,
+    "newUserApprovalRequired": true
+  },
+  "unchangedControls": {
+    "modelContextsExecutedThisStage": 0,
+    "paidServiceCallsThisStage": 0,
+    "scoresDerived": 0,
+    "retries": 0,
+    "rollbacks": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAction": "obtain-explicit-one-time-recursive-recovery-approval-before-changing-the-single-stale-test-expectation-from-nine-to-ten"
+}
