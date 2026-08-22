@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-final-ledger-source-hash-correction-activation",
+  "protocolId": "assessment-production-post-canary-batch-05-adjudicated-consensus",
+  "status": "frozen-active-for-one-field-final-ledger-manifest-source-hash-correction",
+  "preparedAt": "2026-08-22T04:48:08.000Z",
+  "checkpointCommit": "55b0002336bcfe56a58b237dc010ba343a40ca95",
+  "standingAuthorizationRecovery": "bounded-first-deterministic-validation-recovery",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/failure-diagnosis.json",
+    "sha256": "71b2712af055c06d7d06f984657193c2a61fdccf50183f7e1354619a24c4e99c"
+  },
+  "target": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/final-ledger-manifest.json",
+    "preimageSha256": "fb3e817a66e962c8839253ea106240757e881b411a7df2bda4257f68eaf2809c",
+    "jsonPointer": "/sourceHashes/scripts~1validate-assessment-production-post-canary-batch-05-final-ledger.mjs",
+    "oldValue": "8cc2459db9643bbcfb9c6318bbbd27770ffd27e8712387e613d70a8bf0361e9d",
+    "newValue": "9d019a6f7918608c19160122a82c3836691ce8046db9c18bbd41e5de3778c7b0"
+  },
+  "validator": {
+    "path": "scripts/validate-assessment-production-post-canary-batch-05-final-ledger.mjs",
+    "sha256": "9d019a6f7918608c19160122a82c3836691ce8046db9c18bbd41e5de3778c7b0"
+  },
+  "correctionTool": {
+    "path": "scripts/assessment-production-post-canary-batch-05-final-ledger-source-hash-recovery.mjs",
+    "sha256": "f9b88dfe5af82985c37a8bc982d20d4a9b23fa6ac53fe510ed1c224dbcc65e57"
+  },
+  "mutation": {
+    "filesMaximum": 1,
+    "fieldsMaximum": 1,
+    "manifestHashFieldOnly": true,
+    "validatorWrite": false,
+    "sourceEvidenceWrite": false,
+    "ledgerWrite": false,
+    "modelExecution": false,
+    "paidServiceUse": false,
+    "scoreDerivation": false
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0,
+    "completePreviewReplayRequired": true
+  },
+  "outputs": {
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/execution.json"
+  },
+  "nextAction": "execute-one-field-manifest-hash-correction-once",
+  "activatedAt": "2026-08-22T04:48:20.000Z",
+  "plan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/final-ledger/source-hash-recovery/correction-plan.json",
+    "sha256": "d606a8670b6d603190b0d7e8bfd055b6b4c4d88a68628ff4fabf81fb49cd97f9"
+  },
+  "authorization": {
+    "deterministicManifestHashCorrection": true,
+    "correctedPreviewReplay": true,
+    "modelExecution": false,
+    "paidServices": false,
+    "ledgerAssembly": false,
+    "scoreDerivation": false
+  }
+}
