@@ -1,0 +1,419 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-audio-alignment-recovery-audit",
+  "protocolId": "assessment-production-post-canary-batch-05-decomposed-consensus",
+  "status": "passed-all-six-batch-05-audio-attributions-after-debate-189-alignment-recovery",
+  "productionCanary": false,
+  "batchNumber": 5,
+  "correctionNumber": 1,
+  "debates": [
+    {
+      "debateNumber": "158",
+      "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+      "moves": [
+        {
+          "debateNumber": "158",
+          "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+          "moveId": "pro-case-specific-extraordinary-testimony-standard",
+          "expectedSpeaker": "Dr Jonathan McLatchie",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Dr Jonathan McLatchie",
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/pro-case-specific-extraordinary-testimony-standard.transcript.json",
+            "sha256": "c62e85c9ce10dcf58ed5b146cb38b8bed2cd74fa2d259f47d7d22987d3552ba9",
+            "persistentMutation": false
+          },
+          "validationOverlay": null,
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Dr Jonathan McLatchie",
+            "fullClipExcerptRecall": 0.898876404494382,
+            "expectedSpeakerExcerptRecall": 0.8426966292134831,
+            "highestOtherSpeaker": "Matt Dillahunty",
+            "highestOtherSpeakerExcerptRecall": 0.14606741573033707,
+            "expectedSpeakerRecallMargin": 0.696629213483146,
+            "expectedSpeakerDurationSeconds": 45.75,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Dr Jonathan McLatchie",
+                "segmentCount": 19,
+                "durationSeconds": 45.75,
+                "wordCount": 143,
+                "excerptRecall": 0.8426966292134831
+              },
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 5,
+                "durationSeconds": 6.75,
+                "wordCount": 29,
+                "excerptRecall": 0.14606741573033707
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "158",
+          "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+          "moveId": "con-unverified-resurrection-prior",
+          "expectedSpeaker": "Matt Dillahunty",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Matt Dillahunty",
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-unverified-resurrection-prior.transcript.json",
+            "sha256": "24e404e3aac5f0daa4a55b676eb8978a1cd21465f2b0a757627847452ba7ea59",
+            "persistentMutation": false
+          },
+          "validationOverlay": {
+            "operation": "replace-only-transient-verification-reference",
+            "originalValueSha256": "93d8fc2b398f5cf86c75efa683c1733a55b96ed2325dcbe0edbb7c3506c0f50f",
+            "replacementValueSha256": "90aa006e150fa113da63c8d1690a395a2050ae296f4f5978058cb1a303564262",
+            "deltaSha256": "f4d2ff7c7568f8868485d0be3818d8d2154afbbb527729ed90bf808b27baced7",
+            "persistentWrite": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Matt Dillahunty",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Dr Jonathan McLatchie",
+            "highestOtherSpeakerExcerptRecall": 0.5454545454545454,
+            "expectedSpeakerRecallMargin": 0.4545454545454546,
+            "expectedSpeakerDurationSeconds": 80.1,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 21,
+                "durationSeconds": 80.1,
+                "wordCount": 287,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Dr Jonathan McLatchie",
+                "segmentCount": 13,
+                "durationSeconds": 13.6,
+                "wordCount": 55,
+                "excerptRecall": 0.5454545454545454
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "158",
+          "debateId": "dillahunty-mclatchie-resurrection-evidence-2020",
+          "moveId": "con-no-presented-extrabiblical-support",
+          "expectedSpeaker": "Matt Dillahunty",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Matt Dillahunty",
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-158/transcripts/con-no-presented-extrabiblical-support.transcript.json",
+            "sha256": "a1b799be5615e4c08413e505070ff1428f7c357740104b15c791e92fb4483d8a",
+            "persistentMutation": false
+          },
+          "validationOverlay": null,
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Matt Dillahunty",
+            "fullClipExcerptRecall": 0.9615384615384616,
+            "expectedSpeakerExcerptRecall": 0.9423076923076923,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.07692307692307693,
+            "expectedSpeakerRecallMargin": 0.8653846153846154,
+            "expectedSpeakerDurationSeconds": 15.05,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 6,
+                "durationSeconds": 15.05,
+                "wordCount": 49,
+                "excerptRecall": 0.9423076923076923
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 3,
+                "durationSeconds": 4.75,
+                "wordCount": 18,
+                "excerptRecall": 0.07692307692307693
+              },
+              {
+                "speaker": "Dr Jonathan McLatchie",
+                "segmentCount": 2,
+                "durationSeconds": 2,
+                "wordCount": 8,
+                "excerptRecall": 0.07692307692307693
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "189",
+      "debateId": "tour-cronin-origin-of-life-2020",
+      "moves": [
+        {
+          "debateNumber": "189",
+          "debateId": "tour-cronin-origin-of-life-2020",
+          "moveId": "con-simple-laws-beneath-cell-complexity",
+          "expectedSpeaker": "Lee Cronin",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Lee Cronin",
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-189/transcripts-correction-1/con-simple-laws-beneath-cell-complexity.transcript.json",
+            "sha256": "f079bf56525250e0f66a71d3fba234a520b2fb10c9b8a9ad2d8b88b4afbbeb71",
+            "persistentMutation": false
+          },
+          "validationOverlay": null,
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Lee Cronin",
+            "fullClipExcerptRecall": 0.948051948051948,
+            "expectedSpeakerExcerptRecall": 0.8701298701298701,
+            "highestOtherSpeaker": "James Tour",
+            "highestOtherSpeakerExcerptRecall": 0.5324675324675324,
+            "expectedSpeakerRecallMargin": 0.33766233766233766,
+            "expectedSpeakerDurationSeconds": 56.75,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Lee Cronin",
+                "segmentCount": 8,
+                "durationSeconds": 56.75,
+                "wordCount": 177,
+                "excerptRecall": 0.8701298701298701
+              },
+              {
+                "speaker": "James Tour",
+                "segmentCount": 25,
+                "durationSeconds": 121.6,
+                "wordCount": 343,
+                "excerptRecall": 0.5324675324675324
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 7,
+                "durationSeconds": 27.45,
+                "wordCount": 95,
+                "excerptRecall": 0.24675324675324675
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "05",
+      "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+      "moves": [
+        {
+          "debateNumber": "05",
+          "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+          "moveId": "con-logical-grounding-burden",
+          "expectedSpeaker": "Matt Dillahunty",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Matt Dillahunty",
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/con-logical-grounding-burden.transcript.json",
+            "sha256": "c3b18268802569cf21f50920155165bc20d51fe1a097d26e3a3d4eebda33577a",
+            "persistentMutation": false
+          },
+          "validationOverlay": {
+            "operation": "replace-only-transient-verification-reference",
+            "originalValueSha256": "c9400d391ff0174983dd1057f0574111f3e0204b05f878e14372476162cd502a",
+            "replacementValueSha256": "861962176ae8769846442c89caf59312746f7ea824ea5d21cd98fa6b0e7ac807",
+            "deltaSha256": "33f2a69e39fd1680d996ca8c3f6b52439e9d8cc2607ec80bf4e8f2ca32a51a73",
+            "persistentWrite": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Matt Dillahunty",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Sye Ten Bruggencate",
+            "highestOtherSpeakerExcerptRecall": 0.5,
+            "expectedSpeakerRecallMargin": 0.5,
+            "expectedSpeakerDurationSeconds": 31.65,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 18,
+                "durationSeconds": 31.65,
+                "wordCount": 120,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Sye Ten Bruggencate",
+                "segmentCount": 19,
+                "durationSeconds": 17.85,
+                "wordCount": 82,
+                "excerptRecall": 0.5
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 2,
+                "durationSeconds": 0.3,
+                "wordCount": 4,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "05",
+          "debateId": "dillahunty-ten-bruggencate-reasonable-god-2014",
+          "moveId": "pro-logic-reflects-gods-thinking",
+          "expectedSpeaker": "Sye Ten Bruggencate",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "status": "verified",
+          "resolvedSpeaker": "Sye Ten Bruggencate",
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-05-audio-verification/debate-05/transcripts/pro-logic-reflects-gods-thinking.transcript.json",
+            "sha256": "9e7641bfd7e320d3077b05a5c9dc4c080ccb84573aee19b4788913542c5f4184",
+            "persistentMutation": false
+          },
+          "validationOverlay": {
+            "operation": "replace-only-transient-verification-reference",
+            "originalValueSha256": "ff6efaef0f0300ce02039708a190f7fd31a4bf40dc1e3c0399ec1a2906b18193",
+            "replacementValueSha256": "68c6284b5df21bf80cf801ae678eacf36f5bd3e4fa6b0aac9362d6fff0faf9fe",
+            "deltaSha256": "10a73d44662287d450ff239108d9afdb55355939949cdadbf6a7afdf141c5aa0",
+            "persistentWrite": false
+          },
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Sye Ten Bruggencate",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 1,
+            "highestOtherSpeaker": "Matt Dillahunty",
+            "highestOtherSpeakerExcerptRecall": 0.25,
+            "expectedSpeakerRecallMargin": 0.75,
+            "expectedSpeakerDurationSeconds": 13.85,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Sye Ten Bruggencate",
+                "segmentCount": 11,
+                "durationSeconds": 13.85,
+                "wordCount": 50,
+                "excerptRecall": 1
+              },
+              {
+                "speaker": "Matt Dillahunty",
+                "segmentCount": 6,
+                "durationSeconds": 5.1,
+                "wordCount": 30,
+                "excerptRecall": 0.25
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 0.7,
+                "wordCount": 4,
+                "excerptRecall": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "totals": {
+    "requiredMoves": 6,
+    "verified": 6,
+    "unresolved": 0,
+    "preservedOriginalPaidCalls": 6,
+    "correctionPaidCalls": 1,
+    "retries": 0,
+    "overlaysApplied": 3,
+    "preservedOriginalUsageDerivedCostUsd": 0.175755,
+    "additionalUsageDerivedCostUsd": 0.07585,
+    "cumulativeUsageDerivedCostUsd": 0.25160499999999997,
+    "scoresDerived": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0
+  }
+}

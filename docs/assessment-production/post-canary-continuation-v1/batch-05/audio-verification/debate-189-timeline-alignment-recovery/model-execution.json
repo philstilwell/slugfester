@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-189-audio-alignment-recovery-execution",
+  "protocolId": "assessment-production-post-canary-batch-05-decomposed-consensus",
+  "status": "passed-all-six-batch-05-audio-attributions-after-debate-189-alignment-recovery",
+  "startedAt": "2026-08-22T04:23:22.492Z",
+  "completedAt": "2026-08-22T04:24:35.848Z",
+  "attempts": 1,
+  "correctionCalls": 1,
+  "retries": 0,
+  "reruns": 0,
+  "timeoutExtensions": 0,
+  "requestFailure": false,
+  "additionalCostCapExceeded": false,
+  "requestResult": {
+    "debateNumber": "189",
+    "moveId": "con-simple-laws-beneath-cell-complexity",
+    "expectedSpeaker": "Lee Cronin",
+    "status": "completed",
+    "attemptCount": 1,
+    "retryCount": 0,
+    "startedAt": "2026-08-22T04:23:22.492Z",
+    "completedAt": "2026-08-22T04:24:35.845Z",
+    "elapsedMs": 73352,
+    "commandExitCode": 0,
+    "terminationSignal": null,
+    "transcriptWritten": true,
+    "transcriptJsonValid": true,
+    "usageValid": true,
+    "transcriptSha256": "f079bf56525250e0f66a71d3fba234a520b2fb10c9b8a9ad2d8b88b4afbbeb71",
+    "stdoutSha256": "56a6def2723eaf7d02721a11790405ed1b967b129e095815a03af8e6ea985ab4",
+    "stderrSha256": "f856c6cdf394c41f596db32f1febc0a51614fcdf8af78739201e1f3c20166219",
+    "failureMessage": null,
+    "usage": {
+      "inputTokens": 4692,
+      "audioInputTokens": 4355,
+      "textInputTokens": 337,
+      "outputTokens": 6412,
+      "totalTokens": 11104
+    },
+    "usageDerivedEstimatedCostUsd": 0.07585,
+    "maximumAdditionalCostUsd": 0.15,
+    "costCapPassed": true,
+    "deterministicEvidence": {
+      "status": "verified",
+      "expectedSpeaker": "Lee Cronin",
+      "fullClipExcerptRecall": 0.948051948051948,
+      "expectedSpeakerExcerptRecall": 0.8701298701298701,
+      "highestOtherSpeaker": "James Tour",
+      "highestOtherSpeakerExcerptRecall": 0.5324675324675324,
+      "expectedSpeakerRecallMargin": 0.33766233766233766,
+      "expectedSpeakerDurationSeconds": 56.75,
+      "checks": {
+        "fullClipExcerptRecovered": true,
+        "expectedSpeakerExcerptRecovered": true,
+        "expectedSpeakerRecallDistinct": true,
+        "expectedSpeakerDurationSufficient": true
+      },
+      "speakerEvidence": [
+        {
+          "speaker": "Lee Cronin",
+          "segmentCount": 8,
+          "durationSeconds": 56.75,
+          "wordCount": 177,
+          "excerptRecall": 0.8701298701298701
+        },
+        {
+          "speaker": "James Tour",
+          "segmentCount": 25,
+          "durationSeconds": 121.6,
+          "wordCount": 343,
+          "excerptRecall": 0.5324675324675324
+        },
+        {
+          "speaker": "A",
+          "segmentCount": 7,
+          "durationSeconds": 27.45,
+          "wordCount": 95,
+          "excerptRecall": 0.24675324675324675
+        }
+      ]
+    },
+    "correctionVerified": true
+  },
+  "correctionVerified": true,
+  "overlaysApplied": 3,
+  "replayComplete": true,
+  "verified": 6,
+  "unresolved": 0,
+  "gatePassed": true,
+  "audioPlaybackCalls": 0,
+  "semanticAudioEvaluations": 0,
+  "judgmentModelContexts": 0,
+  "adjudicationModelContexts": 0,
+  "scoresDerived": 0,
+  "directIncrementalCostUsd": 0.07585,
+  "nextAction": "prepare-freeze-and-push-batch-05-dispute-only-adjudication-packets-under-standing-authorization"
+}
