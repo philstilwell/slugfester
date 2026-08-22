@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-debate-42-repair-execution",
+  "protocolId": "assessment-production-post-canary-batch-05-debate-42-publication-resumption-2-repair-1",
+  "status": "batch-05-debate-42-two-context-repair-gate-passed",
+  "gateStartedAt": "2026-08-22T14:40:49.244Z",
+  "gateCompletedAt": "2026-08-22T14:43:12.619Z",
+  "contextsPlanned": 2,
+  "contextsAttempted": 2,
+  "contextsUnattempted": 0,
+  "validContexts": 2,
+  "invalidContexts": 0,
+  "attempts": 2,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrections": 0,
+  "schedulerRamp": [
+    1
+  ],
+  "wallElapsedMs": 143374,
+  "rampPhases": [
+    {
+      "phase": "repair-first",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "repair-second",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        1
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1
+      ],
+      "validContextIndexes": [
+        1
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "42",
+      "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-22T14:40:49.246Z",
+      "completedAt": "2026-08-22T14:42:09.506Z",
+      "elapsedMs": 80260,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-analogy-distinguishes-divine-attributes.critique",
+        "moveProse.pro-unity-grounding-aseity-reply.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "b9888f6bd0582a91ee7b8c52af9c19b93a46753ae31fc318693d168197b36507",
+      "stderrSha256": "1d814f23ab76a654ddbf09115870a248cd1476e573d1e396ef602baa19750a83",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "782bb76c80ad3cf1127e0573bf5cbf32b99223e15d14dbb7e221cf1ab1197abe",
+      "validationSha256": "42841e0f7d14eb0d4de5ebcec000d3a2dd7957e2896dc6c123d05c40e0690c84",
+      "provenanceSha256": "bc5904506ccea36da244180af42e12b53915d5562581b39d9412ad31ebca4702",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "42",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-analogy-distinguishes-divine-attributes.critique",
+            "moveId": "pro-analogy-distinguishes-divine-attributes",
+            "words": 118,
+            "characters": 970,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-unity-grounding-aseity-reply.critique",
+            "moveId": "pro-unity-grounding-aseity-reply",
+            "words": 115,
+            "characters": 891,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "42",
+      "debateId": "schmid-tomaszewski-divine-simplicity-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-22T14:42:09.518Z",
+      "completedAt": "2026-08-22T14:43:12.608Z",
+      "elapsedMs": 63090,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-begotten-son-godhead-distinction.critique",
+        "moveProse.con-changing-reality-epistemic-change.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "8f75bc2dc8fd2ac8b8c1b24c0a4a7a7117f1f8ccb4722789bc5b009c503f1fd8",
+      "stderrSha256": "e360b9d13d9c22b6aed29a44b1489f0488292b2e33c8720606a17e62b78e860c",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "c111c841655ca5569fe8816287feb99ea7055bc6e6f32dac46516b6a9630514d",
+      "validationSha256": "b99117bc319b8d1c14ccab01d332662a57d5ba8c9b4c70ce25b7db6672a8620e",
+      "provenanceSha256": "97e4095896120ab8b605919fab5031fa36f4fc3f0e962309eb2449d4ee6f3080",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "42",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-begotten-son-godhead-distinction.critique",
+            "moveId": "con-begotten-son-godhead-distinction",
+            "words": 118,
+            "characters": 936,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-changing-reality-epistemic-change.critique",
+            "moveId": "con-changing-reality-epistemic-change",
+            "words": 118,
+            "characters": 937,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "rejectedOutputPreserved": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0
+}
