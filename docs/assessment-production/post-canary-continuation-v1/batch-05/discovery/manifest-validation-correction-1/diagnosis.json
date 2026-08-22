@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-deterministic-validation-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-05-discovery-manifest-validation-correction-1",
+  "status": "frozen-batch-05-discovery-manifest-validation-overlay-count-failure-diagnosed",
+  "diagnosedAt": "2026-08-22T00:32:12.000Z",
+  "checkpointCommit": "901a6fc3cde4a571d28b61e51ce93620e6faeb0f",
+  "failedCommand": "node scripts/test-assessment-production-post-canary-batch-05-discovery-manifest.mjs --write --validated-at 2026-08-22T00:31:13.000Z",
+  "failure": {
+    "category": "deterministic-validation-cohort-specific-assertion",
+    "file": "scripts/test-assessment-production-post-canary-batch-05-discovery-manifest.mjs",
+    "line": 96,
+    "assertion": "manifest.contexts.filter((context) => context.sourceChainOverlayApplied).length === 4",
+    "observed": 0,
+    "expectedByFailedHarness": 4,
+    "expectedByFrozenBatch05SourcePreparation": 0
+  },
+  "evidence": {
+    "executionPreparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/discovery/execution-preparation-manifest.json",
+      "sha256": "39ff0a2d4553be6336dafe44f438441d59c02b0ef2677b5815af9ce4b6fa9d51",
+      "bytes": 138538,
+      "contexts": 41,
+      "overlayContexts": 0
+    },
+    "sourcePreparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/preparation-manifest.json",
+      "sha256": "190c01c0578dfa1635c3e213a7cd0553dea619678830b44822679841e4f4c6f1",
+      "bytes": 97784,
+      "debates": 10,
+      "sourceChainOverlays": 0
+    },
+    "failedHarness": {
+      "path": "scripts/test-assessment-production-post-canary-batch-05-discovery-manifest.mjs",
+      "sha256": "c929022564cf7a7c81522622016cb502c33e3b40a7ca481d39a08d33b63bf032",
+      "bytes": 15443
+    }
+  },
+  "finding": "The Batch 5 preparation and frozen execution manifest consistently contain zero overlay contexts. The copied Batch 4 validation harness retained its cohort-specific expectation of four overlay contexts; no source, packet, context, schema, model setting, or execution control is implicated.",
+  "boundedCorrection": {
+    "kind": "deterministic-validation-harness-correction",
+    "writableAssertionCount": 1,
+    "replacement": {
+      "from": 4,
+      "to": 0
+    },
+    "originalManifestMutable": false,
+    "originalHarnessMutable": false,
+    "correctedHarnessUsesSeparatePath": true,
+    "modelExecutionAuthorized": false,
+    "paidServiceAuthorized": false
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "freeze-one-batch-05-discovery-manifest-validation-correction-1-plan"
+}

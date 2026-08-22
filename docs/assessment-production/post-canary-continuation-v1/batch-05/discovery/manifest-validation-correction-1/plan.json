@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-05-deterministic-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-05-discovery-manifest-validation-correction-1",
+  "status": "frozen-batch-05-discovery-manifest-validation-correction-1-prepared",
+  "frozenAt": "2026-08-22T00:32:12.000Z",
+  "checkpointCommit": "901a6fc3cde4a571d28b61e51ce93620e6faeb0f",
+  "standingAuthorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json",
+    "sha256": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685"
+  },
+  "correctionScope": {
+    "category": "deterministic-validation-harness-correction",
+    "originalAssertionExpectedSourceChainOverlayContexts": 4,
+    "expectedSourceChainOverlayContexts": 0,
+    "assertionsChanged": 1,
+    "originalExecutionPreparationManifestPreserved": true,
+    "originalValidationHarnessPreserved": true,
+    "sourcesPacketsSchemasAndContextsPreserved": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/discovery/execution-preparation-manifest.json": "39ff0a2d4553be6336dafe44f438441d59c02b0ef2677b5815af9ce4b6fa9d51",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/source-preparation/preparation-manifest.json": "190c01c0578dfa1635c3e213a7cd0553dea619678830b44822679841e4f4c6f1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-05/standing-authorization.json": "a66f512384f01b444336a5245255a070333bf7bc4fb30e36a13511cbc2695685",
+    "scripts/test-assessment-production-post-canary-batch-05-discovery-manifest.mjs": "c929022564cf7a7c81522622016cb502c33e3b40a7ca481d39a08d33b63bf032",
+    "scripts/test-assessment-production-post-canary-batch-05-discovery-manifest-correction-1.mjs": "37b2c3d38a116c58b1cc87aa3a4a6d56c010892a4cc40d8eec0b037b46c31a78",
+    "scripts/run-assessment-production-post-canary-batch-05-discovery-manifest-validation-correction-1.mjs": "6e7ceccadc9a143e5444c1d10cc913918577df5596d3793bac2a10ab80c830fc"
+  },
+  "executionControls": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveCorrectionsMaximum": 0,
+    "completeFortyOneContextReplayRequired": true,
+    "futureValidationMustBeAbsent": true
+  },
+  "futureOutputs": {
+    "validation": "docs/assessment-production/post-canary-continuation-v1/batch-05/discovery/execution-preparation-validation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-05/discovery/manifest-validation-correction-1/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-05/discovery/manifest-validation-correction-1/analysis.json"
+  },
+  "authorization": {
+    "correctedValidationPass": true,
+    "writeValidationOnPass": true,
+    "analysis": true,
+    "commitAndPush": true,
+    "resumeStandingAuthorizationOnPass": true,
+    "modelExecution": false,
+    "paidService": false,
+    "sourceMutation": false,
+    "packetMutation": false,
+    "schemaMutation": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "execute-exactly-one-batch-05-discovery-manifest-validation-correction-1-pass"
+}
