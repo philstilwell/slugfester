@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-06-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "inventoryPlanCanonicalSha256": "10ca2305c31336007059f6cfcd4409063fabb359da41aa0028e2cf33e9e29859",
+  "sideSelectionSha256": {
+    "pro": "ca219ea95ed07043e5ed623102499fba95ee074874bd2ec5b76be83b6d78cf9e",
+    "con": "954ebb9ac2ce2075ed182a5b1534d91c7a213946e1cc3701b47d59be473a0da0"
+  },
+  "sections": 6,
+  "moves": 24,
+  "proMoves": 12,
+  "conMoves": 12,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c003",
+      "side": "pro",
+      "moveId": "pro-legend-pattern-person-distinction",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Even without a retained mythic-parallel objection, the distinction supplies an affirmative explanatory model in which legendary development remains compatible with a historical subject.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c009",
+      "side": "pro",
+      "moveId": "pro-crucified-messiah-unlikely-invention",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The mismatch between prevailing messianic expectations and criminal execution supplies a standalone contextual inference to an actual crucifixion.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 2,
+  "nominatedCandidates": 24,
+  "retainedCandidates": 24,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-06-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "06",
+  "inventoryPlanCanonicalSha256": "c341807cd1fa4ef5f22beeec975ee7fbab3707fc8c2796fff5e3157f65a987bb",
+  "sideSelectionSha256": {
+    "pro": "7babd502a1f9c2bd52cea2e6004459878c90de791d6250b21b2ad7c6b6b9cc19",
+    "con": "4867cf3a3d9044ac704ab667ffeee3e0c9035afdb0ccf4f30f3e72d889d6591a"
+  },
+  "sections": 5,
+  "moves": 19,
+  "proMoves": 10,
+  "conMoves": 9,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c004",
+      "side": "con",
+      "moveId": "con-epistemic-withhold-until-evidence",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "Independently of the preceding comparison with secular irrationality, the excerpt states a general evidential rule and applies it to God claims.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 19,
+  "retainedCandidates": 19,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

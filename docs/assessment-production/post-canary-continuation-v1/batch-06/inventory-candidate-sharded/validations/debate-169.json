@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-06-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "169",
+  "inventoryPlanCanonicalSha256": "2fcedc0ca6e6cbd67830d0c1a1b5d1eece0a05578a5cd8ae56a5417055cfaa4f",
+  "sideSelectionSha256": {
+    "pro": "22bbd383e1464db857f8afb66132e95e63f8de176a35c55204f5087c1d97da6f",
+    "con": "1ddff6fc1c88d2f27dd943ff3a0ee4cb3a96ac38d91ac67e11e4b53a47b6e4e9"
+  },
+  "sections": 5,
+  "moves": 18,
+  "proMoves": 8,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c002",
+      "side": "pro",
+      "moveId": "pro-explanatory-levels-how-and-why",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The source independently distinguishes mechanistic how-explanations from personal-agent why-explanations, so the same explanatory-level distinction advances the pro route without an opposing target.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 18,
+  "deterministicallyDeferredCandidates": 2,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

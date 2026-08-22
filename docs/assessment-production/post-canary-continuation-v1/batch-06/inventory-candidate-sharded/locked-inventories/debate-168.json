@@ -1,0 +1,869 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "168",
+  "debateId": "craig-krauss-evidence-god-2012",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "pro-cumulative-theistic-evidence",
+      "side": "pro",
+      "description": "Establish that contingency, a finite cosmic past, life-permitting fine-tuning, objective morality, and the historical case for Jesus's resurrection collectively raise the probability of God's existence.",
+      "successCriteria": "The route succeeds if the cited facts are sufficiently established, are more expected or better explained given theism than its relevant alternatives, and cumulatively support the motion's evidentiary threshold.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-probability",
+        "tier": "motion",
+        "description": "The motion is satisfied if the cumulative considerations make God's existence more probable than it would otherwise be."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-cosmological-ground",
+          "tier": "central",
+          "description": "Contingent reality and a universe with a finite past must warrant inference to a necessary, transcendent causal ground."
+        },
+        {
+          "bridgeId": "pro-fine-tuning-design",
+          "tier": "central",
+          "description": "Life-permitting constants and initial conditions must be better explained by design than by necessity, chance, or multiverse selection."
+        },
+        {
+          "bridgeId": "pro-objective-morality",
+          "tier": "central",
+          "description": "Objective moral values and duties must exist and require an ontological foundation supplied by God's necessary moral nature."
+        },
+        {
+          "bridgeId": "pro-resurrection",
+          "tier": "central",
+          "description": "The relevant historical facts concerning Jesus must be established and better explained by divine resurrection than by naturalistic alternatives."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-broad-evidence-standard",
+          "tier": "subsidiary",
+          "description": "Philosophical, moral, historical, and scientific considerations must be admissible within a probability-raising conception of evidence."
+        },
+        {
+          "bridgeId": "pro-cumulative-reinforcement",
+          "tier": "subsidiary",
+          "description": "The several independent considerations must retain material cumulative force even if no individual consideration proves theism by itself."
+        }
+      ]
+    },
+    {
+      "routeId": "con-empirical-naturalistic-defeat",
+      "side": "con",
+      "description": "Show that the affirmative considerations are unsupported, underdetermined, or more plausibly addressed through empirical naturalism, so they do not supply adequate evidence for a divine cause or the Christian God.",
+      "successCriteria": "The route succeeds if the affirmative fails to justify its probability assignments or if natural models, explanatory uncertainty, secular morality, and ordinary historical explanations prevent the cited facts from discriminating in favor of God.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-evidence",
+        "tier": "motion",
+        "description": "The motion is not established unless the affirmative supplies testable or otherwise warranted evidence that favors God over relevant natural alternatives."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-natural-cosmology",
+          "tier": "central",
+          "description": "Quantum-gravity, multiverse, or other physical possibilities must block the inference from contingency or cosmic beginnings to a uniquely divine cause."
+        },
+        {
+          "bridgeId": "con-fine-tuning-alternatives",
+          "tier": "central",
+          "description": "Dynamical explanations and observer selection must make apparent fine-tuning insufficient to distinguish purposive design from natural cosmology."
+        },
+        {
+          "bridgeId": "con-secular-morality",
+          "tier": "central",
+          "description": "Moral truth or understanding must remain intelligible without divine grounding, or the proposed divine foundation must face an unresolved arbitrariness problem."
+        },
+        {
+          "bridgeId": "con-ordinary-historical-explanation",
+          "tier": "central",
+          "description": "Human error, illusion, imagination, or intervention must remain more plausible than resurrection as explanations of the reported historical claims."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-empirical-warrant",
+          "tier": "subsidiary",
+          "description": "Claims about divine evidence must meet a defensible empirical or probabilistic standard rather than rest on intuition or unquantified priors."
+        },
+        {
+          "bridgeId": "con-no-gap-inference",
+          "tier": "subsidiary",
+          "description": "Present explanatory ignorance must remain a reason for continued investigation rather than an evidential inference to supernatural agency."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "title": "Evidential Standards and the Cumulative Inference",
+      "weightPercent": 15,
+      "rationale": "The parties dispute what qualifies as evidence, how probability-raising claims are warranted, where the burden lies, and whether several distinct considerations can jointly support the motion."
+    },
+    {
+      "sectionId": "contingency-and-necessary-ground",
+      "title": "Contingency and the Necessary Explanatory Ground",
+      "weightPercent": 17,
+      "rationale": "This issue tests whether contingent reality requires an external necessary explanation and whether God has any justified advantage over a necessary or eternal natural terminus."
+    },
+    {
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "title": "Cosmic Beginning, Infinity, and Transcendent Causation",
+      "weightPercent": 20,
+      "rationale": "The finite-past argument depends on philosophical claims about actual infinity, scientific claims about cosmic boundaries, and the inference from a beginning to a transcendent cause."
+    },
+    {
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "title": "Fine-Tuning, Design, and Multiverse Selection",
+      "weightPercent": 17,
+      "rationale": "This section addresses whether life-permitting conditions favor purposive design or are better treated through dynamics, varied universes, observer selection, and unresolved physical theory."
+    },
+    {
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "title": "Moral Objectivity and Divine Grounding",
+      "weightPercent": 14,
+      "rationale": "The moral argument requires both objective values or duties and a uniquely divine ontology, while the opposing route contests that dependence through rational, biological, and arbitrariness-based alternatives."
+    },
+    {
+      "sectionId": "resurrection-and-historical-explanation",
+      "title": "Resurrection and Competing Historical Explanations",
+      "weightPercent": 17,
+      "rationale": "The historical pillar turns on the status of the alleged facts, their connection to God's existence, and the comparative plausibility of resurrection against ordinary human explanations."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-cumulative-probability-standard",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Facts concerning the universe, morality, and history collectively raise the probability that God exists.",
+      "sourceSpan": {
+        "startEvent": 9,
+        "endEvent": 48
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening statement explicitly introduces Craig's probabilistic conception of evidence and cumulative case.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "greater on the evidence and background information than on the background information alone that is to say the probability of H on E and B is greater than the probability of h on b alone now in the case of God if we let G stand for the hypothesis that God exists it seems to me indisputable that God's existence is more probable given certain facts like the origin of the universe",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 52,
+        "endToken": 123,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-contingency-necessary-cause",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "contingency-and-necessary-ground",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The existence of contingent beings is best explained by a necessarily existing transcendent cause identified as God.",
+      "sourceSpan": {
+        "startEvent": 49,
+        "endEvent": 105
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this his first consideration and presents both an explanatory inference and its deductive formulation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "is God hence the existence of contingent beings makes God's existence more probable than it would have been without them although I presented this reasoning inductively we can also put it in the form of a deductive argument premise one everything that exists has an explanation of its existence either in its own nature or in an external cause two the universe exists three if the",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 245,
+        "endToken": 310,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cosmic-beginning-cause",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe began to exist and therefore has a transcendent cause beyond space and time, best identified as God.",
+      "sourceSpan": {
+        "startEvent": 106,
+        "endEvent": 194
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly presents his second argument, supports its premises, and closes with a numbered deductive formulation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "Transcendent cause beyond space and time which created the universe clearly then God's existence is more probable given the beginning of the universe than it would have been without it we can also formulate this reasoning in the form of a deductive argument one everything that begins to exist has a cause two the universe began to exist from which it follows logically that three therefore the universe has a cause and again as we've seen the best",
+        "characterCount": 448,
+        "tokenCount": 78,
+        "startToken": 461,
+        "endToken": 538,
+        "weightedOverlap": 44,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 10,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-fine-tuning-design",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe's life-permitting fine-tuning is better explained by design than by physical necessity or chance.",
+      "sourceSpan": {
+        "startEvent": 195,
+        "endEvent": 267
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig identifies fine-tuning as his third consideration and explicitly compares necessity, chance, and design as explanations.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "any life permitting Universe now there are three possible explanations of this extraordinary fine-tuning physical necessity chance or design now it can't be due to physical necessity because as I've said the constants and quantities are independent of the laws of nature so maybe the fine-tuning is due to chance after all highly improbable events happen every day but what serves",
+        "characterCount": 380,
+        "tokenCount": 63,
+        "startToken": 176,
+        "endToken": 238,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-objective-morality-ground",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values and duties exist, and their existence entails God because atheism cannot ground their objectivity.",
+      "sourceSpan": {
+        "startEvent": 268,
+        "endEvent": 327
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this his fourth argument and concludes with an explicit three-premise-style deductive presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "Behavior they're moral Abominations some things at least are really wrong Michael Roose himself admits and I quote the man who says it is morally acceptable to rape little children is just as mistaken as the man who says 2 + 2 equals 5 some things at least are really wrong but in that case the probability of God's existence is 1.0 we can formulate this reasoning as follows one if God did not exist objective moral values and duties",
+        "characterCount": 434,
+        "tokenCount": 80,
+        "startToken": 275,
+        "endToken": 354,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-core-facts",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "sectionId": "resurrection-and-historical-explanation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The empty tomb, postmortem appearances, and disciples' transformed belief are best explained by Jesus's resurrection, which entails God.",
+      "sourceSpan": {
+        "startEvent": 328,
+        "endEvent": 406
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels the historical case his fifth argument, enumerates three facts, and states the resurrection inference and theistic conclusion.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "Divine Miracle on our hands and thus evidence for the existence of God now most people probably think that the resurrection of Jesus is something you just believe in by faith or not but there are actually three facts recognized by the majority of New Testament historians today which I believe are best explained by Jesus resurrection fact number one on the Sunday after his crucifixion Jesus tomb was found empty",
+        "characterCount": 413,
+        "tokenCount": 71,
+        "startToken": 109,
+        "endToken": 179,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-affirmative-empirical-burden",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Craig bears the affirmative burden of supplying recognizable empirical evidence for God, while Krauss need not disprove God's existence.",
+      "sourceSpan": {
+        "startEvent": 439,
+        "endEvent": 471
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss explicitly distinguishes this evidence debate from a general existence debate and repeatedly assigns Craig the evidentiary burden.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "empirical and scientific and Dr Craig is not a scientist as he has demonstrated several times in the last few minutes uh the onus the important thing about this debate also is that the onus not the onus is on Dr Craig to demonstrate evidence for God I'm the onus is not on me to disprove anything the onus is on Dr Craig to demonstrate evidence and then I I guess I'm here to talk about whether",
+        "characterCount": 394,
+        "tokenCount": 77,
+        "startToken": 120,
+        "endToken": 196,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-extraordinary-divine-evidence-standard",
+      "qualifiedCandidateId": "chunk-001:c008",
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "An infinitely powerful divine intelligence is an extraordinary claim requiring correspondingly extraordinary evidence, which ordinary probability assertions do not by themselves supply.",
+      "sourceSpan": {
+        "startEvent": 472,
+        "endEvent": 561
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss develops an explicit evidentiary criterion, illustrates what miraculous evidence might look like, and applies it to Craig's case.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "and in fact um I uh I I I will get to the fact that Dr Dr claims um Dr Craig's claim for what evidence is is not at all what we use in science nowadays um it doesn't relate at all to what we use in science but uh one could imagine I mean there's no more extraordinary claim I think than the fact that there is a Divine infinitely powerful intelligence that exists that creates the",
+        "characterCount": 380,
+        "tokenCount": 78,
+        "startToken": 7,
+        "endToken": 84,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-infinity-intuition-challenge",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Classical intuitions about the absurdity of infinity cannot override mathematics and empirically successful physics, both of which consistently employ infinite quantities.",
+      "sourceSpan": {
+        "startEvent": 562,
+        "endEvent": 754
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss sustains the same rebuttal through methodological claims, a quantum-mechanical illustration, and a direct discussion of mathematical infinities.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "in fact there's a field of mathematics called complex variables which is the basis of much of modern physics from electromagnetism to quantum mechanics and Beyond well in fact we learn how to deal with infinity we without the Infinities we couldn't do the physics we know how to sum infinite series because we can do complex analysis mathematicians have taught us how it's strange",
+        "characterCount": 380,
+        "tokenCount": 65,
+        "startToken": 1154,
+        "endToken": 1218,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-contingency-gap-objection",
+      "qualifiedCandidateId": "chunk-001:c010",
+      "sectionId": "contingency-and-necessary-ground",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Contingency and presently unexplained causal processes do not support God, because unknown explanations invite investigation and may ultimately prove entirely physical.",
+      "sourceSpan": {
+        "startEvent": 755,
+        "endEvent": 835
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss explicitly turns to Craig's first listed consideration and develops a continuous objection centered on accidents and unknown physical causes.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "it seemed to me that that that Dr Craig's first example is a characteristic example of God in the gaps we don't know all the processes which led to the existence of human beings therefore God exists well that's just an awful excuse for God because that God of the ganks argument risks God disappearing when we discover the cause and we discover the cause is simply physical we now",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 276,
+        "endToken": 345,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-eternal-multiverse-first-cause-alternative",
+      "qualifiedCandidateId": "chunk-002:c002-01",
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Quantum gravity, inflation, and a potentially eternal multiverse provide natural models in which our universe can arise spontaneously without a relevant divine first cause.",
+      "sourceSpan": {
+        "startEvent": 889,
+        "endEvent": 928
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted Krauss turn is identified by the moderator's transition to Craig at events 953 through 955.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "called inflation actually predicts essentially an infinite number of universes in an eternal Multiverse that exists for all time and for all space it's Eternal didn't have a beginning we don't know if it had a cause but it doesn't matter because our universe could spontaneously appear out of that Multiverse so the idea of a first cause is not relevant I I think I'll I I I'll go",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 184,
+        "endToken": 252,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-moral-independence-dilemma",
+      "qualifiedCandidateId": "chunk-002:c002-02",
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "If an act would remain wrong despite divine approval, moral truth constrains God's choices and therefore neither originates in God nor gains explanatory grounding from God.",
+      "sourceSpan": {
+        "startEvent": 937,
+        "endEvent": 952
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Krauss's uninterrupted opening turn immediately before the moderator introduces Craig's rebuttal.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "whether there is or not it doesn't apply God for example we talk about rape if God set subjective morality if God decided that raping 2-year-old girls was okay would it be okay most of you I think would say no why would it okay because it's not moral but if it's not not moral than God didn't have the choice it's not God that chose what's moral and therefore if morality is based on what's rational",
+        "characterCount": 399,
+        "tokenCount": 79,
+        "startToken": 20,
+        "endToken": 98,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-beginning-infinity-quantum-defense",
+      "qualifiedCandidateId": "chunk-002:c002-04",
+      "sectionId": "cosmic-beginning-and-transcendent-cause",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Mathematical treatments of infinity and quantum-vacuum cosmology do not defeat the evidence that the universe and its physical state began.",
+      "sourceSpan": {
+        "startEvent": 1071,
+        "endEvent": 1145
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is a continuous section of Craig's moderator-introduced rebuttal, with Krauss not resuming until events 1241 through 1242.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Quantum vacuum state cannot be Eternal in the past that was the implication of the Bor gu venin theorem listen to what venin writes he said he he says it is said that an argument is what convinces reasonable man and a proof is what it takes to convince even an unreasonable man with the proof now in place cosmologists can no longer hide behind the possibility of a past Eternal Universe they have to face the problem of a cosmic beginning",
+        "characterCount": 439,
+        "tokenCount": 82,
+        "startToken": 393,
+        "endToken": 474,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-physical-fine-tuning-alternatives",
+      "qualifiedCandidateId": "chunk-002:c002-08",
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Quantum-gravitational origins, universes with varying laws, and observer selection provide physical explanations for apparent fine-tuning without supernatural imposition.",
+      "sourceSpan": {
+        "startEvent": 1351,
+        "endEvent": 1493
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage is part of Krauss's uninterrupted response turn, explicitly bounded by moderator transitions at events 1241 and 1572 through 1574.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "environment that illusion of design that occurs in nature in biology is a process of a of natural section we understand it now we understand how physical processes can produce things that look like they're incredibly fine-tuned we understand that you don't need Supernatural imposition to make what appears to be fine tuning but in fact you know the well let me just say that that",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 736,
+        "endToken": 802,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-multiverse-fine-tuning-defense",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-01",
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "A many-worlds hypothesis does not explain embodied interactive observers and instead relocates fine-tuning to the laws governing the multiverse.",
+      "sourceSpan": {
+        "startEvent": 1699,
+        "endEvent": 1740
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted turn continues Craig's rebuttal, explicitly addresses Krauss by name, and ends before Craig changes to morality.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "so just appealing to many worlds doesn't do anything to explain why we observe a world fine-tune for embodied interactive agents like ourselves and in any case that really only kicks the problem up one step because then you've got to ask about the fine tuning of the Multiverse what determined its laws that they should be so special so we yet to hear I think any good explanation",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 107,
+        "endToken": 176,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-necessary-divine-character",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-02",
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Divine commands necessarily express God's compassionate, just, and fair character, while naturalism lacks a foundation for objective moral duties and values.",
+      "sourceSpan": {
+        "startEvent": 1741,
+        "endEvent": 1758
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly presents his divine-command account in a continuous turn and contrasts it with the moral implications he attributes to Krauss.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Divine command morality Theory because I maintain that God has certain properties like being compassionate kind just fair so that his Commandments are necessary expressions of his essence of his character and therefore there is no possible World in which God would command that rape would be good and love would be bad but in any case on his view you can't say anything is bad because there are no obje moral duties and values",
+        "characterCount": 426,
+        "tokenCount": 75,
+        "startToken": 30,
+        "endToken": 104,
+        "weightedOverlap": 44,
+        "matchedAnchorTokens": 14,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-natural-moral-understanding",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-06",
+      "sectionId": "moral-objectivity-and-divine-grounding",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Rationality, evolution, biology, and continued investigation can explain moral understanding and conduct without belief in or dependence upon God.",
+      "sourceSpan": {
+        "startEvent": 1874,
+        "endEvent": 1915
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss continues his uninterrupted rebuttal, first rejecting the divine inference and then explicitly developing a naturalistic approach to morality.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "defines kind and compassionate all of you if you did not believe in God and the people in here who find the evidence for God lacking are unlikely to go out and kill someone or rape someone tonight because of that rationality is goes a long way to understanding morality rationality Evolution biology does it completely define morality I don't know in fact The Institute that I run",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 159,
+        "endToken": 226,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-dynamical-fine-tuning-and-purpose",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-07",
+      "sectionId": "fine-tuning-design-and-multiverse",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Known dynamics explain some alleged fine-tuning, while the unexplained vacuum-energy value is not shown to be life-necessary and does not evidence competent purposive design.",
+      "sourceSpan": {
+        "startEvent": 1917,
+        "endEvent": 1978
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss explicitly announces his return to fine-tuning, discusses entropy and vacuum energy, and concludes the argument before the moderator opens summaries.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "energy so if this miraculous fine tuning which he's which I agree is remarkable and I wish I'd understand was created for life then the person who created it didn't do a very good job rather competent intelligent designer the universe is the way it is whether we like it or not and all the evidence of the universe is that there's no purpose no design no mean should that upset us no and I'll explain",
+        "characterCount": 400,
+        "tokenCount": 76,
+        "startToken": 333,
+        "endToken": 408,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-resurrection-testimony-error",
+      "qualifiedCandidateId": "chunk-003:chunk-003-candidate-09",
+      "sectionId": "resurrection-and-historical-explanation",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Reports of Jesus's resurrection are more plausibly attributable to mistaken human testimony than to a miraculous event and therefore do not provide adequate evidence for God.",
+      "sourceSpan": {
+        "startEvent": 2117,
+        "endEvent": 2265
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Krauss begins his announced summary, answers Craig's five points in sequence, and ends with thanks immediately before the moderator addresses the audience.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "they do not enjoy sex that's compassionate kind their God tells them to do it okay I think you would read you would agree that that that we just should get rid of the middleman and decide what's compassion and kind on the basis of common sense as for the resurrection let me make CLE right now by far since all of the evidence the historical evidence is determined by anecdotal uh",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 786,
+        "endToken": 857,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 3,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-ordinary-resurrection-explanations",
+      "qualifiedCandidateId": "chunk-004:c004-04",
+      "sectionId": "resurrection-and-historical-explanation",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Human error, imagination, illusion, or deliberate intervention are more plausible explanations of resurrection claims than an extraordinary supernatural resurrection.",
+      "sourceSpan": {
+        "startEvent": 2707,
+        "endEvent": 2762
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer follows a question directed to Krauss and uses his first-person comparisons with alien-abduction reports and physical plausibility.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "to the known irrational ality of humans than the unknown rationality of aliens and when it comes to the Resurrection the point is that there are many many claims that are much more simply explained by being imagined illusion or in some S as you're pointing out being done by people who wanted to make the person they believed in appear to be God I I'm not claiming any of those is",
+        "characterCount": 380,
+        "tokenCount": 72,
+        "startToken": 136,
+        "endToken": 207,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-comparative-explanation",
+      "qualifiedCandidateId": "chunk-004:c004-05",
+      "sectionId": "resurrection-and-historical-explanation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Widely accepted historical facts surrounding Jesus are best explained by resurrection because rival naturalistic accounts fail standard explanatory criteria.",
+      "sourceSpan": {
+        "startEvent": 2762,
+        "endEvent": 2794
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker handoff names Craig, and the response reprises his specific historical case and scholarly explanatory criteria.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "conspiracy theory the disciples stole the body apparent death Theory the hallucination Theory down through history there have been multiplicity of counter explanations of these facts and none of of them has commanded the uh adherence of a great number of Scholars because they all fail in terms of their explanatory scope their explanatory power they're ad hoc they're implausible they all fail those standard tests for a historical",
+        "characterCount": 432,
+        "tokenCount": 69,
+        "startToken": 101,
+        "endToken": 169,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-necessary-terminus",
+      "qualifiedCandidateId": "chunk-004:c004-07",
+      "sectionId": "contingency-and-necessary-ground",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Explanatory inquiry stops non-arbitrarily with God because contingent things require external causes whereas God exists necessarily by his own nature.",
+      "sourceSpan": {
+        "startEvent": 2924,
+        "endEvent": 2953
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The explicit rebuttal transition and the defense of the principle of sufficient reason identify Craig and his established contingency argument.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "to the universe and then arbitrarily stop there the theist doesn't arbitrarily stop when he gets to God as the explanatory ultimate God has an explanation of his existence everything that exists has an explanation either in the necessity of its own nature or if it's contingent in an external cause God exists by a necessity of his own nature even the atheist recognizes that if a",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 36,
+        "endToken": 102,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-natural-necessary-terminus",
+      "qualifiedCandidateId": "chunk-004:c004-08",
+      "sectionId": "contingency-and-necessary-ground",
+      "side": "con",
+      "speaker": "Lawrence Krauss",
+      "moveKind": "reply",
+      "proposition": "Defining God as the necessary explanatory terminus has no demonstrated advantage over an eternal multiverse, which can serve as a natural terminus and is physically motivated.",
+      "sourceSpan": {
+        "startEvent": 3003,
+        "endEvent": 3016
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The rebuttal handoff follows Craig's answer, and the speaker contrasts Craig's definition with Krauss's own physics-based multiverse proposal.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "think the answer is I mean you defi so Dr GRE has defined God to be something um that meets his question his desire for necessity so I Define the Multiverse to be that um fine the Multiverse always existed it is without the Multiverse our universe could couldn't have existed fine let him call it God I call it the Multiverse uh the diff my difference is that mine is motivated by",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 4,
+        "endToken": 76,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-broad-evidence-scope",
+      "qualifiedCandidateId": "chunk-004:c004-09",
+      "sectionId": "evidential-standard-and-cumulative-case",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Restricting rational evidence to scientific proof is self-defeating, while theism jointly explains moral, philosophical, historical, and scientific facts.",
+      "sourceSpan": {
+        "startEvent": 3077,
+        "endEvent": 3103
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The rebuttal transition and direct discussion of Krauss's epistemology clearly mark Craig's response to the preceding answer.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "self-defeating position so evidence is much broader than what science tells us science is empirical evidence but there is moral experience there is philosophical and metaphysical uh facts there are historical facts and I think that the god hypothesis is so powerful because it makes sense of such a broad range of the facts of human experience including but not limited to scientific",
+        "characterCount": 383,
+        "tokenCount": 64,
+        "startToken": 112,
+        "endToken": 175,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
