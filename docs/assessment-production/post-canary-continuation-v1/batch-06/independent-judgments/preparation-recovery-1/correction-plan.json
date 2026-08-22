@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-06-independent-judgment-preparation-recovery-1",
+  "status": "batch-06-independent-judgment-move-coverage-correction-frozen-not-activated",
+  "frozenAt": "2026-08-22T21:32:00.000Z",
+  "recoveryLevel": 1,
+  "replacements": [
+    {"from": 187, "to": 200, "meaning": "unique accepted Batch 6 moves"},
+    {"from": 374, "to": 400, "meaning": "two independent judgments for each accepted move"}
+  ],
+  "targets": [
+    {"path":"scripts/prepare-assessment-production-post-canary-batch-06-independent-judgments.mjs","preimageSha256":"237977ee7278741081ad8bf143bbc12c60b623a01402242e2fcc1e84cfcdf947","proposal":"docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/preparation-recovery-1/proposed-prepare-assessment-production-post-canary-batch-06-independent-judgments.mjs","proposalSha256":"d4270fe6a2dcd5e09accec511723da7c720c298ee4e1911ff8283fbfeb2f5eb8"},
+    {"path":"scripts/preregister-assessment-production-post-canary-batch-06-independent-judgments.mjs","preimageSha256":"8099b33539633f5997d809e394b40576114caa8e258ff1edfea258697628469f","proposal":"docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/preparation-recovery-1/proposed-preregister-assessment-production-post-canary-batch-06-independent-judgments.mjs","proposalSha256":"aed8224af240dc153a438be29e6e449e301cb3b638ed90a9df68110d270b2250"},
+    {"path":"scripts/test-assessment-production-post-canary-batch-06-independent-judgment-preparation.mjs","preimageSha256":"18b1d183c8b329321ec5a5b37186f7b1c05ed9615048151d89b115c89162bb26","proposal":"docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/preparation-recovery-1/proposed-test-assessment-production-post-canary-batch-06-independent-judgment-preparation.mjs","proposalSha256":"93956cb9e8f1552b918218ebd91e3009dc19225754de6943649ee4fac0da8195"},
+    {"path":"scripts/test-assessment-production-post-canary-batch-06-independent-judgment-manifest.mjs","preimageSha256":"383fdb5b97742e354e7aac06a700ba24eb1c5a299ed3ce8797eccca81c5eeb27","proposal":"docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/preparation-recovery-1/proposed-test-assessment-production-post-canary-batch-06-independent-judgment-manifest.mjs","proposalSha256":"2614ad51795c355107acb979f0ffa68e8ae0e6654b54696bb2540cc94075bbb4"},
+    {"path":"scripts/test-assessment-production-post-canary-batch-06-independent-judgment-activation.mjs","preimageSha256":"7e7f45c2ab117fca93f0697a1e76a47246d60e6697cc419e992b686541adacbc","proposal":"docs/assessment-production/post-canary-continuation-v1/batch-06/independent-judgments/preparation-recovery-1/proposed-test-assessment-production-post-canary-batch-06-independent-judgment-activation.mjs","proposalSha256":"18467db37f3ee0e7df4debaa8c5b7cfd0664dfbe73a0dad6c5524b1a3e5e7dbd"}
+  ],
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "previewPasses": 1,
+    "models": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "protectedEvidence": {
+    "lockedInventoriesChanged": false,
+    "sourceEvidenceChanged": false,
+    "candidateFieldsChanged": false,
+    "scoresDerived": false
+  },
+  "nextAction": "activate-and-execute-correction-once"
+}
