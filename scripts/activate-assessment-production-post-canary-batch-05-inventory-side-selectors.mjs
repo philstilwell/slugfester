@@ -87,7 +87,7 @@ assertV4(
       ?.fallbackAppliedOnlyToRetainedOrphanReply === true &&
     preparation.validatedInventoryContract?.scoreFieldsAvailable === false &&
     preparation.sourceCompatibility?.status ===
-      "exact-source-zero-lexical-token-row-preserved-with-zero-count" &&
+      "all-source-rows-have-positive-repository-lexical-token-count" &&
     preparation.sourceCompatibility?.sourceRowsInjected === 0 &&
     preparation.sourceCompatibility?.sourceRowsOmitted === 0 &&
     preparation.sourceCompatibility?.sourceRowsRewritten === 0 &&
