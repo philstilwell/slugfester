@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slugfester-batch-07-publication-resumption-2-repair-9",
+  "title": "Batch 7 publication resumption-2 repair packet 9",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "contextIndex",
+    "packetIndex",
+    "debateNumber",
+    "debateId",
+    "assessmentModel",
+    "completedAt",
+    "correctedCritiques"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0-assessment-production-post-canary-batch-07-publication-resumption-2-repair-output"
+    },
+    "protocolId": {
+      "type": "string",
+      "const": "assessment-production-post-canary-batch-07-publication-resumption-2-repair-1"
+    },
+    "contextIndex": {
+      "type": "integer",
+      "const": 9
+    },
+    "packetIndex": {
+      "type": "integer",
+      "const": 5
+    },
+    "debateNumber": {
+      "type": "string",
+      "const": "78"
+    },
+    "debateId": {
+      "type": "string",
+      "const": "albrecht-oppy-resurrection-ancient-christianity-2023"
+    },
+    "assessmentModel": {
+      "type": "string",
+      "const": "5.6 Sol"
+    },
+    "completedAt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "correctedCritiques": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "con-jewish-sect-and-syrian-divergence",
+        "pro-syriac-roman-substantive-convergence"
+      ],
+      "properties": {
+        "con-jewish-sect-and-syrian-divergence": {
+          "type": "string",
+          "minLength": 880
+        },
+        "pro-syriac-roman-substantive-convergence": {
+          "type": "string",
+          "minLength": 880
+        }
+      }
+    }
+  }
+}

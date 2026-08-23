@@ -1,0 +1,265 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-publication-resumption-2-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-publication-resumption-2-repair-1",
+  "contextIndex": 5,
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "debateNumber": "78",
+  "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+  "repairType": "critique-word-boundary",
+  "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-2/outputs/debate-78.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/packets/debate-78.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-pauline-secondhand-witness-reports.critique",
+      "moveProse.con-unavailable-source-copying-uncertainty.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "recursiveRecoveryMaximum": 0
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-pauline-secondhand-witness-reports.critique",
+      "moveId": "con-pauline-secondhand-witness-reports",
+      "originalCritique": "Strongest feature: The reply cleanly separates Paul's personal experience from inherited reports about the five hundred and other witnesses, then plausibly explains how those reports could shape his interpretation without asserting that such influence certainly occurred or that the reports were necessarily fabricated. Principal limitation: The proposed filtering mechanism remains hypothetical and is not supported by evidence about Paul's actual information sequence, contact with earlier witnesses, or reasons for adopting rather than independently confirming the inherited resurrection framework. Live burden: The skeptical route must clarify how much evidential independence is lost when early secondhand testimony may nevertheless preserve genuine reports and when Paul's own experience remains an additional datum. Locked score: The very strong band reflects excellent calibration, precision, responsiveness, and charitable restriction of the conclusion, while preserving a meaningful evidential reservation about the conjectural psychological mechanism.",
+      "originalWords": 137,
+      "originalCharacters": 1062,
+      "excessWordsAboveAcceptanceMaximum": 7,
+      "lockedMove": {
+        "moveId": "con-pauline-secondhand-witness-reports",
+        "sectionId": "section-pauline-resurrection-and-appearances",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "Paul's claims about the five hundred and other witnesses are secondhand reports that could have furnished the interpretive framework through which he understood his own experience.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "11:00",
+        "sourceSpan": {
+          "startEvent": 173,
+          "endEvent": 194,
+          "startMs": 660180,
+          "endMs": 722399
+        },
+        "sourceExcerpt": "about the 500 and the and the the various other people who are the witnesses to the resurrection that's not his personal observations that's secondhand stuff that he's got and that could equally have um influenced him in the so whatever whatever happened to him the kind of mental breakdown of vision or whatever he had the way that he interpreted it could have been filtered through that stuff which is interpretation",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 418
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-pauline-underdetermination"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-paul-early-bodily-resurrection",
+            "pro-paul-transformed-tangible-body"
+          ],
+          "components": [
+            {
+              "componentId": "con-pauline-secondhand-witness-reports-component-01",
+              "targetMoveId": "pro-paul-early-bodily-resurrection",
+              "text": "Whether Paul's witness list supplies independent firsthand support for bodily resurrection appearances.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-pauline-secondhand-witness-reports-component-02",
+              "targetMoveId": "pro-paul-transformed-tangible-body",
+              "text": "Whether Paul's own experience independently confirms the tangible-body interpretation rather than being filtered through inherited reports.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move distinguishes Paul's personal observation from inherited witness reports and proposes that those reports shaped his interpretation of his own experience.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "It directly contacts both the independence of the witness list and the evidential interpretation of Paul's personal experience."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It directly contacts both the independence of the witness list and the evidential interpretation of Paul's personal experience."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly distinguishes personal observation, secondhand reports, and the possible interpretive influence of those reports."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The phrase 'could equally have influenced him' advances a possibility claim proportionate to the limited evidence offered."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul's inherited witness list may preserve genuine early testimony and need not undermine his own experience.",
+          "decisiveQualification": "Even genuine early reports are not Paul's firsthand observations and therefore do not independently establish what other witnesses encountered."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The distinction between firsthand experience and inherited reports validly limits independence, and interpretive filtering is presented as a possibility."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central Pauline-underdetermination bridge by limiting both corroboration and independence."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt names the five hundred and other witnesses, calls those claims secondhand, and explains how prior reports could filter Paul's interpretation.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-unavailable-source-copying-uncertainty.critique",
+      "moveId": "con-unavailable-source-copying-uncertainty",
+      "originalCritique": "Strongest feature: The argument lucidly distinguishes detectable interpolation, where earlier and later witnesses permit comparison, from the epistemically harder situation in which unavailable exemplars prevent direct evaluation, and it appropriately frames that absence as uncertainty rather than affirmative proof of corruption. Principal limitation: Its scope is insufficiently delimited, since no specific disputed text, copying pathway, or corruption indicator is connected to First Corinthians 15, making the move relevant to transmission generally but unresponsive to the targeted Pauline exegetical claim. Live burden: The skeptic must identify why this generalized possibility materially reduces confidence in the particular sources under discussion rather than merely describing a universal limitation of ancient textual reconstruction. Locked score: The strong band reflects coherent preservation reasoning and responsible calibration, counterbalanced by indirect target contact, incomplete textual specification, and a comparatively broad application across heterogeneous Christian materials.",
+      "originalWords": 138,
+      "originalCharacters": 1105,
+      "excessWordsAboveAcceptanceMaximum": 8,
+      "lockedMove": {
+        "moveId": "con-unavailable-source-copying-uncertainty",
+        "sectionId": "section-gospel-and-textual-transmission",
+        "side": "con",
+        "speaker": "Graham Oppy",
+        "moveKind": "reply",
+        "proposition": "Known interpolations create unresolved copying uncertainty for Christian texts whose earlier versions and underlying sources are unavailable for comparison.",
+        "importance": 2,
+        "finalScore": 76,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "17:00",
+        "sourceSpan": {
+          "startEvent": 313,
+          "endEvent": 325,
+          "startMs": 1020420,
+          "endMs": 1059120
+        },
+        "sourceExcerpt": "interpolations into the text and we know about this because we have earlier and later versions where we get into trouble is where we don't have early aversions so we've got a text and there's no earlier versions of it and now there's this question about um you know what what given that there were sources how reliably were they copied into the into the text that we've now got so",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "bridge-con-central-transmission-preservation-uncertainty"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-paul-transformed-tangible-body"
+          ],
+          "components": [
+            {
+              "componentId": "con-unavailable-source-copying-uncertainty-component-01",
+              "targetMoveId": "pro-paul-transformed-tangible-body",
+              "text": "Whether the surviving Pauline text warrants the asserted tangible transformed-body interpretation.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move raises relevant general copying uncertainty but does not contact the decisive exegetical premise or identify copying evidence affecting First Corinthians 15 itself.",
+          "responsivenessWithinClass": {
+            "value": 52,
+            "rationale": "It is issue-bearing contrary material about textual reliability, but it does not answer the targeted Pauline bodily-reading component."
+          },
+          "responsiveness": {
+            "value": 55,
+            "rationale": "It is issue-bearing contrary material about textual reliability, but it does not answer the targeted Pauline bodily-reading component."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The general copying problem is clear, though the range of Christian texts and sources to which the concern applies is not delimited."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The argument appropriately frames absent earlier versions as creating a question rather than establishing actual corruption."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The move directly supports the central transmission-preservation uncertainty bridge, even though its selected reply target is only indirectly engaged."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The selected span advances a general transmission concern without developing a specific competing reconstruction to test charitably."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts known interpolations detectable from earlier and later versions with texts lacking early comparators and questions source-copying reliability.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
