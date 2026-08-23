@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-rendering-source-hash-correction-1-follow-up-validation-diagnosis",
+  "status": "frozen-phase-inapplicable-follow-up-validation-diagnosed",
+  "preservedFailure": {
+    "command": "node scripts/test-assessment-production-post-canary-batch-06-rendering-verification-preparation.mjs",
+    "error": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/execution-activation.json exists",
+    "sourceSha256": "4bcb17c19ac360818f146ab9281e2343559dd75f33d8f4c71c7151aaee092517"
+  },
+  "diagnosis": {
+    "category": "phase-inapplicable-preparation-only-test-invoked-after-activation",
+    "meaning": "The test requires every future execution output, including execution-activation.json, to be absent. That invariant applies only before activation and is intentionally false at the active execution phase.",
+    "correctionExecutionStatus": "passed-before-follow-up-test",
+    "correctionExecutionSha256": "7a2c55a6280cb5060d99a4ecd47b0a2a185b745932bcb2d8717fc983e6683472",
+    "correctionAnalysisSha256": "3f46deff10a59480531e92c6e061062a35d7bed8502099be2c4e617d13ff6d0b",
+    "correctedPreparationSha256": "da9b57cd4033124cc76b119a311ed3f13a8562696d2722399b941b741671cc83",
+    "correctedActivationSha256": "03cb6356cca7c81c7af1563ecc7d648921aa5da83e915ec42f3c957df504a603"
+  },
+  "impact": {
+    "viewportAttemptsConsumed": 0,
+    "renderingEvidenceChanged": false,
+    "protectedInputsChangedBeyondFrozenCorrection": false,
+    "additionalCorrectionRequired": false,
+    "directIncrementalCostUsd": 0
+  },
+  "nextAuthorizedAction": "execute-frozen-batch-06-rendering-verification"
+}
