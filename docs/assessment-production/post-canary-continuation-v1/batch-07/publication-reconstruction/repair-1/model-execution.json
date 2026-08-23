@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-publication-repair-execution",
+  "protocolId": "assessment-production-post-canary-batch-07-publication-repair-1",
+  "status": "batch-07-one-context-publication-repair-gate-passed",
+  "gateStartedAt": "2026-08-23T22:22:48.840Z",
+  "gateCompletedAt": "2026-08-23T22:23:29.069Z",
+  "contextsPlanned": 1,
+  "contextsAttempted": 1,
+  "contextsUnattempted": 0,
+  "unattemptedContextIndexes": [],
+  "validContexts": 1,
+  "invalidContexts": 0,
+  "attempts": 1,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrections": 0,
+  "maximumObservedConcurrency": 1,
+  "schedulerRamp": [
+    1
+  ],
+  "wallElapsedMs": 40228,
+  "aggregateModelElapsedMs": 40219,
+  "rampPhases": [
+    {
+      "phase": "operational-canary-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetId": "debate-193-repair-0",
+      "debateNumber": "193",
+      "debateId": "crossan-licona-historical-jesus-2018",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T22:22:48.842Z",
+      "completedAt": "2026-08-23T22:23:29.061Z",
+      "elapsedMs": 40219,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "representativeQuotes.con.text",
+        "moveProse.pro-participatory-metaphorical-resurrection.critique"
+      ],
+      "copiedInputBytes": 31374,
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "eff2c0c2dde47e5bbdc3374292770ce6b683f317c23adb446a3a74c41578d0a0",
+      "stderrSha256": "66612f2ce164f1c2006e39c4199564c0ea42d8939bf979b02bf47c56ee6edcfc",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "73c3a9ecbb289f40d5d229a9c670fd53af04146fdd3b8143b8a8e2c2902f4cc0",
+      "validationSha256": "9af0db53d3181ba7d967c2e8d48c4e58f55e664d983a19f30a89d2615fc37f60",
+      "provenanceSha256": "1228316c4d8b7f5554f6a12c17bed9208481f9b29f490a2d46fd3cdd911d7f6b",
+      "validationSummary": {
+        "status": "passed",
+        "contextIndex": 0,
+        "debateNumber": "193",
+        "correctedFields": [
+          {
+            "path": "representativeQuotes.con.text",
+            "type": "representative-quote-exact-source-substring",
+            "words": 9,
+            "characters": 51,
+            "exactSourceSubstring": true
+          },
+          {
+            "path": "moveProse.pro-participatory-metaphorical-resurrection.critique",
+            "type": "critique-word-boundary",
+            "words": 116,
+            "characters": 1013,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "rejectedOriginalOutputsPreserved": true,
+  "acceptedOriginalOutputsPreserved": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0
+}
