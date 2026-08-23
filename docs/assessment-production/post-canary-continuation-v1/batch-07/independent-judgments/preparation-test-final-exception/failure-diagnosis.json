@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0-assessment-production-stop-rule-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-test-final-exception",
+  "status": "batch-07-independent-judgment-preparation-test-source-authentication-conflict-diagnosed-no-correction-authorized",
+  "diagnosedAt": "2026-08-23T18:48:00Z",
+  "failureCategory": "deterministic-preparation-validation",
+  "cause": "The frozen preparation manifest authenticates the original preparation-test source. The authorized one-line correction changes that source hash, and the corrected test's complete source-hash replay therefore rejects itself against the unchanged frozen manifest.",
+  "evidence": {
+    "preparationManifestPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-manifest.json",
+    "preparationManifestSha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce",
+    "frozenTestSourceSha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6",
+    "correctedTestSourceSha256": "20a46ed558d6924ab4f4e486027be1c47e394cd5a3524cb35d2ac00eec7e74cc",
+    "authorizedPendingAudioExpectation": 0
+  },
+  "preserved": {
+    "preparationManifestChanged": false,
+    "frozenPacketsChanged": false,
+    "schemasChanged": false,
+    "inventoriesChanged": false,
+    "sourcesChanged": false,
+    "scoresChanged": false,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "authorizationDisposition": "stopped-before-manifest-change-preimage-overlay-rerun-or-model-activation"
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0-assessment-production-user-authorized-final-test-exception-execution",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-test-final-exception",
+  "status": "batch-07-independent-judgment-preparation-test-pending-audio-correction-applied-validation-failed",
+  "executedAt": "2026-08-23T18:47:00Z",
+  "attempt": 1,
+  "correction": {
+    "target": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs",
+    "preimageSha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6",
+    "postimageSha256": "20a46ed558d6924ab4f4e486027be1c47e394cd5a3524cb35d2ac00eec7e74cc",
+    "writtenByteForByteFromFrozenProposal": true,
+    "changedLines": 1,
+    "oldExpectation": 2,
+    "newExpectation": 0
+  },
+  "validation": {
+    "attempts": 1,
+    "exitCode": 1,
+    "failedLine": 148,
+    "error": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs: preparation source hash changed",
+    "actualTestSha256": "20a46ed558d6924ab4f4e486027be1c47e394cd5a3524cb35d2ac00eec7e74cc",
+    "frozenManifestTestSha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6"
+  },
+  "ordinaryRetries": 0,
+  "furtherPreparationCorrections": 0,
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "scoresDerived": 0,
+  "productionMutations": 0,
+  "directIncrementalCostUsd": 0
+}
