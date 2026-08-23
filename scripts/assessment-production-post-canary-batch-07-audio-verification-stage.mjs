@@ -43,6 +43,9 @@ const preparationValidationRecoveryRoot = `${stageRoot}/preparation-validation-r
 const preparationValidationRecoveryActivationPath = `${preparationValidationRecoveryRoot}/activation.json`;
 const stagePreimagePath = `${preparationValidationRecoveryRoot}/stage-preimage.mjs`;
 const preparationTestPreimagePath = `${stageRoot}/preparation-validation-recovery-1/preparation-test-preimage.mjs`;
+const finalActivationRecoveryRoot = `${stageRoot}/activation-validation-recovery-final`;
+const finalActivationRecoveryCredentialPath = `${finalActivationRecoveryRoot}/activation.json`;
+const activationRunnerPreimagePath = `${finalActivationRecoveryRoot}/runner-preimage.mjs`;
 const transcribeTool = "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py";
 const executionTools = [
   toolPath,
@@ -56,14 +59,54 @@ const round = (value, places = 7) => Number(value.toFixed(places));
 const readJson = (file) => readFile(file, "utf8").then(JSON.parse);
 const standingAuthorization = await loadAndValidatePostCanaryBatch07StandingAuthorization();
 
+async function loadFinalActivationRecovery() {
+  const credential = await readJson(finalActivationRecoveryCredentialPath);
+  assert.equal(
+    sha256(await readFile(credential.correctionPlan.path)),
+    credential.correctionPlan.sha256,
+    "final activation correction plan changed"
+  );
+  assert.equal(
+    sha256(await readFile(credential.overlayRule.path)),
+    credential.overlayRule.sha256,
+    "final activation overlay rule changed"
+  );
+  assert.equal(
+    sha256(await readFile(credential.lockedManifests.preparation.path)),
+    credential.lockedManifests.preparation.sha256,
+    "frozen preparation manifest changed"
+  );
+  assert.equal(
+    sha256(await readFile(credential.lockedManifests.execution.path)),
+    credential.lockedManifests.execution.sha256,
+    "frozen execution manifest changed"
+  );
+  assert.equal(
+    sha256(await readFile(toolPath)),
+    credential.acceptedCurrentRunnerSha256,
+    "accepted current runner changed"
+  );
+  assert.equal(
+    sha256(await readFile(preparationTestPath)),
+    credential.acceptedCorrectedTestSha256,
+    "accepted preparation test changed"
+  );
+  return credential;
+}
+
 async function validatePreparation(preparation) {
   const recovery = await readJson(preparationValidationRecoveryActivationPath);
+  await loadFinalActivationRecovery();
   assert.equal(
     sha256(await readFile(recovery.correctionPlan.path)),
     recovery.correctionPlan.sha256,
     "preactivation correction plan changed"
   );
-  assert.equal(sha256(await readFile(toolPath)), recovery.acceptedStageSha256, "accepted stage changed");
+  assert.equal(
+    sha256(await readFile(activationRunnerPreimagePath)),
+    recovery.acceptedStageSha256,
+    "prior accepted stage preimage changed"
+  );
   assert.equal(
     sha256(await readFile(preparationTestPath)),
     recovery.acceptedCorrectedTestSha256,
@@ -240,6 +283,7 @@ function invoke(args) {
 }
 
 async function validateActivation(manifest) {
+  const finalRecovery = await loadFinalActivationRecovery();
   assert.equal(
     manifest.status,
     "frozen-five-post-canary-batch-07-paid-known-speaker-diarizations-authorized-under-standing-authorization"
@@ -254,11 +298,18 @@ async function validateActivation(manifest) {
   assert.equal(manifest.costEstimate.maximumAuthorizedCostUsd, 1);
   assert.equal(manifest.costEstimate.primaryExpectedFutureExecutionCostUsd, 0.1654);
   for (const [file, digest] of Object.entries(manifest.sourceHashes)) {
-    assert.equal(sha256(await readFile(file)), digest, `source hash mismatch: ${file}`);
+    const authenticatedPath = file === toolPath
+      ? stagePreimagePath
+      : file === preparationTestPath
+        ? preparationTestPreimagePath
+        : file;
+    assert.equal(sha256(await readFile(authenticatedPath)), digest, `source hash mismatch: ${file}`);
   }
   for (const [file, digest] of Object.entries(manifest.executionToolHashes)) {
-    assert.equal(sha256(await readFile(file)), digest, `execution tool hash mismatch: ${file}`);
+    const authenticatedPath = file === toolPath ? activationRunnerPreimagePath : file;
+    assert.equal(sha256(await readFile(authenticatedPath)), digest, `execution tool hash mismatch: ${file}`);
   }
+  assert.equal(finalRecovery.paidCallsBeforePassingGateMaximum, 0);
   assert.equal(sha256(await readFile(manifest.preparationManifest.path)), manifest.preparationManifest.sha256);
   assert.equal(sha256(await readFile(manifest.canonicalSourceGate.productionManifest)), manifest.canonicalSourceGate.productionManifestSha256);
   for (const debate of manifest.canonicalSourceGate.debates) {
