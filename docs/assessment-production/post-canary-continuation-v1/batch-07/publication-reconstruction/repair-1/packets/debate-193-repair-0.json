@@ -1,0 +1,268 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-publication-repair-1",
+  "contextIndex": 0,
+  "packetId": "debate-193-repair-0",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "debateNumber": "193",
+  "debateId": "crossan-licona-historical-jesus-2018",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/outputs/debate-193.json",
+    "immutableRejectedOutputSha256": "93c4d8ecf77a93763a09bcadbab0aaa1931869b2de0e22397ac4cc6240140e23",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/packets/debate-193.json",
+    "publicationPacketSha256": "e0ca7d646bd0b6f70f9d4e28da85127eabad496f0944880f467991f88cde2f19"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "representativeQuotes.con.text",
+      "moveProse.pro-participatory-metaphorical-resurrection.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "representativeQuotes.con.text",
+      "type": "representative-quote-exact-source-substring",
+      "side": "con",
+      "sourceMoveId": "con-paul-bodily-transformation",
+      "originalValue": "our bodies will be raised and transformed",
+      "originalValueSha256": "5a7bf9dcfb3d72fdb503042daa226acd9c1e38be8e477ac84c77a0ca4ce34e3b",
+      "lockedMove": {
+        "moveId": "con-paul-bodily-transformation",
+        "sectionId": "bodily-and-metaphorical-resurrection",
+        "side": "con",
+        "speaker": "Michael Licona",
+        "moveKind": "reply",
+        "proposition": "Paul describes Jesus's resurrection and believers' future resurrection as the raising and transformation of bodies, not merely as a metaphor for changed conduct.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "79:05",
+        "sourceSpan": {
+          "startEvent": 681,
+          "endEvent": 734,
+          "startMs": 4745580,
+          "endMs": 5079690
+        },
+        "sourceExcerpt": "back with him how are they going to be raised simple he's bringing back the spirits of believers with him and then they're going to be put back in the bodies and those bodies are going to be raised and transformed it is a bodily physical resurrection we're gonna be raised just as Christ was raised and Paul says elsewhere that and if you confess with your mouth Jesus is Lord and",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-physical-resurrection"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-participatory-metaphorical-resurrection",
+            "pro-raising-narratives-nonliteral-reading"
+          ],
+          "components": [
+            {
+              "componentId": "con-paul-bodily-transformation-component-01",
+              "targetMoveId": "pro-participatory-metaphorical-resurrection",
+              "text": "Whether the earliest resurrection proclamation concerns transformed bodies rather than only communal conduct and metaphorical vindication.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-paul-bodily-transformation-component-02",
+              "targetMoveId": "pro-raising-narratives-nonliteral-reading",
+              "text": "Whether resurrection language is fundamentally nonliteral.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly interprets Paul as teaching bodily raising and transformation parallel to Christ's resurrection.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "It explicitly contacts the decisive bodily-versus-metaphorical issue with multiple Pauline claims."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly contacts the decisive bodily-versus-metaphorical issue with multiple Pauline claims."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "Bodies, transformation, Christ's resurrection, believers' future resurrection, and changed conduct are clearly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The cited Pauline language strongly supports bodily transformation, but the asserted reconstruction of spirits being put back into bodies is more specific than the presented warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul's resurrection language could denote transformed existence or conduct without resuscitated physicality.",
+          "decisiveQualification": "Paul explicitly coordinates believers' bodies, their transformation, and Christ's own raising, exceeding a merely behavioral metaphor."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 87,
+            "rationale": "The move closely invokes Pauline passages about returning believers, bodies, raising, and transformation, though rival readings of 'spiritual body' are compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central physical-resurrection bridge on the decisive Pauline issue."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (92 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Licona expounds Paul as saying returning believers are reunited with bodies that are raised and transformed, just as Christ was raised.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-participatory-metaphorical-resurrection.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-participatory-metaphorical-resurrection",
+      "originalValue": "Strongest feature: The move develops resurrection as consequential communal participation rather than decorative symbolism, connecting divine vindication, changed conduct, collective survival, and continuing allegiance to Jesus's nonviolent vision. Principal limitation: The ethical and participatory account establishes an important meaning of resurrection but does not show that this meaning excludes bodily transformation or adequately interpret Paul's coordinated language about Christ and believers. Live burden: The metaphorical route must explain the earliest physicality claims and demonstrate that its participatory reading accounts for their historical development more persuasively than a bodily event supplemented by communal consequences. Locked score: The strong and competent band recognizes conceptual richness, central relevance, and a coherent positive alternative, while reflecting insufficient evidentiary contact with physical-resurrection testimony and an underdeveloped response to the possibility that bodily and metaphorical dimensions coexist.",
+      "originalValueSha256": "16e991cae17c00b4716543077c84c2d6174ba3b88849bb9412c439620a1379f3",
+      "lockedMove": {
+        "moveId": "pro-participatory-metaphorical-resurrection",
+        "sectionId": "bodily-and-metaphorical-resurrection",
+        "side": "pro",
+        "speaker": "John Dominic Crossan",
+        "moveKind": "constructive",
+        "proposition": "Jesus rose metaphorically, and resurrection becomes consequential reality through communal participation in the transformed life that the resurrection proclamation calls believers to live.",
+        "importance": 3,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "73:56",
+        "sourceSpan": {
+          "startEvent": 639,
+          "endEvent": 680,
+          "startMs": 4436110,
+          "endMs": 4745580
+        },
+        "sourceExcerpt": "metaphorically it becomes reality now let me unpack that just a little bit I would be careful on time every major incident in the life of Jesus let's put it this way is recorded in the New Testament I mean you know if you were painting the New Testament you you'd know what what the flight in Egypt was like you know the Transfiguration is described the ascension is a strike twice you know the only one that is never described is the resurrection",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 84,
+          "characterCount": 447
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-historical-metaphorical-account"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move states the pro route's motion-level account by connecting metaphorical resurrection with communal participation and transformed life.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "Within constructive moves, it directly supplies the route's principal answer to the resurrection portion of the motion."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "Within constructive moves, it directly supplies the route's principal answer to the resurrection portion of the motion."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "'Metaphorically becomes reality' is explained through participation, though the ontological status of Jesus's rising remains somewhat elastic."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical claim that Jesus rose metaphorically receives less historical warrant than the developed claim that resurrection language transforms communities."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A bodily resurrection could ground the same communal participation and transformed conduct without being exhausted by bodily mechanics.",
+          "decisiveQualification": "Showing consequential metaphorical meaning does not exclude an accompanying bodily event."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "Within the motion tier, this directly states and explains the pro route's central metaphorical-resurrection conclusion."
+          },
+          "representationalCharity": {
+            "value": 64,
+            "rationale": "The move develops metaphorical consequence well but materially underaddresses the live compatibility of bodily event and participatory meaning."
+          }
+        },
+        "evidenceBasis": "Crossan states that Jesus rose metaphorically and that the metaphor becomes reality through lived participation, noting that the New Testament never describes the resurrection event itself.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
