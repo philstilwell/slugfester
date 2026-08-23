@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 14,
+  "packetId": "debate-135-packet-9",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-miracles-do-not-negate-existence.critique",
+      "moveProse.con-legend-mundane-founder-insufficient.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-miracles-do-not-negate-existence.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-miracles-do-not-negate-existence",
+      "originalValue": "Strongest feature: The Augustus comparison provides a clean counterexample to the inference from false supernatural claims to personal nonexistence, preserving a precise distinction between ontological existence, narrative reliability, and the explanatory importance later traditions assign to their subject. Principal limitation: The analogy establishes only non-entailment; it does not independently attest Jesus, measure the probability of a historical founder, or answer whether a demythologized person adequately explains Christianity's distinctive emergence and content. Live burden: The pro side must combine this logical correction with positive source evidence and a plausible movement-development account rather than treating compatibility as sufficient proof. Locked score: The very strong band reflects exceptional clarity, direct diagnostic force, stable scope, matched calibration, and charitable preservation of the opponent's explanatory concern, while recognizing that the move defeats one inference rather than completing the wider historical case by itself.",
+      "originalValueSha256": "ac077a97ab875dd2c7df649c6f871c0924af1dd082354c9fb1a2ca74fea071db",
+      "lockedMove": {
+        "moveId": "pro-miracles-do-not-negate-existence",
+        "sectionId": "legendary-development-and-explanatory-fit",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "Rejecting miraculous stories about Jesus does not negate his existence, just as false divine claims about Augustus do not erase Augustus from history.",
+        "importance": 3,
+        "finalScore": 92,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "117:00",
+        "sourceSpan": {
+          "startEvent": 2711,
+          "endEvent": 2749,
+          "startMs": 7020760,
+          "endMs": 7112480
+        },
+        "sourceExcerpt": "the son of God and he wasn't really miraculously Bor he didn't really Ascend to Heaven well of course he didn't but he but there still was a Caesar Augustus I think history really matters I mean I think it matters whether we we we correctly know what happened in the past especially with important uh historical figures and I think um whatever else we might think about Jesus he's",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-founder-insufficiency"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "con-origins-ordinary-crucified-insufficient",
+            "con-legend-demythologized-core"
+          ],
+          "components": [
+            {
+              "componentId": "pro-miracles-do-not-negate-existence-component-01",
+              "targetMoveId": "con-origins-ordinary-crucified-insufficient",
+              "text": "A mundane historical figure is inadequate because the relevant Christian figure is the miracle-working Christ.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-miracles-do-not-negate-existence-component-02",
+              "targetMoveId": "con-legend-demythologized-core",
+              "text": "Removing supernatural claims leaves no meaningful basis for retaining the existence of the underlying person.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The Augustus comparison expressly identifies the inference from false supernatural claims to nonexistence as invalid and states that historical existence remains a separate question.",
+          "responsivenessWithinClass": {
+            "value": 94,
+            "rationale": "It explicitly attacks the decisive inference and supplies a clear counterexample preserving the legitimate historical issue."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It explicitly attacks the decisive inference and supplies a clear counterexample preserving the legitimate historical issue."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is a precise non-entailment: rejecting miracle stories does not by itself negate the existence of their subject."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The counterexample fully warrants the logical point that legendary claims do not entail personal nonexistence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Jesus's supernatural identity is so constitutive that removing it leaves no historically meaningful founder.",
+          "decisiveQualification": "Explanatory importance and ontological existence are separate even when legends dominate the surviving portrait."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (94 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central con founder-insufficiency inference by separating causal adequacy from existence."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The reply preserves the opponent's explanatory concern while accurately rejecting its use as an existence inference."
+          }
+        },
+        "evidenceBasis": "The excerpt rejects Augustus's divine and miraculous claims while observing that Caesar Augustus nevertheless existed.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-legend-mundane-founder-insufficient.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-legend-mundane-founder-insufficient",
+      "originalValue": "Strongest feature: The response clearly limits itself to explanatory adequacy rather than denying possibility, and the comparison with commonplace teachers and healers directly asks what would distinguish one obscure founder sufficiently to generate an exalted Christ movement. Principal limitation: Commonplaceness supplies no base rate for later movement formation, while the modern analogy does not assess how execution, followers' experiences, resurrection belief, communal transmission, and political conditions could transform an initially ordinary figure. Live burden: The con side must compare complete developmental pathways and show that the proposed founder adds less explanatory value than a mythic-scriptural origin. Locked score: The strong band reflects relevant burden contact, appropriate uncertainty, and a fair challenge to an underspecified founder hypothesis, tempered by modest evidentiary warrant and failure to engage the strongest staged transformation account rather than the mundane figure in isolation.",
+      "originalValueSha256": "3e08bb0cce1ee3a8b0a1f18f666e9a8cdfedf46bd0743c7cb8e53f21df476e0a",
+      "lockedMove": {
+        "moveId": "con-legend-mundane-founder-insufficient",
+        "sectionId": "legendary-development-and-explanatory-fit",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "An ordinary itinerant teacher, healer, or exorcist would be too commonplace to provide an adequate foundation for the exalted Christ myth.",
+        "importance": 3,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "126:44",
+        "sourceSpan": {
+          "startEvent": 2938,
+          "endEvent": 2967,
+          "startMs": 7604280,
+          "endMs": 7686400
+        },
+        "sourceExcerpt": "an itinerate teacher or even an exorcist as uh Josephus and Luc and ofas say these people were a dime a dozen it would would be like almost like saying Kenneth copelan was the son of God uh he has an avid group of fans that thinks he's teaching wisdom and and he's even supposedly healing people but I I don't know that that is an adequate foundation for uh Jesus Christ it's like",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-founder-insufficiency"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-miracles-do-not-negate-existence",
+            "pro-legend-pattern-person-distinction"
+          ],
+          "components": [
+            {
+              "componentId": "con-legend-mundane-founder-insufficient-component-01",
+              "targetMoveId": "pro-miracles-do-not-negate-existence",
+              "text": "The decisive issue is whether bare compatibility with existence supplies an adequate historical foundation for the exalted Christ tradition.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-legend-mundane-founder-insufficient-component-02",
+              "targetMoveId": "pro-legend-pattern-person-distinction",
+              "text": "Whether a commonplace founder remains explanatorily significant after legendary accretions are distinguished from personal existence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply concedes the type of mundane figure but argues such figures were common and therefore inadequate to explain the specific exalted Christ.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "It contacts explanatory adequacy and the legend-person distinction, though it does not refute the narrower compatibility claim."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts explanatory adequacy and the legend-person distinction, though it does not refute the narrower compatibility claim."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly claims inadequacy as a foundation rather than impossibility of an ordinary person's existence."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker's expressed doubt is proportionate to an analogical explanatory challenge rather than a demonstrated exclusion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A commonplace teacher could become exceptional through followers' experiences, beliefs, and later legendary development.",
+          "decisiveQualification": "Commonplaceness at the outset does not by itself measure the probability of later movement formation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (61 and 64); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central founder-insufficiency bridge by challenging a mundane figure's explanatory adequacy."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The move fairly targets adequacy rather than possibility, but it does not engage the strongest multi-stage transformation account."
+          }
+        },
+        "evidenceBasis": "The excerpt calls itinerant teachers and exorcists commonplace and compares the proposed foundation with Kenneth Copeland.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

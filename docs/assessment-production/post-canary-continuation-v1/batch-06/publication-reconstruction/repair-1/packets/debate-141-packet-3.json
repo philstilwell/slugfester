@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 3,
+  "packetId": "debate-141-packet-3",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "141",
+  "debateId": "fischer-dillahunty-axiomatic-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-141.json",
+    "immutableRejectedOutputSha256": "0f295e3a0f62abe0465d908f6c8952adc0f212a4928ca8a316bfa27f21200358",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-141.json",
+    "publicationPacketSha256": "658995eb777005565d6c35d6769edd4d9bfbc898b9e04f8f7b0d8c8dc06f8161"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-selective-biblical-literalism.critique"
+    ],
+    "writableFieldCount": 1,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-selective-biblical-literalism.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-selective-biblical-literalism",
+      "originalValue": "Strongest feature: The reply identifies a genuine consistency burden by demanding a non-selective criterion for distinguishing literal resurrection claims from figurative readings of destructive or slavery-related passages across the same scriptural collection. Principal limitation: The comparative assertion that resurrection is more plausibly hyperbolic receives no supporting textual analysis, and the reply leaves unanswered the affirmative's specific contradiction between total killing and subsequent expulsion. Live burden: The skeptic must engage genre, context, rhetorical convention, authorial purpose, and historical claims case by case while demonstrating that the same interpretive principles operate across favorable and unfavorable passages. Locked score: The strong band reflects clear scope, calibrated framing, relevant consistency pressure, and meaningful partial contact, tempered by absent comparative substantiation, incomplete response to the local textual rationale, and no engagement with the separate axiom distinction.",
+      "originalValueSha256": "bba3b9b6047221b12dc065e9d534fb3cb20914e53c73733ee9dc29b960cf3fbd",
+      "lockedMove": {
+        "moveId": "con-selective-biblical-literalism",
+        "sectionId": "scope-and-consistency-of-theistic-evidence",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Treating resurrection as literal while classifying commands concerning killing or slavery as hyperbole requires a non-selective basis for distinguishing literal from figurative scripture.",
+        "importance": 2,
+        "finalScore": 77,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "150:35",
+        "sourceSpan": {
+          "startEvent": 4583,
+          "endEvent": 4592,
+          "startMs": 9035760,
+          "endMs": 9055520
+        },
+        "sourceExcerpt": "what's one of these maybe we have a follow-up discussion of which parts of the bible are hyperbole and how can you tell because i would say that a resurrection is far more likely to be hyperbolic than hey go kill all these people or hey you can own slaves but then i'm not cherry-picking i'm throwing it all out but",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 63,
+          "characterCount": 315
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-source-consistency"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "pro-destruction-texts-as-hyperbole",
+            "pro-resurrection-historical-evidence",
+            "pro-axiom-presupposition-distinction"
+          ],
+          "components": [
+            {
+              "componentId": "con-selective-biblical-literalism-component-01",
+              "targetMoveId": "pro-destruction-texts-as-hyperbole",
+              "text": "A principled method is required to distinguish literal resurrection from figurative killing or slavery passages.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-selective-biblical-literalism-component-02",
+              "targetMoveId": "pro-resurrection-historical-evidence",
+              "text": "The resurrection's literal treatment is compared with other passages, though its historical evidence is not directly examined.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-selective-biblical-literalism-component-03",
+              "targetMoveId": "pro-axiom-presupposition-distinction",
+              "text": "The remark does not address the conceptual axiom-presupposition distinction.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly challenges selective interpretation but does not answer the specific textual contradiction offered for the destruction passages.",
+          "responsivenessWithinClass": {
+            "value": 72,
+            "rationale": "It contacts the broader decisive consistency demand while leaving the local drive-out versus kill-all rationale unanswered."
+          },
+          "responsiveness": {
+            "value": 72,
+            "rationale": "It contacts the broader decisive consistency demand while leaving the local drive-out versus kill-all rationale unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly asks for a criterion distinguishing hyperbole from literal text and limits its comparative judgment to resurrection, killing, and slavery examples."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim that resurrection is more likely hyperbolic is explicitly presented as the speaker's comparative judgment, but no supporting textual analysis is supplied."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Different genres and internal textual tensions may justify different literalness judgments.",
+          "decisiveQualification": "Those distinctions require a consistently applied criterion rather than case-by-case conclusions favorable to prior belief."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The consistency challenge coherently compares literal resurrection with figurative violence texts, though the assertion that resurrection is more likely hyperbolic is underargued."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (65 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary source-consistency bridge and ranks at the top of that tier by demanding a shared interpretive standard."
+          },
+          "representationalCharity": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (83 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt asks how hyperbole is identified and contrasts literal resurrection with commands to kill or own slaves, alleging cherry-picking without a stated criterion.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

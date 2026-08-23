@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 2,
+  "packetId": "debate-141-packet-2",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "141",
+  "debateId": "fischer-dillahunty-axiomatic-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-141.json",
+    "immutableRejectedOutputSha256": "0f295e3a0f62abe0465d908f6c8952adc0f212a4928ca8a316bfa27f21200358",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-141.json",
+    "publicationPacketSha256": "658995eb777005565d6c35d6769edd4d9bfbc898b9e04f8f7b0d8c8dc06f8161"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-axiomatic-evidence-standard.critique",
+      "moveProse.pro-generic-theism-scope.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-axiomatic-evidence-standard.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-axiomatic-evidence-standard",
+      "originalValue": "Strongest feature: The schematic progression from axiomatic proposition P to derivative proposition Q clarifies how a foundationalist structure could transmit justification and offers a recognizable response to concerns about endless justificatory regress. Principal limitation: The illustration establishes only conditional transmission from a warranted premise, not that the selected premise is true, self-evident, or evidentially discriminating, while describing this method as the strongest possible evidence exceeds the example. Live burden: The affirmative must distinguish logical consequence from evidential confirmation, authenticate the proposed theistic axiom, and show why incompatible foundational systems cannot generate equally valid internal deductions. Locked score: The mixed band recognizes intelligible structure, central relevance, partial responsiveness, and serious foundational ambition, but records materially excessive calibration, unresolved premise selection, incomplete rival discrimination, and conceptual instability between axiomatic truth and evidential strength.",
+      "originalValueSha256": "1fe395c27e3d34d379b66a953a706e3f3af9c93a839285f6861cba3351adb8f1",
+      "lockedMove": {
+        "moveId": "pro-axiomatic-evidence-standard",
+        "sectionId": "epistemic-burden-and-good-evidence",
+        "side": "pro",
+        "speaker": "Ben Fischer",
+        "moveKind": "reply",
+        "proposition": "The strongest evidence is an argument anchored in an axiomatic proposition, because merely coherent or empirical support otherwise permits further justificatory questions.",
+        "importance": 3,
+        "finalScore": 68,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "74:25",
+        "sourceSpan": {
+          "startEvent": 2321,
+          "endEvent": 2364,
+          "startMs": 4465679,
+          "endMs": 4553600
+        },
+        "sourceExcerpt": "seems it's just uh it's going to lead to more questions and uh to me that's the strongest possible evidence that we could have would be axiomatic evidence now on the basis of an axiom suppose that p is an axiom and then we build p directly implies q q is not an axiom but it's rooted it's the the anchoring uh proposition so to speak is an axiom that's a good argument i would say",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-evidence-standard"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-incompatible-axiom-symmetry",
+            "con-evidence-discriminates-rivals",
+            "con-axiom-is-not-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "pro-axiomatic-evidence-standard-component-01",
+              "targetMoveId": "con-incompatible-axiom-symmetry",
+              "text": "Whether axiomatic starting points can yield discriminating good evidence.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-axiomatic-evidence-standard-component-02",
+              "targetMoveId": "con-evidence-discriminates-rivals",
+              "text": "Whether the proposed standard distinguishes competing explanations.",
+              "contacted": false,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-axiomatic-evidence-standard-component-03",
+              "targetMoveId": "con-axiom-is-not-evidence",
+              "text": "Whether axiom status itself constitutes evidence for the starting proposition.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move answers by proposing axiom-anchored deduction as the strongest evidence, but it does not explain why the chosen axiom is warranted or discriminates incompatible starts.",
+          "responsivenessWithinClass": {
+            "value": 65,
+            "rationale": "This partial answer contacts the role of axioms in evidence but leaves the decisive symmetry and warrant components unanswered."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "This partial answer contacts the role of axioms in evidence but leaves the decisive symmetry and warrant components unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The P-implies-Q structure is clear, but 'strongest evidence,' axiom, and evidential anchoring are not fully distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling axiomatic evidence the strongest possible evidence is materially stronger than the schematic P-implies-Q example warrants, especially for the disputed premise."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Foundational propositions can stop regress while still being false, disputed, or nondiscriminating between incompatible systems.",
+          "decisiveQualification": "A derivative argument is only as sound as the axiom's justified status and the warrant for the implication."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (65 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 54,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (53 and 54); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the con central evidence standard by offering a rival foundational standard, placing it solidly within the central tier."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The move explains foundationalism but omits the decisive authentication challenge raised by incompatible axioms."
+          }
+        },
+        "evidenceBasis": "The excerpt calls axiomatic evidence strongest, then illustrates an axiom P implying Q and says the argument is good because its anchoring proposition is axiomatic.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-generic-theism-scope.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-generic-theism-scope",
+      "originalValue": "Strongest feature: The explicit concession that the argument does not uniquely establish Christianity substantially improves calibration, accurately limits the conclusion to generic theism, and introduces a tentative parsimony consideration against multiplying interacting divine agents. Principal limitation: Even this narrowed conclusion may exceed a minimal first-cause result, because agency, freedom, unity, and recognizable deistic or monotheistic properties require bridges beyond the existence of an ultimate causal ground. Live burden: The affirmative must identify which attributes follow from ultimacy alone, defend the inference to agency, and explain why parsimony favors one personal cause over an impersonal foundation rather than merely disfavoring plurality. Locked score: The strong band reflects disciplined scope control, representational charity, explicit qualification, and constructive relevance, while preserving the unresolved property-gap and the move's inability to validate the underlying axiomatic cosmology.",
+      "originalValueSha256": "01407012afe2af1375e3f339fb2b2be366d3b5301e21fce6913ef9fa53b41b98",
+      "lockedMove": {
+        "moveId": "pro-generic-theism-scope",
+        "sectionId": "scope-and-consistency-of-theistic-evidence",
+        "side": "pro",
+        "speaker": "Ben Fischer",
+        "moveKind": "reply",
+        "proposition": "The first-cause argument supports generic deism or classical monotheism rather than Christianity uniquely, while parsimony disfavors multiplying interacting divine agents.",
+        "importance": 2,
+        "finalScore": 77,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "88:41",
+        "sourceSpan": {
+          "startEvent": 2747,
+          "endEvent": 2766,
+          "startMs": 5321280,
+          "endMs": 5369280
+        },
+        "sourceExcerpt": "that the uh the argument that i have given is not necessarily to a unique christian god this is just sort of a basic theistic argument which would get you deism it would certainly get you uh any of the classical monolith monotheistic views i do think that if we're talking about uh sort of uh beings endowed with uh free will that interact with uh one another that seems to uh and",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-hypothesis-scope"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-incompatible-axiom-symmetry",
+            "con-fallible-cultural-experience"
+          ],
+          "components": [
+            {
+              "componentId": "pro-generic-theism-scope-component-01",
+              "targetMoveId": "con-incompatible-axiom-symmetry",
+              "text": "The argument's conclusion is limited to deism or classical monotheism rather than a uniquely Christian God.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-generic-theism-scope-component-02",
+              "targetMoveId": "con-fallible-cultural-experience",
+              "text": "The scope concession avoids relying on culture-specific experience to establish Christianity.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "It addresses rival-theism scope and offers parsimony against multiple interacting agents, but does not validate the underlying first-cause axiom.",
+          "responsivenessWithinClass": {
+            "value": 63,
+            "rationale": "The reply contacts a secondary scope consequence while leaving the decisive incompatible-axiom procedure unresolved."
+          },
+          "responsiveness": {
+            "value": 70,
+            "rationale": "The reply contacts a secondary scope consequence while leaving the decisive incompatible-axiom procedure unresolved."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move explicitly limits the argument's reach, distinguishes generic deism from Christianity, and identifies multiplicity of interacting agents as the parsimony concern."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker openly concedes the non-unique Christian scope and presents the multiple-agent consideration tentatively, matching the limited warrant."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A first cause might support only a minimal causal ground, not deism or monotheism with agency and freedom.",
+          "decisiveQualification": "Further properties require separate bridges beyond the mere existence of an ultimate cause."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The scope concession is clear and consistent, while the parsimony move from interacting agents toward monotheism leaves one bounded explanatory bridge implicit."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (73 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly addresses and clarifies the subsidiary hypothesis-scope bridge, placing it at the top of the selected relevance tier."
+          },
+          "representationalCharity": {
+            "value": 76,
+            "rationale": "The scope concession is fair, but the move still somewhat overstates what follows from the first-cause argument."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly says the argument is not uniquely Christian, reaches deism or classical monotheism, and begins a parsimony objection to multiple interacting free agents.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

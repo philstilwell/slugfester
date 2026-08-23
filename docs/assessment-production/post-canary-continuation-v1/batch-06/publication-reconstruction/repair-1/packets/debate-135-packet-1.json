@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 6,
+  "packetId": "debate-135-packet-1",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-gospel-independent-early-traditions.critique",
+      "moveProse.pro-paul-earthly-jewish-jesus.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-gospel-independent-early-traditions.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-gospel-independent-early-traditions",
+      "originalValue": "Strongest feature: The argument identifies precisely the source characteristics that would make attestation historically valuable—multiplicity, independence, early dating, and Palestinian linguistic provenance—and connects those characteristics directly to the central claim that Jesus is not merely a late narrative creation. Principal limitation: The excerpt names no particular source relationships, compresses the case for independence, and describes Aramaic provenance with near-certainty without displaying the linguistic or transmission analysis needed to substantiate that confidence. Live burden: The pro side must identify the relevant traditions, defend their dates and nondependence, and explain why reconstructed layers count as witnesses rather than alternative organizations of shared material. Locked score: The strong band reflects excellent relevance and a coherent cumulative-evidence design, tempered by missing source-level verification, unstable scope concerning how many witnesses exist, and confidence that runs somewhat ahead of the evidence presented here.",
+      "originalValueSha256": "6948badc9606df3ac84c5880c81f9fed2e297f2076c2aa6fd48de3d4a68fd189",
+      "lockedMove": {
+        "moveId": "pro-gospel-independent-early-traditions",
+        "sectionId": "gospel-traditions-and-historical-recovery",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Multiple independent first-century sources, including traditions traceable to Aramaic-speaking Palestine, provide unusually early attestation for Jesus.",
+        "importance": 3,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "13:26",
+        "sourceSpan": {
+          "startEvent": 300,
+          "endEvent": 400,
+          "startMs": 806320,
+          "endMs": 1065760
+        },
+        "sourceExcerpt": "multiple independent sources from the first century how is it possible that you have so many sources about somebody who never existed these sources are independent of each other they're not copying one another you have independent sources from before the gospels some of these sources have traditions in them that almost certainly go back to Aramaic speaking Palestine some of these sources record sayings of Jesus",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 414
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-source-attestation"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move presents early multiplicity, independence, and Aramaic Palestinian provenance as positive source attestation.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 92,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The proposition is clear, but the scope of the claimed sources and the basis for their independence are compressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Claims of independence and near-certain Aramaic provenance are stronger than the verification supplied in this excerpt."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The move identifies relevant source features but does not document particular sources or defend their independence here."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable central bridge concerning multiple comparatively early attestations."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move builds a positive source case without articulating and testing a developed dependence alternative."
+          }
+        },
+        "evidenceBasis": "The excerpt asserts multiple independent first-century and pre-Gospel sources, including traditions traced to Aramaic-speaking Palestine.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-paul-earthly-jewish-jesus.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-paul-earthly-jewish-jesus",
+      "originalValue": "Strongest feature: The move places the earliest principal evidence at the center of the dispute and states a concrete terrestrial interpretation—Jewish identity, teaching activity, and execution by earthly opponents—that would strongly anchor the historical-person route if textually sustained. Principal limitation: The excerpt asserts those Pauline features without interpreting the disputed passages, defining the authentic-letter scope, or demonstrating why references to rulers, revelation, and scripture cannot support a celestial or mixed-agency reading. Live burden: The argument must connect each earthly descriptor to specific Pauline language and compare that reading charitably with the archon interpretation instead of treating the alternative as excluded by assertion. Locked score: The strong band recognizes direct relevance, stable formulation, and substantial evidentiary promise, while reflecting that categorical force exceeds the passage-specific analysis supplied and that the principal rival interpretation remains incompletely tested.",
+      "originalValueSha256": "a47e349bed48d3b12acd095a271d269b18f458e814251ef14745b20e1afdc0fe",
+      "lockedMove": {
+        "moveId": "pro-paul-earthly-jewish-jesus",
+        "sectionId": "pauline-jesus-and-textual-foundations",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Paul's early authentic letters describe Jesus as a Jewish preacher and teacher crucified by earthly opponents, rather than as a celestial figure killed in space.",
+        "importance": 3,
+        "finalScore": 84,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "18:05",
+        "sourceSpan": {
+          "startEvent": 408,
+          "endEvent": 477,
+          "startMs": 1085799,
+          "endMs": 1261880
+        },
+        "sourceExcerpt": "about the historical Jesus Paul's views of Jesus are really important as I think Bob and I would both agree Paul does not talk about a Heavenly Cosmic figure Joshua or Jesus who was crucified by demons in outer space the way mythicists have often said Paul talks about a real historical figure Jesus a Jew among Jews a preacher teacher who was crucified by his Earthly opponents",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 68,
+          "characterCount": 378
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-early-pauline-anchor"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move uses the earliest Pauline evidence to characterize Jesus as earthly, Jewish, teaching, and crucified by earthly opponents.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 95); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The Pauline interpretation is clear and stable, though the excerpt leaves its textual basis and the scope of 'Paul' implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical exclusion of a celestial interpretation exceeds the textual analysis displayed in this excerpt."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul describes a celestial Christ killed by demonic powers rather than an earthly teacher.",
+          "decisiveQualification": "The excerpt asserts earthly traits but does not interpret the particular disputed Pauline passages supporting the celestial reading."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central early-Pauline anchor by arguing for an earthly Jewish Jesus."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "It identifies the rival reading accurately enough, but answers mainly by contrary assertion rather than its strongest textual warrant."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts a cosmic execution with Paul's alleged Jewish preacher and teacher crucified by earthly opponents.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

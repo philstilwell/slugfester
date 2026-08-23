@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 5,
+  "packetId": "debate-135-packet-0",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-method-motion-position.critique",
+      "moveProse.pro-legend-pattern-person-distinction.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-method-motion-position.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-method-motion-position",
+      "originalValue": "Strongest feature: The opening isolates a deliberately minimal historical proposition, distinguishes existence from every larger theological claim, and announces a positive evidentiary route whose terms remain clear, stable, directly recoverable, and centrally responsive to the motion under examination. Principal limitation: Its categorical confidence arrives before the promised cumulative evidence, supplies no uncertainty qualification, and therefore states more forcefully than this introductory excerpt alone can warrant, even though the claim's carefully restricted scope substantially limits that calibration problem. Live burden: The ensuing case must independently connect early sources, Pauline relationships, contextual plausibility, and legendary development to an actual first-century person while answering dependence, interpolation, celestial-reading, and circular-chronology alternatives. Locked score: The very strong band reflects excellent motion relevance, coherent framing, and disciplined scope, moderated by preliminary rather than demonstrated warrant and the absence of substantive engagement with a developed rival explanation.",
+      "originalValueSha256": "cb2549133905e721a6ff1126449e1e369ec7d9597620e136a9f3e863afbdca15",
+      "lockedMove": {
+        "moveId": "pro-method-motion-position",
+        "sectionId": "historical-method-and-burden",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Whatever else may be claimed about Jesus of Nazareth, a historical person existed behind the traditions.",
+        "importance": 3,
+        "finalScore": 85,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "8:36",
+        "sourceSpan": {
+          "startEvent": 181,
+          "endEvent": 210,
+          "startMs": 516200,
+          "endMs": 579680
+        },
+        "sourceExcerpt": "give you a brief synopsis of my position tonight my brief synopsis is this whatever else you want to say about Jesus of Nazareth I think you can say that he certainly existed in my talk I'm going to be mounting the positive Arguments for that some of the positive arguments and we have we have only 30 minutes uh if you've read uh Bob's works you know he could go for 30 days days",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 75,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-historical-person"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive opening clearly states the historical-existence thesis that the ensuing arguments undertake to establish.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "As a constructive thesis statement, it clearly frames the motion and the position to be defended."
+          },
+          "responsiveness": {
+            "value": 88,
+            "rationale": "As a constructive thesis statement, it clearly frames the motion and the position to be defended."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The existence claim and its deliberately minimal scope are expressly recoverable and consistently framed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The categorical existence claim precedes its promised evidence, although its scope is expressly limited."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly states the route-completion claim that a historical person existed behind the traditions."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move announces a positive thesis and does not materially characterize a developed opposing alternative."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly says Jesus certainly existed and announces that positive arguments will follow.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-legend-pattern-person-distinction.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-legend-pattern-person-distinction",
+      "originalValue": "Strongest feature: The move draws a logically important distinction between legendary shaping and personal existence, supports it with familiar narrative stereotypes, and directly protects the historical-person route from an inference that embellished or patterned stories necessarily imply a wholly invented subject. Principal limitation: Saying patterned construction has no bearing at all is broader than the examples justify, because the density, timing, provenance, and function of legendary material can affect evidential confidence even when legend never entails nonexistence by itself. Live burden: The case must show that recoverable, comparatively early evidence survives beneath or beside the patterns, rather than relying solely on the abstract compatibility of legend with a real person. Locked score: The very strong band recognizes a clear, relevant, and fundamentally sound non-entailment distinction, while withholding stronger appraisal because its categorical wording neglects how particular legendary patterns may still alter comparative historical probability.",
+      "originalValueSha256": "b56a6a95eb54646d061431ce63448afb157176d12b4ceaad230cc13b0d36c5d4",
+      "lockedMove": {
+        "moveId": "pro-legend-pattern-person-distinction",
+        "sectionId": "legendary-development-and-explanatory-fit",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Stories molded to mythic or stereotyped narrative patterns can accumulate around important people without implying that those people never existed.",
+        "importance": 3,
+        "finalScore": 85,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "11:19",
+        "sourceSpan": {
+          "startEvent": 253,
+          "endEvent": 299,
+          "startMs": 679079,
+          "endMs": 808480
+        },
+        "sourceExcerpt": "ways this is typically what happens with important figures uh from the past famous people are told in terms of stereotypes we have our own stereotypes we have the rags to riches story we have the politician sexual exploits story we have the divine Savior Story the fact that stories are molded to a model has no bearing on whether the person actually existed or not now let me get",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-legend-person-distinction"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move establishes a general distinction between patterned legendary narration and the existence of the narrated person.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (88 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The proposition is clear, with an implicit ordinary qualification that patterned stories alone have no decisive bearing on existence."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "The categorical phrase 'no bearing' is somewhat stronger than the examples establish, although the intended non-entailment point is sound."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "Several familiar stereotype classes support the compatibility claim, though no comparative base rate is developed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central bridge distinguishing legendary development from personal nonexistence."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move advances a general methodological distinction without developing a specific opposing alternative."
+          }
+        },
+        "evidenceBasis": "The excerpt names several story stereotypes and expressly denies that molding to a model settles whether a person existed.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

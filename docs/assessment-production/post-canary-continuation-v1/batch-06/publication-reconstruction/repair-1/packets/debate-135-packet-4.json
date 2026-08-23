@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 9,
+  "packetId": "debate-135-packet-4",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-external-hearsay-attestation.critique",
+      "moveProse.con-external-josephus-interpolation.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-external-hearsay-attestation.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-external-hearsay-attestation",
+      "originalValue": "Strongest feature: The reply correctly distinguishes evidence that Christians held and circulated claims from evidence independently grounded in the underlying person, directly challenging any simple multiplication of downstream notices into separate historical witnesses. Principal limitation: The broad label “hearsay” groups legally and historically different transmission relationships together, while the excerpt does not establish uniform Christian dependence for Pliny, Tacitus, and every oral tradition or examine whether oral streams could preserve independent information. Live burden: The con case must trace each notice's information path and analyze particular tradition relationships rather than treating orality or later reporting as sufficient proof of dependence. Locked score: The strong band reflects excellent relevance, clear burden contact, and a valuable attestation distinction, moderated by unstable terminology, incomplete source-by-source demonstration, and a plausible conclusion stated somewhat more generally than the evidence shown supports.",
+      "originalValueSha256": "7d4844d271c9252ce7aac5acaabaebaa5cb4c66fd794e60da4ee134ceda5b55f",
+      "lockedMove": {
+        "moveId": "con-external-hearsay-attestation",
+        "sectionId": "external-attestation-and-chronology",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Pliny, Tacitus, and widespread oral Gospel traditions attest Christian claims and their transmission rather than independently attesting the underlying existence of Jesus.",
+        "importance": 2,
+        "finalScore": 82,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "44:42",
+        "sourceSpan": {
+          "startEvent": 1009,
+          "endEvent": 1038,
+          "startMs": 2682680,
+          "endMs": 2768119
+        },
+        "sourceExcerpt": "the supposed non-Christian documentation of a historical Jesus and then we have to ask why are the gospels witnesses to Jesus any better founded Bart says that quote stories about Jesus circulated widely throughout the major urban areas of the Mediterranean from a very early time our written sources are based on oral traditions in other words here say just like plenty in tacitus",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 65,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-source-dependence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-gospel-independent-early-traditions"
+          ],
+          "components": [
+            {
+              "componentId": "con-external-hearsay-attestation-component-01",
+              "targetMoveId": "pro-gospel-independent-early-traditions",
+              "text": "The decisive demand is whether the purported sources independently attest Jesus rather than merely transmit Christian claims.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly disputes independence by classifying Pliny, Tacitus, and circulating oral Gospel material as downstream hearsay about Christian belief.",
+          "responsivenessWithinClass": {
+            "value": 84,
+            "rationale": "It contacts the independence issue squarely, though it does not separately analyze the provenance of each named source."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It contacts the independence issue squarely, though it does not separately analyze the provenance of each named source."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The attestation distinction is clear, but 'hearsay' groups legally and historically different transmission relationships under one loose term."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Dependence on Christian reports is plausible for some notices, but the move does not establish it uniformly."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Early widespread oral traditions can contain independent lines of information despite being transmitted orally.",
+          "decisiveQualification": "Orality alone does not prove either independence or dependence; transmission relationships require separate analysis."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 82,
+            "rationale": "The inference from dependent transmission to lack of independent attestation is coherent, subject to source-specific provenance that remains unexamined."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central con bridge challenging the independence of external and Gospel attestation."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The move preserves the central distinction between claim and event, but compresses possible differences among the external witnesses."
+          }
+        },
+        "evidenceBasis": "The excerpt calls Pliny, Tacitus, and orally based Gospel sources hearsay that attests claims rather than Jesus directly.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-external-josephus-interpolation.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-external-josephus-interpolation",
+      "originalValue": "Strongest feature: The move presents interpolation as a comparative textual explanation, identifies explicitly Christian language that a non-Christian author is unlikely to have written, and fairly acknowledges the scholarly alternative of a neutral Josephan core later expanded by Christians. Principal limitation: The selected exchange bears on external attestation generally but does not answer the decisive claim about multiple pre-Gospel traditions, while the suggestion that scholarly reconstruction is driven by desire risks substituting motive attribution for detailed linguistic and contextual analysis. Live burden: The con side must show why complete interpolation explains the manuscript and literary evidence better than partial interpolation and clarify what follows if a neutral core survives. Locked score: The strong band reflects precise scope, appropriate uncertainty, and substantive textual relevance, limited by indirect responsiveness to the paired source claim and by an underdeveloped comparison of competing reconstruction models.",
+      "originalValueSha256": "56487eea7cd1be98952eafe46d6aa1a08978ab317f4444d76190fb82852ef5a6",
+      "lockedMove": {
+        "moveId": "con-external-josephus-interpolation",
+        "sectionId": "external-attestation-and-chronology",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "The Testimonium Flavianum is better explained as Christian interpolation because its Christian language, context, and reduced form provide no clear reason for Josephus to mention Jesus.",
+        "importance": 2,
+        "finalScore": 78,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "46:05",
+        "sourceSpan": {
+          "startEvent": 1039,
+          "endEvent": 1140,
+          "startMs": 2765920,
+          "endMs": 3041000
+        },
+        "sourceExcerpt": "interpolation he says quote here we find textual studies driven by convenience ience if a passage contradicts your views simply claim that it was not written by the author end quote but aren't consensus Scholars doing the same darn thing with the testimonium flavianum they dearly want Josephus to have mentioned Jesus but the passage as it stands they admit cannot have been the work of a non-Christian",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 403
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-textual-uncertainty"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-gospel-independent-early-traditions"
+          ],
+          "components": [
+            {
+              "componentId": "con-external-josephus-interpolation-component-01",
+              "targetMoveId": "pro-gospel-independent-early-traditions",
+              "text": "The decisive claim concerns multiple independent first-century traditions, while this reply isolates the authenticity of a later Josephus passage.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The interpolation case is issue-bearing contrary material about external attestation, but it does not contact the selected move's decisive pre-Gospel multiplicity claim.",
+          "responsivenessWithinClass": {
+            "value": 57,
+            "rationale": "It is a relevant nonanswer to the selected earlier move because Josephus is not the decisive source set asserted there."
+          },
+          "responsiveness": {
+            "value": 57,
+            "rationale": "It is a relevant nonanswer to the selected earlier move because Josephus is not the decisive source set asserted there."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The interpolation thesis and its grounds—language, context, and reduced-form motivation—are distinctly recoverable and appropriately bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move presents interpolation as a comparative explanation and acknowledges the scholarly reduced-form alternative it disputes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Josephus wrote a neutral core later expanded with explicitly Christian language.",
+          "decisiveQualification": "A reconstructed neutral core still needs a contextual reason for Josephus to mention Jesus at that location."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The move cites wording, scholarly concessions, and context, but manuscript and reconstruction evidence remains compressed."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt notes admitted Christian language and accuses neutral-core reconstruction of being driven by the desire for a Josephan notice.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

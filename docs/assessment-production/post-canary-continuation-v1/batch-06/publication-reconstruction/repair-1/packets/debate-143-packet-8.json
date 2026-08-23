@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 24,
+  "packetId": "debate-143-packet-8",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "143",
+  "debateId": "vela-dillahunty-transcendental-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-143.json",
+    "immutableRejectedOutputSha256": "e3ab7d9b0f8c8a6d42b5fc67837830761aa5d3472983b4c18b6ef442e3e82148",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-143.json",
+    "publicationPacketSha256": "bdd2e7562bf66df1dd1f33fd4661705c2590b81532145e86c23f40e4c4e4d70b"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-unfulfilled-divine-disclosure-aim.critique",
+      "moveProse.pro-revelation-obligation-not-compulsion.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-unfulfilled-divine-disclosure-aim.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-unfulfilled-divine-disclosure-aim",
+      "originalValue": "Strongest feature: The reply formulates a tightly conditional test linking an asserted universal divine desire, an effective disclosure mechanism, and the observed failure to achieve universal knowledge, thereby making its evidential consequence transparent and proportionate. Principal limitation: The argument does not independently establish that universal actual knowledge is the relevant divine aim or that the proposed mechanism guarantees uptake, and its force diminishes if revelation instead seeks adequate opportunity, responsibility, or noncompelled relationship. Live burden: The skeptical side must ground the attributed intention in the pro position, distinguish knowledge from compelled conviction, and show that reasonable nonbelief conflicts with the narrower disclosure aim actually defended. Locked score: The very strong band reflects explicit qualification, excellent logical coherence, strong responsiveness, and charitable confinement of the inference, with the remaining limitation located in its conditional antecedents rather than its internal structure.",
+      "originalValueSha256": "5cc1577aa43bd8eb3c65791ce4d1d745355ff0e423043a6e220f8bd51a639099",
+      "lockedMove": {
+        "moveId": "con-unfulfilled-divine-disclosure-aim",
+        "sectionId": "section-revelation-hiddenness",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "If God wants everyone to know that God exists and has an effective means of ensuring that knowledge but does not use it, observed nonbelief counts against attributing that desire to God.",
+        "importance": 2,
+        "finalScore": 86,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "131:27",
+        "sourceSpan": {
+          "startEvent": 3652,
+          "endEvent": 3657,
+          "startMs": 7887599,
+          "endMs": 7901199
+        },
+        "sourceExcerpt": "Only exists. But I'm saying that if you have the position, I believe that God wants everybody to know and here is a mechanism by which everybody can know and it has not happened then it would seem that your belief that God wants",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 44,
+          "characterCount": 228
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-divine-expectations"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-cumulative-public-revelation"
+          ],
+          "components": [
+            {
+              "componentId": "con-unfulfilled-divine-disclosure-aim-component-01",
+              "targetMoveId": "pro-cumulative-public-revelation",
+              "text": "Whether observed nonbelief fits the claimed divine aim and effective mechanism of universal disclosure.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply conditionally tests the conjunction of universal divine desire and an effective disclosure mechanism against its observed nonfulfillment.",
+          "responsivenessWithinClass": {
+            "value": 84,
+            "rationale": "It explicitly contacts the decisive aim-and-outcome component of the cumulative-revelation reply."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It explicitly contacts the decisive aim-and-outcome component of the cumulative-revelation reply."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The argument is carefully conditional on holding both that God wants universal knowledge and that an effective mechanism exists."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The phrase would seem appropriately qualifies a conditional conclusion that depends on the pro side holding the specified aim."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "God may provide adequate evidence without intending that every person actually form settled belief.",
+          "decisiveQualification": "The inference applies only if universal actual knowledge is genuinely part of the asserted divine aim."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 70,
+            "rationale": "Observed nonoccurrence supports the conditional, but the relevant divine aim and guaranteed mechanism are not independently established here."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the con central divine-expectations bridge."
+          },
+          "representationalCharity": {
+            "value": 84,
+            "rationale": "The explicit conditional fairly confines the objection and leaves alternative divine aims available."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly conditions its conclusion on belief that God wants everyone to know and has an effective mechanism that has not achieved that result.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-revelation-obligation-not-compulsion.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-revelation-obligation-not-compulsion",
+      "originalValue": "Strongest feature: The reply precisely corrects the attributed divine aim by distinguishing universal revelation and obligation from universal settled knowledge, conviction, or compelled belief, thereby defeating the opponent's conditional in the form immediately presented. Principal limitation: Reframing the aim does not establish that the alleged revelation is sufficiently clear or accessible to create the claimed obligation, and persistent reasonable nonbelief may still challenge adequate universal opportunity without implying literal compulsion. Live burden: The pro side must explain the epistemic threshold for obligation, demonstrate that creation and other disclosures meet it across diverse circumstances, and address sincere nonbelief under the narrower formulation. Locked score: The very strong band reflects exceptional precision, proportionate calibration, justified reframing, and decisive responsiveness, while retaining a substantive downstream question about whether the available evidence actually grounds the obligation asserted.",
+      "originalValueSha256": "f4e87d018f040f0bd86682a817788918d56df9f80d19728650b80ba7639d21ae",
+      "lockedMove": {
+        "moveId": "pro-revelation-obligation-not-compulsion",
+        "sectionId": "section-revelation-hiddenness",
+        "side": "pro",
+        "speaker": "Tyler Vela",
+        "moveKind": "reply",
+        "proposition": "Universal revelation can place people under an obligation to know God without implying that God intends to compel every person to acquire settled belief.",
+        "importance": 2,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "131:41",
+        "sourceSpan": {
+          "startEvent": 3659,
+          "endEvent": 3671,
+          "startMs": 7901199,
+          "endMs": 7928960
+        },
+        "sourceExcerpt": "I'm not trying to say that God wants everybody to know and and have a conviction that it's true. What I said is that God wants everyone to have the obligation to know. God has revealed himself through all through all of creation. I believe that's not the same thing as saying God is going wants everyone to know in a sense that he is going to compel belief in every single person",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 379
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-divine-expectations"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-unfulfilled-divine-disclosure-aim"
+          ],
+          "components": [
+            {
+              "componentId": "pro-revelation-obligation-not-compulsion-component-01",
+              "targetMoveId": "con-unfulfilled-divine-disclosure-aim",
+              "text": "Whether the relevant divine aim is universal settled knowledge or revelation sufficient to impose an obligation to know.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply justifies a narrower replacement demand by correcting the attributed aim: public revelation need impose an obligation, not compel universal conviction.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "It explicitly corrects the decisive antecedent, preserves the legitimate disclosure issue, and states the consequence for the hiddenness inference."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly corrects the decisive antecedent, preserves the legitimate disclosure issue, and states the consequence for the hiddenness inference."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction among revelation, obligation to know, actual knowledge, conviction, and compelled belief is expressly stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "As a clarification of the speaker's own asserted position, the categorical denial of universal-compulsion intent is proportionate."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The con objection can target adequate universal opportunity rather than literal compulsion of belief.",
+          "decisiveQualification": "Observed reasonable nonbelief may still challenge whether the alleged revelation adequately creates the claimed obligation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The reply clearly distinguishes obligation from intended compelled conviction and thereby defeats the conditional as originally framed."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the con central divine-expectations bridge."
+          },
+          "representationalCharity": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (78 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt expressly denies that God intends to compel universal conviction and substitutes universal revelation and an obligation to know.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

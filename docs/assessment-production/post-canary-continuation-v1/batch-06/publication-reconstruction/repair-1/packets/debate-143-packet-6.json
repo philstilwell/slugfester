@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 22,
+  "packetId": "debate-143-packet-6",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "143",
+  "debateId": "vela-dillahunty-transcendental-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-143.json",
+    "immutableRejectedOutputSha256": "e3ab7d9b0f8c8a6d42b5fc67837830761aa5d3472983b4c18b6ef442e3e82148",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-143.json",
+    "publicationPacketSha256": "bdd2e7562bf66df1dd1f33fd4661705c2590b81532145e86c23f40e4c4e4d70b"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-anomaly-does-not-identify-yahweh.critique",
+      "moveProse.pro-unspecified-alternative-not-defeater.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-anomaly-does-not-identify-yahweh.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-anomaly-does-not-identify-yahweh",
+      "originalValue": "Strongest feature: The reply carefully grants that an extraordinary anomaly could count as evidence toward a god while distinguishing relevance, confirmation, sufficiency for conviction, and identification of Yahweh, thereby avoiding categorical evidential skepticism. Principal limitation: The move does not quantify how much the imagined event would favor generic agency or identify which additional observations would responsibly narrow the hypothesis, leaving its rival explanations largely schematic. Live burden: The skeptical case must state what bridging premises could move from anomalous agency to necessity, personality, or a specific deity and explain why the available transcendental evidence does not supply them. Locked score: The very strong band reflects exceptional calibration, precise distinctions, direct responsiveness, and charitable acknowledgment of graded support, with only a modest need for a more developed comparative account of the remaining candidate explanations.",
+      "originalValueSha256": "bfc4182d9ea96969033525b7e292ffb7314e68773a6e8677c7ae4c0c91bc8dd1",
+      "lockedMove": {
+        "moveId": "con-anomaly-does-not-identify-yahweh",
+        "sectionId": "section-personal-divine-inference",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Even an extraordinary celestial message could be evidence toward a god without establishing Yahweh or another specific personal deity, particularly while rival explanations remain and direct divine communication is absent.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "67:47",
+        "sourceSpan": {
+          "startEvent": 1894,
+          "endEvent": 1935,
+          "startMs": 4067440,
+          "endMs": 4174719
+        },
+        "sourceExcerpt": "yes. But that evidence for God is not confirmation of God. So would that actually count as evidence toward the proposition that there's God? Sure. Would that meet your standard? Is that sufficient in it on its own to convince me that there is a Yahweh God? No. And because there's there's a number of really good reasons for this, not the least of which is how do I rule out other",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-underdetermination"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-philosophical-abduction-as-evidence",
+            "pro-personal-mind-from-logical-attributes"
+          ],
+          "components": [
+            {
+              "componentId": "con-anomaly-does-not-identify-yahweh-component-01",
+              "targetMoveId": "pro-philosophical-abduction-as-evidence",
+              "text": "Whether extraordinary evidence can abductively identify the specific personal deity claimed rather than merely support some god hypothesis.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-anomaly-does-not-identify-yahweh-component-02",
+              "targetMoveId": "pro-personal-mind-from-logical-attributes",
+              "text": "Whether evidence favoring some mind or god establishes the particular personal deity associated with the pro case.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply accepts evidential relevance while directly denying confirmation of Yahweh and invoking unresolved rival explanations.",
+          "responsivenessWithinClass": {
+            "value": 79,
+            "rationale": "It contacts the decisive specificity and rival-explanation components but addresses a hypothetical anomaly more than the original logical facts."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It contacts the decisive specificity and rival-explanation components but addresses a hypothetical anomaly more than the original logical facts."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move carefully distinguishes evidence toward a god, confirmation, sufficiency for conviction, and identification of Yahweh."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move grants that the anomaly would be evidence while making only the bounded claim that it would not alone identify Yahweh."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The debate motion concerns a necessary personal God and need not establish every feature of Yahweh.",
+          "decisiveQualification": "Evidence for generic agency still requires further premises to identify necessity, personality, or a specific deity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 90,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (80 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the con central underdetermination bridge."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The response fairly grants generic support and confines its objection to the stronger identification claim."
+          }
+        },
+        "evidenceBasis": "The excerpt grants that the hypothetical event could count as evidence toward God but denies that it independently confirms Yahweh and invokes alternatives.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-unspecified-alternative-not-defeater.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-unspecified-alternative-not-defeater",
+      "originalValue": "Strongest feature: The move correctly distinguishes a bare logical possibility from a developed defeater, protecting ordinary abductive reasoning from paralysis whenever someone can merely imagine that an unidentified alternative might exist. Principal limitation: Candidate-set incompleteness can rationally lower confidence without furnishing a complete rival, especially when priors, selection effects, causal baselines, or the hypothesis space are materially unconstrained, and the response leaves those actual comparative-data objections unanswered. Live burden: The pro side must establish the initial case's strength, specify when unknown alternatives become negligible, and compare live impersonal or naturalistic accounts rather than requiring opponents to deliver a fully formed replacement. Locked score: The strong band reflects a plausible and relevant subsidiary principle with good logical coherence, moderated by partial responsiveness, slightly overstated force, and inadequate engagement with the strongest underdetermination argument.",
+      "originalValueSha256": "1a8912822e84715a41ea09a962e3aab80e017c2702ee8e3e8b75a57853b95db6",
+      "lockedMove": {
+        "moveId": "pro-unspecified-alternative-not-defeater",
+        "sectionId": "section-abduction-alternatives",
+        "side": "pro",
+        "speaker": "Tyler Vela",
+        "moveKind": "reply",
+        "proposition": "Merely suggesting that some unspecified alternative explanation might exist does not defeat an abductive case unless a substantive competing explanation or objection is supplied.",
+        "importance": 3,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "113:41",
+        "sourceSpan": {
+          "startEvent": 3137,
+          "endEvent": 3162,
+          "startMs": 6821679,
+          "endMs": 6891920
+        },
+        "sourceExcerpt": "of something to say, well, um, you know, I'm I'm I'm in the face of arguments and evidence for something to say, well, there could be some other explanation, so therefore, we shouldn't we shouldn't affirm the I mean, that that that just type of vague explanation again, it's sounds reasonable to to the skeptic, but it's it's just it's not a valid defeater. Maybe at some point we",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-defeater-standard"
+        },
+        "response": {
+          "class": "partial-answer",
+          "decisiveTargetIds": [
+            "con-abduction-incomplete-candidate-set",
+            "con-abduction-comparative-data-gap"
+          ],
+          "components": [
+            {
+              "componentId": "pro-unspecified-alternative-not-defeater-component-01",
+              "targetMoveId": "con-abduction-incomplete-candidate-set",
+              "text": "Whether merely possible unnamed alternatives defeat an otherwise supported abductive inference.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-unspecified-alternative-not-defeater-component-02",
+              "targetMoveId": "con-abduction-comparative-data-gap",
+              "text": "Whether the con objection supplies substantive comparative defects beyond an unspecified possible alternative.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The move correctly contacts the limited claim that an unspecified possibility is not itself a defeater, but it leaves the con side's actual comparative-data objections unanswered.",
+          "responsivenessWithinClass": {
+            "value": 65,
+            "rationale": "This partial answer contacts a secondary formulation while not resolving the stronger candidate-set, likelihood, and gap-inference critique."
+          },
+          "responsiveness": {
+            "value": 71,
+            "rationale": "This partial answer contacts a secondary formulation while not resolving the stronger candidate-set, likelihood, and gap-inference critique."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The distinction between a possible alternative and a valid defeater is recoverable, with the required strength of the initial case left implicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "A bare possibility is not automatically a defeater, but it may expose an incomplete comparison without supplying a fully developed rival."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The candidate-set objection need not claim a specific rival; it can challenge confidence in an asserted best explanation.",
+          "decisiveQualification": "That challenge has force when selection effects, priors, or unknown candidate space are materially unconstrained."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The defeater principle is plausible but asserted without specifying when candidate incompleteness itself becomes material."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "It directly supports the subsidiary defeater-standard bridge at the top of that burden tier."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (61 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt argues that saying there could be another explanation does not by itself validly defeat arguments and evidence already offered.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

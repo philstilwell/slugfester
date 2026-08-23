@@ -1,0 +1,259 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 0,
+  "packetId": "debate-141-packet-0",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "141",
+  "debateId": "fischer-dillahunty-axiomatic-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-141.json",
+    "immutableRejectedOutputSha256": "0f295e3a0f62abe0465d908f6c8952adc0f212a4928ca8a316bfa27f21200358",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-141.json",
+    "publicationPacketSha256": "658995eb777005565d6c35d6769edd4d9bfbc898b9e04f8f7b0d8c8dc06f8161"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-positive-burden-for-god.critique",
+      "moveProse.pro-first-cause-conscious-will.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-positive-burden-for-god.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-positive-burden-for-god",
+      "originalValue": "Strongest feature: The burden principle is expressed with unusual clarity, confines its conclusion to warranted belief rather than divine nonexistence, and directly addresses the motion's demand for affirmative argumentation and supporting evidence. Principal limitation: As a response, it redirects from the specific closure objection instead of determining whether sensitivity-based skepticism undermines derivative knowledge, and the excerpt does not independently defend its justificatory norm against properly basic entitlement. Live burden: The position must explain what qualifies as sufficient positive justification while allowing fallible inference, testimony, and foundational commitments without quietly converting evidential responsibility into an unattainable demand for demonstration. Locked score: The strong band reflects outstanding burden relevance, stable terminology, careful calibration, and coherent allocation of justificatory responsibility, tempered by limited responsiveness to the earlier epistemic argument and incomplete defense of the governing norm.",
+      "originalValueSha256": "45fe98697e38d564c26362fc1b0b79932abafbbb16aa9d650689cf75ca1bf2df",
+      "lockedMove": {
+        "moveId": "con-positive-burden-for-god",
+        "sectionId": "epistemic-burden-and-good-evidence",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Belief in God is not warranted by default; the believer must provide a good argument and supporting evidence.",
+        "importance": 3,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "40:04",
+        "sourceSpan": {
+          "startEvent": 1225,
+          "endEvent": 1252,
+          "startMs": 2404720,
+          "endMs": 2457839
+        },
+        "sourceExcerpt": "it's not up to anybody to prove that there isn't a god that until such time as there's a a good justification belief in a god isn't warranted it's not like it's not like you're justified in believing in god until i prove it wrong nobody's justified in believing anything including a god proposition until they have a good argument for and evidence and i'm willing to allow that to",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "con-motion-evidential-burden"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-closure-against-sensitivity"
+          ],
+          "components": [
+            {
+              "componentId": "con-positive-burden-for-god-component-01",
+              "targetMoveId": "pro-closure-against-sensitivity",
+              "text": "Whether the sensitivity objection defeats religious skepticism through closure.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The burden-allocation principle is centrally relevant to the debate but does not address whether the earlier sensitivity requirement would destroy closure.",
+          "responsivenessWithinClass": {
+            "value": 55,
+            "rationale": "It is a relevant nonanswer positioned low in that class because it redirects to positive burden without contacting the earlier closure inference."
+          },
+          "responsiveness": {
+            "value": 56,
+            "rationale": "It is a relevant nonanswer positioned low in that class because it redirects to positive burden without contacting the earlier closure inference."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly assigns the burden to the person asserting God and specifies good argument and evidence as the relevant justificatory requirements."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "As a stated burden norm, the claim is forceful but appropriately confined to justification rather than claiming that God's nonexistence has been established."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The epistemic norm is well explained but not independently defended in the excerpt against alternatives involving default entitlement or properly basic belief."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly advances the motion-level con bridge by specifying why unsupported assertion cannot count as good evidence."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "The move states a burden principle and invites an affirmative case; it does not depend on construing an opposing alternative in a potentially uncharitable way."
+          }
+        },
+        "evidenceBasis": "The excerpt states that nobody must prove there is no God and that belief remains unwarranted until supported by a good argument and evidence.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-first-cause-conscious-will.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-first-cause-conscious-will",
+      "originalValue": "Strongest feature: The domino illustration supplies an accessible structure for the affirmative's principal cosmological route, explicitly connecting regress termination, ultimate causal initiation, and the proposed bridge toward conscious agency. Principal limitation: The analogy moves among temporal succession, modal conceivability, metaphysical necessity, and consciousness without demonstrating their equivalence, while the necessity claim across every conceivable world substantially exceeds what an imagined infinite sequence establishes. Live burden: The case must show why an actual infinite cannot include a present member, why universe-bound causal concepts extend beyond spacetime, and why an ultimate internal causal ground excludes impersonal necessity or disposition. Locked score: The mixed band recognizes central burden contact, recoverable reasoning, and constructive importance, but also records material scope instability, insufficient evidential warrant, absent qualification, and an unsupported transition from ultimacy to conscious will.",
+      "originalValueSha256": "fb88d1316efb694c4b92a357a2032df0917ad14e8e6a593dec62fb58b53562da",
+      "lockedMove": {
+        "moveId": "pro-first-cause-conscious-will",
+        "sectionId": "first-cause-and-conscious-will",
+        "side": "pro",
+        "speaker": "Ben Fischer",
+        "moveKind": "constructive",
+        "proposition": "An infinite causal past cannot initiate a present sequence, so every conceivable world requires an ultimate first cause whose self-directed causal activity implies conscious will.",
+        "importance": 3,
+        "finalScore": 68,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "40:54",
+        "sourceSpan": {
+          "startEvent": 1253,
+          "endEvent": 1344,
+          "startMs": 2454880,
+          "endMs": 2640800
+        },
+        "sourceExcerpt": "a divine causal beginning to any world that we might imagine uh for the sake of any argument that it's just simply not rational to do so and so what's the argument well the argument essentially uh i might refer to it as the ever pending birth birthday imagine that you matt dillahunty have walked into a room only to encounter an infinite row of tumbling dominoes each falling tile",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-first-cause"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move presents the principal positive causal route from an allegedly impossible infinite sequence to an ultimate initiating cause and conscious will.",
+          "responsivenessWithinClass": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (82 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "materially-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The first-cause conclusion is recoverable, but initiation, causal past, conceivable worlds, and conscious will shift across temporal and modal scopes."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Necessity across every conceivable world and the further conscious-will conclusion substantially exceed what the domino illustration establishes in the excerpt."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (59 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 55,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (54 and 55); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attempts the complete central first-cause bridge, including regress termination and conscious agency, and therefore ranks at the top of that tier."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "This is a positive construction rather than a developed assessment of a live opposing alternative, so the neutral charity anchor applies."
+          }
+        },
+        "evidenceBasis": "The selected evidence introduces an infinite row of falling dominoes as the argument for a necessary divine causal beginning in any imaginable world.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

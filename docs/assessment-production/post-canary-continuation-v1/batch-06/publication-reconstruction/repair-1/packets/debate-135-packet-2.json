@@ -1,0 +1,249 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 7,
+  "packetId": "debate-135-packet-2",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-paul-knew-james-and-peter.critique",
+      "moveProse.pro-crucified-messiah-unlikely-invention.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-paul-knew-james-and-peter.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-paul-knew-james-and-peter",
+      "originalValue": "Strongest feature: The move supplies an unusually direct interpersonal bridge by grounding the case in Paul's reported meetings with Cephas and James, thereby connecting an early writer to people represented as a disciple and a specially designated brother of Jesus. Principal limitation: Although the meeting report is explicit, the excerpt assumes rather than fully demonstrates that “the Lord's brother” denotes biological kinship and that the characterization of Peter derives from information independent of later Gospel presentation. Live burden: The pro case must distinguish James's marked title from ordinary communal brotherhood, defend the kinship reading linguistically, and clarify what these meetings establish beyond Paul's own report. Locked score: The very strong band reflects the move's proximity, specificity, coherence, and central relevance, moderated by a compressed semantic defense and by limited examination of the cultic-title alternative.",
+      "originalValueSha256": "7c09b91b5d76e46cd31201e656fda62afeab9cd6460e94f7f537d8ec4e61a93f",
+      "lockedMove": {
+        "moveId": "pro-paul-knew-james-and-peter",
+        "sectionId": "pauline-jesus-and-textual-foundations",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Paul reports personally meeting Peter, Jesus's close disciple, and James, specifically distinguished as the Lord's brother.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "22:35",
+        "sourceSpan": {
+          "startEvent": 514,
+          "endEvent": 601,
+          "startMs": 1355640,
+          "endMs": 1583760
+        },
+        "sourceExcerpt": "1: 19 where Paul says that 3 years after his conversion so this would be by my chronology about the year 35 or 36 the Common Era he says after three years I went to Jerusalem to visit sephus I remained with him for 15 days sephus is Peter jesus' closest disciple but I saw none of the other Apostles except James the Lord's brother the brother of the Lord Paul knows Jesus brother",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-early-pauline-anchor"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move treats Paul's reported meetings with Peter and James as direct interpersonal anchors to Jesus.",
+          "responsivenessWithinClass": {
+            "value": 95,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (94 and 96); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (94 and 96); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The interpersonal claim is recoverable, though the kinship sense of Lord's brother is defended only in compressed form."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Paul's reported meeting is explicit, but equating 'Lord's brother' categorically with a biological sibling requires a defended semantic qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Lord's brother is a cultic designation rather than a biological relationship to Jesus.",
+          "decisiveQualification": "The move must distinguish ordinary Christian brotherhood from the specifically marked expression applied to James."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 89,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The move quotes a concrete Pauline report and identifies its key terms, with only the usage defense compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the indispensable early-Pauline bridge through named associates represented as disciple and brother."
+          },
+          "representationalCharity": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt quotes Paul's visit to Cephas and his meeting with James, expressly identified as the Lord's brother.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-crucified-messiah-unlikely-invention.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-crucified-messiah-unlikely-invention",
+      "originalValue": "Strongest feature: The move offers a comparative causal explanation rather than mere attestation, arguing that an embarrassing, counterexpectational crucifixion proclamation becomes intelligible if followers had to reinterpret the execution of someone they already regarded as Messiah. Principal limitation: It generalizes Jewish messianic expectations, relies heavily on the stumbling-block characterization, and does not compare scriptural innovation, revelatory construction, or minority expectation models that might produce a suffering or executed savior without the proposed event. Live burden: The argument must establish the relevant expectation distribution and show that actual execution predicts the resulting proclamation better than identifiable mythic or exegetical alternatives. Locked score: The strong band reflects high relevance, coherent explanatory structure, and meaningful evidentiary force, tempered by broad contextual claims, incomplete alternative testing, and comparative confidence that slightly outruns the displayed warrant.",
+      "originalValueSha256": "dcd7a7849a00e4abc5d2b11496b71bbce2fda96591853601a0d5cfd9d0c99ba0",
+      "lockedMove": {
+        "moveId": "pro-crucified-messiah-unlikely-invention",
+        "sectionId": "origins-context-and-crucified-messiah",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "constructive",
+        "proposition": "Because crucifixion contradicted Jewish expectations of a victorious Messiah, the proclamation of a crucified Messiah is better explained by followers confronting an actual execution than by invention.",
+        "importance": 3,
+        "finalScore": 84,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "27:29",
+        "sourceSpan": {
+          "startEvent": 630,
+          "endEvent": 749,
+          "startMs": 1649960,
+          "endMs": 1978399
+        },
+        "sourceExcerpt": "that was made up the crucified Messiah is because people thought Jesus was the Messiah and they knew that this man had been killed as a crucified criminal that's why Paul says that the crucifixion of Jesus was the greatest stumbling block for Jews it was the one reason most Jews rejected the Christian claim that Jesus was the Messiah most Jews thought the claim was crazy it was",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-crucified-messiah"
+        },
+        "response": {
+          "class": "constructive-opening",
+          "decisiveTargetIds": [],
+          "components": [],
+          "rationale": "This constructive move argues that the counterexpectational proclamation of a crucified Messiah is best explained by an actual execution.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "responsiveness": {
+            "value": 93,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (91 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The comparative inference is clear, though the scope of Jewish messianic expectations is treated broadly."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Counterexpectation supports the inference, but the move does not compare scriptural reinterpretation or innovation alternatives."
+        },
+        "charity": {
+          "tested": false,
+          "alternative": "",
+          "decisiveQualification": ""
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 79,
+            "rationale": "Paul's stumbling-block language supports the premise, but Jewish expectation diversity and rival mechanisms are underdeveloped."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the central bridge explaining why a crucified Messiah is unlikely to be freely invented."
+          },
+          "representationalCharity": {
+            "value": 75,
+            "rationale": "A positive explanatory argument is offered without sustained engagement with a specific rival origin mechanism."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes Paul's stumbling-block claim and explains why a crucified Messiah appeared contradictory to many Jews.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

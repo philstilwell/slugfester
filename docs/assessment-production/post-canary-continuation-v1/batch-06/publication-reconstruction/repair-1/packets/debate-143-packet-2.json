@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 18,
+  "packetId": "debate-143-packet-2",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "143",
+  "debateId": "vela-dillahunty-transcendental-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-143.json",
+    "immutableRejectedOutputSha256": "e3ab7d9b0f8c8a6d42b5fc67837830761aa5d3472983b4c18b6ef442e3e82148",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-143.json",
+    "publicationPacketSha256": "bdd2e7562bf66df1dd1f33fd4661705c2590b81532145e86c23f40e4c4e4d70b"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-vague-divine-hypothesis.critique",
+      "moveProse.con-abduction-comparative-data-gap.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-vague-divine-hypothesis.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-vague-divine-hypothesis",
+      "originalValue": "Strongest feature: The reply identifies the crucial gap between attaching traditional attributes to a divine label and specifying a hypothesis whose expectations can be compared with rivals, directly pressuring the inference from logical facts to the motion's personal God. Principal limitation: It does not independently refute every property attributed to the proposed mind, and classical theism can offer substantive modal, personal, and maximal attributes even if their evidential implications require further articulation. Live burden: The objection should identify what operational or comparative content is missing, demonstrate how alternative divine or impersonal hypotheses predict the same data, and distinguish legitimate metaphysical abstraction from evidentially disabling vagueness. Locked score: The very strong band reflects precise terminology, proportionate force, direct burden contact, and a coherent discrimination challenge, with only a limited need for more property-specific rebuttal.",
+      "originalValueSha256": "d1eb201102b38d1f51057b98650f9d72cf0fa7e59b46aaf0afa9e52c01879a0c",
+      "lockedMove": {
+        "moveId": "con-vague-divine-hypothesis",
+        "sectionId": "section-personal-divine-inference",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "A vague classical-theist mind or creator cannot function as a discrete hypothesis, so unexplained logic or order does not warrant an inference to the necessary personal God asserted by the motion.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "24:46",
+        "sourceSpan": {
+          "startEvent": 695,
+          "endEvent": 724,
+          "startMs": 1486240,
+          "endMs": 1558880
+        },
+        "sourceExcerpt": "would allow us to set it up as some sort of discrete hypothesis that things can point to? Quite often we don't get anywhere near a robust definition of a god. What we get is something uh vague or generalized. the god of classical theism with its various omnis or some kind of abstract thinking mind that serves as a grounding for something or the the the vague creator of order or",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 72,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-personal-ground"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-personal-mind-from-logical-attributes"
+          ],
+          "components": [
+            {
+              "componentId": "con-vague-divine-hypothesis-component-01",
+              "targetMoveId": "pro-personal-mind-from-logical-attributes",
+              "text": "Whether the proposed transcendent personal mind is specified sufficiently to receive discriminating support from logical attributes.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly attacks the specificity of the personal-mind conclusion, although it does not independently refute every property Tyler attributes to it.",
+          "responsivenessWithinClass": {
+            "value": 78,
+            "rationale": "It contacts the decisive identification component but leaves parts of the attribute-to-mind inference untreated."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It contacts the decisive identification component but leaves parts of the attribute-to-mind inference untreated."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection consistently concerns whether a generalized classical-theist mind constitutes a discrete hypothesis."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The limited claim that vague hypotheses cannot be strongly discriminated is proportionate to the cited lack of definition."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Classical theism supplies a substantive cluster of necessary, personal, and maximal attributes.",
+          "decisiveQualification": "A cluster of labels still needs operational or comparative content to distinguish the hypothesis from rivals."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The connection between hypothesis vagueness and weak discriminating inference is explicit and coherent."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (77 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the pro central personal-ground bridge."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The move fairly identifies the offered attribute cluster while pressing the remaining specificity problem."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts a discrete hypothesis with vague classical-theist omnis, an abstract mind, and a generalized creator of order.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-abduction-comparative-data-gap.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-abduction-comparative-data-gap",
+      "originalValue": "Strongest feature: The reply directly attacks both negative elimination and comparative warrant, correctly observing that the absence of a presently accepted natural account does not by itself supply likelihood data favoring a divine cause. Principal limitation: Its demand for something approaching an exhaustive candidate set is insufficiently delimited, and the broader suggestion that good evidence for supernatural claims might be unavailable exceeds the narrower, better-supported criticism of this specific abduction. Live burden: The skeptical case must explain what comparative evidence would be sufficient, distinguish principled uncertainty from categorical exclusion, and identify serious candidate classes or prediction differences rather than resting entirely on missing data. Locked score: The strong band reflects substantial relevance, a persuasive warning against premature supernatural inference, and useful attention to causal baselines, tempered by overbroad framing and the absence of a complete positive rival.",
+      "originalValueSha256": "a5ff5872848d5528ac4fc71f6055545d55df85c322307ddb93afa2d76184e75c",
+      "lockedMove": {
+        "moveId": "con-abduction-comparative-data-gap",
+        "sectionId": "section-abduction-alternatives",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "An abductive supernatural conclusion lacks warrant without a near-exhaustive candidate set, comparative likelihood data, and confirmed instances of divine causation, and cannot follow merely from the absence of a natural explanation.",
+        "importance": 3,
+        "finalScore": 78,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "26:42",
+        "sourceSpan": {
+          "startEvent": 747,
+          "endEvent": 782,
+          "startMs": 1602400,
+          "endMs": 1681760
+        },
+        "sourceExcerpt": "or abstractions. So, I'm not aware of any good evidence for God. I'm not aware of anyone demonstrating that there even could be good evidence for God or for anything supernatural. We don't have a mechanism by which we could explore supernatural causation or intervention. We don't get to just say, \"Hey, we haven't found a natural explanation for it. So therefore, my supernatural",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 64,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-underdetermination"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-unified-divine-explanation",
+            "pro-personal-mind-from-logical-attributes"
+          ],
+          "components": [
+            {
+              "componentId": "con-abduction-comparative-data-gap-component-01",
+              "targetMoveId": "pro-unified-divine-explanation",
+              "text": "Whether the asserted divine explanation has comparative likelihood support rather than merely filling a natural-explanation gap.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-abduction-comparative-data-gap-component-02",
+              "targetMoveId": "pro-personal-mind-from-logical-attributes",
+              "text": "Whether failure of selected impersonal accounts licenses the inference to supernatural personal agency.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly attacks the negative-elimination and comparative warrants behind the divine explanation, while offering no complete positive rival account.",
+          "responsivenessWithinClass": {
+            "value": 75,
+            "rationale": "It contacts decisive abductive defects but its near-exhaustiveness demand is stronger than needed and leaves some opening details unanswered."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts decisive abductive defects but its near-exhaustiveness demand is stronger than needed and leaves some opening details unanswered."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The gap objection is recoverable, but the required degree of candidate-set exhaustiveness and what counts as supernatural testing remain underspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The broad suggestion that good supernatural evidence may be impossible goes beyond the narrower and better-supported objection to this abduction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Abduction need not identify a mechanism or exhaust every possible candidate before favoring one explanation.",
+          "decisiveQualification": "It still requires comparative likelihood or explanatory support against serious live alternatives."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The challenge to inference from unexplained to supernatural is sound, but the stronger universal requirements are insufficiently derived."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "Specific missing information is named, though the necessity of exhaustive candidates and mechanisms is largely asserted."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central con underdetermination bridge."
+          },
+          "representationalCharity": {
+            "value": 72,
+            "rationale": "The response correctly isolates gap reasoning but imposes requirements that risk excluding legitimate novel-cause abduction."
+          }
+        },
+        "evidenceBasis": "The excerpt denies a mechanism for supernatural causation and rejects inferring supernatural explanation merely because no natural explanation is found.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 1,
+  "packetId": "debate-141-packet-1",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "141",
+  "debateId": "fischer-dillahunty-axiomatic-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-141.json",
+    "immutableRejectedOutputSha256": "0f295e3a0f62abe0465d908f6c8952adc0f212a4928ca8a316bfa27f21200358",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-141.json",
+    "publicationPacketSha256": "658995eb777005565d6c35d6769edd4d9bfbc898b9e04f8f7b0d8c8dc06f8161"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-challenge-infinite-past-model.critique",
+      "moveProse.con-incompatible-axiom-symmetry.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-challenge-infinite-past-model.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-challenge-infinite-past-model",
+      "originalValue": "Strongest feature: The reply precisely isolates two indispensable assumptions by separating an illustrative infinite timeline from an established cosmological model and questioning whether universe-bound time and causality can legitimately be extrapolated beyond the universe. Principal limitation: The objection is principally diagnostic and therefore does not independently demonstrate that an actual infinite past is coherent or that every conceptual first-cause argument necessarily depends upon empirical spacetime extrapolation. Live burden: The skeptic should articulate which alternative temporal or explanatory models remain viable and clarify whether the criticism defeats only this domino formulation or reaches the affirmative's broader metaphysical conclusion. Locked score: The very strong band reflects decisive premise contact, excellent responsiveness, disciplined qualification, and charitable engagement with the analogy's conceptual interpretation, while retaining room for a fuller affirmative account of competing cosmological possibilities.",
+      "originalValueSha256": "fc21507b1c3bc8131da3b66086c72b749adfc06b3c7e14e1d87efc1ab387d896",
+      "lockedMove": {
+        "moveId": "con-challenge-infinite-past-model",
+        "sectionId": "first-cause-and-conscious-will",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "The domino argument relies on an unsupported infinite-past model, while known time and causality are features of this universe.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "43:57",
+        "sourceSpan": {
+          "startEvent": 1345,
+          "endEvent": 1421,
+          "startMs": 2637680,
+          "endMs": 2772640
+        },
+        "sourceExcerpt": "we put it in but everything about it okay for me reads as a first cause argument and not an ontological argument that this is it has nothing to do with necessarily the characteristics of a god but instead um a fictional uh one directionally infinite timeline so first of all to the extent that we know and understand time and causality it seems to be contained within the universe",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-cosmological-challenge"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-first-cause-conscious-will"
+          ],
+          "components": [
+            {
+              "componentId": "con-challenge-infinite-past-model-component-01",
+              "targetMoveId": "pro-first-cause-conscious-will",
+              "text": "The domino inference depends on a fictional one-directional infinite timeline rather than establishing the relevant cosmological model.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-challenge-infinite-past-model-component-02",
+              "targetMoveId": "pro-first-cause-conscious-will",
+              "text": "Known time and causality appear contained within the universe, so their extension beyond it requires support.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies model dependence and the unsupported extrapolation of time and causality, thereby defeating two premises required by the analogy.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "It expressly contacts the temporal model and extrapolation on which the first-cause inference depends."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It expressly contacts the temporal model and extrapolation on which the first-cause inference depends."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The objection clearly distinguishes a modeled infinite timeline from known universe-bound time and causality and separately identifies the missing divine-characteristics inference."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Phrases such as 'to the extent that we know' and 'seems' appropriately qualify the cosmological scope claim and match the limited warrant offered."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The domino example is intended as a conceptual rather than empirical demonstration.",
+          "decisiveQualification": "A conceptual model still requires a reason that an actual infinite cannot contain a present member."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (81 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the central cosmological challenge against the route's temporal premise and divine-characteristics inference, ranking at the tier maximum."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt classifies the case as a first-cause argument built on a fictional one-directional infinite timeline and says known time and causality appear universe-contained.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-incompatible-axiom-symmetry.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-incompatible-axiom-symmetry",
+      "originalValue": "Strongest feature: The symmetry objection exposes the central underdetermination problem by showing that bare axiomatic adoption can equally accommodate incompatible divine and nondivine propositions, thereby withholding any discriminatory reason for selecting the affirmative's starting point. Principal limitation: The objection depends upon treating the competing candidates as comparably adoptable and would require further argument if the affirmative supplied a substantive, independently applicable criterion of self-evidence or conceptual indispensability. Live burden: The skeptic should formulate that criterion challenge explicitly and remain open to asymmetries grounded in coherence, explanatory integration, or necessity while requiring those asymmetries to be demonstrated rather than announced. Locked score: The very strong band reflects exceptionally decisive contact, stable scope, strong calibration, high charity, and direct motion-level force, with only the conditional limitation that a genuine authentication procedure could alter the symmetry analysis.",
+      "originalValueSha256": "07399485a2a36cd8311132ea6747cebf751c6ca615c8ed899366a4568f59ad1e",
+      "lockedMove": {
+        "moveId": "con-incompatible-axiom-symmetry",
+        "sectionId": "axiom-or-unsupported-assumption",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Axiomatic acceptance cannot establish God because incompatible gods or non-gods can be adopted in the same way, leaving no evidential means to distinguish them.",
+        "importance": 3,
+        "finalScore": 93,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "65:07",
+        "sourceSpan": {
+          "startEvent": 2025,
+          "endEvent": 2092,
+          "startMs": 3907839,
+          "endMs": 4035280
+        },
+        "sourceExcerpt": "question to ask is what is the reason to suppose that an axiomatic demonstration is somehow a faulty reason or suspect reason to believe in the existence of god because it needs to be supported by evidence you can't so you could take there's no god belief that one could propose that one couldn't accept axiomatically i could axiomatically accept allah yahweh whatever model scientology",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 65,
+          "characterCount": 386
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-axiom-challenge"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-first-cause-as-axiom",
+            "pro-resurrection-historical-evidence"
+          ],
+          "components": [
+            {
+              "componentId": "con-incompatible-axiom-symmetry-component-01",
+              "targetMoveId": "pro-first-cause-as-axiom",
+              "text": "Incompatible gods and non-gods can be axiomatically accepted by the same procedure, so the procedure cannot discriminate truth.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-incompatible-axiom-symmetry-component-02",
+              "targetMoveId": "pro-resurrection-historical-evidence",
+              "text": "The response reiterates the need for good evidence but does not examine the resurrection's historical warrant.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The symmetry objection expressly diagnoses why axiomatic acceptance cannot establish God and states its evidentially underdetermining consequence.",
+          "responsivenessWithinClass": {
+            "value": 93,
+            "rationale": "It directly defeats the axiom procedure, though its adjacent evidential complaint does not answer the separate resurrection claim."
+          },
+          "responsiveness": {
+            "value": 99,
+            "rationale": "It directly defeats the axiom procedure, though its adjacent evidential complaint does not answer the separate resurrection claim."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The symmetry claim is clearly bounded to what can be established merely by axiomatic acceptance and consistently distinguishes acceptance from discriminating evidence."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Given the stated method of bare axiomatic adoption, the inability to discriminate incompatible propositions follows without requiring an uncertainty qualification."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The theistic axiom may be claimed as self-evident rather than arbitrarily selected.",
+          "decisiveQualification": "A self-evidence criterion must still explain why incompatible God or non-God claims lack the same status."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The incompatible-start symmetry directly exposes the missing inference from axiomatic acceptance to truth and states the evidential consequence clearly and consistently."
+          },
+          "evidenceWarrant": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly completes the central axiom challenge by showing why the proposed method cannot distinguish incompatible starts, ranking at the tier maximum."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The symmetry challenge targets the strongest reasonable axiomatic reading and accurately preserves the decisive need for a discriminating criterion."
+          }
+        },
+        "evidenceBasis": "The excerpt lists Allah, Yahweh, Scientology, and non-God alternatives as equally adoptable axioms and contrasts that symmetry with the promised question of good evidence.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

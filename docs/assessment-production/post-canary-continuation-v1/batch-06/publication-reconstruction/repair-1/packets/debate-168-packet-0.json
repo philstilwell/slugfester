@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 4,
+  "packetId": "debate-168-packet-0",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "168",
+  "debateId": "craig-krauss-evidence-god-2012",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-168.json",
+    "immutableRejectedOutputSha256": "dd04a10e2d751e200f4d8d04ac9d8a3b7696c36013fa230ffcac784891aed8cf",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-168.json",
+    "publicationPacketSha256": "708db20f2527da1b8706f748f23a766fe36c6ca80c38c3c50200c0f787e89c7e"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "representativeQuotes.con.text",
+      "moveProse.con-contingency-gap-objection.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "representativeQuotes.con.text",
+      "type": "representative-quote-exact-source-substring",
+      "side": "con",
+      "sourceMoveId": "con-moral-independence-dilemma",
+      "originalValue": "moral truth constrains God's choices",
+      "originalValueSha256": "4c6520270e03d850c0746ea5c3401e233d84e2e9f0c7db344072a02948078145",
+      "lockedMove": {
+        "moveId": "con-moral-independence-dilemma",
+        "sectionId": "moral-objectivity-and-divine-grounding",
+        "side": "con",
+        "speaker": "Lawrence Krauss",
+        "moveKind": "reply",
+        "proposition": "If an act would remain wrong despite divine approval, moral truth constrains God's choices and therefore neither originates in God nor gains explanatory grounding from God.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "40:03",
+        "sourceSpan": {
+          "startEvent": 937,
+          "endEvent": 952,
+          "startMs": 2403319,
+          "endMs": 2441680
+        },
+        "sourceExcerpt": "whether there is or not it doesn't apply God for example we talk about rape if God set subjective morality if God decided that raping 2-year-old girls was okay would it be okay most of you I think would say no why would it okay because it's not moral but if it's not not moral than God didn't have the choice it's not God that chose what's moral and therefore if morality is based",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 76,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-objective-morality"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-objective-morality-ground"
+          ],
+          "components": [
+            {
+              "componentId": "con-moral-independence-dilemma-component-01",
+              "targetMoveId": "pro-objective-morality-ground",
+              "text": "If moral wrongness constrains what God could approve, objective morality is not explained by divine choice.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply expressly diagnoses the grounding inference: moral truth either remains independent of divine choice or divine approval could make grave acts permissible.",
+          "responsivenessWithinClass": {
+            "value": 92,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the disputed dependence inference and states why divine choice does not ground morality."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "Within diagnostic defeats, it explicitly identifies the disputed dependence inference and states why divine choice does not ground morality."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The counterfactual command, independent wrongness, and explanatory consequence are all clearly recoverable and consistently scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "As a dilemma against morality based on unconstrained divine choice, the asserted consequence follows at the stated force."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Moral truth may be grounded in God's necessary nature rather than arbitrary choices or an external standard.",
+          "decisiveQualification": "A nature-based account must still explain why that character is morally authoritative without circularity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 85,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The conceptual counterexample directly tests the grounding claim, though no further support establishes exhaustive coverage of divine theories."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the indispensable claim that objective moral truth obtains its ontology from God."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "Krauss asks whether divine approval could make rape permissible and argues that a negative answer makes morality independent of God's choice.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-contingency-gap-objection.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-contingency-gap-objection",
+      "originalValue": "Strongest feature: The move correctly emphasizes that present ignorance is not positive evidence for a divine explanation and offers continued investigation as an epistemically disciplined response to unknown causal processes. Principal limitation: The reply sometimes shifts from the general contingency of reality to unknown mechanisms producing particular beings, thereby risking insufficient contact with the affirmative's broader demand for an ultimate rather than merely proximate explanation. Live burden: The negative must show that the contingency argument contains a genuine identification gap even after its general explanatory principle is granted and must articulate how a physical terminus could satisfy the relevant modal requirements. Locked score: The strong and competent band reflects effective diagnostic pressure, appropriate uncertainty, and central relevance, moderated by target slippage and the absence of a fully developed natural necessary-ground account.",
+      "originalValueSha256": "8c8778cbd5f18369cb734acd878b61998067be3e6a5c6de12ee3408d6e0b994f",
+      "lockedMove": {
+        "moveId": "con-contingency-gap-objection",
+        "sectionId": "contingency-and-necessary-ground",
+        "side": "con",
+        "speaker": "Lawrence Krauss",
+        "moveKind": "reply",
+        "proposition": "Contingency and presently unexplained causal processes do not support God, because unknown explanations invite investigation and may ultimately prove entirely physical.",
+        "importance": 3,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "33:04",
+        "sourceSpan": {
+          "startEvent": 755,
+          "endEvent": 835,
+          "startMs": 1984799,
+          "endMs": 2174160
+        },
+        "sourceExcerpt": "of God in the gaps we don't know all the processes which led to the existence of human beings therefore God exists well that's just an awful excuse for God because that God of the ganks argument risks God disappearing when we discover the cause and we discover the cause is simply physical we now know in fact getting to his origin of the universe and also whether the universe is",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-cosmological-ground"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-contingency-necessary-cause"
+          ],
+          "components": [
+            {
+              "componentId": "con-contingency-gap-objection-component-01",
+              "targetMoveId": "pro-contingency-necessary-cause",
+              "text": "Whether unexplained contingent existence licenses an inference to God rather than continued investigation of possible physical explanations.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies a gap between present ignorance and God and states the defeating consequence that future physical explanations could remove the inference.",
+          "responsivenessWithinClass": {
+            "value": 87,
+            "rationale": "It expressly diagnoses a missing inference and gives the relevant consequence, though it partly misstates Craig's argument as ignorance about human origins."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It expressly diagnoses a missing inference and gives the relevant consequence, though it partly misstates Craig's argument as ignorance about human origins."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The no-gap principle is clear, but the target shifts from contingent being generally toward causal processes producing human beings."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The reply appropriately claims that unknown causes may be physical and treats uncertainty as a reason to investigate rather than conclude."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The contingency argument invokes a general explanatory principle rather than merely ignorance of the biological causes of human beings.",
+          "decisiveQualification": "Even a general principle still needs a bridge showing why the necessary explanation must be divine rather than physical."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 78,
+            "rationale": "The caution against inference from ignorance is sound, though it does not directly refute the stated principle of sufficient explanation."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 86,
+            "rationale": "It attacks the divine-identification step of the central cosmological bridge, albeit without defeating the entire contingency argument."
+          },
+          "representationalCharity": {
+            "value": 67,
+            "rationale": "The gap criticism is legitimate, but the example materially narrows and partly misdescribes the stronger contingency argument."
+          }
+        },
+        "evidenceBasis": "Krauss labels the inference God-of-the-gaps, emphasizes unknown processes, and warns that later-discovered causes may prove entirely physical.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

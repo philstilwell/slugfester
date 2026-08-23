@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 8,
+  "packetId": "debate-135-packet-3",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-method-chronology-presupposition.critique",
+      "moveProse.con-legend-demythologized-core.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-method-chronology-presupposition.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-method-chronology-presupposition",
+      "originalValue": "Strongest feature: The challenge exposes a genuine methodological danger: evidence cannot acquire proximity merely by being measured against a biographical timeline whose historical status is itself under dispute, so the benchmark requires independent justification rather than silent adoption. Principal limitation: The assertion that there is no way to determine what counts as early is materially overbroad, because documents and traditions can be dated by independent textual, historical, and manuscript criteria even if their distance from a particular life remains contested. Live burden: The con side must separate independent document dating from the disputed event chronology and explain why the former cannot still constrain plausible origin models. Locked score: The mixed band reflects a perceptive circularity diagnosis and direct burden contact, offset by exaggerated necessity language, incomplete accommodation of independent dating, and a conclusion broader than the objection establishes.",
+      "originalValueSha256": "c8e49fdbad39571be6e522a676e100e6d809bc99cefe3f72043fa450f6aa580a",
+      "lockedMove": {
+        "moveId": "con-method-chronology-presupposition",
+        "sectionId": "historical-method-and-burden",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Dating traditions to shortly after Jesus's supposed crucifixion presupposes the disputed Gospel chronology rather than independently establishing when the relevant history began.",
+        "importance": 2,
+        "finalScore": 73,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "38:57",
+        "sourceSpan": {
+          "startEvent": 876,
+          "endEvent": 894,
+          "startMs": 2337960,
+          "endMs": 2396079
+        },
+        "sourceExcerpt": "point in history when the gospels have Jesus appear but if there was no historical Jesus as we Wildey tin foil hat wearing mythicists I know I am anyway um suggest the bottom falls out of the whole thing there's no way to determine when the timeline began no way to say what or when counts as early to say for instance quote in nearly all our sources Peter was Jesus most intimate companion and Confidant for his entire public Ministry after",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 82,
+          "characterCount": 441
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "subsidiary",
+          "bridgeId": "pro-subsidiary-probabilistic-method"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-gospel-independent-early-traditions"
+          ],
+          "components": [
+            {
+              "componentId": "con-method-chronology-presupposition-component-01",
+              "targetMoveId": "pro-gospel-independent-early-traditions",
+              "text": "The dating of traditions as early evidence independently supports proximity to the supposed historical person.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "Price expressly identifies circularity in dating material relative to a disputed Gospel timeline and states that without the person the proposed starting point disappears.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "The reply explicitly attacks the chronological premise and states the consequence for claims that traditions are early."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The reply explicitly attacks the chronological premise and states the consequence for claims that traditions are early."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The circularity objection is recoverable, but its claim that there is 'no way' to date the timeline has overbroad scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Saying there is no way to identify what is early overlooks independent dating of documents and traditions."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Sources can be dated independently and then evaluated relative to the Gospel-era placement of Jesus.",
+          "decisiveQualification": "Independent document dating does not by itself validate the disputed biographical event used as the proximity benchmark."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (72 and 70); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 62,
+            "rationale": "The move identifies the premise it disputes but supplies no analysis showing that independent textual or historical dating methods fail."
+          },
+          "relevanceBurden": {
+            "value": 68,
+            "rationale": "It attacks a material subsidiary probabilistic premise concerning source proximity and chronological comparison."
+          },
+          "representationalCharity": {
+            "value": 58,
+            "rationale": "The reply exposes a possible circular use of chronology but materially weakens the alternative by treating all dating as dependent on Gospel historicity."
+          }
+        },
+        "evidenceBasis": "The excerpt says that absent a historical Jesus the Gospel-based starting point falls away and early cannot be fixed relative to it.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-legend-demythologized-core.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-legend-demythologized-core",
+      "originalValue": "Strongest feature: The Superman and Clark Kent analogy sharply redirects attention from bare compatibility to explanatory adequacy, asking why a mundane residue would be remembered, transmitted, or causally capable of producing traditions dominated by an exalted, miracle-working figure. Principal limitation: The analogy partly slides among three different propositions—whether a person existed, whether mundane events were preserved, and whether that person adequately explains Christianity—while a fictional superhero comparison cannot establish that every demythologized tradition lacks a historical core. Live burden: The con side must specify which recoverable claims fail and show why staged legendary development from an ordinary founder is comparatively implausible. Locked score: The strong band recognizes an incisive and responsive explanatory challenge, tempered by category slippage, limited evidentiary support, and insufficient engagement with the narrower claim that legend and existence remain logically compatible.",
+      "originalValueSha256": "bcfbdcec0d511b07bc581588e5d8e000dc161664b97e34fde55a7ccf32d24276",
+      "lockedMove": {
+        "moveId": "con-legend-demythologized-core",
+        "sectionId": "legendary-development-and-explanatory-fit",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Removing supernatural elements from Jesus traditions leaves mundane incidents with no evident reason to have been preserved or to have generated Christianity.",
+        "importance": 3,
+        "finalScore": 77,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "40:03",
+        "sourceSpan": {
+          "startEvent": 899,
+          "endEvent": 1006,
+          "startMs": 2403400,
+          "endMs": 2680319
+        },
+        "sourceExcerpt": "we decide that there was indeed a historical Superman but that he was merely Clark Kent um Bart says you can shape a tradition about Jesus any way you want so that it looks highly legendary but that has no bearing on the question of whether the legendary shaping uh whether beneath the legendary shaping lies the core of the historical event well let's try to imagine what some of",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "pro-central-legend-person-distinction"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-legend-pattern-person-distinction"
+          ],
+          "components": [
+            {
+              "componentId": "con-legend-demythologized-core-component-01",
+              "targetMoveId": "pro-legend-pattern-person-distinction",
+              "text": "The decisive distinction is whether legendary molding can be removed while leaving an independently explanatory historical person.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The Superman and Clark Kent analogy contacts the distinction by arguing that stripping wonders leaves a mundane residue with no demonstrated historical or causal role.",
+          "responsivenessWithinClass": {
+            "value": 72,
+            "rationale": "It contacts the decisive component but mainly challenges explanatory significance rather than showing that patterned legend implies nonexistence."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "It contacts the decisive component but mainly challenges explanatory significance rather than showing that patterned legend implies nonexistence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The explanatory-insufficiency claim is clear, but it slides partly between preservation, causal origin, and personal existence."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The mundane-residue problem is plausible, but the fictional-superhero analogy does not establish that every demythologized tradition lacks a historical core."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Legendary accretions may surround a real but ordinary founder without those accretions preserving his importance accurately.",
+          "decisiveQualification": "Existence of a mundane founder and adequacy of that founder to explain the exalted tradition remain distinct questions."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (68 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 64,
+            "rationale": "Several analogical reconstructions illustrate the concern, but no evidence shows mundane cores lack preservation or causal pathways."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the central legend-person distinction, albeit partly through a founder-insufficiency concern."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "The reply recognizes the minimal-founder proposal but materially weakens it by treating limited causal explanation as evidence of nonexistence."
+          }
+        },
+        "evidenceBasis": "The excerpt uses the Superman and Clark Kent analogy against the claim that legendary molding has no bearing on existence.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

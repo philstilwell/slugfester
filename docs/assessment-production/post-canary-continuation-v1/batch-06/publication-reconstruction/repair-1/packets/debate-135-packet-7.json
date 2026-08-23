@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 12,
+  "packetId": "debate-135-packet-7",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-resurrection-belief-origin-catalyst.critique",
+      "moveProse.con-origins-israelite-theophany.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-resurrection-belief-origin-catalyst.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-resurrection-belief-origin-catalyst",
+      "originalValue": "Strongest feature: The response accepts the opponent's explanatory demand rather than relying on a mundane teacher alone, then identifies resurrection belief as a plausible mechanism connecting execution, continued allegiance, exaltation, and the emergence of a distinct Christian proclamation. Principal limitation: The excerpt moves from causal plausibility to indispensability without comparing other transformation mechanisms, and admiration for teachings is represented too narrowly to establish that no alternative social, revelatory, or scriptural pathway could generate the movement. Live burden: The pro side must explain how resurrection belief arose, why it attached to this executed person, and why it outperforms mythic-origin accounts across the earliest evidence. Locked score: The strong band reflects direct responsiveness and a valuable multi-stage causal model, tempered by overextended necessity language, incomplete causal detail, and insufficient comparative testing of alternative movement-formation pathways.",
+      "originalValueSha256": "4bc601514bb002a81f7f3fa8ff52adf7290e436497061f798ed84f3dfb02fb84",
+      "lockedMove": {
+        "moveId": "pro-resurrection-belief-origin-catalyst",
+        "sectionId": "origins-context-and-crucified-messiah",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "Belief that the crucified Jesus had been raised was the indispensable catalyst that transformed attachment to a Jewish teacher into Christianity.",
+        "importance": 3,
+        "finalScore": 84,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "82:08",
+        "sourceSpan": {
+          "startEvent": 1893,
+          "endEvent": 1911,
+          "startMs": 4928560,
+          "endMs": 4975239
+        },
+        "sourceExcerpt": "Jesus became God uh I actually argue that that it was the resurrection that really mattered that that you know if you have I mean suppose you do have this group of people up in Galilee who really appreciate things like The Sermon on the Mount or something you know and and there are this like alternative group um I just don't I don't see how you get Christianity out of that I mean basically you've got a Jewish teacher",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 80,
+          "characterCount": 420
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-founder-insufficiency"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-legend-demythologized-core"
+          ],
+          "components": [
+            {
+              "componentId": "pro-resurrection-belief-origin-catalyst-component-01",
+              "targetMoveId": "con-legend-demythologized-core",
+              "text": "A mundane teacher and incidents lack the causal power needed to generate Christianity.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply accepts that appreciation of an ordinary teacher is insufficient and identifies resurrection belief as the additional movement-generating catalyst.",
+          "responsivenessWithinClass": {
+            "value": 87,
+            "rationale": "It directly contacts the causal insufficiency demand and supplies a specific replacement mechanism."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It directly contacts the causal insufficiency demand and supplies a specific replacement mechanism."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The catalyst claim is clear, but 'really mattered' and the indispensable scope are broader than the causal comparison developed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The example makes resurrection belief causally plausible, but does not establish that no other mechanism could transform a teacher movement."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Teachings and alternative Galilean communities could develop into Christianity without a resurrection catalyst.",
+          "decisiveQualification": "The proposed teaching-centered path must explain the shift to proclamation of an exalted crucified Christ."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 86,
+            "rationale": "Adding resurrection belief coherently answers why an ordinary teacher could become the center of an exalted movement."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The causal mechanism is historically pertinent, but the excerpt offers little evidence that it was indispensable rather than one factor."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The reply treats the rival path as possible in outline and identifies its decisive explanatory deficit without gross caricature."
+          }
+        },
+        "evidenceBasis": "The excerpt says admiration for a Galilean teacher does not yield Christianity and identifies resurrection belief as what mattered.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-origins-israelite-theophany.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-origins-israelite-theophany",
+      "originalValue": "Strongest feature: The move responds to the late-Gnostic chronology objection by relocating the proposed conceptual background to older Israelite divine traditions, thereby offering a potentially earlier source for exalted Christ language without depending exclusively on second-century texts. Principal limitation: The reconstruction compresses contested divine titles and relationships, relies on a reported scholarly proposal, and does not establish the transmission route by which the relevant theophanic model entered the earliest Christian communities or produced their specific claims. Live burden: The con side must document continuity, identify first-century intermediaries, and compare this model with resurrection exaltation of an executed Jewish figure. Locked score: The strong band reflects cautious possibility framing, chronological relevance, and a creative alternative origin pathway, moderated by substantial genealogical uncertainty, limited primary evidence in the excerpt, and an undeveloped comparison with the principal historical-founder explanation.",
+      "originalValueSha256": "1f4a5c0f536ade7c7370ed4670e742177e149cf51b3bfd089fc669b29cda530a",
+      "lockedMove": {
+        "moveId": "con-origins-israelite-theophany",
+        "sectionId": "origins-context-and-crucified-messiah",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Jesus may derive from an older Israelite theophanic tradition in which Yahweh appeared as a subordinate divine son distinguished from the Most High God.",
+        "importance": 3,
+        "finalScore": 80,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "85:45",
+        "sourceSpan": {
+          "startEvent": 1978,
+          "endEvent": 2006,
+          "startMs": 5145560,
+          "endMs": 5225119
+        },
+        "sourceExcerpt": "Israelite polytheism just like you had uh farahan carrying on the original version of the Nation of Islam yet Latin Mass Catholics who rejected uh the official Judgment of Vatican 2 well these these myths and beliefs don't die out and she said that Jesus she thinks is supposed to be Jehovah and that the name yahoshua yah saves that uh he was understood to be a theophany of Yahweh and he was praying to his father Al Elan the most high God",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 83,
+          "characterCount": 441
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-literary-mythic-development"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-late-gnostic-chronology"
+          ],
+          "components": [
+            {
+              "componentId": "con-origins-israelite-theophany-component-01",
+              "targetMoveId": "pro-late-gnostic-chronology",
+              "text": "The decisive demand is whether a mythic divine-son background can plausibly predate Paul despite the late extant Gnostic texts.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts the chronology objection by relocating the proposed background to persistent older Israelite theophanic traditions rather than late Gnosticism alone.",
+          "responsivenessWithinClass": {
+            "value": 78,
+            "rationale": "It answers the temporal objection with an earlier candidate tradition, but does not demonstrate the transmission link into Pauline Christianity."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It answers the temporal objection with an earlier candidate tradition, but does not demonstrate the transmission link into Pauline Christianity."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposed Yahweh-son model is recoverable and marked as a scholarly reconstruction, though divine titles and relationships remain compressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "possibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The cautious force fits a proposed reconstruction whose survival and transmission are not directly established."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The exalted Christ developed from resurrection belief about an executed Jewish teacher rather than preserved Israelite polytheism.",
+          "decisiveQualification": "The older-theophany model needs a traceable transmission path and comparative fit with the earliest Christian evidence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (76 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes Margaret Barker's reconstruction of Jesus as a Yahweh theophany subordinate to the Most High.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

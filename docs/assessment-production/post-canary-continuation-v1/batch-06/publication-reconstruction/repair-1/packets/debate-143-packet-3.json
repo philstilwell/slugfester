@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 19,
+  "packetId": "debate-143-packet-3",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "143",
+  "debateId": "vela-dillahunty-transcendental-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-143.json",
+    "immutableRejectedOutputSha256": "e3ab7d9b0f8c8a6d42b5fc67837830761aa5d3472983b4c18b6ef442e3e82148",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-143.json",
+    "publicationPacketSha256": "bdd2e7562bf66df1dd1f33fd4661705c2590b81532145e86c23f40e4c4e4d70b"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-hiddenness-evidential-expectation.critique",
+      "moveProse.con-logic-independent-of-god.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-hiddenness-evidential-expectation.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-hiddenness-evidential-expectation",
+      "originalValue": "Strongest feature: The move introduces an evidential expectation derived from divine capability and a possible desire for disclosure, offering issue-bearing contrary evidence against an uncomplicated personal-God hypothesis rather than merely denying the transcendental case. Principal limitation: It does not contact the decisive opening inference from logical attributes to a personal ground, and its suggestion that such a God would eliminate debate depends on underspecified assumptions about divine aims, human freedom, epistemic distance, and permissible ambiguity. Live burden: The hiddenness case must define the relevant disclosure intention, predict the expected distribution of reasonable nonbelief, and distinguish inadequate evidence from ordinary disagreement that could persist despite sufficient revelation. Locked score: The mixed band reflects genuine relevance to divine expectations but a nonanswer to the targeted grounding move, incomplete specification of the predicted evidence, and an overextended inference from disagreement alone.",
+      "originalValueSha256": "c41e25e357602d03750de463636feb3716e8e6bc2a73476c87460f595697dcfb",
+      "lockedMove": {
+        "moveId": "con-hiddenness-evidential-expectation",
+        "sectionId": "section-revelation-hiddenness",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "Persistent obscurity and disagreement about unfalsifiable God claims conflict with the clear evidence reasonably expected if a capable classical-theist God wanted its existence known.",
+        "importance": 2,
+        "finalScore": 66,
+        "scoreBand": "mixed 65–74",
+        "displayTime": "27:59",
+        "sourceSpan": {
+          "startEvent": 783,
+          "endEvent": 828,
+          "startMs": 1679600,
+          "endMs": 1771279
+        },
+        "sourceExcerpt": "be able to provide empirical evidence. We're not going to be able to proide provide material evidence. We're not going to be able to do this sort of testing. We wouldn't have to have an argument about what qualifies as good evidence. If there were in fact the kind of omniod or the classical theism god that Tyler and others are advocating for, there would be no need for a debate",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-divine-expectations"
+        },
+        "response": {
+          "class": "relevant-nonanswer",
+          "decisiveTargetIds": [
+            "pro-personal-mind-from-logical-attributes"
+          ],
+          "components": [
+            {
+              "componentId": "con-hiddenness-evidential-expectation-component-01",
+              "targetMoveId": "pro-personal-mind-from-logical-attributes",
+              "text": "Whether logical attributes are better explained by the necessary personal mind proposed in the opening.",
+              "contacted": false,
+              "decisive": true
+            }
+          ],
+          "rationale": "The hiddenness argument supplies issue-bearing contrary evidence about a classical-theist God but does not contact the opening's decisive logical-attribute grounding inference.",
+          "responsivenessWithinClass": {
+            "value": 57,
+            "rationale": "Within relevant nonanswers, it materially bears on the God hypothesis while leaving the targeted transcendental inference unaddressed."
+          },
+          "responsiveness": {
+            "value": 57,
+            "rationale": "Within relevant nonanswers, it materially bears on the God hypothesis while leaving the targeted transcendental inference unaddressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "missing",
+          "rationale": "The expected-evidence argument is identifiable, but the relevant divine aims and the scope of purported obscurity are not fully specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "The claim that such a God would eliminate debate requires an undefended premise about intended disclosure and permissible ambiguity."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A capable God may value noncoercive, mediated, or morally significant forms of disclosure.",
+          "decisiveQualification": "Those aims must still predict the observed degree and distribution of reasonable nonbelief."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 63,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (62 and 63); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 60,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (58 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the con central divine-expectations bridge."
+          },
+          "representationalCharity": {
+            "value": 57,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (55 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says a classical-theist God would make testing and debate unnecessary and connects disagreement to unfavorable implications about nonbelievers.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-logic-independent-of-god.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-logic-independent-of-god",
+      "originalValue": "Strongest feature: The reply squarely contests personal dependence by presenting identity and noncontradiction as apparently necessary across divine and nondivine possibilities, thereby contacting the central grounding claim rather than disputing logic's reality or usefulness. Principal limitation: Imaginability is an unstable guide to metaphysical possibility, and saying logical truths would remain true without God does not yet provide a developed truthmaker account or demonstrate that divine nature could not explain their necessity. Live burden: The position must clarify whether logic is fundamental, structural, conceptual, or descriptive and show why adding a personal ground offers no explanatory improvement rather than simply asserting independence. Locked score: The strong band reflects direct responsiveness, careful modal qualification, solid coherence, and meaningful pressure on divine dependence, while reserving room for a more rigorous account of necessity and explanation.",
+      "originalValueSha256": "0b0c182a38e47c1b9906815d753edf41e26b6a1c23102c13e8b81d6987ed3478",
+      "lockedMove": {
+        "moveId": "con-logic-independent-of-god",
+        "sectionId": "section-grounding-status",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "The basic laws of logic appear necessarily true whether or not God exists, and no transcendent realm or personal foundation has been demonstrated as necessary for their truth.",
+        "importance": 3,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "32:56",
+        "sourceSpan": {
+          "startEvent": 920,
+          "endEvent": 963,
+          "startMs": 1976320,
+          "endMs": 2084879
+        },
+        "sourceExcerpt": "to do. But those things would still be true because uh nothing is nothing. It's not not nothing and it is and everything is either nothing or not nothing. Those things would also be true um in in any realm that I could imagine. And they seem to be true whether or not there is a God. And so the curious thing is is that if you think that God can create these laws of logic, can God",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 78,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-no-grounding-necessity"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-necessary-ground-not-brute-fact",
+            "pro-personal-mind-from-logical-attributes"
+          ],
+          "components": [
+            {
+              "componentId": "con-logic-independent-of-god-component-01",
+              "targetMoveId": "pro-necessary-ground-not-brute-fact",
+              "text": "Whether necessary logical truths require a further divine ground rather than holding independently.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-logic-independent-of-god-component-02",
+              "targetMoveId": "pro-personal-mind-from-logical-attributes",
+              "text": "Whether the truth of logical laws depends on a personal mind or divine creative act.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly contests the claimed grounding need and personal dependence by arguing that basic logical truths remain necessary whether God exists or not.",
+          "responsivenessWithinClass": {
+            "value": 75,
+            "rationale": "It contacts the decisive necessity claim but mainly asserts independence and does not fully answer constitutive-grounding versions of the argument."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive necessity claim but mainly asserts independence and does not fully answer constitutive-grounding versions of the argument."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is qualified as seeming true across imaginable realms, though imagination is an unstable modal scope."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The repeated language of appearance and imagination appropriately limits the modal conclusion."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "God need not create logical laws temporally but may ground their necessary truth in divine nature.",
+          "decisiveQualification": "That model still requires an account of why divine nature explains rather than merely exemplifies logic."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 76,
+            "rationale": "The modal intuition coherently challenges dependence, but it does not conclusively distinguish truth without God from truth grounded in divine nature."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly advances the central no-grounding-necessity bridge."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt invokes identity and exhaustive alternatives, saying they seem true in any imaginable realm and regardless of God's existence.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

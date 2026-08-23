@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 10,
+  "packetId": "debate-135-packet-5",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-gospel-hypothetical-sources.critique",
+      "moveProse.con-pauline-celestial-archons.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-gospel-hypothetical-sources.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-gospel-hypothetical-sources",
+      "originalValue": "Strongest feature: The reply attacks the independence premise at its evidentiary foundation, carefully distinguishes a useful organizing model from a securely identified historical witness, and extends the challenge to disputed relationships involving Thomas, Peter, and the Egerton material. Principal limitation: The fact that a source is reconstructed rather than physically preserved does not itself defeat its existence or independence, because explanatory patterns can support lost-source hypotheses when compared rigorously with direct literary dependence and oral alternatives. Live burden: The con side must evaluate the specific textual phenomena supporting each reconstruction and show that dependence or common derivation better explains them than independent tradition. Locked score: The very strong band reflects precise qualification, excellent responsiveness, strong representational charity, and disciplined calibration, while recognizing that hypothetical status alone is not decisive and that the detailed comparative source analysis remains incomplete.",
+      "originalValueSha256": "ce5cb7e014465f790636993b2128524502f5a1a18df420af6ddb49da32557a18",
+      "lockedMove": {
+        "moveId": "con-gospel-hypothetical-sources",
+        "sectionId": "gospel-traditions-and-historical-recovery",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Hypothetical sources such as Q, M, and L and disputed extracanonical dependencies cannot securely establish multiple independent pre-Gospel witnesses to a historical Jesus.",
+        "importance": 3,
+        "finalScore": 90,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "50:41",
+        "sourceSpan": {
+          "startEvent": 1142,
+          "endEvent": 1210,
+          "startMs": 3041000,
+          "endMs": 3240040
+        },
+        "sourceExcerpt": "a helpful theoretical model for organizing the data of the gospels um others cut the pie in other ways uh uh q m and L are theor itical purely hypothetical not known but lost documents like The Gospel According to the Hebrews B also appeals to the gospels of Thomas and Peter and the so-called ederton gospel is independent witnesses to a recent and therefore historical Jesus but",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-source-dependence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-gospel-independent-early-traditions"
+          ],
+          "components": [
+            {
+              "componentId": "con-gospel-hypothetical-sources-component-01",
+              "targetMoveId": "pro-gospel-independent-early-traditions",
+              "text": "The decisive demand is whether several asserted early sources are real, independent witnesses rather than products of a contested source model.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly attacks the independence premise by identifying Q, M, and L as hypothetical and extracanonical dependencies as disputed.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "It squarely contacts the central source-independence demand across multiple examples, while stopping short of proving dependence in each case."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It squarely contacts the central source-independence demand across multiple examples, while stopping short of proving dependence in each case."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The claim is carefully limited to insecurity rather than asserting that every proposed source is demonstrably dependent."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The cautious conclusion that these sources cannot securely establish independence fits the stated scholarly disputes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Hypothetical source reconstruction can explain textual patterns and support independence without surviving manuscripts.",
+          "decisiveQualification": "A useful explanatory model is not automatically a securely identified historical witness with established independence."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 82,
+            "rationale": "Several named source proposals and disputed dependencies are identified, though their individual evidence is only summarized."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central source-dependence bridge by attacking the alleged multiplicity and independence."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt calls Q, M, and L theoretical and notes disputed dependence for Thomas, Peter, and the Egerton Gospel.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-pauline-celestial-archons.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-pauline-celestial-archons",
+      "originalValue": "Strongest feature: The reply supplies a genuine alternative interpretation of the earliest evidence, identifies the rulers as lower-heaven demonic powers, and sketches a coherent pathway by which a celestial death could later receive terrestrial narrative form. Principal limitation: The rulers remain unidentified in the cited phrase, earthly or mixed agency is not excluded, and analogies from later Gnostic texts cannot by themselves establish that Paul's first-century conceptual world contained the precise celestial drama proposed. Live burden: The con side must interpret the relevant Pauline context, explain embodied and Jewish descriptors, and demonstrate a credible transmission path from celestial execution to detailed historicization. Locked score: The strong band reflects direct responsiveness, clear possibility framing, and substantial alternative-generating value, tempered by chronological and genealogical gaps, incomplete passage-level comparison, and an inferential reach somewhat beyond the displayed evidence.",
+      "originalValueSha256": "cd69c437c9cca4510001a5baf64c2e3e26fac0abacdcb9555dd4c892e48450f3",
+      "lockedMove": {
+        "moveId": "con-pauline-celestial-archons",
+        "sectionId": "pauline-jesus-and-textual-foundations",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Paul's unidentified rulers of the age can be read as demonic powers who killed a celestial Christ, with an earthly crucifixion narrative arising through later historicization.",
+        "importance": 3,
+        "finalScore": 83,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "55:16",
+        "sourceSpan": {
+          "startEvent": 1240,
+          "endEvent": 1323,
+          "startMs": 3316079,
+          "endMs": 3533720
+        },
+        "sourceExcerpt": "the rulers or archons of this ion uh the principalities and Powers mythicists infer that the author of these Epistles was writing at a time when Christians believed in a Celestial man of light who had not appeared on the earth to teach and heal and die on a Roman cross but who had been ambushed and slain by the Demonic entities inhabiting the lower Heavens as we read in various",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-pauline-celestial-origin"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-paul-earthly-jewish-jesus"
+          ],
+          "components": [
+            {
+              "componentId": "con-pauline-celestial-archons-component-01",
+              "targetMoveId": "pro-paul-earthly-jewish-jesus",
+              "text": "The decisive demand is whether Paul's language locates Christ's death among earthly opponents or permits celestial demonic rulers.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly offers an alternative reading of Paul's archons as lower-heaven demonic powers and later terrestrial narration as historicization.",
+          "responsivenessWithinClass": {
+            "value": 86,
+            "rationale": "It contacts the earthly-versus-celestial inference explicitly, though it does not answer every earthly descriptor asserted by Ehrman."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It contacts the earthly-versus-celestial inference explicitly, though it does not answer every earthly descriptor asserted by Ehrman."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The move clearly presents the celestial reading as an inference rather than an indisputable textual fact."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The inferential force is cautious, but surviving later Gnostic analogies do not fully warrant the Pauline reconstruction."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul's rulers of the age are earthly authorities or a combined earthly and spiritual agency.",
+          "decisiveQualification": "The rulers are unidentified in the cited phrase, so either reading requires contextual argument beyond the label itself."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (80 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "The archon language and analogical Gnostic material are relevant, but provenance, dating, and Pauline fit are underdefended."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central Pauline-celestial-origin bridge against the pro terrestrial reading."
+          },
+          "representationalCharity": {
+            "value": 79,
+            "rationale": "The reply supplies a coherent rival interpretation but does not fully engage the terrestrial attributes emphasized by the target."
+          }
+        },
+        "evidenceBasis": "The excerpt identifies Paul's archons with demonic lower-heaven powers and proposes subsequent earthly historicization.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

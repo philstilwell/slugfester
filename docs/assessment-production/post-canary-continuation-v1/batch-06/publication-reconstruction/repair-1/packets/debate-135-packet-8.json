@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 13,
+  "packetId": "debate-135-packet-8",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-origins-ordinary-crucified-insufficient.critique",
+      "moveProse.con-method-rival-paradigms.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-origins-ordinary-crucified-insufficient.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-origins-ordinary-crucified-insufficient",
+      "originalValue": "Strongest feature: The reply properly distinguishes personal existence from explanatory sufficiency and presses the pro side to account for the striking distance between an ordinary executed teacher and the exalted, miracle-working Christ who structures the surviving movement. Principal limitation: The Superman and Clark Kent vocabulary leaves the causal standard imprecise, and questioning why a crucified person made a splash does not answer the proposed intervening mechanism of followers coming to believe that he had been raised. Live burden: The con case must evaluate resurrection belief and staged legendary development rather than requiring crucifixion alone to generate Christianity. Locked score: The strong band reflects a relevant, proportionately stated challenge to founder adequacy, tempered by incomplete contact with the strongest multi-stage pro explanation and by analogical framing that clarifies the intuition more effectively than it supplies comparative evidence.",
+      "originalValueSha256": "45d2055b59fe34fb2d1662b330f3b89882dcb75156f2c0d989280c809dd17a7e",
+      "lockedMove": {
+        "moveId": "con-origins-ordinary-crucified-insufficient",
+        "sectionId": "origins-context-and-crucified-messiah",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "A commonplace crucified teacher does not adequately explain Christianity's emergence because the causally significant figure is the richly mythologized, miracle-working Christ.",
+        "importance": 3,
+        "finalScore": 77,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "88:07",
+        "sourceSpan": {
+          "startEvent": 2032,
+          "endEvent": 2041,
+          "startMs": 5287480,
+          "endMs": 5310560
+        },
+        "sourceExcerpt": "are you talking about uh this miracle working Superman who seems in many ways to be a classic Hercules I'm not talking about him I'm not talking about him I'm talking about the historical Jesus well if there there we go back to my Clark Kent thing I don't know why even such a crucified figure would have made a splash it's certainly not impossible that people got crucified that's",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 70,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-founder-insufficiency"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-resurrection-belief-origin-catalyst"
+          ],
+          "components": [
+            {
+              "componentId": "con-origins-ordinary-crucified-insufficient-component-01",
+              "targetMoveId": "pro-resurrection-belief-origin-catalyst",
+              "text": "The decisive demand is whether an executed Jewish teacher plus resurrection belief adequately explains Christianity's emergence.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts explanatory adequacy by denying that a commonplace crucified figure explains the movement represented by the mythologized Christ.",
+          "responsivenessWithinClass": {
+            "value": 69,
+            "rationale": "It challenges the causal bridge but does not directly analyze the proposed resurrection-belief mechanism that was meant to supply it."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "It challenges the causal bridge but does not directly analyze the proposed resurrection-belief mechanism that was meant to supply it."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The insufficiency claim is clear, but 'made a splash' and the Superman/Clark Kent categories leave the causal standard imprecise."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The speaker appropriately says he does not know why such a figure made a splash rather than claiming impossibility."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A mundane execution became significant because followers came to believe the victim had been raised.",
+          "decisiveQualification": "The reply must assess the proposed post-execution catalyst, not demand that crucifixion alone explain Christianity."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 72,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (70 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 59,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (60 and 58); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central founder-insufficiency bridge by denying that an ordinary crucified teacher explains Christianity."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The reply distinguishes the mundane founder from the final myth but largely bypasses the transformation mechanism proposed by the opponent."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts the miracle-working Christ with a historical Jesus and questions why an ordinary crucified figure would matter.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-method-rival-paradigms.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-method-rival-paradigms",
+      "originalValue": "Strongest feature: The move accurately emphasizes that historical reconstruction is interpretive, question-guided, and iterative, and it uses persistent disagreement to caution against presenting any detailed portrait as a simple extraction from neutral, complete evidence. Principal limitation: A hermeneutical circle need not be vicious when evidence constrains initial questions, and paradigm plurality does not show that existence judgments are unavailable or that all reconstructions possess equal explanatory and evidentiary merit. Live burden: The con side must identify where the historical-person framework resists correction and provide comparative criteria showing that a mythic paradigm handles the same evidence better. Locked score: The strong band reflects thoughtful methodological relevance, appropriate modesty, and fair recognition of revisability, moderated by loosely specified paradigm language and by the failure to convert interpretive underdetermination into a decisive argument concerning the minimal existence question.",
+      "originalValueSha256": "8af3ade2113123285fb9c30221482ff2641d411539b330d14bbf61f15daf8425",
+      "lockedMove": {
+        "moveId": "con-method-rival-paradigms",
+        "sectionId": "historical-method-and-burden",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Historical-Jesus reconstructions remain rival interpretive paradigms imposed on fragmentary evidence, as persistent disagreement about Jesus's identity illustrates.",
+        "importance": 2,
+        "finalScore": 78,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "95:18",
+        "sourceSpan": {
+          "startEvent": 2217,
+          "endEvent": 2266,
+          "startMs": 5718400,
+          "endMs": 5854880
+        },
+        "sourceExcerpt": "at the evidence it's the hermeneutical Circle kind of thing that boltman and Hyer talk about but it's exactly what Bulman says about the New Testament you approach it with questions and you find uh that the data does or does not address them and so you revise your questions if they don't that's why like among people that do believe there was a historical Jesus that's about where",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 69,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "subsidiary",
+          "bridgeId": "con-subsidiary-reconstruction-limits"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-critical-tradition-recovery"
+          ],
+          "components": [
+            {
+              "componentId": "con-method-rival-paradigms-component-01",
+              "targetMoveId": "pro-critical-tradition-recovery",
+              "text": "Critical historical methods can recover substantial claims about Jesus from individually evaluated traditions.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts confidence in historical recovery by describing interpretation as a revisable hermeneutical circle producing rival Jesus reconstructions.",
+          "responsivenessWithinClass": {
+            "value": 73,
+            "rationale": "It reaches methodological underdetermination but does not show that critical revision cannot yield better-supported conclusions."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It reaches methodological underdetermination but does not show that critical revision cannot yield better-supported conclusions."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The hermeneutical-circle point is recoverable, but 'paradigm' and what counts as imposition versus revision remain loosely specified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move modestly describes interpretive iteration and persistent disagreement without claiming that paradigm plurality proves nonexistence."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Historically responsible inquiry revises questions against evidence and can rank rival reconstructions.",
+          "decisiveQualification": "A hermeneutical circle need not be vicious when evidence constrains and corrects the initial paradigm."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 77); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 68,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (67 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 69,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 76,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (77 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt describes a hermeneutical circle in which questions shape engagement with fragmentary evidence and are then revised.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 23,
+  "packetId": "debate-143-packet-7",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "143",
+  "debateId": "vela-dillahunty-transcendental-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-143.json",
+    "immutableRejectedOutputSha256": "e3ab7d9b0f8c8a6d42b5fc67837830761aa5d3472983b4c18b6ef442e3e82148",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-143.json",
+    "publicationPacketSha256": "bdd2e7562bf66df1dd1f33fd4661705c2590b81532145e86c23f40e4c4e4d70b"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-function-does-not-answer-grounding.critique",
+      "moveProse.pro-cumulative-public-revelation.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-function-does-not-answer-grounding.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-function-does-not-answer-grounding",
+      "originalValue": "Strongest feature: The reply precisely distinguishes object-level agreement about the operation of transcendental facts from the meta-level request for their explanation, directly diagnosing why a purely functional description may leave the original grounding question untouched. Principal limitation: Identifying an unanswered question does not independently establish that a further ontological ground is required, much less that the appropriate ground is personal, necessary, or divine, so the positive inference remains outside this successful distinction. Live burden: The pro side must justify the explanatory demand and show that a descriptive or fundamental account is incomplete rather than merely restating the request at another level. Locked score: The very strong band reflects exceptional clarity, matched calibration, charitable representation, and complete contact with the immediate reply, while preserving the limited but important qualification that raising the meta-question does not answer it.",
+      "originalValueSha256": "c090899171902ace0bf1056658a084a3bfbee55a7b4b11db8892565a02d8246f",
+      "lockedMove": {
+        "moveId": "pro-function-does-not-answer-grounding",
+        "sectionId": "section-grounding-status",
+        "side": "pro",
+        "speaker": "Tyler Vela",
+        "moveKind": "reply",
+        "proposition": "Agreement that transcendental facts function reliably does not answer the distinct meta-level question of what explains or grounds those facts.",
+        "importance": 3,
+        "finalScore": 88,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "117:19",
+        "sourceSpan": {
+          "startEvent": 3237,
+          "endEvent": 3265,
+          "startMs": 7039840,
+          "endMs": 7094560
+        },
+        "sourceExcerpt": "grounding. You say, \"Yeah, but the transcendental facts work.\" And I say, \"I I agree. I agree with the reality of the whole of the actual world. I agree with the reality of real past. I agree with identity over time. I I I agree. We we basically agree on these transcendental facts. What What is it? I don't understand the tennis ball. The the the transcendental facts are the tennis ball, right? I I I'm asking the the meta question about",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 82,
+          "characterCount": 439
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-grounding-demand"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-logic-descriptive-no-further-ground"
+          ],
+          "components": [
+            {
+              "componentId": "pro-function-does-not-answer-grounding-component-01",
+              "targetMoveId": "con-logic-descriptive-no-further-ground",
+              "text": "Whether describing the reliable function of transcendental facts answers the separate meta-level demand for their ground.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly diagnoses a level distinction between agreed function and the unanswered grounding question, without independently proving that grounding is required.",
+          "responsivenessWithinClass": {
+            "value": 82,
+            "rationale": "It explicitly contacts the decisive function-versus-ground component, though its positive grounding warrant remains absent."
+          },
+          "responsiveness": {
+            "value": 96,
+            "rationale": "It explicitly contacts the decisive function-versus-ground component, though its positive grounding warrant remains absent."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "not-needed",
+          "rationale": "The object-level agreement and meta-level explanatory question are consistently and explicitly distinguished."
+        },
+        "calibrationFindings": {
+          "assertedForce": "question",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move modestly identifies an unanswered question rather than claiming that the question already proves a divine answer."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A descriptive account may be complete if necessary logical relations require no external truthmaker.",
+          "decisiveQualification": "That position must explain why the request for a further ground is illegitimate rather than merely restating the relations."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 89); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (75 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the pro central grounding-demand bridge."
+          },
+          "representationalCharity": {
+            "value": 82,
+            "rationale": "The response fairly preserves the descriptive view while pinpointing the further issue it must address."
+          }
+        },
+        "evidenceBasis": "The excerpt records broad agreement about transcendental facts and then expressly asks the distinct meta-level question about those facts.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-cumulative-public-revelation.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-cumulative-public-revelation",
+      "originalValue": "Strongest feature: The reply directly denies hiddenness by presenting a cumulative and publicly oriented set of alleged disclosures across natural, moral, transcendental, historical, and revelatory domains rather than relying on private experience alone. Principal limitation: Listing evidential categories does not establish their reliability, independence, clarity, or discrimination, and describing the totality as sufficient for any reasonable person understates persistent informed disagreement and alternative explanations. Live burden: The cumulative case must assess dependence among components, support its historical and theological premises, compare religiously plural interpretations, and explain why reasonable nonbelief persists despite supposedly adequate disclosure. Locked score: The strong band reflects direct responsiveness, broad explanatory scope, and a recognizable cumulative strategy, tempered by materially overstated force, compressed public-warrant claims, limited evidence for the listed components, and incomplete engagement with the strongest ambiguity objection.",
+      "originalValueSha256": "f5dda77412ae2caa83baf634cd21a51bb6ab209724373f76815f52d73322adbe",
+      "lockedMove": {
+        "moveId": "pro-cumulative-public-revelation",
+        "sectionId": "section-revelation-hiddenness",
+        "side": "pro",
+        "speaker": "Tyler Vela",
+        "moveKind": "reply",
+        "proposition": "God is not hidden because creation, morality, transcendental facts, special revelation, Jesus, and the resurrection collectively constitute publicly available evidence.",
+        "importance": 2,
+        "finalScore": 75,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "128:37",
+        "sourceSpan": {
+          "startEvent": 3563,
+          "endEvent": 3588,
+          "startMs": 7717840,
+          "endMs": 7775840
+        },
+        "sourceExcerpt": "hidden. I think that God has uh revealed himself in the in the personal work of Jesus Christ in the resurrection. And I think he's revealed himself in special revelation. I think he's revealed himself uh his majesty his power in all of creation in the moral law within and you know in all of the transcendental facts of I mean I I think that there is um I I think that there is literally a cosmos of evidence um that ought to lead any reasonable",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 86,
+          "characterCount": 445
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-divine-expectations"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-hiddenness-evidential-expectation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-cumulative-public-revelation-component-01",
+              "targetMoveId": "con-hiddenness-evidential-expectation",
+              "text": "Whether God remains evidentially hidden despite an alleged cumulative public disclosure through creation, morality, logic, revelation, and resurrection.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly denies hiddenness by listing a cumulative body of alleged evidence, though it does not establish reliability or answer reasonable disagreement.",
+          "responsivenessWithinClass": {
+            "value": 70,
+            "rationale": "It contacts the decisive availability component but only asserts, rather than demonstrates, the adequacy of the evidence."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "It contacts the decisive availability component but only asserts, rather than demonstrates, the adequacy of the evidence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The cumulative thesis and evidence categories are clear, but public availability, evidential quality, and what reasonable persons ought infer remain compressed."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling the totality a cosmos of evidence that ought to lead any reasonable person to belief exceeds the support supplied by listing categories."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Public availability does not ensure clear or discriminating evidence when sources are contested and religiously plural.",
+          "decisiveQualification": "A cumulative case must address dependence, ambiguity, and alternative explanations across its components."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 74,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 55,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (57 and 52); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly attacks the con central divine-expectations bridge."
+          },
+          "representationalCharity": {
+            "value": 60,
+            "rationale": "The move lists the cumulative case but does not engage the strongest ambiguity and reasonable-nonbelief qualification."
+          }
+        },
+        "evidenceBasis": "The excerpt lists Jesus, resurrection, special revelation, creation, moral law, and transcendental facts as a publicly available cosmos of evidence.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

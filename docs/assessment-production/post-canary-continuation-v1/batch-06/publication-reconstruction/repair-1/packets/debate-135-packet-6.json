@@ -1,0 +1,269 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 11,
+  "packetId": "debate-135-packet-6",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-pauline-revelatory-sayings.critique",
+      "moveProse.pro-critical-tradition-recovery.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-pauline-revelatory-sayings.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-pauline-revelatory-sayings",
+      "originalValue": "Strongest feature: The move is carefully calibrated as a possibility claim and directly challenges the assumption that Pauline commands or institution words must derive from an ordinary historical transmission chain, expressly acknowledging that certainty is unavailable. Principal limitation: Plausibility alone does not identify revelation as the better explanation, and Paul's broader silence is ambiguous unless each relevant passage is compared for vocabulary, transmission formulas, scriptural mediation, communal practice, and explicit revelatory language. Live burden: The con case must demonstrate why private oracles predict the form and content of the sayings better than inherited tradition while accommodating Paul's meetings and earthly descriptors. Locked score: The very strong band reflects excellent qualification, precision, charity, and responsiveness to the historical-saying inference, moderated only by the evidentiary distance between blocking bare assertion and positively establishing a revelatory source.",
+      "originalValueSha256": "8cd664784bebaef8b0f95ace9b3c19453efe768364e8d84a6f4e77393ce89ecb",
+      "lockedMove": {
+        "moveId": "con-pauline-revelatory-sayings",
+        "sectionId": "pauline-jesus-and-textual-foundations",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Paul's purported sayings of Jesus may represent private revelations from an ascended Christ, while his broader biographical silence suggests that Gospel sayings were not yet available.",
+        "importance": 3,
+        "finalScore": 87,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "58:50",
+        "sourceSpan": {
+          "startEvent": 1324,
+          "endEvent": 1391,
+          "startMs": 3530319,
+          "endMs": 3711920
+        },
+        "sourceExcerpt": "the ascended Christ I think the latter is more likely we cannot be sure Paul does not mean he has a historical Jesus quote on hand but if this notion of Paul passing on private oracles is even a plausible suggestion then uh you can't just assert that he is quoting the historical Jesus the same applies to 1 Corinthians 11:23 through 26 where Paul quotes the words of institution",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 379
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-pauline-celestial-origin"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-paul-earthly-jewish-jesus"
+          ],
+          "components": [
+            {
+              "componentId": "con-pauline-revelatory-sayings-component-01",
+              "targetMoveId": "pro-paul-earthly-jewish-jesus",
+              "text": "The decisive demand is whether Pauline references to Jesus preserve earthly biography and teaching or derive from revelation.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly challenges the earthly-teacher inference by treating Pauline commands and institution words as possible private revelations from the ascended Christ.",
+          "responsivenessWithinClass": {
+            "value": 84,
+            "rationale": "It contacts the evidentiary route to an earthly teacher, though it does not answer all of the earlier move's earthly claims."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It contacts the evidentiary route to an earthly teacher, though it does not answer all of the earlier move's earthly claims."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The revelatory interpretation is stated as plausible and expressly concedes uncertainty about a historical saying source."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move appropriately argues that a plausible revelatory reading blocks bare assertion rather than proving revelation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Paul is transmitting sayings received through an ordinary historical chain rather than private revelation.",
+          "decisiveQualification": "Paul's wording and broader silence are ambiguous and require passage-specific comparison of transmission and revelation."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 84,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 77,
+            "rationale": "Named Pauline passages and biographical silence support ambiguity, though detailed linguistic analysis is compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central celestial-origin bridge by construing Pauline sayings as revelatory rather than biographical."
+          },
+          "representationalCharity": {
+            "value": 78,
+            "rationale": "The reply acknowledges that Paul may possess historical sayings but does not fully address genre-based expectations or tradition formulas."
+          }
+        },
+        "evidenceBasis": "The excerpt describes commands as possibly granted by an ascended Christ and applies the point to 1 Corinthians 11.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-critical-tradition-recovery.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-critical-tradition-recovery",
+      "originalValue": "Strongest feature: The reply correctly distinguishes critical historical analysis from crude naturalization, clarifying that one need not transform every miracle into an ordinary event in order to assess traditions individually and recover limited historical claims. Principal limitation: Referring to a lengthy book establishes neither the operative criteria nor their successful application in this excerpt, while phrases such as “a lot” and “the way you get there” leave the scope and method insufficiently specified. Live burden: The pro side must state transparent recovery criteria, apply them to representative traditions, and show that the surviving results are not simply a preferred mundane remainder. Locked score: The strong band reflects a relevant and charitable methodological clarification with plausible force, moderated by reliance on an external body of work in place of displayed warrant and by imprecision about what can actually be recovered.",
+      "originalValueSha256": "d1566ba3d79310893c039e55a544a150b2ff8133465f6b4f19f9d48d58b9095b",
+      "lockedMove": {
+        "moveId": "pro-critical-tradition-recovery",
+        "sectionId": "gospel-traditions-and-historical-recovery",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "Critical historical analysis can evaluate Gospel traditions individually and recover substantial claims about Jesus without accepting miracles or merely naturalizing miracle stories.",
+        "importance": 2,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "72:37",
+        "sourceSpan": {
+          "startEvent": 1651,
+          "endEvent": 1670,
+          "startMs": 4357120,
+          "endMs": 4400120
+        },
+        "sourceExcerpt": "it was Joe Rabbi look I wrote an entire book on what we can say about the historical Jesus so uh you know it's I don't know what it is 250 pages long so it's not as if there's nothing you can say there's a lot you can say without conceding a single Miracle but the way you get there is not by reading the miracle the five th000 and saying that they just really just had a picnic I",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 80,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "attack",
+          "tier": "central",
+          "bridgeId": "con-central-source-dependence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-gospel-hypothetical-sources"
+          ],
+          "components": [
+            {
+              "componentId": "pro-critical-tradition-recovery-component-01",
+              "targetMoveId": "con-gospel-hypothetical-sources",
+              "text": "The decisive demand is whether critical analysis can recover historical claims despite disputed source reconstruction and miraculous narrative material.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply asserts that traditions can be evaluated without accepting miracles and distinguishes critical analysis from merely naturalizing supernatural stories.",
+          "responsivenessWithinClass": {
+            "value": 69,
+            "rationale": "It contacts the recoverability issue, but largely appeals to the existence of a longer treatment rather than displaying the method here."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "It contacts the recoverability issue, but largely appeals to the existence of a longer treatment rather than displaying the method here."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The conclusion is recoverable, but 'the way you get there' and 'a lot you can say' leave the operative critical criteria unspecified."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "slightly-overstated",
+          "qualificationStatus": "implicit",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Recoverability is plausible, but the excerpt's reference to a lengthy book substitutes for the warrant needed in this selected span."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Historical recovery simply strips miracles away and preserves an unsupported mundane remainder.",
+          "decisiveQualification": "Modern critical analysis evaluates traditions individually and need not convert each miracle into a natural event."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 81,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (83 and 78); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 63,
+            "rationale": "The move cites the existence of an extended treatment and one obsolete method, without giving representative recovered claims or criteria."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "representationalCharity": {
+            "value": 91,
+            "rationale": "The reply accurately identifies and rejects the strongest methodological misunderstanding with a concrete picnic example."
+          }
+        },
+        "evidenceBasis": "The excerpt says much can be recovered without accepting miracles and rejects explaining the feeding story as merely a picnic.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

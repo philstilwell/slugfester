@@ -1,0 +1,277 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 21,
+  "packetId": "debate-143-packet-5",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "143",
+  "debateId": "vela-dillahunty-transcendental-evidence-god-2020",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-143.json",
+    "immutableRejectedOutputSha256": "e3ab7d9b0f8c8a6d42b5fc67837830761aa5d3472983b4c18b6ef442e3e82148",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-143.json",
+    "publicationPacketSha256": "bdd2e7562bf66df1dd1f33fd4661705c2590b81532145e86c23f40e4c4e4d70b"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-soundness-requires-supported-premises.critique",
+      "moveProse.pro-philosophical-abduction-as-evidence.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-soundness-requires-supported-premises.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-soundness-requires-supported-premises",
+      "originalValue": "Strongest feature: The reply cleanly distinguishes validity from soundness and insists that a formally correct argument cannot establish the debated conclusion unless its substantive premises are adequately supported, directly reinforcing the central evidentiary burden. Principal limitation: It does not identify which particular premise fails or assess the offered abductive defenses individually, and actual soundness should be distinguished from the more accessible question of whether available evidence rationally supports premise truth. Live burden: The skeptical side must evaluate the grounding, personal-mind, and comparative premises separately and articulate what degree of support would make them reasonable without demanding certainty. Locked score: The very strong band reflects impeccable use of the core logical distinction, high relevance, matched force, and a decisive challenge to unsupported premises, moderated only by limited application to the argument's individual components.",
+      "originalValueSha256": "cc8c865aad2a10a89ef4aafb9388cbe834318a553ab6e76adbecf2f9463b790f",
+      "lockedMove": {
+        "moveId": "con-soundness-requires-supported-premises",
+        "sectionId": "section-good-evidence-standard",
+        "side": "con",
+        "speaker": "Matt Dillahunty",
+        "moveKind": "reply",
+        "proposition": "A valid argument is not good evidence for God unless its premises are demonstrated true, because the debated conclusion requires soundness rather than formal validity alone.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "49:42",
+        "sourceSpan": {
+          "startEvent": 1401,
+          "endEvent": 1412,
+          "startMs": 2982240,
+          "endMs": 3007040
+        },
+        "sourceExcerpt": "no, no. Well, first of all, I the argument was valid, but there's no demonstration of soundness. And demonstrating that it is sound is where the evidence comes in. So, if we're going to have a debate on is there good evidence for God, you don't just get to say, \"Well, I think I presented a good argument because this isn't about a good argument. It's about a sound argument.\" And",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-evidentiary-standard"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-abstract-truths-grounded-in-mind"
+          ],
+          "components": [
+            {
+              "componentId": "con-soundness-requires-supported-premises-component-01",
+              "targetMoveId": "pro-abstract-truths-grounded-in-mind",
+              "text": "Whether the premises supporting the mind-grounding inference have been demonstrated rather than merely arranged validly.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply directly demands demonstrated premises for a sound argument, but it does not specify which premise fails or assess Tyler's abductive defenses individually.",
+          "responsivenessWithinClass": {
+            "value": 70,
+            "rationale": "It contacts the decisive warrant requirement but provides only a general rather than premise-specific answer."
+          },
+          "responsiveness": {
+            "value": 94,
+            "rationale": "It contacts the decisive warrant requirement but provides only a general rather than premise-specific answer."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "not-needed",
+          "rationale": "Validity, premise truth, soundness, and evidential support are used consistently and the core distinction is explicit."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "not-needed",
+          "uncertaintyAcknowledged": "not-needed",
+          "rationale": "Soundness necessarily requires true premises, and the claim does not exceed that standard logical point."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Abductive support can make premises warranted without deductively demonstrating them as certain.",
+          "decisiveQualification": "Soundness concerns actual truth, while rational evidence may support truth without certainty."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 94,
+            "rationale": "The validity-soundness distinction is explicit, consistent, and directly resolves the challenged inference from valid form to evidential success."
+          },
+          "evidenceWarrant": {
+            "value": 74,
+            "rationale": "The logical standard is sound, but the claim that the particular premises lack demonstration is not developed premise by premise."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the con central evidentiary-standard bridge."
+          },
+          "representationalCharity": {
+            "value": 90,
+            "rationale": "The move does not deny philosophical evidence; it precisely demands the additional premise support required for soundness."
+          }
+        },
+        "evidenceBasis": "The excerpt concedes validity, denies demonstrated soundness, and states that evidence is required to establish the premises as true.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-philosophical-abduction-as-evidence.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-philosophical-abduction-as-evidence",
+      "originalValue": "Strongest feature: The reply correctly defends philosophical implication and abduction as legitimate forms of support, directly answering both the demand for warranted premises and any overly narrow interpretation of publicly repeatable evidence. Principal limitation: It treats logical positivism and an emphasis on direct empirical evidence as more interchangeable than the opposing formulation warrants, while calling the argument sound before independently establishing the disputed grounding and comparative premises. Live burden: The defense must move beyond admissibility and show that this particular abduction uses well-specified hypotheses, justified priors, and genuine comparative advantages over serious alternatives. Locked score: The strong band reflects high responsiveness, a coherent rejection of crude verificationism, and an important clarification of evidential categories, tempered by representational overreach and insufficient demonstration that the admitted method actually supports the proposed divine conclusion.",
+      "originalValueSha256": "2cc0116113f2835cdb3562836734bb7e85d794768bdbc4d544ad16092961ea16",
+      "lockedMove": {
+        "moveId": "pro-philosophical-abduction-as-evidence",
+        "sectionId": "section-good-evidence-standard",
+        "side": "pro",
+        "speaker": "Tyler Vela",
+        "moveKind": "reply",
+        "proposition": "Deductive implication and abductive defense of premises can support a sound philosophical argument, and restricting evidence to direct empirical repeatability imposes a self-undermining standard.",
+        "importance": 3,
+        "finalScore": 80,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "50:16",
+        "sourceSpan": {
+          "startEvent": 1420,
+          "endEvent": 1453,
+          "startMs": 3016720,
+          "endMs": 3093040
+        },
+        "sourceExcerpt": "standard you've given is is a logical positivist one. whether you like it or not. Okay? Because what for you what what counts as evidence for something then evidence of a syllogism, right? I I mean I spent about eight minutes hashing out actually and defending the premises of the argument um from from good abductive reasoning and implication, right? That that's a perfectly valid and sound way to argue in any philosophical",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 73,
+          "characterCount": 425
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-epistemic-admissibility"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-soundness-requires-supported-premises",
+            "con-evidence-reliable-discrimination"
+          ],
+          "components": [
+            {
+              "componentId": "pro-philosophical-abduction-as-evidence-component-01",
+              "targetMoveId": "con-soundness-requires-supported-premises",
+              "text": "Whether deductive implication and abductive support can provide evidence for premises and a sound philosophical argument.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-philosophical-abduction-as-evidence-component-02",
+              "targetMoveId": "con-evidence-reliable-discrimination",
+              "text": "Whether evidence must satisfy direct empirical repeatability rather than broader philosophical warrant.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply contacts both the premise-support demand and the supposed empirical restriction by defending abduction and implication as legitimate philosophical evidence.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "It explicitly contacts two decisive demands, though it does not re-defend each substantive premise in this span."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly contacts two decisive demands, though it does not re-defend each substantive premise in this span."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The core defense is clear, but logical positivism and direct empirical evidence are treated as more interchangeable than warranted."
+        },
+        "calibrationFindings": {
+          "assertedForce": "certainty",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Calling the opponent's standard logical positivism and the argument sound is stronger than the excerpt's summarized warrant establishes."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The con standard allows philosophical evidence but asks whether this abduction reliably distinguishes God.",
+          "decisiveQualification": "Admissibility of abduction does not establish that the specific premises receive adequate comparative support."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 79,
+            "rationale": "The methodological rebuttal is coherent, but it partly conflates showing a method valid with showing the particular argument sound."
+          },
+          "evidenceWarrant": {
+            "value": 72,
+            "rationale": "The accepted role of deduction and abduction supports admissibility, while the specific premise defenses remain compressed."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central pro epistemic-admissibility bridge."
+          },
+          "representationalCharity": {
+            "value": 62,
+            "rationale": "The response fairly defends philosophical method but weakens the opponent's qualified discrimination demand into a positivist prohibition."
+          }
+        },
+        "evidenceBasis": "The excerpt labels the opposing standard positivist and states that the premises were defended through abductive reasoning and implication.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

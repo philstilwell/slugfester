@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "contextIndex": 15,
+  "packetId": "debate-135-packet-10",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "debateNumber": "135",
+  "debateId": "ehrman-price-historical-jesus-mythicism-2016",
+  "repairType": "bounded-score-locked-field-level-publication-repair",
+  "sourceControl": {
+    "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/outputs/debate-135.json",
+    "immutableRejectedOutputSha256": "be1991c2560e527c11dd012627c599a35624fe4c5278de6c4dddc71fae958d9a",
+    "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-reconstruction/packets/debate-135.json",
+    "publicationPacketSha256": "30c93c02c90d23ad47fae3d57586179502b69b5a5b95ed0271b2c528103ee5bd"
+  },
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-gospel-defective-historical-anchors.critique",
+      "moveProse.pro-comparative-historical-probability.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "critique": {
+      "labels": [
+        "Strongest feature:",
+        "Principal limitation:",
+        "Live burden:",
+        "Locked score:"
+      ],
+      "generationTargetWords": [
+        112,
+        118
+      ],
+      "acceptanceWords": [
+        105,
+        130
+      ],
+      "acceptanceMinimumCharacters": 880,
+      "exactSentenceCount": 4,
+      "terminalPunctuationRequired": true
+    },
+    "quote": {
+      "exactContiguousSourceSubstringRequired": true,
+      "acceptanceWords": [
+        3,
+        18
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-gospel-defective-historical-anchors.critique",
+      "type": "critique-word-boundary",
+      "moveId": "con-gospel-defective-historical-anchors",
+      "originalValue": "Strongest feature: The reply identifies concrete narrative anchors for scrutiny rather than dismissing the Gospels wholesale, challenging Pilate's conduct, the literary origins of Herod material, and the plausibility of a Sanhedrin proceeding on Passover Eve. Principal limitation: Defects in several scenes do not establish that every chronological, social, Pauline, or independent-tradition anchor fails, so the conclusion that Jesus becomes entirely free-floating substantially exceeds the scope of the examples supplied. Live burden: The con side must extend its analysis to the remaining source network and distinguish literary construction around a person from construction of the person. Locked score: The strong band reflects high responsiveness, specificity, and direct pressure on contextual reliability, tempered by compressed historical argument, limited representational charity, unstable scope, and a materially overstated inference from selected narrative defects to comprehensive historical unlocation.",
+      "originalValueSha256": "a80bdc5aa854245bf65c0cf6e824323d239fac8d9ca75ffa460afb720c69a8c4",
+      "lockedMove": {
+        "moveId": "con-gospel-defective-historical-anchors",
+        "sectionId": "gospel-traditions-and-historical-recovery",
+        "side": "con",
+        "speaker": "Robert Price",
+        "moveKind": "reply",
+        "proposition": "Jesus remains historically free-floating because Gospel links to Herod, Pilate, Caiaphas, and the Sanhedrin are literarily borrowed, implausible, or historically defective.",
+        "importance": 3,
+        "finalScore": 79,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "140:54",
+        "sourceSpan": {
+          "startEvent": 3257,
+          "endEvent": 3293,
+          "startMs": 8454280,
+          "endMs": 8553439
+        },
+        "sourceExcerpt": "historical you don't have to you know be special pleading to say that uh that those things pilate would never have lifted a finger to to save Jesus the Herod stories borrowed from Josephus is Moses Nativity the the Sanhedrin trial on Passover Eve is written by somebody that doesn't know what the circumstances were at the time so if you take that away I Think Jesus is is free floating",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 386
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-source-dependence"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "pro-gospel-independent-early-traditions",
+            "pro-critical-tradition-recovery"
+          ],
+          "components": [
+            {
+              "componentId": "con-gospel-defective-historical-anchors-component-01",
+              "targetMoveId": "pro-gospel-independent-early-traditions",
+              "text": "The decisive demand is whether Gospel traditions contain reliable contextual anchors rather than literary or historically defective placements.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-gospel-defective-historical-anchors-component-02",
+              "targetMoveId": "pro-critical-tradition-recovery",
+              "text": "Whether critical removal of defective narrative anchors still leaves a historically locatable and recoverable Jesus.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies particular Gospel anchors as borrowed or implausible and states the defeating consequence that Jesus becomes historically free-floating.",
+          "responsivenessWithinClass": {
+            "value": 84,
+            "rationale": "It contacts contextual reliability with several specifics, though it does not address all independent traditions or recovery criteria."
+          },
+          "responsiveness": {
+            "value": 97,
+            "rationale": "It contacts contextual reliability with several specifics, though it does not address all independent traditions or recovery criteria."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "partly-unstable",
+          "qualificationExplicitness": "implicit",
+          "rationale": "The free-floating conclusion is clear, but several historical and literary claims are compressed into broad dismissals."
+        },
+        "calibrationFindings": {
+          "assertedForce": "strong-probability",
+          "warrantFit": "materially-overstated",
+          "qualificationStatus": "missing",
+          "uncertaintyAcknowledged": "no",
+          "rationale": "Specific narrative defects can weaken anchoring, but they do not alone establish that every remaining chronological or social anchor fails."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Historically defective narrative details can coexist with a recoverable person located by independent source evidence.",
+          "decisiveQualification": "The attack must address remaining Pauline and independent-tradition anchors, not only Gospel scene construction."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 71,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 71); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central source-dependence bridge by attacking Gospel narrative anchors to ordinary history."
+          },
+          "representationalCharity": {
+            "value": 70,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (70 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt challenges Pilate's conduct, calls the Herod material borrowed, and attacks the Sanhedrin trial's historical setting.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-comparative-historical-probability.critique",
+      "type": "critique-word-boundary",
+      "moveId": "pro-comparative-historical-probability",
+      "originalValue": "Strongest feature: The reply supplies the debate's clearest methodological synthesis, explicitly rejects unattainable scientific certainty, and offers relevant comparative criteria—source number, independence, proximity, agreement, and critical examination—for ranking competing historical explanations. Principal limitation: The criteria are stated more fully than they are applied in the excerpt, leaving the independence and dating of particular Jesus traditions compressed and the comparative likelihood of the celestial alternative insufficiently quantified or traced. Live burden: The pro side must demonstrate that the identified sources genuinely satisfy those criteria after the strongest dependence, interpolation, and chronology objections are incorporated. Locked score: The very strong band reflects exceptional motion relevance, coherence, calibration, responsiveness, and charity toward methodological uncertainty, with only a limited reservation that the source-specific application remains abbreviated relative to the strength of the general probabilistic framework.",
+      "originalValueSha256": "aeab54a9e2d1741dae8695ac3c11324c3cec23ac4592ac9cbfa7343dee71d1e0",
+      "lockedMove": {
+        "moveId": "pro-comparative-historical-probability",
+        "sectionId": "historical-method-and-burden",
+        "side": "pro",
+        "speaker": "Bart Ehrman",
+        "moveKind": "reply",
+        "proposition": "Historical existence is assessed probabilistically through the independence, proximity, agreement, and critical examination of sources, under which Jesus has better evidence than figures known only through late singular hearsay.",
+        "importance": 3,
+        "finalScore": 93,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "143:43",
+        "sourceSpan": {
+          "startEvent": 3319,
+          "endEvent": 3357,
+          "startMs": 8623040,
+          "endMs": 8727520
+        },
+        "sourceExcerpt": "another talk about this person and say similar things about this person uh and that you can date some of these sources actually within years of when this person live that's better evidence so historians always are trying to establish probability ities of what happened and we can't have the kind of scientific certainty that you can have uh for example you can have in a chemistry",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "motion",
+          "bridgeId": "pro-motion-historical-person"
+        },
+        "response": {
+          "class": "justified-reframe",
+          "decisiveTargetIds": [
+            "con-method-rival-paradigms",
+            "con-gospel-defective-historical-anchors",
+            "con-external-hearsay-attestation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-comparative-historical-probability-component-01",
+              "targetMoveId": "con-method-rival-paradigms",
+              "text": "The decisive methodological demand is how fragmentary and paradigm-laden evidence can justify a historical existence judgment.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-comparative-historical-probability-component-02",
+              "targetMoveId": "con-gospel-defective-historical-anchors",
+              "text": "Whether remaining evidence retains comparative force when individual narrative anchors are challenged.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "pro-comparative-historical-probability-component-03",
+              "targetMoveId": "con-external-hearsay-attestation",
+              "text": "Whether multiple, proximate sources provide better evidence than late singular hearsay despite imperfect certainty.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply justifies replacing unattainable scientific certainty with comparative historical probability and specifies independence, proximity, agreement, and criticism as the legitimate criteria.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "It explicitly preserves the methodological issue and answers it with comparative criteria, while source-specific application remains compressed."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly preserves the methodological issue and answers it with comparative criteria, while source-specific application remains compressed."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The comparative probability standard and its source criteria are expressly stated and consistently bounded."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The move expressly rejects scientific certainty and matches its conclusion to comparative historical probability."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Defective narrative anchors and interpretive rivalry make Jesus no better attested than late hearsay figures.",
+          "decisiveQualification": "Historical comparison can still rank evidence by number, independence, proximity, agreement, and critical survivability."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 91,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 83,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 100,
+            "rationale": "It directly advances the pro motion-completion condition by stating how cumulative evidence makes historical existence comparatively probable."
+          },
+          "representationalCharity": {
+            "value": 88,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt contrasts late singular hearsay with multiple sources datable near a person and explicitly frames history probabilistically.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
