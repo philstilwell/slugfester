@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0-assessment-production-deterministic-validation-failure",
+  "protocolId": "assessment-production-post-canary-batch-07-audio-work-item-preparation-recovery-2",
+  "status": "batch-07-audio-work-item-cohort-directory-allowlist-failure-preserved",
+  "failedAt": "2026-08-23T20:38:00Z",
+  "command": "node scripts/test-assessment-production-post-canary-batch-07-audio-work-items.mjs",
+  "exitCode": 1,
+  "failureCategory": "deterministic-cohort-directory-allowlist",
+  "cause": "The cohort test's exact root-directory allowlist did not include the newly frozen recovery-1 audit directory.",
+  "fieldCorrectionCompleted": true,
+  "fieldCorrectionPostimageSha256": "5b102a5551096f95480a5e7f6dc71f0136a25dd30c7c0d7b25983c190043e052",
+  "fieldCorrectionRerun": false,
+  "mediaFilesAccessed": 0,
+  "audioFilesPlayed": 0,
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0
+}

@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import assert from "node:assert/strict";
-import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { readFile, readdir } from "node:fs/promises";
 
@@ -15,10 +14,6 @@ const JUDGMENT_ROOT = `${COHORT_ROOT}/independent-judgments`;
 const ROOT = `${COHORT_ROOT}/disagreement-extraction`;
 const workPath = `${ROOT}/audio-work-items.json`;
 const preparationPath = `${ROOT}/audio-work-item-preparation.json`;
-const TEST =
-  "scripts/test-assessment-production-post-canary-batch-07-audio-work-items.mjs";
-const PREIMAGE_RULE =
-  `${ROOT}/audio-work-item-preparation-recovery-2/preimage-reconstruction-rule.json`;
 const EXPECTED_DEBATES = [
   "193",
   "80",
@@ -164,24 +159,7 @@ assert.equal(
   "prepare-local-batch-07-source-audio-and-five-frozen-clips-under-standing-authorization"
 );
 
-const preimageRule = JSON.parse(await readFile(PREIMAGE_RULE, "utf8"));
-assert.equal(preimageRule.testPath, TEST);
-assert.equal(preimageRule.frozenCommit, "83e6269a340f9c6b4b0ce7d52a738320d4d8122e");
-assert.equal(
-  preparation.sourceHashes[TEST],
-  preimageRule.preparationAuthenticatedPreimageSha256
-);
-const frozenTestPreimage = execFileSync(
-  "git",
-  ["show", `${preimageRule.frozenCommit}:${TEST}`]
-);
-assert.equal(
-  sha256(frozenTestPreimage),
-  preimageRule.preparationAuthenticatedPreimageSha256
-);
-assert.equal(sha256(await readFile(TEST)), preimageRule.correctedTestSha256);
 for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
-  if (file === TEST) continue;
   assert.equal(
     sha256(await readFile(file)),
     digest,
@@ -245,8 +223,6 @@ assert.doesNotMatch(
 
 assert.deepEqual((await readdir(ROOT)).sort(), [
   "analysis.json",
-  "audio-work-item-preparation-recovery-1",
-  "audio-work-item-preparation-recovery-2",
   "audio-work-item-preparation.json",
   "audio-work-items.json",
   "disagreements"
