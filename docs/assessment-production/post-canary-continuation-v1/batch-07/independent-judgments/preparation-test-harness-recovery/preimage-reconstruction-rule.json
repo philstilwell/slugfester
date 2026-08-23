@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-assessment-production-frozen-source-preimage-reconstruction-rule",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-test-harness-recovery",
+  "status": "batch-07-preparation-test-preimage-reconstruction-rule-frozen",
+  "frozenSource": {
+    "commit": "c78e661ffac94553a2f85f0241985f96094d9a5c",
+    "path": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs",
+    "sha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6"
+  },
+  "reconstruction": {
+    "method": "read-the-exact-git-blob-then-apply-two-ordered-single-occurrence-text-replacements-in-memory",
+    "replacements": [
+      {
+        "before": "assert.equal(preparation.audioPolicy.pendingAttributionVerificationMoves.length, 2);",
+        "after": "assert.equal(preparation.audioPolicy.pendingAttributionVerificationMoves.length, 0);"
+      },
+      {
+        "before": "assert.equal(movesAcrossPasses, 400);",
+        "after": "assert.equal(movesAcrossPasses, 374);"
+      }
+    ],
+    "expectedCorrectedSha256": "537203100681414d00978aa841ee2a5f58c546981199c53a5de6c89e30ecb34f"
+  },
+  "postCorrectionSourceAuthentication": {
+    "manifestPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-manifest.json",
+    "manifestSha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce",
+    "rule": "For the corrected test path only, replay the reconstructed frozen Git preimage against the unchanged manifest digest; replay every other source from its current repository bytes. Separately require the current corrected test to equal the exact two-replacement reconstruction."
+  },
+  "preserved": {
+    "preparationManifestChanged": false,
+    "frozenPacketsChanged": false,
+    "schemasChanged": false,
+    "inventoriesChanged": false,
+    "sourcesChanged": false,
+    "scoresChanged": false,
+    "modelSettingsChanged": false,
+    "priorEvidenceChanged": false
+  }
+}

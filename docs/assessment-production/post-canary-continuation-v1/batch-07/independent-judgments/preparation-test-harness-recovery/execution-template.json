@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-assessment-production-frozen-single-pass-execution-template",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-test-harness-recovery",
+  "status": "batch-07-preparation-test-harness-recovery-execution-frozen-not-executed",
+  "command": "node scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation-recovery.mjs",
+  "targetCorrection": {
+    "path": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs",
+    "preimageSha256": "20a46ed558d6924ab4f4e486027be1c47e394cd5a3524cb35d2ac00eec7e74cc",
+    "postimageSha256": "537203100681414d00978aa841ee2a5f58c546981199c53a5de6c89e30ecb34f"
+  },
+  "expectedResult": {
+    "exitCode": 0,
+    "debates": 10,
+    "contexts": 20,
+    "uniqueMoves": 187,
+    "movesJudgedAcrossPasses": 374,
+    "pendingAttributionVerificationMoves": 0,
+    "frozenTestPreimageReconstructed": true,
+    "authorizedAssertionChanges": 2
+  },
+  "controls": {
+    "attempts": 1,
+    "ordinaryRetries": 0,
+    "reruns": 0,
+    "furtherPreparationCorrections": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  }
+}
