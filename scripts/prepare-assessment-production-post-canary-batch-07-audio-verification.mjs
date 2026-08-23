@@ -47,8 +47,9 @@ const TOOL_SOURCES = [
   "scripts/lib/assessment-production-post-canary-batch-07-standing-authorization.mjs",
   "scripts/prepare-assessment-production-post-canary-batch-07-audio-verification.mjs",
   "scripts/test-assessment-production-post-canary-batch-07-audio-verification-preparation.mjs",
-  "scripts/run-assessment-production-post-canary-batch-07-audio-transport-recovery-3.mjs",
-  "scripts/test-assessment-production-post-canary-batch-07-audio-source-recovery-3-cohort.mjs"
+  "scripts/assessment-production-post-canary-batch-07-audio-verification-stage.mjs",
+  "scripts/prepare-assessment-production-post-canary-batch-07-audio-sources.mjs",
+  "scripts/test-assessment-production-post-canary-batch-07-audio-sources.mjs"
 ];
 const standingAuthorization = await loadAndValidatePostCanaryBatch07StandingAuthorization();
 
