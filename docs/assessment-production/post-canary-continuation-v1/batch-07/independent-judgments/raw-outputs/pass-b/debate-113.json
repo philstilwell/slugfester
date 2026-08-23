@@ -1,0 +1,1637 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "113",
+  "debateId": "dirckx-woodford-god-suffering-2024",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-christian-coherence",
+      "side": "pro",
+      "description": "Establish that Christianity can coherently recognize suffering as genuinely wrong within a broken creation while relating it to human freedom, divine presence, justice, and promised restoration.",
+      "successCriteria": "The route succeeds if the framework explains why suffering is real evil without requiring a purpose for every tragedy, preserves divine goodness and power, and connects present brokenness to morally adequate divine action and future healing.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-framework",
+        "tier": "motion",
+        "description": "Show that the Christian account makes coherent overall sense of suffering alongside an all-powerful and all-loving God."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-broken-creation",
+          "tier": "central",
+          "description": "Explain how a good creation can be presently broken and why its natural mechanisms can produce suffering without making suffering morally illusory."
+        },
+        {
+          "bridgeId": "pro-central-divine-response",
+          "tier": "central",
+          "description": "Account for divine love through God's presence with sufferers, participation in suffering, and action against evil rather than through a distinct benefit assigned to every tragedy."
+        },
+        {
+          "bridgeId": "pro-central-restoration-justice",
+          "tier": "central",
+          "description": "Show how resurrection, judgment, forgiveness, and future restoration can heal suffering and put wrongs right without disregarding victims or consequences."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-moral-grounding",
+          "tier": "subsidiary",
+          "description": "Ground the judgment that suffering and exploitation are objectively wrong rather than merely evolutionarily disfavored."
+        },
+        {
+          "bridgeId": "pro-subsidiary-freedom-prayer",
+          "tier": "subsidiary",
+          "description": "Explain the roles of consequential human freedom and incomplete present healing within the wider broken-world framework."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-problem-of-evil",
+      "side": "con",
+      "description": "Establish that suffering is expected under naturalism but creates unresolved tensions among divine omnipotence, perfect love, selective intervention, judgment, and the claimed final defeat of evil.",
+      "successCriteria": "The route succeeds if apparently gratuitous suffering and the Christian framework's treatment of healing and salvation remain less compatible with an all-powerful, all-loving God than with naturalistic expectations.",
+      "motionBridge": {
+        "bridgeId": "con-motion-unreasonableness",
+        "tier": "motion",
+        "description": "Show that the observed reality and distribution of suffering make belief in the specified Christian God unreasonable."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-permission-of-evil",
+          "tier": "central",
+          "description": "Establish why an omnipotent and perfectly loving God would need a morally sufficient account of every evil that God knowingly permits."
+        },
+        {
+          "bridgeId": "con-central-naturalistic-explanation",
+          "tier": "central",
+          "description": "Show that natural processes can explain suffering and human aversion to it without invoking divine purposes or transcendent moral explanation."
+        },
+        {
+          "bridgeId": "con-central-healing-evidence",
+          "tier": "central",
+          "description": "Test whether selective and ambiguous recoveries provide evidence of divine intervention rather than outcomes expected from natural uncertainty."
+        },
+        {
+          "bridgeId": "con-central-salvation-justice",
+          "tier": "central",
+          "description": "Determine whether judgment based on belief or reconciliation treats sincere unbelief and grave wrongdoing consistently with perfect love and proportionate justice."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-moral-history",
+          "tier": "subsidiary",
+          "description": "Examine whether changing Christian moral practice weakens the claimed explanatory advantage of an objective divine standard."
+        },
+        {
+          "bridgeId": "con-subsidiary-future-promises",
+          "tier": "subsidiary",
+          "description": "Assess whether promised resurrection and future healing are sufficiently warranted to resolve rather than postpone the evidential problem."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-suffering-coherence",
+      "title": "Suffering, naturalism, and the coherence of a broken creation",
+      "weightPercent": 30,
+      "rationale": "This section contains the motion's foundational clash over whether naturalism adequately accommodates suffering or whether Christian broken-creation claims better explain both its mechanisms and its status as a genuine wrong."
+    },
+    {
+      "sectionId": "section-moral-grounding",
+      "title": "Evolution, objective morality, and human dignity",
+      "weightPercent": 15,
+      "rationale": "The competing accounts of moral aversion, cooperation, objective norms, and equal dignity bear on whether Christianity supplies explanatory resources that naturalism lacks and whether its historical record affects that claim."
+    },
+    {
+      "sectionId": "section-divine-presence-restoration",
+      "title": "Divine presence, permitted evil, and future restoration",
+      "weightPercent": 20,
+      "rationale": "The issue tests whether divine solidarity, epistemic limits, resurrection, and eventual healing can reconcile perfect goodness with permitted atrocities, or whether every permitted evil still demands an adequate greater-good justification."
+    },
+    {
+      "sectionId": "section-prayer-healing",
+      "title": "Unanswered prayer and evidence of divine healing",
+      "weightPercent": 15,
+      "rationale": "Selective recovery provides a concrete test of the broken-world and partially realized kingdom account against the contention that natural uncertainty predicts the observed pattern better than purposeful divine intervention."
+    },
+    {
+      "sectionId": "section-judgment-salvation",
+      "title": "Judgment, forgiveness, freedom, and sincere unbelief",
+      "weightPercent": 20,
+      "rationale": "This section examines whether divine judgment, costly forgiveness, human freedom, and an inclusive invitation can secure justice for victims while treating sincere unbelievers and repentant wrongdoers consistently with perfect love."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-naturalism-and-greater-good-tension",
+      "sectionId": "section-suffering-coherence",
+      "side": "con",
+      "speaker": "Stephen Woodford",
+      "moveKind": "constructive",
+      "proposition": "Naturalism accommodates suffering as part of nature, whereas divine omnipotence and perfect love imply that every apparently evil event must contribute to a greater good.",
+      "sourceSpan": {
+        "startEvent": 139,
+        "endEvent": 202
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly turns to Stephen, and the sustained first-person atheist answer occupies the window until the moderator resumes.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "con-motion-unreasonableness"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is the opening constructive statement of the principal problem-of-evil route, so no earlier opposing locked move supplies a response target.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "Within constructive moves, it clearly establishes the debate's central contrast and inferential demand."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The contrast is recoverable, but the universal claim that every evil must yield a greater good lacks a stated modal bridge."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Naturalism's compatibility claim is modest, but the asserted necessity of a greater good exceeds the supplied argument."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God may permissibly allow evil for reasons other than a benefit produced by each event.",
+        "decisiveQualification": "Perfect love still requires a morally sufficient permission rationale, even if not an event-specific benefit."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 68,
+          "rationale": "The conclusion follows only if an unstated premise connects omnipotent love to a greater good from every event."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The naturalistic contrast is intelligible, but the decisive universal theological implication is asserted rather than defended."
+        },
+        "relevanceBurden": {
+          "value": 100,
+          "rationale": "It directly advances the motion-level claim that suffering makes the specified divine belief unreasonable."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "The formulation narrows the theistic alternative to event-specific greater goods and omits other permission-based accounts."
+        }
+      },
+      "evidenceBasis": "The excerpt expressly says naturalism has no comparable explanatory problem and that Christianity requires suffering to serve a greater good.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-broken-creation-wrongness",
+      "sectionId": "section-suffering-coherence",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "The Christian account of a good but broken creation explains both suffering's natural mechanisms and humanity's conviction that suffering is genuinely wrong.",
+      "sourceSpan": {
+        "startEvent": 218,
+        "endEvent": 307
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Sharon directly, and the ensuing extended answer uses her scientific background before the moderator addresses Stephen.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "motion",
+        "bridgeId": "pro-motion-framework"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-naturalism-and-greater-good-tension"
+        ],
+        "components": [
+          {
+            "componentId": "pro-broken-creation-wrongness-component-01",
+            "targetMoveId": "con-naturalism-and-greater-good-tension",
+            "text": "Why omnipotence and perfect love do not require a sufficient account of every permitted evil",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The broken-creation account explains Christian recognition of wrongness but does not address the decisive inference from divine attributes to permitted suffering.",
+        "responsivenessWithinClass": {
+          "value": 58,
+          "rationale": "It is substantial issue-bearing contrary material, yet it leaves the earlier move's decisive permission demand unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The claim is clear, though the causal and theological content of a world being 'broken' remains underdefined."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The framework plausibly accommodates wrongness, but saying it explains the mechanisms and moral status compresses important warrants."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Beauty, brokenness, and moral wrongness are mutually consistent, but the bridge explaining divine permission remains material."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The excerpt articulates a coherent framework but supplies little independent support for its broken-creation explanation."
+        },
+        "relevanceBurden": {
+          "value": 99,
+          "rationale": "It directly advances the motion-level Christian framework by explaining suffering as real wrong within creation."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move mainly presents its own framework and does not materially characterize a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt explicitly describes the world as beautiful and broken and validates the judgment that something is genuinely wrong.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolved-aversion-to-suffering",
+      "sectionId": "section-moral-grounding",
+      "side": "con",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Evolutionary selection explains widespread aversion to suffering and the social impulse to improve conditions through dispositions favoring survival, reproduction, longevity, and prosperity.",
+      "sourceSpan": {
+        "startEvent": 393,
+        "endEvent": 417
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Stephen begins after Sharon asks for naturalistic grounds, answers in a sustained first-person explanation, and yields when Sharon responds.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-naturalistic-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-broken-creation-wrongness"
+        ],
+        "components": [
+          {
+            "componentId": "con-evolved-aversion-to-suffering-component-01",
+            "targetMoveId": "pro-broken-creation-wrongness",
+            "text": "Whether Christianity is needed to explain humanity's conviction that suffering is genuinely wrong",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-evolved-aversion-to-suffering-component-02",
+            "targetMoveId": "pro-broken-creation-wrongness",
+            "text": "Whether natural mechanisms can account for widespread aversion to suffering",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The evolutionary account directly supplies a rival natural mechanism for aversion, though it does not establish objective moral wrongness.",
+        "responsivenessWithinClass": {
+          "value": 74,
+          "rationale": "It contacts the natural-mechanism component decisively but only partially answers the distinct objective-wrongness component."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The evolutionary proposition is recoverable, but near-universal language about inherited aversion needs ordinary exceptions and scope limits."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Evolutionary influence on aversion is asserted at an appropriate explanatory level, with only a bounded implicit scope caveat."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 84,
+          "rationale": "Selection for survival and social functioning provides a coherent explanation of widespread suffering-avoidance dispositions."
+        },
+        "evidenceWarrant": {
+          "value": 76,
+          "rationale": "The mechanism is plausible and representative, but the move compresses verification and does not compare rival cultural explanations."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central naturalistic-explanation bridge by supplying a causal account of moral aversion."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move offers a rival causal explanation without materially reconstructing or weakening the Christian alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt invokes natural selection, inherited social dispositions, and avoidance of suffering in humans and other animals.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evolution-moral-standard",
+      "sectionId": "section-moral-grounding",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "Evolution may explain how moral dispositions arise, but it cannot determine why compassionate norms are objectively better than exploitative survival strategies.",
+      "sourceSpan": {
+        "startEvent": 418,
+        "endEvent": 452
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Sharon takes the floor in direct acknowledgment of Stephen's evolutionary account and develops the counterargument until Stephen announces his rejoinder.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-moral-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-evolved-aversion-to-suffering"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evolution-moral-standard-component-01",
+            "targetMoveId": "con-evolved-aversion-to-suffering",
+            "text": "Whether evolutionary origins can establish that compassionate dispositions are normatively better than exploitative alternatives",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes causal origins from normative authority and argues that selection alone cannot rank competing survival strategies.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts and challenges the decisive inference from evolutionary explanation to moral justification."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The descriptive-versus-normative distinction is clear, with an implicit limitation to evolution considered without added moral premises."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The inability to derive an objective ranking from a bare causal mechanism is appropriately forceful, subject to an implicit qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Evolution can explain dispositions while a naturalistic realist supplies independent objective moral truths.",
+        "decisiveQualification": "The earlier move itself supplied only selection and inherited aversion, not an independent realist foundation."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 88,
+          "rationale": "The is-ought distinction is explicit and the alternative-strategy example makes the missing normative premise clear."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The conceptual warrant is strong, though the further suggestion that the external standard points toward God remains compressed."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It reaches the upper end of the subsidiary moral-grounding tier by identifying the central normative deficit."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The reply fairly defeats the evolutionary mechanism as a complete standard, though it does not exclude every naturalistic realism."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that multiple survival-conducive moral systems are possible and selection itself cannot declare one objectively better.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-cooperation-and-christian-moral-change",
+      "sectionId": "section-moral-grounding",
+      "side": "con",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Cooperation can be evolutionarily advantageous, while changing Christian treatment of women and slavery weakens the claim that Christianity uniquely supplies unchanging objective moral guidance.",
+      "sourceSpan": {
+        "startEvent": 453,
+        "endEvent": 535
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Stephen explicitly introduces his rejoinder, develops both evolutionary and historical objections, and stops as Sharon begins her answer.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-moral-history"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evolution-moral-standard"
+        ],
+        "components": [
+          {
+            "componentId": "con-cooperation-and-christian-moral-change-component-01",
+            "targetMoveId": "pro-evolution-moral-standard",
+            "text": "Whether evolutionary cooperation can be favored without supplying an external objective moral standard",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-cooperation-and-christian-moral-change-component-02",
+            "targetMoveId": "pro-evolution-moral-standard",
+            "text": "Whether Christianity uniquely provides stable objective moral guidance",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move answers with cooperation's adaptive value and a historical challenge to Christianity, but adaptive advantage still does not itself establish objective value.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "It contacts both demands, yet the answer to the descriptive-normative distinction remains materially incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The two-part argument is recoverable, but 'Christianity' and changing treatment are generalized across diverse texts, eras, and communities."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The historical examples create a serious challenge, but the broad conclusion about objective guidance needs denominational and interpretive qualifications."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A fixed Christian norm may be progressively recognized while Christian institutions repeatedly violate it.",
+        "decisiveQualification": "Persistent contrary practice still weakens claims of uniquely clear and reliable historical guidance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The historical challenge is relevant, but changing practice does not by itself entail a changing underlying divine standard."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Women and slavery are pertinent examples, though their treatment is selective and lacks comparative historical support."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It strongly supports the subsidiary moral-history bridge by testing the claimed stability of Christian guidance."
+        },
+        "representationalCharity": {
+          "value": 72,
+          "rationale": "The either-God-changes-or-morality-is-not-objective framing underplays progressive recognition and institutional noncompliance."
+        }
+      },
+      "evidenceBasis": "The excerpt appeals to expanding empathy and changing Christian positions concerning women, slavery, and transgender people.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-equal-dignity-foundations",
+      "sectionId": "section-moral-grounding",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "Christianity grounds equal human dignity in creation and Jesus's conduct even though later Christian authorities sometimes failed to follow that mandate.",
+      "sourceSpan": {
+        "startEvent": 536,
+        "endEvent": 582
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Sharon begins by qualifying Stephen's account and continues through a focused defense of Genesis and Jesus before the moderator intervenes.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-moral-grounding"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-cooperation-and-christian-moral-change"
+        ],
+        "components": [
+          {
+            "componentId": "pro-equal-dignity-foundations-component-01",
+            "targetMoveId": "con-cooperation-and-christian-moral-change",
+            "text": "Whether Christianity contains a stable basis for equal dignity despite Christians' changing conduct",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-equal-dignity-foundations-component-02",
+            "targetMoveId": "con-cooperation-and-christian-moral-change",
+            "text": "Whether historical Christian failures show that the underlying mandate itself changed",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies Genesis and Jesus as stable normative sources and distinguishes those sources from later failures to follow them.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "It directly contacts the historical objection, though it does not fully address every cited practice or interpretive difficulty."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinction between foundational teaching and later institutional failure is explicit and the equal-dignity claim is stable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The claim is appropriately limited to a textual and exemplary foundation rather than perfect Christian historical performance."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian institutions' long failures may indicate ambiguity or weakness in the alleged equal-dignity mandate.",
+        "decisiveQualification": "Institutional failure does not alone prove that the cited creation principle and Jesus's conduct lack egalitarian content."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The source-versus-adherent distinction is valid and supplies a coherent answer to the claim of changing foundational morality."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "Genesis and Jesus are specific supports, though broader textual tensions and historical interpretation receive limited comparison."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It nearly maximizes the subsidiary moral-grounding tier by expressly grounding equal dignity in Christian sources."
+        },
+        "representationalCharity": {
+          "value": 86,
+          "rationale": "The reply acknowledges Christian failure while fairly preserving the distinction between a norm and noncompliance with it."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts ancient assertions of female inferiority with Genesis's claim that male and female bear God's image equally.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-real-evil-no-purpose-per-tragedy",
+      "sectionId": "section-suffering-coherence",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "Christianity treats evil as genuinely wrong without requiring each tragedy to be God's will, divine punishment, or a means to a particular benefit.",
+      "sourceSpan": {
+        "startEvent": 674,
+        "endEvent": 725
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Sharon for her response, and she gives a continuous answer until the transition to Stephen's interjection.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-permission-of-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-naturalism-and-greater-good-tension"
+        ],
+        "components": [
+          {
+            "componentId": "pro-real-evil-no-purpose-per-tragedy-component-01",
+            "targetMoveId": "con-naturalism-and-greater-good-tension",
+            "text": "The inference that Christianity must assign a particular greater good or divine purpose to every tragedy",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly rejects the premise that every evil is God's will or an event-specific means and states that Christianity can condemn it without sugar-coating.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It explicitly identifies and denies the decisive universal premise, then states the consequence for evaluating tragedy."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes God's will, punishment, resulting goods, and the unqualified wrongness of particular tragedies."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited claim that Christianity need not label each tragedy purposeful is matched to the articulated framework."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The objection may require a morally sufficient permission reason, not a benefit internal to each tragedy.",
+        "decisiveQualification": "Rejecting event-specific benefits does not yet answer why a loving omnipotent God permits the event."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 83,
+          "rationale": "The distinctions are consistent and defeat an event-purpose requirement, though they do not resolve the broader permission problem."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The conceptual distinction is well stated, but support for the wider broken-world theology remains largely internal and asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly attacks the central permission-of-evil bridge by denying its event-specific greater-good requirement."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The reply fairly defeats the narrower greater-good formulation but leaves the stronger permission rationale substantially open."
+        }
+      },
+      "evidenceBasis": "The excerpt says evil is real and wrong and explicitly denies that suffering must be described as God's will or punishment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-every-permitted-evil-requires-greater-good",
+      "sectionId": "section-suffering-coherence",
+      "side": "con",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Because an omnipotent and perfectly loving God knowingly permits each evil, Christianity must hold that even apparently gratuitous suffering and atrocities contribute to a superior outcome.",
+      "sourceSpan": {
+        "startEvent": 727,
+        "endEvent": 759
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Stephen signals his interjection and restates his logical argument in a continuous passage before Sharon begins her disagreement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-permission-of-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-real-evil-no-purpose-per-tragedy"
+        ],
+        "components": [
+          {
+            "componentId": "con-every-permitted-evil-requires-greater-good-component-01",
+            "targetMoveId": "pro-real-evil-no-purpose-per-tragedy",
+            "text": "Whether denying God's authorship or will removes the need for a sufficient reason for divine permission",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-every-permitted-evil-requires-greater-good-component-02",
+            "targetMoveId": "pro-real-evil-no-purpose-per-tragedy",
+            "text": "Whether an omnipotent God could prevent each permitted evil",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly shifts from divine authorship to knowing permission and asks why unlimited power and perfect love would allow each evil.",
+        "responsivenessWithinClass": {
+          "value": 95,
+          "rationale": "It explicitly contacts the decisive distinction and explains why permission, rather than direct causation, preserves the objection."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The permission argument is clear, but the stronger conclusion that every evil produces a superior outcome lacks an explicit bridge."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "A sufficient permission reason plausibly follows, but a greater good produced by every evil is stronger than the stated premises warrant."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "God may have morally sufficient permission reasons involving freedom, regular laws, or global goods without each evil producing a greater good.",
+        "decisiveQualification": "Such reasons still require defense against apparently preventable horrors and available less harmful alternatives."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The permission question follows well, but the transition from sufficient reason to superior event-specific outcome is unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Atrocities make the challenge vivid, yet the crucial modal premise and comparison with alternative permission accounts are undeveloped."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It sits at the top of the central permission tier by directly formulating the indispensable con-side challenge."
+        },
+        "representationalCharity": {
+          "value": 66,
+          "rationale": "The move preserves a powerful permission challenge but repeatedly treats one contested greater-good model as logically mandatory."
+        }
+      },
+      "evidenceBasis": "The excerpt argues that an all-powerful God can prevent evil, knowingly permits it, and therefore owes an explanation for allowing it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evil-reasons-epistemic-limits",
+      "sectionId": "section-divine-presence-restoration",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "Some atrocities are unqualified evils rather than necessary means to greater goods, while human inability to identify all divine reasons does not establish that none exist.",
+      "sourceSpan": {
+        "startEvent": 760,
+        "endEvent": 794
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Sharon begins with an explicit disagreement, develops the distinction between evil and resulting good, and completes her epistemic point as the moderator moves on.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-permission-of-evil"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-every-permitted-evil-requires-greater-good"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evil-reasons-epistemic-limits-component-01",
+            "targetMoveId": "con-every-permitted-evil-requires-greater-good",
+            "text": "Whether every permitted atrocity must itself contribute to a greater good",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-evil-reasons-epistemic-limits-component-02",
+            "targetMoveId": "con-every-permitted-evil-requires-greater-good",
+            "text": "Whether inability to identify divine reasons establishes that no sufficient reasons exist",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply explicitly denies greater goods from genocide and adds an epistemic caution about inferring absence of reasons from human ignorance.",
+        "responsivenessWithinClass": {
+          "value": 79,
+          "rationale": "It contacts the decisive universal claim but only partly answers the deeper demand for a morally sufficient permission account."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The distinction between resulting good and sufficient reason is not kept fully stable, leaving the exact epistemic claim somewhat unclear."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The limited epistemic point that unknown reasons may exist is appropriately cautious, although its scope is only implicit."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The objection is evidential: apparently gratuitous evil may lower God's probability without claiming certainty that no reason exists.",
+        "decisiveQualification": "Mere human ignorance does not by itself neutralize evidential weight from the scale and distribution of suffering."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The epistemic caution is valid, but combining 'no greater good' with possible divine reasons leaves their moral role underexplained."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "Genocide examples support the moral intuition, while the unknown-reasons response lacks independent constraints or comparative evidence."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly attacks the central permission bridge by denying both event-specific benefits and an inference from ignorance."
+        },
+        "representationalCharity": {
+          "value": 70,
+          "rationale": "The reply recognizes the logical limit but risks answering a certainty claim stronger than the most reasonable evidential objection."
+        }
+      },
+      "evidenceBasis": "The excerpt calls genocide and the Holocaust abject evil with no resulting greater good and invokes limits on human knowledge.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-divine-solidarity-restoration",
+      "sectionId": "section-divine-presence-restoration",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "Christianity answers suffering through a God who entered history and suffered in Jesus, remains present with sufferers, and promises resurrection and eventual healing.",
+      "sourceSpan": {
+        "startEvent": 904,
+        "endEvent": 996
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly directs the Christian-worldview question to Sharon, and the uninterrupted answer uses first-person Christian testimony consistent with her position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-divine-response"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-every-permitted-evil-requires-greater-good"
+        ],
+        "components": [
+          {
+            "componentId": "pro-divine-solidarity-restoration-component-01",
+            "targetMoveId": "con-every-permitted-evil-requires-greater-good",
+            "text": "Why divine presence, suffering, and future healing morally justify God's permission of preventable evil",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Solidarity and restoration are relevant divine responses, but the move does not show why they justify allowing each preventable atrocity initially.",
+        "responsivenessWithinClass": {
+          "value": 60,
+          "rationale": "It supplies meaningful contrary material about divine response while leaving the decisive permission inference uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The three-part claim about incarnation, present help, and future resurrection is clearly separated and recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Personal experience supports a modest testimony, but the broader claims of divine presence and restoration exceed that evidence."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Solidarity and promised healing coherently express concern, but they do not supply the missing permission justification."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The move relies on scripture, doctrine, and personal testimony without independent support for resurrection or universal restoration."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It nearly maximizes the central divine-response tier through explicit solidarity, presence, and restorative action."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move primarily develops a positive Christian response and does not substantially characterize an opposing alternative."
+        }
+      },
+      "evidenceBasis": "The excerpt cites God's presence in trouble, personal Christian experience, Jesus's suffering, and the promise of resurrection and healing.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-skepticism-of-exclusive-afterlife-hope",
+      "sectionId": "section-divine-presence-restoration",
+      "side": "con",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Christian promises of future healing merit skepticism, and restricting their benefit to believers would treat sincere unbelievers incompatibly with the perfect love attributed to God.",
+      "sourceSpan": {
+        "startEvent": 1001,
+        "endEvent": 1064
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks whether heaven is a helpful fiction, after which Stephen gives a sustained skeptical analogy and explicitly speaks from the atheist position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-salvation-justice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-divine-solidarity-restoration"
+        ],
+        "components": [
+          {
+            "componentId": "con-skepticism-of-exclusive-afterlife-hope-component-01",
+            "targetMoveId": "pro-divine-solidarity-restoration",
+            "text": "Whether promised future healing is warranted and available to sincere unbelievers",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-skepticism-of-exclusive-afterlife-hope-component-02",
+            "targetMoveId": "pro-divine-solidarity-restoration",
+            "text": "Whether exclusive salvation is compatible with perfect divine love",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly questions the truth and scope of future healing and argues that excluding sincere atheists conflicts with perfect love.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "It expressly contacts the promise's warrant and beneficiary scope, though it compresses variation among Christian salvation views."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The objection is clear, but it moves broadly among Christianity, Islam, heaven, hell, belief, and salvation without doctrinal qualifications."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Skepticism is warranted, but the assumed exclusivity and fate of all sincere unbelievers are broader than the evidence supplied."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Christian accounts may distinguish explicit belief from culpable rejection and may allow inclusive or postmortem reconciliation.",
+        "decisiveQualification": "The move can still demand clarity about who benefits and why sincere nonbelief would warrant exclusion."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "If exclusivity and punishment are granted, the love tension follows; the weakness is that those doctrinal premises are insufficiently fixed."
+        },
+        "evidenceWarrant": {
+          "value": 65,
+          "rationale": "The appeal to attributed teachings creates a relevant challenge, but doctrinal breadth and future-life claims are not documented comparatively."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central salvation-justice bridge by testing sincere unbelief against perfect love."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "It raises a serious qualification but treats one exclusivist reading as though it exhausted the Christian alternatives."
+        }
+      },
+      "evidenceBasis": "The excerpt questions whether atheists share the promised hope and invokes teachings allegedly limiting heaven to believers.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-loving-judgment-reconciliation",
+      "sectionId": "section-judgment-salvation",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "Final judgment expresses divine love because God knows every heart, corrects earthly injustice, opposes evil, and extends an inclusive invitation to reconciliation.",
+      "sourceSpan": {
+        "startEvent": 1066,
+        "endEvent": 1105
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response adopts the Christian first-person plural and directly develops Sharon's recurring claims about ultimate justice, divine love, and an open invitation to God.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-restoration-justice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-skepticism-of-exclusive-afterlife-hope"
+        ],
+        "components": [
+          {
+            "componentId": "pro-loving-judgment-reconciliation-component-01",
+            "targetMoveId": "con-skepticism-of-exclusive-afterlife-hope",
+            "text": "Whether divine judgment and salvation can treat persons justly rather than excluding them merely for sincere unbelief",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-loving-judgment-reconciliation-component-02",
+            "targetMoveId": "con-skepticism-of-exclusive-afterlife-hope",
+            "text": "Whether future restoration corrects rather than merely postpones earthly injustice",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply stresses divine knowledge of hearts, ultimate justice, opposition to evil, and an inclusive invitation, but does not specify sincere unbelievers' fate.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "It contacts the central love-and-justice concern but leaves the decisive application to earnest nonbelief materially incomplete."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "Judgment and invitation are clear, but 'radically inclusive' is not defined in relation to belief, opportunity, or final outcome."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical assurance of perfectly loving justice lacks a stated account of difficult cases such as sincere nonbelief."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "An invitation may be formally open while sincere evidential nonbelief prevents a person from accepting it.",
+        "decisiveQualification": "Perfect knowledge of hearts could matter, but the reply must explain how it changes the unbeliever's final treatment."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "Love, judgment, and reconciliation can be consistent, but the mechanism connecting invitation to proportionate outcomes remains unspecified."
+        },
+        "evidenceWarrant": {
+          "value": 62,
+          "rationale": "The claims rest mainly on asserted Christian doctrine and do not establish how divine heart-knowledge resolves the hard case."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It strongly supports the central restoration-and-justice bridge through judgment, opposition to evil, and reconciliation."
+        },
+        "representationalCharity": {
+          "value": 69,
+          "rationale": "The reply affirms inclusion without fully engaging the objection that inability to believe differs from willful refusal."
+        }
+      },
+      "evidenceBasis": "The excerpt describes final justice, God's concern about evil, love for persons, knowledge of hearts, and a radically inclusive invitation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-partial-kingdom-unanswered-prayer",
+      "sectionId": "section-prayer-healing",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "Unanswered healing prayer reflects a broken world in which God's kingdom has begun but is incomplete, so non-healing implies neither deficient faith nor divine punishment.",
+      "sourceSpan": {
+        "startEvent": 1151,
+        "endEvent": 1216
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Sharon by name, and her uninterrupted answer explains Jesus' healings, Christian prayer, and the unfinished kingdom from an explicitly Christian standpoint.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-freedom-prayer"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-skepticism-of-exclusive-afterlife-hope"
+        ],
+        "components": [
+          {
+            "componentId": "pro-partial-kingdom-unanswered-prayer-component-01",
+            "targetMoveId": "con-skepticism-of-exclusive-afterlife-hope",
+            "text": "Whether promised future healing is sufficiently warranted rather than merely asserted",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move explains non-healing within an incomplete kingdom and rejects blame of sufferers, but it does not supply warrant for future healing or exclusivity.",
+        "responsivenessWithinClass": {
+          "value": 50,
+          "rationale": "It is relevant to deferred healing but does not contact the earlier move's decisive warrant and beneficiary demands."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move explicitly states what unanswered prayer does not mean and locates it within an incomplete present kingdom."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The exclusions are pastorally clear, but saying non-healing simply means continuing brokenness omits competing causal explanations."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "An inaugurated but incomplete kingdom accommodates mixed outcomes, though accommodation alone does not explain their distribution."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The account is doctrinally articulated but offers no independent evidence distinguishing partial kingdom from ordinary nonintervention."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It reaches the top of the subsidiary freedom-and-prayer tier by directly explaining present non-healing."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move explains its own framework and does not materially portray a developed opposing account of non-healing."
+        }
+      },
+      "evidenceBasis": "The excerpt rejects deficient faith, inadequate prayer, and punishment as explanations, instead invoking a still-broken world.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-natural-uncertainty-and-selective-healing",
+      "sectionId": "section-prayer-healing",
+      "side": "con",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Natural uncertainty can explain selective surprising recoveries, whereas genuine divine healing should also produce clear outcomes such as restored limbs rather than only ambiguous remissions.",
+      "sourceSpan": {
+        "startEvent": 1223,
+        "endEvent": 1304
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly turns to Stephen, whose answer contrasts atheist naturalism with the Christian healing account and presents a sustained skeptical test for miracles.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-healing-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-partial-kingdom-unanswered-prayer"
+        ],
+        "components": [
+          {
+            "componentId": "con-natural-uncertainty-and-selective-healing-component-01",
+            "targetMoveId": "pro-partial-kingdom-unanswered-prayer",
+            "text": "Whether an incomplete kingdom explains selective healing better than ordinary natural uncertainty",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-natural-uncertainty-and-selective-healing-component-02",
+            "targetMoveId": "pro-partial-kingdom-unanswered-prayer",
+            "text": "Whether divine healing should produce clear outcomes unavailable through spontaneous recovery",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies the framework's lack of discriminating predictions and states that ambiguous remissions fit natural uncertainty while restored limbs would differ.",
+        "responsivenessWithinClass": {
+          "value": 96,
+          "rationale": "It expressly diagnoses the evidential defect, offers a contrasting test, and states the defeating consequence."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The natural-versus-miraculous comparison is clear, with an implicit limitation to publicly observable healing claims."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move appropriately argues comparative expectation rather than impossibility and acknowledges uncertainty in medical outcomes."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Divine healing might be rare, non-coercive, or integrated with natural processes rather than spectacular.",
+        "decisiveQualification": "Such flexibility reduces the account's predictive discrimination unless independent criteria identify divine action."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 89,
+          "rationale": "The comparative prediction is explicit and the restored-limb contrast directly illustrates the proposed evidential discriminator."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The remission-versus-restoration comparison is concrete, though representative medical rates and case documentation are absent."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It maximally advances the central healing-evidence bridge by comparing rival predictions for observed recovery patterns."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply fairly allows surprising recovery but presses the strongest evidential issue: lack of clear differential outcomes."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts ambiguous remissions that sometimes occur naturally with the absence of clear outcomes such as regrown limbs.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-sincere-unbelief-and-divine-love",
+      "sectionId": "section-judgment-salvation",
+      "side": "con",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "Sincere unbelievers cannot force conviction in weak religious claims, so eternally punishing earnest nonbelief is inconsistent with an all-loving God who controls the salvific system.",
+      "sourceSpan": {
+        "startEvent": 1495,
+        "endEvent": 1555
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Following an audience question about atheists and heaven, the speaker identifies himself as an atheist and develops Stephen's established objection to hell and involuntary disbelief.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-salvation-justice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-loving-judgment-reconciliation"
+        ],
+        "components": [
+          {
+            "componentId": "con-sincere-unbelief-and-divine-love-component-01",
+            "targetMoveId": "pro-loving-judgment-reconciliation",
+            "text": "Whether a radically inclusive invitation is meaningful when sincere persons cannot voluntarily produce belief",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-sincere-unbelief-and-divine-love-component-02",
+            "targetMoveId": "pro-loving-judgment-reconciliation",
+            "text": "Whether eternal punishment for earnest nonbelief is compatible with perfect love",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly distinguishes involuntary conviction from refusal and applies that distinction to the claimed inclusiveness and love of judgment.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "It explicitly contacts the unresolved hard case and states why an open invitation alone does not answer it."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move carefully limits its case to earnest nonbelievers who investigate yet remain unconvinced by the proposition."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Involuntariness is well framed, but eternal punishment and belief-based condemnation are treated as fixed without doctrinal qualification."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Judgment may concern culpable orientation and conduct rather than bare propositional belief, with God knowing each heart.",
+        "decisiveQualification": "The prior reply did not explain how sincere inability to believe affects final treatment."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 85,
+          "rationale": "If sincere conviction is involuntary and punishment tracks nonbelief, the incompatibility with perfect love follows with one doctrinal premise."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The phenomenology of involuntary belief is strong, but claims about scripture's origins and universal final treatment are lightly supported."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It sits at the top of the central salvation-justice tier by isolating the sincere-unbelief problem."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The move targets the stated gap fairly, though it assumes a relatively strict exclusivist account of eternal punishment."
+        }
+      },
+      "evidenceBasis": "The excerpt emphasizes earnest investigation, inability to force conviction, weak perceived evidence, and the alleged prospect of eternal mistreatment.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-forgiveness-justice-cost",
+      "sectionId": "section-judgment-salvation",
+      "side": "pro",
+      "speaker": "Sharon Dirckx",
+      "moveKind": "reply",
+      "proposition": "Christian forgiveness does not erase justice: Christ bears evil at great cost, victims remain seen, perpetrators face consequences, and reconciliation includes transformation.",
+      "sourceSpan": {
+        "startEvent": 1579,
+        "endEvent": 1661
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Sharon to respond, and the long uninterrupted answer consistently presents Christian doctrines of justice, sin, atonement, forgiveness, and moral transformation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-restoration-justice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-sincere-unbelief-and-divine-love",
+          "con-skepticism-of-exclusive-afterlife-hope"
+        ],
+        "components": [
+          {
+            "componentId": "pro-forgiveness-justice-cost-component-01",
+            "targetMoveId": "con-sincere-unbelief-and-divine-love",
+            "text": "How sincere involuntary nonbelief is treated within the proposed system of judgment and reconciliation",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-forgiveness-justice-cost-component-02",
+            "targetMoveId": "con-skepticism-of-exclusive-afterlife-hope",
+            "text": "Whether forgiveness and salvation disregard victims or consequences",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move substantially explains costly forgiveness, consequences, victims, and transformation, but does not answer the decisive sincere-unbelief demand.",
+        "responsivenessWithinClass": {
+          "value": 69,
+          "rationale": "It contacts a major justice component while leaving the selected primary component concerning involuntary belief unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The distinctions among forgiveness, atoning cost, consequences, victim recognition, and transformation are clearly recoverable."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The speaker acknowledges limited understanding, but categorical assurances against miscarriages of justice remain doctrinally asserted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Forgiving a grave offender may still appear unjust if a decent unbeliever is excluded despite sincere inquiry.",
+        "decisiveQualification": "Cost, consequences, and transformation answer offender impunity but not the comparative fate of the unbeliever."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Costly forgiveness with consequences and transformation coherently avoids simple impunity, despite the unresolved unbelief comparison."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "The internal theological structure is detailed, but its atonement, transformation, and perfect-justice claims remain largely asserted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It maximally supports the central restoration-and-justice bridge by explaining forgiveness without erasing victims or consequences."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply gives a serious account of forgiveness yet omits the strongest asymmetry already present in the opposition's case."
+        }
+      },
+      "evidenceBasis": "The excerpt says Christ bears evil at cost, victims remain seen, perpetrators face justice, and reconciliation entails moral change.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-salvation-moral-asymmetry",
+      "sectionId": "section-judgment-salvation",
+      "side": "con",
+      "speaker": "Stephen Woodford",
+      "moveKind": "reply",
+      "proposition": "A system that may save a sincerely converted genocidal offender while condemning a decent but unconvinced atheist reverses proportionate moral outcomes and conflicts with a good God.",
+      "sourceSpan": {
+        "startEvent": 1664,
+        "endEvent": 1682
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives the remaining seconds to Stephen, who directly criticizes Sharon's preceding answer and contrasts the fates of a genocidal convert and an unconvinced atheist.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-salvation-justice"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-forgiveness-justice-cost"
+        ],
+        "components": [
+          {
+            "componentId": "con-salvation-moral-asymmetry-component-01",
+            "targetMoveId": "pro-forgiveness-justice-cost",
+            "text": "Whether costly forgiveness and transformation prevent disproportionate outcomes between grave offenders and decent unbelievers",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-salvation-moral-asymmetry-component-02",
+            "targetMoveId": "pro-forgiveness-justice-cost",
+            "text": "Whether a sincere conversion alone appropriately alters a genocidal offender's final status",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply directly tests the preceding justice account with a converted genocidal offender and an otherwise decent unconvinced atheist.",
+        "responsivenessWithinClass": {
+          "value": 92,
+          "rationale": "It explicitly contacts the unresolved comparative consequence, though its account of conversion and punishment is simplified."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "missing",
+        "rationale": "The contrast is vivid, but salvation, conversion, punishment, and atheism are treated broadly without conditions or doctrinal variation."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The moral challenge is strong, but categorical claims about what Christianity teaches and what any good God would do overreach."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Genuine conversion may include repentance and transformation, while judgment may retain consequences and assess more than belief labels.",
+        "decisiveQualification": "The framework still must explain why sincere nonbelief would produce a worse final outcome than repentant atrocity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "The asymmetry is forceful under its premises, but it insufficiently incorporates repentance, transformation, and retained consequences."
+        },
+        "evidenceWarrant": {
+          "value": 61,
+          "rationale": "The hypothetical is probative, yet the governing doctrinal rules are asserted and the preceding qualifications are selectively omitted."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It maximally advances the central salvation-justice bridge by testing proportional treatment in the hardest comparative case."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "The reply exposes a serious asymmetry but depicts salvation as near-instant belief credit and underplays the stated transformation condition."
+        }
+      },
+      "evidenceBasis": "The excerpt contrasts a genocidal offender allegedly saved through sincere conversion with an atheist unconvinced for nonmoral reasons.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual conditions for a pro-side adjustment.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists beyond the locked bridges and judged moves.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded judgments."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct uncaptured debate-wide consequence satisfies the strict residual conditions for a con-side adjustment.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion exists beyond the locked bridges and judged moves.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No distinct residual consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "section weights"
+        ],
+        "counterfactual": "Removing any alleged residual would not change burden completion independently of the recorded judgments."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}

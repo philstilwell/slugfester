@@ -1,0 +1,1898 @@
+{
+  "schemaVersion": "4.2.20-source-span-primary-judgment",
+  "protocolId": "v4.2.20-source-span-evidence-rendering",
+  "debateNumber": "02",
+  "debateId": "craig-hitchens-god-existence-2009",
+  "reviewerRole": "integrated-primary-judge",
+  "assessmentModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "isolation": {
+    "legacyAssessmentsUnavailable": true,
+    "calculatedTotalsUnavailable": true,
+    "winnerLabelsUnavailable": true,
+    "otherJudgmentsUnavailable": true,
+    "assessmentProseUnavailable": true,
+    "contaminationDetected": false
+  },
+  "routes": [
+    {
+      "routeId": "route-pro-christian-theism",
+      "side": "pro",
+      "description": "Establish a cumulative route from features of the universe, objective morality, the historical case for resurrection, and religious experience to a personal God, then connect that conclusion to Christian theism while answering objections from suffering and religion's record.",
+      "successCriteria": "The route succeeds if its independent considerations jointly make a personal God more plausible than atheistic naturalism, the resurrection consideration supplies the specifically Christian bridge, and the principal defeaters do not overturn that cumulative inference.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-cumulative-plausibility",
+        "tier": "motion",
+        "description": "Show that the cumulative explanatory case and specifically Christian evidence make Christian theism more plausible than atheism across the motion's principal issues."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-cosmic-explanation",
+          "tier": "central",
+          "description": "Establish that cosmic origin and life-permitting conditions are better explained by a transcendent personal cause and intelligent design than by necessity, chance, or unaided naturalism."
+        },
+        {
+          "bridgeId": "pro-central-moral-foundation",
+          "tier": "central",
+          "description": "Establish that objective moral values and duties require a transcendent foundation that theism supplies and atheistic accounts do not."
+        },
+        {
+          "bridgeId": "pro-central-christian-resurrection",
+          "tier": "central",
+          "description": "Establish that the relevant historical facts are best explained by Jesus's resurrection and that this inference connects generic theism to Christian theism."
+        },
+        {
+          "bridgeId": "pro-central-defeater-resistance",
+          "tier": "central",
+          "description": "Show that suffering, evolutionary waste, religious plurality, and harmful religious conduct do not defeat the truth or comparative plausibility of Christian theism."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-epistemic-access",
+          "tier": "subsidiary",
+          "description": "Explain how public arguments may be supplemented by immediate religious experience without making the public cumulative case depend solely on private assurance."
+        },
+        {
+          "bridgeId": "pro-subsidiary-meaning-providence",
+          "tier": "subsidiary",
+          "description": "Account for objective meaning, providential justice, and redemption within Christian theism, including for suffering people and those outside explicit Christian history."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-atheist-critique",
+      "side": "con",
+      "description": "Withhold the divine hypothesis unless it receives adequate evidential support, challenge the inferences from cosmic and moral phenomena to God, resist the further bridge to Christianity, and present suffering, religious plurality, and religion's authoritative record as contrary considerations.",
+      "successCriteria": "The route succeeds if the affirmative considerations neither require a divine explanation nor establish the caring and specifically Christian God at issue, while the counterevidence and secular alternatives leave atheistic rejection of that hypothesis warranted.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-divine-case",
+        "tier": "motion",
+        "description": "Show that the available considerations do not warrant the divine hypothesis or the further conclusion that a caring, revelatory, specifically Christian God exists."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-burden-evidence",
+          "tier": "central",
+          "description": "Defend rejection of an unsupported supernatural proposition without assuming an obligation to prove the nonexistence of every proposed deity."
+        },
+        {
+          "bridgeId": "con-central-naturalistic-alternatives",
+          "tier": "central",
+          "description": "Show that cosmological uncertainty, evolutionary contingency, and secular accounts of morality prevent the relevant phenomena from requiring design or divine moral grounding."
+        },
+        {
+          "bridgeId": "con-central-christian-gap",
+          "tier": "central",
+          "description": "Show that a possible cosmic cause would not establish providence or Christianity and that miracle testimony does not adequately authenticate resurrection, revelation, or doctrine."
+        },
+        {
+          "bridgeId": "con-central-counterevidence",
+          "tier": "central",
+          "description": "Show that severe suffering, cosmic and evolutionary waste, delayed and unequal revelation, and conflicting religions count against benevolent Christian providence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-religious-authority",
+          "tier": "subsidiary",
+          "description": "Explain why claims of divine authority demand strong evidence and why scriptural commands and theocratic coercion bear on accepting those claims."
+        },
+        {
+          "bridgeId": "con-subsidiary-secular-meaning",
+          "tier": "subsidiary",
+          "description": "Establish that human solidarity, freedom, ethical life, and meaningful projects remain available without supernatural authority or immortality."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "issue-burden-epistemology",
+      "title": "Burden of Proof and Religious Epistemology",
+      "weightPercent": 15,
+      "rationale": "The parties' competing accounts of atheism, evidential obligation, cumulative probability, falsifiability, and spiritual assurance determine what must be established before any substantive consideration can support or displace the divine hypothesis."
+    },
+    {
+      "sectionId": "issue-cosmology-design",
+      "title": "Cosmic Origin, Fine-Tuning, and Design",
+      "weightPercent": 24,
+      "rationale": "Cosmological origin and fine-tuning form a principal route from observable features of the universe to a personal creator, while uncertainty, evolutionary contingency, waste, and cosmic decay test whether that explanatory inference is warranted."
+    },
+    {
+      "sectionId": "issue-morality",
+      "title": "Objective Morality and Its Foundation",
+      "weightPercent": 17,
+      "rationale": "The moral issue tests whether objective values and duties require God, whether evolutionary and social accounts address grounding or only moral development, and whether religious authority contributes anything necessary to ethical life."
+    },
+    {
+      "sectionId": "issue-resurrection-revelation",
+      "title": "Resurrection, Miracles, and the Christian Bridge",
+      "weightPercent": 18,
+      "rationale": "The resurrection claim supplies the principal bridge from generic creator theism to Christianity, making the historical facts, miracle testimony, doctrinal authentication, and the scope and timing of revelation structurally indispensable."
+    },
+    {
+      "sectionId": "issue-suffering-providence",
+      "title": "Suffering, Evil, and Benevolent Providence",
+      "weightPercent": 16,
+      "rationale": "Suffering and apparent waste directly test the compatibility and comparative plausibility of an omnipotent, knowledgeable, and good God, including whether sufficient reasons, redemption, and eternal compensation answer the objection."
+    },
+    {
+      "sectionId": "issue-religion-record-meaning",
+      "title": "Religion's Record, Authority, and Human Meaning",
+      "weightPercent": 10,
+      "rationale": "Religion's commands and institutional consequences bear on claims of revelation and authority, while the competing accounts of objective purpose, secular solidarity, liberty, and mortality address the motion's broader contrast between Christian theism and atheism."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-burden-no-atheist-disproof",
+      "sectionId": "issue-burden-epistemology",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Atheism lacks a successful argument establishing that God does not exist.",
+      "sourceSpan": {
+        "startEvent": 321,
+        "endEvent": 330
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly yields the opening speech to Craig, and the uninterrupted first-person argument remains his.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "con-central-burden-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is an opening constructive contention rather than an answer to an earlier opposing locked move; it frames the evidential burden Craig expects Hitchens to discharge.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "Within constructive moves, it clearly establishes a debate-relevant burden position but does not itself supply a positive case for the motion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The contention is recoverable, but “successful argument” and the range covered by atheism are left somewhat implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "certainty",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical centuries-wide claim exceeds the support supplied in the excerpt and omits qualifications about candidate atheistic arguments."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The inference from alleged past failures to the present absence of a good atheistic argument is intelligible but inductively compressed."
+        },
+        "evidenceWarrant": {
+          "value": 54,
+          "rationale": "The historical generalization is asserted without representative examination of atheistic arguments or criteria for success."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "It directly attacks the central con burden-evidence bridge, though it does not address the con route’s full evidential standard."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move states Craig’s own burden contention and does not materially interpret a live opposing alternative."
+        }
+      },
+      "evidenceBasis": "Craig says atheists have tried for centuries without a successful disproof and announces that he will await Hitchens’s arguments.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-cosmology-personal-cause",
+      "sectionId": "issue-cosmology-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe began to exist and therefore has a transcendent personal cause.",
+      "sourceSpan": {
+        "startEvent": 334,
+        "endEvent": 410
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The numbered cosmological argument occurs continuously within Craig's formally introduced opening presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive cosmological argument with no earlier opposing locked target; it advances a causal route from cosmic beginning to a transcendent personal cause.",
+        "responsivenessWithinClass": {
+          "value": 87,
+          "rationale": "Within constructive moves, it supplies an explicit central inference and several attributed properties, with the personal-cause bridge compressed."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The causal proposition and attributed properties are clear, while assumptions behind the beginning and personal-cause steps remain implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The necessity language is stronger than the excerpt’s defense of the personal-cause inference, although the argumentative structure is explicit."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 78,
+          "rationale": "The causal sequence is coherent, but the move leaves a material bridge from timeless causation to personhood underdeveloped."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "It offers explanatory reasoning and property analysis, but the excerpt compresses support for a cosmic beginning and rival causal models."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the indispensable central cosmic-explanation bridge and supplies the proposed personal-cause conclusion."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The excerpt develops Craig’s affirmative inference without engaging a sufficiently specified rival interpretation for charity testing."
+        }
+      },
+      "evidenceBasis": "Craig asks why the universe exists, infers a cause beyond space and time, and attributes immateriality, power, and personhood to it.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-finetuning-design",
+      "sectionId": "issue-cosmology-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Cosmic fine-tuning is best explained by intelligent design rather than necessity or chance.",
+      "sourceSpan": {
+        "startEvent": 411,
+        "endEvent": 499
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly numbers and develops the teleological argument during his uninterrupted opening speech.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move advances the fine-tuning branch of the central cosmic-explanation burden and has no earlier opposing locked move to answer.",
+        "responsivenessWithinClass": {
+          "value": 89,
+          "rationale": "Within constructive moves, it states the rival explanations and reaches design explicitly, though its treatment of chance is abbreviated."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The inference, its principal rivals, and its comparative “best explanation” scope are all expressly recoverable from the excerpt."
+      },
+      "calibrationFindings": {
+        "assertedForce": "plausibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The conclusion is framed as plausible and comparative, but the claim that the alternatives are eliminated exceeds the displayed defense."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A multiverse could make observed fine-tuning a selection effect rather than design.",
+        "decisiveQualification": "The excerpt says atheism strongly disconfirms a world ensemble but does not fully establish that assessment."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The comparative inference is orderly and explicit, with one bounded bridge from rejected alternatives to design as best explanation."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "The excerpt identifies necessity, chance, and multiverse reasoning but does not document fine-tuning or robustly compare model probabilities."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "Fine-tuning is a principal component of the central cosmic-explanation bridge and the move directly supplies its design inference."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "Craig recognizes chance through a multiverse alternative, but its probability and selection effects receive only compressed treatment."
+        }
+      },
+      "evidenceBasis": "Craig argues that a world ensemble is improbable on atheism and concludes that fine-tuning is due neither to necessity nor chance but design.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-objective-morality-god",
+      "sectionId": "issue-morality",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values exist, and their existence entails that God exists.",
+      "sourceSpan": {
+        "startEvent": 500,
+        "endEvent": 548
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly labels this as his third argument, within Craig's continuous opening presentation.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This is a constructive moral argument with no earlier opposing locked target; it moves from moral experience and objective values to God’s existence.",
+        "responsivenessWithinClass": {
+          "value": 84,
+          "rationale": "Within constructive moves, it clearly states both the moral datum and conclusion, but severely compresses the grounding entailment."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "Objective goods and evils are illustrated clearly, though the sense in which their existence entails God is left implicit."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The claim of logical and necessary entailment is substantially stronger than the experiential examples and omitted grounding premise warrant."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 67,
+          "rationale": "The argument requires a major unstated premise that objective moral values can exist only if God exists."
+        },
+        "evidenceWarrant": {
+          "value": 63,
+          "rationale": "Concrete moral examples support confidence in moral objectivity, but they do not independently support the claimed divine foundation."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly supplies the indispensable objective-values and divine-grounding steps of the central moral-foundation bridge."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The excerpt asserts the affirmative moral argument without developing a source-supported secular grounding alternative to assess charitably."
+        }
+      },
+      "evidenceBasis": "Craig invokes moral experience and examples such as cruelty, abuse, love, equality, and sacrifice, then says God follows necessarily.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-resurrection-historical-inference",
+      "sectionId": "issue-resurrection-revelation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The best explanation of the central historical facts about Jesus is his resurrection, which entails God's existence.",
+      "sourceSpan": {
+        "startEvent": 549,
+        "endEvent": 610
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly introduces the fourth numbered argument and presents it without any intervening speaker change.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-christian-resurrection"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive historical argument supplies the specifically Christian bridge and has no earlier opposing locked move to which it responds.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "Within constructive moves, it identifies historical facts, rejects named naturalistic explanations, and states the resurrection conclusion."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The historical inference is clear, but the scope of scholarly rejection and the criteria for plausibility remain implicitly qualified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The universal scholarly and no-plausible-naturalistic-explanation language is stronger than the excerpt’s documentation and alternative comparison."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "The cited facts might admit non-resurrection explanations, including theft, survival, legend, or experience-based accounts.",
+        "decisiveQualification": "The excerpt names only theft and survival and reports rejection without comparing the strongest versions or relevant base rates."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 76,
+          "rationale": "Inference to the best explanation is coherent, but the bridge from rejected examples to resurrection remains materially compressed."
+        },
+        "evidenceWarrant": {
+          "value": 64,
+          "rationale": "The move names historical facts and scholarly opinion but provides little documentation, independence analysis, or serious rival comparison."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The resurrection inference directly advances the structurally indispensable central bridge from generic theism to Christian theism."
+        },
+        "representationalCharity": {
+          "value": 62,
+          "rationale": "Some alternatives are acknowledged, but the strongest naturalistic explanatory field and the miracle base-rate qualification are omitted."
+        }
+      },
+      "evidenceBasis": "Craig cites an empty tomb and other central facts, says theft and apparent-death explanations are rejected, and infers resurrection.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-immediate-experience-basic-belief",
+      "sectionId": "issue-burden-epistemology",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Immediate experience of God can properly ground knowledge of God's existence without inferential argument.",
+      "sourceSpan": {
+        "startEvent": 611,
+        "endEvent": 648
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this as his fifth point and continues speaking through its experiential and epistemic development.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-epistemic-access"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive epistemic claim has no earlier opposing locked target; it presents immediate experience as a noninferential ground for belief in God.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "Within constructive moves, it clearly explains the properly basic framework but does not establish reliability or defeater conditions."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move explicitly distinguishes knowledge through immediate experience from an argument and defines properly basic belief functionally."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The modest “can know” claim fits the framework, though the excerpt leaves reliability and potential defeaters as implicit conditions."
+      },
+      "charity": {
+        "tested": false,
+        "alternative": "",
+        "decisiveQualification": ""
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The noninferential-belief model is coherent, with a bounded omitted bridge from felt immediacy to epistemic propriety."
+        },
+        "evidenceWarrant": {
+          "value": 68,
+          "rationale": "Analogy to other basic beliefs supplies some warrant, but no reliability test or discrimination among conflicting experiences is offered."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly advances the subsidiary epistemic-access bridge, while remaining supplementary rather than completing the public cumulative case."
+        },
+        "representationalCharity": {
+          "value": 75,
+          "rationale": "The move explains Craig’s own epistemic proposal without interpreting a developed opposing account of religious experience."
+        }
+      },
+      "evidenceBasis": "Craig expressly calls immediate experience nonargumentative, labels the resulting belief properly basic, and compares it with foundational beliefs.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-evolutionary-waste-against-design",
+      "sectionId": "issue-cosmology-design",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Evolutionary mass extinction, randomness, suffering, and humanity's near extinction undermine the claim that humanity was the intended product of a purposeful divine design.",
+      "sourceSpan": {
+        "startEvent": 771,
+        "endEvent": 839
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening speech remains Hitchens's, with repeated first-person invitations and evaluative conclusions.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-finetuning-design",
+          "pro-cosmology-personal-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-evolutionary-waste-against-design-component-01",
+            "targetMoveId": "pro-finetuning-design",
+            "text": "Whether observed life-permitting conditions warrant purposeful intelligent design rather than an unguided history.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-evolutionary-waste-against-design-component-02",
+            "targetMoveId": "pro-cosmology-personal-cause",
+            "text": "Whether a personal cosmic cause supports the further claim that humanity was an intended product.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Mass extinction, randomness, suffering, and humanity’s near extinction contact the purposeful-design inference, but do not directly answer the personal-cause derivation.",
+        "responsivenessWithinClass": {
+          "value": 72,
+          "rationale": "This is a partial answer that reaches the decisive design component but does not engage fine-tuning probabilities or the causal argument."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The counterexample-based challenge is clear, though the transition from waste to absence of purpose carries an implicit probabilistic qualification."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move presents waste as undermining intended design rather than as a deductive disproof, and acknowledges uncertainty about human survival."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A designer might use evolutionary processes, extinction, and contingency to produce embodied moral agents.",
+        "decisiveQualification": "Compatibility with such a purpose would not by itself explain why this scale of waste is expected under purposeful design."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "The probabilistic challenge is coherent, but the inference from extensive waste to reduced design probability needs an explicit expectation comparison."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "Mass extinction and near extinction are relevant empirical examples, though the excerpt supplies no quantitative or comparative model."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central design component of the pro cosmic-explanation bridge through contrary evolutionary evidence."
+        },
+        "representationalCharity": {
+          "value": 82,
+          "rationale": "The challenge does not deny bare compatibility and fairly presses the comparative evidential cost of the evolutionary history described."
+        }
+      },
+      "evidenceBasis": "Hitchens invokes mass extinction, death, randomness, and humanity’s narrow survival as evidence against an intended fine-tuned outcome.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-no-divine-disproof-burden",
+      "sectionId": "issue-burden-epistemology",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Atheism need not prove God's nonexistence when no plausible or convincing evidence requires the divine hypothesis and observable phenomena remain explicable without it.",
+      "sourceSpan": {
+        "startEvent": 842,
+        "endEvent": 863
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly identifies what atheists argue while continuing his uninterrupted opening statement.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-burden-evidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-burden-no-atheist-disproof"
+        ],
+        "components": [
+          {
+            "componentId": "con-no-divine-disproof-burden-component-01",
+            "targetMoveId": "pro-burden-no-atheist-disproof",
+            "text": "Whether atheism must furnish a successful disproof of God before rejection of the divine hypothesis is warranted.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Hitchens expressly replaces the demanded universal disproof with the evidential question whether any convincing reason requires the hypothesis and states why rejection can follow without it.",
+        "responsivenessWithinClass": {
+          "value": 94,
+          "rationale": "The reply directly diagnoses the burden demand and states the defeating consequence: unsupported supernatural posits need not be disproved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The position distinguishes proving nonexistence from finding no adequate evidential reason and states its explanatory scope clearly."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The burden diagnosis is well fitted, but the claim that all observable phenomena are explicable without God is broader than shown."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig could be inviting Hitchens to offer positive arguments rather than assigning atheism an exclusive burden of proof.",
+        "decisiveQualification": "Craig nevertheless uses the absence of a disproof as a contention, so Hitchens’s evidential-demand correction remains directly relevant."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The distinction between lack of disproof and lack of adequate evidence is explicit and defeats the burden inference cleanly."
+        },
+        "evidenceWarrant": {
+          "value": 74,
+          "rationale": "The burden principle is well motivated, but the sweeping claim of natural explicability receives little specific support in this span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con burden-evidence bridge by stating the evidential condition for warranted rejection."
+        },
+        "representationalCharity": {
+          "value": 87,
+          "rationale": "The reply fairly distinguishes the invitation to argue from the stronger implication that disbelief requires a successful divine disproof."
+        }
+      },
+      "evidenceBasis": "Hitchens says atheists need not assert a proof of nonexistence and instead deny any plausible evidential reason requiring the divine hypothesis.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-creator-to-christianity-gap",
+      "sectionId": "issue-resurrection-revelation",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Even granting a cosmic creator would not establish a caring, intervening, revelatory, salvific, or specifically Christian God.",
+      "sourceSpan": {
+        "startEvent": 864,
+        "endEvent": 912
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Hitchens's uninterrupted opening turn and consistently presents his first-person skeptical position.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-christian-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [],
+        "components": [],
+        "issueBearingContraryMaterial": false,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "This constructive move establishes the con route’s creator-to-Christianity gap and has no earlier opposing reply target under the locked classification.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "Within constructive moves, it explicitly distinguishes deism from caring providence, revelation, redemption, salvation, and Christianity."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conceded creator and the additional theistic and Christian properties requiring support are clearly and stably distinguished."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited claim that the further attributes do not follow without additional premises matches the logical gap identified."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A cumulative case might combine a creator inference with independent resurrection evidence to reach Christianity.",
+        "decisiveQualification": "The creator inference alone still does not supply care, revelation, redemption, salvation, or Christian identity."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The non-entailment is explicit and valid: generic origination does not alone yield providential or specifically Christian attributes."
+        },
+        "evidenceWarrant": {
+          "value": 83,
+          "rationale": "The conceptual distinction itself is strong, though assessing the cumulative case requires evidence beyond this constructive span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly advances the central con Christian-gap bridge by identifying every major missing step after generic creation."
+        },
+        "representationalCharity": {
+          "value": 91,
+          "rationale": "The move grants the creator premise for argument and precisely limits its criticism to the unsupported additional theological conclusions."
+        }
+      },
+      "evidenceBasis": "Hitchens grants an originating entity for argument and says deism still must establish care, intervention, revelation, redemption, and salvation.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-spiritual-assurance-over-evidence",
+      "sectionId": "issue-burden-epistemology",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Giving inner spiritual assurance precedence over contrary argument or evidence insulates Christian commitment from evidential defeat and makes the apologetic fundamentally faith-based.",
+      "sourceSpan": {
+        "startEvent": 949,
+        "endEvent": 1008
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly attributes the discussed epistemic position to Craig and develops the criticism throughout his uninterrupted turn.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "pro-subsidiary-epistemic-access"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-immediate-experience-basic-belief"
+        ],
+        "components": [
+          {
+            "componentId": "con-spiritual-assurance-over-evidence-component-01",
+            "targetMoveId": "pro-immediate-experience-basic-belief",
+            "text": "Whether immediate spiritual experience can properly ground Christian belief independently of public inferential evidence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The quoted priority rule directly contacts the epistemic status of spiritual assurance by arguing that its precedence over contrary evidence insulates commitment from defeat.",
+        "responsivenessWithinClass": {
+          "value": 88,
+          "rationale": "The reply squarely addresses the decisive defeater-sensitivity issue, though it attacks a stronger priority formulation than the excerpted constructive alone states."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The criticism identifies the conflict condition, the priority assigned to spiritual witness, and the resulting insulation from evidence."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "Given the priority statement quoted in the move, the conclusion about evidential insulation is proportionate and sufficiently qualified."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Proper basicality need not mean indefeasibility; a basic belief may remain answerable to sufficiently strong defeaters.",
+        "decisiveQualification": "The quoted rule gives spiritual witness precedence when conflict actually arises, creating the insulation Hitchens criticizes."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "If spiritual assurance is stipulated to prevail over conflicting evidence, the stated concern about insulation follows coherently."
+        },
+        "evidenceWarrant": {
+          "value": 82,
+          "rationale": "The criticism rests on a specific quoted priority rule, though the broader apologetic consequences are not extensively demonstrated."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly attacks the subsidiary pro epistemic-access bridge by challenging the proposed experience’s defeater sensitivity."
+        },
+        "representationalCharity": {
+          "value": 85,
+          "rationale": "The reply could distinguish basicality from indefeasibility more carefully, but accurately targets the expressly quoted precedence claim."
+        }
+      },
+      "evidenceBasis": "Hitchens quotes a rule that spiritual witness takes precedence over conflicting argument and evidence and emphasizes its one-way priority.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-cosmic-uncertainty-and-waste",
+      "sectionId": "issue-cosmology-design",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Severe cosmological uncertainty, explanatory regress, failed cosmic structures, destruction, and eventual extinction count against inferring competent benevolent design from fine-tuning.",
+      "sourceSpan": {
+        "startEvent": 1045,
+        "endEvent": 1131
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker remains Hitchens, who announces the fine-tuning topic and carries a numbered sequence of objections through his closing conclusion.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-cosmic-explanation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-finetuning-design",
+          "pro-cosmology-personal-cause"
+        ],
+        "components": [
+          {
+            "componentId": "con-cosmic-uncertainty-and-waste-component-01",
+            "targetMoveId": "pro-finetuning-design",
+            "text": "Whether the universe’s observed structure is better explained by competent purposeful design than by alternatives.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-cosmic-uncertainty-and-waste-component-02",
+            "targetMoveId": "pro-cosmology-personal-cause",
+            "text": "Whether positing a designer terminates rather than relocates the demand for explanation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts design through failed structures and destruction and also presses explanatory regress against the proposed originating designer.",
+        "responsivenessWithinClass": {
+          "value": 76,
+          "rationale": "This partial answer reaches both principal inferences but does not address Craig’s beginning premise or detailed fine-tuning probability comparison."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The contrary-evidence challenge is recoverable, but “failure” shifts between physical destruction and failure of purposeful design."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "Uncertainty is foregrounded appropriately, though cosmic destruction alone is treated too readily as failed design without a purpose model."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A designer could value a law-governed, vast, dynamic cosmos in which stars form, collapse, and enable life.",
+        "decisiveQualification": "That compatibility does not establish that the observed scale of destruction is more expected under competent benevolent design."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 73,
+          "rationale": "The evidential argument is plausible, but explanatory regress and cosmic waste are distinct objections whose warrants remain compressed."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Observable stellar and galactic destruction supplies relevant examples, but no comparative likelihood or cosmological analysis is provided."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central cosmic-explanation bridge at both its design and explanatory-termination components."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The objection fairly raises comparative waste but labels destroyed structures as failures without fully considering nonhuman design purposes."
+        }
+      },
+      "evidenceBasis": "Hitchens invokes regress and visible collapsed suns, failed galaxies, destruction, and extinction to challenge the fine-tuning inference.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-delayed-unequal-providence",
+      "sectionId": "issue-suffering-providence",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Humanity's long prehistoric suffering and Christianity's late, uneven, and conflicting transmission undermine claims of benevolent providential design and universal redemption.",
+      "sourceSpan": {
+        "startEvent": 1446,
+        "endEvent": 1514
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens announces the implications of design, expressly answers Craig's timing defense, and maintains the same objection through its concluding epistemic criticism.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-counterevidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-historical-inference",
+          "pro-finetuning-design"
+        ],
+        "components": [
+          {
+            "componentId": "con-delayed-unequal-providence-component-01",
+            "targetMoveId": "pro-resurrection-historical-inference",
+            "text": "Whether the cited historical facts are best explained by Jesus’s resurrection and establish the Christian bridge.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-delayed-unequal-providence-component-02",
+            "targetMoveId": "pro-finetuning-design",
+            "text": "Whether purposeful design is credible given long prehistoric suffering and late, uneven revelation.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move supplies counterevidence about providence and revelation timing but does not examine the resurrection facts or Craig’s historical explanatory inference.",
+        "responsivenessWithinClass": {
+          "value": 59,
+          "rationale": "It is a relevant partial answer contacting a secondary design implication while leaving the primary Christian historical inference uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The temporal and distributional objections are clearly scoped, and uncertainty over prehistoric chronology is expressly acknowledged."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The move treats delayed and unequal revelation as undermining evidence, not a deductive contradiction, and notes dating uncertainty."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Providence might operate through gradual history, and persons outside explicit Christianity might still receive sufficient grace.",
+        "decisiveQualification": "Such possibilities require an account of why revelation is late, uneven, and conflicting rather than merely showing logical compatibility."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "Late and unequal revelation coherently lowers the expectedness of universal providence, subject to an implicit expectation premise."
+        },
+        "evidenceWarrant": {
+          "value": 75,
+          "rationale": "The broad chronology is relevant and uncertainty is admitted, though the excerpt offers limited documentation of transmission patterns."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con counterevidence bridge concerning prehistoric suffering and delayed, unequal revelation."
+        },
+        "representationalCharity": {
+          "value": 84,
+          "rationale": "The objection permits the theistic story to be possible while fairly pressing its unexplained temporal and distributive pattern."
+        }
+      },
+      "evidenceBasis": "Hitchens contrasts long human prehistory with Christianity’s late arrival and uneven transmission while expressly acknowledging disputed dating.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-secular-moral-capacity",
+      "sectionId": "issue-morality",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Human moral capacities arise from social solidarity and predate monotheism, while religious sanction contributes no uniquely moral action and can motivate distinctive harms.",
+      "sourceSpan": {
+        "startEvent": 1539,
+        "endEvent": 1623
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly opens the moral dimension, develops two public moral challenges, and concludes with a natural and social account of shared norms.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-morality-god"
+        ],
+        "components": [
+          {
+            "componentId": "con-secular-moral-capacity-component-01",
+            "targetMoveId": "pro-objective-morality-god",
+            "text": "Whether objective moral norms require God rather than being available through human social and evolutionary capacities.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the necessity of divine moral grounding by presenting universal social condemnation and pre-monotheistic moral capacities, but chiefly explains development rather than ontology.",
+        "responsivenessWithinClass": {
+          "value": 68,
+          "rationale": "This partial answer reaches the moral-necessity claim but leaves the decisive grounding-versus-discovery distinction substantially unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "partly-unstable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The social-origin account is clear, but “moral discoveries” and “absolutes” blur moral recognition, motivation, and metaphysical grounding."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Evidence of pre-monotheistic morality strongly supports secular capacity but does not by itself settle objective moral grounding."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Theism can accept evolved moral awareness while claiming that objective normativity itself is grounded in God.",
+        "decisiveQualification": "The move addresses the origin and availability of moral judgment more directly than that distinct ontological grounding claim."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 74,
+          "rationale": "The argument coherently establishes secular moral capacity, but the conclusion about divine grounding requires a further bridge."
+        },
+        "evidenceWarrant": {
+          "value": 73,
+          "rationale": "Cross-social condemnation and evolutionary dependence are relevant, though the universal empirical claim and grounding implication are compressed."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "The move directly attacks the central pro moral-foundation bridge, albeit more strongly on moral access than metaphysical foundation."
+        },
+        "representationalCharity": {
+          "value": 67,
+          "rationale": "Hitchens fairly defeats claims of uniquely religious moral capacity but partly substitutes moral development for Craig’s grounding contention."
+        }
+      },
+      "evidenceBasis": "Hitchens argues societies require shared prohibitions, says rape, murder, and perjury are universally condemned, and dates morality before monotheism.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-miracles-do-not-authenticate-doctrine",
+      "sectionId": "issue-resurrection-revelation",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Even if suspensions of natural law or miracles occur, miraculous performance alone does not establish the truth of the performer's doctrine or divine identity.",
+      "sourceSpan": {
+        "startEvent": 1904,
+        "endEvent": 1913
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens announces why he is pressing the issue and states the inference challenge directly before asking Craig to agree.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-christian-gap"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-historical-inference"
+        ],
+        "components": [
+          {
+            "componentId": "con-miracles-do-not-authenticate-doctrine-component-01",
+            "targetMoveId": "pro-resurrection-historical-inference",
+            "text": "Whether a resurrection or other miracle would by itself authenticate Jesus’s doctrine and specifically Christian divine identity.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply expressly identifies the non-entailment from miraculous performance to doctrinal truth and states that even granting miracles leaves authentication unproved.",
+        "responsivenessWithinClass": {
+          "value": 93,
+          "rationale": "It directly diagnoses and defeats the authentication inference, while not disputing the separate historical question whether resurrection occurred."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional concession and limited conclusion are explicit: miracle occurrence alone does not prove the performer’s doctrine."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The non-entailment claim is appropriately categorical because the stated premise lacks any condition linking power to doctrinal truth."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "A resurrection could authenticate Jesus when combined with his antecedent claims, character, context, and a divine explanatory hypothesis.",
+        "decisiveQualification": "The move is limited to miraculous performance alone and does not deny that a richer cumulative authentication argument is possible."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 93,
+          "rationale": "The logical point is explicit and sound: extraordinary performance does not alone entail the truth of associated teaching."
+        },
+        "evidenceWarrant": {
+          "value": 84,
+          "rationale": "The scriptural magician comparison effectively supplies a countermodel, though broader authentication conditions are outside the span."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central con Christian-gap bridge by attacking miracle-to-doctrine authentication."
+        },
+        "representationalCharity": {
+          "value": 92,
+          "rationale": "Hitchens frames the objection narrowly and grants the miracle condition, avoiding a caricature of every cumulative resurrection argument."
+        }
+      },
+      "evidenceBasis": "Hitchens cites Pharaoh’s miracle-working magicians and asks Craig to agree that suspending nature does not prove a performer’s doctrine.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-human-origin-of-religion-and-ethics",
+      "sectionId": "issue-morality",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Treating religions as human creations explains their plurality, while justice, love, duty, and other ethical problems remain human concerns that do not require celestial authority.",
+      "sourceSpan": {
+        "startEvent": 2283,
+        "endEvent": 2325
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens marks the passage as his concluding inference and maintains a continuous first-person argument until his closing exhortation.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "central",
+        "bridgeId": "pro-central-moral-foundation"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-morality-god",
+          "pro-resurrection-historical-inference"
+        ],
+        "components": [
+          {
+            "componentId": "con-human-origin-of-religion-and-ethics-component-01",
+            "targetMoveId": "pro-objective-morality-god",
+            "text": "Whether justice, love, duty, and objective ethical concerns require celestial authority for their existence or resolution.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-human-origin-of-religion-and-ethics-component-02",
+            "targetMoveId": "pro-resurrection-historical-inference",
+            "text": "Whether religious plurality by itself defeats the specifically Christian resurrection inference.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The move contacts the claimed need for divine moral authority through a human-origin alternative, but plurality does not address the resurrection evidence itself.",
+        "responsivenessWithinClass": {
+          "value": 67,
+          "rationale": "This partial answer reaches moral necessity while leaving the historical Christian inference and objective-grounding question underdeveloped."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The human-origin thesis is recoverable, but the passage moves broadly among religion, ethical problems, authority, and truth."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "implicit",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "Plurality plausibly supports human cultural origins, but the suggestion that this resolves all need for celestial authority is underwarranted."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious plurality is compatible with one true revelation and many culturally distorted or mistaken religious systems.",
+        "decisiveQualification": "Compatibility alone does not explain the recurrent plurality as well as the proposed human-production account might."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 72,
+          "rationale": "Human authorship can explain plurality, but the transition from that explanation to the dispensability of divine moral grounding is incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 66,
+          "rationale": "Religious plurality and persistent ethical problems are relevant observations, but their explanatory comparison receives little supporting detail."
+        },
+        "relevanceBurden": {
+          "value": 86,
+          "rationale": "The move attacks the central moral-foundation bridge, though it bears more on authority and cultural origin than ontology."
+        },
+        "representationalCharity": {
+          "value": 78,
+          "rationale": "The move presses plurality as explanatory evidence rather than a strict contradiction, though its either-or phrasing is somewhat compressed."
+        }
+      },
+      "evidenceBasis": "Hitchens appeals to religious plurality and the persistence of justice, love, and duty as human problems even if religions disappeared.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-scriptural-injunctions-and-harm",
+      "sectionId": "issue-religion-record-meaning",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Religion's harmful record bears on its authority when scriptures specifically command atrocities, unlike scientific discoveries that can be misused without themselves constituting an ideology.",
+      "sourceSpan": {
+        "startEvent": 2561,
+        "endEvent": 2591
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The student directs the challenge to Hitchens, whose answer distinguishes physics from ideology and culminates in his explicit claim about scriptural injunctions.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-religious-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-resurrection-historical-inference",
+          "pro-objective-morality-god"
+        ],
+        "components": [
+          {
+            "componentId": "con-scriptural-injunctions-and-harm-component-01",
+            "targetMoveId": "pro-resurrection-historical-inference",
+            "text": "Whether the historical resurrection inference establishes the truth and authority of specifically Christian revelation.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "con-scriptural-injunctions-and-harm-component-02",
+            "targetMoveId": "pro-objective-morality-god",
+            "text": "Whether religious authority contributes distinctive moral guidance rather than distinctive harms.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "The distinction between misuse of science and scriptural commands directly bears on religious moral authority, but it does not evaluate the resurrection facts or inference.",
+        "responsivenessWithinClass": {
+          "value": 61,
+          "rationale": "It is a relevant partial answer contacting authority and moral consequence while leaving the primary resurrection inference uncontacted."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly limits its comparison to harms specifically enjoined by religious texts rather than any harm committed by believers."
+      },
+      "calibrationFindings": {
+        "assertedForce": "probability",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The limited distinction between ideological injunction and misuse of scientific discovery fits the evidence and avoids a universal claim."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Scriptural traditions include interpretive constraints, historical contexts, and countervailing commands that may reject harmful applications.",
+        "decisiveQualification": "Interpretation does not erase the evidential relevance of texts that appear specifically to enjoin the challenged practices."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 86,
+          "rationale": "The categorical distinction between a descriptive science and an ideology issuing commands is clear and directly supports the conclusion."
+        },
+        "evidenceWarrant": {
+          "value": 72,
+          "rationale": "The move identifies a relevant class of injunctions, but the excerpt supplies only one truncated example and little textual documentation."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary con religious-authority bridge by tying claimed authority to specifically commanded harm."
+        },
+        "representationalCharity": {
+          "value": 80,
+          "rationale": "The move properly focuses on express injunctions, though it does not examine interpretive context or representative scriptural passages in detail."
+        }
+      },
+      "evidenceBasis": "Hitchens distinguishes physics from ideology and says his objection concerns specific religious injunctions to do evil, including mutilation.",
+      "assessmentConfidence": "medium"
+    },
+    {
+      "moveId": "pro-truth-not-social-consequences",
+      "sectionId": "issue-religion-record-meaning",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "A worldview's truth cannot be inferred from its beneficial or harmful social consequences, so the debate should turn on arguments for truth rather than comparative death tolls.",
+      "sourceSpan": {
+        "startEvent": 2598,
+        "endEvent": 2629
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Craig, and Craig identifies his philosophical concern with worldview truth before sustaining the same argument through the end of his turn.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-religious-authority"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-scriptural-injunctions-and-harm"
+        ],
+        "components": [
+          {
+            "componentId": "pro-truth-not-social-consequences-component-01",
+            "targetMoveId": "con-scriptural-injunctions-and-harm",
+            "text": "Whether harmful scriptural injunctions and religion’s social record establish that the associated worldview is false.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig expressly identifies the inference from beneficial or harmful consequences to worldview truth as invalid and redirects evaluation to truth-directed arguments.",
+        "responsivenessWithinClass": {
+          "value": 90,
+          "rationale": "The reply directly diagnoses the consequence-to-truth inference, although Hitchens’s move also concerns authority and evidence rather than truth alone."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The move clearly distinguishes truth assessment from social benefit or harm and consistently limits its irrelevance claim to that inference."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "As a denial that consequences alone entail truth or falsity, the categorical force is logically appropriate."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Religious harms may be evidence against claimed revelation or moral authority without deductively proving the entire worldview false.",
+        "decisiveQualification": "Craig’s consequence-to-truth objection does not remove that narrower evidential bearing on authority and doctrinal provenance."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 91,
+          "rationale": "The distinction between a proposition’s truth and its social effects is explicit, consistent, and logically well supported."
+        },
+        "evidenceWarrant": {
+          "value": 80,
+          "rationale": "The conceptual warrant is strong and Russell supplies an illustrative precedent, though authority-related evidential relevance remains unaddressed."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "The move attacks the subsidiary con religious-authority burden, but only its possible consequence-to-truth formulation."
+        },
+        "representationalCharity": {
+          "value": 68,
+          "rationale": "The reply correctly defeats a crude social-consequence inference but underrepresents the stronger authority-focused version of Hitchens’s objection."
+        }
+      },
+      "evidenceBasis": "Craig says social impact is irrelevant to worldview truth and invokes Russell’s rejection of believing Christianity merely because it benefits society.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-objective-meaning-fellowship",
+      "sectionId": "issue-religion-record-meaning",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "On atheism human existence can have subjective projects but no objective purpose, whereas fellowship with God provides humanity's true fulfillment and enduring meaning.",
+      "sourceSpan": {
+        "startEvent": 2696,
+        "endEvent": 2738
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Craig to answer both meaning-of-life questions, and Craig gives a continuous account contrasting objective purpose with subjective illusion.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "attack",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-secular-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-human-origin-of-religion-and-ethics"
+        ],
+        "components": [
+          {
+            "componentId": "pro-objective-meaning-fellowship-component-01",
+            "targetMoveId": "con-human-origin-of-religion-and-ethics",
+            "text": "Whether humanly generated ethical projects and concerns are sufficient for objective purpose without divine authority.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig contacts the secular-sufficiency claim by distinguishing subjective projects from objective purpose and proposing fellowship with God as the latter’s foundation.",
+        "responsivenessWithinClass": {
+          "value": 82,
+          "rationale": "The decisive subjective-objective distinction is contacted explicitly, though the move mostly asserts rather than establishes the divine foundation."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The claim expressly distinguishes subjective meaning from objective purpose and identifies fellowship with God as the proposed objective end."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "materially-overstated",
+        "qualificationStatus": "missing",
+        "uncertaintyAcknowledged": "no",
+        "rationale": "The categorical denial of objective purpose on atheism lacks an argument excluding secular objective accounts of value or purpose."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Objective meaning might consist in mind-independent value realized through knowledge, love, achievement, or solidarity without God.",
+        "decisiveQualification": "The excerpt asserts atheism cannot supply such purpose but does not show why every secular objective-value account fails."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 69,
+          "rationale": "The subjective-objective distinction is coherent, but the exclusive bridge from objective purpose to fellowship with God is unsupported."
+        },
+        "evidenceWarrant": {
+          "value": 58,
+          "rationale": "The move substantially relies on assertion about atheism and offers no comparative defense against secular objective-meaning theories."
+        },
+        "relevanceBurden": {
+          "value": 68,
+          "rationale": "It directly attacks the subsidiary con secular-meaning bridge by denying that secular projects provide objective purpose."
+        },
+        "representationalCharity": {
+          "value": 61,
+          "rationale": "Craig allows subjective projects but does not engage the strongest secular claim that some human goods possess objective value."
+        }
+      },
+      "evidenceBasis": "Craig says fellowship with God is humanity’s true fulfillment and clarifies that his atheistic-meaninglessness claim concerns objective purpose.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-secular-freedom-solidarity-meaning",
+      "sectionId": "issue-religion-record-meaning",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Human freedom and solidarity can make mortal life meaningful without immortality, while purported religious authority can obstruct liberty in this world.",
+      "sourceSpan": {
+        "startEvent": 2739,
+        "endEvent": 2790
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly says Craig has the matter reversed and then presents a continuous alternative account of evidence, meaning, solidarity, and religious authority.",
+      "importance": 2,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "subsidiary",
+        "bridgeId": "con-subsidiary-secular-meaning"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-objective-meaning-fellowship",
+          "pro-truth-not-social-consequences"
+        ],
+        "components": [
+          {
+            "componentId": "con-secular-freedom-solidarity-meaning-component-01",
+            "targetMoveId": "pro-objective-meaning-fellowship",
+            "text": "Whether mortal human life can be meaningful through freedom and solidarity without immortality or fellowship with God.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "con-secular-freedom-solidarity-meaning-component-02",
+            "targetMoveId": "pro-truth-not-social-consequences",
+            "text": "Whether religious obstruction of liberty proves religious claims false rather than bearing on lived meaning and authority.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Hitchens directly offers freedom and solidarity as secular sources of meaning, but his liberty criticism does not answer Craig’s truth-versus-consequences distinction.",
+        "responsivenessWithinClass": {
+          "value": 70,
+          "rationale": "The partial answer squarely establishes subjective secular meaning while leaving Craig’s specifically objective-purpose demand unresolved."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "partly-unstable",
+        "qualificationExplicitness": "implicit",
+        "rationale": "The practical meaning claim is clear, but “meaningful” is not expressly distinguished from Craig’s narrower objective-purpose usage."
+      },
+      "calibrationFindings": {
+        "assertedForce": "possibility",
+        "warrantFit": "matched",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The autobiographical example adequately supports the modest claim that freedom and solidarity can make a mortal life meaningful."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Craig grants subjective meaning and argues only that atheism lacks an objective purpose assigned to humanity as a whole.",
+        "decisiveQualification": "Hitchens’s examples show lived meaning but do not demonstrate that this meaning is objective in Craig’s stipulated sense."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 79,
+          "rationale": "Freedom and solidarity coherently exemplify secular meaning, but the argument does not bridge from personal significance to objective purpose."
+        },
+        "evidenceWarrant": {
+          "value": 70,
+          "rationale": "Personal experience is apt evidence of available lived meaning, though insufficient to settle the metaphysical objectivity dispute."
+        },
+        "relevanceBurden": {
+          "value": 69,
+          "rationale": "It directly supports the subsidiary con secular-meaning bridge by presenting concrete meaningful projects without supernatural authority."
+        },
+        "representationalCharity": {
+          "value": 64,
+          "rationale": "The response is fair to ordinary meaning claims but does not fully honor the explicit objective-purpose qualification in Craig’s move."
+        }
+      },
+      "evidenceBasis": "Hitchens identifies his struggle for freedom and solidarity with others seeking freedom as continuing sources of meaning in his life.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "pro-evil-sufficient-reasons-redemption",
+      "sectionId": "issue-suffering-providence",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Neither the logical nor probabilistic problem of evil defeats theism, and Christianity addresses suffering through God's sufficient reasons, Christ's suffering, and hope of eternal life.",
+      "sourceSpan": {
+        "startEvent": 2924,
+        "endEvent": 3030
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The student asks Craig about Epicurus and suffering, after which Craig gives an extended, uninterrupted philosophical and Christian response through his concluding sentence.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "pro-central-defeater-resistance"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "con-delayed-unequal-providence",
+          "con-cosmic-uncertainty-and-waste",
+          "con-evolutionary-waste-against-design"
+        ],
+        "components": [
+          {
+            "componentId": "pro-evil-sufficient-reasons-redemption-component-01",
+            "targetMoveId": "con-delayed-unequal-providence",
+            "text": "Whether prolonged suffering is logically or probabilistically incompatible with, or strong evidence against, benevolent providence.",
+            "contacted": true,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-evil-sufficient-reasons-redemption-component-02",
+            "targetMoveId": "con-cosmic-uncertainty-and-waste",
+            "text": "Whether cosmic destruction and eventual extinction count probabilistically against competent benevolent design.",
+            "contacted": false,
+            "decisive": true
+          },
+          {
+            "componentId": "pro-evil-sufficient-reasons-redemption-component-03",
+            "targetMoveId": "con-evolutionary-waste-against-design",
+            "text": "Whether evolutionary suffering and mass extinction undermine purposeful divine design.",
+            "contacted": false,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": false,
+        "replacementDemandAnswered": false,
+        "rationale": "Craig directly distinguishes logical and probabilistic evil and invokes sufficient reasons and redemption, but does not specifically analyze delayed revelation, cosmic waste, or evolutionary evidence.",
+        "responsivenessWithinClass": {
+          "value": 73,
+          "rationale": "This partial answer contacts the decisive suffering challenge in general while leaving several source-specific counterevidence components unanswered."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The logical and probabilistic versions are expressly distinguished, and the Christian redemptive considerations are clearly identified."
+      },
+      "calibrationFindings": {
+        "assertedForce": "strong-probability",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "yes",
+        "rationale": "The logical-defense claim is appropriately separated, but declaring the probabilistic problem defeated exceeds the displayed sufficient-reason possibilities."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Even if no contradiction can be proved, apparently gratuitous suffering may remain strong probabilistic evidence against benevolent providence.",
+        "decisiveQualification": "Merely possible sufficient reasons answer logical inconsistency but require comparative support to answer that evidential argument."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 81,
+          "rationale": "The logical-versus-probabilistic distinction is sound, but the transition from possible reasons to probabilistic defeat remains incomplete."
+        },
+        "evidenceWarrant": {
+          "value": 67,
+          "rationale": "The response supplies philosophical distinctions and Christian resources, but little evidence that sufficient reasons actually explain the observed distribution."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly advances the central pro defeater-resistance bridge by addressing suffering as both logical and evidential objection."
+        },
+        "representationalCharity": {
+          "value": 76,
+          "rationale": "Craig expressly recognizes the probabilistic version, yet his response relies heavily on epistemic possibility and redemptive compatibility."
+        }
+      },
+      "evidenceBasis": "Craig argues that atheists have not excluded morally sufficient reasons, distinguishes probabilistic evil, and invokes Christ and eternal hope.",
+      "assessmentConfidence": "high"
+    },
+    {
+      "moveId": "con-providential-absorption-of-horror",
+      "sectionId": "issue-suffering-providence",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "A theism that renders prolonged unanswered abuse worthwhile through later compensation can absorb any horror into divine purpose and make the abuser an instrument of providence.",
+      "sourceSpan": {
+        "startEvent": 3041,
+        "endEvent": 3075
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens identifies Craig's preceding reply as his subject and develops the Fritzl case continuously until the moderator moves to conclude the exchange.",
+      "importance": 3,
+      "burdenContact": {
+        "polarity": "support",
+        "tier": "central",
+        "bridgeId": "con-central-counterevidence"
+      },
+      "response": {
+        "decisiveTargetIds": [
+          "pro-evil-sufficient-reasons-redemption"
+        ],
+        "components": [
+          {
+            "componentId": "con-providential-absorption-of-horror-component-01",
+            "targetMoveId": "pro-evil-sufficient-reasons-redemption",
+            "text": "Whether later redemption or compensation adequately answers severe suffering under benevolent providence.",
+            "contacted": true,
+            "decisive": true
+          }
+        ],
+        "issueBearingContraryMaterial": true,
+        "diagnosticConsequenceExplicit": true,
+        "replacementDemandAnswered": false,
+        "rationale": "The reply identifies an alleged defect in unrestricted compensatory reasoning: it can render any horror worthwhile and recast an abuser as providentially instrumental.",
+        "responsivenessWithinClass": {
+          "value": 91,
+          "rationale": "It directly contacts the redemptive component and states the defeating consequence, though it does not address every sufficient-reason defense."
+        }
+      },
+      "precisionFindings": {
+        "propositionRecoverability": "complete",
+        "termStability": "stable",
+        "scopeStability": "stable",
+        "qualificationExplicitness": "explicit",
+        "rationale": "The conditional objection is clear and specifically targets a response that treats later compensation as making prior horror worthwhile."
+      },
+      "calibrationFindings": {
+        "assertedForce": "necessity",
+        "warrantFit": "slightly-overstated",
+        "qualificationStatus": "explicit",
+        "uncertaintyAcknowledged": "not-needed",
+        "rationale": "The absorption concern follows for unrestricted compensation, but “perfectly worthwhile” may overstate what every redemptive account entails."
+      },
+      "charity": {
+        "tested": true,
+        "alternative": "Redemption can overcome evil without making the evil good, necessary, justified, or the perpetrator a willing divine instrument.",
+        "decisiveQualification": "Craig’s appeal to compensation still needs to explain why permitting the horror was justified rather than merely later repaired."
+      },
+      "ratings": {
+        "logicalCoherence": {
+          "value": 82,
+          "rationale": "The reductio is forceful against compensation-as-justification, though the inference to the abuser’s providential status is not unavoidable."
+        },
+        "evidenceWarrant": {
+          "value": 78,
+          "rationale": "The concrete prolonged-abuse case tests the principle effectively, but one theological reply is generalized to broader providential accounts."
+        },
+        "relevanceBurden": {
+          "value": 87,
+          "rationale": "It directly supports the central con counterevidence bridge by challenging whether redemption can absorb severe apparently gratuitous horror."
+        },
+        "representationalCharity": {
+          "value": 79,
+          "rationale": "The objection powerfully exposes a gap in compensation, but partially conflates redeeming victims with endorsing the original abuse."
+        }
+      },
+      "evidenceBasis": "Hitchens uses a prolonged abuse case to argue that promised future compensation would make the horror worthwhile and the abuser providentially instrumental.",
+      "assessmentConfidence": "high"
+    }
+  ],
+  "burdenCompletionAdjustment": {
+    "pro": {
+      "value": 0,
+      "rationale": "No distinct debate-wide pro consequence survives the strict exclusion rule beyond the move ratings, response links, importance judgments, and burden contacts already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion remains outside the scored and linked move-level record.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contact codes"
+        ],
+        "counterfactual": "Removing the alleged residual would not change any burden bridge’s assessed completion."
+      }
+    },
+    "con": {
+      "value": 0,
+      "rationale": "No distinct debate-wide con consequence survives the strict exclusion rule beyond the move ratings, response links, importance judgments, and burden contacts already recorded.",
+      "eligibility": {
+        "distinctDebateWideConsequence": false,
+        "affectsBurdenCompletion": false,
+        "notAlreadyScored": false,
+        "affectedBurdenIds": [],
+        "completionCriterion": "No additional completion criterion remains outside the scored and linked move-level record.",
+        "relatedMoveIds": [],
+        "distinctConsequence": "No uncaptured debate-wide consequence was identified.",
+        "alreadyCapturedBy": [
+          "move ratings",
+          "response links",
+          "importance values",
+          "burden contact codes"
+        ],
+        "counterfactual": "Removing the alleged residual would not change any burden bridge’s assessed completion."
+      }
+    }
+  },
+  "audit": {
+    "completeTranscriptReviewed": true,
+    "allLoadBearingLinesRepresented": true,
+    "allMovesJudgedOnce": true,
+    "sectionWeightsLockedBeforeRatings": true,
+    "responseComponentsApplied": true,
+    "closedPrecisionAnchorsApplied": true,
+    "closedCalibrationAnchorsApplied": true,
+    "charityAnchorApplied": true,
+    "burdenExclusionRuleApplied": true,
+    "calculatedTotalsAbsent": true
+  }
+}
