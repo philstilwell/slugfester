@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-recovery-1",
+  "status": "batch-07-independent-judgment-preparation-stale-batch-06-inventory-expectations-diagnosed",
+  "diagnosedAt": "2026-08-23T03:37:00Z",
+  "failureCategory": "deterministic-validation-harness",
+  "failedSourceSha256": "c5bfc6968ef96817793be18b4af2bc807b3e6f9824ec8051ff0c03f4427bc870",
+  "frozenInventoryAnalysis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/inventory-analysis.json",
+    "sha256": "3337025b543a9f1e544817dfc0d7338ce065416eda65c66e28a218e25c16c167",
+    "status": "post-canary-batch-07-inventory-gate-passed-standing-authorization-active-for-independent-judgment-packet-preparation",
+    "belowHighAttributionMoves": 0,
+    "chronologyFallbacks": 2
+  },
+  "cause": "The newly adapted preparation harness retained exactly three Batch 6 outcome expectations: the audio-required inventory status, two below-high attribution moves, and five chronology fallbacks.",
+  "scope": {
+    "affectedFile": "scripts/prepare-assessment-production-post-canary-batch-07-independent-judgments.mjs",
+    "staleExpectations": 3,
+    "sourceEvidenceChanged": false,
+    "inventoriesChanged": false,
+    "scoresChanged": false
+  },
+  "stopBoundary": "No packet was written and no model was executed."
+}
