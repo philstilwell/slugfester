@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-audio-verification-activation-validator-overlay-rule",
+  "status": "frozen-final-activation-validator-preimage-overlay-rule",
+  "targetFunction": "validateActivation",
+  "preparationSourceAuthentication": {
+    "stageSourcePath": "scripts/assessment-production-post-canary-batch-07-audio-verification-stage.mjs",
+    "stagePreimagePath": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-validation-recovery-2/stage-preimage.mjs",
+    "stagePreimageSha256": "5bcbf1cce210ceab3a22ecf591dc0b2b937c287ed317e05c6a43bc2d38ef10a8",
+    "testSourcePath": "scripts/test-assessment-production-post-canary-batch-07-audio-verification-preparation.mjs",
+    "testPreimagePath": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-validation-recovery-1/preparation-test-preimage.mjs",
+    "testPreimageSha256": "1262848fd607154d470eeaeaf2478571539128f49a5b599a40cbc4c92387bfa8"
+  },
+  "executionToolAuthentication": {
+    "runnerSourcePath": "scripts/assessment-production-post-canary-batch-07-audio-verification-stage.mjs",
+    "runnerPreimagePath": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/activation-validation-recovery-final/runner-preimage.mjs",
+    "runnerPreimageSha256": "72d4117c52d263a02ad488dcbc30bdb312d608f1cc308b8dc8c9056d46a38f05"
+  },
+  "acceptedCurrentAuthentication": {
+    "correctedPreparationTestSha256": "bc0d96e2c3a487fa558c88864086094bbc5df063b463add9d9c4e4fd84b47f93",
+    "currentRunnerSha256Source": "activation-validation-recovery-final/activation.json"
+  },
+  "preservation": {
+    "preparationManifestSha256": "7edeed842310f0340b6e9eb9c344fe37ee00064278fb3248f972fcad0695878a",
+    "executionManifestSha256": "dbecc27d144d7cdc75a227f0a6f36591e1f951777945ff295d6f03506e3da39b",
+    "manifestsByteIdentical": true,
+    "validatorMeaningChanged": false,
+    "paidCallsBeforePassingGate": 0
+  }
+}
