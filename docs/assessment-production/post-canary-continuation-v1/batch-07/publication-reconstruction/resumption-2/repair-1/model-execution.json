@@ -1,0 +1,845 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-publication-resumption-2-repair-execution",
+  "protocolId": "assessment-production-post-canary-batch-07-publication-resumption-2-repair-1",
+  "status": "batch-07-publication-resumption-2-twelve-context-repair-gate-passed",
+  "gateStartedAt": "2026-08-23T23:06:29.279Z",
+  "gateCompletedAt": "2026-08-23T23:12:11.486Z",
+  "contextsPlanned": 12,
+  "contextsAttempted": 12,
+  "contextsUnattempted": 0,
+  "validContexts": 12,
+  "invalidContexts": 0,
+  "attempts": 12,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrections": 0,
+  "schedulerRamp": [
+    1,
+    2
+  ],
+  "wallElapsedMs": 342206,
+  "rampPhases": [
+    {
+      "phase": "repair-operational-one",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "repair-ramp-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        1,
+        2
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1,
+        2
+      ],
+      "validContextIndexes": [
+        1,
+        2
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "repair-steady-two",
+      "maximumParallelContexts": 2,
+      "contextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "expansionRequiresAllValid": false,
+      "attemptedContextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "validContextIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "100",
+      "debateId": "jones-dillahunty-emergent-mind-god-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:06:29.281Z",
+      "completedAt": "2026-08-23T23:07:43.558Z",
+      "elapsedMs": 74277,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-rejection-needs-no-rival-explanation.critique",
+        "moveProse.con-generic-foundation-lacks-divine-content.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "0057bf1a8915a351a37fc8f24c19797be2e5aeb18c7be48195ae97a34241cefe",
+      "stderrSha256": "325e01f9839886ddb2c00715acc4d2b74c29462a17e625cff3b1718fb5b5742f",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "60ea24248e246f12083257d16162a3a6265b7046e75a67ec9c00ed899cca7720",
+      "validationSha256": "b8153a236f08be6c541cd7f1f161862eea000a4d6ec45df396e6fdc70dc856a1",
+      "provenanceSha256": "8e6e492a25db08ac0f142017d3bacbf2674de5df1f57248b3a8afc40f2b2bae0",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "100",
+        "contextIndex": 0,
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-rejection-needs-no-rival-explanation.critique",
+            "moveId": "con-rejection-needs-no-rival-explanation",
+            "words": 118,
+            "characters": 974,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-generic-foundation-lacks-divine-content.critique",
+            "moveId": "con-generic-foundation-lacks-divine-content",
+            "words": 118,
+            "characters": 975,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "100",
+      "debateId": "jones-dillahunty-emergent-mind-god-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:07:43.566Z",
+      "completedAt": "2026-08-23T23:08:32.251Z",
+      "elapsedMs": 48685,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-consciousness-with-reduced-or-absent-brains.critique",
+        "moveProse.pro-top-down-mental-causation.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "fe504b9497eb662c8eb0c20a499fa7eecb533446e08287a478eddbfb3a944b61",
+      "stderrSha256": "b4b877b2c16291ddef9602a785deeaf7b3035fbe23ff37d78d4f1df9ddfc8ed7",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "85b4fced51392b7ad5dcb2be1b33b7708517bba7d4d762519112f66902c9438e",
+      "validationSha256": "5df0ca72e2cd00f55abd3efc01757608a4ff3a50991ac88988d6a023c4920c31",
+      "provenanceSha256": "9ec34208a5f02ed9f39b4ed1370848eac3ce98b25c7e4dc734fcda97a543bbf4",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "100",
+        "contextIndex": 1,
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-consciousness-with-reduced-or-absent-brains.critique",
+            "moveId": "pro-consciousness-with-reduced-or-absent-brains",
+            "words": 118,
+            "characters": 1038,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-top-down-mental-causation.critique",
+            "moveId": "pro-top-down-mental-causation",
+            "words": 117,
+            "characters": 1073,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 2,
+      "packetIndex": 2,
+      "debateNumber": "100",
+      "debateId": "jones-dillahunty-emergent-mind-god-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:07:43.566Z",
+      "completedAt": "2026-08-23T23:08:30.941Z",
+      "elapsedMs": 47375,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-convergent-indirect-inference.critique",
+        "moveProse.pro-objects-as-properties-and-information.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "95a4847f9fb8b1fe7b5f6c2a9366a59f6a6cfda68a917c27581b8538c1d2b6d0",
+      "stderrSha256": "44f8c72735295832884a8100c07c54a2dca57d0ad2b8424e7b93baa765a5a1ed",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "0420ee6193c231cd62daf09b49c037065fbcff447d97a313fbcecbb02865b662",
+      "validationSha256": "7b9a018bc78ece80b8c2608275f41c3c1e2103700af0558ed2161e440ac7ad02",
+      "provenanceSha256": "e2e677c7b7f2e9cf7fe6d63445fc55e800887341d9fce63e08c6cf80971a19be",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "100",
+        "contextIndex": 2,
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-convergent-indirect-inference.critique",
+            "moveId": "pro-convergent-indirect-inference",
+            "words": 117,
+            "characters": 962,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-objects-as-properties-and-information.critique",
+            "moveId": "pro-objects-as-properties-and-information",
+            "words": 118,
+            "characters": 947,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 3,
+      "packetIndex": 3,
+      "debateNumber": "100",
+      "debateId": "jones-dillahunty-emergent-mind-god-2020",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:08:32.259Z",
+      "completedAt": "2026-08-23T23:08:58.971Z",
+      "elapsedMs": 26712,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-brainless-mind-idealist-account.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "d768db3b52bcdf7bae2f4287da816b1f3602755cb27e26dbd0e33b3885a0b6f8",
+      "stderrSha256": "0a9b6bd77ccb4341003658fff2ec649d412ad0b67ac7895d92ba7fb67a1e602e",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "e5f83e4cbcc54cf550bc1fca72821b44c8e0caaae2b6df57c316f5466128edb3",
+      "validationSha256": "ecc26760b47918f95dc3880aaca03daa3d2ac0eed54b1993e9674008475d59c7",
+      "provenanceSha256": "cbec196846d038bb4e0257adf662e2f14399cb1feb49937049a9c56dddc3cbc4",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "100",
+        "contextIndex": 3,
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-brainless-mind-idealist-account.critique",
+            "moveId": "pro-brainless-mind-idealist-account",
+            "words": 118,
+            "characters": 970,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 4,
+      "packetIndex": 0,
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:08:32.259Z",
+      "completedAt": "2026-08-23T23:09:19.094Z",
+      "elapsedMs": 46835,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-pauline-vision-underdetermination.critique",
+        "moveProse.pro-paul-transformed-tangible-body.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "602e972b586966c613e694cc00e1c59613e26d157d15e9699133a527bfaf0d68",
+      "stderrSha256": "24561f02c733fbe1208902c97baf3eaf14d37e54f0be6b44ba87fc1f75b6b239",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "9474e48cf36851a8c708e43c235d6338388d971b606937e28134dff913f18c6a",
+      "validationSha256": "a733d1bc909884eab02c4610780232ebd0b1da4fcc94fff59d2a6fbdc275e131",
+      "provenanceSha256": "3eb217f79bc52b511b7067630fd19994f8ac468b4d0ce23d7227db3b43722269",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "78",
+        "contextIndex": 4,
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-pauline-vision-underdetermination.critique",
+            "moveId": "con-pauline-vision-underdetermination",
+            "words": 115,
+            "characters": 960,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-paul-transformed-tangible-body.critique",
+            "moveId": "pro-paul-transformed-tangible-body",
+            "words": 118,
+            "characters": 974,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 5,
+      "packetIndex": 1,
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:08:58.977Z",
+      "completedAt": "2026-08-23T23:09:54.215Z",
+      "elapsedMs": 55238,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-pauline-secondhand-witness-reports.critique",
+        "moveProse.con-unavailable-source-copying-uncertainty.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "34741c23c25d8527deb7775c3aeee7147b55e85f6f39388965c406708e883fbb",
+      "stderrSha256": "4a88921a7e9887ba39e5bdb98f6531acab5aaa1982b44df412aa0dc7b571d296",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "6322964c32f605860212718611d071a13d0e43b68dac34a355553b6aee422926",
+      "validationSha256": "50be23a43b9dd58d36cf88ddd6e42580d18e6c9f73129eb21e81eef2f24fe9cf",
+      "provenanceSha256": "4ca81a1f14abbba83fb4d3f0ac8cd516fe0a30961a80501a81556cf37fd2aa02",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "78",
+        "contextIndex": 5,
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-pauline-secondhand-witness-reports.critique",
+            "moveId": "con-pauline-secondhand-witness-reports",
+            "words": 113,
+            "characters": 990,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-unavailable-source-copying-uncertainty.critique",
+            "moveId": "con-unavailable-source-copying-uncertainty",
+            "words": 117,
+            "characters": 981,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 6,
+      "packetIndex": 2,
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:09:19.100Z",
+      "completedAt": "2026-08-23T23:10:01.910Z",
+      "elapsedMs": 42810,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-gospel-compositional-delay-and-sources.critique",
+        "moveProse.pro-gospel-patristic-source-convergence.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "519f919c967512fda3493818fa165fadaca09cef5596abe3d47e521424c56ffb",
+      "stderrSha256": "2d358e803448170f76f42b34e9e4dd2adf1be970afebd6ec7840ad711bd39d03",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "71db4add9bb04911505d58433c4479f9a1aef7efb40fc0d78127aef298f08403",
+      "validationSha256": "819707efd32241380b3140baadeb16227ffd1b2d5269c3a6599c3332367d2aaf",
+      "provenanceSha256": "2557a681f50a7ffbc8f98c0ceff13aa577a48764de69f20fa52fe8216c325291",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "78",
+        "contextIndex": 6,
+        "packetIndex": 2,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-gospel-compositional-delay-and-sources.critique",
+            "moveId": "con-gospel-compositional-delay-and-sources",
+            "words": 116,
+            "characters": 1008,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-gospel-patristic-source-convergence.critique",
+            "moveId": "pro-gospel-patristic-source-convergence",
+            "words": 118,
+            "characters": 945,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 7,
+      "packetIndex": 3,
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:09:54.221Z",
+      "completedAt": "2026-08-23T23:10:39.523Z",
+      "elapsedMs": 45302,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-preconciliar-christian-plurality.critique",
+        "moveProse.con-winner-preservation-bias.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "480c628a5550014d72754982e63ce75b33abb834746149ced6646b8c5b53f13d",
+      "stderrSha256": "650a8b4407485599d4de4c68c1a5480da5368cd541634dce9e7ba19fb53c8e05",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "1f189ec6ba63a25863b050b5c841c3a9e5be0902a40dbbba963e28388f46c1f6",
+      "validationSha256": "aaeab80ae1044cf152b55dea69d8742cb75847d746f2147aa836b8e5d255d882",
+      "provenanceSha256": "a575a2f2cf675bc15bcf4ad0036466add0e8c81d6e1130cec1988be9fbdddbc1",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "78",
+        "contextIndex": 7,
+        "packetIndex": 3,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-preconciliar-christian-plurality.critique",
+            "moveId": "con-preconciliar-christian-plurality",
+            "words": 117,
+            "characters": 975,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.con-winner-preservation-bias.critique",
+            "moveId": "con-winner-preservation-bias",
+            "words": 119,
+            "characters": 987,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 8,
+      "packetIndex": 4,
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:10:01.916Z",
+      "completedAt": "2026-08-23T23:11:04.239Z",
+      "elapsedMs": 62323,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-selective-hostile-source-survival.critique",
+        "moveProse.pro-limited-spread-does-not-defeat-identification.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "5b9a905f6e71157acff3af9ea7a968fe42e9546e2f42e7f6050d9be00dc80781",
+      "stderrSha256": "55eb3af3f98abf566e125b9ab2b701d73bb702c9ba8b1e898a7927b97c986f95",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "8ba11a01849367ee2a28d97f198dd2ba64adc515f385edcedef4a2f0108b61c5",
+      "validationSha256": "75b021aa19b8ff4cde72dba6f1c558c78da2d047e261b78e70ab76c93576cf7f",
+      "provenanceSha256": "b4e19d37bfb53aee2b4f6a2e2a05c66c6fa8476fe57d7645ab2a37953f8a1838",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "78",
+        "contextIndex": 8,
+        "packetIndex": 4,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-selective-hostile-source-survival.critique",
+            "moveId": "con-selective-hostile-source-survival",
+            "words": 117,
+            "characters": 962,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-limited-spread-does-not-defeat-identification.critique",
+            "moveId": "pro-limited-spread-does-not-defeat-identification",
+            "words": 117,
+            "characters": 938,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 9,
+      "packetIndex": 5,
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:10:39.530Z",
+      "completedAt": "2026-08-23T23:11:39.224Z",
+      "elapsedMs": 59694,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-jewish-sect-and-syrian-divergence.critique",
+        "moveProse.pro-syriac-roman-substantive-convergence.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "77401681290109c40d16ce4dd19dc88003ae867f01b65c768010e217b39f21d3",
+      "stderrSha256": "9b6a3b23edf2d8f0bbc5465247b379ee42b62cab6d1a9596f59b00cecb8f1a5f",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "ab499b99ac3609cf22ca720bb6ac4b8217f5175885f3596bfd0bd33cf55eb1fe",
+      "validationSha256": "cd1eb672dc3795cc5874a0a4afe0f3bc1a154a7c6dd4f768ed14507335e2299e",
+      "provenanceSha256": "1b61657f16330168d842b89da56cf8b069c88a088857c2a36104052345176e77",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "78",
+        "contextIndex": 9,
+        "packetIndex": 5,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-jewish-sect-and-syrian-divergence.critique",
+            "moveId": "con-jewish-sect-and-syrian-divergence",
+            "words": 117,
+            "characters": 1004,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-syriac-roman-substantive-convergence.critique",
+            "moveId": "pro-syriac-roman-substantive-convergence",
+            "words": 118,
+            "characters": 1067,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 10,
+      "packetIndex": 6,
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:11:04.245Z",
+      "completedAt": "2026-08-23T23:11:59.499Z",
+      "elapsedMs": 55254,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-apostolic-church-shared-core.critique",
+        "moveProse.pro-reform-versus-doctrinal-departure.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "8d8ee77fb66899443993f1085a622ebbb5e8f997925ad6d69522f400622fdab4",
+      "stderrSha256": "3de14fd36fd775ead7df91267aa8f8cf6345c11e5e428cd385cbb5a9226b9ff3",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "b66efedd694d7e0ea30c418c814eb0c71a83ee025a23460cdf550ee9eb8827b1",
+      "validationSha256": "bb89ecf9ca916806036aa51a6c0b030d7cc85183636913c729ea1b5d203c75ba",
+      "provenanceSha256": "d7f4cf1ba9a37d31e5e93a0460b95e4bb5c9cba06127c91a124e754f3e4c5f82",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "78",
+        "contextIndex": 10,
+        "packetIndex": 6,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-apostolic-church-shared-core.critique",
+            "moveId": "pro-apostolic-church-shared-core",
+            "words": 115,
+            "characters": 1010,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-reform-versus-doctrinal-departure.critique",
+            "moveId": "pro-reform-versus-doctrinal-departure",
+            "words": 114,
+            "characters": 927,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 11,
+      "packetIndex": 7,
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-23T23:11:39.231Z",
+      "completedAt": "2026-08-23T23:12:11.480Z",
+      "elapsedMs": 32249,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.pro-catholic-orthodox-theological-compatibility.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "9914ec82a71d0bb810f6b54a359bf442d91156f5372cdbd44621646701ee5f63",
+      "stderrSha256": "ed33f214bfc835050a71d4ff06412b7fee9c3e5bd121415b66bd64cf355afcc1",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "eecae574363229f725eba4b4ec8ff3d78dc8af347562d595a819c079095b4495",
+      "validationSha256": "f486a104577a9d062719a4a37d7bbdc818e468f9758dd733613795d6b8ef5d9d",
+      "provenanceSha256": "ecf911218a144c74b2d5d3140386bdbd09fe1aed321f0454977aa0f48c3463e1",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "78",
+        "contextIndex": 11,
+        "packetIndex": 7,
+        "correctedFields": [
+          {
+            "field": "moveProse.pro-catholic-orthodox-theological-compatibility.critique",
+            "moveId": "pro-catholic-orthodox-theological-compatibility",
+            "words": 116,
+            "characters": 1017,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "rejectedOutputPreserved": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0
+}
