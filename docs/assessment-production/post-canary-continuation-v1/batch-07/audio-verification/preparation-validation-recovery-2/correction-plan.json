@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-audio-verification-preactivation-source-lock-correction-plan",
+  "status": "frozen-batch-07-audio-verification-preactivation-preimage-overlay-ready",
+  "preparedAt": "2026-08-23T21:02:56Z",
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-validation-recovery-2/diagnosis.json",
+  "correction": {
+    "file": "scripts/assessment-production-post-canary-batch-07-audio-verification-stage.mjs",
+    "rule": "During preparation source validation, authenticate the exact original stage and preparation-test preimages against the unchanged manifest, and authenticate the accepted current stage and corrected test separately against the recovery activation credential.",
+    "stagePreimage": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-validation-recovery-2/stage-preimage.mjs",
+    "stagePreimageSha256": "5bcbf1cce210ceab3a22ecf591dc0b2b937c287ed317e05c6a43bc2d38ef10a8",
+    "testPreimage": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-validation-recovery-1/preparation-test-preimage.mjs",
+    "testPreimageSha256": "1262848fd607154d470eeaeaf2478571539128f49a5b599a40cbc4c92387bfa8",
+    "acceptedCorrectedTestSha256": "bc0d96e2c3a487fa558c88864086094bbc5df063b463add9d9c4e4fd84b47f93",
+    "attemptsMaximum": 1,
+    "ordinaryRetry": false
+  },
+  "preparationManifestSha256": "7edeed842310f0340b6e9eb9c344fe37ee00064278fb3248f972fcad0695878a",
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAuthorizedAction": "apply-overlay-hash-lock-corrected-stage-and-run-one-preactivation-validation"
+}
