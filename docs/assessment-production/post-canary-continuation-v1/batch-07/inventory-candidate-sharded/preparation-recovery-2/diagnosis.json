@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-inventory-preparation-recovery-2",
+  "status": "batch-07-inventory-preparation-selection-status-failure-diagnosed",
+  "diagnosedAt": "2026-08-23T02:56:33Z",
+  "failedStage": "candidate-sharded-inventory-preparation-corrected-preview",
+  "recoveryLevel": 2,
+  "failureCategory": "deterministic-stale-selection-status-expectation",
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-07-inventory.mjs freeze --frozen-at 2026-08-23T02:51:40Z",
+  "exitCode": 1,
+  "error": "Batch 7 frozen selection drifted",
+  "rootCause": "The inherited preparer validates the exact Batch 7 debate order and protected authorization fields but retains the Batch 6 ordinal word `sixth` in one selection-status assertion. The authenticated frozen Batch 7 selection correctly uses `seventh`.",
+  "evidence": {
+    "selection": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/selection.json",
+      "sha256": "a21fdef202dbc8d7b39a1d1aa02bc8d6af60b842517ccea2f9d71ea6be1e6e78",
+      "actualStatus": "seventh-post-canary-ten-debate-batch-selection-frozen-source-gate-passed",
+      "batchNumber": 7,
+      "productionSequenceOrdinal": 8
+    },
+    "guideCorrectionPassed": true,
+    "inventoryArtifactsWritten": 0,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "boundedCorrection": {
+    "authorizedRecoveryLevel": 2,
+    "scope": "Replace exactly the one stale `sixth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed` literal with the frozen `seventh-post-canary-ten-debate-batch-selection-frozen-source-gate-passed` literal in the inventory preparation harness.",
+    "ordinaryRetry": false,
+    "thirdRecoveryAuthorized": false,
+    "allOtherHarnessBytesPreserved": true,
+    "protectedEvidencePreserved": true,
+    "modelsAuthorized": false,
+    "paidServicesAuthorized": false
+  }
+}
