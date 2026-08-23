@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-debate-02-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-debate-02-publication-repair-1",
+  "contextIndex": 0,
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "debateNumber": "02",
+  "debateId": "craig-hitchens-god-existence-2009",
+  "repairType": "ai-extension-novelty-explanation-length",
+  "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-3/outputs/debate-02.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/packets/debate-02.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndUnavailable": true,
+  "writableField": "aiExtension.con.premises[1].novelty.explanation",
+  "lockedItem": {
+    "id": "ai02-con-premise-2",
+    "text": "A cause of cosmic origins would not by itself entail personality, competence, goodness, intervention, revelation, salvation, or Christianity; each attribute requires an additional evidential bridge.",
+    "novelty": {
+      "classification": "extends",
+      "sourceMoveIds": [
+        "con-creator-to-christianity-gap",
+        "pro-cosmology-personal-cause"
+      ],
+      "originalExplanation": "This systematically extends the transcript's creator-to-Christianity nonentailment."
+    }
+  },
+  "constraints": {
+    "writableFieldCount": 1,
+    "maximumWritableFields": 1,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "minimumWords": 8,
+    "maximumWords": 35,
+    "minimumCharacters": 55,
+    "targetWords": [
+      12,
+      20
+    ],
+    "terminalPunctuationRequired": true,
+    "preserveClassificationSourceMappingAndSubstance": true,
+    "recursiveRecoveryMaximum": 0
+  }
+}
