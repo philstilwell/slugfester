@@ -38,6 +38,11 @@ const expectedMoves = [
   "con-scriptural-injunctions-and-harm"
 ];
 const toolPath = "scripts/assessment-production-post-canary-batch-07-audio-verification-stage.mjs";
+const preparationTestPath = "scripts/test-assessment-production-post-canary-batch-07-audio-verification-preparation.mjs";
+const preparationValidationRecoveryRoot = `${stageRoot}/preparation-validation-recovery-2`;
+const preparationValidationRecoveryActivationPath = `${preparationValidationRecoveryRoot}/activation.json`;
+const stagePreimagePath = `${preparationValidationRecoveryRoot}/stage-preimage.mjs`;
+const preparationTestPreimagePath = `${stageRoot}/preparation-validation-recovery-1/preparation-test-preimage.mjs`;
 const transcribeTool = "/Users/philstilwell/.codex/skills/transcribe/scripts/transcribe_diarize.py";
 const executionTools = [
   toolPath,
@@ -52,6 +57,18 @@ const readJson = (file) => readFile(file, "utf8").then(JSON.parse);
 const standingAuthorization = await loadAndValidatePostCanaryBatch07StandingAuthorization();
 
 async function validatePreparation(preparation) {
+  const recovery = await readJson(preparationValidationRecoveryActivationPath);
+  assert.equal(
+    sha256(await readFile(recovery.correctionPlan.path)),
+    recovery.correctionPlan.sha256,
+    "preactivation correction plan changed"
+  );
+  assert.equal(sha256(await readFile(toolPath)), recovery.acceptedStageSha256, "accepted stage changed");
+  assert.equal(
+    sha256(await readFile(preparationTestPath)),
+    recovery.acceptedCorrectedTestSha256,
+    "accepted preparation test changed"
+  );
   assert.equal(
     preparation.status,
     "prepared-five-post-canary-batch-07-paid-known-speaker-diarizations-standing-authorization-conditional-activation-ready"
@@ -73,7 +90,12 @@ async function validatePreparation(preparation) {
   assert.equal(preparation.judgmentModelBoundary.authentication, "ChatGPT subscription");
   assert.equal(preparation.judgmentModelBoundary.scoreBlind, true);
   for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
-    assert.equal(sha256(await readFile(file)), digest, `source hash mismatch: ${file}`);
+    const authenticatedPath = file === toolPath
+      ? stagePreimagePath
+      : file === preparationTestPath
+        ? preparationTestPreimagePath
+        : file;
+    assert.equal(sha256(await readFile(authenticatedPath)), digest, `source hash mismatch: ${file}`);
   }
   for (const call of preparation.calls) {
     assert.equal(sha256(await readFile(call.clipPath)), call.clipSha256, `${call.moveId}: clip changed`);
