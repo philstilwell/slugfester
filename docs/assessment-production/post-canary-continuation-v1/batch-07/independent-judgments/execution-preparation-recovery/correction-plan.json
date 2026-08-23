@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-execution-preparation-recovery-plan",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-execution-preparation-recovery",
+  "status": "batch-07-independent-judgment-execution-preparation-corrections-frozen-not-executed",
+  "frozenAt": "2026-08-23T19:35:00Z",
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/execution-preparation-recovery/authorization.txt",
+    "sha256": "01c2cf10d7de9857275110d7f6d0d39bef251ea784370863bcf74e3bd91ec7cb"
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/execution-preparation-preview-failure/diagnosis.json",
+    "sha256": "15043a2c219c2193f56766531a74b271a5cdd56217eae5d90b3b04a3484c98dd"
+  },
+  "correctedSources": [
+    {
+      "target": "scripts/preregister-assessment-production-post-canary-batch-07-independent-judgments.mjs",
+      "preimageSha256": "eb5f8ce1f198631d1f1a56ef1ee9651dc73765c291f55607eabfde7700b07f3c",
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/execution-preparation-recovery/proposed-preregister.mjs",
+      "sourceSha256": "7d99369d80682ab2d325d8f0bcdd1f161de1b07e0d745b1384e4c20f936fb581",
+      "changedExpectations": [
+        "uniqueMoves: 200 to 187",
+        "movesJudgedAcrossPasses: 400 to 374"
+      ]
+    },
+    {
+      "target": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-manifest.mjs",
+      "preimageSha256": "74ed7c91b9b2ceb4ac0226c36c169219b71fc92916afa2dbc975f0b36460c8c0",
+      "source": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/execution-preparation-recovery/proposed-manifest-test.mjs",
+      "sourceSha256": "e4bb6d06be6032f422f324559c81d8c2629479e0017155bfa188515c26f2048c",
+      "changedExpectations": [
+        "pendingAttributionVerificationMoves: 2 to 0",
+        "reporting uniqueMoves: 200 to 187",
+        "reporting movesJudgedAcrossPasses: 400 to 374"
+      ]
+    }
+  ],
+  "validatorRules": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/execution-preparation-recovery/validator-rules.json",
+    "sha256": "6f709675ea8b9b21d4bf76cb6247d3b2d7f0c28fce422fd26467362572a4cc9d"
+  },
+  "executionRecordTemplate": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/execution-preparation-recovery/execution-template.json",
+    "sha256": "52d9e1c147c8834eb9e0df7dfae21f643e3512add3f74715a024ff260340965c"
+  },
+  "protectedEvidence": {
+    "preparationManifestSha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce",
+    "schemaFiles": 20,
+    "schemaSetDigest": "b234f28f02b2151ed87b6428d0df2929dcc0546f221113c5ec8a9ebdc5de846f",
+    "packetFiles": 20,
+    "packetSetDigest": "8418169a92fd47e71791749ad324979833d6bdf4cae630d8463f2ea91e2d1536",
+    "inventoriesChanged": false,
+    "sourcesChanged": false,
+    "scoresChanged": false,
+    "modelSettingsChanged": false,
+    "priorEvidenceChanged": false
+  },
+  "executionPolicy": {
+    "correctedPreviewPasses": 1,
+    "manifestFreezePasses": 1,
+    "manifestValidationPasses": 1,
+    "ordinaryRetries": 0,
+    "reruns": 0,
+    "modelContextsBeforeBothGatesPass": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAction": "commit-and-push-the-frozen-recovery-before-activation"
+}
