@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-adjudication-execution-preparation-validation-recovery-1-plan",
+  "status": "frozen-batch-07-adjudication-execution-preparation-validation-recovery-1-not-executed",
+  "frozenAt": "2026-08-23T21:45:07.000Z",
+  "checkpointCommit": "d9b37d19cf560a4ee4f557586d5ab78918c5a303",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/execution-preparation-validation-recovery-1/diagnosis.json",
+    "sha256": "1160647a6d85ff66c36a7acaf923b6c2b54cb7d0b813fea36b6972c009516216"
+  },
+  "inputs": {
+    "executionPreparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/execution-preparation-manifest.json",
+      "sha256": "49bf78f065eaf72d93050d446c6c5777b0672234689c550472ec9d374a949db6"
+    },
+    "failedTestPreimage": {
+      "path": "scripts/test-assessment-production-post-canary-batch-07-dispute-adjudication-manifest.mjs",
+      "sha256": "f352ed7af48ed8574fd283dcacf2529678e4c57675c479836b10ed6dc9679f65"
+    }
+  },
+  "correction": {
+    "type": "transient-deterministic-validation-overlay",
+    "validator": "scripts/validate-assessment-production-post-canary-batch-07-dispute-adjudication-manifest-recovery-1.mjs",
+    "validatorSha256": "667ca53ca8d4a17a0ce85707bfc08e6b00443553a889783136f988f17ff3fe09",
+    "overlayExpectation": {
+      "field": "acceptedSourceBoundary.audioValidationOverlaysPreserved",
+      "from": 1,
+      "to": 3
+    },
+    "reportingCorrection": {
+      "field": "audioTranscriptInputs",
+      "from": 6,
+      "to": 5
+    },
+    "correctedTestSha256": "10908dbca7dc2d7eb0e18c4bbe55de81033c065f3e837025c48c83573df05ef9",
+    "persistentTestWrites": 0,
+    "persistentManifestWrites": 0,
+    "temporaryFilesRemovedAfterValidation": true
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "automaticRepairs": 0,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "protectedBoundaries": {
+    "preparationManifestByteIdentical": true,
+    "executionPreparationManifestByteIdentical": true,
+    "packetsByteIdentical": true,
+    "schemaByteIdentical": true,
+    "acceptedAudioEvidenceByteIdentical": true,
+    "scoresUnchanged": true
+  },
+  "futureOutput": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/execution-preparation-validation-recovery-1/execution.json",
+  "nextAuthorizedAction": "execute-one-bounded-corrected-validation-overlay"
+}
