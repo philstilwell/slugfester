@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-execution-preparation-recovery-execution",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-execution-preparation-recovery",
+  "status": "batch-07-independent-judgment-execution-preparation-corrections-applied-preview-failed",
+  "executedAt": "2026-08-23T19:38:00Z",
+  "executionTemplateSha256": "52d9e1c147c8834eb9e0df7dfae21f643e3512add3f74715a024ff260340965c",
+  "activationSha256": "58828642aae55d4c97b818effa9a180c9164e2de47a195474b7d982ed4bf5f47",
+  "correctedSourcesApplied": [
+    {
+      "path": "scripts/preregister-assessment-production-post-canary-batch-07-independent-judgments.mjs",
+      "sha256": "7d99369d80682ab2d325d8f0bcdd1f161de1b07e0d745b1384e4c20f936fb581"
+    },
+    {
+      "path": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-manifest.mjs",
+      "sha256": "e4bb6d06be6032f422f324559c81d8c2629479e0017155bfa188515c26f2048c"
+    }
+  ],
+  "preview": {
+    "attempts": 1,
+    "exitCode": 1,
+    "error": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs: preparation source drifted",
+    "executionManifestWritten": false
+  },
+  "manifestFreezeAttempts": 0,
+  "manifestValidationAttempts": 0,
+  "ordinaryRetries": 0,
+  "reruns": 0,
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "scoresDerived": 0,
+  "productionMutations": 0,
+  "directIncrementalCostUsd": 0
+}

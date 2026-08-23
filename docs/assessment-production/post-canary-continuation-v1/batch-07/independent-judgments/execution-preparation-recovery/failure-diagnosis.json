@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0-assessment-production-stop-rule-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-execution-preparation-recovery",
+  "status": "batch-07-independent-judgment-preregistration-source-preimage-conflict-diagnosed-no-correction-authorized",
+  "diagnosedAt": "2026-08-23T19:39:00Z",
+  "failureCategory": "deterministic-execution-preparation-source-authentication",
+  "cause": "After the authorized total corrections passed, the preregistration harness replayed every source hash in the unchanged preparation manifest directly from current repository bytes. The manifest authenticates the original preparation-test preimage, while the current preparation test contains the two previously accepted corrections. Preregistration therefore rejected the corrected test before writing its manifest.",
+  "evidence": {
+    "preregistrationHarnessSha256": "7d99369d80682ab2d325d8f0bcdd1f161de1b07e0d745b1384e4c20f936fb581",
+    "preparationManifestSha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce",
+    "manifestAuthenticatedPreparationTestSha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6",
+    "acceptedCorrectedPreparationTestSha256": "537203100681414d00978aa841ee2a5f58c546981199c53a5de6c89e30ecb34f",
+    "previousPreimageReconstructionRule": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-test-harness-recovery/preimage-reconstruction-rule.json"
+  },
+  "preserved": {
+    "executionManifestWritten": false,
+    "preparationManifestChanged": false,
+    "frozenPacketsChanged": false,
+    "schemasChanged": false,
+    "inventoriesChanged": false,
+    "sourcesChanged": false,
+    "scoresChanged": false,
+    "modelSettingsChanged": false,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "stopRule": "Stop on any further execution-preparation failure.",
+  "authorizationDisposition": "stopped-before-preregistration-overlay-manifest-freeze-validation-activation-or-model-execution"
+}

@@ -177,7 +177,7 @@ assert.deepEqual(
   manifest.audioPolicy.pendingAttributionVerificationMoves,
   preparation.audioPolicy.pendingAttributionVerificationMoves
 );
-assert.equal(manifest.audioPolicy.pendingAttributionVerificationMoves.length, 2);
+assert.equal(manifest.audioPolicy.pendingAttributionVerificationMoves.length, 0);
 assert.equal(manifest.audioPolicy.audioAccessedDuringPreparation, false);
 
 for (const [key, value] of Object.entries(sourcePreparation.stopRules)) {
@@ -267,8 +267,8 @@ console.log(
       status: "passed",
       debates: 10,
       contexts: 20,
-      uniqueMoves: 200,
-      movesJudgedAcrossPasses: 400,
+      uniqueMoves: 187,
+      movesJudgedAcrossPasses: 374,
       exactContextOrder: true,
       pairwiseInventoryAndSourceIdentity: true,
       canonicalEventProjectionReplay: true,
