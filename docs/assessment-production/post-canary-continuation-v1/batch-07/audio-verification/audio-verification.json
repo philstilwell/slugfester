@@ -1,0 +1,524 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-audio-verification-audit",
+  "protocolId": "assessment-production-post-canary-batch-07-decomposed-consensus",
+  "status": "batch-07-audio-verification-unresolved-after-empty-segment-overlay",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "correction": {
+    "number": 1,
+    "operation": "omit-exactly-one-frozen-empty-segment-object-from-transient-validation-copy",
+    "targetMoveId": "con-selective-hostile-source-survival",
+    "omittedSegmentIndexes": [
+      10
+    ],
+    "transientOverlayApplications": 1,
+    "persistentTranscriptWrites": 0,
+    "allOriginalTranscriptsUnchanged": true
+  },
+  "debates": [
+    {
+      "debateNumber": "193",
+      "debateId": "crossan-licona-historical-jesus-2018",
+      "moves": [
+        {
+          "debateNumber": "193",
+          "debateId": "crossan-licona-historical-jesus-2018",
+          "moveId": "con-authentic-eschatological-judge-sayings",
+          "expectedSpeaker": "Michael Licona",
+          "trigger": {
+            "passAAssessmentConfidence": "medium",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Michael Licona",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-193/clips/con-authentic-eschatological-judge-sayings.mp3",
+            "sha256": "6b37f658211bdb5ed8b31af121ce8fc1c406b30f979f5cbf309251dd4d37a492",
+            "durationSeconds": 52.86
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-193/transcripts/con-authentic-eschatological-judge-sayings.transcript.json",
+            "sha256": "37402c707c3d77e293a797f604d77f11c5c567091249087614f284bd3e5602aa",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "persistentMutation": false
+          },
+          "validationOverlay": null,
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Michael Licona",
+            "fullClipExcerptRecall": 0.9733333333333334,
+            "expectedSpeakerExcerptRecall": 0.9733333333333334,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.06666666666666667,
+            "expectedSpeakerRecallMargin": 0.9066666666666667,
+            "expectedSpeakerDurationSeconds": 43.45,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Michael Licona",
+                "segmentCount": 9,
+                "durationSeconds": 43.45,
+                "wordCount": 116,
+                "excerptRecall": 0.9733333333333334
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 1,
+                "durationSeconds": 2,
+                "wordCount": 9,
+                "excerptRecall": 0.06666666666666667
+              },
+              {
+                "speaker": "John Dominic Crossan",
+                "segmentCount": 1,
+                "durationSeconds": 1.2,
+                "wordCount": 6,
+                "excerptRecall": 0.02666666666666667
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "78",
+      "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+      "moves": [
+        {
+          "debateNumber": "78",
+          "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+          "moveId": "pro-gospel-patristic-source-convergence",
+          "expectedSpeaker": "William Albrecht",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "William Albrecht",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-78/clips/pro-gospel-patristic-source-convergence.mp3",
+            "sha256": "30b218d663ceeccbd863b7648edddddfe8999387fca5159ae035a2fa5c54841a",
+            "durationSeconds": 155.84
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-78/transcripts/pro-gospel-patristic-source-convergence.transcript.json",
+            "sha256": "fd10bca7a5957c0b2a3791c0a0ed50a3b7945057109abb57c43655a74d56258f",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "persistentMutation": false
+          },
+          "validationOverlay": null,
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "William Albrecht",
+            "fullClipExcerptRecall": 0.9583333333333334,
+            "expectedSpeakerExcerptRecall": 0.9444444444444444,
+            "highestOtherSpeaker": "Graham Oppy",
+            "highestOtherSpeakerExcerptRecall": 0.09722222222222222,
+            "expectedSpeakerRecallMargin": 0.8472222222222222,
+            "expectedSpeakerDurationSeconds": 136.2,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "William Albrecht",
+                "segmentCount": 33,
+                "durationSeconds": 136.2,
+                "wordCount": 441,
+                "excerptRecall": 0.9444444444444444
+              },
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 4,
+                "durationSeconds": 7.05,
+                "wordCount": 20,
+                "excerptRecall": 0.09722222222222222
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "78",
+          "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+          "moveId": "con-selective-hostile-source-survival",
+          "expectedSpeaker": "Graham Oppy",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-78/clips/con-selective-hostile-source-survival.mp3",
+            "sha256": "c299629915fea90beee7af2d2e957b54ee9ce5a3dd31f4dadbbd1eed674a3097",
+            "durationSeconds": 99.5
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-78/transcripts/con-selective-hostile-source-survival.transcript.json",
+            "sha256": "02aafbb90409a66166dc67c643ed347b30a1135e12a530d1f2bae398426b5d62",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "persistentMutation": false
+          },
+          "validationOverlay": {
+            "operation": "omit-exactly-one-frozen-empty-segment-object-from-transient-validation-copy",
+            "omittedSegmentIndexes": [
+              10
+            ],
+            "originalSegmentCount": 46,
+            "validationSegmentCount": 45,
+            "persistentTranscriptWritten": false
+          },
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 0.8513513513513513,
+            "expectedSpeakerExcerptRecall": 0.6891891891891891,
+            "highestOtherSpeaker": "William Albrecht",
+            "highestOtherSpeakerExcerptRecall": 0.40540540540540543,
+            "expectedSpeakerRecallMargin": 0.2837837837837837,
+            "expectedSpeakerDurationSeconds": 75.15,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 23,
+                "durationSeconds": 75.15,
+                "wordCount": 154,
+                "excerptRecall": 0.6891891891891891
+              },
+              {
+                "speaker": "William Albrecht",
+                "segmentCount": 22,
+                "durationSeconds": 17.1,
+                "wordCount": 71,
+                "excerptRecall": 0.40540540540540543
+              }
+            ]
+          }
+        },
+        {
+          "debateNumber": "78",
+          "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+          "moveId": "con-jewish-sect-and-syrian-divergence",
+          "expectedSpeaker": "Graham Oppy",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "unresolved",
+          "resolvedSpeaker": null,
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-78/clips/con-jewish-sect-and-syrian-divergence.mp3",
+            "sha256": "0ada3cbde1ade05e207764a04a5a9de030089fd46c9bbb599a148d344c39a28d",
+            "durationSeconds": 66.2
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-78/transcripts/con-jewish-sect-and-syrian-divergence.transcript.json",
+            "sha256": "5845e1230df4e00848b3023326e693fcb4ece7258f1cadf31ff490b090953e4c",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "persistentMutation": false
+          },
+          "validationOverlay": null,
+          "deterministicEvidence": {
+            "status": "unresolved",
+            "expectedSpeaker": "Graham Oppy",
+            "fullClipExcerptRecall": 0.9024390243902439,
+            "expectedSpeakerExcerptRecall": 0.6951219512195121,
+            "highestOtherSpeaker": "William Albrecht",
+            "highestOtherSpeakerExcerptRecall": 0.3902439024390244,
+            "expectedSpeakerRecallMargin": 0.30487804878048774,
+            "expectedSpeakerDurationSeconds": 47.55,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": false,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Graham Oppy",
+                "segmentCount": 14,
+                "durationSeconds": 47.55,
+                "wordCount": 108,
+                "excerptRecall": 0.6951219512195121
+              },
+              {
+                "speaker": "William Albrecht",
+                "segmentCount": 12,
+                "durationSeconds": 13.25,
+                "wordCount": 47,
+                "excerptRecall": 0.3902439024390244
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "debateNumber": "02",
+      "debateId": "craig-hitchens-god-existence-2009",
+      "moves": [
+        {
+          "debateNumber": "02",
+          "debateId": "craig-hitchens-god-existence-2009",
+          "moveId": "con-scriptural-injunctions-and-harm",
+          "expectedSpeaker": "Christopher Hitchens",
+          "trigger": {
+            "passAAssessmentConfidence": "high",
+            "passBAssessmentConfidence": "medium",
+            "passAAttributionConfidence": "high",
+            "passBAttributionConfidence": "high",
+            "eitherPassAssessmentBelowHigh": true,
+            "eitherPassAttributionBelowHigh": false
+          },
+          "executionStatus": "completed",
+          "status": "verified",
+          "resolvedSpeaker": "Christopher Hitchens",
+          "clip": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-02/clips/con-scriptural-injunctions-and-harm.mp3",
+            "sha256": "a78e92cc2c23251c1468c8a0a96cc2a697d291e1799a135ac945b2788bc08613",
+            "durationSeconds": 78.453
+          },
+          "transcript": {
+            "path": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-02/transcripts/con-scriptural-injunctions-and-harm.transcript.json",
+            "sha256": "dcdcd7094f1a748c87b09da4c20175687313e74f06f6a449bf83d49f51144829",
+            "model": "gpt-4o-transcribe-diarize",
+            "responseFormat": "diarized_json",
+            "persistentMutation": false
+          },
+          "validationOverlay": null,
+          "deterministicEvidence": {
+            "status": "verified",
+            "expectedSpeaker": "Christopher Hitchens",
+            "fullClipExcerptRecall": 1,
+            "expectedSpeakerExcerptRecall": 0.967741935483871,
+            "highestOtherSpeaker": "A",
+            "highestOtherSpeakerExcerptRecall": 0.16129032258064516,
+            "expectedSpeakerRecallMargin": 0.8064516129032259,
+            "expectedSpeakerDurationSeconds": 63.75,
+            "checks": {
+              "fullClipExcerptRecovered": true,
+              "expectedSpeakerExcerptRecovered": true,
+              "expectedSpeakerRecallDistinct": true,
+              "expectedSpeakerDurationSufficient": true
+            },
+            "speakerEvidence": [
+              {
+                "speaker": "Christopher Hitchens",
+                "segmentCount": 19,
+                "durationSeconds": 63.75,
+                "wordCount": 190,
+                "excerptRecall": 0.967741935483871
+              },
+              {
+                "speaker": "A",
+                "segmentCount": 4,
+                "durationSeconds": 5.05,
+                "wordCount": 19,
+                "excerptRecall": 0.16129032258064516
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "thresholds": {
+    "minimumFullClipExcerptRecall": 0.8,
+    "minimumExpectedSpeakerExcerptRecall": 0.8,
+    "minimumExpectedSpeakerRecallMargin": 0.15,
+    "minimumExpectedSpeakerDurationSeconds": 5
+  },
+  "referenceContract": {
+    "requestedDurationSeconds": 8,
+    "promotedRepositoryAcceptedRangeSeconds": [
+      1.2,
+      10
+    ],
+    "currentOfficialAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "enforcedAcceptedRangeSeconds": [
+      2,
+      10
+    ],
+    "currentOfficialRangeIsStricterAtLowerBound": true,
+    "measuredBeforeExecution": true,
+    "referencesPerDebate": 2,
+    "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move-per-speaker",
+    "references": [
+      {
+        "debateNumber": "193",
+        "speaker": "John Dominic Crossan",
+        "selectedMoveId": "pro-gospel-redaction-limits-eyewitness-recovery",
+        "selectedMoveSourceSpan": {
+          "startEvent": 335,
+          "endEvent": 407
+        },
+        "selectedMoveDurationSeconds": 484.83,
+        "startSeconds": 2646.185,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-193/references/john-dominic-crossan.mp3",
+        "sha256": "af1870e46655260f1eeda4c189431a05ddf391670d28e0f03f2387caee3bc240"
+      },
+      {
+        "debateNumber": "193",
+        "speaker": "Michael Licona",
+        "selectedMoveId": "con-paul-bodily-transformation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 681,
+          "endEvent": 734
+        },
+        "selectedMoveDurationSeconds": 334.11,
+        "startSeconds": 4908.635,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-193/references/michael-licona.mp3",
+        "sha256": "a4872b9bfa40a1dbf537efaf38d8b123d07893fb1fa9080f1540da4e0f77db75"
+      },
+      {
+        "debateNumber": "78",
+        "speaker": "William Albrecht",
+        "selectedMoveId": "pro-gospel-patristic-source-convergence",
+        "selectedMoveSourceSpan": {
+          "startEvent": 461,
+          "endEvent": 525
+        },
+        "selectedMoveDurationSeconds": 150.84,
+        "startSeconds": 1469.9,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-78/references/william-albrecht.mp3",
+        "sha256": "4b4ffe8450fa4e0b7d93603663a9750e297a3e8e04f80593193ff63e67e457a9"
+      },
+      {
+        "debateNumber": "78",
+        "speaker": "Graham Oppy",
+        "selectedMoveId": "con-protestant-branches-and-individuation",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1259,
+          "endEvent": 1312
+        },
+        "selectedMoveDurationSeconds": 145.161,
+        "startSeconds": 3357.18,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-78/references/graham-oppy.mp3",
+        "sha256": "ad9f557c714640be7d4f55cc4b23d97fb5bfb2ef0dc3b474da41c1addc986564"
+      },
+      {
+        "debateNumber": "02",
+        "speaker": "William Lane Craig",
+        "selectedMoveId": "pro-evil-sufficient-reasons-redemption",
+        "selectedMoveSourceSpan": {
+          "startEvent": 2924,
+          "endEvent": 3030
+        },
+        "selectedMoveDurationSeconds": 303.167,
+        "startSeconds": 8217.487,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-02/references/william-lane-craig.mp3",
+        "sha256": "827414eaa0c7147dbece77c46c42336e4485847237b39d2a05306889ad025353"
+      },
+      {
+        "debateNumber": "02",
+        "speaker": "Christopher Hitchens",
+        "selectedMoveId": "con-secular-moral-capacity",
+        "selectedMoveSourceSpan": {
+          "startEvent": 1539,
+          "endEvent": 1623
+        },
+        "selectedMoveDurationSeconds": 227.77,
+        "startSeconds": 4478.975,
+        "requestedDurationSeconds": 8,
+        "selectionRule": "midpoint-eight-seconds-of-longest-high-attribution-locked-move",
+        "actualDurationSeconds": 8,
+        "localPath": "output/transcribe/assessment-production-post-canary-batch-07-audio-verification/debate-02/references/christopher-hitchens.mp3",
+        "sha256": "f3f979772adbf9bd1390b8c33192a326ee9fb427ba6eaf5690bec19daaf230c8"
+      }
+    ]
+  },
+  "totals": {
+    "requiredMoves": 5,
+    "verified": 3,
+    "unresolved": 2,
+    "paidDiarizationCallsAttempted": 5,
+    "paidDiarizationCallsCompleted": 5,
+    "callsSkipped": 0,
+    "retries": 0,
+    "corrections": 1,
+    "deterministicReplayPasses": 1,
+    "clipMinutes": 7.5475,
+    "durationOnlyPlanningExposureUsd": 0.0453,
+    "usageDerivedEstimatedCostUsd": 0.162855,
+    "actualBilledCostUsdAvailable": false,
+    "maximumAuthorizedCostUsd": 1,
+    "directIncrementalCostCapControlPassed": true,
+    "directIncrementalCostUsdThisStage": 0,
+    "judgmentModelContexts": 0,
+    "adjudicationModelContexts": 0,
+    "scoresDerived": 0,
+    "productionMutations": 0,
+    "nextBatchSelections": 0,
+    "audioPlaybackCalls": 0,
+    "semanticAudioEvaluations": 0
+  },
+  "authorization": {
+    "adjudicationPacketPreparation": false,
+    "paidTranscription": false,
+    "retry": false,
+    "correctionCall": false,
+    "judgmentModelExecution": false,
+    "adjudicationModelExecution": false,
+    "finalLedgerAssembly": false,
+    "scoreDerivation": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  }
+}
