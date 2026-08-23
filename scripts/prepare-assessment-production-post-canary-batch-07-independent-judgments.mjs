@@ -206,7 +206,7 @@ assertV4(
 );
 assertV4(
   cohortSelection.status ===
-      "sixth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed" &&
+      "seventh-post-canary-ten-debate-batch-selection-frozen-source-gate-passed" &&
     cohortSelection.developmentValidationOnly === false &&
     cohortSelection.stagingOnly === true &&
     cohortSelection.selected?.map((item) => item.debateNumber).join(",") ===

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0-assessment-production-stop-rule-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-recovery-2",
+  "status": "batch-07-independent-judgment-preparation-third-stale-expectation-diagnosed-no-correction-authorized",
+  "diagnosedAt": "2026-08-23T03:45:00Z",
+  "failureCategory": "deterministic-validation-harness",
+  "preservedSourceSha256": "06a710321cb494355b070e2505ddf9a52a618783cbdf1894860ab33f63370fd8",
+  "cause": "The harness still requires 400 move judgments, inherited from Batch 6's 200 unique moves. Batch 7's frozen ten inventories contain 187 unique moves, so the exact two-pass coverage is 374.",
+  "evidence": {
+    "frozenUniqueMoves": 187,
+    "requiredIndependentPassesPerMove": 2,
+    "deterministicTwoPassCoverage": 374,
+    "staleHarnessExpectation": 400,
+    "debateMoveCounts": {
+      "193": 19,
+      "80": 19,
+      "121": 18,
+      "100": 19,
+      "78": 17,
+      "113": 17,
+      "180": 18,
+      "02": 21,
+      "182": 20,
+      "56": 19
+    }
+  },
+  "preserved": {
+    "preparationArtifactsWritten": 0,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "lockedInventoriesChanged": false,
+    "sourcePacketsChanged": false,
+    "scoresDerived": false,
+    "productionMutations": false
+  },
+  "authorizationDisposition": "stopped-before-further-correction-under-standing-authorization"
+}
