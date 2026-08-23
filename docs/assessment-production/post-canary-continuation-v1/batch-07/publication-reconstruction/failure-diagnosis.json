@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-publication-failure-diagnosis",
+  "status": "frozen-diagnosed-batch-07-debate-193-two-field-publication-validation-failure",
+  "frozenAt": "2026-08-23T22:16:13.000Z",
+  "checkpointCommit": "a691d354c0a0e6652aa60db38f4973ff3e9db46d",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "classification": "one-nonexact-representative-quote-and-one-one-word-critique-overrun",
+  "preservedExecution": {
+    "contextsPlanned": 10,
+    "contextsAttempted": 1,
+    "contextsUnattempted": 9,
+    "acceptedContexts": 0,
+    "rejectedContexts": 1,
+    "rejectedDebate": "193",
+    "unattemptedDebates": ["80", "121", "100", "78", "113", "180", "02", "182", "56"],
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "correctionContexts": 0
+  },
+  "failedFields": [
+    {
+      "type": "representative-quote-exact-source-substring",
+      "path": "representativeQuotes.con.text",
+      "side": "con",
+      "sourceMoveId": "con-paul-bodily-transformation",
+      "originalText": "our bodies will be raised and transformed",
+      "originalValueSha256": "5a7bf9dcfb3d72fdb503042daa226acd9c1e38be8e477ac84c77a0ca4ce34e3b",
+      "originalWords": 7,
+      "diagnosedReason": "quote-is-not-an-exact-contiguous-source-substring"
+    },
+    {
+      "type": "critique-word-boundary",
+      "path": "moveProse.pro-participatory-metaphorical-resurrection.critique",
+      "moveId": "pro-participatory-metaphorical-resurrection",
+      "originalValueSha256": "16e991cae17c00b4716543077c84c2d6174ba3b88849bb9412c439620a1379f3",
+      "words": 131,
+      "characters": 1069,
+      "sentences": 4,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "diagnosedReason": "critique-exceeds-130-word-maximum"
+    }
+  ],
+  "diagnosticReplay": {
+    "transientCopyOnly": true,
+    "originalOutputModified": false,
+    "correctedOutputPersisted": false,
+    "validatorUnchanged": true,
+    "quoteDiagnosticReplacement": "those bodies are going to be raised and transformed",
+    "critiqueDiagnosticWordsAfterOneWordRemoval": 130,
+    "fullOutputValidationStatus": "passed",
+    "provedFailureFieldCount": 2,
+    "unexpectedValidationCategories": 0
+  },
+  "minimumBoundedRepair": {
+    "operation": "one-isolated-field-disjoint-score-locked-publication-repair-context",
+    "packetCount": 1,
+    "debateNumber": "193",
+    "writableFields": [
+      "representativeQuotes.con.text",
+      "moveProse.pro-participatory-metaphorical-resurrection.critique"
+    ],
+    "writableFieldsMaximumPerPacket": 2,
+    "attemptsPerContext": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "mergeRule": "Replace only the two explicitly diagnosed fields in the immutable original Debate 193 publication output, preserve every other field, validate the repaired debate, then resume exactly the nine unattempted frozen contexts and replay the complete ten-debate cohort."
+  },
+  "protectedEvidence": {
+    "originalRejectedOutputImmutable": true,
+    "failedRepairOutputReusable": false,
+    "nineUnattemptedContextsImmutable": true,
+    "sourcesImmutable": true,
+    "identitiesImmutable": true,
+    "lockedScoresImmutable": true,
+    "everyUnrelatedFieldImmutable": true,
+    "modelAuthoredScores": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/model-execution.json": "aea4dfb896cd5f4d4527e910f6d352b9620c2826656bd6d6a98e7fc9f6cd97ef",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/analysis.json": "00e37f87a6974e47605173f2bcd5ae677799b220ddc19a920587ddfee93a19e1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/outputs/debate-193.json": "93c4d8ecf77a93763a09bcadbab0aaa1931869b2de0e22397ac4cc6240140e23",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/validations/debate-193.json": "cd70d75e53312fa090d900cf9d5de0e24e88f681f1a944e1f026890a1413be8b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/provenance/debate-193.json": "19b47561c8f5b8311aa25bd801843b08097f7d1c1f5b0702620d7f3a0f9e006f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/packets/debate-193.json": "e0ca7d646bd0b6f70f9d4e28da85127eabad496f0944880f467991f88cde2f19"
+  },
+  "directIncrementalCostUsd": 0,
+  "authorization": {
+    "repairPacketPreparation": true,
+    "repairModelExecution": false,
+    "deterministicMergeAndCohortReplay": false,
+    "publicationCompilation": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-and-freeze-one-batch-07-two-field-publication-repair-context-and-nine-context-resumption-manifest"
+}
