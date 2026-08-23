@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-publication-resumption-2-preparation-test-correction",
+  "status": "frozen-corrected-batch-07-publication-resumption-2-reporting-only-timing-expectation",
+  "correctedAt": "2026-08-23T22:43:12.000Z",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "classification": "reporting-only-stale-expected-parallel-wall-minute-range",
+  "failedAssertion": {
+    "field": "costEstimate.expectedParallelWallMinutes",
+    "staleExpectedValue": [22, 42],
+    "frozenManifestValue": [20, 38]
+  },
+  "correction": {
+    "source": "scripts/test-assessment-production-post-canary-batch-07-publication-resumption-2-preparation.mjs",
+    "oldSha256": "885e9dab13e55bc4abac90f069a6ad3413f94aac04b6a8e562ac5381db591457",
+    "newSha256": "3d8d0fdb65d9327bffa83eff32ba4feeb3f948e82670a14a3a2e89223b58f593",
+    "preCorrectionManifestSha256": "19a94a66230303a37a999101c5ee07d6055926e7263e3ab747fab3e1cee88c77",
+    "manifestFieldUpdated": "sourceHashes.scripts/test-assessment-production-post-canary-batch-07-publication-resumption-2-preparation.mjs"
+  },
+  "protectedEvidence": {
+    "contextsUnchanged": true,
+    "packetsUnchanged": true,
+    "schemasUnchanged": true,
+    "sourcesUnchanged": true,
+    "acceptedRepairsUnchanged": true,
+    "scoresUnchanged": true,
+    "modelControlsUnchanged": true,
+    "allOtherManifestFieldsUnchanged": true
+  },
+  "executionPolicy": {
+    "correctedValidationPassesMaximum": 1,
+    "retries": 0,
+    "modelContexts": 0,
+    "paidServices": 0,
+    "directIncrementalCostUsd": 0
+  }
+}
