@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-publication-resumption-2-execution-runner-correction",
+  "status": "frozen-corrected-batch-07-publication-resumption-2-eight-context-preflight",
+  "correctedAt": "2026-08-23T22:44:30.000Z",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "classification": "execution-runner-retained-two-stale-nine-context-preflight-expectations",
+  "preservedFailure": {
+    "modelContextsStarted": 0,
+    "modelContextsAttempted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0,
+    "failureMessage": "the Batch 7 publication resumption is not authorized"
+  },
+  "correction": {
+    "source": "scripts/run-assessment-production-post-canary-batch-07-publication-resumption-2.mjs",
+    "changedAssertions": [
+      "activation.contexts.length: 9 -> 8",
+      "activation.executionPolicy.contexts: 9 -> 8"
+    ],
+    "oldSourceSha256": "b6e5c237572d99a27dd31d0feed83a0133480c302daa5a5937cf01794e3dd35d",
+    "newSourceSha256": "c154416bf7caaf526485515f99eb6415da49ca6e4c0ca18a0c0ec965ed70500f",
+    "oldPreparationManifestSha256": "d498b00c2e6a642b8217124a765a1e827597d409c7ba1a3a87ac5e85ef0aaf19",
+    "newPreparationManifestSha256": "54f59801a89120a569bdf580f30dca0b105d66f9560ce17e1d58e2c74a061660",
+    "preCorrectionActivationSha256": "d4a0ffdb6742f0d3dc2418082038dd8018716b50f8504249a3f31c11b742e354"
+  },
+  "protectedEvidence": {
+    "contextsUnchanged": true,
+    "packetsUnchanged": true,
+    "schemasUnchanged": true,
+    "sourcesUnchanged": true,
+    "acceptedRepairsUnchanged": true,
+    "scoresUnchanged": true,
+    "modelSettingsUnchanged": true,
+    "schedulerUnchanged": true,
+    "allOtherManifestAndActivationFieldsUnchanged": true
+  },
+  "executionPolicy": {
+    "correctionAttemptsMaximum": 1,
+    "ordinaryRetries": 0,
+    "timeoutExtensions": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "execute-the-eight-frozen-publication-resumption-contexts-once"
+}

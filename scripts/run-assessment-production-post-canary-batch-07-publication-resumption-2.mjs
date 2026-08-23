@@ -34,7 +34,7 @@ assertV4(
       "frozen-eight-untouched-post-canary-batch-07-publication-resumption-2-contexts-authorized" &&
     activation.productionCanary === false &&
     activation.batchNumber === 7 &&
-    activation.contexts?.length === 9 &&
+    activation.contexts?.length === 8 &&
     activation.authorization?.modelContexts === true &&
     activation.authorization?.publicationModelExecution === true &&
     activation.authorization?.deterministicOutputValidation === true &&
@@ -55,7 +55,7 @@ assertV4(
     activation.model?.slug === "gpt-5.6-sol" &&
     activation.model?.reasoningEffort === "low" &&
     activation.model?.authentication === "ChatGPT subscription" &&
-    activation.executionPolicy?.contexts === 9 &&
+    activation.executionPolicy?.contexts === 8 &&
     activation.executionPolicy?.attemptsPerContext === 1 &&
     activation.executionPolicy?.retriesMaximum === 0 &&
     activation.executionPolicy?.timeoutExtensionsMaximum === 0 &&
