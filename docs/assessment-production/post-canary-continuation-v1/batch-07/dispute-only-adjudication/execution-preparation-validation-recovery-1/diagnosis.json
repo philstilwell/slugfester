@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-adjudication-execution-preparation-validation-failure-diagnosis",
+  "status": "preserved-deterministic-validation-harness-failure-diagnosed",
+  "diagnosedAt": "2026-08-23T21:43:00.000Z",
+  "checkpointCommit": "5e99b8618706c06186e121041089312b0df0efbc",
+  "stage": "dispute-only-adjudication-execution-preparation-validation",
+  "observedFailure": {
+    "test": "scripts/test-assessment-production-post-canary-batch-07-dispute-adjudication-manifest.mjs",
+    "line": 51,
+    "assertion": "manifest.acceptedSourceBoundary.audioValidationOverlaysPreserved",
+    "expected": 1,
+    "actual": 3,
+    "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal: 3 !== 1"
+  },
+  "diagnosis": {
+    "category": "stale-inherited-validation-harness-expectation",
+    "rootCause": "The Batch 7 validation harness retained the earlier one-overlay expectation even though the frozen accepted audio record preserves one empty-segment overlay and two verification-reference overlays.",
+    "coupledReportingFinding": "The same test contains a reporting-only audioTranscriptInputs value of 6 while the frozen manifest contains exactly 5 inputs.",
+    "manifestCorrect": true,
+    "packetsCorrect": true,
+    "acceptedAudioEvidenceCorrect": true,
+    "modelInputsChanged": false,
+    "modelExecutionOccurred": false,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "frozenEvidence": {
+    "executionPreparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/execution-preparation-manifest.json",
+      "sha256": "49bf78f065eaf72d93050d446c6c5777b0672234689c550472ec9d374a949db6"
+    },
+    "failedTestPreimage": {
+      "path": "scripts/test-assessment-production-post-canary-batch-07-dispute-adjudication-manifest.mjs",
+      "sha256": "f352ed7af48ed8574fd283dcacf2529678e4c57675c479836b10ed6dc9679f65"
+    }
+  },
+  "permittedCorrection": {
+    "level": 1,
+    "testOnly": true,
+    "replaceOverlayExpectation": {
+      "from": 1,
+      "to": 3
+    },
+    "replaceReportingOnlyAudioTranscriptInputs": {
+      "from": 6,
+      "to": 5
+    },
+    "reconstructAndAuthenticateFailedTestPreimage": true,
+    "authenticateAcceptedCorrectedTestSeparately": true,
+    "attempts": 1,
+    "retries": 0,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false
+  },
+  "stopRules": {
+    "stopOnCorrectedValidationFailure": true,
+    "stopBeforeModelExecutionUnlessCorrectedGatePasses": true,
+    "stopOnProtectedEvidenceChange": true
+  },
+  "nextAuthorizedAction": "freeze-one-bounded-test-harness-correction-and-run-one-corrected-validation-pass"
+}
