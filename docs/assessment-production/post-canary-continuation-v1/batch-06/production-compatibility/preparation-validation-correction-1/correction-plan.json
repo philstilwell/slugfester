@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-compatibility-preparation-correction-1-plan",
+  "status": "frozen-batch-06-compatibility-preparation-correction-1-prepared",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/production-compatibility/preparation-validation-correction-1/diagnosis.json",
+    "sha256": "65c6a70461d04a8c4b813c5a4376a61e5826bae06b446cdb3837045901f4cd18"
+  },
+  "correctedHarness": {
+    "path": "scripts/prepare-assessment-production-post-canary-batch-06-compatibility.mjs",
+    "preCorrectionSha256": "f8c17f72d67e98779d560897e65e873d1a6b5792777ee790679e3cca7480825e",
+    "proposedSha256": "407fb143d904089d19cf70d79c95c980d1022d38882bb3b24349172d8db4cde4",
+    "changedMeaning": "Use the frozen results array's exact desktop/mobile pair ordering instead of the absent legacy rows field."
+  },
+  "executionPolicy": {
+    "preparationPassesMaximum": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "automaticRepairsMaximum": 0
+  },
+  "protectedEvidenceChanged": false,
+  "modelContexts": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "execute-one-corrected-batch-06-compatibility-preparation-pass"
+}

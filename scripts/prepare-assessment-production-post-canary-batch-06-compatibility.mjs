@@ -190,12 +190,22 @@ const inputByNumber = new Map(
     input
   ])
 );
+const renderedDebateOrder = renderingAudit.results
+  .filter((_row, index) => index % 2 === 0)
+  .map((row) => row.debateNumber);
+const renderingResultOrderValid =
+  renderingAudit.results.length === POST_CANARY_BATCH_06_COMPATIBILITY_ORDER.length * 2 &&
+  renderingAudit.results.every((row, index) =>
+    row.debateNumber === POST_CANARY_BATCH_06_COMPATIBILITY_ORDER[Math.floor(index / 2)] &&
+    row.viewportName === (index % 2 === 0 ? "desktop" : "mobile")
+  );
 assertV4(
   finalLedger.debates.map((debate) => debate.debateNumber).join(",") ===
       POST_CANARY_BATCH_06_COMPATIBILITY_ORDER.join(",") &&
     scores.debates.map((debate) => debate.debateNumber).join(",") ===
       POST_CANARY_BATCH_06_COMPATIBILITY_ORDER.join(",") &&
-    renderingAudit.rows.map((row) => row.debateNumber).join(",") ===
+    renderingResultOrderValid &&
+    renderedDebateOrder.join(",") ===
       POST_CANARY_BATCH_06_COMPATIBILITY_ORDER.join(","),
   "Batch 6 compatibility debate order changed"
 );
