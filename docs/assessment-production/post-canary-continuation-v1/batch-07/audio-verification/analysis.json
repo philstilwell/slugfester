@@ -1,32 +1,33 @@
 {
   "schemaVersion": "1.0-assessment-production-post-canary-batch-07-audio-verification-analysis",
   "protocolId": "assessment-production-post-canary-batch-07-decomposed-consensus",
-  "status": "batch-07-audio-verification-unresolved-after-empty-segment-overlay",
+  "status": "passed-all-five-batch-07-audio-attributions-after-recursive-reference-overlay",
   "productionCanary": false,
   "batchNumber": 7,
   "stagingOnly": true,
   "gate": {
-    "passed": false,
+    "passed": true,
     "executionComplete": true,
     "deterministicReplayComplete": true,
     "requiredMoves": 5,
-    "verified": 3,
-    "unresolved": 2,
+    "verified": 5,
+    "unresolved": 0,
     "deterministicThresholdsApplied": true,
     "exactValidatorPreserved": true,
     "originalTranscriptsPreserved": true,
     "transientCorrectionOverlayApplications": 1,
+    "transientReferenceOverlayApplications": 2,
     "persistentTranscriptWrites": 0
   },
   "costs": {
     "requiredMoves": 5,
-    "verified": 3,
-    "unresolved": 2,
+    "verified": 5,
+    "unresolved": 0,
     "paidDiarizationCallsAttempted": 5,
     "paidDiarizationCallsCompleted": 5,
     "callsSkipped": 0,
     "retries": 0,
-    "corrections": 1,
+    "corrections": 2,
     "deterministicReplayPasses": 1,
     "clipMinutes": 7.5475,
     "durationOnlyPlanningExposureUsd": 0.0453,
@@ -59,7 +60,7 @@
     "automaticContinuationWhileGatesPass": true
   },
   "authorization": {
-    "adjudicationPacketPreparation": false,
+    "adjudicationPacketPreparation": true,
     "paidTranscription": false,
     "retry": false,
     "correctionCall": false,
@@ -70,5 +71,5 @@
     "productionMutation": false,
     "nextBatchSelection": false
   },
-  "nextAuthorizedAction": "preserve-and-diagnose-batch-07-audio-correction-result"
+  "nextAuthorizedAction": "resume-batch-07-standing-authorization-with-dispute-only-adjudication-preparation"
 }
