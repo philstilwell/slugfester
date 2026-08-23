@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-audio-verification-preparation-failure-diagnosis",
+  "status": "preserved-diagnosed-batch-07-audio-verification-preparation-tool-source-mismatch",
+  "diagnosedAt": "2026-08-23T20:56:34Z",
+  "checkpointCommit": "b0d73e426fc326d5ae55d3fbde9e8c98e5e9f625",
+  "failure": {
+    "stage": "audio-verification-preparation-preview",
+    "attempt": 1,
+    "exitCode": 1,
+    "category": "deterministic-missing-tool-source",
+    "message": "ENOENT: no such file or directory, open 'scripts/run-assessment-production-post-canary-batch-07-audio-transport-recovery-3.mjs'",
+    "paidCalls": 0,
+    "modelCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "diagnosis": {
+    "cause": "The Batch 7 draft inherited two Batch 5-only recovery filenames in TOOL_SOURCES. Batch 7 used the ordinary audio-source preparation and cohort-validation tools instead.",
+    "affectedField": "TOOL_SOURCES",
+    "affectedFiles": [
+      "scripts/prepare-assessment-production-post-canary-batch-07-audio-verification.mjs"
+    ],
+    "unaffectedEvidence": [
+      "audio source files",
+      "frozen clips",
+      "audio work items",
+      "independent judgments",
+      "disagreements",
+      "scores",
+      "model settings"
+    ]
+  },
+  "sourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-07-audio-verification.mjs": "bbf1e1b4a90ddcbca3aca3701f3a2da21a0d11c30fcc3721e36485558d8fa3f4",
+    "scripts/test-assessment-production-post-canary-batch-07-audio-verification-preparation.mjs": "1262848fd607154d470eeaeaf2478571539128f49a5b599a40cbc4c92387bfa8",
+    "scripts/assessment-production-post-canary-batch-07-audio-verification-stage.mjs": "5bcbf1cce210ceab3a22ecf591dc0b2b937c287ed317e05c6a43bc2d38ef10a8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/disagreement-extraction/audio-source-preparation.json": "4f21bb0734f386150f1f6bfa1575ef8823758361ffce388a85169141a0e1014d"
+  },
+  "authorization": {
+    "boundedFirstRecovery": true,
+    "ordinaryRetry": false,
+    "paidService": false,
+    "modelExecution": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "freeze-one-tool-source-list-correction-and-run-one-corrected-preparation-preview"
+}

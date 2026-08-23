@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-audio-verification-preparation-correction-plan",
+  "status": "frozen-batch-07-audio-verification-preparation-tool-source-correction-ready",
+  "preparedAt": "2026-08-23T20:56:34Z",
+  "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-recovery-1/diagnosis.json",
+  "correction": {
+    "file": "scripts/prepare-assessment-production-post-canary-batch-07-audio-verification.mjs",
+    "field": "TOOL_SOURCES",
+    "remove": [
+      "scripts/run-assessment-production-post-canary-batch-07-audio-transport-recovery-3.mjs",
+      "scripts/test-assessment-production-post-canary-batch-07-audio-source-recovery-3-cohort.mjs"
+    ],
+    "add": [
+      "scripts/assessment-production-post-canary-batch-07-audio-verification-stage.mjs",
+      "scripts/prepare-assessment-production-post-canary-batch-07-audio-sources.mjs",
+      "scripts/test-assessment-production-post-canary-batch-07-audio-sources.mjs"
+    ],
+    "attemptsMaximum": 1,
+    "ordinaryRetry": false
+  },
+  "preservation": {
+    "audioAccess": false,
+    "paidCalls": 0,
+    "modelCalls": 0,
+    "sourceContentChanges": 0,
+    "clipChanges": 0,
+    "scoreChanges": 0
+  },
+  "preimageSha256": "bbf1e1b4a90ddcbca3aca3701f3a2da21a0d11c30fcc3721e36485558d8fa3f4",
+  "nextAuthorizedAction": "apply-exact-tool-source-list-correction-once-and-run-one-preview"
+}
