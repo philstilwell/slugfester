@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-adjudication-execution-preparation-validation-recovery-1-execution",
+  "status": "passed-one-bounded-batch-07-adjudication-execution-preparation-validation-overlay",
+  "executedAt": "2026-08-23T21:45:47.000Z",
+  "recoveryLevel": 1,
+  "plan": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/execution-preparation-validation-recovery-1/correction-plan.json",
+  "planSha256": "06cf1622d679df3fc82882f49c2c07118e91c91b4aa00bc5e4629f3dd27dbbd2",
+  "authenticatedInputs": {
+    "executionPreparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/execution-preparation-manifest.json",
+      "sha256": "49bf78f065eaf72d93050d446c6c5777b0672234689c550472ec9d374a949db6"
+    },
+    "failedTestPreimage": {
+      "path": "scripts/test-assessment-production-post-canary-batch-07-dispute-adjudication-manifest.mjs",
+      "sha256": "f352ed7af48ed8574fd283dcacf2529678e4c57675c479836b10ed6dc9679f65"
+    }
+  },
+  "correction": {
+    "type": "transient-deterministic-validation-overlay",
+    "validator": "scripts/validate-assessment-production-post-canary-batch-07-dispute-adjudication-manifest-recovery-1.mjs",
+    "validatorSha256": "667ca53ca8d4a17a0ce85707bfc08e6b00443553a889783136f988f17ff3fe09",
+    "overlayExpectation": {
+      "field": "acceptedSourceBoundary.audioValidationOverlaysPreserved",
+      "from": 1,
+      "to": 3
+    },
+    "reportingCorrection": {
+      "field": "audioTranscriptInputs",
+      "from": 6,
+      "to": 5
+    },
+    "correctedTestSha256": "10908dbca7dc2d7eb0e18c4bbe55de81033c065f3e837025c48c83573df05ef9",
+    "persistentTestWrites": 0,
+    "persistentManifestWrites": 0,
+    "temporaryFilesRemovedAfterValidation": true
+  },
+  "validation": {
+    "status": "passed",
+    "contexts": 10,
+    "disputedMoves": 180,
+    "candidateSelections": 511,
+    "audioTranscriptInputs": 5,
+    "schedulerRamp": [
+      1,
+      2
+    ],
+    "maximumParallelContexts": 2,
+    "attemptsPerContext": 1,
+    "retriesMaximum": 0,
+    "authentication": "ChatGPT subscription",
+    "directIncrementalCostUsdMaximum": 0,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false,
+    "finalLedgersAssembled": 0,
+    "scoresDerived": 0,
+    "nextAuthorizedAction": "standing-authorization-permits-batch-07-dispute-only-adjudication-activation-after-frozen-gate-passes"
+  },
+  "controls": {
+    "executionPreparationManifestUnchanged": true,
+    "failedTestPreimageUnchanged": true,
+    "correctedTestAppliedInMemoryOnly": true,
+    "temporaryFilesRemoved": true,
+    "modelExecutionOccurred": false,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0,
+    "attempts": 1,
+    "retries": 0
+  },
+  "nextAuthorizedAction": "resume-batch-07-standing-authorization-with-dispute-only-adjudication-activation"
+}
