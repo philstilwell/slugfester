@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-rendering-source-hash-correction-1-plan",
+  "status": "frozen-batch-06-rendering-source-hash-correction-1-prepared",
+  "classification": "execution-runner-required-production-baseline-hash-omitted-from-preparation-and-activation",
+  "original": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/preparation-manifest.json",
+    "preparationSha256": "5a0c1337a3940694c30faa5995bc452a6b866ee08f1447b78ae0f16443464154",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/execution-activation.json",
+    "activationSha256": "f6c7236c7a48335b49c7c2cd82992f541e1b36ae85a405cddb2237fbc23128f8"
+  },
+  "correctionScope": {
+    "addedSourceHashField": "src/data/debates.js",
+    "addedSourceHashValue": "bd64d1ee404a5096c8946e0cb2077273f0503c2c169f269b8e585f1fc700a4a0",
+    "dependentPreparationHashUpdated": true,
+    "dependentNavigationTokenUpdated": true,
+    "otherFieldsChanged": false
+  },
+  "proposed": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/preflight-source-hash-correction-1/proposed-preparation-manifest.json",
+    "preparationSha256": "da9b57cd4033124cc76b119a311ed3f13a8562696d2722399b941b741671cc83",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/preflight-source-hash-correction-1/proposed-execution-activation.json",
+    "activationSha256": "03cb6356cca7c81c7af1563ecc7d648921aa5da83e915ec42f3c957df504a603"
+  },
+  "executionPolicy": {
+    "attemptsMaximum": 1,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0
+  },
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "execute-one-batch-06-rendering-source-hash-correction-1-pass"
+}
