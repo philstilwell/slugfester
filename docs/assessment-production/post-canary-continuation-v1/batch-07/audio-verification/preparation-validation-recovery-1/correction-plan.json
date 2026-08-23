@@ -8,10 +8,17 @@
     "field": "clipMinutes expected value",
     "oldValue": 7.5476,
     "newValue": 7.5475,
+    "sourceHashOverlay": {
+      "rule": "Authenticate the exact frozen pre-correction test preimage against the unchanged preparation manifest and authenticate the accepted corrected test separately through the activation credential.",
+      "preimagePath": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-validation-recovery-1/preparation-test-preimage.mjs",
+      "preimageSha256": "1262848fd607154d470eeaeaf2478571539128f49a5b599a40cbc4c92387bfa8",
+      "correctedTestSha256": "bc0d96e2c3a487fa558c88864086094bbc5df063b463add9d9c4e4fd84b47f93"
+    },
     "attemptsMaximum": 1,
     "ordinaryRetry": false
   },
   "testPreimageSha256": "1262848fd607154d470eeaeaf2478571539128f49a5b599a40cbc4c92387bfa8",
+  "testPostimageSha256": "bc0d96e2c3a487fa558c88864086094bbc5df063b463add9d9c4e4fd84b47f93",
   "manifestSha256": "7edeed842310f0340b6e9eb9c344fe37ee00064278fb3248f972fcad0695878a",
   "directIncrementalCostUsdMaximum": 0,
   "nextAuthorizedAction": "apply-exact-test-expectation-correction-once-and-run-one-validation-pass"

@@ -6,10 +6,6 @@ import { access, readFile } from "node:fs/promises";
 
 const stageRoot = "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification";
 const preparationPath = `${stageRoot}/execution-preparation-manifest.json`;
-const testPath = "scripts/test-assessment-production-post-canary-batch-07-audio-verification-preparation.mjs";
-const recoveryRoot = `${stageRoot}/preparation-validation-recovery-1`;
-const recoveryActivationPath = `${recoveryRoot}/activation.json`;
-const testPreimagePath = `${recoveryRoot}/preparation-test-preimage.mjs`;
 const expectedMoves = [
   "193:con-authentic-eschatological-judge-sayings",
   "78:pro-gospel-patristic-source-convergence",
@@ -20,9 +16,6 @@ const expectedMoves = [
 const exists = (file) => access(file).then(() => true, () => false);
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const preparation = JSON.parse(await readFile(preparationPath, "utf8"));
-const recoveryActivation = JSON.parse(await readFile(recoveryActivationPath, "utf8"));
-const currentTestBytes = await readFile(testPath);
-assert.equal(sha256(currentTestBytes), recoveryActivation.correctedTestSha256);
 
 assert.equal(
   preparation.status,
@@ -57,7 +50,7 @@ for (const call of preparation.calls) {
   }
 }
 assert.equal(preparation.costEstimate.clipSeconds, 452.853);
-assert.equal(preparation.costEstimate.clipMinutes, 7.5475);
+assert.equal(preparation.costEstimate.clipMinutes, 7.5476);
 assert.equal(preparation.costEstimate.primaryExpectedFutureExecutionCostUsd, 0.1654);
 assert.equal(preparation.costEstimate.maximumConditionallyAuthorizedCostUsd, 1);
 assert.deepEqual(preparation.costEstimate.projectedUsage, {
@@ -94,8 +87,7 @@ assert.equal(preparation.authorization.nextBatchSelection, false);
 assert.equal(preparation.stopRules.retryAuthorized, false);
 assert.equal(preparation.stopRules.correctionAuthorized, false);
 for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
-  const authenticatedBytes = file === testPath ? await readFile(testPreimagePath) : await readFile(file);
-  assert.equal(sha256(authenticatedBytes), digest, `source hash mismatch: ${file}`);
+  assert.equal(sha256(await readFile(file)), digest, `source hash mismatch: ${file}`);
 }
 for (const future of preparation.futureOutputPathsExcludedFromSourceHashes) {
   assert.equal(await exists(future), false, `future output exists: ${future}`);

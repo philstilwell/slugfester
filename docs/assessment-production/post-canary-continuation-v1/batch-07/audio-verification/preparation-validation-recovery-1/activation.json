@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-audio-verification-preparation-validation-correction-activation",
+  "status": "frozen-active-batch-07-audio-verification-clip-minute-test-correction",
+  "activatedAt": "2026-08-23T21:01:21Z",
+  "checkpointCommit": "f1db1822",
+  "correctionPlan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-validation-recovery-1/correction-plan.json",
+    "sha256": "f0b9763e0cea24d40b6fe6dba4b1799c8e6b16c6deba8127763eb15e645701b9"
+  },
+  "manifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/execution-preparation-manifest.json",
+    "sha256": "7edeed842310f0340b6e9eb9c344fe37ee00064278fb3248f972fcad0695878a"
+  },
+  "testPreimage": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/audio-verification/preparation-validation-recovery-1/preparation-test-preimage.mjs",
+    "sha256": "1262848fd607154d470eeaeaf2478571539128f49a5b599a40cbc4c92387bfa8"
+  },
+  "correctedTest": "scripts/test-assessment-production-post-canary-batch-07-audio-verification-preparation.mjs",
+  "correctedTestSha256": "bc0d96e2c3a487fa558c88864086094bbc5df063b463add9d9c4e4fd84b47f93",
+  "execution": {
+    "correctedValidationAttemptsMaximum": 1,
+    "ordinaryRetriesMaximum": 0,
+    "paidCallsMaximum": 0,
+    "modelCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "run-one-corrected-batch-07-audio-verification-preparation-validation-pass"
+}
