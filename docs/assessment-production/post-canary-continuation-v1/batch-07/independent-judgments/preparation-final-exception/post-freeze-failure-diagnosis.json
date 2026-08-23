@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-assessment-production-stop-rule-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-final-exception",
+  "status": "batch-07-independent-judgment-preparation-test-stale-pending-audio-count-diagnosed-no-correction-authorized",
+  "diagnosedAt": "2026-08-23T18:31:00Z",
+  "failureCategory": "deterministic-preparation-test",
+  "cause": "The Batch 7 preparation test retained Batch 6's expectation of two pending attribution-verification moves. Batch 7's accepted inventory contains zero below-high attribution moves, so its frozen preparation manifest correctly contains an empty pending-audio list.",
+  "evidence": {
+    "frozenInventoryBelowHighAttributionMoves": 0,
+    "frozenPreparationPendingAttributionVerificationMoves": 0,
+    "staleTestExpectation": 2,
+    "testSourceSha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6",
+    "preparationManifestSha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce"
+  },
+  "preserved": {
+    "frozenPacketsChanged": false,
+    "inventoriesChanged": false,
+    "sourcesChanged": false,
+    "scoresChanged": false,
+    "modelSettingsChanged": false,
+    "priorRecoveryEvidenceChanged": false,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "stopRule": "Stop on any further failure involving this preparation problem.",
+  "authorizationDisposition": "stopped-before-test-correction-execution-manifest-or-model-activation",
+  "nextAction": "obtain-new-user-approval-for-a-one-line-preparation-test-correction-from-two-to-zero"
+}

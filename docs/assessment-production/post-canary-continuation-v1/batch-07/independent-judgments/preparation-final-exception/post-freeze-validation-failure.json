@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0-assessment-production-preserved-post-freeze-validation-failure",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-final-exception",
+  "status": "batch-07-independent-judgment-packets-frozen-preparation-test-failed-stop-rule-triggered",
+  "failedAt": "2026-08-23T18:30:00Z",
+  "freeze": {
+    "attempts": 1,
+    "exitCode": 0,
+    "preparationManifest": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-manifest.json",
+    "preparationManifestSha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce",
+    "debates": 10,
+    "contexts": 20,
+    "uniqueMoves": 187,
+    "movesJudgedAcrossPasses": 374,
+    "judgmentPacketsFrozen": 20,
+    "schemasFrozen": 20,
+    "sourcePacketsFrozen": 10
+  },
+  "validation": {
+    "command": "node scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs",
+    "testSourceSha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6",
+    "exitCode": 1,
+    "failedLine": 101,
+    "assertion": "preparation.audioPolicy.pendingAttributionVerificationMoves.length === 2",
+    "actual": 0,
+    "expected": 2
+  },
+  "ordinaryRetries": 0,
+  "furtherCorrections": 0,
+  "modelContextsExecuted": 0,
+  "paidServiceCalls": 0,
+  "audioCalls": 0,
+  "scoresDerived": 0,
+  "productionMutations": 0,
+  "directIncrementalCostUsd": 0
+}
