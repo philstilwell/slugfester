@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-adjudication-gate-validation-failure-diagnosis",
+  "status": "preserved-post-execution-deterministic-gate-test-failure-diagnosed",
+  "diagnosedAt": "2026-08-23T21:58:11.000Z",
+  "checkpointCommit": "a923fe62fafb0a57b818b9b636fa48f485e16d8c",
+  "observedFailure": {
+    "test": "scripts/test-assessment-production-post-canary-batch-07-dispute-adjudication-gate.mjs",
+    "line": 214,
+    "assertion": "analysis.evidenceBoundary.audioTranscriptInputs",
+    "expected": 2,
+    "actual": 5,
+    "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal: 5 !== 2"
+  },
+  "diagnosis": {
+    "category": "stale-inherited-validation-harness-expectation",
+    "rootCause": "The Batch 7 gate test retained the earlier two-audio-input expectation while the frozen Batch 7 cohort contains exactly five accepted verified-audio inputs.",
+    "executionPassed": true,
+    "analysisPassed": true,
+    "validContexts": 10,
+    "invalidContexts": 0,
+    "disputedMovesDecided": 180,
+    "candidateSelections": 511,
+    "audioTranscriptInputs": 5,
+    "acceptedOutputsChanged": false,
+    "modelRerunRequired": false,
+    "paidServiceCalls": 0,
+    "scoresDerived": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "frozenEvidence": {
+    "modelExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/model-execution.json",
+      "sha256": "2ecd6bca175751531ac7df740763f847dd274af862f26f5ddac197fd3cf8b2f6"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/analysis.json",
+      "sha256": "47269751edf69bae7f59c39727d8ebb1c542f14a79013be0719359402e24f80d"
+    },
+    "failedTestPreimage": {
+      "path": "scripts/test-assessment-production-post-canary-batch-07-dispute-adjudication-gate.mjs",
+      "sha256": "6e33504920ae19cf4cb15dd178334a009dd586578fd08d5709f70c41986c1013"
+    }
+  },
+  "permittedCorrection": {
+    "recoveryLevel": 1,
+    "type": "transient-deterministic-validation-overlay",
+    "replaceAudioTranscriptInputExpectation": {
+      "from": 2,
+      "to": 5
+    },
+    "persistentTestWrites": 0,
+    "persistentAcceptedOutputWrites": 0,
+    "attempts": 1,
+    "retries": 0,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false
+  },
+  "stopRules": {
+    "stopOnCorrectedValidationFailure": true,
+    "stopOnAcceptedOutputChange": true,
+    "stopOnModelRerun": true,
+    "stopOnPaidService": true
+  },
+  "nextAuthorizedAction": "freeze-and-run-one-bounded-adjudication-gate-validation-overlay"
+}
