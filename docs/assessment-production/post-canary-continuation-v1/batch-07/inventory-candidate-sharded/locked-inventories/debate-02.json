@@ -1,0 +1,779 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "02",
+  "debateId": "craig-hitchens-god-existence-2009",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "route-pro-christian-theism",
+      "side": "pro",
+      "description": "Establish a cumulative route from features of the universe, objective morality, the historical case for resurrection, and religious experience to a personal God, then connect that conclusion to Christian theism while answering objections from suffering and religion's record.",
+      "successCriteria": "The route succeeds if its independent considerations jointly make a personal God more plausible than atheistic naturalism, the resurrection consideration supplies the specifically Christian bridge, and the principal defeaters do not overturn that cumulative inference.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-cumulative-plausibility",
+        "tier": "motion",
+        "description": "Show that the cumulative explanatory case and specifically Christian evidence make Christian theism more plausible than atheism across the motion's principal issues."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-cosmic-explanation",
+          "tier": "central",
+          "description": "Establish that cosmic origin and life-permitting conditions are better explained by a transcendent personal cause and intelligent design than by necessity, chance, or unaided naturalism."
+        },
+        {
+          "bridgeId": "pro-central-moral-foundation",
+          "tier": "central",
+          "description": "Establish that objective moral values and duties require a transcendent foundation that theism supplies and atheistic accounts do not."
+        },
+        {
+          "bridgeId": "pro-central-christian-resurrection",
+          "tier": "central",
+          "description": "Establish that the relevant historical facts are best explained by Jesus's resurrection and that this inference connects generic theism to Christian theism."
+        },
+        {
+          "bridgeId": "pro-central-defeater-resistance",
+          "tier": "central",
+          "description": "Show that suffering, evolutionary waste, religious plurality, and harmful religious conduct do not defeat the truth or comparative plausibility of Christian theism."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-epistemic-access",
+          "tier": "subsidiary",
+          "description": "Explain how public arguments may be supplemented by immediate religious experience without making the public cumulative case depend solely on private assurance."
+        },
+        {
+          "bridgeId": "pro-subsidiary-meaning-providence",
+          "tier": "subsidiary",
+          "description": "Account for objective meaning, providential justice, and redemption within Christian theism, including for suffering people and those outside explicit Christian history."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-atheist-critique",
+      "side": "con",
+      "description": "Withhold the divine hypothesis unless it receives adequate evidential support, challenge the inferences from cosmic and moral phenomena to God, resist the further bridge to Christianity, and present suffering, religious plurality, and religion's authoritative record as contrary considerations.",
+      "successCriteria": "The route succeeds if the affirmative considerations neither require a divine explanation nor establish the caring and specifically Christian God at issue, while the counterevidence and secular alternatives leave atheistic rejection of that hypothesis warranted.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-divine-case",
+        "tier": "motion",
+        "description": "Show that the available considerations do not warrant the divine hypothesis or the further conclusion that a caring, revelatory, specifically Christian God exists."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-burden-evidence",
+          "tier": "central",
+          "description": "Defend rejection of an unsupported supernatural proposition without assuming an obligation to prove the nonexistence of every proposed deity."
+        },
+        {
+          "bridgeId": "con-central-naturalistic-alternatives",
+          "tier": "central",
+          "description": "Show that cosmological uncertainty, evolutionary contingency, and secular accounts of morality prevent the relevant phenomena from requiring design or divine moral grounding."
+        },
+        {
+          "bridgeId": "con-central-christian-gap",
+          "tier": "central",
+          "description": "Show that a possible cosmic cause would not establish providence or Christianity and that miracle testimony does not adequately authenticate resurrection, revelation, or doctrine."
+        },
+        {
+          "bridgeId": "con-central-counterevidence",
+          "tier": "central",
+          "description": "Show that severe suffering, cosmic and evolutionary waste, delayed and unequal revelation, and conflicting religions count against benevolent Christian providence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-religious-authority",
+          "tier": "subsidiary",
+          "description": "Explain why claims of divine authority demand strong evidence and why scriptural commands and theocratic coercion bear on accepting those claims."
+        },
+        {
+          "bridgeId": "con-subsidiary-secular-meaning",
+          "tier": "subsidiary",
+          "description": "Establish that human solidarity, freedom, ethical life, and meaningful projects remain available without supernatural authority or immortality."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "issue-burden-epistemology",
+      "title": "Burden of Proof and Religious Epistemology",
+      "weightPercent": 15,
+      "rationale": "The parties' competing accounts of atheism, evidential obligation, cumulative probability, falsifiability, and spiritual assurance determine what must be established before any substantive consideration can support or displace the divine hypothesis."
+    },
+    {
+      "sectionId": "issue-cosmology-design",
+      "title": "Cosmic Origin, Fine-Tuning, and Design",
+      "weightPercent": 24,
+      "rationale": "Cosmological origin and fine-tuning form a principal route from observable features of the universe to a personal creator, while uncertainty, evolutionary contingency, waste, and cosmic decay test whether that explanatory inference is warranted."
+    },
+    {
+      "sectionId": "issue-morality",
+      "title": "Objective Morality and Its Foundation",
+      "weightPercent": 17,
+      "rationale": "The moral issue tests whether objective values and duties require God, whether evolutionary and social accounts address grounding or only moral development, and whether religious authority contributes anything necessary to ethical life."
+    },
+    {
+      "sectionId": "issue-resurrection-revelation",
+      "title": "Resurrection, Miracles, and the Christian Bridge",
+      "weightPercent": 18,
+      "rationale": "The resurrection claim supplies the principal bridge from generic creator theism to Christianity, making the historical facts, miracle testimony, doctrinal authentication, and the scope and timing of revelation structurally indispensable."
+    },
+    {
+      "sectionId": "issue-suffering-providence",
+      "title": "Suffering, Evil, and Benevolent Providence",
+      "weightPercent": 16,
+      "rationale": "Suffering and apparent waste directly test the compatibility and comparative plausibility of an omnipotent, knowledgeable, and good God, including whether sufficient reasons, redemption, and eternal compensation answer the objection."
+    },
+    {
+      "sectionId": "issue-religion-record-meaning",
+      "title": "Religion's Record, Authority, and Human Meaning",
+      "weightPercent": 10,
+      "rationale": "Religion's commands and institutional consequences bear on claims of revelation and authority, while the competing accounts of objective purpose, secular solidarity, liberty, and mortality address the motion's broader contrast between Christian theism and atheism."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-burden-no-atheist-disproof",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "issue-burden-epistemology",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Atheism lacks a successful argument establishing that God does not exist.",
+      "sourceSpan": {
+        "startEvent": 321,
+        "endEvent": 330
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly yields the opening speech to Craig, and the uninterrupted first-person argument remains his.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "my first contention, that there's no good argument that atheism is true. Atheists have tried for centuries to disprove the existence of God, but no one's ever been able to come up with a successful argument. So, rather than attack strong men at this point, I'll just wait to hear Mr. Hitchens present his arguments against God's existence, and then I'll respond to them in my next",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 2,
+        "endToken": 68,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cosmology-personal-cause",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "issue-cosmology-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The universe began to exist and therefore has a transcendent personal cause.",
+      "sourceSpan": {
+        "startEvent": 334,
+        "endEvent": 410
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The numbered cosmological argument occurs continuously within Craig's formally introduced opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "So why does the universe exist, instead of just nothing, where did it come from? There must have been a cause which brought the universe into being. Now as the cause of space and time, this being must be an uncaused, timeless, spaceless, immaterial being of unfathomable power. Moreover, it must be personal as well. Why? Because the cause must be beyond space and time, therefore",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 443,
+        "endToken": 508,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-finetuning-design",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "issue-cosmology-design",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Cosmic fine-tuning is best explained by intelligent design rather than necessity or chance.",
+      "sourceSpan": {
+        "startEvent": 411,
+        "endEvent": 499
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly numbers and develops the teleological argument during his uninterrupted opening speech.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "strongly dis-confirms the multiverse hypothesis. On atheism, at least, then it is highly probable that there is no world ensemble. The fine tuning of the universe is therefore plausibly due neither to physical necessity nor to chance. It therefore follows logically that the best explanation is design. Thus the teleological argument gives us an intelligent designer of the cosmos",
+        "characterCount": 380,
+        "tokenCount": 60,
+        "startToken": 596,
+        "endToken": 655,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-objective-morality-god",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "issue-morality",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Objective moral values exist, and their existence entails that God exists.",
+      "sourceSpan": {
+        "startEvent": 500,
+        "endEvent": 548
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explicitly labels this as his third argument, within Craig's continuous opening presentation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "values do exist and deep down we all know it. In moral experience we apprehend a realm of objective moral goods and evils. Actions like rape, cruelty, and child abuse aren't just socially unacceptable behavior, they're moral abominations. Some things, at least, are really wrong. Similarly love, equality, and self-sacrifice are really good. But then it follows logically and necessarily that God exists",
+        "characterCount": 403,
+        "tokenCount": 64,
+        "startToken": 265,
+        "endToken": 328,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-resurrection-historical-inference",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "issue-resurrection-revelation",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "The best explanation of the central historical facts about Jesus is his resurrection, which entails God's existence.",
+      "sourceSpan": {
+        "startEvent": 549,
+        "endEvent": 610
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig explicitly introduces the fourth numbered argument and presents it without any intervening speaker change.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "empty tomb behind him.\" Attempts to explain away these three great facts like the disciples stole the body or Jesus wasn't really dead have been universally rejected by contemporary scholarship. The simple fact is that there just is no plausible, naturalistic explanation of these facts. And therefore it seems to me the Christian is amply justified in believing that Jesus rose from the dead and was who he claimed to be. But that entails",
+        "characterCount": 439,
+        "tokenCount": 74,
+        "startToken": 389,
+        "endToken": 462,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-immediate-experience-basic-belief",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "sectionId": "issue-burden-epistemology",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "constructive",
+      "proposition": "Immediate experience of God can properly ground knowledge of God's existence without inferential argument.",
+      "sourceSpan": {
+        "startEvent": 611,
+        "endEvent": 648
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Craig labels this as his fifth point and continues speaking through its experiential and epistemic development.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "immediate experience of God. This isn't really an argument for God's existence, rather it's the claim that you can know that God exists wholly apart from argument, simply by immediately experiencing him. Philosophers call beliefs like these \"properly basic beliefs.\" They aren't based on other beliefs rather they're part of the foundation of a person's system of beliefs. Other properly basic beliefs include the belief",
+        "characterCount": 420,
+        "tokenCount": 65,
+        "startToken": 4,
+        "endToken": 68,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-evolutionary-waste-against-design",
+      "qualifiedCandidateId": "chunk-001:c008",
+      "sectionId": "issue-cosmology-design",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Evolutionary mass extinction, randomness, suffering, and humanity's near extinction undermine the claim that humanity was the intended product of a purposeful divine design.",
+      "sourceSpan": {
+        "startEvent": 771,
+        "endEvent": 839
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted opening speech remains Hitchens's, with repeated first-person invitations and evaluative conclusions.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "fine tuning. This close to joining every other species that had gone extinct. And that's our Exodus story is that somehow we don't know how because it's not written in any Scripture, it's not told in any book, it's not part of any superstitious narrative but somehow we escaped from Africa to cooler latitudes was made, but that's how close it was. You have to be able to imagine that all this mass extinction and death and randomness",
+        "characterCount": 434,
+        "tokenCount": 78,
+        "startToken": 213,
+        "endToken": 290,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-no-divine-disproof-burden",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "issue-burden-epistemology",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Atheism need not prove God's nonexistence when no plausible or convincing evidence requires the divine hypothesis and observable phenomena remain explicable without it.",
+      "sourceSpan": {
+        "startEvent": 842,
+        "endEvent": 863
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly identifies what atheists argue while continuing his uninterrupted opening statement.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "is no God, but he's unique in that, and I think very bold and courageous. Here's what we argue. We argue quite simply that there's no plausible or convincing reason, certainly no evidential one, to believe that there is such an entity, and that all observable phenomena, including the cosmological one to which I'm coming, are explicable without the hypothesis. You don't need the",
+        "characterCount": 380,
+        "tokenCount": 64,
+        "startToken": 80,
+        "endToken": 143,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-creator-to-christianity-gap",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-01",
+      "sectionId": "issue-resurrection-revelation",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "constructive",
+      "proposition": "Even granting a cosmic creator would not establish a caring, intervening, revelatory, salvific, or specifically Christian God.",
+      "sourceSpan": {
+        "startEvent": 864,
+        "endEvent": 912
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Hitchens's uninterrupted opening turn and consistently presents his first-person skeptical position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "what means, cared what we ate or on what day, cared whether we lived or died. There's no reason at all why this entity isn't completely indifferent to us. That you cannot get from deism to theism except by a series of extraordinarily generous, to yourself, assumptions. The deist has all his work still ahead of him to show that it leads to revelation, to redemption, to salvation",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 176,
+        "endToken": 243,
+        "weightedOverlap": 8,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 0,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-spiritual-assurance-over-evidence",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "sectionId": "issue-burden-epistemology",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Giving inner spiritual assurance precedence over contrary argument or evidence insulates Christian commitment from evidential defeat and makes the apologetic fundamentally faith-based.",
+      "sourceSpan": {
+        "startEvent": 949,
+        "endEvent": 1008
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly attributes the discussed epistemic position to Craig and develops the criticism throughout his uninterrupted turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "of the Holy Spirit to \"the fundamental truth of the Christian faith \"and beliefs based on argument and evidence \"then it is the former which must take precedence \"over the latter.\" He adds not vice-versa but a good editor would've told you you don't have to put the vice-versa in, it's clear enough as it is. I'll say it again, \"Should a conflict arise \"between the witness of the",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 23,
+        "endToken": 93,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-cosmic-uncertainty-and-waste",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-03",
+      "sectionId": "issue-cosmology-design",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Severe cosmological uncertainty, explanatory regress, failed cosmic structures, destruction, and eventual extinction count against inferring competent benevolent design from fine-tuning.",
+      "sourceSpan": {
+        "startEvent": 1045,
+        "endEvent": 1131
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker remains Hitchens, who announces the fine-tuning topic and carries a numbered sequence of objections through his closing conclusion.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "god and a designer and an originator of asking, \"Well, where does that come from, \"where does that come from,\" and locking yourself into an infinite regress? Why are there so many shooting stars, collapsed suns, failed galaxies we can see? We can see with the aid of a telescope, some we can see with the naked eye the utter failure, the total destruction of gigantic unimaginable sweeps of outer space. Is this fine tuning",
+        "characterCount": 423,
+        "tokenCount": 75,
+        "startToken": 286,
+        "endToken": 360,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-delayed-unequal-providence",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "sectionId": "issue-suffering-providence",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Humanity's long prehistoric suffering and Christianity's late, uneven, and conflicting transmission undermine claims of benevolent providential design and universal redemption.",
+      "sourceSpan": {
+        "startEvent": 1446,
+        "endEvent": 1514
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens announces the implications of design, expressly answers Craig's timing defense, and maintains the same objection through its concluding epistemic criticism.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "a slight parody of what I think about this. It could be true, but you'd have to imagine, let's say the human species has been, Homo sapiens has been with us, some people say as long as quarter of a million years, some say 200, some say 100,000. Francis Collins and Richard Dawkins oscillate about this. It's not a very big argument. I'll just take 100,000 if you like. You have to",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 19,
+        "endToken": 92,
+        "weightedOverlap": 4,
+        "matchedAnchorTokens": 1,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-secular-moral-capacity",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-10",
+      "sectionId": "issue-morality",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Human moral capacities arise from social solidarity and predate monotheism, while religious sanction contributes no uniquely moral action and can motivate distinctive harms.",
+      "sourceSpan": {
+        "startEvent": 1539,
+        "endEvent": 1623
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly opens the moral dimension, develops two public moral challenges, and concludes with a natural and social account of shared norms.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "these, and try and fulfill them, we couldn't have gotten as far as we have. We couldn't have evolved as a species; we couldn't have ever had a society. There's never been a society found where rape and murder and perjury are not condemned. These moral discoveries long, or absolutes, if you want to call them that, long predate the arrival of anything recognizable as monotheism",
+        "characterCount": 378,
+        "tokenCount": 66,
+        "startToken": 604,
+        "endToken": 669,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-miracles-do-not-authenticate-doctrine",
+      "qualifiedCandidateId": "chunk-003:c003-04",
+      "sectionId": "issue-resurrection-revelation",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Even if suspensions of natural law or miracles occur, miraculous performance alone does not establish the truth of the performer's doctrine or divine identity.",
+      "sourceSpan": {
+        "startEvent": 1904,
+        "endEvent": 1913
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens announces why he is pressing the issue and states the inference challenge directly before asking Craig to agree.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "reason I'm pressing you is this: Because, I mean, we know from Scripture that Pharoahs' magicians could produce miracles. In the end, Aaron could outproduce them, but what I'm suggesting to you is even if the laws of nature can be suspended and great miracles can be performed, it doesn't prove the truth of the doctrine of the person who's performing them. Would you not agree to",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 3,
+        "endToken": 69,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-human-origin-of-religion-and-ethics",
+      "qualifiedCandidateId": "chunk-003:c003-10",
+      "sectionId": "issue-morality",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Treating religions as human creations explains their plurality, while justice, love, duty, and other ethical problems remain human concerns that do not require celestial authority.",
+      "sourceSpan": {
+        "startEvent": 2283,
+        "endEvent": 2325
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens marks the passage as his concluding inference and maintains a continuous first-person argument until his closing exhortation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "send missionaries all around the world, that the same problems remain with us. That nothing is resolved by this. That we, if all religions died out or all were admitted to be false instead of, as all believers will tell you, only some of them are false, in other words, we're faced with the preposterous proposition that religion, either all of them true, or none of them true, or",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 110,
+        "endToken": 178,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-scriptural-injunctions-and-harm",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-03",
+      "sectionId": "issue-religion-record-meaning",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Religion's harmful record bears on its authority when scriptures specifically command atrocities, unlike scientific discoveries that can be misused without themselves constituting an ideology.",
+      "sourceSpan": {
+        "startEvent": 2561,
+        "endEvent": 2591
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The student directs the challenge to Hitchens, whose answer distinguishes physics from ideology and culminates in his explicit claim about scriptural injunctions.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Well physics isn't an ideology. Physics isn't a belief system. It's a science. >> Well that, I think that would be subjective. >> I mean you could, any more than Marie Curie discovering radium makes her practice morally different. I mean, it's not comparing like with like. What I'm talking about are specific religious injunctions to do evil. To mutilate the genitalia of children",
+        "characterCount": 381,
+        "tokenCount": 62,
+        "startToken": 0,
+        "endToken": 61,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 1,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-truth-not-social-consequences",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-04",
+      "sectionId": "issue-religion-record-meaning",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "A worldview's truth cannot be inferred from its beneficial or harmful social consequences, so the debate should turn on arguments for truth rather than comparative death tolls.",
+      "sourceSpan": {
+        "startEvent": 2598,
+        "endEvent": 2629
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Craig, and Craig identifies his philosophical concern with worldview truth before sustaining the same argument through the end of his turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "social impact, that's just irrelevant. Bertrand Russell, in his essay \"Why I'm Not a Christian\" understood this. Russell said you cannot assess the truth of a world view by seeing whether it's good for society or not. Now the irony was when Russell wrote that back in the '20s, he was trying to refute those who said that you should be believe in Christianity because it's so socially beneficial",
+        "characterCount": 395,
+        "tokenCount": 69,
+        "startToken": 55,
+        "endToken": 123,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-objective-meaning-fellowship",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-05",
+      "sectionId": "issue-religion-record-meaning",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "On atheism human existence can have subjective projects but no objective purpose, whereas fellowship with God provides humanity's true fulfillment and enduring meaning.",
+      "sourceSpan": {
+        "startEvent": 2696,
+        "endEvent": 2738
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator invites Craig to answer both meaning-of-life questions, and Craig gives a continuous account contrasting objective purpose with subjective illusion.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "fellowship eternally with God, the source of infinite goodness and love, that the true fulfillment of human existence and freedom is to be found. Now, when I say that, apart from theism, life is meaningless, I mean objectively meaningless. This is the same distinction that we're talking about with regard to moral values. I'm saying that on atheism, there is there is no objective purpose",
+        "characterCount": 389,
+        "tokenCount": 65,
+        "startToken": 82,
+        "endToken": 146,
+        "weightedOverlap": 42,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-secular-freedom-solidarity-meaning",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-06",
+      "sectionId": "issue-religion-record-meaning",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "Human freedom and solidarity can make mortal life meaningful without immortality, while purported religious authority can obstruct liberty in this world.",
+      "sourceSpan": {
+        "startEvent": 2739,
+        "endEvent": 2790
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens explicitly says Craig has the matter reversed and then presents a continuous alternative account of evidence, meaning, solidarity, and religious authority.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "meaningful? Generally speaking it's been struggling myself to be free and, if I can say it without immodesty, Mr. Hewitt kindly said it for me, too flatteringly beforehand, but trying to help others to be free too. That's what's given a lot of meaning to my life and does still. Solidarity with those who want to be as free as I am, partly by luck and partly by my own efforts and the efforts of others. Well one obstacle to liberty",
+        "characterCount": 432,
+        "tokenCount": 81,
+        "startToken": 200,
+        "endToken": 280,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-evil-sufficient-reasons-redemption",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-07",
+      "sectionId": "issue-suffering-providence",
+      "side": "pro",
+      "speaker": "William Lane Craig",
+      "moveKind": "reply",
+      "proposition": "Neither the logical nor probabilistic problem of evil defeats theism, and Christianity addresses suffering through God's sufficient reasons, Christ's suffering, and hope of eternal life.",
+      "sourceSpan": {
+        "startEvent": 2924,
+        "endEvent": 3030
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The student asks Craig about Epicurus and suffering, after which Craig gives an extended, uninterrupted philosophical and Christian response through his concluding sentence.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "show that it is logically impossible for God to have morally sufficient reasons for permitting the evil and suffering in the world and no atheist has ever been able to do that. So, that the logical version of this problem, I think, is widely recognized to have failed. Those atheists who still press the problem therefore press it as a probabilistic argument. They try to say that",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 224,
+        "endToken": 290,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-providential-absorption-of-horror",
+      "qualifiedCandidateId": "chunk-004:chunk-004-candidate-08",
+      "sectionId": "issue-suffering-providence",
+      "side": "con",
+      "speaker": "Christopher Hitchens",
+      "moveKind": "reply",
+      "proposition": "A theism that renders prolonged unanswered abuse worthwhile through later compensation can absorb any horror into divine purpose and make the abuser an instrument of providence.",
+      "sourceSpan": {
+        "startEvent": 3041,
+        "endEvent": 3075
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Hitchens identifies Craig's preceding reply as his subject and develops the Fritzl case continuously until the moderator moves to conclude the exchange.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "unanswered for 25 years and, um, Douglas Wilson's reply to me was, \"God will cancel all that \"and all those tears will be dried,\" and I said well if you're capable of believing that then obviously what that woman went through and what her children went through was perfectly worth while and her father was all that time, without knowing it, and apparently not particularly wishing it, an instrument of the divine",
+        "characterCount": 412,
+        "tokenCount": 72,
+        "startToken": 164,
+        "endToken": 235,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

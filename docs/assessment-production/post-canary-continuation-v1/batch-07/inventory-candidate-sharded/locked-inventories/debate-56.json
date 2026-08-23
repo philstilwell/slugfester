@@ -1,0 +1,703 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "56",
+  "debateId": "huemer-lutz-morality-real-2026",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "route-pro-moral-realism-and-appearance-justification",
+      "side": "pro",
+      "description": "Establish that objective evaluative facts are required to account for rational assessment and that moral appearances can provide defeasible justification without first earning support through best-explanation reasoning.",
+      "successCriteria": "The route succeeds if it supports objective moral facts against desire-based and projectivist alternatives, establishes a defensible appearance-based source of prima facie justification, and connects that epistemology to basic moral knowledge.",
+      "motionBridge": {
+        "bridgeId": "bridge-pro-motion-objective-facts-and-moral-knowledge",
+        "tier": "motion",
+        "description": "Connect the case for irreducible evaluative facts with a route from moral appearances to justified moral belief and knowledge."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-pro-central-objective-normativity",
+          "tier": "central",
+          "description": "Show that rationally assessing desires, actions, and suffering requires truth-valued evaluative standards rather than attitudes alone."
+        },
+        {
+          "bridgeId": "bridge-pro-central-appearance-principle",
+          "tier": "central",
+          "description": "Establish that appearances confer defeasible prima facie justification and are epistemically prior to explanatory inference."
+        },
+        {
+          "bridgeId": "bridge-pro-central-moral-application",
+          "tier": "central",
+          "description": "Show that understanding evaluative and experiential subject matter can justify elementary moral judgments as instances of a priori knowledge."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-pro-subsidiary-motivation",
+          "tier": "subsidiary",
+          "description": "Explain how evaluative judgments can shape desires, emotions, and conduct rather than merely projecting antecedent attitudes."
+        },
+        {
+          "bridgeId": "bridge-pro-subsidiary-analyticity-limit",
+          "tier": "subsidiary",
+          "description": "Identify necessary judgments that resist reduction to linguistic or conceptual analyticity and thereby support broader rationalism."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-error-theory-and-explanationism",
+      "side": "con",
+      "description": "Establish that normative reasons depend on an agent's desires and deliberative standpoint, while moral belief lacks justification because objective moral facts are unnecessary in the best explanation of moral experience.",
+      "successCriteria": "The route succeeds if it accounts for reasons and moralized conduct without objective value, defends an explanatory standard for evidence, and shows that moral facts neither ground categorical reasons nor contribute indispensable explanatory work.",
+      "motionBridge": {
+        "bridgeId": "bridge-con-motion-error-theory-and-moral-skepticism",
+        "tier": "motion",
+        "description": "Connect the denial of attitude-independent value with the claim that moral belief lacks the evidence required for moral knowledge."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "bridge-con-central-desire-based-reasons",
+          "tier": "central",
+          "description": "Ground normative reasons in desires, goals, values, or an agent's deliberative perspective rather than categorical demands."
+        },
+        {
+          "bridgeId": "bridge-con-central-explanationist-evidence",
+          "tier": "central",
+          "description": "Require justified belief to arise from causally informed explanatory support and show that moral facts are evidentially idle."
+        },
+        {
+          "bridgeId": "bridge-con-central-nonfoundational-cognition",
+          "tier": "central",
+          "description": "Explain the acquisition of concepts and causal models without presupposing contentful appearances accepted as initially true."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "bridge-con-subsidiary-projection-and-motivation",
+          "tier": "subsidiary",
+          "description": "Account for moral judgment and continued moralized conduct through projected values, emotions, and stable concerns."
+        },
+        {
+          "bridgeId": "bridge-con-subsidiary-empiricist-apriori",
+          "tier": "subsidiary",
+          "description": "Interpret mathematical and modal reflection through conceptual application, experiential relations, or a broadened account of analyticity."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-objective-value-and-error-theory",
+      "title": "Objective Value and the Error-Theoretic Burden",
+      "weightPercent": 20,
+      "rationale": "This issue frames the motion-level dispute over whether elementary moral judgments track attitude-independent facts or whether value is exhausted by human attitudes and practices."
+    },
+    {
+      "sectionId": "section-desires-reasons-and-rational-authority",
+      "title": "Desires, Reasons, and Rational Authority",
+      "weightPercent": 25,
+      "rationale": "The existence of categorical reasons is the principal metaphysical pathway between theories of agency and the existence or nonexistence of objective moral obligations."
+    },
+    {
+      "sectionId": "section-appearances-explanation-and-justification",
+      "title": "Appearances, Explanation, and Epistemic Foundations",
+      "weightPercent": 25,
+      "rationale": "This issue directly determines whether moral appearances may justify belief prima facie or whether evidence requires causal and best-explanation support that leaves moral facts idle."
+    },
+    {
+      "sectionId": "section-moral-belief-emotion-and-projection",
+      "title": "Moral Belief, Emotion, and Projection",
+      "weightPercent": 15,
+      "rationale": "The causal relationship among judgment, desire, emotion, and conduct bears on whether moral thought responds to facts or projects antecedent evaluative attitudes."
+    },
+    {
+      "sectionId": "section-apriori-knowledge-concepts-and-analyticity",
+      "title": "A Priori Knowledge, Concepts, and Analyticity",
+      "weightPercent": 15,
+      "rationale": "The scope of a priori justification tests whether reflection can disclose substantive truths about suffering and badness or only relations internal to concepts and their application."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "con-objective-values-denied",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "section-objective-value-and-error-theory",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "constructive",
+      "proposition": "Objective moral facts do not exist because valuing reflects human attitudes and practices rather than attitude-independent standards ratified by the universe.",
+      "sourceSpan": {
+        "startEvent": 24,
+        "endEvent": 61
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly hands the opening statement to Matt, who identifies himself and states the error-theory position in the first person.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "and that I value uh and many things that I I morally care about and morally value the the way that I I value them is a sort of in a moral sort of way um uh you know tied up with social practices of praise and blame and things like that. Um, the universe doesn't ratify my values in any sort of way. Um, there are no standards of correctness for me to be living up to in my valuing",
+        "characterCount": 380,
+        "tokenCount": 81,
+        "startToken": 153,
+        "endToken": 233,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-desire-based-reasons",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "sectionId": "section-desires-reasons-and-rational-authority",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "constructive",
+      "proposition": "Moral obligations would require desire-independent categorical reasons, but intelligible reasons arise from promoting desires, so such moral obligations do not exist.",
+      "sourceSpan": {
+        "startEvent": 99,
+        "endEvent": 195
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt presents this as his basic reason for rejecting moral facts during his uninterrupted opening statement, repeatedly using first-person formulations.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "which is sometimes called categorical normativity and categorical normativity is a reason giving force. is the existence of normative reasons that exist independently of what I or anyone else happens to desire. Uh and this is sort of an essential aspect of our concept of morality. Um if you have a moral obligation to do X, then you have a moral obligation to do X no matter what",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 59,
+        "endToken": 126,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-explanationist-moral-skepticism",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "section-appearances-explanation-and-justification",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "constructive",
+      "proposition": "Evidence supports belief when the belief's truth best explains experience, but moral truths do not best explain moral experience and therefore cannot ground moral knowledge.",
+      "sourceSpan": {
+        "startEvent": 196,
+        "endEvent": 270
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage remains within Matt's opening statement and expressly identifies his explanationist epistemology and its application to moral intuitions.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "that experience. Um and that's not just true of the case of my belief about the coffee cup. Uh this is quite generally true uh about just the fact of how epistemology works and how knowledge works. Uh our beliefs are supported by evidence when the truth of that belief is the best explanation of why I have the experiences that I have. Um, so therefore, uh, if I am to have moral",
+        "characterCount": 379,
+        "tokenCount": 73,
+        "startToken": 222,
+        "endToken": 294,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-objective-basic-moral-plausibility",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "section-objective-value-and-error-theory",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Error theory is less initially plausible than elementary moral judgments that suffering is bad and torturing people for fun is wrong.",
+      "sourceSpan": {
+        "startEvent": 277,
+        "endEvent": 371
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt explicitly hands the opening statement to Mike, and the new speaker directly discusses Matt's argument and identifies error theory as Matt's view.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "judgments, so judgments like suffering is bad, uh, torturing babies for fun is wrong. I think the plausibility of those judgments is higher than the initial plausibility of any premises that are used to support anti-realism. Okay. So, there's a premise that you can't have a reason for doing something that's not based on your desires. I think that is a lot less obvious initially",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 557,
+        "endToken": 622,
+        "weightedOverlap": 40,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-appearance-prima-facie-justification",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "sectionId": "section-appearances-explanation-and-justification",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Appearances confer defeasible prima facie justification, because denying all appearance-based justification would leave the denial itself unjustified.",
+      "sourceSpan": {
+        "startEvent": 372,
+        "endEvent": 410
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is part of Huemer's uninterrupted opening statement and is explicitly framed as his own view and his favored argument for it.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "self-defeating. So if you have a view where appearances do not provide justification even in the absence of defeaters then I think you'll have no justification for holding that view itself. And the reason for this is I claim that your views are based upon the way things seem to you. And so then you must be holding that your views are based on something that doesn't justify them. And so then your own beliefs are unjustified",
+        "characterCount": 426,
+        "tokenCount": 78,
+        "startToken": 142,
+        "endToken": 219,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-evaluative-assessment-of-desires",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "section-desires-reasons-and-rational-authority",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Desires alone cannot explain rational action because deciding which present, future, or imagined desires to follow requires evaluative assessment.",
+      "sourceSpan": {
+        "startEvent": 411,
+        "endEvent": 564
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Huemer explicitly labels the target as Matt's argument about reasons and develops counterexamples throughout the remainder of this continuous passage.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "show how the thing that could be used to explain why something um would be rational like it doesn't really it doesn't work in all cases. There are cases where you follow this constraint and it's rational. There are other cases where if you followed it it would be irrational. And what explains the difference is an evaluative judgment. It's not explained just in terms of desires",
+        "characterCount": 379,
+        "tokenCount": 67,
+        "startToken": 1019,
+        "endToken": 1085,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-humean-error-theory-inference",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "section-objective-value-and-error-theory",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "If moral facts entail desire-independent reasons and all reasons depend on desires, then there are no moral facts; evaluating the disputed premise requires comparing the rival worldviews.",
+      "sourceSpan": {
+        "startEvent": 633,
+        "endEvent": 734
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator asks Matt to recapitulate the Humean argument, after which Matt restates it and explicitly addresses Mike's objections by name.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "all reasons that exist are reasons that depend on your desires in some sort of way. Um, uh, you know, desires again very broadly construed to include values, goals, what have you. Um, and so the only reasons that exist are desired dependent reasons. If there are moral facts, then there are desire independent reasons. Therefore, there are no moral facts. Right? So, that's the basic human argument",
+        "characterCount": 398,
+        "tokenCount": 68,
+        "startToken": 199,
+        "endToken": 266,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-self-conception-normative-weight",
+      "qualifiedCandidateId": "chunk-001:c010",
+      "sectionId": "section-desires-reasons-and-rational-authority",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Overpowering desires do not refute a desire-based theory because normative weight tracks a desire's centrality to the agent's self-conception rather than its momentary motivational force.",
+      "sourceSpan": {
+        "startEvent": 735,
+        "endEvent": 888
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt explicitly introduces Huemer's partying-student objection and answers it continuously through the discussion of Odysseus completed in the locked lookahead.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "theory of reasons. It's to reject proportionalism. Right? It's to reject the idea that the normative weight of a reason is proportional to the motivational efficacy of a desire. Um so what should we say that it is uh related to instead uh if not the motivational strength of the desire? Well, I give a somewhat more contean answer here where I say it has to do with the uh um centrality to um the agent's conception",
+        "characterCount": 415,
+        "tokenCount": 77,
+        "startToken": 682,
+        "endToken": 758,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-self-conception-authority-objection",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "sectionId": "section-desires-reasons-and-rational-authority",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Centrality to self-conception does not by itself confer rational authority, since weakness of will and arbitrary higher-order desires can occur without a principled hierarchy.",
+      "sourceSpan": {
+        "startEvent": 927,
+        "endEvent": 1019
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted turn develops several first-person objections to the immediately preceding account of desire centrality.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "solve it because like why is the second order desire more authoritative like why why does that count as being more valuable or more rational or whatever because like what if you just have a spontaneous urge for no particular reason to change your desires so then it's a second order desire but it wouldn't have any more authority than a first order urge that has no basis Okay. Um",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 569,
+        "endToken": 638,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-moral-belief-shapes-motivation",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-06",
+      "sectionId": "section-moral-belief-emotion-and-projection",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Abandoning belief in objective moral facts would substantially alter many people's desires, emotions, charitable conduct, and interpretation of ordinary actions.",
+      "sourceSpan": {
+        "startEvent": 1360,
+        "endEvent": 1411
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker answers the opposing hypothetical in the first person and generalizes the behavioral consequences to many people.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "that and and the and the disloyal is partly moral like if if I don't connect that to value judgments or you know stuff about right and wrong good that it's not the same concept, right? And so like I think like trying to exercise um my moral beliefs I think that would radically change the way just the way that I see um actions in the world, you know, all the time. And then and I",
+        "characterCount": 380,
+        "tokenCount": 77,
+        "startToken": 292,
+        "endToken": 368,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-moral-projection",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-07",
+      "sectionId": "section-moral-belief-emotion-and-projection",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Moral belief projects antecedent values onto the world, so abandoning belief in objective morality would ordinarily leave the underlying attitudes and conduct intact.",
+      "sourceSpan": {
+        "startEvent": 1415,
+        "endEvent": 1505
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker expressly answers the predicted behavioral change and presents the standard error-theoretic projective explanation in his own voice.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Um we have certain kinds of values and when we have these values um our mind does this weird thing where it it spreads our desires on the world. um to paraphrase Hume, uh and in so doing causes us to believe that the world wants us to have the attitudes that we have. Um and that belief that the world wants us to have the attitudes that we have, that's a sort of moral belief. Um",
+        "characterCount": 380,
+        "tokenCount": 77,
+        "startToken": 101,
+        "endToken": 177,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-judgment-directs-emotion-conduct",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-08",
+      "sectionId": "section-moral-belief-emotion-and-projection",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Intellectual moral judgments can override stronger emotional attractions, while beliefs about justice can shape the emotions that motivate intervention.",
+      "sourceSpan": {
+        "startEvent": 1506,
+        "endEvent": 1570
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker announces two points and supports both with personal and interpersonal examples directed against the prior account.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "intellectual judgment. It's not emotional. And there could be like a charity that's more emotionally appealing to me. But I think no, I should give it to the one that's most cost-effective. And so that's that's what I do for that reason, right? And so like, you know, it's not it's not that I'm a content psychopath. Like no, like I I have emotions, but they don't necessarily match my judgments",
+        "characterCount": 395,
+        "tokenCount": 72,
+        "startToken": 81,
+        "endToken": 152,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-emotion-precedes-judgment",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "sectionId": "section-moral-belief-emotion-and-projection",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Emotions generally cause moral judgments, while apparently unemotional deliberation can still express stable cold passions connected to an agent's self-conception.",
+      "sourceSpan": {
+        "startEvent": 1571,
+        "endEvent": 1619
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker directly invokes an empirical model, his own experience, and a Humean distinction to answer the preceding examples.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "with regard to conduct that they happen to to accept. Um, and that's how it is for me. Um, and you know, you you you talk about uh you know, there there are judgments that you make that aren't particularly emotional. Um, I would just here hearken back to Hume with his distinction between the the hot and the cold passions, right? These are still passions that you have. There are",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 208,
+        "endToken": 278,
+        "weightedOverlap": 18,
+        "matchedAnchorTokens": 5,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-causal-perceptual-justification",
+      "qualifiedCandidateId": "chunk-003:c003-03",
+      "sectionId": "section-appearances-explanation-and-justification",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Experience supports belief through background causal understanding, not because experience possesses propositional content that directly confers prima facie justification.",
+      "sourceSpan": {
+        "startEvent": 1831,
+        "endEvent": 1929
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator directly addresses Matt, and the ensuing first-person account explicitly contrasts Mike's propositional-content view with a causal explanation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "general background kind of structuring causal belief which says that experiences like that are caused by coffee cups and so that's why the experience provides me with the justification. It's not because the content of the experience is a proposition and so the content of the experience then provides justification for that proposition. It's a different kind of story, a more causally",
+        "characterCount": 384,
+        "tokenCount": 62,
+        "startToken": 452,
+        "endToken": 513,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-appearances-prior-to-explanation",
+      "qualifiedCandidateId": "chunk-003:c003-04",
+      "sectionId": "section-appearances-explanation-and-justification",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Causal and best-explanation reasoning cannot begin unless agents initially accept that things are generally as they appear to be.",
+      "sourceSpan": {
+        "startEvent": 1930,
+        "endEvent": 2007
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker answers Lutz's causal account, defines experiential content, and develops Huemer's foundational regress objection to explanationism.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "well, I have to have appearances and I have to basically accept that things are the way they seem in some in some sort of general way. Otherwise, like how do I know that that's the best explanation, right? And and you know, okay, so like you can appeal to other background beliefs that I have, but then where did those come from? And then and it all comes down to well initially I",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 353,
+        "endToken": 426,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-mathematical-concept-application",
+      "qualifiedCandidateId": "chunk-003:c003-07",
+      "sectionId": "section-apriori-knowledge-concepts-and-analyticity",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "Mathematical reflection supplies experiential evidence about correct conceptual application and relations rather than justification through intellectual seemings whose content is a mathematical proposition.",
+      "sourceSpan": {
+        "startEvent": 2200,
+        "endEvent": 2249
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator's mathematical challenge is directed to Matt, and the answer expressly ties his earlier explanationist account to conceptual structure.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "mathematical reflection and that that does count as as evidence uh of a kind uh for us. Um I just don't think that that the way in which that operates is that um I have a an intellectual seeding with the propositional content that 2 plus 2 equals 4 rather um I think 2 plus 2= 4 like I I repeat that that thought in my head um and that gives me a certain yeah sensation um seems right right there's a there's a certain sort of feeling of confidence",
+        "characterCount": 448,
+        "tokenCount": 90,
+        "startToken": 92,
+        "endToken": 181,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-synthetic-apriori-color-incompatibility",
+      "qualifiedCandidateId": "chunk-003:c003-08",
+      "sectionId": "section-apriori-knowledge-concepts-and-analyticity",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "Necessary a priori truths such as the incompatibility of being wholly red and wholly blue appear synthetic because synonym substitution does not reduce them to logical truths.",
+      "sourceSpan": {
+        "startEvent": 2255,
+        "endEvent": 2289
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn follows Lutz's self-identification as an empiricist and presents Huemer's familiar synthetic-a-priori counterexamples as a direct challenge.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "like just examples that appear to be examples of synthetic opriori knowledge. Here's you know like a famous one. Okay. So nothing can be completely red and completely blue at the same time. And then and so it looks like you know this priori looks like it's necessary truth. Is it an analytic? Well, okay. So like here's an account of what analytic knowledge is or know you you use",
+        "characterCount": 380,
+        "tokenCount": 70,
+        "startToken": 15,
+        "endToken": 84,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-color-incompatibility-analytic",
+      "qualifiedCandidateId": "chunk-003:c003-09",
+      "sectionId": "section-apriori-knowledge-concepts-and-analyticity",
+      "side": "con",
+      "speaker": "Matt Lutz",
+      "moveKind": "reply",
+      "proposition": "The incompatibility of being wholly red and wholly blue is analytic in a broad sense because grasping the phenomenal concepts manifests understanding that their joint application is inconsistent.",
+      "sourceSpan": {
+        "startEvent": 2290,
+        "endEvent": 2341
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The answer explicitly rejects the Fregean account, broadens analyticity, and concludes just before the moderator moves the discussion into closings.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "inconsistent for something to be both red and blue all over. Um, and that is a manifestation of my understanding of the concepts of what it is for something to be red all over and what it is for something to be blue all over. uh and a certain sort of austere forgian conception of what an analytic truth is doesn't yield the result that that's an analytic truth. Um but that just shows that that austere forgian conception of analyticity",
+        "characterCount": 437,
+        "tokenCount": 81,
+        "startToken": 269,
+        "endToken": 349,
+        "weightedOverlap": 26,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-natures-ground-moral-apriori-knowledge",
+      "qualifiedCandidateId": "chunk-003:c003-10",
+      "sectionId": "section-apriori-knowledge-concepts-and-analyticity",
+      "side": "pro",
+      "speaker": "Michael Huemer",
+      "moveKind": "reply",
+      "proposition": "A priori knowledge concerns the natures of things rather than merely words or concepts, so understanding suffering and badness can justify the judgment that suffering is bad.",
+      "sourceSpan": {
+        "startEvent": 2383,
+        "endEvent": 2517
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This is Huemer's closing turn, explicitly contrasting his conclusion with Matt's and applying the resulting rationalist account to ethical intuition.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "the natures of these things you'll see that they're incompatible right and but that's that's the case with a priori knowledge in general it comes from understanding the nature of a certain abstract object um it's not from it's not just the meanings of words. It's not just concepts. It's the thing. Okay. So to me like this is this is the crucial difference like what the what the",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 303,
+        "endToken": 371,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}
