@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-inventory-preparation-recovery-1",
+  "status": "batch-07-inventory-preparation-preview-failure-diagnosed",
+  "diagnosedAt": "2026-08-23T02:52:34Z",
+  "failedStage": "candidate-sharded-inventory-preparation-preview",
+  "attempt": 1,
+  "failureCategory": "deterministic-missing-required-guide",
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-07-inventory.mjs freeze --frozen-at 2026-08-23T02:51:40Z",
+  "exitCode": 1,
+  "errorCode": "ENOENT",
+  "missingPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+  "rootCause": "The finalized Batch 6 preparation harness inherited by Batch 7 treats the batch-specific inventory guide as a preexisting authenticated input. Batch 7 had no guide because the guide was created during Batch 6 recovery rather than by the base preparer. The Batch 7 preview reached this read before any artifact write or model call.",
+  "evidence": {
+    "batch06Guide": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-06/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+      "sha256": "85b4e01157b0e0299a0ac482b692ddf9260dff7f91fd444665923491d247cb51"
+    },
+    "batch07DiscoveryAnalysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/discovery/analysis.json",
+      "sha256": "82a7f41d66b0f56a62f0d9055f0034539b80dace42e9c83fe4833104b1bced23",
+      "candidates": 322,
+      "belowHighAttributionCandidates": 3
+    },
+    "batch07GuideAbsentBeforePreview": true,
+    "futureInventoryArtifactsWritten": 0,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "boundedCorrection": {
+    "authorizedRecoveryLevel": 1,
+    "scope": "Create exactly the missing Batch 7 guide from the established contract with only the Batch 7 identity, selected debates, zero-token-row fact, and three-candidate audio-trigger count adapted from frozen evidence.",
+    "ordinaryRetry": false,
+    "protectedDiscoveryOutputsRemainByteIdentical": true,
+    "modelsAuthorized": false,
+    "paidServicesAuthorized": false
+  }
+}
