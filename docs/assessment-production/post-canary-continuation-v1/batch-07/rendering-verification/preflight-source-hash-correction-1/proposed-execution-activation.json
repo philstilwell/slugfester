@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-rendering-verification-activation",
+  "protocolId": "assessment-production-post-canary-batch-07-rendering-verification",
+  "status": "frozen-post-canary-batch-07-rendering-verification-authorized",
+  "authorizedAt": "2026-08-23T23:54:14Z",
+  "activationCommit": "8783080cfabb894d70723b33f6d179a163af2277",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "preparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/preparation-manifest.json",
+    "sha256": "2923ea2a6b3d637b398af34785080dc2df0ad7b1d9040afa5d4733100d9ecdab"
+  },
+  "executionNavigation": {
+    "algorithm": "sha256-utf8-canonical-json",
+    "input": {
+      "protocolId": "assessment-production-post-canary-batch-07-rendering-verification",
+      "authorizedAt": "2026-08-23T23:54:14Z",
+      "activationCommit": "8783080cfabb894d70723b33f6d179a163af2277",
+      "preparationSha256": "2923ea2a6b3d637b398af34785080dc2df0ad7b1d9040afa5d4733100d9ecdab"
+    },
+    "token": "f7e1e994de0d524f7ae6a3cfd9bb4c18827b6adb99b34e40ddbc9fc7f77f44f5",
+    "tokenPattern": "^[a-f0-9]{64}$",
+    "queryKeys": {
+      "token": "renderingExecution",
+      "viewport": "renderingViewport",
+      "phase": "renderingPhase",
+      "stage": "renderingStage"
+    },
+    "keyboardBootstrapMethod": "Page.navigate-once-per-fresh-keyboard-tab",
+    "keyboardMeasuredMethod": "Runtime.evaluate-location.assign-with-exact-url-readyState-poll",
+    "keyboardMeasuredDeadlineMilliseconds": 15000,
+    "adaptiveRegenerationPermitted": false
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/analysis.json": "8a3e30dc61f4959939e9fcd3f9b910396992a4595be276a5ef89347f7feff39a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/execution-activation.json": "52b44499d44429c9c07f242beaf8c9a89980649d31355bafbefbdc1bb5c5394b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/execution.json": "10b3ab3eec457d6b44b851114152764a98fafc86cf6e0222160bac75aa7fb3c9",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/finalization-audit.json": "8bb84beb8c0acbf8bc9dcf5be6f21e29702247646d03f965048fc428f09c691b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-02.json": "8f1841b84aae47035b5d18c2aad5c18e634c1aefa0c5a72062c814d025ad5c62",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-100.json": "8adc7445d1153c3336efa779cf6eb42f2711ee3b4f81d1ab0d410cc7a1f83c90",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-113.json": "2e4659e02500b079b4ef5581d1074b0fe0578709f9a35ac07774f8f9969b6592",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-121.json": "1e1182978a4f4b58cb33b7bcf11513bdd97f3a51b880d7816cb865aac9d88a82",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-180.json": "e90eccaee3d1aa1e0fe227662d1a8bee58243202195c20df4e428867b353c65a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-182.json": "f59513f2c31ef84c8b6300b6f3e14d9190561975edc45ddbe5491f1197aa164a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-193.json": "2b183931417cb795ccef8e0b21eb82d88fec8cadfba9818181ab86f94c577bd4",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-56.json": "89df2f7a0fce949a5dcb039b567fc9e4cc7090b327d924719c070c02fa445997",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-78.json": "bd3fafd80f66017351028a9ca5ead667b04f81f051647a51333166ee23a4f42a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/final-candidates/debate-80.json": "e9e1e2a12344f815a56ced5cc0252d882bf094d1b336ef89bbd7bc2266f50836",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/previews/index.html": "287171362fab086e9957356a9a19f020581df1330cb6fee74685024b19a309f7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-02.json": "8a5738d5b8d11002c601363b2aa1e7dedc5227bf582d14541e65e88f33d7f0ed",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-100.json": "f7a2acc2d633f89cb00cef34df00fcd69551b541d9894d5429c1bbb97d8cddad",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-113.json": "875217f6bed0d20d6cf0c8ffe9d4044821e982a64dbfbb5c88f69cc98a282347",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-121.json": "59265643dd783e497b93aaaf09b3824a827301d40a7ba9c7ec0c149b8f9fe38e",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-180.json": "e72631dd764afed78c47773220a0a12a817bc468992c442eb3f0428b3ff32778",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-182.json": "5991b61870b733bb5a6918d12ba5b027d415fcdf93aad69529b9fa31eabd6ac1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-193.json": "3d93c13c342e9481e4d637344c509da0cd694ed0106b156e111bae1d90bc853d",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-56.json": "05dcec1e38ebe01a2ca595c7031053e09c22d5ec067d5019402a72383f117ab1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-78.json": "8676de7356401564a84c15540d39fed69d3de9e06b71ed60fc341dbdb69a32ea",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/provenance/debate-80.json": "eddc828712208da2bb73a1c9e39d6633e00fb561ab92e664899839765957cd4f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/preparation-manifest.json": "56f75656087db595e88638ba84942a269a5ad996d6fae44efaa3d531175dffec",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/standing-authorization.json": "94204c49b4f7f05a9c8928f3c91122e3725670b7481dab96d1922548d223b7b2",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/analysis.json": "674d1b2deb19cf19bed0b345f9ef9167615d3933aeedca4983591a2445da1c6f",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/rendering-audit.json": "c9a72c7d647ac89c9891ce2c3f5ee3ebf5dd65b6773af06f986b851e67ee3b4b",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/synthetic/fresh-keyboard-navigation-contract.json": "f0d7847ee8006e43c01095b274e2a3e0b6e4e4094419fad29980cd7f7ba646c3",
+    "docs/assessment-production/production-checkpoint-v2.2-1/rendering-verification-remedy-v9/synthetic/preflight-result.json": "eca883c59f697628b1f62711545f2daff35d82797bb33f613d7c2e748cf46051",
+    "scripts/activate-assessment-production-post-canary-batch-07-rendering-verification.mjs": "3a0c2c755a5ef163b37703ccd99ec1bf34e703cda065e78d783c0a9fba55ae6e",
+    "scripts/finalize-assessment-production-post-canary-batch-07-rendering-verification.mjs": "fdbcbc4a53ccfb12545c381c6d345625035deaab2b90ba51481cabd3cb8de147",
+    "scripts/lib/assessment-production-checkpoint-v2.2-rendering-browser-runner-v6.mjs": "719ddd8e8884cd5ac3cab7be27150f56089e5b17a369a29b7daa0ba62b7876ff",
+    "scripts/lib/assessment-production-checkpoint-v2.2-rendering-navigation-fresh-tab-v9.mjs": "d526dcd172444c8b53c9e8b9cd0a13542bf298985c0d13cef3251e0ffec96a9e",
+    "scripts/lib/assessment-production-checkpoint-v2.2-rendering-verification-remedy-v6.mjs": "3617ec81103d86d18212930b07acf366be938257d5301cd18d44eb7306f19442",
+    "scripts/lib/assessment-production-checkpoint-v2.2-rendering-verification-remedy-v9.mjs": "d3298470828c483c365aee962c77e9261a318ab7da1d63f849e4ee2c147aa369",
+    "scripts/lib/assessment-production-post-canary-batch-07-publication-finalization.mjs": "fb9643526dbc46411aaf58aa23e97403ef6654fe2ec95325950b13118b7f0cce",
+    "scripts/lib/assessment-production-post-canary-batch-07-rendering-browser-runner.mjs": "8299dae84a6cd1f1391e457c75936fc46d89ffe303e8a690a87985a719d9d968",
+    "scripts/lib/assessment-production-post-canary-batch-07-rendering-verification.mjs": "f180cfe6c224a776a979348004c804abf3d015df513391254bfe45d2dea4307f",
+    "scripts/lib/assessment-production-post-canary-batch-07-standing-authorization.mjs": "e70477bebebc50fe0731a477ec7231c09a77db84874cfff2c6dd041a2575ac53",
+    "scripts/lib/v4-lean-production.mjs": "cf8cfba32a3fc2b867a0a8f31fb24778a14adadf81cbbaecd64d5a0750f4c7fd",
+    "scripts/prepare-assessment-production-post-canary-batch-07-rendering-verification.mjs": "8ebdbab50c6c436f2f2c39002573aebedb1114e446b3e70aeb90578e41432160",
+    "scripts/test-assessment-production-post-canary-batch-07-rendering-verification-preparation.mjs": "2f0ff075f6a1fa7e420cb920a63b39436c00778d6ac1a86d9250b751c338fb86",
+    "scripts/validate-assessment-production-post-canary-batch-07-rendering-evidence.mjs": "79a4fa32355502b83ad94adc53b7dc904329f9543b8fef49c1d14a490b5eb16f",
+    "src/app.js": "69a73bc72a978e69a314f5bb59d5450246028a819bea313d1783719bdb9905fd",
+    "src/styles.css": "a3e07d76fe4ac22fb2744dae17879175cfb46e1934ed726a52c2ac6c149f7d32",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/rendering-preview/index.html": "cd8c88db80b781c86302aef617bc47870b8273b1b5642b95ead7c0c9c09086a0",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/compatibility-analysis.json": "aa410f438737317a0644f397024d3a3fd4540819450e55131b6e83b37c015e29",
+    "src/data/debates.js": "bdc4abd99640ee3a1935e8ccf7130f2b66e817297102a065ded69c1403a15d3e"
+  },
+  "toolHashes": {
+    "/opt/homebrew/bin/magick": "3d794ccdf588ebd32a0a48a33b56cd753616341947e52907b5f31c61f47beb78"
+  },
+  "packetHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-193.json": "8a15bd7df81de187921fc5ea8482d3b2fe80331dfde7abc2e315c41fe8c73fdb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-80.json": "336824bcf79985ac9e4ff02b80be5ffe21c0e1d0408f63af8b721f27b144eff3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-121.json": "e315d1343b482d253e9914856147e290feb7d2889de9aa6b7d6aaf965c915ec6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-100.json": "25c465d48c039e50088f81f9d751d1f15a52735cd35253608e7d883f2c409ab6",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-78.json": "78b8c20b22ef7e92f39c34e8ac6420a1010ca5f9980ecc0c60cc793e282aeabe",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-113.json": "3f80697ef4aaaaebc10c65c7d5375e6bc53d73c26d94731509fcba920c7e338b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-180.json": "bb67ea1638f56d2f7e22759cfc6d15c2248c6ba4b3e07d5bcfa977cedb8c2640",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-02.json": "2e8ef04bea85d31b688dcedbf54915b9ca73361e77a329a2ec1b5a546d0f7f45",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-182.json": "1319e3c92d70410595cee172b71010b4c71f960203e84eee951fd614c7f4f8d5",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/packets/debate-56.json": "6ace09b6f5a4090ca143cbbd56b3dd6027d313f32c49ea00362228ec6927ed0a"
+  },
+  "browserPlan": {
+    "controller": "split-Chromium-fresh-keyboard-location-assign-transport",
+    "pointerSurface": "Codex In-app Chromium browser",
+    "keyboardSurface": "Google Chrome via ChatGPT browser extension",
+    "port": 4203,
+    "explicitViewportOrder": [
+      "desktop",
+      "mobile"
+    ],
+    "oneAttemptPerViewport": true,
+    "retriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "timeoutMsPerViewport": 15000
+  },
+  "viewports": {
+    "desktop": {
+      "targetCssViewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "pointerControllerInput": {
+        "width": 1440,
+        "height": 1000
+      },
+      "keyboardControllerInput": {
+        "width": 1152,
+        "height": 800
+      },
+      "expectedDevicePixelRatio": 2,
+      "expectedScreenshotPixels": {
+        "width": 2880,
+        "height": 2000
+      }
+    },
+    "mobile": {
+      "targetCssViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pointerControllerInput": {
+        "width": 390,
+        "height": 844
+      },
+      "keyboardControllerInput": {
+        "width": 312,
+        "height": 675
+      },
+      "expectedDevicePixelRatio": 2,
+      "expectedScreenshotPixels": {
+        "width": 780,
+        "height": 1688
+      }
+    }
+  },
+  "explicitOrder": [
+    "193",
+    "80",
+    "121",
+    "100",
+    "78",
+    "113",
+    "180",
+    "02",
+    "182",
+    "56"
+  ],
+  "requiredBooleanChecks": [
+    "publicationStagingRoute",
+    "noindex",
+    "stagingBanner",
+    "exactByline",
+    "overallImmediatelyPrecedesAiExtension",
+    "aiExtensionHeading",
+    "nativeDetails",
+    "pointerFreshDetailsClosed",
+    "pointerFreshOpenAttributeAbsent",
+    "pointerFreshContentNotHitTestVisible",
+    "pointerOpen",
+    "pointerOpenAttributePresent",
+    "pointerContentHitTestVisible",
+    "keyboardFreshDetailsClosed",
+    "keyboardFreshOpenAttributeAbsent",
+    "keyboardFreshContentNotHitTestVisible",
+    "keyboardEnterOpen",
+    "keyboardEnterOpenAttributePresent",
+    "keyboardContentHitTestVisibleAfterEnter",
+    "keyboardSpaceClosed",
+    "keyboardSpaceOpenAttributeAbsent",
+    "keyboardContentNotHitTestVisibleAfterSpace",
+    "aiDisclosureVisibleWhenOpen",
+    "twoStrengthenedFinalArguments",
+    "newArgumentsForBothSides",
+    "distinctFromOverallCommentary",
+    "prohibitedUnassailableAbsent",
+    "pointerActualViewportMatchesRequested",
+    "openActualViewportMatchesRequested",
+    "keyboardActualViewportMatchesRequested",
+    "horizontalOverflowAbsent",
+    "collapsedScreenshotJpeg",
+    "openScreenshotJpeg",
+    "collapsedScreenshotNonblank",
+    "openScreenshotNonblank",
+    "collapsedScreenshotDimensionsMatch",
+    "openScreenshotDimensionsMatch",
+    "collapsedOpenScreenshotsDiffer"
+  ],
+  "gateExpectations": {
+    "debates": 10,
+    "sections": 51,
+    "moves": 187,
+    "viewportResults": 20,
+    "screenshots": 40,
+    "requiredBooleanChecks": 760,
+    "runtimeFailures": 0,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failurePolicy": {
+    "stopOnFirstViewportFailure": true,
+    "preserveOnlyPassingEvidence": true,
+    "repairNotAutomatic": true,
+    "retry": false,
+    "timeoutExtension": false
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription",
+    "contextsPlannedThisStage": 0
+  },
+  "artifacts": {
+    "preparation": "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/preparation-manifest.json",
+    "activation": "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/execution-activation.json",
+    "execution": "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/execution.json",
+    "analysis": "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/analysis.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/rendering-audit.json",
+    "evidenceRoot": "docs/assessment-production/post-canary-continuation-v1/batch-07/rendering-verification/evidence",
+    "preview": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/output-bundle/rendering-preview/index.html",
+    "compatibilityBoundary": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-finalization/compatibility-analysis.json"
+  },
+  "authorization": {
+    "renderingVerification": true,
+    "oneAttemptPerViewport": true,
+    "retry": false,
+    "timeoutExtension": false,
+    "adaptiveTransportChange": false,
+    "modelExecution": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "execute-frozen-batch-07-rendering-verification"
+}
