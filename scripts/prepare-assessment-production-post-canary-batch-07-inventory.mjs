@@ -407,7 +407,7 @@ async function buildFrozenArtifacts(frozenAt) {
   );
   assertV4(
     selection.status ===
-      "sixth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed" &&
+      "seventh-post-canary-ten-debate-batch-selection-frozen-source-gate-passed" &&
       JSON.stringify(selection.selected.map((item) => item.debateNumber)) ===
         JSON.stringify(SELECTED_DEBATES) &&
       selection.authorization?.inventoryModelExecution === false &&
