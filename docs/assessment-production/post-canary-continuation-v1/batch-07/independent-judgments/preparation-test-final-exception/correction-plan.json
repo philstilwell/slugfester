@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0-assessment-production-user-authorized-final-test-exception-plan",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-test-final-exception",
+  "status": "batch-07-independent-judgment-preparation-test-pending-audio-correction-frozen-not-executed",
+  "frozenAt": "2026-08-23T18:44:00Z",
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-test-final-exception/authorization.txt",
+    "sha256": "c033ea36573f491047bb19a60f1f8abfe9e7bebed46d0129989ba78634db8d84",
+    "scope": "replace-only-stale-pending-audio-expectation-two-with-zero",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-final-exception/post-freeze-failure-diagnosis.json",
+    "sha256": "af55278f13f11fa11c55b893b17457bc567598f9d8596cee88c02e41b6af0a74",
+    "status": "batch-07-independent-judgment-preparation-test-stale-pending-audio-count-diagnosed-no-correction-authorized"
+  },
+  "correction": {
+    "target": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs",
+    "preimageSha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6",
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-test-final-exception/proposed-test.mjs",
+    "sourceSha256": "20a46ed558d6924ab4f4e486027be1c47e394cd5a3524cb35d2ac00eec7e74cc",
+    "writeMode": "byte-for-byte-copy",
+    "changedLines": 1,
+    "oldExpectation": 2,
+    "newExpectation": 0
+  },
+  "frozenEvidence": {
+    "preparationManifestPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-manifest.json",
+    "preparationManifestSha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce",
+    "pendingAttributionVerificationMoves": 0,
+    "frozenPackets": 20,
+    "frozenSchemas": 20
+  },
+  "executionPolicy": {
+    "correctedTestAttempts": 1,
+    "ordinaryRetries": 0,
+    "furtherPreparationCorrectionsAuthorized": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "preserved": {
+    "frozenPackets": true,
+    "schemas": true,
+    "inventories": true,
+    "sources": true,
+    "scores": true,
+    "modelSettings": true,
+    "priorEvidence": true
+  },
+  "nextAction": "commit-and-push-the-frozen-test-exception-before-activation"
+}
