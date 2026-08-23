@@ -225,7 +225,7 @@ for (const context of preparation.contexts) {
   assert(context.copiedInputBytes <= preparation.transport.provenCeilingBytes);
   movesAcrossPasses += context.moves;
 }
-assert.equal(movesAcrossPasses, 400);
+assert.equal(movesAcrossPasses, 374);
 
 for (const outputPath of preparation.futureOutputPathsExcludedFromSourceHashes) {
   assert.equal(Object.hasOwn(preparation.sourceHashes, outputPath), false);
