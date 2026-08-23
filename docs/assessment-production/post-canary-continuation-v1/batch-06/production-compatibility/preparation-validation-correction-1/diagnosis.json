@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-compatibility-preparation-validation-diagnosis",
+  "status": "frozen-batch-06-compatibility-rendering-audit-row-field-mismatch-diagnosed",
+  "diagnosedAt": "2026-08-23T00:53:27Z",
+  "failedCommand": "node scripts/prepare-assessment-production-post-canary-batch-06-compatibility.mjs --write --frozen-at 2026-08-23T00:53:27Z",
+  "failure": {
+    "category": "deterministic-preparation-harness-rendering-audit-field-name-mismatch",
+    "message": "Cannot read properties of undefined (reading 'map')",
+    "sourcePath": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/rendering-audit.json",
+    "sourceSha256": "584d2d8c4b1e83bbfaacad8ddb15c97745959153eb8873d8ebd31f8985b9e1f8",
+    "expectedField": "rows",
+    "frozenActualField": "results",
+    "frozenActualRows": 20
+  },
+  "finding": "The Batch 6 rendering evidence is complete and ordered, but its audit records viewport results in the results array. The copied Batch 5 compatibility harness reads the former rows field.",
+  "correctionScope": {
+    "file": "scripts/prepare-assessment-production-post-canary-batch-06-compatibility.mjs",
+    "preCorrectionSha256": "f8c17f72d67e98779d560897e65e873d1a6b5792777ee790679e3cca7480825e",
+    "change": "Read renderingAudit.results, reduce its desktop/mobile pairs to one debate number per pair, and compare that order with the frozen Batch 6 compatibility order.",
+    "sourceEvidenceChanged": false,
+    "packetsWrittenBeforeFailure": 0
+  },
+  "attempts": 1,
+  "retries": 0,
+  "modelContexts": 0,
+  "paidServiceCalls": 0,
+  "directIncrementalCostUsd": 0,
+  "nextAuthorizedAction": "prepare-and-execute-one-bounded-batch-06-compatibility-preparation-correction-1"
+}
