@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0-assessment-production-stop-rule-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-execution-preparation",
+  "status": "batch-07-independent-judgment-execution-preparation-stale-move-totals-diagnosed-no-correction-authorized",
+  "diagnosedAt": "2026-08-23T19:30:00Z",
+  "failureCategory": "deterministic-execution-manifest-preparation-validation",
+  "cause": "The Batch 7 execution-manifest preregistration harness retained Batch 6's preparation totals of 200 unique moves and 400 two-pass judgments. The unchanged frozen Batch 7 preparation manifest contains 187 unique moves and exactly 374 two-pass judgments.",
+  "evidence": {
+    "preregistrationHarness": {
+      "path": "scripts/preregister-assessment-production-post-canary-batch-07-independent-judgments.mjs",
+      "sha256": "eb5f8ce1f198631d1f1a56ef1ee9651dc73765c291f55607eabfde7700b07f3c",
+      "staleUniqueMovesExpectation": 200,
+      "staleTwoPassCoverageExpectation": 400
+    },
+    "preparationManifest": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-manifest.json",
+      "sha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce",
+      "frozenUniqueMoves": 187,
+      "frozenTwoPassCoverage": 374
+    }
+  },
+  "preserved": {
+    "executionManifestWritten": false,
+    "preparationManifestChanged": false,
+    "frozenPacketsChanged": false,
+    "schemasChanged": false,
+    "inventoriesChanged": false,
+    "sourcesChanged": false,
+    "scoresChanged": false,
+    "modelSettingsChanged": false,
+    "modelContextsExecuted": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "stopRule": "Stop on any further preparation-validation failure.",
+  "authorizationDisposition": "stopped-before-preregistration-correction-manifest-write-activation-or-model-execution"
+}
