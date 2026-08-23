@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3834,
+  "ledgerBytes": 225013,
+  "ledgerSha256": "a33208832a3e88c7b32341829b272f97c178f88a2852fd0dc2bdc3cc23455d0d",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51437,
+      "contextSha256": "77c4bf6a84d2c229cc60588c3f702bb4e6cc71db9b75365333d1427f198a7e9f"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52785,
+      "contextSha256": "d19dd057f166698152b57c1ef9a36fe13107c3233d1e59f7005c51fb9ebed4dd"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 52977,
+      "contextSha256": "b80bf37da4581b2c992ab7f935785107454568c0ce8c0c632188596cd2f64fc7"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53603,
+      "contextSha256": "5a5e430a8211e14e6cbb1ce8303a74e734751fec2be8de946a4fd6bb0ae20f59"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3833,
+      "coreEvents": 514,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3833,
+      "contextEvents": 554,
+      "contextBytes": 33060,
+      "contextSha256": "6b7e771fe02531a0be3beeda5ea2359550452ca23b10adec1db5fe30af25811a"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3833,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "182",
+  "debateId": "white-ally-sin-salvation-quran-bible-2013",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

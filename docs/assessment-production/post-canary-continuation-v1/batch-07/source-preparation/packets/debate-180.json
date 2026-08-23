@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-source-preparation",
+  "debateNumber": "180",
+  "debateId": "ally-licona-did-jesus-rise-dead-2004",
+  "motion": "Does the historical evidence establish that Jesus physically rose from the dead?",
+  "sides": {
+    "pro": {
+      "label": "Jesus bodily rose from the dead",
+      "speakers": [
+        "Michael Licona"
+      ]
+    },
+    "con": {
+      "label": "Bodily resurrection is not established",
+      "speakers": [
+        "Shabir Ally"
+      ]
+    }
+  },
+  "durationSeconds": 9359,
+  "eventCount": 1526,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/eoiScvG3Emo/transcript.txt",
+    "transcriptSha256": "c77cda9d022e7801ee5be774178c006f323a398c0049b9de1b4de84b5fe8e5c2",
+    "eventsPath": ".assessment-cache/captions/eoiScvG3Emo/events.json",
+    "eventsSha256": "374d6541171ca7fb3127b731d895ed03b5158e4520ff8a8db615237917d1febe",
+    "localManifestPath": ".assessment-cache/captions/eoiScvG3Emo/manifest.json",
+    "localManifestSha256": "11b729c1d5ec9ddc0326cb138e1a4b6f9a7628a3f66734ababfedf75c1c0ea88"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-07/debate-180.jsonl",
+    "sourceLedgerSha256": "fe12947cdb507ebce35e534f556eecac8a550502f29e38afff0bd9ef10ece693",
+    "sourceLedgerBytes": 178351,
+    "sourceLedgerEventCount": 1526,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/source-preparation/plans/debate-180.json",
+    "partitionPlanSha256": "3eee64ead9b4f3467558ea5caa800128c1da25a9777b2efe7af9b26c823d8ffc",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

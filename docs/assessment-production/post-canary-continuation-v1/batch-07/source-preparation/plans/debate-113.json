@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1714,
+  "ledgerBytes": 100996,
+  "ledgerSha256": "074564222a0613a22b2ba18d93a3b452dbcb04cdca4ff1b33f928f9d9ad4f6f9",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 52509,
+      "contextSha256": "ccfd303a13c223d5afa48c47d11c82727cb0a491173e32a560ff3b6e9fd9adff"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1713,
+      "coreEvents": 854,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1713,
+      "contextEvents": 894,
+      "contextBytes": 53203,
+      "contextSha256": "0fb4c7ee4b250bc20f8214b5cc8471d72e11e0dc5d067f15e5029168cfe48c76"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1713,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "113",
+  "debateId": "dirckx-woodford-god-suffering-2024",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

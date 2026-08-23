@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3725,
+  "ledgerBytes": 219770,
+  "ledgerSha256": "756c8aad5cbb6abd1fb7bcf1944fc621a2e7c342ea5a58b7e2718506b152c354",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51879,
+      "contextSha256": "b3917ec50e569e82b517a3818f00750c849645ab42786ae090a85bea2485e711"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53236,
+      "contextSha256": "e08da479c166d205d8bf14d24062aba56dad1076f1a762e9e30a2b26dad4da47"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53507,
+      "contextSha256": "b875ad7e70c2fc9c072b9d8c3621149995a3465038687aee7871d0e4fef96ae8"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 53608,
+      "contextSha256": "af11a7a2d07aeda3dadd286776f6e0f5c5071ce65b69ef67df908d1c0c439c9f"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3724,
+      "coreEvents": 405,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3724,
+      "contextEvents": 445,
+      "contextBytes": 26466,
+      "contextSha256": "be218f3278dbd604202beb9ec79a12b72d8c5176f75c267f8219876844aa4f68"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3724,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "100",
+  "debateId": "jones-dillahunty-emergent-mind-god-2020",
+  "sourceComplexityBand": "partition-heavy",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

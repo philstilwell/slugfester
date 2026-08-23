@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 2531,
+  "ledgerBytes": 146492,
+  "ledgerSha256": "3b970d68c55f045b8cf20fa1712f293faa84e9b3cb40acc12206da4df3b9c1bc",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51865,
+      "contextSha256": "4b5bc9e37d505230d339b79eac18d18a54bc3da48d431d308d9ad70fa3fd6805"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 52149,
+      "contextSha256": "6d141c1fbdace58734ece61de93607a6d6bb81d4e282053bf21756ed96b70a4f"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2530,
+      "coreEvents": 851,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2530,
+      "contextEvents": 891,
+      "contextBytes": 51740,
+      "contextSha256": "5dea485d5092f016155655d27173abfc3ad83794300217690de16e5060423660"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 2530,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "56",
+  "debateId": "huemer-lutz-morality-real-2026",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

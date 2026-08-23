@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-source-preparation",
+  "debateNumber": "80",
+  "debateId": "rasmussen-schmid-argument-from-limits-2023",
+  "motion": "Does the argument from arbitrary limits successfully move from a fundamental reality or necessary foundation toward God-like perfection?",
+  "sides": {
+    "pro": {
+      "label": "Limits argument",
+      "speakers": [
+        "Josh Rasmussen"
+      ]
+    },
+    "con": {
+      "label": "Agnostic theory comparison",
+      "speakers": [
+        "Joe Schmid"
+      ]
+    }
+  },
+  "durationSeconds": 7071,
+  "eventCount": 3374,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/Lt1wN10yOY4/transcript.txt",
+    "transcriptSha256": "2271ce3f673275dc7588c8beb9cc2b757f336a2c4e68b0fcc4c8a027da3da0d5",
+    "eventsPath": ".assessment-cache/captions/Lt1wN10yOY4/events.json",
+    "eventsSha256": "25ab497679c3650a75fe6c15fd124572f82284e1b7259ef7a09c94b42700f9fb",
+    "localManifestPath": ".assessment-cache/captions/Lt1wN10yOY4/manifest.json",
+    "localManifestSha256": "7576437b988159fd06dc978645aee1aacdd7cdf23a0b8dd1c9b2479f2ce5fa72"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-07/debate-80.jsonl",
+    "sourceLedgerSha256": "1ccf8e92c2ea37225aa6f474a3329605913947c58a444abf380130288bc9abde",
+    "sourceLedgerBytes": 197132,
+    "sourceLedgerEventCount": 3374,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/source-preparation/plans/debate-80.json",
+    "partitionPlanSha256": "0530410fe14f0490c57820425d0b622b78db3ea2f9cad4a0844d0c5e3a975d6b",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

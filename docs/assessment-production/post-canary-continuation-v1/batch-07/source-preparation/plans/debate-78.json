@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1357,
+  "ledgerBytes": 74602,
+  "ledgerSha256": "298a38105ce51b1ed6906e5db32a292b2cc08d7110bb4d08e11d355d4704ab80",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 49165,
+      "contextSha256": "d25ad2fddbdcbaa2c0416e03d534b6959e055227fa48a3e1363fec47cc2846f2"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1356,
+      "coreEvents": 497,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1356,
+      "contextEvents": 537,
+      "contextBytes": 29717,
+      "contextSha256": "0d0b2df04730485ecc0ff76686282152da92dcb3bf5300bed7e987a1cbbf0a9e"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1356,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "78",
+  "debateId": "albrecht-oppy-resurrection-ancient-christianity-2023",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

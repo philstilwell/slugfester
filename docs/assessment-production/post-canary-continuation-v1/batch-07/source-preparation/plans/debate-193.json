@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1133,
+  "ledgerBytes": 132392,
+  "ledgerSha256": "cf38eb2c35b67ef90783b44c272551458efc00773f597ca1560200ee3bbbfa94",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 559,
+      "coreEvents": 560,
+      "contextStartEvent": 0,
+      "contextEndEvent": 599,
+      "contextEvents": 600,
+      "contextBytes": 69985,
+      "contextSha256": "94416033a8f1ce3278db061c8116a1f87cb6f65800010a1b1f629c809b8a63db"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 560,
+      "coreEndEvent": 1074,
+      "coreEvents": 515,
+      "contextStartEvent": 520,
+      "contextEndEvent": 1114,
+      "contextEvents": 595,
+      "contextBytes": 69932,
+      "contextSha256": "c42384713eae7d9983bdb00d7218fb021a189612b633c3d17d5172761ded630e"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1075,
+      "coreEndEvent": 1132,
+      "coreEvents": 58,
+      "contextStartEvent": 1035,
+      "contextEndEvent": 1132,
+      "contextEvents": 98,
+      "contextBytes": 11219,
+      "contextSha256": "afef8dc2754a800d74661bb4be7d80a504234c340cccc3f239dd7c733984a960"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1132,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "193",
+  "debateId": "crossan-licona-historical-jesus-2018",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

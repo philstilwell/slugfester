@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3197,
+  "ledgerBytes": 202757,
+  "ledgerSha256": "392c71dad4c41d3fa45f79881b652bbae1c669738c65c9f1d5a145faec1339e7",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 56347,
+      "contextSha256": "9b577d6f760091f9c108c3ab1a851a3595c87cc906505f90700bff923fd71ba8"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 57562,
+      "contextSha256": "083e941714001a6ac40a9fdfed4a9a2e1e18fb10c5a78c952e30e417d8601e05"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 57550,
+      "contextSha256": "012b338264a7cd1ae5d12a40bf659308dfe96a8ddac9732c84855ea97bf0ad0b"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3196,
+      "coreEvents": 697,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3196,
+      "contextEvents": 737,
+      "contextBytes": 46435,
+      "contextSha256": "dcb239e8f9a49f884706e85b86a1b0725fbd892bd63b29ddd019ac2659ebeb5d"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3196,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "02",
+  "debateId": "craig-hitchens-god-existence-2009",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

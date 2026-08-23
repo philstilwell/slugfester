@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1526,
+  "ledgerBytes": 178351,
+  "ledgerSha256": "fe12947cdb507ebce35e534f556eecac8a550502f29e38afff0bd9ef10ece693",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 567,
+      "coreEvents": 568,
+      "contextStartEvent": 0,
+      "contextEndEvent": 607,
+      "contextEvents": 608,
+      "contextBytes": 69953,
+      "contextSha256": "18d47ea8f196a43b1ee4a5a232dd6dc366dd0f405b7abc552991c5f7ddcb5fc5"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 568,
+      "coreEndEvent": 1081,
+      "coreEvents": 514,
+      "contextStartEvent": 528,
+      "contextEndEvent": 1121,
+      "contextEvents": 594,
+      "contextBytes": 69996,
+      "contextSha256": "96cc467e2fc5d3d3475da98f1b8df3b0a3c69c070118b7ae43c6858a96c9f97f"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1082,
+      "coreEndEvent": 1525,
+      "coreEvents": 444,
+      "contextStartEvent": 1042,
+      "contextEndEvent": 1525,
+      "contextEvents": 484,
+      "contextBytes": 57248,
+      "contextSha256": "511cb0b0de1926021e1edd7c2480eb810ed075cc3156491054b8721aa0b6aff4"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1525,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "180",
+  "debateId": "ally-licona-did-jesus-rise-dead-2004",
+  "sourceComplexityBand": "direct-sized",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

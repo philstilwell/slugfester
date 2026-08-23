@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 1942,
+  "ledgerBytes": 110205,
+  "ledgerSha256": "fdf94b99c651dd977d546caf3bbbedc61f724516988773c20a6509df6e4395c6",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 50579,
+      "contextSha256": "cf3b6467e274a48d582e6d05e5f39ca4ffb4bb7d6663cc2d0cbca8b1339d4a83"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 51206,
+      "contextSha256": "3feec78ee1f38f6d815b5b2c62262dc7ac3a3bb3303cbcd8e6a791a988c88ce5"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 1941,
+      "coreEvents": 262,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 1941,
+      "contextEvents": 302,
+      "contextBytes": 17506,
+      "contextSha256": "380a54a2c040752c91af7f4c51136b82bdc5f30da72ef51d2f205bae681e137d"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 1941,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "121",
+  "debateId": "dawkins-lennox-science-buried-god-2017",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}

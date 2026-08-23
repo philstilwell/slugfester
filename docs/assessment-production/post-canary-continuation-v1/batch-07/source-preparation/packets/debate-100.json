@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-score-blind-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-source-preparation",
+  "debateNumber": "100",
+  "debateId": "jones-dillahunty-emergent-mind-god-2020",
+  "motion": "Do digital physics, cosmic consciousness, and introspective idealism provide good reasons to believe in a necessary immaterial mind, or do those arguments fail demonstrability, probability, and burden-of-proof standards?",
+  "sides": {
+    "pro": {
+      "label": "Theistic idealism",
+      "speakers": [
+        "Michael Jones"
+      ]
+    },
+    "con": {
+      "label": "Evidential skepticism",
+      "speakers": [
+        "Matt Dillahunty"
+      ]
+    }
+  },
+  "durationSeconds": 7845,
+  "eventCount": 3725,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/yGxSf4zJAso/transcript.txt",
+    "transcriptSha256": "371b1a060969f8604106443c50a6b7fc679b5d2aa566a6c0b36ec94081ae07c1",
+    "eventsPath": ".assessment-cache/captions/yGxSf4zJAso/events.json",
+    "eventsSha256": "90a0ebe7f35859395d673350d961a46e0e2e781291893102c5626b594494fb11",
+    "localManifestPath": ".assessment-cache/captions/yGxSf4zJAso/manifest.json",
+    "localManifestSha256": "68c5096a555f386b638902af926fb40b4dcf59f82137e611d73e984212c16b92"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-07/debate-100.jsonl",
+    "sourceLedgerSha256": "756c8aad5cbb6abd1fb7bcf1944fc621a2e7c342ea5a58b7e2718506b152c354",
+    "sourceLedgerBytes": 219770,
+    "sourceLedgerEventCount": 3725,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/source-preparation/plans/debate-100.json",
+    "partitionPlanSha256": "5d8769e81919dfd78e2a4b9c17913a05d008fe27c4818513cac73422561f76cd",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "distributedTranscriptCoverageRequired": true,
+    "completeChunkContextRequired": true,
+    "everySourceEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateStartMustBeInOwnedCore": true,
+    "candidateStartOwnershipEnforcedByOutputSchema": true,
+    "candidateMayExtendIntoLockedLookahead": true,
+    "modelAuthoredEndEventRequired": true,
+    "modelAuthoredEndEventBoundedByLockedContext": true,
+    "repositoryDerivesInclusiveWindowLexicalTokenCount": true,
+    "exactNonemptySourceRowsWithZeroLexicalTokensPreservedWithCountZero": true,
+    "exactSourceTextNeverInjectedOmittedOrRewritten": true,
+    "minimumLexicalTokens": 12,
+    "minimumLexicalTokensDeterministicallyEnforced": true,
+    "minimumLexicalTokensStructurallyEnforcedByOutputSchema": false,
+    "requestedLexicalTokensProhibited": true,
+    "tokenCountedChunkLedgerRequired": true,
+    "moveBeginningInLookbehindOwnedByPredecessorChunk": true,
+    "frozenDyadicSpeakerAllowlistRequired": true,
+    "modelSuppliedSourceMillisecondsProhibited": true,
+    "modelAuthoredEvidenceTextProhibited": true,
+    "modelAuthoredTargetIdsProhibited": true,
+    "scoreBlindDiscoveryOnly": true,
+    "stagingOnlyIntermediateOutput": true,
+    "calibrationOnlyFieldMeansStagingNotDevelopment": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "legacyAssessmentsPriorJudgmentsScoresWinnersTagsAndPublicationProseUnavailable": true
+  }
+}

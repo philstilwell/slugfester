@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "4.2.21.9-partition-plan",
+  "protocolId": "v4.2.21.9-generalized-partition",
+  "ledgerEvents": 3374,
+  "ledgerBytes": 197132,
+  "ledgerSha256": "1ccf8e92c2ea37225aa6f474a3329605913947c58a444abf380130288bc9abde",
+  "limits": {
+    "contextEventsMaximum": 900,
+    "contextBytesMaximum": 70000,
+    "boundaryContextEvents": 40,
+    "candidatesPerChunkMaximum": 10
+  },
+  "chunks": [
+    {
+      "chunkId": "chunk-001",
+      "coreStartEvent": 0,
+      "coreEndEvent": 859,
+      "coreEvents": 860,
+      "contextStartEvent": 0,
+      "contextEndEvent": 899,
+      "contextEvents": 900,
+      "contextBytes": 51425,
+      "contextSha256": "99a1568d9d832de7b0bf6f52f0489c705a504c7c71796ad1fe07f42ee38025d3"
+    },
+    {
+      "chunkId": "chunk-002",
+      "coreStartEvent": 860,
+      "coreEndEvent": 1679,
+      "coreEvents": 820,
+      "contextStartEvent": 820,
+      "contextEndEvent": 1719,
+      "contextEvents": 900,
+      "contextBytes": 53291,
+      "contextSha256": "6f8eac12b8fd6de2a99fdf463d640c3d036157ff80de5eacb55bdeeea3d3e914"
+    },
+    {
+      "chunkId": "chunk-003",
+      "coreStartEvent": 1680,
+      "coreEndEvent": 2499,
+      "coreEvents": 820,
+      "contextStartEvent": 1640,
+      "contextEndEvent": 2539,
+      "contextEvents": 900,
+      "contextBytes": 53021,
+      "contextSha256": "df2f7cc19ef30514b79c834750b75a57d8db4e89a1967511c40b95731f4a16bc"
+    },
+    {
+      "chunkId": "chunk-004",
+      "coreStartEvent": 2500,
+      "coreEndEvent": 3319,
+      "coreEvents": 820,
+      "contextStartEvent": 2460,
+      "contextEndEvent": 3359,
+      "contextEvents": 900,
+      "contextBytes": 52943,
+      "contextSha256": "319253fdea9bc04abcb9e0db8ac2430bbfb6f4fcf7e4a6691252240b7de4bdeb"
+    },
+    {
+      "chunkId": "chunk-005",
+      "coreStartEvent": 3320,
+      "coreEndEvent": 3373,
+      "coreEvents": 54,
+      "contextStartEvent": 3280,
+      "contextEndEvent": 3373,
+      "contextEvents": 94,
+      "contextBytes": 5632,
+      "contextSha256": "6e71aae8766cb19f044c802c100cef4c89d02b45f3f83e613c4a9775b8f6df28"
+    }
+  ],
+  "coverage": {
+    "firstOwnedEvent": 0,
+    "lastOwnedEvent": 3373,
+    "everyEventOwnedExactlyOnce": true,
+    "boundaryContextMayRepeat": true,
+    "candidateOwnershipRule": "candidate sourceSpan.startEvent must be in exactly one chunk core"
+  },
+  "debateNumber": "80",
+  "debateId": "rasmussen-schmid-argument-from-limits-2023",
+  "sourceComplexityBand": "partition-medium",
+  "transportRoute": "partitioned-bounded-end-discovery"
+}
