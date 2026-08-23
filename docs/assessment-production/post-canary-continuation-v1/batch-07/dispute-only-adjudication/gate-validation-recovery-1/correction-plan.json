@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-adjudication-gate-validation-recovery-1-plan",
+  "status": "frozen-batch-07-adjudication-gate-validation-recovery-1-not-executed",
+  "frozenAt": "2026-08-23T21:59:38.000Z",
+  "checkpointCommit": "35b89e77c29cc679d267ecfcdfb22637fd6a7f3a",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/gate-validation-recovery-1/diagnosis.json",
+    "sha256": "fd0ae7fc50f6545a342aff4c97c7e0c86c3f487abeb152c102cf7f12ab0027c7"
+  },
+  "inputs": {
+    "modelExecution": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/model-execution.json",
+      "sha256": "2ecd6bca175751531ac7df740763f847dd274af862f26f5ddac197fd3cf8b2f6"
+    },
+    "analysis": {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/analysis.json",
+      "sha256": "47269751edf69bae7f59c39727d8ebb1c542f14a79013be0719359402e24f80d"
+    },
+    "failedTestPreimage": {
+      "path": "scripts/test-assessment-production-post-canary-batch-07-dispute-adjudication-gate.mjs",
+      "sha256": "6e33504920ae19cf4cb15dd178334a009dd586578fd08d5709f70c41986c1013"
+    }
+  },
+  "correction": {
+    "type": "transient-deterministic-validation-overlay",
+    "validator": "scripts/validate-assessment-production-post-canary-batch-07-dispute-adjudication-gate-recovery-1.mjs",
+    "validatorSha256": "12f340dcf95196116af4cbc2070f5c59386f58426c0032fb3b9272f5061d372c",
+    "field": "analysis.evidenceBoundary.audioTranscriptInputs",
+    "from": 2,
+    "to": 5,
+    "correctedTestSha256": "3a24ea3399e566425fcdacdbcadcd1b1e224a7c7158ef34d98bca948bd5cfe98",
+    "persistentTestWrites": 0,
+    "persistentAcceptedOutputWrites": 0,
+    "temporaryFilesRemovedAfterValidation": true
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "retries": 0,
+    "reruns": 0,
+    "modelExecutionAuthorized": false,
+    "paidServicesAuthorized": false,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "protectedBoundaries": {
+    "acceptedOutputsByteIdentical": true,
+    "modelExecutionRecordByteIdentical": true,
+    "analysisByteIdentical": true,
+    "activationByteIdentical": true,
+    "packetsByteIdentical": true,
+    "scoresUnchanged": true
+  },
+  "futureOutput": "docs/assessment-production/post-canary-continuation-v1/batch-07/dispute-only-adjudication/gate-validation-recovery-1/execution.json",
+  "nextAuthorizedAction": "execute-one-bounded-corrected-adjudication-gate-validation-overlay"
+}
