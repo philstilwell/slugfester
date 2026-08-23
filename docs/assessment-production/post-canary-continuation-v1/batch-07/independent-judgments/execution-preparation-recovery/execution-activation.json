@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-execution-preparation-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-execution-preparation-recovery",
+  "status": "batch-07-independent-judgment-execution-preparation-recovery-authorized",
+  "activatedAt": "2026-08-23T19:37:00Z",
+  "correctionPlan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/execution-preparation-recovery/correction-plan.json",
+    "sha256": "125a89a675fde0025877312e233f42a34ea3d544e323c153878f208deafffdfb"
+  },
+  "correctedSources": [
+    {
+      "target": "scripts/preregister-assessment-production-post-canary-batch-07-independent-judgments.mjs",
+      "preimageSha256": "eb5f8ce1f198631d1f1a56ef1ee9651dc73765c291f55607eabfde7700b07f3c",
+      "postimageSha256": "7d99369d80682ab2d325d8f0bcdd1f161de1b07e0d745b1384e4c20f936fb581"
+    },
+    {
+      "target": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-manifest.mjs",
+      "preimageSha256": "74ed7c91b9b2ceb4ac0226c36c169219b71fc92916afa2dbc975f0b36460c8c0",
+      "postimageSha256": "e4bb6d06be6032f422f324559c81d8c2629479e0017155bfa188515c26f2048c"
+    }
+  ],
+  "validatorRulesSha256": "6f709675ea8b9b21d4bf76cb6247d3b2d7f0c28fce422fd26467362572a4cc9d",
+  "executionTemplateSha256": "52d9e1c147c8834eb9e0df7dfae21f643e3512add3f74715a024ff260340965c",
+  "correctedPreviewPassesAuthorized": 1,
+  "manifestFreezePassesAuthorized": 1,
+  "manifestValidationPassesAuthorized": 1,
+  "ordinaryRetriesAuthorized": 0,
+  "rerunsAuthorized": 0,
+  "modelContextsAuthorizedBeforeBothGatesPass": 0,
+  "paidServiceCallsAuthorized": 0,
+  "directIncrementalCostUsdMaximum": 0,
+  "nextAction": "authenticate-apply-corrections-run-preview-freeze-manifest-and-validate-once"
+}
