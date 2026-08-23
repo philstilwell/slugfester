@@ -1,0 +1,551 @@
+{
+  "schemaVersion": "1.0-score-stability-v2.1.2-candidate-bundle",
+  "protocolId": "assessment-production-score-stability-v2.1.2-bounded-end-discovery",
+  "debateNumber": "121",
+  "debateId": "dawkins-lennox-science-buried-god-2017",
+  "completeSourceDiscovery": {
+    "chunks": 3,
+    "everyEventOwnedExactlyOnce": true,
+    "everyCoreReportedComplete": true,
+    "silentDeduplicationPerformed": false,
+    "localTargetIdsModelAuthored": false,
+    "selectedTargetTopologyDeferredToPrimaryA": true,
+    "repositoryDerivedLexicalTokenCounts": true,
+    "modelAuthoredLexicalTokenCounts": false,
+    "modelAuthoredBoundedEndEvents": true,
+    "startDependentLockedLookaheadCapacityStructurallyBounded": true,
+    "minimumLexicalTokens": 12,
+    "boundaryContinuationRule": "a move beginning in lookbehind remains owned by the predecessor chunk"
+  },
+  "candidateCount": 24,
+  "candidates": [
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "proposition": "The Christian God is scientifically implausible and cosmically parochial, unlike a more defensible deistic hypothesis.",
+      "sourceSpan": {
+        "startEvent": 126,
+        "endEvent": 186
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator addresses Richard directly, and the uninterrupted opening answer continues until John responds.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This opening frames Dawkins's direct case that science undermines specifically Christian theism and its central miracle and redemption claims.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "Asked whether science has buried God, Dawkins distinguishes several concepts of God before concentrating his objection on Lennox's Christian conception.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "A personal creator explains the universe's rational intelligibility, while atheism cannot adequately ground rational minds or redemption.",
+      "sourceSpan": {
+        "startEvent": 187,
+        "endEvent": 226
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "John explicitly addresses Richard and sustains the response until Richard begins his answer at the next event.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The move states Lennox's central positive explanation for rationality and directly defends the Christian incarnation and resurrection against Dawkins's opening attack.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's claim that Christian redemption is unscientific, petty, and unworthy of the universe's grandeur."
+      },
+      "contextSummary": "Lennox accepts the Christian commitments Dawkins identified, reverses the charge of pettiness, and asks how atheism accounts for an intelligible universe.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c003",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "Natural selection explains biological apparent design without accident or a designer, and positing God only introduces a harder explanatory problem.",
+      "sourceSpan": {
+        "startEvent": 227,
+        "endEvent": 283
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Richard answers John's characterization of his position in a continuous turn ending when John begins listing objections.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This is Dawkins's principal scientific-naturalist account of apparent biological design and his central complexity objection to invoking a creator.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's characterization of an atheistic universe as a freak accident lacking any mind behind its rational order."
+      },
+      "contextSummary": "Dawkins presents Darwinian selection as a third alternative to chance and design, then argues that a complex creator would itself demand explanation.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Evolutionary naturalism undermines confidence in human reasoning because survival-oriented, mindless processes do not necessarily select for truth.",
+      "sourceSpan": {
+        "startEvent": 284,
+        "endEvent": 320
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "John takes the floor after Richard's complexity argument and develops a continuous objection before inviting an answer.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The argument challenges whether scientific naturalism can justify the rational faculties on which science itself depends, supporting the theistic account of reason.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's claim that Darwinian evolution supplies a mindless explanation of apparent biological design."
+      },
+      "contextSummary": "Lennox concedes limits to what Darwin addressed and argues that atheism makes thought the product of processes aimed at reproduction rather than truth.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "Natural selection can produce truth-tracking brains because organisms that systematically misperceive the real world are less likely to survive.",
+      "sourceSpan": {
+        "startEvent": 321,
+        "endEvent": 354
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Richard explicitly announces his answer and explains the survival value of accurate perception until John's next response begins.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This directly defends the epistemic coherence of evolutionary naturalism against a challenge that would otherwise undermine its capacity to support scientific knowledge.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's argument that evolution selects for reproductive success rather than truth and therefore undercuts rational confidence."
+      },
+      "contextSummary": "Dawkins rejects the alleged conflict between evolved brains and knowledge, using avoidance of rocks and cliffs to illustrate selection for accurate behavior.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c006",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Scientific mechanisms and divine agency are compatible explanatory levels, so discovering how nature works does not eliminate a creator.",
+      "sourceSpan": {
+        "startEvent": 463,
+        "endEvent": 480
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "John marks the point as important and develops the Newton analogy until Richard begins his superfluous-agent response.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The distinction answers the debate's central alleged opposition between science and God by separating mechanistic explanation from explanation by agency.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's analogy that invoking divine guidance in evolution is like adding God to gravity after the mechanism is understood."
+      },
+      "contextSummary": "Lennox argues that Newton's discovery of gravity did not displace God and that increasingly understood mechanisms may remain compatible with an originating agent.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "The information-processing language of DNA is better explained by mind than by unguided matter, making a divine Logos intelligible.",
+      "sourceSpan": {
+        "startEvent": 530,
+        "endEvent": 577
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "John redirects the discussion to cosmic and biological origins and develops the information argument through his explicit appeal to the Logos.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move supplies a positive design inference from biological information and connects it to the broader theistic explanation of mind, rationality, and science.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's claim that evolutionary processes explain biological complexity from simple beginnings without requiring an agent."
+      },
+      "contextSummary": "Lennox focuses on life's digital database and the cell's information processing, arguing that known language production points toward mind and the biblical Logos.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c008",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "A simple universe is a more acceptable unexplained starting point than a complex conscious creator that requires a harder explanation.",
+      "sourceSpan": {
+        "startEvent": 603,
+        "endEvent": 619
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Richard answers the brute-fact question and maintains the simplicity comparison until John resumes with a parallel challenge.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This concise formulation is Dawkins's foundational regress and complexity objection to treating God as the ultimate explanation of the universe.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's claim that an eternal, uncreated Logos is the best explanation for the universe and the human mind."
+      },
+      "contextSummary": "Pressed on whether the universe is a brute fact, Dawkins contrasts a simple physical beginning with the greater explanatory burden of a conscious God.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Theism predicts evidential traces in fine-tuning and intelligibility as well as rare divine acts, especially the historically consequential resurrection.",
+      "sourceSpan": {
+        "startEvent": 745,
+        "endEvent": 790
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "John distinguishes two kinds of explanatory gaps and develops his positive expectations under theism before posing a question to Richard.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The move integrates fine-tuning, limits of reductionism, miracles, and resurrection into a unified positive case for Christian theism rather than a mere gap appeal.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's accusation that appeals to God at the origin of life merely insert magic into gaps in current scientific knowledge."
+      },
+      "contextSummary": "Lennox rejects exhaustive reductionism, identifies expected evidence of a personal creator, and argues that Jesus's resurrection would transform humanity's understanding of death.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-001",
+      "qualifiedCandidateId": "chunk-001:c010",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "The resurrection makes ultimate justice rationally possible in a broken world, whereas atheism offers no final resolution of injustice.",
+      "sourceSpan": {
+        "startEvent": 817,
+        "endEvent": 859
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "John initiates the moral-justice answer and, through brief challenges from Richard, carries the argument to its explicit contrast with atheism.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This develops the announced morality-and-purpose dimension of the motion and explains why Christian redemption is significant rather than cosmically petty.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's contention that divine self-sacrifice is an unnecessarily tortured and petty means of forgiving human sin."
+      },
+      "contextSummary": "The speakers dispute atonement and justice before Lennox argues that widespread uncorrected injustice creates a need for ultimate judgment that resurrection can ground.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-01",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "The desirability of hope, justice, or divine comfort provides no reason to conclude that God exists.",
+      "sourceSpan": {
+        "startEvent": 860,
+        "endEvent": 867
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator-free turn directly answers Lennox's preceding appeal to ultimate justice and is followed by Lennox's objection.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This distinguishes emotional desirability from evidential truth and directly challenges a recurring basis of Lennox's case for theism.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's claim that resurrection and God provide hope for ultimate justice."
+      },
+      "contextSummary": "Lennox has argued that atheism offers no final justice, while resurrection supplies rational hope; Dawkins answers that bleak consequences do not establish truth.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-02",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "If God is personal, divine self-revelation in an intelligible human form is a coherent way for persons to know God.",
+      "sourceSpan": {
+        "startEvent": 882,
+        "endEvent": 908
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The sustained turn follows Dawkins's truth challenge, uses Lennox's first-person theological framing, and ends before Dawkins's response.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move supplies a conceptual bridge from a creator to Christian revelation and frames Christ's claimed incarnation as coherent rather than petty.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's contention that the comforting consequences of belief do not show that belief is true."
+      },
+      "contextSummary": "After agreement that desirability cannot settle truth, Lennox redirects the exchange toward whether God exists and has personally revealed himself through Christ.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-03",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "A universe-making intelligence might be conceivable, but such grandeur is incompatible with a God preoccupied with private conduct and sin.",
+      "sourceSpan": {
+        "startEvent": 921,
+        "endEvent": 951
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins explicitly states what might persuade him and contrasts it with the sin-focused God that he rejects as fundamentally incompatible.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The argument separates a possible cosmic creator from Christianity's morally attentive personal God, attacking the debate's specifically theistic conclusion.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's claim that Christ is God incarnate and personally reveals the creator to human beings."
+      },
+      "contextSummary": "Following discussion of Christ's historicity and revelation, Dawkins concedes possible openness to a creative intelligence but rejects the Christian divine character.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-04",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "Facing mortality and an indifferent universe without a comforting divine parent is a nobler form of maturity than relying on religious consolation.",
+      "sourceSpan": {
+        "startEvent": 1026,
+        "endEvent": 1043
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn rejects Lennox's preceding account of divine relationship and develops Dawkins's characteristic imaginary-friend and intellectual-maturity analogy.",
+      "loadBearingLevel": "subsidiary",
+      "loadBearingReason": "It advances the naturalist account of existential courage and directly contests Lennox's claim that relationship with God uniquely enables a full life.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's claim that relationship with a revealed God removes worry and gives fullness of life."
+      },
+      "contextSummary": "Lennox interprets belief in God as a source of freedom from worry; Dawkins instead portrays religious comfort as a childhood dependency to be outgrown.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-05",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "Claims of virgin birth, walking on water, transformation of water, and similar miracles are anti-scientific because they lack evidence.",
+      "sourceSpan": {
+        "startEvent": 1100,
+        "endEvent": 1115
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins accepts Jesus's existence, then clearly distinguishes that historical concession from unevidenced supernatural claims attributed to Jesus.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move directly tests whether central Christian miracle claims can remain credible under scientific evidential standards rather than mere historical existence.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's appeal to scientific and historical evidence for Christian revelation and its truth."
+      },
+      "contextSummary": "After both speakers agree that comfort is irrelevant to truth, Dawkins grants the historical existence of Jesus but rejects the supernatural claims about him.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-06",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Miracles attributed to an incarnate creator are not anti-scientific natural events but special divine acts within an otherwise regular created universe.",
+      "sourceSpan": {
+        "startEvent": 1116,
+        "endEvent": 1137
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox invokes Christ as the creator incarnate, distinguishes divine action from natural processes, and explicitly denies the anti-scientific characterization.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "This is the principal compatibility answer to the charge that Christian miracle claims contradict science and its study of regular natural processes.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's assertion that Christian miracle claims lack evidence and are palpably anti-scientific."
+      },
+      "contextSummary": "Dawkins has labeled major Gospel miracles scientifically untenable; Lennox answers by locating them in purposeful creator action rather than ordinary natural causation.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-07",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "constructive",
+      "proposition": "Meaning arises from evolved brains interpreting the world, while individuals may construct personal purposes and biology supplies gene propagation as another meaning.",
+      "sourceSpan": {
+        "startEvent": 1235,
+        "endEvent": 1266
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The new topic begins after the moderator's transition, and Dawkins develops an evolutionary and individual account before Lennox takes the next turn.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move gives scientific naturalism a positive account of meaning and purpose without requiring an externally imposed or divinely grounded cosmic purpose.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "The moderator shifts the debate to meaning, purpose, and morality; Dawkins explains meaning through adaptive cognition and individually chosen life projects.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-08",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "reply",
+      "proposition": "Human consciousness, personhood, meaning, and enduring hope are more intelligible if ultimate reality is a personal God rather than impersonal matter and energy.",
+      "sourceSpan": {
+        "startEvent": 1267,
+        "endEvent": 1323
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Lennox contrasts bottom-up materialism with a personal divine source and sustains the argument through his concluding question to Dawkins.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The argument presents Christian theism as a broader explanation of rational persons and meaning while charging atheistic reductionism with explanatory inadequacy.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Dawkins's account of meaning as evolved interpretation, private human purpose, or biological gene propagation."
+      },
+      "contextSummary": "Dawkins has naturalized meaning and allowed self-created purposes; Lennox contrasts that account with a personal ultimate reality grounding mind, relationship, and hope.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-09",
+      "side": "pro",
+      "speaker": "John Lennox",
+      "moveKind": "constructive",
+      "proposition": "Christianity is distinct because Christ's death and resurrection provide forgiveness and repaired relationship with God as a gift rather than human merit.",
+      "sourceSpan": {
+        "startEvent": 1460,
+        "endEvent": 1505
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "In direct response to the audience question, Lennox explicitly identifies the feature he regards as Christianity's central distinguishing claim.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The move states why Lennox regards Christian theism as uniquely viable among religions and ties that distinctiveness to historically assessable resurrection claims.",
+      "responseIntent": {
+        "kind": "constructive",
+        "earlierTargetDescription": ""
+      },
+      "contextSummary": "An audience question asks why Christianity is more viable than other religions; Lennox contrasts moral paths and merit with forgiveness through Christ's work.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-002",
+      "qualifiedCandidateId": "chunk-002:chunk-002-candidate-10",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "Fine-tuning does not warrant a conscious designer because that designer requires a larger explanation, while anthropic selection within a multiverse offers an alternative.",
+      "sourceSpan": {
+        "startEvent": 1551,
+        "endEvent": 1605
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins identifies his uncertainty about the laws, then develops the designer objection, anthropic principle, and multiverse alternative in one uninterrupted answer.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The move directly addresses fine-tuning and the origin of physical laws, supplying the naturalist alternative to one of the debate's principal theistic arguments.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The theistic inference that life-permitting physical laws and constants were intentionally fine-tuned by God."
+      },
+      "contextSummary": "Asked about the origin of physical laws, Dawkins admits ignorance but argues that divine design compounds the explanatory problem and sketches anthropic multiverse reasoning.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-c01",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "Peter Singer's comparison of newborn humans with other animals is defensible because suffering capacity supplies a rational basis for moral consideration.",
+      "sourceSpan": {
+        "startEvent": 1717,
+        "endEvent": 1727
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The passage begins immediately after Lennox addresses Dawkins and directly defends the named philosopher challenged in Lennox's closing question.",
+      "loadBearingLevel": "central",
+      "loadBearingReason": "The response directly contests Lennox's claim that naturalism erodes moral value, supplying a secular criterion for moral judgment rather than conceding nihilism.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's claim that naturalistic ethics erodes human value and leads toward Peter Singer's treatment of newborn life."
+      },
+      "contextSummary": "Lennox had argued that atheism cannot preserve inherited Christian morality and invoked Singer's comparison of newborns with animals as evidence of moral decline.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-c02",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "The universe's rational intelligibility does not require God, because observers capable of evolving and surviving could exist only in a sufficiently lawful universe.",
+      "sourceSpan": {
+        "startEvent": 1731,
+        "endEvent": 1760
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Dawkins explicitly identifies Lennox as his interlocutor, revisits the quotation attributed to him, and develops a sustained first-person rebuttal.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "This directly opposes a principal theistic explanation for why science is possible, replacing divine rational agency with an anthropic selection argument.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's argument that the universe's intelligibility and the rationality underlying science point to a divine mind or Logos."
+      },
+      "contextSummary": "After briefly defending Singer, Dawkins turns to Lennox's use of Dawkins's description of an indifferent universe and challenges the inference from intelligibility to God.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-c03",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "Unsolved scientific problems do not justify invoking God, because Darwin's solution to apparent biological design shows that persistent natural inquiry can explain phenomena once treated as magic.",
+      "sourceSpan": {
+        "startEvent": 1761,
+        "endEvent": 1812
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted turn continues Dawkins's first-person account of scientific method and invokes Darwin, evolution, and remaining origin problems characteristic of his stated case.",
+      "loadBearingLevel": "motion",
+      "loadBearingReason": "The move states the debate's central naturalistic methodological objection: explanatory gaps, even permanent ones, provide no warrant for a supernatural conclusion.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "Lennox's use of unexplained laws, cosmic origins, biological information, and rationality as considerations pointing toward God."
+      },
+      "contextSummary": "Having offered an anthropic response to cosmic intelligibility, Dawkins broadens the rebuttal into a methodological case about uncertainty, scientific persistence, and Darwin's precedent.",
+      "candidateConfidence": "high"
+    },
+    {
+      "chunkId": "chunk-003",
+      "qualifiedCandidateId": "chunk-003:chunk-003-c04",
+      "side": "con",
+      "speaker": "Richard Dawkins",
+      "moveKind": "reply",
+      "proposition": "Wanting God to exist would have no bearing on whether God actually exists, because desire cannot establish the truth of a proposition.",
+      "sourceSpan": {
+        "startEvent": 1935,
+        "endEvent": 1936
+      },
+      "attributionConfidence": "medium",
+      "attributionBasis": "In the closing montage, the answer follows a direct question about wishing that God existed and expresses the truth-focused position associated with Dawkins's side.",
+      "loadBearingLevel": "subsidiary",
+      "loadBearingReason": "The concise answer reinforces an epistemically important distinction between the emotional desirability of theism and evidence for its truth.",
+      "responseIntent": {
+        "kind": "reply",
+        "earlierTargetDescription": "The closing question asking whether Dawkins had ever personally wished that God existed despite his publicly argued atheism."
+      },
+      "contextSummary": "A late post-debate exchange shifts from scientific and philosophical arguments to whether personal longing for God might affect Dawkins's position.",
+      "candidateConfidence": "medium"
+    }
+  ]
+}
