@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-deterministic-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-07-audio-work-item-preparation-recovery-1",
+  "status": "batch-07-audio-work-item-preparation-stale-reporting-count-diagnosed",
+  "diagnosedAt": "2026-08-23T20:34:00Z",
+  "failureCategory": "deterministic-audio-work-item-preparation-reporting-field",
+  "cause": "The Batch 7 preparation builder retained Batch 6's reporting-only exactAuthorizedMoveCount value of 2 while the frozen disagreement queue and generated work artifact contain exactly five authorized moves.",
+  "evidence": {
+    "preparationPreimagePath": "docs/assessment-production/post-canary-continuation-v1/batch-07/disagreement-extraction/audio-work-item-preparation-recovery-1/preimage.json",
+    "preparationPreimageSha256": "b2e5b487d7f4c2b7b36e540396a9bc0b0b89ca12ca34fd135cf745f8bc84dc2f",
+    "workItemsPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/disagreement-extraction/audio-work-items.json",
+    "workItemsSha256": "f6403146ed5fb0a3b3db4938d5b669e146f59f62d4e7395c789c02e07c0199c8",
+    "frozenMoves": 5,
+    "frozenSourceDebates": 3,
+    "staleReportingValue": 2,
+    "correctReportingValue": 5
+  },
+  "correctionBoundary": {
+    "writableFields": [
+      "validation.exactAuthorizedMoveCount"
+    ],
+    "preimageValue": 2,
+    "postimageValue": 5,
+    "substantiveWorkItemsChanged": false,
+    "sourceHashesChanged": false,
+    "clipWindowsChanged": false,
+    "speakersChanged": false,
+    "audioAccessPermitted": false,
+    "modelExecutionPermitted": false
+  },
+  "standingAuthorizationRecoveryLevel": 1,
+  "directIncrementalCostUsd": 0
+}
