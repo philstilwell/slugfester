@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-publication-repair-analysis",
+  "protocolId": "assessment-production-post-canary-batch-06-publication-repair-1",
+  "status": "batch-06-publication-repair-and-ten-debate-cohort-replay-passed",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "stagingOnly": true,
+  "sources": {
+    "preparationSha256": "18f581682a09025d59bdb43b01f59ccce61ea4853327b9fccd8a07da910325a9",
+    "activationSha256": "1f06e01257704d33bfe6953eee98d0a80b4016df70e0ffda45e0f809272d1aa0",
+    "executionSha256": "ef54608ee97966b7236841ef3bf391dc52836259f3bfc06ff49d1b6427222366"
+  },
+  "gate": {
+    "contextsPlanned": 25,
+    "contextsAttempted": 25,
+    "contextsPassed": 25,
+    "contextsFailed": 0,
+    "contextsUnattempted": 0,
+    "correctedFields": 49,
+    "repairedDebates": 4,
+    "completeTenDebateCohortReplayPassed": true,
+    "attempts": 25,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveCorrections": 0,
+    "immutableFieldsChanged": 0,
+    "modelAuthoredScores": 0,
+    "scorePassesExecutedThisStage": 0
+  },
+  "cohortTotals": {
+    "moves": 200,
+    "critiques": 200,
+    "quotes": 20,
+    "commentarySides": 20,
+    "extensionSides": 20
+  },
+  "failureMessage": null,
+  "totals": {
+    "modelContexts": 25,
+    "meteredApiCostUsd": 0,
+    "paidServiceCallsThisStage": 0,
+    "modelAuthoredScores": 0
+  },
+  "authorization": {
+    "publicationCompilationPreparation": true,
+    "publicationCompilationExecution": false,
+    "retry": false,
+    "timeoutExtension": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-batch-06-deterministic-publication-compilation-pass"
+}
