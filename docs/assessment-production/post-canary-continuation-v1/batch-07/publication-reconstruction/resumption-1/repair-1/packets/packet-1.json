@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-debate-80-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-debate-80-publication-resumption-repair-1",
+  "contextIndex": 1,
+  "packetIndex": 1,
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "debateNumber": "80",
+  "debateId": "rasmussen-schmid-argument-from-limits-2023",
+  "repairType": "critique-word-boundary",
+  "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-1/outputs/debate-80.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/packets/debate-80.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.pro-symmetry-breaker-burden.critique",
+      "moveProse.pro-mentality-and-value-producing-power.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "recursiveRecoveryMaximum": 1
+  },
+  "corrections": [
+    {
+      "field": "moveProse.pro-symmetry-breaker-burden.critique",
+      "moveId": "pro-symmetry-breaker-burden",
+      "originalCritique": "Strongest feature: The reply squarely accepts the symmetry objection’s conditional force and accurately identifies comparison of rival principles and their respective supports as the necessary next stage rather than claiming premature victory. Principal limitation: This is principally a burden acknowledgment, because no actual symmetry breaker is supplied and therefore the original limits principle remains undercut whenever the evidential parity condition holds. Live burden: The pro case must identify a relevant asymmetry in domain, explanatory structure, modal force, or independent evidence and demonstrate why that difference favors the limits principle without circularly assuming its conclusion. Locked score: The very strong band reflects exemplary responsiveness, precision, intellectual candor, and accurate diagnosis of the open inquiry, while also registering that recognizing the decisive problem does not itself discharge the motion-level burden created by that problem.",
+      "originalWords": 132,
+      "originalCharacters": 988,
+      "excessWordsAboveAcceptanceMaximum": 2,
+      "lockedMove": {
+        "moveId": "pro-symmetry-breaker-burden",
+        "sectionId": "holistic-comparison-and-principle-symmetry",
+        "side": "pro",
+        "speaker": "Josh Rasmussen",
+        "moveKind": "reply",
+        "proposition": "If equally supported principles yield competing conclusions, the original limits argument requires a symmetry breaker established by comparing the rival principles and their support.",
+        "importance": 3,
+        "finalScore": 92,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "48:40",
+        "sourceSpan": {
+          "startEvent": 1414,
+          "endEvent": 1470,
+          "startMs": 2920480,
+          "endMs": 3050559
+        },
+        "sourceExcerpt": "support for the original. we need some kind of symmetry breaker. And that's absolutely right. I mean, you know, what I said, what can I say about that? I mean, that that's correct. Um, and so then to me, this invites me to have a close look at, okay, what are the competing principles? What are the competing supports? And so that's kind of in a way an open project. um you know so",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 74,
+          "characterCount": 381
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-symmetry-burden"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-rival-causal-principle-symmetry"
+          ],
+          "components": [
+            {
+              "componentId": "pro-symmetry-breaker-burden-component-01",
+              "targetMoveId": "con-rival-causal-principle-symmetry",
+              "text": "Whether competing, similarly supported principles undercut the original limits principle absent a symmetry breaker.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply explicitly accepts the symmetry objection and identifies comparison of the principles and their supports as the required next inquiry, fully contacting the objection without pretending to complete that inquiry.",
+          "responsivenessWithinClass": {
+            "value": 91,
+            "rationale": "The decisive undercutting demand is explicitly contacted and accurately accepted, although no actual symmetry breaker is provided."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "The decisive undercutting demand is explicitly contacted and accurately accepted, although no actual symmetry breaker is provided."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The condition, undercutting consequence, and outstanding symmetry-breaking task are all explicitly stated."
+        },
+        "calibrationFindings": {
+          "assertedForce": "necessity",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "Necessity is asserted only conditionally: if the principles are equally supported, a symmetry breaker is required."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The rival principles may genuinely have evidential parity with the limits principle.",
+          "decisiveQualification": "That possibility is accepted, and the speaker concedes that comparative support must be investigated before relying on the original argument."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 93,
+            "rationale": "The conditional undercutting inference and resulting comparative burden are explicit and valid."
+          },
+          "evidenceWarrant": {
+            "value": 86,
+            "rationale": "The point relies appropriately on the rival already presented, though it offers no independent evidence completing the comparative project."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly engages the central symmetry bridge, though it acknowledges rather than completes the burden."
+          },
+          "representationalCharity": {
+            "value": 95,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (95 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt explicitly agrees that equal rival support undercuts the original, requires a symmetry breaker, and calls comparison of principles an open project.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.pro-mentality-and-value-producing-power.critique",
+      "moveId": "pro-mentality-and-value-producing-power",
+      "originalCritique": "Strongest feature: The reply acknowledges the neutrality gap and offers two distinct routes toward foundational greatness, one through independent mentality arguments and another through the original productive power behind derivative value. Principal limitation: The mentality route is appended rather than established by the limits argument, while the axiological significance of original value-producing power is asserted suggestively without a sufficiently precise account of why power inherits value. Live burden: The pro case must supply independent support for mindedness or defend a value-conferring principle distinguishing active productive capacity from merely necessary enabling conditions that intuitively lack value. Locked score: The strong or competent band reflects direct engagement, useful route diversification, explicit tentativeness, and substantial relevance to a central bridge, constrained by partly underdefined terminology and incomplete warrant for either proposed foundation of greatness.",
+      "originalWords": 131,
+      "originalCharacters": 1017,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "pro-mentality-and-value-producing-power",
+        "sectionId": "foundational-greatness-and-value-grounding",
+        "side": "pro",
+        "speaker": "Josh Rasmussen",
+        "moveKind": "reply",
+        "proposition": "The greatness premise can be supported by arguments for fundamental mentality and by the value involved in possessing the original power to produce value.",
+        "importance": 3,
+        "finalScore": 81,
+        "scoreBand": "strong/competent 75–84",
+        "displayTime": "54:46",
+        "sourceSpan": {
+          "startEvent": 1596,
+          "endEvent": 1719,
+          "startMs": 3286319,
+          "endMs": 3563760
+        },
+        "sourceExcerpt": "mentality in different ways. But sweep all of those to the side. There's a fifth idea that I have which is that there's something valuable about having the power to produce value and my thought that is that if the fundamental reality is sort of the original power behind all powers including um powers to produce value then there's something on the axiological dimension um just",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 66,
+          "characterCount": 378
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "pro-central-foundational-greatness"
+        },
+        "response": {
+          "class": "full-answer",
+          "decisiveTargetIds": [
+            "con-axiologically-neutral-foundation"
+          ],
+          "components": [
+            {
+              "componentId": "pro-mentality-and-value-producing-power-component-01",
+              "targetMoveId": "con-axiologically-neutral-foundation",
+              "text": "Whether an apparently impersonal foundation can nevertheless possess a value-conferring feature sufficient for initial greatness.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply acknowledges the gap and offers independent mentality arguments plus original value-producing power as possible value-conferring grounds, directly contacting the neutrality challenge.",
+          "responsivenessWithinClass": {
+            "value": 76,
+            "rationale": "It contacts the decisive premise and supplies candidate bridges, but the excerpt only begins rather than completes their defense."
+          },
+          "responsiveness": {
+            "value": 95,
+            "rationale": "It contacts the decisive premise and supplies candidate bridges, but the excerpt only begins rather than completes their defense."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "partly-unstable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The proposed routes are recoverable, but 'original power behind all powers' and its axiological significance remain partly underdefined."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The proposal is presented as an idea or thought rather than as a conclusively established value theorem."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "A causally productive but mindless foundation may remain axiologically neutral because producing value does not necessarily confer value on the producer.",
+          "decisiveQualification": "The reply needs, but only sketches, a reason that original value-producing power is itself valuable."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 75,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (73 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 69,
+            "rationale": "Multiple possible routes are mentioned, yet the selected span develops only a brief axiological intuition rather than substantial support."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supports the central foundational-greatness bridge with proposed independent grounds."
+          },
+          "representationalCharity": {
+            "value": 81,
+            "rationale": "The response fairly recognizes the neutrality gap but only sketches the precise value-conferring bridge needed to overcome it."
+          }
+        },
+        "evidenceBasis": "The excerpt mentions arguments for mentality and then proposes that the fundamental source's original power to produce value has axiological significance.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}

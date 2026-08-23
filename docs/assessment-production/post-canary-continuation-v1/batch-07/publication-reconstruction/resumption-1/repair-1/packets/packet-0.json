@@ -1,0 +1,273 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-debate-80-publication-repair-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-debate-80-publication-resumption-repair-1",
+  "contextIndex": 0,
+  "packetIndex": 0,
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "debateNumber": "80",
+  "debateId": "rasmussen-schmid-argument-from-limits-2023",
+  "repairType": "critique-word-boundary",
+  "immutableRejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-1/outputs/debate-80.json",
+  "publicationPacket": "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/packets/debate-80.json",
+  "participantJudgmentWasScoreBlind": true,
+  "publicationIsScoreLocked": true,
+  "scoresRepositoryOwnedAndImmutable": true,
+  "constraints": {
+    "writableFields": [
+      "moveProse.con-defeasible-explanatory-default.critique",
+      "moveProse.con-rival-causal-principle-symmetry.critique"
+    ],
+    "writableFieldCount": 2,
+    "maximumWritableFields": 2,
+    "allOtherPublicationFieldsImmutable": true,
+    "scoreFieldsUnavailableAsOutputs": true,
+    "labels": [
+      "Strongest feature:",
+      "Principal limitation:",
+      "Live burden:",
+      "Locked score:"
+    ],
+    "generationTargetWords": [
+      112,
+      118
+    ],
+    "acceptanceWords": [
+      105,
+      130
+    ],
+    "preferredMinimumCharacters": 900,
+    "acceptanceMinimumCharacters": 880,
+    "exactSentenceCount": 4,
+    "terminalPunctuation": true,
+    "preserveAdjudicatedSubstanceAndLockedScoreBand": true,
+    "recursiveRecoveryMaximum": 1
+  },
+  "corrections": [
+    {
+      "field": "moveProse.con-defeasible-explanatory-default.critique",
+      "moveId": "con-defeasible-explanatory-default",
+      "originalCritique": "Strongest feature: The reply cleanly separates a defeasible explanatory default from an exceptionless metaphysical principle and correctly allows background theoretical considerations to justify departures from an experiential pattern. Principal limitation: The discussion establishes the possibility of warranted exceptions more clearly than it identifies concrete independent evidence making foundational limits such an exception in the present comparison. Live burden: The con case must articulate when explanatory pressure is overridden, demonstrate that the proposed stopping point earns exceptional status, and avoid treating mere availability of a theory as sufficient defeat of the default. Locked score: The very strong band reflects precise conceptual diagnosis, excellent responsiveness to the central explanatory moves, and appropriately modest calibration, with a limited deduction because the supporting discussion remains indirect and does not itself vindicate any particular unexplained foundation.",
+      "originalWords": 131,
+      "originalCharacters": 1014,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-defeasible-explanatory-default",
+        "sectionId": "explanatory-status-of-arbitrary-limits",
+        "side": "con",
+        "speaker": "Joe Schmid",
+        "moveKind": "reply",
+        "proposition": "An experiential track record of finding explanations supports only a defeasible generalization, because independent background evidence can rationally justify exceptions to that explanatory pattern.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "40:26",
+        "sourceSpan": {
+          "startEvent": 1167,
+          "endEvent": 1260,
+          "startMs": 2426480,
+          "endMs": 2610960
+        },
+        "sourceExcerpt": "with respect to like the track record of explanation things uh I mean I'm reminded of one of uh Opy's papers where I think it's called like it's published a while back but it's called something like uh on def No I actually have the title up here it's like it's about defeasible reasoning and default principles um yeah so faulty reasoning faulty reasoning about default principles",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 67,
+          "characterCount": 380
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-defeasible-explanation"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-irrelevant-differences-demand-explanation",
+            "pro-reduce-foundational-arbitrariness"
+          ],
+          "components": [
+            {
+              "componentId": "con-defeasible-explanatory-default-component-01",
+              "targetMoveId": "pro-irrelevant-differences-demand-explanation",
+              "text": "A track record of successful explanation supports only a defeasible default, so background theoretical evidence can justify exceptions.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-defeasible-explanatory-default-component-02",
+              "targetMoveId": "pro-reduce-foundational-arbitrariness",
+              "text": "The general norm favoring reduced foundational arbitrariness cannot be treated as exceptionless merely from explanatory experience.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies the overreach from experiential regularity to an unrestricted explanatory demand and states that independent background evidence can defeat the default.",
+          "responsivenessWithinClass": {
+            "value": 88,
+            "rationale": "It diagnoses a central warrant failure, though its support is presented somewhat indirectly through default-principle discussion."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It diagnoses a central warrant failure, though its support is presented somewhat indirectly through default-principle discussion."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The distinction between a defeasible default and an exceptionless principle is clear and stable."
+        },
+        "calibrationFindings": {
+          "assertedForce": "plausibility",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The analogy supports a defeasibility claim, and the speaker does not claim that every proposed foundational exception is thereby justified."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "Explanatory experience and irrelevant alternatives may jointly provide significant prima facie pressure for explanation.",
+          "decisiveQualification": "Prima facie pressure remains defeasible when independent theoretical considerations favor an exception."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 78,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly establishes the con central bridge concerning defeasible explanation."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The span frames explanatory track-record reasoning through defeasible default principles and argues that background evidence may rationally warrant exceptions.",
+        "assessmentConfidence": "high"
+      }
+    },
+    {
+      "field": "moveProse.con-rival-causal-principle-symmetry.critique",
+      "moveId": "con-rival-causal-principle-symmetry",
+      "originalCritique": "Strongest feature: The symmetry challenge identifies a potentially serious undercutting problem by showing how apparently parallel forms of support can generate rival causal principles with consequences unfavorable to traditional theism. Principal limitation: The force of the objection depends upon genuine evidential parity, yet the move does not fully establish that the rival material-causal principle and the limits principle share equally relevant cases, modal scope, or explanatory motivation. Live burden: The con case must defend the proposed parallel closely enough that differences in causal type, domain, or background evidence cannot supply an inexpensive symmetry breaker. Locked score: The very strong band reflects clear formulation, direct relevance, conditional calibration, and substantial pressure upon the pro method, while preserving the unresolved question whether the alternative principle is genuinely co-supported rather than merely analogically suggestive.",
+      "originalWords": 131,
+      "originalCharacters": 983,
+      "excessWordsAboveAcceptanceMaximum": 1,
+      "lockedMove": {
+        "moveId": "con-rival-causal-principle-symmetry",
+        "sectionId": "holistic-comparison-and-principle-symmetry",
+        "side": "con",
+        "speaker": "Joe Schmid",
+        "moveKind": "reply",
+        "proposition": "The inductive, abductive, intuitive, and relevant-difference support offered for the limits principle can similarly support rival causal principles that conflict with traditional theism.",
+        "importance": 3,
+        "finalScore": 89,
+        "scoreBand": "very strong 85–94",
+        "displayTime": "45:22",
+        "sourceSpan": {
+          "startEvent": 1315,
+          "endEvent": 1413,
+          "startMs": 2722880,
+          "endMs": 2922640
+        },
+        "sourceExcerpt": "support for alternative causal principles. But of course if that principle is true then apply it to whatever material object that God created first or maybe whatever is the largest material object maybe the universe or something like that. And it's going to have to follow that it was created out of some prior things or stuff as a material cause. Uh and at least under traditional theism which affirms creation",
+        "sourceExcerptAudit": {
+          "sourceExact": true,
+          "wholeWordBoundaries": true,
+          "tokenCount": 71,
+          "characterCount": 411
+        },
+        "attributionConfidence": "high",
+        "audioVerified": false,
+        "quoteEligible": true,
+        "burdenContact": {
+          "polarity": "support",
+          "tier": "central",
+          "bridgeId": "con-central-symmetry-burden"
+        },
+        "response": {
+          "class": "diagnostic-defeat",
+          "decisiveTargetIds": [
+            "pro-irrelevant-differences-demand-explanation",
+            "pro-limits-as-comparative-theoretical-cost"
+          ],
+          "components": [
+            {
+              "componentId": "con-rival-causal-principle-symmetry-component-01",
+              "targetMoveId": "pro-irrelevant-differences-demand-explanation",
+              "text": "The same inductive and relevant-difference support can motivate rival causal principles whose consequences conflict with traditional theism.",
+              "contacted": true,
+              "decisive": true
+            },
+            {
+              "componentId": "con-rival-causal-principle-symmetry-component-02",
+              "targetMoveId": "pro-limits-as-comparative-theoretical-cost",
+              "text": "Comparative use requires accounting for similarly supported rival principles rather than counting only the limits principle's preferred cost.",
+              "contacted": true,
+              "decisive": true
+            }
+          ],
+          "rationale": "The reply identifies symmetrical support as an undercutting defect and states the consequence that traditional theism faces contrary causal requirements unless the symmetry is broken.",
+          "responsivenessWithinClass": {
+            "value": 90,
+            "rationale": "It explicitly targets the kind of support offered for the limits principle and supplies a concrete conflicting consequence."
+          },
+          "responsiveness": {
+            "value": 98,
+            "rationale": "It explicitly targets the kind of support offered for the limits principle and supplies a concrete conflicting consequence."
+          }
+        },
+        "precisionFindings": {
+          "propositionRecoverability": "complete",
+          "termStability": "stable",
+          "scopeStability": "stable",
+          "qualificationExplicitness": "explicit",
+          "rationale": "The rival-principle challenge and its application to traditional creation are clearly recoverable and appropriately scoped."
+        },
+        "calibrationFindings": {
+          "assertedForce": "probability",
+          "warrantFit": "matched",
+          "qualificationStatus": "explicit",
+          "uncertaintyAcknowledged": "yes",
+          "rationale": "The claim is conditional on parallel support and traditional theism, rather than presented as an unconditional refutation."
+        },
+        "charity": {
+          "tested": true,
+          "alternative": "The limits principle may have distinctive support not shared by material-causal principles.",
+          "decisiveQualification": "Until that distinctive support is supplied, the parallel motivations generate an unresolved symmetry."
+        },
+        "ratings": {
+          "logicalCoherence": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "evidenceWarrant": {
+            "value": 80,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (79 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+          },
+          "relevanceBurden": {
+            "value": 87,
+            "rationale": "It directly supplies the central symmetry-burden bridge and identifies the required contrary consequence."
+          },
+          "representationalCharity": {
+            "value": 87,
+            "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+          }
+        },
+        "evidenceBasis": "The excerpt says parallel support yields alternative causal principles and applies one to a first created material object, conflicting with creation without material cause.",
+        "assessmentConfidence": "high"
+      }
+    }
+  ]
+}
