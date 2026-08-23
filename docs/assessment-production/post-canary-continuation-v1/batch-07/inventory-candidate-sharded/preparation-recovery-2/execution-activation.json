@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recursive-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-07-inventory-preparation-recovery-2",
+  "status": "batch-07-inventory-preparation-selection-status-correction-authorized-once",
+  "activatedAt": "2026-08-23T02:57:47Z",
+  "checkpointCommit": "1280dd7cfbef668908f27d650f5e27dcb69e2432",
+  "branch": "main",
+  "originMain": "1280dd7cfbef668908f27d650f5e27dcb69e2432",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/preparation-recovery-2/diagnosis.json",
+    "sha256": "28a2b4a820ed77001742e4ebe59a66c2ec9202cdd1bb1412cd11570bf1c36890"
+  },
+  "correctionPlan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/preparation-recovery-2/correction-plan.json",
+    "sha256": "9868e37b7616d2923de5d26b5a0fbbcbe6e872a61cbdccd5952f31deb6f81218"
+  },
+  "correction": {
+    "target": "scripts/prepare-assessment-production-post-canary-batch-07-inventory.mjs",
+    "preimageSha256": "31cd18629e37755ed6de86c3478a560ff1b0a09aa46beda88dbd2e157b46a613",
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/preparation-recovery-2/proposed-preparation.mjs",
+    "sourceSha256": "98e05fa1c493b7c86a55feb9c0d792452595ed78a9d354992236de3dd6b0a97b",
+    "writeMode": "byte-for-byte-copy",
+    "changedLines": 1
+  },
+  "execution": {
+    "attempts": 1,
+    "ordinaryRetries": 0,
+    "furtherRecoveriesAuthorized": 0,
+    "correctedPreviewPasses": 1,
+    "models": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAction": "replace-preparer-byte-for-byte-and-run-one-final-corrected-preview"
+}
