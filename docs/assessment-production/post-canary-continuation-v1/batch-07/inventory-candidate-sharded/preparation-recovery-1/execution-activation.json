@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0-assessment-production-bounded-recovery-activation",
+  "protocolId": "assessment-production-post-canary-batch-07-inventory-preparation-recovery-1",
+  "status": "batch-07-inventory-preparation-guide-correction-authorized-once",
+  "activatedAt": "2026-08-23T02:54:29Z",
+  "checkpointCommit": "d62326df63b1a241a0d763188b44902fd769d5b6",
+  "branch": "main",
+  "originMain": "d62326df63b1a241a0d763188b44902fd769d5b6",
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/preparation-recovery-1/diagnosis.json",
+    "sha256": "291dc42236f8fad7b5c4342e3bf8cd6015dcf640e6e67b082eff301dd386b58b"
+  },
+  "correctionPlan": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/preparation-recovery-1/correction-plan.json",
+    "sha256": "d53cfc397caf72f51cf1973e2f8617f30c73983946d76c82ef39c049e21b1d58"
+  },
+  "proposedGuide": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/preparation-recovery-1/proposed-candidate-sharded-inventory-guide.md",
+    "sha256": "cdb74735ac43fc35a767e5caf2b8bcf9d1a6f75a9192ead63d8e85ed0ff443a3"
+  },
+  "execution": {
+    "target": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/candidate-sharded-inventory-guide.md",
+    "targetMustBeAbsent": true,
+    "attempts": 1,
+    "retries": 0,
+    "previewValidationPasses": 1,
+    "models": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "standingAuthorization": "docs/assessment-production/post-canary-continuation-v1/batch-07/standing-authorization.json",
+  "nextAction": "execute-byte-for-byte-guide-write-and-one-inventory-preparation-preview"
+}
