@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0-assessment-production-preregistration-preimage-reconstruction-overlay-rule",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preregistration-preimage-overlay",
+  "status": "batch-07-independent-judgment-preregistration-preimage-overlay-frozen",
+  "frozenAt": "2026-08-23T19:43:00Z",
+  "preparationTest": {
+    "path": "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs",
+    "frozenCommit": "c78e661ffac94553a2f85f0241985f96094d9a5c",
+    "manifestAuthenticatedPreimageSha256": "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6",
+    "acceptedCorrectedSha256": "537203100681414d00978aa841ee2a5f58c546981199c53a5de6c89e30ecb34f"
+  },
+  "reconstruction": {
+    "method": "read-exact-frozen-git-blob-and-apply-two-ordered-single-occurrence-replacements-in-memory",
+    "replacements": [
+      {
+        "before": "assert.equal(preparation.audioPolicy.pendingAttributionVerificationMoves.length, 2);",
+        "after": "assert.equal(preparation.audioPolicy.pendingAttributionVerificationMoves.length, 0);"
+      },
+      {
+        "before": "assert.equal(movesAcrossPasses, 400);",
+        "after": "assert.equal(movesAcrossPasses, 374);"
+      }
+    ],
+    "requireFrozenPreimageAgainstUnchangedManifest": true,
+    "requireReconstructedPostimageAgainstAcceptedCorrectedSha256": true,
+    "requireCurrentCorrectedTestAgainstAcceptedCorrectedSha256": true,
+    "allOtherPreparationSourcesUseDirectCurrentByteAuthentication": true
+  },
+  "correctedPreregistrationHarness": {
+    "path": "scripts/preregister-assessment-production-post-canary-batch-07-independent-judgments.mjs",
+    "preimageSha256": "7d99369d80682ab2d325d8f0bcdd1f161de1b07e0d745b1384e4c20f936fb581",
+    "postimageSha256": "a09ddc95fa60ba409226caa17880e1e7d9b67eaf150b5cd24c86024c15414a95"
+  },
+  "protectedEvidence": {
+    "preparationManifestPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-manifest.json",
+    "preparationManifestSha256": "5ddaa7fa7c454fb603fb6c07866c5428b37a2abb7f7a5636a451d70970281bce",
+    "coupledManifestTestSha256": "e4bb6d06be6032f422f324559c81d8c2629479e0017155bfa188515c26f2048c",
+    "previousPreimageRulePath": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-test-harness-recovery/preimage-reconstruction-rule.json",
+    "previousPreimageRuleSha256": "72f677ad0fce8621fca68fc320b693ec32d6b489f126314ea6a731ec9aecce33",
+    "schemaSetDigest": "b234f28f02b2151ed87b6428d0df2929dcc0546f221113c5ec8a9ebdc5de846f",
+    "packetSetDigest": "8418169a92fd47e71791749ad324979833d6bdf4cae630d8463f2ea91e2d1536"
+  },
+  "executionPolicy": {
+    "correctedPreviewPassesMaximum": 1,
+    "manifestFreezePassesMaximum": 1,
+    "manifestValidationPassesMaximum": 1,
+    "modelContextsBeforeBothGatesPassMaximum": 0,
+    "ordinaryRetriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  }
+}

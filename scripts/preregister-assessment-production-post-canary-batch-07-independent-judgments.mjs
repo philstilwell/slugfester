@@ -39,6 +39,14 @@ const SCRIPT =
   "scripts/preregister-assessment-production-post-canary-batch-07-independent-judgments.mjs";
 const TEST =
   "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-manifest.mjs";
+const PREPARATION_TEST =
+  "scripts/test-assessment-production-post-canary-batch-07-independent-judgment-preparation.mjs";
+const PREPARATION_TEST_FROZEN_COMMIT =
+  "c78e661ffac94553a2f85f0241985f96094d9a5c";
+const PREPARATION_TEST_FROZEN_SHA256 =
+  "ac8223b45c19a8d3e32f4af7ed8cd1c5f7aba24af593e5a1fe5be9a62217c9d6";
+const PREPARATION_TEST_ACCEPTED_SHA256 =
+  "537203100681414d00978aa841ee2a5f58c546981199c53a5de6c89e30ecb34f";
 const CODEX_PATH = "/Applications/ChatGPT.app/Contents/Resources/codex";
 const REMOVED_API_ENVIRONMENT_VARIABLES = [
   "OPENAI_API_KEY",
@@ -63,6 +71,15 @@ const EXPECTED_DEBATES = [
 
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
 const exists = (file) => access(file).then(() => true, () => false);
+const replaceExactlyOnce = (source, before, after) => {
+  const first = source.indexOf(before);
+  assertV4(first >= 0, `preimage replacement source missing: ${before}`);
+  assertV4(
+    source.indexOf(before, first + before.length) === -1,
+    `preimage replacement source repeated: ${before}`
+  );
+  return `${source.slice(0, first)}${after}${source.slice(first + before.length)}`;
+};
 const allBooleanLeavesTrue = (value) => {
   if (typeof value === "boolean") return value;
   if (!value || typeof value !== "object") return true;
@@ -181,8 +198,46 @@ assertV4(
     canaryAnalysis.acceptance.scores === 0,
   "the promoted twenty-context independent-judgment evidence is unavailable"
 );
+assertV4(
+  preparation.sourceHashes[PREPARATION_TEST] === PREPARATION_TEST_FROZEN_SHA256,
+  `${PREPARATION_TEST}: frozen preparation-manifest digest drifted`
+);
+const frozenPreparationTest = execFileSync(
+  "git",
+  ["show", `${PREPARATION_TEST_FROZEN_COMMIT}:${PREPARATION_TEST}`],
+  { encoding: "utf8" }
+);
+assertV4(
+  sha256(frozenPreparationTest) === PREPARATION_TEST_FROZEN_SHA256,
+  `${PREPARATION_TEST}: frozen Git preimage drifted`
+);
+const reconstructedPreparationTest = [
+  [
+    "assert.equal(preparation.audioPolicy.pendingAttributionVerificationMoves.length, 2);",
+    "assert.equal(preparation.audioPolicy.pendingAttributionVerificationMoves.length, 0);",
+  ],
+  [
+    "assert.equal(movesAcrossPasses, 400);",
+    "assert.equal(movesAcrossPasses, 374);",
+  ],
+].reduce(
+  (source, [before, after]) => replaceExactlyOnce(source, before, after),
+  frozenPreparationTest
+);
+assertV4(
+  sha256(reconstructedPreparationTest) === PREPARATION_TEST_ACCEPTED_SHA256,
+  `${PREPARATION_TEST}: accepted correction reconstruction drifted`
+);
+assertV4(
+  sha256(await readFile(PREPARATION_TEST)) === PREPARATION_TEST_ACCEPTED_SHA256,
+  `${PREPARATION_TEST}: accepted corrected source drifted`
+);
 for (const [file, digest] of Object.entries(preparation.sourceHashes)) {
-  assertV4(sha256(await readFile(file)) === digest, `${file}: preparation source drifted`);
+  if (file === PREPARATION_TEST) continue;
+  assertV4(
+    sha256(await readFile(file)) === digest,
+    `${file}: preparation source drifted`
+  );
 }
 
 const contexts = preparation.contexts.map((context, contextIndex) => ({
