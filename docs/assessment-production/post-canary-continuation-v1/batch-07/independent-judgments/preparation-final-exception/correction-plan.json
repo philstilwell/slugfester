@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0-assessment-production-user-authorized-final-exception-plan",
+  "protocolId": "assessment-production-post-canary-batch-07-independent-judgment-preparation-final-exception",
+  "status": "batch-07-independent-judgment-preparation-final-move-coverage-correction-frozen-not-executed",
+  "frozenAt": "2026-08-23T18:26:00Z",
+  "authorization": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-final-exception/authorization.txt",
+    "sha256": "da07b22ccf42d2b55f0d0973bab2ba41347d5962188cb07929c473cc1cbe035f",
+    "scope": "replace-only-stale-two-pass-move-coverage-expectation-400-with-374",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "diagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-recovery-2/final-failure-diagnosis.json",
+    "sha256": "bd269f109c26357bceeb782833a9af5b13a4143c37254f3e8ff2c74ca824d429",
+    "status": "batch-07-independent-judgment-preparation-third-stale-expectation-diagnosed-no-correction-authorized"
+  },
+  "correction": {
+    "target": "scripts/prepare-assessment-production-post-canary-batch-07-independent-judgments.mjs",
+    "preimageSha256": "06a710321cb494355b070e2505ddf9a52a618783cbdf1894860ab33f63370fd8",
+    "source": "docs/assessment-production/post-canary-continuation-v1/batch-07/independent-judgments/preparation-final-exception/proposed-preparation.mjs",
+    "sourceSha256": "161807ff77e8a8c43d923a6475389d43dbc32336dc60c1067ff98db35f8e0b3e",
+    "writeMode": "byte-for-byte-copy",
+    "changedLines": 1,
+    "oldExpectation": 400,
+    "newExpectation": 374
+  },
+  "frozenEvidence": {
+    "inventoryAnalysisPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/inventory-candidate-sharded/inventory-analysis.json",
+    "inventoryAnalysisSha256": "3337025b543a9f1e544817dfc0d7338ce065416eda65c66e28a218e25c16c167",
+    "uniqueMoves": 187,
+    "independentPassesPerMove": 2,
+    "exactTwoPassCoverage": 374
+  },
+  "executionPolicy": {
+    "attempts": 1,
+    "ordinaryRetries": 0,
+    "furtherRecoveriesAuthorized": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "preserved": {
+    "inventories": true,
+    "sources": true,
+    "packets": true,
+    "scores": true,
+    "modelSettings": true,
+    "priorRecoveryEvidence": true
+  },
+  "nextAction": "commit-and-push-the-frozen-exception-before-activation"
+}
