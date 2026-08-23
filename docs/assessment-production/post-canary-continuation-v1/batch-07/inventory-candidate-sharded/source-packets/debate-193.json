@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-candidate-sharded-inventory",
+  "debateNumber": "193",
+  "debateId": "crossan-licona-historical-jesus-2018",
+  "motion": "What can historians verify about Jesus, and do the sources support his divine identity and bodily resurrection?",
+  "sides": {
+    "pro": {
+      "label": "Metaphorical resurrection",
+      "speakers": [
+        "John Dominic Crossan"
+      ]
+    },
+    "con": {
+      "label": "Bodily resurrection",
+      "speakers": [
+        "Michael Licona"
+      ]
+    }
+  },
+  "durationSeconds": 7807,
+  "eventCount": 1133,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/p_7bQlh8uWc/transcript.txt",
+    "transcriptSha256": "7de20c823c86d5c1d841985e4d2a27ac1d1ff0cad1669073e669924137696b14",
+    "eventsPath": ".assessment-cache/captions/p_7bQlh8uWc/events.json",
+    "eventsSha256": "e04f4d9f144f58444d8ece0010269735aceec8b51ea831cd5b430d05de759c8d",
+    "localManifestPath": ".assessment-cache/captions/p_7bQlh8uWc/manifest.json",
+    "localManifestSha256": "152a512066c8ef53986ea322639f60f4b49ac89bc79422c0c7fcd3a6063b182e"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-07/debate-193.jsonl",
+    "sourceLedgerSha256": "cf38eb2c35b67ef90783b44c272551458efc00773f597ca1560200ee3bbbfa94",
+    "sourceLedgerBytes": 132392,
+    "sourceLedgerEventCount": 1133,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/source-preparation/plans/debate-193.json",
+    "partitionPlanSha256": "2a8638b5c2638def2c57ca1572992682a21ce18da513e06230a85287b38cf058",
+    "partitionChunks": 3,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}

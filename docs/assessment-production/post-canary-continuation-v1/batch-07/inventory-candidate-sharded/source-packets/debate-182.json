@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-candidate-sharded-inventory-source-packet",
+  "protocolId": "assessment-production-post-canary-batch-07-candidate-sharded-inventory",
+  "debateNumber": "182",
+  "debateId": "white-ally-sin-salvation-quran-bible-2013",
+  "motion": "Which account of sin and salvation—the Qur'an's direct forgiveness and moral accounting or the Bible's grace through Christ's atonement—is more coherent and scripturally grounded?",
+  "sides": {
+    "pro": {
+      "label": "Salvation through Christ's atonement",
+      "speakers": [
+        "James White"
+      ]
+    },
+    "con": {
+      "label": "Direct forgiveness and accountable deeds",
+      "speakers": [
+        "Shabir Ally"
+      ]
+    }
+  },
+  "durationSeconds": 9064,
+  "eventCount": 3834,
+  "sourceChain": {
+    "transcriptPath": ".assessment-cache/captions/ee9c45dSHiY/transcript.txt",
+    "transcriptSha256": "3b24593eeddaa140ff5f18658d71c0774682f1d2b6c7bf21d1e0a25b85fdef44",
+    "eventsPath": ".assessment-cache/captions/ee9c45dSHiY/events.json",
+    "eventsSha256": "5731ae17a1d32a316c95d05cf206b30ba91098640deeb2862b10c8732a54400a",
+    "localManifestPath": ".assessment-cache/captions/ee9c45dSHiY/manifest.json",
+    "localManifestSha256": "a81cb4f4dbd8b8213705891dc0a4debc61fb4901c34fb919057f34fa8d97fc21"
+  },
+  "transportChain": {
+    "format": "jsonl rows [eventIndex,startMs,durationMs,text]",
+    "sourceLedgerPath": ".assessment-cache/compact-ledgers/post-canary-continuation-v1-batch-07/debate-182.jsonl",
+    "sourceLedgerSha256": "a33208832a3e88c7b32341829b272f97c178f88a2852fd0dc2bdc3cc23455d0d",
+    "sourceLedgerBytes": 225013,
+    "sourceLedgerEventCount": 3834,
+    "replayExactToCanonicalEventProjection": true,
+    "originalEventsFileHashLocked": true,
+    "canonicalEventFields": [
+      "startMs",
+      "durationMs",
+      "text"
+    ],
+    "optionalEventMetadataOmitted": [],
+    "partitionPlanPath": "docs/assessment-production/post-canary-continuation-v1/batch-07/source-preparation/plans/debate-182.json",
+    "partitionPlanSha256": "9b7394f60aaac1fde2cf0bf6dfca1e08149e40c0de8f946c0684bcca9a8c9512",
+    "partitionChunks": 5,
+    "modelDeliveredLedgerFormat": "jsonl rows [eventIndex,startMs,durationMs,lexicalTokenCount,text]"
+  },
+  "modelInputBoundary": {
+    "candidateShardedInventoryOnly": true,
+    "chronologyFallbackRequired": true,
+    "postCanaryProductionBatch": true,
+    "productionCanary": false,
+    "developmentValidationOnly": false,
+    "stagingOnlyIntermediateOutput": true,
+    "scoreBlind": true,
+    "integerRoundedTiesPermitted": true,
+    "candidateCensusAvailableToPlanner": true,
+    "candidateEvidenceExcerptsUnavailableToPlanner": true,
+    "candidateSelectionUnavailableToPlanner": true,
+    "plannerWritableDomainsLimitedToRoutesAndSections": true,
+    "immutableAcceptedPlanRequiredBeforeSidePacketFreeze": true,
+    "completeSideCandidateEvidenceAvailableOnlyToCorrespondingSelector": true,
+    "otherSideCandidateEvidenceUnavailableToSelector": true,
+    "otherSideSelectorOutputUnavailableToSelector": true,
+    "inventoryPlanExecutionMetadataUnavailableToSelector": true,
+    "preferredMoveKindAndConstructiveFallbackRequiredFromSelector": true,
+    "fallbackConditionAppliedOnlyByRepository": true,
+    "failedProductionCanaryOutputsUnavailable": true,
+    "validationCohortOutputsUnavailable": true,
+    "legacyAssessmentsUnavailable": true,
+    "priorJudgmentsUnavailable": true,
+    "ratingsUnavailable": true,
+    "scoresAndCalculatedTotalsUnavailable": true,
+    "winnersTagsAndPublicationProseUnavailable": true,
+    "otherDebatesUnavailable": true
+  }
+}
