@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-07-debate-80-publication-repair-diagnosis",
+  "status": "frozen-diagnosed-batch-07-debate-80-five-critique-word-overruns",
+  "frozenAt": "2026-08-23T22:33:14.000Z",
+  "productionCanary": false,
+  "batchNumber": 7,
+  "stagingOnly": true,
+  "classification": "five-critique-word-boundary-failures-in-complete-rejected-output",
+  "preservedFailure": {
+    "originalAttemptCount": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "acceptedOutput": false,
+    "completeRejectedOutputPreserved": true,
+    "rejectedOutputSha256": "f5a6fac770283021bec0a80ee486a4d5156d4531a2e2d9486b9512fe04bbedfa",
+    "validationMessage": "Error: con-defeasible-explanatory-default: critique outside 105–130 words\n    at assertV4 (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/v4-lean-production.mjs:69:25)\n    at validateCheckpointV22PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-checkpoint-v2.2-publication-validation.mjs:99:5)\n    at validatePostCanaryBatch07PublicationOutput (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/lib/assessment-production-post-canary-batch-07-publication-validation.mjs:8:10)\n    at runContext (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-07-publication-resumption.mjs:256:29)\n    at async worker (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-07-publication-resumption.mjs:385:22)\n    at async Promise.all (index 0)\n    at async runPool (file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-07-publication-resumption.mjs:388:3)\n    at async file:///Users/philstilwell/Documents/SLUGFESTER.com/scripts/run-assessment-production-post-canary-batch-07-publication-resumption.mjs:413:24"
+  },
+  "failedFields": [
+    {
+      "moveId": "con-defeasible-explanatory-default",
+      "path": "moveProse.con-defeasible-explanatory-default.critique",
+      "words": 131,
+      "characters": 1014,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 1
+    },
+    {
+      "moveId": "con-rival-causal-principle-symmetry",
+      "path": "moveProse.con-rival-causal-principle-symmetry.critique",
+      "words": 131,
+      "characters": 983,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 1
+    },
+    {
+      "moveId": "pro-symmetry-breaker-burden",
+      "path": "moveProse.pro-symmetry-breaker-burden.critique",
+      "words": 132,
+      "characters": 988,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 2
+    },
+    {
+      "moveId": "pro-mentality-and-value-producing-power",
+      "path": "moveProse.pro-mentality-and-value-producing-power.critique",
+      "words": 131,
+      "characters": 1017,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 1
+    },
+    {
+      "moveId": "con-arbitrariness-inheritance-scope",
+      "path": "moveProse.con-arbitrariness-inheritance-scope.critique",
+      "words": 132,
+      "characters": 1006,
+      "sentences": 4,
+      "orderedLabelsPassed": true,
+      "terminalPunctuationPassed": true,
+      "excessWordsAboveAcceptanceMaximum": 2
+    }
+  ],
+  "failedFieldCount": 5,
+  "excessWordsTotal": 7,
+  "preservedFields": {
+    "moveCount": 19,
+    "repairFields": 5,
+    "validMoveProseEntries": 14,
+    "everyOtherOutputFieldImmutable": true,
+    "acceptedDebate193Preserved": true,
+    "acceptedDebate193Sha256": "291230db8ee10cf04eac62d586d2fad074b5521808e56d76f8e25882b616c5c1",
+    "eightContextsUnattempted": true
+  },
+  "diagnosticReplay": {
+    "originalOutputModified": false,
+    "persistedCorrectedOutput": false,
+    "hypotheticalWordsRemoved": 7,
+    "result": {
+      "status": "passed",
+      "debateNumber": "80",
+      "moves": 19,
+      "critiques": 19,
+      "minimumCritiqueCharacters": 959,
+      "tags": 0,
+      "quoteExactSourceMatches": 2,
+      "overallCommentarySides": 2,
+      "noveltyItems": 18,
+      "introducedItems": 4,
+      "newArguments": 4,
+      "aiExtensionSides": 2,
+      "calculatedScoresAuthoredByModel": 0,
+      "lockedScoresUnchanged": true
+    }
+  },
+  "minimumBoundedRepair": {
+    "operation": "three-field-disjoint-publication-repair-packets-partitioned-two-two-one",
+    "reasonMinimum": "Five diagnosed writable fields with a maximum of two fields per packet require three packets.",
+    "packetCount": 3,
+    "partition": [
+      [
+        "moveProse.con-defeasible-explanatory-default.critique",
+        "moveProse.con-rival-causal-principle-symmetry.critique"
+      ],
+      [
+        "moveProse.pro-symmetry-breaker-burden.critique",
+        "moveProse.pro-mentality-and-value-producing-power.critique"
+      ],
+      [
+        "moveProse.con-arbitrariness-inheritance-scope.critique"
+      ]
+    ],
+    "attemptsPerPacket": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "recursiveRecoveryMaximum": 1,
+    "mergeRule": "Replace only the five authorized critiques in the complete rejected Debate 80 output, preserve every other field, then validate the complete debate output and resume exactly eight untouched contexts."
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/packets/debate-80.json": "37567d6315f44a2a02b24254e41c7755a70e79455034726ec55d059da2a262cb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/repair-1/complete-debate-validation.json": "83f6776e96319d22bd3392ffece3b523bf5760c537e88b4c089cd821fd1c5dea",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/repair-1/merge-audit.json": "ee7b9abe3dae7fec3d5d56c1e9ca2952163e028ca5ce0276e1154d0a4ec722ab",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/repair-1/merged/debate-193.json": "291230db8ee10cf04eac62d586d2fad074b5521808e56d76f8e25882b616c5c1",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-1/execution-activation.json": "6dc11e44f802e7612c060b6aa84c98aafabe788e564e18b3a55f7b5cb53d6ad3",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-1/execution-preparation-manifest.json": "3829ac322ab2590587b1e073b805e47a983dba02f0818a22f4d02cadc8babdd8",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-1/model-execution.json": "6c4d1ee225f223a0228185e1bdc7d166fa7d79cbaa581a21a010c0b2837ad9be",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-1/outputs/debate-80.json": "f5a6fac770283021bec0a80ee486a4d5156d4531a2e2d9486b9512fe04bbedfa",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-1/provenance/debate-80.json": "239a784eb2cb59155b0d62067582a11b48096196b1fa85c7e01895b94004060f",
+    "docs/assessment-production/post-canary-continuation-v1/batch-07/publication-reconstruction/resumption-1/validations/debate-80.json": "57ee897c15e1853e9c4351601772da022e5a2abf9c4de689793398cbf6120d06"
+  },
+  "directIncrementalCostUsd": 0,
+  "userAuthorization": {
+    "instruction": "The Batch 7 standing authorization permits deterministic diagnosis and the minimum three field-disjoint repair packets for five Debate 80 critique overruns.",
+    "subscriptionModel": "5.6 Sol",
+    "reasoningEffort": "low",
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "authorization": {
+    "repairPreparation": true,
+    "repairModelExecution": false,
+    "deterministicMergeAndValidation": false,
+    "eightContextResumption": false,
+    "paidServices": false,
+    "productionMutation": false,
+    "nextBatchSelection": false
+  },
+  "nextAuthorizedAction": "prepare-three-field-disjoint-debate-80-publication-repair-packets"
+}
