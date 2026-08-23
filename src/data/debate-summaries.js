@@ -235,11 +235,11 @@ export const debateSummaries = [
     "number": "06",
     "title": "Dinesh D'Souza vs Matt Dillahunty: Does God Exist? What Is a Woman?",
     "label": "Theism and public reason",
-    "date": "2026-05-28",
+    "date": "2026-08-23",
     "duration": "1 hr 59 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=mEM1AhlH9eI",
     "motion": "Should beliefs about God, gender, politics, and social welfare be guided by faith-informed inference, empirical evidence, or secular-humanist consequences?",
-    "summary": "D'Souza defends theistic and conservative inferences; Dillahunty answers with burden-of-proof skepticism, science, and secular human welfare.",
+    "summary": "D'Souza defended faith-informed inference, biological institutions, and market incentives; Dillahunty answered with evidential burdens, institutional neutrality, and consequence-focused social welfare.",
     "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
@@ -254,30 +254,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 65,
-      "con": 76
+      "pro": 77,
+      "con": 87
     },
     "sections": [
       {
-        "title": "Religion and public reason"
+        "title": "Evidence, uncertainty, and faith-informed inference"
       },
       {
-        "title": "Unknowns, faith, and burden"
+        "title": "Scientific authority, correction, and institutional incentives"
       },
       {
-        "title": "Science, climate, and expertise"
+        "title": "Gender, human nature, autonomy, and public institutions"
       },
       {
-        "title": "Morality, purpose, and philosophy"
+        "title": "Markets, inequality, labor, and human welfare"
       },
       {
-        "title": "Sex, gender, and policy"
-      },
-      {
-        "title": "Conscience and public institutions"
-      },
-      {
-        "title": "Predictions, markets, and health care"
+        "title": "Health-care access, incentives, and reciprocal social dependence"
       }
     ]
   },
@@ -1624,11 +1618,11 @@ export const debateSummaries = [
     "number": "36",
     "title": "Sean Carroll vs Hans Halvorson: Metaphysics",
     "label": "Metaphysics and scientific worldview",
-    "date": "2026-05-30",
+    "date": "2026-08-23",
     "duration": "1 hr 33 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Ku6tLuEjmTY",
     "motion": "How should scientific knowledge be integrated into naturalist and theistic worldviews, and do cosmology, fine-tuning, quantum mechanics, consciousness, morality, and meaning favor either metaphysical picture?",
-    "summary": "Carroll defends naturalism as a self-contained empirical worldview; Halvorson defends theism while sharply separating scientific facts from metaphysical overreach.",
+    "summary": "Carroll defends revisable naturalism across science and value, while Halvorson argues scientific completeness underdetermines theism and offers qualified moral and existential alternatives.",
     "sides": {
       "pro": {
         "name": "Naturalist",
@@ -1643,29 +1637,23 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 84,
-      "con": 83
+      "con": 87
     },
     "sections": [
       {
-        "title": "Integrating science and worldview"
+        "title": "Scientific Knowledge, Revelation, and Worldview Method"
       },
       {
-        "title": "Cosmology and explanation"
+        "title": "Cosmic Origins, Contingency, and Fine-Tuning"
       },
       {
-        "title": "Revelation and scientific silence"
+        "title": "Quantum Mechanics, Metaphysical Underdetermination, and Agency"
       },
       {
-        "title": "Fine-tuning and multiverse"
+        "title": "Consciousness, Physicalism, and Personhood"
       },
       {
-        "title": "Quantum mechanics and materialism"
-      },
-      {
-        "title": "Free will and personhood"
-      },
-      {
-        "title": "Faith, knowledge, morality, and meaning"
+        "title": "Morality, Suffering, Meaning, and Human Vocation"
       }
     ]
   },
@@ -1721,11 +1709,11 @@ export const debateSummaries = [
     "number": "38",
     "title": "Sean McDowell vs Bart Ehrman: The Moral Argument, Guilt, and the Teachings of Jesus",
     "label": "Moral objectivity and Christian ethics",
-    "date": "2026-05-31",
+    "date": "2026-08-23",
     "duration": "1 hr 04 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=Cz57BuQOCmQ",
     "motion": "Do Jesus' teachings and the West's moral transformation point to objective moral truths grounded beyond human preference, or can morality be explained as historically shaped human inclination without divine grounding?",
-    "summary": "McDowell presses Ehrman on moral realism, progress, guilt, and the authority of moral duties; Ehrman defends Jesus' historical influence while grounding morality in human nature, culture, and evolved social life.",
+    "summary": "McDowell presses objective obligation and progress; Ehrman explains universal charity historically while separating human moral experience from mind-independent grounding.",
     "sides": {
       "pro": {
         "name": "Moral realist",
@@ -1739,27 +1727,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 83,
-      "con": 78
+      "pro": 86,
+      "con": 82
     },
     "sections": [
       {
-        "title": "Jesus and moral transformation"
+        "title": "Objective Truth and Human Access"
       },
       {
-        "title": "Objective truth and access"
+        "title": "Cross-Cultural Commonality and Historical Variation"
       },
       {
-        "title": "Moral progress and ancient practices"
+        "title": "Jesus and the Universalization of Charity"
       },
       {
-        "title": "Evolution and moral explanation"
+        "title": "Inclination, Obligation, and Moral Progress"
       },
       {
-        "title": "Relativism and deep commitment"
-      },
-      {
-        "title": "Guilt and final grounding"
+        "title": "Guilt, Moral Practice, and Explanatory Scope"
       }
     ]
   },
@@ -3346,11 +3331,11 @@ export const debateSummaries = [
     "number": "73",
     "title": "Nathan Hawkins vs Joe Folley: Do We Really Have Free Will?",
     "label": "Libertarian freedom and compatibilism",
-    "date": "2026-06-11",
+    "date": "2026-08-23",
     "duration": "1 hr 24 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=I5uYVxLdaO0",
     "motion": "Does human freedom require libertarian alternative possibilities and sourcehood, or can compatibilist notions of will, responsibility, and practical agency survive determinism?",
-    "summary": "Hawkins defends libertarian free will through deliberative experience, neuroscience, and live options; Folley argues that compatibilist agency preserves the important distinctions around choice and responsibility.",
+    "summary": "Hawkins defended alternative-capable self-formation through constrained indeterminacy; Folley more consistently grounded practical agency and responsibility in distinctions surviving determinism.",
     "sides": {
       "pro": {
         "name": "Libertarian freedom",
@@ -3364,27 +3349,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 84,
-      "con": 87
+      "pro": 83,
+      "con": 89
     },
     "sections": [
       {
-        "title": "Defining the camps"
+        "title": "The Required Standard of Human Freedom"
       },
       {
-        "title": "Neuroscience and Libet"
+        "title": "Deliberation and Genuine Alternative Possibilities"
       },
       {
-        "title": "Determined or random"
+        "title": "Indeterminism, Randomness, and Agential Selection"
       },
       {
-        "title": "Self and constraint"
+        "title": "Sourcehood, Character, and Formative Constraints"
       },
       {
-        "title": "Responsibility and live options"
-      },
-      {
-        "title": "Pragmatism and first-person agency"
+        "title": "Responsibility and Practical Agency Under Determinism"
       }
     ]
   },
@@ -4453,11 +4435,11 @@ export const debateSummaries = [
     "number": "97",
     "title": "Tom Holland vs A. C. Grayling: Did Christianity Give Us Our Human Values?",
     "label": "Human values and Christian inheritance",
-    "date": "2026-07-16",
+    "date": "2026-08-23",
     "duration": "1 hr 22 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=7eSyz3BaVK8",
     "motion": "Did Christianity give the modern West its human values, or do dignity, equality, humanism, science, and moral concern owe more to classical, Axial Age, Enlightenment, and secular sources?",
-    "summary": "Holland argues that modern human dignity, equality, rights, secularism, and humanism are deeply Christian inheritances; Grayling argues that Christianity borrowed from older traditions and often delayed or obstructed those values.",
+    "summary": "Holland traces Western dignity and reform through Christian transformation, while Grayling argues that classical, cross-cultural, Enlightenment, and secular traditions provide stronger plural genealogies.",
     "topicCategory": "religion-society-public-reason",
     "sides": {
       "pro": {
@@ -4472,27 +4454,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 76
+      "pro": 78,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Genealogy Of Values"
+        "title": "Origins of Universal Dignity and Equality"
       },
       {
-        "title": "Borrowing Or Reconfiguration"
+        "title": "Humanism, Compassion, and Cross-Cultural Parallels"
       },
       {
-        "title": "Classical Ethics And Bodies"
+        "title": "Slavery, Gender, Bodily Integrity, and Reform"
       },
       {
-        "title": "Slavery And Abolition"
+        "title": "Classical Borrowing, Suppression, and Preservation"
       },
       {
-        "title": "Renaissance And Science"
-      },
-      {
-        "title": "Humanism And Universality"
+        "title": "Science, Enlightenment, Rights, and Secularism"
       }
     ]
   },
@@ -6259,11 +6238,11 @@ export const debateSummaries = [
     "number": "135",
     "title": "Bart Ehrman vs Robert Price: Did Jesus Exist?",
     "label": "Historical Jesus, mythicism, and textual evidence",
-    "date": "2026-07-31",
+    "date": "2026-08-23",
     "duration": "2 hr 34 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=GzjYmpwbHEA",
     "motion": "Did a first-century Jewish preacher named Jesus exist behind the Christian traditions, or did Christianity develop from mythic and scriptural materials without such a person?",
-    "summary": "Ehrman argues that early, multiple sources and Paul's contact with Jesus' associates make historicity overwhelmingly likely; Price argues that the sources are late, derivative, and compatible with a mythic origin.",
+    "summary": "Ehrman advances convergent historical evidence for Jesus; Price challenges source independence, terrestrial Pauline readings, chronology, and whether an ordinary founder explains Christianity.",
     "sides": {
       "pro": {
         "name": "Historical Jesus",
@@ -6278,26 +6257,26 @@ export const debateSummaries = [
     },
     "score": {
       "pro": 86,
-      "con": 73
+      "con": 81
     },
     "sections": [
       {
-        "title": "Attestation and Independence"
+        "title": "Historical Method and Comparative Burden"
       },
       {
-        "title": "Paul, James, and Crucifixion"
+        "title": "Pauline Jesus and Textual Foundations"
       },
       {
-        "title": "Mythmaking and Historical Cores"
+        "title": "Gospel Traditions and Historical Recovery"
       },
       {
-        "title": "Josephus and External Silence"
+        "title": "External Attestation and Chronology"
       },
       {
-        "title": "Celestial Rulers and Dating"
+        "title": "Movement Origins, Jewish Context, and the Crucified Messiah"
       },
       {
-        "title": "Interpolation and Historical Probability"
+        "title": "Legendary Development and Explanatory Fit"
       }
     ]
   },
@@ -6524,11 +6503,11 @@ export const debateSummaries = [
     "number": "141",
     "title": "Ben Fischer vs Matt Dillahunty: Is There Good Evidence for God?",
     "label": "Axiomatic first cause and evidence",
-    "date": "2026-07-31",
+    "date": "2026-08-23",
     "duration": "2 hr 41 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=KByryLId3dQ",
     "motion": "Is there good evidence for God, rather than merely an asserted epistemic starting point?",
-    "summary": "Fischer argues that religious skepticism fails and that a first cause is axiomatic; Dillahunty argues that neither move supplies a structured, discriminating case for God.",
+    "summary": "Fischer defended axiomatic theism, causal agency, and testimony; Dillahunty pressed discriminating evidence, modal justification, consistent standards, and identifiable divine attribution.",
     "topicCategory": "cosmological-arguments",
     "sides": {
       "pro": {
@@ -6543,24 +6522,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 42,
-      "con": 89
+      "pro": 68,
+      "con": 86
     },
     "sections": [
       {
-        "title": "Religious Skepticism and the Motion"
+        "title": "Epistemic burden and the standard for good evidence"
       },
       {
-        "title": "First Cause and Temporal Regress"
+        "title": "First cause, temporal regress, and conscious will"
       },
       {
-        "title": "Axiom, Proof, and Formal Structure"
+        "title": "Axiomatic necessity or unsupported assumption"
       },
       {
-        "title": "Epistemic Trilemma and Positive Evidence"
+        "title": "Miracles, testimony, and personal experience"
       },
       {
-        "title": "Miracles, Alternatives, and Testimony"
+        "title": "Scope and consistency of theistic and scriptural evidence"
       }
     ]
   },
@@ -6616,11 +6595,11 @@ export const debateSummaries = [
     "number": "143",
     "title": "Tyler Vela vs Matt Dillahunty: Is There Good Evidence for God?",
     "label": "Transcendental logic and divine evidence",
-    "date": "2026-07-31",
+    "date": "2026-08-23",
     "duration": "2 hr 17 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=kf0Us__r9SQ",
     "motion": "Do laws of logic and other transcendental facts provide good evidence for a necessary personal God?",
-    "summary": "Vela argues that logic and objective transcendental facts require a necessary divine mind; Dillahunty argues that the grounding premise is unsupported and that personal warrant cannot replace publicly assessable evidence.",
+    "summary": "Vela grounds transcendental facts in a necessary personal mind; Dillahunty argues that the inference remains underspecified, comparatively unsupported, and evidentially nondiscriminating.",
     "sides": {
       "pro": {
         "name": "Transcendental theism",
@@ -6634,27 +6613,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 62,
-      "con": 82
+      "pro": 76,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Logic as a Divine Ground"
+        "title": "Whether Transcendental Facts Require a Ground"
       },
       {
-        "title": "Necessary Truths and Abstract Objects"
+        "title": "From Transcendental Facts to a Necessary Personal Mind"
       },
       {
-        "title": "Evidence, Falsifiability, and Signals"
+        "title": "Abduction, Alternatives, and Comparative Explanation"
       },
       {
-        "title": "Private Warrant and Public Argument"
+        "title": "Standards for Good Evidence and Sound Inference"
       },
       {
-        "title": "Testing the Proposed Foundation"
-      },
-      {
-        "title": "Revelation and Divine Hiddenness"
+        "title": "Divine Revelation, Hiddenness, and Evidential Expectations"
       }
     ]
   },
@@ -7744,11 +7720,11 @@ export const debateSummaries = [
     "number": "168",
     "title": "William Lane Craig vs Lawrence Krauss: Is There Evidence for God?",
     "label": "Evidence, cosmology, and divine explanation",
-    "date": "2026-08-01",
+    "date": "2026-08-23",
     "duration": "2 hr 14 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=TqANWuXQ3Z0",
     "motion": "Does the greater weight of philosophical, scientific, moral, and historical evidence support God's existence?",
-    "summary": "Craig argues that five observations raise the probability of theism; Krauss restricts evidence toward falsifiable empirical tests and offers natural cosmological alternatives.",
+    "summary": "Craig advances a cumulative theistic inference; Krauss counters that natural alternatives, evidential uncertainty, secular morality, and ordinary history prevent decisive discrimination.",
     "sides": {
       "pro": {
         "name": "Evidence for theism",
@@ -7762,21 +7738,27 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 85,
-      "con": 73
+      "pro": 83,
+      "con": 81
     },
     "sections": [
       {
-        "title": "What counts as evidence?"
+        "title": "Evidential Standards and the Cumulative Inference"
       },
       {
-        "title": "Contingency, cosmic origins, and nothing"
+        "title": "Contingency and the Necessary Explanatory Ground"
       },
       {
-        "title": "Fine-tuning, multiverses, and atypical observers"
+        "title": "Cosmic Beginning, Infinity, and Transcendent Causation"
       },
       {
-        "title": "Morality and resurrection evidence"
+        "title": "Fine-Tuning, Design, and Multiverse Selection"
+      },
+      {
+        "title": "Moral Objectivity and Divine Grounding"
+      },
+      {
+        "title": "Resurrection and Competing Historical Explanations"
       }
     ]
   },
@@ -7785,11 +7767,11 @@ export const debateSummaries = [
     "number": "169",
     "title": "John Lennox vs Lawrence Krauss: Science, the Universe, and the God Question",
     "label": "Cosmology, fine-tuning, and explanatory scope",
-    "date": "2026-08-01",
+    "date": "2026-08-23",
     "duration": "1 hr 20 min",
     "youtubeUrl": "https://www.youtube.com/watch?v=yotpTOKLZ00",
     "motion": "Do modern cosmology, fine-tuning, and the universe's existence support a divine mind or a self-contained natural account?",
-    "summary": "Lennox argues that scientific mechanisms leave room for personal explanation and that intelligibility and fine-tuning point to God; Krauss argues that physics progressively replaces purpose claims and can model universes arising without a creator.",
+    "summary": "Lennox argues that intelligibility, fine-tuning, and existence favor divine mind; Krauss counters with physical explanations, selection effects, and demanding evidential standards.",
     "sides": {
       "pro": {
         "name": "Theistic explanation",
@@ -7803,21 +7785,24 @@ export const debateSummaries = [
       }
     },
     "score": {
-      "pro": 82,
-      "con": 78
+      "pro": 76,
+      "con": 84
     },
     "sections": [
       {
-        "title": "Mechanism, agency, and purpose"
+        "title": "Existence, Nothing, and the Reach of Physical Cosmology"
       },
       {
-        "title": "Fine-tuning and observer selection"
+        "title": "Fine-Tuning, Selection Effects, and Life-Permitting Conditions"
       },
       {
-        "title": "A universe from nothing"
+        "title": "Cosmic Intelligibility, Natural Law, and Information"
       },
       {
-        "title": "Evidence, faith, and worldview reach"
+        "title": "Cosmic Purpose, Scale, and Human Significance"
+      },
+      {
+        "title": "Standards of Evidence, Revelation, and Supernatural Claims"
       }
     ]
   },
