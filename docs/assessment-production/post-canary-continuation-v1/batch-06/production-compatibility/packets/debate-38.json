@@ -1,0 +1,2138 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-06-compatibility-plan-packet",
+  "protocolId": "assessment-production-post-canary-batch-06-production-compatibility",
+  "status": "frozen-post-canary-batch-06-compatibility-plan-packet",
+  "productionCanary": false,
+  "batchNumber": 6,
+  "planningOnly": true,
+  "debateNumber": "38",
+  "debateId": "mcdowell-ehrman-moral-objectivity-2026",
+  "sources": {
+    "candidate": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-finalization/output-bundle/final-candidates/debate-38.json",
+    "finalLedger": "docs/assessment-production/post-canary-continuation-v1/batch-06/final-ledger/final-ledger.json",
+    "calculatedScores": "docs/assessment-production/post-canary-continuation-v1/batch-06/score-pass/calculated-scores.json",
+    "finalizationAudit": "docs/assessment-production/post-canary-continuation-v1/batch-06/publication-finalization/finalization-audit.json",
+    "renderingAudit": "docs/assessment-production/post-canary-continuation-v1/batch-06/rendering-verification/rendering-audit.json",
+    "events": ".assessment-cache/captions/Cz57BuQOCmQ/events.json"
+  },
+  "sourceLocks": {
+    "finalLedgerSha256": "04f77134850394dc19be1fa52b3b86fddd311102df5831adc2c2d4cbb89c9047",
+    "calculatedScoresSha256": "9befff26f6de3098f8f656a94d58e949ba4660a43450866a5fc8e2dd6acafcbb",
+    "finalizationAuditSha256": "2632e03f861dd572bc600d4da723c90d60b718c70969011b24e8f567cddceda7",
+    "renderingAuditSha256": "584d2d8c4b1e83bbfaacad8ddb15c97745959153eb8873d8ebd31f8985b9e1f8",
+    "finalCandidateSha256": "88038e617ed1534ebf5f2328d88fbf58bac6f2efecd7101432db20bc58a4f21e",
+    "eventsPath": ".assessment-cache/captions/Cz57BuQOCmQ/events.json",
+    "eventsSha256": "592d711bd3d7f2a31ea6032d3f75abd86ac74c349f75541bcd5d1e6aa06f9c1e",
+    "finalJudgmentSha256": "56a0e43a5917953020178797f70334a87c753aa1bf31fe0588580649965f7474"
+  },
+  "futurePaths": {
+    "stagedLedger": "docs/assessment-production/post-canary-continuation-v1/batch-06/production-compatibility/output-bundle/staged-ledgers/mcdowell-ehrman-moral-objectivity-2026.json",
+    "productionLedger": "docs/assessment-ledgers/mcdowell-ehrman-moral-objectivity-2026.json"
+  },
+  "proposedAdapterExactOutput": {
+    "schemaVersion": "1.0-assessment-production-post-canary-batch-06-site-ledger-adapter",
+    "protocolId": "assessment-production-post-canary-batch-06-production-compatibility",
+    "status": "frozen-post-canary-batch-06-site-ledger-adapter",
+    "productionCanary": false,
+    "batchNumber": 6,
+    "debateNumber": "38",
+    "debateId": "mcdowell-ehrman-moral-objectivity-2026",
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-06-single-deterministic-score-pass",
+    "sourceLocks": {
+      "finalLedgerSha256": "04f77134850394dc19be1fa52b3b86fddd311102df5831adc2c2d4cbb89c9047",
+      "calculatedScoresSha256": "9befff26f6de3098f8f656a94d58e949ba4660a43450866a5fc8e2dd6acafcbb",
+      "finalizationAuditSha256": "2632e03f861dd572bc600d4da723c90d60b718c70969011b24e8f567cddceda7",
+      "renderingAuditSha256": "584d2d8c4b1e83bbfaacad8ddb15c97745959153eb8873d8ebd31f8985b9e1f8",
+      "finalCandidateSha256": "88038e617ed1534ebf5f2328d88fbf58bac6f2efecd7101432db20bc58a4f21e",
+      "eventsPath": ".assessment-cache/captions/Cz57BuQOCmQ/events.json",
+      "eventsSha256": "592d711bd3d7f2a31ea6032d3f75abd86ac74c349f75541bcd5d1e6aa06f9c1e",
+      "finalJudgmentSha256": "56a0e43a5917953020178797f70334a87c753aa1bf31fe0588580649965f7474"
+    },
+    "scoringJudgment": {
+      "schemaVersion": "4.2.18.1-fresh-direct-primary-output",
+      "protocolId": "v4.2.18.1-corrected-fresh-direct-three",
+      "debateNumber": "38",
+      "debateId": "mcdowell-ehrman-moral-objectivity-2026",
+      "reviewerRole": "integrated-primary-judge",
+      "assessmentModel": "5.6 Sol",
+      "calibrationOnly": true,
+      "isolation": {
+        "legacyAssessmentsUnavailable": true,
+        "calculatedTotalsUnavailable": true,
+        "winnerLabelsUnavailable": true,
+        "otherJudgmentsUnavailable": true,
+        "assessmentProseUnavailable": true,
+        "contaminationDetected": false
+      },
+      "routes": [
+        {
+          "routeId": "pro-objective-grounding-route",
+          "side": "pro",
+          "description": "Establish that the West’s transformation toward universal concern is genuine moral progress by distinguishing changing applications from enduring moral principles and arguing that obligations, human dignity, moral comparison, and guilt require an objective standard grounded beyond evolved preference.",
+          "successCriteria": "The route succeeds if shared moral principles and the normative features of obligation, progress, condemnation, and guilt are shown to require a mind-independent standard, and if Jesus’s expansion of concern is coherently explained as fuller recognition or application of that standard.",
+          "motionBridge": {
+            "bridgeId": "pro-motion-objective-transformation",
+            "tier": "motion",
+            "description": "Show that Jesus’s historically transformative teaching points to genuine moral truth and progress rather than merely a change in prevailing inclination."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "pro-central-enduring-principles",
+              "tier": "central",
+              "description": "Distinguish enduring cross-cultural moral principles from historically variable practices and expansions of their scope."
+            },
+            {
+              "bridgeId": "pro-central-normative-authority",
+              "tier": "central",
+              "description": "Explain why obligations and rankings among conflicting inclinations require authority beyond contingently evolved feelings or preferences."
+            },
+            {
+              "bridgeId": "pro-central-objective-grounding",
+              "tier": "central",
+              "description": "Connect objective human value and moral duties to grounding beyond humanity, including the account of persons as bearing God’s image."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "pro-subsidiary-epistemic-method",
+              "tier": "subsidiary",
+              "description": "Defend access to immaterial moral truth by distinguishing moral inquiry from the methods appropriate to physical science and history."
+            },
+            {
+              "bridgeId": "pro-subsidiary-guilt-explanation",
+              "tier": "subsidiary",
+              "description": "Use guilt and the perceived need for forgiveness as phenomena requiring comparison between realist and inclination-based explanations."
+            }
+          ]
+        },
+        {
+          "routeId": "con-historical-inclination-route",
+          "side": "con",
+          "description": "Explain Western moral transformation as Jesus’s historically distinctive universalization of evolved and socially inherited concern, while arguing that human moral judgment, motivation, and practice can be grounded in constitutive inclinations without accessible objective values or divine grounding.",
+          "successCriteria": "The route succeeds if historical variation and subjective epistemic access undercut the inference to objective morality, while evolved human nature and historically developed commitments adequately explain moral conviction, action, guilt, and the emergence of universal charity.",
+          "motionBridge": {
+            "bridgeId": "con-motion-historical-transformation",
+            "tier": "motion",
+            "description": "Show that Jesus’s influence can explain a major historical change in Western moral inclination without establishing objective or divinely grounded moral truth."
+          },
+          "centralBridges": [
+            {
+              "bridgeId": "con-central-historical-variation",
+              "tier": "central",
+              "description": "Establish that universal concern for unrelated needy people emerged historically and was not a constant feature of human moral practice."
+            },
+            {
+              "bridgeId": "con-central-human-grounding",
+              "tier": "central",
+              "description": "Show how deeply rooted human nature and evolved inclinations can ground moral belief, motivation, and action without an external standard."
+            },
+            {
+              "bridgeId": "con-central-objectivity-access",
+              "tier": "central",
+              "description": "Explain why cognition through subjective human minds and persistent moral diversity limit any claimed access to objective moral values."
+            }
+          ],
+          "subsidiaryBridges": [
+            {
+              "bridgeId": "con-subsidiary-evolutionary-explanation",
+              "tier": "subsidiary",
+              "description": "Provide evolutionary accounts of altruistic dispositions and guilt that do not presuppose a real moral code."
+            },
+            {
+              "bridgeId": "con-subsidiary-history-metaethics-distinction",
+              "tier": "subsidiary",
+              "description": "Separate the historical account of Jesus’s ethical influence from the further metaethical claim that the resulting values are objective."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "sectionId": "objective-truth-and-access",
+          "title": "Objective Truth and Human Access",
+          "weightPercent": 18,
+          "rationale": "The debate requires both sides to address whether mind-independent moral truth can exist and be known despite every judgment being formed through human cognitive faculties."
+        },
+        {
+          "sectionId": "moral-commonality-and-variation",
+          "title": "Cross-Cultural Commonality and Historical Variation",
+          "weightPercent": 18,
+          "rationale": "Claims about shared principles and divergent practices determine whether the historical record supports enduring moral truth or historically contingent human morality."
+        },
+        {
+          "sectionId": "jesus-and-universal-charity",
+          "title": "Jesus and the Universalization of Charity",
+          "weightPercent": 22,
+          "rationale": "The scope and meaning of Jesus’s extension of care beyond kin and social groups connects the agreed historical transformation directly to the competing explanations named in the motion."
+        },
+        {
+          "sectionId": "inclination-obligation-and-progress",
+          "title": "Inclination, Obligation, and Moral Progress",
+          "weightPercent": 27,
+          "rationale": "The central normative clash is whether evolved inclinations can ground duties and comparisons among competing impulses or whether genuine obligation and progress require an objective standard."
+        },
+        {
+          "sectionId": "guilt-practice-and-explanatory-scope",
+          "title": "Guilt, Moral Practice, and Explanatory Scope",
+          "weightPercent": 15,
+          "rationale": "Competing explanations of guilt, moral action, condemnation, and the transformation itself test how much each account explains beyond the historical facts both sides substantially accept."
+        }
+      ],
+      "moves": [
+        {
+          "moveId": "con-jesus-charity-historical-cause",
+          "sectionId": "jesus-and-universal-charity",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "constructive",
+          "proposition": "Jesus taught an unusually universal duty to help people in need regardless of their relationship to the helper, and centuries of Christian influence embedded that ethic in Western moral conscience.",
+          "sourceSpan": {
+            "startEvent": 44,
+            "endEvent": 96,
+            "excerpt": "impulse was not there. Um and you can demonstrate it was not there and so my question was how did it get here then? If it wasn't there, how did it get here? And um I My thesis in my book is that Jesus had a different idea from other moral from moral philosophers of his day and from his Jewish tradition so far as we can tell that our that when people are in need, we need to help"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The host directly invites Ehrman to explain his book’s thesis, and the sustained first-person answer is clearly his uninterrupted turn.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-historical-transformation"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Constructively states the historical-causal thesis connecting Jesus's universal charity teaching to Western moral transformation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The causal thesis is recoverable and cautiously limited by 'so far as we can tell,' though the comparison class and centuries-long scope remain broad."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The historical thesis is expressly qualified, but the supplied excerpt gives little representative evidence for its broad comparative scope."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 74,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (76 and 72); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly supports the con motion bridge by explaining transformation without invoking objective truth."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "No developed opposing alternative is assessed in this constructive span."
+            },
+            "responsiveness": {
+              "value": 89,
+              "rationale": "A focused constructive statement occupying the upper end of its class, though its historical documentation is compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt asks how the allegedly absent impulse arose, identifies Jesus's different idea, and states aid regardless of relationship as the proposed cause.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-objective-mind-independent-facts",
+          "sectionId": "objective-truth-and-access",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "Moral objectivism holds that moral facts are true independently of people's beliefs, preferences, or attitudes, just as historical and scientific facts are not made true by individual opinion.",
+          "sourceSpan": {
+            "startEvent": 297,
+            "endEvent": 329,
+            "excerpt": "people's beliefs, preferences, or attitudes regarding them. So just like there's certain historical facts true outside of us, there's certain scientific facts true outside of us, there's moral facts true outside of us. That's typically what's meant by moral objectivism. And so it sounds like you're saying you're a moral subjectivist, that the teachings of Jesus they're based upon somebody's opinion"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "McDowell explicitly identifies a need for clarification, supplies a metaethical definition, and then applies it to Ehrman’s immediately preceding answer.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-objective-grounding"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "con-jesus-charity-historical-cause"
+            ],
+            "components": [
+              {
+                "componentId": "pro-objective-mind-independent-facts-component-01",
+                "targetMoveId": "con-jesus-charity-historical-cause",
+                "text": "The historical claim that Jesus's universal charity teaching caused a durable Western transformation.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The definition of objectivism clarifies the metaethical issue but neither disputes nor explains the earlier historical-causal claim about Jesus and Western charity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "Objectivism is explicitly defined as truth independent of beliefs, preferences, and attitudes, with stable illustrative comparisons."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "matched",
+            "qualificationStatus": "not-needed",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The move offers a stipulative standard definition rather than an uncertain empirical conclusion, so its confident force is proportionate."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Ehrman may reject divine grounding without reducing morality to individual opinion.",
+            "decisiveQualification": "The excerpt tentatively says only that his position sounds subjectivist."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (91 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 86,
+              "rationale": "It centrally states the pro grounding concept but does not yet supply the grounding argument itself."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The tentative wording avoids fully imposing individual-preference subjectivism, though the distinction remains compressed."
+            },
+            "responsiveness": {
+              "value": 56,
+              "rationale": "It is relevant contrary framing, but it leaves the target's decisive historical-causal component uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt expressly says moral facts are true outside people's beliefs, preferences, or attitudes and compares them with historical and scientific facts.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-subjective-access-to-objectivity",
+          "sectionId": "objective-truth-and-access",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "reply",
+          "proposition": "Even if objective moral values exist, human beings encounter them only through subjective human cognition and therefore lack direct access to moral objectivity.",
+          "sourceSpan": {
+            "startEvent": 372,
+            "endEvent": 392,
+            "excerpt": "objective moral value, our only access to it would be through our brains. And our brains are, um, our brains are objects. You have, uh, roughly a hundred billion neurons in yours. I've got a few less in mine. Uh, but, um, since our recognition of morality is based on our human perception, even if you want to claim that there's some kind of moral objectivity, we have no direct access to it except through our subjectivity"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "Ehrman answers McDowell’s Nazi-persecution challenge in the first person and develops a continuous epistemic argument about human cognition and moral perception.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-objectivity-access"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-objective-mind-independent-facts"
+            ],
+            "components": [
+              {
+                "componentId": "con-subjective-access-to-objectivity-component-01",
+                "targetMoveId": "pro-objective-mind-independent-facts",
+                "text": "The analogy from mind-independent historical and scientific facts to accessible mind-independent moral facts.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Ehrman diagnoses the missing epistemic step: even granting objective value, every human recognition of it is mediated by subjective cognition, limiting the definition's argumentative consequence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The conditional grant and distinction between objective value and subjective access are explicit and stable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "Necessary cognitive mediation is supported, but 'no direct access' does not by itself show unreliable or inadequate access."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Objective facts may be known through fallible, cognitively mediated judgment without direct unmediated access.",
+            "decisiveQualification": "Mediation alone does not establish that moral knowledge is unavailable or uniquely defective."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 75,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (76 and 74); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (78 and 76); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central con bridge concerning limits on access to objective moral values."
+            },
+            "representationalCharity": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (69 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It expressly contacts and challenges the decisive inference from mind-independent truth to usable human access."
+            }
+          },
+          "evidenceBasis": "The excerpt conditionally grants objective value, notes that recognition occurs through human brains and perception, and concludes that access is through subjectivity.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-domain-specific-moral-access",
+          "sectionId": "objective-truth-and-access",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "Objective moral knowledge need not be accessed by the methods of physical science because moral truths are immaterial, and distinct domains such as science and history already employ different methods of inquiry.",
+          "sourceSpan": {
+            "startEvent": 448,
+            "endEvent": 499,
+            "excerpt": "different means doesn't follow that there's no truth that's the only comparison that I made between history and between science and then between morality and so you said we have no access to moral truth I guess I'd say a couple things I don't know what it means to know moral truth through our brains makes sense with science because we're studying physical matter but moral truths are not physical they're immaterial"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "McDowell explicitly concedes Ehrman’s methodological distinction before extending a sustained analogy across science, history, and morality and ending with a direct challenge.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-epistemic-method"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-subjective-access-to-objectivity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-domain-specific-moral-access-component-01",
+                "targetMoveId": "con-subjective-access-to-objectivity",
+                "text": "Establish that subjective cognitive mediation prevents meaningful access to objective moral truth.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies the non sequitur from different access methods to no truth and argues that immaterial moral inquiry requires domain-appropriate methods."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The domain distinction is clear, but 'immaterial moral truths' assumes the disputed ontology and the proposed means of access remains unspecified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "It successfully blocks one skeptical inference, but the broader suggestion of access exceeds the positive method supplied."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The objection concerns unavoidable subjective mediation, not a demand that morality use physical-science methods.",
+            "decisiveQualification": "Different domain methods answer methodological uniformity but not the reliability of mediated moral judgment."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 77,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (75 and 79); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The science-history comparison supports methodological pluralism, while the immaterial ontology and moral-access method are asserted."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly contacts the subsidiary pro epistemic-method bridge and is near the top of that tier."
+            },
+            "representationalCharity": {
+              "value": 68,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (68 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It expressly contacts the access inference and states why the inference does not follow."
+            }
+          },
+          "evidenceBasis": "The excerpt denies that differing methods imply no truth, contrasts physical matter with immaterial moral truth, and invokes distinct methods in science and history.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-inclination-without-objective-standard",
+          "sectionId": "inclination-obligation-and-progress",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "reply",
+          "proposition": "Human inclinations can present actions as unequivocally right or wrong without showing that an objective moral standard exists beyond those inclinations.",
+          "sourceSpan": {
+            "startEvent": 639,
+            "endEvent": 645,
+            "excerpt": "I agree that humans have certain inclinations that that absolutely tell us that something is right and wrong. That doesn't mean that there's some kind of objective standard there. It means that this is our inclination as human beings"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn follows McDowell’s invitation for disagreement and states Ehrman’s position directly through an explicit distinction between felt inclination and objective standard.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-objective-grounding"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-domain-specific-moral-access",
+              "pro-objective-mind-independent-facts"
+            ],
+            "components": [
+              {
+                "componentId": "con-inclination-without-objective-standard-component-01",
+                "targetMoveId": "pro-domain-specific-moral-access",
+                "text": "The proposed domain-specific route for obtaining objective moral knowledge despite subjective cognition.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-inclination-without-objective-standard-component-02",
+                "targetMoveId": "pro-objective-mind-independent-facts",
+                "text": "The distinction between objective truth and beliefs, preferences, or attitudes concerning it.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The move reasserts that strong moral inclinations do not entail an objective standard, contacting the earlier definition but not answering the domain-specific access proposal."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "The distinction between what inclinations present as right and what follows about an external standard is concise and stable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "not-needed",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The limited denial of entailment is proportionate because felt certainty alone does not establish mind-independent truth."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 91,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (90 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It centrally attacks the pro objective-grounding bridge by denying that inclination supplies objective standards."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move makes a limited logical distinction without portraying a developed opposing alternative."
+            },
+            "responsiveness": {
+              "value": 70,
+              "rationale": "It contacts a secondary definitional issue while leaving the most recent decisive methodological component unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt agrees that inclinations present actions as right or wrong and expressly denies that this fact demonstrates an objective standard.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-objective-standard-for-progress",
+          "sectionId": "inclination-obligation-and-progress",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "Describing beliefs as superior or a historical change as moral progress is not coherent if morality consists only of evolved inclinations and lacks an objective standard beyond human preference.",
+          "sourceSpan": {
+            "startEvent": 660,
+            "endEvent": 699,
+            "excerpt": "an objective moral standard outside of us. We've been wired by evolution to have certain inclinations that feel absolute to us, but they're not actually absolute. That's the explanation for morality I see in your book. And yet twice in the book, you talk about you embrace your beliefs cuz you think they are superior. And then on page 76, you talk about moral progress we've made"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "McDowell attributes the inclination-based position to Ehrman, contrasts it with his own theistic view, and develops one continuous internal-consistency objection.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-normative-authority"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-inclination-without-objective-standard"
+            ],
+            "components": [
+              {
+                "componentId": "pro-objective-standard-for-progress-component-01",
+                "targetMoveId": "con-inclination-without-objective-standard",
+                "text": "Explain how inclination alone can justify superiority judgments and genuine moral progress.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply identifies an alleged inconsistency between inclination-only morality and Ehrman’s language of superior beliefs and moral progress, then states the normative consequence."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The challenge is clear, though 'superior' could be interpreted instrumentally rather than as objective moral superiority."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "matched",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The inconsistency challenge is strong if progress is meant categorically, with that interpretive condition left implicit."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A subjectivist can call beliefs superior relative to endorsed human aims rather than objectively superior simpliciter.",
+            "decisiveQualification": "That interpretation preserves comparative speech but not categorical progress independent of contingent aims."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (87 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 83,
+              "rationale": "Specific references to the opponent's claims of superior belief and progress support the challenge, though their full context is not supplied."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the indispensable pro normative-authority bridge at the top of the central tier."
+            },
+            "representationalCharity": {
+              "value": 84,
+              "rationale": "The move fairly presses the categorical reading, though it does not expressly separate objective from aim-relative superiority."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It expressly contacts the decisive authority problem and identifies why inclination alone appears insufficient."
+            }
+          },
+          "evidenceBasis": "The excerpt contrasts contingent evolved inclinations with Ehrman's reported language of superior beliefs and moral progress, thereby posing a standard-of-comparison challenge.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-late-emergence-of-universal-aid",
+          "sectionId": "moral-commonality-and-variation",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "reply",
+          "proposition": "Treating aid to hungry and homeless strangers as a central moral priority is historically recent and was absent through most of Homo sapiens' existence.",
+          "sourceSpan": {
+            "startEvent": 737,
+            "endEvent": 761,
+            "excerpt": "top moral priorities is to help people who are hungry and homeless. Okay. And I think that that for me that is a very kind of core moral value. Um and I try to act on it. That moral value was not in evidence for uh the vast majority of the 300,000 years that Homo sapiens have been in existence. Mhm. And so, if you want to say that we all have those moral values, I think history"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "After being given the floor, Ehrman identifies a personal core moral priority and supports his conclusion with the historical duration of that value’s social presence.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-historical-variation"
+          },
+          "response": {
+            "class": "relevant-nonanswer",
+            "decisiveTargetIds": [
+              "pro-objective-standard-for-progress",
+              "pro-objective-mind-independent-facts",
+              "pro-domain-specific-moral-access"
+            ],
+            "components": [
+              {
+                "componentId": "con-late-emergence-of-universal-aid-component-01",
+                "targetMoveId": "pro-objective-standard-for-progress",
+                "text": "Explain how inclination-based morality can warrant superiority and genuine moral progress.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-late-emergence-of-universal-aid-component-02",
+                "targetMoveId": "pro-objective-mind-independent-facts",
+                "text": "Show that historical variation is compatible with mind-independent moral facts.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-late-emergence-of-universal-aid-component-03",
+                "targetMoveId": "pro-domain-specific-moral-access",
+                "text": "Show how domain-specific inquiry establishes objective moral knowledge.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The historical evidence bears on moral variation but does not answer the selected normative challenge about standards for superiority or progress."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The focal value is clear, but 'not in evidence' across most of 300,000 years is a sweeping claim whose evidential scope is only implicit."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "materially-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The vast temporal claim substantially exceeds the representative historical or archaeological support displayed in the excerpt."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 80,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (78 and 82); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 65,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (62 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central con historical-variation bridge with a salient claimed counterexample."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "The move presents historical counterevidence without materially characterizing a developed alternative."
+            },
+            "responsiveness": {
+              "value": 55,
+              "rationale": "It is materially relevant contrary evidence yet leaves every decisive normative and epistemic component uncontacted."
+            }
+          },
+          "evidenceBasis": "The excerpt identifies aid to hungry and homeless people as a core value and says it was not evidenced during most of Homo sapiens' existence.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-jesus-charity-objective-dignity",
+          "sectionId": "jesus-and-universal-charity",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "Jesus's historical introduction of a universal ethic does not make morality subjective; his teaching can be objectively better, with care for the poor grounded in the value and dignity of persons made in God's image.",
+          "sourceSpan": {
+            "startEvent": 795,
+            "endEvent": 858,
+            "excerpt": "universal ethic, it came through Jesus. That doesn't mean that all morality is therefore subjective. And it doesn't mean that Jesus teaching isn't more objectively right than previous teaching. I don't think that follows from it. So, part of my question for you would be is I I applaud you we have common cause cuz I say, \"Hey, the poor that you're giving money to are made in the image of God. They have value and they have dignity"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "McDowell begins by granting Ehrman’s historical claim, then develops a sustained realist rebuttal using divine-image grounding and a counterfactual use of charitable proceeds.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-objective-transformation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "con-late-emergence-of-universal-aid",
+              "con-jesus-charity-historical-cause",
+              "con-inclination-without-objective-standard"
+            ],
+            "components": [
+              {
+                "componentId": "pro-jesus-charity-objective-dignity-component-01",
+                "targetMoveId": "con-late-emergence-of-universal-aid",
+                "text": "Show whether late emergence of universal charity entails that morality itself is subjective.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-jesus-charity-objective-dignity-component-02",
+                "targetMoveId": "con-jesus-charity-historical-cause",
+                "text": "Explain Jesus’s historical causal role in universal charity.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-jesus-charity-objective-dignity-component-03",
+                "targetMoveId": "con-inclination-without-objective-standard",
+                "text": "Supply an objective ground for the value of people aided.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply grants Jesus’s historical role, denies the inference from novelty to subjectivity, and offers divine-image dignity as an objective ground."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move explicitly separates historical introduction from metaethical status and clearly states its dignity-grounding proposal."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The limited claim that historical novelty does not entail subjectivity is proportionate; the positive grounding is presented as McDowell's account."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Late emergence is evidence of historical contingency, not a deductive proof that morality is subjective.",
+            "decisiveQualification": "The evidence can still lower confidence in innate universal recognition even if it does not settle metaethics."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 88); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 76,
+              "rationale": "The logical rebuttal is supported, but the claim that divine image grounds dignity is asserted rather than comparatively defended."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly advances the pro motion bridge by interpreting Jesus’s transformation as compatible with objective improvement."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The reply correctly rejects entailment but somewhat understates the evidential, rather than deductive, force of historical variation."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly contacts the decisive historical-to-metaethical inference and supplies a positive alternative grounding."
+            }
+          },
+          "evidenceBasis": "The excerpt grants that the universal ethic came through Jesus, denies that this makes morality subjective, and grounds the poor's dignity in God's image.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-enduring-principles-expanded-scope",
+          "sectionId": "moral-commonality-and-variation",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "Jesus expanded an already existing moral conscience across cultures and extended its application to the poor, disenfranchised, and outsiders, so historical transformation is consistent with enduring objective principles.",
+          "sourceSpan": {
+            "startEvent": 911,
+            "endEvent": 974,
+            "excerpt": "principles that we find, this is Lewis's argument in The Abolition of Man, that are across cultures, these common basic moral principle commitments although the practice changes. So, that moral objectivity has existed from the beginning and I would argue is in the scripture which is a separate question. And so, I'm not saying Jesus introduced this idea of moral teaching and it didn't exist before. I'm saying he expanded"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The turn explicitly accepts Ehrman's formulation, invokes Lewis, and presents McDowell's first-person defense of objective morality and Jesus' expansion of it.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-enduring-principles"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "con-late-emergence-of-universal-aid",
+              "con-jesus-charity-historical-cause",
+              "con-inclination-without-objective-standard"
+            ],
+            "components": [
+              {
+                "componentId": "pro-enduring-principles-expanded-scope-component-01",
+                "targetMoveId": "con-late-emergence-of-universal-aid",
+                "text": "Reconcile late universal-aid practice with an enduring objective moral order.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-enduring-principles-expanded-scope-component-02",
+                "targetMoveId": "con-jesus-charity-historical-cause",
+                "text": "Account for Jesus’s distinctive contribution to moral history.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-enduring-principles-expanded-scope-component-03",
+                "targetMoveId": "con-inclination-without-objective-standard",
+                "text": "Show that shared moral conscience is more than changing inclination.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply distinguishes enduring principles from changing practice and casts Jesus’s contribution as expanded scope, while not establishing objectivity against inclination."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The principle/application distinction is clear, but 'across cultures' and 'from the beginning' remain broadly scoped and underqualified."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The distinction plausibly reconciles change with endurance, though the universal historical breadth exceeds the support displayed."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Historical absence may concern the scope of the principle's application rather than the complete absence of every underlying moral concern.",
+            "decisiveQualification": "That reconciliation must still show that the earlier principle genuinely entailed later outgroup aid rather than being retrospectively redescribed."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (84 and 80); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (70 and 68); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central pro bridge distinguishing enduring principles from historically expanded applications."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The move advances the strongest reconciliation but does not fully defend continuity between the abstract principle and its expanded application."
+            },
+            "responsiveness": {
+              "value": 73,
+              "rationale": "It contacts the decisive variation component and historical role but leaves the independent grounding demand unresolved."
+            }
+          },
+          "evidenceBasis": "The excerpt invokes cross-cultural common principles despite changing practice and characterizes Jesus as expanding rather than originating moral teaching.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-commonality-does-not-entail-objectivity",
+          "sectionId": "moral-commonality-and-variation",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "reply",
+          "proposition": "Cross-cultural moral similarities alongside substantial differences do not establish that morality was bestowed by a superior being or exists objectively.",
+          "sourceSpan": {
+            "startEvent": 976,
+            "endEvent": 1026,
+            "excerpt": "the there are differences and similarities. You're You're saying that the similarities across cultures demonstrate uh a as as C. S. Lewis argued, that that there must be some It must have been given to us by some superior being, and that there's some kind of objective morality. I'm disagreeing with that. Um I'm not This is not a big point for me in the book. And so, I just want"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker identifies the thesis of his own book, restates McDowell's Lewis-based inference, and expressly disagrees while offering alternative explanations.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "pro-central-enduring-principles"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "pro-enduring-principles-expanded-scope"
+            ],
+            "components": [
+              {
+                "componentId": "con-commonality-does-not-entail-objectivity-component-01",
+                "targetMoveId": "pro-enduring-principles-expanded-scope",
+                "text": "The inference from cross-cultural common moral principles to objective morality or superior-being grounding.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "Ehrman expressly identifies and rejects the inference from similarities to divine or objective grounding, though the excerpt gives little developed alternative explanation."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "The limited non-entailment claim is recoverable and consistently distinguishes similarities from their proposed explanation."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "As a denial of entailment, the force is proportionate, and the speaker limits the point's role in his book."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Cross-cultural commonality may be abductive evidence for objectivity rather than a deductive demonstration of divine bestowal.",
+            "decisiveQualification": "Rejecting demonstration does not answer whether realism offers the better comparative explanation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (82 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 78,
+              "rationale": "The acknowledged mix of similarities and differences supports the limited conclusion, without settling their best explanation."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It centrally attacks the pro enduring-principles bridge by limiting the implication of cross-cultural similarities."
+            },
+            "representationalCharity": {
+              "value": 63,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (64 and 61); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "It directly contacts the inference and states its failure, but its defeating warrant is largely asserted."
+            }
+          },
+          "evidenceBasis": "The excerpt notes both differences and similarities, restates the Lewis-based inference to a superior being and objective morality, and expressly disagrees.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-commonality-comparative-explanation",
+          "sectionId": "moral-commonality-and-variation",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "Cross-cultural moral commonality answers the alleged inconsistency between earlier morality and Jesus's influence, while also raising the comparative question of what best explains those shared beliefs.",
+          "sourceSpan": {
+            "startEvent": 1045,
+            "endEvent": 1082,
+            "excerpt": "Jesus is the one who brought this moral teaching to the world. And I'm saying there's actually commonality before this time that exists across culture. C.S. Lewis pointed that out. The follow-up question Okay. >> with that. Right. And the follow-up question is I think where we differ in the sense of what best explains those common beliefs across culture. That's where I think we"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The first-person clarification distinguishes McDowell's limited rebuttal from a direct proof of God and then frames the explanatory question central to his position.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "pro-central-enduring-principles"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-commonality-does-not-entail-objectivity"
+            ],
+            "components": [
+              {
+                "componentId": "pro-commonality-comparative-explanation-component-01",
+                "targetMoveId": "con-commonality-does-not-entail-objectivity",
+                "text": "The objection that cross-cultural similarity does not deductively demonstrate objective or divinely bestowed morality.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "McDowell narrows the immediate use of commonality to answering alleged historical inconsistency, then justifies the preserved question as comparative explanation rather than deduction."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move distinguishes its limited rebuttal from the follow-up explanatory question with stable terms and scope."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "It poses the comparative issue without claiming that commonality alone proves objectivity or theism."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Commonality can have naturalistic historical, social, or evolutionary explanations rather than requiring objective grounding.",
+            "decisiveQualification": "A comparative question has force only if competing explanations and discriminating evidence are actually developed."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The move correctly identifies the comparative task, but it supplies no discriminating evidence establishing its preferred explanation."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It strongly advances the central enduring-principles bridge while appropriately limiting what commonality establishes."
+            },
+            "representationalCharity": {
+              "value": 92,
+              "rationale": "It accurately preserves secular alternatives as candidates and narrows its claim to the explanatory comparison actually warranted."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "The reframe preserves the evidential issue and expressly replaces a deductive demand with comparative explanatory assessment."
+            }
+          },
+          "evidenceBasis": "The excerpt says commonality predates Jesus, invokes Lewis, and explicitly frames the remaining disagreement as what best explains shared cross-cultural beliefs.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-jesus-universalized-outgroup-care",
+          "sectionId": "jesus-and-universal-charity",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "constructive",
+          "proposition": "Jesus' distinctive moral innovation was to universalize assistance beyond family and social groups so that anyone in need became an appropriate object of help.",
+          "sourceSpan": {
+            "startEvent": 1098,
+            "endEvent": 1185,
+            "excerpt": "the outsider. My argument in the book is that Jesus universalized this so that it would be applied to anybody in need whether they were in your social group or not whether they part of your family or friends whether they shared your nationality your ethnicity your race anything else didn't matter if they were in need those are the people you're supposed to help. What I argue in"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker answers what is unique in Jesus' teaching, develops an evolutionary and Greco-Roman background, and identifies universal concern as the book's central innovation claim.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "con-motion-historical-transformation"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Constructively specifies Jesus's distinctive innovation as extending assistance to needy outsiders irrespective of social identity."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "not-needed",
+            "rationale": "The relevant outgroup boundaries and the universal scope of the proposed duty are explicitly enumerated."
+          },
+          "calibrationFindings": {
+            "assertedForce": "strong-probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The distinctive-innovation thesis is clear, but the selected excerpt does not display enough comparison with Jewish or Greco-Roman predecessors to fully support its breadth."
+          },
+          "charity": {
+            "tested": false,
+            "alternative": "",
+            "decisiveQualification": ""
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (89 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 73,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (72 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly supplies the central historical content required by the con motion-transformation bridge."
+            },
+            "representationalCharity": {
+              "value": 75,
+              "rationale": "This constructive span develops its own historical thesis rather than assessing an opposing alternative."
+            },
+            "responsiveness": {
+              "value": 92,
+              "rationale": "A highly focused constructive formulation of the historical transformation mechanism, with its comparative documentation still compressed."
+            }
+          },
+          "evidenceBasis": "The excerpt states that Jesus applied assistance to anyone in need regardless of family, friendship, nationality, ethnicity, race, or social group.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-charity-genuine-improvement-duty",
+          "sectionId": "jesus-and-universal-charity",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "Calling Jesus's worldwide transformation a genuine moral improvement requires asking whether people really have obligations to care for strangers and the poor, rather than merely historically produced inclinations to do so.",
+          "sourceSpan": {
+            "startEvent": 1186,
+            "endEvent": 1211,
+            "excerpt": "better? That's the heart of the question that I wanted to ask because you're right, I agree with you. This is we can use terms like revolution and transformation for the teachings of Jesus, how they've been spread around the world. It's that significant. But, part of my question is is this actually a genuine improvement? Do we have obligations to care for the poor, or are these just inclinations"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker explicitly returns to his opening question, contrasts improvement with mere change, and frames obligations versus inclinations in McDowell's characteristic first-person terms.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-objective-transformation"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-jesus-universalized-outgroup-care",
+              "con-jesus-charity-historical-cause",
+              "con-inclination-without-objective-standard"
+            ],
+            "components": [
+              {
+                "componentId": "pro-charity-genuine-improvement-duty-component-01",
+                "targetMoveId": "con-jesus-universalized-outgroup-care",
+                "text": "Determine whether universalized outgroup care was merely historical change or genuine moral improvement.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-charity-genuine-improvement-duty-component-02",
+                "targetMoveId": "con-jesus-charity-historical-cause",
+                "text": "Accept and assess the significance of the claimed worldwide transformation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-charity-genuine-improvement-duty-component-03",
+                "targetMoveId": "con-inclination-without-objective-standard",
+                "text": "Explain whether inclinations can generate genuine obligations to aid.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The reply grants the historical account and justifies shifting to the motion’s normative demand: whether the transformation created genuine duties or only inclinations."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The distinction between transformation and genuine improvement, and between obligation and inclination, is explicit and stable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move appropriately frames an unresolved normative demand rather than asserting that the historical evidence has already answered it."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A historically produced inclination may ground action and evaluative language relative to shared human aims without objective duty.",
+            "decisiveQualification": "That account still must explain whether obligations bind independently of whichever inclination prevails."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 93,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (92 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 86,
+              "rationale": "The challenge relies chiefly on a clear conceptual distinction and appropriately grants the historical premise rather than disputing it."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "It directly advances the pro motion condition by asking whether Jesus's transformation represents genuine moral truth and progress."
+            },
+            "representationalCharity": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (90 and 94); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It preserves the historical issue, accepts it, and explicitly contacts the decisive obligation-versus-inclination question."
+            }
+          },
+          "evidenceBasis": "The excerpt agrees that Jesus's teaching produced a major worldwide transformation but asks whether it is genuinely better and whether care is obligatory.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-human-nature-grounds-moral-action",
+          "sectionId": "inclination-obligation-and-progress",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "reply",
+          "proposition": "Deeply rooted human inclinations and shared human nature can provide genuine grounds for moral belief and action without an external objective standard.",
+          "sourceSpan": {
+            "startEvent": 1212,
+            "endEvent": 1262,
+            "excerpt": "inclinations that are built into you and you shouldn't say that that's just why you feel it or it is merely because you have a subjective view or you have a feeling. It's not like merely or just. It's It's what it means to be a human being. And so that So we have different views and it's rooted in your sense there has to be some kind of objectivity or there are no grounds for faith, belief"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The response directly addresses McDowell's worldview, rejects the need for objective anchors, and explains moral conduct through how human beings are inherently wired.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "central",
+            "bridgeId": "con-central-human-grounding"
+          },
+          "response": {
+            "class": "partial-answer",
+            "decisiveTargetIds": [
+              "pro-charity-genuine-improvement-duty",
+              "pro-objective-standard-for-progress",
+              "pro-commonality-comparative-explanation"
+            ],
+            "components": [
+              {
+                "componentId": "con-human-nature-grounds-moral-action-component-01",
+                "targetMoveId": "pro-charity-genuine-improvement-duty",
+                "text": "Explain what grounds moral belief and action if there is no external objective standard.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-human-nature-grounds-moral-action-component-02",
+                "targetMoveId": "pro-objective-standard-for-progress",
+                "text": "Explain how human inclinations justify claims of superiority or progress.",
+                "contacted": false,
+                "decisive": true
+              },
+              {
+                "componentId": "con-human-nature-grounds-moral-action-component-03",
+                "targetMoveId": "pro-commonality-comparative-explanation",
+                "text": "Compare human nature with objective truth as explanations of common beliefs.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "The response rejects the claim that inclination is merely a feeling and offers constitutive human nature as a ground for action, but not for comparative authority or progress."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The positive appeal to human nature is recoverable, but 'grounds' shifts between explaining belief, motivating action, and justifying obligation."
+          },
+          "calibrationFindings": {
+            "assertedForce": "certainty",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "Constitutive inclinations plausibly explain motivation, but the claim that they provide full normative grounds requires an additional warrant."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The realist objection does not deny that inclinations are deep or motivational; it questions their categorical authority and how conflicts are ranked.",
+            "decisiveQualification": "Human-natural depth answers the charge of superficiality but not the authority question by itself."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (71 and 67); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 69,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 69); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly supports the central con human-grounding bridge, though its normative component is incomplete."
+            },
+            "representationalCharity": {
+              "value": 64,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (66 and 62); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 71,
+              "rationale": "It contacts the grounding-of-action component but leaves the stronger authority and comparative-explanation demands unanswered."
+            }
+          },
+          "evidenceBasis": "The excerpt rejects describing built-in inclinations as merely subjective feeling and identifies them with what it means to be human.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-evolutionary-feelings-lack-authority",
+          "sectionId": "inclination-obligation-and-progress",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "A contingent evolutionary process may explain the origin of deep-seated moral feelings but cannot by itself establish their normative authority, show why one inclination is better than another, or make either binding.",
+          "sourceSpan": {
+            "startEvent": 1297,
+            "endEvent": 1392,
+            "excerpt": "that are deep-seated, in your own words, emerged through time, matter, and chance. So, given that evolution is a contingent process, and it could have resulted in a different outcome, Darwin himself said, \"Why does a process that creates feelings in us through time, matter, and chance have any authority? Why is one feeling better than another feeling if time, matter, and chance"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The extended turn states McDowell's relativism objection, uses Ehrman's account of deconversion and moral commitment, and culminates in the authority question about evolved feelings.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "attack",
+            "tier": "central",
+            "bridgeId": "con-central-human-grounding"
+          },
+          "response": {
+            "class": "diagnostic-defeat",
+            "decisiveTargetIds": [
+              "con-human-nature-grounds-moral-action",
+              "con-inclination-without-objective-standard"
+            ],
+            "components": [
+              {
+                "componentId": "pro-evolutionary-feelings-lack-authority-component-01",
+                "targetMoveId": "con-human-nature-grounds-moral-action",
+                "text": "Show that evolved inclinations possess normative authority rather than merely causal or motivational force.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-evolutionary-feelings-lack-authority-component-02",
+                "targetMoveId": "con-inclination-without-objective-standard",
+                "text": "Explain why one inclination is better or more binding than another.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": true,
+            "replacementDemandAnswered": false,
+            "rationale": "The reply expressly distinguishes evolutionary causal origin from authority and states the defeating consequence that contingency cannot rank or bind competing feelings."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move carefully distinguishes causal origin from normative authority and separately identifies ranking and bindingness."
+          },
+          "calibrationFindings": {
+            "assertedForce": "necessity",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "not-needed",
+            "rationale": "The limited insufficiency claim matches the cited contingency premise and does not deny every possible naturalistic supplement."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Naturalistic normativity might arise from rational reflection on stable human needs rather than from evolutionary causation alone.",
+            "decisiveQualification": "The target excerpt appealed to built-in inclination itself and did not supply that further constructivist bridge."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 93,
+              "rationale": "The move explicitly separates genealogical explanation from justification and identifies the missing authority and comparison warrants."
+            },
+            "evidenceWarrant": {
+              "value": 87,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (86 and 87); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 87,
+              "rationale": "It directly attacks the central con human-grounding bridge at its most important normative step."
+            },
+            "representationalCharity": {
+              "value": 92,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (91 and 93); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It directly identifies and attacks the decisive causal-to-normative inference with explicit consequences."
+            }
+          },
+          "evidenceBasis": "The excerpt characterizes evolution as contingent and asks why feelings produced through time, matter, and chance possess authority or rank one feeling above another.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-guilt-real-code-forgiveness",
+          "sectionId": "guilt-practice-and-explanatory-scope",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "constructive",
+          "proposition": "Human guilt, ordinary conduct as if a real moral code exists, and the perceived need for forgiveness are better explained by objective wrongdoing than by subjective inclination alone.",
+          "sourceSpan": {
+            "startEvent": 1680,
+            "endEvent": 1710,
+            "excerpt": "wrong that exists in the world. And I would argue that we intuitively and naturally know this differently than history, differently than with science. And we live our lives as if there's a real moral code, hence we need forgiveness for sin. So, when I read the end, I was like, this makes sense from my perspective. Tell me why you think we feel guilt and what you think we should"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The host introduces a final question, explicitly states his own interpretation, and then invites the guest to answer it.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "pro-subsidiary-guilt-explanation"
+          },
+          "response": {
+            "class": "constructive-opening",
+            "decisiveTargetIds": [],
+            "components": [],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Constructively offers guilt, realist-seeming moral practice, and perceived need for forgiveness as comparative evidence for objective wrongdoing."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "partly-unstable",
+            "scopeStability": "partly-unstable",
+            "qualificationExplicitness": "implicit",
+            "rationale": "The explanatory proposal is recoverable, but 'real moral code,' guilt, sin, and forgiveness combine distinct psychological and theological claims."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The phenomena can support a realist explanation, but ordinary guilt and conduct do not uniquely select objective wrongdoing or theological forgiveness."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Guilt and forgiveness practices may be explained by evolved social emotions and learned communal norms without a real moral code.",
+            "decisiveQualification": "Phenomenology alone underdetermines whether the best explanation is realist, evolutionary, cultural, or mixed."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 76,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (77 and 75); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 67,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (68 and 66); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It strongly supports the subsidiary pro guilt-explanation bridge and sits near the top of that tier."
+            },
+            "representationalCharity": {
+              "value": 82,
+              "rationale": "The move leaves space for an answer but initially presents the realist explanation as more immediately natural than the evidence warrants."
+            },
+            "responsiveness": {
+              "value": 82,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed responsivenessWithinClass values (83 and 81); their difference did not meet a semantic or magnitude dispute trigger."
+            }
+          },
+          "evidenceBasis": "The excerpt says people intuitively know wrong, live as if a real moral code exists, and therefore experience a need for forgiveness, then requests an alternative.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-evolutionary-account-of-guilt",
+          "sectionId": "guilt-practice-and-explanatory-scope",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "reply",
+          "proposition": "Guilt can arise through evolution because dispositions that discourage harming one's community improve communal survival and the propagation of those dispositions.",
+          "sourceSpan": {
+            "startEvent": 1711,
+            "endEvent": 1732,
+            "excerpt": "a problem evolutionarily because if you harm others within your community, you may destroy your community. And it's not that we've evolved the sense of guilt so that we don't destroy our communities. It's that people who have this sense of guilt, this idea that they're acting wrongly, uh people who have that tend to survive better than others and their genes survive better than"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The guest answers the immediately posed question and develops a sustained evolutionary account in the first person.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-evolutionary-explanation"
+          },
+          "response": {
+            "class": "full-answer",
+            "decisiveTargetIds": [
+              "pro-guilt-real-code-forgiveness"
+            ],
+            "components": [
+              {
+                "componentId": "con-evolutionary-account-of-guilt-component-01",
+                "targetMoveId": "pro-guilt-real-code-forgiveness",
+                "text": "The claim that guilt and perceived need for forgiveness are better explained by an objective moral code.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": false,
+            "rationale": "Ehrman directly supplies the requested rival explanation: guilt dispositions can be selected because they discourage community-damaging conduct and improve survival."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The move explicitly rejects purposive evolution and states differential survival and genetic propagation as the mechanism."
+          },
+          "calibrationFindings": {
+            "assertedForce": "probability",
+            "warrantFit": "slightly-overstated",
+            "qualificationStatus": "implicit",
+            "uncertaintyAcknowledged": "no",
+            "rationale": "The mechanism is plausible, but the genetic specificity and selection history are not supported with evidence in the excerpt."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "Guilt's adaptive origin could coexist with its tracking real wrongdoing and therefore does not by itself defeat moral realism.",
+            "decisiveQualification": "The evolutionary account establishes an available non-realist explanation, not the falsity of a realist interpretation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 86,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (85 and 86); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed evidenceWarrant values (71 and 73); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the con subsidiary evolutionary-explanation bridge at the top of that tier."
+            },
+            "representationalCharity": {
+              "value": 85,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (85 and 84); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 98,
+              "rationale": "It directly answers why guilt may arise without presupposing objective wrongdoing, though forgiveness is not separately addressed."
+            }
+          },
+          "evidenceBasis": "The excerpt distinguishes purposive evolution from differential survival and says guilt-prone people and their genes tend to survive better by avoiding communal harm.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "con-history-independent-of-metaethics",
+          "sectionId": "guilt-practice-and-explanatory-scope",
+          "side": "con",
+          "speaker": "Bart Ehrman",
+          "moveKind": "reply",
+          "proposition": "The historical account of transformed ethical sensibilities can explain Jesus' influence without resolving whether morality is objective or requiring belief in God.",
+          "sourceSpan": {
+            "startEvent": 1746,
+            "endEvent": 1765,
+            "excerpt": "ethical sense. And the the argument I think as you were saying, Sean, that it would it would work whether you're a believer or not in terms of the argument of my book, but the historical transformation. Um but objectivity and subjectivity is not something I really other than like in the introduction to a couple chapters where I explain why I don't think you have to believe in God"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The speaker identifies the subject and argument of his own book while directly addressing Sean and the listening audience.",
+          "importance": 2,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "subsidiary",
+            "bridgeId": "con-subsidiary-history-metaethics-distinction"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "pro-guilt-real-code-forgiveness",
+              "pro-evolutionary-feelings-lack-authority"
+            ],
+            "components": [
+              {
+                "componentId": "con-history-independent-of-metaethics-component-01",
+                "targetMoveId": "pro-guilt-real-code-forgiveness",
+                "text": "The attempt to use guilt and moral argument to connect historical transformation with objective morality and God.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "con-history-independent-of-metaethics-component-02",
+                "targetMoveId": "pro-evolutionary-feelings-lack-authority",
+                "text": "The broader challenge that an evolutionary account cannot supply objective normative authority.",
+                "contacted": false,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": true,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "Ehrman justifies separating his book's historical transformation thesis from objectivity and belief in God, preserving the historical question while declining the broader metaethical burden."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "The scope limitation is explicit: the book's historical argument can stand independently of the objectivity-subjectivity question."
+          },
+          "calibrationFindings": {
+            "assertedForce": "possibility",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The modest independence claim is appropriately calibrated and does not purport to resolve the larger metaethical dispute."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "The historical facts may still be abductive evidence bearing on which worldview best explains moral transformation.",
+            "decisiveQualification": "Logical independence does not imply complete evidential irrelevance to comparative explanation."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (88 and 91); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 84,
+              "rationale": "The move accurately limits the inference licensed by the historical account, though it does not evaluate possible abductive relevance."
+            },
+            "relevanceBurden": {
+              "value": 69,
+              "rationale": "It directly supports the subsidiary con bridge separating historical influence from metaethical conclusions."
+            },
+            "representationalCharity": {
+              "value": 83,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (81 and 85); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 97,
+              "rationale": "The reframe legitimately limits what the historical argument establishes, but it does not answer the independent normative-authority challenge."
+            }
+          },
+          "evidenceBasis": "The excerpt says the book's historical-transformation argument works for believers and nonbelievers and does not centrally depend on objectivity or subjectivity.",
+          "assessmentConfidence": "high"
+        },
+        {
+          "moveId": "pro-transformation-worldview-explanation",
+          "sectionId": "guilt-practice-and-explanatory-scope",
+          "side": "pro",
+          "speaker": "Sean McDowell",
+          "moveKind": "reply",
+          "proposition": "Agreement that a large historical moral transformation occurred leaves a further comparative question about which worldview best explains that transformation and its relationship to morality.",
+          "sourceSpan": {
+            "startEvent": 1767,
+            "endEvent": 1776,
+            "excerpt": "So, I totally agree with you that you make moral arguments in the book than the question of objectivity and subjectivity. But I thought it was fascinating the way you dealt with the moral argument, how you weighed in with the evolution claim in our morality, and if we have this huge moral transformation, it raised the question what best explains it. You have very"
+          },
+          "attributionConfidence": "high",
+          "attributionBasis": "The host resumes after Ehrman's clarification, agrees with part of it, and restates the explanatory issue driving his own inquiry.",
+          "importance": 3,
+          "burdenContact": {
+            "polarity": "support",
+            "tier": "motion",
+            "bridgeId": "pro-motion-objective-transformation"
+          },
+          "response": {
+            "class": "justified-reframe",
+            "decisiveTargetIds": [
+              "con-history-independent-of-metaethics",
+              "con-jesus-charity-historical-cause",
+              "con-evolutionary-account-of-guilt"
+            ],
+            "components": [
+              {
+                "componentId": "pro-transformation-worldview-explanation-component-01",
+                "targetMoveId": "con-history-independent-of-metaethics",
+                "text": "Identify what explanatory question remains after granting that the historical thesis is logically independent of metaethics.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-transformation-worldview-explanation-component-02",
+                "targetMoveId": "con-jesus-charity-historical-cause",
+                "text": "Accept the occurrence of a major historical transformation.",
+                "contacted": true,
+                "decisive": true
+              },
+              {
+                "componentId": "pro-transformation-worldview-explanation-component-03",
+                "targetMoveId": "con-evolutionary-account-of-guilt",
+                "text": "Compare the evolutionary moral account with broader worldview explanations.",
+                "contacted": true,
+                "decisive": true
+              }
+            ],
+            "issueBearingContraryMaterial": false,
+            "diagnosticConsequenceExplicit": false,
+            "replacementDemandAnswered": true,
+            "rationale": "The reply grants the narrower historical argument and justifies a further comparative-worldview question about the transformation and evolutionary account."
+          },
+          "precisionFindings": {
+            "propositionRecoverability": "complete",
+            "termStability": "stable",
+            "scopeStability": "stable",
+            "qualificationExplicitness": "explicit",
+            "rationale": "Agreement on transformation and the separate comparative question are clearly marked, though “worldview” remains broad but usable."
+          },
+          "calibrationFindings": {
+            "assertedForce": "question",
+            "warrantFit": "matched",
+            "qualificationStatus": "explicit",
+            "uncertaintyAcknowledged": "yes",
+            "rationale": "The move appropriately says the facts raise a question rather than claiming that transformation establishes the preferred worldview."
+          },
+          "charity": {
+            "tested": true,
+            "alternative": "A historical explanation may be complete at its own level without choosing between broad metaphysical worldviews.",
+            "decisiveQualification": "Logical level-independence does not prevent the same facts from entering a wider abductive comparison."
+          },
+          "ratings": {
+            "logicalCoherence": {
+              "value": 88,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed logicalCoherence values (86 and 90); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "evidenceWarrant": {
+              "value": 72,
+              "rationale": "The accepted transformation motivates comparison, yet the move supplies no discriminating evidence showing which worldview explains it better."
+            },
+            "relevanceBurden": {
+              "value": 100,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed relevanceBurden values (99 and 100); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "representationalCharity": {
+              "value": 90,
+              "rationale": "The adjudicated raw ledger applies the preregistered rounded mean to the two nondisputed representationalCharity values (88 and 92); their difference did not meet a semantic or magnitude dispute trigger."
+            },
+            "responsiveness": {
+              "value": 99,
+              "rationale": "It accurately accepts the scope clarification while preserving and articulating the broader explanatory issue."
+            }
+          },
+          "evidenceBasis": "The excerpt agrees that the book makes historical moral arguments, notes its evolutionary account, and says the large transformation raises what best explains it.",
+          "assessmentConfidence": "high"
+        }
+      ],
+      "burdenCompletionAdjustment": {
+        "pro": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden-completion consequence remains outside the move ratings, response records, importance assignments, and frozen route structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence exists beyond move-level findings.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not change any burden's completion independently of already scored findings."
+          }
+        },
+        "con": {
+          "value": 0,
+          "rationale": "No distinct debate-wide burden-completion consequence remains outside the move ratings, response records, importance assignments, and frozen route structure.",
+          "eligibility": {
+            "distinctDebateWideConsequence": false,
+            "affectsBurdenCompletion": false,
+            "notAlreadyScored": false,
+            "affectedBurdenIds": [],
+            "completionCriterion": "No uncaptured completion criterion was identified.",
+            "relatedMoveIds": [],
+            "distinctConsequence": "No eligible distinct consequence exists beyond move-level findings.",
+            "alreadyCapturedBy": [
+              "move ratings",
+              "response links",
+              "importance values",
+              "burden relevance"
+            ],
+            "counterfactual": "Removing the alleged residual would not change any burden's completion independently of already scored findings."
+          }
+        }
+      },
+      "audit": {
+        "completeTranscriptReviewed": true,
+        "allLoadBearingLinesRepresented": true,
+        "allMovesJudgedOnce": true,
+        "sectionWeightsLockedBeforeRatings": true,
+        "responseComponentsApplied": true,
+        "closedPrecisionAnchorsApplied": true,
+        "closedCalibrationAnchorsApplied": true,
+        "charityAnchorApplied": true,
+        "burdenExclusionRuleApplied": true,
+        "calculatedTotalsAbsent": true
+      }
+    },
+    "calculated": {
+      "sections": [
+        {
+          "sectionId": "objective-truth-and-access",
+          "title": "Objective Truth and Human Access",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 81,
+              "moves": [
+                {
+                  "moveId": "pro-objective-mind-independent-facts",
+                  "importance": 2,
+                  "score": 82
+                },
+                {
+                  "moveId": "pro-domain-specific-moral-access",
+                  "importance": 2,
+                  "score": 79
+                }
+              ]
+            },
+            "con": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "con-subjective-access-to-objectivity",
+                  "importance": 3,
+                  "score": 84
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "moral-commonality-and-variation",
+          "title": "Cross-Cultural Commonality and Historical Variation",
+          "weightPercent": 18,
+          "sides": {
+            "pro": {
+              "score": 82,
+              "moves": [
+                {
+                  "moveId": "pro-enduring-principles-expanded-scope",
+                  "importance": 3,
+                  "score": 77
+                },
+                {
+                  "moveId": "pro-commonality-comparative-explanation",
+                  "importance": 2,
+                  "score": 89
+                }
+              ]
+            },
+            "con": {
+              "score": 77,
+              "moves": [
+                {
+                  "moveId": "con-late-emergence-of-universal-aid",
+                  "importance": 3,
+                  "score": 71
+                },
+                {
+                  "moveId": "con-commonality-does-not-entail-objectivity",
+                  "importance": 2,
+                  "score": 87
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "jesus-and-universal-charity",
+          "title": "Jesus and the Universalization of Charity",
+          "weightPercent": 22,
+          "sides": {
+            "pro": {
+              "score": 92,
+              "moves": [
+                {
+                  "moveId": "pro-jesus-charity-objective-dignity",
+                  "importance": 3,
+                  "score": 90
+                },
+                {
+                  "moveId": "pro-charity-genuine-improvement-duty",
+                  "importance": 3,
+                  "score": 94
+                }
+              ]
+            },
+            "con": {
+              "score": 86,
+              "moves": [
+                {
+                  "moveId": "con-jesus-charity-historical-cause",
+                  "importance": 3,
+                  "score": 84
+                },
+                {
+                  "moveId": "con-jesus-universalized-outgroup-care",
+                  "importance": 3,
+                  "score": 88
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "inclination-obligation-and-progress",
+          "title": "Inclination, Obligation, and Moral Progress",
+          "weightPercent": 27,
+          "sides": {
+            "pro": {
+              "score": 90,
+              "moves": [
+                {
+                  "moveId": "pro-objective-standard-for-progress",
+                  "importance": 3,
+                  "score": 88
+                },
+                {
+                  "moveId": "pro-evolutionary-feelings-lack-authority",
+                  "importance": 3,
+                  "score": 92
+                }
+              ]
+            },
+            "con": {
+              "score": 79,
+              "moves": [
+                {
+                  "moveId": "con-inclination-without-objective-standard",
+                  "importance": 3,
+                  "score": 84
+                },
+                {
+                  "moveId": "con-human-nature-grounds-moral-action",
+                  "importance": 3,
+                  "score": 73
+                }
+              ]
+            }
+          }
+        },
+        {
+          "sectionId": "guilt-practice-and-explanatory-scope",
+          "title": "Guilt, Moral Practice, and Explanatory Scope",
+          "weightPercent": 15,
+          "sides": {
+            "pro": {
+              "score": 84,
+              "moves": [
+                {
+                  "moveId": "pro-guilt-real-code-forgiveness",
+                  "importance": 2,
+                  "score": 75
+                },
+                {
+                  "moveId": "pro-transformation-worldview-explanation",
+                  "importance": 3,
+                  "score": 90
+                }
+              ]
+            },
+            "con": {
+              "score": 85,
+              "moves": [
+                {
+                  "moveId": "con-evolutionary-account-of-guilt",
+                  "importance": 2,
+                  "score": 83
+                },
+                {
+                  "moveId": "con-history-independent-of-metaethics",
+                  "importance": 2,
+                  "score": 87
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "overall": {
+        "pro": {
+          "weightedSectionMean": 86.48,
+          "burdenCompletionAdjustment": 0,
+          "score": 86
+        },
+        "con": {
+          "weightedSectionMean": 81.98,
+          "burdenCompletionAdjustment": 0,
+          "score": 82
+        }
+      },
+      "winner": "pro",
+      "winningMargin": 4
+    },
+    "audit": {
+      "sections": 5,
+      "moves": 19,
+      "repositoryDerivedScores": true,
+      "modelAuthoredScores": 0,
+      "scoreChanges": 0,
+      "proseChanges": 0,
+      "attributionChanges": 0,
+      "optionalReferenceBehaviorChanges": 0,
+      "productionMutationPerformed": false
+    }
+  },
+  "proposedAdapterBytes": 113132,
+  "proposedAdapterSha256": "017cc53b83fc5e2cf9821874fd41cb0b09343012940719b2acd0b70788e66ee4",
+  "validation": {
+    "status": "passed",
+    "debateNumber": "38",
+    "sections": 5,
+    "moves": 19,
+    "model": "5.6 Sol",
+    "rubric": "Slugfester Reassessment Rubric v2",
+    "scoreProtocolId": "assessment-production-post-canary-batch-06-single-deterministic-score-pass",
+    "adapterSha256": "017cc53b83fc5e2cf9821874fd41cb0b09343012940719b2acd0b70788e66ee4",
+    "repositoryScoreReplayPassed": true,
+    "productionMutationPerformed": false
+  },
+  "authorization": {
+    "compatibilityExecution": false,
+    "validatorMigration": false,
+    "stagingLedgerWrite": false,
+    "productionLedgerPublication": false,
+    "productionMutation": false
+  }
+}
