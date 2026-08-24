@@ -1,0 +1,81 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-publication-failure-diagnosis",
+  "protocolId": "assessment-production-post-canary-batch-08-publication-reconstruction",
+  "status": "frozen-diagnosed-batch-08-debate-88-two-field-publication-validation-failure",
+  "diagnosedAt": "2026-08-24T13:05:00Z",
+  "productionCanary": false,
+  "batchNumber": 8,
+  "stagingOnly": true,
+  "debateNumber": "88",
+  "failedFields": [
+    {
+      "type": "representative-quote-exact-source-substring",
+      "path": "representativeQuotes.pro.text",
+      "side": "pro",
+      "sourceMoveId": "pro-counterevidence-increment",
+      "originalText": "it could be a tiny bit of evidence",
+      "originalValueSha256": "ce56e54f2b71fb851e9644174e52e9bec83cd13be570f31649511c45265271b8",
+      "originalWords": 8,
+      "diagnosedReason": "quote-is-not-an-exact-contiguous-source-substring"
+    },
+    {
+      "type": "representative-quote-exact-source-substring",
+      "path": "representativeQuotes.con.text",
+      "side": "con",
+      "sourceMoveId": "con-unspecified-likelihood-comparison",
+      "originalText": "you haven't specified what sort of god",
+      "originalValueSha256": "404a40e05a0507062b59db5ba8da8a4480d9f0f904a02ef8d61679ae17303202",
+      "originalWords": 7,
+      "diagnosedReason": "quote-is-not-an-exact-contiguous-source-substring"
+    }
+  ],
+  "minimumBoundedRepair": {
+    "operation": "one-isolated-field-disjoint-score-locked-publication-repair-context",
+    "packetCount": 1,
+    "debateNumber": "88",
+    "writableFields": [
+      "representativeQuotes.pro.text",
+      "representativeQuotes.con.text"
+    ],
+    "writableFieldsMaximumPerPacket": 2,
+    "attemptsPerContext": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "mergeRule": "Replace only the two explicitly diagnosed quotation fields in the immutable original Debate 88 publication output, preserve every other field, validate the repaired debate, then resume exactly the nine unattempted frozen contexts and replay the complete ten-debate cohort."
+  },
+  "diagnosticReplay": {
+    "transientCopyOnly": true,
+    "originalOutputModified": false,
+    "correctedOutputPersisted": false,
+    "validatorUnchanged": true,
+    "proQuoteDiagnosticReplacement": "there is some evidence for God because of moral agents",
+    "proQuoteDiagnosticReplacementSha256": "603b758d7abdf8cae3f09fcce765e563c5bb02a57f1fa5c67617ce4b3037443d",
+    "conQuoteDiagnosticReplacement": "I need a more specific theism",
+    "conQuoteDiagnosticReplacementSha256": "18c87e89cbd034f0fb6e1beabcc164b35e5a74956d40ef078ae6e885499420f7",
+    "fullOutputValidationStatus": "passed",
+    "provedFailureFieldCount": 2,
+    "unexpectedValidationCategories": 0
+  },
+  "executionBoundary": {
+    "contextsAttempted": 1,
+    "contextsValid": 0,
+    "contextsInvalid": 1,
+    "unattemptedContextIndexes": [1,2,3,4,5,6,7,8,9],
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "modelAuthoredScores": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "sourceHashes": {
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/outputs/debate-88.json": "6c97d25b7063f54dca8e5e8a506dabc235e8dff18e156c660fc6f1eb411fcddb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/packets/debate-88.json": "182faeaf7ca5ff418d5612c67455f7d07f54490c44f6d1969fe454ddf28ae9da",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/model-execution.json": "1c2d2644feed073c1f1a7eda7f065d37b7be39abbcfc423cb4abf020d39b82eb",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/analysis.json": "13e80527c6b14a627ec5139ab6c0ac02e620a92086571b1fbbcfd7440a04434c",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/validations/debate-88.json": "51285694648825a8c745881ce114c08751d2247c72f74530705344f65f45cd7a",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/provenance/debate-88.json": "640b37742e6bcb149ac59083bc488abb58267d36b3f021d5ea99f870805ec010",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/execution-preparation-manifest.json": "7f9107492dfa6132b1cedafe0f151aa8d0c7b6ea442c3fb81c4b1b211d2155f7",
+    "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/execution-activation.json": "0b370ece1f50629e1d5c32fe886af86bf1a6107ed700ba3dbbc2fce30b7c8ed2"
+  },
+  "nextAuthorizedAction": "prepare-freeze-and-execute-one-two-field-score-locked-debate-88-publication-repair-context"
+}
