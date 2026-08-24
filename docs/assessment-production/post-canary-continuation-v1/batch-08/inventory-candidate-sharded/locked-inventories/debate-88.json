@@ -1,0 +1,738 @@
+{
+  "schemaVersion": "4.2.21.16-locked-inventory",
+  "protocolId": "v4.2.21.16-decomposed-consensus-contract",
+  "debateNumber": "88",
+  "debateId": "sechler-dillahunty-perfect-mind-universe-2022",
+  "curatorModel": "5.6 Sol",
+  "calibrationOnly": true,
+  "routes": [
+    {
+      "routeId": "route-pro-comparative-inference",
+      "side": "pro",
+      "description": "Establish perfect-mind theism as the preferable foundational hypothesis by comparing its commitments and its expectations for the observed universe with those of non-theistic and rival-origin hypotheses.",
+      "successCriteria": "The route succeeds if a perfect mind is sufficiently coherent as an origin hypothesis, carries a comparative simplicity advantage, and makes the relevant observations sufficiently more expected to justify preferring it over non-theism.",
+      "motionBridge": {
+        "bridgeId": "pro-motion-preference",
+        "tier": "motion",
+        "description": "Connect comparative simplicity and differential expectedness to the conclusion that a perfect mind created the universe and is favored over non-theism."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "pro-central-foundational-simplicity",
+          "tier": "central",
+          "description": "Show that every worldview bears foundational commitments and that a perfect foundational mind requires fewer or less arbitrary commitments than its competitors."
+        },
+        {
+          "bridgeId": "pro-central-observational-fit",
+          "tier": "central",
+          "description": "Show that moral agency, beauty, fine-tuning, meaning, purpose, and related observations are more probable under a perfect-mind hypothesis than under an indifferent foundation."
+        },
+        {
+          "bridgeId": "pro-central-divine-attribute-connection",
+          "tier": "central",
+          "description": "Supply a principled connection between the attributes of a perfect mind and its expected production of a universe containing the cited observations."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "pro-subsidiary-comparative-standard",
+          "tier": "subsidiary",
+          "description": "Justify comparative support rather than conclusive demonstration as the appropriate epistemic standard for choosing among foundational hypotheses."
+        },
+        {
+          "bridgeId": "pro-subsidiary-counterevidence-accommodation",
+          "tier": "subsidiary",
+          "description": "Explain how hiddenness, suffering, disagreement, and imperfect conditions bear on but do not erase the claimed evidential contribution of favorable observations."
+        }
+      ]
+    },
+    {
+      "routeId": "route-con-evidential-skepticism",
+      "side": "con",
+      "description": "Defeat preference for perfect-mind theism by requiring an identifiable creator hypothesis, justified comparative probabilities, and explanatory connections that distinguish it from naturalistic and supernatural rivals.",
+      "successCriteria": "The route succeeds if the perfect-mind hypothesis remains undefined or underdetermined, its likelihood comparisons lack a justified basis, or the complete evidential profile fails to favor it over non-theistic alternatives.",
+      "motionBridge": {
+        "bridgeId": "con-motion-insufficient-inference",
+        "tier": "motion",
+        "description": "Show that compatibility with selected observations does not establish or preferentially support a perfect mind as the creator of the universe."
+      },
+      "centralBridges": [
+        {
+          "bridgeId": "con-central-identification-causation",
+          "tier": "central",
+          "description": "Require a coherent means to establish that a perfect mind is possible, identifiable, detectable, capable of creation, and causally responsible for this universe."
+        },
+        {
+          "bridgeId": "con-central-probability-comparison",
+          "tier": "central",
+          "description": "Require specified hypotheses and a justified comparison class before assigning greater probability to the observed features under theism than under non-theism."
+        },
+        {
+          "bridgeId": "con-central-explanatory-distinction",
+          "tier": "central",
+          "description": "Require an intelligible account of how or why the proposed mind produces the observations and how that account differs from mere compatibility or accommodation."
+        },
+        {
+          "bridgeId": "con-central-alternative-account",
+          "tier": "central",
+          "description": "Account for the cited observations through interacting, adapted, and fallible agents while testing theism against rival supernatural hypotheses and contrary evidence."
+        }
+      ],
+      "subsidiaryBridges": [
+        {
+          "bridgeId": "con-subsidiary-parsimony",
+          "tier": "subsidiary",
+          "description": "Determine whether introducing a highly capable perfect mind and auxiliary claims is genuinely simpler than withholding that additional ontological commitment."
+        },
+        {
+          "bridgeId": "con-subsidiary-hiddenness-imperfection",
+          "tier": "subsidiary",
+          "description": "Test the expectations of moral perfection against divine hiddenness, moral disagreement, suffering, absent correction, and the universe's imperfect conditions."
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "section-creator-coherence-burden",
+      "title": "Perfect-Mind Coherence, Identification, and Causal Burden",
+      "weightPercent": 22,
+      "rationale": "This issue determines what must be established about a perfect mind before observations can support the claim that such a being exists, created the universe, and is distinguishable from nearby rival origins."
+    },
+    {
+      "sectionId": "section-simplicity-foundations",
+      "title": "Foundational Commitments and Comparative Simplicity",
+      "weightPercent": 19,
+      "rationale": "This issue compares whether theism and non-theism carry equivalent foundational burdens and whether perfection reduces commitments or instead introduces an additional complex, underdetermined entity."
+    },
+    {
+      "sectionId": "section-likelihood-method",
+      "title": "Comparative Likelihood and Evidential Method",
+      "weightPercent": 23,
+      "rationale": "This issue governs whether differential expectedness can provide support without conclusive demonstration and whether the relevant conditional probabilities and comparison classes can be justified."
+    },
+    {
+      "sectionId": "section-explanatory-fit",
+      "title": "Explanatory Power and Rival Accounts of Observed Features",
+      "weightPercent": 21,
+      "rationale": "This issue tests whether moral agency, beauty, fine-tuning, meaning, and purpose receive a distinctive explanatory connection to a perfect mind or are comparably accounted for by agents and rival hypotheses."
+    },
+    {
+      "sectionId": "section-counterevidence-expectations",
+      "title": "Divine Attributes, Hiddenness, and Contrary Expectations",
+      "weightPercent": 15,
+      "rationale": "This issue evaluates how moral perfection and creative intention bear on expected disclosure, moral guidance, suffering, disagreement, and imperfection, including proposed goods served by limited disclosure."
+    }
+  ],
+  "moves": [
+    {
+      "moveId": "pro-foundational-simplicity",
+      "qualifiedCandidateId": "chunk-001:c001",
+      "sectionId": "section-simplicity-foundations",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "constructive",
+      "proposition": "Perfect-mind theism is simpler than atheism because a perfect foundational mind lacks the arbitrary limits and brute geometric commitments attributed to an atheistic foundation.",
+      "sourceSpan": {
+        "startEvent": 137,
+        "endEvent": 217
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator gives Zac the opening, and this uninterrupted first-person presentation explicitly develops his stated simplicity case.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "all the same data about the world um solely with mind I think which is what we know exists I think foundationally so a perfect being is also going to lack arbitrary limits and brute geometric commitments that atheistic foundation probably has to add on so Josh Rasmmanson has a great quote about this where he says that all limits alike have an outside explanation upon which they",
+        "characterCount": 380,
+        "tokenCount": 68,
+        "startToken": 118,
+        "endToken": 185,
+        "weightedOverlap": 36,
+        "matchedAnchorTokens": 9,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-cumulative-observational-fit",
+      "qualifiedCandidateId": "chunk-001:c002",
+      "sectionId": "section-explanatory-fit",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "constructive",
+      "proposition": "Moral agency, moral knowledge, beauty, widespread theistic belief, cosmic fine-tuning, meaning, and purpose are collectively more likely under theism than under non-theism.",
+      "sourceSpan": {
+        "startEvent": 220,
+        "endEvent": 347
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Zac remains the identified opening speaker and presents the argument continuously in first-person terms without a speaker transition.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "constructive",
+      "finalSelectedEvidence": {
+        "excerpt": "like that but widespread belief in some sort of theism where there is some sort of god or gods seems to be pretty widespread. We could look at the data of like cosmic fine tuning um and say that theism also better explains our sense of meaning and purpose. So long story short there's a bunch of things that are more likely to exist if there is a god rather than if there is not a",
+        "characterCount": 380,
+        "tokenCount": 76,
+        "startToken": 712,
+        "endToken": 787,
+        "weightedOverlap": 38,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 9,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-creator-identification-causal-burden",
+      "qualifiedCandidateId": "chunk-001:c004",
+      "sectionId": "section-creator-coherence-burden",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The perfect-mind claim lacks usable definitions and identification mechanisms, so its proponent must still establish possibility, creative capacity, and causal responsibility for this universe.",
+      "sourceSpan": {
+        "startEvent": 402,
+        "endEvent": 516
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator explicitly transfers the response to Matt, whose uninterrupted first-person remarks analyze the wording and burdens of Zac's proposition.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "Whether something is created by an imperfect mind or a nearly perfect mind or an almost perfect mind or just one perfect measurement short of a perfect mind or an imperfect mind. These are all important questions for this debate because we need a mechanism to identify this. And so what's the mechanism? There's a temptation to say I can do things at my maximum level or I could do things beneath my capacity",
+        "characterCount": 408,
+        "tokenCount": 74,
+        "startToken": 459,
+        "endToken": 532,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-single-universe-origin-underdetermination",
+      "qualifiedCandidateId": "chunk-001:c005",
+      "sectionId": "section-creator-coherence-burden",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Evidence confined to one universe cannot identify what lies beyond spacetime or distinguish creation by a perfect mind from natural origins or creation by imperfect minds.",
+      "sourceSpan": {
+        "startEvent": 517,
+        "endEvent": 580
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt continues his timed response without interruption, using a confined-room analogy to develop an epistemic objection to Zac's creator inference.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "a position where the god believers have firmly placed their deity beyond our ability to investigate. It's bad enough that spacetime is outside our ability to investigate, but so is, as far as I can tell, a perfect mind. How do you tell the difference between a perfect mind and a mind that's almost perfect? How do you tell when the universe is the result of any mind, let alone a",
+        "characterCount": 380,
+        "tokenCount": 71,
+        "startToken": 286,
+        "endToken": 356,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-agents-without-theistic-multiplication",
+      "qualifiedCandidateId": "chunk-001:c007",
+      "sectionId": "section-simplicity-foundations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Theism is not demonstrably simpler because it adds an unnecessary entity, while interacting and adapted agents already account for morality, beauty judgments, belief, meaning, and purpose.",
+      "sourceSpan": {
+        "startEvent": 622,
+        "endEvent": 697
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt explicitly turns to Zac's simplicity and explanatory-power assertions and systematically addresses the list given in the preceding opening.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "simplicity. It's about multiplying entities unnecessarily. Um and theism has no explanatory power. It doesn't have better explanatory power. I'll get into the how and why of all these in in the discussion, but the key here, I think, uh, is when Zach listed off the list of things that are more likely on theism, it's moral agency, moral knowledge, a good and beautiful world, uh, free agents, theistic belief, fine-tuning, meaning, and purpose",
+        "characterCount": 443,
+        "tokenCount": 75,
+        "startToken": 110,
+        "endToken": 184,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-rival-origin-comparison",
+      "qualifiedCandidateId": "chunk-001:c009",
+      "sectionId": "section-creator-coherence-burden",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "reply",
+      "proposition": "Perfect, imperfect, evil, and mindless origin hypotheses should be compared by theoretical virtues, with imperfect-mind alternatives incurring additional complexity relative to a perfect mind.",
+      "sourceSpan": {
+        "startEvent": 786,
+        "endEvent": 818
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Zac resumes after a brief terminology exchange and directly answers Matt's challenge about distinguishing perfect from imperfect creator hypotheses.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "imperfect mind. Let's bring the evil mind. Um let's say there's no mind and we need different theories. And I'm going to say like when we compare the theories like whatever we bring out like I think my model is the best theory. Um so maybe like maybe like a less than perfect mind. I would say that's just a more complex hypothesis that's going to hurt take a hit on simplicity um",
+        "characterCount": 380,
+        "tokenCount": 73,
+        "startToken": 63,
+        "endToken": 135,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-hidden-omnipotent-box-complexity",
+      "qualifiedCandidateId": "chunk-001:c010",
+      "sectionId": "section-simplicity-foundations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "An untestable entity capable of anything and hidden beyond spacetime is an added complex commitment, not a simple explanation, and it does not uniquely predict observer-relative beauty.",
+      "sourceSpan": {
+        "startEvent": 819,
+        "endEvent": 894
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt takes the next uninterrupted turn, first clarifying hypothesis terminology and then applying his objections to beauty and simplicity through the delivered lookahead.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "simple hypothesis at all. That is incredibly complex hypothesis. What you're saying is there's a magical box out there outside of spaceime or wherever you're going to place it. I'm not trying to put words in your mouth. That can do anything and everything. And that becomes the explanation, the best explanation. And if there is a magical box out there, here's what we'd expect. That doesn't make it simpler. It just makes it more hidden",
+        "characterCount": 437,
+        "tokenCount": 76,
+        "startToken": 465,
+        "endToken": 540,
+        "weightedOverlap": 22,
+        "matchedAnchorTokens": 6,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-moral-agent-expectedness",
+      "qualifiedCandidateId": "chunk-002:c002-01",
+      "sectionId": "section-explanatory-fit",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "reply",
+      "proposition": "Embodied conscious moral agents are more probable if a morally perfect mind created the universe than if fundamental reality is indifferent to their existence.",
+      "sourceSpan": {
+        "startEvent": 895,
+        "endEvent": 946
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn explicitly addresses Matt by name and presents the perfect-mind hypothesis as the speaker's own proposed explanation.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "atheistic theory. So um saying that like a perfect mind created the universe um this being is like perfect. So it's morally perfect. Um, so if it's morally perfect, I would say that he would care about the existence of moral agents. Um, the existence of moral agents would be more likely under this hypothesis than a view of the world where fundamental reality is just indifferent",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 173,
+        "endToken": 239,
+        "weightedOverlap": 44,
+        "matchedAnchorTokens": 11,
+        "propositionOverlap": 11,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-full-moral-evidential-profile",
+      "qualifiedCandidateId": "chunk-002:c002-02",
+      "sectionId": "section-counterevidence-expectations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Any prediction of moral agents from a morally perfect creator must be assessed alongside moral disagreement, changing moral views, divine hiddenness, and the absence of corrective moral guidance.",
+      "sourceSpan": {
+        "startEvent": 977,
+        "endEvent": 1003
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The uninterrupted turn follows Zac's confirmation and directly challenges the expected consequences of Zac's morally perfect creator hypothesis.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "perfect understanding of morality? Why wouldn't that god also interact to make sure those agents don't disagree about what moral views are and things like that? We're skipping past all of the problems, all of the things that seem to be um counterindicators and and potentially defeaters for the proposition and focusing only on one simple thing. If God, then people. But that that",
+        "characterCount": 380,
+        "tokenCount": 64,
+        "startToken": 16,
+        "endToken": 79,
+        "weightedOverlap": 16,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-counterevidence-increment",
+      "qualifiedCandidateId": "chunk-002:c002-03",
+      "sectionId": "section-counterevidence-expectations",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "reply",
+      "proposition": "Even granting suffering, hiddenness, moral disagreement, and moral change as counterevidence, the existence of moral agents can still contribute some evidence for a perfect mind.",
+      "sourceSpan": {
+        "startEvent": 1004,
+        "endEvent": 1035
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker addresses Matt, accepts several named counterconsiderations provisionally, and restates his own limited evidential objective.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "establish like there is evidence for the existence of God. And I could say like like for now I could say like sure Matt let's just say that like suffering and like changing morality and disagreement let's say these all count against God. All I'm trying to say right now at this point in the context of debate is say like even if it's like really really really really tiny like there is some evidence for God because of moral agents",
+        "characterCount": 431,
+        "tokenCount": 81,
+        "startToken": 62,
+        "endToken": 142,
+        "weightedOverlap": 34,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-unspecified-likelihood-comparison",
+      "qualifiedCandidateId": "chunk-002:c002-05",
+      "sectionId": "section-likelihood-method",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "The probability of moral agents under generic perfect-mind theism cannot be assessed without specifying the creator's intentions and supplying a justified non-theistic comparison class.",
+      "sourceSpan": {
+        "startEvent": 1111,
+        "endEvent": 1137
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response directly answers Zac's probability question and consistently speaks from Matt's skeptical position about available comparative information.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "all of the other factors. But also I don't have any we have one universe and we have one set of facts to assess and what we know is that there are conscious agents. Um I have no way of evaluating whether that's more likely on I mean I need a more specific theism. If your proposition is there is a theistic god that wants to create moral agents, well then yes, it's more likely on that hypothesis",
+        "characterCount": 396,
+        "tokenCount": 78,
+        "startToken": 67,
+        "endToken": 144,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 12,
+        "propositionOverlap": 4,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-competing-foundations",
+      "qualifiedCandidateId": "chunk-002:c002-07",
+      "sectionId": "section-simplicity-foundations",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "reply",
+      "proposition": "Rejecting gods does not eliminate the need for a foundational account of why anything exists, so theism and non-theism should be compared as competing foundational hypotheses.",
+      "sourceSpan": {
+        "startEvent": 1271,
+        "endEvent": 1300
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The turn contrasts Matt's zero-god stance with Zac's one-god stance and cites a theistic account as the speaker's preferred explanatory competitor.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "foundational like initial state. Um, that's going to create everything. Um and like Kenny Pearson in that debate book pushes back and says like hey like this theistic theory um is do a better job explaining these things like you may say like sure there's zero gods and I may say yeah there's one god um but in place of like that question of like explaining like why is there anything",
+        "characterCount": 383,
+        "tokenCount": 71,
+        "startToken": 97,
+        "endToken": 167,
+        "weightedOverlap": 20,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-comparative-rational-standard",
+      "qualifiedCandidateId": "chunk-002:c002-09",
+      "sectionId": "section-likelihood-method",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "reply",
+      "proposition": "Rational belief need not require conclusive demonstration when greater expectedness of observations and comparative simplicity jointly provide reason to prefer theism.",
+      "sourceSpan": {
+        "startEvent": 1404,
+        "endEvent": 1432
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker explains why he asked about demonstration and explicitly summarizes his own case as comparative expectation plus theism's simplicity.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "say like God exists, I'm saying like my two simple claims. There's things that have like they're more expected if God exists than if God does not exist and theism simpler than atheism. And those two things are going to push us in favor of theism. And I disagree with those, but like I think if those two claims are true, then we have really good reason to be a theist over um some",
+        "characterCount": 380,
+        "tokenCount": 74,
+        "startToken": 132,
+        "endToken": 205,
+        "weightedOverlap": 12,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 2,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-explanation-requires-understood-mechanism",
+      "qualifiedCandidateId": "chunk-003:c003-01",
+      "sectionId": "section-explanatory-fit",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "A perfect-mind hypothesis does not increase understanding unless it supplies a better-understood mechanism; invoking an undefined supernatural cause merely relocates the unexplained phenomenon.",
+      "sourceSpan": {
+        "startEvent": 1803,
+        "endEvent": 1848
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The moderator hands the discussion to Matt, and the uninterrupted first-person argument continues until Zac begins his response.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "built up to that explanation. We explain things in terms of other things that we understood better. At no point can it be considered an explanation to say what's the explanation for this and then appeal to something that we do not understand. You can't say the explanation for this is magic. And so the theistic proposition or the notion that there the hypothesis that there there",
+        "characterCount": 380,
+        "tokenCount": 67,
+        "startToken": 136,
+        "endToken": 202,
+        "weightedOverlap": 14,
+        "matchedAnchorTokens": 4,
+        "propositionOverlap": 3,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-top-down-worldview-method",
+      "qualifiedCandidateId": "chunk-003:c003-02",
+      "sectionId": "section-creator-coherence-burden",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "reply",
+      "proposition": "Perfect-mind theism should be assessed as a top-down worldview whose overall fit with experienced reality is compared with that of competing overarching theories.",
+      "sourceSpan": {
+        "startEvent": 1849,
+        "endEvent": 1876
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Zac explicitly distinguishes his comparative, top-down method from Matt's bottom-up approach in a continuous turn.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "like overarching theories of the world where I'm going to say there's a perfect mind and then there's different theories and I'm saying if you compare the theories starting from the top and going down like I think that theistic theory just best explains everything we experience in the world not every well maybe not everything but it's more like it's the best explanation of things",
+        "characterCount": 382,
+        "tokenCount": 66,
+        "startToken": 131,
+        "endToken": 196,
+        "weightedOverlap": 28,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-differential-expectedness",
+      "qualifiedCandidateId": "chunk-003:c003-08",
+      "sectionId": "section-likelihood-method",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "reply",
+      "proposition": "Observed facts favor theism when their conditional probability is higher under theism than under atheism, even when atheism remains compatible with those facts.",
+      "sourceSpan": {
+        "startEvent": 2039,
+        "endEvent": 2059
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Zac repeatedly states the comparative-probability principle and its evidential conclusion in an uninterrupted answer.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "style argument where I'm saying these facts facts. The probability of these facts on my hypothesis of theism are more likely than the hypothesis of atheism. And when we look at these facts and see they exist since I since we believe that like since I think we can make arguments that there's good reason to think that there's pro the probability of them is higher on theism like since they exist like they're going to be evidence in favor",
+        "characterCount": 438,
+        "tokenCount": 80,
+        "startToken": 7,
+        "endToken": 86,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 10,
+        "propositionOverlap": 6,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-no-modeled-nontheistic-probability",
+      "qualifiedCandidateId": "chunk-003:c003-10",
+      "sectionId": "section-likelihood-method",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Greater likelihood under theism has not been established because no non-theistic model was used to estimate the probability of agents and no comparative universes are available for that estimate.",
+      "sourceSpan": {
+        "startEvent": 2150,
+        "endEvent": 2173
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "Matt states the probabilistic objection in a continuous turn, contrasting asserted divine expectations with the missing atheistic baseline.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "You haven't demonstrated that at all because at no point have you looked at the model that does not have a god and and determined how likely a an agent is under that model. And since we only have the one universe, we we know the probability of it happening is one. We don't have any example of a universe where agents don't exist. And so how do you determine the likelihood of that",
+        "characterCount": 381,
+        "tokenCount": 74,
+        "startToken": 82,
+        "endToken": 155,
+        "weightedOverlap": 24,
+        "matchedAnchorTokens": 7,
+        "propositionOverlap": 5,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "pro-hiddenness-goods",
+      "qualifiedCandidateId": "chunk-004:c004-02",
+      "sectionId": "section-counterevidence-expectations",
+      "side": "pro",
+      "speaker": "Zac Sechler",
+      "moveKind": "reply",
+      "proposition": "Divine hiddenness is compatible with theism if epistemic certainty is not God's goal and limited disclosure enables goods such as seeking, relationship, love, and participation.",
+      "sourceSpan": {
+        "startEvent": 2553,
+        "endEvent": 2576
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The response presents a first-person theistic defense, and its vocabulary and position align with Zac Sechler's perfect-mind case throughout the debate.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "like looking at divine hiddenness, I would say that there's certain goods um that come from divine hiddenenness um that would make sense of like divine hiddenenness. like thinking about things like people seeking God is good or people coming together with each other is a good thing. Um and there's questions like is God's goal for us to have epistemic certainty? Um surely not or",
+        "characterCount": 380,
+        "tokenCount": 66,
+        "startToken": 22,
+        "endToken": 87,
+        "weightedOverlap": 32,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 8,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-good-god-disclosure-expectation",
+      "qualifiedCandidateId": "chunk-004:c004-03",
+      "sectionId": "section-counterevidence-expectations",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "A morally good God should provide compelling evidence and clear expectations, whereas persistent evidential ambiguity and a model on which belief has no consequence undermine the proposed deity's explanatory role.",
+      "sourceSpan": {
+        "startEvent": 2577,
+        "endEvent": 2606
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "The speaker refers to Zac's model in the third person and advances the skeptical divine-hiddenness critique characteristic of Matt Dillahunty's position.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "an afterlife in the first place, let alone that we know what it is that qualifies or anything else. But if there was a morally good God, um then that morally good God should provide convincing arguments, compelling evidence, should show what it expects of you. So right now um under Zach's model where it makes no difference whether or not I reach a conclusion about the origin of",
+        "characterCount": 380,
+        "tokenCount": 69,
+        "startToken": 74,
+        "endToken": 142,
+        "weightedOverlap": 30,
+        "matchedAnchorTokens": 8,
+        "propositionOverlap": 7,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    },
+    {
+      "moveId": "con-agent-interaction-fallibility-account",
+      "qualifiedCandidateId": "chunk-004:c004-06",
+      "sectionId": "section-explanatory-fit",
+      "side": "con",
+      "speaker": "Matt Dillahunty",
+      "moveKind": "reply",
+      "proposition": "Moral practices arise when agents share space and regulate interaction, while fallible minds predictably generate ideas about perfect beings, fine-tuning, meaning, and purpose.",
+      "sourceSpan": {
+        "startEvent": 2677,
+        "endEvent": 2698
+      },
+      "attributionConfidence": "high",
+      "attributionBasis": "This continues Matt Dillahunty's uninterrupted closing statement and directly supplies his alternative account of Zac Sechler's cited evidential phenomena.",
+      "candidateConfidence": "high",
+      "discoveryMoveKindAdvisory": "reply",
+      "finalSelectedEvidence": {
+        "excerpt": "moral agents is that we have agents who interact. And as soon as you have two people who have to share space, that brings into it how are they going to act with respect to each other, which encompasses all of morality. Um, and when those are flawed minds, imperfect minds, the notion that they would come up with perfect theistic hypo or hypotheses about a perfect theistic being, uh, and notions like fine-tuning and meaning and purpose",
+        "characterCount": 437,
+        "tokenCount": 79,
+        "startToken": 41,
+        "endToken": 119,
+        "weightedOverlap": 50,
+        "matchedAnchorTokens": 14,
+        "propositionOverlap": 11,
+        "sourceExact": true,
+        "wholeWordBoundaries": true,
+        "deterministicTieBreak": "weighted-overlap, matched-anchor-count, proposition-overlap, distance-to-380-characters, token-count, earliest-start"
+      }
+    }
+  ],
+  "lockPolicy": {
+    "scoreBlind": true,
+    "ratingsAbsent": true,
+    "responseTopologyAbsent": true,
+    "calculatedTotalsAbsent": true,
+    "winnerLabelsAbsent": true,
+    "finalEvidenceRepositoryRendered": true,
+    "chronologyRepositoryOwned": true
+  }
+}

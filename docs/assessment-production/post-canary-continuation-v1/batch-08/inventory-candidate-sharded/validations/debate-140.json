@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-08-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "140",
+  "inventoryPlanCanonicalSha256": "f61072323de3e620aa8d805b5d0dd982007448e65f118549a9e2858e3632dde9",
+  "sideSelectionSha256": {
+    "pro": "21fd5a41ab0c1a78deada2b0199ed9f4b20729e90f78bd6ca77f6c9fcd5e34a6",
+    "con": "c46d1c54c6318cd172f6d8239a84c82e3e9e6423605265a62a78be3c621e6d66"
+  },
+  "sections": 5,
+  "moves": 20,
+  "proMoves": 10,
+  "conMoves": 10,
+  "belowHighAttributionMoveIds": [],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c001",
+      "side": "pro",
+      "moveId": "pro-metaphysical-whole-method",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The excerpt independently states Rhodes's affirmative methodological basis for treating whole-reality metaphysical reasoning as evidence, even without an earlier opposing move.",
+      "reason": "no-earlier-selected-opposing-move"
+    },
+    {
+      "qualifiedCandidateId": "chunk-001:c003",
+      "side": "pro",
+      "moveId": "pro-simple-being-monotheist-identity",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The source independently identifies the inferred ground with the simple, self-existent referent of classical monotheism even if no earlier opposing challenge is retained.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 2,
+  "nominatedCandidates": 20,
+  "retainedCandidates": 20,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}

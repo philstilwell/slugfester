@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-chronology-fallback-inventory-validation",
+  "protocolId": "assessment-production-post-canary-batch-08-candidate-sharded-inventory",
+  "status": "passed",
+  "developmentValidationOnly": false,
+  "productionCanary": false,
+  "batchNumber": 5,
+  "stagingOnly": true,
+  "debateNumber": "120",
+  "inventoryPlanCanonicalSha256": "37b2780d96bfa2af6a30d8c7abe553de9222a381d27735e4eaf90216f37b620c",
+  "sideSelectionSha256": {
+    "pro": "e65339ce10d53ce68f16d2ef9ef3f0838d47b9b607ecfa035d9743d0fb1d0b49",
+    "con": "0eb3396700553dfcbcb801ce5afe2a64349f991621b050bf7845fd353b0b55e7"
+  },
+  "sections": 5,
+  "moves": 19,
+  "proMoves": 10,
+  "conMoves": 9,
+  "belowHighAttributionMoveIds": [
+    "con-conditional-importance-parity"
+  ],
+  "chronologyFallbackPlanAndSideSelectorsUsed": true,
+  "sideSelectorContextsMutuallyIsolated": true,
+  "immutablePlanHashBoundInBothSelectors": true,
+  "correspondingSideTransportHashBoundInEachSelector": true,
+  "everyCandidateKeyReviewed": true,
+  "priorityThenChronologyReductionApplied": true,
+  "preferredMoveKindAndConstructiveFallbackAuthored": true,
+  "chronologyFallbackAppliedOnlyToRetainedOrphanReply": true,
+  "chronologyFallbacks": [
+    {
+      "qualifiedCandidateId": "chunk-001:c002",
+      "side": "pro",
+      "moveId": "pro-bayesian-evidence-overcomes-low-prior",
+      "preferredMoveKind": "reply",
+      "appliedMoveKind": "constructive",
+      "rationale": "The Bayes-theorem framework independently establishes how the later resurrection evidence is to be weighed even without a retained skeptical objection.",
+      "reason": "no-earlier-selected-opposing-move"
+    }
+  ],
+  "chronologyFallbackCount": 1,
+  "nominatedCandidates": 19,
+  "retainedCandidates": 19,
+  "deterministicallyDeferredCandidates": 0,
+  "finalEvidenceSourceExact": true,
+  "ratingsAbsent": true,
+  "responseTopologyAbsent": true,
+  "semanticRepairPerformed": false,
+  "scoresDerived": 0
+}
