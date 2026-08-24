@@ -29,7 +29,9 @@ const MANIFEST = `${ROOT}/execution-preparation-manifest.json`;
 const VALIDATION = `${ROOT}/execution-preparation-validation.json`;
 const DIAGNOSIS = `${ROOT}/preparation-failure-diagnosis.json`;
 const CORRECTION_PLAN = `${ROOT}/preparation-correction-plan.json`;
+const RECURSIVE_CORRECTION_PLAN = `${ROOT}/preparation-correction-2-plan.json`;
 const ORIGINAL_TEST_COMMIT = "572fc0b5e965bf8fd6f33b17549b2cf1d279128a";
+const CORRECTION_ONE_TEST_COMMIT = "7aafd3537e53390e310cd4f5fc9899ae1f70280b";
 const TEST = "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs";
 const REQUIRED_ORDER = ["170", "134", "19", "114", "166", "89", "176", "183", "112", "17"];
 const sha256 = (value) => createHash("sha256").update(value).digest("hex");
@@ -49,11 +51,19 @@ const standingAuthorization =
   await loadAndValidatePostCanaryBatch09StandingAuthorization();
 const diagnosisBytes = await readFile(DIAGNOSIS);
 const correctionPlan = JSON.parse(await readFile(CORRECTION_PLAN));
+const recursiveCorrectionPlan = JSON.parse(await readFile(RECURSIVE_CORRECTION_PLAN));
 assert.equal(correctionPlan.status, "frozen-batch-09-discovery-overlay-count-test-correction-prepared");
 assert.equal(correctionPlan.diagnosis.sha256, sha256(diagnosisBytes));
 assert.equal(correctionPlan.originalTest.commit, ORIGINAL_TEST_COMMIT);
 assert.equal(correctionPlan.originalTest.sha256, manifest.sourceHashes[TEST]);
-assert.equal(correctionPlan.correctedTest.sha256, sha256(await readFile(TEST)));
+assert.equal(
+  correctionPlan.correctedTest.sha256,
+  sha256(execFileSync("git", ["show", `${CORRECTION_ONE_TEST_COMMIT}:${TEST}`])),
+);
+assert.equal(recursiveCorrectionPlan.status, "frozen-final-batch-09-discovery-reporting-test-correction-prepared");
+assert.equal(recursiveCorrectionPlan.firstCorrectionTest.commit, CORRECTION_ONE_TEST_COMMIT);
+assert.equal(recursiveCorrectionPlan.firstCorrectionTest.sha256, correctionPlan.correctedTest.sha256);
+assert.equal(recursiveCorrectionPlan.correctedTest.sha256, sha256(await readFile(TEST)));
 
 assert.equal(manifest.status, "frozen-thirty-one-post-canary-batch-09-discovery-contexts-prepared-not-authorized");
 assert.equal(manifest.discoveryProtocolId, V212_DISCOVERY_PROTOCOL_ID);
@@ -139,7 +149,7 @@ assert.equal(manifest.costEstimate.directIncrementalCostUsdMaximum, 0);
 assert.equal(manifest.costEstimate.meteredApiCostUsdMaximum, 0);
 assert.equal(manifest.costEstimate.transcriptionCostUsdMaximum, 0);
 assert.deepEqual(manifest.costEstimate.expectedParallelWallMinutes, [10, 22]);
-assert.deepEqual(manifest.costEstimate.expectedAggregateModelMinutes, [40, 75]);
+assert.deepEqual(manifest.costEstimate.expectedAggregateModelMinutes, [32, 62]);
 assert.equal(manifest.isolation.oneChunkPerContext, true);
 assert.equal(manifest.isolation.exactCopiedFilesPerContext, 4);
 assert.equal(manifest.isolation.modelReceivesTokenCountedLedgerNotValidationLedger, true);

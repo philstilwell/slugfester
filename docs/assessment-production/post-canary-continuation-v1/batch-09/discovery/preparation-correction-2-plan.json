@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-discovery-preparation-recursive-correction-plan",
+  "protocolId": "assessment-production-post-canary-batch-09-discovery-preparation-recovery",
+  "status": "frozen-final-batch-09-discovery-reporting-test-correction-prepared",
+  "frozenAt": "2026-08-24T17:38:00Z",
+  "baselineCommit": "20e3c800",
+  "failureDiagnosis": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/preparation-correction-1-failure-diagnosis.json",
+    "sha256": "7c1df10236e9ea57d2b5fef96e00129dfd5eefa0ff0fec3cd3c67fa2cf40bc7e"
+  },
+  "manifest": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/execution-preparation-manifest.json",
+    "sha256": "3f7ec36cd2d8f5c95c635b77f9b3babfc4caad2420cf4b816d47048ca9ea3784",
+    "mustRemainByteIdentical": true
+  },
+  "firstCorrection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/preparation-correction-plan.json",
+    "sha256": "d83d197ce7f9d92856fef768cff456532009ef2e5951510748425bf2da186136"
+  },
+  "firstCorrectionTest": {
+    "path": "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs",
+    "commit": "7aafd3537e53390e310cd4f5fc9899ae1f70280b",
+    "sha256": "234a85c5245a123bad349e8c7979d4b7f7ecd748d4950541907505a5b1691839",
+    "reconstructionRequired": true
+  },
+  "correctedTest": {
+    "path": "scripts/test-assessment-production-post-canary-batch-09-discovery-manifest.mjs",
+    "sha256": "cc2cf4c170227f5a7dfbfa2d6511d145fd254c06a885d20967e876f9fed40be0",
+    "expectedAggregateModelMinutes": [32, 62],
+    "separateAuthenticationRequired": true
+  },
+  "executionControls": {
+    "recursiveCorrectionLevel": 1,
+    "attemptsMaximum": 1,
+    "ordinaryRetriesMaximum": 0,
+    "furtherRecoveryForThisUnderlyingProblemAuthorized": false,
+    "modelContextsMaximum": 0,
+    "paidServiceCallsMaximum": 0,
+    "directIncrementalCostUsdMaximum": 0
+  },
+  "nextAuthorizedAction": "run-one-final-corrected-discovery-preparation-validation-pass-and-stop-on-any-further-failure"
+}
