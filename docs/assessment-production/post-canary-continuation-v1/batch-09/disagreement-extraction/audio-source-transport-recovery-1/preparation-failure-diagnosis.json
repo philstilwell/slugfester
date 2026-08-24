@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-audio-source-transport-recovery-preparation-failure-diagnosis",
+  "status": "preserved-batch-09-audio-transport-recovery-preparation-missing-directory-failure-diagnosed",
+  "batchNumber": 9,
+  "checkpointCommit": "7ee78c0de9404118eb22cb8cc3e550e56c0dc6ab",
+  "failedInvocation": {
+    "command": "node scripts/prepare-assessment-production-post-canary-batch-09-audio-transport-recovery.mjs --write",
+    "exitCode": 1,
+    "attempts": 1,
+    "retries": 0,
+    "timeoutExtensions": 0,
+    "mediaAccessed": false,
+    "downloads": 0,
+    "modelContexts": 0,
+    "paidServiceCalls": 0,
+    "directIncrementalCostUsd": 0
+  },
+  "failure": {
+    "category": "deterministic-preparation-harness-missing-output-directory",
+    "errorCode": "ENOENT",
+    "operation": "open",
+    "missingPath": "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-transport-recovery-1/correction-plan.json",
+    "planWritten": false,
+    "activationWritten": false,
+    "executionStarted": false
+  },
+  "diagnosis": {
+    "cause": "the preparation harness called writeFile before creating the new recovery audit directory",
+    "boundedCorrection": "create recoveryRoot recursively immediately before either plan or activation writes",
+    "sourceIdentityChanged": false,
+    "clipWindowsChanged": false,
+    "protectedEvidenceChanged": false,
+    "validatorMeaningChanged": false
+  },
+  "preservedSourceHashes": {
+    "scripts/prepare-assessment-production-post-canary-batch-09-audio-transport-recovery.mjs": "94fdbe4cfae29ca47096061445ce7c1de155a023a3dc8e09ca801dd4f3c0e789",
+    "scripts/run-assessment-production-post-canary-batch-09-audio-transport-recovery.mjs": "96dc0a6e0258be0bbd668ec2e0a90ed3b9f6d5b29f31d107e96574ee472ae248",
+    "scripts/test-assessment-production-post-canary-batch-09-audio-transport-recovery-preparation.mjs": "55d2dfeed9c9b966032c9f009bff7702ecda635b34877e18f95cbb5852798215",
+    "scripts/test-assessment-production-post-canary-batch-09-audio-source-recovery-cohort.mjs": "563043db4ba3b9548eda2194fd0e594c5d30e869989558f14aefd42a75a57f59",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/disagreement-extraction/audio-source-preparation-failure-diagnosis.json": "1ff0fbfbf29ffed20c3361af0785213d2d595b749b0b135376cacf70a8f1589d"
+  },
+  "authorization": {
+    "standingAuthorizationBoundedDeterministicHarnessCorrection": true,
+    "correctedPreparationPassesMaximum": 1,
+    "mediaAccess": false,
+    "modelExecution": false,
+    "paidServices": false
+  },
+  "nextAuthorizedAction": "apply-the-frozen-directory-creation-correction-and-run-one-corrected-plan-preparation-pass"
+}
