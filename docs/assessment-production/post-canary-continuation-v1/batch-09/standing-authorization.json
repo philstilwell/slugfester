@@ -1,0 +1,221 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-09-standing-authorization",
+  "protocolId": "assessment-production-post-canary-batch-09-standing-authorization",
+  "status": "frozen-active-batch-09-complete-remaining-workflow-standing-authorization",
+  "authorizedAt": "2026-08-24T17:20:00Z",
+  "sourcePacketCommit": "5d99d8665b69ea0613b0c9895e26000c50e0229e",
+  "checkpointCommit": "5d99d8665b69ea0613b0c9895e26000c50e0229e",
+  "productionCanary": false,
+  "batchNumber": 9,
+  "stagingOnly": true,
+  "selectedDebates": [
+    "170",
+    "134",
+    "19",
+    "114",
+    "166",
+    "89",
+    "176",
+    "183",
+    "112",
+    "17"
+  ],
+  "selection": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/selection.json",
+    "sha256": "ea64a9cc994493e1d8fdda9bd18d47f131533609f4df0d6f2f6895665582be4b",
+    "bytes": 32030,
+    "status": "ninth-post-canary-ten-debate-batch-selection-frozen-source-gate-passed"
+  },
+  "sourcePreparation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/preparation-manifest.json",
+    "sha256": "b8bdc1f0883ed8a1ad5830e8db44e8cefe03a935540faa075bb2e180bca04c71",
+    "bytes": 82951,
+    "status": "post-canary-batch-09-ten-complete-score-blind-source-packets-prepared-awaiting-validation",
+    "frozenDiscoveryContexts": 31
+  },
+  "sourceValidation": {
+    "path": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/validation.json",
+    "sha256": "c946061e961748e2374b3ba315c7019342ee37d881ab228871d52478efef8e83",
+    "bytes": 2653,
+    "status": "post-canary-batch-09-score-blind-source-packet-validation-passed-frozen-under-standing-authorization"
+  },
+  "userAuthorization": {
+    "instruction": "I authorize creation and use of the Batch 9 standing authorization, using the established Batch 8 controls, for the complete reassessment and publication workflow.",
+    "resolvedAntecedent": "The frozen Batch 9 selection identified the next approval as creation of the standing authorization and score-blind source-packet workflow.",
+    "scopeInterpretation": "Create and use a complete-workflow Batch 9 standing authorization for the ten frozen selections, beginning with the separately frozen score-blind source packets, while preserving the established campaign controls and stopping before Batch 10 selection.",
+    "directIncrementalCostUsdMaximumForSubscriptionAndLocalWork": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "supersedesPerStageUserApprovalPausesWithinFrozenScope": true,
+    "preservesAllContentValidationCostAndFailureStops": true
+  },
+  "model": {
+    "label": "5.6 Sol",
+    "slug": "gpt-5.6-sol",
+    "reasoningEffort": "low",
+    "authentication": "ChatGPT subscription"
+  },
+  "authorizedSequence": [
+    "thirty-one-frozen-score-blind-discovery-contexts",
+    "candidate-census-planning-and-candidate-sharded-side-selection",
+    "two-isolated-independent-judgments-per-debate",
+    "deterministic-disagreement-extraction",
+    "local-audio-source-and-clip-preparation",
+    "audio-verification-manifest-cost-estimation-and-conditional-execution",
+    "dispute-only-adjudication-and-bounded-deterministic-corrections",
+    "final-ledger-assembly-and-one-deterministic-score-pass",
+    "score-locked-publication-reconstruction-and-bounded-repairs",
+    "deterministic-compilation-finalization-and-rendering-verification",
+    "compatibility-staging-production-publication-and-generated-seo-correction"
+  ],
+  "executionControls": {
+    "everyContextEnumeratedAndHashLockedBeforeExecution": true,
+    "freshIsolatedContextRequired": true,
+    "attemptsPerContextOrPass": 1,
+    "retriesMaximum": 0,
+    "rerunsMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveRepairsMaximum": 1,
+    "automaticRepairsMaximum": 0,
+    "rollbacksMaximum": 0,
+    "repairWritableFieldsMaximumPerPacket": 2,
+    "scorePassesMaximum": 1,
+    "modelAuthoredScoresAllowed": false,
+    "roundedIntegerScoreTiesPermitted": true,
+    "failedPartialOutputReusable": false,
+    "eachOriginalFieldAcceptedExactlyOnce": true,
+    "separateFrozenActivationArtifactRequired": true,
+    "automaticContinuationOnlyAfterPassingGate": true
+  },
+  "stageConcurrency": {
+    "discovery": 4,
+    "inventory": 2,
+    "judgments": 2,
+    "audio": 1,
+    "adjudication": 2,
+    "publication": 2
+  },
+  "schedulerRamps": {
+    "discovery": [
+      1,
+      2,
+      4
+    ],
+    "inventory": [
+      1,
+      2
+    ],
+    "judgments": [
+      1,
+      2
+    ],
+    "audioVerification": [
+      1
+    ],
+    "adjudication": [
+      1,
+      2
+    ],
+    "publication": [
+      1,
+      2
+    ]
+  },
+  "costBoundary": {
+    "authentication": "ChatGPT subscription",
+    "subscriptionAndLocalDirectIncrementalCostUsdMaximum": 0,
+    "conditionalPaidAudioMaximumUsd": 1,
+    "audioEstimateMustBeFrozenAndReportedBeforeFirstCall": true,
+    "audioSequentialExecutionRequired": true,
+    "audioAttemptsPerClip": 1,
+    "audioRetriesMaximum": 0,
+    "stopAfterRequestFailureOrUsageDerivedCapExceedance": true
+  },
+  "recoveryControls": {
+    "boundedFirstRecoveryAuthorized": true,
+    "recoveryAttemptsPerFailedContextMaximum": 2,
+    "ordinaryRetriesMaximum": 0,
+    "timeoutExtensionsMaximum": 0,
+    "recursiveCorrectionsMaximum": 1,
+    "failedPartialOutputReusable": false,
+    "diagnosisUsesOnlyPreservedRecordsAndLocalEvidence": true,
+    "correctedContextAndMergeRuleHashLockRequired": true,
+    "unattemptedContextResumptionPermitted": true,
+    "validationOverlayMustPreserveOriginalEvidence": true,
+    "fieldDisjointShardingPermitted": true,
+    "minimumShardCountRequired": true,
+    "eachOriginalFieldAcceptedExactlyOnce": true,
+    "completeAffectedCohortReplayRequired": true,
+    "resumeStandingAuthorizationAfterPassingRecovery": true
+  },
+  "recoveryHistory": {
+    "sourcePreparationTransportShape": {
+      "diagnosis": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation-recovery/failure-diagnosis.json",
+      "correctionPlan": "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation-recovery/correction-plan.json",
+      "affectedDebate": "19",
+      "correctionsUsed": 1,
+      "recursiveCorrectionsRemaining": 1,
+      "sharedValidatorChanged": false
+    }
+  },
+  "authorization": {
+    "sourcePacketPreparation": true,
+    "discoveryModelExecution": true,
+    "inventoryPreparationAndModelExecution": true,
+    "independentJudgmentPreparationAndModelExecution": true,
+    "disagreementExtraction": true,
+    "localAudioPreparation": true,
+    "conditionalPaidAudioVerification": true,
+    "adjudicationPreparationAndModelExecution": true,
+    "boundedCorrections": true,
+    "finalLedgerAssembly": true,
+    "singleScorePass": true,
+    "publicationPreparationAndModelExecution": true,
+    "boundedPublicationRepairs": true,
+    "deterministicCompilation": true,
+    "publicationFinalization": true,
+    "renderingVerification": true,
+    "compatibilityStaging": true,
+    "productionMutation": true,
+    "generatedSeoCorrection": true,
+    "completeRepositoryValidation": true,
+    "commitAndPushPassingCheckpoints": true,
+    "nextBatchSelection": false
+  },
+  "stopRules": {
+    "paidServiceEstimateAboveOneDollarBlocks": true,
+    "actualPaidServiceCostAboveOneDollarBlocks": true,
+    "outsideBatchNineDebateBlocks": true,
+    "unfrozenSourceScoreIdentityReferenceValidatorOrAcceptedFieldChangeBlocks": true,
+    "thirdFailureOfSameUnderlyingProblemBlocks": true,
+    "moreThanTwoRecoveryLevelsBlocks": true,
+    "failedSecondBoundedCorrectionBlocks": true,
+    "unexpectedValidationCategoryBlocks": true,
+    "ordinaryRetryRerunTimeoutExtensionRollbackOrManualScoreAdjustmentBlocks": true,
+    "productionMutationDifferentFromFrozenManifestBlocks": true,
+    "batchTenSelectionBlocks": true,
+    "actionOutsideAuthorizationBlocks": true
+  },
+  "sourceHashes": {
+    "docs/assessment-production-workflow.md": "41a61ee605bc1dfd4f21a5738c709560a98c9598fe16c2b385d013cdbb43a3ee",
+    "docs/assessment-production/manifest-v1.json": "1359a7b39718aaa85f914d27ad743efa50c60370ad0f6aec061423f7cd4f08ec",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/selection-analysis.json": "d00cea5d1c8aaeebaf533b9ea90a3e2e145af69d9c9a6398c4d16fbf37584d60",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/selection.json": "ea64a9cc994493e1d8fdda9bd18d47f131533609f4df0d6f2f6895665582be4b",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/preparation-manifest.json": "b8bdc1f0883ed8a1ad5830e8db44e8cefe03a935540faa075bb2e180bca04c71",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/source-preparation/validation.json": "c946061e961748e2374b3ba315c7019342ee37d881ab228871d52478efef8e83",
+    "docs/assessment-production/post-canary-continuation-v1/batch-09/standing-authorization-instruction.txt": "9ed5a0be4fd7539119a9f7af284291c9cd771660f35ab8db68e4931957e8a266",
+    "docs/assessment-production/score-stability-policy-v2.2-promotion.json": "2a018107434edb8a31020e441a2088e2d259596d49bedd8ccc89eaee0880f666",
+    "docs/assessment-production/score-stability-policy-v2.2-proposal.md": "629c22081fb5ebffc0c39ab247ba3c82ee10f86a43931a2b577eefef2d0ac7d2",
+    "docs/assessment-workflow-v4.2.21.17.41.md": "234907ae007a0c36603d497bd6064a6d080501cd2c6c413746793462ae570315",
+    "docs/reassessment-rubric-v2.1.md": "9b5ae4e0b8b0be9cb6bbdccd7cf37fe441c44110d1696ffb86aa55cf3714692c",
+    "scripts/lib/assessment-production-post-canary-batch-09-standing-authorization.mjs": "f838dbc18cf3fb66add5919fff5a6b64083ab6619474349e16644ebc34102db3",
+    "scripts/lib/assessment-production-score-stability-policy-active.mjs": "5a402e4b1f4aadf95e64381699949b878e299a015bf6c59f76e3d4990267beba",
+    "scripts/prepare-assessment-production-post-canary-batch-09-standing-authorization.mjs": "9231b2fc52ff700f14f00a2080b3323f49e78c1cbffed11d05fbca1ff22c1355",
+    "scripts/test-assessment-production-post-canary-batch-09-standing-authorization.mjs": "02b73f0942bc0bb0a2ce2da5ce7302867ca1f553376988dade0cd89d78c3a9df",
+    "scripts/test-assessment-production-score-stability-policy-active.mjs": "bf8ad48345be917a3226612da4b228c166794d0478d38d4790b5396c4d36bef1"
+  },
+  "futureArtifactsExcludedFromSourceHashes": {
+    "discoveryExecution": "docs/assessment-production/post-canary-continuation-v1/batch-09/discovery/execution-manifest.json",
+    "batchCompletion": "docs/assessment-production/post-canary-continuation-v1/batch-09/production-publication/generated-seo-correction/analysis.json"
+  },
+  "nextAuthorizedAction": "prepare-validate-freeze-commit-and-push-batch-09-discovery-execution-manifest"
+}
