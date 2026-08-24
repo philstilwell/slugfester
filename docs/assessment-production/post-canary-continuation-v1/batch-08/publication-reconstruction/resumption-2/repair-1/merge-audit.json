@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-debate-120-repair-merge-audit",
+  "protocolId": "assessment-production-post-canary-batch-08-debate-120-publication-resumption-2-repair-1",
+  "status": "passed",
+  "debateNumber": "120",
+  "rejectedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/outputs/debate-120.json",
+  "rejectedOutputSha256": "738caecc02c7441cbd67aa884f28c558f4a7a45ed0ce39e3db738b69f01af47a",
+  "repairOutputs": [
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/repair-1/outputs/packet-0.json",
+      "sha256": "8211ce4de1be63f8dde14da41f157c0414bc80027e2b0a43b8ce72bdabef870c",
+      "writableFields": [
+        "moveProse.con-gospels-mythic-literary-material.critique",
+        "moveProse.pro-exodus-injury-protection.critique"
+      ]
+    },
+    {
+      "path": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/repair-1/outputs/packet-1.json",
+      "sha256": "a19d9b62b0b64546cc1daec482dc9d422704515de338f6a73975811240ac8c9c",
+      "writableFields": [
+        "aiExtension.pro.premises[3].novelty.explanation"
+      ]
+    }
+  ],
+  "mergedOutput": "docs/assessment-production/post-canary-continuation-v1/batch-08/publication-reconstruction/resumption-2/repair-1/merged/debate-120.json",
+  "mergedOutputSha256": "93f4498891ca0582e1c4fbafdcecfe693227e70bcb53b8d7080f9dbca3fd5b84",
+  "authorizedTransformations": [
+    {
+      "field": "moveProse.con-gospels-mythic-literary-material.critique",
+      "packetIndex": 0,
+      "operation": "replace-authorized-invalid-field",
+      "before": "Strongest feature: The argument expressly concedes that literary shaping does not eliminate every historical element, then identifies the genuine methodological difficulty of extracting secure resurrection history from narratives containing proposed borrowing and mythic construction. Principal limitation: Describing the Gospels as riddled with myth exceeds the limited parallel evidence developed here, and the move does not establish that the specifically relevant resurrection traditions were invented or that the distinct Pauline evidence shares the alleged defect. Live burden: O'Connor must distinguish dependence, typology, shared motifs, and direct borrowing, then connect demonstrated literary construction to the particular appearance claims whose reliability bears the central historical burden. Locked score: The strong band reflects substantial source-level relevance, a meaningful concession, and partial contact with Gospel-based evidence, while preserving reservations about generalized terminology and the unanswered early testimony.",
+      "after": "Strongest feature: The argument concedes literary shaping does not erase every historical element, while identifying the methodological difficulty of extracting secure resurrection history from narratives containing proposed borrowing and mythic construction. Principal limitation: Calling the Gospels riddled with myth outruns the limited parallel evidence, and neither establishes that relevant resurrection traditions were invented nor demonstrates that distinct Pauline testimony shares the alleged defect. Live burden: O'Connor must distinguish dependence, typology, shared motifs, and direct borrowing, then connect demonstrated literary construction to the particular appearance claims bearing the central historical burden. Locked score: The strong band reflects substantial source-level relevance, an important concession, and meaningful contact with Gospel-based evidence, while retaining reservations concerning generalized terminology and unanswered early testimony."
+    },
+    {
+      "field": "moveProse.pro-exodus-injury-protection.critique",
+      "packetIndex": 0,
+      "operation": "replace-authorized-invalid-field",
+      "before": "Strongest feature: McLatchie directly introduces the adjacent eye-and-tooth release provisions, supplying relevant textual evidence that bodily injury could produce a meaningful legal consequence and complicating any claim that abusive treatment was wholly unrestricted. Principal limitation: The extrapolation from specified injuries to a comprehensive general rule is not established, and even a broader release remedy would not explain why the survival provision apparently withholds punishment in serious cases below the asserted threshold. Live burden: McLatchie must justify the legal scope of the injury provisions, reconcile them precisely with the preceding beating rule, and address whether regulation and release are morally adequate under claimed divine perfection. Locked score: The strong band reflects concrete evidence and substantial contact with a central objection, tempered by overextended scope, incomplete statutory reconciliation, and insufficient confrontation with the surviving-victim case.",
+      "after": "Strongest feature: McLatchie introduces the adjacent eye-and-tooth release provisions, providing textual evidence that bodily injury could carry legal consequences and complicating claims that abusive treatment was wholly unrestricted. Principal limitation: Extrapolation from specified injuries to a comprehensive rule remains unestablished, while even broader release would not explain why the survival provision withholds punishment in serious cases beneath the asserted threshold. Live burden: McLatchie must justify the provisions' legal scope, reconcile them with the preceding beating rule, and address whether regulation and release are morally adequate under claimed divine perfection. Locked score: The strong band reflects concrete evidence and substantial contact with a central objection, tempered by overextended scope, incomplete statutory reconciliation, and insufficient engagement with the surviving-victim case."
+    },
+    {
+      "field": "aiExtension.pro.premises[3].novelty.explanation",
+      "packetIndex": 1,
+      "operation": "replace-authorized-invalid-field",
+      "before": "Repairs the incomplete slavery and conquest reconciliations.",
+      "after": "Repairs incomplete slavery and conquest reconciliations through full legal and literary context while acknowledging residual moral costs."
+    }
+  ],
+  "authorizedFieldsChanged": 3,
+  "immutableFieldsChanged": 0,
+  "completeValidation": {
+    "status": "passed",
+    "debateNumber": "120",
+    "moves": 19,
+    "critiques": 19,
+    "minimumCritiqueCharacters": 930,
+    "tags": 0,
+    "quoteExactSourceMatches": 2,
+    "overallCommentarySides": 2,
+    "noveltyItems": 16,
+    "introducedItems": 2,
+    "newArguments": 4,
+    "aiExtensionSides": 2,
+    "calculatedScoresAuthoredByModel": 0,
+    "lockedScoresUnchanged": true
+  },
+  "modelAuthoredScores": 0,
+  "lockedScoresUnchanged": true
+}

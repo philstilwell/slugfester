@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0-assessment-production-post-canary-batch-08-debate-120-repair-execution",
+  "protocolId": "assessment-production-post-canary-batch-08-debate-120-publication-resumption-2-repair-1",
+  "status": "batch-08-debate-120-two-context-repair-gate-passed",
+  "gateStartedAt": "2026-08-24T13:51:00.678Z",
+  "gateCompletedAt": "2026-08-24T13:52:17.765Z",
+  "contextsPlanned": 2,
+  "contextsAttempted": 2,
+  "contextsUnattempted": 0,
+  "validContexts": 2,
+  "invalidContexts": 0,
+  "attempts": 2,
+  "retries": 0,
+  "timeoutExtensions": 0,
+  "recursiveCorrections": 0,
+  "schedulerRamp": [
+    1
+  ],
+  "wallElapsedMs": 77086,
+  "rampPhases": [
+    {
+      "phase": "repair-critique-fields",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        0
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        0
+      ],
+      "validContextIndexes": [
+        0
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    },
+    {
+      "phase": "repair-novelty-field",
+      "maximumParallelContexts": 1,
+      "contextIndexes": [
+        1
+      ],
+      "expansionRequiresAllValid": true,
+      "attemptedContextIndexes": [
+        1
+      ],
+      "validContextIndexes": [
+        1
+      ],
+      "passed": true,
+      "skippedBecausePriorRampFailed": false
+    }
+  ],
+  "results": [
+    {
+      "contextIndex": 0,
+      "packetIndex": 0,
+      "debateNumber": "120",
+      "debateId": "mclatchie-oconnor-christianity-true-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-24T13:51:00.680Z",
+      "completedAt": "2026-08-24T13:51:56.057Z",
+      "elapsedMs": 55377,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "moveProse.con-gospels-mythic-literary-material.critique",
+        "moveProse.pro-exodus-injury-protection.critique"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "504f9f7f5637c83d86a43213394837fea51f05111171c6c7286885383d9c93db",
+      "stderrSha256": "ecaf01f2a41001ef376d750f32654624a361340d06936e2add47b86b69ff1aa5",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "8211ce4de1be63f8dde14da41f157c0414bc80027e2b0a43b8ce72bdabef870c",
+      "validationSha256": "6e444770da3fef1a959fd48c6ac5090d92ba8e3307657dde1360145cdd8a06cc",
+      "provenanceSha256": "595ff33fd71afdde50b99f747489ca89ffcdc82358f845d29db756f6c72bab99",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "120",
+        "packetIndex": 0,
+        "correctedFields": [
+          {
+            "field": "moveProse.con-gospels-mythic-literary-material.critique",
+            "type": "critique-word-boundary",
+            "moveId": "con-gospels-mythic-literary-material",
+            "words": 118,
+            "characters": 978,
+            "sentences": 4
+          },
+          {
+            "field": "moveProse.pro-exodus-injury-protection.critique",
+            "type": "critique-word-boundary",
+            "moveId": "pro-exodus-injury-protection",
+            "words": 118,
+            "characters": 930,
+            "sentences": 4
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    },
+    {
+      "contextIndex": 1,
+      "packetIndex": 1,
+      "debateNumber": "120",
+      "debateId": "mclatchie-oconnor-christianity-true-2019",
+      "model": "5.6 Sol",
+      "reasoningEffort": "low",
+      "attemptCount": 1,
+      "retryCount": 0,
+      "timeoutExtensionCount": 0,
+      "recursiveCorrectionCount": 0,
+      "startedAt": "2026-08-24T13:51:56.065Z",
+      "completedAt": "2026-08-24T13:52:17.759Z",
+      "elapsedMs": 21694,
+      "timedOut": false,
+      "commandExitCode": 0,
+      "terminationSignal": null,
+      "authentication": "ChatGPT subscription",
+      "apiKeysRemoved": true,
+      "isolatedTemporaryCodexHome": true,
+      "isolatedTemporaryWorkingDirectory": true,
+      "publicationWasScoreLocked": true,
+      "scoresImmutable": true,
+      "writableFields": [
+        "aiExtension.pro.premises[3].novelty.explanation"
+      ],
+      "meteredApiCostUsd": 0,
+      "paidServiceCallsThisStage": 0,
+      "modelAuthoredScores": 0,
+      "stdoutSha256": "7dd866fdaf8956caace2cb003b742e71e587a9a234015dba8a11ef7753955991",
+      "stderrSha256": "5e783a44ee7b1666bba14b565e0343ea891d8398362d8b8b083ce11026fa0029",
+      "status": "completed-valid",
+      "gateAcceptancePassed": true,
+      "outputWritten": true,
+      "outputSha256": "a19d9b62b0b64546cc1daec482dc9d422704515de338f6a73975811240ac8c9c",
+      "validationSha256": "9c5ab6e89931f7b50349eaf9c716c39dc6adeb03c609f261f3788ea86f2e9230",
+      "provenanceSha256": "2855e66918e6f4485907b9941d1b486d6f3cc79f2c31b9104820fbec56f7c44c",
+      "validationSummary": {
+        "status": "passed",
+        "debateNumber": "120",
+        "packetIndex": 1,
+        "correctedFields": [
+          {
+            "field": "aiExtension.pro.premises[3].novelty.explanation",
+            "type": "novelty-explanation-minimum-words",
+            "itemId": "ai120-pro-premise-4",
+            "words": 17,
+            "characters": 137
+          }
+        ],
+        "modelAuthoredScores": 0
+      },
+      "validationMessage": null
+    }
+  ],
+  "rejectedOutputPreserved": true,
+  "scoresImmutable": true,
+  "meteredApiCostUsd": 0,
+  "paidServiceCallsThisStage": 0,
+  "modelAuthoredScores": 0
+}
